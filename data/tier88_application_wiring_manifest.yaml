@@ -19,6 +19,10 @@ domains:
   - Canonical_Oracle_Panel
   - VL_Agent_Distill_Panel
   - Early_Lean_MC_Panel
+  - Machine_And_Molecule_Live_Panel
+  - Fuel_Lab_Live_Panel
+  - BlackHole_WhiteHole_Cycle_Live_Panel
+  - Star_Trek_Transporter_Live_Panel
   - Desktop_Application_Wiring_Spine
 ingest: scripts/ingest_tier88_application_wiring.py
 build: scripts/build_tier88_application_wiring_benchmarks.py
@@ -41,6 +45,10 @@ desktop_themes_wired:
   - canonical_oracle
   - vl_agent
   - early_lean_mc
+  - species_catalog
+  - thermodynamics_fuels
+  - blackhole_cycle
+  - quantum_transporter
 desktop_themes_skipped:
   - model_weights
   - documentation

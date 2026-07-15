@@ -5732,6 +5732,80 @@ extension_domains:
     benchmark_data: data/early_lean_mc_panel_benchmark.json
     lean_module: FSOT.Formal.EarlyLeanMcPanelPriors
     note: Desktop FSOTLean Monte Carlo stability portable summary
+  Machine_And_Molecule_Live_Panel:
+    tier: 88
+    D_eff: 15
+    delta_psi: 0.72
+    recent_hits: 2
+    observed: true
+    maps_to_lean:
+    - material
+    - energy
+    - particle
+    formula_branch_override: term2.amplitude
+    desktop_theme: species_catalog
+    ingest_script: scripts/ingest_tier88_application_wiring.py
+    build_script: scripts/build_tier88_application_wiring_benchmarks.py
+    manifest: data/tier88_application_wiring_manifest.yaml
+    benchmark_data: data/machine_and_molecule_live_panel_benchmark.json
+    lean_module: FSOT.Formal.MachineAndMoleculeLivePanelPriors
+    note: Desktop FSOT_Machine_And_Molecule species catalog live verification
+    routes_to_core: Materials_Science
+  Fuel_Lab_Live_Panel:
+    tier: 88
+    D_eff: 16
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean:
+    - energy
+    - chemical
+    - material
+    formula_branch_override: term3.chaos_factor
+    desktop_theme: thermodynamics_fuels
+    ingest_script: scripts/ingest_tier88_application_wiring.py
+    build_script: scripts/build_tier88_application_wiring_benchmarks.py
+    manifest: data/tier88_application_wiring_manifest.yaml
+    benchmark_data: data/fuel_lab_live_panel_benchmark.json
+    lean_module: FSOT.Formal.FuelLabLivePanelPriors
+    note: Desktop Fuel Lab engine simulator grounded fuel profiles
+    routes_to_core: Thermodynamics
+  BlackHole_WhiteHole_Cycle_Live_Panel:
+    tier: 88
+    D_eff: 18
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean:
+    - blackhole
+    - astronomical
+    - particle
+    formula_branch_override: term3.chaos_factor
+    desktop_theme: blackhole_cycle
+    ingest_script: scripts/ingest_tier88_application_wiring.py
+    build_script: scripts/build_tier88_application_wiring_benchmarks.py
+    manifest: data/tier88_application_wiring_manifest.yaml
+    benchmark_data: data/blackhole_whitehole_cycle_live_panel_benchmark.json
+    lean_module: FSOT.Formal.BlackHoleWhiteholeCycleLivePanelPriors
+    note: Desktop BH→WH information cycle prototype + warp portal relay
+    routes_to_core: Astrophysics
+  Star_Trek_Transporter_Live_Panel:
+    tier: 88
+    D_eff: 14
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean:
+    - mathematical
+    formula_branch_override: term2.amplitude
+    desktop_theme: quantum_transporter
+    ingest_script: scripts/ingest_tier88_application_wiring.py
+    build_script: scripts/build_tier88_application_wiring_benchmarks.py
+    manifest: data/tier88_application_wiring_manifest.yaml
+    benchmark_data: data/star_trek_transporter_live_panel_benchmark.json
+    lean_module: FSOT.Formal.StarTrekTransporterLivePanelPriors
+    note: Quantum teleportation anchors + Warp BH/WH portal crosswalk
+    routes_to_core: Quantum_Mechanics
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

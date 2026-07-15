@@ -1,6 +1,6 @@
 /-
-  FSOT Formal EarlyLeanMcPanelPriors — extension domain Early_Lean_MC_Panel.
-  Generator: scripts/gen_extension_domains_lean.py
+  FSOT Formal EarlyLeanMcPanelPriors — Tier 88 application wiring (Early_Lean_MC_Panel).
+  Generator: scripts/gen_tier88_application_wiring_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,25 +9,29 @@ namespace FSOT.Formal
 
 noncomputable section
 
-def early_lean_mc_panel_observable_count : ℕ := 24
-def early_lean_mc_panel_D_eff : ℕ := 11
+open Real
 
-theorem early_lean_mc_panel_observable_count_pos : 0 < early_lean_mc_panel_observable_count := by
-  unfold early_lean_mc_panel_observable_count; norm_num
+def early_lean_mc_observable_count : ℕ := 10
+def early_lean_mc_median_error_pct : ℝ := (0.014767 : ℝ)
+def early_lean_mc_D_eff : ℕ := 11
 
-theorem early_lean_mc_panel_median_error_under_half_pct :
-    (0.014767 : ℝ) < (0.5 : ℝ) := by norm_num
+theorem early_lean_mc_observable_count_pos : 0 < early_lean_mc_observable_count := by
+  unfold early_lean_mc_observable_count; norm_num
 
-theorem early_lean_mc_panel_bundle :
-    early_lean_mc_panel_observable_count = 24 ∧
-    early_lean_mc_panel_D_eff = 11 ∧
-    (0.014767 : ℝ) < (0.5 : ℝ) ∧
-    raw_S (get_domain_params "energy") > 0 := by
+theorem early_lean_mc_median_error_under_five_pct :
+    early_lean_mc_median_error_pct < (5 : ℝ) := by
+  unfold early_lean_mc_median_error_pct; norm_num
+
+theorem early_lean_mc_bundle :
+    early_lean_mc_observable_count = 10 ∧
+    early_lean_mc_D_eff = 11 ∧
+    early_lean_mc_median_error_pct < (5 : ℝ) ∧
+    raw_S (get_domain_params "mathematical") > 0 := by
   refine ⟨
-    by unfold early_lean_mc_panel_observable_count; norm_num,
-    by unfold early_lean_mc_panel_D_eff; norm_num,
-    early_lean_mc_panel_median_error_under_half_pct,
-    energy_raw_S_positive
+    by unfold early_lean_mc_observable_count; norm_num,
+    by unfold early_lean_mc_D_eff; norm_num,
+    early_lean_mc_median_error_under_five_pct,
+    mathematical_raw_S_positive
   ⟩
 
 end

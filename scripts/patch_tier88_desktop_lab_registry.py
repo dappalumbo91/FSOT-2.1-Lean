@@ -13,6 +13,7 @@ REGISTRY = ROOT / "data" / "lab_registry.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from tier88_desktop_extended_lib import DESKTOP_LAB_KEYS, patch_lab_registry  # noqa: E402
+from tier88_verified_desktop_lib import VERIFIED_DESKTOP_LAB_KEYS  # noqa: E402
 
 
 def _base_lab_entry(theme: str, lab_key: str) -> dict:
@@ -27,7 +28,8 @@ def _base_lab_entry(theme: str, lab_key: str) -> dict:
 
 def main() -> int:
     registry = json.loads(REGISTRY.read_text(encoding="utf-8"))
-    for theme, lab_key in DESKTOP_LAB_KEYS.items():
+    all_keys = {**DESKTOP_LAB_KEYS, **VERIFIED_DESKTOP_LAB_KEYS}
+    for theme, lab_key in all_keys.items():
         entry = registry.get(lab_key, {})
         if not isinstance(entry, dict):
             entry = {}
@@ -37,7 +39,7 @@ def main() -> int:
     registry["registry_version"] = registry.get("registry_version", "1.0")
     registry["tier88_desktop_patch_at"] = datetime.now(timezone.utc).isoformat()
     REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")
-    print(f"Patched {len(DESKTOP_LAB_KEYS)} tier88 desktop labs into {REGISTRY}")
+    print(f"Patched {len(all_keys)} tier88 desktop labs into {REGISTRY}")
     return 0
 
 

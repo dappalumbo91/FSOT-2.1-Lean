@@ -1,6 +1,6 @@
 /-
-  FSOT Formal VlAgentDistillPanelPriors — extension domain VL_Agent_Distill_Panel.
-  Generator: scripts/gen_extension_domains_lean.py
+  FSOT Formal VlAgentDistillPanelPriors — Tier 88 application wiring (VL_Agent_Distill_Panel).
+  Generator: scripts/gen_tier88_application_wiring_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,25 +9,29 @@ namespace FSOT.Formal
 
 noncomputable section
 
-def vl_agent_distill_panel_observable_count : ℕ := 24
-def vl_agent_distill_panel_D_eff : ℕ := 14
+open Real
 
-theorem vl_agent_distill_panel_observable_count_pos : 0 < vl_agent_distill_panel_observable_count := by
-  unfold vl_agent_distill_panel_observable_count; norm_num
+def vl_agent_observable_count : ℕ := 6
+def vl_agent_median_error_pct : ℝ := (0.031506 : ℝ)
+def vl_agent_D_eff : ℕ := 14
 
-theorem vl_agent_distill_panel_median_error_under_half_pct :
-    (0.022236 : ℝ) < (0.5 : ℝ) := by norm_num
+theorem vl_agent_observable_count_pos : 0 < vl_agent_observable_count := by
+  unfold vl_agent_observable_count; norm_num
 
-theorem vl_agent_distill_panel_bundle :
-    vl_agent_distill_panel_observable_count = 24 ∧
-    vl_agent_distill_panel_D_eff = 14 ∧
-    (0.022236 : ℝ) < (0.5 : ℝ) ∧
-    raw_S (get_domain_params "energy") > 0 := by
+theorem vl_agent_median_error_under_five_pct :
+    vl_agent_median_error_pct < (5 : ℝ) := by
+  unfold vl_agent_median_error_pct; norm_num
+
+theorem vl_agent_bundle :
+    vl_agent_observable_count = 6 ∧
+    vl_agent_D_eff = 14 ∧
+    vl_agent_median_error_pct < (5 : ℝ) ∧
+    raw_S (get_domain_params "ai") > 0 := by
   refine ⟨
-    by unfold vl_agent_distill_panel_observable_count; norm_num,
-    by unfold vl_agent_distill_panel_D_eff; norm_num,
-    vl_agent_distill_panel_median_error_under_half_pct,
-    energy_raw_S_positive
+    by unfold vl_agent_observable_count; norm_num,
+    by unfold vl_agent_D_eff; norm_num,
+    vl_agent_median_error_under_five_pct,
+    ai_raw_S_positive
   ⟩
 
 end

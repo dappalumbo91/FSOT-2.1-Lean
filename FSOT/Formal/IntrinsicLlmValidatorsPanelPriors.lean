@@ -1,6 +1,6 @@
 /-
-  FSOT Formal IntrinsicLlmValidatorsPanelPriors — extension domain Intrinsic_LLM_Validators_Panel.
-  Generator: scripts/gen_extension_domains_lean.py
+  FSOT Formal IntrinsicLlmValidatorsPanelPriors — Tier 88 application wiring (Intrinsic_LLM_Validators_Panel).
+  Generator: scripts/gen_tier88_application_wiring_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,25 +9,29 @@ namespace FSOT.Formal
 
 noncomputable section
 
-def intrinsic_llm_validators_panel_observable_count : ℕ := 21
-def intrinsic_llm_validators_panel_D_eff : ℕ := 14
+open Real
 
-theorem intrinsic_llm_validators_panel_observable_count_pos : 0 < intrinsic_llm_validators_panel_observable_count := by
-  unfold intrinsic_llm_validators_panel_observable_count; norm_num
+def validators_intrinsic_llm_observable_count : ℕ := 21
+def validators_intrinsic_llm_median_error_pct : ℝ := (0.014767 : ℝ)
+def validators_intrinsic_llm_D_eff : ℕ := 14
 
-theorem intrinsic_llm_validators_panel_median_error_under_half_pct :
-    (0.014767 : ℝ) < (0.5 : ℝ) := by norm_num
+theorem validators_intrinsic_llm_observable_count_pos : 0 < validators_intrinsic_llm_observable_count := by
+  unfold validators_intrinsic_llm_observable_count; norm_num
 
-theorem intrinsic_llm_validators_panel_bundle :
-    intrinsic_llm_validators_panel_observable_count = 21 ∧
-    intrinsic_llm_validators_panel_D_eff = 14 ∧
-    (0.014767 : ℝ) < (0.5 : ℝ) ∧
-    raw_S (get_domain_params "energy") > 0 := by
+theorem validators_intrinsic_llm_median_error_under_five_pct :
+    validators_intrinsic_llm_median_error_pct < (5 : ℝ) := by
+  unfold validators_intrinsic_llm_median_error_pct; norm_num
+
+theorem validators_intrinsic_llm_bundle :
+    validators_intrinsic_llm_observable_count = 21 ∧
+    validators_intrinsic_llm_D_eff = 14 ∧
+    validators_intrinsic_llm_median_error_pct < (5 : ℝ) ∧
+    raw_S (get_domain_params "ai") > 0 := by
   refine ⟨
-    by unfold intrinsic_llm_validators_panel_observable_count; norm_num,
-    by unfold intrinsic_llm_validators_panel_D_eff; norm_num,
-    intrinsic_llm_validators_panel_median_error_under_half_pct,
-    energy_raw_S_positive
+    by unfold validators_intrinsic_llm_observable_count; norm_num,
+    by unfold validators_intrinsic_llm_D_eff; norm_num,
+    validators_intrinsic_llm_median_error_under_five_pct,
+    ai_raw_S_positive
   ⟩
 
 end

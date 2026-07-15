@@ -100,6 +100,11 @@ def main() -> int:
         )
         if args.format == "json":
             print(json.dumps(bundle, indent=2))
+        elif args.format == "bibtex":
+            entries = []
+            for p in bundle.get("panels") or []:
+                entries.append(_bibtex_panel({"kind": "panel", **p}))
+            print("\n\n".join(entries))
         else:
             _print_text({"kind": "bundle", **bundle})
         return 0

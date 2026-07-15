@@ -121,6 +121,37 @@ T88_NEW = {
     },
 }
 
+T88_VERIFIED_DESKTOP = {
+    "Machine_And_Molecule_Live_Panel": {
+        "desktop_theme": "species_catalog",
+        "routes_to_core": "Materials_Science",
+        "formula_branch_override": "term2.amplitude",
+        "delta_psi": 0.72,
+        "note": "Desktop FSOT_Machine_And_Molecule species catalog live verification",
+    },
+    "Fuel_Lab_Live_Panel": {
+        "desktop_theme": "thermodynamics_fuels",
+        "routes_to_core": "Thermodynamics",
+        "formula_branch_override": "term3.chaos_factor",
+        "delta_psi": 0.85,
+        "note": "Desktop Fuel Lab engine simulator grounded fuel profiles",
+    },
+    "BlackHole_WhiteHole_Cycle_Live_Panel": {
+        "desktop_theme": "blackhole_cycle",
+        "routes_to_core": "Astrophysics",
+        "formula_branch_override": "term3.chaos_factor",
+        "delta_psi": 0.9,
+        "note": "Desktop BH→WH information cycle prototype + warp portal relay",
+    },
+    "Star_Trek_Transporter_Live_Panel": {
+        "desktop_theme": "quantum_transporter",
+        "routes_to_core": "Quantum_Mechanics",
+        "formula_branch_override": "term2.amplitude",
+        "delta_psi": 0.88,
+        "note": "Quantum teleportation anchors + Warp BH/WH portal crosswalk",
+    },
+}
+
 
 def _bench_maps(domain: str, bench_path: Path) -> tuple[int, list[str]]:
     if not bench_path.exists():
@@ -166,12 +197,12 @@ def main() -> int:
         }
         added.append(domain)
 
-    for domain, meta in T88_NEW.items():
+    for domain, meta in {**T88_NEW, **T88_VERIFIED_DESKTOP}.items():
         if domain in ext:
             continue
         bench = t88_path(domain)
         d_eff, maps = _bench_maps(domain, bench)
-        ext[domain] = {
+        row = {
             "tier": 88,
             "D_eff": d_eff,
             "delta_psi": meta["delta_psi"],
@@ -187,6 +218,9 @@ def main() -> int:
             "lean_module": _lean_module(T88_LEAN, domain),
             "note": meta["note"],
         }
+        if meta.get("routes_to_core"):
+            row["routes_to_core"] = meta["routes_to_core"]
+        ext[domain] = row
         added.append(domain)
 
     spec["updated"] = "2026-07-15"

@@ -143,6 +143,30 @@ PROBLEM_ROUTES: list[dict] = [
             "Consciousness_Species_Multi_Panel",
         ],
     },
+    {
+        "intent": "machine_molecule_catalog",
+        "keywords": ["machine", "molecule", "species", "catalog", "cnc", "metals"],
+        "core_domain": "Materials_Science",
+        "panels": ["Machine_And_Molecule_Live_Panel", "Materials_Species_Bridge_Live_Panel"],
+    },
+    {
+        "intent": "fuel_lab_engine",
+        "keywords": ["fuel", "engine", "lhv", "thermodynamics", "hemp", "biodiesel"],
+        "core_domain": "Thermodynamics",
+        "panels": ["Fuel_Lab_Live_Panel", "Fuel_Thermochemistry_Public_Anchors", "Published_Fuel_Property_Panel"],
+    },
+    {
+        "intent": "blackhole_whitehole_cycle",
+        "keywords": ["black hole", "white hole", "poof", "suction", "information cycle"],
+        "core_domain": "Astrophysics",
+        "panels": ["BlackHole_WhiteHole_Cycle_Live_Panel", "Warp_BH_WH_Portal_Panel"],
+    },
+    {
+        "intent": "quantum_transporter",
+        "keywords": ["transporter", "teleportation", "entanglement", "information transfer"],
+        "core_domain": "Quantum_Mechanics",
+        "panels": ["Star_Trek_Transporter_Live_Panel", "Warp_BH_WH_Portal_Panel", "Quantum_Mechanics_Entanglement_Depth_Panel"],
+    },
 ]
 
 
@@ -224,6 +248,7 @@ def build_navigator() -> dict:
     ext = ext_doc.get("extension_domains") or {}
     sci = _load_json(ROOT / "data" / "scientific_domain_expansion_map.json")
     crosswalk = _load_json(ROOT / "data" / "desktop_project_crosswalk.json")
+    falsification = _load_json(ROOT / "data" / "falsification_registry_closure.json")
     breadth = _field_breadth()
 
     exp_ext = {d["domain"]: d for d in (sci.get("extension_domains") or [])}
@@ -309,6 +334,28 @@ def build_navigator() -> dict:
                 bundles.append({"panel": p, **_download_bundle(ext[p])})
             elif p in exp_core:
                 bundles.append({"panel": p, "benchmark_data": f"data/{p.lower()}_benchmark.json"})
+        kill_criteria = []
+        core = route.get("core_domain") or ""
+        for pred in falsification.get("preregistered_predictions") or []:
+            dom = str(pred.get("domain") or "")
+            if dom.replace(" ", "_") == core or dom.lower() in core.lower() or core.lower() in dom.lower():
+                kill_criteria.append(
+                    {
+                        "id": pred.get("id"),
+                        "name": pred.get("name"),
+                        "kill_criterion": pred.get("kill_criterion"),
+                        "status": pred.get("status"),
+                    }
+                )
+        if not kill_criteria:
+            kill_criteria.append(
+                {
+                    "id": "global",
+                    "name": "extension_domain_precision_gate",
+                    "kill_criterion": (falsification.get("summary") or {}).get("global_kill_criterion"),
+                    "status": "registered",
+                }
+            )
         problem_routes.append(
             {
                 "intent": route["intent"],
@@ -316,6 +363,7 @@ def build_navigator() -> dict:
                 "core_domain": route["core_domain"],
                 "panels": panels,
                 "download_bundles": bundles,
+                "falsification": kill_criteria[:5],
             }
         )
 

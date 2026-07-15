@@ -1,0 +1,100 @@
+{
+  "source": "desktop_blackhole_whitehole_cycle+fsot_constants",
+  "desktop_folder": "FSOT_BlackHole_WhiteHole",
+  "wire_status": "tier88_live_panel",
+  "blueprint_chars": 10833,
+  "constants": {
+    "poof": 0.1534822148944508,
+    "suction": 0.1470339854281028,
+    "c_eff": 0.9577022026205612,
+    "k_coupling": 0.4202216641606968,
+    "theta_s": 0.29089654054517305,
+    "eta_eff": 0.46694220692425986
+  },
+  "cycle_proxies": [
+    {
+      "name": "cycle_cost_score_proxy",
+      "value": 1.0,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "information_density_delta_proxy",
+      "value": 0.42,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "phase_activity_infall_ratio",
+      "value": 0.35,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "phase_activity_outflow_ratio",
+      "value": 0.65,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "accretion_compression_ratio",
+      "value": 0.88,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "outflow_lensing_factor",
+      "value": 1.12,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "poof_event_rate_hz",
+      "value": 0.5,
+      "unit": "Hz"
+    },
+    {
+      "name": "white_hole_reassembly_efficiency",
+      "value": 0.9577,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "scalar_invariant_preservation",
+      "value": 0.99,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "cycle_entropy_budget",
+      "value": 0.15,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "poof",
+      "value": 0.1534822148944508,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "suction",
+      "value": 0.1470339854281028,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "c_eff",
+      "value": 0.9577022026205612,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "k_coupling",
+      "value": 0.4202216641606968,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "theta_s",
+      "value": 0.29089654054517305,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "eta_eff",
+      "value": 0.46694220692425986,
+      "unit": "dimensionless"
+    }
+  ],
+  "blackhole_thesis_relay_median_pct": 0.0,
+  "warp_panel_crosswalk": "Warp_BH_WH_Portal_Panel",
+  "fetched_at": "2026-07-15T10:59:15.377018+00:00",
+  "credential_free": true
+}

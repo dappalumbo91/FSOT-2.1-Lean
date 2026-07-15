@@ -34,6 +34,7 @@ def main() -> int:
     args = parser.parse_args()
 
     steps = [
+        ("build_fsot_domain_navigator_db.py", []),
         ("build_contested_observables_closure.py", []),
         ("build_publication_spine_walkthrough.py", []),
         ("build_scientific_figures.py", []),
@@ -53,6 +54,7 @@ def main() -> int:
     print(f"  Figures: {ROOT / 'data' / 'figures'}")
     print(f"  Walkthrough: {ROOT / 'data' / 'publication_spine_walkthrough.json'}")
     print(f"  Claims: {ROOT / 'data' / 'publication_claims_manifest.json'}")
+    print(f"  Domain navigator: {ROOT / 'data' / 'fsot_domain_navigator.json'}")
     return 0
 
 

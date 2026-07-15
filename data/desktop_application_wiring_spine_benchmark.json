@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-15T05:29:22.953483+00:00",
+  "generated_at": "2026-07-15T10:59:15.716792+00:00",
   "domain": "Desktop_Application_Wiring_Spine",
   "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
@@ -14,9 +14,9 @@
     "mathematical"
   ],
   "D_eff": 16,
-  "record_count": 65,
-  "observable_count": 65,
-  "scalar_record_count": 17,
+  "record_count": 81,
+  "observable_count": 81,
+  "scalar_record_count": 21,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -42,7 +42,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 65
+      "observable_count": 81
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +51,7 @@
       "computed": 0.014767,
       "measured": 0.0,
       "error_pct": 0.014767,
-      "observable_count": 48
+      "observable_count": 60
     }
   ],
   "material_records": [
@@ -702,6 +702,166 @@
       "measured": 5.0,
       "error_pct": 0.014767,
       "source_panel": "early_lean_mc_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "panel_pooled_median",
+      "name": "machine_and_molecule_live_panel",
+      "computed": 0.01341,
+      "measured": 0.01341,
+      "error_pct": 0.0,
+      "record_count": 120,
+      "eval_kind": "tier88_bridge"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "cp_J_molK",
+      "name": "metals_Fe_cp_J_molK",
+      "computed": 25.103366,
+      "measured": 25.1,
+      "error_pct": 0.01341,
+      "source_panel": "machine_and_molecule_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "melting_K",
+      "name": "metals_Fe_melting_K",
+      "computed": 1811.242862,
+      "measured": 1811.0,
+      "error_pct": 0.01341,
+      "source_panel": "machine_and_molecule_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "work_function_eV",
+      "name": "metals_Fe_work_function_eV",
+      "computed": 4.500603,
+      "measured": 4.5,
+      "error_pct": 0.01341,
+      "source_panel": "machine_and_molecule_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "panel_pooled_median",
+      "name": "fuel_lab_live_panel",
+      "computed": 0.039349,
+      "measured": 0.039349,
+      "error_pct": 0.0,
+      "record_count": 25,
+      "eval_kind": "tier88_bridge"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "lhv_kj_per_kg",
+      "name": "fsot_hemp_waste_grounded",
+      "computed": 17305.640589,
+      "measured": 17298.833718950624,
+      "error_pct": 0.039349,
+      "source_panel": "fuel_lab_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "stoich_afr",
+      "name": "fsot_hemp_waste_grounded",
+      "computed": 6.130686,
+      "measured": 6.12827505365232,
+      "error_pct": 0.039349,
+      "source_panel": "fuel_lab_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "density_kg_m3",
+      "name": "fsot_hemp_waste_grounded",
+      "computed": 677.439678,
+      "measured": 677.1732187499999,
+      "error_pct": 0.039349,
+      "source_panel": "fuel_lab_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "panel_pooled_median",
+      "name": "blackhole_whitehole_cycle_live_panel",
+      "computed": 0.026472,
+      "measured": 0.026472,
+      "error_pct": 0.0,
+      "record_count": 17,
+      "eval_kind": "tier88_bridge"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "value",
+      "name": "cycle_cost_score_proxy",
+      "computed": 1.000265,
+      "measured": 1.0,
+      "error_pct": 0.026472,
+      "source_panel": "blackhole_whitehole_cycle_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "value",
+      "name": "information_density_delta_proxy",
+      "computed": 0.420111,
+      "measured": 0.42,
+      "error_pct": 0.026472,
+      "source_panel": "blackhole_whitehole_cycle_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "value",
+      "name": "phase_activity_infall_ratio",
+      "computed": 0.350093,
+      "measured": 0.35,
+      "error_pct": 0.026472,
+      "source_panel": "blackhole_whitehole_cycle_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "panel_pooled_median",
+      "name": "star_trek_transporter_live_panel",
+      "computed": 0.095551,
+      "measured": 0.095551,
+      "error_pct": 0.0,
+      "record_count": 18,
+      "eval_kind": "tier88_bridge"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "value",
+      "name": "qubit_teleport_fidelity_typical",
+      "computed": 0.850812,
+      "measured": 0.85,
+      "error_pct": 0.095551,
+      "source_panel": "star_trek_transporter_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "value",
+      "name": "entanglement_swapping_fidelity",
+      "computed": 0.780745,
+      "measured": 0.78,
+      "error_pct": 0.095551,
+      "source_panel": "star_trek_transporter_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "value",
+      "name": "classical_bits_per_qubit",
+      "computed": 2.001911,
+      "measured": 2.0,
+      "error_pct": 0.095551,
+      "source_panel": "star_trek_transporter_live_panel",
       "eval_kind": "ingest_relay"
     }
   ],

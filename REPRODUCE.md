@@ -234,6 +234,18 @@ python scripts/reproduce_domain_panel.py --panel Quantum_Mechanics_Entanglement_
 
 **Formula corpus (separate layer):** `FSOT_UNIFIED.db` — use for observable/lineage lookup, not domain discovery.
 
+**Verified desktop projects (Tier 88 live panels):**
+
+```powershell
+python scripts/query_fsot_domain_navigator.py --intent machine_molecule_catalog
+python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine
+python scripts/query_fsot_domain_navigator.py --intent blackhole_whitehole_cycle
+python scripts/query_fsot_domain_navigator.py --intent quantum_transporter
+python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep
+```
+
+Maps: `FSOT_Machine_And_Molecule` → `Machine_And_Molecule_Live_Panel`, `Fuel Lab` → `Fuel_Lab_Live_Panel`, `FSOT_BlackHole_WhiteHole` → `BlackHole_WhiteHole_Cycle_Live_Panel`, `FSOT, Star Trek Transporter` → `Star_Trek_Transporter_Live_Panel`.
+
 ## Claim scope (read before citing)
 
 **Proved in Lean:** sign statements and interval bounds at **canonical** domain parameters; Wave-1 formulas at cached `S_cosm`, `S_quant`.

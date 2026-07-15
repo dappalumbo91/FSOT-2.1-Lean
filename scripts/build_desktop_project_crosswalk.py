@@ -69,7 +69,7 @@ DESKTOP_FOLDERS: list[dict] = [
     {"name": "FSOT_Machine_And_Molecule", "theme": "species_catalog", "lean_lab": "species_catalog"},
     {"name": "Fuel Lab", "theme": "thermodynamics_fuels", "lean_lab": "fuel_lab"},
     {"name": "FSOT_BlackHole_WhiteHole", "theme": "blackhole_cycle", "lean_lab": "blackhole_thesis"},
-    {"name": "FSOT, Star Trek Transporter", "theme": "empty", "lean_lab": None},
+    {"name": "FSOT, Star Trek Transporter", "theme": "quantum_transporter", "lean_lab": "star_trek_transporter_lab"},
     {"name": "FSOT Photonic Forge", "theme": "photonics", "lean_lab": "photonic_forge"},
     {"name": "fsot_magnetic_string_sim", "theme": "magnetic_strings", "lean_lab": "magnetic_strings"},
     {"name": "New folder (5)", "theme": "empty", "lean_lab": None},
@@ -124,6 +124,7 @@ THEME_LABELS = {
     "species_catalog": "Machine & molecule catalog",
     "thermodynamics_fuels": "Fuel lab",
     "blackhole_cycle": "Black hole / white hole thesis",
+    "quantum_transporter": "Star Trek transporter / quantum information transfer",
     "magnetic_strings": "Magnetic string coherence",
     "formula_corpus_cnc": "Formula corpus + CNC controller",
 }

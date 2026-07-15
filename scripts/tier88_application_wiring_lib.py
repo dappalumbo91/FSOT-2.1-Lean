@@ -198,6 +198,14 @@ from tier88_desktop_extended_lib import (  # noqa: E402
     EXTENDED_OUTPUT_SLUGS,
     patch_lab_registry,
 )
+from tier88_verified_desktop_lib import (  # noqa: E402
+    VERIFIED_BUILDERS,
+    VERIFIED_BUILD_ORDER,
+    VERIFIED_DESKTOP_LAB_KEYS,
+    VERIFIED_INGESTORS,
+    VERIFIED_LEAN_MAP,
+    VERIFIED_OUTPUT_SLUGS,
+)
 
 INGESTORS = {
     "trinary_hardware": ingest_trinary_hardware,
@@ -205,6 +213,7 @@ INGESTORS = {
     "living_fsot_hardware": ingest_living_fsot_hardware,
     "certified_agent": ingest_certified_agent,
     **EXTENDED_INGESTORS,
+    **VERIFIED_INGESTORS,
 }
 
 
@@ -426,6 +435,7 @@ def build_desktop_application_wiring_spine() -> dict:
         "living_fsot_hardware_panel",
         "certified_agent_formal_panel",
         *EXTENDED_OUTPUT_SLUGS.values(),
+        *VERIFIED_OUTPUT_SLUGS.values(),
     ]
     for slug in panel_slugs:
         bench = _load_json(DATA / f"{slug}_benchmark.json")
@@ -482,6 +492,7 @@ BUILDERS = {
     "Living_FSOT_Hardware_Panel": build_living_fsot_hardware_panel,
     "Certified_Agent_Formal_Panel": build_certified_agent_formal_panel,
     **EXTENDED_BUILDERS,
+    **VERIFIED_BUILDERS,
     "Desktop_Application_Wiring_Spine": build_desktop_application_wiring_spine,
 }
 
@@ -491,6 +502,7 @@ BUILD_ORDER = [
     "Living_FSOT_Hardware_Panel",
     "Certified_Agent_Formal_Panel",
     *EXTENDED_BUILD_ORDER,
+    *VERIFIED_BUILD_ORDER,
     "Desktop_Application_Wiring_Spine",
 ]
 
@@ -520,6 +532,7 @@ LEAN_MAP = {
         "CertifiedAgentFormalPanelPriors",
     ),
     **EXTENDED_LEAN_MAP,
+    **VERIFIED_LEAN_MAP,
     "Desktop_Application_Wiring_Spine": (
         "desktop_application_wiring",
         "consciousness",
@@ -536,6 +549,7 @@ def output_path(domain: str) -> Path:
         "Living_FSOT_Hardware_Panel": "living_fsot_hardware_panel",
         "Certified_Agent_Formal_Panel": "certified_agent_formal_panel",
         **EXTENDED_OUTPUT_SLUGS,
+        **VERIFIED_OUTPUT_SLUGS,
         "Desktop_Application_Wiring_Spine": "desktop_application_wiring_spine",
     }[domain]
     return DATA / f"{slug}_benchmark.json"

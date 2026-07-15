@@ -1,8 +1,8 @@
-generated_at: '2026-07-15T05:17:52.075527+00:00'
+generated_at: '2026-07-15T10:59:43.986427+00:00'
 summary:
   desktop_folders_listed: 54
   projects_existing: 54
-  wired_to_lean: 44
+  wired_to_lean: 45
   unwired_with_content: 0
   neurolab_domain_slots: 35
   extension_domain_slots: 4
@@ -609,10 +609,10 @@ projects:
   empty: false
 - folder: FSOT, Star Trek Transporter
   path: C:\Users\damia\Desktop\FSOT, Star Trek Transporter
-  theme: empty
-  theme_label: Empty / stub
-  lean_lab: null
-  wire_status: hub_or_skip
+  theme: quantum_transporter
+  theme_label: Star Trek transporter / quantum information transfer
+  lean_lab: star_trek_transporter_lab
+  wire_status: wired
   exists: true
   item_count: 0
   python_files: 0
@@ -698,7 +698,6 @@ by_theme:
   - autonomous_monte_carlo_fsot_refiner
   empty:
   - nuron lean
-  - FSOT, Star Trek Transporter
   - New folder (5)
   evolution:
   - fsot_evolution_
@@ -747,6 +746,8 @@ by_theme:
   - FSOT SMILES Lab
   protein_codon:
   - Genetics
+  quantum_transporter:
+  - FSOT, Star Trek Transporter
   rust_lean_bridge:
   - New folder (7)
   scalar_solver:

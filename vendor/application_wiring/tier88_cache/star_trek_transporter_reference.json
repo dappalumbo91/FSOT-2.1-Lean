@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "source": "quantum_information_transfer_literature_anchors",
+  "credential_free": true,
+  "teleportation": [
+    {"name": "qubit_teleport_fidelity_typical", "value": 0.85, "unit": "dimensionless"},
+    {"name": "entanglement_swapping_fidelity", "value": 0.78, "unit": "dimensionless"},
+    {"name": "classical_bits_per_qubit", "value": 2.0, "unit": "count"},
+    {"name": "no_cloning_theorem", "value": 1.0, "unit": "dimensionless"},
+    {"name": "linear_entropy_threshold", "value": 0.5, "unit": "dimensionless"}
+  ],
+  "information": [
+    {"name": "landauer_energy_kT_per_bit", "value": 1.0, "unit": "kT"},
+    {"name": "channel_capacity_qubit_per_use", "value": 1.0, "unit": "dimensionless"},
+    {"name": "error_correction_overhead_factor", "value": 1000.0, "unit": "dimensionless"},
+    {"name": "decoherence_time_us_typical", "value": 100.0, "unit": "us"}
+  ],
+  "fsot_portal": [
+    {"name": "poof_tunneling_proxy", "value": 0.1535, "unit": "dimensionless"},
+    {"name": "suction_recompact_proxy", "value": 0.1470, "unit": "dimensionless"},
+    {"name": "coherence_efficiency_proxy", "value": 0.9577, "unit": "dimensionless"},
+    {"name": "information_preservation_target", "value": 0.99, "unit": "dimensionless"},
+    {"name": "k_coupling_proxy", "value": 0.4202, "unit": "dimensionless"},
+    {"name": "t3_valve_acoustic_phase", "value": 1.0, "unit": "dimensionless"},
+    {"name": "beam_resolution_m", "value": 0.001, "unit": "m"},
+    {"name": "scan_time_ms", "value": 50.0, "unit": "ms"}
+  ]
+}

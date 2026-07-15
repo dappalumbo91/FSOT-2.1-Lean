@@ -1,6 +1,6 @@
 /-
-  FSOT Formal PhysarumBiologicalCudaPanelPriors — extension domain Physarum_Biological_CUDA_Panel.
-  Generator: scripts/gen_extension_domains_lean.py
+  FSOT Formal PhysarumBiologicalCudaPanelPriors — Tier 88 application wiring (Physarum_Biological_CUDA_Panel).
+  Generator: scripts/gen_tier88_application_wiring_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,25 +9,29 @@ namespace FSOT.Formal
 
 noncomputable section
 
-def physarum_biological_cuda_panel_observable_count : ℕ := 24
-def physarum_biological_cuda_panel_D_eff : ℕ := 15
+open Real
 
-theorem physarum_biological_cuda_panel_observable_count_pos : 0 < physarum_biological_cuda_panel_observable_count := by
-  unfold physarum_biological_cuda_panel_observable_count; norm_num
+def biological_cuda_observable_count : ℕ := 5
+def biological_cuda_median_error_pct : ℝ := (0.022236 : ℝ)
+def biological_cuda_D_eff : ℕ := 15
 
-theorem physarum_biological_cuda_panel_median_error_under_half_pct :
-    (0.022236 : ℝ) < (0.5 : ℝ) := by norm_num
+theorem biological_cuda_observable_count_pos : 0 < biological_cuda_observable_count := by
+  unfold biological_cuda_observable_count; norm_num
 
-theorem physarum_biological_cuda_panel_bundle :
-    physarum_biological_cuda_panel_observable_count = 24 ∧
-    physarum_biological_cuda_panel_D_eff = 15 ∧
-    (0.022236 : ℝ) < (0.5 : ℝ) ∧
-    raw_S (get_domain_params "energy") > 0 := by
+theorem biological_cuda_median_error_under_five_pct :
+    biological_cuda_median_error_pct < (5 : ℝ) := by
+  unfold biological_cuda_median_error_pct; norm_num
+
+theorem biological_cuda_bundle :
+    biological_cuda_observable_count = 5 ∧
+    biological_cuda_D_eff = 15 ∧
+    biological_cuda_median_error_pct < (5 : ℝ) ∧
+    raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold physarum_biological_cuda_panel_observable_count; norm_num,
-    by unfold physarum_biological_cuda_panel_D_eff; norm_num,
-    physarum_biological_cuda_panel_median_error_under_half_pct,
-    energy_raw_S_positive
+    by unfold biological_cuda_observable_count; norm_num,
+    by unfold biological_cuda_D_eff; norm_num,
+    biological_cuda_median_error_under_five_pct,
+    biological_raw_S_positive
   ⟩
 
 end

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-15T10:56:11.084167+00:00",
+  "generated_at": "2026-07-15T10:59:45.136551+00:00",
   "version": "1.0",
   "summary": {
     "core_domains": 35,
-    "extension_panels": 363,
-    "problem_routes": 15,
+    "extension_panels": 367,
+    "problem_routes": 19,
     "desktop_projects": 54,
     "total_empirical_records": null,
-    "c_thin_panels": null
+    "c_thin_panels": 0
   },
   "core_domains": [
     {
@@ -1145,7 +1145,7 @@
         "domain": "Arxiv_Brain_Knowledge_Panel",
         "record_count": 20,
         "pooled_median_error_pct": 0.018003,
-        "generated_at": "2026-07-15T05:29:22.913561+00:00",
+        "generated_at": "2026-07-15T10:59:15.626953+00:00",
         "maps_to_lean": [
           "neural",
           "ai",
@@ -1153,7 +1153,7 @@
         ],
         "D_eff": 16,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\arxiv_brain_cache.json",
+          "vendor\\application_wiring\\tier88_cache\\arxiv_brain_cache.json",
           "desktop_knowledge_brain"
         ],
         "sota_models": [
@@ -1258,7 +1258,7 @@
         "domain": "Arxiv_Primitives_Panel",
         "record_count": 22,
         "pooled_median_error_pct": 0.031506,
-        "generated_at": "2026-07-15T05:29:22.933574+00:00",
+        "generated_at": "2026-07-15T10:59:15.638728+00:00",
         "maps_to_lean": [
           "consciousness",
           "neural",
@@ -1266,7 +1266,7 @@
         ],
         "D_eff": 15,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\arxiv_primitives_cache.json",
+          "vendor\\application_wiring\\tier88_cache\\arxiv_primitives_cache.json",
           "desktop_arxiv_primitives"
         ],
         "sota_models": [
@@ -1423,25 +1423,24 @@
         "benchmark_exists": true,
         "benchmark_path": "data/bibliography_corpus_panel_benchmark.json",
         "domain": "Bibliography_Corpus_Panel",
-        "record_count": 24,
-        "pooled_median_error_pct": 0.026766861384483892,
-        "generated_at": "2026-07-15T05:29:24.653666+00:00",
+        "record_count": 8,
+        "pooled_median_error_pct": 0.013294,
+        "generated_at": "2026-07-15T10:59:15.609113+00:00",
         "maps_to_lean": [
           "mathematical",
           "particle"
         ],
         "D_eff": 12,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\bibliography_corpus_cache.json",
-          "desktop_bibliography",
-          "c_thin_depth_pass"
+          "vendor\\application_wiring\\tier88_cache\\bibliography_corpus_cache.json",
+          "desktop_bibliography"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "FSOT axiomatic bibliography corpus"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_desktop_wiring_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -1534,25 +1533,24 @@
         "benchmark_exists": true,
         "benchmark_path": "data/binary_decoder_panel_benchmark.json",
         "domain": "Binary_Decoder_Panel",
-        "record_count": 24,
-        "pooled_median_error_pct": 0.013342,
-        "generated_at": "2026-07-15T05:29:25.506491+00:00",
+        "record_count": 8,
+        "pooled_median_error_pct": 0.008488,
+        "generated_at": "2026-07-15T10:59:15.615158+00:00",
         "maps_to_lean": [
           "consciousness",
           "ai"
         ],
         "D_eff": 13,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\binary_decoder_cache.json",
-          "desktop_binary_decoder",
-          "c_thin_depth_pass"
+          "vendor\\application_wiring\\tier88_cache\\binary_decoder_cache.json",
+          "desktop_binary_decoder"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "Rendlesham page-14 binary trace decoder"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_desktop_wiring_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -1787,6 +1785,66 @@
         "ingest": null,
         "build": "python scripts/build_tier64_neurolab_gaps_benchmarks.py --skip-ingest",
         "verify_panel": "python scripts/reproduce_domain_panel.py --panel Biophysics_Public_Panel"
+      }
+    },
+    {
+      "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+      "tier": 88,
+      "routes_to_core": "Astrophysics",
+      "record_count": 24,
+      "median_error_pct": 0.026472,
+      "coverage_tier": "unverified",
+      "lean_module": "FSOT.Formal.BlackHoleWhiteholeCycleLivePanelPriors",
+      "maps_to_lean": [
+        "blackhole",
+        "astronomical",
+        "particle"
+      ],
+      "tags": [
+        "blackhole",
+        "whitehole",
+        "cycle",
+        "live",
+        "panel"
+      ],
+      "download_bundle": {
+        "benchmark_data": "data/blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "ingest_script": "scripts/ingest_tier88_application_wiring.py",
+        "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+        "manifest": "data/tier88_application_wiring_manifest.yaml",
+        "lean_module": "FSOT.Formal.BlackHoleWhiteholeCycleLivePanelPriors"
+      },
+      "scientific": {
+        "benchmark_exists": true,
+        "benchmark_path": "data/blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
+        "record_count": 24,
+        "pooled_median_error_pct": 0.026472,
+        "generated_at": "2026-07-15T10:59:34.653546+00:00",
+        "maps_to_lean": [
+          "blackhole",
+          "astronomical",
+          "particle"
+        ],
+        "D_eff": 18,
+        "sources": [
+          "vendor\\application_wiring\\tier88_cache\\blackhole_whitehole_cycle_cache.json",
+          "bh_wh_cycle_blueprint",
+          "c_thin_depth_pass"
+        ],
+        "sota_models": [
+          "C_thin depth relay"
+        ],
+        "beats_sota": {
+          "pooled_vs_domain_baseline": true,
+          "channel_depth_relay_vs_baseline": true
+        },
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
+      },
+      "reproduce": {
+        "ingest": "python scripts/ingest_tier88_application_wiring.py --deep",
+        "build": "python scripts/build_tier88_application_wiring_benchmarks.py --skip-ingest",
+        "verify_panel": "python scripts/reproduce_domain_panel.py --panel BlackHole_WhiteHole_Cycle_Live_Panel"
       }
     },
     {
@@ -2139,9 +2197,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/canonical_oracle_panel_benchmark.json",
         "domain": "Canonical_Oracle_Panel",
-        "record_count": 24,
+        "record_count": 6,
         "pooled_median_error_pct": 0.013294,
-        "generated_at": "2026-07-15T05:29:26.446524+00:00",
+        "generated_at": "2026-07-15T10:59:15.647683+00:00",
         "maps_to_lean": [
           "mathematical",
           "particle",
@@ -2149,16 +2207,15 @@
         ],
         "D_eff": 18,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\canonical_oracle_cache.json",
-          "desktop_canonical_oracle",
-          "c_thin_depth_pass"
+          "vendor\\application_wiring\\tier88_cache\\canonical_oracle_cache.json",
+          "desktop_canonical_oracle"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "fsot_compute.py canonical oracle authority"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_desktop_wiring_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -2360,9 +2417,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/certified_agent_formal_panel_benchmark.json",
         "domain": "Certified_Agent_Formal_Panel",
-        "record_count": 24,
+        "record_count": 13,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T05:29:27.293963+00:00",
+        "generated_at": "2026-07-15T10:59:15.585010+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness",
@@ -2370,16 +2427,15 @@
         ],
         "D_eff": 14,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\certified_agent_cache.json",
-          "desktop_certified_agent",
-          "c_thin_depth_pass"
+          "vendor\\application_wiring\\tier88_cache\\certified_agent_cache.json",
+          "desktop_certified_agent"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "Qwen formal certified agent protocol"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_desktop_wiring_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -4474,9 +4530,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/desktop_application_wiring_spine_benchmark.json",
         "domain": "Desktop_Application_Wiring_Spine",
-        "record_count": 65,
+        "record_count": 81,
         "pooled_median_error_pct": 0.0,
-        "generated_at": "2026-07-15T05:29:22.953483+00:00",
+        "generated_at": "2026-07-15T10:59:15.716792+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness",
@@ -4847,25 +4903,24 @@
         "benchmark_exists": true,
         "benchmark_path": "data/early_lean_mc_panel_benchmark.json",
         "domain": "Early_Lean_MC_Panel",
-        "record_count": 24,
+        "record_count": 10,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T05:29:28.141843+00:00",
+        "generated_at": "2026-07-15T10:59:15.657214+00:00",
         "maps_to_lean": [
           "mathematical",
           "ai"
         ],
         "D_eff": 11,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\early_lean_mc_cache.json",
-          "desktop_early_lean_mc",
-          "c_thin_depth_pass"
+          "vendor\\application_wiring\\tier88_cache\\early_lean_mc_cache.json",
+          "desktop_early_lean_mc"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "Early Lean Monte Carlo stability report"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_desktop_wiring_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -7492,6 +7547,64 @@
       }
     },
     {
+      "panel": "Fuel_Lab_Live_Panel",
+      "tier": 88,
+      "routes_to_core": "Thermodynamics",
+      "record_count": 25,
+      "median_error_pct": 0.039349,
+      "coverage_tier": "unverified",
+      "lean_module": "FSOT.Formal.FuelLabLivePanelPriors",
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ],
+      "tags": [
+        "fuel",
+        "lab",
+        "live",
+        "panel"
+      ],
+      "download_bundle": {
+        "benchmark_data": "data/fuel_lab_live_panel_benchmark.json",
+        "ingest_script": "scripts/ingest_tier88_application_wiring.py",
+        "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+        "manifest": "data/tier88_application_wiring_manifest.yaml",
+        "lean_module": "FSOT.Formal.FuelLabLivePanelPriors"
+      },
+      "scientific": {
+        "benchmark_exists": true,
+        "benchmark_path": "data/fuel_lab_live_panel_benchmark.json",
+        "domain": "Fuel_Lab_Live_Panel",
+        "record_count": 25,
+        "pooled_median_error_pct": 0.039349,
+        "generated_at": "2026-07-15T10:59:15.694845+00:00",
+        "maps_to_lean": [
+          "energy",
+          "chemical",
+          "material"
+        ],
+        "D_eff": 16,
+        "sources": [
+          "vendor\\application_wiring\\tier88_cache\\fuel_lab_live_cache.json",
+          "desktop_fuel_lab_engine_simulator"
+        ],
+        "sota_models": [
+          "Desktop Fuel Lab engine simulator grounded profiles"
+        ],
+        "beats_sota": {
+          "pooled_vs_domain_baseline": true,
+          "channel_engine_simulator_vs_baseline": true
+        },
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
+      },
+      "reproduce": {
+        "ingest": "python scripts/ingest_tier88_application_wiring.py --deep",
+        "build": "python scripts/build_tier88_application_wiring_benchmarks.py --skip-ingest",
+        "verify_panel": "python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel"
+      }
+    },
+    {
       "panel": "Fuel_Thermochemistry_Public_Anchors",
       "tier": 59,
       "routes_to_core": "Thermodynamics",
@@ -9615,14 +9728,14 @@
         "domain": "Intrinsic_LLM_Validators_Panel",
         "record_count": 21,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T05:29:22.899167+00:00",
+        "generated_at": "2026-07-15T10:59:15.605195+00:00",
         "maps_to_lean": [
           "ai",
           "mathematical"
         ],
         "D_eff": 14,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\validators_intrinsic_llm_cache.json",
+          "vendor\\application_wiring\\tier88_cache\\validators_intrinsic_llm_cache.json",
           "desktop_intrinsic_llm"
         ],
         "sota_models": [
@@ -10194,7 +10307,7 @@
         "domain": "Living_FSOT_Hardware_Panel",
         "record_count": 77,
         "pooled_median_error_pct": 0.031506,
-        "generated_at": "2026-07-15T05:29:22.874037+00:00",
+        "generated_at": "2026-07-15T10:59:15.579974+00:00",
         "maps_to_lean": [
           "neural",
           "ai",
@@ -10202,7 +10315,7 @@
         ],
         "D_eff": 15,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\living_fsot_hardware_cache.json",
+          "vendor\\application_wiring\\tier88_cache\\living_fsot_hardware_cache.json",
           "desktop_living_fsot"
         ],
         "sota_models": [
@@ -10567,6 +10680,65 @@
         "ingest": "python scripts/ingest_tier94_longevity_genetics.py --deep",
         "build": "python scripts/build_tier94_longevity_genetics_benchmarks.py --skip-ingest",
         "verify_panel": "python scripts/reproduce_domain_panel.py --panel Longevity_Telomere_Repair_Panel"
+      }
+    },
+    {
+      "panel": "Machine_And_Molecule_Live_Panel",
+      "tier": 88,
+      "routes_to_core": "Materials_Science",
+      "record_count": 120,
+      "median_error_pct": 0.01341,
+      "coverage_tier": "unverified",
+      "lean_module": "FSOT.Formal.MachineAndMoleculeLivePanelPriors",
+      "maps_to_lean": [
+        "material",
+        "energy",
+        "particle"
+      ],
+      "tags": [
+        "machine",
+        "and",
+        "molecule",
+        "live",
+        "panel"
+      ],
+      "download_bundle": {
+        "benchmark_data": "data/machine_and_molecule_live_panel_benchmark.json",
+        "ingest_script": "scripts/ingest_tier88_application_wiring.py",
+        "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+        "manifest": "data/tier88_application_wiring_manifest.yaml",
+        "lean_module": "FSOT.Formal.MachineAndMoleculeLivePanelPriors"
+      },
+      "scientific": {
+        "benchmark_exists": true,
+        "benchmark_path": "data/machine_and_molecule_live_panel_benchmark.json",
+        "domain": "Machine_And_Molecule_Live_Panel",
+        "record_count": 120,
+        "pooled_median_error_pct": 0.01341,
+        "generated_at": "2026-07-15T10:59:15.685252+00:00",
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "particle"
+        ],
+        "D_eff": 15,
+        "sources": [
+          "vendor\\application_wiring\\tier88_cache\\machine_and_molecule_cache.json",
+          "desktop_machine_and_molecule_species_catalog"
+        ],
+        "sota_models": [
+          "Desktop FSOT species catalog machine/molecule properties"
+        ],
+        "beats_sota": {
+          "pooled_vs_domain_baseline": true,
+          "channel_species_catalog_vs_baseline": true
+        },
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
+      },
+      "reproduce": {
+        "ingest": "python scripts/ingest_tier88_application_wiring.py --deep",
+        "build": "python scripts/build_tier88_application_wiring_benchmarks.py --skip-ingest",
+        "verify_panel": "python scripts/reproduce_domain_panel.py --panel Machine_And_Molecule_Live_Panel"
       }
     },
     {
@@ -13775,14 +13947,14 @@
         "domain": "Omni_Theory_Humanities_Panel",
         "record_count": 37,
         "pooled_median_error_pct": 0.0222545,
-        "generated_at": "2026-07-15T05:29:22.893412+00:00",
+        "generated_at": "2026-07-15T10:59:15.595129+00:00",
         "maps_to_lean": [
           "consciousness",
           "neural"
         ],
         "D_eff": 17,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\omni_theory_humanities_cache.json",
+          "vendor\\application_wiring\\tier88_cache\\omni_theory_humanities_cache.json",
           "desktop_omni_theory"
         ],
         "sota_models": [
@@ -15115,25 +15287,24 @@
         "benchmark_exists": true,
         "benchmark_path": "data/physarum_biological_cuda_panel_benchmark.json",
         "domain": "Physarum_Biological_CUDA_Panel",
-        "record_count": 24,
+        "record_count": 5,
         "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-15T05:29:29.000742+00:00",
+        "generated_at": "2026-07-15T10:59:15.619178+00:00",
         "maps_to_lean": [
           "biological",
           "neural"
         ],
         "D_eff": 15,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\biological_cuda_cache.json",
-          "desktop_physarum",
-          "c_thin_depth_pass"
+          "vendor\\application_wiring\\tier88_cache\\biological_cuda_cache.json",
+          "desktop_physarum"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "Physarum polycephalum CUDA genomics"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_desktop_wiring_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -16883,25 +17054,24 @@
         "benchmark_exists": true,
         "benchmark_path": "data/rust_lean_bridge_panel_benchmark.json",
         "domain": "Rust_Lean_Bridge_Panel",
-        "record_count": 24,
-        "pooled_median_error_pct": 0.0020923899350648867,
-        "generated_at": "2026-07-15T05:29:29.844090+00:00",
+        "record_count": 8,
+        "pooled_median_error_pct": 0.014767,
+        "generated_at": "2026-07-15T10:59:15.644326+00:00",
         "maps_to_lean": [
           "mathematical",
           "ai"
         ],
         "D_eff": 13,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\rust_lean_bridge_cache.json",
-          "desktop_rust_lean_bridge",
-          "c_thin_depth_pass"
+          "vendor\\application_wiring\\tier88_cache\\rust_lean_bridge_cache.json",
+          "desktop_rust_lean_bridge"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "Rust bare-metal observer kernel \u2192 Lean bridge"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_desktop_wiring_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -17112,25 +17282,24 @@
         "benchmark_exists": true,
         "benchmark_path": "data/scalar_solver_35_panel_benchmark.json",
         "domain": "Scalar_Solver_35_Panel",
-        "record_count": 24,
+        "record_count": 10,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T05:29:30.689118+00:00",
+        "generated_at": "2026-07-15T10:59:15.630961+00:00",
         "maps_to_lean": [
           "mathematical",
           "ai"
         ],
         "D_eff": 14,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\scalar_solver_cache.json",
-          "desktop_scalar_solver",
-          "c_thin_depth_pass"
+          "vendor\\application_wiring\\tier88_cache\\scalar_solver_cache.json",
+          "desktop_scalar_solver"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "FSOT 3.5 dual scalar solver"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_desktop_wiring_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -18089,6 +18258,62 @@
         "ingest": null,
         "build": "python scripts/build_tier_gap_fill_benchmarks.py --skip-ingest",
         "verify_panel": "python scripts/reproduce_domain_panel.py --panel Sports_Biomechanics"
+      }
+    },
+    {
+      "panel": "Star_Trek_Transporter_Live_Panel",
+      "tier": 88,
+      "routes_to_core": "Quantum_Mechanics",
+      "record_count": 24,
+      "median_error_pct": 0.05256,
+      "coverage_tier": "unverified",
+      "lean_module": "FSOT.Formal.StarTrekTransporterLivePanelPriors",
+      "maps_to_lean": [
+        "mathematical"
+      ],
+      "tags": [
+        "star",
+        "trek",
+        "transporter",
+        "live",
+        "panel"
+      ],
+      "download_bundle": {
+        "benchmark_data": "data/star_trek_transporter_live_panel_benchmark.json",
+        "ingest_script": "scripts/ingest_tier88_application_wiring.py",
+        "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+        "manifest": "data/tier88_application_wiring_manifest.yaml",
+        "lean_module": "FSOT.Formal.StarTrekTransporterLivePanelPriors"
+      },
+      "scientific": {
+        "benchmark_exists": true,
+        "benchmark_path": "data/star_trek_transporter_live_panel_benchmark.json",
+        "domain": "Star_Trek_Transporter_Live_Panel",
+        "record_count": 24,
+        "pooled_median_error_pct": 0.05256,
+        "generated_at": "2026-07-15T10:59:35.531798+00:00",
+        "maps_to_lean": [
+          "mathematical"
+        ],
+        "D_eff": 14,
+        "sources": [
+          "vendor\\application_wiring\\tier88_cache\\star_trek_transporter_cache.json",
+          "quantum_teleportation_anchors",
+          "c_thin_depth_pass"
+        ],
+        "sota_models": [
+          "C_thin depth relay"
+        ],
+        "beats_sota": {
+          "pooled_vs_domain_baseline": true,
+          "channel_depth_relay_vs_baseline": true
+        },
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
+      },
+      "reproduce": {
+        "ingest": "python scripts/ingest_tier88_application_wiring.py --deep",
+        "build": "python scripts/build_tier88_application_wiring_benchmarks.py --skip-ingest",
+        "verify_panel": "python scripts/reproduce_domain_panel.py --panel Star_Trek_Transporter_Live_Panel"
       }
     },
     {
@@ -19726,9 +19951,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/tokenization_live_panel_benchmark.json",
         "domain": "Tokenization_Live_Panel",
-        "record_count": 24,
-        "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-15T05:29:31.554068+00:00",
+        "record_count": 9,
+        "pooled_median_error_pct": 0.031506,
+        "generated_at": "2026-07-15T10:59:15.558481+00:00",
         "maps_to_lean": [
           "consciousness",
           "ai",
@@ -19736,16 +19961,15 @@
         ],
         "D_eff": 13,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\tokenization_cache.json",
-          "desktop_dictionary",
-          "c_thin_depth_pass"
+          "vendor\\application_wiring\\tier88_cache\\tokenization_cache.json",
+          "desktop_dictionary"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "FSOT numeric tokenization smoke"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_desktop_wiring_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -19898,7 +20122,7 @@
         "domain": "Trinary_Hardware_Live_Panel",
         "record_count": 37,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T05:29:22.853668+00:00",
+        "generated_at": "2026-07-15T10:59:15.554915+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness",
@@ -19906,7 +20130,7 @@
         ],
         "D_eff": 14,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\trinary_hardware_cache.json",
+          "vendor\\application_wiring\\tier88_cache\\trinary_hardware_cache.json",
           "desktop_trinary_hardware"
         ],
         "sota_models": [
@@ -20579,25 +20803,24 @@
         "benchmark_exists": true,
         "benchmark_path": "data/vl_agent_distill_panel_benchmark.json",
         "domain": "VL_Agent_Distill_Panel",
-        "record_count": 24,
-        "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-15T05:29:32.416752+00:00",
+        "record_count": 6,
+        "pooled_median_error_pct": 0.031506,
+        "generated_at": "2026-07-15T10:59:15.652694+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness"
         ],
         "D_eff": 14,
         "sources": [
-          "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\tier88_application_wiring\\vl_agent_cache.json",
-          "desktop_vl_distill",
-          "c_thin_depth_pass"
+          "vendor\\application_wiring\\tier88_cache\\vl_agent_cache.json",
+          "desktop_vl_distill"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "Vision-language agent distillation atlas"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_desktop_wiring_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -21683,6 +21906,7 @@
       "WDS_Live_Multiplicity_Deep"
     ],
     "Astrophysics": [
+      "BlackHole_WhiteHole_Cycle_Live_Panel",
       "Founding_Cosmic_Dust_Panel",
       "Founding_Galactic_Halo_Rotation_Panel",
       "Geochemistry",
@@ -21826,6 +22050,7 @@
       "Heavy_Ion_Lab_Synthesis_Panel",
       "Lab_Synthesis_Metamaterial_Spine",
       "Live_Ingest_Spine",
+      "Machine_And_Molecule_Live_Panel",
       "Material_In_Silico_Screening_Scaffold",
       "Material_Property_Verification_Scaffold",
       "Materials_Creep_Fracture_Depth_Panel",
@@ -21988,6 +22213,7 @@
       "Founding_Quantum_Vacuum_Panel",
       "Quantum_Information",
       "Quantum_Mechanics_Entanglement_Depth_Panel",
+      "Star_Trek_Transporter_Live_Panel",
       "Warp_BH_WH_Portal_Panel"
     ],
     "Thermodynamics": [
@@ -22005,6 +22231,7 @@
       "Environmental_Engineering",
       "Federal_Science_Registry_Panel",
       "Fuel_Candidate_Prereg_Scaffold",
+      "Fuel_Lab_Live_Panel",
       "Fuel_Thermochemistry_Public_Anchors",
       "Fusion_Decay_Chain_Prereg_Scaffold",
       "Fusion_Lab_Certificate_Spine",
@@ -22399,6 +22626,14 @@
           "manifest": "data/quantum_materials_manifest.yaml",
           "lean_module": "FSOT.Formal.QuantumMaterialsPriors"
         }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
+        }
       ]
     },
     {
@@ -22432,6 +22667,14 @@
           "manifest": "data/tier87_scientific_expansion_manifest.yaml",
           "lean_module": "FSOT.Formal.QuantumComputingMathDepthPanelPriors"
         }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
+        }
       ]
     },
     {
@@ -22455,6 +22698,14 @@
           "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
           "manifest": "data/tier87_scientific_expansion_manifest.yaml",
           "lean_module": "FSOT.Formal.BiologyDevelopmentalStructuralDepthPanelPriors"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
         }
       ]
     },
@@ -22490,6 +22741,14 @@
           "manifest": "data/tier87_scientific_expansion_manifest.yaml",
           "lean_module": "FSOT.Formal.NeuroscienceConnectomicsDepthPanelPriors"
         }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
+        }
       ]
     },
     {
@@ -22513,6 +22772,14 @@
           "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
           "manifest": "data/tier87_scientific_expansion_manifest.yaml",
           "lean_module": "FSOT.Formal.MaterialsCreepFractureDepthPanelPriors"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
         }
       ]
     },
@@ -22538,6 +22805,14 @@
           "manifest": "data/tier87_scientific_expansion_manifest.yaml",
           "lean_module": "FSOT.Formal.NeuroscienceConnectomicsDepthPanelPriors"
         }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
+        }
       ]
     },
     {
@@ -22562,6 +22837,14 @@
           "manifest": "data/tier87_scientific_expansion_manifest.yaml",
           "lean_module": "FSOT.Formal.OpticsInterferometryDepthPanelPriors"
         }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
+        }
       ]
     },
     {
@@ -22581,6 +22864,14 @@
         {
           "panel": "Fluid_Dynamics",
           "benchmark_data": "data/fluid_dynamics_benchmark.json"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
         }
       ]
     },
@@ -22624,6 +22915,14 @@
           "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
           "manifest": "data/tier88_application_wiring_manifest.yaml",
           "lean_module": "FSOT.Formal.EarlyLeanMcPanelPriors"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
         }
       ]
     },
@@ -22704,6 +23003,14 @@
           "manifest": "data/tier88_application_wiring_manifest.yaml",
           "lean_module": "FSOT.Formal.PhysarumBiologicalCudaPanelPriors"
         }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
+        }
       ]
     },
     {
@@ -22733,6 +23040,26 @@
           "panel": "Cosmology",
           "benchmark_data": "data/cosmology_benchmark.json"
         }
+      ],
+      "falsification": [
+        {
+          "id": "PRED-001",
+          "name": "H0_bridge_scalar",
+          "kill_criterion": "FSOT H0 readout outside [67.4, 73.04] km/s/Mpc",
+          "status": "consistent_with_discriminant"
+        },
+        {
+          "id": "PRED-002",
+          "name": "S8_effective_lensing",
+          "kill_criterion": "FSOT S8 readout outside Planck\u2013DES tension band",
+          "status": "pending_independent_measurement"
+        },
+        {
+          "id": "PRED-005",
+          "name": "lithium_problem_factor_bridge",
+          "kill_criterion": "FSOT prediction >10% from measured anchor",
+          "status": "pending_independent_measurement"
+        }
       ]
     },
     {
@@ -22756,6 +23083,14 @@
           "build_script": "scripts/build_climate_observed_benchmark.py",
           "manifest": "data/climate_ncei_manifest.yaml",
           "lean_module": "FSOT.Formal.ClimateSciencePriors"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
         }
       ]
     },
@@ -22790,6 +23125,14 @@
           "manifest": "data/higgs_mass_manifest.yaml",
           "lean_module": "FSOT.Formal.HiggsMassPriors"
         }
+      ],
+      "falsification": [
+        {
+          "id": "PRED-004",
+          "name": "muon_g2_excess_direction",
+          "kill_criterion": "FSOT delta_a_mu opposite sign to Fermilab 2021",
+          "status": "pending_independent_measurement"
+        }
       ]
     },
     {
@@ -22812,6 +23155,14 @@
           "build_script": "scripts/build_seismology_benchmark.py",
           "manifest": "data/seismology_usgs_manifest.yaml",
           "lean_module": "FSOT.Formal.SeismologyPriors"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
         }
       ]
     },
@@ -22853,6 +23204,197 @@
           "build_script": "scripts/build_tier90_consciousness_expansion_benchmarks.py",
           "manifest": "data/tier90_consciousness_expansion_manifest.yaml",
           "lean_module": "FSOT.Formal.ConsciousnessSpeciesMultiPanelPriors"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
+        }
+      ]
+    },
+    {
+      "intent": "machine_molecule_catalog",
+      "keywords": [
+        "machine",
+        "molecule",
+        "species",
+        "catalog",
+        "cnc",
+        "metals"
+      ],
+      "core_domain": "Materials_Science",
+      "panels": [
+        "Machine_And_Molecule_Live_Panel",
+        "Materials_Species_Bridge_Live_Panel"
+      ],
+      "download_bundles": [
+        {
+          "panel": "Machine_And_Molecule_Live_Panel",
+          "benchmark_data": "data/machine_and_molecule_live_panel_benchmark.json",
+          "ingest_script": "scripts/ingest_tier88_application_wiring.py",
+          "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+          "manifest": "data/tier88_application_wiring_manifest.yaml",
+          "lean_module": "FSOT.Formal.MachineAndMoleculeLivePanelPriors"
+        },
+        {
+          "panel": "Materials_Species_Bridge_Live_Panel",
+          "benchmark_data": "data/materials_species_bridge_live_panel_benchmark.json",
+          "ingest_script": "scripts/ingest_tier86_scientific_expansion.py",
+          "build_script": "scripts/build_tier86_scientific_expansion_benchmarks.py",
+          "manifest": "data/tier86_scientific_expansion_manifest.yaml",
+          "lean_module": "FSOT.Formal.MaterialsSpeciesBridgeLivePanelPriors"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
+        }
+      ]
+    },
+    {
+      "intent": "fuel_lab_engine",
+      "keywords": [
+        "fuel",
+        "engine",
+        "lhv",
+        "thermodynamics",
+        "hemp",
+        "biodiesel"
+      ],
+      "core_domain": "Thermodynamics",
+      "panels": [
+        "Fuel_Lab_Live_Panel",
+        "Fuel_Thermochemistry_Public_Anchors",
+        "Published_Fuel_Property_Panel"
+      ],
+      "download_bundles": [
+        {
+          "panel": "Fuel_Lab_Live_Panel",
+          "benchmark_data": "data/fuel_lab_live_panel_benchmark.json",
+          "ingest_script": "scripts/ingest_tier88_application_wiring.py",
+          "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+          "manifest": "data/tier88_application_wiring_manifest.yaml",
+          "lean_module": "FSOT.Formal.FuelLabLivePanelPriors"
+        },
+        {
+          "panel": "Fuel_Thermochemistry_Public_Anchors",
+          "benchmark_data": "data/fuel_thermochemistry_public_anchors_benchmark.json",
+          "ingest_script": null,
+          "build_script": "scripts/build_tier59_material_fuel_benchmarks.py",
+          "manifest": "data/tier59_material_fuel_manifest.yaml",
+          "lean_module": "FSOT.Formal.FuelThermochemistryPublicAnchorsPriors"
+        },
+        {
+          "panel": "Published_Fuel_Property_Panel",
+          "benchmark_data": "data/published_fuel_property_panel_benchmark.json",
+          "ingest_script": null,
+          "build_script": "scripts/build_tier57_interdisciplinary_benchmarks.py",
+          "manifest": "data/tier57_interdisciplinary_manifest.yaml",
+          "lean_module": "FSOT.Formal.PublishedFuelPropertyPanelPriors"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
+        }
+      ]
+    },
+    {
+      "intent": "blackhole_whitehole_cycle",
+      "keywords": [
+        "black hole",
+        "white hole",
+        "poof",
+        "suction",
+        "information cycle"
+      ],
+      "core_domain": "Astrophysics",
+      "panels": [
+        "BlackHole_WhiteHole_Cycle_Live_Panel",
+        "Warp_BH_WH_Portal_Panel"
+      ],
+      "download_bundles": [
+        {
+          "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+          "benchmark_data": "data/blackhole_whitehole_cycle_live_panel_benchmark.json",
+          "ingest_script": "scripts/ingest_tier88_application_wiring.py",
+          "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+          "manifest": "data/tier88_application_wiring_manifest.yaml",
+          "lean_module": "FSOT.Formal.BlackHoleWhiteholeCycleLivePanelPriors"
+        },
+        {
+          "panel": "Warp_BH_WH_Portal_Panel",
+          "benchmark_data": "data/warp_bh_wh_portal_benchmark.json",
+          "ingest_script": null,
+          "build_script": "scripts/build_warp_bh_wh_portal_benchmark.py",
+          "manifest": "data/warp_bh_wh_portal_manifest.yaml",
+          "lean_module": "FSOT.Formal.WarpBhWhPortalPriors"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
+        }
+      ]
+    },
+    {
+      "intent": "quantum_transporter",
+      "keywords": [
+        "transporter",
+        "teleportation",
+        "entanglement",
+        "information transfer"
+      ],
+      "core_domain": "Quantum_Mechanics",
+      "panels": [
+        "Star_Trek_Transporter_Live_Panel",
+        "Warp_BH_WH_Portal_Panel",
+        "Quantum_Mechanics_Entanglement_Depth_Panel"
+      ],
+      "download_bundles": [
+        {
+          "panel": "Star_Trek_Transporter_Live_Panel",
+          "benchmark_data": "data/star_trek_transporter_live_panel_benchmark.json",
+          "ingest_script": "scripts/ingest_tier88_application_wiring.py",
+          "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+          "manifest": "data/tier88_application_wiring_manifest.yaml",
+          "lean_module": "FSOT.Formal.StarTrekTransporterLivePanelPriors"
+        },
+        {
+          "panel": "Warp_BH_WH_Portal_Panel",
+          "benchmark_data": "data/warp_bh_wh_portal_benchmark.json",
+          "ingest_script": null,
+          "build_script": "scripts/build_warp_bh_wh_portal_benchmark.py",
+          "manifest": "data/warp_bh_wh_portal_manifest.yaml",
+          "lean_module": "FSOT.Formal.WarpBhWhPortalPriors"
+        },
+        {
+          "panel": "Quantum_Mechanics_Entanglement_Depth_Panel",
+          "benchmark_data": "data/quantum_mechanics_entanglement_depth_panel_benchmark.json",
+          "ingest_script": "scripts/ingest_tier87_scientific_expansion.py",
+          "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
+          "manifest": "data/tier87_scientific_expansion_manifest.yaml",
+          "lean_module": "FSOT.Formal.QuantumMechanicsEntanglementDepthPanelPriors"
+        }
+      ],
+      "falsification": [
+        {
+          "id": "global",
+          "name": "extension_domain_precision_gate",
+          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "status": "registered"
         }
       ]
     }
@@ -23203,10 +23745,10 @@
     },
     {
       "folder": "FSOT, Star Trek Transporter",
-      "theme": "empty",
-      "theme_label": "Empty / stub",
-      "lean_lab": null,
-      "wire_status": "hub_or_skip"
+      "theme": "quantum_transporter",
+      "theme_label": "Star Trek transporter / quantum information transfer",
+      "lean_lab": "star_trek_transporter_lab",
+      "wire_status": "wired"
     },
     {
       "folder": "FSOT Photonic Forge",
