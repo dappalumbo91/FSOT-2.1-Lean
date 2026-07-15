@@ -347,6 +347,25 @@ def ingest_star_trek_transporter() -> dict:
     beam_forming: list[dict] = []
     t3_valve: list[dict] = []
     sim_path = desktop_dir / "pattern_buffer_scan_results.json"
+    two_gate: list[dict] = []
+    two_gate_steps: list[dict] = []
+    two_gate_path = desktop_dir / "two_gate_entanglement_results.json"
+    if _deep_mode() and two_gate_path.is_file():
+        tg = _load_json(two_gate_path)
+        two_gate = list(tg.get("observables") or [])
+        for row in tg.get("pair_steps") or []:
+            step = row.get("step", 0)
+            for key in ("gate_pair_coupling", "entanglement_channel_fidelity", "traverse_readiness", "information_preserved"):
+                val = row.get(key)
+                if val is not None:
+                    two_gate_steps.append(
+                        {
+                            "name": f"gate_pair_step_{step}_{key}",
+                            "property": key,
+                            "value": float(val),
+                            "unit": "dimensionless",
+                        }
+                    )
     if _deep_mode() and sim_path.is_file():
         sim_doc = _load_json(sim_path)
         beam_forming = list(sim_doc.get("observables") or [])
@@ -378,6 +397,9 @@ def ingest_star_trek_transporter() -> dict:
         "beam_forming": beam_forming,
         "t3_valve_scan": t3_valve,
         "pattern_buffer_sim": str(sim_path) if sim_path.is_file() else None,
+        "two_gate_entanglement": two_gate,
+        "two_gate_pair_steps": two_gate_steps,
+        "two_gate_sim": str(two_gate_path) if two_gate_path.is_file() else None,
         "warp_bh_wh_portal_relay_median_pct": warp_pool,
         "warp_formula_path": str(_warp_formula_path() or ""),
         "fsot_constants": constants,
@@ -602,9 +624,11 @@ def build_star_trek_transporter_live_panel() -> dict:
         ("warp_actuation", "Quantum_Gravity", "warp_actuation"),
         ("beam_forming", "Quantum_Gravity", "beam_forming"),
         ("t3_valve_scan", "Acoustics", "t3_valve_acoustic"),
+        ("two_gate_entanglement", "Quantum_Mechanics", "two_gate_entanglement"),
+        ("two_gate_pair_steps", "Quantum_Mechanics", "two_gate_pair_steps"),
     ):
         rows = live.get(section) or []
-        if section in ("warp_actuation", "t3_valve_scan"):
+        if section in ("warp_actuation", "t3_valve_scan", "two_gate_pair_steps"):
             sec_records: list[dict] = []
             sec_errs: list[float] = []
             for row in rows:
@@ -619,7 +643,7 @@ def build_star_trek_transporter_live_panel() -> dict:
                 )
                 sec_records.append(rec)
                 sec_errs.append(float(rec["error_pct"]))
-        elif section == "beam_forming":
+        elif section in ("beam_forming", "two_gate_entanglement"):
             sec_records, sec_errs = _rows_to_records(
                 rows,
                 lab="star_trek_transporter_lab",

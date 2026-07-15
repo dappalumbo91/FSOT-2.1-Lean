@@ -266,11 +266,21 @@ python scripts/query_fsot_domain_navigator.py --panel Star_Trek_Transporter_Live
 
 Layers: quantum teleportation → information theory → poof/suction portal → transporter engineering → warp actuation → BH/WH portal crosswalk → beam-forming grid → T3 acoustic valve. Figure: `data/figures/verified_desktop_transporter.png`.
 
-Desktop simulator (run before `--deep` ingest):
+Desktop simulators (run before `--deep` ingest):
 
 ```powershell
 python "C:\Users\damia\Desktop\FSOT, Star Trek Transporter\pattern_buffer_beam_simulator.py" --deep
+python "C:\Users\damia\Desktop\FSOT, Star Trek Transporter\two_gate_entanglement_simulator.py"
 ```
+
+**Five-prover cross-proof (Lean → Coq → Isabelle → F* → Rust):**
+
+```powershell
+python scripts/build_verified_desktop_cross_proof_closure.py
+python scripts/run_cross_proof_verification.py
+```
+
+Verified desktop panels (Fuel Lab, Machine & Molecule, BH/WH, Transporter) export obligations into `verification/obligations/full_formal_spine.json` via `gen_verified_desktop_lean.py`. Closure artifact: `data/verified_desktop_cross_proof_closure.json`.
 
 ## Claim scope (read before citing)
 

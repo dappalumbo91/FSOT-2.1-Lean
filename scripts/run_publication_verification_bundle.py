@@ -52,6 +52,8 @@ def main() -> int:
     args = parser.parse_args()
 
     steps = [
+        ("gen_verified_desktop_lean.py", []),
+        ("build_verified_desktop_cross_proof_closure.py", []),
         ("build_fsot_domain_navigator_db.py", []),
         ("export_domain_citations.py", ["--bundle", "verified_desktop"]),
         ("build_contested_observables_closure.py", []),

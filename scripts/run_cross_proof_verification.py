@@ -643,6 +643,8 @@ def main() -> int:
     args = parser.parse_args()
 
     pipeline = [
+        "gen_verified_desktop_lean.py",
+        "build_verified_desktop_cross_proof_closure.py",
         "export_cross_proof_obligations.py",
         "export_full_formal_obligations.py",
         "export_transcendental_bounds_obligations.py",
