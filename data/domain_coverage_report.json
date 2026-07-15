@@ -1,8 +1,8 @@
 {
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "domain_count": 35,
-  "domains_with_empirical_data": 30,
-  "total_empirical_records": 257255,
+  "domains_with_empirical_data": 35,
+  "total_empirical_records": 536740,
   "lean_mapped_count": 17,
   "lean_param_aligned_count": 17,
   "negative_scalar_domains": [
@@ -55,7 +55,7 @@
       "lean_sign_theorem": "astronomical_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 143,
+      "empirical_records": 217,
       "empirical_sources": [
         {
           "lab": "cosmology_lambda_cdm",
@@ -63,12 +63,22 @@
           "median_error_pct": 0.00295952881905694
         },
         {
+          "lab": "cosmology_wave4",
+          "records": 16,
+          "median_error_pct": 0.03162247159570792
+        },
+        {
+          "lab": "cosmology_extended_lab",
+          "records": 58,
+          "median_error_pct": 0.021954848848277954
+        },
+        {
           "lab": "cosmology_bubble_bleed_lab",
           "records": 113,
           "median_error_pct": 0.0
         }
       ],
-      "empirical_median_error_pct": 0.00295952881905694,
+      "empirical_median_error_pct": 0.0,
       "has_empirical_data": true
     },
     {
@@ -84,15 +94,30 @@
       "lean_sign_theorem": "astronomical_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 113,
+      "empirical_records": 329,
       "empirical_sources": [
+        {
+          "lab": "cosmology_wave4",
+          "records": 16,
+          "median_error_pct": 0.03162247159570792
+        },
+        {
+          "lab": "cosmology_extended_lab",
+          "records": 58,
+          "median_error_pct": 0.021954848848277954
+        },
+        {
+          "lab": "cosmology_higher_waves_lab",
+          "records": 142,
+          "median_error_pct": 0.03281523581363995
+        },
         {
           "lab": "cosmology_bubble_bleed_lab",
           "records": 113,
           "median_error_pct": 0.0
         }
       ],
-      "empirical_median_error_pct": 0.0,
+      "empirical_median_error_pct": 0.021954848848277954,
       "has_empirical_data": true
     },
     {
@@ -108,15 +133,20 @@
       "lean_sign_theorem": "energy_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 24,
+      "empirical_records": 71,
       "empirical_sources": [
         {
           "lab": "weather_lab",
           "records": 24,
           "median_error_pct": null
+        },
+        {
+          "lab": "atmospheric_physics_gap_fill_lab",
+          "records": 47,
+          "median_error_pct": 0.0
         }
       ],
-      "empirical_median_error_pct": null,
+      "empirical_median_error_pct": 0.0,
       "has_empirical_data": true
     },
     {
@@ -132,12 +162,17 @@
       "lean_sign_theorem": "particle_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 1470,
+      "empirical_records": 1550,
       "empirical_sources": [
         {
           "lab": "smiles_lab",
           "records": 1470,
           "median_error_pct": 0.058
+        },
+        {
+          "lab": "nist_atomic_lab",
+          "records": 80,
+          "median_error_pct": 0.0009504134401195552
         }
       ],
       "empirical_median_error_pct": 0.058,
@@ -256,7 +291,7 @@
           "median_error_pct": 0.12268176257906009
         }
       ],
-      "empirical_median_error_pct": 0.12268176257906009,
+      "empirical_median_error_pct": 0.058,
       "has_empirical_data": true
     },
     {
@@ -272,7 +307,7 @@
       "lean_sign_theorem": "cosmological_raw_S_negative",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 143,
+      "empirical_records": 343,
       "empirical_sources": [
         {
           "lab": "cosmology_lambda_cdm",
@@ -280,12 +315,22 @@
           "median_error_pct": 0.00295952881905694
         },
         {
+          "lab": "cosmology_extended_lab",
+          "records": 58,
+          "median_error_pct": 0.021954848848277954
+        },
+        {
+          "lab": "cosmology_higher_waves_lab",
+          "records": 142,
+          "median_error_pct": 0.03281523581363995
+        },
+        {
           "lab": "cosmology_bubble_bleed_lab",
           "records": 113,
           "median_error_pct": 0.0
         }
       ],
-      "empirical_median_error_pct": 0.00295952881905694,
+      "empirical_median_error_pct": 0.021954848848277954,
       "has_empirical_data": true
     },
     {
@@ -301,15 +346,20 @@
       "lean_sign_theorem": "biological_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 13,
+      "empirical_records": 640,
       "empirical_sources": [
+        {
+          "lab": "gbif_ecology_lab",
+          "records": 627,
+          "median_error_pct": 0.017789000308164125
+        },
         {
           "lab": "evolution_lab",
           "records": 13,
           "median_error_pct": null
         }
       ],
-      "empirical_median_error_pct": null,
+      "empirical_median_error_pct": 0.017789000308164125,
       "has_empirical_data": true
     },
     {
@@ -325,15 +375,20 @@
       "lean_sign_theorem": "consciousness_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 10,
+      "empirical_records": 167,
       "empirical_sources": [
+        {
+          "lab": "world_bank_economics_lab",
+          "records": 157,
+          "median_error_pct": 0.1292009041371501
+        },
         {
           "lab": "linguistics_lab",
           "records": 10,
           "median_error_pct": 0.0013504254899468224
         }
       ],
-      "empirical_median_error_pct": 0.0013504254899468224,
+      "empirical_median_error_pct": 0.1292009041371501,
       "has_empirical_data": true
     },
     {
@@ -349,12 +404,22 @@
       "lean_sign_theorem": "electron_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 1470,
+      "empirical_records": 273807,
       "empirical_sources": [
         {
           "lab": "smiles_lab",
           "records": 1470,
           "median_error_pct": 0.058
+        },
+        {
+          "lab": "geomagnetism_lab",
+          "records": 524,
+          "median_error_pct": 0.0
+        },
+        {
+          "lab": "space_weather_lab",
+          "records": 271813,
+          "median_error_pct": null
         }
       ],
       "empirical_median_error_pct": 0.058,
@@ -373,15 +438,20 @@
       "lean_sign_theorem": "energy_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 27,
+      "empirical_records": 82,
       "empirical_sources": [
+        {
+          "lab": "fluid_dynamics_lab",
+          "records": 55,
+          "median_error_pct": 0.0
+        },
         {
           "lab": "trinary_fluid_computer",
           "records": 27,
-          "median_error_pct": 99.3
+          "median_error_pct": 0.7000000000000028
         }
       ],
-      "empirical_median_error_pct": 99.3,
+      "empirical_median_error_pct": 0.0,
       "has_empirical_data": true
     },
     {
@@ -397,15 +467,25 @@
       "lean_sign_theorem": "energy_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 24,
+      "empirical_records": 1048,
       "empirical_sources": [
         {
           "lab": "weather_lab",
           "records": 24,
           "median_error_pct": null
+        },
+        {
+          "lab": "tectonics_lab",
+          "records": 500,
+          "median_error_pct": 0.0
+        },
+        {
+          "lab": "geomagnetism_lab",
+          "records": 524,
+          "median_error_pct": 0.0
         }
       ],
-      "empirical_median_error_pct": null,
+      "empirical_median_error_pct": 0.0,
       "has_empirical_data": true
     },
     {
@@ -421,10 +501,26 @@
       "lean_sign_theorem": "higgs_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 0,
-      "empirical_sources": [],
-      "empirical_median_error_pct": null,
-      "has_empirical_data": false
+      "empirical_records": 165,
+      "empirical_sources": [
+        {
+          "lab": "higgs_branching_lab",
+          "records": 14,
+          "median_error_pct": 0.08808351263334355
+        },
+        {
+          "lab": "higgs_mass_lab",
+          "records": 9,
+          "median_error_pct": 0.03990518384182655
+        },
+        {
+          "lab": "cosmology_higher_waves_lab",
+          "records": 142,
+          "median_error_pct": 0.03281523581363995
+        }
+      ],
+      "empirical_median_error_pct": 0.03281523581363995,
+      "has_empirical_data": true
     },
     {
       "neurolab_domain": "Materials_Science",
@@ -452,7 +548,7 @@
           "median_error_pct": 0.12268176257906009
         }
       ],
-      "empirical_median_error_pct": 0.12268176257906009,
+      "empirical_median_error_pct": 0.058,
       "has_empirical_data": true
     },
     {
@@ -468,15 +564,20 @@
       "lean_sign_theorem": "energy_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 24,
+      "empirical_records": 71,
       "empirical_sources": [
         {
           "lab": "weather_lab",
           "records": 24,
           "median_error_pct": null
+        },
+        {
+          "lab": "meteorology_gap_fill_lab",
+          "records": 47,
+          "median_error_pct": 0.0
         }
       ],
-      "empirical_median_error_pct": null,
+      "empirical_median_error_pct": 0.0,
       "has_empirical_data": true
     },
     {
@@ -516,15 +617,20 @@
       "lean_sign_theorem": "neural_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 1470,
+      "empirical_records": 3636,
       "empirical_sources": [
         {
           "lab": "smiles_lab",
           "records": 1470,
           "median_error_pct": 0.058
+        },
+        {
+          "lab": "neuron_cohort_lab",
+          "records": 2166,
+          "median_error_pct": 24.631729333045122
         }
       ],
-      "empirical_median_error_pct": 0.058,
+      "empirical_median_error_pct": 24.631729333045122,
       "has_empirical_data": true
     },
     {
@@ -553,7 +659,7 @@
           "median_error_pct": 0.718
         }
       ],
-      "empirical_median_error_pct": 0.718,
+      "empirical_median_error_pct": 0.058,
       "has_empirical_data": true
     },
     {
@@ -569,15 +675,20 @@
       "lean_sign_theorem": "energy_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 24,
+      "empirical_records": 89,
       "empirical_sources": [
+        {
+          "lab": "noaa_oceanography_lab",
+          "records": 65,
+          "median_error_pct": 0.03017272606768673
+        },
         {
           "lab": "weather_lab",
           "records": 24,
           "median_error_pct": null
         }
       ],
-      "empirical_median_error_pct": null,
+      "empirical_median_error_pct": 0.03017272606768673,
       "has_empirical_data": true
     },
     {
@@ -617,10 +728,26 @@
       "lean_sign_theorem": "cmb_raw_S_negative",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 0,
-      "empirical_sources": [],
-      "empirical_median_error_pct": null,
-      "has_empirical_data": false
+      "empirical_records": 216,
+      "empirical_sources": [
+        {
+          "lab": "cosmology_wave4",
+          "records": 16,
+          "median_error_pct": 0.03162247159570792
+        },
+        {
+          "lab": "cosmology_extended_lab",
+          "records": 58,
+          "median_error_pct": 0.021954848848277954
+        },
+        {
+          "lab": "cosmology_higher_waves_lab",
+          "records": 142,
+          "median_error_pct": 0.03281523581363995
+        }
+      ],
+      "empirical_median_error_pct": 0.03281523581363995,
+      "has_empirical_data": true
     },
     {
       "neurolab_domain": "Particle_Physics",
@@ -635,10 +762,16 @@
       "lean_sign_theorem": "particle_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 0,
-      "empirical_sources": [],
-      "empirical_median_error_pct": null,
-      "has_empirical_data": false
+      "empirical_records": 98,
+      "empirical_sources": [
+        {
+          "lab": "particle_physics_lab",
+          "records": 98,
+          "median_error_pct": 0.014415233331492876
+        }
+      ],
+      "empirical_median_error_pct": 0.014415233331492876,
+      "has_empirical_data": true
     },
     {
       "neurolab_domain": "Physical_Chemistry",
@@ -677,10 +810,21 @@
       "lean_sign_theorem": "galactic_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 0,
-      "empirical_sources": [],
-      "empirical_median_error_pct": null,
-      "has_empirical_data": false
+      "empirical_records": 74,
+      "empirical_sources": [
+        {
+          "lab": "cosmology_wave4",
+          "records": 16,
+          "median_error_pct": 0.03162247159570792
+        },
+        {
+          "lab": "cosmology_extended_lab",
+          "records": 58,
+          "median_error_pct": 0.021954848848277954
+        }
+      ],
+      "empirical_median_error_pct": 0.021954848848277954,
+      "has_empirical_data": true
     },
     {
       "neurolab_domain": "Psychology",
@@ -695,15 +839,20 @@
       "lean_sign_theorem": "consciousness_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 10,
+      "empirical_records": 170,
       "empirical_sources": [
+        {
+          "lab": "openalex_psychology_lab",
+          "records": 160,
+          "median_error_pct": 0.03150616921194649
+        },
         {
           "lab": "linguistics_lab",
           "records": 10,
           "median_error_pct": 0.0013504254899468224
         }
       ],
-      "empirical_median_error_pct": 0.0013504254899468224,
+      "empirical_median_error_pct": 0.03150616921194649,
       "has_empirical_data": true
     },
     {
@@ -719,15 +868,20 @@
       "lean_sign_theorem": "ai_raw_S_non_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 3,
+      "empirical_records": 180,
       "empirical_sources": [
+        {
+          "lab": "quantum_computing_lab",
+          "records": 177,
+          "median_error_pct": 0.0002953462072651492
+        },
         {
           "lab": "trinary_os",
           "records": 3,
           "median_error_pct": null
         }
       ],
-      "empirical_median_error_pct": null,
+      "empirical_median_error_pct": 0.0002953462072651492,
       "has_empirical_data": true
     },
     {
@@ -756,7 +910,7 @@
           "median_error_pct": 0.0
         }
       ],
-      "empirical_median_error_pct": 0.718,
+      "empirical_median_error_pct": 0.0,
       "has_empirical_data": true
     },
     {
@@ -772,12 +926,17 @@
       "lean_sign_theorem": "quantum_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 1470,
+      "empirical_records": 1520,
       "empirical_sources": [
         {
           "lab": "smiles_lab",
           "records": 1470,
           "median_error_pct": 0.058
+        },
+        {
+          "lab": "nist_quantum_lab",
+          "records": 50,
+          "median_error_pct": 9.52387420324368e-05
         }
       ],
       "empirical_median_error_pct": 0.058,
@@ -796,12 +955,17 @@
       "lean_sign_theorem": "quantum_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 1470,
+      "empirical_records": 1520,
       "empirical_sources": [
         {
           "lab": "smiles_lab",
           "records": 1470,
           "median_error_pct": 0.058
+        },
+        {
+          "lab": "nist_quantum_lab",
+          "records": 50,
+          "median_error_pct": 9.52387420324368e-05
         }
       ],
       "empirical_median_error_pct": 0.058,
@@ -820,10 +984,21 @@
       "lean_sign_theorem": "energy_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 0,
-      "empirical_sources": [],
-      "empirical_median_error_pct": null,
-      "has_empirical_data": false
+      "empirical_records": 1000,
+      "empirical_sources": [
+        {
+          "lab": "seismology_lab",
+          "records": 500,
+          "median_error_pct": 0.0
+        },
+        {
+          "lab": "tectonics_lab",
+          "records": 500,
+          "median_error_pct": 0.0
+        }
+      ],
+      "empirical_median_error_pct": 0.0,
+      "has_empirical_data": true
     },
     {
       "neurolab_domain": "Sociology",
@@ -838,15 +1013,25 @@
       "lean_sign_theorem": "consciousness_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 10,
+      "empirical_records": 410,
       "empirical_sources": [
+        {
+          "lab": "openalex_sociology_lab",
+          "records": 200,
+          "median_error_pct": 0.019504399572475274
+        },
+        {
+          "lab": "world_bank_sociology_lab",
+          "records": 200,
+          "median_error_pct": 0.019504399572475274
+        },
         {
           "lab": "linguistics_lab",
           "records": 10,
           "median_error_pct": 0.0013504254899468224
         }
       ],
-      "empirical_median_error_pct": 0.0013504254899468224,
+      "empirical_median_error_pct": 0.019504399572475274,
       "has_empirical_data": true
     },
     {

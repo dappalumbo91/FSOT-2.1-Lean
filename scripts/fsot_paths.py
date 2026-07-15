@@ -822,12 +822,28 @@ def bibliography_corpus_root(*, require: bool = True) -> Path:
 
 def external_data_root(*, require: bool = False) -> Path:
     raw = os.environ.get("FSOT_EXTERNAL_DATA_ROOT", "").strip()
-    root = Path(raw).expanduser() if raw else Path(r"G:\FSOT-PublicData")
-    if require and not root.exists():
+    candidates: list[Path] = []
+    if raw:
+        candidates.append(Path(raw).expanduser())
+    candidates.extend(
+        [
+            Path(r"G:\FSOT-PublicData"),
+            CANONICAL_ARCHIVE_ROOT / "03_FSOT-PublicData",
+        ]
+    )
+    ar = archive_root()
+    if ar is not None:
+        candidates.append(ar / "03_FSOT-PublicData")
+    for root in candidates:
+        if root.is_dir():
+            return root.resolve()
+    fallback = candidates[0]
+    if require:
         raise FileNotFoundError(
-            f"External data root not found: {root}. Set FSOT_EXTERNAL_DATA_ROOT."
+            f"External data root not found. Tried: {', '.join(str(c) for c in candidates)}. "
+            "Set FSOT_EXTERNAL_DATA_ROOT."
         )
-    return root
+    return fallback
 
 
 def public_data_vendor_root(*, require: bool = True) -> Path:

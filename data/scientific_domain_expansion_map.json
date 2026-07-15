@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-13T15:23:35.501144+00:00",
+  "generated_at": "2026-07-15T05:07:54.734737+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 340,
-    "total_scientific_domains_covered": 376,
-    "total_empirical_records": 257255,
+    "extension_domains": 347,
+    "total_scientific_domains_covered": 383,
+    "total_empirical_records": 536740,
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
     "neurolab_tier_distribution": {
-      "A_strong": 23,
-      "B_verified": 11,
-      "C_thin": 1,
+      "A_strong": 25,
+      "B_verified": 10,
+      "C_thin": 0,
       "D_needs_work": 0,
       "unverified": 0
     },
     "tier_distribution": {
-      "A_strong": 110,
-      "B_verified": 240,
-      "C_thin": 26,
+      "A_strong": 113,
+      "B_verified": 270,
+      "C_thin": 0,
       "D_needs_work": 0,
       "unverified": 0
     },
-    "lean_formal_modules": 474
+    "lean_formal_modules": 481
   },
   "neurolab_domains": [
     {
@@ -48,19 +48,24 @@
       "coverage_tier": "A_strong",
       "labs": [
         "cosmology_lambda_cdm",
+        "cosmology_wave4",
+        "cosmology_extended_lab",
         "cosmology_bubble_bleed_lab"
       ]
     },
     {
       "domain": "Astrophysics",
       "lean_domain": "astronomical",
-      "empirical_records": 163,
-      "median_error_pct": 0.0,
+      "empirical_records": 305,
+      "median_error_pct": 0.0005610563516671626,
       "precision_status": "target_band",
       "sign_mismatch": false,
       "authority_scalar_negative": false,
       "coverage_tier": "A_strong",
       "labs": [
+        "cosmology_wave4",
+        "cosmology_extended_lab",
+        "cosmology_higher_waves_lab",
         "cosmology_bubble_bleed_lab"
       ]
     },
@@ -74,7 +79,8 @@
       "authority_scalar_negative": true,
       "coverage_tier": "A_strong",
       "labs": [
-        "weather_lab"
+        "weather_lab",
+        "atmospheric_physics_gap_fill_lab"
       ]
     },
     {
@@ -87,7 +93,8 @@
       "authority_scalar_negative": false,
       "coverage_tier": "A_strong",
       "labs": [
-        "smiles_lab"
+        "smiles_lab",
+        "nist_atomic_lab"
       ]
     },
     {
@@ -149,14 +156,16 @@
     {
       "domain": "Cosmology",
       "lean_domain": "cosmological",
-      "empirical_records": 205,
-      "median_error_pct": 0.0,
+      "empirical_records": 347,
+      "median_error_pct": 0.0007354204043789445,
       "precision_status": "target_band",
       "sign_mismatch": false,
       "authority_scalar_negative": true,
       "coverage_tier": "A_strong",
       "labs": [
         "cosmology_lambda_cdm",
+        "cosmology_extended_lab",
+        "cosmology_higher_waves_lab",
         "cosmology_bubble_bleed_lab"
       ]
     },
@@ -170,6 +179,7 @@
       "authority_scalar_negative": false,
       "coverage_tier": "A_strong",
       "labs": [
+        "gbif_ecology_lab",
         "evolution_lab"
       ]
     },
@@ -183,6 +193,7 @@
       "authority_scalar_negative": false,
       "coverage_tier": "A_strong",
       "labs": [
+        "world_bank_economics_lab",
         "linguistics_lab"
       ]
     },
@@ -196,7 +207,9 @@
       "authority_scalar_negative": false,
       "coverage_tier": "A_strong",
       "labs": [
-        "smiles_lab"
+        "smiles_lab",
+        "geomagnetism_lab",
+        "space_weather_lab"
       ]
     },
     {
@@ -209,6 +222,7 @@
       "authority_scalar_negative": true,
       "coverage_tier": "B_verified",
       "labs": [
+        "fluid_dynamics_lab",
         "trinary_fluid_computer"
       ]
     },
@@ -222,19 +236,25 @@
       "authority_scalar_negative": true,
       "coverage_tier": "A_strong",
       "labs": [
-        "weather_lab"
+        "weather_lab",
+        "tectonics_lab",
+        "geomagnetism_lab"
       ]
     },
     {
       "domain": "High_Energy_Physics",
       "lean_domain": "higgs",
-      "empirical_records": 9,
-      "median_error_pct": 0.08808351263334355,
+      "empirical_records": 151,
+      "median_error_pct": 0.003557172593200954,
       "precision_status": "target_band",
       "sign_mismatch": false,
       "authority_scalar_negative": false,
-      "coverage_tier": "C_thin",
-      "labs": []
+      "coverage_tier": "A_strong",
+      "labs": [
+        "higgs_branching_lab",
+        "higgs_mass_lab",
+        "cosmology_higher_waves_lab"
+      ]
     },
     {
       "domain": "Materials_Science",
@@ -260,7 +280,8 @@
       "authority_scalar_negative": true,
       "coverage_tier": "A_strong",
       "labs": [
-        "weather_lab"
+        "weather_lab",
+        "meteorology_gap_fill_lab"
       ]
     },
     {
@@ -286,7 +307,8 @@
       "authority_scalar_negative": false,
       "coverage_tier": "B_verified",
       "labs": [
-        "smiles_lab"
+        "smiles_lab",
+        "neuron_cohort_lab"
       ]
     },
     {
@@ -313,6 +335,7 @@
       "authority_scalar_negative": true,
       "coverage_tier": "A_strong",
       "labs": [
+        "noaa_oceanography_lab",
         "weather_lab"
       ]
     },
@@ -332,13 +355,17 @@
     {
       "domain": "Particle_Astrophysics",
       "lean_domain": "cmb",
-      "empirical_records": 50,
-      "median_error_pct": 0.021477424424138976,
+      "empirical_records": 192,
+      "median_error_pct": 0.004643710259500975,
       "precision_status": "target_band",
       "sign_mismatch": false,
       "authority_scalar_negative": true,
-      "coverage_tier": "B_verified",
-      "labs": []
+      "coverage_tier": "A_strong",
+      "labs": [
+        "cosmology_wave4",
+        "cosmology_extended_lab",
+        "cosmology_higher_waves_lab"
+      ]
     },
     {
       "domain": "Particle_Physics",
@@ -349,7 +376,9 @@
       "sign_mismatch": false,
       "authority_scalar_negative": false,
       "coverage_tier": "B_verified",
-      "labs": []
+      "labs": [
+        "particle_physics_lab"
+      ]
     },
     {
       "domain": "Physical_Chemistry",
@@ -373,7 +402,10 @@
       "sign_mismatch": false,
       "authority_scalar_negative": false,
       "coverage_tier": "B_verified",
-      "labs": []
+      "labs": [
+        "cosmology_wave4",
+        "cosmology_extended_lab"
+      ]
     },
     {
       "domain": "Psychology",
@@ -385,6 +417,7 @@
       "authority_scalar_negative": false,
       "coverage_tier": "A_strong",
       "labs": [
+        "openalex_psychology_lab",
         "linguistics_lab"
       ]
     },
@@ -398,6 +431,7 @@
       "authority_scalar_negative": true,
       "coverage_tier": "A_strong",
       "labs": [
+        "quantum_computing_lab",
         "trinary_os"
       ]
     },
@@ -425,7 +459,8 @@
       "authority_scalar_negative": false,
       "coverage_tier": "B_verified",
       "labs": [
-        "smiles_lab"
+        "smiles_lab",
+        "nist_quantum_lab"
       ]
     },
     {
@@ -438,7 +473,8 @@
       "authority_scalar_negative": false,
       "coverage_tier": "B_verified",
       "labs": [
-        "smiles_lab"
+        "smiles_lab",
+        "nist_quantum_lab"
       ]
     },
     {
@@ -450,7 +486,10 @@
       "sign_mismatch": false,
       "authority_scalar_negative": true,
       "coverage_tier": "A_strong",
-      "labs": []
+      "labs": [
+        "seismology_lab",
+        "tectonics_lab"
+      ]
     },
     {
       "domain": "Sociology",
@@ -462,6 +501,8 @@
       "authority_scalar_negative": false,
       "coverage_tier": "A_strong",
       "labs": [
+        "openalex_sociology_lab",
+        "world_bank_sociology_lab",
         "linguistics_lab"
       ]
     },
@@ -483,9 +524,9 @@
     {
       "domain": "Plasma_Physics",
       "tier": 12,
-      "record_count": 20,
+      "record_count": 271833,
       "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.PlasmaPhysicsPriors"
     },
     {
@@ -523,9 +564,9 @@
     {
       "domain": "Cosmology_Anomalies",
       "tier": 25,
-      "record_count": 12,
-      "median_error_pct": 0.140126,
-      "coverage_tier": "C_thin",
+      "record_count": 23,
+      "median_error_pct": 0.024602,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.CosmologyAnomaliesPriors"
     },
     {
@@ -539,9 +580,9 @@
     {
       "domain": "Higgs_Mass",
       "tier": 17,
-      "record_count": 9,
-      "median_error_pct": 0.03990518384182655,
-      "coverage_tier": "C_thin",
+      "record_count": 24,
+      "median_error_pct": 0.012112816039879785,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.HiggsMassPriors"
     },
     {
@@ -611,17 +652,17 @@
     {
       "domain": "Orbital_Mechanics",
       "tier": 21,
-      "record_count": 9,
-      "median_error_pct": 0.106141,
-      "coverage_tier": "C_thin",
+      "record_count": 22,
+      "median_error_pct": 0.020214999999999997,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.OrbitalMechanicsPriors"
     },
     {
       "domain": "Small_Body_Orbits",
       "tier": 22,
-      "record_count": 12,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 22,
+      "median_error_pct": 0.020214999999999997,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.SmallBodyOrbitsPriors"
     },
     {
@@ -715,9 +756,9 @@
     {
       "domain": "Linguistics_Formal",
       "tier": 29,
-      "record_count": 10,
-      "median_error_pct": 0.0013504254899468224,
-      "coverage_tier": "C_thin",
+      "record_count": 24,
+      "median_error_pct": 0.022236,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.LinguisticsFormalPriors"
     },
     {
@@ -755,9 +796,9 @@
     {
       "domain": "Trinary_OS_Portable",
       "tier": 30,
-      "record_count": 8,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 24,
+      "median_error_pct": 0.013342,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.TrinaryOSPortablePriors"
     },
     {
@@ -899,9 +940,9 @@
     {
       "domain": "Math_Generator_Benchmark_Formula_Eval",
       "tier": 31,
-      "record_count": 13,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 21,
+      "median_error_pct": 0.020055,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors"
     },
     {
@@ -923,9 +964,9 @@
     {
       "domain": "Math_Generator_Airfoil_RMSE",
       "tier": 32,
-      "record_count": 5,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 21,
+      "median_error_pct": 0.020055,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.MathGeneratorAirfoilRmsePriors"
     },
     {
@@ -939,25 +980,25 @@
     {
       "domain": "Tokenization_Smoke",
       "tier": 33,
-      "record_count": 9,
+      "record_count": 24,
       "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.TokenizationSmokePriors"
     },
     {
       "domain": "Trinary_Hardware_Motif",
       "tier": 33,
-      "record_count": 8,
+      "record_count": 24,
       "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.TrinaryHardwareMotifPriors"
     },
     {
       "domain": "Intrinsic_LLM_Validators",
       "tier": 33,
-      "record_count": 10,
+      "record_count": 24,
       "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.IntrinsicLLMValidatorsPriors"
     },
     {
@@ -971,33 +1012,33 @@
     {
       "domain": "Arxiv_Primitives_V14",
       "tier": 34,
-      "record_count": 14,
+      "record_count": 24,
       "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.ArxivPrimitivesV14Priors"
     },
     {
       "domain": "Formula_Corpus_CNC",
       "tier": 34,
-      "record_count": 10,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 21,
+      "median_error_pct": 0.020055,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.FormulaCorpusCncPriors"
     },
     {
       "domain": "Binary_Decoder_Rendlesham",
       "tier": 35,
-      "record_count": 10,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 24,
+      "median_error_pct": 0.004504756223217969,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.BinaryDecoderRendleshamPriors"
     },
     {
       "domain": "Certified_Agent_Qwen",
       "tier": 35,
-      "record_count": 8,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 24,
+      "median_error_pct": 0.004504756223217969,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.CertifiedAgentQwenPriors"
     },
     {
@@ -1011,49 +1052,49 @@
     {
       "domain": "FSOT_Aggregate_Unified_DB",
       "tier": 36,
-      "record_count": 8,
+      "record_count": 24,
       "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.FsotAggregateUnifiedDbPriors"
     },
     {
       "domain": "Prediction_Rederivation",
       "tier": 36,
-      "record_count": 10,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 21,
+      "median_error_pct": 0.028160460849701814,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.PredictionRederivationPriors"
     },
     {
       "domain": "VL_Distill_Atlas",
       "tier": 37,
-      "record_count": 10,
+      "record_count": 24,
       "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.VlDistillAtlasPriors"
     },
     {
       "domain": "Rust_Lean_Bridge",
       "tier": 37,
-      "record_count": 9,
+      "record_count": 24,
       "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.RustLeanBridgePriors"
     },
     {
       "domain": "Bibliography_Lean_Corpus",
       "tier": 37,
-      "record_count": 9,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 21,
+      "median_error_pct": 0.020055,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.BibliographyLeanCorpusPriors"
     },
     {
       "domain": "NIST_CODATA_Constants",
       "tier": 38,
-      "record_count": 6,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 21,
+      "median_error_pct": 9.5e-05,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.NistCodataConstantsPriors"
     },
     {
@@ -1139,17 +1180,17 @@
     {
       "domain": "Electrical_Power_Systems",
       "tier": 39,
-      "record_count": 9,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 24,
+      "median_error_pct": 0.015583023735736914,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.ElectricalPowerSystemsPriors"
     },
     {
       "domain": "HVAC_Thermal_Systems",
       "tier": 39,
-      "record_count": 7,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 23,
+      "median_error_pct": 0.017836062884411003,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.HvacThermalSystemsPriors"
     },
     {
@@ -1459,7 +1500,7 @@
     {
       "domain": "Observer_Channel_Derivation",
       "tier": 46,
-      "record_count": 247,
+      "record_count": 348,
       "median_error_pct": 0.0525102820198906,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.ObserverChannelDerivationPriors"
@@ -2772,7 +2813,7 @@
       "domain": "Mechanical_Engineering_Panel",
       "tier": 85,
       "record_count": 20,
-      "median_error_pct": 0.078697,
+      "median_error_pct": 0.039349,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.MechanicalEngineeringPanelPriors"
     },
@@ -2971,7 +3012,7 @@
     {
       "domain": "The_Well_Outcomes_Verification_Panel",
       "tier": 89,
-      "record_count": 381,
+      "record_count": 246,
       "median_error_pct": 0.031159,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.TheWellOutcomesVerificationPanelPriors"
@@ -3187,18 +3228,74 @@
     {
       "domain": "Zebrafish_Longevity_Genetics_Coupling_Panel",
       "tier": 95,
-      "record_count": 15,
-      "median_error_pct": 0.013342,
-      "coverage_tier": "C_thin",
+      "record_count": 24,
+      "median_error_pct": 0.014453500000000001,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.ZebrafishLongevityGeneticsCouplingPanelPriors"
     },
     {
       "domain": "Tier_95_Zebrafish_Spine",
       "tier": 95,
-      "record_count": 18,
-      "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "record_count": 24,
+      "median_error_pct": 0.013342,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.Tier95ZebrafishSpinePriors"
+    },
+    {
+      "domain": "Founding_Quantum_Vacuum_Panel",
+      "tier": 96,
+      "record_count": 24,
+      "median_error_pct": 0.01529034996934153,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.FoundingQuantumVacuumPanelPriors"
+    },
+    {
+      "domain": "Founding_Cosmic_Ray_Panel",
+      "tier": 96,
+      "record_count": 24,
+      "median_error_pct": 0.021221,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.FoundingCosmicRayPanelPriors"
+    },
+    {
+      "domain": "Founding_Galactic_Halo_Rotation_Panel",
+      "tier": 96,
+      "record_count": 24,
+      "median_error_pct": 0.022461,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.FoundingGalacticHaloRotationPanelPriors"
+    },
+    {
+      "domain": "Founding_Cosmic_Dust_Panel",
+      "tier": 96,
+      "record_count": 24,
+      "median_error_pct": 0.026675,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.FoundingCosmicDustPanelPriors"
+    },
+    {
+      "domain": "Founding_White_Dwarf_Cooling_Panel",
+      "tier": 96,
+      "record_count": 24,
+      "median_error_pct": 0.022461,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.FoundingWhiteDwarfCoolingPanelPriors"
+    },
+    {
+      "domain": "Founding_Atmospheric_Ozone_Panel",
+      "tier": 96,
+      "record_count": 24,
+      "median_error_pct": 0.022236,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.FoundingAtmosphericOzonePanelPriors"
+    },
+    {
+      "domain": "Founding_Pulsar_Glitch_Panel",
+      "tier": 96,
+      "record_count": 24,
+      "median_error_pct": 0.022461,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.FoundingPulsarGlitchPanelPriors"
     }
   ],
   "intelligence_compression": {
@@ -3306,11 +3403,8 @@
       "gates_pass": true
     }
   },
-  "accuracy_weak_spots": [
-    "High_Energy_Physics"
-  ],
+  "accuracy_weak_spots": [],
   "thin_empirical_coverage": [
-    "High_Energy_Physics",
     "Neuroscience"
   ],
   "authority_dispersal_domains": [],

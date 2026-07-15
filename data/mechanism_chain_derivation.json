@@ -1,0 +1,1503 @@
+{
+  "generated_at": "2026-07-15T05:06:32.519668+00:00",
+  "version": "1.0",
+  "title": "FSOT mechanism chain \u2014 seeds to sector readout",
+  "verdict": "DERIVATION_DOCUMENTED_NOT_OPAQUE_TABLE",
+  "intrinsic_seeds": {
+    "alpha": 0.000808293741,
+    "psi_con": 0.632120558829,
+    "eta_eff": 0.466942206924,
+    "beta": 0.0,
+    "consciousness_factor": 0.287600151819,
+    "k": 0.420221664161
+  },
+  "core_formula": "raw_S = term1_final + term2 + term3",
+  "term1_structure": "(N\u00b7P/\u221aD_eff)\u00b7cos((\u03c8_con+\u03b4\u03c8)/\u03b7_eff)\u00b7growth\u00b7coherence\u00b7perceived_adjust \u00d7 quirkMod(observed)",
+  "domain_table_honesty": {
+    "slots": 175,
+    "interpretation": "175 slots = 35 domains \u00d7 5 manifest fields (D_eff, hits, \u03b4\u03c8, \u03b4\u03b8, observed). Values are preregistered in fsot_compute.py / extension manifest \u2014 not tuned per benchmark row.",
+    "parameter_audit": "data/parameter_honesty_closure.json"
+  },
+  "observer_channel": {
+    "method": "consciousness_factor \u00d7 D_eff/25 + |\u03b4\u03c8|/1.2 + consciousness_tag",
+    "spine_ref": []
+  },
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "core_domain_chains": [
+    {
+      "neurolab_domain": "Acoustics",
+      "lean_domain": "material",
+      "manifest_params": {
+        "D_eff": 10,
+        "recent_hits": 0,
+        "delta_psi": 0.3,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.3115908,
+      "lean_oracle_breakdown": {
+        "term1": -0.20218325,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79781675,
+        "term1_fraction": 0.253421
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Astronomy",
+      "lean_domain": "astronomical",
+      "manifest_params": {
+        "D_eff": 20,
+        "recent_hits": 1,
+        "delta_psi": 1.0,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.89845957,
+      "lean_oracle_breakdown": {
+        "term1": 1.13806104,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.13806104,
+        "term1_fraction": 0.532287
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Astrophysics",
+      "lean_domain": "astronomical",
+      "manifest_params": {
+        "D_eff": 24,
+        "recent_hits": 1,
+        "delta_psi": 1.0,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.8824108,
+      "lean_oracle_breakdown": {
+        "term1": 1.13806104,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.13806104,
+        "term1_fraction": 0.532287
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Atmospheric_Physics",
+      "lean_domain": "energy",
+      "manifest_params": {
+        "D_eff": 17,
+        "recent_hits": 2,
+        "delta_psi": 0.8,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": -0.47643191,
+      "lean_oracle_breakdown": {
+        "term1": 0.87276042,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.87276042,
+        "term1_fraction": 0.466029
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Atomic_Physics",
+      "lean_domain": "particle",
+      "manifest_params": {
+        "D_eff": 7,
+        "recent_hits": 0,
+        "delta_psi": 0.85,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.73582387,
+      "lean_oracle_breakdown": {
+        "term1": 0.75103744,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.75103744,
+        "term1_fraction": 0.42891
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Biochemistry",
+      "lean_domain": "medical",
+      "manifest_params": {
+        "D_eff": 13,
+        "recent_hits": 1,
+        "delta_psi": 0.35,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.30622123,
+      "lean_oracle_breakdown": {
+        "term1": -0.27128643,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.72871357,
+        "term1_fraction": 0.372281
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Biology",
+      "lean_domain": "biological",
+      "manifest_params": {
+        "D_eff": 12,
+        "recent_hits": 0,
+        "delta_psi": 0.08,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": 0.44472501,
+      "lean_oracle_breakdown": {
+        "term1": 0.05831052,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.05831052,
+        "term1_fraction": 0.055098
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Chemistry",
+      "lean_domain": "electron",
+      "manifest_params": {
+        "D_eff": 8,
+        "recent_hits": 0,
+        "delta_psi": 0.6,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.40788406,
+      "lean_oracle_breakdown": {
+        "term1": -0.02935974,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.97064026,
+        "term1_fraction": 0.030248
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Condensed_Matter",
+      "lean_domain": "material",
+      "manifest_params": {
+        "D_eff": 14,
+        "recent_hits": 0,
+        "delta_psi": 0.5,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.338406,
+      "lean_oracle_breakdown": {
+        "term1": -0.20218325,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79781675,
+        "term1_fraction": 0.253421
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Cosmology",
+      "lean_domain": "cosmological",
+      "manifest_params": {
+        "D_eff": 25,
+        "recent_hits": 0,
+        "delta_psi": 1.0,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": -0.50245595,
+      "lean_oracle_breakdown": null,
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Ecology",
+      "lean_domain": "biological",
+      "manifest_params": {
+        "D_eff": 15,
+        "recent_hits": 1,
+        "delta_psi": 0.2,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": 0.30031708,
+      "lean_oracle_breakdown": {
+        "term1": 0.05831052,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.05831052,
+        "term1_fraction": 0.055098
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Economics",
+      "lean_domain": "consciousness",
+      "manifest_params": {
+        "D_eff": 20,
+        "recent_hits": 3,
+        "delta_psi": 1.5,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.64600452,
+      "lean_oracle_breakdown": {
+        "term1": 1.49917063,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.49917063,
+        "term1_fraction": 0.599867
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Electromagnetism",
+      "lean_domain": "electron",
+      "manifest_params": {
+        "D_eff": 9,
+        "recent_hits": 0,
+        "delta_psi": 0.7,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.51886552,
+      "lean_oracle_breakdown": {
+        "term1": -0.02935974,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.97064026,
+        "term1_fraction": 0.030248
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Fluid_Dynamics",
+      "lean_domain": "energy",
+      "manifest_params": {
+        "D_eff": 15,
+        "recent_hits": 1,
+        "delta_psi": 0.9,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": -0.56273381,
+      "lean_oracle_breakdown": {
+        "term1": 0.87276042,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.87276042,
+        "term1_fraction": 0.466029
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Geophysics",
+      "lean_domain": "energy",
+      "manifest_params": {
+        "D_eff": 19,
+        "recent_hits": 2,
+        "delta_psi": 1.0,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": -0.54909429,
+      "lean_oracle_breakdown": {
+        "term1": 0.87276042,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.87276042,
+        "term1_fraction": 0.466029
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "High_Energy_Physics",
+      "lean_domain": "higgs",
+      "manifest_params": {
+        "D_eff": 7,
+        "recent_hits": 1,
+        "delta_psi": 0.95,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.88626406,
+      "lean_oracle_breakdown": {
+        "term1": 1.10903942,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.10903942,
+        "term1_fraction": 0.52585
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Materials_Science",
+      "lean_domain": "material",
+      "manifest_params": {
+        "D_eff": 10,
+        "recent_hits": 0,
+        "delta_psi": 0.5,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.33525988,
+      "lean_oracle_breakdown": {
+        "term1": -0.20218325,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79781675,
+        "term1_fraction": 0.253421
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Meteorology",
+      "lean_domain": "energy",
+      "manifest_params": {
+        "D_eff": 16,
+        "recent_hits": 2,
+        "delta_psi": 0.8,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": -0.48499702,
+      "lean_oracle_breakdown": {
+        "term1": 0.87276042,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.87276042,
+        "term1_fraction": 0.466029
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Molecular_Chemistry",
+      "lean_domain": "chemical",
+      "manifest_params": {
+        "D_eff": 9,
+        "recent_hits": 0,
+        "delta_psi": 0.5,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.33457338,
+      "lean_oracle_breakdown": {
+        "term1": -0.20381691,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79618309,
+        "term1_fraction": 0.255993
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Neuroscience",
+      "lean_domain": "neural",
+      "manifest_params": {
+        "D_eff": 14,
+        "recent_hits": 1,
+        "delta_psi": 0.7,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.51436196,
+      "lean_oracle_breakdown": {
+        "term1": 0.22402533,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.22402533,
+        "term1_fraction": 0.183023
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Nuclear_Physics",
+      "lean_domain": "nuclear",
+      "manifest_params": {
+        "D_eff": 15,
+        "recent_hits": 1,
+        "delta_psi": 1.0,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.92130943,
+      "lean_oracle_breakdown": {
+        "term1": 1.19243678,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.19243678,
+        "term1_fraction": 0.543887
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Oceanography",
+      "lean_domain": "energy",
+      "manifest_params": {
+        "D_eff": 17,
+        "recent_hits": 1,
+        "delta_psi": 0.7,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": -0.37715908,
+      "lean_oracle_breakdown": {
+        "term1": 0.87276042,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.87276042,
+        "term1_fraction": 0.466029
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Optics",
+      "lean_domain": "material",
+      "manifest_params": {
+        "D_eff": 10,
+        "recent_hits": 0,
+        "delta_psi": 0.6,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.40806247,
+      "lean_oracle_breakdown": {
+        "term1": -0.20218325,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79781675,
+        "term1_fraction": 0.253421
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Particle_Astrophysics",
+      "lean_domain": "cmb",
+      "manifest_params": {
+        "D_eff": 24,
+        "recent_hits": 0,
+        "delta_psi": 0.8,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": -0.42441172,
+      "lean_oracle_breakdown": {
+        "term1": -2.00997106,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": -1.00997106,
+        "term1_fraction": 1.990127
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Particle_Physics",
+      "lean_domain": "particle",
+      "manifest_params": {
+        "D_eff": 5,
+        "recent_hits": 0,
+        "delta_psi": 1.0,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.95041344,
+      "lean_oracle_breakdown": {
+        "term1": 0.75103744,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.75103744,
+        "term1_fraction": 0.42891
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Physical_Chemistry",
+      "lean_domain": "chemical",
+      "manifest_params": {
+        "D_eff": 8,
+        "recent_hits": 0,
+        "delta_psi": 0.5,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.33401327,
+      "lean_oracle_breakdown": {
+        "term1": -0.20381691,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79618309,
+        "term1_fraction": 0.255993
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Planetary_Science",
+      "lean_domain": "galactic",
+      "manifest_params": {
+        "D_eff": 21,
+        "recent_hits": 1,
+        "delta_psi": 0.9,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.76717914,
+      "lean_oracle_breakdown": {
+        "term1": 0.82565347,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.82565347,
+        "term1_fraction": 0.452251
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Psychology",
+      "lean_domain": "consciousness",
+      "manifest_params": {
+        "D_eff": 16,
+        "recent_hits": 1,
+        "delta_psi": 1.15,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 1.05020564,
+      "lean_oracle_breakdown": {
+        "term1": 1.49917063,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.49917063,
+        "term1_fraction": 0.599867
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Quantum_Computing",
+      "lean_domain": "ai",
+      "manifest_params": {
+        "D_eff": 11,
+        "recent_hits": 0,
+        "delta_psi": 0.5,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": -0.1476731,
+      "lean_oracle_breakdown": {
+        "term1": -1.35141716,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": -0.35141716,
+        "term1_fraction": 3.845621
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Quantum_Gravity",
+      "lean_domain": "blackhole",
+      "manifest_params": {
+        "D_eff": 22,
+        "recent_hits": 0,
+        "delta_psi": 1.0,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": -0.52559775,
+      "lean_oracle_breakdown": {
+        "term1": 1.42781381,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.42781381,
+        "term1_fraction": 0.588107
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Quantum_Mechanics",
+      "lean_domain": "quantum",
+      "manifest_params": {
+        "D_eff": 6,
+        "recent_hits": 0,
+        "delta_psi": 1.0,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.9555063,
+      "lean_oracle_breakdown": {
+        "term1": 1.27381494,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.27381494,
+        "term1_fraction": 0.56021
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Quantum_Optics",
+      "lean_domain": "quantum",
+      "manifest_params": {
+        "D_eff": 11,
+        "recent_hits": 0,
+        "delta_psi": 0.6,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.40817054,
+      "lean_oracle_breakdown": {
+        "term1": 1.27381494,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.27381494,
+        "term1_fraction": 0.56021
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Seismology",
+      "lean_domain": "energy",
+      "manifest_params": {
+        "D_eff": 18,
+        "recent_hits": 2,
+        "delta_psi": 1.2,
+        "observed": false
+      },
+      "domain_scalar_K_times_raw_S": -0.44590157,
+      "lean_oracle_breakdown": {
+        "term1": 0.87276042,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.87276042,
+        "term1_fraction": 0.466029
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Sociology",
+      "lean_domain": "consciousness",
+      "manifest_params": {
+        "D_eff": 18,
+        "recent_hits": 3,
+        "delta_psi": 1.5,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.65014665,
+      "lean_oracle_breakdown": {
+        "term1": 1.49917063,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.49917063,
+        "term1_fraction": 0.599867
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    },
+    {
+      "neurolab_domain": "Thermodynamics",
+      "lean_domain": "energy",
+      "manifest_params": {
+        "D_eff": 15,
+        "recent_hits": 1,
+        "delta_psi": 0.9,
+        "observed": true
+      },
+      "domain_scalar_K_times_raw_S": 0.7869745,
+      "lean_oracle_breakdown": {
+        "term1": 0.87276042,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.87276042,
+        "term1_fraction": 0.466029
+      },
+      "derivation_note": "D_eff/hits/\u03b4\u03c8/observed are manifest-declared folds of the same engine; bleed constants in fsot_compute.py are seed-derived (\u03c6/e/\u03c0/\u03b3), not per-observable fits."
+    }
+  ],
+  "extension_panel_sample": [
+    {
+      "panel": "AI_Galactic_Orbital_Bridge",
+      "maps_to_lean": [
+        "ai",
+        "galactic"
+      ],
+      "panel_params": {
+        "D_eff": 16,
+        "recent_hits": 2,
+        "delta_psi": 0.88,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -1.35141716,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": -0.35141716,
+        "term1_fraction": 3.845621
+      }
+    },
+    {
+      "panel": "Acoustic_Resonance_Materials",
+      "maps_to_lean": [
+        "particle",
+        "material",
+        "energy",
+        "acoustical"
+      ],
+      "panel_params": {
+        "D_eff": 15,
+        "recent_hits": 0,
+        "delta_psi": 0.82,
+        "observed": false
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.75103744,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.75103744,
+        "term1_fraction": 0.42891
+      }
+    },
+    {
+      "panel": "Actuarial_Science_Panel",
+      "maps_to_lean": [
+        "economic",
+        "consciousness"
+      ],
+      "panel_params": {
+        "D_eff": 20,
+        "recent_hits": 3,
+        "delta_psi": 1.5,
+        "observed": true
+      },
+      "primary_lean_breakdown": null
+    },
+    {
+      "panel": "Adjacent_Rung_Coupling",
+      "maps_to_lean": [
+        "particle",
+        "medical",
+        "galactic",
+        "cosmological"
+      ],
+      "panel_params": {
+        "D_eff": 17,
+        "recent_hits": 3,
+        "delta_psi": 0.91,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.75103744,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.75103744,
+        "term1_fraction": 0.42891
+      }
+    },
+    {
+      "panel": "Adversarial_Fractal_Break_Tests",
+      "maps_to_lean": [
+        "ai",
+        "biological",
+        "medical"
+      ],
+      "panel_params": {
+        "D_eff": 17,
+        "recent_hits": 3,
+        "delta_psi": 0.88,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -1.35141716,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": -0.35141716,
+        "term1_fraction": 3.845621
+      }
+    },
+    {
+      "panel": "Agriculture_Agroecology",
+      "maps_to_lean": [
+        "biological",
+        "energy"
+      ],
+      "panel_params": {
+        "D_eff": 16,
+        "recent_hits": 2,
+        "delta_psi": 0.75,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.05831052,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.05831052,
+        "term1_fraction": 0.055098
+      }
+    },
+    {
+      "panel": "Alternate_Base_Mathematics_Explorer_Panel",
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "particle"
+      ],
+      "panel_params": {
+        "D_eff": 17,
+        "recent_hits": 1,
+        "delta_psi": 0.9,
+        "observed": false
+      },
+      "primary_lean_breakdown": null
+    },
+    {
+      "panel": "Alternate_Base_Mathematics_Spine",
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "consciousness"
+      ],
+      "panel_params": {
+        "D_eff": 18,
+        "recent_hits": 1,
+        "delta_psi": 0.9,
+        "observed": false
+      },
+      "primary_lean_breakdown": null
+    },
+    {
+      "panel": "Anthropology",
+      "maps_to_lean": [
+        "consciousness",
+        "biological"
+      ],
+      "panel_params": {
+        "D_eff": 17,
+        "recent_hits": 2,
+        "delta_psi": 0.7,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 1.49917063,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.49917063,
+        "term1_fraction": 0.599867
+      }
+    },
+    {
+      "panel": "Architecture_Building_Science",
+      "maps_to_lean": [
+        "energy",
+        "material",
+        "acoustical"
+      ],
+      "panel_params": {
+        "D_eff": 16,
+        "recent_hits": 2,
+        "delta_psi": 0.75,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.87276042,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.87276042,
+        "term1_fraction": 0.466029
+      }
+    },
+    {
+      "panel": "Arxiv_Gravitational_Waves_Panel",
+      "maps_to_lean": [
+        "particle",
+        "astronomical"
+      ],
+      "panel_params": {
+        "D_eff": 21,
+        "recent_hits": 2,
+        "delta_psi": 1.0,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.75103744,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.75103744,
+        "term1_fraction": 0.42891
+      }
+    },
+    {
+      "panel": "Arxiv_Primitives_V14",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ],
+      "panel_params": {
+        "D_eff": 12,
+        "recent_hits": 2,
+        "delta_psi": 0.8,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 1.49917063,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.49917063,
+        "term1_fraction": 0.599867
+      }
+    },
+    {
+      "panel": "Astrophysical_Structure_Crosswalk",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "particle"
+      ],
+      "panel_params": {
+        "D_eff": 18,
+        "recent_hits": 2,
+        "delta_psi": 0.88,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 1.13806104,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.13806104,
+        "term1_fraction": 0.532287
+      }
+    },
+    {
+      "panel": "Bibliography_Lean_Corpus",
+      "maps_to_lean": [
+        "particle",
+        "mathematical"
+      ],
+      "panel_params": {
+        "D_eff": 13,
+        "recent_hits": 1,
+        "delta_psi": 0.5,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.75103744,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.75103744,
+        "term1_fraction": 0.42891
+      }
+    },
+    {
+      "panel": "Binary_Decoder_Rendlesham",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ],
+      "panel_params": {
+        "D_eff": 12,
+        "recent_hits": 2,
+        "delta_psi": 0.8,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 1.49917063,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.49917063,
+        "term1_fraction": 0.599867
+      }
+    },
+    {
+      "panel": "Biological_CUDA_Physarum",
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "neural"
+      ],
+      "panel_params": {
+        "D_eff": 22,
+        "recent_hits": 5,
+        "delta_psi": 0.9,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.05831052,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.05831052,
+        "term1_fraction": 0.055098
+      }
+    },
+    {
+      "panel": "Biophysics_Public_Panel",
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "neural"
+      ],
+      "panel_params": {
+        "D_eff": 12,
+        "recent_hits": 2,
+        "delta_psi": 0.65,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.05831052,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.05831052,
+        "term1_fraction": 0.055098
+      }
+    },
+    {
+      "panel": "Botany",
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ],
+      "panel_params": {
+        "D_eff": 14,
+        "recent_hits": 2,
+        "delta_psi": 0.7,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.05831052,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.05831052,
+        "term1_fraction": 0.055098
+      }
+    },
+    {
+      "panel": "Boundary_Partition_Tightening",
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic",
+        "mathematical"
+      ],
+      "panel_params": {
+        "D_eff": 17,
+        "recent_hits": 2,
+        "delta_psi": 0.75,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 1.49917063,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.49917063,
+        "term1_fraction": 0.599867
+      }
+    },
+    {
+      "panel": "Breakthrough_Discoveries_2024_2026",
+      "maps_to_lean": [
+        "particle",
+        "astronomical",
+        "cosmological"
+      ],
+      "panel_params": {
+        "D_eff": 22,
+        "recent_hits": 20,
+        "delta_psi": 2.0,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.75103744,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.75103744,
+        "term1_fraction": 0.42891
+      }
+    },
+    {
+      "panel": "CERN_Open_Data_LHC",
+      "maps_to_lean": [
+        "particle",
+        "high_energy"
+      ],
+      "panel_params": {
+        "D_eff": 19,
+        "recent_hits": 1,
+        "delta_psi": 1.2,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.75103744,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.75103744,
+        "term1_fraction": 0.42891
+      }
+    },
+    {
+      "panel": "CRC_Handbook_Properties",
+      "maps_to_lean": [
+        "chemical",
+        "material"
+      ],
+      "panel_params": {
+        "D_eff": 11,
+        "recent_hits": 2,
+        "delta_psi": 0.6,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -0.20381691,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79618309,
+        "term1_fraction": 0.255993
+      }
+    },
+    {
+      "panel": "CVE_Codon_Hole_Falsification",
+      "maps_to_lean": [
+        "medical",
+        "ai",
+        "biological"
+      ],
+      "panel_params": {
+        "D_eff": 17,
+        "recent_hits": 3,
+        "delta_psi": 0.88,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -0.27128643,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.72871357,
+        "term1_fraction": 0.372281
+      }
+    },
+    {
+      "panel": "Cardiology",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "panel_params": {
+        "D_eff": 15,
+        "recent_hits": 2,
+        "delta_psi": 0.72,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -0.27128643,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.72871357,
+        "term1_fraction": 0.372281
+      }
+    },
+    {
+      "panel": "Cardiology_Panel",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "panel_params": {
+        "D_eff": 14,
+        "recent_hits": 2,
+        "delta_psi": 0.5,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -0.27128643,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.72871357,
+        "term1_fraction": 0.372281
+      }
+    },
+    {
+      "panel": "Cartography_GIS_Panel",
+      "maps_to_lean": [
+        "economic",
+        "energy"
+      ],
+      "panel_params": {
+        "D_eff": 18,
+        "recent_hits": 3,
+        "delta_psi": 1.2,
+        "observed": true
+      },
+      "primary_lean_breakdown": null
+    },
+    {
+      "panel": "Certified_Agent_Formal_Panel",
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "mathematical"
+      ],
+      "panel_params": {
+        "D_eff": 14,
+        "recent_hits": 2,
+        "delta_psi": 0.72,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -1.35141716,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": -0.35141716,
+        "term1_fraction": 3.845621
+      }
+    },
+    {
+      "panel": "Certified_Agent_Qwen",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ],
+      "panel_params": {
+        "D_eff": 12,
+        "recent_hits": 2,
+        "delta_psi": 0.75,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 1.49917063,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.49917063,
+        "term1_fraction": 0.599867
+      }
+    },
+    {
+      "panel": "Chaos_Mediated_Phase_Transitions",
+      "maps_to_lean": [
+        "particle",
+        "energy",
+        "fusion",
+        "plasma"
+      ],
+      "panel_params": {
+        "D_eff": 17,
+        "recent_hits": 0,
+        "delta_psi": 0.9,
+        "observed": false
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.75103744,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.75103744,
+        "term1_fraction": 0.42891
+      }
+    },
+    {
+      "panel": "Chemical_Engineering",
+      "maps_to_lean": [
+        "chemical",
+        "electron",
+        "energy"
+      ],
+      "panel_params": {
+        "D_eff": 16,
+        "recent_hits": 2,
+        "delta_psi": 0.75,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -0.20381691,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79618309,
+        "term1_fraction": 0.255993
+      }
+    },
+    {
+      "panel": "Chemical_Structure_Stability_Panel",
+      "maps_to_lean": [
+        "chemical",
+        "material",
+        "particle",
+        "electron"
+      ],
+      "panel_params": {
+        "D_eff": 14,
+        "recent_hits": 2,
+        "delta_psi": 0.82,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -0.20381691,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79618309,
+        "term1_fraction": 0.255993
+      }
+    },
+    {
+      "panel": "Civil_Engineering",
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ],
+      "panel_params": {
+        "D_eff": 16,
+        "recent_hits": 2,
+        "delta_psi": 0.75,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -0.20218325,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79781675,
+        "term1_fraction": 0.253421
+      }
+    },
+    {
+      "panel": "Civil_Engineering_Panel",
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ],
+      "panel_params": {
+        "D_eff": 16,
+        "recent_hits": 2,
+        "delta_psi": 0.55,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -0.20218325,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.79781675,
+        "term1_fraction": 0.253421
+      }
+    },
+    {
+      "panel": "Climate_Science",
+      "maps_to_lean": [
+        "energy",
+        "galactic"
+      ],
+      "panel_params": {
+        "D_eff": 16,
+        "recent_hits": 3,
+        "delta_psi": 0.75,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.87276042,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.87276042,
+        "term1_fraction": 0.466029
+      }
+    },
+    {
+      "panel": "ClinicalTrials_Medical_Panel",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "panel_params": {
+        "D_eff": 13,
+        "recent_hits": 2,
+        "delta_psi": 0.72,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -0.27128643,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.72871357,
+        "term1_fraction": 0.372281
+      }
+    },
+    {
+      "panel": "Clinical_Medicine",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "panel_params": {
+        "D_eff": 15,
+        "recent_hits": 2,
+        "delta_psi": 0.72,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": -0.27128643,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 0.72871357,
+        "term1_fraction": 0.372281
+      }
+    },
+    {
+      "panel": "Code_Genome_Structure",
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "ai"
+      ],
+      "panel_params": {
+        "D_eff": 17,
+        "recent_hits": 3,
+        "delta_psi": 0.92,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 0.05831052,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 1.05831052,
+        "term1_fraction": 0.055098
+      }
+    },
+    {
+      "panel": "Cold_Fusion_Candidate_Prereg_Scaffold",
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "particle",
+        "material"
+      ],
+      "panel_params": {
+        "D_eff": 14,
+        "recent_hits": 2,
+        "delta_psi": 0.85,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 1.02836626,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.02836626,
+        "term1_fraction": 0.506992
+      }
+    },
+    {
+      "panel": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material",
+        "energy"
+      ],
+      "panel_params": {
+        "D_eff": 15,
+        "recent_hits": 3,
+        "delta_psi": 0.95,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 1.02836626,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.02836626,
+        "term1_fraction": 0.506992
+      }
+    },
+    {
+      "panel": "Compact_Object_Binary_Events",
+      "maps_to_lean": [
+        "astronomical",
+        "particle",
+        "galactic"
+      ],
+      "panel_params": {
+        "D_eff": 20,
+        "recent_hits": 2,
+        "delta_psi": 0.92,
+        "observed": true
+      },
+      "primary_lean_breakdown": {
+        "term1": 1.13806104,
+        "term2": 1.0,
+        "term3": 0.0,
+        "raw_S": 2.13806104,
+        "term1_fraction": 0.532287
+      }
+    }
+  ],
+  "extension_panel_count": 347,
+  "artifacts": [
+    "FSOT/Scalar.lean",
+    "vendor/fsot_compute.py",
+    "data/fsot_formula_spine.yaml",
+    "data/observer_channel_derivation_benchmark.json",
+    "data/formula_branching_fractal_benchmark.json"
+  ]
+}

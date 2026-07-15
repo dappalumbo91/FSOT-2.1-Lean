@@ -1,0 +1,278 @@
+{
+  "generated_at": "2026-07-15T01:30:13.604758+00:00",
+  "verdict": "I_CANONICAL_AHEAD_OF_C_MIRROR",
+  "summary": {
+    "i_external_data": {
+      "dirs": 43,
+      "files": 110,
+      "bytes": 8658066975
+    },
+    "g_external_data": {
+      "dirs": 43,
+      "files": 110,
+      "bytes": 8658062358
+    },
+    "c_vendor_public_data": {
+      "dirs": 17,
+      "files": 30,
+      "bytes": 1555699
+    },
+    "i_hub_vendor_public_data": {
+      "dirs": 16,
+      "files": 30,
+      "bytes": 1555699
+    },
+    "i_vs_g_mirror_match": false,
+    "missing_cache_dirs_on_c": 12,
+    "c_only_dirs": [
+      "cache",
+      "dark_energy_cpl",
+      "sh0es"
+    ],
+    "live_api_health": {
+      "checked_at": "2026-07-15T01:25:08.707224+00:00",
+      "mega_deep": false,
+      "channels": [
+        {
+          "channel": "gbif",
+          "status": "ok",
+          "detail": "count=3737215114"
+        },
+        {
+          "channel": "gwosc",
+          "status": "ok",
+          "detail": "catalogs=18"
+        },
+        {
+          "channel": "simbad_tap",
+          "status": "ok",
+          "detail": "rows=3"
+        },
+        {
+          "channel": "gaia_dr3_tap",
+          "status": "ok",
+          "detail": "rows=3"
+        },
+        {
+          "channel": "vizier_wds",
+          "status": "fail",
+          "error_type": "RuntimeError",
+          "error": "vizier_tap_get: HTTP Error 404: Not Found; vizier_tap_post: HTTP Error 404: Not Found"
+        },
+        {
+          "channel": "materials_project",
+          "status": "ok",
+          "detail": "skipped_no_MP_API_KEY (bundled+expansion panel used)"
+        },
+        {
+          "channel": "openneuro_graphql",
+          "status": "ok",
+          "detail": "datasets=12"
+        },
+        {
+          "channel": "pubchem_pug",
+          "status": "ok",
+          "detail": "cid=2244 ok"
+        },
+        {
+          "channel": "jpl_ssd_cad",
+          "status": "ok",
+          "detail": "count=5"
+        },
+        {
+          "channel": "noaa_goes_xray",
+          "status": "ok",
+          "detail": "rows=716"
+        },
+        {
+          "channel": "clinicaltrials_v2",
+          "status": "ok",
+          "detail": "studies=3"
+        },
+        {
+          "channel": "osti_doe_records",
+          "status": "ok",
+          "detail": "records=3"
+        },
+        {
+          "channel": "uap_war_gov_hf",
+          "status": "ok",
+          "detail": "documents_jsonl_lines=158"
+        },
+        {
+          "channel": "ncbi_gene_eutils",
+          "status": "ok",
+          "detail": "gene=BRCA1"
+        },
+        {
+          "channel": "crossref_works",
+          "status": "ok",
+          "detail": "items=3"
+        },
+        {
+          "channel": "inaturalist_obs",
+          "status": "ok",
+          "detail": "results=3"
+        },
+        {
+          "channel": "noaa_ndbc_buoy",
+          "status": "ok",
+          "detail": "bytes=608838"
+        },
+        {
+          "channel": "open_meteo_forecast",
+          "status": "ok",
+          "detail": "hours=24"
+        },
+        {
+          "channel": "tier82_usgs_nwis",
+          "status": "ok",
+          "detail": "series=1"
+        },
+        {
+          "channel": "tier82_soilgrids",
+          "status": "fail",
+          "error_type": "HTTPError",
+          "error": "HTTP Error 503: Service Temporarily Unavailable"
+        },
+        {
+          "channel": "tier82_natural_earth",
+          "status": "ok",
+          "detail": "features=177"
+        },
+        {
+          "channel": "tier84_world_bank",
+          "status": "ok",
+          "detail": "rows=3"
+        },
+        {
+          "channel": "tier84_arxiv_grqc",
+          "status": "ok",
+          "detail": "bytes=4580"
+        },
+        {
+          "channel": "tier84_pbdb",
+          "status": "ok",
+          "detail": "records=3"
+        },
+        {
+          "channel": "tier84_obis",
+          "status": "ok",
+          "detail": "results=10"
+        },
+        {
+          "channel": "tier85_exoplanet_tap",
+          "status": "ok",
+          "detail": "bytes=24"
+        },
+        {
+          "channel": "tier85_open_meteo_archive",
+          "status": "fail",
+          "error_type": "HTTPError",
+          "error": "HTTP Error 400: Bad Request"
+        },
+        {
+          "channel": "tier85_crossref_history",
+          "status": "ok",
+          "detail": "items=2"
+        },
+        {
+          "channel": "tier86_nist_codata",
+          "status": "ok",
+          "detail": "bytes=40801"
+        },
+        {
+          "channel": "tier87_arxiv_quantph",
+          "status": "ok",
+          "detail": "bytes=4495"
+        },
+        {
+          "channel": "tier89_the_well_stats",
+          "status": "ok",
+          "detail": "bytes=1354"
+        }
+      ],
+      "fail_count": 3,
+      "ok_count": 28
+    }
+  },
+  "missing_on_c_desktop_vendor": [
+    "anomaly_observables",
+    "compactification_ladder",
+    "consciousness_genetics",
+    "cross_scale_bridges",
+    "fringe_desktop",
+    "github_oss",
+    "space_weather",
+    "the_well",
+    "tier39_propulsion_electrical",
+    "tier_d_extension",
+    "tier_f_gaps",
+    "trinary_os"
+  ],
+  "only_on_c_vendor": [
+    "cache",
+    "dark_energy_cpl",
+    "sh0es"
+  ],
+  "c_only_relocated_on_i": {
+    "cache": [
+      "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\.lake\\packages\\mathlib\\cache",
+      "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean\\cache",
+      "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\.lake\\packages\\mathlib\\.lake\\build\\ir\\cache"
+    ],
+    "dark_energy_cpl": [
+      "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\anomaly_observables\\dark_energy_cpl"
+    ],
+    "sh0es": [
+      "I:\\FSOT-Physical-Archive\\03_FSOT-PublicData\\anomaly_observables\\sh0es"
+    ]
+  },
+  "key_file_hashes": [
+    {
+      "path": "data/api_requirements.yaml",
+      "i_exists": true,
+      "c_exists": true,
+      "i_hash": "bcadb46aa04dcbf8",
+      "c_hash": "bcadb46aa04dcbf8",
+      "match": true
+    },
+    {
+      "path": "data/tier38_public_apis_manifest.yaml",
+      "i_exists": true,
+      "c_exists": true,
+      "i_hash": "d23323b099496416",
+      "c_hash": "d23323b099496416",
+      "match": true
+    },
+    {
+      "path": "scripts/live_api_health_check.py",
+      "i_exists": true,
+      "c_exists": true,
+      "i_hash": "ee63002629c499ab",
+      "c_hash": "ee63002629c499ab",
+      "match": true
+    },
+    {
+      "path": "scripts/expand_all_live_apis.py",
+      "i_exists": true,
+      "c_exists": true,
+      "i_hash": "055cc7a7787d9886",
+      "c_hash": "0f38a75f0011a56a",
+      "match": false
+    },
+    {
+      "path": "scripts/fsot_paths.py",
+      "i_exists": true,
+      "c_exists": true,
+      "i_hash": "f590301b9aeb3bbc",
+      "c_hash": "25a531a447aba4d0",
+      "match": false
+    }
+  ],
+  "recommendation": {
+    "canonical_hub": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full",
+    "set_env": "FSOT_EXTERNAL_DATA_ROOT=I:\\FSOT-Physical-Archive\\03_FSOT-PublicData",
+    "c_mirror_policy": "deprecated read-only \u2014 12 external cache dirs absent; expand_all_live_apis.py stale on C"
+  }
+}

@@ -14510,7 +14510,21 @@
       "measured": 100.0,
       "error_pct": 0.0,
       "unit": "misclassification_pct",
-      "observable_count": 120879
+      "observable_count": 120879,
+      "domain_display_name": "magnetosphere extended",
+      "display_name": "historical coupled dst kp storm classifier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "misclassification_pct"
+      }
     },
     {
       "lab": "magnetosphere_extended_lab",
@@ -14520,7 +14534,21 @@
       "measured": 100.0,
       "error_pct": 0.0,
       "unit": "misclassification_pct",
-      "observable_count": 91464
+      "observable_count": 91464,
+      "domain_display_name": "magnetosphere extended",
+      "display_name": "storm holdout g scale classifier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "misclassification_pct"
+      }
     },
     {
       "lab": "magnetosphere_extended_lab",
@@ -14530,7 +14558,21 @@
       "measured": 100.0,
       "error_pct": 0.0,
       "unit": "misclassification_pct",
-      "observable_count": 1436
+      "observable_count": 1436,
+      "domain_display_name": "magnetosphere extended",
+      "display_name": "solar wind bz southward classifier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "misclassification_pct"
+      }
     },
     {
       "lab": "magnetosphere_extended_lab",
@@ -14540,7 +14582,21 @@
       "measured": 100.0,
       "error_pct": 0.0,
       "unit": "misclassification_pct",
-      "observable_count": 122315
+      "observable_count": 122315,
+      "domain_display_name": "magnetosphere extended",
+      "display_name": "pooled magnetosphere extended classifier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "misclassification_pct"
+      }
     }
   ],
   "crosswalk_modules": [
@@ -14548,5 +14604,11 @@
     "FSOT.Formal.MagnetosphereExtendedPriors",
     "FSOT.Formal.GeomagnetismPriors",
     "FSOT.Formal.SpaceWeatherPriors"
-  ]
+  ],
+  "display_name": "Magnetosphere Extended",
+  "tier_label": "Cosmology bubble-bleed / SH0ES / fluid spacetime",
+  "scientific_precision_summary": {
+    "scalar_count": 0
+  },
+  "scientific_metadata_enriched_at": "2026-07-15T00:53:45.245081+00:00"
 }

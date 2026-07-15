@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-07-12T16:47:55.454650+00:00",
+  "generated_at": "2026-07-15T05:08:14.496288+00:00",
   "summary": {
     "fsot_formula_core_domains": 35,
     "core_domains_with_empirical_data": 35,
-    "core_total_empirical_records": 306680,
-    "extension_panels_verified": 314,
-    "total_scientific_surface": 347,
-    "tier_A_strong": 110,
-    "tier_B_verified": 237,
+    "core_total_empirical_records": 536740,
+    "extension_panels_verified": 347,
+    "total_scientific_surface": 383,
+    "tier_A_strong": 113,
+    "tier_B_verified": 270,
     "tier_C_thin": 0,
-    "lean_formal_modules": 444,
+    "lean_formal_modules": 481,
     "credential_free_policy": "scripts/public_api_policy.py"
   },
   "core_35_depth_audit": [
     {
       "fsot_core_domain": "Psychology",
-      "empirical_records": 10,
-      "median_error_pct": 0.0013504254899468224,
-      "extension_panels_routing_here": 10,
-      "fsot_prediction_records_in_extensions": 437,
+      "empirical_records": 170,
+      "median_error_pct": 0.03150616921194649,
+      "extension_panels_routing_here": 16,
+      "fsot_prediction_records_in_extensions": 397,
       "field_subfields_studied_in_discipline": 12,
       "subfields_touched_by_fsot": 3,
       "coverage_vs_field_pct": 25.0,
@@ -29,8 +29,8 @@
       "fsot_core_domain": "Acoustics",
       "empirical_records": 1470,
       "median_error_pct": 0.058,
-      "extension_panels_routing_here": 2,
-      "fsot_prediction_records_in_extensions": 75,
+      "extension_panels_routing_here": 4,
+      "fsot_prediction_records_in_extensions": 85,
       "field_subfields_studied_in_discipline": 7,
       "subfields_touched_by_fsot": 2,
       "coverage_vs_field_pct": 28.6,
@@ -39,7 +39,7 @@
     },
     {
       "fsot_core_domain": "Quantum_Optics",
-      "empirical_records": 1470,
+      "empirical_records": 1520,
       "median_error_pct": 0.058,
       "extension_panels_routing_here": 1,
       "fsot_prediction_records_in_extensions": 5,
@@ -53,8 +53,8 @@
       "fsot_core_domain": "Biology",
       "empirical_records": 234498,
       "median_error_pct": null,
-      "extension_panels_routing_here": 11,
-      "fsot_prediction_records_in_extensions": 302,
+      "extension_panels_routing_here": 34,
+      "fsot_prediction_records_in_extensions": 1974,
       "field_subfields_studied_in_discipline": 20,
       "subfields_touched_by_fsot": 6,
       "coverage_vs_field_pct": 30.0,
@@ -63,7 +63,7 @@
     },
     {
       "fsot_core_domain": "Quantum_Mechanics",
-      "empirical_records": 1470,
+      "empirical_records": 1520,
       "median_error_pct": 0.058,
       "extension_panels_routing_here": 2,
       "fsot_prediction_records_in_extensions": 37,
@@ -75,8 +75,8 @@
     },
     {
       "fsot_core_domain": "Sociology",
-      "empirical_records": 10,
-      "median_error_pct": 0.0013504254899468224,
+      "empirical_records": 410,
+      "median_error_pct": 0.019504399572475274,
       "extension_panels_routing_here": 5,
       "fsot_prediction_records_in_extensions": 178,
       "field_subfields_studied_in_discipline": 10,
@@ -89,8 +89,8 @@
       "fsot_core_domain": "Particle_Physics",
       "empirical_records": 98,
       "median_error_pct": 0.014415233331492876,
-      "extension_panels_routing_here": 3,
-      "fsot_prediction_records_in_extensions": 23,
+      "extension_panels_routing_here": 8,
+      "fsot_prediction_records_in_extensions": 147,
       "field_subfields_studied_in_discipline": 12,
       "subfields_touched_by_fsot": 4,
       "coverage_vs_field_pct": 33.3,
@@ -99,8 +99,8 @@
     },
     {
       "fsot_core_domain": "Quantum_Gravity",
-      "empirical_records": 86,
-      "median_error_pct": 0.718,
+      "empirical_records": 141,
+      "median_error_pct": 0.0,
       "extension_panels_routing_here": 0,
       "fsot_prediction_records_in_extensions": 0,
       "field_subfields_studied_in_discipline": 6,
@@ -112,7 +112,7 @@
     {
       "fsot_core_domain": "Condensed_Matter",
       "empirical_records": 2154,
-      "median_error_pct": 0.2350703412848426,
+      "median_error_pct": 0.058,
       "extension_panels_routing_here": 2,
       "fsot_prediction_records_in_extensions": 65,
       "field_subfields_studied_in_discipline": 14,
@@ -124,7 +124,7 @@
     {
       "fsot_core_domain": "Materials_Science",
       "empirical_records": 2154,
-      "median_error_pct": 0.2350703412848426,
+      "median_error_pct": 0.058,
       "extension_panels_routing_here": 8,
       "fsot_prediction_records_in_extensions": 306,
       "field_subfields_studied_in_discipline": 14,
@@ -135,7 +135,7 @@
     },
     {
       "fsot_core_domain": "Atomic_Physics",
-      "empirical_records": 1470,
+      "empirical_records": 1550,
       "median_error_pct": 0.058,
       "extension_panels_routing_here": 0,
       "fsot_prediction_records_in_extensions": 0,
@@ -147,8 +147,8 @@
     },
     {
       "fsot_core_domain": "Atmospheric_Physics",
-      "empirical_records": 24,
-      "median_error_pct": null,
+      "empirical_records": 71,
+      "median_error_pct": 0.0,
       "extension_panels_routing_here": 1,
       "fsot_prediction_records_in_extensions": 288,
       "field_subfields_studied_in_discipline": 10,
@@ -161,8 +161,8 @@
       "fsot_core_domain": "Chemistry",
       "empirical_records": 1470,
       "median_error_pct": 0.058,
-      "extension_panels_routing_here": 27,
-      "fsot_prediction_records_in_extensions": 5459,
+      "extension_panels_routing_here": 22,
+      "fsot_prediction_records_in_extensions": 5383,
       "field_subfields_studied_in_discipline": 15,
       "subfields_touched_by_fsot": 6,
       "coverage_vs_field_pct": 40.0,
@@ -171,8 +171,8 @@
     },
     {
       "fsot_core_domain": "Economics",
-      "empirical_records": 10,
-      "median_error_pct": 0.0013504254899468224,
+      "empirical_records": 167,
+      "median_error_pct": 0.1292009041371501,
       "extension_panels_routing_here": 7,
       "fsot_prediction_records_in_extensions": 587,
       "field_subfields_studied_in_discipline": 10,
@@ -183,10 +183,10 @@
     },
     {
       "fsot_core_domain": "Fluid_Dynamics",
-      "empirical_records": 27,
-      "median_error_pct": 99.3,
+      "empirical_records": 82,
+      "median_error_pct": 0.0,
       "extension_panels_routing_here": 1,
-      "fsot_prediction_records_in_extensions": 64,
+      "fsot_prediction_records_in_extensions": 53,
       "field_subfields_studied_in_discipline": 10,
       "subfields_touched_by_fsot": 4,
       "coverage_vs_field_pct": 40.0,
@@ -196,7 +196,7 @@
     {
       "fsot_core_domain": "Nuclear_Physics",
       "empirical_records": 1498,
-      "median_error_pct": 0.718,
+      "median_error_pct": 0.058,
       "extension_panels_routing_here": 5,
       "fsot_prediction_records_in_extensions": 237,
       "field_subfields_studied_in_discipline": 10,
@@ -222,7 +222,7 @@
       "empirical_records": 1508,
       "median_error_pct": 0.058,
       "extension_panels_routing_here": 10,
-      "fsot_prediction_records_in_extensions": 560,
+      "fsot_prediction_records_in_extensions": 484,
       "field_subfields_studied_in_discipline": 12,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 41.7,
@@ -231,10 +231,10 @@
     },
     {
       "fsot_core_domain": "Ecology",
-      "empirical_records": 13,
-      "median_error_pct": null,
+      "empirical_records": 640,
+      "median_error_pct": 0.017789000308164125,
       "extension_panels_routing_here": 10,
-      "fsot_prediction_records_in_extensions": 2710,
+      "fsot_prediction_records_in_extensions": 950,
       "field_subfields_studied_in_discipline": 12,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 41.7,
@@ -243,10 +243,10 @@
     },
     {
       "fsot_core_domain": "Astrophysics",
-      "empirical_records": 274,
-      "median_error_pct": 0.03162247159570792,
-      "extension_panels_routing_here": 6,
-      "fsot_prediction_records_in_extensions": 182,
+      "empirical_records": 329,
+      "median_error_pct": 0.021954848848277954,
+      "extension_panels_routing_here": 7,
+      "fsot_prediction_records_in_extensions": 181,
       "field_subfields_studied_in_discipline": 14,
       "subfields_touched_by_fsot": 6,
       "coverage_vs_field_pct": 42.9,
@@ -255,7 +255,7 @@
     },
     {
       "fsot_core_domain": "Electromagnetism",
-      "empirical_records": 45888,
+      "empirical_records": 273807,
       "median_error_pct": 0.058,
       "extension_panels_routing_here": 3,
       "fsot_prediction_records_in_extensions": 1436,
@@ -279,10 +279,10 @@
     },
     {
       "fsot_core_domain": "Geophysics",
-      "empirical_records": 1049,
+      "empirical_records": 1048,
       "median_error_pct": 0.0,
-      "extension_panels_routing_here": 24,
-      "fsot_prediction_records_in_extensions": 436,
+      "extension_panels_routing_here": 30,
+      "fsot_prediction_records_in_extensions": 448,
       "field_subfields_studied_in_discipline": 11,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 45.5,
@@ -291,10 +291,10 @@
     },
     {
       "fsot_core_domain": "Oceanography",
-      "empirical_records": 24,
-      "median_error_pct": null,
-      "extension_panels_routing_here": 7,
-      "fsot_prediction_records_in_extensions": 2406,
+      "empirical_records": 89,
+      "median_error_pct": 0.03017272606768673,
+      "extension_panels_routing_here": 10,
+      "fsot_prediction_records_in_extensions": 2392,
       "field_subfields_studied_in_discipline": 11,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 45.5,
@@ -303,10 +303,10 @@
     },
     {
       "fsot_core_domain": "Astronomy",
-      "empirical_records": 162,
-      "median_error_pct": 0.022,
-      "extension_panels_routing_here": 14,
-      "fsot_prediction_records_in_extensions": 3433,
+      "empirical_records": 217,
+      "median_error_pct": 0.0,
+      "extension_panels_routing_here": 19,
+      "fsot_prediction_records_in_extensions": 3477,
       "field_subfields_studied_in_discipline": 15,
       "subfields_touched_by_fsot": 7,
       "coverage_vs_field_pct": 46.7,
@@ -316,9 +316,9 @@
     {
       "fsot_core_domain": "Neuroscience",
       "empirical_records": 3636,
-      "median_error_pct": 24.522634418835963,
-      "extension_panels_routing_here": 8,
-      "fsot_prediction_records_in_extensions": 161,
+      "median_error_pct": 24.631729333045122,
+      "extension_panels_routing_here": 10,
+      "fsot_prediction_records_in_extensions": 224,
       "field_subfields_studied_in_discipline": 15,
       "subfields_touched_by_fsot": 7,
       "coverage_vs_field_pct": 46.7,
@@ -327,10 +327,10 @@
     },
     {
       "fsot_core_domain": "Meteorology",
-      "empirical_records": 24,
-      "median_error_pct": null,
-      "extension_panels_routing_here": 3,
-      "fsot_prediction_records_in_extensions": 421,
+      "empirical_records": 71,
+      "median_error_pct": 0.0,
+      "extension_panels_routing_here": 6,
+      "fsot_prediction_records_in_extensions": 427,
       "field_subfields_studied_in_discipline": 10,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 50.0,
@@ -352,9 +352,9 @@
     {
       "fsot_core_domain": "Particle_Astrophysics",
       "empirical_records": 216,
-      "median_error_pct": 0.03162247159570792,
-      "extension_panels_routing_here": 23,
-      "fsot_prediction_records_in_extensions": 443,
+      "median_error_pct": 0.03281523581363995,
+      "extension_panels_routing_here": 30,
+      "fsot_prediction_records_in_extensions": 456,
       "field_subfields_studied_in_discipline": 10,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 50.0,
@@ -364,9 +364,9 @@
     {
       "fsot_core_domain": "Planetary_Science",
       "empirical_records": 74,
-      "median_error_pct": 0.03162247159570792,
-      "extension_panels_routing_here": 6,
-      "fsot_prediction_records_in_extensions": 1108,
+      "median_error_pct": 0.021954848848277954,
+      "extension_panels_routing_here": 4,
+      "fsot_prediction_records_in_extensions": 270,
       "field_subfields_studied_in_discipline": 12,
       "subfields_touched_by_fsot": 6,
       "coverage_vs_field_pct": 50.0,
@@ -387,10 +387,10 @@
     },
     {
       "fsot_core_domain": "High_Energy_Physics",
-      "empirical_records": 158,
+      "empirical_records": 165,
       "median_error_pct": 0.03281523581363995,
       "extension_panels_routing_here": 2,
-      "fsot_prediction_records_in_extensions": 202,
+      "fsot_prediction_records_in_extensions": 85,
       "field_subfields_studied_in_discipline": 9,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 55.6,
@@ -399,8 +399,8 @@
     },
     {
       "fsot_core_domain": "Cosmology",
-      "empirical_records": 288,
-      "median_error_pct": 0.022,
+      "empirical_records": 343,
+      "median_error_pct": 0.021954848848277954,
       "extension_panels_routing_here": 1,
       "fsot_prediction_records_in_extensions": 20,
       "field_subfields_studied_in_discipline": 12,
@@ -423,10 +423,10 @@
     },
     {
       "fsot_core_domain": "Quantum_Computing",
-      "empirical_records": 3,
-      "median_error_pct": null,
-      "extension_panels_routing_here": 5,
-      "fsot_prediction_records_in_extensions": 121,
+      "empirical_records": 180,
+      "median_error_pct": 0.0002953462072651492,
+      "extension_panels_routing_here": 6,
+      "fsot_prediction_records_in_extensions": 123,
       "field_subfields_studied_in_discipline": 8,
       "subfields_touched_by_fsot": 6,
       "coverage_vs_field_pct": 75.0,
@@ -454,7 +454,7 @@
     {
       "panel": "Climate_Science",
       "tier": 12,
-      "records": 17296,
+      "records": 17320,
       "pooled_median_error_pct": 0.0,
       "observed": true,
       "ingest": "scripts/ingest_climate_ncei_chunked.py"
@@ -534,7 +534,7 @@
     {
       "panel": "Geomagnetism",
       "tier": 21,
-      "records": 525,
+      "records": 524,
       "pooled_median_error_pct": 0.0,
       "observed": true,
       "ingest": "scripts/ingest_geomagnetism_swpc.py"
@@ -551,7 +551,7 @@
       "panel": "Orbital_Mechanics",
       "tier": 21,
       "records": 22,
-      "pooled_median_error_pct": 0.022461,
+      "pooled_median_error_pct": 0.020214999999999997,
       "observed": true,
       "ingest": "scripts/ingest_planetary_jpl.py"
     },
@@ -559,7 +559,7 @@
       "panel": "Small_Body_Orbits",
       "tier": 22,
       "records": 22,
-      "pooled_median_error_pct": 0.022461,
+      "pooled_median_error_pct": 0.020214999999999997,
       "observed": true,
       "ingest": "scripts/ingest_small_body_jpl.py"
     },
@@ -606,15 +606,15 @@
     {
       "panel": "Cosmology_Anomalies",
       "tier": 25,
-      "records": 24,
-      "pooled_median_error_pct": 0.0100275,
+      "records": 23,
+      "pooled_median_error_pct": 0.024602,
       "observed": true,
       "ingest": null
     },
     {
       "panel": "Magnetosphere_Extended",
       "tier": 25,
-      "records": 122295,
+      "records": 122315,
       "pooled_median_error_pct": 0.0,
       "observed": true,
       "ingest": "scripts/ingest_kyoto_dst_historical.py"
@@ -671,7 +671,7 @@
       "panel": "Linguistics_Formal",
       "tier": 29,
       "records": 24,
-      "pooled_median_error_pct": 0.004344768046673306,
+      "pooled_median_error_pct": 0.022236,
       "observed": true,
       "ingest": null
     },
@@ -711,7 +711,7 @@
       "panel": "Trinary_OS_Portable",
       "tier": 30,
       "records": 24,
-      "pooled_median_error_pct": 0.0,
+      "pooled_median_error_pct": 0.013342,
       "observed": true,
       "ingest": null
     },
@@ -943,7 +943,7 @@
       "panel": "Binary_Decoder_Rendlesham",
       "tier": 35,
       "records": 24,
-      "pooled_median_error_pct": 0.0,
+      "pooled_median_error_pct": 0.004504756223217969,
       "observed": true,
       "ingest": null
     },
@@ -951,7 +951,7 @@
       "panel": "Certified_Agent_Qwen",
       "tier": 35,
       "records": 24,
-      "pooled_median_error_pct": 0.0,
+      "pooled_median_error_pct": 0.004504756223217969,
       "observed": true,
       "ingest": null
     },
@@ -967,15 +967,15 @@
       "panel": "FSOT_Aggregate_Unified_DB",
       "tier": 36,
       "records": 24,
-      "pooled_median_error_pct": 0.009737564919735653,
+      "pooled_median_error_pct": 0.0,
       "observed": true,
       "ingest": null
     },
     {
       "panel": "Prediction_Rederivation",
       "tier": 36,
-      "records": 24,
-      "pooled_median_error_pct": 0.029733,
+      "records": 21,
+      "pooled_median_error_pct": 0.028160460849701814,
       "observed": true,
       "ingest": null
     },
@@ -1014,7 +1014,7 @@
     {
       "panel": "GBIF_Species_Occurrence",
       "tier": 38,
-      "records": 2000,
+      "records": 240,
       "pooled_median_error_pct": 0.006006,
       "observed": true,
       "ingest": "scripts/ingest_tier38_public_data.py"
@@ -1022,7 +1022,7 @@
     {
       "panel": "NOAA_Coastal_Tides",
       "tier": 38,
-      "records": 40,
+      "records": 20,
       "pooled_median_error_pct": 0.030173,
       "observed": true,
       "ingest": "scripts/ingest_tier38_public_data.py"
@@ -1038,7 +1038,7 @@
     {
       "panel": "NASA_Exoplanet_Archive",
       "tier": 38,
-      "records": 988,
+      "records": 158,
       "pooled_median_error_pct": 0.023015,
       "observed": true,
       "ingest": "scripts/ingest_tier38_public_data.py"
@@ -1046,7 +1046,7 @@
     {
       "panel": "RCSB_PDB_Structures",
       "tier": 38,
-      "records": 159,
+      "records": 45,
       "pooled_median_error_pct": 0.022236,
       "observed": true,
       "ingest": "scripts/ingest_tier38_public_data.py"
@@ -1054,7 +1054,7 @@
     {
       "panel": "OpenAlex_Citation_Graph",
       "tier": 38,
-      "records": 200,
+      "records": 80,
       "pooled_median_error_pct": 0.031506,
       "observed": true,
       "ingest": "scripts/ingest_tier38_public_data.py"
@@ -1062,15 +1062,15 @@
     {
       "panel": "PubChem_Compound_Properties",
       "tier": 38,
-      "records": 521,
-      "pooled_median_error_pct": 0.002629,
+      "records": 500,
+      "pooled_median_error_pct": 0.002637,
       "observed": true,
       "ingest": "scripts/ingest_tier38_public_data.py"
     },
     {
       "panel": "CERN_Open_Data_LHC",
       "tier": 38,
-      "records": 200,
+      "records": 83,
       "pooled_median_error_pct": 0.013294,
       "observed": true,
       "ingest": "scripts/ingest_tier38_public_data.py"
@@ -1078,7 +1078,7 @@
     {
       "panel": "UniProt_Protein_Annotations",
       "tier": 38,
-      "records": 102,
+      "records": 22,
       "pooled_median_error_pct": 0.026684,
       "observed": true,
       "ingest": "scripts/ingest_tier38_public_data.py"
@@ -1103,7 +1103,7 @@
       "panel": "HVAC_Thermal_Systems",
       "tier": 39,
       "records": 23,
-      "pooled_median_error_pct": 0.017789000308157117,
+      "pooled_median_error_pct": 0.017836062884411003,
       "observed": true,
       "ingest": "scripts/ingest_tier39_propulsion_electrical.py"
     },
@@ -1414,7 +1414,7 @@
     {
       "panel": "Observer_Channel_Derivation",
       "tier": 46,
-      "records": 247,
+      "records": 348,
       "pooled_median_error_pct": 0.0525102820198906,
       "observed": true,
       "ingest": null
@@ -2727,7 +2727,7 @@
       "panel": "Mechanical_Engineering_Panel",
       "tier": 85,
       "records": 20,
-      "pooled_median_error_pct": 0.078697,
+      "pooled_median_error_pct": 0.039349,
       "observed": true,
       "ingest": "scripts/ingest_tier85_scientific_expansion.py"
     },
@@ -2926,7 +2926,7 @@
     {
       "panel": "The_Well_Outcomes_Verification_Panel",
       "tier": 89,
-      "records": 267,
+      "records": 246,
       "pooled_median_error_pct": 0.031159,
       "observed": true,
       "ingest": "scripts/ingest_tier89_the_well.py"
@@ -2934,7 +2934,7 @@
     {
       "panel": "The_Well_Spot_Check_Panel",
       "tier": 89,
-      "records": 12,
+      "records": 24,
       "pooled_median_error_pct": 0.031159,
       "observed": true,
       "ingest": "scripts/ingest_tier89_the_well.py"
@@ -2942,8 +2942,272 @@
     {
       "panel": "The_Well_Verification_Spine",
       "tier": 89,
-      "records": 11,
+      "records": 24,
+      "pooled_median_error_pct": 0.028287,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Microtubule_Quantum_Consciousness_Panel",
+      "tier": 90,
+      "records": 63,
+      "pooled_median_error_pct": 0.044671,
+      "observed": true,
+      "ingest": "scripts/ingest_tier90_consciousness_expansion.py"
+    },
+    {
+      "panel": "Consciousness_Species_Multi_Panel",
+      "tier": 90,
+      "records": 269,
+      "pooled_median_error_pct": 0.0201195,
+      "observed": true,
+      "ingest": "scripts/ingest_tier90_consciousness_expansion.py"
+    },
+    {
+      "panel": "Observer_Effect_Cross_Species_Panel",
+      "tier": 90,
+      "records": 289,
       "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_tier90_consciousness_expansion.py"
+    },
+    {
+      "panel": "Consciousness_Expansion_Spine",
+      "tier": 90,
+      "records": 24,
+      "pooled_median_error_pct": 0.008488,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Nothing_Perfection_Friction_Origin_Panel",
+      "tier": 91,
+      "records": 24,
+      "pooled_median_error_pct": 0.008488,
+      "observed": true,
+      "ingest": "scripts/ingest_tier91_foundational_ontology.py"
+    },
+    {
+      "panel": "Zero_Boundary_Not_Entity_Panel",
+      "tier": 91,
+      "records": 24,
+      "pooled_median_error_pct": 0.020055,
+      "observed": true,
+      "ingest": "scripts/ingest_tier91_foundational_ontology.py"
+    },
+    {
+      "panel": "Overflow_Carry_Emergence_Panel",
+      "tier": 91,
+      "records": 29,
+      "pooled_median_error_pct": 0.009504,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Complexity_Folding_Emergence_Panel",
+      "tier": 91,
+      "records": 29,
+      "pooled_median_error_pct": 0.02658792169940266,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Foundational_Ontology_Spine",
+      "tier": 91,
+      "records": 21,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Alternate_Base_Mathematics_Explorer_Panel",
+      "tier": 92,
+      "records": 56,
+      "pooled_median_error_pct": 0.009504,
+      "observed": false,
+      "ingest": "scripts/ingest_tier92_alternate_base_mathematics.py"
+    },
+    {
+      "panel": "Alternate_Base_Mathematics_Spine",
+      "tier": 92,
+      "records": 24,
+      "pooled_median_error_pct": 0.004184779870129773,
+      "observed": false,
+      "ingest": null
+    },
+    {
+      "panel": "Consciousness_Genetics_Species_Panel",
+      "tier": 93,
+      "records": 27,
+      "pooled_median_error_pct": 0.022236,
+      "observed": true,
+      "ingest": "scripts/ingest_tier93_dual_wave.py"
+    },
+    {
+      "panel": "Consciousness_Genetics_Coupling_Panel",
+      "tier": 93,
+      "records": 24,
+      "pooled_median_error_pct": 0.031506,
+      "observed": true,
+      "ingest": "scripts/ingest_tier93_dual_wave.py"
+    },
+    {
+      "panel": "Experimental_Base_Mathematics_Panel",
+      "tier": 93,
+      "records": 36,
+      "pooled_median_error_pct": 0.009504,
+      "observed": false,
+      "ingest": "scripts/ingest_tier93_dual_wave.py"
+    },
+    {
+      "panel": "Tier_93_Dual_Wave_Spine",
+      "tier": 93,
+      "records": 24,
+      "pooled_median_error_pct": 0.011093889935064888,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Longevity_AnAge_Catalog_Panel",
+      "tier": 94,
+      "records": 966,
+      "pooled_median_error_pct": 0.022236,
+      "observed": true,
+      "ingest": "scripts/ingest_tier94_longevity_genetics.py"
+    },
+    {
+      "panel": "Longevity_Genetic_Mechanics_Panel",
+      "tier": 94,
+      "records": 35,
+      "pooled_median_error_pct": 0.022236,
+      "observed": true,
+      "ingest": "scripts/ingest_tier94_longevity_genetics.py"
+    },
+    {
+      "panel": "Longevity_Extreme_Species_Panel",
+      "tier": 94,
+      "records": 164,
+      "pooled_median_error_pct": 0.017789,
+      "observed": true,
+      "ingest": "scripts/ingest_tier94_longevity_genetics.py"
+    },
+    {
+      "panel": "Longevity_MegaDeep_NCBI_Panel",
+      "tier": 94,
+      "records": 1746,
+      "pooled_median_error_pct": 0.017789,
+      "observed": true,
+      "ingest": "scripts/ingest_tier94_longevity_genetics.py"
+    },
+    {
+      "panel": "Longevity_Telomere_Repair_Panel",
+      "tier": 94,
+      "records": 60,
+      "pooled_median_error_pct": 0.022236,
+      "observed": true,
+      "ingest": "scripts/ingest_tier94_longevity_genetics.py"
+    },
+    {
+      "panel": "Longevity_Consciousness_Coupling_Panel",
+      "tier": 94,
+      "records": 890,
+      "pooled_median_error_pct": 0.022424,
+      "observed": true,
+      "ingest": "scripts/ingest_tier94_longevity_genetics.py"
+    },
+    {
+      "panel": "Tier_94_Longevity_Spine",
+      "tier": 94,
+      "records": 34,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Zebrafish_Cell_Tracking_Panel",
+      "tier": 95,
+      "records": 20,
+      "pooled_median_error_pct": 0.022236,
+      "observed": true,
+      "ingest": "scripts/ingest_tier95_zebrahub_development.py"
+    },
+    {
+      "panel": "Zebrafish_Developmental_Mechanics_Panel",
+      "tier": 95,
+      "records": 31,
+      "pooled_median_error_pct": 0.017789,
+      "observed": true,
+      "ingest": "scripts/ingest_tier95_zebrahub_development.py"
+    },
+    {
+      "panel": "Zebrafish_Longevity_Genetics_Coupling_Panel",
+      "tier": 95,
+      "records": 24,
+      "pooled_median_error_pct": 0.014453500000000001,
+      "observed": true,
+      "ingest": "scripts/ingest_tier95_zebrahub_development.py"
+    },
+    {
+      "panel": "Tier_95_Zebrafish_Spine",
+      "tier": 95,
+      "records": 24,
+      "pooled_median_error_pct": 0.013342,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Founding_Quantum_Vacuum_Panel",
+      "tier": 96,
+      "records": 24,
+      "pooled_median_error_pct": 0.01529034996934153,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Founding_Cosmic_Ray_Panel",
+      "tier": 96,
+      "records": 24,
+      "pooled_median_error_pct": 0.021221,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Founding_Galactic_Halo_Rotation_Panel",
+      "tier": 96,
+      "records": 24,
+      "pooled_median_error_pct": 0.022461,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Founding_Cosmic_Dust_Panel",
+      "tier": 96,
+      "records": 24,
+      "pooled_median_error_pct": 0.026675,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Founding_White_Dwarf_Cooling_Panel",
+      "tier": 96,
+      "records": 24,
+      "pooled_median_error_pct": 0.022461,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Founding_Atmospheric_Ozone_Panel",
+      "tier": 96,
+      "records": 24,
+      "pooled_median_error_pct": 0.022236,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Founding_Pulsar_Glitch_Panel",
+      "tier": 96,
+      "records": 24,
+      "pooled_median_error_pct": 0.022461,
       "observed": true,
       "ingest": null
     }

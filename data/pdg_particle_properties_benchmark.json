@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T14:25:35.918108+00:00",
+  "generated_at": "2026-07-15T05:07:43.970577+00:00",
   "domain": "PDG_Particle_Properties",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
     "P",
     "D",
@@ -74,20 +74,7 @@
       "computed": 9.5e-05,
       "measured": 0.0,
       "error_pct": 9.5e-05,
-      "observable_count": 21,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 9.5e-05,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 21
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -96,20 +83,7 @@
       "computed": 9.5e-05,
       "measured": 0.0,
       "error_pct": 9.5e-05,
-      "observable_count": 21,
-      "domain_display_name": "tier gap fill",
-      "display_name": "PDG Particle Properties depth",
-      "scientific_measurement": {
-        "delta": 9.5e-05,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 21
     }
   ],
   "material_records": [
@@ -125,9 +99,7 @@
       "fsot_scalar": -0.424412,
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
-      "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "uap war gov",
       "display_name": "18-100754-general-1946-7-vol-2",
       "scientific_measurement": {
         "delta": 0.000543,
@@ -139,7 +111,9 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
     },
     {
       "lab": "pdg_particle_properties_depth_lab",
@@ -153,9 +127,7 @@
       "fsot_scalar": -0.424412,
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
-      "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "uap war gov",
       "display_name": "18-6369445-general-1948-vol-1",
       "scientific_measurement": {
         "delta": 0.000357,
@@ -167,7 +139,9 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
     },
     {
       "lab": "pdg_particle_properties_depth_lab",
@@ -181,9 +155,7 @@
       "fsot_scalar": -0.549094,
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
-      "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "uap war gov",
       "display_name": "18-6369445-general-1948-vol-1",
       "scientific_measurement": {
         "delta": 0.0107048,
@@ -195,7 +167,9 @@
         "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
     },
     {
       "lab": "pdg_particle_properties_depth_lab",
@@ -209,9 +183,7 @@
       "fsot_scalar": -0.549094,
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
-      "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "uap war gov",
       "display_name": "18-6369445-general-1948-vol-1",
       "scientific_measurement": {
         "delta": -0.022534,
@@ -223,7 +195,9 @@
         "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
     },
     {
       "lab": "pdg_particle_properties_depth_lab",
@@ -234,7 +208,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "math generator",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -262,7 +236,7 @@
       "unit": "K",
       "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
       "eval_kind": "live_formula",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "math generator",
       "display_name": "brightness temperature rms k",
       "scientific_measurement": {
         "delta": -0.00418478,
@@ -289,7 +263,7 @@
       "unit": "km s^-1 Mpc^-1",
       "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
       "eval_kind": "live_formula",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "math generator",
       "display_name": "hubble constant km s mpc",
       "scientific_measurement": {
         "delta": -0.01604169,
@@ -317,7 +291,7 @@
       "unit": "dimensionless",
       "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
       "eval_kind": "live_formula",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "math generator",
       "display_name": "matter fluctuation amplitude",
       "scientific_measurement": {
         "delta": 0.000124,
@@ -350,8 +324,7 @@
       },
       "lab": "pdg_particle_properties_depth_lab",
       "source_panel": "Math_Generator_Rules_Eval",
-      "depth_relay_from": "Math_Generator_Rules_Eval",
-      "domain_display_name": "pdg particle properties depth"
+      "depth_relay_from": "Math_Generator_Rules_Eval"
     },
     {
       "lab": "pdg_particle_properties_depth_lab",
@@ -364,14 +337,11 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "domain coupling",
       "display_name": "Astronomy Cosmology Extended astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -392,14 +362,11 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "domain coupling",
       "display_name": "Astronomy Planetary Structure astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -420,14 +387,11 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "domain coupling",
       "display_name": "Astronomy Orbital Mechanics astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -448,14 +412,11 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "domain coupling",
       "display_name": "Astronomy Small Body Orbits astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -474,7 +435,7 @@
       "error_pct": 0.0,
       "record_count": 50,
       "eval_kind": "periodic_extension_bridge",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "periodic extension closure",
       "display_name": "fusion lab",
       "scientific_measurement": {
         "delta": 0.0,
@@ -499,7 +460,7 @@
       "error_pct": 0.0,
       "source_panel": "Periodic_Table_Extension_Closure_Spine",
       "eval_kind": "closure_relay",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "periodic extension closure",
       "display_name": "fusion physics public",
       "scientific_measurement": {
         "delta": 0.0,
@@ -523,7 +484,7 @@
       "error_pct": 9.5e-05,
       "source_panel": "Periodic_Table_Extension_Closure_Spine",
       "eval_kind": "closure_relay",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "periodic extension closure",
       "display_name": "dt fusion",
       "scientific_measurement": {
         "delta": 1.7e-05,
@@ -547,7 +508,7 @@
       "error_pct": 9.5e-05,
       "source_panel": "Periodic_Table_Extension_Closure_Spine",
       "eval_kind": "closure_relay",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "periodic extension closure",
       "display_name": "dt fusion",
       "scientific_measurement": {
         "delta": 1.4e-05,
@@ -570,7 +531,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "panel_bridge",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "distant island deep",
       "display_name": "island of stability deep panel",
       "scientific_measurement": {
         "delta": 0.0,
@@ -595,7 +556,7 @@
       "measured": 180000.0,
       "error_pct": 0.0,
       "eval_kind": "distant_half_life",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "distant island deep",
       "display_name": "Z128 N184",
       "scientific_measurement": {
         "delta": 1.711e-05,
@@ -620,7 +581,7 @@
       "measured": 7.59,
       "error_pct": 9.5e-05,
       "eval_kind": "binding_anchor",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "distant island deep",
       "display_name": "Z128 N184",
       "scientific_measurement": {
         "delta": 7e-06,
@@ -645,7 +606,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "distant_gate",
-      "domain_display_name": "pdg particle properties depth",
+      "domain_display_name": "distant island deep",
       "display_name": "Z128 N184",
       "scientific_measurement": {
         "delta": 0.0,
@@ -673,19 +634,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "PDG Particle Properties",
-  "tier_label": "Tier 78 \u2014 Warp BH WH Portal Panel + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 16,
-    "median_error_pct": 9.3e-05,
-    "max_error_pct": 0.192564,
-    "mean_abs_delta": 0.010072926666666667,
-    "precision_tier_counts": {
-      "green": 16
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.810594+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

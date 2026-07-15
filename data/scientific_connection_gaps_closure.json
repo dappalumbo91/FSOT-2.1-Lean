@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-07-15T05:08:14.591205+00:00",
+  "version": "1.0",
+  "verdict": "GAPS_TRACKED_CROSS_DOMAIN",
+  "summary": {
+    "gap_pillars": 7,
+    "closed": 3,
+    "documented_or_monitored": 4,
+    "in_progress": 1,
+    "open": 2,
+    "c_thin_remaining": 0,
+    "last_c_thin_upgrade": "2026-07-12T17:46:24.592083+00:00"
+  },
+  "gaps": [
+    {
+      "id": "subfield_depth_c_thin",
+      "severity": "low",
+      "status": "closed",
+      "metric": {
+        "c_thin_panels": 0,
+        "target": 0
+      },
+      "panels_remaining": [],
+      "remedy": "scripts/upgrade_c_thin_panels.py + domain-specific ingests",
+      "evidence": "data/c_thin_upgrade_report.json"
+    },
+    {
+      "id": "mechanism_chain_domain_table",
+      "severity": "medium",
+      "status": "documented",
+      "metric": {
+        "mechanism_chain_artifact": "DERIVATION_DOCUMENTED_NOT_OPAQUE_TABLE",
+        "core_chains_documented": 35
+      },
+      "remedy": "data/mechanism_chain_derivation.json + observer_channel_derivation benchmark",
+      "evidence": "data/mechanism_chain_derivation.json"
+    },
+    {
+      "id": "formal_proof_depth",
+      "severity": "documented_debt",
+      "status": "open",
+      "metric": {
+        "norm_num_depth_closed": false,
+        "pi_e_interval_lemmas_deferred": 2,
+        "atomic_triangulated": 1822
+      },
+      "remedy": "StructuralProofSpine + Mathlib transcendental interval chain",
+      "evidence": "data/transcendental_bounds_gap_report.json"
+    },
+    {
+      "id": "contested_stumped_observables",
+      "severity": "info",
+      "status": "monitored",
+      "metric": {
+        "count": 13,
+        "kill_criteria_registered": true
+      },
+      "remedy": "data/falsification_registry_closure.json",
+      "evidence": "data/contested_observables_closure.json"
+    },
+    {
+      "id": "fluid_dynamics_outlier",
+      "severity": "medium",
+      "status": "open",
+      "metric": {
+        "coverage_report_median_pct": 0.0,
+        "audit_median_pct": 0.0,
+        "gap_fill_median_pct": 0.0
+      },
+      "remedy": "run_domain_coverage_eval.py accuracy inversion fix + fluid_dynamics_gap_fill",
+      "evidence": "data/fluid_dynamics_gap_fill_benchmark.json"
+    },
+    {
+      "id": "unwired_desktop_labs",
+      "severity": "low",
+      "status": "in_progress",
+      "metric": {
+        "unwired_with_content": 19,
+        "wired": 28
+      },
+      "remedy": "vendor bundles for portable verify; wire high-value labs via lab_registry",
+      "evidence": "data/desktop_project_crosswalk.json"
+    },
+    {
+      "id": "founding_35_laws",
+      "severity": "info",
+      "status": "closed",
+      "metric": {
+        "mapped": 35,
+        "verified_strict": 7,
+        "verified_extension": 28
+      },
+      "evidence": "data/founding_law_audit.json"
+    }
+  ],
+  "non_gaps_confirmed": [
+    "Cross-domain empirical envelope (374/374 green)",
+    "Falsification registry with kill criteria",
+    "SOTA external panel 65/65",
+    "1325 unique formula observables live-recompute",
+    "255/272 benchmark files non-cosmology"
+  ]
+}

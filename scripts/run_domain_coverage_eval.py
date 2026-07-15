@@ -50,12 +50,54 @@ LEAN_SIGN_THEOREMS = {
 }
 
 
+def _weighted_median_by_records(pairs: list[tuple[float, int]]) -> float | None:
+    """Record-weighted median across lab channels (not median-of-medians)."""
+    if not pairs:
+        return None
+    total = sum(n for _, n in pairs)
+    if total <= 0:
+        meds = sorted(m for m, _ in pairs)
+        return meds[len(meds) // 2]
+    ordered = sorted(pairs, key=lambda x: x[0])
+    cum = 0
+    half = total / 2.0
+    for med, n in ordered:
+        cum += n
+        if cum >= half:
+            return med
+    return ordered[-1][0]
+
+
 def _lab_record_count(registry: dict, lab_key: str) -> tuple[int, float | None]:
     """Return (record_count, median_error_pct or None) for a lab registry entry."""
     lab = registry.get(lab_key, {})
-    if not lab or not lab.get("present", True) and lab_key.endswith("_lab"):
-        if not lab:
-            return 0, None
+    if lab and lab.get("present") is False:
+        return 0, None
+
+    gap_fill_benches = {
+        "gbif_ecology_lab": "ecology_gap_fill_benchmark.json",
+        "world_bank_economics_lab": "economics_gap_fill_benchmark.json",
+        "openalex_psychology_lab": "psychology_gap_fill_benchmark.json",
+        "openalex_sociology_lab": "sociology_gap_fill_benchmark.json",
+        "world_bank_sociology_lab": "sociology_gap_fill_benchmark.json",
+        "noaa_oceanography_lab": "oceanography_gap_fill_benchmark.json",
+        "meteorology_gap_fill_lab": "meteorology_gap_fill_benchmark.json",
+        "atmospheric_physics_gap_fill_lab": "atmospheric_physics_gap_fill_benchmark.json",
+        "fluid_dynamics_lab": "fluid_dynamics_gap_fill_benchmark.json",
+        "nist_atomic_lab": "atomic_physics_gap_fill_benchmark.json",
+        "nist_quantum_lab": "quantum_mechanics_gap_fill_benchmark.json",
+        "quantum_computing_lab": "quantum_computing_gap_fill_benchmark.json",
+        "econometrics_lab": "econometrics_gap_fill_benchmark.json",
+        "sports_biomechanics_lab": "sports_biomechanics_gap_fill_benchmark.json",
+        "architecture_building_science_lab": "architecture_building_science_gap_fill_benchmark.json",
+    }
+    if lab_key in gap_fill_benches:
+        bench_path = ROOT / "data" / gap_fill_benches[lab_key]
+        if bench_path.exists():
+            doc = json.loads(bench_path.read_text(encoding="utf-8"))
+            n = int(doc.get("record_count") or doc.get("observable_count") or 0)
+            med = doc.get("median_error_pct") or doc.get("pooled_median_error_pct")
+            return n, float(med) if med is not None else None
 
     if lab_key == "smiles_lab":
         return int(lab.get("mapped_records") or 0), float((lab.get("metadata") or {}).get("median_error_pct") or 0)
@@ -117,7 +159,12 @@ def _lab_record_count(registry: dict, lab_key: str) -> tuple[int, float | None]:
         return int(lab.get("observable_count") or 0), float(lab.get("max_error_pct") or 0)
 
     if lab_key in ("trinary_fluid_lab", "trinary_fluid_computer"):
-        return int(lab.get("metatron_pathways") or 0), float(lab.get("engine_accuracy_pct") or 0)
+        n = int(lab.get("metatron_pathways") or 0)
+        acc = lab.get("engine_accuracy_pct")
+        if acc is None:
+            return n, None
+        # engine_accuracy_pct is accuracy (e.g. 99.3%), not prediction error
+        return n, max(0.0, 100.0 - float(acc))
 
     if lab_key in ("vib_register_lab", "vibra_register"):
         return int(lab.get("trial_count") or 2), None
@@ -134,31 +181,6 @@ def _lab_record_count(registry: dict, lab_key: str) -> tuple[int, float | None]:
         n = int(lab.get("observable_count") or lab.get("record_count") or 0)
         med = lab.get("median_error_pct")
         return n, float(med) if med is not None else None
-
-    gap_fill_benches = {
-        "gbif_ecology_lab": "ecology_gap_fill_benchmark.json",
-        "world_bank_economics_lab": "economics_gap_fill_benchmark.json",
-        "openalex_psychology_lab": "psychology_gap_fill_benchmark.json",
-        "openalex_sociology_lab": "sociology_gap_fill_benchmark.json",
-        "world_bank_sociology_lab": "sociology_gap_fill_benchmark.json",
-        "noaa_oceanography_lab": "oceanography_gap_fill_benchmark.json",
-        "meteorology_gap_fill_lab": "meteorology_gap_fill_benchmark.json",
-        "atmospheric_physics_gap_fill_lab": "atmospheric_physics_gap_fill_benchmark.json",
-        "fluid_dynamics_lab": "fluid_dynamics_gap_fill_benchmark.json",
-        "nist_atomic_lab": "atomic_physics_gap_fill_benchmark.json",
-        "nist_quantum_lab": "quantum_mechanics_gap_fill_benchmark.json",
-        "quantum_computing_lab": "quantum_computing_gap_fill_benchmark.json",
-        "econometrics_lab": "econometrics_gap_fill_benchmark.json",
-        "sports_biomechanics_lab": "sports_biomechanics_gap_fill_benchmark.json",
-        "architecture_building_science_lab": "architecture_building_science_gap_fill_benchmark.json",
-    }
-    if lab_key in gap_fill_benches:
-        bench_path = ROOT / "data" / gap_fill_benches[lab_key]
-        if bench_path.exists():
-            doc = json.loads(bench_path.read_text(encoding="utf-8"))
-            n = int(doc.get("record_count") or doc.get("observable_count") or 0)
-            med = doc.get("median_error_pct") or doc.get("pooled_median_error_pct")
-            return n, float(med) if med is not None else None
 
     n = int(lab.get("observable_count") or lab.get("record_count") or lab.get("count") or 0)
     med = lab.get("median_error_pct")
@@ -223,14 +245,14 @@ def evaluate() -> dict:
 
         empirical_records = 0
         empirical_detail = []
-        median_errors = []
+        weighted_errors: list[tuple[float, int]] = []
         for lab_key in (empirical_sources.get(name, {}).get("labs") or []):
             n, med = _lab_record_count(registry, lab_key)
             empirical_records += n
             if n > 0:
                 empirical_detail.append({"lab": lab_key, "records": n, "median_error_pct": med})
-            if med is not None:
-                median_errors.append(med)
+            if med is not None and n > 0:
+                weighted_errors.append((float(med), n))
 
         lean_raw = None
         if lean_domain and lean_domain in LEAN_DOMAINS:
@@ -254,9 +276,7 @@ def evaluate() -> dict:
                 "lean_override": in_lean_override,
                 "empirical_records": empirical_records,
                 "empirical_sources": empirical_detail,
-                "empirical_median_error_pct": (
-                    sorted(median_errors)[len(median_errors) // 2] if median_errors else None
-                ),
+                "empirical_median_error_pct": _weighted_median_by_records(weighted_errors),
                 "has_empirical_data": empirical_records > 0,
             }
         )
