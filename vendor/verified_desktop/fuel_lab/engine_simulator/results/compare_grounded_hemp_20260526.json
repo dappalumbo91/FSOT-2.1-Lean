@@ -1,0 +1,58 @@
+{
+  "summary": {
+    "mode": "compare_fuels",
+    "engine": "prius_1_8_atkinson",
+    "fuel_profiles": [
+      "fsot_hemp_waste_advanced",
+      "fsot_hemp_waste_grounded"
+    ]
+  },
+  "records": [
+    {
+      "timestamp": "2026-05-26T16:16:24.694685+00:00",
+      "mode": "compare_fuels",
+      "engine_id": "prius_1_8_atkinson",
+      "engine_name": "Toyota Prius 1.8L Atkinson I4",
+      "fuel_profile_id": "fsot_hemp_waste_advanced",
+      "fuel_production_route": "hemp_waste_advanced_lignocellulosic",
+      "weights": [],
+      "fsot_score": 0.7828683770093037,
+      "renewable_rank": 0.8424188785588147,
+      "fuel_cost_per_kwh": 0.2712867286471118,
+      "fuel_production_cost_per_kg": 1.1494,
+      "toxicity_index": 0.1672,
+      "renewable_fraction": 0.99,
+      "thermal_efficiency": 0.41700000000000004,
+      "bsfc_g_kwh": 236.0246464652095,
+      "co_g_per_h": 157.64606709677423,
+      "nox_g_per_h": 68.2712567907097,
+      "soot_g_per_h": 47.60490836810323,
+      "remediation_credit_per_kg": 0.05,
+      "production_difficulty_index": 1.35,
+      "conversion_efficiency": 0.88
+    },
+    {
+      "timestamp": "2026-05-26T16:16:24.694701+00:00",
+      "mode": "compare_fuels",
+      "engine_id": "prius_1_8_atkinson",
+      "engine_name": "Toyota Prius 1.8L Atkinson I4",
+      "fuel_profile_id": "fsot_hemp_waste_grounded",
+      "fuel_production_route": "hemp_waste_advanced_grounded",
+      "weights": [],
+      "fsot_score": 0.6892313282717294,
+      "renewable_rank": 0.7215145791549089,
+      "fuel_cost_per_kwh": 0.5426835693013721,
+      "fuel_production_cost_per_kg": 1.1494,
+      "toxicity_index": 0.6212289557691747,
+      "renewable_fraction": 0.99,
+      "thermal_efficiency": 0.4105472432432433,
+      "bsfc_g_kwh": 472.14509248422837,
+      "co_g_per_h": 319.40684737097826,
+      "nox_g_per_h": 143.82060454819816,
+      "soot_g_per_h": 98.11518243751884,
+      "remediation_credit_per_kg": 0.05,
+      "production_difficulty_index": 1.35,
+      "conversion_efficiency": 0.88
+    }
+  ]
+}

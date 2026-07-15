@@ -1,0 +1,58 @@
+{
+  "summary": {
+    "mode": "compare_fuels",
+    "engine": "prius_1_8_atkinson",
+    "fuel_profiles": [
+      "fsot_hemp_waste_advanced",
+      "fsot_algae_oil_biodiesel"
+    ]
+  },
+  "records": [
+    {
+      "timestamp": "2026-05-26T06:38:29.100381Z",
+      "mode": "compare_fuels",
+      "engine_id": "prius_1_8_atkinson",
+      "engine_name": "Toyota Prius 1.8L Atkinson I4",
+      "fuel_profile_id": "fsot_hemp_waste_advanced",
+      "fuel_production_route": "hemp_waste_advanced_lignocellulosic",
+      "weights": [],
+      "fsot_score": 0.7828683770093037,
+      "renewable_rank": 0.8424188785588147,
+      "fuel_cost_per_kwh": 0.2712867286471118,
+      "fuel_production_cost_per_kg": 1.1494,
+      "toxicity_index": 0.1672,
+      "renewable_fraction": 0.99,
+      "thermal_efficiency": 0.41700000000000004,
+      "bsfc_g_kwh": 236.0246464652095,
+      "co_g_per_h": 157.64606709677423,
+      "nox_g_per_h": 68.2712567907097,
+      "soot_g_per_h": 47.60490836810323,
+      "remediation_credit_per_kg": 0.05,
+      "production_difficulty_index": 1.35,
+      "conversion_efficiency": 0.88
+    },
+    {
+      "timestamp": "2026-05-26T06:38:29.100397Z",
+      "mode": "compare_fuels",
+      "engine_id": "prius_1_8_atkinson",
+      "engine_name": "Toyota Prius 1.8L Atkinson I4",
+      "fuel_profile_id": "fsot_algae_oil_biodiesel",
+      "fuel_production_route": "algal_bloom_biodiesel",
+      "weights": [],
+      "fsot_score": 0.7178803228459851,
+      "renewable_rank": 0.8229386865327406,
+      "fuel_cost_per_kwh": 0.5806928808035561,
+      "fuel_production_cost_per_kg": 2.2455600000000002,
+      "toxicity_index": 0.205675,
+      "renewable_fraction": 0.96,
+      "thermal_efficiency": 0.41420000000000007,
+      "bsfc_g_kwh": 258.5960209495877,
+      "co_g_per_h": 253.25049600000003,
+      "nox_g_per_h": 130.10744232,
+      "soot_g_per_h": 96.62772674880001,
+      "remediation_credit_per_kg": 0.18,
+      "production_difficulty_index": 1.3,
+      "conversion_efficiency": 0.84
+    }
+  ]
+}

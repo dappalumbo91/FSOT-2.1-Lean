@@ -1,0 +1,190 @@
+{
+  "generated_at": "2026-07-15T11:50:32.733235+00:00",
+  "simulator": "t3_acoustic_valve_hardware_simulator",
+  "hardware_frame": {
+    "actuator": "piezo_stack_PZT-5A_class",
+    "valve_mechanism": "resonant_cavity_phase_lock",
+    "pad_role": "transporter_pad_a_emitter",
+    "coupling_channel": "pattern_buffer_t3_scan_grid"
+  },
+  "actuator_steps": [
+    {
+      "step": 0,
+      "piezo_drive_v_pp": 3.4993944995934783,
+      "cavity_phase_rad": 3.141592653589793,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 42.0,
+      "impedance_match_ratio": 1.0,
+      "t3_phase_lock_error": 0.0,
+      "beam_coupling_efficiency": 0.12247880748577172
+    },
+    {
+      "step": 1,
+      "piezo_drive_v_pp": 3.5021381328143697,
+      "cavity_phase_rad": 3.1415405145202913,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.916,
+      "impedance_match_ratio": 0.9999993361447489,
+      "t3_phase_lock_error": 1.659638127882168e-05,
+      "beam_coupling_efficiency": 0.12223376872521707
+    },
+    {
+      "step": 2,
+      "piezo_drive_v_pp": 3.5040725287941723,
+      "cavity_phase_rad": 3.1407591015416525,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.832,
+      "impedance_match_ratio": 0.9999893868856972,
+      "t3_phase_lock_error": 0.0002653278575719398,
+      "beam_coupling_efficiency": 0.12198759757377146
+    },
+    {
+      "step": 3,
+      "piezo_drive_v_pp": 3.5046271355895913,
+      "cavity_phase_rad": 3.138739172718335,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.748,
+      "impedance_match_ratio": 0.9999636683531431,
+      "t3_phase_lock_error": 0.0009082911714214381,
+      "beam_coupling_efficiency": 0.12173951148321674
+    },
+    {
+      "step": 4,
+      "piezo_drive_v_pp": 3.5036383713961787,
+      "cavity_phase_rad": 3.1353373148038046,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.664,
+      "impedance_match_ratio": 0.9999203545529196,
+      "t3_phase_lock_error": 0.0019911361770090785,
+      "beam_coupling_efficiency": 0.12148930018554052
+    },
+    {
+      "step": 5,
+      "piezo_drive_v_pp": 3.5013978731579236,
+      "cavity_phase_rad": 3.130817623888411,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.58,
+      "impedance_match_ratio": 0.999862808060885,
+      "t3_phase_lock_error": 0.0034297984778738355,
+      "beam_coupling_efficiency": 0.12123738433686555
+    },
+    {
+      "step": 6,
+      "piezo_drive_v_pp": 3.4985664779718486,
+      "cavity_phase_rad": 3.125773217905318,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.496,
+      "impedance_match_ratio": 0.9997985806891113,
+      "t3_phase_lock_error": 0.005035482772217104,
+      "beam_coupling_efficiency": 0.12098468823410426
+    },
+    {
+      "step": 7,
+      "piezo_drive_v_pp": 3.4959793085545634,
+      "cavity_phase_rad": 3.1209509055962896,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.412,
+      "impedance_match_ratio": 0.9997371811018222,
+      "t3_phase_lock_error": 0.00657047245444653,
+      "beam_coupling_efficiency": 0.12073236509217065
+    },
+    {
+      "step": 8,
+      "piezo_drive_v_pp": 3.494399452998722,
+      "cavity_phase_rad": 3.1170308411225216,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.328,
+      "impedance_match_ratio": 0.999687269290763,
+      "t3_phase_lock_error": 0.007818267730924866,
+      "beam_coupling_efficiency": 0.12048145652781718
+    },
+    {
+      "step": 9,
+      "piezo_drive_v_pp": 3.494292891210674,
+      "cavity_phase_rad": 3.114426177063958,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.244,
+      "impedance_match_ratio": 0.9996541056779619,
+      "t3_phase_lock_error": 0.00864735805095318,
+      "beam_coupling_efficiency": 0.12023258679198193
+    },
+    {
+      "step": 10,
+      "piezo_drive_v_pp": 3.4956910536916643,
+      "cavity_phase_rad": 3.113161730149283,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.16,
+      "impedance_match_ratio": 0.999638006239822,
+      "t3_phase_lock_error": 0.009049844004448748,
+      "beam_coupling_efficiency": 0.11998578150327367
+    },
+    {
+      "step": 11,
+      "piezo_drive_v_pp": 3.4981815510814482,
+      "cavity_phase_rad": 3.1128672923851335,
+      "resonance_hz": 40000.0,
+      "acoustic_q_factor": 41.076,
+      "impedance_match_ratio": 0.9996342573417742,
+      "t3_phase_lock_error": 0.009143566455643515,
+      "beam_coupling_efficiency": 0.11974046350240038
+    }
+  ],
+  "summary": {
+    "resonance_hz": 40000.0,
+    "piezo_stack_v_pp_nominal": 24.0,
+    "cavity_length_m": 0.042,
+    "acoustic_impedance_kg_m2_s": 1480000.0,
+    "mean_t3_phase_lock_error": 0.004406345127815754,
+    "mean_beam_coupling_efficiency": 0.12111030928684428,
+    "mean_impedance_match_ratio": 0.9998237461948875,
+    "phi_lock_hardware": 0.95,
+    "t3_valve_acoustic_phase": 1.0
+  },
+  "observables": [
+    {
+      "name": "resonance_hz",
+      "value": 40000.0,
+      "unit": "Hz"
+    },
+    {
+      "name": "piezo_stack_v_pp_nominal",
+      "value": 24.0,
+      "unit": "V"
+    },
+    {
+      "name": "cavity_length_m",
+      "value": 0.042,
+      "unit": "m"
+    },
+    {
+      "name": "acoustic_impedance_kg_m2_s",
+      "value": 1480000.0,
+      "unit": "kg/(m\u00b2\u00b7s)"
+    },
+    {
+      "name": "mean_t3_phase_lock_error",
+      "value": 0.004406345127815754,
+      "unit": "kg/(m\u00b2\u00b7s)"
+    },
+    {
+      "name": "mean_beam_coupling_efficiency",
+      "value": 0.12111030928684428,
+      "unit": "kg/(m\u00b2\u00b7s)"
+    },
+    {
+      "name": "mean_impedance_match_ratio",
+      "value": 0.9998237461948875,
+      "unit": "kg/(m\u00b2\u00b7s)"
+    },
+    {
+      "name": "phi_lock_hardware",
+      "value": 0.95,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "t3_valve_acoustic_phase",
+      "value": 1.0,
+      "unit": "dimensionless"
+    }
+  ]
+}

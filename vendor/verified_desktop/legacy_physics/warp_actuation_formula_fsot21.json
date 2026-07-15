@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-07-10T20:04:31.038800+00:00",
+  "title": "FSOT 2.1 Warp Actuation Formula (development)",
+  "note": "Composable from verified vendor/fsot_compute.py \u2014 path to Lean certificate after bench + prereg. Blueprint schematics stay local.",
+  "user_mechanism": "Stacked EM \u2192 fluid friction \u2192 displacement; paired nodes \u2192 tunneling bridge; exotic byproduct \u2192 fusion/superheavy spine",
+  "inputs": {
+    "em_stack_layers": 3,
+    "phase_lock": 0.95,
+    "observed_gate": true,
+    "K": 0.4202216641606967,
+    "A_BLEED": 1.046973630587551,
+    "B_IN": 0.7879407922764435,
+    "POOF": 0.1534822148944508,
+    "THETA_S": 0.29089654054517305
+  },
+  "domain_scalars": {
+    "Electromagnetism": 0.5188655207983146,
+    "Fluid_Dynamics": -0.562733806256851,
+    "Quantum_Mechanics": 0.9555063001027196,
+    "Nuclear_Physics": 0.9213094330291355,
+    "Cosmology": -0.5024559462100433
+  },
+  "formula_steps": {
+    "psi_friction": 0.082300635102,
+    "psi_node_actuation": 0.059407798774,
+    "delta_phi_fluid_displacement": 0.004581413686,
+    "psi_tunneling_bridge": 0.053926299704,
+    "y_exotic_byproduct": 0.011637689406,
+    "psi_stabilization": 2.386649570184,
+    "psi_run_sustained": 0.14178559741,
+    "stabilization_margin": 1.722776467449,
+    "delta_phi_stable": 0.004581413686,
+    "psi_bh_inlet": 0.009663204175,
+    "psi_wh_outlet": 0.501689416811,
+    "psi_portal_doorway": 0.009663204175,
+    "info_preservation_proxy": 0.981227203621,
+    "psi_entangle_gate": 0.04803163401,
+    "psi_gate_pair": 0.043599802456,
+    "psi_traverse": 0.000464139486
+  },
+  "bh_wh_portal": {
+    "s_bh_bridge": 0.882410798418,
+    "lean_domain": "blackhole",
+    "python_domain_bridge": "Astrophysics",
+    "bh_thesis_anchor": "BlackHoleThesisPriors \u2014 28/28 observables within 2%",
+    "wh_mechanism": "bubble_bleed active outgassing \u2014 no post-closure suction spike",
+    "doorway_interpretation": "Step-through traversal without information deconstruction caveat",
+    "entanglement_interpretation": "Two gates quantum-entangled via \u03c6_lock\u00b2 \u00b7 |S_QM|\u00b2 channel"
+  },
+  "stabilization": {
+    "psi_stabilization": 2.386649570184,
+    "stabilization_margin": 1.722776467449,
+    "stable_run_band": true,
+    "v_match_gate": 0.050184572021,
+    "omega_lambda_anchor": 0.685,
+    "literature_anchor": "Garattini-Zatrimaylov arXiv:2502.13153 de Sitter non-negative rho band",
+    "interpretation": "Casimir/EM effects as vacuum underdensity \u2014 Ford 2009; not blueprint warp bubble"
+  },
+  "formula_latex": {
+    "psi_friction": "|\\mathcal{S}_{EM}|^L \\cdot A_{bleed} \\cdot |\\mathcal{S}_{fluid}|",
+    "psi_node": "K \\cdot \\Psi_{friction} \\cdot (1 + B_{in}) \\cdot e^{C_{factor}\\cdot 0.01} \\cdot |\\cos\\theta_s|",
+    "delta_phi": "\\Psi_{node} \\cdot P_{OOF} \\cdot |\\mathcal{S}_{cosmo}|",
+    "psi_bridge": "\\phi_{lock} \\cdot |\\mathcal{S}_{QM}| \\cdot \\sqrt{\\Psi_{node,1}\\cdot\\Psi_{node,2}}",
+    "y_exotic": "|\\mathcal{S}_{nuclear}| \\cdot \\Psi_{friction} \\cdot P_{OOF}",
+    "psi_stab": "(1+B_{in}) \\cdot \\phi_{lock} \\cdot |\\mathcal{S}_{QM}| \\cdot |\\mathcal{S}_{nuclear}| \\cdot A_{bleed} / (|\\mathcal{S}_{cosmo}| + P_{OOF})",
+    "psi_run": "\\Psi_{node} \\cdot \\Psi_{stab}",
+    "lambda_stab": "\\Psi_{run} / \\Psi_{friction}",
+    "delta_phi_stable": "\\Delta\\Phi_{fluid} \\cdot \\min(1,\\; \\Lambda_{stab}/(1+P_{OOF}))",
+    "psi_bh_inlet": "|\\mathcal{S}_{BH}| \\cdot \\Psi_{friction} \\cdot P_{OOF} / (1+P_{OOF})",
+    "psi_wh_outlet": "|\\mathcal{S}_{cosmo}| \\cdot P_{OOF} \\cdot (1+B_{in}) \\cdot \\Psi_{stab} / (|\\mathcal{S}_{cosmo}|+P_{OOF})",
+    "psi_portal": "\\min(\\Psi_{BH},\\Psi_{WH}) \\cdot \\min(1,\\Lambda_{stab})",
+    "psi_entangle": "\\phi_{lock}^2 \\cdot |\\mathcal{S}_{QM}|^2 \\cdot \\Psi_{node} \\cdot \\mathcal{I}_{preserve}",
+    "psi_traverse": "\\Psi_{portal} \\cdot \\Psi_{entangle}"
+  },
+  "fsot_branches": [
+    "term3.acoustic_bleed",
+    "term1.perceived_adjust",
+    "term3.poof_factor",
+    "term1.initiation_transformation"
+  ],
+  "lean_verification_path": [
+    "1. Lock formula coefficients from bench (warp_node_bench_protocol.md)",
+    "2. Preregister PRED-029/030/031 in legacy \u2192 promote to GitHub manifest",
+    "3. Build warp_actuation_benchmark.json from measurements",
+    "4. gen_warp_actuation_lean.py \u2192 FSOT.Formal.WarpActuationPriors (physics only)",
+    "5. lake build + verify_extension_domains gate"
+  ]
+}

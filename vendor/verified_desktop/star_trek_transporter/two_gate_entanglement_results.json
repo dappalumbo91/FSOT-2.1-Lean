@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-07-15T11:50:06.623842+00:00",
+  "simulator": "two_gate_entanglement_simulator",
+  "gates": [
+    {
+      "gate_id": "transporter_pad_a",
+      "role": "dematerialization_emitter",
+      "portal_scalar": 0.009663204175,
+      "phase_lock": 0.95
+    },
+    {
+      "gate_id": "transporter_pad_b",
+      "role": "reassembly_receiver",
+      "portal_scalar": 0.009663204175,
+      "phase_lock": 0.95
+    }
+  ],
+  "pair_steps": [
+    {
+      "step": 0,
+      "gate_pair_coupling": 0.043599802456,
+      "entanglement_channel_fidelity": 0.04803163401018877,
+      "traverse_readiness": 0.0020941697544831217,
+      "information_preserved": 0.981227203621
+    },
+    {
+      "step": 1,
+      "gate_pair_coupling": 0.043655977983804446,
+      "entanglement_channel_fidelity": 0.04798360237617858,
+      "traverse_readiness": 0.0020947710889180787,
+      "information_preserved": 0.9809328354599137
+    },
+    {
+      "step": 2,
+      "gate_pair_coupling": 0.04368573328311563,
+      "entanglement_channel_fidelity": 0.04793557074216839,
+      "traverse_readiness": 0.00209410055821629,
+      "information_preserved": 0.9806384672988274
+    },
+    {
+      "step": 3,
+      "gate_pair_coupling": 0.043675073971728116,
+      "entanglement_channel_fidelity": 0.047887539108158204,
+      "traverse_readiness": 0.002091491812872833,
+      "information_preserved": 0.9803440991377411
+    },
+    {
+      "step": 4,
+      "gate_pair_coupling": 0.04362901329034379,
+      "entanglement_channel_fidelity": 0.047839507474148016,
+      "traverse_readiness": 0.002087190507393105,
+      "information_preserved": 0.9800497309766548
+    },
+    {
+      "step": 5,
+      "gate_pair_coupling": 0.043569214297135714,
+      "entanglement_channel_fidelity": 0.04779147584013783,
+      "traverse_readiness": 0.002082237052455349,
+      "information_preserved": 0.9797553628155685
+    },
+    {
+      "step": 6,
+      "gate_pair_coupling": 0.043523801392994665,
+      "entanglement_channel_fidelity": 0.04774344420612764,
+      "traverse_readiness": 0.0020779761834450214,
+      "information_preserved": 0.9794609946544822
+    },
+    {
+      "step": 7,
+      "gate_pair_coupling": 0.0435141329763344,
+      "entanglement_channel_fidelity": 0.04769541257211745,
+      "traverse_readiness": 0.0020754245250242504,
+      "information_preserved": 0.9791666264933959
+    }
+  ],
+  "summary": {
+    "mean_gate_pair_coupling": 0.04360659370643209,
+    "mean_entanglement_fidelity": 0.047863523291153114,
+    "mean_traverse_readiness": 0.002087170185351006,
+    "phi_lock": 0.95,
+    "psi_gate_pair": 0.043599802456,
+    "psi_entangle_gate": 0.04803163401018877
+  },
+  "observables": [
+    {
+      "name": "mean_gate_pair_coupling",
+      "value": 0.04360659370643209,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "mean_entanglement_fidelity",
+      "value": 0.047863523291153114,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "mean_traverse_readiness",
+      "value": 0.002087170185351006,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "phi_lock",
+      "value": 0.95,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "psi_gate_pair",
+      "value": 0.043599802456,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "psi_entangle_gate",
+      "value": 0.04803163401018877,
+      "unit": "dimensionless"
+    }
+  ]
+}

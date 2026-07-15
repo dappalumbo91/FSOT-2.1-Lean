@@ -930,6 +930,52 @@ def the_well_cache_root(*, require: bool = False) -> Path | None:
     return path
 
 
+VERIFIED_DESKTOP_SLUGS = (
+    "star_trek_transporter",
+    "fuel_lab",
+    "blackhole_whitehole",
+    "machine_and_molecule",
+)
+
+
+def verified_desktop_archive_projects_root() -> Path | None:
+    """I:/FSOT-Physical-Archive/08_Verified-Desktop-Projects (canonical copy)."""
+    ar = archive_root()
+    if ar is None:
+        return None
+    path = ar / "08_Verified-Desktop-Projects"
+    return path.resolve() if path.is_dir() else None
+
+
+def verified_desktop_vendor_root() -> Path:
+    return (VENDOR_ROOT / "verified_desktop").resolve()
+
+
+def verified_desktop_project(
+    slug: str,
+    *,
+    require: bool = False,
+    desktop_fallback: Path | None = None,
+) -> Path | None:
+    """
+    Resolve a Tier 88 verified desktop project root (archive → vendor → desktop).
+    """
+    if slug not in VERIFIED_DESKTOP_SLUGS:
+        raise ValueError(f"unknown verified desktop slug: {slug}")
+    env_key = f"FSOT_VD_{slug.upper()}"
+    candidates: list[Path] = []
+    ar_vd = verified_desktop_archive_projects_root()
+    if ar_vd is not None:
+        candidates.append(ar_vd / slug)
+    candidates.append(verified_desktop_vendor_root() / slug)
+    if desktop_fallback is not None:
+        candidates.append(desktop_fallback)
+    path = _resolve(env_key, *candidates)
+    if path is None and require:
+        raise FileNotFoundError(f"verified desktop project not found: {slug}")
+    return path
+
+
 def species_catalog_path(*, require: bool = True) -> Path:
     path = _resolve(
         "FSOT_SPECIES_CATALOG",

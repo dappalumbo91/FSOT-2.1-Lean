@@ -1,0 +1,87 @@
+{
+  "fuel_profiles": [
+    {
+      "id": "fsot_hemp_waste_grounded",
+      "name": "FSOT Hemp Waste Grounded Fuel",
+      "description": "Optimized grounded hemp-waste route derived from the best refined hemp sweep blend variant.",
+      "fuel_type": "fsot_plant",
+      "lhv_kj_per_kg": 17298.833718950624,
+      "stoich_afr": 6.12827505365232,
+      "density_kg_m3": 677.1732187499999,
+      "clean_index": 0.8339837837837838,
+      "emissions_index": 0.4996097297297297,
+      "knock_resistance": 0.97,
+      "octane_rating": 111.0,
+      "flame_speed_m_s": 0.63,
+      "volatility_index": 0.81325,
+      "composition": [
+        {
+          "name": "Glucose",
+          "fraction": 0.63,
+          "molecular_formula": "C6H12O6"
+        },
+        {
+          "name": "Guaiacol",
+          "fraction": 0.18,
+          "molecular_formula": "C7H8O2"
+        },
+        {
+          "name": "Diethyl ether",
+          "fraction": 0.05,
+          "molecular_formula": "C4H10O"
+        },
+        {
+          "name": "Ethyl acetate",
+          "fraction": 0.14,
+          "molecular_formula": "C4H8O2"
+        }
+      ],
+      "byproducts": {
+        "co_g_per_kg": 14.99325,
+        "nox_g_per_kg": 7.20144,
+        "soot_g_per_kg": 3.3991500000000006,
+        "aldehyde_g_per_kg": 4.297635
+      },
+      "production_cost_per_kg": 1.306,
+      "production_difficulty_index": 1.35,
+      "precursors": [
+        {
+          "name": "Glucose",
+          "mass_kg": 0.63,
+          "unit_cost": 0.04
+        },
+        {
+          "name": "Guaiacol",
+          "mass_kg": 0.18,
+          "unit_cost": 0.95
+        },
+        {
+          "name": "Diethyl ether",
+          "mass_kg": 0.05,
+          "unit_cost": 1.15
+        },
+        {
+          "name": "Ethyl acetate",
+          "mass_kg": 0.14,
+          "unit_cost": 1.2
+        },
+        {
+          "name": "Platinum",
+          "mass_kg": 0.0008,
+          "unit_cost": 20.0
+        }
+      ],
+      "process_energy_kj_per_kg": 12710.0,
+      "processing_cost_per_kj": 6e-05,
+      "overhead_cost_per_kg": 0.14,
+      "catalyst_cycle_cost_per_kg": 0.05,
+      "coproduct_credit_per_kg": 0.05,
+      "remediation_credit_per_kg": 0.05,
+      "biomass_yield_kg_fuel_per_kg_biomass": 0.6,
+      "conversion_efficiency": 0.835,
+      "renewable_fraction": 0.99,
+      "renewable_source": "hemp waste",
+      "production_route": "hemp_waste_grounded_optimized"
+    }
+  ]
+}

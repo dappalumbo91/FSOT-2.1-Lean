@@ -1,0 +1,305 @@
+{
+  "fuel_profiles": [
+    {
+      "id": "fsot_hemp_waste_advanced",
+      "name": "FSOT Advanced Hemp Waste Fuel",
+      "description": "A more capable hemp-waste route using aggressive lignocellulosic conversion, ruthenium-style catalyst efficiency, and optimized ether/ester balance.",
+      "fuel_type": "fsot_plant",
+      "lhv_kj_per_kg": 21882.618086633818,
+      "stoich_afr": 7.478789001995101,
+      "density_kg_m3": 676.8095312500001,
+      "clean_index": 0.7786810810810811,
+      "emissions_index": 0.5327913513513515,
+      "knock_resistance": 0.97,
+      "octane_rating": 111.0,
+      "flame_speed_m_s": 0.63,
+      "volatility_index": 0.7085,
+      "composition": [
+        {
+          "name": "Glucose",
+          "fraction": 0.48
+        },
+        {
+          "name": "Guaiacol",
+          "fraction": 0.18
+        },
+        {
+          "name": "Diethyl ether",
+          "fraction": 0.12
+        },
+        {
+          "name": "Ethyl acetate",
+          "fraction": 0.12
+        },
+        {
+          "name": "Limonene",
+          "fraction": 0.1
+        }
+      ],
+      "byproducts": {
+        "co_g_per_kg": 15.0,
+        "nox_g_per_kg": 8.0,
+        "soot_g_per_kg": 3.8,
+        "aldehyde_g_per_kg": 4.8
+      },
+      "production_cost_per_kg": 1.45,
+      "production_difficulty_index": 1.35,
+      "precursors": [
+        {
+          "name": "Glucose",
+          "mass_kg": 0.5,
+          "unit_cost": 0.04
+        },
+        {
+          "name": "Guaiacol",
+          "mass_kg": 0.18,
+          "unit_cost": 0.95
+        },
+        {
+          "name": "Diethyl ether",
+          "mass_kg": 0.1,
+          "unit_cost": 1.15
+        },
+        {
+          "name": "Ethyl acetate",
+          "mass_kg": 0.1,
+          "unit_cost": 1.2
+        },
+        {
+          "name": "Platinum",
+          "mass_kg": 0.0008,
+          "unit_cost": 20.0
+        }
+      ],
+      "process_energy_kj_per_kg": 13500.0,
+      "processing_cost_per_kj": 6e-05,
+      "overhead_cost_per_kg": 0.14,
+      "catalyst_cycle_cost_per_kg": 0.06,
+      "coproduct_credit_per_kg": 0.18,
+      "remediation_credit_per_kg": 0.05,
+      "biomass_yield_kg_fuel_per_kg_biomass": 0.55,
+      "conversion_efficiency": 0.88,
+      "renewable_fraction": 0.99,
+      "renewable_source": "hemp waste",
+      "production_route": "hemp_waste_advanced_lignocellulosic"
+    },
+    {
+      "id": "fsot_algae_oil_biodiesel",
+      "name": "FSOT Algae Oil Biodiesel",
+      "description": "A remediation-driven algal bloom biodiesel concept that converts water-quality nuisance biomass into renewable fuel.",
+      "fuel_type": "fsot_biodiesel",
+      "lhv_kj_per_kg": 36661.407697019844,
+      "stoich_afr": 11.803607217463746,
+      "density_kg_m3": 744.595,
+      "clean_index": 0.5801338992053278,
+      "emissions_index": 0.6519196604768033,
+      "knock_resistance": 0.93,
+      "octane_rating": 105.0,
+      "flame_speed_m_s": 0.54,
+      "volatility_index": 0.28625,
+      "composition": [
+        {
+          "name": "Methyl oleate",
+          "fraction": 0.35
+        },
+        {
+          "name": "Methyl palmitate",
+          "fraction": 0.2
+        },
+        {
+          "name": "Methyl linoleate",
+          "fraction": 0.2
+        },
+        {
+          "name": "Diethyl ether",
+          "fraction": 0.15
+        },
+        {
+          "name": "Ethyl acetate",
+          "fraction": 0.1
+        }
+      ],
+      "byproducts": {
+        "co_g_per_kg": 20.0,
+        "nox_g_per_kg": 12.5,
+        "soot_g_per_kg": 6.5,
+        "aldehyde_g_per_kg": 10.0
+      },
+      "production_cost_per_kg": 1.7,
+      "production_difficulty_index": 1.3,
+      "precursors": [
+        {
+          "name": "Triolein",
+          "mass_kg": 0.4,
+          "unit_cost": 0.4
+        },
+        {
+          "name": "Methyl oleate",
+          "mass_kg": 0.25,
+          "unit_cost": 0.9
+        },
+        {
+          "name": "Diethyl ether",
+          "mass_kg": 0.15,
+          "unit_cost": 1.2
+        },
+        {
+          "name": "Ethyl acetate",
+          "mass_kg": 0.1,
+          "unit_cost": 1.4
+        },
+        {
+          "name": "Platinum",
+          "mass_kg": 0.001,
+          "unit_cost": 22.0
+        }
+      ],
+      "process_energy_kj_per_kg": 16500.0,
+      "processing_cost_per_kj": 8e-05,
+      "overhead_cost_per_kg": 0.22,
+      "catalyst_cycle_cost_per_kg": 0.09,
+      "coproduct_credit_per_kg": 0.12,
+      "remediation_credit_per_kg": 0.18,
+      "biomass_yield_kg_fuel_per_kg_biomass": 0.5,
+      "conversion_efficiency": 0.84,
+      "renewable_fraction": 0.96,
+      "renewable_source": "algal bloom remediation",
+      "production_route": "algal_bloom_biodiesel"
+    },
+    {
+      "id": "fsot_mushroom_spore_fuel",
+      "name": "FSOT Mushroom Spore Fuel",
+      "description": "A renewable fungal biomass-derived fuel concept using mushroom spore chemistry and ester/ether intermediates.",
+      "fuel_type": "fsot_fungus",
+      "lhv_kj_per_kg": 26849.837586898393,
+      "stoich_afr": 8.909988993476915,
+      "density_kg_m3": 659.268203125,
+      "clean_index": 0.6895,
+      "emissions_index": 0.5863,
+      "knock_resistance": 0.96,
+      "octane_rating": 108.0,
+      "flame_speed_m_s": 0.58,
+      "volatility_index": 0.5862499999999999,
+      "composition": [
+        {
+          "name": "Ethyl acetate",
+          "fraction": 0.3
+        },
+        {
+          "name": "Limonene",
+          "fraction": 0.25
+        },
+        {
+          "name": "Glycine",
+          "fraction": 0.15
+        },
+        {
+          "name": "Ethanol",
+          "fraction": 0.15
+        },
+        {
+          "name": "Furfural",
+          "fraction": 0.15
+        }
+      ],
+      "byproducts": {
+        "co_g_per_kg": 16.0,
+        "nox_g_per_kg": 10.0,
+        "soot_g_per_kg": 5.0,
+        "aldehyde_g_per_kg": 8.0
+      },
+      "production_cost_per_kg": 1.7,
+      "production_difficulty_index": 1.3,
+      "precursors": [
+        {
+          "name": "Glucose",
+          "mass_kg": 0.45,
+          "unit_cost": 0.2
+        },
+        {
+          "name": "Limonene",
+          "mass_kg": 0.2,
+          "unit_cost": 1.1
+        },
+        {
+          "name": "Diethyl ether",
+          "mass_kg": 0.15,
+          "unit_cost": 1.3
+        },
+        {
+          "name": "Ethyl acetate",
+          "mass_kg": 0.1,
+          "unit_cost": 1.4
+        },
+        {
+          "name": "Platinum",
+          "mass_kg": 0.001,
+          "unit_cost": 22.0
+        }
+      ],
+      "process_energy_kj_per_kg": 15000.0,
+      "processing_cost_per_kj": 7e-05,
+      "overhead_cost_per_kg": 0.18,
+      "catalyst_cycle_cost_per_kg": 0.08,
+      "coproduct_credit_per_kg": 0.1,
+      "remediation_credit_per_kg": 0.0,
+      "biomass_yield_kg_fuel_per_kg_biomass": 0.48,
+      "conversion_efficiency": 0.82,
+      "renewable_fraction": 0.97,
+      "renewable_source": "fungal biomass",
+      "production_route": "mushroom_biomass_ester_blend"
+    },
+    {
+      "id": "fsot_green_hydrogen",
+      "name": "FSOT Green Hydrogen Fuel",
+      "description": "A green hydrogen combustion fuel concept derived from renewable water-splitting and low-emissions hydrogen power.",
+      "fuel_type": "hydrogen",
+      "lhv_kj_per_kg": 122613.0,
+      "stoich_afr": 34.33476394849785,
+      "density_kg_m3": 622.0625,
+      "clean_index": 0.35,
+      "emissions_index": 0.79,
+      "knock_resistance": 0.99,
+      "octane_rating": 130.0,
+      "flame_speed_m_s": 1.8,
+      "volatility_index": 0.75,
+      "composition": [
+        {
+          "name": "hydrogen gas",
+          "fraction": 1.0
+        }
+      ],
+      "byproducts": {
+        "co_g_per_kg": 3.0,
+        "nox_g_per_kg": 15.0,
+        "soot_g_per_kg": 0.0,
+        "aldehyde_g_per_kg": 0.0
+      },
+      "production_cost_per_kg": 5.0,
+      "production_difficulty_index": 1.8,
+      "precursors": [
+        {
+          "name": "water",
+          "mass_kg": 1.0,
+          "unit_cost": 0.0
+        },
+        {
+          "name": "Platinum",
+          "mass_kg": 0.001,
+          "unit_cost": 40.0
+        }
+      ],
+      "process_energy_kj_per_kg": 50000.0,
+      "processing_cost_per_kj": 0.00012,
+      "overhead_cost_per_kg": 0.3,
+      "catalyst_cycle_cost_per_kg": 0.2,
+      "coproduct_credit_per_kg": 0.0,
+      "remediation_credit_per_kg": 0.0,
+      "biomass_yield_kg_fuel_per_kg_biomass": 0.0,
+      "conversion_efficiency": 0.65,
+      "renewable_fraction": 0.99,
+      "renewable_source": "green hydrogen",
+      "production_route": "electrolytic_hydrogen"
+    }
+  ]
+}

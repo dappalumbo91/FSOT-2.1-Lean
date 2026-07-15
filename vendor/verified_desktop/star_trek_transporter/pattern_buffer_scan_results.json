@@ -1,0 +1,3612 @@
+{
+  "generated_at": "2026-07-15T11:50:04.390072+00:00",
+  "simulator": "pattern_buffer_beam_simulator",
+  "desktop_folder": "FSOT, Star Trek Transporter",
+  "scan_envelope": {
+    "volume_m3": 0.085,
+    "mass_kg": 70.0,
+    "beam_resolution_m": 0.001
+  },
+  "fsot_constants": {
+    "poof": 0.1534822148944508,
+    "suction": 0.1470339854281028,
+    "c_eff": 0.9577022026205612,
+    "k_coupling": 0.4202216641606968,
+    "theta_s": 0.29089654054517305,
+    "coherence_efficiency": 0.9577,
+    "information_preservation": 0.99,
+    "t3_valve_acoustic_phase": 1.0
+  },
+  "beam_layers": [
+    {
+      "step": 0,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.9577,
+      "pattern_slice_fidelity": 0.9080194854552143,
+      "poof_local": 0.1534822148944508,
+      "suction_local": 0.14850432528238383
+    },
+    {
+      "step": 1,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9572211500000001,
+      "pattern_slice_fidelity": 0.9075654757124868,
+      "poof_local": 0.15392241909911436,
+      "suction_local": 0.14844255207445586
+    },
+    {
+      "step": 2,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9567423,
+      "pattern_slice_fidelity": 0.9071114659697591,
+      "poof_local": 0.15432563481327857,
+      "suction_local": 0.14826242299108558
+    },
+    {
+      "step": 3,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.95626345,
+      "pattern_slice_fidelity": 0.9066574562270314,
+      "poof_local": 0.15465798153227184,
+      "suction_local": 0.14797907351443856
+    },
+    {
+      "step": 4,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.9557846,
+      "pattern_slice_fidelity": 0.9062034464843038,
+      "poof_local": 0.1548915335722235,
+      "suction_local": 0.14761631229812133
+    },
+    {
+      "step": 5,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.9553057500000001,
+      "pattern_slice_fidelity": 0.9057494367415763,
+      "poof_local": 0.15500666654672526,
+      "suction_local": 0.1472046206270946
+    },
+    {
+      "step": 6,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9548269,
+      "pattern_slice_fidelity": 0.9052954269988487,
+      "poof_local": 0.15499370632070894,
+      "suction_local": 0.14677859120470185
+    },
+    {
+      "step": 7,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.95434805,
+      "pattern_slice_fidelity": 0.9048414172561211,
+      "poof_local": 0.15485374188694606,
+      "suction_local": 0.146374021474665
+    },
+    {
+      "step": 8,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9538692,
+      "pattern_slice_fidelity": 0.9043874075133934,
+      "poof_local": 0.1545985338626084,
+      "suction_local": 0.14602490571386115
+    },
+    {
+      "step": 9,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.95339035,
+      "pattern_slice_fidelity": 0.9039333977706658,
+      "poof_local": 0.15424952629453514,
+      "suction_local": 0.14576057863755396
+    },
+    {
+      "step": 10,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.9529115,
+      "pattern_slice_fidelity": 0.9034793880279383,
+      "poof_local": 0.15383604480701407,
+      "suction_local": 0.14560325052780598
+    },
+    {
+      "step": 11,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.95243265,
+      "pattern_slice_fidelity": 0.9030253782852106,
+      "poof_local": 0.15339283249407015,
+      "suction_local": 0.14556614099776738
+    },
+    {
+      "step": 12,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.9519538,
+      "pattern_slice_fidelity": 0.902571368542483,
+      "poof_local": 0.15295713060477117,
+      "suction_local": 0.14565236820370447
+    },
+    {
+      "step": 13,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.95147495,
+      "pattern_slice_fidelity": 0.9021173587997555,
+      "poof_local": 0.15256554931917024,
+      "suction_local": 0.14585468683956662
+    },
+    {
+      "step": 14,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.9509961,
+      "pattern_slice_fidelity": 0.9016633490570278,
+      "poof_local": 0.15225099155029892,
+      "suction_local": 0.14615609692929463
+    },
+    {
+      "step": 15,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9505172500000001,
+      "pattern_slice_fidelity": 0.9012093393143003,
+      "poof_local": 0.15203988825206935,
+      "suction_local": 0.14653127226263832
+    },
+    {
+      "step": 16,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9500384,
+      "pattern_slice_fidelity": 0.9007553295715726,
+      "poof_local": 0.15194997753842557,
+      "suction_local": 0.1469486884490854
+    },
+    {
+      "step": 17,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.94955955,
+      "pattern_slice_fidelity": 0.900301319828845,
+      "poof_local": 0.15198881422493307,
+      "suction_local": 0.14737327177856424
+    },
+    {
+      "step": 18,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.9490807,
+      "pattern_slice_fidelity": 0.8998473100861173,
+      "poof_local": 0.15215313502969974,
+      "suction_local": 0.14776934631640126
+    },
+    {
+      "step": 19,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.9486018500000001,
+      "pattern_slice_fidelity": 0.8993933003433898,
+      "poof_local": 0.1524291327730995,
+      "suction_local": 0.14810363160065496
+    },
+    {
+      "step": 20,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9481229999999999,
+      "pattern_slice_fidelity": 0.8989392906006621,
+      "poof_local": 0.15279361653645995,
+      "suction_local": 0.14834803905804558
+    },
+    {
+      "step": 21,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.94764415,
+      "pattern_slice_fidelity": 0.8984852808579346,
+      "poof_local": 0.15321596029650505,
+      "suction_local": 0.14848203216752257
+    },
+    {
+      "step": 22,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9471653,
+      "pattern_slice_fidelity": 0.898031271115207,
+      "poof_local": 0.15366067630007305,
+      "suction_local": 0.14849435205694342
+    },
+    {
+      "step": 23,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9466864500000001,
+      "pattern_slice_fidelity": 0.8975772613724794,
+      "poof_local": 0.1540903969493568,
+      "suction_local": 0.14838396353830233
+    },
+    {
+      "step": 24,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.9462076,
+      "pattern_slice_fidelity": 0.8971232516297517,
+      "poof_local": 0.15446901464250914,
+      "suction_local": 0.14816014209018338
+    },
+    {
+      "step": 25,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.94572875,
+      "pattern_slice_fidelity": 0.8966692418870241,
+      "poof_local": 0.15476471574213707,
+      "suction_local": 0.14784169447867285
+    },
+    {
+      "step": 26,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.9452499,
+      "pattern_slice_fidelity": 0.8962152321442965,
+      "poof_local": 0.1549526537401919,
+      "suction_local": 0.14745537850464616
+    },
+    {
+      "step": 27,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9447710500000001,
+      "pattern_slice_fidelity": 0.895761222401569,
+      "poof_local": 0.15501703700455868,
+      "suction_local": 0.1470336546593563
+    },
+    {
+      "step": 28,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.9442922,
+      "pattern_slice_fidelity": 0.8953072126588414,
+      "poof_local": 0.15495245568286173,
+      "suction_local": 0.14661195860716
+    },
+    {
+      "step": 29,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.94381335,
+      "pattern_slice_fidelity": 0.8948532029161137,
+      "poof_local": 0.15476433626939337,
+      "suction_local": 0.14622572367707826
+    },
+    {
+      "step": 30,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9433345,
+      "pattern_slice_fidelity": 0.894399193173386,
+      "poof_local": 0.1544684856398356,
+      "suction_local": 0.14590740355058546
+    },
+    {
+      "step": 31,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.94285565,
+      "pattern_slice_fidelity": 0.8939451834306585,
+      "poof_local": 0.15408976286660223,
+      "suction_local": 0.14568374531653225
+    },
+    {
+      "step": 32,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.9423768,
+      "pattern_slice_fidelity": 0.8934911736879309,
+      "poof_local": 0.15365999041651945,
+      "suction_local": 0.1455735420268198
+    },
+    {
+      "step": 33,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.94189795,
+      "pattern_slice_fidelity": 0.8930371639452033,
+      "poof_local": 0.1532152802440356,
+      "suction_local": 0.14558605359603172
+    },
+    {
+      "step": 34,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9414191,
+      "pattern_slice_fidelity": 0.8925831542024757,
+      "poof_local": 0.15279299945699656,
+      "suction_local": 0.14572022873012305
+    },
+    {
+      "step": 35,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.94094025,
+      "pattern_slice_fidelity": 0.8921291444597481,
+      "poof_local": 0.15242863051720984,
+      "suction_local": 0.1459647932621958
+    },
+    {
+      "step": 36,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9404614,
+      "pattern_slice_fidelity": 0.8916751347170204,
+      "poof_local": 0.15215278979981395,
+      "suction_local": 0.14629919747288056
+    },
+    {
+      "step": 37,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9399825500000001,
+      "pattern_slice_fidelity": 0.891221124974293,
+      "poof_local": 0.1519886550292528,
+      "suction_local": 0.14669534279601462
+    },
+    {
+      "step": 38,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.9395036999999999,
+      "pattern_slice_fidelity": 0.8907671152315652,
+      "poof_local": 0.15195001775348804,
+      "suction_local": 0.14711994282186838
+    },
+    {
+      "step": 39,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.93902485,
+      "pattern_slice_fidelity": 0.8903131054888376,
+      "poof_local": 0.15204012449877355,
+      "suction_local": 0.1475373202128428
+    },
+    {
+      "step": 40,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.938546,
+      "pattern_slice_fidelity": 0.8898590957461101,
+      "poof_local": 0.15225140397783726,
+      "suction_local": 0.14791240451868506
+    },
+    {
+      "step": 41,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9380671500000001,
+      "pattern_slice_fidelity": 0.8894050860033825,
+      "poof_local": 0.15256610327300757,
+      "suction_local": 0.14821367899753746
+    },
+    {
+      "step": 42,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.9375882999999999,
+      "pattern_slice_fidelity": 0.8889510762606547,
+      "poof_local": 0.15295777953851827,
+      "suction_local": 0.14841582883395588
+    },
+    {
+      "step": 43,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.93710945,
+      "pattern_slice_fidelity": 0.8884970665179273,
+      "poof_local": 0.1533935218805792,
+      "suction_local": 0.14850186823538186
+    },
+    {
+      "step": 44,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9366306,
+      "pattern_slice_fidelity": 0.8880430567751996,
+      "poof_local": 0.15383671672006333,
+      "suction_local": 0.14846456767618046
+    },
+    {
+      "step": 45,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.9361517500000001,
+      "pattern_slice_fidelity": 0.887589047032472,
+      "poof_local": 0.15425012427612367,
+      "suction_local": 0.14830706136398764
+    },
+    {
+      "step": 46,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.9356729,
+      "pattern_slice_fidelity": 0.8871350372897443,
+      "poof_local": 0.15459900766688195,
+      "suction_local": 0.1480425838855484
+    },
+    {
+      "step": 47,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.93519405,
+      "pattern_slice_fidelity": 0.8866810275470168,
+      "poof_local": 0.15485405170214295,
+      "suction_local": 0.14769335816057796
+    },
+    {
+      "step": 48,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9347152,
+      "pattern_slice_fidelity": 0.8862270178042891,
+      "poof_local": 0.15499382611437348,
+      "suction_local": 0.1472887281441621
+    },
+    {
+      "step": 49,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.93423635,
+      "pattern_slice_fidelity": 0.8857730080615616,
+      "poof_local": 0.15500658625310434,
+      "suction_local": 0.1468626931787864
+    },
+    {
+      "step": 50,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9337575,
+      "pattern_slice_fidelity": 0.885318998318834,
+      "poof_local": 0.15489125993804922,
+      "suction_local": 0.1464510511739261
+    },
+    {
+      "step": 51,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.93327865,
+      "pattern_slice_fidelity": 0.8848649885761063,
+      "poof_local": 0.15465753754986222,
+      "suction_local": 0.1460883906596875
+    },
+    {
+      "step": 52,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.9327998,
+      "pattern_slice_fidelity": 0.8844109788333786,
+      "poof_local": 0.15432505778859062,
+      "suction_local": 0.14580518445946328
+    },
+    {
+      "step": 53,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.93232095,
+      "pattern_slice_fidelity": 0.8839569690906511,
+      "poof_local": 0.15392175751708298,
+      "suction_local": 0.14562522918795032
+    },
+    {
+      "step": 54,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.9318421,
+      "pattern_slice_fidelity": 0.8835029593479236,
+      "poof_local": 0.15348152434500537,
+      "suction_local": 0.14556364572264174
+    },
+    {
+      "step": 55,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.93136325,
+      "pattern_slice_fidelity": 0.8830489496051959,
+      "poof_local": 0.15304134919686607,
+      "suction_local": 0.1456256086606844
+    },
+    {
+      "step": 56,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.9308844,
+      "pattern_slice_fidelity": 0.8825949398624683,
+      "poof_local": 0.15263821812166803,
+      "suction_local": 0.1458059115194486
+    },
+    {
+      "step": 57,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.93040555,
+      "pattern_slice_fidelity": 0.8821409301197407,
+      "poof_local": 0.1523060045122298,
+      "suction_local": 0.14608940421516015
+    },
+    {
+      "step": 58,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9299267,
+      "pattern_slice_fidelity": 0.881686920377013,
+      "poof_local": 0.1520726228677913,
+      "suction_local": 0.14645226606012254
+    },
+    {
+      "step": 59,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.9294478500000001,
+      "pattern_slice_fidelity": 0.8812329106342855,
+      "poof_local": 0.15195768325714915,
+      "suction_local": 0.14686400731397717
+    },
+    {
+      "step": 60,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.9289689999999999,
+      "pattern_slice_fidelity": 0.8807789008915577,
+      "poof_local": 0.15197084356782736,
+      "suction_local": 0.1472900311071461
+    },
+    {
+      "step": 61,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.92849015,
+      "pattern_slice_fidelity": 0.8803248911488303,
+      "poof_local": 0.15211099799478975,
+      "suction_local": 0.14769454046890718
+    },
+    {
+      "step": 62,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9280113,
+      "pattern_slice_fidelity": 0.8798708814061027,
+      "poof_local": 0.15236636995654243,
+      "suction_local": 0.1480435461948732
+    },
+    {
+      "step": 63,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.9275324500000001,
+      "pattern_slice_fidelity": 0.8794168716633751,
+      "poof_local": 0.15271550163128134,
+      "suction_local": 0.1483077228155408
+    },
+    {
+      "step": 64,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9270535999999999,
+      "pattern_slice_fidelity": 0.8789628619206473,
+      "poof_local": 0.1531290569665624,
+      "suction_local": 0.14846487269099606
+    },
+    {
+      "step": 65,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.92657475,
+      "pattern_slice_fidelity": 0.8785088521779199,
+      "poof_local": 0.15357228666324685,
+      "suction_local": 0.14850179118435988
+    },
+    {
+      "step": 66,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.9260959,
+      "pattern_slice_fidelity": 0.8780548424351922,
+      "poof_local": 0.15400794801158504,
+      "suction_local": 0.14841537619136655
+    },
+    {
+      "step": 67,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.92561705,
+      "pattern_slice_fidelity": 0.8776008326924646,
+      "poof_local": 0.15439943423800864,
+      "suction_local": 0.1482128887970159
+    },
+    {
+      "step": 68,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.9251382,
+      "pattern_slice_fidelity": 0.8771468229497371,
+      "poof_local": 0.15471385041690527,
+      "suction_local": 0.14791134315742654
+    },
+    {
+      "step": 69,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.92465935,
+      "pattern_slice_fidelity": 0.8766928132070094,
+      "poof_local": 0.1549247774915672,
+      "suction_local": 0.1475360768725279
+    },
+    {
+      "step": 70,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.9241805,
+      "pattern_slice_fidelity": 0.8762388034642817,
+      "poof_local": 0.15501449215536867,
+      "suction_local": 0.14711862197510545
+    },
+    {
+      "step": 71,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.92370165,
+      "pattern_slice_fidelity": 0.8757847937215543,
+      "poof_local": 0.15497545606598015,
+      "suction_local": 0.14669405542794964
+    },
+    {
+      "step": 72,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9232228,
+      "pattern_slice_fidelity": 0.8753307839788266,
+      "poof_local": 0.15481094926027128,
+      "suction_local": 0.14629805175558674
+    },
+    {
+      "step": 73,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.92274395,
+      "pattern_slice_fidelity": 0.8748767742360989,
+      "poof_local": 0.15453479454673774,
+      "suction_local": 0.14596388546543335
+    },
+    {
+      "step": 74,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.9222651,
+      "pattern_slice_fidelity": 0.8744227644933713,
+      "poof_local": 0.1541701960335858,
+      "suction_local": 0.14571963513220001
+    },
+    {
+      "step": 75,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.92178625,
+      "pattern_slice_fidelity": 0.8739687547506438,
+      "poof_local": 0.15374778938602932,
+      "suction_local": 0.14558582407446155
+    },
+    {
+      "step": 76,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9213074,
+      "pattern_slice_fidelity": 0.8735147450079161,
+      "poof_local": 0.15330306764140073,
+      "suction_local": 0.14557369586732563
+    },
+    {
+      "step": 77,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.92082855,
+      "pattern_slice_fidelity": 0.8730607352651886,
+      "poof_local": 0.15287339887990412,
+      "suction_local": 0.14568426959254951
+    },
+    {
+      "step": 78,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9203496999999999,
+      "pattern_slice_fidelity": 0.8726067255224609,
+      "poof_local": 0.15249488634347613,
+      "suction_local": 0.14590825420942613
+    },
+    {
+      "step": 79,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.91987085,
+      "pattern_slice_fidelity": 0.8721527157797333,
+      "poof_local": 0.15219933483363665,
+      "suction_local": 0.14622682924149127
+    },
+    {
+      "step": 80,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.919392,
+      "pattern_slice_fidelity": 0.8716987060370057,
+      "poof_local": 0.15201157828903947,
+      "suction_local": 0.14661322618126127
+    },
+    {
+      "step": 81,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.9189131500000001,
+      "pattern_slice_fidelity": 0.8712446962942781,
+      "poof_local": 0.15194739309503597,
+      "suction_local": 0.14703497773427537
+    },
+    {
+      "step": 82,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.9184342999999999,
+      "pattern_slice_fidelity": 0.8707906865515505,
+      "poof_local": 0.15201217246098989,
+      "suction_local": 0.14745664590801452
+    },
+    {
+      "step": 83,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.91795545,
+      "pattern_slice_fidelity": 0.870336676808823,
+      "poof_local": 0.1522004732517909,
+      "suction_local": 0.14784279971596598
+    },
+    {
+      "step": 84,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.9174766,
+      "pattern_slice_fidelity": 0.8698826670660953,
+      "poof_local": 0.15249647335138974,
+      "suction_local": 0.14816099229300367
+    },
+    {
+      "step": 85,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9169977500000001,
+      "pattern_slice_fidelity": 0.8694286573233677,
+      "poof_local": 0.1528753011280395,
+      "suction_local": 0.1483844872677162
+    },
+    {
+      "step": 86,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9165188999999999,
+      "pattern_slice_fidelity": 0.86897464758064,
+      "poof_local": 0.15330512529192275,
+      "suction_local": 0.1484945053061916
+    },
+    {
+      "step": 87,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.91604005,
+      "pattern_slice_fidelity": 0.8685206378379124,
+      "poof_local": 0.15374982954330002,
+      "suction_local": 0.14848180205972136
+    },
+    {
+      "step": 88,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.9155612,
+      "pattern_slice_fidelity": 0.8680666280951849,
+      "poof_local": 0.15417204727185096,
+      "suction_local": 0.14834744492817664
+    },
+    {
+      "step": 89,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.91508235,
+      "pattern_slice_fidelity": 0.8676126183524574,
+      "poof_local": 0.15453630131430504,
+      "suction_local": 0.14810272337092886
+    },
+    {
+      "step": 90,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9146034999999999,
+      "pattern_slice_fidelity": 0.8671586086097296,
+      "poof_local": 0.1548119849498588,
+      "suction_local": 0.1477682003015062
+    },
+    {
+      "step": 91,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.91412465,
+      "pattern_slice_fidelity": 0.866704598867002,
+      "poof_local": 0.1549759336529887,
+      "suction_local": 0.14737198427326653
+    },
+    {
+      "step": 92,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9136458,
+      "pattern_slice_fidelity": 0.8662505891242744,
+      "poof_local": 0.15501437151018943,
+      "suction_local": 0.14694736763698935
+    },
+    {
+      "step": 93,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.91316695,
+      "pattern_slice_fidelity": 0.8657965793815469,
+      "poof_local": 0.15492406875150241,
+      "suction_local": 0.14653002912597704
+    },
+    {
+      "step": 94,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.9126881,
+      "pattern_slice_fidelity": 0.8653425696388192,
+      "poof_local": 0.15471261313437376,
+      "suction_local": 0.14615503592356424
+    },
+    {
+      "step": 95,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.91220925,
+      "pattern_slice_fidelity": 0.8648885598960916,
+      "poof_local": 0.15439777237660884,
+      "suction_local": 0.14585389711657434
+    },
+    {
+      "step": 96,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.9117303999999999,
+      "pattern_slice_fidelity": 0.864434550153364,
+      "poof_local": 0.15400600121047514,
+      "suction_local": 0.14565191612052067
+    },
+    {
+      "step": 97,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.91125155,
+      "pattern_slice_fidelity": 0.8639805404106364,
+      "poof_local": 0.15357021850385932,
+      "suction_local": 0.14556606454102272
+    },
+    {
+      "step": 98,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.9107727,
+      "pattern_slice_fidelity": 0.8635265306679089,
+      "poof_local": 0.15312704122755053,
+      "suction_local": 0.14560355612183618
+    },
+    {
+      "step": 99,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.91029385,
+      "pattern_slice_fidelity": 0.8630725209251812,
+      "poof_local": 0.15271370768663678,
+      "suction_local": 0.14576124060458995
+    },
+    {
+      "step": 100,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9098149999999999,
+      "pattern_slice_fidelity": 0.8626185111824535,
+      "poof_local": 0.15236494854381774,
+      "suction_local": 0.1460258684316232
+    },
+    {
+      "step": 101,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.90933615,
+      "pattern_slice_fidelity": 0.8621645014397259,
+      "poof_local": 0.1521100685492618,
+      "suction_local": 0.14637520405006665
+    },
+    {
+      "step": 102,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.9088573,
+      "pattern_slice_fidelity": 0.8617104916969983,
+      "poof_local": 0.15197048418685807,
+      "suction_local": 0.14677989427095253
+    },
+    {
+      "step": 103,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.9083784500000001,
+      "pattern_slice_fidelity": 0.8612564819542708,
+      "poof_local": 0.15195792413799564,
+      "suction_local": 0.14720593469306925
+    },
+    {
+      "step": 104,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9078995999999999,
+      "pattern_slice_fidelity": 0.860802472211543,
+      "poof_local": 0.1520734437702587,
+      "suction_local": 0.14761752694843472
+    },
+    {
+      "step": 105,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.90742075,
+      "pattern_slice_fidelity": 0.8603484624688156,
+      "poof_local": 0.15230733645936875,
+      "suction_local": 0.1479800866871815
+    },
+    {
+      "step": 106,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.9069419,
+      "pattern_slice_fidelity": 0.8598944527260879,
+      "poof_local": 0.15263994919561505,
+      "suction_local": 0.14826314955365372
+    },
+    {
+      "step": 107,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.90646305,
+      "pattern_slice_fidelity": 0.8594404429833603,
+      "poof_local": 0.15304333394282638,
+      "suction_local": 0.14844293097688113
+    },
+    {
+      "step": 108,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.9059841999999999,
+      "pattern_slice_fidelity": 0.8589864332406326,
+      "poof_local": 0.15348359599320185,
+      "suction_local": 0.148504324687104
+    },
+    {
+      "step": 109,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.90550535,
+      "pattern_slice_fidelity": 0.8585324234979052,
+      "poof_local": 0.15392374199571252,
+      "suction_local": 0.14844217203148977
+    },
+    {
+      "step": 110,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.9050265,
+      "pattern_slice_fidelity": 0.8580784137551775,
+      "poof_local": 0.15432678835033883,
+      "suction_local": 0.14826169543383022
+    },
+    {
+      "step": 111,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.90454765,
+      "pattern_slice_fidelity": 0.85762440401245,
+      "poof_local": 0.15465886878297222,
+      "suction_local": 0.14797805957644145
+    },
+    {
+      "step": 112,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.9040687999999999,
+      "pattern_slice_fidelity": 0.8571703942697222,
+      "poof_local": 0.1548920799846543,
+      "suction_local": 0.14761509717628776
+    },
+    {
+      "step": 113,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.90358995,
+      "pattern_slice_fidelity": 0.8567163845269946,
+      "poof_local": 0.15500682620816966,
+      "suction_local": 0.1472033064229537
+    },
+    {
+      "step": 114,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.9031110999999999,
+      "pattern_slice_fidelity": 0.856262374784267,
+      "poof_local": 0.1549934658154936,
+      "suction_local": 0.1467772883452483
+    },
+    {
+      "step": 115,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.90263225,
+      "pattern_slice_fidelity": 0.8558083650415395,
+      "poof_local": 0.1548531214237031,
+      "suction_local": 0.1463728394336476
+    },
+    {
+      "step": 116,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.9021534,
+      "pattern_slice_fidelity": 0.8553543552988119,
+      "poof_local": 0.15459758557623016,
+      "suction_local": 0.1460239438131684
+    },
+    {
+      "step": 117,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.90167455,
+      "pattern_slice_fidelity": 0.8549003455560843,
+      "poof_local": 0.1542483298655001,
+      "suction_local": 0.1457599177016175
+    },
+    {
+      "step": 118,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.9011956999999999,
+      "pattern_slice_fidelity": 0.8544463358133566,
+      "poof_local": 0.1538347007661748,
+      "suction_local": 0.14560294609226665
+    },
+    {
+      "step": 119,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.90071685,
+      "pattern_slice_fidelity": 0.853992326070629,
+      "poof_local": 0.15339145377547253,
+      "suction_local": 0.1455662186430511
+    },
+    {
+      "step": 120,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.900238,
+      "pattern_slice_fidelity": 0.8535383163279014,
+      "poof_local": 0.15295583305628577,
+      "suction_local": 0.1456528214056077
+    },
+    {
+      "step": 121,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.89975915,
+      "pattern_slice_fidelity": 0.8530843065851738,
+      "poof_local": 0.15256444196828775,
+      "suction_local": 0.14585547751745742
+    },
+    {
+      "step": 122,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8992803,
+      "pattern_slice_fidelity": 0.8526302968424462,
+      "poof_local": 0.1522501674430129,
+      "suction_local": 0.1461571586458665
+    },
+    {
+      "step": 123,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.89880145,
+      "pattern_slice_fidelity": 0.8521762870997187,
+      "poof_local": 0.15203941663461645,
+      "suction_local": 0.14653251580635512
+    },
+    {
+      "step": 124,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8983226,
+      "pattern_slice_fidelity": 0.851722277356991,
+      "poof_local": 0.15194989803881814,
+      "suction_local": 0.14695000933024788
+    },
+    {
+      "step": 125,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.89784375,
+      "pattern_slice_fidelity": 0.8512682676142634,
+      "poof_local": 0.15198913352318566,
+      "suction_local": 0.1473745590091359
+    },
+    {
+      "step": 126,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8973649,
+      "pattern_slice_fidelity": 0.8508142578715359,
+      "poof_local": 0.15215382629653568,
+      "suction_local": 0.14777049173586193
+    },
+    {
+      "step": 127,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.89688605,
+      "pattern_slice_fidelity": 0.8503602481288082,
+      "poof_local": 0.15243013792430124,
+      "suction_local": 0.14810453896427
+    },
+    {
+      "step": 128,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8964072,
+      "pattern_slice_fidelity": 0.8499062383860805,
+      "poof_local": 0.15279485111343924,
+      "suction_local": 0.1483486321239025
+    },
+    {
+      "step": 129,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.89592835,
+      "pattern_slice_fidelity": 0.849452228643353,
+      "poof_local": 0.15321732056299955,
+      "suction_local": 0.14848226110281523
+    },
+    {
+      "step": 130,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8954495,
+      "pattern_slice_fidelity": 0.8489982189006254,
+      "poof_local": 0.153662047958664,
+      "suction_local": 0.14849419762521104
+    },
+    {
+      "step": 131,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.89497065,
+      "pattern_slice_fidelity": 0.8485442091578977,
+      "poof_local": 0.1540916647453959,
+      "suction_local": 0.1483834387157878
+    },
+    {
+      "step": 132,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8944918,
+      "pattern_slice_fidelity": 0.8480901994151702,
+      "poof_local": 0.15447007204847754,
+      "suction_local": 0.14815929097549455
+    },
+    {
+      "step": 133,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.89401295,
+      "pattern_slice_fidelity": 0.8476361896724426,
+      "poof_local": 0.15476547390870027,
+      "suction_local": 0.1478405885873637
+    },
+    {
+      "step": 134,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8935341,
+      "pattern_slice_fidelity": 0.8471821799297149,
+      "poof_local": 0.1549530489618323,
+      "suction_local": 0.14745411076006854
+    },
+    {
+      "step": 135,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.89305525,
+      "pattern_slice_fidelity": 0.8467281701869873,
+      "poof_local": 0.15501703607247963,
+      "suction_local": 0.14703233158470505
+    },
+    {
+      "step": 136,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8925763999999999,
+      "pattern_slice_fidelity": 0.8462741604442596,
+      "poof_local": 0.15495205867538195,
+      "suction_local": 0.14661069137478114
+    },
+    {
+      "step": 137,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.89209755,
+      "pattern_slice_fidelity": 0.8458201507015322,
+      "poof_local": 0.1547635765453659,
+      "suction_local": 0.14622461876712875
+    },
+    {
+      "step": 138,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8916187000000001,
+      "pattern_slice_fidelity": 0.8453661409588047,
+      "poof_local": 0.15446742703564514,
+      "suction_local": 0.14590655380395767
+    },
+    {
+      "step": 139,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.89113985,
+      "pattern_slice_fidelity": 0.8449121312160769,
+      "poof_local": 0.15408849433226482,
+      "suction_local": 0.1456832221338278
+    },
+    {
+      "step": 140,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8906609999999999,
+      "pattern_slice_fidelity": 0.8444581214733492,
+      "poof_local": 0.15365861854159013,
+      "suction_local": 0.14557338936886027
+    },
+    {
+      "step": 141,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.89018215,
+      "pattern_slice_fidelity": 0.8440041117306217,
+      "poof_local": 0.15321392030134054,
+      "suction_local": 0.14558628429001738
+    },
+    {
+      "step": 142,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8897033000000001,
+      "pattern_slice_fidelity": 0.8435501019878942,
+      "poof_local": 0.15279176571674705,
+      "suction_local": 0.14572082339181766
+    },
+    {
+      "step": 143,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8892244499999999,
+      "pattern_slice_fidelity": 0.8430960922451664,
+      "poof_local": 0.15242762664536133,
+      "suction_local": 0.14596570192470168
+    },
+    {
+      "step": 144,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8887455999999999,
+      "pattern_slice_fidelity": 0.8426420825024389,
+      "poof_local": 0.15215210014745612,
+      "suction_local": 0.14630034378514495
+    },
+    {
+      "step": 145,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.88826675,
+      "pattern_slice_fidelity": 0.8421880727597113,
+      "poof_local": 0.15198833754494548,
+      "suction_local": 0.1466966304382844
+    },
+    {
+      "step": 146,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8877879000000001,
+      "pattern_slice_fidelity": 0.8417340630169837,
+      "poof_local": 0.15195009911408972,
+      "suction_local": 0.14712126359903016
+    },
+    {
+      "step": 147,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8873090499999999,
+      "pattern_slice_fidelity": 0.841280053274256,
+      "poof_local": 0.1520405978678983,
+      "suction_local": 0.1475385631455988
+    },
+    {
+      "step": 148,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8868302,
+      "pattern_slice_fidelity": 0.8408260435315285,
+      "poof_local": 0.1522522295802871,
+      "suction_local": 0.14791346516867246
+    },
+    {
+      "step": 149,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.88635135,
+      "pattern_slice_fidelity": 0.8403720337888008,
+      "poof_local": 0.15256721173691362,
+      "suction_local": 0.14821446824284062
+    },
+    {
+      "step": 150,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8858725000000001,
+      "pattern_slice_fidelity": 0.8399180240460733,
+      "poof_local": 0.15295907772436435,
+      "suction_local": 0.14841628035764265
+    },
+    {
+      "step": 151,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.88539365,
+      "pattern_slice_fidelity": 0.8394640143033457,
+      "poof_local": 0.1533949007073199,
+      "suction_local": 0.14850194409783368
+    },
+    {
+      "step": 152,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8849148,
+      "pattern_slice_fidelity": 0.839010004560618,
+      "poof_local": 0.15383806033074124,
+      "suction_local": 0.14846426150299757
+    },
+    {
+      "step": 153,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.88443595,
+      "pattern_slice_fidelity": 0.8385559948178904,
+      "poof_local": 0.15425131977283754,
+      "suction_local": 0.1483063988816028
+    },
+    {
+      "step": 154,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8839571,
+      "pattern_slice_fidelity": 0.8381019850751629,
+      "poof_local": 0.15459995459711826,
+      "suction_local": 0.14804162075954397
+    },
+    {
+      "step": 155,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.88347825,
+      "pattern_slice_fidelity": 0.8376479753324352,
+      "poof_local": 0.15485467049937396,
+      "suction_local": 0.14769217531834325
+    },
+    {
+      "step": 156,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8829994,
+      "pattern_slice_fidelity": 0.8371939655897075,
+      "poof_local": 0.15499406478369493,
+      "suction_local": 0.14728742497490852
+    },
+    {
+      "step": 157,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.88252055,
+      "pattern_slice_fidelity": 0.8367399558469799,
+      "poof_local": 0.15500642474014636,
+      "suction_local": 0.14686137918229392
+    },
+    {
+      "step": 158,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8820417,
+      "pattern_slice_fidelity": 0.8362859461042524,
+      "poof_local": 0.15489071181405997,
+      "suction_local": 0.14644983675974163
+    },
+    {
+      "step": 159,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.88156285,
+      "pattern_slice_fidelity": 0.8358319363615248,
+      "poof_local": 0.15465664887137356,
+      "suction_local": 0.14608737786987938
+    },
+    {
+      "step": 160,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8810840000000001,
+      "pattern_slice_fidelity": 0.8353779266187973,
+      "poof_local": 0.1543239032274832,
+      "suction_local": 0.14580445839445938
+    },
+    {
+      "step": 161,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.88060515,
+      "pattern_slice_fidelity": 0.8349239168760695,
+      "poof_local": 0.1539204340862251,
+      "suction_local": 0.14562485085591056
+    },
+    {
+      "step": 162,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8801263,
+      "pattern_slice_fidelity": 0.8344699071333419,
+      "poof_local": 0.1534801432466737,
+      "suction_local": 0.1455636469132013
+    },
+    {
+      "step": 163,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.87964745,
+      "pattern_slice_fidelity": 0.8340158973906143,
+      "poof_local": 0.15304002647889012,
+      "suction_local": 0.14562598927380557
+    },
+    {
+      "step": 164,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8791686000000001,
+      "pattern_slice_fidelity": 0.8335618876478867,
+      "poof_local": 0.1526370649264239,
+      "suction_local": 0.14580663957382667
+    },
+    {
+      "step": 165,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8786897499999999,
+      "pattern_slice_fidelity": 0.833107877905159,
+      "poof_local": 0.1523051177378182,
+      "suction_local": 0.14609041853547652
+    },
+    {
+      "step": 166,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8782109,
+      "pattern_slice_fidelity": 0.8326538681624316,
+      "poof_local": 0.15207207702610134,
+      "suction_local": 0.14645348141734724
+    },
+    {
+      "step": 167,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.87773205,
+      "pattern_slice_fidelity": 0.8321998584197039,
+      "poof_local": 0.15195752421294076,
+      "suction_local": 0.14686532158680218
+    },
+    {
+      "step": 168,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8772532000000001,
+      "pattern_slice_fidelity": 0.8317458486769763,
+      "poof_local": 0.1519710846849102,
+      "suction_local": 0.1472913338628055
+    },
+    {
+      "step": 169,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8767743499999999,
+      "pattern_slice_fidelity": 0.8312918389342486,
+      "poof_local": 0.15211161901311893,
+      "suction_local": 0.1476957222423735
+    },
+    {
+      "step": 170,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8762955,
+      "pattern_slice_fidelity": 0.830837829191521,
+      "poof_local": 0.15236731869458423,
+      "suction_local": 0.14804450768673916
+    },
+    {
+      "step": 171,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.87581665,
+      "pattern_slice_fidelity": 0.8303838194487934,
+      "poof_local": 0.15271669837060578,
+      "suction_local": 0.14830838323572676
+    },
+    {
+      "step": 172,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8753378,
+      "pattern_slice_fidelity": 0.829929809706066,
+      "poof_local": 0.15313040115024465,
+      "suction_local": 0.14846517654719749
+    },
+    {
+      "step": 173,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.87485895,
+      "pattern_slice_fidelity": 0.8294757999633383,
+      "poof_local": 0.15357366534523856,
+      "suction_local": 0.14850171294483014
+    },
+    {
+      "step": 174,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8743801,
+      "pattern_slice_fidelity": 0.8290217902206106,
+      "poof_local": 0.15400924534709148,
+      "suction_local": 0.14841492243024118
+    },
+    {
+      "step": 175,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.87390125,
+      "pattern_slice_fidelity": 0.828567780477883,
+      "poof_local": 0.15440054121743488,
+      "suction_local": 0.1482120976419159
+    },
+    {
+      "step": 176,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8734224,
+      "pattern_slice_fidelity": 0.8281137707351555,
+      "poof_local": 0.15471467402546957,
+      "suction_local": 0.1479102810857562
+    },
+    {
+      "step": 177,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.87294355,
+      "pattern_slice_fidelity": 0.8276597609924278,
+      "poof_local": 0.1549252485249384,
+      "suction_local": 0.1475348331256609
+    },
+    {
+      "step": 178,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8724647,
+      "pattern_slice_fidelity": 0.8272057512497002,
+      "poof_local": 0.1550145710346123,
+      "suction_local": 0.1471173010598108
+    },
+    {
+      "step": 179,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.87198585,
+      "pattern_slice_fidelity": 0.8267517415069726,
+      "poof_local": 0.15497513616320824,
+      "suction_local": 0.14669276833513187
+    },
+    {
+      "step": 180,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.871507,
+      "pattern_slice_fidelity": 0.826297731764245,
+      "poof_local": 0.15481025745555568,
+      "suction_local": 0.14629690663419115
+    },
+    {
+      "step": 181,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.87102815,
+      "pattern_slice_fidelity": 0.8258437220215175,
+      "poof_local": 0.1545337889694917,
+      "suction_local": 0.14596297853514936
+    },
+    {
+      "step": 182,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8705493,
+      "pattern_slice_fidelity": 0.8253897122787898,
+      "poof_local": 0.1541689611781963,
+      "suction_local": 0.14571904259852922
+    },
+    {
+      "step": 183,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8700704499999999,
+      "pattern_slice_fidelity": 0.8249357025360621,
+      "poof_local": 0.1537464290121524,
+      "suction_local": 0.14558559572549273
+    },
+    {
+      "step": 184,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8695916,
+      "pattern_slice_fidelity": 0.8244816927933346,
+      "poof_local": 0.15330169605547794,
+      "suction_local": 0.14557385089025326
+    },
+    {
+      "step": 185,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.86911275,
+      "pattern_slice_fidelity": 0.8240276830506069,
+      "poof_local": 0.15287213133047775,
+      "suction_local": 0.1456847949614551
+    },
+    {
+      "step": 186,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8686339000000001,
+      "pattern_slice_fidelity": 0.8235736733078795,
+      "poof_local": 0.15249382933734326,
+      "suction_local": 0.14590910577979088
+    },
+    {
+      "step": 187,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8681550499999999,
+      "pattern_slice_fidelity": 0.8231196635651518,
+      "poof_local": 0.1521985771865353,
+      "suction_local": 0.14622793545947269
+    },
+    {
+      "step": 188,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8676762,
+      "pattern_slice_fidelity": 0.8226656538224242,
+      "poof_local": 0.15201118366283908,
+      "suction_local": 0.14661449409605862
+    },
+    {
+      "step": 189,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.86719735,
+      "pattern_slice_fidelity": 0.8222116440796965,
+      "poof_local": 0.1519473946485008,
+      "suction_local": 0.14703630080839097
+    },
+    {
+      "step": 190,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8667185000000001,
+      "pattern_slice_fidelity": 0.821757634336969,
+      "poof_local": 0.15201257006358893,
+      "suction_local": 0.14745791296914731
+    },
+    {
+      "step": 191,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8662396499999999,
+      "pattern_slice_fidelity": 0.8213036245942412,
+      "poof_local": 0.1522012334946657,
+      "suction_local": 0.14784390429834818
+    },
+    {
+      "step": 192,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8657608,
+      "pattern_slice_fidelity": 0.8208496148515136,
+      "poof_local": 0.152497532354559,
+      "suction_local": 0.14816184158326695
+    },
+    {
+      "step": 193,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.86528195,
+      "pattern_slice_fidelity": 0.8203956051087862,
+      "poof_local": 0.15287656990796275,
+      "suction_local": 0.14838500990360529
+    },
+    {
+      "step": 194,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8648031,
+      "pattern_slice_fidelity": 0.8199415953660586,
+      "poof_local": 0.15330649723840947,
+      "suction_local": 0.14849465737283155
+    },
+    {
+      "step": 195,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.86432425,
+      "pattern_slice_fidelity": 0.8194875856233309,
+      "poof_local": 0.15375118937751134,
+      "suction_local": 0.14848157077959792
+    },
+    {
+      "step": 196,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8638454,
+      "pattern_slice_fidelity": 0.8190335758806033,
+      "poof_local": 0.154173280732691,
+      "suction_local": 0.14834684973477677
+    },
+    {
+      "step": 197,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.86336655,
+      "pattern_slice_fidelity": 0.8185795661378756,
+      "poof_local": 0.1545373047592959,
+      "suction_local": 0.1481018142758271
+    },
+    {
+      "step": 198,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8628877,
+      "pattern_slice_fidelity": 0.8181255563951481,
+      "poof_local": 0.15481267406377788,
+      "suction_local": 0.14776705369210458
+    },
+    {
+      "step": 199,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.86240885,
+      "pattern_slice_fidelity": 0.8176715466524205,
+      "poof_local": 0.1549762505325189,
+      "suction_local": 0.1473706964942853
+    },
+    {
+      "step": 200,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.86193,
+      "pattern_slice_fidelity": 0.8172175369096929,
+      "poof_local": 0.1550142895292891,
+      "suction_local": 0.14694604689502924
+    },
+    {
+      "step": 201,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8614511499999999,
+      "pattern_slice_fidelity": 0.8167635271669652,
+      "poof_local": 0.15492359479867857,
+      "suction_local": 0.14652878639737796
+    },
+    {
+      "step": 202,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8609723,
+      "pattern_slice_fidelity": 0.8163095174242377,
+      "poof_local": 0.1547117870338701,
+      "suction_local": 0.14615397562953455
+    },
+    {
+      "step": 203,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.86049345,
+      "pattern_slice_fidelity": 0.81585550768151,
+      "poof_local": 0.15439666354214357,
+      "suction_local": 0.14585310834912002
+    },
+    {
+      "step": 204,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8600146,
+      "pattern_slice_fidelity": 0.8154014979387824,
+      "poof_local": 0.15400470281270104,
+      "suction_local": 0.14565146515642233
+    },
+    {
+      "step": 205,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8595357499999999,
+      "pattern_slice_fidelity": 0.8149474881960548,
+      "poof_local": 0.15356883964162918,
+      "suction_local": 0.14556598927287906
+    },
+    {
+      "step": 206,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8590569,
+      "pattern_slice_fidelity": 0.8144934784533272,
+      "poof_local": 0.1531256977608038,
+      "suction_local": 0.14560386287410976
+    },
+    {
+      "step": 207,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.85857805,
+      "pattern_slice_fidelity": 0.8140394687105996,
+      "poof_local": 0.1527125125011807,
+      "suction_local": 0.1457619036021895
+    },
+    {
+      "step": 208,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8580992000000001,
+      "pattern_slice_fidelity": 0.8135854589678722,
+      "poof_local": 0.15236400206601225,
+      "suction_local": 0.1460268319656751
+    },
+    {
+      "step": 209,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8576203499999999,
+      "pattern_slice_fidelity": 0.8131314492251444,
+      "poof_local": 0.15210945030761872,
+      "suction_local": 0.14637638715889503
+    },
+    {
+      "step": 210,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8571415,
+      "pattern_slice_fidelity": 0.8126774394824168,
+      "poof_local": 0.15197024612959806,
+      "suction_local": 0.14678119754294525
+    },
+    {
+      "step": 211,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.85666265,
+      "pattern_slice_fidelity": 0.8122234297396892,
+      "poof_local": 0.15195808626805962,
+      "suction_local": 0.1472072486198136
+    },
+    {
+      "step": 212,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8561838,
+      "pattern_slice_fidelity": 0.8117694199969616,
+      "poof_local": 0.15207399246454567,
+      "suction_local": 0.14761874112624443
+    },
+    {
+      "step": 213,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8557049499999999,
+      "pattern_slice_fidelity": 0.8113154102542339,
+      "poof_local": 0.15230822561342722,
+      "suction_local": 0.14798109909384982
+    },
+    {
+      "step": 214,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8552261,
+      "pattern_slice_fidelity": 0.8108614005115063,
+      "poof_local": 0.15264110409760417,
+      "suction_local": 0.14826387512094638
+    },
+    {
+      "step": 215,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.85474725,
+      "pattern_slice_fidelity": 0.8104073907687788,
+      "poof_local": 0.15304465755123503,
+      "suction_local": 0.14844330873845876
+    },
+    {
+      "step": 216,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8542684,
+      "pattern_slice_fidelity": 0.8099533810260512,
+      "poof_local": 0.15348497709083458,
+      "suction_local": 0.14850432290126497
+    },
+    {
+      "step": 217,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.85378955,
+      "pattern_slice_fidelity": 0.8094993712833235,
+      "poof_local": 0.15392506453479854,
+      "suction_local": 0.14844179084829054
+    },
+    {
+      "step": 218,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8533107,
+      "pattern_slice_fidelity": 0.8090453615405959,
+      "poof_local": 0.15432794120353333,
+      "suction_local": 0.14826096688247684
+    },
+    {
+      "step": 219,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.85283185,
+      "pattern_slice_fidelity": 0.8085913517978682,
+      "poof_local": 0.15465975508091553,
+      "suction_local": 0.1479770448740111
+    },
+    {
+      "step": 220,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.852353,
+      "pattern_slice_fidelity": 0.8081373420551408,
+      "poof_local": 0.1548926252554929,
+      "suction_local": 0.14761388158391797
+    },
+    {
+      "step": 221,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.85187415,
+      "pattern_slice_fidelity": 0.8076833323124132,
+      "poof_local": 0.15500698463510984,
+      "suction_local": 0.14720199208171067
+    },
+    {
+      "step": 222,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8513953,
+      "pattern_slice_fidelity": 0.8072293225696855,
+      "poof_local": 0.15499322408659214,
+      "suction_local": 0.14677598569364683
+    },
+    {
+      "step": 223,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8509164499999999,
+      "pattern_slice_fidelity": 0.8067753128269578,
+      "poof_local": 0.1548524998504134,
+      "suction_local": 0.14637165792797158
+    },
+    {
+      "step": 224,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8504376,
+      "pattern_slice_fidelity": 0.8063213030842303,
+      "poof_local": 0.15459663638671692,
+      "suction_local": 0.14602298273032388
+    },
+    {
+      "step": 225,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.84995875,
+      "pattern_slice_fidelity": 0.8058672933415026,
+      "poof_local": 0.15424713281612853,
+      "suction_local": 0.14575925779731577
+    },
+    {
+      "step": 226,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8494799,
+      "pattern_slice_fidelity": 0.805413283598775,
+      "poof_local": 0.15383335643992166,
+      "suction_local": 0.1456026428154647
+    },
+    {
+      "step": 227,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8490010499999999,
+      "pattern_slice_fidelity": 0.8049592738560475,
+      "poof_local": 0.15339007513036576,
+      "suction_local": 0.14556629747681105
+    },
+    {
+      "step": 228,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8485222,
+      "pattern_slice_fidelity": 0.8045052641133199,
+      "poof_local": 0.15295453593402086,
+      "suction_local": 0.14565327572586337
+    },
+    {
+      "step": 229,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.84804335,
+      "pattern_slice_fidelity": 0.8040512543705922,
+      "poof_local": 0.1525633353605419,
+      "suction_local": 0.14585626914960648
+    },
+    {
+      "step": 230,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8475645,
+      "pattern_slice_fidelity": 0.8035972446278647,
+      "poof_local": 0.15224934433333706,
+      "suction_local": 0.14615822107242027
+    },
+    {
+      "step": 231,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8470856499999999,
+      "pattern_slice_fidelity": 0.803143234885137,
+      "poof_local": 0.1520389461854223,
+      "suction_local": 0.1465337597561206
+    },
+    {
+      "step": 232,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8466068,
+      "pattern_slice_fidelity": 0.8026892251424094,
+      "poof_local": 0.15194981977995425,
+      "suction_local": 0.14695133027940727
+    },
+    {
+      "step": 233,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.84612795,
+      "pattern_slice_fidelity": 0.8022352153996818,
+      "poof_local": 0.1519894540304121,
+      "suction_local": 0.14737584596393927
+    },
+    {
+      "step": 234,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8456491,
+      "pattern_slice_fidelity": 0.8017812056569543,
+      "poof_local": 0.15215451863899093,
+      "suction_local": 0.14777163655896067
+    },
+    {
+      "step": 235,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8451702499999999,
+      "pattern_slice_fidelity": 0.8013271959142265,
+      "poof_local": 0.15243114392738796,
+      "suction_local": 0.14810544546103926
+    },
+    {
+      "step": 236,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8446914,
+      "pattern_slice_fidelity": 0.800873186171499,
+      "poof_local": 0.15279608624698893,
+      "suction_local": 0.14834922412526727
+    },
+    {
+      "step": 237,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.84421255,
+      "pattern_slice_fidelity": 0.8004191764287714,
+      "poof_local": 0.15321868104398356,
+      "suction_local": 0.14848248886541396
+    },
+    {
+      "step": 238,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8437337,
+      "pattern_slice_fidelity": 0.7999651666860438,
+      "poof_local": 0.15366341947164097,
+      "suction_local": 0.1484940420111196
+    },
+    {
+      "step": 239,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.84325485,
+      "pattern_slice_fidelity": 0.7995111569433162,
+      "poof_local": 0.15409293204795296,
+      "suction_local": 0.14838291280059757
+    },
+    {
+      "step": 240,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.842776,
+      "pattern_slice_fidelity": 0.7990571472005885,
+      "poof_local": 0.15447112865456086,
+      "suction_local": 0.14815843894962627
+    },
+    {
+      "step": 241,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8422971499999999,
+      "pattern_slice_fidelity": 0.7986031374578609,
+      "poof_local": 0.15476623103618642,
+      "suction_local": 0.14783948204293398
+    },
+    {
+      "step": 242,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8418183,
+      "pattern_slice_fidelity": 0.7981491277151335,
+      "poof_local": 0.15495344299251282,
+      "suction_local": 0.14745284267530814
+    },
+    {
+      "step": 243,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8413394500000001,
+      "pattern_slice_fidelity": 0.7976951179724059,
+      "poof_local": 0.15501703389762927,
+      "suction_local": 0.14703100851139295
+    },
+    {
+      "step": 244,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8408606,
+      "pattern_slice_fidelity": 0.7972411082296781,
+      "poof_local": 0.15495166047774414,
+      "suction_local": 0.14660942448515082
+    },
+    {
+      "step": 245,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8403817499999999,
+      "pattern_slice_fidelity": 0.7967870984869505,
+      "poof_local": 0.15476281578379766,
+      "suction_local": 0.14622351451253748
+    },
+    {
+      "step": 246,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8399029,
+      "pattern_slice_fidelity": 0.7963330887442229,
+      "poof_local": 0.15446636763371135,
+      "suction_local": 0.1459057049702308
+    },
+    {
+      "step": 247,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8394240500000001,
+      "pattern_slice_fidelity": 0.7958790790014953,
+      "poof_local": 0.15408722530701252,
+      "suction_local": 0.14568270004485984
+    },
+    {
+      "step": 248,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8389452,
+      "pattern_slice_fidelity": 0.7954250692587678,
+      "poof_local": 0.1536572465238237,
+      "suction_local": 0.1455732378935707
+    },
+    {
+      "step": 249,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8384663499999999,
+      "pattern_slice_fidelity": 0.7949710595160401,
+      "poof_local": 0.15321256057588828,
+      "suction_local": 0.14558651615623178
+    },
+    {
+      "step": 250,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8379875,
+      "pattern_slice_fidelity": 0.7945170497733125,
+      "poof_local": 0.15279053253556615,
+      "suction_local": 0.14572141911680234
+    },
+    {
+      "step": 251,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8375086500000001,
+      "pattern_slice_fidelity": 0.794063040030585,
+      "poof_local": 0.15242662362743123,
+      "suction_local": 0.14596661145221523
+    },
+    {
+      "step": 252,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8370298,
+      "pattern_slice_fidelity": 0.7936090302878573,
+      "poof_local": 0.15215141157211529,
+      "suction_local": 0.1463014906914517
+    },
+    {
+      "step": 253,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8365509499999999,
+      "pattern_slice_fidelity": 0.7931550205451295,
+      "poof_local": 0.15198802127025654,
+      "suction_local": 0.1466979183537164
+    },
+    {
+      "step": 254,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8360721,
+      "pattern_slice_fidelity": 0.7927010108024021,
+      "poof_local": 0.1519501817152721,
+      "suction_local": 0.14712258430552128
+    },
+    {
+      "step": 255,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8355932500000001,
+      "pattern_slice_fidelity": 0.7922470010596746,
+      "poof_local": 0.15204107240432535,
+      "suction_local": 0.14753980566978944
+    },
+    {
+      "step": 256,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8351144,
+      "pattern_slice_fidelity": 0.7917929913169469,
+      "poof_local": 0.1522530561786774,
+      "suction_local": 0.1479145251065299
+    },
+    {
+      "step": 257,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8346355499999999,
+      "pattern_slice_fidelity": 0.7913389815742192,
+      "poof_local": 0.15256832094171366,
+      "suction_local": 0.14821525653228643
+    },
+    {
+      "step": 258,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8341567,
+      "pattern_slice_fidelity": 0.7908849718314916,
+      "poof_local": 0.15296037633380366,
+      "suction_local": 0.14841673076206127
+    },
+    {
+      "step": 259,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.83367785,
+      "pattern_slice_fidelity": 0.7904309620887641,
+      "poof_local": 0.15339627960476038,
+      "suction_local": 0.14850201877165392
+    },
+    {
+      "step": 260,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.833199,
+      "pattern_slice_fidelity": 0.7899769523460365,
+      "poof_local": 0.15383940365328488,
+      "suction_local": 0.14846395417169536
+    },
+    {
+      "step": 261,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.83272015,
+      "pattern_slice_fidelity": 0.7895229426033088,
+      "poof_local": 0.15425251464679388,
+      "suction_local": 0.14830573536892275
+    },
+    {
+      "step": 262,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8322413,
+      "pattern_slice_fidelity": 0.7890689328605812,
+      "poof_local": 0.15460090062230136,
+      "suction_local": 0.1480406568176397
+    },
+    {
+      "step": 263,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.83176245,
+      "pattern_slice_fidelity": 0.7886149231178537,
+      "poof_local": 0.15485528818530392,
+      "suction_local": 0.14769099194316074
+    },
+    {
+      "step": 264,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8312836,
+      "pattern_slice_fidelity": 0.7881609133751261,
+      "poof_local": 0.1549943022288453,
+      "suction_local": 0.14728612160044052
+    },
+    {
+      "step": 265,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.83080475,
+      "pattern_slice_fidelity": 0.7877069036323984,
+      "poof_local": 0.15500626199300924,
+      "suction_local": 0.1468600653255637
+    },
+    {
+      "step": 266,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8303259,
+      "pattern_slice_fidelity": 0.7872528938896708,
+      "poof_local": 0.15489016254958635,
+      "suction_local": 0.14644862281855248
+    },
+    {
+      "step": 267,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.82984705,
+      "pattern_slice_fidelity": 0.7867988841469432,
+      "poof_local": 0.15465575924192532,
+      "suction_local": 0.14608636584655577
+    },
+    {
+      "step": 268,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8293682,
+      "pattern_slice_fidelity": 0.7863448744042155,
+      "poof_local": 0.15432274798484613,
+      "suction_local": 0.14580373332502486
+    },
+    {
+      "step": 269,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.82888935,
+      "pattern_slice_fidelity": 0.7858908646614879,
+      "poof_local": 0.1539191103005336,
+      "suction_local": 0.14562447366487152
+    },
+    {
+      "step": 270,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8284104999999999,
+      "pattern_slice_fidelity": 0.7854368549187604,
+      "poof_local": 0.15347876215001946,
+      "suction_local": 0.14556364929431942
+    },
+    {
+      "step": 271,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.82793165,
+      "pattern_slice_fidelity": 0.7849828451760328,
+      "poof_local": 0.15303870411896178,
+      "suction_local": 0.14562637102700565
+    },
+    {
+      "step": 272,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8274528,
+      "pattern_slice_fidelity": 0.7845288354333051,
+      "poof_local": 0.1526359124155124,
+      "suction_local": 0.14580736862200794
+    },
+    {
+      "step": 273,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.82697395,
+      "pattern_slice_fidelity": 0.7840748256905775,
+      "poof_local": 0.15230423191652256,
+      "suction_local": 0.14609143361981541
+    },
+    {
+      "step": 274,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8264951,
+      "pattern_slice_fidelity": 0.7836208159478499,
+      "poof_local": 0.15207153232622447,
+      "suction_local": 0.14645469724461607
+    },
+    {
+      "step": 275,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.82601625,
+      "pattern_slice_fidelity": 0.7831668062051222,
+      "poof_local": 0.15195736640330085,
+      "suction_local": 0.1468666359961972
+    },
+    {
+      "step": 276,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8255374,
+      "pattern_slice_fidelity": 0.7827127964623948,
+      "poof_local": 0.15197132702558133,
+      "suction_local": 0.1472926364100854
+    },
+    {
+      "step": 277,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.82505855,
+      "pattern_slice_fidelity": 0.7822587867196671,
+      "poof_local": 0.15211224114124336,
+      "suction_local": 0.14769690348002007
+    },
+    {
+      "step": 278,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8245797,
+      "pattern_slice_fidelity": 0.7818047769769395,
+      "poof_local": 0.15236826833537676,
+      "suction_local": 0.1480454683603677
+    },
+    {
+      "step": 279,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.82410085,
+      "pattern_slice_fidelity": 0.7813507672342119,
+      "poof_local": 0.15271789572978223,
+      "suction_local": 0.14830904262401068
+    },
+    {
+      "step": 280,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.823622,
+      "pattern_slice_fidelity": 0.7808967574914842,
+      "poof_local": 0.15313174561879656,
+      "suction_local": 0.14846547924453862
+    },
+    {
+      "step": 281,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8231431499999999,
+      "pattern_slice_fidelity": 0.7804427477487565,
+      "poof_local": 0.15357504395318133,
+      "suction_local": 0.14850163351685594
+    },
+    {
+      "step": 282,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8226643,
+      "pattern_slice_fidelity": 0.7799887380060291,
+      "poof_local": 0.15401054225585228,
+      "suction_local": 0.14841446755094717
+    },
+    {
+      "step": 283,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.82218545,
+      "pattern_slice_fidelity": 0.7795347282633015,
+      "poof_local": 0.15440164745327634,
+      "suction_local": 0.148211305532878
+    },
+    {
+      "step": 284,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8217066,
+      "pattern_slice_fidelity": 0.7790807185205738,
+      "poof_local": 0.15471549663609033,
+      "suction_local": 0.14790921830453413
+    },
+    {
+      "step": 285,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8212277499999999,
+      "pattern_slice_fidelity": 0.7786267087778462,
+      "poof_local": 0.15492571838986025,
+      "suction_local": 0.14753358897324878
+    },
+    {
+      "step": 286,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8207489,
+      "pattern_slice_fidelity": 0.7781726990351187,
+      "poof_local": 0.15501464867308062,
+      "suction_local": 0.1471159800770541
+    },
+    {
+      "step": 287,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8202700500000001,
+      "pattern_slice_fidelity": 0.7777186892923911,
+      "poof_local": 0.1549748150515921,
+      "suction_local": 0.1466914815186035
+    },
+    {
+      "step": 288,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8197911999999999,
+      "pattern_slice_fidelity": 0.7772646795496634,
+      "poof_local": 0.154809564575501,
+      "suction_local": 0.14629576210962103
+    },
+    {
+      "step": 289,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.81931235,
+      "pattern_slice_fidelity": 0.7768106698069358,
+      "poof_local": 0.1545327825407679,
+      "suction_local": 0.14596207247207826
+    },
+    {
+      "step": 290,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8188335,
+      "pattern_slice_fidelity": 0.7763566600642082,
+      "poof_local": 0.15416772576673649,
+      "suction_local": 0.14571845112959042
+    },
+    {
+      "step": 291,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8183546500000001,
+      "pattern_slice_fidelity": 0.7759026503214808,
+      "poof_local": 0.15374506842433672,
+      "suction_local": 0.14558536854931017
+    },
+    {
+      "step": 292,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8178757999999999,
+      "pattern_slice_fidelity": 0.775448640578753,
+      "poof_local": 0.1533003246157244,
+      "suction_local": 0.14557400709547713
+    },
+    {
+      "step": 293,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.81739695,
+      "pattern_slice_fidelity": 0.7749946308360254,
+      "poof_local": 0.15287086427504662,
+      "suction_local": 0.14568532142282353
+    },
+    {
+      "step": 294,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8169181,
+      "pattern_slice_fidelity": 0.7745406210932978,
+      "poof_local": 0.15249277313152332,
+      "suction_local": 0.14590995826099018
+    },
+    {
+      "step": 295,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8164392500000001,
+      "pattern_slice_fidelity": 0.7740866113505702,
+      "poof_local": 0.15219782057881764,
+      "suction_local": 0.1462290423301267
+    },
+    {
+      "step": 296,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8159604,
+      "pattern_slice_fidelity": 0.7736326016078425,
+      "poof_local": 0.15201079022775818,
+      "suction_local": 0.14661576235052537
+    },
+    {
+      "step": 297,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.81548155,
+      "pattern_slice_fidelity": 0.7731785918651151,
+      "poof_local": 0.1519473974447362,
+      "suction_local": 0.1470376238806318
+    },
+    {
+      "step": 298,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8150027,
+      "pattern_slice_fidelity": 0.7727245821223874,
+      "poof_local": 0.15201296885618487,
+      "suction_local": 0.14745917968701866
+    },
+    {
+      "step": 299,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.81452385,
+      "pattern_slice_fidelity": 0.7722705723796598,
+      "poof_local": 0.15220199477477334,
+      "suction_local": 0.14784500822492502
+    },
+    {
+      "step": 300,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.814045,
+      "pattern_slice_fidelity": 0.7718165626369322,
+      "poof_local": 0.15249859215504283,
+      "suction_local": 0.1481626899602856
+    },
+    {
+      "step": 301,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.81356615,
+      "pattern_slice_fidelity": 0.7713625528942045,
+      "poof_local": 0.15287783917828732,
+      "suction_local": 0.14838553144554648
+    },
+    {
+      "step": 302,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8130873,
+      "pattern_slice_fidelity": 0.7709085431514768,
+      "poof_local": 0.15330786932717783,
+      "suction_local": 0.14849480825674008
+    },
+    {
+      "step": 303,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.81260845,
+      "pattern_slice_fidelity": 0.7704545334087494,
+      "poof_local": 0.15375254899392934,
+      "suction_local": 0.14848133832733953
+    },
+    {
+      "step": 304,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8121296,
+      "pattern_slice_fidelity": 0.7700005236660218,
+      "poof_local": 0.15417451363396306,
+      "suction_local": 0.1483462534783279
+    },
+    {
+      "step": 305,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.81165075,
+      "pattern_slice_fidelity": 0.7695465139232941,
+      "poof_local": 0.1545383073499622,
+      "suction_local": 0.14810090431608583
+    },
+    {
+      "step": 306,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8111719,
+      "pattern_slice_fidelity": 0.7690925041805665,
+      "poof_local": 0.1548133621004011,
+      "suction_local": 0.14776590648912488
+    },
+    {
+      "step": 307,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.81069305,
+      "pattern_slice_fidelity": 0.7686384944378389,
+      "poof_local": 0.15497656620230255,
+      "suction_local": 0.1473694084426633
+    },
+    {
+      "step": 308,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8102142,
+      "pattern_slice_fidelity": 0.7681844846951112,
+      "poof_local": 0.15501420630784138,
+      "suction_local": 0.14694472622427446
+    },
+    {
+      "step": 309,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8097353500000001,
+      "pattern_slice_fidelity": 0.7677304749523838,
+      "poof_local": 0.15492311967874436,
+      "suction_local": 0.14652754407784727
+    },
+    {
+      "step": 310,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8092564999999999,
+      "pattern_slice_fidelity": 0.767276465209656,
+      "poof_local": 0.15471095993776052,
+      "suction_local": 0.14615291604806402
+    },
+    {
+      "step": 311,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.80877765,
+      "pattern_slice_fidelity": 0.7668224554669285,
+      "poof_local": 0.15439555396723337,
+      "suction_local": 0.14585232053784233
+    },
+    {
+      "step": 312,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8082988,
+      "pattern_slice_fidelity": 0.7663684457242009,
+      "poof_local": 0.15400340399185936,
+      "suction_local": 0.14565101531177463
+    },
+    {
+      "step": 313,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.8078199500000001,
+      "pattern_slice_fidelity": 0.7659144359814734,
+      "poof_local": 0.15356746070925742,
+      "suction_local": 0.14556591519339734
+    },
+    {
+      "step": 314,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8073410999999999,
+      "pattern_slice_fidelity": 0.7654604262387456,
+      "poof_local": 0.15312435458273513,
+      "suction_local": 0.14560417078437837
+    },
+    {
+      "step": 315,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.80686225,
+      "pattern_slice_fidelity": 0.7650064164960181,
+      "poof_local": 0.152711317938966,
+      "suction_local": 0.14576256762981576
+    },
+    {
+      "step": 316,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.8063834,
+      "pattern_slice_fidelity": 0.7645524067532904,
+      "poof_local": 0.15236305649364304,
+      "suction_local": 0.1460277963152366
+    },
+    {
+      "step": 317,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.80590455,
+      "pattern_slice_fidelity": 0.7640983970105628,
+      "poof_local": 0.15210883317752694,
+      "suction_local": 0.14637757080019212
+    },
+    {
+      "step": 318,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.8054257,
+      "pattern_slice_fidelity": 0.7636443872678353,
+      "poof_local": 0.15197000929660537,
+      "suction_local": 0.14678250101962467
+    },
+    {
+      "step": 319,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.80494685,
+      "pattern_slice_fidelity": 0.7631903775251077,
+      "poof_local": 0.15195824963223695,
+      "suction_local": 0.1472085624062637
+    },
+    {
+      "step": 320,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.804468,
+      "pattern_slice_fidelity": 0.76273636778238,
+      "poof_local": 0.15207454229909476,
+      "suction_local": 0.1476199548305673
+    },
+    {
+      "step": 321,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.80398915,
+      "pattern_slice_fidelity": 0.7622823580396524,
+      "poof_local": 0.15230911571808511,
+      "suction_local": 0.14798211073362383
+    },
+    {
+      "step": 322,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.8035103,
+      "pattern_slice_fidelity": 0.7618283482969248,
+      "poof_local": 0.1526422596806553,
+      "suction_local": 0.14826459969237601
+    },
+    {
+      "step": 323,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.80303145,
+      "pattern_slice_fidelity": 0.7613743385541971,
+      "poof_local": 0.15304598151394144,
+      "suction_local": 0.1484436853588829
+    },
+    {
+      "step": 324,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.8025526,
+      "pattern_slice_fidelity": 0.7609203288114695,
+      "poof_local": 0.15348635818623077,
+      "suction_local": 0.1485043199248682
+    },
+    {
+      "step": 325,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.80207375,
+      "pattern_slice_fidelity": 0.7604663190687421,
+      "poof_local": 0.1539263867153015,
+      "suction_local": 0.1484414085251669
+    },
+    {
+      "step": 326,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.8015949,
+      "pattern_slice_fidelity": 0.7600123093260144,
+      "poof_local": 0.15432909337192863,
+      "suction_local": 0.14826023733761526
+    },
+    {
+      "step": 327,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.80111605,
+      "pattern_slice_fidelity": 0.7595582995832867,
+      "poof_local": 0.15466064042538416,
+      "suction_local": 0.14797602940796917
+    },
+    {
+      "step": 328,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.8006371999999999,
+      "pattern_slice_fidelity": 0.7591042898405591,
+      "poof_local": 0.15489316938429779,
+      "suction_local": 0.14761266552199617
+    },
+    {
+      "step": 329,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.80015835,
+      "pattern_slice_fidelity": 0.7586502800978315,
+      "poof_local": 0.15500714182741757,
+      "suction_local": 0.14720067760442973
+    },
+    {
+      "step": 330,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.7996795,
+      "pattern_slice_fidelity": 0.7581962703551038,
+      "poof_local": 0.15499298113420035,
+      "suction_local": 0.14677468325095222
+    },
+    {
+      "step": 331,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.7992006500000001,
+      "pattern_slice_fidelity": 0.7577422606123764,
+      "poof_local": 0.1548518771675802,
+      "suction_local": 0.1463704769585936
+    },
+    {
+      "step": 332,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.7987217999999999,
+      "pattern_slice_fidelity": 0.7572882508696487,
+      "poof_local": 0.15459568629483728,
+      "suction_local": 0.14602202246610577
+    },
+    {
+      "step": 333,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.79824295,
+      "pattern_slice_fidelity": 0.7568342411269211,
+      "poof_local": 0.15424593514738963,
+      "suction_local": 0.1457585989251831
+    },
+    {
+      "step": 334,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.7977641,
+      "pattern_slice_fidelity": 0.7563802313841935,
+      "poof_local": 0.15383201182934314,
+      "suction_local": 0.14560234069764566
+    },
+    {
+      "step": 335,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.7972852500000001,
+      "pattern_slice_fidelity": 0.755926221641466,
+      "poof_local": 0.15338869655986612,
+      "suction_local": 0.14556637749898335
+    },
+    {
+      "step": 336,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.7968063999999999,
+      "pattern_slice_fidelity": 0.7554722118987381,
+      "poof_local": 0.15295323923902673,
+      "suction_local": 0.14565373116410363
+    },
+    {
+      "step": 337,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.79632755,
+      "pattern_slice_fidelity": 0.7550182021560107,
+      "poof_local": 0.1525622294968287,
+      "suction_local": 0.14585706173537286
+    },
+    {
+      "step": 338,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.7958487,
+      "pattern_slice_fidelity": 0.7545641924132831,
+      "poof_local": 0.15224852222193788,
+      "suction_local": 0.14615928420809557
+    },
+    {
+      "step": 339,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.79536985,
+      "pattern_slice_fidelity": 0.7541101826705555,
+      "poof_local": 0.15203847690486785,
+      "suction_local": 0.14653500411092746
+    },
+    {
+      "step": 340,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.7948909999999999,
+      "pattern_slice_fidelity": 0.7536561729278278,
+      "poof_local": 0.15194974276189724,
+      "suction_local": 0.14695265129549395
+    },
+    {
+      "step": 341,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.79441215,
+      "pattern_slice_fidelity": 0.7532021631851002,
+      "poof_local": 0.15198977574635292,
+      "suction_local": 0.14737713264193217
+    },
+    {
+      "step": 342,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.7939333,
+      "pattern_slice_fidelity": 0.7527481534423726,
+      "poof_local": 0.1521552120565048,
+      "suction_local": 0.14777278078477044
+    },
+    {
+      "step": 343,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.79345445,
+      "pattern_slice_fidelity": 0.7522941436996451,
+      "poof_local": 0.1524321507815451,
+      "suction_local": 0.1481063510902288
+    },
+    {
+      "step": 344,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.7929756,
+      "pattern_slice_fidelity": 0.7518401339569174,
+      "poof_local": 0.15279732193610887,
+      "suction_local": 0.14834981506166042
+    },
+    {
+      "step": 345,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.79249675,
+      "pattern_slice_fidelity": 0.7513861242141898,
+      "poof_local": 0.1532200417383555,
+      "suction_local": 0.14848271545513433
+    },
+    {
+      "step": 346,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.7920178999999999,
+      "pattern_slice_fidelity": 0.7509321144714622,
+      "poof_local": 0.15366479083789342,
+      "suction_local": 0.14849388521479495
+    },
+    {
+      "step": 347,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.79153905,
+      "pattern_slice_fidelity": 0.7504781047287347,
+      "poof_local": 0.15409419885600173,
+      "suction_local": 0.14838238579315743
+    },
+    {
+      "step": 348,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.7910602,
+      "pattern_slice_fidelity": 0.750024094986007,
+      "poof_local": 0.15447218445990363,
+      "suction_local": 0.14815758601326848
+    },
+    {
+      "step": 349,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.79058135,
+      "pattern_slice_fidelity": 0.7495700852432794,
+      "poof_local": 0.15476698712398243,
+      "suction_local": 0.14783837484627974
+    },
+    {
+      "step": 350,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.7901024999999999,
+      "pattern_slice_fidelity": 0.7491160755005517,
+      "poof_local": 0.15495383583191447,
+      "suction_local": 0.14745157425139177
+    },
+    {
+      "step": 351,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.78962365,
+      "pattern_slice_fidelity": 0.7486620657578241,
+      "poof_local": 0.15501703048000937,
+      "suction_local": 0.14702968544049128
+    },
+    {
+      "step": 352,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.7891448000000001,
+      "pattern_slice_fidelity": 0.7482080560150967,
+      "poof_local": 0.1549512610902708,
+      "suction_local": 0.14660815793929485
+    },
+    {
+      "step": 353,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.7886659500000001,
+      "pattern_slice_fidelity": 0.7477540462723691,
+      "poof_local": 0.1547620539853047,
+      "suction_local": 0.14622241091419858
+    },
+    {
+      "step": 354,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.7881870999999999,
+      "pattern_slice_fidelity": 0.7473000365296413,
+      "poof_local": 0.15446530743489206,
+      "suction_local": 0.1459048570500922
+    },
+    {
+      "step": 355,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.78770825,
+      "pattern_slice_fidelity": 0.7468460267869138,
+      "poof_local": 0.1540859557918727,
+      "suction_local": 0.14568217905005107
+    },
+    {
+      "step": 356,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.7872294000000001,
+      "pattern_slice_fidelity": 0.7463920170441862,
+      "poof_local": 0.15365587436433115,
+      "suction_local": 0.14557308760107376
+    },
+    {
+      "step": 357,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.78675055,
+      "pattern_slice_fidelity": 0.7459380073014585,
+      "poof_local": 0.1532112010687798,
+      "suction_local": 0.14558674919448708
+    },
+    {
+      "step": 358,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.7862716999999999,
+      "pattern_slice_fidelity": 0.7454839975587308,
+      "poof_local": 0.1527892999144525,
+      "suction_local": 0.1457220159045947
+    },
+    {
+      "step": 359,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.78579285,
+      "pattern_slice_fidelity": 0.7450299878160034,
+      "poof_local": 0.15242562146423164,
+      "suction_local": 0.145967521844
+    },
+    {
+      "step": 360,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.7853140000000001,
+      "pattern_slice_fidelity": 0.7445759780732758,
+      "poof_local": 0.15215072407434896,
+      "suction_local": 0.1463026381908721
+    },
+    {
+      "step": 361,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.78483515,
+      "pattern_slice_fidelity": 0.7441219683305482,
+      "poof_local": 0.1519877062054421,
+      "suction_local": 0.1466992065412677
+    },
+    {
+      "step": 362,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.7843562999999999,
+      "pattern_slice_fidelity": 0.7436679585878204,
+      "poof_local": 0.15195026555696833,
+      "suction_local": 0.14712390494027233
+    },
+    {
+      "step": 363,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.78387745,
+      "pattern_slice_fidelity": 0.7432139488450928,
+      "poof_local": 0.15204154810767045,
+      "suction_local": 0.14754104778440869
+    },
+    {
+      "step": 364,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.7833986000000001,
+      "pattern_slice_fidelity": 0.7427599391023654,
+      "poof_local": 0.1522538837723388,
+      "suction_local": 0.14791558433139904
+    },
+    {
+      "step": 365,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.78291975,
+      "pattern_slice_fidelity": 0.7423059293596377,
+      "poof_local": 0.15256943088650943,
+      "suction_local": 0.14821604386523649
+    },
+    {
+      "step": 366,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.7824409,
+      "pattern_slice_fidelity": 0.7418519196169101,
+      "poof_local": 0.15296167536578473,
+      "suction_local": 0.14841718004684698
+    },
+    {
+      "step": 367,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.78196205,
+      "pattern_slice_fidelity": 0.7413979098741825,
+      "poof_local": 0.1533976585717842,
+      "suction_local": 0.14850209225678213
+    },
+    {
+      "step": 368,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.7814832,
+      "pattern_slice_fidelity": 0.740943900131455,
+      "poof_local": 0.1538407466866066,
+      "suction_local": 0.14846364568252268
+    },
+    {
+      "step": 369,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.78100435,
+      "pattern_slice_fidelity": 0.7404898903887273,
+      "poof_local": 0.15425370889702514,
+      "suction_local": 0.1483050708264847
+    },
+    {
+      "step": 370,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.7805255,
+      "pattern_slice_fidelity": 0.7400358806459997,
+      "poof_local": 0.15460184574166522,
+      "suction_local": 0.14803969206061618
+    },
+    {
+      "step": 371,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.78004665,
+      "pattern_slice_fidelity": 0.739581870903272,
+      "poof_local": 0.15485590475943262,
+      "suction_local": 0.14768980803598872
+    },
+    {
+      "step": 372,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.7795678,
+      "pattern_slice_fidelity": 0.7391278611605444,
+      "poof_local": 0.15499453844963235,
+      "suction_local": 0.1472848180218135
+    },
+    {
+      "step": 373,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.77908895,
+      "pattern_slice_fidelity": 0.7386738514178169,
+      "poof_local": 0.15500609801182474,
+      "suction_local": 0.1468587516096596
+    },
+    {
+      "step": 374,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.7786101,
+      "pattern_slice_fidelity": 0.7382198416750893,
+      "poof_local": 0.15488961214507307,
+      "suction_local": 0.14644740935134154
+    },
+    {
+      "step": 375,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.7781312499999999,
+      "pattern_slice_fidelity": 0.7377658319323616,
+      "poof_local": 0.1546548686622379,
+      "suction_local": 0.14608535459053618
+    },
+    {
+      "step": 376,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.7776524,
+      "pattern_slice_fidelity": 0.737311822189634,
+      "poof_local": 0.15432159206161486,
+      "suction_local": 0.14580300925174677
+    },
+    {
+      "step": 377,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.77717355,
+      "pattern_slice_fidelity": 0.7368578124469064,
+      "poof_local": 0.1539177861610803,
+      "suction_local": 0.1456240976151386
+    },
+    {
+      "step": 378,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.7766947,
+      "pattern_slice_fidelity": 0.7364038027041787,
+      "poof_local": 0.15347738105616093,
+      "suction_local": 0.1455636528659942
+    },
+    {
+      "step": 379,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.77621585,
+      "pattern_slice_fidelity": 0.7359497929614511,
+      "poof_local": 0.1530373821181518,
+      "suction_local": 0.1456267539199755
+    },
+    {
+      "step": 380,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.775737,
+      "pattern_slice_fidelity": 0.7354957832187237,
+      "poof_local": 0.15263476058986664,
+      "suction_local": 0.1458080986634021
+    },
+    {
+      "step": 381,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.77525815,
+      "pattern_slice_fidelity": 0.735041773475996,
+      "poof_local": 0.15230334704906018,
+      "suction_local": 0.1460924494673548
+    },
+    {
+      "step": 382,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.7747793,
+      "pattern_slice_fidelity": 0.7345877637332683,
+      "poof_local": 0.1520709887686017,
+      "suction_local": 0.14645591354094462
+    },
+    {
+      "step": 383,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.77430045,
+      "pattern_slice_fidelity": 0.7341337539905408,
+      "poof_local": 0.1519572098283572,
+      "suction_local": 0.146867950541098
+    },
+    {
+      "step": 384,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.7738216,
+      "pattern_slice_fidelity": 0.7336797442478131,
+      "poof_local": 0.15197157058964458,
+      "suction_local": 0.14729393874793106
+    },
+    {
+      "step": 385,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.77334275,
+      "pattern_slice_fidelity": 0.7332257345050854,
+      "poof_local": 0.15211286437865926,
+      "suction_local": 0.1476980841808904
+    },
+    {
+      "step": 386,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.7728638999999999,
+      "pattern_slice_fidelity": 0.7327717247623579,
+      "poof_local": 0.15236921887815116,
+      "suction_local": 0.148046428214981
+    },
+    {
+      "step": 387,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.77238505,
+      "pattern_slice_fidelity": 0.7323177150196304,
+      "poof_local": 0.15271909370784112,
+      "suction_local": 0.14830970097985868
+    },
+    {
+      "step": 388,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.7719062000000001,
+      "pattern_slice_fidelity": 0.7318637052769028,
+      "poof_local": 0.15313309037112954,
+      "suction_local": 0.1484657807827744
+    },
+    {
+      "step": 389,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.77142735,
+      "pattern_slice_fidelity": 0.7314096955341751,
+      "poof_local": 0.15357642248595874,
+      "suction_local": 0.14850155290050165
+    },
+    {
+      "step": 390,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.7709484999999999,
+      "pattern_slice_fidelity": 0.7309556857914474,
+      "poof_local": 0.15401183873681723,
+      "suction_local": 0.14841401155385284
+    },
+    {
+      "step": 391,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.77046965,
+      "pattern_slice_fidelity": 0.7305016760487199,
+      "poof_local": 0.15440275294463734,
+      "suction_local": 0.14821051247054362
+    },
+    {
+      "step": 392,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.7699908000000001,
+      "pattern_slice_fidelity": 0.7300476663059924,
+      "poof_local": 0.1547163182481015,
+      "suction_local": 0.14790815481462077
+    },
+    {
+      "step": 393,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.76951195,
+      "pattern_slice_fidelity": 0.7295936565632646,
+      "poof_local": 0.15492618708595232,
+      "suction_local": 0.1475323444162991
+    },
+    {
+      "step": 394,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.7690330999999999,
+      "pattern_slice_fidelity": 0.729139646820537,
+      "poof_local": 0.15501472507071076,
+      "suction_local": 0.14711465902790483
+    },
+    {
+      "step": 395,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.76855425,
+      "pattern_slice_fidelity": 0.7286856370778095,
+      "poof_local": 0.15497449273139177,
+      "suction_local": 0.14669019497940647
+    },
+    {
+      "step": 396,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.7680754000000001,
+      "pattern_slice_fidelity": 0.728231627335082,
+      "poof_local": 0.15480887062066825,
+      "suction_local": 0.14629461818280315
+    },
+    {
+      "step": 397,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.7675965499999999,
+      "pattern_slice_fidelity": 0.7277776175923542,
+      "poof_local": 0.15453177526138132,
+      "suction_local": 0.14596116727695366
+    },
+    {
+      "step": 398,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.7671176999999999,
+      "pattern_slice_fidelity": 0.7273236078496266,
+      "poof_local": 0.15416648980020659,
+      "suction_local": 0.1457178607258625
+    },
+    {
+      "step": 399,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.76663885,
+      "pattern_slice_fidelity": 0.726869598106899,
+      "poof_local": 0.15374370762368395,
+      "suction_local": 0.14558514254609783
+    },
+    {
+      "step": 400,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.7661600000000001,
+      "pattern_slice_fidelity": 0.7264155883641714,
+      "poof_local": 0.1532989533232506,
+      "suction_local": 0.14557416448287075
+    },
+    {
+      "step": 401,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.76568115,
+      "pattern_slice_fidelity": 0.725961578621444,
+      "poof_local": 0.15286959771463668,
+      "suction_local": 0.14568584897622863
+    },
+    {
+      "step": 402,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.7652022999999999,
+      "pattern_slice_fidelity": 0.7255075688787161,
+      "poof_local": 0.15249171772687153,
+      "suction_local": 0.14591081165233377
+    },
+    {
+      "step": 403,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.76472345,
+      "pattern_slice_fidelity": 0.7250535591359886,
+      "poof_local": 0.1521970650110963,
+      "suction_local": 0.1462301498525571
+    },
+    {
+      "step": 404,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.7642446,
+      "pattern_slice_fidelity": 0.7245995493932611,
+      "poof_local": 0.15201039798411534,
+      "suction_local": 0.14661703094363457
+    },
+    {
+      "step": 405,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.76376575,
+      "pattern_slice_fidelity": 0.7241455396505334,
+      "poof_local": 0.15194740148373992,
+      "suction_local": 0.14703894694992645
+    },
+    {
+      "step": 406,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.7632868999999999,
+      "pattern_slice_fidelity": 0.7236915299078056,
+      "poof_local": 0.15201336883845482,
+      "suction_local": 0.14746044606060288
+    },
+    {
+      "step": 407,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.76280805,
+      "pattern_slice_fidelity": 0.7232375201650781,
+      "poof_local": 0.15220275709149741,
+      "suction_local": 0.14784611149480262
+    },
+    {
+      "step": 408,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.7623292,
+      "pattern_slice_fidelity": 0.7227835104223507,
+      "poof_local": 0.152499652751983,
+      "suction_local": 0.14816353742337254
+    },
+    {
+      "step": 409,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.76185035,
+      "pattern_slice_fidelity": 0.722329500679623,
+      "poof_local": 0.15287910893798531,
+      "suction_local": 0.14838605189311738
+    },
+    {
+      "step": 410,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.7613715,
+      "pattern_slice_fidelity": 0.7218754909368954,
+      "poof_local": 0.15330924155711684,
+      "suction_local": 0.14849495795779505
+    },
+    {
+      "step": 411,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.76089265,
+      "pattern_slice_fidelity": 0.7214214811941677,
+      "poof_local": 0.15375390839145314,
+      "suction_local": 0.14848110470313441
+    },
+    {
+      "step": 412,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.7604138,
+      "pattern_slice_fidelity": 0.7209674714514401,
+      "poof_local": 0.1541757459746688,
+      "suction_local": 0.14834565615931283
+    },
+    {
+      "step": 413,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.75993495,
+      "pattern_slice_fidelity": 0.7205134617087126,
+      "poof_local": 0.15453930908549215,
+      "suction_local": 0.14809999349244188
+    },
+    {
+      "step": 414,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.7594561,
+      "pattern_slice_fidelity": 0.7200594519659849,
+      "poof_local": 0.15481404905917134,
+      "suction_local": 0.147764758693496
+    },
+    {
+      "step": 415,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.7589772499999999,
+      "pattern_slice_fidelity": 0.7196054422232573,
+      "poof_local": 0.15497688066208404,
+      "suction_local": 0.14736812011944345
+    },
+    {
+      "step": 416,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.7584984,
+      "pattern_slice_fidelity": 0.7191514324805298,
+      "poof_local": 0.15501412184591362,
+      "suction_local": 0.14694340562579444
+    },
+    {
+      "step": 417,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.75801955,
+      "pattern_slice_fidelity": 0.7186974227378021,
+      "poof_local": 0.15492264339208467,
+      "suction_local": 0.14652630216839094
+    },
+    {
+      "step": 418,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.7575407000000001,
+      "pattern_slice_fidelity": 0.7182434129950745,
+      "poof_local": 0.15471013184671475,
+      "suction_local": 0.14615185718001064
+    },
+    {
+      "step": 419,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.7570618499999999,
+      "pattern_slice_fidelity": 0.7177894032523469,
+      "poof_local": 0.1543944436527767,
+      "suction_local": 0.1458515336833792
+    },
+    {
+      "step": 420,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.756583,
+      "pattern_slice_fidelity": 0.7173353935096193,
+      "poof_local": 0.1540021047490019,
+      "suction_local": 0.1456505665869418
+    },
+    {
+      "step": 421,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.75610415,
+      "pattern_slice_fidelity": 0.7168813837668916,
+      "poof_local": 0.1535660817078607,
+      "suction_local": 0.14556584230263753
+    },
+    {
+      "step": 422,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.7556253,
+      "pattern_slice_fidelity": 0.7164273740241642,
+      "poof_local": 0.1531230116944322,
+      "suction_local": 0.1456044798523927
+    },
+    {
+      "step": 423,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.75514645,
+      "pattern_slice_fidelity": 0.7159733642814365,
+      "poof_local": 0.15271012400095993,
+      "suction_local": 0.14576323268693106
+    },
+    {
+      "step": 424,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.7546676,
+      "pattern_slice_fidelity": 0.7155193545387089,
+      "poof_local": 0.1523621118274758,
+      "suction_local": 0.14602876147952684
+    },
+    {
+      "step": 425,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.75418875,
+      "pattern_slice_fidelity": 0.7150653447959813,
+      "poof_local": 0.15210821715948616,
+      "suction_local": 0.1463787549729995
+    },
+    {
+      "step": 426,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.7537099,
+      "pattern_slice_fidelity": 0.7146113350532537,
+      "poof_local": 0.15196977368807177,
+      "suction_local": 0.1467838046999354
+    },
+    {
+      "step": 427,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.75323105,
+      "pattern_slice_fidelity": 0.714157325310526,
+      "poof_local": 0.1519584142303954,
+      "suction_local": 0.14720987605135585
+    },
+    {
+      "step": 428,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.7527522,
+      "pattern_slice_fidelity": 0.7137033155677984,
+      "poof_local": 0.15207509327346075,
+      "suction_local": 0.1476211680604206
+    },
+    {
+      "step": 429,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.75227335,
+      "pattern_slice_fidelity": 0.7132493058250708,
+      "poof_local": 0.1523100067726218,
+      "suction_local": 0.1479831216056843
+    },
+    {
+      "step": 430,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.7517945,
+      "pattern_slice_fidelity": 0.7127952960823433,
+      "poof_local": 0.15264341594383274,
+      "suction_local": 0.14826532326735595
+    },
+    {
+      "step": 431,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.75131565,
+      "pattern_slice_fidelity": 0.7123412863396156,
+      "poof_local": 0.15304730582987358,
+      "suction_local": 0.14844406083784853
+    },
+    {
+      "step": 432,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.7508368,
+      "pattern_slice_fidelity": 0.711887276596888,
+      "poof_local": 0.15348773927827203,
+      "suction_local": 0.14850431575791612
+    },
+    {
+      "step": 433,
+      "t3_phase_lock": 0.994,
+      "beam_layer_coherence": 0.7503579499999999,
+      "pattern_slice_fidelity": 0.7114332668541603,
+      "poof_local": 0.1539277085361509,
+      "suction_local": 0.14844102506242834
+    },
+    {
+      "step": 434,
+      "t3_phase_lock": 1.0,
+      "beam_layer_coherence": 0.7498791,
+      "pattern_slice_fidelity": 0.7109792571114327,
+      "poof_local": 0.15433024485459168,
+      "suction_local": 0.14825950679983627
+    },
+    {
+      "step": 435,
+      "t3_phase_lock": 0.999,
+      "beam_layer_coherence": 0.74940025,
+      "pattern_slice_fidelity": 0.7105252473687051,
+      "poof_local": 0.15466152481566123,
+      "suction_local": 0.14797501317913792
+    },
+    {
+      "step": 436,
+      "t3_phase_lock": 0.998,
+      "beam_layer_coherence": 0.7489214000000001,
+      "pattern_slice_fidelity": 0.7100712376259777,
+      "poof_local": 0.15489371237062838,
+      "suction_local": 0.1476114489915071
+    },
+    {
+      "step": 437,
+      "t3_phase_lock": 0.997,
+      "beam_layer_coherence": 0.7484425499999999,
+      "pattern_slice_fidelity": 0.7096172278832499,
+      "poof_local": 0.15500729778496547,
+      "suction_local": 0.1471993629921752
+    },
+    {
+      "step": 438,
+      "t3_phase_lock": 0.996,
+      "beam_layer_coherence": 0.7479637,
+      "pattern_slice_fidelity": 0.7091632181405224,
+      "poof_local": 0.15499273695851493,
+      "suction_local": 0.14677338101821905
+    },
+    {
+      "step": 439,
+      "t3_phase_lock": 0.995,
+      "beam_layer_coherence": 0.74748485,
+      "pattern_slice_fidelity": 0.7087092083977947,
+      "poof_local": 0.15485125337570774,
+      "suction_local": 0.14636929652646993
+    }
+  ],
+  "grid_summary": {
+    "voxel_grid_count": 85184000.0,
+    "pattern_buffer_gbits": 2.044416,
+    "beam_forming_layers": 440.0,
+    "mean_layer_fidelity": 0.8083643469265045,
+    "t3_phase_lock_mean": 0.9970068181818211,
+    "t3_phase_lock_min": 0.994,
+    "dematerialization_scan_ms": 50.0,
+    "reassembly_lock_precision_m": 0.001,
+    "matter_stream_coherence": 0.40244628776669933,
+    "transport_energy_proxy_MJ": 17587818788.57143,
+    "bio_integrity_post_transport": 0.9481229999999999
+  },
+  "observables": [
+    {
+      "name": "voxel_grid_count",
+      "value": 85184000.0,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pattern_buffer_gbits",
+      "value": 2.044416,
+      "unit": "scaled"
+    },
+    {
+      "name": "beam_forming_layers",
+      "value": 440.0,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "mean_layer_fidelity",
+      "value": 0.8083643469265045,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "t3_phase_lock_mean",
+      "value": 0.9970068181818211,
+      "unit": "scaled"
+    },
+    {
+      "name": "t3_phase_lock_min",
+      "value": 0.994,
+      "unit": "scaled"
+    },
+    {
+      "name": "dematerialization_scan_ms",
+      "value": 50.0,
+      "unit": "scaled"
+    },
+    {
+      "name": "reassembly_lock_precision_m",
+      "value": 0.001,
+      "unit": "scaled"
+    },
+    {
+      "name": "matter_stream_coherence",
+      "value": 0.40244628776669933,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "transport_energy_proxy_MJ",
+      "value": 17587818788.57143,
+      "unit": "scaled"
+    },
+    {
+      "name": "bio_integrity_post_transport",
+      "value": 0.9481229999999999,
+      "unit": "dimensionless"
+    }
+  ]
+}

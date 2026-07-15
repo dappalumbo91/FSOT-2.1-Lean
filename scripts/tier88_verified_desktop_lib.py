@@ -15,6 +15,13 @@ VENDOR = ROOT / "vendor" / "application_wiring"
 DESKTOP = Path.home() / "Desktop"
 
 
+def _vd_root(slug: str, desktop_fallback: Path) -> Path:
+    from fsot_paths import verified_desktop_project  # noqa: WPS433
+
+    path = verified_desktop_project(slug, desktop_fallback=desktop_fallback)
+    return path if path is not None else desktop_fallback
+
+
 def _deep_mode() -> bool:
     from live_api_limits import tier88_deep  # noqa: WPS433
 
@@ -146,7 +153,7 @@ def _merge_fuel_profiles(*docs: dict) -> list[dict]:
 
 
 def ingest_fuel_lab() -> dict:
-    fuel_root = DESKTOP / "Fuel Lab" / "engine_simulator"
+    fuel_root = _vd_root("fuel_lab", DESKTOP / "Fuel Lab") / "engine_simulator"
     results = fuel_root / "results"
     profiles = _merge_fuel_profiles(
         _load_json(results / "grounded_fuel_profiles_full.json"),
@@ -190,8 +197,19 @@ def ingest_fuel_lab() -> dict:
     return doc
 
 
+BH_JS_FSOT_CONSTANTS: dict[str, float] = {
+    "a_bleed": 1.0470,
+    "p_var": 0.9580,
+    "b_in": 0.7879,
+    "a_in": 1.6669,
+    "chaos_factor": -0.3310,
+    "universal_k": 0.4202,
+    "coherence_efficiency_js": 0.9577,
+}
+
+
 def ingest_blackhole_whitehole() -> dict:
-    bh_root = DESKTOP / "FSOT_BlackHole_WhiteHole" / "files-306b43f1"
+    bh_root = _vd_root("blackhole_whitehole", DESKTOP / "FSOT_BlackHole_WhiteHole") / "files-306b43f1"
     constants = _fsot_bh_constants()
     blueprint = (bh_root / "FSOT_BlackHole_WhiteHole_Cycle_Blueprint.md").read_text(encoding="utf-8", errors="replace")
     cycle_rows = [
@@ -207,6 +225,8 @@ def ingest_blackhole_whitehole() -> dict:
         {"name": "cycle_entropy_budget", "value": 0.15, "unit": "dimensionless"},
     ]
     for key, val in constants.items():
+        cycle_rows.append({"name": key, "value": val, "unit": "dimensionless"})
+    for key, val in BH_JS_FSOT_CONSTANTS.items():
         cycle_rows.append({"name": key, "value": val, "unit": "dimensionless"})
     warp = _load_json(DATA / "warp_bh_wh_portal_benchmark.json")
     relay_median = float(warp.get("pooled_median_error_pct") or 0.0)
@@ -225,8 +245,9 @@ def ingest_blackhole_whitehole() -> dict:
 
 
 WARP_FORMULA_PATHS = (
-    DESKTOP / "FSOT-Legacy-Physics-Connections" / "concept_refinement" / "warp_actuation_formula_fsot21.json",
     VENDOR / "application_wiring" / "tier88_cache" / "warp_actuation_formula_fsot21.json",
+    ROOT / "vendor" / "verified_desktop" / "legacy_physics" / "warp_actuation_formula_fsot21.json",
+    DESKTOP / "FSOT-Legacy-Physics-Connections" / "concept_refinement" / "warp_actuation_formula_fsot21.json",
 )
 
 WARP_PORTAL_CROSSWALK_PROPS = frozenset(
@@ -309,7 +330,7 @@ def ingest_star_trek_transporter() -> dict:
     warp_formula = _load_json(_warp_formula_path()) if _warp_formula_path() else {}
     constants = _fsot_bh_constants()
     warp_pool = float(warp_bench.get("pooled_median_error_pct") or 0.0)
-    desktop_dir = DESKTOP / "FSOT, Star Trek Transporter"
+    desktop_dir = _vd_root("star_trek_transporter", DESKTOP / "FSOT, Star Trek Transporter")
     desktop_exists = desktop_dir.exists()
     transporter_stack = _enrich_transporter_stack(ref, constants)
     warp_actuation = list(ref.get("warp_actuation") or [])

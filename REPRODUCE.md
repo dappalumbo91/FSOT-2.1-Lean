@@ -266,12 +266,19 @@ python scripts/query_fsot_domain_navigator.py --panel Star_Trek_Transporter_Live
 
 Layers: quantum teleportation → information theory → poof/suction portal → transporter engineering → warp actuation → BH/WH portal crosswalk → beam-forming grid → T3 acoustic valve. Figure: `data/figures/verified_desktop_transporter.png`.
 
-Desktop simulators (run before `--deep` ingest):
+**Archive-first verified desktop** (no C: Desktop required):
 
 ```powershell
-python "C:\Users\damia\Desktop\FSOT, Star Trek Transporter\pattern_buffer_beam_simulator.py" --deep
-python "C:\Users\damia\Desktop\FSOT, Star Trek Transporter\two_gate_entanglement_simulator.py"
-python "C:\Users\damia\Desktop\FSOT, Star Trek Transporter\t3_acoustic_valve_hardware_simulator.py"
+python scripts/sync_verified_desktop_projects.py
+```
+
+Simulators live under `vendor/verified_desktop/` (GitHub) and `I:/FSOT-Physical-Archive/08_Verified-Desktop-Projects/` (archive master). Re-run sims before `--deep` ingest:
+
+```powershell
+python vendor/verified_desktop/star_trek_transporter/pattern_buffer_beam_simulator.py --deep
+python vendor/verified_desktop/star_trek_transporter/two_gate_entanglement_simulator.py
+python vendor/verified_desktop/star_trek_transporter/t3_acoustic_valve_hardware_simulator.py
+python scripts/sync_verified_desktop_projects.py
 ```
 
 **Five-prover cross-proof (Lean → Coq → Isabelle → F* → Rust):**

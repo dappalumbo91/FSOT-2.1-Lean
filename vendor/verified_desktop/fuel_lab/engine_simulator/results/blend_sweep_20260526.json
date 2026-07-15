@@ -1,0 +1,150 @@
+{
+  "summary": {
+    "mode": "blend_sweep",
+    "engine": "prius_1_8_atkinson",
+    "fuel_profiles": [
+      "fsot_hemp_waste_advanced",
+      "fsot_algae_oil_biodiesel"
+    ],
+    "weights_step": 0.2,
+    "top_n": 5,
+    "record_count": 5
+  },
+  "records": [
+    {
+      "timestamp": "2026-05-26T06:39:14.538359+00:00",
+      "mode": "blend_sweep",
+      "engine_id": "prius_1_8_atkinson",
+      "engine_name": "Toyota Prius 1.8L Atkinson I4",
+      "fuel_profile_id": "blend_fsot_hemp_waste_advanced_fsot_algae_oil_biodiesel",
+      "fuel_production_route": "blend:fsot_hemp_waste_advanced+fsot_algae_oil_biodiesel",
+      "weights": [
+        1.0,
+        0.0
+      ],
+      "fsot_score": 0.7828683770093037,
+      "renewable_rank": 0.8424188785588147,
+      "fuel_cost_per_kwh": 0.2712867286471118,
+      "fuel_production_cost_per_kg": 1.1494,
+      "toxicity_index": 0.1672,
+      "renewable_fraction": 0.99,
+      "thermal_efficiency": 0.41700000000000004,
+      "bsfc_g_kwh": 236.0246464652095,
+      "co_g_per_h": 157.64606709677423,
+      "nox_g_per_h": 68.2712567907097,
+      "soot_g_per_h": 47.60490836810323,
+      "remediation_credit_per_kg": 0.05,
+      "production_difficulty_index": 1.35,
+      "conversion_efficiency": 0.88,
+      "pareto_candidate": true
+    },
+    {
+      "timestamp": "2026-05-26T06:39:14.538378+00:00",
+      "mode": "blend_sweep",
+      "engine_id": "prius_1_8_atkinson",
+      "engine_name": "Toyota Prius 1.8L Atkinson I4",
+      "fuel_profile_id": "blend_fsot_hemp_waste_advanced_fsot_algae_oil_biodiesel",
+      "fuel_production_route": "blend:fsot_hemp_waste_advanced+fsot_algae_oil_biodiesel",
+      "weights": [
+        0.8,
+        0.2
+      ],
+      "fsot_score": 0.7773512751057223,
+      "renewable_rank": 0.8456229928455555,
+      "fuel_cost_per_kwh": 0.29074704292666703,
+      "fuel_production_cost_per_kg": 1.2102372000000006,
+      "toxicity_index": 0.174715,
+      "renewable_fraction": 0.984,
+      "thermal_efficiency": 0.41644,
+      "bsfc_g_kwh": 240.2397174096672,
+      "co_g_per_h": 174.40812356435643,
+      "nox_g_per_h": 78.96981824839604,
+      "soot_g_per_h": 56.221069059402765,
+      "remediation_credit_per_kg": 0.07600000000000001,
+      "production_difficulty_index": 1.35,
+      "conversion_efficiency": 0.8720000000000001,
+      "pareto_candidate": false
+    },
+    {
+      "timestamp": "2026-05-26T06:39:14.538387+00:00",
+      "mode": "blend_sweep",
+      "engine_id": "prius_1_8_atkinson",
+      "engine_name": "Toyota Prius 1.8L Atkinson I4",
+      "fuel_profile_id": "blend_fsot_hemp_waste_advanced_fsot_algae_oil_biodiesel",
+      "fuel_production_route": "blend:fsot_hemp_waste_advanced+fsot_algae_oil_biodiesel",
+      "weights": [
+        0.6,
+        0.4
+      ],
+      "fsot_score": 0.7694166334914783,
+      "renewable_rank": 0.8467170726012854,
+      "fuel_cost_per_kwh": 0.32277756439228794,
+      "fuel_production_cost_per_kg": 1.3196307999999999,
+      "toxicity_index": 0.18232000000000004,
+      "renewable_fraction": 0.978,
+      "thermal_efficiency": 0.41588,
+      "bsfc_g_kwh": 244.596870876527,
+      "co_g_per_h": 192.26592000000005,
+      "nox_g_per_h": 90.44188876800004,
+      "soot_g_per_h": 65.39104180224001,
+      "remediation_credit_per_kg": 0.102,
+      "production_difficulty_index": 1.35,
+      "conversion_efficiency": 0.8640000000000001,
+      "pareto_candidate": false
+    },
+    {
+      "timestamp": "2026-05-26T06:39:14.538390+00:00",
+      "mode": "blend_sweep",
+      "engine_id": "prius_1_8_atkinson",
+      "engine_name": "Toyota Prius 1.8L Atkinson I4",
+      "fuel_profile_id": "blend_fsot_hemp_waste_advanced_fsot_algae_oil_biodiesel",
+      "fuel_production_route": "blend:fsot_hemp_waste_advanced+fsot_algae_oil_biodiesel",
+      "weights": [
+        0.4,
+        0.6
+      ],
+      "fsot_score": 0.7589318065766818,
+      "renewable_rank": 0.8455857738347957,
+      "fuel_cost_per_kwh": 0.368070356991226,
+      "fuel_production_cost_per_kg": 1.4775808000000001,
+      "toxicity_index": 0.19001499999999996,
+      "renewable_fraction": 0.972,
+      "thermal_efficiency": 0.41532,
+      "bsfc_g_kwh": 249.103370178623,
+      "co_g_per_h": 211.29907764705885,
+      "nox_g_per_h": 102.74535038964706,
+      "soot_g_per_h": 75.1532594555859,
+      "remediation_credit_per_kg": 0.128,
+      "production_difficulty_index": 1.35,
+      "conversion_efficiency": 0.8560000000000001,
+      "pareto_candidate": false
+    },
+    {
+      "timestamp": "2026-05-26T06:39:14.538393+00:00",
+      "mode": "blend_sweep",
+      "engine_id": "prius_1_8_atkinson",
+      "engine_name": "Toyota Prius 1.8L Atkinson I4",
+      "fuel_profile_id": "blend_fsot_hemp_waste_advanced_fsot_algae_oil_biodiesel",
+      "fuel_production_route": "blend:fsot_hemp_waste_advanced+fsot_algae_oil_biodiesel",
+      "weights": [
+        0.2,
+        0.8
+      ],
+      "fsot_score": 0.7457549024730856,
+      "renewable_rank": 0.8421057122954366,
+      "fuel_cost_per_kwh": 0.4273657262273797,
+      "fuel_production_cost_per_kg": 1.6840872,
+      "toxicity_index": 0.19780000000000003,
+      "renewable_fraction": 0.966,
+      "thermal_efficiency": 0.41476,
+      "bsfc_g_kwh": 253.76698203476622,
+      "co_g_per_h": 231.59512340425533,
+      "nox_g_per_h": 115.94383230638297,
+      "soot_g_per_h": 85.5499709069617,
+      "remediation_credit_per_kg": 0.154,
+      "production_difficulty_index": 1.35,
+      "conversion_efficiency": 0.8480000000000001,
+      "pareto_candidate": false
+    }
+  ]
+}

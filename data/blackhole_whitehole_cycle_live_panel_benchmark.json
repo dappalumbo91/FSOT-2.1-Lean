@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-15T11:55:48.564589+00:00",
+  "generated_at": "2026-07-15T12:18:37.176460+00:00",
   "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
   "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
@@ -13,9 +13,9 @@
     "particle"
   ],
   "D_eff": 18,
-  "record_count": 17,
-  "observable_count": 17,
-  "scalar_record_count": 16,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 23,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.026472,
   "pooled_median_error_pct": 0.026472,
@@ -41,7 +41,7 @@
       "computed": 0.026472,
       "measured": 0.0,
       "error_pct": 0.026472,
-      "observable_count": 17
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +50,7 @@
       "computed": 0.026472,
       "measured": 0.0,
       "error_pct": 0.026472,
-      "observable_count": 16
+      "observable_count": 23
     }
   ],
   "material_records": [
@@ -240,6 +240,90 @@
       "name": "eta_eff",
       "computed": 0.467066,
       "measured": 0.46694220692425986,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "desktop_blackhole_whitehole_cycle+fsot_constants"
+    },
+    {
+      "lab": "blackhole_whitehole_cycle_lab",
+      "property": "value",
+      "name": "a_bleed",
+      "computed": 1.047277,
+      "measured": 1.047,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "desktop_blackhole_whitehole_cycle+fsot_constants"
+    },
+    {
+      "lab": "blackhole_whitehole_cycle_lab",
+      "property": "value",
+      "name": "p_var",
+      "computed": 0.958254,
+      "measured": 0.958,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "desktop_blackhole_whitehole_cycle+fsot_constants"
+    },
+    {
+      "lab": "blackhole_whitehole_cycle_lab",
+      "property": "value",
+      "name": "b_in",
+      "computed": 0.788109,
+      "measured": 0.7879,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "desktop_blackhole_whitehole_cycle+fsot_constants"
+    },
+    {
+      "lab": "blackhole_whitehole_cycle_lab",
+      "property": "value",
+      "name": "a_in",
+      "computed": 1.667341,
+      "measured": 1.6669,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "desktop_blackhole_whitehole_cycle+fsot_constants"
+    },
+    {
+      "lab": "blackhole_whitehole_cycle_lab",
+      "property": "value",
+      "name": "chaos_factor",
+      "computed": -0.331088,
+      "measured": -0.331,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "desktop_blackhole_whitehole_cycle+fsot_constants"
+    },
+    {
+      "lab": "blackhole_whitehole_cycle_lab",
+      "property": "value",
+      "name": "universal_k",
+      "computed": 0.420311,
+      "measured": 0.4202,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "desktop_blackhole_whitehole_cycle+fsot_constants"
+    },
+    {
+      "lab": "blackhole_whitehole_cycle_lab",
+      "property": "value",
+      "name": "coherence_efficiency_js",
+      "computed": 0.957954,
+      "measured": 0.9577,
       "error_pct": 0.026472,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
