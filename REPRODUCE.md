@@ -47,6 +47,22 @@ python scripts/run_cross_proof_verification.py
 
 ESP32 hardware harness is **optional** (skipped without COM port). Use `--require-esp32` only when flashing hardware.
 
+## Publication bundle (figures + spine walkthrough for peer review)
+
+One command — regenerates contested-sector closure, spine walkthrough JSON, all figures, and publication claims manifest (uses on-disk benchmarks; no live API ingest):
+
+```powershell
+python scripts/run_publication_verification_bundle.py
+```
+
+Add `--full-cross-proof` to also run the ~8 min seven-way formal verification.
+
+**Outputs:**
+
+- `data/publication_spine_walkthrough.json` — seeds → raw_S → domain fold → observable chain
+- `data/publication_claims_manifest.json` — evidence-aligned claims for reviewers
+- `data/figures/spine_walkthrough.png`, `contested_fsot_vs_lcdm.png`, `h0_landscape.png`, `empirical_headline_summary.png` (+ standard scientific figure pack)
+
 ## Step-by-step
 
 ### 1. Sync canonical constants (optional)

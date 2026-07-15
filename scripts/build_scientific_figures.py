@@ -268,6 +268,12 @@ def main() -> int:
             ]
         ),
     }
+    pub_manifest = args.output_dir / "publication_figure_manifest.json"
+    if pub_manifest.exists():
+        pub = json.loads(pub_manifest.read_text(encoding="utf-8"))
+        for name in pub.get("figures") or []:
+            if name not in manifest["figures"]:
+                manifest["figures"].append(name)
     (args.output_dir / "figure_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     print(f"Wrote figures to {args.output_dir}")
     for name in manifest["figures"]:
