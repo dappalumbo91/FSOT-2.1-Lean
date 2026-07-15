@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-15T10:59:15.554915+00:00",
+  "generated_at": "2026-07-15T11:55:48.340904+00:00",
   "domain": "Trinary_Hardware_Live_Panel",
   "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
@@ -13,9 +13,9 @@
     "neural"
   ],
   "D_eff": 14,
-  "record_count": 37,
-  "observable_count": 37,
-  "scalar_record_count": 32,
+  "record_count": 28,
+  "observable_count": 28,
+  "scalar_record_count": 24,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.014767,
   "pooled_median_error_pct": 0.014767,
@@ -41,7 +41,7 @@
       "computed": 0.014767,
       "measured": 0.0,
       "error_pct": 0.014767,
-      "observable_count": 37
+      "observable_count": 28
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +50,7 @@
       "computed": 0.014767,
       "measured": 0.0,
       "error_pct": 0.014767,
-      "observable_count": 37
+      "observable_count": 28
     }
   ],
   "material_records": [
@@ -307,123 +307,6 @@
       "name": "claim_conservative_floor",
       "computed": 0.750111,
       "measured": 0.75,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design"
-    },
-    {
-      "lab": "trinary_hardware_live_lab",
-      "property": "conversion_gate_pressure_threshold",
-      "name": "conversion_gate_pressure_threshold",
-      "computed": 0.650096,
-      "measured": 0.65,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design"
-    },
-    {
-      "lab": "trinary_hardware_live_lab",
-      "property": "conversion_conservative_strength",
-      "name": "conversion_conservative_strength",
-      "computed": 0.300044,
-      "measured": 0.3,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design"
-    },
-    {
-      "lab": "trinary_hardware_live_lab",
-      "property": "conversion_conservative_floor",
-      "name": "conversion_conservative_floor",
-      "computed": 0.700103,
-      "measured": 0.7,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design"
-    },
-    {
-      "lab": "trinary_hardware_live_lab",
-      "property": "repro_trend_pressure_strength",
-      "name": "repro_trend_pressure_strength",
-      "computed": 0.080012,
-      "measured": 0.08,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design"
-    },
-    {
-      "lab": "trinary_hardware_live_lab",
-      "property": "repro_trend_migration_strength",
-      "name": "repro_trend_migration_strength",
-      "computed": 0.040006,
-      "measured": 0.04,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design"
-    },
-    {
-      "lab": "trinary_hardware_live_lab",
-      "property": "repro_trend_interaction_strength",
-      "name": "repro_trend_interaction_strength",
-      "computed": 0.035005,
-      "measured": 0.035,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design"
-    },
-    {
-      "lab": "trinary_hardware_live_lab",
-      "property": "repro_energy_pressure_strength",
-      "name": "repro_energy_pressure_strength",
-      "computed": 0.180027,
-      "measured": 0.18,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design"
-    },
-    {
-      "lab": "trinary_hardware_live_lab",
-      "property": "repro_energy_claim_relief",
-      "name": "repro_energy_claim_relief",
-      "computed": 0.080012,
-      "measured": 0.08,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design"
-    },
-    {
-      "lab": "trinary_hardware_live_lab",
-      "property": "repro_energy_interaction_strength",
-      "name": "repro_energy_interaction_strength",
-      "computed": 0.120018,
-      "measured": 0.12,
       "error_pct": 0.014767,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",

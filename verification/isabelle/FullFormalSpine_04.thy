@@ -3,6 +3,51 @@ theory FullFormalSpine_04
 imports Complex_Main
 begin
 
+lemma culinary_arts_observable_count_pos: "0 < (26 :: nat)"
+  by eval
+
+lemma culinary_arts_median_error_under_half_pct: "(0.047615187057821064 :: real) < (0.5 :: real)"
+  by eval
+
+lemma culinary_fermentation_maillard_panel_observable_count_pos: "0 < (130 :: nat)"
+  by eval
+
+lemma culinary_fermentation_maillard_panel_median_error_under_half_pct: "(0.040788 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cve_codon_hole_falsification_observable_count_pos: "0 < (29 :: nat)"
+  by eval
+
+lemma cve_codon_hole_falsification_median_error_under_half_pct: "(0.009186636881580057 :: real) < (0.5 :: real)"
+  by eval
+
+lemma dark_energy_cpl_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma dark_energy_cpl_median_error_under_half_pct: "(0.029733 :: real) < (0.5 :: real)"
+  by eval
+
+lemma dark_sector_open_problems_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma dark_sector_open_problems_median_error_under_half_pct: "(0.01529034996934153 :: real) < (0.5 :: real)"
+  by eval
+
+lemma desktop_application_wiring_spine_observable_count_pos: "0 < (81 :: nat)"
+  by eval
+
+lemma desktop_application_wiring_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma distant_island_emergence_simulation_observable_count_pos: "0 < (36 :: nat)"
+  by eval
+
+lemma distant_island_emergence_simulation_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma distant_island_z128_z132_deep_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
 lemma distant_island_z128_z132_deep_panel_median_error_under_half_pct: "(0.000001 :: real) < (0.5 :: real)"
   by eval
 
@@ -91,6 +136,12 @@ lemma connective_fluid_consistency_pos: "0 < (0.075670330033 :: real)"
   by eval
 
 lemma connective_stab_margin_gt_one: "1 < (1.722776467449 :: real)"
+  by eval
+
+lemma early_lean_mc_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma early_lean_mc_panel_median_error_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
   by eval
 
 lemma ecology_gap_fill_pooled_median_under_half_pct: "(0.017789000308164337 :: real) < (0.5 :: real)"
@@ -250,57 +301,6 @@ lemma epidemiology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
 lemma epidemiology_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma epidemiology_panel_median_error_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
-  by eval
-
-lemma epidemiology_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma epidemiology_median_error_under_half_pct: "(0.03062212293865052 :: real) < (0.5 :: real)"
-  by eval
-
-lemma ethology_panel_observable_count_pos: "0 < (100 :: nat)"
-  by eval
-
-lemma ethology_panel_median_error_under_half_pct: "(0.006607 :: real) < (0.5 :: real)"
-  by eval
-
-lemma ethology_observable_count_pos: "0 < (100 :: nat)"
-  by eval
-
-lemma ethology_median_error_under_five_pct: "(0.006607 :: real) < (5.0 :: real)"
-  by eval
-
-lemma evolution_fitness_positive: "0 < (58.493466 :: real)"
-  by eval
-
-lemma evolution_operon_count_pos: "0 < (13 :: nat)"
-  by eval
-
-lemma exogeology_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma exogeology_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma exogeology_ext_observable_count_pos: "0 < (316 :: nat)"
-  by eval
-
-lemma exogeology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma exogeology_panel_observable_count_pos: "0 < (100 :: nat)"
-  by eval
-
-lemma exogeology_panel_median_error_under_half_pct: "(0.026472 :: real) < (0.5 :: real)"
-  by eval
-
-lemma exogeology_observable_count_pos: "0 < (316 :: nat)"
-  by eval
-
-lemma exogeology_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

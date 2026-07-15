@@ -52,5 +52,14 @@
     {"name": "info_preservation_no_deconstruction", "value": 0.981227203621, "unit": "dimensionless", "property": "info_preservation_proxy"},
     {"name": "bh_inlet_compactification", "value": 0.009663204175, "unit": "dimensionless", "property": "psi_bh_inlet"},
     {"name": "wh_outgassing_scalar", "value": 0.501689416811, "unit": "dimensionless", "property": "psi_wh_outlet"}
+  ],
+  "t3_valve_hardware": [
+    {"name": "resonance_hz", "value": 40000.0, "unit": "Hz"},
+    {"name": "piezo_stack_v_pp_nominal", "value": 24.0, "unit": "V"},
+    {"name": "cavity_length_m", "value": 0.042, "unit": "m"},
+    {"name": "mean_t3_phase_lock_error", "value": 0.006, "unit": "dimensionless"},
+    {"name": "mean_beam_coupling_efficiency", "value": 0.121, "unit": "dimensionless"},
+    {"name": "phi_lock_hardware", "value": 0.95, "unit": "dimensionless"},
+    {"name": "t3_valve_acoustic_phase", "value": 1.0, "unit": "dimensionless"}
   ]
 }

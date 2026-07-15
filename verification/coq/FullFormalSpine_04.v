@@ -6,6 +6,51 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma culinary_arts_observable_count_pos : (0 < 26)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma culinary_arts_median_error_under_half_pct : (0.047615187057821064%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma culinary_fermentation_maillard_panel_observable_count_pos : (0 < 130)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma culinary_fermentation_maillard_panel_median_error_under_half_pct : (0.040788%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma cve_codon_hole_falsification_observable_count_pos : (0 < 29)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma cve_codon_hole_falsification_median_error_under_half_pct : (0.009186636881580057%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma dark_energy_cpl_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma dark_energy_cpl_median_error_under_half_pct : (0.029733%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma dark_sector_open_problems_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma dark_sector_open_problems_median_error_under_half_pct : (0.01529034996934153%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma desktop_application_wiring_spine_observable_count_pos : (0 < 81)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma desktop_application_wiring_spine_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma distant_island_emergence_simulation_observable_count_pos : (0 < 36)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma distant_island_emergence_simulation_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma distant_island_z128_z132_deep_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma distant_island_z128_z132_deep_panel_median_error_under_half_pct : (0.000001%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -94,6 +139,12 @@ Lemma connective_fluid_consistency_pos : 0 < (0.075670330033%R).
 Proof. lra. Qed.
 
 Lemma connective_stab_margin_gt_one : 1 < (1.722776467449%R).
+Proof. lra. Qed.
+
+Lemma early_lean_mc_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma early_lean_mc_panel_median_error_under_half_pct : (0.014767%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma ecology_gap_fill_pooled_median_under_half_pct : (0.017789000308164337%R) < (0.5%R).
@@ -254,55 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma epidemiology_panel_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma epidemiology_panel_median_error_under_half_pct : (0.015311%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma epidemiology_observable_count_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma epidemiology_median_error_under_half_pct : (0.03062212293865052%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma ethology_panel_observable_count_pos : (0 < 100)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma ethology_panel_median_error_under_half_pct : (0.006607%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma ethology_observable_count_pos : (0 < 100)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma ethology_median_error_under_five_pct : (0.006607%R) < (5.0%R).
-Proof. lra. Qed.
-
-Lemma evolution_fitness_positive : 0 < (58.493466%R).
-Proof. lra. Qed.
-
-Lemma evolution_operon_count_pos : (0 < 13)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma exogeology_ext_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma exogeology_ext_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma exogeology_ext_observable_count_pos : (0 < 316)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma exogeology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma exogeology_panel_observable_count_pos : (0 < 100)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma exogeology_panel_median_error_under_half_pct : (0.026472%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma exogeology_observable_count_pos : (0 < 316)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma exogeology_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
 

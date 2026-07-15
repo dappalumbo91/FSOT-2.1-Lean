@@ -3,6 +3,48 @@ theory FullFormalSpine_08
 imports Complex_Main
 begin
 
+lemma materials_species_bridge_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma mathematics_computational_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma mathematics_computational_median_error_under_five_pct: "(0.00000000000001409018 :: real) < (5.0 :: real)"
+  by eval
+
+lemma math_generator_airfoil_rmse_observable_count_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma math_generator_airfoil_rmse_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma math_generator_benchmark_formula_eval_observable_count_pos: "0 < (13 :: nat)"
+  by eval
+
+lemma math_generator_benchmark_formula_eval_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma math_generator_max_error_pct_positive: "0 < (1.1862232544535427 :: real)"
+  by eval
+
+lemma math_generator_comparison_count_pos: "0 < (7 :: nat)"
+  by eval
+
+lemma math_generator_rule_corpus_count_pos: "0 < (62 :: nat)"
+  by eval
+
+lemma math_generator_rule_observable_count_pos: "0 < (1552 :: nat)"
+  by eval
+
+lemma math_generator_rule_observables_ge_corpora: "(62 :: nat) <= (1552 :: nat)"
+  by eval
+
+lemma math_generator_rules_eval_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma math_generator_rules_eval_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
 lemma math_generator_rules_eval_observable_count_pos: "0 < (1552 :: nat)"
   by eval
 
@@ -27,7 +69,7 @@ lemma mechanical_engineering_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
 lemma mechanical_engineering_panel_observable_count_pos: "0 < (20 :: nat)"
   by eval
 
-lemma mechanical_engineering_panel_median_error_under_half_pct: "(0.078697 :: real) < (0.5 :: real)"
+lemma mechanical_engineering_panel_median_error_under_half_pct: "(0.039349 :: real) < (0.5 :: real)"
   by eval
 
 lemma mechanical_engineering_observable_count_pos: "0 < (50 :: nat)"
@@ -259,48 +301,6 @@ lemma held_out_fi_median_rel_err_lt_thirty_pct: "(0.24625990376478163 :: real) <
   by eval
 
 lemma stratum_sst_fi_median_lt_bound: "(0.6532385249479395 :: real) < (0.7 :: real)"
-  by eval
-
-lemma stratum_pv_fi_median_lt_bound: "(0.26052599991828185 :: real) < (0.35 :: real)"
-  by eval
-
-lemma stratum_l23_pyramidal_fi_median_lt_bound: "(0.49782232037293184 :: real) < (0.55 :: real)"
-  by eval
-
-lemma held_out_fi_pearson_r_gt_fifty_five: "(0.55 :: real) < (0.6086458495175734 :: real)"
-  by eval
-
-lemma stratum_sst_fi_pearson_gt_bound: "(0.5 :: real) < (0.52310926097775 :: real)"
-  by eval
-
-lemma stratum_pv_fi_pearson_gt_bound: "(0.35 :: real) < (0.3931199346029611 :: real)"
-  by eval
-
-lemma stratum_vip_fi_pearson_gt_bound: "(0.4 :: real) < (0.4308059942466856 :: real)"
-  by eval
-
-lemma stratum_l23_pyramidal_fi_pearson_gt_bound: "(0.2 :: real) < (0.23129805826359506 :: real)"
-  by eval
-
-lemma held_out_cell_count_large: "(2100 :: nat) < (2165 :: nat)"
-  by eval
-
-lemma stratum_sst_cell_count_pos: "(150 :: nat) < (154 :: nat)"
-  by eval
-
-lemma stratum_pv_cell_count_pos: "(200 :: nat) < (222 :: nat)"
-  by eval
-
-lemma stratum_vip_cell_count_pos: "(140 :: nat) < (146 :: nat)"
-  by eval
-
-lemma stratum_l23_pyramidal_cell_count_pos: "(1100 :: nat) < (1127 :: nat)"
-  by eval
-
-lemma neuron_train_cell_count_pos: "0 < (1745 :: nat)"
-  by eval
-
-lemma neuron_holdout_cell_count_pos: "0 < (420 :: nat)"
   by eval
 
 end

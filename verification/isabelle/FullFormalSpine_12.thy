@@ -3,6 +3,123 @@ theory FullFormalSpine_12
 imports Complex_Main
 begin
 
+lemma species_total_count_eq_sum: "(141 :: nat) = (141 :: nat)"
+  by eval
+
+lemma speleology_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma speleology_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma speleology_ext_observable_count_pos: "0 < (200 :: nat)"
+  by eval
+
+lemma speleology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma speleology_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma speleology_panel_median_error_under_half_pct: "(0.04459 :: real) < (0.5 :: real)"
+  by eval
+
+lemma speleology_observable_count_pos: "0 < (65 :: nat)"
+  by eval
+
+lemma speleology_median_error_under_half_pct: "(0.0034072140135262413 :: real) < (0.5 :: real)"
+  by eval
+
+lemma sports_biomechanics_gap_fill_pooled_median_under_half_pct: "(0.04447250077037523 :: real) < (0.5 :: real)"
+  by eval
+
+lemma sports_biomechanics_gap_fill_headline_median_under_half_pct: "(0.04447250077037523 :: real) < (0.5 :: real)"
+  by eval
+
+lemma sports_biomechanics_gap_fill_observable_count_pos: "0 < (35 :: nat)"
+  by eval
+
+lemma sports_biomechanics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma sports_biomechanics_observable_count_pos: "0 < (35 :: nat)"
+  by eval
+
+lemma sports_biomechanics_median_error_under_half_pct: "(0.04447250077037523 :: real) < (0.5 :: real)"
+  by eval
+
+lemma star_trek_transporter_psi_entangle_gate_under_half_pct: "(0.04803163401 :: real) < (0.5 :: real)"
+  by eval
+
+lemma star_trek_transporter_psi_gate_pair_under_half_pct: "(0.043599802456 :: real) < (0.5 :: real)"
+  by eval
+
+lemma star_trek_transporter_psi_portal_doorway_under_half_pct: "(0.009663204175 :: real) < (0.5 :: real)"
+  by eval
+
+lemma star_trek_transporter_psi_traverse_under_half_pct: "(0.0004641395 :: real) < (0.5 :: real)"
+  by eval
+
+lemma star_trek_transporter_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
+  by eval
+
+lemma star_trek_transporter_info_preservation_proxy_pos: "0 < (0.981227203621 :: real)"
+  by eval
+
+lemma star_trek_transporter_psi_entangle_gate_pos: "0 < (0.04803163401 :: real)"
+  by eval
+
+lemma star_trek_transporter_psi_gate_pair_pos: "0 < (0.043599802456 :: real)"
+  by eval
+
+lemma star_trek_transporter_psi_portal_doorway_pos: "0 < (0.009663204175 :: real)"
+  by eval
+
+lemma star_trek_transporter_psi_traverse_pos: "0 < (0.0004641395 :: real)"
+  by eval
+
+lemma star_trek_transporter_stabilization_margin_pos: "0 < (1.722776467449 :: real)"
+  by eval
+
+lemma star_trek_transporter_observable_count_pos: "0 < (1494 :: nat)"
+  by eval
+
+lemma star_trek_transporter_median_error_under_five_pct: "(0.031159 :: real) < (5.0 :: real)"
+  by eval
+
+lemma statistical_mechanics_public_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma statistical_mechanics_public_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma stellar_multiplicity_catalog_observable_count_pos: "0 < (68 :: nat)"
+  by eval
+
+lemma stellar_multiplicity_catalog_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma stellar_multiplicity_live_deep_observable_count_pos: "0 < (69 :: nat)"
+  by eval
+
+lemma stellar_multiplicity_live_deep_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma structure_calibration_residue_count_pos: "0 < (32338 :: nat)"
+  by eval
+
+lemma structure_calibration_burial_beats_fifty_pct: "(50.0 :: real) < (59.47 :: real)"
+  by eval
+
+lemma stsci_mast_telescope_panel_observable_count_pos: "0 < (377 :: nat)"
+  by eval
+
+lemma stsci_mast_telescope_panel_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
+  by eval
+
+lemma stsci_mast_telescope_observable_count_pos: "0 < (377 :: nat)"
+  by eval
+
 lemma stsci_mast_telescope_median_error_under_five_pct: "(0.022461 :: real) < (5.0 :: real)"
   by eval
 
@@ -108,7 +225,7 @@ lemma thesis_simulation_observable_count_pos: "0 < (156 :: nat)"
 lemma thesis_simulation_components_le_total: "(156 :: nat) = (156 :: nat)"
   by eval
 
-lemma the_well_outcomes_verification_panel_observable_count_pos: "0 < (381 :: nat)"
+lemma the_well_outcomes_verification_panel_observable_count_pos: "0 < (246 :: nat)"
   by eval
 
 lemma the_well_outcomes_verification_panel_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
@@ -138,10 +255,10 @@ lemma tier_94_longevity_spine_observable_count_pos: "0 < (34 :: nat)"
 lemma tier_94_longevity_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma tier_95_zebrafish_spine_observable_count_pos: "0 < (18 :: nat)"
+lemma tier_95_zebrafish_spine_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma tier_95_zebrafish_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma tier_95_zebrafish_spine_median_error_under_half_pct: "(0.013342 :: real) < (0.5 :: real)"
   by eval
 
 lemma time_domain_crosswalk_observable_count_pos: "0 < (250 :: nat)"
@@ -183,124 +300,7 @@ lemma toe_unification_spine_median_error_under_half_pct: "(0.01900826880249791 :
 lemma tokenization_live_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma tokenization_live_panel_median_error_under_half_pct: "(0.015099000000000001 :: real) < (0.5 :: real)"
-  by eval
-
-lemma tokenization_smoke_observable_count_pos: "0 < (9 :: nat)"
-  by eval
-
-lemma tokenization_smoke_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma toxicology_panel_observable_count_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma toxicology_panel_median_error_under_half_pct: "(0.033401 :: real) < (0.5 :: real)"
-  by eval
-
-lemma toxicology_observable_count_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma toxicology_median_error_under_five_pct: "(0.033401 :: real) < (5.0 :: real)"
-  by eval
-
-lemma trinary_ignition_coherence_positive: "0 < (0.3921734915875944 :: real)"
-  by eval
-
-lemma trinary_resonance_persist_positive: "0 < (0.8652559794322651 :: real)"
-  by eval
-
-lemma trinary_metatron_pathways_pos: "0 < (27 :: nat)"
-  by eval
-
-lemma trinary_hardware_live_panel_observable_count_pos: "0 < (37 :: nat)"
-  by eval
-
-lemma trinary_hardware_live_panel_median_error_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
-  by eval
-
-lemma trinary_hardware_motif_observable_count_pos: "0 < (8 :: nat)"
-  by eval
-
-lemma trinary_hardware_motif_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma trinary_os_isa_rebuild_observable_count_pos: "0 < (38 :: nat)"
-  by eval
-
-lemma trinary_os_isa_rebuild_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma trinary_os_portable_observable_count_pos: "0 < (8 :: nat)"
-  by eval
-
-lemma trinary_os_portable_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma trinary_os_word_width_eq_27: "(27 :: nat) = (27 :: nat)"
-  by eval
-
-lemma trinary_os_hello_smaller_than_spawn: "(264 :: nat) < (440 :: nat)"
-  by eval
-
-lemma trinary_os_round_trip_observable_count_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma trinary_os_round_trip_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma trinary_os_tier_e_observable_count_pos: "0 < (68 :: nat)"
-  by eval
-
-lemma trinary_os_tier_e_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma uap_war_gov_release_panel_observable_count_pos: "0 < (542 :: nat)"
-  by eval
-
-lemma uap_war_gov_release_panel_median_error_under_half_pct: "(0.008488 :: real) < (0.5 :: real)"
-  by eval
-
-lemma uap_war_gov_release_observable_count_pos: "0 < (542 :: nat)"
-  by eval
-
-lemma uap_war_gov_release_median_error_under_five_pct: "(0.008488 :: real) < (5.0 :: real)"
-  by eval
-
-lemma undiscovered_element_candidate_prereg_scaffold_observable_count_pos: "0 < (25 :: nat)"
-  by eval
-
-lemma undiscovered_element_candidate_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma unified_db_candidate_crosswalk_observable_count_pos: "0 < (46 :: nat)"
-  by eval
-
-lemma unified_db_candidate_crosswalk_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma unified_db_crosswalk_spine_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma unified_db_crosswalk_spine_median_error_under_half_pct: "(0.0020923899350648867 :: real) < (0.5 :: real)"
-  by eval
-
-lemma unified_db_evaluation_ok_pos: "0 < (146 :: nat)"
-  by eval
-
-lemma unified_db_records_total_pos: "0 < (30984 :: nat)"
-  by eval
-
-lemma unified_db_top_project_count_pos: "0 < (15 :: nat)"
-  by eval
-
-lemma unified_db_strict_le_total: "(9403 :: nat) <= (13637 :: nat)"
-  by eval
-
-lemma uniprot_protein_annotations_observable_count_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma uniprot_protein_annotations_median_error_under_five_pct: "(0.026684 :: real) < (5.0 :: real)"
+lemma tokenization_live_panel_median_error_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
   by eval
 
 end

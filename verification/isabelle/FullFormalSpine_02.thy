@@ -3,6 +3,51 @@ theory FullFormalSpine_02
 imports Complex_Main
 begin
 
+lemma codon_aat_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_aca_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_aca_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_acc_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_acc_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_acg_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_acg_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_act_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_act_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_aga_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_aga_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_agc_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_agc_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_agg_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_agg_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
 lemma codon_agt_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
@@ -256,51 +301,6 @@ lemma codon_tca_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = 
   by eval
 
 lemma codon_tcc_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_tcc_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_tcg_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_tcg_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_tct_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_tct_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_tga_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_tga_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_tgc_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_tgc_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_tgg_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_tgg_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_tgt_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_tgt_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_tta_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_tta_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
 end

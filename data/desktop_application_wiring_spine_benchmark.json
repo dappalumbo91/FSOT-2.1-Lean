@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-15T10:59:15.716792+00:00",
+  "generated_at": "2026-07-15T11:55:48.916332+00:00",
   "domain": "Desktop_Application_Wiring_Spine",
   "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
@@ -71,7 +71,7 @@
       "computed": 0.014767,
       "measured": 0.014767,
       "error_pct": 0.0,
-      "record_count": 37,
+      "record_count": 28,
       "eval_kind": "tier88_bridge"
     },
     {
@@ -751,15 +751,15 @@
       "computed": 0.039349,
       "measured": 0.039349,
       "error_pct": 0.0,
-      "record_count": 25,
+      "record_count": 366,
       "eval_kind": "tier88_bridge"
     },
     {
       "lab": "desktop_application_wiring_lab",
       "property": "lhv_kj_per_kg",
       "name": "fsot_hemp_waste_grounded",
-      "computed": 17305.640589,
-      "measured": 17298.833718950624,
+      "computed": 21891.228618,
+      "measured": 21882.618086633818,
       "error_pct": 0.039349,
       "source_panel": "fuel_lab_live_panel",
       "eval_kind": "ingest_relay"
@@ -768,8 +768,8 @@
       "lab": "desktop_application_wiring_lab",
       "property": "stoich_afr",
       "name": "fsot_hemp_waste_grounded",
-      "computed": 6.130686,
-      "measured": 6.12827505365232,
+      "computed": 7.481732,
+      "measured": 7.478789001995101,
       "error_pct": 0.039349,
       "source_panel": "fuel_lab_live_panel",
       "eval_kind": "ingest_relay"
@@ -778,8 +778,8 @@
       "lab": "desktop_application_wiring_lab",
       "property": "density_kg_m3",
       "name": "fsot_hemp_waste_grounded",
-      "computed": 677.439678,
-      "measured": 677.1732187499999,
+      "computed": 677.075847,
+      "measured": 676.80953125,
       "error_pct": 0.039349,
       "source_panel": "fuel_lab_live_panel",
       "eval_kind": "ingest_relay"
@@ -828,10 +828,10 @@
       "lab": "desktop_application_wiring_lab",
       "property": "panel_pooled_median",
       "name": "star_trek_transporter_live_panel",
-      "computed": 0.095551,
-      "measured": 0.095551,
+      "computed": 0.031159,
+      "measured": 0.031159,
       "error_pct": 0.0,
-      "record_count": 18,
+      "record_count": 1494,
       "eval_kind": "tier88_bridge"
     },
     {

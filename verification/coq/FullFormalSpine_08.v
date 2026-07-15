@@ -6,6 +6,48 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma materials_species_bridge_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
+
+Lemma mathematics_computational_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma mathematics_computational_median_error_under_five_pct : (0.000000000000014090183367935627%R) < (5.0%R).
+Proof. lra. Qed.
+
+Lemma math_generator_airfoil_rmse_observable_count_pos : (0 < 5)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma math_generator_airfoil_rmse_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
+
+Lemma math_generator_benchmark_formula_eval_observable_count_pos : (0 < 13)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma math_generator_benchmark_formula_eval_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
+
+Lemma math_generator_max_error_pct_positive : 0 < (1.1862232544535427%R).
+Proof. lra. Qed.
+
+Lemma math_generator_comparison_count_pos : (0 < 7)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma math_generator_rule_corpus_count_pos : (0 < 62)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma math_generator_rule_observable_count_pos : (0 < 1552)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma math_generator_rule_observables_ge_corpora : (62 <= 1552)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma math_generator_rules_eval_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma math_generator_rules_eval_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
 Lemma math_generator_rules_eval_observable_count_pos : (0 < 1552)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -30,7 +72,7 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma mechanical_engineering_panel_observable_count_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma mechanical_engineering_panel_median_error_under_half_pct : (0.078697%R) < (0.5%R).
+Lemma mechanical_engineering_panel_median_error_under_half_pct : (0.039349%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma mechanical_engineering_observable_count_pos : (0 < 50)%nat.
@@ -263,46 +305,4 @@ Proof. lra. Qed.
 
 Lemma stratum_sst_fi_median_lt_bound : (0.6532385249479395%R) < (0.7%R).
 Proof. lra. Qed.
-
-Lemma stratum_pv_fi_median_lt_bound : (0.26052599991828185%R) < (0.35%R).
-Proof. lra. Qed.
-
-Lemma stratum_l23_pyramidal_fi_median_lt_bound : (0.49782232037293184%R) < (0.55%R).
-Proof. lra. Qed.
-
-Lemma held_out_fi_pearson_r_gt_fifty_five : (0.55%R) < (0.6086458495175734%R).
-Proof. lra. Qed.
-
-Lemma stratum_sst_fi_pearson_gt_bound : (0.5%R) < (0.52310926097775%R).
-Proof. lra. Qed.
-
-Lemma stratum_pv_fi_pearson_gt_bound : (0.35%R) < (0.3931199346029611%R).
-Proof. lra. Qed.
-
-Lemma stratum_vip_fi_pearson_gt_bound : (0.4%R) < (0.4308059942466856%R).
-Proof. lra. Qed.
-
-Lemma stratum_l23_pyramidal_fi_pearson_gt_bound : (0.2%R) < (0.23129805826359506%R).
-Proof. lra. Qed.
-
-Lemma held_out_cell_count_large : (2100 < 2165)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stratum_sst_cell_count_pos : (150 < 154)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stratum_pv_cell_count_pos : (200 < 222)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stratum_vip_cell_count_pos : (140 < 146)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stratum_l23_pyramidal_cell_count_pos : (1100 < 1127)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neuron_train_cell_count_pos : (0 < 1745)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neuron_holdout_cell_count_pos : (0 < 420)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -271,6 +271,7 @@ Desktop simulators (run before `--deep` ingest):
 ```powershell
 python "C:\Users\damia\Desktop\FSOT, Star Trek Transporter\pattern_buffer_beam_simulator.py" --deep
 python "C:\Users\damia\Desktop\FSOT, Star Trek Transporter\two_gate_entanglement_simulator.py"
+python "C:\Users\damia\Desktop\FSOT, Star Trek Transporter\t3_acoustic_valve_hardware_simulator.py"
 ```
 
 **Five-prover cross-proof (Lean → Coq → Isabelle → F* → Rust):**

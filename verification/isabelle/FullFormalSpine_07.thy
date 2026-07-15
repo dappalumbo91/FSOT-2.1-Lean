@@ -3,6 +3,33 @@ theory FullFormalSpine_07
 imports Complex_Main
 begin
 
+lemma interdisciplinary_spine_crosswalk_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma interdisciplinary_spine_crosswalk_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma intrinsic_llm_validators_panel_observable_count_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma intrinsic_llm_validators_panel_median_error_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
+  by eval
+
+lemma intrinsic_llm_validators_observable_count_pos: "0 < (10 :: nat)"
+  by eval
+
+lemma intrinsic_llm_validators_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma ionospheric_chemistry_coupling_observable_count_pos: "0 < (85 :: nat)"
+  by eval
+
+lemma ionospheric_chemistry_coupling_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma island_of_stability_deep_panel_observable_count_pos: "0 < (23 :: nat)"
+  by eval
+
 lemma island_of_stability_deep_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
@@ -132,6 +159,15 @@ lemma longevity_telomere_repair_panel_observable_count_pos: "0 < (60 :: nat)"
 lemma longevity_telomere_repair_panel_median_error_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
   by eval
 
+lemma machine_and_molecule_live_median_error_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
+  by eval
+
+lemma machine_and_molecule_live_observable_count_pos: "0 < (120 :: nat)"
+  by eval
+
+lemma machine_and_molecule_live_median_error_under_five_pct: "(0.01341 :: real) < (5.0 :: real)"
+  by eval
+
 lemma magic_min_resonance_lt_internalized: "(0.45 :: real) < (0.92 :: real)"
   by eval
 
@@ -225,6 +261,12 @@ lemma material_property_verification_scaffold_observable_count_pos: "0 < (79 :: 
 lemma material_property_verification_scaffold_median_error_under_half_pct: "(0.002271 :: real) < (0.5 :: real)"
   by eval
 
+lemma materials_creep_fracture_depth_panel_observable_count_pos: "0 < (71 :: nat)"
+  by eval
+
+lemma materials_creep_fracture_depth_panel_median_error_under_half_pct: "(0.011734 :: real) < (0.5 :: real)"
+  by eval
+
 lemma materials_engineering_pooled_median_under_half_pct: "(0.027170334947435038 :: real) < (0.5 :: real)"
   by eval
 
@@ -259,48 +301,6 @@ lemma materials_species_bridge_live_panel_median_error_under_half_pct: "(0.01341
   by eval
 
 lemma materials_species_bridge_observable_count_pos: "0 < (45 :: nat)"
-  by eval
-
-lemma materials_species_bridge_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma mathematics_computational_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma mathematics_computational_median_error_under_five_pct: "(0.00000000000001409018 :: real) < (5.0 :: real)"
-  by eval
-
-lemma math_generator_airfoil_rmse_observable_count_pos: "0 < (5 :: nat)"
-  by eval
-
-lemma math_generator_airfoil_rmse_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma math_generator_benchmark_formula_eval_observable_count_pos: "0 < (13 :: nat)"
-  by eval
-
-lemma math_generator_benchmark_formula_eval_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma math_generator_max_error_pct_positive: "0 < (1.1862232544535427 :: real)"
-  by eval
-
-lemma math_generator_comparison_count_pos: "0 < (7 :: nat)"
-  by eval
-
-lemma math_generator_rule_corpus_count_pos: "0 < (62 :: nat)"
-  by eval
-
-lemma math_generator_rule_observable_count_pos: "0 < (1552 :: nat)"
-  by eval
-
-lemma math_generator_rule_observables_ge_corpora: "(62 :: nat) <= (1552 :: nat)"
-  by eval
-
-lemma math_generator_rules_eval_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma math_generator_rules_eval_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

@@ -368,6 +368,20 @@ predictions:
       per scan step, layer fidelity vs FSOT seed-scalar predictions.
     registered_at: "2026-07-15"
 
+  - id: PRED-040
+    name: transporter_t3_acoustic_valve_hardware
+    domain: Star_Trek_Transporter_Live_Panel
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.031159
+    unit: pooled_median_error_pct
+    sota_baseline: 8.0
+    sota_label: "Ultrasonic phase-valve actuator typical modeling gap"
+    discriminant: "within_10pct_of_observed_gap"
+    note: >
+      Desktop t3_acoustic_valve_hardware_simulator — piezo-stack PZT prototype, 40 kHz resonant
+      cavity phase lock on pad A emitter, impedance match + beam coupling vs FSOT seed-scalar.
+    registered_at: "2026-07-15"
+
   - id: PRED-038
     name: transporter_portal_traverse_scalar
     domain: Star_Trek_Transporter_Live_Panel

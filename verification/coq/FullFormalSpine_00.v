@@ -129,10 +129,22 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma architecture_building_science_median_error_under_half_pct : (0.07869745016115058%R) < (0.5%R).
 Proof. lra. Qed.
 
+Lemma arxiv_brain_knowledge_panel_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma arxiv_brain_knowledge_panel_median_error_under_half_pct : (0.018003%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma arxiv_gravitational_waves_panel_observable_count_pos : (0 < 60)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma arxiv_gravitational_waves_panel_median_error_under_half_pct : (0.01748%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma arxiv_primitives_panel_observable_count_pos : (0 < 22)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma arxiv_primitives_panel_median_error_under_half_pct : (0.031506%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma arxiv_primitives_v14_observable_count_pos : (0 < 14)%nat.
@@ -171,10 +183,22 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma atomic_physics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
+Lemma bibliography_corpus_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma bibliography_corpus_panel_median_error_under_half_pct : (0.03801653760497401%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma bibliography_lean_corpus_observable_count_pos : (0 < 9)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma bibliography_lean_corpus_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
+
+Lemma binary_decoder_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma binary_decoder_panel_median_error_under_half_pct : (0.013342%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma binary_decoder_rendlesham_observable_count_pos : (0 < 10)%nat.
@@ -187,6 +211,12 @@ Lemma biological_cuda_physarum_observable_count_pos : (0 < 35)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma biological_cuda_physarum_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
+
+Lemma biology_developmental_structural_depth_panel_observable_count_pos : (0 < 26)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma biology_developmental_structural_depth_panel_median_error_under_half_pct : (0.022236%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma biology_strict_observable_count_pos : (0 < 15)%nat.
@@ -209,6 +239,15 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma blackhole_thesis_within_le_total : (28 <= 28)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma blackhole_whitehole_cycle_median_error_under_half_pct : (0.026472%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma blackhole_whitehole_cycle_observable_count_pos : (0 < 17)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma blackhole_whitehole_cycle_median_error_under_five_pct : (0.026472%R) < (5.0%R).
+Proof. lra. Qed.
 
 Lemma botany_ext_pooled_median_under_half_pct : (0.022236250385193387%R) < (0.5%R).
 Proof. lra. Qed.
@@ -265,44 +304,5 @@ Lemma amygdala_spin_counts_sum : (72 = 72)%nat.
 Proof. reflexivity. Qed.
 
 Lemma microglial_surveillance_spin_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma neocortex_genetic_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma cerebellum_genetic_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma brainstem_arousal_genetic_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma hippocampus_genetic_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma basal_ganglia_genetic_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma thalamus_genetic_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma astrocyte_syncytium_genetic_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma oligodendrocyte_myelination_genetic_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma amygdala_genetic_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma microglial_surveillance_genetic_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma brain_prior_codon_pattern_space_eq_twenty_seven : (27 = 27)%nat.
-Proof. reflexivity. Qed.
-
-Lemma neocortex_genetic_zero_is_superposition : (0.5138888888888888%R) = (0.5138888888888888%R).
-Proof. reflexivity. Qed.
-
-Lemma cerebellum_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
 Proof. reflexivity. Qed.
 

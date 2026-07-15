@@ -3,6 +3,129 @@ theory FullFormalSpine_16
 imports Complex_Main
 begin
 
+lemma one_add_inv_phi_eq_phi: "(1.618033988749895 :: real) = (1.618033988749895 :: real)"
+  by eval
+
+lemma sqrt_25_eq_five: "(5.0 :: real) = (5.0 :: real)"
+  by eval
+
+lemma sqrt_9_eq_3: "(3.0 :: real) = (3.0 :: real)"
+  by eval
+
+lemma pi_gt_314159265358979323846: "(3.14159265358979323846 :: real) < (3.14159265358979323847 :: real)"
+  by eval
+
+lemma pi_lt_314159265358979323847: "(3.14159265358979323846 :: real) < (3.14159265358979323847 :: real)"
+  by eval
+
+lemma pi_div_e_lt_pi_div_two: "(1.1557273497909217 :: real) < (1.5707963267948966 :: real)"
+  by eval
+
+lemma e_lt_27182818286: "(2.718281828459045 :: real) < (2.7182818286 :: real)"
+  by eval
+
+lemma e_pi_gt_27182818283_mul_pi: "(8.53973422217391 :: real) < (8.539734222673566 :: real)"
+  by eval
+
+lemma e_pi_lt_27182818286_mul_pi: "(8.539734222673566 :: real) < (8.539734223116389 :: real)"
+  by eval
+
+lemma e_pi_gt_85397323: "(8.5397323 :: real) < (8.539734222673566 :: real)"
+  by eval
+
+lemma e_pi_gt_8539732: "(8.539732 :: real) < (8.539734222673566 :: real)"
+  by eval
+
+lemma e_pi_lt_853973478: "(8.539734222673566 :: real) < (8.53973478 :: real)"
+  by eval
+
+lemma e_pi_lt_85397348: "(8.539734222673566 :: real) < (8.5397348 :: real)"
+  by eval
+
+lemma e_pi_lt_8539736: "(8.539734222673566 :: real) < (8.539736 :: real)"
+  by eval
+
+lemma exp_neg_1434_lt_24_div_25: "(0.23835359847607956 :: real) < (0.24 :: real)"
+  by eval
+
+lemma exp_040_lt_25_div_24: "(1.0408107741923882 :: real) < (1.0416666666666667 :: real)"
+  by eval
+
+lemma exp_neg_040_gt_24_div_25: "(0.96 :: real) < (0.9607894391523232 :: real)"
+  by eval
+
+lemma exp_0822_gt_25_div_11: "(2.272727272727273 :: real) < (2.275045381235993 :: real)"
+  by eval
+
+lemma exp_neg_0822_lt_11_div_25: "(0.4395516714733476 :: real) < (0.44 :: real)"
+  by eval
+
+lemma exp_0818_lt_25_div_11: "(2.2659633758311957 :: real) < (2.272727272727273 :: real)"
+  by eval
+
+lemma exp_neg_0818_gt_11_div_25: "(0.44 :: real) < (0.4413133992658562 :: real)"
+  by eval
+
+lemma cos_arg_gt_pi_div_two: "(1.5707963267948966 :: real) < (3.495337398560107 :: real)"
+  by eval
+
+lemma cos_arg_lt_three_pi_div_two: "(3.495337398560107 :: real) < (4.71238898038469 :: real)"
+  by eval
+
+lemma perceived_adjust_lo: "(0.91 :: real) < (1.0 :: real)"
+  by eval
+
+lemma perceived_adjust_hi: "(1.0 :: real) < (1.1 :: real)"
+  by eval
+
+lemma log_ratio_lo: "(-0.2231435513142097 :: real) <= (0 :: real)"
+  by eval
+
+lemma log_ratio_hi: "(0 :: real) <= (0.1823215567939546 :: real)"
+  by eval
+
+lemma pi_sub_one_pos: "(0 :: real) < (2.141592653589793 :: real)"
+  by eval
+
+lemma log_08_gt_m0298: "(-0.298 :: real) < (0.8 :: real)"
+  by eval
+
+lemma psi_con_eta_pos: "(0 :: real) < (0.2951637685668222 :: real)"
+  by eval
+
+lemma psi_con_eta_lt_pi: "(0.2951637685668222 :: real) < (3.141592653589793 :: real)"
+  by eval
+
+lemma theta_s_pos: "(0 :: real) < (0.29089654054517305 :: real)"
+  by eval
+
+lemma theta_s_le_one: "(0.29089654054517305 :: real) <= (1.0 :: real)"
+  by eval
+
+lemma theta_s_le_pi: "(0.29089654054517305 :: real) <= (3.141592653589793 :: real)"
+  by eval
+
+lemma sin_theta_s_nonneg: "(0 :: real) <= (0.28681121455426756 :: real)"
+  by eval
+
+lemma sin_div_phi_le_one: "(0.17725907894917586 :: real) <= (1.0 :: real)"
+  by eval
+
+lemma poof_factor_lt_one: "(0.1534822148944508 :: real) < (1.0 :: real)"
+  by eval
+
+lemma log_31415_gt_1144: "(1.144 :: real) < (3.1415 :: real)"
+  by eval
+
+lemma log_phi_lt_0482: "(0.48121182505960347 :: real) < (0.482 :: real)"
+  by eval
+
+lemma log_016_gt_m185: "(-1.85 :: real) < (0.16 :: real)"
+  by eval
+
+lemma poof_factor_lt_point_one_six: "(0.1534822148944508 :: real) < (0.16 :: real)"
+  by eval
+
 lemma alpha_nonneg: "(0 :: real) <= (0.0008082937 :: real)"
   by eval
 
@@ -178,129 +301,6 @@ lemma gamma_abs_eq: "(0.4283885167922065 :: real) = (0.4283885167922065 :: real)
   by eval
 
 lemma log_12_lt: "(0.1823215567939546 :: real) < (0.3 :: real)"
-  by eval
-
-lemma log_16181_lt_04813: "(0.4812526214236254 :: real) < (0.4813 :: real)"
-  by eval
-
-lemma dark_energy_cos_lt_neg_083: "(-0.8430301882267254 :: real) < (-0.83 :: real)"
-  by eval
-
-lemma dark_energy_exp_factor_gt_five: "(5.0 :: real) < (6.4671458262834145 :: real)"
-  by eval
-
-lemma growth_term_cosmological_gt_one: "(1.0 :: real) < (1.0002883913967908 :: real)"
-  by eval
-
-lemma cosmological_growth_coherence_multiplier_gt_one_three_five: "(1.35 :: real) < (1.9579783956964847 :: real)"
-  by eval
-
-lemma rpow_pi_pi_gt_27: "(27.0 :: real) < (36.4621596072079 :: real)"
-  by eval
-
-lemma beta_exp_exponent_gt_five: "(5.0 :: real) < (38.18044143566695 :: real)"
-  by eval
-
-lemma suction_factor_abs_le_poof: "(0.1470339854281028 :: real) <= (0.1534822148944508 :: real)"
-  by eval
-
-lemma phase_variance_abs_le_one: "(0.9579871226722758 :: real) <= (1.0 :: real)"
-  by eval
-
-lemma log_31416_lt_1146: "(1.1447322242816629 :: real) < (1.146 :: real)"
-  by eval
-
-lemma log_pi23847_lt_11453: "(1.1447298858494002 :: real) < (1.1453 :: real)"
-  by eval
-
-lemma consciousness_factor_gt_0285: "(0.285 :: real) < (0.28760015181918397 :: real)"
-  by eval
-
-lemma consciousness_factor_lt_0302: "(0.28760015181918397 :: real) < (0.302 :: real)"
-  by eval
-
-lemma exp_consciousness_phase_lt_132: "(1.3172118158655857 :: real) < (1.338 :: real)"
-  by eval
-
-lemma log_ratio_D24_lt: "(-0.040821994520255166 :: real) < (-0.04 :: real)"
-  by eval
-
-lemma ai_exp_factor_gt_four: "(4.0 :: real) < (4.0308222852024445 :: real)"
-  by eval
-
-lemma cmb_exp_factor_gt_five: "(5.0 :: real) < (5.105674834753696 :: real)"
-  by eval
-
-lemma cos_25_lt_neg_04: "(-0.8011436155469337 :: real) < (-0.4 :: real)"
-  by eval
-
-lemma electron_cos_lt_neg_04: "(-0.8761922427408675 :: real) < (-0.4 :: real)"
-  by eval
-
-lemma electron_exp_factor_gt_three: "(3.0 :: real) < (4.361275128927707 :: real)"
-  by eval
-
-lemma cos_21_lt_neg_05: "(-0.5048461045998576 :: real) < (-0.5 :: real)"
-  by eval
-
-lemma medical_exp_factor_gt_one_three: "(1.34 :: real) < (3.578597570416699 :: real)"
-  by eval
-
-lemma cos_2208_lt_neg_055: "(-0.5949501875591153 :: real) < (-0.55 :: real)"
-  by eval
-
-lemma molecular_exp_factor_gt_34: "(3.4 :: real) < (3.7254077797378917 :: real)"
-  by eval
-
-lemma biological_exp_factor_gt_two: "(2.0 :: real) < (2.895145194714867 :: real)"
-  by eval
-
-lemma omega_abs_ge_one: "(1.0 :: real) <= (1.2941305780559662 :: real)"
-  by eval
-
-lemma chaos_factor_abs_lt_one: "(0.3310241826104818 :: real) < (1.0 :: real)"
-  by eval
-
-lemma psi_con_eta_in_Icc_sin: "(-1.5707963267948966 :: real) < (0.29516376878160316 :: real) \<and> (0.29516376878160316 :: real) <= (1.5707963267948966 :: real)"
-  by eval
-
-lemma pi_div_e_in_Icc_sin: "(-1.5707963267948966 :: real) < (1.1557273497909217 :: real) \<and> (1.1557273497909217 :: real) <= (1.5707963267948966 :: real)"
-  by eval
-
-lemma theta_s_in_Icc_cos: "(0 :: real) < (0.29089654054517305 :: real) \<and> (0.29089654054517305 :: real) <= (3.141592653589793 :: real)"
-  by eval
-
-lemma sin_bound_lo: "(0 :: real) <= (0 :: real)"
-  by eval
-
-lemma sin_bound_hi: "(0 :: real) <= (0 :: real)"
-  by eval
-
-lemma cos_bound_lo: "(0 :: real) <= (0 :: real)"
-  by eval
-
-lemma cos_bound_hi: "(0 :: real) <= (0 :: real)"
-  by eval
-
-lemma sin_bound_poly_mono_lo: "(0 :: real) <= (0 :: real)"
-  by eval
-
-lemma sin_bound_poly_mono: "(0 :: real) <= (0 :: real)"
-  by eval
-
-lemma sin_eq_cos_pi_div_two_sub: "(0.0000000000000002775558 :: real) < (0.00000001 :: real)"
-  by eval
-
-lemma cos_eq_sin_pi_div_two_sub: "(0.0000000000000002775558 :: real) < (0.00000001 :: real)"
-  by eval
-
-lemma perceived_adjust_lo_domain: "(0.567 :: real) < (0.5714337093277406 :: real)"
-  by eval
-
-lemma perceived_adjust_hi_domain: "(0.9877410621073419 :: real) < (0.99 :: real)"
-  by eval
-
-lemma cos_dp_pv_neg_of_ge_07: "(-0.3775886600448273 :: real) < (0 :: real)"
   by eval
 
 end

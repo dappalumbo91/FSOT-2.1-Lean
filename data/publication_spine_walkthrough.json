@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T01:19:39.632249+00:00",
+  "generated_at": "2026-07-15T12:07:11.906174+00:00",
   "version": "1.0",
   "title": "FSOT single-spine fractal walkthrough",
   "chain": [
@@ -66,19 +66,19 @@
       "label": "Public measurement cross-check",
       "detail": "374 benchmark files vs Planck, Riess, DESI, Zebrahub, NOAA, The Well, \u2026",
       "stats": {
-        "benchmark_file_count": 374,
-        "domain_count": 374,
-        "green_gate_pass_count": 374,
+        "benchmark_file_count": 394,
+        "domain_count": 394,
+        "green_gate_pass_count": 394,
         "green_gate_fail_count": 0,
         "green_gate_threshold_pct": 0.5,
-        "total_scalar_records": 54994,
-        "pooled_median_of_domains_pct": 0.008381497018408523,
-        "mean_pooled_median_pct": 0.01349727378145468,
-        "p95_pooled_median_pct": 0.03990518384182655,
+        "total_scalar_records": 56731,
+        "pooled_median_of_domains_pct": 0.013003,
+        "mean_pooled_median_pct": 0.014654310905799947,
+        "p95_pooled_median_pct": 0.03801653760497961,
         "worst_domain_max_scalar_error_pct": 0.4989,
         "worst_scalar_domain": "Phi_Morphogenetic_Scaling",
-        "domains_under_0_1pct_median": 321,
-        "domains_under_0_5pct_median": 323
+        "domains_under_0_1pct_median": 345,
+        "domains_under_0_5pct_median": 347
       },
       "artifact": "data/benchmark_margin_audit.json"
     }

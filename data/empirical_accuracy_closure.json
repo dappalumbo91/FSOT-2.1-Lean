@@ -1,35 +1,35 @@
 {
-  "generated_at": "2026-07-15T01:00:50.290774+00:00",
+  "generated_at": "2026-07-15T12:07:02.366466+00:00",
   "version": "1.0",
   "verdict": "CROSS_DOMAIN_EMPIRICALLY_TIGHT",
   "primary_claim": "A single intrinsic constant spine reproduces thousands of independent measurements across unrelated scientific domains with sub-0.5% pooled median error \u2014 an envelope inconsistent with a theory that does not describe reality.",
   "benchmark_envelope": {
-    "benchmark_file_count": 374,
-    "domain_count": 374,
-    "green_gate_pass_count": 374,
+    "benchmark_file_count": 394,
+    "domain_count": 394,
+    "green_gate_pass_count": 394,
     "green_gate_fail_count": 0,
     "green_gate_threshold_pct": 0.5,
-    "total_scalar_records": 54994,
-    "pooled_median_of_domains_pct": 0.008381497018408523,
-    "mean_pooled_median_pct": 0.01349727378145468,
-    "p95_pooled_median_pct": 0.03990518384182655,
+    "total_scalar_records": 56731,
+    "pooled_median_of_domains_pct": 0.013003,
+    "mean_pooled_median_pct": 0.014654310905799947,
+    "p95_pooled_median_pct": 0.03801653760497961,
     "worst_domain_max_scalar_error_pct": 0.4989,
     "worst_scalar_domain": "Phi_Morphogenetic_Scaling",
-    "domains_under_0_1pct_median": 321,
-    "domains_under_0_5pct_median": 323
+    "domains_under_0_1pct_median": 345,
+    "domains_under_0_5pct_median": 347
   },
   "project_scope": {
-    "total_scientific_domains": 376,
-    "extension_domains": 340,
+    "total_scientific_domains": 403,
+    "extension_domains": 367,
     "neurolab_domains": 35,
-    "total_empirical_records": 257255,
-    "lean_formal_modules": 474,
+    "total_empirical_records": 536740,
+    "lean_formal_modules": 501,
     "benchmark_domains_non_cosmo_majority": true,
     "note": "282 scientific domains / 306k+ records span geochemistry, genomics, magnetosphere, clinical medicine, materials, virology, acoustics, etc. Cosmology is one sector \u2014 255/272 benchmark files are non-cosmo."
   },
   "extension_domains": {
-    "count": 347,
-    "green_pass": 347,
+    "count": 367,
+    "green_pass": 367,
     "green_fail": 0
   },
   "formula_corpus_unique": {
@@ -49,7 +49,7 @@
     "below_sota_ids": []
   },
   "null_hypothesis_framing": {
-    "statement": "If FSOT did not track reality, blind application across cosmology, chemistry, genomics, magnetosphere, materials, and 260+ other domains would not yield 0/272 green-gate failures with median-of-medians 0.008381497018408523% and worst per-domain max scalar 0.4989%.",
+    "statement": "If FSOT did not track reality, blind application across cosmology, chemistry, genomics, magnetosphere, materials, and 260+ other domains would not yield 0/272 green-gate failures with median-of-medians 0.013003% and worst per-domain max scalar 0.4989%.",
     "expected_under_wrong_theory": "Uncorrelated wrong formulas would produce order-unity to order-10 percent errors; centi-percent medians across hundreds of domains would require extraordinary coincidence or post-hoc fitting (excluded by preregistered constant spine + no per-observable tuning)."
   },
   "honest_limits": [

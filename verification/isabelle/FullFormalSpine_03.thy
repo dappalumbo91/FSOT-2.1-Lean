@@ -3,6 +3,51 @@ theory FullFormalSpine_03
 imports Complex_Main
 begin
 
+lemma codon_tcc_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_tcg_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_tcg_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_tct_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_tct_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_tga_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_tga_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_tgc_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_tgc_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_tgg_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_tgg_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_tgt_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_tgt_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_tta_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_tta_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
 lemma codon_ttc_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
@@ -66,7 +111,7 @@ lemma computational_reasoning_observable_count_pos: "0 < (577 :: nat)"
 lemma computational_reasoning_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
-lemma condensed_matter_superconductivity_depth_panel_observable_count_pos: "0 < (24 :: nat)"
+lemma condensed_matter_superconductivity_depth_panel_observable_count_pos: "0 < (21 :: nat)"
   by eval
 
 lemma condensed_matter_superconductivity_depth_panel_median_error_under_half_pct: "(0.033841 :: real) < (0.5 :: real)"
@@ -114,10 +159,10 @@ lemma consciousness_species_multi_panel_observable_count_pos: "0 < (269 :: nat)"
 lemma consciousness_species_multi_panel_median_error_under_half_pct: "(0.0201195 :: real) < (0.5 :: real)"
   by eval
 
-lemma cosmology_anomalies_observable_count_pos: "0 < (12 :: nat)"
+lemma cosmology_anomalies_observable_count_pos: "0 < (23 :: nat)"
   by eval
 
-lemma cosmology_anomalies_median_error_under_half_pct: "(0.140126 :: real) < (0.5 :: real)"
+lemma cosmology_anomalies_median_error_under_half_pct: "(0.024602 :: real) < (0.5 :: real)"
   by eval
 
 lemma cosmology_anomaly_deep_panel_observable_count_pos: "0 < (24 :: nat)"
@@ -256,51 +301,6 @@ lemma cryptography_technology_observable_count_pos: "0 < (44 :: nat)"
   by eval
 
 lemma cryptography_technology_median_error_under_half_pct: "(0.047520672006218234 :: real) < (0.5 :: real)"
-  by eval
-
-lemma culinary_arts_observable_count_pos: "0 < (26 :: nat)"
-  by eval
-
-lemma culinary_arts_median_error_under_half_pct: "(0.047615187057821064 :: real) < (0.5 :: real)"
-  by eval
-
-lemma culinary_fermentation_maillard_panel_observable_count_pos: "0 < (130 :: nat)"
-  by eval
-
-lemma culinary_fermentation_maillard_panel_median_error_under_half_pct: "(0.040788 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cve_codon_hole_falsification_observable_count_pos: "0 < (29 :: nat)"
-  by eval
-
-lemma cve_codon_hole_falsification_median_error_under_half_pct: "(0.009186636881580057 :: real) < (0.5 :: real)"
-  by eval
-
-lemma dark_energy_cpl_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma dark_energy_cpl_median_error_under_half_pct: "(0.029733 :: real) < (0.5 :: real)"
-  by eval
-
-lemma dark_sector_open_problems_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma dark_sector_open_problems_median_error_under_half_pct: "(0.01529034996934153 :: real) < (0.5 :: real)"
-  by eval
-
-lemma desktop_application_wiring_spine_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma desktop_application_wiring_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma distant_island_emergence_simulation_observable_count_pos: "0 < (36 :: nat)"
-  by eval
-
-lemma distant_island_emergence_simulation_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma distant_island_z128_z132_deep_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
 end

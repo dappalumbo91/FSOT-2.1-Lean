@@ -3,6 +3,27 @@ theory FullFormalSpine_06
 imports Complex_Main
 begin
 
+lemma fuel_lab_chemical_domain_positive: "(0 :: real) < (1.0 :: real)"
+  by eval
+
+lemma fuel_resolved_le_entries: "(34 :: nat) <= (34 :: nat)"
+  by eval
+
+lemma fuel_thermochemistry_public_anchors_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma fuel_thermochemistry_public_anchors_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma fusion_decay_chain_prereg_scaffold_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma fusion_decay_chain_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma connective_plasma_confinement_pos: "0 < (0.131181176323 :: real)"
+  by eval
+
 lemma connective_seawater_acoustic_pos: "0 < (0.094115088176 :: real)"
   by eval
 
@@ -123,10 +144,10 @@ lemma higgs_branching_max_error_under_five_pct: "(4.232801452006084 :: real) < (
 lemma higgs_branching_components_sum: "(14 :: nat) = (14 :: nat)"
   by eval
 
-lemma higgs_mass_observable_count_pos: "0 < (9 :: nat)"
+lemma higgs_mass_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma higgs_mass_median_error_under_half_pct: "(0.03990518384182655 :: real) < (0.5 :: real)"
+lemma higgs_mass_median_error_under_half_pct: "(0.012112816039879785 :: real) < (0.5 :: real)"
   by eval
 
 lemma history_ext_pooled_median_under_half_pct: "(0.019504399572477397 :: real) < (0.5 :: real)"
@@ -280,27 +301,6 @@ lemma interactive_media_prereg_scaffold_observable_count_pos: "0 < (42 :: nat)"
   by eval
 
 lemma interactive_media_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma interdisciplinary_spine_crosswalk_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma interdisciplinary_spine_crosswalk_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma intrinsic_llm_validators_observable_count_pos: "0 < (10 :: nat)"
-  by eval
-
-lemma intrinsic_llm_validators_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma ionospheric_chemistry_coupling_observable_count_pos: "0 < (85 :: nat)"
-  by eval
-
-lemma ionospheric_chemistry_coupling_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma island_of_stability_deep_panel_observable_count_pos: "0 < (23 :: nat)"
   by eval
 
 end

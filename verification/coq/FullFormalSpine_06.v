@@ -6,6 +6,27 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma fuel_lab_chemical_domain_positive : 0%R < (1.0%R).
+Proof. lra. Qed.
+
+Lemma fuel_resolved_le_entries : (34 <= 34)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma fuel_thermochemistry_public_anchors_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fuel_thermochemistry_public_anchors_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fusion_decay_chain_prereg_scaffold_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fusion_decay_chain_prereg_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma connective_plasma_confinement_pos : 0 < (0.131181176323%R).
+Proof. lra. Qed.
+
 Lemma connective_seawater_acoustic_pos : 0 < (0.094115088176%R).
 Proof. lra. Qed.
 
@@ -126,10 +147,10 @@ Proof. lra. Qed.
 Lemma higgs_branching_components_sum : (14 = 14)%nat.
 Proof. reflexivity. Qed.
 
-Lemma higgs_mass_observable_count_pos : (0 < 9)%nat.
+Lemma higgs_mass_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma higgs_mass_median_error_under_half_pct : (0.03990518384182655%R) < (0.5%R).
+Lemma higgs_mass_median_error_under_half_pct : (0.012112816039879785%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma history_ext_pooled_median_under_half_pct : (0.019504399572477397%R) < (0.5%R).
@@ -284,25 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma interactive_media_prereg_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
-
-Lemma interdisciplinary_spine_crosswalk_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma interdisciplinary_spine_crosswalk_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma intrinsic_llm_validators_observable_count_pos : (0 < 10)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma intrinsic_llm_validators_median_error_under_five_pct : 0%R < (5.0%R).
-Proof. lra. Qed.
-
-Lemma ionospheric_chemistry_coupling_observable_count_pos : (0 < 85)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma ionospheric_chemistry_coupling_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma island_of_stability_deep_panel_observable_count_pos : (0 < 23)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

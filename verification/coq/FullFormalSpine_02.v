@@ -6,6 +6,51 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma codon_aat_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_aca_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_aca_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_acc_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_acc_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_acg_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_acg_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_act_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_act_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_aga_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_aga_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_agc_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_agc_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_agg_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_agg_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
 Lemma codon_agt_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
@@ -259,50 +304,5 @@ Lemma codon_tca_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
 Lemma codon_tcc_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tcc_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tcg_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tcg_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tct_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tct_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tga_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tga_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tgc_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tgc_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tgg_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tgg_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tgt_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tgt_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tta_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tta_secondary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

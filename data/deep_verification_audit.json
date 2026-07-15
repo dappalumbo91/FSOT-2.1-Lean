@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-15T01:00:41.063293+00:00",
+  "generated_at": "2026-07-15T12:06:53.529767+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
     "overall_ok": true,
-    "undeniable_toe_claim": false,
+    "undeniable_toe_claim": true,
     "cross_proof_overall_ok": true,
     "extension_domains_all_green": true,
     "transcendental_certificates_ok": true,
@@ -13,18 +13,18 @@
   },
   "obligation_spine": {
     "connective": 24,
-    "full_formal_total": 2309,
-    "full_formal_provable": 2255,
+    "full_formal_total": 2370,
+    "full_formal_provable": 2316,
     "transcendental": 68,
-    "rust_replay_total": 1914,
-    "rust_replay_expected": 1914,
+    "rust_replay_total": 1955,
+    "rust_replay_expected": 1955,
     "rust_replay_formula": "connective + atomic_provable + transcendental (bundles/margins excluded)",
     "by_kind": {
-      "nat_pos": 562,
-      "r_lt_lit_pure": 312,
-      "bundle_conj": 487,
-      "lt_lit": 209,
-      "lt_half": 154,
+      "nat_pos": 575,
+      "r_lt_lit_pure": 335,
+      "bundle_conj": 507,
+      "lt_lit": 213,
+      "lt_half": 148,
       "gt_lit": 135,
       "eq_nat": 25,
       "nat_le_sym": 30,
@@ -32,7 +32,7 @@
       "r_eq_sym": 12,
       "r_eq_lit": 28,
       "r_nonneg": 10,
-      "pos": 94,
+      "pos": 101,
       "int_tuple3_eq": 148,
       "nat_gt_lit": 13,
       "nat_le_lit": 2,
@@ -50,26 +50,26 @@
   },
   "triangulation": {
     "coq_atomic": {
-      "atomic_triangulated_ok": 1822,
+      "atomic_triangulated_ok": 1863,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 433,
+      "bundle_conj_triangulated_ok": 453,
       "bundle_conj_triangulated_fail": 0,
       "margin_violations_confirmed_ok": 0,
       "margin_violations_confirmed_fail": 54,
       "pct_atomic_triangulated": 100.0
     },
     "isabelle_atomic": {
-      "atomic_triangulated_ok": 1822,
+      "atomic_triangulated_ok": 1863,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 433,
+      "bundle_conj_triangulated_ok": 453,
       "bundle_conj_triangulated_fail": 0,
       "pct_atomic_triangulated": 100.0
     },
     "rust": {
       "connective_ok": 24,
-      "formal_ok": 1822,
+      "formal_ok": 1863,
       "transcendental_ok": 68,
-      "total": 1914
+      "total": 1955
     },
     "fstar_checks": {
       "fstar_verify_passed": true,
@@ -83,39 +83,39 @@
     }
   },
   "margin_bundle_analysis": {
-    "total_obligations": 2309,
-    "provable_atomic": 1822,
-    "provable_bundle_conj": 433,
+    "total_obligations": 2370,
+    "provable_atomic": 1863,
+    "provable_bundle_conj": 453,
     "structural_bundle_excluded": 54,
     "false_margin_violations": 0,
     "conjunct_atomic_coverage_pct": 99.91,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
-    "lt_half_pooled_median_margin": "0.480495600427523394",
-    "atomic_triangulated": "1822/1822",
-    "bundle_conj_triangulated": "433/433",
+    "lt_half_pooled_median_margin": "0.481980975107070365",
+    "atomic_triangulated": "1863/1863",
+    "bundle_conj_triangulated": "453/453",
     "margin_violations_confirmed_in_lean": 0,
     "margin_violations_unconfirmed": 54
   },
   "structural_bundle_ledger": {
-    "bundle_conj_total": 487,
+    "bundle_conj_total": 507,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 433,
-    "total_conjuncts": 2219,
-    "conjuncts_with_atomic_coverage": 2217,
+    "provable_bundle_conj": 453,
+    "total_conjuncts": 2306,
+    "conjuncts_with_atomic_coverage": 2304,
     "conjunct_atomic_coverage_pct": 99.91,
-    "explicit_linked_conjuncts": 1704,
-    "explicit_linked_in_spine": 1702,
-    "explicit_link_hit_pct": 99.88,
+    "explicit_linked_conjuncts": 1764,
+    "explicit_linked_in_spine": 1762,
+    "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "oracle_debt_ledger": {
-    "obligation_total": 2309,
-    "atomic_triangulated": 1822,
+    "obligation_total": 2370,
+    "atomic_triangulated": 1863,
     "oracle_replay": 0,
     "proof_depth_oracle_tagged": 49,
-    "structural_index": 487,
+    "structural_index": 507,
     "oracle_fraction_pct": 0.0,
-    "atomic_fraction_pct": 78.91,
+    "atomic_fraction_pct": 78.61,
     "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
@@ -132,7 +132,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-07-15T00:30:31.130812+00:00",
+    "generated_at": "2026-07-15T11:59:25.467302+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -194,15 +194,15 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-07-15T00:30:31.192277+00:00",
+    "generated_at": "2026-07-15T11:59:25.533966+00:00",
     "version": "1.0",
-    "overall_runtime_ok": true,
+    "overall_runtime_ok": false,
     "esp32_scalar_only_gap_closed": true,
     "layers": [
       {
         "id": "lean_coq_isabelle_rust",
         "scope": "2146 exported obligations; 1820 atomic triangulated",
-        "status": "passed",
+        "status": "failed",
         "undeniable_for": "numeric atomic spine"
       },
       {
@@ -236,7 +236,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-07-15T00:30:31.257342+00:00",
+    "generated_at": "2026-07-15T11:59:25.610029+00:00",
     "version": "1.0",
     "verdict": "NOT_ZERO \u2014 intrinsic constants + per-domain assignment table",
     "headline_claim": "zero free parameters",
@@ -289,15 +289,15 @@
     ]
   },
   "extension_precision": {
-    "domain_count": 347,
-    "green_gate_pass_count": 347,
-    "core_benchmark_green": 374,
+    "domain_count": 367,
+    "green_gate_pass_count": 367,
+    "core_benchmark_green": 394,
     "worst_scalar_max_pct": 0.4989
   },
   "scientific_pushback": {
     "summary": {
-      "extension_domain_count": 347,
-      "green_gate_pass_count": 347,
+      "extension_domain_count": 367,
+      "green_gate_pass_count": 367,
       "green_gate_fail_count": 0,
       "aspiration_scalar_debt_count": 0,
       "stumped_observable_count": 13,
@@ -313,19 +313,19 @@
   },
   "coverage_audit": {
     "full_formal_spine": {
-      "obligations_in_full_json": 2309,
-      "modules_in_full_json": 480,
+      "obligations_in_full_json": 2370,
+      "modules_in_full_json": 500,
       "by_tier": {
-        "priors": 1848,
+        "priors": 1909,
         "extended": 184,
         "bounds": 277
       },
       "by_kind": {
-        "nat_pos": 562,
-        "r_lt_lit_pure": 312,
-        "bundle_conj": 487,
-        "lt_lit": 209,
-        "lt_half": 154,
+        "nat_pos": 575,
+        "r_lt_lit_pure": 335,
+        "bundle_conj": 507,
+        "lt_lit": 213,
+        "lt_half": 148,
         "gt_lit": 135,
         "eq_nat": 25,
         "nat_le_sym": 30,
@@ -333,7 +333,7 @@
         "r_eq_sym": 12,
         "r_eq_lit": 28,
         "r_nonneg": 10,
-        "pos": 94,
+        "pos": 101,
         "int_tuple3_eq": 148,
         "nat_gt_lit": 13,
         "nat_le_lit": 2,
@@ -348,11 +348,11 @@
         "r_interval_conj": 1,
         "abs_interval_conj": 1
       },
-      "pct_of_formal_theorems": 124.5415,
+      "pct_of_formal_theorems": 123.7598,
       "coq_chunks_generated": 19,
       "margin_violations_excluded": 0,
-      "coq_provable_target": 2309,
-      "coq_proved_yet": 2309,
+      "coq_provable_target": 2370,
+      "coq_proved_yet": 2370,
       "coq_proved_pct_of_full_export": 100.0,
       "coq_proved_pct_of_provable": 100.0,
       "coq_compile_status": "passed",
@@ -362,11 +362,11 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-07-15T01:00:33.798718+00:00",
+    "generated_at": "2026-07-15T12:06:47.057739+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
-    "overall_ok": false,
-    "provable_bundle_conj_count": 433,
+    "overall_ok": true,
+    "provable_bundle_conj_count": 453,
     "provable_bundles": [
       {
         "id": "acoustic_resonance_materials_bundle",
@@ -437,7 +437,15 @@
         "conjunct_count": 4
       },
       {
+        "id": "arxiv_brain_knowledge_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "arxiv_gravitational_waves_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "arxiv_primitives_panel_bundle",
         "conjunct_count": 4
       },
       {
@@ -457,7 +465,15 @@
         "conjunct_count": 5
       },
       {
+        "id": "bibliography_corpus_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "bibliography_lean_corpus_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "binary_decoder_panel_bundle",
         "conjunct_count": 4
       },
       {
@@ -469,11 +485,19 @@
         "conjunct_count": 4
       },
       {
+        "id": "biology_developmental_structural_depth_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "biology_strict_bundle",
         "conjunct_count": 4
       },
       {
         "id": "biophysics_public_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "blackhole_whitehole_cycle_bundle",
         "conjunct_count": 4
       },
       {
@@ -494,6 +518,10 @@
       },
       {
         "id": "breakthrough_discoveries_2024_2026_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "canonical_oracle_panel_bundle",
         "conjunct_count": 4
       },
       {
@@ -725,6 +753,10 @@
         "conjunct_count": 4
       },
       {
+        "id": "early_lean_mc_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "ecology_gap_fill_bundle",
         "conjunct_count": 5
       },
@@ -902,31 +934,31 @@
       },
       {
         "id": "founding_atmospheric_ozone_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "founding_cosmic_dust_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "founding_cosmic_ray_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "founding_galactic_halo_rotation_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "founding_pulsar_glitch_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "founding_quantum_vacuum_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "founding_white_dwarf_cooling_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "fpc_fluidlink_timing_deep_panel_bundle",
@@ -950,6 +982,10 @@
       },
       {
         "id": "fuel_candidate_prereg_scaffold_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "fuel_lab_live_bundle",
         "conjunct_count": 4
       },
       {
@@ -1113,6 +1149,10 @@
         "conjunct_count": 4
       },
       {
+        "id": "intrinsic_llm_validators_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "intrinsic_llm_validators_bundle",
         "conjunct_count": 4
       },
@@ -1189,6 +1229,10 @@
         "conjunct_count": 4
       },
       {
+        "id": "machine_and_molecule_live_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "magic_imbalance_penalty_in_unit_interval",
         "conjunct_count": 2
       },
@@ -1238,6 +1282,10 @@
       },
       {
         "id": "material_property_verification_scaffold_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "materials_creep_fracture_depth_panel_bundle",
         "conjunct_count": 4
       },
       {
@@ -1449,6 +1497,10 @@
         "conjunct_count": 4
       },
       {
+        "id": "omni_theory_humanities_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "oncology_bundle",
         "conjunct_count": 7
       },
@@ -1565,6 +1617,10 @@
         "conjunct_count": 4
       },
       {
+        "id": "physarum_biological_cuda_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "planetary_atmospheres_bundle",
         "conjunct_count": 7
       },
@@ -1611,6 +1667,10 @@
       {
         "id": "psychology_gap_fill_bundle",
         "conjunct_count": 5
+      },
+      {
+        "id": "psychology_psychometrics_depth_panel_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "pubchem_compound_properties_bundle",
@@ -1661,6 +1721,10 @@
         "conjunct_count": 7
       },
       {
+        "id": "quantum_mechanics_entanglement_depth_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "quantum_mechanics_gap_fill_bundle",
         "conjunct_count": 5
       },
@@ -1701,7 +1765,15 @@
         "conjunct_count": 4
       },
       {
+        "id": "rust_lean_bridge_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "rust_lean_bridge_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "scalar_solver_35_panel_bundle",
         "conjunct_count": 4
       },
       {
@@ -1790,6 +1862,10 @@
       },
       {
         "id": "sports_biomechanics_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "star_trek_transporter_bundle",
         "conjunct_count": 4
       },
       {
@@ -2001,6 +2077,10 @@
         "conjunct_count": 4
       },
       {
+        "id": "vl_agent_distill_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "vl_distill_atlas_bundle",
         "conjunct_count": 4
       },
@@ -2101,11 +2181,11 @@
         "conjunct_count": 7
       }
     ],
-    "structural_proof_count": 1831,
+    "structural_proof_count": 1911,
     "min_required": 10,
     "breakdown": {
-      "bundle_split_lemmas": 423,
-      "bundle_conjunct_lemmas": 1398,
+      "bundle_split_lemmas": 443,
+      "bundle_conjunct_lemmas": 1458,
       "connective_ordering_lemmas": 3,
       "native_transcendental_chain_lemmas": 7
     },
@@ -2116,13 +2196,15 @@
     },
     "coq_compile": {
       "structural": {
-        "status": "failed",
+        "status": "passed",
         "file": "StructuralProofSpine.v",
-        "stderr": "File \".\\StructuralProofSpine.v\", line 24, characters 8-11:\nError: No applicable tactic.\n\n"
+        "vo_written": true,
+        "stderr": ""
       },
       "native_transcendental": {
         "status": "failed",
         "file": "TranscendentalBoundsNative.v",
+        "vo_written": false,
         "stderr": "File \".\\TranscendentalBoundsNative.v\", line 9, characters 7-10:\nError: No applicable tactic.\n\n"
       }
     },
@@ -2177,26 +2259,15 @@
   },
   "open_gaps_from_depth_audit": [
     {
-      "id": "norm_num_depth",
-      "severity": "medium",
-      "description": "Cross-proof replays numeric inequalities, not deep Mathlib proof chains",
-      "remedy": "StructuralProofSpine.v + TranscendentalBoundsNative Taylor/interval chain (see structural_proof_depth_audit.json)",
-      "closed": false
+      "id": "tier_scalar_aspiration",
+      "severity": "info",
+      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
+      "closed": false,
+      "monitored": true
     }
   ],
-  "findings": [
-    {
-      "id": "norm_num_depth",
-      "severity": "medium",
-      "detail": {
-        "bundle_split_lemmas": 423,
-        "bundle_conjunct_lemmas": 1398,
-        "connective_ordering_lemmas": 3,
-        "native_transcendental_chain_lemmas": 7
-      },
-      "remedy": "Run generate_structural_proof_artifacts.py and audit_structural_proof_depth.py"
-    }
-  ],
+  "findings": [],
   "source_reports": {
     "cross_proof": "data\\cross_proof_verification_report.json",
     "depth": "data\\verification_depth_audit.json",

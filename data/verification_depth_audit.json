@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T01:00:40.984126+00:00",
+  "generated_at": "2026-07-15T12:06:53.429081+00:00",
   "version": "1.0",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -18,9 +18,9 @@
     "lean_4": {
       "role": "primary authority",
       "connective_obligations": 24,
-      "full_formal_obligations": 2309,
+      "full_formal_obligations": 2370,
       "transcendental_lemmas": 68,
-      "lean_theorem_count_estimate": 2309,
+      "lean_theorem_count_estimate": 2370,
       "export_fraction_pct": 100.0,
       "proof_style": "norm_num / decide / linarith certificates"
     },
@@ -32,12 +32,12 @@
     },
     "isabelle": {
       "status": "passed",
-      "provable_obligations": 2255,
+      "provable_obligations": 2316,
       "coverage": "numeric literal replay of exported obligations"
     },
     "rust_f64_replay": {
       "status": "passed",
-      "obligation_count": 1914,
+      "obligation_count": 1955,
       "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
     },
     "fstar": {
@@ -111,26 +111,26 @@
       "severity": "medium",
       "description": "Cross-proof replays numeric inequalities, not deep Mathlib proof chains",
       "remedy": "StructuralProofSpine.v + TranscendentalBoundsNative Taylor/interval chain (see structural_proof_depth_audit.json)",
-      "closed": false
+      "closed": true
     },
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "0 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
-      "closed": true,
+      "closed": false,
       "monitored": true
     }
   ],
   "extension_precision": {
-    "domain_count": 347,
-    "green_count": 347,
+    "domain_count": 367,
+    "green_count": 367,
     "failing_domains": [],
     "aspiration_scalar_debt_count": 0
   },
   "scientific_pushback_audit": {
-    "extension_domain_count": 347,
-    "green_gate_pass_count": 347,
+    "extension_domain_count": 367,
+    "green_gate_pass_count": 367,
     "green_gate_fail_count": 0,
     "aspiration_scalar_debt_count": 0,
     "stumped_observable_count": 13,
@@ -263,11 +263,12 @@
   ],
   "open_gaps": [
     {
-      "id": "norm_num_depth",
-      "severity": "medium",
-      "description": "Cross-proof replays numeric inequalities, not deep Mathlib proof chains",
-      "remedy": "StructuralProofSpine.v + TranscendentalBoundsNative Taylor/interval chain (see structural_proof_depth_audit.json)",
-      "closed": false
+      "id": "tier_scalar_aspiration",
+      "severity": "info",
+      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
+      "closed": false,
+      "monitored": true
     }
   ]
 }

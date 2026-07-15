@@ -3,6 +3,48 @@ theory FullFormalSpine_09
 imports Complex_Main
 begin
 
+lemma stratum_pv_fi_median_lt_bound: "(0.26052599991828185 :: real) < (0.35 :: real)"
+  by eval
+
+lemma stratum_l23_pyramidal_fi_median_lt_bound: "(0.49782232037293184 :: real) < (0.55 :: real)"
+  by eval
+
+lemma held_out_fi_pearson_r_gt_fifty_five: "(0.55 :: real) < (0.6086458495175734 :: real)"
+  by eval
+
+lemma stratum_sst_fi_pearson_gt_bound: "(0.5 :: real) < (0.52310926097775 :: real)"
+  by eval
+
+lemma stratum_pv_fi_pearson_gt_bound: "(0.35 :: real) < (0.3931199346029611 :: real)"
+  by eval
+
+lemma stratum_vip_fi_pearson_gt_bound: "(0.4 :: real) < (0.4308059942466856 :: real)"
+  by eval
+
+lemma stratum_l23_pyramidal_fi_pearson_gt_bound: "(0.2 :: real) < (0.23129805826359506 :: real)"
+  by eval
+
+lemma held_out_cell_count_large: "(2100 :: nat) < (2165 :: nat)"
+  by eval
+
+lemma stratum_sst_cell_count_pos: "(150 :: nat) < (154 :: nat)"
+  by eval
+
+lemma stratum_pv_cell_count_pos: "(200 :: nat) < (222 :: nat)"
+  by eval
+
+lemma stratum_vip_cell_count_pos: "(140 :: nat) < (146 :: nat)"
+  by eval
+
+lemma stratum_l23_pyramidal_cell_count_pos: "(1100 :: nat) < (1127 :: nat)"
+  by eval
+
+lemma neuron_train_cell_count_pos: "0 < (1745 :: nat)"
+  by eval
+
+lemma neuron_holdout_cell_count_pos: "0 < (420 :: nat)"
+  by eval
+
 lemma neuron_train_fi_median_lt_thirty_pct: "(0.24544591854270223 :: real) < (0.3 :: real)"
   by eval
 
@@ -96,7 +138,7 @@ lemma nothing_perfection_friction_origin_panel_observable_count_pos: "0 < (24 ::
 lemma nothing_perfection_friction_origin_panel_median_error_under_half_pct: "(0.008488 :: real) < (0.5 :: real)"
   by eval
 
-lemma observer_channel_derivation_observable_count_pos: "0 < (247 :: nat)"
+lemma observer_channel_derivation_observable_count_pos: "0 < (348 :: nat)"
   by eval
 
 lemma observer_channel_derivation_median_error_under_half_pct: "(0.0525102820198906 :: real) < (0.5 :: real)"
@@ -124,6 +166,12 @@ lemma omni_theory_genesis_observable_count_pos: "0 < (27 :: nat)"
   by eval
 
 lemma omni_theory_genesis_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma omni_theory_humanities_panel_observable_count_pos: "0 < (37 :: nat)"
+  by eval
+
+lemma omni_theory_humanities_panel_median_error_under_half_pct: "(0.0222545 :: real) < (0.5 :: real)"
   by eval
 
 lemma oncology_pooled_median_under_half_pct: "(0.05041956982053305 :: real) < (0.5 :: real)"
@@ -253,54 +301,6 @@ lemma particle_physics_gap_fill_pooled_median_under_half_pct: "(0.00272998425288
   by eval
 
 lemma particle_physics_gap_fill_headline_median_under_half_pct: "(0.002729984252880815 :: real) < (0.5 :: real)"
-  by eval
-
-lemma particle_physics_gap_fill_observable_count_pos: "0 < (98 :: nat)"
-  by eval
-
-lemma particle_physics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma particle_physics_median_error_under_half_pct: "(0.014415233331492876 :: real) < (0.5 :: real)"
-  by eval
-
-lemma particle_physics_max_error_under_half_pct: "(0.492528 :: real) < (0.5 :: real)"
-  by eval
-
-lemma particle_smiles_record_count_pos: "0 < (36 :: nat)"
-  by eval
-
-lemma particle_wave4_count_pos: "0 < (16 :: nat)"
-  by eval
-
-lemma particle_physics_observable_count_pos: "0 < (98 :: nat)"
-  by eval
-
-lemma particle_physics_components_sum: "(98.0 :: real) = (98.0 :: real)"
-  by eval
-
-lemma pdg_particle_properties_observable_count_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma pdg_particle_properties_median_error_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
-  by eval
-
-lemma periodic_extension_decay_topology_scaffold_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma periodic_extension_decay_topology_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma periodic_table_completion_spine_observable_count_pos: "0 < (38 :: nat)"
-  by eval
-
-lemma periodic_table_completion_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma periodic_table_extension_closure_spine_observable_count_pos: "0 < (41 :: nat)"
-  by eval
-
-lemma periodic_table_extension_closure_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

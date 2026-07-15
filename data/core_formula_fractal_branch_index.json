@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-15T05:29:35.721719+00:00",
+  "generated_at": "2026-07-15T11:47:00.635784+00:00",
   "root": "raw_S",
   "core_domains": 35,
-  "extension_panels": 363,
+  "extension_panels": 367,
   "attachments": [
     {
       "panel": "Climate_Science",
@@ -4078,6 +4078,19 @@
       "benchmark_data": "data/binary_decoder_panel_benchmark.json"
     },
     {
+      "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+      "tier": 88,
+      "primary_branch": "term3.chaos_factor",
+      "divergence_depth": 25.05,
+      "maps_to_lean": [
+        "blackhole",
+        "astronomical",
+        "particle"
+      ],
+      "D_eff": 18,
+      "benchmark_data": "data/blackhole_whitehole_cycle_live_panel_benchmark.json"
+    },
+    {
       "panel": "Canonical_Oracle_Panel",
       "tier": 88,
       "primary_branch": "term1.term1_base",
@@ -4130,6 +4143,19 @@
       "benchmark_data": "data/early_lean_mc_panel_benchmark.json"
     },
     {
+      "panel": "Fuel_Lab_Live_Panel",
+      "tier": 88,
+      "primary_branch": "term3.chaos_factor",
+      "divergence_depth": 25.05,
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/fuel_lab_live_panel_benchmark.json"
+    },
+    {
       "panel": "Intrinsic_LLM_Validators_Panel",
       "tier": 88,
       "primary_branch": "term1.term1_base",
@@ -4153,6 +4179,19 @@
       ],
       "D_eff": 15,
       "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json"
+    },
+    {
+      "panel": "Machine_And_Molecule_Live_Panel",
+      "tier": 88,
+      "primary_branch": "term2.amplitude",
+      "divergence_depth": 25.05,
+      "maps_to_lean": [
+        "material",
+        "energy",
+        "particle"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/machine_and_molecule_live_panel_benchmark.json"
     },
     {
       "panel": "Omni_Theory_Humanities_Panel",
@@ -4201,6 +4240,17 @@
       ],
       "D_eff": 14,
       "benchmark_data": "data/scalar_solver_35_panel_benchmark.json"
+    },
+    {
+      "panel": "Star_Trek_Transporter_Live_Panel",
+      "tier": 88,
+      "primary_branch": "term2.amplitude",
+      "divergence_depth": 24.35,
+      "maps_to_lean": [
+        "mathematical"
+      ],
+      "D_eff": 14,
+      "benchmark_data": "data/star_trek_transporter_live_panel_benchmark.json"
     },
     {
       "panel": "Tokenization_Live_Panel",
@@ -6089,6 +6139,19 @@
         "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
       },
       {
+        "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "blackhole",
+          "astronomical",
+          "particle"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/blackhole_whitehole_cycle_live_panel_benchmark.json"
+      },
+      {
         "panel": "Founding_Cosmic_Ray_Panel",
         "tier": 96,
         "primary_branch": "term1.quirkMod",
@@ -7633,6 +7696,19 @@
         ],
         "D_eff": 29,
         "benchmark_data": "data/warp_bh_wh_portal_benchmark.json"
+      },
+      {
+        "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "blackhole",
+          "astronomical",
+          "particle"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/blackhole_whitehole_cycle_live_panel_benchmark.json"
       }
     ],
     "chemical": [
@@ -7849,6 +7925,19 @@
         ],
         "D_eff": 11,
         "benchmark_data": "data/crc_handbook_properties_benchmark.json"
+      },
+      {
+        "panel": "Fuel_Lab_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "energy",
+          "chemical",
+          "material"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/fuel_lab_live_panel_benchmark.json"
       }
     ],
     "climate": [
@@ -11780,6 +11869,32 @@
         "benchmark_data": "data/canonical_oracle_panel_benchmark.json"
       },
       {
+        "panel": "Fuel_Lab_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "energy",
+          "chemical",
+          "material"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/fuel_lab_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Machine_And_Molecule_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "particle"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/machine_and_molecule_live_panel_benchmark.json"
+      },
+      {
         "panel": "The_Well_Outcomes_Verification_Panel",
         "tier": 89,
         "primary_branch": "term1.term1_base",
@@ -14095,6 +14210,32 @@
         "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
       },
       {
+        "panel": "Fuel_Lab_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "energy",
+          "chemical",
+          "material"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/fuel_lab_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Machine_And_Molecule_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "particle"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/machine_and_molecule_live_panel_benchmark.json"
+      },
+      {
         "panel": "The_Well_Outcomes_Verification_Panel",
         "tier": 89,
         "primary_branch": "term1.term1_base",
@@ -14953,6 +15094,17 @@
         ],
         "D_eff": 14,
         "benchmark_data": "data/scalar_solver_35_panel_benchmark.json"
+      },
+      {
+        "panel": "Star_Trek_Transporter_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.35,
+        "maps_to_lean": [
+          "mathematical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/star_trek_transporter_live_panel_benchmark.json"
       },
       {
         "panel": "Complexity_Folding_Emergence_Panel",
@@ -18605,6 +18757,19 @@
         "benchmark_data": "data/bibliography_corpus_panel_benchmark.json"
       },
       {
+        "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "blackhole",
+          "astronomical",
+          "particle"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/blackhole_whitehole_cycle_live_panel_benchmark.json"
+      },
+      {
         "panel": "Canonical_Oracle_Panel",
         "tier": 88,
         "primary_branch": "term1.term1_base",
@@ -18616,6 +18781,19 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/canonical_oracle_panel_benchmark.json"
+      },
+      {
+        "panel": "Machine_And_Molecule_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "particle"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/machine_and_molecule_live_panel_benchmark.json"
       },
       {
         "panel": "The_Well_Outcomes_Verification_Panel",

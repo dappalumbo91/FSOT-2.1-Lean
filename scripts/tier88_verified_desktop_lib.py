@@ -346,7 +346,10 @@ def ingest_star_trek_transporter() -> dict:
     warp_crosswalk = _warp_portal_crosswalk_rows(warp_bench)
     beam_forming: list[dict] = []
     t3_valve: list[dict] = []
+    t3_hardware: list[dict] = []
+    t3_hardware_steps: list[dict] = []
     sim_path = desktop_dir / "pattern_buffer_scan_results.json"
+    t3_hw_path = desktop_dir / "t3_acoustic_valve_hardware_results.json"
     two_gate: list[dict] = []
     two_gate_steps: list[dict] = []
     two_gate_path = desktop_dir / "two_gate_entanglement_results.json"
@@ -382,6 +385,29 @@ def ingest_star_trek_transporter() -> dict:
                             "unit": "dimensionless",
                         }
                     )
+    if _deep_mode() and t3_hw_path.is_file():
+        hw_doc = _load_json(t3_hw_path)
+        t3_hardware = list(hw_doc.get("observables") or [])
+        for row in hw_doc.get("actuator_steps") or []:
+            step = row.get("step", 0)
+            for key in (
+                "piezo_drive_v_pp",
+                "cavity_phase_rad",
+                "acoustic_q_factor",
+                "impedance_match_ratio",
+                "t3_phase_lock_error",
+                "beam_coupling_efficiency",
+            ):
+                val = row.get(key)
+                if val is not None:
+                    t3_hardware_steps.append(
+                        {
+                            "name": f"hw_step_{step}_{key}",
+                            "property": key,
+                            "value": float(val),
+                            "unit": "dimensionless",
+                        }
+                    )
     doc = {
         "source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
         "desktop_folder": "FSOT, Star Trek Transporter",
@@ -396,7 +422,10 @@ def ingest_star_trek_transporter() -> dict:
         "warp_portal_crosswalk": warp_crosswalk,
         "beam_forming": beam_forming,
         "t3_valve_scan": t3_valve,
+        "t3_valve_hardware": t3_hardware,
+        "t3_valve_hardware_steps": t3_hardware_steps,
         "pattern_buffer_sim": str(sim_path) if sim_path.is_file() else None,
+        "t3_hardware_sim": str(t3_hw_path) if t3_hw_path.is_file() else None,
         "two_gate_entanglement": two_gate,
         "two_gate_pair_steps": two_gate_steps,
         "two_gate_sim": str(two_gate_path) if two_gate_path.is_file() else None,
@@ -624,11 +653,13 @@ def build_star_trek_transporter_live_panel() -> dict:
         ("warp_actuation", "Quantum_Gravity", "warp_actuation"),
         ("beam_forming", "Quantum_Gravity", "beam_forming"),
         ("t3_valve_scan", "Acoustics", "t3_valve_acoustic"),
+        ("t3_valve_hardware", "Acoustics", "t3_valve_hardware"),
+        ("t3_valve_hardware_steps", "Acoustics", "t3_valve_hardware_steps"),
         ("two_gate_entanglement", "Quantum_Mechanics", "two_gate_entanglement"),
         ("two_gate_pair_steps", "Quantum_Mechanics", "two_gate_pair_steps"),
     ):
         rows = live.get(section) or []
-        if section in ("warp_actuation", "t3_valve_scan", "two_gate_pair_steps"):
+        if section in ("warp_actuation", "t3_valve_scan", "t3_valve_hardware_steps", "two_gate_pair_steps"):
             sec_records: list[dict] = []
             sec_errs: list[float] = []
             for row in rows:

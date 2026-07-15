@@ -1,8 +1,8 @@
-generated_at: '2026-07-15T05:29:36.910761+00:00'
+generated_at: '2026-07-15T11:47:01.840830+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 363
-  total_scientific_domains_covered: 399
+  extension_domains: 367
+  total_scientific_domains_covered: 403
   total_empirical_records: 536740
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
@@ -13,12 +13,12 @@ summary:
     D_needs_work: 0
     unverified: 0
   tier_distribution:
-    A_strong: 113
-    B_verified: 286
+    A_strong: 116
+    B_verified: 287
     C_thin: 0
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 497
+  lean_formal_modules: 501
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -2273,7 +2273,7 @@ extension_domains:
   lean_module: FSOT.Formal.CertifiedAgentFormalPanelPriors
 - domain: Desktop_Application_Wiring_Spine
   tier: 88
-  record_count: 65
+  record_count: 81
   median_error_pct: 0.0
   coverage_tier: B_verified
   lean_module: FSOT.Formal.DesktopApplicationWiringSpinePriors
@@ -2532,7 +2532,7 @@ extension_domains:
 - domain: Bibliography_Corpus_Panel
   tier: 88
   record_count: 24
-  median_error_pct: 0.026766861384483892
+  median_error_pct: 0.03801653760497401
   coverage_tier: B_verified
   lean_module: FSOT.Formal.BibliographyCorpusPanelPriors
 - domain: Binary_Decoder_Panel
@@ -2568,7 +2568,7 @@ extension_domains:
 - domain: Rust_Lean_Bridge_Panel
   tier: 88
   record_count: 24
-  median_error_pct: 0.0020923899350648867
+  median_error_pct: 0.014767
   coverage_tier: B_verified
   lean_module: FSOT.Formal.RustLeanBridgePanelPriors
 - domain: Canonical_Oracle_Panel
@@ -2589,6 +2589,30 @@ extension_domains:
   median_error_pct: 0.014767
   coverage_tier: B_verified
   lean_module: FSOT.Formal.EarlyLeanMcPanelPriors
+- domain: Machine_And_Molecule_Live_Panel
+  tier: 88
+  record_count: 120
+  median_error_pct: 0.01341
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.MachineAndMoleculeLivePanelPriors
+- domain: Fuel_Lab_Live_Panel
+  tier: 88
+  record_count: 366
+  median_error_pct: 0.039349
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.FuelLabLivePanelPriors
+- domain: BlackHole_WhiteHole_Cycle_Live_Panel
+  tier: 88
+  record_count: 24
+  median_error_pct: 0.026472
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.BlackHoleWhiteholeCycleLivePanelPriors
+- domain: Star_Trek_Transporter_Live_Panel
+  tier: 88
+  record_count: 1413
+  median_error_pct: 0.031159
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.StarTrekTransporterLivePanelPriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572

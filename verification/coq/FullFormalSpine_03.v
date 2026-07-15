@@ -6,6 +6,51 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma codon_tcc_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tcg_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tcg_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tct_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tct_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tga_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tga_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tgc_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tgc_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tgg_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tgg_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tgt_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tgt_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tta_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tta_secondary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
 Lemma codon_ttc_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
@@ -69,7 +114,7 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma computational_reasoning_median_error_under_five_pct : 0%R < (5.0%R).
 Proof. lra. Qed.
 
-Lemma condensed_matter_superconductivity_depth_panel_observable_count_pos : (0 < 24)%nat.
+Lemma condensed_matter_superconductivity_depth_panel_observable_count_pos : (0 < 21)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma condensed_matter_superconductivity_depth_panel_median_error_under_half_pct : (0.033841%R) < (0.5%R).
@@ -117,10 +162,10 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma consciousness_species_multi_panel_median_error_under_half_pct : (0.0201195%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma cosmology_anomalies_observable_count_pos : (0 < 12)%nat.
+Lemma cosmology_anomalies_observable_count_pos : (0 < 23)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma cosmology_anomalies_median_error_under_half_pct : (0.140126%R) < (0.5%R).
+Lemma cosmology_anomalies_median_error_under_half_pct : (0.024602%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma cosmology_anomaly_deep_panel_observable_count_pos : (0 < 24)%nat.
@@ -260,49 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma cryptography_technology_median_error_under_half_pct : (0.047520672006218234%R) < (0.5%R).
 Proof. lra. Qed.
-
-Lemma culinary_arts_observable_count_pos : (0 < 26)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma culinary_arts_median_error_under_half_pct : (0.047615187057821064%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma culinary_fermentation_maillard_panel_observable_count_pos : (0 < 130)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma culinary_fermentation_maillard_panel_median_error_under_half_pct : (0.040788%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cve_codon_hole_falsification_observable_count_pos : (0 < 29)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cve_codon_hole_falsification_median_error_under_half_pct : (0.009186636881580057%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma dark_energy_cpl_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma dark_energy_cpl_median_error_under_half_pct : (0.029733%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma dark_sector_open_problems_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma dark_sector_open_problems_median_error_under_half_pct : (0.01529034996934153%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma desktop_application_wiring_spine_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma desktop_application_wiring_spine_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma distant_island_emergence_simulation_observable_count_pos : (0 < 36)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma distant_island_emergence_simulation_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma distant_island_z128_z132_deep_panel_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

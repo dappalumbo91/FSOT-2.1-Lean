@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-15T11:19:12.358605+00:00",
-  "c_thin_before": 12,
+  "generated_at": "2026-07-15T11:47:07.553706+00:00",
+  "c_thin_before": 11,
   "c_thin_after": 0,
-  "promoted_to_B": 12,
+  "promoted_to_B": 11,
   "promoted_to_A": 0,
   "c_thin_panels": [
     {
@@ -32,7 +32,7 @@
       "ingest_script": "scripts/ingest_tier88_application_wiring.py",
       "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
       "records_after": 24,
-      "median_after": 0.026766861384483892,
+      "median_after": 0.03801653760497401,
       "tier_after": "B_verified"
     },
     {
@@ -72,7 +72,7 @@
       "ingest_script": "scripts/ingest_tier88_application_wiring.py",
       "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
       "records_after": 24,
-      "median_after": 0.0020923899350648867,
+      "median_after": 0.014767,
       "tier_after": "B_verified"
     },
     {
@@ -113,16 +113,6 @@
       "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
       "records_after": 24,
       "median_after": 0.026472,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "Star_Trek_Transporter_Live_Panel",
-      "records": 18,
-      "median_error_pct": 0.095551,
-      "ingest_script": "scripts/ingest_tier88_application_wiring.py",
-      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.05256,
       "tier_after": "B_verified"
     }
   ],
@@ -2316,15 +2306,15 @@
       "skipped": false,
       "records_before": 8,
       "records_after": 24,
-      "median_after": 0.026766861384483892,
+      "median_after": 0.03801653760497401,
       "tier_after": "B_verified",
       "bridges_used": [
         "Pure_Mathematics",
         "Math_Generator_Rules_Eval",
+        "Star_Trek_Transporter_Live_Panel",
         "Formula_Branching_Fractal",
         "Time_Domain_Crosswalk",
-        "UAP_War_Gov_Release_Panel",
-        "Domain_Coupling_Simulation"
+        "UAP_War_Gov_Release_Panel"
       ]
     },
     {
@@ -2406,19 +2396,19 @@
       "median_after": 0.014767,
       "tier_after": "B_verified",
       "bridges_used": [
+        "Star_Trek_Transporter_Live_Panel",
         "Portable_Clone_Verify",
         "Pure_Mathematics",
         "Math_Generator_Rules_Eval",
         "Computational_Reasoning",
-        "Desktop_Application_Wiring_Spine",
-        "Quantum_Computing_Math_Depth_Panel"
+        "Desktop_Application_Wiring_Spine"
       ]
     },
     {
       "panel": "Fuel_Lab_Live_Panel",
       "skipped": true,
       "reason": "not_c_thin",
-      "records": 313,
+      "records": 366,
       "tier": "A_strong"
     },
     {
@@ -2470,15 +2460,15 @@
       "skipped": false,
       "records_before": 8,
       "records_after": 24,
-      "median_after": 0.0020923899350648867,
+      "median_after": 0.014767,
       "tier_after": "B_verified",
       "bridges_used": [
+        "Star_Trek_Transporter_Live_Panel",
         "Portable_Clone_Verify",
         "Pure_Mathematics",
         "Math_Generator_Rules_Eval",
         "Computational_Reasoning",
-        "Desktop_Application_Wiring_Spine",
-        "Quantum_Computing_Math_Depth_Panel"
+        "Desktop_Application_Wiring_Spine"
       ]
     },
     {
@@ -2489,29 +2479,20 @@
       "median_after": 0.014767,
       "tier_after": "B_verified",
       "bridges_used": [
+        "Star_Trek_Transporter_Live_Panel",
         "Portable_Clone_Verify",
         "Pure_Mathematics",
         "Math_Generator_Rules_Eval",
         "Computational_Reasoning",
-        "Desktop_Application_Wiring_Spine",
-        "Quantum_Computing_Math_Depth_Panel"
+        "Desktop_Application_Wiring_Spine"
       ]
     },
     {
       "panel": "Star_Trek_Transporter_Live_Panel",
-      "skipped": false,
-      "records_before": 18,
-      "records_after": 24,
-      "median_after": 0.05256,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Pure_Mathematics",
-        "Math_Generator_Rules_Eval",
-        "Portable_Clone_Verify",
-        "Phi_Morphogenetic_Scaling",
-        "Formula_Branching_Fractal",
-        "Time_Domain_Crosswalk"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 1413,
+      "tier": "A_strong"
     },
     {
       "panel": "Tokenization_Live_Panel",

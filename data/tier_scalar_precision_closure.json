@@ -1,12 +1,20 @@
 {
-  "generated_at": "2026-07-15T01:19:47.374955+00:00",
+  "generated_at": "2026-07-15T12:07:21.192304+00:00",
   "version": "1.0",
   "gate": "pooled_scalar_median_or_effective_median <= 0.05%",
   "tier_scalar_max_record_gate_pct": 0.05,
-  "benchmark_file_count": 374,
-  "tier_scalar_pass_count": 374,
-  "tier_scalar_fail_count": 0,
-  "closed": true,
-  "failing_domains": [],
+  "benchmark_file_count": 394,
+  "tier_scalar_pass_count": 393,
+  "tier_scalar_fail_count": 1,
+  "closed": false,
+  "failing_domains": [
+    {
+      "domain": "Quantum_Mechanics_Entanglement_Depth_Panel",
+      "file": "quantum_mechanics_entanglement_depth_panel_benchmark.json",
+      "scalar_pooled_median_error_pct": 0.095551,
+      "effective_scalar_median_error_pct": 0.09555052631578806,
+      "max_scalar_error_pct": 0.095551
+    }
+  ],
   "honest_statement": "tier_scalar_pass uses pooled scalar median (or literature-aware effective median) \u2264 0.05%, aligned with fsot_precision_constants tier aspiration. Per-record max up to 0.5% remains the green_gate strict_scalar bound."
 }

@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-15T00:59:15.743461+00:00",
+  "generated_at": "2026-07-15T12:05:32.040008+00:00",
   "tier": "79b_cross_refinement",
-  "obligation_count_total": 2309,
-  "obligation_count_provable": 2255,
-  "obligation_count_atomic_provable": 1822,
-  "obligation_count_bundle_conj": 433,
+  "obligation_count_total": 2370,
+  "obligation_count_provable": 2316,
+  "obligation_count_atomic_provable": 1863,
+  "obligation_count_bundle_conj": 453,
   "obligation_count_margin_violations": 54,
   "coq_chunks_found": 19,
-  "coq_lemmas_indexed": 1822,
+  "coq_lemmas_indexed": 1863,
   "triangulation": {
-    "atomic_triangulated_ok": 1822,
+    "atomic_triangulated_ok": 1863,
     "atomic_triangulated_fail": 0,
-    "bundle_conj_triangulated_ok": 433,
+    "bundle_conj_triangulated_ok": 453,
     "bundle_conj_triangulated_fail": 0,
     "margin_violations_confirmed_ok": 0,
     "margin_violations_confirmed_fail": 54,
@@ -19,27 +19,27 @@
   },
   "margin_summary_by_kind": {
     "nat_pos": {
-      "count": 562,
+      "count": 575,
       "min_margin": "2",
       "median_margin": "35",
       "max_margin": "271813"
     },
     "r_lt_lit_pure": {
-      "count": 312,
+      "count": 335,
       "min_margin": "0.000192875570426",
-      "median_margin": "0.489662882745644623",
+      "median_margin": "0.48659",
       "max_margin": "19.102"
     },
     "lt_lit": {
-      "count": 209,
+      "count": 213,
       "min_margin": "0E-15",
-      "median_margin": "0.08947400008171815",
+      "median_margin": "0.1",
       "max_margin": "3269016.3724721107"
     },
     "lt_half": {
-      "count": 154,
+      "count": 148,
       "min_margin": "0.007472",
-      "median_margin": "0.480495600427523394",
+      "median_margin": "0.481980975107070365",
       "max_margin": "0.5"
     },
     "gt_lit": {
@@ -61,9 +61,9 @@
       "max_margin": "1.0"
     },
     "pos": {
-      "count": 94,
+      "count": 101,
       "min_margin": "5.5E-19",
-      "median_margin": "0.7961830900509372",
+      "median_margin": "0.7662378870755164",
       "max_margin": "58.493466"
     },
     "nat_gt_lit": {
@@ -127,7 +127,7 @@
       "max_margin": "5.37899567E-8"
     }
   },
-  "lt_half_pooled_median_margin_to_bound": "0.480495600427523394",
+  "lt_half_pooled_median_margin_to_bound": "0.481980975107070365",
   "margin_violations": [
     {
       "id": "aether_prime_priors_bundle",

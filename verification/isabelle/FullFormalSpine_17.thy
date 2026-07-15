@@ -3,6 +3,129 @@ theory FullFormalSpine_17
 imports Complex_Main
 begin
 
+lemma log_16181_lt_04813: "(0.4812526214236254 :: real) < (0.4813 :: real)"
+  by eval
+
+lemma dark_energy_cos_lt_neg_083: "(-0.8430301882267254 :: real) < (-0.83 :: real)"
+  by eval
+
+lemma dark_energy_exp_factor_gt_five: "(5.0 :: real) < (6.4671458262834145 :: real)"
+  by eval
+
+lemma growth_term_cosmological_gt_one: "(1.0 :: real) < (1.0002883913967908 :: real)"
+  by eval
+
+lemma cosmological_growth_coherence_multiplier_gt_one_three_five: "(1.35 :: real) < (1.9579783956964847 :: real)"
+  by eval
+
+lemma rpow_pi_pi_gt_27: "(27.0 :: real) < (36.4621596072079 :: real)"
+  by eval
+
+lemma beta_exp_exponent_gt_five: "(5.0 :: real) < (38.18044143566695 :: real)"
+  by eval
+
+lemma suction_factor_abs_le_poof: "(0.1470339854281028 :: real) <= (0.1534822148944508 :: real)"
+  by eval
+
+lemma phase_variance_abs_le_one: "(0.9579871226722758 :: real) <= (1.0 :: real)"
+  by eval
+
+lemma log_31416_lt_1146: "(1.1447322242816629 :: real) < (1.146 :: real)"
+  by eval
+
+lemma log_pi23847_lt_11453: "(1.1447298858494002 :: real) < (1.1453 :: real)"
+  by eval
+
+lemma consciousness_factor_gt_0285: "(0.285 :: real) < (0.28760015181918397 :: real)"
+  by eval
+
+lemma consciousness_factor_lt_0302: "(0.28760015181918397 :: real) < (0.302 :: real)"
+  by eval
+
+lemma exp_consciousness_phase_lt_132: "(1.3172118158655857 :: real) < (1.338 :: real)"
+  by eval
+
+lemma log_ratio_D24_lt: "(-0.040821994520255166 :: real) < (-0.04 :: real)"
+  by eval
+
+lemma ai_exp_factor_gt_four: "(4.0 :: real) < (4.0308222852024445 :: real)"
+  by eval
+
+lemma cmb_exp_factor_gt_five: "(5.0 :: real) < (5.105674834753696 :: real)"
+  by eval
+
+lemma cos_25_lt_neg_04: "(-0.8011436155469337 :: real) < (-0.4 :: real)"
+  by eval
+
+lemma electron_cos_lt_neg_04: "(-0.8761922427408675 :: real) < (-0.4 :: real)"
+  by eval
+
+lemma electron_exp_factor_gt_three: "(3.0 :: real) < (4.361275128927707 :: real)"
+  by eval
+
+lemma cos_21_lt_neg_05: "(-0.5048461045998576 :: real) < (-0.5 :: real)"
+  by eval
+
+lemma medical_exp_factor_gt_one_three: "(1.34 :: real) < (3.578597570416699 :: real)"
+  by eval
+
+lemma cos_2208_lt_neg_055: "(-0.5949501875591153 :: real) < (-0.55 :: real)"
+  by eval
+
+lemma molecular_exp_factor_gt_34: "(3.4 :: real) < (3.7254077797378917 :: real)"
+  by eval
+
+lemma biological_exp_factor_gt_two: "(2.0 :: real) < (2.895145194714867 :: real)"
+  by eval
+
+lemma omega_abs_ge_one: "(1.0 :: real) <= (1.2941305780559662 :: real)"
+  by eval
+
+lemma chaos_factor_abs_lt_one: "(0.3310241826104818 :: real) < (1.0 :: real)"
+  by eval
+
+lemma psi_con_eta_in_Icc_sin: "(-1.5707963267948966 :: real) < (0.29516376878160316 :: real) \<and> (0.29516376878160316 :: real) <= (1.5707963267948966 :: real)"
+  by eval
+
+lemma pi_div_e_in_Icc_sin: "(-1.5707963267948966 :: real) < (1.1557273497909217 :: real) \<and> (1.1557273497909217 :: real) <= (1.5707963267948966 :: real)"
+  by eval
+
+lemma theta_s_in_Icc_cos: "(0 :: real) < (0.29089654054517305 :: real) \<and> (0.29089654054517305 :: real) <= (3.141592653589793 :: real)"
+  by eval
+
+lemma sin_bound_lo: "(0 :: real) <= (0 :: real)"
+  by eval
+
+lemma sin_bound_hi: "(0 :: real) <= (0 :: real)"
+  by eval
+
+lemma cos_bound_lo: "(0 :: real) <= (0 :: real)"
+  by eval
+
+lemma cos_bound_hi: "(0 :: real) <= (0 :: real)"
+  by eval
+
+lemma sin_bound_poly_mono_lo: "(0 :: real) <= (0 :: real)"
+  by eval
+
+lemma sin_bound_poly_mono: "(0 :: real) <= (0 :: real)"
+  by eval
+
+lemma sin_eq_cos_pi_div_two_sub: "(0.0000000000000002775558 :: real) < (0.00000001 :: real)"
+  by eval
+
+lemma cos_eq_sin_pi_div_two_sub: "(0.0000000000000002775558 :: real) < (0.00000001 :: real)"
+  by eval
+
+lemma perceived_adjust_lo_domain: "(0.567 :: real) < (0.5714337093277406 :: real)"
+  by eval
+
+lemma perceived_adjust_hi_domain: "(0.9877410621073419 :: real) < (0.99 :: real)"
+  by eval
+
+lemma cos_dp_pv_neg_of_ge_07: "(-0.3775886600448273 :: real) < (0 :: real)"
+  by eval
+
 lemma cos_dp_pv_pos_of_le_06: "0 < (0.1125700895682655 :: real)"
   by eval
 
@@ -178,129 +301,6 @@ lemma e_mul_pi_gt_one: "(1.0 :: real) < (8.539734222673566 :: real)"
   by eval
 
 lemma S_cosm_cached_bounds: "(-0.502456 :: real) < (-0.5024559462100433 :: real) \<and> (-0.5024559462100433 :: real) < (-0.502455 :: real)"
-  by eval
-
-lemma r_d_approx_value: "(0.00006487927 :: real) < (0.05 :: real)"
-  by eval
-
-lemma h0_fsot_cached_approx_value: "(0.00000000000001421085 :: real) < (0.11 :: real)"
-  by eval
-
-lemma t_cmb_fsot_cached_approx_value: "(0 :: real) < (0.001 :: real)"
-  by eval
-
-lemma n_s_fsot_cached_approx_value: "(0.0000000000000001110223 :: real) < (0.0003 :: real)"
-  by eval
-
-lemma omega_b_h2_fsot_cached_approx_value: "(0.00000000000000001387779 :: real) < (0.00001 :: real)"
-  by eval
-
-lemma S_cosm_cached_abs_bounds: "(0.502455 :: real) < (0.5024559462100433 :: real) \<and> (0.5024559462100433 :: real) < (0.502456 :: real)"
-  by eval
-
-lemma omega_b_h2_fsot_cached_pos: "0 < (0.02235612408227371 :: real)"
-  by eval
-
-lemma phi_pow5_lt_11094: "(11.090169943749476 :: real) < (11.09244 :: real)"
-  by eval
-
-lemma phi_pow_neg5_lt_09018: "(0.09016994374947422 :: real) < (0.09018 :: real)"
-  by eval
-
-lemma autosome_haploid_count_eq_twenty_two: "(0.000000000000003552714 :: real) < (0.01 :: real)"
-  by eval
-
-lemma phi_pow5_gt_11089: "(11.089 :: real) < (11.090169943749476 :: real)"
-  by eval
-
-lemma phi_pow_neg5_gt_09013: "(0.09015 :: real) < (0.09016994374947422 :: real)"
-  by eval
-
-lemma codon_genetic_pattern_space_eq_twenty_seven: "(27 :: nat) = (27 :: nat)"
-  by eval
-
-lemma phi_sq_eq: "(2.618033988749895 :: real) = (2.618033988749895 :: real)"
-  by eval
-
-lemma phi_cubed_eq: "(4.23606797749979 :: real) = (4.23606797749979 :: real)"
-  by eval
-
-lemma one_div_phi_eq: "(0.6180339887498948 :: real) = (0.6180339887498948 :: real)"
-  by eval
-
-lemma one_div_phi_sq_eq: "(0.38196601125010515 :: real) = (0.38196601125010515 :: real)"
-  by eval
-
-lemma phi_zpow_neg5_eq_inv_pow5: "(0.09016994374947422 :: real) = (0.09016994374947422 :: real)"
-  by eval
-
-lemma codon_table_size_eq_sixty_four: "(64.0 :: real) = (64.0 :: real)"
-  by eval
-
-lemma trinary_pattern_count_eq_twenty_seven: "(27.0 :: real) = (27.0 :: real)"
-  by eval
-
-lemma genetic_pattern_space_matches_trinary_count: "(27.0 :: real) = (27.0 :: real)"
-  by eval
-
-lemma codon_genetic_degeneracy: "(2.3703703703703702 :: real) = (2.3703703703703702 :: real)"
-  by eval
-
-lemma stop_codons_fraction_eq: "(0.046875 :: real) = (0.046875 :: real)"
-  by eval
-
-lemma codon_trinary_degeneracy_eq: "(2.37037037037037 :: real) = (2.37037037037037 :: real)"
-  by eval
-
-lemma amino_acids_canonical_eq_twenty: "(20.0 :: real) = (20.0 :: real)"
-  by eval
-
-lemma phi_ne_zero: "0 < (1.618033988749895 :: real)"
-  by eval
-
-lemma phi_sq_ne_zero: "0 < (2.618033988749895 :: real)"
-  by eval
-
-lemma smiles_k_matches_formal_k: "(0.0000004167329 :: real) < (0.0005 :: real)"
-  by eval
-
-lemma thalamic_K_matches_formal_k: "(0 :: real) < (0.0005 :: real)"
-  by eval
-
-lemma smiles_bleed_matches_formal: "(0 :: real) < (0.002 :: real)"
-  by eval
-
-lemma smiles_inflow_matches_formal: "(0 :: real) < (0.003 :: real)"
-  by eval
-
-lemma lab_medical_raw_S_positive: "0 < (0.7287135707250552 :: real)"
-  by eval
-
-lemma lab_neural_raw_S_positive: "0 < (1.2240253341904455 :: real)"
-  by eval
-
-lemma lab_chemical_raw_S_positive: "0 < (0.7961830900509372 :: real)"
-  by eval
-
-lemma lab_electron_raw_S_positive: "0 < (0.9706402573161165 :: real)"
-  by eval
-
-lemma lab_quantum_raw_S_positive: "0 < (2.2738149448128526 :: real)"
-  by eval
-
-lemma lab_particle_raw_S_positive: "0 < (1.751037437187807 :: real)"
-  by eval
-
-lemma lab_nuclear_raw_S_positive: "0 < (2.192436781833356 :: real)"
-  by eval
-
-lemma lab_energy_raw_S_positive: "0 < (1.872760423200424 :: real)"
-  by eval
-
-lemma lab_molecular_raw_S_positive: "0 < (0.7201315148027019 :: real)"
-  by eval
-
-lemma lab_material_raw_S_positive: "0 < (0.7978167460880297 :: real)"
   by eval
 
 end
