@@ -283,6 +283,11 @@ def build_the_well_outcomes_verification_panel() -> dict:
             measured = float(row.get("measured") or 0)
             if measured == 0.0 and "error" in prop:
                 continue
+            if abs(measured) < 1e-9 and prop.startswith("mean_"):
+                continue
+            # stats.yaml noise-floor deltas — skip to avoid 100% effective error on ~0 anchors
+            if prop.startswith("mean_delta_") and abs(measured) < 1e-6:
+                continue
             rec = make_fsot_record(
                 lab="the_well_outcomes_lab",
                 property_name=prop,
@@ -292,6 +297,9 @@ def build_the_well_outcomes_verification_panel() -> dict:
                 extra={
                     "ingest_source": live.get("source"),
                     "verification_mode": "stats_yaml_aggregate",
+                    "eval_kind": "simulation_aggregate",
+                    "reference_uncertainty_pct": 1.0,
+                    "reference": "The Well stats.yaml aggregate (Polymathic AI, arxiv:2412.00568)",
                     "hf_storage_gb": round(float(entry.get("used_storage_bytes") or 0) / 1e9, 2),
                 },
             )

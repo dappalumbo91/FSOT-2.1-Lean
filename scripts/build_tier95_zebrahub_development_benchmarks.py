@@ -27,7 +27,7 @@ def main() -> int:
         os.environ["FSOT_TIER95_DEEP"] = "1"
     if not args.skip_ingest:
         cmd = [sys.executable, str(ROOT / "scripts" / "ingest_tier95_zebrahub_development.py")]
-        if os.environ.get("FSOT_TIER95_DEEP", "").strip().lower() in {"1", "true", "yes"}:
+        if args.deep or os.environ.get("FSOT_TIER95_DEEP", "").strip().lower() in {"1", "true", "yes"}:
             cmd.append("--deep")
         if args.gpu:
             cmd.append("--gpu")

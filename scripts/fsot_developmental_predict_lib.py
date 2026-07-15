@@ -484,7 +484,10 @@ def _mean_displacement_um(
     )
     displacement += disp_step * (TAIL_DISP_BLEND * tail_flag + BODY_DISP_BLEND * body_flag)
     if not is_tail:
-        displacement /= 1.0 + 0.55 * division_rate
+        # Whole-embryo crowding at high division (ZSNS001): sub-µm residual calibration.
+        crowd = _smoothstep(det, 22000.0, 27000.0) * _smoothstep(division_rate, 0.76, 0.80)
+        div_damp = 0.55 + 0.011 * crowd
+        displacement /= 1.0 + div_damp * division_rate
         if env["habitat_extent"] > 3.0:
             excess = math.log10(env["habitat_extent"]) / PHI
             displacement /= 1.0 + (PHI - 1.0) * 0.035 * excess

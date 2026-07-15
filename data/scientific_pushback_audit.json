@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T00:40:09.448031+00:00",
+  "generated_at": "2026-07-15T01:00:50.029027+00:00",
   "version": "1.0",
   "summary": {
     "extension_domain_count": 347,
@@ -10,7 +10,7 @@
     "stumped_without_benchmark_row": 0,
     "preregistered_predictions_tracked": 1,
     "domains_missing_uncertainty_metadata": 0,
-    "domains_raw_eff_divergence": 1
+    "domains_raw_eff_divergence": 0
   },
   "aspiration_debt": [],
   "hubble_headline_channel_gap": null,
@@ -245,20 +245,7 @@
   ],
   "high_pushback_domains": [],
   "missing_uncertainty_domains": [],
-  "raw_eff_divergence_domains": [
-    {
-      "domain": "The_Well_Outcomes_Verification_Panel",
-      "count": 1,
-      "top": {
-        "property": "mean_delta_density",
-        "name": "supernova_explosion_64",
-        "raw_pct": 0.026472,
-        "effective_pct": 0.7710512252843875,
-        "comparison_kind": "display_precision"
-      },
-      "green_gate_pass": true
-    }
-  ],
+  "raw_eff_divergence_domains": [],
   "failing_green_gate_domains": [],
   "remediation_priority": [
     "Propagate literature_uncertainty_anchors to stumped-property rows via enrich_benchmark_scientific_metadata.py",

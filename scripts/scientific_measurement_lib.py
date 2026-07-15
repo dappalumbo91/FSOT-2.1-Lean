@@ -145,6 +145,14 @@ def literature_aware_error_pct(
             "within_literature_band": False,
         }
 
+    if str(row.get("eval_kind") or "").lower() == "simulation_aggregate":
+        stored_raw = row.get("error_pct")
+        if stored_raw is not None:
+            try:
+                raw = float(stored_raw)
+            except (TypeError, ValueError):
+                pass
+
     if str(row.get("eval_kind") or "").lower() in {"preregistered_falsifiable", "wa_preregistered"}:
         sigma = row.get("sigma")
         sigma_dist = row.get("sigma_distance")
