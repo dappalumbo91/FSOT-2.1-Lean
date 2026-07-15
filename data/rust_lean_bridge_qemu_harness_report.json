@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T17:26:21.578209+00:00",
+  "generated_at": "2026-07-15T00:21:19.376916+00:00",
   "tier": "87_rust_lean_bridge_qemu_disk_boot",
   "serial_harness": {
     "status": "passed",
@@ -15,7 +15,7 @@
   "disk_boot": {
     "status": "passed",
     "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
-    "image": "vendor/fsot_compute.py\\verification\\qemu\\fsot-kernel-bios.bin",
+    "image": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\qemu\\fsot-kernel-bios.bin",
     "bios": "C:\\Program Files\\qemu\\share\\bios.bin",
     "boot_scalar": 0.0992889562686172,
     "canonical": 0.0992889562686172,
@@ -45,7 +45,7 @@
     "disk_boot": {
       "status": "passed",
       "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
-      "image": "vendor/fsot_compute.py\\verification\\qemu\\fsot-kernel-bios.bin",
+      "image": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\qemu\\fsot-kernel-bios.bin",
       "bios": "C:\\Program Files\\qemu\\share\\bios.bin",
       "boot_scalar": 0.0992889562686172,
       "canonical": 0.0992889562686172,

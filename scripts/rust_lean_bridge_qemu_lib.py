@@ -63,6 +63,15 @@ def _qemu_base_args(qemu: str, image: Path) -> list[str]:
     return args
 
 
+def _serial_cargo_env() -> dict[str, str]:
+    """Host temp target dir avoids LNK1104 / Access denied on removable I: drives."""
+    env = os.environ.copy()
+    target = Path(tempfile.gettempdir()) / "fsot_observer_serial_target"
+    target.mkdir(parents=True, exist_ok=True)
+    env["CARGO_TARGET_DIR"] = str(target)
+    return env
+
+
 def run_serial_harness() -> dict:
     cargo = shutil.which("cargo")
     if not cargo:
@@ -74,6 +83,7 @@ def run_serial_harness() -> dict:
             capture_output=True,
             text=True,
             timeout=300,
+            env=_serial_cargo_env(),
         )
         out = (r.stdout or "") + (r.stderr or "")
         markers = _parse_serial_markers(out)
