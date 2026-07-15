@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T17:26:44.568313+00:00",
+  "generated_at": "2026-07-15T00:30:19.794330+00:00",
   "tier": "91_seven_way_bare_metal",
   "connective_spine": {
     "obligation_count": 24,
@@ -8,27 +8,13 @@
     }
   },
   "full_formal_spine": {
-    "obligation_count": 2274,
-    "provable_count": 2207,
-    "atomic_provable_count": 1781,
+    "obligation_count": 2309,
+    "provable_count": 2255,
+    "atomic_provable_count": 1822,
     "structural_bundle_excluded_count": 54,
-    "provable_bundle_conj_count": 426,
-    "margin_violation_count": 13,
-    "margin_violation_ids": [
-      "domains_with_empirical_data_full",
-      "higgs_branching_max_error_under_half_pct",
-      "cohort_canonical_scalar_min_positive",
-      "canonical_bridge_scale_gt_one",
-      "allen_cohort_cell_count_pos",
-      "neurolab_smiles_mapped_records_pos",
-      "allen_cohort_fi_median_rel_err_lt_thirty_pct",
-      "hero_certified_fi_mean_rel_err_lt_fifteen_pct",
-      "hero_canonical_bridge_mean_rel_err_lt_twelve_pct",
-      "hero_canonical_bridge_delta_lt_five_pct",
-      "allen_cohort_fi_pearson_r_gt_fifty_five",
-      "hero_certified_verifier_confidence_gt_ninety_pct",
-      "neurolab_strict_empirical_records_large"
-    ],
+    "provable_bundle_conj_count": 433,
+    "margin_violation_count": 0,
+    "margin_violation_ids": [],
     "structural_bundle_excluded_ids": [
       "aether_prime_priors_bundle",
       "blackhole_thesis_bundle",
@@ -85,18 +71,18 @@
       "cross_proof_connective_spine_bundle",
       "cross_proof_full_formal_spine_bundle"
     ],
-    "modules_exported": 473,
+    "modules_exported": 480,
     "by_tier": {
-      "priors": 1813,
+      "priors": 1848,
       "extended": 184,
       "bounds": 277
     },
     "by_kind": {
-      "nat_pos": 548,
+      "nat_pos": 562,
       "r_lt_lit_pure": 312,
-      "bundle_conj": 480,
+      "bundle_conj": 487,
       "lt_lit": 209,
-      "lt_half": 140,
+      "lt_half": 154,
       "gt_lit": 135,
       "eq_nat": 25,
       "nat_le_sym": 30,
@@ -343,20 +329,20 @@
           "statement": "1 < 1.722776467449"
         }
       ],
-      "full_formal_passed": 2207,
-      "full_formal_total": 2207
+      "full_formal_passed": 2255,
+      "full_formal_total": 2255
     },
     "coq": {
       "status": "passed",
       "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqc.exe",
-      "chunk_count": 23,
-      "chunks_passed": 23,
+      "chunk_count": 24,
+      "chunks_passed": 24,
       "chunks": [
         {
           "file": "ConnectiveSpine.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\ConnectiveSpine.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\ConnectiveSpine.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -368,7 +354,7 @@
           "file": "StructuralProofSpine.v",
           "status": "passed",
           "returncode": 1,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\StructuralProofSpine.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\StructuralProofSpine.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -380,7 +366,7 @@
           "file": "TranscendentalBounds_00.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\TranscendentalBounds_00.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\TranscendentalBounds_00.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -392,7 +378,7 @@
           "file": "TranscendentalBounds_01.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\TranscendentalBounds_01.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\TranscendentalBounds_01.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -404,7 +390,7 @@
           "file": "TranscendentalBounds_02.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\TranscendentalBounds_02.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\TranscendentalBounds_02.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -416,7 +402,7 @@
           "file": "FullFormalSpine_00.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_00.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_00.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -428,7 +414,7 @@
           "file": "FullFormalSpine_01.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_01.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_01.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -440,7 +426,7 @@
           "file": "FullFormalSpine_02.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_02.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_02.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -452,7 +438,7 @@
           "file": "FullFormalSpine_03.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_03.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_03.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -464,55 +450,31 @@
           "file": "FullFormalSpine_04.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_04.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_04.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_04.v\", line 12, characters 0-72:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_04.v\", line 228, characters 0-75:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_04.v\", line 12, characters 0-72:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_04.v\", line 231, characters 0-75:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_05.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_05.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_05.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_05.v\", line 138, characters 0-56:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 141, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 141, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 144, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 144, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 147, characters 0-61:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 147, characters 0-61:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_05.v\", line 141, characters 0-56:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 144, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 144, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 147, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 147, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 150, characters 0-61:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 150, characters 0-61:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_06.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_06.vo",
-          "coqchk": {
-            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
-            "returncode": 0,
-            "status": "passed"
-          },
-          "stderr": "File \".\\FullFormalSpine_06.v\", line 231, characters 0-60:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_06.v\", line 234, characters 0-73:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_06.v\", line 234, characters 0-73:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
-        },
-        {
-          "file": "FullFormalSpine_07.v",
-          "status": "passed",
-          "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_07.vo",
-          "coqchk": {
-            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
-            "returncode": 0,
-            "status": "passed"
-          },
-          "stderr": "File \".\\FullFormalSpine_07.v\", line 63, characters 0-69:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 66, characters 0-80:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 66, characters 0-80:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 69, characters 0-81:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 69, characters 0-81:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
-        },
-        {
-          "file": "FullFormalSpine_08.v",
-          "status": "passed",
-          "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_08.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_06.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -521,10 +483,34 @@
           "stderr": ""
         },
         {
+          "file": "FullFormalSpine_07.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_07.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "t-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 24, characters 0-73:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 24, characters 0-73:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 153, characters 0-69:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 156, characters 0-80:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 156, characters 0-80:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 159, characters 0-81:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 159, characters 0-81:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_08.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_08.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_08.v\", line 255, characters 0-66:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_08.v\", line 255, characters 0-66:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
           "file": "FullFormalSpine_09.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_09.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_09.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -536,43 +522,43 @@
           "file": "FullFormalSpine_10.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_10.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_10.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_10.v\", line 96, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_10.v\", line 219, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_11.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_11.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_11.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_11.v\", line 96, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_11.v\", line 99, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_11.v\", line 99, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_11.v\", line 171, characters 0-64:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_11.v\", line 219, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_11.v\", line 222, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_11.v\", line 222, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_11.v\", line 294, characters 0-64:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_12.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_12.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_12.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_12.v\", line 171, characters 0-53:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_12.v\", line 177, characters 0-55:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_12.v\", line 177, characters 0-55:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_12.v\", line 294, characters 0-53:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_12.v\", line 300, characters 0-55:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_12.v\", line 300, characters 0-55:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_13.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_13.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_13.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -584,7 +570,7 @@
           "file": "FullFormalSpine_14.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_14.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_14.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -596,7 +582,7 @@
           "file": "FullFormalSpine_15.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_15.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_15.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -608,7 +594,7 @@
           "file": "FullFormalSpine_16.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_16.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_16.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -620,7 +606,19 @@
           "file": "FullFormalSpine_17.v",
           "status": "passed",
           "returncode": 0,
-          "vo_artifact": "vendor/fsot_compute.py\\verification\\coq\\FullFormalSpine_17.vo",
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_17.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_18.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\coq\\FullFormalSpine_18.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -633,20 +631,20 @@
     "cross_refinement": {
       "status": "passed",
       "provable_triangulated_ok": null,
-      "provable_total": 2207,
-      "margin_violations_confirmed": 67
+      "provable_total": 2255,
+      "margin_violations_confirmed": 54
     },
     "isabelle": {
       "status": "passed",
       "tool": "C:\\Users\\damia\\Desktop\\Isabelle2025-2\\bin\\isabelle",
       "session": "FSOT_CrossProof",
-      "theory_count": 23,
+      "theory_count": 24,
       "connective_theories": 1,
-      "formal_theory_count": 18,
+      "formal_theory_count": 19,
       "obligation_scope": "connective_and_full_formal",
-      "provable_obligations": 2207,
-      "chunk_count": 23,
-      "chunks_passed": 23,
+      "provable_obligations": 2255,
+      "chunk_count": 24,
+      "chunks_passed": 24,
       "chunks": [
         {
           "theory": "ConnectiveSpine",
@@ -659,7 +657,7 @@
           "theory": "StructuralProofSpine",
           "file": "StructuralProofSpine.thy",
           "scope": "structural_proof",
-          "obligation_count": 425,
+          "obligation_count": 432,
           "status": "passed"
         },
         {
@@ -806,7 +804,14 @@
           "theory": "FullFormalSpine_17",
           "file": "FullFormalSpine_17.thy",
           "scope": "full_formal",
-          "obligation_count": 81,
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_18",
+          "file": "FullFormalSpine_18.thy",
+          "scope": "full_formal",
+          "obligation_count": 22,
           "status": "passed"
         }
       ],
@@ -814,28 +819,28 @@
         "session": "FSOT_CrossProof",
         "status": "passed",
         "returncode": 0,
-        "stdout_tail": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:01:06 elapsed time)\n0:01:20 elapsed time\n",
-        "stderr": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:01:06 elapsed time)\n0:01:20 elapsed time\n"
+        "stdout_tail": "0:00:04 elapsed time\n",
+        "stderr": "0:00:04 elapsed time\n"
       }
     },
     "isabelle_refinement": {
       "status": "passed",
       "provable_triangulated_ok": null,
-      "provable_total": 2207,
-      "isabelle_lemmas_indexed": 1781
+      "provable_total": 2255,
+      "isabelle_lemmas_indexed": 1822
     },
     "transcendental_bounds_gap": {
       "exported_float_obligations_from_bounds": 277,
       "excluded_pi_e_interval_count": 2,
       "transcendental_lemma_count": 68,
-      "report": "vendor/fsot_compute.py\\data\\transcendental_bounds_gap_report.json"
+      "report": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\transcendental_bounds_gap_report.json"
     },
     "rust_replay": {
       "status": "passed",
       "tool": "C:\\Users\\damia\\.cargo\\bin\\cargo.EXE",
       "crate": "fsot_obligation_replay",
-      "obligation_count": 1873,
-      "formal_count": 1781,
+      "obligation_count": 1914,
+      "formal_count": 1822,
       "transcendental_count": 68,
       "test_file": "replay_all_obligations.rs",
       "returncode": 0,
@@ -844,8 +849,8 @@
     },
     "rust_refinement": {
       "status": "passed",
-      "total_exported_to_rust": 1873,
-      "formal_python_f64_ok": 1781,
+      "total_exported_to_rust": 1914,
+      "formal_python_f64_ok": 1822,
       "transcendental_python_f64_ok": 68
     },
     "rust_lean_bridge_parity": {
@@ -854,7 +859,7 @@
       "python_boot_scalar": 0.09928895626861721,
       "benchmark_median_error_pct": 0.0,
       "returncode": 0,
-      "stderr_tail": "Wrote vendor/fsot_compute.py\\data\\rust_lean_bridge_benchmark.json\n  records: 9  median_err: 0.0\nRUST_LEAN_BRIDGE RUNTIME PARITY (Tier 85)\n  python boot_scalar: 0.09928895626861721 (ok=True)\n  cargo: passed\n  benchmark median_err: 0.0%\n  overall_ok: True\nWrote vendor/fsot_compute.py\\data\\rust_lean_bridge_runtime_parity_report.json\n"
+      "stderr_tail": "Wrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\rust_lean_bridge_benchmark.json\n  records: 9  median_err: 0.0\nRUST_LEAN_BRIDGE RUNTIME PARITY (Tier 85)\n  python boot_scalar: 0.09928895626861721 (ok=True)\n  cargo: passed\n  benchmark median_err: 0.0%\n  overall_ok: True\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\rust_lean_bridge_runtime_parity_report.json\n"
     },
     "rust_lean_bridge_refinement": {
       "status": "passed",
@@ -870,13 +875,13 @@
     "fstar": {
       "status": "passed",
       "tool": "C:\\Users\\damia\\tools\\fstar-v2026.07.05\\bin\\fstar.exe",
-      "entry": "vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarBoot.fst",
+      "entry": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarBoot.fst",
       "modules": [
         "FSOTScalarKernel",
         "FSOTScalarBoot"
       ],
       "returncode": 0,
-      "stderr_tail": "Verified module: FSOTScalarBoot\nAll verification conditions discharged successfully\n* Warning 241 at vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst(0,0-0,0):\n  - Unable to load\n    vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    since checked file\n    vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    does not exist; will recheck\n    vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst\n    (suppressing this warning for further modules)\n\n"
+      "stderr_tail": "Verified module: FSOTScalarBoot\nAll verification conditions discharged successfully\n* Warning 241 at I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst(0,0-0,0):\n  - Unable to load\n    I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    since checked file\n    I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    does not exist; will recheck\n    I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst\n    (suppressing this warning for further modules)\n\n"
     },
     "fstar_refinement": {
       "status": "passed",
@@ -897,16 +902,13 @@
       "disk_status": "passed",
       "qemu_status": "passed",
       "returncode": 0,
-      "stderr_tail": "RUST_LEAN_BRIDGE QEMU HARNESS (Tier 87)\n  serial: passed boot=0.09928895626861721\n  disk: passed boot=0.0992889562686172 disk_boot=ok\n  qemu: passed (QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a))\n  overall_ok: True\nWrote vendor/fsot_compute.py\\data\\rust_lean_bridge_qemu_harness_report.json\n"
+      "stderr_tail": "RUST_LEAN_BRIDGE QEMU HARNESS (Tier 87)\n  serial: passed boot=0.09928895626861721\n  disk: passed boot=0.0992889562686172 disk_boot=ok\n  qemu: passed (QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a))\n  overall_ok: True\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\rust_lean_bridge_qemu_harness_report.json\n"
     },
     "esp32_harness": {
-      "status": "passed",
-      "build_status": "passed",
-      "flash_status": "skipped",
-      "serial_status": "passed",
-      "port": "COM3",
-      "returncode": 0,
-      "stderr_tail": "ESP32 FSOT SERIAL HARNESS (Tier 91)\n  port: COM3\n  flash: skipped\n  serial: passed boot=0.09928895626861721 hardware_boot=ok\n  overall_ok: True\nWrote vendor/fsot_compute.py\\data\\esp32_fsot_serial_harness_report.json\n"
+      "status": "skipped",
+      "reason": "no CP210x COM port (hardware optional)",
+      "build_status": "skipped",
+      "serial_status": "skipped"
     }
   },
   "proof_debt": {
@@ -917,16 +919,16 @@
     "note": "Cross-proof triangulates exported numeric obligations; F* boot kernel uses oracle literals; Coq/Isabelle pi/e base intervals are native (Isabelle via HOL-Decision_Procs.Approximation)."
   },
   "overall_ok": true,
-  "github_ready": false,
-  "github_ready_note": "Blocked until false margin violations cleared and wide verification stable.",
+  "github_ready": true,
+  "github_ready_note": "Formal numeric spine + QEMU bare-metal verified; 54 structural bundle_conj rows excluded by design; ESP32 hardware is optional unless --require-esp32.",
   "full_triangulation": true,
   "four_way_verification": true,
   "five_way_runtime": true,
   "six_way_formal_executable": true,
   "seven_way_bare_metal": true,
-  "eight_way_hardware": true,
-  "esp32_skipped": false,
-  "esp32_serial_ok": true,
-  "esp32_build_ok": true,
+  "eight_way_hardware": false,
+  "esp32_skipped": true,
+  "esp32_serial_ok": false,
+  "esp32_build_ok": false,
   "note": "Tier 91: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec + QEMU serial/disk boot + ESP32 RF observer (WiFi/BLE/ESP-NOW) harness."
 }
