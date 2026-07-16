@@ -725,11 +725,3 @@ https://github.com/dappalumbo91/FSOT-2.1-Lean/releases/tag/fsot-monograph-v1
 ```
 
 ---
-
-## License
-
-Apache 2.0 — consistent with the reference implementation.
-
----
-
-*Fluid Spacetime Omni-Theory (FSOT) — created and architected by Damian Arthur Palumbo.*

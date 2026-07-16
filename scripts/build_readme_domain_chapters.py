@@ -1475,7 +1475,7 @@ def main() -> int:
         "core_domains": len(core_rows),
         "extension_panels": len(ext_rows),
         "interdisciplinary_subclusters": len([w for w in written if w["id"].startswith("1") or w["id"].startswith("2")]),
-        "merge_command": "python scripts/merge_readme_domain_chapters.py",
+        "merge_command": "python scripts/merge_readme_arxiv_thesis.py",
     }
     MANIFEST.write_text(yaml.safe_dump(doc, sort_keys=False, allow_unicode=True), encoding="utf-8")
     print(f"Wrote {len(written)} domain chapters to {OUT}")

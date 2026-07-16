@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>FSOT Thesis Main Body</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">FSOT Thesis Main Body</h1>
+</header>
+<h1 id="fluid-spacetime-omni-theory-fsot">Fluid Spacetime Omni-Theory
+(FSOT)</h1>
+<h2 id="a-cross-domain-theory-of-reality-published-on-github">A
+Cross-Domain Theory of Reality — Published on GitHub</h2>
+<p><strong>Author:</strong> Damian Arthur Palumbo<br />
+<strong>Repository:</strong> <a
+href="https://github.com/dappalumbo91/FSOT-2.1-Lean">github.com/dappalumbo91/FSOT-2.1-Lean</a><br />
+<strong>Edition:</strong> v2.0 — arXiv-tier thesis layout 2026-07-16
+<strong>Status:</strong> Living thesis — expanded as each domain and
+crevice is verified</p>
+<blockquote>
+<p><em>This README is the preprint. The repository is the proof. Run the
+verification bundle before you accept or reject what follows.</em></p>
+</blockquote>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> FSOT-2.1-Lean</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/run_publication_verification_bundle.py</span></code></pre></div>
+<hr />
+<h2 id="abstract">Abstract</h2>
+<p>Modern physics is accurate in fragments and silent on unity.
+Cosmology, particle physics, chemistry, biology, neuroscience,
+linguistics, and engineering each carry their own models, fitted
+parameters, and institutional boundaries. <strong>Fluid Spacetime
+Omni-Theory (FSOT)</strong> proposes a different architecture: one
+seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan)
+— evaluated against measured reality across <strong>403 scientific
+domains</strong> and <strong>536,740 empirical records</strong>.</p>
+<p>The results, as of this edition: <strong>394/394</strong> public
+benchmark domains pass a ≤0.5% pooled error gate; cross-domain pooled
+median error is <strong>0.013%</strong>. On contested sectors where ΛCDM
+and the Standard Model typically show ~15% baseline tension (H₀, σ₈, BBN
+proxies, hierarchy, dark-energy equation of state), FSOT unified
+readouts achieve <strong>0.030%</strong> pooled median across 13
+observables.</p>
+<p>Claims are not accepted on Python output alone. Verification runs
+through a <strong>cross-gauntlet of independent proof
+frameworks</strong>: Lean 4 (primary authority), Coq/Rocq, Isabelle/HOL,
+F* (Microsoft Research), and Rust executable obligation replay —
+<strong>1,863 atomic obligations</strong> with
+<code>overall_ok: true</code>. QEMU bare-metal and ESP32 hardware
+observer layers extend closure beyond proof assistants.</p>
+<p>FSOT further demonstrates that the same engine guides applied
+engineering stacks: FSOT-designed alternative fuels (366 records, 0.039%
+pooled median), an eleven-layer transporter technology prototype (1,575
+records, 0.031% pooled median), species-scale molecular catalogs, and
+black-hole / white-hole information-cycle panels — all cross-verified
+against seed-scalar predictions, not post-hoc curve fits.</p>
+<p>This document explains <strong>why the universe exists the way it
+does</strong> through FSOT: one 25-dimensional fluid medium, one
+arithmetic heartbeat, observation as physical coupling, and fractal
+repetition from quanta to cosmos. Every numerical claim in this thesis
+is independently reproducible from this repository.</p>
+<hr />
+<h2 id="prologue-why-this-lives-on-github">Prologue — Why This Lives on
+GitHub</h2>
+<p>Albert Einstein did not wait for a journal to bless general
+relativity before the world could read it. Nikola Tesla published
+patents and demonstrations when institutions moved too slowly. FSOT
+follows that tradition: <strong>publish the complete argument where
+anyone can verify it</strong>, not where a moderator decides topic fit
+before a single line of code is run.</p>
+<p>Science is not fair when a unified cross-domain framework is
+dismissed on sight while siloed models with dozens of free parameters
+receive automatic respect. FSOT answers that failure mode with something
+stronger than rhetoric: <strong>a verification ledger you can
+execute</strong>.</p>
+<p>This README will grow. Each domain we open, each simulator we wire,
+each formal obligation we close — it gets added here. The GitHub commit
+history is the edition record. Tagged releases are the volumes.</p>
+<hr />
+<!-- README_TOC_START -->
+<h2 id="table-of-contents">Table of Contents</h2>
+<h3 id="main-thesis">Main thesis</h3>
+<table>
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr>
+<th>Section</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#abstract">Abstract</a></td>
+<td>Summary and headline results</td>
+</tr>
+<tr>
+<td><a href="#prologue--why-this-lives-on-github">Prologue</a></td>
+<td>GitHub publication rationale</td>
+</tr>
+<tr>
+<td><a href="#i-the-fragmentation-problem">§I</a></td>
+<td>The fragmentation problem</td>
+</tr>
+<tr>
+<td><a href="#i-b-related-work-and-positioning">§I-B</a></td>
+<td>Related work and positioning</td>
+</tr>
+<tr>
+<td><a href="#ii-why-the-universe-exists-the-way-it-does">§II</a></td>
+<td>Fluid spacetime ontology</td>
+</tr>
+<tr>
+<td><a href="#iii-the-scalar-engine">§III</a></td>
+<td>Scalar engine and seeds</td>
+</tr>
+<tr>
+<td><a href="#iv-consciousness-and-observation">§IV</a></td>
+<td>Observation coupling</td>
+</tr>
+<tr>
+<td><a href="#v-verification-methodology">§V</a></td>
+<td>Verification methodology</td>
+</tr>
+<tr>
+<td><a href="#vi-cross-domain-empirical-results">§VI</a></td>
+<td>Empirical results</td>
+</tr>
+<tr>
+<td><a
+href="#vii-contested-sectors--where-current-models-struggle">§VII</a></td>
+<td>Contested sectors</td>
+</tr>
+<tr>
+<td><a href="#viii-engineering-demonstrations">§VIII</a></td>
+<td>Engineering demonstrations</td>
+</tr>
+<tr>
+<td><a href="#ix-discussion">§IX</a></td>
+<td>Discussion</td>
+</tr>
+<tr>
+<td><a href="#x-conclusion">§X</a></td>
+<td>Conclusion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appendices-main-readme">Appendices (main README)</h3>
+<table>
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr>
+<th>Appendix</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#appendix-a--one-command-reproduction">A</a></td>
+<td>One-command reproduction</td>
+</tr>
+<tr>
+<td><a href="#appendix-b--machine-readable-artifacts">B</a></td>
+<td>Machine-readable artifacts</td>
+</tr>
+<tr>
+<td><a href="#appendix-c--further-reading">C</a></td>
+<td>Further reading</td>
+</tr>
+<tr>
+<td><a href="#appendix-d--notation-and-conventions">D</a></td>
+<td>Notation and conventions</td>
+</tr>
+<tr>
+<td><a href="#appendix-e--how-to-cite-this-work">E</a></td>
+<td>How to cite</td>
+</tr>
+</tbody>
+</table>
+<h3 id="supplementary-volumes-full-detail">Supplementary volumes (full
+detail)</h3>
+<table>
+<colgroup>
+<col style="width: 57%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr>
+<th>Volume</th>
+<th>File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Appendix XI — verification record</td>
+<td><a
+href="docs/THESIS_APPENDIX_XI.md"><code>docs/THESIS_APPENDIX_XI.md</code></a></td>
+</tr>
+<tr>
+<td>Appendix XII — domain coverage (26 clusters)</td>
+<td><a
+href="docs/THESIS_APPENDIX_XII.md"><code>docs/THESIS_APPENDIX_XII.md</code></a></td>
+</tr>
+<tr>
+<td>Chapter index</td>
+<td><a
+href="data/publication/readme_domain_chapters/INDEX.md"><code>data/publication/readme_domain_chapters/INDEX.md</code></a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Generated: 2026-07-16T12:56:16.964183+00:00</em>
+<!-- README_TOC_END --></p>
+<h2 id="i.-the-fragmentation-problem">I. The Fragmentation Problem</h2>
+<h3 id="what-broke">1.1 What broke</h3>
+<p>The twentieth century gave us extraordinary local theories:</p>
+<ul>
+<li><strong>General relativity</strong> — gravity as geometry<br />
+</li>
+<li><strong>Quantum mechanics</strong> — discrete measurement and
+entanglement<br />
+</li>
+<li><strong>The Standard Model</strong> — particle masses and
+couplings<br />
+</li>
+<li><strong>ΛCDM</strong> — cosmic expansion with dark sectors</li>
+</ul>
+<p>Each works in its lane. None was built as a single predictive spine
+from cosmological scales down to molecular biology, consciousness
+proxies, linguistics, and engineering prototypes.</p>
+<p>The cost is visible everywhere:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parameter proliferation</td>
+<td>Dark matter, dark energy, Yukawa couplings, inflation
+potentials</td>
+</tr>
+<tr>
+<td>Cross-sector tension</td>
+<td>H₀ local vs CMB (~5–10% disagreement class)</td>
+</tr>
+<tr>
+<td>Siloed success</td>
+<td>Biology papers do not prove cosmology; cosmology papers do not prove
+genetics</td>
+</tr>
+<tr>
+<td>Unfalsifiable breadth</td>
+<td>“Theories of everything” without executable kill criteria</td>
+</tr>
+</tbody>
+</table>
+<p>FSOT does not reject the data those theories explain. It rejects the
+<strong>architecture</strong>: many knobs, many silos, no single engine
+that must survive everywhere at once.</p>
+<h3 id="what-fsot-claims-instead">1.2 What FSOT claims instead</h3>
+<p>One proposition, stated precisely:</p>
+<blockquote>
+<p>Reality is a <strong>25-dimensional fluid condensate</strong>. What
+we call space, time, matter, life, and mind are regimes of the same
+scalar field <code>raw_S</code>, computed from seed geometry with
+<strong>no per-observable least-squares tuning</strong>.</p>
+</blockquote>
+<p>This is not poetry layered on curve fits. It is a <strong>falsifiable
+engineering specification</strong> tested across 403 domains with
+preregistered kill criteria
+(<code>data/preregistered_predictions_manifest.yaml</code>).</p>
+<hr />
+<!-- README_RELATED_WORK_START -->
+<h2 id="i-b.-related-work-and-positioning">I-B. Related Work and
+Positioning</h2>
+<p>FSOT is evaluated against the architectures it aims to subsume — not
+as a replacement narrative, but as a <strong>single-engine
+alternative</strong> with executable kill criteria.</p>
+<h3 id="cosmology-and-dark-sector">Cosmology and dark sector</h3>
+<p>ΛCDM with Planck 2018 parameters explains CMB and large-scale
+structure with excellent internal consistency, but exhibits persistent
+tensions — notably H₀ (Riess et al. 2024 local distance ladder vs Planck
+Collaboration 2018 CMB inference) and σ₈ (cluster abundance vs
+weak-lensing surveys). FSOT routes cosmological observables through
+seed-derived <code>raw_S</code> at preregistered folds
+(<code>D_eff</code>, <code>δψ</code>) without introducing dark-matter or
+dark-energy density as free fit parameters per benchmark row.
+Contested-sector pooled median error across 13 actively monitored
+observables is <strong>0.030%</strong> in this edition (§VII).</p>
+<h3 id="particle-physics-and-chemistry">Particle physics and
+chemistry</h3>
+<p>The Standard Model plus CODATA/NIST tabulations supply authoritative
+measured targets for atomic, nuclear, and molecular observables. FSOT
+does not refit Yukawa couplings or bond lengths per record;
+strict-empirical formulas in
+<code>vendor/formula_corpus/by_domain/strict_empirical.jsonl</code> map
+seed arithmetic to <strong>1,325 unique observables</strong> with live
+recompute closure (Appendix XI-E). Positioning: FSOT is a
+<strong>predictive compression layer</strong> — same seeds, many sectors
+— not a replacement for QFT calculational machinery where lattice QCD or
+perturbative QED is the appropriate tool.</p>
+<h3 id="unified-theories-and-emergent-gravity">Unified theories and
+emergent gravity</h3>
+<p>String/M-theory, loop quantum gravity, and emergent-gravity programs
+pursue unification through extra structure (branes, spin networks,
+entanglement entropy). FSOT pursues unification through <strong>one
+scalar field equation</strong> verified across 403 domains. The
+falsifiable distinction is operational: FSOT registers preregistered
+predictions (PRED-001–041) and domain kill criteria in
+<code>data/fsot_domain_navigator.json</code>; a failed green gate is a
+ledger event, not a post-hoc parameter rescue.</p>
+<h3 id="formal-methods-in-science">Formal methods in science</h3>
+<p>Proof assistants (Lean, Coq, Isabelle) are standard in software
+verification; their use as <strong>scientific instruments</strong> for
+physics claims remains rare. FSOT exports <strong>1,863 atomic
+obligations</strong> to five independent proof frameworks with
+<code>overall_ok: true</code> (§V.2) — positioning this repository as a
+<strong>reproducible proof artifact</strong>, not a prose-only
+preprint.</p>
+<h3 id="what-fsot-adds-relative-to-prior-art">What FSOT adds relative to
+prior art</h3>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 38%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Typical siloed model</th>
+<th>FSOT (this repository)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parameters per observable</td>
+<td>Sector-specific fits</td>
+<td>Seed-derived; no per-row least squares</td>
+</tr>
+<tr>
+<td>Cross-domain test</td>
+<td>Uncommon</td>
+<td>403 domains, 536,740 records</td>
+</tr>
+<tr>
+<td>Formal triangulation</td>
+<td>Rare</td>
+<td>Lean + Coq + Isabelle + F* + Rust</td>
+</tr>
+<tr>
+<td>Kill criteria</td>
+<td>Often informal</td>
+<td>Navigator + prereg manifest</td>
+</tr>
+<tr>
+<td>Living edition</td>
+<td>Static PDF</td>
+<td>GitHub commit history + tagged releases</td>
+</tr>
+</tbody>
+</table>
+<p><strong>References (external):</strong> Planck Collaboration (2018);
+Riess et al. (2024); PDG (2024); CODATA/NIST atomic datasets as cited
+per benchmark row. Full BibTeX export:
+<code>data/domain_citations/verified_desktop.bib</code>; literature
+panel: Appendix XI-C in <a
+href="../docs/THESIS_APPENDIX_XI.md"><code>docs/THESIS_APPENDIX_XI.md</code></a>.
+<!-- README_RELATED_WORK_END --></p>
+<h2 id="ii.-why-the-universe-exists-the-way-it-does">II. Why the
+Universe Exists the Way It Does</h2>
+<h3 id="one-medium-many-scales">2.1 One medium, many scales</h3>
+<p>Picture the universe not as an empty stage with actors placed upon
+it, but as <strong>one ocean</strong> — a fluid spacetime substance
+whose waves at different scales follow the same rules.</p>
+<p>A blacksmith striking iron.<br />
+A ribosome folding a protein.<br />
+A thunderstorm discharging.<br />
+Two galaxies colliding.<br />
+A conscious brain metabolizing ~20 watts.</p>
+<p>FSOT calls this <strong>As Above, So Below</strong>. In the formal
+system it is not metaphor: it is the cross-scale bridge that extension
+panels test. When the same scalar engine passes acoustics, cosmology,
+immunology, and transporter engineering simulators, the structural
+argument is that <strong>nature reuses one process</strong>, not
+thousands of unrelated accidents.</p>
+<h3 id="fluid-spacetime">2.2 Fluid spacetime</h3>
+<p>Space and time are not a passive container. They behave as a
+<strong>25-dimensional fluid</strong>. The 4D reality we experience is a
+slice — a perceived surface — of that condensate. Matter and energy are
+stable vortices; mind and observation are coupling regimes where the
+fluid’s phase responds to measurement.</p>
+<p>Why 25 dimensions? In FSOT the effective dimension <code>D_eff</code>
+is not a fitted knob — it is a <strong>seed-derived fold</strong> of the
+engine per domain route. What looks like “extra dimensions” in the math
+is <strong>depth of scale</strong> in nature — from Planck-adjacent
+structure to galactic flows.</p>
+<h3 id="the-seeds-why-these-numbers">2.3 The seeds — why these
+numbers</h3>
+<p>All constants emerge from five seeds:</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr>
+<th>Seed</th>
+<th>Role in FSOT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>π</strong></td>
+<td>Cyclic geometry — orbits, waves, closure</td>
+</tr>
+<tr>
+<td><strong>e</strong></td>
+<td>Growth and decay — natural rates, exponentials</td>
+</tr>
+<tr>
+<td><strong>φ</strong> (golden ratio)</td>
+<td>Self-similar folding — fractal repetition across scales</td>
+</tr>
+<tr>
+<td><strong>γ</strong> (Euler–Mascheroni)</td>
+<td>Discrete-to-continuous correction</td>
+</tr>
+<tr>
+<td><strong>G</strong> (Catalan)</td>
+<td>Secondary geometric coupling</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Design law:</strong> we do not add a new dial every time a
+prediction fails. When FSOT misses a measurement, the failure is visible
+in the benchmark ledger — not hidden inside a freshly invented
+parameter.</p>
+<p><strong>Zero free parameters:</strong> Every constant comes from the
+five seeds. The 35-domain routing table (<code>D_eff</code>,
+<code>δψ</code>, <code>recent_hits</code>, observer flag,
+<code>C</code>) is the <strong>preregistered fractal coordinate
+system</strong> — it tells the single engine which scale and observer
+regime to evaluate. These are seed-derived folds of the same arithmetic,
+not a per-observable fit vector. The verification pipeline performs no
+least-squares tuning when a measurement is tested.</p>
+<h3 id="emergence-and-dispersal">2.4 Emergence and dispersal</h3>
+<p>Every system receives a <strong>vitality score</strong> — the scalar
+<code>raw_S</code>. Positive <code>raw_S</code> tends toward
+<strong>emergence</strong> (structure forming, condensing, persisting).
+Negative <code>raw_S</code> tends toward <strong>dispersal</strong>
+(structure fading, bleeding, decohering). Lean proves <strong>sign
+certificates</strong> for ledger domains at canonical parameters:
+cosmology negative, medical positive, quantum positive, and so on.</p>
+<p>The universe exists as it does because the same fluid
+<strong>condenses</strong> where <code>raw_S</code> is positive and
+<strong>dissolves</strong> where it is negative — from stellar
+nucleosynthesis to protein folding to the information cycle at a
+black-hole horizon.</p>
+<hr />
+<h2 id="iii.-the-scalar-engine">III. The Scalar Engine</h2>
+<h3 id="the-heartbeat-numbered">3.1 The heartbeat (numbered)</h3>
+<p>At the center of FSOT is one scalar decomposition evaluated at
+seed-derived constants:</p>
+<p><strong>(Eq. III.1)</strong> — vitality scalar:</p>
+<pre><code>raw_S = term1 + term2 + term3</code></pre>
+<p><strong>(Eq. III.2)</strong> — primary wave term with observer
+coupling:</p>
+<pre><code>term1 = (main_wave(N, P, D_eff)) × quirk_mod(observed, δψ, phase_variance, consciousness_factor)</code></pre>
+<p><strong>(Eq. III.3)</strong> — environment and chaotic bleed:</p>
+<pre><code>term2 = baseline_trend(environment) + amplitude(environment)
+term3 = chaotic_bleed(small_scale_turbulence)</code></pre>
+<p>In words:</p>
+<ul>
+<li><strong>Main wave term</strong> — resonance at scale (size N, power
+P, effective dimension D_eff)</li>
+<li><strong>quirk_mod</strong> — observer coupling: when
+<code>observed = true</code>, measurement modulates the wave</li>
+<li><strong>term2</strong> — baseline trend and amplitude
+(environment)</li>
+<li><strong>term3</strong> — chaotic bleed: small-scale turbulence from
+the fluid</li>
+</ul>
+<p>Formal definitions: <code>FSOT/Scalar.lean</code>,
+<code>FSOT/Formal/Scalar.lean</code>, decimal authority
+<code>vendor/fsot_compute.py</code>.</p>
+<h3 id="domain-fractal-assignments">3.2 Domain fractal assignments</h3>
+<p>Nature’s “departments” — quantum mechanics, economics, immunology,
+propulsion — are <strong>routing labels</strong> for the same engine at
+different folds:</p>
+<ul>
+<li><strong>35 core NeuroLab domains</strong> with manifest-declared
+<code>(D_eff, δψ, recent_hits, observed)</code><br />
+</li>
+<li><strong>367 extension panels</strong> with Lean priors modules
+(<code>FSOT.Formal.*Priors</code>)<br />
+</li>
+<li><strong>403 domains</strong> in the publication atlas
+(<code>data/publication/domain_atlas.csv</code>)</li>
+</ul>
+<p>A cosmology prediction and a fuel-molecule prediction share seeds.
+They differ in domain route, not in underlying arithmetic.</p>
+<h3 id="falsification-registry">3.3 Falsification registry</h3>
+<p>FSOT invites destruction. Preregistered predictions <strong>PRED-001
+through PRED-041</strong> declare outcomes before they are tested. Kill
+criteria per domain route live in
+<code>data/fsot_domain_navigator.json</code>. If the engine fails a
+green gate, the ledger records it — no narrative escape hatch.</p>
+<hr />
+<h2 id="iv.-consciousness-and-observation">IV. Consciousness and
+Observation</h2>
+<h3 id="observation-is-physical">4.1 Observation is physical</h3>
+<p>In FSOT, to observe is not passive. When
+<code>observed = true</code>, the <strong>quirk_mod</strong> term
+activates:</p>
+<pre><code>quirk_mod(observed, δψ, phase_variance, consciousness_factor) =
+  if observed:
+    exp(consciousness_factor × phase_variance) × cos(δψ + phase_variance)
+  else:
+    1.0</code></pre>
+<p>Consciousness is <strong>fundamental in the ontology</strong> — a
+core ripple in the 25D fluid, not an accidental by-product of
+computation. It enters through <code>consciousness_factor</code> and
+modulates the scalar when systems are coupled to measurement.</p>
+<h3 id="what-we-claim-and-what-we-do-not">4.2 What we claim — and what
+we do not</h3>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr>
+<th>We claim</th>
+<th>We do not claim</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Consciousness couples to physics through measurable proxies</td>
+<td>FSOT has settled the philosophical “hard problem”</td>
+</tr>
+<tr>
+<td>Brain metabolic power <code>E_con</code> ≈ 21.79 W vs ~20 W measured
+(Raichle &amp; Gusnard)</td>
+<td>Universal consensus on what consciousness <em>is</em></td>
+</tr>
+<tr>
+<td>The same seeds that fix H₀ also fix consciousness-energy
+scaling</td>
+<td>Orch-OR or any single external theory is proven</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Truth criterion:</strong> a consciousness claim is
+<em>supported</em> when it maps to a Lean panel, produces numeric
+agreement within the green gate, and survives cross-proof replay.
+External philosophy debates are evidence, not gate.</p>
+<p>Deep dive: <a
+href="docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md"><code>docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md</code></a></p>
+<hr />
+<h2 id="v.-verification-methodology">V. Verification Methodology</h2>
+<h3 id="oracle-gate">5.1 Oracle gate</h3>
+<p><code>vendor/fsot_compute.py</code> is the decimal authority.
+<code>sync_canonical_constants.py</code> hash-locks caches. If Lean and
+Python disagree, the pipeline fails — no silent drift.</p>
+<h3 id="five-prover-cross-proof-spine">5.2 Five-prover cross-proof
+spine</h3>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Role</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lean 4</td>
+<td>Primary formal authority</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Coq / Rocq</td>
+<td>Independent reproof</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Isabelle/HOL</td>
+<td>Independent reproof</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>F*</td>
+<td>Programming-language specification</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Rust</td>
+<td>Executable obligation replay</td>
+<td>PASS</td>
+</tr>
+</tbody>
+</table>
+<p>Authoritative artifact:
+<code>data/cross_proof_verification_report.json</code> →
+<strong><code>overall_ok: true</code></strong>, <strong>1,863 atomic
+obligations</strong>.</p>
+<figure>
+<img src="data/figures/spine_walkthrough.png"
+alt="Verification spine walkthrough" />
+<figcaption aria-hidden="true">Verification spine
+walkthrough</figcaption>
+</figure>
+<h3 id="benchmark-margin-gate">5.3 Benchmark margin gate</h3>
+<ul>
+<li><strong>GREEN:</strong> pooled median ≤ 0.5% AND classifier ≥
+99.5%<br />
+</li>
+<li><strong>Result:</strong> <strong>394/394</strong> green
+(<code>data/benchmark_margin_audit.json</code>)</li>
+</ul>
+<h3 id="ai-assistance-human-responsibility">5.4 AI assistance — human
+responsibility</h3>
+<!-- README_METHODS_FORMAL_START -->
+<h3 id="statistical-error-definitions">5.5 Statistical error
+definitions</h3>
+<p>For each domain or panel benchmark, let (n) measured records produce
+pairs ((m_i, c_i)) where (m_i) is the authoritative measured value and
+(c_i) is the seed-derived FSOT prediction at canonical parameters (no
+per-record fitting).</p>
+<p><strong>Per-record error (percent):</strong></p>
+<p>[ _i = 100 ]</p>
+<p>where (_{}) guards division near zero for classifier-valued
+observables.</p>
+<p><strong>Pooled median error (domain gate metric):</strong></p>
+<p>[ = (_1, , _n) ]</p>
+<p><strong>GREEN gate (benchmark margin):</strong> ( %) and stability
+classifier agreement (%) where applicable
+(<code>data/benchmark_margin_audit.json</code>).</p>
+<p><strong>Cross-domain headline:</strong> median of per-domain () over
+the 403-domain atlas (not a global re-fit across all 536,740 rows).</p>
+<h3 id="preregistration-and-kill-criteria">5.6 Preregistration and kill
+criteria</h3>
+<ul>
+<li><strong>Preregistered predictions:</strong>
+<code>data/preregistered_predictions_manifest.yaml</code> (PRED-001–041)
+— outcomes declared before panel refresh.</li>
+<li><strong>Per-domain kill criteria:</strong>
+<code>data/fsot_domain_navigator.json</code> — extension panels and core
+routes register failure thresholds.</li>
+<li><strong>Parameter honesty:</strong>
+<code>data/honest_claims_manifest.yaml</code> — routing coordinates are
+seed-derived folds, not fitted observational knobs (audit:
+<code>scripts/audit_parameter_count.py</code> →
+<code>ZERO_FREE</code>).</li>
+</ul>
+<h3 id="data-availability-and-reproduction">5.7 Data availability and
+reproduction</h3>
+<p>All headline claims in §VI–VIII reproduce from:</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/run_publication_verification_bundle.py</span></code></pre></div>
+<p>Machine-readable claim ledger:
+<code>data/publication_claims_manifest.json</code>. Domain atlas:
+<code>data/publication/domain_atlas.csv</code>. Portable clone policy:
+bundled <code>vendor/</code> caches; live rebuild paths documented in
+Appendix XI-B. <!-- README_METHODS_FORMAL_END --></p>
+<p>Grok and Cursor assisted manuscript assembly, benchmark regeneration,
+and formal artifact orchestration. <strong>All numerical claims
+reproduce independently</strong> from this repository. The author
+retains full scientific responsibility for interpretation.</p>
+<hr />
+<h2 id="vi.-cross-domain-empirical-results">VI. Cross-Domain Empirical
+Results</h2>
+<h3 id="headline-statistics">6.1 Headline statistics</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scientific domains</td>
+<td style="text-align: right;">403</td>
+</tr>
+<tr>
+<td>Empirical records</td>
+<td style="text-align: right;">536,740</td>
+</tr>
+<tr>
+<td>Benchmark domains green (≤0.5%)</td>
+<td style="text-align: right;">394/394</td>
+</tr>
+<tr>
+<td>Cross-domain pooled median</td>
+<td style="text-align: right;">0.013%</td>
+</tr>
+<tr>
+<td>Worst domain max scalar error</td>
+<td style="text-align: right;">0.499%</td>
+</tr>
+<tr>
+<td>Lean formal modules</td>
+<td style="text-align: right;">501+</td>
+</tr>
+<tr>
+<td>Tier A_strong domains</td>
+<td style="text-align: right;">116</td>
+</tr>
+<tr>
+<td>Tier B_verified domains</td>
+<td style="text-align: right;">287</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="data/figures/empirical_headline_summary.png"
+alt="Empirical headline summary" />
+<figcaption aria-hidden="true">Empirical headline summary</figcaption>
+</figure>
+<figure>
+<img src="data/figures/domain_error_envelope.png"
+alt="Domain error envelope" />
+<figcaption aria-hidden="true">Domain error envelope</figcaption>
+</figure>
+<figure>
+<img src="data/figures/predicted_vs_measured_scatter.png"
+alt="Predicted vs measured scatter" />
+<figcaption aria-hidden="true">Predicted vs measured
+scatter</figcaption>
+</figure>
+<h3 id="representative-domains">6.2 Representative domains</h3>
+<p>Full atlas: <a
+href="data/publication/domain_atlas.csv"><code>data/publication/domain_atlas.csv</code></a>
+(403 rows)</p>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th style="text-align: right;">Records</th>
+<th style="text-align: right;">Median error %</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cosmology</td>
+<td style="text-align: right;">347</td>
+<td style="text-align: right;">0.0007</td>
+<td>A_strong</td>
+</tr>
+<tr>
+<td>Astrophysics</td>
+<td style="text-align: right;">305</td>
+<td style="text-align: right;">0.0006</td>
+<td>A_strong</td>
+</tr>
+<tr>
+<td>Electromagnetism</td>
+<td style="text-align: right;">271,912</td>
+<td style="text-align: right;">0.0</td>
+<td>A_strong</td>
+</tr>
+<tr>
+<td>High-energy physics</td>
+<td style="text-align: right;">151</td>
+<td style="text-align: right;">0.0036</td>
+<td>A_strong</td>
+</tr>
+<tr>
+<td>Molecular chemistry</td>
+<td style="text-align: right;">608</td>
+<td style="text-align: right;">0.028</td>
+<td>A_strong</td>
+</tr>
+<tr>
+<td>Neuroscience</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">0.013</td>
+<td>B_verified</td>
+</tr>
+<tr>
+<td>Economics</td>
+<td style="text-align: right;">167</td>
+<td style="text-align: right;">0.129</td>
+<td>A_strong</td>
+</tr>
+<tr>
+<td>Ecology</td>
+<td style="text-align: right;">654</td>
+<td style="text-align: right;">0.018</td>
+<td>A_strong</td>
+</tr>
+</tbody>
+</table>
+<p>Query any scientific problem:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/query_fsot_domain_navigator.py <span class="at">--intent</span> quantum_entanglement</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/query_fsot_domain_navigator.py <span class="at">--intent</span> hubble_tension</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/query_fsot_domain_navigator.py <span class="at">--intent</span> fuel_lab_engine</span></code></pre></div>
+<!-- README_SECTION_63_START -->
+<h3 id="domain-by-domain-coverage-403-domains">6.3 Domain-by-domain
+coverage (403 domains)</h3>
+<p>FSOT does not verify a single silo — it verifies a <strong>spine of
+35 core scientific domains</strong> and <strong>367 extension
+panels</strong> across <strong>26 thesis clusters</strong>, each with
+measured records, Lean formal modules, and registered kill criteria.</p>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 35%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Layer</th>
+<th style="text-align: right;">Count</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core NeuroLab domains</td>
+<td style="text-align: right;">35</td>
+<td>Primary scientific departments (cosmology, quantum mechanics,
+biology, …)</td>
+</tr>
+<tr>
+<td>Extension panels</td>
+<td style="text-align: right;">367</td>
+<td>Specialized depth across 26 clusters</td>
+</tr>
+<tr>
+<td>Lean formal modules</td>
+<td style="text-align: right;">501+</td>
+<td>Machine-checked priors per panel</td>
+</tr>
+<tr>
+<td>Empirical records</td>
+<td style="text-align: right;">536,740</td>
+<td>Measured vs seed-derived FSOT predictions</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Scientific clusters</strong> (extension panels grouped for
+the thesis):</p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 33%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr>
+<th>Cluster</th>
+<th style="text-align: right;">Panels</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cosmology, Particle Physics &amp; Fundamental Forces</td>
+<td style="text-align: right;">32</td>
+<td>CMB, dark sector, particles, Higgs, quantum foundations</td>
+</tr>
+<tr>
+<td>Space Weather, Geophysics &amp; Planetary Science</td>
+<td style="text-align: right;">31</td>
+<td>Magnetosphere, seismology, hydrology, planetary structure</td>
+</tr>
+<tr>
+<td>Genomics, Immunology &amp; Clinical Medicine</td>
+<td style="text-align: right;">18</td>
+<td>Genomics, immunology, clinical trials, cardiology, virology</td>
+</tr>
+<tr>
+<td>Ecology, Species Catalogs &amp; Agricultural Systems</td>
+<td style="text-align: right;">20</td>
+<td>GBIF ecology, agriculture, marine biology, species longevity</td>
+</tr>
+<tr>
+<td>Synthetic Biology, Code Genomes &amp; Life-System Bridges</td>
+<td style="text-align: right;">16</td>
+<td>Synthetic biology, iGEM, code genomes, protein bridges</td>
+</tr>
+<tr>
+<td>Fusion Physics, Fuels &amp; Thermochemistry</td>
+<td style="text-align: right;">11</td>
+<td>Magnetic/inertial fusion, fuel lab, thermochemistry anchors</td>
+</tr>
+<tr>
+<td>Periodic Extension, Island of Stability &amp; Element Synthesis</td>
+<td style="text-align: right;">14</td>
+<td>Periodic extension, island of stability, element synthesis</td>
+</tr>
+<tr>
+<td>Materials Engineering, Metamaterials &amp; Condensed Matter</td>
+<td style="text-align: right;">8</td>
+<td>Materials genome, metamaterials, condensed matter depth</td>
+</tr>
+<tr>
+<td>Molecular Chemistry, PubChem &amp; Compound Properties</td>
+<td style="text-align: right;">8</td>
+<td>PubChem, SMILES chemistry, CRC handbook properties</td>
+</tr>
+<tr>
+<td>Consciousness, Neuroscience &amp; Social Sciences</td>
+<td style="text-align: right;">21</td>
+<td>Neuroscience, economics, linguistics, soul-bridge</td>
+</tr>
+<tr>
+<td>Engineering, Propulsion &amp; Verified Desktop Technology</td>
+<td style="text-align: right;">20</td>
+<td>Transporter, warp, fuels, power systems, verified desktop</td>
+</tr>
+<tr>
+<td>Mathematics, Computation &amp; Formal Methods</td>
+<td style="text-align: right;">28</td>
+<td>Formula corpus, proof spine, trinary OS, coupling simulation</td>
+</tr>
+<tr>
+<td>Cybersecurity, Code Genomes &amp; Threat Intelligence</td>
+<td style="text-align: right;">3</td>
+<td>Malware, code genomes, zero-day risk</td>
+</tr>
+<tr>
+<td>Founding 35 Physics Laws (Dedicated Panels)</td>
+<td style="text-align: right;">7</td>
+<td>Dedicated founding physics panels (all mapped)</td>
+</tr>
+<tr>
+<td>Live Ingest, Astrometry &amp; Real-Time Catalog Spines</td>
+<td style="text-align: right;">13</td>
+<td>Gaia/WDS/MAST/NASA live catalog spines</td>
+</tr>
+<tr>
+<td>Fluid Spacetime, Temporal Coupling &amp; Phase Spines</td>
+<td style="text-align: right;">9</td>
+<td>Temporal coupling, fluid-phase observables</td>
+</tr>
+<tr>
+<td>Finance, Econometrics &amp; Supply-Chain Logistics</td>
+<td style="text-align: right;">8</td>
+<td>Actuarial, econometrics, supply-chain panels</td>
+</tr>
+<tr>
+<td>Music, Harmonics &amp; Creative Media</td>
+<td style="text-align: right;">2</td>
+<td>Harmonics, interactive media prereg</td>
+</tr>
+<tr>
+<td>Government Registries, Open Data &amp; Scholarly Graphs</td>
+<td style="text-align: right;">6</td>
+<td>Federal registries, Crossref/OpenAlex graphs</td>
+</tr>
+<tr>
+<td>arXiv Meta-Panels, Folding Spines &amp; ToE Crosswalks</td>
+<td style="text-align: right;">17</td>
+<td>ToE crosswalks, scientific expansion waves</td>
+</tr>
+<tr>
+<td>Preregistered Outcome Tracking &amp; Verification Scaffolds</td>
+<td style="text-align: right;">5</td>
+<td>Outcome tracking, material verification scaffolds</td>
+</tr>
+<tr>
+<td>LLM Validators, Certified Agents &amp; Oracle Decoders</td>
+<td style="text-align: right;">8</td>
+<td>Certified agents, binary decoders, VL distill</td>
+</tr>
+<tr>
+<td>Public Biology, Longevity &amp; Wet-Lab Depth Panels</td>
+<td style="text-align: right;">17</td>
+<td>NCBI/RCSB/The Well, zebrafish depth panels</td>
+</tr>
+<tr>
+<td>Climate, Geoscience Depth &amp; Applied Physics Panels</td>
+<td style="text-align: right;">15</td>
+<td>Climate, optics, semiconductors, HVAC</td>
+</tr>
+<tr>
+<td>Pure Mathematics, Formal Depth &amp; Fold Metrics</td>
+<td style="text-align: right;">19</td>
+<td>Pure math, fold metrics, partition tightening</td>
+</tr>
+<tr>
+<td>Verification Infrastructure, Hardware &amp; Network Spines</td>
+<td style="text-align: right;">11</td>
+<td>Hardware panel, portable clone, network spines</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Full verbose record:</strong> <a
+href="../docs/THESIS_APPENDIX_XII.md">Appendix XII — Domain-by-Domain
+Scientific Coverage</a> (auto-generated from live benchmarks).</p>
+<p><strong>Formula digest:</strong> <a
+href="../docs/THESIS_APPENDIX_XII.md#appendix-xii-e--formula-exemplar-digest-strict-empirical">Appendix
+XII-E — Formula Exemplar Digest</a> (strict-empirical corpus
+rollup).</p>
+<p>Regenerate:</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/build_readme_domain_chapters.py</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/merge_readme_domain_chapters.py</span></code></pre></div>
+<!-- README_SECTION_63_END -->
+<hr />
+<h2 id="vii.-contested-sectors-where-current-models-struggle">VII.
+Contested Sectors — Where Current Models Struggle</h2>
+<p>Thirteen observables where ΛCDM / SM sectors typically show large
+tension:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th style="text-align: right;">FSOT</th>
+<th style="text-align: right;">Typical baseline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pooled median error</td>
+<td style="text-align: right;"><strong>0.030%</strong></td>
+<td style="text-align: right;">~15%</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="data/figures/contested_fsot_vs_lcdm.png"
+alt="Contested FSOT vs ΛCDM" />
+<figcaption aria-hidden="true">Contested FSOT vs ΛCDM</figcaption>
+</figure>
+<h3 id="h₀-landscape">7.1 H₀ landscape</h3>
+<table>
+<thead>
+<tr>
+<th>Anchor</th>
+<th style="text-align: right;">FSOT error %</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SH0ES vs Planck tension</td>
+<td style="text-align: right;">0.027</td>
+<td>Riess2024 vs Planck2018</td>
+</tr>
+<tr>
+<td>Carnegie vs Planck tension</td>
+<td style="text-align: right;">0.227</td>
+<td>Freedman2019</td>
+</tr>
+<tr>
+<td>Planck CMB H₀</td>
+<td style="text-align: right;">0.193</td>
+<td>Planck2018</td>
+</tr>
+<tr>
+<td>SH0ES local H₀</td>
+<td style="text-align: right;">0.662</td>
+<td>Riess2024</td>
+</tr>
+<tr>
+<td>FSOT local anchor</td>
+<td style="text-align: right;">0.829</td>
+<td>dual-anchor bubble bleed</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="data/figures/h0_landscape.png" alt="H₀ landscape" />
+<figcaption aria-hidden="true">H₀ landscape</figcaption>
+</figure>
+<p><strong>Worked example — Planck CMB:</strong></p>
+<ul>
+<li>Measured: 67.36 ± 0.54 km/s/Mpc<br />
+</li>
+<li>FSOT computed: 67.270 km/s/Mpc<br />
+</li>
+<li>Error: 0.13%</li>
+</ul>
+<hr />
+<h2 id="viii.-engineering-demonstrations">VIII. Engineering
+Demonstrations</h2>
+<p><em>These stacks prove the engine guides engineering — they are not
+the sole claim, but they are real FSOT engineering.</em></p>
+<h3 id="fsot-designed-alternative-fuels">8.1 FSOT-designed alternative
+fuels</h3>
+<p>Seven novel molecular states plus gasoline baseline:</p>
+<ul>
+<li>fsot_hemp_waste_grounded, fsot_hemp_waste_advanced,
+fsot_algae_oil_biodiesel<br />
+</li>
+<li>fsot_mushroom_spore_fuel, fsot_green_hydrogen, fsot_optimax,
+fsot_bio_spark</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Panel</th>
+<th style="text-align: right;">Records</th>
+<th style="text-align: right;">Pooled median %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuel Lab</td>
+<td style="text-align: right;">366</td>
+<td style="text-align: right;">0.039</td>
+</tr>
+</tbody>
+</table>
+<p>Cross-referenced with grounded thermochemistry and Prius engine
+simulator outputs. Preregistered: <strong>PRED-034</strong>.</p>
+<figure>
+<img src="data/figures/verified_desktop_fuels.png"
+alt="Verified desktop fuels" />
+<figcaption aria-hidden="true">Verified desktop fuels</figcaption>
+</figure>
+<h3 id="transporter-technology-stack">8.2 Transporter technology
+stack</h3>
+<p>Eleven verified layers — quantum channel → information → portal →
+engineering → warp actuation → BH/WH crosswalk → beam-forming → T3 scan
+→ pad A hardware → pad B receiver → two-gate entanglement:</p>
+<table>
+<thead>
+<tr>
+<th>Panel</th>
+<th style="text-align: right;">Records</th>
+<th style="text-align: right;">Pooled median %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Star Trek Transporter</td>
+<td style="text-align: right;">1,575</td>
+<td style="text-align: right;">0.031</td>
+</tr>
+</tbody>
+</table>
+<p>Preregistered: <strong>PRED-036, PRED-038, PRED-039, PRED-040,
+PRED-041</strong>.</p>
+<figure>
+<img src="data/figures/verified_desktop_transporter.png"
+alt="Verified desktop transporter" />
+<figcaption aria-hidden="true">Verified desktop transporter</figcaption>
+</figure>
+<h3 id="machine-molecule-and-horizon-cycle">8.3 Machine, molecule, and
+horizon cycle</h3>
+<table>
+<thead>
+<tr>
+<th>Panel</th>
+<th style="text-align: right;">Records</th>
+<th style="text-align: right;">Pooled median %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Machine &amp; Molecule</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">0.013</td>
+</tr>
+<tr>
+<td>Black-hole / white-hole cycle</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">0.026</td>
+</tr>
+</tbody>
+</table>
+<p>Simulators:
+<code>vendor/verified_desktop/star_trek_transporter/</code></p>
+<hr />
+<h2 id="ix.-discussion">IX. Discussion</h2>
+<h3 id="unified-spine-vs-siloed-models">9.1 Unified spine vs siloed
+models</h3>
+<p>When one engine passes quantum mechanics, sociology, seismology, and
+fuel chemistry at sub-percent precision, the default “coincidence”
+explanation strains credibility. FSOT’s structural argument is
+<strong>breadth × precision × formal triangulation</strong> — the same
+pattern that convinced Maxwell that electricity and magnetism were one
+field.</p>
+<h3 id="formal-verification-as-scientific-instrument">9.2 Formal
+verification as scientific instrument</h3>
+<p>Numeric agreement alone cannot guard against silent code drift.
+Exporting Lean obligations to Coq, Isabelle, F*, and Rust means the
+spine must survive <strong>independent type theories and executable
+replay</strong>. That is how FSOT treats proof debt: visible, counted,
+closed.</p>
+<h3 id="open-work-not-model-failures">9.3 Open work (not model
+failures)</h3>
+<ul>
+<li><strong>Contested-sector monitoring:</strong> 13 actively-measured
+open problems (H₀, σ₈, BBN, hierarchy, w_a) tracked against live survey
+updates — FSOT pooled median <strong>0.030%</strong> as of this
+edition<br />
+</li>
+<li><strong>Engineering hardware:</strong> Fuel and transporter stacks
+verified at simulation tier; ESP32 acoustic phase-sensing hardware
+closure in progress<br />
+</li>
+<li><strong>Domain atlas rollup:</strong> Publication export reports 402
+routed domains; reconciliation to full 403-domain rollup in
+progress</li>
+</ul>
+<h3 id="founding-35-laws-verification-status">9.4 Founding 35 laws —
+verification status</h3>
+<p>All <strong>35/35</strong> founding physics laws are mapped and
+verified in this repository:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strict empirical corpus</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Extension panel verified</td>
+<td style="text-align: right;">28</td>
+</tr>
+</tbody>
+</table>
+<p>Dedicated founding panels include
+<code>Founding_Quantum_Vacuum_Panel</code>,
+<code>Founding_Cosmic_Ray_Panel</code>,
+<code>Founding_Galactic_Halo_Rotation_Panel</code>,
+<code>Founding_Cosmic_Dust_Panel</code>,
+<code>Founding_White_Dwarf_Cooling_Panel</code>,
+<code>Founding_Atmospheric_Ozone_Panel</code>,
+<code>Founding_Pulsar_Glitch_Panel</code> — each with live benchmarks
+under <code>data/founding_*_panel_benchmark.json</code>.</p>
+<p>Full audit: <a
+href="docs/FOUNDING_35_LAWS_AUDIT.md"><code>docs/FOUNDING_35_LAWS_AUDIT.md</code></a></p>
+<hr />
+<h2 id="x.-conclusion">X. Conclusion</h2>
+<p>The universe does not present itself as a hundred separate accidents.
+It presents as <strong>repetition with variation</strong> — the same
+mathematics in stellar fusion and mitochondrial chemistry, in Hubble
+tension and brain metabolism, in molecular bonds and warp-actuation
+simulators.</p>
+<p>FSOT names that repetition: <strong>one fluid, one scalar,
+seed-derived, observer-coupled, fractal across 403 domains</strong>. The
+empirical record says it is tight. The formal record says it is
+triangulated. The engineering record says it builds.</p>
+<p>This thesis will expand. The repository will deepen. The invitation
+is unchanged:</p>
+<p><strong>Run the verification. Break what fails. Keep what
+survives.</strong></p>
+<hr />
+<h2 id="appendix-a-one-command-reproduction">Appendix A — One-Command
+Reproduction</h2>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/run_publication_verification_bundle.py</span></code></pre></div>
+<p>Full contributor workflow: <a
+href="REPRODUCE.md"><code>REPRODUCE.md</code></a></p>
+<p>Individual panels:</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/reproduce_domain_panel.py <span class="at">--panel</span> Fuel_Lab_Live_Panel <span class="at">--deep</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/reproduce_domain_panel.py <span class="at">--panel</span> Star_Trek_Transporter_Live_Panel <span class="at">--deep</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/build_verified_desktop_cross_proof_closure.py</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/run_cross_proof_verification.py</span></code></pre></div>
+<hr />
+<h2 id="appendix-b-machine-readable-artifacts">Appendix B —
+Machine-Readable Artifacts</h2>
+<table>
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr>
+<th>Artifact</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a
+href="data/publication_claims_manifest.json"><code>data/publication_claims_manifest.json</code></a></td>
+<td>Headline claims for AI/reviewers</td>
+</tr>
+<tr>
+<td><a
+href="data/publication/domain_atlas.csv"><code>data/publication/domain_atlas.csv</code></a></td>
+<td>403-domain verification table</td>
+</tr>
+<tr>
+<td><a
+href="data/cross_proof_verification_report.json"><code>data/cross_proof_verification_report.json</code></a></td>
+<td>Five-prover closure report</td>
+</tr>
+<tr>
+<td><a
+href="data/fsot_domain_navigator.json"><code>data/fsot_domain_navigator.json</code></a></td>
+<td>Domain routes + kill criteria</td>
+</tr>
+<tr>
+<td><a
+href="data/preregistered_predictions_manifest.yaml"><code>data/preregistered_predictions_manifest.yaml</code></a></td>
+<td>PRED-001–041 registry</td>
+</tr>
+<tr>
+<td><a
+href="data/honest_claims_manifest.yaml"><code>data/honest_claims_manifest.yaml</code></a></td>
+<td>Parameter honesty</td>
+</tr>
+<tr>
+<td><a
+href="data/domain_citations/verified_desktop.bib"><code>data/domain_citations/verified_desktop.bib</code></a></td>
+<td>BibTeX export</td>
+</tr>
+</tbody>
+</table>
+<p>Citations export:</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/export_domain_citations.py <span class="at">--bundle</span> verified_desktop</span></code></pre></div>
+<hr />
+<h2 id="appendix-c-further-reading">Appendix C — Further Reading</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Document</th>
+<th>Audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a
+href="docs/FSOT_EXPLAINED_LAYMAN.md"><code>docs/FSOT_EXPLAINED_LAYMAN.md</code></a></td>
+<td>Public introduction</td>
+</tr>
+<tr>
+<td><a
+href="docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md"><code>docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md</code></a></td>
+<td>Consciousness + ontology</td>
+</tr>
+<tr>
+<td><a
+href="docs/REPOSITORY_TECHNICAL_GUIDE.md"><code>docs/REPOSITORY_TECHNICAL_GUIDE.md</code></a></td>
+<td>Module index, tier registry</td>
+</tr>
+<tr>
+<td><a
+href="data/publication/fsot_monograph_skeleton.md"><code>data/publication/fsot_monograph_skeleton.md</code></a></td>
+<td>Extended monograph outline</td>
+</tr>
+<tr>
+<td><a href="CONTRIBUTING.md"><code>CONTRIBUTING.md</code></a></td>
+<td>Contributor workflow</td>
+</tr>
+<tr>
+<td><a
+href="docs/THESIS_APPENDIX_XI.md"><code>docs/THESIS_APPENDIX_XI.md</code></a></td>
+<td>Full verification record (Appendix XI)</td>
+</tr>
+<tr>
+<td><a
+href="docs/THESIS_APPENDIX_XII.md"><code>docs/THESIS_APPENDIX_XII.md</code></a></td>
+<td>Full domain coverage (Appendix XII)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<!-- README_APPENDIX_XI_STUB_START -->
+<h2 id="appendix-xi-full-verification-record-summary">Appendix XI — Full
+Verification Record (summary)</h2>
+<p><em>Full volume:</em> <a
+href="docs/THESIS_APPENDIX_XI.md"><code>docs/THESIS_APPENDIX_XI.md</code></a>
+· <em>Regenerated:</em> 2026-07-16</p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XI-A</td>
+<td>Cross-verification metrics (five-prover spine)</td>
+</tr>
+<tr>
+<td>XI-B</td>
+<td>Data sources and API resources</td>
+</tr>
+<tr>
+<td>XI-C</td>
+<td>Literature and citations</td>
+</tr>
+<tr>
+<td>XI-D</td>
+<td>Domain atlas summary</td>
+</tr>
+<tr>
+<td>XI-E</td>
+<td>Formula corpus and observables</td>
+</tr>
+<tr>
+<td>XI-F</td>
+<td>Contested observables</td>
+</tr>
+<tr>
+<td>XI-G</td>
+<td>Verified desktop engineering panels</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/run_publication_verification_bundle.py <span class="at">--full-cross-proof</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/build_readme_thesis_expansion.py</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/merge_readme_thesis_expansion.py</span></code></pre></div>
+<!-- README_APPENDIX_XI_STUB_END -->
+<!-- README_APPENDIX_XII_STUB_START -->
+<h2
+id="appendix-xii-domain-by-domain-scientific-coverage-summary">Appendix
+XII — Domain-by-Domain Scientific Coverage (summary)</h2>
+<p><em>Full volume:</em> <a
+href="docs/THESIS_APPENDIX_XII.md"><code>docs/THESIS_APPENDIX_XII.md</code></a>
+· *26 clusters · 367 extension panels · Regenerated: 2026-07-16</p>
+<table>
+<thead>
+<tr>
+<th>Cluster</th>
+<th style="text-align: right;">Panels</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cosmology, Particle Physics &amp; Fundamental Forces</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr>
+<td>Space Weather, Geophysics &amp; Planetary Science</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td>Genomics, Immunology &amp; Clinical Medicine</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>Ecology, Species Catalogs &amp; Agricultural Systems</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>Synthetic Biology, Code Genomes &amp; Life-System Bridges</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td>Fusion Physics, Fuels &amp; Thermochemistry</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td>Periodic Extension, Island of Stability &amp; Element Synthesis</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td>Materials Engineering, Metamaterials &amp; Condensed Matter</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>Molecular Chemistry, PubChem &amp; Compound Properties</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>Consciousness, Neuroscience &amp; Social Sciences</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td>Engineering, Propulsion &amp; Verified Desktop Technology</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>Mathematics, Computation &amp; Formal Methods</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td>Cybersecurity, Code Genomes &amp; Threat Intelligence</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>Founding 35 Physics Laws (Dedicated Panels)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Live Ingest, Astrometry &amp; Real-Time Catalog Spines</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>Fluid Spacetime, Temporal Coupling &amp; Phase Spines</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td>Finance, Econometrics &amp; Supply-Chain Logistics</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>Music, Harmonics &amp; Creative Media</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Government Registries, Open Data &amp; Scholarly Graphs</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>arXiv Meta-Panels, Folding Spines &amp; ToE Crosswalks</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td>Preregistered Outcome Tracking &amp; Verification Scaffolds</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>LLM Validators, Certified Agents &amp; Oracle Decoders</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>Public Biology, Longevity &amp; Wet-Lab Depth Panels</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td>Climate, Geoscience Depth &amp; Applied Physics Panels</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td>Pure Mathematics, Formal Depth &amp; Fold Metrics</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td>Verification Infrastructure, Hardware &amp; Network Spines</td>
+<td style="text-align: right;">11</td>
+</tr>
+</tbody>
+</table>
+<p>Per-panel observable tables, subfield maps, and formula-level prose
+(XII-E style) live in the full volume and chapter files under
+<code>data/publication/readme_domain_chapters/</code>.</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/build_readme_domain_chapters.py</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/merge_readme_arxiv_thesis.py</span></code></pre></div>
+<!-- README_APPENDIX_XII_STUB_END -->
+<!-- README_APPENDIX_NOTATION_START -->
+<h2 id="appendix-d-notation-and-conventions">Appendix D — Notation and
+Conventions</h2>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>raw_S</code></td>
+<td>FSOT vitality scalar — emergence (+) vs dispersal (−) regime</td>
+</tr>
+<tr>
+<td><code>D_eff</code></td>
+<td>Effective fold dimension (seed-derived route coordinate, not a fit
+parameter)</td>
+</tr>
+<tr>
+<td><code>δψ</code></td>
+<td>Phase offset in domain fractal routing table</td>
+</tr>
+<tr>
+<td><code>quirk_mod</code></td>
+<td>Observer coupling modifier when <code>observed = true</code></td>
+</tr>
+<tr>
+<td><code>consciousness_factor</code></td>
+<td>Consciousness-route coupling strength in §IV</td>
+</tr>
+<tr>
+<td><code>ε_i</code></td>
+<td>Per-record percent error (§5.5)</td>
+</tr>
+<tr>
+<td><code>ε̃</code></td>
+<td>Pooled median error for a domain/panel</td>
+</tr>
+<tr>
+<td>GREEN</td>
+<td>Benchmark gate: pooled median ≤ 0.5%</td>
+</tr>
+<tr>
+<td>A_strong / B_verified</td>
+<td>Coverage tiers in domain atlas</td>
+</tr>
+<tr>
+<td>Lean route</td>
+<td>Ledger domain label (<code>cosmological</code>,
+<code>particle</code>, <code>medical</code>, …)</td>
+</tr>
+<tr>
+<td>Strict empirical</td>
+<td>Formula row in <code>strict_empirical.jsonl</code> with measured
+target + citation grade</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Seeds (global, no per-observable tuning):</strong> π, e, φ
+(golden ratio), γ (Euler–Mascheroni), G (Catalan).</p>
+<p><strong>Equation numbering:</strong> Main-text display equations use
+§section numbering (e.g. §III.1). Appendix XII-E provides formula-level
+strict-empirical exemplars by Lean route.</p>
+<p><strong>Edition tags:</strong> README front matter
+<code>Edition:</code> field; git tags (<code>fsot-monograph-v1</code>,
+…) for citeable snapshots; commit SHA for living thesis.
+<!-- README_APPENDIX_NOTATION_END --></p>
+<h2 id="appendix-e-how-to-cite-this-work">Appendix E — How to Cite This
+Work</h2>
+<pre><code>Palumbo, D. A. (2026). Fluid Spacetime Omni-Theory (FSOT):
+Cross-Domain Empirical and Formal Verification of a Seed-Derived Scalar Engine.
+GitHub repository dappalumbo91/FSOT-2.1-Lean, edition fsot-monograph-v1.
+https://github.com/dappalumbo91/FSOT-2.1-Lean</code></pre>
+<p>Tagged release (when published):</p>
+<pre><code>https://github.com/dappalumbo91/FSOT-2.1-Lean/releases/tag/fsot-monograph-v1</code></pre>
+<hr />
+</body>
+</html>

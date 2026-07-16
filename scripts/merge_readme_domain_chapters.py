@@ -88,7 +88,7 @@ def main() -> int:
         "",
         "```bash",
         "python scripts/build_readme_domain_chapters.py",
-        "python scripts/merge_readme_domain_chapters.py",
+        "python scripts/merge_readme_arxiv_thesis.py",
         "```",
         "",
         f"Chapter index: [`data/publication/readme_domain_chapters/INDEX.md`](data/publication/readme_domain_chapters/INDEX.md)",
