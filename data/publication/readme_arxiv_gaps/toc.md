@@ -49,4 +49,4 @@
 | Consciousness observer (local) | [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) |
 | Tech blueprints registry | [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) |
 
-*Generated: 2026-07-16T15:44:33.017723+00:00*
+*Generated: 2026-07-16T15:52:55.910250+00:00*

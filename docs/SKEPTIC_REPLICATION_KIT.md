@@ -1,6 +1,6 @@
 # FSOT Skeptic Replication Kit
 
-*15-minute verification path · 2026-07-16 · commit `f47a804d877a`*
+*15-minute verification path · 2026-07-16 · commit `4dcac40974a8`*
 
 Run this if you want to **break FSOT fast** — not read 12,000 lines of appendix first.
 

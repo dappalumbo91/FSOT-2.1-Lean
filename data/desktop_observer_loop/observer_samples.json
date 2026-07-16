@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-07-16T15:52:35.244506+00:00",
+  "policy": "no_mic_no_camera_no_esp32",
+  "channels": [
+    "timing",
+    "display_proxy",
+    "system_pulse",
+    "information_density"
+  ],
+  "sample_count": 12,
+  "timing_median_ms": 50.34055000578519,
+  "timing_jitter_ms": 0.1455319930212133,
+  "display_proxy": {
+    "screen_width_px": 1920.0,
+    "screen_height_px": 1080.0,
+    "work_area_width_px": 1920.0,
+    "work_area_height_px": 1009.0,
+    "aspect_ratio": 1.7777777777777777,
+    "pixel_area_mega": 2.0736
+  },
+  "information_density": {
+    "content_hash_prefix": 837021570,
+    "content_bytes": 6252.0,
+    "entropy_proxy": 0.01578519121236778
+  },
+  "samples": [
+    {
+      "index": 0,
+      "timing_delta_ms": 50.2469,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 1,
+      "timing_delta_ms": 50.2143,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 2,
+      "timing_delta_ms": 50.1413,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 3,
+      "timing_delta_ms": 50.5211,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 4,
+      "timing_delta_ms": 50.1105,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 5,
+      "timing_delta_ms": 50.4327,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 6,
+      "timing_delta_ms": 50.5807,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 7,
+      "timing_delta_ms": 50.34,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 8,
+      "timing_delta_ms": 50.2331,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 9,
+      "timing_delta_ms": 50.3411,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 10,
+      "timing_delta_ms": 50.4411,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    },
+    {
+      "index": 11,
+      "timing_delta_ms": 50.4687,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.015625,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 837021570,
+        "content_bytes": 6252.0,
+        "entropy_proxy": 0.01578519121236778
+      }
+    }
+  ],
+  "esp32_deferred": true,
+  "note": "Mic/camera/ESP32 sensory paths deferred; timing+display+hash proxies suffice for software observer loop."
+}

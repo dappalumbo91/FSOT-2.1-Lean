@@ -488,7 +488,7 @@ def main() -> int:
     readme = _patch_inline_citations(readme)
     readme = re.sub(
         r"\*\*Edition:\*\* v[0-9]+\.[0-9]+[^\n]*",
-        f"**Edition:** v2.5 — practical pipeline, consciousness observer (local), blueprints {ts}",
+        f"**Edition:** v2.6 — FluidLink archive, desktop observer loop, local bundle {ts}",
         readme,
         count=1,
     )

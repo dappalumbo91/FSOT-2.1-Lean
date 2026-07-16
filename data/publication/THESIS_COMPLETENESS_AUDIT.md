@@ -1,6 +1,6 @@
 # FSOT Thesis Completeness Audit
 
-*Generated: 2026-07-16T15:44:42.990220+00:00*
+*Generated: 2026-07-16T15:53:05.910372+00:00*
 
 Top-to-bottom comparison of **living thesis** (`README.md`) against **philosophy spine**, **monograph skeleton**, and **live verification artifacts**.
 

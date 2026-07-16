@@ -1,6 +1,6 @@
 # FSOT Credibility Hardening Audit
 
-*Generated: 2026-07-16T15:44:55.539421+00:00*
+*Generated: 2026-07-16T15:52:59.069796+00:00*
 
 Hard credibility expansion — every pillar must be independently reproducible, not rhetorical.
 
@@ -9,7 +9,7 @@ Hard credibility expansion — every pillar must be independently reproducible, 
 | Pillar | Status | Evidence |
 |--------|:------:|----------|
 | Formal triangulation | ✓ | Lean+Coq+Isabelle+F*+Rust |
-| Benchmark green gate | ✓ | 404/404 |
+| Benchmark green gate | ✓ | 405/405 |
 | Zero free parameters | ✓ | ZERO_FREE |
 | Contested sectors | ✓ | H₀/σ₈/BBN panel |
 | Near-miss published | ✓ | transparent worst greens |

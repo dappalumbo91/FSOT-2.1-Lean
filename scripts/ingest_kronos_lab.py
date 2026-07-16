@@ -26,6 +26,8 @@ def ingest_kronos(manifest_path: Path = MANIFEST_PATH) -> dict:
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
     kronos_root = Path(manifest["kronos_root"])
+    if not kronos_root.exists() and manifest.get("kronos_root_fallback"):
+        kronos_root = Path(manifest["kronos_root_fallback"])
     csv_path = kronos_root / manifest["artifacts"]["run_summary"]["path"]
     rows = load_kronos_summary(csv_path) if csv_path.exists() else []
     return {

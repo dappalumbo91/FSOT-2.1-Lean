@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-07-16T15:52:36.981172+00:00",
+  "steps": [
+    {
+      "step": "Sync Kronos \u2192 I: archive",
+      "ok": true,
+      "tail": "Synced Kronos \u2192 I:\\FSOT-Physical-Archive\\06_Kronos-FluidLink\\Kronos\n  files: 68  summary_csv: True\n"
+    },
+    {
+      "step": "Ingest Kronos metrology",
+      "ok": true,
+      "tail": "Updated I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\lab_registry.json\n  runs: 569\n  best fractional error: 1.64e-07\n"
+    },
+    {
+      "step": "Tier 50 / FluidLink benchmarks",
+      "ok": true,
+      "tail": "ecords=28 pooled=0.0 status=GREEN\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\time_domain_crosswalk_benchmark.json \u2014 records=371 pooled=0.027551 status=GREEN\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\fpc_temporal_coupling_benchmark.json \u2014 records=6 pooled=0.0310845 status=GREEN\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\fluid_phase_current_spine_benchmark.json \u2014 records=7 pooled=0.009504 status=YELLOW\nTier 50 time emergence / FPC benchmarks complete.\n"
+    },
+    {
+      "step": "Desktop observer loop",
+      "ok": true,
+      "tail": "Collected 16 samples  jitter=1.2320 ms\n  channels: timing, display_proxy, system_pulse, information_density\nReplay pooled median error: 0.048847%  all_ok=True\n"
+    },
+    {
+      "step": "Observer loop benchmark",
+      "ok": true,
+      "tail": "Collected 12 samples  jitter=0.1455 ms\n  channels: timing, display_proxy, system_pulse, information_density\nReplay pooled median error: 0.052211%  all_ok=True\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\desktop_observer_loop_panel_benchmark.json  12 records pooled 0.052210999999999994%\n"
+    },
+    {
+      "step": "Living FSOT hardware audit",
+      "ok": true,
+      "tail": "LIVING FSOT HARDWARE AUDIT (Tier 93)\n  project_found: True\n  overall_ok: True\n  project_layout: PASS\n  build_artifacts: PASS\n  scalar_k_parity: PASS\n  live_or_export_evidence: PASS\n  task_battery_green: PASS\n  qemu_runtime_available: PASS\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\living_fsot_hardware_verification_report.json\n"
+    },
+    {
+      "step": "Blueprint reverify (BH/WH)",
+      "ok": true,
+      "tail": "_cycle_blueprint\"\n    ],\n    \"sota_models\": [\n      \"Desktop BH\\u2192WH information cycle prototype + thesis relay\"\n    ],\n    \"beats_sota\": {\n      \"pooled_vs_domain_baseline\": true,\n      \"channel_bh_wh_cycle_vs_baseline\": true\n    },\n    \"authority_path\": \"I:\\\\FSOT-Physical-Archive\\\\02_FSOT-2.1-Lean-Full\\\\vendor\\\\fsot_compute.py\"\n  }\n}\n\nBlackHole_WhiteHole_Cycle_Live_Panel: OK\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\publication\\blueprint_reverify_report.json  all_green=True\n"
+    }
+  ],
+  "all_ok": true,
+  "kronos_archive": "I:\\FSOT-Physical-Archive\\06_Kronos-FluidLink\\Kronos",
+  "esp32": "deferred",
+  "observer": "timing+display_proxy (no mic/camera)"
+}

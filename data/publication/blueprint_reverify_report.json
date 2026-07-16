@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-07-16T15:52:36.944979+00:00",
+  "blueprint_meta": {
+    "id": "bh_wh_cycle",
+    "title": "BlackHole WhiteHole Cycle Blueprint",
+    "source_pdf": "I:/fsot tech/BlackHole_WhiteHole_Cycle_Blueprint.md",
+    "extracted_txt": null,
+    "char_count": null,
+    "fsot_panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+    "verification_tier": "verified_desktop",
+    "epistemic_tier": "measured",
+    "reverify_command": "python scripts/reproduce_domain_panel.py"
+  },
+  "result": {
+    "blueprint_id": "bh_wh_cycle",
+    "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+    "pooled_median_error_pct": 0.026472,
+    "panel_green": true,
+    "constant_claims": [
+      {
+        "claim": "poof",
+        "blueprint_value": 0.1535,
+        "benchmark_computed": 0.1535,
+        "benchmark_measured": 0.1535,
+        "error_pct": 0.0,
+        "green": true
+      },
+      {
+        "claim": "suction",
+        "blueprint_value": 0.147,
+        "benchmark_computed": 0.147,
+        "benchmark_measured": 0.147,
+        "error_pct": 0.0,
+        "green": true
+      },
+      {
+        "claim": "c_eff",
+        "blueprint_value": 0.9577,
+        "benchmark_computed": 0.9577,
+        "benchmark_measured": 0.9577,
+        "error_pct": 0.0,
+        "green": true
+      }
+    ],
+    "all_claims_green": true
+  }
+}

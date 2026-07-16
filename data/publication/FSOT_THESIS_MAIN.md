@@ -4,7 +4,7 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.5 — practical pipeline, consciousness observer (local), blueprints 2026-07-16
+**Edition:** v2.6 — FluidLink archive, desktop observer loop, local bundle 2026-07-16
 **Status:** Living thesis — expanded as each domain and crevice is verified  
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
@@ -96,7 +96,7 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 | Consciousness observer (local) | [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) |
 | Tech blueprints registry | [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) |
 
-*Generated: 2026-07-16T15:44:33.017723+00:00*
+*Generated: 2026-07-16T15:52:55.910250+00:00*
 <!-- README_TOC_END -->
 
 

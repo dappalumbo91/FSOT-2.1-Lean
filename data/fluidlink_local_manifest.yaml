@@ -1,0 +1,14 @@
+version: '1.0'
+updated: '2026-07-16'
+title: FluidLink local timing mesh (archive-internal)
+kronos_root: I:/FSOT-Physical-Archive/06_Kronos-FluidLink/Kronos
+fluidlink_hub_panel: FPC_Temporal_Coupling
+tier: 50
+policy: local_private_no_cloud
+commands:
+  sync: python scripts/sync_kronos_to_archive.py
+  ingest: python scripts/ingest_kronos_lab.py
+  tier50: python scripts/build_tier_o_time_emergence_benchmarks.py
+  bundle: python scripts/build_fluidlink_local_bundle.py
+simulation_note: Ground-up existence simulation scaffold — FPC timing edges + Kronos
+  metrology feed Tier 50 spine.

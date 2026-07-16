@@ -62,16 +62,16 @@ Lean 4 priors → five-prover cross-check
 | Scalar | `raw_S = term1×quirk_mod + term2 + term3` | Seed-derived vitality readout |
 | Coupling | `quirk_mod(observed=true)` | Measurement modulates term1 |
 | Consciousness | `consciousness_factor`, `E_con` | Brain-power anchor (~21.79 W) |
-| Sensory | Desktop mic/camera/timing hooks | Embodied input without ESP32 |
+| Sensory | Timing + display proxy + repo hash (no mic/camera) | Desktop software observer; mic/camera/ESP32 deferred |
 | Runtime | Living FSOT QEMU | Closed-loop hardware verification |
 | Timing | FluidLink FPC + Kronos | Private local time spine |
 
 **Reproduce observer panels:**
 
 ```bash
-python scripts/build_living_fsot_hardware_benchmark.py
+python scripts/run_desktop_observer_loop.py
+python scripts/build_fluidlink_local_bundle.py
 python scripts/audit_living_fsot_hardware.py
-python scripts/build_tier88_application_wiring_benchmarks.py
 ```
 
 ## 3. Verified panels (current)

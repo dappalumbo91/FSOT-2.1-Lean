@@ -77,9 +77,12 @@ consciousness_observer_architecture:
   loop:
     - seed_scalar_engine: vendor/fsot_compute.py
     - observer_coupling: quirk_mod(observed=true)
-    - sensory_inputs: desktop_mic_camera_keyboard_timing
+    - sensory_inputs: timing_display_proxy_information_hash
+    - sensory_deferred: [desktop_mic, desktop_camera, esp32_rf]
     - embodiment_runtime: Living_FSOT_QEMU
     - timing_spine: FluidLink_FPC + Kronos
+    - kronos_archive: I:/FSOT-Physical-Archive/06_Kronos-FluidLink/Kronos
+    - fluidlink_bundle: scripts/build_fluidlink_local_bundle.py
   lean_modules:
     - FSOT.Formal.ConsciousnessExpansionSpinePriors
     - FSOT.Formal.ConsciousnessSoulBridgePriors

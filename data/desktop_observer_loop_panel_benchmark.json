@@ -1,0 +1,203 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-16T15:52:35.371014+00:00",
+  "domain": "Desktop_Observer_Loop_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "desktop_observer_loop_lib",
+    "vendor/fsot_compute.py"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural",
+    "observer"
+  ],
+  "D_eff": 14,
+  "record_count": 12,
+  "observable_count": 12,
+  "scalar_record_count": 12,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.052210999999999994,
+  "pooled_median_error_pct": 0.052210999999999994,
+  "headline_median_error_pct": 0.058854,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "desktop_observer": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "unobserved scalar without quirk_mod replay"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_desktop_observer_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.052211,
+      "measured": 0.0,
+      "error_pct": 0.052210999999999994,
+      "observable_count": 12
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "desktop_observer",
+      "name": "timing_display_proxy",
+      "computed": 0.058854,
+      "measured": 0.0,
+      "error_pct": 0.058854,
+      "observable_count": 12
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_0",
+      "computed": -0.58152276,
+      "measured": -0.58152276,
+      "error_pct": 0.0,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_1",
+      "computed": -0.58160459,
+      "measured": -0.58152276,
+      "error_pct": 0.01407,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_2",
+      "computed": -0.58178775,
+      "measured": -0.58152276,
+      "error_pct": 0.045568,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_3",
+      "computed": -0.58083394,
+      "measured": -0.58152276,
+      "error_pct": 0.118452,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_4",
+      "computed": -0.58186501,
+      "measured": -0.58152276,
+      "error_pct": 0.058854,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_5",
+      "computed": -0.58105613,
+      "measured": -0.58152276,
+      "error_pct": 0.080244,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_6",
+      "computed": -0.58068407,
+      "measured": -0.58152276,
+      "error_pct": 0.144224,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_7",
+      "computed": -0.58128901,
+      "measured": -0.58152276,
+      "error_pct": 0.040197,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_8",
+      "computed": -0.5815574,
+      "measured": -0.58152276,
+      "error_pct": 0.005957,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_9",
+      "computed": -0.58128624,
+      "measured": -0.58152276,
+      "error_pct": 0.040673,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_10",
+      "computed": -0.58103502,
+      "measured": -0.58152276,
+      "error_pct": 0.083873,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_11",
+      "computed": -0.58096566,
+      "measured": -0.58152276,
+      "error_pct": 0.095801,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "timing+display_proxy+information_density"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.052210999999999994,
+    "max_scalar_error_pct": 0.144224,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "observer_policy": "no_mic_no_camera_esp32_deferred"
+}
