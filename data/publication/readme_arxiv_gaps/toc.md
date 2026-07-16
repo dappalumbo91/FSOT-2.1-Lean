@@ -40,4 +40,4 @@
 | Appendix — derivations | [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) |
 | Completeness audit | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) |
 
-*Generated: 2026-07-16T13:15:52.986518+00:00*
+*Generated: 2026-07-16T13:24:27.200142+00:00*

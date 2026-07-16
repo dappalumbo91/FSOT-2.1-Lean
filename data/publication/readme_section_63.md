@@ -1,4 +1,4 @@
-### 6.3 Domain-by-domain coverage (403 domains)
+### 6.3 Domain-by-domain coverage (402 domains)
 
 FSOT does not verify a single silo — it verifies a **spine of 35 core scientific domains** and **367 extension panels** across **26 thesis clusters**, each with measured records, Lean formal modules, and registered kill criteria.
 
@@ -23,7 +23,7 @@ FSOT does not verify a single silo — it verifies a **spine of 35 core scientif
 | Materials Engineering, Metamaterials & Condensed Matter | 8 | Materials genome, metamaterials, condensed matter depth |
 | Molecular Chemistry, PubChem & Compound Properties | 8 | PubChem, SMILES chemistry, CRC handbook properties |
 | Consciousness, Neuroscience & Social Sciences | 21 | Neuroscience, economics, linguistics, soul-bridge |
-| Engineering, Propulsion & Verified Desktop Technology | 20 | Transporter, warp, fuels, power systems, verified desktop |
+| Engineering, Propulsion & Verified Desktop Technology | 20 | Fuels, propulsion simulators, power systems, verified desktop |
 | Mathematics, Computation & Formal Methods | 28 | Formula corpus, proof spine, trinary OS, coupling simulation |
 | Cybersecurity, Code Genomes & Threat Intelligence | 3 | Malware, code genomes, zero-day risk |
 | Founding 35 Physics Laws (Dedicated Panels) | 7 | Dedicated founding physics panels (all mapped) |

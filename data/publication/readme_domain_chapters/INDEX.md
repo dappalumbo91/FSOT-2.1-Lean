@@ -1,8 +1,8 @@
 # Domain Chapter Index
 
-*Generated: 2026-07-16T12:45:09.938832+00:00*
+*Generated: 2026-07-16T13:24:26.284519+00:00*
 
-**Corpus:** 403 domains · 536,740 records · 501 Lean modules
+**Corpus:** 402 domains · 536,740 records · 501 Lean modules
 
 ## Chapters
 

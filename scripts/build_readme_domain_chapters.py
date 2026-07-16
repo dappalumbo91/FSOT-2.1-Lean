@@ -34,6 +34,11 @@ RECORD_KEYS = ("records", "material_records", "skeleton_derivations", "benchmark
 TOP_OBSERVABLES = 5
 TOP_FORMULAS = 3
 
+# Panels verified in-repo but documented outside main thesis / Appendix XII verbose prose.
+SUPPLEMENTARY_PANELS: dict[str, str] = {
+    "Star_Trek_Transporter_Live_Panel": "docs/VERIFIED_DESKTOP_TRANSPORTER.md",
+}
+
 LEAN_DOMAIN_BLURB = {
     "cosmological": "negative dispersal regime — structure bleeds at cosmic scales unless bubble-bleed dual anchors apply",
     "astronomical": "stellar and galactic catalog readouts through astronomical ledger routes",
@@ -1085,9 +1090,16 @@ def _cluster_panel_index_table(rows: list[dict]) -> list[str]:
         "|-------|--------:|---------------:|------|",
     ]
     for row in sorted(rows, key=lambda r: r["domain"]):
+        tag = " *(supp.)*" if row["domain"] in SUPPLEMENTARY_PANELS else ""
         lines.append(
-            f"| `{row['domain']}` | {int(row.get('record_count') or 0):,} | "
+            f"| `{row['domain']}`{tag} | {int(row.get('record_count') or 0):,} | "
             f"{_fmt_pct(row.get('median_error_pct'))} | {row.get('coverage_tier', '')} |"
+        )
+    if any(r["domain"] in SUPPLEMENTARY_PANELS for r in rows):
+        lines.append("")
+        lines.append(
+            "*\\*(supp.)\\* = supplementary volume only — see "
+            "[`docs/VERIFIED_DESKTOP_TRANSPORTER.md`](../../docs/VERIFIED_DESKTOP_TRANSPORTER.md).*"
         )
     lines.append("")
     return lines
@@ -1269,6 +1281,27 @@ def _core_chapter(
     return "\n".join(lines)
 
 
+def _supplementary_panel_block(row: dict, doc_rel: str) -> list[str]:
+    name = row["domain"]
+    doc_link = f"../../{doc_rel}" if not doc_rel.startswith("..") else doc_rel
+    return [
+        f"#### {_humanize(name)} *(supplementary)*",
+        "",
+        "*Simulation-tier propulsion stack — verified in-repo but excluded from main thesis presentation.*",
+        "",
+        "| Metric | Value |",
+        "|--------|------:|",
+        f"| Records | {int(row.get('record_count') or 0):,} |",
+        f"| Pooled median error | {_fmt_pct(row.get('median_error_pct'))}% |",
+        f"| Coverage tier | {row.get('coverage_tier', '')} |",
+        f"| Formal module | `{row.get('lean_module', '')}` |",
+        "",
+        f"Full stack documentation, reproduction commands, and prereg PRED-036–041: "
+        f"[`{doc_rel}`]({doc_link}).",
+        "",
+    ]
+
+
 def _extension_domain_block(
     row: dict,
     panel_meta: dict,
@@ -1277,6 +1310,8 @@ def _extension_domain_block(
     formula_by_concept: dict[str, list[dict]],
 ) -> list[str]:
     name = row["domain"]
+    if name in SUPPLEMENTARY_PANELS:
+        return _supplementary_panel_block(row, SUPPLEMENTARY_PANELS[name])
     lean_mod = row.get("lean_module") or ""
     tier = row.get("tier") or ""
     maps = panel_meta.get("maps_to_lean") or (panel_meta.get("scientific") or {}).get("maps_to_lean") or []

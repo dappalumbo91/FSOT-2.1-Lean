@@ -9,7 +9,7 @@ Export command: `python scripts/export_domain_citations.py --bundle verified_des
 - **File:** `data/domain_citations/verified_desktop.bib` (4 entries)
 
 ```bibtex
-% FSOT domain citations — generated 2026-07-15T17:36:24.822619+00:00
+% FSOT domain citations — generated 2026-07-16T13:09:27.664111+00:00
 % Repository: https://github.com/dappalumbo91/FSOT-2.1-Lean
 @misc{fsot_machineandmoleculelivepanel,
   title = {FSOT verification panel: Machine_And_Molecule_Live_Panel},

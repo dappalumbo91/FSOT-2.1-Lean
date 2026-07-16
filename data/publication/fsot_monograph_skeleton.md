@@ -15,7 +15,7 @@
 
 This work presents a **unified scalar framework** evaluated across the widest cross-domain empirical and formal verification corpus we are aware of in independent foundational physics research.
 
-**Empirical scope:** A single seed-derived engine — constants from π, e, φ, γ, and G (Catalan) — is tested against **536,740 measured records** spanning **403 scientific domains** (35 core + 367 extension panels), including quantum physics, particle physics, cosmology, astrophysics, biology, neuroscience, genetics, chemistry, materials science, sociology, linguistics, acoustics, thermodynamics, plasma physics, immunology, climate science, and applied engineering stacks (alternative fuels, transporter technology prototypes). **394/394** public benchmark domains pass the ≤0.5% pooled error gate; cross-domain pooled median is **0.013%**.
+**Empirical scope:** A single seed-derived engine — constants from π, e, φ, γ, and G (Catalan) — is tested against **536,740 measured records** spanning **403 scientific domains** (35 core + 367 extension panels), including quantum physics, particle physics, cosmology, astrophysics, biology, neuroscience, genetics, chemistry, materials science, sociology, linguistics, acoustics, thermodynamics, plasma physics, immunology, climate science, and applied engineering stacks (alternative fuels, molecular catalogs, horizon-cycle proxies). **394/394** public benchmark domains pass the ≤0.5% pooled error gate; cross-domain pooled median is **0.013%**.
 
 **Formal scope:** Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent proof frameworks**: Lean 4 (primary authority), Coq/Rocq, Isabelle/HOL, F* (Microsoft Research programming-language verification), and Rust executable obligation replay — **1,863 atomic obligations** with `overall_ok: true`. QEMU bare-metal serial/disk boot and ESP32 hardware observer layers provide executable closure beyond proof assistants.
 
@@ -43,7 +43,7 @@ This work presents a **unified scalar framework** evaluated across the widest cr
 1. **Empirical:** FSOT computed vs measured error ≤ 0.5% pooled median across 394 benchmark domains.
 2. **Formal:** Exported Lean obligations reproduce in Coq, Isabelle, F*, and Rust.
 3. **Contested sectors:** FSOT unified readouts on H₀ tension, σ₈, BBN proxies beat typical ΛCDM/SM sector baselines (13 observables; pooled 0.030% vs 15% baseline).
-4. **Engineering:** Seed-scalar predictions guide novel fuel molecular states and transporter technology stacks at sub-0.05% tier precision on key channels.
+4. **Engineering:** Seed-scalar predictions guide novel fuel molecular states and grounded desktop engineering panels at sub-0.05% tier precision on key channels (transporter simulation documented separately).
 
 ### 1.3 What this paper is not
 
@@ -176,7 +176,7 @@ Representative core domains (expand in prose):
 
 - 11 layers, 1575 records, 0.031% pooled median
 - Quantum channel → warp actuation → beam-forming → pad A/B hardware → two-gate entanglement
-- [Figure: `verified_desktop_transporter.png`]
+- [Figure: `verified_desktop_fuels.png`] · supplementary: `verified_desktop_transporter.png` in `docs/VERIFIED_DESKTOP_TRANSPORTER.md`
 - Preregistered: PRED-036, PRED-038, PRED-039, PRED-040, PRED-041
 
 ### 6.3 Machine & molecule / BH-WH cycle

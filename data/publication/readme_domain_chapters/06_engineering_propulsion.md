@@ -18,7 +18,7 @@
 | `Robotics_Control_Systems` | 45 | 0 | B_verified |
 | `Robotics_Control_Systems_Panel` | 20 | 0.01341 | B_verified |
 | `Space_Propulsion_Systems` | 21 | 0 | B_verified |
-| `Star_Trek_Transporter_Live_Panel` | 1,413 | 0.031159 | A_strong |
+| `Star_Trek_Transporter_Live_Panel` *(supp.)* | 1,413 | 0.031159 | A_strong |
 | `Trinary_Hardware_Live_Panel` | 37 | 0.014767 | B_verified |
 | `Trinary_Hardware_Motif` | 24 | 0 | B_verified |
 | `Trinary_OS_ISA_Rebuild` | 38 | 0 | B_verified |
@@ -26,6 +26,8 @@
 | `Trinary_OS_Round_Trip` | 22 | 0 | B_verified |
 | `Trinary_OS_Tier_E` | 68 | 0 | B_verified |
 | `Warp_BH_WH_Portal_Panel` | 24 | 0 | B_verified |
+
+*\*(supp.)\* = supplementary volume only — see [`docs/VERIFIED_DESKTOP_TRANSPORTER.md`](../../docs/VERIFIED_DESKTOP_TRANSPORTER.md).*
 
 #### Architecture Building Science
 
@@ -363,33 +365,18 @@ Extension panel **`Space_Propulsion_Systems`** (verification tier 39) evaluates 
 - **`F`** in Space Propulsion Systems: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 - **`Ca`** in Space Propulsion Systems: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
-#### Star Trek Transporter Live Panel
+#### Star Trek Transporter Live Panel *(supplementary)*
 
-Extension panel **`Star_Trek_Transporter_Live_Panel`** (verification tier 88) evaluates **1413** measured records at **0.031159%** pooled median error (A_strong). Formal module: `FSOT.Formal.StarTrekTransporterLivePanelPriors`. This panel extends the core spine into star trek transporter live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+*Simulation-tier propulsion stack — verified in-repo but excluded from main thesis presentation.*
 
-**Benchmark:** [`data/star_trek_transporter_live_panel_benchmark.json`](data/star_trek_transporter_live_panel_benchmark.json)
+| Metric | Value |
+|--------|------:|
+| Records | 1,413 |
+| Pooled median error | 0.031159% |
+| Coverage tier | A_strong |
+| Formal module | `FSOT.Formal.StarTrekTransporterLivePanelPriors` |
 
-**Subfield map:**
-
-- **Lean routes:** `mathematical`
-- **Panel tags:** Star, Trek, Transporter, Live, Panel
-- **Data sources / cohorts:** FSOT transporter technology stack — warp actuation portal, entanglement gates, matter-stream engineering
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| reassembly_phase_lock_error · pad_b_step_0_reassembly_phase_lock_error | 0 | 0 | 0 |
-| t3_phase_lock_error · hw_step_0_t3_phase_lock_error | 0 | 0 | 0 |
-| warp_portal_crosswalk · Warp_BH_WH_Portal_Panel | 0 | 0 | 0 |
-| warp_portal_relay_median · Warp_BH_WH_Portal_Panel | 0 | 0 | 0 |
-| acoustic_q_factor · hw_step_0_acoustic_q_factor | 42 | 42.0131 | 0.031159 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Star Trek Transporter Live Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Star Trek Transporter Live Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Star Trek Transporter Live Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+Full stack documentation, reproduction commands, and prereg PRED-036–041: [`docs/VERIFIED_DESKTOP_TRANSPORTER.md`](../../docs/VERIFIED_DESKTOP_TRANSPORTER.md).
 
 #### Trinary Hardware Live Panel
 

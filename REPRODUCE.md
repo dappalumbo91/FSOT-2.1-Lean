@@ -240,11 +240,12 @@ python scripts/reproduce_domain_panel.py --panel Quantum_Mechanics_Entanglement_
 python scripts/query_fsot_domain_navigator.py --intent machine_molecule_catalog
 python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine
 python scripts/query_fsot_domain_navigator.py --intent blackhole_whitehole_cycle
-python scripts/query_fsot_domain_navigator.py --intent quantum_transporter
 python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep
+python scripts/reproduce_domain_panel.py --panel Machine_And_Molecule_Live_Panel --deep
+python scripts/reproduce_domain_panel.py --panel BlackHole_WhiteHole_Cycle_Live_Panel --deep
 ```
 
-Maps: `FSOT_Machine_And_Molecule` → `Machine_And_Molecule_Live_Panel`, `Fuel Lab` → `Fuel_Lab_Live_Panel`, `FSOT_BlackHole_WhiteHole` → `BlackHole_WhiteHole_Cycle_Live_Panel`, `FSOT, Star Trek Transporter` → `Star_Trek_Transporter_Live_Panel`.
+Maps: `FSOT_Machine_And_Molecule` → `Machine_And_Molecule_Live_Panel`, `Fuel Lab` → `Fuel_Lab_Live_Panel`, `FSOT_BlackHole_WhiteHole` → `BlackHole_WhiteHole_Cycle_Live_Panel`.
 
 **Citations + falsification (verified desktop bundle):**
 
@@ -256,15 +257,12 @@ python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine --bundle 
 
 Panel-specific kill criteria are attached to each route in `data/fsot_domain_navigator.json` under `problem_routes[].falsification`.
 
-**Transporter technology stack:**
+**Supplementary — transporter simulation stack** (not main thesis; see [`docs/VERIFIED_DESKTOP_TRANSPORTER.md`](docs/VERIFIED_DESKTOP_TRANSPORTER.md)):
 
 ```powershell
 python scripts/reproduce_domain_panel.py --panel Star_Trek_Transporter_Live_Panel --deep
-python scripts/build_verified_desktop_transporter_figure.py
-python scripts/query_fsot_domain_navigator.py --panel Star_Trek_Transporter_Live_Panel --format bibtex
+python scripts/build_verified_desktop_transporter_paper.py
 ```
-
-Layers: quantum teleportation → information theory → poof/suction portal → transporter engineering → warp actuation → BH/WH portal crosswalk → beam-forming grid → T3 acoustic valve. Figure: `data/figures/verified_desktop_transporter.png`.
 
 **Archive-first verified desktop** (no C: Desktop required):
 
@@ -275,12 +273,10 @@ python scripts/sync_verified_desktop_projects.py
 Simulators live under `vendor/verified_desktop/` (GitHub) and `I:/FSOT-Physical-Archive/08_Verified-Desktop-Projects/` (archive master). Re-run sims before `--deep` ingest:
 
 ```powershell
-python vendor/verified_desktop/star_trek_transporter/pattern_buffer_beam_simulator.py --deep
-python vendor/verified_desktop/star_trek_transporter/two_gate_entanglement_simulator.py
-python vendor/verified_desktop/star_trek_transporter/t3_acoustic_valve_hardware_simulator.py
-python vendor/verified_desktop/star_trek_transporter/pad_b_receiver_hardware_simulator.py
 python scripts/sync_verified_desktop_projects.py
 ```
+
+Transporter-layer simulators: see [`docs/VERIFIED_DESKTOP_TRANSPORTER.md`](docs/VERIFIED_DESKTOP_TRANSPORTER.md).
 
 **Five-prover cross-proof (Lean → Coq → Isabelle → F* → Rust):**
 
@@ -289,7 +285,7 @@ python scripts/build_verified_desktop_cross_proof_closure.py
 python scripts/run_cross_proof_verification.py
 ```
 
-Verified desktop panels (Fuel Lab, Machine & Molecule, BH/WH, Transporter) export obligations into `verification/obligations/full_formal_spine.json` via `gen_verified_desktop_lean.py`. Closure artifact: `data/verified_desktop_cross_proof_closure.json`.
+Verified desktop panels (Fuel Lab, Machine & Molecule, BH/WH — plus supplementary Transporter) export obligations into `verification/obligations/full_formal_spine.json` via `gen_verified_desktop_lean.py`. Closure artifact: `data/verified_desktop_cross_proof_closure.json`.
 
 ## Claim scope (read before citing)
 
