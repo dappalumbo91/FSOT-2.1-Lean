@@ -2,6 +2,16 @@
 
 **Panels:** 5 · **Records:** 264 · **Mean panel median error:** 0.00488585%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Material_In_Silico_Screening_Scaffold` | 42 | 0.00206 | B_verified |
+| `Material_Property_Verification_Scaffold` | 79 | 0.002271 | B_verified |
+| `Preregistered_Outcome_Tracking` | 56 | 0 | B_verified |
+| `Preregistered_Predictions` | 27 | 0.0200982 | B_verified |
+| `Preregistered_Predictions_Verification_Scaffold` | 60 | 0 | B_verified |
+
 #### Material In Silico Screening Scaffold
 
 Extension panel **`Material_In_Silico_Screening_Scaffold`** (verification tier 65) evaluates **42** measured records at **0.00206%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialInSilicoScreeningScaffoldPriors`. This panel extends the core spine into material in silico screening scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

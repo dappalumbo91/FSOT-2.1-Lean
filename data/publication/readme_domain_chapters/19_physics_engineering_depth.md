@@ -2,6 +2,26 @@
 
 **Panels:** 15 · **Records:** 19,132 · **Mean panel median error:** 0.0130589%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Cartography_GIS_Panel` | 48 | 0.018856 | B_verified |
+| `Chaos_Mediated_Phase_Transitions` | 21 | 0.031479 | B_verified |
+| `Climate_Science` | 17,320 | 0 | A_strong |
+| `Complexity_Folding_Emergence_Panel` | 29 | 0.0265879 | B_verified |
+| `Environmental_Engineering` | 1,120 | 0 | A_strong |
+| `HVAC_Thermal_Systems` | 23 | 0.0178361 | B_verified |
+| `Heavy_Ion_Lab_Synthesis_Panel` | 39 | 9.5e-05 | B_verified |
+| `Mechanistic_Coupling` | 116 | 0 | A_strong |
+| `Optics_Interferometry_Depth_Panel` | 127 | 0.026954 | A_strong |
+| `Semiconductor_Physics_Public_Panel` | 24 | 0 | B_verified |
+| `Soil_Science_Panel` | 96 | 0.006006 | B_verified |
+| `Sports_Biomechanics` | 35 | 0.0444725 | B_verified |
+| `Statistical_Mechanics_Public_Panel` | 24 | 0 | B_verified |
+| `Volcanology_Panel` | 90 | 0.023502 | B_verified |
+| `Z120_Z126_Beam_Synthesis_Panel` | 20 | 9.5e-05 | B_verified |
+
 #### Cartography GIS Panel
 
 Extension panel **`Cartography_GIS_Panel`** (verification tier 82) evaluates **48** measured records at **0.018856%** pooled median error (B_verified). Formal module: `FSOT.Formal.CartographyGisPriors`. This panel extends the core spine into cartography gis panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

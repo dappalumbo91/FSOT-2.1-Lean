@@ -2,6 +2,32 @@
 
 **Panels:** 21 · **Records:** 1,969 · **Mean panel median error:** 0.0191648%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Anthropology` | 160 | 0.0195044 | A_strong |
+| `Consciousness_Econ` | 37 | 0.008898 | B_verified |
+| `Consciousness_Expansion_Spine` | 24 | 0.008488 | B_verified |
+| `Consciousness_Soul_Bridge` | 27 | 0 | B_verified |
+| `History` | 170 | 0.0195044 | A_strong |
+| `History_Panel` | 60 | 0.01382 | B_verified |
+| `Initiation_Transformation_Archetype` | 24 | 0 | B_verified |
+| `Law_Policy` | 180 | 0.0195044 | A_strong |
+| `Law_Policy_Panel` | 20 | 0.013003 | B_verified |
+| `Linguistics_Formal` | 24 | 0.022236 | B_verified |
+| `Longevity_Consciousness_Coupling_Panel` | 890 | 0.022424 | A_strong |
+| `Microtubule_Quantum_Consciousness_Panel` | 63 | 0.044671 | B_verified |
+| `Neuroeconomics` | 65 | 0.105021 | B_verified |
+| `Neuroeconomics_Panel` | 20 | 0.031506 | B_verified |
+| `Neurolab_Gaps_Math_Spine` | 35 | 0 | B_verified |
+| `Neurolab_Residual_Math_Spine` | 28 | 0 | B_verified |
+| `Neuroscience_Connectomics_Depth_Panel` | 27 | 0.0201195 | B_verified |
+| `Omni_Theory_Genesis` | 27 | 0 | B_verified |
+| `Omni_Theory_Humanities_Panel` | 37 | 0.0222545 | B_verified |
+| `Psychology_Psychometrics_Depth_Panel` | 23 | 0.031506 | B_verified |
+| `Symbolic_Archetype_Panel` | 28 | 0 | B_verified |
+
 #### Anthropology
 
 Extension panel **`Anthropology`** (verification tier 35) evaluates **160** measured records at **0.0195044%** pooled median error (A_strong). Formal module: `FSOT.Formal.AnthropologyExtensionPriors`. This panel extends the core spine into anthropology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

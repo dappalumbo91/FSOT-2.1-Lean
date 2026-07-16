@@ -2,6 +2,42 @@
 
 **Panels:** 31 · **Records:** 405,080 · **Mean panel median error:** 0.0108951%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Cryosphere` | 2,399 | 0 | A_strong |
+| `Domain_Orbital_Predictions` | 24 | 0.0152903 | B_verified |
+| `Energy_AI_Orbital_Bridge` | 48 | 0.0275441 | B_verified |
+| `Energy_Neural_Orbital_Bridge` | 48 | 0.0180027 | B_verified |
+| `Exogeology` | 316 | 0 | A_strong |
+| `Exogeology_Panel` | 100 | 0.026472 | A_strong |
+| `Exoplanet_System_Architecture` | 882 | 0 | A_strong |
+| `Geochemistry` | 153 | 0.00662523 | A_strong |
+| `Geology_Stratigraphy` | 1,960 | 0 | A_strong |
+| `Geomagnetism` | 524 | 0 | A_strong |
+| `Grace_Cryosphere` | 253 | 0 | A_strong |
+| `Hydrology` | 960 | 0 | A_strong |
+| `Magnetosphere` | 167 | 0 | A_strong |
+| `Magnetosphere_Extended` | 122,315 | 0 | A_strong |
+| `NASA_Exoplanet_Archive` | 158 | 0.023015 | A_strong |
+| `NOAA_Coastal_Tides` | 20 | 0.030173 | B_verified |
+| `NOAA_NDBC_Buoy_Panel` | 596 | 0.028287 | A_strong |
+| `Orbital_Mechanics` | 22 | 0.020215 | B_verified |
+| `Paleoclimate` | 40 | 0.0150159 | B_verified |
+| `Paleoclimate_Panel` | 20 | 0.006006 | B_verified |
+| `Petrology_Geochemistry_Panel` | 80 | 0.030428 | B_verified |
+| `Planetary_Atmospheres` | 21 | 0 | B_verified |
+| `Planetary_Structure` | 20 | 0 | B_verified |
+| `Radio_Astronomy_Panel` | 30 | 0.022461 | B_verified |
+| `Seismology` | 500 | 0 | A_strong |
+| `Seismology_Deep` | 1,000 | 0 | A_strong |
+| `Small_Body_Orbits` | 22 | 0.020215 | B_verified |
+| `Space_Weather` | 271,813 | 0 | A_strong |
+| `Speleology` | 65 | 0.00340721 | B_verified |
+| `Speleology_Panel` | 24 | 0.04459 | B_verified |
+| `Tectonics` | 500 | 0 | A_strong |
+
 #### Cryosphere
 
 Extension panel **`Cryosphere`** (verification tier 20) evaluates **2399** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.CryospherePriors`. This panel extends the core spine into cryosphere observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

@@ -2,6 +2,19 @@
 
 **Panels:** 8 · **Records:** 189 · **Mean panel median error:** 0.00926519%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Binary_Decoder_Panel` | 24 | 0.013342 | B_verified |
+| `Binary_Decoder_Rendlesham` | 24 | 0.00450476 | B_verified |
+| `Certified_Agent_Formal_Panel` | 24 | 0.014767 | B_verified |
+| `Certified_Agent_Qwen` | 24 | 0.00450476 | B_verified |
+| `Intrinsic_LLM_Validators` | 24 | 0 | B_verified |
+| `Intrinsic_LLM_Validators_Panel` | 21 | 0.014767 | B_verified |
+| `VL_Agent_Distill_Panel` | 24 | 0.022236 | B_verified |
+| `VL_Distill_Atlas` | 24 | 0 | B_verified |
+
 #### Binary Decoder Panel
 
 Extension panel **`Binary_Decoder_Panel`** (verification tier 88) evaluates **24** measured records at **0.013342%** pooled median error (B_verified). Formal module: `FSOT.Formal.BinaryDecoderPanelPriors`. This panel extends the core spine into binary decoder panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

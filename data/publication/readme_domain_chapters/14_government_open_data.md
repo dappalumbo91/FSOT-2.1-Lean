@@ -2,6 +2,17 @@
 
 **Panels:** 6 · **Records:** 720 · **Mean panel median error:** 0.013084%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Crossref_Scholarly_Panel` | 200 | 0.01382 | A_strong |
+| `Federal_Science_Registry_Panel` | 24 | 0.013352 | B_verified |
+| `Government_Open_Data_Spine` | 28 | 0 | B_verified |
+| `OSTI_DOE_Science_Panel` | 100 | 0.01382 | A_strong |
+| `OpenAlex_Citation_Graph` | 80 | 0.031506 | B_verified |
+| `iNaturalist_Observation_Panel` | 288 | 0.006006 | A_strong |
+
 #### Crossref Scholarly Panel
 
 Extension panel **`Crossref_Scholarly_Panel`** (verification tier 81) evaluates **200** measured records at **0.01382%** pooled median error (A_strong). Formal module: `FSOT.Formal.CrossrefScholarlyPriors`. This panel extends the core spine into crossref scholarly panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

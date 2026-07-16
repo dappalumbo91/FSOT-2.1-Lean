@@ -1,6 +1,28 @@
 ## Public Biology, Longevity & Wet-Lab Depth Panels
 
-**Panels:** 18 · **Records:** 4,745 · **Mean panel median error:** 0.0169143%
+**Panels:** 17 · **Records:** 4,624 · **Mean panel median error:** 0.0179092%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Biophysics_Public_Panel` | 24 | 0 | B_verified |
+| `Ethology_Panel` | 100 | 0.006607 | A_strong |
+| `IGEM_Parts_Expanded` | 111 | 5.88236e-05 | A_strong |
+| `Limnology_Panel` | 2,010 | 0.030173 | A_strong |
+| `Longevity_MegaDeep_NCBI_Panel` | 1,746 | 0.017789 | A_strong |
+| `Longevity_Telomere_Repair_Panel` | 60 | 0.022236 | B_verified |
+| `NCBI_Gene_Public_Panel` | 48 | 0.025572 | B_verified |
+| `Pharmacokinetics` | 56 | 0.00241237 | B_verified |
+| `RCSB_PDB_Structures` | 45 | 0.022236 | B_verified |
+| `The_Well_Outcomes_Verification_Panel` | 246 | 0.031159 | A_strong |
+| `The_Well_Spot_Check_Panel` | 24 | 0.031159 | B_verified |
+| `The_Well_Verification_Spine` | 24 | 0.028287 | B_verified |
+| `Tier_94_Longevity_Spine` | 34 | 0 | B_verified |
+| `Tier_95_Zebrafish_Spine` | 24 | 0.013342 | B_verified |
+| `Toxicology_Panel` | 21 | 0.033401 | B_verified |
+| `Zebrafish_Cell_Tracking_Panel` | 20 | 0.022236 | B_verified |
+| `Zebrafish_Developmental_Mechanics_Panel` | 31 | 0.017789 | B_verified |
 
 #### Biophysics Public Panel
 
@@ -421,34 +443,6 @@ Extension panel **`Toxicology_Panel`** (verification tier 82) evaluates **21** m
 - **`H⁺/H₂`** in Toxicology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
 - **`alpha_Fe`** in Toxicology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Toxicology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### UniProt Structure Annotations Deep
-
-Extension panel **`UniProt_Structure_Annotations_Deep`** (verification tier 56) evaluates **121** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.UniProtStructureAnnotationsDeepPriors`. This panel extends the core spine into uniprot structure annotations deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/uniprot_structure_annotations_deep_benchmark.json`](data/uniprot_structure_annotations_deep_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `medical`, `material`
-- **Panel tags:** Uniprot, Structure, Annotations, Deep
-- **Data sources / cohorts:** UniProt, RCSB PDB public structure annotation depth
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| mol_weight · P00338 | 36689 | 36689 | 0 |
-| mol_weight_kda_ratio · P68871_4HHB | 0.247112 | 0.247112 | 0 |
-| molecular_weight · 1AKE | 49.07 | 49.07 | 0 |
-| pdb_resolution_angstrom · P62988_1UBQ | 1.8 | 1.8 | 0 |
-| polymer_entity_count · 1BNA | 1 | 1 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`Bi2Te3`** in UniProt Structure Annotations Deep: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-- **`P`** in UniProt Structure Annotations Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`BL_N−H`** in UniProt Structure Annotations Deep: measured **1.01**, seed-derived **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 
 #### Zebrafish Cell Tracking Panel
 

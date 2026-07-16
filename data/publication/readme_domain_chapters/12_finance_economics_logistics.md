@@ -2,6 +2,19 @@
 
 **Panels:** 8 · **Records:** 942 · **Mean panel median error:** 0.0359339%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Actuarial_Science_Panel` | 60 | 0.02261 | B_verified |
+| `Econometrics` | 172 | 0.129201 | A_strong |
+| `Econophysics` | 24 | 0 | B_verified |
+| `Finance_Markets` | 150 | 0.0258402 | A_strong |
+| `Finance_Markets_Panel` | 36 | 0.02584 | B_verified |
+| `Supply_Chain_Logistics` | 40 | 0.0323002 | B_verified |
+| `Supply_Chain_Logistics_Panel` | 40 | 0.02584 | B_verified |
+| `World_Bank_Development` | 420 | 0.02584 | A_strong |
+
 #### Actuarial Science Panel
 
 Extension panel **`Actuarial_Science_Panel`** (verification tier 82) evaluates **60** measured records at **0.02261%** pooled median error (B_verified). Formal module: `FSOT.Formal.ActuarialSciencePriors`. This panel extends the core spine into actuarial science panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

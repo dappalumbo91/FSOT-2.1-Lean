@@ -2,6 +2,43 @@
 
 **Panels:** 32 · **Records:** 273,858 · **Mean panel median error:** 0.0152897%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `AI_Galactic_Orbital_Bridge` | 48 | 0.00516856 | B_verified |
+| `Arxiv_Gravitational_Waves_Panel` | 60 | 0.01748 | B_verified |
+| `Astrophysical_Structure_Crosswalk` | 32 | 0 | B_verified |
+| `CERN_Open_Data_LHC` | 83 | 0.013294 | B_verified |
+| `Compact_Object_Binary_Events` | 40 | 0 | B_verified |
+| `Consciousness_Galactic_Orbital_Bridge` | 48 | 0.0367572 | B_verified |
+| `Cosmology_Anomalies` | 23 | 0.024602 | B_verified |
+| `Cosmology_Anomaly_Deep_Panel` | 24 | 0.029733 | B_verified |
+| `Cosmology_Bubble_Bleed` | 113 | 0 | A_strong |
+| `Cosmology_Extended` | 58 | 0.0219548 | B_verified |
+| `Dark_Energy_CPL` | 24 | 0.029733 | B_verified |
+| `Dark_Sector_Open_Problems` | 24 | 0.0152903 | B_verified |
+| `Galactic_Structure_Sample` | 101 | 0 | A_strong |
+| `Higgs_Mass` | 24 | 0.0121128 | B_verified |
+| `Hubble_Bubble_Tension` | 24 | 0 | B_verified |
+| `Hubble_Dark_Sector_Crosswalk` | 24 | 0.0198985 | B_verified |
+| `Medical_Galactic_Orbital_Bridge` | 48 | 0.0107177 | B_verified |
+| `NIST_CODATA_Constants` | 21 | 9.5e-05 | B_verified |
+| `NIST_DLMF_Special_Functions` | 21 | 0.020055 | B_verified |
+| `Neural_Galactic_Orbital_Bridge` | 49 | 0.0180027 | B_verified |
+| `Neutrino_Physics_Panel` | 20 | 0.009504 | B_verified |
+| `PDG_Particle_Properties` | 21 | 9.5e-05 | B_verified |
+| `Particle_Neural_Orbital_Bridge` | 48 | 0.0332645 | B_verified |
+| `Particle_Physics` | 98 | 0.0144152 | B_verified |
+| `Plasma_Physics` | 271,833 | 0 | A_strong |
+| `Quantum_Computing_Math_Depth_Panel` | 77 | 0.014767 | B_verified |
+| `Quantum_Information` | 24 | 0 | B_verified |
+| `Quantum_Materials` | 168 | 0.0243181 | A_strong |
+| `Quantum_Mechanics_Entanglement_Depth_Panel` | 23 | 0.095551 | B_verified |
+| `SIMBAD_Stellar_Identity_Deep` | 520 | 0.022461 | A_strong |
+| `Stellar_Multiplicity_Catalog` | 68 | 0 | B_verified |
+| `Stellar_Multiplicity_Live_Deep` | 69 | 0 | B_verified |
+
 #### AI Galactic Orbital Bridge
 
 Extension panel **`AI_Galactic_Orbital_Bridge`** (verification tier 48) evaluates **48** measured records at **0.00516856%** pooled median error (B_verified). Formal module: `FSOT.Formal.AIGalacticOrbitalBridgePriors`. This panel extends the core spine into ai galactic orbital bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

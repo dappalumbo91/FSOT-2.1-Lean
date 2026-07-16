@@ -2,6 +2,28 @@
 
 **Panels:** 17 · **Records:** 481 · **Mean panel median error:** 0.00879256%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Arxiv_Brain_Knowledge_Panel` | 20 | 0.018003 | B_verified |
+| `Arxiv_Primitives_Panel` | 22 | 0.031506 | B_verified |
+| `Arxiv_Primitives_V14` | 24 | 0 | B_verified |
+| `Foundational_Ontology_Spine` | 21 | 0 | B_verified |
+| `Interdisciplinary_Spine_Crosswalk` | 24 | 0 | B_verified |
+| `Reality_Folding_Spine` | 24 | 0.0239143 | B_verified |
+| `Scientific_Expansion_Depth_Spine` | 20 | 0 | B_verified |
+| `Scientific_Expansion_Depth_Wave2_Spine` | 40 | 0 | B_verified |
+| `Scientific_Expansion_Spine` | 40 | 0 | B_verified |
+| `Scientific_Expansion_Wave2_Spine` | 40 | 0 | B_verified |
+| `Scientific_Expansion_Wave3_Spine` | 40 | 0 | B_verified |
+| `Theory_Completeness_Spine` | 24 | 0.0219279 | B_verified |
+| `Tier_93_Dual_Wave_Spine` | 24 | 0.0110939 | B_verified |
+| `ToE_Gap_Closure_Spine` | 24 | 0.0219279 | B_verified |
+| `ToE_Unification_Spine` | 24 | 0.0190083 | B_verified |
+| `Unified_DB_Candidate_Crosswalk` | 46 | 0 | B_verified |
+| `Unified_DB_Crosswalk_Spine` | 24 | 0.00209239 | B_verified |
+
 #### Arxiv Brain Knowledge Panel
 
 Extension panel **`Arxiv_Brain_Knowledge_Panel`** (verification tier 88) evaluates **20** measured records at **0.018003%** pooled median error (B_verified). Formal module: `FSOT.Formal.ArxivBrainKnowledgePanelPriors`. This panel extends the core spine into arxiv brain knowledge panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

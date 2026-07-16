@@ -2,6 +2,46 @@
 
 The core spine routes FSOT through 35 preregistered NeuroLab domains. Each domain selects a Lean ledger route (`lean_domain`), verification labs, and measured record cohort. All core domains pass the ≤0.5% green gate.
 
+### Core spine summary
+
+| Domain | Lean route | Records | Median error % | Tier |
+|--------|------------|--------:|---------------:|------|
+| Acoustics | `material` | 485 | 0.032277 | A_strong |
+| Astronomy | `astronomical` | 193 | 0 | A_strong |
+| Astrophysics | `astronomical` | 305 | 0.000561056 | A_strong |
+| Atmospheric_Physics | `energy` | 17,414 | 0 | A_strong |
+| Atomic_Physics | `particle` | 116 | 0.000950413 | A_strong |
+| Biochemistry | `medical` | 166 | 0.0192011 | A_strong |
+| Biology | `biological` | 67 | 0 | B_verified |
+| Chemistry | `electron` | 99 | 0.005707 | B_verified |
+| Condensed_Matter | `material` | 1,169 | 0.0306032 | A_strong |
+| Cosmology | `cosmological` | 347 | 0.00073542 | A_strong |
+| Ecology | `biological` | 654 | 0.017789 | A_strong |
+| Economics | `consciousness` | 167 | 0.129201 | A_strong |
+| Electromagnetism | `electron` | 271,912 | 0 | A_strong |
+| Fluid_Dynamics | `energy` | 56 | 0 | B_verified |
+| Geophysics | `energy` | 547 | 0 | A_strong |
+| High_Energy_Physics | `higgs` | 151 | 0.00355717 | A_strong |
+| Materials_Science | `material` | 1,169 | 0.0306032 | A_strong |
+| Meteorology | `energy` | 17,414 | 0 | A_strong |
+| Molecular_Chemistry | `chemical` | 608 | 0.0283895 | A_strong |
+| Neuroscience | `neural` | 41 | 0.0133828 | B_verified |
+| Nuclear_Physics | `nuclear` | 79 | 0.00735713 | B_verified |
+| Oceanography | `energy` | 112 | 0 | A_strong |
+| Optics | `material` | 485 | 0.032277 | A_strong |
+| Particle_Astrophysics | `cmb` | 192 | 0.00464371 | A_strong |
+| Particle_Physics | `particle` | 98 | 0.00232226 | B_verified |
+| Physical_Chemistry | `chemical` | 608 | 0.0283895 | A_strong |
+| Planetary_Science | `galactic` | 50 | 0.0214774 | B_verified |
+| Psychology | `consciousness` | 170 | 0.0315062 | A_strong |
+| Quantum_Computing | `ai` | 180 | 0.000295346 | A_strong |
+| Quantum_Gravity | `blackhole` | 141 | 0 | A_strong |
+| Quantum_Mechanics | `quantum` | 74 | 0.000950413 | B_verified |
+| Quantum_Optics | `quantum` | 74 | 0.000950413 | B_verified |
+| Seismology | `energy` | 1,000 | 0 | A_strong |
+| Sociology | `consciousness` | 410 | 0.0195044 | A_strong |
+| Thermodynamics | `energy` | 89 | 0.022147 | B_verified |
+
 ### Acoustics
 
 **Lean route:** `material` — condensed-matter and materials properties.

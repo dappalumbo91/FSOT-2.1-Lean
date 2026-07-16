@@ -2,6 +2,18 @@
 
 **Panels:** 7 · **Records:** 168 · **Mean panel median error:** 0.0218293%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Founding_Atmospheric_Ozone_Panel` | 24 | 0.022236 | B_verified |
+| `Founding_Cosmic_Dust_Panel` | 24 | 0.026675 | B_verified |
+| `Founding_Cosmic_Ray_Panel` | 24 | 0.021221 | B_verified |
+| `Founding_Galactic_Halo_Rotation_Panel` | 24 | 0.022461 | B_verified |
+| `Founding_Pulsar_Glitch_Panel` | 24 | 0.022461 | B_verified |
+| `Founding_Quantum_Vacuum_Panel` | 24 | 0.0152903 | B_verified |
+| `Founding_White_Dwarf_Cooling_Panel` | 24 | 0.022461 | B_verified |
+
 #### Founding Atmospheric Ozone Panel
 
 Extension panel **`Founding_Atmospheric_Ozone_Panel`** (verification tier 96) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoundingAtmosphericOzonePanelPriors`. This panel extends the core spine into founding atmospheric ozone panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

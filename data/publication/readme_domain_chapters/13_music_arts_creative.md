@@ -2,6 +2,13 @@
 
 **Panels:** 2 · **Records:** 66 · **Mean panel median error:** 0%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Interactive_Media_Prereg_Scaffold` | 42 | 0 | B_verified |
+| `Music_Harmonics_Public_Panel` | 24 | 0 | B_verified |
+
 #### Interactive Media Prereg Scaffold
 
 Extension panel **`Interactive_Media_Prereg_Scaffold`** (verification tier 65) evaluates **42** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.InteractiveMediaPreregScaffoldPriors`. This panel extends the core spine into interactive media prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

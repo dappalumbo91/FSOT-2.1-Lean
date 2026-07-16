@@ -2,6 +2,24 @@
 
 **Panels:** 13 · **Records:** 5,638 · **Mean panel median error:** 0.017133%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `GWOSC_Live_Event_Deep` | 191 | 0.008488 | A_strong |
+| `Gaia_Astrometry_Panel_Deep` | 62 | 0.022461 | B_verified |
+| `Gaia_DR3_TAP_Deep` | 1,826 | 0.022461 | A_strong |
+| `IGEM_Live_FASTA_Ingest` | 42 | 0 | B_verified |
+| `Live_Ingest_Spine` | 28 | 0 | B_verified |
+| `NASA_DONKI_Solar_Panel` | 2,148 | 0.020755 | A_strong |
+| `NASA_NEO_Feed_Panel` | 56 | 0.021097 | B_verified |
+| `Open_Meteo_Live_Panel` | 432 | 0.026204 | A_strong |
+| `SH0ES_Refined` | 24 | 0.024894 | B_verified |
+| `STScI_MAST_Telescope_Panel` | 377 | 0.022461 | A_strong |
+| `Solar_System_Structure_Deep` | 50 | 0 | B_verified |
+| `VizieR_WDS_TAP_Live_Deep` | 121 | 0.026954 | A_strong |
+| `WDS_Live_Multiplicity_Deep` | 281 | 0.026954 | A_strong |
+
 #### GWOSC Live Event Deep
 
 Extension panel **`GWOSC_Live_Event_Deep`** (verification tier 58) evaluates **191** measured records at **0.008488%** pooled median error (A_strong). Formal module: `FSOT.Formal.GWOSCLiveEventDeepPriors`. This panel extends the core spine into gwosc live event deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

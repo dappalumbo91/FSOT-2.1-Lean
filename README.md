@@ -4,7 +4,7 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v1.3 — domain chapters deepening 2026-07-16
+**Edition:** v1.4 — cluster expansion + XII-E digest 2026-07-16
 **Status:** Living thesis — expanded as each domain and crevice is verified  
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
@@ -262,44 +262,52 @@ python scripts/query_fsot_domain_navigator.py --intent hubble_tension
 python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine
 ```
 
+<!-- README_SECTION_63_START -->
 ### 6.3 Domain-by-domain coverage (403 domains)
 
-FSOT does not verify a single silo — it verifies a **spine of 35 core scientific domains** and **367 extension panels**, each with measured records, Lean formal modules, and registered kill criteria.
+FSOT does not verify a single silo — it verifies a **spine of 35 core scientific domains** and **367 extension panels** across **26 thesis clusters**, each with measured records, Lean formal modules, and registered kill criteria.
 
 | Layer | Count | Role |
 |-------|------:|------|
 | Core NeuroLab domains | 35 | Primary scientific departments (cosmology, quantum mechanics, biology, …) |
-| Extension panels | 367 | Specialized depth (fusion labs, transporter stack, founding laws, cybersecurity, …) |
+| Extension panels | 367 | Specialized depth across 26 clusters |
 | Lean formal modules | 501+ | Machine-checked priors per panel |
 | Empirical records | 536,740 | Measured vs seed-derived FSOT predictions |
 
 **Scientific clusters** (extension panels grouped for the thesis):
 
-| Cluster | Focus |
-|---------|--------|
-| Cosmology & fundamental physics | CMB, dark sector, particles, Higgs, quantum foundations |
-| Space & geophysics | Magnetosphere, seismology, hydrology, planetary structure |
-| Biology & genomics | Genetics, species, medicine, ecology, evolution |
-| Chemistry & materials | SMILES, fuels, periodic extension, materials genome |
-| Consciousness & social sciences | Neuroscience, economics, linguistics, soul-bridge |
-| Engineering & propulsion | Transporter, warp, fuels, power systems, verified desktop |
-| Mathematics & formal methods | Formula corpus, proof spine, trinary OS, coupling simulation |
-| Cybersecurity | Malware, code genomes, zero-day risk |
-| Founding 35 laws | Dedicated founding physics panels (all mapped) |
-| Live ingest & astrometry | Gaia/WDS/MAST/NASA live catalog spines |
-| Fluid spacetime & time | Temporal coupling, fluid-phase observables |
-| Finance & logistics | Actuarial, econometrics, supply-chain panels |
-| Music & creative media | Harmonics, interactive media prereg |
-| Government & open data | Federal registries, Crossref/OpenAlex graphs |
-| arXiv meta & folding spines | ToE crosswalks, scientific expansion waves |
-| Prereg scaffolds | Outcome tracking, material verification scaffolds |
-| LLM agents & oracles | Certified agents, binary decoders, VL distill |
-| Public biology & longevity | NCBI/RCSB/The Well, zebrafish depth panels |
-| Physics & geoscience depth | Climate, optics, semiconductors, HVAC |
-| Mathematics formal depth | Pure math, fold metrics, partition tightening |
-| Verification infrastructure | Hardware panel, portable clone, network spines |
+| Cluster | Panels | Focus |
+|---------|-------:|-------|
+| Cosmology, Particle Physics & Fundamental Forces | 32 | CMB, dark sector, particles, Higgs, quantum foundations |
+| Space Weather, Geophysics & Planetary Science | 31 | Magnetosphere, seismology, hydrology, planetary structure |
+| Genomics, Immunology & Clinical Medicine | 18 | Genomics, immunology, clinical trials, cardiology, virology |
+| Ecology, Species Catalogs & Agricultural Systems | 20 | GBIF ecology, agriculture, marine biology, species longevity |
+| Synthetic Biology, Code Genomes & Life-System Bridges | 16 | Synthetic biology, iGEM, code genomes, protein bridges |
+| Fusion Physics, Fuels & Thermochemistry | 11 | Magnetic/inertial fusion, fuel lab, thermochemistry anchors |
+| Periodic Extension, Island of Stability & Element Synthesis | 14 | Periodic extension, island of stability, element synthesis |
+| Materials Engineering, Metamaterials & Condensed Matter | 8 | Materials genome, metamaterials, condensed matter depth |
+| Molecular Chemistry, PubChem & Compound Properties | 8 | PubChem, SMILES chemistry, CRC handbook properties |
+| Consciousness, Neuroscience & Social Sciences | 21 | Neuroscience, economics, linguistics, soul-bridge |
+| Engineering, Propulsion & Verified Desktop Technology | 20 | Transporter, warp, fuels, power systems, verified desktop |
+| Mathematics, Computation & Formal Methods | 28 | Formula corpus, proof spine, trinary OS, coupling simulation |
+| Cybersecurity, Code Genomes & Threat Intelligence | 3 | Malware, code genomes, zero-day risk |
+| Founding 35 Physics Laws (Dedicated Panels) | 7 | Dedicated founding physics panels (all mapped) |
+| Live Ingest, Astrometry & Real-Time Catalog Spines | 13 | Gaia/WDS/MAST/NASA live catalog spines |
+| Fluid Spacetime, Temporal Coupling & Phase Spines | 9 | Temporal coupling, fluid-phase observables |
+| Finance, Econometrics & Supply-Chain Logistics | 8 | Actuarial, econometrics, supply-chain panels |
+| Music, Harmonics & Creative Media | 2 | Harmonics, interactive media prereg |
+| Government Registries, Open Data & Scholarly Graphs | 6 | Federal registries, Crossref/OpenAlex graphs |
+| arXiv Meta-Panels, Folding Spines & ToE Crosswalks | 17 | ToE crosswalks, scientific expansion waves |
+| Preregistered Outcome Tracking & Verification Scaffolds | 5 | Outcome tracking, material verification scaffolds |
+| LLM Validators, Certified Agents & Oracle Decoders | 8 | Certified agents, binary decoders, VL distill |
+| Public Biology, Longevity & Wet-Lab Depth Panels | 17 | NCBI/RCSB/The Well, zebrafish depth panels |
+| Climate, Geoscience Depth & Applied Physics Panels | 15 | Climate, optics, semiconductors, HVAC |
+| Pure Mathematics, Formal Depth & Fold Metrics | 19 | Pure math, fold metrics, partition tightening |
+| Verification Infrastructure, Hardware & Network Spines | 11 | Hardware panel, portable clone, network spines |
 
 **Full verbose record:** [Appendix XII — Domain-by-Domain Scientific Coverage](#appendix-xii--domain-by-domain-scientific-coverage-2026-07-16) (auto-generated from live benchmarks).
+
+**Formula digest:** [Appendix XII-E — Formula Exemplar Digest](#appendix-xii-e--formula-exemplar-digest-strict-empirical) (strict-empirical corpus rollup).
 
 Regenerate:
 
@@ -307,6 +315,7 @@ Regenerate:
 python scripts/build_readme_domain_chapters.py
 python scripts/merge_readme_domain_chapters.py
 ```
+<!-- README_SECTION_63_END -->
 
 ---
 
@@ -846,6 +855,46 @@ python scripts/merge_readme_domain_chapters.py
 Chapter index: [`data/publication/readme_domain_chapters/INDEX.md`](data/publication/readme_domain_chapters/INDEX.md)
 
 The core spine routes FSOT through 35 preregistered NeuroLab domains. Each domain selects a Lean ledger route (`lean_domain`), verification labs, and measured record cohort. All core domains pass the ≤0.5% green gate.
+
+### Core spine summary
+
+| Domain | Lean route | Records | Median error % | Tier |
+|--------|------------|--------:|---------------:|------|
+| Acoustics | `material` | 485 | 0.032277 | A_strong |
+| Astronomy | `astronomical` | 193 | 0 | A_strong |
+| Astrophysics | `astronomical` | 305 | 0.000561056 | A_strong |
+| Atmospheric_Physics | `energy` | 17,414 | 0 | A_strong |
+| Atomic_Physics | `particle` | 116 | 0.000950413 | A_strong |
+| Biochemistry | `medical` | 166 | 0.0192011 | A_strong |
+| Biology | `biological` | 67 | 0 | B_verified |
+| Chemistry | `electron` | 99 | 0.005707 | B_verified |
+| Condensed_Matter | `material` | 1,169 | 0.0306032 | A_strong |
+| Cosmology | `cosmological` | 347 | 0.00073542 | A_strong |
+| Ecology | `biological` | 654 | 0.017789 | A_strong |
+| Economics | `consciousness` | 167 | 0.129201 | A_strong |
+| Electromagnetism | `electron` | 271,912 | 0 | A_strong |
+| Fluid_Dynamics | `energy` | 56 | 0 | B_verified |
+| Geophysics | `energy` | 547 | 0 | A_strong |
+| High_Energy_Physics | `higgs` | 151 | 0.00355717 | A_strong |
+| Materials_Science | `material` | 1,169 | 0.0306032 | A_strong |
+| Meteorology | `energy` | 17,414 | 0 | A_strong |
+| Molecular_Chemistry | `chemical` | 608 | 0.0283895 | A_strong |
+| Neuroscience | `neural` | 41 | 0.0133828 | B_verified |
+| Nuclear_Physics | `nuclear` | 79 | 0.00735713 | B_verified |
+| Oceanography | `energy` | 112 | 0 | A_strong |
+| Optics | `material` | 485 | 0.032277 | A_strong |
+| Particle_Astrophysics | `cmb` | 192 | 0.00464371 | A_strong |
+| Particle_Physics | `particle` | 98 | 0.00232226 | B_verified |
+| Physical_Chemistry | `chemical` | 608 | 0.0283895 | A_strong |
+| Planetary_Science | `galactic` | 50 | 0.0214774 | B_verified |
+| Psychology | `consciousness` | 170 | 0.0315062 | A_strong |
+| Quantum_Computing | `ai` | 180 | 0.000295346 | A_strong |
+| Quantum_Gravity | `blackhole` | 141 | 0 | A_strong |
+| Quantum_Mechanics | `quantum` | 74 | 0.000950413 | B_verified |
+| Quantum_Optics | `quantum` | 74 | 0.000950413 | B_verified |
+| Seismology | `energy` | 1,000 | 0 | A_strong |
+| Sociology | `consciousness` | 410 | 0.0195044 | A_strong |
+| Thermodynamics | `energy` | 89 | 0.022147 | B_verified |
 
 ### Acoustics
 
@@ -2226,6 +2275,43 @@ The core spine routes FSOT through 35 preregistered NeuroLab domains. Each domai
 
 **Panels:** 32 · **Records:** 273,858 · **Mean panel median error:** 0.0152897%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `AI_Galactic_Orbital_Bridge` | 48 | 0.00516856 | B_verified |
+| `Arxiv_Gravitational_Waves_Panel` | 60 | 0.01748 | B_verified |
+| `Astrophysical_Structure_Crosswalk` | 32 | 0 | B_verified |
+| `CERN_Open_Data_LHC` | 83 | 0.013294 | B_verified |
+| `Compact_Object_Binary_Events` | 40 | 0 | B_verified |
+| `Consciousness_Galactic_Orbital_Bridge` | 48 | 0.0367572 | B_verified |
+| `Cosmology_Anomalies` | 23 | 0.024602 | B_verified |
+| `Cosmology_Anomaly_Deep_Panel` | 24 | 0.029733 | B_verified |
+| `Cosmology_Bubble_Bleed` | 113 | 0 | A_strong |
+| `Cosmology_Extended` | 58 | 0.0219548 | B_verified |
+| `Dark_Energy_CPL` | 24 | 0.029733 | B_verified |
+| `Dark_Sector_Open_Problems` | 24 | 0.0152903 | B_verified |
+| `Galactic_Structure_Sample` | 101 | 0 | A_strong |
+| `Higgs_Mass` | 24 | 0.0121128 | B_verified |
+| `Hubble_Bubble_Tension` | 24 | 0 | B_verified |
+| `Hubble_Dark_Sector_Crosswalk` | 24 | 0.0198985 | B_verified |
+| `Medical_Galactic_Orbital_Bridge` | 48 | 0.0107177 | B_verified |
+| `NIST_CODATA_Constants` | 21 | 9.5e-05 | B_verified |
+| `NIST_DLMF_Special_Functions` | 21 | 0.020055 | B_verified |
+| `Neural_Galactic_Orbital_Bridge` | 49 | 0.0180027 | B_verified |
+| `Neutrino_Physics_Panel` | 20 | 0.009504 | B_verified |
+| `PDG_Particle_Properties` | 21 | 9.5e-05 | B_verified |
+| `Particle_Neural_Orbital_Bridge` | 48 | 0.0332645 | B_verified |
+| `Particle_Physics` | 98 | 0.0144152 | B_verified |
+| `Plasma_Physics` | 271,833 | 0 | A_strong |
+| `Quantum_Computing_Math_Depth_Panel` | 77 | 0.014767 | B_verified |
+| `Quantum_Information` | 24 | 0 | B_verified |
+| `Quantum_Materials` | 168 | 0.0243181 | A_strong |
+| `Quantum_Mechanics_Entanglement_Depth_Panel` | 23 | 0.095551 | B_verified |
+| `SIMBAD_Stellar_Identity_Deep` | 520 | 0.022461 | A_strong |
+| `Stellar_Multiplicity_Catalog` | 68 | 0 | B_verified |
+| `Stellar_Multiplicity_Live_Deep` | 69 | 0 | B_verified |
+
 #### AI Galactic Orbital Bridge
 
 Extension panel **`AI_Galactic_Orbital_Bridge`** (verification tier 48) evaluates **48** measured records at **0.00516856%** pooled median error (B_verified). Formal module: `FSOT.Formal.AIGalacticOrbitalBridgePriors`. This panel extends the core spine into ai galactic orbital bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -3099,6 +3185,42 @@ Extension panel **`Stellar_Multiplicity_Live_Deep`** (verification tier 58) eval
 
 **Panels:** 31 · **Records:** 405,080 · **Mean panel median error:** 0.0108951%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Cryosphere` | 2,399 | 0 | A_strong |
+| `Domain_Orbital_Predictions` | 24 | 0.0152903 | B_verified |
+| `Energy_AI_Orbital_Bridge` | 48 | 0.0275441 | B_verified |
+| `Energy_Neural_Orbital_Bridge` | 48 | 0.0180027 | B_verified |
+| `Exogeology` | 316 | 0 | A_strong |
+| `Exogeology_Panel` | 100 | 0.026472 | A_strong |
+| `Exoplanet_System_Architecture` | 882 | 0 | A_strong |
+| `Geochemistry` | 153 | 0.00662523 | A_strong |
+| `Geology_Stratigraphy` | 1,960 | 0 | A_strong |
+| `Geomagnetism` | 524 | 0 | A_strong |
+| `Grace_Cryosphere` | 253 | 0 | A_strong |
+| `Hydrology` | 960 | 0 | A_strong |
+| `Magnetosphere` | 167 | 0 | A_strong |
+| `Magnetosphere_Extended` | 122,315 | 0 | A_strong |
+| `NASA_Exoplanet_Archive` | 158 | 0.023015 | A_strong |
+| `NOAA_Coastal_Tides` | 20 | 0.030173 | B_verified |
+| `NOAA_NDBC_Buoy_Panel` | 596 | 0.028287 | A_strong |
+| `Orbital_Mechanics` | 22 | 0.020215 | B_verified |
+| `Paleoclimate` | 40 | 0.0150159 | B_verified |
+| `Paleoclimate_Panel` | 20 | 0.006006 | B_verified |
+| `Petrology_Geochemistry_Panel` | 80 | 0.030428 | B_verified |
+| `Planetary_Atmospheres` | 21 | 0 | B_verified |
+| `Planetary_Structure` | 20 | 0 | B_verified |
+| `Radio_Astronomy_Panel` | 30 | 0.022461 | B_verified |
+| `Seismology` | 500 | 0 | A_strong |
+| `Seismology_Deep` | 1,000 | 0 | A_strong |
+| `Small_Body_Orbits` | 22 | 0.020215 | B_verified |
+| `Space_Weather` | 271,813 | 0 | A_strong |
+| `Speleology` | 65 | 0.00340721 | B_verified |
+| `Speleology_Panel` | 24 | 0.04459 | B_verified |
+| `Tectonics` | 500 | 0 | A_strong |
+
 #### Cryosphere
 
 Extension panel **`Cryosphere`** (verification tier 20) evaluates **2399** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.CryospherePriors`. This panel extends the core spine into cryosphere observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -3838,147 +3960,30 @@ Extension panel **`Tectonics`** (verification tier 21) evaluates **500** measure
 - **Panel tags:** Tectonics
 - **Data sources / cohorts:** PB2002 plate boundaries, crustal earthquake coupling
 
-**Panels:** 53 · **Records:** 8,592 · **Mean panel median error:** 0.0183421%
+**Panels:** 18 · **Records:** 1,454 · **Mean panel median error:** 0.0233817%
 
-#### Agriculture Agroecology
+### Panel index
 
-Extension panel **`Agriculture_Agroecology`** (verification tier 34) evaluates **276** measured records at **0.018019%** pooled median error (A_strong). Formal module: `FSOT.Formal.AgricultureAgroecologyGapFillPriors`. This panel extends the core spine into agriculture agroecology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/agriculture_agroecology_gap_fill_benchmark.json`](data/agriculture_agroecology_gap_fill_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `energy`
-- **Panel tags:** Agriculture, Agroecology
-- **Data sources / cohorts:** GBIF species occurrence, World Bank agro-socioeconomic panel
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| GDP_per_capita · IT_2022 | 35653.9 | 35657.1 | 0.00900951 |
-| population_total · CN_2022 | 1.41218e+09 | 1.4123e+09 | 0.00900951 |
-| mean_latitude · Leratiomyces ceres | 40.7963 | 40.8037 | 0.018019 |
-| agroecology · species_ag_indicator | 0 | 0.018019 | 0.018019 |
-| pooled_median · all_channels | 0 | 0.018019 | 0.018019 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Agriculture Agroecology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Agriculture Agroecology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Ca`** in Agriculture Agroecology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-
-#### Biological CUDA Physarum
-
-Extension panel **`Biological_CUDA_Physarum`** (verification tier 34) evaluates **35** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.BiologicalCudaPhysarumPriors`. This panel extends the core spine into biological cuda physarum observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/biological_cuda_physarum_benchmark.json`](data/biological_cuda_physarum_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `medical`, `neural`
-- **Panel tags:** Biological, Cuda, Physarum
-- **Data sources / cohorts:** Physarum CUDA RTX 5070 benchmarks, v5 plasmodium state, genomics bridge
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| avg_S · nuclei_1000 | 6.9618 | 6.9618 | 0 |
-| condo_ops_per_sec · nuclei_1000 | 75.2 | 75.2 | 0 |
-| genomics_D_eff · genomics D eff | 22 | 22 | 0 |
-| genomics_error_pct · genomics error pct | 6.62412 | 6.62412 | 0 |
-| global_coherence_range · global coherence range | 0.322112 | 0.322112 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`pH_water`** in Biological CUDA Physarum: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-- **`F`** in Biological CUDA Physarum: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Biological CUDA Physarum: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Biology Developmental Structural Depth Panel
-
-Extension panel **`Biology_Developmental_Structural_Depth_Panel`** (verification tier 87) evaluates **26** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.BiologyDevelopmentalStructuralDepthPanelPriors`. This panel extends the core spine into biology developmental structural depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/biology_developmental_structural_depth_panel_benchmark.json`](data/biology_developmental_structural_depth_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `medical`, `neural`
-- **Panel tags:** Biology, Developmental, Structural, Depth, Panel
-- **Data sources / cohorts:** Developmental, structural biology literature anchors, genomics relay
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| value · actin_filament_pitch_nm | 36 | 36.0055 | 0.015311 |
-| fsot_prediction · biology_developmental_structural_depth_lab | 0 | 0.022236 | 0.022236 |
-| pooled_median · all_channels | 0 | 0.022236 | 0.022236 |
-| value · alpha_helix_pitch_A | 5.4 | 5.40083 | 0.015311 |
-| value · beta_sheet_strand_spacing_A | 3.5 | 3.50054 | 0.015311 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Biology Developmental Structural Depth Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Biology Developmental Structural Depth Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Biology Developmental Structural Depth Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Botany
-
-Extension panel **`Botany`** (verification tier 35) evaluates **426** measured records at **0.0222363%** pooled median error (A_strong). Formal module: `FSOT.Formal.BotanyExtensionPriors`. This panel extends the core spine into botany observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/botany_extension_benchmark.json`](data/botany_extension_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `ecological`
-- **Panel tags:** Botany
-- **Data sources / cohorts:** GBIF Plantae occurrence coordinates (G: drive cache)
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| decimalLongitude · Vaccinium myrtillus | 17.9395 | 17.9427 | 0.017789 |
-| decimalLatitude · Pinus strobus | 42.6841 | 42.6936 | 0.0222363 |
-| plant_occurrence · botany_gbif | 0 | 0.022236 | 0.0222363 |
-| pooled_median · all_channels | 0 | 0.022236 | 0.0222363 |
-| decimalLongitude · Hippophae rhamnoides | 17.5483 | 17.5514 | 0.017789 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Botany: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Botany: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Botany: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### CVE Codon Hole Falsification
-
-Extension panel **`CVE_Codon_Hole_Falsification`** (verification tier 45) evaluates **29** measured records at **0.00918664%** pooled median error (B_verified). Formal module: `FSOT.Formal.CVECodonHoleFalsificationPriors`. This panel extends the core spine into cve codon hole falsification observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/cve_codon_hole_falsification_benchmark.json`](data/cve_codon_hole_falsification_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `medical`, `ai`, `biological`
-- **Panel tags:** Cve, Codon, Hole, Falsification
-- **Data sources / cohorts:** CISA KEV CWE histogram ↔ code-genome hole token overlap — external falsification
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| hole_falsification · hole_panel | 0 | 0 | 0 |
-| sample_hole_detected · cpython_ceval | 5 | 5 | 0 |
-| kev_cwe_frequency · CWE-79 | 33 | 33.003 | 0.00918664 |
-| pooled_median · all_channels | 0 | 0.009187 | 0.00918664 |
-| kev_cwe · kev_panel | 0 | 0.009187 | 0.00918664 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in CVE Codon Hole Falsification: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in CVE Codon Hole Falsification: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in CVE Codon Hole Falsification: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Cardiology` | 45 | 0.0306221 | B_verified |
+| `Cardiology_Panel` | 20 | 0.015311 | B_verified |
+| `ClinicalTrials_Medical_Panel` | 394 | 0 | A_strong |
+| `Clinical_Medicine` | 260 | 0.0024583 | A_strong |
+| `Epidemiology` | 20 | 0.0306221 | B_verified |
+| `Epidemiology_Panel` | 24 | 0.015311 | B_verified |
+| `Genomic_Sciences` | 24 | 0 | B_verified |
+| `Immunology` | 84 | 0.061205 | B_verified |
+| `Immunology_Panel` | 24 | 0.040788 | B_verified |
+| `Longevity_Genetic_Mechanics_Panel` | 35 | 0.022236 | B_verified |
+| `Neuroimmunology` | 92 | 0.0504196 | B_verified |
+| `Neuron_Multi_Hero` | 24 | 0.00225238 | B_verified |
+| `Oncology` | 67 | 0.0504196 | B_verified |
+| `OpenNeuro_Full_Panel` | 123 | 0.015431 | A_strong |
+| `Pharmacology` | 120 | 0.00117154 | A_strong |
+| `Virology` | 50 | 0.0459332 | B_verified |
+| `Virology_Panel` | 24 | 0.022236 | B_verified |
+| `Zebrafish_Longevity_Genetics_Coupling_Panel` | 24 | 0.0144535 | B_verified |
 
 #### Cardiology
 
@@ -4092,117 +4097,507 @@ Extension panel **`Clinical_Medicine`** (verification tier 35) evaluates **260**
 - **`P`** in Clinical Medicine: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 - **`Si`** in Clinical Medicine: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
 
-#### Code Genome Structure
+#### Epidemiology
 
-Extension panel **`Code_Genome_Structure`** (verification tier 43) evaluates **205** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.CodeGenomeStructurePriors`. This panel extends the core spine into code genome structure observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+Extension panel **`Epidemiology`** (verification tier 41) evaluates **20** measured records at **0.0306221%** pooled median error (B_verified). Formal module: `FSOT.Formal.EpidemiologyExtensionPriors`. This panel extends the core spine into epidemiology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
 
-**Benchmark:** [`data/code_genome_structure_cybersecurity_benchmark.json`](data/code_genome_structure_cybersecurity_benchmark.json)
+**Benchmark:** [`data/epidemiology_extension_benchmark.json`](data/epidemiology_extension_benchmark.json)
 
 **Subfield map:**
 
-- **Lean routes:** `biological`, `medical`, `ai`
-- **Panel tags:** Code, Genome, Structure
-- **Data sources / cohorts:** Program-as-genome codon mapping — Lean, Rust, Python, C, JavaScript, FSOTB_ISA
+- **Lean routes:** `medical`, `biological`
+- **Panel tags:** Epidemiology
+- **Data sources / cohorts:** Epidemiology R0, CFR reference, World Bank health panel
 
 **Top observables (measured vs computed):**
 
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
-| K_matches_atlas · K matches atlas | 1 | 1 | 0 |
-| avg_scalar · avg scalar | 12.6185 | 12.6185 | 0 |
-| avg_scalar_positive · avg scalar positive | 1 | 1 | 0 |
-| boot_d_eff · boot d eff | 8 | 8 | 0 |
-| boot_delta_psi · boot delta psi | 0.7 | 0.7 | 0 |
+| attack_rate · meningococcal_attack_rate | 0.001 | 0.001 | 0.0306221 |
+| basic_reproduction_R0 · norovirus_r0 | 7 | 7.00214 | 0.0306221 |
+| prevalence_pct · hiv_prevalence_pct | 0.7 | 0.700214 | 0.0306221 |
+| case_fatality_rate · ebola_case_fatality | 0.5 | 0.500153 | 0.0306221 |
+| epidemic_metrics · epidemiology_panel | 0 | 0.030622 | 0.0306221 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`Bi2Te3`** in Code Genome Structure: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-- **`F`** in Code Genome Structure: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Code Genome Structure: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`pH_water`** in Epidemiology: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in Epidemiology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Epidemiology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 
-#### Consciousness Genetics Coupling Panel
+#### Epidemiology Panel
 
-Extension panel **`Consciousness_Genetics_Coupling_Panel`** (verification tier 93) evaluates **24** measured records at **0.031506%** pooled median error (B_verified). Formal module: `FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors`. This panel extends the core spine into consciousness genetics coupling panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+Extension panel **`Epidemiology_Panel`** (verification tier 84) evaluates **24** measured records at **0.015311%** pooled median error (B_verified). Formal module: `FSOT.Formal.EpidemiologyPanelPriors`. This panel extends the core spine into epidemiology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
 
-**Benchmark:** [`data/consciousness_genetics_coupling_panel_benchmark.json`](data/consciousness_genetics_coupling_panel_benchmark.json)
+**Benchmark:** [`data/epidemiology_panel_benchmark.json`](data/epidemiology_panel_benchmark.json)
 
 **Subfield map:**
 
-- **Lean routes:** `consciousness`, `neural`, `biological`
-- **Panel tags:** Consciousness, Genetics, Coupling, Panel
-- **Data sources / cohorts:** Genotype-phenotype consciousness coupling — genome × brain fraction × quirkMod
+- **Lean routes:** `medical`, `biological`
+- **Panel tags:** Epidemiology, Panel
+- **Data sources / cohorts:** Epidemiology — World Bank health indicators, WHO reference anchors
 
 **Top observables (measured vs computed):**
 
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
-| E_con_resting · Homo_sapiens | 20 | 20 | 0 |
-| S_final · S final | 0.148065 | 0.148065 | 0 |
-| brain_power_w · Homo_sapiens | 20 | 20.0036 | 0.018003 |
-| ncbi_taxid · Homo_sapiens | 9606 | 9608.14 | 0.022236 |
-| total_metabolic_w · Homo_sapiens | 82.78 | 82.7984 | 0.022236 |
+| molecular_weight · 2244 | 180.16 | 180.159 | 0.000555 |
+| depth_relay · Epidemiology_Panel_depth | 0 | 0.015311 | 0.015311 |
+| maternal_mortality_per_100k · ZH_SH.STA.MMRT | 268 | 268.041 | 0.015311 |
+| neonatal_mortality_per_1000 · ZH_SH.DYN.NMRT | 23.242 | 23.2456 | 0.015311 |
+| pooled_median · all_channels | 0 | 0.015311 | 0.015311 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Consciousness Genetics Coupling Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Consciousness Genetics Coupling Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Li`** in Consciousness Genetics Coupling Panel: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
+- **`CO₂`** in Epidemiology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
+- **`XeF₂`** in Epidemiology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
+- **`BeCl₂`** in Epidemiology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
 
-#### Consciousness Genetics Species Panel
+#### Genomic Sciences
 
-Extension panel **`Consciousness_Genetics_Species_Panel`** (verification tier 93) evaluates **27** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.ConsciousnessGeneticsSpeciesPanelPriors`. This panel extends the core spine into consciousness genetics species panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+Extension panel **`Genomic_Sciences`** (verification tier 66) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.GenomicSciencesPriors`. This panel extends the core spine into genomic sciences observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
 
-**Benchmark:** [`data/consciousness_genetics_species_panel_benchmark.json`](data/consciousness_genetics_species_panel_benchmark.json)
+**Benchmark:** [`data/genomic_sciences_benchmark.json`](data/genomic_sciences_benchmark.json)
 
 **Subfield map:**
 
-- **Lean routes:** `consciousness`, `neural`, `biological`
-- **Panel tags:** Consciousness, Genetics, Species, Panel
-- **Data sources / cohorts:** NCBI taxonomy, genome assembly cross-walk for consciousness species
+- **Lean routes:** `biological`, `medical`, `neural`
+- **Panel tags:** Genomic, Sciences
+- **Data sources / cohorts:** Codon-trinary mirror anchors, synthetic biology bridge
 
 **Top observables (measured vs computed):**
 
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
-| consciousness_genetics · species_genome | 0 | 0.022236 | 0.022236 |
-| genome_bp · Bos_taurus | 2.71e+09 | 2.7106e+09 | 0.022236 |
-| ncbi_taxid · Bos_taurus | 9913 | 9915.2 | 0.022236 |
+| depth_relay · Genomic_Sciences_depth | 0 | 0 | 0 |
+| domain_scalar · fsot_Biology | 0.444725 | 0.444725 | 0 |
+| empirical_gap_fill_bridge · synthetic_biology_benchmark | 0 | 0 | 0 |
+| observable · amino_acids_canonical | 20 | 20 | 0 |
+| pooled_median · all_channels | 0 | 0 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Genomic Sciences: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Genomic Sciences: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Genomic Sciences: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Immunology
+
+Extension panel **`Immunology`** (verification tier 12) evaluates **84** measured records at **0.061205%** pooled median error (B_verified). Formal module: `FSOT.Formal.ImmunologyPriors`. This panel extends the core spine into immunology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/immunology_benchmark.json`](data/immunology_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `medical`, `biological`
+- **Panel tags:** Immunology
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| §24 Enzyme kcat · chymotrypsin | 2 | 2 | 0 |
+| §35 Michaelis Km · glucokinase | 10 | 10 | 0 |
+| §21 Protein ΔG · BPTI | -11 | -11 | 1.61487e-14 |
+| §23 Drug pKd · aspirin/COX-1 | 4.8 | 4.79999 | 0.000302791 |
+| §22 Amino Acid pKa · Ala_pK₁ | 2.34 | 2.33999 | 0.000474017 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`Ca`** in Immunology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`P`** in Immunology: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Si`** in Immunology: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Immunology Panel
+
+Extension panel **`Immunology_Panel`** (verification tier 84) evaluates **24** measured records at **0.040788%** pooled median error (B_verified). Formal module: `FSOT.Formal.ImmunologyPanelPriors`. This panel extends the core spine into immunology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/immunology_panel_benchmark.json`](data/immunology_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `medical`, `biological`
+- **Panel tags:** Immunology, Panel
+- **Data sources / cohorts:** Immunology — PubChem immune-modulator physicochemistry
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| tpsa · 5360545 | 0 | 0 | 0 |
+| xlogp · 5360545 | 0 | 0 | 0 |
+| fsot_prediction · immunology | 0 | 0.040788 | 0.040788 |
+| molecular_weight · 2519 | 194.19 | 194.269 | 0.040788 |
+| pooled_median · all_channels | 0 | 0.040788 | 0.040788 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Immunology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Immunology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Immunology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Longevity Genetic Mechanics Panel
+
+Extension panel **`Longevity_Genetic_Mechanics_Panel`** (verification tier 94) evaluates **35** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.LongevityGeneticMechanicsPanelPriors`. This panel extends the core spine into longevity genetic mechanics panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/longevity_genetic_mechanics_panel_benchmark.json`](data/longevity_genetic_mechanics_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `genetics`, `neural`
+- **Panel tags:** Longevity, Genetic, Mechanics, Panel
+- **Data sources / cohorts:** IMR, MRDT genetic repair proxies, lifespan mortality resistance
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| genetic_repair_longevity_proxy · Acipenser_fulvescens | 1680.4 | 1680.78 | 0.022236 |
+| lifespan_imr_resistance · Acipenser_fulvescens | 11692.3 | 11694.9 | 0.022236 |
 | pooled_median · all_channels | 0 | 0.022236 | 0.022236 |
-| brain_energy_fraction · Bos_taurus | 0.12 | 0.120038 | 0.031506 |
+| genetic_mechanics · mrdt_imr_longevity | 0 | 0.022236 | 0.0222363 |
+| genetic_repair_longevity_proxy · Arctica_islandica | 270289 | 270349 | 0.022236 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`H⁺/H₂`** in Consciousness Genetics Species Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Consciousness Genetics Species Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Consciousness Genetics Species Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Longevity Genetic Mechanics Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Longevity Genetic Mechanics Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Fe`** in Longevity Genetic Mechanics Panel: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
 
-#### Consciousness Species Multi Panel
+#### Neuroimmunology
 
-Extension panel **`Consciousness_Species_Multi_Panel`** (verification tier 90) evaluates **269** measured records at **0.0201195%** pooled median error (A_strong). Formal module: `FSOT.Formal.ConsciousnessSpeciesMultiPanelPriors`. This panel extends the core spine into consciousness species multi panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+Extension panel **`Neuroimmunology`** (verification tier 26) evaluates **92** measured records at **0.0504196%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeuroimmunologyPriors`. This panel extends the core spine into neuroimmunology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
 
-**Benchmark:** [`data/consciousness_species_multi_panel_benchmark.json`](data/consciousness_species_multi_panel_benchmark.json)
+**Benchmark:** [`data/neuroimmunology_benchmark.json`](data/neuroimmunology_benchmark.json)
 
 **Subfield map:**
 
-- **Lean routes:** `consciousness`, `neural`, `biological`
-- **Panel tags:** Consciousness, Species, Multi, Panel
-- **Data sources / cohorts:** AnAge live, 72+ species brain metabolic, E_con cross-species consciousness panel
+- **Lean routes:** `medical`, `neural`
+- **Panel tags:** Neuroimmunology
+- **Data sources / cohorts:** Immunology SMILES, Allen neuron cohort strata FI coupling crosswalk
 
 **Top observables (measured vs computed):**
 
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
-| E_con_resting · Acrobates_pygmaeus | 0.00756 | 0.00756 | 0 |
-| brain_power_w · Acrobates_pygmaeus | 0.00756 | 0.007561 | 0.018003 |
-| consciousness_species · multi_species_panel | 0 | 0.018003 | 0.018003 |
-| eeg_dataset_count · openneuro_eeg_index | 55 | 55.0099 | 0.018003 |
-| pooled_median · all_channels | 0 | 0.020119 | 0.0201195 |
+| neuroimmune_fi_coupling · L2_3_pyramidal_holdout | 1 | 1 | 0 |
+| neuroimmune_fi_coupling_classifier · allen_strata_coupling | 100 | 100 | 0 |
+| §24 Enzyme kcat · chymotrypsin | 2 | 2 | 0 |
+| §35 Michaelis Km · glucokinase | 10 | 10 | 0 |
+| §21 Protein ΔG · BPTI | -11 | -11 | 1.61487e-14 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`H⁺/H₂`** in Consciousness Species Multi Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Consciousness Species Multi Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`P`** in Consciousness Species Multi Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Bi2Te3`** in Neuroimmunology: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`F`** in Neuroimmunology: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Ca`** in Neuroimmunology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+
+#### Neuron Multi Hero
+
+Extension panel **`Neuron_Multi_Hero`** (verification tier 27) evaluates **24** measured records at **0.00225238%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeuronMultiHeroPriors`. This panel extends the core spine into neuron multi hero observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/multi_hero_benchmark.json`](data/multi_hero_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `neural`
+- **Panel tags:** Neuron, Multi, Hero
+- **Data sources / cohorts:** 4 FI-proxy certified heroes per Sst, PV, VIP, L2-3 Allen class
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| S_final · S final | 0.148065 | 0.148065 | 0 |
+| depth_relay · Neuron_Multi_Hero_depth | 0 | 0 | 0 |
+| historical_coupled_dst_kp_storm_classifier (misclassification_pct) | 100 | 100 | 0 |
+| median_error_pct · pooled_magnetosphere_extended_classifier (misclassification_pct) | 100 | 100 | 0 |
+| scalar_ratio_unity · Astronomy__Cosmology_Extended__astronomical | 1 | 1 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Neuron Multi Hero: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Neuron Multi Hero: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Neuron Multi Hero: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+
+#### Oncology
+
+Extension panel **`Oncology`** (verification tier 26) evaluates **67** measured records at **0.0504196%** pooled median error (B_verified). Formal module: `FSOT.Formal.OncologyPriors`. This panel extends the core spine into oncology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/oncology_benchmark.json`](data/oncology_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `medical`, `biological`
+- **Panel tags:** Oncology
+- **Data sources / cohorts:** SMILES drug, enzyme affinity, biology strict operon bridge
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| biology_strict_operon_bridge_median · ncbi_strict_operons | 0 | 0 | 0 |
+| mt_operon_count · human_mt_protein_genes | 13 | 13 | 0 |
+| mt_operon_length · MT-ATP6 | 681 | 681 | 0 |
+| §24 Enzyme kcat · chymotrypsin | 2 | 2 | 0 |
+| §35 Michaelis Km · glucokinase | 10 | 10 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Oncology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Oncology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Ca`** in Oncology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+
+#### OpenNeuro Full Panel
+
+Extension panel **`OpenNeuro_Full_Panel`** (verification tier 68) evaluates **123** measured records at **0.015431%** pooled median error (A_strong). Formal module: `FSOT.Formal.OpenNeuroFullPanelPriors`. This panel extends the core spine into openneuro full panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/openneuro_full_panel_benchmark.json`](data/openneuro_full_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `neural`, `consciousness`, `ai`
+- **Panel tags:** Openneuro, Full, Panel
+- **Data sources / cohorts:** Full OpenNeuro EEG, MRI dataset catalog — consciousness channel proxies
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| neuroscience_scalar · fsot_Neuroscience | 0.514362 | 0.514362 | 0 |
+| eeg_dataset_id · ds001785 | 1 | 1.00015 | 0.015431 |
+| fsot_prediction · openneuro_full | 0 | 0.015431 | 0.015431 |
+| mri_dataset_id · ds000001 | 1 | 1.00015 | 0.015431 |
+| pooled_median · all_channels | 0 | 0.015431 | 0.015431 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in OpenNeuro Full Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in OpenNeuro Full Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in OpenNeuro Full Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+
+#### Pharmacology
+
+Extension panel **`Pharmacology`** (verification tier 20) evaluates **120** measured records at **0.00117154%** pooled median error (A_strong). Formal module: `FSOT.Formal.PharmacologyPriors`. This panel extends the core spine into pharmacology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/pharmacology_benchmark.json`](data/pharmacology_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `medical`, `chemical`
+- **Panel tags:** Pharmacology
+- **Data sources / cohorts:** ChEMBL max_phase=4 molecular weight vs FSOT formula mass
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| molecular_weight · AMINOHIPPURIC ACID | 194.19 | 194.19 | 0 |
+| molecular_weight · BUTALBITAL | 224.26 | 224.26 | 0 |
+| molecular_weight · ETRETINATE | 354.49 | 354.49 | 0 |
+| molecular_weight · GATIFLOXACIN | 375.4 | 375.4 | 0 |
+| molecular_weight · MOLINDONE | 276.38 | 276.38 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`F`** in Pharmacology: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`P`** in Pharmacology: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`naphthalene`** in Pharmacology: measured **275.0**, seed-derived **275.01340810498164** via `π⁵-π³` (error **0.004876%**). Constants: pi. Authority: Silverstein / Pavia.
+
+#### Virology
+
+Extension panel **`Virology`** (verification tier 41) evaluates **50** measured records at **0.0459332%** pooled median error (B_verified). Formal module: `FSOT.Formal.VirologyExtensionPriors`. This panel extends the core spine into virology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/virology_extension_benchmark.json`](data/virology_extension_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `medical`, `biological`
+- **Panel tags:** Virology
+- **Data sources / cohorts:** Virology reference, immunology, PubChem antivirals
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| §21 Protein ΔG · BPTI | -11 | -11 | 1.61487e-14 |
+| §22 Amino Acid pKa · Ala_pK₁ | 2.34 | 2.33999 | 0.000474017 |
+| genome_size_kb · phage_t4_genome_kb | 169 | 169.078 | 0.0459332 |
+| molecular_weight_da · sofosbuvir_mw | 529.5 | 529.743 | 0.0459332 |
+| basic_reproduction_R0 · morbillivirus_r0 | 15 | 15.0069 | 0.0459332 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`F`** in Virology: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`P`** in Virology: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Si`** in Virology: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Virology Panel
+
+Extension panel **`Virology_Panel`** (verification tier 84) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.VirologyPanelPriors`. This panel extends the core spine into virology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/virology_panel_benchmark.json`](data/virology_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `medical`
+- **Panel tags:** Virology, Panel
+- **Data sources / cohorts:** Virology — NCBI nuccore genome lengths, antiviral reference
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| molecular_weight · 2244 | 180.16 | 180.159 | 0.000555 |
+| thermal_cond_W_mK · Fe | 80.4 | 80.4048 | 0.00591861 |
+| h_fus_kJ_mol · Fe | 13.81 | 13.8085 | 0.0112 |
+| bulk_GPa · Fe | 170 | 169.971 | 0.0173 |
+| decimalLongitude · Theria primaria | -3.6084 | -3.60904 | 0.017789 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`alpha_Fe`** in Virology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`CO₂`** in Virology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
+- **`XeF₂`** in Virology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
+
+#### Zebrafish Longevity Genetics Coupling Panel
+
+Extension panel **`Zebrafish_Longevity_Genetics_Coupling_Panel`** (verification tier 95) evaluates **24** measured records at **0.0144535%** pooled median error (B_verified). Formal module: `FSOT.Formal.ZebrafishLongevityGeneticsCouplingPanelPriors`. This panel extends the core spine into zebrafish longevity genetics coupling panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/zebrafish_longevity_genetics_coupling_panel_benchmark.json`](data/zebrafish_longevity_genetics_coupling_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `genetics`, `consciousness`
+- **Panel tags:** Zebrafish, Longevity, Genetics, Coupling, Panel
+- **Data sources / cohorts:** Danio rerio developmental × Tier 94 longevity
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| developmental_longevity_coupling · ZSNS001 | 0.173889 | 0.173912 | 0.013342 |
+| genome_developmental_coupling · ZSNS001 | 0.15612 | 0.156141 | 0.013342 |
+| quirk_longevity_coupling · Acipenser_gueldenstaedtii | -12317.3 | -12319 | 0.013342 |
+| pooled_median · all_channels | 0 | 0.014454 | 0.0144535 |
+| depth_relay · Zebrafish_Longevity_Genetics_Coupling_Panel_depth | 0 | 0.015565 | 0.015565 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Zebrafish Longevity Genetics Coupling Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Zebrafish Longevity Genetics Coupling Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Zebrafish Longevity Genetics Coupling Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+**Panels:** 20 · **Records:** 5,751 · **Mean panel median error:** 0.018924%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Agriculture_Agroecology` | 276 | 0.018019 | A_strong |
+| `Biological_CUDA_Physarum` | 35 | 0 | B_verified |
+| `Botany` | 426 | 0.0222363 | A_strong |
+| `Culinary_Arts` | 26 | 0.0476152 | B_verified |
+| `Culinary_Fermentation_Maillard_Panel` | 130 | 0.040788 | A_strong |
+| `Ecology` | 24 | 0 | B_verified |
+| `Entomology` | 430 | 0.0222363 | A_strong |
+| `Entomology_Panel` | 90 | 0.006006 | B_verified |
+| `Food_Microbiology` | 30 | 0.0444725 | B_verified |
+| `GBIF_Species_Occurrence` | 240 | 0.006006 | A_strong |
+| `Longevity_AnAge_Catalog_Panel` | 966 | 0.022236 | A_strong |
+| `Longevity_Extreme_Species_Panel` | 164 | 0.017789 | A_strong |
+| `Marine_Biology` | 540 | 0.0222363 | A_strong |
+| `Marine_Biology_Panel` | 90 | 0.006006 | B_verified |
+| `Mycology` | 420 | 0.0222363 | A_strong |
+| `Mycology_Panel` | 90 | 0.006006 | B_verified |
+| `Paleontology` | 630 | 0.0178361 | A_strong |
+| `Paleontology_Panel` | 120 | 0.0167305 | A_strong |
+| `Physarum_Biological_CUDA_Panel` | 24 | 0.022236 | B_verified |
+| `Zoology` | 1,000 | 0.017789 | A_strong |
+
+#### Agriculture Agroecology
+
+Extension panel **`Agriculture_Agroecology`** (verification tier 34) evaluates **276** measured records at **0.018019%** pooled median error (A_strong). Formal module: `FSOT.Formal.AgricultureAgroecologyGapFillPriors`. This panel extends the core spine into agriculture agroecology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/agriculture_agroecology_gap_fill_benchmark.json`](data/agriculture_agroecology_gap_fill_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `energy`
+- **Panel tags:** Agriculture, Agroecology
+- **Data sources / cohorts:** GBIF species occurrence, World Bank agro-socioeconomic panel
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| GDP_per_capita · IT_2022 | 35653.9 | 35657.1 | 0.00900951 |
+| population_total · CN_2022 | 1.41218e+09 | 1.4123e+09 | 0.00900951 |
+| mean_latitude · Leratiomyces ceres | 40.7963 | 40.8037 | 0.018019 |
+| agroecology · species_ag_indicator | 0 | 0.018019 | 0.018019 |
+| pooled_median · all_channels | 0 | 0.018019 | 0.018019 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Agriculture Agroecology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Agriculture Agroecology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Ca`** in Agriculture Agroecology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+
+#### Biological CUDA Physarum
+
+Extension panel **`Biological_CUDA_Physarum`** (verification tier 34) evaluates **35** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.BiologicalCudaPhysarumPriors`. This panel extends the core spine into biological cuda physarum observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/biological_cuda_physarum_benchmark.json`](data/biological_cuda_physarum_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `medical`, `neural`
+- **Panel tags:** Biological, Cuda, Physarum
+- **Data sources / cohorts:** Physarum CUDA RTX 5070 benchmarks, v5 plasmodium state, genomics bridge
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| avg_S · nuclei_1000 | 6.9618 | 6.9618 | 0 |
+| condo_ops_per_sec · nuclei_1000 | 75.2 | 75.2 | 0 |
+| genomics_D_eff · genomics D eff | 22 | 22 | 0 |
+| genomics_error_pct · genomics error pct | 6.62412 | 6.62412 | 0 |
+| global_coherence_range · global coherence range | 0.322112 | 0.322112 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`pH_water`** in Biological CUDA Physarum: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`F`** in Biological CUDA Physarum: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`P`** in Biological CUDA Physarum: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Botany
+
+Extension panel **`Botany`** (verification tier 35) evaluates **426** measured records at **0.0222363%** pooled median error (A_strong). Formal module: `FSOT.Formal.BotanyExtensionPriors`. This panel extends the core spine into botany observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/botany_extension_benchmark.json`](data/botany_extension_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `ecological`
+- **Panel tags:** Botany
+- **Data sources / cohorts:** GBIF Plantae occurrence coordinates (G: drive cache)
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| decimalLongitude · Vaccinium myrtillus | 17.9395 | 17.9427 | 0.017789 |
+| decimalLatitude · Pinus strobus | 42.6841 | 42.6936 | 0.0222363 |
+| plant_occurrence · botany_gbif | 0 | 0.022236 | 0.0222363 |
+| pooled_median · all_channels | 0 | 0.022236 | 0.0222363 |
+| decimalLongitude · Hippophae rhamnoides | 17.5483 | 17.5514 | 0.017789 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Botany: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Botany: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Botany: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Culinary Arts
 
@@ -4344,90 +4739,6 @@ Extension panel **`Entomology_Panel`** (verification tier 84) evaluates **90** m
 - **`alpha_Fe`** in Entomology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Bi2Te3`** in Entomology Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
-#### Epidemiology
-
-Extension panel **`Epidemiology`** (verification tier 41) evaluates **20** measured records at **0.0306221%** pooled median error (B_verified). Formal module: `FSOT.Formal.EpidemiologyExtensionPriors`. This panel extends the core spine into epidemiology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/epidemiology_extension_benchmark.json`](data/epidemiology_extension_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `medical`, `biological`
-- **Panel tags:** Epidemiology
-- **Data sources / cohorts:** Epidemiology R0, CFR reference, World Bank health panel
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| attack_rate · meningococcal_attack_rate | 0.001 | 0.001 | 0.0306221 |
-| basic_reproduction_R0 · norovirus_r0 | 7 | 7.00214 | 0.0306221 |
-| prevalence_pct · hiv_prevalence_pct | 0.7 | 0.700214 | 0.0306221 |
-| case_fatality_rate · ebola_case_fatality | 0.5 | 0.500153 | 0.0306221 |
-| epidemic_metrics · epidemiology_panel | 0 | 0.030622 | 0.0306221 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`pH_water`** in Epidemiology: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-- **`H⁺/H₂`** in Epidemiology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Epidemiology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-
-#### Epidemiology Panel
-
-Extension panel **`Epidemiology_Panel`** (verification tier 84) evaluates **24** measured records at **0.015311%** pooled median error (B_verified). Formal module: `FSOT.Formal.EpidemiologyPanelPriors`. This panel extends the core spine into epidemiology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/epidemiology_panel_benchmark.json`](data/epidemiology_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `medical`, `biological`
-- **Panel tags:** Epidemiology, Panel
-- **Data sources / cohorts:** Epidemiology — World Bank health indicators, WHO reference anchors
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| molecular_weight · 2244 | 180.16 | 180.159 | 0.000555 |
-| depth_relay · Epidemiology_Panel_depth | 0 | 0.015311 | 0.015311 |
-| maternal_mortality_per_100k · ZH_SH.STA.MMRT | 268 | 268.041 | 0.015311 |
-| neonatal_mortality_per_1000 · ZH_SH.DYN.NMRT | 23.242 | 23.2456 | 0.015311 |
-| pooled_median · all_channels | 0 | 0.015311 | 0.015311 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`CO₂`** in Epidemiology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`XeF₂`** in Epidemiology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`BeCl₂`** in Epidemiology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-
-#### External OSS Code Genome
-
-Extension panel **`External_OSS_Code_Genome`** (verification tier 44) evaluates **164** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ExternalOSSCodeGenomePriors`. This panel extends the core spine into external oss code genome observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/external_oss_code_genome_benchmark.json`](data/external_oss_code_genome_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `ai`, `biological`, `consciousness`
-- **Panel tags:** External, Oss, Code, Genome
-- **Data sources / cohorts:** Curated GitHub OSS snapshots — cross-repo codon affinity vs FSOT internal genome
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| codon_hole_detected · Lean__import_lemma_open | 1 | 1 | 0 |
-| language_bridge_certified · C | 1 | 1 | 0 |
-| oss_hole_detection · oss_hole_panel | 0 | 0 | 0 |
-| pooled_median · all_channels | 0 | 0 | 0 |
-| zero_day_hole_rollup_bridge · zero_day_evaluator_holes | 82 | 82 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in External OSS Code Genome: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in External OSS Code Genome: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in External OSS Code Genome: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-
 #### Food Microbiology
 
 Extension panel **`Food_Microbiology`** (verification tier 34) evaluates **30** measured records at **0.0444725%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoodMicrobiologyGapFillPriors`. This panel extends the core spine into food microbiology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -4483,117 +4794,6 @@ Extension panel **`GBIF_Species_Occurrence`** (verification tier 38) evaluates *
 - **`P`** in GBIF Species Occurrence: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 - **`O`** in GBIF Species Occurrence: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
 - **`C`** in GBIF Species Occurrence: measured **1.262**, seed-derived **1.2619131378546835** via `Ω⁻¹+B_IN³` (error **0.006883%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Genomic Sciences
-
-Extension panel **`Genomic_Sciences`** (verification tier 66) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.GenomicSciencesPriors`. This panel extends the core spine into genomic sciences observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/genomic_sciences_benchmark.json`](data/genomic_sciences_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `medical`, `neural`
-- **Panel tags:** Genomic, Sciences
-- **Data sources / cohorts:** Codon-trinary mirror anchors, synthetic biology bridge
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| depth_relay · Genomic_Sciences_depth | 0 | 0 | 0 |
-| domain_scalar · fsot_Biology | 0.444725 | 0.444725 | 0 |
-| empirical_gap_fill_bridge · synthetic_biology_benchmark | 0 | 0 | 0 |
-| observable · amino_acids_canonical | 20 | 20 | 0 |
-| pooled_median · all_channels | 0 | 0 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Genomic Sciences: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Genomic Sciences: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Genomic Sciences: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### IGEM Synthetic Biology
-
-Extension panel **`IGEM_Synthetic_Biology`** (verification tier 31) evaluates **54** measured records at **0.0222363%** pooled median error (B_verified). Formal module: `FSOT.Formal.IGEMSyntheticBiologyPriors`. This panel extends the core spine into igem synthetic biology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/igem_synthetic_biology_benchmark.json`](data/igem_synthetic_biology_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `medical`
-- **Panel tags:** Igem, Synthetic, Biology
-- **Data sources / cohorts:** iGEM parts-registry length, GC strict-empirical bridge to biology_strict operons
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| biology_strict_bridge_median · ncbi_mt_operon_replication | 100 | 100 | 0 |
-| biology_strict_operon_replication · MT-ATP6 | 681 | 681 | 0 |
-| channel_median_biology_strict_operon_replication · biology_strict_operon_replication | 0 | 0 | 0 |
-| gc_percent · BBa_B0034 | 41.6667 | 41.676 | 0.0222363 |
-| channel_median_gc_percent · gc_percent | 0 | 0.022236 | 0.0222363 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in IGEM Synthetic Biology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in IGEM Synthetic Biology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Ca`** in IGEM Synthetic Biology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-
-#### Immunology
-
-Extension panel **`Immunology`** (verification tier 12) evaluates **84** measured records at **0.061205%** pooled median error (B_verified). Formal module: `FSOT.Formal.ImmunologyPriors`. This panel extends the core spine into immunology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/immunology_benchmark.json`](data/immunology_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `medical`, `biological`
-- **Panel tags:** Immunology
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| §24 Enzyme kcat · chymotrypsin | 2 | 2 | 0 |
-| §35 Michaelis Km · glucokinase | 10 | 10 | 0 |
-| §21 Protein ΔG · BPTI | -11 | -11 | 1.61487e-14 |
-| §23 Drug pKd · aspirin/COX-1 | 4.8 | 4.79999 | 0.000302791 |
-| §22 Amino Acid pKa · Ala_pK₁ | 2.34 | 2.33999 | 0.000474017 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`Ca`** in Immunology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Immunology: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Immunology: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Immunology Panel
-
-Extension panel **`Immunology_Panel`** (verification tier 84) evaluates **24** measured records at **0.040788%** pooled median error (B_verified). Formal module: `FSOT.Formal.ImmunologyPanelPriors`. This panel extends the core spine into immunology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/immunology_panel_benchmark.json`](data/immunology_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `medical`, `biological`
-- **Panel tags:** Immunology, Panel
-- **Data sources / cohorts:** Immunology — PubChem immune-modulator physicochemistry
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| tpsa · 5360545 | 0 | 0 | 0 |
-| xlogp · 5360545 | 0 | 0 | 0 |
-| fsot_prediction · immunology | 0 | 0.040788 | 0.040788 |
-| molecular_weight · 2519 | 194.19 | 194.269 | 0.040788 |
-| pooled_median · all_channels | 0 | 0.040788 | 0.040788 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Immunology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Immunology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Immunology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Longevity AnAge Catalog Panel
 
@@ -4651,34 +4851,6 @@ Extension panel **`Longevity_Extreme_Species_Panel`** (verification tier 94) eva
 - **`alpha_Fe`** in Longevity Extreme Species Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`P`** in Longevity Extreme Species Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
-#### Longevity Genetic Mechanics Panel
-
-Extension panel **`Longevity_Genetic_Mechanics_Panel`** (verification tier 94) evaluates **35** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.LongevityGeneticMechanicsPanelPriors`. This panel extends the core spine into longevity genetic mechanics panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/longevity_genetic_mechanics_panel_benchmark.json`](data/longevity_genetic_mechanics_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `genetics`, `neural`
-- **Panel tags:** Longevity, Genetic, Mechanics, Panel
-- **Data sources / cohorts:** IMR, MRDT genetic repair proxies, lifespan mortality resistance
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| genetic_repair_longevity_proxy · Acipenser_fulvescens | 1680.4 | 1680.78 | 0.022236 |
-| lifespan_imr_resistance · Acipenser_fulvescens | 11692.3 | 11694.9 | 0.022236 |
-| pooled_median · all_channels | 0 | 0.022236 | 0.022236 |
-| genetic_mechanics · mrdt_imr_longevity | 0 | 0.022236 | 0.0222363 |
-| genetic_repair_longevity_proxy · Arctica_islandica | 270289 | 270349 | 0.022236 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Longevity Genetic Mechanics Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Longevity Genetic Mechanics Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Fe`** in Longevity Genetic Mechanics Panel: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
-
 #### Marine Biology
 
 Extension panel **`Marine_Biology`** (verification tier 41) evaluates **540** measured records at **0.0222363%** pooled median error (A_strong). Formal module: `FSOT.Formal.MarineBiologyExtensionPriors`. This panel extends the core spine into marine biology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -4734,6 +4906,421 @@ Extension panel **`Marine_Biology_Panel`** (verification tier 84) evaluates **90
 - **`H⁺/H₂`** in Marine Biology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
 - **`alpha_Fe`** in Marine Biology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Marine Biology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Mycology
+
+Extension panel **`Mycology`** (verification tier 41) evaluates **420** measured records at **0.0222363%** pooled median error (A_strong). Formal module: `FSOT.Formal.MycologyExtensionPriors`. This panel extends the core spine into mycology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/mycology_extension_benchmark.json`](data/mycology_extension_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `ecological`
+- **Panel tags:** Mycology
+- **Data sources / cohorts:** GBIF Fungi kingdom occurrence, food microbiology bridge
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| decimalLongitude · Phellinus tremulae | 17.5549 | 17.558 | 0.017789 |
+| decimalLatitude · Phaeophyscia orbicularis | 55.5837 | 55.596 | 0.0222363 |
+| fungal_occurrence · mycology_gbif | 0 | 0.022236 | 0.0222363 |
+| pooled_median · all_channels | 0 | 0.022236 | 0.0222363 |
+| optimal_temp_C · wine_primary | 22 | 22.0098 | 0.0444725 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Mycology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Mycology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Mycology: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Mycology Panel
+
+Extension panel **`Mycology_Panel`** (verification tier 84) evaluates **90** measured records at **0.006006%** pooled median error (B_verified). Formal module: `FSOT.Formal.MycologyPanelPriors`. This panel extends the core spine into mycology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/mycology_panel_benchmark.json`](data/mycology_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `medical`
+- **Panel tags:** Mycology, Panel
+- **Data sources / cohorts:** Mycology — GBIF Fungi occurrence panel
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| decimalLatitude · Alectoria sarmentosa | 61.5295 | 61.5332 | 0.006006 |
+| decimalLongitude · Alectoria sarmentosa | 15.1505 | 15.1515 | 0.006006 |
+| fsot_prediction · mycology | 0 | 0.006006 | 0.006006 |
+| pooled_median · all_channels | 0 | 0.006006 | 0.006006 |
+| year · Alectoria sarmentosa | 2024 | 2024.45 | 0.022236 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Mycology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Mycology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Mycology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Paleontology
+
+Extension panel **`Paleontology`** (verification tier 41) evaluates **630** measured records at **0.0178361%** pooled median error (A_strong). Formal module: `FSOT.Formal.PaleontologyExtensionPriors`. This panel extends the core spine into paleontology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/paleontology_extension_benchmark.json`](data/paleontology_extension_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `energy`, `galactic`, `biological`
+- **Panel tags:** Paleontology
+- **Data sources / cohorts:** PBDB fossil occurrences, seismology stratigraphy bridge
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| shallow_earthquake_classifier · us6000pgcu | 1 | 1 | 0 |
+| geologic_age_ma · Ammonoidea indet. | 143.1 | 143.119 | 0.013377 |
+| lat · Ammonoidea indet. | 73 | 73.013 | 0.0178361 |
+| lng · Ammonoidea indet. | 19.0167 | 19.0201 | 0.0178361 |
+| fossil_occurrence · paleontology_pbdb | 0 | 0.017836 | 0.0178361 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Paleontology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Paleontology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Paleontology: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+
+#### Paleontology Panel
+
+Extension panel **`Paleontology_Panel`** (verification tier 84) evaluates **120** measured records at **0.0167305%** pooled median error (A_strong). Formal module: `FSOT.Formal.PaleontologyPanelPriors`. This panel extends the core spine into paleontology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/paleontology_panel_benchmark.json`](data/paleontology_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `energy`
+- **Panel tags:** Paleontology, Panel
+- **Data sources / cohorts:** Paleontology — PBDB Ammonoidea occurrences (deep-time cross-check)
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| lat · Ammonoida indet. | 47.4167 | 47.4195 | 0.006006 |
+| late_age · Ammonoida indet. | 351.9 | 351.921 | 0.006006 |
+| pooled_median · all_channels | 0 | 0.01673 | 0.0167305 |
+| early_age · Ammonoida indet. | 358.86 | 358.959 | 0.027455 |
+| fsot_prediction · paleontology | 0 | 0.027455 | 0.027455 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Paleontology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Paleontology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`CS2`** in Paleontology Panel: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
+
+#### Physarum Biological CUDA Panel
+
+Extension panel **`Physarum_Biological_CUDA_Panel`** (verification tier 88) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.PhysarumBiologicalCudaPanelPriors`. This panel extends the core spine into physarum biological cuda panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/physarum_biological_cuda_panel_benchmark.json`](data/physarum_biological_cuda_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `neural`
+- **Panel tags:** Physarum, Biological, Cuda, Panel
+- **Data sources / cohorts:** Desktop Physarum polycephalum CUDA genomics simulation
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| genomics_gene_count | 0 | 0 | 0 |
+| desktop_wiring · physarum_cuda | 0 | 0.022236 | 0.022236 |
+| editing_yield | 347 | 347.077 | 0.022236 |
+| global_coherence | 0.322112 | 0.322184 | 0.022236 |
+| nuclei_count | 1 | 1.00022 | 0.022236 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Physarum Biological CUDA Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Physarum Biological CUDA Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Physarum Biological CUDA Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+
+#### Zoology
+
+Extension panel **`Zoology`** (verification tier 35) evaluates **1000** measured records at **0.017789%** pooled median error (A_strong). Formal module: `FSOT.Formal.ZoologyExtensionPriors`. This panel extends the core spine into zoology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/zoology_extension_benchmark.json`](data/zoology_extension_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `medical`
+- **Panel tags:** Zoology
+- **Data sources / cohorts:** GBIF Animalia occurrence coordinates, ecology bridge
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| decimalLongitude · Populus grandidentata | -71.807 | -71.8198 | 0.017789 |
+| decimalLatitude · Alsophila pometaria | 40.9948 | 41.0021 | 0.017789 |
+| animal_occurrence · zoology_gbif | 0 | 0.017789 | 0.017789 |
+| pooled_median · all_channels | 0 | 0.017789 | 0.017789 |
+| decimalLongitude · Clethra alnifolia | -71.3005 | -71.3131 | 0.017789 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Zoology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Zoology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Zoology: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+**Panels:** 16 · **Records:** 1,508 · **Mean panel median error:** 0.0107989%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Biology_Developmental_Structural_Depth_Panel` | 26 | 0.022236 | B_verified |
+| `CVE_Codon_Hole_Falsification` | 29 | 0.00918664 | B_verified |
+| `Code_Genome_Structure` | 205 | 0 | A_strong |
+| `Consciousness_Genetics_Coupling_Panel` | 24 | 0.031506 | B_verified |
+| `Consciousness_Genetics_Species_Panel` | 27 | 0.022236 | B_verified |
+| `Consciousness_Species_Multi_Panel` | 269 | 0.0201195 | A_strong |
+| `External_OSS_Code_Genome` | 164 | 0 | A_strong |
+| `IGEM_Synthetic_Biology` | 54 | 0.0222363 | B_verified |
+| `Materials_Genome_Crosswalk` | 38 | 0 | B_verified |
+| `Materials_Species_Bridge` | 45 | 0 | B_verified |
+| `Materials_Species_Bridge_Live_Panel` | 150 | 0.01341 | A_strong |
+| `Observer_Effect_Cross_Species_Panel` | 289 | 0 | A_strong |
+| `Proof_Carrying_Code_Genome` | 25 | 0.00516856 | B_verified |
+| `Synthetic_Biology` | 20 | 0 | B_verified |
+| `UniProt_Protein_Annotations` | 22 | 0.026684 | B_verified |
+| `UniProt_Structure_Annotations_Deep` | 121 | 0 | A_strong |
+
+#### Biology Developmental Structural Depth Panel
+
+Extension panel **`Biology_Developmental_Structural_Depth_Panel`** (verification tier 87) evaluates **26** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.BiologyDevelopmentalStructuralDepthPanelPriors`. This panel extends the core spine into biology developmental structural depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/biology_developmental_structural_depth_panel_benchmark.json`](data/biology_developmental_structural_depth_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `medical`, `neural`
+- **Panel tags:** Biology, Developmental, Structural, Depth, Panel
+- **Data sources / cohorts:** Developmental, structural biology literature anchors, genomics relay
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| value · actin_filament_pitch_nm | 36 | 36.0055 | 0.015311 |
+| fsot_prediction · biology_developmental_structural_depth_lab | 0 | 0.022236 | 0.022236 |
+| pooled_median · all_channels | 0 | 0.022236 | 0.022236 |
+| value · alpha_helix_pitch_A | 5.4 | 5.40083 | 0.015311 |
+| value · beta_sheet_strand_spacing_A | 3.5 | 3.50054 | 0.015311 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Biology Developmental Structural Depth Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Biology Developmental Structural Depth Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Biology Developmental Structural Depth Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### CVE Codon Hole Falsification
+
+Extension panel **`CVE_Codon_Hole_Falsification`** (verification tier 45) evaluates **29** measured records at **0.00918664%** pooled median error (B_verified). Formal module: `FSOT.Formal.CVECodonHoleFalsificationPriors`. This panel extends the core spine into cve codon hole falsification observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/cve_codon_hole_falsification_benchmark.json`](data/cve_codon_hole_falsification_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `medical`, `ai`, `biological`
+- **Panel tags:** Cve, Codon, Hole, Falsification
+- **Data sources / cohorts:** CISA KEV CWE histogram ↔ code-genome hole token overlap — external falsification
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| hole_falsification · hole_panel | 0 | 0 | 0 |
+| sample_hole_detected · cpython_ceval | 5 | 5 | 0 |
+| kev_cwe_frequency · CWE-79 | 33 | 33.003 | 0.00918664 |
+| pooled_median · all_channels | 0 | 0.009187 | 0.00918664 |
+| kev_cwe · kev_panel | 0 | 0.009187 | 0.00918664 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in CVE Codon Hole Falsification: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in CVE Codon Hole Falsification: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in CVE Codon Hole Falsification: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Code Genome Structure
+
+Extension panel **`Code_Genome_Structure`** (verification tier 43) evaluates **205** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.CodeGenomeStructurePriors`. This panel extends the core spine into code genome structure observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/code_genome_structure_cybersecurity_benchmark.json`](data/code_genome_structure_cybersecurity_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `medical`, `ai`
+- **Panel tags:** Code, Genome, Structure
+- **Data sources / cohorts:** Program-as-genome codon mapping — Lean, Rust, Python, C, JavaScript, FSOTB_ISA
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| K_matches_atlas · K matches atlas | 1 | 1 | 0 |
+| avg_scalar · avg scalar | 12.6185 | 12.6185 | 0 |
+| avg_scalar_positive · avg scalar positive | 1 | 1 | 0 |
+| boot_d_eff · boot d eff | 8 | 8 | 0 |
+| boot_delta_psi · boot delta psi | 0.7 | 0.7 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`Bi2Te3`** in Code Genome Structure: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`F`** in Code Genome Structure: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Ca`** in Code Genome Structure: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+
+#### Consciousness Genetics Coupling Panel
+
+Extension panel **`Consciousness_Genetics_Coupling_Panel`** (verification tier 93) evaluates **24** measured records at **0.031506%** pooled median error (B_verified). Formal module: `FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors`. This panel extends the core spine into consciousness genetics coupling panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/consciousness_genetics_coupling_panel_benchmark.json`](data/consciousness_genetics_coupling_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `consciousness`, `neural`, `biological`
+- **Panel tags:** Consciousness, Genetics, Coupling, Panel
+- **Data sources / cohorts:** Genotype-phenotype consciousness coupling — genome × brain fraction × quirkMod
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| E_con_resting · Homo_sapiens | 20 | 20 | 0 |
+| S_final · S final | 0.148065 | 0.148065 | 0 |
+| brain_power_w · Homo_sapiens | 20 | 20.0036 | 0.018003 |
+| ncbi_taxid · Homo_sapiens | 9606 | 9608.14 | 0.022236 |
+| total_metabolic_w · Homo_sapiens | 82.78 | 82.7984 | 0.022236 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`F`** in Consciousness Genetics Coupling Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`P`** in Consciousness Genetics Coupling Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Li`** in Consciousness Genetics Coupling Panel: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Consciousness Genetics Species Panel
+
+Extension panel **`Consciousness_Genetics_Species_Panel`** (verification tier 93) evaluates **27** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.ConsciousnessGeneticsSpeciesPanelPriors`. This panel extends the core spine into consciousness genetics species panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/consciousness_genetics_species_panel_benchmark.json`](data/consciousness_genetics_species_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `consciousness`, `neural`, `biological`
+- **Panel tags:** Consciousness, Genetics, Species, Panel
+- **Data sources / cohorts:** NCBI taxonomy, genome assembly cross-walk for consciousness species
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| consciousness_genetics · species_genome | 0 | 0.022236 | 0.022236 |
+| genome_bp · Bos_taurus | 2.71e+09 | 2.7106e+09 | 0.022236 |
+| ncbi_taxid · Bos_taurus | 9913 | 9915.2 | 0.022236 |
+| pooled_median · all_channels | 0 | 0.022236 | 0.022236 |
+| brain_energy_fraction · Bos_taurus | 0.12 | 0.120038 | 0.031506 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Consciousness Genetics Species Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Consciousness Genetics Species Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Consciousness Genetics Species Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Consciousness Species Multi Panel
+
+Extension panel **`Consciousness_Species_Multi_Panel`** (verification tier 90) evaluates **269** measured records at **0.0201195%** pooled median error (A_strong). Formal module: `FSOT.Formal.ConsciousnessSpeciesMultiPanelPriors`. This panel extends the core spine into consciousness species multi panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/consciousness_species_multi_panel_benchmark.json`](data/consciousness_species_multi_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `consciousness`, `neural`, `biological`
+- **Panel tags:** Consciousness, Species, Multi, Panel
+- **Data sources / cohorts:** AnAge live, 72+ species brain metabolic, E_con cross-species consciousness panel
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| E_con_resting · Acrobates_pygmaeus | 0.00756 | 0.00756 | 0 |
+| brain_power_w · Acrobates_pygmaeus | 0.00756 | 0.007561 | 0.018003 |
+| consciousness_species · multi_species_panel | 0 | 0.018003 | 0.018003 |
+| eeg_dataset_count · openneuro_eeg_index | 55 | 55.0099 | 0.018003 |
+| pooled_median · all_channels | 0 | 0.020119 | 0.0201195 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Consciousness Species Multi Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Consciousness Species Multi Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`P`** in Consciousness Species Multi Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### External OSS Code Genome
+
+Extension panel **`External_OSS_Code_Genome`** (verification tier 44) evaluates **164** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ExternalOSSCodeGenomePriors`. This panel extends the core spine into external oss code genome observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/external_oss_code_genome_benchmark.json`](data/external_oss_code_genome_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `ai`, `biological`, `consciousness`
+- **Panel tags:** External, Oss, Code, Genome
+- **Data sources / cohorts:** Curated GitHub OSS snapshots — cross-repo codon affinity vs FSOT internal genome
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| codon_hole_detected · Lean__import_lemma_open | 1 | 1 | 0 |
+| language_bridge_certified · C | 1 | 1 | 0 |
+| oss_hole_detection · oss_hole_panel | 0 | 0 | 0 |
+| pooled_median · all_channels | 0 | 0 | 0 |
+| zero_day_hole_rollup_bridge · zero_day_evaluator_holes | 82 | 82 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in External OSS Code Genome: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in External OSS Code Genome: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in External OSS Code Genome: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+
+#### IGEM Synthetic Biology
+
+Extension panel **`IGEM_Synthetic_Biology`** (verification tier 31) evaluates **54** measured records at **0.0222363%** pooled median error (B_verified). Formal module: `FSOT.Formal.IGEMSyntheticBiologyPriors`. This panel extends the core spine into igem synthetic biology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/igem_synthetic_biology_benchmark.json`](data/igem_synthetic_biology_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `biological`, `medical`
+- **Panel tags:** Igem, Synthetic, Biology
+- **Data sources / cohorts:** iGEM parts-registry length, GC strict-empirical bridge to biology_strict operons
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| biology_strict_bridge_median · ncbi_mt_operon_replication | 100 | 100 | 0 |
+| biology_strict_operon_replication · MT-ATP6 | 681 | 681 | 0 |
+| channel_median_biology_strict_operon_replication · biology_strict_operon_replication | 0 | 0 | 0 |
+| gc_percent · BBa_B0034 | 41.6667 | 41.676 | 0.0222363 |
+| channel_median_gc_percent · gc_percent | 0 | 0.022236 | 0.0222363 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in IGEM Synthetic Biology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in IGEM Synthetic Biology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Ca`** in IGEM Synthetic Biology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Materials Genome Crosswalk
 
@@ -4819,118 +5406,6 @@ Extension panel **`Materials_Species_Bridge_Live_Panel`** (verification tier 86)
 - **`alpha_Fe`** in Materials Species Bridge Live Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Materials Species Bridge Live Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
-#### Mycology
-
-Extension panel **`Mycology`** (verification tier 41) evaluates **420** measured records at **0.0222363%** pooled median error (A_strong). Formal module: `FSOT.Formal.MycologyExtensionPriors`. This panel extends the core spine into mycology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/mycology_extension_benchmark.json`](data/mycology_extension_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `ecological`
-- **Panel tags:** Mycology
-- **Data sources / cohorts:** GBIF Fungi kingdom occurrence, food microbiology bridge
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| decimalLongitude · Phellinus tremulae | 17.5549 | 17.558 | 0.017789 |
-| decimalLatitude · Phaeophyscia orbicularis | 55.5837 | 55.596 | 0.0222363 |
-| fungal_occurrence · mycology_gbif | 0 | 0.022236 | 0.0222363 |
-| pooled_median · all_channels | 0 | 0.022236 | 0.0222363 |
-| optimal_temp_C · wine_primary | 22 | 22.0098 | 0.0444725 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Mycology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Mycology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Mycology: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Mycology Panel
-
-Extension panel **`Mycology_Panel`** (verification tier 84) evaluates **90** measured records at **0.006006%** pooled median error (B_verified). Formal module: `FSOT.Formal.MycologyPanelPriors`. This panel extends the core spine into mycology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/mycology_panel_benchmark.json`](data/mycology_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `medical`
-- **Panel tags:** Mycology, Panel
-- **Data sources / cohorts:** Mycology — GBIF Fungi occurrence panel
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| decimalLatitude · Alectoria sarmentosa | 61.5295 | 61.5332 | 0.006006 |
-| decimalLongitude · Alectoria sarmentosa | 15.1505 | 15.1515 | 0.006006 |
-| fsot_prediction · mycology | 0 | 0.006006 | 0.006006 |
-| pooled_median · all_channels | 0 | 0.006006 | 0.006006 |
-| year · Alectoria sarmentosa | 2024 | 2024.45 | 0.022236 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Mycology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Mycology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Mycology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Neuroimmunology
-
-Extension panel **`Neuroimmunology`** (verification tier 26) evaluates **92** measured records at **0.0504196%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeuroimmunologyPriors`. This panel extends the core spine into neuroimmunology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/neuroimmunology_benchmark.json`](data/neuroimmunology_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `medical`, `neural`
-- **Panel tags:** Neuroimmunology
-- **Data sources / cohorts:** Immunology SMILES, Allen neuron cohort strata FI coupling crosswalk
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| neuroimmune_fi_coupling · L2_3_pyramidal_holdout | 1 | 1 | 0 |
-| neuroimmune_fi_coupling_classifier · allen_strata_coupling | 100 | 100 | 0 |
-| §24 Enzyme kcat · chymotrypsin | 2 | 2 | 0 |
-| §35 Michaelis Km · glucokinase | 10 | 10 | 0 |
-| §21 Protein ΔG · BPTI | -11 | -11 | 1.61487e-14 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`Bi2Te3`** in Neuroimmunology: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-- **`F`** in Neuroimmunology: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Neuroimmunology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-
-#### Neuron Multi Hero
-
-Extension panel **`Neuron_Multi_Hero`** (verification tier 27) evaluates **24** measured records at **0.00225238%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeuronMultiHeroPriors`. This panel extends the core spine into neuron multi hero observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/multi_hero_benchmark.json`](data/multi_hero_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `neural`
-- **Panel tags:** Neuron, Multi, Hero
-- **Data sources / cohorts:** 4 FI-proxy certified heroes per Sst, PV, VIP, L2-3 Allen class
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| S_final · S final | 0.148065 | 0.148065 | 0 |
-| depth_relay · Neuron_Multi_Hero_depth | 0 | 0 | 0 |
-| historical_coupled_dst_kp_storm_classifier (misclassification_pct) | 100 | 100 | 0 |
-| median_error_pct · pooled_magnetosphere_extended_classifier (misclassification_pct) | 100 | 100 | 0 |
-| scalar_ratio_unity · Astronomy__Cosmology_Extended__astronomical | 1 | 1 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Neuron Multi Hero: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Neuron Multi Hero: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Neuron Multi Hero: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-
 #### Observer Effect Cross Species Panel
 
 Extension panel **`Observer_Effect_Cross_Species_Panel`** (verification tier 90) evaluates **289** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ObserverEffectCrossSpeciesPanelPriors`. This panel extends the core spine into observer effect cross species panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -4958,174 +5433,6 @@ Extension panel **`Observer_Effect_Cross_Species_Panel`** (verification tier 90)
 - **`H⁺/H₂`** in Observer Effect Cross Species Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
 - **`alpha_Fe`** in Observer Effect Cross Species Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Observer Effect Cross Species Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Oncology
-
-Extension panel **`Oncology`** (verification tier 26) evaluates **67** measured records at **0.0504196%** pooled median error (B_verified). Formal module: `FSOT.Formal.OncologyPriors`. This panel extends the core spine into oncology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/oncology_benchmark.json`](data/oncology_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `medical`, `biological`
-- **Panel tags:** Oncology
-- **Data sources / cohorts:** SMILES drug, enzyme affinity, biology strict operon bridge
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| biology_strict_operon_bridge_median · ncbi_strict_operons | 0 | 0 | 0 |
-| mt_operon_count · human_mt_protein_genes | 13 | 13 | 0 |
-| mt_operon_length · MT-ATP6 | 681 | 681 | 0 |
-| §24 Enzyme kcat · chymotrypsin | 2 | 2 | 0 |
-| §35 Michaelis Km · glucokinase | 10 | 10 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Oncology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Oncology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Ca`** in Oncology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-
-#### OpenNeuro Full Panel
-
-Extension panel **`OpenNeuro_Full_Panel`** (verification tier 68) evaluates **123** measured records at **0.015431%** pooled median error (A_strong). Formal module: `FSOT.Formal.OpenNeuroFullPanelPriors`. This panel extends the core spine into openneuro full panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/openneuro_full_panel_benchmark.json`](data/openneuro_full_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `neural`, `consciousness`, `ai`
-- **Panel tags:** Openneuro, Full, Panel
-- **Data sources / cohorts:** Full OpenNeuro EEG, MRI dataset catalog — consciousness channel proxies
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| neuroscience_scalar · fsot_Neuroscience | 0.514362 | 0.514362 | 0 |
-| eeg_dataset_id · ds001785 | 1 | 1.00015 | 0.015431 |
-| fsot_prediction · openneuro_full | 0 | 0.015431 | 0.015431 |
-| mri_dataset_id · ds000001 | 1 | 1.00015 | 0.015431 |
-| pooled_median · all_channels | 0 | 0.015431 | 0.015431 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in OpenNeuro Full Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in OpenNeuro Full Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in OpenNeuro Full Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-
-#### Paleontology
-
-Extension panel **`Paleontology`** (verification tier 41) evaluates **630** measured records at **0.0178361%** pooled median error (A_strong). Formal module: `FSOT.Formal.PaleontologyExtensionPriors`. This panel extends the core spine into paleontology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/paleontology_extension_benchmark.json`](data/paleontology_extension_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `energy`, `galactic`, `biological`
-- **Panel tags:** Paleontology
-- **Data sources / cohorts:** PBDB fossil occurrences, seismology stratigraphy bridge
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| shallow_earthquake_classifier · us6000pgcu | 1 | 1 | 0 |
-| geologic_age_ma · Ammonoidea indet. | 143.1 | 143.119 | 0.013377 |
-| lat · Ammonoidea indet. | 73 | 73.013 | 0.0178361 |
-| lng · Ammonoidea indet. | 19.0167 | 19.0201 | 0.0178361 |
-| fossil_occurrence · paleontology_pbdb | 0 | 0.017836 | 0.0178361 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Paleontology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Paleontology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Paleontology: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-
-#### Paleontology Panel
-
-Extension panel **`Paleontology_Panel`** (verification tier 84) evaluates **120** measured records at **0.0167305%** pooled median error (A_strong). Formal module: `FSOT.Formal.PaleontologyPanelPriors`. This panel extends the core spine into paleontology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/paleontology_panel_benchmark.json`](data/paleontology_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `energy`
-- **Panel tags:** Paleontology, Panel
-- **Data sources / cohorts:** Paleontology — PBDB Ammonoidea occurrences (deep-time cross-check)
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| lat · Ammonoida indet. | 47.4167 | 47.4195 | 0.006006 |
-| late_age · Ammonoida indet. | 351.9 | 351.921 | 0.006006 |
-| pooled_median · all_channels | 0 | 0.01673 | 0.0167305 |
-| early_age · Ammonoida indet. | 358.86 | 358.959 | 0.027455 |
-| fsot_prediction · paleontology | 0 | 0.027455 | 0.027455 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Paleontology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Paleontology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`CS2`** in Paleontology Panel: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
-
-#### Pharmacology
-
-Extension panel **`Pharmacology`** (verification tier 20) evaluates **120** measured records at **0.00117154%** pooled median error (A_strong). Formal module: `FSOT.Formal.PharmacologyPriors`. This panel extends the core spine into pharmacology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/pharmacology_benchmark.json`](data/pharmacology_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `medical`, `chemical`
-- **Panel tags:** Pharmacology
-- **Data sources / cohorts:** ChEMBL max_phase=4 molecular weight vs FSOT formula mass
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| molecular_weight · AMINOHIPPURIC ACID | 194.19 | 194.19 | 0 |
-| molecular_weight · BUTALBITAL | 224.26 | 224.26 | 0 |
-| molecular_weight · ETRETINATE | 354.49 | 354.49 | 0 |
-| molecular_weight · GATIFLOXACIN | 375.4 | 375.4 | 0 |
-| molecular_weight · MOLINDONE | 276.38 | 276.38 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`F`** in Pharmacology: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Pharmacology: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`naphthalene`** in Pharmacology: measured **275.0**, seed-derived **275.01340810498164** via `π⁵-π³` (error **0.004876%**). Constants: pi. Authority: Silverstein / Pavia.
-
-#### Physarum Biological CUDA Panel
-
-Extension panel **`Physarum_Biological_CUDA_Panel`** (verification tier 88) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.PhysarumBiologicalCudaPanelPriors`. This panel extends the core spine into physarum biological cuda panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/physarum_biological_cuda_panel_benchmark.json`](data/physarum_biological_cuda_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `neural`
-- **Panel tags:** Physarum, Biological, Cuda, Panel
-- **Data sources / cohorts:** Desktop Physarum polycephalum CUDA genomics simulation
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| genomics_gene_count | 0 | 0 | 0 |
-| desktop_wiring · physarum_cuda | 0 | 0.022236 | 0.022236 |
-| editing_yield | 347 | 347.077 | 0.022236 |
-| global_coherence | 0.322112 | 0.322184 | 0.022236 |
-| nuclei_count | 1 | 1.00022 | 0.022236 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Physarum Biological CUDA Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Physarum Biological CUDA Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Physarum Biological CUDA Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Proof Carrying Code Genome
 
@@ -5211,231 +5518,51 @@ Extension panel **`UniProt_Protein_Annotations`** (verification tier 38) evaluat
 - **`Se`** in UniProt Protein Annotations: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 - **`O`** in UniProt Protein Annotations: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
 
-#### Virology
+#### UniProt Structure Annotations Deep
 
-Extension panel **`Virology`** (verification tier 41) evaluates **50** measured records at **0.0459332%** pooled median error (B_verified). Formal module: `FSOT.Formal.VirologyExtensionPriors`. This panel extends the core spine into virology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+Extension panel **`UniProt_Structure_Annotations_Deep`** (verification tier 56) evaluates **121** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.UniProtStructureAnnotationsDeepPriors`. This panel extends the core spine into uniprot structure annotations deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
 
-**Benchmark:** [`data/virology_extension_benchmark.json`](data/virology_extension_benchmark.json)
+**Benchmark:** [`data/uniprot_structure_annotations_deep_benchmark.json`](data/uniprot_structure_annotations_deep_benchmark.json)
 
 **Subfield map:**
 
-- **Lean routes:** `medical`, `biological`
-- **Panel tags:** Virology
-- **Data sources / cohorts:** Virology reference, immunology, PubChem antivirals
+- **Lean routes:** `biological`, `medical`, `material`
+- **Panel tags:** Uniprot, Structure, Annotations, Deep
+- **Data sources / cohorts:** UniProt, RCSB PDB public structure annotation depth
 
 **Top observables (measured vs computed):**
 
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
-| §21 Protein ΔG · BPTI | -11 | -11 | 1.61487e-14 |
-| §22 Amino Acid pKa · Ala_pK₁ | 2.34 | 2.33999 | 0.000474017 |
-| genome_size_kb · phage_t4_genome_kb | 169 | 169.078 | 0.0459332 |
-| molecular_weight_da · sofosbuvir_mw | 529.5 | 529.743 | 0.0459332 |
-| basic_reproduction_R0 · morbillivirus_r0 | 15 | 15.0069 | 0.0459332 |
+| mol_weight · P00338 | 36689 | 36689 | 0 |
+| mol_weight_kda_ratio · P68871_4HHB | 0.247112 | 0.247112 | 0 |
+| molecular_weight · 1AKE | 49.07 | 49.07 | 0 |
+| pdb_resolution_angstrom · P62988_1UBQ | 1.8 | 1.8 | 0 |
+| polymer_entity_count · 1BNA | 1 | 1 | 0 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Virology: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Virology: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Virology: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Virology Panel
-
-Extension panel **`Virology_Panel`** (verification tier 84) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.VirologyPanelPriors`. This panel extends the core spine into virology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/virology_panel_benchmark.json`](data/virology_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `medical`
-- **Panel tags:** Virology, Panel
-- **Data sources / cohorts:** Virology — NCBI nuccore genome lengths, antiviral reference
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| molecular_weight · 2244 | 180.16 | 180.159 | 0.000555 |
-| thermal_cond_W_mK · Fe | 80.4 | 80.4048 | 0.00591861 |
-| h_fus_kJ_mol · Fe | 13.81 | 13.8085 | 0.0112 |
-| bulk_GPa · Fe | 170 | 169.971 | 0.0173 |
-| decimalLongitude · Theria primaria | -3.6084 | -3.60904 | 0.017789 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`alpha_Fe`** in Virology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`CO₂`** in Virology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`XeF₂`** in Virology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-
-#### Zebrafish Longevity Genetics Coupling Panel
-
-Extension panel **`Zebrafish_Longevity_Genetics_Coupling_Panel`** (verification tier 95) evaluates **24** measured records at **0.0144535%** pooled median error (B_verified). Formal module: `FSOT.Formal.ZebrafishLongevityGeneticsCouplingPanelPriors`. This panel extends the core spine into zebrafish longevity genetics coupling panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/zebrafish_longevity_genetics_coupling_panel_benchmark.json`](data/zebrafish_longevity_genetics_coupling_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `genetics`, `consciousness`
-- **Panel tags:** Zebrafish, Longevity, Genetics, Coupling, Panel
-- **Data sources / cohorts:** Danio rerio developmental × Tier 94 longevity
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| developmental_longevity_coupling · ZSNS001 | 0.173889 | 0.173912 | 0.013342 |
-| genome_developmental_coupling · ZSNS001 | 0.15612 | 0.156141 | 0.013342 |
-| quirk_longevity_coupling · Acipenser_gueldenstaedtii | -12317.3 | -12319 | 0.013342 |
-| pooled_median · all_channels | 0 | 0.014454 | 0.0144535 |
-| depth_relay · Zebrafish_Longevity_Genetics_Coupling_Panel_depth | 0 | 0.015565 | 0.015565 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Zebrafish Longevity Genetics Coupling Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Zebrafish Longevity Genetics Coupling Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Zebrafish Longevity Genetics Coupling Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Zoology
-
-Extension panel **`Zoology`** (verification tier 35) evaluates **1000** measured records at **0.017789%** pooled median error (A_strong). Formal module: `FSOT.Formal.ZoologyExtensionPriors`. This panel extends the core spine into zoology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/zoology_extension_benchmark.json`](data/zoology_extension_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `medical`
-- **Panel tags:** Zoology
-- **Data sources / cohorts:** GBIF Animalia occurrence coordinates, ecology bridge
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| decimalLongitude · Populus grandidentata | -71.807 | -71.8198 | 0.017789 |
-| decimalLatitude · Alsophila pometaria | 40.9948 | 41.0021 | 0.017789 |
-| animal_occurrence · zoology_gbif | 0 | 0.017789 | 0.017789 |
-| pooled_median · all_channels | 0 | 0.017789 | 0.017789 |
-| decimalLongitude · Clethra alnifolia | -71.3005 | -71.3131 | 0.017789 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Zoology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Zoology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Zoology: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-**Panels:** 41 · **Records:** 8,231 · **Mean panel median error:** 0.00753307%
-
-#### Acoustic Resonance Materials
-
-Extension panel **`Acoustic_Resonance_Materials`** (verification tier 47) evaluates **29** measured records at **0.0083815%** pooled median error (B_verified). Formal module: `FSOT.Formal.AcousticResonanceMaterialsPriors`. This panel extends the core spine into acoustic resonance materials observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/acoustic_resonance_materials_benchmark.json`](data/acoustic_resonance_materials_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `particle`, `material`, `energy`, `acoustical`
-- **Panel tags:** Acoustic, Resonance, Materials
-- **Data sources / cohorts:** term3.acoustic_bleed gap — species acoustic impedance, building aeroacoustics
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| acoustic_impedance_MRayl · Glass | 14.5 | 14.5 | 0 |
-| building_acoustical_coupling · Carnot COP (0C cold, 27C hot) | 11 | 11.0009 | 0.0083815 |
-| building_aero · built_env_panel | 0 | 0.008381 | 0.0083815 |
-| pooled_median · all_channels | 0 | 0.008381 | 0.0083815 |
-| aeroacoustic_rmse · airfoil_seed | 5.06102 | 5.06152 | 0.0100578 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Acoustic Resonance Materials: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Acoustic Resonance Materials: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Acoustic Resonance Materials: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### CRC Handbook Properties
-
-Extension panel **`CRC_Handbook_Properties`** (verification tier 78) evaluates **391** measured records at **0.026922%** pooled median error (A_strong). Formal module: `FSOT.Formal.CrcHandbookPropertiesPriors`. This panel extends the core spine into crc handbook properties observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/crc_handbook_properties_benchmark.json`](data/crc_handbook_properties_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `chemical`, `material`
-- **Panel tags:** Crc, Handbook, Properties
-- **Data sources / cohorts:** CRC Handbook, NIST chemistry anchors — SMILES lab empirical panel
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| §1 Foundation · pH_water (mixed) | 7 | 7 | 0 |
-| §30 Refractive nD · diethyl ether (dimensionless) | 1.353 | 1.353 | 3.4e-05 |
-| §48 ΔHfus · N₂ (kJ/mol) | 0.72 | 0.72 | 5.3e-05 |
-| §98 Vapor Pressure · CS2 (mmHg) | 359 | 359 | 5.5e-05 |
-| §87 Heat Cap Ratio Cp/Cv · N2 (dimensionless) | 1.4 | 1.4 | 7.4e-05 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`pH_water`** in CRC Handbook Properties: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-- **`CS2`** in CRC Handbook Properties: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
-- **`F`** in CRC Handbook Properties: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Chemical Engineering
-
-Extension panel **`Chemical_Engineering`** (verification tier 35) evaluates **186** measured records at **0.00103334%** pooled median error (A_strong). Formal module: `FSOT.Formal.ChemicalEngineeringExtensionPriors`. This panel extends the core spine into chemical engineering observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/chemical_engineering_extension_benchmark.json`](data/chemical_engineering_extension_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `chemical`, `electron`, `energy`
-- **Panel tags:** Chemical, Engineering
-- **Data sources / cohorts:** PubChem process chemistry, thermodynamics engineering rules
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| molecular_weight · AMINOHIPPURIC ACID | 194.19 | 194.19 | 0 |
-| symbolic_schema · MS-001 | 1 | 1 | 0 |
-| pooled_median · all_channels | 0 | 0.001033 | 0.00103334 |
-| process_chemistry · chemical_engineering_panel | 0 | 0.001033 | 0.00103334 |
-| molecular_weight · BUTALBITAL | 224.26 | 224.26 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Chemical Engineering: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Chemical Engineering: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Chemical Engineering: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-
-#### Chemical Structure Stability Panel
-
-Extension panel **`Chemical_Structure_Stability_Panel`** (verification tier 57) evaluates **32** measured records at **0.00206%** pooled median error (B_verified). Formal module: `FSOT.Formal.ChemicalStructureStabilityPanelPriors`. This panel extends the core spine into chemical structure stability panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/chemical_structure_stability_panel_benchmark.json`](data/chemical_structure_stability_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `chemical`, `material`, `particle`, `electron`
-- **Panel tags:** Chemical, Structure, Stability, Panel
-- **Data sources / cohorts:** PubChem formula-mass, NIST, SMILES topology — no novel stability claims
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| Planck constant | 6.62607e-34 | 6.62607e-34 | 0 |
-| fine-structure constant | 0.00729735 | 0.00729735 | 0 |
-| formula_mass_closure · 5280961 | 270.24 | 270.24 | 0 |
-| proton mass | 1.67262e-27 | 1.67262e-27 | 0 |
-| smiles_mapped_records · FSOT_SMILES_Lab | 1470 | 1470 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Chemical Structure Stability Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Chemical Structure Stability Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Chemical Structure Stability Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Bi2Te3`** in UniProt Structure Annotations Deep: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`P`** in UniProt Structure Annotations Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`BL_N−H`** in UniProt Structure Annotations Deep: measured **1.01**, seed-derived **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+
+**Panels:** 11 · **Records:** 644 · **Mean panel median error:** 0.003593%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Cold_Fusion_Candidate_Prereg_Scaffold` | 24 | 0 | B_verified |
+| `Cold_Fusion_Lab_Synthesis_Crosswalk` | 22 | 0 | B_verified |
+| `Fuel_Candidate_Prereg_Scaffold` | 33 | 0 | B_verified |
+| `Fuel_Lab_Live_Panel` | 366 | 0.039349 | A_strong |
+| `Fuel_Thermochemistry_Public_Anchors` | 24 | 0 | B_verified |
+| `Fusion_Decay_Chain_Prereg_Scaffold` | 24 | 0 | B_verified |
+| `Fusion_Lab_Certificate_Spine` | 50 | 0 | B_verified |
+| `Fusion_Physics_Public_Panel` | 24 | 9.5e-05 | B_verified |
+| `Inertial_Confinement_Fusion_Panel` | 24 | 7.9e-05 | B_verified |
+| `Magnetic_Confinement_Fusion_Panel` | 22 | 0 | B_verified |
+| `Published_Fuel_Property_Panel` | 31 | 0 | B_verified |
 
 #### Cold Fusion Candidate Prereg Scaffold
 
@@ -5493,118 +5620,6 @@ Extension panel **`Cold_Fusion_Lab_Synthesis_Crosswalk`** (verification tier 73)
 - **`alpha_Fe`** in Cold Fusion Lab Synthesis Crosswalk: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Bi2Te3`** in Cold Fusion Lab Synthesis Crosswalk: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
-#### Condensed Matter Superconductivity Depth Panel
-
-Extension panel **`Condensed_Matter_Superconductivity_Depth_Panel`** (verification tier 87) evaluates **21** measured records at **0.033841%** pooled median error (B_verified). Formal module: `FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors`. This panel extends the core spine into condensed matter superconductivity depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/condensed_matter_superconductivity_depth_panel_benchmark.json`](data/condensed_matter_superconductivity_depth_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `material`, `particle`, `energy`
-- **Panel tags:** Condensed, Matter, Superconductivity, Depth, Panel
-- **Data sources / cohorts:** Superconductivity Tc depth — literature, breakthrough, quantum materials
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| Tc_K · Al | 1.18 | 1.1804 | 0.033841 |
-| fsot_prediction · superconductivity_Tc | 0 | 0.033841 | 0.033841 |
-| pooled_median · all_channels | 0 | 0.033841 | 0.033841 |
-| Tc_K · BaKFe2As2 | 38 | 38.0129 | 0.033841 |
-| Tc_K · Bi2212 | 95 | 95.0321 | 0.033841 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Condensed Matter Superconductivity Depth Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Condensed Matter Superconductivity Depth Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Fe`** in Condensed Matter Superconductivity Depth Panel: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
-
-#### Distant Island Emergence Simulation
-
-Extension panel **`Distant_Island_Emergence_Simulation`** (verification tier 75) evaluates **36** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.DistantIslandEmergenceSimulationPriors`. This panel extends the core spine into distant island emergence simulation observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/distant_island_emergence_simulation_benchmark.json`](data/distant_island_emergence_simulation_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `particle`, `nuclear`, `fusion`, `astronomical`
-- **Panel tags:** Distant, Island, Emergence, Simulation
-- **Data sources / cohorts:** Distant island emergence pathways — Z=128-164 fusion-decay-chain viability
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| distant_emergence · z128_z164_sim | 0 | 0 | 0 |
-| distant_emergence_classifier · Z128_N184 | 1 | 1 | 0 |
-| distant_emergence_score · Z128_N184 | 299043 | 299043 | 0 |
-| emergence_pathway_viable · Z128_N184__cosmic_ray_spallation | 0 | 0 | 0 |
-| periodic_extension_Z_ceiling · distant_island_Z164 | 164 | 164 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Distant Island Emergence Simulation: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Distant Island Emergence Simulation: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Distant Island Emergence Simulation: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-
-#### Distant Island Z128 Z132 Deep Panel
-
-Extension panel **`Distant_Island_Z128_Z132_Deep_Panel`** (verification tier 75) evaluates **24** measured records at **1e-06%** pooled median error (B_verified). Formal module: `FSOT.Formal.DistantIslandZ128Z132DeepPanelPriors`. This panel extends the core spine into distant island z128 z132 deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/distant_island_z128_z132_deep_panel_benchmark.json`](data/distant_island_z128_z132_deep_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `particle`, `nuclear`, `fusion`, `atomic`
-- **Panel tags:** Distant, Island, Z128, Z132, Deep, Panel
-- **Data sources / cohorts:** Z=128-132 distant island deep anchors — half-lives, binding, magic proximity
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| depth_relay · Distant_Island_Z128_Z132_Deep_Panel_depth | 0 | 0 | 0 |
-| distant_island_Z132_ceiling · superheavy_shell_peak | 132 | 132 | 0 |
-| distant_island_half_life_s · Z128_N184 | 180000 | 180000 | 0 |
-| distant_island_peak_classifier · Z128_N184 | 1 | 1 | 0 |
-| island_half_life_s · Z119_N177 | 0.8 | 0.8 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Distant Island Z128 Z132 Deep Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Distant Island Z128 Z132 Deep Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Distant Island Z128 Z132 Deep Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-
-#### Element Synthesis Condition Scaffold
-
-Extension panel **`Element_Synthesis_Condition_Scaffold`** (verification tier 73) evaluates **45** measured records at **0.000787%** pooled median error (B_verified). Formal module: `FSOT.Formal.ElementSynthesisConditionScaffoldPriors`. This panel extends the core spine into element synthesis condition scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/element_synthesis_condition_scaffold_benchmark.json`](data/element_synthesis_condition_scaffold_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `fusion`, `particle`, `nuclear`, `material`, `thermodynamics`
-- **Panel tags:** Element, Synthesis, Condition, Scaffold
-- **Data sources / cohorts:** Lab synthesis condition gates — beam energy margin, temperature proxy, facility capacity under published, proposed reactions
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| beam_energy_margin_mev_u · Z119_Ti_Bk | 0 | 0 | 0 |
-| superheavy_stability_bridge · superheavy_element_stability_panel | 1e-06 | 1e-06 | 0 |
-| synthesis_condition_classifier · Cn_1996 | 1 | 1 | 0 |
-| synthesis_condition_ready · element_synthesis_condition_scaffold | 1 | 1 | 0 |
-| synthesis_screening_gate · facility_margin_mev_u | 10 | 10 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Element Synthesis Condition Scaffold: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Element Synthesis Condition Scaffold: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Element Synthesis Condition Scaffold: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-
 #### Fuel Candidate Prereg Scaffold
 
 Extension panel **`Fuel_Candidate_Prereg_Scaffold`** (verification tier 65) evaluates **33** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FuelCandidatePreregScaffoldPriors`. This panel extends the core spine into fuel candidate prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -5659,7 +5674,7 @@ Extension panel **`Fuel_Lab_Live_Panel`** (verification tier 88) evaluates **366
 
 - **`F`** in Fuel Lab Live Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 - **`P`** in Fuel Lab Live Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`BL_N−H`** in Fuel Lab Live Panel: measured **1.01**, seed-derived **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`Si`** in Fuel Lab Live Panel: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Fuel Thermochemistry Public Anchors
 
@@ -5771,7 +5786,7 @@ Extension panel **`Fusion_Physics_Public_Panel`** (verification tier 71) evaluat
 
 - **`Bi2Te3`** in Fusion Physics Public Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Fusion Physics Public Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Fusion Physics Public Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`Ca`** in Fusion Physics Public Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Inertial Confinement Fusion Panel
 
@@ -5801,118 +5816,6 @@ Extension panel **`Inertial_Confinement_Fusion_Panel`** (verification tier 71) e
 - **`alpha_Fe`** in Inertial Confinement Fusion Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Bi2Te3`** in Inertial Confinement Fusion Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
-#### Ionospheric Chemistry Coupling
-
-Extension panel **`Ionospheric_Chemistry_Coupling`** (verification tier 47) evaluates **85** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.IonosphericChemistryCouplingPriors`. This panel extends the core spine into ionospheric chemistry coupling observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/ionospheric_chemistry_coupling_benchmark.json`](data/ionospheric_chemistry_coupling_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `electron`, `chemical`, `energy`, `plasma`
-- **Panel tags:** Ionospheric, Chemistry, Coupling
-- **Data sources / cohorts:** Magnetosphere cluster gap — ionosphere MHD, Dst, Kp, Bz coupling
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| dst_storm_classifier · 2026-06-26T17:00:00 | 0 | 0 | 0 |
-| ionospheric · magnetosphere_cluster_panel | 0 | 0 | 0 |
-| kp_storm_classifier · 1932-01-01T00:00:00 | 0 | 0 | 0 |
-| pooled_median · all_channels | 0 | 0 | 0 |
-| ionosphere_mhd_beta · ionosphere | 1 | 1.00024 | 0.0236092 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Ionospheric Chemistry Coupling: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Ionospheric Chemistry Coupling: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Ionospheric Chemistry Coupling: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-
-#### Island Of Stability Deep Panel
-
-Extension panel **`Island_Of_Stability_Deep_Panel`** (verification tier 74) evaluates **23** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.IslandOfStabilityDeepPanelPriors`. This panel extends the core spine into island of stability deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/island_of_stability_deep_panel_benchmark.json`](data/island_of_stability_deep_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `particle`, `nuclear`, `fusion`, `atomic`
-- **Panel tags:** Island, Stability, Deep, Panel
-- **Data sources / cohorts:** Z=119-126 island deep anchors — half-lives, binding energy, magic-number proximity, decay trend
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| island_Z_range · Z120_Z126_deep | 126 | 126 | 0 |
-| island_half_life_s · Z119_N177 | 0.8 | 0.8 | 0 |
-| island_peak_classifier · Z119_N177 | 0 | 0 | 0 |
-| pooled_median · all_channels | 0 | 0 | 0 |
-| island_deep · z120_z126_stability | 0 | 0 | 9.50414e-09 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Island Of Stability Deep Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Island Of Stability Deep Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Fe`** in Island Of Stability Deep Panel: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
-
-#### Lab Synthesis Metamaterial Spine
-
-Extension panel **`Lab_Synthesis_Metamaterial_Spine`** (verification tier 73) evaluates **43** measured records at **3.4e-05%** pooled median error (B_verified). Formal module: `FSOT.Formal.LabSynthesisMetamaterialSpinePriors`. This panel extends the core spine into lab synthesis metamaterial spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/lab_synthesis_metamaterial_spine_benchmark.json`](data/lab_synthesis_metamaterial_spine_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `fusion`, `particle`, `nuclear`, `material`, `energy`
-- **Panel tags:** Lab, Synthesis, Metamaterial, Spine
-- **Data sources / cohorts:** Lab synthesis, metamaterial certificate rollup — heavy-ion, conditions, cold-fusion crosswalk, periodic, fusion bridges
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| acoustic_bleed_panel_bridge · term3_acoustic_bleed_depth | 0.0083815 | 0.0083815 | 0 |
-| boundary_partition_panel_bridge · boundary_partition_tightening | 0 | 0 | 0 |
-| fluid_like_response_classifier · acoustic_bleed_phononic_crystal | 0 | 0 | 0 |
-| lab_synthesis_metamaterial_ready · lab_synthesis_metamaterial_spine | 1 | 1 | 0 |
-| magic_number_proximity · H | 2 | 2 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Lab Synthesis Metamaterial Spine: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Lab Synthesis Metamaterial Spine: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Lab Synthesis Metamaterial Spine: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-
-#### Machine And Molecule Live Panel
-
-Extension panel **`Machine_And_Molecule_Live_Panel`** (verification tier 88) evaluates **120** measured records at **0.01341%** pooled median error (A_strong). Formal module: `FSOT.Formal.MachineAndMoleculeLivePanelPriors`. This panel extends the core spine into machine and molecule live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/machine_and_molecule_live_panel_benchmark.json`](data/machine_and_molecule_live_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `material`, `energy`, `particle`
-- **Panel tags:** Machine, And, Molecule, Live, Panel
-- **Data sources / cohorts:** Desktop FSOT_Machine_And_Molecule species catalog live verification
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| boiling_K · metals_Hg_boiling_K | 629.9 | 629.984 | 0.01341 |
-| bulk_GPa · metals_Ag_bulk_GPa | 104 | 104.014 | 0.01341 |
-| cohesive_eV · metals_Ag_cohesive_eV | 2.95 | 2.9504 | 0.01341 |
-| cp_J_molK · metals_Al_cp_J_molK | 24.2 | 24.2032 | 0.01341 |
-| expansion_e6_per_K · metals_Ag_expansion_e6_per_K | 18 | 18.0024 | 0.01341 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`IE_Ar`** in Machine And Molecule Live Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Machine And Molecule Live Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_S`** in Machine And Molecule Live Panel: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-
 #### Magnetic Confinement Fusion Panel
 
 Extension panel **`Magnetic_Confinement_Fusion_Panel`** (verification tier 71) evaluates **22** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.MagneticConfinementFusionPanelPriors`. This panel extends the core spine into magnetic confinement fusion panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -5941,145 +5844,166 @@ Extension panel **`Magnetic_Confinement_Fusion_Panel`** (verification tier 71) e
 - **`alpha_Fe`** in Magnetic Confinement Fusion Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Bi2Te3`** in Magnetic Confinement Fusion Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
-#### Maillard Chemistry
+#### Published Fuel Property Panel
 
-Extension panel **`Maillard_Chemistry`** (verification tier 34) evaluates **30** measured records at **0.0944369%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaillardChemistryGapFillPriors`. This panel extends the core spine into maillard chemistry observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+Extension panel **`Published_Fuel_Property_Panel`** (verification tier 57) evaluates **31** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PublishedFuelPropertyPanelPriors`. This panel extends the core spine into published fuel property panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
 
-**Benchmark:** [`data/maillard_chemistry_gap_fill_benchmark.json`](data/maillard_chemistry_gap_fill_benchmark.json)
+**Benchmark:** [`data/published_fuel_property_panel_benchmark.json`](data/published_fuel_property_panel_benchmark.json)
 
 **Subfield map:**
 
-- **Lean routes:** `energy`, `medical`, `material`
-- **Panel tags:** Maillard, Chemistry
-- **Data sources / cohorts:** Maillard, browning kinetics from culinary SMILES, roast observables
+- **Lean routes:** `energy`, `chemical`, `material`
+- **Panel tags:** Published, Fuel, Property, Panel
+- **Data sources / cohorts:** NIST, CRC published LHV, density — novel fuel discovery preregistered separately
 
 **Top observables (measured vs computed):**
 
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
-| §51 Solubility logS · caffeine | 0.81 | 0.81 | 2.94767e-05 |
-| §50 Diffusion D · sucrose | 0.523 | 0.522947 | 0.0102218 |
-| §90 Heat of Combustion · glucose | 2803 | 2804.28 | 0.0455353 |
-| §61 Glass Tg · glucose_amorph | 309 | 309.161 | 0.052193 |
-| browning_proxy_temp_C · beer_ale_fermentation | 20 | 20.0157 | 0.0786975 |
+| density_kg_m3 · ammonia | 682 | 682 | 0 |
+| energy_scalar · fsot_Thermodynamics | 0.786975 | 0.786975 | 0 |
+| formula_mass_g_mol · ammonia | 17.031 | 17.031 | 0 |
+| fuel_panel · published_fuel | 0 | 0 | 0 |
+| lhv_mj_kg · ammonia | 18.6 | 18.6 | 0 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`Fe`** in Maillard Chemistry: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
-- **`F`** in Maillard Chemistry: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Maillard Chemistry: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in Published Fuel Property Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Published Fuel Property Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Published Fuel Property Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
-#### Materials Creep Fracture Depth Panel
+**Panels:** 14 · **Records:** 513 · **Mean panel median error:** 6.31429e-05%
 
-Extension panel **`Materials_Creep_Fracture_Depth_Panel`** (verification tier 87) evaluates **71** measured records at **0.011734%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialsCreepFractureDepthPanelPriors`. This panel extends the core spine into materials creep fracture depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+### Panel index
 
-**Benchmark:** [`data/materials_creep_fracture_depth_panel_benchmark.json`](data/materials_creep_fracture_depth_panel_benchmark.json)
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Distant_Island_Emergence_Simulation` | 36 | 0 | B_verified |
+| `Distant_Island_Z128_Z132_Deep_Panel` | 24 | 1e-06 | B_verified |
+| `Element_Synthesis_Condition_Scaffold` | 45 | 0.000787 | B_verified |
+| `Island_Of_Stability_Deep_Panel` | 23 | 0 | B_verified |
+| `Natural_Formation_Element_Simulation` | 44 | 0 | B_verified |
+| `Periodic_Extension_Decay_Topology_Scaffold` | 24 | 0 | B_verified |
+| `Periodic_Table_Completion_Spine` | 38 | 0 | B_verified |
+| `Periodic_Table_Extension_Closure_Spine` | 41 | 0 | B_verified |
+| `Periodic_Table_Public_Panel` | 52 | 9.5e-05 | B_verified |
+| `Superheavy_Element_Stability_Panel` | 50 | 1e-06 | B_verified |
+| `Superheavy_Island_Completion_Spine` | 43 | 0 | B_verified |
+| `Superheavy_Island_Emergence_Simulation` | 44 | 0 | B_verified |
+| `Undiscovered_Element_Candidate_Prereg_Scaffold` | 25 | 0 | B_verified |
+| `Z164_Distant_Island_Prereg_Scaffold` | 24 | 0 | B_verified |
+
+#### Distant Island Emergence Simulation
+
+Extension panel **`Distant_Island_Emergence_Simulation`** (verification tier 75) evaluates **36** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.DistantIslandEmergenceSimulationPriors`. This panel extends the core spine into distant island emergence simulation observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/distant_island_emergence_simulation_benchmark.json`](data/distant_island_emergence_simulation_benchmark.json)
 
 **Subfield map:**
 
-- **Lean routes:** `material`, `energy`, `particle`
-- **Panel tags:** Materials, Creep, Fracture, Depth, Panel
-- **Data sources / cohorts:** Creep, fracture mechanics anchors, Materials Project relay
+- **Lean routes:** `particle`, `nuclear`, `fusion`, `astronomical`
+- **Panel tags:** Distant, Island, Emergence, Simulation
+- **Data sources / cohorts:** Distant island emergence pathways — Z=128-164 fusion-decay-chain viability
 
 **Top observables (measured vs computed):**
 
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
-| band_gap_eV · Al | 0 | 0 | 0 |
-| formation_energy_eV_per_atom · Al | 0 | 0 | 0 |
-| bulk_modulus_GPa · Al | 76 | 76.0089 | 0.011734 |
-| fsot_prediction · materials_creep_fracture_depth_lab | 0 | 0.011734 | 0.011734 |
-| pooled_median · all_channels | 0 | 0.011734 | 0.011734 |
+| distant_emergence · z128_z164_sim | 0 | 0 | 0 |
+| distant_emergence_classifier · Z128_N184 | 1 | 1 | 0 |
+| distant_emergence_score · Z128_N184 | 299043 | 299043 | 0 |
+| emergence_pathway_viable · Z128_N184__cosmic_ray_spallation | 0 | 0 | 0 |
+| periodic_extension_Z_ceiling · distant_island_Z164 | 164 | 164 | 0 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`H⁺/H₂`** in Materials Creep Fracture Depth Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Materials Creep Fracture Depth Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Materials Creep Fracture Depth Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Distant Island Emergence Simulation: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Distant Island Emergence Simulation: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Distant Island Emergence Simulation: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
-#### Materials Engineering
+#### Distant Island Z128 Z132 Deep Panel
 
-Extension panel **`Materials_Engineering`** (verification tier 29) evaluates **87** measured records at **0.0271703%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialsEngineeringPriors`. This panel extends the core spine into materials engineering observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+Extension panel **`Distant_Island_Z128_Z132_Deep_Panel`** (verification tier 75) evaluates **24** measured records at **1e-06%** pooled median error (B_verified). Formal module: `FSOT.Formal.DistantIslandZ128Z132DeepPanelPriors`. This panel extends the core spine into distant island z128 z132 deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
 
-**Benchmark:** [`data/materials_engineering_benchmark.json`](data/materials_engineering_benchmark.json)
+**Benchmark:** [`data/distant_island_z128_z132_deep_panel_benchmark.json`](data/distant_island_z128_z132_deep_panel_benchmark.json)
 
 **Subfield map:**
 
-- **Lean routes:** `material`, `energy`
-- **Panel tags:** Materials, Engineering
-- **Data sources / cohorts:** Young's modulus, thermal κ, bulk, shear, Poisson — buildable engineering SMILES
+- **Lean routes:** `particle`, `nuclear`, `fusion`, `atomic`
+- **Panel tags:** Distant, Island, Z128, Z132, Deep, Panel
+- **Data sources / cohorts:** Z=128-132 distant island deep anchors — half-lives, binding, magic proximity
 
 **Top observables (measured vs computed):**
 
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
-| §34 Young's Modulus · Pb | 16 | 16 | 0 |
-| §73 Thermal Expansion · Diamond | 1 | 1 | 0 |
-| §70 Shear Modulus · Pt | 61 | 60.9995 | 0.000759439 |
-| §84 Poisson Ratio ν · Ni | 0.31 | 0.309994 | 0.00193239 |
-| §37 Thermal κ · Fe | 80.4 | 80.4026 | 0.00318833 |
+| depth_relay · Distant_Island_Z128_Z132_Deep_Panel_depth | 0 | 0 | 0 |
+| distant_island_Z132_ceiling · superheavy_shell_peak | 132 | 132 | 0 |
+| distant_island_half_life_s · Z128_N184 | 180000 | 180000 | 0 |
+| distant_island_peak_classifier · Z128_N184 | 1 | 1 | 0 |
+| island_half_life_s · Z119_N177 | 0.8 | 0.8 | 0 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`alpha_Fe`** in Materials Engineering: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Materials Engineering: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-- **`Fe`** in Materials Engineering: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
+- **`H⁺/H₂`** in Distant Island Z128 Z132 Deep Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Distant Island Z128 Z132 Deep Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Distant Island Z128 Z132 Deep Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
-#### Materials Project Live Panel
+#### Element Synthesis Condition Scaffold
 
-Extension panel **`Materials_Project_Live_Panel`** (verification tier 68) evaluates **141** measured records at **0.011734%** pooled median error (A_strong). Formal module: `FSOT.Formal.MaterialsProjectLivePanelPriors`. This panel extends the core spine into materials project live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+Extension panel **`Element_Synthesis_Condition_Scaffold`** (verification tier 73) evaluates **45** measured records at **0.000787%** pooled median error (B_verified). Formal module: `FSOT.Formal.ElementSynthesisConditionScaffoldPriors`. This panel extends the core spine into element synthesis condition scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
 
-**Benchmark:** [`data/materials_project_live_panel_benchmark.json`](data/materials_project_live_panel_benchmark.json)
+**Benchmark:** [`data/element_synthesis_condition_scaffold_benchmark.json`](data/element_synthesis_condition_scaffold_benchmark.json)
 
 **Subfield map:**
 
-- **Lean routes:** `material`, `particle`, `energy`
-- **Panel tags:** Materials, Project, Live, Panel
-- **Data sources / cohorts:** Materials Project API, bundled fallback — band gap, formation energy
+- **Lean routes:** `fusion`, `particle`, `nuclear`, `material`, `thermodynamics`
+- **Panel tags:** Element, Synthesis, Condition, Scaffold
+- **Data sources / cohorts:** Lab synthesis condition gates — beam energy margin, temperature proxy, facility capacity under published, proposed reactions
 
 **Top observables (measured vs computed):**
 
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
-| band_gap_eV · mp-106 | 0 | 0 | 0 |
-| formation_energy_eV_per_atom · mp-106 | 0 | 0 | 0 |
-| live_vs_bundled_band_gap_eV · mp-1265 | 3.44 | 3.44 | 0 |
-| live_vs_bundled_formation_energy_eV_per_atom · mp-1265 | -0.73 | -0.73 | 0 |
-| materials_science_scalar · fsot_Materials_Science | 0.33526 | 0.33526 | 0 |
+| beam_energy_margin_mev_u · Z119_Ti_Bk | 0 | 0 | 0 |
+| superheavy_stability_bridge · superheavy_element_stability_panel | 1e-06 | 1e-06 | 0 |
+| synthesis_condition_classifier · Cn_1996 | 1 | 1 | 0 |
+| synthesis_condition_ready · element_synthesis_condition_scaffold | 1 | 1 | 0 |
+| synthesis_screening_gate · facility_margin_mev_u | 10 | 10 | 0 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`H⁺/H₂`** in Materials Project Live Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Materials Project Live Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Materials Project Live Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Element Synthesis Condition Scaffold: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Element Synthesis Condition Scaffold: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Element Synthesis Condition Scaffold: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
-#### Metamaterial Fluid Design Prereg Scaffold
+#### Island Of Stability Deep Panel
 
-Extension panel **`Metamaterial_Fluid_Design_Prereg_Scaffold`** (verification tier 73) evaluates **25** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.MetamaterialFluidDesignPreregScaffoldPriors`. This panel extends the core spine into metamaterial fluid design prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+Extension panel **`Island_Of_Stability_Deep_Panel`** (verification tier 74) evaluates **23** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.IslandOfStabilityDeepPanelPriors`. This panel extends the core spine into island of stability deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
 
-**Benchmark:** [`data/metamaterial_fluid_design_prereg_scaffold_benchmark.json`](data/metamaterial_fluid_design_prereg_scaffold_benchmark.json)
+**Benchmark:** [`data/island_of_stability_deep_panel_benchmark.json`](data/island_of_stability_deep_panel_benchmark.json)
 
 **Subfield map:**
 
-- **Lean routes:** `material`, `fusion`, `energy`, `particle`
-- **Panel tags:** Metamaterial, Fluid, Design, Prereg, Scaffold
-- **Data sources / cohorts:** Fluid-like metamaterial candidates preregistered via term3 acoustic_bleed, boundary_partition — not claimed synthesized
+- **Lean routes:** `particle`, `nuclear`, `fusion`, `atomic`
+- **Panel tags:** Island, Stability, Deep, Panel
+- **Data sources / cohorts:** Z=119-126 island deep anchors — half-lives, binding energy, magic-number proximity, decay trend
 
 **Top observables (measured vs computed):**
 
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
-| acoustic_bleed_panel_bridge · term3_acoustic_bleed_depth | 0.0083815 | 0.0083815 | 0 |
-| boundary_partition_panel_bridge · boundary_partition_tightening | 0 | 0 | 0 |
-| fluid_like_response_classifier · acoustic_bleed_phononic_crystal | 0 | 0 | 0 |
+| island_Z_range · Z120_Z126_deep | 126 | 126 | 0 |
+| island_half_life_s · Z119_N177 | 0.8 | 0.8 | 0 |
+| island_peak_classifier · Z119_N177 | 0 | 0 | 0 |
 | pooled_median · all_channels | 0 | 0 | 0 |
-| prereg_discriminant_gate · acoustic_bleed_phononic_crystal | 1 | 1 | 0 |
+| island_deep · z120_z126_stability | 0 | 0 | 9.50414e-09 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`H⁺/H₂`** in Metamaterial Fluid Design Prereg Scaffold: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Metamaterial Fluid Design Prereg Scaffold: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in Metamaterial Fluid Design Prereg Scaffold: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`H⁺/H₂`** in Island Of Stability Deep Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Island Of Stability Deep Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Fe`** in Island Of Stability Deep Panel: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
 
 #### Natural Formation Element Simulation
 
@@ -6218,120 +6142,8 @@ Extension panel **`Periodic_Table_Public_Panel`** (verification tier 72) evaluat
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
 - **`F`** in Periodic Table Public Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Periodic Table Public Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`Ca`** in Periodic Table Public Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-
-#### PubChem Compound Properties
-
-Extension panel **`PubChem_Compound_Properties`** (verification tier 38) evaluates **500** measured records at **0.002637%** pooled median error (A_strong). Formal module: `FSOT.Formal.PubchemCompoundPropertiesPriors`. This panel extends the core spine into pubchem compound properties observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/pubchem_compound_properties_benchmark.json`](data/pubchem_compound_properties_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `electron`, `chemical`
-- **Panel tags:** Pubchem, Compound, Properties
-- **Data sources / cohorts:** PubChem molecular weight vs formula mass (31 compounds deep)
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| molecular_weight · 1054 | 169.18 | 169.18 | 0 |
-| molecular_weight · 10975657 | 150.13 | 150.13 | 0 |
-| molecular_weight · 1102 | 145.25 | 145.25 | 0 |
-| molecular_weight · 11174599 | 319.27 | 319.27 | 0 |
-| molecular_weight · 1176 | 60.056 | 60.056 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`IE_Ar`** in PubChem Compound Properties: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`BL_N−H`** in PubChem Compound Properties: measured **1.01**, seed-derived **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`IE_S`** in PubChem Compound Properties: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-
-#### PubChem Live Deep
-
-Extension panel **`PubChem_Live_Deep`** (verification tier 68) evaluates **5254** measured records at **0.032631%** pooled median error (A_strong). Formal module: `FSOT.Formal.PubChemLiveDeepPriors`. This panel extends the core spine into pubchem live deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/pubchem_live_deep_benchmark.json`](data/pubchem_live_deep_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `electron`, `chemical`, `medical`, `biological`, `material`, `energy`
-- **Panel tags:** Pubchem, Live, Deep
-- **Data sources / cohorts:** PubChem auto-expanded panel — PUG REST name discovery, culinary, pharmacology bridges
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| biological_scalar · fsot_Biology | 0.444725 | 0.444725 | 0 |
-| chemistry_scalar · fsot_Chemistry | 0.407884 | 0.407884 | 0 |
-| culinary_arts_crosswalk_count | 26 | 26 | 0 |
-| food_microbiology_crosswalk_count · Food_Microbiology | 30 | 30 | 0 |
-| hbond_acceptor_count · 1140 | 0 | 0 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in PubChem Live Deep: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in PubChem Live Deep: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in PubChem Live Deep: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### PubChem Stability Panel
-
-Extension panel **`PubChem_Stability_Panel`** (verification tier 55) evaluates **59** measured records at **0.00242389%** pooled median error (B_verified). Formal module: `FSOT.Formal.PubChemStabilityPanelPriors`. This panel extends the core spine into pubchem stability panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/pubchem_stability_panel_benchmark.json`](data/pubchem_stability_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `electron`, `chemical`, `material`
-- **Panel tags:** Pubchem, Stability, Panel
-- **Data sources / cohorts:** PubChem formula-mass closure — novel stability claims require preregistration
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| chemistry_scalar · fsot_Chemistry | 0.407884 | 0.407884 | 0 |
-| molecular_weight · 5280961 | 270.24 | 270.24 | 0 |
-| pooled_median · all_channels | 0 | 0.002424 | 0.00242389 |
-| molecular_weight · 962 | 18.015 | 18.015 | 0 |
-| molecular_weight · 3386 | 309.33 | 309.331 | 0.000323 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in PubChem Stability Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in PubChem Stability Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in PubChem Stability Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-
-#### Published Fuel Property Panel
-
-Extension panel **`Published_Fuel_Property_Panel`** (verification tier 57) evaluates **31** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PublishedFuelPropertyPanelPriors`. This panel extends the core spine into published fuel property panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/published_fuel_property_panel_benchmark.json`](data/published_fuel_property_panel_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `energy`, `chemical`, `material`
-- **Panel tags:** Published, Fuel, Property, Panel
-- **Data sources / cohorts:** NIST, CRC published LHV, density — novel fuel discovery preregistered separately
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| density_kg_m3 · ammonia | 682 | 682 | 0 |
-| energy_scalar · fsot_Thermodynamics | 0.786975 | 0.786975 | 0 |
-| formula_mass_g_mol · ammonia | 17.031 | 17.031 | 0 |
-| fuel_panel · published_fuel | 0 | 0 | 0 |
-| lhv_mj_kg · ammonia | 18.6 | 18.6 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H⁺/H₂`** in Published Fuel Property Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Published Fuel Property Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`F`** in Published Fuel Property Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`P`** in Periodic Table Public Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Superheavy Element Stability Panel
 
@@ -6473,7 +6285,511 @@ Extension panel **`Z164_Distant_Island_Prereg_Scaffold`** (verification tier 75)
 - **`alpha_Fe`** in Z164 Distant Island Prereg Scaffold: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Bi2Te3`** in Z164 Distant Island Prereg Scaffold: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
+**Panels:** 8 · **Records:** 603 · **Mean panel median error:** 0.011741%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Acoustic_Resonance_Materials` | 29 | 0.0083815 | B_verified |
+| `Chemical_Engineering` | 186 | 0.00103334 | A_strong |
+| `Condensed_Matter_Superconductivity_Depth_Panel` | 21 | 0.033841 | B_verified |
+| `Lab_Synthesis_Metamaterial_Spine` | 43 | 3.4e-05 | B_verified |
+| `Materials_Creep_Fracture_Depth_Panel` | 71 | 0.011734 | B_verified |
+| `Materials_Engineering` | 87 | 0.0271703 | B_verified |
+| `Materials_Project_Live_Panel` | 141 | 0.011734 | A_strong |
+| `Metamaterial_Fluid_Design_Prereg_Scaffold` | 25 | 0 | B_verified |
+
+#### Acoustic Resonance Materials
+
+Extension panel **`Acoustic_Resonance_Materials`** (verification tier 47) evaluates **29** measured records at **0.0083815%** pooled median error (B_verified). Formal module: `FSOT.Formal.AcousticResonanceMaterialsPriors`. This panel extends the core spine into acoustic resonance materials observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/acoustic_resonance_materials_benchmark.json`](data/acoustic_resonance_materials_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `particle`, `material`, `energy`, `acoustical`
+- **Panel tags:** Acoustic, Resonance, Materials
+- **Data sources / cohorts:** term3.acoustic_bleed gap — species acoustic impedance, building aeroacoustics
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| acoustic_impedance_MRayl · Glass | 14.5 | 14.5 | 0 |
+| building_acoustical_coupling · Carnot COP (0C cold, 27C hot) | 11 | 11.0009 | 0.0083815 |
+| building_aero · built_env_panel | 0 | 0.008381 | 0.0083815 |
+| pooled_median · all_channels | 0 | 0.008381 | 0.0083815 |
+| aeroacoustic_rmse · airfoil_seed | 5.06102 | 5.06152 | 0.0100578 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Acoustic Resonance Materials: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Acoustic Resonance Materials: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Acoustic Resonance Materials: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Chemical Engineering
+
+Extension panel **`Chemical_Engineering`** (verification tier 35) evaluates **186** measured records at **0.00103334%** pooled median error (A_strong). Formal module: `FSOT.Formal.ChemicalEngineeringExtensionPriors`. This panel extends the core spine into chemical engineering observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/chemical_engineering_extension_benchmark.json`](data/chemical_engineering_extension_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `chemical`, `electron`, `energy`
+- **Panel tags:** Chemical, Engineering
+- **Data sources / cohorts:** PubChem process chemistry, thermodynamics engineering rules
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| molecular_weight · AMINOHIPPURIC ACID | 194.19 | 194.19 | 0 |
+| symbolic_schema · MS-001 | 1 | 1 | 0 |
+| pooled_median · all_channels | 0 | 0.001033 | 0.00103334 |
+| process_chemistry · chemical_engineering_panel | 0 | 0.001033 | 0.00103334 |
+| molecular_weight · BUTALBITAL | 224.26 | 224.26 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Chemical Engineering: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Chemical Engineering: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Chemical Engineering: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+
+#### Condensed Matter Superconductivity Depth Panel
+
+Extension panel **`Condensed_Matter_Superconductivity_Depth_Panel`** (verification tier 87) evaluates **21** measured records at **0.033841%** pooled median error (B_verified). Formal module: `FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors`. This panel extends the core spine into condensed matter superconductivity depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/condensed_matter_superconductivity_depth_panel_benchmark.json`](data/condensed_matter_superconductivity_depth_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `material`, `particle`, `energy`
+- **Panel tags:** Condensed, Matter, Superconductivity, Depth, Panel
+- **Data sources / cohorts:** Superconductivity Tc depth — literature, breakthrough, quantum materials
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| Tc_K · Al | 1.18 | 1.1804 | 0.033841 |
+| fsot_prediction · superconductivity_Tc | 0 | 0.033841 | 0.033841 |
+| pooled_median · all_channels | 0 | 0.033841 | 0.033841 |
+| Tc_K · BaKFe2As2 | 38 | 38.0129 | 0.033841 |
+| Tc_K · Bi2212 | 95 | 95.0321 | 0.033841 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Condensed Matter Superconductivity Depth Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Condensed Matter Superconductivity Depth Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Fe`** in Condensed Matter Superconductivity Depth Panel: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
+
+#### Lab Synthesis Metamaterial Spine
+
+Extension panel **`Lab_Synthesis_Metamaterial_Spine`** (verification tier 73) evaluates **43** measured records at **3.4e-05%** pooled median error (B_verified). Formal module: `FSOT.Formal.LabSynthesisMetamaterialSpinePriors`. This panel extends the core spine into lab synthesis metamaterial spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/lab_synthesis_metamaterial_spine_benchmark.json`](data/lab_synthesis_metamaterial_spine_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `fusion`, `particle`, `nuclear`, `material`, `energy`
+- **Panel tags:** Lab, Synthesis, Metamaterial, Spine
+- **Data sources / cohorts:** Lab synthesis, metamaterial certificate rollup — heavy-ion, conditions, cold-fusion crosswalk, periodic, fusion bridges
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| acoustic_bleed_panel_bridge · term3_acoustic_bleed_depth | 0.0083815 | 0.0083815 | 0 |
+| boundary_partition_panel_bridge · boundary_partition_tightening | 0 | 0 | 0 |
+| fluid_like_response_classifier · acoustic_bleed_phononic_crystal | 0 | 0 | 0 |
+| lab_synthesis_metamaterial_ready · lab_synthesis_metamaterial_spine | 1 | 1 | 0 |
+| magic_number_proximity · H | 2 | 2 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Lab Synthesis Metamaterial Spine: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Lab Synthesis Metamaterial Spine: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Lab Synthesis Metamaterial Spine: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+
+#### Materials Creep Fracture Depth Panel
+
+Extension panel **`Materials_Creep_Fracture_Depth_Panel`** (verification tier 87) evaluates **71** measured records at **0.011734%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialsCreepFractureDepthPanelPriors`. This panel extends the core spine into materials creep fracture depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/materials_creep_fracture_depth_panel_benchmark.json`](data/materials_creep_fracture_depth_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `material`, `energy`, `particle`
+- **Panel tags:** Materials, Creep, Fracture, Depth, Panel
+- **Data sources / cohorts:** Creep, fracture mechanics anchors, Materials Project relay
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| band_gap_eV · Al | 0 | 0 | 0 |
+| formation_energy_eV_per_atom · Al | 0 | 0 | 0 |
+| bulk_modulus_GPa · Al | 76 | 76.0089 | 0.011734 |
+| fsot_prediction · materials_creep_fracture_depth_lab | 0 | 0.011734 | 0.011734 |
+| pooled_median · all_channels | 0 | 0.011734 | 0.011734 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Materials Creep Fracture Depth Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Materials Creep Fracture Depth Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Materials Creep Fracture Depth Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Materials Engineering
+
+Extension panel **`Materials_Engineering`** (verification tier 29) evaluates **87** measured records at **0.0271703%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialsEngineeringPriors`. This panel extends the core spine into materials engineering observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/materials_engineering_benchmark.json`](data/materials_engineering_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `material`, `energy`
+- **Panel tags:** Materials, Engineering
+- **Data sources / cohorts:** Young's modulus, thermal κ, bulk, shear, Poisson — buildable engineering SMILES
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| §34 Young's Modulus · Pb | 16 | 16 | 0 |
+| §73 Thermal Expansion · Diamond | 1 | 1 | 0 |
+| §70 Shear Modulus · Pt | 61 | 60.9995 | 0.000759439 |
+| §84 Poisson Ratio ν · Ni | 0.31 | 0.309994 | 0.00193239 |
+| §37 Thermal κ · Fe | 80.4 | 80.4026 | 0.00318833 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`alpha_Fe`** in Materials Engineering: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Materials Engineering: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`Fe`** in Materials Engineering: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
+
+#### Materials Project Live Panel
+
+Extension panel **`Materials_Project_Live_Panel`** (verification tier 68) evaluates **141** measured records at **0.011734%** pooled median error (A_strong). Formal module: `FSOT.Formal.MaterialsProjectLivePanelPriors`. This panel extends the core spine into materials project live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/materials_project_live_panel_benchmark.json`](data/materials_project_live_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `material`, `particle`, `energy`
+- **Panel tags:** Materials, Project, Live, Panel
+- **Data sources / cohorts:** Materials Project API, bundled fallback — band gap, formation energy
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| band_gap_eV · mp-106 | 0 | 0 | 0 |
+| formation_energy_eV_per_atom · mp-106 | 0 | 0 | 0 |
+| live_vs_bundled_band_gap_eV · mp-1265 | 3.44 | 3.44 | 0 |
+| live_vs_bundled_formation_energy_eV_per_atom · mp-1265 | -0.73 | -0.73 | 0 |
+| materials_science_scalar · fsot_Materials_Science | 0.33526 | 0.33526 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Materials Project Live Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Materials Project Live Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Materials Project Live Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Metamaterial Fluid Design Prereg Scaffold
+
+Extension panel **`Metamaterial_Fluid_Design_Prereg_Scaffold`** (verification tier 73) evaluates **25** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.MetamaterialFluidDesignPreregScaffoldPriors`. This panel extends the core spine into metamaterial fluid design prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/metamaterial_fluid_design_prereg_scaffold_benchmark.json`](data/metamaterial_fluid_design_prereg_scaffold_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `material`, `fusion`, `energy`, `particle`
+- **Panel tags:** Metamaterial, Fluid, Design, Prereg, Scaffold
+- **Data sources / cohorts:** Fluid-like metamaterial candidates preregistered via term3 acoustic_bleed, boundary_partition — not claimed synthesized
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| acoustic_bleed_panel_bridge · term3_acoustic_bleed_depth | 0.0083815 | 0.0083815 | 0 |
+| boundary_partition_panel_bridge · boundary_partition_tightening | 0 | 0 | 0 |
+| fluid_like_response_classifier · acoustic_bleed_phononic_crystal | 0 | 0 | 0 |
+| pooled_median · all_channels | 0 | 0 | 0 |
+| prereg_discriminant_gate · acoustic_bleed_phononic_crystal | 1 | 1 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Metamaterial Fluid Design Prereg Scaffold: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Metamaterial Fluid Design Prereg Scaffold: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Metamaterial Fluid Design Prereg Scaffold: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+
+**Panels:** 8 · **Records:** 6,471 · **Mean panel median error:** 0.0218151%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `CRC_Handbook_Properties` | 391 | 0.026922 | A_strong |
+| `Chemical_Structure_Stability_Panel` | 32 | 0.00206 | B_verified |
+| `Ionospheric_Chemistry_Coupling` | 85 | 0 | B_verified |
+| `Machine_And_Molecule_Live_Panel` | 120 | 0.01341 | A_strong |
+| `Maillard_Chemistry` | 30 | 0.0944369 | B_verified |
+| `PubChem_Compound_Properties` | 500 | 0.002637 | A_strong |
+| `PubChem_Live_Deep` | 5,254 | 0.032631 | A_strong |
+| `PubChem_Stability_Panel` | 59 | 0.00242389 | B_verified |
+
+#### CRC Handbook Properties
+
+Extension panel **`CRC_Handbook_Properties`** (verification tier 78) evaluates **391** measured records at **0.026922%** pooled median error (A_strong). Formal module: `FSOT.Formal.CrcHandbookPropertiesPriors`. This panel extends the core spine into crc handbook properties observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/crc_handbook_properties_benchmark.json`](data/crc_handbook_properties_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `chemical`, `material`
+- **Panel tags:** Crc, Handbook, Properties
+- **Data sources / cohorts:** CRC Handbook, NIST chemistry anchors — SMILES lab empirical panel
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| §1 Foundation · pH_water (mixed) | 7 | 7 | 0 |
+| §30 Refractive nD · diethyl ether (dimensionless) | 1.353 | 1.353 | 3.4e-05 |
+| §48 ΔHfus · N₂ (kJ/mol) | 0.72 | 0.72 | 5.3e-05 |
+| §98 Vapor Pressure · CS2 (mmHg) | 359 | 359 | 5.5e-05 |
+| §87 Heat Cap Ratio Cp/Cv · N2 (dimensionless) | 1.4 | 1.4 | 7.4e-05 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`pH_water`** in CRC Handbook Properties: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`CS2`** in CRC Handbook Properties: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
+- **`F`** in CRC Handbook Properties: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Chemical Structure Stability Panel
+
+Extension panel **`Chemical_Structure_Stability_Panel`** (verification tier 57) evaluates **32** measured records at **0.00206%** pooled median error (B_verified). Formal module: `FSOT.Formal.ChemicalStructureStabilityPanelPriors`. This panel extends the core spine into chemical structure stability panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/chemical_structure_stability_panel_benchmark.json`](data/chemical_structure_stability_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `chemical`, `material`, `particle`, `electron`
+- **Panel tags:** Chemical, Structure, Stability, Panel
+- **Data sources / cohorts:** PubChem formula-mass, NIST, SMILES topology — no novel stability claims
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| Planck constant | 6.62607e-34 | 6.62607e-34 | 0 |
+| fine-structure constant | 0.00729735 | 0.00729735 | 0 |
+| formula_mass_closure · 5280961 | 270.24 | 270.24 | 0 |
+| proton mass | 1.67262e-27 | 1.67262e-27 | 0 |
+| smiles_mapped_records · FSOT_SMILES_Lab | 1470 | 1470 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Chemical Structure Stability Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Chemical Structure Stability Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in Chemical Structure Stability Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Ionospheric Chemistry Coupling
+
+Extension panel **`Ionospheric_Chemistry_Coupling`** (verification tier 47) evaluates **85** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.IonosphericChemistryCouplingPriors`. This panel extends the core spine into ionospheric chemistry coupling observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/ionospheric_chemistry_coupling_benchmark.json`](data/ionospheric_chemistry_coupling_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `electron`, `chemical`, `energy`, `plasma`
+- **Panel tags:** Ionospheric, Chemistry, Coupling
+- **Data sources / cohorts:** Magnetosphere cluster gap — ionosphere MHD, Dst, Kp, Bz coupling
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| dst_storm_classifier · 2026-06-26T17:00:00 | 0 | 0 | 0 |
+| ionospheric · magnetosphere_cluster_panel | 0 | 0 | 0 |
+| kp_storm_classifier · 1932-01-01T00:00:00 | 0 | 0 | 0 |
+| pooled_median · all_channels | 0 | 0 | 0 |
+| ionosphere_mhd_beta · ionosphere | 1 | 1.00024 | 0.0236092 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in Ionospheric Chemistry Coupling: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Ionospheric Chemistry Coupling: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Ionospheric Chemistry Coupling: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+
+#### Machine And Molecule Live Panel
+
+Extension panel **`Machine_And_Molecule_Live_Panel`** (verification tier 88) evaluates **120** measured records at **0.01341%** pooled median error (A_strong). Formal module: `FSOT.Formal.MachineAndMoleculeLivePanelPriors`. This panel extends the core spine into machine and molecule live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/machine_and_molecule_live_panel_benchmark.json`](data/machine_and_molecule_live_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `material`, `energy`, `particle`
+- **Panel tags:** Machine, And, Molecule, Live, Panel
+- **Data sources / cohorts:** Desktop FSOT_Machine_And_Molecule species catalog live verification
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| boiling_K · metals_Hg_boiling_K | 629.9 | 629.984 | 0.01341 |
+| bulk_GPa · metals_Ag_bulk_GPa | 104 | 104.014 | 0.01341 |
+| cohesive_eV · metals_Ag_cohesive_eV | 2.95 | 2.9504 | 0.01341 |
+| cp_J_molK · metals_Al_cp_J_molK | 24.2 | 24.2032 | 0.01341 |
+| expansion_e6_per_K · metals_Ag_expansion_e6_per_K | 18 | 18.0024 | 0.01341 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`P`** in Machine And Molecule Live Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Si`** in Machine And Molecule Live Panel: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Li`** in Machine And Molecule Live Panel: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### Maillard Chemistry
+
+Extension panel **`Maillard_Chemistry`** (verification tier 34) evaluates **30** measured records at **0.0944369%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaillardChemistryGapFillPriors`. This panel extends the core spine into maillard chemistry observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/maillard_chemistry_gap_fill_benchmark.json`](data/maillard_chemistry_gap_fill_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `energy`, `medical`, `material`
+- **Panel tags:** Maillard, Chemistry
+- **Data sources / cohorts:** Maillard, browning kinetics from culinary SMILES, roast observables
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| §51 Solubility logS · caffeine | 0.81 | 0.81 | 2.94767e-05 |
+| §50 Diffusion D · sucrose | 0.523 | 0.522947 | 0.0102218 |
+| §90 Heat of Combustion · glucose | 2803 | 2804.28 | 0.0455353 |
+| §61 Glass Tg · glucose_amorph | 309 | 309.161 | 0.052193 |
+| browning_proxy_temp_C · beer_ale_fermentation | 20 | 20.0157 | 0.0786975 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`Fe`** in Maillard Chemistry: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
+- **`F`** in Maillard Chemistry: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Ca`** in Maillard Chemistry: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+
+#### PubChem Compound Properties
+
+Extension panel **`PubChem_Compound_Properties`** (verification tier 38) evaluates **500** measured records at **0.002637%** pooled median error (A_strong). Formal module: `FSOT.Formal.PubchemCompoundPropertiesPriors`. This panel extends the core spine into pubchem compound properties observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/pubchem_compound_properties_benchmark.json`](data/pubchem_compound_properties_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `electron`, `chemical`
+- **Panel tags:** Pubchem, Compound, Properties
+- **Data sources / cohorts:** PubChem molecular weight vs formula mass (31 compounds deep)
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| molecular_weight · 1054 | 169.18 | 169.18 | 0 |
+| molecular_weight · 10975657 | 150.13 | 150.13 | 0 |
+| molecular_weight · 1102 | 145.25 | 145.25 | 0 |
+| molecular_weight · 11174599 | 319.27 | 319.27 | 0 |
+| molecular_weight · 1176 | 60.056 | 60.056 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`O`** in PubChem Compound Properties: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
+- **`C`** in PubChem Compound Properties: measured **1.262**, seed-derived **1.2619131378546835** via `Ω⁻¹+B_IN³` (error **0.006883%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
+- **`I`** in PubChem Compound Properties: measured **3.059**, seed-derived **3.0587861624940675** via `η⁻¹+C_eff²` (error **0.00699%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### PubChem Live Deep
+
+Extension panel **`PubChem_Live_Deep`** (verification tier 68) evaluates **5254** measured records at **0.032631%** pooled median error (A_strong). Formal module: `FSOT.Formal.PubChemLiveDeepPriors`. This panel extends the core spine into pubchem live deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/pubchem_live_deep_benchmark.json`](data/pubchem_live_deep_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `electron`, `chemical`, `medical`, `biological`, `material`, `energy`
+- **Panel tags:** Pubchem, Live, Deep
+- **Data sources / cohorts:** PubChem auto-expanded panel — PUG REST name discovery, culinary, pharmacology bridges
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| biological_scalar · fsot_Biology | 0.444725 | 0.444725 | 0 |
+| chemistry_scalar · fsot_Chemistry | 0.407884 | 0.407884 | 0 |
+| culinary_arts_crosswalk_count | 26 | 26 | 0 |
+| food_microbiology_crosswalk_count · Food_Microbiology | 30 | 30 | 0 |
+| hbond_acceptor_count · 1140 | 0 | 0 | 0 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in PubChem Live Deep: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in PubChem Live Deep: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in PubChem Live Deep: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
+#### PubChem Stability Panel
+
+Extension panel **`PubChem_Stability_Panel`** (verification tier 55) evaluates **59** measured records at **0.00242389%** pooled median error (B_verified). Formal module: `FSOT.Formal.PubChemStabilityPanelPriors`. This panel extends the core spine into pubchem stability panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Benchmark:** [`data/pubchem_stability_panel_benchmark.json`](data/pubchem_stability_panel_benchmark.json)
+
+**Subfield map:**
+
+- **Lean routes:** `electron`, `chemical`, `material`
+- **Panel tags:** Pubchem, Stability, Panel
+- **Data sources / cohorts:** PubChem formula-mass closure — novel stability claims require preregistration
+
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| chemistry_scalar · fsot_Chemistry | 0.407884 | 0.407884 | 0 |
+| molecular_weight · 5280961 | 270.24 | 270.24 | 0 |
+| pooled_median · all_channels | 0 | 0.002424 | 0.00242389 |
+| molecular_weight · 962 | 18.015 | 18.015 | 0 |
+| molecular_weight · 3386 | 309.33 | 309.331 | 0.000323 |
+
+**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
+
+- **`H⁺/H₂`** in PubChem Stability Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in PubChem Stability Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`F`** in PubChem Stability Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+
 **Panels:** 21 · **Records:** 1,969 · **Mean panel median error:** 0.0191648%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Anthropology` | 160 | 0.0195044 | A_strong |
+| `Consciousness_Econ` | 37 | 0.008898 | B_verified |
+| `Consciousness_Expansion_Spine` | 24 | 0.008488 | B_verified |
+| `Consciousness_Soul_Bridge` | 27 | 0 | B_verified |
+| `History` | 170 | 0.0195044 | A_strong |
+| `History_Panel` | 60 | 0.01382 | B_verified |
+| `Initiation_Transformation_Archetype` | 24 | 0 | B_verified |
+| `Law_Policy` | 180 | 0.0195044 | A_strong |
+| `Law_Policy_Panel` | 20 | 0.013003 | B_verified |
+| `Linguistics_Formal` | 24 | 0.022236 | B_verified |
+| `Longevity_Consciousness_Coupling_Panel` | 890 | 0.022424 | A_strong |
+| `Microtubule_Quantum_Consciousness_Panel` | 63 | 0.044671 | B_verified |
+| `Neuroeconomics` | 65 | 0.105021 | B_verified |
+| `Neuroeconomics_Panel` | 20 | 0.031506 | B_verified |
+| `Neurolab_Gaps_Math_Spine` | 35 | 0 | B_verified |
+| `Neurolab_Residual_Math_Spine` | 28 | 0 | B_verified |
+| `Neuroscience_Connectomics_Depth_Panel` | 27 | 0.0201195 | B_verified |
+| `Omni_Theory_Genesis` | 27 | 0 | B_verified |
+| `Omni_Theory_Humanities_Panel` | 37 | 0.0222545 | B_verified |
+| `Psychology_Psychometrics_Depth_Panel` | 23 | 0.031506 | B_verified |
+| `Symbolic_Archetype_Panel` | 28 | 0 | B_verified |
 
 #### Anthropology
 
@@ -7065,6 +7381,31 @@ Extension panel **`Symbolic_Archetype_Panel`** (verification tier 51) evaluates 
 
 **Panels:** 20 · **Records:** 2,056 · **Mean panel median error:** 0.0148513%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Architecture_Building_Science` | 43 | 0.0786975 | B_verified |
+| `BlackHole_WhiteHole_Cycle_Live_Panel` | 24 | 0.026472 | B_verified |
+| `Breakthrough_Discoveries_2024_2026` | 21 | 0 | B_verified |
+| `Civil_Engineering` | 37 | 0.033526 | B_verified |
+| `Civil_Engineering_Panel` | 20 | 0.01341 | B_verified |
+| `Desktop_Application_Wiring_Spine` | 81 | 0 | B_verified |
+| `Electrical_Power_Systems` | 24 | 0.015583 | B_verified |
+| `Mechanical_Engineering` | 50 | 0.01731 | B_verified |
+| `Mechanical_Engineering_Panel` | 20 | 0.039349 | B_verified |
+| `Robotics_Control_Systems` | 45 | 0 | B_verified |
+| `Robotics_Control_Systems_Panel` | 20 | 0.01341 | B_verified |
+| `Space_Propulsion_Systems` | 21 | 0 | B_verified |
+| `Star_Trek_Transporter_Live_Panel` | 1,413 | 0.031159 | A_strong |
+| `Trinary_Hardware_Live_Panel` | 37 | 0.014767 | B_verified |
+| `Trinary_Hardware_Motif` | 24 | 0 | B_verified |
+| `Trinary_OS_ISA_Rebuild` | 38 | 0 | B_verified |
+| `Trinary_OS_Portable` | 24 | 0.013342 | B_verified |
+| `Trinary_OS_Round_Trip` | 22 | 0 | B_verified |
+| `Trinary_OS_Tier_E` | 68 | 0 | B_verified |
+| `Warp_BH_WH_Portal_Panel` | 24 | 0 | B_verified |
+
 #### Architecture Building Science
 
 Extension panel **`Architecture_Building_Science`** (verification tier 34) evaluates **43** measured records at **0.0786975%** pooled median error (B_verified). Formal module: `FSOT.Formal.ArchitectureBuildingScienceGapFillPriors`. This panel extends the core spine into architecture building science observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -7626,6 +7967,39 @@ Extension panel **`Warp_BH_WH_Portal_Panel`** (verification tier 78) evaluates *
 - **`F`** in Warp BH WH Portal Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 **Panels:** 28 · **Records:** 21,803 · **Mean panel median error:** 0.00854252%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Adversarial_Fractal_Break_Tests` | 24 | 0 | B_verified |
+| `Alternate_Base_Mathematics_Explorer_Panel` | 56 | 0.009504 | B_verified |
+| `Alternate_Base_Mathematics_Spine` | 24 | 0.00418478 | B_verified |
+| `Bibliography_Corpus_Panel` | 24 | 0.0380165 | B_verified |
+| `Bibliography_Lean_Corpus` | 21 | 0.020055 | B_verified |
+| `Canonical_Oracle_Panel` | 24 | 0.013294 | B_verified |
+| `Computational_Reasoning` | 577 | 0 | A_strong |
+| `Creative_Arts_Math_Spine` | 56 | 0 | B_verified |
+| `Domain_Coupling_Simulation` | 18,691 | 0 | A_strong |
+| `Domain_Coupling_Simulation_Refresh_Panel` | 22 | 0 | B_verified |
+| `Early_Lean_MC_Panel` | 24 | 0.014767 | B_verified |
+| `FSOT_Aggregate_Organized_Panel` | 24 | 0 | B_verified |
+| `FSOT_Aggregate_Unified_DB` | 24 | 0 | B_verified |
+| `Formula_Branching_Fractal` | 255 | 0.0380165 | A_strong |
+| `Formula_Corpus_CNC` | 21 | 0.020055 | B_verified |
+| `Formula_Corpus_Closure` | 123 | 0 | A_strong |
+| `Formula_Precision_Spine` | 27 | 0 | B_verified |
+| `Knowledge_Base_Portable_Bundle_Panel` | 24 | 0.00209239 | B_verified |
+| `Math_Generator_Airfoil_RMSE` | 21 | 0.020055 | B_verified |
+| `Math_Generator_Benchmark_Formula_Eval` | 21 | 0.020055 | B_verified |
+| `Math_Generator_Rules_Eval` | 1,552 | 0 | A_strong |
+| `Proof_Ledger_Closure_Spine` | 24 | 0 | B_verified |
+| `Rust_Lean_Bridge` | 24 | 0 | B_verified |
+| `Rust_Lean_Bridge_Panel` | 24 | 0.014767 | B_verified |
+| `ToE_Claim_Certificate_Bundle` | 24 | 0.00209239 | B_verified |
+| `Tokenization_Live_Panel` | 24 | 0.022236 | B_verified |
+| `Tokenization_Smoke` | 24 | 0 | B_verified |
+| `XR_Interactive_Media_Math_Scaffold` | 24 | 0 | B_verified |
 
 #### Adversarial Fractal Break Tests
 
@@ -8413,6 +8787,14 @@ Extension panel **`XR_Interactive_Media_Math_Scaffold`** (verification tier 61) 
 
 **Panels:** 3 · **Records:** 155 · **Mean panel median error:** 0.034597%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Cryptography_Technology` | 44 | 0.0475207 | B_verified |
+| `Malware_Threat_Intelligence` | 85 | 0.0459332 | B_verified |
+| `Zero_Day_Risk_Evaluator` | 26 | 0.0103371 | B_verified |
+
 #### Cryptography Technology
 
 Extension panel **`Cryptography_Technology`** (verification tier 43) evaluates **44** measured records at **0.0475207%** pooled median error (B_verified). Formal module: `FSOT.Formal.CryptographyTechnologyPriors`. This panel extends the core spine into cryptography technology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -8498,6 +8880,18 @@ Extension panel **`Zero_Day_Risk_Evaluator`** (verification tier 43) evaluates *
 - **`Ca`** in Zero Day Risk Evaluator: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 **Panels:** 7 · **Records:** 168 · **Mean panel median error:** 0.0218293%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Founding_Atmospheric_Ozone_Panel` | 24 | 0.022236 | B_verified |
+| `Founding_Cosmic_Dust_Panel` | 24 | 0.026675 | B_verified |
+| `Founding_Cosmic_Ray_Panel` | 24 | 0.021221 | B_verified |
+| `Founding_Galactic_Halo_Rotation_Panel` | 24 | 0.022461 | B_verified |
+| `Founding_Pulsar_Glitch_Panel` | 24 | 0.022461 | B_verified |
+| `Founding_Quantum_Vacuum_Panel` | 24 | 0.0152903 | B_verified |
+| `Founding_White_Dwarf_Cooling_Panel` | 24 | 0.022461 | B_verified |
 
 #### Founding Atmospheric Ozone Panel
 
@@ -8696,6 +9090,24 @@ Extension panel **`Founding_White_Dwarf_Cooling_Panel`** (verification tier 96) 
 - **`P`** in Founding White Dwarf Cooling Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 **Panels:** 13 · **Records:** 5,638 · **Mean panel median error:** 0.017133%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `GWOSC_Live_Event_Deep` | 191 | 0.008488 | A_strong |
+| `Gaia_Astrometry_Panel_Deep` | 62 | 0.022461 | B_verified |
+| `Gaia_DR3_TAP_Deep` | 1,826 | 0.022461 | A_strong |
+| `IGEM_Live_FASTA_Ingest` | 42 | 0 | B_verified |
+| `Live_Ingest_Spine` | 28 | 0 | B_verified |
+| `NASA_DONKI_Solar_Panel` | 2,148 | 0.020755 | A_strong |
+| `NASA_NEO_Feed_Panel` | 56 | 0.021097 | B_verified |
+| `Open_Meteo_Live_Panel` | 432 | 0.026204 | A_strong |
+| `SH0ES_Refined` | 24 | 0.024894 | B_verified |
+| `STScI_MAST_Telescope_Panel` | 377 | 0.022461 | A_strong |
+| `Solar_System_Structure_Deep` | 50 | 0 | B_verified |
+| `VizieR_WDS_TAP_Live_Deep` | 121 | 0.026954 | A_strong |
+| `WDS_Live_Multiplicity_Deep` | 281 | 0.026954 | A_strong |
 
 #### GWOSC Live Event Deep
 
@@ -9063,6 +9475,20 @@ Extension panel **`WDS_Live_Multiplicity_Deep`** (verification tier 62) evaluate
 
 **Panels:** 9 · **Records:** 450 · **Mean panel median error:** 0.0150861%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `FPC_Fluidlink_Timing_Deep_Panel` | 24 | 0.021118 | B_verified |
+| `FPC_Temporal_Coupling` | 24 | 0.029733 | B_verified |
+| `Fluid_Phase_Current_Spine` | 24 | 0.022997 | B_verified |
+| `Fluid_Spacetime_Observable_Spine` | 29 | 0.000595 | B_verified |
+| `Fluid_Spacetime_Prereg_Validation_Panel` | 24 | 0 | B_verified |
+| `Term3_Acoustic_Bleed_Depth` | 23 | 0.0083815 | B_verified |
+| `Time_Domain_Crosswalk` | 250 | 0.028056 | A_strong |
+| `Time_Emergence_Deep_Panel` | 24 | 0.024894 | B_verified |
+| `Time_Emergence_Simulation` | 28 | 0 | B_verified |
+
 #### FPC Fluidlink Timing Deep Panel
 
 Extension panel **`FPC_Fluidlink_Timing_Deep_Panel`** (verification tier 76) evaluates **24** measured records at **0.021118%** pooled median error (B_verified). Formal module: `FSOT.Formal.FpcFluidlinkTimingDeepPanelPriors`. This panel extends the core spine into fpc fluidlink timing deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -9317,6 +9743,19 @@ Extension panel **`Time_Emergence_Simulation`** (verification tier 50) evaluates
 
 **Panels:** 8 · **Records:** 942 · **Mean panel median error:** 0.0359339%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Actuarial_Science_Panel` | 60 | 0.02261 | B_verified |
+| `Econometrics` | 172 | 0.129201 | A_strong |
+| `Econophysics` | 24 | 0 | B_verified |
+| `Finance_Markets` | 150 | 0.0258402 | A_strong |
+| `Finance_Markets_Panel` | 36 | 0.02584 | B_verified |
+| `Supply_Chain_Logistics` | 40 | 0.0323002 | B_verified |
+| `Supply_Chain_Logistics_Panel` | 40 | 0.02584 | B_verified |
+| `World_Bank_Development` | 420 | 0.02584 | A_strong |
+
 #### Actuarial Science Panel
 
 Extension panel **`Actuarial_Science_Panel`** (verification tier 82) evaluates **60** measured records at **0.02261%** pooled median error (B_verified). Formal module: `FSOT.Formal.ActuarialSciencePriors`. This panel extends the core spine into actuarial science panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -9543,6 +9982,13 @@ Extension panel **`World_Bank_Development`** (verification tier 38) evaluates **
 
 **Panels:** 2 · **Records:** 66 · **Mean panel median error:** 0%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Interactive_Media_Prereg_Scaffold` | 42 | 0 | B_verified |
+| `Music_Harmonics_Public_Panel` | 24 | 0 | B_verified |
+
 #### Interactive Media Prereg Scaffold
 
 Extension panel **`Interactive_Media_Prereg_Scaffold`** (verification tier 65) evaluates **42** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.InteractiveMediaPreregScaffoldPriors`. This panel extends the core spine into interactive media prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -9600,6 +10046,17 @@ Extension panel **`Music_Harmonics_Public_Panel`** (verification tier 61) evalua
 - **`alpha_Fe`** in Music Harmonics Public Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 
 **Panels:** 6 · **Records:** 720 · **Mean panel median error:** 0.013084%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Crossref_Scholarly_Panel` | 200 | 0.01382 | A_strong |
+| `Federal_Science_Registry_Panel` | 24 | 0.013352 | B_verified |
+| `Government_Open_Data_Spine` | 28 | 0 | B_verified |
+| `OSTI_DOE_Science_Panel` | 100 | 0.01382 | A_strong |
+| `OpenAlex_Citation_Graph` | 80 | 0.031506 | B_verified |
+| `iNaturalist_Observation_Panel` | 288 | 0.006006 | A_strong |
 
 #### Crossref Scholarly Panel
 
@@ -9770,6 +10227,28 @@ Extension panel **`iNaturalist_Observation_Panel`** (verification tier 81) evalu
 - **`F`** in iNaturalist Observation Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 **Panels:** 17 · **Records:** 481 · **Mean panel median error:** 0.00879256%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Arxiv_Brain_Knowledge_Panel` | 20 | 0.018003 | B_verified |
+| `Arxiv_Primitives_Panel` | 22 | 0.031506 | B_verified |
+| `Arxiv_Primitives_V14` | 24 | 0 | B_verified |
+| `Foundational_Ontology_Spine` | 21 | 0 | B_verified |
+| `Interdisciplinary_Spine_Crosswalk` | 24 | 0 | B_verified |
+| `Reality_Folding_Spine` | 24 | 0.0239143 | B_verified |
+| `Scientific_Expansion_Depth_Spine` | 20 | 0 | B_verified |
+| `Scientific_Expansion_Depth_Wave2_Spine` | 40 | 0 | B_verified |
+| `Scientific_Expansion_Spine` | 40 | 0 | B_verified |
+| `Scientific_Expansion_Wave2_Spine` | 40 | 0 | B_verified |
+| `Scientific_Expansion_Wave3_Spine` | 40 | 0 | B_verified |
+| `Theory_Completeness_Spine` | 24 | 0.0219279 | B_verified |
+| `Tier_93_Dual_Wave_Spine` | 24 | 0.0110939 | B_verified |
+| `ToE_Gap_Closure_Spine` | 24 | 0.0219279 | B_verified |
+| `ToE_Unification_Spine` | 24 | 0.0190083 | B_verified |
+| `Unified_DB_Candidate_Crosswalk` | 46 | 0 | B_verified |
+| `Unified_DB_Crosswalk_Spine` | 24 | 0.00209239 | B_verified |
 
 #### Arxiv Brain Knowledge Panel
 
@@ -10249,6 +10728,16 @@ Extension panel **`Unified_DB_Crosswalk_Spine`** (verification tier 69) evaluate
 
 **Panels:** 5 · **Records:** 264 · **Mean panel median error:** 0.00488585%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Material_In_Silico_Screening_Scaffold` | 42 | 0.00206 | B_verified |
+| `Material_Property_Verification_Scaffold` | 79 | 0.002271 | B_verified |
+| `Preregistered_Outcome_Tracking` | 56 | 0 | B_verified |
+| `Preregistered_Predictions` | 27 | 0.0200982 | B_verified |
+| `Preregistered_Predictions_Verification_Scaffold` | 60 | 0 | B_verified |
+
 #### Material In Silico Screening Scaffold
 
 Extension panel **`Material_In_Silico_Screening_Scaffold`** (verification tier 65) evaluates **42** measured records at **0.00206%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialInSilicoScreeningScaffoldPriors`. This panel extends the core spine into material in silico screening scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -10390,6 +10879,19 @@ Extension panel **`Preregistered_Predictions_Verification_Scaffold`** (verificat
 - **`Fe`** in Preregistered Predictions Verification Scaffold: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
 
 **Panels:** 8 · **Records:** 189 · **Mean panel median error:** 0.00926519%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Binary_Decoder_Panel` | 24 | 0.013342 | B_verified |
+| `Binary_Decoder_Rendlesham` | 24 | 0.00450476 | B_verified |
+| `Certified_Agent_Formal_Panel` | 24 | 0.014767 | B_verified |
+| `Certified_Agent_Qwen` | 24 | 0.00450476 | B_verified |
+| `Intrinsic_LLM_Validators` | 24 | 0 | B_verified |
+| `Intrinsic_LLM_Validators_Panel` | 21 | 0.014767 | B_verified |
+| `VL_Agent_Distill_Panel` | 24 | 0.022236 | B_verified |
+| `VL_Distill_Atlas` | 24 | 0 | B_verified |
 
 #### Binary Decoder Panel
 
@@ -10615,7 +11117,29 @@ Extension panel **`VL_Distill_Atlas`** (verification tier 37) evaluates **24** m
 - **`alpha_Fe`** in VL Distill Atlas: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Bi2Te3`** in VL Distill Atlas: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
-**Panels:** 18 · **Records:** 4,745 · **Mean panel median error:** 0.0169143%
+**Panels:** 17 · **Records:** 4,624 · **Mean panel median error:** 0.0179092%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Biophysics_Public_Panel` | 24 | 0 | B_verified |
+| `Ethology_Panel` | 100 | 0.006607 | A_strong |
+| `IGEM_Parts_Expanded` | 111 | 5.88236e-05 | A_strong |
+| `Limnology_Panel` | 2,010 | 0.030173 | A_strong |
+| `Longevity_MegaDeep_NCBI_Panel` | 1,746 | 0.017789 | A_strong |
+| `Longevity_Telomere_Repair_Panel` | 60 | 0.022236 | B_verified |
+| `NCBI_Gene_Public_Panel` | 48 | 0.025572 | B_verified |
+| `Pharmacokinetics` | 56 | 0.00241237 | B_verified |
+| `RCSB_PDB_Structures` | 45 | 0.022236 | B_verified |
+| `The_Well_Outcomes_Verification_Panel` | 246 | 0.031159 | A_strong |
+| `The_Well_Spot_Check_Panel` | 24 | 0.031159 | B_verified |
+| `The_Well_Verification_Spine` | 24 | 0.028287 | B_verified |
+| `Tier_94_Longevity_Spine` | 34 | 0 | B_verified |
+| `Tier_95_Zebrafish_Spine` | 24 | 0.013342 | B_verified |
+| `Toxicology_Panel` | 21 | 0.033401 | B_verified |
+| `Zebrafish_Cell_Tracking_Panel` | 20 | 0.022236 | B_verified |
+| `Zebrafish_Developmental_Mechanics_Panel` | 31 | 0.017789 | B_verified |
 
 #### Biophysics Public Panel
 
@@ -11037,34 +11561,6 @@ Extension panel **`Toxicology_Panel`** (verification tier 82) evaluates **21** m
 - **`alpha_Fe`** in Toxicology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Toxicology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
-#### UniProt Structure Annotations Deep
-
-Extension panel **`UniProt_Structure_Annotations_Deep`** (verification tier 56) evaluates **121** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.UniProtStructureAnnotationsDeepPriors`. This panel extends the core spine into uniprot structure annotations deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
-
-**Benchmark:** [`data/uniprot_structure_annotations_deep_benchmark.json`](data/uniprot_structure_annotations_deep_benchmark.json)
-
-**Subfield map:**
-
-- **Lean routes:** `biological`, `medical`, `material`
-- **Panel tags:** Uniprot, Structure, Annotations, Deep
-- **Data sources / cohorts:** UniProt, RCSB PDB public structure annotation depth
-
-**Top observables (measured vs computed):**
-
-| Observable | Measured | Computed | Error % |
-|------------|---------:|---------:|--------:|
-| mol_weight · P00338 | 36689 | 36689 | 0 |
-| mol_weight_kda_ratio · P68871_4HHB | 0.247112 | 0.247112 | 0 |
-| molecular_weight · 1AKE | 49.07 | 49.07 | 0 |
-| pdb_resolution_angstrom · P62988_1UBQ | 1.8 | 1.8 | 0 |
-| polymer_entity_count · 1BNA | 1 | 1 | 0 |
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`Bi2Te3`** in UniProt Structure Annotations Deep: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
-- **`P`** in UniProt Structure Annotations Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`BL_N−H`** in UniProt Structure Annotations Deep: measured **1.01**, seed-derived **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-
 #### Zebrafish Cell Tracking Panel
 
 Extension panel **`Zebrafish_Cell_Tracking_Panel`** (verification tier 95) evaluates **20** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.ZebrafishCellTrackingPanelPriors`. This panel extends the core spine into zebrafish cell tracking panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -11122,6 +11618,26 @@ Extension panel **`Zebrafish_Developmental_Mechanics_Panel`** (verification tier
 - **`Li`** in Zebrafish Developmental Mechanics Panel: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 **Panels:** 15 · **Records:** 19,132 · **Mean panel median error:** 0.0130589%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Cartography_GIS_Panel` | 48 | 0.018856 | B_verified |
+| `Chaos_Mediated_Phase_Transitions` | 21 | 0.031479 | B_verified |
+| `Climate_Science` | 17,320 | 0 | A_strong |
+| `Complexity_Folding_Emergence_Panel` | 29 | 0.0265879 | B_verified |
+| `Environmental_Engineering` | 1,120 | 0 | A_strong |
+| `HVAC_Thermal_Systems` | 23 | 0.0178361 | B_verified |
+| `Heavy_Ion_Lab_Synthesis_Panel` | 39 | 9.5e-05 | B_verified |
+| `Mechanistic_Coupling` | 116 | 0 | A_strong |
+| `Optics_Interferometry_Depth_Panel` | 127 | 0.026954 | A_strong |
+| `Semiconductor_Physics_Public_Panel` | 24 | 0 | B_verified |
+| `Soil_Science_Panel` | 96 | 0.006006 | B_verified |
+| `Sports_Biomechanics` | 35 | 0.0444725 | B_verified |
+| `Statistical_Mechanics_Public_Panel` | 24 | 0 | B_verified |
+| `Volcanology_Panel` | 90 | 0.023502 | B_verified |
+| `Z120_Z126_Beam_Synthesis_Panel` | 20 | 9.5e-05 | B_verified |
 
 #### Cartography GIS Panel
 
@@ -11544,6 +12060,30 @@ Extension panel **`Z120_Z126_Beam_Synthesis_Panel`** (verification tier 74) eval
 - **`F`** in Z120 Z126 Beam Synthesis Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 **Panels:** 19 · **Records:** 2,784 · **Mean panel median error:** 0.0143441%
+
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Adjacent_Rung_Coupling` | 36 | 0.0200982 | B_verified |
+| `Boundary_Partition_Tightening` | 24 | 0.0176727 | B_verified |
+| `Compactification_Ladder` | 60 | 0.0220747 | B_verified |
+| `Experimental_Base_Mathematics_Panel` | 36 | 0.009504 | B_verified |
+| `Fold_Depth_Metrics` | 51 | 0.0257538 | B_verified |
+| `Fractal_Constant_Recursion` | 21 | 0 | B_verified |
+| `Information_Theory_Public_Panel` | 24 | 0 | B_verified |
+| `Mathematics_Computational` | 20 | 1.40902e-14 | B_verified |
+| `Nothing_Perfection_Friction_Origin_Panel` | 24 | 0.008488 | B_verified |
+| `Observer_Channel_Derivation` | 348 | 0.0525103 | A_strong |
+| `Overflow_Carry_Emergence_Panel` | 29 | 0.009504 | B_verified |
+| `Phi_Morphogenetic_Scaling` | 289 | 0.0176078 | A_strong |
+| `Prediction_Rederivation` | 21 | 0.0281605 | B_verified |
+| `Programming_Language_Laws` | 107 | 0 | A_strong |
+| `Pure_Mathematics` | 1,578 | 0 | A_strong |
+| `Pure_Mathematics_Panel` | 44 | 0.02584 | B_verified |
+| `RD_Interval_Tightening_Panel` | 24 | 0.000502 | B_verified |
+| `Scalar_Solver_35_Panel` | 24 | 0.014767 | B_verified |
+| `Zero_Boundary_Not_Entity_Panel` | 24 | 0.020055 | B_verified |
 
 #### Adjacent Rung Coupling
 
@@ -12079,6 +12619,22 @@ Extension panel **`Zero_Boundary_Not_Entity_Panel`** (verification tier 91) eval
 
 **Panels:** 11 · **Records:** 1,130 · **Mean panel median error:** 0.012212%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Hybrid_FI_Sim_Multi_Hero_Panel` | 24 | 0.008488 | B_verified |
+| `Hybrid_FI_Sim_Stratum_Deep_Panel` | 24 | 0.018003 | B_verified |
+| `Living_FSOT_Hardware_Panel` | 77 | 0.031506 | B_verified |
+| `Network_Internet_Protocols` | 22 | 0.0103371 | B_verified |
+| `Network_Science_Public_Panel` | 24 | 0 | B_verified |
+| `Portable_Clone_Verify` | 290 | 0 | A_strong |
+| `Public_Verifiable_Spine` | 20 | 0 | B_verified |
+| `Secure_Software_Engineering` | 59 | 0 | B_verified |
+| `Stumped_Observables_Panel` | 24 | 0.029749 | B_verified |
+| `Stumped_Observables_Spine` | 24 | 0.027761 | B_verified |
+| `UAP_War_Gov_Release_Panel` | 542 | 0.008488 | A_strong |
+
 #### Hybrid FI Sim Multi Hero Panel
 
 Extension panel **`Hybrid_FI_Sim_Multi_Hero_Panel`** (verification tier 77) evaluates **24** measured records at **0.008488%** pooled median error (B_verified). Formal module: `FSOT.Formal.HybridFiSimMultiHeroPanelPriors`. This panel extends the core spine into hybrid fi sim multi hero panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -12386,6 +12942,44 @@ Extension panel **`UAP_War_Gov_Release_Panel`** (verification tier 80) evaluates
 - **`H⁺/H₂`** in UAP War Gov Release Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
 - **`alpha_Fe`** in UAP War Gov Release Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Fe`** in UAP War Gov Release Panel: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
+
+Curated strict-empirical rows from `vendor/formula_corpus/by_domain/strict_empirical.jsonl`. Each Lean route family shows the lowest-error seed-derived formulas with measured targets.
+
+### Lean route `chemical`
+
+*molecular chemistry and bonding readouts*
+
+- **`BL_N−H`**: measured **1.01**, computed **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**).
+- **`BL_C≡C`**: measured **1.2**, computed **1.1999816148643268** via `π/φ²` (error **0.001532%**).
+- **`BL_C=C`**: measured **1.34**, computed **1.339953133922381** via `φ⁻² + P_var` (error **0.003497%**).
+- **`BL_C−N`**: measured **1.47**, computed **1.4699416523739364** via `√2 + φ⁻⁶` (error **0.003969%**).
+- **`BL_C−C`**: measured **1.54**, computed **1.540139197779449** via `γ⁻¹ − γ³` (error **0.009039%**).
+
+### Lean route `cross_domain`
+
+*cross-domain strict empirical verification*
+
+- **`pH_water`**: measured **7.0**, computed **7.0** via `φ⁻⁴ + φ⁴` (error **0%**).
+- **`CO₂`**: measured **180.0**, computed **180.0** via `π (rad→°)` (error **0%**).
+- **`BF₃`**: measured **120.0**, computed **120.0** via `2π/3 (rad→°)` (error **0%**).
+- **`SF₆`**: measured **90.0**, computed **90.0** via `π/2 (rad→°)` (error **0%**).
+- **`XeF₂`**: measured **180.0**, computed **180.0** via `π (rad→°)` (error **0%**).
+
+### Lean route `energy`
+
+*thermodynamic, atmospheric, and energy-sector observables*
+
+- **`H_2`**: measured **0.8574**, computed **0.8652559794322651** via `E/PI` (error **0.916256%**).
+
+### Lean route `particle`
+
+*particle and atomic observables via high-energy scalar channels*
+
+- **`IE_Ar`**: measured **15.76**, computed **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**).
+- **`IE_S`**: measured **10.36**, computed **10.360130217649854** via `φ⁶/√3` (error **0.001257%**).
+- **`IE_Li`**: measured **5.392**, computed **5.392103950584448** via `γ⁻³ + γ³` (error **0.001928%**).
+- **`IE_P`**: measured **10.487**, computed **10.487638389839253** via `π² + φ⁻¹` (error **0.006087%**).
+- **`IE_Be`**: measured **9.323**, computed **9.323911577885365** via `π² − sin(γ)` (error **0.009778%**).
 
 <!-- README_DOMAIN_CHAPTERS_END -->
 

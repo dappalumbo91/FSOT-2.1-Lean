@@ -2,6 +2,14 @@
 
 **Panels:** 3 · **Records:** 155 · **Mean panel median error:** 0.034597%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Cryptography_Technology` | 44 | 0.0475207 | B_verified |
+| `Malware_Threat_Intelligence` | 85 | 0.0459332 | B_verified |
+| `Zero_Day_Risk_Evaluator` | 26 | 0.0103371 | B_verified |
+
 #### Cryptography Technology
 
 Extension panel **`Cryptography_Technology`** (verification tier 43) evaluates **44** measured records at **0.0475207%** pooled median error (B_verified). Formal module: `FSOT.Formal.CryptographyTechnologyPriors`. This panel extends the core spine into cryptography technology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

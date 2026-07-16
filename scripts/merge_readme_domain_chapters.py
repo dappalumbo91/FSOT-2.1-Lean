@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Merge domain chapters into README.md Appendix XII."""
+"""Merge domain chapters and §6.3 into README.md."""
 
 from __future__ import annotations
 
@@ -10,17 +10,24 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 CHAPTERS = ROOT / "data" / "publication" / "readme_domain_chapters"
-MANIFEST = ROOT / "data" / "publication" / "readme_domain_chapters_manifest.yaml"
+SECTION_63 = ROOT / "data" / "publication" / "readme_section_63.md"
 
 MARKER_START = "<!-- README_DOMAIN_CHAPTERS_START -->"
 MARKER_END = "<!-- README_DOMAIN_CHAPTERS_END -->"
+SECTION_63_START = "<!-- README_SECTION_63_START -->"
+SECTION_63_END = "<!-- README_SECTION_63_END -->"
 
 CHAPTER_ORDER = (
     "00_core_spine_35.md",
     "01_cosmology_fundamental.md",
     "02_space_geophysics.md",
+    "03_genomics_medicine.md",
+    "03_ecology_species.md",
     "03_biology_genomics.md",
-    "04_chemistry_materials.md",
+    "04_fusion_fuels.md",
+    "04_periodic_superheavy.md",
+    "04_materials_engineering.md",
+    "04_chemistry_molecular.md",
     "05_consciousness_social.md",
     "06_engineering_propulsion.md",
     "07_mathematics_computation.md",
@@ -39,12 +46,35 @@ CHAPTER_ORDER = (
     "20_mathematics_formal_depth.md",
     "21_verification_infrastructure.md",
     "22_interdisciplinary_residual.md",
+    "23_appendix_xii_e_formula_digest.md",
 )
 
 
 def _body(path: Path) -> str:
     text = path.read_text(encoding="utf-8").strip()
     return re.sub(r"^#+ [^\n]+\n+", "", text, count=1).strip()
+
+
+def _merge_section_63(readme: str, ts: str) -> str:
+    if not SECTION_63.is_file():
+        return readme
+    block = SECTION_63.read_text(encoding="utf-8").strip() + "\n"
+    if SECTION_63_START in readme:
+        return re.sub(
+            rf"{re.escape(SECTION_63_START)}.*?{re.escape(SECTION_63_END)}\n?",
+            f"{SECTION_63_START}\n{block}{SECTION_63_END}\n",
+            readme,
+            flags=re.DOTALL,
+        )
+    anchor = "### 6.3 Domain-by-domain coverage"
+    if anchor in readme:
+        readme = re.sub(
+            rf"{re.escape(anchor)}.*?(?=\n---\n\n## VII\.)",
+            f"{SECTION_63_START}\n{block}{SECTION_63_END}\n",
+            readme,
+            flags=re.DOTALL,
+        )
+    return readme
 
 
 def main() -> int:
@@ -89,9 +119,11 @@ def main() -> int:
             return 1
         readme = readme.replace(anchor, block + "\n" + anchor)
 
+    readme = _merge_section_63(readme, ts)
+
     readme = re.sub(
         r"\*\*Edition:\*\* v1\.[0-9]+[^\n]*",
-        f"**Edition:** v1.3 — domain chapters deepening {ts}",
+        f"**Edition:** v1.4 — cluster expansion + XII-E digest {ts}",
         readme,
         count=1,
     )
@@ -99,6 +131,8 @@ def main() -> int:
     README.write_text(readme, encoding="utf-8")
     merged = sum(1 for f in CHAPTER_ORDER if (CHAPTERS / f).is_file())
     print(f"Merged {merged} domain chapters into {README}")
+    if SECTION_63.is_file():
+        print(f"Merged §6.3 from {SECTION_63}")
     return 0
 
 

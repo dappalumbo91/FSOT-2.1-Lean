@@ -22,6 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "publication" / "readme_domain_chapters"
+SECTION_63 = ROOT / "data" / "publication" / "readme_section_63.md"
 MANIFEST = ROOT / "data" / "publication" / "readme_domain_chapters_manifest.yaml"
 ATLAS = ROOT / "data" / "publication" / "domain_atlas.csv"
 NAV = ROOT / "data" / "fsot_domain_navigator.json"
@@ -206,11 +207,49 @@ CLUSTERS: tuple[tuple[str, str, tuple[str, ...]], ...] = (
         ),
     ),
     (
+        "03_genomics_medicine",
+        "Genomics, Immunology & Clinical Medicine",
+        (
+            "Genomic_",
+            "Immunolog",
+            "Oncolog",
+            "Clinical",
+            "Cardiology",
+            "Pharmacolog",
+            "Virolog",
+            "Epidemiol",
+            "Neuroimmun",
+            "OpenNeuro",
+            "Neuron_Multi",
+            "Longevity_Genetic",
+            "Zebrafish_Longevity_Genetics",
+        ),
+    ),
+    (
+        "03_ecology_species",
+        "Ecology, Species Catalogs & Agricultural Systems",
+        (
+            "Ecology",
+            "GBIF_",
+            "Agriculture",
+            "Botany",
+            "Zoology",
+            "Marine_",
+            "Mycolog",
+            "Entomolog",
+            "Paleontolog",
+            "Food_",
+            "Culinary",
+            "Physarum",
+            "Longevity_AnAge",
+            "Longevity_Extreme_Species",
+        ),
+    ),
+    (
         "03_biology_genomics",
-        "Biology, Genomics, Medicine & Ecology",
+        "Synthetic Biology, Code Genomes & Life-System Bridges",
         (
             "Biolog",
-            "Genom",
             "Genetic",
             "Protein",
             "Codon",
@@ -218,50 +257,69 @@ CLUSTERS: tuple[tuple[str, str, tuple[str, ...]], ...] = (
             "Evolution",
             "Cellular",
             "iGEM",
-            "Immunolog",
-            "Oncolog",
-            "Neuroimmun",
             "Synthetic_Biology",
-            "Pharmacolog",
-            "Clinical",
-            "Cardiology",
-            "Virolog",
-            "Epidemiol",
-            "Botany",
-            "Zoology",
-            "Marine_",
-            "Mycolog",
-            "Entomolog",
-            "Paleontolog",
-            "Ecology",
-            "Agriculture",
-            "Food_",
-            "Culinary",
-            "Physarum",
-            "AnAge",
-            "OpenNeuro",
-            "Neuron",
+            "UniProt_",
+            "Materials_Species",
+            "Materials_Genome",
+            "Code_Genome",
+            "Proof_Carrying",
+            "Consciousness_Genetics",
+            "Consciousness_Species",
+            "Observer_Effect_Cross",
+            "CVE_Codon",
+            "External_OSS",
         ),
     ),
     (
-        "04_chemistry_materials",
-        "Chemistry, Materials & Molecular Engineering",
+        "04_fusion_fuels",
+        "Fusion Physics, Fuels & Thermochemistry",
+        (
+            "Fusion_",
+            "Fuel_",
+            "Cold_Fusion",
+            "Inertial_Confinement",
+            "Magnetic_Confinement",
+            "Published_Fuel",
+        ),
+    ),
+    (
+        "04_periodic_superheavy",
+        "Periodic Extension, Island of Stability & Element Synthesis",
+        (
+            "Periodic_",
+            "Island_",
+            "Superheavy_",
+            "Distant_Island",
+            "Element_Synthesis",
+            "Natural_Formation_Element",
+            "Undiscovered_Element",
+            "Z164_",
+        ),
+    ),
+    (
+        "04_materials_engineering",
+        "Materials Engineering, Metamaterials & Condensed Matter",
+        (
+            "Materials_",
+            "Metamaterial",
+            "Condensed_Matter",
+            "Acoustic_Resonance",
+            "Lab_Synthesis_Metamaterial",
+            "Chemical_Engineering",
+        ),
+    ),
+    (
+        "04_chemistry_molecular",
+        "Molecular Chemistry, PubChem & Compound Properties",
         (
             "Chem",
             "SMILES",
-            "Materials",
-            "Fuel_",
             "PubChem",
-            "Periodic",
-            "Element_",
-            "Island_",
-            "Superheavy",
-            "Fusion",
-            "Metamaterial",
-            "Acoustic_Resonance",
-            "Condensed_Matter",
             "CRC_",
+            "Maillard",
+            "Ionospheric_Chemistry",
             "Machine_And_Molecule",
+            "Chemical_Structure",
         ),
     ),
     (
@@ -530,6 +588,36 @@ CLUSTERS: tuple[tuple[str, str, tuple[str, ...]], ...] = (
         (),
     ),
 )
+
+CLUSTER_FOCUS: dict[str, str] = {
+    "01_cosmology_fundamental": "CMB, dark sector, particles, Higgs, quantum foundations",
+    "02_space_geophysics": "Magnetosphere, seismology, hydrology, planetary structure",
+    "03_genomics_medicine": "Genomics, immunology, clinical trials, cardiology, virology",
+    "03_ecology_species": "GBIF ecology, agriculture, marine biology, species longevity",
+    "03_biology_genomics": "Synthetic biology, iGEM, code genomes, protein bridges",
+    "04_fusion_fuels": "Magnetic/inertial fusion, fuel lab, thermochemistry anchors",
+    "04_periodic_superheavy": "Periodic extension, island of stability, element synthesis",
+    "04_materials_engineering": "Materials genome, metamaterials, condensed matter depth",
+    "04_chemistry_molecular": "PubChem, SMILES chemistry, CRC handbook properties",
+    "05_consciousness_social": "Neuroscience, economics, linguistics, soul-bridge",
+    "06_engineering_propulsion": "Transporter, warp, fuels, power systems, verified desktop",
+    "07_mathematics_computation": "Formula corpus, proof spine, trinary OS, coupling simulation",
+    "08_cybersecurity": "Malware, code genomes, zero-day risk",
+    "09_founding_laws": "Dedicated founding physics panels (all mapped)",
+    "10_live_ingest_astrometry": "Gaia/WDS/MAST/NASA live catalog spines",
+    "11_fluid_spacetime_time": "Temporal coupling, fluid-phase observables",
+    "12_finance_economics_logistics": "Actuarial, econometrics, supply-chain panels",
+    "13_music_arts_creative": "Harmonics, interactive media prereg",
+    "14_government_open_data": "Federal registries, Crossref/OpenAlex graphs",
+    "15_arxiv_meta_folding_spines": "ToE crosswalks, scientific expansion waves",
+    "16_prereg_scaffolds": "Outcome tracking, material verification scaffolds",
+    "17_llm_agents_oracles": "Certified agents, binary decoders, VL distill",
+    "18_public_biology_longevity": "NCBI/RCSB/The Well, zebrafish depth panels",
+    "19_physics_engineering_depth": "Climate, optics, semiconductors, HVAC",
+    "20_mathematics_formal_depth": "Pure math, fold metrics, partition tightening",
+    "21_verification_infrastructure": "Hardware panel, portable clone, network spines",
+    "22_interdisciplinary_residual": "Residual cross-domain emergence panels",
+}
 
 
 def _load_yaml(path: Path) -> dict:
@@ -972,6 +1060,135 @@ def _benchmark_cache_load(path: Path, cache: dict[str, dict]) -> dict | None:
     return data if data else None
 
 
+def _core_spine_summary_table(core_rows: list[dict]) -> list[str]:
+    lines = [
+        "### Core spine summary",
+        "",
+        "| Domain | Lean route | Records | Median error % | Tier |",
+        "|--------|------------|--------:|---------------:|------|",
+    ]
+    for row in sorted(core_rows, key=lambda r: r["domain"]):
+        lines.append(
+            f"| {row['domain']} | `{row.get('lean_domain', '')}` | "
+            f"{int(row.get('record_count') or 0):,} | "
+            f"{_fmt_pct(row.get('median_error_pct'))} | {row.get('coverage_tier', '')} |"
+        )
+    lines.append("")
+    return lines
+
+
+def _cluster_panel_index_table(rows: list[dict]) -> list[str]:
+    lines = [
+        "### Panel index",
+        "",
+        "| Panel | Records | Median error % | Tier |",
+        "|-------|--------:|---------------:|------|",
+    ]
+    for row in sorted(rows, key=lambda r: r["domain"]):
+        lines.append(
+            f"| `{row['domain']}` | {int(row.get('record_count') or 0):,} | "
+            f"{_fmt_pct(row.get('median_error_pct'))} | {row.get('coverage_tier', '')} |"
+        )
+    lines.append("")
+    return lines
+
+
+def _formula_digest_chapter(formula_by_concept: dict[str, list[dict]]) -> str:
+    """Appendix XII-E — top strict-empirical exemplars grouped by Lean route family."""
+    buckets: dict[str, list[dict]] = {}
+    for concept, rows in formula_by_concept.items():
+        row = sorted(rows, key=_formula_sort_key)[0]
+        assigned = False
+        for route, prefixes in LEAN_TO_FORMULA_PREFIXES.items():
+            if any(concept.startswith(p) for p in prefixes):
+                buckets.setdefault(route, []).append(row)
+                assigned = True
+                break
+        if not assigned:
+            if concept.startswith("IE_"):
+                buckets.setdefault("particle", []).append(row)
+            elif concept.startswith(("BE_", "BL_")):
+                buckets.setdefault("chemical", []).append(row)
+            else:
+                buckets.setdefault("cross_domain", []).append(row)
+
+    lines = [
+        "## Appendix XII-E — Formula Exemplar Digest (strict empirical)",
+        "",
+        "Curated strict-empirical rows from `vendor/formula_corpus/by_domain/strict_empirical.jsonl`. "
+        "Each Lean route family shows the lowest-error seed-derived formulas with measured targets.",
+        "",
+    ]
+    for route in sorted(buckets.keys()):
+        picks = sorted(buckets[route], key=_formula_sort_key)[:5]
+        blurb = LEAN_DOMAIN_BLURB.get(route, "cross-domain strict empirical verification")
+        lines.extend([f"### Lean route `{route}`", "", f"*{blurb}*", ""])
+        for row in picks:
+            outcome = row.get("outcome") or {}
+            concept = row.get("concept_name") or "—"
+            formula = row.get("formula_raw") or row.get("formula_map") or "—"
+            target = outcome.get("target_value") or row.get("target_quantity") or "—"
+            computed = outcome.get("computed_value") or "—"
+            err = _fmt_pct(outcome.get("error_pct"))
+            lines.append(
+                f"- **`{concept}`**: measured **{target}**, computed **{_fmt_val(computed)}** "
+                f"via `{formula}` (error **{err}%**)."
+            )
+        lines.append("")
+    return "\n".join(lines)
+
+
+def _build_section_63(written: list[dict], summary: dict, ts: str) -> str:
+    ext_chapters = [
+        w for w in written
+        if w["id"] != "00_core_spine_35" and w.get("panels", 0) > 0
+    ]
+    total_panels = sum(w.get("panels", 0) for w in ext_chapters)
+    lines = [
+        f"### 6.3 Domain-by-domain coverage ({summary.get('total_scientific_domains_covered', 403)} domains)",
+        "",
+        "FSOT does not verify a single silo — it verifies a **spine of 35 core scientific domains** "
+        f"and **{total_panels} extension panels** across **{len(ext_chapters)} thesis clusters**, "
+        "each with measured records, Lean formal modules, and registered kill criteria.",
+        "",
+        "| Layer | Count | Role |",
+        "|-------|------:|------|",
+        "| Core NeuroLab domains | 35 | Primary scientific departments (cosmology, quantum mechanics, biology, …) |",
+        f"| Extension panels | {total_panels} | Specialized depth across {len(ext_chapters)} clusters |",
+        f"| Lean formal modules | {summary.get('lean_formal_modules', 501)}+ | Machine-checked priors per panel |",
+        f"| Empirical records | {summary.get('total_empirical_records', 536740):,} | Measured vs seed-derived FSOT predictions |",
+        "",
+        "**Scientific clusters** (extension panels grouped for the thesis):",
+        "",
+        "| Cluster | Panels | Focus |",
+        "|---------|-------:|-------|",
+    ]
+    for ch in ext_chapters:
+        focus = CLUSTER_FOCUS.get(ch["id"], ch.get("title", ""))
+        lines.append(f"| {ch.get('title', ch['id'])} | {ch.get('panels', 0)} | {focus} |")
+    lines.extend(
+        [
+            "",
+            f"**Full verbose record:** [Appendix XII — Domain-by-Domain Scientific Coverage]"
+            f"(#appendix-xii--domain-by-domain-scientific-coverage-{ts}) "
+            "(auto-generated from live benchmarks).",
+            "",
+            "**Formula digest:** [Appendix XII-E — Formula Exemplar Digest]"
+            f"(#appendix-xii-e--formula-exemplar-digest-strict-empirical) "
+            "(strict-empirical corpus rollup).",
+            "",
+            "Regenerate:",
+            "",
+            "```bash",
+            "python scripts/build_readme_domain_chapters.py",
+            "python scripts/merge_readme_domain_chapters.py",
+            "```",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
 def _core_chapter(
     nav: dict,
     core_rows: list[dict],
@@ -986,6 +1203,7 @@ def _core_chapter(
         "All core domains pass the ≤0.5% green gate.",
         "",
     ]
+    lines.extend(_core_spine_summary_table(core_rows))
     for row in core_rows:
         name = row["domain"]
         meta = nav_core.get(name, {})
@@ -1124,6 +1342,7 @@ def _cluster_chapter(
         f"**Mean panel median error:** {_fmt_pct(pooled)}%",
         "",
     ]
+    lines.extend(_cluster_panel_index_table(rows))
     ext_domains = ext_manifest.get("extension_domains") or {}
     for row in sorted(rows, key=lambda r: r["domain"]):
         domain = row["domain"]
@@ -1207,10 +1426,21 @@ def main() -> int:
         )
 
     # Remove deprecated / empty chapter files
-    for stale in ("10_interdisciplinary.md", "22_interdisciplinary_residual.md"):
+    for stale in ("10_interdisciplinary.md", "22_interdisciplinary_residual.md", "04_chemistry_materials.md"):
         path = OUT / stale
         if path.is_file() and stale not in {f"{w['id']}.md" for w in written}:
             path.unlink()
+
+    digest_path = OUT / "23_appendix_xii_e_formula_digest.md"
+    digest_path.write_text(_formula_digest_chapter(formula_by_concept), encoding="utf-8")
+    written.append(
+        {
+            "id": "23_appendix_xii_e_formula_digest",
+            "title": "Appendix XII-E — Formula Exemplar Digest",
+            "file": str(digest_path.relative_to(ROOT)).replace("\\", "/"),
+            "panels": 0,
+        }
+    )
 
     index_lines = [
         "# Domain Chapter Index",
@@ -1230,8 +1460,13 @@ def main() -> int:
     for w in written[1:]:
         index_lines.append(f"| {w.get('title', w['id'])} | {w.get('panels', 0)} | `{Path(w['file']).name}` |")
 
+    index_lines.append(f"| Appendix XII-E formula digest | — | `{digest_path.name}` |")
     index_path = OUT / "INDEX.md"
     index_path.write_text("\n".join(index_lines) + "\n", encoding="utf-8")
+
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    SECTION_63.parent.mkdir(parents=True, exist_ok=True)
+    SECTION_63.write_text(_build_section_63(written, summary, ts), encoding="utf-8")
 
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

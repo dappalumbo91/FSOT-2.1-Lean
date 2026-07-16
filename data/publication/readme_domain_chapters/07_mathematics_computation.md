@@ -2,6 +2,39 @@
 
 **Panels:** 28 · **Records:** 21,803 · **Mean panel median error:** 0.00854252%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Adversarial_Fractal_Break_Tests` | 24 | 0 | B_verified |
+| `Alternate_Base_Mathematics_Explorer_Panel` | 56 | 0.009504 | B_verified |
+| `Alternate_Base_Mathematics_Spine` | 24 | 0.00418478 | B_verified |
+| `Bibliography_Corpus_Panel` | 24 | 0.0380165 | B_verified |
+| `Bibliography_Lean_Corpus` | 21 | 0.020055 | B_verified |
+| `Canonical_Oracle_Panel` | 24 | 0.013294 | B_verified |
+| `Computational_Reasoning` | 577 | 0 | A_strong |
+| `Creative_Arts_Math_Spine` | 56 | 0 | B_verified |
+| `Domain_Coupling_Simulation` | 18,691 | 0 | A_strong |
+| `Domain_Coupling_Simulation_Refresh_Panel` | 22 | 0 | B_verified |
+| `Early_Lean_MC_Panel` | 24 | 0.014767 | B_verified |
+| `FSOT_Aggregate_Organized_Panel` | 24 | 0 | B_verified |
+| `FSOT_Aggregate_Unified_DB` | 24 | 0 | B_verified |
+| `Formula_Branching_Fractal` | 255 | 0.0380165 | A_strong |
+| `Formula_Corpus_CNC` | 21 | 0.020055 | B_verified |
+| `Formula_Corpus_Closure` | 123 | 0 | A_strong |
+| `Formula_Precision_Spine` | 27 | 0 | B_verified |
+| `Knowledge_Base_Portable_Bundle_Panel` | 24 | 0.00209239 | B_verified |
+| `Math_Generator_Airfoil_RMSE` | 21 | 0.020055 | B_verified |
+| `Math_Generator_Benchmark_Formula_Eval` | 21 | 0.020055 | B_verified |
+| `Math_Generator_Rules_Eval` | 1,552 | 0 | A_strong |
+| `Proof_Ledger_Closure_Spine` | 24 | 0 | B_verified |
+| `Rust_Lean_Bridge` | 24 | 0 | B_verified |
+| `Rust_Lean_Bridge_Panel` | 24 | 0.014767 | B_verified |
+| `ToE_Claim_Certificate_Bundle` | 24 | 0.00209239 | B_verified |
+| `Tokenization_Live_Panel` | 24 | 0.022236 | B_verified |
+| `Tokenization_Smoke` | 24 | 0 | B_verified |
+| `XR_Interactive_Media_Math_Scaffold` | 24 | 0 | B_verified |
+
 #### Adversarial Fractal Break Tests
 
 Extension panel **`Adversarial_Fractal_Break_Tests`** (verification tier 46) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.AdversarialFractalBreakPriors`. This panel extends the core spine into adversarial fractal break tests observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

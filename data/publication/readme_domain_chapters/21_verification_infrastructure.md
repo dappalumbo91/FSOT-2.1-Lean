@@ -2,6 +2,22 @@
 
 **Panels:** 11 · **Records:** 1,130 · **Mean panel median error:** 0.012212%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Hybrid_FI_Sim_Multi_Hero_Panel` | 24 | 0.008488 | B_verified |
+| `Hybrid_FI_Sim_Stratum_Deep_Panel` | 24 | 0.018003 | B_verified |
+| `Living_FSOT_Hardware_Panel` | 77 | 0.031506 | B_verified |
+| `Network_Internet_Protocols` | 22 | 0.0103371 | B_verified |
+| `Network_Science_Public_Panel` | 24 | 0 | B_verified |
+| `Portable_Clone_Verify` | 290 | 0 | A_strong |
+| `Public_Verifiable_Spine` | 20 | 0 | B_verified |
+| `Secure_Software_Engineering` | 59 | 0 | B_verified |
+| `Stumped_Observables_Panel` | 24 | 0.029749 | B_verified |
+| `Stumped_Observables_Spine` | 24 | 0.027761 | B_verified |
+| `UAP_War_Gov_Release_Panel` | 542 | 0.008488 | A_strong |
+
 #### Hybrid FI Sim Multi Hero Panel
 
 Extension panel **`Hybrid_FI_Sim_Multi_Hero_Panel`** (verification tier 77) evaluates **24** measured records at **0.008488%** pooled median error (B_verified). Formal module: `FSOT.Formal.HybridFiSimMultiHeroPanelPriors`. This panel extends the core spine into hybrid fi sim multi hero panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

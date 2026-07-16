@@ -2,6 +2,20 @@
 
 **Panels:** 9 · **Records:** 450 · **Mean panel median error:** 0.0150861%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `FPC_Fluidlink_Timing_Deep_Panel` | 24 | 0.021118 | B_verified |
+| `FPC_Temporal_Coupling` | 24 | 0.029733 | B_verified |
+| `Fluid_Phase_Current_Spine` | 24 | 0.022997 | B_verified |
+| `Fluid_Spacetime_Observable_Spine` | 29 | 0.000595 | B_verified |
+| `Fluid_Spacetime_Prereg_Validation_Panel` | 24 | 0 | B_verified |
+| `Term3_Acoustic_Bleed_Depth` | 23 | 0.0083815 | B_verified |
+| `Time_Domain_Crosswalk` | 250 | 0.028056 | A_strong |
+| `Time_Emergence_Deep_Panel` | 24 | 0.024894 | B_verified |
+| `Time_Emergence_Simulation` | 28 | 0 | B_verified |
+
 #### FPC Fluidlink Timing Deep Panel
 
 Extension panel **`FPC_Fluidlink_Timing_Deep_Panel`** (verification tier 76) evaluates **24** measured records at **0.021118%** pooled median error (B_verified). Formal module: `FSOT.Formal.FpcFluidlinkTimingDeepPanelPriors`. This panel extends the core spine into fpc fluidlink timing deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

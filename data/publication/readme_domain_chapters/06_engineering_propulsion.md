@@ -2,6 +2,31 @@
 
 **Panels:** 20 · **Records:** 2,056 · **Mean panel median error:** 0.0148513%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Architecture_Building_Science` | 43 | 0.0786975 | B_verified |
+| `BlackHole_WhiteHole_Cycle_Live_Panel` | 24 | 0.026472 | B_verified |
+| `Breakthrough_Discoveries_2024_2026` | 21 | 0 | B_verified |
+| `Civil_Engineering` | 37 | 0.033526 | B_verified |
+| `Civil_Engineering_Panel` | 20 | 0.01341 | B_verified |
+| `Desktop_Application_Wiring_Spine` | 81 | 0 | B_verified |
+| `Electrical_Power_Systems` | 24 | 0.015583 | B_verified |
+| `Mechanical_Engineering` | 50 | 0.01731 | B_verified |
+| `Mechanical_Engineering_Panel` | 20 | 0.039349 | B_verified |
+| `Robotics_Control_Systems` | 45 | 0 | B_verified |
+| `Robotics_Control_Systems_Panel` | 20 | 0.01341 | B_verified |
+| `Space_Propulsion_Systems` | 21 | 0 | B_verified |
+| `Star_Trek_Transporter_Live_Panel` | 1,413 | 0.031159 | A_strong |
+| `Trinary_Hardware_Live_Panel` | 37 | 0.014767 | B_verified |
+| `Trinary_Hardware_Motif` | 24 | 0 | B_verified |
+| `Trinary_OS_ISA_Rebuild` | 38 | 0 | B_verified |
+| `Trinary_OS_Portable` | 24 | 0.013342 | B_verified |
+| `Trinary_OS_Round_Trip` | 22 | 0 | B_verified |
+| `Trinary_OS_Tier_E` | 68 | 0 | B_verified |
+| `Warp_BH_WH_Portal_Panel` | 24 | 0 | B_verified |
+
 #### Architecture Building Science
 
 Extension panel **`Architecture_Building_Science`** (verification tier 34) evaluates **43** measured records at **0.0786975%** pooled median error (B_verified). Formal module: `FSOT.Formal.ArchitectureBuildingScienceGapFillPriors`. This panel extends the core spine into architecture building science observables — predictions are seed-derived; kill criteria are registered in the domain navigator.

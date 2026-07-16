@@ -1,4 +1,4 @@
-generated_at: '2026-07-16T12:31:28.474927+00:00'
+generated_at: '2026-07-16T12:45:09.947799+00:00'
 chapters:
 - id: 00_core_spine_35
   file: data\publication\readme_domain_chapters\00_core_spine_35.md
@@ -11,14 +11,34 @@ chapters:
   title: Space Weather, Geophysics & Planetary Science
   file: data/publication/readme_domain_chapters/02_space_geophysics.md
   panels: 31
+- id: 03_genomics_medicine
+  title: Genomics, Immunology & Clinical Medicine
+  file: data/publication/readme_domain_chapters/03_genomics_medicine.md
+  panels: 18
+- id: 03_ecology_species
+  title: Ecology, Species Catalogs & Agricultural Systems
+  file: data/publication/readme_domain_chapters/03_ecology_species.md
+  panels: 20
 - id: 03_biology_genomics
-  title: Biology, Genomics, Medicine & Ecology
+  title: Synthetic Biology, Code Genomes & Life-System Bridges
   file: data/publication/readme_domain_chapters/03_biology_genomics.md
-  panels: 53
-- id: 04_chemistry_materials
-  title: Chemistry, Materials & Molecular Engineering
-  file: data/publication/readme_domain_chapters/04_chemistry_materials.md
-  panels: 41
+  panels: 16
+- id: 04_fusion_fuels
+  title: Fusion Physics, Fuels & Thermochemistry
+  file: data/publication/readme_domain_chapters/04_fusion_fuels.md
+  panels: 11
+- id: 04_periodic_superheavy
+  title: Periodic Extension, Island of Stability & Element Synthesis
+  file: data/publication/readme_domain_chapters/04_periodic_superheavy.md
+  panels: 14
+- id: 04_materials_engineering
+  title: Materials Engineering, Metamaterials & Condensed Matter
+  file: data/publication/readme_domain_chapters/04_materials_engineering.md
+  panels: 8
+- id: 04_chemistry_molecular
+  title: Molecular Chemistry, PubChem & Compound Properties
+  file: data/publication/readme_domain_chapters/04_chemistry_molecular.md
+  panels: 8
 - id: 05_consciousness_social
   title: Consciousness, Neuroscience & Social Sciences
   file: data/publication/readme_domain_chapters/05_consciousness_social.md
@@ -74,7 +94,7 @@ chapters:
 - id: 18_public_biology_longevity
   title: Public Biology, Longevity & Wet-Lab Depth Panels
   file: data/publication/readme_domain_chapters/18_public_biology_longevity.md
-  panels: 18
+  panels: 17
 - id: 19_physics_engineering_depth
   title: Climate, Geoscience Depth & Applied Physics Panels
   file: data/publication/readme_domain_chapters/19_physics_engineering_depth.md
@@ -87,8 +107,12 @@ chapters:
   title: Verification Infrastructure, Hardware & Network Spines
   file: data/publication/readme_domain_chapters/21_verification_infrastructure.md
   panels: 11
+- id: 23_appendix_xii_e_formula_digest
+  title: Appendix XII-E — Formula Exemplar Digest
+  file: data/publication/readme_domain_chapters/23_appendix_xii_e_formula_digest.md
+  panels: 0
 total_domains: 402
 core_domains: 35
 extension_panels: 367
-interdisciplinary_subclusters: 12
+interdisciplinary_subclusters: 13
 merge_command: python scripts/merge_readme_domain_chapters.py

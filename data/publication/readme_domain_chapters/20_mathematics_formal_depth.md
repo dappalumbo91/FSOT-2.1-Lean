@@ -2,6 +2,30 @@
 
 **Panels:** 19 · **Records:** 2,784 · **Mean panel median error:** 0.0143441%
 
+### Panel index
+
+| Panel | Records | Median error % | Tier |
+|-------|--------:|---------------:|------|
+| `Adjacent_Rung_Coupling` | 36 | 0.0200982 | B_verified |
+| `Boundary_Partition_Tightening` | 24 | 0.0176727 | B_verified |
+| `Compactification_Ladder` | 60 | 0.0220747 | B_verified |
+| `Experimental_Base_Mathematics_Panel` | 36 | 0.009504 | B_verified |
+| `Fold_Depth_Metrics` | 51 | 0.0257538 | B_verified |
+| `Fractal_Constant_Recursion` | 21 | 0 | B_verified |
+| `Information_Theory_Public_Panel` | 24 | 0 | B_verified |
+| `Mathematics_Computational` | 20 | 1.40902e-14 | B_verified |
+| `Nothing_Perfection_Friction_Origin_Panel` | 24 | 0.008488 | B_verified |
+| `Observer_Channel_Derivation` | 348 | 0.0525103 | A_strong |
+| `Overflow_Carry_Emergence_Panel` | 29 | 0.009504 | B_verified |
+| `Phi_Morphogenetic_Scaling` | 289 | 0.0176078 | A_strong |
+| `Prediction_Rederivation` | 21 | 0.0281605 | B_verified |
+| `Programming_Language_Laws` | 107 | 0 | A_strong |
+| `Pure_Mathematics` | 1,578 | 0 | A_strong |
+| `Pure_Mathematics_Panel` | 44 | 0.02584 | B_verified |
+| `RD_Interval_Tightening_Panel` | 24 | 0.000502 | B_verified |
+| `Scalar_Solver_35_Panel` | 24 | 0.014767 | B_verified |
+| `Zero_Boundary_Not_Entity_Panel` | 24 | 0.020055 | B_verified |
+
 #### Adjacent Rung Coupling
 
 Extension panel **`Adjacent_Rung_Coupling`** (verification tier 49) evaluates **36** measured records at **0.0200982%** pooled median error (B_verified). Formal module: `FSOT.Formal.AdjacentRungCouplingPriors`. This panel extends the core spine into adjacent rung coupling observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
