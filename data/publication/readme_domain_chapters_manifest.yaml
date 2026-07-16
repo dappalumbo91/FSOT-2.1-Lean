@@ -1,4 +1,4 @@
-generated_at: '2026-07-16T12:02:54.574936+00:00'
+generated_at: '2026-07-16T12:12:00.611169+00:00'
 chapters:
 - id: 00_core_spine_35
   file: data\publication\readme_domain_chapters\00_core_spine_35.md
@@ -22,7 +22,7 @@ chapters:
 - id: 05_consciousness_social
   title: Consciousness, Neuroscience & Social Sciences
   file: data/publication/readme_domain_chapters/05_consciousness_social.md
-  panels: 23
+  panels: 21
 - id: 06_engineering_propulsion
   title: Engineering, Propulsion & Verified Desktop Technology
   file: data/publication/readme_domain_chapters/06_engineering_propulsion.md
@@ -39,11 +39,56 @@ chapters:
   title: Founding 35 Physics Laws (Dedicated Panels)
   file: data/publication/readme_domain_chapters/09_founding_laws.md
   panels: 7
-- id: 10_interdisciplinary
-  title: Interdisciplinary, Meta & Cross-Domain Panels
-  file: data/publication/readme_domain_chapters/10_interdisciplinary.md
-  panels: 129
+- id: 10_live_ingest_astrometry
+  title: Live Ingest, Astrometry & Real-Time Catalog Spines
+  file: data/publication/readme_domain_chapters/10_live_ingest_astrometry.md
+  panels: 13
+- id: 11_fluid_spacetime_time
+  title: Fluid Spacetime, Temporal Coupling & Phase Spines
+  file: data/publication/readme_domain_chapters/11_fluid_spacetime_time.md
+  panels: 9
+- id: 12_finance_economics_logistics
+  title: Finance, Econometrics & Supply-Chain Logistics
+  file: data/publication/readme_domain_chapters/12_finance_economics_logistics.md
+  panels: 8
+- id: 13_music_arts_creative
+  title: Music, Harmonics & Creative Media
+  file: data/publication/readme_domain_chapters/13_music_arts_creative.md
+  panels: 2
+- id: 14_government_open_data
+  title: Government Registries, Open Data & Scholarly Graphs
+  file: data/publication/readme_domain_chapters/14_government_open_data.md
+  panels: 6
+- id: 15_arxiv_meta_folding_spines
+  title: arXiv Meta-Panels, Folding Spines & ToE Crosswalks
+  file: data/publication/readme_domain_chapters/15_arxiv_meta_folding_spines.md
+  panels: 17
+- id: 16_prereg_scaffolds
+  title: Preregistered Outcome Tracking & Verification Scaffolds
+  file: data/publication/readme_domain_chapters/16_prereg_scaffolds.md
+  panels: 5
+- id: 17_llm_agents_oracles
+  title: LLM Validators, Certified Agents & Oracle Decoders
+  file: data/publication/readme_domain_chapters/17_llm_agents_oracles.md
+  panels: 8
+- id: 18_public_biology_longevity
+  title: Public Biology, Longevity & Wet-Lab Depth Panels
+  file: data/publication/readme_domain_chapters/18_public_biology_longevity.md
+  panels: 18
+- id: 19_physics_engineering_depth
+  title: Climate, Geoscience Depth & Applied Physics Panels
+  file: data/publication/readme_domain_chapters/19_physics_engineering_depth.md
+  panels: 15
+- id: 20_mathematics_formal_depth
+  title: Pure Mathematics, Formal Depth & Fold Metrics
+  file: data/publication/readme_domain_chapters/20_mathematics_formal_depth.md
+  panels: 19
+- id: 21_verification_infrastructure
+  title: Verification Infrastructure, Hardware & Network Spines
+  file: data/publication/readme_domain_chapters/21_verification_infrastructure.md
+  panels: 11
 total_domains: 402
 core_domains: 35
 extension_panels: 367
+interdisciplinary_subclusters: 12
 merge_command: python scripts/merge_readme_domain_chapters.py

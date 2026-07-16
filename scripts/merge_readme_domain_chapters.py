@@ -26,7 +26,19 @@ CHAPTER_ORDER = (
     "07_mathematics_computation.md",
     "08_cybersecurity.md",
     "09_founding_laws.md",
-    "10_interdisciplinary.md",
+    "10_live_ingest_astrometry.md",
+    "11_fluid_spacetime_time.md",
+    "12_finance_economics_logistics.md",
+    "13_music_arts_creative.md",
+    "14_government_open_data.md",
+    "15_arxiv_meta_folding_spines.md",
+    "16_prereg_scaffolds.md",
+    "17_llm_agents_oracles.md",
+    "18_public_biology_longevity.md",
+    "19_physics_engineering_depth.md",
+    "20_mathematics_formal_depth.md",
+    "21_verification_infrastructure.md",
+    "22_interdisciplinary_residual.md",
 )
 
 
@@ -79,7 +91,7 @@ def main() -> int:
 
     readme = re.sub(
         r"\*\*Edition:\*\* v1\.[0-9]+[^\n]*",
-        f"**Edition:** v1.2 — domain chapters {ts}",
+        f"**Edition:** v1.3 — domain chapters deepening {ts}",
         readme,
         count=1,
     )
