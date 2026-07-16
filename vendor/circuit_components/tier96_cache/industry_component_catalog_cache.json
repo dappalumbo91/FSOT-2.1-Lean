@@ -1,0 +1,296 @@
+{
+  "source": "EIA-96, IEC 60115, Murata/KEMET parametric anchors, TI/ON Semi datasheets, NIST CODATA",
+  "schema_version": "1.0",
+  "component_count": 27,
+  "reference_circuit_count": 5,
+  "by_class": {
+    "resistor": 8,
+    "capacitor": 5,
+    "inductor": 3,
+    "semiconductor": 5,
+    "power": 3,
+    "connector": 1,
+    "crystal": 2
+  },
+  "components": [
+    {
+      "id": "R_10R_1pct",
+      "class": "resistor",
+      "designator": "R1",
+      "resistance_ohm": 10,
+      "tolerance_pct": 1,
+      "power_w": 0.25,
+      "tcr_ppm": 100
+    },
+    {
+      "id": "R_100R_1pct",
+      "class": "resistor",
+      "designator": "R2",
+      "resistance_ohm": 100,
+      "tolerance_pct": 1,
+      "power_w": 0.25,
+      "tcr_ppm": 100
+    },
+    {
+      "id": "R_1k_1pct",
+      "class": "resistor",
+      "designator": "R3",
+      "resistance_ohm": 1000,
+      "tolerance_pct": 1,
+      "power_w": 0.25,
+      "tcr_ppm": 100
+    },
+    {
+      "id": "R_10k_1pct",
+      "class": "resistor",
+      "designator": "R4",
+      "resistance_ohm": 10000,
+      "tolerance_pct": 1,
+      "power_w": 0.125,
+      "tcr_ppm": 100
+    },
+    {
+      "id": "R_47k_5pct",
+      "class": "resistor",
+      "designator": "R5",
+      "resistance_ohm": 47000,
+      "tolerance_pct": 5,
+      "power_w": 0.125,
+      "tcr_ppm": 200
+    },
+    {
+      "id": "R_100k_1pct",
+      "class": "resistor",
+      "designator": "R6",
+      "resistance_ohm": 100000,
+      "tolerance_pct": 1,
+      "power_w": 0.125,
+      "tcr_ppm": 100
+    },
+    {
+      "id": "R_4k7_EIA96",
+      "class": "resistor",
+      "designator": "R7",
+      "resistance_ohm": 4700,
+      "tolerance_pct": 1,
+      "power_w": 0.25,
+      "tcr_ppm": 100,
+      "eia96": true
+    },
+    {
+      "id": "R_22R_5pct",
+      "class": "resistor",
+      "designator": "R8",
+      "resistance_ohm": 22,
+      "tolerance_pct": 5,
+      "power_w": 0.25,
+      "tcr_ppm": 200
+    },
+    {
+      "id": "C_10nF_X7R",
+      "class": "capacitor",
+      "designator": "C1",
+      "capacitance_f": 1e-08,
+      "voltage_v": 50,
+      "esr_ohm": 0.05,
+      "dielectric": "X7R"
+    },
+    {
+      "id": "C_100nF_X7R",
+      "class": "capacitor",
+      "designator": "C2",
+      "capacitance_f": 1e-07,
+      "voltage_v": 50,
+      "esr_ohm": 0.03,
+      "dielectric": "X7R"
+    },
+    {
+      "id": "C_1uF_X5R",
+      "class": "capacitor",
+      "designator": "C3",
+      "capacitance_f": 1e-06,
+      "voltage_v": 25,
+      "esr_ohm": 0.02,
+      "dielectric": "X5R"
+    },
+    {
+      "id": "C_10uF_electrolytic",
+      "class": "capacitor",
+      "designator": "C4",
+      "capacitance_f": 1e-05,
+      "voltage_v": 16,
+      "esr_ohm": 0.5,
+      "dielectric": "electrolytic"
+    },
+    {
+      "id": "C_100pF_C0G",
+      "class": "capacitor",
+      "designator": "C5",
+      "capacitance_f": 1e-10,
+      "voltage_v": 50,
+      "esr_ohm": 0.01,
+      "dielectric": "C0G"
+    },
+    {
+      "id": "L_10uH_power",
+      "class": "inductor",
+      "designator": "L1",
+      "inductance_h": 1e-05,
+      "dcr_ohm": 0.08,
+      "saturation_a": 2.5,
+      "q_factor": 45
+    },
+    {
+      "id": "L_100uH_rf",
+      "class": "inductor",
+      "designator": "L2",
+      "inductance_h": 0.0001,
+      "dcr_ohm": 0.35,
+      "saturation_a": 0.8,
+      "q_factor": 60
+    },
+    {
+      "id": "L_1mH_filter",
+      "class": "inductor",
+      "designator": "L3",
+      "inductance_h": 0.001,
+      "dcr_ohm": 1.2,
+      "saturation_a": 0.5,
+      "q_factor": 35
+    },
+    {
+      "id": "Q_2N3904",
+      "class": "semiconductor",
+      "designator": "Q1",
+      "hfe": 150,
+      "vce_sat_v": 0.2,
+      "bandwidth_hz": 300000000
+    },
+    {
+      "id": "Q_IRLZ44N",
+      "class": "semiconductor",
+      "designator": "Q2",
+      "rdson_ohm": 0.022,
+      "vgs_th_v": 2.0,
+      "bandwidth_hz": null
+    },
+    {
+      "id": "D_1N4148",
+      "class": "semiconductor",
+      "designator": "D1",
+      "vf_v": 0.72,
+      "reverse_v_v": 75,
+      "bandwidth_hz": null
+    },
+    {
+      "id": "U_LM358",
+      "class": "semiconductor",
+      "designator": "U1",
+      "gbw_hz": 1000000,
+      "slew_v_us": 0.6,
+      "iq_ma": 0.7
+    },
+    {
+      "id": "U_TL431",
+      "class": "semiconductor",
+      "designator": "U2",
+      "vref_v": 2.495,
+      "iq_ma": 0.1,
+      "bandwidth_hz": null
+    },
+    {
+      "id": "PS_BUCK_5V3A",
+      "class": "power",
+      "designator": "PS1",
+      "vin_v": 12,
+      "vout_v": 5,
+      "iout_a": 3,
+      "efficiency_pct": 92,
+      "ripple_mv": 30
+    },
+    {
+      "id": "PS_LDO_3V3",
+      "class": "power",
+      "designator": "PS2",
+      "vin_v": 5,
+      "vout_v": 3.3,
+      "iout_a": 1,
+      "efficiency_pct": 66,
+      "ripple_mv": 5
+    },
+    {
+      "id": "PS_BOOST_12V",
+      "class": "power",
+      "designator": "PS3",
+      "vin_v": 3.7,
+      "vout_v": 12,
+      "iout_a": 0.5,
+      "efficiency_pct": 88,
+      "ripple_mv": 50
+    },
+    {
+      "id": "J_USB_C",
+      "class": "connector",
+      "designator": "J1",
+      "rated_a": 3,
+      "rated_v": 20,
+      "contact_resistance_mohm": 30
+    },
+    {
+      "id": "XTAL_16MHz",
+      "class": "crystal",
+      "designator": "Y1",
+      "frequency_hz": 16000000,
+      "load_cap_pf": 18,
+      "esr_ohm": 40
+    },
+    {
+      "id": "XTAL_32kHz",
+      "class": "crystal",
+      "designator": "Y2",
+      "frequency_hz": 32768,
+      "load_cap_pf": 12.5,
+      "esr_ohm": 70
+    }
+  ],
+  "reference_circuits": [
+    {
+      "id": "RC_10k_100nF",
+      "R_ohm": 10000,
+      "C_f": 1e-07,
+      "tau_s": 0.001,
+      "source": "\u03c4=RC textbook"
+    },
+    {
+      "id": "RC_1k_10uF",
+      "R_ohm": 1000,
+      "C_f": 1e-05,
+      "tau_s": 0.01,
+      "source": "\u03c4=RC textbook"
+    },
+    {
+      "id": "LC_10uH_100nF",
+      "L_h": 1e-05,
+      "C_f": 1e-07,
+      "f_res_hz": 159154.94,
+      "source": "f=1/(2\u03c0\u221aLC)"
+    },
+    {
+      "id": "divider_10k_10k",
+      "R_top_ohm": 10000,
+      "R_bot_ohm": 10000,
+      "vin_v": 5,
+      "vout_v": 2.5,
+      "source": "resistive divider"
+    },
+    {
+      "id": "power_5V_1k",
+      "V_v": 5,
+      "R_ohm": 1000,
+      "P_w": 0.025,
+      "source": "P=V\u00b2/R"
+    }
+  ],
+  "fetched_at": "2026-07-16T13:53:55.695129+00:00",
+  "credential_free": true
+}

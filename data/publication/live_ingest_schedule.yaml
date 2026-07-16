@@ -1,0 +1,22 @@
+version: "1.0"
+updated: "2026-07-16"
+policy: scheduled_credibility_refresh
+cadence: weekly
+description: >
+  Live catalog ingest refresh for Gaia, GWOSC, NASA NEO, and Tier 68 panels.
+  Run manually or via OS scheduler (Task Scheduler / cron) to keep contested-sector
+  and astrometry credibility surfaces current.
+
+command: python scripts/build_live_ingest_refresh_bundle.py
+
+full_credibility_depth: python scripts/build_credibility_depth_bundle.py
+
+windows_task_scheduler:
+  name: FSOT-Live-Ingest-Weekly
+  trigger: weekly_sunday_0300_local
+  working_directory: I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full
+
+outputs:
+  - data/publication/live_ingest_refresh_report.json
+  - data/contested_observables_closure.json
+  - data/fsot_domain_navigator.json

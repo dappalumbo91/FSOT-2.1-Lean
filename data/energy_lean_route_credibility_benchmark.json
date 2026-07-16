@@ -1,0 +1,272 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-16T13:53:55.471719+00:00",
+  "domain": "Energy_Lean_Route_Credibility",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "lean_route_credibility_expansion:energy"
+  ],
+  "maps_to_lean": [
+    "energy"
+  ],
+  "D_eff": 15,
+  "record_count": 12,
+  "observable_count": 12,
+  "scalar_record_count": 12,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0019315,
+  "pooled_median_error_pct": 0.0019315,
+  "headline_median_error_pct": 0.039349,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "energy": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "unguided energy route"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_lean_route_energy_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.001932,
+      "measured": 0.0,
+      "error_pct": 0.0019315,
+      "observable_count": 12
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "lean_route_energy",
+      "name": "credibility_depth",
+      "computed": 0.039349,
+      "measured": 0.0,
+      "error_pct": 0.039349,
+      "observable_count": 9
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "lean_route_energy_lab",
+      "property": "anchor_pooled_median",
+      "name": "electrical",
+      "computed": 0.015583023735736914,
+      "measured": 0.015583023735736914,
+      "error_pct": 0.0,
+      "eval_kind": "lean_route_bridge",
+      "lean_route": "energy"
+    },
+    {
+      "lab": "electrical_power_systems_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Cosmology_Extended",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Cosmology_Extended__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Cosmology Extended astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "lean_route_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation",
+      "lean_route": "energy"
+    },
+    {
+      "lab": "electrical_power_systems_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Planetary_Structure",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Planetary_Structure__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Planetary Structure astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "lean_route_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation",
+      "lean_route": "energy"
+    },
+    {
+      "lab": "lean_route_energy_lab",
+      "property": "anchor_pooled_median",
+      "name": "hvac",
+      "computed": 0.017836062884411003,
+      "measured": 0.017836062884411003,
+      "error_pct": 0.0,
+      "eval_kind": "lean_route_bridge",
+      "lean_route": "energy"
+    },
+    {
+      "lab": "hvac_thermal_systems_depth_lab",
+      "property": "molecular_weight",
+      "name": "2244",
+      "computed": 180.159,
+      "measured": 180.16,
+      "error_pct": 0.000555,
+      "eval_kind": "lean_route_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C9H8O4",
+      "within_band": true,
+      "domain_display_name": "pubchem live deep",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "effective_error_pct": 0.000555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep",
+      "lean_route": "energy"
+    },
+    {
+      "lab": "hvac_thermal_systems_depth_lab",
+      "property": "molecular_weight",
+      "name": "1983",
+      "computed": 151.165,
+      "measured": 151.16,
+      "error_pct": 0.003308,
+      "eval_kind": "lean_route_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C8H9NO2",
+      "within_band": true,
+      "domain_display_name": "pubchem live deep",
+      "display_name": "1983",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003308,
+        "effective_error_pct": 0.003308,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep",
+      "lean_route": "energy"
+    },
+    {
+      "lab": "lean_route_energy_lab",
+      "property": "anchor_pooled_median",
+      "name": "fuel_lab",
+      "computed": 0.039349,
+      "measured": 0.039349,
+      "error_pct": 0.0,
+      "eval_kind": "lean_route_bridge",
+      "lean_route": "energy"
+    },
+    {
+      "lab": "fuel_lab_live_lab",
+      "property": "lhv_kj_per_kg",
+      "name": "fsot_hemp_waste_grounded",
+      "computed": 21891.228618,
+      "measured": 21882.618086633818,
+      "error_pct": 0.039349,
+      "eval_kind": "lean_route_relay",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "desktop_fuel_lab_engine_simulator",
+      "lean_route": "energy"
+    },
+    {
+      "lab": "fuel_lab_live_lab",
+      "property": "stoich_afr",
+      "name": "fsot_hemp_waste_grounded",
+      "computed": 7.481732,
+      "measured": 7.478789001995101,
+      "error_pct": 0.039349,
+      "eval_kind": "lean_route_relay",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "desktop_fuel_lab_engine_simulator",
+      "lean_route": "energy"
+    },
+    {
+      "lab": "lean_route_energy_lab",
+      "property": "energy_density_wh_kg",
+      "name": "Li-ion EV cell (2024)",
+      "computed": 296.116472,
+      "measured": 296.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "lean_route": "energy",
+      "type": "battery"
+    },
+    {
+      "lab": "lean_route_energy_lab",
+      "property": "energy_density_wh_kg",
+      "name": "Li-ion lab record (2025)",
+      "computed": 350.137721,
+      "measured": 350.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "lean_route": "energy",
+      "type": "battery"
+    },
+    {
+      "lab": "lean_route_energy_lab",
+      "property": "energy_density_wh_kg",
+      "name": "Solid-state prototype",
+      "computed": 400.157395,
+      "measured": 400.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "lean_route": "energy",
+      "type": "battery"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0019315,
+    "max_scalar_error_pct": 0.039349,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

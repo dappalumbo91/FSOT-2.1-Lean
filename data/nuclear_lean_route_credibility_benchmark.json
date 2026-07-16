@@ -1,0 +1,134 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-16T13:53:55.482298+00:00",
+  "domain": "Nuclear_Lean_Route_Credibility",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "lean_route_credibility_expansion:nuclear"
+  ],
+  "maps_to_lean": [
+    "nuclear",
+    "particle"
+  ],
+  "D_eff": 15,
+  "record_count": 3,
+  "observable_count": 3,
+  "scalar_record_count": 3,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.021221,
+  "pooled_median_error_pct": 0.021221,
+  "headline_median_error_pct": 0.021221,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "nuclear": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "unguided nuclear route"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_lean_route_nuclear_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.021221,
+      "measured": 0.0,
+      "error_pct": 0.021221,
+      "observable_count": 3
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "lean_route_nuclear",
+      "name": "credibility_depth",
+      "computed": 0.021221,
+      "measured": 0.0,
+      "error_pct": 0.021221,
+      "observable_count": 2
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "lean_route_nuclear_lab",
+      "property": "relay_pooled_median",
+      "name": "Founding_Cosmic_Ray_Panel",
+      "computed": 0.021221,
+      "measured": 0.021221,
+      "error_pct": 0.0,
+      "eval_kind": "lean_route_bridge",
+      "lean_route": "nuclear"
+    },
+    {
+      "lab": "lean_route_nuclear_lab",
+      "property": "cosmic_ray_anisotropy_amplitude",
+      "name": "dipole_amplitude_100TeV",
+      "computed": 0.0062013157,
+      "measured": 0.0062,
+      "error_pct": 0.021221,
+      "unit": "fraction",
+      "literature_reference": "IceCube HESE anisotropy (Aartsen et al. 2017)",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 12",
+      "display_name": "dipole amplitude 100TeV",
+      "scientific_measurement": {
+        "delta": 1.32e-06,
+        "delta_pct": 0.021221,
+        "effective_error_pct": 0.021221,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "fraction"
+      },
+      "lean_route": "nuclear"
+    },
+    {
+      "lab": "lean_route_nuclear_lab",
+      "property": "cosmic_ray_anisotropy_phase",
+      "name": "dipole_phase_ra_deg",
+      "computed": 90.0190985274,
+      "measured": 90.0,
+      "error_pct": 0.021221,
+      "unit": "deg",
+      "literature_reference": "IceCube galactic dipole phase",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 12",
+      "display_name": "dipole phase ra deg",
+      "scientific_measurement": {
+        "delta": 0.01909853,
+        "delta_pct": 0.021221,
+        "effective_error_pct": 0.021221,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "deg"
+      },
+      "lean_route": "nuclear"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.021221,
+    "max_scalar_error_pct": 0.021221,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

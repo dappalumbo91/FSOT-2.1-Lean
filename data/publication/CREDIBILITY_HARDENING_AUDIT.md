@@ -1,15 +1,15 @@
 # FSOT Credibility Hardening Audit
 
-*Generated: 2026-07-16T13:43:09.177238+00:00*
+*Generated: 2026-07-16T13:55:25.347575+00:00*
 
 Hard credibility expansion — every pillar must be independently reproducible, not rhetorical.
 
-**Score: 10/10 pillars green**
+**Score: 13/13 pillars green**
 
 | Pillar | Status | Evidence |
 |--------|:------:|----------|
 | Formal triangulation | ✓ | Lean+Coq+Isabelle+F*+Rust |
-| Benchmark green gate | ✓ | 394/394 |
+| Benchmark green gate | ✓ | 404/404 |
 | Zero free parameters | ✓ | ZERO_FREE |
 | Contested sectors | ✓ | H₀/σ₈/BBN panel |
 | Near-miss published | ✓ | transparent worst greens |
@@ -18,6 +18,9 @@ Hard credibility expansion — every pillar must be independently reproducible, 
 | Live catalog ingest | ✓ | Gaia/GWOSC/NEO refresh |
 | Genetics crosswalk | ✓ | Tier94↔Tier95 |
 | Skeptic kit | ✓ | 15-min path |
+| Lean route depth | ✓ | 7/7 routes |
+| Circuit Phase 1 | ✓ | Tier 96 BOM emergence |
+| Live ingest schedule | ✓ | weekly refresh policy |
 
 ## Headline metrics (live)
 
@@ -35,5 +38,8 @@ Hard credibility expansion — every pillar must be independently reproducible, 
 ```bash
 python scripts/run_publication_verification_bundle.py
 python scripts/build_wetlab_longevity_expansion_bundle.py
+python scripts/build_lean_route_credibility_expansion.py
+python scripts/build_circuit_component_expansion_bundle.py
+python scripts/build_credibility_depth_bundle.py
 python scripts/build_credibility_hardening_audit.py
 ```

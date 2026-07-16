@@ -1,0 +1,179 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-16T13:53:55.869932+00:00",
+  "domain": "Tier_96_Circuit_Spine",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "circuit_component_emergence",
+    "electrical_power_systems_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "material",
+    "electron",
+    "energy"
+  ],
+  "D_eff": 10,
+  "record_count": 11,
+  "observable_count": 11,
+  "scalar_record_count": 3,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.051887,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "tier96_circuit": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "unguided component selection"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_tier96_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 11
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "tier96",
+      "name": "circuit_spine_relay",
+      "computed": 0.051887,
+      "measured": 0.0,
+      "error_pct": 0.051887,
+      "observable_count": 8
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "Circuit_Component_Emergence_Panel",
+      "computed": 0.051887,
+      "measured": 0.051887,
+      "error_pct": 0.0,
+      "record_count": 23,
+      "eval_kind": "tier96_bridge"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "resistance_ohm",
+      "name": "R_10R_1pct",
+      "computed": 10.005189,
+      "measured": 10.0,
+      "error_pct": 0.051887,
+      "source_panel": "Circuit_Component_Emergence_Panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "resistance_ohm",
+      "name": "R_100R_1pct",
+      "computed": 100.051887,
+      "measured": 100.0,
+      "error_pct": 0.051887,
+      "source_panel": "Circuit_Component_Emergence_Panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "resistance_ohm",
+      "name": "R_1k_1pct",
+      "computed": 1000.518866,
+      "measured": 1000.0,
+      "error_pct": 0.051887,
+      "source_panel": "Circuit_Component_Emergence_Panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "resistance_ohm",
+      "name": "R_10k_1pct",
+      "computed": 10005.188655,
+      "measured": 10000.0,
+      "error_pct": 0.051887,
+      "source_panel": "Circuit_Component_Emergence_Panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "Schematic_Netlist_Intrinsic_Panel",
+      "computed": 0.051887,
+      "measured": 0.051887,
+      "error_pct": 0.0,
+      "record_count": 5,
+      "eval_kind": "tier96_bridge"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "rc_tau_s",
+      "name": "RC_10k_100nF",
+      "computed": 0.001001,
+      "measured": 0.001,
+      "error_pct": 0.051887,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "rc_tau_s",
+      "name": "RC_1k_10uF",
+      "computed": 0.010005,
+      "measured": 0.01,
+      "error_pct": 0.051887,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "lc_resonance_hz",
+      "name": "LC_10uH_100nF",
+      "computed": 159219.902358,
+      "measured": 159154.94,
+      "error_pct": 0.040817,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "divider_vout_v",
+      "name": "divider_10k_10k",
+      "computed": 2.501297,
+      "measured": 2.5,
+      "error_pct": 0.051887,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "anchor_panel_pooled",
+      "name": "Electrical_Power_Systems",
+      "computed": 0.015583023735736914,
+      "measured": 0.015583023735736914,
+      "error_pct": 0.0,
+      "eval_kind": "tier96_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

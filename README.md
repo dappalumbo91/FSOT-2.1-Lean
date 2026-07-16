@@ -4,7 +4,7 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.3 — wet-lab depth, credibility hardening, circuitry scaffold 2026-07-16
+**Edition:** v2.4 — lean route depth, Tier 96 Phase 1, credibility bundle 2026-07-16
 **Status:** Living thesis — expanded as each domain and crevice is verified  
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
@@ -93,7 +93,7 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 | Credibility hardening audit | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) |
 | Circuitry emergence spine | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) |
 
-*Generated: 2026-07-16T13:43:08.508518+00:00*
+*Generated: 2026-07-16T13:53:54.620938+00:00*
 <!-- README_TOC_END -->
 
 
@@ -690,11 +690,15 @@ FSOT credibility is not rhetorical — every pillar must reproduce independently
 
 | Artifact | Role |
 |----------|------|
-| [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) | Ten-pillar green gate (formal + empirical + transparency) |
+| [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) | Multi-pillar green gate (formal + empirical + lean routes + Tier 96) |
+| [`data/publication/LEAN_ROUTE_CREDIBILITY_EXPANSION.md`](data/publication/LEAN_ROUTE_CREDIBILITY_EXPANSION.md) | Under-covered Lean route benchmarks |
+| [`data/publication/live_ingest_schedule.yaml`](data/publication/live_ingest_schedule.yaml) | Weekly live catalog refresh policy |
 | [`data/publication/credibility_hardening_audit.json`](data/publication/credibility_hardening_audit.json) | Machine-readable pillar ledger |
 | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute independent falsification path |
 
-Regenerate: `python scripts/build_credibility_hardening_audit.py` (after verification bundle + wet-lab bundle).
+Regenerate: `python scripts/build_credibility_depth_bundle.py` (lean routes + live ingest + wet-lab + Tier 96 + hardening audit).
+
+**Scheduled live ingest:** `data/publication/live_ingest_schedule.yaml` — weekly `build_live_ingest_refresh_bundle.py`.
 <!-- README_CREDIBILITY_HARDENING_END -->
 
 <!-- README_CIRCUITRY_ROADMAP_START -->
@@ -704,9 +708,9 @@ Regenerate: `python scripts/build_credibility_hardening_audit.py` (after verific
 
 | Phase | Status | Deliverable |
 |-------|--------|-------------|
-| 0 — scaffold | **active** | Component-class manifest + existing panel crosswalk |
-| 1 — ingest | planned | Parametric catalog rows → strict-empirical |
-| 2 — benchmark | planned | `Circuit_Component_Emergence_Panel` green gate |
+| 0 — scaffold | complete | Component-class manifest + existing panel crosswalk |
+| 1 — ingest | **active** | Industry catalog (`vendor/circuit_components/`) |
+| 2 — benchmark | **active** | `Circuit_Component_Emergence_Panel` green gate |
 | 3 — BOM emergence | planned | Netlist → ranked industry BOM lines |
 
 **Spine:** [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) · **Manifest:** `data/circuit_component_emergence_manifest.yaml`

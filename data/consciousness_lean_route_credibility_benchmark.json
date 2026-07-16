@@ -1,0 +1,162 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-16T13:53:55.486662+00:00",
+  "domain": "Consciousness_Lean_Route_Credibility",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "lean_route_credibility_expansion:consciousness"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural"
+  ],
+  "D_eff": 16,
+  "record_count": 6,
+  "observable_count": 6,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.006671,
+  "pooled_median_error_pct": 0.006671,
+  "headline_median_error_pct": 0.013342,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "consciousness": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "unguided consciousness route"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_lean_route_consciousness_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.006671,
+      "measured": 0.0,
+      "error_pct": 0.006671,
+      "observable_count": 6
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "lean_route_consciousness",
+      "name": "credibility_depth",
+      "computed": 0.013342,
+      "measured": 0.0,
+      "error_pct": 0.013342,
+      "observable_count": 4
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "lean_route_consciousness_lab",
+      "property": "relay_pooled_median",
+      "name": "Consciousness_Econ",
+      "computed": 0.008898,
+      "measured": 0.008898,
+      "error_pct": 0.0,
+      "eval_kind": "lean_route_bridge",
+      "lean_route": "consciousness"
+    },
+    {
+      "lab": "lean_route_consciousness_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Metatron_Spheres",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "formula": "13",
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Metatron Spheres",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "lean_route": "consciousness"
+    },
+    {
+      "lab": "lean_route_consciousness_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Metatron_Pathways",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "formula": "3\u00b3=27",
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Metatron Pathways",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "lean_route": "consciousness"
+    },
+    {
+      "lab": "lean_route_consciousness_lab",
+      "property": "relay_pooled_median",
+      "name": "Longevity_Consciousness_Coupling_Panel",
+      "computed": 0.022424,
+      "measured": 0.022424,
+      "error_pct": 0.0,
+      "eval_kind": "lean_route_bridge",
+      "lean_route": "consciousness"
+    },
+    {
+      "lab": "lean_route_consciousness_lab",
+      "property": "longevity_consciousness_coupling",
+      "name": "Acipenser_gueldenstaedtii",
+      "computed": 414175.69027329,
+      "measured": 414045.24047921,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "genome_bp": 2389722506.0,
+      "longevity_quotient": 182736.18218822178,
+      "maximum_longevity_yrs": 46.0,
+      "consciousness_panel": false,
+      "eval_kind": "longevity_consciousness_bridge",
+      "lean_route": "consciousness"
+    },
+    {
+      "lab": "lean_route_consciousness_lab",
+      "property": "quirk_longevity_coupling",
+      "name": "Acipenser_gueldenstaedtii",
+      "computed": -12318.96732376,
+      "measured": -12317.32397716,
+      "error_pct": 0.013342,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_longevity_bridge",
+      "lean_route": "consciousness"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.006671,
+    "max_scalar_error_pct": 0.031506,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-07-16T13:53:55.437507+00:00",
+  "routes": [
+    {
+      "route": "energy",
+      "prior_status": "numerically_verified",
+      "record_count": 12,
+      "pooled_median_error_pct": 0.0019315,
+      "benchmark": "data/energy_lean_route_credibility_benchmark.json",
+      "green": true
+    },
+    {
+      "route": "fusion",
+      "prior_status": "numerically_verified",
+      "record_count": 11,
+      "pooled_median_error_pct": 9.5e-05,
+      "benchmark": "data/fusion_lean_route_credibility_benchmark.json",
+      "green": true
+    },
+    {
+      "route": "proton",
+      "prior_status": "numerically_verified",
+      "record_count": 4,
+      "pooled_median_error_pct": 0.020741,
+      "benchmark": "data/proton_lean_route_credibility_benchmark.json",
+      "green": true
+    },
+    {
+      "route": "nuclear",
+      "prior_status": "numerically_verified",
+      "record_count": 3,
+      "pooled_median_error_pct": 0.021221,
+      "benchmark": "data/nuclear_lean_route_credibility_benchmark.json",
+      "green": true
+    },
+    {
+      "route": "consciousness",
+      "prior_status": "numerically_verified",
+      "record_count": 6,
+      "pooled_median_error_pct": 0.006671,
+      "benchmark": "data/consciousness_lean_route_credibility_benchmark.json",
+      "green": true
+    },
+    {
+      "route": "perceived",
+      "prior_status": "numerically_verified",
+      "record_count": 3,
+      "pooled_median_error_pct": 0.0,
+      "benchmark": "data/perceived_lean_route_credibility_benchmark.json",
+      "green": true
+    },
+    {
+      "route": "observer",
+      "prior_status": "numerically_verified",
+      "record_count": 3,
+      "pooled_median_error_pct": 0.014767,
+      "benchmark": "data/observer_lean_route_credibility_benchmark.json",
+      "green": true
+    }
+  ],
+  "routes_green": 7,
+  "routes_total": 7,
+  "coverage_map_updates": 0,
+  "all_green": true
+}

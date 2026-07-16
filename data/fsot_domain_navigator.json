@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T13:29:56.954920+00:00",
+  "generated_at": "2026-07-16T13:55:22.089337+00:00",
   "version": "1.0",
   "summary": {
     "core_domains": 35,
@@ -10253,7 +10253,7 @@
         "domain": "Live_Ingest_Spine",
         "record_count": 28,
         "pooled_median_error_pct": 0.0,
-        "generated_at": "2026-07-16T13:29:55.739427+00:00",
+        "generated_at": "2026-07-16T13:55:20.809853+00:00",
         "maps_to_lean": [
           "material",
           "chemical",
@@ -10369,7 +10369,7 @@
         "domain": "Longevity_AnAge_Catalog_Panel",
         "record_count": 966,
         "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-13T12:46:21.602995+00:00",
+        "generated_at": "2026-07-16T13:42:49.618922+00:00",
         "maps_to_lean": [
           "biological",
           "neural",
@@ -10387,7 +10387,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_anage_catalog_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": "python scripts/ingest_tier94_longevity_genetics.py --deep",
@@ -10428,7 +10428,7 @@
         "domain": "Longevity_Consciousness_Coupling_Panel",
         "record_count": 890,
         "pooled_median_error_pct": 0.022424,
-        "generated_at": "2026-07-13T12:46:21.971040+00:00",
+        "generated_at": "2026-07-16T13:42:50.065540+00:00",
         "maps_to_lean": [
           "consciousness",
           "biological",
@@ -10448,7 +10448,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_longevity_consciousness_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": "python scripts/ingest_tier94_longevity_genetics.py --deep",
@@ -10488,7 +10488,7 @@
         "domain": "Longevity_Extreme_Species_Panel",
         "record_count": 164,
         "pooled_median_error_pct": 0.017789,
-        "generated_at": "2026-07-13T12:46:21.631049+00:00",
+        "generated_at": "2026-07-16T13:42:49.654163+00:00",
         "maps_to_lean": [
           "biological",
           "consciousness",
@@ -10506,7 +10506,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_extreme_species_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": "python scripts/ingest_tier94_longevity_genetics.py --deep",
@@ -10546,7 +10546,7 @@
         "domain": "Longevity_Genetic_Mechanics_Panel",
         "record_count": 35,
         "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-13T12:46:21.615122+00:00",
+        "generated_at": "2026-07-16T13:42:49.639282+00:00",
         "maps_to_lean": [
           "biological",
           "genetics",
@@ -10563,7 +10563,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_genetic_mechanics_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": "python scripts/ingest_tier94_longevity_genetics.py --deep",
@@ -10603,7 +10603,7 @@
         "domain": "Longevity_MegaDeep_NCBI_Panel",
         "record_count": 1746,
         "pooled_median_error_pct": 0.017789,
-        "generated_at": "2026-07-13T12:46:21.792799+00:00",
+        "generated_at": "2026-07-16T13:42:49.812574+00:00",
         "maps_to_lean": [
           "biological",
           "genetics",
@@ -10620,7 +10620,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_megadeep_ncbi_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": "python scripts/ingest_tier94_longevity_genetics.py --deep",
@@ -10660,7 +10660,7 @@
         "domain": "Longevity_Telomere_Repair_Panel",
         "record_count": 60,
         "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-13T12:46:21.806390+00:00",
+        "generated_at": "2026-07-16T13:42:49.833337+00:00",
         "maps_to_lean": [
           "biological",
           "genetics",
@@ -10678,7 +10678,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_telomere_repair_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": "python scripts/ingest_tier94_longevity_genetics.py --deep",
@@ -11459,7 +11459,7 @@
         "domain": "Materials_Project_Live_Panel",
         "record_count": 141,
         "pooled_median_error_pct": 0.011734,
-        "generated_at": "2026-07-16T13:29:54.827604+00:00",
+        "generated_at": "2026-07-16T13:55:19.718432+00:00",
         "maps_to_lean": [
           "material",
           "particle",
@@ -14117,7 +14117,7 @@
         "domain": "OpenNeuro_Full_Panel",
         "record_count": 20,
         "pooled_median_error_pct": 0.015431,
-        "generated_at": "2026-07-16T13:29:55.702081+00:00",
+        "generated_at": "2026-07-16T13:55:20.766308+00:00",
         "maps_to_lean": [
           "neural",
           "consciousness",
@@ -16069,7 +16069,7 @@
         "domain": "PubChem_Live_Deep",
         "record_count": 5043,
         "pooled_median_error_pct": 0.032631,
-        "generated_at": "2026-07-16T13:29:55.640811+00:00",
+        "generated_at": "2026-07-16T13:55:20.697037+00:00",
         "maps_to_lean": [
           "electron",
           "chemical",
@@ -19474,7 +19474,7 @@
         "domain": "Tier_94_Longevity_Spine",
         "record_count": 34,
         "pooled_median_error_pct": 0.0,
-        "generated_at": "2026-07-13T12:46:21.993504+00:00",
+        "generated_at": "2026-07-16T13:42:50.089160+00:00",
         "maps_to_lean": [
           "biological",
           "consciousness",
@@ -19492,7 +19492,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_ingest_relay_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": null,
@@ -19530,9 +19530,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/tier_95_zebrafish_spine_benchmark.json",
         "domain": "Tier_95_Zebrafish_Spine",
-        "record_count": 24,
-        "pooled_median_error_pct": 0.013342,
-        "generated_at": "2026-07-15T05:07:46.605330+00:00",
+        "record_count": 18,
+        "pooled_median_error_pct": 0.0,
+        "generated_at": "2026-07-16T13:42:51.009344+00:00",
         "maps_to_lean": [
           "biological",
           "genetics",
@@ -19541,15 +19541,14 @@
         ],
         "D_eff": 23,
         "sources": [
-          "tier95_zebrahub_panels",
-          "c_thin_depth_pass"
+          "tier95_zebrahub_panels"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "Tier 95 Zebrahub developmental genetics wave"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_ingest_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -21046,7 +21045,7 @@
         "domain": "VizieR_WDS_TAP_Live_Deep",
         "record_count": 91,
         "pooled_median_error_pct": 0.026954,
-        "generated_at": "2026-07-16T13:29:55.718102+00:00",
+        "generated_at": "2026-07-16T13:55:20.793338+00:00",
         "maps_to_lean": [
           "astronomical",
           "galactic",
@@ -21509,7 +21508,7 @@
         "domain": "Zebrafish_Cell_Tracking_Panel",
         "record_count": 20,
         "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-15T00:51:57.622476+00:00",
+        "generated_at": "2026-07-16T13:42:50.449164+00:00",
         "maps_to_lean": [
           "biological",
           "genetics",
@@ -21567,7 +21566,7 @@
         "domain": "Zebrafish_Developmental_Mechanics_Panel",
         "record_count": 31,
         "pooled_median_error_pct": 0.017789,
-        "generated_at": "2026-07-15T00:51:57.624482+00:00",
+        "generated_at": "2026-07-16T13:42:50.455006+00:00",
         "maps_to_lean": [
           "biological",
           "genetics",
@@ -21624,9 +21623,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/zebrafish_longevity_genetics_coupling_panel_benchmark.json",
         "domain": "Zebrafish_Longevity_Genetics_Coupling_Panel",
-        "record_count": 24,
-        "pooled_median_error_pct": 0.014453500000000001,
-        "generated_at": "2026-07-15T05:07:47.464468+00:00",
+        "record_count": 15,
+        "pooled_median_error_pct": 0.013342,
+        "generated_at": "2026-07-16T13:42:50.459108+00:00",
         "maps_to_lean": [
           "biological",
           "genetics",
@@ -21636,15 +21635,14 @@
         "sources": [
           "tier94_longevity",
           "tier95_zebrahub_tracks",
-          "Danio rerio",
-          "c_thin_depth_pass"
+          "Danio rerio"
         ],
         "sota_models": [
-          "C_thin depth relay"
+          "AlphaFold static structure without developmental FSOT coupling"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_depth_relay_vs_baseline": true
+          "channel_longevity_development_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },

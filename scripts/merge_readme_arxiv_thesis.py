@@ -306,6 +306,8 @@ def main() -> int:
         "build_circuit_component_atlas_scaffold.py",
         "build_wetlab_longevity_volume.py",
         "build_credibility_hardening_audit.py",
+        "build_lean_route_credibility_expansion.py",
+        "build_circuit_component_expansion_bundle.py",
     )
     for script in tier_c_scripts:
         subprocess.run([sys.executable, str(ROOT / "scripts" / script)], check=False)
@@ -476,7 +478,7 @@ def main() -> int:
     readme = _patch_inline_citations(readme)
     readme = re.sub(
         r"\*\*Edition:\*\* v[0-9]+\.[0-9]+[^\n]*",
-        f"**Edition:** v2.3 — wet-lab depth, credibility hardening, circuitry scaffold {ts}",
+        f"**Edition:** v2.4 — lean route depth, Tier 96 Phase 1, credibility bundle {ts}",
         readme,
         count=1,
     )

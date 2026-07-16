@@ -1,12 +1,12 @@
 # Benchmark Near-Miss Ledger
 
-*Generated: 2026-07-16T13:43:07.429918+00:00*
+*Generated: 2026-07-16T13:53:53.558267+00:00*
 
 Domains that pass the green gate but approach the ≤0.5% boundary — published for transparency, not hidden as post-hoc rescues.
 
 | Gate | Value |
 |------|------:|
-| Green pass | 394/394 |
+| Green pass | 404/404 |
 | Worst max scalar (any domain) | 0.4989% — `Phi_Morphogenetic_Scaling` |
 | Tier-scalar max fails | 1 |
 
@@ -58,9 +58,9 @@ Domains that pass the green gate but approach the ≤0.5% boundary — published
 | Architecture_Building_Science | 0.0787 | 0.0000 |
 | immunology_benchmark.json | 0.0612 | 0.4801 |
 | Observer_Channel_Derivation | 0.0525 | 0.0525 |
+| Circuit_Component_Emergence_Panel | 0.0519 | 0.0519 |
+| Schematic_Netlist_Intrinsic_Panel | 0.0519 | 0.0519 |
 | neuroimmunology_benchmark.json | 0.0504 | 0.4801 |
 | oncology_benchmark.json | 0.0504 | 0.4289 |
-| culinary_arts_benchmark.json | 0.0476 | 0.4623 |
-| Cryptography_Technology | 0.0475 | 0.0570 |
 
 Regenerate: `python scripts/build_benchmark_near_miss_ledger.py`

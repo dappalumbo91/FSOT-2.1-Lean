@@ -22,6 +22,9 @@ SOURCES = {
     "wetlab": ROOT / "data" / "publication" / "wetlab_longevity_expansion_report.json",
     "live_ingest": ROOT / "data" / "publication" / "live_ingest_refresh_report.json",
     "tier95_crosswalk": ROOT / "data" / "tier95_genetics_system_crosswalk_report.json",
+    "lean_routes": ROOT / "data" / "publication" / "lean_route_credibility_expansion_report.json",
+    "circuit_phase1": ROOT / "data" / "publication" / "circuit_component_expansion_report.json",
+    "credibility_depth": ROOT / "data" / "publication" / "credibility_depth_bundle_report.json",
 }
 
 
@@ -54,6 +57,8 @@ def main() -> int:
     wetlab = _load(SOURCES["wetlab"])
     live = _load(SOURCES["live_ingest"])
     tier95 = _load(SOURCES["tier95_crosswalk"])
+    lean_routes = _load(SOURCES["lean_routes"])
+    circuit = _load(SOURCES["circuit_phase1"])
     zf = _zero_free()
     ts = datetime.now(timezone.utc).isoformat()
 
@@ -68,6 +73,19 @@ def main() -> int:
         ("Live catalog ingest", live.get("all_ok") is True, "Gaia/GWOSC/NEO refresh"),
         ("Genetics crosswalk", tier95.get("verdict") in {"GENETICS_SYSTEM_CROSSWALK_OK", "OK", True} or tier95.get("overall_ok") is True, "Tier94↔Tier95"),
         ("Skeptic kit", (ROOT / "docs/SKEPTIC_REPLICATION_KIT.md").is_file(), "15-min path"),
+        (
+            "Lean route depth",
+            lean_routes.get("all_green") is True
+            or (lean_routes.get("routes_green", 0) >= 5 and lean_routes.get("routes_total", 0) >= 7),
+            f"{lean_routes.get('routes_green', '?')}/{lean_routes.get('routes_total', 7)} routes",
+        ),
+        (
+            "Circuit Phase 1",
+            circuit.get("all_ok") is True
+            or (ROOT / "data/circuit_component_emergence_panel_benchmark.json").is_file(),
+            "Tier 96 BOM emergence",
+        ),
+        ("Live ingest schedule", (ROOT / "data/publication/live_ingest_schedule.yaml").is_file(), "weekly refresh policy"),
     ]
     pass_count = sum(1 for _, ok, _ in pillars if ok)
 
@@ -105,6 +123,9 @@ def main() -> int:
         "```bash",
         "python scripts/run_publication_verification_bundle.py",
         "python scripts/build_wetlab_longevity_expansion_bundle.py",
+        "python scripts/build_lean_route_credibility_expansion.py",
+        "python scripts/build_circuit_component_expansion_bundle.py",
+        "python scripts/build_credibility_depth_bundle.py",
         "python scripts/build_credibility_hardening_audit.py",
         "```",
         "",

@@ -1,7 +1,7 @@
 # FSOT Monograph Supplementary Bundle fsot-monograph-v2.1
 
 **Tag:** `fsot-monograph-v2.1`  
-**Commit:** `2495ac066003`  
+**Commit:** `7e972dd16e21`  
 **Date:** 2026-07-16
 
 ## Contents

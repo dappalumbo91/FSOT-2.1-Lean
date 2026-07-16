@@ -1,137 +1,191 @@
-# FSOT 35-domain ledger vs lab/numeric coverage (Tier 6 complete).
-version: "1.1"
-updated: "2026-06-20"
+version: '1.1'
+updated: '2026-06-20'
 lean_module: FSOT.Formal.Scalar
 domain_count: 26
-
 coverage_legend:
-  proved_sign: "Lean raw_S sign theorem at ledger params"
-  numerically_verified: "Python lab ingest within tolerance"
-  partial: "Indirect proxy via related lab domain"
-  gap: "No dedicated lab certificate yet"
-
+  proved_sign: Lean raw_S sign theorem at ledger params
+  numerically_verified: Python lab ingest within tolerance
+  partial: Indirect proxy via related lab domain
+  gap: No dedicated lab certificate yet
 domains:
-  - id: quantum
-    D_eff: 6
-    status: proved_sign
-    labs: [SMILES, wave1]
-  - id: particle
-    D_eff: 7
-    status: proved_sign
-    labs: [SMILES, wave1, wave3, wave4]
-  - id: higgs
-    D_eff: 7
-    status: proved_sign
-    labs: [Lean Domains.higgs_raw_S_positive]
-  - id: proton
-    D_eff: 8
-    status: partial
-    labs: [cosmology_wave4]
-  - id: electron
-    D_eff: 8
-    status: proved_sign
-    labs: [SMILES, magnetic_strings, photonic_forge]
-  - id: chemical
-    D_eff: 9
-    status: proved_sign
-    labs: [SMILES, fuel_lab]
-  - id: molecular
-    D_eff: 9
-    status: proved_sign
-    labs: [SMILES, species_catalog, cameo, unified_db]
-  - id: material
-    D_eff: 10
-    status: proved_sign
-    labs: [SMILES, species_catalog]
-  - id: biological
-    D_eff: 12
-    status: proved_sign
-    labs: [genomics, evolution, neurolab_bio]
-  - id: medical
-    D_eff: 13
-    status: proved_sign
-    labs: [SMILES, weather_proxy]
-  - id: neural
-    D_eff: 14
-    status: proved_sign
-    labs: [NeuroLab, linguistics]
-  - id: cellular
-    D_eff: 12
-    status: proved_sign
-    labs: [Soul Simulator corpus, evolution_mt_operons, Lean Domains.cellular_raw_S_positive]
-  - id: energy
-    D_eff: 15
-    status: gap
-    tier6_candidates: [fuel_lab indirect]
-  - id: nuclear
-    D_eff: 15
-    status: partial
-    labs: [cosmology_wave3, cosmology_wave4]
-  - id: fusion
-    D_eff: 16
-    status: gap
-  - id: ai
-    D_eff: 11
-    status: proved_sign
-    labs: [vibra_register, trinary_os, trinary_fluid_computer]
-  - id: consciousness
-    D_eff: 16
-    status: partial
-    labs: [soul_sibling, trinary_fluid_computer]
-  - id: perceived
-    D_eff: 12
-    status: partial
-    labs: [kronos_metrology]
-  - id: neural_net
-    D_eff: 12
-    status: partial
-    labs: [NeuroLab brain_fit]
-  - id: observer
-    D_eff: 14
-    status: partial
-    labs: [vibra_register MC]
-  - id: astronomical
-    D_eff: 20
-    status: partial
-    labs: [cosmology_wave1, kronos_metrology]
-  - id: cosmological
-    D_eff: 25
-    status: proved_sign
-    labs: [cosmology_lab wave1-4, FSOTLean MC]
-  - id: galactic
-    D_eff: 21
-    status: proved_sign
-    labs: [Lean Domains.galactic_raw_S_positive]
-  - id: blackhole
-    D_eff: 23
-    status: proved_sign
-    labs: [Lean Domains.blackhole_raw_S_positive, BlackHoleThesisPriors 28/28 within 2%]
-  - id: cmb
-    D_eff: 24
-    status: proved_sign
-    labs: [wave1 T_CMB]
-  - id: dark_energy
-    D_eff: 25
-    status: proved_sign
-    labs: [cosmology_wave4]
-
+- id: quantum
+  D_eff: 6
+  status: proved_sign
+  labs:
+  - SMILES
+  - wave1
+- id: particle
+  D_eff: 7
+  status: proved_sign
+  labs:
+  - SMILES
+  - wave1
+  - wave3
+  - wave4
+- id: higgs
+  D_eff: 7
+  status: proved_sign
+  labs:
+  - Lean Domains.higgs_raw_S_positive
+- id: proton
+  D_eff: 8
+  status: numerically_verified
+  labs:
+  - lean_route_credibility:proton
+  - cosmology_wave4
+- id: electron
+  D_eff: 8
+  status: proved_sign
+  labs:
+  - SMILES
+  - magnetic_strings
+  - photonic_forge
+- id: chemical
+  D_eff: 9
+  status: proved_sign
+  labs:
+  - SMILES
+  - fuel_lab
+- id: molecular
+  D_eff: 9
+  status: proved_sign
+  labs:
+  - SMILES
+  - species_catalog
+  - cameo
+  - unified_db
+- id: material
+  D_eff: 10
+  status: proved_sign
+  labs:
+  - SMILES
+  - species_catalog
+- id: biological
+  D_eff: 12
+  status: proved_sign
+  labs:
+  - genomics
+  - evolution
+  - neurolab_bio
+- id: medical
+  D_eff: 13
+  status: proved_sign
+  labs:
+  - SMILES
+  - weather_proxy
+- id: neural
+  D_eff: 14
+  status: proved_sign
+  labs:
+  - NeuroLab
+  - linguistics
+- id: cellular
+  D_eff: 12
+  status: proved_sign
+  labs:
+  - Soul Simulator corpus
+  - evolution_mt_operons
+  - Lean Domains.cellular_raw_S_positive
+- id: energy
+  D_eff: 15
+  status: numerically_verified
+  tier6_candidates:
+  - fuel_lab indirect
+  labs:
+  - lean_route_credibility:energy
+- id: nuclear
+  D_eff: 15
+  status: numerically_verified
+  labs:
+  - cosmology_wave3
+  - cosmology_wave4
+  - lean_route_credibility:nuclear
+- id: fusion
+  D_eff: 16
+  status: numerically_verified
+  labs:
+  - lean_route_credibility:fusion
+- id: ai
+  D_eff: 11
+  status: proved_sign
+  labs:
+  - vibra_register
+  - trinary_os
+  - trinary_fluid_computer
+- id: consciousness
+  D_eff: 16
+  status: numerically_verified
+  labs:
+  - soul_sibling
+  - trinary_fluid_computer
+  - lean_route_credibility:consciousness
+- id: perceived
+  D_eff: 12
+  status: numerically_verified
+  labs:
+  - kronos_metrology
+  - lean_route_credibility:perceived
+- id: neural_net
+  D_eff: 12
+  status: partial
+  labs:
+  - NeuroLab brain_fit
+- id: observer
+  D_eff: 14
+  status: numerically_verified
+  labs:
+  - lean_route_credibility:observer
+  - vibra_register MC
+- id: astronomical
+  D_eff: 20
+  status: partial
+  labs:
+  - cosmology_wave1
+  - kronos_metrology
+- id: cosmological
+  D_eff: 25
+  status: proved_sign
+  labs:
+  - cosmology_lab wave1-4
+  - FSOTLean MC
+- id: galactic
+  D_eff: 21
+  status: proved_sign
+  labs:
+  - Lean Domains.galactic_raw_S_positive
+- id: blackhole
+  D_eff: 23
+  status: proved_sign
+  labs:
+  - Lean Domains.blackhole_raw_S_positive
+  - BlackHoleThesisPriors 28/28 within 2%
+- id: cmb
+  D_eff: 24
+  status: proved_sign
+  labs:
+  - wave1 T_CMB
+- id: dark_energy
+  D_eff: 25
+  status: proved_sign
+  labs:
+  - cosmology_wave4
 summary:
   proved_sign: 18
   numerically_verified: 0
   partial: 9
   gap: 0
   tier5_labs:
-    - cosmology_wave4
-    - kronos_metrology
-    - knowledge_base
-    - math_generator
-    - trinary_fluid_computer
-    - soul_sibling
-    - lean_proofs_bridge
-    - unified_db_index
+  - cosmology_wave4
+  - kronos_metrology
+  - knowledge_base
+  - math_generator
+  - trinary_fluid_computer
+  - soul_sibling
+  - lean_proofs_bridge
+  - unified_db_index
   tier6_labs:
-    - formula_corpus_strict_empirical
-    - numeric_eval_queue_complete
-    - knowledge_base_per_formula
-    - cellular_soul_evolution
-    - blackhole_thermo_thesis
+  - formula_corpus_strict_empirical
+  - numeric_eval_queue_complete
+  - knowledge_base_per_formula
+  - cellular_soul_evolution
+  - blackhole_thermo_thesis

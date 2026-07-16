@@ -1,0 +1,104 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-16T13:53:55.488661+00:00",
+  "domain": "Perceived_Lean_Route_Credibility",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "lean_route_credibility_expansion:perceived"
+  ],
+  "maps_to_lean": [
+    "perceived",
+    "consciousness"
+  ],
+  "D_eff": 12,
+  "record_count": 3,
+  "observable_count": 3,
+  "scalar_record_count": 0,
+  "scalar_gate_applicable": false,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "perceived": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "unguided perceived route"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_lean_route_perceived_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 3
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "lean_route_perceived",
+      "name": "credibility_depth",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 2
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "lean_route_perceived_lab",
+      "property": "relay_pooled_median",
+      "name": "Neuroscience",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "lean_route_bridge",
+      "lean_route": "perceived"
+    },
+    {
+      "lab": "lean_route_perceived_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "all_channels",
+      "stratum": "unknown",
+      "specimen_id": null,
+      "computed": 0.002252,
+      "measured": 0.0,
+      "fi_proxy_rel_err_pct": 0.0,
+      "error_pct": 0.0,
+      "strict_gate_pass": true,
+      "lean_route": "perceived"
+    },
+    {
+      "lab": "lean_route_perceived_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "Neuron_Multi_Hero_depth",
+      "stratum": "unknown",
+      "specimen_id": null,
+      "computed": 0.0,
+      "measured": 0.0,
+      "fi_proxy_rel_err_pct": 0.0,
+      "error_pct": 0.0,
+      "strict_gate_pass": true,
+      "lean_route": "perceived"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": null,
+    "max_scalar_error_pct": null,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

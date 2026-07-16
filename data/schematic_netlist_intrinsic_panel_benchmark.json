@@ -1,0 +1,139 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-16T13:53:55.867188+00:00",
+  "domain": "Schematic_Netlist_Intrinsic_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\circuit_components\\industry_component_catalog.json",
+    "reference_circuits"
+  ],
+  "maps_to_lean": [
+    "electron",
+    "material",
+    "energy"
+  ],
+  "D_eff": 10,
+  "record_count": 5,
+  "observable_count": 5,
+  "scalar_record_count": 5,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.051887,
+  "pooled_median_error_pct": 0.051887,
+  "headline_median_error_pct": 0.051887,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "netlist_hand_calc": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "manual schematic variable lookup"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_schematic_netlist_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.051887,
+      "measured": 0.0,
+      "error_pct": 0.051887,
+      "observable_count": 5
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "schematic_netlist",
+      "name": "intrinsic_emergence",
+      "computed": 0.051887,
+      "measured": 0.0,
+      "error_pct": 0.051887,
+      "observable_count": 5
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "rc_tau_s",
+      "name": "RC_10k_100nF",
+      "computed": 0.001001,
+      "measured": 0.001,
+      "error_pct": 0.051887,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Electromagnetism",
+      "fsot_scalar": 0.518866,
+      "R_ohm": 10000.0,
+      "C_f": 1e-07,
+      "textbook_tau": 0.001
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "rc_tau_s",
+      "name": "RC_1k_10uF",
+      "computed": 0.010005,
+      "measured": 0.01,
+      "error_pct": 0.051887,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Electromagnetism",
+      "fsot_scalar": 0.518866,
+      "R_ohm": 1000.0,
+      "C_f": 1e-05,
+      "textbook_tau": 0.01
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "lc_resonance_hz",
+      "name": "LC_10uH_100nF",
+      "computed": 159219.902358,
+      "measured": 159154.94,
+      "error_pct": 0.040817,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Optics",
+      "fsot_scalar": 0.408171,
+      "L_h": 1e-05,
+      "C_f": 1e-07,
+      "textbook_f": 159154.94309189534
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "divider_vout_v",
+      "name": "divider_10k_10k",
+      "computed": 2.501297,
+      "measured": 2.5,
+      "error_pct": 0.051887,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Electromagnetism",
+      "fsot_scalar": 0.518866,
+      "vin_v": 5,
+      "R_top": 10000,
+      "R_bot": 10000
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "dissipated_power_w",
+      "name": "power_5V_1k",
+      "computed": 0.02501,
+      "measured": 0.025,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "V_v": 5,
+      "R_ohm": 1000
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.051887,
+    "max_scalar_error_pct": 0.051887,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

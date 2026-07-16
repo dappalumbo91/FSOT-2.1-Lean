@@ -1,0 +1,108 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-16T13:53:55.479297+00:00",
+  "domain": "Proton_Lean_Route_Credibility",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "lean_route_credibility_expansion:proton"
+  ],
+  "maps_to_lean": [
+    "proton",
+    "particle"
+  ],
+  "D_eff": 8,
+  "record_count": 4,
+  "observable_count": 4,
+  "scalar_record_count": 3,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.020741,
+  "pooled_median_error_pct": 0.020741,
+  "headline_median_error_pct": 0.322515,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "proton": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "unguided proton route"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_lean_route_proton_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.020741,
+      "measured": 0.0,
+      "error_pct": 0.020741,
+      "observable_count": 4
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "lean_route_proton",
+      "name": "credibility_depth",
+      "computed": 0.322515,
+      "measured": 0.0,
+      "error_pct": 0.322515,
+      "observable_count": 2
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "lean_route_proton_lab",
+      "property": "relay_pooled_median",
+      "name": "particle_physics_benchmark.json",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "lean_route_bridge",
+      "lean_route": "proton"
+    },
+    {
+      "lab": "lean_route_proton_lab",
+      "property": "relay_pooled_median",
+      "name": "Particle_Physics",
+      "computed": 0.0024475156042999594,
+      "measured": 0.0024475156042999594,
+      "error_pct": 0.0,
+      "eval_kind": "lean_route_bridge",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "electron",
+      "computed": 0.5126480529097499,
+      "measured": 0.511,
+      "error_pct": 0.322515,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "muon",
+      "computed": 105.67991447405322,
+      "measured": 105.658,
+      "error_pct": 0.020741,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.020741,
+    "max_scalar_error_pct": 0.322515,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}
