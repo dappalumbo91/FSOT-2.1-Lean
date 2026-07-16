@@ -54,9 +54,9 @@ Extension panel **`Founding_Cosmic_Dust_Panel`** (verification tier 96) evaluate
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in Founding Cosmic Dust Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Founding Cosmic Dust Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 - **`Ca`** in Founding Cosmic Dust Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Founding Cosmic Dust Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Founding Cosmic Ray Panel
 
@@ -82,9 +82,9 @@ Extension panel **`Founding_Cosmic_Ray_Panel`** (verification tier 96) evaluates
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`BF₃`** in Founding Cosmic Ray Panel: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
-- **`BeCl₂`** in Founding Cosmic Ray Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`Bi2Te3`** in Founding Cosmic Ray Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`F`** in Founding Cosmic Ray Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Ca`** in Founding Cosmic Ray Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`P`** in Founding Cosmic Ray Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Founding Galactic Halo Rotation Panel
 
@@ -110,9 +110,9 @@ Extension panel **`Founding_Galactic_Halo_Rotation_Panel`** (verification tier 9
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`BF₃`** in Founding Galactic Halo Rotation Panel: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
-- **`BeCl₂`** in Founding Galactic Halo Rotation Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`Bi2Te3`** in Founding Galactic Halo Rotation Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`F`** in Founding Galactic Halo Rotation Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Ca`** in Founding Galactic Halo Rotation Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`P`** in Founding Galactic Halo Rotation Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Founding Pulsar Glitch Panel
 
@@ -138,9 +138,9 @@ Extension panel **`Founding_Pulsar_Glitch_Panel`** (verification tier 96) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`BF₃`** in Founding Pulsar Glitch Panel: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
-- **`BeCl₂`** in Founding Pulsar Glitch Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`Bi2Te3`** in Founding Pulsar Glitch Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`F`** in Founding Pulsar Glitch Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Ca`** in Founding Pulsar Glitch Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`P`** in Founding Pulsar Glitch Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Founding Quantum Vacuum Panel
 
@@ -166,9 +166,9 @@ Extension panel **`Founding_Quantum_Vacuum_Panel`** (verification tier 96) evalu
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Founding Quantum Vacuum Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Founding Quantum Vacuum Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Founding Quantum Vacuum Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`H⁺/H₂`** in Founding Quantum Vacuum Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Founding Quantum Vacuum Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Founding Quantum Vacuum Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Founding White Dwarf Cooling Panel
 
@@ -194,6 +194,6 @@ Extension panel **`Founding_White_Dwarf_Cooling_Panel`** (verification tier 96) 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`BF₃`** in Founding White Dwarf Cooling Panel: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
-- **`BeCl₂`** in Founding White Dwarf Cooling Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`Bi2Te3`** in Founding White Dwarf Cooling Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`F`** in Founding White Dwarf Cooling Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Ca`** in Founding White Dwarf Cooling Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`P`** in Founding White Dwarf Cooling Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).

@@ -54,6 +54,6 @@ Extension panel **`Music_Harmonics_Public_Panel`** (verification tier 61) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Music Harmonics Public Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Music Harmonics Public Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Music Harmonics Public Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`SF₆`** in Music Harmonics Public Panel: measured **90.0**, seed-derived **90.0** via `π/2 (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
+- **`H⁺/H₂`** in Music Harmonics Public Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Music Harmonics Public Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).

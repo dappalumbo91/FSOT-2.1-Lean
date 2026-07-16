@@ -26,9 +26,9 @@ Extension panel **`Biophysics_Public_Panel`** (verification tier 64) evaluates *
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Biophysics Public Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Biophysics Public Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Biophysics Public Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`pH_water`** in Biophysics Public Panel: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in Biophysics Public Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Biophysics Public Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 
 #### Ethology Panel
 
@@ -54,9 +54,9 @@ Extension panel **`Ethology_Panel`** (verification tier 82) evaluates **100** me
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Ethology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Ethology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Ethology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Ethology Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Li`** in Ethology Panel: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### IGEM Parts Expanded
 
@@ -82,9 +82,9 @@ Extension panel **`IGEM_Parts_Expanded`** (verification tier 56) evaluates **111
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in IGEM Parts Expanded: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in IGEM Parts Expanded: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in IGEM Parts Expanded: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`BF₃`** in IGEM Parts Expanded: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
+- **`H⁺/H₂`** in IGEM Parts Expanded: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in IGEM Parts Expanded: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 
 #### Limnology Panel
 
@@ -110,9 +110,9 @@ Extension panel **`Limnology_Panel`** (verification tier 82) evaluates **2010** 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Limnology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Limnology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Limnology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Limnology Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Li`** in Limnology Panel: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Longevity MegaDeep NCBI Panel
 
@@ -138,9 +138,9 @@ Extension panel **`Longevity_MegaDeep_NCBI_Panel`** (verification tier 94) evalu
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`P`** in Longevity MegaDeep NCBI Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Se`** in Longevity MegaDeep NCBI Panel: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Li`** in Longevity MegaDeep NCBI Panel: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Longevity MegaDeep NCBI Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Longevity MegaDeep NCBI Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`IE_Ar`** in Longevity MegaDeep NCBI Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 
 #### Longevity Telomere Repair Panel
 
@@ -166,9 +166,9 @@ Extension panel **`Longevity_Telomere_Repair_Panel`** (verification tier 94) eva
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Longevity Telomere Repair Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Longevity Telomere Repair Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Ca`** in Longevity Telomere Repair Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Longevity Telomere Repair Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`O`** in Longevity Telomere Repair Panel: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### NCBI Gene Public Panel
 
@@ -194,9 +194,9 @@ Extension panel **`NCBI_Gene_Public_Panel`** (verification tier 81) evaluates **
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in NCBI Gene Public Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in NCBI Gene Public Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in NCBI Gene Public Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`pH_water`** in NCBI Gene Public Panel: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in NCBI Gene Public Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in NCBI Gene Public Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 
 #### Pharmacokinetics
 
@@ -222,9 +222,9 @@ Extension panel **`Pharmacokinetics`** (verification tier 34) evaluates **56** m
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`Fe`** in Pharmacokinetics: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
-- **`F`** in Pharmacokinetics: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Pharmacokinetics: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in Pharmacokinetics: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Pharmacokinetics: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`CS2`** in Pharmacokinetics: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
 
 #### RCSB PDB Structures
 
@@ -250,7 +250,7 @@ Extension panel **`RCSB_PDB_Structures`** (verification tier 38) evaluates **45*
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`IE_Ar`** in RCSB PDB Structures: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`Bi2Te3`** in RCSB PDB Structures: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`P`** in RCSB PDB Structures: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 - **`BL_N−H`** in RCSB PDB Structures: measured **1.01**, seed-derived **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 
@@ -279,8 +279,8 @@ Extension panel **`The_Well_Outcomes_Verification_Panel`** (verification tier 89
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
 - **`F`** in The Well Outcomes Verification Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in The Well Outcomes Verification Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`IE_S`** in The Well Outcomes Verification Panel: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`Si`** in The Well Outcomes Verification Panel: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
+- **`R_O`** in The Well Outcomes Verification Panel: measured **0.73**, seed-derived **0.7299700981022957** via `P_base/θ_S` (error **0.004096%**). Constants: seed constants. Authority: NIST / CRC / Allen / Luo.
 
 #### The Well Spot Check Panel
 
@@ -306,9 +306,9 @@ Extension panel **`The_Well_Spot_Check_Panel`** (verification tier 89) evaluates
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`IE_Ar`** in The Well Spot Check Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`Bi2Te3`** in The Well Spot Check Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`P`** in The Well Spot Check Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_S`** in The Well Spot Check Panel: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`BL_N−H`** in The Well Spot Check Panel: measured **1.01**, seed-derived **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 
 #### The Well Verification Spine
 
@@ -334,9 +334,9 @@ Extension panel **`The_Well_Verification_Spine`** (verification tier 89) evaluat
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in The Well Verification Spine: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in The Well Verification Spine: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in The Well Verification Spine: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`CO₂`** in The Well Verification Spine: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
+- **`XeF₂`** in The Well Verification Spine: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
+- **`BeCl₂`** in The Well Verification Spine: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
 
 #### Tier 94 Longevity Spine
 
@@ -362,9 +362,9 @@ Extension panel **`Tier_94_Longevity_Spine`** (verification tier 94) evaluates *
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Tier 94 Longevity Spine: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Tier 94 Longevity Spine: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Ca`** in Tier 94 Longevity Spine: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Tier 94 Longevity Spine: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`O`** in Tier 94 Longevity Spine: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Tier 95 Zebrafish Spine
 
@@ -418,9 +418,9 @@ Extension panel **`Toxicology_Panel`** (verification tier 82) evaluates **21** m
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Toxicology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Toxicology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Toxicology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Toxicology Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Toxicology Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### UniProt Structure Annotations Deep
 
@@ -446,7 +446,7 @@ Extension panel **`UniProt_Structure_Annotations_Deep`** (verification tier 56) 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`IE_Ar`** in UniProt Structure Annotations Deep: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`Bi2Te3`** in UniProt Structure Annotations Deep: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`P`** in UniProt Structure Annotations Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 - **`BL_N−H`** in UniProt Structure Annotations Deep: measured **1.01**, seed-derived **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 
@@ -474,9 +474,9 @@ Extension panel **`Zebrafish_Cell_Tracking_Panel`** (verification tier 95) evalu
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Zebrafish Cell Tracking Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Zebrafish Cell Tracking Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Zebrafish Cell Tracking Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Zebrafish Cell Tracking Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`R_F`** in Zebrafish Cell Tracking Panel: measured **0.71**, seed-derived **0.709960037517728** via `√γ − e⁻³` (error **0.005629%**). Constants: e, gamma. Authority: NIST / CRC / Allen / Luo.
 
 #### Zebrafish Developmental Mechanics Panel
 

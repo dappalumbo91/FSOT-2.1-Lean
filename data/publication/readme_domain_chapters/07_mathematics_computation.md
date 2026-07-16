@@ -26,9 +26,9 @@ Extension panel **`Adversarial_Fractal_Break_Tests`** (verification tier 46) eva
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Adversarial Fractal Break Tests: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Adversarial Fractal Break Tests: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Adversarial Fractal Break Tests: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Adversarial Fractal Break Tests: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Adversarial Fractal Break Tests: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Adversarial Fractal Break Tests: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Alternate Base Mathematics Explorer Panel
 
@@ -54,9 +54,9 @@ Extension panel **`Alternate_Base_Mathematics_Explorer_Panel`** (verification ti
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Alternate Base Mathematics Explorer Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Alternate Base Mathematics Explorer Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Alternate Base Mathematics Explorer Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Alternate Base Mathematics Explorer Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Alternate Base Mathematics Explorer Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Alternate Base Mathematics Spine
 
@@ -82,9 +82,9 @@ Extension panel **`Alternate_Base_Mathematics_Spine`** (verification tier 92) ev
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`SF₆`** in Alternate Base Mathematics Spine: measured **90.0**, seed-derived **90.0** via `π/2 (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`CS2`** in Alternate Base Mathematics Spine: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
 - **`F`** in Alternate Base Mathematics Spine: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`P`** in Alternate Base Mathematics Spine: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`R_C`** in Alternate Base Mathematics Spine: measured **0.77**, seed-derived **0.7700130881402762** via `π⁻⁴ + √γ` (error **0.0017%**). Constants: gamma, pi. Authority: NIST / CRC / Allen / Luo.
 
 #### Bibliography Corpus Panel
 
@@ -110,9 +110,9 @@ Extension panel **`Bibliography_Corpus_Panel`** (verification tier 88) evaluates
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Bibliography Corpus Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Bibliography Corpus Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Bibliography Corpus Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`pH_water`** in Bibliography Corpus Panel: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in Bibliography Corpus Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Bibliography Corpus Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 
 #### Bibliography Lean Corpus
 
@@ -138,8 +138,8 @@ Extension panel **`Bibliography_Lean_Corpus`** (verification tier 37) evaluates 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in Bibliography Lean Corpus: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Bibliography Lean Corpus: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Bibliography Lean Corpus: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`Ca`** in Bibliography Lean Corpus: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Canonical Oracle Panel
@@ -166,9 +166,9 @@ Extension panel **`Canonical_Oracle_Panel`** (verification tier 88) evaluates **
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Canonical Oracle Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Canonical Oracle Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Canonical Oracle Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Canonical Oracle Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Canonical Oracle Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Computational Reasoning
 
@@ -194,9 +194,9 @@ Extension panel **`Computational_Reasoning`** (verification tier 29) evaluates *
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`SF₆`** in Computational Reasoning: measured **90.0**, seed-derived **90.0** via `π/2 (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`CS2`** in Computational Reasoning: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
 - **`F`** in Computational Reasoning: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Ca`** in Computational Reasoning: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`P`** in Computational Reasoning: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Creative Arts Math Spine
 
@@ -222,9 +222,9 @@ Extension panel **`Creative_Arts_Math_Spine`** (verification tier 61) evaluates 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Creative Arts Math Spine: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Creative Arts Math Spine: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Ca`** in Creative Arts Math Spine: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Creative Arts Math Spine: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Se`** in Creative Arts Math Spine: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Domain Coupling Simulation
 
@@ -250,9 +250,9 @@ Extension panel **`Domain_Coupling_Simulation`** (verification tier 42) evaluate
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Domain Coupling Simulation: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Domain Coupling Simulation: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Domain Coupling Simulation: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Domain Coupling Simulation: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Domain Coupling Simulation: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Domain Coupling Simulation: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Domain Coupling Simulation Refresh Panel
 
@@ -278,9 +278,9 @@ Extension panel **`Domain_Coupling_Simulation_Refresh_Panel`** (verification tie
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Domain Coupling Simulation Refresh Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Domain Coupling Simulation Refresh Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Domain Coupling Simulation Refresh Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Domain Coupling Simulation Refresh Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Domain Coupling Simulation Refresh Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Domain Coupling Simulation Refresh Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Early Lean MC Panel
 
@@ -306,9 +306,9 @@ Extension panel **`Early_Lean_MC_Panel`** (verification tier 88) evaluates **24*
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Early Lean MC Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Early Lean MC Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Early Lean MC Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Early Lean MC Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Li`** in Early Lean MC Panel: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### FSOT Aggregate Organized Panel
 
@@ -334,9 +334,9 @@ Extension panel **`FSOT_Aggregate_Organized_Panel`** (verification tier 69) eval
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in FSOT Aggregate Organized Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in FSOT Aggregate Organized Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in FSOT Aggregate Organized Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in FSOT Aggregate Organized Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in FSOT Aggregate Organized Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### FSOT Aggregate Unified DB
 
@@ -362,9 +362,9 @@ Extension panel **`FSOT_Aggregate_Unified_DB`** (verification tier 36) evaluates
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in FSOT Aggregate Unified DB: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in FSOT Aggregate Unified DB: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in FSOT Aggregate Unified DB: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in FSOT Aggregate Unified DB: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in FSOT Aggregate Unified DB: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Formula Branching Fractal
 
@@ -390,9 +390,9 @@ Extension panel **`Formula_Branching_Fractal`** (verification tier 45) evaluates
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`IE_Ar`** in Formula Branching Fractal: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in Formula Branching Fractal: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Formula Branching Fractal: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`P`** in Formula Branching Fractal: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_S`** in Formula Branching Fractal: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
 
 #### Formula Corpus CNC
 
@@ -418,8 +418,8 @@ Extension panel **`Formula_Corpus_CNC`** (verification tier 34) evaluates **21**
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in Formula Corpus CNC: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Formula Corpus CNC: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Formula Corpus CNC: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`Ca`** in Formula Corpus CNC: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Formula Corpus Closure
@@ -447,8 +447,8 @@ Extension panel **`Formula_Corpus_Closure`** (verification tier 42) evaluates **
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
 - **`F`** in Formula Corpus Closure: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Formula Corpus Closure: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`Ca`** in Formula Corpus Closure: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`P`** in Formula Corpus Closure: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Formula Precision Spine
 
@@ -474,9 +474,9 @@ Extension panel **`Formula_Precision_Spine`** (verification tier 67) evaluates *
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Formula Precision Spine: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Formula Precision Spine: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Formula Precision Spine: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Formula Precision Spine: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Formula Precision Spine: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Knowledge Base Portable Bundle Panel
 
@@ -502,9 +502,9 @@ Extension panel **`Knowledge_Base_Portable_Bundle_Panel`** (verification tier 77
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Knowledge Base Portable Bundle Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Knowledge Base Portable Bundle Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Knowledge Base Portable Bundle Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`H⁺/H₂`** in Knowledge Base Portable Bundle Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Knowledge Base Portable Bundle Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Knowledge Base Portable Bundle Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Math Generator Airfoil RMSE
 
@@ -530,8 +530,8 @@ Extension panel **`Math_Generator_Airfoil_RMSE`** (verification tier 32) evaluat
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in Math Generator Airfoil RMSE: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Math Generator Airfoil RMSE: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Math Generator Airfoil RMSE: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`Ca`** in Math Generator Airfoil RMSE: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Math Generator Benchmark Formula Eval
@@ -558,8 +558,8 @@ Extension panel **`Math_Generator_Benchmark_Formula_Eval`** (verification tier 3
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in Math Generator Benchmark Formula Eval: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Math Generator Benchmark Formula Eval: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Math Generator Benchmark Formula Eval: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`Ca`** in Math Generator Benchmark Formula Eval: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Math Generator Rules Eval
@@ -586,9 +586,9 @@ Extension panel **`Math_Generator_Rules_Eval`** (verification tier 30) evaluates
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Math Generator Rules Eval: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Math Generator Rules Eval: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Math Generator Rules Eval: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Math Generator Rules Eval: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Math Generator Rules Eval: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Proof Ledger Closure Spine
 
@@ -614,9 +614,9 @@ Extension panel **`Proof_Ledger_Closure_Spine`** (verification tier 70) evaluate
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Proof Ledger Closure Spine: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Proof Ledger Closure Spine: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Proof Ledger Closure Spine: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`H⁺/H₂`** in Proof Ledger Closure Spine: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Proof Ledger Closure Spine: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Proof Ledger Closure Spine: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Rust Lean Bridge
 
@@ -642,9 +642,9 @@ Extension panel **`Rust_Lean_Bridge`** (verification tier 37) evaluates **24** m
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in Rust Lean Bridge: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Rust Lean Bridge: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 - **`Ca`** in Rust Lean Bridge: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Rust Lean Bridge: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Rust Lean Bridge Panel
 
@@ -670,9 +670,9 @@ Extension panel **`Rust_Lean_Bridge_Panel`** (verification tier 88) evaluates **
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Rust Lean Bridge Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Rust Lean Bridge Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Rust Lean Bridge Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Rust Lean Bridge Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Rust Lean Bridge Panel: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### ToE Claim Certificate Bundle
 
@@ -698,9 +698,9 @@ Extension panel **`ToE_Claim_Certificate_Bundle`** (verification tier 70) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in ToE Claim Certificate Bundle: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in ToE Claim Certificate Bundle: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in ToE Claim Certificate Bundle: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in ToE Claim Certificate Bundle: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in ToE Claim Certificate Bundle: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Tokenization Live Panel
 
@@ -726,9 +726,9 @@ Extension panel **`Tokenization_Live_Panel`** (verification tier 88) evaluates *
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Tokenization Live Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Tokenization Live Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`P`** in Tokenization Live Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Tokenization Live Panel: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
-- **`O`** in Tokenization Live Panel: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Tokenization Smoke
 
@@ -754,9 +754,9 @@ Extension panel **`Tokenization_Smoke`** (verification tier 33) evaluates **24**
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`SF₆`** in Tokenization Smoke: measured **90.0**, seed-derived **90.0** via `π/2 (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`CS2`** in Tokenization Smoke: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
+- **`Bi2Te3`** in Tokenization Smoke: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Tokenization Smoke: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Ca`** in Tokenization Smoke: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### XR Interactive Media Math Scaffold
 

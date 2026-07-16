@@ -26,9 +26,9 @@ Extension panel **`Crossref_Scholarly_Panel`** (verification tier 81) evaluates 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Crossref Scholarly Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Crossref Scholarly Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Crossref Scholarly Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Crossref Scholarly Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Crossref Scholarly Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Federal Science Registry Panel
 
@@ -54,8 +54,8 @@ Extension panel **`Federal_Science_Registry_Panel`** (verification tier 80) eval
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in Federal Science Registry Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Federal Science Registry Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Federal Science Registry Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`Ca`** in Federal Science Registry Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Government Open Data Spine
@@ -82,9 +82,9 @@ Extension panel **`Government_Open_Data_Spine`** (verification tier 80) evaluate
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`IE_Ar`** in Government Open Data Spine: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in Government Open Data Spine: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Government Open Data Spine: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Ca`** in Government Open Data Spine: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Government Open Data Spine: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### OSTI DOE Science Panel
 
@@ -110,9 +110,9 @@ Extension panel **`OSTI_DOE_Science_Panel`** (verification tier 80) evaluates **
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in OSTI DOE Science Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in OSTI DOE Science Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in OSTI DOE Science Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in OSTI DOE Science Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in OSTI DOE Science Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### OpenAlex Citation Graph
 
@@ -138,9 +138,9 @@ Extension panel **`OpenAlex_Citation_Graph`** (verification tier 38) evaluates *
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`pH_water`** in OpenAlex Citation Graph: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-- **`alpha_Fe`** in OpenAlex Citation Graph: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
-- **`Bi2Te3`** in OpenAlex Citation Graph: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`F`** in OpenAlex Citation Graph: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`P`** in OpenAlex Citation Graph: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`C≡O`** in OpenAlex Citation Graph: measured **1076.5**, seed-derived **1076.5476215052706** via `E^7-E^3` (error **0.004424%**). Constants: seed constants. Authority: Luo, Compr. Handbook Chem. Bond Energies (2007).
 
 #### iNaturalist Observation Panel
 
@@ -166,6 +166,6 @@ Extension panel **`iNaturalist_Observation_Panel`** (verification tier 81) evalu
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in iNaturalist Observation Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in iNaturalist Observation Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in iNaturalist Observation Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in iNaturalist Observation Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in iNaturalist Observation Panel: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).

@@ -26,9 +26,9 @@ Extension panel **`GWOSC_Live_Event_Deep`** (verification tier 58) evaluates **1
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in GWOSC Live Event Deep: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in GWOSC Live Event Deep: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in GWOSC Live Event Deep: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in GWOSC Live Event Deep: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in GWOSC Live Event Deep: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Gaia Astrometry Panel Deep
 
@@ -54,9 +54,9 @@ Extension panel **`Gaia_Astrometry_Panel_Deep`** (verification tier 60) evaluate
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Gaia Astrometry Panel Deep: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Gaia Astrometry Panel Deep: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Gaia Astrometry Panel Deep: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Gaia Astrometry Panel Deep: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Gaia Astrometry Panel Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Gaia DR3 TAP Deep
 
@@ -82,9 +82,9 @@ Extension panel **`Gaia_DR3_TAP_Deep`** (verification tier 62) evaluates **1826*
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Gaia DR3 TAP Deep: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Gaia DR3 TAP Deep: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Gaia DR3 TAP Deep: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Gaia DR3 TAP Deep: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Gaia DR3 TAP Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### IGEM Live FASTA Ingest
 
@@ -110,9 +110,9 @@ Extension panel **`IGEM_Live_FASTA_Ingest`** (verification tier 32) evaluates **
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in IGEM Live FASTA Ingest: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in IGEM Live FASTA Ingest: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in IGEM Live FASTA Ingest: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`BF₃`** in IGEM Live FASTA Ingest: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
+- **`H⁺/H₂`** in IGEM Live FASTA Ingest: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in IGEM Live FASTA Ingest: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 
 #### Live Ingest Spine
 
@@ -138,9 +138,9 @@ Extension panel **`Live_Ingest_Spine`** (verification tier 68) evaluates **28** 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Live Ingest Spine: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Live Ingest Spine: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Live Ingest Spine: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Live Ingest Spine: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`BL_N−H`** in Live Ingest Spine: measured **1.01**, seed-derived **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 
 #### NASA DONKI Solar Panel
 
@@ -166,9 +166,9 @@ Extension panel **`NASA_DONKI_Solar_Panel`** (verification tier 80) evaluates **
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in NASA DONKI Solar Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in NASA DONKI Solar Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in NASA DONKI Solar Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in NASA DONKI Solar Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Se`** in NASA DONKI Solar Panel: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### NASA NEO Feed Panel
 
@@ -194,9 +194,9 @@ Extension panel **`NASA_NEO_Feed_Panel`** (verification tier 80) evaluates **56*
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`IE_Ar`** in NASA NEO Feed Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in NASA NEO Feed Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in NASA NEO Feed Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`P`** in NASA NEO Feed Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_S`** in NASA NEO Feed Panel: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
 
 #### Open Meteo Live Panel
 
@@ -222,9 +222,9 @@ Extension panel **`Open_Meteo_Live_Panel`** (verification tier 81) evaluates **4
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Open Meteo Live Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Open Meteo Live Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Open Meteo Live Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Open Meteo Live Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Open Meteo Live Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### SH0ES Refined
 
@@ -278,9 +278,9 @@ Extension panel **`STScI_MAST_Telescope_Panel`** (verification tier 79) evaluate
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in STScI MAST Telescope Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in STScI MAST Telescope Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in STScI MAST Telescope Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in STScI MAST Telescope Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`Se`** in STScI MAST Telescope Panel: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Solar System Structure Deep
 
@@ -306,9 +306,9 @@ Extension panel **`Solar_System_Structure_Deep`** (verification tier 54) evaluat
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Solar System Structure Deep: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Solar System Structure Deep: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Solar System Structure Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Solar System Structure Deep: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Solar System Structure Deep: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Solar System Structure Deep: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### VizieR WDS TAP Live Deep
 
@@ -334,9 +334,9 @@ Extension panel **`VizieR_WDS_TAP_Live_Deep`** (verification tier 68) evaluates 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in VizieR WDS TAP Live Deep: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in VizieR WDS TAP Live Deep: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in VizieR WDS TAP Live Deep: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in VizieR WDS TAP Live Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Se`** in VizieR WDS TAP Live Deep: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### WDS Live Multiplicity Deep
 
@@ -362,6 +362,6 @@ Extension panel **`WDS_Live_Multiplicity_Deep`** (verification tier 62) evaluate
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in WDS Live Multiplicity Deep: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in WDS Live Multiplicity Deep: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Ca`** in WDS Live Multiplicity Deep: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in WDS Live Multiplicity Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in WDS Live Multiplicity Deep: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).

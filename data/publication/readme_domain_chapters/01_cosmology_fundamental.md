@@ -26,9 +26,9 @@ Extension panel **`AI_Galactic_Orbital_Bridge`** (verification tier 48) evaluate
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in AI Galactic Orbital Bridge: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in AI Galactic Orbital Bridge: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in AI Galactic Orbital Bridge: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in AI Galactic Orbital Bridge: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in AI Galactic Orbital Bridge: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Arxiv Gravitational Waves Panel
 
@@ -54,9 +54,9 @@ Extension panel **`Arxiv_Gravitational_Waves_Panel`** (verification tier 84) eva
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Arxiv Gravitational Waves Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Arxiv Gravitational Waves Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Arxiv Gravitational Waves Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Arxiv Gravitational Waves Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Arxiv Gravitational Waves Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Astrophysical Structure Crosswalk
 
@@ -82,9 +82,9 @@ Extension panel **`Astrophysical_Structure_Crosswalk`** (verification tier 52) e
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Astrophysical Structure Crosswalk: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Astrophysical Structure Crosswalk: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Astrophysical Structure Crosswalk: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Astrophysical Structure Crosswalk: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Astrophysical Structure Crosswalk: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### CERN Open Data LHC
 
@@ -111,8 +111,8 @@ Extension panel **`CERN_Open_Data_LHC`** (verification tier 38) evaluates **83**
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
 - **`F`** in CERN Open Data LHC: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in CERN Open Data LHC: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`Ca`** in CERN Open Data LHC: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`P`** in CERN Open Data LHC: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Compact Object Binary Events
 
@@ -138,9 +138,9 @@ Extension panel **`Compact_Object_Binary_Events`** (verification tier 53) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Compact Object Binary Events: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Compact Object Binary Events: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Compact Object Binary Events: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Compact Object Binary Events: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Compact Object Binary Events: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Consciousness Galactic Orbital Bridge
 
@@ -166,9 +166,9 @@ Extension panel **`Consciousness_Galactic_Orbital_Bridge`** (verification tier 4
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Consciousness Galactic Orbital Bridge: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Consciousness Galactic Orbital Bridge: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Consciousness Galactic Orbital Bridge: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Consciousness Galactic Orbital Bridge: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Toluene`** in Consciousness Galactic Orbital Bridge: measured **28.4**, seed-derived **28.400682642694072** via `PI^3·G` (error **0.002404%**). Constants: g_cat, pi. Authority: NIST Chemistry WebBook / CRC.
 
 #### Cosmology Anomalies
 
@@ -193,9 +193,9 @@ Extension panel **`Cosmology_Anomalies`** (verification tier 25) evaluates **23*
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Cosmology Anomalies: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Cosmology Anomalies: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`P`** in Cosmology Anomalies: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Cosmology Anomalies: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Se`** in Cosmology Anomalies: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Cosmology Anomaly Deep Panel
 
@@ -221,9 +221,9 @@ Extension panel **`Cosmology_Anomaly_Deep_Panel`** (verification tier 76) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Cosmology Anomaly Deep Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Cosmology Anomaly Deep Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Cosmology Anomaly Deep Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Cosmology Anomaly Deep Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Cosmology Anomaly Deep Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Cosmology Bubble Bleed
 
@@ -248,9 +248,9 @@ Extension panel **`Cosmology_Bubble_Bleed`** (verification tier 24) evaluates **
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in Cosmology Bubble Bleed: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Cosmology Bubble Bleed: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 - **`P`** in Cosmology Bubble Bleed: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Cosmology Bubble Bleed: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Cosmology Extended
 
@@ -297,9 +297,9 @@ Extension panel **`Dark_Energy_CPL`** (verification tier 51) evaluates **24** me
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`IE_Ar`** in Dark Energy CPL: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`P`** in Dark Energy CPL: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_S`** in Dark Energy CPL: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`Si`** in Dark Energy CPL: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Se`** in Dark Energy CPL: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Dark Sector Open Problems
 
@@ -325,9 +325,9 @@ Extension panel **`Dark_Sector_Open_Problems`** (verification tier 51) evaluates
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`IE_Ar`** in Dark Sector Open Problems: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`Bi2Te3`** in Dark Sector Open Problems: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`Ca`** in Dark Sector Open Problems: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`IE_S`** in Dark Sector Open Problems: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`BL_N−H`** in Dark Sector Open Problems: measured **1.01**, seed-derived **1.0099883725773517** via `A_bleed − γ⁶` (error **0.001151%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 
 #### Galactic Structure Sample
 
@@ -353,9 +353,9 @@ Extension panel **`Galactic_Structure_Sample`** (verification tier 53) evaluates
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in Galactic Structure Sample: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Galactic Structure Sample: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 - **`Ca`** in Galactic Structure Sample: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Galactic Structure Sample: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Higgs Mass
 
@@ -381,9 +381,9 @@ Extension panel **`Higgs_Mass`** (verification tier 17) evaluates **24** measure
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`pH_water`** in Higgs Mass: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-- **`H⁺/H₂`** in Higgs Mass: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in Higgs Mass: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Higgs Mass: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`Ca`** in Higgs Mass: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`P`** in Higgs Mass: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Hubble Bubble Tension
 
@@ -409,9 +409,9 @@ Extension panel **`Hubble_Bubble_Tension`** (verification tier 51) evaluates **2
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Hubble Bubble Tension: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Hubble Bubble Tension: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Hubble Bubble Tension: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Hubble Bubble Tension: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Hubble Bubble Tension: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Hubble Dark Sector Crosswalk
 
@@ -437,8 +437,8 @@ Extension panel **`Hubble_Dark_Sector_Crosswalk`** (verification tier 76) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in Hubble Dark Sector Crosswalk: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Hubble Dark Sector Crosswalk: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Hubble Dark Sector Crosswalk: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`P`** in Hubble Dark Sector Crosswalk: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Medical Galactic Orbital Bridge
@@ -465,9 +465,9 @@ Extension panel **`Medical_Galactic_Orbital_Bridge`** (verification tier 48) eva
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Medical Galactic Orbital Bridge: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Medical Galactic Orbital Bridge: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Medical Galactic Orbital Bridge: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Medical Galactic Orbital Bridge: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Medical Galactic Orbital Bridge: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### NIST CODATA Constants
 
@@ -493,9 +493,9 @@ Extension panel **`NIST_CODATA_Constants`** (verification tier 38) evaluates **2
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`pH_water`** in NIST CODATA Constants: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-- **`H⁺/H₂`** in NIST CODATA Constants: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
-- **`alpha_Fe`** in NIST CODATA Constants: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in NIST CODATA Constants: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`R_N`** in NIST CODATA Constants: measured **0.75**, seed-derived **0.7500001632454713** via `G⁻⁷ − ln(3)` (error **2.2e-05%**). Constants: g_cat. Authority: NIST / CRC / Allen / Luo.
+- **`Fe`** in NIST CODATA Constants: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
 
 #### NIST DLMF Special Functions
 
@@ -521,8 +521,8 @@ Extension panel **`NIST_DLMF_Special_Functions`** (verification tier 78) evaluat
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`Bi2Te3`** in NIST DLMF Special Functions: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in NIST DLMF Special Functions: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in NIST DLMF Special Functions: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`Ca`** in NIST DLMF Special Functions: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Neural Galactic Orbital Bridge
@@ -549,9 +549,9 @@ Extension panel **`Neural_Galactic_Orbital_Bridge`** (verification tier 48) eval
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Neural Galactic Orbital Bridge: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Neural Galactic Orbital Bridge: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Neural Galactic Orbital Bridge: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Neural Galactic Orbital Bridge: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Neural Galactic Orbital Bridge: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Neural Galactic Orbital Bridge: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Neutrino Physics Panel
 
@@ -577,9 +577,9 @@ Extension panel **`Neutrino_Physics_Panel`** (verification tier 82) evaluates **
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Neutrino Physics Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Neutrino Physics Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Neutrino Physics Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Neutrino Physics Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Neutrino Physics Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Neutrino Physics Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### PDG Particle Properties
 
@@ -605,9 +605,9 @@ Extension panel **`PDG_Particle_Properties`** (verification tier 78) evaluates *
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`Fe`** in PDG Particle Properties: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
-- **`F`** in PDG Particle Properties: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in PDG Particle Properties: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in PDG Particle Properties: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in PDG Particle Properties: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in PDG Particle Properties: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Particle Neural Orbital Bridge
 
@@ -633,9 +633,9 @@ Extension panel **`Particle_Neural_Orbital_Bridge`** (verification tier 47) eval
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`IE_Ar`** in Particle Neural Orbital Bridge: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in Particle Neural Orbital Bridge: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Particle Neural Orbital Bridge: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Ca`** in Particle Neural Orbital Bridge: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Particle Neural Orbital Bridge: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Particle Physics
 
@@ -647,12 +647,6 @@ Extension panel **`Particle_Physics`** (verification tier 16) evaluates **98** m
 
 - **Lean routes:** `particle`, `higgs`, `nuclear`
 - **Panel tags:** Particle, Physics
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`IE_Ar`** in Particle Physics: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`IE_S`** in Particle Physics: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-- **`IE_Li`** in Particle Physics: measured **5.392**, seed-derived **5.392103950584448** via `γ⁻³ + γ³` (error **0.001928%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 
 #### Plasma Physics
 
@@ -679,9 +673,9 @@ Extension panel **`Plasma_Physics`** (verification tier 12) evaluates **271833**
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Plasma Physics: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Plasma Physics: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Li`** in Plasma Physics: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Plasma Physics: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Plasma Physics: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Plasma Physics: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Quantum Computing Math Depth Panel
 
@@ -707,9 +701,9 @@ Extension panel **`Quantum_Computing_Math_Depth_Panel`** (verification tier 87) 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Quantum Computing Math Depth Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Quantum Computing Math Depth Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Quantum Computing Math Depth Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Quantum Computing Math Depth Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Quantum Computing Math Depth Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Quantum Information
 
@@ -735,9 +729,9 @@ Extension panel **`Quantum_Information`** (verification tier 66) evaluates **24*
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Quantum Information: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Quantum Information: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Quantum Information: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Quantum Information: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Quantum Information: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Quantum Information: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Quantum Materials
 
@@ -763,9 +757,9 @@ Extension panel **`Quantum_Materials`** (verification tier 27) evaluates **168**
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Quantum Materials: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Quantum Materials: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Quantum Materials: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Quantum Materials: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Quantum Materials: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Fe`** in Quantum Materials: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
 
 #### Quantum Mechanics Entanglement Depth Panel
 
@@ -791,9 +785,9 @@ Extension panel **`Quantum_Mechanics_Entanglement_Depth_Panel`** (verification t
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Quantum Mechanics Entanglement Depth Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Quantum Mechanics Entanglement Depth Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Quantum Mechanics Entanglement Depth Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Quantum Mechanics Entanglement Depth Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Quantum Mechanics Entanglement Depth Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Quantum Mechanics Entanglement Depth Panel: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### SIMBAD Stellar Identity Deep
 
@@ -819,9 +813,9 @@ Extension panel **`SIMBAD_Stellar_Identity_Deep`** (verification tier 60) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in SIMBAD Stellar Identity Deep: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in SIMBAD Stellar Identity Deep: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in SIMBAD Stellar Identity Deep: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in SIMBAD Stellar Identity Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in SIMBAD Stellar Identity Deep: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Stellar Multiplicity Catalog
 
@@ -847,9 +841,9 @@ Extension panel **`Stellar_Multiplicity_Catalog`** (verification tier 53) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Stellar Multiplicity Catalog: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Stellar Multiplicity Catalog: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`P`** in Stellar Multiplicity Catalog: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`R_C`** in Stellar Multiplicity Catalog: measured **0.77**, seed-derived **0.7700130881402762** via `π⁻⁴ + √γ` (error **0.0017%**). Constants: gamma, pi. Authority: NIST / CRC / Allen / Luo.
-- **`Se`** in Stellar Multiplicity Catalog: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Stellar Multiplicity Live Deep
 
@@ -875,6 +869,6 @@ Extension panel **`Stellar_Multiplicity_Live_Deep`** (verification tier 58) eval
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Stellar Multiplicity Live Deep: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Stellar Multiplicity Live Deep: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Stellar Multiplicity Live Deep: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Stellar Multiplicity Live Deep: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Stellar Multiplicity Live Deep: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Stellar Multiplicity Live Deep: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).

@@ -26,9 +26,9 @@ Extension panel **`Binary_Decoder_Panel`** (verification tier 88) evaluates **24
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Binary Decoder Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Binary Decoder Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Ca`** in Binary Decoder Panel: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Binary Decoder Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`O`** in Binary Decoder Panel: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Binary Decoder Rendlesham
 
@@ -54,9 +54,9 @@ Extension panel **`Binary_Decoder_Rendlesham`** (verification tier 35) evaluates
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`SF₆`** in Binary Decoder Rendlesham: measured **90.0**, seed-derived **90.0** via `π/2 (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`CS2`** in Binary Decoder Rendlesham: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
-- **`F`** in Binary Decoder Rendlesham: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Binary Decoder Rendlesham: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Binary Decoder Rendlesham: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Binary Decoder Rendlesham: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Certified Agent Formal Panel
 
@@ -82,9 +82,9 @@ Extension panel **`Certified_Agent_Formal_Panel`** (verification tier 88) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Certified Agent Formal Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Certified Agent Formal Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Certified Agent Formal Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Certified Agent Formal Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`O`** in Certified Agent Formal Panel: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Certified Agent Qwen
 
@@ -110,9 +110,9 @@ Extension panel **`Certified_Agent_Qwen`** (verification tier 35) evaluates **24
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`SF₆`** in Certified Agent Qwen: measured **90.0**, seed-derived **90.0** via `π/2 (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`CS2`** in Certified Agent Qwen: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
-- **`F`** in Certified Agent Qwen: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Certified Agent Qwen: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Certified Agent Qwen: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Certified Agent Qwen: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Intrinsic LLM Validators
 
@@ -138,9 +138,9 @@ Extension panel **`Intrinsic_LLM_Validators`** (verification tier 33) evaluates 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`SF₆`** in Intrinsic LLM Validators: measured **90.0**, seed-derived **90.0** via `π/2 (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`CS2`** in Intrinsic LLM Validators: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
+- **`Bi2Te3`** in Intrinsic LLM Validators: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 - **`F`** in Intrinsic LLM Validators: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Ca`** in Intrinsic LLM Validators: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Intrinsic LLM Validators Panel
 
@@ -166,9 +166,9 @@ Extension panel **`Intrinsic_LLM_Validators_Panel`** (verification tier 88) eval
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Intrinsic LLM Validators Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Intrinsic LLM Validators Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Intrinsic LLM Validators Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Intrinsic LLM Validators Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Intrinsic LLM Validators Panel: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### VL Agent Distill Panel
 
@@ -194,9 +194,9 @@ Extension panel **`VL_Agent_Distill_Panel`** (verification tier 88) evaluates **
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in VL Agent Distill Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in VL Agent Distill Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in VL Agent Distill Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in VL Agent Distill Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`R_C`** in VL Agent Distill Panel: measured **0.77**, seed-derived **0.7700130881402762** via `π⁻⁴ + √γ` (error **0.0017%**). Constants: gamma, pi. Authority: NIST / CRC / Allen / Luo.
 
 #### VL Distill Atlas
 
@@ -222,6 +222,6 @@ Extension panel **`VL_Distill_Atlas`** (verification tier 37) evaluates **24** m
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`SF₆`** in VL Distill Atlas: measured **90.0**, seed-derived **90.0** via `π/2 (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`CS2`** in VL Distill Atlas: measured **359.0**, seed-derived **358.99980082967573** via `E^4+PI^5-PHI^1` (error **5.5e-05%**). Constants: phi, pi. Authority: NIST Chemistry WebBook / CRC.
-- **`F`** in VL Distill Atlas: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in VL Distill Atlas: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in VL Distill Atlas: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in VL Distill Atlas: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).

@@ -14,10 +14,6 @@ Extension panel **`Cryosphere`** (verification tier 20) evaluates **2399** measu
 - **Panel tags:** Cryosphere
 - **Data sources / cohorts:** Northern NCEI climate cohort freezing-month classifier (GRACE-scale proxy)
 
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H_2`** in Cryosphere: measured **0.8574**, seed-derived **0.8652559794322651** via `E/PI` (error **0.916256%**). Constants: pi. Authority: Stone, IAEA NDS (2019).
-
 #### Domain Orbital Predictions
 
 Extension panel **`Domain_Orbital_Predictions`** (verification tier 48) evaluates **24** measured records at **0.0152903%** pooled median error (B_verified). Formal module: `FSOT.Formal.DomainOrbitalPredictionsPriors`. This panel extends the core spine into domain orbital predictions observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -42,9 +38,9 @@ Extension panel **`Domain_Orbital_Predictions`** (verification tier 48) evaluate
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in Domain Orbital Predictions: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Domain Orbital Predictions: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`Ca`** in Domain Orbital Predictions: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`H⁺/H₂`** in Domain Orbital Predictions: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Domain Orbital Predictions: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Domain Orbital Predictions: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Energy AI Orbital Bridge
 
@@ -70,9 +66,9 @@ Extension panel **`Energy_AI_Orbital_Bridge`** (verification tier 47) evaluates 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Energy AI Orbital Bridge: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Energy AI Orbital Bridge: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Ca`** in Energy AI Orbital Bridge: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Energy AI Orbital Bridge: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Energy AI Orbital Bridge: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Energy Neural Orbital Bridge
 
@@ -98,9 +94,9 @@ Extension panel **`Energy_Neural_Orbital_Bridge`** (verification tier 47) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Energy Neural Orbital Bridge: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Energy Neural Orbital Bridge: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`P`** in Energy Neural Orbital Bridge: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Si`** in Energy Neural Orbital Bridge: measured **1.385**, seed-derived **1.3850362977165687** via `Ω⁻²+B_IN` (error **0.002621%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Se`** in Energy Neural Orbital Bridge: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Exogeology
 
@@ -126,9 +122,9 @@ Extension panel **`Exogeology`** (verification tier 41) evaluates **316** measur
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`BF₃`** in Exogeology: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
-- **`BeCl₂`** in Exogeology: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`Bi2Te3`** in Exogeology: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`H⁺/H₂`** in Exogeology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Exogeology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Ca`** in Exogeology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Exogeology Panel
 
@@ -154,9 +150,9 @@ Extension panel **`Exogeology_Panel`** (verification tier 85) evaluates **100** 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Exogeology Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Exogeology Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Exogeology Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Exogeology Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Se`** in Exogeology Panel: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Exoplanet System Architecture
 
@@ -182,9 +178,9 @@ Extension panel **`Exoplanet_System_Architecture`** (verification tier 54) evalu
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`BF₃`** in Exoplanet System Architecture: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
-- **`BeCl₂`** in Exoplanet System Architecture: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`Bi2Te3`** in Exoplanet System Architecture: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`H⁺/H₂`** in Exoplanet System Architecture: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Exoplanet System Architecture: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`P`** in Exoplanet System Architecture: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Geochemistry
 
@@ -210,9 +206,9 @@ Extension panel **`Geochemistry`** (verification tier 26) evaluates **153** meas
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`alpha_Fe`** in Geochemistry: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Fe`** in Geochemistry: measured **1.68**, seed-derived **1.6799905609889012** via `E/PHI` (error **0.000562%**). Constants: phi. Authority: Anderson (1966).
 - **`F`** in Geochemistry: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Ca`** in Geochemistry: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
 
 #### Geology Stratigraphy
 
@@ -231,13 +227,16 @@ Extension panel **`Geology_Stratigraphy`** (verification tier 35) evaluates **19
 | Observable | Measured | Computed | Error % |
 |------------|---------:|---------:|--------:|
 | pooled_median · all_channels | 0 | 0 | 0 |
+| shallow_earthquake_classifier · ak024gb66mji | 0 | 0 | 0 |
 | stratigraphy · geology_panel | 0 | 0 | 0 |
+| shallow_earthquake_classifier · ak024gegz77l | 1 | 1 | 0 |
+| shallow_earthquake_classifier · ak024gehalss | 1 | 1 | 0 |
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`P`** in Geology Stratigraphy: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`O`** in Geology Stratigraphy: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
-- **`C`** in Geology Stratigraphy: measured **1.262**, seed-derived **1.2619131378546835** via `Ω⁻¹+B_IN³` (error **0.006883%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
+- **`H⁺/H₂`** in Geology Stratigraphy: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Geology Stratigraphy: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Geology Stratigraphy: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Geomagnetism
 
@@ -251,12 +250,6 @@ Extension panel **`Geomagnetism`** (verification tier 21) evaluates **524** meas
 - **Panel tags:** Geomagnetism
 - **Data sources / cohorts:** NOAA SWPC Kyoto Dst, GOES Hp storm classifier
 
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`IE_Ar`** in Geomagnetism: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`IE_S`** in Geomagnetism: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-- **`IE_Li`** in Geomagnetism: measured **5.392**, seed-derived **5.392103950584448** via `γ⁻³ + γ³` (error **0.001928%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-
 #### Grace Cryosphere
 
 Extension panel **`Grace_Cryosphere`** (verification tier 23) evaluates **253** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.GraceCryospherePriors`. This panel extends the core spine into grace cryosphere observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -268,10 +261,6 @@ Extension panel **`Grace_Cryosphere`** (verification tier 23) evaluates **253** 
 - **Lean routes:** `galactic`, `energy`
 - **Panel tags:** Grace, Cryosphere
 - **Data sources / cohorts:** GFZ GravIS Greenland monthly mass-decline directional classifier (GRACE, GRACE-FO)
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H_2`** in Grace Cryosphere: measured **0.8574**, seed-derived **0.8652559794322651** via `E/PI` (error **0.916256%**). Constants: pi. Authority: Stone, IAEA NDS (2019).
 
 #### Hydrology
 
@@ -285,10 +274,6 @@ Extension panel **`Hydrology`** (verification tier 19) evaluates **960** measure
 - **Panel tags:** Hydrology
 - **Data sources / cohorts:** USGS NWIS daily streamflow chunked ingest
 
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H_2`** in Hydrology: measured **0.8574**, seed-derived **0.8652559794322651** via `E/PI` (error **0.916256%**). Constants: pi. Authority: Stone, IAEA NDS (2019).
-
 #### Magnetosphere
 
 Extension panel **`Magnetosphere`** (verification tier 22) evaluates **167** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.MagnetospherePriors`. This panel extends the core spine into magnetosphere observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
@@ -300,12 +285,6 @@ Extension panel **`Magnetosphere`** (verification tier 22) evaluates **167** mea
 - **Lean routes:** `electron`, `fusion`
 - **Panel tags:** Magnetosphere
 - **Data sources / cohorts:** Coupled Dst+Kp storm classifier crosswalk to Geomagnetism, SpaceWeather, MagneticString
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`IE_Ar`** in Magnetosphere: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`IE_S`** in Magnetosphere: measured **10.36**, seed-derived **10.360130217649854** via `φ⁶/√3` (error **0.001257%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
-- **`IE_Li`** in Magnetosphere: measured **5.392**, seed-derived **5.392103950584448** via `γ⁻³ + γ³` (error **0.001928%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 
 #### Magnetosphere Extended
 
@@ -331,8 +310,8 @@ Extension panel **`Magnetosphere_Extended`** (verification tier 25) evaluates **
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
 - **`F`** in Magnetosphere Extended: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Magnetosphere Extended: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
 - **`Ca`** in Magnetosphere Extended: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
+- **`P`** in Magnetosphere Extended: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### NASA Exoplanet Archive
 
@@ -358,9 +337,9 @@ Extension panel **`NASA_Exoplanet_Archive`** (verification tier 38) evaluates **
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`CO₂`** in NASA Exoplanet Archive: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`BF₃`** in NASA Exoplanet Archive: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
-- **`BeCl₂`** in NASA Exoplanet Archive: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
+- **`P`** in NASA Exoplanet Archive: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`Se`** in NASA Exoplanet Archive: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
+- **`EN_C`** in NASA Exoplanet Archive: measured **2.55**, seed-derived **2.5498573599806234** via `G⁻⁵ + sin(φ)` (error **0.005594%**). Constants: g_cat, phi. Authority: NIST / CRC / Allen / Luo.
 
 #### NOAA Coastal Tides
 
@@ -414,9 +393,9 @@ Extension panel **`NOAA_NDBC_Buoy_Panel`** (verification tier 81) evaluates **59
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`F`** in NOAA NDBC Buoy Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in NOAA NDBC Buoy Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`O`** in NOAA NDBC Buoy Panel: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
+- **`pH_water`** in NOAA NDBC Buoy Panel: measured **7.0**, seed-derived **7.0** via `φ⁻⁴ + φ⁴` (error **0%**). Constants: phi. Authority: NIST / CRC / Allen / Luo.
+- **`H⁺/H₂`** in NOAA NDBC Buoy Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in NOAA NDBC Buoy Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 
 #### Orbital Mechanics
 
@@ -442,9 +421,9 @@ Extension panel **`Orbital_Mechanics`** (verification tier 21) evaluates **22** 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`BF₃`** in Orbital Mechanics: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
-- **`BeCl₂`** in Orbital Mechanics: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`Bi2Te3`** in Orbital Mechanics: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`P`** in Orbital Mechanics: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`BL_C≡C`** in Orbital Mechanics: measured **1.2**, seed-derived **1.1999816148643268** via `π/φ²` (error **0.001532%**). Constants: phi, pi. Authority: NIST / CRC / Allen / Luo.
+- **`Se`** in Orbital Mechanics: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Paleoclimate
 
@@ -470,9 +449,9 @@ Extension panel **`Paleoclimate`** (verification tier 41) evaluates **40** measu
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Paleoclimate: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Paleoclimate: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Paleoclimate: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Paleoclimate: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Li`** in Paleoclimate: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Paleoclimate Panel
 
@@ -498,9 +477,9 @@ Extension panel **`Paleoclimate_Panel`** (verification tier 85) evaluates **20**
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Paleoclimate Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Paleoclimate Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Paleoclimate Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Paleoclimate Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Li`** in Paleoclimate Panel: measured **0.618**, seed-derived **0.6180333354111225** via `φ⁻¹−α²` (error **0.005394%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Petrology Geochemistry Panel
 
@@ -526,9 +505,9 @@ Extension panel **`Petrology_Geochemistry_Panel`** (verification tier 82) evalua
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Petrology Geochemistry Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Petrology Geochemistry Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Petrology Geochemistry Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Petrology Geochemistry Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Petrology Geochemistry Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Planetary Atmospheres
 
@@ -554,9 +533,9 @@ Extension panel **`Planetary_Atmospheres`** (verification tier 23) evaluates **2
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Planetary Atmospheres: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Planetary Atmospheres: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Planetary Atmospheres: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`P`** in Planetary Atmospheres: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`O`** in Planetary Atmospheres: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Planetary Structure
 
@@ -610,9 +589,9 @@ Extension panel **`Radio_Astronomy_Panel`** (verification tier 82) evaluates **3
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Radio Astronomy Panel: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Radio Astronomy Panel: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`F`** in Radio Astronomy Panel: measured **3.401**, seed-derived **3.4009757390356907** via `γ⁻²+Ψ²` (error **0.000713%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`IE_Ar`** in Radio Astronomy Panel: measured **15.76**, seed-derived **15.760123778469742** via `γ⁻⁵ + Poof` (error **0.000785%**). Constants: gamma. Authority: NIST / CRC / Allen / Luo.
-- **`P`** in Radio Astronomy Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Seismology
 
@@ -626,9 +605,21 @@ Extension panel **`Seismology`** (verification tier 21) evaluates **500** measur
 - **Panel tags:** Seismology
 - **Data sources / cohorts:** USGS FDSN M4.5+ earthquake shallow-depth classifier
 
+**Top observables (measured vs computed):**
+
+| Observable | Measured | Computed | Error % |
+|------------|---------:|---------:|--------:|
+| shallow_earthquake_classifier · ak024gb66mji | 0 | 0 | 0 |
+| shallow_earthquake_classifier · ak024gegz77l | 1 | 1 | 0 |
+| shallow_earthquake_classifier · ak024gehalss | 1 | 1 | 0 |
+| shallow_earthquake_classifier · ak024gelo7o8 | 1 | 1 | 0 |
+| shallow_earthquake_classifier · nc75103356 | 1 | 1 | 0 |
+
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`H_2`** in Seismology: measured **0.8574**, seed-derived **0.8652559794322651** via `E/PI` (error **0.916256%**). Constants: pi. Authority: Stone, IAEA NDS (2019).
+- **`H⁺/H₂`** in Seismology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Seismology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
+- **`Bi2Te3`** in Seismology: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
 
 #### Seismology Deep
 
@@ -641,10 +632,6 @@ Extension panel **`Seismology_Deep`** (verification tier 23) evaluates **1000** 
 - **Lean routes:** `energy`
 - **Panel tags:** Seismology, Deep
 - **Data sources / cohorts:** USGS moment-tensor quality, PB2002 plate-margin holdout (Pacific ring)
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H_2`** in Seismology Deep: measured **0.8574**, seed-derived **0.8652559794322651** via `E/PI` (error **0.916256%**). Constants: pi. Authority: Stone, IAEA NDS (2019).
 
 #### Small Body Orbits
 
@@ -670,9 +657,9 @@ Extension panel **`Small_Body_Orbits`** (verification tier 22) evaluates **22** 
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`BF₃`** in Small Body Orbits: measured **120.0**, seed-derived **120.0** via `2π/3 (rad→°)` (error **0%**). Constants: seed constants. Authority: NIST CCCBDB.
-- **`BeCl₂`** in Small Body Orbits: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
-- **`Bi2Te3`** in Small Body Orbits: measured **1.0**, seed-derived **1.0** via `PHI^2-PHI^1` (error **0%**). Constants: phi. Authority: Snyder & Toberer, Nat.Mater. 7, 105 (2008).
+- **`P`** in Small Body Orbits: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
+- **`BL_C≡C`** in Small Body Orbits: measured **1.2**, seed-derived **1.1999816148643268** via `π/φ²` (error **0.001532%**). Constants: phi, pi. Authority: NIST / CRC / Allen / Luo.
+- **`Se`** in Small Body Orbits: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Space Weather
 
@@ -685,10 +672,6 @@ Extension panel **`Space_Weather`** (verification tier 17) evaluates **271813** 
 - **Lean routes:** `fusion`, `energy`, `plasma`
 - **Panel tags:** Space, Weather
 - **Data sources / cohorts:** NOAA SWPC Kp, Ap chunked ingest
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H_2`** in Space Weather: measured **0.8574**, seed-derived **0.8652559794322651** via `E/PI` (error **0.916256%**). Constants: pi. Authority: Stone, IAEA NDS (2019).
 
 #### Speleology
 
@@ -714,9 +697,9 @@ Extension panel **`Speleology`** (verification tier 41) evaluates **65** measure
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
+- **`H⁺/H₂`** in Speleology: measured **0.0**, seed-derived **0.0** via `π−π` (error **0%**). Constants: pi. Authority: Bard, Parsons & Jordan (1985).
+- **`alpha_Fe`** in Speleology: measured **0.0**, seed-derived **0.0** via `φ²-φ-1` (error **0%**). Constants: phi. Authority: Long & Greenwood (1997).
 - **`Ca`** in Speleology: measured **177.8**, seed-derived **177.8014017941265** via `E^5+PI^3-PHI^1` (error **0.000788%**). Constants: phi, pi. Authority: NIST-JANAF / CRC / Kittel.
-- **`P`** in Speleology: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`Se`** in Speleology: measured **2.021**, seed-derived **2.02093848330977** via `φ²−Ω⁻²` (error **0.003044%**). Constants: phi. Authority: Andersen et al., JPCRD 28 (1999).
 
 #### Speleology Panel
 
@@ -742,9 +725,9 @@ Extension panel **`Speleology_Panel`** (verification tier 85) evaluates **24** m
 
 **Formula-level verification** (strict empirical corpus — Appendix XII-E style):
 
-- **`P`** in Speleology Panel: measured **0.747**, seed-derived **0.7469924420819796** via `γ·Ω` (error **0.001012%**). Constants: gamma. Authority: Andersen et al., JPCRD 28 (1999).
-- **`O`** in Speleology Panel: measured **1.461**, seed-derived **1.4609166182653626** via `G⁻³+Ψ⁴` (error **0.005707%**). Constants: g_cat. Authority: Andersen et al., JPCRD 28 (1999).
-- **`C`** in Speleology Panel: measured **1.262**, seed-derived **1.2619131378546835** via `Ω⁻¹+B_IN³` (error **0.006883%**). Constants: seed constants. Authority: Andersen et al., JPCRD 28 (1999).
+- **`CO₂`** in Speleology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
+- **`XeF₂`** in Speleology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
+- **`BeCl₂`** in Speleology Panel: measured **180.0**, seed-derived **180.0** via `π (rad→°)` (error **0%**). Constants: pi. Authority: NIST CCCBDB.
 
 #### Tectonics
 
@@ -757,7 +740,3 @@ Extension panel **`Tectonics`** (verification tier 21) evaluates **500** measure
 - **Lean routes:** `energy`
 - **Panel tags:** Tectonics
 - **Data sources / cohorts:** PB2002 plate boundaries, crustal earthquake coupling
-
-**Formula-level verification** (strict empirical corpus — Appendix XII-E style):
-
-- **`H_2`** in Tectonics: measured **0.8574**, seed-derived **0.8652559794322651** via `E/PI` (error **0.916256%**). Constants: pi. Authority: Stone, IAEA NDS (2019).

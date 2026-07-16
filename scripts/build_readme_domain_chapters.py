@@ -74,6 +74,67 @@ DOMAIN_TO_FORMULA_PREFIXES: dict[str, tuple[str, ...]] = {
     "Materials_Science": ("BE_", "elastic"),
 }
 
+CHEMISTRY_LIKE_LEAN_ROUTES = frozenset(
+    {"chemical", "electron", "medical", "material", "particle", "nuclear"}
+)
+
+CHEMISTRY_LIKE_CLUSTERS = frozenset({"04_chemistry_materials"})
+
+# Preferred benchmark artifact per core domain (first existing path wins)
+CORE_BENCHMARK_PRIORITY: dict[str, tuple[str, ...]] = {
+    "Acoustics": ("data/acoustic_resonance_materials_benchmark.json",),
+    "Astronomy": ("data/radio_astronomy_panel_benchmark.json",),
+    "Astrophysics": ("data/cosmology_extended_benchmark.json", "data/cosmology_anomalies_benchmark.json"),
+    "Atmospheric_Physics": ("data/atmospheric_physics_gap_fill_benchmark.json", "data/weather_observed_benchmark.json"),
+    "Atomic_Physics": ("data/atomic_physics_gap_fill_benchmark.json",),
+    "Biochemistry": ("data/geochemistry_benchmark.json", "data/oncology_benchmark.json"),
+    "Biology": ("data/biology_developmental_structural_depth_panel_benchmark.json",),
+    "Chemistry": ("data/fuel_thermochemistry_public_anchors_benchmark.json", "data/geochemistry_benchmark.json"),
+    "Condensed_Matter": ("data/condensed_matter_superconductivity_depth_panel_benchmark.json",),
+    "Cosmology": ("data/cosmology_extended_benchmark.json", "data/cosmology_bubble_bleed_benchmark.json"),
+    "Ecology": ("data/ecology_benchmark.json", "data/ecology_gap_fill_benchmark.json"),
+    "Economics": ("data/economics_gap_fill_benchmark.json",),
+    "Electromagnetism": ("data/space_weather_summary_benchmark.json", "data/ionospheric_chemistry_coupling_benchmark.json"),
+    "Fluid_Dynamics": ("data/fluid_dynamics_gap_fill_benchmark.json",),
+    "Geophysics": ("data/seismology_benchmark.json", "data/weather_observed_benchmark.json"),
+    "High_Energy_Physics": ("data/higgs_mass_benchmark.json", "data/higgs_branching_benchmark.json"),
+    "Materials_Science": ("data/condensed_matter_superconductivity_depth_panel_benchmark.json",),
+    "Meteorology": ("data/meteorology_gap_fill_benchmark.json", "data/weather_observed_benchmark.json"),
+    "Molecular_Chemistry": ("data/geochemistry_benchmark.json", "data/fuel_thermochemistry_public_anchors_benchmark.json"),
+    "Neuroscience": ("data/neuroscience_connectomics_depth_panel_benchmark.json",),
+    "Nuclear_Physics": ("data/particle_physics_gap_fill_benchmark.json",),
+    "Oceanography": ("data/oceanography_gap_fill_benchmark.json",),
+    "Optics": ("data/optics_interferometry_depth_panel_benchmark.json",),
+    "Particle_Astrophysics": ("data/cosmology_extended_benchmark.json", "data/cosmology_anomalies_benchmark.json"),
+    "Particle_Physics": ("data/particle_physics_benchmark.json", "data/particle_physics_gap_fill_benchmark.json"),
+    "Physical_Chemistry": ("data/geochemistry_benchmark.json", "data/fuel_thermochemistry_public_anchors_benchmark.json"),
+    "Planetary_Science": ("data/planetary_structure_benchmark.json", "data/planetary_atmospheres_benchmark.json"),
+    "Psychology": ("data/psychology_gap_fill_benchmark.json",),
+    "Quantum_Computing": ("data/quantum_computing_gap_fill_benchmark.json", "data/trinary_os_portable_benchmark.json"),
+    "Quantum_Gravity": ("data/blackhole_whitehole_cycle_live_panel_benchmark.json",),
+    "Quantum_Mechanics": ("data/quantum_mechanics_gap_fill_benchmark.json",),
+    "Quantum_Optics": ("data/quantum_optics_gap_fill_benchmark.json",),
+    "Seismology": ("data/seismology_benchmark.json", "data/seismology_deep_benchmark.json"),
+    "Sociology": ("data/sociology_gap_fill_benchmark.json",),
+    "Thermodynamics": ("data/fuel_lab_live_panel_benchmark.json",),
+}
+
+LAB_BENCHMARK_FALLBACKS: dict[str, str] = {
+    "weather_lab": "data/weather_observed_benchmark.json",
+    "geomagnetism_lab": "data/space_weather_summary_benchmark.json",
+    "space_weather_lab": "data/space_weather_summary_benchmark.json",
+    "higgs_mass_lab": "data/higgs_mass_benchmark.json",
+    "higgs_branching_lab": "data/higgs_branching_benchmark.json",
+    "seismology_lab": "data/seismology_benchmark.json",
+    "tectonics_lab": "data/seismology_deep_benchmark.json",
+    "fuel_lab": "data/fuel_lab_live_panel_benchmark.json",
+    "plasma_physics_lab": "data/plasma_physics_benchmark.json",
+    "cosmology_extended_lab": "data/cosmology_extended_benchmark.json",
+    "cosmology_bubble_bleed_lab": "data/cosmology_bubble_bleed_benchmark.json",
+    "cosmology_wave4": "data/cosmology_extended_benchmark.json",
+    "blackhole_thesis": "data/blackhole_whitehole_cycle_live_panel_benchmark.json",
+}
+
 # (slug, title, predicate on domain name) — first match wins
 CLUSTERS: tuple[tuple[str, str, tuple[str, ...]], ...] = (
     (
@@ -583,7 +644,37 @@ def _subfield_map_extension(
     return lines
 
 
-def _resolve_benchmark_path(domain: str, panel_meta: dict, manifest: dict) -> Path | None:
+def _first_existing_path(rels: list[str]) -> Path | None:
+    for rel in rels:
+        path = ROOT / rel.replace("\\", "/")
+        if path.is_file():
+            return path
+    return None
+
+
+def _resolve_core_benchmark_path(domain: str, meta: dict) -> Path | None:
+    rels: list[str] = list(CORE_BENCHMARK_PRIORITY.get(domain, ()))
+    for lab in meta.get("labs") or []:
+        if lab in LAB_BENCHMARK_FALLBACKS:
+            rels.append(LAB_BENCHMARK_FALLBACKS[lab])
+    snake = domain.lower()
+    rels.extend(
+        [
+            f"data/{snake}_benchmark.json",
+            f"data/{snake}_gap_fill_benchmark.json",
+        ]
+    )
+    for path in sorted((ROOT / "data").glob(f"{snake}*benchmark*.json")):
+        rels.append(f"data/{path.name}")
+    return _first_existing_path(rels)
+
+
+def _resolve_benchmark_path(
+    domain: str,
+    panel_meta: dict,
+    manifest: dict,
+    core_meta: dict | None = None,
+) -> Path | None:
     candidates: list[str] = []
     sci = panel_meta.get("scientific") or {}
     if sci.get("benchmark_path"):
@@ -595,10 +686,12 @@ def _resolve_benchmark_path(domain: str, panel_meta: dict, manifest: dict) -> Pa
     if ext.get("benchmark_data"):
         candidates.append(ext["benchmark_data"])
 
-    for rel in candidates:
-        path = ROOT / rel.replace("\\", "/")
-        if path.is_file():
-            return path
+    hit = _first_existing_path(candidates)
+    if hit:
+        return hit
+
+    if core_meta is not None or not panel_meta:
+        return _resolve_core_benchmark_path(domain, core_meta or {})
 
     snake = domain.lower()
     for path in sorted((ROOT / "data").glob(f"{snake}*benchmark*.json")):
@@ -610,10 +703,30 @@ def _resolve_benchmark_path(domain: str, panel_meta: dict, manifest: dict) -> Pa
 def _normalize_record(row: dict) -> dict | None:
     measured = row.get("measured")
     if measured is None:
-        measured = row.get("target_value") or row.get("observed") or row.get("measured_value")
+        for key in (
+            "target_value",
+            "observed",
+            "measured_value",
+            "measured_shallow",
+            "observed_value",
+            "actual",
+        ):
+            if row.get(key) is not None:
+                measured = row.get(key)
+                break
     computed = row.get("computed")
     if computed is None:
-        computed = row.get("computed_value") or row.get("predicted") or row.get("fsot_value")
+        for key in (
+            "computed_value",
+            "predicted",
+            "fsot_value",
+            "computed_shallow",
+            "prediction",
+            "fsot_prediction",
+        ):
+            if row.get(key) is not None:
+                computed = row.get(key)
+                break
     if measured is None and computed is None:
         return None
     unit = row.get("unit") or ""
@@ -718,6 +831,47 @@ def _formula_sort_key(row: dict) -> float:
         return 999.0
 
 
+def _tokenize_observable_text(observables: list[dict]) -> set[str]:
+    tokens: set[str] = set()
+    for obs in observables:
+        for key in ("name", "property"):
+            raw = str(obs.get(key) or "")
+            for part in re.split(r"[^A-Za-z0-9_±]+", raw):
+                part = part.strip("_")
+                if len(part) >= 2:
+                    tokens.add(part.lower())
+    return tokens
+
+
+def _numeric_close(a: object, b: object, tol: float = 0.01) -> bool:
+    try:
+        fa, fb = float(a), float(b)
+    except (TypeError, ValueError):
+        return False
+    if fa == 0 and fb == 0:
+        return True
+    denom = max(abs(fa), abs(fb), 1e-12)
+    return abs(fa - fb) / denom <= tol
+
+
+def _allows_chemistry_prefix_fallback(
+    domain: str,
+    lean: str,
+    maps_to_lean: list[str],
+    cluster_slug: str,
+) -> bool:
+    if domain in DOMAIN_TO_FORMULA_PREFIXES:
+        return True
+    if cluster_slug in CHEMISTRY_LIKE_CLUSTERS:
+        routes = {lean, *maps_to_lean}
+        return bool(routes & CHEMISTRY_LIKE_LEAN_ROUTES)
+    return False
+
+
+def _is_generic_element_concept(concept: str) -> bool:
+    return len(concept) <= 3 and concept[:1].isupper() and concept[1:].islower()
+
+
 def _match_formulas(
     domain: str,
     lean: str,
@@ -725,13 +879,17 @@ def _match_formulas(
     observables: list[dict],
     by_concept: dict[str, list[dict]],
     top_n: int = TOP_FORMULAS,
+    cluster_slug: str = "",
 ) -> list[dict]:
     hits: list[dict] = []
     seen: set[tuple[str, str, str]] = set()
 
-    def add(row: dict) -> None:
+    def add(row: dict, *, allow_generic: bool = False) -> None:
+        concept = str(row.get("concept_name") or "")
+        if not allow_generic and _is_generic_element_concept(concept):
+            return
         key = (
-            str(row.get("concept_name") or ""),
+            concept,
             str(row.get("formula_canonical") or ""),
             str(row.get("target_quantity") or ""),
         )
@@ -739,23 +897,40 @@ def _match_formulas(
             seen.add(key)
             hits.append(row)
 
-    obs_text = " ".join(
-        str(obs.get(k) or "")
-        for obs in observables
-        for k in ("name", "property")
-    ).lower()
+    obs_tokens = _tokenize_observable_text(observables)
+    obs_text = " ".join(obs_tokens)
 
+    # Phase 1 — token overlap between benchmark observables and formula concepts
     for concept, rows in by_concept.items():
         cl = concept.lower()
-        if cl and (cl in obs_text or any(cl in t.lower() or t.lower() in cl for t in obs_text.split())):
-            add(sorted(rows, key=_formula_sort_key)[0])
+        if not cl:
+            continue
+        concept_tokens = {t for t in re.split(r"[^a-z0-9]+", cl) if len(t) >= 2}
+        if cl in obs_text or obs_tokens & concept_tokens:
+            add(sorted(rows, key=_formula_sort_key)[0], allow_generic=True)
+            continue
+        if any(cl in tok or tok in cl for tok in obs_tokens if len(tok) >= 3):
+            add(sorted(rows, key=_formula_sort_key)[0], allow_generic=True)
 
-    prefixes: list[str] = list(DOMAIN_TO_FORMULA_PREFIXES.get(domain, ()))
-    for route in [lean, *maps_to_lean]:
-        prefixes.extend(LEAN_TO_FORMULA_PREFIXES.get(route, ()))
+    # Phase 2 — measured value proximity to strict empirical targets
+    measured_vals = [obs.get("measured") for obs in observables if obs.get("measured") is not None]
     for concept, rows in by_concept.items():
-        if any(concept.startswith(p) for p in prefixes):
-            add(sorted(rows, key=_formula_sort_key)[0])
+        for row in rows:
+            target = (row.get("outcome") or {}).get("target_value") or row.get("target_quantity")
+            if any(_numeric_close(target, mv) for mv in measured_vals):
+                add(row, allow_generic=True)
+                break
+
+    # Phase 3 — explicit domain prefix fallback (never lean-route-only guessing)
+    if _allows_chemistry_prefix_fallback(domain, lean, maps_to_lean, cluster_slug):
+        prefixes: list[str] = list(DOMAIN_TO_FORMULA_PREFIXES.get(domain, ()))
+        if cluster_slug in CHEMISTRY_LIKE_CLUSTERS and not prefixes:
+            for route in [lean, *maps_to_lean]:
+                if route in CHEMISTRY_LIKE_LEAN_ROUTES:
+                    prefixes.extend(LEAN_TO_FORMULA_PREFIXES.get(route, ()))
+        for concept, rows in by_concept.items():
+            if prefixes and any(concept.startswith(p) for p in prefixes):
+                add(sorted(rows, key=_formula_sort_key)[0])
 
     hits.sort(key=_formula_sort_key)
     return hits[:top_n]
@@ -819,9 +994,11 @@ def _core_chapter(
         labs = row.get("labs") or ";".join(meta.get("labs") or [])
         breadth = meta.get("breadth_note") or "Full panel coverage via extension labs."
 
-        bench_path = _resolve_benchmark_path(name, {}, _load_yaml(EXT_MANIFEST))
+        bench_path = _resolve_benchmark_path(name, {}, _load_yaml(EXT_MANIFEST), core_meta=meta)
         observables: list[dict] = []
+        bench_rel = ""
         if bench_path:
+            bench_rel = str(bench_path.relative_to(ROOT)).replace("\\", "/")
             data = json.loads(bench_path.read_text(encoding="utf-8"))
             observables = _extract_top_observables(data)
 
@@ -831,6 +1008,7 @@ def _core_chapter(
             meta.get("maps_to_lean") or [],
             observables,
             formula_by_concept,
+            cluster_slug="00_core_spine_35",
         )
 
         lines.extend(
@@ -853,6 +1031,9 @@ def _core_chapter(
             ]
         )
         lines.extend(_subfield_map_core(meta))
+        if bench_rel:
+            lines.append(f"**Benchmark:** [`{bench_rel}`]({bench_rel})")
+            lines.append("")
         if observables:
             lines.append("**Top observables (measured vs computed):**")
             lines.append("")
@@ -892,7 +1073,14 @@ def _extension_domain_block(
         if data:
             observables = _extract_top_observables(data)
 
-    formulas = _match_formulas(name, lean_route, maps, observables, formula_by_concept)
+    formulas = _match_formulas(
+        name,
+        lean_route,
+        maps,
+        observables,
+        formula_by_concept,
+        cluster_slug=_cluster_for(name),
+    )
 
     lines = [
         f"#### {_humanize(name)}",
