@@ -84,6 +84,18 @@ E_con = kT × (1 + α² D_bio² e^(2φ) / kT) × N² × ψ_con
 
 FSOT ≈ 21.79 W vs Raichle & Gusnard ~20 W (brain resting metabolic power). Same seeds that fix cosmology also fix consciousness-energy scaling.
 
+### D.4.4 Particle — proton mass (PDG 2024)
+
+`proton = π⁶ − e³` → FSOT **941.304 MeV** vs PDG **938.272 MeV** (0.32% error). Authority: Zyla et al. (PDG 2024). No Yukawa refit — seed power law only.
+
+### D.4.5 Particle — electron mass (PDG 2024)
+
+`electron = P_BASE + P_NEW` (seed-derived P constants) → **0.513 MeV** vs **0.511 MeV** (0.32% error).
+
+### D.4.6 Cosmology — σ₈ tension (DES Y3 vs Planck 2018)
+
+Contested observable `S8_tension_Planck_vs_DES_Y3`: FSOT readout **0.058%** error on tension delta (PRED-002 preregistered). Monitor: [`data/publication/CONTESTED_SECTOR_WATCH.md`](../data/publication/CONTESTED_SECTOR_WATCH.md).
+
 ## D.5 What is not a fit parameter
 
 | Coordinate | Role | Audit |

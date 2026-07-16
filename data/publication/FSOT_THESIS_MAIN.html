@@ -247,7 +247,7 @@ Cross-Domain Theory of Reality — Published on GitHub</h2>
 <p><strong>Author:</strong> Damian Arthur Palumbo<br />
 <strong>Repository:</strong> <a
 href="https://github.com/dappalumbo91/FSOT-2.1-Lean">github.com/dappalumbo91/FSOT-2.1-Lean</a><br />
-<strong>Edition:</strong> v2.1 — arXiv-tier thesis layout (Tier B gaps)
+<strong>Edition:</strong> v2.2 — arXiv-tier thesis (Tier C complete)
 2026-07-16 <strong>Status:</strong> Living thesis — expanded as each
 domain and crevice is verified</p>
 <blockquote>
@@ -273,10 +273,10 @@ scientific domains (35 core + 367 extension)</strong> and
 <p>The results, as of this edition: <strong>394/394</strong> public
 benchmark domains pass a ≤0.5% pooled error gate; cross-domain pooled
 median error is <strong>0.013%</strong>. On contested sectors where ΛCDM
-and the Standard Model typically show ~15% baseline tension (H₀, σ₈, BBN
-proxies, hierarchy, dark-energy equation of state), FSOT unified
-readouts achieve <strong>0.030%</strong> pooled median across 13
-observables.</p>
+(Planck Collaboration 2018) and the Standard Model (PDG 2024) typically
+show ~15% baseline tension (H₀ per Riess et al. 2024; σ₈; BBN proxies;
+hierarchy; dark-energy equation of state), FSOT unified readouts achieve
+<strong>0.030%</strong> pooled median across 13 observables.</p>
 <p>Claims are not accepted on Python output alone. Verification runs
 through a <strong>cross-gauntlet of independent proof
 frameworks</strong>: Lean 4 (primary authority), Coq/Rocq, Isabelle/HOL,
@@ -464,9 +464,24 @@ href="docs/THESIS_APPENDIX_DERIVATIONS.md"><code>docs/THESIS_APPENDIX_DERIVATION
 <td><a
 href="data/publication/THESIS_COMPLETENESS_AUDIT.md"><code>data/publication/THESIS_COMPLETENESS_AUDIT.md</code></a></td>
 </tr>
+<tr>
+<td>Skeptic replication kit</td>
+<td><a
+href="docs/SKEPTIC_REPLICATION_KIT.md"><code>docs/SKEPTIC_REPLICATION_KIT.md</code></a></td>
+</tr>
+<tr>
+<td>Near-miss ledger</td>
+<td><a
+href="data/publication/BENCHMARK_NEAR_MISS_LEDGER.md"><code>data/publication/BENCHMARK_NEAR_MISS_LEDGER.md</code></a></td>
+</tr>
+<tr>
+<td>Contested-sector watch</td>
+<td><a
+href="data/publication/CONTESTED_SECTOR_WATCH.md"><code>data/publication/CONTESTED_SECTOR_WATCH.md</code></a></td>
+</tr>
 </tbody>
 </table>
-<p><em>Generated: 2026-07-16T13:24:27.200142+00:00</em>
+<p><em>Generated: 2026-07-16T13:27:58.292388+00:00</em>
 <!-- README_TOC_END --></p>
 <h2 id="i.-the-fragmentation-problem">I. The Fragmentation Problem</h2>
 <h3 id="what-broke">1.1 What broke</h3>
@@ -821,8 +836,9 @@ numbers</h3>
 </tbody>
 </table>
 <p><strong>Design law:</strong> we do not add a new dial every time a
-prediction fails. When FSOT misses a measurement, the failure is visible
-in the benchmark ledger — not hidden inside a freshly invented
+prediction fails (contrast with ΛCDM’s six-parameter extension; Planck
+Collaboration 2018). When FSOT misses a measurement, the failure is
+visible in the benchmark ledger — not hidden inside a freshly invented
 parameter.</p>
 <p><strong>Zero free parameters:</strong> Every constant comes from the
 five seeds. The 35-domain routing table (<code>D_eff</code>,
@@ -1053,7 +1069,7 @@ we do not</h3>
 </tr>
 <tr>
 <td>Brain metabolic power <code>E_con</code> ≈ 21.79 W vs ~20 W measured
-(Raichle &amp; Gusnard)</td>
+(Raichle &amp; Gusnard 2002)</td>
 <td>Universal consensus on what consciousness <em>is</em></td>
 </tr>
 <tr>
@@ -1123,6 +1139,19 @@ alt="Verification spine walkthrough" />
 <figcaption aria-hidden="true">Verification spine
 walkthrough</figcaption>
 </figure>
+<!-- README_OBLIGATION_MAP_START -->
+<h3 id="five-prover-obligation-map">5.2.1 Five-prover obligation
+map</h3>
+<figure>
+<img src="data/figures/obligation_map_five_provers.png"
+alt="Five-prover obligation map" />
+<figcaption aria-hidden="true">Five-prover obligation map</figcaption>
+</figure>
+<p><em>Seeds → oracle → Lean 4 (primary) → Coq / Isabelle / F</em> →
+Rust executable replay of <strong>1,863</strong> atomic obligations.
+Authoritative report:
+<code>data/cross_proof_verification_report.json</code>.*
+<!-- README_OBLIGATION_MAP_END --></p>
 <h3 id="benchmark-margin-gate">5.3 Benchmark margin gate</h3>
 <ul>
 <li><strong>GREEN:</strong> pooled median ≤ 0.5% AND classifier ≥
@@ -1253,7 +1282,8 @@ alt="Tier precision heatmap" /> <!-- README_VI_EXTRA_FIGURES_END --></p>
 <h3 id="representative-domains">6.2 Representative domains</h3>
 <p>Full atlas: <a
 href="data/publication/domain_atlas.csv"><code>data/publication/domain_atlas.csv</code></a>
-(402 rows)</p>
+(402 rows; measured targets per NIST, PDG, Planck-class surveys as cited
+per row)</p>
 <table>
 <thead>
 <tr>
@@ -1618,7 +1648,7 @@ href="docs/THESIS_APPENDIX_DERIVATIONS.md#d41-cosmology--h₀-planck-cmb-anchor"
 </figure>
 <p><strong>Worked example — Planck CMB:</strong></p>
 <ul>
-<li>Measured: 67.36 ± 0.54 km/s/Mpc<br />
+<li>Measured: 67.36 ± 0.54 km/s/Mpc (Planck Collaboration 2018)<br />
 </li>
 <li>FSOT computed: 67.270 km/s/Mpc<br />
 </li>
@@ -1729,6 +1759,44 @@ phase-sensing hardware closure in progress</li>
 <strong>402</strong> routed domains (35 core + 367 extension); prior 403
 figure was summary rollup miscount</li>
 </ul>
+<!-- README_NEAR_MISS_START -->
+<h3 id="benchmark-near-miss-transparency">9.5 Benchmark near-miss
+transparency</h3>
+<p>FSOT publishes domains that pass the green gate but approach the
+≤0.5% boundary — no post-hoc parameter rescue when a row fails.</p>
+<table>
+<colgroup>
+<col style="width: 79%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Transparency artifact</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a
+href="data/publication/BENCHMARK_NEAR_MISS_LEDGER.md"><code>data/publication/BENCHMARK_NEAR_MISS_LEDGER.md</code></a></td>
+<td>Top domains by max single-record error (still green)</td>
+</tr>
+<tr>
+<td><a
+href="data/publication/CONTESTED_SECTOR_WATCH.md"><code>data/publication/CONTESTED_SECTOR_WATCH.md</code></a></td>
+<td>Living H₀, σ₈, BBN, w_a monitor vs Planck 2018 / Riess 2024</td>
+</tr>
+<tr>
+<td><a
+href="docs/SKEPTIC_REPLICATION_KIT.md"><code>docs/SKEPTIC_REPLICATION_KIT.md</code></a></td>
+<td>15-minute falsification path for independent reviewers</td>
+</tr>
+</tbody>
+</table>
+<p>Regenerate:
+<code>python scripts/build_benchmark_near_miss_ledger.py</code> ·
+<code>python scripts/build_contested_sector_watch.py</code>
+<!-- README_NEAR_MISS_END --></p>
 <h3 id="founding-35-laws-verification-status">9.4 Founding 35 laws —
 verification status</h3>
 <p>All <strong>35/35</strong> founding physics laws are mapped and
@@ -1908,6 +1976,21 @@ href="data/publication/THESIS_COMPLETENESS_AUDIT.md"><code>data/publication/THES
 <td><a
 href="docs/VERIFIED_DESKTOP_TRANSPORTER.md"><code>docs/VERIFIED_DESKTOP_TRANSPORTER.md</code></a></td>
 <td>Transporter simulation stack (supplementary)</td>
+</tr>
+<tr>
+<td><a
+href="docs/SKEPTIC_REPLICATION_KIT.md"><code>docs/SKEPTIC_REPLICATION_KIT.md</code></a></td>
+<td>15-minute skeptic replication path</td>
+</tr>
+<tr>
+<td><a
+href="data/publication/BENCHMARK_NEAR_MISS_LEDGER.md"><code>data/publication/BENCHMARK_NEAR_MISS_LEDGER.md</code></a></td>
+<td>Near-miss transparency ledger</td>
+</tr>
+<tr>
+<td><a
+href="data/publication/CONTESTED_SECTOR_WATCH.md"><code>data/publication/CONTESTED_SECTOR_WATCH.md</code></a></td>
+<td>Contested-sector living watch</td>
 </tr>
 </tbody>
 </table>

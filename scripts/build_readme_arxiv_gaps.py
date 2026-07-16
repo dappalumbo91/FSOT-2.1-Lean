@@ -67,6 +67,9 @@ def build_toc(ts: str) -> str:
         f"| Chapter index | [`data/publication/readme_domain_chapters/INDEX.md`](data/publication/readme_domain_chapters/INDEX.md) |",
         "| Appendix — derivations | [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) |",
         "| Completeness audit | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) |",
+        "| Skeptic replication kit | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) |",
+        "| Near-miss ledger | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) |",
+        "| Contested-sector watch | [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) |",
         "",
         f"*Generated: {datetime.now(timezone.utc).isoformat()}*",
         "",
@@ -201,6 +204,30 @@ In words:
 3. FSOT **H₀ bridge scalar** (PRED-001) lands strictly between anchors — unified prediction where ΛCDM carries separate posteriors.
 
 This is why contested-sector pooled median reaches **0.030%** without introducing dark-energy density as a per-row fit parameter. Mechanism chain: [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md#d41-cosmology--h₀-planck-cmb-anchor).
+"""
+
+
+def build_near_miss_section() -> str:
+    return """### 9.5 Benchmark near-miss transparency
+
+FSOT publishes domains that pass the green gate but approach the ≤0.5% boundary — no post-hoc parameter rescue when a row fails.
+
+| Transparency artifact | Role |
+|-----------------------|------|
+| [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) | Top domains by max single-record error (still green) |
+| [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) | Living H₀, σ₈, BBN, w_a monitor vs Planck 2018 / Riess 2024 |
+| [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute falsification path for independent reviewers |
+
+Regenerate: `python scripts/build_benchmark_near_miss_ledger.py` · `python scripts/build_contested_sector_watch.py`
+"""
+
+
+def build_obligation_map_section() -> str:
+    return """### 5.2.1 Five-prover obligation map
+
+![Five-prover obligation map](data/figures/obligation_map_five_provers.png)
+
+*Seeds → oracle → Lean 4 (primary) → Coq / Isabelle / F* → Rust executable replay of **1,863** atomic obligations. Authoritative report: `data/cross_proof_verification_report.json`.*
 """
 
 
@@ -419,6 +446,8 @@ def main() -> int:
         "prereg_summary.md": build_prereg_summary(),
         "bubble_bleed.md": build_bubble_bleed(),
         "engineering_viii.md": build_engineering_viii(),
+        "near_miss.md": build_near_miss_section(),
+        "obligation_map.md": build_obligation_map_section(),
         "vi_extra_figures.md": build_vi_extra_figures(),
         "methods_formal.md": build_methods_formal(),
         "notation.md": build_notation(),

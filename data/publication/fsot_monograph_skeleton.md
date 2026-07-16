@@ -27,8 +27,11 @@ This work presents a **unified scalar framework** evaluated across the widest cr
 
 ## Abstract
 
-[Write 250–350 words summarizing: single scalar engine → 403 domains → 536k records → 0.013% pooled median → five-prover formal closure → contested-sector H₀/σ₈ results → engineering demonstrations.]
+Modern physics is accurate in fragments and silent on unity. Cosmology (Planck Collaboration 2018), particle physics (PDG 2024), chemistry (NIST/CODATA), biology, neuroscience, and engineering each carry siloed models with sector-specific parameters. **Fluid Spacetime Omni-Theory (FSOT)** proposes a single seed-derived scalar engine — constants from π, e, φ, γ, and G (Catalan) only — evaluated against **536,740** measured records across **402** routed scientific domains (35 core + 367 extension panels).
 
+As of 2026-07-16: **394/394** public benchmark domains pass a ≤0.5% pooled median error gate; cross-domain pooled median is **0.0130%**. On contested sectors where ΛCDM and the Standard Model typically show ~15% baseline tension (H₀ per Riess et al. 2024 vs Planck 2018; σ₈ lensing surveys), FSOT unified readouts achieve **0.030%** pooled median across 13 actively monitored observables.
+
+Claims are not accepted on Python output alone. Verification runs through Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust executable obligation replay — **1863** atomic obligations with `overall_ok: true`. Grounded engineering demonstrations (alternative fuels, molecular catalogs, horizon-cycle proxies) supplement the empirical spine at sub-percent precision. Preregistered predictions PRED-001–041 and per-domain kill criteria provide executable falsification. All numerical claims reproduce from the GitHub repository via one command.
 ---
 
 ## I. Introduction

@@ -4,7 +4,7 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.1 — arXiv-tier thesis layout (Tier B gaps) 2026-07-16
+**Edition:** v2.2 — arXiv-tier thesis (Tier C complete) 2026-07-16
 **Status:** Living thesis — expanded as each domain and crevice is verified  
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
@@ -22,7 +22,7 @@ python scripts/run_publication_verification_bundle.py
 
 Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan) — evaluated against measured reality across **402 routed scientific domains (35 core + 367 extension)** and **536,740 empirical records**.
 
-The results, as of this edition: **394/394** public benchmark domains pass a ≤0.5% pooled error gate; cross-domain pooled median error is **0.013%**. On contested sectors where ΛCDM and the Standard Model typically show ~15% baseline tension (H₀, σ₈, BBN proxies, hierarchy, dark-energy equation of state), FSOT unified readouts achieve **0.030%** pooled median across 13 observables.
+The results, as of this edition: **394/394** public benchmark domains pass a ≤0.5% pooled error gate; cross-domain pooled median error is **0.013%**. On contested sectors where ΛCDM (Planck Collaboration 2018) and the Standard Model (PDG 2024) typically show ~15% baseline tension (H₀ per Riess et al. 2024; σ₈; BBN proxies; hierarchy; dark-energy equation of state), FSOT unified readouts achieve **0.030%** pooled median across 13 observables.
 
 Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent proof frameworks**: Lean 4 (primary authority), Coq/Rocq, Isabelle/HOL, F* (Microsoft Research), and Rust executable obligation replay — **1,863 atomic obligations** with `overall_ok: true`. QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
 
@@ -86,8 +86,11 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 | Chapter index | [`data/publication/readme_domain_chapters/INDEX.md`](data/publication/readme_domain_chapters/INDEX.md) |
 | Appendix — derivations | [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) |
 | Completeness audit | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) |
+| Skeptic replication kit | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) |
+| Near-miss ledger | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) |
+| Contested-sector watch | [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) |
 
-*Generated: 2026-07-16T13:24:27.200142+00:00*
+*Generated: 2026-07-16T13:27:58.292388+00:00*
 <!-- README_TOC_END -->
 
 
@@ -235,7 +238,7 @@ All constants emerge from five seeds:
 | **γ** (Euler–Mascheroni) | Discrete-to-continuous correction |
 | **G** (Catalan) | Secondary geometric coupling |
 
-**Design law:** we do not add a new dial every time a prediction fails. When FSOT misses a measurement, the failure is visible in the benchmark ledger — not hidden inside a freshly invented parameter.
+**Design law:** we do not add a new dial every time a prediction fails (contrast with ΛCDM's six-parameter extension; Planck Collaboration 2018). When FSOT misses a measurement, the failure is visible in the benchmark ledger — not hidden inside a freshly invented parameter.
 
 **Zero free parameters:** Every constant comes from the five seeds. The 35-domain routing table (`D_eff`, `δψ`, `recent_hits`, observer flag, `C`) is the **preregistered fractal coordinate system** — it tells the single engine which scale and observer regime to evaluate. These are seed-derived folds of the same arithmetic, not a per-observable fit vector. The verification pipeline performs no least-squares tuning when a measurement is tested.
 
@@ -343,7 +346,7 @@ Consciousness is **fundamental in the ontology** — a core ripple in the 25D fl
 | We claim | We do not claim |
 |----------|-----------------|
 | Consciousness couples to physics through measurable proxies | FSOT has settled the philosophical "hard problem" |
-| Brain metabolic power `E_con` ≈ 21.79 W vs ~20 W measured (Raichle & Gusnard) | Universal consensus on what consciousness *is* |
+| Brain metabolic power `E_con` ≈ 21.79 W vs ~20 W measured (Raichle & Gusnard 2002) | Universal consensus on what consciousness *is* |
 | The same seeds that fix H₀ also fix consciousness-energy scaling | Orch-OR or any single external theory is proven |
 
 **Truth criterion:** a consciousness claim is *supported* when it maps to a Lean panel, produces numeric agreement within the green gate, and survives cross-proof replay. External philosophy debates are evidence, not gate.
@@ -371,6 +374,14 @@ Deep dive: [`docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`](docs/FSOT_PHILOSO
 Authoritative artifact: `data/cross_proof_verification_report.json` → **`overall_ok: true`**, **1,863 atomic obligations**.
 
 ![Verification spine walkthrough](data/figures/spine_walkthrough.png)
+
+<!-- README_OBLIGATION_MAP_START -->
+### 5.2.1 Five-prover obligation map
+
+![Five-prover obligation map](data/figures/obligation_map_five_provers.png)
+
+*Seeds → oracle → Lean 4 (primary) → Coq / Isabelle / F* → Rust executable replay of **1,863** atomic obligations. Authoritative report: `data/cross_proof_verification_report.json`.*
+<!-- README_OBLIGATION_MAP_END -->
 
 ### 5.3 Benchmark margin gate
 
@@ -453,7 +464,7 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 
 ### 6.2 Representative domains
 
-Full atlas: [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) (402 rows)
+Full atlas: [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) (402 rows; measured targets per NIST, PDG, Planck-class surveys as cited per row)
 
 | Domain | Records | Median error % | Tier |
 |--------|--------:|---------------:|------|
@@ -569,7 +580,7 @@ This is why contested-sector pooled median reaches **0.030%** without introducin
 
 **Worked example — Planck CMB:**
 
-- Measured: 67.36 ± 0.54 km/s/Mpc  
+- Measured: 67.36 ± 0.54 km/s/Mpc (Planck Collaboration 2018)  
 - FSOT computed: 67.270 km/s/Mpc  
 - Error: 0.13%  
 
@@ -629,6 +640,20 @@ Numeric agreement alone cannot guard against silent code drift. Exporting Lean o
 - **Contested-sector monitoring:** 13 actively-measured open problems (H₀, σ₈, BBN, hierarchy, w_a) tracked against live survey updates — FSOT pooled median **0.030%** as of this edition  
 - **Engineering hardware:** Fuel-lab and molecular-catalog stacks verified at simulation tier; ESP32 acoustic phase-sensing hardware closure in progress
 - **Domain atlas rollup:** Domain atlas reconciled: **402** routed domains (35 core + 367 extension); prior 403 figure was summary rollup miscount  
+
+<!-- README_NEAR_MISS_START -->
+### 9.5 Benchmark near-miss transparency
+
+FSOT publishes domains that pass the green gate but approach the ≤0.5% boundary — no post-hoc parameter rescue when a row fails.
+
+| Transparency artifact | Role |
+|-----------------------|------|
+| [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) | Top domains by max single-record error (still green) |
+| [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) | Living H₀, σ₈, BBN, w_a monitor vs Planck 2018 / Riess 2024 |
+| [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute falsification path for independent reviewers |
+
+Regenerate: `python scripts/build_benchmark_near_miss_ledger.py` · `python scripts/build_contested_sector_watch.py`
+<!-- README_NEAR_MISS_END -->
 
 ### 9.4 Founding 35 laws — verification status
 
@@ -710,6 +735,9 @@ python scripts/export_domain_citations.py --bundle verified_desktop
 | [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) | Seed-to-formula derivations |
 | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) | Thesis completeness audit |
 | [`docs/VERIFIED_DESKTOP_TRANSPORTER.md`](docs/VERIFIED_DESKTOP_TRANSPORTER.md) | Transporter simulation stack (supplementary) |
+| [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute skeptic replication path |
+| [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) | Near-miss transparency ledger |
+| [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) | Contested-sector living watch |
 
 ---
 

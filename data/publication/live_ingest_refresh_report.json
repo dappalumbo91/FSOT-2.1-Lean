@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-07-16T13:29:57.798794+00:00",
+  "steps": [
+    {
+      "step": "Gaia DR3 + WDS",
+      "ok": true,
+      "tail": "ive_cache\\gaia_dr3_live_cache.json (40 objects)\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\stellar_structures\\gaia_dr3_live_cache.json (40 objects)\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\stellar_structures\\live_cache\\wds_live_cache.json (40 objects)\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\stellar_structures\\wds_live_cache.json (40 objects)\n"
+    },
+    {
+      "step": "GWOSC events",
+      "ok": true,
+      "tail": "Wrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\stellar_structures\\live_cache\\gwosc_live_cache.json (230 events, source=GWOSC_live)\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\stellar_structures\\gwosc_live_cache.json\n"
+    },
+    {
+      "step": "NASA NEO / government open data",
+      "ok": true,
+      "tail": "\n=== ingest nasa_donki_flares ===\n  OK nasa_donki_flares: flare_count=400 source=noaa_goes_xray_public\n\n=== ingest nasa_neo_feed ===\n  OK nasa_neo_feed: neo_count=11 source=jpl_ssd_cad_public\n\n=== ingest osti_records ===\n  OK osti_records: record_count=50 source=osti_doe_live\n\n=== ingest uap_war_gov ===\n  OK uap_war_gov: document_count=100 source=war_gov_uap_hf_live\n\nAll Tier 80 ingests complete.\n"
+    },
+    {
+      "step": "Tier 68 live ingest",
+      "ok": true,
+      "tail": "materials_project: 40 records from materials_project_bundled\nopenneuro_full: 60 records from https://openneuro.org/crn/graphql\npubchem_live: 500 records from pubchem_pug_live+bundled\nVizieR WDS TAP failed (vizier_tap_get: HTTP Error 404: Not Found; vizier_tap_post: HTTP Error 404: Not Found); using bundled (40 systems)\nvizier_wds_tap: 40 records from wds_bundled\n"
+    },
+    {
+      "step": "Rebuild tier68 benchmarks",
+      "ok": true,
+      "tail": "TP Error 404: Not Found; vizier_tap_post: HTTP Error 404: Not Found); using bundled (40 systems)\nvizier_wds_tap: 40 records from wds_bundled\nMaterials_Project_Live_Panel: 141 records, pooled 0.011734%\nPubChem_Live_Deep: 5043 records, pooled 0.032631%\nOpenNeuro_Full_Panel: 20 records, pooled 0.015431%\nVizieR_WDS_TAP_Live_Deep: 91 records, pooled 0.026954%\nLive_Ingest_Spine: 28 records, pooled 0.0%\n"
+    },
+    {
+      "step": "Refresh contested closure",
+      "ok": true,
+      "tail": "Wrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\contested_observables_closure.json\n  pooled=0.029748999999999998% vs baseline=15.0% refinement_queue=0\n"
+    },
+    {
+      "step": "Refresh domain navigator",
+      "ok": true,
+      "tail": "Wrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\fsot_domain_navigator.json\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\fsot_domain_navigator.db\n  core_domains: 35\n  extension_panels: 367\n  problem_routes: 19\n  c_thin_panels: 0\n"
+    }
+  ],
+  "all_ok": true
+}

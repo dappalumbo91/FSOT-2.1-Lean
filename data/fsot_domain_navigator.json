@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T13:09:25.752909+00:00",
+  "generated_at": "2026-07-16T13:29:56.954920+00:00",
   "version": "1.0",
   "summary": {
     "core_domains": 35,
@@ -10253,7 +10253,7 @@
         "domain": "Live_Ingest_Spine",
         "record_count": 28,
         "pooled_median_error_pct": 0.0,
-        "generated_at": "2026-07-12T12:45:40.473558+00:00",
+        "generated_at": "2026-07-16T13:29:55.739427+00:00",
         "maps_to_lean": [
           "material",
           "chemical",
@@ -10271,7 +10271,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_ingest_relay_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": null,
@@ -11459,7 +11459,7 @@
         "domain": "Materials_Project_Live_Panel",
         "record_count": 141,
         "pooled_median_error_pct": 0.011734,
-        "generated_at": "2026-07-12T12:45:39.473336+00:00",
+        "generated_at": "2026-07-16T13:29:54.827604+00:00",
         "maps_to_lean": [
           "material",
           "particle",
@@ -11467,7 +11467,7 @@
         ],
         "D_eff": 16,
         "sources": [
-          "vendor/fsot_compute.py\\vendor\\live_cache\\tier68\\materials_project_live_cache.json",
+          "vendor\\live_cache\\tier68\\materials_project_live_cache.json",
           "vendor/materials_live/materials_project_bundled.json"
         ],
         "sota_models": [
@@ -11477,7 +11477,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_fsot_prediction_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": "python scripts/ingest_tier68_live_ingest.py --deep",
@@ -14115,9 +14115,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/openneuro_full_panel_benchmark.json",
         "domain": "OpenNeuro_Full_Panel",
-        "record_count": 123,
+        "record_count": 20,
         "pooled_median_error_pct": 0.015431,
-        "generated_at": "2026-07-12T12:45:40.422273+00:00",
+        "generated_at": "2026-07-16T13:29:55.702081+00:00",
         "maps_to_lean": [
           "neural",
           "consciousness",
@@ -14125,7 +14125,7 @@
         ],
         "D_eff": 14,
         "sources": [
-          "vendor/fsot_compute.py\\vendor\\live_cache\\tier68\\openneuro_full_cache.json",
+          "vendor\\live_cache\\tier68\\openneuro_full_cache.json",
           "vendor/public_data/consciousness/openneuro_summary.json"
         ],
         "sota_models": [
@@ -14135,7 +14135,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_fsot_prediction_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": "python scripts/ingest_tier68_live_ingest.py --deep",
@@ -16067,9 +16067,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/pubchem_live_deep_benchmark.json",
         "domain": "PubChem_Live_Deep",
-        "record_count": 5254,
+        "record_count": 5043,
         "pooled_median_error_pct": 0.032631,
-        "generated_at": "2026-07-12T12:45:40.355769+00:00",
+        "generated_at": "2026-07-16T13:29:55.640811+00:00",
         "maps_to_lean": [
           "electron",
           "chemical",
@@ -16080,7 +16080,7 @@
         ],
         "D_eff": 20,
         "sources": [
-          "vendor/fsot_compute.py\\vendor\\live_cache\\tier68\\pubchem_live_cache.json",
+          "vendor\\live_cache\\tier68\\pubchem_live_cache.json",
           "vendor/public_data/pubchem/pubchem_preregistered_panel.json",
           "vendor/public_data/pubchem/pubchem_culinary_expansion.json",
           "vendor/public_data/pubchem/pubchem_auto_expansion.json",
@@ -16099,7 +16099,7 @@
           "channel_fsot_prediction_vs_baseline": true,
           "channel_pubchem_consistency_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": "python scripts/ingest_tier68_live_ingest.py --deep",
@@ -17003,7 +17003,7 @@
         "domain": null,
         "record_count": 9,
         "pooled_median_error_pct": 0.0,
-        "generated_at": "2026-07-15T17:42:46.361338+00:00",
+        "generated_at": "2026-07-16T13:15:34.632979+00:00",
         "maps_to_lean": [
           "consciousness",
           "ai",
@@ -21044,9 +21044,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/vizier_wds_tap_live_deep_benchmark.json",
         "domain": "VizieR_WDS_TAP_Live_Deep",
-        "record_count": 121,
+        "record_count": 91,
         "pooled_median_error_pct": 0.026954,
-        "generated_at": "2026-07-12T12:45:40.460283+00:00",
+        "generated_at": "2026-07-16T13:29:55.718102+00:00",
         "maps_to_lean": [
           "astronomical",
           "galactic",
@@ -21054,7 +21054,7 @@
         ],
         "D_eff": 21,
         "sources": [
-          "vendor/fsot_compute.py\\vendor\\live_cache\\tier68\\vizier_wds_tap_live_cache.json",
+          "vendor\\live_cache\\tier68\\vizier_wds_tap_live_cache.json",
           "wds_live_multiplicity_deep_benchmark.json"
         ],
         "sota_models": [
@@ -21064,7 +21064,7 @@
           "pooled_vs_domain_baseline": true,
           "channel_fsot_prediction_vs_baseline": true
         },
-        "authority_path": "vendor/fsot_compute.py"
+        "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
       "reproduce": {
         "ingest": "python scripts/ingest_tier68_live_ingest.py --deep",

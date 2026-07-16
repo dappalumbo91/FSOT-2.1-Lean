@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T12:45:40.473558+00:00",
+  "generated_at": "2026-07-16T13:29:55.739427+00:00",
   "domain": "Live_Ingest_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
     "tier68_live_ingest_panels"
   ],
@@ -41,20 +41,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 28,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 28
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -63,20 +50,7 @@
       "computed": 0.015431,
       "measured": 0.0,
       "error_pct": 0.015431,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "live ingest spine",
-      "scientific_measurement": {
-        "delta": 0.015431,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -88,20 +62,7 @@
       "measured": 0.011734,
       "error_pct": 0.0,
       "record_count": 141,
-      "eval_kind": "tier68_bridge",
-      "domain_display_name": "live ingest spine",
-      "display_name": "materials project live panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier68_bridge"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -111,20 +72,7 @@
       "measured": 1.9,
       "error_pct": 0.01341,
       "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "mp-1023922",
-      "scientific_measurement": {
-        "delta": 0.000255,
-        "delta_pct": 0.013421,
-        "effective_error_pct": 0.013421,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -134,20 +82,7 @@
       "measured": -1.05,
       "error_pct": 0.015087,
       "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "mp-1023922",
-      "scientific_measurement": {
-        "delta": -0.000158,
-        "delta_pct": 0.015048,
-        "effective_error_pct": 0.015048,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -157,20 +92,7 @@
       "measured": 54.0,
       "error_pct": 0.011734,
       "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "mp-1023922",
-      "scientific_measurement": {
-        "delta": 0.006336,
-        "delta_pct": 0.011733,
-        "effective_error_pct": 0.011733,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -180,20 +102,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "mp-106",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -203,20 +112,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "mp-106",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -226,20 +122,7 @@
       "measured": 180.0,
       "error_pct": 0.011734,
       "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "mp-106",
-      "scientific_measurement": {
-        "delta": 0.021121,
-        "delta_pct": 0.011734,
-        "effective_error_pct": 0.011734,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -248,21 +131,8 @@
       "computed": 0.032631,
       "measured": 0.032631,
       "error_pct": 0.0,
-      "record_count": 5254,
-      "eval_kind": "tier68_bridge",
-      "domain_display_name": "live ingest spine",
-      "display_name": "pubchem live deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "record_count": 5043,
+      "eval_kind": "tier68_bridge"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -272,20 +142,7 @@
       "measured": 180.16,
       "error_pct": 0.000555,
       "source_panel": "pubchem_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "2244",
-      "scientific_measurement": {
-        "delta": -0.001,
-        "delta_pct": 0.000555,
-        "effective_error_pct": 0.000555,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -295,20 +152,7 @@
       "measured": 151.16,
       "error_pct": 0.003308,
       "source_panel": "pubchem_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "1983",
-      "scientific_measurement": {
-        "delta": 0.005,
-        "delta_pct": 0.003308,
-        "effective_error_pct": 0.003308,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -318,20 +162,7 @@
       "measured": 206.28,
       "error_pct": 0.002424,
       "source_panel": "pubchem_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "3672",
-      "scientific_measurement": {
-        "delta": 0.005,
-        "delta_pct": 0.002424,
-        "effective_error_pct": 0.002424,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -341,20 +172,7 @@
       "measured": 296.1,
       "error_pct": 0.015873,
       "source_panel": "pubchem_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "3033",
-      "scientific_measurement": {
-        "delta": 0.047,
-        "delta_pct": 0.015873,
-        "effective_error_pct": 0.015873,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -364,20 +182,7 @@
       "measured": 266.34,
       "error_pct": 0.000375,
       "source_panel": "pubchem_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "2249",
-      "scientific_measurement": {
-        "delta": 0.001,
-        "delta_pct": 0.000375,
-        "effective_error_pct": 0.000375,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -387,20 +192,7 @@
       "measured": 481.5,
       "error_pct": 0.0081,
       "source_panel": "pubchem_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "446157",
-      "scientific_measurement": {
-        "delta": 0.039,
-        "delta_pct": 0.0081,
-        "effective_error_pct": 0.0081,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -409,67 +201,28 @@
       "computed": 0.015431,
       "measured": 0.015431,
       "error_pct": 0.0,
-      "record_count": 123,
-      "eval_kind": "tier68_bridge",
-      "domain_display_name": "live ingest spine",
-      "display_name": "openneuro full panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "record_count": 20,
+      "eval_kind": "tier68_bridge"
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "eeg_dataset_count",
       "name": "openneuro_eeg_dataset_count",
-      "computed": 444.079932,
-      "measured": 444.0,
+      "computed": 55.009901,
+      "measured": 55.0,
       "error_pct": 0.018003,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "openneuro eeg dataset count",
-      "scientific_measurement": {
-        "delta": 0.079932,
-        "delta_pct": 0.018003,
-        "effective_error_pct": 0.018003,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "mri_dataset_count",
       "name": "openneuro_mri_dataset_count",
-      "computed": 56.010081,
-      "measured": 56.0,
+      "computed": 5.0009,
+      "measured": 5.0,
       "error_pct": 0.018003,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "openneuro mri dataset count",
-      "scientific_measurement": {
-        "delta": 0.010081,
-        "delta_pct": 0.018002,
-        "effective_error_pct": 0.018002,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -479,20 +232,7 @@
       "measured": 1.0,
       "error_pct": 0.015431,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "ds001785",
-      "scientific_measurement": {
-        "delta": 0.000154,
-        "delta_pct": 0.0154,
-        "effective_error_pct": 0.0154,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -502,20 +242,7 @@
       "measured": 1.0,
       "error_pct": 0.015431,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "ds001787",
-      "scientific_measurement": {
-        "delta": 0.000154,
-        "delta_pct": 0.0154,
-        "effective_error_pct": 0.0154,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -525,20 +252,7 @@
       "measured": 1.0,
       "error_pct": 0.015431,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "ds001810",
-      "scientific_measurement": {
-        "delta": 0.000154,
-        "delta_pct": 0.0154,
-        "effective_error_pct": 0.0154,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -548,20 +262,7 @@
       "measured": 1.0,
       "error_pct": 0.015431,
       "source_panel": "openneuro_full_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "ds001849",
-      "scientific_measurement": {
-        "delta": 0.000154,
-        "delta_pct": 0.0154,
-        "effective_error_pct": 0.0154,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -570,21 +271,8 @@
       "computed": 0.026954,
       "measured": 0.026954,
       "error_pct": 0.0,
-      "record_count": 121,
-      "eval_kind": "tier68_bridge",
-      "domain_display_name": "live ingest spine",
-      "display_name": "vizier wds tap live deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "record_count": 91,
+      "eval_kind": "tier68_bridge"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -594,20 +282,7 @@
       "measured": 5.0,
       "error_pct": 0.031446,
       "source_panel": "vizier_wds_tap_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.001572,
-        "delta_pct": 0.03144,
-        "effective_error_pct": 0.03144,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -617,20 +292,7 @@
       "measured": 2300.0,
       "error_pct": 0.026954,
       "source_panel": "vizier_wds_tap_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.619937,
-        "delta_pct": 0.026954,
-        "effective_error_pct": 0.026954,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -640,20 +302,7 @@
       "measured": 230.0,
       "error_pct": 0.026954,
       "source_panel": "vizier_wds_tap_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.061994,
-        "delta_pct": 0.026954,
-        "effective_error_pct": 0.026954,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -663,20 +312,7 @@
       "measured": 2.0,
       "error_pct": 0.031446,
       "source_panel": "vizier_wds_tap_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.000629,
-        "delta_pct": 0.03145,
-        "effective_error_pct": 0.03145,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -686,20 +322,7 @@
       "measured": 830.0,
       "error_pct": 0.026954,
       "source_panel": "vizier_wds_tap_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.223716,
-        "delta_pct": 0.026954,
-        "effective_error_pct": 0.026954,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "live_ingest_spine_lab",
@@ -709,20 +332,7 @@
       "measured": 27.0,
       "error_pct": 0.026954,
       "source_panel": "vizier_wds_tap_live_deep",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "live ingest spine",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.007278,
-        "delta_pct": 0.026956,
-        "effective_error_pct": 0.026956,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     }
   ],
   "margin_summary": {
@@ -736,11 +346,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Live Ingest Spine",
-  "tier_label": "Tier 68 \u2014 Materials Project Live Panel + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 0
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.192247+00:00"
+  "fsot_precision_gate_pct": 0.5
 }
