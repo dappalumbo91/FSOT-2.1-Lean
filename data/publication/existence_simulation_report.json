@@ -1,0 +1,244 @@
+{
+  "generated_at": "2026-07-16T16:00:36.261769+00:00",
+  "covered_benchmark_keys": 73374,
+  "gap_fill_count": 80,
+  "strict_empirical_gaps": 80,
+  "stumped_gaps": 0,
+  "orbital_frontiers": 0,
+  "simulation_pooled_median_error_pct": 344.289994,
+  "verification_pooled_median_error_pct": 0.451494,
+  "thin_atlas_domains": [
+    {
+      "domain": "Arxiv_Brain_Knowledge_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.018003,
+      "record_count": 20
+    },
+    {
+      "domain": "Cardiology_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.015311,
+      "record_count": 20
+    },
+    {
+      "domain": "Civil_Engineering_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.01341,
+      "record_count": 20
+    },
+    {
+      "domain": "Epidemiology",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.03062212293865052,
+      "record_count": 20
+    },
+    {
+      "domain": "Law_Policy_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.013003,
+      "record_count": 20
+    },
+    {
+      "domain": "Mathematics_Computational",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 1.4090183367935627e-14,
+      "record_count": 20
+    },
+    {
+      "domain": "Mechanical_Engineering_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.039349,
+      "record_count": 20
+    },
+    {
+      "domain": "NOAA_Coastal_Tides",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.030173,
+      "record_count": 20
+    },
+    {
+      "domain": "Neuroeconomics_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.031506,
+      "record_count": 20
+    },
+    {
+      "domain": "Neutrino_Physics_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.009504,
+      "record_count": 20
+    },
+    {
+      "domain": "Paleoclimate_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.006006,
+      "record_count": 20
+    },
+    {
+      "domain": "Planetary_Structure",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.0,
+      "record_count": 20
+    },
+    {
+      "domain": "Public_Verifiable_Spine",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.0,
+      "record_count": 20
+    },
+    {
+      "domain": "Robotics_Control_Systems_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.01341,
+      "record_count": 20
+    },
+    {
+      "domain": "Scientific_Expansion_Depth_Spine",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.0,
+      "record_count": 20
+    },
+    {
+      "domain": "Synthetic_Biology",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.0,
+      "record_count": 20
+    },
+    {
+      "domain": "Z120_Z126_Beam_Synthesis_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 9.5e-05,
+      "record_count": 20
+    },
+    {
+      "domain": "Zebrafish_Cell_Tracking_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.022236,
+      "record_count": 20
+    },
+    {
+      "domain": "Bibliography_Lean_Corpus",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.020055,
+      "record_count": 21
+    },
+    {
+      "domain": "Breakthrough_Discoveries_2024_2026",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.0,
+      "record_count": 21
+    },
+    {
+      "domain": "Chaos_Mediated_Phase_Transitions",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.03147898006445882,
+      "record_count": 21
+    },
+    {
+      "domain": "Condensed_Matter_Superconductivity_Depth_Panel",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.033841,
+      "record_count": 21
+    },
+    {
+      "domain": "Formula_Corpus_CNC",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.020055,
+      "record_count": 21
+    },
+    {
+      "domain": "Foundational_Ontology_Spine",
+      "coverage_tier": "B_verified",
+      "median_error_pct": 0.0,
+      "record_count": 21
+    }
+  ],
+  "coupling_edge_count": 39062,
+  "record_sample": [
+    {
+      "prediction_id": "PRED-042",
+      "observable_kind": "strict_empirical_gap",
+      "concept_name": "Sc",
+      "domain": "Chemistry",
+      "formula_branch": "e\u00b2 - sin(1)",
+      "fsot_predicted": 6.54758511,
+      "fsot_prediction_source": "formula_eval",
+      "synthetic_measured": 0.63327984,
+      "simulation_error_pct": 933.916556,
+      "real_measured_anchor": 6.562,
+      "verification_error_pct": 0.219672,
+      "verification_status": "pending_real_data",
+      "eval_kind": "existence_simulation_synthetic",
+      "unit": "eV",
+      "citation_grade": "empirical_strict"
+    },
+    {
+      "prediction_id": "PRED-043",
+      "observable_kind": "strict_empirical_gap",
+      "concept_name": "Mn",
+      "domain": "Chemistry",
+      "formula_branch": "\u03c6\u2074 + \u03b3",
+      "fsot_predicted": 7.43131763,
+      "fsot_prediction_source": "formula_eval",
+      "synthetic_measured": 1.32932071,
+      "simulation_error_pct": 459.031209,
+      "real_measured_anchor": 7.434,
+      "verification_error_pct": 0.036082,
+      "verification_status": "pending_real_data",
+      "eval_kind": "existence_simulation_synthetic",
+      "unit": "eV",
+      "citation_grade": "empirical_strict"
+    },
+    {
+      "prediction_id": "PRED-044",
+      "observable_kind": "strict_empirical_gap",
+      "concept_name": "Co",
+      "domain": "Chemistry",
+      "formula_branch": "\u03c6\u2074 + C_eff",
+      "fsot_predicted": 7.81180417,
+      "fsot_prediction_source": "formula_eval",
+      "synthetic_measured": 0.80708618,
+      "simulation_error_pct": 867.902111,
+      "real_measured_anchor": 7.881,
+      "verification_error_pct": 0.878008,
+      "verification_status": "pending_real_data",
+      "eval_kind": "existence_simulation_synthetic",
+      "unit": "eV",
+      "citation_grade": "empirical_strict"
+    },
+    {
+      "prediction_id": "PRED-045",
+      "observable_kind": "strict_empirical_gap",
+      "concept_name": "BF\u2083",
+      "domain": "Chemistry",
+      "formula_branch": "2\u03c0/3 (rad\u2192\u00b0)",
+      "fsot_predicted": 120.0,
+      "fsot_prediction_source": "formula_eval",
+      "synthetic_measured": 74.39167436,
+      "simulation_error_pct": 61.308374,
+      "real_measured_anchor": 120.0,
+      "verification_error_pct": 0.0,
+      "verification_status": "pending_real_data",
+      "eval_kind": "existence_simulation_synthetic",
+      "unit": "\u00b0",
+      "citation_grade": "empirical_strict"
+    },
+    {
+      "prediction_id": "PRED-046",
+      "observable_kind": "strict_empirical_gap",
+      "concept_name": "SF\u2086",
+      "domain": "Chemistry",
+      "formula_branch": "\u03c0/2 (rad\u2192\u00b0)",
+      "fsot_predicted": 90.0,
+      "fsot_prediction_source": "formula_eval",
+      "synthetic_measured": 6.32510576,
+      "simulation_error_pct": 1322.901109,
+      "real_measured_anchor": 90.0,
+      "verification_error_pct": 0.0,
+      "verification_status": "pending_real_data",
+      "eval_kind": "existence_simulation_synthetic",
+      "unit": "\u00b0",
+      "citation_grade": "empirical_strict"
+    }
+  ]
+}

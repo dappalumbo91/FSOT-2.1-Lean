@@ -1,0 +1,283 @@
+{
+  "generated_at": "2026-07-16T16:00:26.366138+00:00",
+  "steps": [
+    {
+      "step": "Domain coupling simulation",
+      "ok": true,
+      "tail": "Wrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\domain_coupling_simulation_benchmark.json\n  nodes: 403  edges: 39062  pooled median: 0.0%\n"
+    },
+    {
+      "step": "Orbital prediction analysis",
+      "ok": true,
+      "tail": "ion_report.json\"\n}\n  PREDICT: Acoustic_Resonance_Materials \u2014 Corpus has 1095 term3.acoustic_bleed formulas but only 3 extension dom...\n  PREDICT: Chaos_Mediated_Phase_Transitions \u2014 term3.chaos_factor dominates high-D_eff physics but lacks dedicated ex...\n  PREDICT: Phi_Morphogenetic_Scaling \u2014 phi appears 3276x in strict corpus \u2014 highest constant; under-mapped to...\n  PREDICT: Proof_Carrying_Code_Genome \u2014 OSS affinity clusters (cpython\u2194pytorch, go\u2194k8s) imply runtime-proof co...\n  PREDICT: Ionospheric_Chemistry_Coupling \u2014 Magnetosphere orbital cluster (5 domains) lacks ionospheric chemistry ...\n"
+    },
+    {
+      "step": "Existence simulation gap fill",
+      "ok": true,
+      "tail": "Gap-fill records: 80\n  strict_empirical: 80\n  stumped: 0\n  orbital: 0\nSimulation pooled median error: 263.494331%\nVerification anchor median (locked, not used in sim): 1.226401%\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\existence_simulation\\gap_fill_records.json\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\publication\\independent_prediction_ledger.yaml\n"
+    },
+    {
+      "step": "Existence simulation benchmark",
+      "ok": true,
+      "tail": "Gap-fill records: 80\n  strict_empirical: 80\n  stumped: 0\n  orbital: 0\nSimulation pooled median error: 263.494331%\nVerification anchor median (locked, not used in sim): 1.226401%\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\existence_simulation\\gap_fill_records.json\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\publication\\independent_prediction_ledger.yaml\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\existence_simulation_gap_fill_panel_benchmark.json  records=80 verify_median=1.226401%\n"
+    },
+    {
+      "step": "FluidLink local bundle",
+      "ok": true,
+      "tail": "OK \u2014 Sync Kronos \u2192 I: archive\nOK \u2014 Ingest Kronos metrology\nOK \u2014 Tier 50 / FluidLink benchmarks\nOK \u2014 Desktop observer loop\nOK \u2014 Observer loop benchmark\nOK \u2014 Living FSOT hardware audit\nOK \u2014 Blueprint reverify (BH/WH)\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\publication\\fluidlink_local_bundle_report.json  all_ok=True\n"
+    },
+    {
+      "step": "Sync verification stack \u2192 I:",
+      "ok": true,
+      "tail": "Synced verification stack \u2192 I:\\FSOT-Physical-Archive\\09_Local-Verification-Stack\n  files: 13  dirs: 3  scripts: 9\n"
+    }
+  ],
+  "all_ok": true,
+  "archive_root": "I:\\FSOT-Physical-Archive\\09_Local-Verification-Stack",
+  "existence_simulation": {
+    "generated_at": "2026-07-16T16:00:18.908868+00:00",
+    "covered_benchmark_keys": 73374,
+    "gap_fill_count": 80,
+    "strict_empirical_gaps": 80,
+    "stumped_gaps": 0,
+    "orbital_frontiers": 0,
+    "simulation_pooled_median_error_pct": 263.494331,
+    "verification_pooled_median_error_pct": 1.226401,
+    "thin_atlas_domains": [
+      {
+        "domain": "Arxiv_Brain_Knowledge_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.018003,
+        "record_count": 20
+      },
+      {
+        "domain": "Cardiology_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.015311,
+        "record_count": 20
+      },
+      {
+        "domain": "Civil_Engineering_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.01341,
+        "record_count": 20
+      },
+      {
+        "domain": "Epidemiology",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.03062212293865052,
+        "record_count": 20
+      },
+      {
+        "domain": "Law_Policy_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.013003,
+        "record_count": 20
+      },
+      {
+        "domain": "Mathematics_Computational",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 1.4090183367935627e-14,
+        "record_count": 20
+      },
+      {
+        "domain": "Mechanical_Engineering_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.039349,
+        "record_count": 20
+      },
+      {
+        "domain": "NOAA_Coastal_Tides",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.030173,
+        "record_count": 20
+      },
+      {
+        "domain": "Neuroeconomics_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.031506,
+        "record_count": 20
+      },
+      {
+        "domain": "Neutrino_Physics_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.009504,
+        "record_count": 20
+      },
+      {
+        "domain": "Paleoclimate_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.006006,
+        "record_count": 20
+      },
+      {
+        "domain": "Planetary_Structure",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.0,
+        "record_count": 20
+      },
+      {
+        "domain": "Public_Verifiable_Spine",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.0,
+        "record_count": 20
+      },
+      {
+        "domain": "Robotics_Control_Systems_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.01341,
+        "record_count": 20
+      },
+      {
+        "domain": "Scientific_Expansion_Depth_Spine",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.0,
+        "record_count": 20
+      },
+      {
+        "domain": "Synthetic_Biology",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.0,
+        "record_count": 20
+      },
+      {
+        "domain": "Z120_Z126_Beam_Synthesis_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 9.5e-05,
+        "record_count": 20
+      },
+      {
+        "domain": "Zebrafish_Cell_Tracking_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.022236,
+        "record_count": 20
+      },
+      {
+        "domain": "Bibliography_Lean_Corpus",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.020055,
+        "record_count": 21
+      },
+      {
+        "domain": "Breakthrough_Discoveries_2024_2026",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.0,
+        "record_count": 21
+      },
+      {
+        "domain": "Chaos_Mediated_Phase_Transitions",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.03147898006445882,
+        "record_count": 21
+      },
+      {
+        "domain": "Condensed_Matter_Superconductivity_Depth_Panel",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.033841,
+        "record_count": 21
+      },
+      {
+        "domain": "Formula_Corpus_CNC",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.020055,
+        "record_count": 21
+      },
+      {
+        "domain": "Foundational_Ontology_Spine",
+        "coverage_tier": "B_verified",
+        "median_error_pct": 0.0,
+        "record_count": 21
+      }
+    ],
+    "coupling_edge_count": 39062,
+    "record_sample": [
+      {
+        "prediction_id": "PRED-042",
+        "observable_kind": "strict_empirical_gap",
+        "concept_name": "\u03b2-carotene",
+        "domain": "Neuroscience",
+        "formula_branch": "e\u2076+\u03c6\u2078",
+        "fsot_predicted": 450.40750726,
+        "fsot_prediction_source": "formula_eval",
+        "synthetic_measured": 66.57015068,
+        "simulation_error_pct": 576.590788,
+        "real_measured_anchor": 453.0,
+        "verification_error_pct": 0.572294,
+        "verification_status": "pending_real_data",
+        "eval_kind": "existence_simulation_synthetic",
+        "unit": "nm",
+        "citation_grade": "empirical_strict"
+      },
+      {
+        "prediction_id": "PRED-043",
+        "observable_kind": "strict_empirical_gap",
+        "concept_name": "chlorophyll_a",
+        "domain": "Neuroscience",
+        "formula_branch": "e\u2076+e\u00b3+\u03c6\u2074",
+        "fsot_predicted": 430.36843238,
+        "fsot_prediction_source": "formula_eval",
+        "synthetic_measured": 234.82590711,
+        "simulation_error_pct": 83.271274,
+        "real_measured_anchor": 430.0,
+        "verification_error_pct": 0.085682,
+        "verification_status": "pending_real_data",
+        "eval_kind": "existence_simulation_synthetic",
+        "unit": "nm",
+        "citation_grade": "empirical_strict"
+      },
+      {
+        "prediction_id": "PRED-044",
+        "observable_kind": "strict_empirical_gap",
+        "concept_name": "KMnO\u2084",
+        "domain": "Neuroscience",
+        "formula_branch": "e\u2076+\u03c0\u2074+\u03c6\u2076",
+        "fsot_predicted": 518.78215644,
+        "fsot_prediction_source": "formula_eval",
+        "synthetic_measured": 82.28544509,
+        "simulation_error_pct": 530.466489,
+        "real_measured_anchor": 525.0,
+        "verification_error_pct": 1.184351,
+        "verification_status": "pending_real_data",
+        "eval_kind": "existence_simulation_synthetic",
+        "unit": "nm",
+        "citation_grade": "empirical_strict"
+      },
+      {
+        "prediction_id": "PRED-045",
+        "observable_kind": "strict_empirical_gap",
+        "concept_name": "methyl_orange",
+        "domain": "Neuroscience",
+        "formula_branch": "\u03c6\u2078*\u03c0\u00b2",
+        "fsot_predicted": 463.66132012,
+        "fsot_prediction_source": "formula_eval",
+        "synthetic_measured": 49.24262601,
+        "simulation_error_pct": 841.585284,
+        "real_measured_anchor": 464.0,
+        "verification_error_pct": 0.072991,
+        "verification_status": "pending_real_data",
+        "eval_kind": "existence_simulation_synthetic",
+        "unit": "nm",
+        "citation_grade": "empirical_strict"
+      },
+      {
+        "prediction_id": "PRED-046",
+        "observable_kind": "strict_empirical_gap",
+        "concept_name": "crystal_violet",
+        "domain": "Neuroscience",
+        "formula_branch": "\u03c0\u2076/\u03c6",
+        "fsot_predicted": 594.17119805,
+        "fsot_prediction_source": "formula_eval",
+        "synthetic_measured": 252.72386323,
+        "simulation_error_pct": 135.106883,
+        "real_measured_anchor": 590.0,
+        "verification_error_pct": 0.706983,
+        "verification_status": "pending_real_data",
+        "eval_kind": "existence_simulation_synthetic",
+        "unit": "nm",
+        "citation_grade": "empirical_strict"
+      }
+    ]
+  },
+  "independent_prediction_ledger": "data/publication/independent_prediction_ledger.yaml",
+  "policy": "synthetic gap fill + locked FSOT predictions for real-data verification"
+}

@@ -1,0 +1,46 @@
+version: "1.0"
+updated: "2026-07-16"
+title: Existence simulation failure clusters — sector expansion map
+policy: >
+  Failures are mapping gaps, not core math failures. Each cluster routes to a
+  SMILES-lab §-tier refined formula branch already present in vendor/smiles.
+
+clusters:
+  hydrophobicity_kyte_doolittle:
+    formula_branch: term1.term1_base
+    expansion_domain: Phi_Morphogenetic_Scaling
+    smiles_section: "§36 Hydrophobicity"
+    maps_to_lean: [biological, medical, consciousness]
+    note: Kyte-Doolittle scale — trinary-morphogenetic readout via SMILES §36
+
+  ir_raman_spectroscopy:
+    formula_branch: term3.acoustic_bleed
+    expansion_domain: Acoustic_Resonance_Materials
+    smiles_sections:
+      - "§6 IR Frequencies"
+      - "§20 Raman ν"
+    maps_to_lean: [material, particle, acoustical]
+    note: Silverstein / Nakamoto vibrational modes — acoustic_bleed sector
+
+  electrochemistry_standard_potential:
+    formula_branch: term1.growth_term
+    expansion_domain: Electrochemistry_Depth_Panel
+    smiles_section: "§5c E°"
+    maps_to_lean: [electron, chemical]
+    note: Bard-Parsons-Jordan E° couples — growth_term electrochemical readout
+
+  molecular_geometry_cccdb:
+    formula_branch: term3.acoustic_inflow
+    expansion_domain: Acoustic_Resonance_Materials
+    smiles_section: "§3 Bond Angles"
+    maps_to_lean: [material, particle]
+    note: NIST CCCBDB bond angles — geometry inflow correction
+
+  thermochemistry_janaf:
+    formula_branch: term3.chaos_factor
+    expansion_domain: Chaos_Mediated_Phase_Transitions
+    smiles_sections:
+      - "§4a ΔH°f"
+      - "§10 ΔG°f"
+    maps_to_lean: [energy, particle]
+    note: NIST-JANAF formation data — chaos-mediated phase readout

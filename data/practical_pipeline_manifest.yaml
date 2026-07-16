@@ -63,6 +63,20 @@ pipeline_stages:
       - Kronos_spacetime_ticker
       - desktop_private_mesh_concept
 
+  - id: existence_simulation
+    label: "Existence simulation — synthetic gap fill + independent predictions"
+    status: active
+    artifacts:
+      - data/publication/independent_prediction_ledger.yaml
+      - data/existence_simulation_gap_fill_panel_benchmark.json
+      - data/existence_simulation_refinement_panel_benchmark.json
+      - data/publication/independent_prediction_verification_report.json
+      - I:/FSOT-Physical-Archive/09_Local-Verification-Stack/verification_stack_manifest.yaml
+    command: python scripts/build_archive_existence_bundle.py
+    policy: >
+      Seed-derived synthetic placeholders fill benchmark gaps; FSOT predictions locked
+      before verification. Failures ring in via SMILES §-tier sector expansion (not ad-hoc tuning).
+
   - id: apply
     label: "Recognition → application (Kaggle, R&D, family stability)"
     status: planned
