@@ -79,6 +79,7 @@ MARKER = {
     "prereg": ("<!-- README_PREREG_SUMMARY_START -->", "<!-- README_PREREG_SUMMARY_END -->"),
     "bubble_bleed": ("<!-- README_BUBBLE_BLEED_START -->", "<!-- README_BUBBLE_BLEED_END -->"),
     "vi_figures": ("<!-- README_VI_EXTRA_FIGURES_START -->", "<!-- README_VI_EXTRA_FIGURES_END -->"),
+    "engineering": ("<!-- README_ENGINEERING_VIII_START -->", "<!-- README_ENGINEERING_VIII_END -->"),
     "methods": ("<!-- README_METHODS_FORMAL_START -->", "<!-- README_METHODS_FORMAL_END -->"),
     "xi_stub": ("<!-- README_APPENDIX_XI_STUB_START -->", "<!-- README_APPENDIX_XI_STUB_END -->"),
     "xii_stub": ("<!-- README_APPENDIX_XII_STUB_START -->", "<!-- README_APPENDIX_XII_STUB_END -->"),
@@ -252,6 +253,7 @@ def main() -> int:
     for script in (
         "build_mechanism_chain_derivation.py",
         "build_thesis_appendix_derivations.py",
+        "build_verified_desktop_transporter_paper.py",
         "build_readme_arxiv_gaps.py",
     ):
         subprocess.run([sys.executable, str(ROOT / "scripts" / script)], check=True)
@@ -280,6 +282,7 @@ def main() -> int:
     readme = _replace_block(readme, *MARKER["prereg"], _read_gap("prereg_summary.md"))
     readme = _replace_block(readme, *MARKER["bubble_bleed"], _read_gap("bubble_bleed.md"))
     readme = _replace_block(readme, *MARKER["vi_figures"], _read_gap("vi_extra_figures.md"))
+    readme = _replace_block(readme, *MARKER["engineering"], _read_gap("engineering_viii.md"))
 
     # First-time inserts if markers missing
     if MARKER["toc"][0] not in readme:
@@ -330,6 +333,12 @@ def main() -> int:
             readme,
             "vi_figures",
             "![Predicted vs measured scatter](data/figures/predicted_vs_measured_scatter.png)\n\n### 6.2 Representative domains",
+        )
+    if MARKER["engineering"][0] not in readme:
+        readme = _ensure_marker_block(
+            readme,
+            "engineering",
+            "## VIII. Engineering Demonstrations",
         )
     if MARKER["methods"][0] not in readme:
         readme = _insert_after(

@@ -600,7 +600,7 @@ CLUSTER_FOCUS: dict[str, str] = {
     "04_materials_engineering": "Materials genome, metamaterials, condensed matter depth",
     "04_chemistry_molecular": "PubChem, SMILES chemistry, CRC handbook properties",
     "05_consciousness_social": "Neuroscience, economics, linguistics, soul-bridge",
-    "06_engineering_propulsion": "Transporter, warp, fuels, power systems, verified desktop",
+    "06_engineering_propulsion": "Fuels, propulsion simulators, power systems, verified desktop",
     "07_mathematics_computation": "Formula corpus, proof spine, trinary OS, coupling simulation",
     "08_cybersecurity": "Malware, code genomes, zero-day risk",
     "09_founding_laws": "Dedicated founding physics panels (all mapped)",

@@ -26,7 +26,7 @@ The results, as of this edition: **394/394** public benchmark domains pass a ≤
 
 Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent proof frameworks**: Lean 4 (primary authority), Coq/Rocq, Isabelle/HOL, F* (Microsoft Research), and Rust executable obligation replay — **1,863 atomic obligations** with `overall_ok: true`. QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
 
-FSOT further demonstrates that the same engine guides applied engineering stacks: FSOT-designed alternative fuels (366 records, 0.039% pooled median), an eleven-layer transporter technology prototype (1,575 records, 0.031% pooled median), species-scale molecular catalogs, and black-hole / white-hole information-cycle panels — all cross-verified against seed-scalar predictions, not post-hoc curve fits.
+FSOT further demonstrates that the same engine guides grounded engineering readouts: FSOT-designed alternative fuels (366 records, 0.039% pooled median), species-scale molecular catalogs, and black-hole / white-hole information-cycle panels — cross-verified against seed-scalar predictions, not post-hoc curve fits.
 
 This document explains **why the universe exists the way it does** through FSOT: one 25-dimensional fluid medium, one arithmetic heartbeat, observation as physical coupling, and fractal repetition from quanta to cosmos. Every numerical claim in this thesis is independently reproducible from this repository.
 
@@ -87,7 +87,7 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 | Appendix — derivations | [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) |
 | Completeness audit | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) |
 
-*Generated: 2026-07-16T13:15:52.986518+00:00*
+*Generated: 2026-07-16T13:17:36.010473+00:00*
 <!-- README_TOC_END -->
 
 
@@ -215,7 +215,7 @@ A thunderstorm discharging.
 Two galaxies colliding.  
 A conscious brain metabolizing ~20 watts.  
 
-FSOT calls this **As Above, So Below**. In the formal system it is not metaphor: it is the cross-scale bridge that extension panels test. When the same scalar engine passes acoustics, cosmology, immunology, and transporter engineering simulators, the structural argument is that **nature reuses one process**, not thousands of unrelated accidents.
+FSOT calls this **As Above, So Below**. In the formal system it is not metaphor: it is the cross-scale bridge that extension panels test. When the same scalar engine passes acoustics, cosmology, immunology, and fuel-chemistry engineering simulators, the structural argument is that **nature reuses one process**, not thousands of unrelated accidents.
 
 ### 2.2 Fluid spacetime
 
@@ -317,7 +317,7 @@ FSOT invites destruction. Preregistered predictions **PRED-001 through PRED-041*
 | PRED-012 | unbinilium_Z120_N184_half_life | Undiscovered_Element_Candidate_Prereg_Scaffold | `term3.boundary_partition` | fsot_exceeds_sota_by_0.4 |
 | … | *23 more* | | | |
 
-Representative locks: **PRED-001** H₀ bridge between Planck and SH0ES; **PRED-002** σ₈ lensing; **PRED-034** fuel-lab compounds; **PRED-036–041** transporter stack channels.
+Representative locks: **PRED-001** H₀ bridge between Planck and SH0ES; **PRED-002** σ₈ lensing; **PRED-034** fuel-lab compounds. Propulsion-simulation preregistrations (PRED-036–041) are documented in the supplementary transporter volume — not the main thesis.
 <!-- README_PREREG_SUMMARY_END -->
 
 ---
@@ -500,7 +500,7 @@ FSOT does not verify a single silo — it verifies a **spine of 35 core scientif
 | Materials Engineering, Metamaterials & Condensed Matter | 8 | Materials genome, metamaterials, condensed matter depth |
 | Molecular Chemistry, PubChem & Compound Properties | 8 | PubChem, SMILES chemistry, CRC handbook properties |
 | Consciousness, Neuroscience & Social Sciences | 21 | Neuroscience, economics, linguistics, soul-bridge |
-| Engineering, Propulsion & Verified Desktop Technology | 20 | Transporter, warp, fuels, power systems, verified desktop |
+| Engineering, Propulsion & Verified Desktop Technology | 20 | Fuels, propulsion simulators, power systems, verified desktop |
 | Mathematics, Computation & Formal Methods | 28 | Formula corpus, proof spine, trinary OS, coupling simulation |
 | Cybersecurity, Code Genomes & Threat Intelligence | 3 | Malware, code genomes, zero-day risk |
 | Founding 35 Physics Laws (Dedicated Panels) | 7 | Dedicated founding physics panels (all mapped) |
@@ -575,9 +575,10 @@ This is why contested-sector pooled median reaches **0.030%** without introducin
 
 ---
 
+<!-- README_ENGINEERING_VIII_START -->
 ## VIII. Engineering Demonstrations
 
-*These stacks prove the engine guides engineering — they are not the sole claim, but they are real FSOT engineering.*
+*These stacks show the seed engine can guide **grounded** engineering readouts — thermochemistry, molecular catalogs, and horizon-cycle proxies. They supplement the empirical spine; they are not its primary proof.*
 
 ### 8.1 FSOT-designed alternative fuels
 
@@ -594,26 +595,22 @@ Cross-referenced with grounded thermochemistry and Prius engine simulator output
 
 ![Verified desktop fuels](data/figures/verified_desktop_fuels.png)
 
-### 8.2 Transporter technology stack
-
-Eleven verified layers — quantum channel → information → portal → engineering → warp actuation → BH/WH crosswalk → beam-forming → T3 scan → pad A hardware → pad B receiver → two-gate entanglement:
-
-| Panel | Records | Pooled median % |
-|-------|--------:|----------------:|
-| Star Trek Transporter | 1,575 | 0.031 |
-
-Preregistered: **PRED-036, PRED-038, PRED-039, PRED-040, PRED-041**.
-
-![Verified desktop transporter](data/figures/verified_desktop_transporter.png)
-
-### 8.3 Machine, molecule, and horizon cycle
+### 8.2 Machine, molecule, and horizon cycle
 
 | Panel | Records | Pooled median % |
 |-------|--------:|----------------:|
 | Machine & Molecule | 120 | 0.013 |
 | Black-hole / white-hole cycle | 24 | 0.026 |
 
-Simulators: `vendor/verified_desktop/star_trek_transporter/`
+Species-scale molecular catalogs and information-cycle panels at the black-hole horizon — seed-scalar predictions cross-checked against simulator outputs, not post-hoc fits.
+
+```bash
+python scripts/reproduce_domain_panel.py --panel Machine_And_Molecule_Live_Panel --deep
+python scripts/reproduce_domain_panel.py --panel BlackHole_WhiteHole_Cycle_Live_Panel --deep
+```
+
+Simulators: `vendor/verified_desktop/` (machine-and-molecule, fuel lab, horizon cycle).
+<!-- README_ENGINEERING_VIII_END -->
 
 ---
 
@@ -630,7 +627,7 @@ Numeric agreement alone cannot guard against silent code drift. Exporting Lean o
 ### 9.3 Open work (not model failures)
 
 - **Contested-sector monitoring:** 13 actively-measured open problems (H₀, σ₈, BBN, hierarchy, w_a) tracked against live survey updates — FSOT pooled median **0.030%** as of this edition  
-- **Engineering hardware:** Fuel and transporter stacks verified at simulation tier; ESP32 acoustic phase-sensing hardware closure in progress  
+- **Engineering hardware:** Fuel-lab and molecular-catalog stacks verified at simulation tier; ESP32 acoustic phase-sensing hardware closure in progress
 - **Domain atlas rollup:** Domain atlas reconciled: **402** routed domains (35 core + 367 extension); prior 403 figure was summary rollup miscount  
 
 ### 9.4 Founding 35 laws — verification status
@@ -650,7 +647,7 @@ Full audit: [`docs/FOUNDING_35_LAWS_AUDIT.md`](docs/FOUNDING_35_LAWS_AUDIT.md)
 
 ## X. Conclusion
 
-The universe does not present itself as a hundred separate accidents. It presents as **repetition with variation** — the same mathematics in stellar fusion and mitochondrial chemistry, in Hubble tension and brain metabolism, in molecular bonds and warp-actuation simulators.
+The universe does not present itself as a hundred separate accidents. It presents as **repetition with variation** — the same mathematics in stellar fusion and mitochondrial chemistry, in Hubble tension and brain metabolism, in molecular bonds and thermochemistry readouts.
 
 FSOT names that repetition: **one fluid, one scalar, seed-derived, observer-coupled, fractal across 402 routed domains**. The empirical record says it is tight. The formal record says it is triangulated. The engineering record says it builds.
 
@@ -672,7 +669,7 @@ Individual panels:
 
 ```bash
 python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep
-python scripts/reproduce_domain_panel.py --panel Star_Trek_Transporter_Live_Panel --deep
+python scripts/reproduce_domain_panel.py --panel Machine_And_Molecule_Live_Panel --deep
 python scripts/build_verified_desktop_cross_proof_closure.py
 python scripts/run_cross_proof_verification.py
 ```
@@ -712,6 +709,7 @@ python scripts/export_domain_citations.py --bundle verified_desktop
 | [`docs/THESIS_APPENDIX_XII.md`](docs/THESIS_APPENDIX_XII.md) | Full domain coverage (Appendix XII) |
 | [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) | Seed-to-formula derivations |
 | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) | Thesis completeness audit |
+| [`docs/VERIFIED_DESKTOP_TRANSPORTER.md`](docs/VERIFIED_DESKTOP_TRANSPORTER.md) | Transporter simulation stack (supplementary) |
 
 ---
 

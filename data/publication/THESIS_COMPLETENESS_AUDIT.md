@@ -1,6 +1,6 @@
 # FSOT Thesis Completeness Audit
 
-*Generated: 2026-07-16T13:15:59.712654+00:00*
+*Generated: 2026-07-16T13:17:42.099485+00:00*
 
 Top-to-bottom comparison of **living thesis** (`README.md`) against **philosophy spine**, **monograph skeleton**, and **live verification artifacts**.
 
@@ -14,7 +14,7 @@ Top-to-bottom comparison of **living thesis** (`README.md`) against **philosophy
 | Contested pooled median | `0.029748999999999998%` |
 | Domain atlas rows (routed) | `402` (35 core + 367 extension = 402) |
 | Preregistered predictions | `35` |
-| Ideals in main README | `19/19` |
+| Ideals in main README | `20/20` |
 
 ## Crucial FSOT ideals — coverage matrix
 
@@ -33,7 +33,8 @@ Top-to-bottom comparison of **living thesis** (`README.md`) against **philosophy
 | Founding 35 laws | ✓ | — | — |
 | Five-prover cross-proof | ✓ | ✓ | ✓ |
 | Contested sectors (H₀, σ₈) | ✓ | ✓ | ✓ |
-| Engineering demos | ✓ | — | ✓ |
+| Engineering demos (main thesis) | ✓ | — | ✓ |
+| Transporter supplementary volume | ✓ | — | ✓ |
 | Strict-empirical corpus | ✓ | ✓ | — |
 | Domain atlas / coverage | ✓ | ✓ | ✓ |
 | Derivation appendix | ✓ | — | — |

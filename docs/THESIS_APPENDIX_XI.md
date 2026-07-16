@@ -10,7 +10,7 @@ python scripts/merge_readme_thesis_expansion.py
 
 ## XI-A — Cross-Verification Metrics
 
-*Generated: 2026-07-16T13:15:33.298254+00:00*
+*Generated: 2026-07-16T13:17:20.123038+00:00*
 
 ### Five-prover formal spine
 

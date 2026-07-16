@@ -18,4 +18,4 @@
 | PRED-012 | unbinilium_Z120_N184_half_life | Undiscovered_Element_Candidate_Prereg_Scaffold | `term3.boundary_partition` | fsot_exceeds_sota_by_0.4 |
 | … | *23 more* | | | |
 
-Representative locks: **PRED-001** H₀ bridge between Planck and SH0ES; **PRED-002** σ₈ lensing; **PRED-034** fuel-lab compounds; **PRED-036–041** transporter stack channels.
+Representative locks: **PRED-001** H₀ bridge between Planck and SH0ES; **PRED-002** σ₈ lensing; **PRED-034** fuel-lab compounds. Propulsion-simulation preregistrations (PRED-036–041) are documented in the supplementary transporter volume — not the main thesis.

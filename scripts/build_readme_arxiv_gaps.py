@@ -182,7 +182,8 @@ def build_prereg_summary() -> str:
     lines.extend([
         "",
         "Representative locks: **PRED-001** H₀ bridge between Planck and SH0ES; **PRED-002** σ₈ lensing; "
-        "**PRED-034** fuel-lab compounds; **PRED-036–041** transporter stack channels.",
+        "**PRED-034** fuel-lab compounds. Propulsion-simulation preregistrations (PRED-036–041) are documented "
+        "in the supplementary transporter volume — not the main thesis.",
         "",
     ])
     return "\n".join(lines)
@@ -200,6 +201,44 @@ In words:
 3. FSOT **H₀ bridge scalar** (PRED-001) lands strictly between anchors — unified prediction where ΛCDM carries separate posteriors.
 
 This is why contested-sector pooled median reaches **0.030%** without introducing dark-energy density as a per-row fit parameter. Mechanism chain: [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md#d41-cosmology--h₀-planck-cmb-anchor).
+"""
+
+
+def build_engineering_viii() -> str:
+    return """## VIII. Engineering Demonstrations
+
+*These stacks show the seed engine can guide **grounded** engineering readouts — thermochemistry, molecular catalogs, and horizon-cycle proxies. They supplement the empirical spine; they are not its primary proof.*
+
+### 8.1 FSOT-designed alternative fuels
+
+Seven novel molecular states plus gasoline baseline:
+
+- fsot_hemp_waste_grounded, fsot_hemp_waste_advanced, fsot_algae_oil_biodiesel  
+- fsot_mushroom_spore_fuel, fsot_green_hydrogen, fsot_optimax, fsot_bio_spark  
+
+| Panel | Records | Pooled median % |
+|-------|--------:|----------------:|
+| Fuel Lab | 366 | 0.039 |
+
+Cross-referenced with grounded thermochemistry and Prius engine simulator outputs. Preregistered: **PRED-034**.
+
+![Verified desktop fuels](data/figures/verified_desktop_fuels.png)
+
+### 8.2 Machine, molecule, and horizon cycle
+
+| Panel | Records | Pooled median % |
+|-------|--------:|----------------:|
+| Machine & Molecule | 120 | 0.013 |
+| Black-hole / white-hole cycle | 24 | 0.026 |
+
+Species-scale molecular catalogs and information-cycle panels at the black-hole horizon — seed-scalar predictions cross-checked against simulator outputs, not post-hoc fits.
+
+```bash
+python scripts/reproduce_domain_panel.py --panel Machine_And_Molecule_Live_Panel --deep
+python scripts/reproduce_domain_panel.py --panel BlackHole_WhiteHole_Cycle_Live_Panel --deep
+```
+
+Simulators: `vendor/verified_desktop/` (machine-and-molecule, fuel lab, horizon cycle).
 """
 
 
@@ -379,6 +418,7 @@ def main() -> int:
         "epistemology.md": build_epistemology(),
         "prereg_summary.md": build_prereg_summary(),
         "bubble_bleed.md": build_bubble_bleed(),
+        "engineering_viii.md": build_engineering_viii(),
         "vi_extra_figures.md": build_vi_extra_figures(),
         "methods_formal.md": build_methods_formal(),
         "notation.md": build_notation(),
