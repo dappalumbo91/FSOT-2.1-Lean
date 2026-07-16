@@ -4,7 +4,7 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.2 — arXiv-tier thesis (Tier C complete) 2026-07-16
+**Edition:** v2.3 — wet-lab depth, credibility hardening, circuitry scaffold 2026-07-16
 **Status:** Living thesis — expanded as each domain and crevice is verified  
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
@@ -89,8 +89,11 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 | Skeptic replication kit | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) |
 | Near-miss ledger | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) |
 | Contested-sector watch | [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) |
+| Wet-lab & longevity depth | [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) |
+| Credibility hardening audit | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) |
+| Circuitry emergence spine | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) |
 
-*Generated: 2026-07-16T13:27:58.292388+00:00*
+*Generated: 2026-07-16T13:43:08.508518+00:00*
 <!-- README_TOC_END -->
 
 
@@ -621,6 +624,26 @@ python scripts/reproduce_domain_panel.py --panel BlackHole_WhiteHole_Cycle_Live_
 ```
 
 Simulators: `vendor/verified_desktop/` (machine-and-molecule, fuel lab, horizon cycle).
+
+### 8.3 Wet-lab & longevity genetics (Tier 94/95)
+
+Cross-species longevity and zebrafish developmental wet-lab panels — measured biology (HAGR AnAge, NCBI, CZ Biohub) vs seed-scalar readouts, not post-hoc curve fits.
+
+| Panel | Records | Pooled median % |
+|-------|--------:|----------------:|
+| AnAge catalog | 966 | 0.022 |
+| MegaDeep NCBI | 1,746 | 0.018 |
+| Consciousness coupling | 890 | 0.022 |
+| Zebrafish cell tracking | 20 | 0.022 |
+| Zebrafish developmental mechanics | 31 | 0.018 |
+| Zebrafish longevity coupling | 24 | 0.014 |
+
+**Full volume:** [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md)
+
+```bash
+python scripts/build_wetlab_longevity_expansion_bundle.py
+python scripts/verify_tier95_genetics_system.py
+```
 <!-- README_ENGINEERING_VIII_END -->
 
 ---
@@ -635,11 +658,16 @@ When one engine passes quantum mechanics, sociology, seismology, and fuel chemis
 
 Numeric agreement alone cannot guard against silent code drift. Exporting Lean obligations to Coq, Isabelle, F*, and Rust means the spine must survive **independent type theories and executable replay**. That is how FSOT treats proof debt: visible, counted, closed.
 
+<!-- README_DISCUSSION_OPEN_WORK_START -->
 ### 9.3 Open work (not model failures)
 
 - **Contested-sector monitoring:** 13 actively-measured open problems (H₀, σ₈, BBN, hierarchy, w_a) tracked against live survey updates — FSOT pooled median **0.030%** as of this edition  
-- **Engineering hardware:** Fuel-lab and molecular-catalog stacks verified at simulation tier; ESP32 acoustic phase-sensing hardware closure in progress
-- **Domain atlas rollup:** Domain atlas reconciled: **402** routed domains (35 core + 367 extension); prior 403 figure was summary rollup miscount  
+- **Hard credibility expansion:** ten-pillar audit (`CREDIBILITY_HARDENING_AUDIT.md`) — formal + empirical + transparency surfaces aggregated  
+- **Wet-lab longevity depth:** Tier 94/95 biology panels restored as first-class credibility layer (`WETLAB_LONGEVITY_DEPTH.md`)  
+- **Circuitry emergence (Tier 96):** component-variable atlas scaffold — BOM from seed math + industry tables (`CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`)  
+- **ESP32 hardware observer:** eight-way UART closure **convenience-deferred** until boot-sequence workflow is ergonomic (laptop bench); QEMU bare-metal and `Trinary_Hardware_Live_Panel` remain authoritative — not a math gap  
+- **Domain atlas rollup:** **402** routed domains (35 core + 367 extension); prior 403 figure was summary rollup miscount
+<!-- README_DISCUSSION_OPEN_WORK_END -->
 
 <!-- README_NEAR_MISS_START -->
 ### 9.5 Benchmark near-miss transparency
@@ -654,6 +682,37 @@ FSOT publishes domains that pass the green gate but approach the ≤0.5% boundar
 
 Regenerate: `python scripts/build_benchmark_near_miss_ledger.py` · `python scripts/build_contested_sector_watch.py`
 <!-- README_NEAR_MISS_END -->
+
+<!-- README_CREDIBILITY_HARDENING_START -->
+### 9.6 Hard credibility expansion
+
+FSOT credibility is not rhetorical — every pillar must reproduce independently. The hardening audit aggregates formal triangulation, benchmark gates, parameter honesty, wet-lab biology, live catalog ingest, and skeptic replication into one scorecard.
+
+| Artifact | Role |
+|----------|------|
+| [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) | Ten-pillar green gate (formal + empirical + transparency) |
+| [`data/publication/credibility_hardening_audit.json`](data/publication/credibility_hardening_audit.json) | Machine-readable pillar ledger |
+| [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute independent falsification path |
+
+Regenerate: `python scripts/build_credibility_hardening_audit.py` (after verification bundle + wet-lab bundle).
+<!-- README_CREDIBILITY_HARDENING_END -->
+
+<!-- README_CIRCUITRY_ROADMAP_START -->
+### 9.7 Circuitry & component emergence roadmap (Tier 96)
+
+**Vision:** schematic variables (R, C, L, V, I, f, τ, Q, package, tolerance) labeled in a seed-derived atlas so BOM selection **emerges** from industry parametric tables — the math names the parts; you do not guess values from memory.
+
+| Phase | Status | Deliverable |
+|-------|--------|-------------|
+| 0 — scaffold | **active** | Component-class manifest + existing panel crosswalk |
+| 1 — ingest | planned | Parametric catalog rows → strict-empirical |
+| 2 — benchmark | planned | `Circuit_Component_Emergence_Panel` green gate |
+| 3 — BOM emergence | planned | Netlist → ranked industry BOM lines |
+
+**Spine:** [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) · **Manifest:** `data/circuit_component_emergence_manifest.yaml`
+
+Existing verified electrical panels (`Electrical_Power_Systems`, `Desktop_Application_Wiring_Spine`, `Trinary_Hardware_Live_Panel`) anchor Phase 0. ESP32 physical closure remains convenience-deferred; simulation panels stay authoritative.
+<!-- README_CIRCUITRY_ROADMAP_END -->
 
 ### 9.4 Founding 35 laws — verification status
 
@@ -738,6 +797,12 @@ python scripts/export_domain_citations.py --bundle verified_desktop
 | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute skeptic replication path |
 | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) | Near-miss transparency ledger |
 | [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) | Contested-sector living watch |
+
+<!-- README_APPENDIX_C_EXTRA_START -->
+| [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) | Tier 94/95 wet-lab & longevity |
+| [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) | Hard credibility pillar audit |
+| [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) | Circuitry & BOM emergence (Tier 96) |
+<!-- README_APPENDIX_C_EXTRA_END -->
 
 ---
 

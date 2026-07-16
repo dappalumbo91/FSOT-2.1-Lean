@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-13T12:46:21.806390+00:00",
+  "generated_at": "2026-07-16T13:42:49.833337+00:00",
   "domain": "Longevity_Telomere_Repair_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
     "longevity_telomere_repair_anchors.json",
     "tier94_telomere_repair_cache.json"
@@ -41,20 +41,7 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 60,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.022236,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 60
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -63,20 +50,7 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.02223625038519871,
-      "observable_count": 60,
-      "domain_display_name": "tier gap fill",
-      "display_name": "dna telomere pathway",
-      "scientific_measurement": {
-        "delta": 0.022236,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 60
     }
   ],
   "material_records": [
@@ -88,20 +62,7 @@
       "measured": 1.0,
       "error_pct": 0.022236,
       "pathway": "telomere_attrition",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 0.00022236,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -110,20 +71,7 @@
       "computed": 10.00222363,
       "measured": 10.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 0.00222363,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -134,20 +82,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 122.5,
       "pathway": "telomere_attrition",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 0.0010191,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -157,20 +92,7 @@
       "measured": 1.4,
       "error_pct": 0.022236,
       "pathway": "hyaluronan_high_mw_telomerase",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Heterocephalus glaber",
-      "scientific_measurement": {
-        "delta": 0.00031131,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -179,20 +101,7 @@
       "computed": 12.50277953,
       "measured": 12.5,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Heterocephalus glaber",
-      "scientific_measurement": {
-        "delta": 0.00277953,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -203,20 +112,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 32.0,
       "pathway": "hyaluronan_high_mw_telomerase",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Heterocephalus glaber",
-      "scientific_measurement": {
-        "delta": 0.00203601,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -226,20 +122,7 @@
       "measured": 2.1,
       "error_pct": 0.022236,
       "pathway": "ERCC1_XPC_dna_repair",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Balaena mysticetus",
-      "scientific_measurement": {
-        "delta": 0.00046696,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -248,20 +131,7 @@
       "computed": 8.20182337,
       "measured": 8.2,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Balaena mysticetus",
-      "scientific_measurement": {
-        "delta": 0.00182337,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -272,20 +142,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 211.0,
       "pathway": "ERCC1_XPC_dna_repair",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Balaena mysticetus",
-      "scientific_measurement": {
-        "delta": 0.00202329,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -295,20 +152,7 @@
       "measured": 1.6,
       "error_pct": 0.022236,
       "pathway": "telomere_maintenance_no_cancer",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Myotis brandtii",
-      "scientific_measurement": {
-        "delta": 0.00035578,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -317,20 +161,7 @@
       "computed": 11.00244599,
       "measured": 11.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Myotis brandtii",
-      "scientific_measurement": {
-        "delta": 0.00244599,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -341,20 +172,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 41.0,
       "pathway": "telomere_maintenance_no_cancer",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Myotis brandtii",
-      "scientific_measurement": {
-        "delta": 0.00188483,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -364,20 +182,7 @@
       "measured": 1.5,
       "error_pct": 0.022236,
       "pathway": "telomere_maintenance",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Myotis lucifugus",
-      "scientific_measurement": {
-        "delta": 0.00033354,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -386,20 +191,7 @@
       "computed": 10.50233481,
       "measured": 10.5,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Myotis lucifugus",
-      "scientific_measurement": {
-        "delta": 0.00233481,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -410,20 +202,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 34.0,
       "pathway": "telomere_maintenance",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Myotis lucifugus",
-      "scientific_measurement": {
-        "delta": 0.00172927,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -433,20 +212,7 @@
       "measured": 1.3,
       "error_pct": 0.022236,
       "pathway": "p53_copies_tumor_suppression",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Elephas maximus",
-      "scientific_measurement": {
-        "delta": 0.00028907,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -455,20 +221,7 @@
       "computed": 9.50211244,
       "measured": 9.5,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Elephas maximus",
-      "scientific_measurement": {
-        "delta": 0.00211244,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -479,20 +232,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 86.0,
       "pathway": "p53_copies_tumor_suppression",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Elephas maximus",
-      "scientific_measurement": {
-        "delta": 0.00136587,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -502,20 +242,7 @@
       "measured": 1.25,
       "error_pct": 0.022236,
       "pathway": "p53_retrogenes",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Loxodonta africana",
-      "scientific_measurement": {
-        "delta": 0.00027795,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -524,20 +251,7 @@
       "computed": 9.30206797,
       "measured": 9.3,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Loxodonta africana",
-      "scientific_measurement": {
-        "delta": 0.00206797,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -548,20 +262,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 65.0,
       "pathway": "p53_retrogenes",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Loxodonta africana",
-      "scientific_measurement": {
-        "delta": 0.00128799,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -571,20 +272,7 @@
       "measured": 1.2,
       "error_pct": 0.022236,
       "pathway": "cetacean_dna_repair",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Delphinus delphis",
-      "scientific_measurement": {
-        "delta": 0.00026684,
-        "delta_pct": 0.022237,
-        "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -593,20 +281,7 @@
       "computed": 9.80217915,
       "measured": 9.8,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Delphinus delphis",
-      "scientific_measurement": {
-        "delta": 0.00217915,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -617,20 +292,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 50.0,
       "pathway": "cetacean_dna_repair",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Delphinus delphis",
-      "scientific_measurement": {
-        "delta": 0.00123022,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -640,20 +302,7 @@
       "measured": 1.5,
       "error_pct": 0.022236,
       "pathway": "slow_metabolism_telomere",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Chelonia mydas",
-      "scientific_measurement": {
-        "delta": 0.00033354,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -662,20 +311,7 @@
       "computed": 15.00333544,
       "measured": 15.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Chelonia mydas",
-      "scientific_measurement": {
-        "delta": 0.00333544,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -686,20 +322,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 80.0,
       "pathway": "slow_metabolism_telomere",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Chelonia mydas",
-      "scientific_measurement": {
-        "delta": 0.00168258,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -709,20 +332,7 @@
       "measured": 1.45,
       "error_pct": 0.022236,
       "pathway": "giant_tortoise_repair",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Chelonoidis niger",
-      "scientific_measurement": {
-        "delta": 0.00032243,
-        "delta_pct": 0.022237,
-        "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -731,20 +341,7 @@
       "computed": 16.0035578,
       "measured": 16.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Chelonoidis niger",
-      "scientific_measurement": {
-        "delta": 0.0035578,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -755,20 +352,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 177.0,
       "pathway": "giant_tortoise_repair",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Chelonoidis niger",
-      "scientific_measurement": {
-        "delta": 0.00172188,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -778,20 +362,7 @@
       "measured": 1.8,
       "error_pct": 0.022236,
       "pathway": "bivalve_dna_repair",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Arctica islandica",
-      "scientific_measurement": {
-        "delta": 0.00040025,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -800,20 +371,7 @@
       "computed": 6.00133418,
       "measured": 6.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Arctica islandica",
-      "scientific_measurement": {
-        "delta": 0.00133418,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -824,20 +382,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 507.0,
       "pathway": "bivalve_dna_repair",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Arctica islandica",
-      "scientific_measurement": {
-        "delta": 0.00173791,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -847,20 +392,7 @@
       "measured": 0.95,
       "error_pct": 0.022236,
       "pathway": "canine_telomere_breed_variation",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Canis familiaris",
-      "scientific_measurement": {
-        "delta": 0.00021124,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -869,20 +401,7 @@
       "computed": 17.00378016,
       "measured": 17.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Canis familiaris",
-      "scientific_measurement": {
-        "delta": 0.00378016,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -893,20 +412,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 31.8,
       "pathway": "canine_telomere_breed_variation",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Canis familiaris",
-      "scientific_measurement": {
-        "delta": 0.00101071,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -916,20 +422,7 @@
       "measured": 1.05,
       "error_pct": 0.022236,
       "pathway": "primate_telomere",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Pan troglodytes",
-      "scientific_measurement": {
-        "delta": 0.00023348,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -938,20 +431,7 @@
       "computed": 10.2022681,
       "measured": 10.2,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Pan troglodytes",
-      "scientific_measurement": {
-        "delta": 0.0022681,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -962,20 +442,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 59.4,
       "pathway": "primate_telomere",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Pan troglodytes",
-      "scientific_measurement": {
-        "delta": 0.0009749,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -985,20 +452,7 @@
       "measured": 0.8,
       "error_pct": 0.022236,
       "pathway": "short_lived_rodent",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Mus musculus",
-      "scientific_measurement": {
-        "delta": 0.00017789,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1007,20 +461,7 @@
       "computed": 40.0088945,
       "measured": 40.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Mus musculus",
-      "scientific_measurement": {
-        "delta": 0.0088945,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1031,20 +472,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 4.0,
       "pathway": "short_lived_rodent",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Mus musculus",
-      "scientific_measurement": {
-        "delta": 0.00084986,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1054,20 +482,7 @@
       "measured": 0.82,
       "error_pct": 0.022236,
       "pathway": "short_lived_rodent",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Rattus norvegicus",
-      "scientific_measurement": {
-        "delta": 0.00018234,
-        "delta_pct": 0.022237,
-        "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1076,20 +491,7 @@
       "computed": 50.01111813,
       "measured": 50.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Rattus norvegicus",
-      "scientific_measurement": {
-        "delta": 0.01111813,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1100,20 +502,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 4.8,
       "pathway": "short_lived_rodent",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Rattus norvegicus",
-      "scientific_measurement": {
-        "delta": 0.00087023,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1123,20 +512,7 @@
       "measured": 1.1,
       "error_pct": 0.022236,
       "pathway": "marsupial_repair",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Macropus rufus",
-      "scientific_measurement": {
-        "delta": 0.0002446,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1145,20 +521,7 @@
       "computed": 12.00266835,
       "measured": 12.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Macropus rufus",
-      "scientific_measurement": {
-        "delta": 0.00266835,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1169,20 +532,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 27.0,
       "pathway": "marsupial_repair",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Macropus rufus",
-      "scientific_measurement": {
-        "delta": 0.00110198,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1192,20 +542,7 @@
       "measured": 1.7,
       "error_pct": 0.022236,
       "pathway": "deep_sea_low_metabolism",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Escarpia laminata",
-      "scientific_measurement": {
-        "delta": 0.00037802,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1216,20 +553,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 300.0,
       "pathway": "deep_sea_low_metabolism",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Escarpia laminata",
-      "scientific_measurement": {
-        "delta": 0.00146869,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1239,20 +563,7 @@
       "measured": 1.65,
       "error_pct": 0.022236,
       "pathway": "chemosynthetic_symbiosis",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Lamellibrachia luymesi",
-      "scientific_measurement": {
-        "delta": 0.0003669,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1263,20 +574,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 250.0,
       "pathway": "chemosynthetic_symbiosis",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Lamellibrachia luymesi",
-      "scientific_measurement": {
-        "delta": 0.00141219,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1286,20 +584,7 @@
       "measured": 2.5,
       "error_pct": 0.022236,
       "pathway": "extreme_somatic_stability",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Scolymastra joubini",
-      "scientific_measurement": {
-        "delta": 0.00055591,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1310,20 +595,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 15000.0,
       "pathway": "extreme_somatic_stability",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Scolymastra joubini",
-      "scientific_measurement": {
-        "delta": 0.00285329,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1333,20 +605,7 @@
       "measured": 1.0,
       "error_pct": 0.022236,
       "pathway": "livestock_telomere",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Bos taurus",
-      "scientific_measurement": {
-        "delta": 0.00022236,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1355,20 +614,7 @@
       "computed": 18.00400253,
       "measured": 18.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Bos taurus",
-      "scientific_measurement": {
-        "delta": 0.00400253,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1379,20 +625,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 48.0,
       "pathway": "livestock_telomere",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Bos taurus",
-      "scientific_measurement": {
-        "delta": 0.00098483,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1402,20 +635,7 @@
       "measured": 1.05,
       "error_pct": 0.022236,
       "pathway": "equine_telomere",
-      "eval_kind": "dna_repair_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Equus caballus",
-      "scientific_measurement": {
-        "delta": 0.00023348,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dna_repair_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1424,20 +644,7 @@
       "computed": 14.00311308,
       "measured": 14.0,
       "error_pct": 0.022236,
-      "eval_kind": "telomere_length_anchor",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Equus caballus",
-      "scientific_measurement": {
-        "delta": 0.00311308,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_length_anchor"
     },
     {
       "lab": "longevity_telomere_repair_lab",
@@ -1448,20 +655,7 @@
       "error_pct": 0.022236,
       "maximum_longevity_yrs": 57.5,
       "pathway": "equine_telomere",
-      "eval_kind": "telomere_repair_composite",
-      "domain_display_name": "longevity telomere repair",
-      "display_name": "Equus caballus",
-      "scientific_measurement": {
-        "delta": 0.00102433,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "telomere_repair_composite"
     }
   ],
   "margin_summary": {
@@ -1475,19 +669,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Longevity Telomere Repair Panel",
-  "tier_label": "Tier 94",
-  "scientific_precision_summary": {
-    "scalar_count": 60,
-    "median_error_pct": 0.022236,
-    "max_error_pct": 0.022237,
-    "mean_abs_delta": 0.0016449228333333336,
-    "precision_tier_counts": {
-      "green": 60
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.492887+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

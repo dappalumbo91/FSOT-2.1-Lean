@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-13T12:46:21.993504+00:00",
+  "generated_at": "2026-07-16T13:42:50.089160+00:00",
   "domain": "Tier_94_Longevity_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
     "tier94_longevity_panels"
   ],
@@ -41,20 +41,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 34,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 34
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -63,20 +50,7 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "tier94 longevity",
-      "scientific_measurement": {
-        "delta": 0.022236,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -88,20 +62,7 @@
       "measured": 0.022236,
       "error_pct": 0.0,
       "record_count": 966,
-      "eval_kind": "tier94_bridge",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "longevity anage catalog panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier94_bridge"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -111,20 +72,7 @@
       "measured": 15000.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_anage_catalog_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Scolymastra joubini",
-      "scientific_measurement": {
-        "delta": 3.335438,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -134,20 +82,7 @@
       "measured": 5062.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_anage_catalog_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Pinus longaeva",
-      "scientific_measurement": {
-        "delta": 1.125599,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -157,20 +92,7 @@
       "measured": 2500.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_anage_catalog_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Adansonia digitata",
-      "scientific_measurement": {
-        "delta": 0.555906,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -180,20 +102,7 @@
       "measured": 1550.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_anage_catalog_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Cinachyra antarctica",
-      "scientific_measurement": {
-        "delta": 0.344662,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -203,20 +112,7 @@
       "measured": 0.022236,
       "error_pct": 0.0,
       "record_count": 35,
-      "eval_kind": "tier94_bridge",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "longevity genetic mechanics panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier94_bridge"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -226,20 +122,7 @@
       "measured": 370033.34861108,
       "error_pct": 0.022236,
       "source_panel": "longevity_genetic_mechanics_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Pinus longaeva",
-      "scientific_measurement": {
-        "delta": 82.28154191,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -249,20 +132,7 @@
       "measured": 270288.75598157,
       "error_pct": 0.022236,
       "source_panel": "longevity_genetic_mechanics_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Arctica islandica",
-      "scientific_measurement": {
-        "delta": 60.10208454,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -272,20 +142,7 @@
       "measured": 46230.14246013,
       "error_pct": 0.022236,
       "source_panel": "longevity_genetic_mechanics_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Sebastes aleutianus",
-      "scientific_measurement": {
-        "delta": 10.27985023,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -295,20 +152,7 @@
       "measured": 4100.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_genetic_mechanics_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Sebastes aleutianus",
-      "scientific_measurement": {
-        "delta": 0.91168627,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -318,20 +162,7 @@
       "measured": 0.017789,
       "error_pct": 0.0,
       "record_count": 164,
-      "eval_kind": "tier94_bridge",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "longevity extreme species panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier94_bridge"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -341,20 +172,7 @@
       "measured": 15000.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_extreme_species_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Scolymastra joubini",
-      "scientific_measurement": {
-        "delta": 3.335438,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -364,20 +182,7 @@
       "measured": 2666944.85774556,
       "error_pct": 0.017789,
       "source_panel": "longevity_extreme_species_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Scolymastra joubini",
-      "scientific_measurement": {
-        "delta": 474.42282896,
-        "delta_pct": 0.017789,
-        "effective_error_pct": 0.017789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -387,20 +192,7 @@
       "measured": 5062.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_extreme_species_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Pinus longaeva",
-      "scientific_measurement": {
-        "delta": 1.125599,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -410,20 +202,7 @@
       "measured": 38.44088296,
       "error_pct": 0.017789,
       "source_panel": "longevity_extreme_species_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Pinus longaeva",
-      "scientific_measurement": {
-        "delta": 0.00683825,
-        "delta_pct": 0.017789,
-        "effective_error_pct": 0.017789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -433,20 +212,7 @@
       "measured": 0.017789,
       "error_pct": 0.0,
       "record_count": 1746,
-      "eval_kind": "tier94_bridge",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "longevity megadeep ncbi panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier94_bridge"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -456,20 +222,7 @@
       "measured": 67.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_megadeep_ncbi_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Acipenser brevirostrum",
-      "scientific_measurement": {
-        "delta": 0.014898,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -479,20 +232,7 @@
       "measured": 63518.39432665,
       "error_pct": 0.017789,
       "source_panel": "longevity_megadeep_ncbi_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Acipenser brevirostrum",
-      "scientific_measurement": {
-        "delta": 11.29928736,
-        "delta_pct": 0.017789,
-        "effective_error_pct": 0.017789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -502,20 +242,7 @@
       "measured": 100.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_megadeep_ncbi_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Acipenser dabryanus",
-      "scientific_measurement": {
-        "delta": 0.022236,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -525,20 +252,7 @@
       "measured": 17779.63238497,
       "error_pct": 0.017789,
       "source_panel": "longevity_megadeep_ncbi_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Acipenser dabryanus",
-      "scientific_measurement": {
-        "delta": 3.16281886,
-        "delta_pct": 0.017789,
-        "effective_error_pct": 0.017789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -548,20 +262,7 @@
       "measured": 0.022236,
       "error_pct": 0.0,
       "record_count": 60,
-      "eval_kind": "tier94_bridge",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "longevity telomere repair panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier94_bridge"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -571,20 +272,7 @@
       "measured": 1.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_telomere_repair_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 0.00022236,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -594,20 +282,7 @@
       "measured": 10.0,
       "error_pct": 0.022236,
       "source_panel": "longevity_telomere_repair_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 0.00222363,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -617,20 +292,7 @@
       "measured": 4.58305964,
       "error_pct": 0.022236,
       "source_panel": "longevity_telomere_repair_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 0.0010191,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -640,20 +302,7 @@
       "measured": 1.4,
       "error_pct": 0.022236,
       "source_panel": "longevity_telomere_repair_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Heterocephalus glaber",
-      "scientific_measurement": {
-        "delta": 0.00031131,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -663,20 +312,7 @@
       "measured": 0.022424,
       "error_pct": 0.0,
       "record_count": 890,
-      "eval_kind": "tier94_bridge",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "longevity consciousness coupling panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier94_bridge"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -686,20 +322,7 @@
       "measured": 414045.24047921,
       "error_pct": 0.031506,
       "source_panel": "longevity_consciousness_coupling_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Acipenser gueldenstaedtii",
-      "scientific_measurement": {
-        "delta": 130.44979408,
-        "delta_pct": 0.031506,
-        "effective_error_pct": 0.031506,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -709,20 +332,7 @@
       "measured": -12317.32397716,
       "error_pct": 0.013342,
       "source_panel": "longevity_consciousness_coupling_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Acipenser gueldenstaedtii",
-      "scientific_measurement": {
-        "delta": -1.6433466,
-        "delta_pct": 0.013342,
-        "effective_error_pct": 0.013342,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -732,20 +342,7 @@
       "measured": 1270179.84439052,
       "error_pct": 0.031506,
       "source_panel": "longevity_consciousness_coupling_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Acipenser oxyrinchus",
-      "scientific_measurement": {
-        "delta": 400.18501107,
-        "delta_pct": 0.031506,
-        "effective_error_pct": 0.031506,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -755,20 +352,7 @@
       "measured": -38227.54276029,
       "error_pct": 0.013342,
       "source_panel": "longevity_consciousness_coupling_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "Acipenser oxyrinchus",
-      "scientific_measurement": {
-        "delta": -5.10022327,
-        "delta_pct": 0.013342,
-        "effective_error_pct": 0.013342,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -777,20 +361,7 @@
       "computed": 4141.0,
       "measured": 4141.0,
       "error_pct": 0.0,
-      "eval_kind": "tier94_meta",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "longevity genetics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier94_meta"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -799,20 +370,7 @@
       "computed": 44.0,
       "measured": 44.0,
       "error_pct": 0.0,
-      "eval_kind": "tier94_meta",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "genome crosswalk",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier94_meta"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -821,20 +379,7 @@
       "computed": 445.0,
       "measured": 445.0,
       "error_pct": 0.0,
-      "eval_kind": "tier94_meta",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "megadeep crosswalk",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier94_meta"
     },
     {
       "lab": "tier_94_longevity_lab",
@@ -843,20 +388,7 @@
       "computed": 21.0,
       "measured": 21.0,
       "error_pct": 0.0,
-      "eval_kind": "tier94_meta",
-      "domain_display_name": "tier 94 longevity",
-      "display_name": "telomere repair",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier94_meta"
     }
   ],
   "margin_summary": {
@@ -870,19 +402,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Tier 94 Longevity Spine",
-  "tier_label": "Tier 94",
-  "scientific_precision_summary": {
-    "scalar_count": 6,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 6
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.553529+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

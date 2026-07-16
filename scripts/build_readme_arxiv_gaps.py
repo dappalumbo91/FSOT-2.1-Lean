@@ -70,6 +70,9 @@ def build_toc(ts: str) -> str:
         "| Skeptic replication kit | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) |",
         "| Near-miss ledger | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) |",
         "| Contested-sector watch | [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) |",
+        "| Wet-lab & longevity depth | [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) |",
+        "| Credibility hardening audit | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) |",
+        "| Circuitry emergence spine | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) |",
         "",
         f"*Generated: {datetime.now(timezone.utc).isoformat()}*",
         "",
@@ -266,6 +269,78 @@ python scripts/reproduce_domain_panel.py --panel BlackHole_WhiteHole_Cycle_Live_
 ```
 
 Simulators: `vendor/verified_desktop/` (machine-and-molecule, fuel lab, horizon cycle).
+
+### 8.3 Wet-lab & longevity genetics (Tier 94/95)
+
+Cross-species longevity and zebrafish developmental wet-lab panels — measured biology (HAGR AnAge, NCBI, CZ Biohub) vs seed-scalar readouts, not post-hoc curve fits.
+
+| Panel | Records | Pooled median % |
+|-------|--------:|----------------:|
+| AnAge catalog | 966 | 0.022 |
+| MegaDeep NCBI | 1,746 | 0.018 |
+| Consciousness coupling | 890 | 0.022 |
+| Zebrafish cell tracking | 20 | 0.022 |
+| Zebrafish developmental mechanics | 31 | 0.018 |
+| Zebrafish longevity coupling | 24 | 0.014 |
+
+**Full volume:** [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md)
+
+```bash
+python scripts/build_wetlab_longevity_expansion_bundle.py
+python scripts/verify_tier95_genetics_system.py
+```
+"""
+
+
+def build_credibility_hardening_section() -> str:
+    return """### 9.6 Hard credibility expansion
+
+FSOT credibility is not rhetorical — every pillar must reproduce independently. The hardening audit aggregates formal triangulation, benchmark gates, parameter honesty, wet-lab biology, live catalog ingest, and skeptic replication into one scorecard.
+
+| Artifact | Role |
+|----------|------|
+| [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) | Ten-pillar green gate (formal + empirical + transparency) |
+| [`data/publication/credibility_hardening_audit.json`](data/publication/credibility_hardening_audit.json) | Machine-readable pillar ledger |
+| [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute independent falsification path |
+
+Regenerate: `python scripts/build_credibility_hardening_audit.py` (after verification bundle + wet-lab bundle).
+"""
+
+
+def build_circuitry_roadmap() -> str:
+    return """### 9.7 Circuitry & component emergence roadmap (Tier 96)
+
+**Vision:** schematic variables (R, C, L, V, I, f, τ, Q, package, tolerance) labeled in a seed-derived atlas so BOM selection **emerges** from industry parametric tables — the math names the parts; you do not guess values from memory.
+
+| Phase | Status | Deliverable |
+|-------|--------|-------------|
+| 0 — scaffold | **active** | Component-class manifest + existing panel crosswalk |
+| 1 — ingest | planned | Parametric catalog rows → strict-empirical |
+| 2 — benchmark | planned | `Circuit_Component_Emergence_Panel` green gate |
+| 3 — BOM emergence | planned | Netlist → ranked industry BOM lines |
+
+**Spine:** [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) · **Manifest:** `data/circuit_component_emergence_manifest.yaml`
+
+Existing verified electrical panels (`Electrical_Power_Systems`, `Desktop_Application_Wiring_Spine`, `Trinary_Hardware_Live_Panel`) anchor Phase 0. ESP32 physical closure remains convenience-deferred; simulation panels stay authoritative.
+"""
+
+
+def build_discussion_open_work_patch() -> str:
+    return """### 9.3 Open work (not model failures)
+
+- **Contested-sector monitoring:** 13 actively-measured open problems (H₀, σ₈, BBN, hierarchy, w_a) tracked against live survey updates — FSOT pooled median **0.030%** as of this edition  
+- **Hard credibility expansion:** ten-pillar audit (`CREDIBILITY_HARDENING_AUDIT.md`) — formal + empirical + transparency surfaces aggregated  
+- **Wet-lab longevity depth:** Tier 94/95 biology panels restored as first-class credibility layer (`WETLAB_LONGEVITY_DEPTH.md`)  
+- **Circuitry emergence (Tier 96):** component-variable atlas scaffold — BOM from seed math + industry tables (`CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`)  
+- **ESP32 hardware observer:** eight-way UART closure **convenience-deferred** until boot-sequence workflow is ergonomic (laptop bench); QEMU bare-metal and `Trinary_Hardware_Live_Panel` remain authoritative — not a math gap  
+- **Domain atlas rollup:** **402** routed domains (35 core + 367 extension); prior 403 figure was summary rollup miscount  
+"""
+
+
+def build_appendix_c_extra() -> str:
+    return """| [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) | Tier 94/95 wet-lab & longevity |
+| [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) | Hard credibility pillar audit |
+| [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) | Circuitry & BOM emergence (Tier 96) |
 """
 
 
@@ -447,6 +522,10 @@ def main() -> int:
         "bubble_bleed.md": build_bubble_bleed(),
         "engineering_viii.md": build_engineering_viii(),
         "near_miss.md": build_near_miss_section(),
+        "credibility_hardening.md": build_credibility_hardening_section(),
+        "circuitry_roadmap.md": build_circuitry_roadmap(),
+        "discussion_open_work.md": build_discussion_open_work_patch(),
+        "appendix_c_extra.md": build_appendix_c_extra(),
         "obligation_map.md": build_obligation_map_section(),
         "vi_extra_figures.md": build_vi_extra_figures(),
         "methods_formal.md": build_methods_formal(),

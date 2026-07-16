@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-07-16T13:43:08.668487+00:00",
+  "tier": 96,
+  "status": "design_scaffold",
+  "component_classes": 5,
+  "existing_panels": [
+    {
+      "domain": "Electrical_Power_Systems",
+      "record_count": 24,
+      "pooled_median_error_pct": 0.015583023735736914
+    },
+    {
+      "domain": "Desktop_Application_Wiring_Spine",
+      "record_count": 81,
+      "pooled_median_error_pct": 0.0
+    },
+    {
+      "domain": "Trinary_Hardware_Live_Panel",
+      "record_count": 28,
+      "pooled_median_error_pct": 0.014767
+    }
+  ],
+  "planned_domains": [
+    "Circuit_Component_Emergence_Panel",
+    "Schematic_Netlist_Intrinsic_Panel",
+    "BOM_Industry_Availability_Panel"
+  ]
+}

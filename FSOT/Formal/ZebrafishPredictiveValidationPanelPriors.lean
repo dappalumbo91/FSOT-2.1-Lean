@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def zebrafish_predictive_validation_observable_count : ℕ := 20
-def zebrafish_predictive_validation_median_error_pct : ℝ := (0.368118 : ℝ)
+def zebrafish_predictive_validation_median_error_pct : ℝ := (0.3579695 : ℝ)
 def zebrafish_predictive_validation_D_eff : ℕ := 24
 
 theorem zebrafish_predictive_validation_observable_count_pos : 0 < zebrafish_predictive_validation_observable_count := by

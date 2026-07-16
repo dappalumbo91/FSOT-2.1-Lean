@@ -42,5 +42,8 @@
 | Skeptic replication kit | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) |
 | Near-miss ledger | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) |
 | Contested-sector watch | [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) |
+| Wet-lab & longevity depth | [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) |
+| Credibility hardening audit | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) |
+| Circuitry emergence spine | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) |
 
-*Generated: 2026-07-16T13:27:58.292388+00:00*
+*Generated: 2026-07-16T13:43:08.508518+00:00*

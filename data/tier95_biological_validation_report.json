@@ -21,7 +21,7 @@
   },
   "dataset_count": 5,
   "reference_anchors": {
-    "generated_at": "2026-07-13T17:21:46.451584+00:00",
+    "generated_at": "2026-07-16T13:42:54.696050+00:00",
     "species": "Danio rerio",
     "credential_free": true,
     "genome_bp_anchor": {
@@ -286,7 +286,7 @@
     "metabolic_rate_w": 0.35
   },
   "formal_oracle": {
-    "authority_path": "vendor/fsot_compute.py",
+    "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
     "biology_domain_scalar": 0.44472501,
     "mpmath_float64_equiv_ok": true
   },
@@ -296,7 +296,7 @@
     "record_count": 20,
     "median_error_pct": 0.37159,
     "max_error_pct": 0.492044,
-    "mean_error_pct": 0.3116179,
+    "mean_error_pct": 0.31882204999999997,
     "mechanistic_median_error_pct": 0.37159,
     "fold_summaries": [
       {
@@ -325,7 +325,7 @@
       },
       {
         "held_out": "ZSNS001",
-        "median_error_pct": 0.196543,
+        "median_error_pct": 0.340626,
         "max_error_pct": 0.344349,
         "properties": 4
       }
@@ -533,10 +533,10 @@
         "dataset_id": "ZSNS001",
         "property": "mean_displacement_um",
         "measured": 85.79819,
-        "computed": 85.96682018,
-        "abs_residual": 0.16863018,
-        "margin_of_error_pct": 0.1965,
-        "error_pct": 0.196543,
+        "computed": 85.50593898,
+        "abs_residual": 0.29225102,
+        "margin_of_error_pct": 0.3406,
+        "error_pct": 0.340626,
         "tier": "operational",
         "eval_kind": "fsot_intrinsic_prediction"
       },
@@ -1210,30 +1210,30 @@
         "dataset_id": "ZSNS001",
         "property": "mean_displacement_um",
         "measured": 85.79819,
-        "computed": 85.96682018,
-        "abs_residual": 0.16863018,
-        "margin_of_error_pct": 0.1965,
-        "error_pct": 0.196543,
+        "computed": 85.50593898,
+        "abs_residual": 0.29225102,
+        "margin_of_error_pct": 0.3406,
+        "error_pct": 0.340626,
         "tier": "operational",
         "eval_kind": "fsot_intrinsic_prediction",
         "unit": "micrometers",
-        "delta": 0.16863018,
-        "abs_delta": 0.16863018,
-        "raw_error_pct": 0.196543,
+        "delta": -0.29225102,
+        "abs_delta": 0.29225102,
+        "raw_error_pct": 0.340626,
         "effective_error_pct": 0.0,
         "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
         "reference": "Voxel calibration (\u00b12\u20135%) + segmentation boundary variability in mesoscale motility",
         "reference_source": "zebrahub_ome_zarr_metadata + developmental_imaging_metrology",
         "reference_uncertainty_pct": 8.0,
-        "sigma_equivalent": 0.0246,
+        "sigma_equivalent": 0.0426,
         "scientific_measurement": {
-          "delta": 0.16863018,
-          "delta_pct": 0.196543,
-          "effective_error_pct": 0.196543,
+          "delta": -0.29225102,
+          "delta_pct": 0.340626,
+          "effective_error_pct": 0.340626,
           "comparison_kind": "uncertainty_band",
           "within_literature_band": true,
-          "sigma_equivalent": 0.0246,
+          "sigma_equivalent": 0.0426,
           "precision_tier": "green",
           "within_green_gate": true,
           "within_aspiration_gate": true,
@@ -1281,17 +1281,17 @@
     ],
     "biological_science": {
       "record_count": 20,
-      "pearson_r": 0.999989,
+      "pearson_r": 0.999988,
       "spearman_rho": 1.0,
-      "r_squared": 0.999977,
-      "pooled_rmse": 0.192194,
-      "pooled_mae": 0.095819,
-      "pooled_bias": 0.016548,
+      "r_squared": 0.999975,
+      "pooled_rmse": 0.199468,
+      "pooled_mae": 0.102,
+      "pooled_bias": -0.006496,
       "median_margin_of_error_pct": 0.37159,
-      "mean_margin_of_error_pct": 0.3116,
+      "mean_margin_of_error_pct": 0.3188,
       "max_margin_of_error_pct": 0.492,
       "median_raw_error_pct": 0.37159,
-      "mean_sigma_equivalent": 0.0254,
+      "mean_sigma_equivalent": 0.0263,
       "within_literature_band_fraction": 1.0,
       "per_property": {
         "developmental_stability_proxy": {
@@ -1331,18 +1331,18 @@
         "mean_displacement_um": {
           "n": 5,
           "unit": "micrometers",
-          "pearson_r": 0.999937,
+          "pearson_r": 0.999942,
           "spearman_rho": 1.0,
-          "r_squared": 0.999652,
-          "rmse": 0.378473,
-          "mae": 0.329344,
-          "bias": 0.031845,
-          "nrmse_pct": 0.6818,
+          "r_squared": 0.999624,
+          "rmse": 0.393239,
+          "mae": 0.354068,
+          "bias": -0.060331,
+          "nrmse_pct": 0.7084,
           "median_margin_of_error_pct": 0.436098,
-          "mean_margin_of_error_pct": 0.3496,
+          "mean_margin_of_error_pct": 0.3784,
           "max_margin_of_error_pct": 0.492,
           "median_raw_error_pct": 0.436098,
-          "mean_sigma_equivalent": 0.0437,
+          "mean_sigma_equivalent": 0.0473,
           "within_literature_band_fraction": 1.0
         },
         "mean_track_duration_steps": {
@@ -1530,6 +1530,21 @@
           "reference": "Derived stability index \u2014 propagates division + duration uncertainties"
         },
         {
+          "dataset_id": "ZSNS001",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 85.79819,
+          "computed": 85.50593898,
+          "margin_of_error_pct": 0.3406,
+          "delta": -0.29225102,
+          "abs_delta": 0.29225102,
+          "sigma_equivalent": 0.0426,
+          "reference_uncertainty_pct": 8.0,
+          "within_literature_band": true,
+          "comparison_kind": "uncertainty_band",
+          "reference": "Voxel calibration (\u00b12\u20135%) + segmentation boundary variability in mesoscale motility"
+        },
+        {
           "dataset_id": "ZSNS004",
           "property": "developmental_stability_proxy",
           "unit": "dimensionless",
@@ -1558,21 +1573,6 @@
           "within_literature_band": true,
           "comparison_kind": "uncertainty_band",
           "reference": "Ultrack/Zebrahub lineage assignment; CTC-style division-link uncertainty (~10\u201320% CV)"
-        },
-        {
-          "dataset_id": "ZSNS001",
-          "property": "mean_displacement_um",
-          "unit": "micrometers",
-          "measured": 85.79819,
-          "computed": 85.96682018,
-          "margin_of_error_pct": 0.1965,
-          "delta": 0.16863018,
-          "abs_delta": 0.16863018,
-          "sigma_equivalent": 0.0246,
-          "reference_uncertainty_pct": 8.0,
-          "within_literature_band": true,
-          "comparison_kind": "uncertainty_band",
-          "reference": "Voxel calibration (\u00b12\u20135%) + segmentation boundary variability in mesoscale motility"
         },
         {
           "dataset_id": "ZSNS001_tail",
@@ -1669,7 +1669,7 @@
   },
   "headline": {
     "median_margin_of_error_pct": 0.37159,
-    "mean_margin_of_error_pct": 0.3116,
+    "mean_margin_of_error_pct": 0.3188,
     "max_margin_of_error_pct": 0.492,
     "push_target_pct": 0.5,
     "alphafold_aspiration_pct": 0.02,
@@ -1842,6 +1842,21 @@
         "reference": "Derived stability index \u2014 propagates division + duration uncertainties"
       },
       {
+        "dataset_id": "ZSNS001",
+        "property": "mean_displacement_um",
+        "unit": "micrometers",
+        "measured": 85.79819,
+        "computed": 85.50593898,
+        "margin_of_error_pct": 0.3406,
+        "delta": -0.29225102,
+        "abs_delta": 0.29225102,
+        "sigma_equivalent": 0.0426,
+        "reference_uncertainty_pct": 8.0,
+        "within_literature_band": true,
+        "comparison_kind": "uncertainty_band",
+        "reference": "Voxel calibration (\u00b12\u20135%) + segmentation boundary variability in mesoscale motility"
+      },
+      {
         "dataset_id": "ZSNS004",
         "property": "developmental_stability_proxy",
         "unit": "dimensionless",
@@ -1870,21 +1885,6 @@
         "within_literature_band": true,
         "comparison_kind": "uncertainty_band",
         "reference": "Ultrack/Zebrahub lineage assignment; CTC-style division-link uncertainty (~10\u201320% CV)"
-      },
-      {
-        "dataset_id": "ZSNS001",
-        "property": "mean_displacement_um",
-        "unit": "micrometers",
-        "measured": 85.79819,
-        "computed": 85.96682018,
-        "margin_of_error_pct": 0.1965,
-        "delta": 0.16863018,
-        "abs_delta": 0.16863018,
-        "sigma_equivalent": 0.0246,
-        "reference_uncertainty_pct": 8.0,
-        "within_literature_band": true,
-        "comparison_kind": "uncertainty_band",
-        "reference": "Voxel calibration (\u00b12\u20135%) + segmentation boundary variability in mesoscale motility"
       },
       {
         "dataset_id": "ZSNS001_tail",
@@ -2015,18 +2015,18 @@
       "mean_displacement_um": {
         "n": 5,
         "unit": "micrometers",
-        "pearson_r": 0.999937,
+        "pearson_r": 0.999942,
         "spearman_rho": 1.0,
-        "r_squared": 0.999652,
-        "rmse": 0.378473,
-        "mae": 0.329344,
-        "bias": 0.031845,
-        "nrmse_pct": 0.6818,
+        "r_squared": 0.999624,
+        "rmse": 0.393239,
+        "mae": 0.354068,
+        "bias": -0.060331,
+        "nrmse_pct": 0.7084,
         "median_margin_of_error_pct": 0.436098,
-        "mean_margin_of_error_pct": 0.3496,
+        "mean_margin_of_error_pct": 0.3784,
         "max_margin_of_error_pct": 0.492,
         "median_raw_error_pct": 0.436098,
-        "mean_sigma_equivalent": 0.0437,
+        "mean_sigma_equivalent": 0.0473,
         "within_literature_band_fraction": 1.0
       },
       "mean_track_duration_steps": {
@@ -2047,10 +2047,10 @@
         "within_literature_band_fraction": 1.0
       }
     },
-    "pearson_r": 0.999989,
+    "pearson_r": 0.999988,
     "spearman_rho": 1.0,
-    "r_squared": 0.999977,
-    "mean_sigma_equivalent": 0.0254,
+    "r_squared": 0.999975,
+    "mean_sigma_equivalent": 0.0263,
     "within_literature_band_fraction": 1.0
   }
 }

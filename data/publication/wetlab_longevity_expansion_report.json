@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-07-16T13:42:55.349280+00:00",
+  "steps": [
+    {
+      "step": "Tier 94 longevity benchmarks",
+      "ok": true,
+      "tail": "Longevity_AnAge_Catalog_Panel: 966 records, pooled 0.022236%\nLongevity_Genetic_Mechanics_Panel: 35 records, pooled 0.022236%\nLongevity_Extreme_Species_Panel: 164 records, pooled 0.017789%\nLongevity_MegaDeep_NCBI_Panel: 1746 records, pooled 0.017789%\nLongevity_Telomere_Repair_Panel: 60 records, pooled 0.022236%\nLongevity_Consciousness_Coupling_Panel: 890 records, pooled 0.022424%\nTier_94_Longevity_Spine: 34 records, pooled 0.0%\n"
+    },
+    {
+      "step": "Tier 94 Lean priors",
+      "ok": true,
+      "tail": "sical-Archive\\02_FSOT-2.1-Lean-Full\\FSOT\\Formal\\LongevityExtremeSpeciesPanelPriors.lean\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\FSOT\\Formal\\LongevityGeneticMechanicsPanelPriors.lean\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\FSOT\\Formal\\LongevityMegaDeepNcbiPanelPriors.lean\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\FSOT\\Formal\\LongevityTelomereRepairPanelPriors.lean\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\FSOT\\Formal\\Tier94LongevitySpinePriors.lean\n"
+    },
+    {
+      "step": "Tier 95 zebrafish benchmarks",
+      "ok": true,
+      "tail": "Zebrafish_Cell_Tracking_Panel: 20 records, pooled 0.022236%\nZebrafish_Developmental_Mechanics_Panel: 31 records, pooled 0.017789%\nZebrafish_Longevity_Genetics_Coupling_Panel: 15 records, pooled 0.013342%\nZebrafish_Predictive_Validation_Panel: 20 records, pooled 0.3579695%\nTier_95_Zebrafish_Spine: 18 records, pooled 0.0%\n"
+    },
+    {
+      "step": "Tier 95 Lean priors",
+      "ok": true,
+      "tail": ".1-Lean-Full\\FSOT\\Formal\\Tier95ZebrafishSpinePriors.lean\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\FSOT\\Formal\\ZebrafishCellTrackingPanelPriors.lean\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\FSOT\\Formal\\ZebrafishDevelopmentalMechanicsPanelPriors.lean\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\FSOT\\Formal\\ZebrafishLongevityGeneticsCouplingPanelPriors.lean\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\FSOT\\Formal\\ZebrafishPredictiveValidationPanelPriors.lean\n"
+    },
+    {
+      "step": "Tier 95 genetics crosswalk",
+      "ok": true,
+      "tail": "=== Tier 95 Genetics System Crosswalk ===\n  [PASS] genome_bp_anchor\n  [PASS] tier94_longevity_spine_coupling\n  [PASS] connective_registry_adjacent_folds\n  [PASS] tier95_mechanistic_push_target\n  [PASS] longevity_genetics_coupling_panel\n  [PASS] formal_oracle_mpmath_equivalence\n  [PASS] tier95_spine_benchmark\n  cross_proof_overall_ok: True\n  overall_ok: True\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\tier95_genetics_system_crosswalk_report.json\n"
+    },
+    {
+      "step": "Tier 95 biological validation",
+      "ok": true,
+      "tail": ": median=0.448431%  max=0.4743%  (RMSE=0.000703 dimensionless)\n  division_rate: median=0.387733%  max=0.4455%  (RMSE=0.001589 dimensionless)\n  mean_displacement_um: median=0.436098%  max=0.492%  (RMSE=0.393239 micrometers)\n  mean_track_duration_steps: median=0.152136%  max=0.3716%  (RMSE=0.06715 imaging_frames)\n--- biological cross-checks ---\nPearson r: 0.999988  R\u00b2: 0.999975  within_lit_band: 1.0\nWrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\tier95_biological_validation_report.json\n"
+    },
+    {
+      "step": "Wet-lab volume doc",
+      "ok": true,
+      "tail": "Wrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\docs\\WETLAB_LONGEVITY_DEPTH.md\n"
+    },
+    {
+      "step": "Credibility audit refresh",
+      "ok": true,
+      "tail": "Wrote I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\publication\\CREDIBILITY_HARDENING_AUDIT.md  10/10\n"
+    }
+  ],
+  "all_ok": true
+}

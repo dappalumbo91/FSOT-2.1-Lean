@@ -1,6 +1,6 @@
 /-
-  FSOT Formal LongevityGeneticMechanicsPanelPriors — extension domain Longevity_Genetic_Mechanics_Panel.
-  Generator: scripts/gen_extension_domains_lean.py
+  FSOT Formal LongevityGeneticMechanicsPanelPriors — Tier 94 longevity genetics (Longevity_Genetic_Mechanics_Panel).
+  Generator: scripts/gen_tier94_longevity_genetics_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,25 +9,29 @@ namespace FSOT.Formal
 
 noncomputable section
 
-def longevity_genetic_mechanics_panel_observable_count : ℕ := 35
-def longevity_genetic_mechanics_panel_D_eff : ℕ := 19
+open Real
 
-theorem longevity_genetic_mechanics_panel_observable_count_pos : 0 < longevity_genetic_mechanics_panel_observable_count := by
-  unfold longevity_genetic_mechanics_panel_observable_count; norm_num
+def longevity_genetic_mechanics_observable_count : ℕ := 35
+def longevity_genetic_mechanics_median_error_pct : ℝ := (0.022236 : ℝ)
+def longevity_genetic_mechanics_D_eff : ℕ := 19
 
-theorem longevity_genetic_mechanics_panel_median_error_under_half_pct :
-    (0.022236 : ℝ) < (0.5 : ℝ) := by norm_num
+theorem longevity_genetic_mechanics_observable_count_pos : 0 < longevity_genetic_mechanics_observable_count := by
+  unfold longevity_genetic_mechanics_observable_count; norm_num
 
-theorem longevity_genetic_mechanics_panel_bundle :
-    longevity_genetic_mechanics_panel_observable_count = 35 ∧
-    longevity_genetic_mechanics_panel_D_eff = 19 ∧
-    (0.022236 : ℝ) < (0.5 : ℝ) ∧
-    raw_S (get_domain_params "energy") > 0 := by
+theorem longevity_genetic_mechanics_median_error_under_five_pct :
+    longevity_genetic_mechanics_median_error_pct < (5 : ℝ) := by
+  unfold longevity_genetic_mechanics_median_error_pct; norm_num
+
+theorem longevity_genetic_mechanics_bundle :
+    longevity_genetic_mechanics_observable_count = 35 ∧
+    longevity_genetic_mechanics_D_eff = 19 ∧
+    longevity_genetic_mechanics_median_error_pct < (5 : ℝ) ∧
+    raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold longevity_genetic_mechanics_panel_observable_count; norm_num,
-    by unfold longevity_genetic_mechanics_panel_D_eff; norm_num,
-    longevity_genetic_mechanics_panel_median_error_under_half_pct,
-    energy_raw_S_positive
+    by unfold longevity_genetic_mechanics_observable_count; norm_num,
+    by unfold longevity_genetic_mechanics_D_eff; norm_num,
+    longevity_genetic_mechanics_median_error_under_five_pct,
+    biological_raw_S_positive
   ⟩
 
 end

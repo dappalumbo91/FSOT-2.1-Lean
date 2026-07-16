@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-15T00:51:57.622476+00:00",
+  "generated_at": "2026-07-16T13:42:50.449164+00:00",
   "domain": "Zebrafish_Cell_Tracking_Panel",
   "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
@@ -41,20 +41,7 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 20,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.022236,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -63,21 +50,7 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 20,
-      "domain_display_name": "tier gap fill",
-      "display_name": "cell lineage",
-      "scientific_measurement": {
-        "delta": 0.022236,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": false,
-        "sigma_equivalent": 500.0,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false,
-        "reference_uncertainty_pct": 0.2
-      }
+      "observable_count": 20
     }
   ],
   "material_records": [
@@ -91,20 +64,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 37.603278,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -116,20 +76,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 0.114517,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -141,20 +88,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 902.2605,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -166,20 +100,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 1.751962,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -191,20 +112,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS005",
-      "scientific_measurement": {
-        "delta": 70.756638,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -216,20 +124,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS005",
-      "scientific_measurement": {
-        "delta": 0.133418,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -241,20 +136,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS005",
-      "scientific_measurement": {
-        "delta": 1436.6357,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -266,20 +148,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS005",
-      "scientific_measurement": {
-        "delta": 2.394393,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -291,20 +160,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS004",
-      "scientific_measurement": {
-        "delta": 88.390652,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -316,20 +172,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS004",
-      "scientific_measurement": {
-        "delta": 0.133418,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -341,20 +184,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS004",
-      "scientific_measurement": {
-        "delta": 1609.8865,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -366,20 +196,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS004",
-      "scientific_measurement": {
-        "delta": 2.683144,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -391,20 +208,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS001 tail",
-      "scientific_measurement": {
-        "delta": 22.60893,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -416,20 +220,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS001 tail",
-      "scientific_measurement": {
-        "delta": 0.175889,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -441,20 +232,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS001 tail",
-      "scientific_measurement": {
-        "delta": 1668.91,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -466,20 +244,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS001 tail",
-      "scientific_measurement": {
-        "delta": 2.109874,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -491,20 +256,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS001",
-      "scientific_measurement": {
-        "delta": 356.9659,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -516,20 +268,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS001",
-      "scientific_measurement": {
-        "delta": 0.175889,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -541,20 +280,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS001",
-      "scientific_measurement": {
-        "delta": 4824.7307,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     },
     {
       "lab": "zebrafish_cell_tracking_lab",
@@ -566,20 +292,7 @@
       "eval_kind": "zebrahub_tracking",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "species": "Danio rerio",
-      "domain_display_name": "zebrafish cell tracking",
-      "display_name": "ZSNS001",
-      "scientific_measurement": {
-        "delta": 6.099533,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "species": "Danio rerio"
     }
   ],
   "margin_summary": {
@@ -594,19 +307,5 @@
     "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5,
-  "dataset_count": 5,
-  "display_name": "Zebrafish Cell Tracking Panel",
-  "tier_label": "Tier 95",
-  "scientific_precision_summary": {
-    "scalar_count": 15,
-    "median_error_pct": 0.022236,
-    "max_error_pct": 0.022236,
-    "mean_abs_delta": 697.2130291333334,
-    "precision_tier_counts": {
-      "green": 15
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.556572+00:00"
+  "dataset_count": 5
 }

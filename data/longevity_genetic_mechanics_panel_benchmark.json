@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-13T12:46:21.615122+00:00",
+  "generated_at": "2026-07-16T13:42:49.639282+00:00",
   "domain": "Longevity_Genetic_Mechanics_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
     "tier94_anage_longevity_catalog.json"
   ],
@@ -40,20 +40,7 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 35,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.022236,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 35
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -62,20 +49,7 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236250385198355,
-      "observable_count": 35,
-      "domain_display_name": "tier gap fill",
-      "display_name": "mrdt imr longevity",
-      "scientific_measurement": {
-        "delta": 0.022236,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 35
     }
   ],
   "material_records": [
@@ -88,20 +62,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": null,
       "mrdt_yrs": 999.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Pinus longaeva",
-      "scientific_measurement": {
-        "delta": 82.28154191,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -112,20 +73,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": null,
       "mrdt_yrs": 999.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Arctica islandica",
-      "scientific_measurement": {
-        "delta": 60.10208454,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -136,20 +84,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.05,
       "mrdt_yrs": 999.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Sebastes aleutianus",
-      "scientific_measurement": {
-        "delta": 10.27985023,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -158,20 +93,7 @@
       "computed": 4100.91168627,
       "measured": 4100.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Sebastes aleutianus",
-      "scientific_measurement": {
-        "delta": 0.91168627,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -182,20 +104,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": null,
       "mrdt_yrs": 999.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Strongylocentrotus franciscanus",
-      "scientific_measurement": {
-        "delta": 51.15811396,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -206,20 +115,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.013,
       "mrdt_yrs": 10.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Acipenser fulvescens",
-      "scientific_measurement": {
-        "delta": 0.37365853,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -228,20 +124,7 @@
       "computed": 11694.90762312,
       "measured": 11692.30769231,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Acipenser fulvescens",
-      "scientific_measurement": {
-        "delta": 2.59993081,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -252,20 +135,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": null,
       "mrdt_yrs": 999.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Terrapene carolina",
-      "scientific_measurement": {
-        "delta": 47.60020104,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -276,20 +146,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.0002,
       "mrdt_yrs": 8.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 18.51177321,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -298,20 +155,7 @@
       "computed": 612636.19703361,
       "measured": 612500.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 136.19703361,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -322,20 +166,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": null,
       "mrdt_yrs": 999.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Proteus anguinus",
-      "scientific_measurement": {
-        "delta": 44.70872368,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -346,20 +177,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": null,
       "mrdt_yrs": 14.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Orcinus orca",
-      "scientific_measurement": {
-        "delta": 0.60980331,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -370,20 +188,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": null,
       "mrdt_yrs": 999.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Emydoidea blandingii",
-      "scientific_measurement": {
-        "delta": 42.02681357,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -394,20 +199,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.04,
       "mrdt_yrs": 8.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Pan troglodytes",
-      "scientific_measurement": {
-        "delta": 0.08177618,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -416,20 +208,7 @@
       "computed": 1700.37801626,
       "measured": 1700.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Pan troglodytes",
-      "scientific_measurement": {
-        "delta": 0.37801626,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -440,20 +219,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.002,
       "mrdt_yrs": 8.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Loxodonta africana",
-      "scientific_measurement": {
-        "delta": 1.61758459,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -462,20 +228,7 @@
       "computed": 32507.22678138,
       "measured": 32500.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Loxodonta africana",
-      "scientific_measurement": {
-        "delta": 7.22678138,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -486,20 +239,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.017,
       "mrdt_yrs": 20.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Globicephala macrorhynchus",
-      "scientific_measurement": {
-        "delta": 0.47247421,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -508,20 +248,7 @@
       "computed": 3706.70640222,
       "measured": 3705.88235294,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Globicephala macrorhynchus",
-      "scientific_measurement": {
-        "delta": 0.82404928,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -532,20 +259,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.01,
       "mrdt_yrs": 7.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Hippopotamus amphibius",
-      "scientific_measurement": {
-        "delta": 0.27918229,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -554,20 +268,7 @@
       "computed": 6121.36085852,
       "measured": 6120.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Hippopotamus amphibius",
-      "scientific_measurement": {
-        "delta": 1.36085852,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -578,20 +279,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.015,
       "mrdt_yrs": 10.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Globicephala melas",
-      "scientific_measurement": {
-        "delta": 0.26464264,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -600,20 +288,7 @@
       "computed": 4000.88945002,
       "measured": 4000.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Globicephala melas",
-      "scientific_measurement": {
-        "delta": 0.88945002,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -624,20 +299,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.0002,
       "mrdt_yrs": 4.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Equus caballus",
-      "scientific_measurement": {
-        "delta": 7.80338834,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -646,20 +308,7 @@
       "computed": 285063.3733136,
       "measured": 285000.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Equus caballus",
-      "scientific_measurement": {
-        "delta": 63.3733136,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -670,20 +319,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.004,
       "mrdt_yrs": 6.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Larus argentatus",
-      "scientific_measurement": {
-        "delta": 0.5665392,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -692,20 +328,7 @@
       "computed": 12252.72394067,
       "measured": 12250.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Larus argentatus",
-      "scientific_measurement": {
-        "delta": 2.72394067,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -716,20 +339,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.1,
       "mrdt_yrs": null,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Cygnus olor",
-      "scientific_measurement": {
-        "delta": 0.01434476,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -738,20 +348,7 @@
       "computed": 400.088945,
       "measured": 400.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Cygnus olor",
-      "scientific_measurement": {
-        "delta": 0.088945,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -762,20 +359,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.02,
       "mrdt_yrs": 15.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Macaca mulatta",
-      "scientific_measurement": {
-        "delta": 0.26895354,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -784,20 +368,7 @@
       "computed": 2000.44472501,
       "measured": 2000.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Macaca mulatta",
-      "scientific_measurement": {
-        "delta": 0.44472501,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -808,20 +379,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.06,
       "mrdt_yrs": 4.0,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Papio hamadryas",
-      "scientific_measurement": {
-        "delta": 0.02350275,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -830,20 +388,7 @@
       "computed": 625.13897656,
       "measured": 625.0,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Papio hamadryas",
-      "scientific_measurement": {
-        "delta": 0.13897656,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -854,20 +399,7 @@
       "error_pct": 0.022236,
       "imr_per_yr": 0.6,
       "mrdt_yrs": null,
-      "eval_kind": "mrdt_imr_mechanics",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Pandion haliaetus",
-      "scientific_measurement": {
-        "delta": 0.00180086,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mrdt_imr_mechanics"
     },
     {
       "lab": "longevity_genetic_mechanics_lab",
@@ -876,20 +408,7 @@
       "computed": 53.34519267,
       "measured": 53.33333333,
       "error_pct": 0.022236,
-      "eval_kind": "mortality_rate_resistance",
-      "domain_display_name": "longevity genetic mechanics",
-      "display_name": "Pandion haliaetus",
-      "scientific_measurement": {
-        "delta": 0.01185934,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "mortality_rate_resistance"
     }
   ],
   "margin_summary": {
@@ -903,19 +422,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Longevity Genetic Mechanics Panel",
-  "tier_label": "Tier 94",
-  "scientific_precision_summary": {
-    "scalar_count": 35,
-    "median_error_pct": 0.022236,
-    "max_error_pct": 0.022236,
-    "mean_abs_delta": 16.749037704857134,
-    "precision_tier_counts": {
-      "green": 35
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.381582+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

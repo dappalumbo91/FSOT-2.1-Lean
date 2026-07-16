@@ -1,0 +1,50 @@
+version: "0.1-scaffold"
+updated: "2026-07-16"
+status: design_scaffold
+tier: 96
+policy: industry_component_registry_seed_derived
+title: Circuit Component Emergence — schematic variable atlas
+goal: >
+  Map every circuit variable (R, C, L, V, I, f, τ, Q-factor, package, tolerance)
+  to seed-derived FSOT readouts so BOM selection emerges from arithmetic + industry
+  availability tables — work smarter, not harder; no guessed component values.
+existing_panels:
+  - Electrical_Power_Systems
+  - Desktop_Application_Wiring_Spine
+  - Trinary_Hardware_Live_Panel
+  - Robotics_Control_Systems
+planned_domains:
+  - Circuit_Component_Emergence_Panel
+  - Schematic_Netlist_Intrinsic_Panel
+  - BOM_Industry_Availability_Panel
+component_classes:
+  - class: resistor
+    designators: [R]
+    variables: [resistance_ohm, tolerance_pct, power_w, tcr_ppm]
+    industry_refs: [IEC 60115, EIA-96, Digi-Key parametric]
+  - class: capacitor
+    designators: [C]
+    variables: [capacitance_f, esr_ohm, voltage_v, dielectric]
+    industry_refs: [Murata catalogs, KEMET, IEC 60384]
+  - class: inductor
+    designators: [L]
+    variables: [inductance_h, dcr_ohm, saturation_a, q_factor]
+  - class: semiconductor
+    designators: [Q, U, D]
+    variables: [vce_sat, hfe, vgs_th, rdson, bandwidth_hz]
+    industry_refs: [ON Semi, TI, Infineon datasheets]
+  - class: power
+    designators: [PS, J]
+    variables: [vin_v, vout_v, iout_a, efficiency, ripple_mv]
+fsot_routing:
+  lean_route: material
+  formula_branches: [term2.baseline_trend, term1.perceived_adjust, term3.acoustic_bleed]
+  seed_only: true
+next_scripts:
+  ingest: scripts/ingest_circuit_component_catalogs.py
+  build: scripts/build_circuit_component_emergence_benchmarks.py
+  lean: scripts/gen_circuit_component_emergence_lean.py
+note: >
+  Phase 0 scaffold only — no benchmark panel yet. Extends Electrical_Power_Systems
+  and Desktop_Application_Wiring_Spine; full panel when industry parametric tables
+  are wired to strict-empirical rows.

@@ -32,3 +32,23 @@ python scripts/reproduce_domain_panel.py --panel BlackHole_WhiteHole_Cycle_Live_
 ```
 
 Simulators: `vendor/verified_desktop/` (machine-and-molecule, fuel lab, horizon cycle).
+
+### 8.3 Wet-lab & longevity genetics (Tier 94/95)
+
+Cross-species longevity and zebrafish developmental wet-lab panels — measured biology (HAGR AnAge, NCBI, CZ Biohub) vs seed-scalar readouts, not post-hoc curve fits.
+
+| Panel | Records | Pooled median % |
+|-------|--------:|----------------:|
+| AnAge catalog | 966 | 0.022 |
+| MegaDeep NCBI | 1,746 | 0.018 |
+| Consciousness coupling | 890 | 0.022 |
+| Zebrafish cell tracking | 20 | 0.022 |
+| Zebrafish developmental mechanics | 31 | 0.018 |
+| Zebrafish longevity coupling | 24 | 0.014 |
+
+**Full volume:** [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md)
+
+```bash
+python scripts/build_wetlab_longevity_expansion_bundle.py
+python scripts/verify_tier95_genetics_system.py
+```

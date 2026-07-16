@@ -1,11 +1,10 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-15T05:07:46.605330+00:00",
+  "generated_at": "2026-07-16T13:42:51.009344+00:00",
   "domain": "Tier_95_Zebrafish_Spine",
   "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
-    "tier95_zebrahub_panels",
-    "c_thin_depth_pass"
+    "tier95_zebrahub_panels"
   ],
   "maps_to_lean": [
     "biological",
@@ -14,24 +13,24 @@
     "consciousness"
   ],
   "D_eff": 23,
-  "record_count": 24,
-  "observable_count": 24,
-  "scalar_record_count": 11,
+  "record_count": 18,
+  "observable_count": 18,
+  "scalar_record_count": 5,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.013342,
-  "pooled_median_error_pct": 0.013342,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.017789,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Tier_95_Zebrafish_Spine_depth": {
+      "tier95_zebrafish": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+        "sota_model": "Tier 95 Zebrahub developmental genetics wave"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_ingest_relay_vs_baseline": true
     }
   },
   "records": [
@@ -39,19 +38,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.013342,
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.013342,
-      "observable_count": 24
+      "error_pct": 0.0,
+      "observable_count": 18
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
-      "name": "Tier_95_Zebrafish_Spine_depth",
+      "property": "ingest_relay",
+      "name": "tier95_zebrafish",
       "computed": 0.017789,
       "measured": 0.0,
       "error_pct": 0.017789,
-      "observable_count": 24
+      "observable_count": 12
     }
   ],
   "material_records": [
@@ -63,21 +62,7 @@
       "measured": 0.022236,
       "error_pct": 0.0,
       "record_count": 20,
-      "eval_kind": "tier95_bridge",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "zebrafish cell tracking panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.2
-      }
+      "eval_kind": "tier95_bridge"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -87,20 +72,7 @@
       "measured": 169108.0,
       "error_pct": 0.022236,
       "source_panel": "zebrafish_cell_tracking_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 37.603278,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -110,20 +82,7 @@
       "measured": 515.0,
       "error_pct": 0.022236,
       "source_panel": "zebrafish_cell_tracking_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 0.114517,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -133,20 +92,7 @@
       "measured": 4057611.0,
       "error_pct": 0.022236,
       "source_panel": "zebrafish_cell_tracking_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 902.2605,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -156,20 +102,7 @@
       "measured": 7878.856311,
       "error_pct": 0.022236,
       "source_panel": "zebrafish_cell_tracking_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 1.751962,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -179,20 +112,7 @@
       "measured": 0.017789,
       "error_pct": 0.0,
       "record_count": 31,
-      "eval_kind": "tier95_bridge",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "zebrafish developmental mechanics panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier95_bridge"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -202,20 +122,7 @@
       "measured": 0.18766705,
       "error_pct": 0.017789,
       "source_panel": "zebrafish_developmental_mechanics_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 3.338e-05,
-        "delta_pct": 0.017787,
-        "effective_error_pct": 0.017787,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -225,20 +132,7 @@
       "measured": 31736.0,
       "error_pct": 0.017789,
       "source_panel": "zebrafish_developmental_mechanics_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 5.64551714,
-        "delta_pct": 0.017789,
-        "effective_error_pct": 0.017789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -248,20 +142,7 @@
       "measured": 23.994199,
       "error_pct": 0.017789,
       "source_panel": "zebrafish_developmental_mechanics_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 0.00426833,
-        "delta_pct": 0.017789,
-        "effective_error_pct": 0.017789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -271,20 +152,7 @@
       "measured": 78.142244,
       "error_pct": 0.017789,
       "source_panel": "zebrafish_developmental_mechanics_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 0.01390072,
-        "delta_pct": 0.017789,
-        "effective_error_pct": 0.017789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -294,20 +162,7 @@
       "measured": 0.013342,
       "error_pct": 0.0,
       "record_count": 15,
-      "eval_kind": "tier95_bridge",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "zebrafish longevity genetics coupling panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier95_bridge"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -317,20 +172,7 @@
       "measured": 8.42664093,
       "error_pct": 0.013342,
       "source_panel": "zebrafish_longevity_genetics_coupling_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 0.00112426,
-        "delta_pct": 0.013342,
-        "effective_error_pct": 0.013342,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -340,20 +182,7 @@
       "measured": 0.42568372,
       "error_pct": 0.013342,
       "source_panel": "zebrafish_longevity_genetics_coupling_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 5.68e-05,
-        "delta_pct": 0.013343,
-        "effective_error_pct": 0.013343,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -363,20 +192,7 @@
       "measured": 11.47531821,
       "error_pct": 0.015565,
       "source_panel": "zebrafish_longevity_genetics_coupling_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS003",
-      "scientific_measurement": {
-        "delta": 0.00178618,
-        "delta_pct": 0.015565,
-        "effective_error_pct": 0.015565,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -386,20 +202,7 @@
       "measured": 2.57576455,
       "error_pct": 0.013342,
       "source_panel": "zebrafish_longevity_genetics_coupling_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "ZSNS005",
-      "scientific_measurement": {
-        "delta": 0.00034365,
-        "delta_pct": 0.013342,
-        "effective_error_pct": 0.013342,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -408,20 +211,7 @@
       "computed": 5.0,
       "measured": 5.0,
       "error_pct": 0.0,
-      "eval_kind": "tier95_meta",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "developmental atlas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier95_meta"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -430,20 +220,7 @@
       "computed": 46961260.0,
       "measured": 46961260.0,
       "error_pct": 0.0,
-      "eval_kind": "tier95_meta",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "cell detections",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier95_meta"
     },
     {
       "lab": "tier_95_zebrafish_lab",
@@ -452,185 +229,12 @@
       "computed": 95.0,
       "measured": 95.0,
       "error_pct": 0.0,
-      "eval_kind": "tier95_meta",
-      "domain_display_name": "tier 95 zebrafish",
-      "display_name": "alphafold bridge",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tier_95_zebrafish_spine_depth_lab",
-      "property": "longevity_consciousness_coupling",
-      "name": "Acipenser_gueldenstaedtii",
-      "computed": 414175.69027329,
-      "measured": 414045.24047921,
-      "error_pct": 0.031506,
-      "brain_energy_fraction": 0.2416,
-      "genome_bp": 2389722506.0,
-      "longevity_quotient": 182736.18218822178,
-      "maximum_longevity_yrs": 46.0,
-      "consciousness_panel": false,
-      "eval_kind": "longevity_consciousness_bridge",
-      "domain_display_name": "longevity consciousness coupling",
-      "display_name": "Acipenser gueldenstaedtii",
-      "scientific_measurement": {
-        "delta": 130.44979408,
-        "delta_pct": 0.031506,
-        "effective_error_pct": 0.031506,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Longevity_Consciousness_Coupling_Panel",
-      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
-    },
-    {
-      "lab": "tier_95_zebrafish_spine_depth_lab",
-      "property": "quirk_longevity_coupling",
-      "name": "Acipenser_gueldenstaedtii",
-      "computed": -12318.96732376,
-      "measured": -12317.32397716,
-      "error_pct": 0.013342,
-      "delta_psi_proxy": 1.15,
-      "eval_kind": "observer_longevity_bridge",
-      "domain_display_name": "longevity consciousness coupling",
-      "display_name": "Acipenser gueldenstaedtii",
-      "scientific_measurement": {
-        "delta": -1.6433466,
-        "delta_pct": 0.013342,
-        "effective_error_pct": 0.013342,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Longevity_Consciousness_Coupling_Panel",
-      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
-    },
-    {
-      "lab": "tier_95_zebrafish_spine_depth_lab",
-      "property": "longevity_consciousness_coupling",
-      "name": "Acipenser_oxyrinchus",
-      "computed": 1270580.02940159,
-      "measured": 1270179.84439052,
-      "error_pct": 0.031506,
-      "brain_energy_fraction": 0.2416,
-      "genome_bp": 1862452108.0,
-      "longevity_quotient": 567132.53880532,
-      "maximum_longevity_yrs": 60.0,
-      "consciousness_panel": false,
-      "eval_kind": "longevity_consciousness_bridge",
-      "domain_display_name": "longevity consciousness coupling",
-      "display_name": "Acipenser oxyrinchus",
-      "scientific_measurement": {
-        "delta": 400.18501107,
-        "delta_pct": 0.031506,
-        "effective_error_pct": 0.031506,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Longevity_Consciousness_Coupling_Panel",
-      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
-    },
-    {
-      "lab": "tier_95_zebrafish_spine_depth_lab",
-      "property": "quirk_longevity_coupling",
-      "name": "Acipenser_oxyrinchus",
-      "computed": -38232.64298356,
-      "measured": -38227.54276029,
-      "error_pct": 0.013342,
-      "delta_psi_proxy": 1.15,
-      "eval_kind": "observer_longevity_bridge",
-      "domain_display_name": "longevity consciousness coupling",
-      "display_name": "Acipenser oxyrinchus",
-      "scientific_measurement": {
-        "delta": -5.10022327,
-        "delta_pct": 0.013342,
-        "effective_error_pct": 0.013342,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Longevity_Consciousness_Coupling_Panel",
-      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
-    },
-    {
-      "lab": "tier_95_zebrafish_spine_depth_lab",
-      "property": "megadeep_maximum_longevity_yrs",
-      "name": "Acipenser_brevirostrum",
-      "computed": 67.014898,
-      "measured": 67.0,
-      "error_pct": 0.022236,
-      "eval_kind": "megadeep_longevity",
-      "fsot_domain": "Biology",
-      "fsot_scalar": 0.444725,
-      "taxid": 7907,
-      "domain_display_name": "longevity megadeep ncbi",
-      "display_name": "Acipenser brevirostrum",
-      "scientific_measurement": {
-        "delta": 0.014898,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Longevity_MegaDeep_NCBI_Panel",
-      "depth_relay_from": "Longevity_MegaDeep_NCBI_Panel"
-    },
-    {
-      "lab": "tier_95_zebrafish_spine_depth_lab",
-      "property": "megadeep_longevity_quotient",
-      "name": "Acipenser_brevirostrum",
-      "computed": 63529.69361401,
-      "measured": 63518.39432665,
-      "error_pct": 0.017789,
-      "consciousness_panel": false,
-      "eval_kind": "megadeep_quotient",
-      "domain_display_name": "longevity megadeep ncbi",
-      "display_name": "Acipenser brevirostrum",
-      "scientific_measurement": {
-        "delta": 11.29928736,
-        "delta_pct": 0.017789,
-        "effective_error_pct": 0.017789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Longevity_MegaDeep_NCBI_Panel",
-      "depth_relay_from": "Longevity_MegaDeep_NCBI_Panel"
+      "eval_kind": "tier95_meta"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.013342,
-    "max_scalar_error_pct": 0.031506,
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

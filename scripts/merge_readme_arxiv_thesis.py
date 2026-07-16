@@ -82,6 +82,10 @@ MARKER = {
     "engineering": ("<!-- README_ENGINEERING_VIII_START -->", "<!-- README_ENGINEERING_VIII_END -->"),
     "obligation_map": ("<!-- README_OBLIGATION_MAP_START -->", "<!-- README_OBLIGATION_MAP_END -->"),
     "near_miss": ("<!-- README_NEAR_MISS_START -->", "<!-- README_NEAR_MISS_END -->"),
+    "credibility": ("<!-- README_CREDIBILITY_HARDENING_START -->", "<!-- README_CREDIBILITY_HARDENING_END -->"),
+    "circuitry": ("<!-- README_CIRCUITRY_ROADMAP_START -->", "<!-- README_CIRCUITRY_ROADMAP_END -->"),
+    "discussion_open": ("<!-- README_DISCUSSION_OPEN_WORK_START -->", "<!-- README_DISCUSSION_OPEN_WORK_END -->"),
+    "appendix_c_extra": ("<!-- README_APPENDIX_C_EXTRA_START -->", "<!-- README_APPENDIX_C_EXTRA_END -->"),
     "methods": ("<!-- README_METHODS_FORMAL_START -->", "<!-- README_METHODS_FORMAL_END -->"),
     "xi_stub": ("<!-- README_APPENDIX_XI_STUB_START -->", "<!-- README_APPENDIX_XI_STUB_END -->"),
     "xii_stub": ("<!-- README_APPENDIX_XII_STUB_START -->", "<!-- README_APPENDIX_XII_STUB_END -->"),
@@ -215,6 +219,9 @@ _GAP_FILES = {
     "vi_figures": "vi_extra_figures.md",
     "obligation_map": "obligation_map.md",
     "near_miss": "near_miss.md",
+    "credibility": "credibility_hardening.md",
+    "circuitry": "circuitry_roadmap.md",
+    "discussion_open": "discussion_open_work.md",
 }
 
 
@@ -296,6 +303,9 @@ def main() -> int:
         "build_skeptic_replication_kit.py",
         "build_monograph_abstract.py",
         "build_readme_arxiv_gaps.py",
+        "build_circuit_component_atlas_scaffold.py",
+        "build_wetlab_longevity_volume.py",
+        "build_credibility_hardening_audit.py",
     )
     for script in tier_c_scripts:
         subprocess.run([sys.executable, str(ROOT / "scripts" / script)], check=False)
@@ -327,6 +337,12 @@ def main() -> int:
     readme = _replace_block(readme, *MARKER["engineering"], _read_gap("engineering_viii.md"))
     readme = _replace_block(readme, *MARKER["obligation_map"], _read_gap("obligation_map.md"))
     readme = _replace_block(readme, *MARKER["near_miss"], _read_gap("near_miss.md"))
+    readme = _replace_block(readme, *MARKER["credibility"], _read_gap("credibility_hardening.md"))
+    readme = _replace_block(readme, *MARKER["circuitry"], _read_gap("circuitry_roadmap.md"))
+    if MARKER["discussion_open"][0] in readme:
+        readme = _replace_block(readme, *MARKER["discussion_open"], _read_gap("discussion_open_work.md"))
+    if MARKER["appendix_c_extra"][0] in readme:
+        readme = _replace_block(readme, *MARKER["appendix_c_extra"], _read_gap("appendix_c_extra.md"))
 
     # First-time inserts if markers missing
     if MARKER["toc"][0] not in readme:
@@ -384,6 +400,40 @@ def main() -> int:
             "engineering",
             "## VIII. Engineering Demonstrations",
         )
+    if MARKER["credibility"][0] not in readme:
+        readme = _ensure_marker_block(
+            readme,
+            "credibility",
+            "<!-- README_NEAR_MISS_END -->",
+        )
+    if MARKER["circuitry"][0] not in readme:
+        readme = _ensure_marker_block(
+            readme,
+            "circuitry",
+            "<!-- README_CREDIBILITY_HARDENING_END -->",
+        )
+    if MARKER["discussion_open"][0] not in readme:
+        old_open = re.search(
+            r"### 9\.3 Open work \(not model failures\)\n\n.*?(?=\n<!-- README_NEAR_MISS_START -->)",
+            readme,
+            flags=re.DOTALL,
+        )
+        if old_open:
+            block = (
+                f"{MARKER['discussion_open'][0]}\n{_read_gap('discussion_open_work.md')}\n"
+                f"{MARKER['discussion_open'][1]}"
+            )
+            readme = readme[: old_open.start()] + block + readme[old_open.end() :]
+    if MARKER["appendix_c_extra"][0] not in readme:
+        anchor = "| [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) | Contested-sector living watch |"
+        if anchor in readme:
+            extra = _read_gap("appendix_c_extra.md").strip()
+            readme = readme.replace(anchor, anchor + "\n" + extra)
+            readme = readme.replace(
+                anchor + "\n" + extra,
+                anchor + "\n\n<!-- README_APPENDIX_C_EXTRA_START -->\n" + extra + "\n<!-- README_APPENDIX_C_EXTRA_END -->",
+                1,
+            )
     if MARKER["methods"][0] not in readme:
         readme = _insert_after(
             readme,
@@ -426,7 +476,7 @@ def main() -> int:
     readme = _patch_inline_citations(readme)
     readme = re.sub(
         r"\*\*Edition:\*\* v[0-9]+\.[0-9]+[^\n]*",
-        f"**Edition:** v2.2 — arXiv-tier thesis (Tier C complete) {ts}",
+        f"**Edition:** v2.3 — wet-lab depth, credibility hardening, circuitry scaffold {ts}",
         readme,
         count=1,
     )
