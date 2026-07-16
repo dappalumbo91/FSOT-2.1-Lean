@@ -1145,7 +1145,7 @@ def _build_section_63(written: list[dict], summary: dict, ts: str) -> str:
     ]
     total_panels = sum(w.get("panels", 0) for w in ext_chapters)
     lines = [
-        f"### 6.3 Domain-by-domain coverage ({summary.get('total_scientific_domains_covered', 403)} domains)",
+        f"### 6.3 Domain-by-domain coverage ({summary.get('neurolab_domains', 35) + summary.get('extension_domains', 367)} domains)",
         "",
         "FSOT does not verify a single silo — it verifies a **spine of 35 core scientific domains** "
         f"and **{total_panels} extension panels** across **{len(ext_chapters)} thesis clusters**, "
@@ -1447,7 +1447,7 @@ def main() -> int:
         "",
         f"*Generated: {datetime.now(timezone.utc).isoformat()}*",
         "",
-        f"**Corpus:** {summary.get('total_scientific_domains_covered', 403)} domains · "
+        f"**Corpus:** {summary.get('neurolab_domains', 35) + summary.get('extension_domains', 367)} domains · "
         f"{summary.get('total_empirical_records', 536740):,} records · "
         f"{summary.get('lean_formal_modules', 501)} Lean modules",
         "",

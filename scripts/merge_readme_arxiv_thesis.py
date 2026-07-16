@@ -74,6 +74,11 @@ XII_CHAPTER_ORDER = (
 MARKER = {
     "toc": ("<!-- README_TOC_START -->", "<!-- README_TOC_END -->"),
     "related": ("<!-- README_RELATED_WORK_START -->", "<!-- README_RELATED_WORK_END -->"),
+    "contributions": ("<!-- README_CONTRIBUTIONS_START -->", "<!-- README_CONTRIBUTIONS_END -->"),
+    "epistemology": ("<!-- README_EPISTEMOLOGY_START -->", "<!-- README_EPISTEMOLOGY_END -->"),
+    "prereg": ("<!-- README_PREREG_SUMMARY_START -->", "<!-- README_PREREG_SUMMARY_END -->"),
+    "bubble_bleed": ("<!-- README_BUBBLE_BLEED_START -->", "<!-- README_BUBBLE_BLEED_END -->"),
+    "vi_figures": ("<!-- README_VI_EXTRA_FIGURES_START -->", "<!-- README_VI_EXTRA_FIGURES_END -->"),
     "methods": ("<!-- README_METHODS_FORMAL_START -->", "<!-- README_METHODS_FORMAL_END -->"),
     "xi_stub": ("<!-- README_APPENDIX_XI_STUB_START -->", "<!-- README_APPENDIX_XI_STUB_END -->"),
     "xii_stub": ("<!-- README_APPENDIX_XII_STUB_START -->", "<!-- README_APPENDIX_XII_STUB_END -->"),
@@ -199,10 +204,57 @@ def _try_pdf(main_md: Path) -> None:
     print("pandoc PDF engines failed — no export written")
 
 
+_GAP_FILES = {
+    "contributions": "contributions.md",
+    "epistemology": "epistemology.md",
+    "prereg": "prereg_summary.md",
+    "bubble_bleed": "bubble_bleed.md",
+    "vi_figures": "vi_extra_figures.md",
+}
+
+
+def _ensure_marker_block(text: str, key: str, anchor: str, before: bool = False) -> str:
+    start, end = MARKER[key]
+    gap_name = _GAP_FILES.get(key)
+    if not gap_name:
+        return text
+    if start in text:
+        return _replace_block(text, start, end, _read_gap(gap_name))
+    body = _read_gap(gap_name)
+    if not body or anchor not in text:
+        return text
+    block = f"\n\n{start}\n{body}\n{end}\n"
+    if before:
+        return text.replace(anchor, block + anchor)
+    return text.replace(anchor, anchor + block)
+
+
+def _reconcile_domain_counts(text: str) -> str:
+    """402 routed = 35 core + 367 extension (authoritative navigator/atlas)."""
+    replacements = (
+        (r"\b403 scientific domains\b", "402 routed scientific domains (35 core + 367 extension)"),
+        (r"\b403 domains\b", "402 routed domains"),
+        (r"\b403-domain atlas\b", "402-domain atlas"),
+        (r"\b403-domain verification table\b", "402-domain verification table"),
+        (r"\(403 rows\)", "(402 rows)"),
+        (r"\| Scientific domains \| 403 \|", "| Scientific domains | 402 |"),
+        (r"over the 403-domain atlas", "over the 402-domain atlas"),
+        (r"### 6\.3 Domain-by-domain coverage \(403 domains\)", "### 6.3 Domain-by-domain coverage (402 domains)"),
+    )
+    for pattern, repl in replacements:
+        text = re.sub(pattern, repl, text)
+    return text
+
+
 def main() -> int:
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    subprocess.run([sys.executable, str(ROOT / "scripts/build_readme_arxiv_gaps.py")], check=True)
+    for script in (
+        "build_mechanism_chain_derivation.py",
+        "build_thesis_appendix_derivations.py",
+        "build_readme_arxiv_gaps.py",
+    ):
+        subprocess.run([sys.executable, str(ROOT / "scripts" / script)], check=True)
 
     DOCS_XI.parent.mkdir(parents=True, exist_ok=True)
     DOCS_XI.write_text(_assemble_appendix_xi(ts), encoding="utf-8")
@@ -223,6 +275,11 @@ def main() -> int:
     readme = _replace_block(readme, *MARKER["xi_stub"], _read_gap("xi_stub.md"))
     readme = _replace_block(readme, *MARKER["xii_stub"], _read_gap("xii_stub.md"))
     readme = _replace_block(readme, *MARKER["notation"], _read_gap("notation.md"))
+    readme = _replace_block(readme, *MARKER["contributions"], _read_gap("contributions.md"))
+    readme = _replace_block(readme, *MARKER["epistemology"], _read_gap("epistemology.md"))
+    readme = _replace_block(readme, *MARKER["prereg"], _read_gap("prereg_summary.md"))
+    readme = _replace_block(readme, *MARKER["bubble_bleed"], _read_gap("bubble_bleed.md"))
+    readme = _replace_block(readme, *MARKER["vi_figures"], _read_gap("vi_extra_figures.md"))
 
     # First-time inserts if markers missing
     if MARKER["toc"][0] not in readme:
@@ -230,6 +287,12 @@ def main() -> int:
             readme,
             "The GitHub commit history is the edition record. Tagged releases are the volumes.\n\n---",
             f"\n\n{MARKER['toc'][0]}\n{_read_gap('toc.md')}\n{MARKER['toc'][1]}",
+        )
+    if MARKER["contributions"][0] not in readme:
+        readme = _ensure_marker_block(
+            readme,
+            "contributions",
+            "(`data/preregistered_predictions_manifest.yaml`).\n\n---",
         )
     if MARKER["related"][0] not in readme:
         anchor = (
@@ -242,6 +305,32 @@ def main() -> int:
                 f"{MARKER['related'][0]}\n{_read_gap('related_work.md')}\n{MARKER['related'][1]}\n\n"
                 "## II. Why the Universe Exists",
             )
+    if MARKER["epistemology"][0] not in readme:
+        readme = _ensure_marker_block(
+            readme,
+            "epistemology",
+            "<!-- README_RELATED_WORK_END -->\n\n## II. Why the Universe Exists",
+            before=True,
+        )
+    if MARKER["prereg"][0] not in readme:
+        readme = _ensure_marker_block(
+            readme,
+            "prereg",
+            "If the engine fails a green gate, the ledger records it — no narrative escape hatch.\n\n---",
+        )
+    if MARKER["bubble_bleed"][0] not in readme:
+        readme = _ensure_marker_block(
+            readme,
+            "bubble_bleed",
+            "![Contested FSOT vs ΛCDM](data/figures/contested_fsot_vs_lcdm.png)\n\n### 7.1 H₀ landscape",
+            before=True,
+        )
+    if MARKER["vi_figures"][0] not in readme:
+        readme = _ensure_marker_block(
+            readme,
+            "vi_figures",
+            "![Predicted vs measured scatter](data/figures/predicted_vs_measured_scatter.png)\n\n### 6.2 Representative domains",
+        )
     if MARKER["methods"][0] not in readme:
         readme = _insert_after(
             readme,
@@ -280,9 +369,10 @@ def main() -> int:
                 f"{MARKER['notation'][0]}\n{_read_gap('notation.md')}\n{MARKER['notation'][1]}\n\n{cite_anchor}",
             )
 
+    readme = _reconcile_domain_counts(readme)
     readme = re.sub(
-        r"\*\*Edition:\*\* v1\.[0-9]+[^\n]*",
-        f"**Edition:** v2.0 — arXiv-tier thesis layout {ts}",
+        r"\*\*Edition:\*\* v[0-9]+\.[0-9]+[^\n]*",
+        f"**Edition:** v2.1 — arXiv-tier thesis layout (Tier B gaps) {ts}",
         readme,
         count=1,
     )
@@ -307,6 +397,8 @@ def main() -> int:
     if end > 0:
         main_export.write_text(readme[:end].rstrip() + "\n", encoding="utf-8")
         _try_pdf(main_export)
+
+    subprocess.run([sys.executable, str(ROOT / "scripts/build_thesis_completeness_audit.py")], check=True)
 
     lines = readme.count("\n") + 1
     print(f"README.md assembled: {lines:,} lines (was ~13,000 inlined)")

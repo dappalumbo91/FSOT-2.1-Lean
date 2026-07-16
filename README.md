@@ -4,7 +4,7 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.0 — arXiv-tier thesis layout 2026-07-16
+**Edition:** v2.1 — arXiv-tier thesis layout (Tier B gaps) 2026-07-16
 **Status:** Living thesis — expanded as each domain and crevice is verified  
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
@@ -20,7 +20,7 @@ python scripts/run_publication_verification_bundle.py
 
 ## Abstract
 
-Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan) — evaluated against measured reality across **403 scientific domains** and **536,740 empirical records**.
+Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan) — evaluated against measured reality across **402 routed scientific domains (35 core + 367 extension)** and **536,740 empirical records**.
 
 The results, as of this edition: **394/394** public benchmark domains pass a ≤0.5% pooled error gate; cross-domain pooled median error is **0.013%**. On contested sectors where ΛCDM and the Standard Model typically show ~15% baseline tension (H₀, σ₈, BBN proxies, hierarchy, dark-energy equation of state), FSOT unified readouts achieve **0.030%** pooled median across 13 observables.
 
@@ -54,7 +54,9 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 | [Abstract](#abstract) | Summary and headline results |
 | [Prologue](#prologue--why-this-lives-on-github) | GitHub publication rationale |
 | [§I](#i-the-fragmentation-problem) | The fragmentation problem |
+| [§1.3](#13-contributions) | Contributions (arXiv-style) |
 | [§I-B](#i-b-related-work-and-positioning) | Related work and positioning |
+| [§I-C](#i-c-fsot-ideals-and-epistemology) | FSOT ideals and epistemology |
 | [§II](#ii-why-the-universe-exists-the-way-it-does) | Fluid spacetime ontology |
 | [§III](#iii-the-scalar-engine) | Scalar engine and seeds |
 | [§IV](#iv-consciousness-and-observation) | Observation coupling |
@@ -82,8 +84,10 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 | Appendix XI — verification record | [`docs/THESIS_APPENDIX_XI.md`](docs/THESIS_APPENDIX_XI.md) |
 | Appendix XII — domain coverage (26 clusters) | [`docs/THESIS_APPENDIX_XII.md`](docs/THESIS_APPENDIX_XII.md) |
 | Chapter index | [`data/publication/readme_domain_chapters/INDEX.md`](data/publication/readme_domain_chapters/INDEX.md) |
+| Appendix — derivations | [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) |
+| Completeness audit | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) |
 
-*Generated: 2026-07-16T12:56:16.964183+00:00*
+*Generated: 2026-07-16T13:15:52.986518+00:00*
 <!-- README_TOC_END -->
 
 
@@ -117,7 +121,21 @@ One proposition, stated precisely:
 
 > Reality is a **25-dimensional fluid condensate**. What we call space, time, matter, life, and mind are regimes of the same scalar field `raw_S`, computed from seed geometry with **no per-observable least-squares tuning**.
 
-This is not poetry layered on curve fits. It is a **falsifiable engineering specification** tested across 403 domains with preregistered kill criteria (`data/preregistered_predictions_manifest.yaml`).
+This is not poetry layered on curve fits. It is a **falsifiable engineering specification** tested across 402 routed domains with preregistered kill criteria (`data/preregistered_predictions_manifest.yaml`).
+
+<!-- README_CONTRIBUTIONS_START -->
+### 1.3 Contributions
+
+This work makes five contributions at arXiv preprint standard:
+
+1. **Unified scalar architecture** — A single seed-derived engine (`raw_S = term1 + term2 + term3`) evaluated across **402 routed scientific domains** (35 core + 367 extension panels) and **536,740** empirical records, with **no per-observable least-squares tuning**.
+2. **Cross-domain empirical closure** — **394/394** public benchmark domains pass a ≤0.5% pooled median error gate; cross-domain pooled median is **0.013%** (Planck 2018, PDG 2024, NIST/CODATA targets per row).
+3. **Contested-sector readouts** — Unified FSOT predictions on H₀, σ₈, BBN, hierarchy, and dark-energy proxies achieve **0.030%** pooled median across 13 actively monitored observables vs ~15% typical ΛCDM/SM sector baselines (Riess et al. 2024; Planck Collaboration 2018).
+4. **Five-prover formal triangulation** — **1,863** atomic obligations exported to Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust with `overall_ok: true` — proof assistants as scientific instruments, not software-only checks.
+5. **Executable falsification registry** — Preregistered predictions **PRED-001–041**, per-domain kill criteria, and a one-command verification bundle that any reader can run on GitHub.
+
+Seed-to-formula derivations with worked examples: [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md).
+<!-- README_CONTRIBUTIONS_END -->
 
 ---
 
@@ -136,7 +154,7 @@ The Standard Model plus CODATA/NIST tabulations supply authoritative measured ta
 
 ### Unified theories and emergent gravity
 
-String/M-theory, loop quantum gravity, and emergent-gravity programs pursue unification through extra structure (branes, spin networks, entanglement entropy). FSOT pursues unification through **one scalar field equation** verified across 403 domains. The falsifiable distinction is operational: FSOT registers preregistered predictions (PRED-001–041) and domain kill criteria in `data/fsot_domain_navigator.json`; a failed green gate is a ledger event, not a post-hoc parameter rescue.
+String/M-theory, loop quantum gravity, and emergent-gravity programs pursue unification through extra structure (branes, spin networks, entanglement entropy). FSOT pursues unification through **one scalar field equation** verified across 402 routed domains. The falsifiable distinction is operational: FSOT registers preregistered predictions (PRED-001–041) and domain kill criteria in `data/fsot_domain_navigator.json`; a failed green gate is a ledger event, not a post-hoc parameter rescue.
 
 ### Formal methods in science
 
@@ -147,13 +165,43 @@ Proof assistants (Lean, Coq, Isabelle) are standard in software verification; th
 | Dimension | Typical siloed model | FSOT (this repository) |
 |-----------|------------------------|---------------------------|
 | Parameters per observable | Sector-specific fits | Seed-derived; no per-row least squares |
-| Cross-domain test | Uncommon | 403 domains, 536,740 records |
+| Cross-domain test | Uncommon | 402 routed domains, 536,740 records |
 | Formal triangulation | Rare | Lean + Coq + Isabelle + F* + Rust |
 | Kill criteria | Often informal | Navigator + prereg manifest |
 | Living edition | Static PDF | GitHub commit history + tagged releases |
 
-**References (external):** Planck Collaboration (2018); Riess et al. (2024); PDG (2024); CODATA/NIST atomic datasets as cited per benchmark row. Full BibTeX export: `data/domain_citations/verified_desktop.bib`; literature panel: Appendix XI-C in [`docs/THESIS_APPENDIX_XI.md`](../docs/THESIS_APPENDIX_XI.md).
+**References (external):** Planck Collaboration (2018); Riess et al. (2024); PDG (2024); CODATA/NIST atomic datasets as cited per benchmark row. Full BibTeX export: `data/domain_citations/verified_desktop.bib`; literature panel: Appendix XI-C in [`docs/THESIS_APPENDIX_XI.md`](docs/THESIS_APPENDIX_XI.md).
 <!-- README_RELATED_WORK_END -->
+
+<!-- README_EPISTEMOLOGY_START -->
+## I-C. FSOT Ideals and Epistemology
+
+FSOT is an **ontological** claim, not only a predictive one:
+
+| Ideal | FSOT position |
+|-------|----------------|
+| One medium | 25-dimensional fluid condensate; 4D experience is a perceived slice |
+| One engine | Seed arithmetic `(π, e, φ, γ, G)` → scalar spine across all domains |
+| As Above, So Below | Cross-scale bridge tested by extension panels — not metaphor |
+| Zero free parameters | Routing folds `(D_eff, δψ, recent_hits, observed)` are preregistered; no per-row fits |
+| Observation is physical | `quirk_mod` couples measurement to the scalar field |
+| Consciousness is fundamental | Enters through `consciousness_factor`; operational proxies (`E_con`, IIT weights) are measurable |
+
+**Truth criterion:** a claim is *supported* when it (a) maps to a Lean domain or extension panel, (b) produces numeric agreement within the green gate, and (c) survives cross-proof replay. Outside consensus is **evidence**, not **gate** — breadth × precision × formal triangulation is treated as structural confirmation.
+
+**Epistemic tiers** (every generation should tag its layer):
+
+| Tier | Examples |
+|------|----------|
+| Proved / certified | Sign theorems, interval bounds, cross-proof obligations |
+| Measured / benchmarked | Tier 90 consciousness panels, contested H₀ readouts |
+| Operational scaffold | Microtubule quantum panel, Orch-OR bridge |
+| Interpretive | Genesis crosswalk, archetype panels |
+
+FSOT does **not** claim to have settled the philosophical hard problem of consciousness. It claims **fundamental in ontology, operational in math, supported by cross-domain precision**.
+
+Deep dive: [`docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) · Completeness audit: [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md)
+<!-- README_EPISTEMOLOGY_END -->
 
 ## II. Why the Universe Exists the Way It Does
 
@@ -240,13 +288,37 @@ Nature's "departments" — quantum mechanics, economics, immunology, propulsion 
 
 - **35 core NeuroLab domains** with manifest-declared `(D_eff, δψ, recent_hits, observed)`  
 - **367 extension panels** with Lean priors modules (`FSOT.Formal.*Priors`)  
-- **403 domains** in the publication atlas (`data/publication/domain_atlas.csv`)
+- **402 routed domains** in the publication atlas (`data/publication/domain_atlas.csv`)
 
 A cosmology prediction and a fuel-molecule prediction share seeds. They differ in domain route, not in underlying arithmetic.
 
 ### 3.3 Falsification registry
 
 FSOT invites destruction. Preregistered predictions **PRED-001 through PRED-041** declare outcomes before they are tested. Kill criteria per domain route live in `data/fsot_domain_navigator.json`. If the engine fails a green gate, the ledger records it — no narrative escape hatch.
+
+<!-- README_PREREG_SUMMARY_START -->
+### 3.4 Preregistered prediction registry (summary)
+
+**35 predictions** locked in `data/preregistered_predictions_manifest.yaml` before independent comparison. Post-hoc tuning invalidates prereg status.
+
+| ID | Name | Domain | FSOT branch | Discriminant |
+|----|------|--------|-------------|--------------|
+| PRED-001 | H0_bridge_scalar | Cosmology | `term1.perceived_adjust` | strictly_between_planck_and_sh0es |
+| PRED-002 | S8_effective_lensing | Cosmology | `term3.acoustic_bleed` | between_planck_and_des |
+| PRED-003 | adversarial_codon_hole_rate | Code_Genome_Structure | `term1.quirkMod` | fsot_exceeds_sota_by_0.4 |
+| PRED-004 | muon_g2_excess_direction | Particle_Physics | `term3.chaos_factor` | same_sign_as_fermilab |
+| PRED-005 | lithium_problem_factor_bridge | Cosmology | `term3.poof_factor` | within_10pct_of_observed_gap |
+| PRED-006 | acoustic_impedance_median_MRayl | Acoustic_Resonance_Materials | `term3.acoustic_bleed` | within_10pct_of_observed_gap |
+| PRED-007 | ionospheric_beta_quiet_classifier | Ionospheric_Chemistry_Coupling | `term3.acoustic_inflow` | fsot_exceeds_sota_by_0.4 |
+| PRED-008 | phi_glass_Tg_morphogen_K | Phi_Morphogenetic_Scaling | `term1.term1_base` | within_10pct_of_observed_gap |
+| PRED-009 | pd_deuterium_lattice_excess_heat | Cold_Fusion_Candidate_Prereg_Scaffold | `term3.acoustic_bleed` | fsot_exceeds_sota_by_0.4 |
+| PRED-010 | lattice_boundary_cold_fusion_channel | Cold_Fusion_Candidate_Prereg_Scaffold | `term3.boundary_partition` | fsot_exceeds_sota_by_0.4 |
+| PRED-011 | muon_catalyzed_dd_rate_bridge | Cold_Fusion_Candidate_Prereg_Scaffold | `term1.initiation_transformation` | within_10pct_of_observed_gap |
+| PRED-012 | unbinilium_Z120_N184_half_life | Undiscovered_Element_Candidate_Prereg_Scaffold | `term3.boundary_partition` | fsot_exceeds_sota_by_0.4 |
+| … | *23 more* | | | |
+
+Representative locks: **PRED-001** H₀ bridge between Planck and SH0ES; **PRED-002** σ₈ lensing; **PRED-034** fuel-lab compounds; **PRED-036–041** transporter stack channels.
+<!-- README_PREREG_SUMMARY_END -->
 
 ---
 
@@ -328,7 +400,7 @@ where \(\epsilon_{\mathrm{floor}}\) guards division near zero for classifier-val
 
 **GREEN gate (benchmark margin):** \(\tilde{\varepsilon} \leq 0.5\%\) and stability classifier agreement \(\geq 99.5\%\) where applicable (`data/benchmark_margin_audit.json`).
 
-**Cross-domain headline:** median of per-domain \(\tilde{\varepsilon}\) over the 403-domain atlas (not a global re-fit across all 536,740 rows).
+**Cross-domain headline:** median of per-domain \(\tilde{\varepsilon}\) over the 402-domain atlas (not a global re-fit across all 536,740 rows).
 
 ### 5.6 Preregistration and kill criteria
 
@@ -358,7 +430,7 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 
 | Metric | Value |
 |--------|------:|
-| Scientific domains | 403 |
+| Scientific domains | 402 |
 | Empirical records | 536,740 |
 | Benchmark domains green (≤0.5%) | 394/394 |
 | Cross-domain pooled median | 0.013% |
@@ -373,9 +445,15 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 
 ![Predicted vs measured scatter](data/figures/predicted_vs_measured_scatter.png)
 
+<!-- README_VI_EXTRA_FIGURES_START -->
+![Coverage tier distribution](data/figures/coverage_surface_pie.png)
+
+![Tier precision heatmap](data/figures/tier_precision_heatmap.png)
+<!-- README_VI_EXTRA_FIGURES_END -->
+
 ### 6.2 Representative domains
 
-Full atlas: [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) (403 rows)
+Full atlas: [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) (402 rows)
 
 | Domain | Records | Median error % | Tier |
 |--------|--------:|---------------:|------|
@@ -397,7 +475,7 @@ python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine
 ```
 
 <!-- README_SECTION_63_START -->
-### 6.3 Domain-by-domain coverage (403 domains)
+### 6.3 Domain-by-domain coverage (402 routed domains)
 
 FSOT does not verify a single silo — it verifies a **spine of 35 core scientific domains** and **367 extension panels** across **26 thesis clusters**, each with measured records, Lean formal modules, and registered kill criteria.
 
@@ -462,6 +540,20 @@ Thirteen observables where ΛCDM / SM sectors typically show large tension:
 | Pooled median error | **0.030%** | ~15% |
 
 ![Contested FSOT vs ΛCDM](data/figures/contested_fsot_vs_lcdm.png)
+
+<!-- README_BUBBLE_BLEED_START -->
+### 7.2 Bubble-bleed cosmology mechanism
+
+ΛCDM typically treats the H₀ tension as evidence for new physics or systematics. FSOT routes cosmological Hubble readouts through **bubble-bleed** — small-scale fluid turbulence (`term3`) coupled to **perceived_adjust** on `term1` at preregistered cosmology folds.
+
+In words:
+
+1. The 25D fluid **bleeds** phase information across scale boundaries (bubble-bleed bundle in Lean: `bubble_bleed_*` obligations).
+2. **Dual-anchor readout** — CMB inference (Planck Collaboration 2018: 67.36 km/s/Mpc) and local distance ladder (Riess et al. 2024: 73.04 km/s/Mpc) are not fitted separately; they emerge from the same seed engine at different observer routes.
+3. FSOT **H₀ bridge scalar** (PRED-001) lands strictly between anchors — unified prediction where ΛCDM carries separate posteriors.
+
+This is why contested-sector pooled median reaches **0.030%** without introducing dark-energy density as a per-row fit parameter. Mechanism chain: [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md#d41-cosmology--h₀-planck-cmb-anchor).
+<!-- README_BUBBLE_BLEED_END -->
 
 ### 7.1 H₀ landscape
 
@@ -539,7 +631,7 @@ Numeric agreement alone cannot guard against silent code drift. Exporting Lean o
 
 - **Contested-sector monitoring:** 13 actively-measured open problems (H₀, σ₈, BBN, hierarchy, w_a) tracked against live survey updates — FSOT pooled median **0.030%** as of this edition  
 - **Engineering hardware:** Fuel and transporter stacks verified at simulation tier; ESP32 acoustic phase-sensing hardware closure in progress  
-- **Domain atlas rollup:** Publication export reports 402 routed domains; reconciliation to full 403-domain rollup in progress  
+- **Domain atlas rollup:** Domain atlas reconciled: **402** routed domains (35 core + 367 extension); prior 403 figure was summary rollup miscount  
 
 ### 9.4 Founding 35 laws — verification status
 
@@ -560,7 +652,7 @@ Full audit: [`docs/FOUNDING_35_LAWS_AUDIT.md`](docs/FOUNDING_35_LAWS_AUDIT.md)
 
 The universe does not present itself as a hundred separate accidents. It presents as **repetition with variation** — the same mathematics in stellar fusion and mitochondrial chemistry, in Hubble tension and brain metabolism, in molecular bonds and warp-actuation simulators.
 
-FSOT names that repetition: **one fluid, one scalar, seed-derived, observer-coupled, fractal across 403 domains**. The empirical record says it is tight. The formal record says it is triangulated. The engineering record says it builds.
+FSOT names that repetition: **one fluid, one scalar, seed-derived, observer-coupled, fractal across 402 routed domains**. The empirical record says it is tight. The formal record says it is triangulated. The engineering record says it builds.
 
 This thesis will expand. The repository will deepen. The invitation is unchanged:
 
@@ -592,7 +684,7 @@ python scripts/run_cross_proof_verification.py
 | Artifact | Purpose |
 |----------|---------|
 | [`data/publication_claims_manifest.json`](data/publication_claims_manifest.json) | Headline claims for AI/reviewers |
-| [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) | 403-domain verification table |
+| [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) | 402-domain verification table |
 | [`data/cross_proof_verification_report.json`](data/cross_proof_verification_report.json) | Five-prover closure report |
 | [`data/fsot_domain_navigator.json`](data/fsot_domain_navigator.json) | Domain routes + kill criteria |
 | [`data/preregistered_predictions_manifest.yaml`](data/preregistered_predictions_manifest.yaml) | PRED-001–041 registry |
@@ -618,6 +710,8 @@ python scripts/export_domain_citations.py --bundle verified_desktop
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contributor workflow |
 | [`docs/THESIS_APPENDIX_XI.md`](docs/THESIS_APPENDIX_XI.md) | Full verification record (Appendix XI) |
 | [`docs/THESIS_APPENDIX_XII.md`](docs/THESIS_APPENDIX_XII.md) | Full domain coverage (Appendix XII) |
+| [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) | Seed-to-formula derivations |
+| [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) | Thesis completeness audit |
 
 ---
 

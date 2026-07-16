@@ -23,9 +23,9 @@ Proof assistants (Lean, Coq, Isabelle) are standard in software verification; th
 | Dimension | Typical siloed model | FSOT (this repository) |
 |-----------|------------------------|---------------------------|
 | Parameters per observable | Sector-specific fits | Seed-derived; no per-row least squares |
-| Cross-domain test | Uncommon | 403 domains, 536,740 records |
+| Cross-domain test | Uncommon | 402 routed domains, 536,740 records |
 | Formal triangulation | Rare | Lean + Coq + Isabelle + F* + Rust |
 | Kill criteria | Often informal | Navigator + prereg manifest |
 | Living edition | Static PDF | GitHub commit history + tagged releases |
 
-**References (external):** Planck Collaboration (2018); Riess et al. (2024); PDG (2024); CODATA/NIST atomic datasets as cited per benchmark row. Full BibTeX export: `data/domain_citations/verified_desktop.bib`; literature panel: Appendix XI-C in [`docs/THESIS_APPENDIX_XI.md`](../docs/THESIS_APPENDIX_XI.md).
+**References (external):** Planck Collaboration (2018); Riess et al. (2024); PDG (2024); CODATA/NIST atomic datasets as cited per benchmark row. Full BibTeX export: `data/domain_citations/verified_desktop.bib`; literature panel: Appendix XI-C in [`docs/THESIS_APPENDIX_XI.md`](docs/THESIS_APPENDIX_XI.md).

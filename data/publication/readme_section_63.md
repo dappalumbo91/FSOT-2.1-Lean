@@ -48,5 +48,5 @@ Regenerate:
 
 ```bash
 python scripts/build_readme_domain_chapters.py
-python scripts/merge_readme_arxiv_thesis.py
+python scripts/merge_readme_domain_chapters.py
 ```

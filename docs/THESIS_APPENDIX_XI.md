@@ -10,7 +10,7 @@ python scripts/merge_readme_thesis_expansion.py
 
 ## XI-A — Cross-Verification Metrics
 
-*Generated: 2026-07-15T17:43:38.477007+00:00*
+*Generated: 2026-07-16T13:15:33.298254+00:00*
 
 ### Five-prover formal spine
 
@@ -30,7 +30,7 @@ Authoritative report: `data/cross_proof_verification_report.json`
 
 - verdict: **VERIFIED_DESKTOP_CROSS_PROOF_READY**
 - panels_closed: 4
-- generated_at: 2026-07-15T17:36:44.027329+00:00
+- generated_at: 2026-07-16T13:09:24.493662+00:00
 
 ## XI-B — Data Sources and API Resources
 
@@ -149,7 +149,7 @@ Export command: `python scripts/export_domain_citations.py --bundle verified_des
 - **File:** `data/domain_citations/verified_desktop.bib` (4 entries)
 
 ```bibtex
-% FSOT domain citations — generated 2026-07-15T17:36:24.822619+00:00
+% FSOT domain citations — generated 2026-07-16T13:09:27.664111+00:00
 % Repository: https://github.com/dappalumbo91/FSOT-2.1-Lean
 @misc{fsot_machineandmoleculelivepanel,
   title = {FSOT verification panel: Machine_And_Molecule_Live_Panel},

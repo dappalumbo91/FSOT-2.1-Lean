@@ -18,7 +18,7 @@ where \(\epsilon_{\mathrm{floor}}\) guards division near zero for classifier-val
 
 **GREEN gate (benchmark margin):** \(\tilde{\varepsilon} \leq 0.5\%\) and stability classifier agreement \(\geq 99.5\%\) where applicable (`data/benchmark_margin_audit.json`).
 
-**Cross-domain headline:** median of per-domain \(\tilde{\varepsilon}\) over the 403-domain atlas (not a global re-fit across all 536,740 rows).
+**Cross-domain headline:** median of per-domain \(\tilde{\varepsilon}\) over the 402-domain atlas (not a global re-fit across all 536,740 rows).
 
 ### 5.6 Preregistration and kill criteria
 

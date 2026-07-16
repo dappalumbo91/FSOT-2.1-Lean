@@ -7,7 +7,9 @@
 | [Abstract](#abstract) | Summary and headline results |
 | [Prologue](#prologue--why-this-lives-on-github) | GitHub publication rationale |
 | [§I](#i-the-fragmentation-problem) | The fragmentation problem |
+| [§1.3](#13-contributions) | Contributions (arXiv-style) |
 | [§I-B](#i-b-related-work-and-positioning) | Related work and positioning |
+| [§I-C](#i-c-fsot-ideals-and-epistemology) | FSOT ideals and epistemology |
 | [§II](#ii-why-the-universe-exists-the-way-it-does) | Fluid spacetime ontology |
 | [§III](#iii-the-scalar-engine) | Scalar engine and seeds |
 | [§IV](#iv-consciousness-and-observation) | Observation coupling |
@@ -35,5 +37,7 @@
 | Appendix XI — verification record | [`docs/THESIS_APPENDIX_XI.md`](docs/THESIS_APPENDIX_XI.md) |
 | Appendix XII — domain coverage (26 clusters) | [`docs/THESIS_APPENDIX_XII.md`](docs/THESIS_APPENDIX_XII.md) |
 | Chapter index | [`data/publication/readme_domain_chapters/INDEX.md`](data/publication/readme_domain_chapters/INDEX.md) |
+| Appendix — derivations | [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md) |
+| Completeness audit | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) |
 
-*Generated: 2026-07-16T12:56:16.964183+00:00*
+*Generated: 2026-07-16T13:15:52.986518+00:00*
