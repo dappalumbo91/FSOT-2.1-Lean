@@ -1,0 +1,49 @@
+generated_at: '2026-07-16T12:02:54.574936+00:00'
+chapters:
+- id: 00_core_spine_35
+  file: data\publication\readme_domain_chapters\00_core_spine_35.md
+  domains: 35
+- id: 01_cosmology_fundamental
+  title: Cosmology, Particle Physics & Fundamental Forces
+  file: data/publication/readme_domain_chapters/01_cosmology_fundamental.md
+  panels: 32
+- id: 02_space_geophysics
+  title: Space Weather, Geophysics & Planetary Science
+  file: data/publication/readme_domain_chapters/02_space_geophysics.md
+  panels: 31
+- id: 03_biology_genomics
+  title: Biology, Genomics, Medicine & Ecology
+  file: data/publication/readme_domain_chapters/03_biology_genomics.md
+  panels: 53
+- id: 04_chemistry_materials
+  title: Chemistry, Materials & Molecular Engineering
+  file: data/publication/readme_domain_chapters/04_chemistry_materials.md
+  panels: 41
+- id: 05_consciousness_social
+  title: Consciousness, Neuroscience & Social Sciences
+  file: data/publication/readme_domain_chapters/05_consciousness_social.md
+  panels: 23
+- id: 06_engineering_propulsion
+  title: Engineering, Propulsion & Verified Desktop Technology
+  file: data/publication/readme_domain_chapters/06_engineering_propulsion.md
+  panels: 20
+- id: 07_mathematics_computation
+  title: Mathematics, Computation & Formal Methods
+  file: data/publication/readme_domain_chapters/07_mathematics_computation.md
+  panels: 28
+- id: 08_cybersecurity
+  title: Cybersecurity, Code Genomes & Threat Intelligence
+  file: data/publication/readme_domain_chapters/08_cybersecurity.md
+  panels: 3
+- id: 09_founding_laws
+  title: Founding 35 Physics Laws (Dedicated Panels)
+  file: data/publication/readme_domain_chapters/09_founding_laws.md
+  panels: 7
+- id: 10_interdisciplinary
+  title: Interdisciplinary, Meta & Cross-Domain Panels
+  file: data/publication/readme_domain_chapters/10_interdisciplinary.md
+  panels: 129
+total_domains: 402
+core_domains: 35
+extension_panels: 367
+merge_command: python scripts/merge_readme_domain_chapters.py

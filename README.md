@@ -4,7 +4,7 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v1.1 — expansive run 2026-07-15 (full cross-proof)
+**Edition:** v1.2 — domain chapters 2026-07-16
 **Status:** Living thesis — expanded as each domain and crevice is verified  
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
@@ -260,6 +260,41 @@ Query any scientific problem:
 python scripts/query_fsot_domain_navigator.py --intent quantum_entanglement
 python scripts/query_fsot_domain_navigator.py --intent hubble_tension
 python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine
+```
+
+### 6.3 Domain-by-domain coverage (403 domains)
+
+FSOT does not verify a single silo — it verifies a **spine of 35 core scientific domains** and **367 extension panels**, each with measured records, Lean formal modules, and registered kill criteria.
+
+| Layer | Count | Role |
+|-------|------:|------|
+| Core NeuroLab domains | 35 | Primary scientific departments (cosmology, quantum mechanics, biology, …) |
+| Extension panels | 367 | Specialized depth (fusion labs, transporter stack, founding laws, cybersecurity, …) |
+| Lean formal modules | 501+ | Machine-checked priors per panel |
+| Empirical records | 536,740 | Measured vs seed-derived FSOT predictions |
+
+**Scientific clusters** (extension panels grouped for the thesis):
+
+| Cluster | Focus |
+|---------|--------|
+| Cosmology & fundamental physics | CMB, dark sector, particles, Higgs, quantum foundations |
+| Space & geophysics | Magnetosphere, seismology, hydrology, planetary structure |
+| Biology & genomics | Genetics, species, medicine, ecology, evolution |
+| Chemistry & materials | SMILES, fuels, periodic extension, materials genome |
+| Consciousness & social sciences | Neuroscience, economics, linguistics, soul-bridge |
+| Engineering & propulsion | Transporter, warp, fuels, power systems, verified desktop |
+| Mathematics & formal methods | Formula corpus, proof spine, trinary OS, coupling simulation |
+| Cybersecurity | Malware, code genomes, zero-day risk |
+| Founding 35 laws | Dedicated founding physics panels (all mapped) |
+| Interdisciplinary meta | Cross-domain bridges, prereg scaffolds, live ingest spines |
+
+**Full verbose record:** [Appendix XII — Domain-by-Domain Scientific Coverage](#appendix-xii--domain-by-domain-scientific-coverage-2026-07-15) (auto-generated from live benchmarks).
+
+Regenerate:
+
+```bash
+python scripts/build_readme_domain_chapters.py
+python scripts/merge_readme_domain_chapters.py
 ```
 
 ---
@@ -786,6 +821,2105 @@ python scripts/reproduce_domain_panel.py --panel Star_Trek_Transporter_Live_Pane
 ```
 
 <!-- README_THESIS_EXPANSION_END -->
+
+<!-- README_DOMAIN_CHAPTERS_START -->
+## Appendix XII — Domain-by-Domain Scientific Coverage (2026-07-16)
+
+Verbose verification record for every core domain and extension panel. Regenerate after verification bundle refresh:
+
+```bash
+python scripts/build_readme_domain_chapters.py
+python scripts/merge_readme_domain_chapters.py
+```
+
+Chapter index: [`data/publication/readme_domain_chapters/INDEX.md`](data/publication/readme_domain_chapters/INDEX.md)
+
+The core spine routes FSOT through 35 preregistered NeuroLab domains. Each domain selects a Lean ledger route (`lean_domain`), verification labs, and measured record cohort. All core domains pass the ≤0.5% green gate.
+
+### Acoustics
+
+**Lean route:** `material` — condensed-matter and materials properties.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 485 |
+| Pooled median error | 0.032277% |
+| Coverage tier | A_strong |
+| Subfields touched | 2 / 7 studied |
+
+**Verification labs:** `smiles_lab`
+
+**Scientific coverage:** SMILES relay; thin on sonar, architectural acoustics
+
+**FSOT readout:** The same seed engine evaluates acoustics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `material` routing.
+
+### Astronomy
+
+**Lean route:** `astronomical` — stellar and galactic catalog readouts through astronomical ledger routes.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 193 |
+| Pooled median error | 0% |
+| Coverage tier | A_strong |
+| Subfields touched | 7 / 15 studied |
+
+**Verification labs:** `cosmology_lambda_cdm;cosmology_wave4;cosmology_extended_lab;cosmology_bubble_bleed_lab`
+
+**Scientific coverage:** Gaia/SIMBAD/MAST/WDS; thin on radio VLBI
+
+**FSOT readout:** The same seed engine evaluates astronomy observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `astronomical` routing.
+
+### Astrophysics
+
+**Lean route:** `astronomical` — stellar and galactic catalog readouts through astronomical ledger routes.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 305 |
+| Pooled median error | 0.000561056% |
+| Coverage tier | A_strong |
+| Subfields touched | 6 / 14 studied |
+
+**Verification labs:** `cosmology_wave4;cosmology_extended_lab;cosmology_higher_waves_lab;cosmology_bubble_bleed_lab`
+
+**Scientific coverage:** Stellar/galactic; thin on stellar evolution grids
+
+**FSOT readout:** The same seed engine evaluates astrophysics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `astronomical` routing.
+
+### Atmospheric_Physics
+
+**Lean route:** `energy` — thermodynamic, atmospheric, and energy-sector observables.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 17414 |
+| Pooled median error | 0% |
+| Coverage tier | A_strong |
+| Subfields touched | 4 / 10 studied |
+
+**Verification labs:** `weather_lab;atmospheric_physics_gap_fill_lab`
+
+**Scientific coverage:** Weather/climate; thin on aerosol microphysics
+
+**FSOT readout:** The same seed engine evaluates atmospheric_physics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `energy` routing.
+
+### Atomic_Physics
+
+**Lean route:** `particle` — particle and atomic observables via high-energy scalar channels.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 116 |
+| Pooled median error | 0.000950413% |
+| Coverage tier | A_strong |
+| Subfields touched | 3 / 8 studied |
+
+**Verification labs:** `smiles_lab;nist_atomic_lab`
+
+**Scientific coverage:** CODATA + periodic table; thin on Rydberg molecules, laser cooling
+
+**FSOT readout:** The same seed engine evaluates atomic_physics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `particle` routing.
+
+### Biochemistry
+
+**Lean route:** `medical` — biochemical and medical SMILES-anchored properties.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 166 |
+| Pooled median error | 0.0192011% |
+| Coverage tier | A_strong |
+| Subfields touched | 5 / 12 studied |
+
+**Verification labs:** `smiles_lab;neurolab_bio`
+
+**Scientific coverage:** PDB/ChEMBL/ClinicalTrials; thin on metabolomics
+
+**FSOT readout:** The same seed engine evaluates biochemistry observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `medical` routing.
+
+### Biology
+
+**Lean route:** `biological` — life-system emergence — positive raw_S at canonical biological folds.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 67 |
+| Pooled median error | 0% |
+| Coverage tier | B_verified |
+| Subfields touched | 10 / 20 studied |
+
+**Verification labs:** `evolution_lab;cellular_lab;neurolab_bio`
+
+**Scientific coverage:** UniProt/GBIF/NCBI + developmental/structural/genomics depth panel
+
+**FSOT readout:** The same seed engine evaluates biology observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `biological` routing.
+
+### Chemistry
+
+**Lean route:** `electron` — electromagnetic and chemical electron-shell observables.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 99 |
+| Pooled median error | 0.005707% |
+| Coverage tier | B_verified |
+| Subfields touched | 6 / 15 studied |
+
+**Verification labs:** `smiles_lab`
+
+**Scientific coverage:** PubChem/CRC; thin on organometallic, solid-state synth
+
+**FSOT readout:** The same seed engine evaluates chemistry observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `electron` routing.
+
+### Condensed_Matter
+
+**Lean route:** `material` — condensed-matter and materials properties.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 1169 |
+| Pooled median error | 0.0306032% |
+| Coverage tier | A_strong |
+| Subfields touched | 5 / 14 studied |
+
+**Verification labs:** `smiles_lab;species_catalog`
+
+**Scientific coverage:** Superconductivity Tc depth — literature + breakthrough + quantum materials
+
+**FSOT readout:** The same seed engine evaluates condensed_matter observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `material` routing.
+
+### Cosmology
+
+**Lean route:** `cosmological` — negative dispersal regime — structure bleeds at cosmic scales unless bubble-bleed dual anchors apply.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 347 |
+| Pooled median error | 0.00073542% |
+| Coverage tier | A_strong |
+| Subfields touched | 7 / 12 studied |
+
+**Verification labs:** `cosmology_lambda_cdm;cosmology_extended_lab;cosmology_higher_waves_lab;cosmology_bubble_bleed_lab`
+
+**Scientific coverage:** CMB/bubble-bleed/H0; thin on BAO full survey ingest
+
+**FSOT readout:** The same seed engine evaluates cosmology observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `cosmological` routing.
+
+### Ecology
+
+**Lean route:** `biological` — life-system emergence — positive raw_S at canonical biological folds.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 654 |
+| Pooled median error | 0.017789% |
+| Coverage tier | A_strong |
+| Subfields touched | 5 / 12 studied |
+
+**Verification labs:** `gbif_ecology_lab;evolution_lab`
+
+**Scientific coverage:** GBIF/iNaturalist; thin on food-web, population dynamics
+
+**FSOT readout:** The same seed engine evaluates ecology observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `biological` routing.
+
+### Economics
+
+**Lean route:** `consciousness` — observer-coupled consciousness routes with quirk_mod active.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 167 |
+| Pooled median error | 0.129201% |
+| Coverage tier | A_strong |
+| Subfields touched | 4 / 10 studied |
+
+**Verification labs:** `world_bank_economics_lab;linguistics_lab`
+
+**Scientific coverage:** World Bank/Crossref; thin on macro VAR, trade gravity
+
+**FSOT readout:** The same seed engine evaluates economics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `consciousness` routing.
+
+### Electromagnetism
+
+**Lean route:** `electron` — electromagnetic and chemical electron-shell observables.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 271912 |
+| Pooled median error | 0% |
+| Coverage tier | A_strong |
+| Subfields touched | 4 / 9 studied |
+
+**Verification labs:** `smiles_lab;geomagnetism_lab;space_weather_lab`
+
+**Scientific coverage:** GOES x-ray, geomagnetism; thin on antenna theory, plasmonics
+
+**FSOT readout:** The same seed engine evaluates electromagnetism observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `electron` routing.
+
+### Fluid_Dynamics
+
+**Lean route:** `energy` — thermodynamic, atmospheric, and energy-sector observables.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 56 |
+| Pooled median error | 0% |
+| Coverage tier | B_verified |
+| Subfields touched | 4 / 10 studied |
+
+**Verification labs:** `fluid_dynamics_lab;trinary_fluid_computer`
+
+**Scientific coverage:** Fluid spacetime + HVAC; thin on turbulence DNS
+
+**FSOT readout:** The same seed engine evaluates fluid_dynamics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `energy` routing.
+
+### Geophysics
+
+**Lean route:** `energy` — thermodynamic, atmospheric, and energy-sector observables.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 547 |
+| Pooled median error | 0% |
+| Coverage tier | A_strong |
+| Subfields touched | 5 / 11 studied |
+
+**Verification labs:** `weather_lab;tectonics_lab;geomagnetism_lab`
+
+**Scientific coverage:** USGS/seismology/grace; thin on magnetotellurics
+
+**FSOT readout:** The same seed engine evaluates geophysics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `energy` routing.
+
+### High_Energy_Physics
+
+**Lean route:** `higgs` — electroweak and Higgs-sector cached observables.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 151 |
+| Pooled median error | 0.00355717% |
+| Coverage tier | A_strong |
+| Subfields touched | 5 / 9 studied |
+
+**Verification labs:** `higgs_branching_lab;higgs_mass_lab;cosmology_higher_waves_lab`
+
+**Scientific coverage:** CERN/GWOSC/Higgs; thin on B-physics, jet substructure
+
+**FSOT readout:** The same seed engine evaluates high_energy_physics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `higgs` routing.
+
+### Materials_Science
+
+**Lean route:** `material` — condensed-matter and materials properties.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 1169 |
+| Pooled median error | 0.0306032% |
+| Coverage tier | A_strong |
+| Subfields touched | 9 / 14 studied |
+
+**Verification labs:** `smiles_lab;species_catalog`
+
+**Scientific coverage:** Materials Project + creep/fracture/mechanical depth panel
+
+**FSOT readout:** The same seed engine evaluates materials_science observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `material` routing.
+
+### Meteorology
+
+**Lean route:** `energy` — thermodynamic, atmospheric, and energy-sector observables.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 17414 |
+| Pooled median error | 0% |
+| Coverage tier | A_strong |
+| Subfields touched | 5 / 10 studied |
+
+**Verification labs:** `weather_lab;meteorology_gap_fill_lab`
+
+**Scientific coverage:** Open-Meteo/NDBC; thin on NWP ensemble verification
+
+**FSOT readout:** The same seed engine evaluates meteorology observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `energy` routing.
+
+### Molecular_Chemistry
+
+**Lean route:** `chemical` — molecular chemistry and bonding readouts.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 608 |
+| Pooled median error | 0.0283895% |
+| Coverage tier | A_strong |
+| Subfields touched | 4 / 8 studied |
+
+**Verification labs:** `smiles_lab`
+
+**Scientific coverage:** SMILES/PDB; thin on conformer ensembles
+
+**FSOT readout:** The same seed engine evaluates molecular_chemistry observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `chemical` routing.
+
+### Neuroscience
+
+**Lean route:** `neural` — neuroscience and brain-component metabolic proxies.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 41 |
+| Pooled median error | 0.0133828% |
+| Coverage tier | B_verified |
+| Subfields touched | 7 / 15 studied |
+
+**Verification labs:** `smiles_lab;neuron_cohort_lab`
+
+**Scientific coverage:** Connectomics depth panel — neuron cohort strata + catalog coverage + OpenNeuro
+
+**FSOT readout:** The same seed engine evaluates neuroscience observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `neural` routing.
+
+### Nuclear_Physics
+
+**Lean route:** `nuclear` — nuclear structure and BBN-proxy channels.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 79 |
+| Pooled median error | 0.00735713% |
+| Coverage tier | B_verified |
+| Subfields touched | 4 / 10 studied |
+
+**Verification labs:** `smiles_lab;blackhole_thesis`
+
+**Scientific coverage:** OSTI/HEP; thin on cross-section databases
+
+**FSOT readout:** The same seed engine evaluates nuclear_physics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `nuclear` routing.
+
+### Oceanography
+
+**Lean route:** `energy` — thermodynamic, atmospheric, and energy-sector observables.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 112 |
+| Pooled median error | 0% |
+| Coverage tier | A_strong |
+| Subfields touched | 5 / 11 studied |
+
+**Verification labs:** `noaa_oceanography_lab;weather_lab`
+
+**Scientific coverage:** NOAA tides/NDBC; thin on ARGO float profiles
+
+**FSOT readout:** The same seed engine evaluates oceanography observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `energy` routing.
+
+### Optics
+
+**Lean route:** `material` — condensed-matter and materials properties.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 485 |
+| Pooled median error | 0.032277% |
+| Coverage tier | A_strong |
+| Subfields touched | 4 / 9 studied |
+
+**Verification labs:** `smiles_lab`
+
+**Scientific coverage:** Interferometry depth — LIGO/JWST reference + MAST em wavelengths
+
+**FSOT readout:** The same seed engine evaluates optics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `material` routing.
+
+### Particle_Astrophysics
+
+**Lean route:** `cmb` — CMB and large-scale structure interval certificates.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 192 |
+| Pooled median error | 0.00464371% |
+| Coverage tier | A_strong |
+| Subfields touched | 5 / 10 studied |
+
+**Verification labs:** `cosmology_wave4;cosmology_extended_lab;cosmology_higher_waves_lab`
+
+**Scientific coverage:** GWOSC/UAP; thin on cosmic-ray spectrum
+
+**FSOT readout:** The same seed engine evaluates particle_astrophysics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `cmb` routing.
+
+### Particle_Physics
+
+**Lean route:** `particle` — particle and atomic observables via high-energy scalar channels.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 98 |
+| Pooled median error | 0.00232226% |
+| Coverage tier | B_verified |
+| Subfields touched | 4 / 12 studied |
+
+**Verification labs:** `particle_physics_lab`
+
+**Scientific coverage:** PDG/Higgs/CERN; thin on neutrino oscillation, lattice QCD
+
+**FSOT readout:** The same seed engine evaluates particle_physics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `particle` routing.
+
+### Physical_Chemistry
+
+**Lean route:** `chemical` — molecular chemistry and bonding readouts.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 608 |
+| Pooled median error | 0.0283895% |
+| Coverage tier | A_strong |
+| Subfields touched | 4 / 10 studied |
+
+**Verification labs:** `smiles_lab`
+
+**Scientific coverage:** PubChem thermochem; thin on kinetics, surface chem
+
+**FSOT readout:** The same seed engine evaluates physical_chemistry observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `chemical` routing.
+
+### Planetary_Science
+
+**Lean route:** `galactic` — cross-domain scalar evaluation at canonical seed parameters.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 50 |
+| Pooled median error | 0.0214774% |
+| Coverage tier | B_verified |
+| Subfields touched | 6 / 12 studied |
+
+**Verification labs:** `cosmology_wave4;cosmology_extended_lab`
+
+**Scientific coverage:** Exoplanet/JPL NEO/Horizons; thin on regolith, atm chemistry
+
+**FSOT readout:** The same seed engine evaluates planetary_science observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `galactic` routing.
+
+### Psychology
+
+**Lean route:** `consciousness` — observer-coupled consciousness routes with quirk_mod active.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 170 |
+| Pooled median error | 0.0315062% |
+| Coverage tier | A_strong |
+| Subfields touched | 7 / 12 studied |
+
+**Verification labs:** `openalex_psychology_lab;linguistics_lab`
+
+**Scientific coverage:** OpenAlex/citations + psychometrics/RCT/cognition depth panel
+
+**FSOT readout:** The same seed engine evaluates psychology observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `consciousness` routing.
+
+### Quantum_Computing
+
+**Lean route:** `ai` — computational and AI-oracle invariant panels.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 180 |
+| Pooled median error | 0.000295346% |
+| Coverage tier | A_strong |
+| Subfields touched | 6 / 8 studied |
+
+**Verification labs:** `quantum_computing_lab;trinary_os`
+
+**Scientific coverage:** Math-first QC depth — gate fidelity, error correction, formal rules; physical QC verifies
+
+**FSOT readout:** The same seed engine evaluates quantum_computing observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `ai` routing.
+
+### Quantum_Gravity
+
+**Lean route:** `blackhole` — cross-domain scalar evaluation at canonical seed parameters.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 141 |
+| Pooled median error | 0% |
+| Coverage tier | A_strong |
+| Subfields touched | 2 / 6 studied |
+
+**Verification labs:** `blackhole_thesis;cosmology_bubble_bleed_lab`
+
+**Scientific coverage:** Scaffold/crosswalk; thin on LQG observables
+
+**FSOT readout:** The same seed engine evaluates quantum_gravity observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `blackhole` routing.
+
+### Quantum_Mechanics
+
+**Lean route:** `quantum` — quantum mechanics and entanglement-channel readouts.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 74 |
+| Pooled median error | 0.000950413% |
+| Coverage tier | B_verified |
+| Subfields touched | 7 / 10 studied |
+
+**Verification labs:** `smiles_lab;nist_quantum_lab`
+
+**Scientific coverage:** NIST constants + entanglement/decoherence/measurement depth panel
+
+**FSOT readout:** The same seed engine evaluates quantum_mechanics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `quantum` routing.
+
+### Quantum_Optics
+
+**Lean route:** `quantum` — quantum mechanics and entanglement-channel readouts.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 74 |
+| Pooled median error | 0.000950413% |
+| Coverage tier | B_verified |
+| Subfields touched | 2 / 7 studied |
+
+**Verification labs:** `smiles_lab;nist_quantum_lab`
+
+**Scientific coverage:** Cross-domain; thin on squeezed light, cavity QED
+
+**FSOT readout:** The same seed engine evaluates quantum_optics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `quantum` routing.
+
+### Seismology
+
+**Lean route:** `energy` — thermodynamic, atmospheric, and energy-sector observables.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 1000 |
+| Pooled median error | 0% |
+| Coverage tier | A_strong |
+| Subfields touched | 5 / 8 studied |
+
+**Verification labs:** `seismology_lab;tectonics_lab`
+
+**Scientific coverage:** USGS deep catalog; thin on full moment-tensor relay
+
+**FSOT readout:** The same seed engine evaluates seismology observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `energy` routing.
+
+### Sociology
+
+**Lean route:** `consciousness` — observer-coupled consciousness routes with quirk_mod active.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 410 |
+| Pooled median error | 0.0195044% |
+| Coverage tier | A_strong |
+| Subfields touched | 3 / 10 studied |
+
+**Verification labs:** `openalex_sociology_lab;world_bank_sociology_lab;linguistics_lab`
+
+**Scientific coverage:** UAP years/registry; thin on survey panels, networks
+
+**FSOT readout:** The same seed engine evaluates sociology observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `consciousness` routing.
+
+### Thermodynamics
+
+**Lean route:** `energy` — thermodynamic, atmospheric, and energy-sector observables.
+
+| Metric | Value |
+|--------|------:|
+| Empirical records | 89 |
+| Pooled median error | 0.022147% |
+| Coverage tier | B_verified |
+| Subfields touched | 4 / 8 studied |
+
+**Verification labs:** `fuel_lab`
+
+**Scientific coverage:** Fuel/NIST; thin on non-equilibrium, phase diagrams
+
+**FSOT readout:** The same seed engine evaluates thermodynamics observables without per-record fitting. Measured values are drawn from public domain data (NIST, Planck-class surveys, SMILES/NCBI catalogs, NOAA/USGS archives as applicable) and compared to seed-derived predictions through `energy` routing.
+
+**Panels:** 32 · **Records:** 273,858 · **Mean panel median error:** 0.0152897%
+
+#### AI Galactic Orbital Bridge
+
+Extension panel **`AI_Galactic_Orbital_Bridge`** (verification tier 48) evaluates **48** measured records at **0.00516856%** pooled median error (B_verified). Formal module: `FSOT.Formal.AIGalacticOrbitalBridgePriors`. This panel extends the core spine into ai galactic orbital bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Arxiv Gravitational Waves Panel
+
+Extension panel **`Arxiv_Gravitational_Waves_Panel`** (verification tier 84) evaluates **60** measured records at **0.01748%** pooled median error (B_verified). Formal module: `FSOT.Formal.ArxivGravitationalWavesPanelPriors`. This panel extends the core spine into arxiv gravitational waves panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Astrophysical Structure Crosswalk
+
+Extension panel **`Astrophysical_Structure_Crosswalk`** (verification tier 52) evaluates **32** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.AstrophysicalStructureCrosswalkPriors`. This panel extends the core spine into astrophysical structure crosswalk observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### CERN Open Data LHC
+
+Extension panel **`CERN_Open_Data_LHC`** (verification tier 38) evaluates **83** measured records at **0.013294%** pooled median error (B_verified). Formal module: `FSOT.Formal.CernOpenDataLhcPriors`. This panel extends the core spine into cern open data lhc observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Compact Object Binary Events
+
+Extension panel **`Compact_Object_Binary_Events`** (verification tier 53) evaluates **40** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.CompactObjectBinaryEventsPriors`. This panel extends the core spine into compact object binary events observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Consciousness Galactic Orbital Bridge
+
+Extension panel **`Consciousness_Galactic_Orbital_Bridge`** (verification tier 47) evaluates **48** measured records at **0.0367572%** pooled median error (B_verified). Formal module: `FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors`. This panel extends the core spine into consciousness galactic orbital bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Cosmology Anomalies
+
+Extension panel **`Cosmology_Anomalies`** (verification tier 25) evaluates **23** measured records at **0.024602%** pooled median error (B_verified). Formal module: `FSOT.Formal.CosmologyAnomaliesPriors`. This panel extends the core spine into cosmology anomalies observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Cosmology Anomaly Deep Panel
+
+Extension panel **`Cosmology_Anomaly_Deep_Panel`** (verification tier 76) evaluates **24** measured records at **0.029733%** pooled median error (B_verified). Formal module: `FSOT.Formal.CosmologyAnomalyDeepPanelPriors`. This panel extends the core spine into cosmology anomaly deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Cosmology Bubble Bleed
+
+Extension panel **`Cosmology_Bubble_Bleed`** (verification tier 24) evaluates **113** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.BubbleBleedPriors`. This panel extends the core spine into cosmology bubble bleed observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Cosmology Extended
+
+Extension panel **`Cosmology_Extended`** (verification tier 16) evaluates **58** measured records at **0.0219548%** pooled median error (B_verified). Formal module: `FSOT.Formal.CosmologyExtendedPriors`. This panel extends the core spine into cosmology extended observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Dark Energy CPL
+
+Extension panel **`Dark_Energy_CPL`** (verification tier 51) evaluates **24** measured records at **0.029733%** pooled median error (B_verified). Formal module: `FSOT.Formal.DarkEnergyCPLPriors`. This panel extends the core spine into dark energy cpl observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Dark Sector Open Problems
+
+Extension panel **`Dark_Sector_Open_Problems`** (verification tier 51) evaluates **24** measured records at **0.0152903%** pooled median error (B_verified). Formal module: `FSOT.Formal.DarkSectorOpenProblemsPriors`. This panel extends the core spine into dark sector open problems observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Galactic Structure Sample
+
+Extension panel **`Galactic_Structure_Sample`** (verification tier 53) evaluates **101** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.GalacticStructureSamplePriors`. This panel extends the core spine into galactic structure sample observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Higgs Mass
+
+Extension panel **`Higgs_Mass`** (verification tier 17) evaluates **24** measured records at **0.0121128%** pooled median error (B_verified). Formal module: `FSOT.Formal.HiggsMassPriors`. This panel extends the core spine into higgs mass observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Hubble Bubble Tension
+
+Extension panel **`Hubble_Bubble_Tension`** (verification tier 51) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.HubbleBubbleTensionPriors`. This panel extends the core spine into hubble bubble tension observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Hubble Dark Sector Crosswalk
+
+Extension panel **`Hubble_Dark_Sector_Crosswalk`** (verification tier 76) evaluates **24** measured records at **0.0198985%** pooled median error (B_verified). Formal module: `FSOT.Formal.HubbleDarkSectorCrosswalkPriors`. This panel extends the core spine into hubble dark sector crosswalk observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Medical Galactic Orbital Bridge
+
+Extension panel **`Medical_Galactic_Orbital_Bridge`** (verification tier 48) evaluates **48** measured records at **0.0107177%** pooled median error (B_verified). Formal module: `FSOT.Formal.MedicalGalacticOrbitalBridgePriors`. This panel extends the core spine into medical galactic orbital bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### NIST CODATA Constants
+
+Extension panel **`NIST_CODATA_Constants`** (verification tier 38) evaluates **21** measured records at **9.5e-05%** pooled median error (B_verified). Formal module: `FSOT.Formal.NistCodataConstantsPriors`. This panel extends the core spine into nist codata constants observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### NIST DLMF Special Functions
+
+Extension panel **`NIST_DLMF_Special_Functions`** (verification tier 78) evaluates **21** measured records at **0.020055%** pooled median error (B_verified). Formal module: `FSOT.Formal.NistDlmfSpecialFunctionsPriors`. This panel extends the core spine into nist dlmf special functions observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Neural Galactic Orbital Bridge
+
+Extension panel **`Neural_Galactic_Orbital_Bridge`** (verification tier 48) evaluates **49** measured records at **0.0180027%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeuralGalacticOrbitalBridgePriors`. This panel extends the core spine into neural galactic orbital bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Neutrino Physics Panel
+
+Extension panel **`Neutrino_Physics_Panel`** (verification tier 82) evaluates **20** measured records at **0.009504%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeutrinoPhysicsPriors`. This panel extends the core spine into neutrino physics panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### PDG Particle Properties
+
+Extension panel **`PDG_Particle_Properties`** (verification tier 78) evaluates **21** measured records at **9.5e-05%** pooled median error (B_verified). Formal module: `FSOT.Formal.PdgParticlePropertiesPriors`. This panel extends the core spine into pdg particle properties observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Particle Neural Orbital Bridge
+
+Extension panel **`Particle_Neural_Orbital_Bridge`** (verification tier 47) evaluates **48** measured records at **0.0332645%** pooled median error (B_verified). Formal module: `FSOT.Formal.ParticleNeuralOrbitalBridgePriors`. This panel extends the core spine into particle neural orbital bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Particle Physics
+
+Extension panel **`Particle_Physics`** (verification tier 16) evaluates **98** measured records at **0.0144152%** pooled median error (B_verified). Formal module: `FSOT.Formal.ParticlePhysicsPriors`. This panel extends the core spine into particle physics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Plasma Physics
+
+Extension panel **`Plasma_Physics`** (verification tier 12) evaluates **271833** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.PlasmaPhysicsPriors`. This panel extends the core spine into plasma physics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Quantum Computing Math Depth Panel
+
+Extension panel **`Quantum_Computing_Math_Depth_Panel`** (verification tier 87) evaluates **77** measured records at **0.014767%** pooled median error (B_verified). Formal module: `FSOT.Formal.QuantumComputingMathDepthPanelPriors`. This panel extends the core spine into quantum computing math depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Quantum Information
+
+Extension panel **`Quantum_Information`** (verification tier 66) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.QuantumInformationPriors`. This panel extends the core spine into quantum information observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Quantum Materials
+
+Extension panel **`Quantum_Materials`** (verification tier 27) evaluates **168** measured records at **0.0243181%** pooled median error (A_strong). Formal module: `FSOT.Formal.QuantumMaterialsPriors`. This panel extends the core spine into quantum materials observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Quantum Mechanics Entanglement Depth Panel
+
+Extension panel **`Quantum_Mechanics_Entanglement_Depth_Panel`** (verification tier 87) evaluates **23** measured records at **0.095551%** pooled median error (B_verified). Formal module: `FSOT.Formal.QuantumMechanicsEntanglementDepthPanelPriors`. This panel extends the core spine into quantum mechanics entanglement depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### SIMBAD Stellar Identity Deep
+
+Extension panel **`SIMBAD_Stellar_Identity_Deep`** (verification tier 60) evaluates **520** measured records at **0.022461%** pooled median error (A_strong). Formal module: `FSOT.Formal.SIMBADStellarIdentityDeepPriors`. This panel extends the core spine into simbad stellar identity deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Stellar Multiplicity Catalog
+
+Extension panel **`Stellar_Multiplicity_Catalog`** (verification tier 53) evaluates **68** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.StellarMultiplicityCatalogPriors`. This panel extends the core spine into stellar multiplicity catalog observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Stellar Multiplicity Live Deep
+
+Extension panel **`Stellar_Multiplicity_Live_Deep`** (verification tier 58) evaluates **69** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.StellarMultiplicityLiveDeepPriors`. This panel extends the core spine into stellar multiplicity live deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Panels:** 31 · **Records:** 405,080 · **Mean panel median error:** 0.0108951%
+
+#### Cryosphere
+
+Extension panel **`Cryosphere`** (verification tier 20) evaluates **2399** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.CryospherePriors`. This panel extends the core spine into cryosphere observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Domain Orbital Predictions
+
+Extension panel **`Domain_Orbital_Predictions`** (verification tier 48) evaluates **24** measured records at **0.0152903%** pooled median error (B_verified). Formal module: `FSOT.Formal.DomainOrbitalPredictionsPriors`. This panel extends the core spine into domain orbital predictions observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Energy AI Orbital Bridge
+
+Extension panel **`Energy_AI_Orbital_Bridge`** (verification tier 47) evaluates **48** measured records at **0.0275441%** pooled median error (B_verified). Formal module: `FSOT.Formal.EnergyAIOrbitalBridgePriors`. This panel extends the core spine into energy ai orbital bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Energy Neural Orbital Bridge
+
+Extension panel **`Energy_Neural_Orbital_Bridge`** (verification tier 47) evaluates **48** measured records at **0.0180027%** pooled median error (B_verified). Formal module: `FSOT.Formal.EnergyNeuralOrbitalBridgePriors`. This panel extends the core spine into energy neural orbital bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Exogeology
+
+Extension panel **`Exogeology`** (verification tier 41) evaluates **316** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ExogeologyExtensionPriors`. This panel extends the core spine into exogeology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Exogeology Panel
+
+Extension panel **`Exogeology_Panel`** (verification tier 85) evaluates **100** measured records at **0.026472%** pooled median error (A_strong). Formal module: `FSOT.Formal.ExogeologyPanelPriors`. This panel extends the core spine into exogeology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Exoplanet System Architecture
+
+Extension panel **`Exoplanet_System_Architecture`** (verification tier 54) evaluates **882** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ExoplanetSystemArchitecturePriors`. This panel extends the core spine into exoplanet system architecture observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Geochemistry
+
+Extension panel **`Geochemistry`** (verification tier 26) evaluates **153** measured records at **0.00662523%** pooled median error (A_strong). Formal module: `FSOT.Formal.GeochemistryPriors`. This panel extends the core spine into geochemistry observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Geology Stratigraphy
+
+Extension panel **`Geology_Stratigraphy`** (verification tier 35) evaluates **1960** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.GeologyStratigraphyExtensionPriors`. This panel extends the core spine into geology stratigraphy observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Geomagnetism
+
+Extension panel **`Geomagnetism`** (verification tier 21) evaluates **524** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.GeomagnetismPriors`. This panel extends the core spine into geomagnetism observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Grace Cryosphere
+
+Extension panel **`Grace_Cryosphere`** (verification tier 23) evaluates **253** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.GraceCryospherePriors`. This panel extends the core spine into grace cryosphere observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Hydrology
+
+Extension panel **`Hydrology`** (verification tier 19) evaluates **960** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.HydrologyPriors`. This panel extends the core spine into hydrology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Magnetosphere
+
+Extension panel **`Magnetosphere`** (verification tier 22) evaluates **167** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.MagnetospherePriors`. This panel extends the core spine into magnetosphere observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Magnetosphere Extended
+
+Extension panel **`Magnetosphere_Extended`** (verification tier 25) evaluates **122315** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.MagnetosphereExtendedPriors`. This panel extends the core spine into magnetosphere extended observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### NASA Exoplanet Archive
+
+Extension panel **`NASA_Exoplanet_Archive`** (verification tier 38) evaluates **158** measured records at **0.023015%** pooled median error (A_strong). Formal module: `FSOT.Formal.NasaExoplanetArchivePriors`. This panel extends the core spine into nasa exoplanet archive observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### NOAA Coastal Tides
+
+Extension panel **`NOAA_Coastal_Tides`** (verification tier 38) evaluates **20** measured records at **0.030173%** pooled median error (B_verified). Formal module: `FSOT.Formal.NoaaCoastalTidesPriors`. This panel extends the core spine into noaa coastal tides observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### NOAA NDBC Buoy Panel
+
+Extension panel **`NOAA_NDBC_Buoy_Panel`** (verification tier 81) evaluates **596** measured records at **0.028287%** pooled median error (A_strong). Formal module: `FSOT.Formal.NoaaNdbcBuoyPriors`. This panel extends the core spine into noaa ndbc buoy panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Orbital Mechanics
+
+Extension panel **`Orbital_Mechanics`** (verification tier 21) evaluates **22** measured records at **0.020215%** pooled median error (B_verified). Formal module: `FSOT.Formal.OrbitalMechanicsPriors`. This panel extends the core spine into orbital mechanics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Paleoclimate
+
+Extension panel **`Paleoclimate`** (verification tier 41) evaluates **40** measured records at **0.0150159%** pooled median error (B_verified). Formal module: `FSOT.Formal.PaleoclimateExtensionPriors`. This panel extends the core spine into paleoclimate observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Paleoclimate Panel
+
+Extension panel **`Paleoclimate_Panel`** (verification tier 85) evaluates **20** measured records at **0.006006%** pooled median error (B_verified). Formal module: `FSOT.Formal.PaleoclimatePanelPriors`. This panel extends the core spine into paleoclimate panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Petrology Geochemistry Panel
+
+Extension panel **`Petrology_Geochemistry_Panel`** (verification tier 82) evaluates **80** measured records at **0.030428%** pooled median error (B_verified). Formal module: `FSOT.Formal.PetrologyGeochemistryPriors`. This panel extends the core spine into petrology geochemistry panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Planetary Atmospheres
+
+Extension panel **`Planetary_Atmospheres`** (verification tier 23) evaluates **21** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PlanetaryAtmospheresPriors`. This panel extends the core spine into planetary atmospheres observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Planetary Structure
+
+Extension panel **`Planetary_Structure`** (verification tier 21) evaluates **20** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PlanetaryStructurePriors`. This panel extends the core spine into planetary structure observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Radio Astronomy Panel
+
+Extension panel **`Radio_Astronomy_Panel`** (verification tier 82) evaluates **30** measured records at **0.022461%** pooled median error (B_verified). Formal module: `FSOT.Formal.RadioAstronomyPriors`. This panel extends the core spine into radio astronomy panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Seismology
+
+Extension panel **`Seismology`** (verification tier 21) evaluates **500** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.SeismologyPriors`. This panel extends the core spine into seismology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Seismology Deep
+
+Extension panel **`Seismology_Deep`** (verification tier 23) evaluates **1000** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.SeismologyDeepPriors`. This panel extends the core spine into seismology deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Small Body Orbits
+
+Extension panel **`Small_Body_Orbits`** (verification tier 22) evaluates **22** measured records at **0.020215%** pooled median error (B_verified). Formal module: `FSOT.Formal.SmallBodyOrbitsPriors`. This panel extends the core spine into small body orbits observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Space Weather
+
+Extension panel **`Space_Weather`** (verification tier 17) evaluates **271813** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.SpaceWeatherPriors`. This panel extends the core spine into space weather observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Speleology
+
+Extension panel **`Speleology`** (verification tier 41) evaluates **65** measured records at **0.00340721%** pooled median error (B_verified). Formal module: `FSOT.Formal.SpeleologyExtensionPriors`. This panel extends the core spine into speleology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Speleology Panel
+
+Extension panel **`Speleology_Panel`** (verification tier 85) evaluates **24** measured records at **0.04459%** pooled median error (B_verified). Formal module: `FSOT.Formal.SpeleologyPanelPriors`. This panel extends the core spine into speleology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Tectonics
+
+Extension panel **`Tectonics`** (verification tier 21) evaluates **500** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.TectonicsPriors`. This panel extends the core spine into tectonics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Panels:** 53 · **Records:** 8,592 · **Mean panel median error:** 0.0183421%
+
+#### Agriculture Agroecology
+
+Extension panel **`Agriculture_Agroecology`** (verification tier 34) evaluates **276** measured records at **0.018019%** pooled median error (A_strong). Formal module: `FSOT.Formal.AgricultureAgroecologyGapFillPriors`. This panel extends the core spine into agriculture agroecology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Biological CUDA Physarum
+
+Extension panel **`Biological_CUDA_Physarum`** (verification tier 34) evaluates **35** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.BiologicalCudaPhysarumPriors`. This panel extends the core spine into biological cuda physarum observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Biology Developmental Structural Depth Panel
+
+Extension panel **`Biology_Developmental_Structural_Depth_Panel`** (verification tier 87) evaluates **26** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.BiologyDevelopmentalStructuralDepthPanelPriors`. This panel extends the core spine into biology developmental structural depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Botany
+
+Extension panel **`Botany`** (verification tier 35) evaluates **426** measured records at **0.0222363%** pooled median error (A_strong). Formal module: `FSOT.Formal.BotanyExtensionPriors`. This panel extends the core spine into botany observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### CVE Codon Hole Falsification
+
+Extension panel **`CVE_Codon_Hole_Falsification`** (verification tier 45) evaluates **29** measured records at **0.00918664%** pooled median error (B_verified). Formal module: `FSOT.Formal.CVECodonHoleFalsificationPriors`. This panel extends the core spine into cve codon hole falsification observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Cardiology
+
+Extension panel **`Cardiology`** (verification tier 41) evaluates **45** measured records at **0.0306221%** pooled median error (B_verified). Formal module: `FSOT.Formal.CardiologyExtensionPriors`. This panel extends the core spine into cardiology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Cardiology Panel
+
+Extension panel **`Cardiology_Panel`** (verification tier 84) evaluates **20** measured records at **0.015311%** pooled median error (B_verified). Formal module: `FSOT.Formal.CardiologyPanelPriors`. This panel extends the core spine into cardiology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### ClinicalTrials Medical Panel
+
+Extension panel **`ClinicalTrials_Medical_Panel`** (verification tier 80) evaluates **394** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ClinicaltrialsMedicalPriors`. This panel extends the core spine into clinicaltrials medical panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Clinical Medicine
+
+Extension panel **`Clinical_Medicine`** (verification tier 35) evaluates **260** measured records at **0.0024583%** pooled median error (A_strong). Formal module: `FSOT.Formal.ClinicalMedicineExtensionPriors`. This panel extends the core spine into clinical medicine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Code Genome Structure
+
+Extension panel **`Code_Genome_Structure`** (verification tier 43) evaluates **205** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.CodeGenomeStructurePriors`. This panel extends the core spine into code genome structure observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Consciousness Genetics Coupling Panel
+
+Extension panel **`Consciousness_Genetics_Coupling_Panel`** (verification tier 93) evaluates **24** measured records at **0.031506%** pooled median error (B_verified). Formal module: `FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors`. This panel extends the core spine into consciousness genetics coupling panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Consciousness Genetics Species Panel
+
+Extension panel **`Consciousness_Genetics_Species_Panel`** (verification tier 93) evaluates **27** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.ConsciousnessGeneticsSpeciesPanelPriors`. This panel extends the core spine into consciousness genetics species panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Consciousness Species Multi Panel
+
+Extension panel **`Consciousness_Species_Multi_Panel`** (verification tier 90) evaluates **269** measured records at **0.0201195%** pooled median error (A_strong). Formal module: `FSOT.Formal.ConsciousnessSpeciesMultiPanelPriors`. This panel extends the core spine into consciousness species multi panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Culinary Arts
+
+Extension panel **`Culinary_Arts`** (verification tier 33) evaluates **26** measured records at **0.0476152%** pooled median error (B_verified). Formal module: `FSOT.Formal.CulinaryArtsPriors`. This panel extends the core spine into culinary arts observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Culinary Fermentation Maillard Panel
+
+Extension panel **`Culinary_Fermentation_Maillard_Panel`** (verification tier 86) evaluates **130** measured records at **0.040788%** pooled median error (A_strong). Formal module: `FSOT.Formal.CulinaryFermentationMaillardPanelPriors`. This panel extends the core spine into culinary fermentation maillard panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Ecology
+
+Extension panel **`Ecology`** (verification tier 66) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.EcologyPublicPanelPriors`. This panel extends the core spine into ecology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Entomology
+
+Extension panel **`Entomology`** (verification tier 41) evaluates **430** measured records at **0.0222363%** pooled median error (A_strong). Formal module: `FSOT.Formal.EntomologyExtensionPriors`. This panel extends the core spine into entomology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Entomology Panel
+
+Extension panel **`Entomology_Panel`** (verification tier 84) evaluates **90** measured records at **0.006006%** pooled median error (B_verified). Formal module: `FSOT.Formal.EntomologyPanelPriors`. This panel extends the core spine into entomology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Epidemiology
+
+Extension panel **`Epidemiology`** (verification tier 41) evaluates **20** measured records at **0.0306221%** pooled median error (B_verified). Formal module: `FSOT.Formal.EpidemiologyExtensionPriors`. This panel extends the core spine into epidemiology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Epidemiology Panel
+
+Extension panel **`Epidemiology_Panel`** (verification tier 84) evaluates **24** measured records at **0.015311%** pooled median error (B_verified). Formal module: `FSOT.Formal.EpidemiologyPanelPriors`. This panel extends the core spine into epidemiology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### External OSS Code Genome
+
+Extension panel **`External_OSS_Code_Genome`** (verification tier 44) evaluates **164** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ExternalOSSCodeGenomePriors`. This panel extends the core spine into external oss code genome observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Food Microbiology
+
+Extension panel **`Food_Microbiology`** (verification tier 34) evaluates **30** measured records at **0.0444725%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoodMicrobiologyGapFillPriors`. This panel extends the core spine into food microbiology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### GBIF Species Occurrence
+
+Extension panel **`GBIF_Species_Occurrence`** (verification tier 38) evaluates **240** measured records at **0.006006%** pooled median error (A_strong). Formal module: `FSOT.Formal.GbifSpeciesOccurrencePriors`. This panel extends the core spine into gbif species occurrence observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Genomic Sciences
+
+Extension panel **`Genomic_Sciences`** (verification tier 66) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.GenomicSciencesPriors`. This panel extends the core spine into genomic sciences observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### IGEM Synthetic Biology
+
+Extension panel **`IGEM_Synthetic_Biology`** (verification tier 31) evaluates **54** measured records at **0.0222363%** pooled median error (B_verified). Formal module: `FSOT.Formal.IGEMSyntheticBiologyPriors`. This panel extends the core spine into igem synthetic biology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Immunology
+
+Extension panel **`Immunology`** (verification tier 12) evaluates **84** measured records at **0.061205%** pooled median error (B_verified). Formal module: `FSOT.Formal.ImmunologyPriors`. This panel extends the core spine into immunology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Immunology Panel
+
+Extension panel **`Immunology_Panel`** (verification tier 84) evaluates **24** measured records at **0.040788%** pooled median error (B_verified). Formal module: `FSOT.Formal.ImmunologyPanelPriors`. This panel extends the core spine into immunology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Longevity AnAge Catalog Panel
+
+Extension panel **`Longevity_AnAge_Catalog_Panel`** (verification tier 94) evaluates **966** measured records at **0.022236%** pooled median error (A_strong). Formal module: `FSOT.Formal.LongevityAnAgeCatalogPanelPriors`. This panel extends the core spine into longevity anage catalog panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Longevity Extreme Species Panel
+
+Extension panel **`Longevity_Extreme_Species_Panel`** (verification tier 94) evaluates **164** measured records at **0.017789%** pooled median error (A_strong). Formal module: `FSOT.Formal.LongevityExtremeSpeciesPanelPriors`. This panel extends the core spine into longevity extreme species panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Longevity Genetic Mechanics Panel
+
+Extension panel **`Longevity_Genetic_Mechanics_Panel`** (verification tier 94) evaluates **35** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.LongevityGeneticMechanicsPanelPriors`. This panel extends the core spine into longevity genetic mechanics panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Marine Biology
+
+Extension panel **`Marine_Biology`** (verification tier 41) evaluates **540** measured records at **0.0222363%** pooled median error (A_strong). Formal module: `FSOT.Formal.MarineBiologyExtensionPriors`. This panel extends the core spine into marine biology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Marine Biology Panel
+
+Extension panel **`Marine_Biology_Panel`** (verification tier 84) evaluates **90** measured records at **0.006006%** pooled median error (B_verified). Formal module: `FSOT.Formal.MarineBiologyPanelPriors`. This panel extends the core spine into marine biology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Materials Genome Crosswalk
+
+Extension panel **`Materials_Genome_Crosswalk`** (verification tier 55) evaluates **38** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialsGenomeCrosswalkPriors`. This panel extends the core spine into materials genome crosswalk observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Materials Species Bridge
+
+Extension panel **`Materials_Species_Bridge`** (verification tier 30) evaluates **45** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialsSpeciesBridgePriors`. This panel extends the core spine into materials species bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Materials Species Bridge Live Panel
+
+Extension panel **`Materials_Species_Bridge_Live_Panel`** (verification tier 86) evaluates **150** measured records at **0.01341%** pooled median error (A_strong). Formal module: `FSOT.Formal.MaterialsSpeciesBridgeLivePanelPriors`. This panel extends the core spine into materials species bridge live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Mycology
+
+Extension panel **`Mycology`** (verification tier 41) evaluates **420** measured records at **0.0222363%** pooled median error (A_strong). Formal module: `FSOT.Formal.MycologyExtensionPriors`. This panel extends the core spine into mycology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Mycology Panel
+
+Extension panel **`Mycology_Panel`** (verification tier 84) evaluates **90** measured records at **0.006006%** pooled median error (B_verified). Formal module: `FSOT.Formal.MycologyPanelPriors`. This panel extends the core spine into mycology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Neuroimmunology
+
+Extension panel **`Neuroimmunology`** (verification tier 26) evaluates **92** measured records at **0.0504196%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeuroimmunologyPriors`. This panel extends the core spine into neuroimmunology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Neuron Multi Hero
+
+Extension panel **`Neuron_Multi_Hero`** (verification tier 27) evaluates **24** measured records at **0.00225238%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeuronMultiHeroPriors`. This panel extends the core spine into neuron multi hero observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Observer Effect Cross Species Panel
+
+Extension panel **`Observer_Effect_Cross_Species_Panel`** (verification tier 90) evaluates **289** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ObserverEffectCrossSpeciesPanelPriors`. This panel extends the core spine into observer effect cross species panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Oncology
+
+Extension panel **`Oncology`** (verification tier 26) evaluates **67** measured records at **0.0504196%** pooled median error (B_verified). Formal module: `FSOT.Formal.OncologyPriors`. This panel extends the core spine into oncology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### OpenNeuro Full Panel
+
+Extension panel **`OpenNeuro_Full_Panel`** (verification tier 68) evaluates **123** measured records at **0.015431%** pooled median error (A_strong). Formal module: `FSOT.Formal.OpenNeuroFullPanelPriors`. This panel extends the core spine into openneuro full panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Paleontology
+
+Extension panel **`Paleontology`** (verification tier 41) evaluates **630** measured records at **0.0178361%** pooled median error (A_strong). Formal module: `FSOT.Formal.PaleontologyExtensionPriors`. This panel extends the core spine into paleontology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Paleontology Panel
+
+Extension panel **`Paleontology_Panel`** (verification tier 84) evaluates **120** measured records at **0.0167305%** pooled median error (A_strong). Formal module: `FSOT.Formal.PaleontologyPanelPriors`. This panel extends the core spine into paleontology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Pharmacology
+
+Extension panel **`Pharmacology`** (verification tier 20) evaluates **120** measured records at **0.00117154%** pooled median error (A_strong). Formal module: `FSOT.Formal.PharmacologyPriors`. This panel extends the core spine into pharmacology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Physarum Biological CUDA Panel
+
+Extension panel **`Physarum_Biological_CUDA_Panel`** (verification tier 88) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.PhysarumBiologicalCudaPanelPriors`. This panel extends the core spine into physarum biological cuda panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Proof Carrying Code Genome
+
+Extension panel **`Proof_Carrying_Code_Genome`** (verification tier 47) evaluates **25** measured records at **0.00516856%** pooled median error (B_verified). Formal module: `FSOT.Formal.ProofCarryingCodeGenomePriors`. This panel extends the core spine into proof carrying code genome observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Synthetic Biology
+
+Extension panel **`Synthetic_Biology`** (verification tier 27) evaluates **20** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.SyntheticBiologyPriors`. This panel extends the core spine into synthetic biology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### UniProt Protein Annotations
+
+Extension panel **`UniProt_Protein_Annotations`** (verification tier 38) evaluates **22** measured records at **0.026684%** pooled median error (B_verified). Formal module: `FSOT.Formal.UniprotProteinAnnotationsPriors`. This panel extends the core spine into uniprot protein annotations observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Virology
+
+Extension panel **`Virology`** (verification tier 41) evaluates **50** measured records at **0.0459332%** pooled median error (B_verified). Formal module: `FSOT.Formal.VirologyExtensionPriors`. This panel extends the core spine into virology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Virology Panel
+
+Extension panel **`Virology_Panel`** (verification tier 84) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.VirologyPanelPriors`. This panel extends the core spine into virology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Zebrafish Longevity Genetics Coupling Panel
+
+Extension panel **`Zebrafish_Longevity_Genetics_Coupling_Panel`** (verification tier 95) evaluates **24** measured records at **0.0144535%** pooled median error (B_verified). Formal module: `FSOT.Formal.ZebrafishLongevityGeneticsCouplingPanelPriors`. This panel extends the core spine into zebrafish longevity genetics coupling panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Zoology
+
+Extension panel **`Zoology`** (verification tier 35) evaluates **1000** measured records at **0.017789%** pooled median error (A_strong). Formal module: `FSOT.Formal.ZoologyExtensionPriors`. This panel extends the core spine into zoology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Panels:** 41 · **Records:** 8,231 · **Mean panel median error:** 0.00753307%
+
+#### Acoustic Resonance Materials
+
+Extension panel **`Acoustic_Resonance_Materials`** (verification tier 47) evaluates **29** measured records at **0.0083815%** pooled median error (B_verified). Formal module: `FSOT.Formal.AcousticResonanceMaterialsPriors`. This panel extends the core spine into acoustic resonance materials observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### CRC Handbook Properties
+
+Extension panel **`CRC_Handbook_Properties`** (verification tier 78) evaluates **391** measured records at **0.026922%** pooled median error (A_strong). Formal module: `FSOT.Formal.CrcHandbookPropertiesPriors`. This panel extends the core spine into crc handbook properties observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Chemical Engineering
+
+Extension panel **`Chemical_Engineering`** (verification tier 35) evaluates **186** measured records at **0.00103334%** pooled median error (A_strong). Formal module: `FSOT.Formal.ChemicalEngineeringExtensionPriors`. This panel extends the core spine into chemical engineering observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Chemical Structure Stability Panel
+
+Extension panel **`Chemical_Structure_Stability_Panel`** (verification tier 57) evaluates **32** measured records at **0.00206%** pooled median error (B_verified). Formal module: `FSOT.Formal.ChemicalStructureStabilityPanelPriors`. This panel extends the core spine into chemical structure stability panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Cold Fusion Candidate Prereg Scaffold
+
+Extension panel **`Cold_Fusion_Candidate_Prereg_Scaffold`** (verification tier 71) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors`. This panel extends the core spine into cold fusion candidate prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Cold Fusion Lab Synthesis Crosswalk
+
+Extension panel **`Cold_Fusion_Lab_Synthesis_Crosswalk`** (verification tier 73) evaluates **22** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.ColdFusionLabSynthesisCrosswalkPriors`. This panel extends the core spine into cold fusion lab synthesis crosswalk observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Condensed Matter Superconductivity Depth Panel
+
+Extension panel **`Condensed_Matter_Superconductivity_Depth_Panel`** (verification tier 87) evaluates **21** measured records at **0.033841%** pooled median error (B_verified). Formal module: `FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors`. This panel extends the core spine into condensed matter superconductivity depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Distant Island Emergence Simulation
+
+Extension panel **`Distant_Island_Emergence_Simulation`** (verification tier 75) evaluates **36** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.DistantIslandEmergenceSimulationPriors`. This panel extends the core spine into distant island emergence simulation observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Distant Island Z128 Z132 Deep Panel
+
+Extension panel **`Distant_Island_Z128_Z132_Deep_Panel`** (verification tier 75) evaluates **24** measured records at **1e-06%** pooled median error (B_verified). Formal module: `FSOT.Formal.DistantIslandZ128Z132DeepPanelPriors`. This panel extends the core spine into distant island z128 z132 deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Element Synthesis Condition Scaffold
+
+Extension panel **`Element_Synthesis_Condition_Scaffold`** (verification tier 73) evaluates **45** measured records at **0.000787%** pooled median error (B_verified). Formal module: `FSOT.Formal.ElementSynthesisConditionScaffoldPriors`. This panel extends the core spine into element synthesis condition scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fuel Candidate Prereg Scaffold
+
+Extension panel **`Fuel_Candidate_Prereg_Scaffold`** (verification tier 65) evaluates **33** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FuelCandidatePreregScaffoldPriors`. This panel extends the core spine into fuel candidate prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fuel Lab Live Panel
+
+Extension panel **`Fuel_Lab_Live_Panel`** (verification tier 88) evaluates **366** measured records at **0.039349%** pooled median error (A_strong). Formal module: `FSOT.Formal.FuelLabLivePanelPriors`. This panel extends the core spine into fuel lab live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fuel Thermochemistry Public Anchors
+
+Extension panel **`Fuel_Thermochemistry_Public_Anchors`** (verification tier 59) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FuelThermochemistryPublicAnchorsPriors`. This panel extends the core spine into fuel thermochemistry public anchors observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fusion Decay Chain Prereg Scaffold
+
+Extension panel **`Fusion_Decay_Chain_Prereg_Scaffold`** (verification tier 74) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FusionDecayChainPreregScaffoldPriors`. This panel extends the core spine into fusion decay chain prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fusion Lab Certificate Spine
+
+Extension panel **`Fusion_Lab_Certificate_Spine`** (verification tier 71) evaluates **50** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FusionLabCertificateSpinePriors`. This panel extends the core spine into fusion lab certificate spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fusion Physics Public Panel
+
+Extension panel **`Fusion_Physics_Public_Panel`** (verification tier 71) evaluates **24** measured records at **9.5e-05%** pooled median error (B_verified). Formal module: `FSOT.Formal.FusionPhysicsPublicPanelPriors`. This panel extends the core spine into fusion physics public panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Inertial Confinement Fusion Panel
+
+Extension panel **`Inertial_Confinement_Fusion_Panel`** (verification tier 71) evaluates **24** measured records at **7.9e-05%** pooled median error (B_verified). Formal module: `FSOT.Formal.InertialConfinementFusionPanelPriors`. This panel extends the core spine into inertial confinement fusion panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Ionospheric Chemistry Coupling
+
+Extension panel **`Ionospheric_Chemistry_Coupling`** (verification tier 47) evaluates **85** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.IonosphericChemistryCouplingPriors`. This panel extends the core spine into ionospheric chemistry coupling observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Island Of Stability Deep Panel
+
+Extension panel **`Island_Of_Stability_Deep_Panel`** (verification tier 74) evaluates **23** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.IslandOfStabilityDeepPanelPriors`. This panel extends the core spine into island of stability deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Lab Synthesis Metamaterial Spine
+
+Extension panel **`Lab_Synthesis_Metamaterial_Spine`** (verification tier 73) evaluates **43** measured records at **3.4e-05%** pooled median error (B_verified). Formal module: `FSOT.Formal.LabSynthesisMetamaterialSpinePriors`. This panel extends the core spine into lab synthesis metamaterial spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Machine And Molecule Live Panel
+
+Extension panel **`Machine_And_Molecule_Live_Panel`** (verification tier 88) evaluates **120** measured records at **0.01341%** pooled median error (A_strong). Formal module: `FSOT.Formal.MachineAndMoleculeLivePanelPriors`. This panel extends the core spine into machine and molecule live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Magnetic Confinement Fusion Panel
+
+Extension panel **`Magnetic_Confinement_Fusion_Panel`** (verification tier 71) evaluates **22** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.MagneticConfinementFusionPanelPriors`. This panel extends the core spine into magnetic confinement fusion panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Maillard Chemistry
+
+Extension panel **`Maillard_Chemistry`** (verification tier 34) evaluates **30** measured records at **0.0944369%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaillardChemistryGapFillPriors`. This panel extends the core spine into maillard chemistry observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Materials Creep Fracture Depth Panel
+
+Extension panel **`Materials_Creep_Fracture_Depth_Panel`** (verification tier 87) evaluates **71** measured records at **0.011734%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialsCreepFractureDepthPanelPriors`. This panel extends the core spine into materials creep fracture depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Materials Engineering
+
+Extension panel **`Materials_Engineering`** (verification tier 29) evaluates **87** measured records at **0.0271703%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialsEngineeringPriors`. This panel extends the core spine into materials engineering observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Materials Project Live Panel
+
+Extension panel **`Materials_Project_Live_Panel`** (verification tier 68) evaluates **141** measured records at **0.011734%** pooled median error (A_strong). Formal module: `FSOT.Formal.MaterialsProjectLivePanelPriors`. This panel extends the core spine into materials project live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Metamaterial Fluid Design Prereg Scaffold
+
+Extension panel **`Metamaterial_Fluid_Design_Prereg_Scaffold`** (verification tier 73) evaluates **25** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.MetamaterialFluidDesignPreregScaffoldPriors`. This panel extends the core spine into metamaterial fluid design prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Natural Formation Element Simulation
+
+Extension panel **`Natural_Formation_Element_Simulation`** (verification tier 72) evaluates **44** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.NaturalFormationElementSimulationPriors`. This panel extends the core spine into natural formation element simulation observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Periodic Extension Decay Topology Scaffold
+
+Extension panel **`Periodic_Extension_Decay_Topology_Scaffold`** (verification tier 75) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PeriodicExtensionDecayTopologyScaffoldPriors`. This panel extends the core spine into periodic extension decay topology scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Periodic Table Completion Spine
+
+Extension panel **`Periodic_Table_Completion_Spine`** (verification tier 72) evaluates **38** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PeriodicTableCompletionSpinePriors`. This panel extends the core spine into periodic table completion spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Periodic Table Extension Closure Spine
+
+Extension panel **`Periodic_Table_Extension_Closure_Spine`** (verification tier 75) evaluates **41** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PeriodicTableExtensionClosureSpinePriors`. This panel extends the core spine into periodic table extension closure spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Periodic Table Public Panel
+
+Extension panel **`Periodic_Table_Public_Panel`** (verification tier 72) evaluates **52** measured records at **9.5e-05%** pooled median error (B_verified). Formal module: `FSOT.Formal.PeriodicTablePublicPanelPriors`. This panel extends the core spine into periodic table public panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### PubChem Compound Properties
+
+Extension panel **`PubChem_Compound_Properties`** (verification tier 38) evaluates **500** measured records at **0.002637%** pooled median error (A_strong). Formal module: `FSOT.Formal.PubchemCompoundPropertiesPriors`. This panel extends the core spine into pubchem compound properties observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### PubChem Live Deep
+
+Extension panel **`PubChem_Live_Deep`** (verification tier 68) evaluates **5254** measured records at **0.032631%** pooled median error (A_strong). Formal module: `FSOT.Formal.PubChemLiveDeepPriors`. This panel extends the core spine into pubchem live deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### PubChem Stability Panel
+
+Extension panel **`PubChem_Stability_Panel`** (verification tier 55) evaluates **59** measured records at **0.00242389%** pooled median error (B_verified). Formal module: `FSOT.Formal.PubChemStabilityPanelPriors`. This panel extends the core spine into pubchem stability panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Published Fuel Property Panel
+
+Extension panel **`Published_Fuel_Property_Panel`** (verification tier 57) evaluates **31** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PublishedFuelPropertyPanelPriors`. This panel extends the core spine into published fuel property panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Superheavy Element Stability Panel
+
+Extension panel **`Superheavy_Element_Stability_Panel`** (verification tier 72) evaluates **50** measured records at **1e-06%** pooled median error (B_verified). Formal module: `FSOT.Formal.SuperheavyElementStabilityPanelPriors`. This panel extends the core spine into superheavy element stability panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Superheavy Island Completion Spine
+
+Extension panel **`Superheavy_Island_Completion_Spine`** (verification tier 74) evaluates **43** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.SuperheavyIslandCompletionSpinePriors`. This panel extends the core spine into superheavy island completion spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Superheavy Island Emergence Simulation
+
+Extension panel **`Superheavy_Island_Emergence_Simulation`** (verification tier 74) evaluates **44** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.SuperheavyIslandEmergenceSimulationPriors`. This panel extends the core spine into superheavy island emergence simulation observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Undiscovered Element Candidate Prereg Scaffold
+
+Extension panel **`Undiscovered_Element_Candidate_Prereg_Scaffold`** (verification tier 72) evaluates **25** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.UndiscoveredElementCandidatePreregScaffoldPriors`. This panel extends the core spine into undiscovered element candidate prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Z164 Distant Island Prereg Scaffold
+
+Extension panel **`Z164_Distant_Island_Prereg_Scaffold`** (verification tier 75) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.Z164DistantIslandPreregScaffoldPriors`. This panel extends the core spine into z164 distant island prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Panels:** 23 · **Records:** 2,155 · **Mean panel median error:** 0.0197452%
+
+#### Anthropology
+
+Extension panel **`Anthropology`** (verification tier 35) evaluates **160** measured records at **0.0195044%** pooled median error (A_strong). Formal module: `FSOT.Formal.AnthropologyExtensionPriors`. This panel extends the core spine into anthropology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Consciousness Econ
+
+Extension panel **`Consciousness_Econ`** (verification tier 51) evaluates **37** measured records at **0.008898%** pooled median error (B_verified). Formal module: `FSOT.Formal.ConsciousnessEconPriors`. This panel extends the core spine into consciousness econ observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Consciousness Expansion Spine
+
+Extension panel **`Consciousness_Expansion_Spine`** (verification tier 90) evaluates **24** measured records at **0.008488%** pooled median error (B_verified). Formal module: `FSOT.Formal.ConsciousnessExpansionSpinePriors`. This panel extends the core spine into consciousness expansion spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Consciousness Soul Bridge
+
+Extension panel **`Consciousness_Soul_Bridge`** (verification tier 51) evaluates **27** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.ConsciousnessSoulBridgePriors`. This panel extends the core spine into consciousness soul bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Finance Markets
+
+Extension panel **`Finance_Markets`** (verification tier 41) evaluates **150** measured records at **0.0258402%** pooled median error (A_strong). Formal module: `FSOT.Formal.FinanceMarketsExtensionPriors`. This panel extends the core spine into finance markets observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Finance Markets Panel
+
+Extension panel **`Finance_Markets_Panel`** (verification tier 85) evaluates **36** measured records at **0.02584%** pooled median error (B_verified). Formal module: `FSOT.Formal.FinanceMarketsPanelPriors`. This panel extends the core spine into finance markets panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### History
+
+Extension panel **`History`** (verification tier 41) evaluates **170** measured records at **0.0195044%** pooled median error (A_strong). Formal module: `FSOT.Formal.HistoryExtensionPriors`. This panel extends the core spine into history observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### History Panel
+
+Extension panel **`History_Panel`** (verification tier 85) evaluates **60** measured records at **0.01382%** pooled median error (B_verified). Formal module: `FSOT.Formal.HistoryPanelPriors`. This panel extends the core spine into history panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Initiation Transformation Archetype
+
+Extension panel **`Initiation_Transformation_Archetype`** (verification tier 67) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.InitiationTransformationArchetypePriors`. This panel extends the core spine into initiation transformation archetype observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Law Policy
+
+Extension panel **`Law_Policy`** (verification tier 41) evaluates **180** measured records at **0.0195044%** pooled median error (A_strong). Formal module: `FSOT.Formal.LawPolicyExtensionPriors`. This panel extends the core spine into law policy observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Law Policy Panel
+
+Extension panel **`Law_Policy_Panel`** (verification tier 85) evaluates **20** measured records at **0.013003%** pooled median error (B_verified). Formal module: `FSOT.Formal.LawPolicyPanelPriors`. This panel extends the core spine into law policy panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Linguistics Formal
+
+Extension panel **`Linguistics_Formal`** (verification tier 29) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.LinguisticsFormalPriors`. This panel extends the core spine into linguistics formal observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Longevity Consciousness Coupling Panel
+
+Extension panel **`Longevity_Consciousness_Coupling_Panel`** (verification tier 94) evaluates **890** measured records at **0.022424%** pooled median error (A_strong). Formal module: `FSOT.Formal.LongevityConsciousnessCouplingPanelPriors`. This panel extends the core spine into longevity consciousness coupling panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Microtubule Quantum Consciousness Panel
+
+Extension panel **`Microtubule_Quantum_Consciousness_Panel`** (verification tier 90) evaluates **63** measured records at **0.044671%** pooled median error (B_verified). Formal module: `FSOT.Formal.MicrotubuleQuantumConsciousnessPanelPriors`. This panel extends the core spine into microtubule quantum consciousness panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Neuroeconomics
+
+Extension panel **`Neuroeconomics`** (verification tier 41) evaluates **65** measured records at **0.105021%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeuroeconomicsExtensionPriors`. This panel extends the core spine into neuroeconomics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Neuroeconomics Panel
+
+Extension panel **`Neuroeconomics_Panel`** (verification tier 85) evaluates **20** measured records at **0.031506%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeuroeconomicsPanelPriors`. This panel extends the core spine into neuroeconomics panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Neurolab Gaps Math Spine
+
+Extension panel **`Neurolab_Gaps_Math_Spine`** (verification tier 64) evaluates **35** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeurolabGapsMathSpinePriors`. This panel extends the core spine into neurolab gaps math spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Neurolab Residual Math Spine
+
+Extension panel **`Neurolab_Residual_Math_Spine`** (verification tier 66) evaluates **28** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeurolabResidualMathSpinePriors`. This panel extends the core spine into neurolab residual math spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Neuroscience Connectomics Depth Panel
+
+Extension panel **`Neuroscience_Connectomics_Depth_Panel`** (verification tier 87) evaluates **27** measured records at **0.0201195%** pooled median error (B_verified). Formal module: `FSOT.Formal.NeuroscienceConnectomicsDepthPanelPriors`. This panel extends the core spine into neuroscience connectomics depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Omni Theory Genesis
+
+Extension panel **`Omni_Theory_Genesis`** (verification tier 35) evaluates **27** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.OmniTheoryGenesisPriors`. This panel extends the core spine into omni theory genesis observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Omni Theory Humanities Panel
+
+Extension panel **`Omni_Theory_Humanities_Panel`** (verification tier 88) evaluates **37** measured records at **0.0222545%** pooled median error (B_verified). Formal module: `FSOT.Formal.OmniTheoryHumanitiesPanelPriors`. This panel extends the core spine into omni theory humanities panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Psychology Psychometrics Depth Panel
+
+Extension panel **`Psychology_Psychometrics_Depth_Panel`** (verification tier 87) evaluates **23** measured records at **0.031506%** pooled median error (B_verified). Formal module: `FSOT.Formal.PsychologyPsychometricsDepthPanelPriors`. This panel extends the core spine into psychology psychometrics depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Symbolic Archetype Panel
+
+Extension panel **`Symbolic_Archetype_Panel`** (verification tier 51) evaluates **28** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.SymbolicArchetypePanelPriors`. This panel extends the core spine into symbolic archetype panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Panels:** 20 · **Records:** 2,056 · **Mean panel median error:** 0.0148513%
+
+#### Architecture Building Science
+
+Extension panel **`Architecture_Building_Science`** (verification tier 34) evaluates **43** measured records at **0.0786975%** pooled median error (B_verified). Formal module: `FSOT.Formal.ArchitectureBuildingScienceGapFillPriors`. This panel extends the core spine into architecture building science observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### BlackHole WhiteHole Cycle Live Panel
+
+Extension panel **`BlackHole_WhiteHole_Cycle_Live_Panel`** (verification tier 88) evaluates **24** measured records at **0.026472%** pooled median error (B_verified). Formal module: `FSOT.Formal.BlackHoleWhiteholeCycleLivePanelPriors`. This panel extends the core spine into blackhole whitehole cycle live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Breakthrough Discoveries 2024 2026
+
+Extension panel **`Breakthrough_Discoveries_2024_2026`** (verification tier 39) evaluates **21** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.BreakthroughDiscoveries20242026Priors`. This panel extends the core spine into breakthrough discoveries 2024 2026 observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Civil Engineering
+
+Extension panel **`Civil_Engineering`** (verification tier 41) evaluates **37** measured records at **0.033526%** pooled median error (B_verified). Formal module: `FSOT.Formal.CivilEngineeringExtensionPriors`. This panel extends the core spine into civil engineering observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Civil Engineering Panel
+
+Extension panel **`Civil_Engineering_Panel`** (verification tier 85) evaluates **20** measured records at **0.01341%** pooled median error (B_verified). Formal module: `FSOT.Formal.CivilEngineeringPanelPriors`. This panel extends the core spine into civil engineering panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Desktop Application Wiring Spine
+
+Extension panel **`Desktop_Application_Wiring_Spine`** (verification tier 88) evaluates **81** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.DesktopApplicationWiringSpinePriors`. This panel extends the core spine into desktop application wiring spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Electrical Power Systems
+
+Extension panel **`Electrical_Power_Systems`** (verification tier 39) evaluates **24** measured records at **0.015583%** pooled median error (B_verified). Formal module: `FSOT.Formal.ElectricalPowerSystemsPriors`. This panel extends the core spine into electrical power systems observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Mechanical Engineering
+
+Extension panel **`Mechanical_Engineering`** (verification tier 41) evaluates **50** measured records at **0.01731%** pooled median error (B_verified). Formal module: `FSOT.Formal.MechanicalEngineeringExtensionPriors`. This panel extends the core spine into mechanical engineering observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Mechanical Engineering Panel
+
+Extension panel **`Mechanical_Engineering_Panel`** (verification tier 85) evaluates **20** measured records at **0.039349%** pooled median error (B_verified). Formal module: `FSOT.Formal.MechanicalEngineeringPanelPriors`. This panel extends the core spine into mechanical engineering panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Robotics Control Systems
+
+Extension panel **`Robotics_Control_Systems`** (verification tier 41) evaluates **45** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.RoboticsControlSystemsExtensionPriors`. This panel extends the core spine into robotics control systems observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Robotics Control Systems Panel
+
+Extension panel **`Robotics_Control_Systems_Panel`** (verification tier 84) evaluates **20** measured records at **0.01341%** pooled median error (B_verified). Formal module: `FSOT.Formal.RoboticsControlSystemsPanelPriors`. This panel extends the core spine into robotics control systems panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Space Propulsion Systems
+
+Extension panel **`Space_Propulsion_Systems`** (verification tier 39) evaluates **21** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.SpacePropulsionSystemsPriors`. This panel extends the core spine into space propulsion systems observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Star Trek Transporter Live Panel
+
+Extension panel **`Star_Trek_Transporter_Live_Panel`** (verification tier 88) evaluates **1413** measured records at **0.031159%** pooled median error (A_strong). Formal module: `FSOT.Formal.StarTrekTransporterLivePanelPriors`. This panel extends the core spine into star trek transporter live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Trinary Hardware Live Panel
+
+Extension panel **`Trinary_Hardware_Live_Panel`** (verification tier 88) evaluates **37** measured records at **0.014767%** pooled median error (B_verified). Formal module: `FSOT.Formal.TrinaryHardwareLivePanelPriors`. This panel extends the core spine into trinary hardware live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Trinary Hardware Motif
+
+Extension panel **`Trinary_Hardware_Motif`** (verification tier 33) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.TrinaryHardwareMotifPriors`. This panel extends the core spine into trinary hardware motif observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Trinary OS ISA Rebuild
+
+Extension panel **`Trinary_OS_ISA_Rebuild`** (verification tier 31) evaluates **38** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.TrinaryOSISARebuildPriors`. This panel extends the core spine into trinary os isa rebuild observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Trinary OS Portable
+
+Extension panel **`Trinary_OS_Portable`** (verification tier 30) evaluates **24** measured records at **0.013342%** pooled median error (B_verified). Formal module: `FSOT.Formal.TrinaryOSPortablePriors`. This panel extends the core spine into trinary os portable observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Trinary OS Round Trip
+
+Extension panel **`Trinary_OS_Round_Trip`** (verification tier 32) evaluates **22** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.TrinaryOSRoundTripPriors`. This panel extends the core spine into trinary os round trip observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Trinary OS Tier E
+
+Extension panel **`Trinary_OS_Tier_E`** (verification tier 40) evaluates **68** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.TrinaryOSTierEPriors`. This panel extends the core spine into trinary os tier e observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Warp BH WH Portal Panel
+
+Extension panel **`Warp_BH_WH_Portal_Panel`** (verification tier 78) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.WarpBhWhPortalPriors`. This panel extends the core spine into warp bh wh portal panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Panels:** 28 · **Records:** 21,803 · **Mean panel median error:** 0.00854252%
+
+#### Adversarial Fractal Break Tests
+
+Extension panel **`Adversarial_Fractal_Break_Tests`** (verification tier 46) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.AdversarialFractalBreakPriors`. This panel extends the core spine into adversarial fractal break tests observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Alternate Base Mathematics Explorer Panel
+
+Extension panel **`Alternate_Base_Mathematics_Explorer_Panel`** (verification tier 92) evaluates **56** measured records at **0.009504%** pooled median error (B_verified). Formal module: `FSOT.Formal.AlternateBaseMathematicsExplorerPanelPriors`. This panel extends the core spine into alternate base mathematics explorer panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Alternate Base Mathematics Spine
+
+Extension panel **`Alternate_Base_Mathematics_Spine`** (verification tier 92) evaluates **24** measured records at **0.00418478%** pooled median error (B_verified). Formal module: `FSOT.Formal.AlternateBaseMathematicsSpinePriors`. This panel extends the core spine into alternate base mathematics spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Bibliography Corpus Panel
+
+Extension panel **`Bibliography_Corpus_Panel`** (verification tier 88) evaluates **24** measured records at **0.0380165%** pooled median error (B_verified). Formal module: `FSOT.Formal.BibliographyCorpusPanelPriors`. This panel extends the core spine into bibliography corpus panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Bibliography Lean Corpus
+
+Extension panel **`Bibliography_Lean_Corpus`** (verification tier 37) evaluates **21** measured records at **0.020055%** pooled median error (B_verified). Formal module: `FSOT.Formal.BibliographyLeanCorpusPriors`. This panel extends the core spine into bibliography lean corpus observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Canonical Oracle Panel
+
+Extension panel **`Canonical_Oracle_Panel`** (verification tier 88) evaluates **24** measured records at **0.013294%** pooled median error (B_verified). Formal module: `FSOT.Formal.CanonicalOraclePanelPriors`. This panel extends the core spine into canonical oracle panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Computational Reasoning
+
+Extension panel **`Computational_Reasoning`** (verification tier 29) evaluates **577** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ComputationalReasoningPriors`. This panel extends the core spine into computational reasoning observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Creative Arts Math Spine
+
+Extension panel **`Creative_Arts_Math_Spine`** (verification tier 61) evaluates **56** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.CreativeArtsMathSpinePriors`. This panel extends the core spine into creative arts math spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Domain Coupling Simulation
+
+Extension panel **`Domain_Coupling_Simulation`** (verification tier 42) evaluates **18691** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.DomainCouplingSimulationPriors`. This panel extends the core spine into domain coupling simulation observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Domain Coupling Simulation Refresh Panel
+
+Extension panel **`Domain_Coupling_Simulation_Refresh_Panel`** (verification tier 77) evaluates **22** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.DomainCouplingSimulationRefreshPanelPriors`. This panel extends the core spine into domain coupling simulation refresh panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Early Lean MC Panel
+
+Extension panel **`Early_Lean_MC_Panel`** (verification tier 88) evaluates **24** measured records at **0.014767%** pooled median error (B_verified). Formal module: `FSOT.Formal.EarlyLeanMcPanelPriors`. This panel extends the core spine into early lean mc panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### FSOT Aggregate Organized Panel
+
+Extension panel **`FSOT_Aggregate_Organized_Panel`** (verification tier 69) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FsotAggregateOrganizedPanelPriors`. This panel extends the core spine into fsot aggregate organized panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### FSOT Aggregate Unified DB
+
+Extension panel **`FSOT_Aggregate_Unified_DB`** (verification tier 36) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FsotAggregateUnifiedDbPriors`. This panel extends the core spine into fsot aggregate unified db observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Formula Branching Fractal
+
+Extension panel **`Formula_Branching_Fractal`** (verification tier 45) evaluates **255** measured records at **0.0380165%** pooled median error (A_strong). Formal module: `FSOT.Formal.FormulaBranchingFractalPriors`. This panel extends the core spine into formula branching fractal observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Formula Corpus CNC
+
+Extension panel **`Formula_Corpus_CNC`** (verification tier 34) evaluates **21** measured records at **0.020055%** pooled median error (B_verified). Formal module: `FSOT.Formal.FormulaCorpusCncPriors`. This panel extends the core spine into formula corpus cnc observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Formula Corpus Closure
+
+Extension panel **`Formula_Corpus_Closure`** (verification tier 42) evaluates **123** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.FormulaCorpusClosurePriors`. This panel extends the core spine into formula corpus closure observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Formula Precision Spine
+
+Extension panel **`Formula_Precision_Spine`** (verification tier 67) evaluates **27** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FormulaPrecisionSpinePriors`. This panel extends the core spine into formula precision spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Knowledge Base Portable Bundle Panel
+
+Extension panel **`Knowledge_Base_Portable_Bundle_Panel`** (verification tier 77) evaluates **24** measured records at **0.00209239%** pooled median error (B_verified). Formal module: `FSOT.Formal.KnowledgeBasePortableBundlePanelPriors`. This panel extends the core spine into knowledge base portable bundle panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Math Generator Airfoil RMSE
+
+Extension panel **`Math_Generator_Airfoil_RMSE`** (verification tier 32) evaluates **21** measured records at **0.020055%** pooled median error (B_verified). Formal module: `FSOT.Formal.MathGeneratorAirfoilRmsePriors`. This panel extends the core spine into math generator airfoil rmse observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Math Generator Benchmark Formula Eval
+
+Extension panel **`Math_Generator_Benchmark_Formula_Eval`** (verification tier 31) evaluates **21** measured records at **0.020055%** pooled median error (B_verified). Formal module: `FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors`. This panel extends the core spine into math generator benchmark formula eval observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Math Generator Rules Eval
+
+Extension panel **`Math_Generator_Rules_Eval`** (verification tier 30) evaluates **1552** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.MathGeneratorRulesEvalPriors`. This panel extends the core spine into math generator rules eval observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Proof Ledger Closure Spine
+
+Extension panel **`Proof_Ledger_Closure_Spine`** (verification tier 70) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.ProofLedgerClosureSpinePriors`. This panel extends the core spine into proof ledger closure spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Rust Lean Bridge
+
+Extension panel **`Rust_Lean_Bridge`** (verification tier 37) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.RustLeanBridgePriors`. This panel extends the core spine into rust lean bridge observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Rust Lean Bridge Panel
+
+Extension panel **`Rust_Lean_Bridge_Panel`** (verification tier 88) evaluates **24** measured records at **0.014767%** pooled median error (B_verified). Formal module: `FSOT.Formal.RustLeanBridgePanelPriors`. This panel extends the core spine into rust lean bridge panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### ToE Claim Certificate Bundle
+
+Extension panel **`ToE_Claim_Certificate_Bundle`** (verification tier 70) evaluates **24** measured records at **0.00209239%** pooled median error (B_verified). Formal module: `FSOT.Formal.ToEClaimCertificateBundlePriors`. This panel extends the core spine into toe claim certificate bundle observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Tokenization Live Panel
+
+Extension panel **`Tokenization_Live_Panel`** (verification tier 88) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.TokenizationLivePanelPriors`. This panel extends the core spine into tokenization live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Tokenization Smoke
+
+Extension panel **`Tokenization_Smoke`** (verification tier 33) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.TokenizationSmokePriors`. This panel extends the core spine into tokenization smoke observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### XR Interactive Media Math Scaffold
+
+Extension panel **`XR_Interactive_Media_Math_Scaffold`** (verification tier 61) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.XRInteractiveMediaMathScaffoldPriors`. This panel extends the core spine into xr interactive media math scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Panels:** 3 · **Records:** 155 · **Mean panel median error:** 0.034597%
+
+#### Cryptography Technology
+
+Extension panel **`Cryptography_Technology`** (verification tier 43) evaluates **44** measured records at **0.0475207%** pooled median error (B_verified). Formal module: `FSOT.Formal.CryptographyTechnologyPriors`. This panel extends the core spine into cryptography technology observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Malware Threat Intelligence
+
+Extension panel **`Malware_Threat_Intelligence`** (verification tier 43) evaluates **85** measured records at **0.0459332%** pooled median error (B_verified). Formal module: `FSOT.Formal.MalwareThreatIntelligencePriors`. This panel extends the core spine into malware threat intelligence observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Zero Day Risk Evaluator
+
+Extension panel **`Zero_Day_Risk_Evaluator`** (verification tier 43) evaluates **26** measured records at **0.0103371%** pooled median error (B_verified). Formal module: `FSOT.Formal.ZeroDayRiskEvaluatorPriors`. This panel extends the core spine into zero day risk evaluator observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Panels:** 7 · **Records:** 168 · **Mean panel median error:** 0.0218293%
+
+#### Founding Atmospheric Ozone Panel
+
+Extension panel **`Founding_Atmospheric_Ozone_Panel`** (verification tier 96) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoundingAtmosphericOzonePanelPriors`. This panel extends the core spine into founding atmospheric ozone panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Founding Cosmic Dust Panel
+
+Extension panel **`Founding_Cosmic_Dust_Panel`** (verification tier 96) evaluates **24** measured records at **0.026675%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoundingCosmicDustPanelPriors`. This panel extends the core spine into founding cosmic dust panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Founding Cosmic Ray Panel
+
+Extension panel **`Founding_Cosmic_Ray_Panel`** (verification tier 96) evaluates **24** measured records at **0.021221%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoundingCosmicRayPanelPriors`. This panel extends the core spine into founding cosmic ray panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Founding Galactic Halo Rotation Panel
+
+Extension panel **`Founding_Galactic_Halo_Rotation_Panel`** (verification tier 96) evaluates **24** measured records at **0.022461%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoundingGalacticHaloRotationPanelPriors`. This panel extends the core spine into founding galactic halo rotation panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Founding Pulsar Glitch Panel
+
+Extension panel **`Founding_Pulsar_Glitch_Panel`** (verification tier 96) evaluates **24** measured records at **0.022461%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoundingPulsarGlitchPanelPriors`. This panel extends the core spine into founding pulsar glitch panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Founding Quantum Vacuum Panel
+
+Extension panel **`Founding_Quantum_Vacuum_Panel`** (verification tier 96) evaluates **24** measured records at **0.0152903%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoundingQuantumVacuumPanelPriors`. This panel extends the core spine into founding quantum vacuum panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Founding White Dwarf Cooling Panel
+
+Extension panel **`Founding_White_Dwarf_Cooling_Panel`** (verification tier 96) evaluates **24** measured records at **0.022461%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoundingWhiteDwarfCoolingPanelPriors`. This panel extends the core spine into founding white dwarf cooling panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+**Panels:** 129 · **Records:** 36,355 · **Mean panel median error:** 0.0141708%
+
+#### Actuarial Science Panel
+
+Extension panel **`Actuarial_Science_Panel`** (verification tier 82) evaluates **60** measured records at **0.02261%** pooled median error (B_verified). Formal module: `FSOT.Formal.ActuarialSciencePriors`. This panel extends the core spine into actuarial science panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Adjacent Rung Coupling
+
+Extension panel **`Adjacent_Rung_Coupling`** (verification tier 49) evaluates **36** measured records at **0.0200982%** pooled median error (B_verified). Formal module: `FSOT.Formal.AdjacentRungCouplingPriors`. This panel extends the core spine into adjacent rung coupling observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Arxiv Brain Knowledge Panel
+
+Extension panel **`Arxiv_Brain_Knowledge_Panel`** (verification tier 88) evaluates **20** measured records at **0.018003%** pooled median error (B_verified). Formal module: `FSOT.Formal.ArxivBrainKnowledgePanelPriors`. This panel extends the core spine into arxiv brain knowledge panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Arxiv Primitives Panel
+
+Extension panel **`Arxiv_Primitives_Panel`** (verification tier 88) evaluates **22** measured records at **0.031506%** pooled median error (B_verified). Formal module: `FSOT.Formal.ArxivPrimitivesPanelPriors`. This panel extends the core spine into arxiv primitives panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Arxiv Primitives V14
+
+Extension panel **`Arxiv_Primitives_V14`** (verification tier 34) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.ArxivPrimitivesV14Priors`. This panel extends the core spine into arxiv primitives v14 observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Binary Decoder Panel
+
+Extension panel **`Binary_Decoder_Panel`** (verification tier 88) evaluates **24** measured records at **0.013342%** pooled median error (B_verified). Formal module: `FSOT.Formal.BinaryDecoderPanelPriors`. This panel extends the core spine into binary decoder panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Binary Decoder Rendlesham
+
+Extension panel **`Binary_Decoder_Rendlesham`** (verification tier 35) evaluates **24** measured records at **0.00450476%** pooled median error (B_verified). Formal module: `FSOT.Formal.BinaryDecoderRendleshamPriors`. This panel extends the core spine into binary decoder rendlesham observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Biophysics Public Panel
+
+Extension panel **`Biophysics_Public_Panel`** (verification tier 64) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.BiophysicsPublicPanelPriors`. This panel extends the core spine into biophysics public panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Boundary Partition Tightening
+
+Extension panel **`Boundary_Partition_Tightening`** (verification tier 67) evaluates **24** measured records at **0.0176727%** pooled median error (B_verified). Formal module: `FSOT.Formal.BoundaryPartitionTighteningPriors`. This panel extends the core spine into boundary partition tightening observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Cartography GIS Panel
+
+Extension panel **`Cartography_GIS_Panel`** (verification tier 82) evaluates **48** measured records at **0.018856%** pooled median error (B_verified). Formal module: `FSOT.Formal.CartographyGisPriors`. This panel extends the core spine into cartography gis panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Certified Agent Formal Panel
+
+Extension panel **`Certified_Agent_Formal_Panel`** (verification tier 88) evaluates **24** measured records at **0.014767%** pooled median error (B_verified). Formal module: `FSOT.Formal.CertifiedAgentFormalPanelPriors`. This panel extends the core spine into certified agent formal panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Certified Agent Qwen
+
+Extension panel **`Certified_Agent_Qwen`** (verification tier 35) evaluates **24** measured records at **0.00450476%** pooled median error (B_verified). Formal module: `FSOT.Formal.CertifiedAgentQwenPriors`. This panel extends the core spine into certified agent qwen observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Chaos Mediated Phase Transitions
+
+Extension panel **`Chaos_Mediated_Phase_Transitions`** (verification tier 47) evaluates **21** measured records at **0.031479%** pooled median error (B_verified). Formal module: `FSOT.Formal.ChaosMediatedPhaseTransitionsPriors`. This panel extends the core spine into chaos mediated phase transitions observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Climate Science
+
+Extension panel **`Climate_Science`** (verification tier 12) evaluates **17320** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ClimateSciencePriors`. This panel extends the core spine into climate science observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Compactification Ladder
+
+Extension panel **`Compactification_Ladder`** (verification tier 49) evaluates **60** measured records at **0.0220747%** pooled median error (B_verified). Formal module: `FSOT.Formal.CompactificationLadderPriors`. This panel extends the core spine into compactification ladder observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Complexity Folding Emergence Panel
+
+Extension panel **`Complexity_Folding_Emergence_Panel`** (verification tier 91) evaluates **29** measured records at **0.0265879%** pooled median error (B_verified). Formal module: `FSOT.Formal.ComplexityFoldingEmergencePanelPriors`. This panel extends the core spine into complexity folding emergence panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Crossref Scholarly Panel
+
+Extension panel **`Crossref_Scholarly_Panel`** (verification tier 81) evaluates **200** measured records at **0.01382%** pooled median error (A_strong). Formal module: `FSOT.Formal.CrossrefScholarlyPriors`. This panel extends the core spine into crossref scholarly panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Econometrics
+
+Extension panel **`Econometrics`** (verification tier 34) evaluates **172** measured records at **0.129201%** pooled median error (A_strong). Formal module: `FSOT.Formal.EconometricsGapFillPriors`. This panel extends the core spine into econometrics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Econophysics
+
+Extension panel **`Econophysics`** (verification tier 66) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.EconophysicsPriors`. This panel extends the core spine into econophysics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Environmental Engineering
+
+Extension panel **`Environmental_Engineering`** (verification tier 35) evaluates **1120** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.EnvironmentalEngineeringExtensionPriors`. This panel extends the core spine into environmental engineering observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Ethology Panel
+
+Extension panel **`Ethology_Panel`** (verification tier 82) evaluates **100** measured records at **0.006607%** pooled median error (A_strong). Formal module: `FSOT.Formal.EthologyPriors`. This panel extends the core spine into ethology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Experimental Base Mathematics Panel
+
+Extension panel **`Experimental_Base_Mathematics_Panel`** (verification tier 93) evaluates **36** measured records at **0.009504%** pooled median error (B_verified). Formal module: `FSOT.Formal.ExperimentalBaseMathematicsPanelPriors`. This panel extends the core spine into experimental base mathematics panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### FPC Fluidlink Timing Deep Panel
+
+Extension panel **`FPC_Fluidlink_Timing_Deep_Panel`** (verification tier 76) evaluates **24** measured records at **0.021118%** pooled median error (B_verified). Formal module: `FSOT.Formal.FpcFluidlinkTimingDeepPanelPriors`. This panel extends the core spine into fpc fluidlink timing deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### FPC Temporal Coupling
+
+Extension panel **`FPC_Temporal_Coupling`** (verification tier 50) evaluates **24** measured records at **0.029733%** pooled median error (B_verified). Formal module: `FSOT.Formal.FPCTemporalCouplingPriors`. This panel extends the core spine into fpc temporal coupling observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Federal Science Registry Panel
+
+Extension panel **`Federal_Science_Registry_Panel`** (verification tier 80) evaluates **24** measured records at **0.013352%** pooled median error (B_verified). Formal module: `FSOT.Formal.FederalScienceRegistryPriors`. This panel extends the core spine into federal science registry panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fluid Phase Current Spine
+
+Extension panel **`Fluid_Phase_Current_Spine`** (verification tier 50) evaluates **24** measured records at **0.022997%** pooled median error (B_verified). Formal module: `FSOT.Formal.FluidPhaseCurrentSpinePriors`. This panel extends the core spine into fluid phase current spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fluid Spacetime Observable Spine
+
+Extension panel **`Fluid_Spacetime_Observable_Spine`** (verification tier 76) evaluates **29** measured records at **0.000595%** pooled median error (B_verified). Formal module: `FSOT.Formal.FluidSpacetimeObservableSpinePriors`. This panel extends the core spine into fluid spacetime observable spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fluid Spacetime Prereg Validation Panel
+
+Extension panel **`Fluid_Spacetime_Prereg_Validation_Panel`** (verification tier 77) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FluidSpacetimePreregValidationPanelPriors`. This panel extends the core spine into fluid spacetime prereg validation panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fold Depth Metrics
+
+Extension panel **`Fold_Depth_Metrics`** (verification tier 49) evaluates **51** measured records at **0.0257538%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoldDepthMetricsPriors`. This panel extends the core spine into fold depth metrics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Foundational Ontology Spine
+
+Extension panel **`Foundational_Ontology_Spine`** (verification tier 91) evaluates **21** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FoundationalOntologySpinePriors`. This panel extends the core spine into foundational ontology spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Fractal Constant Recursion
+
+Extension panel **`Fractal_Constant_Recursion`** (verification tier 46) evaluates **21** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.FractalConstantRecursionPriors`. This panel extends the core spine into fractal constant recursion observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### GWOSC Live Event Deep
+
+Extension panel **`GWOSC_Live_Event_Deep`** (verification tier 58) evaluates **191** measured records at **0.008488%** pooled median error (A_strong). Formal module: `FSOT.Formal.GWOSCLiveEventDeepPriors`. This panel extends the core spine into gwosc live event deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Gaia Astrometry Panel Deep
+
+Extension panel **`Gaia_Astrometry_Panel_Deep`** (verification tier 60) evaluates **62** measured records at **0.022461%** pooled median error (B_verified). Formal module: `FSOT.Formal.GaiaAstrometryPanelDeepPriors`. This panel extends the core spine into gaia astrometry panel deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Gaia DR3 TAP Deep
+
+Extension panel **`Gaia_DR3_TAP_Deep`** (verification tier 62) evaluates **1826** measured records at **0.022461%** pooled median error (A_strong). Formal module: `FSOT.Formal.GaiaDR3TAPDeepPriors`. This panel extends the core spine into gaia dr3 tap deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Government Open Data Spine
+
+Extension panel **`Government_Open_Data_Spine`** (verification tier 80) evaluates **28** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.GovernmentOpenDataSpinePriors`. This panel extends the core spine into government open data spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### HVAC Thermal Systems
+
+Extension panel **`HVAC_Thermal_Systems`** (verification tier 39) evaluates **23** measured records at **0.0178361%** pooled median error (B_verified). Formal module: `FSOT.Formal.HvacThermalSystemsPriors`. This panel extends the core spine into hvac thermal systems observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Heavy Ion Lab Synthesis Panel
+
+Extension panel **`Heavy_Ion_Lab_Synthesis_Panel`** (verification tier 73) evaluates **39** measured records at **9.5e-05%** pooled median error (B_verified). Formal module: `FSOT.Formal.HeavyIonLabSynthesisPanelPriors`. This panel extends the core spine into heavy ion lab synthesis panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Hybrid FI Sim Multi Hero Panel
+
+Extension panel **`Hybrid_FI_Sim_Multi_Hero_Panel`** (verification tier 77) evaluates **24** measured records at **0.008488%** pooled median error (B_verified). Formal module: `FSOT.Formal.HybridFiSimMultiHeroPanelPriors`. This panel extends the core spine into hybrid fi sim multi hero panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Hybrid FI Sim Stratum Deep Panel
+
+Extension panel **`Hybrid_FI_Sim_Stratum_Deep_Panel`** (verification tier 86) evaluates **24** measured records at **0.018003%** pooled median error (B_verified). Formal module: `FSOT.Formal.HybridFiSimStratumDeepPanelPriors`. This panel extends the core spine into hybrid fi sim stratum deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### IGEM Live FASTA Ingest
+
+Extension panel **`IGEM_Live_FASTA_Ingest`** (verification tier 32) evaluates **42** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.IGEMLiveFastaPriors`. This panel extends the core spine into igem live fasta ingest observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### IGEM Parts Expanded
+
+Extension panel **`IGEM_Parts_Expanded`** (verification tier 56) evaluates **111** measured records at **5.88236e-05%** pooled median error (A_strong). Formal module: `FSOT.Formal.IGEMPartsExpandedPriors`. This panel extends the core spine into igem parts expanded observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Information Theory Public Panel
+
+Extension panel **`Information_Theory_Public_Panel`** (verification tier 64) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.InformationTheoryPublicPanelPriors`. This panel extends the core spine into information theory public panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Interactive Media Prereg Scaffold
+
+Extension panel **`Interactive_Media_Prereg_Scaffold`** (verification tier 65) evaluates **42** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.InteractiveMediaPreregScaffoldPriors`. This panel extends the core spine into interactive media prereg scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Interdisciplinary Spine Crosswalk
+
+Extension panel **`Interdisciplinary_Spine_Crosswalk`** (verification tier 57) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.InterdisciplinarySpineCrosswalkPriors`. This panel extends the core spine into interdisciplinary spine crosswalk observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Intrinsic LLM Validators
+
+Extension panel **`Intrinsic_LLM_Validators`** (verification tier 33) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.IntrinsicLLMValidatorsPriors`. This panel extends the core spine into intrinsic llm validators observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Intrinsic LLM Validators Panel
+
+Extension panel **`Intrinsic_LLM_Validators_Panel`** (verification tier 88) evaluates **21** measured records at **0.014767%** pooled median error (B_verified). Formal module: `FSOT.Formal.IntrinsicLlmValidatorsPanelPriors`. This panel extends the core spine into intrinsic llm validators panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Limnology Panel
+
+Extension panel **`Limnology_Panel`** (verification tier 82) evaluates **2010** measured records at **0.030173%** pooled median error (A_strong). Formal module: `FSOT.Formal.LimnologyPriors`. This panel extends the core spine into limnology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Live Ingest Spine
+
+Extension panel **`Live_Ingest_Spine`** (verification tier 68) evaluates **28** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.LiveIngestSpinePriors`. This panel extends the core spine into live ingest spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Living FSOT Hardware Panel
+
+Extension panel **`Living_FSOT_Hardware_Panel`** (verification tier 88) evaluates **77** measured records at **0.031506%** pooled median error (B_verified). Formal module: `FSOT.Formal.LivingFsotHardwarePanelPriors`. This panel extends the core spine into living fsot hardware panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Longevity MegaDeep NCBI Panel
+
+Extension panel **`Longevity_MegaDeep_NCBI_Panel`** (verification tier 94) evaluates **1746** measured records at **0.017789%** pooled median error (A_strong). Formal module: `FSOT.Formal.LongevityMegaDeepNcbiPanelPriors`. This panel extends the core spine into longevity megadeep ncbi panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Longevity Telomere Repair Panel
+
+Extension panel **`Longevity_Telomere_Repair_Panel`** (verification tier 94) evaluates **60** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.LongevityTelomereRepairPanelPriors`. This panel extends the core spine into longevity telomere repair panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Material In Silico Screening Scaffold
+
+Extension panel **`Material_In_Silico_Screening_Scaffold`** (verification tier 65) evaluates **42** measured records at **0.00206%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialInSilicoScreeningScaffoldPriors`. This panel extends the core spine into material in silico screening scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Material Property Verification Scaffold
+
+Extension panel **`Material_Property_Verification_Scaffold`** (verification tier 59) evaluates **79** measured records at **0.002271%** pooled median error (B_verified). Formal module: `FSOT.Formal.MaterialPropertyVerificationScaffoldPriors`. This panel extends the core spine into material property verification scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Mathematics Computational
+
+Extension panel **`Mathematics_Computational`** (verification tier 29) evaluates **20** measured records at **1.40902e-14%** pooled median error (B_verified). Formal module: `FSOT.Formal.MathematicsComputationalPriors`. This panel extends the core spine into mathematics computational observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Mechanistic Coupling
+
+Extension panel **`Mechanistic_Coupling`** (verification tier 45) evaluates **116** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.MechanisticCouplingPriors`. This panel extends the core spine into mechanistic coupling observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Music Harmonics Public Panel
+
+Extension panel **`Music_Harmonics_Public_Panel`** (verification tier 61) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.MusicHarmonicsPublicPanelPriors`. This panel extends the core spine into music harmonics public panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### NASA DONKI Solar Panel
+
+Extension panel **`NASA_DONKI_Solar_Panel`** (verification tier 80) evaluates **2148** measured records at **0.020755%** pooled median error (A_strong). Formal module: `FSOT.Formal.NasaDonkiSolarPriors`. This panel extends the core spine into nasa donki solar panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### NASA NEO Feed Panel
+
+Extension panel **`NASA_NEO_Feed_Panel`** (verification tier 80) evaluates **56** measured records at **0.021097%** pooled median error (B_verified). Formal module: `FSOT.Formal.NasaNeoFeedPriors`. This panel extends the core spine into nasa neo feed panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### NCBI Gene Public Panel
+
+Extension panel **`NCBI_Gene_Public_Panel`** (verification tier 81) evaluates **48** measured records at **0.025572%** pooled median error (B_verified). Formal module: `FSOT.Formal.NcbiGenePublicPriors`. This panel extends the core spine into ncbi gene public panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Network Internet Protocols
+
+Extension panel **`Network_Internet_Protocols`** (verification tier 43) evaluates **22** measured records at **0.0103371%** pooled median error (B_verified). Formal module: `FSOT.Formal.NetworkInternetProtocolsPriors`. This panel extends the core spine into network internet protocols observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Network Science Public Panel
+
+Extension panel **`Network_Science_Public_Panel`** (verification tier 64) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.NetworkSciencePublicPanelPriors`. This panel extends the core spine into network science public panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Nothing Perfection Friction Origin Panel
+
+Extension panel **`Nothing_Perfection_Friction_Origin_Panel`** (verification tier 91) evaluates **24** measured records at **0.008488%** pooled median error (B_verified). Formal module: `FSOT.Formal.NothingPerfectionFrictionOriginPanelPriors`. This panel extends the core spine into nothing perfection friction origin panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### OSTI DOE Science Panel
+
+Extension panel **`OSTI_DOE_Science_Panel`** (verification tier 80) evaluates **100** measured records at **0.01382%** pooled median error (A_strong). Formal module: `FSOT.Formal.OstiDoeSciencePriors`. This panel extends the core spine into osti doe science panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Observer Channel Derivation
+
+Extension panel **`Observer_Channel_Derivation`** (verification tier 46) evaluates **348** measured records at **0.0525103%** pooled median error (A_strong). Formal module: `FSOT.Formal.ObserverChannelDerivationPriors`. This panel extends the core spine into observer channel derivation observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### OpenAlex Citation Graph
+
+Extension panel **`OpenAlex_Citation_Graph`** (verification tier 38) evaluates **80** measured records at **0.031506%** pooled median error (B_verified). Formal module: `FSOT.Formal.OpenalexCitationGraphPriors`. This panel extends the core spine into openalex citation graph observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Open Meteo Live Panel
+
+Extension panel **`Open_Meteo_Live_Panel`** (verification tier 81) evaluates **432** measured records at **0.026204%** pooled median error (A_strong). Formal module: `FSOT.Formal.OpenMeteoLivePriors`. This panel extends the core spine into open meteo live panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Optics Interferometry Depth Panel
+
+Extension panel **`Optics_Interferometry_Depth_Panel`** (verification tier 87) evaluates **127** measured records at **0.026954%** pooled median error (A_strong). Formal module: `FSOT.Formal.OpticsInterferometryDepthPanelPriors`. This panel extends the core spine into optics interferometry depth panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Overflow Carry Emergence Panel
+
+Extension panel **`Overflow_Carry_Emergence_Panel`** (verification tier 91) evaluates **29** measured records at **0.009504%** pooled median error (B_verified). Formal module: `FSOT.Formal.OverflowCarryEmergencePanelPriors`. This panel extends the core spine into overflow carry emergence panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Pharmacokinetics
+
+Extension panel **`Pharmacokinetics`** (verification tier 34) evaluates **56** measured records at **0.00241237%** pooled median error (B_verified). Formal module: `FSOT.Formal.PharmacokineticsGapFillPriors`. This panel extends the core spine into pharmacokinetics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Phi Morphogenetic Scaling
+
+Extension panel **`Phi_Morphogenetic_Scaling`** (verification tier 47) evaluates **289** measured records at **0.0176078%** pooled median error (A_strong). Formal module: `FSOT.Formal.PhiMorphogeneticScalingPriors`. This panel extends the core spine into phi morphogenetic scaling observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Portable Clone Verify
+
+Extension panel **`Portable_Clone_Verify`** (verification tier 46) evaluates **290** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.PortableCloneVerifyPriors`. This panel extends the core spine into portable clone verify observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Prediction Rederivation
+
+Extension panel **`Prediction_Rederivation`** (verification tier 36) evaluates **21** measured records at **0.0281605%** pooled median error (B_verified). Formal module: `FSOT.Formal.PredictionRederivationPriors`. This panel extends the core spine into prediction rederivation observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Preregistered Outcome Tracking
+
+Extension panel **`Preregistered_Outcome_Tracking`** (verification tier 70) evaluates **56** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PreregisteredOutcomeTrackingPriors`. This panel extends the core spine into preregistered outcome tracking observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Preregistered Predictions
+
+Extension panel **`Preregistered_Predictions`** (verification tier 46) evaluates **27** measured records at **0.0200982%** pooled median error (B_verified). Formal module: `FSOT.Formal.PreregisteredPredictionsPriors`. This panel extends the core spine into preregistered predictions observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Preregistered Predictions Verification Scaffold
+
+Extension panel **`Preregistered_Predictions_Verification_Scaffold`** (verification tier 63) evaluates **60** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PreregisteredPredictionsVerificationScaffoldPriors`. This panel extends the core spine into preregistered predictions verification scaffold observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Programming Language Laws
+
+Extension panel **`Programming_Language_Laws`** (verification tier 44) evaluates **107** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.ProgrammingLanguageLawsPriors`. This panel extends the core spine into programming language laws observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Public Verifiable Spine
+
+Extension panel **`Public_Verifiable_Spine`** (verification tier 81) evaluates **20** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.PublicVerifiableSpinePriors`. This panel extends the core spine into public verifiable spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Pure Mathematics
+
+Extension panel **`Pure_Mathematics`** (verification tier 41) evaluates **1578** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.PureMathematicsExtensionPriors`. This panel extends the core spine into pure mathematics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Pure Mathematics Panel
+
+Extension panel **`Pure_Mathematics_Panel`** (verification tier 86) evaluates **44** measured records at **0.02584%** pooled median error (B_verified). Formal module: `FSOT.Formal.PureMathematicsPanelPriors`. This panel extends the core spine into pure mathematics panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### RCSB PDB Structures
+
+Extension panel **`RCSB_PDB_Structures`** (verification tier 38) evaluates **45** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.RcsbPdbStructuresPriors`. This panel extends the core spine into rcsb pdb structures observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### RD Interval Tightening Panel
+
+Extension panel **`RD_Interval_Tightening_Panel`** (verification tier 77) evaluates **24** measured records at **0.000502%** pooled median error (B_verified). Formal module: `FSOT.Formal.RdIntervalTighteningPanelPriors`. This panel extends the core spine into rd interval tightening panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Reality Folding Spine
+
+Extension panel **`Reality_Folding_Spine`** (verification tier 49) evaluates **24** measured records at **0.0239143%** pooled median error (B_verified). Formal module: `FSOT.Formal.RealityFoldingSpinePriors`. This panel extends the core spine into reality folding spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### SH0ES Refined
+
+Extension panel **`SH0ES_Refined`** (verification tier 51) evaluates **24** measured records at **0.024894%** pooled median error (B_verified). Formal module: `FSOT.Formal.SH0ESRefinedPriors`. This panel extends the core spine into sh0es refined observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### STScI MAST Telescope Panel
+
+Extension panel **`STScI_MAST_Telescope_Panel`** (verification tier 79) evaluates **377** measured records at **0.022461%** pooled median error (A_strong). Formal module: `FSOT.Formal.StsciMastTelescopePriors`. This panel extends the core spine into stsci mast telescope panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Scalar Solver 35 Panel
+
+Extension panel **`Scalar_Solver_35_Panel`** (verification tier 88) evaluates **24** measured records at **0.014767%** pooled median error (B_verified). Formal module: `FSOT.Formal.ScalarSolver35PanelPriors`. This panel extends the core spine into scalar solver 35 panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Scientific Expansion Depth Spine
+
+Extension panel **`Scientific_Expansion_Depth_Spine`** (verification tier 86) evaluates **20** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.ScientificExpansionDepthSpinePriors`. This panel extends the core spine into scientific expansion depth spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Scientific Expansion Depth Wave2 Spine
+
+Extension panel **`Scientific_Expansion_Depth_Wave2_Spine`** (verification tier 87) evaluates **40** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.ScientificExpansionDepthWave2SpinePriors`. This panel extends the core spine into scientific expansion depth wave2 spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Scientific Expansion Spine
+
+Extension panel **`Scientific_Expansion_Spine`** (verification tier 82) evaluates **40** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.ScientificExpansionSpinePriors`. This panel extends the core spine into scientific expansion spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Scientific Expansion Wave2 Spine
+
+Extension panel **`Scientific_Expansion_Wave2_Spine`** (verification tier 84) evaluates **40** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.ScientificExpansionWave2SpinePriors`. This panel extends the core spine into scientific expansion wave2 spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Scientific Expansion Wave3 Spine
+
+Extension panel **`Scientific_Expansion_Wave3_Spine`** (verification tier 85) evaluates **40** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.ScientificExpansionWave3SpinePriors`. This panel extends the core spine into scientific expansion wave3 spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Secure Software Engineering
+
+Extension panel **`Secure_Software_Engineering`** (verification tier 43) evaluates **59** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.SecureSoftwareEngineeringPriors`. This panel extends the core spine into secure software engineering observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Semiconductor Physics Public Panel
+
+Extension panel **`Semiconductor_Physics_Public_Panel`** (verification tier 64) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.SemiconductorPhysicsPublicPanelPriors`. This panel extends the core spine into semiconductor physics public panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Soil Science Panel
+
+Extension panel **`Soil_Science_Panel`** (verification tier 82) evaluates **96** measured records at **0.006006%** pooled median error (B_verified). Formal module: `FSOT.Formal.SoilSciencePriors`. This panel extends the core spine into soil science panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Solar System Structure Deep
+
+Extension panel **`Solar_System_Structure_Deep`** (verification tier 54) evaluates **50** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.SolarSystemStructureDeepPriors`. This panel extends the core spine into solar system structure deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Sports Biomechanics
+
+Extension panel **`Sports_Biomechanics`** (verification tier 34) evaluates **35** measured records at **0.0444725%** pooled median error (B_verified). Formal module: `FSOT.Formal.SportsBiomechanicsGapFillPriors`. This panel extends the core spine into sports biomechanics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Statistical Mechanics Public Panel
+
+Extension panel **`Statistical_Mechanics_Public_Panel`** (verification tier 64) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.StatisticalMechanicsPublicPanelPriors`. This panel extends the core spine into statistical mechanics public panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Stumped Observables Panel
+
+Extension panel **`Stumped_Observables_Panel`** (verification tier 51) evaluates **24** measured records at **0.029749%** pooled median error (B_verified). Formal module: `FSOT.Formal.StumpedObservablesPanelPriors`. This panel extends the core spine into stumped observables panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Stumped Observables Spine
+
+Extension panel **`Stumped_Observables_Spine`** (verification tier 51) evaluates **24** measured records at **0.027761%** pooled median error (B_verified). Formal module: `FSOT.Formal.StumpedObservablesSpinePriors`. This panel extends the core spine into stumped observables spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Supply Chain Logistics
+
+Extension panel **`Supply_Chain_Logistics`** (verification tier 41) evaluates **40** measured records at **0.0323002%** pooled median error (B_verified). Formal module: `FSOT.Formal.SupplyChainLogisticsExtensionPriors`. This panel extends the core spine into supply chain logistics observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Supply Chain Logistics Panel
+
+Extension panel **`Supply_Chain_Logistics_Panel`** (verification tier 85) evaluates **40** measured records at **0.02584%** pooled median error (B_verified). Formal module: `FSOT.Formal.SupplyChainLogisticsPanelPriors`. This panel extends the core spine into supply chain logistics panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Term3 Acoustic Bleed Depth
+
+Extension panel **`Term3_Acoustic_Bleed_Depth`** (verification tier 67) evaluates **23** measured records at **0.0083815%** pooled median error (B_verified). Formal module: `FSOT.Formal.Term3AcousticBleedDepthPriors`. This panel extends the core spine into term3 acoustic bleed depth observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### The Well Outcomes Verification Panel
+
+Extension panel **`The_Well_Outcomes_Verification_Panel`** (verification tier 89) evaluates **246** measured records at **0.031159%** pooled median error (A_strong). Formal module: `FSOT.Formal.TheWellOutcomesVerificationPanelPriors`. This panel extends the core spine into the well outcomes verification panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### The Well Spot Check Panel
+
+Extension panel **`The_Well_Spot_Check_Panel`** (verification tier 89) evaluates **24** measured records at **0.031159%** pooled median error (B_verified). Formal module: `FSOT.Formal.TheWellSpotCheckPanelPriors`. This panel extends the core spine into the well spot check panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### The Well Verification Spine
+
+Extension panel **`The_Well_Verification_Spine`** (verification tier 89) evaluates **24** measured records at **0.028287%** pooled median error (B_verified). Formal module: `FSOT.Formal.TheWellVerificationSpinePriors`. This panel extends the core spine into the well verification spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Theory Completeness Spine
+
+Extension panel **`Theory_Completeness_Spine`** (verification tier 45) evaluates **24** measured records at **0.0219279%** pooled median error (B_verified). Formal module: `FSOT.Formal.TheoryCompletenessSpinePriors`. This panel extends the core spine into theory completeness spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Tier 93 Dual Wave Spine
+
+Extension panel **`Tier_93_Dual_Wave_Spine`** (verification tier 93) evaluates **24** measured records at **0.0110939%** pooled median error (B_verified). Formal module: `FSOT.Formal.Tier93DualWaveSpinePriors`. This panel extends the core spine into tier 93 dual wave spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Tier 94 Longevity Spine
+
+Extension panel **`Tier_94_Longevity_Spine`** (verification tier 94) evaluates **34** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.Tier94LongevitySpinePriors`. This panel extends the core spine into tier 94 longevity spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Tier 95 Zebrafish Spine
+
+Extension panel **`Tier_95_Zebrafish_Spine`** (verification tier 95) evaluates **24** measured records at **0.013342%** pooled median error (B_verified). Formal module: `FSOT.Formal.Tier95ZebrafishSpinePriors`. This panel extends the core spine into tier 95 zebrafish spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Time Domain Crosswalk
+
+Extension panel **`Time_Domain_Crosswalk`** (verification tier 50) evaluates **250** measured records at **0.028056%** pooled median error (A_strong). Formal module: `FSOT.Formal.TimeDomainCrosswalkPriors`. This panel extends the core spine into time domain crosswalk observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Time Emergence Deep Panel
+
+Extension panel **`Time_Emergence_Deep_Panel`** (verification tier 76) evaluates **24** measured records at **0.024894%** pooled median error (B_verified). Formal module: `FSOT.Formal.TimeEmergenceDeepPanelPriors`. This panel extends the core spine into time emergence deep panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Time Emergence Simulation
+
+Extension panel **`Time_Emergence_Simulation`** (verification tier 50) evaluates **28** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.TimeEmergenceSimulationPriors`. This panel extends the core spine into time emergence simulation observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### ToE Gap Closure Spine
+
+Extension panel **`ToE_Gap_Closure_Spine`** (verification tier 46) evaluates **24** measured records at **0.0219279%** pooled median error (B_verified). Formal module: `FSOT.Formal.ToEGapClosureSpinePriors`. This panel extends the core spine into toe gap closure spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### ToE Unification Spine
+
+Extension panel **`ToE_Unification_Spine`** (verification tier 48) evaluates **24** measured records at **0.0190083%** pooled median error (B_verified). Formal module: `FSOT.Formal.ToEUnificationSpinePriors`. This panel extends the core spine into toe unification spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Toxicology Panel
+
+Extension panel **`Toxicology_Panel`** (verification tier 82) evaluates **21** measured records at **0.033401%** pooled median error (B_verified). Formal module: `FSOT.Formal.ToxicologyPriors`. This panel extends the core spine into toxicology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### UAP War Gov Release Panel
+
+Extension panel **`UAP_War_Gov_Release_Panel`** (verification tier 80) evaluates **542** measured records at **0.008488%** pooled median error (A_strong). Formal module: `FSOT.Formal.UapWarGovReleasePriors`. This panel extends the core spine into uap war gov release panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### UniProt Structure Annotations Deep
+
+Extension panel **`UniProt_Structure_Annotations_Deep`** (verification tier 56) evaluates **121** measured records at **0%** pooled median error (A_strong). Formal module: `FSOT.Formal.UniProtStructureAnnotationsDeepPriors`. This panel extends the core spine into uniprot structure annotations deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Unified DB Candidate Crosswalk
+
+Extension panel **`Unified_DB_Candidate_Crosswalk`** (verification tier 69) evaluates **46** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.UnifiedDBCandidateCrosswalkPriors`. This panel extends the core spine into unified db candidate crosswalk observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Unified DB Crosswalk Spine
+
+Extension panel **`Unified_DB_Crosswalk_Spine`** (verification tier 69) evaluates **24** measured records at **0.00209239%** pooled median error (B_verified). Formal module: `FSOT.Formal.UnifiedDBCrosswalkSpinePriors`. This panel extends the core spine into unified db crosswalk spine observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### VL Agent Distill Panel
+
+Extension panel **`VL_Agent_Distill_Panel`** (verification tier 88) evaluates **24** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.VlAgentDistillPanelPriors`. This panel extends the core spine into vl agent distill panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### VL Distill Atlas
+
+Extension panel **`VL_Distill_Atlas`** (verification tier 37) evaluates **24** measured records at **0%** pooled median error (B_verified). Formal module: `FSOT.Formal.VlDistillAtlasPriors`. This panel extends the core spine into vl distill atlas observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### VizieR WDS TAP Live Deep
+
+Extension panel **`VizieR_WDS_TAP_Live_Deep`** (verification tier 68) evaluates **121** measured records at **0.026954%** pooled median error (A_strong). Formal module: `FSOT.Formal.VizieRWdsTapLiveDeepPriors`. This panel extends the core spine into vizier wds tap live deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Volcanology Panel
+
+Extension panel **`Volcanology_Panel`** (verification tier 82) evaluates **90** measured records at **0.023502%** pooled median error (B_verified). Formal module: `FSOT.Formal.VolcanologyPriors`. This panel extends the core spine into volcanology panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### WDS Live Multiplicity Deep
+
+Extension panel **`WDS_Live_Multiplicity_Deep`** (verification tier 62) evaluates **281** measured records at **0.026954%** pooled median error (A_strong). Formal module: `FSOT.Formal.WDSLiveMultiplicityDeepPriors`. This panel extends the core spine into wds live multiplicity deep observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### World Bank Development
+
+Extension panel **`World_Bank_Development`** (verification tier 38) evaluates **420** measured records at **0.02584%** pooled median error (A_strong). Formal module: `FSOT.Formal.WorldBankDevelopmentPriors`. This panel extends the core spine into world bank development observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Z120 Z126 Beam Synthesis Panel
+
+Extension panel **`Z120_Z126_Beam_Synthesis_Panel`** (verification tier 74) evaluates **20** measured records at **9.5e-05%** pooled median error (B_verified). Formal module: `FSOT.Formal.Z120Z126BeamSynthesisPanelPriors`. This panel extends the core spine into z120 z126 beam synthesis panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Zebrafish Cell Tracking Panel
+
+Extension panel **`Zebrafish_Cell_Tracking_Panel`** (verification tier 95) evaluates **20** measured records at **0.022236%** pooled median error (B_verified). Formal module: `FSOT.Formal.ZebrafishCellTrackingPanelPriors`. This panel extends the core spine into zebrafish cell tracking panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Zebrafish Developmental Mechanics Panel
+
+Extension panel **`Zebrafish_Developmental_Mechanics_Panel`** (verification tier 95) evaluates **31** measured records at **0.017789%** pooled median error (B_verified). Formal module: `FSOT.Formal.ZebrafishDevelopmentalMechanicsPanelPriors`. This panel extends the core spine into zebrafish developmental mechanics panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### Zero Boundary Not Entity Panel
+
+Extension panel **`Zero_Boundary_Not_Entity_Panel`** (verification tier 91) evaluates **24** measured records at **0.020055%** pooled median error (B_verified). Formal module: `FSOT.Formal.ZeroBoundaryNotEntityPanelPriors`. This panel extends the core spine into zero boundary not entity panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+#### iNaturalist Observation Panel
+
+Extension panel **`iNaturalist_Observation_Panel`** (verification tier 81) evaluates **288** measured records at **0.006006%** pooled median error (A_strong). Formal module: `FSOT.Formal.InaturalistObservationPriors`. This panel extends the core spine into inaturalist observation panel observables — predictions are seed-derived; kill criteria are registered in the domain navigator.
+
+<!-- README_DOMAIN_CHAPTERS_END -->
 
 ## Appendix D — How to Cite This Work
 
