@@ -84,6 +84,7 @@ MARKER = {
     "near_miss": ("<!-- README_NEAR_MISS_START -->", "<!-- README_NEAR_MISS_END -->"),
     "credibility": ("<!-- README_CREDIBILITY_HARDENING_START -->", "<!-- README_CREDIBILITY_HARDENING_END -->"),
     "circuitry": ("<!-- README_CIRCUITRY_ROADMAP_START -->", "<!-- README_CIRCUITRY_ROADMAP_END -->"),
+    "practical_pipeline": ("<!-- README_PRACTICAL_PIPELINE_START -->", "<!-- README_PRACTICAL_PIPELINE_END -->"),
     "discussion_open": ("<!-- README_DISCUSSION_OPEN_WORK_START -->", "<!-- README_DISCUSSION_OPEN_WORK_END -->"),
     "appendix_c_extra": ("<!-- README_APPENDIX_C_EXTRA_START -->", "<!-- README_APPENDIX_C_EXTRA_END -->"),
     "methods": ("<!-- README_METHODS_FORMAL_START -->", "<!-- README_METHODS_FORMAL_END -->"),
@@ -221,6 +222,7 @@ _GAP_FILES = {
     "near_miss": "near_miss.md",
     "credibility": "credibility_hardening.md",
     "circuitry": "circuitry_roadmap.md",
+    "practical_pipeline": "practical_pipeline.md",
     "discussion_open": "discussion_open_work.md",
 }
 
@@ -308,6 +310,7 @@ def main() -> int:
         "build_credibility_hardening_audit.py",
         "build_lean_route_credibility_expansion.py",
         "build_circuit_component_expansion_bundle.py",
+        "build_practical_pipeline_bundle.py",
     )
     for script in tier_c_scripts:
         subprocess.run([sys.executable, str(ROOT / "scripts" / script)], check=False)
@@ -341,6 +344,7 @@ def main() -> int:
     readme = _replace_block(readme, *MARKER["near_miss"], _read_gap("near_miss.md"))
     readme = _replace_block(readme, *MARKER["credibility"], _read_gap("credibility_hardening.md"))
     readme = _replace_block(readme, *MARKER["circuitry"], _read_gap("circuitry_roadmap.md"))
+    readme = _replace_block(readme, *MARKER["practical_pipeline"], _read_gap("practical_pipeline.md"))
     if MARKER["discussion_open"][0] in readme:
         readme = _replace_block(readme, *MARKER["discussion_open"], _read_gap("discussion_open_work.md"))
     if MARKER["appendix_c_extra"][0] in readme:
@@ -414,6 +418,12 @@ def main() -> int:
             "circuitry",
             "<!-- README_CREDIBILITY_HARDENING_END -->",
         )
+    if MARKER["practical_pipeline"][0] not in readme:
+        readme = _ensure_marker_block(
+            readme,
+            "practical_pipeline",
+            "<!-- README_CIRCUITRY_ROADMAP_END -->",
+        )
     if MARKER["discussion_open"][0] not in readme:
         old_open = re.search(
             r"### 9\.3 Open work \(not model failures\)\n\n.*?(?=\n<!-- README_NEAR_MISS_START -->)",
@@ -478,7 +488,7 @@ def main() -> int:
     readme = _patch_inline_citations(readme)
     readme = re.sub(
         r"\*\*Edition:\*\* v[0-9]+\.[0-9]+[^\n]*",
-        f"**Edition:** v2.4 — lean route depth, Tier 96 Phase 1, credibility bundle {ts}",
+        f"**Edition:** v2.5 — practical pipeline, consciousness observer (local), blueprints {ts}",
         readme,
         count=1,
     )

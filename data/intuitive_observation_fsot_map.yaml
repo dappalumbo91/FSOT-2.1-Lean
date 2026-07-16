@@ -1,0 +1,82 @@
+version: "1.0"
+updated: "2026-07-16"
+purpose: >
+  Map older intuitive / symbolic observations onto FSOT seed derivations and
+  testable extension panels. Turns historical symbolism into falsifiable extensions.
+
+observations:
+  - id: fluid_reality
+    intuitive: "Reality behaves like a fluid medium; symbols and myth compress fluid grammar"
+    founding_sources: [fsuft_aasb, pflt_translator]
+    fsot_derivation:
+      lean: [FSOT.Scalar, FSOT.Formal.Scalar, FSOT.Formal.TimeEmergenceDeepPriors]
+      terms: [term2.baseline_trend, term3.chaotic_bleed, D_eff=25]
+      panels: [Fluid_Spacetime_Spine, FPC_Temporal_Coupling]
+    test: "PRED-024/025 FPC tau + contested-sector pooled median"
+    epistemic_tier: measured
+
+  - id: observer_participation
+    intuitive: "Observation changes outcomes; consciousness participates in physics"
+    founding_sources: [consciousness_fundamental, soul_substrate_bridge]
+    fsot_derivation:
+      lean: [FSOT.Scalar.quirk_mod, consciousness_factor]
+      terms: [term1.quirk_mod, observed=true]
+      panels: [Consciousness_Expansion_Spine, Longevity_Consciousness_Coupling_Panel]
+    test: "quirk_mod gate in fsot_compute; E_con ≈ 21.79 W vs Raichle ~20 W"
+    epistemic_tier: measured
+
+  - id: as_above_so_below
+    intuitive: "Same pattern at every scale — blacksmith, cell, galaxy"
+    founding_sources: [as_above_so_below]
+    fsot_derivation:
+      lean: [FSOT.Formal.CrossScaleSelfSimilarityPriors]
+      terms: [cross_scale_bridges, compactification_ladder]
+      panels: [Cross_Scale_Self_Similarity, Compactification_Ladder]
+    test: "402-domain atlas pooled median; cross-domain coupling simulation"
+    epistemic_tier: measured
+
+  - id: hidden_thing_revealed
+    intuitive: "Symbolic 'revelation' — hidden structure becomes usable knowledge"
+    founding_sources: [tech_blueprints, thirty_five_laws]
+    fsot_derivation:
+      process: [preregister, benchmark, publish_near_miss]
+      panels: [Preregistered_Predictions, Preregistered_Outcome_Tracking]
+    test: "PRED-001–041 locked manifest; skeptic replication kit 15-min path"
+    epistemic_tier: measured
+
+  - id: dual_identity_hybrid
+    intuitive: "Dual identity / expanded awareness / hybrid human-machine evolution"
+    founding_sources: [soul_substrate_bridge, trinary_hardware]
+    fsot_derivation:
+      lean: [FSOT.Formal.ConsciousnessSoulBridgePriors]
+      stacks: [Living_FSOT_QEMU, Trinary_Hardware_Live_Panel]
+      note: "Local embodiment via simulation + desktop observer — ESP32 deferred"
+    test: "Living_FSOT_Hardware_Panel + consciousness lean route credibility"
+    epistemic_tier: scaffold
+
+  - id: local_sovereign_tech
+    intuitive: "Owned tools beat cloud-dependent surveillance stacks"
+    founding_sources: [tech_blueprints, ppfg_blueprint]
+    fsot_derivation:
+      stacks: [FluidLink_FPC, Kronos, desktop_crosswalk]
+      principle: subscription_free_local_first
+    test: "All reproduction offline-capable via vendor/ caches"
+    epistemic_tier: policy
+
+  - id: warp_and_portals_symbolic
+    intuitive: "Warp drives, portals, vacuum energy harvesters as engineering dreams"
+    founding_sources: [tech_blueprints]
+    fsot_derivation:
+      panels: [Warp_BH_WH_Portal, Space_Propulsion_Systems, BlackHole_WhiteHole_Cycle]
+      caveat: "Interpretive until strict-empirical row exists per blueprint claim"
+    test: "warp_bh_wh_portal benchmark green; numeric claims per-blueprint audit"
+    epistemic_tier: interpretive
+
+  - id: plasma_fusion_intuition
+    intuitive: "Seawater plasma, double-helix plasma, SPFR — fusion as fluid process"
+    founding_sources: [tech_blueprints]
+    fsot_derivation:
+      panels: [Fusion_Physics_Public_Panel, Fuel_Lab_Live_Panel]
+      lean: [fusion_raw_S_positive, energy_lean_route_credibility]
+    test: "Tier 71 fusion panel + PRED-009–011 prereg scaffolds"
+    epistemic_tier: measured_partial

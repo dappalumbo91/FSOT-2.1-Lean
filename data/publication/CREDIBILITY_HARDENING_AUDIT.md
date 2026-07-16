@@ -1,10 +1,10 @@
 # FSOT Credibility Hardening Audit
 
-*Generated: 2026-07-16T13:55:25.347575+00:00*
+*Generated: 2026-07-16T15:44:55.539421+00:00*
 
 Hard credibility expansion — every pillar must be independently reproducible, not rhetorical.
 
-**Score: 13/13 pillars green**
+**Score: 14/14 pillars green**
 
 | Pillar | Status | Evidence |
 |--------|:------:|----------|
@@ -21,6 +21,7 @@ Hard credibility expansion — every pillar must be independently reproducible, 
 | Lean route depth | ✓ | 7/7 routes |
 | Circuit Phase 1 | ✓ | Tier 96 BOM emergence |
 | Live ingest schedule | ✓ | weekly refresh policy |
+| Practical pipeline | ✓ | local application + blueprints |
 
 ## Headline metrics (live)
 

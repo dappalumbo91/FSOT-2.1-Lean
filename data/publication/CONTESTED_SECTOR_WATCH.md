@@ -1,6 +1,6 @@
 # Contested Sector Watch
 
-*Living monitor · 2026-07-16T13:53:54.276764+00:00*
+*Living monitor · 2026-07-16T15:44:32.665493+00:00*
 
 These 13 observables are not pipeline failures — they are the hardest open problems active science is measuring (Hubble tension, dark energy, σ₈, BBN, cusp-core, hierarchy, consciousness proxy, preregistered w_a). FSOT supplies unified readouts; ΛCDM/SM baselines have no unified prediction (15% typical error on the open panel). Where FSOT error exceeds 0.5%, refinement is queued.
 

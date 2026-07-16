@@ -45,5 +45,8 @@
 | Wet-lab & longevity depth | [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) |
 | Credibility hardening audit | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) |
 | Circuitry emergence spine | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) |
+| Practical pipeline | [`docs/PRACTICAL_PIPELINE.md`](docs/PRACTICAL_PIPELINE.md) |
+| Consciousness observer (local) | [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) |
+| Tech blueprints registry | [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) |
 
-*Generated: 2026-07-16T13:55:25.464690+00:00*
+*Generated: 2026-07-16T15:44:33.017723+00:00*

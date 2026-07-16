@@ -1,6 +1,6 @@
 # Benchmark Near-Miss Ledger
 
-*Generated: 2026-07-16T13:53:53.558267+00:00*
+*Generated: 2026-07-16T15:44:31.900419+00:00*
 
 Domains that pass the green gate but approach the ≤0.5% boundary — published for transparency, not hidden as post-hoc rescues.
 

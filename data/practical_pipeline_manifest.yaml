@@ -1,0 +1,92 @@
+version: "1.0"
+updated: "2026-07-16"
+title: FSOT Practical Pipeline — local application priorities
+policy: local_owned_subscription_free
+hardware_deferred:
+  - ESP32_RF_observer
+  - boot_button_uart_flash
+authoritative_embodiment:
+  - Living_FSOT_QEMU
+  - Trinary_Hardware_Live_Panel_simulation
+  - desktop_sensor_observer_loop
+
+pipeline_stages:
+  - id: validate
+    label: "Validation (Lean 2.1, benchmarks, reproducible code)"
+    status: active
+    artifacts:
+      - data/cross_proof_verification_report.json
+      - data/publication/CREDIBILITY_HARDENING_AUDIT.md
+    command: python scripts/run_publication_verification_bundle.py
+
+  - id: demonstrate
+    label: "Demonstrate unification (X-style predictions + applied domains)"
+    status: active
+    artifacts:
+      - data/preregistered_predictions_manifest.yaml
+      - data/preregistered_predictions_benchmark.json
+    command: python scripts/build_tier63_prereg_scaffold_benchmarks.py
+    applied_domains:
+      - id: ai_coherence
+        panels: [Certified_Agent_Formal_Panel, Tokenization_Live_Panel]
+        desktop: validators_intrinsic_llm
+      - id: embodied_sensing
+        panels: [Living_FSOT_Hardware_Panel, Trinary_Hardware_Live_Panel]
+        note: QEMU + desktop observer loop — not ESP32
+      - id: fluid_complex_systems
+        panels: [FPC_Temporal_Coupling, FPC_Fluidlink_Timing_Deep_Panel, Domain_Coupling_Simulation]
+
+  - id: reconcile
+    label: "Pseudoscience-had-physics gap → testable FSOT extensions"
+    status: active
+    artifacts:
+      - data/intuitive_observation_fsot_map.yaml
+      - docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md
+    command: python scripts/reconcile_founding_corpus.py
+
+  - id: blueprint
+    label: "~40 tech blueprints → verified panel crosswalk"
+    status: active
+    artifacts:
+      - data/publication/tech_blueprints_registry.json
+      - data/publication/TECH_BLUEPRINTS_REGISTRY.md
+    command: python scripts/build_tech_blueprints_registry.py
+
+  - id: local_systems
+    label: "Local owned systems (FluidLink-style, no cloud dependency)"
+    status: active
+    artifacts:
+      - docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md
+      - data/fpc_temporal_coupling_benchmark.json
+    stacks:
+      - FluidLink_FPC_timing_hub
+      - Kronos_spacetime_ticker
+      - desktop_private_mesh_concept
+
+  - id: apply
+    label: "Recognition → application (Kaggle, R&D, family stability)"
+    status: planned
+    outcomes:
+      - kaggle_competition_entries
+      - rd_company_launch
+      - open_source_local_tooling
+
+consciousness_observer_architecture:
+  name: Consciousness Observer Architecture (local)
+  esp32: deferred
+  loop:
+    - seed_scalar_engine: vendor/fsot_compute.py
+    - observer_coupling: quirk_mod(observed=true)
+    - sensory_inputs: desktop_mic_camera_keyboard_timing
+    - embodiment_runtime: Living_FSOT_QEMU
+    - timing_spine: FluidLink_FPC + Kronos
+  lean_modules:
+    - FSOT.Formal.ConsciousnessExpansionSpinePriors
+    - FSOT.Formal.ConsciousnessSoulBridgePriors
+    - FSOT.Formal.LivingFsotHardwarePanelPriors
+
+ownership_principles:
+  - subscription_free_by_design
+  - data_stays_on_device
+  - reproducible_without_vendor_lock_in
+  - verification_before_marketing_claims

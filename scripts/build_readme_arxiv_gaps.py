@@ -73,6 +73,9 @@ def build_toc(ts: str) -> str:
         "| Wet-lab & longevity depth | [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) |",
         "| Credibility hardening audit | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) |",
         "| Circuitry emergence spine | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) |",
+        "| Practical pipeline | [`docs/PRACTICAL_PIPELINE.md`](docs/PRACTICAL_PIPELINE.md) |",
+        "| Consciousness observer (local) | [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) |",
+        "| Tech blueprints registry | [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) |",
         "",
         f"*Generated: {datetime.now(timezone.utc).isoformat()}*",
         "",
@@ -311,6 +314,23 @@ Regenerate: `python scripts/build_credibility_depth_bundle.py` (lean routes + li
 """
 
 
+def build_practical_pipeline_section() -> str:
+    return """### 9.8 Practical pipeline — local application
+
+Validation → recognition → application. The practical pipeline documents what comes **down** from verified math into local, owned, subscription-free systems.
+
+| Volume | Role |
+|--------|------|
+| [`docs/PRACTICAL_PIPELINE.md`](docs/PRACTICAL_PIPELINE.md) | Master pipeline — X-style predictions, applied domains, outcomes |
+| [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) | Local observer loop (QEMU + desktop sensors; **ESP32 deferred**) |
+| [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) | ~40 engineering blueprints → FSOT panel crosswalk |
+| [`data/intuitive_observation_fsot_map.yaml`](data/intuitive_observation_fsot_map.yaml) | Intuitive observations → testable FSOT derivations |
+| [`docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`](docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md) | Founding FSUFT-U → verified 2.1 reconciliation |
+
+Regenerate: `python scripts/build_practical_pipeline_bundle.py`
+"""
+
+
 def build_circuitry_roadmap() -> str:
     return """### 9.7 Circuitry & component emergence roadmap (Tier 96)
 
@@ -345,6 +365,9 @@ def build_appendix_c_extra() -> str:
     return """| [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) | Tier 94/95 wet-lab & longevity |
 | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) | Hard credibility pillar audit |
 | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) | Circuitry & BOM emergence (Tier 96) |
+| [`docs/PRACTICAL_PIPELINE.md`](docs/PRACTICAL_PIPELINE.md) | Local application pipeline |
+| [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) | Consciousness observer (local, no ESP32) |
+| [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) | Tech blueprints crosswalk |
 """
 
 
@@ -530,6 +553,7 @@ def main() -> int:
         "circuitry_roadmap.md": build_circuitry_roadmap(),
         "discussion_open_work.md": build_discussion_open_work_patch(),
         "appendix_c_extra.md": build_appendix_c_extra(),
+        "practical_pipeline.md": build_practical_pipeline_section(),
         "obligation_map.md": build_obligation_map_section(),
         "vi_extra_figures.md": build_vi_extra_figures(),
         "methods_formal.md": build_methods_formal(),

@@ -4,7 +4,7 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.4 — lean route depth, Tier 96 Phase 1, credibility bundle 2026-07-16
+**Edition:** v2.5 — practical pipeline, consciousness observer (local), blueprints 2026-07-16
 **Status:** Living thesis — expanded as each domain and crevice is verified  
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
@@ -92,8 +92,11 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 | Wet-lab & longevity depth | [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) |
 | Credibility hardening audit | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) |
 | Circuitry emergence spine | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) |
+| Practical pipeline | [`docs/PRACTICAL_PIPELINE.md`](docs/PRACTICAL_PIPELINE.md) |
+| Consciousness observer (local) | [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) |
+| Tech blueprints registry | [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) |
 
-*Generated: 2026-07-16T13:53:54.620938+00:00*
+*Generated: 2026-07-16T15:44:33.017723+00:00*
 <!-- README_TOC_END -->
 
 
@@ -718,6 +721,22 @@ Regenerate: `python scripts/build_credibility_depth_bundle.py` (lean routes + li
 Existing verified electrical panels (`Electrical_Power_Systems`, `Desktop_Application_Wiring_Spine`, `Trinary_Hardware_Live_Panel`) anchor Phase 0. ESP32 physical closure remains convenience-deferred; simulation panels stay authoritative.
 <!-- README_CIRCUITRY_ROADMAP_END -->
 
+<!-- README_PRACTICAL_PIPELINE_START -->
+### 9.8 Practical pipeline — local application
+
+Validation → recognition → application. The practical pipeline documents what comes **down** from verified math into local, owned, subscription-free systems.
+
+| Volume | Role |
+|--------|------|
+| [`docs/PRACTICAL_PIPELINE.md`](docs/PRACTICAL_PIPELINE.md) | Master pipeline — X-style predictions, applied domains, outcomes |
+| [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) | Local observer loop (QEMU + desktop sensors; **ESP32 deferred**) |
+| [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) | ~40 engineering blueprints → FSOT panel crosswalk |
+| [`data/intuitive_observation_fsot_map.yaml`](data/intuitive_observation_fsot_map.yaml) | Intuitive observations → testable FSOT derivations |
+| [`docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`](docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md) | Founding FSUFT-U → verified 2.1 reconciliation |
+
+Regenerate: `python scripts/build_practical_pipeline_bundle.py`
+<!-- README_PRACTICAL_PIPELINE_END -->
+
 ### 9.4 Founding 35 laws — verification status
 
 All **35/35** founding physics laws are mapped and verified in this repository:
@@ -806,6 +825,9 @@ python scripts/export_domain_citations.py --bundle verified_desktop
 | [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) | Tier 94/95 wet-lab & longevity |
 | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) | Hard credibility pillar audit |
 | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) | Circuitry & BOM emergence (Tier 96) |
+| [`docs/PRACTICAL_PIPELINE.md`](docs/PRACTICAL_PIPELINE.md) | Local application pipeline |
+| [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) | Consciousness observer (local, no ESP32) |
+| [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) | Tech blueprints crosswalk |
 <!-- README_APPENDIX_C_EXTRA_END -->
 
 ---

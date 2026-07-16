@@ -86,6 +86,12 @@ def main() -> int:
             "Tier 96 BOM emergence",
         ),
         ("Live ingest schedule", (ROOT / "data/publication/live_ingest_schedule.yaml").is_file(), "weekly refresh policy"),
+        (
+            "Practical pipeline",
+            (ROOT / "docs/PRACTICAL_PIPELINE.md").is_file()
+            and (ROOT / "data/publication/tech_blueprints_registry.json").is_file(),
+            "local application + blueprints",
+        ),
     ]
     pass_count = sum(1 for _, ok, _ in pillars if ok)
 
