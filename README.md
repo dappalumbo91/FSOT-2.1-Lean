@@ -288,7 +288,7 @@ FSOT does not verify a single silo — it verifies a **spine of 35 core scientif
 | Founding 35 laws | Dedicated founding physics panels (all mapped) |
 | Interdisciplinary meta | Cross-domain bridges, prereg scaffolds, live ingest spines |
 
-**Full verbose record:** [Appendix XII — Domain-by-Domain Scientific Coverage](#appendix-xii--domain-by-domain-scientific-coverage-2026-07-15) (auto-generated from live benchmarks).
+**Full verbose record:** [Appendix XII — Domain-by-Domain Scientific Coverage](#appendix-xii--domain-by-domain-scientific-coverage-2026-07-16) (auto-generated from live benchmarks).
 
 Regenerate:
 
