@@ -1,13 +1,20 @@
-﻿{
-    "source":  "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
-    "previous_archive_sha256":  "B0DBDB66E9201411D1A5D54FC810553D4F9A66D5E903A2EA5161364097CD9768",
-    "note":  "Restored certificate GREEN authority (D1D38A) from Desktop to I: master. GitHub main still had 8F865FE until push.",
-    "github_main_before_push":  "8F865FE6996FC416416C14DBC2F726A0511142263885CA540BC6A9CCD4D2EB1B",
-    "previous_backup":  "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\_authority_backups\\fsot_compute.B0DBDB_pre_repin_20260718_132830.py",
-    "repinned_at":  "2026-07-18T17:28:30.5192150Z",
-    "also_matches":  [
-                         "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py"
-                     ],
-    "certificate_authority":  "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
-    "authority_sha256":  "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70"
+{
+  "repinned_at": "2026-07-18T17:29:54.179057+00:00",
+  "authority_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+  "source_desktop": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "also_matches": [
+    "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py"
+  ],
+  "archive_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "previous_archive_sha256": "B0DBDB66E9201411D1A5D54FC810553D4F9A66D5E903A2EA5161364097CD9768",
+  "github_repo": "https://github.com/dappalumbo91/FSOT-2.1-Lean",
+  "github_commits": {
+    "first_repin_crlf_broken": "79a2e0c",
+    "exact_bytes_D1D38A": "b2c484e"
+  },
+  "github_main_verified_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+  "certificate_authority": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+  "compute_matches_certificate": true,
+  "gitattributes": "vendor/fsot_compute.py -text  # prevent CRLF hash drift",
+  "note": "Authority aligned: Desktop D1D38A = I: archive = GitHub main = certificate. B0DBDB backed up under vendor/_authority_backups."
 }
