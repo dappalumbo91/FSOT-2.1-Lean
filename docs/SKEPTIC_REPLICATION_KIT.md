@@ -30,11 +30,12 @@ python scripts/run_publication_verification_bundle.py
 
 ```bash
 python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep
-python scripts/query_fsot_domain_navigator.py --intent hubble_tension
+python scripts/query_fsot_domain_navigator.py --intent cosmology_cmb
+python scripts/query_fsot_domain_navigator.py --query hubble
 python scripts/audit_parameter_count.py
 ```
 
-**Expect:** Fuel Lab pooled ≤0.5%; H₀ tension row present; parameter audit **ZERO_FREE**.
+**Expect:** Fuel Lab pooled ≤0.5%; cosmology/Hubble panels present; parameter audit **ZERO_FREE**.
 
 ## Step 4 — Near-miss transparency (~1 min)
 

@@ -487,7 +487,8 @@ Query any scientific problem:
 
 ```bash
 python scripts/query_fsot_domain_navigator.py --intent quantum_entanglement
-python scripts/query_fsot_domain_navigator.py --intent hubble_tension
+python scripts/query_fsot_domain_navigator.py --intent cosmology_cmb
+python scripts/query_fsot_domain_navigator.py --query hubble
 python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine
 ```
 

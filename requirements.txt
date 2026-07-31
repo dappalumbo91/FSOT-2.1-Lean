@@ -4,3 +4,7 @@ sympy>=1.12
 pytest>=8.0
 PyYAML>=6.0
 pypdf>=4.0
+# Publication verification bundle figures (build_scientific_figures.py,
+# build_publication_figure_pack.py, obligation map, fuel/transporter panels).
+# Required for: python scripts/run_publication_verification_bundle.py
+matplotlib>=3.8
