@@ -20,6 +20,14 @@ BOOT_MODULE = FSTAR_DIR / "FSOTScalarBoot.fst"
 
 
 def resolve_fstar_exe() -> str | None:
+    try:
+        from tool_path_lib import find_fstar  # noqa: WPS433
+
+        hit = find_fstar()
+        if hit:
+            return hit
+    except Exception:
+        pass
     for name in ("fstar.exe", "fstar"):
         found = shutil.which(name)
         if found:
@@ -27,6 +35,19 @@ def resolve_fstar_exe() -> str | None:
     root = fstar_install_root(require=False)
     if root is not None:
         candidate = root / "bin" / "fstar.exe"
+        if candidate.exists():
+            return str(candidate)
+    # Portable archive + common local installs
+    for cand in (
+        Path(r"I:\FSOT-Physical-Archive\07_Portable-Toolchain\fstar\bin\fstar.exe"),
+        Path.home() / "tools" / "fstar-v2026.07.05" / "bin" / "fstar.exe",
+        ROOT / "tools" / "fstar" / "bin" / "fstar.exe",
+    ):
+        if cand.exists():
+            return str(cand)
+    home = os.environ.get("FSTAR_HOME")
+    if home:
+        candidate = Path(home) / "bin" / "fstar.exe"
         if candidate.exists():
             return str(candidate)
     return None

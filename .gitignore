@@ -28,3 +28,27 @@ data/domain_repro_bundles/
 # local PDF extracts (may contain personal material)
 docs/_extract_*
 
+# Large public catalog snapshots (re-download via scripts/ingest_mpcorb_catalog.py)
+vendor/mpcorb/MPCORB.DAT
+vendor/mpcorb/MPCORB.DAT.gz
+vendor/mpcorb/NEA.txt
+vendor/mpcorb/Distant.txt
+# Keep small AllCometEls optional; also large — ignore all raw MPC blobs
+vendor/mpcorb/*.DAT
+vendor/mpcorb/*.txt
+vendor/mpcorb/*.gz
+
+# Local verification toolchains (downloaded by scripts/setup_verification_tools.ps1)
+tools/z3/
+tools/cvc5/
+tools/fstar/
+tools/z3.zip
+tools/cvc5.zip
+tools/tla/tla2tools.jar
+tools/tool_paths.json
+# Keep tools/tla wrappers + tools/README if present; ignore heavy binaries above
+
+
+# TLC model-check state dumps
+verification/tla/states/
+

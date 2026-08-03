@@ -47,6 +47,7 @@ from cross_proof_lib import (  # noqa: E402
 
 OBL_CONNECTIVE = ROOT / "verification" / "obligations" / "connective_spine.json"
 OBL_FORMAL = ROOT / "verification" / "obligations" / "full_formal_spine.json"
+OBL_CATALOG = ROOT / "verification" / "obligations" / "scientific_catalog_spine.json"
 REPORT = ROOT / "data" / "cross_proof_verification_report.json"
 MANIFEST = ROOT / "data" / "cross_proof_verification_manifest.yaml"
 COQ_DIR = ROOT / "verification" / "coq"
@@ -197,6 +198,7 @@ def run_coq_full() -> dict:
             COQ_DIR / "StructuralProofSpine.v",
             *sorted(COQ_DIR.glob("TranscendentalBounds_*.v")),
             *sorted(COQ_DIR.glob("FullFormalSpine_*.v")),
+            *sorted(COQ_DIR.glob("ScientificCatalogSpine_*.v")),
         )
         if p.exists()
     ]
@@ -231,6 +233,8 @@ def _isabelle_theory_chunks(thy_dir: Path) -> list[dict]:
         chunks.append({"theory": path.stem, "file": path.name, "scope": "transcendental_bounds"})
     for path in sorted(thy_dir.glob("FullFormalSpine_*.thy")):
         chunks.append({"theory": path.stem, "file": path.name, "scope": "full_formal"})
+    for path in sorted(thy_dir.glob("ScientificCatalogSpine_*.thy")):
+        chunks.append({"theory": path.stem, "file": path.name, "scope": "scientific_catalog"})
     return chunks
 
 
@@ -648,13 +652,17 @@ def main() -> int:
         "export_cross_proof_obligations.py",
         "export_full_formal_obligations.py",
         "export_transcendental_bounds_obligations.py",
+        "export_scientific_catalog_obligations.py",
         "generate_cross_proof_artifacts.py",
         "generate_full_formal_coq_artifacts.py",
         "generate_transcendental_bounds_coq.py",
         "generate_full_formal_isabelle_artifacts.py",
         "generate_transcendental_bounds_isabelle.py",
         "generate_structural_proof_artifacts.py",
+        "generate_scientific_catalog_artifacts.py",
         "generate_rust_obligation_replay.py",
+        "run_smt_catalog_bounds.py",
+        "run_tla_domain_routing_check.py",
     ]
     for script in pipeline:
         r = subprocess.run([sys.executable, str(ROOT / "scripts" / script)], cwd=str(ROOT))
@@ -664,6 +672,11 @@ def main() -> int:
 
     connective = json.loads(OBL_CONNECTIVE.read_text(encoding="utf-8"))
     formal = json.loads(OBL_FORMAL.read_text(encoding="utf-8"))
+    catalog = (
+        json.loads(OBL_CATALOG.read_text(encoding="utf-8"))
+        if OBL_CATALOG.exists()
+        else {"obligation_count": 0, "obligations": [], "domain_count": 0}
+    )
     trans_path = ROOT / "verification" / "obligations" / "transcendental_bounds.json"
     transcendental = json.loads(trans_path.read_text(encoding="utf-8")) if trans_path.exists() else {
         "obligation_count": 0,
@@ -692,7 +705,24 @@ def main() -> int:
         ob for ob in formal["obligations"] if ob.get("kind") != "bundle_conj" and obligation_provable(ob)
     ]
     py_formal, py_formal_ok = python_verify(provable_formal, "full_formal_provable")
-    py_ok = py_conn_ok and py_formal_ok
+    catalog_obs = catalog.get("obligations") or []
+    py_catalog, py_catalog_ok = python_verify(catalog_obs, "scientific_catalog") if catalog_obs else ([], True)
+    py_ok = py_conn_ok and py_formal_ok and py_catalog_ok
+
+    smt_report_path = ROOT / "data" / "smt_catalog_bounds_report.json"
+    smt_report = (
+        json.loads(smt_report_path.read_text(encoding="utf-8"))
+        if smt_report_path.exists()
+        else {"status": "missing", "overall_ok": False}
+    )
+    smt_ok = bool(smt_report.get("overall_ok"))
+    tla_report_path = ROOT / "data" / "tla_domain_routing_report.json"
+    tla_report = (
+        json.loads(tla_report_path.read_text(encoding="utf-8"))
+        if tla_report_path.exists()
+        else {"status": "missing", "overall_ok": False}
+    )
+    tla_ok = bool(tla_report.get("overall_ok"))
 
     coq = run_coq_full()
 
@@ -819,6 +849,36 @@ def main() -> int:
             "isabelle_chunks": len(list((ROOT / "verification" / "isabelle").glob("TranscendentalBounds_[0-9]*.thy"))),
             "status": "exported",
         },
+        "scientific_catalog_spine": {
+            "purpose": "multi_prover_reproof_of_domain_residual_gates",
+            "obligation_count": catalog.get("obligation_count", len(catalog_obs)),
+            "domain_count": catalog.get("domain_count"),
+            "by_claim": catalog.get("by_claim"),
+            "python_decimal": {
+                "status": "passed" if py_catalog_ok else "failed",
+                "passed": sum(1 for r in py_catalog if r["passed"]),
+                "total": len(py_catalog),
+            },
+            "coq_chunks": len(list((ROOT / "verification" / "coq").glob("ScientificCatalogSpine_*.v"))),
+            "isabelle_chunks": len(
+                list((ROOT / "verification" / "isabelle").glob("ScientificCatalogSpine_*.thy"))
+            ),
+            "lean_module": "FSOT/Formal/ScientificCatalogSpine.lean",
+            "smt_bulk_bounds": {
+                "status": smt_report.get("status"),
+                "overall_ok": smt_ok,
+                "solver": smt_report.get("solver"),
+                "checked": smt_report.get("checked"),
+                "report": str(smt_report_path),
+            },
+        },
+        "pipeline_roles": {
+            "lean4_master_integrator": "Primary Real definitions, Mathlib-scale structures, domain certificates",
+            "coq_isabelle_fstar_rust": "Independent re-proof / export triangulation of numeric + catalog gates",
+            "smt_z3_cvc5_bulk": "Automated continuous residual / margin bounds on catalog obligations",
+            "tla_plus_state_flow": "Domain-routing / preregistered-fold execution state machine",
+            "no_new_provers": True,
+        },
         "frameworks": {
             "lean_connective": {"status": "passed" if lean_conn_ok else "failed"},
             "python_decimal": {
@@ -826,7 +886,11 @@ def main() -> int:
                 "connective_records": py_conn,
                 "full_formal_passed": sum(1 for r in py_formal if r["passed"]),
                 "full_formal_total": len(py_formal),
+                "scientific_catalog_passed": sum(1 for r in py_catalog if r["passed"]),
+                "scientific_catalog_total": len(py_catalog),
             },
+            "smt_catalog_bounds": smt_report,
+            "tla_domain_routing": tla_report,
             "coq": coq,
             "cross_refinement": {
                 "status": "passed" if refinement_ok else "failed",
@@ -877,9 +941,10 @@ def main() -> int:
             "transcendental_coq_isabelle": "coq_native_isabelle_native_intervals",
             "coq_connective_coverage_pct_of_lean_theorems": 1.43,
             "note": (
-                "Cross-proof triangulates exported numeric obligations; "
+                "Cross-proof triangulates exported numeric obligations and scientific catalog residual gates; "
                 "F* boot kernel uses oracle literals; Coq/Isabelle pi/e base intervals are native "
-                "(Isabelle via HOL-Decision_Procs.Approximation)."
+                "(Isabelle via HOL-Decision_Procs.Approximation). "
+                "SMT (Z3/CVC5 when present) bulk-checks continuous catalog bounds; TLA+ models routing flow."
             ),
         },
         "overall_ok": py_ok
@@ -895,7 +960,10 @@ def main() -> int:
             and fstar.get("status") == "passed"
             and fstar_refinement_ok
             and qemu_harness.get("status") == "passed"
-            and qemu_harness.get("disk_status") == "passed",
+            and qemu_harness.get("disk_status") == "passed"
+            and smt_ok
+            and tla_ok
+            and py_catalog_ok,
         "github_ready": margin_registry_count == 0
             and len(false_margin_violations) == 0
             and py_ok
@@ -906,11 +974,14 @@ def main() -> int:
             and rust.get("status") == "passed"
             and bridge_parity.get("status") == "passed"
             and fstar.get("status") == "passed"
-            and qemu_harness.get("status") == "passed",
+            and qemu_harness.get("status") == "passed"
+            and smt_ok
+            and tla_ok
+            and py_catalog_ok,
         "github_ready_note": (
-            "Formal numeric spine + QEMU bare-metal verified; "
-            f"{len(structural_bundle_excluded)} structural bundle_conj rows excluded by design; "
-            "ESP32 hardware is optional unless --require-esp32."
+            "Formal numeric spine + scientific catalog re-proof + SMT bulk bounds + TLA+ routing + "
+            f"QEMU bare-metal verified; {len(structural_bundle_excluded)} structural bundle_conj rows "
+            "excluded by design; ESP32 hardware is optional unless --require-esp32."
             if margin_registry_count == 0 and len(false_margin_violations) == 0
             else "Blocked until false margin violations cleared and wide verification stable."
         ),
@@ -921,7 +992,8 @@ def main() -> int:
             and isa.get("status") == "passed"
             and isa_refinement_ok
             and rust.get("status") == "passed"
-            and rust_refinement_ok,
+            and rust_refinement_ok
+            and py_catalog_ok,
         "four_way_verification": py_ok
             and coq.get("status") == "passed"
             and isa.get("status") == "passed"
@@ -940,8 +1012,9 @@ def main() -> int:
         "esp32_serial_ok": esp32_serial_ok,
         "esp32_build_ok": esp32_build_ok,
         "note": (
-            "Tier 91: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec "
-            "+ QEMU serial/disk boot + ESP32 RF observer (WiFi/BLE/ESP-NOW) harness."
+            "Tier 91: Lean master integrator + Coq/Isabelle/F*/Rust triangulation "
+            "+ scientific catalog residual re-proof + SMT bulk numerical bounds + TLA+ routing flow "
+            "+ QEMU serial/disk boot + ESP32 RF observer (optional)."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -1002,12 +1075,25 @@ def main() -> int:
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")
     print(
+        f"  scientific catalog obligations: {catalog.get('obligation_count', len(catalog_obs))} "
+        f"(domains {catalog.get('domain_count', 'n/a')})"
+    )
+    print(
         f"  provable: {len(provable_formal)} | atomic provable: {len(atomic_provable)} | "
         f"false margin violations: {margin_registry_count} | "
         f"structural bundles excluded: {len(structural_bundle_excluded)}"
     )
     print(f"  by_tier: {formal.get('by_tier')}")
     print(f"  python_decimal: {'PASS' if py_ok else 'FAIL'}")
+    print(
+        f"  scientific_catalog python: {'PASS' if py_catalog_ok else 'FAIL'} "
+        f"({sum(1 for r in py_catalog if r['passed'])}/{len(py_catalog)})"
+    )
+    print(
+        f"  smt_bulk_bounds: {smt_report.get('status')} "
+        f"(solver={smt_report.get('solver', 'n/a')})"
+    )
+    print(f"  tla_domain_routing: {tla_report.get('status')}")
     print(f"  lean connective: {'PASS' if lean_conn_ok else 'FAIL'}")
     print(f"  coq: {coq.get('status')} ({coq.get('chunks_passed', 0)}/{coq.get('chunk_count', 0)} chunks)")
     print(f"  cross_refinement: {'PASS' if refinement_ok else 'FAIL'}")

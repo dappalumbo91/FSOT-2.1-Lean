@@ -17,7 +17,13 @@ independent readers (and other AI systems) cannot confuse layers.
 2. **Stream evidence** is tagged `green_eligible: false` unless it is a real integrity check (e.g. PubChem MW vs literature).  
 3. **NIST**: γ and Catalan are **mathematical seeds** scored vs open literature — they are **not** rows in NIST fundamental-constants allascii. SI anchors (c, h, k_B, …) are scored vs **live NIST parse**.  
 4. **F\*** verifies **boot/kernel math + parity**, not all 402 domains.  
-5. **Cross-prover** triangulation is on **exported obligations**, not independent re-derivation of every catalog from pure type theory.
+5. **Cross-prover** triangulation is on **exported obligations**, not independent re-derivation of every catalog from pure type theory.  
+6. **MPCORB / comets** (`vendor/mpcorb/`, `data/mpcorb_fsot_benchmark.json` v2):  
+   - Layer **C:** Kepler n↔a integrity on full catalog.  
+   - Layer **B:** domain-routed `fsot_scaled` at correct **D_eff** (NEO/belt → Planetary_Science, distant → Astrophysics, comets → Meteorology).  
+   - Layer **A channels:** C_FACTOR, POOF, observer yin–yang gap, dimensional S ladder.  
+   - Refinement log: `docs/MPCORB_REFINEMENT_PROCESS.md` — mismatches → check D_eff interface first, not new free params.  
+7. **Deep cut:** `docs/VERIFICATION_GRANULARITY_AUDIT.md` — math vs 402 domains vs multi-prover export scope.
 
 ## Relative residual definition (Layer B)
 

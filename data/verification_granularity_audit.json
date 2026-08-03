@@ -1,0 +1,429 @@
+{
+  "generated_at": "2026-08-03T21:20:28.623027+00:00",
+  "purpose": "Granular verification coverage audit \u2014 math vs domains vs datasets",
+  "layers": {
+    "A_engine_math": {
+      "what": "Seed identities, raw_S structure, Lean/Coq/Isabelle/F*/Rust obligations",
+      "artifacts": [
+        "vendor/fsot_compute.py pin D1D38A",
+        "FSOT/Formal/Scalar.lean",
+        "verification/isabelle/FSOTScalarMath.thy",
+        "verification/fstar/FSOTScalarBoot.fst",
+        "verification/obligations/full_formal_spine.json"
+      ],
+      "does_not": "Prove external catalogs true without measurement"
+    },
+    "B_empirical_benchmarks": {
+      "what": "Per-domain seed-derived prediction vs measured anchors; green if pooled median \u2264 0.5%",
+      "artifacts": [
+        "data/*_benchmark.json",
+        "data/benchmark_margin_audit.json",
+        "data/publication/domain_atlas.csv"
+      ],
+      "counts": {
+        "benchmark_margin_domains": 405,
+        "green_gate_pass": 405,
+        "green_gate_fail": 0,
+        "atlas_rows": 402,
+        "record_sum_margin_audit": 762478,
+        "zero_residual_domains": 136
+      },
+      "does_not": "Mean multi-prover re-derived every raw data row from type theory"
+    },
+    "C_live_streams": {
+      "what": "Public APIs / catalogs reachable; holdouts; integrity samples",
+      "artifacts": [
+        "data/open_science_holdout_evaluation.json",
+        "vendor/mpcorb/",
+        "scripts/live_api_health_check.py"
+      ]
+    },
+    "multi_prover_translation": {
+      "what": "Export numeric/catalog *gate literals* and re-prove them in Coq/Isabelle/SMT/etc.",
+      "scientific_catalog_obligations": 1980,
+      "scientific_catalog_by_claim": {
+        "seed_identity": 5,
+        "seed_positive": 5,
+        "catalog_nonempty": 404,
+        "empirical_pooled_median_gate": 804,
+        "empirical_max_scalar_gate": 357,
+        "green_gate_pass_flag": 405
+      },
+      "full_formal_obligations": 2370,
+      "atomic_provable": 1863,
+      "smt_ok": true,
+      "tla_ok": true,
+      "cross_proof_overall_ok_last": true,
+      "honest_scope": "Provers check that exported residual numbers satisfy inequalities (e.g. 0.017 < 0.5). They do not re-ingest NIST/MAST/MPCORB inside the proof assistant."
+    }
+  },
+  "margin_audit": {
+    "benchmark_file_count": 405,
+    "green_gate_pass_count": 405,
+    "green_gate_fail_count": 0,
+    "threshold_pct": 0.5,
+    "domain_rows": 405,
+    "record_sum": 762478,
+    "median_of_domain_medians": 0.011093889935064888,
+    "max_domain_median": 0.3579695,
+    "zero_residual_domain_count": 136,
+    "zero_residual_domain_sample": [
+      "Creative_Arts_Math_Spine",
+      "Information_Theory_Public_Panel",
+      "Music_Harmonics_Public_Panel",
+      "Formula_Precision_Spine",
+      "Periodic_Table_Completion_Spine",
+      "Z164_Distant_Island_Prereg_Scaffold",
+      "Fuel_Thermochemistry_Public_Anchors",
+      "Materials_Genome_Crosswalk",
+      "materials_species_bridge_benchmark.json",
+      "Econophysics",
+      "FSOT_Aggregate_Organized_Panel",
+      "FSOT_Aggregate_Unified_DB",
+      "Initiation_Transformation_Archetype",
+      "Proof_Ledger_Closure_Spine",
+      "Pure_Mathematics",
+      "Quantum_Information",
+      "evolution_operon_benchmark.json",
+      "synthetic_biology_benchmark.json",
+      "planetary_atmospheres_benchmark.json",
+      "Domain_Coupling_Simulation_Refresh_Panel",
+      "Observer_Effect_Cross_Species_Panel",
+      "Ecology",
+      "Robotics_Control_Systems",
+      "Time_Emergence_Simulation",
+      "Fluid_Spacetime_Prereg_Validation_Panel"
+    ],
+    "near_zero_count": 1
+  },
+  "atlas": {
+    "rows": 402,
+    "kind": {
+      "core": 35,
+      "extension": 367
+    },
+    "coverage_tier": {
+      "A_strong": 115,
+      "B_verified": 287
+    },
+    "record_sum": 1075295
+  },
+  "benchmark_record_honesty_sample": {
+    "benchmark_files": 411,
+    "records_scanned": 300331,
+    "zero_error_pct_rows": 297369,
+    "nonzero_error_pct_rows": 2962,
+    "measured_equals_computed_rows": 18739,
+    "missing_measured_rows": 278655,
+    "top_eval_kinds": [
+      [
+        "kp_storm_classifier",
+        272314
+      ],
+      [
+        "post_glacial_recovery_classifier",
+        17320
+      ],
+      [
+        "freezing_month_classifier",
+        2399
+      ],
+      [
+        "fsot_prediction",
+        1625
+      ],
+      [
+        "streamflow_anomaly_classifier",
+        960
+      ],
+      [
+        "S_final",
+        572
+      ],
+      [
+        "shallow_earthquake_classifier",
+        500
+      ],
+      [
+        "moment_tensor_quality_classifier",
+        500
+      ],
+      [
+        "plate_margin_classifier",
+        500
+      ],
+      [
+        "crustal_plate_margin_classifier",
+        500
+      ],
+      [
+        "hp_storm_classifier",
+        357
+      ],
+      [
+        "pooled_median",
+        344
+      ],
+      [
+        "greenland_mass_decline_classifier",
+        253
+      ],
+      [
+        "dst_storm_classifier",
+        167
+      ],
+      [
+        "coupled_dst_kp_storm_classifier",
+        167
+      ],
+      [
+        "molecular_weight",
+        121
+      ],
+      [
+        "domain_benchmark_records",
+        120
+      ],
+      [
+        "depth_relay",
+        91
+      ],
+      [
+        "\u00a71 Foundation",
+        68
+      ],
+      [
+        "stability_classifier",
+        49
+      ],
+      [
+        "frb_repeater_classifier",
+        38
+      ],
+      [
+        "unknown",
+        36
+      ],
+      [
+        "\u00a7101 Atomization \u0394H_at",
+        32
+      ],
+      [
+        "opcode_present",
+        27
+      ],
+      [
+        "mt_operon_length",
+        25
+      ]
+    ],
+    "top_sources": [
+      [
+        "['I:\\\\FSOT-Physical-Archive\\\\02_FSOT-2.1-Lean-Full\\\\vendor\\\\application_wiring\\\\",
+        20
+      ],
+      [
+        "['extension_domains_manifest', 'domain_coupling_simulation_benchmark.json']",
+        7
+      ],
+      [
+        "['vendor/fsot_compute.py\\\\vendor\\\\fluid_spacetime\\\\cosmology_anomaly_deep_anchor",
+        4
+      ],
+      [
+        "['vendor/fsot_compute.py\\\\vendor\\\\superheavy_island\\\\distant_island_z128_z164_an",
+        4
+      ],
+      [
+        "['I:\\\\FSOT-Physical-Archive\\\\02_FSOT-2.1-Lean-Full\\\\vendor\\\\live_cache\\\\tier68\\\\",
+        4
+      ],
+      [
+        "['vendor/fsot_compute.py\\\\vendor\\\\lab_synthesis\\\\heavy_ion_reaction_anchors.json",
+        3
+      ],
+      [
+        "['vendor/fsot_compute.py\\\\vendor\\\\prereg_screens\\\\in_silico_screening_public_anc",
+        3
+      ],
+      [
+        "['vendor/fsot_compute.py\\\\vendor\\\\fusion\\\\fusion_public_anchors.json', 'plasma_p",
+        3
+      ],
+      [
+        "['vendor/fsot_compute.py\\\\vendor\\\\smiles\\\\FSOT_SMILES_Lab_Dataset.json', 'vendor",
+        3
+      ],
+      [
+        "vendor/fsot_compute.py\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
+        3
+      ],
+      [
+        "['vendor/fsot_compute.py\\\\vendor\\\\superheavy_island\\\\island_z120_z126_anchors.js",
+        3
+      ],
+      [
+        "['compactification_ladder_manifest.yaml']",
+        2
+      ],
+      [
+        "['OpenAlex', 'linguistics_lab']",
+        2
+      ],
+      [
+        "['open-meteo-archive', 'NOAA_NCEI_GHCND']",
+        2
+      ],
+      [
+        "['vendor/fsot_compute.py\\\\vendor\\\\formula_precision\\\\archetype_refinements.json'",
+        2
+      ],
+      [
+        "['I:\\\\FSOT-Physical-Archive\\\\02_FSOT-2.1-Lean-Full\\\\vendor\\\\circuit_components\\\\",
+        2
+      ],
+      [
+        "['vendor/fsot_compute.py\\\\vendor\\\\periodic_table\\\\undiscovered_element_prereg_ca",
+        2
+      ],
+      [
+        "['vendor/fsot_compute.py\\\\vendor\\\\periodic_table\\\\periodic_table_public_anchors.",
+        2
+      ],
+      [
+        "['I:\\\\FSOT-Physical-Archive\\\\03_FSOT-PublicData\\\\tier87_scientific_expansion\\\\qu",
+        2
+      ],
+      [
+        "['SMILES_quantum', 'NIST_CODATA']",
+        2
+      ]
+    ]
+  },
+  "scientific_catalog_spine": {
+    "obligation_count": 1980,
+    "domain_count": 405,
+    "by_claim": {
+      "seed_identity": 5,
+      "seed_positive": 5,
+      "catalog_nonempty": 404,
+      "empirical_pooled_median_gate": 804,
+      "empirical_max_scalar_gate": 357,
+      "green_gate_pass_flag": 405
+    },
+    "gate_value_count": 402,
+    "interpretation": "Each empirical_pooled_median_gate obligation is a literal inequality on a number copied from benchmark_margin_audit \u2014 multi-prover checks the inequality, not the original measurement pipeline."
+  },
+  "full_formal_spine": {
+    "obligation_count": 2370,
+    "modules_exported": 500,
+    "by_tier": {
+      "priors": 1909,
+      "extended": 184,
+      "bounds": 277
+    },
+    "by_kind_top": [
+      [
+        "nat_pos",
+        575
+      ],
+      [
+        "bundle_conj",
+        507
+      ],
+      [
+        "r_lt_lit_pure",
+        335
+      ],
+      [
+        "lt_lit",
+        213
+      ],
+      [
+        "lt_half",
+        148
+      ],
+      [
+        "int_tuple3_eq",
+        148
+      ],
+      [
+        "gt_lit",
+        135
+      ],
+      [
+        "pos",
+        101
+      ],
+      [
+        "eq_nat_arith",
+        32
+      ],
+      [
+        "nat_le_sym",
+        30
+      ],
+      [
+        "r_eq_lit",
+        28
+      ],
+      [
+        "eq_nat",
+        25
+      ],
+      [
+        "nat_gt_lit",
+        13
+      ],
+      [
+        "r_eq_sym",
+        12
+      ],
+      [
+        "r_le_lit",
+        11
+      ],
+      [
+        "r_le_sym",
+        11
+      ],
+      [
+        "r_nonneg",
+        10
+      ],
+      [
+        "lt",
+        10
+      ],
+      [
+        "r_interval_le_conj",
+        7
+      ],
+      [
+        "abs_diff_lt_lit",
+        7
+      ]
+    ],
+    "structural_bundles_excluded": 54
+  },
+  "verdicts": {
+    "is_only_pure_math": false,
+    "is_only_pure_math_reason": "Layer B has 405 green-gated domain residual audits over hundreds of thousands of records; Layer A is separate engine math.",
+    "verifies_all_402_domains_empirically": true,
+    "verifies_all_402_nuance": "Margin audit lists 405 domain rows (atlas 402). All 405 non-excluded domains currently green_gate_pass under \u22640.5% pooled median. However 136 domains report exact 0% residual \u2014 treat those as needing per-domain inspection (identity checks, classifiers, or perfect matches), not as deep predictive force.",
+    "multi_prover_rederives_datasets": false,
+    "multi_prover_rederives_datasets_reason": "ScientificCatalogSpine + FullFormalSpine re-prove *exported gate literals* and structural counts. Python (and domain builders) compute residuals against datasets first.",
+    "mpcorb_status": {
+      "integrated": true,
+      "objects": 1554101,
+      "kepler_median_pct": 1.5875572596619725e-06,
+      "fsot_structural_median_pct": 2.25109
+    }
+  },
+  "recommendations": [
+    "Treat zero-residual domains as a review queue (many may be structural identity or count checks).",
+    "Keep residual honesty tiers A/B/C separated in public claims.",
+    "MPCORB: advertise Kepler integrity + seed structural folds separately from 'orbit prediction'.",
+    "Long cross-proof run triangulates exports; re-run domain builders to refresh empirical truth."
+  ]
+}

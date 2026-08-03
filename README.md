@@ -30,7 +30,9 @@ Cosmology and the neural mind are **domain folds of one** scalar engine (pin D1D
 | **Neural monorepo (Allen / wet-lab)** | https://github.com/dappalumbo91/FSOT-2.1-Neural |
 | **Related embodiments (detail)** | [RELATED_EMBODIMENTS.md](RELATED_EMBODIMENTS.md) |
 | **Main narrative (plain language)** | [docs/FSOT_NARRATIVE_CORE.md](docs/FSOT_NARRATIVE_CORE.md) |
+| **Mathematical key (unified principle + domain recipe)** | [docs/FSOT_MATH_KEY.md](docs/FSOT_MATH_KEY.md) |
 | **Philosophy / consciousness spine** | [docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) |
+| **MPCORB full catalog refinement** | [docs/MPCORB_REFINEMENT_PROCESS.md](docs/MPCORB_REFINEMENT_PROCESS.md) |
 
 ### How to understand the viewpoint (plain language)
 
@@ -47,11 +49,11 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 ## Abstract
 
-Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine â€” built only from Ï€, e, Ï†, Î³, and G (Catalan) â€” evaluated against measured reality across **402 routed scientific domains (35 core + 367 extension)** and **536,740 empirical records**.
+Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan), **zero free parameters** — evaluated against measured reality across **403+ routed scientific domains (35 core + extensions)** and **~2.63M empirical records** (including the IAU **MPCORB** full minor-planet catalog at **~0.023%** pooled residual).
 
-The results, as of this edition: **394/394** public benchmark domains pass a â‰¤0.5% pooled error gate; cross-domain pooled median error is **0.013%**. On contested sectors where Î›CDM (Planck Collaboration 2018) and the Standard Model (PDG 2024) typically show ~15% baseline tension (Hâ‚€ per Riess et al. 2024; Ïƒâ‚ˆ; BBN proxies; hierarchy; dark-energy equation of state), FSOT unified readouts achieve **0.030%** pooled median across 13 observables.
+The results, as of this edition: **410/410** public benchmark files pass a ≤0.5% pooled error green gate; framework-wide domain medians sit in the **~0.01–0.03%** band. The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain.
 
-Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent proof frameworks**: Lean 4 (primary authority), Coq/Rocq, Isabelle/HOL, F* (Microsoft Research), and Rust executable obligation replay â€” **1,863 atomic obligations** with `overall_ok: true`. QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
+Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator), Coq/Rocq, Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (~1912 multi-prover obligations). QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
 
 FSOT further demonstrates that the same engine guides grounded engineering readouts: FSOT-designed alternative fuels (366 records, 0.039% pooled median), species-scale molecular catalogs, and black-hole / white-hole information-cycle panels â€” cross-verified against seed-scalar predictions, not post-hoc curve fits.
 

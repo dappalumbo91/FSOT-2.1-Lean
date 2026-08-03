@@ -63,14 +63,18 @@ Empirical agreement is **not** a substitute for formal math. It is a separate ga
 
 ---
 
-## 3. Five-prover gauntlet — honest roles
+## 3. High-assurance gauntlet — honest roles
+
+**Architecture rule:** Lean is master integrator; SMT bulk-checks continuous residual bounds; TLA+ checks domain-routing flow; Coq/Isabelle/F*/Rust re-prove exported obligations **including scientific catalog residual gates**. Do not add provers outside this core without a new property class. Full role map: `docs/FORMAL_PIPELINE_ROLES.md`.
 
 | Framework | What it actually verifies | What it does **not** prove alone |
 |-----------|---------------------------|-----------------------------------|
-| **Lean 4** | Primary authority: `FSOT.Formal.Scalar`, `Bounds`, `Theorems`, domain `*Priors` certificates | External measured catalogs |
-| **Python decimal** | Independent recompute of exported numeric obligations | Proof of transcendental identities |
-| **Coq/Rocq** | Same exported obligations; structural bundle splits; some transcendental certificates | Full re-proof of every Lean prior proof term (~1.4% connective-only coverage of full theorem count historically) |
-| **Isabelle/HOL** | **Now:** scalar engine math in `FSOTScalarMath` + FullFormalSpine literals + fixed structural spine | Empirical 402-domain catalog truth |
+| **Lean 4** | Primary authority: `FSOT.Formal.Scalar`, `Bounds`, `Theorems`, domain `*Priors`, `ScientificCatalogSpine` | External measured catalogs as physics truth |
+| **Python decimal** | Independent recompute of exported numeric + catalog obligations | Proof of transcendental identities |
+| **Coq/Rocq** | FullFormalSpine + **ScientificCatalogSpine** residual lemmas; structural splits; some transcendental certificates | Full re-proof of every Lean prior proof term (~1.4% connective-only coverage of full theorem count historically) |
+| **Isabelle/HOL** | Scalar engine math in `FSOTScalarMath` + FullFormalSpine + **ScientificCatalogSpine** | Empirical catalogs without export |
+| **SMT (Z3/CVC5)** | Bulk continuous residual / margin conjunction (`verification/smt/`) | Ontology or routing control-flow |
+| **TLA+** | Domain-routing / preregistered-fold state machine invariants | Residual arithmetic |
 | **F\*** | Boot scalar kernel structure with oracle transcendental literals | Full real analysis library of cos/sin/sqrt |
 | **Rust** | Executable f64 obligation replay + scalar kernel parity | Abstract real analysis |
 

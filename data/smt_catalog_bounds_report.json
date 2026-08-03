@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-08-03T21:36:10.921579+00:00",
+  "purpose": "SMT bulk numerical bounds on scientific catalog residual gates",
+  "obligation_source": "verification/obligations/scientific_catalog_spine.json",
+  "obligation_count": 1912,
+  "domain_count": 410,
+  "smt2_bundle": "verification/smt/scientific_catalog_bounds.smt2",
+  "smt2_assert_count": 1912,
+  "solver": "z3",
+  "external_solver": {
+    "status": "passed",
+    "answer": "sat",
+    "returncode": 0,
+    "stdout_tail": "sat\n"
+  },
+  "python_decimal": {
+    "status": "passed",
+    "checked": 1912,
+    "failed_ids": [],
+    "failed_count": 0
+  },
+  "checked": 1912,
+  "status": "passed",
+  "overall_ok": true,
+  "role": "Bulk continuous residual / margin checks for the catalog atlas. Does not replace Lean master definitions or interactive multi-prover lemmas.",
+  "note": "Install z3 or cvc5 on PATH for external SMT; otherwise python_decimal_fallback still machine-checks every exported catalog obligation."
+}

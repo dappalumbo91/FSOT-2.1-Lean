@@ -1,6 +1,8 @@
 # FSOT Cross-Proof Verification (Tiers 79–91 + scalar math core)
 
-Independent re-proof of exported Lean numeric obligations across **Python decimal**, **Coq**, **Isabelle**, **Rust f64**, **F\***, and **QEMU bare-metal** runtime.
+Independent re-proof of exported Lean numeric obligations — **and scientific catalog residual gates** — across **Python decimal**, **Coq**, **Isabelle**, **SMT (Z3/CVC5)**, **TLA+ routing flow**, **Rust f64**, **F\***, and **QEMU bare-metal** runtime.
+
+Pipeline roles (Lean master · SMT bulk · TLA+ flow): `docs/FORMAL_PIPELINE_ROLES.md`.
 
 ## Live APIs (stream; bulk download optional)
 
@@ -16,10 +18,11 @@ Isabelle is **not** limited to structure-of-the-rest checks. The session now inc
 |--------|------|
 | **`FSOTScalarMath.thy`** | Seed constants, `term1/term2/term3`, `raw_S` / `scaled_S`, proved identities (`raw_S = t1+t2+t3`, `growth_term > 0`, `quirk_mod = 1` when unobserved, domain routes, native π/e intervals) |
 | `FullFormalSpine_*.thy` | Exported numeric certificates (literal inequalities / counts) — triangulation of Lean export |
+| `ScientificCatalogSpine_*.thy` | **Scientific residual gates** (pooled median / max-scalar / green flags / seeds) — multi-prover catalog re-proof |
 | `StructuralProofSpine.thy` | Bundle conjuncts with **real positive literals** (fixed: no longer collapses `pos` to `0 < 1`) |
 | `TranscendentalBounds*.thy` | π/e interval lemmas (native Approximation + certified points) |
 
-**Honest scope:** FullFormalSpine still triangulates *exported numeric obligations*, not a full re-derivation of every Lean `FSOT.Formal.*Priors` proof term. The scalar engine math lives in `FSOTScalarMath.thy` (Isabelle) and `FSOT/Formal/Scalar.lean` + `Bounds.lean` + `Theorems.lean` (Lean primary authority).
+**Honest scope:** FullFormalSpine + ScientificCatalogSpine triangulate *exported numeric / residual-gate obligations*, not a full re-derivation of every Lean `FSOT.Formal.*Priors` proof term from raw telescope pixels. The scalar engine math lives in `FSOTScalarMath.thy` (Isabelle) and `FSOT/Formal/Scalar.lean` + `Bounds.lean` + `Theorems.lean` (Lean primary authority).
 
 ## Run (authoritative)
 
@@ -44,7 +47,9 @@ This regenerates:
 |-------|-------|------------|
 | Connective spine | 24 obligations | Lean → Python → Coq → Isabelle |
 | Full formal spine | 1,241 provable obligations | same + Rust f64 replay |
+| **Scientific catalog spine** | ~1,980 residual / seed gates | Python + Coq + Isabelle + Lean export + **SMT bulk** |
 | Transcendental bounds | 68 lemmas | Coq/Isabelle with **certified π/e axioms** (2 intervals deferred) |
+| Domain-routing flow | finite TLA+ model | `verification/tla/FSOTDomainRouting.tla` |
 | Boot scalar | 1 canonical value | Rust no_std ↔ Python ↔ F\* constants ↔ QEMU UART |
 
 **Coverage honesty:** Coq connective spine = **~1.43%** of Lean theorem count. Cross-proof triangulates **exported numeric obligations**, not every `FSOT.Formal.*` module. Engine math is separately formalized in Lean `FSOT.Formal.*` and Isabelle `FSOTScalarMath.thy` (see `docs/VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`).
@@ -69,9 +74,11 @@ powershell -ExecutionPolicy Bypass -File scripts/install_isabelle_windows.ps1
 
 ```
 verification/
-  obligations/          exported JSON from Lean
-  coq/                  generated .v chunks
-  isabelle/             generated .thy chunks
+  obligations/          exported JSON (connective, full formal, scientific catalog, …)
+  coq/                  generated .v chunks (incl. ScientificCatalogSpine_*)
+  isabelle/             generated .thy chunks (incl. ScientificCatalogSpine_*)
+  smt/                  SMT-LIB2 bulk residual bounds
+  tla/                  FSOTDomainRouting.tla (preregistered-fold flow)
   rust/fsot_obligation_replay/
   fstar/                FSOTScalarKernel.fst, FSOTScalarBoot.fst
   qemu/                 golden_boot_serial.txt, golden_boot_disk.txt

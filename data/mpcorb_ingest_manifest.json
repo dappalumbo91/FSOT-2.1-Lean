@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-08-03T21:20:20.185448+00:00",
+  "source": "IAU Minor Planet Center (Harvard-Smithsonian CfA)",
+  "attribution": "MPCORB / AllCometEls \u00a9 Minor Planet Center. Free public download; include header attribution when redistributing (see file header).",
+  "docs": {
+    "format": "https://minorplanetcenter.net/iau/info/MPOrbitFormat.html",
+    "index": "https://minorplanetcenter.net/iau/MPCORB.html"
+  },
+  "note": "Catalog updates daily. Object counts change. For bit-for-bit identity with a published third-party run, match their SHA-256 snapshot date.",
+  "files": {
+    "MPCORB.DAT.gz": {
+      "path": "vendor/mpcorb/MPCORB.DAT.gz",
+      "url": "https://minorplanetcenter.net/iau/MPCORB/MPCORB.DAT.gz",
+      "bytes": 93253951,
+      "sha256": "45333ebfcf588d60986b23e9dd915e1dac07a94c5d5559b6c4e84977df6d5f5a",
+      "orbit_rows_parsed": 1554101,
+      "decompressed": {
+        "path": "vendor/mpcorb/MPCORB.DAT",
+        "bytes": 315484854,
+        "sha256": "8744ac82c9c9fa60d313befd12e14029bc050ef18f148d8de75a0dfb685749de"
+      }
+    },
+    "AllCometEls.txt": {
+      "path": "vendor/mpcorb/AllCometEls.txt",
+      "url": "https://minorplanetcenter.net/iau/MPCORB/AllCometEls.txt",
+      "bytes": 785595,
+      "sha256": "47ed6cc4bc01ec1f229801e79168d1d6888a6ba3ce85fbc769da03f29760724c",
+      "line_count_approx": 4645
+    },
+    "NEA.txt": {
+      "path": "vendor/mpcorb/NEA.txt",
+      "url": "https://minorplanetcenter.net/iau/MPCORB/NEA.txt",
+      "bytes": 8542037,
+      "sha256": "1cfdd7443ac9c847bef2a076612e3eee6a2b3363741859c1b18b45fd9d52ac8b",
+      "line_count_approx": 42079
+    },
+    "Distant.txt": {
+      "path": "vendor/mpcorb/Distant.txt",
+      "url": "https://minorplanetcenter.net/iau/MPCORB/Distant.txt",
+      "bytes": 1645721,
+      "sha256": "aa623901d628fd8cfe2d3c35701e7ca05fd9274b9e263761982b68c78ab4a31c",
+      "line_count_approx": 8107
+    }
+  },
+  "mpcorb_object_count": 1554101,
+  "comet_line_count": 4645
+}

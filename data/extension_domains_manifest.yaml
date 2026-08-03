@@ -264,6 +264,25 @@ extension_domains:
     benchmark_data: data/small_body_orbits_benchmark.json
     lean_module: FSOT.Formal.SmallBodyOrbitsPriors
     note: Moon + Ceres/Vesta/Eros/Halley JPL EC/QR semi-major perturbation checks
+  MPCORB_Minor_Planet_Catalog:
+    tier: 23
+    D_eff: 21
+    delta_psi: 0.9
+    recent_hits: 1
+    observed: true
+    maps_to_lean:
+    - astronomical
+    - planetary
+    ingest_script: scripts/ingest_mpcorb_catalog.py
+    build_script: scripts/build_mpcorb_fsot_benchmark.py
+    refinement_doc: docs/MPCORB_REFINEMENT_PROCESS.md
+    benchmark_data: data/mpcorb_fsot_benchmark.json
+    lean_module: FSOT.Formal.MpcorbMinorPlanetCatalogPriors
+    note: >
+      IAU MPC MPCORB (~1.55M minor planets) + AllCometEls; Kepler integrity (Layer C)
+      + domain-routed fsot_scaled at D_eff interfaces (Planetary_Science / Astronomy /
+      Astrophysics / Meteorology); full C_FACTOR / POOF / observer yin-yang channels;
+      zero free parameters; refinement ledger data/mpcorb_refinement_ledger.json
   Magnetosphere:
     tier: 22
     D_eff: 14

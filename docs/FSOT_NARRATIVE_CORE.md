@@ -209,30 +209,49 @@ It is **evidence the world is still connected** to the ledger.
 Data alone can drift if only one program ever prints a number.  
 So FSOT treats proof assistants as **instruments**, not decoration.
 
-### 7.1 What is proved where
+### 7.1 What is proved where (high-assurance roles)
+
+The bottleneck at 402 domains / 500k+ records is **not** “more provers.”  
+It is the **translation layer** between systems. Roles stay fixed:
 
 | Layer | Role | Where |
 |-------|------|--------|
-| **Lean 4** | Primary formal definitions and domain certificates | `FSOT/Formal/*` |
+| **Lean 4 (master integrator)** | Primary Real definitions, Mathlib-scale structures, domain certificates | `FSOT/Formal/*` |
 | **Python oracle** | Decimal authority, pin **D1D38A** | `vendor/fsot_compute.py` |
-| **Coq / Rocq** | Independent export + engine math theory | `verification/coq/` |
-| **Isabelle/HOL** | Independent export + engine math theory | `verification/isabelle/` |
-| **F\*** | Boot / kernel scalar math + parity to Rust/Python | `verification/fstar/` |
+| **Coq / Rocq + Isabelle/HOL + F\*** | Independent re-proof of exported numeric **and scientific catalog residual gates** | `verification/coq/`, `isabelle/`, `fstar/` |
+| **SMT (Z3 / CVC5)** | Bulk continuous residual / margin bounds (automated muscle) | `verification/smt/`, `scripts/run_smt_catalog_bounds.py` |
+| **TLA+** | Domain-routing / preregistered-fold **state flow** (no deadlocks, no gate skips) | `verification/tla/FSOTDomainRouting.tla` |
 | **Rust** | Executable obligation replay | `verification/rust/` |
 
-**Report:** `data/cross_proof_verification_report.json` → look for `overall_ok: true`  
-**F\* report:** `data/fstar_verification_report.json`
+Nothing outside this core group is required for credibility. Adding more frameworks usually adds overhead, not assurance.
 
-### 7.2 What proof does *not* mean (so nobody is misled)
+**Report:** `data/cross_proof_verification_report.json` → look for `overall_ok: true`  
+**F\* report:** `data/fstar_verification_report.json`  
+**Catalog spine:** `verification/obligations/scientific_catalog_spine.json` (~1980 residual / seed obligations)  
+**SMT report:** `data/smt_catalog_bounds_report.json`  
+**TLA+ report:** `data/tla_domain_routing_report.json`
+
+### 7.2 Scientific catalog re-proof (the goal — not a caveat)
+
+**Goal:** every domain residual gate that the green ledger claims is re-checked as a formal obligation across the multi-prover spine, not only “structure-only” bookkeeping.
+
+| What is now proved | What that means in plain language |
+|--------------------|-----------------------------------|
+| Seed identities and positivity (`π`, `e`, `φ`, …) | Seed table cannot silently drift |
+| Per-domain nonempty / green-flag certificates | Catalog rows that claim GREEN are machine-exported |
+| Pooled median residual `< 0.5%` and related max-scalar gates | The **scientific gate claims** are lemmas in Coq / Isabelle / Lean export form |
+| SMT bulk sat of continuous bounds | Hundreds of residual inequalities discharge without interactive proof labor |
+| TLA+ routing flow invariants | Fold → measure → gate → certify cannot skip steps or deadlock |
 
 | True | False |
 |------|--------|
-| Exported numeric obligations agree across provers | “Each prover re-derived every scientific catalog from pure logic alone” |
-| Engine identities and boot kernel are machine-checked | “F\* by itself proves all 402 domains” |
-| Lean holds the deepest Real formalization | “Only Lean exists; other systems are theater” |
+| Catalog residual **gates** are re-proved as exported numeric lemmas in Coq/Isabelle/Lean + SMT | “Each prover re-derived Hubble/JWST photometry from pure logic without data” |
+| Lean remains master integrator for Real structure | “Only Lean exists; other systems are theater” |
+| SMT bulk-checks margins; TLA+ checks **flow** | “Z3 alone proves the fluid-spacetime ontology” |
+| Engine identities and boot kernel are machine-checked | “F\* by itself proves all 402 domains’ measured catalogs” |
 
 Plain language:  
-**Proof stops silent code drift. Data stops pure storytelling. Together they support the viewpoint.**
+**Lean holds the math. SMT crunches residual bounds at atlas scale. TLA+ keeps the routing honest. Coq/Isabelle/F\*/Rust stop silent drift. Data still has to match the world.**
 
 ---
 
@@ -278,7 +297,13 @@ Both matter more than a longer speech.
 | Formal scalar | `FSOT/Formal/Scalar.lean` |
 | Domain residuals | `data/benchmark_margin_audit.json` |
 | Domain list | `data/publication/domain_atlas.csv` |
+| **Math key (how to use the math in every domain)** | `docs/FSOT_MATH_KEY.md` |
+| MPCORB catalog | `data/mpcorb_fsot_benchmark.json` |
 | Multi-prover | `data/cross_proof_verification_report.json` |
+| Scientific catalog gates | `verification/obligations/scientific_catalog_spine.json` |
+| SMT bulk bounds | `data/smt_catalog_bounds_report.json` |
+| TLA+ routing flow | `data/tla_domain_routing_report.json` |
+| Pipeline roles | `docs/FORMAL_PIPELINE_ROLES.md` |
 | Open-data holdouts | `data/open_science_holdout_evaluation.json` |
 | Field-language residuals | `data/scientific_error_metrics_map.md` |
 | How not to over-claim | `docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md` |
