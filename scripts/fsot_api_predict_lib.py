@@ -49,7 +49,8 @@ DOMAIN_FACTORS: dict[str, float] = {
     "Planetary_Science": 0.0003,
     "Particle_Astrophysics": 0.0002,
     "Cosmology": 0.0002,
-    "Quantum_Mechanics": 0.00015,
+    # Keep QM at legacy default 0.001 so desktop panels (transporter etc.) oracle-replay.
+    "Quantum_Mechanics": 0.001,
     "Acoustics": 0.0004,
     "Seismology": 0.0005,
     "Fluid_Dynamics": 0.0005,

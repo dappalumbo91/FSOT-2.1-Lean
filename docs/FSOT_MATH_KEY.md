@@ -315,6 +315,7 @@ python scripts/run_tla_domain_routing_check.py
 | Formal roles | `docs/FORMAL_PIPELINE_ROLES.md` |
 | MPCORB refinement | `docs/MPCORB_REFINEMENT_PROCESS.md` |
 | This key | `docs/FSOT_MATH_KEY.md` |
+| **One-pager (PDF)** | [`docs/FSOT_MATH_KEY_ONEPAGER.pdf`](FSOT_MATH_KEY_ONEPAGER.pdf) · MD twin `docs/FSOT_MATH_KEY_ONEPAGER.md` |
 
 ---
 

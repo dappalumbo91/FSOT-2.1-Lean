@@ -31,6 +31,7 @@ Cosmology and the neural mind are **domain folds of one** scalar engine (pin D1D
 | **Related embodiments (detail)** | [RELATED_EMBODIMENTS.md](RELATED_EMBODIMENTS.md) |
 | **Main narrative (plain language)** | [docs/FSOT_NARRATIVE_CORE.md](docs/FSOT_NARRATIVE_CORE.md) |
 | **Mathematical key (unified principle + domain recipe)** | [docs/FSOT_MATH_KEY.md](docs/FSOT_MATH_KEY.md) |
+| **Math key one-pager (PDF, scientists)** | [docs/FSOT_MATH_KEY_ONEPAGER.pdf](docs/FSOT_MATH_KEY_ONEPAGER.pdf) |
 | **Philosophy / consciousness spine** | [docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) |
 | **MPCORB full catalog refinement** | [docs/MPCORB_REFINEMENT_PROCESS.md](docs/MPCORB_REFINEMENT_PROCESS.md) |
 
