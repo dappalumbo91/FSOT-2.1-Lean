@@ -1,25 +1,18 @@
 # Fresh-clone repro report
 
-- **When:** 2026-08-03 (local)
+- **When:** 2026-08-03T19:27:52.8478617-04:00
 - **Repo:** https://github.com/dappalumbo91/FSOT-2.1-Lean.git
-- **Commit:** ebc7264e41e0bbd51e0db7722c8d0d83c7f25332
-- **OutDir:** %TEMP%\fsot_fresh_clone_g5
-- **Gate:** **PASS** (after fail_count==0 fix)
+- **Commit:** 63542b26537d9b4e73564e34507aefa4cd2e004a
+- **OutDir:** C:\Users\damia\AppData\Local\Temp\fsot_fresh_clone_g5b
+- **Gate exit:** 0
 
-## Results from clean clone
-| Check | Result |
-|-------|--------|
-| Green gate | 412/412 fail=0 |
-| Tier scalar closed | true |
-| Label A | true |
-| Label B | true |
-| Cross overall_ok | true |
+## Commands run
+1. `git clone --depth 1`
+2. `pip install -r requirements.txt`
+3. `python scripts/audit_all_benchmark_margins.py`
+4. `python scripts/build_tier_scalar_precision_closure.py`
+5. `python scripts/build_toe_gap_closure.py`
+6. publication bundle skipped
 
-## Commands
-1. git clone --depth 1
-2. pip install -r requirements.txt
-3. python scripts/audit_all_benchmark_margins.py
-4. python scripts/build_tier_scalar_precision_closure.py
-5. python scripts/build_toe_gap_closure.py
-
-Note: first gate script treated `fail_count=0` as missing due to Python falsy `or`; fixed in `scripts/fresh_clone_repro.ps1`.
+## Result
+**PASS** — green gate, tier aspiration, Label A + Label B.
