@@ -412,3 +412,12 @@ proprietary_boundary:
       - id: owid_co2_codebook
         url: https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-codebook.csv
         auth: none
+
+
+  mast_astroquery:
+    description: "MAST public observations via astroquery (no login for public products)"
+    auth: none
+    docs: https://astroquery.readthedocs.io/en/latest/mast/mast.html
+    ingest: scripts/ingest_mast_astroquery.py
+    lib: scripts/mast_astroquery_lib.py
+    notes: "Metadata/product lists public; FITS download optional size-capped"

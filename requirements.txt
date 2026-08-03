@@ -8,3 +8,8 @@ pypdf>=4.0
 # build_publication_figure_pack.py, obligation map, fuel/transporter panels).
 # Required for: python scripts/run_publication_verification_bundle.py
 matplotlib>=3.8
+# Optional MAST / astronomy open archive (no login for public products):
+#   pip install astroquery astropy
+#   python scripts/ingest_mast_astroquery.py --object M1
+# astroquery>=0.4.7
+# astropy>=5.0

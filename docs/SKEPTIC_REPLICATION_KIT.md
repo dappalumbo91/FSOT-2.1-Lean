@@ -1,8 +1,11 @@
 # FSOT Skeptic Replication Kit
 
-*15-minute verification path · 2026-07-16 · commit `4dcac40974a8`*
+*15-minute verification path · updated 2026-08-03 · Desktop/GitHub spine*
 
 Run this if you want to **break FSOT fast** — not read 12,000 lines of appendix first.
+
+Plain-language ladder: [`CLEAR_PATH_FOR_INDEPENDENTS.md`](CLEAR_PATH_FOR_INDEPENDENTS.md) ·  
+Claim tiers: [`RESIDUAL_HONESTY_AND_CLAIM_TIERS.md`](RESIDUAL_HONESTY_AND_CLAIM_TIERS.md)
 
 ## Step 1 — Clone and install (~2 min)
 
@@ -22,9 +25,10 @@ python scripts/run_publication_verification_bundle.py
 
 | Check | Expected |
 |-------|----------|
-| Benchmark green | 394/394 |
+| Benchmark green | **405/405** fail 0 (`data/benchmark_margin_audit.json`) |
 | Cross-proof | `overall_ok: true` in `data/cross_proof_verification_report.json` |
 | Contested pooled | ~0.030% in `data/contested_observables_closure.json` |
+| Open-science holdouts | `overall_ok: true` in `data/open_science_holdout_evaluation.json` |
 
 ## Step 3 — Spot-check three domains (~3 min)
 

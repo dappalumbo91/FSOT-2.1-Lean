@@ -1,0 +1,265 @@
+{
+  "source": "MAST",
+  "auth": "none_public",
+  "docs": "https://astroquery.readthedocs.io/en/latest/mast/mast.html",
+  "objectname": "M1",
+  "obs_collection": "HST",
+  "query_rows_total": 1588,
+  "returned": 5,
+  "observations": [
+    {
+      "obsid": "212637384",
+      "obs_id": "if8506050",
+      "target_name": "CRAB-MOSAIC-P6",
+      "instrument_name": "WFC3/UVIS",
+      "filters": "F631N",
+      "t_exptime": 3890.0,
+      "s_ra": 83.62995833333,
+      "s_dec": 22.04523611111,
+      "jpegURL": "mast:HST/product/if8506050_drz.jpg",
+      "dataURL": "mast:HST/product/if8506050_drz.fits",
+      "obs_collection": "HST"
+    },
+    {
+      "obsid": "212511446",
+      "obs_id": "hst_17500_07_wfc3_uvis_f487n_if8507",
+      "target_name": "CRAB-HB-FIELD1",
+      "instrument_name": "WFC3/UVIS",
+      "filters": "F487N",
+      "t_exptime": 7808.0,
+      "s_ra": 83.62176416667,
+      "s_dec": 21.99370833333,
+      "jpegURL": "mast:HST/product/hst_17500_07_wfc3_uvis_f487n_if8507_drc.jpg",
+      "dataURL": "mast:HST/product/hst_17500_07_wfc3_uvis_f487n_if8507_drc.fits",
+      "obs_collection": "HST"
+    },
+    {
+      "obsid": "87765371",
+      "obs_id": "hst_skycell-p1784x19y11_acs_wfc_f606w-pol120v_all",
+      "target_name": "CRAB",
+      "instrument_name": "ACS/WFC",
+      "filters": "F606W",
+      "t_exptime": 29700.0,
+      "s_ra": 83.63379166667,
+      "s_dec": 22.01855555556,
+      "jpegURL": "mast:HST/product/hst_skycell-p1784x19y11_acs_wfc_f606w-pol120v_all_drc.jpg",
+      "dataURL": "mast:HST/product/hst_skycell-p1784x19y11_acs_wfc_f606w-pol120v_all_drc.fits",
+      "obs_collection": "HST"
+    },
+    {
+      "obsid": "207536375",
+      "obs_id": "hst_8222_08_wfpc2_pc_f502n_u5d108",
+      "target_name": "CRAB-FIELD-8",
+      "instrument_name": "WFPC2/PC",
+      "filters": "F502N",
+      "t_exptime": 5200.0,
+      "s_ra": 83.644,
+      "s_dec": 22.06363055556,
+      "jpegURL": "mast:HST/product/hst_8222_08_wfpc2_pc_f502n_u5d108_drz.jpg",
+      "dataURL": "mast:HST/product/hst_8222_08_wfpc2_pc_f502n_u5d108_drz.fits",
+      "obs_collection": "HST"
+    },
+    {
+      "obsid": "26399126",
+      "obs_id": "hst_10526_03_acs_wfc_f606w-pol60v_j9fx03",
+      "target_name": "CRAB",
+      "instrument_name": "ACS/WFC",
+      "filters": "F606W",
+      "t_exptime": 2300.0,
+      "s_ra": 83.63379166667,
+      "s_dec": 22.01855555556,
+      "jpegURL": "mast:HST/product/hst_10526_03_acs_wfc_f606w-pol60v_j9fx03_drc.jpg",
+      "dataURL": "mast:HST/product/hst_10526_03_acs_wfc_f606w-pol60v_j9fx03_drc.fits",
+      "obs_collection": "HST"
+    }
+  ],
+  "fetched_at": "2026-08-03T15:34:32.643213+00:00",
+  "product_manifest_first_obs": {
+    "product_count": 20,
+    "products_sample": [
+      {
+        "productFilename": "u6h93601m_cgr.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "CGR",
+        "size": 31680,
+        "dataURI": "mast:HST/product/u6h93601m_cgr.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS CGR file - Calibrated data WFPC/FOC"
+      },
+      {
+        "productFilename": "u6h93601m_dgr.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "DGR",
+        "size": 31680,
+        "dataURI": "mast:HST/product/u6h93601m_dgr.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS DGR file - Raw data WFPC/FOC"
+      },
+      {
+        "productFilename": "u6h93601j_jif.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "JIF",
+        "size": 17280,
+        "dataURI": "mast:HST/product/u6h93601j_jif.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS JIF file"
+      },
+      {
+        "productFilename": "u6h93601j_jit.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "JIT",
+        "size": 11520,
+        "dataURI": "mast:HST/product/u6h93601j_jit.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS JIT file"
+      },
+      {
+        "productFilename": "u6h93601m_q0f.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "Q0F",
+        "size": 5184000,
+        "dataURI": "mast:HST/product/u6h93601m_q0f.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS Q0F file - Raw data quality WFPC/WFPC2/FOC/FOS/GHRS/HSP"
+      },
+      {
+        "productFilename": "u6h93601m_q0m.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "Q0M",
+        "size": 5178240,
+        "dataURI": "mast:HST/product/u6h93601m_q0m.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS Q0M file - Raw data quality WFPC2"
+      },
+      {
+        "productFilename": "u6h93601m_q1f.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "Q1F",
+        "size": 103680,
+        "dataURI": "mast:HST/product/u6h93601m_q1f.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS Q1F file - Calibrated data quality WFPC/WFPC2/FOC/FOS/GHRS/HSP"
+      },
+      {
+        "productFilename": "u6h93601m_q1m.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "Q1M",
+        "size": 109440,
+        "dataURI": "mast:HST/product/u6h93601m_q1m.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS Q1M file - Calibrated data quality WFPC2"
+      },
+      {
+        "productFilename": "u6h93601m_shm.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "SHM",
+        "size": 34560,
+        "dataURI": "mast:HST/product/u6h93601m_shm.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS SHM file - Engineering telemetry WFPC2"
+      },
+      {
+        "productFilename": "u6h93601m_trl.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "TRL",
+        "size": 17280,
+        "dataURI": "mast:HST/product/u6h93601m_trl.fits",
+        "obs_id": "u6h93601m",
+        "description": "Pipeline processing logs"
+      },
+      {
+        "productFilename": "u6h93601m_x0f.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "X0F",
+        "size": 103680,
+        "dataURI": "mast:HST/product/u6h93601m_x0f.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS X0F file - Raw bias data WFPC/WFPC2/FOS"
+      },
+      {
+        "productFilename": "u6h93601m_x0m.fits",
+        "productType": "AUXILIARY",
+        "productSubGroupDescription": "X0M",
+        "size": 109440,
+        "dataURI": "mast:HST/product/u6h93601m_x0m.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS X0M file - Raw bias data WFPC2"
+      },
+      {
+        "productFilename": "u6h93601m_d0f.jpg",
+        "productType": "PREVIEW",
+        "productSubGroupDescription": 0.0,
+        "size": 109063,
+        "dataURI": "mast:HST/product/u6h93601m_d0f.jpg",
+        "obs_id": "u6h93601m",
+        "description": "Preview-Full"
+      },
+      {
+        "productFilename": "u6h93601m_c0f.jpg",
+        "productType": "PREVIEW",
+        "productSubGroupDescription": 0.0,
+        "size": 114350,
+        "dataURI": "mast:HST/product/u6h93601m_c0f.jpg",
+        "obs_id": "u6h93601m",
+        "description": "Preview-Full"
+      },
+      {
+        "productFilename": "u6h93601m_c0m.fits",
+        "productType": "SCIENCE",
+        "productSubGroupDescription": "C0M",
+        "size": 10293120,
+        "dataURI": "mast:HST/product/u6h93601m_c0m.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS C0M file - Calibrated exposure WFPC2"
+      },
+      {
+        "productFilename": "u6h93601m_c1m.fits",
+        "productType": "SCIENCE",
+        "productSubGroupDescription": "C1M",
+        "size": 5178240,
+        "dataURI": "mast:HST/product/u6h93601m_c1m.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS C1M file"
+      },
+      {
+        "productFilename": "u6h93601m_d0f.fits",
+        "productType": "SCIENCE",
+        "productSubGroupDescription": "D0F",
+        "size": 5184000,
+        "dataURI": "mast:HST/product/u6h93601m_d0f.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS D0F file - Raw exposure WFPC/WFPC2/FOC/FOS/GHRS/HSP"
+      },
+      {
+        "productFilename": "u6h93601m_d0m.fits",
+        "productType": "SCIENCE",
+        "productSubGroupDescription": "D0M",
+        "size": 5178240,
+        "dataURI": "mast:HST/product/u6h93601m_d0m.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS D0M file - Raw exposure WFPC2"
+      },
+      {
+        "productFilename": "u6h93601m_c0f.fits",
+        "productType": "SCIENCE",
+        "productSubGroupDescription": "C0F",
+        "size": 10304640,
+        "dataURI": "mast:HST/product/u6h93601m_c0f.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS C0F file - Calibrated exposure WFPC/WFPC2/FOC/FOS/GHRS/HSP"
+      },
+      {
+        "productFilename": "u6h93601m_c1f.fits",
+        "productType": "SCIENCE",
+        "productSubGroupDescription": "C1F",
+        "size": 5184000,
+        "dataURI": "mast:HST/product/u6h93601m_c1f.fits",
+        "obs_id": "u6h93601m",
+        "description": "DADS C1F file - Calibrated exposure WFPC/FOC/FOS/GHRS/HSP"
+      }
+    ]
+  },
+  "download": null,
+  "token_required": false,
+  "note": "Public MAST metadata/product lists need no login. Large FITS downloads are optional and budget-capped."
+}

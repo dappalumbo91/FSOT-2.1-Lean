@@ -393,6 +393,18 @@ def main() -> int:
         )
         return f"bytes={len(raw)}"
 
+    def open_mast_astroquery():
+        from mast_astroquery_lib import mast_available, query_public_images  # noqa: WPS433
+
+        ok, msg = mast_available()
+        if not ok:
+            raise RuntimeError(msg)
+        meta = query_public_images(objectname="M1", obs_collection="HST", max_obs=2)
+        return (
+            f"rows_total={meta.get('query_rows_total')} "
+            f"returned={meta.get('returned')} auth=none_public"
+        )
+
     for name, fn in (
         ("gbif", gbif),
         ("gwosc", gwosc),
@@ -435,6 +447,7 @@ def main() -> int:
         ("open_cern_opendata", open_cern_opendata),
         ("open_pubmed_hubble", open_pubmed_hubble),
         ("open_owid_co2", open_owid_co2),
+        ("open_mast_astroquery", open_mast_astroquery),
     ):
         row = _probe(name, fn)
         report["channels"].append(row)
