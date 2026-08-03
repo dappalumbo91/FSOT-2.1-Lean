@@ -1,0 +1,465 @@
+{
+  "source_id": "rcsb_1crn",
+  "kind": "json",
+  "payload": {
+    "audit_author": [
+      {
+        "name": "Hendrickson, W.A.",
+        "pdbx_ordinal": 1
+      },
+      {
+        "name": "Teeter, M.M.",
+        "pdbx_ordinal": 2
+      }
+    ],
+    "cell": {
+      "Z_PDB": 2,
+      "angle_alpha": 90.0,
+      "angle_beta": 90.77,
+      "angle_gamma": 90.0,
+      "length_a": 40.96,
+      "length_b": 18.65,
+      "length_c": 22.52
+    },
+    "citation": [
+      {
+        "country": "US",
+        "id": "primary",
+        "journal_abbrev": "Proc.Natl.Acad.Sci.Usa",
+        "journal_id_ASTM": "PNASA6",
+        "journal_id_CSD": "0040",
+        "journal_id_ISSN": "0027-8424",
+        "journal_volume": "81",
+        "page_first": "6014",
+        "page_last": "6018",
+        "pdbx_database_id_DOI": "10.1073/pnas.81.19.6014",
+        "pdbx_database_id_PubMed": 16593516,
+        "rcsb_authors": [
+          "Teeter, M.M."
+        ],
+        "rcsb_is_primary": "Y",
+        "rcsb_journal_abbrev": "Proc Natl Acad Sci U S A",
+        "title": "Water structure of a hydrophobic protein at atomic resolution: Pentagon rings of water molecules in crystals of crambin.",
+        "year": 1984
+      },
+      {
+        "country": "UK",
+        "id": "1",
+        "journal_abbrev": "Nature",
+        "journal_id_ASTM": "NATUAS",
+        "journal_id_CSD": "0006",
+        "journal_id_ISSN": "0028-0836",
+        "journal_volume": "290",
+        "page_first": "107",
+        "rcsb_authors": [
+          "Hendrickson, W.A.",
+          "Teeter, M.M."
+        ],
+        "rcsb_is_primary": "N",
+        "rcsb_journal_abbrev": "Nature",
+        "title": "Structure of the Hydrophobic Protein Crambin Determined Directly from the Anomalous Scattering of Sulphur",
+        "year": 1981
+      },
+      {
+        "country": "UK",
+        "id": "2",
+        "journal_abbrev": "J.Mol.Biol.",
+        "journal_id_ASTM": "JMOBAK",
+        "journal_id_CSD": "0070",
+        "journal_id_ISSN": "0022-2836",
+        "journal_volume": "127",
+        "page_first": "219",
+        "rcsb_authors": [
+          "Teeter, M.M.",
+          "Hendrickson, W.A."
+        ],
+        "rcsb_is_primary": "N",
+        "rcsb_journal_abbrev": "J Mol Biol",
+        "title": "Highly Ordered Crystals of the Plant Seed Protein Crambin",
+        "year": 1979
+      }
+    ],
+    "database_2": [
+      {
+        "database_code": "1CRN",
+        "database_id": "PDB",
+        "pdbx_DOI": "10.2210/pdb1crn/pdb",
+        "pdbx_database_accession": "pdb_00001crn"
+      },
+      {
+        "database_code": "D_1000172485",
+        "database_id": "WWPDB"
+      }
+    ],
+    "diffrn": [
+      {
+        "crystal_id": "1",
+        "id": "1"
+      }
+    ],
+    "diffrn_radiation": [
+      {
+        "diffrn_id": "1",
+        "pdbx_scattering_type": "x-ray",
+        "wavelength_id": "1"
+      }
+    ],
+    "entry": {
+      "id": "1CRN"
+    },
+    "exptl": [
+      {
+        "method": "X-RAY DIFFRACTION"
+      }
+    ],
+    "exptl_crystal": [
+      {
+        "density_Matthews": 1.81,
+        "density_percent_sol": 32.16,
+        "id": "1"
+      }
+    ],
+    "pdbx_audit_revision_category": [
+      {
+        "category": "pdbx_database_status",
+        "data_content_type": "Structure model",
+        "ordinal": 1,
+        "revision_ordinal": 5
+      },
+      {
+        "category": "struct_conf",
+        "data_content_type": "Structure model",
+        "ordinal": 2,
+        "revision_ordinal": 5
+      },
+      {
+        "category": "struct_conf_type",
+        "data_content_type": "Structure model",
+        "ordinal": 3,
+        "revision_ordinal": 5
+      },
+      {
+        "category": "chem_comp_atom",
+        "data_content_type": "Structure model",
+        "ordinal": 4,
+        "revision_ordinal": 6
+      },
+      {
+        "category": "chem_comp_bond",
+        "data_content_type": "Structure model",
+        "ordinal": 5,
+        "revision_ordinal": 6
+      },
+      {
+        "category": "database_2",
+        "data_content_type": "Structure model",
+        "ordinal": 6,
+        "revision_ordinal": 6
+      },
+      {
+        "category": "pdbx_entry_details",
+        "data_content_type": "Structure model",
+        "ordinal": 7,
+        "revision_ordinal": 6
+      },
+      {
+        "category": "pdbx_modification_feature",
+        "data_content_type": "Structure model",
+        "ordinal": 8,
+        "revision_ordinal": 6
+      }
+    ],
+    "pdbx_audit_revision_details": [
+      {
+        "data_content_type": "Structure model",
+        "ordinal": 1,
+        "provider": "repository",
+        "revision_ordinal": 1,
+        "type": "Initial release"
+      }
+    ],
+    "pdbx_audit_revision_group": [
+      {
+        "data_content_type": "Structure model",
+        "group": "Version format compliance",
+        "ordinal": 1,
+        "revision_ordinal": 2
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Version format compliance",
+        "ordinal": 2,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Other",
+        "ordinal": 3,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Derived calculations",
+        "ordinal": 4,
+        "revision_ordinal": 5
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Other",
+        "ordinal": 5,
+        "revision_ordinal": 5
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Data collection",
+        "ordinal": 6,
+        "revision_ordinal": 6
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Database references",
+        "ordinal": 7,
+        "revision_ordinal": 6
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Structure summary",
+        "ordinal": 8,
+        "revision_ordinal": 6
+      }
+    ],
+    "pdbx_audit_revision_history": [
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 0,
+        "ordinal": 1,
+        "revision_date": "1981-07-28T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 1,
+        "ordinal": 2,
+        "revision_date": "2008-03-24T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 2,
+        "ordinal": 3,
+        "revision_date": "2011-07-13T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 3,
+        "ordinal": 4,
+        "revision_date": "2012-07-11T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 4,
+        "ordinal": 5,
+        "revision_date": "2017-11-29T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 5,
+        "ordinal": 6,
+        "revision_date": "2024-10-30T00:00:00.000+00:00"
+      }
+    ],
+    "pdbx_audit_revision_item": [
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_database_status.process_site",
+        "ordinal": 1,
+        "revision_ordinal": 5
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_database_2.pdbx_DOI",
+        "ordinal": 2,
+        "revision_ordinal": 6
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_database_2.pdbx_database_accession",
+        "ordinal": 3,
+        "revision_ordinal": 6
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_entry_details.has_protein_modification",
+        "ordinal": 4,
+        "revision_ordinal": 6
+      }
+    ],
+    "pdbx_database_status": {
+      "pdb_format_compatible": "Y",
+      "process_site": "BNL",
+      "recvd_initial_deposition_date": "1981-04-30T00:00:00.000+00:00",
+      "status_code": "REL"
+    },
+    "pdbx_vrpt_summary": {
+      "attempted_validation_steps": "molprobity,validation-pack,validation_schema,percentiles,writexml,writecif,writepdf",
+      "ligands_for_buster_report": "N",
+      "report_creation_date": "2026-03-05T18:54:00.000+00:00"
+    },
+    "pdbx_vrpt_summary_geometry": [
+      {
+        "angles_RMSZ": 1.55,
+        "bonds_RMSZ": 1.5,
+        "clashscore": 0.0,
+        "num_H_reduce": 315,
+        "num_angles_RMSZ": 458,
+        "num_bonds_RMSZ": 334,
+        "percent_ramachandran_outliers": 0.0,
+        "percent_rotamer_outliers": 0.0
+      }
+    ],
+    "rcsb_accession_info": {
+      "deposit_date": "1981-04-30T00:00:00.000+00:00",
+      "has_released_experimental_data": "N",
+      "initial_release_date": "1981-07-28T00:00:00.000+00:00",
+      "major_revision": 1,
+      "minor_revision": 5,
+      "revision_date": "2024-10-30T00:00:00.000+00:00",
+      "status_code": "REL"
+    },
+    "rcsb_entry_container_identifiers": {
+      "assembly_ids": [
+        "1"
+      ],
+      "entity_ids": [
+        "1"
+      ],
+      "entry_id": "1CRN",
+      "model_ids": [
+        1
+      ],
+      "polymer_entity_ids": [
+        "1"
+      ],
+      "pubmed_id": 16593516,
+      "rcsb_id": "1CRN"
+    },
+    "rcsb_entry_info": {
+      "assembly_count": 1,
+      "branched_entity_count": 0,
+      "cis_peptide_count": 0,
+      "deposited_atom_count": 327,
+      "deposited_deuterated_water_count": 0,
+      "deposited_hydrogen_atom_count": 0,
+      "deposited_model_count": 1,
+      "deposited_modeled_polymer_monomer_count": 46,
+      "deposited_nonpolymer_entity_instance_count": 0,
+      "deposited_polymer_entity_instance_count": 1,
+      "deposited_polymer_monomer_count": 46,
+      "deposited_solvent_atom_count": 0,
+      "deposited_unmodeled_polymer_monomer_count": 0,
+      "disulfide_bond_count": 3,
+      "entity_count": 1,
+      "experimental_method": "X-ray",
+      "experimental_method_count": 1,
+      "inter_mol_covalent_bond_count": 0,
+      "inter_mol_metalic_bond_count": 0,
+      "molecular_weight": 4.74,
+      "na_polymer_entity_types": "Other",
+      "nonpolymer_entity_count": 0,
+      "polymer_composition": "homomeric protein",
+      "polymer_entity_count": 1,
+      "polymer_entity_count_DNA": 0,
+      "polymer_entity_count_RNA": 0,
+      "polymer_entity_count_nucleic_acid": 0,
+      "polymer_entity_count_nucleic_acid_hybrid": 0,
+      "polymer_entity_count_protein": 1,
+      "polymer_entity_taxonomy_count": 1,
+      "polymer_molecular_weight_maximum": 4.74,
+      "polymer_molecular_weight_minimum": 4.74,
+      "polymer_monomer_count_maximum": 46,
+      "polymer_monomer_count_minimum": 46,
+      "resolution_combined": [
+        1.5
+      ],
+      "selected_polymer_entity_types": "Protein (only)",
+      "software_programs_combined": [
+        "PROLSQ"
+      ],
+      "solvent_entity_count": 0,
+      "structure_determination_methodology": "experimental",
+      "structure_determination_methodology_priority": 10,
+      "diffrn_resolution_high": {
+        "provenance_source": "From refinement resolution cutoff",
+        "value": 1.5
+      }
+    },
+    "rcsb_primary_citation": {
+      "country": "US",
+      "id": "primary",
+      "journal_abbrev": "Proc.Natl.Acad.Sci.Usa",
+      "journal_id_ASTM": "PNASA6",
+      "journal_id_CSD": "0040",
+      "journal_id_ISSN": "0027-8424",
+      "journal_volume": "81",
+      "page_first": "6014",
+      "page_last": "6018",
+      "pdbx_database_id_DOI": "10.1073/pnas.81.19.6014",
+      "pdbx_database_id_PubMed": 16593516,
+      "rcsb_authors": [
+        "Teeter, M.M."
+      ],
+      "rcsb_journal_abbrev": "Proc Natl Acad Sci U S A",
+      "title": "Water structure of a hydrophobic protein at atomic resolution: Pentagon rings of water molecules in crystals of crambin.",
+      "year": 1984
+    },
+    "refine": [
+      {
+        "ls_d_res_high": 1.5,
+        "pdbx_diffrn_id": [
+          "1"
+        ],
+        "pdbx_refine_id": "X-RAY DIFFRACTION"
+      }
+    ],
+    "refine_hist": [
+      {
+        "cycle_id": "LAST",
+        "d_res_high": 1.5,
+        "number_atoms_solvent": 0,
+        "number_atoms_total": 327,
+        "pdbx_number_atoms_ligand": 0,
+        "pdbx_number_atoms_nucleic_acid": 0,
+        "pdbx_number_atoms_protein": 327,
+        "pdbx_refine_id": "X-RAY DIFFRACTION"
+      }
+    ],
+    "software": [
+      {
+        "classification": "refinement",
+        "name": "PROLSQ",
+        "pdbx_ordinal": 1
+      }
+    ],
+    "struct": {
+      "title": "WATER STRUCTURE OF A HYDROPHOBIC PROTEIN AT ATOMIC RESOLUTION. PENTAGON RINGS OF WATER MOLECULES IN CRYSTALS OF CRAMBIN"
+    },
+    "struct_keywords": {
+      "pdbx_keywords": "PLANT PROTEIN",
+      "text": "PLANT SEED PROTEIN, PLANT PROTEIN"
+    },
+    "symmetry": {
+      "Int_Tables_number": 4,
+      "space_group_name_H_M": "P 1 21 1"
+    },
+    "rcsb_id": "1CRN"
+  },
+  "fetched_at": "2026-08-03T15:17:21.561486+00:00",
+  "url": "https://data.rcsb.org/rest/v1/core/entry/1CRN",
+  "auth": "none",
+  "family": "biology_medicine_genomics",
+  "description": "RCSB PDB entry 1CRN"
+}

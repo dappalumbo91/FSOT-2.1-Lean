@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-08-03T15:21:52.767749+00:00",
+  "policy": "no_signup_no_credentials",
+  "holdout_file": "data\\preregistered_open_science_holdouts.yaml",
+  "passed": 6,
+  "failed": 0,
+  "skipped": 0,
+  "overall_ok": true,
+  "results": [
+    {
+      "id": "HOLD-OPEN-001",
+      "name": "nist_codata_live_fundamentals",
+      "discriminant": "relative_error_pct_le_0.01",
+      "status": "pass",
+      "detail": {
+        "n": 5,
+        "max_error_pct": 0.0
+      },
+      "claim": "Live NIST CODATA allascii (no credentials) parses SI/metrology anchors (c, h, k_B, fine-structure, electron mass) agreeing with accepted values within 0.01% relative residual. Note: \u03b3 and Catalan G are mathematical seeds scored separately vs open literature (not listed in NIST fundamental allascii).\n"
+    },
+    {
+      "id": "HOLD-OPEN-001b",
+      "name": "seed_gamma_catalan_open_literature",
+      "discriminant": "relative_error_pct_le_0.01",
+      "status": "pass",
+      "detail": {
+        "n": 2,
+        "max_error_pct": 0.0
+      },
+      "claim": "FSOT \u03b3 (Euler\u2013Mascheroni) and Catalan G match published open-literature multiprecision anchors within 0.01% (expected machine-epsilon class).\n"
+    },
+    {
+      "id": "HOLD-OPEN-002",
+      "name": "seed_math_identities",
+      "discriminant": "relative_error_pct_le_1e-10",
+      "status": "pass",
+      "detail": {
+        "n": 5,
+        "max_error_pct": 0.0
+      },
+      "claim": "\u03c6, e, \u03c0, \u03b7_eff, \u03c8_con identities hold at double precision vs math definitions with relative residual \u2264 1e-10 %.\n"
+    },
+    {
+      "id": "HOLD-OPEN-003",
+      "name": "pubchem_aspirin_mw_integrity",
+      "discriminant": "relative_error_pct_le_0.5",
+      "status": "pass",
+      "detail": {
+        "n": 1,
+        "max_error_pct": 0.0011101366578278788
+      },
+      "claim": "Live PubChem CID 2244 molecular weight agrees with literature 180.158 g/mol within 0.5% (source integrity check).\n"
+    },
+    {
+      "id": "HOLD-OPEN-004",
+      "name": "chembl_aspirin_mw_integrity",
+      "discriminant": "relative_error_pct_le_0.5",
+      "status": "pass",
+      "detail": {
+        "n": 1,
+        "max_error_pct": 0.0
+      },
+      "claim": "Live ChEMBL CHEMBL25 full_mwt agrees with literature ~180.16 g/mol within 0.5%.\n"
+    },
+    {
+      "id": "HOLD-OPEN-005",
+      "name": "multi_stream_open_health",
+      "discriminant": "stream_ok_rate_ge_0.90",
+      "status": "pass",
+      "detail": {
+        "ok_rate": 1.0,
+        "total": 20
+      },
+      "claim": "At least 90% of listed open (no-credential) streams return HTTP success on a single health pass without API keys.\n"
+    }
+  ]
+}

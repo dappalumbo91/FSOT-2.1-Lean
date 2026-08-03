@@ -1,0 +1,167 @@
+{
+  "policy": "no_signup_no_credentials",
+  "count": 20,
+  "sources": [
+    {
+      "id": "openfda_drug_label",
+      "family": "biology_medicine_genomics",
+      "url": "https://api.fda.gov/drug/label.json?limit=5",
+      "description": "FDA open drug labeling records",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "ensembl_brca2",
+      "family": "biology_medicine_genomics",
+      "url": "https://rest.ensembl.org/lookup/id/ENSG00000139618?content-type=application/json",
+      "description": "Ensembl gene lookup (BRCA2)",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "gwas_catalog_studies",
+      "family": "biology_medicine_genomics",
+      "url": "https://www.ebi.ac.uk/gwas/rest/api/studies?size=5",
+      "description": "GWAS Catalog studies (EBI)",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "chembl_aspirin",
+      "family": "chemistry_materials",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/molecule/CHEMBL25.json",
+      "description": "ChEMBL molecule record (aspirin)",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "usgs_earthquakes_recent",
+      "family": "earth_climate_geophysics",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=20&orderby=time&minmagnitude=4.5",
+      "description": "USGS FDSN recent M\u22654.5 events",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "wikidata_pi",
+      "family": "formal_math_computation",
+      "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q167&format=json",
+      "description": "Wikidata entity for \u03c0",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "owid_co2_codebook",
+      "family": "earth_climate_geophysics",
+      "url": "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-codebook.csv",
+      "description": "Our World in Data CO2 codebook (GitHub raw)",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "zenodo_records_physics",
+      "family": "formal_math_computation",
+      "url": "https://zenodo.org/api/records/?q=subject:physics&size=3&sort=mostrecent",
+      "description": "Zenodo open research records (physics)",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "alphafold_p53",
+      "family": "biology_medicine_genomics",
+      "url": "https://alphafold.ebi.ac.uk/api/prediction/P04637",
+      "description": "AlphaFold DB prediction metadata (P53)",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "rcsb_1crn",
+      "family": "biology_medicine_genomics",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1CRN",
+      "description": "RCSB PDB entry 1CRN",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "nasa_donki_flares",
+      "family": "cosmology_astrophysics",
+      "url": "https://kauai.ccmc.gsfc.nasa.gov/DONKI/WS/get/FLR?startDate=2024-06-01&endDate=2024-06-14",
+      "description": "NASA DONKI solar flare events (no key)",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "openalex_works_cosmology",
+      "family": "cosmology_astrophysics",
+      "url": "https://api.openalex.org/works?search=cosmology&per_page=3",
+      "description": "OpenAlex scholarly works (no key)",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "pubmed_esearch_hubble",
+      "family": "cosmology_astrophysics",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Hubble+tension&retmode=json&retmax=5",
+      "description": "NCBI PubMed eSearch (open eutils)",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "crossref_funders",
+      "family": "social_econ_linguistics",
+      "url": "https://api.crossref.org/funders?query=national+science+foundation&rows=3",
+      "description": "Crossref funders (open)",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "worldbank_population",
+      "family": "social_econ_linguistics",
+      "url": "https://api.worldbank.org/v2/country/USA/indicator/SP.POP.TOTL?format=json&per_page=5",
+      "description": "World Bank population indicator",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "nist_codata_ascii",
+      "family": "particle_nuclear_atomic",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "description": "NIST CODATA constants table",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "gbif_occurrence_sample",
+      "family": "biology_medicine_genomics",
+      "url": "https://api.gbif.org/v1/occurrence/search?limit=5&hasCoordinate=true",
+      "description": "GBIF occurrence search sample",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "stringdb_version",
+      "family": "biology_medicine_genomics",
+      "url": "https://string-db.org/api/json/version",
+      "description": "STRING protein network API version",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "pubchem_cid_2244",
+      "family": "chemistry_materials",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/property/MolecularWeight,IUPACName,CanonicalSMILES/JSON",
+      "description": "PubChem aspirin (CID 2244) properties",
+      "auth": "none",
+      "notes": ""
+    },
+    {
+      "id": "cern_opendata_records",
+      "family": "particle_nuclear_atomic",
+      "url": "https://opendata.cern.ch/api/records/?q=collision&size=3",
+      "description": "CERN Open Data records search",
+      "auth": "none",
+      "notes": ""
+    }
+  ],
+  "generated_at": "2026-08-03T15:17:32.719859+00:00"
+}

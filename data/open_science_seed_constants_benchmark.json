@@ -1,0 +1,190 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-08-03T15:21:52.602869+00:00",
+  "domain": "Open_Science_Seed_Constants",
+  "authority_path": "vendor/fsot_compute.py",
+  "source": [
+    "python_mathlib_identity",
+    "nist_codata_ascii"
+  ],
+  "maps_to_lean": [
+    "atomic",
+    "particle"
+  ],
+  "D_eff": 7,
+  "record_count": 12,
+  "observable_count": 12,
+  "scalar_record_count": 12,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "fsot_precision_gate_pct": 0.5,
+  "policy": "no_signup_no_credentials",
+  "scientific_metric_primary": "relative_percent_error",
+  "scientific_metric_also": [
+    "ppm_when_sub_0.01pct"
+  ],
+  "records": [
+    {
+      "id": "phi_golden_ratio",
+      "name": "phi_golden_ratio",
+      "kind": "seed_math_identity",
+      "measured": 1.618033988749895,
+      "predicted": 1.618033988749895,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "python_mathlib_identity",
+      "scientific_metric": "relative_percent_error",
+      "green_eligible": true
+    },
+    {
+      "id": "e_natural_base",
+      "name": "e_natural_base",
+      "kind": "seed_math_identity",
+      "measured": 2.718281828459045,
+      "predicted": 2.718281828459045,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "python_mathlib_identity",
+      "scientific_metric": "relative_percent_error",
+      "green_eligible": true
+    },
+    {
+      "id": "pi_circle",
+      "name": "pi_circle",
+      "kind": "seed_math_identity",
+      "measured": 3.141592653589793,
+      "predicted": 3.141592653589793,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "python_mathlib_identity",
+      "scientific_metric": "relative_percent_error",
+      "green_eligible": true
+    },
+    {
+      "id": "eta_eff_from_pi",
+      "name": "eta_eff_from_pi",
+      "kind": "seed_math_identity",
+      "measured": 0.46694220692425986,
+      "predicted": 0.46694220692425986,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "python_mathlib_identity",
+      "scientific_metric": "relative_percent_error",
+      "green_eligible": true
+    },
+    {
+      "id": "psi_con_from_e",
+      "name": "psi_con_from_e",
+      "kind": "seed_math_identity",
+      "measured": 0.6321205588285577,
+      "predicted": 0.6321205588285577,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "python_mathlib_identity",
+      "scientific_metric": "relative_percent_error",
+      "green_eligible": true
+    },
+    {
+      "id": "euler_mascheroni_gamma_literature",
+      "name": "Euler-Mascheroni \u03b3 (open literature / OEIS A001620 class)",
+      "kind": "seed_vs_open_literature",
+      "measured": 0.5772156649015329,
+      "predicted": 0.5772156649015329,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "open_literature_math_constants",
+      "scientific_metric": "relative_percent_error_or_ppm",
+      "ppm": 0.0,
+      "green_eligible": true
+    },
+    {
+      "id": "catalan_constant_literature",
+      "name": "Catalan's constant G (open literature / OEIS A006752 class)",
+      "kind": "seed_vs_open_literature",
+      "measured": 0.915965594177219,
+      "predicted": 0.915965594177219,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "open_literature_math_constants",
+      "scientific_metric": "relative_percent_error_or_ppm",
+      "ppm": 0.0,
+      "green_eligible": true
+    },
+    {
+      "id": "nist_speed_of_light",
+      "name": "speed of light in vacuum",
+      "kind": "seed_vs_nist_codata",
+      "measured": 299792458.0,
+      "predicted": 299792458.0,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "nist_codata_ascii",
+      "scientific_metric": "relative_percent_error_or_ppm",
+      "ppm": 0.0,
+      "green_eligible": true,
+      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)"
+    },
+    {
+      "id": "nist_planck_constant",
+      "name": "Planck constant",
+      "kind": "seed_vs_nist_codata",
+      "measured": 6.62607015e-34,
+      "predicted": 6.62607015e-34,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "nist_codata_ascii",
+      "scientific_metric": "relative_percent_error_or_ppm",
+      "ppm": 0.0,
+      "green_eligible": true,
+      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)"
+    },
+    {
+      "id": "nist_boltzmann_constant",
+      "name": "Boltzmann constant",
+      "kind": "seed_vs_nist_codata",
+      "measured": 1.380649e-23,
+      "predicted": 1.380649e-23,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "nist_codata_ascii",
+      "scientific_metric": "relative_percent_error_or_ppm",
+      "ppm": 0.0,
+      "green_eligible": true,
+      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)"
+    },
+    {
+      "id": "nist_fine_structure",
+      "name": "fine-structure constant",
+      "kind": "seed_vs_nist_codata",
+      "measured": 0.0072973525643,
+      "predicted": 0.0072973525643,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "nist_codata_ascii",
+      "scientific_metric": "relative_percent_error_or_ppm",
+      "ppm": 0.0,
+      "green_eligible": true,
+      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)"
+    },
+    {
+      "id": "nist_electron_mass",
+      "name": "electron mass",
+      "kind": "seed_vs_nist_codata",
+      "measured": 9.1093837139e-31,
+      "predicted": 9.1093837139e-31,
+      "error_pct": 0.0,
+      "domain_route": "Atomic_Physics",
+      "source": "nist_codata_ascii",
+      "scientific_metric": "relative_percent_error_or_ppm",
+      "ppm": 0.0,
+      "green_eligible": true,
+      "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)"
+    }
+  ],
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "note": "Seed identities and NIST CODATA anchors; zero free parameters"
+  }
+}

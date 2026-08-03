@@ -1,6 +1,6 @@
 # Scientific error metrics map (FSOT residuals → field language)
 
-Generated: `2026-08-03T15:02:59.965687+00:00`
+Generated: `2026-08-03T15:17:33.294419+00:00`
 
 ## Internal FSOT gate (unchanged)
 

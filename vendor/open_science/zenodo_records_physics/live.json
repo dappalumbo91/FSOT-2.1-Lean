@@ -1,0 +1,40 @@
+{
+  "source_id": "zenodo_records_physics",
+  "kind": "json",
+  "payload": {
+    "hits": {
+      "hits": [],
+      "total": 0
+    },
+    "aggregations": {
+      "publication_date": {
+        "buckets": [],
+        "label": "Publication date"
+      },
+      "access_status": {
+        "buckets": [],
+        "label": "Access status"
+      },
+      "resource_type": {
+        "buckets": [],
+        "label": "Resource types"
+      },
+      "subject": {
+        "buckets": [],
+        "label": "Subjects"
+      },
+      "file_type": {
+        "buckets": [],
+        "label": "File type"
+      }
+    },
+    "links": {
+      "self": "https://zenodo.org/api/records?page=1&q=subject:physics&size=3&sort=mostrecent"
+    }
+  },
+  "fetched_at": "2026-08-03T15:17:20.326426+00:00",
+  "url": "https://zenodo.org/api/records/?q=subject:physics&size=3&sort=mostrecent",
+  "auth": "none",
+  "family": "formal_math_computation",
+  "description": "Zenodo open research records (physics)"
+}

@@ -327,6 +327,72 @@ def main() -> int:
         )
         return f"bytes={len(raw)}"
 
+    # ---- Open-science expansion (no credentials / no signup) ----
+    def open_openfda():
+        data = fetch_json("https://api.fda.gov/drug/label.json?limit=1", timeout=45)
+        return f"results={len(data.get('results') or [])}"
+
+    def open_ensembl():
+        data = fetch_json(
+            "https://rest.ensembl.org/lookup/id/ENSG00000139618?content-type=application/json",
+            timeout=45,
+            headers={"Content-Type": "application/json"},
+        )
+        return f"gene={data.get('display_name') or data.get('id')}"
+
+    def open_gwas():
+        data = fetch_json("https://www.ebi.ac.uk/gwas/rest/api/studies?size=2", timeout=45)
+        emb = (data.get("_embedded") or {}).get("studies") or []
+        return f"studies={len(emb)}"
+
+    def open_chembl():
+        data = fetch_json(
+            "https://www.ebi.ac.uk/chembl/api/data/molecule/CHEMBL25.json",
+            timeout=45,
+        )
+        return f"pref={data.get('pref_name')}"
+
+    def open_usgs_quakes():
+        data = fetch_json(
+            "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=5&orderby=time&minmagnitude=4.5",
+            timeout=45,
+        )
+        return f"features={len(data.get('features') or [])}"
+
+    def open_stringdb():
+        data = fetch_json("https://string-db.org/api/json/version", timeout=30)
+        if isinstance(data, list) and data:
+            return f"version={data[0].get('string_version')}"
+        return f"type={type(data).__name__}"
+
+    def open_alphafold():
+        data = fetch_json("https://alphafold.ebi.ac.uk/api/prediction/P04637", timeout=45)
+        return f"rows={len(data) if isinstance(data, list) else 1}"
+
+    def open_cern_opendata():
+        data = fetch_json("https://opendata.cern.ch/api/records/?q=collision&size=2", timeout=45)
+        hits = (data.get("hits") or {}).get("hits") if isinstance(data, dict) else None
+        if hits is None and isinstance(data, dict):
+            return f"keys={list(data.keys())[:4]}"
+        return f"hits={len(hits or [])}"
+
+    def open_pubmed_hubble():
+        data = fetch_json(
+            "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Hubble+tension&retmode=json&retmax=3",
+            timeout=45,
+        )
+        n = len(((data.get("esearchresult") or {}).get("idlist")) or [])
+        return f"ids={n}"
+
+    def open_owid_co2():
+        from live_api_fetch_lib import fetch_bytes  # noqa: WPS433
+
+        raw = fetch_bytes(
+            "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-codebook.csv",
+            timeout=45,
+        )
+        return f"bytes={len(raw)}"
+
     for name, fn in (
         ("gbif", gbif),
         ("gwosc", gwosc),
@@ -359,6 +425,16 @@ def main() -> int:
         ("tier86_nist_codata", tier86_nist_codata),
         ("tier87_arxiv_quantph", tier87_arxiv_quantph),
         ("tier89_the_well_stats", tier89_the_well_stats),
+        ("open_openfda", open_openfda),
+        ("open_ensembl", open_ensembl),
+        ("open_gwas", open_gwas),
+        ("open_chembl", open_chembl),
+        ("open_usgs_quakes", open_usgs_quakes),
+        ("open_stringdb", open_stringdb),
+        ("open_alphafold", open_alphafold),
+        ("open_cern_opendata", open_cern_opendata),
+        ("open_pubmed_hubble", open_pubmed_hubble),
+        ("open_owid_co2", open_owid_co2),
     ):
         row = _probe(name, fn)
         report["channels"].append(row)

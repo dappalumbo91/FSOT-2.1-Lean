@@ -3,7 +3,8 @@
 One-command publication verification bundle for independent replication.
 
 Runs: contested closure → spine walkthrough → scientific figures → publication figures → claims bundle → margin audit.
-Does NOT re-ingest live APIs (uses on-disk benchmarks). Optional: --full-cross-proof (~8 min).
+Does NOT re-ingest live APIs by default (uses on-disk benchmarks).
+Optional: --full-cross-proof (~8 min), --with-open-science-ingest (no-credential streams).
 """
 
 from __future__ import annotations
@@ -49,7 +50,18 @@ def main() -> int:
         action="store_true",
         help="Also run run_cross_proof_verification.py (~8 min)",
     )
+    parser.add_argument(
+        "--with-open-science-ingest",
+        action="store_true",
+        help="Also live-ingest open (no-credential) scientific sources before holdout eval",
+    )
     args = parser.parse_args()
+
+    if args.with_open_science_ingest:
+        if not _run("ingest_open_science_expansion.py"):
+            return 1
+        if not _run("build_open_science_expansion_benchmarks.py"):
+            return 1
 
     steps = [
         ("gen_verified_desktop_lean.py", []),
@@ -62,6 +74,9 @@ def main() -> int:
         ("build_publication_figure_pack.py", []),
         ("build_publication_claims_bundle.py", []),
         ("audit_all_benchmark_margins.py", []),
+        # Scientific residual language + open-source holdout evidence (no credentials)
+        ("audit_margin_and_scientific_metrics.py", []),
+        ("evaluate_open_science_holdouts.py", []),
         ("build_tier_scalar_precision_closure.py", []),
         ("audit_scientific_pushback_coverage.py", []),
     ]
@@ -78,6 +93,8 @@ def main() -> int:
     print(f"  Walkthrough: {ROOT / 'data' / 'publication_spine_walkthrough.json'}")
     print(f"  Claims: {ROOT / 'data' / 'publication_claims_manifest.json'}")
     print(f"  Domain navigator: {ROOT / 'data' / 'fsot_domain_navigator.json'}")
+    print(f"  Scientific metrics: {ROOT / 'data' / 'scientific_error_metrics_map.md'}")
+    print(f"  Open-science holdouts: {ROOT / 'data' / 'open_science_holdout_evaluation.json'}")
     print(f"  Verified desktop citations: {ROOT / 'data' / 'domain_citations' / 'verified_desktop.bib'}")
     return 0
 

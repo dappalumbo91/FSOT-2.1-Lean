@@ -364,3 +364,51 @@ proprietary_boundary:
     preregistered in data/preregistered_predictions_manifest.yaml.
   preregistration: data/preregistered_predictions_manifest.yaml
   roadmap: data/expansion_roadmap.yaml
+
+  open_science_expansion:
+    description: "No-signup, no-credential public scientific streams (Desktop expansion 2026-08)"
+    auth: none
+    ingest: scripts/ingest_open_science_expansion.py
+    build: scripts/build_open_science_expansion_benchmarks.py
+    evaluate: scripts/evaluate_open_science_holdouts.py
+    holdouts: data/preregistered_open_science_holdouts.yaml
+    sources:
+      - id: openfda_drug_label
+        url: https://api.fda.gov/drug/label.json
+        auth: none
+      - id: ensembl_brca2
+        url: https://rest.ensembl.org/
+        auth: none
+      - id: gwas_catalog_studies
+        url: https://www.ebi.ac.uk/gwas/rest/api/
+        auth: none
+      - id: chembl_aspirin
+        url: https://www.ebi.ac.uk/chembl/api/data/
+        auth: none
+      - id: usgs_earthquakes_recent
+        url: https://earthquake.usgs.gov/fdsnws/event/1/query
+        auth: none
+      - id: nasa_donki_flares
+        url: https://kauai.ccmc.gsfc.nasa.gov/DONKI/WS/get/FLR
+        auth: none
+      - id: openalex_works_cosmology
+        url: https://api.openalex.org/works
+        auth: none
+      - id: nist_codata_ascii
+        url: https://physics.nist.gov/cuu/Constants/Table/allascii.txt
+        auth: none
+      - id: pubchem_cid_2244
+        url: https://pubchem.ncbi.nlm.nih.gov/rest/pug/
+        auth: none
+      - id: alphafold_p53
+        url: https://alphafold.ebi.ac.uk/api/
+        auth: none
+      - id: cern_opendata_records
+        url: https://opendata.cern.ch/api/records/
+        auth: none
+      - id: stringdb_version
+        url: https://string-db.org/api/json/version
+        auth: none
+      - id: owid_co2_codebook
+        url: https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-codebook.csv
+        auth: none

@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-08-03T14:57:58.876828+00:00",
+  "checked_at": "2026-08-03T15:22:05.696395+00:00",
   "mega_deep": false,
   "channels": [
     {
       "channel": "gbif",
       "status": "ok",
-      "detail": "count=3742918640"
+      "detail": "count=3742920496"
     },
     {
       "channel": "gwosc",
@@ -50,12 +50,12 @@
     {
       "channel": "noaa_goes_xray",
       "status": "ok",
-      "detail": "rows=716"
+      "detail": "rows=718"
     },
     {
       "channel": "clinicaltrials_v2",
       "status": "ok",
-      "detail": "europepmc_clinical_hits=2538044 page_results=3 (ct.gov_blocked)"
+      "detail": "europepmc_clinical_hits=2538045 page_results=3 (ct.gov_blocked)"
     },
     {
       "channel": "osti_doe_records",
@@ -85,7 +85,7 @@
     {
       "channel": "noaa_ndbc_buoy",
       "status": "ok",
-      "detail": "bytes=615982"
+      "detail": "bytes=616170"
     },
     {
       "channel": "open_meteo_forecast",
@@ -156,8 +156,58 @@
       "channel": "tier89_the_well_stats",
       "status": "ok",
       "detail": "bytes=1354"
+    },
+    {
+      "channel": "open_openfda",
+      "status": "ok",
+      "detail": "results=1"
+    },
+    {
+      "channel": "open_ensembl",
+      "status": "ok",
+      "detail": "gene=BRCA2"
+    },
+    {
+      "channel": "open_gwas",
+      "status": "ok",
+      "detail": "studies=2"
+    },
+    {
+      "channel": "open_chembl",
+      "status": "ok",
+      "detail": "pref=ASPIRIN"
+    },
+    {
+      "channel": "open_usgs_quakes",
+      "status": "ok",
+      "detail": "features=5"
+    },
+    {
+      "channel": "open_stringdb",
+      "status": "ok",
+      "detail": "version=12.0"
+    },
+    {
+      "channel": "open_alphafold",
+      "status": "ok",
+      "detail": "rows=9"
+    },
+    {
+      "channel": "open_cern_opendata",
+      "status": "ok",
+      "detail": "hits=2"
+    },
+    {
+      "channel": "open_pubmed_hubble",
+      "status": "ok",
+      "detail": "ids=3"
+    },
+    {
+      "channel": "open_owid_co2",
+      "status": "ok",
+      "detail": "bytes=24149"
     }
   ],
   "fail_count": 0,
-  "ok_count": 31
+  "ok_count": 41
 }

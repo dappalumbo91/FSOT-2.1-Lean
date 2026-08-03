@@ -1,0 +1,831 @@
+{
+  "source_id": "usgs_earthquakes_recent",
+  "kind": "json",
+  "payload": {
+    "type": "FeatureCollection",
+    "metadata": {
+      "generated": 1785770204000,
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=20&orderby=time&minmagnitude=4.5",
+      "title": "USGS Earthquakes",
+      "status": 200,
+      "api": "2.7.0",
+      "limit": 20,
+      "offset": 1
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.7,
+          "place": "61 km S of Shikotan, Russia",
+          "time": 1785767985353,
+          "updated": 1785769533040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ths2",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000ths2&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 340,
+          "net": "us",
+          "code": "6000ths2",
+          "ids": ",us6000ths2,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 51,
+          "dmin": 2.992,
+          "rms": 0.81,
+          "gap": 169,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.7 - 61 km S of Shikotan, Russia"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            146.8482,
+            43.2547,
+            35
+          ]
+        },
+        "id": "us6000ths2"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.8,
+          "place": "106 km NW of Gizo, Solomon Islands",
+          "time": 1785762841939,
+          "updated": 1785764421040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thrs",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thrs&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 354,
+          "net": "us",
+          "code": "6000thrs",
+          "ids": ",us6000thrs,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 45,
+          "dmin": 4.279,
+          "rms": 0.73,
+          "gap": 63,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.8 - 106 km NW of Gizo, Solomon Islands"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            156.087,
+            -7.4962,
+            35
+          ]
+        },
+        "id": "us6000thrs"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.9,
+          "place": "85 km S of Severo-Kuril\u2019sk, Russia",
+          "time": 1785756402305,
+          "updated": 1785757984040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thre",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thre&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 369,
+          "net": "us",
+          "code": "6000thre",
+          "ids": ",us6000thre,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 77,
+          "dmin": 3.377,
+          "rms": 0.72,
+          "gap": 76,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.9 - 85 km S of Severo-Kuril\u2019sk, Russia"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            155.9445,
+            49.9188,
+            57.695
+          ]
+        },
+        "id": "us6000thre"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.6,
+          "place": "88 km WSW of San Antonio de los Cobres, Argentina",
+          "time": 1785754535633,
+          "updated": 1785758840040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thrb",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thrb&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 326,
+          "net": "us",
+          "code": "6000thrb",
+          "ids": ",us6000thrb,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 28,
+          "dmin": 1.81,
+          "rms": 0.7,
+          "gap": 63,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.6 - 88 km WSW of San Antonio de los Cobres, Argentina"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -67.1352,
+            -24.4954,
+            182.541
+          ]
+        },
+        "id": "us6000thrb"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.5,
+          "place": "149 km WSW of Puerto Madero, Mexico",
+          "time": 1785748749814,
+          "updated": 1785756180040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thr2",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thr2&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 312,
+          "net": "us",
+          "code": "6000thr2",
+          "ids": ",us6000thr2,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 45,
+          "dmin": 3.711,
+          "rms": 0.89,
+          "gap": 169,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.5 - 149 km WSW of Puerto Madero, Mexico"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -93.6006,
+            14.0138,
+            10
+          ]
+        },
+        "id": "us6000thr2"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.8,
+          "place": "152 km S of Hydaburg, Alaska",
+          "time": 1785748666000,
+          "updated": 1785750318737,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/attj6shm",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=attj6shm&format=geojson",
+          "felt": 1,
+          "cdi": 2.7,
+          "mmi": null,
+          "alert": null,
+          "status": "automatic",
+          "tsunami": 0,
+          "sig": 355,
+          "net": "at",
+          "code": "tj6shm",
+          "ids": ",attj6shm,",
+          "sources": ",at,",
+          "types": ",dyfi,origin,",
+          "nst": 12,
+          "dmin": 0.01616968,
+          "rms": 1.71,
+          "gap": 57,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.8 - 152 km S of Hydaburg, Alaska"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -132.974,
+            53.837,
+            15
+          ]
+        },
+        "id": "attj6shm"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.5,
+          "place": "5 km NNW of S\u00e1nchez, Dominican Republic",
+          "time": 1785733280034,
+          "updated": 1785765065908,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thqe",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thqe&format=geojson",
+          "felt": 29,
+          "cdi": 3.8,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 323,
+          "net": "us",
+          "code": "6000thqe",
+          "ids": ",pt26215050,us6000thqe,",
+          "sources": ",pt,us,",
+          "types": ",dyfi,origin,phase-data,",
+          "nst": 25,
+          "dmin": 0.537,
+          "rms": 0.98,
+          "gap": 124,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.5 - 5 km NNW of S\u00e1nchez, Dominican Republic"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.627,
+            19.2743,
+            10
+          ]
+        },
+        "id": "us6000thqe"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.9,
+          "place": "14 km ESE of Yibin, China",
+          "time": 1785733248666,
+          "updated": 1785739334040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thqf",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thqf&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 369,
+          "net": "us",
+          "code": "6000thqf",
+          "ids": ",us6000thqf,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 114,
+          "dmin": 7.303,
+          "rms": 0.51,
+          "gap": 35,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.9 - 14 km ESE of Yibin, China"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.7633,
+            28.6876,
+            10
+          ]
+        },
+        "id": "us6000thqf"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 5.2,
+          "place": "66 km WNW of San Alejandro, Peru",
+          "time": 1785721344662,
+          "updated": 1785747364587,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thpt",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thpt&format=geojson",
+          "felt": 5,
+          "cdi": 3.6,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 418,
+          "net": "us",
+          "code": "6000thpt",
+          "ids": ",us6000thpt,usauto6000thpt,",
+          "sources": ",us,usauto,",
+          "types": ",dyfi,internal-moment-tensor,origin,phase-data,",
+          "nst": 71,
+          "dmin": 3.557,
+          "rms": 0.72,
+          "gap": 121,
+          "magType": "mww",
+          "type": "earthquake",
+          "title": "M 5.2 - 66 km WNW of San Alejandro, Peru"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.7603,
+            -8.5724,
+            125.256
+          ]
+        },
+        "id": "us6000thpt"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 5,
+          "place": "36 km NNE of Suez, Egypt",
+          "time": 1785715233082,
+          "updated": 1785769754128,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thpb",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thpb&format=geojson",
+          "felt": 405,
+          "cdi": 4.7,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 575,
+          "net": "us",
+          "code": "6000thpb",
+          "ids": ",us6000thpb,usauto6000thpb,",
+          "sources": ",us,usauto,",
+          "types": ",dyfi,internal-moment-tensor,moment-tensor,origin,phase-data,",
+          "nst": 101,
+          "dmin": 4.693,
+          "rms": 0.76,
+          "gap": 40,
+          "magType": "mww",
+          "type": "earthquake",
+          "title": "M 5.0 - 36 km NNE of Suez, Egypt"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            32.6273,
+            30.2922,
+            10
+          ]
+        },
+        "id": "us6000thpb"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.5,
+          "place": "6 km W of Sarangani, Philippines",
+          "time": 1785710910461,
+          "updated": 1785725374040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thp0",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thp0&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 312,
+          "net": "us",
+          "code": "6000thp0",
+          "ids": ",us6000thp0,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 38,
+          "dmin": 1.654,
+          "rms": 0.67,
+          "gap": 125,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.5 - 6 km W of Sarangani, Philippines"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            125.4077,
+            5.4131,
+            8.955
+          ]
+        },
+        "id": "us6000thp0"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.5,
+          "place": "85 km SSE of Shikotan, Russia",
+          "time": 1785700930395,
+          "updated": 1785702509040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thna",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thna&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 312,
+          "net": "us",
+          "code": "6000thna",
+          "ids": ",us6000thna,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 87,
+          "dmin": 3.067,
+          "rms": 0.74,
+          "gap": 134,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.5 - 85 km SSE of Shikotan, Russia"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            147.0554,
+            43.0682,
+            35
+          ]
+        },
+        "id": "us6000thna"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.7,
+          "place": "170 km SE of Sarangani, Philippines",
+          "time": 1785688022032,
+          "updated": 1785689765040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thmn",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thmn&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 340,
+          "net": "us",
+          "code": "6000thmn",
+          "ids": ",us6000thmn,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 41,
+          "dmin": 9.162,
+          "rms": 1.31,
+          "gap": 109,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.7 - 170 km SE of Sarangani, Philippines"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            126.3895,
+            4.1753,
+            29.553
+          ]
+        },
+        "id": "us6000thmn"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.6,
+          "place": "8 km N of Bel\u00e9n, Nicaragua",
+          "time": 1785686970420,
+          "updated": 1785687921040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thmh",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thmh&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 326,
+          "net": "us",
+          "code": "6000thmh",
+          "ids": ",us6000thmh,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 62,
+          "dmin": 0.904,
+          "rms": 1.07,
+          "gap": 139,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.6 - 8 km N of Bel\u00e9n, Nicaragua"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -85.8978,
+            11.5792,
+            136.506
+          ]
+        },
+        "id": "us6000thmh"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 5,
+          "place": "south of Tonga",
+          "time": 1785684930843,
+          "updated": 1785686119040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thmd",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thmd&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 385,
+          "net": "us",
+          "code": "6000thmd",
+          "ids": ",us6000thmd,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 31,
+          "dmin": 9.644,
+          "rms": 0.97,
+          "gap": 139,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 5.0 - south of Tonga"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -175.1322,
+            -25.0444,
+            10
+          ]
+        },
+        "id": "us6000thmd"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.8,
+          "place": "18 km N of Honch\u014d, Japan",
+          "time": 1785682187350,
+          "updated": 1785685562183,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thm9",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thm9&format=geojson",
+          "felt": 2,
+          "cdi": 2.7,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 355,
+          "net": "us",
+          "code": "6000thm9",
+          "ids": ",us6000thm9,",
+          "sources": ",us,",
+          "types": ",dyfi,origin,phase-data,",
+          "nst": 90,
+          "dmin": 0.33,
+          "rms": 0.67,
+          "gap": 89,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.8 - 18 km N of Honch\u014d, Japan"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            142.9193,
+            42.2943,
+            62.562
+          ]
+        },
+        "id": "us6000thm9"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.9,
+          "place": "207 km NW of Oula Xiuma, China",
+          "time": 1785681102674,
+          "updated": 1785682280040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thm7",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thm7&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 369,
+          "net": "us",
+          "code": "6000thm7",
+          "ids": ",us6000thm7,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 57,
+          "dmin": 3.6,
+          "rms": 1.34,
+          "gap": 91,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.9 - 207 km NW of Oula Xiuma, China"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            99.3272,
+            35.3923,
+            10
+          ]
+        },
+        "id": "us6000thm7"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.6,
+          "place": "65 km NW of Ende, Indonesia",
+          "time": 1785680261663,
+          "updated": 1785681580040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thm6",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thm6&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 326,
+          "net": "us",
+          "code": "6000thm6",
+          "ids": ",us6000thm6,",
+          "sources": ",us,",
+          "types": ",origin,phase-data,",
+          "nst": 25,
+          "dmin": 3.281,
+          "rms": 0.98,
+          "gap": 69,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 4.6 - 65 km NW of Ende, Indonesia"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.2141,
+            -8.453,
+            51.437
+          ]
+        },
+        "id": "us6000thm6"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 5.1,
+          "place": "60 km W of Bah\u00eda de Lobos, Mexico",
+          "time": 1785676247947,
+          "updated": 1785763319040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thm1",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thm1&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 400,
+          "net": "us",
+          "code": "6000thm1",
+          "ids": ",usauto6000thm1,us6000thm1,",
+          "sources": ",usauto,us,",
+          "types": ",internal-moment-tensor,moment-tensor,origin,phase-data,",
+          "nst": 53,
+          "dmin": 1.643,
+          "rms": 1.31,
+          "gap": 185,
+          "magType": "mww",
+          "type": "earthquake",
+          "title": "M 5.1 - 60 km W of Bah\u00eda de Lobos, Mexico"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.0607,
+            27.3736,
+            10
+          ]
+        },
+        "id": "us6000thm1"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 5.3,
+          "place": "north of Ascension Island",
+          "time": 1785671553048,
+          "updated": 1785674177040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thly",
+          "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000thly&format=geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 432,
+          "net": "us",
+          "code": "6000thly",
+          "ids": ",usauto6000thly,us6000thly,",
+          "sources": ",usauto,us,",
+          "types": ",internal-moment-tensor,origin,phase-data,",
+          "nst": 94,
+          "dmin": 5.166,
+          "rms": 0.9,
+          "gap": 28,
+          "magType": "mb",
+          "type": "earthquake",
+          "title": "M 5.3 - north of Ascension Island"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -12.1759,
+            -3.2144,
+            10
+          ]
+        },
+        "id": "us6000thly"
+      }
+    ],
+    "bbox": [
+      -175.1322,
+      -25.0444,
+      8.955,
+      156.087,
+      53.837,
+      182.541
+    ]
+  },
+  "fetched_at": "2026-08-03T15:16:44.981967+00:00",
+  "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=20&orderby=time&minmagnitude=4.5",
+  "auth": "none",
+  "family": "earth_climate_geophysics",
+  "description": "USGS FDSN recent M\u22654.5 events"
+}

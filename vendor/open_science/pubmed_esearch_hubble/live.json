@@ -1,0 +1,38 @@
+{
+  "source_id": "pubmed_esearch_hubble",
+  "kind": "json",
+  "payload": {
+    "header": {
+      "type": "esearch",
+      "version": "0.3"
+    },
+    "esearchresult": {
+      "count": "37",
+      "retmax": "5",
+      "retstart": "0",
+      "idlist": [
+        "42412461",
+        "41894755",
+        "41872261",
+        "41686478",
+        "40961970"
+      ],
+      "translationset": [
+        {
+          "from": "Hubble",
+          "to": "\"hubble\"[All Fields] OR \"hubble's\"[All Fields]"
+        },
+        {
+          "from": "tension",
+          "to": "\"tension\"[All Fields] OR \"tensional\"[All Fields] OR \"tensioned\"[All Fields] OR \"tensioner\"[All Fields] OR \"tensioners\"[All Fields] OR \"tensioning\"[All Fields] OR \"tensions\"[All Fields]"
+        }
+      ],
+      "querytranslation": "(\"hubble\"[All Fields] OR \"hubble s\"[All Fields]) AND (\"tension\"[All Fields] OR \"tensional\"[All Fields] OR \"tensioned\"[All Fields] OR \"tensioner\"[All Fields] OR \"tensioners\"[All Fields] OR \"tensioning\"[All Fields] OR \"tensions\"[All Fields])"
+    }
+  },
+  "fetched_at": "2026-08-03T15:17:24.101341+00:00",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Hubble+tension&retmode=json&retmax=5",
+  "auth": "none",
+  "family": "cosmology_astrophysics",
+  "description": "NCBI PubMed eSearch (open eutils)"
+}

@@ -1,0 +1,88 @@
+# Preregistered open-science holdouts (no credentials required).
+# Declared outcomes before independent live refresh. Do not retune engine to pass.
+version: "1.0"
+updated: "2026-08-03"
+policy: no_signup_no_credentials
+engine_pin: D1D38A
+workspace: C:/Users/damia/Desktop/FSOT-2.1-Lean
+
+holdouts:
+  - id: HOLD-OPEN-001
+    name: nist_codata_live_fundamentals
+    domain_route: Atomic_Physics
+    sources: [nist_codata_ascii]
+    claim: >
+      Live NIST CODATA allascii (no credentials) parses SI/metrology anchors
+      (c, h, k_B, fine-structure, electron mass) agreeing with accepted values
+      within 0.01% relative residual. Note: γ and Catalan G are mathematical seeds
+      scored separately vs open literature (not listed in NIST fundamental allascii).
+    discriminant: relative_error_pct_le_0.01
+    status: preregistered
+
+  - id: HOLD-OPEN-001b
+    name: seed_gamma_catalan_open_literature
+    domain_route: Atomic_Physics
+    sources: [open_literature_math_constants]
+    claim: >
+      FSOT γ (Euler–Mascheroni) and Catalan G match published open-literature
+      multiprecision anchors within 0.01% (expected machine-epsilon class).
+    discriminant: relative_error_pct_le_0.01
+    status: preregistered
+
+  - id: HOLD-OPEN-002
+    name: seed_math_identities
+    domain_route: Atomic_Physics
+    sources: [python_mathlib_identity]
+    claim: >
+      φ, e, π, η_eff, ψ_con identities hold at double precision vs math definitions
+      with relative residual ≤ 1e-10 %.
+    discriminant: relative_error_pct_le_1e-10
+    status: preregistered
+
+  - id: HOLD-OPEN-003
+    name: pubchem_aspirin_mw_integrity
+    domain_route: Molecular_Chemistry
+    sources: [pubchem_cid_2244]
+    claim: >
+      Live PubChem CID 2244 molecular weight agrees with literature 180.158 g/mol
+      within 0.5% (source integrity check).
+    discriminant: relative_error_pct_le_0.5
+    status: preregistered
+
+  - id: HOLD-OPEN-004
+    name: chembl_aspirin_mw_integrity
+    domain_route: Molecular_Chemistry
+    sources: [chembl_aspirin]
+    claim: >
+      Live ChEMBL CHEMBL25 full_mwt agrees with literature ~180.16 g/mol within 0.5%.
+    discriminant: relative_error_pct_le_0.5
+    status: preregistered
+
+  - id: HOLD-OPEN-005
+    name: multi_stream_open_health
+    domain_route: Verification_Infrastructure
+    sources:
+      - openfda_drug_label
+      - ensembl_brca2
+      - gwas_catalog_studies
+      - usgs_earthquakes_recent
+      - nasa_donki_flares
+      - openalex_works_cosmology
+      - gbif_occurrence_sample
+      - worldbank_population
+      - stringdb_version
+      - rcsb_1crn
+      - alphafold_p53
+      - cern_opendata_records
+    claim: >
+      At least 90% of listed open (no-credential) streams return HTTP success
+      on a single health pass without API keys.
+    discriminant: stream_ok_rate_ge_0.90
+    status: preregistered
+
+commands:
+  ingest: python scripts/ingest_open_science_expansion.py
+  build: python scripts/build_open_science_expansion_benchmarks.py
+  health: python scripts/live_api_health_check.py
+  metrics: python scripts/audit_margin_and_scientific_metrics.py
+  publication_bundle: python scripts/run_publication_verification_bundle.py
