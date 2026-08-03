@@ -1,10 +1,13 @@
 # Founding narrative (FSUFT-AASB lineage → FSOT 2.1)
 
+> **Full rebuilt narrative (FSUFT-U 6.0 → verified 2.1):**  
+> **[FSOT_NARRATIVE_CORE.md](FSOT_NARRATIVE_CORE.md)**
+
 **Source archive (offline):** `I:\fsuft aasb`  
 **Role in this repository:** *concepts, voice, and perspective* — **not** the current formal mathematics.  
 **Current math / verification authority:** Lean Formal + `vendor/fsot_compute.py` pin **D1D38A** + green-gate benchmarks (this repo).
 
-This document is the bridge between the pre-verification research corpus and the public GitHub spine. Early papers used names **FSUFT / FSUFT-U** (Fluid Spacetime Unified Field Theory). The verified public face is **FSOT 2.1** (Fluid Spacetime Omni-Theory). The *story* is continuous; the *executable claim stack* is only what this repo proves today.
+This document is the **archive index / lineage map**. Early papers used names **FSUFT / FSUFT-U**. The verified public face is **FSOT 2.1**. The *story* is continuous; the *executable claim stack* is only what this repo proves today.
 
 ---
 
