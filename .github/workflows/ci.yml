@@ -34,7 +34,12 @@ jobs:
           python - <<'PY'
           import json, sys
           m = json.load(open("data/benchmark_margin_audit.json", encoding="utf-8"))
-          fail = int(m.get("green_gate_fail_count") or 0)
+          # fail_count can be 0 — do not use `or 0` only if you need missing→error
+          raw = m.get("green_gate_fail_count")
+          if raw is None:
+              print("missing green_gate_fail_count")
+              sys.exit(1)
+          fail = int(raw)
           n = int(m.get("benchmark_file_count") or 0)
           print(f"green {n - fail}/{n} fail={fail}")
           if fail != 0:
