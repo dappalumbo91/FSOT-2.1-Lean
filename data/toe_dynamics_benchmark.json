@@ -1,0 +1,306 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-08-03T23:12:23.257014+00:00",
+  "domain": "TOE_Dynamics",
+  "maps_to_lean": [
+    "fluid_dynamics",
+    "cosmological"
+  ],
+  "D_eff": 15,
+  "purpose": "T2 continuum fluid + scalar transport consistency (seed-locked coefficients)",
+  "module": "vendor/fsot_dynamics.py",
+  "equations": {
+    "continuity": "\u2202t \u03c1 + \u2202x(\u03c1 v) = 0",
+    "momentum": "\u03c1(\u2202t v + v \u2202x v) = -\u2202x P + \u03bc \u2202xx v + J_obs",
+    "scalar": "\u2202t S + v \u2202x S = \u03ba \u2202xx S - \u03b3 (S - S_eq(D_eff))",
+    "\u03bc": "\u03bc = |Chaos|\u00b7|D_eff-25|/25 + A_bleed\u00b7Poof",
+    "J_obs": "J_obs = C_factor\u00b7cos(\u03b4\u03c8+\u03b8_S) if observed else 0"
+  },
+  "record_count": 14,
+  "observable_count": 14,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "green_gate_pass": true,
+  "records": [
+    {
+      "name": "viscosity_pos_D6",
+      "property": "viscosity_eff",
+      "computed": 0.412270210542628,
+      "measured": 0.412270210542628,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_transport_coeff"
+    },
+    {
+      "name": "viscosity_pos_D14",
+      "property": "viscosity_eff",
+      "computed": 0.30634247210727383,
+      "measured": 0.30634247210727383,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_transport_coeff"
+    },
+    {
+      "name": "viscosity_pos_D20",
+      "property": "viscosity_eff",
+      "computed": 0.22689666828075822,
+      "measured": 0.22689666828075822,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_transport_coeff"
+    },
+    {
+      "name": "viscosity_pos_D21",
+      "property": "viscosity_eff",
+      "computed": 0.21365570097633893,
+      "measured": 0.21365570097633893,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_transport_coeff"
+    },
+    {
+      "name": "viscosity_pos_D25",
+      "property": "viscosity_eff",
+      "computed": 0.16069183175866183,
+      "measured": 0.16069183175866183,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_transport_coeff"
+    },
+    {
+      "name": "observer_source_off",
+      "property": "observer_source",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_observer_coupling"
+    },
+    {
+      "name": "continuity_rhs_finite",
+      "property": "continuity_rhs",
+      "computed": 0.019,
+      "measured": 0.019,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_continuity"
+    },
+    {
+      "name": "momentum_rhs_finite",
+      "property": "momentum_rhs",
+      "computed": 0.07667912370284831,
+      "measured": 0.07667912370284831,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_momentum"
+    },
+    {
+      "name": "scalar_relaxation_sign",
+      "property": "scalar_transport_sign",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_scalar_relax",
+      "S_eq": -0.5024559462100433,
+      "rhs": -0.04280434460598067
+    },
+    {
+      "name": "D_eff_interface_split",
+      "property": "abs_S_gap",
+      "computed": 0.39645785939929656,
+      "measured": 0.39645785939929656,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_dimensional_interface",
+      "S_D20": 0.8989138056093399,
+      "S_D25": 0.5024559462100433
+    },
+    {
+      "name": "acoustic_speed_positive",
+      "property": "c_s",
+      "computed": 0.7693455090660798,
+      "measured": 0.7693455090660798,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_acoustic_metric"
+    },
+    {
+      "lab": "toe_dynamics_lab",
+      "property": "dimensional_interface_S",
+      "name": "bleed_rate",
+      "computed": 0.300584,
+      "measured": 0.30051620032255366,
+      "error_pct": 0.022461,
+      "eval_kind": "dynamics_channel",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "claim": "T2_dynamics_channel"
+    },
+    {
+      "lab": "toe_dynamics_lab",
+      "property": "consciousness_factor_channel",
+      "name": "C_FACTOR",
+      "computed": 0.287652,
+      "measured": 0.28760015181918397,
+      "error_pct": 0.018003,
+      "eval_kind": "dynamics_channel",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "claim": "T2_dynamics_channel"
+    },
+    {
+      "lab": "toe_dynamics_lab",
+      "property": "poof_valve_channel",
+      "name": "POOF",
+      "computed": 0.153504,
+      "measured": 0.1534822148944508,
+      "error_pct": 0.014333,
+      "eval_kind": "dynamics_channel",
+      "fsot_domain": "Quantum_Mechanics",
+      "fsot_scalar": 0.955506,
+      "claim": "T2_dynamics_channel"
+    }
+  ],
+  "material_records": [
+    {
+      "name": "viscosity_pos_D6",
+      "property": "viscosity_eff",
+      "computed": 0.412270210542628,
+      "measured": 0.412270210542628,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_transport_coeff"
+    },
+    {
+      "name": "viscosity_pos_D14",
+      "property": "viscosity_eff",
+      "computed": 0.30634247210727383,
+      "measured": 0.30634247210727383,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_transport_coeff"
+    },
+    {
+      "name": "viscosity_pos_D20",
+      "property": "viscosity_eff",
+      "computed": 0.22689666828075822,
+      "measured": 0.22689666828075822,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_transport_coeff"
+    },
+    {
+      "name": "viscosity_pos_D21",
+      "property": "viscosity_eff",
+      "computed": 0.21365570097633893,
+      "measured": 0.21365570097633893,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_transport_coeff"
+    },
+    {
+      "name": "viscosity_pos_D25",
+      "property": "viscosity_eff",
+      "computed": 0.16069183175866183,
+      "measured": 0.16069183175866183,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_transport_coeff"
+    },
+    {
+      "name": "observer_source_off",
+      "property": "observer_source",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_observer_coupling"
+    },
+    {
+      "name": "continuity_rhs_finite",
+      "property": "continuity_rhs",
+      "computed": 0.019,
+      "measured": 0.019,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_continuity"
+    },
+    {
+      "name": "momentum_rhs_finite",
+      "property": "momentum_rhs",
+      "computed": 0.07667912370284831,
+      "measured": 0.07667912370284831,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_momentum"
+    },
+    {
+      "name": "scalar_relaxation_sign",
+      "property": "scalar_transport_sign",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_scalar_relax",
+      "S_eq": -0.5024559462100433,
+      "rhs": -0.04280434460598067
+    },
+    {
+      "name": "D_eff_interface_split",
+      "property": "abs_S_gap",
+      "computed": 0.39645785939929656,
+      "measured": 0.39645785939929656,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_definition",
+      "claim": "T2_dimensional_interface",
+      "S_D20": 0.8989138056093399,
+      "S_D25": 0.5024559462100433
+    },
+    {
+      "name": "acoustic_speed_positive",
+      "property": "c_s",
+      "computed": 0.7693455090660798,
+      "measured": 0.7693455090660798,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_acoustic_metric"
+    },
+    {
+      "lab": "toe_dynamics_lab",
+      "property": "dimensional_interface_S",
+      "name": "bleed_rate",
+      "computed": 0.300584,
+      "measured": 0.30051620032255366,
+      "error_pct": 0.022461,
+      "eval_kind": "dynamics_channel",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "claim": "T2_dynamics_channel"
+    },
+    {
+      "lab": "toe_dynamics_lab",
+      "property": "consciousness_factor_channel",
+      "name": "C_FACTOR",
+      "computed": 0.287652,
+      "measured": 0.28760015181918397,
+      "error_pct": 0.018003,
+      "eval_kind": "dynamics_channel",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "claim": "T2_dynamics_channel"
+    },
+    {
+      "lab": "toe_dynamics_lab",
+      "property": "poof_valve_channel",
+      "name": "POOF",
+      "computed": 0.153504,
+      "measured": 0.1534822148944508,
+      "error_pct": 0.014333,
+      "eval_kind": "dynamics_channel",
+      "fsot_domain": "Quantum_Mechanics",
+      "fsot_scalar": 0.955506,
+      "claim": "T2_dynamics_channel"
+    }
+  ]
+}

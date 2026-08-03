@@ -264,6 +264,46 @@ extension_domains:
     benchmark_data: data/small_body_orbits_benchmark.json
     lean_module: FSOT.Formal.SmallBodyOrbitsPriors
     note: Moon + Ceres/Vesta/Eros/Halley JPL EC/QR semi-major perturbation checks
+  TOE_Dynamics:
+    tier: 99
+    D_eff: 15
+    delta_psi: 0.9
+    recent_hits: 1
+    observed: true
+    maps_to_lean:
+    - energy
+    - galactic
+    build_script: scripts/build_toe_gap_closure.py
+    benchmark_data: data/toe_dynamics_benchmark.json
+    lean_module: FSOT.Formal.Domains
+    note: T2 continuum fluid + scalar transport (seed-locked coefficients)
+  TOE_Limit_Recovery:
+    tier: 99
+    D_eff: 22
+    delta_psi: 1.0
+    recent_hits: 0
+    observed: true
+    maps_to_lean:
+    - cosmological
+    - quantum
+    - particle
+    build_script: scripts/build_toe_gap_closure.py
+    benchmark_data: data/toe_limit_recovery_benchmark.json
+    lean_module: FSOT.Formal.Domains
+    note: T3 GR/QM/SM limit probes via domain-routed residual law + SI anchors
+  TOE_Contested_Sector_Refresh:
+    tier: 99
+    D_eff: 25
+    delta_psi: 1.0
+    recent_hits: 0
+    observed: false
+    maps_to_lean:
+    - cosmological
+    - particle
+    build_script: scripts/build_toe_gap_closure.py
+    benchmark_data: data/toe_contested_sector_refresh.json
+    lean_module: FSOT.Formal.Domains
+    note: Public literature anchors for H0, dark energy, N_eff, sigma8, Higgs, BBN, etc.
   MPCORB_Minor_Planet_Catalog:
     tier: 23
     D_eff: 21

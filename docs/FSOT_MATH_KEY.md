@@ -316,6 +316,8 @@ python scripts/run_tla_domain_routing_check.py
 | MPCORB refinement | `docs/MPCORB_REFINEMENT_PROCESS.md` |
 | This key | `docs/FSOT_MATH_KEY.md` |
 | **One-pager (PDF)** | [`docs/FSOT_MATH_KEY_ONEPAGER.pdf`](FSOT_MATH_KEY_ONEPAGER.pdf) · MD twin `docs/FSOT_MATH_KEY_ONEPAGER.md` |
+| **ToE claim boundaries (frozen)** | `docs/TOE_CLAIM_BOUNDARIES.md` |
+| **ToE gap closure** | `docs/TOE_GAP_CLOSURE.md` · `python scripts/build_toe_gap_closure.py` |
 
 ---
 

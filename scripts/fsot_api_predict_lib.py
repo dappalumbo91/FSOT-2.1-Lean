@@ -55,6 +55,8 @@ DOMAIN_FACTORS: dict[str, float] = {
     "Seismology": 0.0005,
     "Fluid_Dynamics": 0.0005,
     "Atmospheric_Physics": 0.00055,
+    "Electromagnetism": 0.0004,
+    "Particle_Physics": 0.0001,
     "High_Energy_Physics": 0.00015,
     "Particle_Physics": 0.0001,
     "Materials_Science": 0.0004,

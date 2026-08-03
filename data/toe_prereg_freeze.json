@@ -1,0 +1,56 @@
+{
+  "freeze_id": "TOE-PREREG-20260803",
+  "frozen_at": "2026-08-03T23:12:23.259020+00:00",
+  "review_horizon": "2026-12-31",
+  "global_kill": "If >25% of extension domains fail pooled \u22640.5% on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+  "sector_predictions": [
+    {
+      "id": "PRED-H0-bridge",
+      "fsot_predicted": 70.75,
+      "kill": "not_between_67.4_and_73.04"
+    },
+    {
+      "id": "PRED-S8",
+      "fsot_predicted": 0.805,
+      "kill": "outside_planck_des_band"
+    },
+    {
+      "id": "PRED-wa",
+      "fsot_predicted": -1.018,
+      "kill": "desi_3sigma_exclusion"
+    },
+    {
+      "id": "PRED-Neffective",
+      "fsot_predicted": 3.046,
+      "kill": "cmb_3sigma_exclusion"
+    },
+    {
+      "id": "PRED-mH",
+      "fsot_predicted": 125.25,
+      "kill": "pdg_update_outside_0_5pct"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/preregistered_predictions_manifest.yaml",
+      "sha256": "6a23fc3083c93ec35629c2e5c1f2c38ed5b2bf3d2e728c14822afb9c75a796ce",
+      "bytes": 15023
+    },
+    {
+      "path": "data/stumped_observables_reference.json",
+      "sha256": "a0970161bbacd96a97071cba74c9864b1c7dd62afbbf1eb5893eb96a06b6e193",
+      "bytes": 4595
+    },
+    {
+      "path": "data/preregistered_open_science_holdouts.yaml",
+      "sha256": "e7f3e0ad416e109ac460b780e750ad4bdece8011d91130e5bdace91b9b5ec1bd",
+      "bytes": 3177
+    },
+    {
+      "path": "data/falsification_registry_closure.json",
+      "sha256": "65a8d081666e2f73ad8d3768def19d63fa9a7a7c4eba5db79c3e424abfbbf05c",
+      "bytes": 26909
+    }
+  ],
+  "bundle_sha256": "5f8c3dc55ed29d70f3ecce8bdfb08aae3ff603170b7e8438e1da1f46da59049c"
+}
