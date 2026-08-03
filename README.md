@@ -28,7 +28,17 @@ Cosmology and the neural mind are **domain folds of one** scalar engine (pin D1D
 | **Physical Archive map** | Offline: `I:\FSOT-Physical-Archive\ZIG_MIND_AND_GITHUB_MAP.md` |
 | **Zig neural mind** | https://github.com/dappalumbo91/fsot-neuron-zig |
 | **Neural monorepo (Allen / wet-lab)** | https://github.com/dappalumbo91/FSOT-2.1-Neural |
-| **Related embodiments (detail)** | [RELATED_EMBODIMENTS.md](RELATED_EMBODIMENTS.md)
+| **Related embodiments (detail)** | [RELATED_EMBODIMENTS.md](RELATED_EMBODIMENTS.md) |
+| **Founding narrative (pre-verification voice)** | [docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md](docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md) |
+| **Philosophy / consciousness spine** | [docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) |
+
+### Founding voice (concepts — not early math)
+
+FSOT began as an independent research program (**FSUFT** / Fluid Spacetime Unified Field Theory, archive `I:\fsuft aasb`) that asked whether space-time is a single **fluid medium**, whether **As Above, So Below** is a real cross-scale law, and whether **observation and consciousness** enter as physical coupling rather than optional philosophy. That *perspective* still describes the meaning of the work.
+
+What this repository publishes is the *machine-checkable face*: one seed-derived scalar engine, hundreds of scientific domains against measured data, and multi-prover formal triangulation. **Early essays are the conceptual trail; they are not the numeric authority.** Do not treat pre-2.1 residuals or draft formulas as current green-gate results.
+
+Full map of founding concepts vs verified stack: [docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md](docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md). Clear entry ladder: [docs/CLEAR_PATH_FOR_INDEPENDENTS.md](docs/CLEAR_PATH_FOR_INDEPENDENTS.md). Residual claim tiers: [docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md](docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md).
 
 ## Abstract
 
