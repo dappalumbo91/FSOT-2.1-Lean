@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-16T13:15:58.012757+00:00",
+  "generated_at": "2026-08-03T22:36:33.541266+00:00",
   "version": "1.2",
   "summary": {
-    "bundle_conj_total": 507,
+    "bundle_conj_total": 511,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 453,
-    "total_conjuncts": 2306,
-    "conjuncts_with_atomic_coverage": 2304,
+    "provable_bundle_conj": 457,
+    "total_conjuncts": 2325,
+    "conjuncts_with_atomic_coverage": 2323,
     "conjunct_atomic_coverage_pct": 99.91,
-    "explicit_linked_conjuncts": 1764,
-    "explicit_linked_in_spine": 1762,
+    "explicit_linked_conjuncts": 1779,
+    "explicit_linked_in_spine": 1777,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
@@ -119,6 +119,7 @@
     "chemical_engineering_ext_bundle",
     "chemical_engineering_bundle",
     "chemical_structure_stability_panel_bundle",
+    "circuit_component_emergence_bundle",
     "civil_engineering_ext_bundle",
     "civil_engineering_panel_bundle",
     "civil_engineering_bundle",
@@ -276,12 +277,12 @@
     "linguistics_formal_bundle",
     "live_ingest_spine_bundle",
     "living_fsot_hardware_panel_bundle",
-    "longevity_anage_catalog_panel_bundle",
-    "longevity_consciousness_coupling_panel_bundle",
-    "longevity_extreme_species_panel_bundle",
-    "longevity_genetic_mechanics_panel_bundle",
-    "longevity_megadeep_ncbi_panel_bundle",
-    "longevity_telomere_repair_panel_bundle",
+    "longevity_anage_catalog_bundle",
+    "longevity_consciousness_coupling_bundle",
+    "longevity_extreme_species_bundle",
+    "longevity_genetic_mechanics_bundle",
+    "longevity_megadeep_ncbi_bundle",
+    "longevity_telomere_repair_bundle",
     "machine_and_molecule_live_bundle",
     "magic_imbalance_penalty_in_unit_interval",
     "magic_backlash_threshold_in_unit_interval",
@@ -314,6 +315,7 @@
     "metamaterial_fluid_design_prereg_scaffold_bundle",
     "meteorology_gap_fill_bundle",
     "microtubule_quantum_consciousness_panel_bundle",
+    "mpcorb_minor_planet_catalog_bundle",
     "music_harmonics_public_panel_bundle",
     "mycology_ext_bundle",
     "mycology_panel_bundle",
@@ -419,6 +421,7 @@
     "rust_lean_bridge_panel_bundle",
     "rust_lean_bridge_bundle",
     "scalar_solver_35_panel_bundle",
+    "schematic_netlist_intrinsic_bundle",
     "scientific_expansion_depth_spine_bundle",
     "scientific_expansion_depth_wave2_spine_bundle",
     "scientific_expansion_spine_bundle",
@@ -465,8 +468,9 @@
     "the_well_spot_check_panel_bundle",
     "the_well_verification_spine_bundle",
     "tier_93_dual_wave_spine_bundle",
-    "tier_94_longevity_spine_bundle",
-    "tier_95_zebrafish_spine_bundle",
+    "tier_94_longevity_bundle",
+    "tier_95_zebrafish_bundle",
+    "tier_96_circuit_bundle",
     "time_domain_crosswalk_bundle",
     "time_emergence_deep_panel_bundle",
     "time_emergence_simulation_bundle",
@@ -507,9 +511,9 @@
     "xr_interactive_media_math_scaffold_bundle",
     "z120_z126_beam_synthesis_panel_bundle",
     "z164_distant_island_prereg_scaffold_bundle",
-    "zebrafish_cell_tracking_panel_bundle",
-    "zebrafish_developmental_mechanics_panel_bundle",
-    "zebrafish_longevity_genetics_coupling_panel_bundle",
+    "zebrafish_cell_tracking_bundle",
+    "zebrafish_developmental_mechanics_bundle",
+    "zebrafish_longevity_genetics_coupling_bundle",
     "zebrafish_predictive_validation_bundle",
     "zero_boundary_not_entity_panel_bundle",
     "zero_day_risk_evaluator_bundle",
@@ -4216,6 +4220,64 @@
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "circuit_component_emergence_bundle",
+      "lean_module": "CircuitComponentEmergencePanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "circuit_component_emergence_observable_count",
+          "statement": "23 = 23",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "circuit_component_emergence_observable_count_pos"
+          ],
+          "linked_obligation_id": "circuit_component_emergence_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "circuit_component_emergence_D_eff",
+          "statement": "10 = 10",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "circuit_component_emergence_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_lit",
+          "symbol": "circuit_component_emergence_median_error_pct",
+          "statement": "0.051887 < 5.0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "circuit_component_emergence_median_error_under_five_pct"
+          ],
+          "linked_obligation_id": "circuit_component_emergence_median_error_under_five_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_material",
+          "statement": "raw_S(material) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "material_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -15733,7 +15795,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "longevity_anage_catalog_panel_bundle",
+      "id": "longevity_anage_catalog_bundle",
       "lean_module": "LongevityAnAgeCatalogPanelPriors",
       "provable": true,
       "unprovable_reason": null,
@@ -15741,49 +15803,49 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "longevity_anage_catalog_panel_observable_count",
+          "symbol": "longevity_anage_catalog_observable_count",
           "statement": "966 = 966",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_anage_catalog_panel_observable_count_pos"
+            "longevity_anage_catalog_observable_count_pos"
           ],
-          "linked_obligation_id": "longevity_anage_catalog_panel_observable_count_pos"
+          "linked_obligation_id": "longevity_anage_catalog_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "longevity_anage_catalog_panel_D_eff",
+          "symbol": "longevity_anage_catalog_D_eff",
           "statement": "20 = 20",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "longevity_anage_catalog_panel_bundle"
+            "longevity_anage_catalog_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.022236 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "longevity_anage_catalog_median_error_pct",
+          "statement": "0.022236 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_anage_catalog_panel_median_error_under_half_pct"
+            "longevity_anage_catalog_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "longevity_anage_catalog_panel_median_error_under_half_pct"
+          "linked_obligation_id": "longevity_anage_catalog_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_biological",
+          "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "biological_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -15791,7 +15853,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "longevity_consciousness_coupling_panel_bundle",
+      "id": "longevity_consciousness_coupling_bundle",
       "lean_module": "LongevityConsciousnessCouplingPanelPriors",
       "provable": true,
       "unprovable_reason": null,
@@ -15799,49 +15861,49 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "longevity_consciousness_coupling_panel_observable_count",
+          "symbol": "longevity_consciousness_coupling_observable_count",
           "statement": "890 = 890",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_consciousness_coupling_panel_observable_count_pos"
+            "longevity_consciousness_coupling_observable_count_pos"
           ],
-          "linked_obligation_id": "longevity_consciousness_coupling_panel_observable_count_pos"
+          "linked_obligation_id": "longevity_consciousness_coupling_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "longevity_consciousness_coupling_panel_D_eff",
+          "symbol": "longevity_consciousness_coupling_D_eff",
           "statement": "24 = 24",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "longevity_consciousness_coupling_panel_bundle"
+            "longevity_consciousness_coupling_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.022424 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "longevity_consciousness_coupling_median_error_pct",
+          "statement": "0.022424 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_consciousness_coupling_panel_median_error_under_half_pct"
+            "longevity_consciousness_coupling_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "longevity_consciousness_coupling_panel_median_error_under_half_pct"
+          "linked_obligation_id": "longevity_consciousness_coupling_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_consciousness",
+          "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "consciousness_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -15849,7 +15911,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "longevity_extreme_species_panel_bundle",
+      "id": "longevity_extreme_species_bundle",
       "lean_module": "LongevityExtremeSpeciesPanelPriors",
       "provable": true,
       "unprovable_reason": null,
@@ -15857,49 +15919,49 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "longevity_extreme_species_panel_observable_count",
+          "symbol": "longevity_extreme_species_observable_count",
           "statement": "164 = 164",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_extreme_species_panel_observable_count_pos"
+            "longevity_extreme_species_observable_count_pos"
           ],
-          "linked_obligation_id": "longevity_extreme_species_panel_observable_count_pos"
+          "linked_obligation_id": "longevity_extreme_species_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "longevity_extreme_species_panel_D_eff",
+          "symbol": "longevity_extreme_species_D_eff",
           "statement": "21 = 21",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "longevity_extreme_species_panel_bundle"
+            "longevity_extreme_species_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.017789 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "longevity_extreme_species_median_error_pct",
+          "statement": "0.017789 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_extreme_species_panel_median_error_under_half_pct"
+            "longevity_extreme_species_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "longevity_extreme_species_panel_median_error_under_half_pct"
+          "linked_obligation_id": "longevity_extreme_species_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_consciousness",
+          "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "consciousness_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -15907,7 +15969,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "longevity_genetic_mechanics_panel_bundle",
+      "id": "longevity_genetic_mechanics_bundle",
       "lean_module": "LongevityGeneticMechanicsPanelPriors",
       "provable": true,
       "unprovable_reason": null,
@@ -15915,49 +15977,49 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "longevity_genetic_mechanics_panel_observable_count",
+          "symbol": "longevity_genetic_mechanics_observable_count",
           "statement": "35 = 35",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_genetic_mechanics_panel_observable_count_pos"
+            "longevity_genetic_mechanics_observable_count_pos"
           ],
-          "linked_obligation_id": "longevity_genetic_mechanics_panel_observable_count_pos"
+          "linked_obligation_id": "longevity_genetic_mechanics_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "longevity_genetic_mechanics_panel_D_eff",
+          "symbol": "longevity_genetic_mechanics_D_eff",
           "statement": "19 = 19",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "longevity_genetic_mechanics_panel_bundle"
+            "longevity_genetic_mechanics_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.022236 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "longevity_genetic_mechanics_median_error_pct",
+          "statement": "0.022236 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_genetic_mechanics_panel_median_error_under_half_pct"
+            "longevity_genetic_mechanics_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "longevity_genetic_mechanics_panel_median_error_under_half_pct"
+          "linked_obligation_id": "longevity_genetic_mechanics_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_biological",
+          "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "biological_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -15965,7 +16027,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "longevity_megadeep_ncbi_panel_bundle",
+      "id": "longevity_megadeep_ncbi_bundle",
       "lean_module": "LongevityMegaDeepNcbiPanelPriors",
       "provable": true,
       "unprovable_reason": null,
@@ -15973,49 +16035,49 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "longevity_megadeep_ncbi_panel_observable_count",
+          "symbol": "longevity_megadeep_ncbi_observable_count",
           "statement": "1746 = 1746",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_megadeep_ncbi_panel_observable_count_pos"
+            "longevity_megadeep_ncbi_observable_count_pos"
           ],
-          "linked_obligation_id": "longevity_megadeep_ncbi_panel_observable_count_pos"
+          "linked_obligation_id": "longevity_megadeep_ncbi_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "longevity_megadeep_ncbi_panel_D_eff",
+          "symbol": "longevity_megadeep_ncbi_D_eff",
           "statement": "23 = 23",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "longevity_megadeep_ncbi_panel_bundle"
+            "longevity_megadeep_ncbi_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.017789 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "longevity_megadeep_ncbi_median_error_pct",
+          "statement": "0.017789 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_megadeep_ncbi_panel_median_error_under_half_pct"
+            "longevity_megadeep_ncbi_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "longevity_megadeep_ncbi_panel_median_error_under_half_pct"
+          "linked_obligation_id": "longevity_megadeep_ncbi_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_biological",
+          "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "biological_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -16023,7 +16085,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "longevity_telomere_repair_panel_bundle",
+      "id": "longevity_telomere_repair_bundle",
       "lean_module": "LongevityTelomereRepairPanelPriors",
       "provable": true,
       "unprovable_reason": null,
@@ -16031,49 +16093,49 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "longevity_telomere_repair_panel_observable_count",
+          "symbol": "longevity_telomere_repair_observable_count",
           "statement": "60 = 60",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_telomere_repair_panel_observable_count_pos"
+            "longevity_telomere_repair_observable_count_pos"
           ],
-          "linked_obligation_id": "longevity_telomere_repair_panel_observable_count_pos"
+          "linked_obligation_id": "longevity_telomere_repair_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "longevity_telomere_repair_panel_D_eff",
+          "symbol": "longevity_telomere_repair_D_eff",
           "statement": "20 = 20",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "longevity_telomere_repair_panel_bundle"
+            "longevity_telomere_repair_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.022236 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "longevity_telomere_repair_median_error_pct",
+          "statement": "0.022236 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "longevity_telomere_repair_panel_median_error_under_half_pct"
+            "longevity_telomere_repair_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "longevity_telomere_repair_panel_median_error_under_half_pct"
+          "linked_obligation_id": "longevity_telomere_repair_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_biological",
+          "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "biological_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -18344,6 +18406,100 @@
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "mpcorb_minor_planet_catalog_bundle",
+      "lean_module": "MpcorbMinorPlanetCatalogPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 7,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "mpcorb_object_count",
+          "statement": "1554101 = 1554101",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "mpcorb_object_count_pos"
+          ],
+          "linked_obligation_id": "mpcorb_object_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "mpcorb_D_eff",
+          "statement": "21 = 21",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "mpcorb_minor_planet_catalog_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "mpcorb_pooled_median_error_pct",
+          "statement": "0.023015 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "mpcorb_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "mpcorb_pooled_median_under_half_pct"
+        },
+        {
+          "kind": "lt_lit",
+          "symbol": "mpcorb_pooled_median_error_pct",
+          "statement": "0.023015 < 0.05",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "mpcorb_pooled_median_under_tier_aspiration"
+          ],
+          "linked_obligation_id": "mpcorb_pooled_median_under_tier_aspiration"
+        },
+        {
+          "kind": "lt_lit",
+          "symbol": "mpcorb_kepler_median_error_pct",
+          "statement": "1.5875572596619725e-06 < 0.001",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "mpcorb_kepler_integrity_under_ppm"
+          ],
+          "linked_obligation_id": "mpcorb_kepler_integrity_under_ppm"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "mpcorb_green_gate_flag",
+          "statement": "1 = 1",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "mpcorb_green_gate_pass"
+          ],
+          "linked_obligation_id": "mpcorb_green_gate_pass"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_astronomical",
+          "statement": "raw_S(astronomical) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "astronomical_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -25737,6 +25893,64 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "schematic_netlist_intrinsic_bundle",
+      "lean_module": "SchematicNetlistIntrinsicPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "schematic_netlist_intrinsic_observable_count",
+          "statement": "5 = 5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "schematic_netlist_intrinsic_observable_count_pos"
+          ],
+          "linked_obligation_id": "schematic_netlist_intrinsic_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "schematic_netlist_intrinsic_D_eff",
+          "statement": "10 = 10",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "schematic_netlist_intrinsic_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_lit",
+          "symbol": "schematic_netlist_intrinsic_median_error_pct",
+          "statement": "0.051887 < 5.0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "schematic_netlist_intrinsic_median_error_under_five_pct"
+          ],
+          "linked_obligation_id": "schematic_netlist_intrinsic_median_error_under_five_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_electron",
+          "statement": "raw_S(electron) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "electron_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "scientific_expansion_depth_spine_bundle",
       "lean_module": "ScientificExpansionDepthSpinePriors",
       "provable": true,
@@ -28923,7 +29137,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "tier_94_longevity_spine_bundle",
+      "id": "tier_94_longevity_bundle",
       "lean_module": "Tier94LongevitySpinePriors",
       "provable": true,
       "unprovable_reason": null,
@@ -28931,49 +29145,49 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "tier_94_longevity_spine_observable_count",
+          "symbol": "tier_94_longevity_observable_count",
           "statement": "34 = 34",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "tier_94_longevity_spine_observable_count_pos"
+            "tier_94_longevity_observable_count_pos"
           ],
-          "linked_obligation_id": "tier_94_longevity_spine_observable_count_pos"
+          "linked_obligation_id": "tier_94_longevity_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "tier_94_longevity_spine_D_eff",
+          "symbol": "tier_94_longevity_D_eff",
           "statement": "25 = 25",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "tier_94_longevity_spine_bundle"
+            "tier_94_longevity_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.0 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "tier_94_longevity_median_error_pct",
+          "statement": "0.0 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "tier_94_longevity_spine_median_error_under_half_pct"
+            "tier_94_longevity_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "tier_94_longevity_spine_median_error_under_half_pct"
+          "linked_obligation_id": "tier_94_longevity_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_biological",
+          "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "biological_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -28981,7 +29195,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "tier_95_zebrafish_spine_bundle",
+      "id": "tier_95_zebrafish_bundle",
       "lean_module": "Tier95ZebrafishSpinePriors",
       "provable": true,
       "unprovable_reason": null,
@@ -28989,49 +29203,107 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "tier_95_zebrafish_spine_observable_count",
-          "statement": "24 = 24",
+          "symbol": "tier_95_zebrafish_observable_count",
+          "statement": "18 = 18",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "tier_95_zebrafish_spine_observable_count_pos"
+            "tier_95_zebrafish_observable_count_pos"
           ],
-          "linked_obligation_id": "tier_95_zebrafish_spine_observable_count_pos"
+          "linked_obligation_id": "tier_95_zebrafish_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "tier_95_zebrafish_spine_D_eff",
+          "symbol": "tier_95_zebrafish_D_eff",
           "statement": "23 = 23",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "tier_95_zebrafish_spine_bundle"
+            "tier_95_zebrafish_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.013342 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "tier_95_zebrafish_median_error_pct",
+          "statement": "0.0 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "tier_95_zebrafish_spine_median_error_under_half_pct"
+            "tier_95_zebrafish_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "tier_95_zebrafish_spine_median_error_under_half_pct"
+          "linked_obligation_id": "tier_95_zebrafish_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_biological",
+          "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "biological_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "tier_96_circuit_bundle",
+      "lean_module": "Tier96CircuitSpinePriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "tier_96_circuit_observable_count",
+          "statement": "11 = 11",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "tier_96_circuit_observable_count_pos"
+          ],
+          "linked_obligation_id": "tier_96_circuit_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "tier_96_circuit_D_eff",
+          "statement": "10 = 10",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "tier_96_circuit_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_lit",
+          "symbol": "tier_96_circuit_median_error_pct",
+          "statement": "0.0 < 5.0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "tier_96_circuit_median_error_under_five_pct"
+          ],
+          "linked_obligation_id": "tier_96_circuit_median_error_under_five_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_material",
+          "statement": "raw_S(material) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "material_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -31875,7 +32147,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "zebrafish_cell_tracking_panel_bundle",
+      "id": "zebrafish_cell_tracking_bundle",
       "lean_module": "ZebrafishCellTrackingPanelPriors",
       "provable": true,
       "unprovable_reason": null,
@@ -31883,49 +32155,49 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "zebrafish_cell_tracking_panel_observable_count",
+          "symbol": "zebrafish_cell_tracking_observable_count",
           "statement": "20 = 20",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "zebrafish_cell_tracking_panel_observable_count_pos"
+            "zebrafish_cell_tracking_observable_count_pos"
           ],
-          "linked_obligation_id": "zebrafish_cell_tracking_panel_observable_count_pos"
+          "linked_obligation_id": "zebrafish_cell_tracking_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "zebrafish_cell_tracking_panel_D_eff",
+          "symbol": "zebrafish_cell_tracking_D_eff",
           "statement": "20 = 20",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "zebrafish_cell_tracking_panel_bundle"
+            "zebrafish_cell_tracking_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.022236 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "zebrafish_cell_tracking_median_error_pct",
+          "statement": "0.022236 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "zebrafish_cell_tracking_panel_median_error_under_half_pct"
+            "zebrafish_cell_tracking_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "zebrafish_cell_tracking_panel_median_error_under_half_pct"
+          "linked_obligation_id": "zebrafish_cell_tracking_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_biological",
+          "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "biological_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -31933,7 +32205,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "zebrafish_developmental_mechanics_panel_bundle",
+      "id": "zebrafish_developmental_mechanics_bundle",
       "lean_module": "ZebrafishDevelopmentalMechanicsPanelPriors",
       "provable": true,
       "unprovable_reason": null,
@@ -31941,49 +32213,49 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "zebrafish_developmental_mechanics_panel_observable_count",
+          "symbol": "zebrafish_developmental_mechanics_observable_count",
           "statement": "31 = 31",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "zebrafish_developmental_mechanics_panel_observable_count_pos"
+            "zebrafish_developmental_mechanics_observable_count_pos"
           ],
-          "linked_obligation_id": "zebrafish_developmental_mechanics_panel_observable_count_pos"
+          "linked_obligation_id": "zebrafish_developmental_mechanics_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "zebrafish_developmental_mechanics_panel_D_eff",
+          "symbol": "zebrafish_developmental_mechanics_D_eff",
           "statement": "21 = 21",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "zebrafish_developmental_mechanics_panel_bundle"
+            "zebrafish_developmental_mechanics_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.017789 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "zebrafish_developmental_mechanics_median_error_pct",
+          "statement": "0.017789 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "zebrafish_developmental_mechanics_panel_median_error_under_half_pct"
+            "zebrafish_developmental_mechanics_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "zebrafish_developmental_mechanics_panel_median_error_under_half_pct"
+          "linked_obligation_id": "zebrafish_developmental_mechanics_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_biological",
+          "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "biological_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -31991,7 +32263,7 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
-      "id": "zebrafish_longevity_genetics_coupling_panel_bundle",
+      "id": "zebrafish_longevity_genetics_coupling_bundle",
       "lean_module": "ZebrafishLongevityGeneticsCouplingPanelPriors",
       "provable": true,
       "unprovable_reason": null,
@@ -31999,49 +32271,49 @@
       "conjuncts": [
         {
           "kind": "eq_nat",
-          "symbol": "zebrafish_longevity_genetics_coupling_panel_observable_count",
-          "statement": "24 = 24",
+          "symbol": "zebrafish_longevity_genetics_coupling_observable_count",
+          "statement": "15 = 15",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "zebrafish_longevity_genetics_coupling_panel_observable_count_pos"
+            "zebrafish_longevity_genetics_coupling_observable_count_pos"
           ],
-          "linked_obligation_id": "zebrafish_longevity_genetics_coupling_panel_observable_count_pos"
+          "linked_obligation_id": "zebrafish_longevity_genetics_coupling_observable_count_pos"
         },
         {
           "kind": "eq_nat",
-          "symbol": "zebrafish_longevity_genetics_coupling_panel_D_eff",
+          "symbol": "zebrafish_longevity_genetics_coupling_D_eff",
           "statement": "22 = 22",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "zebrafish_longevity_genetics_coupling_panel_bundle"
+            "zebrafish_longevity_genetics_coupling_bundle"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "r_lt_lit_pure",
-          "symbol": null,
-          "statement": "0.014453500000000001 < 0.5",
+          "kind": "lt_lit",
+          "symbol": "zebrafish_longevity_genetics_coupling_median_error_pct",
+          "statement": "0.013342 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "zebrafish_longevity_genetics_coupling_panel_median_error_under_half_pct"
+            "zebrafish_longevity_genetics_coupling_median_error_under_five_pct"
           ],
-          "linked_obligation_id": "zebrafish_longevity_genetics_coupling_panel_median_error_under_half_pct"
+          "linked_obligation_id": "zebrafish_longevity_genetics_coupling_median_error_under_five_pct"
         },
         {
           "kind": "pos",
-          "symbol": "raw_S_energy",
-          "statement": "raw_S(energy) > 0",
+          "symbol": "raw_S_biological",
+          "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "energy_raw_S_positive"
+            "biological_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -32082,7 +32354,7 @@
         {
           "kind": "lt_lit",
           "symbol": "zebrafish_predictive_validation_median_error_pct",
-          "statement": "0.368118 < 5.0",
+          "statement": "0.3579695 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,

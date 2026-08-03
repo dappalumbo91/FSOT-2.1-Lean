@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-16T13:16:07.139345+00:00",
+  "generated_at": "2026-08-03T22:36:45.075028+00:00",
   "version": "1.0",
-  "verdict": "FIVE_PROVER_QUAD_UNDENIABLE",
+  "verdict": "QUAD_INCOMPLETE",
   "headline": "Every exported atomic obligation is cross-checked across Lean 4 (authority), Coq/Rocq (coqc + coqchk), Isabelle/HOL, Rust f64 replay, and F* boot-kernel triangulation \u2014 among the strictest formal stacks used for mathematical software.",
   "atomic_spine": {
-    "total_obligations": 2370,
-    "atomic_triangulated": 1863,
+    "total_obligations": 2385,
+    "atomic_triangulated": 1874,
     "false_margin_violations": 0,
     "pct_atomic_triangulated": 100.0
   },
   "provers": {
     "lean_4": {
       "role": "primary_authority",
-      "theorem_count": 2370,
+      "theorem_count": 2385,
       "export_fraction_pct": 100.0,
-      "modules": 500,
+      "modules": 504,
       "proof_style": "norm_num / decide / linarith / interval certificates",
       "status": "passed"
     },
@@ -30,7 +30,7 @@
         "TranscendentalBoundsNative.v",
         "FullFormalSpine_*.v (chunked)"
       ],
-      "atomic_triangulated_ok": 1863,
+      "atomic_triangulated_ok": 1874,
       "status": "unknown"
     },
     "isabelle_hol": {
@@ -45,7 +45,7 @@
         "TranscendentalBoundsNative.thy",
         "FullFormalSpine_*.thy (chunked)"
       ],
-      "atomic_triangulated_ok": 1863,
+      "atomic_triangulated_ok": 1874,
       "status": "unknown"
     },
     "fstar": {
@@ -72,9 +72,9 @@
     },
     "rust_f64": {
       "role": "systems_language_numeric_replay",
-      "obligation_count": 1955,
+      "obligation_count": 1966,
       "connective_ok": 24,
-      "formal_ok": 1863,
+      "formal_ok": 1874,
       "transcendental_ok": 68,
       "artifact": "verification/rust/fsot_obligation_replay/",
       "status": "passed"
@@ -84,7 +84,7 @@
     {
       "id": "lean_coq_isabelle_rust",
       "scope": "2146 exported obligations; 1820 atomic triangulated",
-      "status": "passed",
+      "status": "failed",
       "undeniable_for": "numeric atomic spine"
     },
     {
@@ -103,7 +103,7 @@
     {
       "id": "esp32_uart",
       "scope": "single boot scalar UART on CP210x",
-      "status": "skipped",
+      "status": "passed",
       "undeniable_for": "hardware UART boot scalar",
       "note": "One scalar only \u2014 not full FSOT theory on chip"
     },

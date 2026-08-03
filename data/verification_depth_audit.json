@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-16T13:15:57.676315+00:00",
+  "generated_at": "2026-08-03T22:36:32.856625+00:00",
   "version": "1.0",
   "verdict": {
-    "cross_proof_overall_ok": true,
+    "cross_proof_overall_ok": false,
     "extension_domains_all_green": true,
     "aspiration_scalar_debt_cleared": true,
     "core_benchmarks_all_green": true,
@@ -11,33 +11,33 @@
     "export_gap_closed": true,
     "export_fraction_pct": 100.0,
     "no_proof_certificate_module_count": 0,
-    "undeniable_toe_claim": true,
+    "undeniable_toe_claim": false,
     "honest_assessment": "Strong numeric literal triangulation across Lean/Coq/Isabelle/Python/Rust for exported obligations. Literature-aware aspiration debt cleared at 0 domains. NOT full-depth independent proof of entire FSOT theory in all four provers. Stumped observables tracked in scientific_pushback_audit.json."
   },
   "prover_coverage": {
     "lean_4": {
       "role": "primary authority",
       "connective_obligations": 24,
-      "full_formal_obligations": 2370,
+      "full_formal_obligations": 2385,
       "transcendental_lemmas": 68,
-      "lean_theorem_count_estimate": 2370,
-      "export_fraction_pct": 100.0,
+      "lean_theorem_count_estimate": 4298,
+      "export_fraction_pct": 55.49,
       "proof_style": "norm_num / decide / linarith certificates"
     },
     "coq": {
-      "status": "passed",
-      "chunks_passed": 24,
+      "status": "failed",
+      "chunks_passed": 37,
       "coverage": "numeric literal replay of exported obligations",
       "axiom_debt": "coq_native_isabelle_native_intervals"
     },
     "isabelle": {
       "status": "passed",
-      "provable_obligations": 2316,
+      "provable_obligations": 2331,
       "coverage": "numeric literal replay of exported obligations"
     },
     "rust_f64_replay": {
       "status": "passed",
-      "obligation_count": 1955,
+      "obligation_count": 1966,
       "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
     },
     "fstar": {
@@ -46,7 +46,7 @@
       "assume_debt": []
     },
     "esp32_qemu": {
-      "status": "skipped",
+      "status": "passed",
       "scope": "single boot scalar UART parity (deferred expansion)"
     },
     "living_fsot_qemu_body": {
@@ -60,7 +60,7 @@
     "fstar_primitives_assumed": [],
     "transcendental_coq_isabelle": "coq_native_isabelle_native_intervals",
     "coq_connective_coverage_pct_of_lean_theorems": 1.43,
-    "note": "Cross-proof triangulates exported numeric obligations; F* boot kernel uses oracle literals; Coq/Isabelle pi/e base intervals are native (Isabelle via HOL-Decision_Procs.Approximation)."
+    "note": "Cross-proof triangulates exported numeric obligations and scientific catalog residual gates; F* boot kernel uses oracle literals; Coq/Isabelle pi/e base intervals are native (Isabelle via HOL-Decision_Procs.Approximation). SMT (Z3/CVC5 when present) bulk-checks continuous catalog bounds; TLA+ models routing flow."
   },
   "gaps": [
     {
@@ -116,15 +116,15 @@
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "1 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
       "closed": false,
       "monitored": true
     }
   ],
   "extension_precision": {
-    "domain_count": 367,
-    "green_count": 367,
+    "domain_count": 368,
+    "green_count": 368,
     "failing_domains": [],
     "aspiration_scalar_debt_count": 0
   },
@@ -265,7 +265,7 @@
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "1 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
       "closed": false,
       "monitored": true

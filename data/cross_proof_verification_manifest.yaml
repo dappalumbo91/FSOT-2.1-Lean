@@ -71,7 +71,7 @@ github_promote_when:
 status_local:
   lean: passed
   python_decimal: passed
-  coq: passed
+  coq: failed
   isabelle: passed
   transcendental_bounds_coq: passed
   transcendental_bounds_isabelle: passed
@@ -79,17 +79,17 @@ status_local:
   rust_lean_bridge_runtime_parity: passed
   fstar_scalar_spec: passed
   qemu_serial_harness: passed
-  esp32_hardware_harness: skipped
-  esp32_rf_observer: skipped
-  full_triangulation: true
-  four_way_verification: true
+  esp32_hardware_harness: passed
+  esp32_rf_observer: passed
+  full_triangulation: false
+  four_way_verification: false
   five_way_runtime: true
   six_way_formal_executable: true
   seven_way_bare_metal: true
-  eight_way_hardware: false
-  github_ready: true
-  overall_ok: true
-  report_generated_at: 2026-07-16T13:15:44.389789+00:00
+  eight_way_hardware: true
+  github_ready: false
+  overall_ok: false
+  report_generated_at: 2026-08-03T22:36:16.683828+00:00
 coverage_audit:
   script: scripts/audit_cross_proof_coverage.py
   output: data/cross_proof_coverage_audit.json

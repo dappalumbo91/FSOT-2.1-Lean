@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-16T13:15:58.492460+00:00",
+  "generated_at": "2026-08-03T22:36:34.611415+00:00",
   "version": "1.0",
-  "overall_runtime_ok": true,
+  "overall_runtime_ok": false,
   "esp32_scalar_only_gap_closed": true,
   "layers": [
     {
       "id": "lean_coq_isabelle_rust",
       "scope": "2146 exported obligations; 1820 atomic triangulated",
-      "status": "passed",
+      "status": "failed",
       "undeniable_for": "numeric atomic spine"
     },
     {
@@ -26,7 +26,7 @@
     {
       "id": "esp32_uart",
       "scope": "single boot scalar UART on CP210x",
-      "status": "skipped",
+      "status": "passed",
       "undeniable_for": "hardware UART boot scalar",
       "note": "One scalar only \u2014 not full FSOT theory on chip"
     },

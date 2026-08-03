@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T13:15:44.721623+00:00",
+  "generated_at": "2026-08-03T22:36:17.456841+00:00",
   "version": "1.0",
   "purpose": "Human-readable labels for opaque FSOT codes (tiers, FO/PRED/rules, obligations)",
   "tiers": {
@@ -171,6 +171,13 @@
       "tier_label": "Tier 22",
       "lean_module": "FSOT.Formal.SmallBodyOrbitsPriors",
       "D_eff": 18
+    },
+    "MPCORB_Minor_Planet_Catalog": {
+      "display_name": "MPCORB Minor Planet Catalog",
+      "tier": 23,
+      "tier_label": "Tier 23",
+      "lean_module": "FSOT.Formal.MpcorbMinorPlanetCatalogPriors",
+      "D_eff": 21
     },
     "Magnetosphere": {
       "display_name": "Magnetosphere",

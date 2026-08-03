@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-16T13:15:51.179413+00:00",
+  "generated_at": "2026-08-03T22:36:25.610766+00:00",
   "version": "1.0",
   "tier": "92_structural_proof_depth",
   "overall_ok": true,
-  "provable_bundle_conj_count": 453,
+  "provable_bundle_conj_count": 457,
   "provable_bundles": [
     {
       "id": "acoustic_resonance_materials_bundle",
@@ -211,6 +211,10 @@
     },
     {
       "id": "chemical_structure_stability_panel_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "circuit_component_emergence_bundle",
       "conjunct_count": 4
     },
     {
@@ -842,27 +846,27 @@
       "conjunct_count": 4
     },
     {
-      "id": "longevity_anage_catalog_panel_bundle",
+      "id": "longevity_anage_catalog_bundle",
       "conjunct_count": 4
     },
     {
-      "id": "longevity_consciousness_coupling_panel_bundle",
+      "id": "longevity_consciousness_coupling_bundle",
       "conjunct_count": 4
     },
     {
-      "id": "longevity_extreme_species_panel_bundle",
+      "id": "longevity_extreme_species_bundle",
       "conjunct_count": 4
     },
     {
-      "id": "longevity_genetic_mechanics_panel_bundle",
+      "id": "longevity_genetic_mechanics_bundle",
       "conjunct_count": 4
     },
     {
-      "id": "longevity_megadeep_ncbi_panel_bundle",
+      "id": "longevity_megadeep_ncbi_bundle",
       "conjunct_count": 4
     },
     {
-      "id": "longevity_telomere_repair_panel_bundle",
+      "id": "longevity_telomere_repair_bundle",
       "conjunct_count": 4
     },
     {
@@ -992,6 +996,10 @@
     {
       "id": "microtubule_quantum_consciousness_panel_bundle",
       "conjunct_count": 4
+    },
+    {
+      "id": "mpcorb_minor_planet_catalog_bundle",
+      "conjunct_count": 7
     },
     {
       "id": "music_harmonics_public_panel_bundle",
@@ -1414,6 +1422,10 @@
       "conjunct_count": 4
     },
     {
+      "id": "schematic_netlist_intrinsic_bundle",
+      "conjunct_count": 4
+    },
+    {
       "id": "scientific_expansion_depth_spine_bundle",
       "conjunct_count": 4
     },
@@ -1598,11 +1610,15 @@
       "conjunct_count": 4
     },
     {
-      "id": "tier_94_longevity_spine_bundle",
+      "id": "tier_94_longevity_bundle",
       "conjunct_count": 4
     },
     {
-      "id": "tier_95_zebrafish_spine_bundle",
+      "id": "tier_95_zebrafish_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "tier_96_circuit_bundle",
       "conjunct_count": 4
     },
     {
@@ -1766,15 +1782,15 @@
       "conjunct_count": 4
     },
     {
-      "id": "zebrafish_cell_tracking_panel_bundle",
+      "id": "zebrafish_cell_tracking_bundle",
       "conjunct_count": 4
     },
     {
-      "id": "zebrafish_developmental_mechanics_panel_bundle",
+      "id": "zebrafish_developmental_mechanics_bundle",
       "conjunct_count": 4
     },
     {
-      "id": "zebrafish_longevity_genetics_coupling_panel_bundle",
+      "id": "zebrafish_longevity_genetics_coupling_bundle",
       "conjunct_count": 4
     },
     {
@@ -1818,11 +1834,11 @@
       "conjunct_count": 7
     }
   ],
-  "structural_proof_count": 1911,
+  "structural_proof_count": 1923,
   "min_required": 10,
   "breakdown": {
-    "bundle_split_lemmas": 443,
-    "bundle_conjunct_lemmas": 1458,
+    "bundle_split_lemmas": 446,
+    "bundle_conjunct_lemmas": 1467,
     "connective_ordering_lemmas": 3,
     "native_transcendental_chain_lemmas": 7
   },

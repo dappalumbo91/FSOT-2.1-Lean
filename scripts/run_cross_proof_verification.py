@@ -191,12 +191,15 @@ def run_coq_full() -> dict:
     if not coqc:
         return {"status": "skipped", "reason": "coqc/rocqc not on PATH"}
 
+    # Transcendental numbered chunks Require Cert + Base (Native is experimental / optional).
     targets = [
         p
         for p in (
             COQ_DIR / "ConnectiveSpine.v",
             COQ_DIR / "StructuralProofSpine.v",
-            *sorted(COQ_DIR.glob("TranscendentalBounds_*.v")),
+            COQ_DIR / "TranscendentalBoundsCert.v",
+            COQ_DIR / "TranscendentalBoundsBase.v",
+            *sorted(COQ_DIR.glob("TranscendentalBounds_[0-9]*.v")),
             *sorted(COQ_DIR.glob("FullFormalSpine_*.v")),
             *sorted(COQ_DIR.glob("ScientificCatalogSpine_*.v")),
         )
