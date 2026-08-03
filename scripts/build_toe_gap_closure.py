@@ -26,6 +26,7 @@ OUT_DYN_BENCH = ROOT / "data" / "toe_dynamics_benchmark.json"
 OUT_LIMIT_BENCH = ROOT / "data" / "toe_limit_recovery_benchmark.json"
 OUT_GR_SM_BENCH = ROOT / "data" / "toe_gr_sm_deep_benchmark.json"
 OUT_FORCE_MANIFEST = ROOT / "data" / "toe_force_package_manifest.json"
+OUT_CKM_BENCH = ROOT / "data" / "toe_ckm_pmns_benchmark.json"
 OUT_CONTESTED = ROOT / "data" / "toe_contested_sector_refresh.json"
 OUT_PREREG_FREEZE = ROOT / "data" / "toe_prereg_freeze.json"
 STUMPED_REF = ROOT / "data" / "stumped_observables_reference.json"
@@ -882,6 +883,18 @@ def main() -> int:
             f"n={gr_sm.get('record_count')} green={gr_sm.get('green_gate_pass')} "
             f"sm_rows={gr_sm.get('sm_row_count')}"
         )
+    # CKM/PMNS multi-prover package (optional if generator present)
+    gen_ckm = ROOT / "scripts" / "export_and_generate_gr_sm_ckm_artifacts.py"
+    if gen_ckm.exists():
+        import subprocess
+
+        subprocess.run([sys.executable, str(gen_ckm)], cwd=str(ROOT), check=False)
+    if OUT_CKM_BENCH.exists():
+        ckm = json.loads(OUT_CKM_BENCH.read_text(encoding="utf-8"))
+        print(
+            f"  CKM/PMNS median%={ckm.get('median_error_pct')} "
+            f"n={ckm.get('record_count')} green={ckm.get('green_gate_pass')}"
+        )
     prereg = freeze_prereg()
     print(f"  prereg freeze {prereg.get('freeze_id')} sha={prereg.get('bundle_sha256')[:16]}…")
 
@@ -928,18 +941,23 @@ def main() -> int:
             "prereg_freeze": str(OUT_PREREG_FREEZE.relative_to(ROOT)).replace("\\", "/"),
             "dynamics_module": "vendor/fsot_dynamics.py",
             "gr_sm_module": "vendor/fsot_gr_sm.py",
+            "ckm_pmns_benchmark": str(OUT_CKM_BENCH.relative_to(ROOT)).replace("\\", "/")
+            if OUT_CKM_BENCH.exists()
+            else None,
+            "ckm_pmns_module": "vendor/fsot_ckm_pmns.py",
+            "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json",
         },
         "next_actions_research": [
-            "CKM/PMNS full matrix from seeds",
+            "CKM/PMNS complex phases from seeds (beyond magnitude package)",
             "Non-abelian confinement / path-integral layer",
             "Spin-2 spectrum from fluid action",
             "Independent clean-clone by third party",
             "arXiv endorsement + peer review",
         ],
         "honest_statement": (
-            "T3/T4 deepened to executable GR recovery + SM force package v1. "
-            "Label B remains PASS under frozen checklist. "
-            "Uniqueness theorems and full QFT quantization remain open research, not hidden gaps."
+            "T3/T4 deepened with GR recovery, SM force package v1, and CKM/PMNS "
+            "magnitude+unitarity package, multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). "
+            "Label B remains PASS. Uniqueness/QFT quantization and complex CKM phases remain open research."
         ),
     }
     OUT_REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")

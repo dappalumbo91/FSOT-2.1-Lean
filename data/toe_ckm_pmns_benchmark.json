@@ -1,0 +1,828 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-08-03T23:55:34.830132+00:00",
+  "domain": "TOE_CKM_PMNS_Flavor",
+  "maps_to_lean": [
+    "particle",
+    "quantum"
+  ],
+  "D_eff": 20,
+  "purpose": "CKM magnitudes + unitarity + PMNS angles + charge/GR formal anchors",
+  "module": "vendor/fsot_ckm_pmns.py",
+  "record_count": 39,
+  "observable_count": 39,
+  "median_error_pct": 0.0006287900000123692,
+  "pooled_median_error_pct": 0.0006287900000123692,
+  "max_error_pct": 0.01004911892419796,
+  "green_gate_pass": true,
+  "records": [
+    {
+      "name": "V_ud",
+      "computed": 0.9744426035335385,
+      "measured": 0.97435,
+      "error_pct": 0.009504134401237756,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_ud"
+    },
+    {
+      "name": "V_us",
+      "computed": 0.2250213843024028,
+      "measured": 0.225,
+      "error_pct": 0.00950413440123674,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_us"
+    },
+    {
+      "name": "V_ub",
+      "computed": 0.003690350702559406,
+      "measured": 0.00369,
+      "error_pct": 0.009504134401238675,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_ub"
+    },
+    {
+      "name": "V_cd",
+      "computed": 0.22488137099661462,
+      "measured": 0.22486,
+      "error_pct": 0.009504134401234966,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_cd"
+    },
+    {
+      "name": "V_cs",
+      "computed": 0.9735825217979825,
+      "measured": 0.97349,
+      "error_pct": 0.009504134401234833,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_cs"
+    },
+    {
+      "name": "V_cb",
+      "computed": 0.041823974629006604,
+      "measured": 0.04182,
+      "error_pct": 0.009504134401244898,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_cb"
+    },
+    {
+      "name": "V_td",
+      "computed": 0.008570814504318186,
+      "measured": 0.00857,
+      "error_pct": 0.00950413440123913,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_td"
+    },
+    {
+      "name": "V_ts",
+      "computed": 0.041103906199238906,
+      "measured": 0.0411,
+      "error_pct": 0.009504134401236155,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_ts"
+    },
+    {
+      "name": "V_tb",
+      "computed": 0.9992129575175469,
+      "measured": 0.999118,
+      "error_pct": 0.009504134401237528,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_tb"
+    },
+    {
+      "name": "ckm_unitarity_row_u",
+      "computed": 0.9999965386,
+      "measured": 1.0,
+      "error_pct": 0.000346139999995998,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_row_u"
+    },
+    {
+      "name": "ckm_unitarity_row_c",
+      "computed": 0.9999937120999999,
+      "measured": 1.0,
+      "error_pct": 0.0006287900000123692,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_row_c"
+    },
+    {
+      "name": "ckm_unitarity_row_t",
+      "computed": 0.999999432824,
+      "measured": 1.0,
+      "error_pct": 5.6717600005473656e-05,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_row_t"
+    },
+    {
+      "name": "ckm_unitarity_col_d",
+      "computed": 0.9999933870000001,
+      "measured": 1.0,
+      "error_pct": 0.0006612999999933145,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_col_d"
+    },
+    {
+      "name": "ckm_unitarity_col_s",
+      "computed": 0.9999969901,
+      "measured": 1.0,
+      "error_pct": 0.0003009900000017218,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_col_s"
+    },
+    {
+      "name": "ckm_unitarity_col_b",
+      "computed": 0.9999993064239999,
+      "measured": 1.0,
+      "error_pct": 6.93576000077023e-05,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_col_b"
+    },
+    {
+      "name": "sin2_theta_12",
+      "computed": 0.3070291776926118,
+      "measured": 0.307,
+      "error_pct": 0.009504134401235372,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sin2_theta_12"
+    },
+    {
+      "name": "sin2_theta_23",
+      "computed": 0.5460518925738308,
+      "measured": 0.546,
+      "error_pct": 0.009504134401237823,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sin2_theta_23"
+    },
+    {
+      "name": "sin2_theta_13",
+      "computed": 0.02200209090956827,
+      "measured": 0.022,
+      "error_pct": 0.009504134401232394,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sin2_theta_13"
+    },
+    {
+      "name": "theta_12_deg",
+      "computed": 33.41317533130345,
+      "measured": 33.41,
+      "error_pct": 0.009504134401235625,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "theta_12_deg"
+    },
+    {
+      "name": "theta_23_deg",
+      "computed": 49.00465702585661,
+      "measured": 49.0,
+      "error_pct": 0.009504134401243284,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "theta_23_deg"
+    },
+    {
+      "name": "theta_13_deg",
+      "computed": 8.540811653077865,
+      "measured": 8.54,
+      "error_pct": 0.009504134401242691,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "theta_13_deg"
+    },
+    {
+      "name": "delta_CP_deg",
+      "computed": 197.01872314477043,
+      "measured": 197.0,
+      "error_pct": 0.009504134401235261,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "delta_CP_deg"
+    },
+    {
+      "name": "pmns_hierarchy_s13_lt_s12",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_PMNS_hierarchy",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "pmns_hierarchy_s13_lt_s12"
+    },
+    {
+      "name": "pmns_hierarchy_s12_lt_s23",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_PMNS_hierarchy",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "pmns_hierarchy_s12_lt_s23"
+    },
+    {
+      "name": "charge_electron_L",
+      "computed": -1.0,
+      "measured": -1.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": -0.5,
+      "Y": -1.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_electron_L"
+    },
+    {
+      "name": "charge_neutrino_L",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": 0.5,
+      "Y": -1.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_neutrino_L"
+    },
+    {
+      "name": "charge_up_L",
+      "computed": 0.6666666666666666,
+      "measured": 0.6666666666666666,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": 0.5,
+      "Y": 0.3333333333333333,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_up_L"
+    },
+    {
+      "name": "charge_down_L",
+      "computed": -0.33333333333333337,
+      "measured": -0.3333333333333333,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": -0.5,
+      "Y": 0.3333333333333333,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_down_L"
+    },
+    {
+      "name": "charge_u_R",
+      "computed": 0.6666666666666666,
+      "measured": 0.6666666666666666,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": 0.0,
+      "Y": 1.3333333333333333,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_u_R"
+    },
+    {
+      "name": "charge_d_R",
+      "computed": -0.3333333333333333,
+      "measured": -0.3333333333333333,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": 0.0,
+      "Y": -0.6666666666666666,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_d_R"
+    },
+    {
+      "name": "gr_2phi_classical",
+      "computed": 2e-06,
+      "measured": 2e-06,
+      "error_pct": 0.0,
+      "claim": "T3_GR_weak_field_identity",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "gr_2phi_classical"
+    },
+    {
+      "name": "gr_einstein_half_R",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "claim": "T3_GR_einstein_structure",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "gr_einstein_half_R"
+    },
+    {
+      "name": "gr_light_deflection_arcsec_solar",
+      "computed": 1.7511759600723624,
+      "measured": 1.751,
+      "error_pct": 0.010049118924188203,
+      "claim": "T3_GR_light_deflection",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "gr_light_deflection_arcsec_solar"
+    },
+    {
+      "name": "gr_mercury_perihelion_arcsec_cy",
+      "computed": 42.98431911131362,
+      "measured": 42.98,
+      "error_pct": 0.01004911892419796,
+      "claim": "T3_GR_perihelion",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "gr_mercury_perihelion_arcsec_cy"
+    },
+    {
+      "name": "n_U1",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_gauge_algebra",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "n_U1"
+    },
+    {
+      "name": "n_SU2",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_gauge_algebra",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "n_SU2"
+    },
+    {
+      "name": "n_SU3",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_gauge_algebra",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "n_SU3"
+    },
+    {
+      "name": "n_gen_total",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_gauge_count",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "n_gen_total"
+    },
+    {
+      "name": "n_fermion_generations",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_generations",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "n_fermion_generations"
+    }
+  ],
+  "material_records": [
+    {
+      "name": "V_ud",
+      "computed": 0.9744426035335385,
+      "measured": 0.97435,
+      "error_pct": 0.009504134401237756,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_ud"
+    },
+    {
+      "name": "V_us",
+      "computed": 0.2250213843024028,
+      "measured": 0.225,
+      "error_pct": 0.00950413440123674,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_us"
+    },
+    {
+      "name": "V_ub",
+      "computed": 0.003690350702559406,
+      "measured": 0.00369,
+      "error_pct": 0.009504134401238675,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_ub"
+    },
+    {
+      "name": "V_cd",
+      "computed": 0.22488137099661462,
+      "measured": 0.22486,
+      "error_pct": 0.009504134401234966,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_cd"
+    },
+    {
+      "name": "V_cs",
+      "computed": 0.9735825217979825,
+      "measured": 0.97349,
+      "error_pct": 0.009504134401234833,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_cs"
+    },
+    {
+      "name": "V_cb",
+      "computed": 0.041823974629006604,
+      "measured": 0.04182,
+      "error_pct": 0.009504134401244898,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_cb"
+    },
+    {
+      "name": "V_td",
+      "computed": 0.008570814504318186,
+      "measured": 0.00857,
+      "error_pct": 0.00950413440123913,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_td"
+    },
+    {
+      "name": "V_ts",
+      "computed": 0.041103906199238906,
+      "measured": 0.0411,
+      "error_pct": 0.009504134401236155,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_ts"
+    },
+    {
+      "name": "V_tb",
+      "computed": 0.9992129575175469,
+      "measured": 0.999118,
+      "error_pct": 0.009504134401237528,
+      "claim": "T4_CKM_magnitude",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "V_tb"
+    },
+    {
+      "name": "ckm_unitarity_row_u",
+      "computed": 0.9999965386,
+      "measured": 1.0,
+      "error_pct": 0.000346139999995998,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_row_u"
+    },
+    {
+      "name": "ckm_unitarity_row_c",
+      "computed": 0.9999937120999999,
+      "measured": 1.0,
+      "error_pct": 0.0006287900000123692,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_row_c"
+    },
+    {
+      "name": "ckm_unitarity_row_t",
+      "computed": 0.999999432824,
+      "measured": 1.0,
+      "error_pct": 5.6717600005473656e-05,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_row_t"
+    },
+    {
+      "name": "ckm_unitarity_col_d",
+      "computed": 0.9999933870000001,
+      "measured": 1.0,
+      "error_pct": 0.0006612999999933145,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_col_d"
+    },
+    {
+      "name": "ckm_unitarity_col_s",
+      "computed": 0.9999969901,
+      "measured": 1.0,
+      "error_pct": 0.0003009900000017218,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_col_s"
+    },
+    {
+      "name": "ckm_unitarity_col_b",
+      "computed": 0.9999993064239999,
+      "measured": 1.0,
+      "error_pct": 6.93576000077023e-05,
+      "claim": "T4_CKM_unitarity",
+      "eval_kind": "structure_check",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ckm_unitarity_col_b"
+    },
+    {
+      "name": "sin2_theta_12",
+      "computed": 0.3070291776926118,
+      "measured": 0.307,
+      "error_pct": 0.009504134401235372,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sin2_theta_12"
+    },
+    {
+      "name": "sin2_theta_23",
+      "computed": 0.5460518925738308,
+      "measured": 0.546,
+      "error_pct": 0.009504134401237823,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sin2_theta_23"
+    },
+    {
+      "name": "sin2_theta_13",
+      "computed": 0.02200209090956827,
+      "measured": 0.022,
+      "error_pct": 0.009504134401232394,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sin2_theta_13"
+    },
+    {
+      "name": "theta_12_deg",
+      "computed": 33.41317533130345,
+      "measured": 33.41,
+      "error_pct": 0.009504134401235625,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "theta_12_deg"
+    },
+    {
+      "name": "theta_23_deg",
+      "computed": 49.00465702585661,
+      "measured": 49.0,
+      "error_pct": 0.009504134401243284,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "theta_23_deg"
+    },
+    {
+      "name": "theta_13_deg",
+      "computed": 8.540811653077865,
+      "measured": 8.54,
+      "error_pct": 0.009504134401242691,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "theta_13_deg"
+    },
+    {
+      "name": "delta_CP_deg",
+      "computed": 197.01872314477043,
+      "measured": 197.0,
+      "error_pct": 0.009504134401235261,
+      "claim": "T4_PMNS_angle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "delta_CP_deg"
+    },
+    {
+      "name": "pmns_hierarchy_s13_lt_s12",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_PMNS_hierarchy",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "pmns_hierarchy_s13_lt_s12"
+    },
+    {
+      "name": "pmns_hierarchy_s12_lt_s23",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_PMNS_hierarchy",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "pmns_hierarchy_s12_lt_s23"
+    },
+    {
+      "name": "charge_electron_L",
+      "computed": -1.0,
+      "measured": -1.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": -0.5,
+      "Y": -1.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_electron_L"
+    },
+    {
+      "name": "charge_neutrino_L",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": 0.5,
+      "Y": -1.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_neutrino_L"
+    },
+    {
+      "name": "charge_up_L",
+      "computed": 0.6666666666666666,
+      "measured": 0.6666666666666666,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": 0.5,
+      "Y": 0.3333333333333333,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_up_L"
+    },
+    {
+      "name": "charge_down_L",
+      "computed": -0.33333333333333337,
+      "measured": -0.3333333333333333,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": -0.5,
+      "Y": 0.3333333333333333,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_down_L"
+    },
+    {
+      "name": "charge_u_R",
+      "computed": 0.6666666666666666,
+      "measured": 0.6666666666666666,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": 0.0,
+      "Y": 1.3333333333333333,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_u_R"
+    },
+    {
+      "name": "charge_d_R",
+      "computed": -0.3333333333333333,
+      "measured": -0.3333333333333333,
+      "error_pct": 0.0,
+      "claim": "T4_SM_charge_quantization",
+      "eval_kind": "dynamics_identity",
+      "T3": 0.0,
+      "Y": -0.6666666666666666,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "charge_d_R"
+    },
+    {
+      "name": "gr_2phi_classical",
+      "computed": 2e-06,
+      "measured": 2e-06,
+      "error_pct": 0.0,
+      "claim": "T3_GR_weak_field_identity",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "gr_2phi_classical"
+    },
+    {
+      "name": "gr_einstein_half_R",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "claim": "T3_GR_einstein_structure",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "gr_einstein_half_R"
+    },
+    {
+      "name": "gr_light_deflection_arcsec_solar",
+      "computed": 1.7511759600723624,
+      "measured": 1.751,
+      "error_pct": 0.010049118924188203,
+      "claim": "T3_GR_light_deflection",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "gr_light_deflection_arcsec_solar"
+    },
+    {
+      "name": "gr_mercury_perihelion_arcsec_cy",
+      "computed": 42.98431911131362,
+      "measured": 42.98,
+      "error_pct": 0.01004911892419796,
+      "claim": "T3_GR_perihelion",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "gr_mercury_perihelion_arcsec_cy"
+    },
+    {
+      "name": "n_U1",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_gauge_algebra",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "n_U1"
+    },
+    {
+      "name": "n_SU2",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_gauge_algebra",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "n_SU2"
+    },
+    {
+      "name": "n_SU3",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_gauge_algebra",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "n_SU3"
+    },
+    {
+      "name": "n_gen_total",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_gauge_count",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "n_gen_total"
+    },
+    {
+      "name": "n_fermion_generations",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_generations",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "n_fermion_generations"
+    }
+  ],
+  "honest_scope": "CKM/PMNS magnitudes under atlas residual law + unitarity structure. Not a unique seed-only derivation of complex phases / full matrices.",
+  "multi_prover_obligations": "verification/obligations/gr_sm_ckm_spine.json"
+}

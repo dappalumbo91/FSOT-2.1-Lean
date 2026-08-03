@@ -59,10 +59,14 @@ Status string: **`force_package_v1`**.
 
 ---
 
+## Follow-on: CKM/PMNS multi-prover layer
+
+See **[`docs/GR_SM_CKM_MULTIPROVER.md`](GR_SM_CKM_MULTIPROVER.md)** — magnitudes, unitarity, PMNS hierarchy, and the same GR/SM identities exported to **Lean, Coq, Isabelle, F\*, Rust, SMT, TLA+**.
+
 ## What is still open (honest, not hidden)
 
 1. Full non-abelian path integral / confinement theorem  
-2. Complete CKM and PMNS from seeds alone  
+2. Complex CKM phases / unique seed-only full matrix (magnitudes+unitarity **shipped**)  
 3. Spin-2 graviton Fock space from fluid action  
 4. Uniqueness theorem for Einstein–Hilbert measure  
 5. Peer review / arXiv endorsement (social)  

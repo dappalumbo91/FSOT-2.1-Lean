@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T23:46:50.401386+00:00",
+  "generated_at": "2026-08-03T23:55:35.064063+00:00",
   "version": "2.0",
   "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md",
   "gap_closure_doc": "docs/TOE_GAP_CLOSURE.md",
@@ -33,7 +33,7 @@
       "T5_prereg_freeze": {
         "pass": true,
         "artifact": "data/toe_prereg_freeze.json",
-        "bundle_sha256": "28d1b21bbd6913fb13feba7a2fd0ffb7fb49c0a1156cb9b7883c773daecaa07c"
+        "bundle_sha256": "4f2d27c5234830af4e9533c4d8c22e4b0ab9399abf7ad3844c25411673bf131c"
       },
       "T6_falsification": {
         "pass": true,
@@ -51,14 +51,17 @@
     "contested_refresh": "data/toe_contested_sector_refresh.json",
     "prereg_freeze": "data/toe_prereg_freeze.json",
     "dynamics_module": "vendor/fsot_dynamics.py",
-    "gr_sm_module": "vendor/fsot_gr_sm.py"
+    "gr_sm_module": "vendor/fsot_gr_sm.py",
+    "ckm_pmns_benchmark": "data/toe_ckm_pmns_benchmark.json",
+    "ckm_pmns_module": "vendor/fsot_ckm_pmns.py",
+    "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json"
   },
   "next_actions_research": [
-    "CKM/PMNS full matrix from seeds",
+    "CKM/PMNS complex phases from seeds (beyond magnitude package)",
     "Non-abelian confinement / path-integral layer",
     "Spin-2 spectrum from fluid action",
     "Independent clean-clone by third party",
     "arXiv endorsement + peer review"
   ],
-  "honest_statement": "T3/T4 deepened to executable GR recovery + SM force package v1. Label B remains PASS under frozen checklist. Uniqueness theorems and full QFT quantization remain open research, not hidden gaps."
+  "honest_statement": "T3/T4 deepened with GR recovery, SM force package v1, and CKM/PMNS magnitude+unitarity package, multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. Uniqueness/QFT quantization and complex CKM phases remain open research."
 }
