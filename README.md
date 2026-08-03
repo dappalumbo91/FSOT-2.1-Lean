@@ -34,11 +34,19 @@ Cosmology and the neural mind are **domain folds of one** scalar engine (pin D1D
 
 ### Founding voice (concepts — not early math)
 
-FSOT began as an independent research program (**FSUFT** / Fluid Spacetime Unified Field Theory, archive `I:\fsuft aasb`) that asked whether space-time is a single **fluid medium**, whether **As Above, So Below** is a real cross-scale law, and whether **observation and consciousness** enter as physical coupling rather than optional philosophy. That *perspective* still describes the meaning of the work.
+FSOT began as **FSUFT-U** (Fluid Spacetime Unification Field Theory). The founding book **FSUFT-U 6.0** is a full narrative of a **quantum fluid cosmos**: spacetime as a dynamical medium with tension, viscosity, and scale depth; anomalies (Hubble, \(S_8\), soft cores) as invitations; forces as fluid modes; life and consciousness as energy and resonance *in the same fabric* — not optional philosophy bolted on after particle physics.
 
-What this repository publishes is the *machine-checkable face*: one seed-derived scalar engine, hundreds of scientific domains against measured data, and multi-prover formal triangulation. **Early essays are the conceptual trail; they are not the numeric authority.** Do not treat pre-2.1 residuals or draft formulas as current green-gate results.
+That *story* is rebuilt against the verified 2.1 stack here (personal material omitted):
 
-Full map of founding concepts vs verified stack: [docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md](docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md). Clear entry ladder: [docs/CLEAR_PATH_FOR_INDEPENDENTS.md](docs/CLEAR_PATH_FOR_INDEPENDENTS.md). Residual claim tiers: [docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md](docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md).
+| Document | Role |
+|----------|------|
+| **[docs/FSOT_NARRATIVE_CORE.md](docs/FSOT_NARRATIVE_CORE.md)** | **Full rebuilt narrative** (FSUFT-U 6.0 chapter map → FSOT 2.1) |
+| [docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md](docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md) | Archive folder map + lineage labels |
+| [docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) | Ontology / consciousness operational claims |
+| [docs/CLEAR_PATH_FOR_INDEPENDENTS.md](docs/CLEAR_PATH_FOR_INDEPENDENTS.md) | Step ladder for strangers |
+| [docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md](docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md) | What “accuracy” is allowed to mean |
+
+**Early essays and draft residuals are not the numeric authority.** The kill command above is. Offline founding PDFs live under `I:\fsuft aasb\` (historical).
 
 ## Abstract
 
