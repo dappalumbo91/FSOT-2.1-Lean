@@ -167,13 +167,13 @@ The argument: a zero-parameter spine that simultaneously closes cosmology, chemi
 
 ## 8. Founding Archives (Reconciled)
 
-Your original research lives on **`I:\fsuft aasb`** and **`I:\fsot tech`** (FSUFT-U 6.0–9.6, Feb–Jul 2025). Those folders contain the ideas, literature search, and reasoning that led to FSOT — often co-written with early LLMs. Some numeric claims and fitting methods are **not** reliable.
+Early private research drafts live only on the author’s offline systems. Those folders hold ideas and literature search that led to FSOT. Some numeric claims and fitting methods from that era are **not** reliable.
 
 **Reconciliation rule:** retain philosophy; retire post-hoc multiplier fitting; re-verify every number through FSOT 2.1.
 
 | Founding | Verified replacement |
 |----------|---------------------|
-| `fsuft-aasb.py` multiplier/base tables | Seed-derived `raw_S` + domain ledger |
+| Early draft multiplier/base tables | Seed-derived `raw_S` + domain ledger |
 | SCI + F fitting factors (9.2) | `D_eff`, `δψ`, `recent_hits`, `observed` |
 | ψ_con=0.7, η_eff=0.45 | ψ_con=(e−1)/e, η_eff=1/(π−1) |
 | "99.999999% accuracy" claims | 329/329 panels + strict_empirical gates |

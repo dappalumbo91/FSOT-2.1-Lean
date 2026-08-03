@@ -94,9 +94,8 @@ Positive **S** tends toward **emergence** (structure forming). Negative **S** te
 
 ## Where this came from (founding → verified)
 
-Early research (Feb–Jul 2025) lives on **`I:\fsuft aasb`** and **`I:\fsot tech`**:
-
-- FSUFT-U 6.0–9.6 theses and Grok-assisted documents  
+Early private research drafts live only offline on the author’s systems. They are **not** the public numeric authority.  
+For the public viewpoint in plain language, see **`docs/FSOT_NARRATIVE_CORE.md`**.
 - 35 founding physics laws  
 - Dozens of engineering blueprints (warp concepts, fusion, generators)  
 

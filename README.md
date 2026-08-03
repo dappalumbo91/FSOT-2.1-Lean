@@ -29,7 +29,7 @@ Cosmology and the neural mind are **domain folds of one** scalar engine (pin D1D
 | **Zig neural mind** | https://github.com/dappalumbo91/fsot-neuron-zig |
 | **Neural monorepo (Allen / wet-lab)** | https://github.com/dappalumbo91/FSOT-2.1-Neural |
 | **Related embodiments (detail)** | [RELATED_EMBODIMENTS.md](RELATED_EMBODIMENTS.md) |
-| **Founding narrative (pre-verification voice)** | [docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md](docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md) |
+| **Main narrative (plain language)** | [docs/FSOT_NARRATIVE_CORE.md](docs/FSOT_NARRATIVE_CORE.md) |
 | **Philosophy / consciousness spine** | [docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) |
 
 ### How to understand the viewpoint (plain language)
@@ -760,7 +760,7 @@ Validation â†’ recognition â†’ application. The practical pipeline doc
 | [`docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) | Local observer loop (QEMU + desktop sensors; **ESP32 deferred**) |
 | [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](data/publication/TECH_BLUEPRINTS_REGISTRY.md) | ~40 engineering blueprints â†’ FSOT panel crosswalk |
 | [`data/intuitive_observation_fsot_map.yaml`](data/intuitive_observation_fsot_map.yaml) | Intuitive observations â†’ testable FSOT derivations |
-| [`docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`](docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md) | Founding FSUFT-U â†’ verified 2.1 reconciliation |
+| [`docs/FSOT_NARRATIVE_CORE.md`](docs/FSOT_NARRATIVE_CORE.md) | Plain-language viewpoint + how it holds up to data and proof |
 
 Regenerate: `python scripts/build_practical_pipeline_bundle.py`
 <!-- README_PRACTICAL_PIPELINE_END -->
