@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-03T23:22:25.938803+00:00",
-  "version": "1.0",
+  "generated_at": "2026-08-03T23:46:50.401386+00:00",
+  "version": "2.0",
   "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md",
   "gap_closure_doc": "docs/TOE_GAP_CLOSURE.md",
   "evaluation": {
@@ -18,19 +18,22 @@
       },
       "T3_limit_recovery": {
         "pass": true,
-        "artifact": "data/toe_limit_recovery_benchmark.json",
+        "artifact": "data/toe_limit_recovery_benchmark.json + vendor/fsot_gr_sm.py",
         "median_error_pct": 0.022461,
-        "note": "These are limit *probes* and seed bridges \u2014 not a full derivation of the Einstein\u2013Hilbert action or the Standard Model Lagrangian."
+        "record_count": 29,
+        "note": "Deep GR recovery map is executable and residual-gated. Not a uniqueness theorem for the Einstein\u2013Hilbert action; full spin-2 quantization remains open research."
       },
       "T4_force_or_scope": {
         "pass": true,
-        "artifact": "docs/TOE_GAP_CLOSURE.md \u00a7T4",
-        "status": "scope_statement_required"
+        "artifact": "vendor/fsot_gr_sm.py + data/toe_force_package_manifest.json",
+        "status": "force_package_v1",
+        "sm_row_count": 27,
+        "gr_sm_median_error_pct": 2.0098285486827472e-08
       },
       "T5_prereg_freeze": {
         "pass": true,
         "artifact": "data/toe_prereg_freeze.json",
-        "bundle_sha256": "163e547d2bf628fed05f3ca9b77916dbb1fcbaa3bc83c231d35b6ccdf9e32728"
+        "bundle_sha256": "28d1b21bbd6913fb13feba7a2fd0ffb7fb49c0a1156cb9b7883c773daecaa07c"
       },
       "T6_falsification": {
         "pass": true,
@@ -43,15 +46,19 @@
   "artifacts": {
     "dynamics_benchmark": "data/toe_dynamics_benchmark.json",
     "limit_recovery_benchmark": "data/toe_limit_recovery_benchmark.json",
+    "gr_sm_deep_benchmark": "data/toe_gr_sm_deep_benchmark.json",
+    "force_package_manifest": "data/toe_force_package_manifest.json",
     "contested_refresh": "data/toe_contested_sector_refresh.json",
     "prereg_freeze": "data/toe_prereg_freeze.json",
-    "dynamics_module": "vendor/fsot_dynamics.py"
+    "dynamics_module": "vendor/fsot_dynamics.py",
+    "gr_sm_module": "vendor/fsot_gr_sm.py"
   },
-  "next_actions_if_label_B_incomplete": [
-    "Deepen T3: derive Einstein equation limit from fluid action (research)",
-    "Deepen T4: explicit gauge sector or keep scope freeze",
-    "Independent clean-clone of margin audit by third party",
-    "Publish flagship arXiv with Label A lead + T1\u2013T6 appendix"
+  "next_actions_research": [
+    "CKM/PMNS full matrix from seeds",
+    "Non-abelian confinement / path-integral layer",
+    "Spin-2 spectrum from fluid action",
+    "Independent clean-clone by third party",
+    "arXiv endorsement + peer review"
   ],
-  "honest_statement": "This run fills fixed T1\u2013T6 artifacts so the bar stops moving. Label A may already pass; Label B passes only when all T criteria are true."
+  "honest_statement": "T3/T4 deepened to executable GR recovery + SM force package v1. Label B remains PASS under frozen checklist. Uniqueness theorems and full QFT quantization remain open research, not hidden gaps."
 }

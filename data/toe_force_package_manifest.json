@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "module": "vendor/fsot_gr_sm.py",
+  "gauge_group": "U(1)_Y \u00d7 SU(2)_L \u00d7 SU(3)_c",
+  "sectors": [
+    {
+      "name": "hypercharge",
+      "group": "U(1)_Y",
+      "generators": 1,
+      "coupling_name": "alpha_em_inv",
+      "coupling_value": 137.049023169531,
+      "literature": 137.035999084,
+      "note": "Abelian hypercharge / EM fine-structure inverse"
+    },
+    {
+      "name": "weak_isospin",
+      "group": "SU(2)_L",
+      "generators": 3,
+      "coupling_name": "sin2_theta_W",
+      "coupling_value": 0.23124197545956254,
+      "literature": 0.23122,
+      "note": "Weak mixing angle (on-shell / MS-bar order)"
+    },
+    {
+      "name": "color",
+      "group": "SU(3)_c",
+      "generators": 8,
+      "coupling_name": "alpha_s_MZ",
+      "coupling_value": 0.11791120537445907,
+      "literature": 0.1179,
+      "note": "Strong coupling at Z pole"
+    }
+  ],
+  "includes": [
+    "gauge algebra generator counts",
+    "\u03b1_em^{-1}, \u03b1_s(M_Z), sin\u00b2\u03b8_W residual bridges",
+    "electroweak mass ladder m_W, m_Z, m_H, m_t",
+    "Fermi constant G_F",
+    "three fermion generations",
+    "electric charge Q=T3+Y/2 quantization",
+    "charged-lepton mass ladder + ratios",
+    "Higgs potential shape (\u03bb, v, m_H)",
+    "photon massless + coupling hierarchy"
+  ],
+  "does_not_yet_include": [
+    "full quantized non-abelian path integral / confinement theorem",
+    "complete CKM and PMNS matrix derivation from seeds alone",
+    "spin-2 graviton Fock space from fluid action",
+    "uniqueness theorem for Einstein\u2013Hilbert measure"
+  ],
+  "gr_recovery_includes": [
+    "Einstein tensor structure identity (trace-reverse)",
+    "weak-field g_00 / g_ii",
+    "Poisson continuum source",
+    "Schwarzschild radius",
+    "solar light deflection",
+    "Mercury perihelion advance",
+    "Friedmann H\u00b2 bridge",
+    "acoustic null cone (fluid GR)",
+    "geodesic deviation scale",
+    "Planck length + G + c"
+  ]
+}

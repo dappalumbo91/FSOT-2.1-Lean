@@ -46,7 +46,7 @@ FSOT is put forward as a **candidate Theory of Everything** under a **frozen tec
 |-----------|------|
 | **Peer review** (arXiv + journals) | Social/scientific acceptance path |
 | **Independent clean-clone reproduction** | Trust path — anyone can run the kill commands |
-| **Deeper T3/T4 research** | Full Einstein–Hilbert / full SM Lagrangian derivation is **not** claimed yet (honest scope in gap doc) |
+| **Deeper T3/T4 research** | **v1 shipped:** GR recovery map + SM force package (`vendor/fsot_gr_sm.py`); uniqueness / full QFT quantization still open — see [`docs/T3_T4_GR_SM_DEEPENING.md`](docs/T3_T4_GR_SM_DEEPENING.md) |
 
 We are **not** hiding the ToE claim. We are separating **technical Label B (closed under frozen T1–T6)** from **peer acknowledgment** (open). Domain count and prover count strengthen Label A; they do not redefine Label B.
 

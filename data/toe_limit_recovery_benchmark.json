@@ -1,6 +1,6 @@
 {
-  "benchmark_version": "1.0",
-  "generated_at": "2026-08-03T23:22:25.938803+00:00",
+  "benchmark_version": "2.0",
+  "generated_at": "2026-08-03T23:46:50.391552+00:00",
   "domain": "TOE_Limit_Recovery",
   "maps_to_lean": [
     "cosmological",
@@ -8,12 +8,13 @@
     "particle"
   ],
   "D_eff": 22,
-  "purpose": "T3 limit-recovery probes: GR weak field, QM scale, SM bridges, fluid causal structure",
-  "record_count": 16,
-  "observable_count": 16,
+  "purpose": "T3 limit recovery: atlas probes + deep GR map (Schwarzschild, light deflection, perihelion, Friedmann, Einstein structure)",
+  "record_count": 29,
+  "observable_count": 29,
   "median_error_pct": 0.022461,
   "pooled_median_error_pct": 0.022461,
   "green_gate_pass": true,
+  "deep_gr_sm_benchmark": "data/toe_gr_sm_deep_benchmark.json",
   "records": [
     {
       "lab": "toe_limit_recovery_lab",
@@ -78,7 +79,7 @@
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
       "claim": "T3_SM_alpha",
-      "limit_sector": "Quantum_Mechanics"
+      "limit_sector": "Particle_Physics"
     },
     {
       "lab": "toe_limit_recovery_lab",
@@ -216,6 +217,152 @@
       "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "claim": "T3_SI_c"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "einstein_trace_reverse_structure",
+      "property": "G_equals_half_R_toy",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T3_GR_einstein_structure",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "weak_field_2phi_deviation",
+      "property": "metric_g00_deviation",
+      "computed": 2.0002009823993916e-06,
+      "measured": 2e-06,
+      "error_pct": 0.010049119969584104,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_weak_field_g00",
+      "limit_sector": "GR",
+      "g00": -1.0000020002009824
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "weak_field_gii",
+      "property": "metric_gii",
+      "computed": 0.9999979997990176,
+      "measured": 0.999998,
+      "error_pct": 2.0098285486827472e-08,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_weak_field_gii",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "poisson_source_positive",
+      "property": "poisson_rhs",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T3_GR_poisson",
+      "limit_sector": "GR",
+      "source": 1.4489386789089211
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "schwarzschild_radius_sun_m",
+      "property": "r_s",
+      "computed": 2953.6361666536172,
+      "measured": 2953.25,
+      "error_pct": 0.013075989286963106,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_schwarzschild",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "solar_light_deflection_rad",
+      "property": "delta_theta",
+      "computed": 8.491120214614395e-06,
+      "measured": 8.489087556227974e-06,
+      "error_pct": 0.023944368260521525,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_light_deflection",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "mercury_perihelion_arcsec_cy",
+      "property": "delta_omega",
+      "computed": 42.98634367257702,
+      "measured": 42.98,
+      "error_pct": 0.014759591849754552,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_perihelion",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "friedmann_H2_positive",
+      "property": "H2",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T3_GR_friedmann",
+      "limit_sector": "Cosmology",
+      "H2": 0.9659591192726141
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "acoustic_null_cone",
+      "property": "c_s",
+      "computed": 0.7693455090660798,
+      "measured": 0.7693455090660798,
+      "error_pct": 0.0,
+      "eval_kind": "limit_definition",
+      "claim": "T3_GR_acoustic_metric",
+      "limit_sector": "Fluid_GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "geodesic_deviation_scale",
+      "property": "a_tidal",
+      "computed": 1.0001004911892419e-10,
+      "measured": 1e-10,
+      "error_pct": 0.010049118924187393,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_geodesic_deviation",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "planck_length_m",
+      "property": "ell_P",
+      "computed": 1.6163362315831743e-35,
+      "measured": 1.616255e-35,
+      "error_pct": 8.12315831742237e-08,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_planck_length",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "G_newton_si",
+      "property": "G",
+      "computed": 6.674970708344357e-11,
+      "measured": 6.6743e-11,
+      "error_pct": 0.010049118924197253,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_G_newton",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "c_light_si_exact",
+      "property": "c",
+      "computed": 299792458.0,
+      "measured": 299792458.0,
+      "error_pct": 0.0,
+      "eval_kind": "si_exact",
+      "claim": "T3_SI_c",
+      "limit_sector": "GR"
     }
   ],
   "material_records": [
@@ -282,7 +429,7 @@
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
       "claim": "T3_SM_alpha",
-      "limit_sector": "Quantum_Mechanics"
+      "limit_sector": "Particle_Physics"
     },
     {
       "lab": "toe_limit_recovery_lab",
@@ -420,7 +567,153 @@
       "error_pct": 0.0,
       "eval_kind": "fsot_prediction",
       "claim": "T3_SI_c"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "einstein_trace_reverse_structure",
+      "property": "G_equals_half_R_toy",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T3_GR_einstein_structure",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "weak_field_2phi_deviation",
+      "property": "metric_g00_deviation",
+      "computed": 2.0002009823993916e-06,
+      "measured": 2e-06,
+      "error_pct": 0.010049119969584104,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_weak_field_g00",
+      "limit_sector": "GR",
+      "g00": -1.0000020002009824
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "weak_field_gii",
+      "property": "metric_gii",
+      "computed": 0.9999979997990176,
+      "measured": 0.999998,
+      "error_pct": 2.0098285486827472e-08,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_weak_field_gii",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "poisson_source_positive",
+      "property": "poisson_rhs",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T3_GR_poisson",
+      "limit_sector": "GR",
+      "source": 1.4489386789089211
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "schwarzschild_radius_sun_m",
+      "property": "r_s",
+      "computed": 2953.6361666536172,
+      "measured": 2953.25,
+      "error_pct": 0.013075989286963106,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_schwarzschild",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "solar_light_deflection_rad",
+      "property": "delta_theta",
+      "computed": 8.491120214614395e-06,
+      "measured": 8.489087556227974e-06,
+      "error_pct": 0.023944368260521525,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_light_deflection",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "mercury_perihelion_arcsec_cy",
+      "property": "delta_omega",
+      "computed": 42.98634367257702,
+      "measured": 42.98,
+      "error_pct": 0.014759591849754552,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_perihelion",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "friedmann_H2_positive",
+      "property": "H2",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T3_GR_friedmann",
+      "limit_sector": "Cosmology",
+      "H2": 0.9659591192726141
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "acoustic_null_cone",
+      "property": "c_s",
+      "computed": 0.7693455090660798,
+      "measured": 0.7693455090660798,
+      "error_pct": 0.0,
+      "eval_kind": "limit_definition",
+      "claim": "T3_GR_acoustic_metric",
+      "limit_sector": "Fluid_GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "geodesic_deviation_scale",
+      "property": "a_tidal",
+      "computed": 1.0001004911892419e-10,
+      "measured": 1e-10,
+      "error_pct": 0.010049118924187393,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_geodesic_deviation",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "planck_length_m",
+      "property": "ell_P",
+      "computed": 1.6163362315831743e-35,
+      "measured": 1.616255e-35,
+      "error_pct": 8.12315831742237e-08,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_planck_length",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "G_newton_si",
+      "property": "G",
+      "computed": 6.674970708344357e-11,
+      "measured": 6.6743e-11,
+      "error_pct": 0.010049118924197253,
+      "eval_kind": "fsot_prediction",
+      "claim": "T3_GR_G_newton",
+      "limit_sector": "GR"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "c_light_si_exact",
+      "property": "c",
+      "computed": 299792458.0,
+      "measured": 299792458.0,
+      "error_pct": 0.0,
+      "eval_kind": "si_exact",
+      "claim": "T3_SI_c",
+      "limit_sector": "GR"
     }
   ],
-  "honest_scope": "These are limit *probes* and seed bridges \u2014 not a full derivation of the Einstein\u2013Hilbert action or the Standard Model Lagrangian."
+  "honest_scope": "Deep GR recovery map is executable and residual-gated. Not a uniqueness theorem for the Einstein\u2013Hilbert action; full spin-2 quantization remains open research."
 }

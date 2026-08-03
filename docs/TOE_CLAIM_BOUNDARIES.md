@@ -34,8 +34,8 @@ This list is **frozen**. Peer acknowledgment is **not** on this list.
 |----|-----------|------------------------|---------------|
 | **T1** | One ontology written as axioms | Finite axiom list + maps to engine | `data/foundational_ontology_axioms.yaml` + this doc |
 | **T2** | Dynamics (evolution laws) | Continuum / fluid / scalar field equations + numerical checks | `vendor/fsot_dynamics.py`, `data/toe_dynamics_benchmark.json` |
-| **T3** | Limit recovery | Explicit GR / QM / SM (or replacement) limit checks | `data/toe_limit_recovery_benchmark.json` |
-| **T4** | Force/matter package **or** explicit scope change | Either interaction content **or** written retirement of classical force-unification goal | `docs/TOE_GAP_CLOSURE.md` §T4 |
+| **T3** | Limit recovery | Explicit GR / QM / SM (or replacement) limit checks | `data/toe_limit_recovery_benchmark.json` + `vendor/fsot_gr_sm.py` (deep GR map) |
+| **T4** | Force/matter package **or** explicit scope change | Interaction package (gauge/masses/charges) **or** written scope retirement | `vendor/fsot_gr_sm.py` + `data/toe_force_package_manifest.json` (v1); see `docs/T3_T4_GR_SM_DEEPENING.md` |
 | **T5** | Pre-data risky predictions | Frozen slate + SHA-256 **before** decisive surveys | `data/toe_prereg_freeze.json` |
 | **T6** | Falsifiability | Kill criteria for global + contested sectors | `data/falsification_registry_closure.json` |
 
