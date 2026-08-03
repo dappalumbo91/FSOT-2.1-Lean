@@ -117,6 +117,16 @@ def archive_independent_mode() -> bool:
 
 
 def _is_legacy_desktop_path(path: Path) -> bool:
+    """True for *author-only* Desktop fallbacks — never the active repo tree.
+
+    The public Desktop clone lives under C:\\Users\\...\\Desktop\\FSOT-2.1-Lean;
+    treating that as 'legacy' would skip vendor/ data and break portable verify.
+    """
+    try:
+        path.resolve().relative_to(REPO_ROOT.resolve())
+        return False
+    except ValueError:
+        pass
     lowered = str(path).replace("/", "\\").lower()
     if "c:\\users\\damia\\desktop" in lowered:
         return True
