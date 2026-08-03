@@ -1125,16 +1125,26 @@ def fstar_install_root(*, require: bool = False) -> Path | None:
             return root.resolve()
     home = Path(os.environ.get("USERPROFILE", os.environ.get("HOME", "")))
     candidates: list[Path] = [
+        # Physical Archive portable toolchain (author machine / offline stack)
+        Path(r"I:\FSOT-Physical-Archive\07_Portable-Toolchain\fstar"),
         Path(r"C:\Program Files\fstar"),
         Path(r"C:\fstar"),
         Path(os.environ.get("LOCALAPPDATA", "")) / "fstar",
     ]
+    ar = archive_root()
+    if ar is not None:
+        candidates.insert(0, ar / "07_Portable-Toolchain" / "fstar")
     tools = home / "tools"
     if tools.exists():
         candidates.extend(sorted(tools.glob("fstar*"), reverse=True))
     for candidate in candidates:
-        if candidate.exists():
+        if candidate.exists() and (candidate / "bin" / "fstar.exe").exists():
+            return candidate.resolve()
+        if candidate.exists() and (candidate / "bin" / "fstar").exists():
             return candidate.resolve()
     if require:
-        raise FileNotFoundError("F* install not found. Set FSTAR_HOME.")
+        raise FileNotFoundError(
+            "F* install not found. Set FSTAR_HOME or install under "
+            "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\fstar"
+        )
     return None

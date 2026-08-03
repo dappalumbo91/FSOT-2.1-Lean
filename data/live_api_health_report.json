@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-07-15T01:25:08.707224+00:00",
+  "checked_at": "2026-08-03T14:57:58.876828+00:00",
   "mega_deep": false,
   "channels": [
     {
       "channel": "gbif",
       "status": "ok",
-      "detail": "count=3737215114"
+      "detail": "count=3742918640"
     },
     {
       "channel": "gwosc",
@@ -24,9 +24,8 @@
     },
     {
       "channel": "vizier_wds",
-      "status": "fail",
-      "error_type": "RuntimeError",
-      "error": "vizier_tap_get: HTTP Error 404: Not Found; vizier_tap_post: HTTP Error 404: Not Found"
+      "status": "ok",
+      "detail": "source=vizier_tap_get:https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync n=10"
     },
     {
       "channel": "materials_project",
@@ -56,7 +55,7 @@
     {
       "channel": "clinicaltrials_v2",
       "status": "ok",
-      "detail": "studies=3"
+      "detail": "europepmc_clinical_hits=2538044 page_results=3 (ct.gov_blocked)"
     },
     {
       "channel": "osti_doe_records",
@@ -86,7 +85,7 @@
     {
       "channel": "noaa_ndbc_buoy",
       "status": "ok",
-      "detail": "bytes=608838"
+      "detail": "bytes=615982"
     },
     {
       "channel": "open_meteo_forecast",
@@ -100,9 +99,8 @@
     },
     {
       "channel": "tier82_soilgrids",
-      "status": "fail",
-      "error_type": "HTTPError",
-      "error": "HTTP Error 503: Service Temporarily Unavailable"
+      "status": "ok",
+      "detail": "layers=1"
     },
     {
       "channel": "tier82_natural_earth",
@@ -112,7 +110,7 @@
     {
       "channel": "tier84_world_bank",
       "status": "ok",
-      "detail": "rows=3"
+      "detail": "rows=3 indicator=SP.POP.TOTL"
     },
     {
       "channel": "tier84_arxiv_grqc",
@@ -132,13 +130,12 @@
     {
       "channel": "tier85_exoplanet_tap",
       "status": "ok",
-      "detail": "bytes=24"
+      "detail": "bytes=19"
     },
     {
       "channel": "tier85_open_meteo_archive",
-      "status": "fail",
-      "error_type": "HTTPError",
-      "error": "HTTP Error 400: Bad Request"
+      "status": "ok",
+      "detail": "daily=7"
     },
     {
       "channel": "tier85_crossref_history",
@@ -161,6 +158,6 @@
       "detail": "bytes=1354"
     }
   ],
-  "fail_count": 3,
-  "ok_count": 28
+  "fail_count": 0,
+  "ok_count": 31
 }

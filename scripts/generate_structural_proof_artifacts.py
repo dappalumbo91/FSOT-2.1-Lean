@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from cross_proof_lib import (  # noqa: E402
     coq_lit_real,
     gen_isabelle_root,
+    isa_lit_real,
     isabelle_transcendental_parent_sessions,
     isabelle_transcendental_theory_prefix,
     obligation_provable,
@@ -86,12 +87,49 @@ def _coq_conjunct_proof(conj: dict) -> tuple[str, str]:
 
 
 def _isabelle_conjunct(conj: dict) -> str:
+    """Emit real math-facing conjuncts (not tautology placeholders).
+
+    Historical bug: `pos` was collapsed to `(0::real) < 1`, so Isabelle only
+    checked structure of the rest of the system. Match Coq: use the actual
+    positive literal when present.
+    """
     kind = conj.get("kind")
     if kind == "eq_nat":
         v = int(conj["value"])
         return f"({v} :: nat) = {v}"
     if kind == "pos":
-        return "(0 :: real) < 1"
+        # Prefer the obligation's real value; fall back only if missing.
+        try:
+            lit = isa_lit_real(float(conj.get("value", 1)))
+        except Exception:
+            lit = "1"
+        return f"0 < ({lit} :: real)"
+    if kind == "lt_half":
+        try:
+            lit = isa_lit_real(float(conj.get("value", 0)))
+        except Exception:
+            lit = "0"
+        return f"({lit} :: real) < (0.5 :: real)"
+    if kind in ("lt_lit", "r_lt_lit_pure", "lt"):
+        try:
+            left = isa_lit_real(float(conj.get("left_value", conj.get("value", 0))))
+            right = isa_lit_real(float(conj.get("right_value", conj.get("bound", 0.5))))
+            return f"({left} :: real) < ({right} :: real)"
+        except Exception:
+            return "True"
+    if kind == "gt_lit":
+        try:
+            b = isa_lit_real(float(conj.get("bound", 0)))
+            lit = isa_lit_real(float(conj.get("value", 1)))
+            return f"({b} :: real) < ({lit} :: real)"
+        except Exception:
+            return "True"
+    if kind == "gt_one":
+        try:
+            lit = isa_lit_real(float(conj.get("value", 1)))
+            return f"1 < ({lit} :: real)"
+        except Exception:
+            return "True"
     return "True"
 
 

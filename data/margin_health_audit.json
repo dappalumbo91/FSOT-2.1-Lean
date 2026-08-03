@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-08-03T15:02:59.965221+00:00",
+  "source": "data\\benchmark_margin_audit.json",
+  "green_gate_pass_count": 405,
+  "green_gate_fail_count": 0,
+  "benchmark_file_count": 405,
+  "worst_scalar_max_error_pct": 0.4989,
+  "worst_scalar_domain": "Phi_Morphogenetic_Scaling",
+  "thresholds": {
+    "threshold_official_pooled_median_pct": 0.5,
+    "threshold_strict_scalar_max_pct": 0.5,
+    "threshold_tier_scalar_max_pct": 0.05,
+    "threshold_min_classifier_accuracy_pct": 99.5
+  },
+  "recomputed_green": 405,
+  "recomputed_fail": 0,
+  "near_miss_pooled_gt_0_4pct": [],
+  "atlas_domain_count": 402,
+  "benchmark_domain_count": 405,
+  "nothing_fell_out": true
+}

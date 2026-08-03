@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-16T13:15:35.932347+00:00",
+  "generated_at": "2026-08-03T15:03:02.068086+00:00",
   "tier": "86_fstar_verification",
   "fstar": {
     "status": "passed",
-    "tool": "C:\\Users\\damia\\tools\\fstar-v2026.07.05\\bin\\fstar.exe",
-    "entry": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarBoot.fst",
+    "tool": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\fstar\\bin\\fstar.exe",
+    "entry": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\fstar\\FSOTScalarBoot.fst",
     "modules": [
       "FSOTScalarKernel",
       "FSOTScalarBoot"
     ],
     "returncode": 0,
-    "stderr_tail": "Verified module: FSOTScalarBoot\nAll verification conditions discharged successfully\n* Warning 241 at I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst(0,0-0,0):\n  - Unable to load\n    I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    since checked file\n    I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    does not exist; will recheck\n    I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst\n    (suppressing this warning for further modules)\n\n"
+    "stderr_tail": "Verified module: FSOTScalarBoot\nAll verification conditions discharged successfully\n* Warning 241 at C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\fstar\\FSOTScalarKernel.fst(0,0-0,0):\n  - Unable to load\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    since checked file\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    does not exist; will recheck\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\fstar\\FSOTScalarKernel.fst\n    (suppressing this warning for further modules)\n\n"
   },
   "overall_ok": true
 }

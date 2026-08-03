@@ -1,10 +1,14 @@
-(* FSOT cross-proof Isabelle session (generated). *)
+(* FSOT cross-proof Isabelle session.
+   FSOTScalarMath is the mathematical engine (definitions + proved identities).
+   Remaining theories are exported numeric / structural obligation spines.
+*)
 
 session FSOT_CrossProof = HOL +
-  description "FSOT Tier 83 cross-proof (27 theories)"
+  description "FSOT cross-proof with scalar math core (28 theories)"
   sessions
     "HOL-Decision_Procs"
   theories
+    FSOTScalarMath
     ConnectiveSpine
     StructuralProofSpine
     TranscendentalBoundsNative

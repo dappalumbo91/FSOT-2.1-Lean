@@ -1,6 +1,25 @@
-# FSOT Cross-Proof Verification (Tiers 79–91)
+# FSOT Cross-Proof Verification (Tiers 79–91 + scalar math core)
 
 Independent re-proof of exported Lean numeric obligations across **Python decimal**, **Coq**, **Isabelle**, **Rust f64**, **F\***, and **QEMU bare-metal** runtime.
+
+## Live APIs (stream; bulk download optional)
+
+Architecture: `data/api_requirements.yaml`, health probe `scripts/live_api_health_check.py`.  
+Status write-up: `docs/LIVE_API_AND_MATH_VERIFICATION_STATUS.md`.  
+Portable verify uses `vendor/` caches; live refresh **streams** public APIs.
+
+## Isabelle mathematical engine (required reading)
+
+Isabelle is **not** limited to structure-of-the-rest checks. The session now includes:
+
+| Theory | Role |
+|--------|------|
+| **`FSOTScalarMath.thy`** | Seed constants, `term1/term2/term3`, `raw_S` / `scaled_S`, proved identities (`raw_S = t1+t2+t3`, `growth_term > 0`, `quirk_mod = 1` when unobserved, domain routes, native π/e intervals) |
+| `FullFormalSpine_*.thy` | Exported numeric certificates (literal inequalities / counts) — triangulation of Lean export |
+| `StructuralProofSpine.thy` | Bundle conjuncts with **real positive literals** (fixed: no longer collapses `pos` to `0 < 1`) |
+| `TranscendentalBounds*.thy` | π/e interval lemmas (native Approximation + certified points) |
+
+**Honest scope:** FullFormalSpine still triangulates *exported numeric obligations*, not a full re-derivation of every Lean `FSOT.Formal.*Priors` proof term. The scalar engine math lives in `FSOTScalarMath.thy` (Isabelle) and `FSOT/Formal/Scalar.lean` + `Bounds.lean` + `Theorems.lean` (Lean primary authority).
 
 ## Run (authoritative)
 
@@ -28,7 +47,7 @@ This regenerates:
 | Transcendental bounds | 68 lemmas | Coq/Isabelle with **certified π/e axioms** (2 intervals deferred) |
 | Boot scalar | 1 canonical value | Rust no_std ↔ Python ↔ F\* constants ↔ QEMU UART |
 
-**Coverage honesty:** Coq connective spine = **~1.43%** of Lean theorem count. Cross-proof triangulates **exported numeric obligations**, not every `FSOT.Formal.*` module.
+**Coverage honesty:** Coq connective spine = **~1.43%** of Lean theorem count. Cross-proof triangulates **exported numeric obligations**, not every `FSOT.Formal.*` module. Engine math is separately formalized in Lean `FSOT.Formal.*` and Isabelle `FSOTScalarMath.thy` (see `docs/VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`).
 
 ## Documented proof debt (`proof_debt` in report)
 

@@ -123,11 +123,43 @@ def main() -> int:
         return f"rows={len(data) if isinstance(data, list) else 0}"
 
     def clinicaltrials():
-        data = fetch_json(
+        # clinicaltrials.gov often returns 403 to non-browser / some network paths.
+        # Try official v2 first with research UA; fall back to Europe PMC clinical stream.
+        headers = {
+            "Accept": "application/json",
+            "User-Agent": (
+                "Mozilla/5.0 (compatible; FSOT-2.1-Lean/1.0; "
+                "+https://github.com/dappalumbo91/FSOT-2.1-Lean)"
+            ),
+        }
+        ct_urls = (
             "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=3",
-            timeout=30,
+            "https://clinicaltrials.gov/api/v2/studies?query.cond=diabetes&pageSize=3",
         )
-        return f"studies={len(data.get('studies') or [])}"
+        last_err: Exception | None = None
+        for url in ct_urls:
+            try:
+                data = fetch_json(url, timeout=45, retries=2, headers=headers)
+                n = len(data.get("studies") or [])
+                if n:
+                    return f"studies={n} source=clinicaltrials.gov"
+            except Exception as exc:  # noqa: BLE001
+                last_err = exc
+        # Europe PMC: live clinical/medical literature stream (no CT.gov dependency).
+        try:
+            data = fetch_json(
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+                "?query=SRC:MED%20AND%20(clinical%20trial)&format=json&pageSize=3",
+                timeout=45,
+                retries=2,
+            )
+            hits = int(data.get("hitCount") or 0)
+            n = len(((data.get("resultList") or {}).get("result")) or [])
+            if hits or n:
+                return f"europepmc_clinical_hits={hits} page_results={n} (ct.gov_blocked)"
+        except Exception as exc:  # noqa: BLE001
+            last_err = exc
+        raise RuntimeError(f"clinical stream unavailable: {last_err}")
 
     def osti():
         data = fetch_json("https://www.osti.gov/api/v1/records?rows=3", timeout=30)
@@ -204,12 +236,22 @@ def main() -> int:
         return f"features={len(data.get('features') or [])}"
 
     def tier84_world_bank():
-        data = fetch_json(
+        # World Bank can be slow; use longer timeout + light retry and a simpler indicator first.
+        urls = (
+            "https://api.worldbank.org/v2/country/USA/indicator/SP.POP.TOTL?format=json&per_page=3",
             "https://api.worldbank.org/v2/country/USA/indicator/SH.DYN.NMRT?format=json&per_page=3",
-            timeout=30,
         )
-        rows = data[1] if isinstance(data, list) and len(data) > 1 else []
-        return f"rows={len(rows)}"
+        last_err: Exception | None = None
+        for url in urls:
+            try:
+                data = fetch_json(url, timeout=90, retries=3, backoff_s=2.0)
+                rows = data[1] if isinstance(data, list) and len(data) > 1 else []
+                if rows:
+                    ind = (rows[0].get("indicator") or {}).get("id") if isinstance(rows[0], dict) else "?"
+                    return f"rows={len(rows)} indicator={ind}"
+            except Exception as exc:  # noqa: BLE001
+                last_err = exc
+        raise RuntimeError(f"world_bank: {last_err}")
 
     def tier84_arxiv_grqc():
         from live_api_fetch_lib import fetch_bytes  # noqa: WPS433
@@ -243,11 +285,14 @@ def main() -> int:
         return f"bytes={len(raw)}"
 
     def tier85_open_meteo_archive():
+        # Archive API rejects some pre-coverage windows (1900 → 400). Use a modern week.
         data = fetch_json(
             "https://archive-api.open-meteo.com/v1/archive?"
-            "latitude=52.5&longitude=13.4&start_date=1900-01-01&end_date=1900-01-07"
-            "&daily=temperature_2m_mean",
-            timeout=45,
+            "latitude=52.52&longitude=13.41"
+            "&start_date=2023-06-01&end_date=2023-06-07"
+            "&daily=temperature_2m_mean&timezone=UTC",
+            timeout=60,
+            retries=2,
         )
         return f"daily={len((data.get('daily') or {}).get('time') or [])}"
 

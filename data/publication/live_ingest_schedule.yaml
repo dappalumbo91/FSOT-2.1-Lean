@@ -14,7 +14,9 @@ full_credibility_depth: python scripts/build_credibility_depth_bundle.py
 windows_task_scheduler:
   name: FSOT-Live-Ingest-Weekly
   trigger: weekly_sunday_0300_local
-  working_directory: I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full
+  # Primary while I: under repair; switch back to Physical Archive when healthy.
+  working_directory: C:/Users/damia/Desktop/FSOT-2.1-Lean
+  archive_working_directory: I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full
 
 outputs:
   - data/publication/live_ingest_refresh_report.json
