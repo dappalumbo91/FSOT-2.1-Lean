@@ -3,6 +3,39 @@ theory FullFormalSpine_16
 imports Complex_Main
 begin
 
+lemma exp_1434_gt_4167: "(4.167 :: real) < (4.195447462901874 :: real)"
+  by eval
+
+lemma perceived_adjust_lo_D11: "(0.752 :: real) < (11.0 :: real)"
+  by eval
+
+lemma exp_03865_gt_14716: "(1.4716 :: real) < (1.471820397066386 :: real)"
+  by eval
+
+lemma exp_13865_gt_four: "(4.0 :: real) < (4.0008226401009335 :: real)"
+  by eval
+
+lemma exp_1618_gt_five: "(5.0 :: real) < (5.042994235377287 :: real)"
+  by eval
+
+lemma sqrt_11_gt_3316: "(3.316 :: real) < (11.0 :: real)"
+  by eval
+
+lemma sqrt_24_gt_4898: "(4.898 :: real) < (24.0 :: real)"
+  by eval
+
+lemma cos_1531_gt_003: "(0.03 :: real) < (1.531 :: real)"
+  by eval
+
+lemma biological_cos_gt_003: "(0.03 :: real) < (0.08 :: real)"
+  by eval
+
+lemma exp_1253_gt_34: "(3.4 :: real) < (3.5008297085958655 :: real)"
+  by eval
+
+lemma sqrt_12_gt_3463: "(3.463 :: real) < (12.0 :: real)"
+  by eval
+
 lemma one_add_inv_phi_eq_phi: "(1.618033988749895 :: real) = (1.618033988749895 :: real)"
   by eval
 
@@ -268,39 +301,6 @@ lemma medical_cos_lt_neg_05: "(0.35 :: real) < (0.5 :: real)"
   by eval
 
 lemma alpha_lt_one_tenth: "(0.0008082937 :: real) < (0.1 :: real)"
-  by eval
-
-lemma log_five_gt_1602: "(1.602 :: real) < (1.6094379124341003 :: real)"
-  by eval
-
-lemma log_five_gt_1505: "(1.505 :: real) < (1.6094379124341003 :: real)"
-  by eval
-
-lemma log_four_gt_1351: "(1.351 :: real) < (1.3862943611198906 :: real)"
-  by eval
-
-lemma molecular_cos_lt_neg_055: "(0.4 :: real) < (0.55 :: real)"
-  by eval
-
-lemma material_cos_lt_neg_075: "(0.5 :: real) < (0.74 :: real)"
-  by eval
-
-lemma log_34_lt_1253: "(1.2237754316221157 :: real) < (1.253 :: real)"
-  by eval
-
-lemma pi_eq_real_pi: "(3.141592653589793 :: real) = (3.141592653589793 :: real)"
-  by eval
-
-lemma cosmological_perceived_adjust_eq_one: "(1.0 :: real) = (1.0 :: real)"
-  by eval
-
-lemma phase_variance_eq_cos_theta_s: "(0.9579871226722758 :: real) = (0.9579871226722758 :: real)"
-  by eval
-
-lemma gamma_abs_eq: "(0.4283885167922065 :: real) = (0.4283885167922065 :: real)"
-  by eval
-
-lemma log_12_lt: "(0.1823215567939546 :: real) < (0.3 :: real)"
   by eval
 
 end

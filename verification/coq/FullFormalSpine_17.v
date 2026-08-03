@@ -6,6 +6,39 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma log_five_gt_1602 : (1.602%R) < (1.6094379124341003%R).
+Proof. lra. Qed.
+
+Lemma log_five_gt_1505 : (1.505%R) < (1.6094379124341003%R).
+Proof. lra. Qed.
+
+Lemma log_four_gt_1351 : (1.351%R) < (1.3862943611198906%R).
+Proof. lra. Qed.
+
+Lemma molecular_cos_lt_neg_055 : (0.4%R) < (0.55%R).
+Proof. lra. Qed.
+
+Lemma material_cos_lt_neg_075 : (0.5%R) < (0.74%R).
+Proof. lra. Qed.
+
+Lemma log_34_lt_1253 : (1.2237754316221157%R) < (1.253%R).
+Proof. lra. Qed.
+
+Lemma pi_eq_real_pi : (3.141592653589793%R) = (3.141592653589793%R).
+Proof. reflexivity. Qed.
+
+Lemma cosmological_perceived_adjust_eq_one : (1.0%R) = (1.0%R).
+Proof. reflexivity. Qed.
+
+Lemma phase_variance_eq_cos_theta_s : (0.9579871226722758%R) = (0.9579871226722758%R).
+Proof. reflexivity. Qed.
+
+Lemma gamma_abs_eq : (0.4283885167922065%R) = (0.4283885167922065%R).
+Proof. reflexivity. Qed.
+
+Lemma log_12_lt : (0.1823215567939546%R) < (0.3%R).
+Proof. lra. Qed.
+
 Lemma log_16181_lt_04813 : (0.4812526214236254%R) < (0.4813%R).
 Proof. lra. Qed.
 
@@ -271,38 +304,5 @@ Lemma alpha_s_MZ_pos : 0 < (0.11709966304863834%R).
 Proof. lra. Qed.
 
 Lemma p_base_pos : 0 < (0.21234577623937845%R).
-Proof. lra. Qed.
-
-Lemma delta_lambda_cosm_pos : 0 < (0.0216083%R).
-Proof. lra. Qed.
-
-Lemma c_cosm_lt_061806 : (0.061803398874989486%R) < (0.061806%R).
-Proof. lra. Qed.
-
-Lemma p_base_lt_0212371 : (0.21234577623937845%R) < (0.212371%R).
-Proof. lra. Qed.
-
-Lemma alpha_s_MZ_lt_one : (0.11709966304863834%R) < (1.0%R).
-Proof. lra. Qed.
-
-Lemma delta_lambda_cosm_lt_one : (0.0216083%R) < (1.0%R).
-Proof. lra. Qed.
-
-Lemma S_cosm_cached_neg : (-0.5024559462100433%R) < 0%R.
-Proof. lra. Qed.
-
-Lemma alpha_s_MZ_approx_value : (0.000000000000000013877787807814457%R) < (0.00000001%R).
-Proof. lra. Qed.
-
-Lemma c_cosm_gt_061800 : (0.0618%R) < (0.061803398874989486%R).
-Proof. lra. Qed.
-
-Lemma p_base_gt_021234 : (0.21234%R) < (0.21234577623937845%R).
-Proof. lra. Qed.
-
-Lemma e_mul_pi_gt_one : (1.0%R) < (8.539734222673566%R).
-Proof. lra. Qed.
-
-Lemma S_cosm_cached_bounds : (-0.502456%R) < (-0.5024559462100433%R) /\ (-0.5024559462100433%R) < (-0.502455%R).
 Proof. lra. Qed.
 

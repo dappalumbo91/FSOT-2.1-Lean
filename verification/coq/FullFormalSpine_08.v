@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma materials_species_bridge_live_panel_median_error_under_half_pct : (0.01341%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma materials_species_bridge_observable_count_pos : (0 < 45)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma materials_species_bridge_median_error_under_five_pct : 0%R < (5.0%R).
 Proof. lra. Qed.
 
@@ -116,6 +122,21 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma microtubule_quantum_consciousness_panel_median_error_under_half_pct : (0.044671%R) < (0.5%R).
 Proof. lra. Qed.
+
+Lemma mpcorb_pooled_median_under_half_pct : (0.023015%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma mpcorb_object_count_pos : (0 < 1554101)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma mpcorb_pooled_median_under_tier_aspiration : (0.023015%R) < (0.05%R).
+Proof. lra. Qed.
+
+Lemma mpcorb_kepler_integrity_under_ppm : (0.0000015875572596619725%R) < (0.001%R).
+Proof. lra. Qed.
+
+Lemma mpcorb_green_gate_pass : (1 = 1)%nat.
+Proof. reflexivity. Qed.
 
 Lemma music_harmonics_public_panel_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -283,26 +304,5 @@ Lemma hero_certified_fi_mean_rel_err_lt_fifteen_pct : (0.07002728543379658%R) < 
 Proof. lra. Qed.
 
 Lemma hero_canonical_bridge_mean_rel_err_lt_twelve_pct : (0.07354375821147667%R) < (0.12%R).
-Proof. lra. Qed.
-
-Lemma hero_canonical_bridge_delta_lt_five_pct : (0.0035164727776800936%R) < (0.05%R).
-Proof. lra. Qed.
-
-Lemma allen_cohort_fi_pearson_r_gt_fifty_five : (0.55%R) < (0.608876904981479%R).
-Proof. lra. Qed.
-
-Lemma hero_certified_verifier_confidence_gt_ninety_pct : (0.9%R) < (0.9598886696481669%R).
-Proof. lra. Qed.
-
-Lemma neurolab_strict_empirical_records_large : (7900 < 7941)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stratum_vip_fi_median_lt_bound : (0.4741701150886025%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma held_out_fi_median_rel_err_lt_thirty_pct : (0.24625990376478163%R) < (0.3%R).
-Proof. lra. Qed.
-
-Lemma stratum_sst_fi_median_lt_bound : (0.6532385249479395%R) < (0.7%R).
 Proof. lra. Qed.
 

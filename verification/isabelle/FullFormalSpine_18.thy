@@ -3,6 +3,39 @@ theory FullFormalSpine_18
 imports Complex_Main
 begin
 
+lemma delta_lambda_cosm_pos: "0 < (0.0216083 :: real)"
+  by eval
+
+lemma c_cosm_lt_061806: "(0.061803398874989486 :: real) < (0.061806 :: real)"
+  by eval
+
+lemma p_base_lt_0212371: "(0.21234577623937845 :: real) < (0.212371 :: real)"
+  by eval
+
+lemma alpha_s_MZ_lt_one: "(0.11709966304863834 :: real) < (1.0 :: real)"
+  by eval
+
+lemma delta_lambda_cosm_lt_one: "(0.0216083 :: real) < (1.0 :: real)"
+  by eval
+
+lemma S_cosm_cached_neg: "(-0.5024559462100433 :: real) < (0 :: real)"
+  by eval
+
+lemma alpha_s_MZ_approx_value: "(0.00000000000000001387779 :: real) < (0.00000001 :: real)"
+  by eval
+
+lemma c_cosm_gt_061800: "(0.0618 :: real) < (0.061803398874989486 :: real)"
+  by eval
+
+lemma p_base_gt_021234: "(0.21234 :: real) < (0.21234577623937845 :: real)"
+  by eval
+
+lemma e_mul_pi_gt_one: "(1.0 :: real) < (8.539734222673566 :: real)"
+  by eval
+
+lemma S_cosm_cached_bounds: "(-0.502456 :: real) < (-0.5024559462100433 :: real) \<and> (-0.5024559462100433 :: real) < (-0.502455 :: real)"
+  by eval
+
 lemma r_d_approx_value: "(0.00006487927 :: real) < (0.05 :: real)"
   by eval
 

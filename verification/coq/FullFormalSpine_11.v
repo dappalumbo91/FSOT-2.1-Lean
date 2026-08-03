@@ -6,6 +6,27 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma pubchem_stability_panel_median_error_under_half_pct : (0.0024238898584426276%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma public_verifiable_spine_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma public_verifiable_spine_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma published_fuel_property_panel_observable_count_pos : (0 < 31)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma published_fuel_property_panel_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma pure_mathematics_ext_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma pure_mathematics_ext_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
 Lemma pure_mathematics_ext_observable_count_pos : (0 < 1549)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -165,6 +186,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma scalar_solver_35_panel_median_error_under_half_pct : (0.014767%R) < (0.5%R).
 Proof. lra. Qed.
 
+Lemma schematic_netlist_intrinsic_observable_count_pos : (0 < 5)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma schematic_netlist_intrinsic_median_error_under_five_pct : (0.051887%R) < (5.0%R).
+Proof. lra. Qed.
+
 Lemma scientific_expansion_depth_spine_observable_count_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -278,31 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma sota_below_bounded : (0 <= 5)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
-
-Lemma sota_zero_free_parameters : (0 = 0)%nat.
-Proof. reflexivity. Qed.
-
-Lemma soul_sibling_D_compact_positive : 0 < (24.98%R).
-Proof. lra. Qed.
-
-Lemma soul_sibling_fidelity_threshold_positive : 0 < (0.05%R).
-Proof. lra. Qed.
-
-Lemma space_propulsion_systems_observable_count_pos : (0 < 21)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma space_propulsion_systems_median_error_under_five_pct : 0%R < (5.0%R).
-Proof. lra. Qed.
-
-Lemma space_weather_kp_record_count_pos : (0 < 271813)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma space_weather_stability_match_le_total : (271813 <= 271813)%nat.
-Proof. apply Nat.leb_le; reflexivity. Qed.
-
-Lemma space_weather_stability_match_rate_nonneg : 0 <= (1.0%R).
-Proof. lra. Qed.
-
-Lemma species_property_count_pos : (0 < 684)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

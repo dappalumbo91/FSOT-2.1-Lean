@@ -207,6 +207,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma chemical_structure_stability_panel_median_error_under_half_pct : (0.00206%R) < (0.5%R).
 Proof. lra. Qed.
 
+Lemma circuit_component_emergence_observable_count_pos : (0 < 23)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma circuit_component_emergence_median_error_under_five_pct : (0.051887%R) < (5.0%R).
+Proof. lra. Qed.
+
 Lemma civil_engineering_ext_pooled_median_under_half_pct : (0.021151317926568283%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -298,11 +304,5 @@ Lemma codon_aac_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
 Proof. repeat split; reflexivity. Qed.
 
 Lemma codon_aag_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_aag_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_aat_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

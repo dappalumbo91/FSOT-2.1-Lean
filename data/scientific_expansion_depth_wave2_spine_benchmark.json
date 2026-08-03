@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-15T05:29:19.413811+00:00",
+  "generated_at": "2026-08-03T23:20:47.114648+00:00",
   "domain": "Scientific_Expansion_Depth_Wave2_Spine",
-  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "tier87_depth_wave2_panels"
   ],
@@ -161,7 +161,7 @@
       "computed": 0.033841,
       "measured": 0.033841,
       "error_pct": 0.0,
-      "record_count": 21,
+      "record_count": 15,
       "eval_kind": "tier87_bridge"
     },
     {
@@ -211,7 +211,7 @@
       "computed": 0.026954,
       "measured": 0.026954,
       "error_pct": 0.0,
-      "record_count": 127,
+      "record_count": 82,
       "eval_kind": "tier87_bridge"
     },
     {
@@ -261,7 +261,7 @@
       "computed": 0.022236,
       "measured": 0.022236,
       "error_pct": 0.0,
-      "record_count": 26,
+      "record_count": 13,
       "eval_kind": "tier87_bridge"
     },
     {
@@ -308,19 +308,19 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "panel_pooled_median",
       "name": "quantum_mechanics_entanglement_depth_panel",
-      "computed": 0.095551,
-      "measured": 0.095551,
+      "computed": 0.040817,
+      "measured": 0.040817,
       "error_pct": 0.0,
-      "record_count": 23,
+      "record_count": 11,
       "eval_kind": "tier87_bridge"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "chsh_classical_bound",
-      "computed": 2.001911,
+      "computed": 2.000816,
       "measured": 2.0,
-      "error_pct": 0.095551,
+      "error_pct": 0.040817,
       "source_panel": "quantum_mechanics_entanglement_depth_panel",
       "eval_kind": "ingest_relay"
     },
@@ -328,9 +328,9 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "chsh_tsirelson_bound",
-      "computed": 2.83113,
+      "computed": 2.829581,
       "measured": 2.828427,
-      "error_pct": 0.095551,
+      "error_pct": 0.040817,
       "source_panel": "quantum_mechanics_entanglement_depth_panel",
       "eval_kind": "ingest_relay"
     },
@@ -338,9 +338,9 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "bell_inequality_margin",
-      "computed": 0.41461,
+      "computed": 0.414383,
       "measured": 0.414214,
-      "error_pct": 0.095551,
+      "error_pct": 0.040817,
       "source_panel": "quantum_mechanics_entanglement_depth_panel",
       "eval_kind": "ingest_relay"
     },
@@ -348,9 +348,9 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "value",
       "name": "epr_entangled_pair_spin_correlation",
-      "computed": 1.000956,
+      "computed": 1.000408,
       "measured": 1.0,
-      "error_pct": 0.095551,
+      "error_pct": 0.040817,
       "source_panel": "quantum_mechanics_entanglement_depth_panel",
       "eval_kind": "ingest_relay"
     },
@@ -361,7 +361,7 @@
       "computed": 0.031506,
       "measured": 0.031506,
       "error_pct": 0.0,
-      "record_count": 23,
+      "record_count": 12,
       "eval_kind": "tier87_bridge"
     },
     {
@@ -408,10 +408,10 @@
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "panel_pooled_median",
       "name": "materials_creep_fracture_depth_panel",
-      "computed": 0.011734,
-      "measured": 0.011734,
+      "computed": 0.01341,
+      "measured": 0.01341,
       "error_pct": 0.0,
-      "record_count": 71,
+      "record_count": 47,
       "eval_kind": "tier87_bridge"
     },
     {

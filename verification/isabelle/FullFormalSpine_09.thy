@@ -3,6 +3,27 @@ theory FullFormalSpine_09
 imports Complex_Main
 begin
 
+lemma hero_canonical_bridge_delta_lt_five_pct: "(0.0035164727776800936 :: real) < (0.05 :: real)"
+  by eval
+
+lemma allen_cohort_fi_pearson_r_gt_fifty_five: "(0.55 :: real) < (0.608876904981479 :: real)"
+  by eval
+
+lemma hero_certified_verifier_confidence_gt_ninety_pct: "(0.9 :: real) < (0.9598886696481669 :: real)"
+  by eval
+
+lemma neurolab_strict_empirical_records_large: "(7900 :: nat) < (7941 :: nat)"
+  by eval
+
+lemma stratum_vip_fi_median_lt_bound: "(0.4741701150886025 :: real) < (0.5 :: real)"
+  by eval
+
+lemma held_out_fi_median_rel_err_lt_thirty_pct: "(0.24625990376478163 :: real) < (0.3 :: real)"
+  by eval
+
+lemma stratum_sst_fi_median_lt_bound: "(0.6532385249479395 :: real) < (0.7 :: real)"
+  by eval
+
 lemma stratum_pv_fi_median_lt_bound: "(0.26052599991828185 :: real) < (0.35 :: real)"
   by eval
 
@@ -280,27 +301,6 @@ lemma paleontology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
 lemma paleontology_panel_observable_count_pos: "0 < (120 :: nat)"
-  by eval
-
-lemma paleontology_panel_median_error_under_half_pct: "(0.0167305 :: real) < (0.5 :: real)"
-  by eval
-
-lemma paleontology_observable_count_pos: "0 < (630 :: nat)"
-  by eval
-
-lemma paleontology_median_error_under_half_pct: "(0.017836062884406152 :: real) < (0.5 :: real)"
-  by eval
-
-lemma particle_neural_orbital_bridge_observable_count_pos: "0 < (48 :: nat)"
-  by eval
-
-lemma particle_neural_orbital_bridge_median_error_under_half_pct: "(0.03326447040434832 :: real) < (0.5 :: real)"
-  by eval
-
-lemma particle_physics_gap_fill_pooled_median_under_half_pct: "(0.002729984252880815 :: real) < (0.5 :: real)"
-  by eval
-
-lemma particle_physics_gap_fill_headline_median_under_half_pct: "(0.002729984252880815 :: real) < (0.5 :: real)"
   by eval
 
 end

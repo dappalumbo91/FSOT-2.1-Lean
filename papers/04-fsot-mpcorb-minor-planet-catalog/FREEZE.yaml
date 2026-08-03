@@ -1,0 +1,45 @@
+# MPCORB domain paper freeze
+edition_id: "arxiv-04-fsot-mpcorb-minor-planet-catalog-2026-08-03"
+edition_date: "2026-08-03"
+manuscript_date: "2026-08-03"
+author: "Damian Arthur Palumbo"
+
+repository:
+  url: "https://github.com/dappalumbo91/FSOT-2.1-Lean"
+  clone: "git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git"
+  commit: "10c2bb1d28bc2ba7e295eb35a20b913ee4464692"
+  commit_short: "10c2bb1"
+  recommended_tag: "v2.7-arxiv-mpcorb"
+  tag_pushed: false
+
+oracle:
+  path: "vendor/fsot_compute.py"
+  pin: "D1D38A"
+
+empirical:
+  panel: "MPCORB / minor planet catalog"
+  objects: 1554101
+  pooled_median_error_pct: 0.023015
+  green_gate: "≤0.5% pooled median"
+  aspiration: "≤0.05% (panel below aspiration band)"
+  artifact: "data/mpcorb_fsot_benchmark.json"
+  process_doc: "docs/MPCORB_REFINEMENT_PROCESS.md"
+  notes: "Full IAU MPCORB.DAT catalog residual under FSOT prediction law at correct D_eff."
+
+reproduction:
+  one_command: "python scripts/build_mpcorb_fsot_benchmark.py"
+  extra_commands:
+    - "python scripts/ingest_mpcorb_catalog.py"
+    - "python scripts/audit_all_benchmark_margins.py"
+  data_sources:
+    - "vendor/mpcorb/MPCORB.DAT (or .gz)"
+    - "IAU Minor Planet Center public MPCORB"
+
+artifacts_required_after_bundle:
+  - data/mpcorb_fsot_benchmark.json
+  - data/benchmark_margin_audit.json
+
+arxiv:
+  primary: "astro-ph.EP"
+  secondary: ["cs.LG", "physics.data-an"]
+  title_direction: "FSOT residual evaluation of the full IAU MPCORB minor-planet catalog"

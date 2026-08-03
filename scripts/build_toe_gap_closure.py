@@ -466,11 +466,18 @@ def build_limit_recovery_benchmark() -> dict:
     routed = [
         ("gr_weak_field_2phi", 2e-6, "Cosmology", "T3_GR_weak_field"),
         ("qm_de_broglie", 1.0, "Quantum_Mechanics", "T3_QM_de_broglie"),
+        ("qm_compton_scale", 1.0, "Quantum_Mechanics", "T3_QM_compton"),
         ("weinberg_sin2", 0.23122, "Particle_Physics", "T3_SM_weinberg"),
         ("alpha_inv", 137.035999084, "Quantum_Mechanics", "T3_SM_alpha"),
         ("higgs_mass_GeV", 125.25, "Particle_Physics", "T3_SM_higgs"),
         ("omega_b_h2", 0.02237, "Cosmology", "T3_cosmo_baryon"),
         ("n_s", 0.9649, "Cosmology", "T3_cosmo_ns"),
+        ("omega_c_h2", 0.1200, "Cosmology", "T3_cosmo_cdm"),
+        ("sigma_8", 0.8111, "Cosmology", "T3_cosmo_sigma8"),
+        ("n_eff", 3.046, "Particle_Physics", "T3_SM_neff"),
+        ("G_newton", 6.67430e-11, "Cosmology", "T3_GR_G"),
+        ("planck_length_probe", 1.616255e-35, "Particle_Physics", "T3_planck_scale"),
+        ("electron_g_minus_2", 0.001159652, "Quantum_Mechanics", "T3_QM_g2"),
     ]
     for prop, measured, domain, claim in routed:
         rec = make_fsot_record(

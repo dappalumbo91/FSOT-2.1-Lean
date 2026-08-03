@@ -3,6 +3,27 @@ theory FullFormalSpine_11
 imports Complex_Main
 begin
 
+lemma pubchem_stability_panel_median_error_under_half_pct: "(0.0024238898584426276 :: real) < (0.5 :: real)"
+  by eval
+
+lemma public_verifiable_spine_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma public_verifiable_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma published_fuel_property_panel_observable_count_pos: "0 < (31 :: nat)"
+  by eval
+
+lemma published_fuel_property_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma pure_mathematics_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma pure_mathematics_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
 lemma pure_mathematics_ext_observable_count_pos: "0 < (1549 :: nat)"
   by eval
 
@@ -162,6 +183,12 @@ lemma scalar_solver_35_panel_observable_count_pos: "0 < (24 :: nat)"
 lemma scalar_solver_35_panel_median_error_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
   by eval
 
+lemma schematic_netlist_intrinsic_observable_count_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma schematic_netlist_intrinsic_median_error_under_five_pct: "(0.051887 :: real) < (5.0 :: real)"
+  by eval
+
 lemma scientific_expansion_depth_spine_observable_count_pos: "0 < (20 :: nat)"
   by eval
 
@@ -274,33 +301,6 @@ lemma sota_meets_or_beats_large: "(32 :: nat) < (35 :: nat)"
   by eval
 
 lemma sota_below_bounded: "(0 :: nat) <= (5 :: nat)"
-  by eval
-
-lemma sota_zero_free_parameters: "(0 :: nat) = (0 :: nat)"
-  by eval
-
-lemma soul_sibling_D_compact_positive: "0 < (24.98 :: real)"
-  by eval
-
-lemma soul_sibling_fidelity_threshold_positive: "0 < (0.05 :: real)"
-  by eval
-
-lemma space_propulsion_systems_observable_count_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma space_propulsion_systems_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma space_weather_kp_record_count_pos: "0 < (271813 :: nat)"
-  by eval
-
-lemma space_weather_stability_match_le_total: "(271813 :: nat) <= (271813 :: nat)"
-  by eval
-
-lemma space_weather_stability_match_rate_nonneg: "(0 :: real) <= (1.0 :: real)"
-  by eval
-
-lemma species_property_count_pos: "0 < (684 :: nat)"
   by eval
 
 end

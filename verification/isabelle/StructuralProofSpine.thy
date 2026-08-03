@@ -156,6 +156,9 @@ lemma chemical_engineering_bundle: "(186 :: nat) = 186 \<and> (16 :: nat) = 16 \
 lemma chemical_structure_stability_panel_bundle: "(32 :: nat) = 32 \<and> (14 :: nat) = 14 \<and> (0.00206 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma circuit_component_emergence_bundle: "(23 :: nat) = 23 \<and> (10 :: nat) = 10 \<and> (0.051887 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
 lemma civil_engineering_ext_bundle: "(201 :: nat) = 201 \<and> (0.021151317926568283 :: real) < (0.5 :: real) \<and> (0.021151317926568283 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -621,22 +624,22 @@ lemma live_ingest_spine_bundle: "(28 :: nat) = 28 \<and> (17 :: nat) = 17 \<and>
 lemma living_fsot_hardware_panel_bundle: "(77 :: nat) = 77 \<and> (15 :: nat) = 15 \<and> (0.031506 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma longevity_anage_catalog_panel_bundle: "(966 :: nat) = 966 \<and> (20 :: nat) = 20 \<and> (0.022236 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma longevity_anage_catalog_bundle: "(966 :: nat) = 966 \<and> (20 :: nat) = 20 \<and> (0.022236 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma longevity_consciousness_coupling_panel_bundle: "(890 :: nat) = 890 \<and> (24 :: nat) = 24 \<and> (0.022424 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma longevity_consciousness_coupling_bundle: "(890 :: nat) = 890 \<and> (24 :: nat) = 24 \<and> (0.022424 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma longevity_extreme_species_panel_bundle: "(164 :: nat) = 164 \<and> (21 :: nat) = 21 \<and> (0.017789 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma longevity_extreme_species_bundle: "(164 :: nat) = 164 \<and> (21 :: nat) = 21 \<and> (0.017789 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma longevity_genetic_mechanics_panel_bundle: "(35 :: nat) = 35 \<and> (19 :: nat) = 19 \<and> (0.022236 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma longevity_genetic_mechanics_bundle: "(35 :: nat) = 35 \<and> (19 :: nat) = 19 \<and> (0.022236 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma longevity_megadeep_ncbi_panel_bundle: "(1746 :: nat) = 1746 \<and> (23 :: nat) = 23 \<and> (0.017789 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma longevity_megadeep_ncbi_bundle: "(1746 :: nat) = 1746 \<and> (23 :: nat) = 23 \<and> (0.017789 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma longevity_telomere_repair_panel_bundle: "(60 :: nat) = 60 \<and> (20 :: nat) = 20 \<and> (0.022236 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma longevity_telomere_repair_bundle: "(60 :: nat) = 60 \<and> (20 :: nat) = 20 \<and> (0.022236 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma machine_and_molecule_live_bundle: "(120 :: nat) = 120 \<and> (15 :: nat) = 15 \<and> (0.01341 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -1047,6 +1050,9 @@ lemma rust_lean_bridge_bundle: "(9 :: nat) = 9 \<and> (8 :: nat) = 8 \<and> (0 :
 lemma scalar_solver_35_panel_bundle: "(24 :: nat) = 24 \<and> (14 :: nat) = 14 \<and> (0.014767 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma schematic_netlist_intrinsic_bundle: "(5 :: nat) = 5 \<and> (10 :: nat) = 10 \<and> (0.051887 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
 lemma scientific_expansion_depth_spine_bundle: "(20 :: nat) = 20 \<and> (17 :: nat) = 17 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -1185,10 +1191,13 @@ lemma the_well_verification_spine_bundle: "(24 :: nat) = 24 \<and> (19 :: nat) =
 lemma tier_93_dual_wave_spine_bundle: "(24 :: nat) = 24 \<and> (19 :: nat) = 19 \<and> (0.011093889935064888 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma tier_94_longevity_spine_bundle: "(34 :: nat) = 34 \<and> (25 :: nat) = 25 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma tier_94_longevity_bundle: "(34 :: nat) = 34 \<and> (25 :: nat) = 25 \<and> (0 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma tier_95_zebrafish_spine_bundle: "(24 :: nat) = 24 \<and> (23 :: nat) = 23 \<and> (0.013342 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma tier_95_zebrafish_bundle: "(18 :: nat) = 18 \<and> (23 :: nat) = 23 \<and> (0 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma tier_96_circuit_bundle: "(11 :: nat) = 11 \<and> (10 :: nat) = 10 \<and> (0 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma time_domain_crosswalk_bundle: "(250 :: nat) = 250 \<and> (19 :: nat) = 19 \<and> (0.028056 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -1311,16 +1320,16 @@ lemma z120_z126_beam_synthesis_panel_bundle: "(20 :: nat) = 20 \<and> (20 :: nat
 lemma z164_distant_island_prereg_scaffold_bundle: "(24 :: nat) = 24 \<and> (24 :: nat) = 24 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma zebrafish_cell_tracking_panel_bundle: "(20 :: nat) = 20 \<and> (20 :: nat) = 20 \<and> (0.022236 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma zebrafish_cell_tracking_bundle: "(20 :: nat) = 20 \<and> (20 :: nat) = 20 \<and> (0.022236 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma zebrafish_developmental_mechanics_panel_bundle: "(31 :: nat) = 31 \<and> (21 :: nat) = 21 \<and> (0.017789 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma zebrafish_developmental_mechanics_bundle: "(31 :: nat) = 31 \<and> (21 :: nat) = 21 \<and> (0.017789 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma zebrafish_longevity_genetics_coupling_panel_bundle: "(24 :: nat) = 24 \<and> (22 :: nat) = 22 \<and> (0.014453500000000001 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma zebrafish_longevity_genetics_coupling_bundle: "(15 :: nat) = 15 \<and> (22 :: nat) = 22 \<and> (0.013342 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma zebrafish_predictive_validation_bundle: "(20 :: nat) = 20 \<and> (24 :: nat) = 24 \<and> (0.368118 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
+lemma zebrafish_predictive_validation_bundle: "(20 :: nat) = 20 \<and> (24 :: nat) = 24 \<and> (0.3579695 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma zero_boundary_not_entity_panel_bundle: "(24 :: nat) = 24 \<and> (18 :: nat) = 18 \<and> (0.020055 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"

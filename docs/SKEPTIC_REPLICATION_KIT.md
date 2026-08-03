@@ -25,10 +25,13 @@ python scripts/run_publication_verification_bundle.py
 
 | Check | Expected |
 |-------|----------|
-| Benchmark green | **405/405** fail 0 (`data/benchmark_margin_audit.json`) |
+| Benchmark green | **412/412** fail 0 (`data/benchmark_margin_audit.json`) |
+| Tier aspiration | `closed: true` in `data/tier_scalar_precision_closure.json` (≤0.05%) |
+| ToE labels | Label A + Label B **true** in `data/toe_gap_closure_report.json` |
 | Cross-proof | `overall_ok: true` in `data/cross_proof_verification_report.json` |
-| Contested pooled | ~0.030% in `data/contested_observables_closure.json` |
+| Contested | median ~0.009% in gap report / contested refresh |
 | Open-science holdouts | `overall_ok: true` in `data/open_science_holdout_evaluation.json` |
+| Fresh clone | `pwsh scripts/fresh_clone_repro.ps1` → PASS |
 
 ## Step 3 — Spot-check three domains (~3 min)
 

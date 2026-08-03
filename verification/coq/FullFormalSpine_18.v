@@ -6,6 +6,39 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma delta_lambda_cosm_pos : 0 < (0.0216083%R).
+Proof. lra. Qed.
+
+Lemma c_cosm_lt_061806 : (0.061803398874989486%R) < (0.061806%R).
+Proof. lra. Qed.
+
+Lemma p_base_lt_0212371 : (0.21234577623937845%R) < (0.212371%R).
+Proof. lra. Qed.
+
+Lemma alpha_s_MZ_lt_one : (0.11709966304863834%R) < (1.0%R).
+Proof. lra. Qed.
+
+Lemma delta_lambda_cosm_lt_one : (0.0216083%R) < (1.0%R).
+Proof. lra. Qed.
+
+Lemma S_cosm_cached_neg : (-0.5024559462100433%R) < 0%R.
+Proof. lra. Qed.
+
+Lemma alpha_s_MZ_approx_value : (0.000000000000000013877787807814457%R) < (0.00000001%R).
+Proof. lra. Qed.
+
+Lemma c_cosm_gt_061800 : (0.0618%R) < (0.061803398874989486%R).
+Proof. lra. Qed.
+
+Lemma p_base_gt_021234 : (0.21234%R) < (0.21234577623937845%R).
+Proof. lra. Qed.
+
+Lemma e_mul_pi_gt_one : (1.0%R) < (8.539734222673566%R).
+Proof. lra. Qed.
+
+Lemma S_cosm_cached_bounds : (-0.502456%R) < (-0.5024559462100433%R) /\ (-0.5024559462100433%R) < (-0.502455%R).
+Proof. lra. Qed.
+
 Lemma r_d_approx_value : (0.00006487926927434273%R) < (0.05%R).
 Proof. lra. Qed.
 

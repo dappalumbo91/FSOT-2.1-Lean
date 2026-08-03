@@ -68,8 +68,11 @@ Process can lag technical Label A forever; that does not erase A1–A6.
 
 ## Required public language
 
-**Allowed now:** Label A statement; “candidate unified framework”; “ToE research program.”  
-**Not allowed until T1–T6 all green:** “The Theory of Everything, completed/proved.”
+**When A1–A6 hold:** Label A statement; multi-domain seed-locked framework.  
+**When T1–T6 all green (as of gap report):** Explicit **Theory of Everything candidate under frozen Label B checklist** — **allowed and not hidden**.  
+**Still not allowed:** “Proved beyond peer review,” “full Einstein–Hilbert / full SM Lagrangian derived,” or “all 13 contested problems finished” unless those specific deeper claims have their own green artifacts.
+
+**Process language (always honest):** peer review and independent clean-clone remain open; they are **not** T1–T6.
 
 Machine Key: `docs/FSOT_MATH_KEY.md`  
 Gap closure runbook: `docs/TOE_GAP_CLOSURE.md`

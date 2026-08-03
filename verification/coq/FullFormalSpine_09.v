@@ -6,6 +6,27 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma hero_canonical_bridge_delta_lt_five_pct : (0.0035164727776800936%R) < (0.05%R).
+Proof. lra. Qed.
+
+Lemma allen_cohort_fi_pearson_r_gt_fifty_five : (0.55%R) < (0.608876904981479%R).
+Proof. lra. Qed.
+
+Lemma hero_certified_verifier_confidence_gt_ninety_pct : (0.9%R) < (0.9598886696481669%R).
+Proof. lra. Qed.
+
+Lemma neurolab_strict_empirical_records_large : (7900 < 7941)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stratum_vip_fi_median_lt_bound : (0.4741701150886025%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma held_out_fi_median_rel_err_lt_thirty_pct : (0.24625990376478163%R) < (0.3%R).
+Proof. lra. Qed.
+
+Lemma stratum_sst_fi_median_lt_bound : (0.6532385249479395%R) < (0.7%R).
+Proof. lra. Qed.
+
 Lemma stratum_pv_fi_median_lt_bound : (0.26052599991828185%R) < (0.35%R).
 Proof. lra. Qed.
 
@@ -284,25 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma paleontology_panel_observable_count_pos : (0 < 120)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma paleontology_panel_median_error_under_half_pct : (0.0167305%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma paleontology_observable_count_pos : (0 < 630)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma paleontology_median_error_under_half_pct : (0.017836062884406152%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma particle_neural_orbital_bridge_observable_count_pos : (0 < 48)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma particle_neural_orbital_bridge_median_error_under_half_pct : (0.03326447040434832%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma particle_physics_gap_fill_pooled_median_under_half_pct : (0.002729984252880815%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma particle_physics_gap_fill_headline_median_under_half_pct : (0.002729984252880815%R) < (0.5%R).
-Proof. lra. Qed.
 

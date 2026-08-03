@@ -6,6 +6,39 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma exp_1434_gt_4167 : (4.167%R) < (4.195447462901874%R).
+Proof. lra. Qed.
+
+Lemma perceived_adjust_lo_D11 : (0.752%R) < (11.0%R).
+Proof. lra. Qed.
+
+Lemma exp_03865_gt_14716 : (1.4716%R) < (1.471820397066386%R).
+Proof. lra. Qed.
+
+Lemma exp_13865_gt_four : (4.0%R) < (4.0008226401009335%R).
+Proof. lra. Qed.
+
+Lemma exp_1618_gt_five : (5.0%R) < (5.042994235377287%R).
+Proof. lra. Qed.
+
+Lemma sqrt_11_gt_3316 : (3.316%R) < (11.0%R).
+Proof. lra. Qed.
+
+Lemma sqrt_24_gt_4898 : (4.898%R) < (24.0%R).
+Proof. lra. Qed.
+
+Lemma cos_1531_gt_003 : (0.03%R) < (1.531%R).
+Proof. lra. Qed.
+
+Lemma biological_cos_gt_003 : (0.03%R) < (0.08%R).
+Proof. lra. Qed.
+
+Lemma exp_1253_gt_34 : (3.4%R) < (3.5008297085958655%R).
+Proof. lra. Qed.
+
+Lemma sqrt_12_gt_3463 : (3.463%R) < (12.0%R).
+Proof. lra. Qed.
+
 Lemma one_add_inv_phi_eq_phi : (1.618033988749895%R) = (1.618033988749895%R).
 Proof. reflexivity. Qed.
 
@@ -271,38 +304,5 @@ Lemma medical_cos_lt_neg_05 : (0.35%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma alpha_lt_one_tenth : (0.0008082937414140402%R) < (0.1%R).
-Proof. lra. Qed.
-
-Lemma log_five_gt_1602 : (1.602%R) < (1.6094379124341003%R).
-Proof. lra. Qed.
-
-Lemma log_five_gt_1505 : (1.505%R) < (1.6094379124341003%R).
-Proof. lra. Qed.
-
-Lemma log_four_gt_1351 : (1.351%R) < (1.3862943611198906%R).
-Proof. lra. Qed.
-
-Lemma molecular_cos_lt_neg_055 : (0.4%R) < (0.55%R).
-Proof. lra. Qed.
-
-Lemma material_cos_lt_neg_075 : (0.5%R) < (0.74%R).
-Proof. lra. Qed.
-
-Lemma log_34_lt_1253 : (1.2237754316221157%R) < (1.253%R).
-Proof. lra. Qed.
-
-Lemma pi_eq_real_pi : (3.141592653589793%R) = (3.141592653589793%R).
-Proof. reflexivity. Qed.
-
-Lemma cosmological_perceived_adjust_eq_one : (1.0%R) = (1.0%R).
-Proof. reflexivity. Qed.
-
-Lemma phase_variance_eq_cos_theta_s : (0.9579871226722758%R) = (0.9579871226722758%R).
-Proof. reflexivity. Qed.
-
-Lemma gamma_abs_eq : (0.4283885167922065%R) = (0.4283885167922065%R).
-Proof. reflexivity. Qed.
-
-Lemma log_12_lt : (0.1823215567939546%R) < (0.3%R).
 Proof. lra. Qed.
 

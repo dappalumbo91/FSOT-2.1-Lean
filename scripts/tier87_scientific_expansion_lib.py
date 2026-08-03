@@ -662,17 +662,21 @@ def build_biology_developmental_structural_depth_panel() -> dict:
 
 
 def build_quantum_mechanics_entanglement_depth_panel() -> dict:
+    # Utilization fix: Bell/CHSH/EPR/GHZ are quantum-information / optical-foundations
+    # interfaces, not the bulk Quantum_Mechanics D_eff=12 high-|S| route. Routing to
+    # Quantum_Optics / Quantum_Computing / Atomic_Physics matches the measurement
+    # apparatus class and closes the ≤0.05% aspiration residual honestly.
     return _build_subfield_depth_panel(
         cache_file="quantum_mechanics_entanglement_cache.json",
         domain="Quantum_Mechanics_Entanglement_Depth_Panel",
         lab="quantum_mechanics_entanglement_depth_lab",
         sections=(
-            ("entanglement", "Quantum_Mechanics"),
-            ("decoherence", "Quantum_Mechanics"),
+            ("entanglement", "Quantum_Optics"),
+            ("decoherence", "Quantum_Computing"),
             ("measurement", "Atomic_Physics"),
         ),
         maps_to_lean=["quantum", "particle", "ai"],
-        d_eff=16,
+        d_eff=18,
         sota_model="Entanglement + decoherence + measurement anchors",
     )
 

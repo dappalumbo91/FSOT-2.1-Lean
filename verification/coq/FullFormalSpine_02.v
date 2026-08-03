@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma codon_aag_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_aat_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
 Lemma codon_aat_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
@@ -298,11 +304,5 @@ Lemma codon_tat_secondary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
 Lemma codon_tca_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tca_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tcc_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

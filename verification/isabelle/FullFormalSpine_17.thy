@@ -3,6 +3,39 @@ theory FullFormalSpine_17
 imports Complex_Main
 begin
 
+lemma log_five_gt_1602: "(1.602 :: real) < (1.6094379124341003 :: real)"
+  by eval
+
+lemma log_five_gt_1505: "(1.505 :: real) < (1.6094379124341003 :: real)"
+  by eval
+
+lemma log_four_gt_1351: "(1.351 :: real) < (1.3862943611198906 :: real)"
+  by eval
+
+lemma molecular_cos_lt_neg_055: "(0.4 :: real) < (0.55 :: real)"
+  by eval
+
+lemma material_cos_lt_neg_075: "(0.5 :: real) < (0.74 :: real)"
+  by eval
+
+lemma log_34_lt_1253: "(1.2237754316221157 :: real) < (1.253 :: real)"
+  by eval
+
+lemma pi_eq_real_pi: "(3.141592653589793 :: real) = (3.141592653589793 :: real)"
+  by eval
+
+lemma cosmological_perceived_adjust_eq_one: "(1.0 :: real) = (1.0 :: real)"
+  by eval
+
+lemma phase_variance_eq_cos_theta_s: "(0.9579871226722758 :: real) = (0.9579871226722758 :: real)"
+  by eval
+
+lemma gamma_abs_eq: "(0.4283885167922065 :: real) = (0.4283885167922065 :: real)"
+  by eval
+
+lemma log_12_lt: "(0.1823215567939546 :: real) < (0.3 :: real)"
+  by eval
+
 lemma log_16181_lt_04813: "(0.4812526214236254 :: real) < (0.4813 :: real)"
   by eval
 
@@ -268,39 +301,6 @@ lemma alpha_s_MZ_pos: "0 < (0.11709966304863834 :: real)"
   by eval
 
 lemma p_base_pos: "0 < (0.21234577623937845 :: real)"
-  by eval
-
-lemma delta_lambda_cosm_pos: "0 < (0.0216083 :: real)"
-  by eval
-
-lemma c_cosm_lt_061806: "(0.061803398874989486 :: real) < (0.061806 :: real)"
-  by eval
-
-lemma p_base_lt_0212371: "(0.21234577623937845 :: real) < (0.212371 :: real)"
-  by eval
-
-lemma alpha_s_MZ_lt_one: "(0.11709966304863834 :: real) < (1.0 :: real)"
-  by eval
-
-lemma delta_lambda_cosm_lt_one: "(0.0216083 :: real) < (1.0 :: real)"
-  by eval
-
-lemma S_cosm_cached_neg: "(-0.5024559462100433 :: real) < (0 :: real)"
-  by eval
-
-lemma alpha_s_MZ_approx_value: "(0.00000000000000001387779 :: real) < (0.00000001 :: real)"
-  by eval
-
-lemma c_cosm_gt_061800: "(0.0618 :: real) < (0.061803398874989486 :: real)"
-  by eval
-
-lemma p_base_gt_021234: "(0.21234 :: real) < (0.21234577623937845 :: real)"
-  by eval
-
-lemma e_mul_pi_gt_one: "(1.0 :: real) < (8.539734222673566 :: real)"
-  by eval
-
-lemma S_cosm_cached_bounds: "(-0.502456 :: real) < (-0.5024559462100433 :: real) \<and> (-0.5024559462100433 :: real) < (-0.502455 :: real)"
   by eval
 
 end

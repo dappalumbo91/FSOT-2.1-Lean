@@ -1,0 +1,73 @@
+# Flagship ToE claim freeze — numbers from live JSON only
+edition_id: "arxiv-03-fsot-theory-of-everything-claim-2026-08-03"
+edition_date: "2026-08-03"
+manuscript_date: "2026-08-03"
+author: "Damian Arthur Palumbo"
+
+repository:
+  url: "https://github.com/dappalumbo91/FSOT-2.1-Lean"
+  clone: "git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git"
+  commit: "10c2bb1d28bc2ba7e295eb35a20b913ee4464692"
+  commit_short: "10c2bb1"
+  recommended_tag: "v2.7-arxiv-toe-claim"
+  tag_pushed: false
+  note: "Update commit after publish push that includes CI + papers + aspiration fixes."
+
+oracle:
+  path: "vendor/fsot_compute.py"
+  sha256_prefix: "d1d38a185487b452"
+  pin: "D1D38A"
+
+toolchains:
+  notes: "python>=3.11; optional Lean 4.31 / Coq / Isabelle / Z3 / TLA+ for full cross-proof"
+
+formal:
+  overall_ok: true
+  github_ready: true
+  artifact: "data/cross_proof_verification_report.json"
+  acceptance_rule: "overall_ok == true"
+
+empirical:
+  green_gate_pass_count: 412
+  green_gate_file_count: 412
+  green_gate_fail_count: 0
+  tier_scalar_closed: true
+  tier_scalar_fail_count: 0
+  contested_panel_median_error_pct: 0.009407
+  mpcorb_pooled_median_error_pct: 0.023015
+  mpcorb_objects: 1554101
+  toe_dynamics_median_error_pct: 0.0
+  toe_dynamics_records: 18
+  toe_limit_recovery_median_error_pct: 0.022461
+  toe_limit_recovery_records: 16
+  notes: "Green ≤0.5% pooled; aspiration ≤0.05% tier scalar closed."
+
+toe_labels:
+  label_A_empirical_framework: true
+  label_B_classical_toe: true
+  criteria: ["T1_ontology", "T2_dynamics", "T3_limit_recovery", "T4_force_or_scope", "T5_prereg_freeze", "T6_falsification"]
+  boundaries_doc: "docs/TOE_CLAIM_BOUNDARIES.md"
+  gap_doc: "docs/TOE_GAP_CLOSURE.md"
+  report: "data/toe_gap_closure_report.json"
+  honest_scope: "T3 probes/bridges not full EH/SM Lagrangian; T4 scope statement until full gauge sector."
+
+reproduction:
+  one_command: "python scripts/run_publication_verification_bundle.py"
+  extra_commands:
+    - "python scripts/audit_all_benchmark_margins.py"
+    - "python scripts/build_toe_gap_closure.py"
+    - "python scripts/run_cross_proof_verification.py"
+    - "pwsh scripts/fresh_clone_repro.ps1"
+  skeptic_kit: "docs/SKEPTIC_REPLICATION_KIT.md"
+
+artifacts_required_after_bundle:
+  - data/benchmark_margin_audit.json
+  - data/toe_gap_closure_report.json
+  - data/tier_scalar_precision_closure.json
+  - data/cross_proof_verification_report.json
+  - data/publication_claims_manifest.json
+
+arxiv:
+  primary: "cs.LO"
+  secondary: ["physics.gen-ph", "astro-ph.CO"]
+  title_direction: "Machine-checked multi-domain residual certificates for a seed-locked Theory of Everything checklist (FSOT Label A + Label B T1–T6)"

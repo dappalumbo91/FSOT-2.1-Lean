@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cryptography_technology_observable_count_pos : (0 < 44)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma cryptography_technology_median_error_under_half_pct : (0.047520672006218234%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma culinary_arts_observable_count_pos : (0 < 26)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -298,11 +304,5 @@ Lemma epidemiology_ext_headline_median_under_half_pct : (0.039895%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma epidemiology_ext_observable_count_pos : (0 < 220)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma epidemiology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma epidemiology_panel_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

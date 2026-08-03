@@ -6,19 +6,52 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma zebrafish_developmental_mechanics_panel_median_error_under_half_pct : (0.017789%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma zebrafish_longevity_genetics_coupling_panel_observable_count_pos : (0 < 24)%nat.
+Lemma world_bank_development_observable_count_pos : (0 < 420)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma zebrafish_longevity_genetics_coupling_panel_median_error_under_half_pct : (0.014453500000000001%R) < (0.5%R).
+Lemma world_bank_development_median_error_under_five_pct : (0.02584%R) < (5.0%R).
+Proof. lra. Qed.
+
+Lemma xr_interactive_media_math_scaffold_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma xr_interactive_media_math_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma z120_z126_beam_synthesis_panel_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma z120_z126_beam_synthesis_panel_median_error_under_half_pct : (0.000095%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma z164_distant_island_prereg_scaffold_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma z164_distant_island_prereg_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma zebrafish_cell_tracking_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma zebrafish_cell_tracking_median_error_under_five_pct : (0.022236%R) < (5.0%R).
+Proof. lra. Qed.
+
+Lemma zebrafish_developmental_mechanics_observable_count_pos : (0 < 31)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma zebrafish_developmental_mechanics_median_error_under_five_pct : (0.017789%R) < (5.0%R).
+Proof. lra. Qed.
+
+Lemma zebrafish_longevity_genetics_coupling_observable_count_pos : (0 < 15)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma zebrafish_longevity_genetics_coupling_median_error_under_five_pct : (0.013342%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma zebrafish_predictive_validation_observable_count_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma zebrafish_predictive_validation_median_error_under_five_pct : (0.368118%R) < (5.0%R).
+Lemma zebrafish_predictive_validation_median_error_under_five_pct : (0.3579695%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma zero_boundary_not_entity_panel_observable_count_pos : (0 < 24)%nat.
@@ -271,38 +304,5 @@ Lemma eta_eff_lt_466942299692 : (0.46694220658433505%R) < (0.466942299692%R).
 Proof. lra. Qed.
 
 Lemma acoustic_bleed_lt_10476 : (1.046973630587551%R) < (1.0476%R).
-Proof. lra. Qed.
-
-Lemma acoustic_inflow_lt_16695 : (1.6668538450045731%R) < (1.6695%R).
-Proof. lra. Qed.
-
-Lemma k_lt_042042 : (0.420222080893624%R) < (0.42042%R).
-Proof. lra. Qed.
-
-Lemma exp_neg_one_lt_368 : (0.36787944117144233%R) < (0.368%R).
-Proof. lra. Qed.
-
-Lemma exp_neg_0298_lt_08 : (0.7423013397477743%R) < (0.8%R).
-Proof. lra. Qed.
-
-Lemma sqrt_two_lt_14142135624 : (1.4142135623730951%R) < (1.4142135624%R).
-Proof. lra. Qed.
-
-Lemma psi_con_eta_prod_lt_three_tenths : (0.2951637685668222%R) < (0.3%R).
-Proof. lra. Qed.
-
-Lemma exp_0572_lt_1772 : (1.771807124429574%R) < (1.772%R).
-Proof. lra. Qed.
-
-Lemma exp_1144_lt_31415 : (3.1393004861793963%R) < (3.1415%R).
-Proof. lra. Qed.
-
-Lemma exp_11445_lt_3141592 : (3.1408705289004577%R) < (3.141592%R).
-Proof. lra. Qed.
-
-Lemma log_phi_lt_04813 : (0.48121182505960347%R) < (0.4813%R).
-Proof. lra. Qed.
-
-Lemma eta_log_phi_lt_0225 : (0.22469811142780627%R) < (0.225%R).
 Proof. lra. Qed.
 

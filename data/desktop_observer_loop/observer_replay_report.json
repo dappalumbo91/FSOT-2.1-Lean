@@ -1,142 +1,156 @@
 {
-  "generated_at": "2026-07-16T15:52:35.367005+00:00",
+  "generated_at": "2026-08-03T23:21:50.821138+00:00",
   "sample_count": 12,
-  "pooled_median_error_pct": 0.0522111315050912,
-  "anchor_observer_ratio": -0.5815227639277457,
+  "pooled_median_error_pct": 0.0004901766986644292,
+  "anchor_observer_ratio": -0.6893711823600727,
+  "anchor_mode": "seed_locked_neuroscience_N2.07_P1.5",
   "records": [
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_0",
-      "computed": -0.58152276,
-      "measured": -0.58152276,
+      "computed": -0.68937118,
+      "measured": -0.68937118,
       "error_pct": 0.0,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.2876
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_1",
-      "computed": -0.58160459,
-      "measured": -0.58152276,
-      "error_pct": 0.01407,
+      "computed": -0.68937057,
+      "measured": -0.68937118,
+      "error_pct": 8.9e-05,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.4375
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_2",
-      "computed": -0.58178775,
-      "measured": -0.58152276,
-      "error_pct": 0.045568,
+      "computed": -0.68936995,
+      "measured": -0.68937118,
+      "error_pct": 0.000178,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.5686
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_3",
-      "computed": -0.58083394,
-      "measured": -0.58152276,
-      "error_pct": 0.118452,
+      "computed": -0.68936934,
+      "measured": -0.68937118,
+      "error_pct": 0.000267,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.7067
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_4",
-      "computed": -0.58186501,
-      "measured": -0.58152276,
-      "error_pct": 0.058854,
+      "computed": -0.68936872,
+      "measured": -0.68937118,
+      "error_pct": 0.000356,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.7984
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_5",
-      "computed": -0.58105613,
-      "measured": -0.58152276,
-      "error_pct": 0.080244,
+      "computed": -0.68936811,
+      "measured": -0.68937118,
+      "error_pct": 0.000446,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.6339
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_6",
-      "computed": -0.58068407,
-      "measured": -0.58152276,
-      "error_pct": 0.144224,
+      "computed": -0.6893675,
+      "measured": -0.68937118,
+      "error_pct": 0.000535,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.7152
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_7",
-      "computed": -0.58128901,
-      "measured": -0.58152276,
-      "error_pct": 0.040197,
+      "computed": -0.68936688,
+      "measured": -0.68937118,
+      "error_pct": 0.000624,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.1493
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_8",
-      "computed": -0.5815574,
-      "measured": -0.58152276,
-      "error_pct": 0.005957,
+      "computed": -0.68936627,
+      "measured": -0.68937118,
+      "error_pct": 0.000713,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.519
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_9",
-      "computed": -0.58128624,
-      "measured": -0.58152276,
-      "error_pct": 0.040673,
+      "computed": -0.68936565,
+      "measured": -0.68937118,
+      "error_pct": 0.000802,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.2284
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_10",
-      "computed": -0.58103502,
-      "measured": -0.58152276,
-      "error_pct": 0.083873,
+      "computed": -0.68936504,
+      "measured": -0.68937118,
+      "error_pct": 0.000891,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.3003
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_11",
-      "computed": -0.58096566,
-      "measured": -0.58152276,
-      "error_pct": 0.095801,
+      "computed": -0.68936442,
+      "measured": -0.68937118,
+      "error_pct": 0.00098,
       "eval_kind": "observer_replay",
       "observed": true,
-      "channel": "timing+display_proxy+information_density"
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.312
     }
   ],
   "policy": "no_mic_no_camera_no_esp32",
-  "all_ok": true
+  "all_ok": true,
+  "aspiration_ok": true
 }

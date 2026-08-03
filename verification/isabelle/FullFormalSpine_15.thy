@@ -3,6 +3,39 @@ theory FullFormalSpine_15
 imports Complex_Main
 begin
 
+lemma acoustic_inflow_lt_16695: "(1.6668538450045731 :: real) < (1.6695 :: real)"
+  by eval
+
+lemma k_lt_042042: "(0.420222080893624 :: real) < (0.42042 :: real)"
+  by eval
+
+lemma exp_neg_one_lt_368: "(0.36787944117144233 :: real) < (0.368 :: real)"
+  by eval
+
+lemma exp_neg_0298_lt_08: "(0.7423013397477743 :: real) < (0.8 :: real)"
+  by eval
+
+lemma sqrt_two_lt_14142135624: "(1.4142135623730951 :: real) < (1.4142135624 :: real)"
+  by eval
+
+lemma psi_con_eta_prod_lt_three_tenths: "(0.2951637685668222 :: real) < (0.3 :: real)"
+  by eval
+
+lemma exp_0572_lt_1772: "(1.771807124429574 :: real) < (1.772 :: real)"
+  by eval
+
+lemma exp_1144_lt_31415: "(3.1393004861793963 :: real) < (3.1415 :: real)"
+  by eval
+
+lemma exp_11445_lt_3141592: "(3.1408705289004577 :: real) < (3.141592 :: real)"
+  by eval
+
+lemma log_phi_lt_04813: "(0.48121182505960347 :: real) < (0.4813 :: real)"
+  by eval
+
+lemma eta_log_phi_lt_0225: "(0.22469811142780627 :: real) < (0.225 :: real)"
+  by eval
+
 lemma exp_neg_185_lt_016: "(0.1572371663136276 :: real) < (0.16 :: real)"
   by eval
 
@@ -268,39 +301,6 @@ lemma exp_11453_gt_pi23847: "(3.141592653589793 :: real) < (3.1433842306702213 :
   by eval
 
 lemma eta_log_phi_gt_02244: "(0.2244 :: real) < (0.22469811142780627 :: real)"
-  by eval
-
-lemma exp_1434_gt_4167: "(4.167 :: real) < (4.195447462901874 :: real)"
-  by eval
-
-lemma perceived_adjust_lo_D11: "(0.752 :: real) < (11.0 :: real)"
-  by eval
-
-lemma exp_03865_gt_14716: "(1.4716 :: real) < (1.471820397066386 :: real)"
-  by eval
-
-lemma exp_13865_gt_four: "(4.0 :: real) < (4.0008226401009335 :: real)"
-  by eval
-
-lemma exp_1618_gt_five: "(5.0 :: real) < (5.042994235377287 :: real)"
-  by eval
-
-lemma sqrt_11_gt_3316: "(3.316 :: real) < (11.0 :: real)"
-  by eval
-
-lemma sqrt_24_gt_4898: "(4.898 :: real) < (24.0 :: real)"
-  by eval
-
-lemma cos_1531_gt_003: "(0.03 :: real) < (1.531 :: real)"
-  by eval
-
-lemma biological_cos_gt_003: "(0.03 :: real) < (0.08 :: real)"
-  by eval
-
-lemma exp_1253_gt_34: "(3.4 :: real) < (3.5008297085958655 :: real)"
-  by eval
-
-lemma sqrt_12_gt_3463: "(3.463 :: real) < (12.0 :: real)"
   by eval
 
 end

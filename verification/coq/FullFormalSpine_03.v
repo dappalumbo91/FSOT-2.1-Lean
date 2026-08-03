@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma codon_tca_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tcc_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
 Lemma codon_tcc_secondary_phase : (-1 = -1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
 Proof. repeat split; reflexivity. Qed.
 
@@ -299,10 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma cryosphere_match_le_total : (2399 <= 2399)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
-
-Lemma cryptography_technology_observable_count_pos : (0 < 44)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cryptography_technology_median_error_under_half_pct : (0.047520672006218234%R) < (0.5%R).
-Proof. lra. Qed.
 

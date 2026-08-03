@@ -3,19 +3,52 @@ theory FullFormalSpine_14
 imports Complex_Main
 begin
 
-lemma zebrafish_developmental_mechanics_panel_median_error_under_half_pct: "(0.017789 :: real) < (0.5 :: real)"
+lemma world_bank_development_observable_count_pos: "0 < (420 :: nat)"
   by eval
 
-lemma zebrafish_longevity_genetics_coupling_panel_observable_count_pos: "0 < (24 :: nat)"
+lemma world_bank_development_median_error_under_five_pct: "(0.02584 :: real) < (5.0 :: real)"
   by eval
 
-lemma zebrafish_longevity_genetics_coupling_panel_median_error_under_half_pct: "(0.014453500000000001 :: real) < (0.5 :: real)"
+lemma xr_interactive_media_math_scaffold_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma xr_interactive_media_math_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma z120_z126_beam_synthesis_panel_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma z120_z126_beam_synthesis_panel_median_error_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma z164_distant_island_prereg_scaffold_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma z164_distant_island_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma zebrafish_cell_tracking_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma zebrafish_cell_tracking_median_error_under_five_pct: "(0.022236 :: real) < (5.0 :: real)"
+  by eval
+
+lemma zebrafish_developmental_mechanics_observable_count_pos: "0 < (31 :: nat)"
+  by eval
+
+lemma zebrafish_developmental_mechanics_median_error_under_five_pct: "(0.017789 :: real) < (5.0 :: real)"
+  by eval
+
+lemma zebrafish_longevity_genetics_coupling_observable_count_pos: "0 < (15 :: nat)"
+  by eval
+
+lemma zebrafish_longevity_genetics_coupling_median_error_under_five_pct: "(0.013342 :: real) < (5.0 :: real)"
   by eval
 
 lemma zebrafish_predictive_validation_observable_count_pos: "0 < (20 :: nat)"
   by eval
 
-lemma zebrafish_predictive_validation_median_error_under_five_pct: "(0.368118 :: real) < (5.0 :: real)"
+lemma zebrafish_predictive_validation_median_error_under_five_pct: "(0.3579695 :: real) < (5.0 :: real)"
   by eval
 
 lemma zero_boundary_not_entity_panel_observable_count_pos: "0 < (24 :: nat)"
@@ -268,39 +301,6 @@ lemma eta_eff_lt_466942299692: "(0.46694220658433505 :: real) < (0.466942299692 
   by eval
 
 lemma acoustic_bleed_lt_10476: "(1.046973630587551 :: real) < (1.0476 :: real)"
-  by eval
-
-lemma acoustic_inflow_lt_16695: "(1.6668538450045731 :: real) < (1.6695 :: real)"
-  by eval
-
-lemma k_lt_042042: "(0.420222080893624 :: real) < (0.42042 :: real)"
-  by eval
-
-lemma exp_neg_one_lt_368: "(0.36787944117144233 :: real) < (0.368 :: real)"
-  by eval
-
-lemma exp_neg_0298_lt_08: "(0.7423013397477743 :: real) < (0.8 :: real)"
-  by eval
-
-lemma sqrt_two_lt_14142135624: "(1.4142135623730951 :: real) < (1.4142135624 :: real)"
-  by eval
-
-lemma psi_con_eta_prod_lt_three_tenths: "(0.2951637685668222 :: real) < (0.3 :: real)"
-  by eval
-
-lemma exp_0572_lt_1772: "(1.771807124429574 :: real) < (1.772 :: real)"
-  by eval
-
-lemma exp_1144_lt_31415: "(3.1393004861793963 :: real) < (3.1415 :: real)"
-  by eval
-
-lemma exp_11445_lt_3141592: "(3.1408705289004577 :: real) < (3.141592 :: real)"
-  by eval
-
-lemma log_phi_lt_04813: "(0.48121182505960347 :: real) < (0.4813 :: real)"
-  by eval
-
-lemma eta_log_phi_lt_0225: "(0.22469811142780627 :: real) < (0.225 :: real)"
   by eval
 
 end

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-08-03T23:12:23.257014+00:00",
+  "generated_at": "2026-08-03T23:22:25.932335+00:00",
   "domain": "TOE_Dynamics",
   "maps_to_lean": [
     "fluid_dynamics",
@@ -16,8 +16,8 @@
     "\u03bc": "\u03bc = |Chaos|\u00b7|D_eff-25|/25 + A_bleed\u00b7Poof",
     "J_obs": "J_obs = C_factor\u00b7cos(\u03b4\u03c8+\u03b8_S) if observed else 0"
   },
-  "record_count": 14,
-  "observable_count": 14,
+  "record_count": 18,
+  "observable_count": 18,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "green_gate_pass": true,
@@ -124,6 +124,47 @@
       "error_pct": 0.0,
       "eval_kind": "dynamics_identity",
       "claim": "T2_acoustic_metric"
+    },
+    {
+      "name": "euler_scalar_contracts",
+      "property": "scalar_euler_contraction",
+      "computed": 0.08206345749386657,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_integration",
+      "claim": "T2_euler_contract",
+      "residual_after": 0.22948413562653325,
+      "initial_offset": 0.2499999999999999,
+      "note": "200 explicit Euler steps at dt=0.001 toward S_eq(D=21)"
+    },
+    {
+      "name": "continuity_uniform_zero",
+      "property": "continuity_rhs",
+      "computed": -0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_mass_conservation_uniform"
+    },
+    {
+      "name": "bleed_rate_positive",
+      "property": "bleed_rate",
+      "computed": 0.30051620032255366,
+      "measured": 0.30051620032255366,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_bleed_yin_yang"
+    },
+    {
+      "name": "viscosity_calm_at_D25",
+      "property": "viscosity_ordering",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_viscosity_interface_calm",
+      "mu_D6": 0.412270210542628,
+      "mu_D25": 0.16069183175866183
     },
     {
       "lab": "toe_dynamics_lab",
@@ -265,6 +306,47 @@
       "error_pct": 0.0,
       "eval_kind": "dynamics_identity",
       "claim": "T2_acoustic_metric"
+    },
+    {
+      "name": "euler_scalar_contracts",
+      "property": "scalar_euler_contraction",
+      "computed": 0.08206345749386657,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_integration",
+      "claim": "T2_euler_contract",
+      "residual_after": 0.22948413562653325,
+      "initial_offset": 0.2499999999999999,
+      "note": "200 explicit Euler steps at dt=0.001 toward S_eq(D=21)"
+    },
+    {
+      "name": "continuity_uniform_zero",
+      "property": "continuity_rhs",
+      "computed": -0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_mass_conservation_uniform"
+    },
+    {
+      "name": "bleed_rate_positive",
+      "property": "bleed_rate",
+      "computed": 0.30051620032255366,
+      "measured": 0.30051620032255366,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_bleed_yin_yang"
+    },
+    {
+      "name": "viscosity_calm_at_D25",
+      "property": "viscosity_ordering",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "T2_viscosity_interface_calm",
+      "mu_D6": 0.412270210542628,
+      "mu_D25": 0.16069183175866183
     },
     {
       "lab": "toe_dynamics_lab",

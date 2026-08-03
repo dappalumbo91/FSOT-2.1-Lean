@@ -1,11 +1,11 @@
 # Fluid Spacetime Omni-Theory (FSOT)
 
-## A Cross-Domain Theory of Reality â€” Published on GitHub
+## A Cross-Domain Theory of Everything — Published on GitHub
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.6 â€” FluidLink archive, desktop observer loop, local bundle 2026-07-16
-**Status:** Living thesis â€” expanded as each domain and crevice is verified  
+**Edition:** v2.7 — Label A + Label B (T1–T6) closed · CI · clean-clone · arXiv scaffolds · 2026-08-03  
+**Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
 
@@ -18,6 +18,62 @@ python scripts/run_publication_verification_bundle.py
 
 ---
 
+## Theory of Everything — what we claim (not hidden)
+
+FSOT is put forward as a **candidate Theory of Everything** under a **frozen technical checklist**, not as a slogan.
+
+| Label | Meaning | Status |
+|-------|---------|--------|
+| **Label A** | Seed-locked multi-domain empirical framework (≤0.5% green gate, multi-prover, falsification registry) | **PASS** |
+| **Label B** | Classical ToE criteria **T1–T6** (ontology, dynamics, limit recovery, force/scope, prereg freeze, falsifiability) | **PASS** |
+
+**Frozen criteria:** [`docs/TOE_CLAIM_BOUNDARIES.md`](docs/TOE_CLAIM_BOUNDARIES.md)  
+**Gap runbook + scope honesty:** [`docs/TOE_GAP_CLOSURE.md`](docs/TOE_GAP_CLOSURE.md)  
+**Machine report:** `data/toe_gap_closure_report.json` (`label_A_empirical_framework: true`, `label_B_classical_toe: true`)
+
+### What ToE PASS means here
+
+1. One seed-derived scalar engine (π, e, φ, γ, G / Catalan) — pin **D1D38A** — zero free fits.  
+2. Continuum / fluid dynamics (`vendor/fsot_dynamics.py`) + limit-recovery probes (GR weak field, QM scales, SM bridges).  
+3. Multi-domain residual atlas green (**412/412** ≤0.5% pooled); aspiration tier closed (**≤0.05%** scalar median).  
+4. Contested-sector public anchors (H₀ Planck/SH0ES, DESI *w_a*, N_eff, σ₈, Higgs, …) with utilization fixes, not excuses.  
+5. Preregistered freeze + falsification registry.  
+6. Multi-prover triangulation (Lean master + Coq/Isabelle/F*/Rust + SMT + TLA+).
+
+### What remains (process — not a secret technical gap)
+
+| Remaining | Role |
+|-----------|------|
+| **Peer review** (arXiv + journals) | Social/scientific acceptance path |
+| **Independent clean-clone reproduction** | Trust path — anyone can run the kill commands |
+| **Deeper T3/T4 research** | Full Einstein–Hilbert / full SM Lagrangian derivation is **not** claimed yet (honest scope in gap doc) |
+
+We are **not** hiding the ToE claim. We are separating **technical Label B (closed under frozen T1–T6)** from **peer acknowledgment** (open). Domain count and prover count strengthen Label A; they do not redefine Label B.
+
+### Skeptic front door (break it in ~15 min)
+
+| Step | Command / doc |
+|------|----------------|
+| 1. Full kit | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) |
+| 2. One-command | `python scripts/run_publication_verification_bundle.py` |
+| 3. Margin | `python scripts/audit_all_benchmark_margins.py` → `data/benchmark_margin_audit.json` |
+| 4. ToE labels | `python scripts/build_toe_gap_closure.py` → `data/toe_gap_closure_report.json` |
+| 5. Cross-proof | `python scripts/run_cross_proof_verification.py` → `overall_ok: true` |
+| 6. Fresh clone | `pwsh scripts/fresh_clone_repro.ps1` |
+
+**Kill criteria:** any green-gate fail after clean clone; `overall_ok: false`; prereg PRED violation; free-parameter audit finding.
+
+### arXiv / paper track
+
+| Paper | Focus | Scaffold |
+|-------|--------|----------|
+| Flagship ToE claim | Label A lead + T1–T6 appendix + multi-prover | [`papers/03-fsot-theory-of-everything-claim/`](papers/03-fsot-theory-of-everything-claim/) |
+| MPCORB domain | Full minor-planet catalog residual (~1.55M objects, ~0.023%) | [`papers/04-fsot-mpcorb-minor-planet-catalog/`](papers/04-fsot-mpcorb-minor-planet-catalog/) |
+| Prior | Formal contested cosmology; fuel lab | Desktop `arxiv-papers/01-…`, `02-…` |
+
+Math key (scientists): [`docs/FSOT_MATH_KEY.md`](docs/FSOT_MATH_KEY.md) · one-pager PDF: [`docs/FSOT_MATH_KEY_ONEPAGER.pdf`](docs/FSOT_MATH_KEY_ONEPAGER.pdf)
+
+---
 
 ## Related embodiments (same pin)
 

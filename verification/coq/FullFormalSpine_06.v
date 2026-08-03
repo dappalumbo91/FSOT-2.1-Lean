@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma fuel_lab_live_median_error_under_five_pct : (0.039349%R) < (5.0%R).
+Proof. lra. Qed.
+
+Lemma fuel_profile_count_pos : (0 < 6)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma fuel_lab_chemical_domain_positive : 0%R < (1.0%R).
 Proof. lra. Qed.
 
@@ -298,11 +304,5 @@ Lemma fic_fertile_replay_match_le_total : (572 <= 572)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
 Lemma fic_fertile_replay_match_rate_le_one : (1.0%R) <= (1.0%R).
-Proof. lra. Qed.
-
-Lemma interactive_media_prereg_scaffold_observable_count_pos : (0 < 42)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma interactive_media_prereg_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 

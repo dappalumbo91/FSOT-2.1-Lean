@@ -204,6 +204,12 @@ lemma chemical_structure_stability_panel_observable_count_pos: "0 < (32 :: nat)"
 lemma chemical_structure_stability_panel_median_error_under_half_pct: "(0.00206 :: real) < (0.5 :: real)"
   by eval
 
+lemma circuit_component_emergence_observable_count_pos: "0 < (23 :: nat)"
+  by eval
+
+lemma circuit_component_emergence_median_error_under_five_pct: "(0.051887 :: real) < (5.0 :: real)"
+  by eval
+
 lemma civil_engineering_ext_pooled_median_under_half_pct: "(0.021151317926568283 :: real) < (0.5 :: real)"
   by eval
 
@@ -295,12 +301,6 @@ lemma codon_aac_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1
   by eval
 
 lemma codon_aag_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_aag_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_aat_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
 end

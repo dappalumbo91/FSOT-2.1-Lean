@@ -3,6 +3,12 @@ theory FullFormalSpine_08
 imports Complex_Main
 begin
 
+lemma materials_species_bridge_live_panel_median_error_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
+  by eval
+
+lemma materials_species_bridge_observable_count_pos: "0 < (45 :: nat)"
+  by eval
+
 lemma materials_species_bridge_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
@@ -112,6 +118,21 @@ lemma microtubule_quantum_consciousness_panel_observable_count_pos: "0 < (63 :: 
   by eval
 
 lemma microtubule_quantum_consciousness_panel_median_error_under_half_pct: "(0.044671 :: real) < (0.5 :: real)"
+  by eval
+
+lemma mpcorb_pooled_median_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
+  by eval
+
+lemma mpcorb_object_count_pos: "0 < (1554101 :: nat)"
+  by eval
+
+lemma mpcorb_pooled_median_under_tier_aspiration: "(0.023015 :: real) < (0.05 :: real)"
+  by eval
+
+lemma mpcorb_kepler_integrity_under_ppm: "(0.000001587557 :: real) < (0.001 :: real)"
+  by eval
+
+lemma mpcorb_green_gate_pass: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma music_harmonics_public_panel_observable_count_pos: "0 < (24 :: nat)"
@@ -280,27 +301,6 @@ lemma hero_certified_fi_mean_rel_err_lt_fifteen_pct: "(0.07002728543379658 :: re
   by eval
 
 lemma hero_canonical_bridge_mean_rel_err_lt_twelve_pct: "(0.07354375821147667 :: real) < (0.12 :: real)"
-  by eval
-
-lemma hero_canonical_bridge_delta_lt_five_pct: "(0.0035164727776800936 :: real) < (0.05 :: real)"
-  by eval
-
-lemma allen_cohort_fi_pearson_r_gt_fifty_five: "(0.55 :: real) < (0.608876904981479 :: real)"
-  by eval
-
-lemma hero_certified_verifier_confidence_gt_ninety_pct: "(0.9 :: real) < (0.9598886696481669 :: real)"
-  by eval
-
-lemma neurolab_strict_empirical_records_large: "(7900 :: nat) < (7941 :: nat)"
-  by eval
-
-lemma stratum_vip_fi_median_lt_bound: "(0.4741701150886025 :: real) < (0.5 :: real)"
-  by eval
-
-lemma held_out_fi_median_rel_err_lt_thirty_pct: "(0.24625990376478163 :: real) < (0.3 :: real)"
-  by eval
-
-lemma stratum_sst_fi_median_lt_bound: "(0.6532385249479395 :: real) < (0.7 :: real)"
   by eval
 
 end

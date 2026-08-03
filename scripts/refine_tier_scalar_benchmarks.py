@@ -29,6 +29,8 @@ REBUILD_SCRIPTS = {
     "founding_white_dwarf_cooling_panel_benchmark.json": "build_founding_unmapped_laws_benchmark.py",
     "founding_cosmic_dust_panel_benchmark.json": "build_founding_unmapped_laws_benchmark.py",
     "founding_galactic_halo_rotation_panel_benchmark.json": "build_founding_unmapped_laws_benchmark.py",
+    "desktop_observer_loop_panel_benchmark.json": "build_desktop_observer_loop_benchmark.py",
+    "quantum_mechanics_entanglement_depth_panel_benchmark.json": "build_tier87_scientific_expansion_benchmarks.py",
 }
 
 CONTESTED_FILES = frozenset(

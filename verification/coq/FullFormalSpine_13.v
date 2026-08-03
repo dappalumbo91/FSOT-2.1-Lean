@@ -6,6 +6,39 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma time_emergence_deep_panel_median_error_under_half_pct : (0.024894%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma time_emergence_simulation_observable_count_pos : (0 < 28)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma time_emergence_simulation_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma toe_claim_certificate_bundle_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma toe_claim_certificate_bundle_median_error_under_half_pct : (0.0020923899350648867%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma toe_gap_closure_spine_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma toe_gap_closure_spine_median_error_under_half_pct : (0.021927861384483893%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma toe_unification_spine_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma toe_unification_spine_median_error_under_half_pct : (0.01900826880249791%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma tokenization_live_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma tokenization_live_panel_median_error_under_half_pct : (0.022236%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma tokenization_smoke_observable_count_pos : (0 < 9)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -271,38 +304,5 @@ Lemma weather_S_min_positive : 0 < (0.364542%R).
 Proof. lra. Qed.
 
 Lemma weather_hour_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma world_bank_development_observable_count_pos : (0 < 420)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma world_bank_development_median_error_under_five_pct : (0.02584%R) < (5.0%R).
-Proof. lra. Qed.
-
-Lemma xr_interactive_media_math_scaffold_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma xr_interactive_media_math_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma z120_z126_beam_synthesis_panel_observable_count_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma z120_z126_beam_synthesis_panel_median_error_under_half_pct : (0.000095%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma z164_distant_island_prereg_scaffold_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma z164_distant_island_prereg_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma zebrafish_cell_tracking_panel_observable_count_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma zebrafish_cell_tracking_panel_median_error_under_half_pct : (0.022236%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma zebrafish_developmental_mechanics_panel_observable_count_pos : (0 < 31)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

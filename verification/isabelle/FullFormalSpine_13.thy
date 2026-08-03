@@ -3,6 +3,39 @@ theory FullFormalSpine_13
 imports Complex_Main
 begin
 
+lemma time_emergence_deep_panel_median_error_under_half_pct: "(0.024894 :: real) < (0.5 :: real)"
+  by eval
+
+lemma time_emergence_simulation_observable_count_pos: "0 < (28 :: nat)"
+  by eval
+
+lemma time_emergence_simulation_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma toe_claim_certificate_bundle_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma toe_claim_certificate_bundle_median_error_under_half_pct: "(0.0020923899350648867 :: real) < (0.5 :: real)"
+  by eval
+
+lemma toe_gap_closure_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma toe_gap_closure_spine_median_error_under_half_pct: "(0.021927861384483893 :: real) < (0.5 :: real)"
+  by eval
+
+lemma toe_unification_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma toe_unification_spine_median_error_under_half_pct: "(0.01900826880249791 :: real) < (0.5 :: real)"
+  by eval
+
+lemma tokenization_live_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma tokenization_live_panel_median_error_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
 lemma tokenization_smoke_observable_count_pos: "0 < (9 :: nat)"
   by eval
 
@@ -268,39 +301,6 @@ lemma weather_S_min_positive: "0 < (0.364542 :: real)"
   by eval
 
 lemma weather_hour_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma world_bank_development_observable_count_pos: "0 < (420 :: nat)"
-  by eval
-
-lemma world_bank_development_median_error_under_five_pct: "(0.02584 :: real) < (5.0 :: real)"
-  by eval
-
-lemma xr_interactive_media_math_scaffold_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma xr_interactive_media_math_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma z120_z126_beam_synthesis_panel_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma z120_z126_beam_synthesis_panel_median_error_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
-  by eval
-
-lemma z164_distant_island_prereg_scaffold_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma z164_distant_island_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma zebrafish_cell_tracking_panel_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma zebrafish_cell_tracking_panel_median_error_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma zebrafish_developmental_mechanics_panel_observable_count_pos: "0 < (31 :: nat)"
   by eval
 
 end

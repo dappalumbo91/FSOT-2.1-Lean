@@ -3,6 +3,12 @@ theory FullFormalSpine_04
 imports Complex_Main
 begin
 
+lemma cryptography_technology_observable_count_pos: "0 < (44 :: nat)"
+  by eval
+
+lemma cryptography_technology_median_error_under_half_pct: "(0.047520672006218234 :: real) < (0.5 :: real)"
+  by eval
+
 lemma culinary_arts_observable_count_pos: "0 < (26 :: nat)"
   by eval
 
@@ -295,12 +301,6 @@ lemma epidemiology_ext_headline_median_under_half_pct: "(0.039895 :: real) < (0.
   by eval
 
 lemma epidemiology_ext_observable_count_pos: "0 < (220 :: nat)"
-  by eval
-
-lemma epidemiology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma epidemiology_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
 end
