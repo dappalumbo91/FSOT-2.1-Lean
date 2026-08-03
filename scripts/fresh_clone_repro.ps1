@@ -72,8 +72,11 @@ s = load("data/tier_scalar_precision_closure.json") or {}
 c = load("data/cross_proof_verification_report.json") or {}
 e = t.get("evaluation") or {}
 
-fail = int(m.get("green_gate_fail_count") or -1)
-n = int(m.get("benchmark_file_count") or 0)
+# Note: fail_count can be 0 — do not use `or -1` (0 is falsy in Python).
+_raw_fail = m.get("green_gate_fail_count")
+fail = int(_raw_fail) if _raw_fail is not None else -1
+_raw_n = m.get("benchmark_file_count")
+n = int(_raw_n) if _raw_n is not None else 0
 label_a = bool(e.get("label_A_empirical_framework"))
 label_b = bool(e.get("label_B_classical_toe"))
 tier_ok = bool(s.get("closed")) if s else False
