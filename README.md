@@ -32,21 +32,18 @@ Cosmology and the neural mind are **domain folds of one** scalar engine (pin D1D
 | **Founding narrative (pre-verification voice)** | [docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md](docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md) |
 | **Philosophy / consciousness spine** | [docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) |
 
-### Founding voice (concepts — not early math)
+### How to understand the viewpoint (plain language)
 
-FSOT began as **FSUFT-U** (Fluid Spacetime Unification Field Theory). The founding book **FSUFT-U 6.0** is a full narrative of a **quantum fluid cosmos**: spacetime as a dynamical medium with tension, viscosity, and scale depth; anomalies (Hubble, \(S_8\), soft cores) as invitations; forces as fluid modes; life and consciousness as energy and resonance *in the same fabric* — not optional philosophy bolted on after particle physics.
-
-That *story* is rebuilt against the verified 2.1 stack here (personal material omitted):
+FSOT says the universe is **one fluid spacetime medium** — not a rigid empty stage with unrelated theories stacked on top. Forces, structure, life processes, and observation are different **scales and couplings of the same medium**. That idea is written for humans here:
 
 | Document | Role |
 |----------|------|
-| **[docs/FSOT_NARRATIVE_CORE.md](docs/FSOT_NARRATIVE_CORE.md)** | **Full rebuilt narrative** (FSUFT-U 6.0 chapter map → FSOT 2.1) |
-| [docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md](docs/FOUNDING_NARRATIVE_FROM_FSUFT_AASB.md) | Archive folder map + lineage labels |
-| [docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) | Ontology / consciousness operational claims |
-| [docs/CLEAR_PATH_FOR_INDEPENDENTS.md](docs/CLEAR_PATH_FOR_INDEPENDENTS.md) | Step ladder for strangers |
+| **[docs/FSOT_NARRATIVE_CORE.md](docs/FSOT_NARRATIVE_CORE.md)** | **Main narrative** — viewpoint, everyday explanation, and how it holds up against **data** and **proof** |
+| [docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) | Ontology and operational consciousness claims |
+| [docs/CLEAR_PATH_FOR_INDEPENDENTS.md](docs/CLEAR_PATH_FOR_INDEPENDENTS.md) | Step ladder for first-time readers |
 | [docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md](docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md) | What “accuracy” is allowed to mean |
 
-**Early essays and draft residuals are not the numeric authority.** The kill command above is. Offline founding PDFs live under `I:\fsuft aasb\` (historical).
+**The kill command above is the authority for numbers.** The narrative explains *why* the model is shaped this way; it does not replace the green gate or the multi-prover reports.
 
 ## Abstract
 
