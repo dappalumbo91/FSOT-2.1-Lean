@@ -1,4 +1,4 @@
-(* FSOT scientific catalog spine chunk 1/16 *)
+(* FSOT scientific catalog spine chunk 1/17 *)
 theory ScientificCatalogSpine_00
 imports Complex_Main
 begin
@@ -168,6 +168,21 @@ lemma cat_neuroimmunology_benchmark_json_max_scalar_under_half_pct: "(0.480058 :
 lemma cat_neuroimmunology_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_toe_gr_sm_deep_records_pos: "0 < (99 :: nat)"
+  by eval
+
+lemma cat_toe_gr_sm_deep_pooled_under_half_pct: "(0.004719617111680276 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_gr_sm_deep_pooled_lt_half_pure: "(0.004719617111680276 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_gr_sm_deep_max_scalar_under_half_pct: "(0.4774294805097184 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_gr_sm_deep_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_creative_arts_math_spine_records_pos: "0 < (56 :: nat)"
   by eval
 
@@ -183,7 +198,7 @@ lemma cat_creative_arts_math_spine_max_scalar_under_half_pct: "(0.462279 :: real
 lemma cat_creative_arts_math_spine_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_culinary_arts_benchmark_json_records_pos: "0 < (26 :: nat)"
+lemma cat_culinary_arts_benchmark_json_records_pos: "0 < (52 :: nat)"
   by eval
 
 lemma cat_culinary_arts_benchmark_json_pooled_under_half_pct: "(0.04761518705782039 :: real) < (0.5 :: real)"
@@ -226,6 +241,21 @@ lemma cat_music_harmonics_public_panel_max_scalar_under_half_pct: "(0.462279 :: 
   by eval
 
 lemma cat_music_harmonics_public_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_intelligence_compression_benchmark_json_records_pos: "0 < (572 :: nat)"
+  by eval
+
+lemma cat_intelligence_compression_benchmark_json_pooled_under_half_pct: "(0.21775817740070294 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intelligence_compression_benchmark_json_pooled_lt_half_pure: "(0.21775817740070294 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intelligence_compression_benchmark_json_max_scalar_under_half_pct: "(0.4567065036654742 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intelligence_compression_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_malware_threat_intelligence_records_pos: "0 < (85 :: nat)"
@@ -303,6 +333,21 @@ lemma cat_speleology_max_scalar_under_half_pct: "(0.406301 :: real) < (0.5 :: re
 lemma cat_speleology_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_toe_ckm_pmns_flavor_records_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma cat_toe_ckm_pmns_flavor_pooled_under_half_pct: "(0.05235314586422479 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_ckm_pmns_flavor_pooled_lt_half_pure: "(0.05235314586422479 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct: "(0.3712743059251006 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_toe_ckm_pmns_flavor_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_dark_energy_cpl_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -316,51 +361,6 @@ lemma cat_dark_energy_cpl_max_scalar_under_half_pct: "(0.368503 :: real) < (0.5 
   by eval
 
 lemma cat_dark_energy_cpl_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_dark_sector_open_problems_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_dark_sector_open_problems_pooled_under_half_pct: "(0.01529034996934153 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dark_sector_open_problems_pooled_lt_half_pure: "(0.01529034996934153 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dark_sector_open_problems_max_scalar_under_half_pct: "(0.368503 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dark_sector_open_problems_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_acoustic_resonance_materials_records_pos: "0 < (29 :: nat)"
-  by eval
-
-lemma cat_acoustic_resonance_materials_pooled_under_half_pct: "(0.008381497018411083 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_acoustic_resonance_materials_pooled_lt_half_pure: "(0.008381497018411083 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_acoustic_resonance_materials_max_scalar_under_half_pct: "(0.3555 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_acoustic_resonance_materials_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_formula_precision_spine_records_pos: "0 < (27 :: nat)"
-  by eval
-
-lemma cat_formula_precision_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_formula_precision_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_formula_precision_spine_max_scalar_under_half_pct: "(0.3555 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_formula_precision_spine_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

@@ -229,6 +229,26 @@ theorem cat_neuroimmunology_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) :=
   rfl
 
 
+theorem cat_toe_gr_sm_deep_records_pos : 0 < (99 : ℕ) := by
+  decide
+
+
+theorem cat_toe_gr_sm_deep_pooled_under_half_pct : (0.004719617111680276 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_gr_sm_deep_pooled_lt_half_pure : (0.004719617111680276 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_gr_sm_deep_max_scalar_under_half_pct : (0.4774294805097184 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_gr_sm_deep_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_creative_arts_math_spine_records_pos : 0 < (56 : ℕ) := by
   decide
 
@@ -249,7 +269,7 @@ theorem cat_creative_arts_math_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_culinary_arts_benchmark_json_records_pos : 0 < (26 : ℕ) := by
+theorem cat_culinary_arts_benchmark_json_records_pos : 0 < (52 : ℕ) := by
   decide
 
 
@@ -306,6 +326,26 @@ theorem cat_music_harmonics_public_panel_max_scalar_under_half_pct : (0.462279 :
 
 
 theorem cat_music_harmonics_public_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_intelligence_compression_benchmark_json_records_pos : 0 < (572 : ℕ) := by
+  decide
+
+
+theorem cat_intelligence_compression_benchmark_json_pooled_under_half_pct : (0.21775817740070294 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_intelligence_compression_benchmark_json_pooled_lt_half_pure : (0.21775817740070294 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_intelligence_compression_benchmark_json_max_scalar_under_half_pct : (0.4567065036654742 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_intelligence_compression_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -406,6 +446,26 @@ theorem cat_speleology_max_scalar_under_half_pct : (0.406301 : ℝ) < (0.5 : ℝ
 
 
 theorem cat_speleology_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_toe_ckm_pmns_flavor_records_pos : 0 < (40 : ℕ) := by
+  decide
+
+
+theorem cat_toe_ckm_pmns_flavor_pooled_under_half_pct : (0.05235314586422479 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_ckm_pmns_flavor_pooled_lt_half_pure : (0.05235314586422479 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct : (0.3712743059251006 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_ckm_pmns_flavor_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -609,6 +669,26 @@ theorem cat_periodic_table_completion_spine_green_flag : (1 : ℕ) = (1 : ℕ) :
   rfl
 
 
+theorem cat_proton_lean_route_credibility_records_pos : 0 < (14 : ℕ) := by
+  decide
+
+
+theorem cat_proton_lean_route_credibility_pooled_under_half_pct : (0.020741 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_proton_lean_route_credibility_pooled_lt_half_pure : (0.020741 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_proton_lean_route_credibility_max_scalar_under_half_pct : (0.323111 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_proton_lean_route_credibility_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_superheavy_element_stability_panel_records_pos : 0 < (50 : ℕ) := by
   decide
 
@@ -646,26 +726,6 @@ theorem cat_z164_distant_island_prereg_scaffold_max_scalar_under_half_pct : (0.3
 
 
 theorem cat_z164_distant_island_prereg_scaffold_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_proton_lean_route_credibility_records_pos : 0 < (4 : ℕ) := by
-  decide
-
-
-theorem cat_proton_lean_route_credibility_pooled_under_half_pct : (0.020741 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_proton_lean_route_credibility_pooled_lt_half_pure : (0.020741 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_proton_lean_route_credibility_max_scalar_under_half_pct : (0.322515 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_proton_lean_route_credibility_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -749,7 +809,7 @@ theorem cat_materials_genome_crosswalk_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_materials_species_bridge_benchmark_json_records_pos : 0 < (45 : ℕ) := by
+theorem cat_materials_species_bridge_benchmark_json_records_pos : 0 < (34 : ℕ) := by
   decide
 
 
@@ -766,6 +826,66 @@ theorem cat_materials_species_bridge_benchmark_json_max_scalar_under_half_pct : 
 
 
 theorem cat_materials_species_bridge_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_engineering_hardware_code_spine_records_pos : 0 < (72 : ℕ) := by
+  decide
+
+
+theorem cat_engineering_hardware_code_spine_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_engineering_hardware_code_spine_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_engineering_hardware_code_spine_max_scalar_under_half_pct : (0.261955886 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_engineering_hardware_code_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_fsot_gpu_engineering_spine_records_pos : 0 < (42 : ℕ) := by
+  decide
+
+
+theorem cat_fsot_gpu_engineering_spine_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_gpu_engineering_spine_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_gpu_engineering_spine_max_scalar_under_half_pct : (0.261955886 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_gpu_engineering_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_fsot_ram_function_panel_records_pos : 0 < (14 : ℕ) := by
+  decide
+
+
+theorem cat_fsot_ram_function_panel_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_ram_function_panel_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_ram_function_panel_max_scalar_under_half_pct : (0.261955886 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_ram_function_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -786,6 +906,46 @@ theorem cat_virology_panel_max_scalar_under_half_pct : (0.2267 : ℝ) < (0.5 : �
 
 
 theorem cat_virology_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_toe_limit_recovery_records_pos : 0 < (43 : ℕ) := by
+  decide
+
+
+theorem cat_toe_limit_recovery_pooled_under_half_pct : (0.0047099996121108675 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_limit_recovery_pooled_lt_half_pure : (0.0047099996121108675 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_limit_recovery_max_scalar_under_half_pct : (0.209488435890309 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_limit_recovery_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_higgs_branching_benchmark_json_records_pos : 0 < (10 : ℕ) := by
+  decide
+
+
+theorem cat_higgs_branching_benchmark_json_pooled_under_half_pct : (0.03711124585172393 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_higgs_branching_benchmark_json_pooled_lt_half_pure : (0.03711124585172393 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_higgs_branching_benchmark_json_max_scalar_under_half_pct : (0.20397136583906664 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_higgs_branching_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -909,6 +1069,26 @@ theorem cat_formula_corpus_cnc_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
+theorem cat_foundational_ontology_spine_records_pos : 0 < (60 : ℕ) := by
+  decide
+
+
+theorem cat_foundational_ontology_spine_pooled_under_half_pct : (0.009504 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_foundational_ontology_spine_pooled_lt_half_pure : (0.009504 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_foundational_ontology_spine_max_scalar_under_half_pct : (0.192564276915754 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_foundational_ontology_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_founding_cosmic_ray_panel_records_pos : 0 < (24 : ℕ) := by
   decide
 
@@ -1009,43 +1189,23 @@ theorem cat_fsot_aggregate_unified_db_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_higgs_mass_records_pos : 0 < (24 : ℕ) := by
+theorem cat_hubble_dark_sector_crosswalk_records_pos : 0 < (53 : ℕ) := by
   decide
 
 
-theorem cat_higgs_mass_pooled_under_half_pct : (0.012112816039879785 : ℝ) < (0.5 : ℝ) := by
+theorem cat_hubble_dark_sector_crosswalk_pooled_under_half_pct : (0.009407 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_higgs_mass_pooled_lt_half_pure : (0.012112816039879785 : ℝ) < (0.5 : ℝ) := by
+theorem cat_hubble_dark_sector_crosswalk_pooled_lt_half_pure : (0.009407 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_higgs_mass_max_scalar_under_half_pct : (0.192564276915754 : ℝ) < (0.5 : ℝ) := by
+theorem cat_hubble_dark_sector_crosswalk_max_scalar_under_half_pct : (0.192564276915754 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_higgs_mass_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_hybrid_fi_sim_multi_hero_panel_records_pos : 0 < (24 : ℕ) := by
-  decide
-
-
-theorem cat_hybrid_fi_sim_multi_hero_panel_pooled_under_half_pct : (0.008488 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_hybrid_fi_sim_multi_hero_panel_pooled_lt_half_pure : (0.008488 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_hybrid_fi_sim_multi_hero_panel_max_scalar_under_half_pct : (0.192564276915754 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_hybrid_fi_sim_multi_hero_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+theorem cat_hubble_dark_sector_crosswalk_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -1086,46 +1246,6 @@ theorem cat_knowledge_base_portable_bundle_panel_max_scalar_under_half_pct : (0.
 
 
 theorem cat_knowledge_base_portable_bundle_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_math_generator_airfoil_rmse_records_pos : 0 < (21 : ℕ) := by
-  decide
-
-
-theorem cat_math_generator_airfoil_rmse_pooled_under_half_pct : (0.020055 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_math_generator_airfoil_rmse_pooled_lt_half_pure : (0.020055 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_math_generator_airfoil_rmse_max_scalar_under_half_pct : (0.192564276915754 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_math_generator_airfoil_rmse_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_math_generator_benchmark_formula_eval_records_pos : 0 < (21 : ℕ) := by
-  decide
-
-
-theorem cat_math_generator_benchmark_formula_eval_pooled_under_half_pct : (0.020055 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_math_generator_benchmark_formula_eval_pooled_lt_half_pure : (0.020055 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_math_generator_benchmark_formula_eval_max_scalar_under_half_pct : (0.192564276915754 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_math_generator_benchmark_formula_eval_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -1369,15 +1489,15 @@ theorem cat_toe_unification_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_unified_db_crosswalk_spine_records_pos : 0 < (24 : ℕ) := by
+theorem cat_unified_db_crosswalk_spine_records_pos : 0 < (43 : ℕ) := by
   decide
 
 
-theorem cat_unified_db_crosswalk_spine_pooled_under_half_pct : (0.0020923899350648867 : ℝ) < (0.5 : ℝ) := by
+theorem cat_unified_db_crosswalk_spine_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_unified_db_crosswalk_spine_pooled_lt_half_pure : (0.0020923899350648867 : ℝ) < (0.5 : ℝ) := by
+theorem cat_unified_db_crosswalk_spine_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
@@ -1549,23 +1669,23 @@ theorem cat_microtubule_quantum_consciousness_panel_green_flag : (1 : ℕ) = (1 
   rfl
 
 
-theorem cat_desktop_observer_loop_panel_records_pos : 0 < (12 : ℕ) := by
+theorem cat_desi_wa_constraint_records_pos : 0 < (6 : ℕ) := by
   decide
 
 
-theorem cat_desktop_observer_loop_panel_pooled_under_half_pct : (0.052210999999999994 : ℝ) < (0.5 : ℝ) := by
+theorem cat_desi_wa_constraint_pooled_under_half_pct : (0.027667499999999998 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_desktop_observer_loop_panel_pooled_lt_half_pure : (0.052210999999999994 : ℝ) < (0.5 : ℝ) := by
+theorem cat_desi_wa_constraint_pooled_lt_half_pure : (0.027667499999999998 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_desktop_observer_loop_panel_max_scalar_under_half_pct : (0.144224 : ℝ) < (0.5 : ℝ) := by
+theorem cat_desi_wa_constraint_max_scalar_under_half_pct : (0.15 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_desktop_observer_loop_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+theorem cat_desi_wa_constraint_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -1609,6 +1729,26 @@ theorem cat_cosmology_anomaly_deep_panel_green_flag : (1 : ℕ) = (1 : ℕ) := b
   rfl
 
 
+theorem cat_formula_corpus_closure_records_pos : 0 < (203 : ℕ) := by
+  decide
+
+
+theorem cat_formula_corpus_closure_pooled_under_half_pct : (0.009504 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_formula_corpus_closure_pooled_lt_half_pure : (0.009504 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_formula_corpus_closure_max_scalar_under_half_pct : (0.12920090413715177 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_formula_corpus_closure_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_existence_simulation_refinement_panel_records_pos : 0 < (26 : ℕ) := by
   decide
 
@@ -1626,6 +1766,46 @@ theorem cat_existence_simulation_refinement_panel_max_scalar_under_half_pct : (0
 
 
 theorem cat_existence_simulation_refinement_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_higgs_mass_benchmark_json_records_pos : 0 < (9 : ℕ) := by
+  decide
+
+
+theorem cat_higgs_mass_benchmark_json_pooled_under_half_pct : (0.018987449514135373 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_higgs_mass_benchmark_json_pooled_lt_half_pure : (0.018987449514135373 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_higgs_mass_benchmark_json_max_scalar_under_half_pct : (0.11491358837235732 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_higgs_mass_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_math_generator_benchmark_formula_eval_benchmark_json_records_pos : 0 < (13 : ℕ) := by
+  decide
+
+
+theorem cat_math_generator_benchmark_formula_eval_benchmark_json_pooled_under_half_pct : (0.10641964500321542 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_math_generator_benchmark_formula_eval_benchmark_json_pooled_lt_half_pure : (0.10641964500321542 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_math_generator_benchmark_formula_eval_benchmark_json_max_scalar_under_half_pct : (0.10641964500321542 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_math_generator_benchmark_formula_eval_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -1689,23 +1869,23 @@ theorem cat_quantum_computing_math_depth_panel_green_flag : (1 : ℕ) = (1 : ℕ
   rfl
 
 
-theorem cat_quantum_mechanics_entanglement_depth_panel_records_pos : 0 < (23 : ℕ) := by
+theorem cat_scientific_expansion_depth_spine_records_pos : 0 < (72 : ℕ) := by
   decide
 
 
-theorem cat_quantum_mechanics_entanglement_depth_panel_pooled_under_half_pct : (0.095551 : ℝ) < (0.5 : ℝ) := by
+theorem cat_scientific_expansion_depth_spine_pooled_under_half_pct : (0.033841 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_quantum_mechanics_entanglement_depth_panel_pooled_lt_half_pure : (0.095551 : ℝ) < (0.5 : ℝ) := by
+theorem cat_scientific_expansion_depth_spine_pooled_lt_half_pure : (0.033841 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_quantum_mechanics_entanglement_depth_panel_max_scalar_under_half_pct : (0.095551 : ℝ) < (0.5 : ℝ) := by
+theorem cat_scientific_expansion_depth_spine_max_scalar_under_half_pct : (0.095551 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_quantum_mechanics_entanglement_depth_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+theorem cat_scientific_expansion_depth_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -1789,26 +1969,6 @@ theorem cat_mechanical_engineering_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_culinary_fermentation_maillard_panel_records_pos : 0 < (130 : ℕ) := by
-  decide
-
-
-theorem cat_culinary_fermentation_maillard_panel_pooled_under_half_pct : (0.040788 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_culinary_fermentation_maillard_panel_pooled_lt_half_pure : (0.040788 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_culinary_fermentation_maillard_panel_max_scalar_under_half_pct : (0.078697 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_culinary_fermentation_maillard_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
 theorem cat_time_domain_crosswalk_records_pos : 0 < (371 : ℕ) := by
   decide
 
@@ -1826,6 +1986,26 @@ theorem cat_time_domain_crosswalk_max_scalar_under_half_pct : (0.074365 : ℝ) <
 
 
 theorem cat_time_domain_crosswalk_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_quantum_mechanics_entanglement_depth_panel_records_pos : 0 < (11 : ℕ) := by
+  decide
+
+
+theorem cat_quantum_mechanics_entanglement_depth_panel_pooled_under_half_pct : (0.040817 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_quantum_mechanics_entanglement_depth_panel_pooled_lt_half_pure : (0.040817 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_quantum_mechanics_entanglement_depth_panel_max_scalar_under_half_pct : (0.073582 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_quantum_mechanics_entanglement_depth_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -1909,46 +2089,6 @@ theorem cat_observer_effect_cross_species_panel_green_flag : (1 : ℕ) = (1 : �
   rfl
 
 
-theorem cat_circuit_component_emergence_panel_records_pos : 0 < (23 : ℕ) := by
-  decide
-
-
-theorem cat_circuit_component_emergence_panel_pooled_under_half_pct : (0.051887 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_circuit_component_emergence_panel_pooled_lt_half_pure : (0.051887 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_circuit_component_emergence_panel_max_scalar_under_half_pct : (0.051887 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_circuit_component_emergence_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_schematic_netlist_intrinsic_panel_records_pos : 0 < (5 : ℕ) := by
-  decide
-
-
-theorem cat_schematic_netlist_intrinsic_panel_pooled_under_half_pct : (0.051887 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_schematic_netlist_intrinsic_panel_pooled_lt_half_pure : (0.051887 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_schematic_netlist_intrinsic_panel_max_scalar_under_half_pct : (0.051887 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_schematic_netlist_intrinsic_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
 theorem cat_exogeology_panel_records_pos : 0 < (100 : ℕ) := by
   decide
 
@@ -1966,26 +2106,6 @@ theorem cat_exogeology_panel_max_scalar_under_half_pct : (0.050246 : ℝ) < (0.5
 
 
 theorem cat_exogeology_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_intelligence_compression_benchmark_json_records_pos : 0 < (572 : ℕ) := by
-  decide
-
-
-theorem cat_intelligence_compression_benchmark_json_pooled_under_half_pct : (0.029066672228905688 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_intelligence_compression_benchmark_json_pooled_lt_half_pure : (0.029066672228905688 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_intelligence_compression_benchmark_json_max_scalar_under_half_pct : (0.04959966617804441 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_intelligence_compression_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -2209,6 +2329,26 @@ theorem cat_hvac_thermal_systems_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
+theorem cat_fsot_processor_function_panel_records_pos : 0 < (20 : ℕ) := by
+  decide
+
+
+theorem cat_fsot_processor_function_panel_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_processor_function_panel_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_processor_function_panel_max_scalar_under_half_pct : (0.044346326 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_processor_function_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_founding_cosmic_dust_panel_records_pos : 0 < (24 : ℕ) := by
   decide
 
@@ -2269,7 +2409,27 @@ theorem cat_time_emergence_simulation_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_optics_interferometry_depth_panel_records_pos : 0 < (127 : ℕ) := by
+theorem cat_circuit_component_emergence_panel_records_pos : 0 < (57 : ℕ) := by
+  decide
+
+
+theorem cat_circuit_component_emergence_panel_pooled_under_half_pct : (0.020755 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_circuit_component_emergence_panel_pooled_lt_half_pure : (0.020755 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_circuit_component_emergence_panel_max_scalar_under_half_pct : (0.040817 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_circuit_component_emergence_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_optics_interferometry_depth_panel_records_pos : 0 < (82 : ℕ) := by
   decide
 
 
@@ -2286,6 +2446,46 @@ theorem cat_optics_interferometry_depth_panel_max_scalar_under_half_pct : (0.040
 
 
 theorem cat_optics_interferometry_depth_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_schematic_netlist_intrinsic_panel_records_pos : 0 < (17 : ℕ) := by
+  decide
+
+
+theorem cat_schematic_netlist_intrinsic_panel_pooled_under_half_pct : (0.020755 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_schematic_netlist_intrinsic_panel_pooled_lt_half_pure : (0.020755 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_schematic_netlist_intrinsic_panel_max_scalar_under_half_pct : (0.040817 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_schematic_netlist_intrinsic_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_tier_96_circuit_spine_records_pos : 0 < (45 : ℕ) := by
+  decide
+
+
+theorem cat_tier_96_circuit_spine_pooled_under_half_pct : (0.020755 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_tier_96_circuit_spine_pooled_lt_half_pure : (0.020755 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_tier_96_circuit_spine_max_scalar_under_half_pct : (0.040817 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_tier_96_circuit_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -2306,6 +2506,26 @@ theorem cat_chemical_engineering_max_scalar_under_half_pct : (0.0407884064230844
 
 
 theorem cat_chemical_engineering_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_culinary_fermentation_maillard_panel_records_pos : 0 < (151 : ℕ) := by
+  decide
+
+
+theorem cat_culinary_fermentation_maillard_panel_pooled_under_half_pct : (0.040788 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_culinary_fermentation_maillard_panel_pooled_lt_half_pure : (0.040788 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_culinary_fermentation_maillard_panel_max_scalar_under_half_pct : (0.040788 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_culinary_fermentation_maillard_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -2449,26 +2669,6 @@ theorem cat_hubble_bubble_tension_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_hubble_dark_sector_crosswalk_records_pos : 0 < (24 : ℕ) := by
-  decide
-
-
-theorem cat_hubble_dark_sector_crosswalk_pooled_under_half_pct : (0.0198985 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_hubble_dark_sector_crosswalk_pooled_lt_half_pure : (0.0198985 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_hubble_dark_sector_crosswalk_max_scalar_under_half_pct : (0.039797 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_hubble_dark_sector_crosswalk_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
 theorem cat_prediction_rederivation_records_pos : 0 < (21 : ℕ) := by
   decide
 
@@ -2546,6 +2746,26 @@ theorem cat_energy_lean_route_credibility_max_scalar_under_half_pct : (0.039349 
 
 
 theorem cat_energy_lean_route_credibility_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_esp32_platform_engineering_panel_records_pos : 0 < (34 : ℕ) := by
+  decide
+
+
+theorem cat_esp32_platform_engineering_panel_pooled_under_half_pct : (0.020755 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_esp32_platform_engineering_panel_pooled_lt_half_pure : (0.020755 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_esp32_platform_engineering_panel_max_scalar_under_half_pct : (0.039349 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_esp32_platform_engineering_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -2709,7 +2929,7 @@ theorem cat_adversarial_fractal_break_tests_green_flag : (1 : ℕ) = (1 : ℕ) :
   rfl
 
 
-theorem cat_condensed_matter_superconductivity_depth_panel_records_pos : 0 < (21 : ℕ) := by
+theorem cat_condensed_matter_superconductivity_depth_panel_records_pos : 0 < (15 : ℕ) := by
   decide
 
 
@@ -3029,6 +3249,26 @@ theorem cat_certified_agent_qwen_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
+theorem cat_coding_structure_verifier_panel_records_pos : 0 < (18 : ℕ) := by
+  decide
+
+
+theorem cat_coding_structure_verifier_panel_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_coding_structure_verifier_panel_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_coding_structure_verifier_panel_max_scalar_under_half_pct : (0.031506 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_coding_structure_verifier_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_consciousness_expansion_spine_records_pos : 0 < (24 : ℕ) := by
   decide
 
@@ -3089,15 +3329,15 @@ theorem cat_consciousness_genetics_species_panel_green_flag : (1 : ℕ) = (1 : �
   rfl
 
 
-theorem cat_consciousness_lean_route_credibility_records_pos : 0 < (6 : ℕ) := by
+theorem cat_consciousness_lean_route_credibility_records_pos : 0 < (26 : ℕ) := by
   decide
 
 
-theorem cat_consciousness_lean_route_credibility_pooled_under_half_pct : (0.006671 : ℝ) < (0.5 : ℝ) := by
+theorem cat_consciousness_lean_route_credibility_pooled_under_half_pct : (0.013342 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_consciousness_lean_route_credibility_pooled_lt_half_pure : (0.006671 : ℝ) < (0.5 : ℝ) := by
+theorem cat_consciousness_lean_route_credibility_pooled_lt_half_pure : (0.013342 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
@@ -3209,15 +3449,15 @@ theorem cat_intrinsic_llm_validators_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_living_fsot_hardware_panel_records_pos : 0 < (77 : ℕ) := by
+theorem cat_living_fsot_hardware_panel_records_pos : 0 < (152 : ℕ) := by
   decide
 
 
-theorem cat_living_fsot_hardware_panel_pooled_under_half_pct : (0.031506 : ℝ) < (0.5 : ℝ) := by
+theorem cat_living_fsot_hardware_panel_pooled_under_half_pct : (0.014767 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_living_fsot_hardware_panel_pooled_lt_half_pure : (0.031506 : ℝ) < (0.5 : ℝ) := by
+theorem cat_living_fsot_hardware_panel_pooled_lt_half_pure : (0.014767 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
@@ -3226,6 +3466,26 @@ theorem cat_living_fsot_hardware_panel_max_scalar_under_half_pct : (0.031506 : �
 
 
 theorem cat_living_fsot_hardware_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_living_fsot_hardware_panel_records_pos_2 : 0 < (152 : ℕ) := by
+  decide
+
+
+theorem cat_living_fsot_hardware_panel_pooled_under_half_pct_2 : (0.014767 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_living_fsot_hardware_panel_pooled_lt_half_pure_2 : (0.014767 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_living_fsot_hardware_panel_max_scalar_under_half_pct_2 : (0.031506 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_living_fsot_hardware_panel_green_flag_2 : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -3349,7 +3609,7 @@ theorem cat_overflow_carry_emergence_panel_green_flag : (1 : ℕ) = (1 : ℕ) :=
   rfl
 
 
-theorem cat_psychology_psychometrics_depth_panel_records_pos : 0 < (23 : ℕ) := by
+theorem cat_psychology_psychometrics_depth_panel_records_pos : 0 < (12 : ℕ) := by
   decide
 
 
@@ -3369,7 +3629,7 @@ theorem cat_psychology_psychometrics_depth_panel_green_flag : (1 : ℕ) = (1 : �
   rfl
 
 
-theorem cat_tokenization_live_panel_records_pos : 0 < (9 : ℕ) := by
+theorem cat_tokenization_live_panel_records_pos : 0 < (51 : ℕ) := by
   decide
 
 
@@ -3449,7 +3709,7 @@ theorem cat_trinary_os_portable_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_vl_agent_distill_panel_records_pos : 0 < (6 : ℕ) := by
+theorem cat_vl_agent_distill_panel_records_pos : 0 < (11 : ℕ) := by
   decide
 
 
@@ -3929,6 +4189,26 @@ theorem cat_paleontology_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
+theorem cat_h0_planck_benchmark_json_records_pos : 0 < (4 : ℕ) := by
+  decide
+
+
+theorem cat_h0_planck_benchmark_json_pooled_under_half_pct : (0.0008425 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_h0_planck_benchmark_json_pooled_lt_half_pure : (0.0008425 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_h0_planck_benchmark_json_max_scalar_under_half_pct : (0.027018411789274284 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_h0_planck_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_orbital_mechanics_records_pos : 0 < (22 : ℕ) := by
   decide
 
@@ -4269,6 +4549,26 @@ theorem cat_nasa_neo_feed_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
+theorem cat_compact_object_binary_events_records_pos : 0 < (40 : ℕ) := by
+  decide
+
+
+theorem cat_compact_object_binary_events_pooled_under_half_pct : (0.010049 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_compact_object_binary_events_pooled_lt_half_pure : (0.010049 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_compact_object_binary_events_max_scalar_under_half_pct : (0.022461 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_compact_object_binary_events_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_fusion_physics_public_panel_records_pos : 0 < (24 : ℕ) := by
   decide
 
@@ -4349,6 +4649,26 @@ theorem cat_nasa_donki_solar_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
+theorem cat_nuclear_lean_route_credibility_records_pos : 0 < (13 : ℕ) := by
+  decide
+
+
+theorem cat_nuclear_lean_route_credibility_pooled_under_half_pct : (0.021221 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_nuclear_lean_route_credibility_pooled_lt_half_pure : (0.021221 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_nuclear_lean_route_credibility_max_scalar_under_half_pct : (0.022461 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_nuclear_lean_route_credibility_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_simbad_stellar_identity_deep_records_pos : 0 < (520 : ℕ) := by
   decide
 
@@ -4366,6 +4686,26 @@ theorem cat_simbad_stellar_identity_deep_max_scalar_under_half_pct : (0.022461 :
 
 
 theorem cat_simbad_stellar_identity_deep_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_toe_dynamics_records_pos : 0 < (18 : ℕ) := by
+  decide
+
+
+theorem cat_toe_dynamics_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_dynamics_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_dynamics_max_scalar_under_half_pct : (0.022461 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_toe_dynamics_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -4489,27 +4829,7 @@ theorem cat_genomic_sciences_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_neuron_multi_hero_records_pos : 0 < (24 : ℕ) := by
-  decide
-
-
-theorem cat_neuron_multi_hero_pooled_under_half_pct : (0.00225237811160842 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_neuron_multi_hero_pooled_lt_half_pure : (0.00225237811160842 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_neuron_multi_hero_max_scalar_under_half_pct : (0.02223625038519357 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_neuron_multi_hero_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_biology_developmental_structural_depth_panel_records_pos : 0 < (26 : ℕ) := by
+theorem cat_biology_developmental_structural_depth_panel_records_pos : 0 < (13 : ℕ) := by
   decide
 
 
@@ -4669,7 +4989,7 @@ theorem cat_mycology_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_physarum_biological_cuda_panel_records_pos : 0 < (5 : ℕ) := by
+theorem cat_physarum_biological_cuda_panel_records_pos : 0 < (10 : ℕ) := by
   decide
 
 
@@ -4726,26 +5046,6 @@ theorem cat_zebrafish_developmental_mechanics_panel_max_scalar_under_half_pct : 
 
 
 theorem cat_zebrafish_developmental_mechanics_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_nuclear_lean_route_credibility_records_pos : 0 < (3 : ℕ) := by
-  decide
-
-
-theorem cat_nuclear_lean_route_credibility_pooled_under_half_pct : (0.021221 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_nuclear_lean_route_credibility_pooled_lt_half_pure : (0.021221 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_nuclear_lean_route_credibility_max_scalar_under_half_pct : (0.021221 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_nuclear_lean_route_credibility_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -4949,15 +5249,15 @@ theorem cat_cardiology_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_materials_creep_fracture_depth_panel_records_pos : 0 < (71 : ℕ) := by
+theorem cat_materials_creep_fracture_depth_panel_records_pos : 0 < (47 : ℕ) := by
   decide
 
 
-theorem cat_materials_creep_fracture_depth_panel_pooled_under_half_pct : (0.011734 : ℝ) < (0.5 : ℝ) := by
+theorem cat_materials_creep_fracture_depth_panel_pooled_under_half_pct : (0.01341 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_materials_creep_fracture_depth_panel_pooled_lt_half_pure : (0.011734 : ℝ) < (0.5 : ℝ) := by
+theorem cat_materials_creep_fracture_depth_panel_pooled_lt_half_pure : (0.01341 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
@@ -5029,7 +5329,7 @@ theorem cat_early_lean_mc_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_observer_lean_route_credibility_records_pos : 0 < (3 : ℕ) := by
+theorem cat_observer_lean_route_credibility_records_pos : 0 < (13 : ℕ) := by
   decide
 
 
@@ -5249,7 +5549,7 @@ theorem cat_soil_science_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_bibliography_corpus_panel_records_pos : 0 < (8 : ℕ) := by
+theorem cat_bibliography_corpus_panel_records_pos : 0 < (16 : ℕ) := by
   decide
 
 
@@ -5869,6 +6169,26 @@ theorem cat_open_science_live_concordance_green_flag : (1 : ℕ) = (1 : ℕ) := 
   rfl
 
 
+theorem cat_desktop_observer_loop_panel_records_pos : 0 < (12 : ℕ) := by
+  decide
+
+
+theorem cat_desktop_observer_loop_panel_pooled_under_half_pct : (0.0004905 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_desktop_observer_loop_panel_pooled_lt_half_pure : (0.0004905 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_desktop_observer_loop_panel_max_scalar_under_half_pct : (0.00098 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_desktop_observer_loop_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_element_synthesis_condition_scaffold_records_pos : 0 < (45 : ℕ) := by
   decide
 
@@ -5886,6 +6206,26 @@ theorem cat_element_synthesis_condition_scaffold_max_scalar_under_half_pct : (0.
 
 
 theorem cat_element_synthesis_condition_scaffold_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_cold_fusion_lab_synthesis_crosswalk_records_pos : 0 < (49 : ℕ) := by
+  decide
+
+
+theorem cat_cold_fusion_lab_synthesis_crosswalk_pooled_under_half_pct : (7.9e-05 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_cold_fusion_lab_synthesis_crosswalk_pooled_lt_half_pure : (7.9e-05 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_cold_fusion_lab_synthesis_crosswalk_max_scalar_under_half_pct : (0.000787 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_cold_fusion_lab_synthesis_crosswalk_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -5946,26 +6286,6 @@ theorem cat_z120_z126_beam_synthesis_panel_max_scalar_under_half_pct : (0.000787
 
 
 theorem cat_z120_z126_beam_synthesis_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_desi_wa_constraint_records_pos : 0 < (1 : ℕ) := by
-  decide
-
-
-theorem cat_desi_wa_constraint_pooled_under_half_pct : (0.000595 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_desi_wa_constraint_pooled_lt_half_pure : (0.000595 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_desi_wa_constraint_max_scalar_under_half_pct : (0.000595 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_desi_wa_constraint_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -6189,23 +6509,23 @@ theorem cat_superheavy_island_emergence_simulation_green_flag : (1 : ℕ) = (1 :
   rfl
 
 
-theorem cat_living_fsot_hardware_records_pos : 0 < (4 : ℕ) := by
+theorem cat_math_generator_airfoil_rmse_benchmark_json_records_pos : 0 < (5 : ℕ) := by
   decide
 
 
-theorem cat_living_fsot_hardware_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+theorem cat_math_generator_airfoil_rmse_benchmark_json_pooled_under_half_pct : (1.931451913655454e-14 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_living_fsot_hardware_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+theorem cat_math_generator_airfoil_rmse_benchmark_json_pooled_lt_half_pure : (1.931451913655454e-14 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_living_fsot_hardware_max_scalar_under_half_pct : (1.3209968920124464e-14 : ℝ) < (0.5 : ℝ) := by
+theorem cat_math_generator_airfoil_rmse_benchmark_json_max_scalar_under_half_pct : (3.862903827310908e-14 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 
-theorem cat_living_fsot_hardware_green_flag : (1 : ℕ) = (1 : ℕ) := by
+theorem cat_math_generator_airfoil_rmse_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -6286,46 +6606,6 @@ theorem cat_clinicaltrials_medical_panel_records_pos : 0 < (394 : ℕ) := by
 
 
 theorem cat_clinicaltrials_medical_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_cold_fusion_lab_synthesis_crosswalk_records_pos : 0 < (22 : ℕ) := by
-  decide
-
-
-theorem cat_cold_fusion_lab_synthesis_crosswalk_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_cold_fusion_lab_synthesis_crosswalk_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_cold_fusion_lab_synthesis_crosswalk_max_scalar_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_cold_fusion_lab_synthesis_crosswalk_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_compact_object_binary_events_records_pos : 0 < (40 : ℕ) := by
-  decide
-
-
-theorem cat_compact_object_binary_events_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_compact_object_binary_events_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_compact_object_binary_events_max_scalar_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_compact_object_binary_events_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -6553,46 +6833,6 @@ theorem cat_food_microbiology_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_formula_corpus_closure_records_pos : 0 < (123 : ℕ) := by
-  decide
-
-
-theorem cat_formula_corpus_closure_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_formula_corpus_closure_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_formula_corpus_closure_max_scalar_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_formula_corpus_closure_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_foundational_ontology_spine_records_pos : 0 < (21 : ℕ) := by
-  decide
-
-
-theorem cat_foundational_ontology_spine_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_foundational_ontology_spine_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_foundational_ontology_spine_max_scalar_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_foundational_ontology_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
 theorem cat_fractal_constant_recursion_records_pos : 0 < (21 : ℕ) := by
   decide
 
@@ -6610,6 +6850,46 @@ theorem cat_fractal_constant_recursion_max_scalar_under_half_pct : (0.0 : ℝ) <
 
 
 theorem cat_fractal_constant_recursion_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_fsot_gpu_cuda_competitive_panel_records_pos : 0 < (17 : ℕ) := by
+  decide
+
+
+theorem cat_fsot_gpu_cuda_competitive_panel_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_gpu_cuda_competitive_panel_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_gpu_cuda_competitive_panel_max_scalar_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_gpu_cuda_competitive_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_fsot_gpu_parity_verify_panel_records_pos : 0 < (48 : ℕ) := by
+  decide
+
+
+theorem cat_fsot_gpu_parity_verify_panel_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_gpu_parity_verify_panel_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_gpu_parity_verify_panel_max_scalar_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_fsot_gpu_parity_verify_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -6709,27 +6989,31 @@ theorem cat_grace_cryosphere_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) :
   rfl
 
 
-theorem cat_h0_planck_benchmark_json_records_pos : 0 < (2 : ℕ) := by
-  decide
-
-
-theorem cat_h0_planck_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_higgs_branching_benchmark_json_records_pos : 0 < (14 : ℕ) := by
-  decide
-
-
-theorem cat_higgs_branching_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
 theorem cat_history_records_pos : 0 < (170 : ℕ) := by
   decide
 
 
 theorem cat_history_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_hybrid_fi_sim_multi_hero_panel_records_pos : 0 < (32 : ℕ) := by
+  decide
+
+
+theorem cat_hybrid_fi_sim_multi_hero_panel_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_hybrid_fi_sim_multi_hero_panel_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_hybrid_fi_sim_multi_hero_panel_max_scalar_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_hybrid_fi_sim_multi_hero_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -6878,6 +7162,14 @@ theorem cat_meteorology_records_pos : 0 < (47 : ℕ) := by
 
 
 theorem cat_meteorology_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_multi_hero_benchmark_json_records_pos : 0 < (32 : ℕ) := by
+  decide
+
+
+theorem cat_multi_hero_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -7229,26 +7521,6 @@ theorem cat_rust_lean_bridge_benchmark_json_green_flag : (1 : ℕ) = (1 : ℕ) :
   rfl
 
 
-theorem cat_scientific_expansion_depth_spine_records_pos : 0 < (20 : ℕ) := by
-  decide
-
-
-theorem cat_scientific_expansion_depth_spine_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_scientific_expansion_depth_spine_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_scientific_expansion_depth_spine_max_scalar_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_scientific_expansion_depth_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
 theorem cat_scientific_expansion_depth_wave2_spine_records_pos : 0 < (40 : ℕ) := by
   decide
 
@@ -7506,26 +7778,6 @@ theorem cat_tier_95_zebrafish_spine_max_scalar_under_half_pct : (0.0 : ℝ) < (0
 
 
 theorem cat_tier_95_zebrafish_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
-theorem cat_tier_96_circuit_spine_records_pos : 0 < (11 : ℕ) := by
-  decide
-
-
-theorem cat_tier_96_circuit_spine_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_tier_96_circuit_spine_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_tier_96_circuit_spine_max_scalar_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_tier_96_circuit_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 

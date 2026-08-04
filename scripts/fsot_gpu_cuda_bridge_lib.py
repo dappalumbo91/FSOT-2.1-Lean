@@ -1360,6 +1360,40 @@ BUILDERS = {
     "FSOT_GPU_Engineering_Spine": build_fsot_gpu_engineering_spine,
 }
 
+# Lean multiprover export map: prefix, lean domain, sign theorem, module stem
+LEAN_MAP = {
+    "FSOT_GPU_CUDA_Competitive_Panel": (
+        "fsot_gpu_cuda_competitive",
+        "quantum",
+        "quantum_raw_S_positive",
+        "FsotGpuCudaCompetitivePanelPriors",
+    ),
+    "FSOT_GPU_Parity_Verify_Panel": (
+        "fsot_gpu_parity_verify",
+        "quantum",
+        "quantum_raw_S_positive",
+        "FsotGpuParityVerifyPanelPriors",
+    ),
+    "FSOT_Processor_Function_Panel": (
+        "fsot_processor_function",
+        "energy",
+        "energy_raw_S_positive",
+        "FsotProcessorFunctionPanelPriors",
+    ),
+    "FSOT_RAM_Function_Panel": (
+        "fsot_ram_function",
+        "electron",
+        "electron_raw_S_positive",
+        "FsotRamFunctionPanelPriors",
+    ),
+    "FSOT_GPU_Engineering_Spine": (
+        "fsot_gpu_engineering_spine",
+        "energy",
+        "energy_raw_S_positive",
+        "FsotGpuEngineeringSpinePriors",
+    ),
+}
+
 
 def output_path(domain: str) -> Path:
     slug = {

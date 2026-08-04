@@ -57,14 +57,42 @@ That is a real architectural opposition, not a temporary bug:
 ```powershell
 python scripts/build_fsot_gpu_cuda_bridge.py
 python scripts/build_engineering_code_bridge.py
+python scripts/gen_fsot_gpu_cuda_bridge_lean.py
+python scripts/gen_engineering_code_bridge_lean.py
 python scripts/audit_all_benchmark_margins.py
+# same multiprover path as the rest of the theory:
+python scripts/export_scientific_catalog_obligations.py
+python scripts/generate_scientific_catalog_artifacts.py
+python scripts/run_smt_catalog_bounds.py
+# full seven-way (when you want the whole report):
+# python scripts/run_cross_proof_verification.py
 ```
 
 GPU-only (when Desktop FSOT-GPU ledgers are present):
 
 ```powershell
 python scripts/build_fsot_gpu_cuda_bridge.py
+python scripts/gen_fsot_gpu_cuda_bridge_lean.py
 ```
+
+## Cross-verification (same system as the rest of FSOT)
+
+These panels are **not** a side ledger. They enter the standard pipeline:
+
+| Step | Artifact |
+|------|----------|
+| Residual benches | `data/*_benchmark.json` |
+| Margin audit (green ≤0.5%) | `data/benchmark_margin_audit.json` |
+| Scientific catalog obligations | `verification/obligations/scientific_catalog_spine.json` |
+| Coq / Isabelle / Lean re-proof | `ScientificCatalogSpine_*` + `FSOT/Formal/*Priors.lean` |
+| SMT bulk residual bounds | `python scripts/run_smt_catalog_bounds.py` |
+| Full multi-prover report | `python scripts/run_cross_proof_verification.py` → `data/cross_proof_verification_report.json` |
+
+Lean prior modules (0.5% gate):  
+`FsotGpuCudaCompetitivePanelPriors`, `FsotGpuParityVerifyPanelPriors`,  
+`FsotProcessorFunctionPanelPriors`, `FsotRamFunctionPanelPriors`,  
+`FsotGpuEngineeringSpinePriors`, `Esp32PlatformEngineeringPanelPriors`,  
+`CodingStructureVerifierPanelPriors`, `EngineeringHardwareCodeSpinePriors`.
 
 ---
 

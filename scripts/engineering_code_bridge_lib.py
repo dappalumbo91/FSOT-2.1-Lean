@@ -407,6 +407,27 @@ BUILDERS = {
     "Engineering_Hardware_Code_Spine": build_engineering_hardware_code_spine,
 }
 
+LEAN_MAP = {
+    "ESP32_Platform_Engineering_Panel": (
+        "esp32_platform_engineering",
+        "electron",
+        "electron_raw_S_positive",
+        "Esp32PlatformEngineeringPanelPriors",
+    ),
+    "Coding_Structure_Verifier_Panel": (
+        "coding_structure_verifier",
+        "energy",
+        "energy_raw_S_positive",
+        "CodingStructureVerifierPanelPriors",
+    ),
+    "Engineering_Hardware_Code_Spine": (
+        "engineering_hardware_code_spine",
+        "electron",
+        "electron_raw_S_positive",
+        "EngineeringHardwareCodeSpinePriors",
+    ),
+}
+
 
 def output_path(domain: str) -> Path:
     slug = {
