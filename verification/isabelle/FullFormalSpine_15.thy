@@ -3,6 +3,54 @@ theory FullFormalSpine_15
 imports Complex_Main
 begin
 
+lemma acoustic_bleed_pos: "0 < (1.046973630587551 :: real)"
+  by eval
+
+lemma acoustic_inflow_pos: "0 < (1.6668538450045731 :: real)"
+  by eval
+
+lemma phi_gt_one: "1 < (1.618033988749895 :: real)"
+  by eval
+
+lemma pi_gt_one: "1 < (3.141592653589793 :: real)"
+  by eval
+
+lemma acoustic_bleed_lt_phi: "(1.046973630587551 :: real) < (1.618033988749895 :: real)"
+  by eval
+
+lemma phi_lt_two: "(1.618033988749895 :: real) < (2.0 :: real)"
+  by eval
+
+lemma phi_lt_16181: "(1.618033988749895 :: real) < (1.6181 :: real)"
+  by eval
+
+lemma psi_con_lt_633: "(0.6321205588287557 :: real) < (0.633 :: real)"
+  by eval
+
+lemma eta_eff_lt_467: "(0.46694220658433505 :: real) < (0.467 :: real)"
+  by eval
+
+lemma new_perceived_param_lt_031: "(0.30030117056875677 :: real) < (0.301 :: real)"
+  by eval
+
+lemma new_perceived_param_lt_3009: "(0.30030117056875677 :: real) < (0.3009 :: real)"
+  by eval
+
+lemma new_perceived_param_lt_30032: "(0.30030117056875677 :: real) < (0.30032 :: real)"
+  by eval
+
+lemma sqrt2_lt_14142135624: "(1.4142135623730951 :: real) < (1.4142135624 :: real)"
+  by eval
+
+lemma psi_con_lt_63212055884: "(0.6321205588287557 :: real) < (0.63212055884 :: real)"
+  by eval
+
+lemma eta_eff_lt_466942299692: "(0.46694220658433505 :: real) < (0.466942299692 :: real)"
+  by eval
+
+lemma acoustic_bleed_lt_10476: "(1.046973630587551 :: real) < (1.0476 :: real)"
+  by eval
+
 lemma acoustic_inflow_lt_16695: "(1.6668538450045731 :: real) < (1.6695 :: real)"
   by eval
 
@@ -253,54 +301,6 @@ lemma pi_gt_290272: "(0.290272 :: real) < (3.141592653589793 :: real)"
   by eval
 
 lemma pi_gt_291325: "(0.291325 :: real) < (3.141592653589793 :: real)"
-  by eval
-
-lemma pi_gt_0415068: "(0.415068 :: real) < (3.141592653589793 :: real)"
-  by eval
-
-lemma pi_gt_0415069: "(0.415069 :: real) < (3.141592653589793 :: real)"
-  by eval
-
-lemma psi_con_eta_prod_gt_295163: "(0.295163 :: real) < (0.2951637685668222 :: real)"
-  by eval
-
-lemma sin_0295163_gt_0290272: "(0.290272 :: real) < (0.295163 :: real)"
-  by eval
-
-lemma pi_div_e_gt_115572734973: "(1.15572734973 :: real) < (1.1557273497909217 :: real)"
-  by eval
-
-lemma cos_0415069_gt_091385: "(0.91385 :: real) < (0.9150884982110228 :: real)"
-  by eval
-
-lemma sin_pi_div_e_gt_91385: "(0.91385 :: real) < (0.9150885074842403 :: real)"
-  by eval
-
-lemma cos_0291325_gt_09575: "(0.9575 :: real) < (0.9578641477669682 :: real)"
-  by eval
-
-lemma acoustic_bleed_div_inflow_gt_62600: "(0.626 :: real) < (0.6281136367925999 :: real)"
-  by eval
-
-lemma phi_sq_gt_261792: "(2.617924 :: real) < (2.618033988749895 :: real)"
-  by eval
-
-lemma one_div_pi_gt_03183: "(0.3183 :: real) < (0.3183098861837907 :: real)"
-  by eval
-
-lemma exp_01530_gt_11653: "(1.1653 :: real) < (1.1653249789427378 :: real)"
-  by eval
-
-lemma phi_rpow_inv_pi_gt_11653: "(1.1653 :: real) < (1.1655283240586598 :: real)"
-  by eval
-
-lemma exp_1146_gt_31416: "(3.1416 :: real) < (3.145585369940555 :: real)"
-  by eval
-
-lemma exp_11453_gt_pi23847: "(3.141592653589793 :: real) < (3.1433842306702213 :: real)"
-  by eval
-
-lemma eta_log_phi_gt_02244: "(0.2244 :: real) < (0.22469811142780627 :: real)"
   by eval
 
 end

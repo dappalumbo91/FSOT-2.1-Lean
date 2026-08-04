@@ -3,6 +3,54 @@ theory FullFormalSpine_10
 imports Complex_Main
 begin
 
+lemma osti_doe_science_median_error_under_five_pct: "(0.01382 :: real) < (5.0 :: real)"
+  by eval
+
+lemma overflow_carry_emergence_panel_observable_count_pos: "0 < (29 :: nat)"
+  by eval
+
+lemma overflow_carry_emergence_panel_median_error_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma paleoclimate_ext_pooled_median_under_half_pct: "(0.015015854077432778 :: real) < (0.5 :: real)"
+  by eval
+
+lemma paleoclimate_ext_headline_median_under_half_pct: "(0.015015854077432778 :: real) < (0.5 :: real)"
+  by eval
+
+lemma paleoclimate_ext_observable_count_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma paleoclimate_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma paleoclimate_panel_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma paleoclimate_panel_median_error_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
+  by eval
+
+lemma paleoclimate_observable_count_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma paleoclimate_median_error_under_half_pct: "(0.015015854077432778 :: real) < (0.5 :: real)"
+  by eval
+
+lemma paleontology_ext_pooled_median_under_half_pct: "(0.017836062884406152 :: real) < (0.5 :: real)"
+  by eval
+
+lemma paleontology_ext_headline_median_under_half_pct: "(0.017836062884406152 :: real) < (0.5 :: real)"
+  by eval
+
+lemma paleontology_ext_observable_count_pos: "0 < (630 :: nat)"
+  by eval
+
+lemma paleontology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma paleontology_panel_observable_count_pos: "0 < (120 :: nat)"
+  by eval
+
 lemma paleontology_panel_median_error_under_half_pct: "(0.0167305 :: real) < (0.5 :: real)"
   by eval
 
@@ -253,54 +301,6 @@ lemma arginine_trinary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 ::
   by eval
 
 lemma serine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma threonine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma valine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma tryptophan_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma tyrosine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma protein_amino_acid_genomic_identity: "(20.0 :: real) = (20.0 :: real)"
-  by eval
-
-lemma psychology_gap_fill_pooled_median_under_half_pct: "(0.03150616921194649 :: real) < (0.5 :: real)"
-  by eval
-
-lemma psychology_gap_fill_headline_median_under_half_pct: "(0.03150616921194649 :: real) < (0.5 :: real)"
-  by eval
-
-lemma psychology_gap_fill_observable_count_pos: "0 < (160 :: nat)"
-  by eval
-
-lemma psychology_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma psychology_psychometrics_depth_panel_observable_count_pos: "0 < (23 :: nat)"
-  by eval
-
-lemma psychology_psychometrics_depth_panel_median_error_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
-  by eval
-
-lemma pubchem_compound_properties_observable_count_pos: "0 < (500 :: nat)"
-  by eval
-
-lemma pubchem_compound_properties_median_error_under_five_pct: "(0.002637 :: real) < (5.0 :: real)"
-  by eval
-
-lemma pubchem_live_deep_observable_count_pos: "0 < (5254 :: nat)"
-  by eval
-
-lemma pubchem_live_deep_median_error_under_half_pct: "(0.032631 :: real) < (0.5 :: real)"
-  by eval
-
-lemma pubchem_stability_panel_observable_count_pos: "0 < (59 :: nat)"
   by eval
 
 end

@@ -3,6 +3,54 @@ theory FullFormalSpine_07
 imports Complex_Main
 begin
 
+lemma immunology_median_error_under_half_pct: "(0.061205 :: real) < (0.5 :: real)"
+  by eval
+
+lemma inaturalist_observation_panel_observable_count_pos: "0 < (288 :: nat)"
+  by eval
+
+lemma inaturalist_observation_panel_median_error_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
+  by eval
+
+lemma inaturalist_observation_observable_count_pos: "0 < (288 :: nat)"
+  by eval
+
+lemma inaturalist_observation_median_error_under_five_pct: "(0.006006 :: real) < (5.0 :: real)"
+  by eval
+
+lemma inertial_confinement_fusion_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma inertial_confinement_fusion_panel_median_error_under_half_pct: "(0.000079 :: real) < (0.5 :: real)"
+  by eval
+
+lemma information_theory_public_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma information_theory_public_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma initiation_transformation_archetype_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma initiation_transformation_archetype_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma fic_best_intelligence_score_positive: "0 < (0.9997093332777109 :: real)"
+  by eval
+
+lemma fic_sweep_row_count_pos: "0 < (572 :: nat)"
+  by eval
+
+lemma fic_fertile_rows_present: "0 < (156 :: nat)"
+  by eval
+
+lemma fic_fertile_replay_match_le_total: "(572 :: nat) <= (572 :: nat)"
+  by eval
+
+lemma fic_fertile_replay_match_rate_le_one: "(1.0 :: real) <= (1.0 :: real)"
+  by eval
+
 lemma interactive_media_prereg_scaffold_observable_count_pos: "0 < (42 :: nat)"
   by eval
 
@@ -253,54 +301,6 @@ lemma marine_biology_observable_count_pos: "0 < (540 :: nat)"
   by eval
 
 lemma marine_biology_median_error_under_half_pct: "(0.022236250385192644 :: real) < (0.5 :: real)"
-  by eval
-
-lemma material_in_silico_screening_scaffold_observable_count_pos: "0 < (42 :: nat)"
-  by eval
-
-lemma material_in_silico_screening_scaffold_median_error_under_half_pct: "(0.00206 :: real) < (0.5 :: real)"
-  by eval
-
-lemma material_property_verification_scaffold_observable_count_pos: "0 < (79 :: nat)"
-  by eval
-
-lemma material_property_verification_scaffold_median_error_under_half_pct: "(0.002271 :: real) < (0.5 :: real)"
-  by eval
-
-lemma materials_creep_fracture_depth_panel_observable_count_pos: "0 < (71 :: nat)"
-  by eval
-
-lemma materials_creep_fracture_depth_panel_median_error_under_half_pct: "(0.011734 :: real) < (0.5 :: real)"
-  by eval
-
-lemma materials_engineering_pooled_median_under_half_pct: "(0.027170334947435038 :: real) < (0.5 :: real)"
-  by eval
-
-lemma materials_engineering_headline_median_under_half_pct: "(0.027170334947435038 :: real) < (0.5 :: real)"
-  by eval
-
-lemma materials_engineering_observable_count_pos: "0 < (87 :: nat)"
-  by eval
-
-lemma materials_engineering_section_count_pos: "0 < (7 :: nat)"
-  by eval
-
-lemma materials_engineering_beats_sota_headlines_pos: "0 < (6 :: nat)"
-  by eval
-
-lemma materials_genome_crosswalk_observable_count_pos: "0 < (38 :: nat)"
-  by eval
-
-lemma materials_genome_crosswalk_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma materials_project_live_panel_observable_count_pos: "0 < (141 :: nat)"
-  by eval
-
-lemma materials_project_live_panel_median_error_under_half_pct: "(0.011734 :: real) < (0.5 :: real)"
-  by eval
-
-lemma materials_species_bridge_live_panel_observable_count_pos: "0 < (150 :: nat)"
   by eval
 
 end

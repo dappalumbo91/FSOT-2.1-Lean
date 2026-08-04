@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-03T22:36:25.610766+00:00",
+  "generated_at": "2026-08-04T04:37:50.965927+00:00",
   "version": "1.0",
   "tier": "92_structural_proof_depth",
   "overall_ok": true,
-  "provable_bundle_conj_count": 457,
+  "provable_bundle_conj_count": 465,
   "provable_bundles": [
     {
       "id": "acoustic_resonance_materials_bundle",
@@ -254,6 +254,10 @@
       "conjunct_count": 4
     },
     {
+      "id": "coding_structure_verifier_bundle",
+      "conjunct_count": 4
+    },
+    {
       "id": "cold_fusion_candidate_prereg_scaffold_bundle",
       "conjunct_count": 4
     },
@@ -442,6 +446,10 @@
       "conjunct_count": 4
     },
     {
+      "id": "engineering_hardware_code_spine_bundle",
+      "conjunct_count": 4
+    },
+    {
       "id": "entomology_ext_bundle",
       "conjunct_count": 5
     },
@@ -471,6 +479,10 @@
     },
     {
       "id": "epidemiology_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "esp32_platform_engineering_bundle",
       "conjunct_count": 4
     },
     {
@@ -619,6 +631,26 @@
     },
     {
       "id": "fsot_aggregate_unified_db_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "fsot_gpu_cuda_competitive_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "fsot_gpu_engineering_spine_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "fsot_gpu_parity_verify_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "fsot_processor_function_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "fsot_ram_function_bundle",
       "conjunct_count": 4
     },
     {
@@ -1834,11 +1866,11 @@
       "conjunct_count": 7
     }
   ],
-  "structural_proof_count": 1923,
+  "structural_proof_count": 1955,
   "min_required": 10,
   "breakdown": {
-    "bundle_split_lemmas": 446,
-    "bundle_conjunct_lemmas": 1467,
+    "bundle_split_lemmas": 454,
+    "bundle_conjunct_lemmas": 1491,
     "connective_ordering_lemmas": 3,
     "native_transcendental_chain_lemmas": 7
   },

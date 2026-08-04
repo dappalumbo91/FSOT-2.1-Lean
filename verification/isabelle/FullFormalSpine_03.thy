@@ -3,6 +3,12 @@ theory FullFormalSpine_03
 imports Complex_Main
 begin
 
+lemma codon_tat_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_tca_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
 lemma codon_tca_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
@@ -295,12 +301,6 @@ lemma crossref_scholarly_observable_count_pos: "0 < (200 :: nat)"
   by eval
 
 lemma crossref_scholarly_median_error_under_five_pct: "(0.01382 :: real) < (5.0 :: real)"
-  by eval
-
-lemma cryosphere_month_count_pos: "0 < (2399 :: nat)"
-  by eval
-
-lemma cryosphere_match_le_total: "(2399 :: nat) <= (2399 :: nat)"
   by eval
 
 end

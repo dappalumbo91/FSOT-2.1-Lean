@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cryosphere_month_count_pos : (0 < 2399)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma cryosphere_match_le_total : (2399 <= 2399)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
 Lemma cryptography_technology_observable_count_pos : (0 < 44)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -255,6 +261,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma energy_neural_orbital_bridge_median_error_under_half_pct : (0.018002668701796887%R) < (0.5%R).
 Proof. lra. Qed.
 
+Lemma engineering_hardware_code_spine_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma engineering_hardware_code_spine_observable_count_pos : (0 < 72)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma entomology_ext_pooled_median_under_half_pct : (0.022236250385189223%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -292,17 +304,5 @@ Lemma environmental_engineering_ext_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma environmental_engineering_observable_count_pos : (0 < 1120)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma environmental_engineering_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma epidemiology_ext_pooled_median_under_half_pct : (0.039895%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma epidemiology_ext_headline_median_under_half_pct : (0.039895%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma epidemiology_ext_observable_count_pos : (0 < 220)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

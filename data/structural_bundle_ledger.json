@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-03T22:36:33.541266+00:00",
+  "generated_at": "2026-08-04T04:37:58.575520+00:00",
   "version": "1.2",
   "summary": {
-    "bundle_conj_total": 511,
+    "bundle_conj_total": 519,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 457,
-    "total_conjuncts": 2325,
-    "conjuncts_with_atomic_coverage": 2323,
-    "conjunct_atomic_coverage_pct": 99.91,
-    "explicit_linked_conjuncts": 1779,
-    "explicit_linked_in_spine": 1777,
+    "provable_bundle_conj": 465,
+    "total_conjuncts": 2357,
+    "conjuncts_with_atomic_coverage": 2355,
+    "conjunct_atomic_coverage_pct": 99.92,
+    "explicit_linked_conjuncts": 1803,
+    "explicit_linked_in_spine": 1801,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
@@ -129,6 +129,7 @@
     "clinicaltrials_medical_panel_bundle",
     "clinicaltrials_medical_bundle",
     "code_genome_structure_bundle",
+    "coding_structure_verifier_bundle",
     "cold_fusion_candidate_prereg_scaffold_bundle",
     "cold_fusion_lab_synthesis_crosswalk_bundle",
     "compactification_ladder_bundle",
@@ -176,6 +177,7 @@
     "element_synthesis_condition_scaffold_bundle",
     "energy_ai_orbital_bridge_bundle",
     "energy_neural_orbital_bridge_bundle",
+    "engineering_hardware_code_spine_bundle",
     "entomology_ext_bundle",
     "entomology_panel_bundle",
     "entomology_bundle",
@@ -184,6 +186,7 @@
     "epidemiology_ext_bundle",
     "epidemiology_panel_bundle",
     "epidemiology_bundle",
+    "esp32_platform_engineering_bundle",
     "ethology_panel_bundle",
     "ethology_bundle",
     "exogeology_ext_bundle",
@@ -221,6 +224,11 @@
     "fractal_constant_recursion_bundle",
     "fsot_aggregate_organized_panel_bundle",
     "fsot_aggregate_unified_db_bundle",
+    "fsot_gpu_cuda_competitive_bundle",
+    "fsot_gpu_engineering_spine_bundle",
+    "fsot_gpu_parity_verify_bundle",
+    "fsot_processor_function_bundle",
+    "fsot_ram_function_bundle",
     "fuel_candidate_prereg_scaffold_bundle",
     "fuel_lab_live_bundle",
     "fuel_thermochemistry_public_anchors_bundle",
@@ -4879,6 +4887,64 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "coding_structure_verifier_bundle",
+      "lean_module": "CodingStructureVerifierPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "coding_structure_verifier_observable_count",
+          "statement": "18 = 18",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "coding_structure_verifier_observable_count_pos"
+          ],
+          "linked_obligation_id": "coding_structure_verifier_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "coding_structure_verifier_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "coding_structure_verifier_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "coding_structure_verifier_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "coding_structure_verifier_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "coding_structure_verifier_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "statement": "raw_S(energy) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "codon_trinary_map_bundle",
       "lean_module": "CodonPriors",
       "provable": false,
@@ -8875,6 +8941,64 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "engineering_hardware_code_spine_bundle",
+      "lean_module": "EngineeringHardwareCodeSpinePriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "engineering_hardware_code_spine_observable_count",
+          "statement": "72 = 72",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "engineering_hardware_code_spine_observable_count_pos"
+          ],
+          "linked_obligation_id": "engineering_hardware_code_spine_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "engineering_hardware_code_spine_D_eff",
+          "statement": "13 = 13",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "engineering_hardware_code_spine_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "engineering_hardware_code_spine_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "engineering_hardware_code_spine_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "engineering_hardware_code_spine_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_electron",
+          "statement": "raw_S(electron) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "electron_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "entomology_ext_bundle",
       "lean_module": "EntomologyExtensionPriors",
       "provable": true,
@@ -9368,6 +9492,64 @@
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "esp32_platform_engineering_bundle",
+      "lean_module": "Esp32PlatformEngineeringPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "esp32_platform_engineering_observable_count",
+          "statement": "34 = 34",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "esp32_platform_engineering_observable_count_pos"
+          ],
+          "linked_obligation_id": "esp32_platform_engineering_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "esp32_platform_engineering_D_eff",
+          "statement": "12 = 12",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "esp32_platform_engineering_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "esp32_platform_engineering_median_error_pct",
+          "statement": "0.020755 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "esp32_platform_engineering_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "esp32_platform_engineering_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_electron",
+          "statement": "raw_S(electron) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "electron_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -11844,6 +12026,296 @@
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "fsot_gpu_cuda_competitive_bundle",
+      "lean_module": "FsotGpuCudaCompetitivePanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_gpu_cuda_competitive_observable_count",
+          "statement": "17 = 17",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_gpu_cuda_competitive_observable_count_pos"
+          ],
+          "linked_obligation_id": "fsot_gpu_cuda_competitive_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_gpu_cuda_competitive_D_eff",
+          "statement": "12 = 12",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "fsot_gpu_cuda_competitive_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "fsot_gpu_cuda_competitive_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_gpu_cuda_competitive_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "fsot_gpu_cuda_competitive_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_quantum",
+          "statement": "raw_S(quantum) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "witness_bundle_link",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "quantum_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "fsot_gpu_engineering_spine_bundle",
+      "lean_module": "FsotGpuEngineeringSpinePriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_gpu_engineering_spine_observable_count",
+          "statement": "42 = 42",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_gpu_engineering_spine_observable_count_pos"
+          ],
+          "linked_obligation_id": "fsot_gpu_engineering_spine_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_gpu_engineering_spine_D_eff",
+          "statement": "13 = 13",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "fsot_gpu_engineering_spine_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "fsot_gpu_engineering_spine_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_gpu_engineering_spine_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "fsot_gpu_engineering_spine_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "statement": "raw_S(energy) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "fsot_gpu_parity_verify_bundle",
+      "lean_module": "FsotGpuParityVerifyPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_gpu_parity_verify_observable_count",
+          "statement": "48 = 48",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_gpu_parity_verify_observable_count_pos"
+          ],
+          "linked_obligation_id": "fsot_gpu_parity_verify_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_gpu_parity_verify_D_eff",
+          "statement": "11 = 11",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "fsot_gpu_parity_verify_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "fsot_gpu_parity_verify_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_gpu_parity_verify_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "fsot_gpu_parity_verify_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_quantum",
+          "statement": "raw_S(quantum) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "witness_bundle_link",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "quantum_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "fsot_processor_function_bundle",
+      "lean_module": "FsotProcessorFunctionPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_processor_function_observable_count",
+          "statement": "20 = 20",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_processor_function_observable_count_pos"
+          ],
+          "linked_obligation_id": "fsot_processor_function_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_processor_function_D_eff",
+          "statement": "12 = 12",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "fsot_processor_function_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "fsot_processor_function_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_processor_function_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "fsot_processor_function_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "statement": "raw_S(energy) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "fsot_ram_function_bundle",
+      "lean_module": "FsotRamFunctionPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_ram_function_observable_count",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_ram_function_observable_count_pos"
+          ],
+          "linked_obligation_id": "fsot_ram_function_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_ram_function_D_eff",
+          "statement": "11 = 11",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "fsot_ram_function_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "fsot_ram_function_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_ram_function_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "fsot_ram_function_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_electron",
+          "statement": "raw_S(electron) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "electron_raw_S_positive"
           ],
           "linked_obligation_id": null
         }

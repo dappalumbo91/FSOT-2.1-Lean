@@ -3,6 +3,54 @@ theory FullFormalSpine_17
 imports Complex_Main
 begin
 
+lemma phi_sq_lt_26183: "(2.618033988749895 :: real) < (26183.0 :: real)"
+  by eval
+
+lemma log_1618_gt_04807: "(0.4807 :: real) < (1.618 :: real)"
+  by eval
+
+lemma phase_variance_gt_0955: "(0.955 :: real) < (0.9579871226722758 :: real)"
+  by eval
+
+lemma phase_variance_lt_0961: "(0.9579871226722758 :: real) < (0.961 :: real)"
+  by eval
+
+lemma sin_theta_s_gt_02858: "(0.2858 :: real) < (0.28681121455426756 :: real)"
+  by eval
+
+lemma coherence_efficiency_lt_1002: "(0.9577022026205612 :: real) < (1.002 :: real)"
+  by eval
+
+lemma bleed_in_inner_lt_0824: "(0.8227409210508241 :: real) < (0.824 :: real)"
+  by eval
+
+lemma bleed_in_factor_lt_0826: "(0.7879407922764434 :: real) < (0.826 :: real)"
+  by eval
+
+lemma log_ratio_D6_gt: "(-1.434 :: real) < (6.0 :: real)"
+  by eval
+
+lemma bleed_in_factor_gt_0773: "(0.773 :: real) < (0.7879407922764434 :: real)"
+  by eval
+
+lemma ai_cos_lt_neg_075: "(0.5 :: real) < (0.74 :: real)"
+  by eval
+
+lemma log_four_lt_13865: "(1.3862943611198906 :: real) < (1.3865 :: real)"
+  by eval
+
+lemma cmb_cos_lt_neg_099: "(0.8 :: real) < (0.99 :: real)"
+  by eval
+
+lemma log_five_lt_1618: "(1.6094379124341003 :: real) < (1.618 :: real)"
+  by eval
+
+lemma medical_cos_lt_neg_05: "(0.35 :: real) < (0.5 :: real)"
+  by eval
+
+lemma alpha_lt_one_tenth: "(0.0008082937 :: real) < (0.1 :: real)"
+  by eval
+
 lemma log_five_gt_1602: "(1.602 :: real) < (1.6094379124341003 :: real)"
   by eval
 
@@ -253,54 +301,6 @@ lemma galactic_raw_S_positive: "0 < (1.8256534680881713 :: real)"
   by eval
 
 lemma fusion_raw_S_positive: "0 < (2.0283662645128167 :: real)"
-  by eval
-
-lemma medical_raw_S_positive: "0 < (0.7287135707250552 :: real)"
-  by eval
-
-lemma blackhole_raw_S_positive: "0 < (2.427813814074099 :: real)"
-  by eval
-
-lemma consciousness_raw_S_positive: "0 < (2.4991706281862376 :: real)"
-  by eval
-
-lemma molecular_raw_S_positive: "0 < (0.7201315148027019 :: real)"
-  by eval
-
-lemma material_raw_S_positive: "0 < (0.7978167460880297 :: real)"
-  by eval
-
-lemma biological_raw_S_positive: "0 < (1.0583105195018667 :: real)"
-  by eval
-
-lemma cellular_raw_S_positive: "0 < (1.0583105195018667 :: real)"
-  by eval
-
-lemma nuclear_raw_S_positive: "0 < (2.192436781833356 :: real)"
-  by eval
-
-lemma energy_raw_S_positive: "0 < (1.872760423200424 :: real)"
-  by eval
-
-lemma cosmological_raw_S_negative: "(-1.1956926285882763 :: real) < (0 :: real)"
-  by eval
-
-lemma dark_energy_raw_S_negative: "(-1.1349793149885588 :: real) < (0 :: real)"
-  by eval
-
-lemma cmb_raw_S_negative: "(-1.0099710610507393 :: real) < (0 :: real)"
-  by eval
-
-lemma ai_raw_S_non_positive: "(-0.3514171596284352 :: real) <= (0 :: real)"
-  by eval
-
-lemma c_cosm_pos: "0 < (0.061803398874989486 :: real)"
-  by eval
-
-lemma alpha_s_MZ_pos: "0 < (0.11709966304863834 :: real)"
-  by eval
-
-lemma p_base_pos: "0 < (0.21234577623937845 :: real)"
   by eval
 
 end

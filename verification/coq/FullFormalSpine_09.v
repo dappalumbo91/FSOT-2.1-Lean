@@ -6,6 +6,54 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma neuroimmunology_pooled_median_under_half_pct : (0.05041956982053305%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma neuroimmunology_headline_median_under_half_pct : (0.060502%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma neuroimmunology_observable_count_pos : (0 < 92)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma neuroimmunology_section_count_pos : (0 < 7)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma neuroimmunology_beats_sota_headlines_pos : (0 < 6)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma neurolab_gaps_math_spine_observable_count_pos : (0 < 35)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma neurolab_gaps_math_spine_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma neurolab_residual_math_spine_observable_count_pos : (0 < 28)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma neurolab_residual_math_spine_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma cohort_canonical_scalar_min_positive : 0 < (0.25241247006708056%R).
+Proof. lra. Qed.
+
+Lemma canonical_bridge_scale_gt_one : 1 < (1.1099062765752818%R).
+Proof. lra. Qed.
+
+Lemma allen_cohort_cell_count_pos : (0 < 2166)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma neurolab_smiles_mapped_records_pos : (0 < 1470)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma allen_cohort_fi_median_rel_err_lt_thirty_pct : (0.24631729333045121%R) < (0.3%R).
+Proof. lra. Qed.
+
+Lemma hero_certified_fi_mean_rel_err_lt_fifteen_pct : (0.07002728543379658%R) < (0.15%R).
+Proof. lra. Qed.
+
+Lemma hero_canonical_bridge_mean_rel_err_lt_twelve_pct : (0.07354375821147667%R) < (0.12%R).
+Proof. lra. Qed.
+
 Lemma hero_canonical_bridge_delta_lt_five_pct : (0.0035164727776800936%R) < (0.05%R).
 Proof. lra. Qed.
 
@@ -256,53 +304,5 @@ Lemma osti_doe_science_panel_median_error_under_half_pct : (0.01382%R) < (0.5%R)
 Proof. lra. Qed.
 
 Lemma osti_doe_science_observable_count_pos : (0 < 100)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma osti_doe_science_median_error_under_five_pct : (0.01382%R) < (5.0%R).
-Proof. lra. Qed.
-
-Lemma overflow_carry_emergence_panel_observable_count_pos : (0 < 29)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma overflow_carry_emergence_panel_median_error_under_half_pct : (0.009504%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma paleoclimate_ext_pooled_median_under_half_pct : (0.015015854077432778%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma paleoclimate_ext_headline_median_under_half_pct : (0.015015854077432778%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma paleoclimate_ext_observable_count_pos : (0 < 40)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma paleoclimate_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma paleoclimate_panel_observable_count_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma paleoclimate_panel_median_error_under_half_pct : (0.006006%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma paleoclimate_observable_count_pos : (0 < 40)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma paleoclimate_median_error_under_half_pct : (0.015015854077432778%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma paleontology_ext_pooled_median_under_half_pct : (0.017836062884406152%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma paleontology_ext_headline_median_under_half_pct : (0.017836062884406152%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma paleontology_ext_observable_count_pos : (0 < 630)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma paleontology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma paleontology_panel_observable_count_pos : (0 < 120)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-03T22:36:32.856625+00:00",
+  "generated_at": "2026-08-04T04:37:57.891183+00:00",
   "version": "1.0",
   "verdict": {
-    "cross_proof_overall_ok": false,
+    "cross_proof_overall_ok": true,
     "extension_domains_all_green": true,
     "aspiration_scalar_debt_cleared": true,
     "core_benchmarks_all_green": true,
@@ -18,26 +18,26 @@
     "lean_4": {
       "role": "primary authority",
       "connective_obligations": 24,
-      "full_formal_obligations": 2385,
+      "full_formal_obligations": 2409,
       "transcendental_lemmas": 68,
-      "lean_theorem_count_estimate": 4298,
-      "export_fraction_pct": 55.49,
+      "lean_theorem_count_estimate": 4673,
+      "export_fraction_pct": 51.55,
       "proof_style": "norm_num / decide / linarith certificates"
     },
     "coq": {
-      "status": "failed",
-      "chunks_passed": 37,
+      "status": "passed",
+      "chunks_passed": 43,
       "coverage": "numeric literal replay of exported obligations",
       "axiom_debt": "coq_native_isabelle_native_intervals"
     },
     "isabelle": {
       "status": "passed",
-      "provable_obligations": 2331,
+      "provable_obligations": 2355,
       "coverage": "numeric literal replay of exported obligations"
     },
     "rust_f64_replay": {
       "status": "passed",
-      "obligation_count": 1966,
+      "obligation_count": 1982,
       "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
     },
     "fstar": {
@@ -123,21 +123,21 @@
     }
   ],
   "extension_precision": {
-    "domain_count": 368,
-    "green_count": 368,
+    "domain_count": 371,
+    "green_count": 371,
     "failing_domains": [],
     "aspiration_scalar_debt_count": 0
   },
   "scientific_pushback_audit": {
-    "extension_domain_count": 367,
-    "green_gate_pass_count": 367,
+    "extension_domain_count": 371,
+    "green_gate_pass_count": 371,
     "green_gate_fail_count": 0,
     "aspiration_scalar_debt_count": 0,
     "stumped_observable_count": 13,
     "stumped_without_benchmark_row": 0,
     "preregistered_predictions_tracked": 1,
-    "domains_missing_uncertainty_metadata": 0,
-    "domains_raw_eff_divergence": 0
+    "domains_missing_uncertainty_metadata": 1,
+    "domains_raw_eff_divergence": 1
   },
   "pushback_avenues": [
     {

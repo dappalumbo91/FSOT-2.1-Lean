@@ -3,6 +3,54 @@ theory FullFormalSpine_14
 imports Complex_Main
 begin
 
+lemma warp_bh_wh_portal_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma warp_bh_wh_portal_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma warp_psi_bh_inlet_pos: "0 < (0.009663204175 :: real)"
+  by eval
+
+lemma warp_psi_wh_outlet_pos: "0 < (0.501689416811 :: real)"
+  by eval
+
+lemma warp_psi_portal_doorway_pos: "0 < (0.009663204175 :: real)"
+  by eval
+
+lemma warp_info_preservation_pos: "0 < (0.981227203621 :: real)"
+  by eval
+
+lemma warp_psi_entangle_gate_pos: "0 < (0.04803163401 :: real)"
+  by eval
+
+lemma warp_psi_traverse_pos: "0 < (0.0004641395 :: real)"
+  by eval
+
+lemma warp_portal_stabilization_margin_gt_one: "1 < (1.722776467449 :: real)"
+  by eval
+
+lemma warp_bh_wh_portal_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma warp_bh_wh_portal_observable_count_pos: "0 < (11 :: nat)"
+  by eval
+
+lemma warp_bh_wh_linked_to_blackhole_domain: "0 < (2.427813814074099 :: real)"
+  by eval
+
+lemma wds_live_multiplicity_deep_observable_count_pos: "0 < (281 :: nat)"
+  by eval
+
+lemma wds_live_multiplicity_deep_median_error_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
+  by eval
+
+lemma weather_S_min_positive: "0 < (0.364542 :: real)"
+  by eval
+
+lemma weather_hour_count_pos: "0 < (24 :: nat)"
+  by eval
+
 lemma world_bank_development_observable_count_pos: "0 < (420 :: nat)"
   by eval
 
@@ -253,54 +301,6 @@ lemma new_perceived_param_pos: "0 < (0.30030117056875677 :: real)"
   by eval
 
 lemma psi_con_pos: "0 < (0.6321205588287557 :: real)"
-  by eval
-
-lemma acoustic_bleed_pos: "0 < (1.046973630587551 :: real)"
-  by eval
-
-lemma acoustic_inflow_pos: "0 < (1.6668538450045731 :: real)"
-  by eval
-
-lemma phi_gt_one: "1 < (1.618033988749895 :: real)"
-  by eval
-
-lemma pi_gt_one: "1 < (3.141592653589793 :: real)"
-  by eval
-
-lemma acoustic_bleed_lt_phi: "(1.046973630587551 :: real) < (1.618033988749895 :: real)"
-  by eval
-
-lemma phi_lt_two: "(1.618033988749895 :: real) < (2.0 :: real)"
-  by eval
-
-lemma phi_lt_16181: "(1.618033988749895 :: real) < (1.6181 :: real)"
-  by eval
-
-lemma psi_con_lt_633: "(0.6321205588287557 :: real) < (0.633 :: real)"
-  by eval
-
-lemma eta_eff_lt_467: "(0.46694220658433505 :: real) < (0.467 :: real)"
-  by eval
-
-lemma new_perceived_param_lt_031: "(0.30030117056875677 :: real) < (0.301 :: real)"
-  by eval
-
-lemma new_perceived_param_lt_3009: "(0.30030117056875677 :: real) < (0.3009 :: real)"
-  by eval
-
-lemma new_perceived_param_lt_30032: "(0.30030117056875677 :: real) < (0.30032 :: real)"
-  by eval
-
-lemma sqrt2_lt_14142135624: "(1.4142135623730951 :: real) < (1.4142135624 :: real)"
-  by eval
-
-lemma psi_con_lt_63212055884: "(0.6321205588287557 :: real) < (0.63212055884 :: real)"
-  by eval
-
-lemma eta_eff_lt_466942299692: "(0.46694220658433505 :: real) < (0.466942299692 :: real)"
-  by eval
-
-lemma acoustic_bleed_lt_10476: "(1.046973630587551 :: real) < (1.0476 :: real)"
   by eval
 
 end

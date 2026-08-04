@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T22:09:12.038314+00:00",
+  "generated_at": "2026-08-04T04:37:36.928958+00:00",
   "tier": "87_rust_lean_bridge_qemu_disk_boot",
   "serial_harness": {
     "status": "passed",
@@ -23,7 +23,7 @@
     "golden_match": true,
     "emergence_detected": true,
     "returncode": 33,
-    "serial_capture": "FSOT 2.0 Bare-Metal Observer Kernel POC v0.1\nFluid Spacetime Omni-Theory - Parameter Free | QEMU x86_64\nBuilt with Rust no_std | FSOT Native Scalar Engine\n\nMapping boot to FSOT domain: KernelInit (D_eff=8, observed=True)\nComputed FSOT Scalar S_D_chaotic = 0.099288\nInterpretation: POSITIVE (Emergence) - New information flow detected.\nSystem entering high-coherence boot phase. Fluid spacetime active.\n\nFSOT k-scaled output demonstrates ~99% domain fit principle in bare metal.\nThis POC proves FSOT scalar computation is viable in no-OS environments.\n\nTier 87 disk boot complete \u2014 halting for harness capture.\nFSOT_QEMU_BOOT_SCALAR=0.09928895626861720\nFSOT_QEMU_CANONICAL=0.09928895626861720\nFSOT_QEMU_DISK_BOOT=ok\n"
+    "serial_capture": "FSOT 2.0 Bare-Metal Observer Kernel POC v0.1\nFluid Spacetime Omni-Theory - Parameter Free | QEMU x86_64\nBuilt with Rust no_std | FSOT Native Scalar Engine\n\nMapping boot to FSOT domain: KernelInit (D_eff=8, observed=True)\nComputed FSOT Scalar S_D_chaotic = 0.099288\nInterpretation: POSITIVE (Emergence) - New information flow detected.\nSystem entering high-coherence boot phase. Fluid spacetime active.\n\nFSOT k-scaled output demonstrates ~99% domain fit principle in bare metal.\nThis POC proves FSOT scalar computation is viable in no-OS environments.\n\nHardware: processor collapse+warp + RAM crystal pack on bare metal.\nFSOT_HW_COLLAPSE_THETA=0.91746637746537231\nFSOT_HW_VRAM_USABLE_MIB=12258.588193\nFSOT_HW_SM_COUNT=48\nFSOT_HW_STATES_PER_U64=32\nFSOT_HW_PACK_OK=1\nTier 87 disk boot complete \u2014 halting for harness capture.\nFSOT_QEMU_BOOT_SCALAR=0.09928895626861720\nFSOT_QEMU_CANONICAL=0.09928895626861720\nFSOT_QEMU_DISK_BOOT=ok\nFSOT_QEMU_HW_COLLAPSE_THETA=0.91746637746537231\nFSOT_QEMU_HW_VRAM_USABLE_MIB=12258.588193\nFSOT_QEMU_HW_PACK_OK=1\nFSOT_QEMU_HW_OVERALL=ok\n"
   },
   "qemu": {
     "status": "passed",
@@ -53,7 +53,7 @@
       "golden_match": true,
       "emergence_detected": true,
       "returncode": 33,
-      "serial_capture": "FSOT 2.0 Bare-Metal Observer Kernel POC v0.1\nFluid Spacetime Omni-Theory - Parameter Free | QEMU x86_64\nBuilt with Rust no_std | FSOT Native Scalar Engine\n\nMapping boot to FSOT domain: KernelInit (D_eff=8, observed=True)\nComputed FSOT Scalar S_D_chaotic = 0.099288\nInterpretation: POSITIVE (Emergence) - New information flow detected.\nSystem entering high-coherence boot phase. Fluid spacetime active.\n\nFSOT k-scaled output demonstrates ~99% domain fit principle in bare metal.\nThis POC proves FSOT scalar computation is viable in no-OS environments.\n\nTier 87 disk boot complete \u2014 halting for harness capture.\nFSOT_QEMU_BOOT_SCALAR=0.09928895626861720\nFSOT_QEMU_CANONICAL=0.09928895626861720\nFSOT_QEMU_DISK_BOOT=ok\n"
+      "serial_capture": "FSOT 2.0 Bare-Metal Observer Kernel POC v0.1\nFluid Spacetime Omni-Theory - Parameter Free | QEMU x86_64\nBuilt with Rust no_std | FSOT Native Scalar Engine\n\nMapping boot to FSOT domain: KernelInit (D_eff=8, observed=True)\nComputed FSOT Scalar S_D_chaotic = 0.099288\nInterpretation: POSITIVE (Emergence) - New information flow detected.\nSystem entering high-coherence boot phase. Fluid spacetime active.\n\nFSOT k-scaled output demonstrates ~99% domain fit principle in bare metal.\nThis POC proves FSOT scalar computation is viable in no-OS environments.\n\nHardware: processor collapse+warp + RAM crystal pack on bare metal.\nFSOT_HW_COLLAPSE_THETA=0.91746637746537231\nFSOT_HW_VRAM_USABLE_MIB=12258.588193\nFSOT_HW_SM_COUNT=48\nFSOT_HW_STATES_PER_U64=32\nFSOT_HW_PACK_OK=1\nTier 87 disk boot complete \u2014 halting for harness capture.\nFSOT_QEMU_BOOT_SCALAR=0.09928895626861720\nFSOT_QEMU_CANONICAL=0.09928895626861720\nFSOT_QEMU_DISK_BOOT=ok\nFSOT_QEMU_HW_COLLAPSE_THETA=0.91746637746537231\nFSOT_QEMU_HW_VRAM_USABLE_MIB=12258.588193\nFSOT_QEMU_HW_PACK_OK=1\nFSOT_QEMU_HW_OVERALL=ok\n"
     },
     "returncode": 0
   },

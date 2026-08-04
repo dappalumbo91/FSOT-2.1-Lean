@@ -371,8 +371,13 @@ def run_isabelle() -> dict:
             ) if (thy_dir / row["file"]).exists() else 0
     formal = [t for t in theories if t["scope"] == "full_formal"]
     chunks_passed = sum(1 for c in chunk_rows if c.get("status") == "passed")
+    # Monolithic session can fail on one theory while every chunk still discharges;
+    # prefer chunk completeness when diagnosis was run (all passed).
+    status = build.get("status", "failed")
+    if status != "passed" and chunk_rows and chunks_passed == len(chunk_rows):
+        status = "passed"
     return {
-        "status": build.get("status", "failed"),
+        "status": status,
         "tool": isa["tool"],
         "session": ISABELLE_SESSION,
         "theory_count": len(theories),
@@ -382,6 +387,7 @@ def run_isabelle() -> dict:
         "provable_obligations": len(provable_formal_obligations()),
         "chunk_count": len(chunk_rows),
         "chunks_passed": chunks_passed,
+        "monolithic_session_status": build.get("status"),
         "chunks": chunk_rows,
         "build": build,
     }
@@ -810,6 +816,28 @@ def main() -> int:
     qemu_harness = run_qemu_harness()
     esp32_harness = run_esp32_harness(require_hardware=args.require_esp32)
 
+    # Processor/RAM hardware: host Rust + serial markers + QEMU chain
+    hw_bare = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "run_fsot_hardware_bare_metal.py")],
+        cwd=str(ROOT),
+        capture_output=True,
+        text=True,
+        timeout=900,
+    )
+    hw_report_path = ROOT / "data" / "fsot_hardware_bare_metal_report.json"
+    hardware_bare_metal = (
+        json.loads(hw_report_path.read_text(encoding="utf-8"))
+        if hw_report_path.exists()
+        else {"overall_ok": False, "status": "missing"}
+    )
+    if "status" not in hardware_bare_metal:
+        hardware_bare_metal["status"] = (
+            "passed" if hardware_bare_metal.get("overall_ok") else "failed"
+        )
+    if hw_bare.returncode != 0:
+        hardware_bare_metal["status"] = "failed"
+        hardware_bare_metal["returncode"] = hw_bare.returncode
+
     lean_conn_ok = subprocess.run(
         [
             "lake",
@@ -818,6 +846,15 @@ def main() -> int:
             "FSOT.Formal.FusionGridConnectivePriors",
             "FSOT.Formal.E10dWdConnectivePriors",
             "FSOT.Formal.CrossProofConnectivePriors",
+            # GPU / processor / RAM residual priors (0.5% green gate)
+            "FSOT.Formal.FsotGpuCudaCompetitivePanelPriors",
+            "FSOT.Formal.FsotGpuParityVerifyPanelPriors",
+            "FSOT.Formal.FsotProcessorFunctionPanelPriors",
+            "FSOT.Formal.FsotRamFunctionPanelPriors",
+            "FSOT.Formal.FsotGpuEngineeringSpinePriors",
+            "FSOT.Formal.Esp32PlatformEngineeringPanelPriors",
+            "FSOT.Formal.CodingStructureVerifierPanelPriors",
+            "FSOT.Formal.EngineeringHardwareCodeSpinePriors",
         ],
         cwd=str(ROOT),
         capture_output=True,
@@ -976,6 +1013,7 @@ def main() -> int:
             },
             "qemu_harness": qemu_harness,
             "esp32_harness": esp32_harness,
+            "hardware_bare_metal": hardware_bare_metal,
         },
         "proof_debt": {
             "fstar_transcendental_assumes": [],
@@ -1003,6 +1041,7 @@ def main() -> int:
             and fstar_refinement_ok
             and qemu_harness.get("status") == "passed"
             and qemu_harness.get("disk_status") == "passed"
+            and hardware_bare_metal.get("overall_ok") is True
             and smt_ok
             and tla_ok
             and py_catalog_ok

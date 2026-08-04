@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T22:36:17.456841+00:00",
+  "generated_at": "2026-08-04T04:37:44.273990+00:00",
   "version": "1.0",
   "purpose": "Human-readable labels for opaque FSOT codes (tiers, FO/PRED/rules, obligations)",
   "tiers": {
@@ -171,6 +171,27 @@
       "tier_label": "Tier 22",
       "lean_module": "FSOT.Formal.SmallBodyOrbitsPriors",
       "D_eff": 18
+    },
+    "TOE_Dynamics": {
+      "display_name": "TOE Dynamics",
+      "tier": 99,
+      "tier_label": "Tier 99",
+      "lean_module": "FSOT.Formal.Domains",
+      "D_eff": 15
+    },
+    "TOE_Limit_Recovery": {
+      "display_name": "TOE Limit Recovery",
+      "tier": 99,
+      "tier_label": "Tier 99",
+      "lean_module": "FSOT.Formal.Domains",
+      "D_eff": 22
+    },
+    "TOE_Contested_Sector_Refresh": {
+      "display_name": "TOE Contested Sector Refresh",
+      "tier": 99,
+      "tier_label": "Tier 99",
+      "lean_module": "FSOT.Formal.Domains",
+      "D_eff": 25
     },
     "MPCORB_Minor_Planet_Catalog": {
       "display_name": "MPCORB Minor Planet Catalog",

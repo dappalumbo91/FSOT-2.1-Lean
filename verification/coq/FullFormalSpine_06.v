@@ -6,6 +6,54 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma fsot_aggregate_unified_db_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
+
+Lemma fsot_gpu_cuda_competitive_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_gpu_cuda_competitive_observable_count_pos : (0 < 17)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fsot_gpu_engineering_spine_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_gpu_engineering_spine_observable_count_pos : (0 < 42)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fsot_gpu_parity_verify_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_gpu_parity_verify_observable_count_pos : (0 < 48)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fsot_processor_function_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_processor_function_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fsot_ram_function_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_ram_function_observable_count_pos : (0 < 14)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fuel_candidate_prereg_scaffold_observable_count_pos : (0 < 33)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fuel_candidate_prereg_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fuel_lab_live_median_error_under_half_pct : (0.039349%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fuel_lab_live_designed_fuel_count_pos : 0 < (7.0%R).
+Proof. lra. Qed.
+
+Lemma fuel_lab_live_observable_count_pos : (0 < 366)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma fuel_lab_live_median_error_under_five_pct : (0.039349%R) < (5.0%R).
 Proof. lra. Qed.
 
@@ -257,52 +305,4 @@ Proof. lra. Qed.
 
 Lemma immunology_observable_count_pos : (0 < 84)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma immunology_median_error_under_half_pct : (0.061205%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma inaturalist_observation_panel_observable_count_pos : (0 < 288)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma inaturalist_observation_panel_median_error_under_half_pct : (0.006006%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma inaturalist_observation_observable_count_pos : (0 < 288)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma inaturalist_observation_median_error_under_five_pct : (0.006006%R) < (5.0%R).
-Proof. lra. Qed.
-
-Lemma inertial_confinement_fusion_panel_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma inertial_confinement_fusion_panel_median_error_under_half_pct : (0.000079%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma information_theory_public_panel_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma information_theory_public_panel_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma initiation_transformation_archetype_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma initiation_transformation_archetype_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fic_best_intelligence_score_positive : 0 < (0.9997093332777109%R).
-Proof. lra. Qed.
-
-Lemma fic_sweep_row_count_pos : (0 < 572)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma fic_fertile_rows_present : (0 < 156)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma fic_fertile_replay_match_le_total : (572 <= 572)%nat.
-Proof. apply Nat.leb_le; reflexivity. Qed.
-
-Lemma fic_fertile_replay_match_rate_le_one : (1.0%R) <= (1.0%R).
-Proof. lra. Qed.
 

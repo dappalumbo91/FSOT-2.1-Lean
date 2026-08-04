@@ -6,6 +6,54 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma medical_raw_S_positive : 0 < (0.7287135707250552%R).
+Proof. lra. Qed.
+
+Lemma blackhole_raw_S_positive : 0 < (2.427813814074099%R).
+Proof. lra. Qed.
+
+Lemma consciousness_raw_S_positive : 0 < (2.4991706281862376%R).
+Proof. lra. Qed.
+
+Lemma molecular_raw_S_positive : 0 < (0.7201315148027019%R).
+Proof. lra. Qed.
+
+Lemma material_raw_S_positive : 0 < (0.7978167460880297%R).
+Proof. lra. Qed.
+
+Lemma biological_raw_S_positive : 0 < (1.0583105195018667%R).
+Proof. lra. Qed.
+
+Lemma cellular_raw_S_positive : 0 < (1.0583105195018667%R).
+Proof. lra. Qed.
+
+Lemma nuclear_raw_S_positive : 0 < (2.192436781833356%R).
+Proof. lra. Qed.
+
+Lemma energy_raw_S_positive : 0 < (1.872760423200424%R).
+Proof. lra. Qed.
+
+Lemma cosmological_raw_S_negative : (-1.1956926285882763%R) < 0%R.
+Proof. lra. Qed.
+
+Lemma dark_energy_raw_S_negative : (-1.1349793149885588%R) < 0%R.
+Proof. lra. Qed.
+
+Lemma cmb_raw_S_negative : (-1.0099710610507393%R) < 0%R.
+Proof. lra. Qed.
+
+Lemma ai_raw_S_non_positive : (-0.3514171596284352%R) <= 0.
+Proof. lra. Qed.
+
+Lemma c_cosm_pos : 0 < (0.061803398874989486%R).
+Proof. lra. Qed.
+
+Lemma alpha_s_MZ_pos : 0 < (0.11709966304863834%R).
+Proof. lra. Qed.
+
+Lemma p_base_pos : 0 < (0.21234577623937845%R).
+Proof. lra. Qed.
+
 Lemma delta_lambda_cosm_pos : 0 < (0.0216083%R).
 Proof. lra. Qed.
 

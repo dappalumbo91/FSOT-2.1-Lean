@@ -3,6 +3,54 @@ theory FullFormalSpine_08
 imports Complex_Main
 begin
 
+lemma material_in_silico_screening_scaffold_observable_count_pos: "0 < (42 :: nat)"
+  by eval
+
+lemma material_in_silico_screening_scaffold_median_error_under_half_pct: "(0.00206 :: real) < (0.5 :: real)"
+  by eval
+
+lemma material_property_verification_scaffold_observable_count_pos: "0 < (79 :: nat)"
+  by eval
+
+lemma material_property_verification_scaffold_median_error_under_half_pct: "(0.002271 :: real) < (0.5 :: real)"
+  by eval
+
+lemma materials_creep_fracture_depth_panel_observable_count_pos: "0 < (71 :: nat)"
+  by eval
+
+lemma materials_creep_fracture_depth_panel_median_error_under_half_pct: "(0.011734 :: real) < (0.5 :: real)"
+  by eval
+
+lemma materials_engineering_pooled_median_under_half_pct: "(0.027170334947435038 :: real) < (0.5 :: real)"
+  by eval
+
+lemma materials_engineering_headline_median_under_half_pct: "(0.027170334947435038 :: real) < (0.5 :: real)"
+  by eval
+
+lemma materials_engineering_observable_count_pos: "0 < (87 :: nat)"
+  by eval
+
+lemma materials_engineering_section_count_pos: "0 < (7 :: nat)"
+  by eval
+
+lemma materials_engineering_beats_sota_headlines_pos: "0 < (6 :: nat)"
+  by eval
+
+lemma materials_genome_crosswalk_observable_count_pos: "0 < (38 :: nat)"
+  by eval
+
+lemma materials_genome_crosswalk_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma materials_project_live_panel_observable_count_pos: "0 < (141 :: nat)"
+  by eval
+
+lemma materials_project_live_panel_median_error_under_half_pct: "(0.011734 :: real) < (0.5 :: real)"
+  by eval
+
+lemma materials_species_bridge_live_panel_observable_count_pos: "0 < (150 :: nat)"
+  by eval
+
 lemma materials_species_bridge_live_panel_median_error_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
   by eval
 
@@ -253,54 +301,6 @@ lemma neuroeconomics_observable_count_pos: "0 < (65 :: nat)"
   by eval
 
 lemma neuroeconomics_median_error_under_half_pct: "(0.10502056403980387 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neuroimmunology_pooled_median_under_half_pct: "(0.05041956982053305 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neuroimmunology_headline_median_under_half_pct: "(0.060502 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neuroimmunology_observable_count_pos: "0 < (92 :: nat)"
-  by eval
-
-lemma neuroimmunology_section_count_pos: "0 < (7 :: nat)"
-  by eval
-
-lemma neuroimmunology_beats_sota_headlines_pos: "0 < (6 :: nat)"
-  by eval
-
-lemma neurolab_gaps_math_spine_observable_count_pos: "0 < (35 :: nat)"
-  by eval
-
-lemma neurolab_gaps_math_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neurolab_residual_math_spine_observable_count_pos: "0 < (28 :: nat)"
-  by eval
-
-lemma neurolab_residual_math_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cohort_canonical_scalar_min_positive: "0 < (0.25241247006708056 :: real)"
-  by eval
-
-lemma canonical_bridge_scale_gt_one: "1 < (1.1099062765752818 :: real)"
-  by eval
-
-lemma allen_cohort_cell_count_pos: "0 < (2166 :: nat)"
-  by eval
-
-lemma neurolab_smiles_mapped_records_pos: "0 < (1470 :: nat)"
-  by eval
-
-lemma allen_cohort_fi_median_rel_err_lt_thirty_pct: "(0.24631729333045121 :: real) < (0.3 :: real)"
-  by eval
-
-lemma hero_certified_fi_mean_rel_err_lt_fifteen_pct: "(0.07002728543379658 :: real) < (0.15 :: real)"
-  by eval
-
-lemma hero_canonical_bridge_mean_rel_err_lt_twelve_pct: "(0.07354375821147667 :: real) < (0.12 :: real)"
   by eval
 
 end

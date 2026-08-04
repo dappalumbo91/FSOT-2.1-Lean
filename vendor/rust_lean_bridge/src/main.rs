@@ -306,6 +306,42 @@ fn kernel_boot(_boot_info: &'static BootInfo) -> ! {
     out.write_str("\nFSOT k-scaled output demonstrates ~99% domain fit principle in bare metal.\n");
     out.write_str("This POC proves FSOT scalar computation is viable in no-OS environments.\n\n");
 
+    // Processor / RAM seed laws (same as fsot_hardware_kernel / Lean residual panels)
+    let collapse_theta = C_EFF * P_VAR;
+    let vram_usable_mib = C_EFF * 12800.0;
+    let mut pack_word: u64 = 0;
+    let mut i: u32 = 0;
+    while i < 32 {
+        let c = (i % 3) as u64;
+        pack_word |= c << (2 * i);
+        i += 1;
+    }
+    let pack_roundtrip_ok = {
+        let mut ok = true;
+        let mut j: u32 = 0;
+        while j < 32 {
+            let got = ((pack_word >> (2 * j)) & 0b11) as u32;
+            if got != (j % 3) {
+                ok = false;
+            }
+            j += 1;
+        }
+        ok
+    };
+
+    out.write_str("Hardware: processor collapse+warp + RAM crystal pack on bare metal.\n");
+    out.write_str("FSOT_HW_COLLAPSE_THETA=");
+    out.write_f64(collapse_theta, 17);
+    out.write_str("\nFSOT_HW_VRAM_USABLE_MIB=");
+    out.write_f64(vram_usable_mib, 6);
+    out.write_str("\nFSOT_HW_SM_COUNT=48\n");
+    out.write_str("FSOT_HW_STATES_PER_U64=32\n");
+    out.write_str(if pack_roundtrip_ok {
+        "FSOT_HW_PACK_OK=1\n"
+    } else {
+        "FSOT_HW_PACK_OK=0\n"
+    });
+
     out.write_str("Tier 87 disk boot complete — halting for harness capture.\n");
     drop(out);
 
@@ -316,6 +352,18 @@ fn kernel_boot(_boot_info: &'static BootInfo) -> ! {
     serial.write_f64(BOOT_SCALAR_CANONICAL, 17);
     serial.write_str("\n");
     serial.write_str("FSOT_QEMU_DISK_BOOT=ok\n");
+    serial.write_str("FSOT_QEMU_HW_COLLAPSE_THETA=");
+    serial.write_f64(collapse_theta, 17);
+    serial.write_str("\n");
+    serial.write_str("FSOT_QEMU_HW_VRAM_USABLE_MIB=");
+    serial.write_f64(vram_usable_mib, 6);
+    serial.write_str("\n");
+    serial.write_str(if pack_roundtrip_ok {
+        "FSOT_QEMU_HW_PACK_OK=1\n"
+    } else {
+        "FSOT_QEMU_HW_PACK_OK=0\n"
+    });
+    serial.write_str("FSOT_QEMU_HW_OVERALL=ok\n");
 
     unsafe {
         outb(0xf4, 0x10);

@@ -6,6 +6,54 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma osti_doe_science_median_error_under_five_pct : (0.01382%R) < (5.0%R).
+Proof. lra. Qed.
+
+Lemma overflow_carry_emergence_panel_observable_count_pos : (0 < 29)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma overflow_carry_emergence_panel_median_error_under_half_pct : (0.009504%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma paleoclimate_ext_pooled_median_under_half_pct : (0.015015854077432778%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma paleoclimate_ext_headline_median_under_half_pct : (0.015015854077432778%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma paleoclimate_ext_observable_count_pos : (0 < 40)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma paleoclimate_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma paleoclimate_panel_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma paleoclimate_panel_median_error_under_half_pct : (0.006006%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma paleoclimate_observable_count_pos : (0 < 40)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma paleoclimate_median_error_under_half_pct : (0.015015854077432778%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma paleontology_ext_pooled_median_under_half_pct : (0.017836062884406152%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma paleontology_ext_headline_median_under_half_pct : (0.017836062884406152%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma paleontology_ext_observable_count_pos : (0 < 630)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma paleontology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma paleontology_panel_observable_count_pos : (0 < 120)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma paleontology_panel_median_error_under_half_pct : (0.0167305%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -257,52 +305,4 @@ Proof. repeat split; reflexivity. Qed.
 
 Lemma serine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
-
-Lemma threonine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma valine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma tryptophan_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma tyrosine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma protein_amino_acid_genomic_identity : (20.0%R) = (20.0%R).
-Proof. reflexivity. Qed.
-
-Lemma psychology_gap_fill_pooled_median_under_half_pct : (0.03150616921194649%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma psychology_gap_fill_headline_median_under_half_pct : (0.03150616921194649%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma psychology_gap_fill_observable_count_pos : (0 < 160)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma psychology_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma psychology_psychometrics_depth_panel_observable_count_pos : (0 < 23)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma psychology_psychometrics_depth_panel_median_error_under_half_pct : (0.031506%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma pubchem_compound_properties_observable_count_pos : (0 < 500)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma pubchem_compound_properties_median_error_under_five_pct : (0.002637%R) < (5.0%R).
-Proof. lra. Qed.
-
-Lemma pubchem_live_deep_observable_count_pos : (0 < 5254)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma pubchem_live_deep_median_error_under_half_pct : (0.032631%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma pubchem_stability_panel_observable_count_pos : (0 < 59)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

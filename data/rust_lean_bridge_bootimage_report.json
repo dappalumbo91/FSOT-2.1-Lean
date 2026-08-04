@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-11T00:26:22.646537+00:00",
+  "generated_at": "2026-08-04T03:45:59.661643+00:00",
   "tier": "87_rust_lean_bridge_bootimage",
-  "kernel_root": "vendor/fsot_compute.py\\vendor\\rust_lean_bridge",
+  "kernel_root": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\rust_lean_bridge",
   "bootimage": "C:\\Users\\damia\\.cargo\\bin\\bootimage.EXE",
   "build": {
     "status": "passed",
-    "source": "vendor/fsot_compute.py\\vendor\\rust_lean_bridge\\target\\x86_64-fsot-kernel\\release\\bootimage-fsot-observer-kernel.bin",
-    "output": "vendor/fsot_compute.py\\verification\\qemu\\fsot-kernel-bios.bin",
-    "size_bytes": 85504,
+    "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\rust_lean_bridge\\target\\x86_64-fsot-kernel\\release\\bootimage-fsot-observer-kernel.bin",
+    "output": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\qemu\\fsot-kernel-bios.bin",
+    "size_bytes": 90112,
     "boot_signature": "55aa",
     "returncode": 0,
-    "stderr_tail": "Building kernel\nBuilding bootloader\nCreated bootimage for `fsot-observer-kernel` at `vendor/fsot_compute.py\\vendor\\rust_lean_bridge\\target\\x86_64-fsot-kernel\\release\\bootimage-fsot-observer-kernel.bin`\nwarning: function `inb` is never used\n  --> src\\main.rs:68:11\n   |\n68 | unsafe fn inb(port: u16) -> u8 {\n   |           ^^^\n   |\n   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default\n\nwarning: `fsot-observer-kernel` (bin \"fsot-observer-kernel\") generated 1 warning\n    Finished `release` profile [optimized] target(s) in 0.26s\n    Finished `release` profile [optimized + debuginfo] target(s) in 0.26s\n"
+    "stderr_tail": "Building kernel\nBuilding bootloader\nCreated bootimage for `fsot-observer-kernel` at `C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\rust_lean_bridge\\target\\x86_64-fsot-kernel\\release\\bootimage-fsot-observer-kernel.bin`\n   Compiling compiler_builtins v0.1.160 (C:\\Users\\damia\\.rustup\\toolchains\\nightly-x86_64-pc-windows-msvc\\lib\\rustlib\\src\\rust\\library\\compiler-builtins\\compiler-builtins)\n   Compiling core v0.0.0 (C:\\Users\\damia\\.rustup\\toolchains\\nightly-x86_64-pc-windows-msvc\\lib\\rustlib\\src\\rust\\library\\core)\n   Compiling libm v0.2.16\n   Compiling bootloader v0.9.35\n   Compiling bit_field v0.10.3\n   Compiling fsot-observer-kernel v0.1.0 (C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\rust_lean_bridge)\nwarning: function `inb` is never used\n  --> src\\main.rs:68:11\n   |\n68 | unsafe fn inb(port: u16) -> u8 {\n   |           ^^^\n   |\n   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default\n\nwarning: `fsot-observer-kernel` (bin \"fsot-observer-kernel\") generated 1 warning\n    Finished `release` profile [optimized] target(s) in 18.43s\n   Compiling compiler_builtins v0.1.160 (C:\\Users\\damia\\.rustup\\toolchains\\nightly-x86_64-pc-windows-msvc\\lib\\rustlib\\src\\rust\\library\\compiler-builtins\\compiler-builtins)\n   Compiling core v0.0.0 (C:\\Users\\damia\\.rustup\\toolchains\\nightly-x86_64-pc-windows-msvc\\lib\\rustlib\\src\\rust\\library\\core)\n   Compiling serde v1.0.116\n   Compiling bitflags v1.2.1\n   Compiling llvm-tools v0.1.1\n   Compiling x86_64 v0.14.7\n   Compiling toml v0.5.6\n   Compiling bootloader v0.9.35 (C:\\Users\\damia\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\bootloader-0.9.35)\n   Compiling bit_field v0.10.1\n   Compiling zero v0.1.2\n   Compiling volatile v0.4.4\n   Compiling usize_conversions v0.2.0\n   Compiling rlibc v1.0.0\n   Compiling fixedvec v0.2.4\n   Compiling xmas-elf v0.6.2\n    Finished `release` profile [optimized + debuginfo] target(s) in 18.74s\n"
   },
   "overall_ok": true
 }

@@ -282,6 +282,12 @@ lemma code_genome_structure_observable_count_pos: "0 < (205 :: nat)"
 lemma code_genome_structure_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
+lemma coding_structure_verifier_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma coding_structure_verifier_observable_count_pos: "0 < (18 :: nat)"
+  by eval
+
 lemma codon_table_count_eq_sixty_four: "(64 :: nat) = (64 :: nat)"
   by eval
 
@@ -295,12 +301,6 @@ lemma codon_aaa_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1
   by eval
 
 lemma codon_aac_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_aac_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_aag_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
 end

@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-08-04T04:37:37.147024+00:00",
+  "tier": "91_hardware_processor_ram_bare_metal",
+  "purpose": "Executable processor/RAM FSOT laws on host Rust + serial markers, chained with QEMU no_std bare-metal scalar boot.",
+  "cargo_tests": {
+    "status": "passed",
+    "crate": "fsot_hardware_kernel",
+    "returncode": 0,
+    "stderr_tail": "\nrunning 5 tests\n.....\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
+  },
+  "hardware_serial": {
+    "status": "passed",
+    "crate": "fsot_hardware_serial",
+    "markers": {
+      "collapse_theta": 0.9174663774653723,
+      "c_eff": 0.9577022026205613,
+      "states_per_u64": 32,
+      "warp_size": 32,
+      "vram_usable_mib": 12258.588193543184,
+      "vram_measured_mib": 12226.56,
+      "vram_err_pct": 0.2619558857371566,
+      "sm_count": 48,
+      "density_gain": 4,
+      "sectors": 6,
+      "pack_word": 5270498306774157604,
+      "overall": "ok"
+    },
+    "checks": {
+      "exit_ok": true,
+      "overall_ok": true,
+      "theta_ok": true,
+      "warp_ok": true,
+      "sm_ok": true,
+      "vram_err_ok": true,
+      "density_ok": true,
+      "sectors_ok": true,
+      "emergence": true
+    },
+    "returncode": 0,
+    "stderr_tail": "FSOT Hardware Kernel \u2014 Processor + RAM (seed-closed)\nFluid Spacetime Omni-Theory | host serial / bare-metal parity\n\nProcessor function:\n  collapse_theta = C_eff\u00b7P_var = 0.91746637746537230\n  warp_size = states_per_u64 = 32\n  sm_trinary_times_16 = 48\n  sm_phi8_plus_1 = 47.978714\n  mean_A_frac = 0.017956 \u2264 \u03c6\u207b\u2074 = 0.145898 \u2192 PASS\n\nRAM function:\n  usable_mib = C_eff\u00b712800 = 12258.588194 (measured 12226.56, err 0.261956%)\n  density_gain_vs_u8 = 4  sectors = 6  pack_ok = true\n\nInterpretation: POSITIVE (Hardware gates green) \u2014 processor/RAM laws hold.\n\nFSOT_HW_COLLAPSE_THETA=0.91746637746537230\nFSOT_HW_C_EFF=0.95770220262056127\nFSOT_HW_STATES_PER_U64=32\nFSOT_HW_WARP_SIZE=32\nFSOT_HW_VRAM_USABLE_MIB=12258.58819354318438855\nFSOT_HW_VRAM_MEASURED_MIB=12226.55999999999949068\nFSOT_HW_VRAM_ERR_PCT=0.26195588573715661\nFSOT_HW_SM_COUNT=48\nFSOT_HW_DENSITY_GAIN=4\nFSOT_HW_SECTORS=6\nFSOT_HW_PACK_WORD=5270498306774157604\nFSOT_HW_OVERALL=ok\n"
+  },
+  "qemu_bare_metal": {
+    "status": "passed",
+    "overall_ok": true,
+    "serial": "passed",
+    "disk": "passed",
+    "qemu": "passed",
+    "returncode": 0,
+    "stderr_tail": "RUST_LEAN_BRIDGE QEMU HARNESS (Tier 87)\n  serial: passed boot=0.09928895626861721\n  disk: passed boot=0.0992889562686172 disk_boot=ok\n  qemu: passed (QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a))\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\rust_lean_bridge_qemu_harness_report.json\n"
+  },
+  "overall_ok": true,
+  "seed_refs": {
+    "collapse_theta": 0.9174663774653723,
+    "c_eff": 0.9577022026205613,
+    "vram_usable_mib": 12258.588193543184,
+    "vram_measured_mib": 12226.56,
+    "green_pct": 0.5
+  }
+}

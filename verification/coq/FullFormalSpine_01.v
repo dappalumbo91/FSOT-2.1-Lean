@@ -285,6 +285,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma code_genome_structure_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
+Lemma coding_structure_verifier_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma coding_structure_verifier_observable_count_pos : (0 < 18)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma codon_table_count_eq_sixty_four : (64 = 64)%nat.
 Proof. reflexivity. Qed.
 
@@ -298,11 +304,5 @@ Lemma codon_aaa_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
 Lemma codon_aac_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_aac_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_aag_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

@@ -6,6 +6,54 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma warp_bh_wh_portal_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma warp_bh_wh_portal_panel_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma warp_psi_bh_inlet_pos : 0 < (0.009663204175%R).
+Proof. lra. Qed.
+
+Lemma warp_psi_wh_outlet_pos : 0 < (0.501689416811%R).
+Proof. lra. Qed.
+
+Lemma warp_psi_portal_doorway_pos : 0 < (0.009663204175%R).
+Proof. lra. Qed.
+
+Lemma warp_info_preservation_pos : 0 < (0.981227203621%R).
+Proof. lra. Qed.
+
+Lemma warp_psi_entangle_gate_pos : 0 < (0.04803163401%R).
+Proof. lra. Qed.
+
+Lemma warp_psi_traverse_pos : 0 < (0.000464139486%R).
+Proof. lra. Qed.
+
+Lemma warp_portal_stabilization_margin_gt_one : 1 < (1.722776467449%R).
+Proof. lra. Qed.
+
+Lemma warp_bh_wh_portal_pooled_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma warp_bh_wh_portal_observable_count_pos : (0 < 11)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma warp_bh_wh_linked_to_blackhole_domain : 0 < (2.427813814074099%R).
+Proof. lra. Qed.
+
+Lemma wds_live_multiplicity_deep_observable_count_pos : (0 < 281)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma wds_live_multiplicity_deep_median_error_under_half_pct : (0.026954%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma weather_S_min_positive : 0 < (0.364542%R).
+Proof. lra. Qed.
+
+Lemma weather_hour_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma world_bank_development_observable_count_pos : (0 < 420)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -256,53 +304,5 @@ Lemma new_perceived_param_pos : 0 < (0.30030117056875677%R).
 Proof. lra. Qed.
 
 Lemma psi_con_pos : 0 < (0.6321205588287557%R).
-Proof. lra. Qed.
-
-Lemma acoustic_bleed_pos : 0 < (1.046973630587551%R).
-Proof. lra. Qed.
-
-Lemma acoustic_inflow_pos : 0 < (1.6668538450045731%R).
-Proof. lra. Qed.
-
-Lemma phi_gt_one : 1 < (1.618033988749895%R).
-Proof. lra. Qed.
-
-Lemma pi_gt_one : 1 < (3.141592653589793%R).
-Proof. lra. Qed.
-
-Lemma acoustic_bleed_lt_phi : (1.046973630587551%R) < (1.618033988749895%R).
-Proof. lra. Qed.
-
-Lemma phi_lt_two : (1.618033988749895%R) < (2.0%R).
-Proof. lra. Qed.
-
-Lemma phi_lt_16181 : (1.618033988749895%R) < (1.6181%R).
-Proof. lra. Qed.
-
-Lemma psi_con_lt_633 : (0.6321205588287557%R) < (0.633%R).
-Proof. lra. Qed.
-
-Lemma eta_eff_lt_467 : (0.46694220658433505%R) < (0.467%R).
-Proof. lra. Qed.
-
-Lemma new_perceived_param_lt_031 : (0.30030117056875677%R) < (0.301%R).
-Proof. lra. Qed.
-
-Lemma new_perceived_param_lt_3009 : (0.30030117056875677%R) < (0.3009%R).
-Proof. lra. Qed.
-
-Lemma new_perceived_param_lt_30032 : (0.30030117056875677%R) < (0.30032%R).
-Proof. lra. Qed.
-
-Lemma sqrt2_lt_14142135624 : (1.4142135623730951%R) < (1.4142135624%R).
-Proof. lra. Qed.
-
-Lemma psi_con_lt_63212055884 : (0.6321205588287557%R) < (0.63212055884%R).
-Proof. lra. Qed.
-
-Lemma eta_eff_lt_466942299692 : (0.46694220658433505%R) < (0.466942299692%R).
-Proof. lra. Qed.
-
-Lemma acoustic_bleed_lt_10476 : (1.046973630587551%R) < (1.0476%R).
 Proof. lra. Qed.
 

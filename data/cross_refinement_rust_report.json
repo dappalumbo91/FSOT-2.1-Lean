@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-03T22:08:56.754121+00:00",
+  "generated_at": "2026-08-04T04:37:16.482687+00:00",
   "tier": "84_cross_refinement_rust",
   "connective_count": 24,
   "connective_python_f64_ok": 24,
-  "formal_provable_count": 1874,
-  "formal_python_f64_ok": 1874,
+  "formal_provable_count": 1890,
+  "formal_python_f64_ok": 1890,
   "transcendental_count": 68,
   "transcendental_python_f64_ok": 68,
   "rust_meta": {
     "connective_count": 24,
-    "formal_count": 1874,
+    "formal_count": 1890,
     "transcendental_count": 68,
-    "total_count": 1966,
+    "total_count": 1982,
     "chunks": [
       {
         "scope": "connective_spine",
@@ -80,7 +80,7 @@
       {
         "scope": "full_formal",
         "chunk": 12,
-        "count": 74
+        "count": 90
       },
       {
         "scope": "transcendental_bounds",
@@ -89,8 +89,8 @@
     ],
     "test_file": "replay_all_obligations.rs"
   },
-  "total_exported_to_rust": 1966,
-  "expected_total": 1966,
+  "total_exported_to_rust": 1982,
+  "expected_total": 1982,
   "overall_ok": true,
   "note": "Rust replay uses f64 execution; formal spine matches Python decimal when obligations are float-stable."
 }

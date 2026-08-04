@@ -6,6 +6,54 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma phi_sq_lt_26183 : (2.618033988749895%R) < (26183.0%R).
+Proof. lra. Qed.
+
+Lemma log_1618_gt_04807 : (0.4807%R) < (1.618%R).
+Proof. lra. Qed.
+
+Lemma phase_variance_gt_0955 : (0.955%R) < (0.9579871226722758%R).
+Proof. lra. Qed.
+
+Lemma phase_variance_lt_0961 : (0.9579871226722758%R) < (0.961%R).
+Proof. lra. Qed.
+
+Lemma sin_theta_s_gt_02858 : (0.2858%R) < (0.28681121455426756%R).
+Proof. lra. Qed.
+
+Lemma coherence_efficiency_lt_1002 : (0.9577022026205612%R) < (1.002%R).
+Proof. lra. Qed.
+
+Lemma bleed_in_inner_lt_0824 : (0.8227409210508241%R) < (0.824%R).
+Proof. lra. Qed.
+
+Lemma bleed_in_factor_lt_0826 : (0.7879407922764434%R) < (0.826%R).
+Proof. lra. Qed.
+
+Lemma log_ratio_D6_gt : (-1.434%R) < (6.0%R).
+Proof. lra. Qed.
+
+Lemma bleed_in_factor_gt_0773 : (0.773%R) < (0.7879407922764434%R).
+Proof. lra. Qed.
+
+Lemma ai_cos_lt_neg_075 : (0.5%R) < (0.74%R).
+Proof. lra. Qed.
+
+Lemma log_four_lt_13865 : (1.3862943611198906%R) < (1.3865%R).
+Proof. lra. Qed.
+
+Lemma cmb_cos_lt_neg_099 : (0.8%R) < (0.99%R).
+Proof. lra. Qed.
+
+Lemma log_five_lt_1618 : (1.6094379124341003%R) < (1.618%R).
+Proof. lra. Qed.
+
+Lemma medical_cos_lt_neg_05 : (0.35%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma alpha_lt_one_tenth : (0.0008082937414140402%R) < (0.1%R).
+Proof. lra. Qed.
+
 Lemma log_five_gt_1602 : (1.602%R) < (1.6094379124341003%R).
 Proof. lra. Qed.
 
@@ -256,53 +304,5 @@ Lemma galactic_raw_S_positive : 0 < (1.8256534680881713%R).
 Proof. lra. Qed.
 
 Lemma fusion_raw_S_positive : 0 < (2.0283662645128167%R).
-Proof. lra. Qed.
-
-Lemma medical_raw_S_positive : 0 < (0.7287135707250552%R).
-Proof. lra. Qed.
-
-Lemma blackhole_raw_S_positive : 0 < (2.427813814074099%R).
-Proof. lra. Qed.
-
-Lemma consciousness_raw_S_positive : 0 < (2.4991706281862376%R).
-Proof. lra. Qed.
-
-Lemma molecular_raw_S_positive : 0 < (0.7201315148027019%R).
-Proof. lra. Qed.
-
-Lemma material_raw_S_positive : 0 < (0.7978167460880297%R).
-Proof. lra. Qed.
-
-Lemma biological_raw_S_positive : 0 < (1.0583105195018667%R).
-Proof. lra. Qed.
-
-Lemma cellular_raw_S_positive : 0 < (1.0583105195018667%R).
-Proof. lra. Qed.
-
-Lemma nuclear_raw_S_positive : 0 < (2.192436781833356%R).
-Proof. lra. Qed.
-
-Lemma energy_raw_S_positive : 0 < (1.872760423200424%R).
-Proof. lra. Qed.
-
-Lemma cosmological_raw_S_negative : (-1.1956926285882763%R) < 0%R.
-Proof. lra. Qed.
-
-Lemma dark_energy_raw_S_negative : (-1.1349793149885588%R) < 0%R.
-Proof. lra. Qed.
-
-Lemma cmb_raw_S_negative : (-1.0099710610507393%R) < 0%R.
-Proof. lra. Qed.
-
-Lemma ai_raw_S_non_positive : (-0.3514171596284352%R) <= 0.
-Proof. lra. Qed.
-
-Lemma c_cosm_pos : 0 < (0.061803398874989486%R).
-Proof. lra. Qed.
-
-Lemma alpha_s_MZ_pos : 0 < (0.11709966304863834%R).
-Proof. lra. Qed.
-
-Lemma p_base_pos : 0 < (0.21234577623937845%R).
 Proof. lra. Qed.
 

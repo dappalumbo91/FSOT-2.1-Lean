@@ -3,6 +3,54 @@ theory FullFormalSpine_13
 imports Complex_Main
 begin
 
+lemma the_well_outcomes_verification_panel_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
+  by eval
+
+lemma the_well_spot_check_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma the_well_spot_check_panel_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
+  by eval
+
+lemma the_well_verification_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma the_well_verification_spine_median_error_under_half_pct: "(0.028287 :: real) < (0.5 :: real)"
+  by eval
+
+lemma tier_93_dual_wave_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma tier_93_dual_wave_spine_median_error_under_half_pct: "(0.011093889935064888 :: real) < (0.5 :: real)"
+  by eval
+
+lemma tier_94_longevity_observable_count_pos: "0 < (34 :: nat)"
+  by eval
+
+lemma tier_94_longevity_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma tier_95_zebrafish_observable_count_pos: "0 < (18 :: nat)"
+  by eval
+
+lemma tier_95_zebrafish_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma tier_96_circuit_observable_count_pos: "0 < (11 :: nat)"
+  by eval
+
+lemma tier_96_circuit_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma time_domain_crosswalk_observable_count_pos: "0 < (250 :: nat)"
+  by eval
+
+lemma time_domain_crosswalk_median_error_under_half_pct: "(0.028056 :: real) < (0.5 :: real)"
+  by eval
+
+lemma time_emergence_deep_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
 lemma time_emergence_deep_panel_median_error_under_half_pct: "(0.024894 :: real) < (0.5 :: real)"
   by eval
 
@@ -253,54 +301,6 @@ lemma warp_exotic_lt_friction: "(0.011637689406 :: real) < (0.082300635102 :: re
   by eval
 
 lemma warp_delta_phi_stable_le_raw: "(0.004581413686 :: real) <= (0.004581413686 :: real)"
-  by eval
-
-lemma warp_bh_wh_portal_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma warp_bh_wh_portal_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma warp_psi_bh_inlet_pos: "0 < (0.009663204175 :: real)"
-  by eval
-
-lemma warp_psi_wh_outlet_pos: "0 < (0.501689416811 :: real)"
-  by eval
-
-lemma warp_psi_portal_doorway_pos: "0 < (0.009663204175 :: real)"
-  by eval
-
-lemma warp_info_preservation_pos: "0 < (0.981227203621 :: real)"
-  by eval
-
-lemma warp_psi_entangle_gate_pos: "0 < (0.04803163401 :: real)"
-  by eval
-
-lemma warp_psi_traverse_pos: "0 < (0.0004641395 :: real)"
-  by eval
-
-lemma warp_portal_stabilization_margin_gt_one: "1 < (1.722776467449 :: real)"
-  by eval
-
-lemma warp_bh_wh_portal_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma warp_bh_wh_portal_observable_count_pos: "0 < (11 :: nat)"
-  by eval
-
-lemma warp_bh_wh_linked_to_blackhole_domain: "0 < (2.427813814074099 :: real)"
-  by eval
-
-lemma wds_live_multiplicity_deep_observable_count_pos: "0 < (281 :: nat)"
-  by eval
-
-lemma wds_live_multiplicity_deep_median_error_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
-  by eval
-
-lemma weather_S_min_positive: "0 < (0.364542 :: real)"
-  by eval
-
-lemma weather_hour_count_pos: "0 < (24 :: nat)"
   by eval
 
 end

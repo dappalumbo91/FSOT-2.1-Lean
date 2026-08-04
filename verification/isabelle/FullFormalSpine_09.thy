@@ -3,6 +3,54 @@ theory FullFormalSpine_09
 imports Complex_Main
 begin
 
+lemma neuroimmunology_pooled_median_under_half_pct: "(0.05041956982053305 :: real) < (0.5 :: real)"
+  by eval
+
+lemma neuroimmunology_headline_median_under_half_pct: "(0.060502 :: real) < (0.5 :: real)"
+  by eval
+
+lemma neuroimmunology_observable_count_pos: "0 < (92 :: nat)"
+  by eval
+
+lemma neuroimmunology_section_count_pos: "0 < (7 :: nat)"
+  by eval
+
+lemma neuroimmunology_beats_sota_headlines_pos: "0 < (6 :: nat)"
+  by eval
+
+lemma neurolab_gaps_math_spine_observable_count_pos: "0 < (35 :: nat)"
+  by eval
+
+lemma neurolab_gaps_math_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma neurolab_residual_math_spine_observable_count_pos: "0 < (28 :: nat)"
+  by eval
+
+lemma neurolab_residual_math_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cohort_canonical_scalar_min_positive: "0 < (0.25241247006708056 :: real)"
+  by eval
+
+lemma canonical_bridge_scale_gt_one: "1 < (1.1099062765752818 :: real)"
+  by eval
+
+lemma allen_cohort_cell_count_pos: "0 < (2166 :: nat)"
+  by eval
+
+lemma neurolab_smiles_mapped_records_pos: "0 < (1470 :: nat)"
+  by eval
+
+lemma allen_cohort_fi_median_rel_err_lt_thirty_pct: "(0.24631729333045121 :: real) < (0.3 :: real)"
+  by eval
+
+lemma hero_certified_fi_mean_rel_err_lt_fifteen_pct: "(0.07002728543379658 :: real) < (0.15 :: real)"
+  by eval
+
+lemma hero_canonical_bridge_mean_rel_err_lt_twelve_pct: "(0.07354375821147667 :: real) < (0.12 :: real)"
+  by eval
+
 lemma hero_canonical_bridge_delta_lt_five_pct: "(0.0035164727776800936 :: real) < (0.05 :: real)"
   by eval
 
@@ -253,54 +301,6 @@ lemma osti_doe_science_panel_median_error_under_half_pct: "(0.01382 :: real) < (
   by eval
 
 lemma osti_doe_science_observable_count_pos: "0 < (100 :: nat)"
-  by eval
-
-lemma osti_doe_science_median_error_under_five_pct: "(0.01382 :: real) < (5.0 :: real)"
-  by eval
-
-lemma overflow_carry_emergence_panel_observable_count_pos: "0 < (29 :: nat)"
-  by eval
-
-lemma overflow_carry_emergence_panel_median_error_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
-  by eval
-
-lemma paleoclimate_ext_pooled_median_under_half_pct: "(0.015015854077432778 :: real) < (0.5 :: real)"
-  by eval
-
-lemma paleoclimate_ext_headline_median_under_half_pct: "(0.015015854077432778 :: real) < (0.5 :: real)"
-  by eval
-
-lemma paleoclimate_ext_observable_count_pos: "0 < (40 :: nat)"
-  by eval
-
-lemma paleoclimate_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma paleoclimate_panel_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma paleoclimate_panel_median_error_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
-  by eval
-
-lemma paleoclimate_observable_count_pos: "0 < (40 :: nat)"
-  by eval
-
-lemma paleoclimate_median_error_under_half_pct: "(0.015015854077432778 :: real) < (0.5 :: real)"
-  by eval
-
-lemma paleontology_ext_pooled_median_under_half_pct: "(0.017836062884406152 :: real) < (0.5 :: real)"
-  by eval
-
-lemma paleontology_ext_headline_median_under_half_pct: "(0.017836062884406152 :: real) < (0.5 :: real)"
-  by eval
-
-lemma paleontology_ext_observable_count_pos: "0 < (630 :: nat)"
-  by eval
-
-lemma paleontology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma paleontology_panel_observable_count_pos: "0 < (120 :: nat)"
   by eval
 
 end

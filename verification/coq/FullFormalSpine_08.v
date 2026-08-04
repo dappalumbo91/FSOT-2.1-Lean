@@ -6,6 +6,54 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma material_in_silico_screening_scaffold_observable_count_pos : (0 < 42)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma material_in_silico_screening_scaffold_median_error_under_half_pct : (0.00206%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma material_property_verification_scaffold_observable_count_pos : (0 < 79)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma material_property_verification_scaffold_median_error_under_half_pct : (0.002271%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma materials_creep_fracture_depth_panel_observable_count_pos : (0 < 71)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma materials_creep_fracture_depth_panel_median_error_under_half_pct : (0.011734%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma materials_engineering_pooled_median_under_half_pct : (0.027170334947435038%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma materials_engineering_headline_median_under_half_pct : (0.027170334947435038%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma materials_engineering_observable_count_pos : (0 < 87)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma materials_engineering_section_count_pos : (0 < 7)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma materials_engineering_beats_sota_headlines_pos : (0 < 6)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma materials_genome_crosswalk_observable_count_pos : (0 < 38)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma materials_genome_crosswalk_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma materials_project_live_panel_observable_count_pos : (0 < 141)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma materials_project_live_panel_median_error_under_half_pct : (0.011734%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma materials_species_bridge_live_panel_observable_count_pos : (0 < 150)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma materials_species_bridge_live_panel_median_error_under_half_pct : (0.01341%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -256,53 +304,5 @@ Lemma neuroeconomics_observable_count_pos : (0 < 65)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma neuroeconomics_median_error_under_half_pct : (0.10502056403980387%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma neuroimmunology_pooled_median_under_half_pct : (0.05041956982053305%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma neuroimmunology_headline_median_under_half_pct : (0.060502%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma neuroimmunology_observable_count_pos : (0 < 92)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neuroimmunology_section_count_pos : (0 < 7)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neuroimmunology_beats_sota_headlines_pos : (0 < 6)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neurolab_gaps_math_spine_observable_count_pos : (0 < 35)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neurolab_gaps_math_spine_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma neurolab_residual_math_spine_observable_count_pos : (0 < 28)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neurolab_residual_math_spine_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cohort_canonical_scalar_min_positive : 0 < (0.25241247006708056%R).
-Proof. lra. Qed.
-
-Lemma canonical_bridge_scale_gt_one : 1 < (1.1099062765752818%R).
-Proof. lra. Qed.
-
-Lemma allen_cohort_cell_count_pos : (0 < 2166)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neurolab_smiles_mapped_records_pos : (0 < 1470)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma allen_cohort_fi_median_rel_err_lt_thirty_pct : (0.24631729333045121%R) < (0.3%R).
-Proof. lra. Qed.
-
-Lemma hero_certified_fi_mean_rel_err_lt_fifteen_pct : (0.07002728543379658%R) < (0.15%R).
-Proof. lra. Qed.
-
-Lemma hero_canonical_bridge_mean_rel_err_lt_twelve_pct : (0.07354375821147667%R) < (0.12%R).
 Proof. lra. Qed.
 

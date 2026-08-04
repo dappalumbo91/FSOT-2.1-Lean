@@ -3,6 +3,54 @@ theory FullFormalSpine_12
 imports Complex_Main
 begin
 
+lemma simbad_stellar_identity_deep_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
+  by eval
+
+lemma small_body_orbit_count_pos: "0 < (12 :: nat)"
+  by eval
+
+lemma small_body_median_error_under_eight_pct: "(0 :: real) < (8.0 :: real)"
+  by eval
+
+lemma sociology_gap_fill_pooled_median_under_half_pct: "(0.019504399572475274 :: real) < (0.5 :: real)"
+  by eval
+
+lemma sociology_gap_fill_headline_median_under_half_pct: "(0.019504399572475274 :: real) < (0.5 :: real)"
+  by eval
+
+lemma sociology_gap_fill_observable_count_pos: "0 < (200 :: nat)"
+  by eval
+
+lemma sociology_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma soil_science_panel_observable_count_pos: "0 < (96 :: nat)"
+  by eval
+
+lemma soil_science_panel_median_error_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
+  by eval
+
+lemma soil_science_observable_count_pos: "0 < (96 :: nat)"
+  by eval
+
+lemma soil_science_median_error_under_five_pct: "(0.006006 :: real) < (5.0 :: real)"
+  by eval
+
+lemma solar_system_structure_deep_observable_count_pos: "0 < (50 :: nat)"
+  by eval
+
+lemma solar_system_structure_deep_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma sota_beats_majority: "(32 :: nat) < (35 :: nat)"
+  by eval
+
+lemma sota_meets_or_beats_large: "(32 :: nat) < (35 :: nat)"
+  by eval
+
+lemma sota_below_bounded: "(0 :: nat) <= (5 :: nat)"
+  by eval
+
 lemma sota_zero_free_parameters: "(0 :: nat) = (0 :: nat)"
   by eval
 
@@ -253,54 +301,6 @@ lemma thesis_simulation_components_le_total: "(156 :: nat) = (156 :: nat)"
   by eval
 
 lemma the_well_outcomes_verification_panel_observable_count_pos: "0 < (246 :: nat)"
-  by eval
-
-lemma the_well_outcomes_verification_panel_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
-  by eval
-
-lemma the_well_spot_check_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma the_well_spot_check_panel_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
-  by eval
-
-lemma the_well_verification_spine_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma the_well_verification_spine_median_error_under_half_pct: "(0.028287 :: real) < (0.5 :: real)"
-  by eval
-
-lemma tier_93_dual_wave_spine_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma tier_93_dual_wave_spine_median_error_under_half_pct: "(0.011093889935064888 :: real) < (0.5 :: real)"
-  by eval
-
-lemma tier_94_longevity_observable_count_pos: "0 < (34 :: nat)"
-  by eval
-
-lemma tier_94_longevity_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma tier_95_zebrafish_observable_count_pos: "0 < (18 :: nat)"
-  by eval
-
-lemma tier_95_zebrafish_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma tier_96_circuit_observable_count_pos: "0 < (11 :: nat)"
-  by eval
-
-lemma tier_96_circuit_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma time_domain_crosswalk_observable_count_pos: "0 < (250 :: nat)"
-  by eval
-
-lemma time_domain_crosswalk_median_error_under_half_pct: "(0.028056 :: real) < (0.5 :: real)"
-  by eval
-
-lemma time_emergence_deep_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
 end

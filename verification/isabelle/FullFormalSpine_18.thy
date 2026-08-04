@@ -3,6 +3,54 @@ theory FullFormalSpine_18
 imports Complex_Main
 begin
 
+lemma medical_raw_S_positive: "0 < (0.7287135707250552 :: real)"
+  by eval
+
+lemma blackhole_raw_S_positive: "0 < (2.427813814074099 :: real)"
+  by eval
+
+lemma consciousness_raw_S_positive: "0 < (2.4991706281862376 :: real)"
+  by eval
+
+lemma molecular_raw_S_positive: "0 < (0.7201315148027019 :: real)"
+  by eval
+
+lemma material_raw_S_positive: "0 < (0.7978167460880297 :: real)"
+  by eval
+
+lemma biological_raw_S_positive: "0 < (1.0583105195018667 :: real)"
+  by eval
+
+lemma cellular_raw_S_positive: "0 < (1.0583105195018667 :: real)"
+  by eval
+
+lemma nuclear_raw_S_positive: "0 < (2.192436781833356 :: real)"
+  by eval
+
+lemma energy_raw_S_positive: "0 < (1.872760423200424 :: real)"
+  by eval
+
+lemma cosmological_raw_S_negative: "(-1.1956926285882763 :: real) < (0 :: real)"
+  by eval
+
+lemma dark_energy_raw_S_negative: "(-1.1349793149885588 :: real) < (0 :: real)"
+  by eval
+
+lemma cmb_raw_S_negative: "(-1.0099710610507393 :: real) < (0 :: real)"
+  by eval
+
+lemma ai_raw_S_non_positive: "(-0.3514171596284352 :: real) <= (0 :: real)"
+  by eval
+
+lemma c_cosm_pos: "0 < (0.061803398874989486 :: real)"
+  by eval
+
+lemma alpha_s_MZ_pos: "0 < (0.11709966304863834 :: real)"
+  by eval
+
+lemma p_base_pos: "0 < (0.21234577623937845 :: real)"
+  by eval
+
 lemma delta_lambda_cosm_pos: "0 < (0.0216083 :: real)"
   by eval
 

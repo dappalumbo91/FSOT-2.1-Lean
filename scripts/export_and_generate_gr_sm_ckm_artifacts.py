@@ -373,7 +373,7 @@ def gen_isabelle(obs: list[dict]) -> str:
         elif kind == "lt_half":
             lit = isa_lit_real(float(ob["value"]))
             lines += [
-                f"lemma {oid}: \"{lit} < (0.5::real)\"",
+                f"lemma {oid}: \"({lit}::real) < (0.5::real)\"",
                 "  by simp",
                 "",
             ]
@@ -381,7 +381,8 @@ def gen_isabelle(obs: list[dict]) -> str:
             lit = isa_lit_real(float(ob["value"]))
             b = isa_lit_real(float(ob["bound"]))
             lines += [
-                f"lemma {oid}: \"{lit} < {b}\"",
+                # Force real on both sides — bare decimals can leave polymorphic 'a
+                f"lemma {oid}: \"({lit}::real) < ({b}::real)\"",
                 "  by simp",
                 "",
             ]
@@ -389,7 +390,7 @@ def gen_isabelle(obs: list[dict]) -> str:
             l = isa_lit_real(float(ob["left_value"]))
             r = isa_lit_real(float(ob["right_value"]))
             lines += [
-                f"lemma {oid}: \"{l} < {r}\"",
+                f"lemma {oid}: \"({l}::real) < ({r}::real)\"",
                 "  by simp",
                 "",
             ]
@@ -397,7 +398,7 @@ def gen_isabelle(obs: list[dict]) -> str:
             d = isa_lit_real(float(ob["diff"]))
             b = isa_lit_real(float(ob["bound"]))
             lines += [
-                f"lemma {oid}: \"{d} < {b}\"",
+                f"lemma {oid}: \"({d}::real) < ({b}::real)\"",
                 "  by simp",
                 "",
             ]

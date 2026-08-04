@@ -94,6 +94,24 @@ Lean prior modules (0.5% gate):
 `FsotGpuEngineeringSpinePriors`, `Esp32PlatformEngineeringPanelPriors`,  
 `CodingStructureVerifierPanelPriors`, `EngineeringHardwareCodeSpinePriors`.
 
+### Bare-metal (Rust + QEMU) — hardware must execute
+
+Processor/RAM are not JSON-only. Executable path:
+
+| Layer | Artifact |
+|-------|----------|
+| no_std / host Rust laws | `verification/rust/fsot_hardware_kernel/` |
+| Host serial markers `FSOT_HW_*` | `cargo run --bin fsot_hardware_serial` |
+| QEMU disk kernel | `vendor/rust_lean_bridge` + `verification/qemu/fsot-kernel-bios.bin` |
+| Harness report | `python scripts/run_fsot_hardware_bare_metal.py` → `data/fsot_hardware_bare_metal_report.json` |
+
+```powershell
+python scripts/build_rust_lean_bridge_bootimage.py   # after kernel source changes
+python scripts/run_fsot_hardware_bare_metal.py
+lake build FSOT.Formal.FsotProcessorFunctionPanelPriors FSOT.Formal.FsotRamFunctionPanelPriors
+python scripts/run_cross_proof_verification.py
+```
+
 ---
 
 ## FSOT-GPU pattern (what the CUDA system already does)

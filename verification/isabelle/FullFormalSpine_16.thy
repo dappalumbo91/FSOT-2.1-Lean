@@ -3,6 +3,54 @@ theory FullFormalSpine_16
 imports Complex_Main
 begin
 
+lemma pi_gt_0415068: "(0.415068 :: real) < (3.141592653589793 :: real)"
+  by eval
+
+lemma pi_gt_0415069: "(0.415069 :: real) < (3.141592653589793 :: real)"
+  by eval
+
+lemma psi_con_eta_prod_gt_295163: "(0.295163 :: real) < (0.2951637685668222 :: real)"
+  by eval
+
+lemma sin_0295163_gt_0290272: "(0.290272 :: real) < (0.295163 :: real)"
+  by eval
+
+lemma pi_div_e_gt_115572734973: "(1.15572734973 :: real) < (1.1557273497909217 :: real)"
+  by eval
+
+lemma cos_0415069_gt_091385: "(0.91385 :: real) < (0.9150884982110228 :: real)"
+  by eval
+
+lemma sin_pi_div_e_gt_91385: "(0.91385 :: real) < (0.9150885074842403 :: real)"
+  by eval
+
+lemma cos_0291325_gt_09575: "(0.9575 :: real) < (0.9578641477669682 :: real)"
+  by eval
+
+lemma acoustic_bleed_div_inflow_gt_62600: "(0.626 :: real) < (0.6281136367925999 :: real)"
+  by eval
+
+lemma phi_sq_gt_261792: "(2.617924 :: real) < (2.618033988749895 :: real)"
+  by eval
+
+lemma one_div_pi_gt_03183: "(0.3183 :: real) < (0.3183098861837907 :: real)"
+  by eval
+
+lemma exp_01530_gt_11653: "(1.1653 :: real) < (1.1653249789427378 :: real)"
+  by eval
+
+lemma phi_rpow_inv_pi_gt_11653: "(1.1653 :: real) < (1.1655283240586598 :: real)"
+  by eval
+
+lemma exp_1146_gt_31416: "(3.1416 :: real) < (3.145585369940555 :: real)"
+  by eval
+
+lemma exp_11453_gt_pi23847: "(3.141592653589793 :: real) < (3.1433842306702213 :: real)"
+  by eval
+
+lemma eta_log_phi_gt_02244: "(0.2244 :: real) < (0.22469811142780627 :: real)"
+  by eval
+
 lemma exp_1434_gt_4167: "(4.167 :: real) < (4.195447462901874 :: real)"
   by eval
 
@@ -253,54 +301,6 @@ lemma cos_theta_s_gt_09575: "(0.9575 :: real) < (0.9579871226722757 :: real)"
   by eval
 
 lemma cos_theta_s_lt_095825: "(0.9579871226722757 :: real) < (0.95825 :: real)"
-  by eval
-
-lemma phi_sq_lt_26183: "(2.618033988749895 :: real) < (26183.0 :: real)"
-  by eval
-
-lemma log_1618_gt_04807: "(0.4807 :: real) < (1.618 :: real)"
-  by eval
-
-lemma phase_variance_gt_0955: "(0.955 :: real) < (0.9579871226722758 :: real)"
-  by eval
-
-lemma phase_variance_lt_0961: "(0.9579871226722758 :: real) < (0.961 :: real)"
-  by eval
-
-lemma sin_theta_s_gt_02858: "(0.2858 :: real) < (0.28681121455426756 :: real)"
-  by eval
-
-lemma coherence_efficiency_lt_1002: "(0.9577022026205612 :: real) < (1.002 :: real)"
-  by eval
-
-lemma bleed_in_inner_lt_0824: "(0.8227409210508241 :: real) < (0.824 :: real)"
-  by eval
-
-lemma bleed_in_factor_lt_0826: "(0.7879407922764434 :: real) < (0.826 :: real)"
-  by eval
-
-lemma log_ratio_D6_gt: "(-1.434 :: real) < (6.0 :: real)"
-  by eval
-
-lemma bleed_in_factor_gt_0773: "(0.773 :: real) < (0.7879407922764434 :: real)"
-  by eval
-
-lemma ai_cos_lt_neg_075: "(0.5 :: real) < (0.74 :: real)"
-  by eval
-
-lemma log_four_lt_13865: "(1.3862943611198906 :: real) < (1.3865 :: real)"
-  by eval
-
-lemma cmb_cos_lt_neg_099: "(0.8 :: real) < (0.99 :: real)"
-  by eval
-
-lemma log_five_lt_1618: "(1.6094379124341003 :: real) < (1.618 :: real)"
-  by eval
-
-lemma medical_cos_lt_neg_05: "(0.35 :: real) < (0.5 :: real)"
-  by eval
-
-lemma alpha_lt_one_tenth: "(0.0008082937 :: real) < (0.1 :: real)"
   by eval
 
 end

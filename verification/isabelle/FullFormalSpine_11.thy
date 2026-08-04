@@ -3,6 +3,54 @@ theory FullFormalSpine_11
 imports Complex_Main
 begin
 
+lemma threonine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma valine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma tryptophan_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma tyrosine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma protein_amino_acid_genomic_identity: "(20.0 :: real) = (20.0 :: real)"
+  by eval
+
+lemma psychology_gap_fill_pooled_median_under_half_pct: "(0.03150616921194649 :: real) < (0.5 :: real)"
+  by eval
+
+lemma psychology_gap_fill_headline_median_under_half_pct: "(0.03150616921194649 :: real) < (0.5 :: real)"
+  by eval
+
+lemma psychology_gap_fill_observable_count_pos: "0 < (160 :: nat)"
+  by eval
+
+lemma psychology_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma psychology_psychometrics_depth_panel_observable_count_pos: "0 < (23 :: nat)"
+  by eval
+
+lemma psychology_psychometrics_depth_panel_median_error_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma pubchem_compound_properties_observable_count_pos: "0 < (500 :: nat)"
+  by eval
+
+lemma pubchem_compound_properties_median_error_under_five_pct: "(0.002637 :: real) < (5.0 :: real)"
+  by eval
+
+lemma pubchem_live_deep_observable_count_pos: "0 < (5254 :: nat)"
+  by eval
+
+lemma pubchem_live_deep_median_error_under_half_pct: "(0.032631 :: real) < (0.5 :: real)"
+  by eval
+
+lemma pubchem_stability_panel_observable_count_pos: "0 < (59 :: nat)"
+  by eval
+
 lemma pubchem_stability_panel_median_error_under_half_pct: "(0.0024238898584426276 :: real) < (0.5 :: real)"
   by eval
 
@@ -253,54 +301,6 @@ lemma sh0es_refined_median_error_under_half_pct: "(0.024894 :: real) < (0.5 :: r
   by eval
 
 lemma simbad_stellar_identity_deep_observable_count_pos: "0 < (520 :: nat)"
-  by eval
-
-lemma simbad_stellar_identity_deep_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma small_body_orbit_count_pos: "0 < (12 :: nat)"
-  by eval
-
-lemma small_body_median_error_under_eight_pct: "(0 :: real) < (8.0 :: real)"
-  by eval
-
-lemma sociology_gap_fill_pooled_median_under_half_pct: "(0.019504399572475274 :: real) < (0.5 :: real)"
-  by eval
-
-lemma sociology_gap_fill_headline_median_under_half_pct: "(0.019504399572475274 :: real) < (0.5 :: real)"
-  by eval
-
-lemma sociology_gap_fill_observable_count_pos: "0 < (200 :: nat)"
-  by eval
-
-lemma sociology_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma soil_science_panel_observable_count_pos: "0 < (96 :: nat)"
-  by eval
-
-lemma soil_science_panel_median_error_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
-  by eval
-
-lemma soil_science_observable_count_pos: "0 < (96 :: nat)"
-  by eval
-
-lemma soil_science_median_error_under_five_pct: "(0.006006 :: real) < (5.0 :: real)"
-  by eval
-
-lemma solar_system_structure_deep_observable_count_pos: "0 < (50 :: nat)"
-  by eval
-
-lemma solar_system_structure_deep_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma sota_beats_majority: "(32 :: nat) < (35 :: nat)"
-  by eval
-
-lemma sota_meets_or_beats_large: "(32 :: nat) < (35 :: nat)"
-  by eval
-
-lemma sota_below_bounded: "(0 :: nat) <= (5 :: nat)"
   by eval
 
 end

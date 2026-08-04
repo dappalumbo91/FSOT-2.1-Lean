@@ -186,6 +186,9 @@ lemma clinicaltrials_medical_bundle: "(394 :: nat) = 394 \<and> (13 :: nat) = 13
 lemma code_genome_structure_bundle: "(205 :: nat) = 205 \<and> (17 :: nat) = 17 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma coding_structure_verifier_bundle: "(18 :: nat) = 18 \<and> (14 :: nat) = 14 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
 lemma cold_fusion_candidate_prereg_scaffold_bundle: "(24 :: nat) = 24 \<and> (14 :: nat) = 14 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -324,6 +327,9 @@ lemma energy_ai_orbital_bridge_bundle: "(48 :: nat) = 48 \<and> (16 :: nat) = 16
 lemma energy_neural_orbital_bridge_bundle: "(48 :: nat) = 48 \<and> (16 :: nat) = 16 \<and> (0.018002668701796887 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma engineering_hardware_code_spine_bundle: "(72 :: nat) = 72 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
 lemma entomology_ext_bundle: "(430 :: nat) = 430 \<and> (0.022236250385189223 :: real) < (0.5 :: real) \<and> (0.022236250385189223 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -343,6 +349,9 @@ lemma epidemiology_panel_bundle: "(24 :: nat) = 24 \<and> (15 :: nat) = 15 \<and
   by auto
 
 lemma epidemiology_bundle: "(20 :: nat) = 20 \<and> (15 :: nat) = 15 \<and> (0.03062212293865052 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma esp32_platform_engineering_bundle: "(34 :: nat) = 34 \<and> (12 :: nat) = 12 \<and> (0.020755 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma ethology_panel_bundle: "(100 :: nat) = 100 \<and> (15 :: nat) = 15 \<and> (0.006607 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -454,6 +463,21 @@ lemma fsot_aggregate_organized_panel_bundle: "(24 :: nat) = 24 \<and> (17 :: nat
   by auto
 
 lemma fsot_aggregate_unified_db_bundle: "(8 :: nat) = 8 \<and> (17 :: nat) = 17 \<and> (0 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma fsot_gpu_cuda_competitive_bundle: "(17 :: nat) = 17 \<and> (12 :: nat) = 12 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma fsot_gpu_engineering_spine_bundle: "(42 :: nat) = 42 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma fsot_gpu_parity_verify_bundle: "(48 :: nat) = 48 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma fsot_processor_function_bundle: "(20 :: nat) = 20 \<and> (12 :: nat) = 12 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma fsot_ram_function_bundle: "(14 :: nat) = 14 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma fuel_candidate_prereg_scaffold_bundle: "(33 :: nat) = 33 \<and> (16 :: nat) = 16 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"

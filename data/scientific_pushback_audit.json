@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-03T22:36:43.291499+00:00",
+  "generated_at": "2026-08-04T04:38:08.256606+00:00",
   "version": "1.0",
   "summary": {
-    "extension_domain_count": 368,
-    "green_gate_pass_count": 368,
+    "extension_domain_count": 371,
+    "green_gate_pass_count": 371,
     "green_gate_fail_count": 0,
     "aspiration_scalar_debt_count": 0,
     "stumped_observable_count": 13,
     "stumped_without_benchmark_row": 0,
     "preregistered_predictions_tracked": 1,
-    "domains_missing_uncertainty_metadata": 0,
-    "domains_raw_eff_divergence": 0
+    "domains_missing_uncertainty_metadata": 1,
+    "domains_raw_eff_divergence": 1
   },
   "aspiration_debt": [],
   "hubble_headline_channel_gap": null,
@@ -244,8 +244,42 @@
     }
   ],
   "high_pushback_domains": [],
-  "missing_uncertainty_domains": [],
-  "raw_eff_divergence_domains": [],
+  "missing_uncertainty_domains": [
+    {
+      "domain": "TOE_Contested_Sector_Refresh",
+      "scalar_count": 15,
+      "missing_scientific_measurement": 15,
+      "stumped_missing_uncertainty": 1,
+      "stumped_untagged_contested": 12,
+      "max_scalar_error_pct": 0.018002668701804225,
+      "max_effective_scalar_error_pct": 0.018002668701804225,
+      "pooled_median_error_pct": 0.009407278780006464,
+      "green_gate_pass": true,
+      "raw_eff_divergence_count": 0,
+      "top_raw_eff_divergence": [],
+      "max_pushback_scalar": {
+        "property": "e_con",
+        "name": "e_con",
+        "raw_pct": 0.018002668701804225,
+        "effective_pct": 0.018002668701804225,
+        "contested": false
+      }
+    }
+  ],
+  "raw_eff_divergence_domains": [
+    {
+      "domain": "TOE_Dynamics",
+      "count": 1,
+      "top": {
+        "property": "scalar_euler_contraction",
+        "name": "euler_scalar_contracts",
+        "raw_pct": 0.0,
+        "effective_pct": 91.79365425061334,
+        "comparison_kind": "display_precision"
+      },
+      "green_gate_pass": true
+    }
+  ],
   "failing_green_gate_domains": [],
   "remediation_priority": [
     "Propagate literature_uncertainty_anchors to stumped-property rows via enrich_benchmark_scientific_metadata.py",

@@ -1,0 +1,18 @@
+[package]
+name = "fsot_hardware_kernel"
+version = "0.1.0"
+edition = "2021"
+description = "FSOT processor + RAM functions — host and no_std bare-metal parity"
+
+[features]
+default = ["std"]
+std = []
+no_std = ["libm"]
+
+[dependencies]
+libm = { version = "0.2", optional = true }
+
+[[bin]]
+name = "fsot_hardware_serial"
+path = "src/bin/fsot_hardware_serial.rs"
+required-features = ["std"]

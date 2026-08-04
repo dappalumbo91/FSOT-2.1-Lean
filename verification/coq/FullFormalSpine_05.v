@@ -6,6 +6,18 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma environmental_engineering_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma epidemiology_ext_pooled_median_under_half_pct : (0.039895%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma epidemiology_ext_headline_median_under_half_pct : (0.039895%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma epidemiology_ext_observable_count_pos : (0 < 220)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma epidemiology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -20,6 +32,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma epidemiology_median_error_under_half_pct : (0.03062212293865052%R) < (0.5%R).
 Proof. lra. Qed.
+
+Lemma esp32_platform_engineering_median_error_under_half_pct : (0.020755%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma esp32_platform_engineering_observable_count_pos : (0 < 34)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma ethology_panel_observable_count_pos : (0 < 100)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -286,23 +304,5 @@ Lemma fsot_aggregate_organized_panel_median_error_under_half_pct : 0%R < (0.5%R)
 Proof. lra. Qed.
 
 Lemma fsot_aggregate_unified_db_observable_count_pos : (0 < 8)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma fsot_aggregate_unified_db_median_error_under_five_pct : 0%R < (5.0%R).
-Proof. lra. Qed.
-
-Lemma fuel_candidate_prereg_scaffold_observable_count_pos : (0 < 33)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma fuel_candidate_prereg_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fuel_lab_live_median_error_under_half_pct : (0.039349%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fuel_lab_live_designed_fuel_count_pos : 0 < (7.0%R).
-Proof. lra. Qed.
-
-Lemma fuel_lab_live_observable_count_pos : (0 < 366)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

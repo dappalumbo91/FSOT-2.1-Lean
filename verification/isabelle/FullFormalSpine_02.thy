@@ -3,6 +3,12 @@ theory FullFormalSpine_02
 imports Complex_Main
 begin
 
+lemma codon_aac_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_aag_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
 lemma codon_aag_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
@@ -295,12 +301,6 @@ lemma codon_tag_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = 
   by eval
 
 lemma codon_tat_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_tat_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_tca_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
 end

@@ -6,6 +6,54 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma threonine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma valine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma tryptophan_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma tyrosine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma protein_amino_acid_genomic_identity : (20.0%R) = (20.0%R).
+Proof. reflexivity. Qed.
+
+Lemma psychology_gap_fill_pooled_median_under_half_pct : (0.03150616921194649%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma psychology_gap_fill_headline_median_under_half_pct : (0.03150616921194649%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma psychology_gap_fill_observable_count_pos : (0 < 160)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma psychology_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma psychology_psychometrics_depth_panel_observable_count_pos : (0 < 23)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma psychology_psychometrics_depth_panel_median_error_under_half_pct : (0.031506%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma pubchem_compound_properties_observable_count_pos : (0 < 500)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma pubchem_compound_properties_median_error_under_five_pct : (0.002637%R) < (5.0%R).
+Proof. lra. Qed.
+
+Lemma pubchem_live_deep_observable_count_pos : (0 < 5254)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma pubchem_live_deep_median_error_under_half_pct : (0.032631%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma pubchem_stability_panel_observable_count_pos : (0 < 59)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma pubchem_stability_panel_median_error_under_half_pct : (0.0024238898584426276%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -257,52 +305,4 @@ Proof. lra. Qed.
 
 Lemma simbad_stellar_identity_deep_observable_count_pos : (0 < 520)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma simbad_stellar_identity_deep_median_error_under_half_pct : (0.022461%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma small_body_orbit_count_pos : (0 < 12)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma small_body_median_error_under_eight_pct : 0%R < (8.0%R).
-Proof. lra. Qed.
-
-Lemma sociology_gap_fill_pooled_median_under_half_pct : (0.019504399572475274%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma sociology_gap_fill_headline_median_under_half_pct : (0.019504399572475274%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma sociology_gap_fill_observable_count_pos : (0 < 200)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma sociology_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma soil_science_panel_observable_count_pos : (0 < 96)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma soil_science_panel_median_error_under_half_pct : (0.006006%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma soil_science_observable_count_pos : (0 < 96)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma soil_science_median_error_under_five_pct : (0.006006%R) < (5.0%R).
-Proof. lra. Qed.
-
-Lemma solar_system_structure_deep_observable_count_pos : (0 < 50)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma solar_system_structure_deep_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma sota_beats_majority : (32 < 35)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma sota_meets_or_beats_large : (32 < 35)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma sota_below_bounded : (0 <= 5)%nat.
-Proof. apply Nat.leb_le; reflexivity. Qed.
 
