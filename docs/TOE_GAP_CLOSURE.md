@@ -1,6 +1,6 @@
 # TOE gap closure runbook
 
-Generated: `2026-08-04T00:52:12.937174+00:00`
+Generated: `2026-08-04T00:53:01.883628+00:00`
 
 Frozen boundaries: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 
@@ -56,21 +56,21 @@ Manifest: `data/toe_force_package_manifest.json`
 ### Package includes
 
 1. Gauge group **U(1)_Y × SU(2)_L × SU(3)_c** (generator counts 1+3+8)
-2. Couplings: α_em⁻¹, α_s(M_Z), sin²θ_W (atlas residual law vs PDG)
-3. Electroweak mass ladder: m_W, m_Z, m_H, m_t
-4. Fermi constant G_F
+2. Couplings: α_em⁻¹, α_s(M_Z), sin²θ_W MS-bar + on-shell schemes (seed-closed)
+3. Electroweak mass ladder: m_W, m_Z (on-shell), m_H, m_t
+4. CKM/PMNS seed+NLO magnitudes, unitarity, complex multi-sector emergence
 5. Three fermion generations (structural)
 6. Electric charge quantization Q = T₃ + Y/2
-7. Charged-lepton mass ladder + exact PDG ratios
-8. Higgs potential shape (λ, v, m_H)
-9. Photon massless + α_s > α_em hierarchy
+7. Confinement scales: Λ_QCD, √σ; SU(3) Casimirs + β₀(n_f=5)
+8. N_eff = 3 + 2·POOF·SUCTION; triangle α+β+γ=π
+9. Spin-2 massless helicity / TT dof probes
 
 ### Depth shipped (granular expansion)
 
-1. On-shell vs MS-bar Weinberg schemes → m_Z headroom (no longer gate-edge)
+1. On-shell vs MS-bar Weinberg schemes → m_Z headroom
 2. Λ_QCD, √σ, SU(3) Casimirs, β₀(n_f=5)
-3. N_eff seed map; unitarity-triangle α+β+γ=π; spin-2 helicity/TT probes
-4. CKM NLO magnitudes + multiprover spine (222 obligations)
+3. N_eff seed map; unitarity-triangle closure; spin-2 helicity/TT probes
+4. CKM NLO magnitudes + multiprover spine (~222 obligations)
 
 ### Still open research (not claimed)
 
