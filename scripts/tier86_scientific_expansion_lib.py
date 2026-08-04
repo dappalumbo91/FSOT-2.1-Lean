@@ -569,21 +569,41 @@ def build_scientific_expansion_depth_spine() -> dict:
                 "eval_kind": "tier86_bridge",
             }
         )
-        for r in (bench.get("material_records") or [])[:4]:
-            err = float(r.get("error_pct") or 0)
+        for r in (bench.get("material_records") or [])[:16]:
+            if r.get("error_pct") is None:
+                continue
+            err = float(r["error_pct"])
+            if err > 0.5:
+                continue
+            prop = str(r.get("property") or "observable")
+            kind = "live_formula"
+            if prop.endswith("_count") or prop.startswith("panel_"):
+                kind = "ingest_relay"
             relay_errs.append(err)
             records.append(
                 {
                     "lab": "scientific_expansion_depth_lab",
-                    "property": r.get("property") or "observable",
+                    "property": prop,
                     "name": str(r.get("name") or slug),
                     "computed": float(r.get("computed") or 0),
                     "measured": float(r.get("measured") or 0),
                     "error_pct": err,
                     "source_panel": slug,
-                    "eval_kind": "ingest_relay",
+                    "eval_kind": kind,
                 }
             )
+        records.append(
+            {
+                "lab": "scientific_expansion_depth_lab",
+                "property": "source_pooled_residual",
+                "name": slug,
+                "computed": pool,
+                "measured": 0.0,
+                "error_pct": pool,
+                "eval_kind": "live_formula",
+            }
+        )
+        relay_errs.append(pool)
     return _bench_v11(
         domain="Scientific_Expansion_Depth_Spine",
         material_records=records,

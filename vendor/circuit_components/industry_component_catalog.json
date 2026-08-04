@@ -34,8 +34,17 @@
   "reference_circuits": [
     {"id": "RC_10k_100nF", "R_ohm": 10000, "C_f": 1e-7, "tau_s": 0.001, "source": "τ=RC textbook"},
     {"id": "RC_1k_10uF", "R_ohm": 1000, "C_f": 1e-5, "tau_s": 0.01, "source": "τ=RC textbook"},
+    {"id": "RC_4k7_10nF", "R_ohm": 4700, "C_f": 1e-8, "tau_s": 4.7e-5, "source": "τ=RC textbook"},
+    {"id": "RC_100k_1uF", "R_ohm": 100000, "C_f": 1e-6, "tau_s": 0.1, "source": "τ=RC textbook"},
+    {"id": "RC_22R_100nF", "R_ohm": 22, "C_f": 1e-7, "tau_s": 2.2e-6, "source": "τ=RC textbook"},
     {"id": "LC_10uH_100nF", "L_h": 1e-5, "C_f": 1e-7, "f_res_hz": 159154.94, "source": "f=1/(2π√LC)"},
+    {"id": "LC_100uH_10nF", "L_h": 1e-4, "C_f": 1e-8, "f_res_hz": 159154.94, "source": "f=1/(2π√LC)"},
+    {"id": "LC_1mH_100pF", "L_h": 0.001, "C_f": 1e-10, "f_res_hz": 503292.12, "source": "f=1/(2π√LC)"},
     {"id": "divider_10k_10k", "R_top_ohm": 10000, "R_bot_ohm": 10000, "vin_v": 5, "vout_v": 2.5, "source": "resistive divider"},
-    {"id": "power_5V_1k", "V_v": 5, "R_ohm": 1000, "P_w": 0.025, "source": "P=V²/R"}
+    {"id": "divider_10k_4k7", "R_top_ohm": 10000, "R_bot_ohm": 4700, "vin_v": 5, "vout_v": 1.598639, "source": "resistive divider"},
+    {"id": "divider_1k_2k", "R_top_ohm": 1000, "R_bot_ohm": 2000, "vin_v": 3.3, "vout_v": 2.2, "source": "resistive divider"},
+    {"id": "power_5V_1k", "V_v": 5, "R_ohm": 1000, "P_w": 0.025, "source": "P=V²/R"},
+    {"id": "power_3V3_470", "V_v": 3.3, "R_ohm": 470, "P_w": 0.023170, "source": "P=V²/R"},
+    {"id": "power_12V_4k7", "V_v": 12, "R_ohm": 4700, "P_w": 0.030638, "source": "P=V²/R"}
   ]
 }

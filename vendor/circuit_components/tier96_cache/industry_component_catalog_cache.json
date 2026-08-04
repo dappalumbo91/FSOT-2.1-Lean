@@ -2,7 +2,7 @@
   "source": "EIA-96, IEC 60115, Murata/KEMET parametric anchors, TI/ON Semi datasheets, NIST CODATA",
   "schema_version": "1.0",
   "component_count": 27,
-  "reference_circuit_count": 5,
+  "reference_circuit_count": 14,
   "by_class": {
     "resistor": 8,
     "capacitor": 5,
@@ -269,10 +269,45 @@
       "source": "\u03c4=RC textbook"
     },
     {
+      "id": "RC_4k7_10nF",
+      "R_ohm": 4700,
+      "C_f": 1e-08,
+      "tau_s": 4.7e-05,
+      "source": "\u03c4=RC textbook"
+    },
+    {
+      "id": "RC_100k_1uF",
+      "R_ohm": 100000,
+      "C_f": 1e-06,
+      "tau_s": 0.1,
+      "source": "\u03c4=RC textbook"
+    },
+    {
+      "id": "RC_22R_100nF",
+      "R_ohm": 22,
+      "C_f": 1e-07,
+      "tau_s": 2.2e-06,
+      "source": "\u03c4=RC textbook"
+    },
+    {
       "id": "LC_10uH_100nF",
       "L_h": 1e-05,
       "C_f": 1e-07,
       "f_res_hz": 159154.94,
+      "source": "f=1/(2\u03c0\u221aLC)"
+    },
+    {
+      "id": "LC_100uH_10nF",
+      "L_h": 0.0001,
+      "C_f": 1e-08,
+      "f_res_hz": 159154.94,
+      "source": "f=1/(2\u03c0\u221aLC)"
+    },
+    {
+      "id": "LC_1mH_100pF",
+      "L_h": 0.001,
+      "C_f": 1e-10,
+      "f_res_hz": 503292.12,
       "source": "f=1/(2\u03c0\u221aLC)"
     },
     {
@@ -284,13 +319,43 @@
       "source": "resistive divider"
     },
     {
+      "id": "divider_10k_4k7",
+      "R_top_ohm": 10000,
+      "R_bot_ohm": 4700,
+      "vin_v": 5,
+      "vout_v": 1.598639,
+      "source": "resistive divider"
+    },
+    {
+      "id": "divider_1k_2k",
+      "R_top_ohm": 1000,
+      "R_bot_ohm": 2000,
+      "vin_v": 3.3,
+      "vout_v": 2.2,
+      "source": "resistive divider"
+    },
+    {
       "id": "power_5V_1k",
       "V_v": 5,
       "R_ohm": 1000,
       "P_w": 0.025,
       "source": "P=V\u00b2/R"
+    },
+    {
+      "id": "power_3V3_470",
+      "V_v": 3.3,
+      "R_ohm": 470,
+      "P_w": 0.02317,
+      "source": "P=V\u00b2/R"
+    },
+    {
+      "id": "power_12V_4k7",
+      "V_v": 12,
+      "R_ohm": 4700,
+      "P_w": 0.030638,
+      "source": "P=V\u00b2/R"
     }
   ],
-  "fetched_at": "2026-07-16T15:52:57.009509+00:00",
+  "fetched_at": "2026-08-04T03:12:14.846194+00:00",
   "credential_free": true
 }

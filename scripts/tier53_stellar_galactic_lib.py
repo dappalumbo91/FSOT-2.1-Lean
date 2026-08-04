@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 VENDOR = ROOT / "vendor" / "stellar_structures"
 
+from fsot_api_predict_lib import make_fsot_record  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, _load_fsot  # noqa: E402
 
 BASE_CATALOG = VENDOR / "public_multiplicity_catalog.json"
@@ -113,41 +114,44 @@ def build_compact_object_binary_events() -> dict:
     _, authority = _load_fsot()
     doc = _load_json(GWOSC)
     records: list[dict] = []
+    errs: list[float] = []
+    # Public GWOSC values as *measured*; FSOT domain scalar prediction as residual
+    # (no undisclosed mass formula — same honesty as before, but scalar-gated).
     for ev in doc.get("events") or []:
         eid = str(ev.get("id") or "unknown")
-        for prop in ("chirp_mass_msun", "mass_ratio", "final_mass_msun"):
+        for prop, domain in (
+            ("chirp_mass_msun", "Astronomy"),
+            ("mass_ratio", "Cosmology"),
+            ("final_mass_msun", "Astronomy"),
+        ):
             val = ev.get(prop)
             if val is None:
                 continue
-            records.append(
-                {
-                    "lab": "compact_object_binary_lab",
-                    "property": prop,
-                    "name": eid,
-                    "computed": float(val),
-                    "measured": float(val),
-                    "error_pct": 0.0,
-                    "eval_kind": "gwosc_public_anchor",
-                    "note": "GWOSC public event — no undisclosed mass formula",
-                }
+            rec = make_fsot_record(
+                lab="compact_object_binary_lab",
+                property_name=prop,
+                name=eid,
+                measured=float(val),
+                domain=domain,
+                extra={"ingest_source": "gwosc_public", "note": "GWOSC public event residual"},
             )
+            records.append(rec)
+            errs.append(float(rec["error_pct"]))
     base = _load_json(BASE_CATALOG)
     for row in base.get("systems") or []:
         if "black_hole" in str(row.get("structure_class") or "") or "neutron" in str(row.get("structure_class") or ""):
             chirp = row.get("chirp_mass_msun")
             if chirp:
-                records.append(
-                    {
-                        "lab": "compact_object_binary_lab",
-                        "property": "chirp_mass_msun",
-                        "name": row.get("id"),
-                        "computed": float(chirp),
-                        "measured": float(chirp),
-                        "error_pct": 0.0,
-                        "eval_kind": "literature_anchor",
-                    }
+                rec = make_fsot_record(
+                    lab="compact_object_binary_lab",
+                    property_name="chirp_mass_msun",
+                    name=str(row.get("id") or "system"),
+                    measured=float(chirp),
+                    domain="Astronomy",
+                    extra={"ingest_source": "structure_catalog"},
                 )
-    errs = [float(r["error_pct"]) for r in records]
+                records.append(rec)
+                errs.append(float(rec["error_pct"]))
     return _bench_v11(
         domain="Compact_Object_Binary_Events",
         material_records=records,
@@ -155,7 +159,7 @@ def build_compact_object_binary_events() -> dict:
         d_eff=20,
         authority_path=authority,
         source=["vendor/stellar_structures/gwosc_public_events.json"],
-        channel_stats=[("gw_panel", "compact_object", errs)],
+        channel_stats=[("gw_panel", "compact_object", errs or [0.0])],
         sota_baselines={"compact_object": {"sota_typical_error_pct": 10.0, "sota_model": "GW surrogate templates"}},
     )
 
