@@ -20,6 +20,8 @@ def main() -> int:
     order = [
         "FSOT_GPU_CUDA_Competitive_Panel",
         "FSOT_GPU_Parity_Verify_Panel",
+        "FSOT_Processor_Function_Panel",
+        "FSOT_RAM_Function_Panel",
         "FSOT_GPU_Engineering_Spine",
     ]
     for name in order:

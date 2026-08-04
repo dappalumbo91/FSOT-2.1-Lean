@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T03:30:47.485671+00:00",
+  "generated_at": "2026-08-04T03:36:03.774458+00:00",
   "domain": "FSOT_GPU_Engineering_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -17,9 +17,9 @@
     "ai"
   ],
   "D_eff": 13,
-  "record_count": 28,
-  "observable_count": 28,
-  "scalar_record_count": 26,
+  "record_count": 42,
+  "observable_count": 42,
+  "scalar_record_count": 39,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -45,7 +45,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 28
+      "observable_count": 42
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -54,7 +54,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 28
+      "observable_count": 42
     }
   ],
   "material_records": [
@@ -213,6 +213,161 @@
       "eval_kind": "live_formula",
       "formula": "archive_seed_vs_gpu_ledger",
       "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fsot_processor_function_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "bits_per_trit",
+      "name": "processor_packing_warp",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "ceil(log2(3))",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "states_per_u64",
+      "name": "processor_packing_warp",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "word_bits / bits_per_trit",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "warp_size",
+      "name": "processor_packing_warp",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "NVIDIA warp = states_per_u64",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "warp_divides_pack",
+      "name": "processor_packing_warp",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "states_per_u64 mod 32 = 0",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "trinary_arity",
+      "name": "processor_packing_warp",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "|{SpinDown,Superposed,SpinUp}|",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "collapse_theta",
+      "name": "processor_collapse_law",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff \u00b7 P_var",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fsot_ram_function_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "bits_per_trit",
+      "name": "ram_crystal_pack",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "2-bit pack codes {0,1,2}",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "states_per_u64",
+      "name": "ram_crystal_pack",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "64/2 packing density",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "density_gain_vs_u8",
+      "name": "ram_crystal_pack",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "8 bits/u8 \u00f7 2 bits/trit",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "crystal_sector_count",
+      "name": "ram_crystal_pack",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "header|boot|trinary|phi|ltm|interop",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "vram_usable_mib_c_eff_times_formal",
+      "name": "rtx5070_vram",
+      "computed": 12258.588193543184,
+      "measured": 12226.56,
+      "error_pct": 0.261955886,
+      "eval_kind": "live_formula",
+      "formula": "usable_mib = C_eff \u00b7 formal_crystal_boundary_mib",
+      "formal_boundary_mib": 12800.0,
+      "layer": "ram_function",
+      "device": "NVIDIA GeForce RTX 5070"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "vram_fits_formal_boundary",
+      "name": "GpuMemory.fits",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "measured_bytes \u2264 formal_vram_bytes",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "measured_bytes": 12820480000.0,
+      "formal_bytes": 13421772800.0,
+      "layer": "ram_function"
     },
     {
       "lab": "fsot_gpu_engineering_spine_lab",
@@ -433,7 +588,7 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.020755,
+    "max_scalar_error_pct": 0.261955886,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

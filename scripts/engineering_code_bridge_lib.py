@@ -348,6 +348,8 @@ def build_engineering_hardware_code_spine() -> dict:
         DATA / "schematic_netlist_intrinsic_panel_benchmark.json",
         DATA / "fsot_gpu_cuda_competitive_panel_benchmark.json",
         DATA / "fsot_gpu_parity_verify_panel_benchmark.json",
+        DATA / "fsot_processor_function_panel_benchmark.json",
+        DATA / "fsot_ram_function_panel_benchmark.json",
     ):
         bench = _load_json(path)
         if not bench:

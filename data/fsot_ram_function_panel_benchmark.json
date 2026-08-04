@@ -1,0 +1,242 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T03:36:03.774458+00:00",
+  "domain": "FSOT_RAM_Function_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+    "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
+    "phase1_formal_gpu/lean/GpuMemory.lean",
+    "phase1_formal_gpu/lean/Trinary.lean",
+    "results/phase0/gpu_probe.json",
+    "parity/golden.json"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "electron",
+    "material",
+    "ai"
+  ],
+  "D_eff": 11,
+  "record_count": 14,
+  "observable_count": 14,
+  "scalar_record_count": 12,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "industry_vram": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "opaque CUDA allocator without crystal sectors/packing law"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_ram_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 14
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_ram",
+      "name": "crystal_pack_capacity",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 14
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fsot_ram_lab",
+      "property": "bits_per_trit",
+      "name": "ram_crystal_pack",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "2-bit pack codes {0,1,2}",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "states_per_u64",
+      "name": "ram_crystal_pack",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "64/2 packing density",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "density_gain_vs_u8",
+      "name": "ram_crystal_pack",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "8 bits/u8 \u00f7 2 bits/trit",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "crystal_sector_count",
+      "name": "ram_crystal_pack",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "header|boot|trinary|phi|ltm|interop",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "vram_usable_mib_c_eff_times_formal",
+      "name": "rtx5070_vram",
+      "computed": 12258.588193543184,
+      "measured": 12226.56,
+      "error_pct": 0.261955886,
+      "eval_kind": "live_formula",
+      "formula": "usable_mib = C_eff \u00b7 formal_crystal_boundary_mib",
+      "formal_boundary_mib": 12800.0,
+      "layer": "ram_function",
+      "device": "NVIDIA GeForce RTX 5070"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "vram_fits_formal_boundary",
+      "name": "GpuMemory.fits",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "measured_bytes \u2264 formal_vram_bytes",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "measured_bytes": 12820480000.0,
+      "formal_bytes": 13421772800.0,
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "vram_util_ratio_vs_c_eff",
+      "name": "rtx5070_vram",
+      "computed": 0.9577022026205613,
+      "measured": 0.9552001953125,
+      "error_pct": 0.261935385,
+      "eval_kind": "live_formula",
+      "formula": "measured/formal residual vs C_eff",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "alloc_half_free_ok",
+      "name": "vram_allocator_smoke",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "layer": "ram_function",
+      "mib": 5476.5
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "h2d_bandwidth_positive",
+      "name": "host_device_memory_path",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "gib_per_s": 10.533,
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "pack_u64_word_identity",
+      "name": "trinary_ram_layout",
+      "computed": 5.270498306774157e+18,
+      "measured": 5.270498306774157e+18,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "pack\u2218unpack identity on 32-trit word",
+      "layer": "ram_function",
+      "pack_u64_word": 5270498306774157604
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "pack_code_lane_count",
+      "name": "trinary_ram_layout",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "32 pack lanes = states_per_u64",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "gpu_memory_lean_present",
+      "name": "formal_ram_contract",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "host_ram_class_pow2_gib",
+      "name": "host_system_ram",
+      "computed": 32.0,
+      "measured": 31.593482971191406,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "host RAM class 2^k GiB with \u226412.5% OS reserve band",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "host_ram_gib",
+      "name": "host_system_ram",
+      "computed": 31.598148,
+      "measured": 31.593482971191406,
+      "error_pct": 0.014767,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "layer": "ram_function",
+      "class_gib": 32.0
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.261955886,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

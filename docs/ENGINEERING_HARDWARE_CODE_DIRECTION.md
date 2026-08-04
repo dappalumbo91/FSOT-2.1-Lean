@@ -11,6 +11,7 @@
 2. **Coding structure verifier** — same *class* of panel as linguistics / Protofluid / code-genome: structure, parity, genome stats — **not** importing transformer weights into the seed spine.
 3. **Neuron-zig bridge** — live bio-accurate mind stack on `I:\fsot-neuron-zig` (Lean wet-lab certificate, 0 free params on scalar path). Replaces “Living FSOT hardware” as the embodiment/bio direction.
 4. **FSOT-GPU CUDA system** — same pattern as your Desktop FSOT-GPU lab: own collapse θ / coherence gate / consensus (no softmax exp) / sparse active-key CUDA vs industry dense-SDPA, multi-lang parity, FSOT 2.1 verify bridge. Residual-gated into Lean as competitive + parity panels — **operators and seeds**, not weight import.
+5. **Processor function + RAM function** — map silicon work and memory as FSOT law (not opaque FLOPS/allocator bags): warp/pack (32 trits/u64), collapse work \(W=H\cdot S\cdot A\cdot D\), VRAM crystal sectors, usable capacity \(C_\mathrm{eff}\cdot\) formal boundary.
 
 ---
 
@@ -85,7 +86,26 @@ Panels:
 
 - `data/fsot_gpu_cuda_competitive_panel_benchmark.json`
 - `data/fsot_gpu_parity_verify_panel_benchmark.json`
-- `data/fsot_gpu_engineering_spine_benchmark.json` (GPU + ESP32 + coding rollup)
+- `data/fsot_processor_function_panel_benchmark.json` — warp, collapse work, SM class, host CPU
+- `data/fsot_ram_function_panel_benchmark.json` — packing density, crystal sectors, VRAM usable, host RAM
+- `data/fsot_gpu_engineering_spine_benchmark.json` (GPU + processor/RAM + ESP32 + coding rollup)
+
+### Processor function (closed form)
+
+```
+F_proc(x) = residual( consensus( active_keys after collapse(θ=C_eff·P_var), gate=½, no_exp ) )
+W = H·S·A·D    with A = |active| ≪ S
+warp = states_per_u64 = 64/2 = 32
+```
+
+### RAM function (closed form)
+
+```
+pack: trit → 2 bits → 32 states / u64  (×4 denser than u8)
+sectors: header | boot | trinary | Φ | LTM | interop
+usable_mib = C_eff · formal_crystal_boundary_mib   (RTX 5070 formal 12800 MiB)
+fits(alloc) ⇔ alloc ≤ formal_boundary
+```
 
 ---
 

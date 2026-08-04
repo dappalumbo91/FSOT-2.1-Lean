@@ -1,0 +1,308 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T03:36:03.771372+00:00",
+  "domain": "FSOT_Processor_Function_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+    "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
+    "phase1_formal_gpu/lean/Trinary.lean",
+    "phase1_formal_gpu/isabelle/Trinary.thy",
+    "results/competitive/beat_cuda.json",
+    "results/phase0/gpu_probe.json",
+    "results/phase0/fsot_scalar_gpu.json"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "ai",
+    "electron",
+    "energy"
+  ],
+  "D_eff": 12,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 19,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "industry_cpu_gpu": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "opaque FLOPS/IPC without collapse+consensus law"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_processor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_processor",
+      "name": "warp_collapse_work",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 20
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fsot_processor_lab",
+      "property": "bits_per_trit",
+      "name": "processor_packing_warp",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "ceil(log2(3))",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "states_per_u64",
+      "name": "processor_packing_warp",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "word_bits / bits_per_trit",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "warp_size",
+      "name": "processor_packing_warp",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "NVIDIA warp = states_per_u64",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "warp_divides_pack",
+      "name": "processor_packing_warp",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "states_per_u64 mod 32 = 0",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "trinary_arity",
+      "name": "processor_packing_warp",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "|{SpinDown,Superposed,SpinUp}|",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "collapse_theta",
+      "name": "processor_collapse_law",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff \u00b7 P_var",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "coherence_gate",
+      "name": "processor_coherence_law",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "consensus_no_exp",
+      "name": "processor_connective_law",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "consensus mean, no softmax exp",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "active_work_frac_under_phi_m4",
+      "name": "processor_work_W_eq_H_S_A_D",
+      "computed": 0.14589803375031543,
+      "measured": 0.017955555555555558,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "mean(A_frac) \u2264 \u03c6\u207b\u2074 ; W = H\u00b7S\u00b7A\u00b7D",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "work_reduction_efficiency_le_1",
+      "name": "processor_speedup_times_A_frac",
+      "computed": 1.0,
+      "measured": 0.33360055555555557,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03b7 = speedup\u00b7A_frac \u2264 1 (theory upper O(S/A))",
+      "layer": "processor_function",
+      "mean_eta": 0.33360055555555557,
+      "n_shapes": 9
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "sm_count_phi8_plus_1",
+      "name": "rtx5070_multiprocessors",
+      "computed": 47.978713763747805,
+      "measured": 48.0,
+      "error_pct": 0.044346326,
+      "eval_kind": "live_formula",
+      "formula": "N_SM \u2248 \u03c6\u2078 + 1 (this GPU class)",
+      "layer": "processor_function",
+      "device": "NVIDIA GeForce RTX 5070"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "sm_count_trinary_times_16",
+      "name": "rtx5070_multiprocessors",
+      "computed": 48.0,
+      "measured": 48.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "N_SM = 3 \u00b7 2\u2074 (trinary arity \u00d7 nibble)",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "compute_capability_major",
+      "name": "device_cc",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "lab pin CC major = 12 (Blackwell)",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "scalar_cpu_matches_canonical",
+      "name": "processor_scalar_parity",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "source": "results/phase0/fsot_scalar_gpu.json",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "scalar_gpu_f64_matches_cpu",
+      "name": "processor_scalar_parity",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "source": "results/phase0/fsot_scalar_gpu.json",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "scalar_gpu_f32_within_1e5_rel",
+      "name": "processor_scalar_parity",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "source": "results/phase0/fsot_scalar_gpu.json",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "cpu_boot_scalar_rel_err",
+      "name": "host_cpu_processor",
+      "computed": 0.0,
+      "measured": 3.773836334801153e-15,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "CPU \u03a6 matches archive canonical",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "host_cpu_logical_pow2",
+      "name": "host_cpu",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "logical cores residual vs 2^k class",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "host_cpu_physical_pow2",
+      "name": "host_cpu",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "physical cores residual vs 2^k class",
+      "layer": "processor_function"
+    },
+    {
+      "lab": "fsot_processor_lab",
+      "property": "cpu_mhz",
+      "name": "host_cpu_clock",
+      "computed": 4101.605607,
+      "measured": 4101.0,
+      "error_pct": 0.014767,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "layer": "processor_function",
+      "source": "psutil/host"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.044346326,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}
