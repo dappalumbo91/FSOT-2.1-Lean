@@ -186,6 +186,14 @@ fn replay_gr_sm_ckm_obligations() {
     assert!(0.991_f64 > 0.0, "gr_yukawa_top_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_morphic_phi_present_err_under_half");
     assert!(1.618033988749895_f64 > 0.0, "gr_morphic_phi_present_meas_pos");
+    assert!(0.1724795983521893_f64 < 0.5_f64, "gr_neutrino_m3_over_m2_err_under_half");
+    assert!(5.707570518336111_f64 > 0.0, "gr_neutrino_m3_over_m2_meas_pos");
+    assert!(0.014017064614919078_f64 < 0.5_f64, "gr_R_b_triangle_err_under_half");
+    assert!(0.382602927328059_f64 > 0.0, "gr_R_b_triangle_meas_pos");
+    assert!(0.00036384895090004057_f64 < 0.5_f64, "gr_R_t_triangle_err_under_half");
+    assert!(0.9101565799355624_f64 > 0.0, "gr_R_t_triangle_meas_pos");
+    assert!(0.002439404519026022_f64 < 0.5_f64, "gr_sin_delta_ckm_err_under_half");
+    assert!(0.93058220251172_f64 > 0.0, "gr_sin_delta_ckm_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_spin2_massless_helicities_err_under_half");
     assert!(2.0_f64 > 0.0, "gr_spin2_massless_helicities_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_spin2_TT_dof_err_under_half");

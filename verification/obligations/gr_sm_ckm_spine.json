@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-04T01:07:52.173139+00:00",
+  "generated_at": "2026-08-04T01:35:54.581521+00:00",
   "version": "1.0",
   "tier": "gr_sm_ckm",
-  "obligation_count": 232,
+  "obligation_count": 240,
   "modules": [
     "FSOT/Formal/GRSMCKMSpine.lean",
     "verification/coq/GRSMCKMSpine.v",
@@ -1684,6 +1684,74 @@
       "module": "GRSMCKM.GR",
       "claim": "T2_morphic_2d",
       "coq_id": "gr_morphic_phi_present_meas_pos"
+    },
+    {
+      "id": "gr_neutrino_m3_over_m2_err_under_half",
+      "kind": "lt_half",
+      "value": 0.1724795983521893,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_neutrino_hierarchy",
+      "statement": "error_pct(neutrino_m3_over_m2) < 0.5",
+      "coq_id": "gr_neutrino_m3_over_m2_err_under_half"
+    },
+    {
+      "id": "gr_neutrino_m3_over_m2_meas_pos",
+      "kind": "pos",
+      "value": 5.707570518336111,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_neutrino_hierarchy",
+      "coq_id": "gr_neutrino_m3_over_m2_meas_pos"
+    },
+    {
+      "id": "gr_R_b_triangle_err_under_half",
+      "kind": "lt_half",
+      "value": 0.014017064614919078,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_triangle_side",
+      "statement": "error_pct(R_b_triangle) < 0.5",
+      "coq_id": "gr_R_b_triangle_err_under_half"
+    },
+    {
+      "id": "gr_R_b_triangle_meas_pos",
+      "kind": "pos",
+      "value": 0.382602927328059,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_triangle_side",
+      "coq_id": "gr_R_b_triangle_meas_pos"
+    },
+    {
+      "id": "gr_R_t_triangle_err_under_half",
+      "kind": "lt_half",
+      "value": 0.00036384895090004057,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_triangle_side",
+      "statement": "error_pct(R_t_triangle) < 0.5",
+      "coq_id": "gr_R_t_triangle_err_under_half"
+    },
+    {
+      "id": "gr_R_t_triangle_meas_pos",
+      "kind": "pos",
+      "value": 0.9101565799355624,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_triangle_side",
+      "coq_id": "gr_R_t_triangle_meas_pos"
+    },
+    {
+      "id": "gr_sin_delta_ckm_err_under_half",
+      "kind": "lt_half",
+      "value": 0.002439404519026022,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_ckm_phase",
+      "statement": "error_pct(sin_delta_ckm) < 0.5",
+      "coq_id": "gr_sin_delta_ckm_err_under_half"
+    },
+    {
+      "id": "gr_sin_delta_ckm_meas_pos",
+      "kind": "pos",
+      "value": 0.93058220251172,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_ckm_phase",
+      "coq_id": "gr_sin_delta_ckm_meas_pos"
     },
     {
       "id": "gr_spin2_massless_helicities_err_under_half",

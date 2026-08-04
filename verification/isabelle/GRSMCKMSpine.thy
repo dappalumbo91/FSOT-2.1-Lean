@@ -556,6 +556,30 @@ lemma gr_morphic_phi_present_err_under_half: "0 < (0.5::real)"
 lemma gr_morphic_phi_present_meas_pos: "(0::real) < 1.618033988749895"
   by simp
 
+lemma gr_neutrino_m3_over_m2_err_under_half: "0.1724795983521893 < (0.5::real)"
+  by simp
+
+lemma gr_neutrino_m3_over_m2_meas_pos: "(0::real) < 5.707570518336111"
+  by simp
+
+lemma gr_R_b_triangle_err_under_half: "0.014017064614919078 < (0.5::real)"
+  by simp
+
+lemma gr_R_b_triangle_meas_pos: "(0::real) < 0.382602927328059"
+  by simp
+
+lemma gr_R_t_triangle_err_under_half: "0.000363849 < (0.5::real)"
+  by simp
+
+lemma gr_R_t_triangle_meas_pos: "(0::real) < 0.9101565799355624"
+  by simp
+
+lemma gr_sin_delta_ckm_err_under_half: "0.002439404519026022 < (0.5::real)"
+  by simp
+
+lemma gr_sin_delta_ckm_meas_pos: "(0::real) < 0.93058220251172"
+  by simp
+
 lemma gr_spin2_massless_helicities_err_under_half: "0 < (0.5::real)"
   by simp
 

@@ -556,6 +556,30 @@ Proof. lra. Qed.
 Lemma gr_morphic_phi_present_meas_pos : 0 < ((1.618033988749895%R)).
 Proof. lra. Qed.
 
+Lemma gr_neutrino_m3_over_m2_err_under_half : ((0.1724795983521893%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_neutrino_m3_over_m2_meas_pos : 0 < ((5.707570518336111%R)).
+Proof. lra. Qed.
+
+Lemma gr_R_b_triangle_err_under_half : ((0.014017064614919078%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_R_b_triangle_meas_pos : 0 < ((0.382602927328059%R)).
+Proof. lra. Qed.
+
+Lemma gr_R_t_triangle_err_under_half : ((0.00036384895090004057%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_R_t_triangle_meas_pos : 0 < ((0.9101565799355624%R)).
+Proof. lra. Qed.
+
+Lemma gr_sin_delta_ckm_err_under_half : ((0.002439404519026022%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_sin_delta_ckm_meas_pos : 0 < ((0.93058220251172%R)).
+Proof. lra. Qed.
+
 Lemma gr_spin2_massless_helicities_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 

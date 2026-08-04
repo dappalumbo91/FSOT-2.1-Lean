@@ -74,9 +74,12 @@ from fsot_seed_flavor import (  # type: ignore
     seed_m_W_GeV,
     seed_m_Z_GeV,
     seed_m_t_GeV,
+    seed_neutrino_mass_ratio_m3_m2,
+    seed_sin_delta_ckm,
     seed_sin2_theta_W,
     seed_sin2_theta_W_onshell,
     seed_string_tension_GeV,
+    seed_triangle_sides,
     seed_unitarity_triangle,
 )
 
@@ -471,6 +474,48 @@ def run_gr_recovery_suite() -> list[dict]:
             sector="Structure",
         )
     )
+    # Neutrino hierarchy + unitary-triangle sides + sin δ_CKM (seed depth)
+    rows.append(
+        _row(
+            "neutrino_m3_over_m2",
+            seed_neutrino_mass_ratio_m3_m2(),
+            math.sqrt(2.453e-3 / 7.53e-5),
+            claim="T4_neutrino_hierarchy",
+            formula="sqrt(dm2_31/dm2_21) seed",
+            sector="Flavor",
+        )
+    )
+    sides = seed_triangle_sides()
+    rows.append(
+        _row(
+            "R_b_triangle",
+            sides["R_b"],
+            math.sqrt(0.159**2 + 0.348**2),
+            claim="T4_triangle_side",
+            formula="sqrt(rho_bar**2+eta_bar**2)",
+            sector="Flavor",
+        )
+    )
+    rows.append(
+        _row(
+            "R_t_triangle",
+            sides["R_t"],
+            math.sqrt((1.0 - 0.159) ** 2 + 0.348**2),
+            claim="T4_triangle_side",
+            formula="sqrt((1-rho_bar)**2+eta_bar**2)",
+            sector="Flavor",
+        )
+    )
+    rows.append(
+        _row(
+            "sin_delta_ckm",
+            seed_sin_delta_ckm(),
+            math.sin(1.196),
+            claim="T4_ckm_phase",
+            formula="sin(E*A_BLEED*K)",
+            sector="Flavor",
+        )
+    )
 
     # Massless spin-2: 2 helicities (±2); not a uniqueness theorem for EH measure
     rows.append(
@@ -573,6 +618,7 @@ def force_package_manifest() -> dict[str, Any]:
             "√2 structural recovery (already FO load-bearing — not a new seed)",
             "Top Yukawa y_t = √2 m_t / v_SM",
             "Morphic 2D (φ) only — plastic/bronze/supergolden not seeded (history retest)",
+            "Neutrino m3/m2 hierarchy; unitary-triangle sides R_b,R_t; sin δ_CKM",
         ],
     }
 

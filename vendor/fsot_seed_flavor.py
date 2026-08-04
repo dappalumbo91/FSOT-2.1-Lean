@@ -311,6 +311,31 @@ def seed_dm2() -> dict[str, float]:
     }
 
 
+def seed_neutrino_mass_ratio_m3_m2() -> float:
+    """Normal-hierarchy mass ratio m₃/m₂ ≈ √(Δm²₃₁/Δm²₂₁) from seed Δm²."""
+    d = seed_dm2()
+    return math.sqrt(d["dm2_31_abs"] / max(d["dm2_21"], 1e-30))
+
+
+def seed_triangle_sides() -> dict[str, float]:
+    """Unitary-triangle side lengths from seed (ρ̄, η̄).
+
+      R_b = √(ρ̄² + η̄²)
+      R_t = √((1−ρ̄)² + η̄²)
+    """
+    rhob = seed_rho_bar()
+    etab = seed_eta_bar()
+    return {
+        "R_b": math.sqrt(rhob * rhob + etab * etab),
+        "R_t": math.sqrt((1.0 - rhob) ** 2 + etab * etab),
+    }
+
+
+def seed_sin_delta_ckm() -> float:
+    """sin(δ_CKM) from seed phase δ = e · A_bleed · K."""
+    return math.sin(seed_delta_ckm_rad())
+
+
 # Literature comparison targets ONLY (not used in computed)
 PDG = {
     "V_ud": 0.97435,
@@ -344,10 +369,14 @@ PDG = {
     "delta_pmns_rad": math.radians(197.0),
     "dm2_21": 7.53e-5,
     "dm2_31_abs": 2.453e-3,
+    "neutrino_m3_over_m2": math.sqrt(2.453e-3 / 7.53e-5),
     # Unitarity triangle (PDG-ish central; α = 180°−β−γ)
     "alpha_rad": math.radians(91.9),
     "beta_rad": math.radians(22.2),
     "gamma_rad": math.radians(65.9),
+    "R_b": math.sqrt(0.159**2 + 0.348**2),
+    "R_t": math.sqrt((1.0 - 0.159) ** 2 + 0.348**2),
+    "sin_delta_ckm": math.sin(1.196),
     "Lambda_QCD_GeV": 0.2173,
     "sqrt_sigma_GeV": 0.420,
     "N_eff": 3.046,
@@ -385,6 +414,18 @@ def run_seed_flavor_suite() -> dict[str, Any]:
             formula="E*A_BLEED*K",
         )
     )
+    rows.append(
+        _row(
+            "sin_delta_ckm",
+            seed_sin_delta_ckm(),
+            PDG["sin_delta_ckm"],
+            claim="T4_seed_ckm_phase",
+            formula="sin(E*A_BLEED*K)",
+        )
+    )
+    sides = seed_triangle_sides()
+    rows.append(_row("R_b", sides["R_b"], PDG["R_b"], claim="T4_seed_triangle_side", formula="sqrt(rho_bar**2+eta_bar**2)"))
+    rows.append(_row("R_t", sides["R_t"], PDG["R_t"], claim="T4_seed_triangle_side", formula="sqrt((1-rho_bar)**2+eta_bar**2)"))
 
     # CKM magnitudes (seed Wolfenstein + structural NLO)
     _ckm_formulas = {
@@ -496,7 +537,7 @@ def run_seed_flavor_suite() -> dict[str, Any]:
         rows.append(_row(k, comp, PDG[k], claim="T4_seed_pmns", formula={"sin2_theta_12": "2*POOF", "sin2_theta_23": "PHI/E", "sin2_theta_13": "POOF**2"}[k]))
     rows.append(_row("delta_pmns_rad", seed_pmns_delta_rad(), PDG["delta_pmns_rad"], claim="T4_seed_pmns_phase", formula="PI * PSI_CON"))
 
-    # Neutrino Δm²
+    # Neutrino Δm² + hierarchy ratio
     for k, comp in seed_dm2().items():
         rows.append(
             _row(
@@ -504,9 +545,18 @@ def run_seed_flavor_suite() -> dict[str, Any]:
                 comp,
                 PDG[k],
                 claim="T4_seed_neutrino",
-                formula={"dm2_21": "POOF**4 * SUCTION**2", "dm2_31_abs": "POOF**3 * SUCTION"}[k],
+                formula={"dm2_21": "(POOF*G_CAT*P_NEW)**3", "dm2_31_abs": "(G_CAT*SUCTION)**3"}[k],
             )
         )
+    rows.append(
+        _row(
+            "neutrino_m3_over_m2",
+            seed_neutrino_mass_ratio_m3_m2(),
+            PDG["neutrino_m3_over_m2"],
+            claim="T4_seed_neutrino_hierarchy",
+            formula="sqrt(dm2_31/dm2_21) seed",
+        )
+    )
 
     # Exact SM structure (no literature base)
     for name, t3, y, q_exp in (
@@ -570,8 +620,12 @@ def run_seed_flavor_suite() -> dict[str, Any]:
             "sin2_13": "2*ETA_EFF*POOF**2",
             "dm2_21": "(POOF*G_CAT*P_NEW)**3",
             "dm2_31": "(G_CAT*SUCTION)**3",
+            "neutrino_m3_over_m2": "sqrt(dm2_31/dm2_21)",
             "delta_pmns": "2*E*PSI_CON",
             "alpha_beta_gamma": "unitarity triangle from (rho_bar,eta_bar)",
+            "R_b": "sqrt(rho_bar**2+eta_bar**2)",
+            "R_t": "sqrt((1-rho_bar)**2+eta_bar**2)",
+            "sin_delta_ckm": "sin(E*A_BLEED*K)",
             "Lambda_QCD": "G_CAT*SUCTION*PHI",
             "sqrt_sigma": "K",
             "N_eff": "3+2*POOF*SUCTION",
