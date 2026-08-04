@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-08-04",
+  "purpose": "Named industry competitors for GPU/CPU/RAM vs FSOT hardware path — parallel honesty to beat_cuda",
+  "gpu": {
+    "opponent": ["dense_softmax_cuda_attention", "pytorch_fused_causal_sdpa"],
+    "fsot": "compact_active_consensus_cuda",
+    "device": "NVIDIA GeForce RTX 5070",
+    "ledger": "FSOT-GPU results/competitive/beat_cuda.json",
+    "across_the_board": true,
+    "shapes_won": "9/9",
+    "max_speedup_vs_dense_cuda": 89.49,
+    "speedup_vs_fused_sdpa_range": [1.05, 7.87],
+    "mean_A_frac": 0.01796,
+    "status": "BEAT"
+  },
+  "cpu": {
+    "opponent": [
+      "numpy_dense_causal_softmax_attention",
+      "pytorch_cpu_dense_softmax",
+      "onednn_mkl_gemm_attention_class"
+    ],
+    "fsot": "collapse_coherence_consensus_O_S_A",
+    "complexity": {
+      "industry": "O(H*S^2*D)",
+      "fsot": "O(H*S*A*D)",
+      "theory_upper_at_A_frac_0.007": "~140x",
+      "status": "BEAT_COMPLEXITY"
+    },
+    "wall_clock_python_numpy_prototype_2026_08_04": {
+      "note": "Unoptimized Python loops lose to BLAS dense matmul — does not refute GPU wins",
+      "rows": [
+        {"H": 8, "S": 32, "D": 16, "fsot_ms": 3.085, "dense_cpu_ms": 0.237, "speedup": 0.08, "win": false},
+        {"H": 8, "S": 64, "D": 32, "fsot_ms": 5.923, "dense_cpu_ms": 0.556, "speedup": 0.09, "win": false},
+        {"H": 8, "S": 128, "D": 64, "fsot_ms": 11.899, "dense_cpu_ms": 3.165, "speedup": 0.27, "win": false},
+        {"H": 8, "S": 256, "D": 64, "fsot_ms": 23.451, "dense_cpu_ms": 11.318, "speedup": 0.48, "win": false},
+        {"H": 4, "S": 512, "D": 64, "fsot_ms": 24.077, "dense_cpu_ms": 21.688, "speedup": 0.9, "win": false}
+      ],
+      "status": "OPEN_NEED_RUST_SIMD_KERNEL"
+    },
+    "seed_and_bare_metal": {
+      "collapse_theta_err_pct": 0.0,
+      "warp_states_per_u64": 32,
+      "qemu_hw_markers": "PASS",
+      "status": "PASS"
+    },
+    "overall_status": "COMPLEXITY_WIN_WALLCLOCK_OPEN"
+  },
+  "ram": {
+    "opponent": [
+      "u8_or_i8_per_state_tensor_bank",
+      "f32_state_bank",
+      "opaque_cuda_or_os_heap_allocator"
+    ],
+    "fsot": "2bit_trit_crystal_sectors_c_eff_capacity",
+    "density": {
+      "vs_u8": 4.0,
+      "vs_f32": 16.0,
+      "states_per_u64": 32,
+      "status": "BEAT_DENSITY"
+    },
+    "capacity": {
+      "formula": "usable_mib = C_eff * formal_crystal_boundary_mib",
+      "formal_boundary_mib": 12800,
+      "predicted_usable_mib": 12258.588193543184,
+      "measured_rtx5070_mib": 12226.56,
+      "residual_pct": 0.2619558857371566,
+      "status": "MATCH_UNDER_0_5_PCT"
+    },
+    "layout": {
+      "sectors": 6,
+      "pack_word_golden": 5270498306774157604,
+      "pack_roundtrip": true,
+      "status": "PASS"
+    },
+    "not_claimed": [
+      "higher_ddr5_mt_s_than_jedec_product",
+      "lower_l1_latency_without_cache_hierarchy_panel"
+    ],
+    "overall_status": "BEAT_DENSITY_AND_CAPACITY_LAW"
+  },
+  "summary": {
+    "gpu": "BEAT industry CUDA attention algorithms (locked suite)",
+    "cpu": "Beat dense complexity; wall-clock climb needs optimized host kernel",
+    "ram": "Beat byte/float packing density; capacity residual green; not a DRAM-MT/s race"
+  }
+}
