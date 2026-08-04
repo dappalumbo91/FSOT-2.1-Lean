@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "data" / "neuron_cohort_manifest.yaml"
 OUTPUT = ROOT / "data" / "multi_hero_benchmark.json"
 
-HEROES_PER_CLASS = 4
+HEROES_PER_CLASS = 6  # thickened from 4 for granular Hybrid FI depth wave
 FI_CERT_THRESHOLD = 0.05
 
 

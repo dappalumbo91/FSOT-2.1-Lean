@@ -1,0 +1,418 @@
+{
+  "generated_at": "2026-08-04T01:46:03.097228+00:00",
+  "wave": "near_gate_and_thin_pace",
+  "actions": [
+    "near_gate_audit",
+    {
+      "rebuild": "multi_hero_benchmark",
+      "record_count": 24,
+      "stratum_count": 4,
+      "heroes_per_class": 6,
+      "median_fi_proxy_rel_err_pct": 0.56205
+    },
+    {
+      "rebuild": "hybrid_fi_sim_multi_hero_panel",
+      "record_count": 32,
+      "material_records": 32,
+      "scalar_record_count": 6,
+      "median_error_pct": 0.49,
+      "max_error_pct": 0.49
+    },
+    {
+      "rebuild": "materials_species_bridge",
+      "record_count": 45,
+      "overlap_metal_count": 10,
+      "median_error_pct": 0.002730116109889546
+    },
+    "audit_all_benchmark_margins"
+  ],
+  "near_gate_findings": {
+    "phi_morphogenetic_scaling_benchmark.json": {
+      "n_records": 3,
+      "max_error_pct": 0.025276558406931916,
+      "top": [
+        {
+          "error_pct": 0.025276558406931916,
+          "name": "morphogen_species_panel",
+          "property": "phi_species",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.01760779720633292,
+          "name": "all_channels",
+          "property": "pooled_median",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.008894500154066343,
+          "name": "morphogen_corpus_panel",
+          "property": "phi_corpus",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        }
+      ]
+    },
+    "crc_handbook_properties_benchmark.json": {
+      "n_records": 391,
+      "max_error_pct": 0.498862,
+      "top": [
+        {
+          "error_pct": 0.498862,
+          "name": "Hg",
+          "property": "\u00a739 Speed of Sound",
+          "formula": "e\u2077+\u03c6\u2078\u00b7e\u00b2",
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.497488,
+          "name": "polyisoprene",
+          "property": "\u00a761 Glass Tg",
+          "formula": "PHI\u00b9\u2070+PHI\u2079",
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.493098,
+          "name": "W",
+          "property": "\u00a7101 Atomization \u0394H_at",
+          "formula": "E^4+E^7-PI^5",
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.489023,
+          "name": "K",
+          "property": "\u00a733 Debye Temps",
+          "formula": "\u03c0\u2074-\u03c6\u2074",
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.484432,
+          "name": "Cu(s)",
+          "property": "\u00a712 Cp\u00b0",
+          "formula": "e\u00b3+\u03c6\u00b3",
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        }
+      ]
+    },
+    "geochemistry_benchmark.json": {
+      "n_records": 153,
+      "max_error_pct": 0.498368,
+      "top": [
+        {
+          "error_pct": 0.498368,
+          "name": "Ni_EDTA",
+          "property": "\u00a758 log\u03b2 Stability",
+          "formula": null,
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.493098,
+          "name": "W",
+          "property": "\u00a7101 Atomization \u0394H_at",
+          "formula": null,
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.465207,
+          "name": "F\u207b",
+          "property": "\u00a740 Ionic Radii",
+          "formula": null,
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.45056,
+          "name": "Be-9",
+          "property": "\u00a742 Binding E/A",
+          "formula": null,
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.443751,
+          "name": "Mn_EDTA",
+          "property": "\u00a758 log\u03b2 Stability",
+          "formula": null,
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        }
+      ]
+    },
+    "zebrafish_predictive_validation_panel_benchmark.json": {
+      "n_records": 2,
+      "max_error_pct": 0.37159,
+      "top": [
+        {
+          "error_pct": 0.37159,
+          "name": "developmental_mechanics",
+          "property": "fsot_intrinsic_prediction",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.3579695,
+          "name": "all_channels",
+          "property": "pooled_median",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        }
+      ]
+    },
+    "materials_engineering_benchmark.json": {
+      "n_records": 5,
+      "max_error_pct": 0.06721669152527372,
+      "top": [
+        {
+          "error_pct": 0.06721669152527372,
+          "name": "\u00a734 Young's Modulus",
+          "property": "section_median_sec34_youngs_modulus",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.03976772759072059,
+          "name": "\u00a737 Thermal \u03ba",
+          "property": "section_median_sec37_thermal_kappa",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.027170334947435038,
+          "name": "all_sections",
+          "property": "pooled_engineering_median",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.023259895459434028,
+          "name": "\u00a784 Poisson Ratio \u03bd",
+          "property": "section_median_sec84_poisson_ratio_nu",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.017310023021640548,
+          "name": "\u00a762 Bulk Modulus",
+          "property": "section_median_sec62_bulk_modulus",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        }
+      ]
+    },
+    "quantum_materials_benchmark.json": {
+      "n_records": 5,
+      "max_error_pct": 0.07662024786017463,
+      "top": [
+        {
+          "error_pct": 0.07662024786017463,
+          "name": "\u00a718 Crystal Field \u0394o",
+          "property": "section_median_sec18_crystal_field_deltao",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.024318115591995593,
+          "name": "all_sections",
+          "property": "pooled_condensed_matter_median",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.01692529386942307,
+          "name": "\u00a775 Superconducting Tc",
+          "property": "section_median_sec75_superconducting_tc",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.013419257571482188,
+          "name": "\u00a755 \u03bceff Magnetic",
+          "property": "section_median_sec55_mueff_magnetic",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.012196976490588003,
+          "name": "\u00a731 Band Gaps",
+          "property": "section_median_sec31_band_gaps",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        }
+      ]
+    },
+    "clinical_medicine_extension_benchmark.json": {
+      "n_records": 2,
+      "max_error_pct": 0.002458296751538192,
+      "top": [
+        {
+          "error_pct": 0.002458296751538192,
+          "name": "all_channels",
+          "property": "pooled_median",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.002458296751538192,
+          "name": "clinical_medicine_panel",
+          "property": "clinical_observables",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        }
+      ]
+    },
+    "immunology_benchmark.json": {
+      "n_records": 84,
+      "max_error_pct": 0.480058,
+      "top": [
+        {
+          "error_pct": 0.480058,
+          "name": "TA/AT",
+          "property": "\u00a771 DNA Stacking \u0394G",
+          "formula": "-GAMMA",
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.451494,
+          "name": "GA/CT",
+          "property": "\u00a771 DNA Stacking \u0394G",
+          "formula": "-OMEGA",
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.451494,
+          "name": "TC/AG",
+          "property": "\u00a771 DNA Stacking \u0394G",
+          "formula": "-OMEGA",
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.431577,
+          "name": "Asp_pKR",
+          "property": "\u00a722 Amino Acid pKa",
+          "formula": "e+G",
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.428925,
+          "name": "sildenafil_PDE5",
+          "property": "\u00a765 Enzyme pKi",
+          "formula": "E\u00b2+A_BLEED",
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        }
+      ]
+    },
+    "neuroimmunology_benchmark.json": {
+      "n_records": 5,
+      "max_error_pct": 0.234429,
+      "top": [
+        {
+          "error_pct": 0.234429,
+          "name": "\u00a765 Enzyme pKi",
+          "property": "section_median_sec65_enzyme_pki",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.178711,
+          "name": "\u00a721 Protein \u0394G",
+          "property": "section_median_sec21_protein_deltag",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.060502,
+          "name": "\u00a723 Drug pKd",
+          "property": "section_median_sec23_drug_pkd",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.05041956982053305,
+          "name": "all_channels",
+          "property": "pooled_neuroimmune_median",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.0,
+          "name": "allen_strata_coupling",
+          "property": "neuroimmune_fi_coupling_classifier",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        }
+      ]
+    },
+    "culinary_arts_benchmark.json": {
+      "n_records": 7,
+      "max_error_pct": 0.462279,
+      "top": [
+        {
+          "error_pct": 0.462279,
+          "name": "\u00a745 Activation Ea",
+          "property": "section_median_sec45_activation_ea",
+          "formula": null,
+          "mechanism_note": "SMILES/seed closed-form residual already \u22640.5%; not a free-param fold. Tighten only via better formula class."
+        },
+        {
+          "error_pct": 0.07869745016116055,
+          "name": "coffee_roast",
+          "property": "source_median_coffee_roast",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.052193,
+          "name": "\u00a761 Glass Tg",
+          "property": "section_median_sec61_glass_tg",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.047615187057821064,
+          "name": "all_channels",
+          "property": "pooled_culinary_median",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        },
+        {
+          "error_pct": 0.04761518705781972,
+          "name": "recipe_process",
+          "property": "source_median_recipe_process",
+          "formula": null,
+          "mechanism_note": "within aspiration band or aggregate channel"
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "near_gate_summary": {
+    "near_gate_files_audited": 10,
+    "max_offenders_ge_0.45": [
+      {
+        "file": "crc_handbook_properties_benchmark.json",
+        "max": 0.498862,
+        "name": "Hg"
+      },
+      {
+        "file": "geochemistry_benchmark.json",
+        "max": 0.498368,
+        "name": "Ni_EDTA"
+      },
+      {
+        "file": "immunology_benchmark.json",
+        "max": 0.480058,
+        "name": "TA/AT"
+      },
+      {
+        "file": "culinary_arts_benchmark.json",
+        "max": 0.462279,
+        "name": "\u00a745 Activation Ea"
+      }
+    ],
+    "action": "Do not invent free parameters for CRC/immunology SMILES tops. They are already green; headroom is formula-class residual. Thin-panel thickening is the expansion lever this pace."
+  },
+  "margin_after": {
+    "green_pass": 414,
+    "green_fail": 0,
+    "worst_max": 0.4989,
+    "worst_domain": "Phi_Morphogenetic_Scaling"
+  }
+}

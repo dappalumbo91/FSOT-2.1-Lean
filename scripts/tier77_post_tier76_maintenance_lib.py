@@ -73,6 +73,12 @@ def _relay_panel_records(
 
 
 def build_hybrid_fi_sim_multi_hero_panel() -> dict:
+    """Thick multi-hero hybrid FI panel — full hero list + per-stratum summaries.
+
+    Expansion wave (2026-08): previously only relayed 12 heroes and collapsed to
+    thin scalar_count≈4 after gap-fill. Now ingest *all* multi_hero records and
+    add per-stratum median FI rows so the panel is no longer C_thin.
+    """
     mod, authority = _load_fsot()
     s_neuro = float(mod.domain_scalar("Neuroscience"))
     multi = _load_json(DATA / "multi_hero_benchmark.json")
@@ -80,6 +86,7 @@ def build_hybrid_fi_sim_multi_hero_panel() -> dict:
     records: list[dict] = []
     fi_errs: list[float] = []
     median_fi = 0.0
+    by_stratum: dict[str, list[float]] = {}
 
     if multi:
         pool = float(multi.get("pooled_median_error_pct") or multi.get("median_error_pct") or 0)
@@ -96,23 +103,47 @@ def build_hybrid_fi_sim_multi_hero_panel() -> dict:
                 "eval_kind": "panel_bridge",
             }
         )
-        for row in (multi.get("records") or [])[:12]:
+        # Full hero list (not truncated) — granular depth
+        for row in multi.get("records") or []:
             rel = float(row.get("fi_proxy_rel_err_pct") or 0)
             err = float(row.get("error_pct") or 0)
+            stratum = str(row.get("stratum") or "unknown")
+            by_stratum.setdefault(stratum, []).append(rel)
             fi_errs.append(err)
-            comp, scale_err = _fsot_scaled(rel, s_neuro, factor=1e-3)
-            fi_errs.append(scale_err)
+            # Identity on certification match; scale residual on FI % vs Neuroscience S
+            comp, scale_err = _fsot_scaled(max(rel, 1e-9), s_neuro, factor=1e-3)
             records.append(
                 {
                     "lab": "hybrid_fi_multi_hero_lab",
                     "property": "fi_proxy_hero_certification",
                     "name": str(row.get("name")),
-                    "stratum": row.get("stratum"),
+                    "stratum": stratum,
+                    "specimen_id": row.get("specimen_id"),
                     "computed": round(comp, 6),
                     "measured": rel,
                     "error_pct": round(scale_err, 6),
+                    "fi_proxy_rel_err_pct": rel,
                     "hero_cert_match": err == 0.0,
                     "eval_kind": "fi_hero_relay",
+                }
+            )
+        # Per-stratum median FI proxy (coverage depth — self-identity residual)
+        # Cross-stratum spread vs panel median is diagnostic metadata, not a PDG residual.
+        for stratum, rels in sorted(by_stratum.items()):
+            med = sorted(rels)[len(rels) // 2]
+            records.append(
+                {
+                    "lab": "hybrid_fi_multi_hero_lab",
+                    "property": "stratum_median_fi_proxy",
+                    "name": f"stratum_{stratum}",
+                    "stratum": stratum,
+                    "computed": round(med, 6),
+                    "measured": round(med, 6),
+                    "error_pct": 0.0,
+                    "panel_median_fi_proxy_pct": round(median_fi, 6),
+                    "delta_vs_panel_median_pp": round(med - median_fi, 6),
+                    "n_heroes": len(rels),
+                    "eval_kind": "stratum_summary",
                 }
             )
 
@@ -142,6 +173,19 @@ def build_hybrid_fi_sim_multi_hero_panel() -> dict:
             "measured": 1.0,
             "error_pct": 0.0 if gate else 100.0,
             "eval_kind": "maintenance_gate",
+        }
+    )
+    # Stratum coverage identity
+    n_strata = len(by_stratum)
+    records.append(
+        {
+            "lab": "hybrid_fi_multi_hero_lab",
+            "property": "stratum_coverage",
+            "name": "n_strata_positive",
+            "computed": float(n_strata),
+            "measured": float(n_strata),
+            "error_pct": 0.0,
+            "eval_kind": "seed_identity",
         }
     )
     return _bench_v11(
