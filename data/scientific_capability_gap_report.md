@@ -1,6 +1,6 @@
 # Scientific capability & accuracy gap report
 
-Generated: `2026-08-04T03:00:43.590626+00:00`
+Generated: `2026-08-04T03:12:33.469627+00:00`
 
 ## Goal
 
@@ -10,7 +10,7 @@ Beat or exceed scientific SOTA / literature capability on measured observables
 
 - Green: **414** pass / 0 fail
 - Worst max residual: **0.4989%** (Phi_Morphogenetic_Scaling)
-- Domains with max > 0.05% aspiration: **102**
+- Domains with max > 0.05% aspiration: **100**
 
 ## SOTA competitiveness (registered comparisons)
 
@@ -67,14 +67,14 @@ FSOT already beats registered SOTA typical error on headline observables with 0 
 - n=2 max=3.862903827310908e-14  math_generator_airfoil_rmse_benchmark.json
 - n=4 max=0.027018411789274284  h0_planck_benchmark.json
 - n=4 max=0.0  Astrophysical_Structure_Crosswalk
-- n=4 max=0.0  Compact_Object_Binary_Events
 - n=4 max=0.0  Interactive_Media_Prereg_Scaffold
-- n=4 max=0.0  Scientific_Expansion_Depth_Spine
-- n=5 max=0.051887  Schematic_Netlist_Intrinsic_Panel
 - n=5 max=0.023609235048340338  Ionospheric_Chemistry_Coupling
 - n=5 max=0.013294  Canonical_Oracle_Panel
 - n=5 max=0.0  Fuel_Candidate_Prereg_Scaffold
 - n=5 max=0.0  Government_Open_Data_Spine
+- n=5 max=0.0  Public_Verifiable_Spine
+- n=5 max=0.0  Tier_95_Zebrafish_Spine
+- n=6 max=0.15  DESI_wa_Constraint
 
 ## Priority queue
 

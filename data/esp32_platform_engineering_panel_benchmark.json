@@ -1,21 +1,22 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T03:20:15.616569+00:00",
-  "domain": "Circuit_Component_Emergence_Panel",
+  "generated_at": "2026-08-04T03:20:15.632552+00:00",
+  "domain": "ESP32_Platform_Engineering_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\industry_component_catalog.json",
-    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\circuit_components\\tier96_cache\\industry_component_catalog_cache.json"
+    "verification/esp32/fsot_esp32_observer"
   ],
   "maps_to_lean": [
-    "material",
     "electron",
-    "energy"
+    "material",
+    "energy",
+    "ai"
   ],
-  "D_eff": 10,
-  "record_count": 57,
-  "observable_count": 57,
-  "scalar_record_count": 57,
+  "D_eff": 12,
+  "record_count": 34,
+  "observable_count": 34,
+  "scalar_record_count": 34,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.020755,
   "pooled_median_error_pct": 0.020755,
@@ -23,14 +24,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "circuit_bom_guess": {
+      "esp32_datasheet": {
         "sota_typical_error_pct": 8.0,
-        "sota_model": "manual BOM selection without seed atlas"
+        "sota_model": "Espressif datasheet + hand BOM estimates"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_circuit_components_vs_baseline": true
+      "channel_esp32_engineering_vs_baseline": true
     }
   },
   "records": [
@@ -41,322 +42,19 @@
       "computed": 0.020755,
       "measured": 0.0,
       "error_pct": 0.020755,
-      "observable_count": 57
+      "observable_count": 34
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "circuit_components",
-      "name": "industry_catalog",
+      "property": "esp32_engineering",
+      "name": "platform_rails",
       "computed": 0.020755,
       "measured": 0.0,
       "error_pct": 0.020755,
-      "observable_count": 57
+      "observable_count": 34
     }
   ],
   "material_records": [
-    {
-      "lab": "circuit_component_lab",
-      "property": "resistance_ohm",
-      "name": "R_10R_1pct",
-      "computed": 10.002075,
-      "measured": 10.0,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "resistor",
-      "designator": "R1",
-      "industry_ref": "EIA-96/IEC 60115"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "resistance_ohm",
-      "name": "R_100R_1pct",
-      "computed": 100.020755,
-      "measured": 100.0,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "resistor",
-      "designator": "R2",
-      "industry_ref": "EIA-96/IEC 60115"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "resistance_ohm",
-      "name": "R_1k_1pct",
-      "computed": 1000.207546,
-      "measured": 1000.0,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "resistor",
-      "designator": "R3",
-      "industry_ref": "EIA-96/IEC 60115"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "resistance_ohm",
-      "name": "R_10k_1pct",
-      "computed": 10002.075462,
-      "measured": 10000.0,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "resistor",
-      "designator": "R4",
-      "industry_ref": "EIA-96/IEC 60115"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "resistance_ohm",
-      "name": "R_47k_5pct",
-      "computed": 47009.754672,
-      "measured": 47000.0,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "resistor",
-      "designator": "R5",
-      "industry_ref": "EIA-96/IEC 60115"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "resistance_ohm",
-      "name": "R_100k_1pct",
-      "computed": 100020.754621,
-      "measured": 100000.0,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "resistor",
-      "designator": "R6",
-      "industry_ref": "EIA-96/IEC 60115"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "resistance_ohm",
-      "name": "R_4k7_EIA96",
-      "computed": 4700.975467,
-      "measured": 4700.0,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "resistor",
-      "designator": "R7",
-      "industry_ref": "EIA-96/IEC 60115"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "resistance_ohm",
-      "name": "R_22R_5pct",
-      "computed": 22.004566,
-      "measured": 22.0,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "resistor",
-      "designator": "R8",
-      "industry_ref": "EIA-96/IEC 60115"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "capacitance_f",
-      "name": "C_10nF_X7R",
-      "computed": 0.0,
-      "measured": 1e-08,
-      "error_pct": 0.01341,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Materials_Science",
-      "fsot_scalar": 0.33526,
-      "component_class": "capacitor",
-      "dielectric": "X7R"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "capacitance_f",
-      "name": "C_100nF_X7R",
-      "computed": 0.0,
-      "measured": 1e-07,
-      "error_pct": 0.01341,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Materials_Science",
-      "fsot_scalar": 0.33526,
-      "component_class": "capacitor",
-      "dielectric": "X7R"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "capacitance_f",
-      "name": "C_1uF_X5R",
-      "computed": 1e-06,
-      "measured": 1e-06,
-      "error_pct": 0.01341,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Materials_Science",
-      "fsot_scalar": 0.33526,
-      "component_class": "capacitor",
-      "dielectric": "X5R"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "capacitance_f",
-      "name": "C_10uF_electrolytic",
-      "computed": 1e-05,
-      "measured": 1e-05,
-      "error_pct": 0.01341,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Materials_Science",
-      "fsot_scalar": 0.33526,
-      "component_class": "capacitor",
-      "dielectric": "electrolytic"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "capacitance_f",
-      "name": "C_100pF_C0G",
-      "computed": 0.0,
-      "measured": 1e-10,
-      "error_pct": 0.01341,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Materials_Science",
-      "fsot_scalar": 0.33526,
-      "component_class": "capacitor",
-      "dielectric": "C0G"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "inductance_h",
-      "name": "L_10uH_power",
-      "computed": 1e-05,
-      "measured": 1e-05,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "inductor",
-      "q_factor": 45
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "inductance_h",
-      "name": "L_100uH_rf",
-      "computed": 0.0001,
-      "measured": 0.0001,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "inductor",
-      "q_factor": 60
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "inductance_h",
-      "name": "L_1mH_filter",
-      "computed": 0.001,
-      "measured": 0.001,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "inductor",
-      "q_factor": 35
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "hfe",
-      "name": "Q_2N3904",
-      "computed": 150.014256,
-      "measured": 150.0,
-      "error_pct": 0.009504,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Particle_Physics",
-      "fsot_scalar": 0.950413,
-      "component_class": "semiconductor"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "rdson_ohm",
-      "name": "Q_IRLZ44N",
-      "computed": 0.022005,
-      "measured": 0.022,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "component_class": "semiconductor"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "efficiency_pct",
-      "name": "PS_BUCK_5V3A",
-      "computed": 92.036201,
-      "measured": 92.0,
-      "error_pct": 0.039349,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Thermodynamics",
-      "fsot_scalar": 0.786975,
-      "component_class": "power",
-      "vout_v": 5
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "efficiency_pct",
-      "name": "PS_LDO_3V3",
-      "computed": 66.02597,
-      "measured": 66.0,
-      "error_pct": 0.039349,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Thermodynamics",
-      "fsot_scalar": 0.786975,
-      "component_class": "power",
-      "vout_v": 3.3
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "efficiency_pct",
-      "name": "PS_BOOST_12V",
-      "computed": 88.034627,
-      "measured": 88.0,
-      "error_pct": 0.039349,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Thermodynamics",
-      "fsot_scalar": 0.786975,
-      "component_class": "power",
-      "vout_v": 12
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "frequency_hz",
-      "name": "XTAL_16MHz",
-      "computed": 16006530.7286,
-      "measured": 16000000.0,
-      "error_pct": 0.040817,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Optics",
-      "fsot_scalar": 0.408171,
-      "component_class": "crystal"
-    },
-    {
-      "lab": "circuit_component_lab",
-      "property": "frequency_hz",
-      "name": "XTAL_32kHz",
-      "computed": 32781.374932,
-      "measured": 32768.0,
-      "error_pct": 0.040817,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Optics",
-      "fsot_scalar": 0.408171,
-      "component_class": "crystal"
-    },
     {
       "lab": "circuit_component_lab",
       "property": "vdd_v",
@@ -802,7 +500,7 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.020755,
-    "max_scalar_error_pct": 0.040817,
+    "max_scalar_error_pct": 0.039349,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

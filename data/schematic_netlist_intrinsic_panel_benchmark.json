@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T03:12:14.877954+00:00",
+  "generated_at": "2026-08-04T03:20:15.616569+00:00",
   "domain": "Schematic_Netlist_Intrinsic_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -13,9 +13,9 @@
     "energy"
   ],
   "D_eff": 10,
-  "record_count": 14,
-  "observable_count": 14,
-  "scalar_record_count": 14,
+  "record_count": 17,
+  "observable_count": 17,
+  "scalar_record_count": 17,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.020755,
   "pooled_median_error_pct": 0.020755,
@@ -41,7 +41,7 @@
       "computed": 0.020755,
       "measured": 0.0,
       "error_pct": 0.020755,
-      "observable_count": 14
+      "observable_count": 17
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +50,7 @@
       "computed": 0.020755,
       "measured": 0.0,
       "error_pct": 0.020755,
-      "observable_count": 14
+      "observable_count": 17
     }
   ],
   "material_records": [
@@ -246,6 +246,47 @@
       "fsot_scalar": 0.786975,
       "V_v": 12,
       "R_ohm": 4700
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "rc_tau_s",
+      "name": "esp32_rc_reset_10k_100n",
+      "computed": 0.001,
+      "measured": 0.001,
+      "error_pct": 0.020755,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Electromagnetism",
+      "fsot_scalar": 0.518866,
+      "R_ohm": 10000.0,
+      "C_f": 1e-07,
+      "textbook_tau": 0.001
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "dissipated_power_w",
+      "name": "esp32_i2c_pull_4k7",
+      "computed": 0.002318,
+      "measured": 0.002317,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "V_v": 3.3,
+      "R_ohm": 4700
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "divider_vout_v",
+      "name": "esp32_uart_divider_optional",
+      "computed": 3.333692,
+      "measured": 3.333,
+      "error_pct": 0.020755,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Electromagnetism",
+      "fsot_scalar": 0.518866,
+      "vin_v": 5.0,
+      "R_top": 10000,
+      "R_bot": 20000
     }
   ],
   "margin_summary": {

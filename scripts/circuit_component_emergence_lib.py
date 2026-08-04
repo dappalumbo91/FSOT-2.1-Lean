@@ -78,6 +78,7 @@ def ingest_industry_catalog() -> dict:
     catalog = _load_json(CATALOG)
     components = catalog.get("components") or []
     refs = catalog.get("reference_circuits") or []
+    rails = catalog.get("esp32_platform_rails") or []
     by_class: dict[str, int] = {}
     for row in components:
         cls = str(row.get("class") or "unknown")
@@ -87,9 +88,11 @@ def ingest_industry_catalog() -> dict:
         "schema_version": catalog.get("schema_version", "1.0"),
         "component_count": len(components),
         "reference_circuit_count": len(refs),
+        "esp32_rail_count": len(rails),
         "by_class": by_class,
         "components": components,
         "reference_circuits": refs,
+        "esp32_platform_rails": rails,
     }
     _write_cache("industry_component_catalog_cache.json", doc)
     return doc
@@ -175,6 +178,57 @@ def _component_records(live: dict) -> tuple[list[dict], list[float]]:
                 measured=float(row["frequency_hz"]),
                 domain="Quantum_Optics",
                 extra={"component_class": cls},
+            )
+            records.append(rec)
+            errs.append(float(rec["error_pct"]))
+        # ESP32 / MCU absolute rails (engineering build path)
+        for prop, domain in (
+            ("vdd_v", "Electromagnetism"),
+            ("vdd_min_v", "Electromagnetism"),
+            ("vdd_max_v", "Electromagnetism"),
+            ("cpu_mhz", "Quantum_Computing"),
+            ("flash_mhz", "Quantum_Computing"),
+            ("wifi_freq_ghz", "Electromagnetism"),
+            ("deep_sleep_ua", "Thermodynamics"),
+            ("active_wifi_tx_ma", "Electromagnetism"),
+            ("gpio_high_v", "Electromagnetism"),
+            ("adc_bits", "Quantum_Computing"),
+            ("dropout_v", "Electromagnetism"),
+        ):
+            if row.get(prop) is None:
+                continue
+            rec = make_fsot_record(
+                lab="circuit_component_lab",
+                property_name=prop,
+                name=cid,
+                measured=float(row[prop]),
+                domain=domain,
+                extra={"component_class": cls, "platform": "esp32_engineering"},
+            )
+            records.append(rec)
+            errs.append(float(rec["error_pct"]))
+    # Platform rail anchors (ESP32 build sheet)
+    for row in live.get("esp32_platform_rails") or []:
+        rid = str(row.get("id") or "esp32_rail")
+        for prop, domain in (
+            ("vdd_v", "Electromagnetism"),
+            ("max_current_ma", "Electromagnetism"),
+            ("v_high_v", "Electromagnetism"),
+            ("v_low_v", "Electromagnetism"),
+            ("R_ohm", "Electromagnetism"),
+            ("baud", "Quantum_Computing"),
+            ("cpu_mhz", "Quantum_Computing"),
+            ("flash_mhz", "Quantum_Computing"),
+        ):
+            if row.get(prop) is None:
+                continue
+            rec = make_fsot_record(
+                lab="circuit_component_lab",
+                property_name=prop,
+                name=rid,
+                measured=float(row[prop]),
+                domain=domain,
+                extra={"platform": "esp32", "note": row.get("note")},
             )
             records.append(rec)
             errs.append(float(rec["error_pct"]))

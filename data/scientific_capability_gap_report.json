@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T03:00:43.590626+00:00",
+  "generated_at": "2026-08-04T03:12:33.469627+00:00",
   "goal": "Beat or exceed scientific SOTA / literature capability on measured observables",
   "live_atlas": {
     "green_pass": 414,
     "green_fail": 0,
     "worst_max_error_pct": 0.4989,
     "worst_domain": "Phi_Morphogenetic_Scaling",
-    "domains_above_aspiration_0_05": 102,
+    "domains_above_aspiration_0_05": 100,
     "threshold_green_pct": 0.5,
     "threshold_aspiration_pct": 0.05
   },
@@ -555,28 +555,10 @@
       "file": "astrophysical_structure_crosswalk_benchmark.json"
     },
     {
-      "domain": "Compact_Object_Binary_Events",
-      "scalar_count": 4,
-      "max_error_pct": 0.0,
-      "file": "compact_object_binary_events_benchmark.json"
-    },
-    {
       "domain": "Interactive_Media_Prereg_Scaffold",
       "scalar_count": 4,
       "max_error_pct": 0.0,
       "file": "interactive_media_prereg_scaffold_benchmark.json"
-    },
-    {
-      "domain": "Scientific_Expansion_Depth_Spine",
-      "scalar_count": 4,
-      "max_error_pct": 0.0,
-      "file": "scientific_expansion_depth_spine_benchmark.json"
-    },
-    {
-      "domain": "Schematic_Netlist_Intrinsic_Panel",
-      "scalar_count": 5,
-      "max_error_pct": 0.051887,
-      "file": "schematic_netlist_intrinsic_panel_benchmark.json"
     },
     {
       "domain": "Ionospheric_Chemistry_Coupling",
@@ -679,6 +661,24 @@
       "scalar_count": 7,
       "max_error_pct": 0.0310845,
       "file": "fluid_phase_current_spine_benchmark.json"
+    },
+    {
+      "domain": "Binary_Decoder_Panel",
+      "scalar_count": 7,
+      "max_error_pct": 0.008488,
+      "file": "binary_decoder_panel_benchmark.json"
+    },
+    {
+      "domain": "Interdisciplinary_Spine_Crosswalk",
+      "scalar_count": 7,
+      "max_error_pct": 0.008488,
+      "file": "interdisciplinary_spine_crosswalk_benchmark.json"
+    },
+    {
+      "domain": "Fluid_Spacetime_Observable_Spine",
+      "scalar_count": 8,
+      "max_error_pct": 0.039797,
+      "file": "fluid_spacetime_observable_spine_benchmark.json"
     }
   ],
   "expansion_map": {

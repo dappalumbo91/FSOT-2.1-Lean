@@ -29,7 +29,21 @@
     {"id": "PS_BOOST_12V", "class": "power", "designator": "PS3", "vin_v": 3.7, "vout_v": 12, "iout_a": 0.5, "efficiency_pct": 88, "ripple_mv": 50},
     {"id": "J_USB_C", "class": "connector", "designator": "J1", "rated_a": 3, "rated_v": 20, "contact_resistance_mohm": 30},
     {"id": "XTAL_16MHz", "class": "crystal", "designator": "Y1", "frequency_hz": 16000000, "load_cap_pf": 18, "esr_ohm": 40},
-    {"id": "XTAL_32kHz", "class": "crystal", "designator": "Y2", "frequency_hz": 32768, "load_cap_pf": 12.5, "esr_ohm": 70}
+    {"id": "XTAL_32kHz", "class": "crystal", "designator": "Y2", "frequency_hz": 32768, "load_cap_pf": 12.5, "esr_ohm": 70},
+    {"id": "MCU_ESP32_WROOM32", "class": "mcu", "designator": "U_ESP", "vdd_v": 3.3, "vdd_min_v": 3.0, "vdd_max_v": 3.6, "cpu_mhz": 240, "flash_mhz": 40, "wifi_freq_ghz": 2.4, "deep_sleep_ua": 10, "active_wifi_tx_ma": 240, "gpio_high_v": 3.3, "adc_bits": 12, "source": "Espressif ESP32-WROOM-32 datasheet public anchors"},
+    {"id": "MCU_ESP32_S3", "class": "mcu", "designator": "U_ESP_S3", "vdd_v": 3.3, "vdd_min_v": 3.0, "vdd_max_v": 3.6, "cpu_mhz": 240, "flash_mhz": 80, "wifi_freq_ghz": 2.4, "deep_sleep_ua": 8, "active_wifi_tx_ma": 290, "gpio_high_v": 3.3, "adc_bits": 12, "source": "Espressif ESP32-S3 public anchors"},
+    {"id": "REG_AMS1117_3V3", "class": "power", "designator": "U_LDO", "vin_v": 5.0, "vout_v": 3.3, "iout_a": 1.0, "efficiency_pct": 66, "dropout_v": 1.1, "ripple_mv": 10},
+    {"id": "BUCK_MP1584_3V3", "class": "power", "designator": "U_BUCK", "vin_v": 12.0, "vout_v": 3.3, "iout_a": 3.0, "efficiency_pct": 90, "ripple_mv": 25},
+    {"id": "C_100uF_bulk_ESP", "class": "capacitor", "designator": "C_BULK", "capacitance_f": 1e-4, "voltage_v": 10, "esr_ohm": 0.2, "dielectric": "electrolytic", "role": "ESP32 rail bulk"},
+    {"id": "C_100nF_bypass_ESP", "class": "capacitor", "designator": "C_BYP", "capacitance_f": 1e-7, "voltage_v": 16, "esr_ohm": 0.03, "dielectric": "X7R", "role": "ESP32 pin bypass"}
+  ],
+  "esp32_platform_rails": [
+    {"id": "esp32_vdd_rail", "vdd_v": 3.3, "max_current_ma": 500, "note": "3V3 rail sizing for WiFi TX peak headroom"},
+    {"id": "esp32_gpio_logic", "v_high_v": 3.3, "v_low_v": 0.0, "note": "GPIO absolute levels — not 5V tolerant on classic ESP32"},
+    {"id": "esp32_i2c_pullup", "R_ohm": 4700, "vdd_v": 3.3, "note": "Typical I2C pull-up starting point on 3V3"},
+    {"id": "esp32_uart_baud", "baud": 115200, "note": "Common debug UART"},
+    {"id": "esp32_cpu_default", "cpu_mhz": 160, "note": "Common dual-core default when not turbo 240"},
+    {"id": "esp32_flash_spi", "flash_mhz": 40, "note": "Quad SPI flash clock typical"}
   ],
   "reference_circuits": [
     {"id": "RC_10k_100nF", "R_ohm": 10000, "C_f": 1e-7, "tau_s": 0.001, "source": "τ=RC textbook"},
@@ -45,6 +59,9 @@
     {"id": "divider_1k_2k", "R_top_ohm": 1000, "R_bot_ohm": 2000, "vin_v": 3.3, "vout_v": 2.2, "source": "resistive divider"},
     {"id": "power_5V_1k", "V_v": 5, "R_ohm": 1000, "P_w": 0.025, "source": "P=V²/R"},
     {"id": "power_3V3_470", "V_v": 3.3, "R_ohm": 470, "P_w": 0.023170, "source": "P=V²/R"},
-    {"id": "power_12V_4k7", "V_v": 12, "R_ohm": 4700, "P_w": 0.030638, "source": "P=V²/R"}
+    {"id": "power_12V_4k7", "V_v": 12, "R_ohm": 4700, "P_w": 0.030638, "source": "P=V²/R"},
+    {"id": "esp32_rc_reset_10k_100n", "R_ohm": 10000, "C_f": 1e-7, "tau_s": 0.001, "source": "EN/reset RC soft start class"},
+    {"id": "esp32_i2c_pull_4k7", "R_ohm": 4700, "V_v": 3.3, "P_w": 0.002317, "source": "pull-up dissipation at logic high"},
+    {"id": "esp32_uart_divider_optional", "R_top_ohm": 10000, "R_bot_ohm": 20000, "vin_v": 5.0, "vout_v": 3.333, "source": "level-shift divider toward 3V3 RX (external 5V UART)"}
   ]
 }

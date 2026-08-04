@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T03:12:14.893719+00:00",
+  "generated_at": "2026-08-04T03:20:15.632552+00:00",
   "domain": "Tier_96_Circuit_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -13,9 +13,9 @@
     "energy"
   ],
   "D_eff": 10,
-  "record_count": 43,
-  "observable_count": 43,
-  "scalar_record_count": 43,
+  "record_count": 45,
+  "observable_count": 45,
+  "scalar_record_count": 45,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.020755,
   "pooled_median_error_pct": 0.020755,
@@ -41,7 +41,7 @@
       "computed": 0.020755,
       "measured": 0.0,
       "error_pct": 0.020755,
-      "observable_count": 43
+      "observable_count": 45
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +50,7 @@
       "computed": 0.020755,
       "measured": 0.0,
       "error_pct": 0.020755,
-      "observable_count": 41
+      "observable_count": 43
     }
   ],
   "material_records": [
@@ -61,7 +61,7 @@
       "computed": 0.020755,
       "measured": 0.020755,
       "error_pct": 0.0,
-      "record_count": 23,
+      "record_count": 57,
       "eval_kind": "tier96_bridge"
     },
     {
@@ -240,7 +240,7 @@
       "computed": 0.020755,
       "measured": 0.020755,
       "error_pct": 0.0,
-      "record_count": 14,
+      "record_count": 17,
       "eval_kind": "tier96_bridge"
     },
     {
@@ -379,6 +379,26 @@
       "name": "power_12V_4k7",
       "computed": 0.03065,
       "measured": 0.030638,
+      "error_pct": 0.039349,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "rc_tau_s",
+      "name": "esp32_rc_reset_10k_100n",
+      "computed": 0.001,
+      "measured": 0.001,
+      "error_pct": 0.020755,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "dissipated_power_w",
+      "name": "esp32_i2c_pull_4k7",
+      "computed": 0.002318,
+      "measured": 0.002317,
       "error_pct": 0.039349,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
       "eval_kind": "live_formula"

@@ -1,16 +1,18 @@
 {
   "source": "EIA-96, IEC 60115, Murata/KEMET parametric anchors, TI/ON Semi datasheets, NIST CODATA",
   "schema_version": "1.0",
-  "component_count": 27,
-  "reference_circuit_count": 14,
+  "component_count": 33,
+  "reference_circuit_count": 17,
+  "esp32_rail_count": 6,
   "by_class": {
     "resistor": 8,
-    "capacitor": 5,
+    "capacitor": 7,
     "inductor": 3,
     "semiconductor": 5,
-    "power": 3,
+    "power": 5,
     "connector": 1,
-    "crystal": 2
+    "crystal": 2,
+    "mcu": 2
   },
   "components": [
     {
@@ -251,6 +253,79 @@
       "frequency_hz": 32768,
       "load_cap_pf": 12.5,
       "esr_ohm": 70
+    },
+    {
+      "id": "MCU_ESP32_WROOM32",
+      "class": "mcu",
+      "designator": "U_ESP",
+      "vdd_v": 3.3,
+      "vdd_min_v": 3.0,
+      "vdd_max_v": 3.6,
+      "cpu_mhz": 240,
+      "flash_mhz": 40,
+      "wifi_freq_ghz": 2.4,
+      "deep_sleep_ua": 10,
+      "active_wifi_tx_ma": 240,
+      "gpio_high_v": 3.3,
+      "adc_bits": 12,
+      "source": "Espressif ESP32-WROOM-32 datasheet public anchors"
+    },
+    {
+      "id": "MCU_ESP32_S3",
+      "class": "mcu",
+      "designator": "U_ESP_S3",
+      "vdd_v": 3.3,
+      "vdd_min_v": 3.0,
+      "vdd_max_v": 3.6,
+      "cpu_mhz": 240,
+      "flash_mhz": 80,
+      "wifi_freq_ghz": 2.4,
+      "deep_sleep_ua": 8,
+      "active_wifi_tx_ma": 290,
+      "gpio_high_v": 3.3,
+      "adc_bits": 12,
+      "source": "Espressif ESP32-S3 public anchors"
+    },
+    {
+      "id": "REG_AMS1117_3V3",
+      "class": "power",
+      "designator": "U_LDO",
+      "vin_v": 5.0,
+      "vout_v": 3.3,
+      "iout_a": 1.0,
+      "efficiency_pct": 66,
+      "dropout_v": 1.1,
+      "ripple_mv": 10
+    },
+    {
+      "id": "BUCK_MP1584_3V3",
+      "class": "power",
+      "designator": "U_BUCK",
+      "vin_v": 12.0,
+      "vout_v": 3.3,
+      "iout_a": 3.0,
+      "efficiency_pct": 90,
+      "ripple_mv": 25
+    },
+    {
+      "id": "C_100uF_bulk_ESP",
+      "class": "capacitor",
+      "designator": "C_BULK",
+      "capacitance_f": 0.0001,
+      "voltage_v": 10,
+      "esr_ohm": 0.2,
+      "dielectric": "electrolytic",
+      "role": "ESP32 rail bulk"
+    },
+    {
+      "id": "C_100nF_bypass_ESP",
+      "class": "capacitor",
+      "designator": "C_BYP",
+      "capacitance_f": 1e-07,
+      "voltage_v": 16,
+      "esr_ohm": 0.03,
+      "dielectric": "X7R",
+      "role": "ESP32 pin bypass"
     }
   ],
   "reference_circuits": [
@@ -354,8 +429,65 @@
       "R_ohm": 4700,
       "P_w": 0.030638,
       "source": "P=V\u00b2/R"
+    },
+    {
+      "id": "esp32_rc_reset_10k_100n",
+      "R_ohm": 10000,
+      "C_f": 1e-07,
+      "tau_s": 0.001,
+      "source": "EN/reset RC soft start class"
+    },
+    {
+      "id": "esp32_i2c_pull_4k7",
+      "R_ohm": 4700,
+      "V_v": 3.3,
+      "P_w": 0.002317,
+      "source": "pull-up dissipation at logic high"
+    },
+    {
+      "id": "esp32_uart_divider_optional",
+      "R_top_ohm": 10000,
+      "R_bot_ohm": 20000,
+      "vin_v": 5.0,
+      "vout_v": 3.333,
+      "source": "level-shift divider toward 3V3 RX (external 5V UART)"
     }
   ],
-  "fetched_at": "2026-08-04T03:12:14.846194+00:00",
+  "esp32_platform_rails": [
+    {
+      "id": "esp32_vdd_rail",
+      "vdd_v": 3.3,
+      "max_current_ma": 500,
+      "note": "3V3 rail sizing for WiFi TX peak headroom"
+    },
+    {
+      "id": "esp32_gpio_logic",
+      "v_high_v": 3.3,
+      "v_low_v": 0.0,
+      "note": "GPIO absolute levels \u2014 not 5V tolerant on classic ESP32"
+    },
+    {
+      "id": "esp32_i2c_pullup",
+      "R_ohm": 4700,
+      "vdd_v": 3.3,
+      "note": "Typical I2C pull-up starting point on 3V3"
+    },
+    {
+      "id": "esp32_uart_baud",
+      "baud": 115200,
+      "note": "Common debug UART"
+    },
+    {
+      "id": "esp32_cpu_default",
+      "cpu_mhz": 160,
+      "note": "Common dual-core default when not turbo 240"
+    },
+    {
+      "id": "esp32_flash_spi",
+      "flash_mhz": 40,
+      "note": "Quad SPI flash clock typical"
+    }
+  ],
+  "fetched_at": "2026-08-04T03:20:15.578490+00:00",
   "credential_free": true
 }
