@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-04T14:04:35.334422+00:00",
+  "generated_at": "2026-08-04T14:55:23.295633+00:00",
   "purpose": "SMT bulk numerical bounds on scientific catalog residual gates",
   "obligation_source": "verification/obligations/scientific_catalog_spine.json",
-  "obligation_count": 2016,
+  "obligation_count": 2025,
   "domain_count": 429,
   "smt2_bundle": "verification/smt/scientific_catalog_bounds.smt2",
-  "smt2_assert_count": 2016,
+  "smt2_assert_count": 2025,
   "solver": "z3",
   "external_solver": {
     "status": "passed",
@@ -15,11 +15,11 @@
   },
   "python_decimal": {
     "status": "passed",
-    "checked": 2016,
+    "checked": 2025,
     "failed_ids": [],
     "failed_count": 0
   },
-  "checked": 2016,
+  "checked": 2025,
   "status": "passed",
   "overall_ok": true,
   "role": "Bulk continuous residual / margin checks for the catalog atlas. Does not replace Lean master definitions or interactive multi-prover lemmas.",

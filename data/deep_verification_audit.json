@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T14:17:38.527495+00:00",
+  "generated_at": "2026-08-04T15:08:15.039477+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -97,25 +97,25 @@
     "margin_violations_unconfirmed": 54
   },
   "structural_bundle_ledger": {
-    "bundle_conj_total": 523,
+    "bundle_conj_total": 526,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 469,
-    "total_conjuncts": 2373,
-    "conjuncts_with_atomic_coverage": 2371,
+    "provable_bundle_conj": 472,
+    "total_conjuncts": 2385,
+    "conjuncts_with_atomic_coverage": 2383,
     "conjunct_atomic_coverage_pct": 99.92,
-    "explicit_linked_conjuncts": 1815,
-    "explicit_linked_in_spine": 1813,
+    "explicit_linked_conjuncts": 1824,
+    "explicit_linked_in_spine": 1822,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "oracle_debt_ledger": {
-    "obligation_total": 2421,
-    "atomic_triangulated": 1898,
+    "obligation_total": 2430,
+    "atomic_triangulated": 1904,
     "oracle_replay": 0,
     "proof_depth_oracle_tagged": 49,
-    "structural_index": 523,
+    "structural_index": 526,
     "oracle_fraction_pct": 0.0,
-    "atomic_fraction_pct": 78.4,
+    "atomic_fraction_pct": 78.35,
     "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
@@ -132,7 +132,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-08-04T05:22:26.884277+00:00",
+    "generated_at": "2026-08-04T14:17:39.722676+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -194,7 +194,7 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-08-04T05:22:27.498211+00:00",
+    "generated_at": "2026-08-04T14:17:40.022409+00:00",
     "version": "1.0",
     "overall_runtime_ok": true,
     "esp32_scalar_only_gap_closed": true,
@@ -236,7 +236,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-08-04T05:22:27.782742+00:00",
+    "generated_at": "2026-08-04T14:17:40.317487+00:00",
     "version": "1.0",
     "verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes",
     "headline_claim": "zero free parameters",
@@ -313,21 +313,21 @@
     "missing_uncertainty_domains": [
       {
         "domain": "TOE_Contested_Sector_Refresh",
-        "scalar_count": 15,
-        "missing_scientific_measurement": 15,
+        "scalar_count": 22,
+        "missing_scientific_measurement": 19,
         "stumped_missing_uncertainty": 1,
         "stumped_untagged_contested": 12,
-        "max_scalar_error_pct": 0.018002668701804225,
-        "max_effective_scalar_error_pct": 0.018002668701804225,
-        "pooled_median_error_pct": 0.009407278780006464,
+        "max_scalar_error_pct": 0.192564276915754,
+        "max_effective_scalar_error_pct": 0.192564276915754,
+        "pooled_median_error_pct": 0.009504134401233218,
         "green_gate_pass": true,
         "raw_eff_divergence_count": 0,
         "top_raw_eff_divergence": [],
         "max_pushback_scalar": {
-          "property": "e_con",
-          "name": "e_con",
-          "raw_pct": 0.018002668701804225,
-          "effective_pct": 0.018002668701804225,
+          "property": "engine_native_h0",
+          "name": null,
+          "raw_pct": 0.192564276915754,
+          "effective_pct": 0.192564276915754,
           "contested": false
         }
       }
@@ -398,7 +398,7 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-08-04T14:17:31.121024+00:00",
+    "generated_at": "2026-08-04T15:08:07.734713+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
     "overall_ok": true,
@@ -2373,7 +2373,7 @@
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "1 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
       "closed": false,
       "monitored": true
@@ -2386,21 +2386,21 @@
       "detail": [
         {
           "domain": "TOE_Contested_Sector_Refresh",
-          "scalar_count": 15,
-          "missing_scientific_measurement": 15,
+          "scalar_count": 22,
+          "missing_scientific_measurement": 19,
           "stumped_missing_uncertainty": 1,
           "stumped_untagged_contested": 12,
-          "max_scalar_error_pct": 0.018002668701804225,
-          "max_effective_scalar_error_pct": 0.018002668701804225,
-          "pooled_median_error_pct": 0.009407278780006464,
+          "max_scalar_error_pct": 0.192564276915754,
+          "max_effective_scalar_error_pct": 0.192564276915754,
+          "pooled_median_error_pct": 0.009504134401233218,
           "green_gate_pass": true,
           "raw_eff_divergence_count": 0,
           "top_raw_eff_divergence": [],
           "max_pushback_scalar": {
-            "property": "e_con",
-            "name": "e_con",
-            "raw_pct": 0.018002668701804225,
-            "effective_pct": 0.018002668701804225,
+            "property": "engine_native_h0",
+            "name": null,
+            "raw_pct": 0.192564276915754,
+            "effective_pct": 0.192564276915754,
             "contested": false
           }
         }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T14:17:49.486143+00:00",
+  "generated_at": "2026-08-04T15:08:25.844401+00:00",
   "version": "1.0",
   "verdict": "CROSS_DOMAIN_EMPIRICALLY_TIGHT",
   "primary_claim": "A single intrinsic constant spine reproduces thousands of independent measurements across unrelated scientific domains with sub-0.5% pooled median error \u2014 an envelope inconsistent with a theory that does not describe reality.",
@@ -9,14 +9,14 @@
     "green_gate_pass_count": 429,
     "green_gate_fail_count": 0,
     "green_gate_threshold_pct": 0.5,
-    "total_scalar_records": 61430,
-    "pooled_median_of_domains_pct": 0.010337117254355377,
-    "mean_pooled_median_pct": 0.014147763385894676,
+    "total_scalar_records": 61335,
+    "pooled_median_of_domains_pct": 0.000561846,
+    "mean_pooled_median_pct": 0.011589327578776735,
     "p95_pooled_median_pct": 0.033841,
     "worst_domain_max_scalar_error_pct": 0.4989,
     "worst_scalar_domain": "Phi_Morphogenetic_Scaling",
-    "domains_under_0_1pct_median": 380,
-    "domains_under_0_5pct_median": 383
+    "domains_under_0_1pct_median": 383,
+    "domains_under_0_5pct_median": 386
   },
   "project_scope": {
     "total_scientific_domains": 404,
@@ -49,7 +49,7 @@
     "below_sota_ids": []
   },
   "null_hypothesis_framing": {
-    "statement": "If FSOT did not track reality, blind application across cosmology, chemistry, genomics, magnetosphere, materials, and 260+ other domains would not yield 0/272 green-gate failures with median-of-medians 0.010337117254355377% and worst per-domain max scalar 0.4989%.",
+    "statement": "If FSOT did not track reality, blind application across cosmology, chemistry, genomics, magnetosphere, materials, and 260+ other domains would not yield 0/272 green-gate failures with median-of-medians 0.000561846% and worst per-domain max scalar 0.4989%.",
     "expected_under_wrong_theory": "Uncorrelated wrong formulas would produce order-unity to order-10 percent errors; centi-percent medians across hundreds of domains would require extraordinary coincidence or post-hoc fitting (excluded by preregistered constant spine + no per-observable tuning)."
   },
   "honest_limits": [

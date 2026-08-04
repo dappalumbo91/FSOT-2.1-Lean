@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T14:17:21.244299+00:00",
+  "generated_at": "2026-08-04T15:07:59.138395+00:00",
   "tier": "91_seven_way_bare_metal",
   "connective_spine": {
     "obligation_count": 24,
@@ -131,20 +131,20 @@
   },
   "scientific_catalog_spine": {
     "purpose": "multi_prover_reproof_of_domain_residual_gates",
-    "obligation_count": 2016,
+    "obligation_count": 2025,
     "domain_count": 429,
     "by_claim": {
       "seed_identity": 5,
       "seed_positive": 5,
       "catalog_nonempty": 428,
-      "empirical_pooled_median_gate": 766,
-      "empirical_max_scalar_gate": 383,
+      "empirical_pooled_median_gate": 772,
+      "empirical_max_scalar_gate": 386,
       "green_gate_pass_flag": 429
     },
     "python_decimal": {
       "status": "passed",
-      "passed": 2016,
-      "total": 2016
+      "passed": 2025,
+      "total": 2025
     },
     "coq_chunks": 17,
     "isabelle_chunks": 17,
@@ -153,7 +153,7 @@
       "status": "passed",
       "overall_ok": true,
       "solver": "z3",
-      "checked": 2016,
+      "checked": 2025,
       "report": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\smt_catalog_bounds_report.json"
     }
   },
@@ -166,7 +166,7 @@
       "total": 288
     },
     "focused_report": {
-      "generated_at": "2026-08-04T14:04:42.470753+00:00",
+      "generated_at": "2026-08-04T14:55:30.051554+00:00",
       "spine": "gr_sm_ckm",
       "obligation_count": 288,
       "python_decimal": {
@@ -176,7 +176,7 @@
       },
       "rust_f64_replay": {
         "status": "passed",
-        "detail_tail": " filtered out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_gr_sm_ckm_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\nCompiling fsot_gr_sm_ckm_replay v0.1.0 (C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\rust\\fsot_gr_sm_ckm_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.94s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\fsot_gr_sm_ckm_replay-d677d0f07c4d6e99.exe)\n     Running tests\\replay_gr_sm_ckm.rs (verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\replay_gr_sm_ckm-a0916c3ae2df9ec1.exe)\n   Doc-tests fsot_gr_sm_ckm_replay\n"
+        "detail_tail": " filtered out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_gr_sm_ckm_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\nCompiling fsot_gr_sm_ckm_replay v0.1.0 (C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\rust\\fsot_gr_sm_ckm_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.65s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\fsot_gr_sm_ckm_replay-d677d0f07c4d6e99.exe)\n     Running tests\\replay_gr_sm_ckm.rs (verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\replay_gr_sm_ckm-a0916c3ae2df9ec1.exe)\n   Doc-tests fsot_gr_sm_ckm_replay\n"
       },
       "smt_z3": {
         "status": "passed",
@@ -420,19 +420,19 @@
       ],
       "full_formal_passed": 2376,
       "full_formal_total": 2376,
-      "scientific_catalog_passed": 2016,
-      "scientific_catalog_total": 2016,
+      "scientific_catalog_passed": 2025,
+      "scientific_catalog_total": 2025,
       "gr_sm_ckm_passed": 288,
       "gr_sm_ckm_total": 288
     },
     "smt_catalog_bounds": {
-      "generated_at": "2026-08-04T14:04:35.334422+00:00",
+      "generated_at": "2026-08-04T14:55:23.295633+00:00",
       "purpose": "SMT bulk numerical bounds on scientific catalog residual gates",
       "obligation_source": "verification/obligations/scientific_catalog_spine.json",
-      "obligation_count": 2016,
+      "obligation_count": 2025,
       "domain_count": 429,
       "smt2_bundle": "verification/smt/scientific_catalog_bounds.smt2",
-      "smt2_assert_count": 2016,
+      "smt2_assert_count": 2025,
       "solver": "z3",
       "external_solver": {
         "status": "passed",
@@ -442,18 +442,18 @@
       },
       "python_decimal": {
         "status": "passed",
-        "checked": 2016,
+        "checked": 2025,
         "failed_ids": [],
         "failed_count": 0
       },
-      "checked": 2016,
+      "checked": 2025,
       "status": "passed",
       "overall_ok": true,
       "role": "Bulk continuous residual / margin checks for the catalog atlas. Does not replace Lean master definitions or interactive multi-prover lemmas.",
       "note": "Install z3 or cvc5 on PATH for external SMT; otherwise python_decimal_fallback still machine-checks every exported catalog obligation."
     },
     "tla_domain_routing": {
-      "generated_at": "2026-08-04T14:04:36.693801+00:00",
+      "generated_at": "2026-08-04T14:55:24.676864+00:00",
       "purpose": "TLA+ model of domain-routing / preregistered-fold state flow",
       "spec": "verification/tla/FSOTDomainRouting.tla",
       "python_explorer": {
@@ -469,7 +469,7 @@
         "status": "passed",
         "engine": "tlc_jar",
         "returncode": 0,
-        "stdout_tail": "4599367568679356\\Integers.tla (jar:file:/C:/Users/damia/Desktop/FSOT-2.1-Lean/tools/tla/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Integers\nSemantic processing of module TLCExt\nSemantic processing of module _TLCTrace\nSemantic processing of module FSOTDomainRouting\nLinting of module TLCExt\nLinting of module _TLCTrace\nLinting of module FSOTDomainRouting\nStarting... (2026-08-04 10:04:35)\nComputing initial states...\nFinished computing initial states: 1 distinct state generated at 2026-08-04 10:04:36.\nModel checking completed. No error has been found.\n  Estimates of the probability that TLC did not check all reachable states\n  because two distinct states had the same fingerprint:\n  calculated (optimistic):  val = 1.0E-18\n20 states generated, 19 distinct states found, 0 states left on queue.\nThe depth of the complete state graph search is 19.\nThe average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).\nFinished in 00s at (2026-08-04 10:04:36)\n"
+        "stdout_tail": "8183646139449833\\Integers.tla (jar:file:/C:/Users/damia/Desktop/FSOT-2.1-Lean/tools/tla/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Integers\nSemantic processing of module TLCExt\nSemantic processing of module _TLCTrace\nSemantic processing of module FSOTDomainRouting\nLinting of module TLCExt\nLinting of module _TLCTrace\nLinting of module FSOTDomainRouting\nStarting... (2026-08-04 10:55:23)\nComputing initial states...\nFinished computing initial states: 1 distinct state generated at 2026-08-04 10:55:24.\nModel checking completed. No error has been found.\n  Estimates of the probability that TLC did not check all reachable states\n  because two distinct states had the same fingerprint:\n  calculated (optimistic):  val = 1.0E-18\n20 states generated, 19 distinct states found, 0 states left on queue.\nThe depth of the complete state graph search is 19.\nThe average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).\nFinished in 00s at (2026-08-04 10:55:24)\n"
       },
       "status": "passed",
       "overall_ok": true,
@@ -871,7 +871,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_04.v\", line 407, characters 0-57:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\ScientificCatalogSpine_04.v\", line 7, characters 0-57:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "ScientificCatalogSpine_05.v",
@@ -883,7 +883,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": ""
+          "stderr": "File \".\\ScientificCatalogSpine_05.v\", line 367, characters 0-67:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "ScientificCatalogSpine_06.v",
@@ -895,7 +895,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_06.v\", line 447, characters 0-67:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\ScientificCatalogSpine_06.v\", line 147, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "ScientificCatalogSpine_07.v",
@@ -907,7 +907,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_07.v\", line 367, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": ""
         },
         {
           "file": "ScientificCatalogSpine_08.v",
@@ -943,7 +943,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": ""
+          "stderr": "File \".\\ScientificCatalogSpine_10.v\", line 227, characters 0-67:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "ScientificCatalogSpine_11.v",
@@ -967,7 +967,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_12.v\", line 7, characters 0-72:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": ""
         },
         {
           "file": "ScientificCatalogSpine_13.v",
@@ -1003,7 +1003,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_15.v\", line 51, characters 0-79:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": ""
         },
         {
           "file": "ScientificCatalogSpine_16.v",
@@ -1015,7 +1015,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_16.v\", line 155, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\ScientificCatalogSpine_16.v\", line 163, characters 0-78:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\ScientificCatalogSpine_16.v\", line 131, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\ScientificCatalogSpine_16.v\", line 139, characters 0-78:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         }
       ]
     },
@@ -1329,7 +1329,7 @@
           "theory": "ScientificCatalogSpine_16",
           "file": "ScientificCatalogSpine_16.thy",
           "scope": "scientific_catalog",
-          "obligation_count": 96,
+          "obligation_count": 105,
           "status": "passed"
         }
       ],
@@ -1337,8 +1337,8 @@
         "session": "FSOT_CrossProof",
         "status": "passed",
         "returncode": 0,
-        "stdout_tail": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:01:04 elapsed time)\n0:01:14 elapsed time\n",
-        "stderr": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:01:04 elapsed time)\n0:01:14 elapsed time\n"
+        "stdout_tail": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:01:06 elapsed time)\n0:01:17 elapsed time\n",
+        "stderr": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:01:06 elapsed time)\n0:01:17 elapsed time\n"
       }
     },
     "isabelle_refinement": {
@@ -1362,7 +1362,7 @@
       "transcendental_count": 68,
       "test_file": "replay_all_obligations.rs",
       "returncode": 0,
-      "attempt": 1,
+      "attempt": 2,
       "stderr_tail": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
     },
     "rust_refinement": {
@@ -1432,7 +1432,7 @@
       "stderr_tail": "ESP32 FSOT SERIAL HARNESS (Tier 91)\n  port: COM3\n  flash: skipped\n  serial: passed boot=0.09928895626861721 hardware_boot=ok\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\esp32_fsot_serial_harness_report.json\n"
     },
     "hardware_bare_metal": {
-      "generated_at": "2026-08-04T14:16:55.528839+00:00",
+      "generated_at": "2026-08-04T15:07:48.597688+00:00",
       "tier": "91_hardware_processor_ram_cache_interconnect_bare_metal",
       "purpose": "Executable processor/RAM/C-pack FSOT laws on host + QEMU bare-metal; cache/interconnect residual panels built separately.",
       "cargo_tests": {

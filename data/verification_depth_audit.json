@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T14:17:38.207770+00:00",
+  "generated_at": "2026-08-04T15:08:14.723868+00:00",
   "version": "1.0",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -20,8 +20,8 @@
       "connective_obligations": 24,
       "full_formal_obligations": 2430,
       "transcendental_lemmas": 68,
-      "lean_theorem_count_estimate": 4735,
-      "export_fraction_pct": 51.32,
+      "lean_theorem_count_estimate": 4744,
+      "export_fraction_pct": 51.22,
       "proof_style": "norm_num / decide / linarith certificates"
     },
     "coq": {
@@ -116,7 +116,7 @@
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "1 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
       "closed": false,
       "monitored": true
@@ -265,7 +265,7 @@
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "1 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
       "closed": false,
       "monitored": true

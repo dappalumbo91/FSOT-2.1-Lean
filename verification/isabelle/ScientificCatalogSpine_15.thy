@@ -3,27 +3,6 @@ theory ScientificCatalogSpine_15
 imports Complex_Main
 begin
 
-lemma cat_live_ingest_spine_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_magnetic_confinement_fusion_panel_records_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma cat_magnetic_confinement_fusion_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_magnetic_confinement_fusion_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_magnetic_confinement_fusion_panel_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_magnetic_confinement_fusion_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_magnetosphere_benchmark_json_records_pos: "0 < (167 :: nat)"
-  by eval
-
 lemma cat_magnetosphere_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
@@ -34,12 +13,6 @@ lemma cat_magnetosphere_benchmark_json_max_scalar_under_half_pct: "(0 :: real) <
   by eval
 
 lemma cat_magnetosphere_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_magnetosphere_extended_benchmark_json_records_pos: "0 < (122315 :: nat)"
-  by eval
-
-lemma cat_magnetosphere_extended_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_maillard_chemistry_records_pos: "0 < (30 :: nat)"
@@ -147,19 +120,19 @@ lemma cat_oceanography_records_pos: "0 < (65 :: nat)"
 lemma cat_oceanography_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_omni_theory_genesis_benchmark_json_records_pos: "0 < (27 :: nat)"
+lemma cat_omni_theory_genesis_benchmark_records_pos: "0 < (26 :: nat)"
   by eval
 
-lemma cat_omni_theory_genesis_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cat_omni_theory_genesis_benchmark_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_omni_theory_genesis_benchmark_json_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+lemma cat_omni_theory_genesis_benchmark_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_omni_theory_genesis_benchmark_json_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cat_omni_theory_genesis_benchmark_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_omni_theory_genesis_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
+lemma cat_omni_theory_genesis_benchmark_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_open_science_seed_constants_records_pos: "0 < (21 :: nat)"
@@ -183,16 +156,10 @@ lemma cat_openalex_citation_graph_records_pos: "0 < (80 :: nat)"
 lemma cat_openalex_citation_graph_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_particle_physics_benchmark_json_records_pos: "0 < (98 :: nat)"
+lemma cat_particle_physics_records_pos_2: "0 < (98 :: nat)"
   by eval
 
-lemma cat_particle_physics_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_particle_physics_records_pos: "0 < (98 :: nat)"
-  by eval
-
-lemma cat_particle_physics_green_flag: "(1 :: nat) = (1 :: nat)"
+lemma cat_particle_physics_green_flag_2: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_periodic_extension_decay_topology_scaffold_records_pos: "0 < (24 :: nat)"
@@ -246,7 +213,7 @@ lemma cat_plasma_physics_benchmark_json_max_scalar_under_half_pct: "(0 :: real) 
 lemma cat_plasma_physics_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_portable_clone_verify_records_pos: "0 < (290 :: nat)"
+lemma cat_portable_clone_verify_records_pos: "0 < (289 :: nat)"
   by eval
 
 lemma cat_portable_clone_verify_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -261,7 +228,7 @@ lemma cat_portable_clone_verify_max_scalar_under_half_pct: "(0 :: real) < (0.5 :
 lemma cat_portable_clone_verify_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_preregistered_outcome_tracking_records_pos: "0 < (56 :: nat)"
+lemma cat_preregistered_outcome_tracking_records_pos: "0 < (53 :: nat)"
   by eval
 
 lemma cat_preregistered_outcome_tracking_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -289,6 +256,21 @@ lemma cat_preregistered_predictions_verification_scaffold_max_scalar_under_half_
   by eval
 
 lemma cat_preregistered_predictions_verification_scaffold_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_proof_ledger_closure_spine_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_proof_ledger_closure_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_proof_ledger_closure_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_proof_ledger_closure_spine_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_proof_ledger_closure_spine_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_psychology_records_pos: "0 < (160 :: nat)"
@@ -327,7 +309,7 @@ lemma cat_published_fuel_property_panel_max_scalar_under_half_pct: "(0 :: real) 
 lemma cat_published_fuel_property_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_qce_elm_fusion_edge_panel_records_pos: "0 < (86 :: nat)"
+lemma cat_qce_elm_fusion_edge_panel_records_pos: "0 < (45 :: nat)"
   by eval
 
 lemma cat_qce_elm_fusion_edge_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -360,7 +342,25 @@ lemma cat_quantum_optics_records_pos: "0 < (50 :: nat)"
 lemma cat_quantum_optics_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_recent_breakthroughs_expansion_panel_records_pos: "0 < (81 :: nat)"
+lemma cat_recent_breakthroughs_expansion_panel_records_pos: "0 < (63 :: nat)"
+  by eval
+
+lemma cat_recent_breakthroughs_expansion_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_recent_breakthroughs_expansion_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_recent_breakthroughs_expansion_panel_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_recent_breakthroughs_expansion_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_scientific_expansion_depth_wave2_spine_records_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma cat_scientific_expansion_depth_wave2_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

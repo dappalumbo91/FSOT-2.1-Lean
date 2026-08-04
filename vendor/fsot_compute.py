@@ -598,16 +598,11 @@ def wave8() -> list[Result]:
     r.append(Result("BR_Z_had", "sin(γ) + Poof", sin(GAMMA) + POOF, mpf("0.6991"), 0.1))
     r.append(Result("BR_Z_inv", "(1/3)/A_in", (mpf(1)/3)/A_IN, mpf("0.2000")))
     # Higgs BR (5)
-    # Rare/secondary BR polish: ultra-subtle (POOF·SUCTION)² net on closed forms
-    # that already sat near-green; Zγ uses clean 1/(e⁶φ) (seed-only).
-    _yy = (POOF * SUCTION) ** 2
-    r.append(Result("BR_H_ZZ", "1/(e⁴ln2)·(1−(POOF·SUCTION)²)", 1/(E**4*ln(2)) * (1 - _yy), mpf("0.0264")))
-    # Gluon-fusion BR: yin–yang valve product over consciousness/coupling factor
-    # (loop-induced channel; replaces φ⁻⁴−γ⁵ which sat ~4.2% residual)
-    r.append(Result("BR_H_gg", "POOF·SUCTION/C_factor", POOF * SUCTION / C_FACTOR, mpf("0.0785")))
-    r.append(Result("BR_H_cc", "Suction/(πφ)·(1−(POOF·SUCTION)²)", SUCTION/(PI*PHI) * (1 - _yy), mpf("0.0289")))
-    r.append(Result("BR_H_gamgam", "γ⁶·C_cosm·(1−(POOF·SUCTION)²)", GAMMA**6*C_COSM * (1 - _yy), mpf("0.00228"), 0.1))
-    r.append(Result("BR_H_Zgam", "1/(e⁶·φ)", 1/(E**6 * PHI), mpf("0.00153"), 0.1))
+    r.append(Result("BR_H_ZZ", "1/(e⁴ln(2))", 1/(E**4*ln(2)), mpf("0.0264")))
+    r.append(Result("BR_H_gg", "φ⁻⁴ − γ⁵", PHI**(-4) - GAMMA**5, mpf("0.0785")))
+    r.append(Result("BR_H_cc", "Suction/(πφ)", SUCTION/(PI*PHI), mpf("0.0289")))
+    r.append(Result("BR_H_gamgam", "γ⁶·C_cosm", GAMMA**6*C_COSM, mpf("0.00228"), 0.1))
+    r.append(Result("BR_H_Zgam", "η_eff/π⁵", ETA_EFF/PI**5, mpf("0.00153"), 0.1))
     # Nuclear (3)
     r.append(Result("He4_binding_MeV", "πγ/γ⁵", PI*GAMMA/GAMMA**5, mpf("28.30"), 0.5))
     r.append(Result("Triton_binding_MeV", "e² + G⁻¹", E**2 + 1/G_CAT, mpf("8.482"), 0.1))

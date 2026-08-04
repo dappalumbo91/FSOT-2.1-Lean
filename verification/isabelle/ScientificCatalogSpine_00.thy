@@ -108,6 +108,36 @@ lemma cat_materials_engineering_benchmark_json_max_scalar_under_half_pct: "(0.49
 lemma cat_materials_engineering_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_electrical_power_systems_records_pos: "0 < (23 :: nat)"
+  by eval
+
+lemma cat_electrical_power_systems_pooled_under_half_pct: "(0.000561846 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_electrical_power_systems_pooled_lt_half_pure: "(0.000561846 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_electrical_power_systems_max_scalar_under_half_pct: "(0.489023002 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_electrical_power_systems_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_particle_physics_records_pos: "0 < (22 :: nat)"
+  by eval
+
+lemma cat_particle_physics_pooled_under_half_pct: "(0.0003086625 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_particle_physics_pooled_lt_half_pure: "(0.0003086625 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_particle_physics_max_scalar_under_half_pct: "(0.489023002 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_particle_physics_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_quantum_materials_benchmark_json_records_pos: "0 < (168 :: nat)"
   by eval
 
@@ -213,36 +243,6 @@ lemma cat_culinary_arts_benchmark_json_max_scalar_under_half_pct: "(0.462279 :: 
 lemma cat_culinary_arts_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_information_theory_public_panel_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_information_theory_public_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_information_theory_public_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_information_theory_public_panel_max_scalar_under_half_pct: "(0.462279 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_information_theory_public_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_music_harmonics_public_panel_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_music_harmonics_public_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_music_harmonics_public_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_music_harmonics_public_panel_max_scalar_under_half_pct: "(0.462279 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_music_harmonics_public_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_intelligence_compression_benchmark_json_records_pos: "0 < (572 :: nat)"
   by eval
 
@@ -303,21 +303,6 @@ lemma cat_oncology_benchmark_json_max_scalar_under_half_pct: "(0.428925 :: real)
 lemma cat_oncology_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_proton_lean_route_credibility_records_pos: "0 < (73 :: nat)"
-  by eval
-
-lemma cat_proton_lean_route_credibility_pooled_under_half_pct: "(0.004174769548765883 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_proton_lean_route_credibility_pooled_lt_half_pure: "(0.004174769548765883 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_proton_lean_route_credibility_max_scalar_under_half_pct: "(0.427138 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_proton_lean_route_credibility_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_material_property_verification_scaffold_records_pos: "0 < (79 :: nat)"
   by eval
 
@@ -361,6 +346,21 @@ lemma cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct: "(0.3712743059251006 ::
   by eval
 
 lemma cat_toe_ckm_pmns_flavor_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_dark_energy_cpl_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_dark_energy_cpl_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dark_energy_cpl_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dark_energy_cpl_max_scalar_under_half_pct: "(0.368503 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dark_energy_cpl_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

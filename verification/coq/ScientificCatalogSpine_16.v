@@ -4,30 +4,6 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma cat_recent_breakthroughs_expansion_panel_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_recent_breakthroughs_expansion_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_recent_breakthroughs_expansion_panel_max_scalar_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_recent_breakthroughs_expansion_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_scientific_expansion_depth_wave2_spine_records_pos : (0 < 40)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_scientific_expansion_depth_wave2_spine_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
 Lemma cat_scientific_expansion_depth_wave2_spine_pooled_lt_half_pure : (0%R) < ((0.5%R)).
 Proof. lra. Qed.
 
@@ -124,7 +100,7 @@ Lemma cat_sociology_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_solar_system_structure_deep_records_pos : (0 < 50)%nat.
+Lemma cat_solar_system_structure_deep_records_pos : (0 < 48)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
@@ -216,7 +192,7 @@ Lemma cat_stellar_multiplicity_live_deep_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_symbolic_archetype_panel_records_pos : (0 < 28)%nat.
+Lemma cat_symbolic_archetype_panel_records_pos : (0 < 22)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
@@ -240,6 +216,26 @@ Lemma cat_thesis_simulation_benchmark_json_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
+Lemma cat_tier_93_dual_wave_spine_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_tier_93_dual_wave_spine_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_tier_93_dual_wave_spine_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_tier_93_dual_wave_spine_max_scalar_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_tier_93_dual_wave_spine_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_tier_94_longevity_spine_records_pos : (0 < 34)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -257,6 +253,46 @@ Proof. lra. Qed.
 
 
 Lemma cat_tier_94_longevity_spine_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_tier_95_zebrafish_spine_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_tier_95_zebrafish_spine_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_tier_95_zebrafish_spine_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_tier_95_zebrafish_spine_max_scalar_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_tier_95_zebrafish_spine_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_time_emergence_deep_panel_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_time_emergence_deep_panel_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_time_emergence_deep_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_time_emergence_deep_panel_max_scalar_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_time_emergence_deep_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
@@ -320,7 +356,7 @@ Lemma cat_trinary_os_tier_e_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_unified_db_candidate_crosswalk_records_pos : (0 < 46)%nat.
+Lemma cat_unified_db_candidate_crosswalk_records_pos : (0 < 45)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 

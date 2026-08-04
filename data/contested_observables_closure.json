@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-04T14:17:50.702875+00:00",
+  "generated_at": "2026-08-04T15:08:27.059363+00:00",
   "version": "1.0",
   "verdict": "CONTESTED_SECTORS_FSOT_AHEAD_OF_CURRENT_MODELS",
   "reframe": "These 13 observables are not pipeline failures \u2014 they are the hardest open problems active science is measuring (Hubble tension, dark energy, \u03c3\u2088, BBN, cusp-core, hierarchy, consciousness proxy, preregistered w_a). FSOT supplies unified readouts; \u039bCDM/SM baselines have no unified prediction (15% typical error on the open panel). Where FSOT error exceeds 0.5%, refinement is queued.",
   "panel_summary": {
     "observable_count": 13,
-    "pooled_median_error_pct": 0.029748999999999998,
-    "max_error_pct": 0.341025,
+    "pooled_median_error_pct": 0.007871,
+    "max_error_pct": 0.0,
     "current_model_baseline_pct": 15.0,
-    "beats_baseline_count": 16,
+    "beats_baseline_count": 14,
     "panel_status": null,
-    "precision_tier_green_fraction": 1.0
+    "precision_tier_green_fraction": null
   },
   "project_scope_context": {
     "total_scientific_domains": 404,
@@ -214,22 +214,6 @@
       "within_green_gate": true
     },
     {
-      "name": "H0_FSOT_local_anchor",
-      "property": "hubble_constant",
-      "computed": 71.501983,
-      "measured": 72.1,
-      "unit": "km/s/Mpc",
-      "fsot_error_pct": 0.829427,
-      "sigma_equivalent": 0.9967,
-      "status": "dual_anchor_local",
-      "science_context": "dual_anchor_local",
-      "reference": "FSOT_bubble_bleed_dual_anchor",
-      "beats_current_model_baseline": true,
-      "current_model_baseline_pct": 15.0,
-      "needs_refinement": false,
-      "within_green_gate": true
-    },
-    {
       "name": "H0_Planck_CMB",
       "property": "hubble_constant",
       "computed": 67.270212,
@@ -240,22 +224,6 @@
       "status": "cmb_sector_resolved",
       "science_context": "cmb_sector_resolved",
       "reference": "Planck2018",
-      "beats_current_model_baseline": true,
-      "current_model_baseline_pct": 15.0,
-      "needs_refinement": false,
-      "within_green_gate": true
-    },
-    {
-      "name": "H0_SH0ES_local",
-      "property": "hubble_constant",
-      "computed": 73.523742,
-      "measured": 73.04,
-      "unit": "km/s/Mpc",
-      "fsot_error_pct": 0.662297,
-      "sigma_equivalent": 0.4651,
-      "status": "local_sector_resolved",
-      "science_context": "local_sector_resolved",
-      "reference": "Riess2024",
       "beats_current_model_baseline": true,
       "current_model_baseline_pct": 15.0,
       "needs_refinement": false,

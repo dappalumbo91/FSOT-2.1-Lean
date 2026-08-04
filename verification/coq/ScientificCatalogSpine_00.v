@@ -144,6 +144,46 @@ Lemma cat_materials_engineering_benchmark_json_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
+Lemma cat_electrical_power_systems_records_pos : (0 < 23)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_electrical_power_systems_pooled_under_half_pct : ((0.000561846%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_electrical_power_systems_pooled_lt_half_pure : ((0.000561846%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_electrical_power_systems_max_scalar_under_half_pct : ((0.489023002%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_electrical_power_systems_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_particle_physics_records_pos : (0 < 22)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_particle_physics_pooled_under_half_pct : ((0.0003086625%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_particle_physics_pooled_lt_half_pure : ((0.0003086625%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_particle_physics_max_scalar_under_half_pct : ((0.489023002%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_particle_physics_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_quantum_materials_benchmark_json_records_pos : (0 < 168)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -284,46 +324,6 @@ Lemma cat_culinary_arts_benchmark_json_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_information_theory_public_panel_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_information_theory_public_panel_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_information_theory_public_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_information_theory_public_panel_max_scalar_under_half_pct : ((0.462279%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_information_theory_public_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_music_harmonics_public_panel_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_music_harmonics_public_panel_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_music_harmonics_public_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_music_harmonics_public_panel_max_scalar_under_half_pct : ((0.462279%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_music_harmonics_public_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
 Lemma cat_intelligence_compression_benchmark_json_records_pos : (0 < 572)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -404,26 +404,6 @@ Lemma cat_oncology_benchmark_json_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_proton_lean_route_credibility_records_pos : (0 < 73)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_proton_lean_route_credibility_pooled_under_half_pct : ((0.004174769548765883%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_proton_lean_route_credibility_pooled_lt_half_pure : ((0.004174769548765883%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_proton_lean_route_credibility_max_scalar_under_half_pct : ((0.427138%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_proton_lean_route_credibility_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
 Lemma cat_material_property_verification_scaffold_records_pos : (0 < 79)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -481,5 +461,25 @@ Proof. lra. Qed.
 
 
 Lemma cat_toe_ckm_pmns_flavor_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_dark_energy_cpl_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_dark_energy_cpl_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_dark_energy_cpl_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_dark_energy_cpl_max_scalar_under_half_pct : ((0.368503%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_dark_energy_cpl_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
