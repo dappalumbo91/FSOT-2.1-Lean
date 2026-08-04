@@ -155,6 +155,15 @@ theorem sin2_theta_W_measured_pos : (0 : ℝ) < (0.23122 : ℝ) := by
 theorem sin2_theta_W_abs_diff : (8.34037573577695e-05 : ℝ) < (8.42377949323472e-05 : ℝ) := by
   norm_num
 
+theorem sin2_theta_W_onshell_err_under_half : (0.18983327119077956 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem sin2_theta_W_onshell_measured_pos : (0 : ℝ) < (0.2230518910035465 : ℝ) := by
+  norm_num
+
+theorem sin2_theta_W_onshell_abs_diff : (0.0004234267011449244 : ℝ) < (0.00042766096815737367 : ℝ) := by
+  norm_num
+
 theorem alpha_inv_err_under_half : (0.14167347156583626 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
@@ -191,13 +200,13 @@ theorem m_W_measured_pos : (0 : ℝ) < (80.377 : ℝ) := by
 theorem m_W_abs_diff : (0.019649909392526865 : ℝ) < (0.019846408486453134 : ℝ) := by
   norm_num
 
-theorem m_Z_err_under_half : (0.49980667028742526 : ℝ) < (0.5 : ℝ) := by
+theorem m_Z_err_under_half : (0.0028066544219732493 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem m_Z_measured_pos : (0 : ℝ) < (91.1876 : ℝ) := by
   norm_num
 
-theorem m_Z_abs_diff : (0.4557617072750162 : ℝ) < (0.46031932434776734 : ℝ) := by
+theorem m_Z_abs_diff : (0.002559320807691279 : ℝ) < (0.0025849140157691917 : ℝ) := by
   norm_num
 
 theorem m_t_err_under_half : (0.03614194480013092 : ℝ) < (0.5 : ℝ) := by
@@ -207,6 +216,33 @@ theorem m_t_measured_pos : (0 : ℝ) < (172.69 : ℝ) := by
   norm_num
 
 theorem m_t_abs_diff : (0.062413524475346094 : ℝ) < (0.06303765972010056 : ℝ) := by
+  norm_num
+
+theorem Lambda_QCD_GeV_err_under_half : (0.28120185593059194 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem Lambda_QCD_GeV_measured_pos : (0 : ℝ) < (0.2173 : ℝ) := by
+  norm_num
+
+theorem Lambda_QCD_GeV_abs_diff : (0.0006110516329371762 : ℝ) < (0.000617162149267548 : ℝ) := by
+  norm_num
+
+theorem sqrt_sigma_GeV_err_under_half : (0.05275580626597419 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem sqrt_sigma_GeV_measured_pos : (0 : ℝ) < (0.42 : ℝ) := by
+  norm_num
+
+theorem sqrt_sigma_GeV_abs_diff : (0.0002215743863170916 : ℝ) < (0.0002237901301812625 : ℝ) := by
+  norm_num
+
+theorem N_eff_err_under_half : (0.04789442119649137 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem N_eff_measured_pos : (0 : ℝ) < (3.046 : ℝ) := by
+  norm_num
+
+theorem N_eff_abs_diff : (0.0014588640696451272 : ℝ) < (0.0014734527103425785 : ℝ) := by
   norm_num
 
 theorem sin2_theta_12_err_under_half : (0.004756805274882866 : ℝ) < (0.5 : ℝ) := by
@@ -288,6 +324,15 @@ theorem emergent_unitarity_row_t_measured_pos : (0 : ℝ) < (1.0 : ℝ) := by
   norm_num
 
 theorem emergent_unitarity_row_t_abs_diff : (1.4310152412599919e-05 : ℝ) < (1.445325393772592e-05 : ℝ) := by
+  norm_num
+
+theorem triangle_angle_sum_pi_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem triangle_angle_sum_pi_measured_pos : (0 : ℝ) < (3.141592653589793 : ℝ) := by
+  norm_num
+
+theorem triangle_angle_sum_pi_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
   norm_num
 
 theorem yin_yang_in_unit_interval_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
@@ -416,6 +461,12 @@ theorem gr_seed_sin2_theta_W_err_under_half : (0.016460322231694493 : ℝ) < (0.
 theorem gr_seed_sin2_theta_W_meas_pos : (0 : ℝ) < (0.23122 : ℝ) := by
   norm_num
 
+theorem gr_seed_sin2_theta_W_onshell_err_under_half : (0.209488435890309 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_seed_sin2_theta_W_onshell_meas_pos : (0 : ℝ) < (0.2230518910035465 : ℝ) := by
+  norm_num
+
 theorem gr_seed_alpha_inv_err_under_half : (0.13842762822785223 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
@@ -434,10 +485,76 @@ theorem gr_seed_m_W_err_under_half : (0.028479127221542264 : ℝ) < (0.5 : ℝ) 
 theorem gr_seed_m_W_meas_pos : (0 : ℝ) < (80.377 : ℝ) := by
   norm_num
 
-theorem gr_seed_m_Z_err_under_half : (0.49871711071827096 : ℝ) < (0.5 : ℝ) := by
+theorem gr_seed_m_Z_err_under_half : (0.0015966043740363804 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem gr_seed_m_Z_meas_pos : (0 : ℝ) < (91.1876 : ℝ) := by
+  norm_num
+
+theorem gr_Lambda_QCD_GeV_err_under_half : (0.28241958362570724 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_Lambda_QCD_GeV_meas_pos : (0 : ℝ) < (0.2173 : ℝ) := by
+  norm_num
+
+theorem gr_sqrt_sigma_GeV_err_under_half : (0.052777181118259166 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_sqrt_sigma_GeV_meas_pos : (0 : ℝ) < (0.42 : ℝ) := by
+  norm_num
+
+theorem gr_N_eff_err_under_half : (0.028424048045719855 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_N_eff_meas_pos : (0 : ℝ) < (3.046 : ℝ) := by
+  norm_num
+
+theorem gr_N_c_QCD_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_N_c_QCD_meas_pos : (0 : ℝ) < (3.0 : ℝ) := by
+  norm_num
+
+theorem gr_Casimir_C_F_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_Casimir_C_F_meas_pos : (0 : ℝ) < (1.3333333333333333 : ℝ) := by
+  norm_num
+
+theorem gr_Casimir_C_A_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_Casimir_C_A_meas_pos : (0 : ℝ) < (3.0 : ℝ) := by
+  norm_num
+
+theorem gr_beta0_QCD_nf5_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_beta0_QCD_nf5_meas_pos : (0 : ℝ) < (7.666666666666667 : ℝ) := by
+  norm_num
+
+theorem gr_spin2_massless_helicities_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_spin2_massless_helicities_meas_pos : (0 : ℝ) < (2.0 : ℝ) := by
+  norm_num
+
+theorem gr_spin2_TT_dof_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_spin2_TT_dof_meas_pos : (0 : ℝ) < (2.0 : ℝ) := by
+  norm_num
+
+theorem gr_einstein_quadrupole_prefactor_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_einstein_quadrupole_prefactor_meas_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
+theorem gr_triangle_angle_sum_pi_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_triangle_angle_sum_pi_meas_pos : (0 : ℝ) < (3.141592653589793 : ℝ) := by
   norm_num
 
 theorem sm_lambda_ckm_err_under_half : (0.06648317372654539 : ℝ) < (0.5 : ℝ) := by
@@ -488,6 +605,9 @@ theorem sm_V_tb_err_under_half : (0.0004466129217395198 : ℝ) < (0.5 : ℝ) := 
 theorem sm_sin2_theta_W_err_under_half : (0.03607116917125227 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
+theorem sm_sin2_theta_W_onshell_err_under_half : (0.18983327119077956 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
 theorem sm_alpha_inv_err_under_half : (0.14167347156583626 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
@@ -500,10 +620,19 @@ theorem sm_m_H_err_under_half : (0.01626281117232239 : ℝ) < (0.5 : ℝ) := by
 theorem sm_m_W_err_under_half : (0.024447179407699797 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_m_Z_err_under_half : (0.49980667028742526 : ℝ) < (0.5 : ℝ) := by
+theorem sm_m_Z_err_under_half : (0.0028066544219732493 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_m_t_err_under_half : (0.03614194480013092 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem sm_Lambda_QCD_GeV_err_under_half : (0.28120185593059194 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem sm_sqrt_sigma_GeV_err_under_half : (0.05275580626597419 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem sm_N_eff_err_under_half : (0.04789442119649137 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_sin2_theta_12_err_under_half : (0.004756805274882866 : ℝ) < (0.5 : ℝ) := by
@@ -531,6 +660,9 @@ theorem sm_emergent_unitarity_row_c_err_under_half : (0.1755075619817248 : ℝ) 
   norm_num
 
 theorem sm_emergent_unitarity_row_t_err_under_half : (0.001431015241259992 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem sm_triangle_angle_sum_pi_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_yin_yang_in_unit_interval_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by

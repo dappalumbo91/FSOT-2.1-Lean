@@ -148,6 +148,15 @@ lemma sin2_theta_W_measured_pos: "(0::real) < 0.23122"
 lemma sin2_theta_W_abs_diff: "0.00008340376 < 0.00008423779"
   by simp
 
+lemma sin2_theta_W_onshell_err_under_half: "0.18983327119077956 < (0.5::real)"
+  by simp
+
+lemma sin2_theta_W_onshell_measured_pos: "(0::real) < 0.2230518910035465"
+  by simp
+
+lemma sin2_theta_W_onshell_abs_diff: "0.0004234267 < 0.000427661"
+  by simp
+
 lemma alpha_inv_err_under_half: "0.14167347156583626 < (0.5::real)"
   by simp
 
@@ -184,13 +193,13 @@ lemma m_W_measured_pos: "(0::real) < 80.377"
 lemma m_W_abs_diff: "0.019649909392526865 < 0.019846408486453134"
   by simp
 
-lemma m_Z_err_under_half: "0.49980667028742526 < (0.5::real)"
+lemma m_Z_err_under_half: "0.0028066544219732493 < (0.5::real)"
   by simp
 
 lemma m_Z_measured_pos: "(0::real) < 91.1876"
   by simp
 
-lemma m_Z_abs_diff: "0.4557617072750162 < 0.46031932434776734"
+lemma m_Z_abs_diff: "0.002559320807691279 < 0.0025849140157691917"
   by simp
 
 lemma m_t_err_under_half: "0.03614194480013092 < (0.5::real)"
@@ -200,6 +209,33 @@ lemma m_t_measured_pos: "(0::real) < 172.69"
   by simp
 
 lemma m_t_abs_diff: "0.062413524475346094 < 0.06303765972010056"
+  by simp
+
+lemma Lambda_QCD_GeV_err_under_half: "0.28120185593059194 < (0.5::real)"
+  by simp
+
+lemma Lambda_QCD_GeV_measured_pos: "(0::real) < 0.2173"
+  by simp
+
+lemma Lambda_QCD_GeV_abs_diff: "0.0006110516 < 0.0006171621"
+  by simp
+
+lemma sqrt_sigma_GeV_err_under_half: "0.05275580626597419 < (0.5::real)"
+  by simp
+
+lemma sqrt_sigma_GeV_measured_pos: "(0::real) < 0.42"
+  by simp
+
+lemma sqrt_sigma_GeV_abs_diff: "0.0002215744 < 0.0002237901"
+  by simp
+
+lemma N_eff_err_under_half: "0.04789442119649137 < (0.5::real)"
+  by simp
+
+lemma N_eff_measured_pos: "(0::real) < 3.046"
+  by simp
+
+lemma N_eff_abs_diff: "0.0014588640696451272 < 0.0014734527103425785"
   by simp
 
 lemma sin2_theta_12_err_under_half: "0.004756805274882866 < (0.5::real)"
@@ -281,6 +317,15 @@ lemma emergent_unitarity_row_t_measured_pos: "(0::real) < 1.0"
   by simp
 
 lemma emergent_unitarity_row_t_abs_diff: "0.00001431015 < 0.00001445325"
+  by simp
+
+lemma triangle_angle_sum_pi_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma triangle_angle_sum_pi_measured_pos: "(0::real) < 3.141592653589793"
+  by simp
+
+lemma triangle_angle_sum_pi_abs_diff: "0 < 0.000000001"
   by simp
 
 lemma yin_yang_in_unit_interval_err_under_half: "0 < (0.5::real)"
@@ -409,6 +454,12 @@ lemma gr_seed_sin2_theta_W_err_under_half: "0.016460322231694493 < (0.5::real)"
 lemma gr_seed_sin2_theta_W_meas_pos: "(0::real) < 0.23122"
   by simp
 
+lemma gr_seed_sin2_theta_W_onshell_err_under_half: "0.209488435890309 < (0.5::real)"
+  by simp
+
+lemma gr_seed_sin2_theta_W_onshell_meas_pos: "(0::real) < 0.2230518910035465"
+  by simp
+
 lemma gr_seed_alpha_inv_err_under_half: "0.13842762822785223 < (0.5::real)"
   by simp
 
@@ -427,10 +478,76 @@ lemma gr_seed_m_W_err_under_half: "0.028479127221542264 < (0.5::real)"
 lemma gr_seed_m_W_meas_pos: "(0::real) < 80.377"
   by simp
 
-lemma gr_seed_m_Z_err_under_half: "0.49871711071827096 < (0.5::real)"
+lemma gr_seed_m_Z_err_under_half: "0.0015966043740363804 < (0.5::real)"
   by simp
 
 lemma gr_seed_m_Z_meas_pos: "(0::real) < 91.1876"
+  by simp
+
+lemma gr_Lambda_QCD_GeV_err_under_half: "0.28241958362570724 < (0.5::real)"
+  by simp
+
+lemma gr_Lambda_QCD_GeV_meas_pos: "(0::real) < 0.2173"
+  by simp
+
+lemma gr_sqrt_sigma_GeV_err_under_half: "0.052777181118259166 < (0.5::real)"
+  by simp
+
+lemma gr_sqrt_sigma_GeV_meas_pos: "(0::real) < 0.42"
+  by simp
+
+lemma gr_N_eff_err_under_half: "0.028424048045719855 < (0.5::real)"
+  by simp
+
+lemma gr_N_eff_meas_pos: "(0::real) < 3.046"
+  by simp
+
+lemma gr_N_c_QCD_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_N_c_QCD_meas_pos: "(0::real) < 3.0"
+  by simp
+
+lemma gr_Casimir_C_F_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_Casimir_C_F_meas_pos: "(0::real) < 1.3333333333333333"
+  by simp
+
+lemma gr_Casimir_C_A_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_Casimir_C_A_meas_pos: "(0::real) < 3.0"
+  by simp
+
+lemma gr_beta0_QCD_nf5_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_beta0_QCD_nf5_meas_pos: "(0::real) < 7.666666666666667"
+  by simp
+
+lemma gr_spin2_massless_helicities_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_spin2_massless_helicities_meas_pos: "(0::real) < 2.0"
+  by simp
+
+lemma gr_spin2_TT_dof_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_spin2_TT_dof_meas_pos: "(0::real) < 2.0"
+  by simp
+
+lemma gr_einstein_quadrupole_prefactor_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_einstein_quadrupole_prefactor_meas_pos: "(0::real) < 1.0"
+  by simp
+
+lemma gr_triangle_angle_sum_pi_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_triangle_angle_sum_pi_meas_pos: "(0::real) < 3.141592653589793"
   by simp
 
 lemma sm_lambda_ckm_err_under_half: "0.06648317372654539 < (0.5::real)"
@@ -481,6 +598,9 @@ lemma sm_V_tb_err_under_half: "0.0004466129 < (0.5::real)"
 lemma sm_sin2_theta_W_err_under_half: "0.03607116917125227 < (0.5::real)"
   by simp
 
+lemma sm_sin2_theta_W_onshell_err_under_half: "0.18983327119077956 < (0.5::real)"
+  by simp
+
 lemma sm_alpha_inv_err_under_half: "0.14167347156583626 < (0.5::real)"
   by simp
 
@@ -493,10 +613,19 @@ lemma sm_m_H_err_under_half: "0.01626281117232239 < (0.5::real)"
 lemma sm_m_W_err_under_half: "0.024447179407699797 < (0.5::real)"
   by simp
 
-lemma sm_m_Z_err_under_half: "0.49980667028742526 < (0.5::real)"
+lemma sm_m_Z_err_under_half: "0.0028066544219732493 < (0.5::real)"
   by simp
 
 lemma sm_m_t_err_under_half: "0.03614194480013092 < (0.5::real)"
+  by simp
+
+lemma sm_Lambda_QCD_GeV_err_under_half: "0.28120185593059194 < (0.5::real)"
+  by simp
+
+lemma sm_sqrt_sigma_GeV_err_under_half: "0.05275580626597419 < (0.5::real)"
+  by simp
+
+lemma sm_N_eff_err_under_half: "0.04789442119649137 < (0.5::real)"
   by simp
 
 lemma sm_sin2_theta_12_err_under_half: "0.004756805274882866 < (0.5::real)"
@@ -524,6 +653,9 @@ lemma sm_emergent_unitarity_row_c_err_under_half: "0.1755075619817248 < (0.5::re
   by simp
 
 lemma sm_emergent_unitarity_row_t_err_under_half: "0.001431015241259992 < (0.5::real)"
+  by simp
+
+lemma sm_triangle_angle_sum_pi_err_under_half: "0 < (0.5::real)"
   by simp
 
 lemma sm_yin_yang_in_unit_interval_err_under_half: "0 < (0.5::real)"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T00:42:05.099782+00:00",
+  "generated_at": "2026-08-04T00:52:12.937174+00:00",
   "version": "2.0",
   "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md",
   "gap_closure_doc": "docs/TOE_GAP_CLOSURE.md",
@@ -20,20 +20,20 @@
         "pass": true,
         "artifact": "data/toe_limit_recovery_benchmark.json + vendor/fsot_gr_sm.py",
         "median_error_pct": 0.022461,
-        "record_count": 29,
+        "record_count": 33,
         "note": "Deep GR recovery map is executable and residual-gated. Not a uniqueness theorem for the Einstein\u2013Hilbert action; full spin-2 quantization remains open research."
       },
       "T4_force_or_scope": {
         "pass": true,
         "artifact": "vendor/fsot_gr_sm.py + data/toe_force_package_manifest.json",
         "status": "force_package_v1",
-        "sm_row_count": 35,
-        "gr_sm_median_error_pct": 0.028479127221542264
+        "sm_row_count": 40,
+        "gr_sm_median_error_pct": 0.01626281117232239
       },
       "T5_prereg_freeze": {
         "pass": true,
         "artifact": "data/toe_prereg_freeze.json",
-        "bundle_sha256": "2755bf69cc938e237ad29c6ce479f760fbdc683e2eabcc01faae184ef8989230"
+        "bundle_sha256": "3c6a73c23b39eaded3e95d8a5b62986036ce3184f71b3f672a95b263fdaf7884"
       },
       "T6_falsification": {
         "pass": true,
@@ -57,11 +57,11 @@
     "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json"
   },
   "next_actions_research": [
-    "CKM/PMNS complex phases from seeds (beyond magnitude package)",
-    "Non-abelian confinement / path-integral layer",
-    "Spin-2 spectrum from fluid action",
+    "CKM angle centrals (\u03b1,\u03b2,\u03b3) residual-gated to \u22640.5% of PDG central (now seed predictions inside experimental bands + exact \u03b1+\u03b2+\u03b3=\u03c0)",
+    "Full non-abelian path-integral confinement theorem (scales \u039b_QCD, \u221a\u03c3, Casimirs, \u03b2\u2080 shipped)",
+    "Spin-2 Fock uniqueness from fluid action (helicity/TT/quadrupole probes shipped)",
     "Independent clean-clone by third party",
     "arXiv endorsement + peer review"
   ],
-  "honest_statement": "T3/T4 deepened with GR recovery, SM force package v1, and CKM/PMNS magnitude+unitarity package, multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. Uniqueness/QFT quantization and complex CKM phases remain open research."
+  "honest_statement": "T3/T4 deepened with GR recovery, SM force package, CKM/PMNS seed+NLO magnitudes, on-shell vs MS-bar Weinberg schemes, confinement scales (\u039b_QCD, \u221a\u03c3), N_eff, SU(3) Casimirs/\u03b2\u2080, spin-2 helicity probes, and unitarity-triangle closure \u2014 multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. Full path-integral confinement theorem and spin-2 Fock uniqueness remain open research."
 }

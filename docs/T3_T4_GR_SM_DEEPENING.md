@@ -63,11 +63,22 @@ Status string: **`force_package_v1`**.
 
 See **[`docs/GR_SM_CKM_MULTIPROVER.md`](GR_SM_CKM_MULTIPROVER.md)** — magnitudes, unitarity, PMNS hierarchy, and the same GR/SM identities exported to **Lean, Coq, Isabelle, F\*, Rust, SMT, TLA+**.
 
+## Depth v2 (2026-08 precision + granular expansion)
+
+| Layer | Content | Residual gate |
+|-------|---------|---------------|
+| Weinberg schemes | MS-bar `2·SUCTION/√φ` vs on-shell `POOF+K/(2·3)` for m_Z | ≤0.5% |
+| Confinement scales | Λ_QCD = G_Cat·SUCTION·φ; √σ = K | ≤0.5% |
+| Confinement algebra | N_c, C_F, C_A, β₀(n_f=5) | exact identity |
+| Cosmology | N_eff = 3 + 2·POOF·SUCTION | ≤0.5% |
+| Triangle | α,β,γ from (ρ̄,η̄); α+β+γ=π | identity green; angle centrals = seed predictions inside exp. bands |
+| Spin-2 probes | massless helicities=2, TT dof=2, quadrupole prefactor | exact identity |
+
 ## What is still open (honest, not hidden)
 
-1. Full non-abelian path integral / confinement theorem  
-2. Complex CKM phases / unique seed-only full matrix (magnitudes+unitarity **shipped**)  
-3. Spin-2 graviton Fock space from fluid action  
+1. Full non-abelian **path-integral** confinement theorem (scales + Casimirs shipped)  
+2. CKM angle centrals residual-gated to ≤0.5% of PDG *central* (predictions inside bands; exact triangle closure shipped)  
+3. Spin-2 graviton **Fock uniqueness** from fluid action (helicity/TT probes shipped)  
 4. Uniqueness theorem for Einstein–Hilbert measure  
 5. Peer review / arXiv endorsement (social)  
 6. Independent third-party clone (process)

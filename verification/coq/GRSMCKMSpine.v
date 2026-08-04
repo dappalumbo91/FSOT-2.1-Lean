@@ -148,6 +148,15 @@ Proof. lra. Qed.
 Lemma sin2_theta_W_abs_diff : ((0.0000834037573577695%R)) < ((0.0000842377949323472%R)).
 Proof. lra. Qed.
 
+Lemma sin2_theta_W_onshell_err_under_half : ((0.18983327119077956%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sin2_theta_W_onshell_measured_pos : 0 < ((0.2230518910035465%R)).
+Proof. lra. Qed.
+
+Lemma sin2_theta_W_onshell_abs_diff : ((0.0004234267011449244%R)) < ((0.00042766096815737367%R)).
+Proof. lra. Qed.
+
 Lemma alpha_inv_err_under_half : ((0.14167347156583626%R)) < (0.5%R).
 Proof. lra. Qed.
 
@@ -184,13 +193,13 @@ Proof. lra. Qed.
 Lemma m_W_abs_diff : ((0.019649909392526865%R)) < ((0.019846408486453134%R)).
 Proof. lra. Qed.
 
-Lemma m_Z_err_under_half : ((0.49980667028742526%R)) < (0.5%R).
+Lemma m_Z_err_under_half : ((0.0028066544219732493%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma m_Z_measured_pos : 0 < ((91.1876%R)).
 Proof. lra. Qed.
 
-Lemma m_Z_abs_diff : ((0.4557617072750162%R)) < ((0.46031932434776734%R)).
+Lemma m_Z_abs_diff : ((0.002559320807691279%R)) < ((0.0025849140157691917%R)).
 Proof. lra. Qed.
 
 Lemma m_t_err_under_half : ((0.03614194480013092%R)) < (0.5%R).
@@ -200,6 +209,33 @@ Lemma m_t_measured_pos : 0 < ((172.69%R)).
 Proof. lra. Qed.
 
 Lemma m_t_abs_diff : ((0.062413524475346094%R)) < ((0.06303765972010056%R)).
+Proof. lra. Qed.
+
+Lemma Lambda_QCD_GeV_err_under_half : ((0.28120185593059194%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma Lambda_QCD_GeV_measured_pos : 0 < ((0.2173%R)).
+Proof. lra. Qed.
+
+Lemma Lambda_QCD_GeV_abs_diff : ((0.0006110516329371762%R)) < ((0.000617162149267548%R)).
+Proof. lra. Qed.
+
+Lemma sqrt_sigma_GeV_err_under_half : ((0.05275580626597419%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sqrt_sigma_GeV_measured_pos : 0 < ((0.42%R)).
+Proof. lra. Qed.
+
+Lemma sqrt_sigma_GeV_abs_diff : ((0.0002215743863170916%R)) < ((0.0002237901301812625%R)).
+Proof. lra. Qed.
+
+Lemma N_eff_err_under_half : ((0.04789442119649137%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma N_eff_measured_pos : 0 < ((3.046%R)).
+Proof. lra. Qed.
+
+Lemma N_eff_abs_diff : ((0.0014588640696451272%R)) < ((0.0014734527103425785%R)).
 Proof. lra. Qed.
 
 Lemma sin2_theta_12_err_under_half : ((0.004756805274882866%R)) < (0.5%R).
@@ -281,6 +317,15 @@ Lemma emergent_unitarity_row_t_measured_pos : 0 < ((1.0%R)).
 Proof. lra. Qed.
 
 Lemma emergent_unitarity_row_t_abs_diff : ((0.000014310152412599919%R)) < ((0.00001445325393772592%R)).
+Proof. lra. Qed.
+
+Lemma triangle_angle_sum_pi_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma triangle_angle_sum_pi_measured_pos : 0 < ((3.141592653589793%R)).
+Proof. lra. Qed.
+
+Lemma triangle_angle_sum_pi_abs_diff : (0%R) < ((0.000000001%R)).
 Proof. lra. Qed.
 
 Lemma yin_yang_in_unit_interval_err_under_half : (0%R) < (0.5%R).
@@ -409,6 +454,12 @@ Proof. lra. Qed.
 Lemma gr_seed_sin2_theta_W_meas_pos : 0 < ((0.23122%R)).
 Proof. lra. Qed.
 
+Lemma gr_seed_sin2_theta_W_onshell_err_under_half : ((0.209488435890309%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_seed_sin2_theta_W_onshell_meas_pos : 0 < ((0.2230518910035465%R)).
+Proof. lra. Qed.
+
 Lemma gr_seed_alpha_inv_err_under_half : ((0.13842762822785223%R)) < (0.5%R).
 Proof. lra. Qed.
 
@@ -427,10 +478,76 @@ Proof. lra. Qed.
 Lemma gr_seed_m_W_meas_pos : 0 < ((80.377%R)).
 Proof. lra. Qed.
 
-Lemma gr_seed_m_Z_err_under_half : ((0.49871711071827096%R)) < (0.5%R).
+Lemma gr_seed_m_Z_err_under_half : ((0.0015966043740363804%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma gr_seed_m_Z_meas_pos : 0 < ((91.1876%R)).
+Proof. lra. Qed.
+
+Lemma gr_Lambda_QCD_GeV_err_under_half : ((0.28241958362570724%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_Lambda_QCD_GeV_meas_pos : 0 < ((0.2173%R)).
+Proof. lra. Qed.
+
+Lemma gr_sqrt_sigma_GeV_err_under_half : ((0.052777181118259166%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_sqrt_sigma_GeV_meas_pos : 0 < ((0.42%R)).
+Proof. lra. Qed.
+
+Lemma gr_N_eff_err_under_half : ((0.028424048045719855%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_N_eff_meas_pos : 0 < ((3.046%R)).
+Proof. lra. Qed.
+
+Lemma gr_N_c_QCD_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_N_c_QCD_meas_pos : 0 < ((3.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_Casimir_C_F_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_Casimir_C_F_meas_pos : 0 < ((1.3333333333333333%R)).
+Proof. lra. Qed.
+
+Lemma gr_Casimir_C_A_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_Casimir_C_A_meas_pos : 0 < ((3.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_beta0_QCD_nf5_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_beta0_QCD_nf5_meas_pos : 0 < ((7.666666666666667%R)).
+Proof. lra. Qed.
+
+Lemma gr_spin2_massless_helicities_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_spin2_massless_helicities_meas_pos : 0 < ((2.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_spin2_TT_dof_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_spin2_TT_dof_meas_pos : 0 < ((2.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_einstein_quadrupole_prefactor_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_einstein_quadrupole_prefactor_meas_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_triangle_angle_sum_pi_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_triangle_angle_sum_pi_meas_pos : 0 < ((3.141592653589793%R)).
 Proof. lra. Qed.
 
 Lemma sm_lambda_ckm_err_under_half : ((0.06648317372654539%R)) < (0.5%R).
@@ -481,6 +598,9 @@ Proof. lra. Qed.
 Lemma sm_sin2_theta_W_err_under_half : ((0.03607116917125227%R)) < (0.5%R).
 Proof. lra. Qed.
 
+Lemma sm_sin2_theta_W_onshell_err_under_half : ((0.18983327119077956%R)) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma sm_alpha_inv_err_under_half : ((0.14167347156583626%R)) < (0.5%R).
 Proof. lra. Qed.
 
@@ -493,10 +613,19 @@ Proof. lra. Qed.
 Lemma sm_m_W_err_under_half : ((0.024447179407699797%R)) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma sm_m_Z_err_under_half : ((0.49980667028742526%R)) < (0.5%R).
+Lemma sm_m_Z_err_under_half : ((0.0028066544219732493%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma sm_m_t_err_under_half : ((0.03614194480013092%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sm_Lambda_QCD_GeV_err_under_half : ((0.28120185593059194%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sm_sqrt_sigma_GeV_err_under_half : ((0.05275580626597419%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sm_N_eff_err_under_half : ((0.04789442119649137%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma sm_sin2_theta_12_err_under_half : ((0.004756805274882866%R)) < (0.5%R).
@@ -524,6 +653,9 @@ Lemma sm_emergent_unitarity_row_c_err_under_half : ((0.1755075619817248%R)) < (0
 Proof. lra. Qed.
 
 Lemma sm_emergent_unitarity_row_t_err_under_half : ((0.001431015241259992%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sm_triangle_angle_sum_pi_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma sm_yin_yang_in_unit_interval_err_under_half : (0%R) < (0.5%R).

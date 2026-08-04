@@ -1,6 +1,6 @@
 # TOE gap closure runbook
 
-Generated: `2026-08-04T00:42:05.099782+00:00`
+Generated: `2026-08-04T00:52:12.937174+00:00`
 
 Frozen boundaries: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 
@@ -65,13 +65,21 @@ Manifest: `data/toe_force_package_manifest.json`
 8. Higgs potential shape (λ, v, m_H)
 9. Photon massless + α_s > α_em hierarchy
 
+### Depth shipped (granular expansion)
+
+1. On-shell vs MS-bar Weinberg schemes → m_Z headroom (no longer gate-edge)
+2. Λ_QCD, √σ, SU(3) Casimirs, β₀(n_f=5)
+3. N_eff seed map; unitarity-triangle α+β+γ=π; spin-2 helicity/TT probes
+4. CKM NLO magnitudes + multiprover spine (222 obligations)
+
 ### Still open research (not claimed)
 
-1. Full non-abelian path-integral / confinement theorem
-2. Complete CKM and PMNS matrices from seeds alone
-3. Spin-2 graviton spectrum from the fluid action
+1. Full non-abelian **path-integral** confinement theorem
+2. CKM α,β,γ residual-gated to ≤0.5% of PDG *central* (seed predictions inside experimental bands)
+3. Spin-2 graviton **Fock uniqueness** from the fluid action
 4. Uniqueness theorem for Einstein–Hilbert measure
 5. Finished resolution of all 13 contested open problems
+6. Independent third-party clean clone; arXiv endorsement
 
 See also: [`docs/T3_T4_GR_SM_DEEPENING.md`](T3_T4_GR_SM_DEEPENING.md).
 

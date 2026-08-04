@@ -951,16 +951,18 @@ def main() -> int:
             "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json",
         },
         "next_actions_research": [
-            "CKM/PMNS complex phases from seeds (beyond magnitude package)",
-            "Non-abelian confinement / path-integral layer",
-            "Spin-2 spectrum from fluid action",
+            "CKM angle centrals (α,β,γ) residual-gated to ≤0.5% of PDG central (now seed predictions inside experimental bands + exact α+β+γ=π)",
+            "Full non-abelian path-integral confinement theorem (scales Λ_QCD, √σ, Casimirs, β₀ shipped)",
+            "Spin-2 Fock uniqueness from fluid action (helicity/TT/quadrupole probes shipped)",
             "Independent clean-clone by third party",
             "arXiv endorsement + peer review",
         ],
         "honest_statement": (
-            "T3/T4 deepened with GR recovery, SM force package v1, and CKM/PMNS "
-            "magnitude+unitarity package, multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). "
-            "Label B remains PASS. Uniqueness/QFT quantization and complex CKM phases remain open research."
+            "T3/T4 deepened with GR recovery, SM force package, CKM/PMNS seed+NLO magnitudes, "
+            "on-shell vs MS-bar Weinberg schemes, confinement scales (Λ_QCD, √σ), N_eff, "
+            "SU(3) Casimirs/β₀, spin-2 helicity probes, and unitarity-triangle closure — "
+            "multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. "
+            "Full path-integral confinement theorem and spin-2 Fock uniqueness remain open research."
         ),
     }
     OUT_REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")

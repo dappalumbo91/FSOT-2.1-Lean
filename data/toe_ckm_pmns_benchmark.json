@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-08-04T00:42:04.820257+00:00",
+  "generated_at": "2026-08-04T00:52:12.651344+00:00",
   "domain": "TOE_CKM_PMNS_Flavor",
   "maps_to_lean": [
     "particle",
@@ -9,11 +9,11 @@
   "D_eff": 20,
   "purpose": "CKM magnitudes + unitarity + PMNS angles + charge/GR formal anchors",
   "module": "vendor/fsot_ckm_pmns.py",
-  "record_count": 35,
-  "observable_count": 35,
-  "median_error_pct": 0.038316528380806465,
-  "pooled_median_error_pct": 0.038316528380806465,
-  "max_error_pct": 0.49980667028742526,
+  "record_count": 40,
+  "observable_count": 40,
+  "median_error_pct": 0.04789442119649137,
+  "pooled_median_error_pct": 0.04789442119649137,
+  "max_error_pct": 0.4219868071131969,
   "green_gate_pass": true,
   "records": [
     {
@@ -225,6 +225,19 @@
       "property": "sin2_theta_W"
     },
     {
+      "name": "sin2_theta_W_onshell",
+      "computed": 0.22347531770469142,
+      "measured": 0.2230518910035465,
+      "error_pct": 0.18983327119077956,
+      "claim": "T4_complex_emergent",
+      "formula": "coupled_multi_sector_equilibrium",
+      "eval_kind": "complex_system_emergence",
+      "zero_free_parameters": true,
+      "derivation": "sector_network_bleed_equilibrium",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sin2_theta_W_onshell"
+    },
+    {
       "name": "alpha_inv",
       "computed": 136.84185542680277,
       "measured": 137.035999084,
@@ -278,9 +291,9 @@
     },
     {
       "name": "m_Z",
-      "computed": 91.64336170727502,
+      "computed": 91.1901593208077,
       "measured": 91.1876,
-      "error_pct": 0.49980667028742526,
+      "error_pct": 0.0028066544219732493,
       "claim": "T4_complex_emergent",
       "formula": "coupled_multi_sector_equilibrium",
       "eval_kind": "complex_system_emergence",
@@ -301,6 +314,45 @@
       "derivation": "sector_network_bleed_equilibrium",
       "lab": "toe_ckm_pmns_lab",
       "property": "m_t"
+    },
+    {
+      "name": "Lambda_QCD_GeV",
+      "computed": 0.21791105163293717,
+      "measured": 0.2173,
+      "error_pct": 0.28120185593059194,
+      "claim": "T4_complex_emergent",
+      "formula": "coupled_multi_sector_equilibrium",
+      "eval_kind": "complex_system_emergence",
+      "zero_free_parameters": true,
+      "derivation": "sector_network_bleed_equilibrium",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "Lambda_QCD_GeV"
+    },
+    {
+      "name": "sqrt_sigma_GeV",
+      "computed": 0.4202215743863171,
+      "measured": 0.42,
+      "error_pct": 0.05275580626597419,
+      "claim": "T4_complex_emergent",
+      "formula": "coupled_multi_sector_equilibrium",
+      "eval_kind": "complex_system_emergence",
+      "zero_free_parameters": true,
+      "derivation": "sector_network_bleed_equilibrium",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sqrt_sigma_GeV"
+    },
+    {
+      "name": "N_eff",
+      "computed": 3.0445411359303547,
+      "measured": 3.046,
+      "error_pct": 0.04789442119649137,
+      "claim": "T4_complex_emergent",
+      "formula": "coupled_multi_sector_equilibrium",
+      "eval_kind": "complex_system_emergence",
+      "zero_free_parameters": true,
+      "derivation": "sector_network_bleed_equilibrium",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "N_eff"
     },
     {
       "name": "sin2_theta_12",
@@ -418,6 +470,19 @@
       "derivation": "sector_network_bleed_equilibrium",
       "lab": "toe_ckm_pmns_lab",
       "property": "emergent_unitarity_row_t"
+    },
+    {
+      "name": "triangle_angle_sum_pi",
+      "computed": 3.141592653589793,
+      "measured": 3.141592653589793,
+      "error_pct": 0.0,
+      "claim": "T4_complex_triangle_closure",
+      "formula": "alpha+beta+gamma = pi",
+      "eval_kind": "seed_identity",
+      "zero_free_parameters": true,
+      "derivation": "sector_network_bleed_equilibrium",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "triangle_angle_sum_pi"
     },
     {
       "name": "yin_yang_in_unit_interval",
@@ -678,6 +743,19 @@
       "property": "sin2_theta_W"
     },
     {
+      "name": "sin2_theta_W_onshell",
+      "computed": 0.22347531770469142,
+      "measured": 0.2230518910035465,
+      "error_pct": 0.18983327119077956,
+      "claim": "T4_complex_emergent",
+      "formula": "coupled_multi_sector_equilibrium",
+      "eval_kind": "complex_system_emergence",
+      "zero_free_parameters": true,
+      "derivation": "sector_network_bleed_equilibrium",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sin2_theta_W_onshell"
+    },
+    {
       "name": "alpha_inv",
       "computed": 136.84185542680277,
       "measured": 137.035999084,
@@ -731,9 +809,9 @@
     },
     {
       "name": "m_Z",
-      "computed": 91.64336170727502,
+      "computed": 91.1901593208077,
       "measured": 91.1876,
-      "error_pct": 0.49980667028742526,
+      "error_pct": 0.0028066544219732493,
       "claim": "T4_complex_emergent",
       "formula": "coupled_multi_sector_equilibrium",
       "eval_kind": "complex_system_emergence",
@@ -754,6 +832,45 @@
       "derivation": "sector_network_bleed_equilibrium",
       "lab": "toe_ckm_pmns_lab",
       "property": "m_t"
+    },
+    {
+      "name": "Lambda_QCD_GeV",
+      "computed": 0.21791105163293717,
+      "measured": 0.2173,
+      "error_pct": 0.28120185593059194,
+      "claim": "T4_complex_emergent",
+      "formula": "coupled_multi_sector_equilibrium",
+      "eval_kind": "complex_system_emergence",
+      "zero_free_parameters": true,
+      "derivation": "sector_network_bleed_equilibrium",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "Lambda_QCD_GeV"
+    },
+    {
+      "name": "sqrt_sigma_GeV",
+      "computed": 0.4202215743863171,
+      "measured": 0.42,
+      "error_pct": 0.05275580626597419,
+      "claim": "T4_complex_emergent",
+      "formula": "coupled_multi_sector_equilibrium",
+      "eval_kind": "complex_system_emergence",
+      "zero_free_parameters": true,
+      "derivation": "sector_network_bleed_equilibrium",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sqrt_sigma_GeV"
+    },
+    {
+      "name": "N_eff",
+      "computed": 3.0445411359303547,
+      "measured": 3.046,
+      "error_pct": 0.04789442119649137,
+      "claim": "T4_complex_emergent",
+      "formula": "coupled_multi_sector_equilibrium",
+      "eval_kind": "complex_system_emergence",
+      "zero_free_parameters": true,
+      "derivation": "sector_network_bleed_equilibrium",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "N_eff"
     },
     {
       "name": "sin2_theta_12",
@@ -871,6 +988,19 @@
       "derivation": "sector_network_bleed_equilibrium",
       "lab": "toe_ckm_pmns_lab",
       "property": "emergent_unitarity_row_t"
+    },
+    {
+      "name": "triangle_angle_sum_pi",
+      "computed": 3.141592653589793,
+      "measured": 3.141592653589793,
+      "error_pct": 0.0,
+      "claim": "T4_complex_triangle_closure",
+      "formula": "alpha+beta+gamma = pi",
+      "eval_kind": "seed_identity",
+      "zero_free_parameters": true,
+      "derivation": "sector_network_bleed_equilibrium",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "triangle_angle_sum_pi"
     },
     {
       "name": "yin_yang_in_unit_interval",

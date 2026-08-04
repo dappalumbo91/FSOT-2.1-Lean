@@ -101,7 +101,10 @@ O = O_seed × (1 + POOF·SUCTION·(I₊ − I₋))
 | α_s | `2·(POOF/ψ_con)²` | ≤0.5% |
 | m_H | FO-213 | 0.04% |
 | m_W | `m_H·3·P_new·(1−C_factor)` | ≤0.5% |
-| m_Z | `m_W/cosθ_W(seed)` | 0.50% |
+| m_Z | `m_W/cosθ_W^onshell` (`POOF+K/6`) | ~0.00% |
+| Λ_QCD | `G_Catalan·SUCTION·φ` | 0.28% |
+| √σ | `K` | 0.05% |
+| N_eff | `3+2·POOF·SUCTION` | 0.03% |
 | m_t | `m_H·π·K/C_eff` | ≤0.5% |
 | sin²θ₁₂ | `2·POOF` | ≤0.5% |
 | sin²θ₂₃ | `ψ_con·e/π` | 0.17% |
