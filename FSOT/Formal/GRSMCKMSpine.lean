@@ -218,13 +218,13 @@ theorem m_t_measured_pos : (0 : ℝ) < (172.69 : ℝ) := by
 theorem m_t_abs_diff : (0.025501231036855643 : ℝ) < (0.025756243347225198 : ℝ) := by
   norm_num
 
-theorem Lambda_QCD_GeV_err_under_half : (0.28120185593059194 : ℝ) < (0.5 : ℝ) := by
+theorem Lambda_QCD_GeV_err_under_half : (0.04684019131481111 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem Lambda_QCD_GeV_measured_pos : (0 : ℝ) < (0.2173 : ℝ) := by
   norm_num
 
-theorem Lambda_QCD_GeV_abs_diff : (0.0006110516329371762 : ℝ) < (0.000617162149267548 : ℝ) := by
+theorem Lambda_QCD_GeV_abs_diff : (0.00010178373572708455 : ℝ) < (0.0001028015730853554 : ℝ) := by
   norm_num
 
 theorem sqrt_sigma_GeV_err_under_half : (0.05275580626597419 : ℝ) < (0.5 : ℝ) := by
@@ -290,13 +290,13 @@ theorem dm2_21_measured_pos : (0 : ℝ) < (7.53e-05 : ℝ) := by
 theorem dm2_21_abs_diff : (4.814791439668371e-08 : ℝ) < (4.862939454065054e-08 : ℝ) := by
   norm_num
 
-theorem dm2_31_abs_err_under_half : (0.4219868071131969 : ℝ) < (0.5 : ℝ) := by
+theorem dm2_31_abs_err_under_half : (0.3712743059251006 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem dm2_31_abs_measured_pos : (0 : ℝ) < (0.002453 : ℝ) := by
   norm_num
 
-theorem dm2_31_abs_abs_diff : (1.035133637848672e-05 : ℝ) < (1.0454849743271588e-05 : ℝ) := by
+theorem dm2_31_abs_abs_diff : (9.107358724342717e-06 : ℝ) < (9.198432312586144e-06 : ℝ) := by
   norm_num
 
 theorem emergent_unitarity_row_u_err_under_half : (0.001400381070371104 : ℝ) < (0.5 : ℝ) := by
@@ -491,7 +491,7 @@ theorem gr_seed_m_Z_err_under_half : (0.05252482561491295 : ℝ) < (0.5 : ℝ) :
 theorem gr_seed_m_Z_meas_pos : (0 : ℝ) < (91.1876 : ℝ) := by
   norm_num
 
-theorem gr_Lambda_QCD_GeV_err_under_half : (0.28241958362570724 : ℝ) < (0.5 : ℝ) := by
+theorem gr_Lambda_QCD_GeV_err_under_half : (0.048055073125713964 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem gr_Lambda_QCD_GeV_meas_pos : (0 : ℝ) < (0.2173 : ℝ) := by
@@ -563,7 +563,7 @@ theorem gr_morphic_phi_present_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
 theorem gr_morphic_phi_present_meas_pos : (0 : ℝ) < (1.618033988749895 : ℝ) := by
   norm_num
 
-theorem gr_neutrino_m3_over_m2_err_under_half : (0.1724795983521893 : ℝ) < (0.5 : ℝ) := by
+theorem gr_neutrino_m3_over_m2_err_under_half : (0.1470630495663553 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem gr_neutrino_m3_over_m2_meas_pos : (0 : ℝ) < (5.707570518336111 : ℝ) := by
@@ -611,7 +611,7 @@ theorem gr_wilson_area_law_sigma_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := b
 theorem gr_wilson_area_law_sigma_meas_pos : (0 : ℝ) < (0.17658624702998535 : ℝ) := by
   norm_num
 
-theorem gr_confinement_scale_ratio_err_under_half : (0.2295212676523054 : ℝ) < (0.5 : ℝ) := by
+theorem gr_confinement_scale_ratio_err_under_half : (0.004719617111680276 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem gr_confinement_scale_ratio_meas_pos : (0 : ℝ) < (0.5173809523809524 : ℝ) := by
@@ -791,7 +791,7 @@ theorem sm_m_Z_err_under_half : (0.05373549190999207 : ℝ) < (0.5 : ℝ) := by
 theorem sm_m_t_err_under_half : (0.014767057175780673 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_Lambda_QCD_GeV_err_under_half : (0.28120185593059194 : ℝ) < (0.5 : ℝ) := by
+theorem sm_Lambda_QCD_GeV_err_under_half : (0.04684019131481111 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_sqrt_sigma_GeV_err_under_half : (0.05275580626597419 : ℝ) < (0.5 : ℝ) := by
@@ -815,7 +815,7 @@ theorem sm_delta_pmns_rad_err_under_half : (0.07675312594002048 : ℝ) < (0.5 : 
 theorem sm_dm2_21_err_under_half : (0.06394145338205008 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_dm2_31_abs_err_under_half : (0.4219868071131969 : ℝ) < (0.5 : ℝ) := by
+theorem sm_dm2_31_abs_err_under_half : (0.3712743059251006 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_emergent_unitarity_row_u_err_under_half : (0.001400381070371104 : ℝ) < (0.5 : ℝ) := by

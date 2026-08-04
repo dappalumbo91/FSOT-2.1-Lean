@@ -211,13 +211,13 @@ lemma m_t_measured_pos: "(0::real) < 172.69"
 lemma m_t_abs_diff: "0.025501231036855643 < 0.025756243347225198"
   by simp
 
-lemma Lambda_QCD_GeV_err_under_half: "0.28120185593059194 < (0.5::real)"
+lemma Lambda_QCD_GeV_err_under_half: "0.04684019131481111 < (0.5::real)"
   by simp
 
 lemma Lambda_QCD_GeV_measured_pos: "(0::real) < 0.2173"
   by simp
 
-lemma Lambda_QCD_GeV_abs_diff: "0.0006110516 < 0.0006171621"
+lemma Lambda_QCD_GeV_abs_diff: "0.0001017837 < 0.0001028016"
   by simp
 
 lemma sqrt_sigma_GeV_err_under_half: "0.05275580626597419 < (0.5::real)"
@@ -283,13 +283,13 @@ lemma dm2_21_measured_pos: "(0::real) < 0.0000753"
 lemma dm2_21_abs_diff: "0.00000004814791 < 0.00000004862939"
   by simp
 
-lemma dm2_31_abs_err_under_half: "0.4219868071131969 < (0.5::real)"
+lemma dm2_31_abs_err_under_half: "0.3712743059251006 < (0.5::real)"
   by simp
 
 lemma dm2_31_abs_measured_pos: "(0::real) < 0.002453"
   by simp
 
-lemma dm2_31_abs_abs_diff: "0.00001035134 < 0.00001045485"
+lemma dm2_31_abs_abs_diff: "0.000009107359 < 0.000009198432"
   by simp
 
 lemma emergent_unitarity_row_u_err_under_half: "0.001400381070371104 < (0.5::real)"
@@ -484,7 +484,7 @@ lemma gr_seed_m_Z_err_under_half: "0.05252482561491295 < (0.5::real)"
 lemma gr_seed_m_Z_meas_pos: "(0::real) < 91.1876"
   by simp
 
-lemma gr_Lambda_QCD_GeV_err_under_half: "0.28241958362570724 < (0.5::real)"
+lemma gr_Lambda_QCD_GeV_err_under_half: "0.048055073125713964 < (0.5::real)"
   by simp
 
 lemma gr_Lambda_QCD_GeV_meas_pos: "(0::real) < 0.2173"
@@ -556,7 +556,7 @@ lemma gr_morphic_phi_present_err_under_half: "0 < (0.5::real)"
 lemma gr_morphic_phi_present_meas_pos: "(0::real) < 1.618033988749895"
   by simp
 
-lemma gr_neutrino_m3_over_m2_err_under_half: "0.1724795983521893 < (0.5::real)"
+lemma gr_neutrino_m3_over_m2_err_under_half: "0.1470630495663553 < (0.5::real)"
   by simp
 
 lemma gr_neutrino_m3_over_m2_meas_pos: "(0::real) < 5.707570518336111"
@@ -604,7 +604,7 @@ lemma gr_wilson_area_law_sigma_err_under_half: "0 < (0.5::real)"
 lemma gr_wilson_area_law_sigma_meas_pos: "(0::real) < 0.17658624702998535"
   by simp
 
-lemma gr_confinement_scale_ratio_err_under_half: "0.2295212676523054 < (0.5::real)"
+lemma gr_confinement_scale_ratio_err_under_half: "0.004719617111680276 < (0.5::real)"
   by simp
 
 lemma gr_confinement_scale_ratio_meas_pos: "(0::real) < 0.5173809523809524"
@@ -784,7 +784,7 @@ lemma sm_m_Z_err_under_half: "0.05373549190999207 < (0.5::real)"
 lemma sm_m_t_err_under_half: "0.014767057175780673 < (0.5::real)"
   by simp
 
-lemma sm_Lambda_QCD_GeV_err_under_half: "0.28120185593059194 < (0.5::real)"
+lemma sm_Lambda_QCD_GeV_err_under_half: "0.04684019131481111 < (0.5::real)"
   by simp
 
 lemma sm_sqrt_sigma_GeV_err_under_half: "0.05275580626597419 < (0.5::real)"
@@ -808,7 +808,7 @@ lemma sm_delta_pmns_rad_err_under_half: "0.07675312594002048 < (0.5::real)"
 lemma sm_dm2_21_err_under_half: "0.06394145338205008 < (0.5::real)"
   by simp
 
-lemma sm_dm2_31_abs_err_under_half: "0.4219868071131969 < (0.5::real)"
+lemma sm_dm2_31_abs_err_under_half: "0.3712743059251006 < (0.5::real)"
   by simp
 
 lemma sm_emergent_unitarity_row_u_err_under_half: "0.001400381070371104 < (0.5::real)"

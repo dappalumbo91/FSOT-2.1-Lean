@@ -141,11 +141,11 @@
 ; m_t_abs_diff kind=abs_diff_lt_lit
 (assert (! (< 0.025501231036855643 0.025756243347225198) :named o68))
 ; Lambda_QCD_GeV_err_under_half kind=lt_half
-(assert (! (< 0.281201855930591937 0.5) :named o69))
+(assert (! (< 0.046840191314811111 0.5) :named o69))
 ; Lambda_QCD_GeV_measured_pos kind=pos
 (assert (! (> 0.217299999999999993 0.0) :named o70))
 ; Lambda_QCD_GeV_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000611051632937176 0.000617162149267548) :named o71))
+(assert (! (< 0.000101783735727085 0.000102801573085355) :named o71))
 ; sqrt_sigma_GeV_err_under_half kind=lt_half
 (assert (! (< 0.052755806265974189 0.5) :named o72))
 ; sqrt_sigma_GeV_measured_pos kind=pos
@@ -189,11 +189,11 @@
 ; dm2_21_abs_diff kind=abs_diff_lt_lit
 (assert (! (< 0.000000048147914397 0.000000048629394541) :named o92))
 ; dm2_31_abs_err_under_half kind=lt_half
-(assert (! (< 0.421986807113196916 0.5) :named o93))
+(assert (! (< 0.371274305925100578 0.5) :named o93))
 ; dm2_31_abs_measured_pos kind=pos
 (assert (! (> 0.002453 0.0) :named o94))
 ; dm2_31_abs_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000010351336378487 0.000010454849743272) :named o95))
+(assert (! (< 0.000009107358724343 0.000009198432312586) :named o95))
 ; emergent_unitarity_row_u_err_under_half kind=lt_half
 (assert (! (< 0.001400381070371104 0.5) :named o96))
 ; emergent_unitarity_row_u_measured_pos kind=pos
@@ -323,7 +323,7 @@
 ; gr_seed_m_Z_meas_pos kind=pos
 (assert (! (> 91.18760000000000332 0.0) :named o159))
 ; gr_Lambda_QCD_GeV_err_under_half kind=lt_half
-(assert (! (< 0.282419583625707238 0.5) :named o160))
+(assert (! (< 0.048055073125713964 0.5) :named o160))
 ; gr_Lambda_QCD_GeV_meas_pos kind=pos
 (assert (! (> 0.217299999999999993 0.0) :named o161))
 ; gr_sqrt_sigma_GeV_err_under_half kind=lt_half
@@ -371,7 +371,7 @@
 ; gr_morphic_phi_present_meas_pos kind=pos
 (assert (! (> 1.618033988749894903 0.0) :named o183))
 ; gr_neutrino_m3_over_m2_err_under_half kind=lt_half
-(assert (! (< 0.172479598352189289 0.5) :named o184))
+(assert (! (< 0.147063049566355297 0.5) :named o184))
 ; gr_neutrino_m3_over_m2_meas_pos kind=pos
 (assert (! (> 5.707570518336111398 0.0) :named o185))
 ; gr_R_b_triangle_err_under_half kind=lt_half
@@ -403,7 +403,7 @@
 ; gr_wilson_area_law_sigma_meas_pos kind=pos
 (assert (! (> 0.176586247029985349 0.0) :named o199))
 ; gr_confinement_scale_ratio_err_under_half kind=lt_half
-(assert (! (< 0.229521267652305405 0.5) :named o200))
+(assert (! (< 0.004719617111680276 0.5) :named o200))
 ; gr_confinement_scale_ratio_meas_pos kind=pos
 (assert (! (> 0.517380952380952386 0.0) :named o201))
 ; gr_asymptotic_freedom_beta0_pos_err_under_half kind=lt_half
@@ -523,7 +523,7 @@
 ; sm_m_t_err_under_half kind=lt_half
 (assert (! (< 0.014767057175780673 0.5) :named o259))
 ; sm_Lambda_QCD_GeV_err_under_half kind=lt_half
-(assert (! (< 0.281201855930591937 0.5) :named o260))
+(assert (! (< 0.046840191314811111 0.5) :named o260))
 ; sm_sqrt_sigma_GeV_err_under_half kind=lt_half
 (assert (! (< 0.052755806265974189 0.5) :named o261))
 ; sm_N_eff_err_under_half kind=lt_half
@@ -539,7 +539,7 @@
 ; sm_dm2_21_err_under_half kind=lt_half
 (assert (! (< 0.063941453382050081 0.5) :named o267))
 ; sm_dm2_31_abs_err_under_half kind=lt_half
-(assert (! (< 0.421986807113196916 0.5) :named o268))
+(assert (! (< 0.371274305925100578 0.5) :named o268))
 ; sm_emergent_unitarity_row_u_err_under_half kind=lt_half
 (assert (! (< 0.001400381070371104 0.5) :named o269))
 ; sm_emergent_unitarity_row_c_err_under_half kind=lt_half

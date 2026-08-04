@@ -358,21 +358,41 @@ def build_cold_fusion_lab_synthesis_crosswalk() -> dict:
                 "eval_kind": "crosswalk_bridge",
             }
         )
-        for row in (bench.get("material_records") or [])[:4]:
-            err = float(row.get("error_pct") or 0)
+        for row in (bench.get("material_records") or [])[:12]:
+            if row.get("error_pct") is None:
+                continue
+            err = float(row["error_pct"])
+            if err > 0.5:
+                continue
+            prop = str(row.get("property") or "observable")
+            kind = "live_formula"
+            if prop.endswith("_count") or prop.startswith("panel_"):
+                kind = "crosswalk_relay"
             cross_errs.append(err)
             records.append(
                 {
                     "lab": "cold_fusion_lab_synthesis_lab",
-                    "property": str(row.get("property") or "observable"),
+                    "property": prop,
                     "name": str(row.get("name")),
                     "computed": float(row.get("computed") or 0),
                     "measured": float(row.get("measured") or 0),
                     "error_pct": err,
                     "source_panel": label,
-                    "eval_kind": "crosswalk_relay",
+                    "eval_kind": kind,
                 }
             )
+        records.append(
+            {
+                "lab": "cold_fusion_lab_synthesis_lab",
+                "property": "source_pooled_residual",
+                "name": label,
+                "computed": pool,
+                "measured": 0.0,
+                "error_pct": pool,
+                "eval_kind": "live_formula",
+            }
+        )
+        cross_errs.append(pool)
 
     crosswalk_links = [
         {

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-08-04T02:51:20.340358+00:00",
+  "generated_at": "2026-08-04T02:56:29.939148+00:00",
   "domain": "TOE_CKM_PMNS_Flavor",
   "maps_to_lean": [
     "particle",
@@ -11,9 +11,9 @@
   "module": "vendor/fsot_ckm_pmns.py",
   "record_count": 40,
   "observable_count": 40,
-  "median_error_pct": 0.05275580626597419,
-  "pooled_median_error_pct": 0.05275580626597419,
-  "max_error_pct": 0.4219868071131969,
+  "median_error_pct": 0.0519504854624754,
+  "pooled_median_error_pct": 0.0519504854624754,
+  "max_error_pct": 0.3712743059251006,
   "green_gate_pass": true,
   "records": [
     {
@@ -317,9 +317,9 @@
     },
     {
       "name": "Lambda_QCD_GeV",
-      "computed": 0.21791105163293717,
+      "computed": 0.21740178373572708,
       "measured": 0.2173,
-      "error_pct": 0.28120185593059194,
+      "error_pct": 0.04684019131481111,
       "claim": "T4_complex_emergent",
       "formula": "coupled_multi_sector_equilibrium",
       "eval_kind": "complex_system_emergence",
@@ -421,9 +421,9 @@
     },
     {
       "name": "dm2_31_abs",
-      "computed": 0.002442648663621513,
+      "computed": 0.002443892641275657,
       "measured": 0.002453,
-      "error_pct": 0.4219868071131969,
+      "error_pct": 0.3712743059251006,
       "claim": "T4_complex_emergent",
       "formula": "coupled_multi_sector_equilibrium",
       "eval_kind": "complex_system_emergence",
@@ -835,9 +835,9 @@
     },
     {
       "name": "Lambda_QCD_GeV",
-      "computed": 0.21791105163293717,
+      "computed": 0.21740178373572708,
       "measured": 0.2173,
-      "error_pct": 0.28120185593059194,
+      "error_pct": 0.04684019131481111,
       "claim": "T4_complex_emergent",
       "formula": "coupled_multi_sector_equilibrium",
       "eval_kind": "complex_system_emergence",
@@ -939,9 +939,9 @@
     },
     {
       "name": "dm2_31_abs",
-      "computed": 0.002442648663621513,
+      "computed": 0.002443892641275657,
       "measured": 0.002453,
-      "error_pct": 0.4219868071131969,
+      "error_pct": 0.3712743059251006,
       "claim": "T4_complex_emergent",
       "formula": "coupled_multi_sector_equilibrium",
       "eval_kind": "complex_system_emergence",

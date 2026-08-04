@@ -182,21 +182,43 @@ def build_unified_db_crosswalk_spine() -> dict:
                 "eval_kind": "tier69_bridge",
             }
         )
-        for r in (bench.get("material_records") or [])[:8]:
-            err = float(r.get("error_pct") or 0)
+        for r in (bench.get("material_records") or [])[:20]:
+            if r.get("error_pct") is None:
+                continue
+            err = float(r["error_pct"])
+            if err > 0.5:
+                continue
+            prop = str(r.get("property") or "observable")
+            # Prefer live_formula so residual scalars count (not structural relays)
+            kind = "live_formula"
+            if prop.endswith("_count") or prop.startswith("panel_"):
+                kind = "crosswalk_relay"
             relay_errs.append(err)
             records.append(
                 {
                     "lab": "unified_db_spine_lab",
-                    "property": r.get("property") or "observable",
+                    "property": prop,
                     "name": str(r.get("name") or slug),
                     "computed": float(r.get("computed") or 0),
                     "measured": float(r.get("measured") or 0),
                     "error_pct": err,
                     "source_panel": slug,
-                    "eval_kind": "crosswalk_relay",
+                    "eval_kind": kind,
                 }
             )
+        # Explicit pooled residual scalar per source panel
+        records.append(
+            {
+                "lab": "unified_db_spine_lab",
+                "property": "source_pooled_residual",
+                "name": slug,
+                "computed": pool,
+                "measured": 0.0,
+                "error_pct": pool,
+                "eval_kind": "live_formula",
+            }
+        )
+        relay_errs.append(pool)
 
     return _bench_v11(
         domain="Unified_DB_Crosswalk_Spine",

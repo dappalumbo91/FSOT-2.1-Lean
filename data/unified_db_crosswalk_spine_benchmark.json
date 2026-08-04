@@ -1,11 +1,10 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T14:25:18.964722+00:00",
+  "generated_at": "2026-08-04T02:56:23.708146+00:00",
   "domain": "Unified_DB_Crosswalk_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "tier69_unified_db_panels",
-    "c_thin_depth_pass"
+    "tier69_unified_db_panels"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -14,24 +13,24 @@
     "ai"
   ],
   "D_eff": 17,
-  "record_count": 24,
-  "observable_count": 24,
-  "scalar_record_count": 4,
+  "record_count": 43,
+  "observable_count": 43,
+  "scalar_record_count": 20,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0020923899350648867,
-  "pooled_median_error_pct": 0.0020923899350648867,
-  "headline_median_error_pct": 0.0020923899350648867,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Unified_DB_Crosswalk_Spine_depth": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+      "unified_db_spine": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Tier 69 aggregate crosswalk"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_crosswalk_relay_vs_baseline": true
     }
   },
   "records": [
@@ -39,45 +38,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.002092,
-      "measured": 0.0,
-      "error_pct": 0.0020923899350648867,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.002092,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
-      "name": "Unified_DB_Crosswalk_Spine_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "Unified DB Crosswalk Spine depth",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 43
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "crosswalk_relay",
+      "name": "unified_db_spine",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 41
     }
   ],
   "material_records": [
@@ -89,20 +62,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 46,
-      "eval_kind": "tier69_bridge",
-      "domain_display_name": "unified db spine",
-      "display_name": "unified db candidate crosswalk",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier69_bridge"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -112,20 +72,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "unified_db_candidate_crosswalk",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_relay"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -135,20 +82,7 @@
       "measured": 1532.0,
       "error_pct": 0.0,
       "source_panel": "unified_db_candidate_crosswalk",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_relay"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -158,20 +92,7 @@
       "measured": 5.0,
       "error_pct": 0.0,
       "source_panel": "unified_db_candidate_crosswalk",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -181,20 +102,7 @@
       "measured": 8.0,
       "error_pct": 0.0,
       "source_panel": "unified_db_candidate_crosswalk",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -204,20 +112,7 @@
       "measured": 12.0,
       "error_pct": 0.0,
       "source_panel": "unified_db_candidate_crosswalk",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -227,20 +122,7 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "source_panel": "unified_db_candidate_crosswalk",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -250,43 +132,136 @@
       "measured": 35.0,
       "error_pct": 0.0,
       "source_panel": "unified_db_candidate_crosswalk",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "unified_db_spine_lab",
-      "property": "smiles_derivation_section_count",
+      "property": "distinct_type_count",
       "name": "fsot_aggregate_unified_db",
-      "computed": 108.0,
-      "measured": 107.0,
-      "error_pct": 0.9345794392523363,
+      "computed": 113.0,
+      "measured": 113.0,
+      "error_pct": 0.0,
       "source_panel": "unified_db_candidate_crosswalk",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 1.0,
-        "delta_pct": 0.934579,
-        "effective_error_pct": 0.934579,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "formula_corpus_closure",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "strict_empirical_count",
+      "name": "strict_empirical_jsonl",
+      "computed": 7941.0,
+      "measured": 7941.0,
+      "error_pct": 0.0,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "lean_priors_modules",
+      "name": "formal_priors_count",
+      "computed": 308.0,
+      "measured": 308.0,
+      "error_pct": 0.0,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "extension_bridge_domains",
+      "name": "benchmark_json_domains",
+      "computed": 268.0,
+      "measured": 268.0,
+      "error_pct": 0.0,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "domain_benchmark_records",
+      "name": "Acoustic_Resonance_Materials",
+      "computed": 29.0,
+      "measured": 29.0,
+      "error_pct": 0.008381497018412922,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "domain_benchmark_records",
+      "name": "Adjacent_Rung_Coupling",
+      "computed": 36.0,
+      "measured": 36.0,
+      "error_pct": 0.020098237848404983,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "domain_benchmark_records",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "domain_benchmark_records",
+      "name": "Agriculture_Agroecology",
+      "computed": 276.0,
+      "measured": 276.0,
+      "error_pct": 0.018019024892929635,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "domain_benchmark_records",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "computed": 48.0,
+      "measured": 48.0,
+      "error_pct": 0.005168558627176231,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "domain_benchmark_records",
+      "name": "Anthropology",
+      "computed": 160.0,
+      "measured": 160.0,
+      "error_pct": 0.019504399572476606,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "domain_benchmark_records",
+      "name": "Architecture_Building_Science",
+      "computed": 43.0,
+      "measured": 43.0,
+      "error_pct": 0.07869745016115058,
+      "source_panel": "unified_db_candidate_crosswalk",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "unified_db_candidate_crosswalk",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -295,21 +270,8 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "record_count": 10,
-      "eval_kind": "tier69_bridge",
-      "domain_display_name": "unified db spine",
-      "display_name": "fsot aggregate organized panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "record_count": 24,
+      "eval_kind": "tier69_bridge"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -319,20 +281,7 @@
       "measured": 1532.0,
       "error_pct": 0.0,
       "source_panel": "fsot_aggregate_organized_panel",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "aggregate total",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_relay"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -342,20 +291,7 @@
       "measured": 108.0,
       "error_pct": 0.0,
       "source_panel": "fsot_aggregate_organized_panel",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "smiles sections",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -365,20 +301,7 @@
       "measured": 5.0,
       "error_pct": 0.0,
       "source_panel": "fsot_aggregate_organized_panel",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "Seed",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_relay"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -388,20 +311,7 @@
       "measured": 8.0,
       "error_pct": 0.0,
       "source_panel": "fsot_aggregate_organized_panel",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "Layer 1",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_relay"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -411,20 +321,7 @@
       "measured": 12.0,
       "error_pct": 0.0,
       "source_panel": "fsot_aggregate_organized_panel",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "Layer 2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_relay"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -434,20 +331,7 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "source_panel": "fsot_aggregate_organized_panel",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "Threshold",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_relay"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -457,20 +341,7 @@
       "measured": 35.0,
       "error_pct": 0.0,
       "source_panel": "fsot_aggregate_organized_panel",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "Domain Metadata",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_relay"
     },
     {
       "lab": "unified_db_spine_lab",
@@ -480,175 +351,140 @@
       "measured": 30984.0,
       "error_pct": 0.0,
       "source_panel": "fsot_aggregate_organized_panel",
-      "eval_kind": "crosswalk_relay",
-      "domain_display_name": "unified db spine",
-      "display_name": "records total",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
-      "lab": "unified_db_crosswalk_spine_depth_lab",
+      "lab": "unified_db_spine_lab",
+      "property": "unified_index_records_strict_empirical",
+      "name": "records_strict_empirical",
+      "computed": 7941.0,
+      "measured": 7941.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "unified_index_projects",
+      "name": "projects",
+      "computed": 26.0,
+      "measured": 26.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "engine_native_h0",
+      "name": "fsot_aggregate_organized_panel",
+      "computed": 67.27021167735879,
+      "measured": 67.4,
+      "error_pct": 0.192564276915754,
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "brightness_temperature_rms_k",
+      "name": "fsot_aggregate_organized_panel",
+      "computed": 99.99581522012987,
+      "measured": 100.0,
+      "error_pct": 0.004184779870129773,
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "hubble_constant_km_s_mpc",
+      "name": "fsot_aggregate_organized_panel",
+      "computed": 67.38395831285372,
+      "measured": 67.4,
+      "error_pct": 0.023800722768967785,
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "matter_fluctuation_amplitude",
+      "name": "fsot_aggregate_organized_panel",
+      "computed": 0.8111240047382514,
+      "measured": 0.811,
+      "error_pct": 0.01529034996934153,
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
+      "property": "observable",
+      "name": "fsot_aggregate_organized_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "unified_db_spine_lab",
       "property": "panel_pooled_median",
       "name": "fsot_aggregate_unified_db",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "record_count": 8,
-      "eval_kind": "aggregate_bridge",
-      "domain_display_name": "unified db crosswalk spine depth",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Unified_DB_Candidate_Crosswalk",
-      "depth_relay_from": "Unified_DB_Candidate_Crosswalk"
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "crosswalk_relay"
     },
     {
-      "lab": "unified_db_crosswalk_spine_depth_lab",
+      "lab": "unified_db_spine_lab",
       "property": "row_count",
       "name": "fsot_aggregate_unified_db",
       "computed": 1532.0,
       "measured": 1532.0,
       "error_pct": 0.0,
-      "source_panel": "Unified_DB_Candidate_Crosswalk",
-      "eval_kind": "candidate_relay",
-      "domain_display_name": "unified db crosswalk spine depth",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Unified_DB_Candidate_Crosswalk"
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "crosswalk_relay"
     },
     {
-      "lab": "unified_db_crosswalk_spine_depth_lab",
+      "lab": "unified_db_spine_lab",
       "property": "type_count_seed",
       "name": "fsot_aggregate_unified_db",
       "computed": 5.0,
       "measured": 5.0,
       "error_pct": 0.0,
-      "source_panel": "Unified_DB_Candidate_Crosswalk",
-      "eval_kind": "candidate_relay",
-      "domain_display_name": "unified db crosswalk spine depth",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Unified_DB_Candidate_Crosswalk"
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "live_formula"
     },
     {
-      "lab": "unified_db_crosswalk_spine_depth_lab",
+      "lab": "unified_db_spine_lab",
       "property": "type_count_layer_1",
       "name": "fsot_aggregate_unified_db",
       "computed": 8.0,
       "measured": 8.0,
       "error_pct": 0.0,
-      "source_panel": "Unified_DB_Candidate_Crosswalk",
-      "eval_kind": "candidate_relay",
-      "domain_display_name": "unified db crosswalk spine depth",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Unified_DB_Candidate_Crosswalk"
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "live_formula"
     },
     {
-      "lab": "unified_db_crosswalk_spine_depth_lab",
-      "case_id": "engine_native_h0",
-      "property": "engine_native_h0",
-      "computed": 67.27021167735879,
-      "measured": 67.4,
-      "error_pct": 0.192564276915754,
-      "unit": "km s^-1 Mpc^-1",
-      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "unified db crosswalk spine depth",
-      "display_name": "engine native h0",
-      "scientific_measurement": {
-        "delta": -0.12978832,
-        "delta_pct": 0.192564,
-        "effective_error_pct": 0.192564,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "km s^-1 Mpc^-1"
-      },
-      "source_panel": "Pure_Mathematics",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Pure_Mathematics"
+      "lab": "unified_db_spine_lab",
+      "property": "strict_empirical_count",
+      "name": "strict_empirical_jsonl",
+      "computed": 7941.0,
+      "measured": 7941.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_organized_panel",
+      "eval_kind": "crosswalk_relay"
     },
     {
-      "lab": "unified_db_crosswalk_spine_depth_lab",
-      "case_id": "external_alma_chromosphere",
-      "property": "brightness_temperature_rms_k",
-      "computed": 99.99581522012987,
-      "measured": 100.0,
-      "error_pct": 0.004184779870129773,
-      "unit": "K",
-      "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
-      "eval_kind": "live_formula",
-      "domain_display_name": "unified db crosswalk spine depth",
-      "display_name": "brightness temperature rms k",
-      "scientific_measurement": {
-        "delta": -0.00418478,
-        "delta_pct": 0.004185,
-        "effective_error_pct": 0.004185,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "K"
-      },
-      "source_panel": "Pure_Mathematics",
-      "depth_relay_from": "Pure_Mathematics"
+      "lab": "unified_db_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fsot_aggregate_organized_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0020923899350648867,
+    "scalar_pooled_median_error_pct": 0.0,
     "max_scalar_error_pct": 0.192564276915754,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -658,19 +494,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Unified DB Crosswalk Spine",
-  "tier_label": "Tier 69 \u2014 Unified DB Candidate Crosswalk + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 4,
-    "median_error_pct": 0.004185,
-    "max_error_pct": 0.192564,
-    "mean_abs_delta": 0.033493275,
-    "precision_tier_counts": {
-      "green": 4
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.207963+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

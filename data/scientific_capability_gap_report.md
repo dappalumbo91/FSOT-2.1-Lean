@@ -1,6 +1,6 @@
 # Scientific capability & accuracy gap report
 
-Generated: `2026-08-04T02:51:03.664663+00:00`
+Generated: `2026-08-04T02:56:39.139409+00:00`
 
 ## Goal
 
@@ -65,9 +65,7 @@ FSOT already beats registered SOTA typical error on headline observables with 0 
 
 - n=1 max=0.05092740813165782  math_generator_benchmark_formula_eval_benchmark.json
 - n=2 max=3.862903827310908e-14  math_generator_airfoil_rmse_benchmark.json
-- n=3 max=0.0  Cold_Fusion_Lab_Synthesis_Crosswalk
 - n=3 max=0.0  Tier_96_Circuit_Spine
-- n=4 max=0.192564276915754  Unified_DB_Crosswalk_Spine
 - n=4 max=0.08243667961587486  h0_planck_benchmark.json
 - n=4 max=0.031506  VL_Agent_Distill_Panel
 - n=4 max=1.3209968920124464e-14  Living_FSOT_Hardware
@@ -75,6 +73,8 @@ FSOT already beats registered SOTA typical error on headline observables with 0 
 - n=4 max=0.0  Compact_Object_Binary_Events
 - n=4 max=0.0  Interactive_Media_Prereg_Scaffold
 - n=4 max=0.0  Scientific_Expansion_Depth_Spine
+- n=5 max=0.051887  Schematic_Netlist_Intrinsic_Panel
+- n=5 max=0.023609235048340338  Ionospheric_Chemistry_Coupling
 
 ## Priority queue
 

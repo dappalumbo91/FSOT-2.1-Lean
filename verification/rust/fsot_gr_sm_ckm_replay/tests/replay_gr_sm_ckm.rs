@@ -71,9 +71,9 @@ fn replay_gr_sm_ckm_obligations() {
     assert!(0.014767057175780673_f64 < 0.5_f64, "m_t_err_under_half");
     assert!(172.69_f64 > 0.0, "m_t_measured_pos");
     assert!(0.025501231036855643_f64 < 0.025756243347225198_f64, "m_t_abs_diff");
-    assert!(0.28120185593059194_f64 < 0.5_f64, "Lambda_QCD_GeV_err_under_half");
+    assert!(0.04684019131481111_f64 < 0.5_f64, "Lambda_QCD_GeV_err_under_half");
     assert!(0.2173_f64 > 0.0, "Lambda_QCD_GeV_measured_pos");
-    assert!(0.0006110516329371762_f64 < 0.000617162149267548_f64, "Lambda_QCD_GeV_abs_diff");
+    assert!(0.00010178373572708455_f64 < 0.0001028015730853554_f64, "Lambda_QCD_GeV_abs_diff");
     assert!(0.05275580626597419_f64 < 0.5_f64, "sqrt_sigma_GeV_err_under_half");
     assert!(0.42_f64 > 0.0, "sqrt_sigma_GeV_measured_pos");
     assert!(0.0002215743863170916_f64 < 0.0002237901301812625_f64, "sqrt_sigma_GeV_abs_diff");
@@ -95,9 +95,9 @@ fn replay_gr_sm_ckm_obligations() {
     assert!(0.06394145338205008_f64 < 0.5_f64, "dm2_21_err_under_half");
     assert!(7.53e-05_f64 > 0.0, "dm2_21_measured_pos");
     assert!(4.814791439668371e-08_f64 < 4.862939454065054e-08_f64, "dm2_21_abs_diff");
-    assert!(0.4219868071131969_f64 < 0.5_f64, "dm2_31_abs_err_under_half");
+    assert!(0.3712743059251006_f64 < 0.5_f64, "dm2_31_abs_err_under_half");
     assert!(0.002453_f64 > 0.0, "dm2_31_abs_measured_pos");
-    assert!(1.035133637848672e-05_f64 < 1.0454849743271588e-05_f64, "dm2_31_abs_abs_diff");
+    assert!(9.107358724342717e-06_f64 < 9.198432312586144e-06_f64, "dm2_31_abs_abs_diff");
     assert!(0.001400381070371104_f64 < 0.5_f64, "emergent_unitarity_row_u_err_under_half");
     assert!(1.0_f64 > 0.0, "emergent_unitarity_row_u_measured_pos");
     assert!(1.400381070371104e-05_f64 < 1.414384881174815e-05_f64, "emergent_unitarity_row_u_abs_diff");
@@ -162,7 +162,7 @@ fn replay_gr_sm_ckm_obligations() {
     assert!(80.377_f64 > 0.0, "gr_seed_m_W_meas_pos");
     assert!(0.05252482561491295_f64 < 0.5_f64, "gr_seed_m_Z_err_under_half");
     assert!(91.1876_f64 > 0.0, "gr_seed_m_Z_meas_pos");
-    assert!(0.28241958362570724_f64 < 0.5_f64, "gr_Lambda_QCD_GeV_err_under_half");
+    assert!(0.048055073125713964_f64 < 0.5_f64, "gr_Lambda_QCD_GeV_err_under_half");
     assert!(0.2173_f64 > 0.0, "gr_Lambda_QCD_GeV_meas_pos");
     assert!(0.052777181118259166_f64 < 0.5_f64, "gr_sqrt_sigma_GeV_err_under_half");
     assert!(0.42_f64 > 0.0, "gr_sqrt_sigma_GeV_meas_pos");
@@ -186,7 +186,7 @@ fn replay_gr_sm_ckm_obligations() {
     assert!(0.991_f64 > 0.0, "gr_yukawa_top_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_morphic_phi_present_err_under_half");
     assert!(1.618033988749895_f64 > 0.0, "gr_morphic_phi_present_meas_pos");
-    assert!(0.1724795983521893_f64 < 0.5_f64, "gr_neutrino_m3_over_m2_err_under_half");
+    assert!(0.1470630495663553_f64 < 0.5_f64, "gr_neutrino_m3_over_m2_err_under_half");
     assert!(5.707570518336111_f64 > 0.0, "gr_neutrino_m3_over_m2_meas_pos");
     assert!(0.048875106155599785_f64 < 0.5_f64, "gr_R_b_triangle_err_under_half");
     assert!(0.3865593098089865_f64 > 0.0, "gr_R_b_triangle_meas_pos");
@@ -202,7 +202,7 @@ fn replay_gr_sm_ckm_obligations() {
     assert!(1.0_f64 > 0.0, "gr_einstein_quadrupole_prefactor_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_wilson_area_law_sigma_err_under_half");
     assert!(0.17658624702998535_f64 > 0.0, "gr_wilson_area_law_sigma_meas_pos");
-    assert!(0.2295212676523054_f64 < 0.5_f64, "gr_confinement_scale_ratio_err_under_half");
+    assert!(0.004719617111680276_f64 < 0.5_f64, "gr_confinement_scale_ratio_err_under_half");
     assert!(0.5173809523809524_f64 > 0.0, "gr_confinement_scale_ratio_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_asymptotic_freedom_beta0_pos_err_under_half");
     assert!(1.0_f64 > 0.0, "gr_asymptotic_freedom_beta0_pos_meas_pos");
@@ -262,7 +262,7 @@ fn replay_gr_sm_ckm_obligations() {
     assert!(0.026467778409122445_f64 < 0.5_f64, "sm_m_W_err_under_half");
     assert!(0.05373549190999207_f64 < 0.5_f64, "sm_m_Z_err_under_half");
     assert!(0.014767057175780673_f64 < 0.5_f64, "sm_m_t_err_under_half");
-    assert!(0.28120185593059194_f64 < 0.5_f64, "sm_Lambda_QCD_GeV_err_under_half");
+    assert!(0.04684019131481111_f64 < 0.5_f64, "sm_Lambda_QCD_GeV_err_under_half");
     assert!(0.05275580626597419_f64 < 0.5_f64, "sm_sqrt_sigma_GeV_err_under_half");
     assert!(0.04789442119649137_f64 < 0.5_f64, "sm_N_eff_err_under_half");
     assert!(0.004756805274882866_f64 < 0.5_f64, "sm_sin2_theta_12_err_under_half");
@@ -270,7 +270,7 @@ fn replay_gr_sm_ckm_obligations() {
     assert!(0.0029908786376992773_f64 < 0.5_f64, "sm_sin2_theta_13_err_under_half");
     assert!(0.07675312594002048_f64 < 0.5_f64, "sm_delta_pmns_rad_err_under_half");
     assert!(0.06394145338205008_f64 < 0.5_f64, "sm_dm2_21_err_under_half");
-    assert!(0.4219868071131969_f64 < 0.5_f64, "sm_dm2_31_abs_err_under_half");
+    assert!(0.3712743059251006_f64 < 0.5_f64, "sm_dm2_31_abs_err_under_half");
     assert!(0.001400381070371104_f64 < 0.5_f64, "sm_emergent_unitarity_row_u_err_under_half");
     assert!(0.1755075619817248_f64 < 0.5_f64, "sm_emergent_unitarity_row_c_err_under_half");
     assert!(0.0014597402371530066_f64 < 0.5_f64, "sm_emergent_unitarity_row_t_err_under_half");

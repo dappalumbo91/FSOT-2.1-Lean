@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T02:51:03.664663+00:00",
+  "generated_at": "2026-08-04T02:56:39.139409+00:00",
   "goal": "Beat or exceed scientific SOTA / literature capability on measured observables",
   "live_atlas": {
     "green_pass": 414,
@@ -515,18 +515,11 @@
       "max_name": "NaBr"
     },
     {
-      "domain": "TOE_CKM_PMNS_Flavor",
-      "max_error_pct": 0.4219868071131969,
-      "median_error_pct": 0.05275580626597419,
-      "scalar_count": 38,
-      "max_name": "dm2_31_abs"
-    },
-    {
-      "domain": "TOE_GR_SM_Deep",
-      "max_error_pct": 0.4219868071131969,
-      "median_error_pct": 0.007456682224867657,
-      "scalar_count": 91,
-      "max_name": "dm2_31_abs"
+      "domain": "Speleology",
+      "max_error_pct": 0.406301,
+      "median_error_pct": 0.0034072140135262413,
+      "scalar_count": 40,
+      "max_name": "He"
     }
   ],
   "thin_panels": [
@@ -543,22 +536,10 @@
       "file": "math_generator_airfoil_rmse_benchmark.json"
     },
     {
-      "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
-      "scalar_count": 3,
-      "max_error_pct": 0.0,
-      "file": "cold_fusion_lab_synthesis_crosswalk_benchmark.json"
-    },
-    {
       "domain": "Tier_96_Circuit_Spine",
       "scalar_count": 3,
       "max_error_pct": 0.0,
       "file": "tier_96_circuit_spine_benchmark.json"
-    },
-    {
-      "domain": "Unified_DB_Crosswalk_Spine",
-      "scalar_count": 4,
-      "max_error_pct": 0.192564276915754,
-      "file": "unified_db_crosswalk_spine_benchmark.json"
     },
     {
       "domain": "h0_planck_benchmark.json",
@@ -679,6 +660,18 @@
       "scalar_count": 6,
       "max_error_pct": 0.0,
       "file": "hybrid_fi_sim_multi_hero_panel_benchmark.json"
+    },
+    {
+      "domain": "Tier_94_Longevity_Spine",
+      "scalar_count": 6,
+      "max_error_pct": 0.0,
+      "file": "tier_94_longevity_spine_benchmark.json"
+    },
+    {
+      "domain": "Cosmology_Anomaly_Deep_Panel",
+      "scalar_count": 7,
+      "max_error_pct": 0.140126,
+      "file": "cosmology_anomaly_deep_panel_benchmark.json"
     }
   ],
   "expansion_map": {

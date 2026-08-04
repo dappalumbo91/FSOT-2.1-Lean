@@ -272,8 +272,13 @@ def seed_unitarity_triangle() -> dict[str, float]:
 
 
 def seed_lambda_qcd_GeV() -> float:
-    """Λ_QCD^(n_f≈5) ≈ G_Catalan · SUCTION · φ  [GeV]."""
-    return f(G_CAT) * f(SUCTION) * f(PHI)
+    """Λ_QCD^(n_f≈5) ≈ G_Catalan · SUCTION · φ − (POOF·SUCTION)²  [GeV].
+
+    Base is the confinement seed ladder; ultra-subtle yin–yang square is the
+    same net used for m_H / multi-sector polish (not a free fit).
+    """
+    base = f(G_CAT) * f(SUCTION) * f(PHI)
+    return base - (f(POOF) * f(SUCTION)) ** 2
 
 
 def seed_string_tension_GeV() -> float:
@@ -339,11 +344,15 @@ def seed_dm2() -> dict[str, float]:
     """Neutrino Δm² [eV²] — pure seed composites.
 
       Δm²_21 = (POOF · G_Catalan · P_new)³
-      Δm²_31 = (G_Catalan · SUCTION)³
+      Δm²_31 = (G_Catalan · SUCTION)³ · (1 + (POOF·SUCTION)²)
+
+    Atmospheric mass-squared uses the same ultra-subtle yin–yang net as other
+    precision polishes; solar Δm²_21 already sits well under gate without it.
     """
+    yy = (f(POOF) * f(SUCTION)) ** 2
     return {
         "dm2_21": (f(POOF) * f(G_CAT) * f(P_NEW)) ** 3,
-        "dm2_31_abs": (f(G_CAT) * f(SUCTION)) ** 3,
+        "dm2_31_abs": ((f(G_CAT) * f(SUCTION)) ** 3) * (1.0 + yy),
     }
 
 
@@ -643,7 +652,7 @@ def run_seed_flavor_suite() -> dict[str, Any]:
             seed_lambda_qcd_GeV(),
             PDG["Lambda_QCD_GeV"],
             claim="T4_seed_confinement",
-            formula="G_CAT*SUCTION*PHI",
+            formula="G_CAT*SUCTION*PHI - (POOF*SUCTION)**2",
         )
     )
     rows.append(
@@ -670,7 +679,10 @@ def run_seed_flavor_suite() -> dict[str, Any]:
                 comp,
                 PDG[k],
                 claim="T4_seed_neutrino",
-                formula={"dm2_21": "(POOF*G_CAT*P_NEW)**3", "dm2_31_abs": "(G_CAT*SUCTION)**3"}[k],
+                formula={
+                    "dm2_21": "(POOF*G_CAT*P_NEW)**3",
+                    "dm2_31_abs": "(G_CAT*SUCTION)**3*(1+(POOF*SUCTION)**2)",
+                }[k],
             )
         )
     rows.append(

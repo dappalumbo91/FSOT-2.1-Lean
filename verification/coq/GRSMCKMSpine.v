@@ -211,13 +211,13 @@ Proof. lra. Qed.
 Lemma m_t_abs_diff : ((0.025501231036855643%R)) < ((0.025756243347225198%R)).
 Proof. lra. Qed.
 
-Lemma Lambda_QCD_GeV_err_under_half : ((0.28120185593059194%R)) < (0.5%R).
+Lemma Lambda_QCD_GeV_err_under_half : ((0.04684019131481111%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma Lambda_QCD_GeV_measured_pos : 0 < ((0.2173%R)).
 Proof. lra. Qed.
 
-Lemma Lambda_QCD_GeV_abs_diff : ((0.0006110516329371762%R)) < ((0.000617162149267548%R)).
+Lemma Lambda_QCD_GeV_abs_diff : ((0.00010178373572708455%R)) < ((0.0001028015730853554%R)).
 Proof. lra. Qed.
 
 Lemma sqrt_sigma_GeV_err_under_half : ((0.05275580626597419%R)) < (0.5%R).
@@ -283,13 +283,13 @@ Proof. lra. Qed.
 Lemma dm2_21_abs_diff : ((0.00000004814791439668371%R)) < ((0.00000004862939454065054%R)).
 Proof. lra. Qed.
 
-Lemma dm2_31_abs_err_under_half : ((0.4219868071131969%R)) < (0.5%R).
+Lemma dm2_31_abs_err_under_half : ((0.3712743059251006%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma dm2_31_abs_measured_pos : 0 < ((0.002453%R)).
 Proof. lra. Qed.
 
-Lemma dm2_31_abs_abs_diff : ((0.00001035133637848672%R)) < ((0.000010454849743271588%R)).
+Lemma dm2_31_abs_abs_diff : ((0.000009107358724342717%R)) < ((0.000009198432312586144%R)).
 Proof. lra. Qed.
 
 Lemma emergent_unitarity_row_u_err_under_half : ((0.001400381070371104%R)) < (0.5%R).
@@ -484,7 +484,7 @@ Proof. lra. Qed.
 Lemma gr_seed_m_Z_meas_pos : 0 < ((91.1876%R)).
 Proof. lra. Qed.
 
-Lemma gr_Lambda_QCD_GeV_err_under_half : ((0.28241958362570724%R)) < (0.5%R).
+Lemma gr_Lambda_QCD_GeV_err_under_half : ((0.048055073125713964%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma gr_Lambda_QCD_GeV_meas_pos : 0 < ((0.2173%R)).
@@ -556,7 +556,7 @@ Proof. lra. Qed.
 Lemma gr_morphic_phi_present_meas_pos : 0 < ((1.618033988749895%R)).
 Proof. lra. Qed.
 
-Lemma gr_neutrino_m3_over_m2_err_under_half : ((0.1724795983521893%R)) < (0.5%R).
+Lemma gr_neutrino_m3_over_m2_err_under_half : ((0.1470630495663553%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma gr_neutrino_m3_over_m2_meas_pos : 0 < ((5.707570518336111%R)).
@@ -604,7 +604,7 @@ Proof. lra. Qed.
 Lemma gr_wilson_area_law_sigma_meas_pos : 0 < ((0.17658624702998535%R)).
 Proof. lra. Qed.
 
-Lemma gr_confinement_scale_ratio_err_under_half : ((0.2295212676523054%R)) < (0.5%R).
+Lemma gr_confinement_scale_ratio_err_under_half : ((0.004719617111680276%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma gr_confinement_scale_ratio_meas_pos : 0 < ((0.5173809523809524%R)).
@@ -784,7 +784,7 @@ Proof. lra. Qed.
 Lemma sm_m_t_err_under_half : ((0.014767057175780673%R)) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma sm_Lambda_QCD_GeV_err_under_half : ((0.28120185593059194%R)) < (0.5%R).
+Lemma sm_Lambda_QCD_GeV_err_under_half : ((0.04684019131481111%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma sm_sqrt_sigma_GeV_err_under_half : ((0.05275580626597419%R)) < (0.5%R).
@@ -808,7 +808,7 @@ Proof. lra. Qed.
 Lemma sm_dm2_21_err_under_half : ((0.06394145338205008%R)) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma sm_dm2_31_abs_err_under_half : ((0.4219868071131969%R)) < (0.5%R).
+Lemma sm_dm2_31_abs_err_under_half : ((0.3712743059251006%R)) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma sm_emergent_unitarity_row_u_err_under_half : ((0.001400381070371104%R)) < (0.5%R).
