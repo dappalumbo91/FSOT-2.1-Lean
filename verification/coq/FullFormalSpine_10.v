@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma openneuro_full_panel_median_error_under_half_pct : (0.015431%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma optics_interferometry_depth_panel_observable_count_pos : (0 < 127)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma optics_interferometry_depth_panel_median_error_under_half_pct : (0.026954%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma orbital_mechanics_median_error_under_half_pct : (0.106141%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma orbital_mechanics_body_count_pos : (0 < 9)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma osti_doe_science_panel_observable_count_pos : (0 < 100)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma osti_doe_science_panel_median_error_under_half_pct : (0.01382%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma osti_doe_science_observable_count_pos : (0 < 100)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma osti_doe_science_median_error_under_five_pct : (0.01382%R) < (5.0%R).
 Proof. lra. Qed.
 
@@ -280,29 +304,5 @@ Lemma histidine_trinary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
 Lemma isoleucine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma lysine_trinary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma leucine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma methionine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma asparagine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma proline_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma glutamine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma arginine_trinary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma serine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

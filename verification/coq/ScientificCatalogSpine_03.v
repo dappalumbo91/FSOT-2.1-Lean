@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_toe_claim_certificate_bundle_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_toe_claim_certificate_bundle_pooled_under_half_pct : ((0.0020923899350648867%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_toe_claim_certificate_bundle_pooled_lt_half_pure : ((0.0020923899350648867%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_toe_claim_certificate_bundle_max_scalar_under_half_pct : ((0.192564276915754%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_toe_claim_certificate_bundle_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_toe_gap_closure_spine_records_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_star_trek_transporter_live_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_the_well_outcomes_verification_panel_records_pos : (0 < 246)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_the_well_outcomes_verification_panel_pooled_under_half_pct : ((0.031159%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_the_well_outcomes_verification_panel_pooled_lt_half_pure : ((0.031159%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_the_well_outcomes_verification_panel_max_scalar_under_half_pct : ((0.092131%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_the_well_outcomes_verification_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

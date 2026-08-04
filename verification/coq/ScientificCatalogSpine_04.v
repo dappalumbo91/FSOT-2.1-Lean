@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_the_well_outcomes_verification_panel_records_pos : (0 < 246)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_the_well_outcomes_verification_panel_pooled_under_half_pct : ((0.031159%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_the_well_outcomes_verification_panel_pooled_lt_half_pure : ((0.031159%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_the_well_outcomes_verification_panel_max_scalar_under_half_pct : ((0.092131%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_the_well_outcomes_verification_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_domain_coupling_simulation_refresh_panel_records_pos : (0 < 22)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_robotics_control_systems_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_time_emergence_simulation_records_pos : (0 < 28)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_time_emergence_simulation_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_time_emergence_simulation_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_time_emergence_simulation_max_scalar_under_half_pct : ((0.041099%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_time_emergence_simulation_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

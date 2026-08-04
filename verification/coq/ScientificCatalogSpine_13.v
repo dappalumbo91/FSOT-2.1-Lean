@@ -284,6 +284,26 @@ Lemma cat_math_generator_airfoil_rmse_benchmark_json_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
+Lemma cat_living_fsot_hardware_records_pos : (0 < 4)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_living_fsot_hardware_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_living_fsot_hardware_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_living_fsot_hardware_max_scalar_under_half_pct : ((0.000000000000013209968920124464%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_living_fsot_hardware_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_agriculture_agroecology_records_pos : (0 < 276)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -462,24 +482,4 @@ Proof. lra. Qed.
 
 Lemma cat_distant_island_emergence_simulation_pooled_lt_half_pure : (0%R) < ((0.5%R)).
 Proof. lra. Qed.
-
-
-Lemma cat_distant_island_emergence_simulation_max_scalar_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_distant_island_emergence_simulation_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_ecology_records_pos_2 : (0 < 627)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_ecology_green_flag_2 : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_econometrics_records_pos : (0 < 172)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

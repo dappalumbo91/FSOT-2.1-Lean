@@ -3,6 +3,30 @@ theory FullFormalSpine_11
 imports Complex_Main
 begin
 
+lemma lysine_trinary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma leucine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma methionine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma asparagine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma proline_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma glutamine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma arginine_trinary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma serine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
 lemma threonine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
@@ -277,30 +301,6 @@ lemma seismology_deep_observable_count_pos: "0 < (1000 :: nat)"
   by eval
 
 lemma seismology_deep_match_le_total: "(1000 :: nat) <= (1000 :: nat)"
-  by eval
-
-lemma seismology_deep_holdout_match_le_total: "(189 :: nat) <= (189 :: nat)"
-  by eval
-
-lemma seismology_event_count_pos: "0 < (500 :: nat)"
-  by eval
-
-lemma seismology_match_le_total: "(500 :: nat) <= (500 :: nat)"
-  by eval
-
-lemma semiconductor_physics_public_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma semiconductor_physics_public_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma sh0es_refined_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma sh0es_refined_median_error_under_half_pct: "(0.024894 :: real) < (0.5 :: real)"
-  by eval
-
-lemma simbad_stellar_identity_deep_observable_count_pos: "0 < (520 :: nat)"
   by eval
 
 end

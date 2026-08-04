@@ -3,6 +3,30 @@ theory FullFormalSpine_14
 imports Complex_Main
 begin
 
+lemma warp_psi_stabilization_pos: "0 < (2.386649570184 :: real)"
+  by eval
+
+lemma warp_psi_run_pos: "0 < (0.14178559741 :: real)"
+  by eval
+
+lemma warp_delta_phi_stable_pos: "0 < (0.004581413686 :: real)"
+  by eval
+
+lemma warp_y_exotic_byproduct_pos: "0 < (0.011637689406 :: real)"
+  by eval
+
+lemma warp_stabilization_margin_gt_one: "1 < (1.722776467449 :: real)"
+  by eval
+
+lemma warp_bridge_lt_node: "(0.053926299704 :: real) < (0.059407798774 :: real)"
+  by eval
+
+lemma warp_exotic_lt_friction: "(0.011637689406 :: real) < (0.082300635102 :: real)"
+  by eval
+
+lemma warp_delta_phi_stable_le_raw: "(0.004581413686 :: real) <= (0.004581413686 :: real)"
+  by eval
+
 lemma warp_bh_wh_portal_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
@@ -277,30 +301,6 @@ lemma term1_positive_of_observer_negative_quirk: "0 < (0.22402533419044554 :: re
   by eval
 
 lemma quirkMod_neg_of_delta_psi_ge_07: "(-0.11470328400949172 :: real) < (0 :: real)"
-  by eval
-
-lemma quirkMod_pos_of_delta_psi_le_06: "0 < (0.14827865209236663 :: real)"
-  by eval
-
-lemma quirkMod_lt_exp_cos_bound: "(-0.11470328400949172 :: real) < (1.9929509804200407 :: real)"
-  by eval
-
-lemma term1_gt_neg_08_of_observer_pos_quirk: "(-0.8 :: real) < (0.22402533419044554 :: real)"
-  by eval
-
-lemma domain_term1_positive_of_params: "0 < (0.22402533419044554 :: real)"
-  by eval
-
-lemma gamma_euler_pos: "0 < (0.5772156649015329 :: real)"
-  by eval
-
-lemma eta_pos: "0 < (0.46694220658433505 :: real)"
-  by eval
-
-lemma new_perceived_param_pos: "0 < (0.30030117056875677 :: real)"
-  by eval
-
-lemma psi_con_pos: "0 < (0.6321205588287557 :: real)"
   by eval
 
 end

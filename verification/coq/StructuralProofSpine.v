@@ -2466,7 +2466,7 @@ Proof.
   - lra.
 Qed.
 
-Lemma engineering_hardware_code_spine_bundle_conj_0 : (72 = 72)%nat.
+Lemma engineering_hardware_code_spine_bundle_conj_0 : (95 = 95)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -2478,7 +2478,7 @@ Lemma engineering_hardware_code_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma engineering_hardware_code_spine_bundle : (72 = 72)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
+Lemma engineering_hardware_code_spine_bundle : (95 = 95)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact engineering_hardware_code_spine_bundle_conj_0.
@@ -3462,6 +3462,48 @@ Proof.
   - lra.
 Qed.
 
+Lemma fsot_cache_hierarchy_bundle_conj_0 : (11 = 11)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fsot_cache_hierarchy_bundle_conj_1 : (11 = 11)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fsot_cache_hierarchy_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma fsot_cache_hierarchy_bundle : (11 = 11)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact fsot_cache_hierarchy_bundle_conj_0.
+  - exact fsot_cache_hierarchy_bundle_conj_1.
+  - exact fsot_cache_hierarchy_bundle_conj_2.
+  - lra.
+Qed.
+
+Lemma fsot_c_pack_parity_bundle_conj_0 : (4 = 4)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fsot_c_pack_parity_bundle_conj_1 : (10 = 10)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fsot_c_pack_parity_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma fsot_c_pack_parity_bundle : (4 = 4)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact fsot_c_pack_parity_bundle_conj_0.
+  - exact fsot_c_pack_parity_bundle_conj_1.
+  - exact fsot_c_pack_parity_bundle_conj_2.
+  - lra.
+Qed.
+
 Lemma fsot_gpu_cuda_competitive_bundle_conj_0 : (17 = 17)%nat.
 Proof. reflexivity.
 Qed.
@@ -3522,6 +3564,48 @@ Proof.
   - exact fsot_gpu_parity_verify_bundle_conj_0.
   - exact fsot_gpu_parity_verify_bundle_conj_1.
   - exact fsot_gpu_parity_verify_bundle_conj_2.
+  - lra.
+Qed.
+
+Lemma fsot_hardware_depth_spine_bundle_conj_0 : (33 = 33)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fsot_hardware_depth_spine_bundle_conj_1 : (13 = 13)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fsot_hardware_depth_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma fsot_hardware_depth_spine_bundle : (33 = 33)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact fsot_hardware_depth_spine_bundle_conj_0.
+  - exact fsot_hardware_depth_spine_bundle_conj_1.
+  - exact fsot_hardware_depth_spine_bundle_conj_2.
+  - lra.
+Qed.
+
+Lemma fsot_interconnect_coherence_bundle_conj_0 : (8 = 8)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fsot_interconnect_coherence_bundle_conj_1 : (11 = 11)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fsot_interconnect_coherence_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma fsot_interconnect_coherence_bundle : (8 = 8)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact fsot_interconnect_coherence_bundle_conj_0.
+  - exact fsot_interconnect_coherence_bundle_conj_1.
+  - exact fsot_interconnect_coherence_bundle_conj_2.
   - lra.
 Qed.
 

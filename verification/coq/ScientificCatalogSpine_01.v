@@ -344,7 +344,7 @@ Lemma cat_materials_species_bridge_benchmark_json_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_engineering_hardware_code_spine_records_pos : (0 < 72)%nat.
+Lemma cat_engineering_hardware_code_spine_records_pos : (0 < 95)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
@@ -381,6 +381,26 @@ Proof. lra. Qed.
 
 
 Lemma cat_fsot_gpu_engineering_spine_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_fsot_hardware_depth_spine_records_pos : (0 < 33)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_fsot_hardware_depth_spine_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fsot_hardware_depth_spine_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_fsot_hardware_depth_spine_max_scalar_under_half_pct : ((0.261955886%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fsot_hardware_depth_spine_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_higgs_branching_benchmark_json_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_alternate_base_mathematics_spine_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_alternate_base_mathematics_spine_pooled_under_half_pct : ((0.004184779870129773%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_alternate_base_mathematics_spine_pooled_lt_half_pure : ((0.004184779870129773%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_alternate_base_mathematics_spine_max_scalar_under_half_pct : ((0.192564276915754%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_alternate_base_mathematics_spine_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

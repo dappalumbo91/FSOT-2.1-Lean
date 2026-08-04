@@ -35,6 +35,7 @@ GENERATOR_ORDER = [
     "gen_materials_engineering_lean.py",
     "gen_fsot_gpu_cuda_bridge_lean.py",
     "gen_engineering_code_bridge_lean.py",
+    "gen_hardware_depth_lean.py",
     "gen_circuit_component_emergence_lean.py",
     "gen_linguistics_priors_lean.py",
     "gen_math_generator_rules_eval_lean.py",

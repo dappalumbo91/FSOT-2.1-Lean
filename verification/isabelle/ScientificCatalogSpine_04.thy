@@ -3,6 +3,21 @@ theory ScientificCatalogSpine_04
 imports Complex_Main
 begin
 
+lemma cat_the_well_outcomes_verification_panel_records_pos: "0 < (246 :: nat)"
+  by eval
+
+lemma cat_the_well_outcomes_verification_panel_pooled_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_the_well_outcomes_verification_panel_pooled_lt_half_pure: "(0.031159 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_the_well_outcomes_verification_panel_max_scalar_under_half_pct: "(0.092131 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_the_well_outcomes_verification_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_domain_coupling_simulation_refresh_panel_records_pos: "0 < (22 :: nat)"
   by eval
 
@@ -346,21 +361,6 @@ lemma cat_robotics_control_systems_max_scalar_under_half_pct: "(0.04114895703267
   by eval
 
 lemma cat_robotics_control_systems_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_time_emergence_simulation_records_pos: "0 < (28 :: nat)"
-  by eval
-
-lemma cat_time_emergence_simulation_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_time_emergence_simulation_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_time_emergence_simulation_max_scalar_under_half_pct: "(0.041099 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_time_emergence_simulation_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

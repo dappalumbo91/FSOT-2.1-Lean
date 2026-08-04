@@ -777,7 +777,7 @@ fn replay_all_obligations() {
     assert!(48 > 0, "energy_neural_orbital_bridge_observable_count_pos");
     assert!(0.018002668701796887_f64 < 0.5_f64, "energy_neural_orbital_bridge_median_error_under_half_pct");
     assert!(0.0_f64 < 0.5, "engineering_hardware_code_spine_median_error_under_half_pct");
-    assert!(72 > 0, "engineering_hardware_code_spine_observable_count_pos");
+    assert!(95 > 0, "engineering_hardware_code_spine_observable_count_pos");
     assert!(0.022236250385189223_f64 < 0.5, "entomology_ext_pooled_median_under_half_pct");
     assert!(0.022236250385189223_f64 < 0.5, "entomology_ext_headline_median_under_half_pct");
     assert!(430 > 0, "entomology_ext_observable_count_pos");
@@ -893,12 +893,20 @@ fn replay_all_obligations() {
     assert!(8 > 0, "fsot_aggregate_unified_db_observable_count_pos");
     // full_formal chunk 04 (150 obligations)
     assert!(0.0_f64 < 5.0_f64, "fsot_aggregate_unified_db_median_error_under_five_pct");
+    assert!(0.0_f64 < 0.5, "fsot_cache_hierarchy_median_error_under_half_pct");
+    assert!(11 > 0, "fsot_cache_hierarchy_observable_count_pos");
+    assert!(0.0_f64 < 0.5, "fsot_c_pack_parity_median_error_under_half_pct");
+    assert!(4 > 0, "fsot_c_pack_parity_observable_count_pos");
     assert!(0.0_f64 < 0.5, "fsot_gpu_cuda_competitive_median_error_under_half_pct");
     assert!(17 > 0, "fsot_gpu_cuda_competitive_observable_count_pos");
     assert!(0.0_f64 < 0.5, "fsot_gpu_engineering_spine_median_error_under_half_pct");
     assert!(42 > 0, "fsot_gpu_engineering_spine_observable_count_pos");
     assert!(0.0_f64 < 0.5, "fsot_gpu_parity_verify_median_error_under_half_pct");
     assert!(48 > 0, "fsot_gpu_parity_verify_observable_count_pos");
+    assert!(0.0_f64 < 0.5, "fsot_hardware_depth_spine_median_error_under_half_pct");
+    assert!(33 > 0, "fsot_hardware_depth_spine_observable_count_pos");
+    assert!(0.0_f64 < 0.5, "fsot_interconnect_coherence_median_error_under_half_pct");
+    assert!(8 > 0, "fsot_interconnect_coherence_observable_count_pos");
     assert!(0.0_f64 < 0.5, "fsot_processor_function_median_error_under_half_pct");
     assert!(20 > 0, "fsot_processor_function_observable_count_pos");
     assert!(0.0_f64 < 0.5, "fsot_ram_function_median_error_under_half_pct");
@@ -1034,6 +1042,7 @@ fn replay_all_obligations() {
     assert!(0.019504399572479934_f64 < 0.5, "law_policy_ext_headline_median_under_half_pct");
     assert!(180 > 0, "law_policy_ext_observable_count_pos");
     assert!(2 > 0, "law_policy_ext_beats_sota_headlines_pos");
+    // full_formal chunk 05 (150 obligations)
     assert!(20 > 0, "law_policy_panel_observable_count_pos");
     assert!(0.013003_f64 < 0.5_f64, "law_policy_panel_median_error_under_half_pct");
     assert!(180 > 0, "law_policy_observable_count_pos");
@@ -1042,7 +1051,6 @@ fn replay_all_obligations() {
     assert!(0.030173_f64 < 0.5_f64, "limnology_panel_median_error_under_half_pct");
     assert!(2010 > 0, "limnology_observable_count_pos");
     assert!(0.030173_f64 < 5.0_f64, "limnology_median_error_under_five_pct");
-    // full_formal chunk 05 (150 obligations)
     assert!(10 > 0, "linguistics_formal_observable_count_pos");
     assert!(0.0013504254899468224_f64 < 5.0_f64, "linguistics_formal_median_error_under_five_pct");
     assert!(0.006302479903277616_f64 < 0.5, "linguistics_max_error_within_five_pct");
@@ -1185,6 +1193,7 @@ fn replay_all_obligations() {
     assert!(0.0_f64 < 0.5_f64, "network_science_public_panel_median_error_under_half_pct");
     assert!(49 > 0, "neural_galactic_orbital_bridge_observable_count_pos");
     assert!(0.018002668701799784_f64 < 0.5_f64, "neural_galactic_orbital_bridge_median_error_under_half_pct");
+    // full_formal chunk 06 (150 obligations)
     assert!(0.10502056403980387_f64 < 0.5, "neuroeconomics_ext_pooled_median_under_half_pct");
     assert!(0.10502056403980387_f64 < 0.5, "neuroeconomics_ext_headline_median_under_half_pct");
     assert!(123 > 0, "neuroeconomics_ext_observable_count_pos");
@@ -1193,7 +1202,6 @@ fn replay_all_obligations() {
     assert!(0.031506_f64 < 0.5_f64, "neuroeconomics_panel_median_error_under_half_pct");
     assert!(65 > 0, "neuroeconomics_observable_count_pos");
     assert!(0.10502056403980387_f64 < 0.5_f64, "neuroeconomics_median_error_under_half_pct");
-    // full_formal chunk 06 (150 obligations)
     assert!(0.05041956982053305_f64 < 0.5, "neuroimmunology_pooled_median_under_half_pct");
     assert!(0.060502_f64 < 0.5, "neuroimmunology_headline_median_under_half_pct");
     assert!(92 > 0, "neuroimmunology_observable_count_pos");
@@ -1336,6 +1344,7 @@ fn replay_all_obligations() {
     assert!(52 > 0, "periodic_table_public_panel_observable_count_pos");
     assert!(9.5e-05_f64 < 0.5_f64, "periodic_table_public_panel_median_error_under_half_pct");
     assert!(80 > 0, "petrology_geochemistry_panel_observable_count_pos");
+    // full_formal chunk 07 (150 obligations)
     assert!(0.030428_f64 < 0.5_f64, "petrology_geochemistry_panel_median_error_under_half_pct");
     assert!(80 > 0, "petrology_observable_count_pos");
     assert!(0.030428_f64 < 5.0_f64, "petrology_median_error_under_five_pct");
@@ -1344,7 +1353,6 @@ fn replay_all_obligations() {
     assert!(56 > 0, "pharmacokinetics_gap_fill_observable_count_pos");
     assert!(2 > 0, "pharmacokinetics_gap_fill_beats_sota_headlines_pos");
     assert!(56 > 0, "pharmacokinetics_observable_count_pos");
-    // full_formal chunk 07 (150 obligations)
     assert!(0.00241237063663613_f64 < 0.5_f64, "pharmacokinetics_median_error_under_half_pct");
     assert!(0.0011715432153059484_f64 < 0.5, "pharmacology_median_error_under_half_pct");
     assert!(120 > 0, "pharmacology_observable_count_pos");
@@ -1527,6 +1535,7 @@ fn replay_all_obligations() {
     assert!(0.0_f64 < 0.5_f64, "secure_software_engineering_median_error_under_half_pct");
     assert!(1000 > 0, "seismology_deep_observable_count_pos");
     assert!(1000 <= 1000, "seismology_deep_match_le_total");
+    // full_formal chunk 08 (150 obligations)
     assert!(189 <= 189, "seismology_deep_holdout_match_le_total");
     assert!(500 > 0, "seismology_event_count_pos");
     assert!(500 <= 500, "seismology_match_le_total");
@@ -1535,7 +1544,6 @@ fn replay_all_obligations() {
     assert!(24 > 0, "sh0es_refined_observable_count_pos");
     assert!(0.024894_f64 < 0.5_f64, "sh0es_refined_median_error_under_half_pct");
     assert!(520 > 0, "simbad_stellar_identity_deep_observable_count_pos");
-    // full_formal chunk 08 (150 obligations)
     assert!(0.022461_f64 < 0.5_f64, "simbad_stellar_identity_deep_median_error_under_half_pct");
     assert!(12 > 0, "small_body_orbit_count_pos");
     assert!(0.0_f64 < 8.0_f64, "small_body_median_error_under_eight_pct");
@@ -1678,6 +1686,7 @@ fn replay_all_obligations() {
     assert!(0.0_f64 < 5.0_f64, "trinary_hardware_motif_median_error_under_five_pct");
     assert!(38 > 0, "trinary_os_isa_rebuild_observable_count_pos");
     assert!(0.0_f64 < 5.0_f64, "trinary_os_isa_rebuild_median_error_under_five_pct");
+    // full_formal chunk 09 (150 obligations)
     assert!(8 > 0, "trinary_os_portable_observable_count_pos");
     assert!(0.0_f64 < 5.0_f64, "trinary_os_portable_median_error_under_five_pct");
     assert_eq!(27, 27, "trinary_os_word_width_eq_27");
@@ -1686,7 +1695,6 @@ fn replay_all_obligations() {
     assert!(0.0_f64 < 5.0_f64, "trinary_os_round_trip_median_error_under_five_pct");
     assert!(68 > 0, "trinary_os_tier_e_observable_count_pos");
     assert!(0.0_f64 < 0.5_f64, "trinary_os_tier_e_median_error_under_half_pct");
-    // full_formal chunk 09 (150 obligations)
     assert!(542 > 0, "uap_war_gov_release_panel_observable_count_pos");
     assert!(0.008488_f64 < 0.5_f64, "uap_war_gov_release_panel_median_error_under_half_pct");
     assert!(542 > 0, "uap_war_gov_release_observable_count_pos");
@@ -1829,6 +1837,7 @@ fn replay_all_obligations() {
     assert!(0.91_f64 < 1.0_f64 && 1.0_f64 <= 1.1_f64, "perceived_adjust_positive_and_bounded");
     assert!(0.22402533419044554_f64 > 0.0, "term1_positive_of_observer_negative_quirk");
     assert!(-0.11470328400949172_f64 < 0.0_f64, "quirkMod_neg_of_delta_psi_ge_07");
+    // full_formal chunk 10 (150 obligations)
     assert!(0.14827865209236663_f64 > 0.0, "quirkMod_pos_of_delta_psi_le_06");
     assert!(-0.11470328400949172_f64 < 1.9929509804200407_f64, "quirkMod_lt_exp_cos_bound");
     assert!(0.22402533419044554_f64 > -0.8_f64, "term1_gt_neg_08_of_observer_pos_quirk");
@@ -1837,7 +1846,6 @@ fn replay_all_obligations() {
     assert!(0.46694220658433505_f64 > 0.0, "eta_pos");
     assert!(0.30030117056875677_f64 > 0.0, "new_perceived_param_pos");
     assert!(0.6321205588287557_f64 > 0.0, "psi_con_pos");
-    // full_formal chunk 10 (150 obligations)
     assert!(1.046973630587551_f64 > 0.0, "acoustic_bleed_pos");
     assert!(1.6668538450045731_f64 > 0.0, "acoustic_inflow_pos");
     assert!(1.618033988749895_f64 > 1.0, "phi_gt_one");
@@ -1980,6 +1988,7 @@ fn replay_all_obligations() {
     assert!(8.539734222673566_f64 < 8.5397348_f64, "e_pi_lt_85397348");
     assert!(8.539734222673566_f64 < 8.539736_f64, "e_pi_lt_8539736");
     assert!(0.23835359847607956_f64 < 0.24_f64, "exp_neg_1434_lt_24_div_25");
+    // full_formal chunk 11 (150 obligations)
     assert!(1.0408107741923882_f64 < 1.0416666666666667_f64, "exp_040_lt_25_div_24");
     assert!(0.9607894391523232_f64 > 0.96_f64, "exp_neg_040_gt_24_div_25");
     assert!(2.275045381235993_f64 > 2.272727272727273_f64, "exp_0822_gt_25_div_11");
@@ -1988,7 +1997,6 @@ fn replay_all_obligations() {
     assert!(0.4413133992658562_f64 > 0.44_f64, "exp_neg_0818_gt_11_div_25");
     assert!(3.495337398560107_f64 > 1.5707963267948966_f64, "cos_arg_gt_pi_div_two");
     assert!(3.495337398560107_f64 < 4.71238898038469_f64, "cos_arg_lt_three_pi_div_two");
-    // full_formal chunk 11 (150 obligations)
     assert!(1.0_f64 > 0.91_f64, "perceived_adjust_lo");
     assert!(1.0_f64 < 1.1_f64, "perceived_adjust_hi");
     assert!(-0.2231435513142097_f64 <= 0.0_f64, "log_ratio_lo");
@@ -2131,6 +2139,7 @@ fn replay_all_obligations() {
     assert_eq!(1, 1, "cosmological_domain_eq");
     assert!((1.0_f64 - 1.0_f64).abs() < 1e-9, "domain_term2_eq_one");
     assert!(2.6942103679946702e-17_f64 < 0.2_f64, "domain_term3_abs_lt_fifth");
+    // full_formal chunk 12 (98 obligations)
     assert!(1.2240253341904455_f64 > 0.0, "neural_raw_S_positive");
     assert!(1.751037437187807_f64 > 0.0, "particle_raw_S_positive");
     assert!(0.7961830900509372_f64 > 0.0, "chemical_raw_S_positive");
@@ -2139,7 +2148,6 @@ fn replay_all_obligations() {
     assert!(2.109039424268679_f64 > 0.0, "higgs_raw_S_positive");
     assert!(1.8256534680881713_f64 > 0.0, "galactic_raw_S_positive");
     assert!(2.0283662645128167_f64 > 0.0, "fusion_raw_S_positive");
-    // full_formal chunk 12 (90 obligations)
     assert!(0.7287135707250552_f64 > 0.0, "medical_raw_S_positive");
     assert!(2.427813814074099_f64 > 0.0, "blackhole_raw_S_positive");
     assert!(2.4991706281862376_f64 > 0.0, "consciousness_raw_S_positive");

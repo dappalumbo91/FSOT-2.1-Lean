@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_alternate_base_mathematics_spine_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_alternate_base_mathematics_spine_pooled_under_half_pct : ((0.004184779870129773%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_alternate_base_mathematics_spine_pooled_lt_half_pure : ((0.004184779870129773%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_alternate_base_mathematics_spine_max_scalar_under_half_pct : ((0.192564276915754%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_alternate_base_mathematics_spine_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_bibliography_lean_corpus_records_pos : (0 < 21)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_tier_93_dual_wave_spine_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_toe_claim_certificate_bundle_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_toe_claim_certificate_bundle_pooled_under_half_pct : ((0.0020923899350648867%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_toe_claim_certificate_bundle_pooled_lt_half_pure : ((0.0020923899350648867%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_toe_claim_certificate_bundle_max_scalar_under_half_pct : ((0.192564276915754%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_toe_claim_certificate_bundle_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

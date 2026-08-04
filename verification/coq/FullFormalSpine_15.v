@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma quirkMod_pos_of_delta_psi_le_06 : 0 < (0.14827865209236663%R).
+Proof. lra. Qed.
+
+Lemma quirkMod_lt_exp_cos_bound : (-0.11470328400949172%R) < (1.9929509804200407%R).
+Proof. lra. Qed.
+
+Lemma term1_gt_neg_08_of_observer_pos_quirk : (-0.8%R) < (0.22402533419044554%R).
+Proof. lra. Qed.
+
+Lemma domain_term1_positive_of_params : 0 < (0.22402533419044554%R).
+Proof. lra. Qed.
+
+Lemma gamma_euler_pos : 0 < (0.5772156649015329%R).
+Proof. lra. Qed.
+
+Lemma eta_pos : 0 < (0.46694220658433505%R).
+Proof. lra. Qed.
+
+Lemma new_perceived_param_pos : 0 < (0.30030117056875677%R).
+Proof. lra. Qed.
+
+Lemma psi_con_pos : 0 < (0.6321205588287557%R).
+Proof. lra. Qed.
+
 Lemma acoustic_bleed_pos : 0 < (1.046973630587551%R).
 Proof. lra. Qed.
 
@@ -280,29 +304,5 @@ Lemma e_minus_one_gt_one : (1.0%R) < (1.718281828459045%R).
 Proof. lra. Qed.
 
 Lemma exp_five_gt_100 : (100.0%R) < (148.4131591025766%R).
-Proof. lra. Qed.
-
-Lemma exp_three_gt_twenty : (20.0%R) < (20.085536923187668%R).
-Proof. lra. Qed.
-
-Lemma exp_six_gt_400 : (400.0%R) < (403.4287934927351%R).
-Proof. lra. Qed.
-
-Lemma exp_28_gt_410 : (410.0%R) < (1446257064291.475%R).
-Proof. lra. Qed.
-
-Lemma e_gt_27182818283 : (2.7182818283%R) < (2.718281828459045%R).
-Proof. lra. Qed.
-
-Lemma pi_half_gt_02956 : (0.295612%R) < (1.5707963267948966%R).
-Proof. lra. Qed.
-
-Lemma pi_half_gt_1156 : (1.15572734986%R) < (1.5707963267948966%R).
-Proof. lra. Qed.
-
-Lemma pi_gt_290272 : (0.290272%R) < (3.141592653589793%R).
-Proof. lra. Qed.
-
-Lemma pi_gt_291325 : (0.291325%R) < (3.141592653589793%R).
 Proof. lra. Qed.
 

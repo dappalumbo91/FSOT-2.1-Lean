@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma acoustic_inflow_le_acoustic_bleed_mul_phi : (1.6668538450045731%R) <= (1.694038919615534%R).
+Proof. lra. Qed.
+
+Lemma cos_one_sq_le : (0.2919265817264289%R) <= (25.0%R).
+Proof. lra. Qed.
+
+Lemma acoustic_inflow_mul_cos_sq_le_phi : (0.48659894520973973%R) <= (1.618033988749895%R).
+Proof. lra. Qed.
+
+Lemma neg_pi_half_le_zero : (-1.5707963267948966%R) <= 0%R.
+Proof. lra. Qed.
+
+Lemma theta_s_gt_290272 : (0.290272%R) < (0.29089654054517305%R).
+Proof. lra. Qed.
+
+Lemma theta_s_lt_291325 : (0.29089654054517305%R) < (0.291325%R).
+Proof. lra. Qed.
+
+Lemma cos_theta_s_gt_09575 : (0.9575%R) < (0.9579871226722757%R).
+Proof. lra. Qed.
+
+Lemma cos_theta_s_lt_095825 : (0.9579871226722757%R) < (0.95825%R).
+Proof. lra. Qed.
+
 Lemma phi_sq_lt_26183 : (2.618033988749895%R) < (26183.0%R).
 Proof. lra. Qed.
 
@@ -280,29 +304,5 @@ Lemma domain_term2_eq_one : (1.0%R) = (1.0%R).
 Proof. reflexivity. Qed.
 
 Lemma domain_term3_abs_lt_fifth : (0.000000000000000026942103679946702%R) < (0.2%R).
-Proof. lra. Qed.
-
-Lemma neural_raw_S_positive : 0 < (1.2240253341904455%R).
-Proof. lra. Qed.
-
-Lemma particle_raw_S_positive : 0 < (1.751037437187807%R).
-Proof. lra. Qed.
-
-Lemma chemical_raw_S_positive : 0 < (0.7961830900509372%R).
-Proof. lra. Qed.
-
-Lemma electron_raw_S_positive : 0 < (0.9706402573161165%R).
-Proof. lra. Qed.
-
-Lemma astronomical_raw_S_positive : 0 < (2.138061039667111%R).
-Proof. lra. Qed.
-
-Lemma higgs_raw_S_positive : 0 < (2.109039424268679%R).
-Proof. lra. Qed.
-
-Lemma galactic_raw_S_positive : 0 < (1.8256534680881713%R).
-Proof. lra. Qed.
-
-Lemma fusion_raw_S_positive : 0 < (2.0283662645128167%R).
 Proof. lra. Qed.
 

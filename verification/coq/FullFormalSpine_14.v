@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma warp_psi_stabilization_pos : 0 < (2.386649570184%R).
+Proof. lra. Qed.
+
+Lemma warp_psi_run_pos : 0 < (0.14178559741%R).
+Proof. lra. Qed.
+
+Lemma warp_delta_phi_stable_pos : 0 < (0.004581413686%R).
+Proof. lra. Qed.
+
+Lemma warp_y_exotic_byproduct_pos : 0 < (0.011637689406%R).
+Proof. lra. Qed.
+
+Lemma warp_stabilization_margin_gt_one : 1 < (1.722776467449%R).
+Proof. lra. Qed.
+
+Lemma warp_bridge_lt_node : (0.053926299704%R) < (0.059407798774%R).
+Proof. lra. Qed.
+
+Lemma warp_exotic_lt_friction : (0.011637689406%R) < (0.082300635102%R).
+Proof. lra. Qed.
+
+Lemma warp_delta_phi_stable_le_raw : (0.004581413686%R) <= (0.004581413686%R).
+Proof. lra. Qed.
+
 Lemma warp_bh_wh_portal_panel_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -280,29 +304,5 @@ Lemma term1_positive_of_observer_negative_quirk : 0 < (0.22402533419044554%R).
 Proof. lra. Qed.
 
 Lemma quirkMod_neg_of_delta_psi_ge_07 : (-0.11470328400949172%R) < 0%R.
-Proof. lra. Qed.
-
-Lemma quirkMod_pos_of_delta_psi_le_06 : 0 < (0.14827865209236663%R).
-Proof. lra. Qed.
-
-Lemma quirkMod_lt_exp_cos_bound : (-0.11470328400949172%R) < (1.9929509804200407%R).
-Proof. lra. Qed.
-
-Lemma term1_gt_neg_08_of_observer_pos_quirk : (-0.8%R) < (0.22402533419044554%R).
-Proof. lra. Qed.
-
-Lemma domain_term1_positive_of_params : 0 < (0.22402533419044554%R).
-Proof. lra. Qed.
-
-Lemma gamma_euler_pos : 0 < (0.5772156649015329%R).
-Proof. lra. Qed.
-
-Lemma eta_pos : 0 < (0.46694220658433505%R).
-Proof. lra. Qed.
-
-Lemma new_perceived_param_pos : 0 < (0.30030117056875677%R).
-Proof. lra. Qed.
-
-Lemma psi_con_pos : 0 < (0.6321205588287557%R).
 Proof. lra. Qed.
 

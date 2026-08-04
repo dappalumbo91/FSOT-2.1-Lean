@@ -3,6 +3,30 @@ theory FullFormalSpine_08
 imports Complex_Main
 begin
 
+lemma marine_biology_ext_pooled_median_under_half_pct: "(0.022236250385192644 :: real) < (0.5 :: real)"
+  by eval
+
+lemma marine_biology_ext_headline_median_under_half_pct: "(0.022236250385194948 :: real) < (0.5 :: real)"
+  by eval
+
+lemma marine_biology_ext_observable_count_pos: "0 < (540 :: nat)"
+  by eval
+
+lemma marine_biology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma marine_biology_panel_observable_count_pos: "0 < (90 :: nat)"
+  by eval
+
+lemma marine_biology_panel_median_error_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
+  by eval
+
+lemma marine_biology_observable_count_pos: "0 < (540 :: nat)"
+  by eval
+
+lemma marine_biology_median_error_under_half_pct: "(0.022236250385192644 :: real) < (0.5 :: real)"
+  by eval
+
 lemma material_in_silico_screening_scaffold_observable_count_pos: "0 < (42 :: nat)"
   by eval
 
@@ -277,30 +301,6 @@ lemma neural_galactic_orbital_bridge_observable_count_pos: "0 < (49 :: nat)"
   by eval
 
 lemma neural_galactic_orbital_bridge_median_error_under_half_pct: "(0.018002668701799784 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neuroeconomics_ext_pooled_median_under_half_pct: "(0.10502056403980387 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neuroeconomics_ext_headline_median_under_half_pct: "(0.10502056403980387 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neuroeconomics_ext_observable_count_pos: "0 < (123 :: nat)"
-  by eval
-
-lemma neuroeconomics_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma neuroeconomics_panel_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma neuroeconomics_panel_median_error_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neuroeconomics_observable_count_pos: "0 < (65 :: nat)"
-  by eval
-
-lemma neuroeconomics_median_error_under_half_pct: "(0.10502056403980387 :: real) < (0.5 :: real)"
   by eval
 
 end

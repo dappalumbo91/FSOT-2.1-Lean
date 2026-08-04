@@ -261,7 +261,7 @@ lemma energy_neural_orbital_bridge_median_error_under_half_pct: "(0.018002668701
 lemma engineering_hardware_code_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma engineering_hardware_code_spine_observable_count_pos: "0 < (72 :: nat)"
+lemma engineering_hardware_code_spine_observable_count_pos: "0 < (95 :: nat)"
   by eval
 
 lemma entomology_ext_pooled_median_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"

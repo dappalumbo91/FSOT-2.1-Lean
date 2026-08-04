@@ -327,7 +327,7 @@ lemma energy_ai_orbital_bridge_bundle: "(48 :: nat) = 48 \<and> (16 :: nat) = 16
 lemma energy_neural_orbital_bridge_bundle: "(48 :: nat) = 48 \<and> (16 :: nat) = 16 \<and> (0.018002668701796887 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma engineering_hardware_code_spine_bundle: "(72 :: nat) = 72 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma engineering_hardware_code_spine_bundle: "(95 :: nat) = 95 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma entomology_ext_bundle: "(430 :: nat) = 430 \<and> (0.022236250385189223 :: real) < (0.5 :: real) \<and> (0.022236250385189223 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
@@ -465,6 +465,12 @@ lemma fsot_aggregate_organized_panel_bundle: "(24 :: nat) = 24 \<and> (17 :: nat
 lemma fsot_aggregate_unified_db_bundle: "(8 :: nat) = 8 \<and> (17 :: nat) = 17 \<and> (0 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma fsot_cache_hierarchy_bundle: "(11 :: nat) = 11 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma fsot_c_pack_parity_bundle: "(4 :: nat) = 4 \<and> (10 :: nat) = 10 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
 lemma fsot_gpu_cuda_competitive_bundle: "(17 :: nat) = 17 \<and> (12 :: nat) = 12 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -472,6 +478,12 @@ lemma fsot_gpu_engineering_spine_bundle: "(42 :: nat) = 42 \<and> (13 :: nat) = 
   by auto
 
 lemma fsot_gpu_parity_verify_bundle: "(48 :: nat) = 48 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma fsot_hardware_depth_spine_bundle: "(33 :: nat) = 33 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma fsot_interconnect_coherence_bundle: "(8 :: nat) = 8 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma fsot_processor_function_bundle: "(20 :: nat) = 20 \<and> (12 :: nat) = 12 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"

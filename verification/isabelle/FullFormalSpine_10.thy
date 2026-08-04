@@ -3,6 +3,30 @@ theory FullFormalSpine_10
 imports Complex_Main
 begin
 
+lemma openneuro_full_panel_median_error_under_half_pct: "(0.015431 :: real) < (0.5 :: real)"
+  by eval
+
+lemma optics_interferometry_depth_panel_observable_count_pos: "0 < (127 :: nat)"
+  by eval
+
+lemma optics_interferometry_depth_panel_median_error_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
+  by eval
+
+lemma orbital_mechanics_median_error_under_half_pct: "(0.106141 :: real) < (0.5 :: real)"
+  by eval
+
+lemma orbital_mechanics_body_count_pos: "0 < (9 :: nat)"
+  by eval
+
+lemma osti_doe_science_panel_observable_count_pos: "0 < (100 :: nat)"
+  by eval
+
+lemma osti_doe_science_panel_median_error_under_half_pct: "(0.01382 :: real) < (0.5 :: real)"
+  by eval
+
+lemma osti_doe_science_observable_count_pos: "0 < (100 :: nat)"
+  by eval
+
 lemma osti_doe_science_median_error_under_five_pct: "(0.01382 :: real) < (5.0 :: real)"
   by eval
 
@@ -277,30 +301,6 @@ lemma histidine_trinary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :
   by eval
 
 lemma isoleucine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma lysine_trinary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma leucine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma methionine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma asparagine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma proline_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma glutamine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma arginine_trinary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma serine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
 end

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T03:36:03.799857+00:00",
+  "generated_at": "2026-08-04T05:09:13.281443+00:00",
   "domain": "Engineering_Hardware_Code_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -18,9 +18,9 @@
     "ai"
   ],
   "D_eff": 13,
-  "record_count": 72,
-  "observable_count": 72,
-  "scalar_record_count": 67,
+  "record_count": 95,
+  "observable_count": 95,
+  "scalar_record_count": 89,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -46,7 +46,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 72
+      "observable_count": 95
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -55,7 +55,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 72
+      "observable_count": 95
     }
   ],
   "material_records": [
@@ -963,6 +963,260 @@
       "note": "suite/process residual \u2014 not a PDG free fold",
       "layer": "ram_function",
       "mib": 5476.5
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fsot_cache_hierarchy_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "cache_line_bytes",
+      "name": "cache_topology",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "x86 industry line = 64 = 2^6",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "words_per_line",
+      "name": "cache_topology",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "64/8 u64 words per line",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "trits_per_line",
+      "name": "cache_topology",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "line_bits / 2 bits-per-trit",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "l1_kb_pow2",
+      "name": "cache_topology",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "L1D class 2^5 KiB",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "l2_kb_pow2",
+      "name": "cache_topology",
+      "computed": 1024.0,
+      "measured": 1024.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "L2 class 2^10 KiB",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "l3_mb_pow2_class",
+      "name": "cache_topology",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "L3 class 2^5 MiB (SKU)",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "l1_assoc_pow2",
+      "name": "cache_topology",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "L1 ways 2^3",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "l2_assoc_pow2",
+      "name": "cache_topology",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "L2 ways 2^3",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fsot_interconnect_coherence_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "coherence_gate",
+      "name": "interconnect_structure",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2 \u2014 bus speaker eligibility",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "collapse_theta",
+      "name": "interconnect_structure",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "pcie_lane_class_pow2",
+      "name": "interconnect_structure",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "PCIe lane counts 1/2/4/8/16",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "uart_baud_115200_class",
+      "name": "interconnect_structure",
+      "computed": 115200.0,
+      "measured": 115200.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "common debug UART baud (ESP/QEMU class)",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "active_speaker_frac_under_phi_m4",
+      "name": "bus_coherence",
+      "computed": 0.14589803375031543,
+      "measured": 0.008858714285714286,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "active_speakers/S \u2264 \u03c6\u207b\u2074 (collapse+gate)",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "consensus_no_exp_bus",
+      "name": "interconnect_law",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "layer": "interconnect"
+      }
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "exclusive_sector_ownership",
+      "name": "memory_bus_ownership",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "formula": "at most one writer per exclusive sector",
+        "layer": "interconnect"
+      }
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "qemu_disk_image_present",
+      "name": "bare_metal_uart_path",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "layer": "interconnect"
+      }
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fsot_c_pack_parity_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "c_parity_run_ok",
+      "name": "c_host",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "c_collapse_theta",
+      "name": "c_pack_parity",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var vs C host"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "c_pack_word",
+      "name": "c_pack_parity",
+      "computed": 5.270498306774157e+18,
+      "measured": 5.270498306774157e+18,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "pack 0..31 mod3 golden"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "c_states_per_u64",
+      "name": "c_pack_parity",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "64/2"
     }
   ],
   "margin_summary": {

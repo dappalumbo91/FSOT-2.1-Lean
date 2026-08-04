@@ -3,6 +3,30 @@ theory FullFormalSpine_16
 imports Complex_Main
 begin
 
+lemma exp_three_gt_twenty: "(20.0 :: real) < (20.085536923187668 :: real)"
+  by eval
+
+lemma exp_six_gt_400: "(400.0 :: real) < (403.4287934927351 :: real)"
+  by eval
+
+lemma exp_28_gt_410: "(410.0 :: real) < (1446257064291.475098 :: real)"
+  by eval
+
+lemma e_gt_27182818283: "(2.7182818283 :: real) < (2.718281828459045 :: real)"
+  by eval
+
+lemma pi_half_gt_02956: "(0.295612 :: real) < (1.5707963267948966 :: real)"
+  by eval
+
+lemma pi_half_gt_1156: "(1.15572734986 :: real) < (1.5707963267948966 :: real)"
+  by eval
+
+lemma pi_gt_290272: "(0.290272 :: real) < (3.141592653589793 :: real)"
+  by eval
+
+lemma pi_gt_291325: "(0.291325 :: real) < (3.141592653589793 :: real)"
+  by eval
+
 lemma pi_gt_0415068: "(0.415068 :: real) < (3.141592653589793 :: real)"
   by eval
 
@@ -277,30 +301,6 @@ lemma cosmological_P_pos: "(0 :: real) < (1.0 :: real)"
   by eval
 
 lemma acoustic_bleed_mul_sin_sq_le_phi: "(0.7413341974524184 :: real) <= (1.618033988749895 :: real)"
-  by eval
-
-lemma acoustic_inflow_le_acoustic_bleed_mul_phi: "(1.6668538450045731 :: real) <= (1.694038919615534 :: real)"
-  by eval
-
-lemma cos_one_sq_le: "(0.2919265817264289 :: real) <= (25.0 :: real)"
-  by eval
-
-lemma acoustic_inflow_mul_cos_sq_le_phi: "(0.48659894520973973 :: real) <= (1.618033988749895 :: real)"
-  by eval
-
-lemma neg_pi_half_le_zero: "(-1.5707963267948966 :: real) <= (0 :: real)"
-  by eval
-
-lemma theta_s_gt_290272: "(0.290272 :: real) < (0.29089654054517305 :: real)"
-  by eval
-
-lemma theta_s_lt_291325: "(0.29089654054517305 :: real) < (0.291325 :: real)"
-  by eval
-
-lemma cos_theta_s_gt_09575: "(0.9575 :: real) < (0.9579871226722757 :: real)"
-  by eval
-
-lemma cos_theta_s_lt_095825: "(0.9579871226722757 :: real) < (0.95825 :: real)"
   by eval
 
 end

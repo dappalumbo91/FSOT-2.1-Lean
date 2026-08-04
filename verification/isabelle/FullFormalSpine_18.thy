@@ -3,6 +3,30 @@ theory FullFormalSpine_18
 imports Complex_Main
 begin
 
+lemma neural_raw_S_positive: "0 < (1.2240253341904455 :: real)"
+  by eval
+
+lemma particle_raw_S_positive: "0 < (1.751037437187807 :: real)"
+  by eval
+
+lemma chemical_raw_S_positive: "0 < (0.7961830900509372 :: real)"
+  by eval
+
+lemma electron_raw_S_positive: "0 < (0.9706402573161165 :: real)"
+  by eval
+
+lemma astronomical_raw_S_positive: "0 < (2.138061039667111 :: real)"
+  by eval
+
+lemma higgs_raw_S_positive: "0 < (2.109039424268679 :: real)"
+  by eval
+
+lemma galactic_raw_S_positive: "0 < (1.8256534680881713 :: real)"
+  by eval
+
+lemma fusion_raw_S_positive: "0 < (2.0283662645128167 :: real)"
+  by eval
+
 lemma medical_raw_S_positive: "0 < (0.7287135707250552 :: real)"
   by eval
 

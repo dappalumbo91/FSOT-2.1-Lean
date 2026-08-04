@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-04T04:26:11.294619+00:00",
+  "generated_at": "2026-08-04T05:09:44.324982+00:00",
   "purpose": "Scientific catalog multi-prover spine: re-prove domain residual gates and seed identities in Coq/Isabelle/Lean-export form. This is the intended cross-prover scientific verification path \u2014 not structure-only bookkeeping.",
   "green_gate_pct": 0.5,
-  "domain_count": 422,
-  "obligation_count": 1975,
+  "domain_count": 426,
+  "obligation_count": 1995,
   "seed_obligation_count": 10,
-  "catalog_obligation_count": 1965,
+  "catalog_obligation_count": 1985,
   "by_claim": {
     "seed_identity": 5,
     "seed_positive": 5,
-    "catalog_nonempty": 421,
-    "empirical_pooled_median_gate": 748,
-    "empirical_max_scalar_gate": 374,
-    "green_gate_pass_flag": 422
+    "catalog_nonempty": 425,
+    "empirical_pooled_median_gate": 756,
+    "empirical_max_scalar_gate": 378,
+    "green_gate_pass_flag": 426
   },
   "obligations": [
     {
@@ -2313,7 +2313,7 @@
       "id": "cat_engineering_hardware_code_spine_records_pos",
       "coq_id": "cat_engineering_hardware_code_spine_records_pos",
       "kind": "nat_pos",
-      "value": 72,
+      "value": 95,
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "Engineering_Hardware_Code_Spine",
@@ -2419,6 +2419,62 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "FSOT_GPU_Engineering_Spine",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_fsot_hardware_depth_spine_records_pos",
+      "coq_id": "cat_fsot_hardware_depth_spine_records_pos",
+      "kind": "nat_pos",
+      "value": 33,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Hardware_Depth_Spine",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_fsot_hardware_depth_spine_pooled_under_half_pct",
+      "coq_id": "cat_fsot_hardware_depth_spine_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Hardware_Depth_Spine",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.0 < 0.5"
+    },
+    {
+      "id": "cat_fsot_hardware_depth_spine_pooled_lt_half_pure",
+      "coq_id": "cat_fsot_hardware_depth_spine_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Hardware_Depth_Spine",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_fsot_hardware_depth_spine_max_scalar_under_half_pct",
+      "coq_id": "cat_fsot_hardware_depth_spine_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.261955886,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Hardware_Depth_Spine",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_fsot_hardware_depth_spine_green_flag",
+      "coq_id": "cat_fsot_hardware_depth_spine_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Hardware_Depth_Spine",
       "claim": "green_gate_pass_flag"
     },
     {
@@ -9693,62 +9749,6 @@
     {
       "id": "cat_living_fsot_hardware_panel_green_flag",
       "coq_id": "cat_living_fsot_hardware_panel_green_flag",
-      "kind": "eq_nat",
-      "value": 1,
-      "right_value": 1,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Living_FSOT_Hardware_Panel",
-      "claim": "green_gate_pass_flag"
-    },
-    {
-      "id": "cat_living_fsot_hardware_panel_records_pos",
-      "coq_id": "cat_living_fsot_hardware_panel_records_pos_2",
-      "kind": "nat_pos",
-      "value": 152,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Living_FSOT_Hardware_Panel",
-      "claim": "catalog_nonempty"
-    },
-    {
-      "id": "cat_living_fsot_hardware_panel_pooled_under_half_pct",
-      "coq_id": "cat_living_fsot_hardware_panel_pooled_under_half_pct_2",
-      "kind": "lt_half",
-      "value": 0.014767,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Living_FSOT_Hardware_Panel",
-      "claim": "empirical_pooled_median_gate",
-      "green_gate_pass": true,
-      "statement": "0.014767 < 0.5"
-    },
-    {
-      "id": "cat_living_fsot_hardware_panel_pooled_lt_half_pure",
-      "coq_id": "cat_living_fsot_hardware_panel_pooled_lt_half_pure_2",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.014767,
-      "right_value": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Living_FSOT_Hardware_Panel",
-      "claim": "empirical_pooled_median_gate"
-    },
-    {
-      "id": "cat_living_fsot_hardware_panel_max_scalar_under_half_pct",
-      "coq_id": "cat_living_fsot_hardware_panel_max_scalar_under_half_pct_2",
-      "kind": "lt_half",
-      "value": 0.031506,
-      "bound": 0.5,
-      "module": "ScientificCatalog.Domains",
-      "tier": "scientific_catalog",
-      "domain": "Living_FSOT_Hardware_Panel",
-      "claim": "empirical_max_scalar_gate"
-    },
-    {
-      "id": "cat_living_fsot_hardware_panel_green_flag",
-      "coq_id": "cat_living_fsot_hardware_panel_green_flag_2",
       "kind": "eq_nat",
       "value": 1,
       "right_value": 1,
@@ -18270,6 +18270,62 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_living_fsot_hardware_records_pos",
+      "coq_id": "cat_living_fsot_hardware_records_pos",
+      "kind": "nat_pos",
+      "value": 4,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Living_FSOT_Hardware",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_living_fsot_hardware_pooled_under_half_pct",
+      "coq_id": "cat_living_fsot_hardware_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Living_FSOT_Hardware",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.0 < 0.5"
+    },
+    {
+      "id": "cat_living_fsot_hardware_pooled_lt_half_pure",
+      "coq_id": "cat_living_fsot_hardware_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Living_FSOT_Hardware",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_living_fsot_hardware_max_scalar_under_half_pct",
+      "coq_id": "cat_living_fsot_hardware_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 1.3209968920124464e-14,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Living_FSOT_Hardware",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_living_fsot_hardware_green_flag",
+      "coq_id": "cat_living_fsot_hardware_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "Living_FSOT_Hardware",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_agriculture_agroecology_records_pos",
       "coq_id": "cat_agriculture_agroecology_records_pos",
       "kind": "nat_pos",
@@ -19156,6 +19212,118 @@
       "claim": "green_gate_pass_flag"
     },
     {
+      "id": "cat_fsot_c_pack_parity_panel_records_pos",
+      "coq_id": "cat_fsot_c_pack_parity_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 4,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_C_Pack_Parity_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_fsot_c_pack_parity_panel_pooled_under_half_pct",
+      "coq_id": "cat_fsot_c_pack_parity_panel_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_C_Pack_Parity_Panel",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.0 < 0.5"
+    },
+    {
+      "id": "cat_fsot_c_pack_parity_panel_pooled_lt_half_pure",
+      "coq_id": "cat_fsot_c_pack_parity_panel_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_C_Pack_Parity_Panel",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_fsot_c_pack_parity_panel_max_scalar_under_half_pct",
+      "coq_id": "cat_fsot_c_pack_parity_panel_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_C_Pack_Parity_Panel",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_fsot_c_pack_parity_panel_green_flag",
+      "coq_id": "cat_fsot_c_pack_parity_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_C_Pack_Parity_Panel",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_fsot_cache_hierarchy_panel_records_pos",
+      "coq_id": "cat_fsot_cache_hierarchy_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 11,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Cache_Hierarchy_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_fsot_cache_hierarchy_panel_pooled_under_half_pct",
+      "coq_id": "cat_fsot_cache_hierarchy_panel_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Cache_Hierarchy_Panel",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.0 < 0.5"
+    },
+    {
+      "id": "cat_fsot_cache_hierarchy_panel_pooled_lt_half_pure",
+      "coq_id": "cat_fsot_cache_hierarchy_panel_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Cache_Hierarchy_Panel",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_fsot_cache_hierarchy_panel_max_scalar_under_half_pct",
+      "coq_id": "cat_fsot_cache_hierarchy_panel_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Cache_Hierarchy_Panel",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_fsot_cache_hierarchy_panel_green_flag",
+      "coq_id": "cat_fsot_cache_hierarchy_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Cache_Hierarchy_Panel",
+      "claim": "green_gate_pass_flag"
+    },
+    {
       "id": "cat_fsot_gpu_cuda_competitive_panel_records_pos",
       "coq_id": "cat_fsot_gpu_cuda_competitive_panel_records_pos",
       "kind": "nat_pos",
@@ -19265,6 +19433,62 @@
       "module": "ScientificCatalog.Domains",
       "tier": "scientific_catalog",
       "domain": "FSOT_GPU_Parity_Verify_Panel",
+      "claim": "green_gate_pass_flag"
+    },
+    {
+      "id": "cat_fsot_interconnect_coherence_panel_records_pos",
+      "coq_id": "cat_fsot_interconnect_coherence_panel_records_pos",
+      "kind": "nat_pos",
+      "value": 8,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Interconnect_Coherence_Panel",
+      "claim": "catalog_nonempty"
+    },
+    {
+      "id": "cat_fsot_interconnect_coherence_panel_pooled_under_half_pct",
+      "coq_id": "cat_fsot_interconnect_coherence_panel_pooled_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Interconnect_Coherence_Panel",
+      "claim": "empirical_pooled_median_gate",
+      "green_gate_pass": true,
+      "statement": "0.0 < 0.5"
+    },
+    {
+      "id": "cat_fsot_interconnect_coherence_panel_pooled_lt_half_pure",
+      "coq_id": "cat_fsot_interconnect_coherence_panel_pooled_lt_half_pure",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0,
+      "right_value": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Interconnect_Coherence_Panel",
+      "claim": "empirical_pooled_median_gate"
+    },
+    {
+      "id": "cat_fsot_interconnect_coherence_panel_max_scalar_under_half_pct",
+      "coq_id": "cat_fsot_interconnect_coherence_panel_max_scalar_under_half_pct",
+      "kind": "lt_half",
+      "value": 0.0,
+      "bound": 0.5,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Interconnect_Coherence_Panel",
+      "claim": "empirical_max_scalar_gate"
+    },
+    {
+      "id": "cat_fsot_interconnect_coherence_panel_green_flag",
+      "coq_id": "cat_fsot_interconnect_coherence_panel_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "ScientificCatalog.Domains",
+      "tier": "scientific_catalog",
+      "domain": "FSOT_Interconnect_Coherence_Panel",
       "claim": "green_gate_pass_flag"
     },
     {

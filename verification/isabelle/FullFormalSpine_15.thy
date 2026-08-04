@@ -3,6 +3,30 @@ theory FullFormalSpine_15
 imports Complex_Main
 begin
 
+lemma quirkMod_pos_of_delta_psi_le_06: "0 < (0.14827865209236663 :: real)"
+  by eval
+
+lemma quirkMod_lt_exp_cos_bound: "(-0.11470328400949172 :: real) < (1.9929509804200407 :: real)"
+  by eval
+
+lemma term1_gt_neg_08_of_observer_pos_quirk: "(-0.8 :: real) < (0.22402533419044554 :: real)"
+  by eval
+
+lemma domain_term1_positive_of_params: "0 < (0.22402533419044554 :: real)"
+  by eval
+
+lemma gamma_euler_pos: "0 < (0.5772156649015329 :: real)"
+  by eval
+
+lemma eta_pos: "0 < (0.46694220658433505 :: real)"
+  by eval
+
+lemma new_perceived_param_pos: "0 < (0.30030117056875677 :: real)"
+  by eval
+
+lemma psi_con_pos: "0 < (0.6321205588287557 :: real)"
+  by eval
+
 lemma acoustic_bleed_pos: "0 < (1.046973630587551 :: real)"
   by eval
 
@@ -277,30 +301,6 @@ lemma e_minus_one_gt_one: "(1.0 :: real) < (1.718281828459045 :: real)"
   by eval
 
 lemma exp_five_gt_100: "(100.0 :: real) < (148.4131591025766 :: real)"
-  by eval
-
-lemma exp_three_gt_twenty: "(20.0 :: real) < (20.085536923187668 :: real)"
-  by eval
-
-lemma exp_six_gt_400: "(400.0 :: real) < (403.4287934927351 :: real)"
-  by eval
-
-lemma exp_28_gt_410: "(410.0 :: real) < (1446257064291.475098 :: real)"
-  by eval
-
-lemma e_gt_27182818283: "(2.7182818283 :: real) < (2.718281828459045 :: real)"
-  by eval
-
-lemma pi_half_gt_02956: "(0.295612 :: real) < (1.5707963267948966 :: real)"
-  by eval
-
-lemma pi_half_gt_1156: "(1.15572734986 :: real) < (1.5707963267948966 :: real)"
-  by eval
-
-lemma pi_gt_290272: "(0.290272 :: real) < (3.141592653589793 :: real)"
-  by eval
-
-lemma pi_gt_291325: "(0.291325 :: real) < (3.141592653589793 :: real)"
   by eval
 
 end

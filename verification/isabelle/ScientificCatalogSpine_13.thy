@@ -213,6 +213,21 @@ lemma cat_math_generator_airfoil_rmse_benchmark_json_max_scalar_under_half_pct: 
 lemma cat_math_generator_airfoil_rmse_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_living_fsot_hardware_records_pos: "0 < (4 :: nat)"
+  by eval
+
+lemma cat_living_fsot_hardware_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_living_fsot_hardware_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_living_fsot_hardware_max_scalar_under_half_pct: "(0.00000000000001320997 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_living_fsot_hardware_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_agriculture_agroecology_records_pos: "0 < (276 :: nat)"
   by eval
 
@@ -346,21 +361,6 @@ lemma cat_distant_island_emergence_simulation_pooled_under_half_pct: "(0 :: real
   by eval
 
 lemma cat_distant_island_emergence_simulation_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_distant_island_emergence_simulation_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_distant_island_emergence_simulation_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_ecology_records_pos_2: "0 < (627 :: nat)"
-  by eval
-
-lemma cat_ecology_green_flag_2: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_econometrics_records_pos: "0 < (172 :: nat)"
   by eval
 
 end

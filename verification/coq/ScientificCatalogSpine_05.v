@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_time_emergence_simulation_records_pos : (0 < 28)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_time_emergence_simulation_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_time_emergence_simulation_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_time_emergence_simulation_max_scalar_under_half_pct : ((0.041099%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_time_emergence_simulation_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_circuit_component_emergence_panel_records_pos : (0 < 57)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_complexity_folding_emergence_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_reality_folding_spine_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_reality_folding_spine_pooled_under_half_pct : ((0.023914275640537417%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_reality_folding_spine_pooled_lt_half_pure : ((0.023914275640537417%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_reality_folding_spine_max_scalar_under_half_pct : ((0.038016537604979236%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_reality_folding_spine_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

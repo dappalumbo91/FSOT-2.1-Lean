@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-04T04:37:50.965927+00:00",
+  "generated_at": "2026-08-04T05:22:18.433107+00:00",
   "version": "1.0",
   "tier": "92_structural_proof_depth",
   "overall_ok": true,
-  "provable_bundle_conj_count": 465,
+  "provable_bundle_conj_count": 469,
   "provable_bundles": [
     {
       "id": "acoustic_resonance_materials_bundle",
@@ -634,6 +634,14 @@
       "conjunct_count": 4
     },
     {
+      "id": "fsot_cache_hierarchy_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "fsot_c_pack_parity_bundle",
+      "conjunct_count": 4
+    },
+    {
       "id": "fsot_gpu_cuda_competitive_bundle",
       "conjunct_count": 4
     },
@@ -643,6 +651,14 @@
     },
     {
       "id": "fsot_gpu_parity_verify_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "fsot_hardware_depth_spine_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "fsot_interconnect_coherence_bundle",
       "conjunct_count": 4
     },
     {
@@ -1866,11 +1882,11 @@
       "conjunct_count": 7
     }
   ],
-  "structural_proof_count": 1955,
+  "structural_proof_count": 1971,
   "min_required": 10,
   "breakdown": {
-    "bundle_split_lemmas": 454,
-    "bundle_conjunct_lemmas": 1491,
+    "bundle_split_lemmas": 458,
+    "bundle_conjunct_lemmas": 1503,
     "connective_ordering_lemmas": 3,
     "native_transcendental_chain_lemmas": 7
   },

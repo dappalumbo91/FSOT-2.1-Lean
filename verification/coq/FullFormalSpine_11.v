@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma lysine_trinary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma leucine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma methionine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma asparagine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma proline_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma glutamine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma arginine_trinary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma serine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
 Lemma threonine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
 Proof. repeat split; reflexivity. Qed.
 
@@ -281,28 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma seismology_deep_match_le_total : (1000 <= 1000)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
-
-Lemma seismology_deep_holdout_match_le_total : (189 <= 189)%nat.
-Proof. apply Nat.leb_le; reflexivity. Qed.
-
-Lemma seismology_event_count_pos : (0 < 500)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma seismology_match_le_total : (500 <= 500)%nat.
-Proof. apply Nat.leb_le; reflexivity. Qed.
-
-Lemma semiconductor_physics_public_panel_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma semiconductor_physics_public_panel_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma sh0es_refined_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma sh0es_refined_median_error_under_half_pct : (0.024894%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma simbad_stellar_identity_deep_observable_count_pos : (0 < 520)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

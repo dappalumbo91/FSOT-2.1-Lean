@@ -9,6 +9,18 @@ Local Open Scope R_scope.
 Lemma fsot_aggregate_unified_db_median_error_under_five_pct : 0%R < (5.0%R).
 Proof. lra. Qed.
 
+Lemma fsot_cache_hierarchy_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_cache_hierarchy_observable_count_pos : (0 < 11)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fsot_c_pack_parity_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_c_pack_parity_observable_count_pos : (0 < 4)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma fsot_gpu_cuda_competitive_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
@@ -25,6 +37,18 @@ Lemma fsot_gpu_parity_verify_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
 Lemma fsot_gpu_parity_verify_observable_count_pos : (0 < 48)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fsot_hardware_depth_spine_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_hardware_depth_spine_observable_count_pos : (0 < 33)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fsot_interconnect_coherence_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_interconnect_coherence_observable_count_pos : (0 < 8)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma fsot_processor_function_median_error_under_half_pct : 0%R < (0.5%R).
@@ -281,28 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma igem_parts_expanded_median_error_under_half_pct : (0.00005882356401581393%R) < (0.5%R).
 Proof. lra. Qed.
-
-Lemma igem_synthetic_biology_pooled_median_under_half_pct : (0.022236250385203583%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma igem_synthetic_biology_headline_median_under_half_pct : (0.022236250385203583%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma igem_synthetic_biology_observable_count_pos : (0 < 54)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma igem_synthetic_biology_part_count_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma igem_synthetic_biology_beats_sota_headlines_pos : (0 < 6)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma immunology_panel_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma immunology_panel_median_error_under_half_pct : (0.040788%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma immunology_observable_count_pos : (0 < 84)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

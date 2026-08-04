@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-04T04:52:38.996992+00:00",
-  "tier": "91_hardware_processor_ram_bare_metal",
-  "purpose": "Executable processor/RAM FSOT laws on host Rust + serial markers, chained with QEMU no_std bare-metal scalar boot.",
+  "generated_at": "2026-08-04T05:21:44.710240+00:00",
+  "tier": "91_hardware_processor_ram_cache_interconnect_bare_metal",
+  "purpose": "Executable processor/RAM/C-pack FSOT laws on host + QEMU bare-metal; cache/interconnect residual panels built separately.",
   "cargo_tests": {
     "status": "passed",
     "crate": "fsot_hardware_kernel",
@@ -47,6 +47,26 @@
     "qemu": "passed",
     "returncode": 0,
     "stderr_tail": "RUST_LEAN_BRIDGE QEMU HARNESS (Tier 87)\n  serial: passed boot=0.09928895626861721\n  disk: passed boot=0.0992889562686172 disk_boot=ok\n  qemu: passed (QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a))\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\rust_lean_bridge_qemu_harness_report.json\n"
+  },
+  "c_pack_parity": {
+    "status": "passed",
+    "returncode": 0,
+    "markers": {
+      "FSOT_C_COLLAPSE_THETA": 0.9174663774653723,
+      "FSOT_C_C_EFF": 0.9577022026205613,
+      "FSOT_C_P_VAR": 0.9579871226722757,
+      "FSOT_C_COHERENCE_GATE": 0.5,
+      "FSOT_C_STATES_PER_U64": 32,
+      "FSOT_C_PACK_WORD": 5270498306774157604,
+      "FSOT_C_GOLDEN_WORD": 5270498306774157604,
+      "FSOT_C_PACK_MATCH": 1,
+      "FSOT_C_ROUNDTRIP": 1,
+      "FSOT_C_THETA_OK": 1,
+      "FSOT_C_COLLAPSE_OK": 1,
+      "FSOT_C_OVERALL": "ok"
+    },
+    "stdout_tail": "FSOT_C_COLLAPSE_THETA=0.9174663774653723\nFSOT_C_C_EFF=0.95770220262056127\nFSOT_C_P_VAR=0.9579871226722757\nFSOT_C_COHERENCE_GATE=0.5\nFSOT_C_STATES_PER_U64=32\nFSOT_C_PACK_WORD=5270498306774157604\nFSOT_C_GOLDEN_WORD=5270498306774157604\nFSOT_C_PACK_MATCH=1\nFSOT_C_ROUNDTRIP=1\nFSOT_C_THETA_OK=1\nFSOT_C_COLLAPSE_OK=1\nFSOT_C_OVERALL=ok\n",
+    "compiler": "C:\\Program Files\\LLVM\\bin\\clang.exe"
   },
   "overall_ok": true,
   "seed_refs": {

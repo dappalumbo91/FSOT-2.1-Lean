@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma exp_three_gt_twenty : (20.0%R) < (20.085536923187668%R).
+Proof. lra. Qed.
+
+Lemma exp_six_gt_400 : (400.0%R) < (403.4287934927351%R).
+Proof. lra. Qed.
+
+Lemma exp_28_gt_410 : (410.0%R) < (1446257064291.475%R).
+Proof. lra. Qed.
+
+Lemma e_gt_27182818283 : (2.7182818283%R) < (2.718281828459045%R).
+Proof. lra. Qed.
+
+Lemma pi_half_gt_02956 : (0.295612%R) < (1.5707963267948966%R).
+Proof. lra. Qed.
+
+Lemma pi_half_gt_1156 : (1.15572734986%R) < (1.5707963267948966%R).
+Proof. lra. Qed.
+
+Lemma pi_gt_290272 : (0.290272%R) < (3.141592653589793%R).
+Proof. lra. Qed.
+
+Lemma pi_gt_291325 : (0.291325%R) < (3.141592653589793%R).
+Proof. lra. Qed.
+
 Lemma pi_gt_0415068 : (0.415068%R) < (3.141592653589793%R).
 Proof. lra. Qed.
 
@@ -280,29 +304,5 @@ Lemma cosmological_P_pos : 0%R < (1.0%R).
 Proof. lra. Qed.
 
 Lemma acoustic_bleed_mul_sin_sq_le_phi : (0.7413341974524184%R) <= (1.618033988749895%R).
-Proof. lra. Qed.
-
-Lemma acoustic_inflow_le_acoustic_bleed_mul_phi : (1.6668538450045731%R) <= (1.694038919615534%R).
-Proof. lra. Qed.
-
-Lemma cos_one_sq_le : (0.2919265817264289%R) <= (25.0%R).
-Proof. lra. Qed.
-
-Lemma acoustic_inflow_mul_cos_sq_le_phi : (0.48659894520973973%R) <= (1.618033988749895%R).
-Proof. lra. Qed.
-
-Lemma neg_pi_half_le_zero : (-1.5707963267948966%R) <= 0%R.
-Proof. lra. Qed.
-
-Lemma theta_s_gt_290272 : (0.290272%R) < (0.29089654054517305%R).
-Proof. lra. Qed.
-
-Lemma theta_s_lt_291325 : (0.29089654054517305%R) < (0.291325%R).
-Proof. lra. Qed.
-
-Lemma cos_theta_s_gt_09575 : (0.9575%R) < (0.9579871226722757%R).
-Proof. lra. Qed.
-
-Lemma cos_theta_s_lt_095825 : (0.9579871226722757%R) < (0.95825%R).
 Proof. lra. Qed.
 

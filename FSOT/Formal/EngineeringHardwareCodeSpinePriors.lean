@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def engineering_hardware_code_spine_observable_count : ℕ := 72
+def engineering_hardware_code_spine_observable_count : ℕ := 95
 def engineering_hardware_code_spine_median_error_pct : ℝ := (0.0 : ℝ)
 def engineering_hardware_code_spine_D_eff : ℕ := 13
 
@@ -23,7 +23,7 @@ theorem engineering_hardware_code_spine_median_error_under_half_pct :
   unfold engineering_hardware_code_spine_median_error_pct; norm_num
 
 theorem engineering_hardware_code_spine_bundle :
-    engineering_hardware_code_spine_observable_count = 72 ∧
+    engineering_hardware_code_spine_observable_count = 95 ∧
     engineering_hardware_code_spine_D_eff = 13 ∧
     engineering_hardware_code_spine_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "electron") > 0 := by

@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma marine_biology_ext_pooled_median_under_half_pct : (0.022236250385192644%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma marine_biology_ext_headline_median_under_half_pct : (0.022236250385194948%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma marine_biology_ext_observable_count_pos : (0 < 540)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma marine_biology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma marine_biology_panel_observable_count_pos : (0 < 90)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma marine_biology_panel_median_error_under_half_pct : (0.006006%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma marine_biology_observable_count_pos : (0 < 540)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma marine_biology_median_error_under_half_pct : (0.022236250385192644%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma material_in_silico_screening_scaffold_observable_count_pos : (0 < 42)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -280,29 +304,5 @@ Lemma neural_galactic_orbital_bridge_observable_count_pos : (0 < 49)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma neural_galactic_orbital_bridge_median_error_under_half_pct : (0.018002668701799784%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma neuroeconomics_ext_pooled_median_under_half_pct : (0.10502056403980387%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma neuroeconomics_ext_headline_median_under_half_pct : (0.10502056403980387%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma neuroeconomics_ext_observable_count_pos : (0 < 123)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neuroeconomics_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neuroeconomics_panel_observable_count_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neuroeconomics_panel_median_error_under_half_pct : (0.031506%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma neuroeconomics_observable_count_pos : (0 < 65)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neuroeconomics_median_error_under_half_pct : (0.10502056403980387%R) < (0.5%R).
 Proof. lra. Qed.
 

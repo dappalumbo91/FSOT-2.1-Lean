@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma seismology_deep_holdout_match_le_total : (189 <= 189)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma seismology_event_count_pos : (0 < 500)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma seismology_match_le_total : (500 <= 500)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma semiconductor_physics_public_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma semiconductor_physics_public_panel_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sh0es_refined_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma sh0es_refined_median_error_under_half_pct : (0.024894%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma simbad_stellar_identity_deep_observable_count_pos : (0 < 520)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma simbad_stellar_identity_deep_median_error_under_half_pct : (0.022461%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -281,28 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma term3_acoustic_bleed_depth_median_error_under_half_pct : (0.008381497018408523%R) < (0.5%R).
 Proof. lra. Qed.
-
-Lemma theory_completeness_spine_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma theory_completeness_spine_median_error_under_half_pct : (0.021927861384483893%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma thesis_intrinsic_best_rmse_positive : 0 < (6.763968608085996%R).
-Proof. lra. Qed.
-
-Lemma thesis_wave_target_count_pos : (0 < 98)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma thesis_intrinsic_screen_count_pos : (0 < 58)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma thesis_simulation_observable_count_pos : (0 < 156)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma thesis_simulation_components_le_total : (156 = 156)%nat.
-Proof. reflexivity. Qed.
-
-Lemma the_well_outcomes_verification_panel_observable_count_pos : (0 < 246)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

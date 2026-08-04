@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_reality_folding_spine_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_reality_folding_spine_pooled_under_half_pct : ((0.023914275640537417%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_reality_folding_spine_pooled_lt_half_pure : ((0.023914275640537417%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_reality_folding_spine_max_scalar_under_half_pct : ((0.038016537604979236%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_reality_folding_spine_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_consciousness_galactic_orbital_bridge_records_pos : (0 < 48)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_consciousness_lean_route_credibility_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_consciousness_species_multi_panel_records_pos : (0 < 269)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_consciousness_species_multi_panel_pooled_under_half_pct : ((0.0201195%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_consciousness_species_multi_panel_pooled_lt_half_pure : ((0.0201195%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_consciousness_species_multi_panel_max_scalar_under_half_pct : ((0.031506%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_consciousness_species_multi_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

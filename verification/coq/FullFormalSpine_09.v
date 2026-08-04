@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma neuroeconomics_ext_pooled_median_under_half_pct : (0.10502056403980387%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma neuroeconomics_ext_headline_median_under_half_pct : (0.10502056403980387%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma neuroeconomics_ext_observable_count_pos : (0 < 123)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma neuroeconomics_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma neuroeconomics_panel_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma neuroeconomics_panel_median_error_under_half_pct : (0.031506%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma neuroeconomics_observable_count_pos : (0 < 65)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma neuroeconomics_median_error_under_half_pct : (0.10502056403980387%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma neuroimmunology_pooled_median_under_half_pct : (0.05041956982053305%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -280,29 +304,5 @@ Lemma open_meteo_live_median_error_under_five_pct : (0.026204%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma openneuro_full_panel_observable_count_pos : (0 < 123)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma openneuro_full_panel_median_error_under_half_pct : (0.015431%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma optics_interferometry_depth_panel_observable_count_pos : (0 < 127)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma optics_interferometry_depth_panel_median_error_under_half_pct : (0.026954%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma orbital_mechanics_median_error_under_half_pct : (0.106141%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma orbital_mechanics_body_count_pos : (0 < 9)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma osti_doe_science_panel_observable_count_pos : (0 < 100)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma osti_doe_science_panel_median_error_under_half_pct : (0.01382%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma osti_doe_science_observable_count_pos : (0 < 100)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

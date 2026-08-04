@@ -264,7 +264,7 @@ Proof. lra. Qed.
 Lemma engineering_hardware_code_spine_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma engineering_hardware_code_spine_observable_count_pos : (0 < 72)%nat.
+Lemma engineering_hardware_code_spine_observable_count_pos : (0 < 95)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma entomology_ext_pooled_median_under_half_pct : (0.022236250385189223%R) < (0.5%R).

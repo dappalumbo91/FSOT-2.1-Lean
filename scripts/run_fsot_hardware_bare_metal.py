@@ -155,25 +155,40 @@ def run_qemu_chain() -> dict:
         return {"status": "failed", "reason": str(e)}
 
 
+def run_c_parity() -> dict:
+    sys.path.insert(0, str(ROOT / "scripts"))
+    try:
+        from hardware_depth_bridge_lib import run_c_pack_parity  # noqa: WPS433
+
+        return run_c_pack_parity()
+    except Exception as e:
+        return {"status": "failed", "reason": str(e)}
+
+
 def main() -> int:
     tests = run_cargo_tests()
     serial = run_hardware_serial()
     qemu = run_qemu_chain()
+    c_parity = run_c_parity()
+    # C optional only if no compiler; fail if compiler present and red
+    c_ok = c_parity.get("status") in ("passed", "skipped")
     overall = (
         tests.get("status") == "passed"
         and serial.get("status") == "passed"
         and qemu.get("status") == "passed"
+        and c_ok
     )
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "91_hardware_processor_ram_bare_metal",
+        "tier": "91_hardware_processor_ram_cache_interconnect_bare_metal",
         "purpose": (
-            "Executable processor/RAM FSOT laws on host Rust + serial markers, "
-            "chained with QEMU no_std bare-metal scalar boot."
+            "Executable processor/RAM/C-pack FSOT laws on host + QEMU bare-metal; "
+            "cache/interconnect residual panels built separately."
         ),
         "cargo_tests": tests,
         "hardware_serial": serial,
         "qemu_bare_metal": qemu,
+        "c_pack_parity": c_parity,
         "overall_ok": overall,
         "seed_refs": {
             "collapse_theta": COLLAPSE_THETA,
@@ -184,13 +199,14 @@ def main() -> int:
         },
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    print("FSOT HARDWARE BARE-METAL (processor + RAM)")
+    print("FSOT HARDWARE BARE-METAL (processor + RAM + C parity)")
     print(f"  cargo_tests: {tests.get('status')}")
     print(f"  hardware_serial: {serial.get('status')} overall={ (serial.get('markers') or {}).get('overall') }")
     print(
         f"  qemu_chain: {qemu.get('status')} "
         f"(serial={qemu.get('serial')}, disk={qemu.get('disk')}, qemu={qemu.get('qemu')})"
     )
+    print(f"  c_pack_parity: {c_parity.get('status')}")
     print(f"  overall_ok: {overall}")
     print(f"Wrote {OUT}")
     return 0 if overall else 1

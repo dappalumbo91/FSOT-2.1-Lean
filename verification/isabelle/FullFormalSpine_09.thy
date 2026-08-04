@@ -3,6 +3,30 @@ theory FullFormalSpine_09
 imports Complex_Main
 begin
 
+lemma neuroeconomics_ext_pooled_median_under_half_pct: "(0.10502056403980387 :: real) < (0.5 :: real)"
+  by eval
+
+lemma neuroeconomics_ext_headline_median_under_half_pct: "(0.10502056403980387 :: real) < (0.5 :: real)"
+  by eval
+
+lemma neuroeconomics_ext_observable_count_pos: "0 < (123 :: nat)"
+  by eval
+
+lemma neuroeconomics_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma neuroeconomics_panel_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma neuroeconomics_panel_median_error_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma neuroeconomics_observable_count_pos: "0 < (65 :: nat)"
+  by eval
+
+lemma neuroeconomics_median_error_under_half_pct: "(0.10502056403980387 :: real) < (0.5 :: real)"
+  by eval
+
 lemma neuroimmunology_pooled_median_under_half_pct: "(0.05041956982053305 :: real) < (0.5 :: real)"
   by eval
 
@@ -277,30 +301,6 @@ lemma open_meteo_live_median_error_under_five_pct: "(0.026204 :: real) < (5.0 ::
   by eval
 
 lemma openneuro_full_panel_observable_count_pos: "0 < (123 :: nat)"
-  by eval
-
-lemma openneuro_full_panel_median_error_under_half_pct: "(0.015431 :: real) < (0.5 :: real)"
-  by eval
-
-lemma optics_interferometry_depth_panel_observable_count_pos: "0 < (127 :: nat)"
-  by eval
-
-lemma optics_interferometry_depth_panel_median_error_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
-  by eval
-
-lemma orbital_mechanics_median_error_under_half_pct: "(0.106141 :: real) < (0.5 :: real)"
-  by eval
-
-lemma orbital_mechanics_body_count_pos: "0 < (9 :: nat)"
-  by eval
-
-lemma osti_doe_science_panel_observable_count_pos: "0 < (100 :: nat)"
-  by eval
-
-lemma osti_doe_science_panel_median_error_under_half_pct: "(0.01382 :: real) < (0.5 :: real)"
-  by eval
-
-lemma osti_doe_science_observable_count_pos: "0 < (100 :: nat)"
   by eval
 
 end

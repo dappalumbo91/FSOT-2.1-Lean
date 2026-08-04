@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T04:37:57.891183+00:00",
+  "generated_at": "2026-08-04T05:22:25.397153+00:00",
   "version": "1.0",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -18,10 +18,10 @@
     "lean_4": {
       "role": "primary authority",
       "connective_obligations": 24,
-      "full_formal_obligations": 2409,
+      "full_formal_obligations": 2421,
       "transcendental_lemmas": 68,
-      "lean_theorem_count_estimate": 4673,
-      "export_fraction_pct": 51.55,
+      "lean_theorem_count_estimate": 4705,
+      "export_fraction_pct": 51.46,
       "proof_style": "norm_num / decide / linarith certificates"
     },
     "coq": {
@@ -32,12 +32,12 @@
     },
     "isabelle": {
       "status": "passed",
-      "provable_obligations": 2355,
+      "provable_obligations": 2367,
       "coverage": "numeric literal replay of exported obligations"
     },
     "rust_f64_replay": {
       "status": "passed",
-      "obligation_count": 1982,
+      "obligation_count": 1990,
       "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
     },
     "fstar": {

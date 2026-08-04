@@ -1,0 +1,169 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T05:09:11.971519+00:00",
+  "domain": "FSOT_Interconnect_Coherence_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "hardware_depth_bridge",
+    "fsot_hardware_kernel",
+    "qemu_bios"
+  ],
+  "maps_to_lean": [
+    "electron",
+    "mathematical",
+    "ai"
+  ],
+  "D_eff": 11,
+  "record_count": 8,
+  "observable_count": 8,
+  "scalar_record_count": 7,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "always_on_broadcast": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "always-active bus without collapse gate"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_interconnect_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 8
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_interconnect",
+      "name": "coherence_bus",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 8
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "coherence_gate",
+      "name": "interconnect_structure",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2 \u2014 bus speaker eligibility",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "collapse_theta",
+      "name": "interconnect_structure",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie_lane_class_pow2",
+      "name": "interconnect_structure",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "PCIe lane counts 1/2/4/8/16",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "uart_baud_115200_class",
+      "name": "interconnect_structure",
+      "computed": 115200.0,
+      "measured": 115200.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "common debug UART baud (ESP/QEMU class)",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "active_speaker_frac_under_phi_m4",
+      "name": "bus_coherence",
+      "computed": 0.14589803375031543,
+      "measured": 0.008858714285714286,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "active_speakers/S \u2264 \u03c6\u207b\u2074 (collapse+gate)",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "consensus_no_exp_bus",
+      "name": "interconnect_law",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "layer": "interconnect"
+      }
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "exclusive_sector_ownership",
+      "name": "memory_bus_ownership",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "formula": "at most one writer per exclusive sector",
+        "layer": "interconnect"
+      }
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "qemu_disk_image_present",
+      "name": "bare_metal_uart_path",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "layer": "interconnect"
+      }
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

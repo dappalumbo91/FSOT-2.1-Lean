@@ -3,6 +3,30 @@ theory FullFormalSpine_17
 imports Complex_Main
 begin
 
+lemma acoustic_inflow_le_acoustic_bleed_mul_phi: "(1.6668538450045731 :: real) <= (1.694038919615534 :: real)"
+  by eval
+
+lemma cos_one_sq_le: "(0.2919265817264289 :: real) <= (25.0 :: real)"
+  by eval
+
+lemma acoustic_inflow_mul_cos_sq_le_phi: "(0.48659894520973973 :: real) <= (1.618033988749895 :: real)"
+  by eval
+
+lemma neg_pi_half_le_zero: "(-1.5707963267948966 :: real) <= (0 :: real)"
+  by eval
+
+lemma theta_s_gt_290272: "(0.290272 :: real) < (0.29089654054517305 :: real)"
+  by eval
+
+lemma theta_s_lt_291325: "(0.29089654054517305 :: real) < (0.291325 :: real)"
+  by eval
+
+lemma cos_theta_s_gt_09575: "(0.9575 :: real) < (0.9579871226722757 :: real)"
+  by eval
+
+lemma cos_theta_s_lt_095825: "(0.9579871226722757 :: real) < (0.95825 :: real)"
+  by eval
+
 lemma phi_sq_lt_26183: "(2.618033988749895 :: real) < (26183.0 :: real)"
   by eval
 
@@ -277,30 +301,6 @@ lemma domain_term2_eq_one: "(1.0 :: real) = (1.0 :: real)"
   by eval
 
 lemma domain_term3_abs_lt_fifth: "(0.0000000000000000269421 :: real) < (0.2 :: real)"
-  by eval
-
-lemma neural_raw_S_positive: "0 < (1.2240253341904455 :: real)"
-  by eval
-
-lemma particle_raw_S_positive: "0 < (1.751037437187807 :: real)"
-  by eval
-
-lemma chemical_raw_S_positive: "0 < (0.7961830900509372 :: real)"
-  by eval
-
-lemma electron_raw_S_positive: "0 < (0.9706402573161165 :: real)"
-  by eval
-
-lemma astronomical_raw_S_positive: "0 < (2.138061039667111 :: real)"
-  by eval
-
-lemma higgs_raw_S_positive: "0 < (2.109039424268679 :: real)"
-  by eval
-
-lemma galactic_raw_S_positive: "0 < (1.8256534680881713 :: real)"
-  by eval
-
-lemma fusion_raw_S_positive: "0 < (2.0283662645128167 :: real)"
   by eval
 
 end

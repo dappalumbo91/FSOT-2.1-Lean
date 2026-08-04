@@ -1,0 +1,110 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T05:09:12.832925+00:00",
+  "domain": "FSOT_C_Pack_Parity_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\c\\fsot_pack_parity\\fsot_pack_parity.c",
+    "vendor/fsot_compute.py"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "electron"
+  ],
+  "D_eff": 10,
+  "record_count": 4,
+  "observable_count": 4,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "c_host": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "ad-hoc C without golden multiprover parity"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_c_parity_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 4
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_c_parity",
+      "name": "pack_collapse",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 4
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "c_parity_run_ok",
+      "name": "c_host",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "c_collapse_theta",
+      "name": "c_pack_parity",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var vs C host"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "c_pack_word",
+      "name": "c_pack_parity",
+      "computed": 5.270498306774157e+18,
+      "measured": 5.270498306774157e+18,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "pack 0..31 mod3 golden"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "c_states_per_u64",
+      "name": "c_pack_parity",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "64/2"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

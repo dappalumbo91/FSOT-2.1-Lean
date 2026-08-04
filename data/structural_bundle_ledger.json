@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-04T04:37:58.575520+00:00",
+  "generated_at": "2026-08-04T05:22:26.094326+00:00",
   "version": "1.2",
   "summary": {
-    "bundle_conj_total": 519,
+    "bundle_conj_total": 523,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 465,
-    "total_conjuncts": 2357,
-    "conjuncts_with_atomic_coverage": 2355,
+    "provable_bundle_conj": 469,
+    "total_conjuncts": 2373,
+    "conjuncts_with_atomic_coverage": 2371,
     "conjunct_atomic_coverage_pct": 99.92,
-    "explicit_linked_conjuncts": 1803,
-    "explicit_linked_in_spine": 1801,
+    "explicit_linked_conjuncts": 1815,
+    "explicit_linked_in_spine": 1813,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
@@ -224,9 +224,13 @@
     "fractal_constant_recursion_bundle",
     "fsot_aggregate_organized_panel_bundle",
     "fsot_aggregate_unified_db_bundle",
+    "fsot_cache_hierarchy_bundle",
+    "fsot_c_pack_parity_bundle",
     "fsot_gpu_cuda_competitive_bundle",
     "fsot_gpu_engineering_spine_bundle",
     "fsot_gpu_parity_verify_bundle",
+    "fsot_hardware_depth_spine_bundle",
+    "fsot_interconnect_coherence_bundle",
     "fsot_processor_function_bundle",
     "fsot_ram_function_bundle",
     "fuel_candidate_prereg_scaffold_bundle",
@@ -8950,7 +8954,7 @@
         {
           "kind": "eq_nat",
           "symbol": "engineering_hardware_code_spine_observable_count",
-          "statement": "72 = 72",
+          "statement": "95 = 95",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12033,6 +12037,122 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "fsot_cache_hierarchy_bundle",
+      "lean_module": "FsotCacheHierarchyPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_cache_hierarchy_observable_count",
+          "statement": "11 = 11",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_cache_hierarchy_observable_count_pos"
+          ],
+          "linked_obligation_id": "fsot_cache_hierarchy_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_cache_hierarchy_D_eff",
+          "statement": "11 = 11",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "fsot_cache_hierarchy_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "fsot_cache_hierarchy_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_cache_hierarchy_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "fsot_cache_hierarchy_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "statement": "raw_S(energy) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "fsot_c_pack_parity_bundle",
+      "lean_module": "FsotCPackParityPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_c_pack_parity_observable_count",
+          "statement": "4 = 4",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_c_pack_parity_observable_count_pos"
+          ],
+          "linked_obligation_id": "fsot_c_pack_parity_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_c_pack_parity_D_eff",
+          "statement": "10 = 10",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "fsot_c_pack_parity_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "fsot_c_pack_parity_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_c_pack_parity_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "fsot_c_pack_parity_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "statement": "raw_S(energy) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "fsot_gpu_cuda_competitive_bundle",
       "lean_module": "FsotGpuCudaCompetitivePanelPriors",
       "provable": true,
@@ -12200,6 +12320,122 @@
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "quantum_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "fsot_hardware_depth_spine_bundle",
+      "lean_module": "FsotHardwareDepthSpinePriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_hardware_depth_spine_observable_count",
+          "statement": "33 = 33",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_hardware_depth_spine_observable_count_pos"
+          ],
+          "linked_obligation_id": "fsot_hardware_depth_spine_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_hardware_depth_spine_D_eff",
+          "statement": "13 = 13",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "fsot_hardware_depth_spine_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "fsot_hardware_depth_spine_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_hardware_depth_spine_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "fsot_hardware_depth_spine_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "statement": "raw_S(energy) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "fsot_interconnect_coherence_bundle",
+      "lean_module": "FsotInterconnectCoherencePanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_interconnect_coherence_observable_count",
+          "statement": "8 = 8",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_interconnect_coherence_observable_count_pos"
+          ],
+          "linked_obligation_id": "fsot_interconnect_coherence_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "fsot_interconnect_coherence_D_eff",
+          "statement": "11 = 11",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "fsot_interconnect_coherence_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "fsot_interconnect_coherence_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "fsot_interconnect_coherence_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "fsot_interconnect_coherence_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_electron",
+          "statement": "raw_S(electron) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "electron_raw_S_positive"
           ],
           "linked_obligation_id": null
         }

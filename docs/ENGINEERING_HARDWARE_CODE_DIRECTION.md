@@ -12,6 +12,8 @@
 3. **Neuron-zig bridge** — live bio-accurate mind stack on `I:\fsot-neuron-zig` (Lean wet-lab certificate, 0 free params on scalar path). Replaces “Living FSOT hardware” as the embodiment/bio direction.
 4. **FSOT-GPU CUDA system** — same pattern as your Desktop FSOT-GPU lab: own collapse θ / coherence gate / consensus (no softmax exp) / sparse active-key CUDA vs industry dense-SDPA, multi-lang parity, FSOT 2.1 verify bridge. Residual-gated into Lean as competitive + parity panels — **operators and seeds**, not weight import.
 5. **Processor function + RAM function** — map silicon work and memory as FSOT law (not opaque FLOPS/allocator bags): warp/pack (32 trits/u64), collapse work \(W=H\cdot S\cdot A\cdot D\), VRAM crystal sectors, usable capacity \(C_\mathrm{eff}\cdot\) formal boundary.
+6. **Cache hierarchy + interconnect** — line/trit packing, L1&lt;L2&lt;L3 order, working-set \(A_\mathrm{frac}\le\phi^{-4}\); bus “who may speak” = coherence gate (same connective law as attention).
+7. **Thin C pack parity** — optional portable evidence (`verification/c/fsot_pack_parity/`); not theory authority.
 
 ---
 

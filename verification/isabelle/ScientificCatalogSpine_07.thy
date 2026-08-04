@@ -3,6 +3,21 @@ theory ScientificCatalogSpine_07
 imports Complex_Main
 begin
 
+lemma cat_consciousness_species_multi_panel_records_pos: "0 < (269 :: nat)"
+  by eval
+
+lemma cat_consciousness_species_multi_panel_pooled_under_half_pct: "(0.0201195 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_consciousness_species_multi_panel_pooled_lt_half_pure: "(0.0201195 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_consciousness_species_multi_panel_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_consciousness_species_multi_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_federal_science_registry_panel_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -76,21 +91,6 @@ lemma cat_living_fsot_hardware_panel_max_scalar_under_half_pct: "(0.031506 :: re
   by eval
 
 lemma cat_living_fsot_hardware_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_living_fsot_hardware_panel_records_pos_2: "0 < (152 :: nat)"
-  by eval
-
-lemma cat_living_fsot_hardware_panel_pooled_under_half_pct_2: "(0.014767 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_living_fsot_hardware_panel_pooled_lt_half_pure_2: "(0.014767 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_living_fsot_hardware_panel_max_scalar_under_half_pct_2: "(0.031506 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_living_fsot_hardware_panel_green_flag_2: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_longevity_consciousness_coupling_panel_records_pos: "0 < (890 :: nat)"

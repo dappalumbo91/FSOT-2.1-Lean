@@ -3,6 +3,21 @@ theory ScientificCatalogSpine_02
 imports Complex_Main
 begin
 
+lemma cat_alternate_base_mathematics_spine_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_alternate_base_mathematics_spine_pooled_under_half_pct: "(0.004184779870129773 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_alternate_base_mathematics_spine_pooled_lt_half_pure: "(0.004184779870129773 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_alternate_base_mathematics_spine_max_scalar_under_half_pct: "(0.192564276915754 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_alternate_base_mathematics_spine_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_bibliography_lean_corpus_records_pos: "0 < (21 :: nat)"
   by eval
 
@@ -346,21 +361,6 @@ lemma cat_tier_93_dual_wave_spine_max_scalar_under_half_pct: "(0.192564276915754
   by eval
 
 lemma cat_tier_93_dual_wave_spine_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_toe_claim_certificate_bundle_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_toe_claim_certificate_bundle_pooled_under_half_pct: "(0.0020923899350648867 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_toe_claim_certificate_bundle_pooled_lt_half_pure: "(0.0020923899350648867 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_toe_claim_certificate_bundle_max_scalar_under_half_pct: "(0.192564276915754 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_toe_claim_certificate_bundle_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end
