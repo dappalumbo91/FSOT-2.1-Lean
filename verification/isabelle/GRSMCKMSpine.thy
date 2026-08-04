@@ -220,6 +220,216 @@ lemma pmns_hierarchy_s12_lt_s23_measured_pos: "(0::real) < 1.0"
 lemma pmns_hierarchy_s12_lt_s23_abs_diff: "0 < 0.000000001"
   by simp
 
+lemma wolfenstein_lambda_err_under_half: "0.00950413440123674 < (0.5::real)"
+  by simp
+
+lemma wolfenstein_lambda_measured_pos: "(0::real) < 0.225"
+  by simp
+
+lemma wolfenstein_lambda_abs_diff: "0.0000213843 < 0.00002159815"
+  by simp
+
+lemma wolfenstein_A_err_under_half: "0.009504134401235067 < (0.5::real)"
+  by simp
+
+lemma wolfenstein_A_measured_pos: "(0::real) < 0.826"
+  by simp
+
+lemma wolfenstein_A_abs_diff: "0.00007850415 < 0.00007928919"
+  by simp
+
+lemma wolfenstein_rho_bar_err_under_half: "0.009504134401234179 < (0.5::real)"
+  by simp
+
+lemma wolfenstein_rho_bar_measured_pos: "(0::real) < 0.159"
+  by simp
+
+lemma wolfenstein_rho_bar_abs_diff: "0.00001511157 < 0.00001526269"
+  by simp
+
+lemma wolfenstein_eta_bar_err_under_half: "0.009504134401242908 < (0.5::real)"
+  by simp
+
+lemma wolfenstein_eta_bar_measured_pos: "(0::real) < 0.348"
+  by simp
+
+lemma wolfenstein_eta_bar_abs_diff: "0.00003307439 < 0.00003340513"
+  by simp
+
+lemma wolfenstein_Vus_eq_lambda_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma wolfenstein_Vus_eq_lambda_measured_pos: "(0::real) < 0.225"
+  by simp
+
+lemma wolfenstein_Vus_eq_lambda_abs_diff: "0 < 0.000000001"
+  by simp
+
+lemma wolfenstein_Vcb_A_lambda2_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma wolfenstein_Vcb_A_lambda2_measured_pos: "(0::real) < 0.04182"
+  by simp
+
+lemma wolfenstein_Vcb_A_lambda2_abs_diff: "0 < 0.000000001"
+  by simp
+
+lemma wolfenstein_Vub_A_lambda3_r_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma wolfenstein_Vub_A_lambda3_r_measured_pos: "(0::real) < 0.00369"
+  by simp
+
+lemma wolfenstein_Vub_A_lambda3_r_abs_diff: "0 < 0.000000001"
+  by simp
+
+lemma wolfenstein_eta_bar_positive_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma wolfenstein_eta_bar_positive_measured_pos: "(0::real) < 1.0"
+  by simp
+
+lemma wolfenstein_eta_bar_positive_abs_diff: "0 < 0.000000001"
+  by simp
+
+lemma delta_ckm_deg_err_under_half: "0.009504134401239367 < (0.5::real)"
+  by simp
+
+lemma delta_ckm_deg_measured_pos: "(0::real) < 68.5"
+  by simp
+
+lemma delta_ckm_deg_abs_diff: "0.006510332064848967 < 0.006575435385498457"
+  by simp
+
+lemma delta_ckm_rad_err_under_half: "0.00950413440124136 < (0.5::real)"
+  by simp
+
+lemma delta_ckm_rad_measured_pos: "(0::real) < 1.196"
+  by simp
+
+lemma delta_ckm_rad_abs_diff: "0.0001136694 < 0.0001148061"
+  by simp
+
+lemma Jarlskog_J_err_under_half: "0.009504134401248197 < (0.5::real)"
+  by simp
+
+lemma Jarlskog_J_measured_pos: "(0::real) < 0.0000308"
+  by simp
+
+lemma Jarlskog_J_abs_diff: "0.000000002927273 < 0.000000002956547"
+  by simp
+
+lemma Jarlskog_wolfenstein_approx_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma Jarlskog_wolfenstein_approx_measured_pos: "(0::real) < 0.0000308"
+  by simp
+
+lemma Jarlskog_wolfenstein_approx_abs_diff: "0 < 0.000000001"
+  by simp
+
+lemma Jarlskog_positive_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma Jarlskog_positive_measured_pos: "(0::real) < 1.0"
+  by simp
+
+lemma Jarlskog_positive_abs_diff: "0 < 0.000000001"
+  by simp
+
+lemma unitary_triangle_Rb_err_under_half: "0.00950413440124138 < (0.5::real)"
+  by simp
+
+lemma unitary_triangle_Rb_measured_pos: "(0::real) < 0.382602927328059"
+  by simp
+
+lemma unitary_triangle_Rb_abs_diff: "0.0000363631 < 0.00003672673"
+  by simp
+
+lemma unitary_triangle_Rt_err_under_half: "0.009504134401243274 < (0.5::real)"
+  by simp
+
+lemma unitary_triangle_Rt_measured_pos: "(0::real) < 0.9101565799355624"
+  by simp
+
+lemma unitary_triangle_Rt_abs_diff: "0.0000865025 < 0.00008736753"
+  by simp
+
+lemma pmns_sin_delta_CP_err_under_half: "0.009504134401242693 < (0.5::real)"
+  by simp
+
+lemma pmns_sin_delta_CP_measured_pos: "(0::real) < 0.29237170472273677"
+  by simp
+
+lemma pmns_sin_delta_CP_abs_diff: "0.0000277874 < 0.00002806527"
+  by simp
+
+lemma dm2_21_err_under_half: "0.009504134401244663 < (0.5::real)"
+  by simp
+
+lemma dm2_21_measured_pos: "(0::real) < 0.0000753"
+  by simp
+
+lemma dm2_21_abs_diff: "0.000000007156613 < 0.00000000722818"
+  by simp
+
+lemma dm2_31_abs_err_under_half: "0.00950413440123409 < (0.5::real)"
+  by simp
+
+lemma dm2_31_abs_measured_pos: "(0::real) < 0.002453"
+  by simp
+
+lemma dm2_31_abs_abs_diff: "0.0000002331364 < 0.0000002354678"
+  by simp
+
+lemma dm2_hierarchy_ratio_err_under_half: "0.009504134401243234 < (0.5::real)"
+  by simp
+
+lemma dm2_hierarchy_ratio_measured_pos: "(0::real) < 32.57636122177955"
+  by simp
+
+lemma dm2_hierarchy_ratio_abs_diff: "0.0030961011535524108 < 0.003127062165088935"
+  by simp
+
+lemma dm2_31_gt_dm2_21_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma dm2_31_gt_dm2_21_measured_pos: "(0::real) < 1.0"
+  by simp
+
+lemma dm2_31_gt_dm2_21_abs_diff: "0 < 0.000000001"
+  by simp
+
+lemma ew_cos_theta_W_from_masses_err_under_half: "0.009504134401235296 < (0.5::real)"
+  by simp
+
+lemma ew_cos_theta_W_from_masses_measured_pos: "(0::real) < 0.8814466001956406"
+  by simp
+
+lemma ew_cos_theta_W_from_masses_abs_diff: "0.00008377387 < 0.00008461161"
+  by simp
+
+lemma ew_cos_theta_W_vs_sin2_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma ew_cos_theta_W_vs_sin2_measured_pos: "(0::real) < 0.8768010036490607"
+  by simp
+
+lemma ew_cos_theta_W_vs_sin2_abs_diff: "0 < 0.000000001"
+  by simp
+
+lemma sm_anomaly_cancel_per_generation_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma sm_anomaly_cancel_per_generation_abs_diff: "0 < 0.000000001"
+  by simp
+
+lemma sm_anomaly_SU2_U1_trace_Y_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma sm_anomaly_SU2_U1_trace_Y_abs_diff: "0 < 0.000000001"
+  by simp
+
 lemma charge_electron_L_err_under_half: "0 < (0.5::real)"
   by simp
 

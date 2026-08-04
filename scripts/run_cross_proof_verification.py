@@ -48,6 +48,7 @@ from cross_proof_lib import (  # noqa: E402
 OBL_CONNECTIVE = ROOT / "verification" / "obligations" / "connective_spine.json"
 OBL_FORMAL = ROOT / "verification" / "obligations" / "full_formal_spine.json"
 OBL_CATALOG = ROOT / "verification" / "obligations" / "scientific_catalog_spine.json"
+OBL_GR_SM_CKM = ROOT / "verification" / "obligations" / "gr_sm_ckm_spine.json"
 REPORT = ROOT / "data" / "cross_proof_verification_report.json"
 MANIFEST = ROOT / "data" / "cross_proof_verification_manifest.yaml"
 COQ_DIR = ROOT / "verification" / "coq"
@@ -666,6 +667,9 @@ def main() -> int:
         "generate_rust_obligation_replay.py",
         "run_smt_catalog_bounds.py",
         "run_tla_domain_routing_check.py",
+        # GR/SM/CKM/PMNS multi-prover spine (flavor + force package depth)
+        "export_and_generate_gr_sm_ckm_artifacts.py",
+        "run_gr_sm_ckm_verification.py",
     ]
     for script in pipeline:
         r = subprocess.run([sys.executable, str(ROOT / "scripts" / script)], cwd=str(ROOT))
@@ -679,6 +683,17 @@ def main() -> int:
         json.loads(OBL_CATALOG.read_text(encoding="utf-8"))
         if OBL_CATALOG.exists()
         else {"obligation_count": 0, "obligations": [], "domain_count": 0}
+    )
+    gr_sm_ckm = (
+        json.loads(OBL_GR_SM_CKM.read_text(encoding="utf-8"))
+        if OBL_GR_SM_CKM.exists()
+        else {"obligation_count": 0, "obligations": []}
+    )
+    gr_sm_ckm_report_path = ROOT / "data" / "gr_sm_ckm_verification_report.json"
+    gr_sm_ckm_report = (
+        json.loads(gr_sm_ckm_report_path.read_text(encoding="utf-8"))
+        if gr_sm_ckm_report_path.exists()
+        else {"overall_ok": False, "status": "missing"}
     )
     trans_path = ROOT / "verification" / "obligations" / "transcendental_bounds.json"
     transcendental = json.loads(trans_path.read_text(encoding="utf-8")) if trans_path.exists() else {
@@ -710,7 +725,10 @@ def main() -> int:
     py_formal, py_formal_ok = python_verify(provable_formal, "full_formal_provable")
     catalog_obs = catalog.get("obligations") or []
     py_catalog, py_catalog_ok = python_verify(catalog_obs, "scientific_catalog") if catalog_obs else ([], True)
-    py_ok = py_conn_ok and py_formal_ok and py_catalog_ok
+    gr_sm_obs = gr_sm_ckm.get("obligations") or []
+    py_gr_sm, py_gr_sm_ok = python_verify(gr_sm_obs, "gr_sm_ckm") if gr_sm_obs else ([], True)
+    gr_sm_layer_ok = bool(gr_sm_ckm_report.get("overall_ok")) and py_gr_sm_ok
+    py_ok = py_conn_ok and py_formal_ok and py_catalog_ok and py_gr_sm_ok
 
     smt_report_path = ROOT / "data" / "smt_catalog_bounds_report.json"
     smt_report = (
@@ -875,11 +893,30 @@ def main() -> int:
                 "report": str(smt_report_path),
             },
         },
+        "gr_sm_ckm_spine": {
+            "purpose": "multi_prover_GR_recovery_SM_force_CKM_PMNS_phases",
+            "obligation_count": gr_sm_ckm.get("obligation_count", len(gr_sm_obs)),
+            "python_decimal": {
+                "status": "passed" if py_gr_sm_ok else "failed",
+                "passed": sum(1 for r in py_gr_sm if r["passed"]),
+                "total": len(py_gr_sm),
+            },
+            "focused_report": gr_sm_ckm_report,
+            "lean_module": "FSOT/Formal/GRSMCKMSpine.lean",
+            "coq_module": "verification/coq/GRSMCKMSpine.v",
+            "isabelle_module": "verification/isabelle/GRSMCKMSpine.thy",
+            "fstar_module": "verification/fstar/FSOTGRSMCKM.fst",
+            "rust_crate": "verification/rust/fsot_gr_sm_ckm_replay",
+            "smt2": "verification/smt/gr_sm_ckm_bounds.smt2",
+            "tla": "verification/tla/FSOTGRSMCKM.tla",
+            "layer_ok": gr_sm_layer_ok,
+        },
         "pipeline_roles": {
             "lean4_master_integrator": "Primary Real definitions, Mathlib-scale structures, domain certificates",
             "coq_isabelle_fstar_rust": "Independent re-proof / export triangulation of numeric + catalog gates",
             "smt_z3_cvc5_bulk": "Automated continuous residual / margin bounds on catalog obligations",
             "tla_plus_state_flow": "Domain-routing / preregistered-fold execution state machine",
+            "gr_sm_ckm_flavor_depth": "CKM/PMNS phases, Jarlskog, Wolfenstein, SM anomaly — multi-prover export",
             "no_new_provers": True,
         },
         "frameworks": {
@@ -891,6 +928,8 @@ def main() -> int:
                 "full_formal_total": len(py_formal),
                 "scientific_catalog_passed": sum(1 for r in py_catalog if r["passed"]),
                 "scientific_catalog_total": len(py_catalog),
+                "gr_sm_ckm_passed": sum(1 for r in py_gr_sm if r["passed"]),
+                "gr_sm_ckm_total": len(py_gr_sm),
             },
             "smt_catalog_bounds": smt_report,
             "tla_domain_routing": tla_report,
@@ -966,7 +1005,8 @@ def main() -> int:
             and qemu_harness.get("disk_status") == "passed"
             and smt_ok
             and tla_ok
-            and py_catalog_ok,
+            and py_catalog_ok
+            and gr_sm_layer_ok,
         "github_ready": margin_registry_count == 0
             and len(false_margin_violations) == 0
             and py_ok
@@ -980,9 +1020,10 @@ def main() -> int:
             and qemu_harness.get("status") == "passed"
             and smt_ok
             and tla_ok
-            and py_catalog_ok,
+            and py_catalog_ok
+            and gr_sm_layer_ok,
         "github_ready_note": (
-            "Formal numeric spine + scientific catalog re-proof + SMT bulk bounds + TLA+ routing + "
+            "Formal numeric spine + scientific catalog re-proof + GR/SM/CKM multi-prover + SMT bulk + TLA+ routing + "
             f"QEMU bare-metal verified; {len(structural_bundle_excluded)} structural bundle_conj rows "
             "excluded by design; ESP32 hardware is optional unless --require-esp32."
             if margin_registry_count == 0 and len(false_margin_violations) == 0
@@ -996,7 +1037,8 @@ def main() -> int:
             and isa_refinement_ok
             and rust.get("status") == "passed"
             and rust_refinement_ok
-            and py_catalog_ok,
+            and py_catalog_ok
+            and gr_sm_layer_ok,
         "four_way_verification": py_ok
             and coq.get("status") == "passed"
             and isa.get("status") == "passed"

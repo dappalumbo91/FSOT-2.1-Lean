@@ -227,6 +227,216 @@ theorem pmns_hierarchy_s12_lt_s23_measured_pos : (0 : ℝ) < (1.0 : ℝ) := by
 theorem pmns_hierarchy_s12_lt_s23_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
   norm_num
 
+theorem wolfenstein_lambda_err_under_half : (0.00950413440123674 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_lambda_measured_pos : (0 : ℝ) < (0.225 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_lambda_abs_diff : (2.1384302402782662e-05 : ℝ) < (2.159814542781049e-05 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_A_err_under_half : (0.009504134401235067 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_A_measured_pos : (0 : ℝ) < (0.826 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_A_abs_diff : (7.850415015420165e-05 : ℝ) < (7.928919165674366e-05 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_rho_bar_err_under_half : (0.009504134401234179 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_rho_bar_measured_pos : (0 : ℝ) < (0.159 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_rho_bar_abs_diff : (1.5111573697962344e-05 : ℝ) < (1.5262689435941968e-05 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_eta_bar_err_under_half : (0.009504134401242908 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_eta_bar_measured_pos : (0 : ℝ) < (0.348 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_eta_bar_abs_diff : (3.3074387716325315e-05 : ℝ) < (3.340513159448857e-05 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_Vus_eq_lambda_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_Vus_eq_lambda_measured_pos : (0 : ℝ) < (0.225 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_Vus_eq_lambda_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_Vcb_A_lambda2_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_Vcb_A_lambda2_measured_pos : (0 : ℝ) < (0.04182 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_Vcb_A_lambda2_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_Vub_A_lambda3_r_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_Vub_A_lambda3_r_measured_pos : (0 : ℝ) < (0.00369 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_Vub_A_lambda3_r_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_eta_bar_positive_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_eta_bar_positive_measured_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
+theorem wolfenstein_eta_bar_positive_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
+  norm_num
+
+theorem delta_ckm_deg_err_under_half : (0.009504134401239367 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem delta_ckm_deg_measured_pos : (0 : ℝ) < (68.5 : ℝ) := by
+  norm_num
+
+theorem delta_ckm_deg_abs_diff : (0.006510332064848967 : ℝ) < (0.006575435385498457 : ℝ) := by
+  norm_num
+
+theorem delta_ckm_rad_err_under_half : (0.00950413440124136 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem delta_ckm_rad_measured_pos : (0 : ℝ) < (1.196 : ℝ) := by
+  norm_num
+
+theorem delta_ckm_rad_abs_diff : (0.00011366944743884666 : ℝ) < (0.00011480614191423512 : ℝ) := by
+  norm_num
+
+theorem Jarlskog_J_err_under_half : (0.009504134401248197 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem Jarlskog_J_measured_pos : (0 : ℝ) < (3.08e-05 : ℝ) := by
+  norm_num
+
+theorem Jarlskog_J_abs_diff : (2.927273395584445e-09 : ℝ) < (2.9565471295402897e-09 : ℝ) := by
+  norm_num
+
+theorem Jarlskog_wolfenstein_approx_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem Jarlskog_wolfenstein_approx_measured_pos : (0 : ℝ) < (3.08e-05 : ℝ) := by
+  norm_num
+
+theorem Jarlskog_wolfenstein_approx_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
+  norm_num
+
+theorem Jarlskog_positive_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem Jarlskog_positive_measured_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
+theorem Jarlskog_positive_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
+  norm_num
+
+theorem unitary_triangle_Rb_err_under_half : (0.00950413440124138 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem unitary_triangle_Rb_measured_pos : (0 : ℝ) < (0.382602927328059 : ℝ) := by
+  norm_num
+
+theorem unitary_triangle_Rb_abs_diff : (3.636309643634261e-05 : ℝ) < (3.672672740170604e-05 : ℝ) := by
+  norm_num
+
+theorem unitary_triangle_Rt_err_under_half : (0.009504134401243274 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem unitary_triangle_Rt_measured_pos : (0 : ℝ) < (0.9101565799355624 : ℝ) := by
+  norm_num
+
+theorem unitary_triangle_Rt_abs_diff : (8.650250461883502e-05 : ℝ) < (8.736752966602337e-05 : ℝ) := by
+  norm_num
+
+theorem pmns_sin_delta_CP_err_under_half : (0.009504134401242693 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem pmns_sin_delta_CP_measured_pos : (0 : ℝ) < (0.29237170472273677 : ℝ) := by
+  norm_num
+
+theorem pmns_sin_delta_CP_abs_diff : (2.7787399768053334e-05 : ℝ) < (2.8065273766733868e-05 : ℝ) := by
+  norm_num
+
+theorem dm2_21_err_under_half : (0.009504134401244663 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem dm2_21_measured_pos : (0 : ℝ) < (7.53e-05 : ℝ) := by
+  norm_num
+
+theorem dm2_21_abs_diff : (7.1566132041372315e-09 : ℝ) < (7.228180336178604e-09 : ℝ) := by
+  norm_num
+
+theorem dm2_31_abs_err_under_half : (0.00950413440123409 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem dm2_31_abs_measured_pos : (0 : ℝ) < (0.002453 : ℝ) := by
+  norm_num
+
+theorem dm2_31_abs_abs_diff : (2.3313641686227224e-07 : ℝ) < (2.3546778203089498e-07 : ℝ) := by
+  norm_num
+
+theorem dm2_hierarchy_ratio_err_under_half : (0.009504134401243234 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem dm2_hierarchy_ratio_measured_pos : (0 : ℝ) < (32.57636122177955 : ℝ) := by
+  norm_num
+
+theorem dm2_hierarchy_ratio_abs_diff : (0.0030961011535524108 : ℝ) < (0.003127062165088935 : ℝ) := by
+  norm_num
+
+theorem dm2_31_gt_dm2_21_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem dm2_31_gt_dm2_21_measured_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
+theorem dm2_31_gt_dm2_21_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
+  norm_num
+
+theorem ew_cos_theta_W_from_masses_err_under_half : (0.009504134401235296 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem ew_cos_theta_W_from_masses_measured_pos : (0 : ℝ) < (0.8814466001956406 : ℝ) := by
+  norm_num
+
+theorem ew_cos_theta_W_from_masses_abs_diff : (8.377386955771282e-05 : ℝ) < (8.461160825428995e-05 : ℝ) := by
+  norm_num
+
+theorem ew_cos_theta_W_vs_sin2_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem ew_cos_theta_W_vs_sin2_measured_pos : (0 : ℝ) < (0.8768010036490607 : ℝ) := by
+  norm_num
+
+theorem ew_cos_theta_W_vs_sin2_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
+  norm_num
+
+theorem sm_anomaly_cancel_per_generation_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem sm_anomaly_cancel_per_generation_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
+  norm_num
+
+theorem sm_anomaly_SU2_U1_trace_Y_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem sm_anomaly_SU2_U1_trace_Y_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
+  norm_num
+
 theorem charge_electron_L_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 

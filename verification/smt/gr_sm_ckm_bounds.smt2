@@ -146,221 +146,361 @@
 (assert (! (> 1.0 0.0) :named o70))
 ; pmns_hierarchy_s12_lt_s23_abs_diff kind=abs_diff_lt_lit
 (assert (! (< 0.0 0.000000001) :named o71))
-; charge_electron_L_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o72))
-; charge_electron_L_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o73))
-; charge_neutrino_L_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o74))
-; charge_neutrino_L_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o75))
-; charge_up_L_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o76))
-; charge_up_L_measured_pos kind=pos
-(assert (! (> 0.66666666666666663 0.0) :named o77))
-; charge_up_L_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o78))
-; charge_down_L_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o79))
-; charge_down_L_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o80))
-; charge_u_R_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o81))
-; charge_u_R_measured_pos kind=pos
-(assert (! (> 0.66666666666666663 0.0) :named o82))
-; charge_u_R_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o83))
-; charge_d_R_err_under_half kind=lt_half
+; wolfenstein_lambda_err_under_half kind=lt_half
+(assert (! (< 0.009504134401236739 0.5) :named o72))
+; wolfenstein_lambda_measured_pos kind=pos
+(assert (! (> 0.225000000000000006 0.0) :named o73))
+; wolfenstein_lambda_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000021384302402783 0.00002159814542781) :named o74))
+; wolfenstein_A_err_under_half kind=lt_half
+(assert (! (< 0.009504134401235067 0.5) :named o75))
+; wolfenstein_A_measured_pos kind=pos
+(assert (! (> 0.825999999999999956 0.0) :named o76))
+; wolfenstein_A_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000078504150154202 0.000079289191656744) :named o77))
+; wolfenstein_rho_bar_err_under_half kind=lt_half
+(assert (! (< 0.009504134401234179 0.5) :named o78))
+; wolfenstein_rho_bar_measured_pos kind=pos
+(assert (! (> 0.159000000000000002 0.0) :named o79))
+; wolfenstein_rho_bar_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000015111573697962 0.000015262689435942) :named o80))
+; wolfenstein_eta_bar_err_under_half kind=lt_half
+(assert (! (< 0.009504134401242908 0.5) :named o81))
+; wolfenstein_eta_bar_measured_pos kind=pos
+(assert (! (> 0.347999999999999976 0.0) :named o82))
+; wolfenstein_eta_bar_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000033074387716325 0.000033405131594489) :named o83))
+; wolfenstein_Vus_eq_lambda_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o84))
-; charge_d_R_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o85))
-; gr_2phi_classical_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o86))
-; gr_2phi_classical_measured_pos kind=pos
-(assert (! (> 0.000002 0.0) :named o87))
-; gr_2phi_classical_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o88))
-; gr_einstein_half_R_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o89))
-; gr_einstein_half_R_measured_pos kind=pos
-(assert (! (> 0.5 0.0) :named o90))
-; gr_einstein_half_R_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o91))
-; gr_light_deflection_arcsec_solar_err_under_half kind=lt_half
-(assert (! (< 0.010049118924188203 0.5) :named o92))
-; gr_light_deflection_arcsec_solar_measured_pos kind=pos
-(assert (! (> 1.75099999999999989 0.0) :named o93))
-; gr_light_deflection_arcsec_solar_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000175960072362535 0.000177719673087161) :named o94))
-; gr_mercury_perihelion_arcsec_cy_err_under_half kind=lt_half
-(assert (! (< 0.01004911892419796 0.5) :named o95))
-; gr_mercury_perihelion_arcsec_cy_measured_pos kind=pos
-(assert (! (> 42.979999999999996874 0.0) :named o96))
-; gr_mercury_perihelion_arcsec_cy_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.004319111313620283 0.004362302426757486) :named o97))
-; n_U1_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o98))
-; n_U1_measured_pos kind=pos
-(assert (! (> 1.0 0.0) :named o99))
-; n_U1_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o100))
-; n_SU2_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o101))
-; n_SU2_measured_pos kind=pos
-(assert (! (> 3.0 0.0) :named o102))
-; n_SU2_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o103))
-; n_SU3_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o104))
-; n_SU3_measured_pos kind=pos
-(assert (! (> 8.0 0.0) :named o105))
-; n_SU3_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o106))
-; n_gen_total_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o107))
-; n_gen_total_measured_pos kind=pos
-(assert (! (> 12.0 0.0) :named o108))
-; n_gen_total_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o109))
-; n_fermion_generations_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o110))
-; n_fermion_generations_measured_pos kind=pos
-(assert (! (> 3.0 0.0) :named o111))
-; n_fermion_generations_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.0 0.000000001) :named o112))
-; ckm_unitarity_row_u_unitarity_tight kind=abs_diff_lt_lit
-(assert (! (< 0.00000346139999996 0.002) :named o113))
-; ckm_unitarity_row_c_unitarity_tight kind=abs_diff_lt_lit
-(assert (! (< 0.000006287900000124 0.002) :named o114))
-; ckm_unitarity_row_t_unitarity_tight kind=abs_diff_lt_lit
-(assert (! (< 0.000000567176000055 0.002) :named o115))
-; ckm_unitarity_col_d_unitarity_tight kind=abs_diff_lt_lit
-(assert (! (< 0.000006612999999933 0.002) :named o116))
-; ckm_unitarity_col_s_unitarity_tight kind=abs_diff_lt_lit
-(assert (! (< 0.000003009900000017 0.002) :named o117))
-; ckm_unitarity_col_b_unitarity_tight kind=abs_diff_lt_lit
-(assert (! (< 0.000000693576000077 0.002) :named o118))
-; gauge_n_U1_eq kind=eq_nat
-(assert (! (= 1 1) :named o119))
-; gauge_n_U1_pos kind=nat_pos
-(assert (! (> 1 0) :named o120))
-; gauge_n_SU2_eq kind=eq_nat
-(assert (! (= 3 3) :named o121))
-; gauge_n_SU2_pos kind=nat_pos
-(assert (! (> 3 0) :named o122))
-; gauge_n_SU3_eq kind=eq_nat
-(assert (! (= 8 8) :named o123))
-; gauge_n_SU3_pos kind=nat_pos
-(assert (! (> 8 0) :named o124))
-; gauge_n_gen_total_eq kind=eq_nat
-(assert (! (= 12 12) :named o125))
-; gauge_n_gen_total_pos kind=nat_pos
-(assert (! (> 12 0) :named o126))
-; gauge_n_fermion_gen_eq kind=eq_nat
-(assert (! (= 3 3) :named o127))
-; gauge_n_fermion_gen_pos kind=nat_pos
-(assert (! (> 3 0) :named o128))
-; gr_einstein_trace_reverse_structure_err_under_half kind=lt_half
+; wolfenstein_Vus_eq_lambda_measured_pos kind=pos
+(assert (! (> 0.225000000000000006 0.0) :named o85))
+; wolfenstein_Vus_eq_lambda_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o86))
+; wolfenstein_Vcb_A_lambda2_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o87))
+; wolfenstein_Vcb_A_lambda2_measured_pos kind=pos
+(assert (! (> 0.041820000000000003 0.0) :named o88))
+; wolfenstein_Vcb_A_lambda2_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o89))
+; wolfenstein_Vub_A_lambda3_r_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o90))
+; wolfenstein_Vub_A_lambda3_r_measured_pos kind=pos
+(assert (! (> 0.00369 0.0) :named o91))
+; wolfenstein_Vub_A_lambda3_r_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o92))
+; wolfenstein_eta_bar_positive_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o93))
+; wolfenstein_eta_bar_positive_measured_pos kind=pos
+(assert (! (> 1.0 0.0) :named o94))
+; wolfenstein_eta_bar_positive_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o95))
+; delta_ckm_deg_err_under_half kind=lt_half
+(assert (! (< 0.009504134401239367 0.5) :named o96))
+; delta_ckm_deg_measured_pos kind=pos
+(assert (! (> 68.5 0.0) :named o97))
+; delta_ckm_deg_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.006510332064848967 0.006575435385498457) :named o98))
+; delta_ckm_rad_err_under_half kind=lt_half
+(assert (! (< 0.00950413440124136 0.5) :named o99))
+; delta_ckm_rad_measured_pos kind=pos
+(assert (! (> 1.195999999999999952 0.0) :named o100))
+; delta_ckm_rad_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000113669447438847 0.000114806141914235) :named o101))
+; Jarlskog_J_err_under_half kind=lt_half
+(assert (! (< 0.009504134401248197 0.5) :named o102))
+; Jarlskog_J_measured_pos kind=pos
+(assert (! (> 0.0000308 0.0) :named o103))
+; Jarlskog_J_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000000002927273396 0.00000000295654713) :named o104))
+; Jarlskog_wolfenstein_approx_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o105))
+; Jarlskog_wolfenstein_approx_measured_pos kind=pos
+(assert (! (> 0.0000308 0.0) :named o106))
+; Jarlskog_wolfenstein_approx_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o107))
+; Jarlskog_positive_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o108))
+; Jarlskog_positive_measured_pos kind=pos
+(assert (! (> 1.0 0.0) :named o109))
+; Jarlskog_positive_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o110))
+; unitary_triangle_Rb_err_under_half kind=lt_half
+(assert (! (< 0.00950413440124138 0.5) :named o111))
+; unitary_triangle_Rb_measured_pos kind=pos
+(assert (! (> 0.382602927328059006 0.0) :named o112))
+; unitary_triangle_Rb_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000036363096436343 0.000036726727401706) :named o113))
+; unitary_triangle_Rt_err_under_half kind=lt_half
+(assert (! (< 0.009504134401243274 0.5) :named o114))
+; unitary_triangle_Rt_measured_pos kind=pos
+(assert (! (> 0.910156579935562426 0.0) :named o115))
+; unitary_triangle_Rt_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000086502504618835 0.000087367529666023) :named o116))
+; pmns_sin_delta_CP_err_under_half kind=lt_half
+(assert (! (< 0.009504134401242693 0.5) :named o117))
+; pmns_sin_delta_CP_measured_pos kind=pos
+(assert (! (> 0.292371704722736769 0.0) :named o118))
+; pmns_sin_delta_CP_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000027787399768053 0.000028065273766734) :named o119))
+; dm2_21_err_under_half kind=lt_half
+(assert (! (< 0.009504134401244663 0.5) :named o120))
+; dm2_21_measured_pos kind=pos
+(assert (! (> 0.0000753 0.0) :named o121))
+; dm2_21_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000000007156613204 0.000000007228180336) :named o122))
+; dm2_31_abs_err_under_half kind=lt_half
+(assert (! (< 0.00950413440123409 0.5) :named o123))
+; dm2_31_abs_measured_pos kind=pos
+(assert (! (> 0.002453 0.0) :named o124))
+; dm2_31_abs_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000000233136416862 0.000000235467782031) :named o125))
+; dm2_hierarchy_ratio_err_under_half kind=lt_half
+(assert (! (< 0.009504134401243234 0.5) :named o126))
+; dm2_hierarchy_ratio_measured_pos kind=pos
+(assert (! (> 32.576361221779549737 0.0) :named o127))
+; dm2_hierarchy_ratio_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.003096101153552411 0.003127062165088935) :named o128))
+; dm2_31_gt_dm2_21_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o129))
-; gr_einstein_trace_reverse_structure_meas_pos kind=pos
+; dm2_31_gt_dm2_21_measured_pos kind=pos
 (assert (! (> 1.0 0.0) :named o130))
-; gr_weak_field_2phi_deviation_err_under_half kind=lt_half
-(assert (! (< 0.010049119969584104 0.5) :named o131))
-; gr_weak_field_2phi_deviation_meas_pos kind=pos
-(assert (! (> 0.000002 0.0) :named o132))
-; gr_weak_field_gii_err_under_half kind=lt_half
-(assert (! (< 0.000000020098285487 0.5) :named o133))
-; gr_weak_field_gii_meas_pos kind=pos
-(assert (! (> 0.999998000000000054 0.0) :named o134))
-; gr_poisson_source_positive_err_under_half kind=lt_half
+; dm2_31_gt_dm2_21_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o131))
+; ew_cos_theta_W_from_masses_err_under_half kind=lt_half
+(assert (! (< 0.009504134401235296 0.5) :named o132))
+; ew_cos_theta_W_from_masses_measured_pos kind=pos
+(assert (! (> 0.881446600195640584 0.0) :named o133))
+; ew_cos_theta_W_from_masses_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000083773869557713 0.00008461160825429) :named o134))
+; ew_cos_theta_W_vs_sin2_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o135))
-; gr_poisson_source_positive_meas_pos kind=pos
-(assert (! (> 1.0 0.0) :named o136))
-; gr_schwarzschild_radius_sun_m_err_under_half kind=lt_half
-(assert (! (< 0.013075989286963106 0.5) :named o137))
-; gr_schwarzschild_radius_sun_m_meas_pos kind=pos
-(assert (! (> 2953.25 0.0) :named o138))
-; gr_solar_light_deflection_rad_err_under_half kind=lt_half
-(assert (! (< 0.023944368260521525 0.5) :named o139))
-; gr_solar_light_deflection_rad_meas_pos kind=pos
-(assert (! (> 0.000008489087556228 0.0) :named o140))
-; gr_mercury_perihelion_arcsec_cy_meas_pos kind=pos
-(assert (! (> 42.979999999999996874 0.0) :named o141))
-; gr_friedmann_H2_positive_err_under_half kind=lt_half
+; ew_cos_theta_W_vs_sin2_measured_pos kind=pos
+(assert (! (> 0.876801003649060662 0.0) :named o136))
+; ew_cos_theta_W_vs_sin2_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o137))
+; sm_anomaly_cancel_per_generation_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o138))
+; sm_anomaly_cancel_per_generation_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o139))
+; sm_anomaly_SU2_U1_trace_Y_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o140))
+; sm_anomaly_SU2_U1_trace_Y_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o141))
+; charge_electron_L_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o142))
-; gr_friedmann_H2_positive_meas_pos kind=pos
-(assert (! (> 1.0 0.0) :named o143))
-; gr_acoustic_null_cone_err_under_half kind=lt_half
+; charge_electron_L_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o143))
+; charge_neutrino_L_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o144))
-; gr_acoustic_null_cone_meas_pos kind=pos
-(assert (! (> 0.769345509066079791 0.0) :named o145))
-; gr_geodesic_deviation_scale_err_under_half kind=lt_half
-(assert (! (< 0.010049118924187393 0.5) :named o146))
-; gr_geodesic_deviation_scale_meas_pos kind=pos
-(assert (! (> 0.0000000001 0.0) :named o147))
-; gr_planck_length_m_err_under_half kind=lt_half
-(assert (! (< 0.000000081231583174 0.5) :named o148))
-; gr_G_newton_si_err_under_half kind=lt_half
-(assert (! (< 0.010049118924197253 0.5) :named o149))
-; gr_G_newton_si_meas_pos kind=pos
-(assert (! (> 0.000000000066743 0.0) :named o150))
-; gr_c_light_si_exact_err_under_half kind=lt_half
+; charge_neutrino_L_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o145))
+; charge_up_L_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o146))
+; charge_up_L_measured_pos kind=pos
+(assert (! (> 0.66666666666666663 0.0) :named o147))
+; charge_up_L_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o148))
+; charge_down_L_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o149))
+; charge_down_L_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o150))
+; charge_u_R_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o151))
-; gr_c_light_si_exact_meas_pos kind=pos
-(assert (! (> 299792458.0 0.0) :named o152))
-; sm_generators_U1Y_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o153))
-; sm_generators_SU2L_err_under_half kind=lt_half
+; charge_u_R_measured_pos kind=pos
+(assert (! (> 0.66666666666666663 0.0) :named o152))
+; charge_u_R_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o153))
+; charge_d_R_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o154))
-; sm_generators_SU3c_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o155))
-; sm_alpha_em_inv_err_under_half kind=lt_half
-(assert (! (< 0.009504134401232328 0.5) :named o156))
-; sm_sin2_theta_W_err_under_half kind=lt_half
-(assert (! (< 0.009504134401234463 0.5) :named o157))
-; sm_alpha_s_MZ_err_under_half kind=lt_half
-(assert (! (< 0.009504134401239374 0.5) :named o158))
-; sm_total_gauge_bosons_generators_err_under_half kind=lt_half
+; charge_d_R_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o155))
+; gr_2phi_classical_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o156))
+; gr_2phi_classical_measured_pos kind=pos
+(assert (! (> 0.000002 0.0) :named o157))
+; gr_2phi_classical_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o158))
+; gr_einstein_half_R_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o159))
-; sm_m_W_err_under_half kind=lt_half
-(assert (! (< 0.009504134401231034 0.5) :named o160))
-; sm_m_Z_err_under_half kind=lt_half
-(assert (! (< 0.009504134401234711 0.5) :named o161))
-; sm_m_H_err_under_half kind=lt_half
-(assert (! (< 0.009504134401234109 0.5) :named o162))
-; sm_m_t_err_under_half kind=lt_half
-(assert (! (< 0.009504134401232968 0.5) :named o163))
-; sm_G_F_GeV_m2_err_under_half kind=lt_half
-(assert (! (< 0.009504134401238606 0.5) :named o164))
-; sm_fermion_generations_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o165))
-; sm_charge_electron_L_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o166))
-; sm_charge_neutrino_L_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o167))
-; sm_charge_up_L_err_under_half kind=lt_half
+; gr_einstein_half_R_measured_pos kind=pos
+(assert (! (> 0.5 0.0) :named o160))
+; gr_einstein_half_R_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o161))
+; gr_light_deflection_arcsec_solar_err_under_half kind=lt_half
+(assert (! (< 0.010049118924188203 0.5) :named o162))
+; gr_light_deflection_arcsec_solar_measured_pos kind=pos
+(assert (! (> 1.75099999999999989 0.0) :named o163))
+; gr_light_deflection_arcsec_solar_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.000175960072362535 0.000177719673087161) :named o164))
+; gr_mercury_perihelion_arcsec_cy_err_under_half kind=lt_half
+(assert (! (< 0.01004911892419796 0.5) :named o165))
+; gr_mercury_perihelion_arcsec_cy_measured_pos kind=pos
+(assert (! (> 42.979999999999996874 0.0) :named o166))
+; gr_mercury_perihelion_arcsec_cy_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.004319111313620283 0.004362302426757486) :named o167))
+; n_U1_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o168))
-; sm_charge_down_L_err_under_half kind=lt_half
-(assert (! (< 0.000000000000016653 0.5) :named o169))
-; sm_charge_positron_R_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o170))
-; sm_m_e_err_under_half kind=lt_half
-(assert (! (< 0.009504134401230541 0.5) :named o171))
-; sm_m_mu_err_under_half kind=lt_half
-(assert (! (< 0.009504134401236932 0.5) :named o172))
-; sm_m_tau_err_under_half kind=lt_half
-(assert (! (< 0.009504134401234309 0.5) :named o173))
-; sm_ratio_mu_e_err_under_half kind=lt_half
+; n_U1_measured_pos kind=pos
+(assert (! (> 1.0 0.0) :named o169))
+; n_U1_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o170))
+; n_SU2_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o171))
+; n_SU2_measured_pos kind=pos
+(assert (! (> 3.0 0.0) :named o172))
+; n_SU2_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o173))
+; n_SU3_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o174))
-; sm_ratio_tau_mu_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o175))
-; sm_higgs_mass_from_potential_err_under_half kind=lt_half
-(assert (! (< 0.004751954295268555 0.5) :named o176))
-; sm_higgs_vev_err_under_half kind=lt_half
+; n_SU3_measured_pos kind=pos
+(assert (! (> 8.0 0.0) :named o175))
+; n_SU3_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o176))
+; n_gen_total_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o177))
+; n_gen_total_measured_pos kind=pos
+(assert (! (> 12.0 0.0) :named o178))
+; n_gen_total_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o179))
+; n_fermion_generations_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o180))
+; n_fermion_generations_measured_pos kind=pos
+(assert (! (> 3.0 0.0) :named o181))
+; n_fermion_generations_abs_diff kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000001) :named o182))
+; ckm_unitarity_row_u_unitarity_tight kind=abs_diff_lt_lit
+(assert (! (< 0.00000346139999996 0.002) :named o183))
+; ckm_unitarity_row_c_unitarity_tight kind=abs_diff_lt_lit
+(assert (! (< 0.000006287900000124 0.002) :named o184))
+; ckm_unitarity_row_t_unitarity_tight kind=abs_diff_lt_lit
+(assert (! (< 0.000000567176000055 0.002) :named o185))
+; ckm_unitarity_col_d_unitarity_tight kind=abs_diff_lt_lit
+(assert (! (< 0.000006612999999933 0.002) :named o186))
+; ckm_unitarity_col_s_unitarity_tight kind=abs_diff_lt_lit
+(assert (! (< 0.000003009900000017 0.002) :named o187))
+; ckm_unitarity_col_b_unitarity_tight kind=abs_diff_lt_lit
+(assert (! (< 0.000000693576000077 0.002) :named o188))
+; gauge_n_U1_eq kind=eq_nat
+(assert (! (= 1 1) :named o189))
+; gauge_n_U1_pos kind=nat_pos
+(assert (! (> 1 0) :named o190))
+; gauge_n_SU2_eq kind=eq_nat
+(assert (! (= 3 3) :named o191))
+; gauge_n_SU2_pos kind=nat_pos
+(assert (! (> 3 0) :named o192))
+; gauge_n_SU3_eq kind=eq_nat
+(assert (! (= 8 8) :named o193))
+; gauge_n_SU3_pos kind=nat_pos
+(assert (! (> 8 0) :named o194))
+; gauge_n_gen_total_eq kind=eq_nat
+(assert (! (= 12 12) :named o195))
+; gauge_n_gen_total_pos kind=nat_pos
+(assert (! (> 12 0) :named o196))
+; gauge_n_fermion_gen_eq kind=eq_nat
+(assert (! (= 3 3) :named o197))
+; gauge_n_fermion_gen_pos kind=nat_pos
+(assert (! (> 3 0) :named o198))
+; gr_einstein_trace_reverse_structure_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o199))
+; gr_einstein_trace_reverse_structure_meas_pos kind=pos
+(assert (! (> 1.0 0.0) :named o200))
+; gr_weak_field_2phi_deviation_err_under_half kind=lt_half
+(assert (! (< 0.010049119969584104 0.5) :named o201))
+; gr_weak_field_2phi_deviation_meas_pos kind=pos
+(assert (! (> 0.000002 0.0) :named o202))
+; gr_weak_field_gii_err_under_half kind=lt_half
+(assert (! (< 0.000000020098285487 0.5) :named o203))
+; gr_weak_field_gii_meas_pos kind=pos
+(assert (! (> 0.999998000000000054 0.0) :named o204))
+; gr_poisson_source_positive_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o205))
+; gr_poisson_source_positive_meas_pos kind=pos
+(assert (! (> 1.0 0.0) :named o206))
+; gr_schwarzschild_radius_sun_m_err_under_half kind=lt_half
+(assert (! (< 0.013075989286963106 0.5) :named o207))
+; gr_schwarzschild_radius_sun_m_meas_pos kind=pos
+(assert (! (> 2953.25 0.0) :named o208))
+; gr_solar_light_deflection_rad_err_under_half kind=lt_half
+(assert (! (< 0.023944368260521525 0.5) :named o209))
+; gr_solar_light_deflection_rad_meas_pos kind=pos
+(assert (! (> 0.000008489087556228 0.0) :named o210))
+; gr_mercury_perihelion_arcsec_cy_meas_pos kind=pos
+(assert (! (> 42.979999999999996874 0.0) :named o211))
+; gr_friedmann_H2_positive_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o212))
+; gr_friedmann_H2_positive_meas_pos kind=pos
+(assert (! (> 1.0 0.0) :named o213))
+; gr_acoustic_null_cone_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o214))
+; gr_acoustic_null_cone_meas_pos kind=pos
+(assert (! (> 0.769345509066079791 0.0) :named o215))
+; gr_geodesic_deviation_scale_err_under_half kind=lt_half
+(assert (! (< 0.010049118924187393 0.5) :named o216))
+; gr_geodesic_deviation_scale_meas_pos kind=pos
+(assert (! (> 0.0000000001 0.0) :named o217))
+; gr_planck_length_m_err_under_half kind=lt_half
+(assert (! (< 0.000000081231583174 0.5) :named o218))
+; gr_G_newton_si_err_under_half kind=lt_half
+(assert (! (< 0.010049118924197253 0.5) :named o219))
+; gr_G_newton_si_meas_pos kind=pos
+(assert (! (> 0.000000000066743 0.0) :named o220))
+; gr_c_light_si_exact_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o221))
+; gr_c_light_si_exact_meas_pos kind=pos
+(assert (! (> 299792458.0 0.0) :named o222))
+; sm_generators_U1Y_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o223))
+; sm_generators_SU2L_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o224))
+; sm_generators_SU3c_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o225))
+; sm_alpha_em_inv_err_under_half kind=lt_half
+(assert (! (< 0.009504134401232328 0.5) :named o226))
+; sm_sin2_theta_W_err_under_half kind=lt_half
+(assert (! (< 0.009504134401234463 0.5) :named o227))
+; sm_alpha_s_MZ_err_under_half kind=lt_half
+(assert (! (< 0.009504134401239374 0.5) :named o228))
+; sm_total_gauge_bosons_generators_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o229))
+; sm_m_W_err_under_half kind=lt_half
+(assert (! (< 0.009504134401231034 0.5) :named o230))
+; sm_m_Z_err_under_half kind=lt_half
+(assert (! (< 0.009504134401234711 0.5) :named o231))
+; sm_m_H_err_under_half kind=lt_half
+(assert (! (< 0.009504134401234109 0.5) :named o232))
+; sm_m_t_err_under_half kind=lt_half
+(assert (! (< 0.009504134401232968 0.5) :named o233))
+; sm_G_F_GeV_m2_err_under_half kind=lt_half
+(assert (! (< 0.009504134401238606 0.5) :named o234))
+; sm_fermion_generations_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o235))
+; sm_charge_electron_L_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o236))
+; sm_charge_neutrino_L_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o237))
+; sm_charge_up_L_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o238))
+; sm_charge_down_L_err_under_half kind=lt_half
+(assert (! (< 0.000000000000016653 0.5) :named o239))
+; sm_charge_positron_R_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o240))
+; sm_m_e_err_under_half kind=lt_half
+(assert (! (< 0.009504134401230541 0.5) :named o241))
+; sm_m_mu_err_under_half kind=lt_half
+(assert (! (< 0.009504134401236932 0.5) :named o242))
+; sm_m_tau_err_under_half kind=lt_half
+(assert (! (< 0.009504134401234309 0.5) :named o243))
+; sm_ratio_mu_e_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o244))
+; sm_ratio_tau_mu_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o245))
+; sm_higgs_mass_from_potential_err_under_half kind=lt_half
+(assert (! (< 0.004751954295268555 0.5) :named o246))
+; sm_higgs_vev_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o247))
 ; sm_photon_massless_eq kind=eq_nat
-(assert (! (= 0 0) :named o178))
+(assert (! (= 0 0) :named o248))
 ; sm_alpha_s_gt_alpha_em_at_MZ_proxy_err_under_half kind=lt_half
-(assert (! (< 0.0 0.5) :named o179))
+(assert (! (< 0.0 0.5) :named o249))
 (check-sat)
 ; expect: sat  (all asserts are true facts; unsat would mean encoding error)

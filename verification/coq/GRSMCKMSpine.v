@@ -220,6 +220,216 @@ Proof. lra. Qed.
 Lemma pmns_hierarchy_s12_lt_s23_abs_diff : (0%R) < ((0.000000001%R)).
 Proof. lra. Qed.
 
+Lemma wolfenstein_lambda_err_under_half : ((0.00950413440123674%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma wolfenstein_lambda_measured_pos : 0 < ((0.225%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_lambda_abs_diff : ((0.000021384302402782662%R)) < ((0.00002159814542781049%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_A_err_under_half : ((0.009504134401235067%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma wolfenstein_A_measured_pos : 0 < ((0.826%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_A_abs_diff : ((0.00007850415015420165%R)) < ((0.00007928919165674366%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_rho_bar_err_under_half : ((0.009504134401234179%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma wolfenstein_rho_bar_measured_pos : 0 < ((0.159%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_rho_bar_abs_diff : ((0.000015111573697962344%R)) < ((0.000015262689435941968%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_eta_bar_err_under_half : ((0.009504134401242908%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma wolfenstein_eta_bar_measured_pos : 0 < ((0.348%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_eta_bar_abs_diff : ((0.000033074387716325315%R)) < ((0.00003340513159448857%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_Vus_eq_lambda_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma wolfenstein_Vus_eq_lambda_measured_pos : 0 < ((0.225%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_Vus_eq_lambda_abs_diff : (0%R) < ((0.000000001%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_Vcb_A_lambda2_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma wolfenstein_Vcb_A_lambda2_measured_pos : 0 < ((0.04182%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_Vcb_A_lambda2_abs_diff : (0%R) < ((0.000000001%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_Vub_A_lambda3_r_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma wolfenstein_Vub_A_lambda3_r_measured_pos : 0 < ((0.00369%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_Vub_A_lambda3_r_abs_diff : (0%R) < ((0.000000001%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_eta_bar_positive_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma wolfenstein_eta_bar_positive_measured_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma wolfenstein_eta_bar_positive_abs_diff : (0%R) < ((0.000000001%R)).
+Proof. lra. Qed.
+
+Lemma delta_ckm_deg_err_under_half : ((0.009504134401239367%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma delta_ckm_deg_measured_pos : 0 < ((68.5%R)).
+Proof. lra. Qed.
+
+Lemma delta_ckm_deg_abs_diff : ((0.006510332064848967%R)) < ((0.006575435385498457%R)).
+Proof. lra. Qed.
+
+Lemma delta_ckm_rad_err_under_half : ((0.00950413440124136%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma delta_ckm_rad_measured_pos : 0 < ((1.196%R)).
+Proof. lra. Qed.
+
+Lemma delta_ckm_rad_abs_diff : ((0.00011366944743884666%R)) < ((0.00011480614191423512%R)).
+Proof. lra. Qed.
+
+Lemma Jarlskog_J_err_under_half : ((0.009504134401248197%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma Jarlskog_J_measured_pos : 0 < ((0.0000308%R)).
+Proof. lra. Qed.
+
+Lemma Jarlskog_J_abs_diff : ((0.000000002927273395584445%R)) < ((0.0000000029565471295402897%R)).
+Proof. lra. Qed.
+
+Lemma Jarlskog_wolfenstein_approx_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma Jarlskog_wolfenstein_approx_measured_pos : 0 < ((0.0000308%R)).
+Proof. lra. Qed.
+
+Lemma Jarlskog_wolfenstein_approx_abs_diff : (0%R) < ((0.000000001%R)).
+Proof. lra. Qed.
+
+Lemma Jarlskog_positive_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma Jarlskog_positive_measured_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma Jarlskog_positive_abs_diff : (0%R) < ((0.000000001%R)).
+Proof. lra. Qed.
+
+Lemma unitary_triangle_Rb_err_under_half : ((0.00950413440124138%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma unitary_triangle_Rb_measured_pos : 0 < ((0.382602927328059%R)).
+Proof. lra. Qed.
+
+Lemma unitary_triangle_Rb_abs_diff : ((0.00003636309643634261%R)) < ((0.00003672672740170604%R)).
+Proof. lra. Qed.
+
+Lemma unitary_triangle_Rt_err_under_half : ((0.009504134401243274%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma unitary_triangle_Rt_measured_pos : 0 < ((0.9101565799355624%R)).
+Proof. lra. Qed.
+
+Lemma unitary_triangle_Rt_abs_diff : ((0.00008650250461883502%R)) < ((0.00008736752966602337%R)).
+Proof. lra. Qed.
+
+Lemma pmns_sin_delta_CP_err_under_half : ((0.009504134401242693%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma pmns_sin_delta_CP_measured_pos : 0 < ((0.29237170472273677%R)).
+Proof. lra. Qed.
+
+Lemma pmns_sin_delta_CP_abs_diff : ((0.000027787399768053334%R)) < ((0.000028065273766733868%R)).
+Proof. lra. Qed.
+
+Lemma dm2_21_err_under_half : ((0.009504134401244663%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma dm2_21_measured_pos : 0 < ((0.0000753%R)).
+Proof. lra. Qed.
+
+Lemma dm2_21_abs_diff : ((0.0000000071566132041372315%R)) < ((0.000000007228180336178604%R)).
+Proof. lra. Qed.
+
+Lemma dm2_31_abs_err_under_half : ((0.00950413440123409%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma dm2_31_abs_measured_pos : 0 < ((0.002453%R)).
+Proof. lra. Qed.
+
+Lemma dm2_31_abs_abs_diff : ((0.00000023313641686227224%R)) < ((0.00000023546778203089498%R)).
+Proof. lra. Qed.
+
+Lemma dm2_hierarchy_ratio_err_under_half : ((0.009504134401243234%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma dm2_hierarchy_ratio_measured_pos : 0 < ((32.57636122177955%R)).
+Proof. lra. Qed.
+
+Lemma dm2_hierarchy_ratio_abs_diff : ((0.0030961011535524108%R)) < ((0.003127062165088935%R)).
+Proof. lra. Qed.
+
+Lemma dm2_31_gt_dm2_21_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma dm2_31_gt_dm2_21_measured_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma dm2_31_gt_dm2_21_abs_diff : (0%R) < ((0.000000001%R)).
+Proof. lra. Qed.
+
+Lemma ew_cos_theta_W_from_masses_err_under_half : ((0.009504134401235296%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma ew_cos_theta_W_from_masses_measured_pos : 0 < ((0.8814466001956406%R)).
+Proof. lra. Qed.
+
+Lemma ew_cos_theta_W_from_masses_abs_diff : ((0.00008377386955771282%R)) < ((0.00008461160825428995%R)).
+Proof. lra. Qed.
+
+Lemma ew_cos_theta_W_vs_sin2_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma ew_cos_theta_W_vs_sin2_measured_pos : 0 < ((0.8768010036490607%R)).
+Proof. lra. Qed.
+
+Lemma ew_cos_theta_W_vs_sin2_abs_diff : (0%R) < ((0.000000001%R)).
+Proof. lra. Qed.
+
+Lemma sm_anomaly_cancel_per_generation_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sm_anomaly_cancel_per_generation_abs_diff : (0%R) < ((0.000000001%R)).
+Proof. lra. Qed.
+
+Lemma sm_anomaly_SU2_U1_trace_Y_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sm_anomaly_SU2_U1_trace_Y_abs_diff : (0%R) < ((0.000000001%R)).
+Proof. lra. Qed.
+
 Lemma charge_electron_L_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 

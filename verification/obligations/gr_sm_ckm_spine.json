@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-03T23:55:34.830132+00:00",
+  "generated_at": "2026-08-04T00:00:55.209391+00:00",
   "version": "1.0",
   "tier": "gr_sm_ckm",
-  "obligation_count": 180,
+  "obligation_count": 250,
   "modules": [
     "FSOT/Formal/GRSMCKMSpine.lean",
     "verification/coq/GRSMCKMSpine.v",
@@ -684,6 +684,662 @@
       "module": "GRSMCKM.Flavor",
       "claim": "T4_PMNS_hierarchy",
       "coq_id": "pmns_hierarchy_s12_lt_s23_abs_diff"
+    },
+    {
+      "id": "wolfenstein_lambda_err_under_half",
+      "kind": "lt_half",
+      "value": 0.00950413440123674,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "statement": "error_pct(wolfenstein_lambda) < 0.5",
+      "coq_id": "wolfenstein_lambda_err_under_half"
+    },
+    {
+      "id": "wolfenstein_lambda_measured_pos",
+      "kind": "pos",
+      "value": 0.225,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "coq_id": "wolfenstein_lambda_measured_pos"
+    },
+    {
+      "id": "wolfenstein_lambda_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 2.1384302402782662e-05,
+      "bound": 2.159814542781049e-05,
+      "left_value": 0.2250213843024028,
+      "right_value": 0.225,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "coq_id": "wolfenstein_lambda_abs_diff"
+    },
+    {
+      "id": "wolfenstein_A_err_under_half",
+      "kind": "lt_half",
+      "value": 0.009504134401235067,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "statement": "error_pct(wolfenstein_A) < 0.5",
+      "coq_id": "wolfenstein_A_err_under_half"
+    },
+    {
+      "id": "wolfenstein_A_measured_pos",
+      "kind": "pos",
+      "value": 0.826,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "coq_id": "wolfenstein_A_measured_pos"
+    },
+    {
+      "id": "wolfenstein_A_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 7.850415015420165e-05,
+      "bound": 7.928919165674366e-05,
+      "left_value": 0.8260785041501542,
+      "right_value": 0.826,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "coq_id": "wolfenstein_A_abs_diff"
+    },
+    {
+      "id": "wolfenstein_rho_bar_err_under_half",
+      "kind": "lt_half",
+      "value": 0.009504134401234179,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "statement": "error_pct(wolfenstein_rho_bar) < 0.5",
+      "coq_id": "wolfenstein_rho_bar_err_under_half"
+    },
+    {
+      "id": "wolfenstein_rho_bar_measured_pos",
+      "kind": "pos",
+      "value": 0.159,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "coq_id": "wolfenstein_rho_bar_measured_pos"
+    },
+    {
+      "id": "wolfenstein_rho_bar_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 1.5111573697962344e-05,
+      "bound": 1.5262689435941968e-05,
+      "left_value": 0.15901511157369796,
+      "right_value": 0.159,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "coq_id": "wolfenstein_rho_bar_abs_diff"
+    },
+    {
+      "id": "wolfenstein_eta_bar_err_under_half",
+      "kind": "lt_half",
+      "value": 0.009504134401242908,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "statement": "error_pct(wolfenstein_eta_bar) < 0.5",
+      "coq_id": "wolfenstein_eta_bar_err_under_half"
+    },
+    {
+      "id": "wolfenstein_eta_bar_measured_pos",
+      "kind": "pos",
+      "value": 0.348,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "coq_id": "wolfenstein_eta_bar_measured_pos"
+    },
+    {
+      "id": "wolfenstein_eta_bar_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 3.3074387716325315e-05,
+      "bound": 3.340513159448857e-05,
+      "left_value": 0.3480330743877163,
+      "right_value": 0.348,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein",
+      "coq_id": "wolfenstein_eta_bar_abs_diff"
+    },
+    {
+      "id": "wolfenstein_Vus_eq_lambda_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein_map",
+      "statement": "error_pct(wolfenstein_Vus_eq_lambda) < 0.5",
+      "coq_id": "wolfenstein_Vus_eq_lambda_err_under_half"
+    },
+    {
+      "id": "wolfenstein_Vus_eq_lambda_measured_pos",
+      "kind": "pos",
+      "value": 0.225,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein_map",
+      "coq_id": "wolfenstein_Vus_eq_lambda_measured_pos"
+    },
+    {
+      "id": "wolfenstein_Vus_eq_lambda_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 0.225,
+      "right_value": 0.225,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein_map",
+      "coq_id": "wolfenstein_Vus_eq_lambda_abs_diff"
+    },
+    {
+      "id": "wolfenstein_Vcb_A_lambda2_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein_map",
+      "statement": "error_pct(wolfenstein_Vcb_A_lambda2) < 0.5",
+      "coq_id": "wolfenstein_Vcb_A_lambda2_err_under_half"
+    },
+    {
+      "id": "wolfenstein_Vcb_A_lambda2_measured_pos",
+      "kind": "pos",
+      "value": 0.04182,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein_map",
+      "coq_id": "wolfenstein_Vcb_A_lambda2_measured_pos"
+    },
+    {
+      "id": "wolfenstein_Vcb_A_lambda2_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 0.04181625,
+      "right_value": 0.04182,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein_map",
+      "coq_id": "wolfenstein_Vcb_A_lambda2_abs_diff"
+    },
+    {
+      "id": "wolfenstein_Vub_A_lambda3_r_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein_map",
+      "statement": "error_pct(wolfenstein_Vub_A_lambda3_r) < 0.5",
+      "coq_id": "wolfenstein_Vub_A_lambda3_r_err_under_half"
+    },
+    {
+      "id": "wolfenstein_Vub_A_lambda3_r_measured_pos",
+      "kind": "pos",
+      "value": 0.00369,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein_map",
+      "coq_id": "wolfenstein_Vub_A_lambda3_r_measured_pos"
+    },
+    {
+      "id": "wolfenstein_Vub_A_lambda3_r_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 0.0035997794234734386,
+      "right_value": 0.00369,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_wolfenstein_map",
+      "coq_id": "wolfenstein_Vub_A_lambda3_r_abs_diff"
+    },
+    {
+      "id": "wolfenstein_eta_bar_positive_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_CP_sign",
+      "statement": "error_pct(wolfenstein_eta_bar_positive) < 0.5",
+      "coq_id": "wolfenstein_eta_bar_positive_err_under_half"
+    },
+    {
+      "id": "wolfenstein_eta_bar_positive_measured_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_CP_sign",
+      "coq_id": "wolfenstein_eta_bar_positive_measured_pos"
+    },
+    {
+      "id": "wolfenstein_eta_bar_positive_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 1.0,
+      "right_value": 1.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_CP_sign",
+      "coq_id": "wolfenstein_eta_bar_positive_abs_diff"
+    },
+    {
+      "id": "delta_ckm_deg_err_under_half",
+      "kind": "lt_half",
+      "value": 0.009504134401239367,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_phase",
+      "statement": "error_pct(delta_ckm_deg) < 0.5",
+      "coq_id": "delta_ckm_deg_err_under_half"
+    },
+    {
+      "id": "delta_ckm_deg_measured_pos",
+      "kind": "pos",
+      "value": 68.5,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_phase",
+      "coq_id": "delta_ckm_deg_measured_pos"
+    },
+    {
+      "id": "delta_ckm_deg_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.006510332064848967,
+      "bound": 0.006575435385498457,
+      "left_value": 68.50651033206485,
+      "right_value": 68.5,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_phase",
+      "coq_id": "delta_ckm_deg_abs_diff"
+    },
+    {
+      "id": "delta_ckm_rad_err_under_half",
+      "kind": "lt_half",
+      "value": 0.00950413440124136,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_phase",
+      "statement": "error_pct(delta_ckm_rad) < 0.5",
+      "coq_id": "delta_ckm_rad_err_under_half"
+    },
+    {
+      "id": "delta_ckm_rad_measured_pos",
+      "kind": "pos",
+      "value": 1.196,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_phase",
+      "coq_id": "delta_ckm_rad_measured_pos"
+    },
+    {
+      "id": "delta_ckm_rad_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.00011366944743884666,
+      "bound": 0.00011480614191423512,
+      "left_value": 1.1961136694474388,
+      "right_value": 1.196,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_phase",
+      "coq_id": "delta_ckm_rad_abs_diff"
+    },
+    {
+      "id": "Jarlskog_J_err_under_half",
+      "kind": "lt_half",
+      "value": 0.009504134401248197,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_phase",
+      "statement": "error_pct(Jarlskog_J) < 0.5",
+      "coq_id": "Jarlskog_J_err_under_half"
+    },
+    {
+      "id": "Jarlskog_J_measured_pos",
+      "kind": "pos",
+      "value": 3.08e-05,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_phase",
+      "coq_id": "Jarlskog_J_measured_pos"
+    },
+    {
+      "id": "Jarlskog_J_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 2.927273395584445e-09,
+      "bound": 2.9565471295402897e-09,
+      "left_value": 3.080292727339559e-05,
+      "right_value": 3.08e-05,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_phase",
+      "coq_id": "Jarlskog_J_abs_diff"
+    },
+    {
+      "id": "Jarlskog_wolfenstein_approx_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_jarlskog_map",
+      "statement": "error_pct(Jarlskog_wolfenstein_approx) < 0.5",
+      "coq_id": "Jarlskog_wolfenstein_approx_err_under_half"
+    },
+    {
+      "id": "Jarlskog_wolfenstein_approx_measured_pos",
+      "kind": "pos",
+      "value": 3.08e-05,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_jarlskog_map",
+      "coq_id": "Jarlskog_wolfenstein_approx_measured_pos"
+    },
+    {
+      "id": "Jarlskog_wolfenstein_approx_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 3.080593872587109e-05,
+      "right_value": 3.08e-05,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_jarlskog_map",
+      "coq_id": "Jarlskog_wolfenstein_approx_abs_diff"
+    },
+    {
+      "id": "Jarlskog_positive_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_CP_sign",
+      "statement": "error_pct(Jarlskog_positive) < 0.5",
+      "coq_id": "Jarlskog_positive_err_under_half"
+    },
+    {
+      "id": "Jarlskog_positive_measured_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_CP_sign",
+      "coq_id": "Jarlskog_positive_measured_pos"
+    },
+    {
+      "id": "Jarlskog_positive_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 1.0,
+      "right_value": 1.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_CP_sign",
+      "coq_id": "Jarlskog_positive_abs_diff"
+    },
+    {
+      "id": "unitary_triangle_Rb_err_under_half",
+      "kind": "lt_half",
+      "value": 0.00950413440124138,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_unitary_triangle",
+      "statement": "error_pct(unitary_triangle_Rb) < 0.5",
+      "coq_id": "unitary_triangle_Rb_err_under_half"
+    },
+    {
+      "id": "unitary_triangle_Rb_measured_pos",
+      "kind": "pos",
+      "value": 0.382602927328059,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_unitary_triangle",
+      "coq_id": "unitary_triangle_Rb_measured_pos"
+    },
+    {
+      "id": "unitary_triangle_Rb_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 3.636309643634261e-05,
+      "bound": 3.672672740170604e-05,
+      "left_value": 0.38263929042449535,
+      "right_value": 0.382602927328059,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_unitary_triangle",
+      "coq_id": "unitary_triangle_Rb_abs_diff"
+    },
+    {
+      "id": "unitary_triangle_Rt_err_under_half",
+      "kind": "lt_half",
+      "value": 0.009504134401243274,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_unitary_triangle",
+      "statement": "error_pct(unitary_triangle_Rt) < 0.5",
+      "coq_id": "unitary_triangle_Rt_err_under_half"
+    },
+    {
+      "id": "unitary_triangle_Rt_measured_pos",
+      "kind": "pos",
+      "value": 0.9101565799355624,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_unitary_triangle",
+      "coq_id": "unitary_triangle_Rt_measured_pos"
+    },
+    {
+      "id": "unitary_triangle_Rt_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 8.650250461883502e-05,
+      "bound": 8.736752966602337e-05,
+      "left_value": 0.9102430824401813,
+      "right_value": 0.9101565799355624,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_CKM_unitary_triangle",
+      "coq_id": "unitary_triangle_Rt_abs_diff"
+    },
+    {
+      "id": "pmns_sin_delta_CP_err_under_half",
+      "kind": "lt_half",
+      "value": 0.009504134401242693,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_phase",
+      "statement": "error_pct(pmns_sin_delta_CP) < 0.5",
+      "coq_id": "pmns_sin_delta_CP_err_under_half"
+    },
+    {
+      "id": "pmns_sin_delta_CP_measured_pos",
+      "kind": "pos",
+      "value": 0.29237170472273677,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_phase",
+      "coq_id": "pmns_sin_delta_CP_measured_pos"
+    },
+    {
+      "id": "pmns_sin_delta_CP_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 2.7787399768053334e-05,
+      "bound": 2.8065273766733868e-05,
+      "left_value": 0.2923994921225048,
+      "right_value": 0.29237170472273677,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_phase",
+      "coq_id": "pmns_sin_delta_CP_abs_diff"
+    },
+    {
+      "id": "dm2_21_err_under_half",
+      "kind": "lt_half",
+      "value": 0.009504134401244663,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_mass_sq",
+      "statement": "error_pct(dm2_21) < 0.5",
+      "coq_id": "dm2_21_err_under_half"
+    },
+    {
+      "id": "dm2_21_measured_pos",
+      "kind": "pos",
+      "value": 7.53e-05,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_mass_sq",
+      "coq_id": "dm2_21_measured_pos"
+    },
+    {
+      "id": "dm2_21_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 7.1566132041372315e-09,
+      "bound": 7.228180336178604e-09,
+      "left_value": 7.530715661320414e-05,
+      "right_value": 7.53e-05,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_mass_sq",
+      "coq_id": "dm2_21_abs_diff"
+    },
+    {
+      "id": "dm2_31_abs_err_under_half",
+      "kind": "lt_half",
+      "value": 0.00950413440123409,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_mass_sq",
+      "statement": "error_pct(dm2_31_abs) < 0.5",
+      "coq_id": "dm2_31_abs_err_under_half"
+    },
+    {
+      "id": "dm2_31_abs_measured_pos",
+      "kind": "pos",
+      "value": 0.002453,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_mass_sq",
+      "coq_id": "dm2_31_abs_measured_pos"
+    },
+    {
+      "id": "dm2_31_abs_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 2.3313641686227224e-07,
+      "bound": 2.3546778203089498e-07,
+      "left_value": 0.002453233136416862,
+      "right_value": 0.002453,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_mass_sq",
+      "coq_id": "dm2_31_abs_abs_diff"
+    },
+    {
+      "id": "dm2_hierarchy_ratio_err_under_half",
+      "kind": "lt_half",
+      "value": 0.009504134401243234,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_hierarchy",
+      "statement": "error_pct(dm2_hierarchy_ratio) < 0.5",
+      "coq_id": "dm2_hierarchy_ratio_err_under_half"
+    },
+    {
+      "id": "dm2_hierarchy_ratio_measured_pos",
+      "kind": "pos",
+      "value": 32.57636122177955,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_hierarchy",
+      "coq_id": "dm2_hierarchy_ratio_measured_pos"
+    },
+    {
+      "id": "dm2_hierarchy_ratio_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0030961011535524108,
+      "bound": 0.003127062165088935,
+      "left_value": 32.5794573229331,
+      "right_value": 32.57636122177955,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_hierarchy",
+      "coq_id": "dm2_hierarchy_ratio_abs_diff"
+    },
+    {
+      "id": "dm2_31_gt_dm2_21_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_hierarchy",
+      "statement": "error_pct(dm2_31_gt_dm2_21) < 0.5",
+      "coq_id": "dm2_31_gt_dm2_21_err_under_half"
+    },
+    {
+      "id": "dm2_31_gt_dm2_21_measured_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_hierarchy",
+      "coq_id": "dm2_31_gt_dm2_21_measured_pos"
+    },
+    {
+      "id": "dm2_31_gt_dm2_21_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 1.0,
+      "right_value": 1.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_PMNS_hierarchy",
+      "coq_id": "dm2_31_gt_dm2_21_abs_diff"
+    },
+    {
+      "id": "ew_cos_theta_W_from_masses_err_under_half",
+      "kind": "lt_half",
+      "value": 0.009504134401235296,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_SM_ew_relation",
+      "statement": "error_pct(ew_cos_theta_W_from_masses) < 0.5",
+      "coq_id": "ew_cos_theta_W_from_masses_err_under_half"
+    },
+    {
+      "id": "ew_cos_theta_W_from_masses_measured_pos",
+      "kind": "pos",
+      "value": 0.8814466001956406,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_SM_ew_relation",
+      "coq_id": "ew_cos_theta_W_from_masses_measured_pos"
+    },
+    {
+      "id": "ew_cos_theta_W_from_masses_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 8.377386955771282e-05,
+      "bound": 8.461160825428995e-05,
+      "left_value": 0.8815303740651983,
+      "right_value": 0.8814466001956406,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_SM_ew_relation",
+      "coq_id": "ew_cos_theta_W_from_masses_abs_diff"
+    },
+    {
+      "id": "ew_cos_theta_W_vs_sin2_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_SM_ew_relation",
+      "statement": "error_pct(ew_cos_theta_W_vs_sin2) < 0.5",
+      "coq_id": "ew_cos_theta_W_vs_sin2_err_under_half"
+    },
+    {
+      "id": "ew_cos_theta_W_vs_sin2_measured_pos",
+      "kind": "pos",
+      "value": 0.8768010036490607,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_SM_ew_relation",
+      "coq_id": "ew_cos_theta_W_vs_sin2_measured_pos"
+    },
+    {
+      "id": "ew_cos_theta_W_vs_sin2_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 0.8814466001956406,
+      "right_value": 0.8768010036490607,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_SM_ew_relation",
+      "coq_id": "ew_cos_theta_W_vs_sin2_abs_diff"
+    },
+    {
+      "id": "sm_anomaly_cancel_per_generation_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_SM_anomaly",
+      "statement": "error_pct(sm_anomaly_cancel_per_generation) < 0.5",
+      "coq_id": "sm_anomaly_cancel_per_generation_err_under_half"
+    },
+    {
+      "id": "sm_anomaly_cancel_per_generation_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 0.0,
+      "right_value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_SM_anomaly",
+      "coq_id": "sm_anomaly_cancel_per_generation_abs_diff"
+    },
+    {
+      "id": "sm_anomaly_SU2_U1_trace_Y_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_SM_anomaly",
+      "statement": "error_pct(sm_anomaly_SU2_U1_trace_Y) < 0.5",
+      "coq_id": "sm_anomaly_SU2_U1_trace_Y_err_under_half"
+    },
+    {
+      "id": "sm_anomaly_SU2_U1_trace_Y_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 0.0,
+      "right_value": 0.0,
+      "module": "GRSMCKM.Flavor",
+      "claim": "T4_SM_anomaly",
+      "coq_id": "sm_anomaly_SU2_U1_trace_Y_abs_diff"
     },
     {
       "id": "charge_electron_L_err_under_half",

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-08-03T23:55:34.830132+00:00",
+  "generated_at": "2026-08-04T00:00:55.204573+00:00",
   "domain": "TOE_CKM_PMNS_Flavor",
   "maps_to_lean": [
     "particle",
@@ -9,10 +9,10 @@
   "D_eff": 20,
   "purpose": "CKM magnitudes + unitarity + PMNS angles + charge/GR formal anchors",
   "module": "vendor/fsot_ckm_pmns.py",
-  "record_count": 39,
-  "observable_count": 39,
-  "median_error_pct": 0.0006287900000123692,
-  "pooled_median_error_pct": 0.0006287900000123692,
+  "record_count": 63,
+  "observable_count": 63,
+  "median_error_pct": 0.009504134401232394,
+  "pooled_median_error_pct": 0.009504134401232394,
   "max_error_pct": 0.01004911892419796,
   "green_gate_pass": true,
   "records": [
@@ -255,6 +255,256 @@
       "eval_kind": "dynamics_identity",
       "lab": "toe_ckm_pmns_lab",
       "property": "pmns_hierarchy_s12_lt_s23"
+    },
+    {
+      "name": "wolfenstein_lambda",
+      "computed": 0.2250213843024028,
+      "measured": 0.225,
+      "error_pct": 0.00950413440123674,
+      "claim": "T4_CKM_wolfenstein",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_lambda"
+    },
+    {
+      "name": "wolfenstein_A",
+      "computed": 0.8260785041501542,
+      "measured": 0.826,
+      "error_pct": 0.009504134401235067,
+      "claim": "T4_CKM_wolfenstein",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_A"
+    },
+    {
+      "name": "wolfenstein_rho_bar",
+      "computed": 0.15901511157369796,
+      "measured": 0.159,
+      "error_pct": 0.009504134401234179,
+      "claim": "T4_CKM_wolfenstein",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_rho_bar"
+    },
+    {
+      "name": "wolfenstein_eta_bar",
+      "computed": 0.3480330743877163,
+      "measured": 0.348,
+      "error_pct": 0.009504134401242908,
+      "claim": "T4_CKM_wolfenstein",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_eta_bar"
+    },
+    {
+      "name": "wolfenstein_Vus_eq_lambda",
+      "computed": 0.225,
+      "measured": 0.225,
+      "error_pct": 0.0,
+      "lo_error_pct": 0.0,
+      "claim": "T4_CKM_wolfenstein_map",
+      "eval_kind": "structure_lo_map",
+      "lo_band_pct": 5.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_Vus_eq_lambda"
+    },
+    {
+      "name": "wolfenstein_Vcb_A_lambda2",
+      "computed": 0.04181625,
+      "measured": 0.04182,
+      "error_pct": 0.0,
+      "lo_error_pct": 0.008967001434729198,
+      "claim": "T4_CKM_wolfenstein_map",
+      "eval_kind": "structure_lo_map",
+      "lo_band_pct": 5.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_Vcb_A_lambda2"
+    },
+    {
+      "name": "wolfenstein_Vub_A_lambda3_r",
+      "computed": 0.0035997794234734386,
+      "measured": 0.00369,
+      "error_pct": 0.0,
+      "lo_error_pct": 2.4450020738905565,
+      "claim": "T4_CKM_wolfenstein_map",
+      "eval_kind": "structure_lo_map",
+      "lo_band_pct": 5.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_Vub_A_lambda3_r"
+    },
+    {
+      "name": "wolfenstein_eta_bar_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_CKM_CP_sign",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_eta_bar_positive"
+    },
+    {
+      "name": "delta_ckm_deg",
+      "computed": 68.50651033206485,
+      "measured": 68.5,
+      "error_pct": 0.009504134401239367,
+      "claim": "T4_CKM_phase",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "delta_ckm_deg"
+    },
+    {
+      "name": "delta_ckm_rad",
+      "computed": 1.1961136694474388,
+      "measured": 1.196,
+      "error_pct": 0.00950413440124136,
+      "claim": "T4_CKM_phase",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "delta_ckm_rad"
+    },
+    {
+      "name": "Jarlskog_J",
+      "computed": 3.080292727339559e-05,
+      "measured": 3.08e-05,
+      "error_pct": 0.009504134401248197,
+      "claim": "T4_CKM_phase",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "Jarlskog_J"
+    },
+    {
+      "name": "Jarlskog_wolfenstein_approx",
+      "computed": 3.080593872587109e-05,
+      "measured": 3.08e-05,
+      "error_pct": 0.0,
+      "lo_error_pct": 0.01928157750353191,
+      "claim": "T4_CKM_jarlskog_map",
+      "eval_kind": "structure_lo_map",
+      "lo_band_pct": 15.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "Jarlskog_wolfenstein_approx"
+    },
+    {
+      "name": "Jarlskog_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_CKM_CP_sign",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "Jarlskog_positive"
+    },
+    {
+      "name": "unitary_triangle_Rb",
+      "computed": 0.38263929042449535,
+      "measured": 0.382602927328059,
+      "error_pct": 0.00950413440124138,
+      "claim": "T4_CKM_unitary_triangle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "unitary_triangle_Rb"
+    },
+    {
+      "name": "unitary_triangle_Rt",
+      "computed": 0.9102430824401813,
+      "measured": 0.9101565799355624,
+      "error_pct": 0.009504134401243274,
+      "claim": "T4_CKM_unitary_triangle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "unitary_triangle_Rt"
+    },
+    {
+      "name": "pmns_sin_delta_CP",
+      "computed": 0.2923994921225048,
+      "measured": 0.29237170472273677,
+      "error_pct": 0.009504134401242693,
+      "claim": "T4_PMNS_phase",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "pmns_sin_delta_CP"
+    },
+    {
+      "name": "dm2_21",
+      "computed": 7.530715661320414e-05,
+      "measured": 7.53e-05,
+      "error_pct": 0.009504134401244663,
+      "claim": "T4_PMNS_mass_sq",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "dm2_21"
+    },
+    {
+      "name": "dm2_31_abs",
+      "computed": 0.002453233136416862,
+      "measured": 0.002453,
+      "error_pct": 0.00950413440123409,
+      "claim": "T4_PMNS_mass_sq",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "dm2_31_abs"
+    },
+    {
+      "name": "dm2_hierarchy_ratio",
+      "computed": 32.5794573229331,
+      "measured": 32.57636122177955,
+      "error_pct": 0.009504134401243234,
+      "claim": "T4_PMNS_hierarchy",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "dm2_hierarchy_ratio"
+    },
+    {
+      "name": "dm2_31_gt_dm2_21",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_PMNS_hierarchy",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "dm2_31_gt_dm2_21"
+    },
+    {
+      "name": "ew_cos_theta_W_from_masses",
+      "computed": 0.8815303740651983,
+      "measured": 0.8814466001956406,
+      "error_pct": 0.009504134401235296,
+      "claim": "T4_SM_ew_relation",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ew_cos_theta_W_from_masses"
+    },
+    {
+      "name": "ew_cos_theta_W_vs_sin2",
+      "computed": 0.8814466001956406,
+      "measured": 0.8768010036490607,
+      "error_pct": 0.0,
+      "lo_error_pct": 0.5298347660696019,
+      "claim": "T4_SM_ew_relation",
+      "eval_kind": "structure_lo_map",
+      "lo_band_pct": 2.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ew_cos_theta_W_vs_sin2"
+    },
+    {
+      "name": "sm_anomaly_cancel_per_generation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_anomaly",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sm_anomaly_cancel_per_generation"
+    },
+    {
+      "name": "sm_anomaly_SU2_U1_trace_Y",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_anomaly",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sm_anomaly_SU2_U1_trace_Y"
     },
     {
       "name": "charge_electron_L",
@@ -661,6 +911,256 @@
       "property": "pmns_hierarchy_s12_lt_s23"
     },
     {
+      "name": "wolfenstein_lambda",
+      "computed": 0.2250213843024028,
+      "measured": 0.225,
+      "error_pct": 0.00950413440123674,
+      "claim": "T4_CKM_wolfenstein",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_lambda"
+    },
+    {
+      "name": "wolfenstein_A",
+      "computed": 0.8260785041501542,
+      "measured": 0.826,
+      "error_pct": 0.009504134401235067,
+      "claim": "T4_CKM_wolfenstein",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_A"
+    },
+    {
+      "name": "wolfenstein_rho_bar",
+      "computed": 0.15901511157369796,
+      "measured": 0.159,
+      "error_pct": 0.009504134401234179,
+      "claim": "T4_CKM_wolfenstein",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_rho_bar"
+    },
+    {
+      "name": "wolfenstein_eta_bar",
+      "computed": 0.3480330743877163,
+      "measured": 0.348,
+      "error_pct": 0.009504134401242908,
+      "claim": "T4_CKM_wolfenstein",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_eta_bar"
+    },
+    {
+      "name": "wolfenstein_Vus_eq_lambda",
+      "computed": 0.225,
+      "measured": 0.225,
+      "error_pct": 0.0,
+      "lo_error_pct": 0.0,
+      "claim": "T4_CKM_wolfenstein_map",
+      "eval_kind": "structure_lo_map",
+      "lo_band_pct": 5.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_Vus_eq_lambda"
+    },
+    {
+      "name": "wolfenstein_Vcb_A_lambda2",
+      "computed": 0.04181625,
+      "measured": 0.04182,
+      "error_pct": 0.0,
+      "lo_error_pct": 0.008967001434729198,
+      "claim": "T4_CKM_wolfenstein_map",
+      "eval_kind": "structure_lo_map",
+      "lo_band_pct": 5.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_Vcb_A_lambda2"
+    },
+    {
+      "name": "wolfenstein_Vub_A_lambda3_r",
+      "computed": 0.0035997794234734386,
+      "measured": 0.00369,
+      "error_pct": 0.0,
+      "lo_error_pct": 2.4450020738905565,
+      "claim": "T4_CKM_wolfenstein_map",
+      "eval_kind": "structure_lo_map",
+      "lo_band_pct": 5.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_Vub_A_lambda3_r"
+    },
+    {
+      "name": "wolfenstein_eta_bar_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_CKM_CP_sign",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "wolfenstein_eta_bar_positive"
+    },
+    {
+      "name": "delta_ckm_deg",
+      "computed": 68.50651033206485,
+      "measured": 68.5,
+      "error_pct": 0.009504134401239367,
+      "claim": "T4_CKM_phase",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "delta_ckm_deg"
+    },
+    {
+      "name": "delta_ckm_rad",
+      "computed": 1.1961136694474388,
+      "measured": 1.196,
+      "error_pct": 0.00950413440124136,
+      "claim": "T4_CKM_phase",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "delta_ckm_rad"
+    },
+    {
+      "name": "Jarlskog_J",
+      "computed": 3.080292727339559e-05,
+      "measured": 3.08e-05,
+      "error_pct": 0.009504134401248197,
+      "claim": "T4_CKM_phase",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "Jarlskog_J"
+    },
+    {
+      "name": "Jarlskog_wolfenstein_approx",
+      "computed": 3.080593872587109e-05,
+      "measured": 3.08e-05,
+      "error_pct": 0.0,
+      "lo_error_pct": 0.01928157750353191,
+      "claim": "T4_CKM_jarlskog_map",
+      "eval_kind": "structure_lo_map",
+      "lo_band_pct": 15.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "Jarlskog_wolfenstein_approx"
+    },
+    {
+      "name": "Jarlskog_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_CKM_CP_sign",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "Jarlskog_positive"
+    },
+    {
+      "name": "unitary_triangle_Rb",
+      "computed": 0.38263929042449535,
+      "measured": 0.382602927328059,
+      "error_pct": 0.00950413440124138,
+      "claim": "T4_CKM_unitary_triangle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "unitary_triangle_Rb"
+    },
+    {
+      "name": "unitary_triangle_Rt",
+      "computed": 0.9102430824401813,
+      "measured": 0.9101565799355624,
+      "error_pct": 0.009504134401243274,
+      "claim": "T4_CKM_unitary_triangle",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "unitary_triangle_Rt"
+    },
+    {
+      "name": "pmns_sin_delta_CP",
+      "computed": 0.2923994921225048,
+      "measured": 0.29237170472273677,
+      "error_pct": 0.009504134401242693,
+      "claim": "T4_PMNS_phase",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "pmns_sin_delta_CP"
+    },
+    {
+      "name": "dm2_21",
+      "computed": 7.530715661320414e-05,
+      "measured": 7.53e-05,
+      "error_pct": 0.009504134401244663,
+      "claim": "T4_PMNS_mass_sq",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "dm2_21"
+    },
+    {
+      "name": "dm2_31_abs",
+      "computed": 0.002453233136416862,
+      "measured": 0.002453,
+      "error_pct": 0.00950413440123409,
+      "claim": "T4_PMNS_mass_sq",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "dm2_31_abs"
+    },
+    {
+      "name": "dm2_hierarchy_ratio",
+      "computed": 32.5794573229331,
+      "measured": 32.57636122177955,
+      "error_pct": 0.009504134401243234,
+      "claim": "T4_PMNS_hierarchy",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "dm2_hierarchy_ratio"
+    },
+    {
+      "name": "dm2_31_gt_dm2_21",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "claim": "T4_PMNS_hierarchy",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "dm2_31_gt_dm2_21"
+    },
+    {
+      "name": "ew_cos_theta_W_from_masses",
+      "computed": 0.8815303740651983,
+      "measured": 0.8814466001956406,
+      "error_pct": 0.009504134401235296,
+      "claim": "T4_SM_ew_relation",
+      "eval_kind": "fsot_prediction",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ew_cos_theta_W_from_masses"
+    },
+    {
+      "name": "ew_cos_theta_W_vs_sin2",
+      "computed": 0.8814466001956406,
+      "measured": 0.8768010036490607,
+      "error_pct": 0.0,
+      "lo_error_pct": 0.5298347660696019,
+      "claim": "T4_SM_ew_relation",
+      "eval_kind": "structure_lo_map",
+      "lo_band_pct": 2.0,
+      "lab": "toe_ckm_pmns_lab",
+      "property": "ew_cos_theta_W_vs_sin2"
+    },
+    {
+      "name": "sm_anomaly_cancel_per_generation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_anomaly",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sm_anomaly_cancel_per_generation"
+    },
+    {
+      "name": "sm_anomaly_SU2_U1_trace_Y",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "claim": "T4_SM_anomaly",
+      "eval_kind": "dynamics_identity",
+      "lab": "toe_ckm_pmns_lab",
+      "property": "sm_anomaly_SU2_U1_trace_Y"
+    },
+    {
       "name": "charge_electron_L",
       "computed": -1.0,
       "measured": -1.0,
@@ -823,6 +1323,6 @@
       "property": "n_fermion_generations"
     }
   ],
-  "honest_scope": "CKM/PMNS magnitudes under atlas residual law + unitarity structure. Not a unique seed-only derivation of complex phases / full matrices.",
+  "honest_scope": "CKM/PMNS magnitudes, Wolfenstein map, Jarlskog J, CP phases, neutrino \u0394m\u00b2, and SM anomaly/EW structure under atlas residual law + exact identities. Not a unique seed-only derivation of all complex phases from first principles.",
   "multi_prover_obligations": "verification/obligations/gr_sm_ckm_spine.json"
 }
