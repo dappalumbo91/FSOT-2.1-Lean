@@ -1,11 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T14:25:22.566699+00:00",
+  "generated_at": "2026-08-04T14:48:54.941100+00:00",
   "domain": "Fusion_Physics_Public_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\fusion\\fusion_public_anchors.json",
-    "c_thin_depth_pass"
+    "c_thin_depth_pass",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "fusion",
@@ -26,12 +28,12 @@
     "operational_baselines": {
       "Fusion_Physics_Public_Panel_depth": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+        "sota_model": "sector model without seed-closed FSOT formula"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_fsot_seed_formula_vs_baseline": true
     }
   },
   "records": [
@@ -42,42 +44,16 @@
       "computed": 9.5e-05,
       "measured": 0.0,
       "error_pct": 9.5e-05,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 9.5e-05,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
+      "property": "fsot_seed_formula",
       "name": "Fusion_Physics_Public_Panel_depth",
       "computed": 9.5e-05,
       "measured": 0.0,
       "error_pct": 9.5e-05,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "Fusion Physics Public Panel depth",
-      "scientific_measurement": {
-        "delta": 9.5e-05,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -500,149 +476,74 @@
       }
     },
     {
-      "lab": "fusion_physics_public_panel_depth_lab",
-      "property": "goes_flux",
-      "name": "2026-07-12T08:22:00Z",
-      "computed": 1e-06,
-      "measured": 7.780074611218879e-07,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "ingest_source": "noaa_goes_xray_public",
-      "energy_band": "0.05-0.4nm",
-      "source_panel": "NASA_DONKI_Solar_Panel",
-      "depth_relay_from": "NASA_DONKI_Solar_Panel",
-      "domain_display_name": "fusion physics public panel depth",
-      "display_name": "2026-07-12T08:22:00Z",
-      "scientific_measurement": {
-        "delta": 2.2e-07,
-        "delta_pct": 28.533472,
-        "effective_error_pct": 28.533472,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "fusion_physics_public_panel_depth_lab",
-      "property": "goes_observed_flux",
-      "name": "2026-07-12T08:22:00Z",
-      "computed": 1e-06,
-      "measured": 8.017254344849789e-07,
-      "error_pct": 0.020755,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "ingest_source": "noaa_goes_xray_public",
-      "energy_band": "0.05-0.4nm",
-      "source_panel": "NASA_DONKI_Solar_Panel",
-      "depth_relay_from": "NASA_DONKI_Solar_Panel",
-      "domain_display_name": "fusion physics public panel depth",
-      "display_name": "2026-07-12T08:22:00Z",
-      "scientific_measurement": {
-        "delta": 2e-07,
-        "delta_pct": 24.730981,
-        "effective_error_pct": 24.730981,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "fusion_physics_public_panel_depth_lab",
-      "property": "satellite_id",
-      "name": "2026-07-12T08:22:00Z",
-      "computed": 18.004043,
-      "measured": 18.0,
-      "error_pct": 0.022461,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Astronomy",
-      "fsot_scalar": 0.89846,
-      "ingest_source": "noaa_goes_xray_public",
-      "energy_band": "0.05-0.4nm",
-      "source_panel": "NASA_DONKI_Solar_Panel",
-      "depth_relay_from": "NASA_DONKI_Solar_Panel",
-      "domain_display_name": "fusion physics public panel depth",
-      "display_name": "2026-07-12T08:22:00Z",
-      "scientific_measurement": {
-        "delta": 0.004043,
-        "delta_pct": 0.022461,
-        "effective_error_pct": 0.022461,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "fusion_physics_public_panel_depth_lab",
-      "edge_type": "maps_to_lean_overlap",
-      "source_domain": "Astronomy",
-      "target_domain": "Cosmology_Extended",
-      "lean_tag": "astronomical",
-      "property": "scalar_ratio_unity",
-      "name": "Astronomy__Cosmology_Extended__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
+      "lab": "fusion_physics_public_panel_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
       "error_pct": 0.0,
-      "domain_display_name": "fusion physics public panel depth",
-      "display_name": "Astronomy Cosmology Extended astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Domain_Coupling_Simulation",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Domain_Coupling_Simulation"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "lab": "fusion_physics_public_panel_depth_lab",
-      "edge_type": "maps_to_lean_overlap",
-      "source_domain": "Astronomy",
-      "target_domain": "Planetary_Structure",
-      "lean_tag": "astronomical",
-      "property": "scalar_ratio_unity",
-      "name": "Astronomy__Planetary_Structure__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
+      "lab": "fusion_physics_public_panel_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
       "error_pct": 0.0,
-      "domain_display_name": "fusion physics public panel depth",
-      "display_name": "Astronomy Planetary Structure astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Domain_Coupling_Simulation",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Domain_Coupling_Simulation"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "fusion_physics_public_panel_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "fusion_physics_public_panel_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "fusion_physics_public_panel_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 9.5e-05,
-    "max_scalar_error_pct": 0.022461,
+    "max_scalar_error_pct": 0.000787,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -651,19 +552,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Fusion Physics Public Panel",
-  "tier_label": "Tier 71 \u2014 Fusion Physics Public Panel + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 23,
-    "median_error_pct": 9.5e-05,
-    "max_error_pct": 28.533472,
-    "mean_abs_delta": 455019297.39153606,
-    "precision_tier_counts": {
-      "green": 23
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": false
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.223766+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

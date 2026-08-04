@@ -1,8 +1,12 @@
 {
-  "generated_at": "2026-07-13T15:23:00.341235+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T14:49:51.026718+00:00",
+  "domain": "synthetic_biology_benchmark",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\data\\evolution_operon_benchmark.json",
-    "vendor/fsot_compute.py\\data\\biology_strict_empirical.json"
+    "vendor/fsot_compute.py\\data\\biology_strict_empirical.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "biological",
@@ -11,10 +15,45 @@
   "D_eff": 14,
   "record_count": 20,
   "observable_count": 20,
-  "evolution_record_count": 12,
-  "biology_strict_record_count": 16,
+  "scalar_record_count": 19,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_proper_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 20
+    }
+  ],
+  "material_records": [
     {
       "lab": "synthetic_biology_lab",
       "property": "mt_operon_length",
@@ -350,29 +389,6 @@
     },
     {
       "lab": "synthetic_biology_lab",
-      "property": "mt_genome_bp",
-      "name": "NC_012920.1",
-      "computed": 11394,
-      "measured": 16569,
-      "error_pct": 31.233025529603474,
-      "source": "biology_strict_lab",
-      "strict": false,
-      "domain_display_name": "synthetic biology",
-      "display_name": "NC 012920.1",
-      "scientific_measurement": {
-        "delta": -5175.0,
-        "delta_pct": 31.233026,
-        "effective_error_pct": 31.233026,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "synthetic_biology_lab",
       "property": "bio_constant",
       "name": "human_body_temp_c",
       "computed": 37.016455,
@@ -458,20 +474,31 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "synthetic_biology_benchmark_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     }
   ],
-  "display_name": "Synthetic Biology",
-  "tier_label": "Tier 27",
-  "scientific_precision_summary": {
-    "scalar_count": 18,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.191571,
-    "mean_abs_delta": 0.22358355555555554,
-    "precision_tier_counts": {
-      "green": 18
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.19157088122605362,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
   },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:45.282133+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

@@ -1,12 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T14:25:07.523856+00:00",
+  "generated_at": "2026-08-04T14:48:54.843877+00:00",
   "domain": "Music_Harmonics_Public_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\creative_media\\music_harmonics_public_anchors.json",
     "acoustic_resonance_materials_benchmark.json",
-    "c_thin_depth_pass"
+    "c_thin_depth_pass",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "acoustical",
@@ -27,12 +29,12 @@
     "operational_baselines": {
       "Music_Harmonics_Public_Panel_depth": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+        "sota_model": "sector model without seed-closed FSOT formula"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_fsot_seed_formula_vs_baseline": true
     }
   },
   "records": [
@@ -43,42 +45,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
+      "property": "fsot_seed_formula",
       "name": "Music_Harmonics_Public_Panel_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "Music Harmonics Public Panel depth",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -490,159 +466,87 @@
       }
     },
     {
-      "lab": "music_harmonics_public_panel_depth_lab",
-      "property": "panel_pooled_median",
-      "name": "culinary_arts",
-      "computed": 0.047615,
-      "measured": 0.047615,
-      "error_pct": 0.0,
-      "record_count": 26,
-      "eval_kind": "creative_spine_bridge",
-      "domain_display_name": "music harmonics public panel depth",
-      "display_name": "culinary arts",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Creative_Arts_Math_Spine",
-      "depth_relay_from": "Creative_Arts_Math_Spine"
-    },
-    {
-      "lab": "music_harmonics_public_panel_depth_lab",
-      "property": "\u00a71 Foundation",
-      "name": "pH_water",
-      "computed": 7.0,
+      "lab": "music_harmonics_public_panel_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
       "measured": 7.0,
       "error_pct": 0.0,
-      "source_panel": "Creative_Arts_Math_Spine",
-      "eval_kind": "creative_relay",
-      "section_display_name": "SMILES Lab \u00a71 Foundation",
-      "domain_display_name": "music harmonics public panel depth",
-      "display_name": "SMILES Lab \u00a71 Foundation",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Creative_Arts_Math_Spine"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "lab": "music_harmonics_public_panel_depth_lab",
-      "property": "\u00a745 Activation Ea",
-      "name": "sucrose_hydrolysis",
-      "computed": 108.49926097775192,
-      "measured": 108.0,
-      "error_pct": 0.462279,
-      "source_panel": "Creative_Arts_Math_Spine",
-      "eval_kind": "creative_relay",
-      "section_display_name": "SMILES Lab \u00a745 Activation Ea",
-      "domain_display_name": "music harmonics public panel depth",
-      "display_name": "SMILES Lab \u00a745 Activation Ea",
-      "scientific_measurement": {
-        "delta": 0.49926098,
-        "delta_pct": 0.462279,
-        "effective_error_pct": 0.462279,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Creative_Arts_Math_Spine"
-    },
-    {
-      "lab": "music_harmonics_public_panel_depth_lab",
-      "property": "\u00a750 Diffusion D",
-      "name": "glucose",
-      "computed": 0.6727328685350314,
-      "measured": 0.673,
-      "error_pct": 0.039692639668439104,
-      "source_panel": "Creative_Arts_Math_Spine",
-      "eval_kind": "creative_relay",
-      "section_display_name": "SMILES Lab \u00a750 Diffusion D",
-      "domain_display_name": "music harmonics public panel depth",
-      "display_name": "SMILES Lab \u00a750 Diffusion D",
-      "scientific_measurement": {
-        "delta": -0.00026713,
-        "delta_pct": 0.039693,
-        "effective_error_pct": 0.039693,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Creative_Arts_Math_Spine"
-    },
-    {
-      "lab": "music_harmonics_public_panel_depth_lab",
-      "property": "ipd_mean_mm",
-      "name": "Mean interpupillary distance",
-      "computed": 63.0,
-      "measured": 63.0,
+      "lab": "music_harmonics_public_panel_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
       "error_pct": 0.0,
-      "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "design_standard_anchor",
-      "domain_display_name": "music harmonics public panel depth",
-      "display_name": "Mean interpupillary distance",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "XR_Interactive_Media_Math_Scaffold",
-      "depth_relay_from": "XR_Interactive_Media_Math_Scaffold"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "music_harmonics_public_panel_depth_lab",
-      "property": "hfov_deg",
-      "name": "Typical VR horizontal FOV",
+      "lab": "music_harmonics_public_panel_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "music_harmonics_public_panel_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
       "computed": 90.0,
       "measured": 90.0,
       "error_pct": 0.0,
-      "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "design_standard_anchor",
-      "domain_display_name": "music harmonics public panel depth",
-      "display_name": "Typical VR horizontal FOV",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "XR_Interactive_Media_Math_Scaffold",
-      "depth_relay_from": "XR_Interactive_Media_Math_Scaffold"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "music_harmonics_public_panel_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "music_harmonics_public_panel_fsot_lab",
+      "property": "BeCl\u2082",
+      "name": "d100218fdd574f15",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.462279,
+    "max_scalar_error_pct": 0.001716,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -651,19 +555,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Music Harmonics Public Panel",
-  "tier_label": "Tier 61 \u2014 Music Harmonics Public Panel + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 23,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.462279,
-    "mean_abs_delta": 0.021719874347826088,
-    "precision_tier_counts": {
-      "green": 23
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.638724+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

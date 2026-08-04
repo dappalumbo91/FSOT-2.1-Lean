@@ -1,10 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T14:24:10.800943+00:00",
+  "generated_at": "2026-08-04T14:49:50.051272+00:00",
   "domain": "Government_Open_Data_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "tier80_government_open_data_panels"
+    "tier80_government_open_data_panels",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "particle",
@@ -19,18 +20,18 @@
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.020755,
+  "headline_median_error_pct": 0.015344,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "government_open_data_spine": {
-        "sota_typical_error_pct": 6.0,
-        "sota_model": "Tier 80 government open-data wave"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_ingest_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -41,42 +42,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 28,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 28
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "ingest_relay",
-      "name": "government_open_data_spine",
-      "computed": 0.020755,
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.015344,
       "measured": 0.0,
-      "error_pct": 0.020755,
-      "observable_count": 22,
-      "domain_display_name": "tier gap fill",
-      "display_name": "government open data spine",
-      "scientific_measurement": {
-        "delta": 0.020755,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.015344,
+      "observable_count": 28
     }
   ],
   "material_records": [
@@ -739,19 +714,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Government Open Data Spine",
-  "tier_label": "Full formal spine (1,241 numeric obligations)",
-  "scientific_precision_summary": {
-    "scalar_count": 5,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 5
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.714365+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

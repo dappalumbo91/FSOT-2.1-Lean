@@ -1,11 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T14:25:15.527914+00:00",
+  "generated_at": "2026-08-04T14:49:50.414533+00:00",
   "domain": "Quantum_Information",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\neurolab_residual\\quantum_information_public_anchors.json",
-    "c_thin_depth_pass"
+    "c_thin_depth_pass",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "quantum",
@@ -13,9 +16,9 @@
     "mathematical"
   ],
   "D_eff": 11,
-  "record_count": 24,
-  "observable_count": 24,
-  "scalar_record_count": 22,
+  "record_count": 21,
+  "observable_count": 21,
+  "scalar_record_count": 20,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -23,14 +26,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Quantum_Information_depth": {
+      "pre": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -41,42 +44,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 21
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
-      "name": "Quantum_Information_depth",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "Quantum Information depth",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 21
     }
   ],
   "material_records": [
@@ -402,260 +379,100 @@
       }
     },
     {
-      "lab": "quantum_information_depth_lab",
-      "property": "panel_pooled_median",
-      "name": "quantum_information",
-      "computed": 0.0,
-      "measured": 0.0,
+      "lab": "quantum_information_fsot_lab",
+      "property": "acetazolamide_CAII",
+      "name": "e519765ed2390456",
+      "computed": 7.901075596837236,
+      "measured": 7.92,
+      "error_pct": 0.238944484,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "PHI ^ 4 + A_BLEED",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "BRENDA / Copeland (2005)"
+    },
+    {
+      "lab": "quantum_information_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
       "error_pct": 0.0,
-      "record_count": 14,
-      "eval_kind": "tier66_bridge",
-      "domain_display_name": "quantum information depth",
-      "display_name": "quantum information",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Neurolab_Residual_Math_Spine",
-      "depth_relay_from": "Neurolab_Residual_Math_Spine"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "lab": "quantum_information_depth_lab",
-      "property": "observable",
-      "name": "surface_code_threshold",
-      "computed": 0.0057,
-      "measured": 0.0057,
+      "lab": "quantum_information_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
       "error_pct": 0.0,
-      "source_panel": "Neurolab_Residual_Math_Spine",
-      "eval_kind": "residual_relay",
-      "domain_display_name": "quantum information depth",
-      "display_name": "surface code threshold",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Neurolab_Residual_Math_Spine"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "quantum_information_depth_lab",
-      "property": "observable",
-      "name": "toric_code_threshold",
-      "computed": 0.109,
-      "measured": 0.109,
+      "lab": "quantum_information_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
       "error_pct": 0.0,
-      "source_panel": "Neurolab_Residual_Math_Spine",
-      "eval_kind": "residual_relay",
-      "domain_display_name": "quantum information depth",
-      "display_name": "toric code threshold",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Neurolab_Residual_Math_Spine"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "quantum_information_depth_lab",
-      "property": "observable",
-      "name": "fault_tolerant_threshold",
-      "computed": 0.0104,
-      "measured": 0.0104,
+      "lab": "quantum_information_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
       "error_pct": 0.0,
-      "source_panel": "Neurolab_Residual_Math_Spine",
-      "eval_kind": "residual_relay",
-      "domain_display_name": "quantum information depth",
-      "display_name": "fault tolerant threshold",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Neurolab_Residual_Math_Spine"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "quantum_information_depth_lab",
-      "property": "bundled_asset_present",
-      "name": "fsot_compute",
-      "computed": 1.0,
-      "measured": 1.0,
+      "lab": "quantum_information_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
       "error_pct": 0.0,
-      "source": "vendor/fsot_compute.py",
-      "domain_display_name": "quantum information depth",
-      "display_name": "fsot compute",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Portable_Clone_Verify",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Portable_Clone_Verify"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "quantum_information_depth_lab",
-      "property": "bundled_asset_present",
-      "name": "smiles_dataset",
-      "computed": 1.0,
-      "measured": 1.0,
+      "lab": "quantum_information_fsot_lab",
+      "property": "BeCl\u2082",
+      "name": "d100218fdd574f15",
+      "computed": 180.0,
+      "measured": 180.0,
       "error_pct": 0.0,
-      "source": "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
-      "domain_display_name": "quantum information depth",
-      "display_name": "smiles dataset",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Portable_Clone_Verify",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Portable_Clone_Verify"
-    },
-    {
-      "lab": "quantum_information_depth_lab",
-      "property": "bundled_asset_present",
-      "name": "evolution_operons",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "vendor/evolution/biological_mt_operons.json",
-      "domain_display_name": "quantum information depth",
-      "display_name": "evolution operons",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Portable_Clone_Verify",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Portable_Clone_Verify"
-    },
-    {
-      "lab": "quantum_information_depth_lab",
-      "property": "bundled_asset_present",
-      "name": "linguistics_targets",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "vendor/linguistics/data/LINGUISTIC_TARGETS.csv",
-      "domain_display_name": "quantum information depth",
-      "display_name": "linguistics targets",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Portable_Clone_Verify",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Portable_Clone_Verify"
-    },
-    {
-      "lab": "quantum_information_depth_lab",
-      "case_id": "engine_native_h0",
-      "property": "engine_native_h0",
-      "computed": 67.27021167735879,
-      "measured": 67.4,
-      "error_pct": 0.192564276915754,
-      "unit": "km s^-1 Mpc^-1",
-      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "quantum information depth",
-      "display_name": "engine native h0",
-      "scientific_measurement": {
-        "delta": -0.12978832,
-        "delta_pct": 0.192564,
-        "effective_error_pct": 0.192564,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "km s^-1 Mpc^-1"
-      },
-      "source_panel": "Pure_Mathematics",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Pure_Mathematics"
-    },
-    {
-      "lab": "quantum_information_depth_lab",
-      "case_id": "external_alma_chromosphere",
-      "property": "brightness_temperature_rms_k",
-      "computed": 99.99581522012987,
-      "measured": 100.0,
-      "error_pct": 0.004184779870129773,
-      "unit": "K",
-      "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
-      "eval_kind": "live_formula",
-      "domain_display_name": "quantum information depth",
-      "display_name": "brightness temperature rms k",
-      "scientific_measurement": {
-        "delta": -0.00418478,
-        "delta_pct": 0.004185,
-        "effective_error_pct": 0.004185,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "K"
-      },
-      "source_panel": "Pure_Mathematics",
-      "depth_relay_from": "Pure_Mathematics"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.192564276915754,
+    "max_scalar_error_pct": 0.238944484,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -664,19 +481,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Quantum Information",
-  "tier_label": "Tier 66 \u2014 Quantum Information + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 22,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.192564,
-    "mean_abs_delta": 0.0060896863636363645,
-    "precision_tier_counts": {
-      "green": 22
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.802535+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

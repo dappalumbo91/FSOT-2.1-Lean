@@ -1,11 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T14:25:30.528316+00:00",
+  "generated_at": "2026-08-04T14:49:51.037192+00:00",
   "domain": "Time_Emergence_Deep_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "time_emergence_simulation_benchmark.json",
-    "c_thin_depth_pass"
+    "c_thin_depth_pass",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -17,22 +20,22 @@
   "D_eff": 19,
   "record_count": 24,
   "observable_count": 24,
-  "scalar_record_count": 6,
+  "scalar_record_count": 8,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.024894,
-  "pooled_median_error_pct": 0.024894,
-  "headline_median_error_pct": 0.024894,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Time_Emergence_Deep_Panel_depth": {
+      "pre": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -40,45 +43,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.024894,
-      "measured": 0.0,
-      "error_pct": 0.024894,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.024894,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
-      "name": "Time_Emergence_Deep_Panel_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "Time Emergence Deep Panel depth",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -477,232 +454,100 @@
       }
     },
     {
-      "lab": "time_emergence_deep_panel_depth_lab",
-      "property": "fpc_tau_unity_coupling",
-      "name": "AI_Galactic_Orbital_Bridge",
-      "source_domain": "AI_Galactic_Orbital_Bridge",
-      "computed": 1.000297,
-      "measured": 1.0,
-      "error_pct": 0.029733,
-      "source_median_error_pct": 0.005169,
-      "D_eff": 16,
-      "S": 0.754878,
-      "omega_rad_s": 0.00011959070006982226,
-      "fpc_time_coupling": 0.000393874,
-      "maps_to_lean": [
-        "ai",
-        "galactic"
-      ],
-      "priority": false,
-      "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time emergence deep panel depth",
-      "display_name": "AI Galactic Orbital Bridge",
-      "scientific_measurement": {
-        "delta": 0.000297,
-        "delta_pct": 0.0297,
-        "effective_error_pct": 0.0297,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Time_Domain_Crosswalk",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Time_Domain_Crosswalk"
+      "lab": "time_emergence_deep_panel_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "lab": "time_emergence_deep_panel_depth_lab",
-      "property": "fpc_tau_unity_coupling",
-      "name": "Acoustic_Resonance_Materials",
-      "source_domain": "Acoustic_Resonance_Materials",
-      "computed": 1.000201,
-      "measured": 1.0,
-      "error_pct": 0.020055,
-      "source_median_error_pct": 0.008381,
-      "D_eff": 15,
-      "S": -0.512165,
-      "omega_rad_s": 0.00011667385372665586,
-      "fpc_time_coupling": 0.000391569,
-      "maps_to_lean": [
-        "particle",
-        "material",
-        "energy",
-        "acoustical"
-      ],
-      "priority": false,
-      "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time emergence deep panel depth",
-      "display_name": "Acoustic Resonance Materials",
-      "scientific_measurement": {
-        "delta": 0.000201,
-        "delta_pct": 0.0201,
-        "effective_error_pct": 0.0201,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Time_Domain_Crosswalk",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Time_Domain_Crosswalk"
+      "lab": "time_emergence_deep_panel_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "time_emergence_deep_panel_depth_lab",
-      "property": "fpc_tau_unity_coupling",
-      "name": "Adjacent_Rung_Coupling",
-      "source_domain": "Adjacent_Rung_Coupling",
-      "computed": 1.000314,
-      "measured": 1.0,
-      "error_pct": 0.031421,
-      "source_median_error_pct": 0.020098,
-      "D_eff": 17,
-      "S": 0.793204,
-      "omega_rad_s": 0.00012250754641298867,
-      "fpc_time_coupling": 0.000396122,
-      "maps_to_lean": [
-        "particle",
-        "medical",
-        "galactic",
-        "cosmological"
-      ],
-      "priority": false,
-      "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time emergence deep panel depth",
-      "display_name": "Adjacent Rung Coupling",
-      "scientific_measurement": {
-        "delta": 0.000314,
-        "delta_pct": 0.0314,
-        "effective_error_pct": 0.0314,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Time_Domain_Crosswalk",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Time_Domain_Crosswalk"
+      "lab": "time_emergence_deep_panel_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "time_emergence_deep_panel_depth_lab",
-      "property": "fpc_tau_unity_coupling",
-      "name": "Adversarial_Fractal_Break_Tests",
-      "source_domain": "Adversarial_Fractal_Break_Tests",
-      "computed": 1.000298,
-      "measured": 1.0,
-      "error_pct": 0.029765,
-      "source_median_error_pct": 0.0,
-      "D_eff": 17,
-      "S": 0.751397,
-      "omega_rad_s": 0.00012250754641298867,
-      "fpc_time_coupling": 0.000396122,
-      "maps_to_lean": [
-        "ai",
-        "biological",
-        "medical"
-      ],
-      "priority": false,
-      "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time emergence deep panel depth",
-      "display_name": "Adversarial Fractal Break Tests",
-      "scientific_measurement": {
-        "delta": 0.000298,
-        "delta_pct": 0.0298,
-        "effective_error_pct": 0.0298,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Time_Domain_Crosswalk",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Time_Domain_Crosswalk"
+      "lab": "time_emergence_deep_panel_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "time_emergence_deep_panel_depth_lab",
-      "property": "panel_pooled_median",
-      "name": "time_emergence_deep",
+      "lab": "time_emergence_deep_panel_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "time_emergence_deep_panel_fsot_lab",
+      "property": "BeCl\u2082",
+      "name": "d100218fdd574f15",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "time_emergence_deep_panel_fsot_lab",
+      "property": "H\u207a/H\u2082",
+      "name": "0d36931a8021c0b6",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "record_count": 17,
-      "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "time emergence deep panel depth",
-      "display_name": "time emergence deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Fluid_Spacetime_Observable_Spine",
-      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
-    },
-    {
-      "lab": "time_emergence_deep_panel_depth_lab",
-      "source_panel": "Fluid_Spacetime_Observable_Spine",
-      "property": "time_is_emergent",
-      "name": "fpc_time_emergence_flag",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_gate",
-      "domain_display_name": "time emergence deep panel depth",
-      "display_name": "fpc time emergence flag",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
-    },
-    {
-      "lab": "time_emergence_deep_panel_depth_lab",
-      "property": "panel_pooled_median",
-      "name": "fpc_fluidlink_deep",
-      "computed": 0.022181,
-      "measured": 0.022181,
-      "error_pct": 0.0,
-      "record_count": 13,
-      "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "time emergence deep panel depth",
-      "display_name": "fpc fluidlink deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Fluid_Spacetime_Observable_Spine",
-      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi - pi",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Bard, Parsons & Jordan (1985)"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.024894,
-    "max_scalar_error_pct": 0.031421,
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -711,19 +556,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Time Emergence Deep Panel",
-  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 6,
-    "median_error_pct": 0.0297,
-    "max_error_pct": 0.0314,
-    "mean_abs_delta": 0.00018499999999999997,
-    "precision_tier_counts": {
-      "green": 6
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.436048+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

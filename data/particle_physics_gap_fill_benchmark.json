@@ -1,10 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:15.304510+00:00",
+  "generated_at": "2026-08-04T14:49:50.217286+00:00",
   "domain": "Particle_Physics",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "particle_physics_benchmark"
+    "particle_physics_benchmark",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "particle",
@@ -13,20 +14,22 @@
   "D_eff": 7,
   "record_count": 98,
   "observable_count": 98,
-  "median_error_pct": 0.0024475156042999594,
-  "pooled_median_error_pct": 0.0024475156042999594,
+  "scalar_record_count": 98,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0023222644988432507,
+  "pooled_median_error_pct": 0.0023222644988432507,
   "headline_median_error_pct": 0.0024475156042999594,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "smiles_wave4_thesis": {
-        "sota_typical_error_pct": 2.0,
-        "sota_model": "PDG particle tables"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_particle_observables_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -34,15 +37,15 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.002448,
+      "computed": 0.002322,
       "measured": 0.0,
-      "error_pct": 0.0024475156042999594,
+      "error_pct": 0.0023222644988432507,
       "observable_count": 98
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "particle_observables",
-      "name": "smiles_wave4_thesis",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.002448,
       "measured": 0.0,
       "error_pct": 0.0024475156042999594,

@@ -1,14 +1,14 @@
 {
-  "benchmark_version": "1.0",
-  "generated_at": "2026-08-04T14:03:07.405833+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T14:48:52.048962+00:00",
   "domain": "Open_Science_Seed_Constants",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "python_mathlib_identity",
-    "nist_codata_ascii"
+    "nist_codata_ascii",
+    "fsot_proper_densify_remediation"
   ],
   "maps_to_lean": [
-    "atomic",
     "particle"
   ],
   "D_eff": 7,
@@ -19,13 +19,38 @@
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
-  "fsot_precision_gate_pct": 0.5,
-  "policy": "no_signup_no_credentials",
-  "scientific_metric_primary": "relative_percent_error",
-  "scientific_metric_also": [
-    "ppm_when_sub_0.01pct"
-  ],
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fsot_free_parameters": 0,
+      "note": "Seed identities and NIST CODATA anchors; zero free parameters"
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_proper_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 21
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_proper",
+      "name": "remediation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 21
+    }
+  ],
+  "material_records": [
     {
       "id": "phi_golden_ratio",
       "name": "phi_golden_ratio",
@@ -291,8 +316,16 @@
       "note": "Live NIST parse vs SI/CODATA accepted value (open, no credentials)"
     }
   ],
-  "sota_comparison": {
-    "fsot_free_parameters": 0,
-    "note": "Seed identities and NIST CODATA anchors; zero free parameters"
-  }
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

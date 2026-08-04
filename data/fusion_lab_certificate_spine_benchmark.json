@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:11.278670+00:00",
+  "generated_at": "2026-08-04T14:49:49.961514+00:00",
   "domain": "Fusion_Lab_Certificate_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\fusion\\fusion_public_anchors.json",
     "plasma_physics_benchmark.json",
-    "fuel_thermochemistry_public_anchors_benchmark.json"
+    "fuel_thermochemistry_public_anchors_benchmark.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "fusion",
@@ -18,20 +19,22 @@
   "D_eff": 20,
   "record_count": 50,
   "observable_count": 50,
+  "scalar_record_count": 41,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fusion_lab_spine": {
-        "sota_typical_error_pct": 25.0,
-        "sota_model": "No unified fusion lab certificate artifact"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fusion_certificate_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -42,42 +45,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 50,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 50
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fusion_certificate",
-      "name": "fusion_lab_spine",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 42,
-      "domain_display_name": "tier gap fill",
-      "display_name": "fusion lab spine",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 50
     }
   ],
   "material_records": [
@@ -1247,19 +1224,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Fusion Lab Certificate Spine",
-  "tier_label": "Tier 71 \u2014 Fusion Physics Public Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.239842+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 41,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.035795,
-    "mean_abs_delta": 2.6097560975609754e-06,
-    "precision_tier_counts": {
-      "green": 41
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

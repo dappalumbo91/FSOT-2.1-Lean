@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:03:10.100172+00:00",
+  "generated_at": "2026-08-04T14:50:14.832295+00:00",
   "domain": "FSOT_Processor_Function_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -10,7 +10,8 @@
     "phase1_formal_gpu/isabelle/Trinary.thy",
     "results/competitive/beat_cuda.json",
     "results/phase0/gpu_probe.json",
-    "results/phase0/fsot_scalar_gpu.json"
+    "results/phase0/fsot_scalar_gpu.json",
+    "fsot_proper_hardware_clean"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -19,9 +20,9 @@
     "energy"
   ],
   "D_eff": 12,
-  "record_count": 20,
-  "observable_count": 20,
-  "scalar_record_count": 19,
+  "record_count": 19,
+  "observable_count": 19,
+  "scalar_record_count": 18,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -29,14 +30,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "industry_cpu_gpu": {
-        "sota_typical_error_pct": 12.0,
-        "sota_model": "opaque FLOPS/IPC without collapse+consensus law"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_processor_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -47,16 +48,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 20
+      "observable_count": 19
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_processor",
-      "name": "warp_collapse_work",
+      "property": "fsot_proper",
+      "name": "hardware_clean",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 20
+      "observable_count": 19
     }
   ],
   "material_records": [
@@ -244,17 +245,6 @@
       "formula": "process_gate_vs_target",
       "note": "suite/process residual \u2014 not a PDG free fold",
       "source": "results/phase0/fsot_scalar_gpu.json",
-      "layer": "processor_function"
-    },
-    {
-      "lab": "fsot_processor_lab",
-      "property": "cpu_boot_scalar_rel_err",
-      "name": "host_cpu_processor",
-      "computed": 0.0,
-      "measured": 3.773836334801153e-15,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "CPU \u03a6 matches archive canonical",
       "layer": "processor_function"
     },
     {

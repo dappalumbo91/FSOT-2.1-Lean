@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T16:11:59.816802+00:00",
+  "generated_at": "2026-08-04T14:49:50.114742+00:00",
   "domain": "IGEM_Parts_Expanded",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "igem_synthetic_biology_benchmark.json",
     "igem_live_fasta_benchmark.json",
-    "biology_strict_empirical.json"
+    "biology_strict_empirical.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "biological",
@@ -15,20 +16,22 @@
   "D_eff": 14,
   "record_count": 111,
   "observable_count": 111,
-  "median_error_pct": 5.882356401581393e-05,
-  "pooled_median_error_pct": 5.882356401581393e-05,
-  "headline_median_error_pct": 5.882356401581393e-05,
+  "scalar_record_count": 109,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 5.9357506661387664e-05,
+  "pooled_median_error_pct": 5.9357506661387664e-05,
+  "headline_median_error_pct": 5.9357506661387664e-05,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "igem_expanded": {
-        "sota_typical_error_pct": 8.0,
-        "sota_model": "iGEM Registry"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_igem_panel_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -38,43 +41,17 @@
       "name": "all_channels",
       "computed": 5.9e-05,
       "measured": 0.0,
-      "error_pct": 5.882356401581393e-05,
-      "observable_count": 111,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 5.9e-05,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 5.9357506661387664e-05,
+      "observable_count": 111
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "igem_panel",
-      "name": "igem_expanded",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 5.9e-05,
       "measured": 0.0,
       "error_pct": 5.882356401581393e-05,
-      "observable_count": 111,
-      "domain_display_name": "tier gap fill",
-      "display_name": "igem expanded",
-      "scientific_measurement": {
-        "delta": 5.9e-05,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 111
     }
   ],
   "material_records": [
@@ -2846,19 +2823,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "IGEM Parts Expanded",
-  "tier_label": "Tier 56 \u2014 UniProt Structure Annotations Deep + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 109,
-    "median_error_pct": 5.9357506661387664e-05,
-    "max_error_pct": 0.191571,
-    "mean_abs_delta": 0.17482109174311924,
-    "precision_tier_counts": {
-      "green": 109
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.559545+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

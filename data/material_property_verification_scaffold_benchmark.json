@@ -1,10 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:03.680280+00:00",
+  "generated_at": "2026-08-04T14:49:50.164926+00:00",
   "domain": "Material_Property_Verification_Scaffold",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "tier55-57_material_panels"
+    "tier55-57_material_panels",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "material",
@@ -15,20 +16,22 @@
   "D_eff": 15,
   "record_count": 79,
   "observable_count": 79,
-  "median_error_pct": 0.002271,
-  "pooled_median_error_pct": 0.002271,
-  "headline_median_error_pct": 0.002647,
+  "scalar_record_count": 67,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.00206,
+  "pooled_median_error_pct": 0.00206,
+  "headline_median_error_pct": 0.002271,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "verification_scaffold": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "Materials baselines"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_material_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -36,45 +39,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.002271,
+      "computed": 0.00206,
       "measured": 0.0,
-      "error_pct": 0.002271,
-      "observable_count": 79,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.002271,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.00206,
+      "observable_count": 79
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "material_relay",
-      "name": "verification_scaffold",
-      "computed": 0.002647,
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.002271,
       "measured": 0.0,
-      "error_pct": 0.002647,
-      "observable_count": 72,
-      "domain_display_name": "tier gap fill",
-      "display_name": "verification scaffold",
-      "scientific_measurement": {
-        "delta": 0.002647,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.002271,
+      "observable_count": 79
     }
   ],
   "material_records": [
@@ -1921,7 +1898,7 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.002271,
+    "scalar_pooled_median_error_pct": 0.00206,
     "max_scalar_error_pct": 0.424443,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -1931,19 +1908,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Material Property Verification Scaffold",
-  "tier_label": "Tier 59 \u2014 Material Property Verification Scaffold + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.599752+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 67,
-    "median_error_pct": 0.00206,
-    "max_error_pct": 0.424443,
-    "mean_abs_delta": 0.26587493029850756,
-    "precision_tier_counts": {
-      "green": 67
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

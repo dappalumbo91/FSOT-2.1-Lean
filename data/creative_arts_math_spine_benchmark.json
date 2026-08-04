@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T16:10:56.156783+00:00",
+  "generated_at": "2026-08-04T14:49:49.781213+00:00",
   "domain": "Creative_Arts_Math_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "tier61_creative_panels",
     "culinary_arts_benchmark.json",
-    "linguistics_formal_benchmark.json"
+    "linguistics_formal_benchmark.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -18,20 +19,22 @@
   "D_eff": 16,
   "record_count": 56,
   "observable_count": 56,
+  "scalar_record_count": 54,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 2.947665007827326e-05,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "arts_spine": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "Creative-domain crosswalk relay"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_creative_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -42,42 +45,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 56,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 56
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "creative_relay",
-      "name": "arts_spine",
-      "computed": 2.9e-05,
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 2.947665007827326e-05,
-      "observable_count": 48,
-      "domain_display_name": "tier gap fill",
-      "display_name": "arts spine",
-      "scientific_measurement": {
-        "delta": 2.9e-05,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0,
+      "observable_count": 56
     }
   ],
   "material_records": [
@@ -1388,19 +1365,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Creative Arts Math Spine",
-  "tier_label": "Tier 61 \u2014 Music Harmonics Public Panel + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 54,
-    "median_error_pct": 0.000369,
-    "max_error_pct": 4.348417,
-    "mean_abs_delta": 0.0210770562962963,
-    "precision_tier_counts": {
-      "green": 54
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": false
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.654664+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

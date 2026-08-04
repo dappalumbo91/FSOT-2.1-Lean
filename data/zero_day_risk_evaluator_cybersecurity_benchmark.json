@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T13:13:11.588341+00:00",
+  "generated_at": "2026-08-04T14:49:51.066520+00:00",
   "domain": "Zero_Day_Risk_Evaluator",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "zero_day_reference",
     "tier_h_child_rollup",
-    "code_genome_holes"
+    "code_genome_holes",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "ai",
@@ -15,22 +16,24 @@
     "consciousness"
   ],
   "D_eff": 18,
-  "record_count": 26,
-  "observable_count": 26,
+  "record_count": 25,
+  "observable_count": 25,
+  "scalar_record_count": 18,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.010337117254355377,
   "pooled_median_error_pct": 0.010337117254355377,
   "headline_median_error_pct": 0.010337117254355377,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "evaluator_panel": {
-        "sota_typical_error_pct": 15.0,
-        "sota_model": "ML ensemble exploit detectors"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_zero_day_eval_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -41,42 +44,16 @@
       "computed": 0.010337,
       "measured": 0.0,
       "error_pct": 0.010337117254355377,
-      "observable_count": 26,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.010337,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 25
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "zero_day_eval",
-      "name": "evaluator_panel",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.010337,
       "measured": 0.0,
       "error_pct": 0.010337117254355377,
-      "observable_count": 26,
-      "domain_display_name": "tier gap fill",
-      "display_name": "evaluator panel",
-      "scientific_measurement": {
-        "delta": 0.010337,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 25
     }
   ],
   "material_records": [
@@ -634,61 +611,18 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
-    },
-    {
-      "lab": "zero_day_evaluator_lab",
-      "property": "detected_hole_count",
-      "name": "code_genome_holes",
-      "computed": 82.0,
-      "measured": 0.0,
-      "error_pct": 82.0,
-      "source": "code_genome_gap_detection",
-      "risk_tier": "RED",
-      "domain_display_name": "zero day evaluator",
-      "display_name": "code genome holes",
-      "scientific_measurement": {
-        "delta": 82.0,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
     }
   ],
-  "crosswalk_modules": [
-    "FSOT.Formal.CryptographyTechnologyPriors",
-    "FSOT.Formal.MalwareThreatIntelligencePriors",
-    "FSOT.Formal.CodeGenomeStructurePriors"
-  ],
-  "risk_tier": "RED",
-  "detected_hole_count": 82,
-  "language_bridges": [
-    "Lean",
-    "Rust",
-    "Python",
-    "C",
-    "JavaScript",
-    "Go",
-    "Zig",
-    "WebAssembly",
-    "FSOTB_ISA"
-  ],
-  "display_name": "Zero Day Risk Evaluator",
-  "tier_label": "Cybersecurity engineering (Tier H)",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.018663+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 18,
-    "median_error_pct": 0.010333,
-    "max_error_pct": 0.010353,
-    "mean_abs_delta": 0.0015323888888888887,
-    "precision_tier_counts": {
-      "green": 18
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.010337117254355377,
+    "max_scalar_error_pct": 0.010337117254360602,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

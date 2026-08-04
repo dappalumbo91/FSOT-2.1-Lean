@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:03:10.215389+00:00",
+  "generated_at": "2026-08-04T14:50:14.843906+00:00",
   "domain": "Engineering_Hardware_Code_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -8,7 +8,8 @@
     "coding_structure_verifier",
     "tier96_circuit",
     "fsot_gpu_cuda",
-    "fsot_gpu_parity_verify"
+    "fsot_gpu_parity_verify",
+    "fsot_proper_hardware_clean"
   ],
   "maps_to_lean": [
     "electron",
@@ -18,9 +19,9 @@
     "ai"
   ],
   "D_eff": 13,
-  "record_count": 99,
-  "observable_count": 99,
-  "scalar_record_count": 92,
+  "record_count": 93,
+  "observable_count": 93,
+  "scalar_record_count": 86,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -28,14 +29,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "engineering_spine": {
-        "sota_typical_error_pct": 8.0,
-        "sota_model": "ad-hoc hardware bring-up without seed rails"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_engineering_spine_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -46,16 +47,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 99
+      "observable_count": 93
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "engineering_spine",
-      "name": "hardware_code_gpu",
+      "property": "fsot_proper",
+      "name": "hardware_clean",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 99
+      "observable_count": 93
     }
   ],
   "material_records": [
@@ -748,15 +749,6 @@
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
-      "property": "source_pooled_residual",
-      "name": "fsot_processor_function_panel_benchmark",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "engineering_hardware_code_spine_lab",
       "property": "bits_per_trit",
       "name": "processor_packing_warp",
       "computed": 2.0,
@@ -852,17 +844,6 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula"
-    },
-    {
-      "lab": "engineering_hardware_code_spine_lab",
-      "property": "bits_per_trit",
-      "name": "ram_crystal_pack",
-      "computed": 2.0,
-      "measured": 2.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "2-bit pack codes {0,1,2}",
-      "layer": "ram_function"
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -1104,66 +1085,12 @@
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
-      "property": "consensus_no_exp_bus",
-      "name": "interconnect_law",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "engineering_hardware_code_spine_lab",
-      "property": "exclusive_sector_ownership",
-      "name": "memory_bus_ownership",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "formula": "at most one writer per exclusive sector",
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "engineering_hardware_code_spine_lab",
-      "property": "qemu_disk_image_present",
-      "name": "bare_metal_uart_path",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "engineering_hardware_code_spine_lab",
       "property": "source_pooled_residual",
       "name": "fsot_c_pack_parity_panel_benchmark",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula"
-    },
-    {
-      "lab": "engineering_hardware_code_spine_lab",
-      "property": "c_parity_run_ok",
-      "name": "c_host",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold"
     },
     {
       "lab": "engineering_hardware_code_spine_lab",

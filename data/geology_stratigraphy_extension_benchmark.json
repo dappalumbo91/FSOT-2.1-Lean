@@ -1,34 +1,37 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:28:34.097355+00:00",
+  "generated_at": "2026-08-04T14:49:50.021220+00:00",
   "domain": "Geology_Stratigraphy",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "USGS_seismology",
     "PB2002_tectonics",
-    "USGS_hydrology"
+    "USGS_hydrology",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "energy",
     "galactic"
   ],
   "D_eff": 18,
-  "record_count": 1960,
-  "observable_count": 1960,
+  "record_count": 1957,
+  "observable_count": 1957,
+  "scalar_record_count": 0,
+  "scalar_gate_applicable": false,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "geology_panel": {
+      "pre": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "Seismic stratigraphy classifiers"
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_stratigraphy_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -39,42 +42,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 1960,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 1957
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "stratigraphy",
-      "name": "geology_panel",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 1960,
-      "domain_display_name": "tier gap fill",
-      "display_name": "geology panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 1957
     }
   ],
   "material_records": [
@@ -33775,28 +33752,6 @@
     {
       "lab": "geology_stratigraphy_lab",
       "property": "streamflow_anomaly_classifier",
-      "name": "06803510:2015-07",
-      "station": "06803510",
-      "month": "2015-07",
-      "mean_cfs": 11.18,
-      "anomaly_pct": -25.1924,
-      "computed_quiet": 1.0,
-      "measured_quiet": 0.0,
-      "error_pct": 100.0,
-      "S_energy": -0.549094,
-      "source": "hydrology",
-      "domain_display_name": "geology stratigraphy",
-      "display_name": "06803510:2015-07",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "geology_stratigraphy_lab",
-      "property": "streamflow_anomaly_classifier",
       "name": "06803510:2015-08",
       "station": "06803510",
       "month": "2015-08",
@@ -35244,28 +35199,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "geology_stratigraphy_lab",
-      "property": "streamflow_anomaly_classifier",
-      "name": "06803510:2021-02",
-      "station": "06803510",
-      "month": "2021-02",
-      "mean_cfs": 8.03,
-      "anomaly_pct": -25.1631,
-      "computed_quiet": 1.0,
-      "measured_quiet": 0.0,
-      "error_pct": 100.0,
-      "S_energy": -0.549094,
-      "source": "hydrology",
-      "domain_display_name": "geology stratigraphy",
-      "display_name": "06803510:2021-02",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -41585,28 +41518,6 @@
     {
       "lab": "geology_stratigraphy_lab",
       "property": "streamflow_anomaly_classifier",
-      "name": "14246900:2015-02",
-      "station": "14246900",
-      "month": "2015-02",
-      "mean_cfs": 321857.14,
-      "anomaly_pct": 25.0359,
-      "computed_quiet": 1.0,
-      "measured_quiet": 0.0,
-      "error_pct": 100.0,
-      "S_energy": -0.549094,
-      "source": "hydrology",
-      "domain_display_name": "geology stratigraphy",
-      "display_name": "14246900:2015-02",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "geology_stratigraphy_lab",
-      "property": "streamflow_anomaly_classifier",
       "name": "14246900:2015-03",
       "station": "14246900",
       "month": "2015-03",
@@ -44204,19 +44115,13 @@
   "margin_summary": {
     "scalar_pooled_median_error_pct": null,
     "max_scalar_error_pct": null,
-    "classifier_count": 1960,
+    "classifier_count": 1957,
     "classifier_correct": 1957,
-    "classifier_misclass_count": 3,
-    "classifier_accuracy_pct": 99.846939,
-    "classifier_misclass_rate_pct": 0.153061,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Geology Stratigraphy",
-  "tier_label": "Tier 35",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:45.472505+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 0
-  }
+  "fsot_precision_gate_pct": 0.5
 }

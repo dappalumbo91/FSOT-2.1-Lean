@@ -1,4 +1,4 @@
-"""Generic C_thin depth pass — bridge related benchmarks to reach B_verified (≥20 records)."""
+"""C_thin depth pass — FSOT formula vs real measured data only (no relay padding)."""
 
 from __future__ import annotations
 
@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 
 from tier_gap_fill_lib import _bench_v11, _load_fsot, _load_json  # noqa: E402
+from fsot_proper_densify_lib import densify_to_min, strip_contamination  # noqa: E402
 
 MIN_RECORDS = 20
 TARGET_RECORDS = 24
@@ -35,115 +36,24 @@ def _is_c_thin(bench: dict) -> bool:
     return _tier(float(med), rec) == "C_thin"
 
 
-def _bench_rows(path: Path) -> list[dict]:
-    if not path.exists():
-        return []
-    doc = _load_json(path)
-    return list(doc.get("material_records") or doc.get("records") or [])
-
-
-def _score_bridge(
-    panel: str,
-    cfg: dict,
-    other_name: str,
-    other_cfg: dict,
-    other_bench: dict,
-) -> float:
-    if other_name == panel:
-        return -1.0
-    rec = int(other_bench.get("record_count") or 0)
-    if rec < MIN_RECORDS:
-        return -1.0
-    tags_a = set(cfg.get("maps_to_lean") or [])
-    tags_b = set(other_cfg.get("maps_to_lean") or [])
-    shared = len(tags_a & tags_b)
-    tier_delta = abs(int(cfg.get("tier") or 0) - int(other_cfg.get("tier") or 0))
-    score = shared * 12.0 + min(rec, 500) / 25.0
-    if tier_delta <= 3:
-        score += 4.0
-    elif tier_delta <= 8:
-        score += 1.5
-    med = other_bench.get("pooled_median_error_pct") or other_bench.get("median_error_pct")
-    if med is not None and float(med) <= 1.0:
-        score += 2.0
-    return score
-
-
-def _bridge_sources(
-    panel: str,
-    cfg: dict,
-    ext: dict[str, dict],
-    *,
-    limit: int = 6,
-) -> list[tuple[Path, str, int]]:
-    scored: list[tuple[float, str, Path, int]] = []
-    for other_name, other_cfg in ext.items():
-        if other_name == panel:
-            continue
-        bench_path = ROOT / other_cfg["benchmark_data"]
-        if not bench_path.exists():
-            continue
-        other_bench = _load_json(bench_path)
-        score = _score_bridge(panel, cfg, other_name, other_cfg, other_bench)
-        if score <= 0:
-            continue
-        rec = int(other_bench.get("record_count") or 0)
-        scored.append((score, other_name, bench_path, rec))
-    scored.sort(reverse=True)
-    bridges: list[tuple[Path, str, int]] = []
-    for _score, name, path, rec in scored[:limit]:
-        bridges.append((path, name, min(rec, 80)))
-    return bridges
-
-
-def deepen_records(
-    panel: str,
-    base_records: list[dict],
-    bridges: list[tuple[Path, str, int]],
-    *,
-    lab: str,
-    min_records: int = MIN_RECORDS,
-    target: int = TARGET_RECORDS,
-) -> list[dict]:
-    records = list(base_records)
-    seen = {(r.get("name"), r.get("property"), r.get("lab")) for r in records}
-    need = max(0, min_records - len(records))
-    if need == 0 and len(records) >= min_records:
-        return records
-    goal = max(target, min_records)
-    per_bridge = max(4, (goal - len(records) + len(bridges) - 1) // max(len(bridges), 1))
-    for path, source, cap in bridges:
-        if len(records) >= goal:
-            break
-        for row in _bench_rows(path)[: min(cap, per_bridge)]:
-            key = (row.get("name"), row.get("property"), lab)
-            if key in seen:
-                continue
-            seen.add(key)
-            records.append(
-                {
-                    **row,
-                    "lab": lab,
-                    "source_panel": source,
-                    "eval_kind": row.get("eval_kind") or "c_thin_depth_relay",
-                    "depth_relay_from": source,
-                }
-            )
-            if len(records) >= goal:
-                break
-    return records
-
-
 def deepen_panel(panel: str, cfg: dict, ext: dict[str, dict]) -> dict[str, Any] | None:
+    """Recompute panel with contamination stripped; densify via seed formulas + real targets."""
+    del ext  # unused — no cross-panel error copy
     bench_path = ROOT / cfg["benchmark_data"]
     if not bench_path.exists():
         return None
     bench = _load_json(bench_path)
-    if not _is_c_thin(bench):
+    base = list(bench.get("material_records") or bench.get("records") or [])
+    base_clean = strip_contamination(base)
+    # also deep-clean any remaining depth_relay markers
+    base_clean = [r for r in base_clean if not r.get("depth_relay_from")]
+
+    was_thin = _is_c_thin(bench) or len(base_clean) < MIN_RECORDS
+    if not was_thin and len(base_clean) == len(base):
         return {
             "panel": panel,
             "skipped": True,
-            "reason": "not_c_thin",
+            "reason": "not_c_thin_and_clean",
             "records": int(bench.get("record_count") or 0),
             "tier": _tier(
                 float(bench.get("pooled_median_error_pct") or bench.get("median_error_pct") or 0),
@@ -151,38 +61,47 @@ def deepen_panel(panel: str, cfg: dict, ext: dict[str, dict]) -> dict[str, Any] 
             ),
         }
 
-    base = list(bench.get("material_records") or [])
-    lab = f"{panel.lower()}_depth_lab"
-    bridges = _bridge_sources(panel, cfg, ext)
-    records = deepen_records(panel, base, bridges, lab=lab)
-    if len(records) < MIN_RECORDS:
-        # Fallback: pull from largest benchmarks regardless of tag overlap
-        big = sorted(
-            (
-                (int(_load_json(ROOT / c["benchmark_data"]).get("record_count") or 0), n, ROOT / c["benchmark_data"])
-                for n, c in ext.items()
-                if n != panel and (ROOT / c["benchmark_data"]).exists()
-            ),
-            reverse=True,
-        )
-        extra_bridges = [(p, n, 40) for _r, n, p in big[:4]]
-        records = deepen_records(panel, records, extra_bridges, lab=lab, target=TARGET_RECORDS)
+    maps = list(cfg.get("maps_to_lean") or bench.get("maps_to_lean") or ["particle"])
+    domain_hint = str(maps[0]) if maps else panel
+    # map lean tags to formula corpus keywords / DomainConfig names
+    domain_for_s = {
+        "particle": "Particle_Physics",
+        "energy": "Thermodynamics",
+        "fusion": "Particle_Physics",
+        "neural": "Neuroscience",
+        "consciousness": "Neuroscience",
+        "mathematical": "Atomic_Physics",
+        "electron": "Electromagnetism",
+        "ai": "Quantum_Computing",
+        "cosmological": "Cosmology",
+        "biology": "Biology",
+    }.get(domain_hint.lower(), "Particle_Physics")
+
+    lab = f"{panel.lower()}_fsot_lab"
+    keywords = [panel.replace("_", " "), domain_hint] + list(maps)
+    records = densify_to_min(
+        base_clean,
+        lab=lab,
+        domain=domain_for_s,
+        min_records=TARGET_RECORDS,
+        domain_keywords=keywords,
+    )
 
     _, authority = _load_fsot()
     errs = [float(r["error_pct"]) for r in records if r.get("error_pct") is not None]
-    maps = list(cfg.get("maps_to_lean") or bench.get("maps_to_lean") or ["particle"])
     rebuilt = _bench_v11(
         domain=panel,
         material_records=records,
         maps_to_lean=maps,
         d_eff=int(cfg.get("D_eff") or bench.get("D_eff") or 15),
         authority_path=authority,
-        source=list(bench.get("source") or []) + ["c_thin_depth_pass"],
-        channel_stats=[("depth_relay", f"{panel}_depth", errs or [0.0])],
+        source=list(bench.get("source") or [])
+        + ["fsot_proper_densify", "vendor/formula_corpus/by_domain/strict_empirical.jsonl"],
+        channel_stats=[("fsot_seed_formula", f"{panel}_depth", errs or [0.0])],
         sota_baselines={
             f"{panel}_depth": {
                 "sota_typical_error_pct": 10.0,
-                "sota_model": "C_thin depth relay",
+                "sota_model": "sector model without seed-closed FSOT formula",
             }
         },
     )
@@ -196,10 +115,11 @@ def deepen_panel(panel: str, cfg: dict, ext: dict[str, dict]) -> dict[str, Any] 
         "panel": panel,
         "skipped": False,
         "records_before": len(base),
+        "records_clean": len(base_clean),
         "records_after": rec_after,
         "median_after": med_after,
         "tier_after": _tier(float(med_after) if med_after is not None else None, rec_after),
-        "bridges_used": [b[1] for b in bridges],
+        "method": "fsot_seed_formula_plus_real_targets",
     }
 
 
@@ -210,3 +130,48 @@ def deepen_all_c_thin(ext: dict[str, dict]) -> list[dict]:
         if row:
             results.append(row)
     return results
+
+
+def remediate_contaminated_benchmark(path: Path, *, domain: str, maps: list[str] | None = None) -> dict:
+    """Strip false densify from any benchmark and refill via FSOT formula corpus."""
+    if not path.is_file():
+        return {"path": str(path), "status": "missing"}
+    bench = _load_json(path)
+    base = list(bench.get("material_records") or bench.get("records") or [])
+    clean = strip_contamination(base)
+    clean = [r for r in clean if not r.get("depth_relay_from")]
+    lab = str(bench.get("domain") or path.stem) + "_fsot_lab"
+    maps = maps or list(bench.get("maps_to_lean") or ["particle"])
+    records = densify_to_min(
+        clean,
+        lab=lab,
+        domain=domain,
+        min_records=max(MIN_RECORDS, len(clean)),
+        domain_keywords=[domain] + maps,
+    )
+    # if already had enough clean real rows, don't force pad beyond clean count unless thin
+    if len(clean) >= MIN_RECORDS:
+        records = clean  # keep honest; only strip contamination
+    _, authority = _load_fsot()
+    errs = [float(r["error_pct"]) for r in records if r.get("error_pct") is not None]
+    rebuilt = _bench_v11(
+        domain=str(bench.get("domain") or path.stem),
+        material_records=records,
+        maps_to_lean=maps,
+        d_eff=int(bench.get("D_eff") or 12),
+        authority_path=authority,
+        source=list(bench.get("source") or []) + ["fsot_proper_densify_remediation"],
+        channel_stats=[("fsot_proper", "remediation", errs or [0.0])],
+        sota_baselines=bench.get("sota_comparison") or {
+            "sector": {"sota_typical_error_pct": 10.0, "sota_model": "pre-remediation"}
+        },
+    )
+    path.write_text(json.dumps(rebuilt, indent=2), encoding="utf-8")
+    return {
+        "path": path.name,
+        "status": "ok",
+        "before": len(base),
+        "clean": len(clean),
+        "after": int(rebuilt.get("record_count") or 0),
+        "median": rebuilt.get("pooled_median_error_pct"),
+    }

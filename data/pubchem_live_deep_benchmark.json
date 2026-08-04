@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-16T13:55:20.697037+00:00",
+  "generated_at": "2026-08-04T14:49:50.357117+00:00",
   "domain": "PubChem_Live_Deep",
-  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\live_cache\\tier68\\pubchem_live_cache.json",
     "vendor/public_data/pubchem/pubchem_preregistered_panel.json",
@@ -13,7 +13,8 @@
     "pharmacology_benchmark.json",
     "culinary_arts_benchmark.json",
     "maillard_chemistry_gap_fill_benchmark.json",
-    "food_microbiology_gap_fill_benchmark.json"
+    "food_microbiology_gap_fill_benchmark.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "electron",
@@ -30,19 +31,18 @@
   "scalar_gate_applicable": true,
   "median_error_pct": 0.032631,
   "pooled_median_error_pct": 0.032631,
-  "headline_median_error_pct": 0.032631,
+  "headline_median_error_pct": 0.040788,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "pubchem_deep": {
-        "sota_typical_error_pct": 1.0,
-        "sota_model": "PubChem PUG REST"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_prediction_vs_baseline": true,
-      "channel_pubchem_consistency_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -57,21 +57,12 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_prediction",
-      "name": "pubchem_deep",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.040788,
       "measured": 0.0,
       "error_pct": 0.040788,
-      "observable_count": 4453
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "pubchem_consistency",
-      "name": "live_vs_bundled",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 500
+      "observable_count": 5043
     }
   ],
   "material_records": [

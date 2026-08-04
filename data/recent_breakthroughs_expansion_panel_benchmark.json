@@ -1,23 +1,22 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T13:56:35.711688+00:00",
+  "generated_at": "2026-08-04T14:48:52.063668+00:00",
   "domain": "Recent_Breakthroughs_Expansion_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\qce_elm_public_anchors.json",
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\fusion_public_anchors.json",
-    "public 2022\u20132026 fusion/quantum breakthrough literature"
+    "public 2022\u20132026 fusion/quantum breakthrough literature",
+    "fsot_proper_densify_remediation"
   ],
   "maps_to_lean": [
     "fusion",
-    "energy",
-    "quantum",
-    "mathematical"
+    "energy"
   ],
   "D_eff": 13,
-  "record_count": 81,
-  "observable_count": 81,
-  "scalar_record_count": 79,
+  "record_count": 63,
+  "observable_count": 63,
+  "scalar_record_count": 62,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -25,14 +24,21 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "news_only": {
-        "sota_typical_error_pct": 20.0,
-        "sota_model": "headline-only without residual gates"
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "news_only": {
+          "sota_typical_error_pct": 20.0,
+          "sota_model": "headline-only without residual gates"
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_breakthroughs_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_breakthroughs_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -43,30 +49,19 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 81
+      "observable_count": 63
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "breakthroughs",
-      "name": "recent_public",
+      "property": "fsot_proper",
+      "name": "remediation",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 81
+      "observable_count": 63
     }
   ],
   "material_records": [
-    {
-      "lab": "breakthrough_lab",
-      "property": "nif_2022_ignited",
-      "name": "NIF_2022",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
-    },
     {
       "lab": "breakthrough_lab",
       "property": "nif_2022_yield_mj",
@@ -86,39 +81,6 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "long-pulse H-mode duration class"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "east_long_pulse_hmode",
-      "name": "EAST_2023",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "qce_2026_mechanism_published",
-      "name": "Zhang_PRL_2026",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "qce_asdex_jet_demonstrated",
-      "name": "QCE_machines",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
     },
     {
       "lab": "breakthrough_lab",
@@ -149,28 +111,6 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "\u03b8 = C_eff\u00b7P_var invariant under platform temperature claims"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "room_temp_quantum_comm_literature_noted",
-      "name": "Stanford_2025_class",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "Literature class noted; not a numeric fidelity residual of a device"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "fsot_zero_free_param_spine",
-      "name": "FSOT_2_1",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
     },
     {
       "lab": "breakthrough_lab",
@@ -324,17 +264,6 @@
     },
     {
       "lab": "breakthrough_lab",
-      "property": "qce_vs_elm_continuous",
-      "name": "QCE",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
-    },
-    {
-      "lab": "breakthrough_lab",
       "property": "coulomb_peak_kev",
       "name": "dt_fusion",
       "computed": 15.0,
@@ -455,17 +384,6 @@
     },
     {
       "lab": "breakthrough_lab",
-      "property": "inertial_NIF_2022_ignited_consistent",
-      "name": "NIF_2022",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
-    },
-    {
-      "lab": "breakthrough_lab",
       "property": "inertial_q_factor",
       "name": "NIF_2021",
       "computed": 0.7,
@@ -503,17 +421,6 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "yield_mj / driver_mj"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "inertial_NIF_2021_ignited_consistent",
-      "name": "NIF_2021",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
     },
     {
       "lab": "breakthrough_lab",
@@ -557,17 +464,6 @@
     },
     {
       "lab": "breakthrough_lab",
-      "property": "inertial_OMEGA_direct_ignited_consistent",
-      "name": "OMEGA_direct",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
-    },
-    {
-      "lab": "breakthrough_lab",
       "property": "inertial_q_factor",
       "name": "NIF_hohlraum_baseline",
       "computed": 0.05,
@@ -605,17 +501,6 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "yield_mj / driver_mj"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "inertial_NIF_hohlraum_baseline_ignited_consistent",
-      "name": "NIF_hohlraum_baseline",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
     },
     {
       "lab": "breakthrough_lab",
@@ -799,56 +684,6 @@
     },
     {
       "lab": "breakthrough_lab",
-      "property": "seed_theta",
-      "name": "seed_invariant",
-      "computed": 0.9174663774653723,
-      "measured": 0.9174663774653723,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "C_eff\u00b7P_var"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "seed_phi",
-      "name": "seed_invariant",
-      "computed": 1.618033988749895,
-      "measured": 1.618033988749895,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c6"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "seed_phi_m4",
-      "name": "seed_invariant",
-      "computed": 0.14589803375031543,
-      "measured": 0.14589803375031543,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c6\u207b\u2074 active-fraction ceiling"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "seed_coherence_half",
-      "name": "seed_invariant",
-      "computed": 0.5,
-      "measured": 0.5,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "coh > 1/2"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "seed_elm_bound_fifth",
-      "name": "seed_invariant",
-      "computed": 0.2,
-      "measured": 0.2,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "1/5 ELM energy dump upper"
-    },
-    {
-      "lab": "breakthrough_lab",
       "property": "seed_gentle_floor_four_fifths",
       "name": "seed_invariant",
       "computed": 0.8,
@@ -856,28 +691,6 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "4/5 continuous path floor"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "residual_gate_half_pct_spirit",
-      "name": "FSOT_green",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
-    },
-    {
-      "lab": "breakthrough_lab",
-      "property": "literature_identity_not_pdg_fold",
-      "name": "honesty",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
     }
   ],
   "margin_summary": {

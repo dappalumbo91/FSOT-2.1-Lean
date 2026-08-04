@@ -1,33 +1,37 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:14:18.935555+00:00",
+  "generated_at": "2026-08-04T14:48:54.760653+00:00",
   "domain": "Portable_Clone_Verify",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "external_data_manifest.yaml",
-    "extension_domains_manifest.yaml"
+    "extension_domains_manifest.yaml",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "ai",
     "mathematical"
   ],
   "D_eff": 14,
-  "record_count": 290,
-  "observable_count": 290,
+  "record_count": 289,
+  "observable_count": 289,
+  "scalar_record_count": 288,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "clone_panel": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "Machine-specific caches"
+      "Portable_Clone_Verify_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "sector model without seed-closed FSOT formula"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_portable_assets_vs_baseline": true
+      "channel_fsot_seed_formula_vs_baseline": true
     }
   },
   "records": [
@@ -38,42 +42,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 290,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 289
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "portable_assets",
-      "name": "clone_panel",
+      "property": "fsot_seed_formula",
+      "name": "Portable_Clone_Verify_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 289,
-      "domain_display_name": "tier gap fill",
-      "display_name": "clone panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 289
     }
   ],
   "material_records": [
@@ -4811,28 +4789,6 @@
     {
       "lab": "portable_clone_verify_lab",
       "property": "extension_benchmark_present",
-      "name": "SIMBAD_Stellar_Identity_Deep",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "data/simbad_stellar_identity_deep_benchmark.json",
-      "domain_display_name": "portable clone verify",
-      "display_name": "SIMBAD Stellar Identity Deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "portable_clone_verify_lab",
-      "property": "extension_benchmark_present",
       "name": "Gaia_Astrometry_Panel_Deep",
       "computed": 1.0,
       "measured": 1.0,
@@ -6472,29 +6428,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "bundled_asset_count": 42,
-  "missing_bundled_count": 0,
-  "extension_domain_count": 246,
-  "missing_benchmark_count": 0,
-  "portable_mode_env": "FSOT_PORTABLE_MODE=1",
-  "portable_cache_root": "vendor/public_data/cache",
-  "clone_verify_pass": true,
-  "crosswalk_modules": [
-    "FSOT.Formal.PortableCloneVerifyPriors"
-  ],
-  "display_name": "Portable Clone Verify",
-  "tier_label": "Tier 46",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.119403+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 289,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 289
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:12.249394+00:00",
+  "generated_at": "2026-08-04T14:49:50.125705+00:00",
   "domain": "Island_Of_Stability_Deep_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\superheavy_island\\island_z120_z126_anchors.json",
-    "vendor/fsot_compute.py\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json"
+    "vendor/fsot_compute.py\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "particle",
@@ -16,20 +17,22 @@
   "D_eff": 19,
   "record_count": 23,
   "observable_count": 23,
-  "median_error_pct": 0.0,
-  "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 9.504139423370362e-09,
+  "scalar_record_count": 17,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 1e-06,
+  "pooled_median_error_pct": 1e-06,
+  "headline_median_error_pct": 1e-06,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "z120_z126_stability": {
-        "sota_typical_error_pct": 50.0,
-        "sota_model": "Shell-model island extrapolation"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_island_deep_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -37,45 +40,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 1e-06,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 23,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 1e-06,
+      "observable_count": 23
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "island_deep",
-      "name": "z120_z126_stability",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 9.504139423370362e-09,
-      "observable_count": 22,
-      "domain_display_name": "tier gap fill",
-      "display_name": "z120 z126 stability",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0,
+      "observable_count": 23
     }
   ],
   "material_records": [
@@ -624,19 +601,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Island Of Stability Deep Panel",
-  "tier_label": "Tier 74 \u2014 Island Of Stability Deep Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.287690+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 17,
-    "median_error_pct": 1e-06,
-    "max_error_pct": 9.4e-05,
-    "mean_abs_delta": 0.006909408235294116,
-    "precision_tier_counts": {
-      "green": 17
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

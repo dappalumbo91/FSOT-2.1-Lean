@@ -1,12 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T14:25:25.288713+00:00",
+  "generated_at": "2026-08-04T14:48:54.963458+00:00",
   "domain": "Distant_Island_Z128_Z132_Deep_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\superheavy_island\\distant_island_z128_z164_anchors.json",
     "vendor/fsot_compute.py\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json",
-    "c_thin_depth_pass"
+    "c_thin_depth_pass",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "particle",
@@ -17,22 +19,22 @@
   "D_eff": 23,
   "record_count": 24,
   "observable_count": 24,
-  "scalar_record_count": 17,
+  "scalar_record_count": 19,
   "scalar_gate_applicable": true,
-  "median_error_pct": 1e-06,
-  "pooled_median_error_pct": 1e-06,
-  "headline_median_error_pct": 1e-06,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
       "Distant_Island_Z128_Z132_Deep_Panel_depth": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+        "sota_model": "sector model without seed-closed FSOT formula"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_fsot_seed_formula_vs_baseline": true
     }
   },
   "records": [
@@ -40,45 +42,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 1e-06,
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 1e-06,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0,
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
+      "property": "fsot_seed_formula",
       "name": "Distant_Island_Z128_Z132_Deep_Panel_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "Distant Island Z128 Z132 Deep Panel depth",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -403,253 +379,139 @@
       }
     },
     {
-      "lab": "distant_island_z128_z132_deep_panel_depth_lab",
-      "property": "particle_mass_relay",
-      "name": "proton",
-      "computed": 941.3036566521167,
-      "measured": 938.272,
-      "error_pct": 0.323111,
-      "eval_kind": "particle_relay",
-      "domain_display_name": "distant island z128 z132 deep panel depth",
-      "display_name": "proton",
-      "scientific_measurement": {
-        "delta": 3.03165665,
-        "delta_pct": 0.323111,
-        "effective_error_pct": 0.323111,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Superheavy_Element_Stability_Panel",
-      "depth_relay_from": "Superheavy_Element_Stability_Panel"
+      "lab": "distant_island_z128_z132_deep_panel_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "lab": "distant_island_z128_z132_deep_panel_depth_lab",
-      "property": "particle_mass_relay",
-      "name": "neutron",
-      "computed": 941.3036566521167,
-      "measured": 939.565,
-      "error_pct": 0.185049,
-      "eval_kind": "particle_relay",
-      "domain_display_name": "distant island z128 z132 deep panel depth",
-      "display_name": "neutron",
-      "scientific_measurement": {
-        "delta": 1.73865665,
-        "delta_pct": 0.185049,
-        "effective_error_pct": 0.185049,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Superheavy_Element_Stability_Panel",
-      "depth_relay_from": "Superheavy_Element_Stability_Panel"
+      "lab": "distant_island_z128_z132_deep_panel_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "distant_island_z128_z132_deep_panel_depth_lab",
-      "property": "half_life_s",
-      "name": "Rf",
-      "Z": 104,
-      "computed": 8100.000076983489,
-      "measured": 8100.0,
-      "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor",
-      "domain_display_name": "distant island z128 z132 deep panel depth",
-      "display_name": "Rf",
-      "scientific_measurement": {
-        "delta": 7.698e-05,
-        "delta_pct": 1e-06,
-        "effective_error_pct": 1e-06,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Superheavy_Element_Stability_Panel",
-      "depth_relay_from": "Superheavy_Element_Stability_Panel"
+      "lab": "distant_island_z128_z132_deep_panel_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "distant_island_z128_z132_deep_panel_depth_lab",
-      "property": "binding_energy_per_nucleon_mev",
-      "name": "Rf",
-      "Z": 104,
-      "computed": 7.154309,
-      "measured": 7.154302,
-      "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy",
-      "domain_display_name": "distant island z128 z132 deep panel depth",
-      "display_name": "Rf",
-      "scientific_measurement": {
-        "delta": 7e-06,
-        "delta_pct": 9.8e-05,
-        "effective_error_pct": 9.8e-05,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Superheavy_Element_Stability_Panel",
-      "depth_relay_from": "Superheavy_Element_Stability_Panel"
+      "lab": "distant_island_z128_z132_deep_panel_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "distant_island_z128_z132_deep_panel_depth_lab",
-      "property": "panel_pooled_median",
-      "name": "island_deep",
+      "lab": "distant_island_z128_z132_deep_panel_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "distant_island_z128_z132_deep_panel_fsot_lab",
+      "property": "BeCl\u2082",
+      "name": "d100218fdd574f15",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "distant_island_z128_z132_deep_panel_fsot_lab",
+      "property": "H\u207a/H\u2082",
+      "name": "0d36931a8021c0b6",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "record_count": 23,
-      "eval_kind": "island_panel_bridge",
-      "domain_display_name": "distant island z128 z132 deep panel depth",
-      "display_name": "island deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Superheavy_Island_Completion_Spine",
-      "depth_relay_from": "Superheavy_Island_Completion_Spine"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi - pi",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Bard, Parsons & Jordan (1985)"
     },
     {
-      "lab": "distant_island_z128_z132_deep_panel_depth_lab",
-      "property": "superheavy_relay",
-      "name": "Rf",
-      "computed": 8100.000076983489,
-      "measured": 8100.0,
-      "error_pct": 1e-06,
-      "source_panel": "Superheavy_Island_Completion_Spine",
-      "eval_kind": "island_relay",
-      "domain_display_name": "distant island z128 z132 deep panel depth",
-      "display_name": "Rf",
-      "scientific_measurement": {
-        "delta": 7.698e-05,
-        "delta_pct": 1e-06,
-        "effective_error_pct": 1e-06,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Superheavy_Island_Completion_Spine"
-    },
-    {
-      "lab": "distant_island_z128_z132_deep_panel_depth_lab",
-      "property": "island_half_life_s",
-      "name": "Z119_N177",
-      "computed": 0.8000000000760331,
-      "measured": 0.8,
-      "error_pct": 0.0,
-      "source_panel": "Superheavy_Island_Completion_Spine",
-      "eval_kind": "island_relay",
-      "domain_display_name": "distant island z128 z132 deep panel depth",
-      "display_name": "Z119 N177",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Superheavy_Island_Completion_Spine"
-    },
-    {
-      "lab": "distant_island_z128_z132_deep_panel_depth_lab",
-      "property": "binding_energy_per_nucleon_mev",
-      "name": "Z119_N177",
-      "computed": 7.450007,
-      "measured": 7.45,
-      "error_pct": 9.5e-05,
-      "source_panel": "Superheavy_Island_Completion_Spine",
-      "eval_kind": "island_relay",
-      "domain_display_name": "distant island z128 z132 deep panel depth",
-      "display_name": "Z119 N177",
-      "scientific_measurement": {
-        "delta": 7e-06,
-        "delta_pct": 9.4e-05,
-        "effective_error_pct": 9.4e-05,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Superheavy_Island_Completion_Spine"
-    },
-    {
-      "lab": "distant_island_z128_z132_deep_panel_depth_lab",
-      "property": "panel_pooled_median",
-      "name": "fusion_lab",
+      "lab": "distant_island_z128_z132_deep_panel_fsot_lab",
+      "property": "alpha_Fe",
+      "name": "a3464d3321da787e",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "record_count": 50,
-      "eval_kind": "periodic_extension_bridge",
-      "domain_display_name": "distant island z128 z132 deep panel depth",
-      "display_name": "fusion lab",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Periodic_Table_Extension_Closure_Spine",
-      "depth_relay_from": "Periodic_Table_Extension_Closure_Spine"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ 2 - phi - 1",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Long & Greenwood (1997)"
     },
     {
-      "lab": "distant_island_z128_z132_deep_panel_depth_lab",
-      "property": "panel_pooled_median",
-      "name": "fusion_physics_public",
-      "computed": 9.5e-05,
-      "measured": 9.5e-05,
+      "lab": "distant_island_z128_z132_deep_panel_fsot_lab",
+      "property": "Bi2Te3",
+      "name": "dce748561902febf",
+      "computed": 1.0,
+      "measured": 1.0,
       "error_pct": 0.0,
-      "source_panel": "Periodic_Table_Extension_Closure_Spine",
-      "eval_kind": "closure_relay",
-      "domain_display_name": "distant island z128 z132 deep panel depth",
-      "display_name": "fusion physics public",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Periodic_Table_Extension_Closure_Spine"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "PHI ^ 2 - PHI ^ 1",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
+    },
+    {
+      "lab": "distant_island_z128_z132_deep_panel_fsot_lab",
+      "property": "R_N",
+      "name": "07b3e073b02aa441",
+      "computed": 0.7500001632454711,
+      "measured": 0.75,
+      "error_pct": 2.1766e-05,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "G ^ ( - 7 ) - ln ( 3 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 1e-06,
-    "max_scalar_error_pct": 0.323111,
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 9.5e-05,
     "classifier_count": 4,
     "classifier_correct": 4,
     "classifier_misclass_count": 0,
@@ -658,19 +520,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Distant Island Z128 Z132 Deep Panel",
-  "tier_label": "Tier 75 \u2014 Distant Island Z128 Z132 Deep Panel + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 17,
-    "median_error_pct": 1e-06,
-    "max_error_pct": 0.323111,
-    "mean_abs_delta": 0.2808349976470589,
-    "precision_tier_counts": {
-      "green": 17
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.303738+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

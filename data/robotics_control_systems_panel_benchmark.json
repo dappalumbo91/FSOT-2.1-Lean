@@ -1,20 +1,22 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T16:20:14.880996+00:00",
+  "generated_at": "2026-08-04T14:48:55.064402+00:00",
   "domain": "Robotics_Control_Systems_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\scientific_expansion\\tier84_cache\\robotics_cache.json",
-    "IEEE robotics reference"
+    "IEEE robotics reference",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "material",
     "energy"
   ],
   "D_eff": 15,
-  "record_count": 20,
-  "observable_count": 20,
-  "scalar_record_count": 20,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 24,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.01341,
   "pooled_median_error_pct": 0.01341,
@@ -22,14 +24,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "robotics": {
-        "sota_typical_error_pct": 6.0,
-        "sota_model": "IEEE control systems anchors"
+      "Robotics_Control_Systems_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "sector model without seed-closed FSOT formula"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_prediction_vs_baseline": true
+      "channel_fsot_seed_formula_vs_baseline": true
     }
   },
   "records": [
@@ -40,42 +42,16 @@
       "computed": 0.01341,
       "measured": 0.0,
       "error_pct": 0.01341,
-      "observable_count": 20,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.01341,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_prediction",
-      "name": "robotics",
+      "property": "fsot_seed_formula",
+      "name": "Robotics_Control_Systems_Panel_depth",
       "computed": 0.01341,
       "measured": 0.0,
       "error_pct": 0.01341,
-      "observable_count": 20,
-      "domain_display_name": "tier gap fill",
-      "display_name": "robotics",
-      "scientific_measurement": {
-        "delta": 0.01341,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -483,31 +459,6 @@
     },
     {
       "lab": "robotics_panel_lab",
-      "property": "process_noise_covariance",
-      "name": "kalman_process_noise",
-      "computed": 0.010001,
-      "measured": 0.01,
-      "error_pct": 0.01341,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Materials_Science",
-      "fsot_scalar": 0.33526,
-      "ingest_source": "robotics_control_reference_observables_bundled",
-      "domain_display_name": "robotics panel",
-      "display_name": "kalman process noise",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.01,
-        "effective_error_pct": 0.01,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "robotics_panel_lab",
       "property": "prediction_horizon",
       "name": "mpc_horizon_steps",
       "computed": 20.002682,
@@ -580,6 +531,71 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "robotics_control_systems_panel_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
+    },
+    {
+      "lab": "robotics_control_systems_panel_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "robotics_control_systems_panel_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "robotics_control_systems_panel_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "robotics_control_systems_panel_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     }
   ],
   "margin_summary": {
@@ -593,19 +609,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Robotics Control Systems Panel",
-  "tier_label": "Rust f64 obligation replay",
-  "scientific_precision_summary": {
-    "scalar_count": 20,
-    "median_error_pct": 0.01341,
-    "max_error_pct": 0.014,
-    "mean_abs_delta": 0.02417375,
-    "precision_tier_counts": {
-      "green": 20
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.018195+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

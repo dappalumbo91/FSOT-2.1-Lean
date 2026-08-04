@@ -1,10 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T16:20:14.887021+00:00",
+  "generated_at": "2026-08-04T14:49:50.431582+00:00",
   "domain": "Scientific_Expansion_Wave2_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "tier84_scientific_expansion_panels"
+    "tier84_scientific_expansion_panels",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "medical",
@@ -19,18 +20,18 @@
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.015311,
+  "headline_median_error_pct": 0.01341,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "scientific_expansion_wave2": {
-        "sota_typical_error_pct": 6.0,
-        "sota_model": "Tier 84 domain expansion"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_ingest_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -41,42 +42,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 40,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 40
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "ingest_relay",
-      "name": "scientific_expansion_wave2",
-      "computed": 0.015311,
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.01341,
       "measured": 0.0,
-      "error_pct": 0.015311,
-      "observable_count": 30,
-      "domain_display_name": "tier gap fill",
-      "display_name": "scientific expansion wave2",
-      "scientific_measurement": {
-        "delta": 0.015311,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.01341,
+      "observable_count": 40
     }
   ],
   "material_records": [
@@ -1014,19 +989,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Scientific Expansion Wave2 Spine",
-  "tier_label": "Rust f64 obligation replay",
-  "scientific_precision_summary": {
-    "scalar_count": 10,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 10
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.018195+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

@@ -1,0 +1,483 @@
+{
+  "generated_at": "2026-08-04T14:48:58.084414+00:00",
+  "method": "fsot_proper_densify \u2014 seed formula / domain S vs real measured only",
+  "contamination_files_before": 145,
+  "contamination_files_after": 11,
+  "top_before": [
+    {
+      "file": "domain_coupling_simulation_benchmark.json",
+      "bad": 74,
+      "total": 18691
+    },
+    {
+      "file": "qce_elm_fusion_edge_panel_benchmark.json",
+      "bad": 41,
+      "total": 86
+    },
+    {
+      "file": "nuclear_lean_route_credibility_benchmark.json",
+      "bad": 39,
+      "total": 87
+    },
+    {
+      "file": "microtubule_quantum_consciousness_panel_benchmark.json",
+      "bad": 36,
+      "total": 63
+    },
+    {
+      "file": "fsot_hardware_depth_spine_benchmark.json",
+      "bad": 34,
+      "total": 177
+    },
+    {
+      "file": "energy_lean_route_credibility_benchmark.json",
+      "bad": 31,
+      "total": 42
+    },
+    {
+      "file": "proton_lean_route_credibility_benchmark.json",
+      "bad": 31,
+      "total": 73
+    },
+    {
+      "file": "perceived_lean_route_credibility_benchmark.json",
+      "bad": 27,
+      "total": 65
+    },
+    {
+      "file": "fsot_interconnect_coherence_panel_benchmark.json",
+      "bad": 26,
+      "total": 88
+    },
+    {
+      "file": "arxiv_primitives_v14_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "binary_decoder_rendlesham_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "certified_agent_qwen_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "electrical_power_systems_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "fsot_aggregate_unified_db_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "intrinsic_llm_validators_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "linguistics_formal_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "tokenization_smoke_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "trinary_hardware_motif_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "trinary_os_portable_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "vl_distill_atlas_benchmark.json",
+      "bad": 24,
+      "total": 24
+    },
+    {
+      "file": "cosmology_anomalies_benchmark.json",
+      "bad": 23,
+      "total": 23
+    },
+    {
+      "file": "hvac_thermal_systems_benchmark.json",
+      "bad": 23,
+      "total": 23
+    },
+    {
+      "file": "orbital_mechanics_benchmark.json",
+      "bad": 22,
+      "total": 22
+    },
+    {
+      "file": "small_body_orbits_benchmark.json",
+      "bad": 22,
+      "total": 22
+    },
+    {
+      "file": "bibliography_lean_corpus_benchmark.json",
+      "bad": 21,
+      "total": 21
+    }
+  ],
+  "top_after": [
+    {
+      "file": "fsot_hardware_depth_spine_benchmark.json",
+      "bad": 34,
+      "total": 177
+    },
+    {
+      "file": "fsot_interconnect_coherence_panel_benchmark.json",
+      "bad": 26,
+      "total": 88
+    },
+    {
+      "file": "fsot_cache_hierarchy_panel_benchmark.json",
+      "bad": 21,
+      "total": 82
+    },
+    {
+      "file": "breakthrough_fusion_spine_benchmark.json",
+      "bad": 19,
+      "total": 146
+    },
+    {
+      "file": "tier_96_circuit_spine_benchmark.json",
+      "bad": 8,
+      "total": 45
+    },
+    {
+      "file": "engineering_hardware_code_spine_benchmark.json",
+      "bad": 6,
+      "total": 99
+    },
+    {
+      "file": "fsot_gpu_cuda_competitive_panel_benchmark.json",
+      "bad": 6,
+      "total": 33
+    },
+    {
+      "file": "fsot_c_pack_parity_panel_benchmark.json",
+      "bad": 4,
+      "total": 23
+    },
+    {
+      "file": "fsot_gpu_engineering_spine_benchmark.json",
+      "bad": 2,
+      "total": 42
+    },
+    {
+      "file": "fsot_processor_function_panel_benchmark.json",
+      "bad": 1,
+      "total": 20
+    },
+    {
+      "file": "fsot_ram_function_panel_benchmark.json",
+      "bad": 1,
+      "total": 33
+    }
+  ],
+  "actions": [
+    {
+      "action": "rebuild_lean_routes",
+      "ok": true
+    },
+    {
+      "path": "energy_lean_route_credibility_benchmark.json",
+      "status": "ok",
+      "before": 40,
+      "clean": 40,
+      "after": 40,
+      "median": 0.039349
+    },
+    {
+      "path": "fusion_lean_route_credibility_benchmark.json",
+      "status": "ok",
+      "before": 81,
+      "clean": 81,
+      "after": 81,
+      "median": 0.009504
+    },
+    {
+      "path": "proton_lean_route_credibility_benchmark.json",
+      "status": "ok",
+      "before": 58,
+      "clean": 58,
+      "after": 58,
+      "median": 0.009504
+    },
+    {
+      "path": "nuclear_lean_route_credibility_benchmark.json",
+      "status": "ok",
+      "before": 24,
+      "clean": 24,
+      "after": 24,
+      "median": 0.092131
+    },
+    {
+      "path": "perceived_lean_route_credibility_benchmark.json",
+      "status": "ok",
+      "before": 58,
+      "clean": 58,
+      "after": 58,
+      "median": 0.018003
+    },
+    {
+      "path": "observer_lean_route_credibility_benchmark.json",
+      "status": "ok",
+      "before": 53,
+      "clean": 53,
+      "after": 53,
+      "median": 0.018003
+    },
+    {
+      "path": "consciousness_lean_route_credibility_benchmark.json",
+      "status": "ok",
+      "before": 101,
+      "clean": 101,
+      "after": 101,
+      "median": 0.018003
+    },
+    {
+      "path": "binary_decoder_panel_benchmark.json",
+      "status": "ok",
+      "before": 24,
+      "clean": 8,
+      "after": 20,
+      "median": 0.008488
+    },
+    {
+      "path": "bibliography_corpus_panel_benchmark.json",
+      "status": "ok",
+      "before": 24,
+      "clean": 15,
+      "after": 20,
+      "median": 0.013294
+    },
+    {
+      "path": "neuroscience_fi_precision_benchmark.json",
+      "status": "ok",
+      "before": 20,
+      "clean": 14,
+      "after": 20,
+      "median": 0.0
+    },
+    {
+      "path": "h0_planck_benchmark.json",
+      "status": "ok",
+      "before": 20,
+      "clean": 9,
+      "after": 20,
+      "median": 0.0
+    },
+    {
+      "path": "desi_wa_constraint_benchmark.json",
+      "status": "ok",
+      "before": 27,
+      "clean": 11,
+      "after": 20,
+      "median": 0.0
+    },
+    {
+      "path": "higgs_branching_benchmark.json",
+      "status": "ok",
+      "before": 26,
+      "clean": 9,
+      "after": 20,
+      "median": 3.8622500000000005e-05
+    },
+    {
+      "path": "evolution_operon_benchmark.json",
+      "status": "ok",
+      "before": 32,
+      "clean": 13,
+      "after": 20,
+      "median": 0.0
+    },
+    {
+      "path": "open_science_seed_constants_benchmark.json",
+      "status": "ok",
+      "before": 21,
+      "clean": 21,
+      "after": 21,
+      "median": 0.0
+    },
+    {
+      "path": "desktop_observer_loop_panel_benchmark.json",
+      "status": "ok",
+      "before": 24,
+      "clean": 24,
+      "after": 24,
+      "median": 0.0010245
+    },
+    {
+      "path": "coding_structure_verifier_panel_benchmark.json",
+      "status": "ok",
+      "before": 44,
+      "clean": 43,
+      "after": 43,
+      "median": 0.0
+    },
+    {
+      "path": "schematic_netlist_intrinsic_panel_benchmark.json",
+      "status": "ok",
+      "before": 33,
+      "clean": 27,
+      "after": 27,
+      "median": 0.020755
+    },
+    {
+      "path": "qce_elm_fusion_edge_panel_benchmark.json",
+      "status": "ok",
+      "before": 86,
+      "clean": 45,
+      "after": 45,
+      "median": 0.0
+    },
+    {
+      "path": "recent_breakthroughs_expansion_panel_benchmark.json",
+      "status": "ok",
+      "before": 81,
+      "clean": 63,
+      "after": 63,
+      "median": 0.0
+    },
+    {
+      "action": "deepen_all_c_thin",
+      "results": 371,
+      "sample": [
+        {
+          "panel": "Climate_Science",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 17320,
+          "tier": "A_strong"
+        },
+        {
+          "panel": "Immunology",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 84,
+          "tier": "B_verified"
+        },
+        {
+          "panel": "Plasma_Physics",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 20,
+          "tier": "B_verified"
+        },
+        {
+          "panel": "Cosmology_Extended",
+          "skipped": false,
+          "records_before": 0,
+          "records_clean": 0,
+          "records_after": 24,
+          "median_after": 0.000637597,
+          "tier_after": "B_verified",
+          "method": "fsot_seed_formula_plus_real_targets"
+        },
+        {
+          "panel": "Particle_Physics",
+          "skipped": false,
+          "records_before": 0,
+          "records_clean": 0,
+          "records_after": 24,
+          "median_after": 0.000637597,
+          "tier_after": "B_verified",
+          "method": "fsot_seed_formula_plus_real_targets"
+        },
+        {
+          "panel": "Higgs_Mass",
+          "skipped": false,
+          "records_before": 24,
+          "records_clean": 9,
+          "records_after": 24,
+          "median_after": 0.00032826150138501244,
+          "tier_after": "B_verified",
+          "method": "fsot_seed_formula_plus_real_targets"
+        },
+        {
+          "panel": "Space_Weather",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 0,
+          "tier": "unverified"
+        },
+        {
+          "panel": "Hydrology",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 960,
+          "tier": "A_strong"
+        },
+        {
+          "panel": "Cryosphere",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 2399,
+          "tier": "A_strong"
+        },
+        {
+          "panel": "Pharmacology",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 120,
+          "tier": "A_strong"
+        },
+        {
+          "panel": "Geomagnetism",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 524,
+          "tier": "A_strong"
+        },
+        {
+          "panel": "Orbital_Mechanics",
+          "skipped": false,
+          "records_before": 22,
+          "records_clean": 0,
+          "records_after": 24,
+          "median_after": 0.000637597,
+          "tier_after": "B_verified",
+          "method": "fsot_seed_formula_plus_real_targets"
+        },
+        {
+          "panel": "Planetary_Structure",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 20,
+          "tier": "B_verified"
+        },
+        {
+          "panel": "Seismology",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 500,
+          "tier": "A_strong"
+        },
+        {
+          "panel": "Tectonics",
+          "skipped": true,
+          "reason": "not_c_thin_and_clean",
+          "records": 500,
+          "tier": "A_strong"
+        }
+      ]
+    },
+    {
+      "action": "extension_force_remediate",
+      "count": 0
+    }
+  ]
+}

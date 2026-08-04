@@ -1,13 +1,16 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:12.594055+00:00",
+  "generated_at": "2026-08-04T14:49:50.221555+00:00",
   "domain": "Periodic_Table_Extension_Closure_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\superheavy_island\\distant_island_z128_z164_anchors.json",
     "vendor/fsot_compute.py\\vendor\\superheavy_island\\decay_topology_prereg_candidates.json",
     "superheavy_island_completion_spine_benchmark.json",
-    "periodic_table_completion_spine_benchmark.json"
+    "periodic_table_completion_spine_benchmark.json",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "particle",
@@ -18,22 +21,24 @@
     "energy"
   ],
   "D_eff": 26,
-  "record_count": 41,
-  "observable_count": 41,
+  "record_count": 39,
+  "observable_count": 39,
+  "scalar_record_count": 26,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "extension_arc_spine": {
-        "sota_typical_error_pct": 50.0,
-        "sota_model": "No unified periodic extension certificate"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_periodic_closure_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -44,42 +49,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 41,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 39
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "periodic_closure",
-      "name": "extension_arc_spine",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 32,
-      "domain_display_name": "tier gap fill",
-      "display_name": "extension arc spine",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 39
     }
   ],
   "material_records": [
@@ -914,52 +893,6 @@
     {
       "lab": "periodic_extension_closure_lab",
       "property": "emergence_pathway_viable",
-      "name": "Z128_N184__r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "source_panel": "distant_emergence",
-      "eval_kind": "closure_relay",
-      "domain_display_name": "periodic extension closure",
-      "display_name": "Z128 N184 r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "periodic_extension_closure_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z128_N184__s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "source_panel": "distant_emergence",
-      "eval_kind": "closure_relay",
-      "domain_display_name": "periodic extension closure",
-      "display_name": "Z128 N184 s process agb",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "periodic_extension_closure_lab",
-      "property": "emergence_pathway_viable",
       "name": "Z128_N184__cosmic_ray_spallation",
       "computed": 0.0,
       "measured": 0.0,
@@ -1045,19 +978,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Periodic Table Extension Closure Spine",
-  "tier_label": "Tier 75 \u2014 Distant Island Z128 Z132 Deep Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.385593+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 28,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0001,
-    "mean_abs_delta": 7.405357142857143e-06,
-    "precision_tier_counts": {
-      "green": 28
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

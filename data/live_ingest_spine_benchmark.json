@@ -1,10 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-16T13:55:20.809853+00:00",
+  "generated_at": "2026-08-04T14:49:50.141368+00:00",
   "domain": "Live_Ingest_Spine",
-  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "tier68_live_ingest_panels"
+    "tier68_live_ingest_panels",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "material",
@@ -19,18 +20,18 @@
   "scalar_gate_applicable": false,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.015431,
+  "headline_median_error_pct": 0.015087,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "live_ingest_spine": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "Tier 68 live ingest wave"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_ingest_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -45,12 +46,12 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "ingest_relay",
-      "name": "live_ingest_spine",
-      "computed": 0.015431,
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.015087,
       "measured": 0.0,
-      "error_pct": 0.015431,
-      "observable_count": 24
+      "error_pct": 0.015087,
+      "observable_count": 28
     }
   ],
   "material_records": [

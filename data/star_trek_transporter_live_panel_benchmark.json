@@ -1,14 +1,15 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-16T15:52:36.661224+00:00",
+  "generated_at": "2026-08-04T14:49:50.991337+00:00",
   "domain": "Star_Trek_Transporter_Live_Panel",
-  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\star_trek_transporter_cache.json",
     "fsot_transporter_technology_stack",
     "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\verified_desktop\\legacy_physics\\warp_actuation_formula_fsot21.json",
     "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\star_trek_transporter\\pattern_buffer_scan_results.json",
-    "Warp_BH_WH_Portal_Panel"
+    "Warp_BH_WH_Portal_Panel",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "quantum",
@@ -22,31 +23,18 @@
   "scalar_gate_applicable": true,
   "median_error_pct": 0.031159,
   "pooled_median_error_pct": 0.031159,
-  "headline_median_error_pct": 0.05256,
+  "headline_median_error_pct": 0.031159,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "transporter": {
+      "pre": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "FSOT transporter stack \u2014 warp actuation portal, entanglement gates, matter-stream poof/suction, quantum teleportation channel"
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_quantum_channel_vs_baseline": true,
-      "channel_information_theory_vs_baseline": true,
-      "channel_portal_proxies_vs_baseline": true,
-      "channel_transporter_engineering_vs_baseline": true,
-      "channel_warp_actuation_vs_baseline": true,
-      "channel_beam_forming_vs_baseline": true,
-      "channel_t3_valve_acoustic_vs_baseline": true,
-      "channel_t3_valve_hardware_vs_baseline": true,
-      "channel_t3_valve_hardware_steps_vs_baseline": true,
-      "channel_pad_b_receiver_hardware_vs_baseline": true,
-      "channel_pad_b_receiver_hardware_steps_vs_baseline": true,
-      "channel_two_gate_entanglement_vs_baseline": true,
-      "channel_two_gate_pair_steps_vs_baseline": true,
-      "channel_warp_portal_crosswalk_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -61,129 +49,12 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "quantum_channel",
-      "name": "teleportation",
-      "computed": 0.095551,
-      "measured": 0.0,
-      "error_pct": 0.095551,
-      "observable_count": 5
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "information_theory",
-      "name": "information",
-      "computed": 0.095551,
-      "measured": 0.0,
-      "error_pct": 0.095551,
-      "observable_count": 4
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "portal_proxies",
-      "name": "fsot_portal",
-      "computed": 0.05256,
-      "measured": 0.0,
-      "error_pct": 0.05256,
-      "observable_count": 8
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "transporter_engineering",
-      "name": "transporter_stack",
-      "computed": 0.05256,
-      "measured": 0.0,
-      "error_pct": 0.05256,
-      "observable_count": 8
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "warp_actuation",
-      "name": "warp_actuation",
-      "computed": 0.05256,
-      "measured": 0.0,
-      "error_pct": 0.05256,
-      "observable_count": 9
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "beam_forming",
-      "name": "beam_forming",
-      "computed": 0.05256,
-      "measured": 0.0,
-      "error_pct": 0.05256,
-      "observable_count": 11
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "t3_valve_acoustic",
-      "name": "t3_valve_scan",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.031159,
       "measured": 0.0,
       "error_pct": 0.031159,
-      "observable_count": 1320
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "t3_valve_hardware",
-      "name": "t3_valve_hardware",
-      "computed": 0.031159,
-      "measured": 0.0,
-      "error_pct": 0.031159,
-      "observable_count": 9
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "t3_valve_hardware_steps",
-      "name": "t3_valve_hardware_steps",
-      "computed": 0.031159,
-      "measured": 0.0,
-      "error_pct": 0.031159,
-      "observable_count": 72
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "pad_b_receiver_hardware",
-      "name": "pad_b_receiver_hardware",
-      "computed": 0.031159,
-      "measured": 0.0,
-      "error_pct": 0.031159,
-      "observable_count": 9
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "pad_b_receiver_hardware_steps",
-      "name": "pad_b_receiver_hardware_steps",
-      "computed": 0.031159,
-      "measured": 0.0,
-      "error_pct": 0.031159,
-      "observable_count": 72
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "two_gate_entanglement",
-      "name": "two_gate_entanglement",
-      "computed": 0.095551,
-      "measured": 0.0,
-      "error_pct": 0.095551,
-      "observable_count": 6
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "two_gate_pair_steps",
-      "name": "two_gate_pair_steps",
-      "computed": 0.095551,
-      "measured": 0.0,
-      "error_pct": 0.095551,
-      "observable_count": 32
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "warp_portal_crosswalk",
-      "name": "Warp_BH_WH_Portal_Panel",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 0
+      "observable_count": 1575
     }
   ],
   "material_records": [

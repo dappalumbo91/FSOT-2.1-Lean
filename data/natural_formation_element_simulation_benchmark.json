@@ -1,11 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:11.592134+00:00",
+  "generated_at": "2026-08-04T14:48:54.943614+00:00",
   "domain": "Natural_Formation_Element_Simulation",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json",
-    "fusion_physics_public_panel_benchmark.json"
+    "fusion_physics_public_panel_benchmark.json",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "particle",
@@ -14,22 +16,24 @@
     "astronomical"
   ],
   "D_eff": 11,
-  "record_count": 44,
-  "observable_count": 44,
+  "record_count": 32,
+  "observable_count": 32,
+  "scalar_record_count": 26,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "natural_emergence": {
-        "sota_typical_error_pct": 100.0,
-        "sota_model": "No natural Z>118 observation"
+      "Natural_Formation_Element_Simulation_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "sector model without seed-closed FSOT formula"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_formation_sim_vs_baseline": true
+      "channel_fsot_seed_formula_vs_baseline": true
     }
   },
   "records": [
@@ -40,42 +44,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 44,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 32
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "formation_sim",
-      "name": "natural_emergence",
+      "property": "fsot_seed_formula",
+      "name": "Natural_Formation_Element_Simulation_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 42,
-      "domain_display_name": "tier gap fill",
-      "display_name": "natural emergence",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 32
     }
   ],
   "material_records": [
@@ -89,54 +67,6 @@
       "eval_kind": "fusion_bridge",
       "domain_display_name": "natural formation element",
       "display_name": "fusion physics public panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
-      "name": "Z120_N184_unbinilium__r_process_supernova",
-      "Z": 120,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z120 N184 unbinilium r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
-      "name": "Z120_N184_unbinilium__s_process_agb",
-      "Z": 120,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z120 N184 unbinilium s process agb",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -224,54 +154,6 @@
     {
       "lab": "natural_formation_element_lab",
       "property": "formation_pathway_viable",
-      "name": "Z126_N184_unbihexium__r_process_supernova",
-      "Z": 126,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z126 N184 unbihexium r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
-      "name": "Z126_N184_unbihexium__s_process_agb",
-      "Z": 126,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z126 N184 unbihexium s process agb",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
       "name": "Z126_N184_unbihexium__cosmic_ray_spallation",
       "Z": 126,
       "pathway": "cosmic_ray_spallation",
@@ -329,54 +211,6 @@
       "eval_kind": "formation_sim",
       "domain_display_name": "natural formation element",
       "display_name": "Z126 N184 unbihexium fsot fusion decay chain",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
-      "name": "Z119_N177_ununennium__r_process_supernova",
-      "Z": 119,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z119 N177 ununennium r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
-      "name": "Z119_N177_ununennium__s_process_agb",
-      "Z": 119,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z119 N177 ununennium s process agb",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -464,54 +298,6 @@
     {
       "lab": "natural_formation_element_lab",
       "property": "formation_pathway_viable",
-      "name": "Z124_N184__r_process_supernova",
-      "Z": 124,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z124 N184 r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
-      "name": "Z124_N184__s_process_agb",
-      "Z": 124,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z124 N184 s process agb",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
       "name": "Z124_N184__cosmic_ray_spallation",
       "Z": 124,
       "pathway": "cosmic_ray_spallation",
@@ -584,54 +370,6 @@
     {
       "lab": "natural_formation_element_lab",
       "property": "formation_pathway_viable",
-      "name": "Z132_N184__r_process_supernova",
-      "Z": 132,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z132 N184 r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
-      "name": "Z132_N184__s_process_agb",
-      "Z": 132,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z132 N184 s process agb",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
       "name": "Z132_N184__cosmic_ray_spallation",
       "Z": 132,
       "pathway": "cosmic_ray_spallation",
@@ -689,54 +427,6 @@
       "eval_kind": "formation_sim",
       "domain_display_name": "natural formation element",
       "display_name": "Z132 N184 fsot fusion decay chain",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
-      "name": "Z164_N228__r_process_supernova",
-      "Z": 164,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z164 N228 r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "natural_formation_element_lab",
-      "property": "formation_pathway_viable",
-      "name": "Z164_N228__s_process_agb",
-      "Z": 164,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "formation_sim",
-      "domain_display_name": "natural formation element",
-      "display_name": "Z164 N228 s process agb",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -1131,19 +821,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Natural Formation Element Simulation",
-  "tier_label": "Tier 72 \u2014 Periodic Table Public Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.259404+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 38,
-    "median_error_pct": 0.0,
-    "max_error_pct": 1e-06,
-    "mean_abs_delta": 2.020066947894737,
-    "precision_tier_counts": {
-      "green": 38
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

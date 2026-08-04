@@ -1,14 +1,15 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:28:00.231927+00:00",
+  "generated_at": "2026-08-04T14:49:49.771228+00:00",
   "domain": "Consciousness_Soul_Bridge",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "data/consciousness_soul_bridge_reference.json",
     "vendor/fringe_desktop/soul_simulator_manifest_summary.json",
     "vendor/fringe_desktop/intelligence_compressor_summary.json",
     "vendor/fringe_desktop/vibrafsot_progress_summary.json",
-    "scripts/consciousness_soul_bridge_lib.py"
+    "scripts/consciousness_soul_bridge_lib.py",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -17,22 +18,24 @@
     "medical"
   ],
   "D_eff": 17,
-  "record_count": 27,
-  "observable_count": 27,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 0,
+  "scalar_gate_applicable": false,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "substrate_software_packet": {
-        "sota_typical_error_pct": 15.0,
-        "sota_model": "No zero-parameter soul/coherence bridge prediction"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_bridge_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -43,42 +46,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 27,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "bridge",
-      "name": "substrate_software_packet",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 27,
-      "domain_display_name": "tier gap fill",
-      "display_name": "substrate software packet",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -459,29 +436,6 @@
     },
     {
       "lab": "consciousness_soul_bridge_lab",
-      "property": "observer_boost_half",
-      "name": "observer_boost_half",
-      "computed": 0.5,
-      "measured": 0.492818,
-      "error_pct": 1.457318,
-      "formula": "(W_Integration-W_Phase_Sync)/2",
-      "eval_kind": "bridge_observable",
-      "domain_display_name": "consciousness soul bridge",
-      "display_name": "observer boost half",
-      "scientific_measurement": {
-        "delta": 0.007182,
-        "delta_pct": 1.457333,
-        "effective_error_pct": 1.457333,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
       "property": "soul_packet_capacity",
       "name": "soul_packet_capacity",
       "computed": 352391.412601,
@@ -505,29 +459,6 @@
     },
     {
       "lab": "consciousness_soul_bridge_lab",
-      "property": "reconstruction_fidelity",
-      "name": "reconstruction_fidelity",
-      "computed": 0.809017,
-      "measured": 0.8048,
-      "error_pct": 0.52398,
-      "formula": "Gate+Inner_coupling/2",
-      "eval_kind": "bridge_observable",
-      "domain_display_name": "consciousness soul bridge",
-      "display_name": "reconstruction fidelity",
-      "scientific_measurement": {
-        "delta": 0.004217,
-        "delta_pct": 0.523981,
-        "effective_error_pct": 0.523981,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
       "property": "vib_carrier_hz",
       "name": "vib_carrier_hz",
       "computed": 144.0,
@@ -547,29 +478,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "vib_avg_S",
-      "name": "vib_avg_S",
-      "computed": 0.454823,
-      "measured": 0.474491,
-      "error_pct": 4.145039,
-      "formula": "Cross_coupling*Resonance_Eq_Factor/2",
-      "eval_kind": "bridge_observable",
-      "domain_display_name": "consciousness soul bridge",
-      "display_name": "vib avg S",
-      "scientific_measurement": {
-        "delta": -0.019668,
-        "delta_pct": 4.145073,
-        "effective_error_pct": 4.145073,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -698,151 +606,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "tier": 51,
-  "bridge_meta": {
-    "framework": "Substrate (body) + software packet (persistence/coherence) bridged via FSOT consciousness scalars",
-    "physical_reading": "Hardware is the metabolic/brain substrate; the software packet is the coherence state that persists across Soul Simulator records. IntelligenceCompressor is the valve that compresses sensory streams into fertile S-window packets; VibraFSOT is the observer-stability register; Consciousness_Econ is the resting-to-resonant information-power floor.",
-    "measured_headlines": {
-      "soul_records_processed": 352276.0,
-      "compression_ratio": 21.333333333333332,
-      "observer_boost": 0.49281807383859033,
-      "reconstruction_fidelity": 0.8048,
-      "pattern_stability": 0.7662378870755164,
-      "avg_S": 0.4744906315011612,
-      "base_freq_hz": 144.0
-    },
-    "ignition_coherence_factor": 1.0947730277003265,
-    "resonance_uplift_median_error_pct": 0.695252,
-    "fic_optimal": {
-      "D_eff": 12,
-      "delta_psi": 0.8,
-      "recent_hits": 1,
-      "observed": true,
-      "attention_weight": 1.0,
-      "S_final": 0.2734642953133369,
-      "fertile": true,
-      "intelligence_score": 0.9990953020889125,
-      "compression_ratio": 48.0,
-      "fidelity_proxy": 0.9998190604177826
-    }
-  },
-  "bridge_observables": [
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "codon_lane_compression_ratio",
-      "name": "codon_lane_compression_ratio",
-      "computed": 21.333333,
-      "measured": 21.333333,
-      "error_pct": 0.0,
-      "formula": "64/3",
-      "eval_kind": "bridge_observable"
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "observer_boost_half",
-      "name": "observer_boost_half",
-      "computed": 0.5,
-      "measured": 0.492818,
-      "error_pct": 1.457318,
-      "formula": "(W_Integration-W_Phase_Sync)/2",
-      "eval_kind": "bridge_observable"
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "soul_packet_capacity",
-      "name": "soul_packet_capacity",
-      "computed": 352391.412601,
-      "measured": 352276.0,
-      "error_pct": 0.032762,
-      "formula": "64*Pathways*Spheres*Ignition*gamma_carrier_hz",
-      "eval_kind": "bridge_observable"
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "reconstruction_fidelity",
-      "name": "reconstruction_fidelity",
-      "computed": 0.809017,
-      "measured": 0.8048,
-      "error_pct": 0.52398,
-      "formula": "Gate+Inner_coupling/2",
-      "eval_kind": "bridge_observable"
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "vib_carrier_hz",
-      "name": "vib_carrier_hz",
-      "computed": 144.0,
-      "measured": 144.0,
-      "error_pct": 0.0,
-      "formula": "Metatron_Pathways*16/3",
-      "eval_kind": "bridge_observable"
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "vib_avg_S",
-      "name": "vib_avg_S",
-      "computed": 0.454823,
-      "measured": 0.474491,
-      "error_pct": 4.145039,
-      "formula": "Cross_coupling*Resonance_Eq_Factor/2",
-      "eval_kind": "bridge_observable"
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "vib_pattern_stability",
-      "name": "vib_pattern_stability",
-      "computed": 0.767742,
-      "measured": 0.766238,
-      "error_pct": 0.196294,
-      "formula": "measured_avg_S*W_Integration",
-      "eval_kind": "bridge_observable"
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "microtubule_tunnel_carrier_hz",
-      "name": "microtubule_tunnel_carrier_hz",
-      "computed": 40.0,
-      "measured": 40.0,
-      "error_pct": 0.0,
-      "formula": "40*Gate/W_Phase_Sync",
-      "eval_kind": "bridge_observable"
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "ignition_coherence_factor",
-      "name": "ignition_coherence_factor",
-      "computed": 1.094773,
-      "measured": 1.094773,
-      "error_pct": 0.0,
-      "formula": "1+(Gate/Eq)/13*pi",
-      "eval_kind": "bridge_observable"
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "fic_optimal_S_final",
-      "name": "fic_D_eff_12",
-      "computed": 0.273464,
-      "measured": 0.2736,
-      "error_pct": 0.0496,
-      "formula": "FIC_valve*compute_scalar(D_eff=12)",
-      "eval_kind": "fic_valve"
-    },
-    {
-      "lab": "consciousness_soul_bridge_lab",
-      "property": "resonance_uplift_median_error_pct",
-      "name": "consciousness_econ_crosswalk",
-      "computed": 0.695252,
-      "measured": 0.695252,
-      "error_pct": 0.0,
-      "eval_kind": "resonance_crosswalk"
-    }
-  ],
-  "bridge_status": "GREEN",
-  "display_name": "Consciousness Soul Bridge",
-  "tier_label": "Consciousness soul bridge + symbolic archetype",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.463838+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 0
-  }
+  "fsot_precision_gate_pct": 0.5
 }

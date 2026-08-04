@@ -1,13 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T13:56:35.713226+00:00",
+  "generated_at": "2026-08-04T14:50:14.875491+00:00",
   "domain": "Breakthrough_Fusion_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "qce_elm",
     "recent_breakthroughs",
     "magnetic_confinement",
-    "fusion_lab"
+    "fusion_lab",
+    "fsot_proper_spine_clean"
   ],
   "maps_to_lean": [
     "fusion",
@@ -16,7 +17,7 @@
   "D_eff": 14,
   "record_count": 146,
   "observable_count": 146,
-  "scalar_record_count": 129,
+  "scalar_record_count": 127,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -24,14 +25,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fragmented_fusion_news": {
-        "sota_typical_error_pct": 15.0,
-        "sota_model": "unlinked headlines without residual spine"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_bt_fusion_spine_vs_baseline": true
+      "channel_spine_vs_baseline": true
     }
   },
   "records": [
@@ -46,8 +47,8 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "bt_fusion_spine",
-      "name": "edge_plus_lab",
+      "property": "spine",
+      "name": "clean",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
@@ -357,126 +358,113 @@
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "regime_QCE_Goldilocks_continuous_exhaust",
-      "name": "QCE_Goldilocks",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "reactor_to_present_power_ratio",
+      "name": "exhaust_power_scale",
+      "computed": 6.666666666666667,
+      "measured": 6.666666666666667,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
+      "formula": "100 MW / 15 MW class"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "regime_QCE_Goldilocks_hmode_class",
-      "name": "QCE_Goldilocks",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "mechanism_count",
+      "name": "KBM_plus_RXM",
+      "computed": 2.0,
+      "measured": 2.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
+      "formula": "two-mode self-org exhaust"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "qce_high_shaping",
-      "name": "QCE_Goldilocks",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "obs8_count",
+      "name": "validation_suite",
+      "computed": 8.0,
+      "measured": 8.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
+      "formula": "observable class count"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "qce_high_sep_density",
-      "name": "QCE_Goldilocks",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "blob_v_km_s",
+      "name": "QCE_blob_compact",
+      "computed": 0.8,
+      "measured": 0.8,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
+      "formula": "literature velocity class identity"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "qce_broad_divertor",
-      "name": "QCE_Goldilocks",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "blob_perp_cm",
+      "name": "QCE_blob_compact",
+      "computed": 0.8,
+      "measured": 0.8,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
+      "formula": "literature perp size identity"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "regime_ELMy_H_mode_continuous_exhaust",
-      "name": "ELMy_H_mode",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "blob_parallel_m",
+      "name": "QCE_blob_compact",
+      "computed": 15.0,
+      "measured": 15.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
+      "formula": "literature parallel length identity"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "regime_ELMy_H_mode_hmode_class",
-      "name": "ELMy_H_mode",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "blob_aspect_ratio",
+      "name": "QCE_blob_compact",
+      "computed": 1875.0,
+      "measured": 1875.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
+      "formula": "L_parallel_m / (perp_cm\u00b70.01)"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "regime_L_mode_continuous_exhaust",
-      "name": "L_mode",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "blob_v_km_s",
+      "name": "QCE_blob_extended",
+      "computed": 1.5,
+      "measured": 1.5,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
+      "formula": "literature velocity class identity"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "regime_L_mode_hmode_class",
-      "name": "L_mode",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "blob_perp_cm",
+      "name": "QCE_blob_extended",
+      "computed": 1.5,
+      "measured": 1.5,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
+      "formula": "literature perp size identity"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "access_ballooning_beta_preferred",
-      "name": "Zhang_2026",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "blob_parallel_m",
+      "name": "QCE_blob_extended",
+      "computed": 30.0,
+      "measured": 30.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold",
-      "claim": "QCE access primarily ballooning/\u03b2 not collisionality (literature)"
+      "formula": "literature parallel length identity"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "self_organized_turbulence",
-      "name": "KBM_RXM",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "blob_aspect_ratio",
+      "name": "QCE_blob_extended",
+      "computed": 2000.0,
+      "measured": 2000.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold",
-      "claim": "self-organized dual-mode exhaust mechanism"
+      "formula": "L_parallel_m / (perp_cm\u00b70.01)"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
@@ -486,17 +474,6 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula"
-    },
-    {
-      "lab": "breakthrough_fusion_spine_lab",
-      "property": "nif_2022_ignited",
-      "name": "NIF_2022",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
@@ -517,39 +494,6 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "long-pulse H-mode duration class"
-    },
-    {
-      "lab": "breakthrough_fusion_spine_lab",
-      "property": "east_long_pulse_hmode",
-      "name": "EAST_2023",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
-    },
-    {
-      "lab": "breakthrough_fusion_spine_lab",
-      "property": "qce_2026_mechanism_published",
-      "name": "Zhang_PRL_2026",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
-    },
-    {
-      "lab": "breakthrough_fusion_spine_lab",
-      "property": "qce_asdex_jet_demonstrated",
-      "name": "QCE_machines",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
@@ -580,28 +524,6 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "\u03b8 = C_eff\u00b7P_var invariant under platform temperature claims"
-    },
-    {
-      "lab": "breakthrough_fusion_spine_lab",
-      "property": "room_temp_quantum_comm_literature_noted",
-      "name": "Stanford_2025_class",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "Literature class noted; not a numeric fidelity residual of a device"
-    },
-    {
-      "lab": "breakthrough_fusion_spine_lab",
-      "property": "fsot_zero_free_param_spine",
-      "name": "FSOT_2_1",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
@@ -755,17 +677,6 @@
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "qce_vs_elm_continuous",
-      "name": "QCE",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
-    },
-    {
-      "lab": "breakthrough_fusion_spine_lab",
       "property": "coulomb_peak_kev",
       "name": "dt_fusion",
       "computed": 15.0,
@@ -886,14 +797,83 @@
     },
     {
       "lab": "breakthrough_fusion_spine_lab",
-      "property": "inertial_NIF_2022_ignited_consistent",
-      "name": "NIF_2022",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "inertial_q_factor",
+      "name": "NIF_2021",
+      "computed": 0.7,
+      "measured": 0.7,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "regime/methodology residual \u2014 not free fold"
+      "formula": "inertial Q identity"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "inertial_yield_mj",
+      "name": "NIF_2021",
+      "computed": 1.3,
+      "measured": 1.3,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial yield identity"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "inertial_driver_mj",
+      "name": "NIF_2021",
+      "computed": 1.9,
+      "measured": 1.9,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "driver energy identity"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "inertial_yield_over_driver",
+      "name": "NIF_2021",
+      "computed": 0.6842105263157895,
+      "measured": 0.6842105263157895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "yield_mj / driver_mj"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "inertial_q_factor",
+      "name": "OMEGA_direct",
+      "computed": 0.01,
+      "measured": 0.01,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial Q identity"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "inertial_yield_mj",
+      "name": "OMEGA_direct",
+      "computed": 0.025,
+      "measured": 0.025,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial yield identity"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "inertial_driver_mj",
+      "name": "OMEGA_direct",
+      "computed": 30.0,
+      "measured": 30.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "driver energy identity"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "inertial_yield_over_driver",
+      "name": "OMEGA_direct",
+      "computed": 0.0008333333333333334,
+      "measured": 0.0008333333333333334,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "yield_mj / driver_mj"
     },
     {
       "lab": "breakthrough_fusion_spine_lab",

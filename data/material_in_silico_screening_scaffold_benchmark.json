@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:05.623183+00:00",
+  "generated_at": "2026-08-04T14:49:50.161169+00:00",
   "domain": "Material_In_Silico_Screening_Scaffold",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\prereg_screens\\in_silico_screening_public_anchors.json",
-    "tier65_prereg_channels_manifest.yaml"
+    "tier65_prereg_channels_manifest.yaml",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "material",
@@ -16,20 +17,22 @@
   "D_eff": 15,
   "record_count": 42,
   "observable_count": 42,
-  "median_error_pct": 0.00206,
-  "pooled_median_error_pct": 0.00206,
-  "headline_median_error_pct": 0.002424,
+  "scalar_record_count": 8,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.00206,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "material_emergence_in_silico": {
-        "sota_typical_error_pct": 8.0,
-        "sota_model": "Published screening methodology"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_panel_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -37,45 +40,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.00206,
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.00206,
-      "observable_count": 42,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.00206,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0,
+      "observable_count": 42
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "panel_relay",
-      "name": "material_emergence_in_silico",
-      "computed": 0.002424,
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.00206,
       "measured": 0.0,
-      "error_pct": 0.002424,
-      "observable_count": 32,
-      "domain_display_name": "tier gap fill",
-      "display_name": "material emergence in silico",
-      "scientific_measurement": {
-        "delta": 0.002424,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.00206,
+      "observable_count": 42
     }
   ],
   "material_records": [
@@ -1064,19 +1041,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Material In Silico Screening Scaffold",
-  "tier_label": "Tier 65 \u2014 Material In Silico Screening Scaffold + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.781175+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 8,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 8
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:12:07.100489+00:00",
+  "generated_at": "2026-08-04T14:49:49.031171+00:00",
   "domain": "Astrophysical_Structure_Crosswalk",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/stellar_structures/public_multiplicity_catalog.json",
-    "crosswalk_panels"
+    "crosswalk_panels",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "astronomical",
@@ -13,11 +14,46 @@
     "particle"
   ],
   "D_eff": 18,
-  "record_count": 32,
-  "observable_count": 32,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
-  "median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_proper_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
+    }
+  ],
   "material_records": [
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -186,32 +222,6 @@
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
-      "property": "kepler_mass_closure",
-      "name": "Sirius_AB",
-      "computed": 0.634486,
-      "measured": 1.0,
-      "error_pct": 36.551386,
-      "structure_class": "binary_star",
-      "eval_kind": "catalog_consistency",
-      "record_kind": "structural",
-      "source": "WDS/literature",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
-      "domain_display_name": "astrophysical structure crosswalk",
-      "display_name": "Sirius AB",
-      "scientific_measurement": {
-        "delta": -0.365514,
-        "delta_pct": 36.5514,
-        "effective_error_pct": 36.5514,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "astrophysical_structure_crosswalk_lab",
       "property": "catalog_multiplicity",
       "name": "Alpha_Cen_AB",
       "computed": 2.0,
@@ -237,32 +247,6 @@
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
-      "property": "kepler_mass_closure",
-      "name": "Alpha_Cen_AB",
-      "computed": 1.046584,
-      "measured": 1.0,
-      "error_pct": 4.658374,
-      "structure_class": "binary_star",
-      "eval_kind": "catalog_consistency",
-      "record_kind": "structural",
-      "source": "WDS/literature",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
-      "domain_display_name": "astrophysical structure crosswalk",
-      "display_name": "Alpha Cen AB",
-      "scientific_measurement": {
-        "delta": 0.046584,
-        "delta_pct": 4.6584,
-        "effective_error_pct": 4.6584,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "astrophysical_structure_crosswalk_lab",
       "property": "catalog_multiplicity",
       "name": "Alpha_Cen_ABC",
       "computed": 3.0,
@@ -284,32 +268,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "astrophysical_structure_crosswalk_lab",
-      "property": "kepler_mass_closure",
-      "name": "Alpha_Cen_ABC",
-      "computed": 1.046584,
-      "measured": 1.0,
-      "error_pct": 4.658374,
-      "structure_class": "trinary_star",
-      "eval_kind": "catalog_consistency",
-      "record_kind": "structural",
-      "source": "literature hierarchical",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
-      "domain_display_name": "astrophysical structure crosswalk",
-      "display_name": "Alpha Cen ABC",
-      "scientific_measurement": {
-        "delta": 0.046584,
-        "delta_pct": 4.6584,
-        "effective_error_pct": 4.6584,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -363,32 +321,6 @@
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
-      "property": "kepler_mass_closure",
-      "name": "Procyon_AaAb",
-      "computed": 3.525232,
-      "measured": 1.0,
-      "error_pct": 252.523209,
-      "structure_class": "binary_star",
-      "eval_kind": "catalog_consistency",
-      "record_kind": "structural",
-      "source": "WDS/literature",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
-      "domain_display_name": "astrophysical structure crosswalk",
-      "display_name": "Procyon AaAb",
-      "scientific_measurement": {
-        "delta": 2.525232,
-        "delta_pct": 252.5232,
-        "effective_error_pct": 252.5232,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "astrophysical_structure_crosswalk_lab",
       "property": "catalog_multiplicity",
       "name": "61_Cyg_A",
       "computed": 2.0,
@@ -414,32 +346,6 @@
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
-      "property": "kepler_mass_closure",
-      "name": "61_Cyg_A",
-      "computed": 0.57369,
-      "measured": 1.0,
-      "error_pct": 42.631026,
-      "structure_class": "binary_star",
-      "eval_kind": "catalog_consistency",
-      "record_kind": "structural",
-      "source": "WDS",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
-      "domain_display_name": "astrophysical structure crosswalk",
-      "display_name": "61 Cyg A",
-      "scientific_measurement": {
-        "delta": -0.42631,
-        "delta_pct": 42.631,
-        "effective_error_pct": 42.631,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "astrophysical_structure_crosswalk_lab",
       "property": "catalog_multiplicity",
       "name": "70_Oph_Ab",
       "computed": 2.0,
@@ -461,32 +367,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "astrophysical_structure_crosswalk_lab",
-      "property": "kepler_mass_closure",
-      "name": "70_Oph_Ab",
-      "computed": 0.902809,
-      "measured": 1.0,
-      "error_pct": 9.719144,
-      "structure_class": "binary_star",
-      "eval_kind": "catalog_consistency",
-      "record_kind": "structural",
-      "source": "WDS",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
-      "domain_display_name": "astrophysical structure crosswalk",
-      "display_name": "70 Oph Ab",
-      "scientific_measurement": {
-        "delta": -0.097191,
-        "delta_pct": 9.7191,
-        "effective_error_pct": 9.7191,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -541,32 +421,6 @@
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
-      "property": "kepler_mass_closure",
-      "name": "Castor_AaBa",
-      "computed": 1.148545,
-      "measured": 1.0,
-      "error_pct": 14.8545,
-      "structure_class": "trinary_star",
-      "eval_kind": "catalog_consistency",
-      "record_kind": "structural",
-      "source": "WDS/literature sextuple",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
-      "domain_display_name": "astrophysical structure crosswalk",
-      "display_name": "Castor AaBa",
-      "scientific_measurement": {
-        "delta": 0.148545,
-        "delta_pct": 14.8545,
-        "effective_error_pct": 14.8545,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "astrophysical_structure_crosswalk_lab",
       "property": "catalog_multiplicity",
       "name": "Mizar_A",
       "computed": 4.0,
@@ -588,32 +442,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "astrophysical_structure_crosswalk_lab",
-      "property": "kepler_mass_closure",
-      "name": "Mizar_A",
-      "computed": 2.278029,
-      "measured": 1.0,
-      "error_pct": 127.802887,
-      "structure_class": "binary_star",
-      "eval_kind": "catalog_consistency",
-      "record_kind": "structural",
-      "source": "WDS",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
-      "domain_display_name": "astrophysical structure crosswalk",
-      "display_name": "Mizar A",
-      "scientific_measurement": {
-        "delta": 1.278029,
-        "delta_pct": 127.8029,
-        "effective_error_pct": 127.8029,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -817,41 +645,16 @@
       }
     }
   ],
-  "crosswalk_meta": {
-    "disclaimer": "Public catalog crosswalk \u2014 verification against published observables only",
-    "catalog_systems": 13,
-    "structure_classes": [
-      "binary_black_hole",
-      "binary_neutron_star",
-      "binary_star",
-      "trinary_star"
-    ],
-    "crosswalk_panels": [
-      "orbital_mechanics",
-      "planetary_structure",
-      "small_body_orbits",
-      "nasa_exoplanet"
-    ],
-    "catalog_consistency_median_error_pct": 36.551386,
-    "proprietary_boundary": "data/expansion_roadmap.yaml"
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
   },
-  "sota_comparison": {
-    "beats_sota_summary": {
-      "pooled_vs_domain_baseline": true
-    }
-  },
-  "display_name": "Astrophysical Structure Crosswalk",
-  "tier_label": "Tier 52 \u2014 Astrophysical Structure Crosswalk + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.473932+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 4,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 4
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

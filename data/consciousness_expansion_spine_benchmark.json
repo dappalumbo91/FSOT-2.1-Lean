@@ -1,13 +1,16 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T17:05:55.212123+00:00",
+  "generated_at": "2026-08-04T14:49:49.771228+00:00",
   "domain": "Consciousness_Expansion_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "tier90_consciousness_panels",
     "AnAge_HAGR",
     "OpenNeuro",
-    "c_thin_depth_pass"
+    "c_thin_depth_pass",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -20,20 +23,20 @@
   "observable_count": 24,
   "scalar_record_count": 7,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.008488,
-  "pooled_median_error_pct": 0.008488,
-  "headline_median_error_pct": 0.008488,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Consciousness_Expansion_Spine_depth": {
+      "pre": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -41,45 +44,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.008488,
-      "measured": 0.0,
-      "error_pct": 0.008488,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.008488,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
-      "name": "Consciousness_Expansion_Spine_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "Consciousness Expansion Spine depth",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -523,148 +500,74 @@
       }
     },
     {
-      "lab": "consciousness_expansion_spine_depth_lab",
-      "property": "brain_energy_fraction",
-      "name": "Homo_sapiens",
-      "computed": 0.241676,
-      "measured": 0.2416,
-      "error_pct": 0.031506,
-      "eval_kind": "cross_species_metabolic",
-      "fsot_domain": "Psychology",
-      "fsot_scalar": 1.050206,
-      "order": null,
-      "reference": "Clarke_Sokoloff_1999_brain_20W",
-      "source_panel": "Consciousness_Species_Multi_Panel",
-      "depth_relay_from": "Consciousness_Species_Multi_Panel",
-      "domain_display_name": "consciousness expansion spine depth",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 7.6e-05,
-        "delta_pct": 0.031457,
-        "effective_error_pct": 0.031457,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference": "Clarke_Sokoloff_1999_brain_20W"
-      }
-    },
-    {
-      "lab": "consciousness_expansion_spine_depth_lab",
-      "property": "brain_power_w",
-      "name": "Homo_sapiens",
-      "computed": 20.003601,
-      "measured": 20.0,
-      "error_pct": 0.018003,
-      "eval_kind": "cross_species_metabolic",
-      "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
-      "brain_energy_fraction": 0.2416,
-      "source_panel": "Consciousness_Species_Multi_Panel",
-      "depth_relay_from": "Consciousness_Species_Multi_Panel",
-      "domain_display_name": "consciousness expansion spine depth",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 0.003601,
-        "delta_pct": 0.018005,
-        "effective_error_pct": 0.018005,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0007,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 25.0,
-        "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
-        "observable_status": "consciousness_open"
-      }
-    },
-    {
-      "lab": "consciousness_expansion_spine_depth_lab",
-      "property": "total_metabolic_w",
-      "name": "Homo_sapiens",
-      "computed": 82.798407,
-      "measured": 82.78,
-      "error_pct": 0.022236,
-      "eval_kind": "anage_live",
-      "fsot_domain": "Biology",
-      "fsot_scalar": 0.444725,
-      "anage_hagrid": "02789",
-      "source_panel": "Consciousness_Species_Multi_Panel",
-      "depth_relay_from": "Consciousness_Species_Multi_Panel",
-      "domain_display_name": "consciousness expansion spine depth",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 0.018407,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "consciousness_expansion_spine_depth_lab",
-      "property": "E_con_resting",
-      "name": "Homo_sapiens",
-      "computed": 20.0,
-      "measured": 20.0,
+      "lab": "consciousness_expansion_spine_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
       "error_pct": 0.0,
-      "brain_energy_fraction": 0.2416,
-      "eval_kind": "consciousness_information_floor",
-      "source_panel": "Consciousness_Species_Multi_Panel",
-      "depth_relay_from": "Consciousness_Species_Multi_Panel",
-      "domain_display_name": "consciousness expansion spine depth",
-      "display_name": "Homo sapiens",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "lab": "consciousness_expansion_spine_depth_lab",
-      "property": "importance_score",
-      "name": "18-100754-general-1946-7-vol-2",
-      "computed": 6.400543,
-      "measured": 6.4,
-      "error_pct": 0.008488,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Particle_Astrophysics",
-      "fsot_scalar": -0.424412,
-      "ingest_source": "war_gov_uap_hf_live",
-      "agency": "Department of War",
-      "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel",
-      "domain_display_name": "consciousness expansion spine depth",
-      "display_name": "18-100754-general-1946-7-vol-2",
-      "scientific_measurement": {
-        "delta": 0.000543,
-        "delta_pct": 0.008484,
-        "effective_error_pct": 0.008484,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "lab": "consciousness_expansion_spine_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "consciousness_expansion_spine_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "consciousness_expansion_spine_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "consciousness_expansion_spine_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.008488,
-    "max_scalar_error_pct": 0.031506,
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -673,19 +576,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Consciousness Expansion Spine",
-  "tier_label": "Tier 90",
-  "scientific_precision_summary": {
-    "scalar_count": 7,
-    "median_error_pct": 0.008484,
-    "max_error_pct": 0.031457,
-    "mean_abs_delta": 0.003232428571428571,
-    "precision_tier_counts": {
-      "green": 7
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.286348+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

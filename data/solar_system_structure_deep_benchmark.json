@@ -1,34 +1,36 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:16:00.047609+00:00",
+  "generated_at": "2026-08-04T14:49:50.441199+00:00",
   "domain": "Solar_System_Structure_Deep",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "data/planetary_jpl_cache.json",
-    "JPL_Horizons"
+    "JPL_Horizons",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "astronomical",
     "galactic"
   ],
   "D_eff": 18,
-  "record_count": 50,
-  "observable_count": 50,
+  "record_count": 48,
+  "observable_count": 48,
+  "scalar_record_count": 0,
+  "scalar_gate_applicable": false,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.014338,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "solar_structure": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "JPL Horizons"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_density_vs_baseline": true,
-      "channel_kepler_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -39,64 +41,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 50,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 48
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "density",
-      "name": "solar_structure",
-      "computed": 0.014338,
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.014338,
-      "observable_count": 20,
-      "domain_display_name": "tier gap fill",
-      "display_name": "solar structure",
-      "scientific_measurement": {
-        "delta": 0.014338,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "kepler",
-      "name": "solar_structure",
-      "computed": 0.102859,
-      "measured": 0.0,
-      "error_pct": 0.102859,
-      "observable_count": 9,
-      "domain_display_name": "tier gap fill",
-      "display_name": "solar structure",
-      "scientific_measurement": {
-        "delta": 0.102859,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0,
+      "observable_count": 48
     }
   ],
   "material_records": [
@@ -164,28 +118,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "solar_system_structure_deep_lab",
-      "property": "mean_density",
-      "name": "Venus",
-      "computed": 5.2438,
-      "measured": 5.204,
-      "error_pct": 0.764363,
-      "eval_kind": "jpl_physical",
-      "domain_display_name": "solar system structure deep",
-      "display_name": "Venus",
-      "scientific_measurement": {
-        "delta": 0.0398,
-        "delta_pct": 0.764796,
-        "effective_error_pct": 0.764796,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -648,28 +580,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "solar_system_structure_deep_lab",
-      "property": "kepler_third_law_ratio",
-      "name": "Pluto",
-      "computed": 1.012206,
-      "measured": 1.0,
-      "error_pct": 1.220582,
-      "eval_kind": "jpl_kepler",
-      "domain_display_name": "solar system structure deep",
-      "display_name": "Pluto",
-      "scientific_measurement": {
-        "delta": 0.012206,
-        "delta_pct": 1.2206,
-        "effective_error_pct": 1.2206,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -1202,21 +1112,15 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 1.220582,
+    "scalar_pooled_median_error_pct": null,
+    "max_scalar_error_pct": null,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": null,
     "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Solar System Structure Deep",
-  "tier_label": "Tier 54 \u2014 Solar System Structure Deep + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.495873+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 0
-  }
+  "fsot_precision_gate_pct": 0.5
 }

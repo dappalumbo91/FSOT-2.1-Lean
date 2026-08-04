@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T13:56:35.240002+00:00",
+  "generated_at": "2026-08-04T14:50:14.865928+00:00",
   "domain": "FSOT_Hardware_Depth_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -8,7 +8,8 @@
     "interconnect",
     "processor",
     "ram",
-    "c_parity"
+    "c_parity",
+    "fsot_proper_spine_clean"
   ],
   "maps_to_lean": [
     "electron",
@@ -17,9 +18,9 @@
     "ai"
   ],
   "D_eff": 13,
-  "record_count": 177,
-  "observable_count": 177,
-  "scalar_record_count": 168,
+  "record_count": 170,
+  "observable_count": 170,
+  "scalar_record_count": 160,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -27,14 +28,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "ad_hoc_hw": {
+      "pre": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "unverified hardware bring-up without seed gates"
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_hardware_depth_vs_baseline": true
+      "channel_spine_vs_baseline": true
     }
   },
   "records": [
@@ -45,16 +46,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 177
+      "observable_count": 170
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "hardware_depth",
-      "name": "full_stack",
+      "property": "spine",
+      "name": "clean",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 177
+      "observable_count": 170
     }
   ],
   "material_records": [
@@ -157,23 +158,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "latency_order_l1_l2_l3",
-      "name": "cache_latency",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "l1_c": 4.0,
-        "l2_c": 14.0,
-        "l3_c": 50.0,
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "working_set_a_frac_under_phi_m4",
       "name": "cache_locality",
       "computed": 0.14589803375031543,
@@ -185,21 +169,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "line_holds_integer_u64_packs",
-      "name": "cache_pack_align",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "trits_per_line": 256.0,
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "level_line_bytes",
       "name": "L1D",
       "computed": 64.0,
@@ -233,21 +202,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "level_L1D_sets_pow2",
-      "name": "L1D",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "sets": 64.0,
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "level_line_bytes",
       "name": "L1I",
       "computed": 64.0,
@@ -278,21 +232,6 @@
       "eval_kind": "live_formula",
       "formula": "sets = size/(line\u00b7ways)",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "level_L1I_sets_pow2",
-      "name": "L1I",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "sets": 64.0,
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -326,21 +265,6 @@
       "eval_kind": "live_formula",
       "formula": "sets = size/(line\u00b7ways)",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "level_L2_sets_pow2",
-      "name": "L2",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "sets": 2048.0,
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -421,20 +345,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "tlb_page_4k_pow2",
-      "name": "page_4k",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "tlb_page_bytes",
       "name": "page_64k",
       "computed": 65536.0,
@@ -443,20 +353,6 @@
       "eval_kind": "live_formula",
       "formula": "page size identity",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "tlb_page_64k_pow2",
-      "name": "page_64k",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -471,20 +367,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "tlb_page_2m_pow2",
-      "name": "page_2m",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "tlb_page_bytes",
       "name": "page_1g",
       "computed": 1073741824.0,
@@ -493,20 +375,6 @@
       "eval_kind": "live_formula",
       "formula": "page size identity",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "tlb_page_1g_pow2",
-      "name": "page_1g",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -532,35 +400,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "capacity_order_l1_lt_l2_lt_l3",
-      "name": "hierarchy",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy",
-        "note": "KiB-scale L1 < L2 < L3"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "line_is_coherence_unit",
-      "name": "false_sharing_class",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "mesi_state_count",
       "name": "coherence_protocol",
       "computed": 4.0,
@@ -580,20 +419,6 @@
       "eval_kind": "live_formula",
       "formula": "MOESI = MESI + Owned",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "mesi_modified_is_exclusive_dirty",
-      "name": "M_state",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -619,20 +444,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "simd_sse_128_pow2",
-      "name": "sse_128",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "simd_trits",
       "name": "sse_128",
       "computed": 64.0,
@@ -640,6 +451,149 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "simd_bits / 2",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "simd_width_bits",
+      "name": "avx_256",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SIMD vector width class",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "simd_trits",
+      "name": "avx_256",
+      "computed": 128.0,
+      "measured": 128.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "simd_bits / 2",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "simd_width_bits",
+      "name": "avx512_512",
+      "computed": 512.0,
+      "measured": 512.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SIMD vector width class",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "simd_trits",
+      "name": "avx512_512",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "simd_bits / 2",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "simd_width_bits",
+      "name": "neon_128",
+      "computed": 128.0,
+      "measured": 128.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SIMD vector width class",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "simd_trits",
+      "name": "neon_128",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "simd_bits / 2",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "simd_width_bits",
+      "name": "sve_scalable_min",
+      "computed": 128.0,
+      "measured": 128.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SIMD vector width class",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "simd_trits",
+      "name": "sve_scalable_min",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "simd_bits / 2",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "avx512_equals_one_line",
+      "name": "simd_line_align",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "AVX-512 register = one 64 B cache line",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "crystal_sector_count",
+      "name": "sector_layout",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "header|boot|trinary|phi|ltm|interop",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "sector_index",
+      "name": "header",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sector index identity",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "sector_index",
+      "name": "boot",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sector index identity",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "sector_index",
+      "name": "trinary",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sector index identity",
       "layer": "cache_hierarchy"
     },
     {
@@ -708,49 +662,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "consensus_no_exp_bus",
-      "name": "interconnect_law",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "exclusive_sector_ownership",
-      "name": "memory_bus_ownership",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "formula": "at most one writer per exclusive sector",
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "qemu_disk_image_present",
-      "name": "bare_metal_uart_path",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "pcie_gt_s",
       "name": "pcie3_x1_gt_s",
       "computed": 8.0,
@@ -759,21 +670,6 @@
       "eval_kind": "live_formula",
       "formula": "PCIe GT/s class identity",
       "layer": "interconnect"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "pcie3_x1_gt_s_lanes_pow2",
-      "name": "pcie3_x1_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 1.0,
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -799,21 +695,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "pcie3_x4_gt_s_lanes_pow2",
-      "name": "pcie3_x4_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 4.0,
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "pcie_raw_bidir_gt_s",
       "name": "pcie3_x4_gt_s",
       "computed": 64.0,
@@ -836,21 +717,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "pcie3_x8_gt_s_lanes_pow2",
-      "name": "pcie3_x8_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 8.0,
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "pcie_raw_bidir_gt_s",
       "name": "pcie3_x8_gt_s",
       "computed": 128.0,
@@ -870,21 +736,6 @@
       "eval_kind": "live_formula",
       "formula": "PCIe GT/s class identity",
       "layer": "interconnect"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "pcie3_x16_gt_s_lanes_pow2",
-      "name": "pcie3_x16_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 16.0,
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -910,21 +761,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "pcie4_x4_gt_s_lanes_pow2",
-      "name": "pcie4_x4_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 4.0,
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "pcie_raw_bidir_gt_s",
       "name": "pcie4_x4_gt_s",
       "computed": 128.0,
@@ -947,21 +783,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "pcie4_x16_gt_s_lanes_pow2",
-      "name": "pcie4_x16_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 16.0,
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "pcie_raw_bidir_gt_s",
       "name": "pcie4_x16_gt_s",
       "computed": 512.0,
@@ -984,21 +805,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "pcie5_x8_gt_s_lanes_pow2",
-      "name": "pcie5_x8_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 8.0,
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "pcie_raw_bidir_gt_s",
       "name": "pcie5_x8_gt_s",
       "computed": 512.0,
@@ -1018,21 +824,6 @@
       "eval_kind": "live_formula",
       "formula": "PCIe GT/s class identity",
       "layer": "interconnect"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "pcie5_x16_gt_s_lanes_pow2",
-      "name": "pcie5_x16_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 16.0,
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -1055,21 +846,6 @@
       "eval_kind": "live_formula",
       "formula": "PCIe GT/s class identity",
       "layer": "interconnect"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "pcie6_x16_gt_s_lanes_pow2",
-      "name": "pcie6_x16_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 16.0,
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -1194,20 +970,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "ddr4_dimm_class_gb_pow2",
-      "name": "ddr4_dimm_class_gb",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "dram_dimm_class_gb",
       "name": "ddr4_dimm_32_gb",
       "computed": 32.0,
@@ -1219,26 +981,157 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "ddr4_dimm_32_gb_pow2",
-      "name": "ddr4_dimm_32_gb",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "dram_dimm_class_gb",
+      "name": "ddr5_dimm_class_gb",
+      "computed": 32.0,
+      "measured": 32.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
+      "formula": "DIMM capacity class 2^k GB",
+      "layer": "interconnect"
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "source_pooled_residual",
-      "name": "fsot_processor_function_panel_benchmark",
-      "computed": 0.0,
-      "measured": 0.0,
+      "property": "dram_dimm_class_gb",
+      "name": "ddr5_dimm_64_gb",
+      "computed": 64.0,
+      "measured": 64.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "formula": "DIMM capacity class 2^k GB",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "dram_dimm_class_gb",
+      "name": "lpddr5_class_gb",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "DIMM capacity class 2^k GB",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "link_collapse_theta",
+      "name": "interconnect_measurement",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var on link",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "axi_width_bits",
+      "name": "axi32",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "AXI data width class",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "axi_bytes_per_beat",
+      "name": "axi32",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "bits/8",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "axi_width_bits",
+      "name": "axi64",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "AXI data width class",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "axi_bytes_per_beat",
+      "name": "axi64",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "bits/8",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "axi_width_bits",
+      "name": "axi128",
+      "computed": 128.0,
+      "measured": 128.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "AXI data width class",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "axi_bytes_per_beat",
+      "name": "axi128",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "bits/8",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "axi_width_bits",
+      "name": "axi256",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "AXI data width class",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "axi_bytes_per_beat",
+      "name": "axi256",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "bits/8",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "axi_width_bits",
+      "name": "axi512",
+      "computed": 512.0,
+      "measured": 512.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "AXI data width class",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "hardware_depth_spine_lab",
+      "property": "axi_bytes_per_beat",
+      "name": "axi512",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "bits/8",
+      "layer": "interconnect"
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -1428,17 +1321,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "cpu_boot_scalar_rel_err",
-      "name": "host_cpu_processor",
-      "computed": 0.0,
-      "measured": 3.773836334801153e-15,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "CPU \u03a6 matches archive canonical",
-      "layer": "processor_function"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "host_cpu_logical_pow2",
       "name": "host_cpu",
       "computed": 16.0,
@@ -1480,17 +1362,6 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "bits_per_trit",
-      "name": "ram_crystal_pack",
-      "computed": 2.0,
-      "measured": 2.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "2-bit pack codes {0,1,2}",
-      "layer": "ram_function"
     },
     {
       "lab": "hardware_depth_spine_lab",
@@ -1871,17 +1742,6 @@
     },
     {
       "lab": "hardware_depth_spine_lab",
-      "property": "c_parity_run_ok",
-      "name": "c_host",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
       "property": "c_collapse_theta",
       "name": "c_pack_parity",
       "computed": 0.9174663774653723,
@@ -2069,39 +1929,6 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "header|boot|trinary|phi|ltm|interop"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "consensus_no_exp",
-      "name": "c_structural",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "exclusive_sector_write",
-      "name": "c_structural",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold"
-    },
-    {
-      "lab": "hardware_depth_spine_lab",
-      "property": "c_source_present",
-      "name": "c_structural",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold"
     }
   ],
   "margin_summary": {

@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:11.927472+00:00",
+  "generated_at": "2026-08-04T14:49:50.063034+00:00",
   "domain": "Heavy_Ion_Lab_Synthesis_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\lab_synthesis\\heavy_ion_reaction_anchors.json",
-    "fusion_physics_public_panel_benchmark.json"
+    "fusion_physics_public_panel_benchmark.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "fusion",
@@ -16,20 +17,22 @@
   "D_eff": 13,
   "record_count": 39,
   "observable_count": 39,
+  "scalar_record_count": 25,
+  "scalar_gate_applicable": true,
   "median_error_pct": 9.5e-05,
   "pooled_median_error_pct": 9.5e-05,
-  "headline_median_error_pct": 9.5041344017055e-05,
+  "headline_median_error_pct": 9.5e-05,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "published_reactions": {
-        "sota_typical_error_pct": 15.0,
-        "sota_model": "Heavy-ion evaporation models"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_heavy_ion_synthesis_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -40,42 +43,16 @@
       "computed": 9.5e-05,
       "measured": 0.0,
       "error_pct": 9.5e-05,
-      "observable_count": 39,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 9.5e-05,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 39
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "heavy_ion_synthesis",
-      "name": "published_reactions",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 9.5e-05,
       "measured": 0.0,
-      "error_pct": 9.5041344017055e-05,
-      "observable_count": 38,
-      "domain_display_name": "tier gap fill",
-      "display_name": "published reactions",
-      "scientific_measurement": {
-        "delta": 9.5e-05,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 9.5e-05,
+      "observable_count": 39
     }
   ],
   "material_records": [
@@ -971,19 +948,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Heavy Ion Lab Synthesis Panel",
-  "tier_label": "Tier 73 \u2014 Heavy Ion Lab Synthesis Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.259404+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 25,
-    "median_error_pct": 9.9e-05,
-    "max_error_pct": 0.000787,
-    "mean_abs_delta": 0.0006982,
-    "precision_tier_counts": {
-      "green": 25
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

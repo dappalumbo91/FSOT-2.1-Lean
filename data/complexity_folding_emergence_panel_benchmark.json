@@ -1,13 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T17:36:24.258552+00:00",
+  "generated_at": "2026-08-04T14:49:49.765787+00:00",
   "domain": "Complexity_Folding_Emergence_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\data\\reality_folding_spine_benchmark.json",
     "vendor/fsot_compute.py\\data\\compactification_ladder_benchmark.json",
     "vendor/fsot_compute.py\\data\\adjacent_rung_coupling_benchmark.json",
-    "core_formula_fractal_branch_index.json"
+    "core_formula_fractal_branch_index.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -21,18 +22,18 @@
   "scalar_gate_applicable": true,
   "median_error_pct": 0.02658792169940266,
   "pooled_median_error_pct": 0.02658792169940266,
-  "headline_median_error_pct": 0.026587921699403553,
+  "headline_median_error_pct": 0.02658792169940266,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "emergence_relay": {
+      "pre": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "Linear cosmology without fold-depth emergence ladder"
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_complexity_fold_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -43,42 +44,16 @@
       "computed": 0.026588,
       "measured": 0.0,
       "error_pct": 0.02658792169940266,
-      "observable_count": 29,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.026588,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 29
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "complexity_fold",
-      "name": "emergence_relay",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.026588,
       "measured": 0.0,
-      "error_pct": 0.026587921699403553,
-      "observable_count": 26,
-      "domain_display_name": "tier gap fill",
-      "display_name": "emergence relay",
-      "scientific_measurement": {
-        "delta": 0.026588,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.02658792169940167,
+      "observable_count": 29
     }
   ],
   "material_records": [
@@ -790,19 +765,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Complexity Folding Emergence Panel",
-  "tier_label": "Seven-way bare-metal runtime (QEMU + ESP32 serial)",
-  "scientific_precision_summary": {
-    "scalar_count": 25,
-    "median_error_pct": 0.026613,
-    "max_error_pct": 0.105263,
-    "mean_abs_delta": 0.002370639999999999,
-    "precision_tier_counts": {
-      "green": 25
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.302338+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

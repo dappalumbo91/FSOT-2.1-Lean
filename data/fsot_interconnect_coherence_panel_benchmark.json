@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T13:56:34.433203+00:00",
+  "generated_at": "2026-08-04T14:50:14.827761+00:00",
   "domain": "FSOT_Interconnect_Coherence_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "hardware_depth_bridge",
     "fsot_hardware_kernel",
-    "qemu_bios"
+    "qemu_bios",
+    "fsot_proper_hardware_clean"
   ],
   "maps_to_lean": [
     "electron",
@@ -14,9 +15,9 @@
     "ai"
   ],
   "D_eff": 11,
-  "record_count": 88,
-  "observable_count": 88,
-  "scalar_record_count": 87,
+  "record_count": 62,
+  "observable_count": 62,
+  "scalar_record_count": 61,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -24,14 +25,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "always_on_broadcast": {
-        "sota_typical_error_pct": 12.0,
-        "sota_model": "always-active bus without collapse gate"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_interconnect_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -42,16 +43,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 88
+      "observable_count": 62
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_interconnect",
-      "name": "coherence_bus",
+      "property": "fsot_proper",
+      "name": "hardware_clean",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 88
+      "observable_count": 62
     }
   ],
   "material_records": [
@@ -112,49 +113,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "consensus_no_exp_bus",
-      "name": "interconnect_law",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "exclusive_sector_ownership",
-      "name": "memory_bus_ownership",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "formula": "at most one writer per exclusive sector",
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "qemu_disk_image_present",
-      "name": "bare_metal_uart_path",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "pcie_gt_s",
       "name": "pcie3_x1_gt_s",
       "computed": 8.0,
@@ -163,21 +121,6 @@
       "eval_kind": "live_formula",
       "formula": "PCIe GT/s class identity",
       "layer": "interconnect"
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "pcie3_x1_gt_s_lanes_pow2",
-      "name": "pcie3_x1_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 1.0,
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "fsot_interconnect_lab",
@@ -203,21 +146,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "pcie3_x4_gt_s_lanes_pow2",
-      "name": "pcie3_x4_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 4.0,
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "pcie_raw_bidir_gt_s",
       "name": "pcie3_x4_gt_s",
       "computed": 64.0,
@@ -240,21 +168,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "pcie3_x8_gt_s_lanes_pow2",
-      "name": "pcie3_x8_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 8.0,
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "pcie_raw_bidir_gt_s",
       "name": "pcie3_x8_gt_s",
       "computed": 128.0,
@@ -274,21 +187,6 @@
       "eval_kind": "live_formula",
       "formula": "PCIe GT/s class identity",
       "layer": "interconnect"
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "pcie3_x16_gt_s_lanes_pow2",
-      "name": "pcie3_x16_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 16.0,
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "fsot_interconnect_lab",
@@ -314,21 +212,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "pcie4_x4_gt_s_lanes_pow2",
-      "name": "pcie4_x4_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 4.0,
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "pcie_raw_bidir_gt_s",
       "name": "pcie4_x4_gt_s",
       "computed": 128.0,
@@ -351,21 +234,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "pcie4_x16_gt_s_lanes_pow2",
-      "name": "pcie4_x16_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 16.0,
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "pcie_raw_bidir_gt_s",
       "name": "pcie4_x16_gt_s",
       "computed": 512.0,
@@ -388,21 +256,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "pcie5_x8_gt_s_lanes_pow2",
-      "name": "pcie5_x8_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 8.0,
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "pcie_raw_bidir_gt_s",
       "name": "pcie5_x8_gt_s",
       "computed": 512.0,
@@ -422,21 +275,6 @@
       "eval_kind": "live_formula",
       "formula": "PCIe GT/s class identity",
       "layer": "interconnect"
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "pcie5_x16_gt_s_lanes_pow2",
-      "name": "pcie5_x16_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 16.0,
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "fsot_interconnect_lab",
@@ -459,21 +297,6 @@
       "eval_kind": "live_formula",
       "formula": "PCIe GT/s class identity",
       "layer": "interconnect"
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "pcie6_x16_gt_s_lanes_pow2",
-      "name": "pcie6_x16_gt_s",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "lanes": 16.0,
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "fsot_interconnect_lab",
@@ -598,20 +421,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "ddr4_dimm_class_gb_pow2",
-      "name": "ddr4_dimm_class_gb",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "dram_dimm_class_gb",
       "name": "ddr4_dimm_32_gb",
       "computed": 32.0,
@@ -623,20 +432,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "ddr4_dimm_32_gb_pow2",
-      "name": "ddr4_dimm_32_gb",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "dram_dimm_class_gb",
       "name": "ddr5_dimm_class_gb",
       "computed": 32.0,
@@ -645,20 +440,6 @@
       "eval_kind": "live_formula",
       "formula": "DIMM capacity class 2^k GB",
       "layer": "interconnect"
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "ddr5_dimm_class_gb_pow2",
-      "name": "ddr5_dimm_class_gb",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "fsot_interconnect_lab",
@@ -673,20 +454,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "ddr5_dimm_64_gb_pow2",
-      "name": "ddr5_dimm_64_gb",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "dram_dimm_class_gb",
       "name": "lpddr5_class_gb",
       "computed": 8.0,
@@ -695,20 +462,6 @@
       "eval_kind": "live_formula",
       "formula": "DIMM capacity class 2^k GB",
       "layer": "interconnect"
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "lpddr5_class_gb_pow2",
-      "name": "lpddr5_class_gb",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "fsot_interconnect_lab",
@@ -734,20 +487,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "axi32_pow2",
-      "name": "axi32",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "axi_bytes_per_beat",
       "name": "axi32",
       "computed": 4.0,
@@ -767,20 +506,6 @@
       "eval_kind": "live_formula",
       "formula": "AXI data width class",
       "layer": "interconnect"
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "axi64_pow2",
-      "name": "axi64",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "fsot_interconnect_lab",
@@ -806,20 +531,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "axi128_pow2",
-      "name": "axi128",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "axi_bytes_per_beat",
       "name": "axi128",
       "computed": 16.0,
@@ -842,20 +553,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "axi256_pow2",
-      "name": "axi256",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "axi_bytes_per_beat",
       "name": "axi256",
       "computed": 32.0,
@@ -875,20 +572,6 @@
       "eval_kind": "live_formula",
       "formula": "AXI data width class",
       "layer": "interconnect"
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "axi512_pow2",
-      "name": "axi512",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "fsot_interconnect_lab",
@@ -980,20 +663,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "numa_single_socket_pow2",
-      "name": "single_socket",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "numa_nodes",
       "name": "dual_socket",
       "computed": 2.0,
@@ -1005,20 +674,6 @@
     },
     {
       "lab": "fsot_interconnect_lab",
-      "property": "numa_dual_socket_pow2",
-      "name": "dual_socket",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
-    },
-    {
-      "lab": "fsot_interconnect_lab",
       "property": "numa_nodes",
       "name": "quad_socket",
       "computed": 4.0,
@@ -1027,20 +682,6 @@
       "eval_kind": "live_formula",
       "formula": "NUMA node count class",
       "layer": "interconnect"
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "numa_quad_socket_pow2",
-      "name": "quad_socket",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect"
-      }
     },
     {
       "lab": "fsot_interconnect_lab",
@@ -1096,21 +737,6 @@
       "eval_kind": "live_formula",
       "formula": "64-bit beat / 2 bits-per-trit",
       "layer": "interconnect"
-    },
-    {
-      "lab": "fsot_interconnect_lab",
-      "property": "bus_exclusive_write_ownership",
-      "name": "mesi_M_mirror",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "interconnect",
-        "note": "one exclusive dirty owner on link sector"
-      }
     }
   ],
   "margin_summary": {

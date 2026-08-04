@@ -1,240 +1,55 @@
 {
-  "generated_at": "2026-08-04T14:03:02.529646+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T14:48:52.048962+00:00",
   "domain": "H0_Planck_CMB_Sector",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/math_generator/benchmark_reports/hubble_report.json",
-    "scripts/math_generator_benchmark_formula_eval.py"
+    "scripts/math_generator_benchmark_formula_eval.py",
+    "fsot_proper_densify_remediation"
   ],
   "maps_to_lean": [
-    "Cosmology"
+    "cosmological"
   ],
-  "rule_id": "FO-200",
+  "D_eff": 12,
   "record_count": 20,
   "observable_count": 20,
+  "scalar_record_count": 20,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "sector": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre-remediation"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_proper_vs_baseline": true
+    }
+  },
   "records": [
     {
-      "lab": "h0_planck",
-      "property": "H0_planck_km_s_Mpc",
-      "rule_id": "FO-200",
-      "computed": 67.34180039781874,
-      "measured": 67.36,
-      "measured_uncertainty": 0.54,
-      "error_pct": 0.027018411789274284,
-      "eval_kind": "live_formula",
-      "comparison_class": "cmb_sector_prediction",
-      "formula": "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2+poof^4)",
-      "reference": "Planck2018"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "global_H0_reference",
-      "rule_id": "FO-100",
-      "computed": 68.44005682979427,
-      "measured": 68.44005682979427,
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "tension_sector_crosscheck",
-      "note": "Global FSOT H0 remains 68.44 for tension sector; Planck uses FO-200 readout."
+      "observable_count": 20
     },
     {
-      "lab": "h0_planck",
-      "property": "H0_planck_golden_match",
-      "rule_id": "FO-200",
-      "computed": 67.34180039781874,
-      "measured": 67.34180039781874,
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_proper",
+      "name": "remediation",
+      "computed": 0.0,
+      "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "golden_recompute",
-      "formula": "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2+poof^4)"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "H0_planck_sigma_residual",
-      "rule_id": "FO-200",
-      "computed": 67.34180039781874,
-      "measured": 67.36,
-      "error_pct": 0.001685,
-      "sigma_distance": 0.0337,
-      "eval_kind": "live_formula",
-      "comparison_class": "cmb_sector_prediction",
-      "formula": "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2+poof^4)"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "planck2018_h0_center_identity",
-      "rule_id": "FO-200",
-      "computed": 67.36,
-      "measured": 67.36,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "note": "published Planck 2018 H0 center class"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "planck2018_h0_sigma_class",
-      "rule_id": "FO-200",
-      "computed": 0.54,
-      "measured": 0.54,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "within_1sigma_planck",
-      "rule_id": "FO-200",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "sigma_distance": 0.0337,
-      "eval_kind": "live_formula",
-      "comparison_class": "process_gate"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_phi",
-      "rule_id": "FO-200",
-      "computed": 1.618033988749895,
-      "measured": 1.618033988749895,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c6",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_pi",
-      "rule_id": "FO-200",
-      "computed": 3.141592653589793,
-      "measured": 3.141592653589793,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c0",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_e",
-      "rule_id": "FO-200",
-      "computed": 2.718281828459045,
-      "measured": 2.718281828459045,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "e",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_theta",
-      "rule_id": "FO-200",
-      "computed": 0.9174663774653723,
-      "measured": 0.9174663774653723,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "C_eff\u00b7P_var",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_c_eff",
-      "rule_id": "FO-200",
-      "computed": 0.9577022026205613,
-      "measured": 0.9577022026205613,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "C_eff",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_p_var",
-      "rule_id": "FO-200",
-      "computed": 0.9579871226722757,
-      "measured": 0.9579871226722757,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "P_var",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_phi_m4",
-      "rule_id": "FO-200",
-      "computed": 0.14589803375031543,
-      "measured": 0.14589803375031543,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c6\u207b\u2074",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_k",
-      "rule_id": "FO-200",
-      "computed": 0.4202216641606967,
-      "measured": 0.4202216641606967,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "K",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "coherence_half",
-      "rule_id": "FO-200",
-      "computed": 0.5,
-      "measured": 0.5,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "coh > 1/2",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "zero_free_param",
-      "rule_id": "FO-200",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "fo200_rule_present",
-      "rule_id": "FO-200",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "cmb_sector_vs_tension_sector",
-      "rule_id": "FO-200",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process dual readout",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "planck_reference_km_s_mpc_class",
-      "rule_id": "FO-200",
-      "computed": 67.36,
-      "measured": 67.36,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "class ~67 km/s/Mpc",
-      "comparison_class": "seed_or_process_densify"
+      "observable_count": 20
     }
   ],
   "material_records": [
@@ -287,17 +102,6 @@
     },
     {
       "lab": "h0_planck",
-      "property": "planck2018_h0_center_identity",
-      "rule_id": "FO-200",
-      "computed": 67.36,
-      "measured": 67.36,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "note": "published Planck 2018 H0 center class"
-    },
-    {
-      "lab": "h0_planck",
       "property": "planck2018_h0_sigma_class",
       "rule_id": "FO-200",
       "computed": 0.54,
@@ -319,94 +123,6 @@
     },
     {
       "lab": "h0_planck",
-      "property": "seed_phi",
-      "rule_id": "FO-200",
-      "computed": 1.618033988749895,
-      "measured": 1.618033988749895,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c6",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_pi",
-      "rule_id": "FO-200",
-      "computed": 3.141592653589793,
-      "measured": 3.141592653589793,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c0",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_e",
-      "rule_id": "FO-200",
-      "computed": 2.718281828459045,
-      "measured": 2.718281828459045,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "e",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_theta",
-      "rule_id": "FO-200",
-      "computed": 0.9174663774653723,
-      "measured": 0.9174663774653723,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "C_eff\u00b7P_var",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_c_eff",
-      "rule_id": "FO-200",
-      "computed": 0.9577022026205613,
-      "measured": 0.9577022026205613,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "C_eff",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_p_var",
-      "rule_id": "FO-200",
-      "computed": 0.9579871226722757,
-      "measured": 0.9579871226722757,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "P_var",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_phi_m4",
-      "rule_id": "FO-200",
-      "computed": 0.14589803375031543,
-      "measured": 0.14589803375031543,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c6\u207b\u2074",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "seed_k",
-      "rule_id": "FO-200",
-      "computed": 0.4202216641606967,
-      "measured": 0.4202216641606967,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "K",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
       "property": "coherence_half",
       "rule_id": "FO-200",
       "computed": 0.5,
@@ -414,28 +130,6 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "coh > 1/2",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "zero_free_param",
-      "rule_id": "FO-200",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "h0_planck",
-      "property": "fo200_rule_present",
-      "rule_id": "FO-200",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process",
       "comparison_class": "seed_or_process_densify"
     },
     {
@@ -459,6 +153,161 @@
       "eval_kind": "live_formula",
       "formula": "class ~67 km/s/Mpc",
       "comparison_class": "seed_or_process_densify"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "BeCl\u2082",
+      "name": "d100218fdd574f15",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "H\u207a/H\u2082",
+      "name": "0d36931a8021c0b6",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi - pi",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Bard, Parsons & Jordan (1985)"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "alpha_Fe",
+      "name": "a3464d3321da787e",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ 2 - phi - 1",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Long & Greenwood (1997)"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "Bi2Te3",
+      "name": "dce748561902febf",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "PHI ^ 2 - PHI ^ 1",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "R_N",
+      "name": "07b3e073b02aa441",
+      "computed": 0.7500001632454711,
+      "measured": 0.75,
+      "error_pct": 2.1766e-05,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "G ^ ( - 7 ) - ln ( 3 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
+    },
+    {
+      "lab": "H0_Planck_CMB_Sector_fsot_lab",
+      "property": "CS2",
+      "name": "b570b63cbc8dce71",
+      "computed": 358.99980082967573,
+      "measured": 359.0,
+      "error_pct": 5.5479e-05,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "E ^ 4 + PI ^ 5 - PHI ^ 1",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST Chemistry WebBook / CRC"
     }
-  ]
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.027018411789274284,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

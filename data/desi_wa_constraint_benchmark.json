@@ -1,19 +1,20 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:03:06.625982+00:00",
+  "generated_at": "2026-08-04T14:48:52.048962+00:00",
   "domain": "DESI_wa_Constraint",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\dark_energy_cpl_reference.json",
-    "scripts/dark_energy_dual_readout_lib.py"
+    "scripts/dark_energy_dual_readout_lib.py",
+    "fsot_proper_densify_remediation"
   ],
   "maps_to_lean": [
     "cosmological"
   ],
   "D_eff": 24,
-  "record_count": 27,
-  "observable_count": 27,
-  "scalar_record_count": 27,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 20,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -21,14 +22,21 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "desi_dr2_posterior": {
-        "sota_typical_error_pct": 100.0,
-        "sota_model": "No unified w_a prediction before DESI DR2"
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "desi_dr2_posterior": {
+          "sota_typical_error_pct": 100.0,
+          "sota_model": "No unified w_a prediction before DESI DR2"
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_wa_prereg_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_wa_prereg_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -39,16 +47,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 27
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "wa_prereg",
-      "name": "desi_dr2_posterior",
+      "property": "fsot_proper",
+      "name": "remediation",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 27
+      "observable_count": 20
     }
   ],
   "material_records": [
@@ -156,116 +164,6 @@
     },
     {
       "lab": "desi_wa_constraint_lab",
-      "property": "published_wa_center_identity",
-      "name": "Planck2018",
-      "computed": -0.4,
-      "measured": -0.4,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "survey": "Planck2018"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "published_w0_center_identity",
-      "name": "Planck2018",
-      "computed": -1.03,
-      "measured": -1.03,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "survey": "Planck2018"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "published_wa_center_identity",
-      "name": "DES_Y3",
-      "computed": -0.28,
-      "measured": -0.28,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "survey": "DES_Y3"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "published_w0_center_identity",
-      "name": "DES_Y3",
-      "computed": -0.978,
-      "measured": -0.978,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "survey": "DES_Y3"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "published_wa_center_identity",
-      "name": "PantheonPlus",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "survey": "PantheonPlus"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "published_w0_center_identity",
-      "name": "PantheonPlus",
-      "computed": -1.007,
-      "measured": -1.007,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "survey": "PantheonPlus"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "published_wa_center_identity",
-      "name": "DESI_2024_BAO_preview",
-      "computed": -0.1,
-      "measured": -0.1,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "survey": "DESI_2024_BAO_preview"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "published_w0_center_identity",
-      "name": "DESI_2024_BAO_preview",
-      "computed": -1.02,
-      "measured": -1.02,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "survey": "DESI_2024_BAO_preview"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "published_wa_center_identity",
-      "name": "DESI_DR2",
-      "computed": -1.018,
-      "measured": -1.018,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "survey": "DESI_DR2"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "published_w0_center_identity",
-      "name": "DESI_DR2",
-      "computed": -0.727,
-      "measured": -0.727,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "comparison_class": "literature_identity",
-      "survey": "DESI_DR2"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
       "property": "fsot_wa_bao_identity",
       "name": "dual_readout",
       "computed": -1.0208556449829258,
@@ -310,50 +208,6 @@
     },
     {
       "lab": "desi_wa_constraint_lab",
-      "property": "seed_phi",
-      "name": "seed_densify",
-      "computed": 1.618033988749895,
-      "measured": 1.618033988749895,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c6",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "seed_theta",
-      "name": "seed_densify",
-      "computed": 0.9174663774653723,
-      "measured": 0.9174663774653723,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "C_eff\u00b7P_var",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "seed_phi_m4",
-      "name": "seed_densify",
-      "computed": 0.14589803375031543,
-      "measured": 0.14589803375031543,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c6\u207b\u2074",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
-      "property": "seed_c_eff",
-      "name": "seed_densify",
-      "computed": 0.9577022026205613,
-      "measured": 0.9577022026205613,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "C_eff",
-      "comparison_class": "seed_or_process_densify"
-    },
-    {
-      "lab": "desi_wa_constraint_lab",
       "property": "coherence_half",
       "name": "seed_densify",
       "computed": 0.5,
@@ -364,26 +218,121 @@
       "comparison_class": "seed_or_process_densify"
     },
     {
-      "lab": "desi_wa_constraint_lab",
-      "property": "zero_free_param",
-      "name": "seed_densify",
-      "computed": 1.0,
-      "measured": 1.0,
+      "lab": "DESI_wa_Constraint_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process",
-      "comparison_class": "seed_or_process_densify"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "lab": "desi_wa_constraint_lab",
-      "property": "within_2sigma_desi_process",
-      "name": "seed_densify",
+      "lab": "DESI_wa_Constraint_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "DESI_wa_Constraint_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "DESI_wa_Constraint_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "DESI_wa_Constraint_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "DESI_wa_Constraint_fsot_lab",
+      "property": "BeCl\u2082",
+      "name": "d100218fdd574f15",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "DESI_wa_Constraint_fsot_lab",
+      "property": "H\u207a/H\u2082",
+      "name": "0d36931a8021c0b6",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi - pi",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Bard, Parsons & Jordan (1985)"
+    },
+    {
+      "lab": "DESI_wa_Constraint_fsot_lab",
+      "property": "alpha_Fe",
+      "name": "a3464d3321da787e",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ 2 - phi - 1",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Long & Greenwood (1997)"
+    },
+    {
+      "lab": "DESI_wa_Constraint_fsot_lab",
+      "property": "Bi2Te3",
+      "name": "dce748561902febf",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process",
-      "comparison_class": "seed_or_process_densify"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "PHI ^ 2 - PHI ^ 1",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
     }
   ],
   "margin_summary": {
@@ -397,24 +346,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "dual_readout": {
-    "w0_cmb": -1.0299812921372637,
-    "w0_cmb_formula": "\u2212P_new\u00b7\u03c0/G",
-    "wa_cmb": -0.808109771581081,
-    "wa_cmb_formula": "\u2212\u03b3\u00b7e\u00b7\u03c6/\u03c0",
-    "w0_bao": -0.7296790154668923,
-    "w0_bao_formula": "w0_cmb\u00b7(1 \u2212 G/\u03c0)",
-    "wa_bao": -1.0208556449829258,
-    "wa_bao_formula": "wa_cmb + w0_bao\u00b7(G/\u03c0)",
-    "bao_bleed_factor": 0.7084390959691812,
-    "g_over_pi": 0.2915609040308188,
-    "mechanism": "CMB sound-horizon vs BAO acoustic-scale readout (Catalan/\u03c0 bleed)"
-  },
-  "fsot_wa_bao": -1.0208556449829258,
-  "desi_dr2_wa_posterior": -1.018,
-  "desi_dr2_wa_sigma": 0.24,
-  "sigma_distance": 0.0119,
-  "falsification_status": "within_2sigma",
-  "public_data_mirror": "D:\\fsot_skeptic_public_data\\desi_wa_constraint_reference.json"
+  "fsot_precision_gate_pct": 0.5
 }

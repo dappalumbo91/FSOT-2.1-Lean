@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:03:10.080400+00:00",
+  "generated_at": "2026-08-04T14:50:14.832295+00:00",
   "domain": "FSOT_GPU_CUDA_Competitive_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -8,7 +8,8 @@
     "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
     "results/competitive/beat_cuda.json",
     "parity/golden.json",
-    "phase2_native_gpu/cuda/fsot_beat_cuda.cu"
+    "phase2_native_gpu/cuda/fsot_beat_cuda.cu",
+    "fsot_proper_hardware_clean"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -17,9 +18,9 @@
     "energy"
   ],
   "D_eff": 12,
-  "record_count": 33,
-  "observable_count": 33,
-  "scalar_record_count": 32,
+  "record_count": 27,
+  "observable_count": 27,
+  "scalar_record_count": 26,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -27,14 +28,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "industry_cuda_sdpa": {
-        "sota_typical_error_pct": 15.0,
-        "sota_model": "dense softmax CUDA / fused SDPA without FSOT collapse+gate"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_gpu_cuda_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -45,16 +46,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 33
+      "observable_count": 27
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_gpu_cuda",
-      "name": "competitive_seeds_wins",
+      "property": "fsot_proper",
+      "name": "hardware_clean",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 33
+      "observable_count": 27
     }
   ],
   "material_records": [
@@ -306,72 +307,6 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "|{SpinDown,Superposed,SpinUp}|",
-      "layer": "gpu_structural"
-    },
-    {
-      "lab": "fsot_gpu_cuda_lab",
-      "property": "seed_theta",
-      "name": "gpu_structural",
-      "computed": 0.9174663774653723,
-      "measured": 0.9174663774653723,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "C_eff\u00b7P_var",
-      "layer": "gpu_structural"
-    },
-    {
-      "lab": "fsot_gpu_cuda_lab",
-      "property": "seed_phi",
-      "name": "gpu_structural",
-      "computed": 1.618033988749895,
-      "measured": 1.618033988749895,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c6",
-      "layer": "gpu_structural"
-    },
-    {
-      "lab": "fsot_gpu_cuda_lab",
-      "property": "seed_phi_m4",
-      "name": "gpu_structural",
-      "computed": 0.14589803375031543,
-      "measured": 0.14589803375031543,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "\u03c6\u207b\u2074 A_frac ceiling",
-      "layer": "gpu_structural"
-    },
-    {
-      "lab": "fsot_gpu_cuda_lab",
-      "property": "seed_c_eff",
-      "name": "gpu_structural",
-      "computed": 0.9577022026205613,
-      "measured": 0.9577022026205613,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "C_eff",
-      "layer": "gpu_structural"
-    },
-    {
-      "lab": "fsot_gpu_cuda_lab",
-      "property": "seed_p_var",
-      "name": "gpu_structural",
-      "computed": 0.9579871226722757,
-      "measured": 0.9579871226722757,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "P_var",
-      "layer": "gpu_structural"
-    },
-    {
-      "lab": "fsot_gpu_cuda_lab",
-      "property": "seed_k",
-      "name": "gpu_structural",
-      "computed": 0.4202216641606967,
-      "measured": 0.4202216641606967,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "K",
       "layer": "gpu_structural"
     },
     {

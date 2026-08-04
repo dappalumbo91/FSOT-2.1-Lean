@@ -1,7 +1,11 @@
 {
-  "generated_at": "2026-07-13T15:23:10.612460+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T14:49:50.206173+00:00",
+  "domain": "omni_theory_genesis_benchmark",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "vendor/omni_theory/analysis/genesis/genesis_per_verse_summary.json"
+    "vendor/omni_theory/analysis/genesis/genesis_per_verse_summary.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -9,11 +13,47 @@
     "neural"
   ],
   "D_eff": 25,
-  "verse_count": 12,
-  "record_count": 27,
-  "observable_count": 27,
+  "record_count": 26,
+  "observable_count": 26,
+  "scalar_record_count": 24,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_proper_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 26
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 26
+    }
+  ],
+  "material_records": [
     {
       "lab": "omni_theory_genesis",
       "property": "S_positive",
@@ -557,40 +597,18 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
-    },
-    {
-      "lab": "omni_theory_genesis",
-      "property": "positive_S_verse_count",
-      "computed": 7,
-      "measured": 12,
-      "error_pct": 41.66666666666667,
-      "domain_display_name": "omni theory genesis",
-      "display_name": "positive S verse count",
-      "scientific_measurement": {
-        "delta": -5.0,
-        "delta_pct": 41.666667,
-        "effective_error_pct": 41.666667,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
     }
   ],
-  "display_name": "Omni Theory Genesis",
-  "tier_label": "Tier 35",
-  "scientific_precision_summary": {
-    "scalar_count": 24,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 24
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
   },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:45.713773+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

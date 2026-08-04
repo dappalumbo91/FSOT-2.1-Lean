@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:11.592134+00:00",
+  "generated_at": "2026-08-04T14:49:51.014898+00:00",
   "domain": "Superheavy_Element_Stability_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\periodic_table\\superheavy_stability_anchors.json",
-    "particle_physics_benchmark.json"
+    "particle_physics_benchmark.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "particle",
@@ -16,20 +17,22 @@
   "D_eff": 10,
   "record_count": 50,
   "observable_count": 50,
+  "scalar_record_count": 35,
+  "scalar_gate_applicable": true,
   "median_error_pct": 1e-06,
   "pooled_median_error_pct": 1e-06,
   "headline_median_error_pct": 1e-06,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "island_of_stability": {
-        "sota_typical_error_pct": 50.0,
-        "sota_model": "Nuclear shell-model baselines"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_superheavy_stability_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -40,42 +43,16 @@
       "computed": 1e-06,
       "measured": 0.0,
       "error_pct": 1e-06,
-      "observable_count": 50,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 50
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "superheavy_stability",
-      "name": "island_of_stability",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 1e-06,
       "measured": 0.0,
-      "error_pct": 9.504134368398809e-07,
-      "observable_count": 50,
-      "domain_display_name": "tier gap fill",
-      "display_name": "island of stability",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 1e-06,
+      "observable_count": 50
     }
   ],
   "material_records": [
@@ -1254,19 +1231,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Superheavy Element Stability Panel",
-  "tier_label": "Tier 72 \u2014 Periodic Table Public Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.239842+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 35,
-    "median_error_pct": 1e-06,
-    "max_error_pct": 0.323111,
-    "mean_abs_delta": 0.1390420088571429,
-    "precision_tier_counts": {
-      "green": 35
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

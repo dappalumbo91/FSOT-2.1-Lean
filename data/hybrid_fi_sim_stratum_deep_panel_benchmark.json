@@ -1,12 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T16:20:23.384698+00:00",
+  "generated_at": "2026-08-04T14:48:55.078928+00:00",
   "domain": "Hybrid_FI_Sim_Stratum_Deep_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\scientific_expansion\\tier86_cache\\hybrid_fi_stratum_cache.json",
     "neuron_cohort_per_stratum",
-    "c_thin_depth_pass"
+    "c_thin_depth_pass",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "neural",
@@ -16,22 +18,22 @@
   "D_eff": 18,
   "record_count": 24,
   "observable_count": 24,
-  "scalar_record_count": 18,
+  "scalar_record_count": 19,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.018003,
-  "pooled_median_error_pct": 0.018003,
+  "median_error_pct": 0.015311,
+  "pooled_median_error_pct": 0.015311,
   "headline_median_error_pct": 0.018003,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
       "Hybrid_FI_Sim_Stratum_Deep_Panel_depth": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+        "sota_model": "sector model without seed-closed FSOT formula"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_fsot_seed_formula_vs_baseline": true
     }
   },
   "records": [
@@ -39,45 +41,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.018003,
+      "computed": 0.015311,
       "measured": 0.0,
-      "error_pct": 0.018003,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.018003,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.015311,
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
+      "property": "fsot_seed_formula",
       "name": "Hybrid_FI_Sim_Stratum_Deep_Panel_depth",
       "computed": 0.018003,
       "measured": 0.0,
       "error_pct": 0.018003,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "Hybrid FI Sim Stratum Deep Panel depth",
-      "scientific_measurement": {
-        "delta": 0.018003,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -557,144 +533,73 @@
       }
     },
     {
-      "lab": "hybrid_fi_sim_stratum_deep_panel_depth_lab",
-      "property": "S_final",
-      "D_eff": 6,
-      "delta_psi": 0.2,
-      "recent_hits": 0,
-      "computed": 0.14806450291069925,
-      "measured": 0.14806450291069925,
+      "lab": "hybrid_fi_sim_stratum_deep_panel_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
       "error_pct": 0.0,
-      "fertile": false,
-      "intelligence_score": 0.0,
-      "domain_display_name": "hybrid fi sim stratum deep panel depth",
-      "display_name": "S final",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Computational_Reasoning",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Computational_Reasoning"
-    },
-    {
-      "lab": "hybrid_fi_sim_stratum_deep_panel_depth_lab",
-      "property": "cell_count",
-      "name": "Sst_interneuron",
-      "computed": 154.027724,
-      "measured": 154.0,
-      "error_pct": 0.018003,
-      "eval_kind": "fsot_prediction",
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
       "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth",
-      "source_panel": "Neuroscience_Connectomics_Depth_Panel",
-      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel",
-      "domain_display_name": "hybrid fi sim stratum deep panel depth",
-      "display_name": "Sst interneuron",
-      "scientific_measurement": {
-        "delta": 0.027724,
-        "delta_pct": 0.018003,
-        "effective_error_pct": 0.018003,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "lab": "hybrid_fi_sim_stratum_deep_panel_depth_lab",
-      "property": "catalog_cells",
-      "name": "Sst_interneuron",
-      "computed": 165.03669,
-      "measured": 165.0,
-      "error_pct": 0.022236,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Biology",
-      "fsot_scalar": 0.444725,
-      "ingest_source": "neuron_cohort_connectomics_depth",
-      "source_panel": "Neuroscience_Connectomics_Depth_Panel",
-      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel",
-      "domain_display_name": "hybrid fi sim stratum deep panel depth",
-      "display_name": "Sst interneuron",
-      "scientific_measurement": {
-        "delta": 0.03669,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "lab": "hybrid_fi_sim_stratum_deep_panel_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "hybrid_fi_sim_stratum_deep_panel_depth_lab",
-      "property": "fi_median_rel_err_pct",
-      "name": "Sst_interneuron",
-      "computed": 35.485293,
-      "measured": 35.479861060568474,
-      "error_pct": 0.015311,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Biochemistry",
-      "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_connectomics_depth",
-      "source_panel": "Neuroscience_Connectomics_Depth_Panel",
-      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel",
-      "domain_display_name": "hybrid fi sim stratum deep panel depth",
-      "display_name": "Sst interneuron",
-      "scientific_measurement": {
-        "delta": 0.00543194,
-        "delta_pct": 0.01531,
-        "effective_error_pct": 0.01531,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "lab": "hybrid_fi_sim_stratum_deep_panel_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "hybrid_fi_sim_stratum_deep_panel_depth_lab",
-      "property": "fi_pearson_r",
-      "name": "Sst_interneuron",
-      "computed": 0.519815,
-      "measured": 0.5196512945807779,
-      "error_pct": 0.031506,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Psychology",
-      "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_connectomics_depth",
-      "source_panel": "Neuroscience_Connectomics_Depth_Panel",
-      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel",
-      "domain_display_name": "hybrid fi sim stratum deep panel depth",
-      "display_name": "Sst interneuron",
-      "scientific_measurement": {
-        "delta": 0.00016371,
-        "delta_pct": 0.031503,
-        "effective_error_pct": 0.031503,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "lab": "hybrid_fi_sim_stratum_deep_panel_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "hybrid_fi_sim_stratum_deep_panel_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Neuroscience",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.018003,
+    "scalar_pooled_median_error_pct": 0.015311,
     "max_scalar_error_pct": 0.031506,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -704,19 +609,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Hybrid FI Sim Stratum Deep Panel",
-  "tier_label": "Tier 86",
-  "scientific_precision_summary": {
-    "scalar_count": 18,
-    "median_error_pct": 0.018003,
-    "max_error_pct": 0.031503,
-    "mean_abs_delta": 0.005369393888888889,
-    "precision_tier_counts": {
-      "green": 18
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.144871+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T20:07:34.197226+00:00",
+  "generated_at": "2026-08-04T14:49:49.933527+00:00",
   "domain": "Fluid_Spacetime_Observable_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json",
     "fluid_phase_current_spine_benchmark.json",
-    "stumped_observables_spine_benchmark.json"
+    "stumped_observables_spine_benchmark.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -19,22 +20,22 @@
   "D_eff": 26,
   "record_count": 29,
   "observable_count": 29,
-  "scalar_record_count": 10,
+  "scalar_record_count": 8,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.000595,
-  "pooled_median_error_pct": 0.000595,
-  "headline_median_error_pct": 0.009504,
+  "median_error_pct": 0.0111155,
+  "pooled_median_error_pct": 0.0111155,
+  "headline_median_error_pct": 0.0111155,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "observable_universe_spine": {
-        "sota_typical_error_pct": 25.0,
-        "sota_model": "No unified fluid-spacetime observable certificate"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fluid_spacetime_certificate_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -42,45 +43,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.000595,
+      "computed": 0.011116,
       "measured": 0.0,
-      "error_pct": 0.000595,
-      "observable_count": 29,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.000595,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0111155,
+      "observable_count": 29
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fluid_spacetime_certificate",
-      "name": "observable_universe_spine",
-      "computed": 0.009504,
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.000595,
       "measured": 0.0,
-      "error_pct": 0.009504,
-      "observable_count": 22,
-      "domain_display_name": "tier gap fill",
-      "display_name": "observable universe spine",
-      "scientific_measurement": {
-        "delta": 0.009504,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.000595,
+      "observable_count": 29
     }
   ],
   "material_records": [
@@ -784,7 +759,7 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.000595,
+    "scalar_pooled_median_error_pct": 0.0111155,
     "max_scalar_error_pct": 0.039797,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -794,19 +769,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Fluid Spacetime Observable Spine",
-  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 8,
-    "median_error_pct": 0.0222,
-    "max_error_pct": 0.039807,
-    "mean_abs_delta": 0.00022987499999999996,
-    "precision_tier_counts": {
-      "green": 8
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.448575+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

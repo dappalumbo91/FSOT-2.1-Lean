@@ -1,13 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:00.065314+00:00",
+  "generated_at": "2026-08-04T14:49:51.021477+00:00",
   "domain": "Symbolic_Archetype_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "data/symbolic_archetype_reference.json",
     "vendor/fringe_desktop/symbolic_encoding_graph_summary.json",
     "G:/FSOT-PublicData/fringe_desktop/symbolic_encoding/fsot_mythology_graph.json",
-    "scripts/symbolic_archetype_lib.py"
+    "scripts/symbolic_archetype_lib.py",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -15,22 +16,24 @@
     "mathematical"
   ],
   "D_eff": 17,
-  "record_count": 28,
-  "observable_count": 28,
+  "record_count": 22,
+  "observable_count": 22,
+  "scalar_record_count": 0,
+  "scalar_gate_applicable": false,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "symbolic_encoding_panel": {
-        "sota_typical_error_pct": 25.0,
-        "sota_model": "No zero-parameter cross-cultural archetype scalar mapping"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_archetype_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -41,42 +44,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 28,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 22
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "archetype",
-      "name": "symbolic_encoding_panel",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 28,
-      "domain_display_name": "tier gap fill",
-      "display_name": "symbolic encoding panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 22
     }
   ],
   "material_records": [
@@ -527,84 +504,6 @@
     {
       "lab": "symbolic_archetype_panel_lab",
       "property": "archetype_mean_S",
-      "name": "covenantal_adoption",
-      "computed": 1.749813,
-      "measured": 1.735472,
-      "error_pct": 0.826358,
-      "node_count": 1,
-      "formula": "W_Integration * Hub_coupling + Resonance_Persistence - Cross_coupling / 5",
-      "physical_explanation": "Integration hub locks to persistence floor with minor cross-coupling leak (covenant/adoption motifs as relational binding).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)",
-      "domain_display_name": "symbolic archetype panel",
-      "display_name": "covenantal adoption",
-      "scientific_measurement": {
-        "delta": 0.014341,
-        "delta_pct": 0.826346,
-        "effective_error_pct": 0.826346,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "emergence_creation",
-      "computed": -0.607041,
-      "measured": -0.611813,
-      "error_pct": 0.780007,
-      "node_count": 6,
-      "formula": "-(Resonance_Persistence - Ignition_Coherence) * Metatron_Spheres / (Metatron_Spheres - 3 + Resonance_Rate * Inner_coupling / Gate)",
-      "physical_explanation": "Persistence-minus-ignition deficit scaled by sphere depth; denominator is base-10 creation rung plus rate\u00d7inner tunnel leak (genesis/emergence motifs).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)",
-      "domain_display_name": "symbolic archetype panel",
-      "display_name": "emergence creation",
-      "scientific_measurement": {
-        "delta": 0.004772,
-        "delta_pct": 0.779977,
-        "effective_error_pct": 0.779977,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "initiation_transformation",
-      "computed": -0.530146,
-      "measured": -0.535206,
-      "error_pct": 0.945436,
-      "node_count": 3,
-      "formula": "-W_Binding * Resonance_Rate * 3 * (1 - Inner_coupling / 10)",
-      "physical_explanation": "Triple-rate binding dissipation through trial gate, attenuated by inner-coupling leak (initiation/ordeal motifs as stress-test information loss).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)",
-      "domain_display_name": "symbolic archetype panel",
-      "display_name": "initiation transformation",
-      "scientific_measurement": {
-        "delta": 0.00506,
-        "delta_pct": 0.94543,
-        "effective_error_pct": 0.94543,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
       "name": "judgmental_reset",
       "computed": -3.305753,
       "measured": -3.30584,
@@ -653,89 +552,11 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "restoration_integration",
-      "computed": 1.635811,
-      "measured": 1.647313,
-      "error_pct": 0.69818,
-      "node_count": 1,
-      "formula": "W_Binding + W_Integration / Metatron_Spheres * (6 + Inner_coupling / 2)",
-      "physical_explanation": "Binding floor plus integration drive with inner-coupling half-harmonic (restoration/eschaton motifs as re-integration).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)",
-      "domain_display_name": "symbolic archetype panel",
-      "display_name": "restoration integration",
-      "scientific_measurement": {
-        "delta": -0.011502,
-        "delta_pct": 0.698228,
-        "effective_error_pct": 0.698228,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "revelation_information_flow",
-      "computed": -0.077776,
-      "measured": -0.077312,
-      "error_pct": 0.600462,
-      "node_count": 3,
-      "formula": "-Cross_coupling * Resonance_Rate * Ignition_Coherence / Consciousness_Gate",
-      "physical_explanation": "Low-amplitude information injection: cross-coupling \u00d7 rate \u00d7 ignition, gated by consciousness threshold (prophecy/teaching motifs).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)",
-      "domain_display_name": "symbolic archetype panel",
-      "display_name": "revelation information flow",
-      "scientific_measurement": {
-        "delta": -0.000464,
-        "delta_pct": 0.600166,
-        "effective_error_pct": 0.600166,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "seed_preservation",
-      "computed": 5.624164,
-      "measured": 5.667032,
-      "error_pct": 0.756456,
-      "node_count": 1,
-      "formula": "Metatron_Spheres * Resonance_Persistence / 2",
-      "physical_explanation": "Coherence packet stored through Resonance_Persistence across the sphere lattice (ark/seed motifs as buffered state).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)",
-      "domain_display_name": "symbolic archetype panel",
-      "display_name": "seed preservation",
-      "scientific_measurement": {
-        "delta": -0.042868,
-        "delta_pct": 0.756445,
-        "effective_error_pct": 0.756445,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "scalar_pooled_median_error_pct": null,
+    "max_scalar_error_pct": null,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -744,180 +565,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "tier": 51,
-  "panel_meta": {
-    "framework": "Cross-cultural narrative archetype panel \u2014 symbolic encoding tags mapped to measurable FSOT consciousness scalars",
-    "disclaimer": "Archetype tags index information-flow motifs in narrative corpora; no doctrinal or supernatural claims.",
-    "physical_reading": "Each archetype is a compressive label for a recurring information-flow pattern (damping, seeding, revelation, partition, etc.). FSOT maps the tag to a signed scalar channel built only from consciousness_model() couplings \u2014 the same spine used in neural economics and E_con tunnel physics.",
-    "node_count": 22,
-    "edge_count": 44,
-    "archetype_count": 9,
-    "archetype_channel_median_error_pct": 0.69818,
-    "archetype_channel_max_error_pct": 0.945436,
-    "archetype_stats": {
-      "judgmental_reset": {
-        "count": 4,
-        "mean_S": -3.305840090463072
-      },
-      "seed_preservation": {
-        "count": 1,
-        "mean_S": 5.667032456075603
-      },
-      "initiation_transformation": {
-        "count": 3,
-        "mean_S": -0.5352064108266997
-      },
-      "revelation_information_flow": {
-        "count": 3,
-        "mean_S": -0.07731212966012717
-      },
-      "covenantal_adoption": {
-        "count": 1,
-        "mean_S": 1.7354716326771933
-      },
-      "observer_theophany": {
-        "count": 1,
-        "mean_S": -0.802491995231645
-      },
-      "emergence_creation": {
-        "count": 6,
-        "mean_S": -0.6118128059267588
-      },
-      "boundary_partition": {
-        "count": 2,
-        "mean_S": -0.6494383987334935
-      },
-      "restoration_integration": {
-        "count": 1,
-        "mean_S": 1.6473126346749574
-      }
-    }
-  },
-  "archetype_channels": [
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "boundary_partition",
-      "computed": -0.651091,
-      "measured": -0.649438,
-      "error_pct": 0.254432,
-      "node_count": 2,
-      "formula": "(W_Complexity - Radial_coupling) * Metatron_Spheres / 6 - Cross_coupling / 5",
-      "physical_explanation": "Complexity\u2013radial mismatch partitioned across six sphere rungs with cross-coupling leak (sky/earth separation motifs as phase boundary with lateral information bleed).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)"
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "covenantal_adoption",
-      "computed": 1.749813,
-      "measured": 1.735472,
-      "error_pct": 0.826358,
-      "node_count": 1,
-      "formula": "W_Integration * Hub_coupling + Resonance_Persistence - Cross_coupling / 5",
-      "physical_explanation": "Integration hub locks to persistence floor with minor cross-coupling leak (covenant/adoption motifs as relational binding).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)"
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "emergence_creation",
-      "computed": -0.607041,
-      "measured": -0.611813,
-      "error_pct": 0.780007,
-      "node_count": 6,
-      "formula": "-(Resonance_Persistence - Ignition_Coherence) * Metatron_Spheres / (Metatron_Spheres - 3 + Resonance_Rate * Inner_coupling / Gate)",
-      "physical_explanation": "Persistence-minus-ignition deficit scaled by sphere depth; denominator is base-10 creation rung plus rate\u00d7inner tunnel leak (genesis/emergence motifs).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)"
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "initiation_transformation",
-      "computed": -0.530146,
-      "measured": -0.535206,
-      "error_pct": 0.945436,
-      "node_count": 3,
-      "formula": "-W_Binding * Resonance_Rate * 3 * (1 - Inner_coupling / 10)",
-      "physical_explanation": "Triple-rate binding dissipation through trial gate, attenuated by inner-coupling leak (initiation/ordeal motifs as stress-test information loss).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)"
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "judgmental_reset",
-      "computed": -3.305753,
-      "measured": -3.30584,
-      "error_pct": 0.002646,
-      "node_count": 4,
-      "formula": "-(Radial_coupling - Outer_coupling) * Metatron_Spheres - W_Binding * Resonance_Rate / 2",
-      "physical_explanation": "System-wide damping event \u2014 radial/outer coupling gap across all 13 Metatron spheres plus binding\u00d7rate dissipation (flood/judgment motifs as information flush).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)"
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "observer_theophany",
-      "computed": -0.803471,
-      "measured": -0.802492,
-      "error_pct": 0.122054,
-      "node_count": 1,
-      "formula": "-(W_Binding - Consciousness_Gate) * Metatron_Spheres / 4",
-      "physical_explanation": "Binding\u2013gate gap across sphere quadrant (theophany motifs as observer-channel perturbation, not supernatural claim).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)"
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "restoration_integration",
-      "computed": 1.635811,
-      "measured": 1.647313,
-      "error_pct": 0.69818,
-      "node_count": 1,
-      "formula": "W_Binding + W_Integration / Metatron_Spheres * (6 + Inner_coupling / 2)",
-      "physical_explanation": "Binding floor plus integration drive with inner-coupling half-harmonic (restoration/eschaton motifs as re-integration).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)"
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "revelation_information_flow",
-      "computed": -0.077776,
-      "measured": -0.077312,
-      "error_pct": 0.600462,
-      "node_count": 3,
-      "formula": "-Cross_coupling * Resonance_Rate * Ignition_Coherence / Consciousness_Gate",
-      "physical_explanation": "Low-amplitude information injection: cross-coupling \u00d7 rate \u00d7 ignition, gated by consciousness threshold (prophecy/teaching motifs).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)"
-    },
-    {
-      "lab": "symbolic_archetype_panel_lab",
-      "property": "archetype_mean_S",
-      "name": "seed_preservation",
-      "computed": 5.624164,
-      "measured": 5.667032,
-      "error_pct": 0.756456,
-      "node_count": 1,
-      "formula": "Metatron_Spheres * Resonance_Persistence / 2",
-      "physical_explanation": "Coherence packet stored through Resonance_Persistence across the sphere lattice (ark/seed motifs as buffered state).",
-      "eval_kind": "archetype_channel",
-      "note": "Symbolic encoding tag \u2192 FSOT scalar proxy (not doctrinal claim)"
-    }
-  ],
-  "panel_status": "GREEN",
-  "display_name": "Symbolic Archetype Panel",
-  "tier_label": "Consciousness soul bridge + symbolic archetype",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.463838+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 0
-  }
+  "fsot_precision_gate_pct": 0.5
 }

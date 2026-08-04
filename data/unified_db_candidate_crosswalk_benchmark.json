@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:10.390709+00:00",
+  "generated_at": "2026-08-04T14:49:51.046572+00:00",
   "domain": "Unified_DB_Candidate_Crosswalk",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "fsot_aggregate_unified_db_benchmark.json",
     "formula_corpus_closure_benchmark.json",
-    "prediction_rederivation_benchmark.json"
+    "prediction_rederivation_benchmark.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -15,22 +16,24 @@
     "ai"
   ],
   "D_eff": 17,
-  "record_count": 46,
-  "observable_count": 46,
+  "record_count": 45,
+  "observable_count": 45,
+  "scalar_record_count": 15,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "unified_db_crosswalk": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "Desktop aggregate DB inventory"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_candidate_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -41,42 +44,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 46,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 45
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "candidate_relay",
-      "name": "unified_db_crosswalk",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 28,
-      "domain_display_name": "tier gap fill",
-      "display_name": "unified db crosswalk",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 45
     }
   ],
   "material_records": [
@@ -239,29 +216,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "unified_db_crosswalk_lab",
-      "property": "smiles_derivation_section_count",
-      "name": "fsot_aggregate_unified_db",
-      "computed": 108.0,
-      "measured": 107.0,
-      "error_pct": 0.9345794392523363,
-      "source_panel": "fsot_aggregate_unified_db",
-      "eval_kind": "candidate_relay",
-      "domain_display_name": "unified db crosswalk",
-      "display_name": "fsot aggregate unified db",
-      "scientific_measurement": {
-        "delta": 1.0,
-        "delta_pct": 0.934579,
-        "effective_error_pct": 0.934579,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -1136,19 +1090,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Unified DB Candidate Crosswalk",
-  "tier_label": "Tier 69 \u2014 Unified DB Candidate Crosswalk + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.192247+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 15,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 15
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

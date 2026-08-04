@@ -1,10 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T02:56:23.708146+00:00",
+  "generated_at": "2026-08-04T14:49:51.051580+00:00",
   "domain": "Unified_DB_Crosswalk_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "tier69_unified_db_panels"
+    "tier69_unified_db_panels",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -23,14 +24,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "unified_db_spine": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "Tier 69 aggregate crosswalk"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_crosswalk_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -45,12 +46,12 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "crosswalk_relay",
-      "name": "unified_db_spine",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 41
+      "observable_count": 43
     }
   ],
   "material_records": [

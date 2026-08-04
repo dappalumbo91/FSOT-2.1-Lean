@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T13:56:34.433203+00:00",
+  "generated_at": "2026-08-04T14:50:14.822681+00:00",
   "domain": "FSOT_Cache_Hierarchy_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "hardware_depth_bridge",
     "industry_x86_cache_classes",
-    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\hardware_competitive_refine_report.json"
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\hardware_competitive_refine_report.json",
+    "fsot_proper_hardware_clean"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -14,9 +15,9 @@
     "energy"
   ],
   "D_eff": 11,
-  "record_count": 82,
-  "observable_count": 82,
-  "scalar_record_count": 78,
+  "record_count": 61,
+  "observable_count": 61,
+  "scalar_record_count": 57,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -24,14 +25,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "opaque_cache": {
-        "sota_typical_error_pct": 12.0,
-        "sota_model": "vendor-only cache without trit-line packing law"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_cache_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -42,16 +43,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 82
+      "observable_count": 61
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_cache",
-      "name": "hierarchy_locality",
+      "property": "fsot_proper",
+      "name": "hardware_clean",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 82
+      "observable_count": 61
     }
   ],
   "material_records": [
@@ -145,23 +146,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "latency_order_l1_l2_l3",
-      "name": "cache_latency",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "l1_c": 4.0,
-        "l2_c": 14.0,
-        "l3_c": 50.0,
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "working_set_a_frac_under_phi_m4",
       "name": "cache_locality",
       "computed": 0.14589803375031543,
@@ -173,21 +157,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "line_holds_integer_u64_packs",
-      "name": "cache_pack_align",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "trits_per_line": 256.0,
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "level_line_bytes",
       "name": "L1D",
       "computed": 64.0,
@@ -221,21 +190,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "level_L1D_sets_pow2",
-      "name": "L1D",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "sets": 64.0,
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "level_line_bytes",
       "name": "L1I",
       "computed": 64.0,
@@ -266,21 +220,6 @@
       "eval_kind": "live_formula",
       "formula": "sets = size/(line\u00b7ways)",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "fsot_cache_lab",
-      "property": "level_L1I_sets_pow2",
-      "name": "L1I",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "sets": 64.0,
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "fsot_cache_lab",
@@ -314,21 +253,6 @@
       "eval_kind": "live_formula",
       "formula": "sets = size/(line\u00b7ways)",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "fsot_cache_lab",
-      "property": "level_L2_sets_pow2",
-      "name": "L2",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "sets": 2048.0,
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "fsot_cache_lab",
@@ -409,20 +333,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "tlb_page_4k_pow2",
-      "name": "page_4k",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "tlb_page_bytes",
       "name": "page_64k",
       "computed": 65536.0,
@@ -431,20 +341,6 @@
       "eval_kind": "live_formula",
       "formula": "page size identity",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "fsot_cache_lab",
-      "property": "tlb_page_64k_pow2",
-      "name": "page_64k",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "fsot_cache_lab",
@@ -459,20 +355,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "tlb_page_2m_pow2",
-      "name": "page_2m",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "tlb_page_bytes",
       "name": "page_1g",
       "computed": 1073741824.0,
@@ -481,20 +363,6 @@
       "eval_kind": "live_formula",
       "formula": "page size identity",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "fsot_cache_lab",
-      "property": "tlb_page_1g_pow2",
-      "name": "page_1g",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "fsot_cache_lab",
@@ -520,35 +388,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "capacity_order_l1_lt_l2_lt_l3",
-      "name": "hierarchy",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy",
-        "note": "KiB-scale L1 < L2 < L3"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
-      "property": "line_is_coherence_unit",
-      "name": "false_sharing_class",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "mesi_state_count",
       "name": "coherence_protocol",
       "computed": 4.0,
@@ -568,20 +407,6 @@
       "eval_kind": "live_formula",
       "formula": "MOESI = MESI + Owned",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "fsot_cache_lab",
-      "property": "mesi_modified_is_exclusive_dirty",
-      "name": "M_state",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "fsot_cache_lab",
@@ -607,20 +432,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "simd_sse_128_pow2",
-      "name": "sse_128",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "simd_trits",
       "name": "sse_128",
       "computed": 64.0,
@@ -640,20 +451,6 @@
       "eval_kind": "live_formula",
       "formula": "SIMD vector width class",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "fsot_cache_lab",
-      "property": "simd_avx_256_pow2",
-      "name": "avx_256",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "fsot_cache_lab",
@@ -679,20 +476,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "simd_avx512_512_pow2",
-      "name": "avx512_512",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "simd_trits",
       "name": "avx512_512",
       "computed": 256.0,
@@ -715,20 +498,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "simd_neon_128_pow2",
-      "name": "neon_128",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "simd_trits",
       "name": "neon_128",
       "computed": 64.0,
@@ -748,20 +517,6 @@
       "eval_kind": "live_formula",
       "formula": "SIMD vector width class",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "fsot_cache_lab",
-      "property": "simd_sve_scalable_min_pow2",
-      "name": "sve_scalable_min",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "fsot_cache_lab",
@@ -875,20 +630,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "prefetch_stream_1_pow2",
-      "name": "stream_1",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "prefetch_lines",
       "name": "stream_2",
       "computed": 2.0,
@@ -897,20 +638,6 @@
       "eval_kind": "live_formula",
       "formula": "prefetch distance class",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "fsot_cache_lab",
-      "property": "prefetch_stream_2_pow2",
-      "name": "stream_2",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "fsot_cache_lab",
@@ -925,20 +652,6 @@
     },
     {
       "lab": "fsot_cache_lab",
-      "property": "prefetch_stream_4_pow2",
-      "name": "stream_4",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
-    },
-    {
-      "lab": "fsot_cache_lab",
       "property": "prefetch_lines",
       "name": "stream_8",
       "computed": 8.0,
@@ -947,20 +660,6 @@
       "eval_kind": "live_formula",
       "formula": "prefetch distance class",
       "layer": "cache_hierarchy"
-    },
-    {
-      "lab": "fsot_cache_lab",
-      "property": "prefetch_stream_8_pow2",
-      "name": "stream_8",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "process_gate",
-      "note": "process residual \u2014 not PDG free fold",
-      "extra": {
-        "layer": "cache_hierarchy"
-      }
     },
     {
       "lab": "fsot_cache_lab",

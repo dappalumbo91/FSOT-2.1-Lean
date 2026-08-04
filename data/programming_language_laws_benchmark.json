@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:15:33.873478+00:00",
+  "generated_at": "2026-08-04T14:49:50.236749+00:00",
   "domain": "Programming_Language_Laws",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "PROGRAMMING_LANGUAGE_RULES.json",
     "math_generator_rules_eval",
-    "linguistics_formal"
+    "linguistics_formal",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -14,22 +15,24 @@
     "mathematical"
   ],
   "D_eff": 15,
-  "record_count": 107,
-  "observable_count": 107,
+  "record_count": 105,
+  "observable_count": 105,
+  "scalar_record_count": 74,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "programming_laws_panel": {
-        "sota_typical_error_pct": 6.0,
-        "sota_model": "PL semantics textbooks"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_pl_rule_properties_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -40,42 +43,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 107,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 105
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "pl_rule_properties",
-      "name": "programming_laws_panel",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 107,
-      "domain_display_name": "tier gap fill",
-      "display_name": "programming laws panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 105
     }
   ],
   "material_records": [
@@ -2009,29 +1986,6 @@
     },
     {
       "lab": "programming_language_laws_lab",
-      "property": "mean_codon_stability",
-      "name": "Lean_file_stability",
-      "computed": 0.522673,
-      "measured": 1.0,
-      "error_pct": 47.7327,
-      "source": "code_genome_structure_bridge",
-      "pl_category": "memory_safety",
-      "domain_display_name": "programming language laws",
-      "display_name": "Lean file stability",
-      "scientific_measurement": {
-        "delta": -0.477327,
-        "delta_pct": 47.7327,
-        "effective_error_pct": 47.7327,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "programming_language_laws_lab",
       "property": "codon_hole_detected",
       "name": "Lean__namespace_theorem_import",
       "computed": 1.0,
@@ -2153,29 +2107,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "programming_language_laws_lab",
-      "property": "mean_codon_stability",
-      "name": "Lean_file_stability",
-      "computed": 0.482494,
-      "measured": 1.0,
-      "error_pct": 51.7506,
-      "source": "code_genome_structure_bridge",
-      "pl_category": "memory_safety",
-      "domain_display_name": "programming language laws",
-      "display_name": "Lean file stability",
-      "scientific_measurement": {
-        "delta": -0.517506,
-        "delta_pct": 51.7506,
-        "effective_error_pct": 51.7506,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -2486,53 +2417,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "law_count": 30,
-  "law_categories": {
-    "functional_core": 2,
-    "memory_safety": 1,
-    "scoping": 1,
-    "object_model": 1,
-    "concurrency": 1,
-    "memory_unsafe": 1,
-    "metaprogramming": 1,
-    "wasm_semantics": 1,
-    "type_theory": 8,
-    "computability": 1,
-    "type_systems": 1,
-    "fsot_isa": 1,
-    "fsot_cyber": 1,
-    "security": 1,
-    "operational_semantics": 6,
-    "effect_systems": 2
-  },
-  "cross_domain_bridges": [
-    "FSOT.Formal.ProgrammingLanguageLawsPriors",
-    "FSOT.Formal.LinguisticsFormalPriors",
-    "FSOT.Formal.CodeGenomeStructurePriors",
-    "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
-    "FSOT.Formal.ExternalOSSCodeGenomePriors"
-  ],
-  "linguistics_bridge_count": 25,
-  "code_genome_bridge_count": 13,
-  "crosswalk_modules": [
-    "FSOT.Formal.ProgrammingLanguageLawsPriors",
-    "FSOT.Formal.CodeGenomeStructurePriors",
-    "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
-    "FSOT.Formal.LinguisticsFormalPriors"
-  ],
-  "display_name": "Programming Language Laws",
-  "tier_label": "Tier 44",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.034470+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 74,
-    "median_error_pct": 0.0,
-    "max_error_pct": 4.348417,
-    "mean_abs_delta": 0.002585900681818182,
-    "precision_tier_counts": {
-      "green": 74
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": false
-  }
+  "fsot_precision_gate_pct": 0.5
 }

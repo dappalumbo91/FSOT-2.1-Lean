@@ -1,13 +1,16 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:11.592134+00:00",
+  "generated_at": "2026-08-04T14:49:50.221555+00:00",
   "domain": "Periodic_Table_Completion_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\periodic_table\\periodic_table_public_anchors.json",
     "vendor/fsot_compute.py\\vendor\\periodic_table\\superheavy_stability_anchors.json",
     "vendor/fsot_compute.py\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json",
-    "fusion_physics_public_panel_benchmark.json"
+    "fusion_physics_public_panel_benchmark.json",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "particle",
@@ -17,22 +20,24 @@
     "material"
   ],
   "D_eff": 12,
-  "record_count": 38,
-  "observable_count": 38,
-  "median_error_pct": 0.0,
-  "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 1e-06,
+  "record_count": 36,
+  "observable_count": 36,
+  "scalar_record_count": 28,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 3.9999999999999996e-05,
+  "pooled_median_error_pct": 3.9999999999999996e-05,
+  "headline_median_error_pct": 3.9999999999999996e-05,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "table_completion_spine": {
-        "sota_typical_error_pct": 50.0,
-        "sota_model": "No unified periodic completion certificate"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_periodic_certificate_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -40,45 +45,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 4e-05,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 38,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 3.9999999999999996e-05,
+      "observable_count": 36
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "periodic_certificate",
-      "name": "table_completion_spine",
-      "computed": 1e-06,
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 1e-06,
-      "observable_count": 30,
-      "domain_display_name": "tier gap fill",
-      "display_name": "table completion spine",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0,
+      "observable_count": 36
     }
   ],
   "material_records": [
@@ -545,52 +524,6 @@
     {
       "lab": "periodic_table_completion_lab",
       "property": "formation_pathway_viable",
-      "name": "Z120_N184_unbinilium__r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "source_panel": "natural_formation",
-      "eval_kind": "periodic_relay",
-      "domain_display_name": "periodic table completion",
-      "display_name": "Z120 N184 unbinilium r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "periodic_table_completion_lab",
-      "property": "formation_pathway_viable",
-      "name": "Z120_N184_unbinilium__s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "source_panel": "natural_formation",
-      "eval_kind": "periodic_relay",
-      "domain_display_name": "periodic table completion",
-      "display_name": "Z120 N184 unbinilium s process agb",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "periodic_table_completion_lab",
-      "property": "formation_pathway_viable",
       "name": "Z120_N184_unbinilium__cosmic_ray_spallation",
       "computed": 0.0,
       "measured": 0.0,
@@ -962,7 +895,7 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
+    "scalar_pooled_median_error_pct": 3.9999999999999996e-05,
     "max_scalar_error_pct": 0.323111,
     "classifier_count": 1,
     "classifier_correct": 1,
@@ -972,19 +905,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Periodic Table Completion Spine",
-  "tier_label": "Tier 72 \u2014 Periodic Table Public Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.259404+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 30,
-    "median_error_pct": 1e-06,
-    "max_error_pct": 0.323111,
-    "mean_abs_delta": 0.159025696,
-    "precision_tier_counts": {
-      "green": 30
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

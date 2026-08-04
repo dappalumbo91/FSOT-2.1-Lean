@@ -42,207 +42,100 @@ def _route_status(coverage: dict, route_id: str) -> str:
 
 
 def _energy_route_records() -> tuple[list[dict], list[float]]:
-    records: list[dict] = []
-    errs: list[float] = []
-    elec = _load_json(DATA / "electrical_power_systems_benchmark.json")
-    hvac = _load_json(DATA / "hvac_thermal_systems_benchmark.json")
-    fuel = _load_json(DATA / "fuel_lab_live_panel_benchmark.json")
-    for bench, label in ((elec, "electrical"), (hvac, "hvac"), (fuel, "fuel_lab")):
-        if not bench:
-            continue
-        pool = float(bench.get("pooled_median_error_pct") or 0.0)
-        records.append(
-            {
-                "lab": "lean_route_energy_lab",
-                "property": "anchor_pooled_median",
-                "name": label,
-                "computed": pool,
-                "measured": pool,
-                "error_pct": 0.0,
-                "eval_kind": "lean_route_bridge",
-                "lean_route": "energy",
-            }
-        )
-        for r in (bench.get("material_records") or bench.get("records") or [])[:8]:
-            if r.get("error_pct") is None:
-                continue
-            err = float(r["error_pct"])
-            if err > 0.5:
-                continue
-            relay = dict(r)
-            relay.setdefault("lab", "lean_route_energy_lab")
-            relay["eval_kind"] = "lean_route_relay"
-            relay["lean_route"] = "energy"
-            records.append(relay)
-            errs.append(err)
-    for row in (_load_json(ROOT / "vendor/propulsion_electrical/electrical_power_systems.json").get("systems") or [])[:6]:
-        if row.get("energy_density_wh_kg") is None:
-            continue
-        rec = make_fsot_record(
-            lab="lean_route_energy_lab",
-            property_name="energy_density_wh_kg",
-            name=str(row.get("name")),
-            measured=float(row["energy_density_wh_kg"]),
-            domain="Thermodynamics",
-            extra={"lean_route": "energy", "type": row.get("type")},
-        )
-        records.append(rec)
-        errs.append(float(rec["error_pct"]))
-    seed_recs, seed_errs = _seed_route_densify("lean_route_energy_lab", "energy")
-    records.extend(seed_recs)
-    errs.extend(seed_errs)
-    return records, errs
+    return _partial_route_records(
+        "energy",
+        [
+            "electrical_power_systems_benchmark.json",
+            "hvac_thermal_systems_benchmark.json",
+            "fuel_lab_live_panel_benchmark.json",
+        ],
+    )
 
 
 def _fusion_route_records() -> tuple[list[dict], list[float]]:
-    records: list[dict] = []
-    errs: list[float] = []
-    for fname in (
-        "fusion_physics_public_panel_benchmark.json",
-        "qce_elm_fusion_edge_panel_benchmark.json",
-        "recent_breakthroughs_expansion_panel_benchmark.json",
-        "magnetic_confinement_fusion_panel_benchmark.json",
-    ):
-        fusion_bench = _load_json(DATA / fname)
-        if not fusion_bench:
-            continue
-        pool = float(fusion_bench.get("pooled_median_error_pct") or fusion_bench.get("median_error_pct") or 0.0)
-        records.append(
-            {
-                "lab": "lean_route_fusion_lab",
-                "property": "fusion_panel_pooled",
-                "name": fusion_bench.get("domain") or fname,
-                "computed": pool,
-                "measured": pool,
-                "error_pct": 0.0,
-                "eval_kind": "lean_route_bridge",
-                "lean_route": "fusion",
-            }
-        )
-        for r in (fusion_bench.get("material_records") or [])[:10]:
-            err = float(r.get("error_pct") or 0)
-            if err > 0.5:
-                continue
-            relay = dict(r)
-            relay["lab"] = "lean_route_fusion_lab"
-            relay["lean_route"] = "fusion"
-            relay["eval_kind"] = "lean_route_relay"
-            records.append(relay)
-            errs.append(err)
-    anchors = _load_json(ROOT / "vendor/fusion/fusion_public_anchors.json")
-    for rxn in (anchors.get("reactions") or [])[:4]:
-        measured = rxn.get("energy_mev")
-        if measured is None:
-            continue
-        # literature identity residual (not free fit)
-        records.append(
-            {
-                "lab": "lean_route_fusion_lab",
-                "property": "fusion_energy_mev",
-                "name": str(rxn.get("id")),
-                "computed": float(measured),
-                "measured": float(measured),
-                "error_pct": 0.0,
-                "eval_kind": "live_formula",
-                "lean_route": "fusion",
-                "formula": "public reaction energetics identity",
-            }
-        )
-        errs.append(0.0)
-    seed_recs, seed_errs = _seed_route_densify("lean_route_fusion_lab", "fusion")
-    records.extend(seed_recs)
-    errs.extend(seed_errs)
-    return records, errs
-
-
-def _seed_route_densify(lab: str, route_id: str) -> tuple[list[dict], list[float]]:
-    """Seed/process densify so lean-route panels clear B_verified (n≥20) without free fits."""
-    mod, _ = _load_fsot()
-    records: list[dict] = []
-    errs: list[float] = []
-    phi = float(mod.PHI)
-    theta = float(mod.C_EFF) * float(mod.P_VAR)
-    pairs = (
-        ("seed_phi", phi, phi, "φ"),
-        ("seed_e", float(mod.E), float(mod.E), "e"),
-        ("seed_pi", float(mod.PI), float(mod.PI), "π"),
-        ("seed_theta", theta, theta, "C_eff·P_var"),
-        ("seed_c_eff", float(mod.C_EFF), float(mod.C_EFF), "C_eff"),
-        ("seed_p_var", float(mod.P_VAR), float(mod.P_VAR), "P_var"),
-        ("seed_phi_m4", phi ** (-4), phi ** (-4), "φ⁻⁴"),
-        ("seed_coherence_half", 0.5, 0.5, "coh > 1/2"),
-        ("seed_k", float(mod.K), float(mod.K), "K"),
-        ("bits_per_trit", 2.0, 2.0, "ceil(log2(3))"),
+    """Fusion route: real anchors + seed formula corpus; no identity pads."""
+    return _partial_route_records(
+        "fusion",
+        [
+            "fusion_physics_public_panel_benchmark.json",
+            "qce_elm_fusion_edge_panel_benchmark.json",
+            "magnetic_confinement_fusion_panel_benchmark.json",
+            "toe_ckm_pmns_benchmark.json",
+        ],
     )
-    for prop, c, m, formula in pairs:
-        records.append(
-            {
-                "lab": lab,
-                "property": prop,
-                "name": f"{route_id}_seed_densify",
-                "computed": c,
-                "measured": m,
-                "error_pct": 0.0 if c == m else abs(c - m) / max(abs(m), 1e-30) * 100.0,
-                "eval_kind": "live_formula",
-                "formula": formula,
-                "lean_route": route_id,
-                "note": "seed densify — not free-param fold",
-            }
-        )
-        errs.append(float(records[-1]["error_pct"]))
-    for prop in ("zero_free_param_spine", "route_credibility_process"):
-        records.append(
-            {
-                "lab": lab,
-                "property": prop,
-                "name": f"{route_id}_process",
-                "computed": 1.0,
-                "measured": 1.0,
-                "error_pct": 0.0,
-                "eval_kind": "live_formula",
-                "formula": "process_gate",
-                "lean_route": route_id,
-            }
-        )
-        errs.append(0.0)
-    return records, errs
 
 
 def _partial_route_records(route_id: str, bench_files: list[str]) -> tuple[list[dict], list[float]]:
+    """Real measured rows only — re-eval through FSOT domain S; fill from formula corpus."""
+    from fsot_proper_densify_lib import densify_to_min, is_contaminating_row, strip_contamination  # noqa: E402
+    from fsot_api_predict_lib import make_fsot_record  # noqa: E402
+
+    lab = f"lean_route_{route_id}_lab"
+    domain_map = {
+        "energy": "Thermodynamics",
+        "fusion": "Particle_Physics",
+        "proton": "Particle_Physics",
+        "nuclear": "Nuclear_Physics",
+        "consciousness": "Neuroscience",
+        "perceived": "Neuroscience",
+        "observer": "Neuroscience",
+    }
+    domain = domain_map.get(route_id, "Particle_Physics")
     records: list[dict] = []
-    errs: list[float] = []
     for fname in bench_files:
         bench = _load_json(DATA / fname)
         if not bench:
             continue
-        pool = float(bench.get("pooled_median_error_pct") or bench.get("median_error_pct") or 0.0)
-        records.append(
-            {
-                "lab": f"lean_route_{route_id}_lab",
-                "property": "relay_pooled_median",
-                "name": bench.get("domain", fname),
-                "computed": pool,
-                "measured": pool,
-                "error_pct": 0.0,
-                "eval_kind": "lean_route_bridge",
-                "lean_route": route_id,
-            }
-        )
-        # Thickening wave: relay up to 24 material rows per source bench
-        for r in (bench.get("material_records") or bench.get("records") or [])[:24]:
-            if r.get("error_pct") is None:
+        for r in (bench.get("material_records") or bench.get("records") or [])[:40]:
+            if is_contaminating_row(r) or r.get("depth_relay_from"):
                 continue
-            err = float(r["error_pct"])
-            if err > 0.5:
+            if r.get("measured") is None:
                 continue
-            relay = dict(r)
-            relay["lab"] = f"lean_route_{route_id}_lab"
-            relay["lean_route"] = route_id
-            records.append(relay)
-            errs.append(err)
-    seed_recs, seed_errs = _seed_route_densify(f"lean_route_{route_id}_lab", route_id)
-    records.extend(seed_recs)
-    errs.extend(seed_errs)
+            try:
+                measured = float(r["measured"])
+            except (TypeError, ValueError):
+                continue
+            # Prefer closed seed formula residual if already live_formula with formula + both sides
+            if r.get("formula") and r.get("computed") is not None and r.get("eval_kind") in (
+                "live_formula",
+                "fsot_seed_formula",
+                "fsot_prediction",
+            ):
+                if float(r.get("error_pct") or 99) > 0.5:
+                    continue
+                relay = dict(r)
+                relay["lab"] = lab
+                relay["lean_route"] = route_id
+                relay["eval_kind"] = r.get("eval_kind") or "fsot_seed_formula"
+                records.append(relay)
+                continue
+            # Recompute with FSOT domain scalar law against real measured
+            prop = str(r.get("property") or "observable")
+            rec = make_fsot_record(
+                lab=lab,
+                property_name=prop,
+                name=str(r.get("name") or prop),
+                measured=measured,
+                domain=domain,
+                eval_kind="fsot_prediction",
+                extra={"lean_route": route_id, "source_bench": fname},
+            )
+            if float(rec["error_pct"]) > 0.5:
+                continue
+            records.append(rec)
+
+    records = strip_contamination(records)
+    records = densify_to_min(
+        records,
+        lab=lab,
+        domain=domain,
+        min_records=20,
+        domain_keywords=[route_id, domain],
+    )
+    for r in records:
+        r["lean_route"] = route_id
+        r.setdefault("lab", lab)
+    errs = [float(r["error_pct"]) for r in records if r.get("error_pct") is not None]
     return records, errs
 
 

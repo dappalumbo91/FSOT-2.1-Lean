@@ -1,10 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T16:10:55.601819+00:00",
+  "generated_at": "2026-08-04T14:49:49.947317+00:00",
   "domain": "Formula_Precision_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "tier67_formula_precision_panels"
+    "tier67_formula_precision_panels",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -13,22 +14,24 @@
     "particle"
   ],
   "D_eff": 17,
-  "record_count": 27,
-  "observable_count": 27,
+  "record_count": 26,
+  "observable_count": 26,
+  "scalar_record_count": 21,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "formula_precision_spine": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "Tier 67 per-channel formula pass"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_precision_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -39,42 +42,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 27,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 26
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "precision_relay",
-      "name": "formula_precision_spine",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "formula precision spine",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 26
     }
   ],
   "material_records": [
@@ -449,29 +426,6 @@
     {
       "lab": "formula_precision_spine_lab",
       "property": "archetype_mean_S",
-      "name": "initiation_transformation",
-      "computed": -0.530146,
-      "measured": -0.535206,
-      "error_pct": 0.945436,
-      "source_panel": "initiation_transformation_archetype",
-      "eval_kind": "precision_relay",
-      "domain_display_name": "formula precision spine",
-      "display_name": "initiation transformation",
-      "scientific_measurement": {
-        "delta": 0.00506,
-        "delta_pct": 0.94543,
-        "effective_error_pct": 0.94543,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "formula_precision_spine_lab",
-      "property": "archetype_mean_S",
       "name": "emergence_creation",
       "computed": -0.612996,
       "measured": -0.611813,
@@ -711,19 +665,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Formula Precision Spine",
-  "tier_label": "Tier 67 \u2014 Term3 Acoustic Bleed Depth + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 21,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.355486,
-    "mean_abs_delta": 0.008583990476190476,
-    "precision_tier_counts": {
-      "green": 21
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.891447+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

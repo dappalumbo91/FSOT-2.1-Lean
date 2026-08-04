@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T13:13:11.187707+00:00",
+  "generated_at": "2026-08-04T14:49:49.756484+00:00",
   "domain": "Code_Genome_Structure",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "code_genome_depth_pass",
-    "9_language_bridges"
+    "9_language_bridges",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "biological",
@@ -13,22 +14,24 @@
     "ai"
   ],
   "D_eff": 17,
-  "record_count": 205,
-  "observable_count": 205,
+  "record_count": 176,
+  "observable_count": 176,
+  "scalar_record_count": 111,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "code_genome_panel": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "Genomic expression classifier"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_codon_genome_depth_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -39,42 +42,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 205,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 176
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "codon_genome_depth",
-      "name": "code_genome_panel",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 205,
-      "domain_display_name": "tier gap fill",
-      "display_name": "code genome panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 176
     }
   ],
   "material_records": [
@@ -124,28 +101,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "Lean_file_stability",
-      "computed": 0.522673,
-      "measured": 1.0,
-      "error_pct": 47.7327,
-      "source": "vendor/fsot_compute.py\\FSOT\\Formal\\Scalar.lean",
-      "domain_display_name": "code genome",
-      "display_name": "Lean file stability",
-      "scientific_measurement": {
-        "delta": -0.477327,
-        "delta_pct": 47.7327,
-        "effective_error_pct": 47.7327,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -270,28 +225,6 @@
     },
     {
       "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "Lean_file_stability",
-      "computed": 0.482494,
-      "measured": 1.0,
-      "error_pct": 51.7506,
-      "source": "vendor/fsot_compute.py\\FSOT\\Formal\\Domains.lean",
-      "domain_display_name": "code genome",
-      "display_name": "Lean file stability",
-      "scientific_measurement": {
-        "delta": -0.517506,
-        "delta_pct": 51.7506,
-        "effective_error_pct": 51.7506,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
       "property": "codon_hole_detected",
       "name": "Lean__namespace_theorem_import",
       "computed": 1.0,
@@ -384,28 +317,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "Lean_file_stability",
-      "computed": 0.488819,
-      "measured": 1.0,
-      "error_pct": 51.1181,
-      "source": "vendor/fsot_compute.py\\FSOT\\Formal\\CodeGenomeStructurePriors.lean",
-      "domain_display_name": "code genome",
-      "display_name": "Lean file stability",
-      "scientific_measurement": {
-        "delta": -0.511181,
-        "delta_pct": 51.1181,
-        "effective_error_pct": 51.1181,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -554,28 +465,6 @@
     },
     {
       "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "Rust_file_stability",
-      "computed": 0.482921,
-      "measured": 1.0,
-      "error_pct": 51.7079,
-      "source": "vendor/fsot_compute.py\\vendor\\rust_lean_bridge\\main.rs",
-      "domain_display_name": "code genome",
-      "display_name": "Rust file stability",
-      "scientific_measurement": {
-        "delta": -0.517079,
-        "delta_pct": 51.7079,
-        "effective_error_pct": 51.7079,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
       "property": "codon_hole_detected",
       "name": "Python__return_import_class",
       "computed": 1.0,
@@ -648,28 +537,6 @@
     },
     {
       "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "Python_file_stability",
-      "computed": 0.433923,
-      "measured": 1.0,
-      "error_pct": 56.6077,
-      "source": "vendor/fsot_compute.py\\scripts\\fsot_verification_runner.py",
-      "domain_display_name": "code genome",
-      "display_name": "Python file stability",
-      "scientific_measurement": {
-        "delta": -0.566077,
-        "delta_pct": 56.6077,
-        "effective_error_pct": 56.6077,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
       "property": "codon_hole_detected",
       "name": "Python__return_import_class",
       "computed": 1.0,
@@ -714,28 +581,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "Python_file_stability",
-      "computed": 0.448454,
-      "measured": 1.0,
-      "error_pct": 55.1546,
-      "source": "vendor/fsot_compute.py\\vendor\\fsot_compute.py",
-      "domain_display_name": "code genome",
-      "display_name": "Python file stability",
-      "scientific_measurement": {
-        "delta": -0.551546,
-        "delta_pct": 55.1546,
-        "effective_error_pct": 55.1546,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -908,50 +753,6 @@
     },
     {
       "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "Python_file_stability",
-      "computed": 0.512773,
-      "measured": 1.0,
-      "error_pct": 48.7227,
-      "source": "vendor/fsot_compute.py\\scripts\\code_genome_lib.py",
-      "domain_display_name": "code genome",
-      "display_name": "Python file stability",
-      "scientific_measurement": {
-        "delta": -0.487227,
-        "delta_pct": 48.7227,
-        "effective_error_pct": 48.7227,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "C_file_stability",
-      "computed": 0.624236,
-      "measured": 1.0,
-      "error_pct": 37.5764,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\secure_buffer.c",
-      "domain_display_name": "code genome",
-      "display_name": "C file stability",
-      "scientific_measurement": {
-        "delta": -0.375764,
-        "delta_pct": 37.5764,
-        "effective_error_pct": 37.5764,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
       "property": "codon_hole_detected",
       "name": "C__sprintf_include_return",
       "computed": 1.0,
@@ -1048,28 +849,6 @@
     },
     {
       "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "C_file_stability",
-      "computed": 0.501319,
-      "measured": 1.0,
-      "error_pct": 49.8681,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
-      "domain_display_name": "code genome",
-      "display_name": "C file stability",
-      "scientific_measurement": {
-        "delta": -0.498681,
-        "delta_pct": 49.8681,
-        "effective_error_pct": 49.8681,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
       "property": "codon_hole_detected",
       "name": "JavaScript__function_module_async",
       "computed": 1.0,
@@ -1142,28 +921,6 @@
     },
     {
       "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "JavaScript_file_stability",
-      "computed": 0.716423,
-      "measured": 1.0,
-      "error_pct": 28.3577,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
-      "domain_display_name": "code genome",
-      "display_name": "JavaScript file stability",
-      "scientific_measurement": {
-        "delta": -0.283577,
-        "delta_pct": 28.3577,
-        "effective_error_pct": 28.3577,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
       "property": "codon_hole_detected",
       "name": "JavaScript__innerHTML_function_document",
       "computed": 1.0,
@@ -1212,28 +969,6 @@
     },
     {
       "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "JavaScript_file_stability",
-      "computed": 0.511918,
-      "measured": 1.0,
-      "error_pct": 48.8082,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
-      "domain_display_name": "code genome",
-      "display_name": "JavaScript file stability",
-      "scientific_measurement": {
-        "delta": -0.488082,
-        "delta_pct": 48.8082,
-        "effective_error_pct": 48.8082,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
       "property": "codon_hole_detected",
       "name": "Go__package_return_import",
       "computed": 1.0,
@@ -1278,28 +1013,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "Go_file_stability",
-      "computed": 0.640625,
-      "measured": 1.0,
-      "error_pct": 35.9375,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
-      "domain_display_name": "code genome",
-      "display_name": "Go file stability",
-      "scientific_measurement": {
-        "delta": -0.359375,
-        "delta_pct": 35.9375,
-        "effective_error_pct": 35.9375,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -1372,28 +1085,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "Zig_file_stability",
-      "computed": 0.375798,
-      "measured": 1.0,
-      "error_pct": 62.4202,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\bare_metal.zig",
-      "domain_display_name": "code genome",
-      "display_name": "Zig file stability",
-      "scientific_measurement": {
-        "delta": -0.624202,
-        "delta_pct": 62.4202,
-        "effective_error_pct": 62.4202,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -1562,28 +1253,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "WebAssembly_file_stability",
-      "computed": 0.522673,
-      "measured": 1.0,
-      "error_pct": 47.7327,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "domain_display_name": "code genome",
-      "display_name": "WebAssembly file stability",
-      "scientific_measurement": {
-        "delta": -0.477327,
-        "delta_pct": 47.7327,
-        "effective_error_pct": 47.7327,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -1776,28 +1445,6 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "mean_codon_stability",
-      "name": "FSOTB_ISA_file_stability",
-      "computed": 0.430246,
-      "measured": 1.0,
-      "error_pct": 56.9754,
-      "source": "vendor/fsot_compute.py\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "domain_display_name": "code genome",
-      "display_name": "FSOTB ISA file stability",
-      "scientific_measurement": {
-        "delta": -0.569754,
-        "delta_pct": 56.9754,
-        "effective_error_pct": 56.9754,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
       }
     },
     {
@@ -3324,29 +2971,6 @@
     {
       "lab": "code_genome_lab",
       "property": "codon_stability",
-      "name": "Lean__open",
-      "computed": 0.897673,
-      "measured": 1.0,
-      "error_pct": 10.2327,
-      "source": "vendor/fsot_compute.py\\FSOT\\Formal\\Scalar.lean",
-      "codon_index": 15,
-      "domain_display_name": "code genome",
-      "display_name": "Lean open",
-      "scientific_measurement": {
-        "delta": -0.102327,
-        "delta_pct": 10.2327,
-        "effective_error_pct": 10.2327,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
       "name": "Lean__def",
       "computed": 0.178923,
       "measured": 1.0,
@@ -3462,29 +3086,6 @@
     {
       "lab": "code_genome_lab",
       "property": "codon_stability",
-      "name": "Rust__extern",
-      "computed": 0.883577,
-      "measured": 1.0,
-      "error_pct": 11.6423,
-      "source": "vendor/fsot_compute.py\\vendor\\rust_lean_bridge\\main.rs",
-      "codon_index": 1,
-      "domain_display_name": "code genome",
-      "display_name": "Rust extern",
-      "scientific_measurement": {
-        "delta": -0.116423,
-        "delta_pct": 11.6423,
-        "effective_error_pct": 11.6423,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
       "name": "Rust__match",
       "computed": 0.741423,
       "measured": 1.0,
@@ -3520,29 +3121,6 @@
         "delta": -0.430452,
         "delta_pct": 43.0452,
         "effective_error_pct": 43.0452,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
-      "name": "Rust__impl",
-      "computed": 0.882048,
-      "measured": 1.0,
-      "error_pct": 11.7952,
-      "source": "vendor/fsot_compute.py\\vendor\\rust_lean_bridge\\main.rs",
-      "codon_index": 16,
-      "domain_display_name": "code genome",
-      "display_name": "Rust impl",
-      "scientific_measurement": {
-        "delta": -0.117952,
-        "delta_pct": 11.7952,
-        "effective_error_pct": 11.7952,
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
@@ -3612,29 +3190,6 @@
         "delta": -0.774202,
         "delta_pct": 77.4202,
         "effective_error_pct": 77.4202,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
-      "name": "Python__return",
-      "computed": 0.913298,
-      "measured": 1.0,
-      "error_pct": 8.6702,
-      "source": "vendor/fsot_compute.py\\scripts\\fsot_verification_runner.py",
-      "codon_index": 14,
-      "domain_display_name": "code genome",
-      "display_name": "Python return",
-      "scientific_measurement": {
-        "delta": -0.086702,
-        "delta_pct": 8.6702,
-        "effective_error_pct": 8.6702,
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
@@ -3784,29 +3339,6 @@
     {
       "lab": "code_genome_lab",
       "property": "codon_stability",
-      "name": "Python__async",
-      "computed": 0.946077,
-      "measured": 1.0,
-      "error_pct": 5.3923,
-      "source": "vendor/fsot_compute.py\\scripts\\code_genome_lib.py",
-      "codon_index": 5,
-      "domain_display_name": "code genome",
-      "display_name": "Python async",
-      "scientific_measurement": {
-        "delta": -0.053923,
-        "delta_pct": 5.3923,
-        "effective_error_pct": 5.3923,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
       "name": "Python__exec",
       "computed": 0.391423,
       "measured": 1.0,
@@ -3945,29 +3477,6 @@
     {
       "lab": "code_genome_lab",
       "property": "codon_stability",
-      "name": "C__void",
-      "computed": 0.850798,
-      "measured": 1.0,
-      "error_pct": 14.9202,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
-      "codon_index": 18,
-      "domain_display_name": "code genome",
-      "display_name": "C void",
-      "scientific_measurement": {
-        "delta": -0.149202,
-        "delta_pct": 14.9202,
-        "effective_error_pct": 14.9202,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
       "name": "JavaScript__function",
       "computed": 0.757048,
       "measured": 1.0,
@@ -4037,52 +3546,6 @@
     {
       "lab": "code_genome_lab",
       "property": "codon_stability",
-      "name": "JavaScript__const",
-      "computed": 0.960173,
-      "measured": 1.0,
-      "error_pct": 3.9827,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
-      "codon_index": 11,
-      "domain_display_name": "code genome",
-      "display_name": "JavaScript const",
-      "scientific_measurement": {
-        "delta": -0.039827,
-        "delta_pct": 3.9827,
-        "effective_error_pct": 3.9827,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
-      "name": "JavaScript__fetch",
-      "computed": 0.944548,
-      "measured": 1.0,
-      "error_pct": 5.5452,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
-      "codon_index": 12,
-      "domain_display_name": "code genome",
-      "display_name": "JavaScript fetch",
-      "scientific_measurement": {
-        "delta": -0.055452,
-        "delta_pct": 5.5452,
-        "effective_error_pct": 5.5452,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
       "name": "JavaScript__innerHTML",
       "computed": 1.0,
       "measured": 1.0,
@@ -4106,29 +3569,6 @@
     {
       "lab": "code_genome_lab",
       "property": "codon_stability",
-      "name": "JavaScript__document",
-      "computed": 0.867952,
-      "measured": 1.0,
-      "error_pct": 13.2048,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
-      "codon_index": 0,
-      "domain_display_name": "code genome",
-      "display_name": "JavaScript document",
-      "scientific_measurement": {
-        "delta": -0.132048,
-        "delta_pct": 13.2048,
-        "effective_error_pct": 13.2048,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
       "name": "JavaScript__eval",
       "computed": 0.422673,
       "measured": 1.0,
@@ -4141,29 +3581,6 @@
         "delta": -0.577327,
         "delta_pct": 57.7327,
         "effective_error_pct": 57.7327,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
-      "name": "Go__package",
-      "computed": 0.930452,
-      "measured": 1.0,
-      "error_pct": 6.9548,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
-      "codon_index": 4,
-      "domain_display_name": "code genome",
-      "display_name": "Go package",
-      "scientific_measurement": {
-        "delta": -0.069548,
-        "delta_pct": 6.9548,
-        "effective_error_pct": 6.9548,
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
@@ -4198,29 +3615,6 @@
     {
       "lab": "code_genome_lab",
       "property": "codon_stability",
-      "name": "Go__import",
-      "computed": 0.946077,
-      "measured": 1.0,
-      "error_pct": 5.3923,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
-      "codon_index": 5,
-      "domain_display_name": "code genome",
-      "display_name": "Go import",
-      "scientific_measurement": {
-        "delta": -0.053923,
-        "delta_pct": 5.3923,
-        "effective_error_pct": 5.3923,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
       "name": "Go__func",
       "computed": 0.319548,
       "measured": 1.0,
@@ -4233,29 +3627,6 @@
         "delta": -0.680452,
         "delta_pct": 68.0452,
         "effective_error_pct": 68.0452,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
-      "name": "Zig__return",
-      "computed": 0.866423,
-      "measured": 1.0,
-      "error_pct": 13.3577,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\bare_metal.zig",
-      "codon_index": 17,
-      "domain_display_name": "code genome",
-      "display_name": "Zig return",
-      "scientific_measurement": {
-        "delta": -0.133577,
-        "delta_pct": 13.3577,
-        "effective_error_pct": 13.3577,
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
@@ -4394,29 +3765,6 @@
         "delta": -0.321077,
         "delta_pct": 32.1077,
         "effective_error_pct": 32.1077,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
-      "name": "WebAssembly__i32.add",
-      "computed": 0.913298,
-      "measured": 1.0,
-      "error_pct": 8.6702,
-      "source": "vendor/fsot_compute.py\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "codon_index": 14,
-      "domain_display_name": "code genome",
-      "display_name": "WebAssembly i32.add",
-      "scientific_measurement": {
-        "delta": -0.086702,
-        "delta_pct": 8.6702,
-        "effective_error_pct": 8.6702,
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
@@ -4635,29 +3983,6 @@
     {
       "lab": "code_genome_lab",
       "property": "codon_stability",
-      "name": "FSOTB_ISA__MEASURE",
-      "computed": 0.883577,
-      "measured": 1.0,
-      "error_pct": 11.6423,
-      "source": "vendor/fsot_compute.py\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 1,
-      "domain_display_name": "code genome",
-      "display_name": "FSOTB ISA MEASURE",
-      "scientific_measurement": {
-        "delta": -0.116423,
-        "delta_pct": 11.6423,
-        "effective_error_pct": 11.6423,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
-    },
-    {
-      "lab": "code_genome_lab",
-      "property": "codon_stability",
       "name": "FSOTB_ISA__BRANCHT",
       "computed": 1.0,
       "measured": 1.0,
@@ -4794,36 +4119,16 @@
       }
     }
   ],
-  "crosswalk_modules": [
-    "FSOT.Formal.Genomic",
-    "FSOT.Formal.CodonPriors",
-    "FSOT.Formal.RustLeanBridge",
-    "FSOT.Formal.LeanProofsBridge"
-  ],
-  "language_bridges": [
-    "Lean",
-    "Rust",
-    "Python",
-    "C",
-    "JavaScript",
-    "Go",
-    "Zig",
-    "WebAssembly",
-    "FSOTB_ISA"
-  ],
-  "depth_pass": "tier_h_depth",
-  "display_name": "Code Genome Structure",
-  "tier_label": "Cybersecurity engineering (Tier H)",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.007641+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 111,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0245,
-    "mean_abs_delta": 0.0001298918918918919,
-    "precision_tier_counts": {
-      "green": 111
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.02449769835093818,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

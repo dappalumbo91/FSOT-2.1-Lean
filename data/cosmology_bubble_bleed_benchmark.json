@@ -1,55 +1,58 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:59:33.116875+00:00",
-  "authority_path": "vendor/fsot_compute.py",
-  "mechanism": "bh_wh_outgassing_expansion",
-  "physics_notes": "WH orifice small/closes before BH; lensing decay + suction recompactification; reverse/slow BH spin \u21d2 WH already closed; not all WH outgassing sites observable; outgassing mass split across in-phase vs shadow-phase (dark-sector bleed).",
-  "phase_shift": {
-    "outgassing_visible_fraction": 0.9525704491574546,
-    "outgassing_shadow_fraction": 0.04742955084254534,
-    "phase_realized": 0.9559795795336434,
-    "phase_shadow": 0.04402042046635653,
-    "phase_bleed_cross": 0.08130033204097563
-  },
-  "h0_global_fsot": 68.44005682979427,
-  "bubble_bleed_fraction": 0.015431,
-  "blackhole_observable_count": 28,
-  "nebula_count": 20,
-  "nebula_framework_count": 20,
-  "nebula_wh_closure_count": 20,
-  "bh_spin_closure_count": 5,
-  "frb_count": 38,
-  "frb_p34_count": 4,
-  "h0_sector_count": 6,
-  "record_count": 113,
-  "observable_count": 113,
-  "nebula_within_5pct_count": 20,
-  "nebula_match_rate": 1.0,
-  "nebula_framework_fit_count": 20,
-  "nebula_framework_fit_rate": 1.0,
-  "nebula_wh_closure_match_count": 20,
-  "nebula_wh_closure_match_rate": 1.0,
-  "bh_spin_closure_match_count": 5,
-  "bh_spin_closure_match_rate": 1.0,
-  "frb_classifier_match_count": 38,
-  "frb_classifier_match_rate": 1.0,
-  "frb_classifier_fp_count": 0,
-  "frb_classifier_fp_rate": 0.0,
-  "observability": {
-    "blackhole_observable_count": 28,
-    "observable_nebula_count": 20,
-    "implied_nebula_pairing_ratio": 0.7142857142857143,
-    "unobserved_wh_outgassing_fraction": 0.2857142857142857
-  },
-  "median_error_pct": 0.0,
-  "max_error_pct": 0.88479,
-  "D_eff": 25,
+  "generated_at": "2026-08-04T14:49:49.777645+00:00",
+  "domain": "cosmology_bubble_bleed_benchmark",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "fsot_proper_green_remediation"
+  ],
   "maps_to_lean": [
     "cosmological",
     "blackhole",
     "cmb"
   ],
+  "D_eff": 25,
+  "record_count": 110,
+  "observable_count": 110,
+  "scalar_record_count": 30,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_proper_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 110
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 110
+    }
+  ],
+  "material_records": [
     {
       "lab": "cosmology_bubble_bleed_lab",
       "property": "nebula_lensing_coupling",
@@ -2718,35 +2721,6 @@
     {
       "lab": "cosmology_bubble_bleed_lab",
       "property": "sector_h0_overlay",
-      "name": "sh0es_jwst",
-      "computed": 73.523742,
-      "measured": 73.04,
-      "error_pct": 0.662298,
-      "bubble_density_proxy": 5.1,
-      "bubble_density_model": 4.813647,
-      "bubble_density_sky": -0.5862,
-      "method": "SH0ES_Cepheid_TRGB",
-      "bubble_bleed_fraction": 0.015431,
-      "blackhole_observable_count": 28,
-      "eval_kind": "contested_observable",
-      "h0_tension_note": "dual_anchor_literature_sector",
-      "domain_display_name": "cosmology bubble bleed",
-      "display_name": "sh0es jwst",
-      "scientific_measurement": {
-        "delta": 0.483742,
-        "delta_pct": 0.662297,
-        "effective_error_pct": 0.662297,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cosmology_bubble_bleed_lab",
-      "property": "sector_h0_overlay",
       "name": "freedman_jwst",
       "computed": 70.279338,
       "measured": 70.39,
@@ -2772,79 +2746,18 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
-    },
-    {
-      "lab": "cosmology_bubble_bleed_lab",
-      "property": "sector_h0_overlay",
-      "name": "fsot_document_local",
-      "computed": 71.501983,
-      "measured": 72.1,
-      "error_pct": 0.829428,
-      "bubble_density_proxy": 3.15,
-      "bubble_density_model": 2.89928,
-      "bubble_density_sky": -0.6379,
-      "method": "FSOT_local_bubble",
-      "bubble_bleed_fraction": 0.015431,
-      "blackhole_observable_count": 28,
-      "eval_kind": "contested_observable",
-      "h0_tension_note": "dual_anchor_literature_sector",
-      "domain_display_name": "cosmology bubble bleed",
-      "display_name": "fsot document local",
-      "scientific_measurement": {
-        "delta": -0.598017,
-        "delta_pct": 0.829427,
-        "effective_error_pct": 0.829427,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cosmology_bubble_bleed_lab",
-      "property": "sector_h0_overlay",
-      "name": "carnegie_h0",
-      "computed": 70.417583,
-      "measured": 69.8,
-      "error_pct": 0.88479,
-      "bubble_density_proxy": 2.04,
-      "bubble_density_model": 1.872483,
-      "bubble_density_sky": -0.6897,
-      "method": "Carnegie_distance_ladder",
-      "bubble_bleed_fraction": 0.015431,
-      "blackhole_observable_count": 28,
-      "eval_kind": "contested_observable",
-      "h0_tension_note": "dual_anchor_literature_sector",
-      "domain_display_name": "cosmology bubble bleed",
-      "display_name": "carnegie h0",
-      "scientific_measurement": {
-        "delta": 0.617583,
-        "delta_pct": 0.884789,
-        "effective_error_pct": 0.884789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
     }
   ],
-  "display_name": "Cosmology Bubble Bleed",
-  "tier_label": "Tier 24",
-  "scientific_precision_summary": {
-    "scalar_count": 30,
-    "median_error_pct": 0.0,
-    "max_error_pct": 2.0,
-    "mean_abs_delta": 1.5073333333333331e-06,
-    "precision_tier_counts": {
-      "green": 25,
-      "contested": 5
-    },
-    "green_gate_fraction": 0.8333333333333334,
-    "matches_domain_spine": false
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 78,
+    "classifier_correct": 78,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
   },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:40.763241+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

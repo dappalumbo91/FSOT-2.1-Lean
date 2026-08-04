@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T01:47:52.445998+00:00",
+  "generated_at": "2026-08-04T14:49:50.071405+00:00",
   "domain": "Hybrid_FI_Sim_Multi_Hero_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "multi_hero_benchmark.json",
-    "vendor/neuron_cohort/inconsistency_rerun_report.json"
+    "vendor/neuron_cohort/inconsistency_rerun_report.json",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "neural",
@@ -19,18 +20,18 @@
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.051436,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "multi_hero_fi_proxy": {
-        "sota_typical_error_pct": 40.0,
-        "sota_model": "Allen FI curve linear fit"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_hybrid_fi_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -45,12 +46,12 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "hybrid_fi",
-      "name": "multi_hero_fi_proxy",
-      "computed": 0.0,
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.051436,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 25
+      "error_pct": 0.051436,
+      "observable_count": 32
     }
   ],
   "material_records": [

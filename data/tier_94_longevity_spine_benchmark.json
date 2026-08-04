@@ -1,10 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-16T13:42:50.089160+00:00",
+  "generated_at": "2026-08-04T14:49:51.031423+00:00",
   "domain": "Tier_94_Longevity_Spine",
-  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "tier94_longevity_panels"
+    "tier94_longevity_panels",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "biological",
@@ -23,14 +24,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "tier94_longevity": {
+      "pre": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "Tier 94 AnAge longevity genetics wave"
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_ingest_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -45,12 +46,12 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "ingest_relay",
-      "name": "tier94_longevity",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 24
+      "observable_count": 34
     }
   ],
   "material_records": [

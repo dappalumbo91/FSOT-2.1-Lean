@@ -1,512 +1,369 @@
 {
-  "benchmark_version": "1.0",
-  "generated_at": "2026-07-13T15:22:09.770096+00:00",
-  "source_root": "vendor/cosmology/database",
-  "skeleton_derivation_count": 24,
-  "lambda_cdm_count": 30,
-  "thesis_cosmology_wave_count": 4,
-  "observable_count": 58,
-  "median_error_pct": 0.021954848848277954,
-  "within_five_pct_count": 50,
-  "skeleton_derivations": [
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T14:49:49.781213+00:00",
+  "domain": "Cosmology_Extended",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "fsot_proper_green_remediation"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "astronomical"
+  ],
+  "D_eff": 25,
+  "record_count": 23,
+  "observable_count": 23,
+  "scalar_record_count": 23,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.000561846,
+  "pooled_median_error_pct": 0.000561846,
+  "headline_median_error_pct": 0.000561846,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_proper_vs_baseline": true
+    }
+  },
+  "records": [
     {
-      "source": "skeleton_database",
-      "symbol": "theta_star",
-      "section": "\u00a7108 CMB",
-      "formula": "P_BASE*PHI - GAMMA^2",
-      "computed": "0.01040475951507544",
-      "target": "0.010411 rad",
-      "error_pct": 0.06
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.000562,
+      "measured": 0.0,
+      "error_pct": 0.000561846,
+      "observable_count": 23
     },
     {
-      "source": "skeleton_database",
-      "symbol": "r_star",
-      "section": "\u00a7108 CMB",
-      "formula": "PI^3/P_BASE - PHI",
-      "computed": "144.39983003198907",
-      "target": "144.43 Mpc",
-      "error_pct": 0.021
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "n_s",
-      "section": "\u00a7108 CMB",
-      "formula": "1 + S_COSM*C_COSM*PHI^(1/PI)",
-      "computed": "0.9638062833678815",
-      "target": "0.9649 +/- 0.0042",
-      "error_pct": 0.113
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "dn_s/dlnk",
-      "section": "\u00a7108 CMB",
-      "formula": "-C_COSM^2*PHI/E",
-      "computed": "-0.002273619984062688",
-      "target": "-0.0042 +/- 0.0067",
-      "error_pct": 1.0
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "Y_p",
-      "section": "\u00a7109 BBN",
-      "formula": "THETA_S*sin(1)",
-      "computed": "0.24478099844975698",
-      "target": "0.2449 +/- 0.0040",
-      "error_pct": 0.049
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "D/H",
-      "section": "\u00a7109 BBN",
-      "formula": "1/(PI^4*E^6)",
-      "computed": "2.5446825859417006e-05",
-      "target": "2.547e-5 +/- 0.025e-5",
-      "error_pct": 0.091
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "He-3/H",
-      "section": "\u00a7109 BBN",
-      "formula": "POOF/(PI^4*E^4*PHI^2)",
-      "computed": 1.102314090701526e-05,
-      "target": "~1.1e-5 +/- 2e-6",
-      "error_pct": 0.21
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "Li-7/H",
-      "section": "\u00a7109 BBN",
-      "formula": "5.6e-10*(SUCTION+POOF)/(PI*GAMMA^2)",
-      "computed": 1.607791860864915e-10,
-      "target": "1.6e-10 +/- 0.3e-10",
-      "error_pct": 0.487
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "delta_m(n-p)",
-      "section": "\u00a7109 BBN",
-      "formula": "GAMMA^4/|CHAOS|+P_VAR",
-      "computed": "1.2933328005542002",
-      "target": "1.29333 MeV",
-      "error_pct": 0.0
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "tau_n",
-      "section": "\u00a7109 BBN",
-      "formula": "PI^7*THETA_S",
-      "computed": "878.5928513922833",
-      "target": "878.4 +/- 0.5 s",
-      "error_pct": 0.022
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "T_freeze",
-      "section": "\u00a7109 BBN",
-      "formula": "PHI/2",
-      "computed": "0.8090169943749475",
-      "target": "~0.8 MeV",
-      "error_pct": 1.127
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "kappa_FSOT",
-      "section": "\u00a7110 Rotation Curves",
-      "formula": "|S_COSM|*A_BLEED/ETA_EFF",
-      "computed": "1.1266022184607556",
-      "target": "empirical fit",
-      "error_pct": null
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "RMS_rot",
-      "section": "\u00a7110 Rotation Curves",
-      "formula": "v_baryon*sqrt(1+kappa*ln(r/r0))",
-      "computed": "17.4",
-      "target": "km/s (MW fit)",
-      "error_pct": null
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "M_TOV",
-      "section": "\u00a7111 Neutron Star",
-      "formula": "PHI+ETA_EFF",
-      "computed": "2.084976195674155",
-      "target": "2.08 +/- 0.07 M_sun",
-      "error_pct": 0.24
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "R_ns",
-      "section": "\u00a7111 Neutron Star",
-      "formula": "PHI^5+PI/E",
-      "computed": "12.245897293540397",
-      "target": "12.35 +/- 0.75 km",
-      "error_pct": 0.843
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "n_sat",
-      "section": "\u00a7111 Neutron Star",
-      "formula": "THETA_S/(PI*GAMMA)",
-      "computed": 0.16041706825123725,
-      "target": "0.16 +/- 0.01 fm^-3",
-      "error_pct": 0.261
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "n_brake",
-      "section": "\u00a7111 Neutron Star",
-      "formula": "GAMMA*PHI^3+C_COSM",
-      "computed": "2.506936",
-      "target": "2.509 +/- 0.01",
-      "error_pct": 0.083
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "log10_B_normal",
-      "section": "\u00a7111 Neutron Star",
-      "formula": "PI^2+E",
-      "computed": "12.587886229548404",
-      "target": "12.58 (Crab) log(G)",
-      "error_pct": 0.06
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "log10_B_magnetar",
-      "section": "\u00a7111 Neutron Star",
-      "formula": "PHI^5+PI+GAMMA",
-      "computed": "14.8089782622408",
-      "target": "14.85 (SGR1900+14) log(G)",
-      "error_pct": 0.28
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "log10_B_MSP",
-      "section": "\u00a7111 Neutron Star",
-      "formula": "E*PI",
-      "computed": "8.539734222673568",
-      "target": "8.61 (B1937+21) log(G)",
-      "error_pct": 0.82
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "visc_corr",
-      "section": "\u00a7112 GW Strain",
-      "formula": "1+|S_COSM|*|CHAOS|/ETA_EFF",
-      "computed": "1.356200545646829",
-      "target": "viscous correction",
-      "error_pct": null
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "T_opt",
-      "section": "\u00a7113 Exoplanet",
-      "formula": "PHI^7*PI^2+PHI",
-      "computed": "288.182",
-      "target": "~288 K (Earth)",
-      "error_pct": 0.063
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "S_planet",
-      "section": "\u00a7113 Exoplanet",
-      "formula": "domain_scalar(Planetary_Science)",
-      "computed": "0.8942633864762617",
-      "target": "-",
-      "error_pct": null
-    },
-    {
-      "source": "skeleton_database",
-      "symbol": "A_s",
-      "section": "\u00a7108 CMB",
-      "formula": "(PHI+ETA_EFF)*1e-9",
-      "computed": "2.085e-09",
-      "target": "2.1e-9 (Planck 2018)",
-      "error_pct": 0.72
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_proper",
+      "name": "green_fix",
+      "computed": 0.000562,
+      "measured": 0.0,
+      "error_pct": 0.000561846,
+      "observable_count": 23
     }
   ],
-  "lambda_cdm_observables": [
+  "material_records": [
     {
-      "source": "lambda_cdm",
-      "wave": "wave1",
-      "name": "alpha_s(M_Z)",
-      "computed": 0.11709966304863832,
-      "measured": 0.1179,
-      "error_pct": 0.6788269307563042
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave1",
-      "name": "H0",
-      "computed": 68.44005682979427,
-      "measured": 68.44005682979427,
-      "error_pct": 0.0
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave1",
-      "name": "T_CMB",
-      "computed": 2.724728386673958,
-      "measured": 2.72548,
-      "error_pct": 0.02757728275540903
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave1",
-      "name": "n_s",
-      "computed": 0.9638062833678815,
-      "measured": 0.9649,
-      "error_pct": 0.11335025724100276
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave1",
-      "name": "Omega_b_h2",
-      "computed": 0.0223561240822737,
-      "measured": 0.02237,
-      "error_pct": 0.062029136013863215
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave2",
-      "name": "1/alpha_em",
-      "computed": 137.03619755957268,
-      "measured": 137.036,
-      "error_pct": 0.0001441661845670506
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "BeCl\u2082",
+      "name": "d100218fdd574f15",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave2",
-      "name": "sin2_theta_W",
-      "computed": 0.23118997459960097,
-      "measured": 0.23122,
-      "error_pct": 0.01298564155308206
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "H\u207a/H\u2082",
+      "name": "0d36931a8021c0b6",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi - pi",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Bard, Parsons & Jordan (1985)"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave2",
-      "name": "M_W/M_Z",
-      "computed": 0.8814508416055906,
-      "measured": 0.88147,
-      "error_pct": 0.002173459608308579
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "alpha_Fe",
+      "name": "a3464d3321da787e",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ 2 - phi - 1",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Long & Greenwood (1997)"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave2",
-      "name": "Omega_Lambda",
-      "computed": 0.6846890475252997,
-      "measured": 0.6847,
-      "error_pct": 0.0015996019717084266
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "Bi2Te3",
+      "name": "dce748561902febf",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "PHI ^ 2 - PHI ^ 1",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave2",
-      "name": "Omega_m",
-      "computed": 0.31529901823577033,
-      "measured": 0.3153,
-      "error_pct": 0.00031137463675564236
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "R_N",
+      "name": "07b3e073b02aa441",
+      "computed": 0.7500001632454711,
+      "measured": 0.75,
+      "error_pct": 2.1766e-05,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "G ^ ( - 7 ) - ln ( 3 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave2",
-      "name": "Omega_DM_h2",
-      "computed": 0.120000673267622,
-      "measured": 0.12,
-      "error_pct": 0.0005610563516671626
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "CS2",
+      "name": "b570b63cbc8dce71",
+      "computed": 358.99980082967573,
+      "measured": 359.0,
+      "error_pct": 5.5479e-05,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "E ^ 4 + PI ^ 5 - PHI ^ 1",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST Chemistry WebBook / CRC"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave2",
-      "name": "sigma_8",
-      "computed": 0.8111240047382514,
-      "measured": 0.8111,
-      "error_pct": 0.00295952881905694
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "Fe",
+      "name": "de190b5a1618a827",
+      "computed": 1.679990560988901,
+      "measured": 1.68,
+      "error_pct": 0.000561846,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "E / PHI",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Anderson (1966)"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave2",
-      "name": "tau_reion",
-      "computed": 0.05439655350230806,
-      "measured": 0.0544,
-      "error_pct": 0.006335473698407175
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "F",
+      "name": "c1f0a37d1a7e1851",
+      "computed": 3.4009757390356903,
+      "measured": 3.401,
+      "error_pct": 0.000713348,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "gamma ^ ( - 2 ) + \u03a8 ^ 2",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave2",
-      "name": "m_pi/m_p",
-      "computed": 0.14445749655332277,
-      "measured": 0.14446,
-      "error_pct": 0.0017329687645284413
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "IE_Ar",
+      "name": "6a9af01dd6d7066c",
+      "computed": 15.76012377846974,
+      "measured": 15.76,
+      "error_pct": 0.000785396,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "gamma ^ ( - 5 ) + Poof",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave2",
-      "name": "N_eff",
-      "computed": 3.045713454288361,
-      "measured": 3.046,
-      "error_pct": 0.009407278780006465
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "Ca",
+      "name": "4583c5321dccbc9d",
+      "computed": 177.8014017941265,
+      "measured": 177.8,
+      "error_pct": 0.000788411,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "E ^ 5 + PI ^ 3 - PHI ^ 1",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST-JANAF / CRC / Kittel"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "|V_us|",
-      "computed": 0.22427764916395915,
-      "measured": 0.2243,
-      "error_pct": 0.009964706215270609
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "P",
+      "name": "11f7ccc79d6fc81f",
+      "computed": 0.7469924420819796,
+      "measured": 0.747,
+      "error_pct": 0.001011769,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "gamma * \u03a9",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "|V_cb|",
-      "computed": 0.04220081332791359,
-      "measured": 0.0422,
-      "error_pct": 0.0019273173307759674
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "CH\u2084",
+      "name": "9ab02109a8e3ee2c",
+      "computed": 109.47122063449069,
+      "measured": 109.47,
+      "error_pct": 0.00111504,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "arccos ( - 1 / 3 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "sin_theta_C",
-      "computed": 0.22759115424752144,
-      "measured": 0.22759,
-      "error_pct": 0.0005071609128041613
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "BL_N\u2212H",
+      "name": "fff1ff66c36b0580",
+      "computed": 1.0099883725773517,
+      "measured": 1.01,
+      "error_pct": 0.00115123,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "A_bleed - gamma ^ 6",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "Age_Gyr",
-      "computed": 13.787196119245323,
-      "measured": 13.787,
-      "error_pct": 0.00142249398217106
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "Water",
+      "name": "5a39d1f6034db5f4",
+      "computed": 45.24943474548015,
+      "measured": 45.25,
+      "error_pct": 0.001249181,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "E ^ 2 + PI ^ 3 + PHI ^ 4",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "CRC / Riddick et al. (1986)"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "z_eq",
-      "computed": 3393.8103104014167,
-      "measured": 3402.0,
-      "error_pct": 0.240731616654418
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "IE_S",
+      "name": "31541855439fdc47",
+      "computed": 10.360130217649857,
+      "measured": 10.36,
+      "error_pct": 0.001256927,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ 6 / \u221a3",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "theta_star",
-      "computed": 0.01040475951507544,
-      "measured": 0.010411,
-      "error_pct": 0.059941263323023214
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "BL_C\u2261C",
+      "name": "0997e9c3a8fe780f",
+      "computed": 1.1999816148643265,
+      "measured": 1.2,
+      "error_pct": 0.001532095,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / phi ^ 2",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "r_star_Mpc",
-      "computed": 144.39983003198907,
-      "measured": 144.43,
-      "error_pct": 0.02088898982963232
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "R_C",
+      "name": "4469b0d94a71738f",
+      "computed": 0.7700130881402762,
+      "measured": 0.77,
+      "error_pct": 0.001699758,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ^ ( - 4 ) + \u221agamma",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "Deuteron_binding_MeV",
-      "computed": 2.224564648462528,
-      "measured": 2.224566,
-      "error_pct": 6.075510781503307e-05
-    },
-    {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "Neutron_lifetime_s",
-      "computed": 878.5928513922833,
-      "measured": 878.4,
-      "error_pct": 0.021954848848277954
-    },
-    {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "Ising2D_beta",
-      "computed": 0.3265324013682464,
-      "measured": 0.32653,
-      "error_pct": 0.0007354204043789445
-    },
-    {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "Ising2D_nu",
-      "computed": 0.6299845062655096,
-      "measured": 0.63002,
-      "error_pct": 0.005633747260469587
-    },
-    {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "Ising2D_gamma",
-      "computed": 1.2371916616832948,
-      "measured": 1.2372,
-      "error_pct": 0.0006739667560075375
-    },
-    {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "m_t/m_W",
-      "computed": 2.15000345864463,
-      "measured": 2.1498,
-      "error_pct": 0.009464073152396864
-    },
-    {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "m_H/m_W",
-      "computed": 1.5595014764878583,
-      "measured": 1.5595,
-      "error_pct": 9.46770027700249e-05
-    },
-    {
-      "source": "lambda_cdm",
-      "wave": "wave3",
-      "name": "m_tau/m_e",
-      "computed": 3477.5054587878312,
-      "measured": 3477.48,
-      "error_pct": 0.0007321045076093104
+      "lab": "cosmology_extended_fsot_lab",
+      "property": "NO\u2082(g)",
+      "name": "396e8db24cbb0e77",
+      "computed": 51.312174204804236,
+      "measured": 51.31,
+      "error_pct": 0.00423739,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "\u03a8 ^ ( - 4 ) + \u03b7 ^ ( - 5 )",
+      "fsot_domain": "Cosmology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Chase, NIST-JANAF 4th ed (1998)"
     }
   ],
-  "thesis_cosmology_waves": [
-    {
-      "source": "thesis_wave",
-      "wave": 8,
-      "id": "S8",
-      "name": "S_8",
-      "category": "Cosmology",
-      "measured": null,
-      "sigma_percent": 0.0
-    },
-    {
-      "source": "thesis_wave",
-      "wave": 8,
-      "id": "z_reion",
-      "name": "z_reion",
-      "category": "Cosmology",
-      "measured": "7.7",
-      "sigma_percent": 0.0
-    },
-    {
-      "source": "thesis_wave",
-      "wave": 9,
-      "id": "Omega_r",
-      "name": "Omega_r",
-      "category": "Cosmology",
-      "measured": "9.167728879734846e-5",
-      "sigma_percent": 0.2
-    },
-    {
-      "source": "thesis_wave",
-      "wave": 10,
-      "id": "eta_baryon_photon",
-      "name": "eta baryon-photon",
-      "category": "Cosmology",
-      "measured": "6.139749535425554e-10",
-      "sigma_percent": 0.1
-    }
-  ],
-  "display_name": "Cosmology Extended",
-  "tier_label": "Tier 16",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:40.755507+00:00"
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.000561846,
+    "max_scalar_error_pct": 0.00423739,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

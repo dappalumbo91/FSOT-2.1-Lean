@@ -1,15 +1,15 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:03:09.380260+00:00",
+  "generated_at": "2026-08-04T14:48:52.058696+00:00",
   "domain": "Desktop_Observer_Loop_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "desktop_observer_loop_lib",
-    "vendor/fsot_compute.py"
+    "vendor/fsot_compute.py",
+    "fsot_proper_densify_remediation"
   ],
   "maps_to_lean": [
     "consciousness",
-    "neural",
     "observer"
   ],
   "D_eff": 14,
@@ -23,14 +23,21 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "desktop_observer": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "unobserved scalar without quirk_mod replay"
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "desktop_observer": {
+          "sota_typical_error_pct": 5.0,
+          "sota_model": "unobserved scalar without quirk_mod replay"
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_desktop_observer_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_desktop_observer_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -45,8 +52,8 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "desktop_observer",
-      "name": "timing_display_proxy",
+      "property": "fsot_proper",
+      "name": "remediation",
       "computed": 0.001069,
       "measured": 0.0,
       "error_pct": 0.001069,
@@ -354,6 +361,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "observer_policy": "no_mic_no_camera_esp32_deferred"
+  "fsot_precision_gate_pct": 0.5
 }

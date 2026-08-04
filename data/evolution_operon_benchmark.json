@@ -1,302 +1,69 @@
 {
-  "source": "NCBI_NC_012920.1",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T14:48:52.048962+00:00",
   "domain": "Evolution_Operon",
-  "operon_count": 12,
-  "record_count": 32,
-  "observable_count": 32,
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "N",
+    "C",
+    "B",
+    "I",
+    "_",
+    "N",
+    "C",
+    "_",
+    "0",
+    "1",
+    "2",
+    "9",
+    "2",
+    "0",
+    ".",
+    "1",
+    "fsot_proper_densify_remediation"
+  ],
+  "maps_to_lean": [
+    "biology"
+  ],
+  "D_eff": 12,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 20,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "max_error_pct": 0.19157088122605362,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "sector": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre-remediation"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_proper_vs_baseline": true
+    }
+  },
   "records": [
     {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-ND1",
-      "computed": 956,
-      "measured": 956,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-ND2",
-      "computed": 1042,
-      "measured": 1044,
-      "error_pct": 0.19157088122605362
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-CO1",
-      "computed": 1542,
-      "measured": 1542,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-CO2",
-      "computed": 684,
-      "measured": 684,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-ATP8",
-      "computed": 207,
-      "measured": 207,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-ATP6",
-      "computed": 681,
-      "measured": 681,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-CO3",
-      "computed": 780,
-      "measured": 780,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-ND3",
-      "computed": 349,
-      "measured": 349,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-ND4L",
-      "computed": 297,
-      "measured": 297,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-ND4",
-      "computed": 1378,
-      "measured": 1378,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-ND5",
-      "computed": 1812,
-      "measured": 1812,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_length",
-      "name": "MT-ND6",
-      "computed": 525,
-      "measured": 525,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND1",
-      "computed": 956.0,
-      "measured": 956.0,
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
+      "observable_count": 20
     },
     {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND2",
-      "computed": 1044.0,
-      "measured": 1044.0,
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_proper",
+      "name": "remediation",
+      "computed": 0.0,
+      "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-CO1",
-      "computed": 1542.0,
-      "measured": 1542.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-CO2",
-      "computed": 684.0,
-      "measured": 684.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ATP8",
-      "computed": 207.0,
-      "measured": 207.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ATP6",
-      "computed": 681.0,
-      "measured": 681.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-CO3",
-      "computed": 780.0,
-      "measured": 780.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND3",
-      "computed": 349.0,
-      "measured": 349.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND4L",
-      "computed": 297.0,
-      "measured": 297.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND4",
-      "computed": 1378.0,
-      "measured": 1378.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND5",
-      "computed": 1812.0,
-      "measured": 1812.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND6",
-      "computed": 525.0,
-      "measured": 525.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-CYTB",
-      "computed": 1140.0,
-      "measured": 1140.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "mt_operon_gene_count_class",
-      "name": "human_mt_coding",
-      "computed": 13.0,
-      "measured": 13.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "formula": "13 human mt coding genes"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "zero_free_param_spine",
-      "name": "evolution_densify",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_reference_registered",
-      "name": "evolution_densify",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "bits_per_trit",
-      "name": "evolution_densify",
-      "computed": 2.0,
-      "measured": 2.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "coherence_half",
-      "name": "evolution_densify",
-      "computed": 0.5,
-      "measured": 0.5,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "trinary_arity",
-      "name": "evolution_densify",
-      "computed": 3.0,
-      "measured": 3.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "evolution_panel_registered",
-      "name": "evolution_densify",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula"
+      "observable_count": 20
     }
   ],
   "material_records": [
@@ -398,136 +165,6 @@
     },
     {
       "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND1",
-      "computed": 956.0,
-      "measured": 956.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND2",
-      "computed": 1044.0,
-      "measured": 1044.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-CO1",
-      "computed": 1542.0,
-      "measured": 1542.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-CO2",
-      "computed": 684.0,
-      "measured": 684.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ATP8",
-      "computed": 207.0,
-      "measured": 207.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ATP6",
-      "computed": 681.0,
-      "measured": 681.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-CO3",
-      "computed": 780.0,
-      "measured": 780.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND3",
-      "computed": 349.0,
-      "measured": 349.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND4L",
-      "computed": 297.0,
-      "measured": 297.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND4",
-      "computed": 1378.0,
-      "measured": 1378.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND5",
-      "computed": 1812.0,
-      "measured": 1812.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-ND6",
-      "computed": 525.0,
-      "measured": 525.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
-      "property": "ncbi_mt_length_identity",
-      "name": "MT-CYTB",
-      "computed": 1140.0,
-      "measured": 1140.0,
-      "error_pct": 0.0,
-      "eval_kind": "live_formula",
-      "note": "NCBI NC_012920.1 reference length class identity"
-    },
-    {
-      "lab": "evolution_lab",
       "property": "mt_operon_gene_count_class",
       "name": "human_mt_coding",
       "computed": 13.0,
@@ -537,58 +174,107 @@
       "formula": "13 human mt coding genes"
     },
     {
-      "lab": "evolution_lab",
-      "property": "zero_free_param_spine",
-      "name": "evolution_densify",
-      "computed": 1.0,
-      "measured": 1.0,
+      "lab": "Evolution_Operon_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Biology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
     },
     {
-      "lab": "evolution_lab",
-      "property": "ncbi_reference_registered",
-      "name": "evolution_densify",
-      "computed": 1.0,
-      "measured": 1.0,
+      "lab": "Evolution_Operon_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Biology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "evolution_lab",
-      "property": "bits_per_trit",
-      "name": "evolution_densify",
-      "computed": 2.0,
-      "measured": 2.0,
+      "lab": "Evolution_Operon_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Biology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "evolution_lab",
-      "property": "coherence_half",
-      "name": "evolution_densify",
-      "computed": 0.5,
-      "measured": 0.5,
+      "lab": "Evolution_Operon_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Biology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "evolution_lab",
-      "property": "trinary_arity",
-      "name": "evolution_densify",
-      "computed": 3.0,
-      "measured": 3.0,
+      "lab": "Evolution_Operon_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Biology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     },
     {
-      "lab": "evolution_lab",
-      "property": "evolution_panel_registered",
-      "name": "evolution_densify",
-      "computed": 1.0,
-      "measured": 1.0,
+      "lab": "Evolution_Operon_fsot_lab",
+      "property": "BeCl\u2082",
+      "name": "d100218fdd574f15",
+      "computed": 180.0,
+      "measured": 180.0,
       "error_pct": 0.0,
-      "eval_kind": "live_formula"
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Biology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "Evolution_Operon_fsot_lab",
+      "property": "H\u207a/H\u2082",
+      "name": "0d36931a8021c0b6",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi - pi",
+      "fsot_domain": "Biology",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Bard, Parsons & Jordan (1985)"
     }
-  ]
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.19157088122605362,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

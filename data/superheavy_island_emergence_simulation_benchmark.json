@@ -1,12 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:12.249394+00:00",
+  "generated_at": "2026-08-04T14:48:54.954001+00:00",
   "domain": "Superheavy_Island_Emergence_Simulation",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_compute.py\\vendor\\superheavy_island\\island_z120_z126_anchors.json",
     "vendor/fsot_compute.py\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json",
-    "fusion_decay_chain_prereg_scaffold_benchmark.json"
+    "fusion_decay_chain_prereg_scaffold_benchmark.json",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "particle",
@@ -15,22 +17,24 @@
     "astronomical"
   ],
   "D_eff": 21,
-  "record_count": 44,
-  "observable_count": 44,
+  "record_count": 32,
+  "observable_count": 32,
+  "scalar_record_count": 25,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "z120_z126_sim": {
-        "sota_typical_error_pct": 100.0,
-        "sota_model": "No Z=120-126 natural observation"
+      "Superheavy_Island_Emergence_Simulation_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "sector model without seed-closed FSOT formula"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_island_emergence_vs_baseline": true
+      "channel_fsot_seed_formula_vs_baseline": true
     }
   },
   "records": [
@@ -41,93 +45,19 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 44,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 32
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "island_emergence",
-      "name": "z120_z126_sim",
+      "property": "fsot_seed_formula",
+      "name": "Superheavy_Island_Emergence_Simulation_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 42,
-      "domain_display_name": "tier gap fill",
-      "display_name": "z120 z126 sim",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 32
     }
   ],
   "material_records": [
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z119_N177__r_process_supernova",
-      "Z": 119,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z119 N177 r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z119_N177__s_process_agb",
-      "Z": 119,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z119 N177 s process agb",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
     {
       "lab": "superheavy_island_emergence_lab",
       "property": "emergence_pathway_viable",
@@ -234,54 +164,6 @@
       "eval_kind": "emergence_gate",
       "domain_display_name": "superheavy island emergence",
       "display_name": "Z119 N177",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z120_N184__r_process_supernova",
-      "Z": 120,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z120 N184 r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z120_N184__s_process_agb",
-      "Z": 120,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z120 N184 s process agb",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -415,54 +297,6 @@
     {
       "lab": "superheavy_island_emergence_lab",
       "property": "emergence_pathway_viable",
-      "name": "Z122_N184__r_process_supernova",
-      "Z": 122,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z122 N184 r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z122_N184__s_process_agb",
-      "Z": 122,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z122 N184 s process agb",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
       "name": "Z122_N184__cosmic_ray_spallation",
       "Z": 122,
       "pathway": "cosmic_ray_spallation",
@@ -566,54 +400,6 @@
       "eval_kind": "emergence_gate",
       "domain_display_name": "superheavy island emergence",
       "display_name": "Z122 N184",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z124_N184__r_process_supernova",
-      "Z": 124,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z124 N184 r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z124_N184__s_process_agb",
-      "Z": 124,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z124 N184 s process agb",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -747,54 +533,6 @@
     {
       "lab": "superheavy_island_emergence_lab",
       "property": "emergence_pathway_viable",
-      "name": "Z126_N184__r_process_supernova",
-      "Z": 126,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z126 N184 r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z126_N184__s_process_agb",
-      "Z": 126,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z126 N184 s process agb",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
       "name": "Z126_N184__cosmic_ray_spallation",
       "Z": 126,
       "pathway": "cosmic_ray_spallation",
@@ -898,54 +636,6 @@
       "eval_kind": "emergence_gate",
       "domain_display_name": "superheavy island emergence",
       "display_name": "Z126 N184",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z126_N190__r_process_supernova",
-      "Z": 126,
-      "pathway": "r_process_supernova",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z126 N190 r process supernova",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "superheavy_island_emergence_lab",
-      "property": "emergence_pathway_viable",
-      "name": "Z126_N190__s_process_agb",
-      "Z": 126,
-      "pathway": "s_process_agb",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
-      "display_name": "Z126 N190 s process agb",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -1132,19 +822,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Superheavy Island Emergence Simulation",
-  "tier_label": "Tier 74 \u2014 Island Of Stability Deep Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.287690+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 37,
-    "median_error_pct": 0.0,
-    "max_error_pct": 1e-06,
-    "mean_abs_delta": 2.0789147302702706,
-    "precision_tier_counts": {
-      "green": 37
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

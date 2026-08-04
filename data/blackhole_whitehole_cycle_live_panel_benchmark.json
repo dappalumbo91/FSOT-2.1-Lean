@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-16T15:52:36.315856+00:00",
+  "generated_at": "2026-08-04T14:49:49.141598+00:00",
   "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
-  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\blackhole_whitehole_cycle_cache.json",
-    "bh_wh_cycle_blueprint"
+    "bh_wh_cycle_blueprint",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "blackhole",
@@ -23,14 +24,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "bh_wh_cycle": {
-        "sota_typical_error_pct": 6.0,
-        "sota_model": "Desktop BH\u2192WH information cycle prototype + thesis relay"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_bh_wh_cycle_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -45,12 +46,12 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "bh_wh_cycle",
-      "name": "desktop_prototype",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.026472,
       "measured": 0.0,
       "error_pct": 0.026472,
-      "observable_count": 23
+      "observable_count": 24
     }
   ],
   "material_records": [

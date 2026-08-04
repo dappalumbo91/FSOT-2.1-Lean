@@ -1,11 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T16:11:58.866632+00:00",
+  "generated_at": "2026-08-04T14:48:53.854812+00:00",
   "domain": "Robotics_Control_Systems",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "robotics_control_reference",
-    "trinary_os_ISA"
+    "trinary_os_ISA",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -13,22 +15,24 @@
     "neural"
   ],
   "D_eff": 14,
-  "record_count": 45,
-  "observable_count": 45,
+  "record_count": 44,
+  "observable_count": 44,
+  "scalar_record_count": 44,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "robotics_control_panel": {
+      "Robotics_Control_Systems_depth": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "MPC/PID tuning baselines"
+        "sota_model": "sector model without seed-closed FSOT formula"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_control_observables_vs_baseline": true
+      "channel_fsot_seed_formula_vs_baseline": true
     }
   },
   "records": [
@@ -39,42 +43,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 45,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 44
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "control_observables",
-      "name": "robotics_control_panel",
+      "property": "fsot_seed_formula",
+      "name": "Robotics_Control_Systems_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 45,
-      "domain_display_name": "tier gap fill",
-      "display_name": "robotics control panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 44
     }
   ],
   "material_records": [
@@ -424,28 +402,6 @@
         "delta": 0.004115,
         "delta_pct": 0.04115,
         "effective_error_pct": 0.04115,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "robotics_control_lab",
-      "property": "process_noise_covariance",
-      "name": "kalman_process_noise",
-      "computed": 0.010004,
-      "measured": 0.01,
-      "error_pct": 0.04114895703266272,
-      "source": "robotics_control_reference_observables",
-      "domain_display_name": "robotics control",
-      "display_name": "kalman process noise",
-      "scientific_measurement": {
-        "delta": 4e-06,
-        "delta_pct": 0.04,
-        "effective_error_pct": 0.04,
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
@@ -1075,19 +1031,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Robotics Control Systems",
-  "tier_label": "Tier 41",
-  "scientific_precision_summary": {
-    "scalar_count": 45,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.042,
-    "mean_abs_delta": 0.03450034883720931,
-    "precision_tier_counts": {
-      "green": 45
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:46.028587+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

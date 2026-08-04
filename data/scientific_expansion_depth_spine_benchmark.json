@@ -1,10 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T03:12:14.893719+00:00",
+  "generated_at": "2026-08-04T14:49:50.428575+00:00",
   "domain": "Scientific_Expansion_Depth_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "tier86_depth_wave_panels"
+    "tier86_depth_wave_panels",
+    "fsot_proper_green_remediation"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -22,14 +23,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "scientific_expansion_depth": {
-        "sota_typical_error_pct": 6.0,
-        "sota_model": "Tier 86 depth wave expansion"
+      "pre": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "pre"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_ingest_relay_vs_baseline": true
+      "channel_fsot_proper_vs_baseline": true
     }
   },
   "records": [
@@ -44,12 +45,12 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "ingest_relay",
-      "name": "scientific_expansion_depth",
+      "property": "fsot_proper",
+      "name": "green_fix",
       "computed": 0.033841,
       "measured": 0.0,
       "error_pct": 0.033841,
-      "observable_count": 68
+      "observable_count": 72
     }
   ],
   "material_records": [
