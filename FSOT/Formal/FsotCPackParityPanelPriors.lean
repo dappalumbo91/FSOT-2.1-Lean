@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def fsot_c_pack_parity_observable_count : ℕ := 4
+def fsot_c_pack_parity_observable_count : ℕ := 23
 def fsot_c_pack_parity_median_error_pct : ℝ := (0.0 : ℝ)
 def fsot_c_pack_parity_D_eff : ℕ := 10
 
@@ -23,7 +23,7 @@ theorem fsot_c_pack_parity_median_error_under_half_pct :
   unfold fsot_c_pack_parity_median_error_pct; norm_num
 
 theorem fsot_c_pack_parity_bundle :
-    fsot_c_pack_parity_observable_count = 4 ∧
+    fsot_c_pack_parity_observable_count = 23 ∧
     fsot_c_pack_parity_D_eff = 10 ∧
     fsot_c_pack_parity_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by

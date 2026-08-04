@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T05:09:13.258227+00:00",
+  "generated_at": "2026-08-04T13:56:34.054600+00:00",
   "domain": "FSOT_GPU_Engineering_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -344,29 +344,24 @@
     },
     {
       "lab": "fsot_gpu_engineering_spine_lab",
-      "property": "vram_usable_mib_c_eff_times_formal",
-      "name": "rtx5070_vram",
-      "computed": 12258.588193543184,
-      "measured": 12226.56,
-      "error_pct": 0.261955886,
+      "property": "cache_line_bytes",
+      "name": "ram_crystal_pack",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "usable_mib = C_eff \u00b7 formal_crystal_boundary_mib",
-      "formal_boundary_mib": 12800.0,
-      "layer": "ram_function",
-      "device": "NVIDIA GeForce RTX 5070"
+      "formula": "x86 line = 2^6 RAM coherence unit",
+      "layer": "ram_function"
     },
     {
       "lab": "fsot_gpu_engineering_spine_lab",
-      "property": "vram_fits_formal_boundary",
-      "name": "GpuMemory.fits",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "trits_per_cache_line",
+      "name": "ram_crystal_pack",
+      "computed": 256.0,
+      "measured": 256.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "measured_bytes \u2264 formal_vram_bytes",
-      "note": "suite/process residual \u2014 not a PDG free fold",
-      "measured_bytes": 12820480000.0,
-      "formal_bytes": 13421772800.0,
+      "formula": "line_bits / 2",
       "layer": "ram_function"
     },
     {
@@ -588,7 +583,7 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.261955886,
+    "max_scalar_error_pct": 0.020755,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

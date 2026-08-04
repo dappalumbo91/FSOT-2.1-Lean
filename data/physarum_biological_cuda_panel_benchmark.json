@@ -1,20 +1,21 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T02:19:32.459973+00:00",
+  "generated_at": "2026-08-04T13:55:44.865045+00:00",
   "domain": "Physarum_Biological_CUDA_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\biological_cuda_cache.json",
-    "desktop_physarum"
+    "desktop_physarum",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "biological",
     "neural"
   ],
   "D_eff": 15,
-  "record_count": 10,
-  "observable_count": 10,
-  "scalar_record_count": 8,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 22,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.022236,
   "pooled_median_error_pct": 0.022236,
@@ -22,14 +23,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "biological_cuda_lab": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "Physarum polycephalum CUDA genomics"
+      "Physarum_Biological_CUDA_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_desktop_wiring_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -40,16 +41,16 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 10
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "desktop_wiring",
-      "name": "physarum_cuda",
+      "property": "depth_relay",
+      "name": "Physarum_Biological_CUDA_Panel_depth",
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 10
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -172,11 +173,260 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "desktop_physarum_cuda"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "longevity_consciousness_coupling",
+      "name": "Acipenser_gueldenstaedtii",
+      "computed": 414175.69027329,
+      "measured": 414045.24047921,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "genome_bp": 2389722506.0,
+      "longevity_quotient": 182736.18218822178,
+      "maximum_longevity_yrs": 46.0,
+      "consciousness_panel": false,
+      "eval_kind": "longevity_consciousness_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "quirk_longevity_coupling",
+      "name": "Acipenser_gueldenstaedtii",
+      "computed": -12318.96732376,
+      "measured": -12317.32397716,
+      "error_pct": 0.013342,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_longevity_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "longevity_consciousness_coupling",
+      "name": "Acipenser_oxyrinchus",
+      "computed": 1270580.02940159,
+      "measured": 1270179.84439052,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "genome_bp": 1862452108.0,
+      "longevity_quotient": 567132.53880532,
+      "maximum_longevity_yrs": 60.0,
+      "consciousness_panel": false,
+      "eval_kind": "longevity_consciousness_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "quirk_longevity_coupling",
+      "name": "Acipenser_oxyrinchus",
+      "computed": -38232.64298356,
+      "measured": -38227.54276029,
+      "error_pct": 0.013342,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_longevity_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Scolymastra_joubini",
+      "computed": 15003.335438,
+      "measured": 15000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04662",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Pinus_longaeva",
+      "computed": 5063.125599,
+      "measured": 5062.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04664",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Adansonia_digitata",
+      "computed": 2500.555906,
+      "measured": 2500.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04666",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Cinachyra_antarctica",
+      "computed": 1550.344662,
+      "measured": 1550.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04661",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "brain_energy_fraction",
+      "name": "Homo_sapiens",
+      "computed": 0.241676,
+      "measured": 0.2416,
+      "error_pct": 0.031506,
+      "eval_kind": "cross_species_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "order": null,
+      "reference": "Clarke_Sokoloff_1999_brain_20W",
+      "domain_display_name": "consciousness species multi",
+      "display_name": "Homo sapiens",
+      "scientific_measurement": {
+        "delta": 7.6e-05,
+        "delta_pct": 0.031457,
+        "effective_error_pct": 0.031457,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference": "Clarke_Sokoloff_1999_brain_20W"
+      },
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "brain_power_w",
+      "name": "Homo_sapiens",
+      "computed": 20.003601,
+      "measured": 20.0,
+      "error_pct": 0.018003,
+      "eval_kind": "cross_species_metabolic",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "brain_energy_fraction": 0.2416,
+      "domain_display_name": "consciousness species multi",
+      "display_name": "Homo sapiens",
+      "scientific_measurement": {
+        "delta": 0.003601,
+        "delta_pct": 0.018005,
+        "effective_error_pct": 0.018005,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0007,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 25.0,
+        "reference": "Human brain metabolic ~20 W (AnAge / literature 15\u201325 W)",
+        "observable_status": "consciousness_open"
+      },
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "total_metabolic_w",
+      "name": "Homo_sapiens",
+      "computed": 82.798407,
+      "measured": 82.78,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_live",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "anage_hagrid": "02789",
+      "domain_display_name": "consciousness species multi",
+      "display_name": "Homo sapiens",
+      "scientific_measurement": {
+        "delta": 0.018407,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "E_con_resting",
+      "name": "Homo_sapiens",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "brain_energy_fraction": 0.2416,
+      "eval_kind": "consciousness_information_floor",
+      "domain_display_name": "consciousness species multi",
+      "display_name": "Homo sapiens",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "megadeep_maximum_longevity_yrs",
+      "name": "Acipenser_brevirostrum",
+      "computed": 67.014898,
+      "measured": 67.0,
+      "error_pct": 0.022236,
+      "eval_kind": "megadeep_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 7907,
+      "source_panel": "Longevity_MegaDeep_NCBI_Panel",
+      "depth_relay_from": "Longevity_MegaDeep_NCBI_Panel"
+    },
+    {
+      "lab": "physarum_biological_cuda_panel_depth_lab",
+      "property": "megadeep_longevity_quotient",
+      "name": "Acipenser_brevirostrum",
+      "computed": 63529.69361401,
+      "measured": 63518.39432665,
+      "error_pct": 0.017789,
+      "consciousness_panel": false,
+      "eval_kind": "megadeep_quotient",
+      "source_panel": "Longevity_MegaDeep_NCBI_Panel",
+      "depth_relay_from": "Longevity_MegaDeep_NCBI_Panel"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.022236,
-    "max_scalar_error_pct": 0.022236,
+    "max_scalar_error_pct": 0.031506,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

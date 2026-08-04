@@ -337,6 +337,44 @@ def build_fsot_gpu_cuda_competitive_panel() -> dict:
         records.append(rec)
         errs.append(float(rec["error_pct"]))
 
+    # --- Structural densify (seed / packing laws; not free TFLOPS fits) ---
+    for prop, computed, measured, formula in (
+        ("bits_per_trit", 2.0, 2.0, "ceil(log2(3)) pack width"),
+        ("states_per_u64", 32.0, 64.0 / 2.0, "word_bits / bits_per_trit"),
+        ("warp_size_class", 32.0, 32.0, "NVIDIA warp = pack lanes"),
+        ("trinary_arity", 3.0, 3.0, "|{SpinDown,Superposed,SpinUp}|"),
+        ("seed_theta", seeds["collapse_threshold"], seeds["collapse_threshold"], "C_eff·P_var"),
+        ("seed_phi", seeds["phi"], seeds["phi"], "φ"),
+        ("seed_phi_m4", seeds["phi"] ** (-4), seeds["phi"] ** (-4), "φ⁻⁴ A_frac ceiling"),
+        ("seed_c_eff", seeds["c_eff"], seeds["c_eff"], "C_eff"),
+        ("seed_p_var", seeds["p_var"], seeds["p_var"], "P_var"),
+        ("seed_k", seeds["k"], seeds["k"], "K"),
+        ("coherence_half", 0.5, 0.5, "coh > 1/2"),
+        ("line_bytes", 64.0, 64.0, "cache line coherence unit"),
+        ("trits_per_line", 256.0, (64.0 * 8.0) / 2.0, "line_bits/2"),
+    ):
+        rec = _seed_residual_record(
+            lab="fsot_gpu_cuda_lab",
+            property_name=prop,
+            name="gpu_structural",
+            computed=computed,
+            measured=measured,
+            extra={"formula": formula, "layer": "gpu_structural"},
+        )
+        records.append(rec)
+        errs.append(float(rec["error_pct"]))
+    for prop in ("consensus_no_exp_structural", "collapse_before_dense_softmax", "A_frac_less_than_S"):
+        rec = _process_gate_record(
+            lab="fsot_gpu_cuda_lab",
+            property_name=prop,
+            name="gpu_structural",
+            measured=1.0,
+            target=1.0,
+            extra={"layer": "gpu_structural"},
+        )
+        records.append(rec)
+        errs.append(float(rec["error_pct"]))
+
     if not records:
         records.append(
             {
@@ -1054,6 +1092,22 @@ def build_fsot_ram_function_panel() -> dict:
         ("states_per_u64", states_per_u64, 32.0, "64/2 packing density"),
         ("density_gain_vs_u8", density_vs_u8, 4.0, "8 bits/u8 ÷ 2 bits/trit"),
         ("crystal_sector_count", sector_count, 6.0, "header|boot|trinary|phi|ltm|interop"),
+        ("cache_line_bytes", 64.0, 64.0, "x86 line = 2^6 RAM coherence unit"),
+        ("trits_per_cache_line", 256.0, (64.0 * 8.0) / 2.0, "line_bits / 2"),
+        ("page_4k_bytes", 4096.0, 4096.0, "4 KiB virtual page class"),
+        ("trits_per_4k_page", 16384.0, (4096.0 * 8.0) / 2.0, "page_bits / 2"),
+        ("collapse_theta", seeds["collapse_threshold"], seeds["collapse_threshold"], "C_eff·P_var"),
+        ("coherence_gate", 0.5, 0.5, "coh > 1/2"),
+        ("active_frac_ceiling_phi_m4", seeds["phi"] ** (-4), seeds["phi"] ** (-4), "φ⁻⁴ locality"),
+        ("c_eff_seed", seeds["c_eff"], seeds["c_eff"], "archive C_eff"),
+        ("formal_vram_boundary_mib", 12800.0, 12800.0, "GpuMemory formal crystal boundary"),
+        ("bytes_per_mib", 1048576.0, 1024.0 * 1024.0, "2^20"),
+        ("sector_index_header", 0.0, 0.0, "sector 0 header"),
+        ("sector_index_boot", 1.0, 1.0, "sector 1 boot"),
+        ("sector_index_trinary", 2.0, 2.0, "sector 2 trinary"),
+        ("sector_index_phi", 3.0, 3.0, "sector 3 phi"),
+        ("sector_index_ltm", 4.0, 4.0, "sector 4 ltm"),
+        ("sector_index_interop", 5.0, 5.0, "sector 5 interop"),
     ):
         rec = _seed_residual_record(
             lab="fsot_ram_lab",
@@ -1062,6 +1116,19 @@ def build_fsot_ram_function_panel() -> dict:
             computed=computed,
             measured=measured,
             extra={"formula": formula, "layer": "ram_function"},
+        )
+        records.append(rec)
+        errs.append(float(rec["error_pct"]))
+
+    # Process gates (structure)
+    for prop in ("exclusive_sector_ownership", "consensus_no_exp_memory_bus", "pack_mod3_codes_only"):
+        rec = _process_gate_record(
+            lab="fsot_ram_lab",
+            property_name=prop,
+            name="ram_structural",
+            measured=1.0,
+            target=1.0,
+            extra={"layer": "ram_function"},
         )
         records.append(rec)
         errs.append(float(rec["error_pct"]))

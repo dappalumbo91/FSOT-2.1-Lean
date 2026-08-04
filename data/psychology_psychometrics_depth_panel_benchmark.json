@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-03T23:20:47.100148+00:00",
+  "generated_at": "2026-08-04T13:55:38.780420+00:00",
   "domain": "Psychology_Psychometrics_Depth_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\psychology_psychometrics_cache.json",
-    "psychometrics_rct_literature_anchors"
+    "psychometrics_rct_literature_anchors",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -13,9 +14,9 @@
     "medical"
   ],
   "D_eff": 15,
-  "record_count": 12,
-  "observable_count": 12,
-  "scalar_record_count": 12,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 24,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.031506,
   "pooled_median_error_pct": 0.031506,
@@ -23,14 +24,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "psychology_psychometrics_depth_lab": {
-        "sota_typical_error_pct": 6.0,
-        "sota_model": "Psychometrics + RCT + cognition literature anchors"
+      "Psychology_Psychometrics_Depth_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_prediction_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -41,16 +42,16 @@
       "computed": 0.031506,
       "measured": 0.0,
       "error_pct": 0.031506,
-      "observable_count": 12
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_prediction",
-      "name": "psychology_psychometrics_depth_lab",
+      "property": "depth_relay",
+      "name": "Psychology_Psychometrics_Depth_Panel_depth",
       "computed": 0.031506,
       "measured": 0.0,
       "error_pct": 0.031506,
-      "observable_count": 12
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -197,11 +198,229 @@
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
       "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "longevity_consciousness_coupling",
+      "name": "Acipenser_gueldenstaedtii",
+      "computed": 414175.69027329,
+      "measured": 414045.24047921,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "genome_bp": 2389722506.0,
+      "longevity_quotient": 182736.18218822178,
+      "maximum_longevity_yrs": 46.0,
+      "consciousness_panel": false,
+      "eval_kind": "longevity_consciousness_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "quirk_longevity_coupling",
+      "name": "Acipenser_gueldenstaedtii",
+      "computed": -12318.96732376,
+      "measured": -12317.32397716,
+      "error_pct": 0.013342,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_longevity_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "longevity_consciousness_coupling",
+      "name": "Acipenser_oxyrinchus",
+      "computed": 1270580.02940159,
+      "measured": 1270179.84439052,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "genome_bp": 1862452108.0,
+      "longevity_quotient": 567132.53880532,
+      "maximum_longevity_yrs": 60.0,
+      "consciousness_panel": false,
+      "eval_kind": "longevity_consciousness_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "quirk_longevity_coupling",
+      "name": "Acipenser_oxyrinchus",
+      "computed": -38232.64298356,
+      "measured": -38227.54276029,
+      "error_pct": 0.013342,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_longevity_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Scolymastra_joubini",
+      "computed": 15003.335438,
+      "measured": 15000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04662",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Pinus_longaeva",
+      "computed": 5063.125599,
+      "measured": 5062.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04664",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Adansonia_digitata",
+      "computed": 2500.555906,
+      "measured": 2500.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04666",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Cinachyra_antarctica",
+      "computed": 1550.344662,
+      "measured": 1550.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04661",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "S_final",
+      "D_eff": 6,
+      "delta_psi": 0.2,
+      "recent_hits": 0,
+      "computed": 0.14806450291069925,
+      "measured": 0.14806450291069925,
+      "error_pct": 0.0,
+      "fertile": false,
+      "intelligence_score": 0.0,
+      "domain_display_name": "fic intelligence compressor",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Computational_Reasoning",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Computational_Reasoning"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "quirk_mod_species",
+      "name": "Homo_sapiens",
+      "computed": -0.67426191,
+      "measured": -0.67404954,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_effect",
+      "observed": true,
+      "comparison_class": "fsot_observer_derive",
+      "domain_display_name": "observer effect cross species",
+      "display_name": "Homo sapiens",
+      "scientific_measurement": {
+        "delta": -0.00021237,
+        "delta_pct": 0.031507,
+        "effective_error_pct": 0.031507,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Observer_Effect_Cross_Species_Panel",
+      "depth_relay_from": "Observer_Effect_Cross_Species_Panel"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "observer_channel_strength",
+      "name": "Homo_sapiens",
+      "computed": 0.90214,
+      "measured": 0.901667,
+      "error_pct": 0.05251,
+      "eval_kind": "observer_channel_derive",
+      "domain_display_name": "observer effect cross species",
+      "display_name": "Homo sapiens",
+      "scientific_measurement": {
+        "delta": 0.000473,
+        "delta_pct": 0.052458,
+        "effective_error_pct": 0.052458,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Observer_Effect_Cross_Species_Panel",
+      "depth_relay_from": "Observer_Effect_Cross_Species_Panel"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_panel_depth_lab",
+      "property": "yin_yang_balance",
+      "name": "Homo_sapiens",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "yang_quirk": 0.0,
+      "yin_quirk": 0.67404954,
+      "eval_kind": "yin_yang_duality",
+      "domain_display_name": "observer effect cross species",
+      "display_name": "Homo sapiens",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Observer_Effect_Cross_Species_Panel",
+      "depth_relay_from": "Observer_Effect_Cross_Species_Panel"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.031506,
-    "max_scalar_error_pct": 0.031506,
+    "max_scalar_error_pct": 0.05251,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

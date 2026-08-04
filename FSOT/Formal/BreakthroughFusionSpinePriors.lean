@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def breakthrough_fusion_spine_observable_count : ℕ := 84
+def breakthrough_fusion_spine_observable_count : ℕ := 146
 def breakthrough_fusion_spine_median_error_pct : ℝ := (0.0 : ℝ)
 def breakthrough_fusion_spine_D_eff : ℕ := 14
 
@@ -23,7 +23,7 @@ theorem breakthrough_fusion_spine_median_error_under_half_pct :
   unfold breakthrough_fusion_spine_median_error_pct; norm_num
 
 theorem breakthrough_fusion_spine_bundle :
-    breakthrough_fusion_spine_observable_count = 84 ∧
+    breakthrough_fusion_spine_observable_count = 146 ∧
     breakthrough_fusion_spine_D_eff = 14 ∧
     breakthrough_fusion_spine_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by

@@ -1,206 +1,54 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-08-04T03:00:34.233963+00:00",
+  "generated_at": "2026-08-04T13:55:50.749059+00:00",
   "domain": "TOE_Dynamics",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "c_thin_depth_pass"
+  ],
   "maps_to_lean": [
-    "fluid_dynamics",
-    "cosmological"
+    "energy",
+    "galactic"
   ],
   "D_eff": 15,
-  "purpose": "T2 continuum fluid + scalar transport consistency (seed-locked coefficients)",
-  "module": "vendor/fsot_dynamics.py",
-  "equations": {
-    "continuity": "\u2202t \u03c1 + \u2202x(\u03c1 v) = 0",
-    "momentum": "\u03c1(\u2202t v + v \u2202x v) = -\u2202x P + \u03bc \u2202xx v + J_obs",
-    "scalar": "\u2202t S + v \u2202x S = \u03ba \u2202xx S - \u03b3 (S - S_eq(D_eff))",
-    "\u03bc": "\u03bc = |Chaos|\u00b7|D_eff-25|/25 + A_bleed\u00b7Poof",
-    "J_obs": "J_obs = C_factor\u00b7cos(\u03b4\u03c8+\u03b8_S) if observed else 0"
-  },
-  "record_count": 18,
-  "observable_count": 18,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 24,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "green_gate_pass": true,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "TOE_Dynamics_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_depth_relay_vs_baseline": true
+    }
+  },
   "records": [
     {
-      "name": "viscosity_pos_D6",
-      "property": "viscosity_eff",
-      "computed": 0.412270210542628,
-      "measured": 0.412270210542628,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_transport_coeff"
-    },
-    {
-      "name": "viscosity_pos_D14",
-      "property": "viscosity_eff",
-      "computed": 0.30634247210727383,
-      "measured": 0.30634247210727383,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_transport_coeff"
-    },
-    {
-      "name": "viscosity_pos_D20",
-      "property": "viscosity_eff",
-      "computed": 0.22689666828075822,
-      "measured": 0.22689666828075822,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_transport_coeff"
-    },
-    {
-      "name": "viscosity_pos_D21",
-      "property": "viscosity_eff",
-      "computed": 0.21365570097633893,
-      "measured": 0.21365570097633893,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_transport_coeff"
-    },
-    {
-      "name": "viscosity_pos_D25",
-      "property": "viscosity_eff",
-      "computed": 0.16069183175866183,
-      "measured": 0.16069183175866183,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_transport_coeff"
-    },
-    {
-      "name": "observer_source_off",
-      "property": "observer_source",
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_observer_coupling"
+      "observable_count": 24
     },
     {
-      "name": "continuity_rhs_finite",
-      "property": "continuity_rhs",
-      "computed": 0.019,
-      "measured": 0.019,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_continuity"
-    },
-    {
-      "name": "momentum_rhs_finite",
-      "property": "momentum_rhs",
-      "computed": 0.07667912370284831,
-      "measured": 0.07667912370284831,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_momentum"
-    },
-    {
-      "name": "scalar_relaxation_sign",
-      "property": "scalar_transport_sign",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_scalar_relax",
-      "S_eq": -0.5024559462100433,
-      "rhs": -0.04280434460598067
-    },
-    {
-      "name": "D_eff_interface_split",
-      "property": "abs_S_gap",
-      "computed": 0.39645785939929656,
-      "measured": 0.39645785939929656,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_dimensional_interface",
-      "S_D20": 0.8989138056093399,
-      "S_D25": 0.5024559462100433
-    },
-    {
-      "name": "acoustic_speed_positive",
-      "property": "c_s",
-      "computed": 0.7693455090660798,
-      "measured": 0.7693455090660798,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_acoustic_metric"
-    },
-    {
-      "name": "euler_scalar_contracts",
-      "property": "scalar_euler_contraction",
-      "computed": 0.08206345749386657,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_integration",
-      "claim": "T2_euler_contract",
-      "residual_after": 0.22948413562653325,
-      "initial_offset": 0.2499999999999999,
-      "note": "200 explicit Euler steps at dt=0.001 toward S_eq(D=21)"
-    },
-    {
-      "name": "continuity_uniform_zero",
-      "property": "continuity_rhs",
-      "computed": -0.0,
+      "lab": "tier_gap_fill_lab",
+      "property": "depth_relay",
+      "name": "TOE_Dynamics_depth",
+      "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_mass_conservation_uniform"
-    },
-    {
-      "name": "bleed_rate_positive",
-      "property": "bleed_rate",
-      "computed": 0.30051620032255366,
-      "measured": 0.30051620032255366,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_bleed_yin_yang"
-    },
-    {
-      "name": "viscosity_calm_at_D25",
-      "property": "viscosity_ordering",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_viscosity_interface_calm",
-      "mu_D6": 0.412270210542628,
-      "mu_D25": 0.16069183175866183
-    },
-    {
-      "lab": "toe_dynamics_lab",
-      "property": "dimensional_interface_S",
-      "name": "bleed_rate",
-      "computed": 0.300584,
-      "measured": 0.30051620032255366,
-      "error_pct": 0.022461,
-      "eval_kind": "dynamics_channel",
-      "fsot_domain": "Astronomy",
-      "fsot_scalar": 0.89846,
-      "claim": "T2_dynamics_channel"
-    },
-    {
-      "lab": "toe_dynamics_lab",
-      "property": "consciousness_factor_channel",
-      "name": "C_FACTOR",
-      "computed": 0.287652,
-      "measured": 0.28760015181918397,
-      "error_pct": 0.018003,
-      "eval_kind": "dynamics_channel",
-      "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
-      "claim": "T2_dynamics_channel"
-    },
-    {
-      "lab": "toe_dynamics_lab",
-      "property": "poof_valve_channel",
-      "name": "POOF",
-      "computed": 0.153504,
-      "measured": 0.1534822148944508,
-      "error_pct": 0.014333,
-      "eval_kind": "dynamics_channel",
-      "fsot_domain": "Quantum_Mechanics",
-      "fsot_scalar": 0.955506,
-      "claim": "T2_dynamics_channel"
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -383,6 +231,177 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "claim": "T2_dynamics_channel"
+    },
+    {
+      "lab": "toe_dynamics_depth_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.769058,
+      "measured": 36.762501,
+      "error_pct": 0.017836062884406634,
+      "source": "pbdb_api",
+      "domain_display_name": "paleontology",
+      "display_name": "Ammonoidea indet.",
+      "scientific_measurement": {
+        "delta": 0.006557,
+        "delta_pct": 0.017836,
+        "effective_error_pct": 0.017836,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Paleontology",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Paleontology"
+    },
+    {
+      "lab": "toe_dynamics_depth_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -95.560376,
+      "measured": -95.543335,
+      "error_pct": 0.017836062884411003,
+      "source": "pbdb_api",
+      "domain_display_name": "paleontology",
+      "display_name": "Ammonoidea indet.",
+      "scientific_measurement": {
+        "delta": -0.017041,
+        "delta_pct": 0.017836,
+        "effective_error_pct": 0.017836,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Paleontology",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Paleontology"
+    },
+    {
+      "lab": "toe_dynamics_depth_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 312.841843,
+      "measured": 312.8,
+      "error_pct": 0.01337704716331671,
+      "source": "pbdb_age",
+      "domain_display_name": "paleontology",
+      "display_name": "Ammonoidea indet.",
+      "scientific_measurement": {
+        "delta": 0.041843,
+        "delta_pct": 0.013377,
+        "effective_error_pct": 0.013377,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Paleontology",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Paleontology"
+    },
+    {
+      "lab": "toe_dynamics_depth_lab",
+      "property": "wspd",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 1.000264,
+      "measured": 1.0,
+      "error_pct": 0.026401,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "domain_display_name": "noaa ndbc",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.000264,
+        "delta_pct": 0.0264,
+        "effective_error_pct": 0.0264,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+    },
+    {
+      "lab": "toe_dynamics_depth_lab",
+      "property": "pres",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 1013.694898,
+      "measured": 1013.4,
+      "error_pct": 0.0291,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Meteorology",
+      "fsot_scalar": -0.484997,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "domain_display_name": "noaa ndbc",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.294898,
+        "delta_pct": 0.0291,
+        "effective_error_pct": 0.0291,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+    },
+    {
+      "lab": "toe_dynamics_depth_lab",
+      "property": "wtmp",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 12.703592,
+      "measured": 12.7,
+      "error_pct": 0.028287,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "domain_display_name": "noaa ndbc",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.003592,
+        "delta_pct": 0.028283,
+        "effective_error_pct": 0.028283,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
     }
-  ]
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0291,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

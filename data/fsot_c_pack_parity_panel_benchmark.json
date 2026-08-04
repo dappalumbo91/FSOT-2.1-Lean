@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T13:48:36.453600+00:00",
+  "generated_at": "2026-08-04T13:56:35.233719+00:00",
   "domain": "FSOT_C_Pack_Parity_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -12,9 +12,9 @@
     "electron"
   ],
   "D_eff": 10,
-  "record_count": 4,
-  "observable_count": 4,
-  "scalar_record_count": 4,
+  "record_count": 23,
+  "observable_count": 23,
+  "scalar_record_count": 22,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -40,7 +40,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 4
+      "observable_count": 23
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +49,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 4
+      "observable_count": 23
     }
   ],
   "material_records": [
@@ -93,6 +93,199 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "64/2"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "bits_per_trit",
+      "name": "c_structural",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "ceil(log2(3)) packing code width"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "states_per_u64",
+      "name": "c_structural",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "word_bits / bits_per_trit"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "trinary_arity",
+      "name": "c_structural",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "|{SpinDown,Superposed,SpinUp}|"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "coherence_gate",
+      "name": "c_structural",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2 speaker eligibility"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "collapse_theta_seed",
+      "name": "c_structural",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "c_eff_seed",
+      "name": "c_structural",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive C_eff"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "p_var_seed",
+      "name": "c_structural",
+      "computed": 0.9579871226722757,
+      "measured": 0.9579871226722757,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive P_var"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "phi_seed",
+      "name": "c_structural",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive \u03c6"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "k_seed",
+      "name": "c_structural",
+      "computed": 0.4202216641606967,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive K"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "psi_con_seed",
+      "name": "c_structural",
+      "computed": 0.6321205588285577,
+      "measured": 0.6321205588285577,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive \u03a8_con"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "active_frac_ceiling_phi_m4",
+      "name": "c_structural",
+      "computed": 0.14589803375031543,
+      "measured": 0.14589803375031543,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6\u207b\u2074 locality ceiling"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "line_bytes_structural",
+      "name": "c_structural",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "x86 line = 2^6"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "trits_per_cache_line",
+      "name": "c_structural",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "line_bits / 2"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "pack_word_golden_identity",
+      "name": "c_structural",
+      "computed": 5.270498306774157e+18,
+      "measured": 5.270498306774157e+18,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "0..31 mod3 pack word"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "bytes_per_pack_word",
+      "name": "c_structural",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "u64 pack unit"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "sectors_in_crystal",
+      "name": "c_structural",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "header|boot|trinary|phi|ltm|interop"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "consensus_no_exp",
+      "name": "c_structural",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "exclusive_sector_write",
+      "name": "c_structural",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold"
+    },
+    {
+      "lab": "fsot_c_parity_lab",
+      "property": "c_source_present",
+      "name": "c_structural",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold"
     }
   ],
   "margin_summary": {

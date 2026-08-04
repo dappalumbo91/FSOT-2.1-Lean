@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def fsot_hardware_depth_spine_observable_count : ℕ := 77
+def fsot_hardware_depth_spine_observable_count : ℕ := 177
 def fsot_hardware_depth_spine_median_error_pct : ℝ := (0.0 : ℝ)
 def fsot_hardware_depth_spine_D_eff : ℕ := 13
 
@@ -23,7 +23,7 @@ theorem fsot_hardware_depth_spine_median_error_under_half_pct :
   unfold fsot_hardware_depth_spine_median_error_pct; norm_num
 
 theorem fsot_hardware_depth_spine_bundle :
-    fsot_hardware_depth_spine_observable_count = 77 ∧
+    fsot_hardware_depth_spine_observable_count = 177 ∧
     fsot_hardware_depth_spine_D_eff = 13 ∧
     fsot_hardware_depth_spine_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by

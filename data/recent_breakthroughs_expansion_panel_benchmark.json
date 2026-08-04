@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T13:48:35.162360+00:00",
+  "generated_at": "2026-08-04T13:56:35.711688+00:00",
   "domain": "Recent_Breakthroughs_Expansion_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -15,9 +15,9 @@
     "mathematical"
   ],
   "D_eff": 13,
-  "record_count": 27,
-  "observable_count": 27,
-  "scalar_record_count": 26,
+  "record_count": 81,
+  "observable_count": 81,
+  "scalar_record_count": 79,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -43,7 +43,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 27
+      "observable_count": 81
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +52,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 27
+      "observable_count": 81
     }
   ],
   "material_records": [
@@ -326,6 +326,552 @@
       "lab": "breakthrough_lab",
       "property": "qce_vs_elm_continuous",
       "name": "QCE",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dt_fusion",
+      "computed": 15.0,
+      "measured": 15.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coulomb barrier peak class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dt_fusion",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "peak barn class identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dd_fusion",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coulomb barrier peak class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dd_fusion",
+      "computed": 0.1,
+      "measured": 0.1,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "peak barn class identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dhe3_fusion",
+      "computed": 60.0,
+      "measured": 60.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coulomb barrier peak class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dhe3_fusion",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "peak barn class identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "coulomb_peak_kev",
+      "name": "p_b11_fusion",
+      "computed": 600.0,
+      "measured": 600.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coulomb barrier peak class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "cross_section_peak_barn",
+      "name": "p_b11_fusion",
+      "computed": 0.01,
+      "measured": 0.01,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "peak barn class identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_q_factor",
+      "name": "NIF_2022",
+      "computed": 1.5,
+      "measured": 1.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_yield_mj",
+      "name": "NIF_2022",
+      "computed": 3.15,
+      "measured": 3.15,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial yield identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_driver_mj",
+      "name": "NIF_2022",
+      "computed": 2.05,
+      "measured": 2.05,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "driver energy identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_yield_over_driver",
+      "name": "NIF_2022",
+      "computed": 1.5365853658536586,
+      "measured": 1.5365853658536586,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "yield_mj / driver_mj"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_NIF_2022_ignited_consistent",
+      "name": "NIF_2022",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_q_factor",
+      "name": "NIF_2021",
+      "computed": 0.7,
+      "measured": 0.7,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_yield_mj",
+      "name": "NIF_2021",
+      "computed": 1.3,
+      "measured": 1.3,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial yield identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_driver_mj",
+      "name": "NIF_2021",
+      "computed": 1.9,
+      "measured": 1.9,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "driver energy identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_yield_over_driver",
+      "name": "NIF_2021",
+      "computed": 0.6842105263157895,
+      "measured": 0.6842105263157895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "yield_mj / driver_mj"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_NIF_2021_ignited_consistent",
+      "name": "NIF_2021",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_q_factor",
+      "name": "OMEGA_direct",
+      "computed": 0.01,
+      "measured": 0.01,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_yield_mj",
+      "name": "OMEGA_direct",
+      "computed": 0.025,
+      "measured": 0.025,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial yield identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_driver_mj",
+      "name": "OMEGA_direct",
+      "computed": 30.0,
+      "measured": 30.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "driver energy identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_yield_over_driver",
+      "name": "OMEGA_direct",
+      "computed": 0.0008333333333333334,
+      "measured": 0.0008333333333333334,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "yield_mj / driver_mj"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_OMEGA_direct_ignited_consistent",
+      "name": "OMEGA_direct",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_q_factor",
+      "name": "NIF_hohlraum_baseline",
+      "computed": 0.05,
+      "measured": 0.05,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_yield_mj",
+      "name": "NIF_hohlraum_baseline",
+      "computed": 0.05,
+      "measured": 0.05,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "inertial yield identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_driver_mj",
+      "name": "NIF_hohlraum_baseline",
+      "computed": 1.8,
+      "measured": 1.8,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "driver energy identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_yield_over_driver",
+      "name": "NIF_hohlraum_baseline",
+      "computed": 0.02777777777777778,
+      "measured": 0.02777777777777778,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "yield_mj / driver_mj"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "inertial_NIF_hohlraum_baseline_ignited_consistent",
+      "name": "NIF_hohlraum_baseline",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "power_balance_temp_kev",
+      "name": "dt_bremsstrahlung_crossover",
+      "computed": 4.3,
+      "measured": 4.3,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "power-balance temperature class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "power_balance_temp_kev",
+      "name": "dt_optimum_temp",
+      "computed": 15.0,
+      "measured": 15.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "power-balance temperature class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "power_balance_temp_kev",
+      "name": "dd_optimum_temp",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "power-balance temperature class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_temp_kev",
+      "name": "JET_1997",
+      "computed": 30.0,
+      "measured": 30.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility temp class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_tau_s",
+      "name": "JET_1997",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "confinement / pulse duration class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_temp_kev",
+      "name": "TFTR_1994",
+      "computed": 25.0,
+      "measured": 25.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility temp class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_tau_s",
+      "name": "TFTR_1994",
+      "computed": 0.8,
+      "measured": 0.8,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "confinement / pulse duration class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_temp_kev",
+      "name": "EAST_2023",
+      "computed": 15.0,
+      "measured": 15.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility temp class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_tau_s",
+      "name": "EAST_2023",
+      "computed": 400.0,
+      "measured": 400.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "confinement / pulse duration class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_temp_kev",
+      "name": "ITER_design",
+      "computed": 150.0,
+      "measured": 150.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility temp class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_tau_s",
+      "name": "ITER_design",
+      "computed": 3.7,
+      "measured": 3.7,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "confinement / pulse duration class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_temp_kev",
+      "name": "SPARC_design",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility temp class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_tau_s",
+      "name": "SPARC_design",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "confinement / pulse duration class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_temp_kev",
+      "name": "W7X_steady",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility temp class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_tau_s",
+      "name": "W7X_steady",
+      "computed": 0.2,
+      "measured": 0.2,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "confinement / pulse duration class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_temp_kev",
+      "name": "JT60SA_design",
+      "computed": 40.0,
+      "measured": 40.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility temp class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_tau_s",
+      "name": "JT60SA_design",
+      "computed": 1.5,
+      "measured": 1.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "confinement / pulse duration class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "lawson_ignition_over_breakeven",
+      "name": "lawson",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "3e21/3e20 = 10"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "seed_theta",
+      "name": "seed_invariant",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "seed_phi",
+      "name": "seed_invariant",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "seed_phi_m4",
+      "name": "seed_invariant",
+      "computed": 0.14589803375031543,
+      "measured": 0.14589803375031543,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6\u207b\u2074 active-fraction ceiling"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "seed_coherence_half",
+      "name": "seed_invariant",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "seed_elm_bound_fifth",
+      "name": "seed_invariant",
+      "computed": 0.2,
+      "measured": 0.2,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "1/5 ELM energy dump upper"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "seed_gentle_floor_four_fifths",
+      "name": "seed_invariant",
+      "computed": 0.8,
+      "measured": 0.8,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "4/5 continuous path floor"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "residual_gate_half_pct_spirit",
+      "name": "FSOT_green",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "literature_identity_not_pdg_fold",
+      "name": "honesty",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,

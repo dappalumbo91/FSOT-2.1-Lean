@@ -1,7 +1,11 @@
 {
-  "generated_at": "2026-08-04T05:21:25.751910+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T13:55:34.362400+00:00",
+  "domain": "Rust_Lean_Bridge",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "vendor/rust_lean_bridge/rust_lean_bridge_summary.json"
+    "vendor/rust_lean_bridge/rust_lean_bridge_summary.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -9,72 +13,434 @@
     "neural"
   ],
   "D_eff": 8,
-  "record_count": 9,
-  "observable_count": 9,
-  "median_error_pct": 0.0,
+  "record_count": 21,
+  "observable_count": 21,
+  "scalar_record_count": 21,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.013342,
+  "pooled_median_error_pct": 0.013342,
+  "headline_median_error_pct": 0.013342,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Rust_Lean_Bridge_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_depth_relay_vs_baseline": true
+    }
+  },
   "records": [
     {
-      "lab": "rust_lean_bridge",
-      "property": "boot_d_eff",
-      "computed": 8.0,
-      "measured": 8,
-      "error_pct": 0.0
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.013342,
+      "measured": 0.0,
+      "error_pct": 0.013342,
+      "observable_count": 21
     },
     {
-      "lab": "rust_lean_bridge",
-      "property": "constant_count",
-      "computed": 16,
-      "measured": 16,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "rust_lean_bridge",
-      "property": "K_matches_atlas",
-      "computed": 1,
-      "measured": 1,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "rust_lean_bridge",
-      "property": "boot_scalar_positive",
-      "computed": 1,
-      "measured": 1,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "rust_lean_bridge",
-      "property": "boot_scalar",
-      "computed": 0.09928895626861721,
-      "measured": 0.09928895626861721,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "rust_lean_bridge",
-      "property": "no_std",
-      "computed": 1,
-      "measured": 1,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "rust_lean_bridge",
-      "property": "requires_lean_bridge",
-      "computed": 1,
-      "measured": 1,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "rust_lean_bridge",
-      "property": "boot_observed",
-      "computed": 1,
-      "measured": 1,
-      "error_pct": 0.0
-    },
-    {
-      "lab": "rust_lean_bridge",
-      "property": "boot_delta_psi",
-      "computed": 0.7,
-      "measured": 0.7,
-      "error_pct": 0.0
+      "lab": "tier_gap_fill_lab",
+      "property": "depth_relay",
+      "name": "Rust_Lean_Bridge_depth",
+      "computed": 0.013342,
+      "measured": 0.0,
+      "error_pct": 0.013342,
+      "observable_count": 21
     }
-  ]
+  ],
+  "material_records": [
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "S_final",
+      "D_eff": 6,
+      "delta_psi": 0.2,
+      "recent_hits": 0,
+      "computed": 0.14806450291069925,
+      "measured": 0.14806450291069925,
+      "error_pct": 0.0,
+      "fertile": false,
+      "intelligence_score": 0.0,
+      "domain_display_name": "fic intelligence compressor",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Computational_Reasoning",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Computational_Reasoning"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "longevity_consciousness_coupling",
+      "name": "Acipenser_gueldenstaedtii",
+      "computed": 414175.69027329,
+      "measured": 414045.24047921,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "genome_bp": 2389722506.0,
+      "longevity_quotient": 182736.18218822178,
+      "maximum_longevity_yrs": 46.0,
+      "consciousness_panel": false,
+      "eval_kind": "longevity_consciousness_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "quirk_longevity_coupling",
+      "name": "Acipenser_gueldenstaedtii",
+      "computed": -12318.96732376,
+      "measured": -12317.32397716,
+      "error_pct": 0.013342,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_longevity_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "longevity_consciousness_coupling",
+      "name": "Acipenser_oxyrinchus",
+      "computed": 1270580.02940159,
+      "measured": 1270179.84439052,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "genome_bp": 1862452108.0,
+      "longevity_quotient": 567132.53880532,
+      "maximum_longevity_yrs": 60.0,
+      "consciousness_panel": false,
+      "eval_kind": "longevity_consciousness_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "quirk_longevity_coupling",
+      "name": "Acipenser_oxyrinchus",
+      "computed": -38232.64298356,
+      "measured": -38227.54276029,
+      "error_pct": 0.013342,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_longevity_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Scolymastra_joubini",
+      "computed": 15003.335438,
+      "measured": 15000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04662",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Pinus_longaeva",
+      "computed": 5063.125599,
+      "measured": 5062.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04664",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Adansonia_digitata",
+      "computed": 2500.555906,
+      "measured": 2500.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04666",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Cinachyra_antarctica",
+      "computed": 1550.344662,
+      "measured": 1550.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04661",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "seeds_hash_hex",
+      "computed": "0xc627292ec4eb3b90",
+      "measured": "0xc627292ec4eb3b90",
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "seeds hash hex",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Trinary_OS_Tier_E",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_Tier_E"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "panel_S_hex",
+      "computed": "0x3fee69c97260701a",
+      "measured": "0x3fee69c97260701a",
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "panel S hex",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Trinary_OS_Tier_E",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_Tier_E"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "hello_file_size",
+      "computed": 264,
+      "measured": 264,
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "hello file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Trinary_OS_Tier_E",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_Tier_E"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "call_ret_file_size",
+      "computed": 312,
+      "measured": 312,
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "call ret file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Trinary_OS_Tier_E",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_Tier_E"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "pack_mean",
+      "name": "habitat_rust",
+      "computed": 0.535379,
+      "measured": 0.535282682851862,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "desktop_living_fsot_habitat_rust",
+      "source_panel": "Living_FSOT_Hardware_Panel",
+      "depth_relay_from": "Living_FSOT_Hardware_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "generation",
+      "name": "habitat_rust",
+      "computed": 90.013291,
+      "measured": 90.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_living_fsot_habitat_rust",
+      "source_panel": "Living_FSOT_Hardware_Panel",
+      "depth_relay_from": "Living_FSOT_Hardware_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "organ_accuracy",
+      "name": "elite-g90-0_cognitive",
+      "computed": 0.968011,
+      "measured": 0.9677061561155675,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_living_fsot_habitat_rust",
+      "weak": false,
+      "source_panel": "Living_FSOT_Hardware_Panel",
+      "depth_relay_from": "Living_FSOT_Hardware_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "organ_threshold",
+      "name": "elite-g90-0_cognitive",
+      "computed": 0.620092,
+      "measured": 0.62,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_living_fsot_habitat_rust",
+      "weak": false,
+      "source_panel": "Living_FSOT_Hardware_Panel",
+      "depth_relay_from": "Living_FSOT_Hardware_Panel"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "S_positive",
+      "name": "Genesis 1:1",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "domain_display_name": "omni theory genesis",
+      "display_name": "Genesis 1:1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Omni_Theory_Genesis",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Omni_Theory_Genesis"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "D_eff",
+      "name": "Genesis 1:1",
+      "computed": 25.0,
+      "measured": 25.0,
+      "error_pct": 0.0,
+      "domain_display_name": "omni theory genesis",
+      "display_name": "Genesis 1:1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Omni_Theory_Genesis",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Omni_Theory_Genesis"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "S_positive",
+      "name": "Genesis 1:2",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "domain_display_name": "omni theory genesis",
+      "display_name": "Genesis 1:2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Omni_Theory_Genesis",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Omni_Theory_Genesis"
+    },
+    {
+      "lab": "rust_lean_bridge_depth_lab",
+      "property": "D_eff",
+      "name": "Genesis 1:2",
+      "computed": 24.5,
+      "measured": 24.5,
+      "error_pct": 0.0,
+      "domain_display_name": "omni theory genesis",
+      "display_name": "Genesis 1:2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Omni_Theory_Genesis",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Omni_Theory_Genesis"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.013342,
+    "max_scalar_error_pct": 0.031506,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

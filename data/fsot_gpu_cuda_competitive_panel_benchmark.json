@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T05:09:13.231164+00:00",
+  "generated_at": "2026-08-04T13:56:34.024977+00:00",
   "domain": "FSOT_GPU_CUDA_Competitive_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -17,9 +17,9 @@
     "energy"
   ],
   "D_eff": 12,
-  "record_count": 17,
-  "observable_count": 17,
-  "scalar_record_count": 16,
+  "record_count": 33,
+  "observable_count": 33,
+  "scalar_record_count": 32,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -45,7 +45,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 17
+      "observable_count": 33
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -54,7 +54,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 17
+      "observable_count": 33
     }
   ],
   "material_records": [
@@ -263,6 +263,185 @@
       "formula": "process_gate_vs_target",
       "note": "suite/process residual \u2014 not a PDG free fold",
       "source": "results/competitive/long_seq_and_norm.json"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "bits_per_trit",
+      "name": "gpu_structural",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "ceil(log2(3)) pack width",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "states_per_u64",
+      "name": "gpu_structural",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "word_bits / bits_per_trit",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "warp_size_class",
+      "name": "gpu_structural",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "NVIDIA warp = pack lanes",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "trinary_arity",
+      "name": "gpu_structural",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "|{SpinDown,Superposed,SpinUp}|",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "seed_theta",
+      "name": "gpu_structural",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "seed_phi",
+      "name": "gpu_structural",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "seed_phi_m4",
+      "name": "gpu_structural",
+      "computed": 0.14589803375031543,
+      "measured": 0.14589803375031543,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6\u207b\u2074 A_frac ceiling",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "seed_c_eff",
+      "name": "gpu_structural",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "seed_p_var",
+      "name": "gpu_structural",
+      "computed": 0.9579871226722757,
+      "measured": 0.9579871226722757,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "P_var",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "seed_k",
+      "name": "gpu_structural",
+      "computed": 0.4202216641606967,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "K",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "coherence_half",
+      "name": "gpu_structural",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "line_bytes",
+      "name": "gpu_structural",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "cache line coherence unit",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "trits_per_line",
+      "name": "gpu_structural",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "line_bits/2",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "consensus_no_exp_structural",
+      "name": "gpu_structural",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "collapse_before_dense_softmax",
+      "name": "gpu_structural",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "layer": "gpu_structural"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "A_frac_less_than_S",
+      "name": "gpu_structural",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "layer": "gpu_structural"
     }
   ],
   "margin_summary": {

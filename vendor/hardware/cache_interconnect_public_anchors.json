@@ -1,26 +1,97 @@
 {
-  "source": "Industry x86/AMD64 structural defaults + FSOT packing laws; not SKU microbench free-fits",
+  "source": "Industry x86/AMD64/ARM structural defaults + FSOT packing laws; not SKU microbench free-fits",
   "cache_levels": [
     {"id": "L1D", "size_kb": 32, "assoc": 8, "line_bytes": 64, "latency_cycles_class": 4},
     {"id": "L1I", "size_kb": 32, "assoc": 8, "line_bytes": 64, "latency_cycles_class": 4},
     {"id": "L2", "size_kb": 1024, "assoc": 8, "line_bytes": 64, "latency_cycles_class": 14},
-    {"id": "L3", "size_mb": 32, "assoc": 16, "line_bytes": 64, "latency_cycles_class": 50}
+    {"id": "L3", "size_mb": 32, "assoc": 16, "line_bytes": 64, "latency_cycles_class": 50},
+    {"id": "L3_sku_16mb", "size_mb": 16, "assoc": 16, "line_bytes": 64, "latency_cycles_class": 45},
+    {"id": "L3_sku_64mb", "size_mb": 64, "assoc": 16, "line_bytes": 64, "latency_cycles_class": 55}
   ],
   "tlb_pages": [
     {"id": "page_4k", "bytes": 4096},
+    {"id": "page_64k", "bytes": 65536},
     {"id": "page_2m", "bytes": 2097152},
     {"id": "page_1g", "bytes": 1073741824}
   ],
+  "mesi_coherence_states": [
+    {"id": "M", "name": "Modified", "exclusive": true, "dirty": true},
+    {"id": "E", "name": "Exclusive", "exclusive": true, "dirty": false},
+    {"id": "S", "name": "Shared", "exclusive": false, "dirty": false},
+    {"id": "I", "name": "Invalid", "exclusive": false, "dirty": false}
+  ],
+  "moesi_extra": [
+    {"id": "O", "name": "Owned", "exclusive": false, "dirty": true}
+  ],
   "interconnect": [
+    {"id": "pcie3_x1_gt_s", "gt_s": 8.0, "lanes": 1},
+    {"id": "pcie3_x4_gt_s", "gt_s": 8.0, "lanes": 4},
+    {"id": "pcie3_x8_gt_s", "gt_s": 8.0, "lanes": 8},
     {"id": "pcie3_x16_gt_s", "gt_s": 8.0, "lanes": 16},
+    {"id": "pcie4_x4_gt_s", "gt_s": 16.0, "lanes": 4},
     {"id": "pcie4_x16_gt_s", "gt_s": 16.0, "lanes": 16},
+    {"id": "pcie5_x8_gt_s", "gt_s": 32.0, "lanes": 8},
     {"id": "pcie5_x16_gt_s", "gt_s": 32.0, "lanes": 16},
+    {"id": "pcie6_x16_gt_s", "gt_s": 64.0, "lanes": 16},
+    {"id": "uart_9600", "baud": 9600},
     {"id": "uart_115200", "baud": 115200},
     {"id": "uart_921600", "baud": 921600},
-    {"id": "espnow_2_4ghz", "freq_ghz": 2.4}
+    {"id": "uart_3000000", "baud": 3000000},
+    {"id": "espnow_2_4ghz", "freq_ghz": 2.4},
+    {"id": "wifi_5ghz_class", "freq_ghz": 5.0},
+    {"id": "ble_2_4ghz", "freq_ghz": 2.4}
   ],
   "dram_classes": [
     {"id": "ddr4_dimm_class_gb", "capacity_gb": 16},
-    {"id": "ddr5_dimm_class_gb", "capacity_gb": 32}
+    {"id": "ddr4_dimm_32_gb", "capacity_gb": 32},
+    {"id": "ddr5_dimm_class_gb", "capacity_gb": 32},
+    {"id": "ddr5_dimm_64_gb", "capacity_gb": 64},
+    {"id": "lpddr5_class_gb", "capacity_gb": 8}
+  ],
+  "dram_transfer_rates_mt_s": [
+    {"id": "ddr4_2400", "mt_s": 2400},
+    {"id": "ddr4_3200", "mt_s": 3200},
+    {"id": "ddr5_4800", "mt_s": 4800},
+    {"id": "ddr5_5600", "mt_s": 5600},
+    {"id": "ddr5_6400", "mt_s": 6400}
+  ],
+  "simd_vector_widths_bits": [
+    {"id": "sse_128", "bits": 128},
+    {"id": "avx_256", "bits": 256},
+    {"id": "avx512_512", "bits": 512},
+    {"id": "neon_128", "bits": 128},
+    {"id": "sve_scalable_min", "bits": 128}
+  ],
+  "axi_bus_widths_bits": [
+    {"id": "axi32", "bits": 32},
+    {"id": "axi64", "bits": 64},
+    {"id": "axi128", "bits": 128},
+    {"id": "axi256", "bits": 256},
+    {"id": "axi512", "bits": 512}
+  ],
+  "numa_topology_class": [
+    {"id": "single_socket", "nodes": 1},
+    {"id": "dual_socket", "nodes": 2},
+    {"id": "quad_socket", "nodes": 4}
+  ],
+  "sector_layout": [
+    {"id": "header", "index": 0},
+    {"id": "boot", "index": 1},
+    {"id": "trinary", "index": 2},
+    {"id": "phi", "index": 3},
+    {"id": "ltm", "index": 4},
+    {"id": "interop", "index": 5}
+  ],
+  "prefetch_distance_lines": [
+    {"id": "stream_1", "lines": 1},
+    {"id": "stream_2", "lines": 2},
+    {"id": "stream_4", "lines": 4},
+    {"id": "stream_8", "lines": 8}
+  ],
+  "store_buffer_depth_class": [
+    {"id": "sb_16", "entries": 16},
+    {"id": "sb_32", "entries": 32},
+    {"id": "sb_56", "entries": 56},
+    {"id": "sb_64", "entries": 64}
   ]
 }

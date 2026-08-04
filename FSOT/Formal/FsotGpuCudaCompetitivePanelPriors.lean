@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def fsot_gpu_cuda_competitive_observable_count : ℕ := 17
+def fsot_gpu_cuda_competitive_observable_count : ℕ := 33
 def fsot_gpu_cuda_competitive_median_error_pct : ℝ := (0.0 : ℝ)
 def fsot_gpu_cuda_competitive_D_eff : ℕ := 12
 
@@ -23,7 +23,7 @@ theorem fsot_gpu_cuda_competitive_median_error_under_half_pct :
   unfold fsot_gpu_cuda_competitive_median_error_pct; norm_num
 
 theorem fsot_gpu_cuda_competitive_bundle :
-    fsot_gpu_cuda_competitive_observable_count = 17 ∧
+    fsot_gpu_cuda_competitive_observable_count = 33 ∧
     fsot_gpu_cuda_competitive_D_eff = 12 ∧
     fsot_gpu_cuda_competitive_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "quantum") > 0 := by

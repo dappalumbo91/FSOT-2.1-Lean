@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-16T13:42:50.459108+00:00",
+  "generated_at": "2026-08-04T13:55:49.071237+00:00",
   "domain": "Zebrafish_Longevity_Genetics_Coupling_Panel",
-  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "tier94_longevity",
     "tier95_zebrahub_tracks",
-    "Danio rerio"
+    "Danio rerio",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "biological",
@@ -14,24 +15,24 @@
     "consciousness"
   ],
   "D_eff": 22,
-  "record_count": 15,
-  "observable_count": 15,
-  "scalar_record_count": 15,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 24,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.013342,
-  "pooled_median_error_pct": 0.013342,
-  "headline_median_error_pct": 0.013342,
+  "median_error_pct": 0.014453500000000001,
+  "pooled_median_error_pct": 0.014453500000000001,
+  "headline_median_error_pct": 0.015565,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "zebrafish_coupling": {
-        "sota_typical_error_pct": 11.0,
-        "sota_model": "AlphaFold static structure without developmental FSOT coupling"
+      "Zebrafish_Longevity_Genetics_Coupling_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_longevity_development_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -39,19 +40,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.013342,
+      "computed": 0.014454,
       "measured": 0.0,
-      "error_pct": 0.013342,
-      "observable_count": 15
+      "error_pct": 0.014453500000000001,
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "longevity_development",
-      "name": "zebrafish_coupling",
-      "computed": 0.013342,
+      "property": "depth_relay",
+      "name": "Zebrafish_Longevity_Genetics_Coupling_Panel_depth",
+      "computed": 0.015565,
       "measured": 0.0,
-      "error_pct": 0.013341750231115378,
-      "observable_count": 15
+      "error_pct": 0.015565,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -209,11 +210,133 @@
       "error_pct": 0.015565,
       "alphafold_bridge_note": "FSOT developmental manifold vs AF2 static structure",
       "eval_kind": "alphafold_exceed_scaffold"
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_panel_depth_lab",
+      "property": "megadeep_maximum_longevity_yrs",
+      "name": "Acipenser_brevirostrum",
+      "computed": 67.014898,
+      "measured": 67.0,
+      "error_pct": 0.022236,
+      "eval_kind": "megadeep_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 7907,
+      "source_panel": "Longevity_MegaDeep_NCBI_Panel",
+      "depth_relay_from": "Longevity_MegaDeep_NCBI_Panel"
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_panel_depth_lab",
+      "property": "megadeep_longevity_quotient",
+      "name": "Acipenser_brevirostrum",
+      "computed": 63529.69361401,
+      "measured": 63518.39432665,
+      "error_pct": 0.017789,
+      "consciousness_panel": false,
+      "eval_kind": "megadeep_quotient",
+      "source_panel": "Longevity_MegaDeep_NCBI_Panel",
+      "depth_relay_from": "Longevity_MegaDeep_NCBI_Panel"
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_panel_depth_lab",
+      "property": "megadeep_maximum_longevity_yrs",
+      "name": "Acipenser_dabryanus",
+      "computed": 100.022236,
+      "measured": 100.0,
+      "error_pct": 0.022236,
+      "eval_kind": "megadeep_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 62061,
+      "source_panel": "Longevity_MegaDeep_NCBI_Panel",
+      "depth_relay_from": "Longevity_MegaDeep_NCBI_Panel"
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_panel_depth_lab",
+      "property": "megadeep_longevity_quotient",
+      "name": "Acipenser_dabryanus",
+      "computed": 17782.79520383,
+      "measured": 17779.63238497,
+      "error_pct": 0.017789,
+      "consciousness_panel": false,
+      "eval_kind": "megadeep_quotient",
+      "source_panel": "Longevity_MegaDeep_NCBI_Panel",
+      "depth_relay_from": "Longevity_MegaDeep_NCBI_Panel"
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_panel_depth_lab",
+      "property": "longevity_consciousness_coupling",
+      "name": "Acipenser_gueldenstaedtii",
+      "computed": 414175.69027329,
+      "measured": 414045.24047921,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "genome_bp": 2389722506.0,
+      "longevity_quotient": 182736.18218822178,
+      "maximum_longevity_yrs": 46.0,
+      "consciousness_panel": false,
+      "eval_kind": "longevity_consciousness_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_panel_depth_lab",
+      "property": "quirk_longevity_coupling",
+      "name": "Acipenser_gueldenstaedtii",
+      "computed": -12318.96732376,
+      "measured": -12317.32397716,
+      "error_pct": 0.013342,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_longevity_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_panel_depth_lab",
+      "property": "longevity_consciousness_coupling",
+      "name": "Acipenser_oxyrinchus",
+      "computed": 1270580.02940159,
+      "measured": 1270179.84439052,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "genome_bp": 1862452108.0,
+      "longevity_quotient": 567132.53880532,
+      "maximum_longevity_yrs": 60.0,
+      "consciousness_panel": false,
+      "eval_kind": "longevity_consciousness_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_panel_depth_lab",
+      "property": "quirk_longevity_coupling",
+      "name": "Acipenser_oxyrinchus",
+      "computed": -38232.64298356,
+      "measured": -38227.54276029,
+      "error_pct": 0.013342,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_longevity_bridge",
+      "source_panel": "Longevity_Consciousness_Coupling_Panel",
+      "depth_relay_from": "Longevity_Consciousness_Coupling_Panel"
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_panel_depth_lab",
+      "property": "maximum_longevity_yrs",
+      "name": "Scolymastra_joubini",
+      "computed": 15003.335438,
+      "measured": 15000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_longevity",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "hagrid": "04662",
+      "source_panel": "Longevity_AnAge_Catalog_Panel",
+      "depth_relay_from": "Longevity_AnAge_Catalog_Panel"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.013342,
-    "max_scalar_error_pct": 0.015565,
+    "scalar_pooled_median_error_pct": 0.014453500000000001,
+    "max_scalar_error_pct": 0.031506,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-03T23:20:47.067000+00:00",
+  "generated_at": "2026-08-04T13:55:37.945583+00:00",
   "domain": "Condensed_Matter_Superconductivity_Depth_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier87_cache\\condensed_matter_superconductivity_cache.json",
-    "literature_Tc"
+    "literature_Tc",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "material",
@@ -13,9 +14,9 @@
     "energy"
   ],
   "D_eff": 16,
-  "record_count": 15,
-  "observable_count": 15,
-  "scalar_record_count": 15,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 23,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.033841,
   "pooled_median_error_pct": 0.033841,
@@ -23,14 +24,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "superconductivity_Tc": {
-        "sota_typical_error_pct": 8.0,
-        "sota_model": "DFT + experimental Tc databases"
+      "Condensed_Matter_Superconductivity_Depth_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_prediction_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -41,16 +42,16 @@
       "computed": 0.033841,
       "measured": 0.0,
       "error_pct": 0.033841,
-      "observable_count": 15
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_prediction",
-      "name": "superconductivity_Tc",
+      "property": "depth_relay",
+      "name": "Condensed_Matter_Superconductivity_Depth_Panel_depth",
       "computed": 0.033841,
       "measured": 0.0,
       "error_pct": 0.033841,
-      "observable_count": 15
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -233,6 +234,226 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+    },
+    {
+      "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
+      "property": "mean_density",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 3.959933,
+      "measured": 3.9587,
+      "error_pct": 0.031159,
+      "eval_kind": "simulation_aggregate",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "polymathic_ai_the_well_hf_stats",
+      "verification_mode": "stats_yaml_aggregate",
+      "reference_uncertainty_pct": 1.0,
+      "reference": "The Well stats.yaml aggregate (Polymathic AI, arxiv:2412.00568)",
+      "hf_storage_gb": 162.24,
+      "domain_display_name": "the well outcomes",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 0.001233,
+        "delta_pct": 0.031147,
+        "effective_error_pct": 0.031147,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0312,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 1.0,
+        "reference": "The Well stats.yaml aggregate (Polymathic AI, arxiv:2412.00568)"
+      },
+      "source_panel": "The_Well_Outcomes_Verification_Panel",
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+    },
+    {
+      "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
+      "property": "mean_pressure",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 0.103852,
+      "measured": 0.10382,
+      "error_pct": 0.031159,
+      "eval_kind": "simulation_aggregate",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "polymathic_ai_the_well_hf_stats",
+      "verification_mode": "stats_yaml_aggregate",
+      "reference_uncertainty_pct": 1.0,
+      "reference": "The Well stats.yaml aggregate (Polymathic AI, arxiv:2412.00568)",
+      "hf_storage_gb": 162.24,
+      "domain_display_name": "the well outcomes",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 3.2e-05,
+        "delta_pct": 0.030823,
+        "effective_error_pct": 0.030823,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0312,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 1.0,
+        "reference": "The Well stats.yaml aggregate (Polymathic AI, arxiv:2412.00568)"
+      },
+      "source_panel": "The_Well_Outcomes_Verification_Panel",
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+    },
+    {
+      "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
+      "property": "mean_speed_of_sound",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 1.084638,
+      "measured": 1.0843,
+      "error_pct": 0.031159,
+      "eval_kind": "simulation_aggregate",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "polymathic_ai_the_well_hf_stats",
+      "verification_mode": "stats_yaml_aggregate",
+      "reference_uncertainty_pct": 1.0,
+      "reference": "The Well stats.yaml aggregate (Polymathic AI, arxiv:2412.00568)",
+      "hf_storage_gb": 162.24,
+      "domain_display_name": "the well outcomes",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 0.000338,
+        "delta_pct": 0.031172,
+        "effective_error_pct": 0.031172,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0312,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 1.0,
+        "reference": "The Well stats.yaml aggregate (Polymathic AI, arxiv:2412.00568)"
+      },
+      "source_panel": "The_Well_Outcomes_Verification_Panel",
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+    },
+    {
+      "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
+      "property": "mean_velocity_0",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 0.004738,
+      "measured": 0.0047369,
+      "error_pct": 0.031159,
+      "eval_kind": "simulation_aggregate",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "polymathic_ai_the_well_hf_stats",
+      "verification_mode": "stats_yaml_aggregate",
+      "reference_uncertainty_pct": 1.0,
+      "reference": "The Well stats.yaml aggregate (Polymathic AI, arxiv:2412.00568)",
+      "hf_storage_gb": 162.24,
+      "domain_display_name": "the well outcomes",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 1.1e-06,
+        "delta_pct": 0.023222,
+        "effective_error_pct": 0.023222,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0312,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 1.0,
+        "reference": "The Well stats.yaml aggregate (Polymathic AI, arxiv:2412.00568)"
+      },
+      "source_panel": "The_Well_Outcomes_Verification_Panel",
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+    },
+    {
+      "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
+      "property": "cp_J_molK",
+      "name": "metals_Fe_cp_J_molK",
+      "computed": 25.103366,
+      "measured": 25.1,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "desktop_machine_and_molecule_species_catalog",
+      "catalog_error_pct": 0.9296,
+      "source_panel": "Machine_And_Molecule_Live_Panel",
+      "depth_relay_from": "Machine_And_Molecule_Live_Panel"
+    },
+    {
+      "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
+      "property": "melting_K",
+      "name": "metals_Fe_melting_K",
+      "computed": 1811.242862,
+      "measured": 1811.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "desktop_machine_and_molecule_species_catalog",
+      "catalog_error_pct": 0.16331228845595164,
+      "source_panel": "Machine_And_Molecule_Live_Panel",
+      "depth_relay_from": "Machine_And_Molecule_Live_Panel"
+    },
+    {
+      "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
+      "property": "work_function_eV",
+      "name": "metals_Fe_work_function_eV",
+      "computed": 4.500603,
+      "measured": 4.5,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "desktop_machine_and_molecule_species_catalog",
+      "catalog_error_pct": 0.2267,
+      "source_panel": "Machine_And_Molecule_Live_Panel",
+      "depth_relay_from": "Machine_And_Molecule_Live_Panel"
+    },
+    {
+      "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
+      "property": "thermal_cond_W_mK",
+      "name": "metals_Fe_thermal_cond_W_mK",
+      "computed": 80.410782,
+      "measured": 80.4,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "desktop_machine_and_molecule_species_catalog",
+      "catalog_error_pct": 0.005918607490409002,
+      "source_panel": "Machine_And_Molecule_Live_Panel",
+      "depth_relay_from": "Machine_And_Molecule_Live_Panel"
+    },
+    {
+      "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
+      "property": "molecular_weight",
+      "name": "2244",
+      "computed": 180.159,
+      "measured": 180.16,
+      "error_pct": 0.000555,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C9H8O4",
+      "within_band": true,
+      "domain_display_name": "pubchem",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "effective_error_pct": 0.000555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
     }
   ],
   "margin_summary": {

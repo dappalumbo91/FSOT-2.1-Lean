@@ -105,6 +105,24 @@
     "fluctuation_spectra": true,
     "mode_structure": true,
     "blob_statistics": true,
-    "decoupled_falloff_lengths": true
-  }
+    "decoupled_falloff_lengths": true,
+    "particle_flux_profiles": true,
+    "heat_flux_divertor": true,
+    "edge_current_structure": true
+  },
+  "access_parameters": [
+    {"id": "ballooning_beta", "primary": true, "collisionality_required": false},
+    {"id": "edge_collisionality", "primary": false, "collisionality_required": true},
+    {"id": "high_triangularity", "primary": true, "shaping": true},
+    {"id": "high_sep_density", "primary": true, "density": true}
+  ],
+  "blob_filaments_extra": [
+    {"id": "QCE_blob_compact", "v_km_s": 0.8, "perp_size_cm": 0.8, "parallel_length_m": 15.0},
+    {"id": "QCE_blob_extended", "v_km_s": 1.5, "perp_size_cm": 1.5, "parallel_length_m": 30.0}
+  ],
+  "divertor_footprint": [
+    {"id": "elm_narrow_mm", "width_mm": 2.0, "broad": false},
+    {"id": "qce_broad_mm", "width_mm": 20.0, "broad": true},
+    {"id": "qce_very_broad_mm", "width_mm": 50.0, "broad": true}
+  ]
 }

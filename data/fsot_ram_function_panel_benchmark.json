@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T05:09:13.256218+00:00",
+  "generated_at": "2026-08-04T13:56:34.052855+00:00",
   "domain": "FSOT_RAM_Function_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -18,9 +18,9 @@
     "ai"
   ],
   "D_eff": 11,
-  "record_count": 14,
-  "observable_count": 14,
-  "scalar_record_count": 12,
+  "record_count": 33,
+  "observable_count": 33,
+  "scalar_record_count": 30,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -46,7 +46,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 14
+      "observable_count": 33
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -55,7 +55,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 14
+      "observable_count": 33
     }
   ],
   "material_records": [
@@ -101,6 +101,218 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "header|boot|trinary|phi|ltm|interop",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "cache_line_bytes",
+      "name": "ram_crystal_pack",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "x86 line = 2^6 RAM coherence unit",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "trits_per_cache_line",
+      "name": "ram_crystal_pack",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "line_bits / 2",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "page_4k_bytes",
+      "name": "ram_crystal_pack",
+      "computed": 4096.0,
+      "measured": 4096.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "4 KiB virtual page class",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "trits_per_4k_page",
+      "name": "ram_crystal_pack",
+      "computed": 16384.0,
+      "measured": 16384.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "page_bits / 2",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "collapse_theta",
+      "name": "ram_crystal_pack",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "coherence_gate",
+      "name": "ram_crystal_pack",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "active_frac_ceiling_phi_m4",
+      "name": "ram_crystal_pack",
+      "computed": 0.14589803375031543,
+      "measured": 0.14589803375031543,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6\u207b\u2074 locality",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "c_eff_seed",
+      "name": "ram_crystal_pack",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive C_eff",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "formal_vram_boundary_mib",
+      "name": "ram_crystal_pack",
+      "computed": 12800.0,
+      "measured": 12800.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "GpuMemory formal crystal boundary",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "bytes_per_mib",
+      "name": "ram_crystal_pack",
+      "computed": 1048576.0,
+      "measured": 1048576.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "2^20",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "sector_index_header",
+      "name": "ram_crystal_pack",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sector 0 header",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "sector_index_boot",
+      "name": "ram_crystal_pack",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sector 1 boot",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "sector_index_trinary",
+      "name": "ram_crystal_pack",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sector 2 trinary",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "sector_index_phi",
+      "name": "ram_crystal_pack",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sector 3 phi",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "sector_index_ltm",
+      "name": "ram_crystal_pack",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sector 4 ltm",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "sector_index_interop",
+      "name": "ram_crystal_pack",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sector 5 interop",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "exclusive_sector_ownership",
+      "name": "ram_structural",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "consensus_no_exp_memory_bus",
+      "name": "ram_structural",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "fsot_ram_lab",
+      "property": "pack_mod3_codes_only",
+      "name": "ram_structural",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
       "layer": "ram_function"
     },
     {
