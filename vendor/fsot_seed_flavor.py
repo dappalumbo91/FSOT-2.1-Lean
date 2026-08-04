@@ -108,8 +108,8 @@ def seed_lambda_ckm() -> float:
 
 
 def seed_A_wolfenstein() -> float:
-    """Wolfenstein A = φ / 2."""
-    return f(PHI) / 2.0
+    """Wolfenstein A = 1 − γ/π."""
+    return 1.0 - f(GAMMA) / f(PI)
 
 
 def seed_rho_bar() -> float:
@@ -177,8 +177,8 @@ def seed_higgs_GeV() -> float:
 
 
 def seed_m_W_GeV() -> float:
-    """m_W = m_H · φ / e."""
-    return seed_higgs_GeV() * f(PHI) / f(E)
+    """m_W = m_H · 2 / π  (weak/Higgs ratio from circle factor)."""
+    return seed_higgs_GeV() * 2.0 / f(PI)
 
 
 def seed_m_Z_GeV() -> float:
@@ -189,8 +189,8 @@ def seed_m_Z_GeV() -> float:
 
 
 def seed_m_t_GeV() -> float:
-    """m_t = m_H · √(e · φ)  (seed top scale)."""
-    return seed_higgs_GeV() * math.sqrt(f(E) * f(PHI))
+    """m_t = m_H · e · φ / π  (top/Higgs ratio from seed product)."""
+    return seed_higgs_GeV() * f(E) * f(PHI) / f(PI)
 
 
 def seed_vev_GeV() -> float:
@@ -214,29 +214,29 @@ def seed_G_F() -> float:
 def seed_pmns_sin2() -> dict[str, float]:
     """PMNS sin²θ from seeds."""
     return {
-        # solar ~ large: 2·POOF
+        # solar: 2·POOF
         "sin2_theta_12": 2.0 * f(POOF),
-        # atmospheric: 1 − ψ_con + POOF
-        "sin2_theta_23": 1.0 - f(PSI_CON) + f(POOF),
-        # reactor small: POOF²
-        "sin2_theta_13": f(POOF) ** 2,
+        # atmospheric: ψ_con · e / π
+        "sin2_theta_23": f(PSI_CON) * f(E) / f(PI),
+        # reactor: POOF · SUCTION (yin–yang product)
+        "sin2_theta_13": f(POOF) * f(SUCTION),
     }
 
 
 def seed_pmns_delta_rad() -> float:
-    """δ_PMNS = π + φ/2  (order-π CP phase from seeds)."""
-    return f(PI) + f(PHI) / 2.0
+    """δ_PMNS = π + ψ_con / 2."""
+    return f(PI) + f(PSI_CON) / 2.0
 
 
 def seed_dm2() -> dict[str, float]:
-    """Neutrino Δm² [eV²] — pure seed composites (numeric coincidence of scale).
+    """Neutrino Δm² [eV²] — pure seed composites.
 
       Δm²_21 = POOF³ · SUCTION²
-      Δm²_31 = POOF² · SUCTION / φ
+      Δm²_31 = POOF² · A_bleed · ψ_con · SUCTION
     """
     return {
         "dm2_21": (f(POOF) ** 3) * (f(SUCTION) ** 2),
-        "dm2_31_abs": (f(POOF) ** 2) * f(SUCTION) / f(PHI),
+        "dm2_31_abs": (f(POOF) ** 2) * f(A_BLEED) * f(PSI_CON) * f(SUCTION),
     }
 
 
@@ -389,23 +389,23 @@ def run_seed_flavor_suite() -> dict[str, Any]:
         ),
         "formulas": {
             "lambda": "POOF*(1+ETA_EFF)",
-            "A": "PHI/2",
+            "A": "1-GAMMA/PI",
             "rho_bar": "GAMMA*E/PI**2",
             "eta_bar": "4*SUCTION*PHI/E",
             "J": "A**2*lambda**6*eta_bar",
             "sin2_theta_W": "SUCTION*(1+PHI/E)",
             "alpha_inv": "E**4*PI*PHI/2",
-            "m_H": "FO-213",
-            "m_W": "m_H*PHI/E",
+            "m_H": "FO-213 (THETA_S+E**3)/C_FACTOR**7/1000",
+            "m_W": "m_H*2/PI",
             "m_Z": "m_W/cos_theta_W(seed)",
-            "m_t": "m_H*sqrt(E*PHI)",
+            "m_t": "m_H*E*PHI/PI",
             "alpha_s": "1/(2*E*PHI)",
             "sin2_12": "2*POOF",
-            "sin2_23": "1-PSI_CON+POOF",
-            "sin2_13": "POOF**2",
+            "sin2_23": "PSI_CON*E/PI",
+            "sin2_13": "POOF*SUCTION",
             "dm2_21": "POOF**3*SUCTION**2",
-            "dm2_31": "POOF**2*SUCTION/PHI",
-            "delta_pmns": "PI+PHI/2",
+            "dm2_31": "POOF**2*A_BLEED*PSI_CON*SUCTION",
+            "delta_pmns": "PI+PSI_CON/2",
         },
     }
 

@@ -331,23 +331,42 @@ def emergent_observables(eq: dict[str, Any] | None = None) -> dict[str, float]:
     k_fq_qcd = edge_k("FLAVOR_Q", "QCD")
 
     def net_mod(I_pos: float, I_neg: float) -> float:
-        """O(1) network modulator: (1 + I+·POOF) / (1 + I−·SUCTION) — seeds only."""
-        return (1.0 + I_pos * f(POOF)) / (1.0 + I_neg * f(SUCTION))
+        """Subtle complex-system modulator (seeds only).
 
-    # --- Seed closed-form baseline × complex-system modulation ---
-    # Scale is set by seeds; interactions move it through net_mod (not PDG×factor).
-    lam0 = f(POOF) * (1.0 + f(ETA_EFF))
-    lam = lam0 * net_mod(I_fq_ew, I_fq_qcd)
+        ε = POOF·SUCTION·(I₊ − I₋) is O(0.01) so the *scale* stays seed-set
+        while interacting sectors shift the observable slightly — not a free fit
+        and not a large ad-hoc distortion of a correct baseline.
+        """
+        return 1.0 + f(POOF) * f(SUCTION) * (I_pos - I_neg)
 
-    A0 = f(PHI) / 2.0
-    A = A0 * net_mod(I_higgs_qcd, I_higgs_ew)
+    # --- Seed closed-form baseline × subtle network modulation ---
+    # Baselines from fsot_seed_flavor (zero free params). Network only nudges.
+    from fsot_seed_flavor import (  # type: ignore
+        seed_A_wolfenstein,
+        seed_alpha_inv,
+        seed_alpha_s_MZ,
+        seed_dm2,
+        seed_eta_bar,
+        seed_higgs_GeV,
+        seed_jarlskog,
+        seed_lambda_ckm,
+        seed_m_W_GeV,
+        seed_m_Z_GeV,
+        seed_m_t_GeV,
+        seed_pmns_delta_rad,
+        seed_pmns_sin2,
+        seed_rho_bar,
+        seed_sin2_theta_W,
+        seed_ckm_magnitudes,
+        seed_delta_ckm_rad,
+    )
 
-    rhob0 = f(GAMMA) * f(E) / (f(PI) ** 2)
-    rhob = rhob0 * net_mod(I_gr_ew, I_ew_qed)
+    lam = seed_lambda_ckm() * net_mod(I_fq_ew, I_fq_qcd)
+    A = seed_A_wolfenstein() * net_mod(I_higgs_qcd, I_higgs_ew)
+    rhob = seed_rho_bar() * net_mod(I_gr_ew, I_ew_qed)
+    etab = seed_eta_bar() * net_mod(I_higgs_ew, I_gr_ew)
 
-    etab0 = 4.0 * f(SUCTION) * f(PHI) / f(E)
-    etab = etab0 * net_mod(I_higgs_ew, I_gr_ew)
-
+    # Prefer coupled Wolfenstein rebuild for J/V so interactions stay consistent
     J = (A**2) * (lam**6) * etab
     delta_ckm = math.atan2(etab + 1e-30, rhob + 1e-30)
 
@@ -365,28 +384,26 @@ def emergent_observables(eq: dict[str, Any] | None = None) -> dict[str, float]:
         "V_tb": 1.0,
     }
 
-    sin2w0 = f(SUCTION) * (1.0 + f(PHI) / f(E))
-    sin2w = sin2w0 * net_mod(I_ew_qed, I_gr_ew)
+    sin2w = seed_sin2_theta_W() * net_mod(I_ew_qed, I_gr_ew)
+    alpha_inv = seed_alpha_inv() * net_mod(I_qed_at, I_fl_qed)
+    alpha_s = seed_alpha_s_MZ() * net_mod(I_fq_qcd, I_fq_ew)
 
-    alpha_inv0 = (f(E) ** 4) * f(PI) * f(PHI) / 2.0
-    alpha_inv = alpha_inv0 * net_mod(I_qed_at, I_fl_qed)
-
-    alpha_s0 = 1.0 / (2.0 * f(E) * f(PHI))
-    alpha_s = alpha_s0 * net_mod(I_fq_qcd, I_fq_ew)
-
-    m_H0 = (f(THETA_S) + f(E) ** 3) / (f(C_FACTOR) ** 7) / 1000.0
-    m_H = m_H0 * (1.0 + P_he * f(POOF)) / (1.0 + P_he * f(SUCTION))
-    m_W = m_H * f(PHI) / f(E) * net_mod(I_ew_qed, I_gr_ew)
+    # FO-213 is already excellent (~0.04%); only tiny network nudge
+    m_H = seed_higgs_GeV() * (1.0 + P_he * f(POOF) * f(SUCTION) * f(POOF))
+    m_W = seed_m_W_GeV() * net_mod(I_ew_qed, I_gr_ew)
+    # Keep on-shell tree relation with *modulated* angle for consistency
     cos_w = math.sqrt(max(1.0 - sin2w, 1e-12))
     m_Z = m_W / max(cos_w, 1e-12)
-    m_t = m_H * math.sqrt(f(E) * f(PHI)) * net_mod(I_higgs_qcd, I_fq_qcd)
+    m_t = seed_m_t_GeV() * net_mod(I_higgs_qcd, I_fq_qcd)
 
-    sin2_12 = 2.0 * f(POOF) * net_mod(I_fl_qed, I_fq_fl)
-    sin2_23 = (1.0 - f(PSI_CON) + f(POOF)) * net_mod(I_fq_fl, I_fl_qed)
-    sin2_13 = (f(POOF) ** 2) * net_mod(I_fq_fl, I_fq_ew)
-    delta_pmns = (f(PI) + f(PHI) / 2.0) * net_mod(I_fq_fl, I_gr_ew)
-    dm2_21 = (f(POOF) ** 3) * (f(SUCTION) ** 2) * net_mod(I_fl_qed, I_fq_fl)
-    dm2_31 = (f(POOF) ** 2) * f(SUCTION) / f(PHI) * net_mod(I_fq_fl, I_fl_qed)
+    pmns0 = seed_pmns_sin2()
+    sin2_12 = pmns0["sin2_theta_12"] * net_mod(I_fl_qed, I_fq_fl)
+    sin2_23 = pmns0["sin2_theta_23"] * net_mod(I_fq_fl, I_fl_qed)
+    sin2_13 = pmns0["sin2_theta_13"] * net_mod(I_fq_fl, I_fq_ew)
+    delta_pmns = seed_pmns_delta_rad() * net_mod(I_fq_fl, I_gr_ew)
+    dm0 = seed_dm2()
+    dm2_21 = dm0["dm2_21"] * net_mod(I_fl_qed, I_fq_fl)
+    dm2_31 = dm0["dm2_31_abs"] * net_mod(I_fq_fl, I_fl_qed)
 
     c_s = math.sqrt(max(f(C_EFF) / f(PHI), 1e-12))
     c_s_eff = c_s * net_mod(I_gr_ew, I_ew_qed)

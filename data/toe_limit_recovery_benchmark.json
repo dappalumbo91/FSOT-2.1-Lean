@@ -1,6 +1,6 @@
 {
   "benchmark_version": "2.0",
-  "generated_at": "2026-08-04T00:17:29.380871+00:00",
+  "generated_at": "2026-08-04T00:28:14.313734+00:00",
   "domain": "TOE_Limit_Recovery",
   "maps_to_lean": [
     "cosmological",
@@ -9,8 +9,8 @@
   ],
   "D_eff": 22,
   "purpose": "T3 limit recovery: atlas probes + deep GR map (Schwarzschild, light deflection, perihelion, Friedmann, Einstein structure)",
-  "record_count": 25,
-  "observable_count": 25,
+  "record_count": 26,
+  "observable_count": 26,
   "median_error_pct": 0.022461,
   "pooled_median_error_pct": 0.022461,
   "green_gate_pass": true,
@@ -343,6 +343,20 @@
       "limit_sector": "SM",
       "zero_free_parameters": true,
       "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "seed_m_Z",
+      "property": "seed_m_Z",
+      "computed": 91.10190079661187,
+      "measured": 91.1876,
+      "error_pct": 0.09398120291369791,
+      "eval_kind": "seed_closed_form",
+      "claim": "T3_SM_mass",
+      "formula": "m_W/cos_theta_W_seed",
+      "limit_sector": "SM",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
     }
   ],
   "material_records": [
@@ -670,6 +684,20 @@
       "eval_kind": "seed_closed_form",
       "claim": "T3_SM_higgs",
       "formula": "FO-213",
+      "limit_sector": "SM",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_limit_recovery_lab",
+      "name": "seed_m_Z",
+      "property": "seed_m_Z",
+      "computed": 91.10190079661187,
+      "measured": 91.1876,
+      "error_pct": 0.09398120291369791,
+      "eval_kind": "seed_closed_form",
+      "claim": "T3_SM_mass",
+      "formula": "m_W/cos_theta_W_seed",
       "limit_sector": "SM",
       "zero_free_parameters": true,
       "derivation": "seed_closed_form"

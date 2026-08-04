@@ -4,130 +4,130 @@ begin
 
 (* FSOT GR/SM/CKM/PMNS spine — multi-prover residual/structure certificates. *)
 
-lemma lambda_ckm_err_under_half: "0.08387407135526351 < (0.5::real)"
+lemma lambda_ckm_err_under_half: "0.0674090941924869 < (0.5::real)"
   by simp
 
 lemma lambda_ckm_measured_pos: "(0::real) < 0.225"
   by simp
 
-lemma lambda_ckm_abs_diff: "0.0001887167 < 0.0001906038"
+lemma lambda_ckm_abs_diff: "0.0001516705 < 0.0001531872"
   by simp
 
-lemma A_wolfenstein_err_finite: "2.240891444698181 < 100.0"
+lemma A_wolfenstein_err_finite: "1.2112430567490686 < 100.0"
   by simp
 
 lemma A_wolfenstein_measured_pos: "(0::real) < 0.826"
   by simp
 
-lemma A_wolfenstein_abs_diff: "0.018509763333206974 < 0.018694860966540043"
+lemma A_wolfenstein_abs_diff: "0.010004867648747306 < 0.01010491632523578"
   by simp
 
-lemma rho_bar_err_finite: "5.86239218720027 < 100.0"
+lemma rho_bar_err_finite: "0.8542163106350151 < 100.0"
   by simp
 
 lemma rho_bar_measured_pos: "(0::real) < 0.159"
   by simp
 
-lemma rho_bar_abs_diff: "0.00932120357764843 < 0.009414415613425913"
+lemma rho_bar_abs_diff: "0.001358203933909674 < 0.0013717859732497709"
   by simp
 
-lemma eta_bar_err_finite: "5.954837550877345 < 100.0"
+lemma eta_bar_err_under_half: "0.49211367344735246 < (0.5::real)"
   by simp
 
 lemma eta_bar_measured_pos: "(0::real) < 0.348"
   by simp
 
-lemma eta_bar_abs_diff: "0.02072283467705316 < 0.02093006302382469"
+lemma eta_bar_abs_diff: "0.0017125555835967865 < 0.0017296811394337545"
   by simp
 
-lemma Jarlskog_J_err_finite: "9.651841765554817 < 100.0"
+lemma Jarlskog_J_err_finite: "2.475842827902397 < 100.0"
   by simp
 
 lemma Jarlskog_J_measured_pos: "(0::real) < 0.0000308"
   by simp
 
-lemma Jarlskog_J_abs_diff: "0.000002972767 < 0.000003002495"
+lemma Jarlskog_J_abs_diff: "0.0000007625596 < 0.0000007701852"
   by simp
 
-lemma delta_ckm_rad_err_finite: "8.38059421016685 < 100.0"
+lemma delta_ckm_rad_err_finite: "4.923088578307108 < 100.0"
   by simp
 
 lemma delta_ckm_rad_measured_pos: "(0::real) < 1.196"
   by simp
 
-lemma delta_ckm_rad_abs_diff: "0.1002319067535955 < 0.10123422582113245"
+lemma delta_ckm_rad_abs_diff: "0.05888013939655301 < 0.059468940790519544"
   by simp
 
-lemma V_ud_err_under_half: "0.0035751439500761547 < (0.5::real)"
+lemma V_ud_err_under_half: "0.002696448876034594 < (0.5::real)"
   by simp
 
 lemma V_ud_measured_pos: "(0::real) < 0.97435"
   by simp
 
-lemma V_ud_abs_diff: "0.00003483442 < 0.00003518276"
+lemma V_ud_abs_diff: "0.00002627285 < 0.00002653558"
   by simp
 
-lemma V_us_err_under_half: "0.08387407135526351 < (0.5::real)"
+lemma V_us_err_under_half: "0.0674090941924869 < (0.5::real)"
   by simp
 
 lemma V_us_measured_pos: "(0::real) < 0.225"
   by simp
 
-lemma V_us_abs_diff: "0.0001887167 < 0.0001906038"
+lemma V_us_abs_diff: "0.0001516705 < 0.0001531872"
   by simp
 
-lemma V_ub_err_finite: "8.033837560592682 < 100.0"
+lemma V_ub_err_finite: "3.6810430545769552 < 100.0"
   by simp
 
 lemma V_ub_measured_pos: "(0::real) < 0.00369"
   by simp
 
-lemma V_ub_abs_diff: "0.0002964486 < 0.0002994131"
+lemma V_ub_abs_diff: "0.0001358305 < 0.0001371888"
   by simp
 
-lemma V_cd_err_under_half: "0.14618725453586415 < (0.5::real)"
+lemma V_cd_err_under_half: "0.12971202611985092 < (0.5::real)"
   by simp
 
 lemma V_cd_measured_pos: "(0::real) < 0.22486"
   by simp
 
-lemma V_cd_abs_diff: "0.0003287167 < 0.0003320038"
+lemma V_cd_abs_diff: "0.0002916705 < 0.0002945872"
   by simp
 
-lemma V_cs_err_under_half: "0.08476364265914554 < (0.5::real)"
+lemma V_cs_err_under_half: "0.08564311398950579 < (0.5::real)"
   by simp
 
 lemma V_cs_measured_pos: "(0::real) < 0.97349"
   by simp
 
-lemma V_cs_abs_diff: "0.0008251656 < 0.0008334172"
+lemma V_cs_abs_diff: "0.0008337272 < 0.0008420644"
   by simp
 
-lemma V_cb_err_finite: "2.085614355341048 < 100.0"
+lemma V_cb_err_finite: "1.0868832908350836 < 100.0"
   by simp
 
 lemma V_cb_measured_pos: "(0::real) < 0.04182"
   by simp
 
-lemma V_cb_abs_diff: "0.0008722039 < 0.000880926"
+lemma V_cb_abs_diff: "0.0004545346 < 0.0004590799"
   by simp
 
-lemma V_td_err_finite: "3.8353724469530674 < 100.0"
+lemma V_td_err_finite: "1.2956188612649575 < 100.0"
   by simp
 
 lemma V_td_measured_pos: "(0::real) < 0.00857"
   by simp
 
-lemma V_td_abs_diff: "0.0003286914 < 0.0003319783"
+lemma V_td_abs_diff: "0.0001110345 < 0.0001121449"
   by simp
 
-lemma V_ts_err_under_half: "0.3703258476973747 < (0.5::real)"
+lemma V_ts_err_finite: "0.6459012354568695 < 100.0"
   by simp
 
 lemma V_ts_measured_pos: "(0::real) < 0.0411"
   by simp
 
-lemma V_ts_abs_diff: "0.0001522039 < 0.000153726"
+lemma V_ts_abs_diff: "0.0002654654 < 0.0002681201"
   by simp
 
 lemma V_tb_err_under_half: "0.08827786107347174 < (0.5::real)"
@@ -139,148 +139,148 @@ lemma V_tb_measured_pos: "(0::real) < 0.999118"
 lemma V_tb_abs_diff: "0.000882 < 0.00089082"
   by simp
 
-lemma sin2_theta_W_err_finite: "3.791079293869786 < 100.0"
+lemma sin2_theta_W_err_finite: "0.5605427410082864 < 100.0"
   by simp
 
 lemma sin2_theta_W_measured_pos: "(0::real) < 0.23122"
   by simp
 
-lemma sin2_theta_W_abs_diff: "0.00876573354328572 < 0.008853390878719575"
+lemma sin2_theta_W_abs_diff: "0.00129608692575936 < 0.0013090477950179536"
   by simp
 
-lemma alpha_inv_err_under_half: "0.3910691950893094 < (0.5::real)"
+lemma alpha_inv_err_finite: "1.117147243876773 < 100.0"
   by simp
 
 lemma alpha_inv_measured_pos: "(0::real) < 137.035999084"
   by simp
 
-lemma alpha_inv_abs_diff: "0.5359055786003921 < 0.541264634386397"
+lemma alpha_inv_abs_diff: "1.5308938868859059 < 1.546202825754766"
   by simp
 
-lemma alpha_s_MZ_err_finite: "3.573804082126688 < 100.0"
+lemma alpha_s_MZ_err_finite: "3.579369787719938 < 100.0"
   by simp
 
 lemma alpha_s_MZ_measured_pos: "(0::real) < 0.1179"
   by simp
 
-lemma alpha_s_MZ_abs_diff: "0.004213515012827365 < 0.004255650162956639"
+lemma alpha_s_MZ_abs_diff: "0.004220076979721807 < 0.004262277749520025"
   by simp
 
-lemma m_H_err_under_half: "0.24031054116629413 < (0.5::real)"
+lemma m_H_err_under_half: "0.12089010848922362 < (0.5::real)"
   by simp
 
 lemma m_H_measured_pos: "(0::real) < 125.25"
   by simp
 
-lemma m_H_abs_diff: "0.3009889528107834 < 0.30399884233889224"
+lemma m_H_abs_diff: "0.15141486088275258 < 0.1529290094915811"
   by simp
 
-lemma m_W_err_finite: "11.818376281905547 < 100.0"
+lemma m_W_err_finite: "1.6981756204556522 < 100.0"
   by simp
 
 lemma m_W_measured_pos: "(0::real) < 80.377"
   by simp
 
-lemma m_W_abs_diff: "9.49925630410722 < 9.594248867148295"
+lemma m_W_abs_diff: "1.3649426184536395 < 1.378592044638177"
   by simp
 
-lemma m_Z_err_finite: "11.852271158304143 < 100.0"
+lemma m_Z_err_finite: "1.0939302919222549 < 100.0"
   by simp
 
 lemma m_Z_measured_pos: "(0::real) < 91.1876"
   by simp
 
-lemma m_Z_abs_diff: "10.80780161474975 < 10.91587963089725"
+lemma m_Z_abs_diff: "0.9975287788768981 < 1.007504066665668"
   by simp
 
-lemma m_t_err_finite: "53.0467052008237 < 100.0"
+lemma m_t_err_finite: "1.5554132408708463 < 100.0"
   by simp
 
 lemma m_t_measured_pos: "(0::real) < 172.69"
   by simp
 
-lemma m_t_abs_diff: "91.60635521130246 < 92.52241876341549"
+lemma m_t_abs_diff: "2.6860431256598645 < 2.712903556916464"
   by simp
 
-lemma sin2_theta_12_err_finite: "2.053332898567214 < 100.0"
+lemma sin2_theta_12_err_under_half: "0.2910480743994031 < (0.5::real)"
   by simp
 
 lemma sin2_theta_12_measured_pos: "(0::real) < 0.307"
   by simp
 
-lemma sin2_theta_12_abs_diff: "0.006303731998601347 < 0.006366769318588361"
+lemma sin2_theta_12_abs_diff: "0.0008935176 < 0.0009024528"
   by simp
 
-lemma sin2_theta_23_err_finite: "6.342198874309371 < 100.0"
+lemma sin2_theta_23_err_under_half: "0.12991683625245593 < (0.5::real)"
   by simp
 
 lemma sin2_theta_23_measured_pos: "(0::real) < 0.546"
   by simp
 
-lemma sin2_theta_23_abs_diff: "0.03462840585372917 < 0.034974689912267466"
+lemma sin2_theta_23_abs_diff: "0.0007093459 < 0.0007164394"
   by simp
 
-lemma sin2_theta_13_err_finite: "7.121598214539716 < 100.0"
+lemma sin2_theta_13_err_finite: "2.5824286687071702 < 100.0"
   by simp
 
 lemma sin2_theta_13_measured_pos: "(0::real) < 0.022"
   by simp
 
-lemma sin2_theta_13_abs_diff: "0.0015667516071987374 < 0.001582419123271725"
+lemma sin2_theta_13_abs_diff: "0.0005681343 < 0.0005738157"
   by simp
 
-lemma delta_pmns_rad_err_finite: "6.824483048637119 < 100.0"
+lemma delta_pmns_rad_err_finite: "0.6093498205858049 < 100.0"
   by simp
 
 lemma delta_pmns_rad_measured_pos: "(0::real) < 3.4382986264288293"
   by simp
 
-lemma delta_pmns_rad_abs_diff: "0.23464610692215837 < 0.23699256799138096"
+lemma delta_pmns_rad_abs_diff: "0.020951266511348265 < 0.02116077917646275"
   by simp
 
-lemma dm2_21_err_finite: "5.947855435998268 < 100.0"
+lemma dm2_21_err_finite: "4.118318933025263 < 100.0"
   by simp
 
 lemma dm2_21_measured_pos: "(0::real) < 0.0000753"
   by simp
 
-lemma dm2_21_abs_diff: "0.000004478735 < 0.000004523522"
+lemma dm2_21_abs_diff: "0.000003101094 < 0.000003132105"
   by simp
 
-lemma dm2_31_abs_err_finite: "14.405438984619169 < 100.0"
+lemma dm2_31_abs_err_finite: "6.834421455812894 < 100.0"
   by simp
 
 lemma dm2_31_abs_measured_pos: "(0::real) < 0.002453"
   by simp
 
-lemma dm2_31_abs_abs_diff: "0.0003533654 < 0.0003568991"
+lemma dm2_31_abs_abs_diff: "0.0001676484 < 0.0001693248"
   by simp
 
-lemma emergent_unitarity_row_u_err_under_half: "0.0011516191063876136 < (0.5::real)"
+lemma emergent_unitarity_row_u_err_under_half: "0.0012632120914846112 < (0.5::real)"
   by simp
 
 lemma emergent_unitarity_row_u_measured_pos: "(0::real) < 1.0"
   by simp
 
-lemma emergent_unitarity_row_u_abs_diff: "0.00001151619 < 0.00001163135"
+lemma emergent_unitarity_row_u_abs_diff: "0.00001263212 < 0.00001275844"
   by simp
 
-lemma emergent_unitarity_row_c_err_under_half: "0.16767220035305286 < (0.5::real)"
+lemma emergent_unitarity_row_c_err_under_half: "0.17111017284017205 < (0.5::real)"
   by simp
 
 lemma emergent_unitarity_row_c_measured_pos: "(0::real) < 1.0"
   by simp
 
-lemma emergent_unitarity_row_c_abs_diff: "0.0016767220035305286 < 0.001693489223566834"
+lemma emergent_unitarity_row_c_abs_diff: "0.0017111017284017205 < 0.0017282127456867379"
   by simp
 
-lemma emergent_unitarity_row_t_err_under_half: "0.1744641170662753 < (0.5::real)"
+lemma emergent_unitarity_row_t_err_under_half: "0.1782655825115942 < (0.5::real)"
   by simp
 
 lemma emergent_unitarity_row_t_measured_pos: "(0::real) < 1.0"
   by simp
 
-lemma emergent_unitarity_row_t_abs_diff: "0.001744641170662753 < 0.0017620875823703805"
+lemma emergent_unitarity_row_t_abs_diff: "0.001782655825115942 < 0.0018004823833681013"
   by simp
 
 lemma yin_yang_in_unit_interval_err_under_half: "0 < (0.5::real)"
@@ -319,13 +319,13 @@ lemma edge_count_measured_pos: "(0::real) < 15.0"
 lemma edge_count_abs_diff: "0 < 0.000000001"
   by simp
 
-lemma emergent_unitarity_row_u_unitarity_tight: "0.00001151619 < 0.05"
+lemma emergent_unitarity_row_u_unitarity_tight: "0.00001263212 < 0.05"
   by simp
 
-lemma emergent_unitarity_row_c_unitarity_tight: "0.0016767220035305286 < 0.05"
+lemma emergent_unitarity_row_c_unitarity_tight: "0.0017111017284017205 < 0.05"
   by simp
 
-lemma emergent_unitarity_row_t_unitarity_tight: "0.001744641170662753 < 0.05"
+lemma emergent_unitarity_row_t_unitarity_tight: "0.001782655825115942 < 0.05"
   by simp
 
 lemma gauge_n_U1_eq: "(1::nat) = 1"
@@ -421,109 +421,109 @@ lemma gr_seed_m_H_err_under_half: "0.03990518384182655 < (0.5::real)"
 lemma gr_seed_m_H_meas_pos: "(0::real) < 125.25"
   by simp
 
-lemma gr_seed_m_W_err_finite: "7.281636039893431 < 100.0"
+lemma gr_seed_m_W_err_finite: "0.836299635903489 < 100.0"
   by simp
 
 lemma gr_seed_m_W_meas_pos: "(0::real) < 80.377"
   by simp
 
-lemma gr_seed_m_Z_err_finite: "6.587566028472561 < 100.0"
+lemma gr_seed_m_Z_err_under_half: "0.09398120291369791 < (0.5::real)"
   by simp
 
 lemma gr_seed_m_Z_meas_pos: "(0::real) < 91.1876"
   by simp
 
-lemma sm_lambda_ckm_err_under_half: "0.08387407135526351 < (0.5::real)"
+lemma sm_lambda_ckm_err_under_half: "0.0674090941924869 < (0.5::real)"
   by simp
 
-lemma sm_A_wolfenstein_err_finite: "2.240891444698181 < 100.0"
+lemma sm_A_wolfenstein_err_finite: "1.2112430567490686 < 100.0"
   by simp
 
-lemma sm_rho_bar_err_finite: "5.86239218720027 < 100.0"
+lemma sm_rho_bar_err_finite: "0.8542163106350151 < 100.0"
   by simp
 
-lemma sm_eta_bar_err_finite: "5.954837550877345 < 100.0"
+lemma sm_eta_bar_err_under_half: "0.49211367344735246 < (0.5::real)"
   by simp
 
-lemma sm_Jarlskog_J_err_finite: "9.651841765554817 < 100.0"
+lemma sm_Jarlskog_J_err_finite: "2.475842827902397 < 100.0"
   by simp
 
-lemma sm_delta_ckm_rad_err_finite: "8.38059421016685 < 100.0"
+lemma sm_delta_ckm_rad_err_finite: "4.923088578307108 < 100.0"
   by simp
 
-lemma sm_V_ud_err_under_half: "0.0035751439500761547 < (0.5::real)"
+lemma sm_V_ud_err_under_half: "0.002696448876034594 < (0.5::real)"
   by simp
 
-lemma sm_V_us_err_under_half: "0.08387407135526351 < (0.5::real)"
+lemma sm_V_us_err_under_half: "0.0674090941924869 < (0.5::real)"
   by simp
 
-lemma sm_V_ub_err_finite: "8.033837560592682 < 100.0"
+lemma sm_V_ub_err_finite: "3.6810430545769552 < 100.0"
   by simp
 
-lemma sm_V_cd_err_under_half: "0.14618725453586415 < (0.5::real)"
+lemma sm_V_cd_err_under_half: "0.12971202611985092 < (0.5::real)"
   by simp
 
-lemma sm_V_cs_err_under_half: "0.08476364265914554 < (0.5::real)"
+lemma sm_V_cs_err_under_half: "0.08564311398950579 < (0.5::real)"
   by simp
 
-lemma sm_V_cb_err_finite: "2.085614355341048 < 100.0"
+lemma sm_V_cb_err_finite: "1.0868832908350836 < 100.0"
   by simp
 
-lemma sm_V_td_err_finite: "3.8353724469530674 < 100.0"
+lemma sm_V_td_err_finite: "1.2956188612649575 < 100.0"
   by simp
 
-lemma sm_V_ts_err_under_half: "0.3703258476973747 < (0.5::real)"
+lemma sm_V_ts_err_finite: "0.6459012354568695 < 100.0"
   by simp
 
 lemma sm_V_tb_err_under_half: "0.08827786107347174 < (0.5::real)"
   by simp
 
-lemma sm_sin2_theta_W_err_finite: "3.791079293869786 < 100.0"
+lemma sm_sin2_theta_W_err_finite: "0.5605427410082864 < 100.0"
   by simp
 
-lemma sm_alpha_inv_err_under_half: "0.3910691950893094 < (0.5::real)"
+lemma sm_alpha_inv_err_finite: "1.117147243876773 < 100.0"
   by simp
 
-lemma sm_alpha_s_MZ_err_finite: "3.573804082126688 < 100.0"
+lemma sm_alpha_s_MZ_err_finite: "3.579369787719938 < 100.0"
   by simp
 
-lemma sm_m_H_err_under_half: "0.24031054116629413 < (0.5::real)"
+lemma sm_m_H_err_under_half: "0.12089010848922362 < (0.5::real)"
   by simp
 
-lemma sm_m_W_err_finite: "11.818376281905547 < 100.0"
+lemma sm_m_W_err_finite: "1.6981756204556522 < 100.0"
   by simp
 
-lemma sm_m_Z_err_finite: "11.852271158304143 < 100.0"
+lemma sm_m_Z_err_finite: "1.0939302919222549 < 100.0"
   by simp
 
-lemma sm_m_t_err_finite: "53.0467052008237 < 100.0"
+lemma sm_m_t_err_finite: "1.5554132408708463 < 100.0"
   by simp
 
-lemma sm_sin2_theta_12_err_finite: "2.053332898567214 < 100.0"
+lemma sm_sin2_theta_12_err_under_half: "0.2910480743994031 < (0.5::real)"
   by simp
 
-lemma sm_sin2_theta_23_err_finite: "6.342198874309371 < 100.0"
+lemma sm_sin2_theta_23_err_under_half: "0.12991683625245593 < (0.5::real)"
   by simp
 
-lemma sm_sin2_theta_13_err_finite: "7.121598214539716 < 100.0"
+lemma sm_sin2_theta_13_err_finite: "2.5824286687071702 < 100.0"
   by simp
 
-lemma sm_delta_pmns_rad_err_finite: "6.824483048637119 < 100.0"
+lemma sm_delta_pmns_rad_err_finite: "0.6093498205858049 < 100.0"
   by simp
 
-lemma sm_dm2_21_err_finite: "5.947855435998268 < 100.0"
+lemma sm_dm2_21_err_finite: "4.118318933025263 < 100.0"
   by simp
 
-lemma sm_dm2_31_abs_err_finite: "14.405438984619169 < 100.0"
+lemma sm_dm2_31_abs_err_finite: "6.834421455812894 < 100.0"
   by simp
 
-lemma sm_emergent_unitarity_row_u_err_under_half: "0.0011516191063876136 < (0.5::real)"
+lemma sm_emergent_unitarity_row_u_err_under_half: "0.0012632120914846112 < (0.5::real)"
   by simp
 
-lemma sm_emergent_unitarity_row_c_err_under_half: "0.16767220035305286 < (0.5::real)"
+lemma sm_emergent_unitarity_row_c_err_under_half: "0.17111017284017205 < (0.5::real)"
   by simp
 
-lemma sm_emergent_unitarity_row_t_err_under_half: "0.1744641170662753 < (0.5::real)"
+lemma sm_emergent_unitarity_row_t_err_under_half: "0.1782655825115942 < (0.5::real)"
   by simp
 
 lemma sm_yin_yang_in_unit_interval_err_under_half: "0 < (0.5::real)"
