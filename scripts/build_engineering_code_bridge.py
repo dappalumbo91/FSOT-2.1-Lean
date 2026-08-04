@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build ESP32 engineering + coding structure verifier + hardware/code spine."""
+"""Build ESP32 engineering + coding verifier + FSOT-GPU CUDA + hardware/code spine."""
 
 from __future__ import annotations
 
@@ -32,6 +32,24 @@ def main() -> int:
         doc = builder()
         circuit_out(name).write_text(json.dumps(doc, indent=2), encoding="utf-8")
         print(f"{name}: n={doc.get('record_count')} med={doc.get('median_error_pct')}")
+
+    # FSOT-GPU CUDA competitive + parity (same class as coding verifier: structure, not weights)
+    from fsot_gpu_cuda_bridge_lib import (  # noqa: WPS433
+        BUILDERS as GPU_BUILDERS,
+        output_path as gpu_out,
+    )
+
+    for name in (
+        "FSOT_GPU_CUDA_Competitive_Panel",
+        "FSOT_GPU_Parity_Verify_Panel",
+        "FSOT_GPU_Engineering_Spine",
+    ):
+        doc = GPU_BUILDERS[name]()
+        out = gpu_out(name)
+        out.write_text(json.dumps(doc, indent=2), encoding="utf-8")
+        print(
+            f"{name}: n={doc.get('record_count')} med={doc.get('median_error_pct')} -> {out.name}"
+        )
 
     for name, builder in BUILDERS.items():
         doc = builder()

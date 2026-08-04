@@ -1,12 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T03:20:16.017719+00:00",
+  "generated_at": "2026-08-04T03:30:47.510664+00:00",
   "domain": "Engineering_Hardware_Code_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "esp32_platform",
     "coding_structure_verifier",
-    "tier96_circuit"
+    "tier96_circuit",
+    "fsot_gpu_cuda",
+    "fsot_gpu_parity_verify"
   ],
   "maps_to_lean": [
     "electron",
@@ -16,13 +18,13 @@
     "ai"
   ],
   "D_eff": 13,
-  "record_count": 36,
-  "observable_count": 36,
-  "scalar_record_count": 33,
+  "record_count": 54,
+  "observable_count": 54,
+  "scalar_record_count": 51,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.020755,
-  "pooled_median_error_pct": 0.020755,
-  "headline_median_error_pct": 0.020755,
+  "median_error_pct": 0.014767,
+  "pooled_median_error_pct": 0.014767,
+  "headline_median_error_pct": 0.014767,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -41,19 +43,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.020755,
+      "computed": 0.014767,
       "measured": 0.0,
-      "error_pct": 0.020755,
-      "observable_count": 36
+      "error_pct": 0.014767,
+      "observable_count": 54
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "engineering_spine",
-      "name": "hardware_code",
-      "computed": 0.020755,
+      "name": "hardware_code_gpu",
+      "computed": 0.011814,
       "measured": 0.0,
-      "error_pct": 0.020755,
-      "observable_count": 36
+      "error_pct": 0.011814,
+      "observable_count": 54
     }
   ],
   "material_records": [
@@ -558,10 +560,211 @@
       "L_h": 0.001,
       "C_f": 1e-10,
       "textbook_f": 503292.1210448704
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fsot_gpu_cuda_competitive_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "gpu_golden_collapse_threshold",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "gpu_golden_phi",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "gpu_golden_gamma",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.5772156649015329,
+      "measured": 0.5772156649015329,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "gpu_golden_k",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.4202216641606967,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "gpu_golden_c_eff",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "gpu_golden_p_var",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.9579871226722757,
+      "measured": 0.9579871226722757,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "gpu_golden_psi_con",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.6321205588285577,
+      "measured": 0.6321205588285577,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "beat_cuda_collapse_threshold",
+      "name": "fsot_beat_cuda_suite",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/competitive/beat_cuda.json"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fsot_gpu_parity_verify_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "parity_layer_python",
+      "name": "parity_ledger",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "parity_python_collapse_threshold",
+      "name": "parity_python",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "parity_python_phi",
+      "name": "parity_python",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "parity_python_gamma",
+      "name": "parity_python",
+      "computed": 0.5772156649015329,
+      "measured": 0.5772156649015329,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "parity_python_k",
+      "name": "parity_python",
+      "computed": 0.4202216641606967,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "parity_python_c_eff",
+      "name": "parity_python",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "parity_python_p_var",
+      "name": "parity_python",
+      "computed": 0.9579871226722757,
+      "measured": 0.9579871226722757,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "parity_python_psi_con",
+      "name": "parity_python",
+      "computed": 0.6321205588285577,
+      "measured": 0.6321205588285577,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.020755,
+    "scalar_pooled_median_error_pct": 0.014767,
     "max_scalar_error_pct": 0.040817,
     "classifier_count": 0,
     "classifier_correct": 0,

@@ -10,6 +10,7 @@
 1. **Circuit / ESP32 engineering** — absolute rails (3.3 V, current, clocks, pull-ups, RC, LDO/buck) so BOM and bring-up are seed-grounded, not wall-banging.
 2. **Coding structure verifier** — same *class* of panel as linguistics / Protofluid / code-genome: structure, parity, genome stats — **not** importing transformer weights into the seed spine.
 3. **Neuron-zig bridge** — live bio-accurate mind stack on `I:\fsot-neuron-zig` (Lean wet-lab certificate, 0 free params on scalar path). Replaces “Living FSOT hardware” as the embodiment/bio direction.
+4. **FSOT-GPU CUDA system** — same pattern as your Desktop FSOT-GPU lab: own collapse θ / coherence gate / consensus (no softmax exp) / sparse active-key CUDA vs industry dense-SDPA, multi-lang parity, FSOT 2.1 verify bridge. Residual-gated into Lean as competitive + parity panels — **operators and seeds**, not weight import.
 
 ---
 
@@ -53,11 +54,38 @@ That is a real architectural opposition, not a temporary bug:
 ## Commands
 
 ```powershell
-python -c "import sys; sys.path.insert(0,'scripts'); from engineering_code_bridge_lib import *; import json; from pathlib import Path
-for name, fn in BUILDERS.items():
-  d=fn(); p=output_path(name); p.write_text(json.dumps(d, indent=2), encoding='utf-8'); print(name, d.get('record_count'), d.get('median_error_pct'))"
+python scripts/build_fsot_gpu_cuda_bridge.py
+python scripts/build_engineering_code_bridge.py
 python scripts/audit_all_benchmark_margins.py
 ```
+
+GPU-only (when Desktop FSOT-GPU ledgers are present):
+
+```powershell
+python scripts/build_fsot_gpu_cuda_bridge.py
+```
+
+---
+
+## FSOT-GPU pattern (what the CUDA system already does)
+
+Your FSOT-GPU repo (`Desktop\gpu exparment for lean coq isabell andf star`) is the silicon twin of the theory hub:
+
+| Layer | GPU repo | Lean bridge |
+|-------|----------|-------------|
+| Seeds / collapse θ = `C_eff·P_var` | `fsot_lib/seeds.py`, golden, beat_cuda | residual vs `vendor/fsot_compute` |
+| Formal contracts | Lean/Coq/Isabelle/F\* trinary + GpuMemory | device-file + parity layer gates |
+| CUDA kernels | sparse consensus, beat_cuda, attn DLL | competitive win-fraction process gates |
+| Industry host | SmolLM2 pure-FSOT attention (optional) | **not** absorbed into seed spine |
+| Verify | `industry_lm/fsot21_verify.py` PASS | parity/verify panel |
+
+**Claim class:** beat industry *CUDA algorithm stack* with FSOT structure (A ≪ S), not “import free-param weights as physics.”
+
+Panels:
+
+- `data/fsot_gpu_cuda_competitive_panel_benchmark.json`
+- `data/fsot_gpu_parity_verify_panel_benchmark.json`
+- `data/fsot_gpu_engineering_spine_benchmark.json` (GPU + ESP32 + coding rollup)
 
 ---
 
@@ -66,4 +94,5 @@ python scripts/audit_all_benchmark_margins.py
 - `I:\fsot-neuron-zig` — live bio mind + Lean wet-lab certificate  
 - `I:\Protofluid-Language-Translator-2.0-Zig` — multi-lang densify ship baseline  
 - `Desktop\fsot code language` — multi-implementation FSOT language parity  
+- `Desktop\gpu exparment for lean coq isabell andf star` — **FSOT-GPU** (CUDA consensus stack)  
 - `verification/esp32/fsot_esp32_observer` — existing ESP32 Rust observer firmware  

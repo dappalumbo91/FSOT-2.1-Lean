@@ -337,7 +337,7 @@ def build_coding_structure_verifier_panel() -> dict:
 
 
 def build_engineering_hardware_code_spine() -> dict:
-    """Roll ESP32 engineering + coding verifier + circuit spine into one map."""
+    """Roll ESP32 + coding verifier + circuit + FSOT-GPU CUDA into one map."""
     _, authority = _load_fsot()
     records: list[dict] = []
     errs: list[float] = []
@@ -346,6 +346,8 @@ def build_engineering_hardware_code_spine() -> dict:
         DATA / "coding_structure_verifier_panel_benchmark.json",
         DATA / "tier_96_circuit_spine_benchmark.json",
         DATA / "schematic_netlist_intrinsic_panel_benchmark.json",
+        DATA / "fsot_gpu_cuda_competitive_panel_benchmark.json",
+        DATA / "fsot_gpu_parity_verify_panel_benchmark.json",
     ):
         bench = _load_json(path)
         if not bench:
@@ -380,8 +382,14 @@ def build_engineering_hardware_code_spine() -> dict:
         maps_to_lean=["electron", "material", "energy", "mathematical", "ai"],
         d_eff=13,
         authority_path=authority,
-        source=["esp32_platform", "coding_structure_verifier", "tier96_circuit"],
-        channel_stats=[("engineering_spine", "hardware_code", errs or [0.0])],
+        source=[
+            "esp32_platform",
+            "coding_structure_verifier",
+            "tier96_circuit",
+            "fsot_gpu_cuda",
+            "fsot_gpu_parity_verify",
+        ],
+        channel_stats=[("engineering_spine", "hardware_code_gpu", errs or [0.0])],
         sota_baselines={
             "engineering_spine": {
                 "sota_typical_error_pct": 8.0,

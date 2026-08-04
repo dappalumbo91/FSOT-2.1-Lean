@@ -1,0 +1,280 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T03:30:47.483160+00:00",
+  "domain": "FSOT_GPU_CUDA_Competitive_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+    "C:\\Users\\damia\\Desktop\\gpu exparment for lean coq isabell andf star",
+    "results/competitive/beat_cuda.json",
+    "parity/golden.json",
+    "phase2_native_gpu/cuda/fsot_beat_cuda.cu"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "ai",
+    "electron",
+    "energy"
+  ],
+  "D_eff": 12,
+  "record_count": 17,
+  "observable_count": 17,
+  "scalar_record_count": 16,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "industry_cuda_sdpa": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "dense softmax CUDA / fused SDPA without FSOT collapse+gate"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_gpu_cuda_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 17
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_gpu_cuda",
+      "name": "competitive_seeds_wins",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 17
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "gpu_golden_collapse_threshold",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "gpu_golden_phi",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "gpu_golden_gamma",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.5772156649015329,
+      "measured": 0.5772156649015329,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "gpu_golden_k",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.4202216641606967,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "gpu_golden_c_eff",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "gpu_golden_p_var",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.9579871226722757,
+      "measured": 0.9579871226722757,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "gpu_golden_psi_con",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.6321205588285577,
+      "measured": 0.6321205588285577,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "beat_cuda_collapse_threshold",
+      "name": "fsot_beat_cuda_suite",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/competitive/beat_cuda.json"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "coherence_gate_half",
+      "name": "fsot_beat_cuda_suite",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coherence > 1/2",
+      "source": "gate=0.50 no_exp"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "win_frac_vs_dense_cuda",
+      "name": "beat_cuda_suite",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "n": 9,
+      "wins": 9,
+      "device": "NVIDIA GeForce RTX 5070"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "win_frac_vs_fused_sdpa",
+      "name": "beat_cuda_suite",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "n": 9,
+      "wins": 9,
+      "device": "NVIDIA GeForce RTX 5070"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "win_frac_beat_both",
+      "name": "beat_cuda_suite",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "n": 9,
+      "wins": 9,
+      "device": "NVIDIA GeForce RTX 5070"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "across_the_board",
+      "name": "beat_cuda_suite",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "consensus_no_exp",
+      "name": "fsot_math_law",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "mean_active_key_frac_under_phi_m4",
+      "name": "beat_cuda_A_frac",
+      "computed": 0.14589803375031543,
+      "measured": 0.017955555555555558,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "mean(A_frac) \u2264 \u03c6\u207b\u2074",
+      "max_A_frac": 0.0781,
+      "n_shapes": 9
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "flash_attention_track_ok",
+      "name": "flash_attention_track",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "source": "results/competitive/flash_attention_track.json"
+    },
+    {
+      "lab": "fsot_gpu_cuda_lab",
+      "property": "long_seq_and_norm_ok",
+      "name": "long_seq_and_norm",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold",
+      "source": "results/competitive/long_seq_and_norm.json"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

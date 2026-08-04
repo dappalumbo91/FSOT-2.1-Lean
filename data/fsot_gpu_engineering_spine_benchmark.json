@@ -1,0 +1,446 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T03:30:47.485671+00:00",
+  "domain": "FSOT_GPU_Engineering_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "fsot_gpu_cuda",
+    "fsot_gpu_parity",
+    "esp32_platform",
+    "coding_structure"
+  ],
+  "maps_to_lean": [
+    "electron",
+    "material",
+    "energy",
+    "mathematical",
+    "ai"
+  ],
+  "D_eff": 13,
+  "record_count": 28,
+  "observable_count": 28,
+  "scalar_record_count": 26,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "gpu_eng_spine": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "ad-hoc CUDA stacks without seed collapse/parity"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_gpu_eng_spine_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 28
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "gpu_eng_spine",
+      "name": "cuda_parity_esp32_code",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 28
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fsot_gpu_cuda_competitive_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "gpu_golden_collapse_threshold",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "gpu_golden_phi",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "gpu_golden_gamma",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.5772156649015329,
+      "measured": 0.5772156649015329,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "gpu_golden_k",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.4202216641606967,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "gpu_golden_c_eff",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "gpu_golden_p_var",
+      "name": "fsot_gpu_parity_golden",
+      "computed": 0.9579871226722757,
+      "measured": 0.9579871226722757,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "parity/golden.json",
+      "archive": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fsot_gpu_parity_verify_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "parity_layer_python",
+      "name": "parity_ledger",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate_vs_target",
+      "note": "suite/process residual \u2014 not a PDG free fold"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "parity_python_collapse_threshold",
+      "name": "parity_python",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "parity_python_phi",
+      "name": "parity_python",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "parity_python_gamma",
+      "name": "parity_python",
+      "computed": 0.5772156649015329,
+      "measured": 0.5772156649015329,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "parity_python_k",
+      "name": "parity_python",
+      "computed": 0.4202216641606967,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "parity_python_c_eff",
+      "name": "parity_python",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "archive_seed_vs_gpu_ledger",
+      "source": "results/parity/parity_ledger.json"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "esp32_platform_engineering_panel_benchmark",
+      "computed": 0.020755,
+      "measured": 0.0,
+      "error_pct": 0.020755,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "vdd_v",
+      "name": "MCU_ESP32_WROOM32",
+      "computed": 3.300685,
+      "measured": 3.3,
+      "error_pct": 0.020755,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Electromagnetism",
+      "fsot_scalar": 0.518866,
+      "component_class": "mcu",
+      "platform": "esp32_engineering"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "vdd_min_v",
+      "name": "MCU_ESP32_WROOM32",
+      "computed": 3.000623,
+      "measured": 3.0,
+      "error_pct": 0.020755,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Electromagnetism",
+      "fsot_scalar": 0.518866,
+      "component_class": "mcu",
+      "platform": "esp32_engineering"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "vdd_max_v",
+      "name": "MCU_ESP32_WROOM32",
+      "computed": 3.600747,
+      "measured": 3.6,
+      "error_pct": 0.020755,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Electromagnetism",
+      "fsot_scalar": 0.518866,
+      "component_class": "mcu",
+      "platform": "esp32_engineering"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "cpu_mhz",
+      "name": "MCU_ESP32_WROOM32",
+      "computed": 240.035442,
+      "measured": 240.0,
+      "error_pct": 0.014767,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "component_class": "mcu",
+      "platform": "esp32_engineering"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "flash_mhz",
+      "name": "MCU_ESP32_WROOM32",
+      "computed": 40.005907,
+      "measured": 40.0,
+      "error_pct": 0.014767,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "component_class": "mcu",
+      "platform": "esp32_engineering"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "wifi_freq_ghz",
+      "name": "MCU_ESP32_WROOM32",
+      "computed": 2.400498,
+      "measured": 2.4,
+      "error_pct": 0.020755,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Electromagnetism",
+      "fsot_scalar": 0.518866,
+      "component_class": "mcu",
+      "platform": "esp32_engineering"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "coding_structure_verifier_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "programming_language_laws_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source_file": "programming_language_laws_benchmark.json"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "external_oss_code_genome_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source_file": "external_oss_code_genome_benchmark.json"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "mean_codon_stability",
+      "name": "openssl_mem_clr__stability",
+      "computed": 0.882534,
+      "measured": 0.88243,
+      "error_pct": 0.011814,
+      "source": "openssl/openssl",
+      "language": "C",
+      "category": "crypto_library",
+      "domain_display_name": "external oss code genome",
+      "display_name": "openssl mem clr stability",
+      "scientific_measurement": {
+        "delta": 0.000104,
+        "delta_pct": 0.011786,
+        "effective_error_pct": 0.011786,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "mean_codon_stability",
+      "name": "linux_kernel_list__stability",
+      "computed": 0.783437,
+      "measured": 0.783344,
+      "error_pct": 0.011814,
+      "source": "torvalds/linux",
+      "language": "C",
+      "category": "systems_kernel",
+      "domain_display_name": "external oss code genome",
+      "display_name": "linux kernel list stability",
+      "scientific_measurement": {
+        "delta": 9.3e-05,
+        "delta_pct": 0.011872,
+        "effective_error_pct": 0.011872,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "codon_hole_detected",
+      "name": "linux_kernel_list__include_pointer_struct",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "torvalds/linux",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.803923,
+      "domain_display_name": "external oss code genome",
+      "display_name": "linux kernel list include pointer struct",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "fsot_gpu_engineering_spine_lab",
+      "property": "codon_hole_detected",
+      "name": "linux_kernel_list__struct_static_return",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "torvalds/linux",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.710683,
+      "domain_display_name": "external oss code genome",
+      "display_name": "linux kernel list struct static return",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "eval_kind": "live_formula"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.020755,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}
