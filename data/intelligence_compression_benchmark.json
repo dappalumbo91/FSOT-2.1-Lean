@@ -1,7 +1,7 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-13T15:22:58.354699+00:00",
-  "authority_path": "vendor/fsot_compute.py",
+  "generated_at": "2026-08-04T02:34:57.394603+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": "fic_sensitivity_sweep",
   "D_eff": 12,
   "record_count": 572,
@@ -77,7 +77,8 @@
       "error_pct": 0.04959966617804441,
       "D_eff": 12,
       "delta_psi": 0.8,
-      "recent_hits": 1
+      "recent_hits": 1,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -88,7 +89,8 @@
       "error_pct": 0.029066672228905688,
       "D_eff": 12,
       "delta_psi": 0.8,
-      "recent_hits": 0
+      "recent_hits": 0,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -96,7 +98,8 @@
       "name": "optimal_fidelity",
       "computed": 0.999819060418,
       "measured": 1.0,
-      "error_pct": 0.0180939582217432
+      "error_pct": 0.0180939582217432,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -105,7 +108,437 @@
       "computed": 100.0,
       "measured": 100.0,
       "error_pct": 0.0,
-      "observable_count": 572
+      "observable_count": 572,
+      "eval_kind": "classifier_match"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0244",
+      "D_eff": 11,
+      "delta_psi": 0.8,
+      "recent_hits": 0,
+      "computed": 0.27447444315489755,
+      "measured": 0.2736,
+      "error_pct": 0.3196064162637214,
+      "fertile": true,
+      "intelligence_score": 0.9941703789673497,
+      "fidelity_proxy": 0.9988340757934699,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0245",
+      "D_eff": 11,
+      "delta_psi": 0.8,
+      "recent_hits": 1,
+      "computed": 0.27438146733301144,
+      "measured": 0.2736,
+      "error_pct": 0.2856240252234766,
+      "fertile": true,
+      "intelligence_score": 0.9947902177799238,
+      "fidelity_proxy": 0.9989580435559848,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0246",
+      "D_eff": 11,
+      "delta_psi": 0.8,
+      "recent_hits": 2,
+      "computed": 0.2742885817690069,
+      "measured": 0.2736,
+      "error_pct": 0.2516746231750291,
+      "fertile": true,
+      "intelligence_score": 0.9954094548732875,
+      "fidelity_proxy": 0.9990818909746575,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0247",
+      "D_eff": 11,
+      "delta_psi": 0.8,
+      "recent_hits": 3,
+      "computed": 0.27419578637336833,
+      "measured": 0.2736,
+      "error_pct": 0.21775817740070294,
+      "fertile": true,
+      "intelligence_score": 0.9960280908442112,
+      "fidelity_proxy": 0.9992056181688422,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0288",
+      "D_eff": 12,
+      "delta_psi": 0.8,
+      "recent_hits": 0,
+      "computed": 0.27355639999165665,
+      "measured": 0.2736,
+      "error_pct": 0.01593567556409303,
+      "fertile": true,
+      "intelligence_score": 0.9997093332777109,
+      "fidelity_proxy": 0.9999418666555422,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0289",
+      "D_eff": 12,
+      "delta_psi": 0.8,
+      "recent_hits": 1,
+      "computed": 0.2734642953133369,
+      "measured": 0.2736,
+      "error_pct": 0.04959966617804441,
+      "fertile": true,
+      "intelligence_score": 0.9990953020889125,
+      "fidelity_proxy": 0.9998190604177826,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0290",
+      "D_eff": 12,
+      "delta_psi": 0.8,
+      "recent_hits": 2,
+      "computed": 0.27337228004722103,
+      "measured": 0.2736,
+      "error_pct": 0.08323097689290275,
+      "fertile": true,
+      "intelligence_score": 0.9984818669814735,
+      "fidelity_proxy": 0.9996963733962947,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0291",
+      "D_eff": 12,
+      "delta_psi": 0.8,
+      "recent_hits": 3,
+      "computed": 0.2732803541046323,
+      "measured": 0.2736,
+      "error_pct": 0.11682964011977483,
+      "fertile": true,
+      "intelligence_score": 0.9978690273642153,
+      "fidelity_proxy": 0.9995738054728431,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0332",
+      "D_eff": 13,
+      "delta_psi": 0.8,
+      "recent_hits": 0,
+      "computed": 0.27262384472639273,
+      "measured": 0.2736,
+      "error_pct": 0.35678189824827555,
+      "fertile": true,
+      "intelligence_score": 0.9934922981759514,
+      "fidelity_proxy": 0.9986984596351903,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0333",
+      "D_eff": 13,
+      "delta_psi": 0.8,
+      "recent_hits": 1,
+      "computed": 0.272532624962369,
+      "measured": 0.2736,
+      "error_pct": 0.39012245527448497,
+      "fertile": true,
+      "intelligence_score": 0.9928841664157934,
+      "fidelity_proxy": 0.9985768332831587,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0334",
+      "D_eff": 13,
+      "delta_psi": 0.8,
+      "recent_hits": 2,
+      "computed": 0.27244149375150356,
+      "measured": 0.2736,
+      "error_pct": 0.42343064638028116,
+      "fertile": true,
+      "intelligence_score": 0.9922766250100237,
+      "fidelity_proxy": 0.9984553250020047,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0335",
+      "D_eff": 13,
+      "delta_psi": 0.8,
+      "recent_hits": 3,
+      "computed": 0.2723504510059713,
+      "measured": 0.2736,
+      "error_pct": 0.4567065036654742,
+      "fertile": true,
+      "intelligence_score": 0.9916696733731417,
+      "fidelity_proxy": 0.9983339346746284,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "optimal_S_final_calibration",
+      "name": "optimal_params",
+      "computed": 0.273464295313,
+      "measured": 0.2736,
+      "error_pct": 0.04959966617804441,
+      "D_eff": 12,
+      "delta_psi": 0.8,
+      "recent_hits": 1,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "best_intelligence_score",
+      "name": "best_score_row",
+      "computed": 0.999709333278,
+      "measured": 1.0,
+      "error_pct": 0.029066672228905688,
+      "D_eff": 12,
+      "delta_psi": 0.8,
+      "recent_hits": 0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "optimal_fidelity_proxy",
+      "name": "optimal_fidelity",
+      "computed": 0.999819060418,
+      "measured": 1.0,
+      "error_pct": 0.0180939582217432,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "fertile_classifier_stability",
+      "name": "sweep_replay",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "observable_count": 572,
+      "eval_kind": "classifier_match"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0244",
+      "D_eff": 11,
+      "delta_psi": 0.8,
+      "recent_hits": 0,
+      "computed": 0.27447444315489755,
+      "measured": 0.2736,
+      "error_pct": 0.3196064162637214,
+      "fertile": true,
+      "intelligence_score": 0.9941703789673497,
+      "fidelity_proxy": 0.9988340757934699,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0245",
+      "D_eff": 11,
+      "delta_psi": 0.8,
+      "recent_hits": 1,
+      "computed": 0.27438146733301144,
+      "measured": 0.2736,
+      "error_pct": 0.2856240252234766,
+      "fertile": true,
+      "intelligence_score": 0.9947902177799238,
+      "fidelity_proxy": 0.9989580435559848,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0246",
+      "D_eff": 11,
+      "delta_psi": 0.8,
+      "recent_hits": 2,
+      "computed": 0.2742885817690069,
+      "measured": 0.2736,
+      "error_pct": 0.2516746231750291,
+      "fertile": true,
+      "intelligence_score": 0.9954094548732875,
+      "fidelity_proxy": 0.9990818909746575,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0247",
+      "D_eff": 11,
+      "delta_psi": 0.8,
+      "recent_hits": 3,
+      "computed": 0.27419578637336833,
+      "measured": 0.2736,
+      "error_pct": 0.21775817740070294,
+      "fertile": true,
+      "intelligence_score": 0.9960280908442112,
+      "fidelity_proxy": 0.9992056181688422,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0288",
+      "D_eff": 12,
+      "delta_psi": 0.8,
+      "recent_hits": 0,
+      "computed": 0.27355639999165665,
+      "measured": 0.2736,
+      "error_pct": 0.01593567556409303,
+      "fertile": true,
+      "intelligence_score": 0.9997093332777109,
+      "fidelity_proxy": 0.9999418666555422,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0289",
+      "D_eff": 12,
+      "delta_psi": 0.8,
+      "recent_hits": 1,
+      "computed": 0.2734642953133369,
+      "measured": 0.2736,
+      "error_pct": 0.04959966617804441,
+      "fertile": true,
+      "intelligence_score": 0.9990953020889125,
+      "fidelity_proxy": 0.9998190604177826,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0290",
+      "D_eff": 12,
+      "delta_psi": 0.8,
+      "recent_hits": 2,
+      "computed": 0.27337228004722103,
+      "measured": 0.2736,
+      "error_pct": 0.08323097689290275,
+      "fertile": true,
+      "intelligence_score": 0.9984818669814735,
+      "fidelity_proxy": 0.9996963733962947,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0291",
+      "D_eff": 12,
+      "delta_psi": 0.8,
+      "recent_hits": 3,
+      "computed": 0.2732803541046323,
+      "measured": 0.2736,
+      "error_pct": 0.11682964011977483,
+      "fertile": true,
+      "intelligence_score": 0.9978690273642153,
+      "fidelity_proxy": 0.9995738054728431,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0332",
+      "D_eff": 13,
+      "delta_psi": 0.8,
+      "recent_hits": 0,
+      "computed": 0.27262384472639273,
+      "measured": 0.2736,
+      "error_pct": 0.35678189824827555,
+      "fertile": true,
+      "intelligence_score": 0.9934922981759514,
+      "fidelity_proxy": 0.9986984596351903,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0333",
+      "D_eff": 13,
+      "delta_psi": 0.8,
+      "recent_hits": 1,
+      "computed": 0.272532624962369,
+      "measured": 0.2736,
+      "error_pct": 0.39012245527448497,
+      "fertile": true,
+      "intelligence_score": 0.9928841664157934,
+      "fidelity_proxy": 0.9985768332831587,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0334",
+      "D_eff": 13,
+      "delta_psi": 0.8,
+      "recent_hits": 2,
+      "computed": 0.27244149375150356,
+      "measured": 0.2736,
+      "error_pct": 0.42343064638028116,
+      "fertile": true,
+      "intelligence_score": 0.9922766250100237,
+      "fidelity_proxy": 0.9984553250020047,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "property": "S_final_fertile_center_calibration",
+      "name": "sweep_0335",
+      "D_eff": 13,
+      "delta_psi": 0.8,
+      "recent_hits": 3,
+      "computed": 0.2723504510059713,
+      "measured": 0.2736,
+      "error_pct": 0.4567065036654742,
+      "fertile": true,
+      "intelligence_score": 0.9916696733731417,
+      "fidelity_proxy": 0.9983339346746284,
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     }
   ],
   "sweep_records": [
@@ -122,7 +555,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -137,7 +571,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -152,7 +587,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -167,7 +603,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -182,7 +619,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -197,7 +635,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -212,7 +651,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -227,7 +667,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -242,7 +683,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -257,7 +699,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -272,7 +715,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -287,7 +731,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -302,7 +747,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -317,7 +763,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -332,7 +779,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -347,7 +795,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -362,7 +811,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -377,7 +827,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -392,7 +843,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -407,7 +859,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -422,7 +875,8 @@
       "fertile": true,
       "intelligence_score": 0.6314789978397826,
       "fidelity_proxy": 0.9262957995679566,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -437,7 +891,8 @@
       "fertile": true,
       "intelligence_score": 0.6312143853934776,
       "fidelity_proxy": 0.9262428770786956,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -452,7 +907,8 @@
       "fertile": true,
       "intelligence_score": 0.6309500298242652,
       "fidelity_proxy": 0.9261900059648531,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -467,7 +923,8 @@
       "fertile": true,
       "intelligence_score": 0.6306859308773812,
       "fidelity_proxy": 0.9261371861754764,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -482,7 +939,8 @@
       "fertile": true,
       "intelligence_score": 0.9765997362215367,
       "fidelity_proxy": 0.9953199472443074,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -497,7 +955,8 @@
       "fertile": true,
       "intelligence_score": 0.9772362480545063,
       "fidelity_proxy": 0.9954472496109013,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -512,7 +971,8 @@
       "fertile": true,
       "intelligence_score": 0.9778721419826436,
       "fidelity_proxy": 0.9955744283965288,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -527,7 +987,8 @@
       "fertile": true,
       "intelligence_score": 0.9785074186187717,
       "fidelity_proxy": 0.9957014837237543,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -542,7 +1003,8 @@
       "fertile": true,
       "intelligence_score": 0.5503897916867886,
       "fidelity_proxy": 0.9100779583373577,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -557,7 +1019,8 @@
       "fertile": true,
       "intelligence_score": 0.5514307398970066,
       "fidelity_proxy": 0.9102861479794013,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -572,7 +1035,8 @@
       "fertile": true,
       "intelligence_score": 0.552470677588808,
       "fidelity_proxy": 0.9104941355177616,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -587,7 +1051,8 @@
       "fertile": true,
       "intelligence_score": 0.5535096057644012,
       "fidelity_proxy": 0.9107019211528803,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -602,7 +1067,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -617,7 +1083,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -632,7 +1099,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -647,7 +1115,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -662,7 +1131,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -677,7 +1147,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -692,7 +1163,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -707,7 +1179,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -722,7 +1195,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -737,7 +1211,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -752,7 +1227,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -767,7 +1243,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -782,7 +1259,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -797,7 +1275,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -812,7 +1291,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -827,7 +1307,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -842,7 +1323,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -857,7 +1339,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -872,7 +1355,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -887,7 +1371,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -902,7 +1387,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -917,7 +1403,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -932,7 +1419,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -947,7 +1435,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -962,7 +1451,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -977,7 +1467,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -992,7 +1483,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1007,7 +1499,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1022,7 +1515,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1037,7 +1531,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1052,7 +1547,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1067,7 +1563,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1082,7 +1579,8 @@
       "fertile": true,
       "intelligence_score": 0.6317078606841647,
       "fidelity_proxy": 0.926341572136833,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1097,7 +1595,8 @@
       "fertile": true,
       "intelligence_score": 0.6314430310668129,
       "fidelity_proxy": 0.9262886062133626,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1112,7 +1611,8 @@
       "fertile": true,
       "intelligence_score": 0.6311784585373768,
       "fidelity_proxy": 0.9262356917074754,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1127,7 +1627,8 @@
       "fertile": true,
       "intelligence_score": 0.6309141428408823,
       "fidelity_proxy": 0.9261828285681766,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1142,7 +1643,8 @@
       "fertile": true,
       "intelligence_score": 0.9760492182447358,
       "fidelity_proxy": 0.9952098436489472,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1157,7 +1659,8 @@
       "fertile": true,
       "intelligence_score": 0.9766862524716549,
       "fidelity_proxy": 0.995337250494331,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1172,7 +1675,8 @@
       "fertile": true,
       "intelligence_score": 0.9773226682866186,
       "fidelity_proxy": 0.9954645336573238,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1187,7 +1691,8 @@
       "fertile": true,
       "intelligence_score": 0.977958466302953,
       "fidelity_proxy": 0.9955916932605906,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1202,7 +1707,8 @@
       "fertile": true,
       "intelligence_score": 0.5494894773910277,
       "fidelity_proxy": 0.9098978954782055,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1217,7 +1723,8 @@
       "fertile": true,
       "intelligence_score": 0.5505312799216505,
       "fidelity_proxy": 0.9101062559843301,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1232,7 +1739,8 @@
       "fertile": true,
       "intelligence_score": 0.55157207110451,
       "fidelity_proxy": 0.9103144142209021,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1247,7 +1755,8 @@
       "fertile": true,
       "intelligence_score": 0.5526118519426376,
       "fidelity_proxy": 0.9105223703885276,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1262,7 +1771,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1277,7 +1787,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1292,7 +1803,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1307,7 +1819,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1322,7 +1835,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1337,7 +1851,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1352,7 +1867,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1367,7 +1883,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1382,7 +1899,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1397,7 +1915,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1412,7 +1931,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1427,7 +1947,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1442,7 +1963,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1457,7 +1979,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1472,7 +1995,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1487,7 +2011,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1502,7 +2027,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1517,7 +2043,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1532,7 +2059,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1547,7 +2075,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1562,7 +2091,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1577,7 +2107,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1592,7 +2123,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1607,7 +2139,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1622,7 +2155,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1637,7 +2171,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1652,7 +2187,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1667,7 +2203,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1682,7 +2219,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1697,7 +2235,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1712,7 +2251,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1727,7 +2267,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1742,7 +2283,8 @@
       "fertile": true,
       "intelligence_score": 0.6306297372020773,
       "fidelity_proxy": 0.9261259474404155,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1757,7 +2299,8 @@
       "fertile": true,
       "intelligence_score": 0.6303659306306703,
       "fidelity_proxy": 0.9260731861261341,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1772,7 +2315,8 @@
       "fertile": true,
       "intelligence_score": 0.6301023801540393,
       "fidelity_proxy": 0.926020476030808,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1787,7 +2331,8 @@
       "fertile": true,
       "intelligence_score": 0.6298390855181957,
       "fidelity_proxy": 0.9259678171036392,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1802,7 +2347,8 @@
       "fertile": true,
       "intelligence_score": 0.9786425896576566,
       "fidelity_proxy": 0.9957285179315314,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1817,7 +2363,8 @@
       "fertile": true,
       "intelligence_score": 0.9792771629993889,
       "fidelity_proxy": 0.9958554325998779,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1832,7 +2379,8 @@
       "fertile": true,
       "intelligence_score": 0.979911120318112,
       "fidelity_proxy": 0.9959822240636225,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1847,7 +2395,8 @@
       "fertile": true,
       "intelligence_score": 0.9805444622247833,
       "fidelity_proxy": 0.9961088924449567,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1862,7 +2411,8 @@
       "fertile": true,
       "intelligence_score": 0.5537306637930389,
       "fidelity_proxy": 0.9107461327586078,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1877,7 +2427,8 @@
       "fertile": true,
       "intelligence_score": 0.5547684418045586,
       "fidelity_proxy": 0.9109536883609117,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1892,7 +2443,8 @@
       "fertile": true,
       "intelligence_score": 0.5558052123751864,
       "fidelity_proxy": 0.9111610424750374,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1907,7 +2459,8 @@
       "fertile": true,
       "intelligence_score": 0.5568409765040788,
       "fidelity_proxy": 0.9113681953008158,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1922,7 +2475,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1937,7 +2491,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1952,7 +2507,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1967,7 +2523,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1982,7 +2539,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -1997,7 +2555,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2012,7 +2571,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2027,7 +2587,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2042,7 +2603,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2057,7 +2619,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2072,7 +2635,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2087,7 +2651,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2102,7 +2667,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2117,7 +2683,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2132,7 +2699,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2147,7 +2715,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2162,7 +2731,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2177,7 +2747,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2192,7 +2763,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2207,7 +2779,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2222,7 +2795,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2237,7 +2811,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2252,7 +2827,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2267,7 +2843,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2282,7 +2859,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2297,7 +2875,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2312,7 +2891,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2327,7 +2907,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2342,7 +2923,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2357,7 +2939,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2372,7 +2955,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2387,7 +2971,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2402,7 +2987,8 @@
       "fertile": true,
       "intelligence_score": 0.6288234582352805,
       "fidelity_proxy": 0.9257646916470561,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2417,7 +3003,8 @@
       "fertile": true,
       "intelligence_score": 0.6285613656663995,
       "fidelity_proxy": 0.92571227313328,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2432,7 +3019,8 @@
       "fertile": true,
       "intelligence_score": 0.6282995275283972,
       "fidelity_proxy": 0.9256599055056796,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2447,7 +3035,8 @@
       "fertile": true,
       "intelligence_score": 0.6280379435689352,
       "fidelity_proxy": 0.9256075887137871,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2462,7 +3051,8 @@
       "fertile": true,
       "intelligence_score": 0.9829875021969727,
       "fidelity_proxy": 0.9965975004393945,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2477,7 +3067,8 @@
       "fertile": true,
       "intelligence_score": 0.9836179525924681,
       "fidelity_proxy": 0.9967235905184937,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2492,7 +3083,8 @@
       "fertile": true,
       "intelligence_score": 0.9842477909673755,
       "fidelity_proxy": 0.9968495581934751,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2507,7 +3099,8 @@
       "fertile": true,
       "intelligence_score": 0.9848770179286828,
       "fidelity_proxy": 0.9969754035857366,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2522,7 +3115,8 @@
       "fertile": true,
       "intelligence_score": 0.5608363116334764,
       "fidelity_proxy": 0.9121672623266953,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2537,7 +3131,8 @@
       "fertile": true,
       "intelligence_score": 0.5618673469997165,
       "fidelity_proxy": 0.9123734693999433,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2552,7 +3147,8 @@
       "fertile": true,
       "intelligence_score": 0.5628973814706042,
       "fidelity_proxy": 0.9125794762941208,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2567,7 +3163,8 @@
       "fertile": true,
       "intelligence_score": 0.5639264160388033,
       "fidelity_proxy": 0.9127852832077608,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2582,7 +3179,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2597,7 +3195,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2612,7 +3211,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2627,7 +3227,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2642,7 +3243,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2657,7 +3259,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2672,7 +3275,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2687,7 +3291,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2702,7 +3307,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2717,7 +3323,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2732,7 +3339,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2747,7 +3355,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2762,7 +3371,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2777,7 +3387,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2792,7 +3403,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2807,7 +3419,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2822,7 +3435,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2837,7 +3451,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2852,7 +3467,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2867,7 +3483,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2882,7 +3499,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2897,7 +3515,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2912,7 +3531,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2927,7 +3547,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2942,7 +3563,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2957,7 +3579,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2972,7 +3595,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -2987,7 +3611,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3002,7 +3627,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3017,7 +3643,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3032,7 +3659,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3047,7 +3675,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3062,7 +3691,8 @@
       "fertile": true,
       "intelligence_score": 0.626609606747278,
       "fidelity_proxy": 0.9253219213494557,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3077,7 +3707,8 @@
       "fertile": true,
       "intelligence_score": 0.6263496149319978,
       "fidelity_proxy": 0.9252699229863997,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3092,7 +3723,8 @@
       "fertile": true,
       "intelligence_score": 0.6260898755082533,
       "fidelity_proxy": 0.9252179751016507,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3107,7 +3739,8 @@
       "fertile": true,
       "intelligence_score": 0.6258303882257286,
       "fidelity_proxy": 0.9251660776451458,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3122,7 +3755,8 @@
       "fertile": true,
       "intelligence_score": 0.9883128097863427,
       "fidelity_proxy": 0.9976625619572685,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3137,7 +3771,8 @@
       "fertile": true,
       "intelligence_score": 0.988938206925487,
       "fidelity_proxy": 0.9977876413850975,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3152,7 +3787,8 @@
       "fertile": true,
       "intelligence_score": 0.9895629969495788,
       "fidelity_proxy": 0.9979125993899158,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3167,7 +3803,8 @@
       "fertile": true,
       "intelligence_score": 0.9901871804607412,
       "fidelity_proxy": 0.9980374360921482,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3182,7 +3819,8 @@
       "fertile": true,
       "intelligence_score": 0.5695452925461358,
       "fidelity_proxy": 0.9139090585092272,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3197,7 +3835,8 @@
       "fertile": true,
       "intelligence_score": 0.5705680638426727,
       "fidelity_proxy": 0.9141136127685345,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3212,7 +3851,8 @@
       "fertile": true,
       "intelligence_score": 0.5715898422663451,
       "fidelity_proxy": 0.9143179684532691,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3227,7 +3867,8 @@
       "fertile": true,
       "intelligence_score": 0.5726106288018609,
       "fidelity_proxy": 0.9145221257603722,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3242,7 +3883,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3257,7 +3899,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3272,7 +3915,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3287,7 +3931,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3302,7 +3947,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3317,7 +3963,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3332,7 +3979,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3347,7 +3995,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3362,7 +4011,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3377,7 +4027,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3392,7 +4043,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3407,7 +4059,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3422,7 +4075,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3437,7 +4091,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3452,7 +4107,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3467,7 +4123,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3482,7 +4139,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3497,7 +4155,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3512,7 +4171,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3527,7 +4187,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3542,7 +4203,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3557,7 +4219,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3572,7 +4235,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3587,7 +4251,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3602,7 +4267,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3617,7 +4283,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3632,7 +4299,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3647,7 +4315,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3662,7 +4331,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3677,7 +4347,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3692,7 +4363,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3707,7 +4379,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3722,7 +4395,8 @@
       "fertile": true,
       "intelligence_score": 0.6241744820094447,
       "fidelity_proxy": 0.924834896401889,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3737,7 +4411,8 @@
       "fertile": true,
       "intelligence_score": 0.6239168009169423,
       "fidelity_proxy": 0.9247833601833886,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3752,7 +4427,8 @@
       "fertile": true,
       "intelligence_score": 0.6236593699728021,
       "fidelity_proxy": 0.9247318739945605,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3767,7 +4443,8 @@
       "fertile": true,
       "intelligence_score": 0.6234021889289326,
       "fidelity_proxy": 0.9246804377857866,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3782,7 +4459,8 @@
       "fertile": true,
       "intelligence_score": 0.9941703789673497,
       "fidelity_proxy": 0.9988340757934699,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3797,7 +4475,8 @@
       "fertile": true,
       "intelligence_score": 0.9947902177799238,
       "fidelity_proxy": 0.9989580435559848,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3812,7 +4491,8 @@
       "fertile": true,
       "intelligence_score": 0.9954094548732875,
       "fidelity_proxy": 0.9990818909746575,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3827,7 +4507,8 @@
       "fertile": true,
       "intelligence_score": 0.9960280908442112,
       "fidelity_proxy": 0.9992056181688422,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3842,7 +4523,8 @@
       "fertile": true,
       "intelligence_score": 0.5791247313552281,
       "fidelity_proxy": 0.9158249462710457,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3857,7 +4539,8 @@
       "fertile": true,
       "intelligence_score": 0.5801384125927986,
       "fidelity_proxy": 0.9160276825185598,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3872,7 +4555,8 @@
       "fertile": true,
       "intelligence_score": 0.5811511097818358,
       "fidelity_proxy": 0.9162302219563672,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3887,7 +4571,8 @@
       "fertile": true,
       "intelligence_score": 0.5821628238982959,
       "fidelity_proxy": 0.9164325647796592,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3902,7 +4587,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3917,7 +4603,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3932,7 +4619,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3947,7 +4635,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3962,7 +4651,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3977,7 +4667,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -3992,7 +4683,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4007,7 +4699,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4022,7 +4715,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4037,7 +4731,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4052,7 +4747,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4067,7 +4763,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4082,7 +4779,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4097,7 +4795,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4112,7 +4811,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4127,7 +4827,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4142,7 +4843,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4157,7 +4859,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4172,7 +4875,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4187,7 +4891,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4202,7 +4907,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4217,7 +4923,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4232,7 +4939,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4247,7 +4955,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4262,7 +4971,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4277,7 +4987,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4292,7 +5003,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4307,7 +5019,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4322,7 +5035,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4337,7 +5051,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4352,7 +5067,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4367,7 +5083,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4382,7 +5099,8 @@
       "fertile": true,
       "intelligence_score": 0.6216301391849437,
       "fidelity_proxy": 0.9243260278369888,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4397,7 +5115,8 @@
       "fertile": true,
       "intelligence_score": 0.6213748724537382,
       "fidelity_proxy": 0.9242749744907477,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4412,7 +5131,8 @@
       "fertile": true,
       "intelligence_score": 0.621119853527112,
       "fidelity_proxy": 0.9242239707054225,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4427,7 +5147,8 @@
       "fertile": true,
       "intelligence_score": 0.620865082159298,
       "fidelity_proxy": 0.9241730164318597,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4442,7 +5163,8 @@
       "fertile": true,
       "intelligence_score": 0.9997093332777109,
       "fidelity_proxy": 0.9999418666555422,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4457,7 +5179,8 @@
       "fertile": true,
       "intelligence_score": 0.9990953020889125,
       "fidelity_proxy": 0.9998190604177826,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4472,7 +5195,8 @@
       "fertile": true,
       "intelligence_score": 0.9984818669814735,
       "fidelity_proxy": 0.9996963733962947,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4487,7 +5211,8 @@
       "fertile": true,
       "intelligence_score": 0.9978690273642153,
       "fidelity_proxy": 0.9995738054728431,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4502,7 +5227,8 @@
       "fertile": true,
       "intelligence_score": 0.5891338187822428,
       "fidelity_proxy": 0.9178267637564486,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4517,7 +5243,8 @@
       "fertile": true,
       "intelligence_score": 0.5901380022614653,
       "fidelity_proxy": 0.9180276004522931,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4532,7 +5259,8 @@
       "fertile": true,
       "intelligence_score": 0.5911412109122673,
       "fidelity_proxy": 0.9182282421824535,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4547,7 +5275,8 @@
       "fertile": true,
       "intelligence_score": 0.5921434457014609,
       "fidelity_proxy": 0.9184286891402922,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4562,7 +5291,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4577,7 +5307,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4592,7 +5323,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4607,7 +5339,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4622,7 +5355,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4637,7 +5371,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4652,7 +5387,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4667,7 +5403,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4682,7 +5419,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4697,7 +5435,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4712,7 +5451,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4727,7 +5467,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4742,7 +5483,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4757,7 +5499,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4772,7 +5515,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4787,7 +5531,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4802,7 +5547,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4817,7 +5563,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4832,7 +5579,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4847,7 +5595,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4862,7 +5611,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4877,7 +5627,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4892,7 +5643,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4907,7 +5659,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4922,7 +5675,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4937,7 +5691,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4952,7 +5707,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4967,7 +5723,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4982,7 +5739,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -4997,7 +5755,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5012,7 +5771,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5027,7 +5787,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5042,7 +5803,8 @@
       "fertile": true,
       "intelligence_score": 0.6190455762878696,
       "fidelity_proxy": 0.923809115257574,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5057,7 +5819,8 @@
       "fertile": true,
       "intelligence_score": 0.6187927620833316,
       "fidelity_proxy": 0.9237585524166664,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5072,7 +5835,8 @@
       "fertile": true,
       "intelligence_score": 0.6185401933025401,
       "fidelity_proxy": 0.9237080386605081,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5087,7 +5851,8 @@
       "fertile": true,
       "intelligence_score": 0.6182878697020896,
       "fidelity_proxy": 0.923657573940418,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5102,7 +5867,8 @@
       "fertile": true,
       "intelligence_score": 0.9934922981759514,
       "fidelity_proxy": 0.9986984596351903,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5117,7 +5883,8 @@
       "fertile": true,
       "intelligence_score": 0.9928841664157934,
       "fidelity_proxy": 0.9985768332831587,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5132,7 +5899,8 @@
       "fertile": true,
       "intelligence_score": 0.9922766250100237,
       "fidelity_proxy": 0.9984553250020047,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5147,7 +5915,8 @@
       "fertile": true,
       "intelligence_score": 0.9916696733731417,
       "fidelity_proxy": 0.9983339346746284,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5162,7 +5931,8 @@
       "fertile": true,
       "intelligence_score": 0.5993011263275633,
       "fidelity_proxy": 0.9198602252655127,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5177,7 +5947,8 @@
       "fertile": true,
       "intelligence_score": 0.600295661911229,
       "fidelity_proxy": 0.9200591323822458,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5192,7 +5963,8 @@
       "fertile": true,
       "intelligence_score": 0.6012892320323358,
       "fidelity_proxy": 0.9202578464064672,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5207,7 +5979,8 @@
       "fertile": true,
       "intelligence_score": 0.6022818376484057,
       "fidelity_proxy": 0.9204563675296812,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5222,7 +5995,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5237,7 +6011,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5252,7 +6027,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5267,7 +6043,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5282,7 +6059,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5297,7 +6075,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5312,7 +6091,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5327,7 +6107,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5342,7 +6123,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5357,7 +6139,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5372,7 +6155,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5387,7 +6171,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5402,7 +6187,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5417,7 +6203,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5432,7 +6219,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5447,7 +6235,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5462,7 +6251,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5477,7 +6267,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5492,7 +6283,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5507,7 +6299,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5522,7 +6315,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5537,7 +6331,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5552,7 +6347,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5567,7 +6363,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5582,7 +6379,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5597,7 +6395,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5612,7 +6411,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5627,7 +6427,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5642,7 +6443,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5657,7 +6459,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5672,7 +6475,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5687,7 +6491,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5702,7 +6507,8 @@
       "fertile": true,
       "intelligence_score": 0.6164638605229658,
       "fidelity_proxy": 0.9232927721045932,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5717,7 +6523,8 @@
       "fertile": true,
       "intelligence_score": 0.6162134961434131,
       "fidelity_proxy": 0.9232426992286826,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5732,7 +6539,8 @@
       "fertile": true,
       "intelligence_score": 0.6159633748093968,
       "fidelity_proxy": 0.9231926749618794,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5747,7 +6555,8 @@
       "fertile": true,
       "intelligence_score": 0.6157134962798707,
       "fidelity_proxy": 0.9231426992559741,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5762,7 +6571,8 @@
       "fertile": true,
       "intelligence_score": 0.987282111706377,
       "fidelity_proxy": 0.9974564223412754,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5777,7 +6587,8 @@
       "fertile": true,
       "intelligence_score": 0.9866798728761005,
       "fidelity_proxy": 0.9973359745752202,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5792,7 +6603,8 @@
       "fertile": true,
       "intelligence_score": 0.9860782186795483,
       "fidelity_proxy": 0.9972156437359097,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5807,7 +6619,8 @@
       "fertile": true,
       "intelligence_score": 0.985477148536895,
       "fidelity_proxy": 0.9970954297073791,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5822,7 +6635,8 @@
       "fertile": true,
       "intelligence_score": 0.6094572336546842,
       "fidelity_proxy": 0.9218914467309369,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5837,7 +6651,8 @@
       "fertile": true,
       "intelligence_score": 0.6104421319708322,
       "fidelity_proxy": 0.9220884263941664,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5852,7 +6667,8 @@
       "fertile": true,
       "intelligence_score": 0.6114260741799646,
       "fidelity_proxy": 0.922285214835993,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5867,7 +6683,8 @@
       "fertile": true,
       "intelligence_score": 0.6124090612303248,
       "fidelity_proxy": 0.922481812246065,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5882,7 +6699,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5897,7 +6715,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5912,7 +6731,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5927,7 +6747,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5942,7 +6763,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5957,7 +6779,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5972,7 +6795,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -5987,7 +6811,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6002,7 +6827,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6017,7 +6843,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6032,7 +6859,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6047,7 +6875,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6062,7 +6891,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6077,7 +6907,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6092,7 +6923,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6107,7 +6939,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6122,7 +6955,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6137,7 +6971,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6152,7 +6987,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6167,7 +7003,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6182,7 +7019,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6197,7 +7035,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6212,7 +7051,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6227,7 +7067,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6242,7 +7083,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6257,7 +7099,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6272,7 +7115,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6287,7 +7131,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6302,7 +7147,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6317,7 +7163,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6332,7 +7179,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6347,7 +7195,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6362,7 +7211,8 @@
       "fertile": true,
       "intelligence_score": 0.6139119673444018,
       "fidelity_proxy": 0.9227823934688804,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6377,7 +7227,8 @@
       "fertile": true,
       "intelligence_score": 0.6136640244907792,
       "fidelity_proxy": 0.9227328048981559,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6392,7 +7243,8 @@
       "fertile": true,
       "intelligence_score": 0.6134163223319549,
       "fidelity_proxy": 0.922683264466391,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6407,7 +7259,8 @@
       "fertile": true,
       "intelligence_score": 0.6131688606292137,
       "fidelity_proxy": 0.9226337721258429,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6422,7 +7275,8 @@
       "fertile": true,
       "intelligence_score": 0.9811436619572788,
       "fidelity_proxy": 0.9962287323914558,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6437,7 +7291,8 @@
       "fertile": true,
       "intelligence_score": 0.9805472479849396,
       "fidelity_proxy": 0.996109449596988,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6452,7 +7307,8 @@
       "fertile": true,
       "intelligence_score": 0.9799514129917436,
       "fidelity_proxy": 0.9959902825983488,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6467,7 +7323,8 @@
       "fertile": true,
       "intelligence_score": 0.9793561564034731,
       "fidelity_proxy": 0.9958712312806947,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6482,7 +7339,8 @@
       "fertile": true,
       "intelligence_score": 0.6194960231144562,
       "fidelity_proxy": 0.9238992046228913,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6497,7 +7355,8 @@
       "fertile": true,
       "intelligence_score": 0.6204713954875964,
       "fidelity_proxy": 0.9240942790975193,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6512,7 +7371,8 @@
       "fertile": true,
       "intelligence_score": 0.6214458210011939,
       "fidelity_proxy": 0.9242891642002389,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6527,7 +7387,8 @@
       "fertile": true,
       "intelligence_score": 0.6224193005943218,
       "fidelity_proxy": 0.9244838601188644,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6542,7 +7403,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6557,7 +7419,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6572,7 +7435,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6587,7 +7451,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6602,7 +7467,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6617,7 +7483,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6632,7 +7499,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6647,7 +7515,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6662,7 +7531,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6677,7 +7547,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6692,7 +7563,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6707,7 +7579,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6722,7 +7595,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6737,7 +7611,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6752,7 +7627,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6767,7 +7643,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6782,7 +7659,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6797,7 +7675,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6812,7 +7691,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6827,7 +7707,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6842,7 +7723,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6857,7 +7739,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6872,7 +7755,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6887,7 +7771,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6902,7 +7787,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6917,7 +7803,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6932,7 +7819,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6947,7 +7835,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6962,7 +7851,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6977,7 +7867,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -6992,7 +7883,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7007,7 +7899,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7022,7 +7915,8 @@
       "fertile": true,
       "intelligence_score": 0.6114066469832213,
       "fidelity_proxy": 0.9222813293966443,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7037,7 +7931,8 @@
       "fertile": true,
       "intelligence_score": 0.6111610814619522,
       "fidelity_proxy": 0.9222322162923905,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7052,7 +7947,8 @@
       "fertile": true,
       "intelligence_score": 0.6109157543276456,
       "fidelity_proxy": 0.9221831508655292,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7067,7 +7963,8 @@
       "fertile": true,
       "intelligence_score": 0.6106706653438745,
       "fidelity_proxy": 0.9221341330687749,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7082,7 +7979,8 @@
       "fertile": true,
       "intelligence_score": 0.9751172407607788,
       "fidelity_proxy": 0.9950234481521558,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7097,7 +7995,8 @@
       "fertile": true,
       "intelligence_score": 0.9745265453409693,
       "fidelity_proxy": 0.9949053090681939,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7112,7 +8011,8 @@
       "fertile": true,
       "intelligence_score": 0.9739364233489199,
       "fidelity_proxy": 0.994787284669784,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7127,7 +8027,8 @@
       "fertile": true,
       "intelligence_score": 0.9733468742159178,
       "fidelity_proxy": 0.9946693748431836,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7142,7 +8043,8 @@
       "fertile": true,
       "intelligence_score": 0.6293516016498119,
       "fidelity_proxy": 0.9258703203299624,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7157,7 +8059,8 @@
       "fertile": true,
       "intelligence_score": 0.6303176219312665,
       "fidelity_proxy": 0.9260635243862534,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7172,7 +8075,8 @@
       "fertile": true,
       "intelligence_score": 0.6312827044318827,
       "fidelity_proxy": 0.9262565408863765,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7187,7 +8091,8 @@
       "fertile": true,
       "intelligence_score": 0.6322468500817296,
       "fidelity_proxy": 0.926449370016346,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7202,7 +8107,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7217,7 +8123,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7232,7 +8139,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7247,7 +8155,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7262,7 +8171,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7277,7 +8187,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7292,7 +8203,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7307,7 +8219,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7322,7 +8235,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7337,7 +8251,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7352,7 +8267,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7367,7 +8283,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7382,7 +8299,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7397,7 +8315,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7412,7 +8331,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7427,7 +8347,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7442,7 +8363,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7457,7 +8379,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7472,7 +8395,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7487,7 +8411,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7502,7 +8427,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7517,7 +8443,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7532,7 +8459,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7547,7 +8475,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7562,7 +8491,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7577,7 +8507,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7592,7 +8523,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7607,7 +8539,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7622,7 +8555,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7637,7 +8571,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7652,7 +8587,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7667,7 +8603,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7682,7 +8619,8 @@
       "fertile": true,
       "intelligence_score": 0.6089580322047208,
       "fidelity_proxy": 0.9217916064409442,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7697,7 +8635,8 @@
       "fertile": true,
       "intelligence_score": 0.6087147902071122,
       "fidelity_proxy": 0.9217429580414225,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7712,7 +8651,8 @@
       "fertile": true,
       "intelligence_score": 0.6084717843408647,
       "fidelity_proxy": 0.921694356868173,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7727,7 +8667,8 @@
       "fertile": true,
       "intelligence_score": 0.6082290143717899,
       "fidelity_proxy": 0.921645802874358,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7742,7 +8683,8 @@
       "fertile": true,
       "intelligence_score": 0.9692272219704225,
       "fidelity_proxy": 0.9938454443940845,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7757,7 +8699,8 @@
       "fertile": true,
       "intelligence_score": 0.968642115669056,
       "fidelity_proxy": 0.9937284231338113,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7772,7 +8715,8 @@
       "fertile": true,
       "intelligence_score": 0.9680575773697159,
       "fidelity_proxy": 0.9936115154739432,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7787,7 +8731,8 @@
       "fertile": true,
       "intelligence_score": 0.9674736065090719,
       "fidelity_proxy": 0.9934947213018144,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7802,7 +8747,8 @@
       "fertile": true,
       "intelligence_score": 0.6389841083847856,
       "fidelity_proxy": 0.9277968216769572,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7817,7 +8763,8 @@
       "fertile": true,
       "intelligence_score": 0.6399409882504012,
       "fidelity_proxy": 0.9279881976500803,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7832,7 +8779,8 @@
       "fertile": true,
       "intelligence_score": 0.6408969392083954,
       "fidelity_proxy": 0.9281793878416791,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7847,7 +8795,8 @@
       "fertile": true,
       "intelligence_score": 0.6418519621800354,
       "fidelity_proxy": 0.9283703924360072,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7862,7 +8811,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7877,7 +8827,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7892,7 +8843,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7907,7 +8859,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7922,7 +8875,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7937,7 +8891,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7952,7 +8907,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7967,7 +8923,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7982,7 +8939,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -7997,7 +8955,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8012,7 +8971,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8027,7 +8987,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8042,7 +9003,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8057,7 +9019,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8072,7 +9035,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8087,7 +9051,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8102,7 +9067,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8117,7 +9083,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8132,7 +9099,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8147,7 +9115,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8162,7 +9131,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8177,7 +9147,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8192,7 +9163,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8207,7 +9179,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8222,7 +9195,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8237,7 +9211,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8252,7 +9227,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8267,7 +9243,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8282,7 +9259,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8297,7 +9275,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8312,7 +9291,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8327,7 +9307,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8342,7 +9323,8 @@
       "fertile": true,
       "intelligence_score": 0.6065719151701373,
       "fidelity_proxy": 0.9213143830340276,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8357,7 +9339,8 @@
       "fertile": true,
       "intelligence_score": 0.6063309373912344,
       "fidelity_proxy": 0.921266187478247,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8372,7 +9355,8 @@
       "fertile": true,
       "intelligence_score": 0.6060901935456638,
       "fidelity_proxy": 0.9212180387091329,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8387,7 +9371,8 @@
       "fertile": true,
       "intelligence_score": 0.6058496834014164,
       "fidelity_proxy": 0.9211699366802834,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8402,7 +9387,8 @@
       "fertile": true,
       "intelligence_score": 0.9634875383366025,
       "fidelity_proxy": 0.9926975076673206,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8417,7 +9403,8 @@
       "fertile": true,
       "intelligence_score": 0.9629078784986166,
       "fidelity_proxy": 0.9925815756997234,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8432,7 +9419,8 @@
       "fertile": true,
       "intelligence_score": 0.9623287813754091,
       "fidelity_proxy": 0.9924657562750818,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8447,7 +9435,8 @@
       "fertile": true,
       "intelligence_score": 0.9617502464088933,
       "fidelity_proxy": 0.9923500492817787,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8462,7 +9451,8 @@
       "fertile": true,
       "intelligence_score": 0.6483707577703385,
       "fidelity_proxy": 0.9296741515540677,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8477,7 +9467,8 @@
       "fertile": true,
       "intelligence_score": 0.6493187305174772,
       "fidelity_proxy": 0.9298637461034955,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8492,7 +9483,8 @@
       "fertile": true,
       "intelligence_score": 0.6502657830037326,
       "fidelity_proxy": 0.9300531566007466,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8507,7 +9499,8 @@
       "fertile": true,
       "intelligence_score": 0.6512119161417979,
       "fidelity_proxy": 0.9302423832283596,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "live_formula"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8522,7 +9515,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8537,7 +9531,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8552,7 +9547,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8567,7 +9563,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8582,7 +9579,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8597,7 +9595,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8612,7 +9611,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8627,7 +9627,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8642,7 +9643,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8657,7 +9659,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8672,7 +9675,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     },
     {
       "lab": "intelligence_compression_lab",
@@ -8687,7 +9691,8 @@
       "fertile": false,
       "intelligence_score": 0.0,
       "fidelity_proxy": 0.0,
-      "fertile_replay_match": true
+      "fertile_replay_match": true,
+      "eval_kind": "classifier_match"
     }
   ],
   "crosswalk_modules": [

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T02:27:58.589153+00:00",
+  "generated_at": "2026-08-04T02:35:04.301325+00:00",
   "version": "2.0",
   "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md",
   "gap_closure_doc": "docs/TOE_GAP_CLOSURE.md",
@@ -33,7 +33,7 @@
       "T5_prereg_freeze": {
         "pass": true,
         "artifact": "data/toe_prereg_freeze.json",
-        "bundle_sha256": "202b6ebfc85ac79858c5325ad035120009e5696c2f60d929d47c1aad66bb2ea9"
+        "bundle_sha256": "77d8e4f995bedc0d87d21c87cbb4d8f743a3433cfc4981c6bc057d63f2c75499"
       },
       "T6_falsification": {
         "pass": true,
@@ -56,11 +56,17 @@
     "ckm_pmns_module": "vendor/fsot_ckm_pmns.py",
     "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json"
   },
-  "next_actions_research": [
-    "Full non-abelian path-integral confinement theorem (scales + area-law/Polyakov/instanton/\u03b2 probes shipped; theorem open)",
-    "Spin-2 Fock uniqueness from fluid action (helicity/TT/dof/Bianchi/soft-factor probes shipped; uniqueness open)",
-    "Optional: household clean-clone smoke (any second machine) \u2014 not peer review",
-    "Social track parked: arXiv endorsement / independent lab when available"
+  "probe_layer_closed": [
+    "CKM \u03b1,\u03b2,\u03b3 residual-gated vs geometric PDG(\u03c1\u0304,\u03b7\u0304) (\u22640.5%)",
+    "Confinement scales + Casimirs + \u03b2\u2080 + Wilson/Polyakov/instanton/center probes",
+    "Spin-2 helicity/TT/dof accounting/Bianchi/soft-factor probes",
+    "Contested-sector FSOT panel green (13 hard open problems have seed readouts)",
+    "Labels A/B PASS under frozen criteria"
   ],
-  "honest_statement": "T3/T4 deepened with GR recovery, SM force package, CKM/PMNS seed+NLO magnitudes, on-shell vs MS-bar Weinberg schemes, confinement scales (\u039b_QCD, \u221a\u03c3), N_eff, SU(3) Casimirs/\u03b2\u2080, spin-2 probes, unitarity-triangle closure, and CKM \u03b1,\u03b2,\u03b3 residual-gated vs geometric PDG(\u03c1\u0304,\u03b7\u0304) \u2014 multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. Full path-integral confinement theorem and spin-2 Fock uniqueness remain open research."
+  "next_actions_research": [
+    "Full non-abelian path-integral confinement *theorem* (probe layer closed; uniqueness proof open)",
+    "Spin-2 Fock *uniqueness* from fluid action (probe layer closed; uniqueness proof open)",
+    "Einstein\u2013Hilbert measure uniqueness theorem (open)"
+  ],
+  "honest_statement": "T3/T4 deepened with GR recovery, SM force package, CKM/PMNS seed+NLO magnitudes, on-shell vs MS-bar Weinberg schemes, confinement scales (\u039b_QCD, \u221a\u03c3), N_eff, SU(3) Casimirs/\u03b2\u2080, spin-2 probes, unitarity-triangle closure, and CKM \u03b1,\u03b2,\u03b3 residual-gated vs geometric PDG(\u03c1\u0304,\u03b7\u0304) \u2014 multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. Executable probe layer for confinement/spin-2 is shipped; full theorems (path-integral confinement uniqueness, spin-2 Fock uniqueness, EH measure uniqueness) remain open."
 }

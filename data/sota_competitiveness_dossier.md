@@ -1,6 +1,6 @@
 # FSOT Zero-Parameter Competitiveness Dossier
 
-Generated: 2026-08-04T02:27:59.454670+00:00
+Generated: 2026-08-04T02:35:10.033062+00:00
 
 ## Executive summary
 
@@ -109,7 +109,7 @@ Generated: 2026-08-04T02:27:59.454670+00:00
 | trinary_os_tier_e_pooled | 0.000 | 2.0 | 2.00 | 0 | beats_sota |
 | airfoil_held_out_rmse | 4.599 | 5.4 | 0.81 | 10 | beats_sota |
 | domain_coupling_simulation_pooled | 0.000 | 15.0 | 15.00 | 12 | beats_sota |
-| formula_corpus_closure_pooled | 0.000 | 8.0 | 8.00 | 4 | beats_sota |
+| formula_corpus_closure_pooled | 0.010 | 8.0 | 7.99 | 4 | beats_sota |
 | space_weather_summary_pooled | 0.000 | 5.0 | 5.00 | 0 | beats_sota |
 | epidemiology_tier_g_pooled | 0.031 | 12.0 | 11.97 | 6 | beats_sota |
 | virology_tier_g_pooled | 0.046 | 10.0 | 9.95 | 4 | beats_sota |

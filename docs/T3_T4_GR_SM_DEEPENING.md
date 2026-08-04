@@ -99,14 +99,21 @@ These deepen the **executable probe layer**. They do **not** close the full path
 | SU(3) center | \|Z_3\| = 3 | identity |
 | Dual Meissner | confined-phase flag | identity |
 
-## What is still open (honest, not hidden)
+## Closed vs open (honest)
 
-1. Full non-abelian **path-integral** confinement theorem (scales + Casimirs + area-law/Polyakov *probes* shipped)  
-2. CKM angle centrals residual-gated to ≤0.5% of PDG *central* (predictions inside bands; exact triangle closure shipped)  
-3. Spin-2 graviton **Fock uniqueness** from fluid action (helicity/TT/massive-dof/accounting probes shipped)  
-4. Uniqueness theorem for Einstein–Hilbert measure  
-5. Peer review / arXiv endorsement (social)  
-6. Independent third-party clone (process)
+**Closed on the executable / residual layer**
+
+1. CKM α,β,γ residual-gated vs geometric PDG(ρ̄,η̄) ≤0.5%  
+2. Confinement probe inventory (scales, Casimirs, β₀, Wilson, Polyakov, instanton, center, dual Meissner)  
+3. Spin-2 probe inventory (helicity, TT, massive dof, accounting, Bianchi, soft factor, wave)  
+4. Contested-sector seed readouts green under FSOT residual gates  
+
+**Still open (not claimed)**
+
+1. Full non-abelian **path-integral** confinement *theorem*  
+2. Spin-2 graviton **Fock uniqueness** *theorem*  
+3. Einstein–Hilbert measure uniqueness *theorem*  
+4. Residual-gating published CKM *angle-fit* centrals (definitionally ≠ atan2 of PDG ρ̄,η̄)
 
 ---
 

@@ -1,6 +1,6 @@
 # TOE gap closure runbook
 
-Generated: `2026-08-04T02:27:58.589153+00:00`
+Generated: `2026-08-04T02:35:04.301325+00:00`
 
 Frozen boundaries: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 
@@ -73,14 +73,19 @@ Manifest: `data/toe_force_package_manifest.json`
 4. CKM NLO magnitudes + multiprover spine
 5. CKM α,β,γ residual-gated vs geometric PDG(ρ̄,η̄) centrals (≤0.5%)
 
-### Still open research (not claimed)
+### Closed on the executable probe / residual layer
 
-1. Full non-abelian **path-integral** confinement theorem
-2. Published CKM angle-*fit* centrals as residual gate (definitionally ≠ atan2 of PDG ρ̄,η̄; geometric gate shipped)
-3. Spin-2 graviton **Fock uniqueness** from the fluid action
-4. Uniqueness theorem for Einstein–Hilbert measure
-5. Finished resolution of all 13 contested open problems
-6. Independent third-party clean clone; arXiv endorsement
+1. CKM α,β,γ residual-gated vs **geometric** PDG(ρ̄,η̄) (≤0.5%)
+2. Contested-sector FSOT panel green (13 hard problems have seed readouts; not external consensus)
+3. Confinement + spin-2 **probe** inventories (Wilson/Polyakov/instanton/TT/Bianchi/…)
+
+### Still open (theorems / social — not claimed)
+
+1. Full non-abelian **path-integral** confinement *theorem*
+2. Spin-2 graviton **Fock uniqueness** theorem from the fluid action
+3. Uniqueness theorem for Einstein–Hilbert measure
+4. Published CKM angle-*fit* centrals as residual gate (≠ geometric PDG ρ̄,η̄ by construction)
+
 
 See also: [`docs/T3_T4_GR_SM_DEEPENING.md`](T3_T4_GR_SM_DEEPENING.md).
 

@@ -840,14 +840,19 @@ def write_gap_closure_doc(eval_doc: dict) -> None:
         "4. CKM NLO magnitudes + multiprover spine",
         "5. CKM α,β,γ residual-gated vs geometric PDG(ρ̄,η̄) centrals (≤0.5%)",
         "",
-        "### Still open research (not claimed)",
+        "### Closed on the executable probe / residual layer",
         "",
-        "1. Full non-abelian **path-integral** confinement theorem",
-        "2. Published CKM angle-*fit* centrals as residual gate (definitionally ≠ atan2 of PDG ρ̄,η̄; geometric gate shipped)",
-        "3. Spin-2 graviton **Fock uniqueness** from the fluid action",
-        "4. Uniqueness theorem for Einstein–Hilbert measure",
-        "5. Finished resolution of all 13 contested open problems",
-        "6. Independent third-party clean clone; arXiv endorsement",
+        "1. CKM α,β,γ residual-gated vs **geometric** PDG(ρ̄,η̄) (≤0.5%)",
+        "2. Contested-sector FSOT panel green (13 hard problems have seed readouts; not external consensus)",
+        "3. Confinement + spin-2 **probe** inventories (Wilson/Polyakov/instanton/TT/Bianchi/…)",
+        "",
+        "### Still open (theorems / social — not claimed)",
+        "",
+        "1. Full non-abelian **path-integral** confinement *theorem*",
+        "2. Spin-2 graviton **Fock uniqueness** theorem from the fluid action",
+        "3. Uniqueness theorem for Einstein–Hilbert measure",
+        "4. Published CKM angle-*fit* centrals as residual gate (≠ geometric PDG ρ̄,η̄ by construction)",
+        "",
         "",
         "See also: [`docs/T3_T4_GR_SM_DEEPENING.md`](T3_T4_GR_SM_DEEPENING.md).",
         "",
@@ -959,11 +964,17 @@ def main() -> int:
             "ckm_pmns_module": "vendor/fsot_ckm_pmns.py",
             "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json",
         },
+        "probe_layer_closed": [
+            "CKM α,β,γ residual-gated vs geometric PDG(ρ̄,η̄) (≤0.5%)",
+            "Confinement scales + Casimirs + β₀ + Wilson/Polyakov/instanton/center probes",
+            "Spin-2 helicity/TT/dof accounting/Bianchi/soft-factor probes",
+            "Contested-sector FSOT panel green (13 hard open problems have seed readouts)",
+            "Labels A/B PASS under frozen criteria",
+        ],
         "next_actions_research": [
-            "Full non-abelian path-integral confinement theorem (scales + area-law/Polyakov/instanton/β probes shipped; theorem open)",
-            "Spin-2 Fock uniqueness from fluid action (helicity/TT/dof/Bianchi/soft-factor probes shipped; uniqueness open)",
-            "Optional: household clean-clone smoke (any second machine) — not peer review",
-            "Social track parked: arXiv endorsement / independent lab when available",
+            "Full non-abelian path-integral confinement *theorem* (probe layer closed; uniqueness proof open)",
+            "Spin-2 Fock *uniqueness* from fluid action (probe layer closed; uniqueness proof open)",
+            "Einstein–Hilbert measure uniqueness theorem (open)",
         ],
         "honest_statement": (
             "T3/T4 deepened with GR recovery, SM force package, CKM/PMNS seed+NLO magnitudes, "
@@ -971,7 +982,8 @@ def main() -> int:
             "SU(3) Casimirs/β₀, spin-2 probes, unitarity-triangle closure, and CKM α,β,γ "
             "residual-gated vs geometric PDG(ρ̄,η̄) — multi-prover exported "
             "(Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. "
-            "Full path-integral confinement theorem and spin-2 Fock uniqueness remain open research."
+            "Executable probe layer for confinement/spin-2 is shipped; full theorems (path-integral "
+            "confinement uniqueness, spin-2 Fock uniqueness, EH measure uniqueness) remain open."
         ),
     }
     OUT_REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")

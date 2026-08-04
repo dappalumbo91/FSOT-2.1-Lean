@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T02:27:59.701128+00:00",
+  "generated_at": "2026-08-04T02:35:13.170502+00:00",
   "goal": "Beat or exceed scientific SOTA / literature capability on measured observables",
   "live_atlas": {
     "green_pass": 414,
     "green_fail": 0,
     "worst_max_error_pct": 0.4989,
     "worst_domain": "Phi_Morphogenetic_Scaling",
-    "domains_above_aspiration_0_05": 98,
+    "domains_above_aspiration_0_05": 102,
     "threshold_green_pct": 0.5,
     "threshold_aspiration_pct": 0.05
   },
@@ -480,6 +480,13 @@
       "max_name": "sucrose_hydrolysis"
     },
     {
+      "domain": "intelligence_compression_benchmark.json",
+      "max_error_pct": 0.4567065036654742,
+      "median_error_pct": 0.029066672228905688,
+      "scalar_count": 15,
+      "max_name": "sweep_0335"
+    },
+    {
       "domain": "Malware_Threat_Intelligence",
       "max_error_pct": 0.431577,
       "median_error_pct": 0.04593318440797134,
@@ -520,13 +527,6 @@
       "median_error_pct": 0.0032411336172532518,
       "scalar_count": 91,
       "max_name": "dm2_31_abs"
-    },
-    {
-      "domain": "Speleology",
-      "max_error_pct": 0.406301,
-      "median_error_pct": 0.0034072140135262413,
-      "scalar_count": 40,
-      "max_name": "He"
     }
   ],
   "thin_panels": [
@@ -541,18 +541,6 @@
       "scalar_count": 2,
       "max_error_pct": 3.862903827310908e-14,
       "file": "math_generator_airfoil_rmse_benchmark.json"
-    },
-    {
-      "domain": "Formula_Corpus_Closure",
-      "scalar_count": 2,
-      "max_error_pct": 0.0,
-      "file": "formula_corpus_closure_benchmark.json"
-    },
-    {
-      "domain": "intelligence_compression_benchmark.json",
-      "scalar_count": 3,
-      "max_error_pct": 0.04959966617804441,
-      "file": "intelligence_compression_benchmark.json"
     },
     {
       "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
@@ -571,6 +559,12 @@
       "scalar_count": 4,
       "max_error_pct": 0.192564276915754,
       "file": "unified_db_crosswalk_spine_benchmark.json"
+    },
+    {
+      "domain": "h0_planck_benchmark.json",
+      "scalar_count": 4,
+      "max_error_pct": 0.08243667961587486,
+      "file": "h0_planck_benchmark.json"
     },
     {
       "domain": "VL_Agent_Distill_Panel",
@@ -679,6 +673,12 @@
       "scalar_count": 6,
       "max_error_pct": 0.014767,
       "file": "rust_lean_bridge_panel_benchmark.json"
+    },
+    {
+      "domain": "Hybrid_FI_Sim_Multi_Hero_Panel",
+      "scalar_count": 6,
+      "max_error_pct": 0.0,
+      "file": "hybrid_fi_sim_multi_hero_panel_benchmark.json"
     }
   ],
   "expansion_map": {
@@ -698,10 +698,9 @@
     "label_B": true,
     "gr_sm_ckm_overall_ok": true,
     "next_research": [
-      "Full non-abelian path-integral confinement theorem (scales + area-law/Polyakov/instanton/\u03b2 probes shipped; theorem open)",
-      "Spin-2 Fock uniqueness from fluid action (helicity/TT/dof/Bianchi/soft-factor probes shipped; uniqueness open)",
-      "Optional: household clean-clone smoke (any second machine) \u2014 not peer review",
-      "Social track parked: arXiv endorsement / independent lab when available"
+      "Full non-abelian path-integral confinement *theorem* (probe layer closed; uniqueness proof open)",
+      "Spin-2 Fock *uniqueness* from fluid action (probe layer closed; uniqueness proof open)",
+      "Einstein\u2013Hilbert measure uniqueness theorem (open)"
     ]
   },
   "refine_strategy": {

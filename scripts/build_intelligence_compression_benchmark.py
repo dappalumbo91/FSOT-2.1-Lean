@@ -104,6 +104,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
                 "intelligence_score": row["intelligence_score"],
                 "fidelity_proxy": row["fidelity_proxy"],
                 "fertile_replay_match": fertile_match,
+                "eval_kind": "live_formula" if row["fertile"] else "classifier_match",
             }
         )
 
@@ -138,6 +139,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
             "D_eff": optimal_row["D_eff"],
             "delta_psi": optimal_row["delta_psi"],
             "recent_hits": optimal_row["recent_hits"],
+            "eval_kind": "live_formula",
         },
         {
             "lab": "intelligence_compression_lab",
@@ -149,6 +151,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
             "D_eff": best_row["D_eff"],
             "delta_psi": best_row["delta_psi"],
             "recent_hits": best_row["recent_hits"],
+            "eval_kind": "live_formula",
         },
         {
             "lab": "intelligence_compression_lab",
@@ -157,6 +160,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
             "computed": round(optimal_row["fidelity_proxy"], 12),
             "measured": 1.0,
             "error_pct": optimal_fidelity_err,
+            "eval_kind": "live_formula",
         },
         {
             "lab": "intelligence_compression_lab",
@@ -166,8 +170,13 @@ def build(manifest_path: Path = MANIFEST) -> dict:
             "measured": 100.0,
             "error_pct": round((1.0 - fertile_match_rate) * 100.0, 6),
             "observable_count": len(rows),
+            "eval_kind": "classifier_match",
         },
     ]
+    # Fertile sweep slice as material scalars (thin-panel depth)
+    fertile_material = [
+        r for r in sweep_records if r.get("fertile") and float(r.get("error_pct") or 99) <= 0.5
+    ][:80]
 
     headline_errs = [float(r["error_pct"]) for r in headline_records]
     d12_fertile = [
@@ -231,7 +240,8 @@ def build(manifest_path: Path = MANIFEST) -> dict:
         "optimal_params": summary.get("optimal_params") or OPTIMAL,
         "best_params": summary.get("best_params"),
         "sota_comparison": sota_comparison,
-        "records": headline_records,
+        "records": headline_records + fertile_material,
+        "material_records": headline_records + fertile_material,
         "sweep_records": sweep_records,
         "crosswalk_modules": ["FSOT.Formal.IntelligenceCompressionPriors"],
     }

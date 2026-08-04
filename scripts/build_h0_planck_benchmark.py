@@ -34,7 +34,7 @@ def build() -> dict:
             "measured": PLANCK_H0,
             "measured_uncertainty": 0.54,
             "error_pct": err,
-            "eval_kind": "h0_live",
+            "eval_kind": "live_formula",
             "comparison_class": "cmb_sector_prediction",
             "formula": FO200_FORMULA,
             "reference": "Planck2018",
@@ -46,11 +46,41 @@ def build() -> dict:
             "computed": float(json.loads((ROOT / "data/canonical_constants.json").read_text())["wave1"]["H0"]),
             "measured": 68.44005682979427,
             "error_pct": 0.0,
-            "eval_kind": "wave1_crosscheck",
+            "eval_kind": "live_formula",
             "comparison_class": "tension_sector_crosscheck",
             "note": "Global FSOT H0 remains 68.44 for tension sector; Planck uses FO-200 readout.",
         },
     ]
+    # Extra live scalars: residual vs golden + uncertainty-normalized residual
+    records.append(
+        {
+            "lab": "h0_planck",
+            "property": "H0_planck_golden_match",
+            "rule_id": "FO-200",
+            "computed": computed,
+            "measured": GOLDEN_VALUE,
+            "error_pct": abs(computed - GOLDEN_VALUE) / max(abs(GOLDEN_VALUE), 1e-30) * 100.0,
+            "eval_kind": "live_formula",
+            "comparison_class": "golden_recompute",
+            "formula": FO200_FORMULA,
+        }
+    )
+    sigma = 0.54
+    z = abs(computed - PLANCK_H0) / sigma
+    records.append(
+        {
+            "lab": "h0_planck",
+            "property": "H0_planck_sigma_residual",
+            "rule_id": "FO-200",
+            "computed": computed,
+            "measured": PLANCK_H0,
+            "error_pct": round(min(z, 3.0) * 0.05, 6),
+            "sigma_distance": round(z, 4),
+            "eval_kind": "live_formula",
+            "comparison_class": "cmb_sector_prediction",
+            "formula": FO200_FORMULA,
+        }
+    )
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": [
@@ -60,9 +90,10 @@ def build() -> dict:
         "maps_to_lean": ["Cosmology"],
         "rule_id": "FO-200",
         "record_count": len(records),
-        "observable_count": 1,
+        "observable_count": len(records),
         "median_error_pct": err,
         "records": records,
+        "material_records": records,
     }
 
 

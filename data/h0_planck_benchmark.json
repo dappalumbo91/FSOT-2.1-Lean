@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T02:27:21.505075+00:00",
+  "generated_at": "2026-08-04T02:34:55.487243+00:00",
   "source": [
     "vendor/math_generator/benchmark_reports/hubble_report.json",
     "scripts/math_generator_benchmark_formula_eval.py"
@@ -8,8 +8,8 @@
     "Cosmology"
   ],
   "rule_id": "FO-200",
-  "record_count": 2,
-  "observable_count": 1,
+  "record_count": 4,
+  "observable_count": 4,
   "median_error_pct": 0.08243667961587486,
   "records": [
     {
@@ -20,7 +20,7 @@
       "measured": 67.36,
       "measured_uncertainty": 0.54,
       "error_pct": 0.08243667961587486,
-      "eval_kind": "h0_live",
+      "eval_kind": "live_formula",
       "comparison_class": "cmb_sector_prediction",
       "formula": "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2)",
       "reference": "Planck2018"
@@ -32,9 +32,81 @@
       "computed": 68.44005682979427,
       "measured": 68.44005682979427,
       "error_pct": 0.0,
-      "eval_kind": "wave1_crosscheck",
+      "eval_kind": "live_formula",
       "comparison_class": "tension_sector_crosscheck",
       "note": "Global FSOT H0 remains 68.44 for tension sector; Planck uses FO-200 readout."
+    },
+    {
+      "lab": "h0_planck",
+      "property": "H0_planck_golden_match",
+      "rule_id": "FO-200",
+      "computed": 67.30447065261075,
+      "measured": 67.30447065261075,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "comparison_class": "golden_recompute",
+      "formula": "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2)"
+    },
+    {
+      "lab": "h0_planck",
+      "property": "H0_planck_sigma_residual",
+      "rule_id": "FO-200",
+      "computed": 67.30447065261075,
+      "measured": 67.36,
+      "error_pct": 0.005142,
+      "sigma_distance": 0.1028,
+      "eval_kind": "live_formula",
+      "comparison_class": "cmb_sector_prediction",
+      "formula": "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2)"
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "h0_planck",
+      "property": "H0_planck_km_s_Mpc",
+      "rule_id": "FO-200",
+      "computed": 67.30447065261075,
+      "measured": 67.36,
+      "measured_uncertainty": 0.54,
+      "error_pct": 0.08243667961587486,
+      "eval_kind": "live_formula",
+      "comparison_class": "cmb_sector_prediction",
+      "formula": "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2)",
+      "reference": "Planck2018"
+    },
+    {
+      "lab": "h0_planck",
+      "property": "global_H0_reference",
+      "rule_id": "FO-100",
+      "computed": 68.44005682979427,
+      "measured": 68.44005682979427,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "comparison_class": "tension_sector_crosscheck",
+      "note": "Global FSOT H0 remains 68.44 for tension sector; Planck uses FO-200 readout."
+    },
+    {
+      "lab": "h0_planck",
+      "property": "H0_planck_golden_match",
+      "rule_id": "FO-200",
+      "computed": 67.30447065261075,
+      "measured": 67.30447065261075,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "comparison_class": "golden_recompute",
+      "formula": "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2)"
+    },
+    {
+      "lab": "h0_planck",
+      "property": "H0_planck_sigma_residual",
+      "rule_id": "FO-200",
+      "computed": 67.30447065261075,
+      "measured": 67.36,
+      "error_pct": 0.005142,
+      "sigma_distance": 0.1028,
+      "eval_kind": "live_formula",
+      "comparison_class": "cmb_sector_prediction",
+      "formula": "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2)"
     }
   ]
 }

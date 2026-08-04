@@ -1,6 +1,6 @@
 {
   "report_version": "1.2",
-  "generated_at": "2026-08-04T02:27:59.156317+00:00",
+  "generated_at": "2026-08-04T02:35:09.739340+00:00",
   "observable_count": 65,
   "headline_eligible_count": 22,
   "internal_pipeline_metric_count": 38,
@@ -1240,9 +1240,9 @@
       "reference": "Tier 42 \u2014 strict_empirical.jsonl + extension benchmark bridge",
       "comparison_class": "internal_pipeline_metric",
       "exclude_from_headline_beats": true,
-      "fsot_computed": 0.0,
-      "fsot_error_pct": 0.0,
-      "margin_vs_sota_pct": 8.0,
+      "fsot_computed": 0.009504,
+      "fsot_error_pct": 0.009504,
+      "margin_vs_sota_pct": 7.990496,
       "status": "beats_sota",
       "status_basis": "beats_sota_typical_error_pct",
       "parameter_advantage": 4
