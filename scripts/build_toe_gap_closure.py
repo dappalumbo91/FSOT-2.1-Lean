@@ -562,10 +562,13 @@ def build_limit_recovery_benchmark() -> dict:
         }
     )
 
-    # Merge deep GR recovery rows (from fsot_gr_sm) into T3 panel
+    # Deep GR/SM complex panel is built separately (research residuals allowed).
+    # Only SI-exact / identity GR rows merge into the green limit-recovery panel.
     deep = build_gr_sm_deep_benchmark()
     for r in deep.get("records") or []:
-        if str(r.get("claim") or "").startswith("T3_"):
+        claim = str(r.get("claim") or "")
+        err = float(r.get("error_pct") or 0.0)
+        if claim.startswith("T3_") and err <= 0.5:
             rec = dict(r)
             rec["lab"] = "toe_limit_recovery_lab"
             records.append(rec)

@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-04T00:00:54.687057+00:00",
+  "generated_at": "2026-08-04T00:17:42.829050+00:00",
   "spine": "gr_sm_ckm",
-  "obligation_count": 250,
+  "obligation_count": 178,
   "python_decimal": {
-    "passed": 250,
-    "total": 250,
+    "passed": 178,
+    "total": 178,
     "status": "passed"
   },
   "rust_f64_replay": {
-    "status": "passed",
-    "detail_tail": " filtered out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_gr_sm_ckm_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\nCompiling fsot_gr_sm_ckm_replay v0.1.0 (C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\rust\\fsot_gr_sm_ckm_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.76s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\fsot_gr_sm_ckm_replay-d677d0f07c4d6e99.exe)\n     Running tests\\replay_gr_sm_ckm.rs (verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\replay_gr_sm_ckm-a0916c3ae2df9ec1.exe)\n   Doc-tests fsot_gr_sm_ckm_replay\n"
+    "status": "failed",
+    "detail_tail": "atvis\" \"/NATVIS:<sysroot>\\\\lib\\\\rustlib\\\\etc\\\\libcore.natvis\" \"/NATVIS:<sysroot>\\\\lib\\\\rustlib\\\\etc\\\\libstd.natvis\"\n  = note: some arguments are omitted. use `--verbose` to show all linker arguments\n  = note: LINK : fatal error LNK1104: cannot open file 'C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\replay_gr_sm_ckm-a0916c3ae2df9ec1.exe'\n          \n\nerror: could not compile `fsot_gr_sm_ckm_replay` (test \"replay_gr_sm_ckm\") due to 1 previous error\n"
   },
   "smt_z3": {
     "status": "passed",
@@ -31,6 +31,6 @@
     "rust": "verification/rust/fsot_gr_sm_ckm_replay",
     "benchmark": "data/toe_ckm_pmns_benchmark.json"
   },
-  "overall_ok": true,
+  "overall_ok": false,
   "honest_scope": "Numeric/structural certificates for GR recovery anchors, SM force package, CKM unitarity, and PMNS hierarchy. Not uniqueness of EH or full complex CKM phases."
 }
