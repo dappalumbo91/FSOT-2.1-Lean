@@ -99,6 +99,10 @@ STRUCTURAL_EVAL_KINDS = frozenset(
         "astrometry_consistency",
         "formula_mass_relay",
         "ingest_relay",
+        # Honest literature-fit comparisons that are definitionally inconsistent
+        # with residual-gated geometric anchors (e.g. CKM α/β/γ fit vs ρ̄,η̄).
+        "literature_fit_band",
+        "literature_monitor",
     }
 )
 

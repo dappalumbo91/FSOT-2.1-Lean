@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T02:06:17.057168+00:00",
+  "generated_at": "2026-08-04T02:20:18.664645+00:00",
   "goal": "Beat or exceed scientific SOTA / literature capability on measured observables",
   "live_atlas": {
     "green_pass": 414,
     "green_fail": 0,
     "worst_max_error_pct": 0.4989,
     "worst_domain": "Phi_Morphogenetic_Scaling",
-    "domains_above_aspiration_0_05": 94,
+    "domains_above_aspiration_0_05": 96,
     "threshold_green_pct": 0.5,
     "threshold_aspiration_pct": 0.05
   },
@@ -30,9 +30,9 @@
     {
       "id": "higgs_mass",
       "domain": "High_Energy_Physics",
-      "fsot_error_pct": 0.03990518384182655,
+      "fsot_error_pct": 0.01100190161397048,
       "sota_typical_error_pct": 0.14,
-      "margin_vs_sota_pp": 0.10009481615817346,
+      "margin_vs_sota_pp": 0.12899809838602955,
       "sota_model": "SM fits (PDG)",
       "sota_free_parameters": 25,
       "status": "beats_sota",
@@ -42,9 +42,9 @@
     {
       "id": "higgs_branching",
       "domain": "High_Energy_Physics",
-      "fsot_error_pct": 0.04212398909516783,
+      "fsot_error_pct": 0.03711124585172393,
       "sota_typical_error_pct": 0.5,
-      "margin_vs_sota_pp": 0.45787601090483215,
+      "margin_vs_sota_pp": 0.46288875414827607,
       "sota_model": "PDG SM branching fits",
       "sota_free_parameters": 25,
       "status": "beats_sota",
@@ -510,15 +510,15 @@
     {
       "domain": "TOE_CKM_PMNS_Flavor",
       "max_error_pct": 0.4219868071131969,
-      "median_error_pct": 0.04789442119649137,
+      "median_error_pct": 0.0519504854624754,
       "scalar_count": 38,
       "max_name": "dm2_31_abs"
     },
     {
       "domain": "TOE_GR_SM_Deep",
       "max_error_pct": 0.4219868071131969,
-      "median_error_pct": 0.0047099996121108675,
-      "scalar_count": 81,
+      "median_error_pct": 0.004811476065123823,
+      "scalar_count": 84,
       "max_name": "dm2_31_abs"
     },
     {
@@ -537,22 +537,10 @@
       "file": "bibliography_corpus_panel_benchmark.json"
     },
     {
-      "domain": "DESI_wa_Constraint",
-      "scalar_count": 1,
-      "max_error_pct": 0.000595,
-      "file": "desi_wa_constraint_benchmark.json"
-    },
-    {
       "domain": "math_generator_benchmark_formula_eval_benchmark.json",
       "scalar_count": 1,
       "max_error_pct": 2.1125033444758682e-14,
       "file": "math_generator_benchmark_formula_eval_benchmark.json"
-    },
-    {
-      "domain": "Hubble_Dark_Sector_Crosswalk",
-      "scalar_count": 2,
-      "max_error_pct": 0.039797,
-      "file": "hubble_dark_sector_crosswalk_benchmark.json"
     },
     {
       "domain": "math_generator_airfoil_rmse_benchmark.json",
@@ -577,12 +565,6 @@
       "scalar_count": 3,
       "max_error_pct": 0.031506,
       "file": "tokenization_live_panel_benchmark.json"
-    },
-    {
-      "domain": "Physarum_Biological_CUDA_Panel",
-      "scalar_count": 3,
-      "max_error_pct": 0.022236,
-      "file": "physarum_biological_cuda_panel_benchmark.json"
     },
     {
       "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
@@ -679,6 +661,24 @@
       "scalar_count": 5,
       "max_error_pct": 0.0,
       "file": "public_verifiable_spine_benchmark.json"
+    },
+    {
+      "domain": "Tier_95_Zebrafish_Spine",
+      "scalar_count": 5,
+      "max_error_pct": 0.0,
+      "file": "tier_95_zebrafish_spine_benchmark.json"
+    },
+    {
+      "domain": "DESI_wa_Constraint",
+      "scalar_count": 6,
+      "max_error_pct": 0.15,
+      "file": "desi_wa_constraint_benchmark.json"
+    },
+    {
+      "domain": "Cosmology_Anomalies",
+      "scalar_count": 6,
+      "max_error_pct": 0.140126,
+      "file": "cosmology_anomalies_benchmark.json"
     }
   ],
   "expansion_map": {
@@ -698,9 +698,8 @@
     "label_B": true,
     "gr_sm_ckm_overall_ok": true,
     "next_research": [
-      "CKM angle centrals (\u03b1,\u03b2,\u03b3) residual-gated to \u22640.5% of PDG central (now seed predictions inside experimental bands + exact \u03b1+\u03b2+\u03b3=\u03c0)",
-      "Full non-abelian path-integral confinement theorem (scales \u039b_QCD, \u221a\u03c3, Casimirs, \u03b2\u2080 shipped)",
-      "Spin-2 Fock uniqueness from fluid action (helicity/TT/quadrupole probes shipped)",
+      "Full non-abelian path-integral confinement theorem (scales \u039b_QCD, \u221a\u03c3, Casimirs, \u03b2\u2080 + area-law/Polyakov probes shipped)",
+      "Spin-2 Fock uniqueness from fluid action (helicity/TT/massive-dof/accounting probes shipped)",
       "Independent clean-clone by third party",
       "arXiv endorsement + peer review"
     ]
@@ -713,7 +712,7 @@
       "1. THIN_LEAD SOTA observables (higgs_mass, airfoil, H0_planck)",
       "2. Near-gate formula-class only if definitional (not fishing)",
       "3. Thin-panel thickening (lean routes, multi-hero strata)",
-      "4. TOE research spine (path-integral, spin-2 Fock, CKM angle centrals)",
+      "4. TOE research spine (path-integral theorem, spin-2 Fock uniqueness)",
       "5. Registered expansion waves (culinary Maillard, materials bridge, KB)"
     ]
   }

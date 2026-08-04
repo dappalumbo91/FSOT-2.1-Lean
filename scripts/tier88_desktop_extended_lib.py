@@ -148,6 +148,16 @@ def ingest_biological_cuda() -> dict:
     states = _load_json(VENDOR.parent / "physarum" / "physarum_v5_states.json")
     cuda = _load_json(physarum_cuda_benchmark_path())
     genomics = _load_json(physarum_genomics_refined_path())
+    nuclei = list((states.get("nuclei") or []) if isinstance(states, dict) else [])
+    # Aggregate nucleus-level FSOT metrics (thin-panel scalar thickening)
+    local_S_vals = [float(n.get("local_S") or 0) for n in nuclei if n.get("local_S") is not None]
+    iit_vals = [float(n.get("iit_integration") or 0) for n in nuclei if n.get("iit_integration") is not None]
+    meta_vals = [float(n.get("metatron_coupling") or 0) for n in nuclei if n.get("metatron_coupling") is not None]
+    codon_scalars: list[float] = []
+    for n in nuclei:
+        for c in n.get("condos") or n.get("codons") or []:
+            if c.get("fsot_scalar") is not None:
+                codon_scalars.append(float(c["fsot_scalar"]))
     doc = {
         "source": "desktop_physarum_cuda",
         "desktop_folder": "Physarum polycephalum,",
@@ -158,6 +168,12 @@ def ingest_biological_cuda() -> dict:
         "nuclei_count": float(states.get("nuclei_count") or 0) if isinstance(states, dict) else 0,
         "cuda_benchmark": cuda if isinstance(cuda, dict) else {},
         "genomics_gene_count": len(genomics.get("genes") or []) if isinstance(genomics, dict) else 0,
+        # Non-count scalar channels
+        "mean_local_S": sum(local_S_vals) / len(local_S_vals) if local_S_vals else None,
+        "mean_iit_integration": sum(iit_vals) / len(iit_vals) if iit_vals else None,
+        "mean_metatron_coupling": sum(meta_vals) / len(meta_vals) if meta_vals else None,
+        "mean_codon_fsot_scalar": sum(codon_scalars) / len(codon_scalars) if codon_scalars else None,
+        "steps": float(states.get("steps") or 0) if isinstance(states, dict) else 0,
     }
     _write_cache("biological_cuda_cache.json", doc)
     return doc
@@ -536,6 +552,12 @@ def build_physarum_biological_cuda_panel() -> dict:
             ("editing_yield", "editing_yield"),
             ("nuclei_count", "nuclei_count"),
             ("genomics_gene_count", "genomics_gene_count"),
+            # Nucleus-level FSOT metrics (non-count scalars for thin-panel depth)
+            ("mean_local_S", "mean_local_S"),
+            ("mean_iit_integration", "mean_iit_integration"),
+            ("mean_metatron_coupling", "mean_metatron_coupling"),
+            ("mean_codon_fsot_scalar", "mean_codon_fsot_scalar"),
+            ("steps", "steps"),
         ],
     )
 

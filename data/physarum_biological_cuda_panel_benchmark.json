@@ -1,10 +1,10 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-16T15:52:36.114208+00:00",
+  "generated_at": "2026-08-04T02:19:32.459973+00:00",
   "domain": "Physarum_Biological_CUDA_Panel",
-  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\biological_cuda_cache.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\biological_cuda_cache.json",
     "desktop_physarum"
   ],
   "maps_to_lean": [
@@ -12,9 +12,9 @@
     "neural"
   ],
   "D_eff": 15,
-  "record_count": 5,
-  "observable_count": 5,
-  "scalar_record_count": 3,
+  "record_count": 10,
+  "observable_count": 10,
+  "scalar_record_count": 8,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.022236,
   "pooled_median_error_pct": 0.022236,
@@ -40,7 +40,7 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 5
+      "observable_count": 10
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +49,7 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 5
+      "observable_count": 10
     }
   ],
   "material_records": [
@@ -108,6 +108,66 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "desktop_physarum_cuda"
+    },
+    {
+      "lab": "biological_cuda_lab",
+      "property": "mean_local_S",
+      "name": "mean_local_S",
+      "computed": 6.931033,
+      "measured": 6.929491861535459,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "desktop_physarum_cuda"
+    },
+    {
+      "lab": "biological_cuda_lab",
+      "property": "mean_iit_integration",
+      "name": "mean_iit_integration",
+      "computed": 0.119969,
+      "measured": 0.11994209302101831,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "desktop_physarum_cuda"
+    },
+    {
+      "lab": "biological_cuda_lab",
+      "property": "mean_metatron_coupling",
+      "name": "mean_metatron_coupling",
+      "computed": 0.481107,
+      "measured": 0.481,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "desktop_physarum_cuda"
+    },
+    {
+      "lab": "biological_cuda_lab",
+      "property": "mean_codon_fsot_scalar",
+      "name": "mean_codon_fsot_scalar",
+      "computed": 6.931033,
+      "measured": 6.929491861535459,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "desktop_physarum_cuda"
+    },
+    {
+      "lab": "biological_cuda_lab",
+      "property": "steps",
+      "name": "steps",
+      "computed": 80.017789,
+      "measured": 80.0,
+      "error_pct": 0.022236,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,

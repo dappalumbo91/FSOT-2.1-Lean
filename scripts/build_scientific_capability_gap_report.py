@@ -217,7 +217,7 @@ def main() -> int:
                 "1. THIN_LEAD SOTA observables (higgs_mass, airfoil, H0_planck)",
                 "2. Near-gate formula-class only if definitional (not fishing)",
                 "3. Thin-panel thickening (lean routes, multi-hero strata)",
-                "4. TOE research spine (path-integral, spin-2 Fock, CKM angle centrals)",
+                "4. TOE research spine (path-integral theorem, spin-2 Fock uniqueness)",
                 "5. Registered expansion waves (culinary Maillard, materials bridge, KB)",
             ],
         },

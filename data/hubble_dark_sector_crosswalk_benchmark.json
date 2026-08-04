@@ -1,13 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T14:25:29.686411+00:00",
+  "generated_at": "2026-08-04T02:19:32.463737+00:00",
   "domain": "Hubble_Dark_Sector_Crosswalk",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "vendor/fsot_compute.py\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json",
     "hubble_bubble_tension_benchmark.json",
-    "dark_sector_open_problems_benchmark.json",
-    "c_thin_depth_pass"
+    "dark_sector_open_problems_benchmark.json"
   ],
   "maps_to_lean": [
     "cosmological",
@@ -16,24 +15,24 @@
     "cmb"
   ],
   "D_eff": 25,
-  "record_count": 24,
-  "observable_count": 24,
-  "scalar_record_count": 2,
+  "record_count": 53,
+  "observable_count": 53,
+  "scalar_record_count": 37,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0198985,
-  "pooled_median_error_pct": 0.0198985,
-  "headline_median_error_pct": 0.0198985,
+  "median_error_pct": 0.009407,
+  "pooled_median_error_pct": 0.009407,
+  "headline_median_error_pct": 0.009407,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Hubble_Dark_Sector_Crosswalk_depth": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+      "open_cosmology_bridge": {
+        "sota_typical_error_pct": 20.0,
+        "sota_model": "Separate H0 and dark-sector fits"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_hubble_dark_crosswalk_vs_baseline": true
     }
   },
   "records": [
@@ -41,45 +40,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.019898,
+      "computed": 0.009407,
       "measured": 0.0,
-      "error_pct": 0.0198985,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.019898,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.009407,
+      "observable_count": 53
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
-      "name": "Hubble_Dark_Sector_Crosswalk_depth",
-      "computed": 0.000502,
+      "property": "hubble_dark_crosswalk",
+      "name": "open_cosmology_bridge",
+      "computed": 0.009407,
       "measured": 0.0,
-      "error_pct": 0.000502,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "Hubble Dark Sector Crosswalk depth",
-      "scientific_measurement": {
-        "delta": 0.000502,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.009407,
+      "observable_count": 48
     }
   ],
   "material_records": [
@@ -90,20 +63,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "crosswalk_bridge",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "hubble bubble",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_bridge"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -114,69 +74,177 @@
       "measured": 68.44005682979427,
       "error_pct": 0.0,
       "eval_kind": "crosswalk_relay",
-      "status": "hubble_tension_resolution",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "global cmb background",
-      "scientific_measurement": {
-        "delta": 1.7e-07,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "status": "hubble_tension_resolution"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "fpc_tau_unity_coupling",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Acoustic_Resonance_Materials",
+      "computed": 1.000201,
+      "measured": 1.0,
+      "error_pct": 0.020055,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adjacent_Rung_Coupling",
+      "computed": 1.000314,
+      "measured": 1.0,
+      "error_pct": 0.031421,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "time_is_emergent",
+      "name": "fpc_time_emergence_flag",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "fpc_tau_anchor",
+      "name": "cs133_fpc_equilibrium",
+      "computed": 1.344535,
+      "measured": 1.344,
+      "error_pct": 0.039797,
+      "eval_kind": "fpc_anchor"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "physical_anchor",
+      "name": "cs133_hyperfine_hz",
+      "computed": 9192631770.0,
+      "measured": 9192631770.0,
+      "error_pct": 0.0,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "physical_anchor",
+      "name": "earth_sidereal_omega_rad_s",
+      "computed": 7.292115857915991e-05,
+      "measured": 7.292115857915991e-05,
+      "error_pct": 0.0,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "physical_anchor",
+      "name": "moon_sidereal_omega_rad_s",
+      "computed": 2.6616995272150692e-06,
+      "measured": 2.6616995272150692e-06,
+      "error_pct": 0.0,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "physical_anchor",
+      "name": "hubble_h0_km_s_mpc",
+      "computed": 68.44005682979427,
+      "measured": 68.44005682979427,
+      "error_pct": 0.0,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "fpc_pillar",
+      "name": "time_emergence_simulation",
+      "computed": 28.0,
+      "measured": 28.0,
+      "error_pct": 0.0,
+      "eval_kind": "c_thin_depth_relay",
+      "status": "GREEN"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "hubble_bubble",
+      "property": "fpc_pillar",
+      "name": "time_domain_crosswalk",
+      "computed": 250.0,
+      "measured": 250.0,
+      "error_pct": 0.028056,
+      "eval_kind": "c_thin_depth_relay",
+      "status": "GREEN"
     },
     {
       "lab": "hubble_dark_sector_lab",
       "property": "panel_pooled_median",
       "name": "dark_sector",
-      "computed": 0.006335,
-      "measured": 0.006335,
+      "computed": 0.01529034996934153,
+      "measured": 0.01529034996934153,
       "error_pct": 0.0,
-      "eval_kind": "crosswalk_bridge",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "dark sector",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_bridge"
     },
     {
       "lab": "hubble_dark_sector_lab",
       "source_panel": "dark_sector",
       "property": "dark_energy_eos",
-      "name": "w0",
-      "computed": -1.0299812921372637,
-      "measured": -1.0,
+      "name": "w0_cmb",
+      "computed": -1.029981,
+      "measured": -1.03,
       "error_pct": 0.001816,
       "eval_kind": "crosswalk_relay",
-      "status": "dark_sector_open",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "w0",
-      "scientific_measurement": {
-        "delta": -0.02998129,
-        "delta_pct": 2.998129,
-        "effective_error_pct": 2.998129,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0006,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 3.0,
-        "reference": "Planck 2018 w0wa prior",
-        "observable_status": "dark_energy_open"
-      }
+      "comparison_class": "cmb_sector_prediction",
+      "reference": "Planck2018",
+      "status": "dark_sector_open"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "dark_energy_eos",
+      "name": "w0_bao",
+      "computed": -0.729679,
+      "measured": -0.727,
+      "error_pct": 0.368503,
+      "eval_kind": "crosswalk_relay",
+      "comparison_class": "bao_sector_prediction",
+      "reference": "DESI_DR2",
+      "status": "dark_sector_open"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "dark_energy_eos_evolution",
+      "name": "wa_bao",
+      "computed": -1.020856,
+      "measured": -1.018,
+      "error_pct": 0.280515,
+      "eval_kind": "crosswalk_relay",
+      "comparison_class": "bao_sector_prediction",
+      "reference": "DESI_DR2",
+      "status": "dark_sector_open"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -187,23 +255,7 @@
       "measured": 3.046,
       "error_pct": 0.009407,
       "eval_kind": "crosswalk_relay",
-      "status": "dark_sector_open",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "N eff",
-      "scientific_measurement": {
-        "delta": -0.00028655,
-        "delta_pct": 0.009407,
-        "effective_error_pct": 0.009407,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.2851,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.033,
-        "reference": "SM N_eff (Planck 2018)",
-        "observable_status": "cmb_open"
-      }
+      "status": "dark_sector_open"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -214,23 +266,7 @@
       "measured": 0.685,
       "error_pct": 0.0016,
       "eval_kind": "crosswalk_relay",
-      "status": "dark_sector_open",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "Omega Lambda",
-      "scientific_measurement": {
-        "delta": -0.00031095,
-        "delta_pct": 0.045395,
-        "effective_error_pct": 0.045395,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0016,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 1.02,
-        "reference": "Planck 2018",
-        "observable_status": "dark_energy_open"
-      }
+      "status": "dark_sector_open"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -241,23 +277,7 @@
       "measured": 0.8111,
       "error_pct": 0.00296,
       "eval_kind": "crosswalk_relay",
-      "status": "dark_sector_open",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "sigma 8",
-      "scientific_measurement": {
-        "delta": 2.4e-05,
-        "delta_pct": 0.00296,
-        "effective_error_pct": 0.00296,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.004,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.74,
-        "reference": "Planck 2018 / Euclid Q1 2024",
-        "observable_status": "s8_tension"
-      }
+      "status": "dark_sector_open"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -268,23 +288,7 @@
       "measured": 0.0561,
       "error_pct": 0.006335,
       "eval_kind": "crosswalk_relay",
-      "status": "dark_sector_open",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "tau reion",
-      "scientific_measurement": {
-        "delta": -0.00170345,
-        "delta_pct": 3.036447,
-        "effective_error_pct": 3.036447,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0005,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 13.0,
-        "reference": "Planck 2018",
-        "observable_status": "cmb_open"
-      }
+      "status": "dark_sector_open"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -295,23 +299,7 @@
       "measured": 2.527e-05,
       "error_pct": 0.090986,
       "eval_kind": "crosswalk_relay",
-      "status": "dark_sector_open",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "D H ratio",
-      "scientific_measurement": {
-        "delta": 1.8e-07,
-        "delta_pct": 0.699746,
-        "effective_error_pct": 0.699746,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0758,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 1.2,
-        "reference": "Cooke et al. 2018 BBN",
-        "observable_status": "bbn_open"
-      }
+      "status": "dark_sector_open"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -322,74 +310,210 @@
       "measured": 0.2449,
       "error_pct": 0.048592,
       "eval_kind": "crosswalk_relay",
-      "status": "dark_sector_open",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "Y p He4",
-      "scientific_measurement": {
-        "delta": -0.000119,
-        "delta_pct": 0.048592,
-        "effective_error_pct": 0.048592,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "status": "dark_sector_open"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "fpc_tau_unity_coupling",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Acoustic_Resonance_Materials",
+      "computed": 1.000201,
+      "measured": 1.0,
+      "error_pct": 0.020055,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adjacent_Rung_Coupling",
+      "computed": 1.000314,
+      "measured": 1.0,
+      "error_pct": 0.031421,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "importance_score",
+      "name": "18-100754-general-1946-7-vol-2",
+      "computed": 6.400543,
+      "measured": 6.4,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "importance_score",
+      "name": "18-6369445-general-1948-vol-1",
+      "computed": 4.200357,
+      "measured": 4.2,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "engine_native_h0",
+      "name": "None",
+      "computed": 67.27021167735879,
+      "measured": 67.4,
+      "error_pct": 0.192564276915754,
+      "eval_kind": "c_thin_depth_relay"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "brightness_temperature_rms_k",
+      "name": "None",
+      "computed": 99.99581522012987,
+      "measured": 100.0,
+      "error_pct": 0.004184779870129773,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "hubble_constant_km_s_mpc",
+      "name": "None",
+      "computed": 67.38395831285372,
+      "measured": 67.4,
+      "error_pct": 0.023800722768967785,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "matter_fluctuation_amplitude",
+      "name": "None",
+      "computed": 0.8111240047382514,
+      "measured": 0.811,
+      "error_pct": 0.01529034996934153,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "observable",
+      "name": "None",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "symbolic_schema"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "dark_sector",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Cosmology_Extended__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "c_thin_depth_relay"
     },
     {
       "lab": "hubble_dark_sector_lab",
       "property": "panel_pooled_median",
       "name": "cosmology_anomaly_deep",
-      "computed": 0.000595,
-      "measured": 0.000595,
+      "computed": 0.029733,
+      "measured": 0.029733,
       "error_pct": 0.0,
-      "eval_kind": "crosswalk_bridge",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "cosmology anomaly deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "crosswalk_bridge"
     },
     {
       "lab": "hubble_dark_sector_lab",
       "source_panel": "cosmology_anomaly_deep",
-      "property": "dark_energy_eos_evolution",
-      "name": "wa_fsot_prereg_desi_dr2",
-      "computed": -1.020856,
-      "measured": -1.018,
-      "error_pct": 0.000595,
-      "eval_kind": "preregistered_falsifiable",
-      "comparison_class": "preregistered_falsifiable",
-      "sigma_distance": 0.0119,
-      "sigma": 0.24,
-      "reference": "FSOT_P45c",
-      "survey": "DESI_DR2",
-      "status": "unconfirmed_prediction",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "wa fsot prereg desi dr2",
-      "scientific_measurement": {
-        "delta": -0.002856,
-        "delta_pct": 0.28055,
-        "effective_error_pct": 0.000595,
-        "comparison_kind": "preregistered_falsifiable",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.000595,
-        "reference": "FSOT_P45c",
-        "observable_status": "unconfirmed_prediction"
-      }
+      "property": "time_is_emergent",
+      "name": "fpc_time_emergence_flag",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "cosmology_anomaly_deep",
+      "property": "fpc_tau_anchor",
+      "name": "cs133_fpc_equilibrium",
+      "computed": 1.344535,
+      "measured": 1.344,
+      "error_pct": 0.039797,
+      "eval_kind": "fpc_anchor"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "cosmology_anomaly_deep",
+      "property": "stumped_pillar",
+      "name": "stumped_observables_panel",
+      "computed": 19.0,
+      "measured": 19.0,
+      "error_pct": 0.039905,
+      "eval_kind": "c_thin_depth_relay",
+      "status": "GREEN"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "cosmology_anomaly_deep",
+      "property": "stumped_pillar",
+      "name": "hubble_bubble_tension",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "eval_kind": "c_thin_depth_relay",
+      "status": "GREEN"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "cosmology_anomaly_deep",
+      "property": "stumped_pillar",
+      "name": "dark_sector_open_problems",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.009407,
+      "eval_kind": "c_thin_depth_relay",
+      "status": "GREEN"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "cosmology_anomaly_deep",
+      "property": "cosmology_anomalies_link",
+      "name": "cosmology_anomalies_tier25",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.140126,
+      "eval_kind": "c_thin_depth_relay",
+      "status": "GREEN"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "source_panel": "cosmology_anomaly_deep",
+      "property": "fpc_tau_unity_coupling",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "eval_kind": "c_thin_depth_relay"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -399,20 +523,7 @@
       "measured": 72.1,
       "error_pct": 0.000502,
       "eval_kind": "literature_monitor",
-      "comparison_class": "literature_monitor",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "h0 fsot bubble",
-      "scientific_measurement": {
-        "delta": 0.000362,
-        "delta_pct": 0.000502,
-        "effective_error_pct": 0.000502,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "comparison_class": "literature_monitor"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -423,20 +534,7 @@
       "error_pct": 0.0,
       "planck_h0": 67.4,
       "local_h0": 73.04,
-      "eval_kind": "h0_gate",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "dual anchor gate",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "h0_gate"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -445,22 +543,8 @@
       "computed": -1.000005,
       "measured": -1.0,
       "error_pct": 0.000502,
-      "eval_kind": "literature_monitor",
-      "comparison_class": "literature_monitor",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "w0",
-      "scientific_measurement": {
-        "delta": -5e-06,
-        "delta_pct": 0.0005,
-        "effective_error_pct": 0.0005,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0002,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 3.0
-      }
+      "eval_kind": "live_formula",
+      "comparison_class": "scalar_prediction"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -469,24 +553,60 @@
       "computed": 0.685003,
       "measured": 0.685,
       "error_pct": 0.000502,
-      "eval_kind": "literature_monitor",
-      "comparison_class": "literature_monitor",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "omega lambda",
-      "scientific_measurement": {
-        "delta": 3e-06,
-        "delta_pct": 0.000438,
-        "effective_error_pct": 0.000438,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0004,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 1.02,
-        "reference": "Planck2018",
-        "observable_status": "dark_energy_open"
-      }
+      "eval_kind": "live_formula",
+      "comparison_class": "scalar_prediction"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "property": "wa_bao_seed",
+      "name": "wa_bao",
+      "computed": -1.020856,
+      "measured": -1.018,
+      "error_pct": 0.000595,
+      "sigma_distance": 0.0119,
+      "sigma": 0.24,
+      "eval_kind": "live_formula",
+      "comparison_class": "scalar_prediction",
+      "formula": "wa_cmb + w0_bao\u00b7(G/\u03c0)"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "property": "w0_bao_seed",
+      "name": "w0_bao",
+      "computed": -0.729679,
+      "measured": -0.727,
+      "error_pct": 0.004321,
+      "sigma_distance": 0.0864,
+      "sigma": 0.031,
+      "eval_kind": "live_formula",
+      "comparison_class": "scalar_prediction",
+      "formula": "w0_cmb\u00b7(1 \u2212 G/\u03c0)"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "property": "wa_cmb_seed",
+      "name": "wa_cmb",
+      "computed": -0.80811,
+      "measured": -0.4,
+      "error_pct": 0.051014,
+      "sigma_distance": 1.0203,
+      "sigma": 0.4,
+      "eval_kind": "live_formula",
+      "comparison_class": "scalar_prediction",
+      "formula": "\u2212\u03b3\u00b7e\u00b7\u03c6/\u03c0"
+    },
+    {
+      "lab": "hubble_dark_sector_lab",
+      "property": "w0_cmb_seed",
+      "name": "w0_cmb",
+      "computed": -1.029981,
+      "measured": -1.03,
+      "error_pct": 3.1e-05,
+      "sigma_distance": 0.0006,
+      "sigma": 0.03,
+      "eval_kind": "live_formula",
+      "comparison_class": "scalar_prediction",
+      "formula": "\u2212P_new\u00b7\u03c0/G"
     },
     {
       "lab": "hubble_dark_sector_lab",
@@ -495,211 +615,12 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "certificate_gate",
-      "domain_display_name": "hubble dark sector",
-      "display_name": "hubble dark sector crosswalk",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "hubble_dark_sector_crosswalk_depth_lab",
-      "property": "panel_pooled_median",
-      "name": "time_emergence_deep",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "record_count": 17,
-      "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "hubble dark sector crosswalk depth",
-      "display_name": "time emergence deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Fluid_Spacetime_Observable_Spine",
-      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
-    },
-    {
-      "lab": "hubble_dark_sector_crosswalk_depth_lab",
-      "source_panel": "Fluid_Spacetime_Observable_Spine",
-      "property": "time_is_emergent",
-      "name": "fpc_time_emergence_flag",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "emergence_gate",
-      "domain_display_name": "hubble dark sector crosswalk depth",
-      "display_name": "fpc time emergence flag",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
-    },
-    {
-      "lab": "hubble_dark_sector_crosswalk_depth_lab",
-      "property": "panel_pooled_median",
-      "name": "fpc_fluidlink_deep",
-      "computed": 0.022181,
-      "measured": 0.022181,
-      "error_pct": 0.0,
-      "record_count": 13,
-      "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "hubble dark sector crosswalk depth",
-      "display_name": "fpc fluidlink deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Fluid_Spacetime_Observable_Spine",
-      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
-    },
-    {
-      "lab": "hubble_dark_sector_crosswalk_depth_lab",
-      "source_panel": "Fluid_Spacetime_Observable_Spine",
-      "property": "fpc_tau_anchor",
-      "name": "cs133_fpc_equilibrium",
-      "computed": 1.344535,
-      "measured": 1.344,
-      "error_pct": 0.039797,
-      "eval_kind": "fpc_anchor",
-      "domain_display_name": "hubble dark sector crosswalk depth",
-      "display_name": "cs133 fpc equilibrium",
-      "scientific_measurement": {
-        "delta": 0.000535,
-        "delta_pct": 0.039807,
-        "effective_error_pct": 0.039807,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
-    },
-    {
-      "lab": "hubble_dark_sector_crosswalk_depth_lab",
-      "property": "stumped_observables_bridge",
-      "name": "stumped_observables_panel",
-      "computed": 0.039905,
-      "measured": 0.039905,
-      "error_pct": 0.0,
-      "eval_kind": "panel_bridge",
-      "comparison_class": "literature_monitor",
-      "domain_display_name": "hubble dark sector crosswalk depth",
-      "display_name": "stumped observables panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Cosmology_Anomaly_Deep_Panel",
-      "depth_relay_from": "Cosmology_Anomaly_Deep_Panel"
-    },
-    {
-      "lab": "hubble_dark_sector_crosswalk_depth_lab",
-      "property": "dark_energy_eos_evolution",
-      "name": "wa_fsot_prereg_desi_dr2",
-      "computed": -1.020856,
-      "measured": -1.018,
-      "error_pct": 0.000595,
-      "sigma_distance": 0.0119,
-      "sigma": 0.24,
-      "reference": "FSOT_P45c",
-      "survey": "DESI_DR2",
-      "eval_kind": "preregistered_falsifiable",
-      "comparison_class": "preregistered_falsifiable",
-      "status": "unconfirmed_prediction",
-      "domain_display_name": "hubble dark sector crosswalk depth",
-      "display_name": "wa fsot prereg desi dr2",
-      "scientific_measurement": {
-        "delta": -0.002856,
-        "delta_pct": 0.28055,
-        "effective_error_pct": 0.000595,
-        "comparison_kind": "preregistered_falsifiable",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.000595,
-        "reference": "FSOT_P45c",
-        "observable_status": "unconfirmed_prediction"
-      },
-      "source_panel": "Cosmology_Anomaly_Deep_Panel",
-      "depth_relay_from": "Cosmology_Anomaly_Deep_Panel"
-    },
-    {
-      "lab": "hubble_dark_sector_crosswalk_depth_lab",
-      "property": "hubble_constant",
-      "name": "h0_planck_2018",
-      "computed": 67.400339,
-      "measured": 67.4,
-      "error_pct": 0.000502,
-      "reference": "Planck2018",
-      "eval_kind": "literature_monitor",
-      "comparison_class": "literature_monitor",
-      "monitor_only": false,
-      "domain_display_name": "hubble dark sector crosswalk depth",
-      "display_name": "h0 planck 2018",
-      "scientific_measurement": {
-        "delta": 0.000339,
-        "delta_pct": 0.000503,
-        "effective_error_pct": 0.000503,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0007,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.742,
-        "reference": "Planck2018",
-        "observable_status": "fsot_dual_anchor"
-      },
-      "source_panel": "Cosmology_Anomaly_Deep_Panel",
-      "depth_relay_from": "Cosmology_Anomaly_Deep_Panel"
+      "eval_kind": "certificate_gate"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0198985,
-    "max_scalar_error_pct": 0.039797,
+    "scalar_pooled_median_error_pct": 0.009407,
+    "max_scalar_error_pct": 0.192564276915754,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -708,19 +629,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Hubble Dark Sector Crosswalk",
-  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 2,
-    "median_error_pct": 0.039807,
-    "max_error_pct": 0.039807,
-    "mean_abs_delta": 0.0002675,
-    "precision_tier_counts": {
-      "green": 2
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:48.448575+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

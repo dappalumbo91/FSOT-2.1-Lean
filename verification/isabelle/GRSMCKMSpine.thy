@@ -175,40 +175,40 @@ lemma alpha_s_MZ_measured_pos: "(0::real) < 0.1179"
 lemma alpha_s_MZ_abs_diff: "0.000008791428 < 0.000008879343"
   by simp
 
-lemma m_H_err_under_half: "0.01626281117232239 < (0.5::real)"
+lemma m_H_err_under_half: "0.03465631473109587 < (0.5::real)"
   by simp
 
 lemma m_H_measured_pos: "(0::real) < 125.25"
   by simp
 
-lemma m_H_abs_diff: "0.020369170993333796 < 0.020572862703268132"
+lemma m_H_abs_diff: "0.04340703420069758 < 0.04384110454270555"
   by simp
 
-lemma m_W_err_under_half: "0.024447179407699797 < (0.5::real)"
+lemma m_W_err_under_half: "0.026467778409122445 < (0.5::real)"
   by simp
 
 lemma m_W_measured_pos: "(0::real) < 80.377"
   by simp
 
-lemma m_W_abs_diff: "0.019649909392526865 < 0.019846408486453134"
+lemma m_W_abs_diff: "0.021274006251900346 < 0.02148674631442035"
   by simp
 
-lemma m_Z_err_under_half: "0.0028066544219732493 < (0.5::real)"
+lemma m_Z_err_under_half: "0.05373549190999207 < (0.5::real)"
   by simp
 
 lemma m_Z_measured_pos: "(0::real) < 91.1876"
   by simp
 
-lemma m_Z_abs_diff: "0.002559320807691279 < 0.0025849140157691917"
+lemma m_Z_abs_diff: "0.04900010542091593 < 0.04949010647512609"
   by simp
 
-lemma m_t_err_under_half: "0.03614194480013092 < (0.5::real)"
+lemma m_t_err_under_half: "0.014767057175780673 < (0.5::real)"
   by simp
 
 lemma m_t_measured_pos: "(0::real) < 172.69"
   by simp
 
-lemma m_t_abs_diff: "0.062413524475346094 < 0.06303765972010056"
+lemma m_t_abs_diff: "0.025501231036855643 < 0.025756243347225198"
   by simp
 
 lemma Lambda_QCD_GeV_err_under_half: "0.28120185593059194 < (0.5::real)"
@@ -466,19 +466,19 @@ lemma gr_seed_alpha_inv_err_under_half: "0.13842762822785223 < (0.5::real)"
 lemma gr_seed_alpha_inv_meas_pos: "(0::real) < 137.035999084"
   by simp
 
-lemma gr_seed_m_H_err_under_half: "0.03990518384182655 < (0.5::real)"
+lemma gr_seed_m_H_err_under_half: "0.01100190161397048 < (0.5::real)"
   by simp
 
 lemma gr_seed_m_H_meas_pos: "(0::real) < 125.25"
   by simp
 
-lemma gr_seed_m_W_err_under_half: "0.028479127221542264 < (0.5::real)"
+lemma gr_seed_m_W_err_under_half: "0.022433777228753317 < (0.5::real)"
   by simp
 
 lemma gr_seed_m_W_meas_pos: "(0::real) < 80.377"
   by simp
 
-lemma gr_seed_m_Z_err_under_half: "0.0015966043740363804 < (0.5::real)"
+lemma gr_seed_m_Z_err_under_half: "0.05252482561491295 < (0.5::real)"
   by simp
 
 lemma gr_seed_m_Z_meas_pos: "(0::real) < 91.1876"
@@ -544,7 +544,7 @@ lemma gr_sqrt2_structural_recovery_err_under_half: "0 < (0.5::real)"
 lemma gr_sqrt2_structural_recovery_meas_pos: "(0::real) < 1.4142135623730951"
   by simp
 
-lemma gr_yukawa_top_err_under_half: "0.027688980764132183 < (0.5::real)"
+lemma gr_yukawa_top_err_under_half: "0.07863049017601485 < (0.5::real)"
   by simp
 
 lemma gr_yukawa_top_meas_pos: "(0::real) < 0.991"
@@ -655,6 +655,24 @@ lemma gr_triangle_angle_sum_pi_err_under_half: "0 < (0.5::real)"
 lemma gr_triangle_angle_sum_pi_meas_pos: "(0::real) < 3.141592653589793"
   by simp
 
+lemma gr_alpha_rad_err_under_half: "0.0034382632792112626 < (0.5::real)"
+  by simp
+
+lemma gr_alpha_rad_meas_pos: "(0::real) < 1.6070304610469615"
+  by simp
+
+lemma gr_beta_rad_err_under_half: "0.014994707011088022 < (0.5::real)"
+  by simp
+
+lemma gr_beta_rad_meas_pos: "(0::real) < 0.3923401442155158"
+  by simp
+
+lemma gr_gamma_rad_err_under_half: "0.0003131017 < (0.5::real)"
+  by simp
+
+lemma gr_gamma_rad_meas_pos: "(0::real) < 1.1422220483273158"
+  by simp
+
 lemma sm_lambda_ckm_err_under_half: "0.06648317372654539 < (0.5::real)"
   by simp
 
@@ -712,16 +730,16 @@ lemma sm_alpha_inv_err_under_half: "0.14167347156583626 < (0.5::real)"
 lemma sm_alpha_s_MZ_err_under_half: "0.007456682224867657 < (0.5::real)"
   by simp
 
-lemma sm_m_H_err_under_half: "0.01626281117232239 < (0.5::real)"
+lemma sm_m_H_err_under_half: "0.03465631473109587 < (0.5::real)"
   by simp
 
-lemma sm_m_W_err_under_half: "0.024447179407699797 < (0.5::real)"
+lemma sm_m_W_err_under_half: "0.026467778409122445 < (0.5::real)"
   by simp
 
-lemma sm_m_Z_err_under_half: "0.0028066544219732493 < (0.5::real)"
+lemma sm_m_Z_err_under_half: "0.05373549190999207 < (0.5::real)"
   by simp
 
-lemma sm_m_t_err_under_half: "0.03614194480013092 < (0.5::real)"
+lemma sm_m_t_err_under_half: "0.014767057175780673 < (0.5::real)"
   by simp
 
 lemma sm_Lambda_QCD_GeV_err_under_half: "0.28120185593059194 < (0.5::real)"

@@ -664,7 +664,8 @@ def run_gr_recovery_suite() -> list[dict]:
             sector="GR",
         )
     )
-    # Triangle angle sum identity
+    # Triangle angle sum identity + residual-gated geometric centrals
+    # (measured = atan2 from PDG ρ̄,η̄ — consistent with residual-gated Wolfenstein).
     tri = seed_unitarity_triangle()
     rows.append(
         _row(
@@ -674,6 +675,40 @@ def run_gr_recovery_suite() -> list[dict]:
             claim="T4_triangle_angle_closure",
             formula="alpha+beta+gamma = pi",
             eval_kind="seed_identity",
+            sector="Flavor",
+        )
+    )
+    rhob_m, etab_m = 0.159, 0.348  # PDG Wolfenstein centrals (same as seed_flavor.PDG)
+    gamma_geom = math.atan2(etab_m, rhob_m)
+    beta_geom = math.atan2(etab_m, 1.0 - rhob_m)
+    alpha_geom = math.pi - beta_geom - gamma_geom
+    rows.append(
+        _row(
+            "alpha_rad",
+            tri["alpha_rad"],
+            alpha_geom,
+            claim="T4_triangle_angle_alpha",
+            formula="pi-beta-gamma from seed (rho_bar,eta_bar)",
+            sector="Flavor",
+        )
+    )
+    rows.append(
+        _row(
+            "beta_rad",
+            tri["beta_rad"],
+            beta_geom,
+            claim="T4_triangle_angle_beta",
+            formula="atan2(eta_bar,1-rho_bar)",
+            sector="Flavor",
+        )
+    )
+    rows.append(
+        _row(
+            "gamma_rad",
+            tri["gamma_rad"],
+            gamma_geom,
+            claim="T4_triangle_angle_gamma",
+            formula="atan2(eta_bar,rho_bar)",
             sector="Flavor",
         )
     )

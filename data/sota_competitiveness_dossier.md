@@ -1,6 +1,6 @@
 # FSOT Zero-Parameter Competitiveness Dossier
 
-Generated: 2026-08-04T02:06:16.717269+00:00
+Generated: 2026-08-04T02:20:18.439108+00:00
 
 ## Executive summary
 
@@ -64,8 +64,8 @@ Generated: 2026-08-04T02:06:16.717269+00:00
 | cmb_cold_spot | — | 20.0 | — | 6 | structural_only |
 | jwst_early_z | — | 5.0 | — | 8 | structural_only |
 | frb_dm_excess | — | 12.0 | — | 15 | structural_only |
-| higgs_mass | 0.040 | 0.1 | 0.10 | 25 | beats_sota |
-| higgs_branching | 0.042 | 0.5 | 0.46 | 25 | beats_sota |
+| higgs_mass | 0.011 | 0.1 | 0.13 | 25 | beats_sota |
+| higgs_branching | 0.037 | 0.5 | 0.46 | 25 | beats_sota |
 | phobos_density | 0.000 | 4.0 | 4.00 | 5 | beats_sota |
 | deimos_density | 0.000 | 17.0 | 17.00 | 5 | beats_sota |
 | fic_optimal_S_final | 0.050 | 8.0 | 7.95 | 35 | beats_sota |

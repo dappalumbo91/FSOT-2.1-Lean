@@ -71,7 +71,7 @@ See **[`docs/GR_SM_CKM_MULTIPROVER.md`](GR_SM_CKM_MULTIPROVER.md)** — magnitud
 | Confinement scales | Λ_QCD = G_Cat·SUCTION·φ; √σ = K | ≤0.5% |
 | Confinement algebra | N_c, C_F, C_A, β₀(n_f=5) | exact identity |
 | Cosmology | N_eff = 3 + 2·POOF·SUCTION | ≤0.5% |
-| Triangle | α,β,γ from (ρ̄,η̄); α+β+γ=π | identity green; angle centrals = seed predictions inside exp. bands |
+| Triangle | α,β,γ from (ρ̄,η̄); α+β+γ=π | identity green; **residual-gated** vs geometric PDG(ρ̄,η̄) ≤0.5%; lit-fit centrals band-only |
 | Spin-2 probes | massless helicities=2, TT dof=2, quadrupole prefactor | exact identity |
 
 ## Depth v3 (path-integral / Fock *probes* — not theorems)

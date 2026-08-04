@@ -1,6 +1,6 @@
 # Lean Route Credibility Expansion
 
-*Generated: 2026-08-04T01:58:23.896417+00:00*
+*Generated: 2026-08-04T02:19:37.692256+00:00*
 
 Under-covered Lean routes (gap/partial in `domain_coverage_map.yaml`) receive dedicated credibility benchmarks.
 

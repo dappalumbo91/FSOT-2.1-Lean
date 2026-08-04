@@ -837,12 +837,13 @@ def write_gap_closure_doc(eval_doc: dict) -> None:
         "1. On-shell vs MS-bar Weinberg schemes → m_Z headroom",
         "2. Λ_QCD, √σ, SU(3) Casimirs, β₀(n_f=5)",
         "3. N_eff seed map; unitarity-triangle closure; spin-2 helicity/TT probes",
-        "4. CKM NLO magnitudes + multiprover spine (~222 obligations)",
+        "4. CKM NLO magnitudes + multiprover spine",
+        "5. CKM α,β,γ residual-gated vs geometric PDG(ρ̄,η̄) centrals (≤0.5%)",
         "",
         "### Still open research (not claimed)",
         "",
         "1. Full non-abelian **path-integral** confinement theorem",
-        "2. CKM α,β,γ residual-gated to ≤0.5% of PDG *central* (seed predictions inside experimental bands)",
+        "2. Published CKM angle-*fit* centrals as residual gate (definitionally ≠ atan2 of PDG ρ̄,η̄; geometric gate shipped)",
         "3. Spin-2 graviton **Fock uniqueness** from the fluid action",
         "4. Uniqueness theorem for Einstein–Hilbert measure",
         "5. Finished resolution of all 13 contested open problems",
@@ -959,17 +960,17 @@ def main() -> int:
             "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json",
         },
         "next_actions_research": [
-            "CKM angle centrals (α,β,γ) residual-gated to ≤0.5% of PDG central (now seed predictions inside experimental bands + exact α+β+γ=π)",
-            "Full non-abelian path-integral confinement theorem (scales Λ_QCD, √σ, Casimirs, β₀ shipped)",
-            "Spin-2 Fock uniqueness from fluid action (helicity/TT/quadrupole probes shipped)",
+            "Full non-abelian path-integral confinement theorem (scales Λ_QCD, √σ, Casimirs, β₀ + area-law/Polyakov probes shipped)",
+            "Spin-2 Fock uniqueness from fluid action (helicity/TT/massive-dof/accounting probes shipped)",
             "Independent clean-clone by third party",
             "arXiv endorsement + peer review",
         ],
         "honest_statement": (
             "T3/T4 deepened with GR recovery, SM force package, CKM/PMNS seed+NLO magnitudes, "
             "on-shell vs MS-bar Weinberg schemes, confinement scales (Λ_QCD, √σ), N_eff, "
-            "SU(3) Casimirs/β₀, spin-2 helicity probes, and unitarity-triangle closure — "
-            "multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. "
+            "SU(3) Casimirs/β₀, spin-2 probes, unitarity-triangle closure, and CKM α,β,γ "
+            "residual-gated vs geometric PDG(ρ̄,η̄) — multi-prover exported "
+            "(Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. "
             "Full path-integral confinement theorem and spin-2 Fock uniqueness remain open research."
         ),
     }

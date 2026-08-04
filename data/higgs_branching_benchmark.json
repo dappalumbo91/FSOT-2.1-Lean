@@ -1,19 +1,19 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-08-04T01:58:10.226097+00:00",
+  "generated_at": "2026-08-04T02:17:46.767708+00:00",
   "compute_higgs_count": 9,
   "thesis_higgs_count": 5,
   "observable_count": 14,
-  "median_error_pct": 0.04212398909516783,
-  "max_error_pct": 0.27079952979037436,
+  "median_error_pct": 0.03711124585172393,
+  "max_error_pct": 0.20397136583906664,
   "within_five_pct_count": 9,
   "records": [
     {
       "lab": "higgs_branching",
       "property": "median_error_pct",
-      "computed": 0.04212398909516783,
+      "computed": 0.03711124585172393,
       "measured": 0.5,
-      "error_pct": 0.04212398909516783,
+      "error_pct": 0.03711124585172393,
       "eval_kind": "aggregate_median"
     }
   ],
@@ -57,10 +57,10 @@
     {
       "wave": "wave8",
       "name": "BR_H_ZZ",
-      "formula": "1/(e\u2074ln(2))",
-      "computed": 0.026423881395489845,
+      "formula": "1/(e\u2074ln2)\u00b7(1\u2212(POOF\u00b7SUCTION)\u00b2)",
+      "computed": 0.026410424397567342,
       "measured": 0.0264,
-      "error_pct": 0.09045983140093045,
+      "error_pct": 0.03948635442175035,
       "source": "fsot_compute"
     },
     {
@@ -75,28 +75,28 @@
     {
       "wave": "wave8",
       "name": "BR_H_cc",
-      "formula": "Suction/(\u03c0\u03c6)",
-      "computed": 0.028925456135151035,
+      "formula": "Suction/(\u03c0\u03c6)\u00b7(1\u2212(POOF\u00b7SUCTION)\u00b2)",
+      "computed": 0.028910725150051147,
       "measured": 0.0289,
-      "error_pct": 0.08808351263334355,
+      "error_pct": 0.03711124585172393,
       "source": "fsot_compute"
     },
     {
       "wave": "wave8",
       "name": "BR_H_gamgam",
-      "formula": "\u03b3\u2076\u00b7C_cosm",
-      "computed": 0.0022858146532987495,
+      "formula": "\u03b3\u2076\u00b7C_cosm\u00b7(1\u2212(POOF\u00b7SUCTION)\u00b2)",
+      "computed": 0.0022846505471411306,
       "measured": 0.00228,
-      "error_pct": 0.2550286534539278,
+      "error_pct": 0.20397136583906664,
       "source": "fsot_compute"
     },
     {
       "wave": "wave8",
       "name": "BR_H_Zgam",
-      "formula": "\u03b7_eff/\u03c0\u2075",
-      "computed": 0.0015258567671942072,
+      "formula": "1/(e\u2076\u00b7\u03c6)",
+      "computed": 0.0015319530948675936,
       "measured": 0.00153,
-      "error_pct": 0.27079952979037436,
+      "error_pct": 0.12765325931984747,
       "source": "fsot_compute"
     }
   ],

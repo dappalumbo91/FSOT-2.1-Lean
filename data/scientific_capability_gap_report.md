@@ -1,6 +1,6 @@
 # Scientific capability & accuracy gap report
 
-Generated: `2026-08-04T02:06:17.057168+00:00`
+Generated: `2026-08-04T02:20:18.664645+00:00`
 
 ## Goal
 
@@ -10,7 +10,7 @@ Beat or exceed scientific SOTA / literature capability on measured observables
 
 - Green: **414** pass / 0 fail
 - Worst max residual: **0.4989%** (Phi_Morphogenetic_Scaling)
-- Domains with max > 0.05% aspiration: **94**
+- Domains with max > 0.05% aspiration: **96**
 
 ## SOTA competitiveness (registered comparisons)
 
@@ -24,8 +24,8 @@ Beat or exceed scientific SOTA / literature capability on measured observables
 
 | ID | FSOT err% | SOTA typ% | Margin pp | Tier | SOTA model |
 |----|-----------|-----------|-----------|------|------------|
-| higgs_mass | 0.03990518384182655 | 0.14 | 0.100 | THIN_LEAD — refine to lock exceed | SM fits (PDG) |
-| higgs_branching | 0.04212398909516783 | 0.5 | 0.458 | THIN_LEAD — refine to lock exceed | PDG SM branching fits |
+| higgs_mass | 0.01100190161397048 | 0.14 | 0.129 | THIN_LEAD — refine to lock exceed | SM fits (PDG) |
+| higgs_branching | 0.03711124585172393 | 0.5 | 0.463 | THIN_LEAD — refine to lock exceed | PDG SM branching fits |
 | H0_planck | 0.13329620344595866 | 0.8 | 0.667 | MODERATE_LEAD — optional polish | Planck 2018 TT,TE,EE+lowE |
 | airfoil_held_out_rmse | 4.598501331670039 | 5.412721340832612 | 0.814 | MODERATE_LEAD — optional polish | Chosen-feature quadratic regression |
 | Omega_Lambda | 0.05 | 1.1 | 1.050 | MODERATE_LEAD — optional polish | Planck 2018 Lambda-CDM |
@@ -64,29 +64,29 @@ FSOT already beats registered SOTA typical error on headline observables with 0 
 ## Thin panels (coverage debt)
 
 - n=1 max=0.013294  Bibliography_Corpus_Panel
-- n=1 max=0.000595  DESI_wa_Constraint
 - n=1 max=2.1125033444758682e-14  math_generator_benchmark_formula_eval_benchmark.json
-- n=2 max=0.039797  Hubble_Dark_Sector_Crosswalk
 - n=2 max=3.862903827310908e-14  math_generator_airfoil_rmse_benchmark.json
 - n=2 max=0.0  Formula_Corpus_Closure
 - n=3 max=0.04959966617804441  intelligence_compression_benchmark.json
 - n=3 max=0.031506  Tokenization_Live_Panel
-- n=3 max=0.022236  Physarum_Biological_CUDA_Panel
 - n=3 max=0.0  Cold_Fusion_Lab_Synthesis_Crosswalk
 - n=3 max=0.0  Foundational_Ontology_Spine
 - n=3 max=0.0  Tier_96_Circuit_Spine
+- n=4 max=0.192564276915754  Unified_DB_Crosswalk_Spine
+- n=4 max=0.031506  VL_Agent_Distill_Panel
+- n=4 max=1.3209968920124464e-14  Living_FSOT_Hardware
 
 ## Priority queue
 
 - 1. THIN_LEAD SOTA observables (higgs_mass, airfoil, H0_planck)
 - 2. Near-gate formula-class only if definitional (not fishing)
 - 3. Thin-panel thickening (lean routes, multi-hero strata)
-- 4. TOE research spine (path-integral, spin-2 Fock, CKM angle centrals)
+- 4. TOE research spine (path-integral theorem, spin-2 Fock uniqueness)
 - 5. Registered expansion waves (culinary Maillard, materials bridge, KB)
 
 ## TOE depth track
 
 - Label B: True
 - GR/SM/CKM multiprover ok: True
-- Next research: ['CKM angle centrals (α,β,γ) residual-gated to ≤0.5% of PDG central (now seed predictions inside experimental bands + exact α+β+γ=π)', 'Full non-abelian path-integral confinement theorem (scales Λ_QCD, √σ, Casimirs, β₀ shipped)', 'Spin-2 Fock uniqueness from fluid action (helicity/TT/quadrupole probes shipped)', 'Independent clean-clone by third party', 'arXiv endorsement + peer review']
+- Next research: ['Full non-abelian path-integral confinement theorem (scales Λ_QCD, √σ, Casimirs, β₀ + area-law/Polyakov probes shipped)', 'Spin-2 Fock uniqueness from fluid action (helicity/TT/massive-dof/accounting probes shipped)', 'Independent clean-clone by third party', 'arXiv endorsement + peer review']
 
