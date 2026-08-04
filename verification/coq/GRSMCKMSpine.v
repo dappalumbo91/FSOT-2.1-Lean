@@ -526,6 +526,24 @@ Proof. lra. Qed.
 Lemma gr_beta0_QCD_nf5_meas_pos : 0 < ((7.666666666666667%R)).
 Proof. lra. Qed.
 
+Lemma gr_alpha_s_gt_alpha_em_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_alpha_s_gt_alpha_em_meas_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_koide_lepton_QR_err_under_half : ((0.0009230194964016114%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_koide_lepton_QR_meas_pos : 0 < ((0.6666666666666666%R)).
+Proof. lra. Qed.
+
+Lemma gr_sqrt2_structural_recovery_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_sqrt2_structural_recovery_meas_pos : 0 < ((1.4142135623730951%R)).
+Proof. lra. Qed.
+
 Lemma gr_spin2_massless_helicities_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 

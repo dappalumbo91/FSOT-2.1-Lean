@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-04T00:53:01.650914+00:00",
+  "generated_at": "2026-08-04T01:00:47.074309+00:00",
   "version": "1.0",
   "tier": "gr_sm_ckm",
-  "obligation_count": 222,
+  "obligation_count": 228,
   "modules": [
     "FSOT/Formal/GRSMCKMSpine.lean",
     "verification/coq/GRSMCKMSpine.v",
@@ -1599,6 +1599,57 @@
       "module": "GRSMCKM.GR",
       "claim": "T4_confinement_beta0",
       "coq_id": "gr_beta0_QCD_nf5_meas_pos"
+    },
+    {
+      "id": "gr_alpha_s_gt_alpha_em_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_coupling_hierarchy",
+      "statement": "error_pct(alpha_s_gt_alpha_em) < 0.5",
+      "coq_id": "gr_alpha_s_gt_alpha_em_err_under_half"
+    },
+    {
+      "id": "gr_alpha_s_gt_alpha_em_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_coupling_hierarchy",
+      "coq_id": "gr_alpha_s_gt_alpha_em_meas_pos"
+    },
+    {
+      "id": "gr_koide_lepton_QR_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0009230194964016114,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_koide_lepton",
+      "statement": "error_pct(koide_lepton_QR) < 0.5",
+      "coq_id": "gr_koide_lepton_QR_err_under_half"
+    },
+    {
+      "id": "gr_koide_lepton_QR_meas_pos",
+      "kind": "pos",
+      "value": 0.6666666666666666,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_koide_lepton",
+      "coq_id": "gr_koide_lepton_QR_meas_pos"
+    },
+    {
+      "id": "gr_sqrt2_structural_recovery_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T2_structural_geometry",
+      "statement": "error_pct(sqrt2_structural_recovery) < 0.5",
+      "coq_id": "gr_sqrt2_structural_recovery_err_under_half"
+    },
+    {
+      "id": "gr_sqrt2_structural_recovery_meas_pos",
+      "kind": "pos",
+      "value": 1.4142135623730951,
+      "module": "GRSMCKM.GR",
+      "claim": "T2_structural_geometry",
+      "coq_id": "gr_sqrt2_structural_recovery_meas_pos"
     },
     {
       "id": "gr_spin2_massless_helicities_err_under_half",

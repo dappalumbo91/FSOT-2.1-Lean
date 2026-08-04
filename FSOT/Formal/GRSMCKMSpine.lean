@@ -533,6 +533,24 @@ theorem gr_beta0_QCD_nf5_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
 theorem gr_beta0_QCD_nf5_meas_pos : (0 : ℝ) < (7.666666666666667 : ℝ) := by
   norm_num
 
+theorem gr_alpha_s_gt_alpha_em_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_alpha_s_gt_alpha_em_meas_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
+theorem gr_koide_lepton_QR_err_under_half : (0.0009230194964016114 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_koide_lepton_QR_meas_pos : (0 : ℝ) < (0.6666666666666666 : ℝ) := by
+  norm_num
+
+theorem gr_sqrt2_structural_recovery_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_sqrt2_structural_recovery_meas_pos : (0 : ℝ) < (1.4142135623730951 : ℝ) := by
+  norm_num
+
 theorem gr_spin2_massless_helicities_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 

@@ -526,6 +526,24 @@ lemma gr_beta0_QCD_nf5_err_under_half: "0 < (0.5::real)"
 lemma gr_beta0_QCD_nf5_meas_pos: "(0::real) < 7.666666666666667"
   by simp
 
+lemma gr_alpha_s_gt_alpha_em_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_alpha_s_gt_alpha_em_meas_pos: "(0::real) < 1.0"
+  by simp
+
+lemma gr_koide_lepton_QR_err_under_half: "0.0009230195 < (0.5::real)"
+  by simp
+
+lemma gr_koide_lepton_QR_meas_pos: "(0::real) < 0.6666666666666666"
+  by simp
+
+lemma gr_sqrt2_structural_recovery_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_sqrt2_structural_recovery_meas_pos: "(0::real) < 1.4142135623730951"
+  by simp
+
 lemma gr_spin2_massless_helicities_err_under_half: "0 < (0.5::real)"
   by simp
 

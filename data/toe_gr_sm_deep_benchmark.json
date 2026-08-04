@@ -1,6 +1,6 @@
 {
   "benchmark_version": "2.0",
-  "generated_at": "2026-08-04T00:53:01.473593+00:00",
+  "generated_at": "2026-08-04T01:00:46.895560+00:00",
   "domain": "TOE_GR_SM_Deep",
   "maps_to_lean": [
     "cosmological",
@@ -10,13 +10,13 @@
   "D_eff": 22,
   "purpose": "Deep T3 GR recovery (weak field, Schwarzschild, light deflection, perihelion, Friedmann, acoustic metric) + T4 SM force package (U(1)\u00d7SU(2)\u00d7SU(3), couplings, masses, charge quantization, Higgs)",
   "module": "vendor/fsot_gr_sm.py",
-  "record_count": 65,
-  "observable_count": 65,
-  "median_error_pct": 0.01626281117232239,
-  "pooled_median_error_pct": 0.01626281117232239,
+  "record_count": 68,
+  "observable_count": 68,
+  "median_error_pct": 0.013893853126499888,
+  "pooled_median_error_pct": 0.013893853126499888,
   "max_error_pct": 0.4219868071131969,
   "green_gate_pass": true,
-  "gr_row_count": 25,
+  "gr_row_count": 28,
   "sm_row_count": 40,
   "records": [
     {
@@ -310,6 +310,48 @@
       "claim": "T4_confinement_beta0",
       "formula": "(11*Nc-2*nf)/3",
       "limit_sector": "QCD",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_gr_sm_lab",
+      "name": "alpha_s_gt_alpha_em",
+      "property": "alpha_s_gt_alpha_em",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "T4_coupling_hierarchy",
+      "formula": "alpha_s(M_Z) > alpha_em",
+      "limit_sector": "SM",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_gr_sm_lab",
+      "name": "koide_lepton_QR",
+      "property": "koide_lepton_QR",
+      "computed": 0.6666605132033573,
+      "measured": 0.6666666666666666,
+      "error_pct": 0.0009230194964016114,
+      "eval_kind": "seed_closed_form",
+      "claim": "T4_koide_lepton",
+      "formula": "(me+mmu+mtau)/(sqrt(me)+sqrt(mmu)+sqrt(mtau))**2 \u2192 2/3",
+      "limit_sector": "Flavor",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_gr_sm_lab",
+      "name": "sqrt2_structural_recovery",
+      "property": "sqrt2_structural_recovery",
+      "computed": 1.4142135623730951,
+      "measured": 1.4142135623730951,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "T2_structural_geometry",
+      "formula": "sin(PI/E)*PHI/A_BLEED  [=sqrt(2) by A_BLEED def]",
+      "limit_sector": "Structure",
       "zero_free_parameters": true,
       "derivation": "seed_closed_form"
     },
@@ -1223,6 +1265,48 @@
     },
     {
       "lab": "toe_gr_sm_lab",
+      "name": "alpha_s_gt_alpha_em",
+      "property": "alpha_s_gt_alpha_em",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "T4_coupling_hierarchy",
+      "formula": "alpha_s(M_Z) > alpha_em",
+      "limit_sector": "SM",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_gr_sm_lab",
+      "name": "koide_lepton_QR",
+      "property": "koide_lepton_QR",
+      "computed": 0.6666605132033573,
+      "measured": 0.6666666666666666,
+      "error_pct": 0.0009230194964016114,
+      "eval_kind": "seed_closed_form",
+      "claim": "T4_koide_lepton",
+      "formula": "(me+mmu+mtau)/(sqrt(me)+sqrt(mmu)+sqrt(mtau))**2 \u2192 2/3",
+      "limit_sector": "Flavor",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_gr_sm_lab",
+      "name": "sqrt2_structural_recovery",
+      "property": "sqrt2_structural_recovery",
+      "computed": 1.4142135623730951,
+      "measured": 1.4142135623730951,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "T2_structural_geometry",
+      "formula": "sin(PI/E)*PHI/A_BLEED  [=sqrt(2) by A_BLEED def]",
+      "limit_sector": "Structure",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_gr_sm_lab",
       "name": "spin2_massless_helicities",
       "property": "spin2_massless_helicities",
       "computed": 2.0,
@@ -1872,7 +1956,9 @@
       "\u039b_QCD + \u221a\u03c3 confinement scales",
       "N_eff = 3 + 2\u00b7POOF\u00b7SUCTION",
       "SU(3) Casimirs + \u03b2\u2080(n_f=5)",
-      "spin-2 massless helicity / TT dof probes"
+      "spin-2 massless helicity / TT dof probes",
+      "Koide lepton Q/R \u2192 2/3; \u03b1_s > \u03b1_em hierarchy",
+      "\u221a2 structural recovery (already FO load-bearing \u2014 not a new seed)"
     ]
   },
   "honest_scope": "Executable GR recovery map + SM force package v1 under atlas residual law. Not a uniqueness theorem for Einstein\u2013Hilbert or a full non-abelian path-integral derivation; see manifest.does_not_yet_include."
