@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T04:37:37.147024+00:00",
+  "generated_at": "2026-08-04T04:52:38.996992+00:00",
   "tier": "91_hardware_processor_ram_bare_metal",
   "purpose": "Executable processor/RAM FSOT laws on host Rust + serial markers, chained with QEMU no_std bare-metal scalar boot.",
   "cargo_tests": {
     "status": "passed",
     "crate": "fsot_hardware_kernel",
     "returncode": 0,
-    "stderr_tail": "\nrunning 5 tests\n.....\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
+    "stderr_tail": "\nrunning 6 tests\n......\ntest result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
   },
   "hardware_serial": {
     "status": "passed",

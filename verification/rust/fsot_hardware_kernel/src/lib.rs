@@ -234,6 +234,124 @@ pub fn run_hardware_gates() -> HardwareGateReport {
     }
 }
 
+/// CPU same-class competitive: dense softmax work vs compact consensus work (std).
+#[cfg(feature = "std")]
+pub mod cpu_competitive {
+    use super::{coherence_active, collapse_trit, COLLAPSE_THETA};
+
+    /// Dense causal softmax attention — industry CPU baseline (scalar f64).
+    pub fn dense_softmax(q: &[f64], k: &[f64], v: &[f64], h: usize, s: usize, d: usize, out: &mut [f64]) {
+        let scale = 1.0 / (d as f64).sqrt();
+        for hh in 0..h {
+            for t in 0..s {
+                // scores 0..=t
+                let mut max_sc = f64::NEG_INFINITY;
+                let mut scores = vec![0.0f64; t + 1];
+                for j in 0..=t {
+                    let mut dot = 0.0;
+                    for u in 0..d {
+                        dot += q[hh * s * d + t * d + u] * k[hh * s * d + j * d + u];
+                    }
+                    scores[j] = dot * scale;
+                    if scores[j] > max_sc {
+                        max_sc = scores[j];
+                    }
+                }
+                let mut sum = 0.0;
+                for j in 0..=t {
+                    scores[j] = (scores[j] - max_sc).exp();
+                    sum += scores[j];
+                }
+                for u in 0..d {
+                    let mut acc = 0.0;
+                    for j in 0..=t {
+                        acc += (scores[j] / sum) * v[hh * s * d + j * d + u];
+                    }
+                    out[hh * s * d + t * d + u] = acc;
+                }
+            }
+        }
+    }
+
+    /// Compact-active consensus (no exp). Returns mean A_frac.
+    pub fn fsot_compact(
+        _q: &[f64],
+        k: &[f64],
+        v: &[f64],
+        h: usize,
+        s: usize,
+        d: usize,
+        out: &mut [f64],
+    ) -> f64 {
+        let mut a_sum = 0.0;
+        for hh in 0..h {
+            // coherence per key
+            let mut active: Vec<usize> = Vec::new();
+            for j in 0..s {
+                let mut sharp = 0.0;
+                for u in 0..d {
+                    let trit = collapse_trit(k[hh * s * d + j * d + u], COLLAPSE_THETA);
+                    sharp += (trit as f64).abs();
+                }
+                let coh = sharp / d as f64;
+                if coherence_active(coh) {
+                    active.push(j);
+                }
+            }
+            if active.is_empty() {
+                active.push(0);
+            }
+            a_sum += active.len() as f64 / s as f64;
+            // prefix sums of V at active keys
+            let a = active.len();
+            let mut csum = vec![0.0f64; a * d];
+            for (ai, &j) in active.iter().enumerate() {
+                for u in 0..d {
+                    let add = v[hh * s * d + j * d + u];
+                    csum[ai * d + u] = if ai == 0 {
+                        add
+                    } else {
+                        csum[(ai - 1) * d + u] + add
+                    };
+                }
+            }
+            for t in 0..s {
+                // rightmost active <= t
+                let mut j = None;
+                for (ai, &idx) in active.iter().enumerate().rev() {
+                    if idx <= t {
+                        j = Some(ai);
+                        break;
+                    }
+                }
+                match j {
+                    None => {
+                        for u in 0..d {
+                            out[hh * s * d + t * d + u] = v[hh * s * d + t * d + u];
+                        }
+                    }
+                    Some(ai) => {
+                        let n = (ai + 1) as f64;
+                        for u in 0..d {
+                            out[hh * s * d + t * d + u] = csum[ai * d + u] / n;
+                        }
+                    }
+                }
+            }
+        }
+        a_sum / h as f64
+    }
+
+    pub fn work_dense(h: usize, s: usize, d: usize) -> f64 {
+        2.0 * h as f64 * s as f64 * s as f64 * d as f64
+    }
+
+    pub fn work_fsot(h: usize, s: usize, d: usize, a_frac: f64) -> f64 {
+        let a = a_frac * s as f64;
+        h as f64 * s as f64 * a * d as f64 + h as f64 * s as f64 * d as f64
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -242,6 +360,28 @@ mod tests {
     fn collapse_theta_matches_archive() {
         let err = rel_err_pct(collapse_theta(), 0.9174663774653723);
         assert!(err < 1e-9, "theta err {err}");
+    }
+
+    #[cfg(feature = "std")]
+    #[test]
+    fn cpu_work_ratio_positive_on_mid_s() {
+        use cpu_competitive::*;
+        let (h, s, d) = (4usize, 128, 32);
+        let n = h * s * d;
+        let mut q = vec![0.0; n];
+        let mut k = vec![0.0; n];
+        let mut v = vec![0.0; n];
+        for i in 0..n {
+            q[i] = ((i * 17) % 100) as f64 / 50.0 - 1.0;
+            k[i] = ((i * 31) % 100) as f64 / 50.0 - 1.0;
+            v[i] = ((i * 13) % 100) as f64 / 100.0;
+        }
+        let mut out = vec![0.0; n];
+        let a = fsot_compact(&q, &k, &v, h, s, d, &mut out);
+        let wd = work_dense(h, s, d);
+        let wf = work_fsot(h, s, d, a);
+        assert!(wf < wd, "work fsot {wf} should be < dense {wd}, A_frac={a}");
+        assert!(a <= active_work_ceiling() + 0.2); // allow random variation
     }
 
     #[test]

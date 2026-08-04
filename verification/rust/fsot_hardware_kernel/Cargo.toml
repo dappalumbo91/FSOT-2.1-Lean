@@ -16,3 +16,8 @@ libm = { version = "0.2", optional = true }
 name = "fsot_hardware_serial"
 path = "src/bin/fsot_hardware_serial.rs"
 required-features = ["std"]
+
+[[bin]]
+name = "cpu_competitive_bench"
+path = "src/bin/cpu_competitive_bench.rs"
+required-features = ["std"]

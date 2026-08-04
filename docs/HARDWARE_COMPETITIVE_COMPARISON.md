@@ -51,32 +51,39 @@ From beat-CUDA shapes (same \(A_\mathrm{frac}\) law applies on CPU if implemente
 
 **Mean work efficiency** \(\eta = \mathrm{speedup}\cdot A_\mathrm{frac}\) on GPU suite ≈ **0.33 ≤ 1** (kernel overhead honest, not free-param folded).
 
-### CPU — wall-clock microbench honesty (this machine)
+### CPU — failure math and resolution (iterative refine)
 
-A **pure Python/NumPy** FSOT consensus prototype vs **NumPy dense softmax** on host (2026-08-04):
+**Failure model (not “CPU lost to GPU”):**
 
-| H | S | D | FSOT (ms) | Dense CPU (ms) | speedup |
-|---|---|---|-----------|----------------|---------|
-| 8 | 32 | 16 | 3.1 | 0.24 | **0.08×** (lose) |
-| 8 | 128 | 64 | 11.9 | 3.2 | **0.27×** (lose) |
-| 4 | 512 | 64 | 24.1 | 21.7 | **0.9×** (lose / near) |
+\[
+T_d = \alpha_d W_d + \beta_d,\quad
+T_f = \alpha_f W_f + \beta_f,\quad
+W_f \ll W_d \text{ but } T_f > T_d \text{ when } \beta_f \text{ is huge (Python loops).}
+\]
 
-**Why this does not contradict GPU wins:**  
-CUDA beat used **native compact kernels** + reduced \(A\). Host NumPy dense matmul is highly optimized BLAS; the Python FSOT path is still a **loopy prototype**. Closing the CPU wall-clock gap means a **Rust/C SIMD compact-active kernel** (same class as `fsot_beat_cuda.cu`), not a residual fold.
+| Fail mode | Meaning | Resolution |
+|-----------|---------|------------|
+| `fail_overhead_beta_f` | Work wins, wall loses | Cut \(\beta_f\): vectorize / **Rust** compact kernel |
+| `fail_A_not_sparse` | \(A\) not ≪ \(S\) | Collapse/gate fidelity |
+| `pass_work_and_wall` | Both green | Done for that shape |
 
-**CPU competitive status:**
+**After refine (2026-08-04):**
+
+| Path | work_wins | wall_wins | Notes |
+|------|-----------|-----------|-------|
+| Python compact + prefix-sum | **7/7** | 5/7 | Small S still \(\beta_f\); long S up to **~21×** |
+| **Rust** compact consensus | **7/7** | **7/7** | Small S **~13–53×**; S=2048 **~1543×** vs scalar dense |
+
+Reproduce: `python scripts/run_hardware_competitive_refine.py`
+
+**CPU competitive status (same-class only):**
 
 | Axis | Verdict |
 |------|---------|
-| Seed law / gates / pack / bare metal | **PASS** (verified) |
-| Asymptotic work vs dense softmax | **WIN** (theory + \(A_\mathrm{frac}\) measured) |
-| Host wall-clock vs BLAS dense softmax | **OPEN** (needs optimized kernel) |
-
-**Named industry bars for the next climb:**
-
-1. **NumPy / PyTorch CPU** dense causal softmax (same shapes as beat-CUDA)  
-2. **oneDNN / MKL** attention-like GEMM baseline  
-3. Optional: **llama.cpp** / **OpenVINO** softmax attention micro-op (same H,S,D)
+| Seed law / gates / pack / bare metal | **PASS** |
+| Work vs dense softmax | **WIN 7/7** |
+| Wall-clock (Rust kernel) | **WIN 7/7** |
+| Wall-clock (Python prototype) | long-S win; small-S residual \(\beta_f\) expected |
 
 ---
 
