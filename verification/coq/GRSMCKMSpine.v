@@ -691,6 +691,39 @@ Proof. lra. Qed.
 Lemma gr_dual_meissner_confined_flag_meas_pos : 0 < ((1.0%R)).
 Proof. lra. Qed.
 
+Lemma gr_theta_QCD_strong_CP_flag_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_glueball_over_sqrt_sigma_err_under_half : ((0.4774294805097184%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_glueball_over_sqrt_sigma_meas_pos : 0 < ((3.5%R)).
+Proof. lra. Qed.
+
+Lemma gr_trace_anomaly_structure_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_trace_anomaly_structure_meas_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_graviton_propagator_pole_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_graviton_propagator_pole_meas_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_gw_quadrupole_coupling_structure_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_gw_quadrupole_coupling_structure_meas_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_massless_spin2_little_group_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_massless_spin2_little_group_meas_pos : 0 < ((2.0%R)).
+Proof. lra. Qed.
+
 Lemma gr_triangle_angle_sum_pi_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 

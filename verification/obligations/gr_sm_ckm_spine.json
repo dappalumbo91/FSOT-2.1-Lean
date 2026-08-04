@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-04T02:56:29.982444+00:00",
+  "generated_at": "2026-08-04T03:00:34.456888+00:00",
   "version": "1.0",
   "tier": "gr_sm_ckm",
-  "obligation_count": 277,
+  "obligation_count": 288,
   "modules": [
     "FSOT/Formal/GRSMCKMSpine.lean",
     "verification/coq/GRSMCKMSpine.v",
@@ -2067,6 +2067,100 @@
       "module": "GRSMCKM.GR",
       "claim": "T4_confinement_dual_meissner",
       "coq_id": "gr_dual_meissner_confined_flag_meas_pos"
+    },
+    {
+      "id": "gr_theta_QCD_strong_CP_flag_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_path_integral_theta",
+      "statement": "error_pct(theta_QCD_strong_CP_flag) < 0.5",
+      "coq_id": "gr_theta_QCD_strong_CP_flag_err_under_half"
+    },
+    {
+      "id": "gr_glueball_over_sqrt_sigma_err_under_half",
+      "kind": "lt_half",
+      "value": 0.4774294805097184,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_path_integral_glueball",
+      "statement": "error_pct(glueball_over_sqrt_sigma) < 0.5",
+      "coq_id": "gr_glueball_over_sqrt_sigma_err_under_half"
+    },
+    {
+      "id": "gr_glueball_over_sqrt_sigma_meas_pos",
+      "kind": "pos",
+      "value": 3.5,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_path_integral_glueball",
+      "coq_id": "gr_glueball_over_sqrt_sigma_meas_pos"
+    },
+    {
+      "id": "gr_trace_anomaly_structure_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_path_integral_trace_anomaly",
+      "statement": "error_pct(trace_anomaly_structure) < 0.5",
+      "coq_id": "gr_trace_anomaly_structure_err_under_half"
+    },
+    {
+      "id": "gr_trace_anomaly_structure_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_path_integral_trace_anomaly",
+      "coq_id": "gr_trace_anomaly_structure_meas_pos"
+    },
+    {
+      "id": "gr_graviton_propagator_pole_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_propagator",
+      "statement": "error_pct(graviton_propagator_pole) < 0.5",
+      "coq_id": "gr_graviton_propagator_pole_err_under_half"
+    },
+    {
+      "id": "gr_graviton_propagator_pole_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_propagator",
+      "coq_id": "gr_graviton_propagator_pole_meas_pos"
+    },
+    {
+      "id": "gr_gw_quadrupole_coupling_structure_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_gw_coupling",
+      "statement": "error_pct(gw_quadrupole_coupling_structure) < 0.5",
+      "coq_id": "gr_gw_quadrupole_coupling_structure_err_under_half"
+    },
+    {
+      "id": "gr_gw_quadrupole_coupling_structure_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_gw_coupling",
+      "coq_id": "gr_gw_quadrupole_coupling_structure_meas_pos"
+    },
+    {
+      "id": "gr_massless_spin2_little_group_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_little_group",
+      "statement": "error_pct(massless_spin2_little_group) < 0.5",
+      "coq_id": "gr_massless_spin2_little_group_err_under_half"
+    },
+    {
+      "id": "gr_massless_spin2_little_group_meas_pos",
+      "kind": "pos",
+      "value": 2.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_little_group",
+      "coq_id": "gr_massless_spin2_little_group_meas_pos"
     },
     {
       "id": "gr_triangle_angle_sum_pi_err_under_half",

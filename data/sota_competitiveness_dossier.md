@@ -1,6 +1,6 @@
 # FSOT Zero-Parameter Competitiveness Dossier
 
-Generated: 2026-08-04T02:56:35.950281+00:00
+Generated: 2026-08-04T03:00:40.465442+00:00
 
 ## Executive summary
 
@@ -54,7 +54,7 @@ Generated: 2026-08-04T02:56:35.950281+00:00
 
 | Observable | FSOT err % | SOTA typical % | Δ (pp) | SOTA params | Status |
 | --- | --- | --- | --- | --- | --- |
-| H0_planck | 0.082 | 0.8 | 0.72 | 6 | beats_sota |
+| H0_planck | 0.027 | 0.8 | 0.77 | 6 | beats_sota |
 | H0_sh0es_delta | — | 8.0 | — | 12 | structural_only |
 | Omega_Lambda | 0.050 | 1.1 | 1.05 | 6 | beats_sota |
 | N_eff | 0.010 | 4.0 | 3.99 | 6 | beats_sota |

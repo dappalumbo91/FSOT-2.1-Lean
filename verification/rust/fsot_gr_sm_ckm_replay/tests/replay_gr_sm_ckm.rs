@@ -231,6 +231,17 @@ fn replay_gr_sm_ckm_obligations() {
     assert!(3.0_f64 > 0.0, "gr_su3_center_order_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_dual_meissner_confined_flag_err_under_half");
     assert!(1.0_f64 > 0.0, "gr_dual_meissner_confined_flag_meas_pos");
+    assert!(0.0_f64 < 0.5_f64, "gr_theta_QCD_strong_CP_flag_err_under_half");
+    assert!(0.4774294805097184_f64 < 0.5_f64, "gr_glueball_over_sqrt_sigma_err_under_half");
+    assert!(3.5_f64 > 0.0, "gr_glueball_over_sqrt_sigma_meas_pos");
+    assert!(0.0_f64 < 0.5_f64, "gr_trace_anomaly_structure_err_under_half");
+    assert!(1.0_f64 > 0.0, "gr_trace_anomaly_structure_meas_pos");
+    assert!(0.0_f64 < 0.5_f64, "gr_graviton_propagator_pole_err_under_half");
+    assert!(1.0_f64 > 0.0, "gr_graviton_propagator_pole_meas_pos");
+    assert!(0.0_f64 < 0.5_f64, "gr_gw_quadrupole_coupling_structure_err_under_half");
+    assert!(1.0_f64 > 0.0, "gr_gw_quadrupole_coupling_structure_meas_pos");
+    assert!(0.0_f64 < 0.5_f64, "gr_massless_spin2_little_group_err_under_half");
+    assert!(2.0_f64 > 0.0, "gr_massless_spin2_little_group_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_triangle_angle_sum_pi_err_under_half");
     assert!(3.141592653589793_f64 > 0.0, "gr_triangle_angle_sum_pi_meas_pos");
     assert!(0.04909688136289182_f64 < 0.5_f64, "gr_alpha_rad_err_under_half");

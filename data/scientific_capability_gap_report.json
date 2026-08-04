@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T02:56:39.139409+00:00",
+  "generated_at": "2026-08-04T03:00:43.590626+00:00",
   "goal": "Beat or exceed scientific SOTA / literature capability on measured observables",
   "live_atlas": {
     "green_pass": 414,
@@ -54,9 +54,9 @@
     {
       "id": "H0_planck",
       "domain": "Cosmology",
-      "fsot_error_pct": 0.08243667961587486,
+      "fsot_error_pct": 0.027018411789274284,
       "sota_typical_error_pct": 0.8,
-      "margin_vs_sota_pp": 0.7175633203841252,
+      "margin_vs_sota_pp": 0.7729815882107257,
       "sota_model": "Planck 2018 TT,TE,EE+lowE",
       "sota_free_parameters": 6,
       "status": "beats_sota",
@@ -452,6 +452,13 @@
       "max_name": "TA/AT"
     },
     {
+      "domain": "TOE_GR_SM_Deep",
+      "max_error_pct": 0.4774294805097184,
+      "median_error_pct": 0.0047099996121108675,
+      "scalar_count": 97,
+      "max_name": "glueball_over_sqrt_sigma"
+    },
+    {
       "domain": "Creative_Arts_Math_Spine",
       "max_error_pct": 0.462279,
       "median_error_pct": 0.0,
@@ -526,7 +533,7 @@
     {
       "domain": "math_generator_benchmark_formula_eval_benchmark.json",
       "scalar_count": 1,
-      "max_error_pct": 0.05092740813165782,
+      "max_error_pct": 0.10641964500321542,
       "file": "math_generator_benchmark_formula_eval_benchmark.json"
     },
     {
@@ -536,28 +543,10 @@
       "file": "math_generator_airfoil_rmse_benchmark.json"
     },
     {
-      "domain": "Tier_96_Circuit_Spine",
-      "scalar_count": 3,
-      "max_error_pct": 0.0,
-      "file": "tier_96_circuit_spine_benchmark.json"
-    },
-    {
       "domain": "h0_planck_benchmark.json",
       "scalar_count": 4,
-      "max_error_pct": 0.08243667961587486,
+      "max_error_pct": 0.027018411789274284,
       "file": "h0_planck_benchmark.json"
-    },
-    {
-      "domain": "VL_Agent_Distill_Panel",
-      "scalar_count": 4,
-      "max_error_pct": 0.031506,
-      "file": "vl_agent_distill_panel_benchmark.json"
-    },
-    {
-      "domain": "Living_FSOT_Hardware",
-      "scalar_count": 4,
-      "max_error_pct": 1.3209968920124464e-14,
-      "file": "living_fsot_hardware_benchmark.json"
     },
     {
       "domain": "Astrophysical_Structure_Crosswalk",
@@ -672,6 +661,24 @@
       "scalar_count": 7,
       "max_error_pct": 0.140126,
       "file": "cosmology_anomaly_deep_panel_benchmark.json"
+    },
+    {
+      "domain": "Toxicology_Panel",
+      "scalar_count": 7,
+      "max_error_pct": 0.033401,
+      "file": "toxicology_panel_benchmark.json"
+    },
+    {
+      "domain": "Consciousness_Expansion_Spine",
+      "scalar_count": 7,
+      "max_error_pct": 0.031506,
+      "file": "consciousness_expansion_spine_benchmark.json"
+    },
+    {
+      "domain": "Fluid_Phase_Current_Spine",
+      "scalar_count": 7,
+      "max_error_pct": 0.0310845,
+      "file": "fluid_phase_current_spine_benchmark.json"
     }
   ],
   "expansion_map": {

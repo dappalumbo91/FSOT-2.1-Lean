@@ -1,10 +1,10 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-16T15:52:36.185090+00:00",
+  "generated_at": "2026-08-04T03:00:25.588348+00:00",
   "domain": "VL_Agent_Distill_Panel",
-  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\vl_agent_cache.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\application_wiring\\tier88_cache\\vl_agent_cache.json",
     "desktop_vl_distill"
   ],
   "maps_to_lean": [
@@ -12,9 +12,9 @@
     "consciousness"
   ],
   "D_eff": 14,
-  "record_count": 6,
-  "observable_count": 6,
-  "scalar_record_count": 4,
+  "record_count": 11,
+  "observable_count": 11,
+  "scalar_record_count": 9,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.031506,
   "pooled_median_error_pct": 0.031506,
@@ -40,7 +40,7 @@
       "computed": 0.031506,
       "measured": 0.0,
       "error_pct": 0.031506,
-      "observable_count": 6
+      "observable_count": 11
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +49,7 @@
       "computed": 0.031506,
       "measured": 0.0,
       "error_pct": 0.031506,
-      "observable_count": 6
+      "observable_count": 11
     }
   ],
   "material_records": [
@@ -119,6 +119,66 @@
       "name": "competitive_promoted",
       "computed": 3.000945,
       "measured": 3.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    },
+    {
+      "lab": "vl_agent_lab",
+      "property": "promotion_rate",
+      "name": "promotion_rate",
+      "computed": 0.136407,
+      "measured": 0.13636363636363635,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    },
+    {
+      "lab": "vl_agent_lab",
+      "property": "atlas_coverage",
+      "name": "atlas_coverage",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    },
+    {
+      "lab": "vl_agent_lab",
+      "property": "mean_confidence",
+      "name": "mean_confidence",
+      "computed": 0.420354,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    },
+    {
+      "lab": "vl_agent_lab",
+      "property": "distill_loss",
+      "name": "distill_loss",
+      "computed": 0.086391,
+      "measured": 0.08636363636363636,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    },
+    {
+      "lab": "vl_agent_lab",
+      "property": "K_FSOT_over_limit",
+      "name": "K_FSOT_over_limit",
+      "computed": 0.618229,
+      "measured": 0.6180339887498948,
       "error_pct": 0.031506,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",

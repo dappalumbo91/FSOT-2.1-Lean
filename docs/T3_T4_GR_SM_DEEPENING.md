@@ -99,6 +99,17 @@ These deepen the **executable probe layer**. They do **not** close the full path
 | SU(3) center | \|Z_3\| = 3 | identity |
 | Dual Meissner | confined-phase flag | identity |
 
+## Depth v5
+
+| Layer | Content | Residual gate |
+|-------|---------|---------------|
+| θ_QCD | strong-CP vanishing flag | identity |
+| Glueball / √σ | φ² + e/π vs lattice ~3.5 | ≤0.5% |
+| Trace anomaly | T^μ_μ ~ β(g)G² structure | identity |
+| Graviton pole | 1/k² massless spin-2 | identity |
+| GW coupling | quadrupole structure | identity |
+| Little group | ISO(2) helicities ±2 | identity |
+
 ## Closed vs open (honest)
 
 **Closed on the executable / residual layer**

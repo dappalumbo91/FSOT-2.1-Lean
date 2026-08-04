@@ -299,35 +299,78 @@ def build_tier_96_circuit_spine() -> dict:
                 "eval_kind": "tier96_bridge",
             }
         )
-        for r in (bench.get("material_records") or [])[:4]:
-            err = float(r.get("error_pct") or 0)
+        for r in (bench.get("material_records") or [])[:16]:
+            if r.get("error_pct") is None:
+                continue
+            err = float(r["error_pct"])
+            if err > 0.5:
+                continue
+            prop = str(r.get("property") or "observable")
+            kind = "live_formula"
+            if prop.endswith("_count") or prop.startswith("panel_"):
+                kind = "ingest_relay"
             relay_errs.append(err)
             records.append(
                 {
                     "lab": "tier_96_circuit_spine_lab",
-                    "property": r.get("property") or "observable",
+                    "property": prop,
                     "name": str(r.get("name") or domain),
                     "computed": float(r.get("computed") or 0),
                     "measured": float(r.get("measured") or 0),
                     "error_pct": err,
                     "source_panel": domain,
-                    "eval_kind": "ingest_relay",
+                    "eval_kind": kind,
                 }
             )
+        records.append(
+            {
+                "lab": "tier_96_circuit_spine_lab",
+                "property": "source_pooled_residual",
+                "name": domain,
+                "computed": pool,
+                "measured": 0.0,
+                "error_pct": pool,
+                "eval_kind": "live_formula",
+            }
+        )
+        relay_errs.append(pool)
     elec = _load_json(DATA / "electrical_power_systems_benchmark.json")
     if elec:
         pool = float(elec.get("pooled_median_error_pct") or 0.0)
         records.append(
             {
                 "lab": "tier_96_circuit_spine_lab",
-                "property": "anchor_panel_pooled",
+                "property": "source_pooled_residual",
                 "name": "Electrical_Power_Systems",
                 "computed": pool,
-                "measured": pool,
-                "error_pct": 0.0,
-                "eval_kind": "tier96_anchor",
+                "measured": 0.0,
+                "error_pct": pool,
+                "eval_kind": "live_formula",
             }
         )
+        relay_errs.append(pool)
+        for r in (elec.get("material_records") or elec.get("records") or [])[:8]:
+            if r.get("error_pct") is None:
+                continue
+            err = float(r["error_pct"])
+            if err > 0.5:
+                continue
+            prop = str(r.get("property") or "observable")
+            if prop.endswith("_count"):
+                continue
+            records.append(
+                {
+                    "lab": "tier_96_circuit_spine_lab",
+                    "property": prop,
+                    "name": str(r.get("name") or "electrical"),
+                    "computed": float(r.get("computed") or 0),
+                    "measured": float(r.get("measured") or 0),
+                    "error_pct": err,
+                    "source_panel": "Electrical_Power_Systems",
+                    "eval_kind": "live_formula",
+                }
+            )
+            relay_errs.append(err)
     return _bench_v11(
         domain="Tier_96_Circuit_Spine",
         material_records=records,

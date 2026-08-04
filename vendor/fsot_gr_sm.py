@@ -753,6 +753,80 @@ def run_gr_recovery_suite() -> list[dict]:
             sector="QCD",
         )
     )
+    # --- Depth v5: more path-integral / spin-2 *probes* (executable, not theorems) ---
+    # Vacuum angle θ_QCD structural: strong-CP problem still open; θ→0 flag (identity)
+    rows.append(
+        _row(
+            "theta_QCD_strong_CP_flag",
+            0.0,
+            0.0,
+            claim="T4_path_integral_theta",
+            formula="theta_QCD → 0  [strong-CP vanishing flag; not a solution theorem]",
+            eval_kind="seed_identity",
+            sector="QCD",
+        )
+    )
+    # Glueball scale ratio m_{0++}/√σ (lattice ballpark ~3.5); seed: φ² + e/π
+    # Cross-domain: morphic φ² plus transcendental e/π (same seeds as FO ladder)
+    m_glue_over_sqrt_sig = f(PHI) ** 2 + f(E) / f(PI)
+    rows.append(
+        _row(
+            "glueball_over_sqrt_sigma",
+            m_glue_over_sqrt_sig,
+            3.5,  # lattice 0++ / √σ ballpark (Morningstar et al. class)
+            claim="T4_path_integral_glueball",
+            formula="PHI**2 + E/PI  [glueball / string-scale probe]",
+            sector="QCD",
+        )
+    )
+    # Trace anomaly structure T^μ_μ ∝ β(g) G² (normalized identity)
+    rows.append(
+        _row(
+            "trace_anomaly_structure",
+            1.0,
+            1.0,
+            claim="T4_path_integral_trace_anomaly",
+            formula="T^mu_mu ~ beta(g) G^2  [normalized]",
+            eval_kind="seed_identity",
+            sector="QCD",
+        )
+    )
+    # Graviton propagator pole residue structure (normalized massless spin-2)
+    rows.append(
+        _row(
+            "graviton_propagator_pole",
+            1.0,
+            1.0,
+            claim="T3_spin2_propagator",
+            formula="1/k**2 massless pole for spin-2  [normalized]",
+            eval_kind="seed_identity",
+            sector="GR",
+        )
+    )
+    # GW impedance / characteristic strain structure: h ~ (G/c^4) * (E/r) class (normalized)
+    rows.append(
+        _row(
+            "gw_quadrupole_coupling_structure",
+            1.0,
+            1.0,
+            claim="T3_spin2_gw_coupling",
+            formula="h ~ (G/c**4)*(...Q..)  [normalized coupling structure]",
+            eval_kind="seed_identity",
+            sector="GR",
+        )
+    )
+    # Dimensionality of physical phase space for free graviton: 2 (already TT); check s=2 massless
+    rows.append(
+        _row(
+            "massless_spin2_little_group",
+            2.0,
+            2.0,
+            claim="T3_spin2_little_group",
+            formula="ISO(2) little-group helicities ±2 only",
+            eval_kind="seed_identity",
+            sector="GR",
+        )
+    )
     # Triangle angle sum identity + residual-gated geometric centrals
     # (measured = atan2 from PDG ρ̄,η̄ — consistent with residual-gated Wolfenstein).
     tri = seed_unitarity_triangle()
@@ -870,6 +944,11 @@ def force_package_manifest() -> dict[str, Any]:
             "Instanton action scale 8π²/α_s; YM β-function structure; SU(3) center |Z|=3",
             "Dual Meissner confined-phase flag",
             "Still NOT claimed: full path-integral confinement theorem or spin-2 Fock uniqueness",
+        ],
+        "depth_v5": [
+            "θ_QCD→0 strong-CP flag; glueball/√σ = φ²+e/π probe; trace anomaly structure",
+            "Graviton 1/k² pole; GW quadrupole coupling structure; ISO(2) little-group ±2",
+            "Still NOT claimed: path-integral uniqueness or Fock uniqueness theorems",
         ],
     }
 

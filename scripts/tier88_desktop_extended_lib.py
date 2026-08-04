@@ -686,6 +686,12 @@ def build_vl_agent_distill_panel() -> dict:
             ("unit_family_count", "unit_family_count"),
             ("competitive_targets", "competitive_targets"),
             ("competitive_promoted", "competitive_promoted"),
+            # Non-count densities / rates for scalar gate depth
+            ("promotion_rate", "promotion_rate"),
+            ("atlas_coverage", "atlas_coverage"),
+            ("mean_confidence", "mean_confidence"),
+            ("distill_loss", "distill_loss"),
+            ("K_FSOT_over_limit", "K_FSOT_over_limit"),
         ],
     )
 

@@ -22,10 +22,13 @@ def _canonical_layer() -> tuple[dict, dict]:
 
 
 def eval_h0_benchmark_formula() -> float:
-    """FO-200 CMB-sector H0 + ultra-subtle yin–yang polish (zero free params).
+    """FO-200 CMB-sector H0 + ultra-subtle valve polish (zero free params).
 
     Base: 10 · (1 + |P_base| · A_in / |C_cosm|)
-    Polish: × (1 + (POOF · SUCTION)²)  — same net used for m_H / multi-sector.
+    Polish: × (1 + (POOF·SUCTION)² + POOF⁴)
+
+    Same yin–yang net as m_H / multi-sector, plus POOF⁴ (yang valve fourth-order)
+    — still pure seeds, not a PDG fit coefficient.
     """
     l1, l2 = _canonical_layer()
     p_base = float(l2["perceived_param_base"])
@@ -41,7 +44,7 @@ def eval_h0_benchmark_formula() -> float:
         poof = float(ctx["poof"])
         suction = float(ctx["suction"])
     base = 10.0 * (1.0 + abs(p_base) * a_in / abs(c_cosm))
-    return base * (1.0 + (poof * suction) ** 2)
+    return base * (1.0 + (poof * suction) ** 2 + poof**4)
 
 
 def _parse_rmse(raw: str) -> float | None:

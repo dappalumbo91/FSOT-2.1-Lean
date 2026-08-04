@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T02:27:35.554051+00:00",
+  "generated_at": "2026-08-04T03:00:25.136619+00:00",
   "source": [
     "vendor/math_generator/rules",
     "vendor/math_generator/benchmark_reports"
@@ -19,9 +19,9 @@
       "rule_id": "FO-200",
       "eval_kind": "live_formula",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "computed": 67.30447065261075,
+      "computed": 67.34180039781874,
       "measured": 67.27021167735879,
-      "error_pct": 0.05092740813165782,
+      "error_pct": 0.10641964500321542,
       "lab": "math_generator_benchmark_formula",
       "name": "H0 Benchmark Report Promotion"
     },

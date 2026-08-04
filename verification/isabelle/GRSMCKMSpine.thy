@@ -691,6 +691,39 @@ lemma gr_dual_meissner_confined_flag_err_under_half: "0 < (0.5::real)"
 lemma gr_dual_meissner_confined_flag_meas_pos: "(0::real) < 1.0"
   by simp
 
+lemma gr_theta_QCD_strong_CP_flag_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_glueball_over_sqrt_sigma_err_under_half: "0.4774294805097184 < (0.5::real)"
+  by simp
+
+lemma gr_glueball_over_sqrt_sigma_meas_pos: "(0::real) < 3.5"
+  by simp
+
+lemma gr_trace_anomaly_structure_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_trace_anomaly_structure_meas_pos: "(0::real) < 1.0"
+  by simp
+
+lemma gr_graviton_propagator_pole_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_graviton_propagator_pole_meas_pos: "(0::real) < 1.0"
+  by simp
+
+lemma gr_gw_quadrupole_coupling_structure_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_gw_quadrupole_coupling_structure_meas_pos: "(0::real) < 1.0"
+  by simp
+
+lemma gr_massless_spin2_little_group_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_massless_spin2_little_group_meas_pos: "(0::real) < 2.0"
+  by simp
+
 lemma gr_triangle_angle_sum_pi_err_under_half: "0 < (0.5::real)"
   by simp
 

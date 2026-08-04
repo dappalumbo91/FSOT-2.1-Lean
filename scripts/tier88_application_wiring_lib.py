@@ -345,6 +345,10 @@ def build_living_fsot_hardware_panel() -> dict:
     for prop, domain in (
         ("pack_mean", "Neuroscience"),
         ("generation", "Quantum_Computing"),
+        ("pack_min", "Neuroscience"),
+        ("pack_max", "Neuroscience"),
+        ("body_accuracy", "Psychology"),
+        ("mind_accuracy", "Psychology"),
     ):
         val = live.get(prop)
         if val is None:
@@ -360,16 +364,25 @@ def build_living_fsot_hardware_panel() -> dict:
         records.append(rec)
         errs.append(float(rec["error_pct"]))
     for row in live.get("organs") or []:
-        rec = make_fsot_record(
-            lab="living_fsot_hardware_lab",
-            property_name="organ_accuracy",
-            name=f"{row.get('org_id')}_{row.get('organ')}",
-            measured=float(row.get("accuracy") or 0),
-            domain="Psychology",
-            extra={"ingest_source": live.get("source"), "threshold": row.get("threshold"), "weak": row.get("weak")},
-        )
-        records.append(rec)
-        errs.append(float(rec["error_pct"]))
+        for prop, domain in (
+            ("accuracy", "Psychology"),
+            ("threshold", "Quantum_Computing"),
+            ("fitness", "Neuroscience"),
+            ("stability", "Psychology"),
+        ):
+            val = row.get(prop) if prop != "accuracy" else row.get("accuracy")
+            if val is None:
+                continue
+            rec = make_fsot_record(
+                lab="living_fsot_hardware_lab",
+                property_name=f"organ_{prop}",
+                name=f"{row.get('org_id')}_{row.get('organ')}",
+                measured=float(val),
+                domain=domain,
+                extra={"ingest_source": live.get("source"), "weak": row.get("weak")},
+            )
+            records.append(rec)
+            errs.append(float(rec["error_pct"]))
     return _bench_v11(
         domain="Living_FSOT_Hardware_Panel",
         material_records=records,
