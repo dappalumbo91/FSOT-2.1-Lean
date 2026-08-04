@@ -1,6 +1,6 @@
 # Scientific capability & accuracy gap report
 
-Generated: `2026-08-04T02:20:18.664645+00:00`
+Generated: `2026-08-04T02:27:59.701128+00:00`
 
 ## Goal
 
@@ -10,7 +10,7 @@ Beat or exceed scientific SOTA / literature capability on measured observables
 
 - Green: **414** pass / 0 fail
 - Worst max residual: **0.4989%** (Phi_Morphogenetic_Scaling)
-- Domains with max > 0.05% aspiration: **96**
+- Domains with max > 0.05% aspiration: **98**
 
 ## SOTA competitiveness (registered comparisons)
 
@@ -26,7 +26,7 @@ Beat or exceed scientific SOTA / literature capability on measured observables
 |----|-----------|-----------|-----------|------|------------|
 | higgs_mass | 0.01100190161397048 | 0.14 | 0.129 | THIN_LEAD — refine to lock exceed | SM fits (PDG) |
 | higgs_branching | 0.03711124585172393 | 0.5 | 0.463 | THIN_LEAD — refine to lock exceed | PDG SM branching fits |
-| H0_planck | 0.13329620344595866 | 0.8 | 0.667 | MODERATE_LEAD — optional polish | Planck 2018 TT,TE,EE+lowE |
+| H0_planck | 0.08243667961587486 | 0.8 | 0.718 | MODERATE_LEAD — optional polish | Planck 2018 TT,TE,EE+lowE |
 | airfoil_held_out_rmse | 4.598501331670039 | 5.412721340832612 | 0.814 | MODERATE_LEAD — optional polish | Chosen-feature quadratic regression |
 | Omega_Lambda | 0.05 | 1.1 | 1.050 | MODERATE_LEAD — optional polish | Planck 2018 Lambda-CDM |
 | N_eff | 0.01 | 4.0 | 3.990 | STRONG_LEAD — maintain | Planck 2018 |
@@ -63,18 +63,18 @@ FSOT already beats registered SOTA typical error on headline observables with 0 
 
 ## Thin panels (coverage debt)
 
-- n=1 max=0.013294  Bibliography_Corpus_Panel
-- n=1 max=2.1125033444758682e-14  math_generator_benchmark_formula_eval_benchmark.json
+- n=1 max=0.05092740813165782  math_generator_benchmark_formula_eval_benchmark.json
 - n=2 max=3.862903827310908e-14  math_generator_airfoil_rmse_benchmark.json
 - n=2 max=0.0  Formula_Corpus_Closure
 - n=3 max=0.04959966617804441  intelligence_compression_benchmark.json
-- n=3 max=0.031506  Tokenization_Live_Panel
 - n=3 max=0.0  Cold_Fusion_Lab_Synthesis_Crosswalk
-- n=3 max=0.0  Foundational_Ontology_Spine
 - n=3 max=0.0  Tier_96_Circuit_Spine
 - n=4 max=0.192564276915754  Unified_DB_Crosswalk_Spine
 - n=4 max=0.031506  VL_Agent_Distill_Panel
 - n=4 max=1.3209968920124464e-14  Living_FSOT_Hardware
+- n=4 max=0.0  Astrophysical_Structure_Crosswalk
+- n=4 max=0.0  Compact_Object_Binary_Events
+- n=4 max=0.0  Interactive_Media_Prereg_Scaffold
 
 ## Priority queue
 
@@ -88,5 +88,5 @@ FSOT already beats registered SOTA typical error on headline observables with 0 
 
 - Label B: True
 - GR/SM/CKM multiprover ok: True
-- Next research: ['Full non-abelian path-integral confinement theorem (scales Λ_QCD, √σ, Casimirs, β₀ + area-law/Polyakov probes shipped)', 'Spin-2 Fock uniqueness from fluid action (helicity/TT/massive-dof/accounting probes shipped)', 'Independent clean-clone by third party', 'arXiv endorsement + peer review']
+- Next research: ['Full non-abelian path-integral confinement theorem (scales + area-law/Polyakov/instanton/β probes shipped; theorem open)', 'Spin-2 Fock uniqueness from fluid action (helicity/TT/dof/Bianchi/soft-factor probes shipped; uniqueness open)', 'Optional: household clean-clone smoke (any second machine) — not peer review', 'Social track parked: arXiv endorsement / independent lab when available']
 

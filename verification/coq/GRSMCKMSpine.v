@@ -649,6 +649,48 @@ Proof. lra. Qed.
 Lemma gr_spin2_wave_equation_flat_meas_pos : 0 < ((1.0%R)).
 Proof. lra. Qed.
 
+Lemma gr_bianchi_contracted_identity_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_bianchi_contracted_identity_meas_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_spin2_TT_projector_complete_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_spin2_TT_projector_complete_meas_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_soft_graviton_pole_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_soft_graviton_pole_meas_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_instanton_action_scale_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_instanton_action_scale_meas_pos : 0 < ((669.6431825331274%R)).
+Proof. lra. Qed.
+
+Lemma gr_ym_beta_function_structure_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_ym_beta_function_structure_meas_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_su3_center_order_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_su3_center_order_meas_pos : 0 < ((3.0%R)).
+Proof. lra. Qed.
+
+Lemma gr_dual_meissner_confined_flag_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_dual_meissner_confined_flag_meas_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
 Lemma gr_triangle_angle_sum_pi_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 

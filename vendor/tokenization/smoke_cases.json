@@ -28,5 +28,52 @@
       "United States": "english_phrase",
       "is": "english_morphology"
     }
+  },
+  {
+    "name": "scientific domain phrase",
+    "text": "Quantum field theory predicts particle masses.",
+    "expected_universal_ids": ["U:quantum_field_theory", "U:predict", "U:particle", "U:mass"],
+    "expected_gates": {
+      "Quantum field theory": "english_phrase",
+      "predicts": "english_morphology",
+      "masses": "english_morphology"
+    }
+  },
+  {
+    "name": "contraction and negation",
+    "text": "It isn't ready yet and won't wait.",
+    "expected_universal_ids": ["U:it", "U:is_not", "U:ready", "U:yet", "U:and", "U:will_not", "U:wait"],
+    "expected_gates": {
+      "isn't": "english_contraction",
+      "won't": "english_contraction"
+    }
+  },
+  {
+    "name": "multiword technical compound",
+    "text": "Standard Model electroweak unification holds.",
+    "expected_universal_ids": ["U:standard_model", "U:electroweak", "U:unification", "U:hold"],
+    "expected_gates": {
+      "Standard Model": "english_phrase",
+      "holds": "english_morphology"
+    }
+  },
+  {
+    "name": "numeric unit span",
+    "text": "Planck length is about 1.6 times 10 to the -35 meters.",
+    "expected_universal_ids": ["U:planck_length", "U:be", "U:about", "U:number", "U:meter"],
+    "expected_gates": {
+      "Planck length": "english_phrase",
+      "meters": "english_morphology"
+    }
+  },
+  {
+    "name": "fsot seed phrase",
+    "text": "Golden ratio seeds scale free constants.",
+    "expected_universal_ids": ["U:golden_ratio", "U:seed", "U:scale", "U:free", "U:constant"],
+    "expected_gates": {
+      "Golden ratio": "english_phrase",
+      "seeds": "english_morphology",
+      "constants": "english_morphology"
+    }
   }
 ]

@@ -1,11 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T17:36:24.258552+00:00",
+  "generated_at": "2026-08-04T02:27:30.459837+00:00",
   "domain": "Foundational_Ontology_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "tier91_foundational_ontology_panels",
-    "vendor/fsot_compute.py\\data\\foundational_ontology_axioms.yaml"
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\foundational_ontology_axioms.yaml"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -14,13 +14,13 @@
     "particle"
   ],
   "D_eff": 22,
-  "record_count": 21,
-  "observable_count": 21,
-  "scalar_record_count": 3,
+  "record_count": 60,
+  "observable_count": 60,
+  "scalar_record_count": 56,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0,
-  "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.009504,
+  "median_error_pct": 0.009504,
+  "pooled_median_error_pct": 0.009504,
+  "headline_median_error_pct": 0.010049,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -39,45 +39,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 0.009504,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 21,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.009504,
+      "observable_count": 60
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "ingest_relay",
       "name": "foundational_ontology",
-      "computed": 0.009504,
+      "computed": 0.010049,
       "measured": 0.0,
-      "error_pct": 0.009504,
-      "observable_count": 16,
-      "domain_display_name": "tier gap fill",
-      "display_name": "foundational ontology",
-      "scientific_measurement": {
-        "delta": 0.009504,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.010049,
+      "observable_count": 53
     }
   ],
   "material_records": [
@@ -85,24 +59,11 @@
       "lab": "foundational_ontology_lab",
       "property": "panel_pooled_median",
       "name": "nothing_perfection_friction_origin_panel",
-      "computed": 0.0,
-      "measured": 0.0,
+      "computed": 0.008488,
+      "measured": 0.008488,
       "error_pct": 0.0,
-      "record_count": 6,
-      "eval_kind": "tier91_bridge",
-      "domain_display_name": "foundational ontology",
-      "display_name": "nothing perfection friction origin panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "record_count": 24,
+      "eval_kind": "tier91_bridge"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -112,20 +73,7 @@
       "measured": 0.95597958,
       "error_pct": 0.0,
       "source_panel": "nothing_perfection_friction_origin_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "in phase reality",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -135,20 +83,7 @@
       "measured": 0.04402042,
       "error_pct": 0.0,
       "source_panel": "nothing_perfection_friction_origin_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "nothingness shadow sector",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -158,20 +93,7 @@
       "measured": 0.05366096,
       "error_pct": 0.026472,
       "source_panel": "nothing_perfection_friction_origin_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "nothing perfection bleed",
-      "scientific_measurement": {
-        "delta": 1.42e-05,
-        "delta_pct": 0.026462,
-        "effective_error_pct": 0.026462,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -181,43 +103,97 @@
       "measured": 0.6666666666666667,
       "error_pct": 0.026472,
       "source_panel": "nothing_perfection_friction_origin_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "bh wh interface",
-      "scientific_measurement": {
-        "delta": 0.00017633,
-        "delta_pct": 0.02645,
-        "effective_error_pct": 0.02645,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "growth_term_nothingness",
+      "name": "unobserved_no_emergence",
+      "computed": 1.00028839,
+      "measured": 1.00028839,
+      "error_pct": 0.0,
+      "source_panel": "nothing_perfection_friction_origin_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "growth_term_perfection_saturated",
+      "name": "D_eff_ceiling_saturated",
+      "computed": 0.9931035,
+      "measured": 0.9931035,
+      "error_pct": 0.0,
+      "source_panel": "nothing_perfection_friction_origin_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "source_panel": "nothing_perfection_friction_origin_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Acoustic_Resonance_Materials",
+      "computed": 1.000201,
+      "measured": 1.0,
+      "error_pct": 0.020055,
+      "source_panel": "nothing_perfection_friction_origin_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adjacent_Rung_Coupling",
+      "computed": 1.000314,
+      "measured": 1.0,
+      "error_pct": 0.031421,
+      "source_panel": "nothing_perfection_friction_origin_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_panel": "nothing_perfection_friction_origin_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "importance_score",
+      "name": "18-100754-general-1946-7-vol-2",
+      "computed": 6.400543,
+      "measured": 6.4,
+      "error_pct": 0.008488,
+      "source_panel": "nothing_perfection_friction_origin_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "importance_score",
+      "name": "18-6369445-general-1948-vol-1",
+      "computed": 4.200357,
+      "measured": 4.2,
+      "error_pct": 0.008488,
+      "source_panel": "nothing_perfection_friction_origin_panel",
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
       "property": "panel_pooled_median",
       "name": "zero_boundary_not_entity_panel",
-      "computed": 0.009504,
-      "measured": 0.009504,
+      "computed": 0.020055,
+      "measured": 0.020055,
       "error_pct": 0.0,
-      "record_count": 6,
-      "eval_kind": "tier91_bridge",
-      "domain_display_name": "foundational ontology",
-      "display_name": "zero boundary not entity panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "record_count": 24,
+      "eval_kind": "tier91_bridge"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -227,20 +203,7 @@
       "measured": 153.482215,
       "error_pct": 0.019008,
       "source_panel": "zero_boundary_not_entity_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "absence decay times boundary",
-      "scientific_measurement": {
-        "delta": 0.029174,
-        "delta_pct": 0.019008,
-        "effective_error_pct": 0.019008,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -250,20 +213,7 @@
       "measured": 5.0,
       "error_pct": 0.0,
       "source_panel": "zero_boundary_not_entity_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "no zero fundamental seed",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -273,20 +223,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "zero_boundary_not_entity_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "fundamental seeds",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -296,20 +233,87 @@
       "measured": 10.0,
       "error_pct": 0.009504,
       "source_panel": "zero_boundary_not_entity_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "decimal carry",
-      "scientific_measurement": {
-        "delta": 0.00095,
-        "delta_pct": 0.0095,
-        "effective_error_pct": 0.0095,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "carry_sum_emergence",
+      "name": "first_overflow_place",
+      "computed": 10.00095,
+      "measured": 10.0,
+      "error_pct": 0.009504,
+      "source_panel": "zero_boundary_not_entity_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "poof_decay_vs_boundary",
+      "name": "absence_decay_scale",
+      "computed": 0.15352598,
+      "measured": 0.1534822148944508,
+      "error_pct": 0.028512,
+      "source_panel": "zero_boundary_not_entity_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "engine_native_h0",
+      "name": "zero_boundary_not_entity_panel",
+      "computed": 67.27021167735879,
+      "measured": 67.4,
+      "error_pct": 0.192564276915754,
+      "source_panel": "zero_boundary_not_entity_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "brightness_temperature_rms_k",
+      "name": "zero_boundary_not_entity_panel",
+      "computed": 99.99581522012987,
+      "measured": 100.0,
+      "error_pct": 0.004184779870129773,
+      "source_panel": "zero_boundary_not_entity_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "hubble_constant_km_s_mpc",
+      "name": "zero_boundary_not_entity_panel",
+      "computed": 67.38395831285372,
+      "measured": 67.4,
+      "error_pct": 0.023800722768967785,
+      "source_panel": "zero_boundary_not_entity_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "matter_fluctuation_amplitude",
+      "name": "zero_boundary_not_entity_panel",
+      "computed": 0.8111240047382514,
+      "measured": 0.811,
+      "error_pct": 0.01529034996934153,
+      "source_panel": "zero_boundary_not_entity_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "observable",
+      "name": "zero_boundary_not_entity_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "zero_boundary_not_entity_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "domain_divergence_depth",
+      "name": "Plasma_Physics",
+      "computed": 6.55249,
+      "measured": 6.55,
+      "error_pct": 0.03801653760497784,
+      "source_panel": "zero_boundary_not_entity_panel",
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -319,20 +323,7 @@
       "measured": 0.009504,
       "error_pct": 0.0,
       "record_count": 29,
-      "eval_kind": "tier91_bridge",
-      "domain_display_name": "foundational ontology",
-      "display_name": "overflow carry emergence panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier91_bridge"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -342,20 +333,7 @@
       "measured": 1.0,
       "error_pct": 0.009504,
       "source_panel": "overflow_carry_emergence_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "base 2",
-      "scientific_measurement": {
-        "delta": 9.5e-05,
-        "delta_pct": 0.0095,
-        "effective_error_pct": 0.0095,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -365,20 +343,7 @@
       "measured": 2.0,
       "error_pct": 0.009504,
       "source_panel": "overflow_carry_emergence_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "base 2 ten",
-      "scientific_measurement": {
-        "delta": 0.00019,
-        "delta_pct": 0.0095,
-        "effective_error_pct": 0.0095,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -388,20 +353,7 @@
       "measured": 500.0,
       "error_pct": 0.009504,
       "source_panel": "overflow_carry_emergence_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "base 2 carry density",
-      "scientific_measurement": {
-        "delta": 0.047521,
-        "delta_pct": 0.009504,
-        "effective_error_pct": 0.009504,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -411,20 +363,87 @@
       "measured": 2.0,
       "error_pct": 0.009504,
       "source_panel": "overflow_carry_emergence_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "base 3",
-      "scientific_measurement": {
-        "delta": 0.00019,
-        "delta_pct": 0.0095,
-        "effective_error_pct": 0.0095,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "first_place_overflow_value",
+      "name": "base_3_ten",
+      "computed": 3.000285,
+      "measured": 3.0,
+      "error_pct": 0.009504,
+      "source_panel": "overflow_carry_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "carry_events_in_range",
+      "name": "base_3_carry_density",
+      "computed": 333.031649,
+      "measured": 333.0,
+      "error_pct": 0.009504,
+      "source_panel": "overflow_carry_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "saturation_digit",
+      "name": "base_5",
+      "computed": 4.00038,
+      "measured": 4.0,
+      "error_pct": 0.009504,
+      "source_panel": "overflow_carry_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "first_place_overflow_value",
+      "name": "base_5_ten",
+      "computed": 5.000475,
+      "measured": 5.0,
+      "error_pct": 0.009504,
+      "source_panel": "overflow_carry_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "carry_events_in_range",
+      "name": "base_5_carry_density",
+      "computed": 200.019008,
+      "measured": 200.0,
+      "error_pct": 0.009504,
+      "source_panel": "overflow_carry_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "saturation_digit",
+      "name": "base_8",
+      "computed": 7.000665,
+      "measured": 7.0,
+      "error_pct": 0.009504,
+      "source_panel": "overflow_carry_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "first_place_overflow_value",
+      "name": "base_8_ten",
+      "computed": 8.00076,
+      "measured": 8.0,
+      "error_pct": 0.009504,
+      "source_panel": "overflow_carry_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "carry_events_in_range",
+      "name": "base_8_carry_density",
+      "computed": 125.01188,
+      "measured": 125.0,
+      "error_pct": 0.009504,
+      "source_panel": "overflow_carry_emergence_panel",
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -434,20 +453,7 @@
       "measured": 0.02658792169940266,
       "error_pct": 0.0,
       "record_count": 29,
-      "eval_kind": "tier91_bridge",
-      "domain_display_name": "foundational ontology",
-      "display_name": "complexity folding emergence panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier91_bridge"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -457,20 +463,7 @@
       "measured": 0.023914275640537417,
       "error_pct": 0.0,
       "source_panel": "complexity_folding_emergence_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "reality folding spine",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -480,20 +473,7 @@
       "measured": 60.0,
       "error_pct": 0.0220747159758794,
       "source_panel": "complexity_folding_emergence_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "compactification ladder",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -503,20 +483,7 @@
       "measured": 36.0,
       "error_pct": 0.020098237848404983,
       "source_panel": "complexity_folding_emergence_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "adjacent rung coupling",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -526,20 +493,87 @@
       "measured": 51.0,
       "error_pct": 0.025753835305195434,
       "source_panel": "complexity_folding_emergence_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "foundational ontology",
-      "display_name": "fold depth metrics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "coupling_nodes",
+      "name": "domain_graph",
+      "computed": 282.053603,
+      "measured": 282.0,
+      "error_pct": 0.019008268802510223,
+      "source_panel": "complexity_folding_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "ladder_rungs",
+      "name": "compactification",
+      "computed": 10.001901,
+      "measured": 10.0,
+      "error_pct": 0.019008268802505057,
+      "source_panel": "complexity_folding_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "adjacent_pairs",
+      "name": "neighbor_coupling",
+      "computed": 9.001711,
+      "measured": 9.0,
+      "error_pct": 0.019008268802503083,
+      "source_panel": "complexity_folding_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "fold_depth_span",
+      "name": "string_cosmo_span",
+      "computed": 2.719917,
+      "measured": 2.7194,
+      "error_pct": 0.019008268802494864,
+      "source_panel": "complexity_folding_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "toe_unity_green",
+      "name": "unification_spine",
+      "computed": 1.00019,
+      "measured": 1.0,
+      "error_pct": 0.019008268802500616,
+      "source_panel": "complexity_folding_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "panel_pooled_median",
+      "name": "compactification_ladder",
+      "computed": 0.0220747159758794,
+      "measured": 0.0220747159758794,
+      "error_pct": 0.0,
+      "source_panel": "complexity_folding_emergence_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "rung_primary_median_error",
+      "name": "string_quantum",
+      "computed": 0.039916,
+      "measured": 0.039905,
+      "error_pct": 0.026587921699403626,
+      "source_panel": "complexity_folding_emergence_panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "rung_secondary_median_error",
+      "name": "string_quantum",
+      "computed": 0.014419,
+      "measured": 0.014415,
+      "error_pct": 0.02658792169940266,
+      "source_panel": "complexity_folding_emergence_panel",
+      "eval_kind": "live_formula"
     },
     {
       "lab": "foundational_ontology_lab",
@@ -548,25 +582,90 @@
       "computed": 6.0,
       "measured": 6.0,
       "error_pct": 0.0,
-      "eval_kind": "tier91_meta",
-      "domain_display_name": "foundational ontology",
-      "display_name": "foundational ontology axioms",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier91_meta"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "phase_realized",
+      "name": "ontology_anchor",
+      "computed": 0.956076,
+      "measured": 0.9559795795336434,
+      "error_pct": 0.010049,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "ingest_source": "foundational_ontology_axioms"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "phase_shadow",
+      "name": "ontology_anchor",
+      "computed": 0.044025,
+      "measured": 0.04402042046635653,
+      "error_pct": 0.010049,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "ingest_source": "foundational_ontology_axioms"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "phase_bleed_friction",
+      "name": "ontology_anchor",
+      "computed": 0.053666,
+      "measured": 0.05366095953969108,
+      "error_pct": 0.010049,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "ingest_source": "foundational_ontology_axioms"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "poof_factor",
+      "name": "ontology_anchor",
+      "computed": 0.153498,
+      "measured": 0.1534822148944508,
+      "error_pct": 0.010049,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "ingest_source": "foundational_ontology_axioms"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "consciousness_factor",
+      "name": "ontology_anchor",
+      "computed": 0.287629,
+      "measured": 0.28760015181918397,
+      "error_pct": 0.010049,
+      "eval_kind": "live_formula",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "ingest_source": "foundational_ontology_axioms"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "historical_base_density",
+      "name": "axiom_base_coverage",
+      "computed": 0.9,
+      "measured": 0.9,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "foundational_ontology_lab",
+      "property": "axioms_per_base",
+      "name": "ontology_coverage_ratio",
+      "computed": 0.6666666666666666,
+      "measured": 0.6666666666666666,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "scalar_pooled_median_error_pct": 0.009504,
+    "max_scalar_error_pct": 0.192564276915754,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -575,19 +674,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Foundational Ontology Spine",
-  "tier_label": "Seven-way bare-metal runtime (QEMU + ESP32 serial)",
-  "scientific_precision_summary": {
-    "scalar_count": 3,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 3
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.302338+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

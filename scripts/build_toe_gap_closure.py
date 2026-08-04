@@ -960,10 +960,10 @@ def main() -> int:
             "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json",
         },
         "next_actions_research": [
-            "Full non-abelian path-integral confinement theorem (scales Λ_QCD, √σ, Casimirs, β₀ + area-law/Polyakov probes shipped)",
-            "Spin-2 Fock uniqueness from fluid action (helicity/TT/massive-dof/accounting probes shipped)",
-            "Independent clean-clone by third party",
-            "arXiv endorsement + peer review",
+            "Full non-abelian path-integral confinement theorem (scales + area-law/Polyakov/instanton/β probes shipped; theorem open)",
+            "Spin-2 Fock uniqueness from fluid action (helicity/TT/dof/Bianchi/soft-factor probes shipped; uniqueness open)",
+            "Optional: household clean-clone smoke (any second machine) — not peer review",
+            "Social track parked: arXiv endorsement / independent lab when available",
         ],
         "honest_statement": (
             "T3/T4 deepened with GR recovery, SM force package, CKM/PMNS seed+NLO magnitudes, "

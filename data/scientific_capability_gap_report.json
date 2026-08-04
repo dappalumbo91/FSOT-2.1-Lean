@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T02:20:18.664645+00:00",
+  "generated_at": "2026-08-04T02:27:59.701128+00:00",
   "goal": "Beat or exceed scientific SOTA / literature capability on measured observables",
   "live_atlas": {
     "green_pass": 414,
     "green_fail": 0,
     "worst_max_error_pct": 0.4989,
     "worst_domain": "Phi_Morphogenetic_Scaling",
-    "domains_above_aspiration_0_05": 96,
+    "domains_above_aspiration_0_05": 98,
     "threshold_green_pct": 0.5,
     "threshold_aspiration_pct": 0.05
   },
@@ -54,9 +54,9 @@
     {
       "id": "H0_planck",
       "domain": "Cosmology",
-      "fsot_error_pct": 0.13329620344595866,
+      "fsot_error_pct": 0.08243667961587486,
       "sota_typical_error_pct": 0.8,
-      "margin_vs_sota_pp": 0.6667037965540414,
+      "margin_vs_sota_pp": 0.7175633203841252,
       "sota_model": "Planck 2018 TT,TE,EE+lowE",
       "sota_free_parameters": 6,
       "status": "beats_sota",
@@ -517,8 +517,8 @@
     {
       "domain": "TOE_GR_SM_Deep",
       "max_error_pct": 0.4219868071131969,
-      "median_error_pct": 0.004811476065123823,
-      "scalar_count": 84,
+      "median_error_pct": 0.0032411336172532518,
+      "scalar_count": 91,
       "max_name": "dm2_31_abs"
     },
     {
@@ -531,15 +531,9 @@
   ],
   "thin_panels": [
     {
-      "domain": "Bibliography_Corpus_Panel",
-      "scalar_count": 1,
-      "max_error_pct": 0.013294,
-      "file": "bibliography_corpus_panel_benchmark.json"
-    },
-    {
       "domain": "math_generator_benchmark_formula_eval_benchmark.json",
       "scalar_count": 1,
-      "max_error_pct": 2.1125033444758682e-14,
+      "max_error_pct": 0.05092740813165782,
       "file": "math_generator_benchmark_formula_eval_benchmark.json"
     },
     {
@@ -561,22 +555,10 @@
       "file": "intelligence_compression_benchmark.json"
     },
     {
-      "domain": "Tokenization_Live_Panel",
-      "scalar_count": 3,
-      "max_error_pct": 0.031506,
-      "file": "tokenization_live_panel_benchmark.json"
-    },
-    {
       "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
       "scalar_count": 3,
       "max_error_pct": 0.0,
       "file": "cold_fusion_lab_synthesis_crosswalk_benchmark.json"
-    },
-    {
-      "domain": "Foundational_Ontology_Spine",
-      "scalar_count": 3,
-      "max_error_pct": 0.0,
-      "file": "foundational_ontology_spine_benchmark.json"
     },
     {
       "domain": "Tier_96_Circuit_Spine",
@@ -679,6 +661,24 @@
       "scalar_count": 6,
       "max_error_pct": 0.140126,
       "file": "cosmology_anomalies_benchmark.json"
+    },
+    {
+      "domain": "FPC_Temporal_Coupling",
+      "scalar_count": 6,
+      "max_error_pct": 0.032418,
+      "file": "fpc_temporal_coupling_benchmark.json"
+    },
+    {
+      "domain": "Time_Emergence_Deep_Panel",
+      "scalar_count": 6,
+      "max_error_pct": 0.031421,
+      "file": "time_emergence_deep_panel_benchmark.json"
+    },
+    {
+      "domain": "Rust_Lean_Bridge_Panel",
+      "scalar_count": 6,
+      "max_error_pct": 0.014767,
+      "file": "rust_lean_bridge_panel_benchmark.json"
     }
   ],
   "expansion_map": {
@@ -698,10 +698,10 @@
     "label_B": true,
     "gr_sm_ckm_overall_ok": true,
     "next_research": [
-      "Full non-abelian path-integral confinement theorem (scales \u039b_QCD, \u221a\u03c3, Casimirs, \u03b2\u2080 + area-law/Polyakov probes shipped)",
-      "Spin-2 Fock uniqueness from fluid action (helicity/TT/massive-dof/accounting probes shipped)",
-      "Independent clean-clone by third party",
-      "arXiv endorsement + peer review"
+      "Full non-abelian path-integral confinement theorem (scales + area-law/Polyakov/instanton/\u03b2 probes shipped; theorem open)",
+      "Spin-2 Fock uniqueness from fluid action (helicity/TT/dof/Bianchi/soft-factor probes shipped; uniqueness open)",
+      "Optional: household clean-clone smoke (any second machine) \u2014 not peer review",
+      "Social track parked: arXiv endorsement / independent lab when available"
     ]
   },
   "refine_strategy": {

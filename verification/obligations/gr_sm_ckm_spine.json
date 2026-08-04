@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-04T02:20:17.336411+00:00",
+  "generated_at": "2026-08-04T02:27:58.354575+00:00",
   "version": "1.0",
   "tier": "gr_sm_ckm",
-  "obligation_count": 263,
+  "obligation_count": 277,
   "modules": [
     "FSOT/Formal/GRSMCKMSpine.lean",
     "verification/coq/GRSMCKMSpine.v",
@@ -1948,6 +1948,125 @@
       "module": "GRSMCKM.GR",
       "claim": "T3_spin2_wave",
       "coq_id": "gr_spin2_wave_equation_flat_meas_pos"
+    },
+    {
+      "id": "gr_bianchi_contracted_identity_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_bianchi",
+      "statement": "error_pct(bianchi_contracted_identity) < 0.5",
+      "coq_id": "gr_bianchi_contracted_identity_err_under_half"
+    },
+    {
+      "id": "gr_bianchi_contracted_identity_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_bianchi",
+      "coq_id": "gr_bianchi_contracted_identity_meas_pos"
+    },
+    {
+      "id": "gr_spin2_TT_projector_complete_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_lichnerowicz",
+      "statement": "error_pct(spin2_TT_projector_complete) < 0.5",
+      "coq_id": "gr_spin2_TT_projector_complete_err_under_half"
+    },
+    {
+      "id": "gr_spin2_TT_projector_complete_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_lichnerowicz",
+      "coq_id": "gr_spin2_TT_projector_complete_meas_pos"
+    },
+    {
+      "id": "gr_soft_graviton_pole_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_soft_factor",
+      "statement": "error_pct(soft_graviton_pole) < 0.5",
+      "coq_id": "gr_soft_graviton_pole_err_under_half"
+    },
+    {
+      "id": "gr_soft_graviton_pole_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_soft_factor",
+      "coq_id": "gr_soft_graviton_pole_meas_pos"
+    },
+    {
+      "id": "gr_instanton_action_scale_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_path_integral_instanton",
+      "statement": "error_pct(instanton_action_scale) < 0.5",
+      "coq_id": "gr_instanton_action_scale_err_under_half"
+    },
+    {
+      "id": "gr_instanton_action_scale_meas_pos",
+      "kind": "pos",
+      "value": 669.6431825331274,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_path_integral_instanton",
+      "coq_id": "gr_instanton_action_scale_meas_pos"
+    },
+    {
+      "id": "gr_ym_beta_function_structure_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_path_integral_beta",
+      "statement": "error_pct(ym_beta_function_structure) < 0.5",
+      "coq_id": "gr_ym_beta_function_structure_err_under_half"
+    },
+    {
+      "id": "gr_ym_beta_function_structure_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_path_integral_beta",
+      "coq_id": "gr_ym_beta_function_structure_meas_pos"
+    },
+    {
+      "id": "gr_su3_center_order_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_center",
+      "statement": "error_pct(su3_center_order) < 0.5",
+      "coq_id": "gr_su3_center_order_err_under_half"
+    },
+    {
+      "id": "gr_su3_center_order_meas_pos",
+      "kind": "pos",
+      "value": 3.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_center",
+      "coq_id": "gr_su3_center_order_meas_pos"
+    },
+    {
+      "id": "gr_dual_meissner_confined_flag_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_dual_meissner",
+      "statement": "error_pct(dual_meissner_confined_flag) < 0.5",
+      "coq_id": "gr_dual_meissner_confined_flag_err_under_half"
+    },
+    {
+      "id": "gr_dual_meissner_confined_flag_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_dual_meissner",
+      "coq_id": "gr_dual_meissner_confined_flag_meas_pos"
     },
     {
       "id": "gr_triangle_angle_sum_pi_err_under_half",

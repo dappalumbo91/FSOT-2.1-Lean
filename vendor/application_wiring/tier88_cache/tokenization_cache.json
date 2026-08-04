@@ -5,25 +5,97 @@
   "smoke_cases": [
     {
       "name": "llm phrase and contraction",
-      "text_len": 44,
-      "expected_id_count": 5,
-      "expected_gate_count": 2
+      "text_len": 44.0,
+      "expected_ids": 5.0,
+      "expected_gates": 2.0,
+      "id_density": 0.11363636363636363,
+      "gate_density": 0.045454545454545456,
+      "ids_per_gate": 2.5,
+      "expected_id_count": 5.0,
+      "expected_gate_count": 2.0
     },
     {
       "name": "basic morphology",
-      "text_len": 37,
-      "expected_id_count": 5,
-      "expected_gate_count": 4
+      "text_len": 37.0,
+      "expected_ids": 5.0,
+      "expected_gates": 4.0,
+      "id_density": 0.13513513513513514,
+      "gate_density": 0.10810810810810811,
+      "ids_per_gate": 1.25,
+      "expected_id_count": 5.0,
+      "expected_gate_count": 4.0
     },
     {
       "name": "proper phrase spans",
-      "text_len": 33,
-      "expected_id_count": 5,
-      "expected_gate_count": 3
+      "text_len": 33.0,
+      "expected_ids": 5.0,
+      "expected_gates": 3.0,
+      "id_density": 0.15151515151515152,
+      "gate_density": 0.09090909090909091,
+      "ids_per_gate": 1.6666666666666667,
+      "expected_id_count": 5.0,
+      "expected_gate_count": 3.0
+    },
+    {
+      "name": "scientific domain phrase",
+      "text_len": 46.0,
+      "expected_ids": 4.0,
+      "expected_gates": 3.0,
+      "id_density": 0.08695652173913043,
+      "gate_density": 0.06521739130434782,
+      "ids_per_gate": 1.3333333333333333,
+      "expected_id_count": 4.0,
+      "expected_gate_count": 3.0
+    },
+    {
+      "name": "contraction and negation",
+      "text_len": 34.0,
+      "expected_ids": 7.0,
+      "expected_gates": 2.0,
+      "id_density": 0.20588235294117646,
+      "gate_density": 0.058823529411764705,
+      "ids_per_gate": 3.5,
+      "expected_id_count": 7.0,
+      "expected_gate_count": 2.0
+    },
+    {
+      "name": "multiword technical compound",
+      "text_len": 45.0,
+      "expected_ids": 4.0,
+      "expected_gates": 2.0,
+      "id_density": 0.08888888888888889,
+      "gate_density": 0.044444444444444446,
+      "ids_per_gate": 2.0,
+      "expected_id_count": 4.0,
+      "expected_gate_count": 2.0
+    },
+    {
+      "name": "numeric unit span",
+      "text_len": 54.0,
+      "expected_ids": 5.0,
+      "expected_gates": 2.0,
+      "id_density": 0.09259259259259259,
+      "gate_density": 0.037037037037037035,
+      "ids_per_gate": 2.5,
+      "expected_id_count": 5.0,
+      "expected_gate_count": 2.0
+    },
+    {
+      "name": "fsot seed phrase",
+      "text_len": 40.0,
+      "expected_ids": 5.0,
+      "expected_gates": 3.0,
+      "id_density": 0.125,
+      "gate_density": 0.075,
+      "ids_per_gate": 1.6666666666666667,
+      "expected_id_count": 5.0,
+      "expected_gate_count": 3.0
     }
   ],
-  "case_count": 3,
-  "vocab_size": 0,
-  "fetched_at": "2026-07-15T16:12:35.983378+00:00",
+  "case_count": 8,
+  "vocab_size": 7,
+  "mean_text_len": 41.625,
+  "mean_id_density": 0.12495087580605484,
+  "fetched_at": "2026-08-04T02:27:30.373511+00:00",
   "credential_free": true
 }

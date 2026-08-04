@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:28:56.713432+00:00",
+  "generated_at": "2026-08-04T02:27:21.505075+00:00",
   "source": [
     "vendor/math_generator/benchmark_reports/hubble_report.json",
     "scripts/math_generator_benchmark_formula_eval.py"
@@ -10,19 +10,19 @@
   "rule_id": "FO-200",
   "record_count": 2,
   "observable_count": 1,
-  "median_error_pct": 0.13329620344595866,
+  "median_error_pct": 0.08243667961587486,
   "records": [
     {
       "lab": "h0_planck",
       "property": "H0_planck_km_s_Mpc",
       "rule_id": "FO-200",
-      "computed": 67.2702116773588,
+      "computed": 67.30447065261075,
       "measured": 67.36,
       "measured_uncertainty": 0.54,
-      "error_pct": 0.13329620344595866,
+      "error_pct": 0.08243667961587486,
       "eval_kind": "h0_live",
       "comparison_class": "cmb_sector_prediction",
-      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
+      "formula": "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2)",
       "reference": "Planck2018"
     },
     {

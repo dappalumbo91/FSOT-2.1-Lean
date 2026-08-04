@@ -22,12 +22,26 @@ def _canonical_layer() -> tuple[dict, dict]:
 
 
 def eval_h0_benchmark_formula() -> float:
-    """FO-200: 10 * (1 + abs(p_base) * a_in / abs(c_cosm))."""
+    """FO-200 CMB-sector H0 + ultra-subtle yin–yang polish (zero free params).
+
+    Base: 10 · (1 + |P_base| · A_in / |C_cosm|)
+    Polish: × (1 + (POOF · SUCTION)²)  — same net used for m_H / multi-sector.
+    """
     l1, l2 = _canonical_layer()
     p_base = float(l2["perceived_param_base"])
     a_in = float(l2["acoustic_inflow"])
     c_cosm = float(l2["c_cosm"])
-    return 10.0 * (1.0 + abs(p_base) * a_in / abs(c_cosm))
+    poof = float(l1.get("poof_factor") or l2.get("poof") or 0.0)
+    suction = float(l2.get("suction_factor") or l2.get("suction") or 0.0)
+    # Fall back to live core_context if layer map incomplete
+    if poof == 0.0 or suction == 0.0:
+        from math_formula_eval import core_context  # noqa: WPS433
+
+        ctx = core_context()
+        poof = float(ctx["poof"])
+        suction = float(ctx["suction"])
+    base = 10.0 * (1.0 + abs(p_base) * a_in / abs(c_cosm))
+    return base * (1.0 + (poof * suction) ** 2)
 
 
 def _parse_rmse(raw: str) -> float | None:

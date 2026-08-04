@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T02:20:17.571973+00:00",
+  "generated_at": "2026-08-04T02:27:58.589153+00:00",
   "version": "2.0",
   "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md",
   "gap_closure_doc": "docs/TOE_GAP_CLOSURE.md",
@@ -19,8 +19,8 @@
       "T3_limit_recovery": {
         "pass": true,
         "artifact": "data/toe_limit_recovery_benchmark.json + vendor/fsot_gr_sm.py",
-        "median_error_pct": 0.016460322231694493,
-        "record_count": 37,
+        "median_error_pct": 0.013893853126499888,
+        "record_count": 40,
         "note": "Deep GR recovery map is executable and residual-gated. Not a uniqueness theorem for the Einstein\u2013Hilbert action; full spin-2 quantization remains open research."
       },
       "T4_force_or_scope": {
@@ -28,12 +28,12 @@
         "artifact": "vendor/fsot_gr_sm.py + data/toe_force_package_manifest.json",
         "status": "force_package_v1",
         "sm_row_count": 40,
-        "gr_sm_median_error_pct": 0.004811476065123823
+        "gr_sm_median_error_pct": 0.0032411336172532518
       },
       "T5_prereg_freeze": {
         "pass": true,
         "artifact": "data/toe_prereg_freeze.json",
-        "bundle_sha256": "9b0a8e6c9c1476b397c68549a7799089832e051fa0325c348026a31b719c9b23"
+        "bundle_sha256": "202b6ebfc85ac79858c5325ad035120009e5696c2f60d929d47c1aad66bb2ea9"
       },
       "T6_falsification": {
         "pass": true,
@@ -57,10 +57,10 @@
     "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json"
   },
   "next_actions_research": [
-    "Full non-abelian path-integral confinement theorem (scales \u039b_QCD, \u221a\u03c3, Casimirs, \u03b2\u2080 + area-law/Polyakov probes shipped)",
-    "Spin-2 Fock uniqueness from fluid action (helicity/TT/massive-dof/accounting probes shipped)",
-    "Independent clean-clone by third party",
-    "arXiv endorsement + peer review"
+    "Full non-abelian path-integral confinement theorem (scales + area-law/Polyakov/instanton/\u03b2 probes shipped; theorem open)",
+    "Spin-2 Fock uniqueness from fluid action (helicity/TT/dof/Bianchi/soft-factor probes shipped; uniqueness open)",
+    "Optional: household clean-clone smoke (any second machine) \u2014 not peer review",
+    "Social track parked: arXiv endorsement / independent lab when available"
   ],
   "honest_statement": "T3/T4 deepened with GR recovery, SM force package, CKM/PMNS seed+NLO magnitudes, on-shell vs MS-bar Weinberg schemes, confinement scales (\u039b_QCD, \u221a\u03c3), N_eff, SU(3) Casimirs/\u03b2\u2080, spin-2 probes, unitarity-triangle closure, and CKM \u03b1,\u03b2,\u03b3 residual-gated vs geometric PDG(\u03c1\u0304,\u03b7\u0304) \u2014 multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. Full path-integral confinement theorem and spin-2 Fock uniqueness remain open research."
 }

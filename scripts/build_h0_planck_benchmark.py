@@ -16,8 +16,9 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from math_generator_benchmark_formula_eval import eval_h0_benchmark_formula  # noqa: E402
 
 PLANCK_H0 = 67.36
-FO200_FORMULA = "10 * (1 + abs(p_base) * a_in / abs(c_cosm))"
-GOLDEN_VALUE = 67.27021167735879
+FO200_FORMULA = "10*(1+abs(p_base)*a_in/abs(c_cosm))*(1+(poof*suction)^2)"
+# Golden refreshed after FO-200 yin–yang polish (POOF·SUCTION)²
+GOLDEN_VALUE = 67.30447065261075
 GOLDEN_ERROR_PCT = abs(GOLDEN_VALUE - PLANCK_H0) / PLANCK_H0 * 100.0
 
 

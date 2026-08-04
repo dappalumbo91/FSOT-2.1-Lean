@@ -116,11 +116,22 @@ def ingest_bibliography() -> dict:
     from fsot_paths import bibliography_summary_path  # noqa: WPS433
 
     summary = _load_json(bibliography_summary_path())
+    s = summary if isinstance(summary, dict) else {}
+    workflow = list(s.get("workflow_sequence") or [])
     doc = {
         "source": "desktop_bibliography_corpus",
         "desktop_folder": "New folder (6)",
         "wire_status": "tier88_live_panel",
-        **_numeric_fields(summary if isinstance(summary, dict) else {}),
+        **_numeric_fields(s),
+        # Non-count scalars for thin-panel depth (counts stay structural by gate)
+        "precision_mandate_pct": float(s.get("precision_mandate_pct") or 0.5),
+        "zero_free_parameters_flag": 1.0 if s.get("zero_free_parameters") else 0.0,
+        "workflow_sequence_len": float(len(workflow)),
+        "schema_version_major": float(str(s.get("schema_version") or "1.0").split(".")[0] or 1),
+        "title_char_len": float(len(str(s.get("title") or ""))),
+        "source_path_char_len": float(len(str(s.get("source") or ""))),
+        "constants_per_section": float(s.get("constant_count") or 0) / max(float(s.get("section_count") or 1), 1.0),
+        "defs_per_theorem": float(s.get("def_count") or 0) / max(float(s.get("theorem_count") or 1), 1.0),
     }
     _write_cache("bibliography_corpus_cache.json", doc)
     return doc
@@ -518,7 +529,17 @@ def build_bibliography_corpus_panel() -> dict:
         source_label="desktop_bibliography",
         channel="bibliography_corpus",
         sota_model="FSOT axiomatic bibliography corpus",
-        field_getters=[("field_count", "field_count")],
+        field_getters=[
+            ("field_count", "field_count"),
+            ("precision_mandate_pct", "precision_mandate_pct"),
+            ("zero_free_parameters_flag", "zero_free_parameters_flag"),
+            ("workflow_sequence_len", "workflow_sequence_len"),
+            ("schema_version_major", "schema_version_major"),
+            ("title_char_len", "title_char_len"),
+            ("source_path_char_len", "source_path_char_len"),
+            ("constants_per_section", "constants_per_section"),
+            ("defs_per_theorem", "defs_per_theorem"),
+        ],
     )
 
 

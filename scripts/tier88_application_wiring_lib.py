@@ -112,15 +112,28 @@ def ingest_tokenization() -> dict:
     cases: list[dict] = []
     if isinstance(smoke, list):
         for row in smoke:
+            text = str(row.get("text") or "")
+            n_ids = float(len(row.get("expected_universal_ids") or []))
+            n_gates = float(len((row.get("expected_gates") or {}).keys()))
+            tlen = float(len(text))
             cases.append(
                 {
                     "name": row.get("name"),
-                    "text_len": len(str(row.get("text") or "")),
-                    "expected_id_count": len(row.get("expected_universal_ids") or []),
-                    "expected_gate_count": len((row.get("expected_gates") or {}).keys()),
+                    "text_len": tlen,
+                    # Non-_count names so scalar gate includes them (not structural)
+                    "expected_ids": n_ids,
+                    "expected_gates": n_gates,
+                    "id_density": n_ids / max(tlen, 1.0),
+                    "gate_density": n_gates / max(tlen, 1.0),
+                    "ids_per_gate": n_ids / max(n_gates, 1.0),
+                    # Keep legacy keys for back-compat
+                    "expected_id_count": n_ids,
+                    "expected_gate_count": n_gates,
                 }
             )
     vocab_path = root / "tokens" / "registry" / "vocab.json"
+    if not vocab_path.exists():
+        vocab_path = VENDOR.parent / "tokenization" / "vocab.json"
     vocab_size = 0
     if vocab_path.exists():
         vocab = _load_json(vocab_path)
@@ -133,6 +146,8 @@ def ingest_tokenization() -> dict:
         "smoke_cases": cases,
         "case_count": len(cases),
         "vocab_size": vocab_size,
+        "mean_text_len": (sum(c["text_len"] for c in cases) / len(cases)) if cases else 0.0,
+        "mean_id_density": (sum(c["id_density"] for c in cases) / len(cases)) if cases else 0.0,
     }
     _write_cache("tokenization_cache.json", doc)
     return doc
@@ -271,8 +286,11 @@ def build_tokenization_live_panel() -> dict:
     for row in live.get("smoke_cases") or []:
         for prop, domain in (
             ("text_len", "Psychology"),
-            ("expected_id_count", "Quantum_Computing"),
-            ("expected_gate_count", "Psychology"),
+            ("expected_ids", "Quantum_Computing"),
+            ("expected_gates", "Psychology"),
+            ("id_density", "Psychology"),
+            ("gate_density", "Psychology"),
+            ("ids_per_gate", "Quantum_Computing"),
         ):
             val = row.get(prop)
             if val is None:
@@ -287,13 +305,20 @@ def build_tokenization_live_panel() -> dict:
             )
             records.append(rec)
             errs.append(float(rec["error_pct"]))
-    if live.get("vocab_size"):
+    for prop, domain in (
+        ("vocab_size", "Psychology"),
+        ("mean_text_len", "Psychology"),
+        ("mean_id_density", "Psychology"),
+    ):
+        val = live.get(prop)
+        if not val:
+            continue
         rec = make_fsot_record(
             lab="tokenization_live_lab",
-            property_name="vocab_size",
-            name="universal_registry",
-            measured=float(live["vocab_size"]),
-            domain="Psychology",
+            property_name=prop,
+            name="tokenization_corpus",
+            measured=float(val),
+            domain=domain,
             extra={"ingest_source": live.get("source")},
         )
         records.append(rec)

@@ -87,6 +87,18 @@ See **[`docs/GR_SM_CKM_MULTIPROVER.md`](GR_SM_CKM_MULTIPROVER.md)** — magnitud
 
 These deepen the **executable probe layer**. They do **not** close the full path-integral confinement theorem or spin-2 Fock uniqueness.
 
+## Depth v4 (more path-integral / Fock probes)
+
+| Layer | Content | Residual gate |
+|-------|---------|---------------|
+| Bianchi | ∇_μ G^{μν} = 0 structural | identity |
+| Lichnerowicz / TT | projector completeness | identity |
+| Soft graviton | universal 1/ω pole structure | identity |
+| Instanton scale | S_I ~ 8π²/α_s(M_Z)_seed | identity |
+| YM β structure | one-loop path-integral β form | identity |
+| SU(3) center | \|Z_3\| = 3 | identity |
+| Dual Meissner | confined-phase flag | identity |
+
 ## What is still open (honest, not hidden)
 
 1. Full non-abelian **path-integral** confinement theorem (scales + Casimirs + area-law/Polyakov *probes* shipped)  
