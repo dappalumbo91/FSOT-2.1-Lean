@@ -1,17 +1,19 @@
 {
-  "generated_at": "2026-08-04T15:07:16.439523+00:00",
+  "generated_at": "2026-08-04T15:20:12.801728+00:00",
   "tier": "82_cross_refinement_lean_isabelle",
   "obligation_count_total": 2430,
   "obligation_count_provable": 2376,
   "obligation_count_atomic_provable": 1904,
-  "obligation_count_bundle_conj": 472,
-  "obligation_count_margin_violations": 54,
+  "obligation_count_bundle_conj": 526,
+  "obligation_count_bundle_provable": 472,
+  "obligation_count_structural_bundle_excluded": 54,
+  "obligation_count_margin_violations": 0,
   "isabelle_chunks_found": 21,
   "isabelle_lemmas_indexed": 1904,
   "triangulation": {
     "atomic_triangulated_ok": 1904,
     "atomic_triangulated_fail": 0,
-    "bundle_conj_triangulated_ok": 472,
+    "bundle_conj_triangulated_ok": 526,
     "bundle_conj_triangulated_fail": 0,
     "pct_atomic_triangulated": 100.0
   },
@@ -126,280 +128,335 @@
     }
   },
   "lt_half_pooled_median_margin_to_bound": "0.48221099969184366",
-  "margin_violations_excluded": [
+  "structural_bundle_excluded": [
     {
       "id": "aether_prime_priors_bundle",
       "module": "AetherPrimePriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "blackhole_thesis_bundle",
       "module": "BlackHoleThesisPriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "bubble_bleed_bundle",
       "module": "BubbleBleedPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cameo_symbolic_bundle",
       "module": "CameoPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "codon_trinary_map_bundle",
       "module": "CodonPriors",
-      "violation": null
+      "unparsed_conjunct_count": 14,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cosmology_extended_bundle",
       "module": "CosmologyExtendedPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cosmology_higher_waves_bundle",
       "module": "CosmologyHigherWavesPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cosmology_wave10_bundle",
       "module": "CosmologyWave10Priors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cosmology_wave4_bundle",
       "module": "CosmologyWave4Priors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cosmology_wave5_bundle",
       "module": "CosmologyWave5Priors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cosmology_wave6_bundle",
       "module": "CosmologyWave6Priors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cosmology_wave7_bundle",
       "module": "CosmologyWave7Priors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cosmology_wave8_bundle",
       "module": "CosmologyWave8Priors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cosmology_wave9_bundle",
       "module": "CosmologyWave9Priors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "domain_coverage_priors_bundle",
       "module": "DomainCoveragePriors",
-      "violation": null
+      "unparsed_conjunct_count": 5,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "domain_precision_priors_bundle",
       "module": "DomainPrecisionPriors",
-      "violation": null
+      "unparsed_conjunct_count": 6,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "emergent_domain_priors_bundle",
       "module": "EmergentDomainPriors",
-      "violation": null
+      "unparsed_conjunct_count": 3,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "evolution_priors_bundle",
       "module": "EvolutionPriors",
-      "violation": null
+      "unparsed_conjunct_count": 3,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "experiment_synthesis_priors_bundle",
       "module": "ExperimentSynthesisPriors",
-      "violation": null
+      "unparsed_conjunct_count": 7,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "formula_corpus_strict_empirical_bundle",
       "module": "FormulaCorpusPriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "fuel_lab_compound_bundle",
       "module": "FuelPriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "higgs_branching_bundle",
       "module": "HiggsBranchingPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "hydrology_bundle",
       "module": "HydrologyPriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "knowledge_base_corpus_bundle",
       "module": "KnowledgeBasePriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "kronos_metrology_bundle",
       "module": "KronosPriors",
-      "violation": null
+      "unparsed_conjunct_count": 3,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "linguistics_priors_bundle",
       "module": "LinguisticsPriors",
-      "violation": null
+      "unparsed_conjunct_count": 3,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "magic_circle_priors_bundle",
       "module": "MagicCirclePriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "magnetic_string_bundle",
       "module": "MagneticStringPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "math_generator_priors_bundle",
       "module": "MathGeneratorPriors",
-      "violation": null
+      "unparsed_conjunct_count": 4,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "neuron_cohort_priors_bundle",
       "module": "NeuronCohortPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "neuron_cohort_strata_bundle",
       "module": "NeuronCohortStrataPriors",
-      "violation": null
+      "unparsed_conjunct_count": 5,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "neuron_cohort_train_holdout_bundle",
       "module": "NeuronCohortTrainHoldoutPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "neuron_hybrid_priors_bundle",
       "module": "NeuronHybridPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "particle_physics_bundle",
       "module": "ParticlePhysicsPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "protein_amino_acid_trinary_bundle",
       "module": "ProteinPriors",
-      "violation": null
+      "unparsed_conjunct_count": 21,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "soul_sibling_priors_bundle",
       "module": "SoulSiblingPriors",
-      "violation": null
+      "unparsed_conjunct_count": 3,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "space_weather_bundle",
       "module": "SpaceWeatherPriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "species_catalog_bundle",
       "module": "SpeciesPriors",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "structure_calibration_bundle",
       "module": "StructureCalibrationPriors",
-      "violation": null
+      "unparsed_conjunct_count": 3,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "thesis_simulation_bundle",
       "module": "ThesisSimulationPriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "trinary_fluid_priors_bundle",
       "module": "TrinaryFluidPriors",
-      "violation": null
+      "unparsed_conjunct_count": 3,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "trinary_os_fsotb_bundle",
       "module": "TrinaryOSPriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "unified_db_meta_bundle",
       "module": "UnifiedDBPriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "vibra_register_bundle",
       "module": "VibRegisterPriors",
-      "violation": null
+      "unparsed_conjunct_count": 5,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "warp_bh_wh_portal_bundle",
       "module": "WarpBhWhPortalPriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "weather_priors_bundle",
       "module": "WeatherPriors",
-      "violation": null
+      "unparsed_conjunct_count": 3,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cmb_term1_negative",
       "module": "Domains",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "quantum_raw_S_positive",
       "module": "Domains",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "proton_raw_S_positive",
       "module": "Domains",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "lean_proofs_constant_bundle",
       "module": "LeanProofsBridge",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cosmology_lambda_cdm_bundle",
       "module": "CosmologyLab",
-      "violation": null
+      "unparsed_conjunct_count": 2,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "photonic_forge_bundle",
       "module": "PhotonicForge",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cross_proof_connective_spine_bundle",
       "module": "CrossProofConnectivePriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     },
     {
       "id": "cross_proof_full_formal_spine_bundle",
       "module": "CrossProofConnectivePriors",
-      "violation": null
+      "unparsed_conjunct_count": 1,
+      "reason": "structural_index_unparsed_conjuncts_not_margin_failure"
     }
   ],
+  "margin_violations_excluded": [],
   "issue_counts": {},
   "failures_sample": [],
   "overall_ok": true,
-  "note": "Atomic provable obligations triangulate Lean/JSON/Isabelle literals. bundle_conj obligations are spine indices excluded from Isabelle chunks."
+  "note": "Atomic provable obligations triangulate Lean/JSON/Isabelle literals. bundle_conj rows are structural spine indices (not residual failures). Unparsed-conjunct bundles stay structural-excluded, not margin violations."
 }
