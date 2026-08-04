@@ -1,0 +1,60 @@
+{
+  "source": "Public literature + TechTimes summary of Zhang et al. PRL 2026 (Max Planck IPP / GRILLIX QCE); ASDEX Upgrade / JET QCE campaign reports",
+  "paper": {
+    "id": "Zhang_et_al_PRL_2026_QCE",
+    "title": "First-principles turbulence explanation of Quasicontinuous Exhaust (QCE)",
+    "journal": "Physical Review Letters",
+    "year": 2026,
+    "institute": "Max Planck Institute for Plasma Physics",
+    "doi_hint": "10.1103/j44y-5dp6",
+    "method": "GRILLIX full-f electromagnetic turbulence, no free-parameter retune to force profiles"
+  },
+  "regimes": [
+    {
+      "id": "QCE_Goldilocks",
+      "name": "Quasicontinuous Exhaust (Goldilocks)",
+      "elm_free_continuous_exhaust": true,
+      "h_mode_class_confinement": true,
+      "access_primary": "ballooning_beta_parameter",
+      "access_secondary_not_required": "edge_collisionality",
+      "self_organized_turbulence": true
+    },
+    {
+      "id": "ELMy_H_mode",
+      "name": "Standard ELMy H-mode",
+      "elm_free_continuous_exhaust": false,
+      "h_mode_class_confinement": true,
+      "elm_energy_fraction_upper": 0.20,
+      "self_organized_turbulence": false
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "KBM_mesoscale",
+      "name": "Kinetic ballooning mode (electromagnetic self-organization)",
+      "role": "pedestal_foot_transport_without_full_flatten"
+    },
+    {
+      "id": "RXM_xpoint",
+      "name": "Resistive X-point mode",
+      "role": "blob_ejection_to_SOL"
+    }
+  ],
+  "blob_filaments": [
+    {
+      "id": "QCE_blob_typical",
+      "v_km_s": 1.0,
+      "perp_size_cm": 1.0,
+      "parallel_length_m": 20.0
+    }
+  ],
+  "power_scales": [
+    {"id": "present_devices_mw", "exhaust_power_mw": 15.0},
+    {"id": "reactor_scale_mw", "exhaust_power_mw": 100.0}
+  ],
+  "machines": [
+    {"id": "ASDEX_Upgrade_QCE", "demonstrated_qce": true},
+    {"id": "JET_DT_QCE", "demonstrated_qce": true},
+    {"id": "ITER_QCE_candidate", "demonstrated_qce": false, "candidate": true}
+  ]
+}

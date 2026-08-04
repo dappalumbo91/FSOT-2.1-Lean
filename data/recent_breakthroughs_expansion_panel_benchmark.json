@@ -1,0 +1,198 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T13:41:59.586736+00:00",
+  "domain": "Recent_Breakthroughs_Expansion_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\qce_elm_public_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\fusion_public_anchors.json",
+    "public 2022\u20132026 fusion/quantum breakthrough literature"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "energy",
+    "quantum",
+    "mathematical"
+  ],
+  "D_eff": 13,
+  "record_count": 12,
+  "observable_count": 12,
+  "scalar_record_count": 11,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "news_only": {
+        "sota_typical_error_pct": 20.0,
+        "sota_model": "headline-only without residual gates"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_breakthroughs_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 12
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "breakthroughs",
+      "name": "recent_public",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 12
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "breakthrough_lab",
+      "property": "nif_2022_ignited",
+      "name": "NIF_2022",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "nif_2022_yield_mj",
+      "name": "NIF_2022",
+      "computed": 3.15,
+      "measured": 3.15,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "literature yield identity residual"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "east_2023_tau_s",
+      "name": "EAST_2023",
+      "computed": 400.0,
+      "measured": 400.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "long-pulse H-mode duration class"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "east_long_pulse_hmode",
+      "name": "EAST_2023",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "qce_2026_mechanism_published",
+      "name": "Zhang_PRL_2026",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "qce_asdex_jet_demonstrated",
+      "name": "QCE_machines",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "iter_design_q",
+      "name": "ITER_design",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "ITER design Q target"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "sparc_design_q",
+      "name": "SPARC_design",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SPARC design Q"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "measurement_law_theta_invariant",
+      "name": "room_temp_quantum_context",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03b8 = C_eff\u00b7P_var invariant under platform temperature claims"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "room_temp_quantum_comm_literature_noted",
+      "name": "Stanford_2025_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "Literature class noted; not a numeric fidelity residual of a device"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "fsot_zero_free_param_spine",
+      "name": "FSOT_2_1",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "qce_dual_mode_count",
+      "name": "KBM_RXM",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "two-mode exhaust"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

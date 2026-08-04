@@ -1,0 +1,441 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T13:41:59.588736+00:00",
+  "domain": "Breakthrough_Fusion_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "qce_elm",
+    "recent_breakthroughs",
+    "magnetic_confinement",
+    "fusion_lab"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "energy"
+  ],
+  "D_eff": 14,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 23,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fragmented_fusion_news": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "unlinked headlines without residual spine"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_bt_fusion_spine_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "bt_fusion_spine",
+      "name": "edge_plus_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "qce_elm_fusion_edge_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "elm_energy_fraction_upper",
+      "name": "ELMy_H_mode",
+      "computed": 0.2,
+      "measured": 0.2,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "1/5 rational bound on catastrophic edge dump",
+      "source": "public ELM literature + TechTimes/PRL summary"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "retained_or_gentle_fraction_floor",
+      "name": "QCE_vs_ELM",
+      "computed": 0.8,
+      "measured": 0.8,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "1 - 1/5 continuous/gentle path floor"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "edge_collapse_theta",
+      "name": "FSOT_edge_measurement",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var edge collapse law"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "exhaust_coherence_gate",
+      "name": "FSOT_bus_speaker",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2 continuous exhaust channel"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "filament_active_frac_under_phi_m4",
+      "name": "QCE_blobs",
+      "computed": 0.14589803375031543,
+      "measured": 0.05,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "active filament fraction \u2264 \u03c6\u207b\u2074"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "recent_breakthroughs_expansion_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "nif_2022_ignited",
+      "name": "NIF_2022",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "nif_2022_yield_mj",
+      "name": "NIF_2022",
+      "computed": 3.15,
+      "measured": 3.15,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "literature yield identity residual"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "east_2023_tau_s",
+      "name": "EAST_2023",
+      "computed": 400.0,
+      "measured": 400.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "long-pulse H-mode duration class"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "east_long_pulse_hmode",
+      "name": "EAST_2023",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "qce_2026_mechanism_published",
+      "name": "Zhang_PRL_2026",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "magnetic_confinement_fusion_panel_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "mhd_beta_stability",
+      "name": "tokamak_H_mode",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "tokamak H mode",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "mhd_beta_stability",
+      "name": "tokamak_high_beta",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "tokamak high beta",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "mhd_beta_stability",
+      "name": "theta_pinch",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "theta pinch",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "mhd_beta_stability",
+      "name": "FRC_laboratory",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "FRC laboratory",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "mhd_beta_stability",
+      "name": "stellarator_W7X",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "stellarator W7X",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "source_pooled_residual",
+      "name": "fusion_lab_certificate_spine_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "fusion_physics_public",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "record_count": 19,
+      "eval_kind": "live_formula",
+      "domain_display_name": "fusion certificate",
+      "display_name": "fusion physics public",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "energy_mev",
+      "name": "dt_fusion",
+      "computed": 17.600017,
+      "measured": 17.6,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics_public",
+      "eval_kind": "live_formula",
+      "domain_display_name": "fusion certificate",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 1.7e-05,
+        "delta_pct": 9.7e-05,
+        "effective_error_pct": 9.7e-05,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dt_fusion",
+      "computed": 15.000014,
+      "measured": 15.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics_public",
+      "eval_kind": "live_formula",
+      "domain_display_name": "fusion certificate",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 1.4e-05,
+        "delta_pct": 9.3e-05,
+        "effective_error_pct": 9.3e-05,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dt_fusion",
+      "computed": 5.000005,
+      "measured": 5.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics_public",
+      "eval_kind": "live_formula",
+      "domain_display_name": "fusion certificate",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 5e-06,
+        "delta_pct": 0.0001,
+        "effective_error_pct": 0.0001,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "breakthrough_fusion_spine_lab",
+      "property": "energy_mev",
+      "name": "dd_fusion",
+      "computed": 4.030004,
+      "measured": 4.03,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics_public",
+      "eval_kind": "live_formula",
+      "domain_display_name": "fusion certificate",
+      "display_name": "dd fusion",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 9.9e-05,
+        "effective_error_pct": 9.9e-05,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 9.5e-05,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

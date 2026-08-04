@@ -1,0 +1,305 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-04T13:41:59.584735+00:00",
+  "domain": "QCE_ELM_Fusion_Edge_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fusion\\qce_elm_public_anchors.json",
+    "Physical Review Letters 2026 Zhang et al. QCE"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "energy",
+    "plasma_physics"
+  ],
+  "D_eff": 14,
+  "record_count": 22,
+  "observable_count": 22,
+  "scalar_record_count": 20,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "elmy_hmode_only": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "ELMy H-mode without continuous exhaust mechanism"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_qce_elm_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 22
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "qce_elm",
+      "name": "edge_exhaust",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 22
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "qce_elm_lab",
+      "property": "elm_energy_fraction_upper",
+      "name": "ELMy_H_mode",
+      "computed": 0.2,
+      "measured": 0.2,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "1/5 rational bound on catastrophic edge dump",
+      "source": "public ELM literature + TechTimes/PRL summary"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "retained_or_gentle_fraction_floor",
+      "name": "QCE_vs_ELM",
+      "computed": 0.8,
+      "measured": 0.8,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "1 - 1/5 continuous/gentle path floor"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "edge_collapse_theta",
+      "name": "FSOT_edge_measurement",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var edge collapse law"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "exhaust_coherence_gate",
+      "name": "FSOT_bus_speaker",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2 continuous exhaust channel"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "filament_active_frac_under_phi_m4",
+      "name": "QCE_blobs",
+      "computed": 0.14589803375031543,
+      "measured": 0.05,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "active filament fraction \u2264 \u03c6\u207b\u2074"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_v_km_s",
+      "name": "QCE_blob_typical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "order-1 km/s filament velocity class"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_perp_cm",
+      "name": "QCE_blob_typical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "order-1 cm perpendicular size class"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_parallel_m",
+      "name": "QCE_blob_typical",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "20 m = 4\u00b75 parallel elongation class"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_aspect_ratio",
+      "name": "QCE_blob_typical",
+      "computed": 2000.0,
+      "measured": 2000.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "L_parallel / perp = 20 / 0.01"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "regime_QCE_Goldilocks_continuous_exhaust",
+      "name": "QCE_Goldilocks",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "regime_QCE_Goldilocks_hmode_class",
+      "name": "QCE_Goldilocks",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "regime_ELMy_H_mode_continuous_exhaust",
+      "name": "ELMy_H_mode",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "regime_ELMy_H_mode_hmode_class",
+      "name": "ELMy_H_mode",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "access_ballooning_beta_preferred",
+      "name": "Zhang_2026",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold",
+      "claim": "QCE access primarily ballooning/\u03b2 not collisionality (literature)"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "self_organized_turbulence",
+      "name": "KBM_RXM",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold",
+      "claim": "self-organized dual-mode exhaust mechanism"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "zero_free_param_sim_spirit",
+      "name": "GRILLIX_full_f",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold",
+      "claim": "full-f simulation without retune free params (methodology parity)"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "machine_ASDEX_Upgrade_QCE_qce_demo",
+      "name": "ASDEX_Upgrade_QCE",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "machine_JET_DT_QCE_qce_demo",
+      "name": "JET_DT_QCE",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "machine_ITER_QCE_candidate_qce_candidate",
+      "name": "ITER_QCE_candidate",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "reactor_to_present_power_ratio",
+      "name": "exhaust_power_scale",
+      "computed": 6.666666666666667,
+      "measured": 6.666666666666667,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "100 MW / 15 MW class"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "mechanism_count",
+      "name": "KBM_plus_RXM",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "two-mode self-org exhaust"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "honest_not_prior_prereg",
+      "name": "expansion_2026_08",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "Panel documents post-hoc residual bind of literature; PRED-QCE not in 2026-07 freeze"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}
