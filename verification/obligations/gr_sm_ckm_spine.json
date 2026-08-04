@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-04T01:00:47.074309+00:00",
+  "generated_at": "2026-08-04T01:07:52.173139+00:00",
   "version": "1.0",
   "tier": "gr_sm_ckm",
-  "obligation_count": 228,
+  "obligation_count": 232,
   "modules": [
     "FSOT/Formal/GRSMCKMSpine.lean",
     "verification/coq/GRSMCKMSpine.v",
@@ -1650,6 +1650,40 @@
       "module": "GRSMCKM.GR",
       "claim": "T2_structural_geometry",
       "coq_id": "gr_sqrt2_structural_recovery_meas_pos"
+    },
+    {
+      "id": "gr_yukawa_top_err_under_half",
+      "kind": "lt_half",
+      "value": 0.027688980764132183,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_yukawa_top",
+      "statement": "error_pct(yukawa_top) < 0.5",
+      "coq_id": "gr_yukawa_top_err_under_half"
+    },
+    {
+      "id": "gr_yukawa_top_meas_pos",
+      "kind": "pos",
+      "value": 0.991,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_yukawa_top",
+      "coq_id": "gr_yukawa_top_meas_pos"
+    },
+    {
+      "id": "gr_morphic_phi_present_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T2_morphic_2d",
+      "statement": "error_pct(morphic_phi_present) < 0.5",
+      "coq_id": "gr_morphic_phi_present_err_under_half"
+    },
+    {
+      "id": "gr_morphic_phi_present_meas_pos",
+      "kind": "pos",
+      "value": 1.618033988749895,
+      "module": "GRSMCKM.GR",
+      "claim": "T2_morphic_2d",
+      "coq_id": "gr_morphic_phi_present_meas_pos"
     },
     {
       "id": "gr_spin2_massless_helicities_err_under_half",

@@ -182,6 +182,10 @@ fn replay_gr_sm_ckm_obligations() {
     assert!(0.6666666666666666_f64 > 0.0, "gr_koide_lepton_QR_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_sqrt2_structural_recovery_err_under_half");
     assert!(1.4142135623730951_f64 > 0.0, "gr_sqrt2_structural_recovery_meas_pos");
+    assert!(0.027688980764132183_f64 < 0.5_f64, "gr_yukawa_top_err_under_half");
+    assert!(0.991_f64 > 0.0, "gr_yukawa_top_meas_pos");
+    assert!(0.0_f64 < 0.5_f64, "gr_morphic_phi_present_err_under_half");
+    assert!(1.618033988749895_f64 > 0.0, "gr_morphic_phi_present_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_spin2_massless_helicities_err_under_half");
     assert!(2.0_f64 > 0.0, "gr_spin2_massless_helicities_meas_pos");
     assert!(0.0_f64 < 0.5_f64, "gr_spin2_TT_dof_err_under_half");

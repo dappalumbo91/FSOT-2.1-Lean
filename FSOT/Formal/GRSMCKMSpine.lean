@@ -551,6 +551,18 @@ theorem gr_sqrt2_structural_recovery_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) 
 theorem gr_sqrt2_structural_recovery_meas_pos : (0 : ℝ) < (1.4142135623730951 : ℝ) := by
   norm_num
 
+theorem gr_yukawa_top_err_under_half : (0.027688980764132183 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_yukawa_top_meas_pos : (0 : ℝ) < (0.991 : ℝ) := by
+  norm_num
+
+theorem gr_morphic_phi_present_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_morphic_phi_present_meas_pos : (0 : ℝ) < (1.618033988749895 : ℝ) := by
+  norm_num
+
 theorem gr_spin2_massless_helicities_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 

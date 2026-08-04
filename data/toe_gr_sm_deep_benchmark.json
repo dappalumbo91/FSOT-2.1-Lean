@@ -1,6 +1,6 @@
 {
   "benchmark_version": "2.0",
-  "generated_at": "2026-08-04T01:00:46.895560+00:00",
+  "generated_at": "2026-08-04T01:07:51.994547+00:00",
   "domain": "TOE_GR_SM_Deep",
   "maps_to_lean": [
     "cosmological",
@@ -10,13 +10,13 @@
   "D_eff": 22,
   "purpose": "Deep T3 GR recovery (weak field, Schwarzschild, light deflection, perihelion, Friedmann, acoustic metric) + T4 SM force package (U(1)\u00d7SU(2)\u00d7SU(3), couplings, masses, charge quantization, Higgs)",
   "module": "vendor/fsot_gr_sm.py",
-  "record_count": 68,
-  "observable_count": 68,
+  "record_count": 70,
+  "observable_count": 70,
   "median_error_pct": 0.013893853126499888,
   "pooled_median_error_pct": 0.013893853126499888,
   "max_error_pct": 0.4219868071131969,
   "green_gate_pass": true,
-  "gr_row_count": 28,
+  "gr_row_count": 30,
   "sm_row_count": 40,
   "records": [
     {
@@ -351,6 +351,34 @@
       "eval_kind": "seed_identity",
       "claim": "T2_structural_geometry",
       "formula": "sin(PI/E)*PHI/A_BLEED  [=sqrt(2) by A_BLEED def]",
+      "limit_sector": "Structure",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_gr_sm_lab",
+      "name": "yukawa_top",
+      "property": "yukawa_top",
+      "computed": 0.9912743977993725,
+      "measured": 0.991,
+      "error_pct": 0.027688980764132183,
+      "eval_kind": "seed_closed_form",
+      "claim": "T4_yukawa_top",
+      "formula": "sqrt(2)*m_t_seed / v_SM",
+      "limit_sector": "Flavor",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_gr_sm_lab",
+      "name": "morphic_phi_present",
+      "property": "morphic_phi_present",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "T2_morphic_2d",
+      "formula": "PHI seed (= only 2D morphic number)",
       "limit_sector": "Structure",
       "zero_free_parameters": true,
       "derivation": "seed_closed_form"
@@ -1307,6 +1335,34 @@
     },
     {
       "lab": "toe_gr_sm_lab",
+      "name": "yukawa_top",
+      "property": "yukawa_top",
+      "computed": 0.9912743977993725,
+      "measured": 0.991,
+      "error_pct": 0.027688980764132183,
+      "eval_kind": "seed_closed_form",
+      "claim": "T4_yukawa_top",
+      "formula": "sqrt(2)*m_t_seed / v_SM",
+      "limit_sector": "Flavor",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_gr_sm_lab",
+      "name": "morphic_phi_present",
+      "property": "morphic_phi_present",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "T2_morphic_2d",
+      "formula": "PHI seed (= only 2D morphic number)",
+      "limit_sector": "Structure",
+      "zero_free_parameters": true,
+      "derivation": "seed_closed_form"
+    },
+    {
+      "lab": "toe_gr_sm_lab",
       "name": "spin2_massless_helicities",
       "property": "spin2_massless_helicities",
       "computed": 2.0,
@@ -1958,7 +2014,9 @@
       "SU(3) Casimirs + \u03b2\u2080(n_f=5)",
       "spin-2 massless helicity / TT dof probes",
       "Koide lepton Q/R \u2192 2/3; \u03b1_s > \u03b1_em hierarchy",
-      "\u221a2 structural recovery (already FO load-bearing \u2014 not a new seed)"
+      "\u221a2 structural recovery (already FO load-bearing \u2014 not a new seed)",
+      "Top Yukawa y_t = \u221a2 m_t / v_SM",
+      "Morphic 2D (\u03c6) only \u2014 plastic/bronze/supergolden not seeded (history retest)"
     ]
   },
   "honest_scope": "Executable GR recovery map + SM force package v1 under atlas residual law. Not a uniqueness theorem for Einstein\u2013Hilbert or a full non-abelian path-integral derivation; see manifest.does_not_yet_include."

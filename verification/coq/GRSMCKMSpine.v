@@ -544,6 +544,18 @@ Proof. lra. Qed.
 Lemma gr_sqrt2_structural_recovery_meas_pos : 0 < ((1.4142135623730951%R)).
 Proof. lra. Qed.
 
+Lemma gr_yukawa_top_err_under_half : ((0.027688980764132183%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_yukawa_top_meas_pos : 0 < ((0.991%R)).
+Proof. lra. Qed.
+
+Lemma gr_morphic_phi_present_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma gr_morphic_phi_present_meas_pos : 0 < ((1.618033988749895%R)).
+Proof. lra. Qed.
+
 Lemma gr_spin2_massless_helicities_err_under_half : (0%R) < (0.5%R).
 Proof. lra. Qed.
 

@@ -73,6 +73,7 @@ from fsot_seed_flavor import (  # type: ignore
     seed_lambda_qcd_GeV,
     seed_m_W_GeV,
     seed_m_Z_GeV,
+    seed_m_t_GeV,
     seed_sin2_theta_W,
     seed_sin2_theta_W_onshell,
     seed_string_tension_GeV,
@@ -443,6 +444,33 @@ def run_gr_recovery_suite() -> list[dict]:
             sector="Structure",
         )
     )
+    # Top Yukawa: y_t = √2 m_t / v  with SM vev as unit/definition anchor (PDG),
+    # seed m_t from FO-213 ladder — same honesty as SI c,G in GR tests.
+    VEV_SM_GEV = 246.22  # electroweak vev (definitional SM scale, not a free fit)
+    y_t = seed_m_t_GeV() * math.sqrt(2.0) / VEV_SM_GEV
+    rows.append(
+        _row(
+            "yukawa_top",
+            y_t,
+            0.991,
+            claim="T4_yukawa_top",
+            formula="sqrt(2)*m_t_seed / v_SM",
+            sector="Flavor",
+        )
+    )
+    # Morphic note: only φ (2D) and plastic (3D) are morphic numbers historically;
+    # FSOT seeds φ and does *not* introduce plastic without FO derivation.
+    rows.append(
+        _row(
+            "morphic_phi_present",
+            f(PHI),
+            (1.0 + math.sqrt(5.0)) / 2.0,
+            claim="T2_morphic_2d",
+            formula="PHI seed (= only 2D morphic number)",
+            eval_kind="seed_identity",
+            sector="Structure",
+        )
+    )
 
     # Massless spin-2: 2 helicities (±2); not a uniqueness theorem for EH measure
     rows.append(
@@ -543,6 +571,8 @@ def force_package_manifest() -> dict[str, Any]:
             "spin-2 massless helicity / TT dof probes",
             "Koide lepton Q/R → 2/3; α_s > α_em hierarchy",
             "√2 structural recovery (already FO load-bearing — not a new seed)",
+            "Top Yukawa y_t = √2 m_t / v_SM",
+            "Morphic 2D (φ) only — plastic/bronze/supergolden not seeded (history retest)",
         ],
     }
 
