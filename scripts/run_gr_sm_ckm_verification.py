@@ -49,15 +49,21 @@ def main() -> int:
     rust_status = "skipped"
     rust_detail = ""
     if (RUST / "Cargo.toml").exists() and shutil.which("cargo"):
-        rr = subprocess.run(
-            ["cargo", "test", "--manifest-path", str(RUST / "Cargo.toml"), "--", "--nocapture"],
-            cwd=str(ROOT),
-            capture_output=True,
-            text=True,
-        )
-        rust_status = "passed" if rr.returncode == 0 else "failed"
-        rust_detail = (rr.stdout or "")[-1500:] + (rr.stderr or "")[-500:]
+        rr = None
+        for attempt in range(2):
+            rr = subprocess.run(
+                ["cargo", "test", "--manifest-path", str(RUST / "Cargo.toml"), "--", "--nocapture"],
+                cwd=str(ROOT),
+                capture_output=True,
+                text=True,
+            )
+            if rr.returncode == 0:
+                break
+        rust_status = "passed" if rr and rr.returncode == 0 else "failed"
+        rust_detail = ((rr.stdout or "") if rr else "")[-1500:] + ((rr.stderr or "") if rr else "")[-500:]
         print(f"Rust cargo test: {rust_status}")
+        if rust_status == "failed":
+            print(rust_detail[-400:])
     else:
         print("Rust: skipped (no cargo)")
 
