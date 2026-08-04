@@ -1,6 +1,6 @@
 # Scientific capability & accuracy gap report
 
-Generated: `2026-08-04T02:35:13.170502+00:00`
+Generated: `2026-08-04T02:51:03.664663+00:00`
 
 ## Goal
 

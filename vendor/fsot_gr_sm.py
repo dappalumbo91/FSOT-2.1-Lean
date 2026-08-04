@@ -490,7 +490,7 @@ def run_gr_recovery_suite() -> list[dict]:
         _row(
             "R_b_triangle",
             sides["R_b"],
-            math.sqrt(0.159**2 + 0.348**2),
+            math.sqrt(0.1591**2 + 0.3523**2),
             claim="T4_triangle_side",
             formula="sqrt(rho_bar**2+eta_bar**2)",
             sector="Flavor",
@@ -500,7 +500,7 @@ def run_gr_recovery_suite() -> list[dict]:
         _row(
             "R_t_triangle",
             sides["R_t"],
-            math.sqrt((1.0 - 0.159) ** 2 + 0.348**2),
+            math.sqrt((1.0 - 0.1591) ** 2 + 0.3523**2),
             claim="T4_triangle_side",
             formula="sqrt((1-rho_bar)**2+eta_bar**2)",
             sector="Flavor",
@@ -510,9 +510,9 @@ def run_gr_recovery_suite() -> list[dict]:
         _row(
             "sin_delta_ckm",
             seed_sin_delta_ckm(),
-            math.sin(1.196),
+            math.sin(1.147),
             claim="T4_ckm_phase",
-            formula="sin(E*A_BLEED*K)",
+            formula="sin(atan2(eta_bar,rho_bar))  [=sin gamma]",
             sector="Flavor",
         )
     )
@@ -767,7 +767,7 @@ def run_gr_recovery_suite() -> list[dict]:
             sector="Flavor",
         )
     )
-    rhob_m, etab_m = 0.159, 0.348  # PDG Wolfenstein centrals (same as seed_flavor.PDG)
+    rhob_m, etab_m = 0.1591, 0.3523  # PDG 2024 global-fit (ρ̄,η̄) Eq. 12.26
     gamma_geom = math.atan2(etab_m, rhob_m)
     beta_geom = math.atan2(etab_m, 1.0 - rhob_m)
     alpha_geom = math.pi - beta_geom - gamma_geom

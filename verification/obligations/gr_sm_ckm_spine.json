@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T02:35:04.063381+00:00",
+  "generated_at": "2026-08-04T02:51:20.384202+00:00",
   "version": "1.0",
   "tier": "gr_sm_ckm",
   "obligation_count": 277,
@@ -16,7 +16,7 @@
     {
       "id": "lambda_ckm_err_under_half",
       "kind": "lt_half",
-      "value": 0.06648317372654539,
+      "value": 0.06203597212779205,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(lambda_ckm) < 0.5",
@@ -25,7 +25,7 @@
     {
       "id": "lambda_ckm_measured_pos",
       "kind": "pos",
-      "value": 0.225,
+      "value": 0.22501,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "lambda_ckm_measured_pos"
@@ -33,10 +33,10 @@
     {
       "id": "lambda_ckm_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 0.00014958714088472713,
-      "bound": 0.0001510830122945744,
+      "diff": 0.0001395871408847449,
+      "bound": 0.00014098301229459233,
       "left_value": 0.22514958714088473,
-      "right_value": 0.225,
+      "right_value": 0.22501,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "lambda_ckm_abs_diff"
@@ -72,7 +72,7 @@
     {
       "id": "rho_bar_err_under_half",
       "kind": "lt_half",
-      "value": 0.004811476065123823,
+      "value": 0.05804509934408681,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(rho_bar) < 0.5",
@@ -81,7 +81,7 @@
     {
       "id": "rho_bar_measured_pos",
       "kind": "pos",
-      "value": 0.159,
+      "value": 0.1591,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "rho_bar_measured_pos"
@@ -89,10 +89,10 @@
     {
       "id": "rho_bar_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 7.650246943546879e-06,
-      "bound": 7.726749413982348e-06,
+      "diff": 9.234975305644211e-05,
+      "bound": 9.327325058800653e-05,
       "left_value": 0.15900765024694355,
-      "right_value": 0.159,
+      "right_value": 0.1591,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "rho_bar_abs_diff"
@@ -100,7 +100,7 @@
     {
       "id": "eta_bar_err_under_half",
       "kind": "lt_half",
-      "value": 0.038316528380806465,
+      "value": 0.05017401991649093,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(eta_bar) < 0.5",
@@ -109,7 +109,7 @@
     {
       "id": "eta_bar_measured_pos",
       "kind": "pos",
-      "value": 0.348,
+      "value": 0.3523,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "eta_bar_measured_pos"
@@ -117,10 +117,10 @@
     {
       "id": "eta_bar_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 0.0001333415187652065,
-      "bound": 0.00013467493395385855,
-      "left_value": 0.34786665848123477,
-      "right_value": 0.348,
+      "diff": 0.00017676307216579756,
+      "bound": 0.00017853070288845551,
+      "left_value": 0.3524767630721658,
+      "right_value": 0.3523,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "eta_bar_abs_diff"
@@ -128,7 +128,7 @@
     {
       "id": "Jarlskog_J_err_under_half",
       "kind": "lt_half",
-      "value": 0.24035678834077073,
+      "value": 0.21421096741502482,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(Jarlskog_J) < 0.5",
@@ -137,7 +137,7 @@
     {
       "id": "Jarlskog_J_measured_pos",
       "kind": "pos",
-      "value": 3.08e-05,
+      "value": 3.12e-05,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "Jarlskog_J_measured_pos"
@@ -145,10 +145,10 @@
     {
       "id": "Jarlskog_J_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 7.402989080895739e-08,
-      "bound": 7.477019071704697e-08,
-      "left_value": 3.0725970109191046e-05,
-      "right_value": 3.08e-05,
+      "diff": 6.683382183348774e-08,
+      "bound": 6.750216105182262e-08,
+      "left_value": 3.113316617816651e-05,
+      "right_value": 3.12e-05,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "Jarlskog_J_abs_diff"
@@ -156,7 +156,7 @@
     {
       "id": "delta_ckm_rad_err_under_half",
       "kind": "lt_half",
-      "value": 0.0032411336172532518,
+      "value": 0.0013363679820401644,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(delta_ckm_rad) < 0.5",
@@ -165,7 +165,7 @@
     {
       "id": "delta_ckm_rad_measured_pos",
       "kind": "pos",
-      "value": 1.196,
+      "value": 1.147,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "delta_ckm_rad_measured_pos"
@@ -173,10 +173,10 @@
     {
       "id": "delta_ckm_rad_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 3.876395806234889e-05,
-      "bound": 3.915159764397238e-05,
-      "left_value": 1.1959612360419376,
-      "right_value": 1.196,
+      "diff": 1.5328140754000685e-05,
+      "bound": 1.5481422162540694e-05,
+      "left_value": 1.147015328140754,
+      "right_value": 1.147,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "delta_ckm_rad_abs_diff"
@@ -212,7 +212,7 @@
     {
       "id": "V_us_err_under_half",
       "kind": "lt_half",
-      "value": 0.06648317372654539,
+      "value": 0.06203597212779205,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_us) < 0.5",
@@ -221,7 +221,7 @@
     {
       "id": "V_us_measured_pos",
       "kind": "pos",
-      "value": 0.225,
+      "value": 0.22501,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_us_measured_pos"
@@ -229,10 +229,10 @@
     {
       "id": "V_us_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 0.00014958714088472713,
-      "bound": 0.0001510830122945744,
+      "diff": 0.0001395871408847449,
+      "bound": 0.00014098301229459233,
       "left_value": 0.22514958714088473,
-      "right_value": 0.225,
+      "right_value": 0.22501,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_us_abs_diff"
@@ -240,7 +240,7 @@
     {
       "id": "V_ub_err_under_half",
       "kind": "lt_half",
-      "value": 0.3128398765779975,
+      "value": 0.2724163670754618,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_ub) < 0.5",
@@ -249,7 +249,7 @@
     {
       "id": "V_ub_measured_pos",
       "kind": "pos",
-      "value": 0.00369,
+      "value": 0.003732,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_ub_measured_pos"
@@ -257,10 +257,10 @@
     {
       "id": "V_ub_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 1.1543791445728108e-05,
-      "bound": 1.165922936118539e-05,
-      "left_value": 0.0037015437914457282,
-      "right_value": 0.00369,
+      "diff": 1.0166578819256235e-05,
+      "bound": 1.0268244608448797e-05,
+      "left_value": 0.0037421665788192563,
+      "right_value": 0.003732,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_ub_abs_diff"
@@ -268,7 +268,7 @@
     {
       "id": "V_cd_err_under_half",
       "kind": "lt_half",
-      "value": 0.12878552916691646,
+      "value": 0.124332788226418,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_cd) < 0.5",
@@ -277,7 +277,7 @@
     {
       "id": "V_cd_measured_pos",
       "kind": "pos",
-      "value": 0.22486,
+      "value": 0.22487,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_cd_measured_pos"
@@ -285,10 +285,10 @@
     {
       "id": "V_cd_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 0.00028958714088472837,
-      "bound": 0.0002924830122945757,
+      "diff": 0.0002795871408847461,
+      "bound": 0.0002823830122945936,
       "left_value": 0.22514958714088473,
-      "right_value": 0.22486,
+      "right_value": 0.22487,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_cd_abs_diff"
@@ -324,7 +324,7 @@
     {
       "id": "V_cb_err_under_half",
       "kind": "lt_half",
-      "value": 0.17604653957526104,
+      "value": 0.15209816603006943,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_cb) < 0.5",
@@ -333,7 +333,7 @@
     {
       "id": "V_cb_measured_pos",
       "kind": "pos",
-      "value": 0.04182,
+      "value": 0.04183,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_cb_measured_pos"
@@ -341,10 +341,10 @@
     {
       "id": "V_cb_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 7.362266285037417e-05,
-      "bound": 7.43588894798779e-05,
+      "diff": 6.362266285037804e-05,
+      "bound": 6.425888947988182e-05,
       "left_value": 0.04189362266285038,
-      "right_value": 0.04182,
+      "right_value": 0.04183,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_cb_abs_diff"
@@ -352,7 +352,7 @@
     {
       "id": "V_td_err_under_half",
       "kind": "lt_half",
-      "value": 0.16746091354807907,
+      "value": 0.24552622781795225,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_td) < 0.5",
@@ -361,7 +361,7 @@
     {
       "id": "V_td_measured_pos",
       "kind": "pos",
-      "value": 0.00857,
+      "value": 0.00858,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_td_measured_pos"
@@ -369,10 +369,10 @@
     {
       "id": "V_td_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 1.4351400291070376e-05,
-      "bound": 1.4494914294981081e-05,
-      "left_value": 0.00858435140029107,
-      "right_value": 0.00857,
+      "diff": 2.1066150346780305e-05,
+      "bound": 2.1276811851248108e-05,
+      "left_value": 0.008601066150346781,
+      "right_value": 0.00858,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_td_abs_diff"
@@ -380,7 +380,7 @@
     {
       "id": "V_ts_err_under_half",
       "kind": "lt_half",
-      "value": 0.16900757375439615,
+      "value": 0.14464148093664253,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_ts) < 0.5",
@@ -389,7 +389,7 @@
     {
       "id": "V_ts_measured_pos",
       "kind": "pos",
-      "value": 0.0411,
+      "value": 0.04111,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_ts_measured_pos"
@@ -397,10 +397,10 @@
     {
       "id": "V_ts_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 6.946211281305681e-05,
-      "bound": 7.015673394218738e-05,
+      "diff": 5.946211281305375e-05,
+      "bound": 6.0056733942184286e-05,
       "left_value": 0.041169462112813054,
-      "right_value": 0.0411,
+      "right_value": 0.04111,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_emergent",
       "coq_id": "V_ts_abs_diff"
@@ -912,7 +912,7 @@
     {
       "id": "emergent_unitarity_row_u_err_under_half",
       "kind": "lt_half",
-      "value": 0.0013701426440082543,
+      "value": 0.001400381070371104,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_unitarity",
       "statement": "error_pct(emergent_unitarity_row_u) < 0.5",
@@ -929,9 +929,9 @@
     {
       "id": "emergent_unitarity_row_u_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 1.3701426440082543e-05,
-      "bound": 1.3838440705483368e-05,
-      "left_value": 1.00001370142644,
+      "diff": 1.400381070371104e-05,
+      "bound": 1.414384881174815e-05,
+      "left_value": 1.0000140038107037,
       "right_value": 1.0,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_unitarity",
@@ -968,7 +968,7 @@
     {
       "id": "emergent_unitarity_row_t_err_under_half",
       "kind": "lt_half",
-      "value": 0.001431015241259992,
+      "value": 0.0014597402371530066,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_unitarity",
       "statement": "error_pct(emergent_unitarity_row_t) < 0.5",
@@ -985,9 +985,9 @@
     {
       "id": "emergent_unitarity_row_t_abs_diff",
       "kind": "abs_diff_lt_lit",
-      "diff": 1.4310152412599919e-05,
-      "bound": 1.445325393772592e-05,
-      "left_value": 1.0000143101524126,
+      "diff": 1.4597402371530066e-05,
+      "bound": 1.4743376396245366e-05,
+      "left_value": 1.0000145974023715,
       "right_value": 1.0,
       "module": "GRSMCKM.Flavor",
       "claim": "T4_complex_unitarity",
@@ -1136,9 +1136,9 @@
     {
       "id": "emergent_unitarity_row_u_unitarity_tight",
       "kind": "abs_diff_lt_lit",
-      "diff": 1.3701426440082543e-05,
+      "diff": 1.400381070371104e-05,
       "bound": 0.05,
-      "left_value": 1.00001370142644,
+      "left_value": 1.0000140038107037,
       "right_value": 1.0,
       "module": "GRSMCKM.Unitarity",
       "claim": "T4_CKM_unitarity",
@@ -1158,9 +1158,9 @@
     {
       "id": "emergent_unitarity_row_t_unitarity_tight",
       "kind": "abs_diff_lt_lit",
-      "diff": 1.4310152412599919e-05,
+      "diff": 1.4597402371530066e-05,
       "bound": 0.05,
-      "left_value": 1.0000143101524126,
+      "left_value": 1.0000145974023715,
       "right_value": 1.0,
       "module": "GRSMCKM.Unitarity",
       "claim": "T4_CKM_unitarity",
@@ -1705,7 +1705,7 @@
     {
       "id": "gr_R_b_triangle_err_under_half",
       "kind": "lt_half",
-      "value": 0.014017064614919078,
+      "value": 0.048875106155599785,
       "module": "GRSMCKM.GR",
       "claim": "T4_triangle_side",
       "statement": "error_pct(R_b_triangle) < 0.5",
@@ -1714,7 +1714,7 @@
     {
       "id": "gr_R_b_triangle_meas_pos",
       "kind": "pos",
-      "value": 0.382602927328059,
+      "value": 0.3865593098089865,
       "module": "GRSMCKM.GR",
       "claim": "T4_triangle_side",
       "coq_id": "gr_R_b_triangle_meas_pos"
@@ -1722,7 +1722,7 @@
     {
       "id": "gr_R_t_triangle_err_under_half",
       "kind": "lt_half",
-      "value": 0.00036384895090004057,
+      "value": 0.023646850672565858,
       "module": "GRSMCKM.GR",
       "claim": "T4_triangle_side",
       "statement": "error_pct(R_t_triangle) < 0.5",
@@ -1731,7 +1731,7 @@
     {
       "id": "gr_R_t_triangle_meas_pos",
       "kind": "pos",
-      "value": 0.9101565799355624,
+      "value": 0.9117171162153312,
       "module": "GRSMCKM.GR",
       "claim": "T4_triangle_side",
       "coq_id": "gr_R_t_triangle_meas_pos"
@@ -1739,7 +1739,7 @@
     {
       "id": "gr_sin_delta_ckm_err_under_half",
       "kind": "lt_half",
-      "value": 0.002439404519026022,
+      "value": 0.008142970284056283,
       "module": "GRSMCKM.GR",
       "claim": "T4_ckm_phase",
       "statement": "error_pct(sin_delta_ckm) < 0.5",
@@ -1748,7 +1748,7 @@
     {
       "id": "gr_sin_delta_ckm_meas_pos",
       "kind": "pos",
-      "value": 0.93058220251172,
+      "value": 0.9115343723414107,
       "module": "GRSMCKM.GR",
       "claim": "T4_ckm_phase",
       "coq_id": "gr_sin_delta_ckm_meas_pos"
@@ -2088,7 +2088,7 @@
     {
       "id": "gr_alpha_rad_err_under_half",
       "kind": "lt_half",
-      "value": 0.0034382632792112626,
+      "value": 0.04909688136289182,
       "module": "GRSMCKM.GR",
       "claim": "T4_triangle_angle_alpha",
       "statement": "error_pct(alpha_rad) < 0.5",
@@ -2097,7 +2097,7 @@
     {
       "id": "gr_alpha_rad_meas_pos",
       "kind": "pos",
-      "value": 1.6070304610469615,
+      "value": 1.5982430233482232,
       "module": "GRSMCKM.GR",
       "claim": "T4_triangle_angle_alpha",
       "coq_id": "gr_alpha_rad_meas_pos"
@@ -2105,7 +2105,7 @@
     {
       "id": "gr_beta_rad_err_under_half",
       "kind": "lt_half",
-      "value": 0.014994707011088022,
+      "value": 0.05385778013441918,
       "module": "GRSMCKM.GR",
       "claim": "T4_triangle_angle_beta",
       "statement": "error_pct(beta_rad) < 0.5",
@@ -2114,7 +2114,7 @@
     {
       "id": "gr_beta_rad_meas_pos",
       "kind": "pos",
-      "value": 0.3923401442155158,
+      "value": 0.3967401060358461,
       "module": "GRSMCKM.GR",
       "claim": "T4_triangle_angle_beta",
       "coq_id": "gr_beta_rad_meas_pos"
@@ -2122,7 +2122,7 @@
     {
       "id": "gr_gamma_rad_err_under_half",
       "kind": "lt_half",
-      "value": 0.00031310172038841725,
+      "value": 0.049800045699593946,
       "module": "GRSMCKM.GR",
       "claim": "T4_triangle_angle_gamma",
       "statement": "error_pct(gamma_rad) < 0.5",
@@ -2131,7 +2131,7 @@
     {
       "id": "gr_gamma_rad_meas_pos",
       "kind": "pos",
-      "value": 1.1422220483273158,
+      "value": 1.1466095242057237,
       "module": "GRSMCKM.GR",
       "claim": "T4_triangle_angle_gamma",
       "coq_id": "gr_gamma_rad_meas_pos"
@@ -2139,7 +2139,7 @@
     {
       "id": "sm_lambda_ckm_err_under_half",
       "kind": "lt_half",
-      "value": 0.06648317372654539,
+      "value": 0.06203597212779205,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(lambda_ckm) < 0.5",
@@ -2157,7 +2157,7 @@
     {
       "id": "sm_rho_bar_err_under_half",
       "kind": "lt_half",
-      "value": 0.004811476065123823,
+      "value": 0.05804509934408681,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(rho_bar) < 0.5",
@@ -2166,7 +2166,7 @@
     {
       "id": "sm_eta_bar_err_under_half",
       "kind": "lt_half",
-      "value": 0.038316528380806465,
+      "value": 0.05017401991649093,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(eta_bar) < 0.5",
@@ -2175,7 +2175,7 @@
     {
       "id": "sm_Jarlskog_J_err_under_half",
       "kind": "lt_half",
-      "value": 0.24035678834077073,
+      "value": 0.21421096741502482,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(Jarlskog_J) < 0.5",
@@ -2184,7 +2184,7 @@
     {
       "id": "sm_delta_ckm_rad_err_under_half",
       "kind": "lt_half",
-      "value": 0.0032411336172532518,
+      "value": 0.0013363679820401644,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(delta_ckm_rad) < 0.5",
@@ -2202,7 +2202,7 @@
     {
       "id": "sm_V_us_err_under_half",
       "kind": "lt_half",
-      "value": 0.06648317372654539,
+      "value": 0.06203597212779205,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_us) < 0.5",
@@ -2211,7 +2211,7 @@
     {
       "id": "sm_V_ub_err_under_half",
       "kind": "lt_half",
-      "value": 0.3128398765779975,
+      "value": 0.2724163670754618,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_ub) < 0.5",
@@ -2220,7 +2220,7 @@
     {
       "id": "sm_V_cd_err_under_half",
       "kind": "lt_half",
-      "value": 0.12878552916691646,
+      "value": 0.124332788226418,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_cd) < 0.5",
@@ -2238,7 +2238,7 @@
     {
       "id": "sm_V_cb_err_under_half",
       "kind": "lt_half",
-      "value": 0.17604653957526104,
+      "value": 0.15209816603006943,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_cb) < 0.5",
@@ -2247,7 +2247,7 @@
     {
       "id": "sm_V_td_err_under_half",
       "kind": "lt_half",
-      "value": 0.16746091354807907,
+      "value": 0.24552622781795225,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_td) < 0.5",
@@ -2256,7 +2256,7 @@
     {
       "id": "sm_V_ts_err_under_half",
       "kind": "lt_half",
-      "value": 0.16900757375439615,
+      "value": 0.14464148093664253,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_emergent",
       "statement": "error_pct(V_ts) < 0.5",
@@ -2427,7 +2427,7 @@
     {
       "id": "sm_emergent_unitarity_row_u_err_under_half",
       "kind": "lt_half",
-      "value": 0.0013701426440082543,
+      "value": 0.001400381070371104,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_unitarity",
       "statement": "error_pct(emergent_unitarity_row_u) < 0.5",
@@ -2445,7 +2445,7 @@
     {
       "id": "sm_emergent_unitarity_row_t_err_under_half",
       "kind": "lt_half",
-      "value": 0.001431015241259992,
+      "value": 0.0014597402371530066,
       "module": "GRSMCKM.SM",
       "claim": "T4_complex_unitarity",
       "statement": "error_pct(emergent_unitarity_row_t) < 0.5",

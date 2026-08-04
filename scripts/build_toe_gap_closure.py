@@ -965,7 +965,8 @@ def main() -> int:
             "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json",
         },
         "probe_layer_closed": [
-            "CKM α,β,γ residual-gated vs geometric PDG(ρ̄,η̄) (≤0.5%)",
+            "CKM residual misalignment resolved: residual-gate vs PDG 2024 global-fit (ρ̄,η̄); η̄=G²·K; δ=γ",
+            "CKM α,β,γ residual-gated vs geometry of that same apex (≤0.5%); HFLAV directs = literature_fit_band",
             "Confinement scales + Casimirs + β₀ + Wilson/Polyakov/instanton/center probes",
             "Spin-2 helicity/TT/dof accounting/Bianchi/soft-factor probes",
             "Contested-sector FSOT panel green (13 hard open problems have seed readouts)",

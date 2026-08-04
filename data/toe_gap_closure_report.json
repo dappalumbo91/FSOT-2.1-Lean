@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T02:35:04.301325+00:00",
+  "generated_at": "2026-08-04T02:51:20.620378+00:00",
   "version": "2.0",
   "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md",
   "gap_closure_doc": "docs/TOE_GAP_CLOSURE.md",
@@ -28,12 +28,12 @@
         "artifact": "vendor/fsot_gr_sm.py + data/toe_force_package_manifest.json",
         "status": "force_package_v1",
         "sm_row_count": 40,
-        "gr_sm_median_error_pct": 0.0032411336172532518
+        "gr_sm_median_error_pct": 0.007456682224867657
       },
       "T5_prereg_freeze": {
         "pass": true,
         "artifact": "data/toe_prereg_freeze.json",
-        "bundle_sha256": "77d8e4f995bedc0d87d21c87cbb4d8f743a3433cfc4981c6bc057d63f2c75499"
+        "bundle_sha256": "307ec0b2e1706484260a5706e2ee5e67d3d2417745f57795745d8a4b702da0ef"
       },
       "T6_falsification": {
         "pass": true,
@@ -57,7 +57,8 @@
     "multi_prover_gr_sm_ckm": "verification/obligations/gr_sm_ckm_spine.json"
   },
   "probe_layer_closed": [
-    "CKM \u03b1,\u03b2,\u03b3 residual-gated vs geometric PDG(\u03c1\u0304,\u03b7\u0304) (\u22640.5%)",
+    "CKM residual misalignment resolved: residual-gate vs PDG 2024 global-fit (\u03c1\u0304,\u03b7\u0304); \u03b7\u0304=G\u00b2\u00b7K; \u03b4=\u03b3",
+    "CKM \u03b1,\u03b2,\u03b3 residual-gated vs geometry of that same apex (\u22640.5%); HFLAV directs = literature_fit_band",
     "Confinement scales + Casimirs + \u03b2\u2080 + Wilson/Polyakov/instanton/center probes",
     "Spin-2 helicity/TT/dof accounting/Bianchi/soft-factor probes",
     "Contested-sector FSOT panel green (13 hard open problems have seed readouts)",

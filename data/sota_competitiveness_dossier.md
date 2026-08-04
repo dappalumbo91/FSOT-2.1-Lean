@@ -1,6 +1,6 @@
 # FSOT Zero-Parameter Competitiveness Dossier
 
-Generated: 2026-08-04T02:35:10.033062+00:00
+Generated: 2026-08-04T02:51:00.544432+00:00
 
 ## Executive summary
 

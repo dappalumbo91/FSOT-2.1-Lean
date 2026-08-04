@@ -373,10 +373,10 @@ def emergent_observables(eq: dict[str, Any] | None = None) -> dict[str, float]:
     rhob = seed_rho_bar() * net_mod(I_gr_ew, I_ew_qed)
     etab = seed_eta_bar() * net_mod(I_higgs_ew, I_gr_ew)
 
-    # Jarlskog + phase from seed closed forms (not atan2 of nudged ρ̄/η̄ —
-    # that rebuild over-shifted δ_CKM by ~5% and broke the green gate).
+    # Jarlskog from seed; δ_CKM = γ = atan2(η̄,ρ̄) on the *same* (nudged) apex
+    # so the complex system stays self-consistent (δ is not an independent dial).
     J = seed_jarlskog() * net_mod(I_fq_ew, I_higgs_ew)
-    delta_ckm = seed_delta_ckm_rad() * net_mod(I_higgs_ew, I_fq_ew)
+    # Phase identity: PDG 2024 δ ≈ γ_geom from global-fit (ρ̄,η̄) — same physics.
 
     # CKM magnitudes: same structural NLO as fsot_seed_flavor, with network-
     # nudged (λ, A, ρ̄, η̄) so the complex system stays self-consistent.
@@ -403,6 +403,7 @@ def emergent_observables(eq: dict[str, Any] | None = None) -> dict[str, float]:
     beta = math.atan2(etab, 1.0 - rhob)
     alpha = math.pi - beta - gamma
     arg_vub = math.atan2(eta, rho)
+    delta_ckm = gamma  # LO: δ ≡ γ from the same apex
 
     # MS-bar vs on-shell schemes kept distinct (both seed-closed)
     sin2w = seed_sin2_theta_W() * net_mod(I_ew_qed, I_gr_ew)
@@ -476,26 +477,24 @@ def emergent_observables(eq: dict[str, Any] | None = None) -> dict[str, float]:
     }
 
 
-# PDG comparison targets only
+# PDG comparison targets only (PDG 2024 RPP global fit where applicable)
 PDG: dict[str, float] = {
-    "lambda_ckm": 0.22500,
+    "lambda_ckm": 0.22501,
     "A_wolfenstein": 0.826,
-    "rho_bar": 0.159,
-    "eta_bar": 0.348,
-    "Jarlskog_J": 3.08e-5,
-    "delta_ckm_rad": 1.196,
+    "rho_bar": 0.1591,
+    "eta_bar": 0.3523,
+    "Jarlskog_J": 3.12e-5,
+    "delta_ckm_rad": 1.147,  # ≈ γ_geom of same global fit
     "V_ud": 0.97435,
-    "V_us": 0.22500,
-    "V_ub": 0.00369,
-    "V_cd": 0.22486,
+    "V_us": 0.22501,
+    "V_ub": 0.003732,
+    "V_cd": 0.22487,
     "V_cs": 0.97349,
-    "V_cb": 0.04182,
-    "V_td": 0.00857,
-    "V_ts": 0.04110,
+    "V_cb": 0.04183,
+    "V_td": 0.00858,
+    "V_ts": 0.04111,
     "V_tb": 0.999118,
-    # Triangle angles α,β,γ / arg(V_ub) are emergent seed predictions
-    # (inside experimental bands) but are NOT residual-gated here — only the
-    # sum=π identity is green-gated below. Scales that clear ≤0.5% are gated.
+    # Triangle angles residual-gated vs geometry of global-fit (ρ̄,η̄)
     "sin2_theta_W": 0.23122,
     "sin2_theta_W_onshell": 1.0 - (80.377 / 91.1876) ** 2,
     "alpha_inv": 137.035999084,

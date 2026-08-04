@@ -11,13 +11,13 @@ namespace FSOT.Formal.GRSMCKM
 
 noncomputable section
 
-theorem lambda_ckm_err_under_half : (0.06648317372654539 : ℝ) < (0.5 : ℝ) := by
+theorem lambda_ckm_err_under_half : (0.06203597212779205 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem lambda_ckm_measured_pos : (0 : ℝ) < (0.225 : ℝ) := by
+theorem lambda_ckm_measured_pos : (0 : ℝ) < (0.22501 : ℝ) := by
   norm_num
 
-theorem lambda_ckm_abs_diff : (0.00014958714088472713 : ℝ) < (0.0001510830122945744 : ℝ) := by
+theorem lambda_ckm_abs_diff : (0.0001395871408847449 : ℝ) < (0.00014098301229459233 : ℝ) := by
   norm_num
 
 theorem A_wolfenstein_err_under_half : (0.0519504854624754 : ℝ) < (0.5 : ℝ) := by
@@ -29,40 +29,40 @@ theorem A_wolfenstein_measured_pos : (0 : ℝ) < (0.826 : ℝ) := by
 theorem A_wolfenstein_abs_diff : (0.0004291110099200468 : ℝ) < (0.0004334021200202473 : ℝ) := by
   norm_num
 
-theorem rho_bar_err_under_half : (0.004811476065123823 : ℝ) < (0.5 : ℝ) := by
+theorem rho_bar_err_under_half : (0.05804509934408681 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem rho_bar_measured_pos : (0 : ℝ) < (0.159 : ℝ) := by
+theorem rho_bar_measured_pos : (0 : ℝ) < (0.1591 : ℝ) := by
   norm_num
 
-theorem rho_bar_abs_diff : (7.650246943546879e-06 : ℝ) < (7.726749413982348e-06 : ℝ) := by
+theorem rho_bar_abs_diff : (9.234975305644211e-05 : ℝ) < (9.327325058800653e-05 : ℝ) := by
   norm_num
 
-theorem eta_bar_err_under_half : (0.038316528380806465 : ℝ) < (0.5 : ℝ) := by
+theorem eta_bar_err_under_half : (0.05017401991649093 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem eta_bar_measured_pos : (0 : ℝ) < (0.348 : ℝ) := by
+theorem eta_bar_measured_pos : (0 : ℝ) < (0.3523 : ℝ) := by
   norm_num
 
-theorem eta_bar_abs_diff : (0.0001333415187652065 : ℝ) < (0.00013467493395385855 : ℝ) := by
+theorem eta_bar_abs_diff : (0.00017676307216579756 : ℝ) < (0.00017853070288845551 : ℝ) := by
   norm_num
 
-theorem Jarlskog_J_err_under_half : (0.24035678834077073 : ℝ) < (0.5 : ℝ) := by
+theorem Jarlskog_J_err_under_half : (0.21421096741502482 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem Jarlskog_J_measured_pos : (0 : ℝ) < (3.08e-05 : ℝ) := by
+theorem Jarlskog_J_measured_pos : (0 : ℝ) < (3.12e-05 : ℝ) := by
   norm_num
 
-theorem Jarlskog_J_abs_diff : (7.402989080895739e-08 : ℝ) < (7.477019071704697e-08 : ℝ) := by
+theorem Jarlskog_J_abs_diff : (6.683382183348774e-08 : ℝ) < (6.750216105182262e-08 : ℝ) := by
   norm_num
 
-theorem delta_ckm_rad_err_under_half : (0.0032411336172532518 : ℝ) < (0.5 : ℝ) := by
+theorem delta_ckm_rad_err_under_half : (0.0013363679820401644 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem delta_ckm_rad_measured_pos : (0 : ℝ) < (1.196 : ℝ) := by
+theorem delta_ckm_rad_measured_pos : (0 : ℝ) < (1.147 : ℝ) := by
   norm_num
 
-theorem delta_ckm_rad_abs_diff : (3.876395806234889e-05 : ℝ) < (3.915159764397238e-05 : ℝ) := by
+theorem delta_ckm_rad_abs_diff : (1.5328140754000685e-05 : ℝ) < (1.5481422162540694e-05 : ℝ) := by
   norm_num
 
 theorem V_ud_err_under_half : (0.0026470393155981903 : ℝ) < (0.5 : ℝ) := by
@@ -74,31 +74,31 @@ theorem V_ud_measured_pos : (0 : ℝ) < (0.97435 : ℝ) := by
 theorem V_ud_abs_diff : (2.5791427571530967e-05 : ℝ) < (2.6049341848246278e-05 : ℝ) := by
   norm_num
 
-theorem V_us_err_under_half : (0.06648317372654539 : ℝ) < (0.5 : ℝ) := by
+theorem V_us_err_under_half : (0.06203597212779205 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem V_us_measured_pos : (0 : ℝ) < (0.225 : ℝ) := by
+theorem V_us_measured_pos : (0 : ℝ) < (0.22501 : ℝ) := by
   norm_num
 
-theorem V_us_abs_diff : (0.00014958714088472713 : ℝ) < (0.0001510830122945744 : ℝ) := by
+theorem V_us_abs_diff : (0.0001395871408847449 : ℝ) < (0.00014098301229459233 : ℝ) := by
   norm_num
 
-theorem V_ub_err_under_half : (0.3128398765779975 : ℝ) < (0.5 : ℝ) := by
+theorem V_ub_err_under_half : (0.2724163670754618 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem V_ub_measured_pos : (0 : ℝ) < (0.00369 : ℝ) := by
+theorem V_ub_measured_pos : (0 : ℝ) < (0.003732 : ℝ) := by
   norm_num
 
-theorem V_ub_abs_diff : (1.1543791445728108e-05 : ℝ) < (1.165922936118539e-05 : ℝ) := by
+theorem V_ub_abs_diff : (1.0166578819256235e-05 : ℝ) < (1.0268244608448797e-05 : ℝ) := by
   norm_num
 
-theorem V_cd_err_under_half : (0.12878552916691646 : ℝ) < (0.5 : ℝ) := by
+theorem V_cd_err_under_half : (0.124332788226418 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem V_cd_measured_pos : (0 : ℝ) < (0.22486 : ℝ) := by
+theorem V_cd_measured_pos : (0 : ℝ) < (0.22487 : ℝ) := by
   norm_num
 
-theorem V_cd_abs_diff : (0.00028958714088472837 : ℝ) < (0.0002924830122945757 : ℝ) := by
+theorem V_cd_abs_diff : (0.0002795871408847461 : ℝ) < (0.0002823830122945936 : ℝ) := by
   norm_num
 
 theorem V_cs_err_under_half : (0.08569256719930887 : ℝ) < (0.5 : ℝ) := by
@@ -110,31 +110,31 @@ theorem V_cs_measured_pos : (0 : ℝ) < (0.97349 : ℝ) := by
 theorem V_cs_abs_diff : (0.000834208572428552 : ℝ) < (0.0008425506581538375 : ℝ) := by
   norm_num
 
-theorem V_cb_err_under_half : (0.17604653957526104 : ℝ) < (0.5 : ℝ) := by
+theorem V_cb_err_under_half : (0.15209816603006943 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem V_cb_measured_pos : (0 : ℝ) < (0.04182 : ℝ) := by
+theorem V_cb_measured_pos : (0 : ℝ) < (0.04183 : ℝ) := by
   norm_num
 
-theorem V_cb_abs_diff : (7.362266285037417e-05 : ℝ) < (7.43588894798779e-05 : ℝ) := by
+theorem V_cb_abs_diff : (6.362266285037804e-05 : ℝ) < (6.425888947988182e-05 : ℝ) := by
   norm_num
 
-theorem V_td_err_under_half : (0.16746091354807907 : ℝ) < (0.5 : ℝ) := by
+theorem V_td_err_under_half : (0.24552622781795225 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem V_td_measured_pos : (0 : ℝ) < (0.00857 : ℝ) := by
+theorem V_td_measured_pos : (0 : ℝ) < (0.00858 : ℝ) := by
   norm_num
 
-theorem V_td_abs_diff : (1.4351400291070376e-05 : ℝ) < (1.4494914294981081e-05 : ℝ) := by
+theorem V_td_abs_diff : (2.1066150346780305e-05 : ℝ) < (2.1276811851248108e-05 : ℝ) := by
   norm_num
 
-theorem V_ts_err_under_half : (0.16900757375439615 : ℝ) < (0.5 : ℝ) := by
+theorem V_ts_err_under_half : (0.14464148093664253 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem V_ts_measured_pos : (0 : ℝ) < (0.0411 : ℝ) := by
+theorem V_ts_measured_pos : (0 : ℝ) < (0.04111 : ℝ) := by
   norm_num
 
-theorem V_ts_abs_diff : (6.946211281305681e-05 : ℝ) < (7.015673394218738e-05 : ℝ) := by
+theorem V_ts_abs_diff : (5.946211281305375e-05 : ℝ) < (6.0056733942184286e-05 : ℝ) := by
   norm_num
 
 theorem V_tb_err_under_half : (0.0004466129217395198 : ℝ) < (0.5 : ℝ) := by
@@ -299,13 +299,13 @@ theorem dm2_31_abs_measured_pos : (0 : ℝ) < (0.002453 : ℝ) := by
 theorem dm2_31_abs_abs_diff : (1.035133637848672e-05 : ℝ) < (1.0454849743271588e-05 : ℝ) := by
   norm_num
 
-theorem emergent_unitarity_row_u_err_under_half : (0.0013701426440082543 : ℝ) < (0.5 : ℝ) := by
+theorem emergent_unitarity_row_u_err_under_half : (0.001400381070371104 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem emergent_unitarity_row_u_measured_pos : (0 : ℝ) < (1.0 : ℝ) := by
   norm_num
 
-theorem emergent_unitarity_row_u_abs_diff : (1.3701426440082543e-05 : ℝ) < (1.3838440705483368e-05 : ℝ) := by
+theorem emergent_unitarity_row_u_abs_diff : (1.400381070371104e-05 : ℝ) < (1.414384881174815e-05 : ℝ) := by
   norm_num
 
 theorem emergent_unitarity_row_c_err_under_half : (0.1755075619817248 : ℝ) < (0.5 : ℝ) := by
@@ -317,13 +317,13 @@ theorem emergent_unitarity_row_c_measured_pos : (0 : ℝ) < (1.0 : ℝ) := by
 theorem emergent_unitarity_row_c_abs_diff : (0.001755075619817248 : ℝ) < (0.0017726263760164205 : ℝ) := by
   norm_num
 
-theorem emergent_unitarity_row_t_err_under_half : (0.001431015241259992 : ℝ) < (0.5 : ℝ) := by
+theorem emergent_unitarity_row_t_err_under_half : (0.0014597402371530066 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem emergent_unitarity_row_t_measured_pos : (0 : ℝ) < (1.0 : ℝ) := by
   norm_num
 
-theorem emergent_unitarity_row_t_abs_diff : (1.4310152412599919e-05 : ℝ) < (1.445325393772592e-05 : ℝ) := by
+theorem emergent_unitarity_row_t_abs_diff : (1.4597402371530066e-05 : ℝ) < (1.4743376396245366e-05 : ℝ) := by
   norm_num
 
 theorem triangle_angle_sum_pi_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
@@ -371,13 +371,13 @@ theorem edge_count_measured_pos : (0 : ℝ) < (15.0 : ℝ) := by
 theorem edge_count_abs_diff : (0.0 : ℝ) < (1e-09 : ℝ) := by
   norm_num
 
-theorem emergent_unitarity_row_u_unitarity_tight : (1.3701426440082543e-05 : ℝ) < (0.05 : ℝ) := by
+theorem emergent_unitarity_row_u_unitarity_tight : (1.400381070371104e-05 : ℝ) < (0.05 : ℝ) := by
   norm_num
 
 theorem emergent_unitarity_row_c_unitarity_tight : (0.001755075619817248 : ℝ) < (0.05 : ℝ) := by
   norm_num
 
-theorem emergent_unitarity_row_t_unitarity_tight : (1.4310152412599919e-05 : ℝ) < (0.05 : ℝ) := by
+theorem emergent_unitarity_row_t_unitarity_tight : (1.4597402371530066e-05 : ℝ) < (0.05 : ℝ) := by
   norm_num
 
 theorem gauge_n_U1_eq : (1 : ℕ) = (1 : ℕ) := by
@@ -569,22 +569,22 @@ theorem gr_neutrino_m3_over_m2_err_under_half : (0.1724795983521893 : ℝ) < (0.
 theorem gr_neutrino_m3_over_m2_meas_pos : (0 : ℝ) < (5.707570518336111 : ℝ) := by
   norm_num
 
-theorem gr_R_b_triangle_err_under_half : (0.014017064614919078 : ℝ) < (0.5 : ℝ) := by
+theorem gr_R_b_triangle_err_under_half : (0.048875106155599785 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem gr_R_b_triangle_meas_pos : (0 : ℝ) < (0.382602927328059 : ℝ) := by
+theorem gr_R_b_triangle_meas_pos : (0 : ℝ) < (0.3865593098089865 : ℝ) := by
   norm_num
 
-theorem gr_R_t_triangle_err_under_half : (0.00036384895090004057 : ℝ) < (0.5 : ℝ) := by
+theorem gr_R_t_triangle_err_under_half : (0.023646850672565858 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem gr_R_t_triangle_meas_pos : (0 : ℝ) < (0.9101565799355624 : ℝ) := by
+theorem gr_R_t_triangle_meas_pos : (0 : ℝ) < (0.9117171162153312 : ℝ) := by
   norm_num
 
-theorem gr_sin_delta_ckm_err_under_half : (0.002439404519026022 : ℝ) < (0.5 : ℝ) := by
+theorem gr_sin_delta_ckm_err_under_half : (0.008142970284056283 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem gr_sin_delta_ckm_meas_pos : (0 : ℝ) < (0.93058220251172 : ℝ) := by
+theorem gr_sin_delta_ckm_meas_pos : (0 : ℝ) < (0.9115343723414107 : ℝ) := by
   norm_num
 
 theorem gr_spin2_massless_helicities_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
@@ -704,64 +704,64 @@ theorem gr_triangle_angle_sum_pi_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := b
 theorem gr_triangle_angle_sum_pi_meas_pos : (0 : ℝ) < (3.141592653589793 : ℝ) := by
   norm_num
 
-theorem gr_alpha_rad_err_under_half : (0.0034382632792112626 : ℝ) < (0.5 : ℝ) := by
+theorem gr_alpha_rad_err_under_half : (0.04909688136289182 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem gr_alpha_rad_meas_pos : (0 : ℝ) < (1.6070304610469615 : ℝ) := by
+theorem gr_alpha_rad_meas_pos : (0 : ℝ) < (1.5982430233482232 : ℝ) := by
   norm_num
 
-theorem gr_beta_rad_err_under_half : (0.014994707011088022 : ℝ) < (0.5 : ℝ) := by
+theorem gr_beta_rad_err_under_half : (0.05385778013441918 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem gr_beta_rad_meas_pos : (0 : ℝ) < (0.3923401442155158 : ℝ) := by
+theorem gr_beta_rad_meas_pos : (0 : ℝ) < (0.3967401060358461 : ℝ) := by
   norm_num
 
-theorem gr_gamma_rad_err_under_half : (0.00031310172038841725 : ℝ) < (0.5 : ℝ) := by
+theorem gr_gamma_rad_err_under_half : (0.049800045699593946 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem gr_gamma_rad_meas_pos : (0 : ℝ) < (1.1422220483273158 : ℝ) := by
+theorem gr_gamma_rad_meas_pos : (0 : ℝ) < (1.1466095242057237 : ℝ) := by
   norm_num
 
-theorem sm_lambda_ckm_err_under_half : (0.06648317372654539 : ℝ) < (0.5 : ℝ) := by
+theorem sm_lambda_ckm_err_under_half : (0.06203597212779205 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_A_wolfenstein_err_under_half : (0.0519504854624754 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_rho_bar_err_under_half : (0.004811476065123823 : ℝ) < (0.5 : ℝ) := by
+theorem sm_rho_bar_err_under_half : (0.05804509934408681 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_eta_bar_err_under_half : (0.038316528380806465 : ℝ) < (0.5 : ℝ) := by
+theorem sm_eta_bar_err_under_half : (0.05017401991649093 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_Jarlskog_J_err_under_half : (0.24035678834077073 : ℝ) < (0.5 : ℝ) := by
+theorem sm_Jarlskog_J_err_under_half : (0.21421096741502482 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_delta_ckm_rad_err_under_half : (0.0032411336172532518 : ℝ) < (0.5 : ℝ) := by
+theorem sm_delta_ckm_rad_err_under_half : (0.0013363679820401644 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_V_ud_err_under_half : (0.0026470393155981903 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_V_us_err_under_half : (0.06648317372654539 : ℝ) < (0.5 : ℝ) := by
+theorem sm_V_us_err_under_half : (0.06203597212779205 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_V_ub_err_under_half : (0.3128398765779975 : ℝ) < (0.5 : ℝ) := by
+theorem sm_V_ub_err_under_half : (0.2724163670754618 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_V_cd_err_under_half : (0.12878552916691646 : ℝ) < (0.5 : ℝ) := by
+theorem sm_V_cd_err_under_half : (0.124332788226418 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_V_cs_err_under_half : (0.08569256719930887 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_V_cb_err_under_half : (0.17604653957526104 : ℝ) < (0.5 : ℝ) := by
+theorem sm_V_cb_err_under_half : (0.15209816603006943 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_V_td_err_under_half : (0.16746091354807907 : ℝ) < (0.5 : ℝ) := by
+theorem sm_V_td_err_under_half : (0.24552622781795225 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_V_ts_err_under_half : (0.16900757375439615 : ℝ) < (0.5 : ℝ) := by
+theorem sm_V_ts_err_under_half : (0.14464148093664253 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_V_tb_err_under_half : (0.0004466129217395198 : ℝ) < (0.5 : ℝ) := by
@@ -818,13 +818,13 @@ theorem sm_dm2_21_err_under_half : (0.06394145338205008 : ℝ) < (0.5 : ℝ) := 
 theorem sm_dm2_31_abs_err_under_half : (0.4219868071131969 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_emergent_unitarity_row_u_err_under_half : (0.0013701426440082543 : ℝ) < (0.5 : ℝ) := by
+theorem sm_emergent_unitarity_row_u_err_under_half : (0.001400381070371104 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_emergent_unitarity_row_c_err_under_half : (0.1755075619817248 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem sm_emergent_unitarity_row_t_err_under_half : (0.001431015241259992 : ℝ) < (0.5 : ℝ) := by
+theorem sm_emergent_unitarity_row_t_err_under_half : (0.0014597402371530066 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sm_triangle_angle_sum_pi_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by

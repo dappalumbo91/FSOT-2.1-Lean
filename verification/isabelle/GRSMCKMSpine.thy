@@ -4,13 +4,13 @@ begin
 
 (* FSOT GR/SM/CKM/PMNS spine — multi-prover residual/structure certificates. *)
 
-lemma lambda_ckm_err_under_half: "0.06648317372654539 < (0.5::real)"
+lemma lambda_ckm_err_under_half: "0.06203597212779205 < (0.5::real)"
   by simp
 
-lemma lambda_ckm_measured_pos: "(0::real) < 0.225"
+lemma lambda_ckm_measured_pos: "(0::real) < 0.22501"
   by simp
 
-lemma lambda_ckm_abs_diff: "0.0001495871 < 0.000151083"
+lemma lambda_ckm_abs_diff: "0.0001395871 < 0.000140983"
   by simp
 
 lemma A_wolfenstein_err_under_half: "0.0519504854624754 < (0.5::real)"
@@ -22,40 +22,40 @@ lemma A_wolfenstein_measured_pos: "(0::real) < 0.826"
 lemma A_wolfenstein_abs_diff: "0.000429111 < 0.0004334021"
   by simp
 
-lemma rho_bar_err_under_half: "0.004811476065123823 < (0.5::real)"
+lemma rho_bar_err_under_half: "0.05804509934408681 < (0.5::real)"
   by simp
 
-lemma rho_bar_measured_pos: "(0::real) < 0.159"
+lemma rho_bar_measured_pos: "(0::real) < 0.1591"
   by simp
 
-lemma rho_bar_abs_diff: "0.000007650247 < 0.000007726749"
+lemma rho_bar_abs_diff: "0.00009234975 < 0.00009327325"
   by simp
 
-lemma eta_bar_err_under_half: "0.038316528380806465 < (0.5::real)"
+lemma eta_bar_err_under_half: "0.05017401991649093 < (0.5::real)"
   by simp
 
-lemma eta_bar_measured_pos: "(0::real) < 0.348"
+lemma eta_bar_measured_pos: "(0::real) < 0.3523"
   by simp
 
-lemma eta_bar_abs_diff: "0.0001333415 < 0.0001346749"
+lemma eta_bar_abs_diff: "0.0001767631 < 0.0001785307"
   by simp
 
-lemma Jarlskog_J_err_under_half: "0.24035678834077073 < (0.5::real)"
+lemma Jarlskog_J_err_under_half: "0.21421096741502482 < (0.5::real)"
   by simp
 
-lemma Jarlskog_J_measured_pos: "(0::real) < 0.0000308"
+lemma Jarlskog_J_measured_pos: "(0::real) < 0.0000312"
   by simp
 
-lemma Jarlskog_J_abs_diff: "0.00000007402989 < 0.00000007477019"
+lemma Jarlskog_J_abs_diff: "0.00000006683382 < 0.00000006750216"
   by simp
 
-lemma delta_ckm_rad_err_under_half: "0.0032411336172532518 < (0.5::real)"
+lemma delta_ckm_rad_err_under_half: "0.0013363679820401644 < (0.5::real)"
   by simp
 
-lemma delta_ckm_rad_measured_pos: "(0::real) < 1.196"
+lemma delta_ckm_rad_measured_pos: "(0::real) < 1.147"
   by simp
 
-lemma delta_ckm_rad_abs_diff: "0.00003876396 < 0.0000391516"
+lemma delta_ckm_rad_abs_diff: "0.00001532814 < 0.00001548142"
   by simp
 
 lemma V_ud_err_under_half: "0.0026470393155981903 < (0.5::real)"
@@ -67,31 +67,31 @@ lemma V_ud_measured_pos: "(0::real) < 0.97435"
 lemma V_ud_abs_diff: "0.00002579143 < 0.00002604934"
   by simp
 
-lemma V_us_err_under_half: "0.06648317372654539 < (0.5::real)"
+lemma V_us_err_under_half: "0.06203597212779205 < (0.5::real)"
   by simp
 
-lemma V_us_measured_pos: "(0::real) < 0.225"
+lemma V_us_measured_pos: "(0::real) < 0.22501"
   by simp
 
-lemma V_us_abs_diff: "0.0001495871 < 0.000151083"
+lemma V_us_abs_diff: "0.0001395871 < 0.000140983"
   by simp
 
-lemma V_ub_err_under_half: "0.3128398765779975 < (0.5::real)"
+lemma V_ub_err_under_half: "0.2724163670754618 < (0.5::real)"
   by simp
 
-lemma V_ub_measured_pos: "(0::real) < 0.00369"
+lemma V_ub_measured_pos: "(0::real) < 0.003732"
   by simp
 
-lemma V_ub_abs_diff: "0.00001154379 < 0.00001165923"
+lemma V_ub_abs_diff: "0.00001016658 < 0.00001026824"
   by simp
 
-lemma V_cd_err_under_half: "0.12878552916691646 < (0.5::real)"
+lemma V_cd_err_under_half: "0.124332788226418 < (0.5::real)"
   by simp
 
-lemma V_cd_measured_pos: "(0::real) < 0.22486"
+lemma V_cd_measured_pos: "(0::real) < 0.22487"
   by simp
 
-lemma V_cd_abs_diff: "0.0002895871 < 0.000292483"
+lemma V_cd_abs_diff: "0.0002795871 < 0.000282383"
   by simp
 
 lemma V_cs_err_under_half: "0.08569256719930887 < (0.5::real)"
@@ -103,31 +103,31 @@ lemma V_cs_measured_pos: "(0::real) < 0.97349"
 lemma V_cs_abs_diff: "0.0008342086 < 0.0008425507"
   by simp
 
-lemma V_cb_err_under_half: "0.17604653957526104 < (0.5::real)"
+lemma V_cb_err_under_half: "0.15209816603006943 < (0.5::real)"
   by simp
 
-lemma V_cb_measured_pos: "(0::real) < 0.04182"
+lemma V_cb_measured_pos: "(0::real) < 0.04183"
   by simp
 
-lemma V_cb_abs_diff: "0.00007362266 < 0.00007435889"
+lemma V_cb_abs_diff: "0.00006362266 < 0.00006425889"
   by simp
 
-lemma V_td_err_under_half: "0.16746091354807907 < (0.5::real)"
+lemma V_td_err_under_half: "0.24552622781795225 < (0.5::real)"
   by simp
 
-lemma V_td_measured_pos: "(0::real) < 0.00857"
+lemma V_td_measured_pos: "(0::real) < 0.00858"
   by simp
 
-lemma V_td_abs_diff: "0.0000143514 < 0.00001449491"
+lemma V_td_abs_diff: "0.00002106615 < 0.00002127681"
   by simp
 
-lemma V_ts_err_under_half: "0.16900757375439615 < (0.5::real)"
+lemma V_ts_err_under_half: "0.14464148093664253 < (0.5::real)"
   by simp
 
-lemma V_ts_measured_pos: "(0::real) < 0.0411"
+lemma V_ts_measured_pos: "(0::real) < 0.04111"
   by simp
 
-lemma V_ts_abs_diff: "0.00006946211 < 0.00007015673"
+lemma V_ts_abs_diff: "0.00005946211 < 0.00006005673"
   by simp
 
 lemma V_tb_err_under_half: "0.0004466129 < (0.5::real)"
@@ -292,13 +292,13 @@ lemma dm2_31_abs_measured_pos: "(0::real) < 0.002453"
 lemma dm2_31_abs_abs_diff: "0.00001035134 < 0.00001045485"
   by simp
 
-lemma emergent_unitarity_row_u_err_under_half: "0.0013701426440082543 < (0.5::real)"
+lemma emergent_unitarity_row_u_err_under_half: "0.001400381070371104 < (0.5::real)"
   by simp
 
 lemma emergent_unitarity_row_u_measured_pos: "(0::real) < 1.0"
   by simp
 
-lemma emergent_unitarity_row_u_abs_diff: "0.00001370143 < 0.00001383844"
+lemma emergent_unitarity_row_u_abs_diff: "0.00001400381 < 0.00001414385"
   by simp
 
 lemma emergent_unitarity_row_c_err_under_half: "0.1755075619817248 < (0.5::real)"
@@ -310,13 +310,13 @@ lemma emergent_unitarity_row_c_measured_pos: "(0::real) < 1.0"
 lemma emergent_unitarity_row_c_abs_diff: "0.001755075619817248 < 0.0017726263760164205"
   by simp
 
-lemma emergent_unitarity_row_t_err_under_half: "0.001431015241259992 < (0.5::real)"
+lemma emergent_unitarity_row_t_err_under_half: "0.0014597402371530066 < (0.5::real)"
   by simp
 
 lemma emergent_unitarity_row_t_measured_pos: "(0::real) < 1.0"
   by simp
 
-lemma emergent_unitarity_row_t_abs_diff: "0.00001431015 < 0.00001445325"
+lemma emergent_unitarity_row_t_abs_diff: "0.0000145974 < 0.00001474338"
   by simp
 
 lemma triangle_angle_sum_pi_err_under_half: "0 < (0.5::real)"
@@ -364,13 +364,13 @@ lemma edge_count_measured_pos: "(0::real) < 15.0"
 lemma edge_count_abs_diff: "0 < 0.000000001"
   by simp
 
-lemma emergent_unitarity_row_u_unitarity_tight: "0.00001370143 < 0.05"
+lemma emergent_unitarity_row_u_unitarity_tight: "0.00001400381 < 0.05"
   by simp
 
 lemma emergent_unitarity_row_c_unitarity_tight: "0.001755075619817248 < 0.05"
   by simp
 
-lemma emergent_unitarity_row_t_unitarity_tight: "0.00001431015 < 0.05"
+lemma emergent_unitarity_row_t_unitarity_tight: "0.0000145974 < 0.05"
   by simp
 
 lemma gauge_n_U1_eq: "(1::nat) = 1"
@@ -562,22 +562,22 @@ lemma gr_neutrino_m3_over_m2_err_under_half: "0.1724795983521893 < (0.5::real)"
 lemma gr_neutrino_m3_over_m2_meas_pos: "(0::real) < 5.707570518336111"
   by simp
 
-lemma gr_R_b_triangle_err_under_half: "0.014017064614919078 < (0.5::real)"
+lemma gr_R_b_triangle_err_under_half: "0.048875106155599785 < (0.5::real)"
   by simp
 
-lemma gr_R_b_triangle_meas_pos: "(0::real) < 0.382602927328059"
+lemma gr_R_b_triangle_meas_pos: "(0::real) < 0.3865593098089865"
   by simp
 
-lemma gr_R_t_triangle_err_under_half: "0.000363849 < (0.5::real)"
+lemma gr_R_t_triangle_err_under_half: "0.023646850672565858 < (0.5::real)"
   by simp
 
-lemma gr_R_t_triangle_meas_pos: "(0::real) < 0.9101565799355624"
+lemma gr_R_t_triangle_meas_pos: "(0::real) < 0.9117171162153312"
   by simp
 
-lemma gr_sin_delta_ckm_err_under_half: "0.002439404519026022 < (0.5::real)"
+lemma gr_sin_delta_ckm_err_under_half: "0.008142970284056283 < (0.5::real)"
   by simp
 
-lemma gr_sin_delta_ckm_meas_pos: "(0::real) < 0.93058220251172"
+lemma gr_sin_delta_ckm_meas_pos: "(0::real) < 0.9115343723414107"
   by simp
 
 lemma gr_spin2_massless_helicities_err_under_half: "0 < (0.5::real)"
@@ -697,64 +697,64 @@ lemma gr_triangle_angle_sum_pi_err_under_half: "0 < (0.5::real)"
 lemma gr_triangle_angle_sum_pi_meas_pos: "(0::real) < 3.141592653589793"
   by simp
 
-lemma gr_alpha_rad_err_under_half: "0.0034382632792112626 < (0.5::real)"
+lemma gr_alpha_rad_err_under_half: "0.04909688136289182 < (0.5::real)"
   by simp
 
-lemma gr_alpha_rad_meas_pos: "(0::real) < 1.6070304610469615"
+lemma gr_alpha_rad_meas_pos: "(0::real) < 1.5982430233482232"
   by simp
 
-lemma gr_beta_rad_err_under_half: "0.014994707011088022 < (0.5::real)"
+lemma gr_beta_rad_err_under_half: "0.05385778013441918 < (0.5::real)"
   by simp
 
-lemma gr_beta_rad_meas_pos: "(0::real) < 0.3923401442155158"
+lemma gr_beta_rad_meas_pos: "(0::real) < 0.3967401060358461"
   by simp
 
-lemma gr_gamma_rad_err_under_half: "0.0003131017 < (0.5::real)"
+lemma gr_gamma_rad_err_under_half: "0.049800045699593946 < (0.5::real)"
   by simp
 
-lemma gr_gamma_rad_meas_pos: "(0::real) < 1.1422220483273158"
+lemma gr_gamma_rad_meas_pos: "(0::real) < 1.1466095242057237"
   by simp
 
-lemma sm_lambda_ckm_err_under_half: "0.06648317372654539 < (0.5::real)"
+lemma sm_lambda_ckm_err_under_half: "0.06203597212779205 < (0.5::real)"
   by simp
 
 lemma sm_A_wolfenstein_err_under_half: "0.0519504854624754 < (0.5::real)"
   by simp
 
-lemma sm_rho_bar_err_under_half: "0.004811476065123823 < (0.5::real)"
+lemma sm_rho_bar_err_under_half: "0.05804509934408681 < (0.5::real)"
   by simp
 
-lemma sm_eta_bar_err_under_half: "0.038316528380806465 < (0.5::real)"
+lemma sm_eta_bar_err_under_half: "0.05017401991649093 < (0.5::real)"
   by simp
 
-lemma sm_Jarlskog_J_err_under_half: "0.24035678834077073 < (0.5::real)"
+lemma sm_Jarlskog_J_err_under_half: "0.21421096741502482 < (0.5::real)"
   by simp
 
-lemma sm_delta_ckm_rad_err_under_half: "0.0032411336172532518 < (0.5::real)"
+lemma sm_delta_ckm_rad_err_under_half: "0.0013363679820401644 < (0.5::real)"
   by simp
 
 lemma sm_V_ud_err_under_half: "0.0026470393155981903 < (0.5::real)"
   by simp
 
-lemma sm_V_us_err_under_half: "0.06648317372654539 < (0.5::real)"
+lemma sm_V_us_err_under_half: "0.06203597212779205 < (0.5::real)"
   by simp
 
-lemma sm_V_ub_err_under_half: "0.3128398765779975 < (0.5::real)"
+lemma sm_V_ub_err_under_half: "0.2724163670754618 < (0.5::real)"
   by simp
 
-lemma sm_V_cd_err_under_half: "0.12878552916691646 < (0.5::real)"
+lemma sm_V_cd_err_under_half: "0.124332788226418 < (0.5::real)"
   by simp
 
 lemma sm_V_cs_err_under_half: "0.08569256719930887 < (0.5::real)"
   by simp
 
-lemma sm_V_cb_err_under_half: "0.17604653957526104 < (0.5::real)"
+lemma sm_V_cb_err_under_half: "0.15209816603006943 < (0.5::real)"
   by simp
 
-lemma sm_V_td_err_under_half: "0.16746091354807907 < (0.5::real)"
+lemma sm_V_td_err_under_half: "0.24552622781795225 < (0.5::real)"
   by simp
 
-lemma sm_V_ts_err_under_half: "0.16900757375439615 < (0.5::real)"
+lemma sm_V_ts_err_under_half: "0.14464148093664253 < (0.5::real)"
   by simp
 
 lemma sm_V_tb_err_under_half: "0.0004466129 < (0.5::real)"
@@ -811,13 +811,13 @@ lemma sm_dm2_21_err_under_half: "0.06394145338205008 < (0.5::real)"
 lemma sm_dm2_31_abs_err_under_half: "0.4219868071131969 < (0.5::real)"
   by simp
 
-lemma sm_emergent_unitarity_row_u_err_under_half: "0.0013701426440082543 < (0.5::real)"
+lemma sm_emergent_unitarity_row_u_err_under_half: "0.001400381070371104 < (0.5::real)"
   by simp
 
 lemma sm_emergent_unitarity_row_c_err_under_half: "0.1755075619817248 < (0.5::real)"
   by simp
 
-lemma sm_emergent_unitarity_row_t_err_under_half: "0.001431015241259992 < (0.5::real)"
+lemma sm_emergent_unitarity_row_t_err_under_half: "0.0014597402371530066 < (0.5::real)"
   by simp
 
 lemma sm_triangle_angle_sum_pi_err_under_half: "0 < (0.5::real)"

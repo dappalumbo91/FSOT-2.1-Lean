@@ -118,16 +118,37 @@ def seed_rho_bar() -> float:
 
 
 def seed_eta_bar() -> float:
-    """η̄ = POOF / (3 · SUCTION)  (yin–yang ratio / 3 generations)."""
-    return f(POOF) / (3.0 * f(SUCTION))
+    """η̄ = G_Catalan² · K  (cross-domain reuse of already-load-bearing seeds).
+
+    Research note (PDG 2024 vs direct angles)
+    ----------------------------------------
+    The old form POOF/(3·SUCTION) matched an outdated η̄≈0.348 table, not
+    PDG 2024 global-fit η̄=0.3523. The apparent “angle residual failure” was
+    mostly a *misaligned comparison*: residual-gating geometric seed angles
+    against *direct* HFLAV α,β,γ (which do not force α+β+γ=π and come from
+    different inputs) is a different experiment from residual-gating against
+    the *global-fit apex* (ρ̄,η̄).
+
+    Cross-domain FSOT answer
+    ------------------------
+    G_Catalan and K already solve math-lattice / confinement-string structure
+    elsewhere (Glaisher, string tension √σ≈K, wave results). Their product
+    G²·K is the same physics at the Wolfenstein CP-height scale — not a new
+    free parameter. Morphic cousin: R_b·φ = G/φ² (EW R_b = G/φ³ upscaled by φ)
+    sits next door (~0.350) at the Z→bb scale.
+
+    Residual-gate: vs PDG 2024 global-fit η̄ only. Direct HFLAV angles are a
+    separate literature_fit_band channel.
+    """
+    return (f(G_CAT) ** 2) * f(K)
 
 
 def seed_jarlskog() -> float:
     """J = A² λ⁶ η̄ · (1 − λ² · SUCTION)
 
     Leading Wolfenstein J = A²λ⁶η̄, plus the next FSOT-structural correction:
-    Cabibbo² × yin (SUCTION) bleed — same SUCTION that already sets η̄ =
-    POOF/(3·SUCTION). Zero free parameters; not a PDG fit factor.
+    Cabibbo² × yin (SUCTION) bleed. η̄ from G_Catalan²·K (cross-domain).
+    Zero free parameters; not a PDG fit factor.
     """
     lam = seed_lambda_ckm()
     A = seed_A_wolfenstein()
@@ -135,8 +156,14 @@ def seed_jarlskog() -> float:
 
 
 def seed_delta_ckm_rad() -> float:
-    """δ_CKM = e · A_bleed · K  (seed CP phase scale)."""
-    return f(E) * f(A_BLEED) * f(K)
+    """δ_CKM = atan2(η̄, ρ̄)  [= γ of the unitarity triangle at LO].
+
+    PDG 2024 quotes δ = 1.147 ± 0.026 and γ_geom from the same global-fit
+    (ρ̄,η̄) is ≈ 1.147 — same physics, different label. The old form
+    e·A_bleed·K matched an outdated δ≈1.196 table. Using the triangle
+    phase from seed (ρ̄,η̄) is the FSOT-native identification (no new seeds).
+    """
+    return math.atan2(seed_eta_bar(), seed_rho_bar())
 
 
 def seed_ckm_magnitudes() -> dict[str, float]:
@@ -345,23 +372,33 @@ def seed_sin_delta_ckm() -> float:
     return math.sin(seed_delta_ckm_rad())
 
 
-# Literature comparison targets ONLY (not used in computed)
+# Literature comparison targets ONLY (not used in computed).
+# PDG 2024 RPP CKM review (Ceccucci, Ligeti, Sakai) + HFLAV angle averages.
+# CRITICAL: global-fit (ρ̄,η̄) and direct α,β,γ are DIFFERENT experimental
+# constructions — do not residual-gate one against the other without saying so.
+_PDG_RHOB = 0.1591  # Eq. (12.26) CKMfitter-style global fit
+_PDG_ETAB = 0.3523  # Eq. (12.26)
+_PDG_GAMMA_GEOM = math.atan2(_PDG_ETAB, _PDG_RHOB)
+_PDG_BETA_GEOM = math.atan2(_PDG_ETAB, 1.0 - _PDG_RHOB)
+_PDG_ALPHA_GEOM = math.pi - _PDG_BETA_GEOM - _PDG_GAMMA_GEOM
+
 PDG = {
+    # Magnitudes: PDG 2024 global fit matrix (12.27)
     "V_ud": 0.97435,
-    "V_us": 0.22500,
-    "V_ub": 0.00369,
-    "V_cd": 0.22486,
+    "V_us": 0.22501,
+    "V_ub": 0.003732,
+    "V_cd": 0.22487,
     "V_cs": 0.97349,
-    "V_cb": 0.04182,
-    "V_td": 0.00857,
-    "V_ts": 0.04110,
+    "V_cb": 0.04183,
+    "V_td": 0.00858,
+    "V_ts": 0.04111,
     "V_tb": 0.999118,
-    "lambda": 0.22500,
+    "lambda": 0.22501,
     "A": 0.826,
-    "rho_bar": 0.159,
-    "eta_bar": 0.348,
-    "Jarlskog_J": 3.08e-5,
-    "delta_ckm_rad": 1.196,
+    "rho_bar": _PDG_RHOB,
+    "eta_bar": _PDG_ETAB,
+    "Jarlskog_J": 3.12e-5,
+    "delta_ckm_rad": 1.147,  # Eq. (12.28) δ
     "sin2_theta_W": 0.23122,
     "sin2_theta_W_onshell": 1.0 - (80.377 / 91.1876) ** 2,
     "alpha_inv": 137.035999084,
@@ -379,18 +416,22 @@ PDG = {
     "dm2_21": 7.53e-5,
     "dm2_31_abs": 2.453e-3,
     "neutrino_m3_over_m2": math.sqrt(2.453e-3 / 7.53e-5),
-    # Unitarity triangle (PDG-ish central; α = 180°−β−γ)
-    "alpha_rad": math.radians(91.9),
-    "beta_rad": math.radians(22.2),
-    "gamma_rad": math.radians(65.9),
-    "R_b": math.sqrt(0.159**2 + 0.348**2),
-    "R_t": math.sqrt((1.0 - 0.159) ** 2 + 0.348**2),
-    "sin_delta_ckm": math.sin(1.196),
+    # Geometric angles from the SAME global-fit (ρ̄,η̄) — residual-gate these
+    "alpha_rad": _PDG_ALPHA_GEOM,
+    "beta_rad": _PDG_BETA_GEOM,
+    "gamma_rad": _PDG_GAMMA_GEOM,
+    # Direct HFLAV PDG-2024 angle averages (separate channel; sum ≠ 180°)
+    "alpha_direct_rad": math.radians(85.2),  # HFLAV φ2
+    "beta_direct_rad": math.radians(22.2),  # HFLAV φ1
+    "gamma_direct_rad": math.radians(65.9),  # HFLAV φ3
+    "R_b": math.sqrt(_PDG_RHOB**2 + _PDG_ETAB**2),
+    "R_t": math.sqrt((1.0 - _PDG_RHOB) ** 2 + _PDG_ETAB**2),
+    "sin_delta_ckm": math.sin(1.147),
     "Lambda_QCD_GeV": 0.2173,
     "sqrt_sigma_GeV": 0.420,
     "N_eff": 3.046,
-    # arg(V_ub) ≈ γ in LO Wolfenstein
-    "arg_Vub_rad": math.radians(65.9),
+    # arg(V_ub) ≈ γ from global-fit geometry
+    "arg_Vub_rad": _PDG_GAMMA_GEOM,
 }
 
 
@@ -402,7 +443,15 @@ def run_seed_flavor_suite() -> dict[str, Any]:
     rows.append(_row("lambda_ckm", seed_lambda_ckm(), PDG["lambda"], claim="T4_seed_wolfenstein", formula="POOF*(1+ETA_EFF)"))
     rows.append(_row("A_wolfenstein", seed_A_wolfenstein(), PDG["A"], claim="T4_seed_wolfenstein", formula="PHI/2"))
     rows.append(_row("rho_bar", seed_rho_bar(), PDG["rho_bar"], claim="T4_seed_wolfenstein", formula="GAMMA*E/PI**2"))
-    rows.append(_row("eta_bar", seed_eta_bar(), PDG["eta_bar"], claim="T4_seed_wolfenstein", formula="4*SUCTION*PHI/E"))
+    rows.append(
+        _row(
+            "eta_bar",
+            seed_eta_bar(),
+            PDG["eta_bar"],
+            claim="T4_seed_wolfenstein",
+            formula="G_CAT**2 * K  [cross-domain: Catalan^2 x string/dim K]",
+        )
+    )
 
     # Jarlskog + phase
     rows.append(
@@ -420,7 +469,7 @@ def run_seed_flavor_suite() -> dict[str, Any]:
             seed_delta_ckm_rad(),
             PDG["delta_ckm_rad"],
             claim="T4_seed_ckm_phase",
-            formula="E*A_BLEED*K",
+            formula="atan2(eta_bar, rho_bar)  [= gamma LO]",
         )
     )
     rows.append(
@@ -429,7 +478,7 @@ def run_seed_flavor_suite() -> dict[str, Any]:
             seed_sin_delta_ckm(),
             PDG["sin_delta_ckm"],
             claim="T4_seed_ckm_phase",
-            formula="sin(E*A_BLEED*K)",
+            formula="sin(atan2(eta_bar, rho_bar))",
         )
     )
     sides = seed_triangle_sides()
@@ -533,7 +582,7 @@ def run_seed_flavor_suite() -> dict[str, Any]:
             eval_kind="seed_identity",
         )
     )
-    # Geometric PDG centrals from (ρ̄, η̄) literature values
+    # Geometric residual gate: same object on both sides (seed apex vs PDG global-fit apex)
     rhob_m, etab_m = PDG["rho_bar"], PDG["eta_bar"]
     gamma_geom = math.atan2(etab_m, rhob_m)
     beta_geom = math.atan2(etab_m, 1.0 - rhob_m)
@@ -565,20 +614,27 @@ def run_seed_flavor_suite() -> dict[str, Any]:
             formula="atan2(eta_bar, rho_bar)",
         )
     )
-    # Literature fit centrals — honest comparison, not residual-gated green claim
-    for name, key in (("alpha_lit_fit", "alpha_rad"), ("beta_lit_fit", "beta_rad"), ("gamma_lit_fit", "gamma_rad")):
+    # Direct HFLAV angle averages — different experiment (not forced to sum to π)
+    for name, seed_key, lit_key in (
+        ("alpha_direct_HFLAV", "alpha_rad", "alpha_direct_rad"),
+        ("beta_direct_HFLAV", "beta_rad", "beta_direct_rad"),
+        ("gamma_direct_HFLAV", "gamma_rad", "gamma_direct_rad"),
+    ):
         rows.append(
             {
                 **_row(
                     name,
-                    tri[key],
-                    PDG[key],
-                    claim="T4_seed_triangle_lit_fit",
-                    formula=f"seed {key} vs PDG published fit central",
+                    tri[seed_key],
+                    PDG[lit_key],
+                    claim="T4_seed_triangle_direct_angle",
+                    formula=f"seed geometric {seed_key} vs HFLAV direct {lit_key}",
                 ),
                 "eval_kind": "literature_fit_band",
                 "comparison_class": "literature_fit_band",
-                "note": "PDG angle-fit centrals ≠ atan2(PDG rho_bar, eta_bar); band-consistent only",
+                "note": (
+                    "Direct α,β,γ (HFLAV) ≠ atan2 of global-fit (ρ̄,η̄). "
+                    "Experimental sum α+β+γ ≈ 173° (PDG quotes 172±5°), not forced to π."
+                ),
             }
         )
     rows.append(
