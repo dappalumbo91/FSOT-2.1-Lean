@@ -1,10 +1,16 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 5/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 5/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma crossref_scholarly_observable_count_pos : (0 < 200)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma crossref_scholarly_median_error_under_five_pct : (0.01382%R) < (5.0%R).
+Proof. lra. Qed.
 
 Lemma cryosphere_month_count_pos : (0 < 2399)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -298,11 +304,5 @@ Lemma environmental_engineering_ext_headline_median_under_half_pct : 0%R < (0.5%
 Proof. lra. Qed.
 
 Lemma environmental_engineering_ext_observable_count_pos : (0 < 18416)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma environmental_engineering_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma environmental_engineering_observable_count_pos : (0 < 1120)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T05:09:13.231164+00:00",
+  "generated_at": "2026-08-04T14:03:10.076090+00:00",
   "domain": "Tier_96_Circuit_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -17,9 +17,9 @@
   "observable_count": 45,
   "scalar_record_count": 45,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.020755,
-  "pooled_median_error_pct": 0.020755,
-  "headline_median_error_pct": 0.020755,
+  "median_error_pct": 0.015583023735736914,
+  "pooled_median_error_pct": 0.015583023735736914,
+  "headline_median_error_pct": 0.015873,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -38,18 +38,18 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.020755,
+      "computed": 0.015583,
       "measured": 0.0,
-      "error_pct": 0.020755,
+      "error_pct": 0.015583023735736914,
       "observable_count": 45
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "tier96",
       "name": "circuit_spine_relay",
-      "computed": 0.020755,
+      "computed": 0.015873,
       "measured": 0.0,
-      "error_pct": 0.020755,
+      "error_pct": 0.015873,
       "observable_count": 43
     }
   ],
@@ -240,7 +240,7 @@
       "computed": 0.020755,
       "measured": 0.020755,
       "error_pct": 0.0,
-      "record_count": 17,
+      "record_count": 33,
       "eval_kind": "tier96_bridge"
     },
     {
@@ -250,6 +250,16 @@
       "computed": 0.001,
       "measured": 0.001,
       "error_pct": 0.020755,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_10k_100nF",
+      "computed": 0.001,
+      "measured": 0.001,
+      "error_pct": 0.0,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
       "eval_kind": "live_formula"
     },
@@ -265,11 +275,31 @@
     },
     {
       "lab": "tier_96_circuit_spine_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_1k_10uF",
+      "computed": 0.01,
+      "measured": 0.01,
+      "error_pct": 0.0,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_4k7_10nF",
       "computed": 4.7e-05,
       "measured": 4.7e-05,
       "error_pct": 0.020755,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_4k7_10nF",
+      "computed": 4.7000000000000004e-05,
+      "measured": 4.7000000000000004e-05,
+      "error_pct": 0.0,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
       "eval_kind": "live_formula"
     },
@@ -285,11 +315,31 @@
     },
     {
       "lab": "tier_96_circuit_spine_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_100k_1uF",
+      "computed": 0.09999999999999999,
+      "measured": 0.09999999999999999,
+      "error_pct": 0.0,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_22R_100nF",
       "computed": 2e-06,
       "measured": 2.2e-06,
       "error_pct": 0.020755,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_22R_100nF",
+      "computed": 2.2e-06,
+      "measured": 2.2e-06,
+      "error_pct": 0.0,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
       "eval_kind": "live_formula"
     },
@@ -305,11 +355,31 @@
     },
     {
       "lab": "tier_96_circuit_spine_lab",
+      "property": "lc_resonance_textbook_identity",
+      "name": "LC_10uH_100nF",
+      "computed": 159154.94309189534,
+      "measured": 159154.94309189534,
+      "error_pct": 0.0,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
       "property": "lc_resonance_hz",
       "name": "LC_100uH_10nF",
       "computed": 159219.902358,
       "measured": 159154.94,
       "error_pct": 0.040817,
+      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "tier_96_circuit_spine_lab",
+      "property": "lc_resonance_textbook_identity",
+      "name": "LC_100uH_10nF",
+      "computed": 159154.94309189534,
+      "measured": 159154.94309189534,
+      "error_pct": 0.0,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
       "eval_kind": "live_formula"
     },
@@ -325,81 +395,11 @@
     },
     {
       "lab": "tier_96_circuit_spine_lab",
-      "property": "divider_vout_v",
-      "name": "divider_10k_10k",
-      "computed": 2.500519,
-      "measured": 2.5,
-      "error_pct": 0.020755,
-      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "tier_96_circuit_spine_lab",
-      "property": "divider_vout_v",
-      "name": "divider_10k_4k7",
-      "computed": 1.598971,
-      "measured": 1.598639,
-      "error_pct": 0.020755,
-      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "tier_96_circuit_spine_lab",
-      "property": "divider_vout_v",
-      "name": "divider_1k_2k",
-      "computed": 2.200457,
-      "measured": 2.2,
-      "error_pct": 0.020755,
-      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "tier_96_circuit_spine_lab",
-      "property": "dissipated_power_w",
-      "name": "power_5V_1k",
-      "computed": 0.02501,
-      "measured": 0.025,
-      "error_pct": 0.039349,
-      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "tier_96_circuit_spine_lab",
-      "property": "dissipated_power_w",
-      "name": "power_3V3_470",
-      "computed": 0.023179,
-      "measured": 0.02317,
-      "error_pct": 0.039349,
-      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "tier_96_circuit_spine_lab",
-      "property": "dissipated_power_w",
-      "name": "power_12V_4k7",
-      "computed": 0.03065,
-      "measured": 0.030638,
-      "error_pct": 0.039349,
-      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "tier_96_circuit_spine_lab",
-      "property": "rc_tau_s",
-      "name": "esp32_rc_reset_10k_100n",
-      "computed": 0.001,
-      "measured": 0.001,
-      "error_pct": 0.020755,
-      "source_panel": "Schematic_Netlist_Intrinsic_Panel",
-      "eval_kind": "live_formula"
-    },
-    {
-      "lab": "tier_96_circuit_spine_lab",
-      "property": "dissipated_power_w",
-      "name": "esp32_i2c_pull_4k7",
-      "computed": 0.002318,
-      "measured": 0.002317,
-      "error_pct": 0.039349,
+      "property": "lc_resonance_textbook_identity",
+      "name": "LC_1mH_100pF",
+      "computed": 503292.1210448704,
+      "measured": 503292.1210448704,
+      "error_pct": 0.0,
       "source_panel": "Schematic_Netlist_Intrinsic_Panel",
       "eval_kind": "live_formula"
     },
@@ -503,7 +503,7 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.020755,
+    "scalar_pooled_median_error_pct": 0.015583023735736914,
     "max_scalar_error_pct": 0.040817,
     "classifier_count": 0,
     "classifier_correct": 0,

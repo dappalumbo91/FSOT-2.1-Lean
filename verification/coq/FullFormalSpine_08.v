@@ -1,10 +1,16 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 9/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 9/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma malware_threat_intelligence_observable_count_pos : (0 < 85)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma malware_threat_intelligence_median_error_under_half_pct : (0.04593318440797134%R) < (0.5%R).
+Proof. lra. Qed.
 
 Lemma marine_biology_ext_pooled_median_under_half_pct : (0.022236250385192644%R) < (0.5%R).
 Proof. lra. Qed.
@@ -298,11 +304,5 @@ Lemma network_science_public_panel_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma network_science_public_panel_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma neural_galactic_orbital_bridge_observable_count_pos : (0 < 49)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma neural_galactic_orbital_bridge_median_error_under_half_pct : (0.018002668701799784%R) < (0.5%R).
 Proof. lra. Qed.
 

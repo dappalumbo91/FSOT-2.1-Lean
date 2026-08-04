@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T05:22:35.926868+00:00",
+  "generated_at": "2026-08-04T14:17:48.547948+00:00",
   "version": "1.0",
   "summary": {
     "extension_domain_count": 371,
@@ -247,21 +247,21 @@
   "missing_uncertainty_domains": [
     {
       "domain": "TOE_Contested_Sector_Refresh",
-      "scalar_count": 15,
-      "missing_scientific_measurement": 15,
+      "scalar_count": 22,
+      "missing_scientific_measurement": 19,
       "stumped_missing_uncertainty": 1,
       "stumped_untagged_contested": 12,
-      "max_scalar_error_pct": 0.018002668701804225,
-      "max_effective_scalar_error_pct": 0.018002668701804225,
-      "pooled_median_error_pct": 0.009407278780006464,
+      "max_scalar_error_pct": 0.192564276915754,
+      "max_effective_scalar_error_pct": 0.192564276915754,
+      "pooled_median_error_pct": 0.009504134401233218,
       "green_gate_pass": true,
       "raw_eff_divergence_count": 0,
       "top_raw_eff_divergence": [],
       "max_pushback_scalar": {
-        "property": "e_con",
-        "name": "e_con",
-        "raw_pct": 0.018002668701804225,
-        "effective_pct": 0.018002668701804225,
+        "property": "engine_native_h0",
+        "name": null,
+        "raw_pct": 0.192564276915754,
+        "effective_pct": 0.192564276915754,
         "contested": false
       }
     }

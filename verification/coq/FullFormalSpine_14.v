@@ -1,10 +1,28 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 15/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 15/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma volcanology_panel_median_error_under_half_pct : (0.023502%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma volcanology_observable_count_pos : (0 < 90)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma volcanology_median_error_under_five_pct : (0.023502%R) < (5.0%R).
+Proof. lra. Qed.
+
+Lemma warp_psi_friction_pos : 0 < (0.082300635102%R).
+Proof. lra. Qed.
+
+Lemma warp_psi_node_pos : 0 < (0.059407798774%R).
+Proof. lra. Qed.
+
+Lemma warp_tunneling_bridge_pos : 0 < (0.053926299704%R).
+Proof. lra. Qed.
 
 Lemma warp_psi_stabilization_pos : 0 < (2.386649570184%R).
 Proof. lra. Qed.
@@ -286,23 +304,5 @@ Lemma observer_modulates_term1 : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 Lemma raw_S_positive_of_term1_gt_neg_08 : 0 < (1.2240253341904455%R).
-Proof. lra. Qed.
-
-Lemma raw_S_negative_of_term1_overcomes_term3 : (-0.3514171596284352%R) < 0%R.
-Proof. lra. Qed.
-
-Lemma raw_S_negative_when_term1_overcomes_defaults : (-1.1349793149885588%R) < 0%R.
-Proof. lra. Qed.
-
-Lemma exp_term_in_term1_base_bounded : (1.0%R) < (3269017.3724721107%R).
-Proof. lra. Qed.
-
-Lemma perceived_adjust_positive_and_bounded : (0.91%R) < (1.0%R) /\ (1.0%R) <= (1.1%R).
-Proof. lra. Qed.
-
-Lemma term1_positive_of_observer_negative_quirk : 0 < (0.22402533419044554%R).
-Proof. lra. Qed.
-
-Lemma quirkMod_neg_of_delta_psi_ge_07 : (-0.11470328400949172%R) < 0%R.
 Proof. lra. Qed.
 

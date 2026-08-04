@@ -1,7 +1,25 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 18/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 18/20 (generated). *)
 theory FullFormalSpine_17
 imports Complex_Main
 begin
+
+lemma cosmological_cos_t_hi: "(0.3537447475152753 :: real) < (0.37 :: real)"
+  by eval
+
+lemma cosmological_cos_lt_neg_093: "(-0.9380820636690238 :: real) < (0.93 :: real)"
+  by eval
+
+lemma alpha_pos: "(0 :: real) < (0.0008082937 :: real)"
+  by eval
+
+lemma cosmological_N_pos: "(0 :: real) < (1.0 :: real)"
+  by eval
+
+lemma cosmological_P_pos: "(0 :: real) < (1.0 :: real)"
+  by eval
+
+lemma acoustic_bleed_mul_sin_sq_le_phi: "(0.7413341974524184 :: real) <= (1.618033988749895 :: real)"
+  by eval
 
 lemma acoustic_inflow_le_acoustic_bleed_mul_phi: "(1.6668538450045731 :: real) <= (1.694038919615534 :: real)"
   by eval
@@ -283,24 +301,6 @@ lemma dark_energy_term1_negative: "(-2.1349793149885588 :: real) < (0 :: real)"
   by eval
 
 lemma dark_energy_term2_eq_one: "(1.0 :: real) = (1.0 :: real)"
-  by eval
-
-lemma cosmological_term1_dominates_term3: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
-  by eval
-
-lemma cellular_params_eq_biological: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma dark_energy_params_eq: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cosmological_domain_eq: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma domain_term2_eq_one: "(1.0 :: real) = (1.0 :: real)"
-  by eval
-
-lemma domain_term3_abs_lt_fifth: "(0.0000000000000000269421 :: real) < (0.2 :: real)"
   by eval
 
 end

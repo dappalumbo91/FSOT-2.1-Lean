@@ -1,7 +1,13 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 11/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 11/20 (generated). *)
 theory FullFormalSpine_10
 imports Complex_Main
 begin
+
+lemma open_meteo_live_median_error_under_five_pct: "(0.026204 :: real) < (5.0 :: real)"
+  by eval
+
+lemma openneuro_full_panel_observable_count_pos: "0 < (123 :: nat)"
+  by eval
 
 lemma openneuro_full_panel_median_error_under_half_pct: "(0.015431 :: real) < (0.5 :: real)"
   by eval
@@ -295,12 +301,6 @@ lemma phenylalanine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) =
   by eval
 
 lemma glycine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma histidine_trinary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma isoleucine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
 end

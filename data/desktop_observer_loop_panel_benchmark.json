@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-03T23:21:50.821138+00:00",
+  "generated_at": "2026-08-04T14:03:09.380260+00:00",
   "domain": "Desktop_Observer_Loop_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -13,13 +13,13 @@
     "observer"
   ],
   "D_eff": 14,
-  "record_count": 12,
-  "observable_count": 12,
-  "scalar_record_count": 12,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 24,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0004905,
-  "pooled_median_error_pct": 0.0004905,
-  "headline_median_error_pct": 0.000535,
+  "median_error_pct": 0.0010245,
+  "pooled_median_error_pct": 0.0010245,
+  "headline_median_error_pct": 0.001069,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -38,19 +38,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.000491,
+      "computed": 0.001025,
       "measured": 0.0,
-      "error_pct": 0.0004905,
-      "observable_count": 12
+      "error_pct": 0.0010245,
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "desktop_observer",
       "name": "timing_display_proxy",
-      "computed": 0.000535,
+      "computed": 0.001069,
       "measured": 0.0,
-      "error_pct": 0.000535,
-      "observable_count": 12
+      "error_pct": 0.001069,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -58,150 +58,294 @@
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_0",
-      "computed": -0.68937118,
-      "measured": -0.68937118,
+      "computed": -0.68940311,
+      "measured": -0.68940311,
       "error_pct": 0.0,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.2876
+      "timing_delta_ms": 50.3077
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_1",
-      "computed": -0.68937057,
-      "measured": -0.68937118,
+      "computed": -0.6894025,
+      "measured": -0.68940311,
       "error_pct": 8.9e-05,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.4375
+      "timing_delta_ms": 50.5957
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_2",
-      "computed": -0.68936995,
-      "measured": -0.68937118,
+      "computed": -0.68940188,
+      "measured": -0.68940311,
       "error_pct": 0.000178,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.5686
+      "timing_delta_ms": 50.1959
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_3",
-      "computed": -0.68936934,
-      "measured": -0.68937118,
+      "computed": -0.68940127,
+      "measured": -0.68940311,
       "error_pct": 0.000267,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.7067
+      "timing_delta_ms": 50.1923
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_4",
-      "computed": -0.68936872,
-      "measured": -0.68937118,
+      "computed": -0.68940065,
+      "measured": -0.68940311,
       "error_pct": 0.000356,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.7984
+      "timing_delta_ms": 50.2273
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_5",
-      "computed": -0.68936811,
-      "measured": -0.68937118,
+      "computed": -0.68940004,
+      "measured": -0.68940311,
       "error_pct": 0.000446,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.6339
+      "timing_delta_ms": 50.4377
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_6",
-      "computed": -0.6893675,
-      "measured": -0.68937118,
+      "computed": -0.68939943,
+      "measured": -0.68940311,
       "error_pct": 0.000535,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.7152
+      "timing_delta_ms": 50.1597
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_7",
-      "computed": -0.68936688,
-      "measured": -0.68937118,
+      "computed": -0.68939881,
+      "measured": -0.68940311,
       "error_pct": 0.000624,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.1493
+      "timing_delta_ms": 50.2834
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_8",
-      "computed": -0.68936627,
-      "measured": -0.68937118,
+      "computed": -0.6893982,
+      "measured": -0.68940311,
       "error_pct": 0.000713,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.519
+      "timing_delta_ms": 50.1713
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_9",
-      "computed": -0.68936565,
-      "measured": -0.68937118,
+      "computed": -0.68939758,
+      "measured": -0.68940311,
       "error_pct": 0.000802,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.2284
+      "timing_delta_ms": 50.1777
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_10",
-      "computed": -0.68936504,
-      "measured": -0.68937118,
+      "computed": -0.68939697,
+      "measured": -0.68940311,
       "error_pct": 0.000891,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.3003
+      "timing_delta_ms": 50.1532
     },
     {
       "lab": "desktop_observer_loop",
       "property": "observer_coupling_ratio",
       "name": "sample_11",
-      "computed": -0.68936442,
-      "measured": -0.68937118,
+      "computed": -0.68939635,
+      "measured": -0.68940311,
       "error_pct": 0.00098,
       "eval_kind": "observer_replay",
       "observed": true,
       "channel": "display_proxy+information_density",
-      "timing_delta_ms": 50.312
+      "timing_delta_ms": 50.405
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_12",
+      "computed": -0.68939574,
+      "measured": -0.68940311,
+      "error_pct": 0.001069,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.3847
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_13",
+      "computed": -0.68939513,
+      "measured": -0.68940311,
+      "error_pct": 0.001158,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.1543
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_14",
+      "computed": -0.68939451,
+      "measured": -0.68940311,
+      "error_pct": 0.001248,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.5872
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_15",
+      "computed": -0.6893939,
+      "measured": -0.68940311,
+      "error_pct": 0.001337,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.4762
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_16",
+      "computed": -0.68939328,
+      "measured": -0.68940311,
+      "error_pct": 0.001426,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.3957
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_17",
+      "computed": -0.68939267,
+      "measured": -0.68940311,
+      "error_pct": 0.001515,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.5352
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_18",
+      "computed": -0.68939205,
+      "measured": -0.68940311,
+      "error_pct": 0.001604,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.5087
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_19",
+      "computed": -0.68939144,
+      "measured": -0.68940311,
+      "error_pct": 0.001693,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.4499
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_20",
+      "computed": -0.68939082,
+      "measured": -0.68940311,
+      "error_pct": 0.001782,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.748
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_21",
+      "computed": -0.68939021,
+      "measured": -0.68940311,
+      "error_pct": 0.001871,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.7398
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_22",
+      "computed": -0.6893896,
+      "measured": -0.68940311,
+      "error_pct": 0.00196,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.1454
+    },
+    {
+      "lab": "desktop_observer_loop",
+      "property": "observer_coupling_ratio",
+      "name": "sample_23",
+      "computed": -0.68938898,
+      "measured": -0.68940311,
+      "error_pct": 0.00205,
+      "eval_kind": "observer_replay",
+      "observed": true,
+      "channel": "display_proxy+information_density",
+      "timing_delta_ms": 50.4091
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0004905,
-    "max_scalar_error_pct": 0.00098,
+    "scalar_pooled_median_error_pct": 0.0010245,
+    "max_scalar_error_pct": 0.00205,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

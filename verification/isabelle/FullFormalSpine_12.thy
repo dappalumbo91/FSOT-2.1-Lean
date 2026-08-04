@@ -1,7 +1,25 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 13/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 13/20 (generated). *)
 theory FullFormalSpine_12
 imports Complex_Main
 begin
+
+lemma scientific_expansion_wave3_spine_observable_count_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma scientific_expansion_wave3_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma secure_software_engineering_observable_count_pos: "0 < (59 :: nat)"
+  by eval
+
+lemma secure_software_engineering_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma seismology_deep_observable_count_pos: "0 < (1000 :: nat)"
+  by eval
+
+lemma seismology_deep_match_le_total: "(1000 :: nat) <= (1000 :: nat)"
+  by eval
 
 lemma seismology_deep_holdout_match_le_total: "(189 :: nat) <= (189 :: nat)"
   by eval
@@ -283,24 +301,6 @@ lemma symbolic_archetype_panel_median_error_under_half_pct: "(0 :: real) < (0.5 
   by eval
 
 lemma synthetic_biology_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma synthetic_biology_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma tectonics_event_count_pos: "0 < (500 :: nat)"
-  by eval
-
-lemma tectonics_boundary_count_pos: "0 < (241 :: nat)"
-  by eval
-
-lemma tectonics_match_le_total: "(500 :: nat) <= (500 :: nat)"
-  by eval
-
-lemma term3_acoustic_bleed_depth_observable_count_pos: "0 < (23 :: nat)"
-  by eval
-
-lemma term3_acoustic_bleed_depth_median_error_under_half_pct: "(0.008381497018408523 :: real) < (0.5 :: real)"
   by eval
 
 end

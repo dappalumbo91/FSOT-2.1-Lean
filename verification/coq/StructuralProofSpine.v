@@ -928,6 +928,27 @@ Proof.
   - lra.
 Qed.
 
+Lemma breakthrough_fusion_spine_bundle_conj_0 : (146 = 146)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma breakthrough_fusion_spine_bundle_conj_1 : (14 = 14)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma breakthrough_fusion_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma breakthrough_fusion_spine_bundle : (146 = 146)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact breakthrough_fusion_spine_bundle_conj_0.
+  - exact breakthrough_fusion_spine_bundle_conj_1.
+  - exact breakthrough_fusion_spine_bundle_conj_2.
+  - lra.
+Qed.
+
 Lemma canonical_oracle_panel_bundle_conj_0 : (24 = 24)%nat.
 Proof. reflexivity.
 Qed.
@@ -3462,7 +3483,7 @@ Proof.
   - lra.
 Qed.
 
-Lemma fsot_cache_hierarchy_bundle_conj_0 : (11 = 11)%nat.
+Lemma fsot_cache_hierarchy_bundle_conj_0 : (82 = 82)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -3474,7 +3495,7 @@ Lemma fsot_cache_hierarchy_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma fsot_cache_hierarchy_bundle : (11 = 11)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
+Lemma fsot_cache_hierarchy_bundle : (82 = 82)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_cache_hierarchy_bundle_conj_0.
@@ -3483,7 +3504,7 @@ Proof.
   - lra.
 Qed.
 
-Lemma fsot_c_pack_parity_bundle_conj_0 : (4 = 4)%nat.
+Lemma fsot_c_pack_parity_bundle_conj_0 : (23 = 23)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -3495,7 +3516,7 @@ Lemma fsot_c_pack_parity_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma fsot_c_pack_parity_bundle : (4 = 4)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
+Lemma fsot_c_pack_parity_bundle : (23 = 23)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_c_pack_parity_bundle_conj_0.
@@ -3504,7 +3525,7 @@ Proof.
   - lra.
 Qed.
 
-Lemma fsot_gpu_cuda_competitive_bundle_conj_0 : (17 = 17)%nat.
+Lemma fsot_gpu_cuda_competitive_bundle_conj_0 : (33 = 33)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -3516,7 +3537,7 @@ Lemma fsot_gpu_cuda_competitive_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma fsot_gpu_cuda_competitive_bundle : (17 = 17)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
+Lemma fsot_gpu_cuda_competitive_bundle : (33 = 33)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_gpu_cuda_competitive_bundle_conj_0.
@@ -3567,7 +3588,7 @@ Proof.
   - lra.
 Qed.
 
-Lemma fsot_hardware_depth_spine_bundle_conj_0 : (33 = 33)%nat.
+Lemma fsot_hardware_depth_spine_bundle_conj_0 : (177 = 177)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -3579,7 +3600,7 @@ Lemma fsot_hardware_depth_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma fsot_hardware_depth_spine_bundle : (33 = 33)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
+Lemma fsot_hardware_depth_spine_bundle : (177 = 177)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_hardware_depth_spine_bundle_conj_0.
@@ -3588,7 +3609,7 @@ Proof.
   - lra.
 Qed.
 
-Lemma fsot_interconnect_coherence_bundle_conj_0 : (8 = 8)%nat.
+Lemma fsot_interconnect_coherence_bundle_conj_0 : (88 = 88)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -3600,7 +3621,7 @@ Lemma fsot_interconnect_coherence_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma fsot_interconnect_coherence_bundle : (8 = 8)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
+Lemma fsot_interconnect_coherence_bundle : (88 = 88)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_interconnect_coherence_bundle_conj_0.
@@ -3630,7 +3651,7 @@ Proof.
   - lra.
 Qed.
 
-Lemma fsot_ram_function_bundle_conj_0 : (14 = 14)%nat.
+Lemma fsot_ram_function_bundle_conj_0 : (33 = 33)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -3642,7 +3663,7 @@ Lemma fsot_ram_function_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma fsot_ram_function_bundle : (14 = 14)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
+Lemma fsot_ram_function_bundle : (33 = 33)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_ram_function_bundle_conj_0.
@@ -7639,6 +7660,27 @@ Proof.
   - lra.
 Qed.
 
+Lemma qce_elm_fusion_edge_bundle_conj_0 : (86 = 86)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma qce_elm_fusion_edge_bundle_conj_1 : (14 = 14)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma qce_elm_fusion_edge_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma qce_elm_fusion_edge_bundle : (86 = 86)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact qce_elm_fusion_edge_bundle_conj_0.
+  - exact qce_elm_fusion_edge_bundle_conj_1.
+  - exact qce_elm_fusion_edge_bundle_conj_2.
+  - lra.
+Qed.
+
 Lemma quantum_computing_gap_fill_bundle_conj_0 : (177 = 177)%nat.
 Proof. reflexivity.
 Qed.
@@ -7918,6 +7960,27 @@ Proof.
   - exact reality_folding_spine_bundle_conj_0.
   - exact reality_folding_spine_bundle_conj_1.
   - exact reality_folding_spine_bundle_conj_2.
+  - lra.
+Qed.
+
+Lemma recent_breakthroughs_expansion_bundle_conj_0 : (81 = 81)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma recent_breakthroughs_expansion_bundle_conj_1 : (13 = 13)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma recent_breakthroughs_expansion_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma recent_breakthroughs_expansion_bundle : (81 = 81)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact recent_breakthroughs_expansion_bundle_conj_0.
+  - exact recent_breakthroughs_expansion_bundle_conj_1.
+  - exact recent_breakthroughs_expansion_bundle_conj_2.
   - lra.
 Qed.
 

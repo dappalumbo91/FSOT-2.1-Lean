@@ -1,7 +1,25 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 16/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 16/20 (generated). *)
 theory FullFormalSpine_15
 imports Complex_Main
 begin
+
+lemma raw_S_negative_of_term1_overcomes_term3: "(-0.3514171596284352 :: real) < (0 :: real)"
+  by eval
+
+lemma raw_S_negative_when_term1_overcomes_defaults: "(-1.1349793149885588 :: real) < (0 :: real)"
+  by eval
+
+lemma exp_term_in_term1_base_bounded: "(1.0 :: real) < (3269017.3724721107 :: real)"
+  by eval
+
+lemma perceived_adjust_positive_and_bounded: "(0.91 :: real) < (1.0 :: real) \<and> (1.0 :: real) <= (1.1 :: real)"
+  by eval
+
+lemma term1_positive_of_observer_negative_quirk: "0 < (0.22402533419044554 :: real)"
+  by eval
+
+lemma quirkMod_neg_of_delta_psi_ge_07: "(-0.11470328400949172 :: real) < (0 :: real)"
+  by eval
 
 lemma quirkMod_pos_of_delta_psi_le_06: "0 < (0.14827865209236663 :: real)"
   by eval
@@ -283,24 +301,6 @@ lemma exp_049_gt_16181: "(1.6181 :: real) < (1.632316219955379 :: real)"
   by eval
 
 lemma exp_04813_gt_16181: "(1.6181 :: real) < (1.618176665090559 :: real)"
-  by eval
-
-lemma exp_185_gt_626: "(6.26 :: real) < (6.359819522601832 :: real)"
-  by eval
-
-lemma coherence_correction_gt_one: "(1.0 :: real) < (1.0018019454848168 :: real)"
-  by eval
-
-lemma exp_077_gt_184: "(1.84 :: real) < (2.159766253784915 :: real)"
-  by eval
-
-lemma exp_177_gt_five: "(5.0 :: real) < (5.8708533613826015 :: real)"
-  by eval
-
-lemma e_minus_one_gt_one: "(1.0 :: real) < (1.718281828459045 :: real)"
-  by eval
-
-lemma exp_five_gt_100: "(100.0 :: real) < (148.4131591025766 :: real)"
   by eval
 
 end

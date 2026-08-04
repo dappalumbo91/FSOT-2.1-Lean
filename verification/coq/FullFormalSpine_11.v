@@ -1,10 +1,16 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 12/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 12/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma histidine_trinary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma isoleucine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
 Lemma lysine_trinary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
@@ -117,6 +123,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma pure_mathematics_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
+Lemma qce_elm_fusion_edge_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma qce_elm_fusion_edge_observable_count_pos : (0 < 86)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma quantum_computing_gap_fill_pooled_median_under_half_pct : (0.0002953462072651492%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -216,6 +228,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma reality_folding_spine_median_error_under_half_pct : (0.023914275640537417%R) < (0.5%R).
 Proof. lra. Qed.
 
+Lemma recent_breakthroughs_expansion_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma recent_breakthroughs_expansion_observable_count_pos : (0 < 81)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma robotics_control_ext_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
@@ -287,22 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma scientific_expansion_wave2_spine_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
-
-Lemma scientific_expansion_wave3_spine_observable_count_pos : (0 < 40)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma scientific_expansion_wave3_spine_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma secure_software_engineering_observable_count_pos : (0 < 59)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma secure_software_engineering_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma seismology_deep_observable_count_pos : (0 < 1000)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma seismology_deep_match_le_total : (1000 <= 1000)%nat.
-Proof. apply Nat.leb_le; reflexivity. Qed.
 

@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-04T05:19:48.591148+00:00",
+  "generated_at": "2026-08-04T14:14:55.870650+00:00",
   "tier": "79b_cross_refinement",
-  "obligation_count_total": 2421,
-  "obligation_count_provable": 2367,
-  "obligation_count_atomic_provable": 1898,
-  "obligation_count_bundle_conj": 469,
+  "obligation_count_total": 2430,
+  "obligation_count_provable": 2376,
+  "obligation_count_atomic_provable": 1904,
+  "obligation_count_bundle_conj": 472,
   "obligation_count_margin_violations": 54,
-  "coq_chunks_found": 19,
-  "coq_lemmas_indexed": 1898,
+  "coq_chunks_found": 20,
+  "coq_lemmas_indexed": 1904,
   "triangulation": {
-    "atomic_triangulated_ok": 1898,
+    "atomic_triangulated_ok": 1904,
     "atomic_triangulated_fail": 0,
-    "bundle_conj_triangulated_ok": 469,
+    "bundle_conj_triangulated_ok": 472,
     "bundle_conj_triangulated_fail": 0,
     "margin_violations_confirmed_ok": 0,
     "margin_violations_confirmed_fail": 54,
@@ -19,9 +19,9 @@
   },
   "margin_summary_by_kind": {
     "nat_pos": {
-      "count": 591,
+      "count": 594,
       "min_margin": "2",
-      "median_margin": "34",
+      "median_margin": "35",
       "max_margin": "1554101"
     },
     "r_lt_lit_pure": {
@@ -37,9 +37,9 @@
       "max_margin": "3269016.3724721107"
     },
     "lt_half": {
-      "count": 161,
+      "count": 164,
       "min_margin": "0.007472",
-      "median_margin": "0.482210999691835663",
+      "median_margin": "0.48221099969184366",
       "max_margin": "0.5"
     },
     "gt_lit": {
@@ -127,7 +127,7 @@
       "max_margin": "5.37899567E-8"
     }
   },
-  "lt_half_pooled_median_margin_to_bound": "0.482210999691835663",
+  "lt_half_pooled_median_margin_to_bound": "0.48221099969184366",
   "margin_violations": [
     {
       "id": "aether_prime_priors_bundle",

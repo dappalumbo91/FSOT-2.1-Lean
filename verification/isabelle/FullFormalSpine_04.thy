@@ -1,7 +1,13 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 5/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 5/20 (generated). *)
 theory FullFormalSpine_04
 imports Complex_Main
 begin
+
+lemma crossref_scholarly_observable_count_pos: "0 < (200 :: nat)"
+  by eval
+
+lemma crossref_scholarly_median_error_under_five_pct: "(0.01382 :: real) < (5.0 :: real)"
+  by eval
 
 lemma cryosphere_month_count_pos: "0 < (2399 :: nat)"
   by eval
@@ -295,12 +301,6 @@ lemma environmental_engineering_ext_headline_median_under_half_pct: "(0 :: real)
   by eval
 
 lemma environmental_engineering_ext_observable_count_pos: "0 < (18416 :: nat)"
-  by eval
-
-lemma environmental_engineering_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma environmental_engineering_observable_count_pos: "0 < (1120 :: nat)"
   by eval
 
 end

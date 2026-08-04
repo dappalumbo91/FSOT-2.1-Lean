@@ -1,7 +1,13 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 9/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 9/20 (generated). *)
 theory FullFormalSpine_08
 imports Complex_Main
 begin
+
+lemma malware_threat_intelligence_observable_count_pos: "0 < (85 :: nat)"
+  by eval
+
+lemma malware_threat_intelligence_median_error_under_half_pct: "(0.04593318440797134 :: real) < (0.5 :: real)"
+  by eval
 
 lemma marine_biology_ext_pooled_median_under_half_pct: "(0.022236250385192644 :: real) < (0.5 :: real)"
   by eval
@@ -295,12 +301,6 @@ lemma network_science_public_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
 lemma network_science_public_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neural_galactic_orbital_bridge_observable_count_pos: "0 < (49 :: nat)"
-  by eval
-
-lemma neural_galactic_orbital_bridge_median_error_under_half_pct: "(0.018002668701799784 :: real) < (0.5 :: real)"
   by eval
 
 end

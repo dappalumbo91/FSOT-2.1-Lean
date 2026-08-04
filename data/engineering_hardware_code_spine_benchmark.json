@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T05:09:13.281443+00:00",
+  "generated_at": "2026-08-04T14:03:10.215389+00:00",
   "domain": "Engineering_Hardware_Code_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -18,9 +18,9 @@
     "ai"
   ],
   "D_eff": 13,
-  "record_count": 95,
-  "observable_count": 95,
-  "scalar_record_count": 89,
+  "record_count": 99,
+  "observable_count": 99,
+  "scalar_record_count": 92,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -46,7 +46,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 95
+      "observable_count": 99
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -55,7 +55,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 95
+      "observable_count": 99
     }
   ],
   "material_records": [
@@ -355,9 +355,9 @@
       "lab": "engineering_hardware_code_spine_lab",
       "property": "source_pooled_residual",
       "name": "tier_96_circuit_spine_benchmark",
-      "computed": 0.020755,
+      "computed": 0.015583023735736914,
       "measured": 0.0,
-      "error_pct": 0.020755,
+      "error_pct": 0.015583023735736914,
       "eval_kind": "live_formula"
     },
     {
@@ -465,6 +465,16 @@
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_10k_100nF",
+      "computed": 0.001,
+      "measured": 0.001,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c4 = R\u00b7C"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_1k_10uF",
       "computed": 0.010002,
@@ -476,6 +486,16 @@
       "R_ohm": 1000.0,
       "C_f": 1e-05,
       "textbook_tau": 0.01
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_1k_10uF",
+      "computed": 0.01,
+      "measured": 0.01,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c4 = R\u00b7C"
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -493,6 +513,16 @@
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_4k7_10nF",
+      "computed": 4.7000000000000004e-05,
+      "measured": 4.7000000000000004e-05,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c4 = R\u00b7C"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
       "property": "rc_tau_s",
       "name": "RC_100k_1uF",
       "computed": 0.100021,
@@ -507,59 +537,13 @@
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
-      "property": "rc_tau_s",
-      "name": "RC_22R_100nF",
-      "computed": 2e-06,
-      "measured": 2.2e-06,
-      "error_pct": 0.020755,
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_100k_1uF",
+      "computed": 0.09999999999999999,
+      "measured": 0.09999999999999999,
+      "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "fsot_domain": "Electromagnetism",
-      "fsot_scalar": 0.518866,
-      "R_ohm": 22.0,
-      "C_f": 1e-07,
-      "textbook_tau": 2.2e-06
-    },
-    {
-      "lab": "engineering_hardware_code_spine_lab",
-      "property": "lc_resonance_hz",
-      "name": "LC_10uH_100nF",
-      "computed": 159219.902358,
-      "measured": 159154.94,
-      "error_pct": 0.040817,
-      "eval_kind": "live_formula",
-      "fsot_domain": "Quantum_Optics",
-      "fsot_scalar": 0.408171,
-      "L_h": 1e-05,
-      "C_f": 1e-07,
-      "textbook_f": 159154.94309189534
-    },
-    {
-      "lab": "engineering_hardware_code_spine_lab",
-      "property": "lc_resonance_hz",
-      "name": "LC_100uH_10nF",
-      "computed": 159219.902358,
-      "measured": 159154.94,
-      "error_pct": 0.040817,
-      "eval_kind": "live_formula",
-      "fsot_domain": "Quantum_Optics",
-      "fsot_scalar": 0.408171,
-      "L_h": 0.0001,
-      "C_f": 1e-08,
-      "textbook_f": 159154.94309189534
-    },
-    {
-      "lab": "engineering_hardware_code_spine_lab",
-      "property": "lc_resonance_hz",
-      "name": "LC_1mH_100pF",
-      "computed": 503497.549015,
-      "measured": 503292.12,
-      "error_pct": 0.040817,
-      "eval_kind": "live_formula",
-      "fsot_domain": "Quantum_Optics",
-      "fsot_scalar": 0.408171,
-      "L_h": 0.001,
-      "C_f": 1e-10,
-      "textbook_f": 503292.1210448704
+      "formula": "\u03c4 = R\u00b7C"
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -915,54 +899,47 @@
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
-      "property": "vram_usable_mib_c_eff_times_formal",
-      "name": "rtx5070_vram",
-      "computed": 12258.588193543184,
-      "measured": 12226.56,
-      "error_pct": 0.261955886,
-      "eval_kind": "live_formula",
-      "formula": "usable_mib = C_eff \u00b7 formal_crystal_boundary_mib",
-      "formal_boundary_mib": 12800.0,
-      "layer": "ram_function",
-      "device": "NVIDIA GeForce RTX 5070"
-    },
-    {
-      "lab": "engineering_hardware_code_spine_lab",
-      "property": "vram_fits_formal_boundary",
-      "name": "GpuMemory.fits",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "cache_line_bytes",
+      "name": "ram_crystal_pack",
+      "computed": 64.0,
+      "measured": 64.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "measured_bytes \u2264 formal_vram_bytes",
-      "note": "suite/process residual \u2014 not a PDG free fold",
-      "measured_bytes": 12820480000.0,
-      "formal_bytes": 13421772800.0,
+      "formula": "x86 line = 2^6 RAM coherence unit",
       "layer": "ram_function"
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
-      "property": "vram_util_ratio_vs_c_eff",
-      "name": "rtx5070_vram",
-      "computed": 0.9577022026205613,
-      "measured": 0.9552001953125,
-      "error_pct": 0.261935385,
+      "property": "trits_per_cache_line",
+      "name": "ram_crystal_pack",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "measured/formal residual vs C_eff",
+      "formula": "line_bits / 2",
       "layer": "ram_function"
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
-      "property": "alloc_half_free_ok",
-      "name": "vram_allocator_smoke",
-      "computed": 1.0,
-      "measured": 1.0,
+      "property": "page_4k_bytes",
+      "name": "ram_crystal_pack",
+      "computed": 4096.0,
+      "measured": 4096.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "process_gate_vs_target",
-      "note": "suite/process residual \u2014 not a PDG free fold",
-      "layer": "ram_function",
-      "mib": 5476.5
+      "formula": "4 KiB virtual page class",
+      "layer": "ram_function"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "trits_per_4k_page",
+      "name": "ram_crystal_pack",
+      "computed": 16384.0,
+      "measured": 16384.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "page_bits / 2",
+      "layer": "ram_function"
     },
     {
       "lab": "engineering_hardware_code_spine_lab",
@@ -1217,11 +1194,51 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "64/2"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "bits_per_trit",
+      "name": "c_structural",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "ceil(log2(3)) packing code width"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "states_per_u64",
+      "name": "c_structural",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "word_bits / bits_per_trit"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "trinary_arity",
+      "name": "c_structural",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "|{SpinDown,Superposed,SpinUp}|"
+    },
+    {
+      "lab": "engineering_hardware_code_spine_lab",
+      "property": "coherence_gate",
+      "name": "c_structural",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2 speaker eligibility"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.261955886,
+    "max_scalar_error_pct": 0.039349,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

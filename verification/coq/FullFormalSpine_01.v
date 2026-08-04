@@ -1,4 +1,4 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 2/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 2/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
@@ -77,6 +77,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma breakthrough_discoveries_2024_2026_median_error_under_five_pct : 0%R < (5.0%R).
 Proof. lra. Qed.
+
+Lemma breakthrough_fusion_spine_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma breakthrough_fusion_spine_observable_count_pos : (0 < 146)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma bubble_bleed_nebula_count_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -298,11 +304,5 @@ Lemma codon_secondary_pattern_space_eq_twenty_seven : (27 = 27)%nat.
 Proof. reflexivity. Qed.
 
 Lemma codon_aaa_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_aaa_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_aac_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

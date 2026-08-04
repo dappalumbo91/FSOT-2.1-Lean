@@ -1,7 +1,25 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 17/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 17/20 (generated). *)
 theory FullFormalSpine_16
 imports Complex_Main
 begin
+
+lemma exp_185_gt_626: "(6.26 :: real) < (6.359819522601832 :: real)"
+  by eval
+
+lemma coherence_correction_gt_one: "(1.0 :: real) < (1.0018019454848168 :: real)"
+  by eval
+
+lemma exp_077_gt_184: "(1.84 :: real) < (2.159766253784915 :: real)"
+  by eval
+
+lemma exp_177_gt_five: "(5.0 :: real) < (5.8708533613826015 :: real)"
+  by eval
+
+lemma e_minus_one_gt_one: "(1.0 :: real) < (1.718281828459045 :: real)"
+  by eval
+
+lemma exp_five_gt_100: "(100.0 :: real) < (148.4131591025766 :: real)"
+  by eval
 
 lemma exp_three_gt_twenty: "(20.0 :: real) < (20.085536923187668 :: real)"
   by eval
@@ -283,24 +301,6 @@ lemma cosmological_exp_factor_gt_five: "(5.0 :: real) < (5.977131629539365 :: re
   by eval
 
 lemma cosmological_cos_arg_hi_tight: "(3.4953374011050684 :: real) < (3.51 :: real)"
-  by eval
-
-lemma cosmological_cos_t_hi: "(0.3537447475152753 :: real) < (0.37 :: real)"
-  by eval
-
-lemma cosmological_cos_lt_neg_093: "(-0.9380820636690238 :: real) < (0.93 :: real)"
-  by eval
-
-lemma alpha_pos: "(0 :: real) < (0.0008082937 :: real)"
-  by eval
-
-lemma cosmological_N_pos: "(0 :: real) < (1.0 :: real)"
-  by eval
-
-lemma cosmological_P_pos: "(0 :: real) < (1.0 :: real)"
-  by eval
-
-lemma acoustic_bleed_mul_sin_sq_le_phi: "(0.7413341974524184 :: real) <= (1.618033988749895 :: real)"
   by eval
 
 end

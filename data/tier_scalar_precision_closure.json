@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-04T05:22:36.533519+00:00",
+  "generated_at": "2026-08-04T14:17:49.168021+00:00",
   "version": "1.0",
   "gate": "pooled_scalar_median_or_effective_median <= 0.05%",
   "tier_scalar_max_record_gate_pct": 0.05,
-  "benchmark_file_count": 426,
-  "tier_scalar_pass_count": 424,
-  "tier_scalar_fail_count": 2,
+  "benchmark_file_count": 429,
+  "tier_scalar_pass_count": 428,
+  "tier_scalar_fail_count": 1,
   "closed": false,
   "failing_domains": [
     {
@@ -14,13 +14,6 @@
       "scalar_pooled_median_error_pct": 0.21775817740070294,
       "effective_scalar_median_error_pct": 0.21775817740070294,
       "max_scalar_error_pct": 0.4567065036654742
-    },
-    {
-      "domain": "math_generator_benchmark_formula_eval_benchmark.json",
-      "file": "math_generator_benchmark_formula_eval_benchmark.json",
-      "scalar_pooled_median_error_pct": 0.10641964500321542,
-      "effective_scalar_median_error_pct": 0.10641964500321542,
-      "max_scalar_error_pct": 0.10641964500321542
     }
   ],
   "honest_statement": "tier_scalar_pass uses pooled scalar median (or literature-aware effective median) \u2264 0.05%, aligned with fsot_precision_constants tier aspiration. Per-record max up to 0.5% remains the green_gate strict_scalar bound."

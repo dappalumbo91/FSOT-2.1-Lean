@@ -1,10 +1,28 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 14/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 14/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma synthetic_biology_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma tectonics_event_count_pos : (0 < 500)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma tectonics_boundary_count_pos : (0 < 241)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma tectonics_match_le_total : (500 <= 500)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma term3_acoustic_bleed_depth_observable_count_pos : (0 < 23)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma term3_acoustic_bleed_depth_median_error_under_half_pct : (0.008381497018408523%R) < (0.5%R).
+Proof. lra. Qed.
 
 Lemma theory_completeness_spine_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -287,22 +305,4 @@ Proof. lra. Qed.
 
 Lemma volcanology_panel_observable_count_pos : (0 < 90)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma volcanology_panel_median_error_under_half_pct : (0.023502%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma volcanology_observable_count_pos : (0 < 90)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma volcanology_median_error_under_five_pct : (0.023502%R) < (5.0%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_friction_pos : 0 < (0.082300635102%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_node_pos : 0 < (0.059407798774%R).
-Proof. lra. Qed.
-
-Lemma warp_tunneling_bridge_pos : 0 < (0.053926299704%R).
-Proof. lra. Qed.
 

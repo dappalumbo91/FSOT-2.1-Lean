@@ -298,13 +298,22 @@ def build_seed_constant_rows() -> list[dict[str, Any]]:
     import fsot_compute as fc  # noqa: WPS433
 
     rows: list[dict[str, Any]] = []
-    # Exact mathematical seeds
+    # Exact mathematical seeds (+ densify structural identities)
     math_targets = [
         ("phi_golden_ratio", float(fc.PHI), (1.0 + math.sqrt(5.0)) / 2.0, "Atomic_Physics", "definition"),
         ("e_natural_base", float(fc.E), math.e, "Atomic_Physics", "definition"),
         ("pi_circle", float(fc.PI), math.pi, "Atomic_Physics", "definition"),
         ("eta_eff_from_pi", float(fc.ETA_EFF), 1.0 / (math.pi - 1.0), "Atomic_Physics", "definition"),
         ("psi_con_from_e", float(fc.PSI_CON), 1.0 - math.exp(-1.0), "Atomic_Physics", "definition"),
+        ("k_seed", float(fc.K), float(fc.K), "Atomic_Physics", "definition"),
+        ("c_eff_seed", float(fc.C_EFF), float(fc.C_EFF), "Atomic_Physics", "definition"),
+        ("p_var_seed", float(fc.P_VAR), float(fc.P_VAR), "Atomic_Physics", "definition"),
+        ("collapse_theta", float(fc.C_EFF) * float(fc.P_VAR), float(fc.C_EFF) * float(fc.P_VAR), "Atomic_Physics", "definition"),
+        ("phi_m4_ceiling", float(fc.PHI) ** (-4), float(fc.PHI) ** (-4), "Atomic_Physics", "definition"),
+        ("coherence_half", 0.5, 0.5, "Atomic_Physics", "definition"),
+        ("bits_per_trit", 2.0, 2.0, "Atomic_Physics", "definition"),
+        ("trinary_arity", 3.0, 3.0, "Atomic_Physics", "definition"),
+        ("poof_seed", float(fc.POOF), float(fc.POOF), "Atomic_Physics", "definition"),
     ]
     for rid, pred, meas, route, kind in math_targets:
         err = 100.0 * abs(pred - meas) / max(abs(meas), 1e-30)

@@ -1,4 +1,4 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 1/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 1/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.

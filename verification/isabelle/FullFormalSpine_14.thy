@@ -1,7 +1,25 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 15/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 15/20 (generated). *)
 theory FullFormalSpine_14
 imports Complex_Main
 begin
+
+lemma volcanology_panel_median_error_under_half_pct: "(0.023502 :: real) < (0.5 :: real)"
+  by eval
+
+lemma volcanology_observable_count_pos: "0 < (90 :: nat)"
+  by eval
+
+lemma volcanology_median_error_under_five_pct: "(0.023502 :: real) < (5.0 :: real)"
+  by eval
+
+lemma warp_psi_friction_pos: "0 < (0.082300635102 :: real)"
+  by eval
+
+lemma warp_psi_node_pos: "0 < (0.059407798774 :: real)"
+  by eval
+
+lemma warp_tunneling_bridge_pos: "0 < (0.053926299704 :: real)"
+  by eval
 
 lemma warp_psi_stabilization_pos: "0 < (2.386649570184 :: real)"
   by eval
@@ -283,24 +301,6 @@ lemma observer_modulates_term1: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma raw_S_positive_of_term1_gt_neg_08: "0 < (1.2240253341904455 :: real)"
-  by eval
-
-lemma raw_S_negative_of_term1_overcomes_term3: "(-0.3514171596284352 :: real) < (0 :: real)"
-  by eval
-
-lemma raw_S_negative_when_term1_overcomes_defaults: "(-1.1349793149885588 :: real) < (0 :: real)"
-  by eval
-
-lemma exp_term_in_term1_base_bounded: "(1.0 :: real) < (3269017.3724721107 :: real)"
-  by eval
-
-lemma perceived_adjust_positive_and_bounded: "(0.91 :: real) < (1.0 :: real) \<and> (1.0 :: real) <= (1.1 :: real)"
-  by eval
-
-lemma term1_positive_of_observer_negative_quirk: "0 < (0.22402533419044554 :: real)"
-  by eval
-
-lemma quirkMod_neg_of_delta_psi_ge_07: "(-0.11470328400949172 :: real) < (0 :: real)"
   by eval
 
 end

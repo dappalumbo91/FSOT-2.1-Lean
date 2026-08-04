@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T23:21:50.540790+00:00",
+  "generated_at": "2026-08-04T14:03:09.070372+00:00",
   "policy": "no_mic_no_camera_no_esp32",
   "channels": [
     "timing",
@@ -7,9 +7,9 @@
     "system_pulse",
     "information_density"
   ],
-  "sample_count": 12,
-  "timing_median_ms": 50.478250021114945,
-  "timing_jitter_ms": 0.20661278299586242,
+  "sample_count": 24,
+  "timing_median_ms": 50.390199990943074,
+  "timing_jitter_ms": 0.18352877396467393,
   "display_proxy": {
     "screen_width_px": 1920.0,
     "screen_height_px": 1080.0,
@@ -19,14 +19,14 @@
     "pixel_area_mega": 2.0736
   },
   "information_density": {
-    "content_hash_prefix": 3331471776,
-    "content_bytes": 6257.0,
-    "entropy_proxy": 0.01578519121236778
+    "content_hash_prefix": 322288811,
+    "content_bytes": 6271.0,
+    "entropy_proxy": 0.0161106590724166
   },
   "samples": [
     {
       "index": 0,
-      "timing_delta_ms": 50.2876,
+      "timing_delta_ms": 50.3077,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -37,18 +37,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 1,
-      "timing_delta_ms": 50.4375,
+      "timing_delta_ms": 50.5957,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -59,18 +59,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 2,
-      "timing_delta_ms": 50.5686,
+      "timing_delta_ms": 50.1959,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -81,18 +81,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 3,
-      "timing_delta_ms": 50.7067,
+      "timing_delta_ms": 50.1923,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -103,18 +103,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 4,
-      "timing_delta_ms": 50.7984,
+      "timing_delta_ms": 50.2273,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -125,18 +125,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 5,
-      "timing_delta_ms": 50.6339,
+      "timing_delta_ms": 50.4377,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -147,18 +147,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 6,
-      "timing_delta_ms": 50.7152,
+      "timing_delta_ms": 50.1597,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -169,18 +169,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 7,
-      "timing_delta_ms": 50.1493,
+      "timing_delta_ms": 50.2834,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -191,18 +191,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 8,
-      "timing_delta_ms": 50.519,
+      "timing_delta_ms": 50.1713,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -213,18 +213,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 9,
-      "timing_delta_ms": 50.2284,
+      "timing_delta_ms": 50.1777,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -235,18 +235,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 10,
-      "timing_delta_ms": 50.3003,
+      "timing_delta_ms": 50.1532,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -257,18 +257,18 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     },
     {
       "index": 11,
-      "timing_delta_ms": 50.312,
+      "timing_delta_ms": 50.405,
       "display": {
         "screen_width_px": 1920.0,
         "screen_height_px": 1080.0,
@@ -279,13 +279,277 @@
       },
       "pulse": {
         "cpu_user_s": 0.03125,
-        "cpu_system_s": 0.015625,
+        "cpu_system_s": 0.046875,
         "cpu_elapsed_s": 0.0
       },
       "information": {
-        "content_hash_prefix": 3331471776,
-        "content_bytes": 6257.0,
-        "entropy_proxy": 0.01578519121236778
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 12,
+      "timing_delta_ms": 50.3847,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 13,
+      "timing_delta_ms": 50.1543,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 14,
+      "timing_delta_ms": 50.5872,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 15,
+      "timing_delta_ms": 50.4762,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 16,
+      "timing_delta_ms": 50.3957,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 17,
+      "timing_delta_ms": 50.5352,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 18,
+      "timing_delta_ms": 50.5087,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 19,
+      "timing_delta_ms": 50.4499,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 20,
+      "timing_delta_ms": 50.748,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 21,
+      "timing_delta_ms": 50.7398,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 22,
+      "timing_delta_ms": 50.1454,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
+      }
+    },
+    {
+      "index": 23,
+      "timing_delta_ms": 50.4091,
+      "display": {
+        "screen_width_px": 1920.0,
+        "screen_height_px": 1080.0,
+        "work_area_width_px": 1920.0,
+        "work_area_height_px": 1009.0,
+        "aspect_ratio": 1.7777777777777777,
+        "pixel_area_mega": 2.0736
+      },
+      "pulse": {
+        "cpu_user_s": 0.03125,
+        "cpu_system_s": 0.046875,
+        "cpu_elapsed_s": 0.0
+      },
+      "information": {
+        "content_hash_prefix": 322288811,
+        "content_bytes": 6271.0,
+        "entropy_proxy": 0.0161106590724166
       }
     }
   ],

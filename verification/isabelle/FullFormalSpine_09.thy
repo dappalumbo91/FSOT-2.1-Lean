@@ -1,7 +1,13 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 10/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 10/20 (generated). *)
 theory FullFormalSpine_09
 imports Complex_Main
 begin
+
+lemma neural_galactic_orbital_bridge_observable_count_pos: "0 < (49 :: nat)"
+  by eval
+
+lemma neural_galactic_orbital_bridge_median_error_under_half_pct: "(0.018002668701799784 :: real) < (0.5 :: real)"
+  by eval
 
 lemma neuroeconomics_ext_pooled_median_under_half_pct: "(0.10502056403980387 :: real) < (0.5 :: real)"
   by eval
@@ -295,12 +301,6 @@ lemma open_meteo_live_panel_median_error_under_half_pct: "(0.026204 :: real) < (
   by eval
 
 lemma open_meteo_live_observable_count_pos: "0 < (432 :: nat)"
-  by eval
-
-lemma open_meteo_live_median_error_under_five_pct: "(0.026204 :: real) < (5.0 :: real)"
-  by eval
-
-lemma openneuro_full_panel_observable_count_pos: "0 < (123 :: nat)"
   by eval
 
 end

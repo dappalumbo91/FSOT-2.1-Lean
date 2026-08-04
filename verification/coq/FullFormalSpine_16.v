@@ -1,10 +1,28 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 17/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 17/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma exp_185_gt_626 : (6.26%R) < (6.359819522601832%R).
+Proof. lra. Qed.
+
+Lemma coherence_correction_gt_one : (1.0%R) < (1.0018019454848168%R).
+Proof. lra. Qed.
+
+Lemma exp_077_gt_184 : (1.84%R) < (2.159766253784915%R).
+Proof. lra. Qed.
+
+Lemma exp_177_gt_five : (5.0%R) < (5.8708533613826015%R).
+Proof. lra. Qed.
+
+Lemma e_minus_one_gt_one : (1.0%R) < (1.718281828459045%R).
+Proof. lra. Qed.
+
+Lemma exp_five_gt_100 : (100.0%R) < (148.4131591025766%R).
+Proof. lra. Qed.
 
 Lemma exp_three_gt_twenty : (20.0%R) < (20.085536923187668%R).
 Proof. lra. Qed.
@@ -286,23 +304,5 @@ Lemma cosmological_exp_factor_gt_five : (5.0%R) < (5.977131629539365%R).
 Proof. lra. Qed.
 
 Lemma cosmological_cos_arg_hi_tight : (3.4953374011050684%R) < (3.51%R).
-Proof. lra. Qed.
-
-Lemma cosmological_cos_t_hi : (0.3537447475152753%R) < (0.37%R).
-Proof. lra. Qed.
-
-Lemma cosmological_cos_lt_neg_093 : (-0.9380820636690238%R) < (0.93%R).
-Proof. lra. Qed.
-
-Lemma alpha_pos : 0%R < (0.0008082937414140402%R).
-Proof. lra. Qed.
-
-Lemma cosmological_N_pos : 0%R < (1.0%R).
-Proof. lra. Qed.
-
-Lemma cosmological_P_pos : 0%R < (1.0%R).
-Proof. lra. Qed.
-
-Lemma acoustic_bleed_mul_sin_sq_le_phi : (0.7413341974524184%R) <= (1.618033988749895%R).
 Proof. lra. Qed.
 

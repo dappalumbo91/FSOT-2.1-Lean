@@ -1,10 +1,28 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 16/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 16/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma raw_S_negative_of_term1_overcomes_term3 : (-0.3514171596284352%R) < 0%R.
+Proof. lra. Qed.
+
+Lemma raw_S_negative_when_term1_overcomes_defaults : (-1.1349793149885588%R) < 0%R.
+Proof. lra. Qed.
+
+Lemma exp_term_in_term1_base_bounded : (1.0%R) < (3269017.3724721107%R).
+Proof. lra. Qed.
+
+Lemma perceived_adjust_positive_and_bounded : (0.91%R) < (1.0%R) /\ (1.0%R) <= (1.1%R).
+Proof. lra. Qed.
+
+Lemma term1_positive_of_observer_negative_quirk : 0 < (0.22402533419044554%R).
+Proof. lra. Qed.
+
+Lemma quirkMod_neg_of_delta_psi_ge_07 : (-0.11470328400949172%R) < 0%R.
+Proof. lra. Qed.
 
 Lemma quirkMod_pos_of_delta_psi_le_06 : 0 < (0.14827865209236663%R).
 Proof. lra. Qed.
@@ -286,23 +304,5 @@ Lemma exp_049_gt_16181 : (1.6181%R) < (1.632316219955379%R).
 Proof. lra. Qed.
 
 Lemma exp_04813_gt_16181 : (1.6181%R) < (1.618176665090559%R).
-Proof. lra. Qed.
-
-Lemma exp_185_gt_626 : (6.26%R) < (6.359819522601832%R).
-Proof. lra. Qed.
-
-Lemma coherence_correction_gt_one : (1.0%R) < (1.0018019454848168%R).
-Proof. lra. Qed.
-
-Lemma exp_077_gt_184 : (1.84%R) < (2.159766253784915%R).
-Proof. lra. Qed.
-
-Lemma exp_177_gt_five : (5.0%R) < (5.8708533613826015%R).
-Proof. lra. Qed.
-
-Lemma e_minus_one_gt_one : (1.0%R) < (1.718281828459045%R).
-Proof. lra. Qed.
-
-Lemma exp_five_gt_100 : (100.0%R) < (148.4131591025766%R).
 Proof. lra. Qed.
 

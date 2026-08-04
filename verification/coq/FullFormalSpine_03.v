@@ -1,10 +1,16 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 4/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 4/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma codon_tag_secondary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tat_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
 Lemma codon_tat_secondary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
@@ -298,11 +304,5 @@ Lemma crossref_scholarly_panel_observable_count_pos : (0 < 200)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma crossref_scholarly_panel_median_error_under_half_pct : (0.01382%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma crossref_scholarly_observable_count_pos : (0 < 200)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma crossref_scholarly_median_error_under_five_pct : (0.01382%R) < (5.0%R).
 Proof. lra. Qed.
 

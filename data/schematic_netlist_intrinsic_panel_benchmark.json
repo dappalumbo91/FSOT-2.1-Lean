@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T05:09:13.231164+00:00",
+  "generated_at": "2026-08-04T14:03:10.590120+00:00",
   "domain": "Schematic_Netlist_Intrinsic_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -13,9 +13,9 @@
     "energy"
   ],
   "D_eff": 10,
-  "record_count": 17,
-  "observable_count": 17,
-  "scalar_record_count": 17,
+  "record_count": 33,
+  "observable_count": 33,
+  "scalar_record_count": 33,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.020755,
   "pooled_median_error_pct": 0.020755,
@@ -41,7 +41,7 @@
       "computed": 0.020755,
       "measured": 0.0,
       "error_pct": 0.020755,
-      "observable_count": 17
+      "observable_count": 33
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +50,7 @@
       "computed": 0.020755,
       "measured": 0.0,
       "error_pct": 0.020755,
-      "observable_count": 17
+      "observable_count": 33
     }
   ],
   "material_records": [
@@ -70,6 +70,16 @@
     },
     {
       "lab": "schematic_netlist_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_10k_100nF",
+      "computed": 0.001,
+      "measured": 0.001,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c4 = R\u00b7C"
+    },
+    {
+      "lab": "schematic_netlist_lab",
       "property": "rc_tau_s",
       "name": "RC_1k_10uF",
       "computed": 0.010002,
@@ -81,6 +91,16 @@
       "R_ohm": 1000.0,
       "C_f": 1e-05,
       "textbook_tau": 0.01
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_1k_10uF",
+      "computed": 0.01,
+      "measured": 0.01,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c4 = R\u00b7C"
     },
     {
       "lab": "schematic_netlist_lab",
@@ -98,6 +118,16 @@
     },
     {
       "lab": "schematic_netlist_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_4k7_10nF",
+      "computed": 4.7000000000000004e-05,
+      "measured": 4.7000000000000004e-05,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c4 = R\u00b7C"
+    },
+    {
+      "lab": "schematic_netlist_lab",
       "property": "rc_tau_s",
       "name": "RC_100k_1uF",
       "computed": 0.100021,
@@ -109,6 +139,16 @@
       "R_ohm": 100000.0,
       "C_f": 1e-06,
       "textbook_tau": 0.09999999999999999
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_100k_1uF",
+      "computed": 0.09999999999999999,
+      "measured": 0.09999999999999999,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c4 = R\u00b7C"
     },
     {
       "lab": "schematic_netlist_lab",
@@ -126,6 +166,16 @@
     },
     {
       "lab": "schematic_netlist_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "RC_22R_100nF",
+      "computed": 2.2e-06,
+      "measured": 2.2e-06,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c4 = R\u00b7C"
+    },
+    {
+      "lab": "schematic_netlist_lab",
       "property": "lc_resonance_hz",
       "name": "LC_10uH_100nF",
       "computed": 159219.902358,
@@ -137,6 +187,16 @@
       "L_h": 1e-05,
       "C_f": 1e-07,
       "textbook_f": 159154.94309189534
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "lc_resonance_textbook_identity",
+      "name": "LC_10uH_100nF",
+      "computed": 159154.94309189534,
+      "measured": 159154.94309189534,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "f = 1/(2\u03c0\u221a(LC))"
     },
     {
       "lab": "schematic_netlist_lab",
@@ -154,6 +214,16 @@
     },
     {
       "lab": "schematic_netlist_lab",
+      "property": "lc_resonance_textbook_identity",
+      "name": "LC_100uH_10nF",
+      "computed": 159154.94309189534,
+      "measured": 159154.94309189534,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "f = 1/(2\u03c0\u221a(LC))"
+    },
+    {
+      "lab": "schematic_netlist_lab",
       "property": "lc_resonance_hz",
       "name": "LC_1mH_100pF",
       "computed": 503497.549015,
@@ -165,6 +235,16 @@
       "L_h": 0.001,
       "C_f": 1e-10,
       "textbook_f": 503292.1210448704
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "lc_resonance_textbook_identity",
+      "name": "LC_1mH_100pF",
+      "computed": 503292.1210448704,
+      "measured": 503292.1210448704,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "f = 1/(2\u03c0\u221a(LC))"
     },
     {
       "lab": "schematic_netlist_lab",
@@ -263,6 +343,16 @@
     },
     {
       "lab": "schematic_netlist_lab",
+      "property": "rc_tau_textbook_identity",
+      "name": "esp32_rc_reset_10k_100n",
+      "computed": 0.001,
+      "measured": 0.001,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c4 = R\u00b7C"
+    },
+    {
+      "lab": "schematic_netlist_lab",
       "property": "dissipated_power_w",
       "name": "esp32_i2c_pull_4k7",
       "computed": 0.002318,
@@ -287,6 +377,76 @@
       "vin_v": 5.0,
       "R_top": 10000,
       "R_bot": 20000
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "seed_phi",
+      "name": "schematic_seed",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6"
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "seed_theta",
+      "name": "schematic_seed",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var"
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "seed_phi_m4",
+      "name": "schematic_seed",
+      "computed": 0.14589803375031543,
+      "measured": 0.14589803375031543,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6\u207b\u2074"
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "coherence_half",
+      "name": "schematic_seed",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "coh > 1/2"
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "bits_per_trit",
+      "name": "schematic_seed",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "pack width"
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "zero_free_param",
+      "name": "schematic_seed",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process"
+    },
+    {
+      "lab": "schematic_netlist_lab",
+      "property": "netlist_emergence_registered",
+      "name": "schematic_seed",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process"
     }
   ],
   "margin_summary": {

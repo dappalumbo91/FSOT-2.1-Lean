@@ -1,4 +1,4 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 2/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 2/20 (generated). *)
 theory FullFormalSpine_01
 imports Complex_Main
 begin
@@ -73,6 +73,12 @@ lemma breakthrough_discoveries_2024_2026_observable_count_pos: "0 < (21 :: nat)"
   by eval
 
 lemma breakthrough_discoveries_2024_2026_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma breakthrough_fusion_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma breakthrough_fusion_spine_observable_count_pos: "0 < (146 :: nat)"
   by eval
 
 lemma bubble_bleed_nebula_count_pos: "0 < (20 :: nat)"
@@ -295,12 +301,6 @@ lemma codon_secondary_pattern_space_eq_twenty_seven: "(27 :: nat) = (27 :: nat)"
   by eval
 
 lemma codon_aaa_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_aaa_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_aac_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
 end

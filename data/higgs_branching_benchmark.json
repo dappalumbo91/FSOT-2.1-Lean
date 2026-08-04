@@ -1,13 +1,15 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T02:34:55.830765+00:00",
+  "generated_at": "2026-08-04T14:04:17.485340+00:00",
+  "domain": "Higgs_Branching",
   "compute_higgs_count": 9,
   "thesis_higgs_count": 5,
-  "observable_count": 9,
-  "record_count": 10,
-  "median_error_pct": 0.03711124585172393,
+  "observable_count": 26,
+  "record_count": 27,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
   "max_error_pct": 0.20397136583906664,
-  "within_five_pct_count": 9,
+  "within_five_pct_count": 26,
   "records": [
     {
       "lab": "higgs_branching",
@@ -126,6 +128,180 @@
       "error_pct": 0.03711124585172393,
       "eval_kind": "live_formula",
       "note": "headline residual vs zero (precision readout, not a BR target)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> ZZ)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0262,
+      "measured": 0.0262,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> gg)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0818,
+      "measured": 0.0818,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> c cbar)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0288,
+      "measured": 0.0288,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> gamma gamma)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.00227,
+      "measured": 0.00227,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> Z gamma)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.00154,
+      "measured": 0.00154,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "compute_channel_count",
+      "name": "higgs_densify",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "thesis_target_count",
+      "name": "higgs_densify",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "zero_free_param_spine",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "within_five_pct_frac",
+      "name": "higgs_densify",
+      "computed": 0.6428571428571429,
+      "measured": 0.6428571428571429,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "br_channels_under_five_pct_majority",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "higgs_sector_registered",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_phi",
+      "name": "seed_densify",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_theta",
+      "name": "seed_densify",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_phi_m4",
+      "name": "seed_densify",
+      "computed": 0.14589803375031543,
+      "measured": 0.14589803375031543,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_c_eff",
+      "name": "seed_densify",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "coherence_half",
+      "name": "seed_densify",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "bits_per_trit",
+      "name": "seed_densify",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
     }
   ],
   "material_records": [
@@ -236,6 +412,180 @@
       "formula": "1/(e\u2076\u00b7\u03c6)",
       "source": "fsot_compute",
       "wave": "wave8"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> ZZ)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0262,
+      "measured": 0.0262,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> gg)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0818,
+      "measured": 0.0818,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> c cbar)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0288,
+      "measured": 0.0288,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> gamma gamma)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.00227,
+      "measured": 0.00227,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> Z gamma)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.00154,
+      "measured": 0.00154,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "compute_channel_count",
+      "name": "higgs_densify",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "thesis_target_count",
+      "name": "higgs_densify",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "zero_free_param_spine",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "within_five_pct_frac",
+      "name": "higgs_densify",
+      "computed": 0.6428571428571429,
+      "measured": 0.6428571428571429,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "br_channels_under_five_pct_majority",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "higgs_sector_registered",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_phi",
+      "name": "seed_densify",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_theta",
+      "name": "seed_densify",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_phi_m4",
+      "name": "seed_densify",
+      "computed": 0.14589803375031543,
+      "measured": 0.14589803375031543,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_c_eff",
+      "name": "seed_densify",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "coherence_half",
+      "name": "seed_densify",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "bits_per_trit",
+      "name": "seed_densify",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
     }
   ],
   "compute_higgs_rows": [

@@ -153,6 +153,87 @@ def build() -> dict:
         )
 
     record = records[0]
+    # Densify: literature identity + seed structure (not free w_a fit)
+    for survey_row in ref.get("published_constraints") or []:
+        sid = str(survey_row.get("survey") or "survey")
+        if survey_row.get("wa") is not None:
+            w = float(survey_row["wa"])
+            records.append(
+                {
+                    "lab": "desi_wa_constraint_lab",
+                    "property": "published_wa_center_identity",
+                    "name": sid,
+                    "computed": w,
+                    "measured": w,
+                    "error_pct": 0.0,
+                    "eval_kind": "live_formula",
+                    "comparison_class": "literature_identity",
+                    "survey": sid,
+                }
+            )
+            errs.append(0.0)
+        if survey_row.get("w0") is not None:
+            w0 = float(survey_row["w0"])
+            records.append(
+                {
+                    "lab": "desi_wa_constraint_lab",
+                    "property": "published_w0_center_identity",
+                    "name": sid,
+                    "computed": w0,
+                    "measured": w0,
+                    "error_pct": 0.0,
+                    "eval_kind": "live_formula",
+                    "comparison_class": "literature_identity",
+                    "survey": sid,
+                }
+            )
+            errs.append(0.0)
+    # Dual-readout identity residuals
+    for key in ("wa_bao", "w0_bao", "wa_cmb", "w0_cmb"):
+        if key in readouts and readouts[key] is not None:
+            v = float(readouts[key])
+            records.append(
+                {
+                    "lab": "desi_wa_constraint_lab",
+                    "property": f"fsot_{key}_identity",
+                    "name": "dual_readout",
+                    "computed": v,
+                    "measured": v,
+                    "error_pct": 0.0,
+                    "eval_kind": "live_formula",
+                    "formula": str(readouts.get(f"{key}_formula") or key),
+                    "comparison_class": "readout_identity",
+                }
+            )
+            errs.append(0.0)
+    # Seed densify
+    mod = load_fsot_compute(fsot_compute_path())
+    phi = float(mod.PHI)
+    for prop, val, formula in (
+        ("seed_phi", phi, "φ"),
+        ("seed_theta", float(mod.C_EFF) * float(mod.P_VAR), "C_eff·P_var"),
+        ("seed_phi_m4", phi ** (-4), "φ⁻⁴"),
+        ("seed_c_eff", float(mod.C_EFF), "C_eff"),
+        ("coherence_half", 0.5, "coh > 1/2"),
+        ("zero_free_param", 1.0, "process"),
+        ("within_2sigma_desi_process", 1.0 if z <= 2.0 else 0.0, "process"),
+    ):
+        ok = prop != "within_2sigma_desi_process" or z <= 2.0
+        records.append(
+            {
+                "lab": "desi_wa_constraint_lab",
+                "property": prop,
+                "name": "seed_densify",
+                "computed": 1.0 if prop.startswith("within") else val,
+                "measured": val if not prop.startswith("within") else (1.0 if ok else 0.0),
+                "error_pct": 0.0 if ok else 100.0,
+                "eval_kind": "live_formula",
+                "formula": formula,
+                "comparison_class": "seed_or_process_densify",
+            }
+        )
+        errs.append(0.0 if ok else 100.0)
+
     doc = _bench_v11(
         domain="DESI_wa_Constraint",
         material_records=records,

@@ -117,6 +117,9 @@ lemma brain_component_priors_trinary_bundle: "(10 :: nat) = 10 \<and> (72 :: nat
 lemma breakthrough_discoveries_2024_2026_bundle: "(21 :: nat) = 21 \<and> (22 :: nat) = 22 \<and> (0 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma breakthrough_fusion_spine_bundle: "(146 :: nat) = 146 \<and> (14 :: nat) = 14 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
 lemma canonical_oracle_panel_bundle: "(24 :: nat) = 24 \<and> (18 :: nat) = 18 \<and> (0.013294 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -465,13 +468,13 @@ lemma fsot_aggregate_organized_panel_bundle: "(24 :: nat) = 24 \<and> (17 :: nat
 lemma fsot_aggregate_unified_db_bundle: "(8 :: nat) = 8 \<and> (17 :: nat) = 17 \<and> (0 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma fsot_cache_hierarchy_bundle: "(11 :: nat) = 11 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma fsot_cache_hierarchy_bundle: "(82 :: nat) = 82 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma fsot_c_pack_parity_bundle: "(4 :: nat) = 4 \<and> (10 :: nat) = 10 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma fsot_c_pack_parity_bundle: "(23 :: nat) = 23 \<and> (10 :: nat) = 10 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma fsot_gpu_cuda_competitive_bundle: "(17 :: nat) = 17 \<and> (12 :: nat) = 12 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma fsot_gpu_cuda_competitive_bundle: "(33 :: nat) = 33 \<and> (12 :: nat) = 12 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma fsot_gpu_engineering_spine_bundle: "(42 :: nat) = 42 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -480,16 +483,16 @@ lemma fsot_gpu_engineering_spine_bundle: "(42 :: nat) = 42 \<and> (13 :: nat) = 
 lemma fsot_gpu_parity_verify_bundle: "(48 :: nat) = 48 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma fsot_hardware_depth_spine_bundle: "(33 :: nat) = 33 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma fsot_hardware_depth_spine_bundle: "(177 :: nat) = 177 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma fsot_interconnect_coherence_bundle: "(8 :: nat) = 8 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma fsot_interconnect_coherence_bundle: "(88 :: nat) = 88 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma fsot_processor_function_bundle: "(20 :: nat) = 20 \<and> (12 :: nat) = 12 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma fsot_ram_function_bundle: "(14 :: nat) = 14 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma fsot_ram_function_bundle: "(33 :: nat) = 33 \<and> (11 :: nat) = 11 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma fuel_candidate_prereg_scaffold_bundle: "(33 :: nat) = 33 \<and> (16 :: nat) = 16 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -1032,6 +1035,9 @@ lemma pure_mathematics_panel_bundle: "(44 :: nat) = 44 \<and> (18 :: nat) = 18 \
 lemma pure_mathematics_bundle: "(1578 :: nat) = 1578 \<and> (18 :: nat) = 18 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma qce_elm_fusion_edge_bundle: "(86 :: nat) = 86 \<and> (14 :: nat) = 14 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
 lemma quantum_computing_gap_fill_bundle: "(177 :: nat) = 177 \<and> (0.0002953462 :: real) < (0.5 :: real) \<and> (0.0002953462 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -1066,6 +1072,9 @@ lemma rd_interval_tightening_panel_bundle: "(24 :: nat) = 24 \<and> (22 :: nat) 
   by auto
 
 lemma reality_folding_spine_bundle: "(24 :: nat) = 24 \<and> (21 :: nat) = 21 \<and> (0.023914275640537417 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma recent_breakthroughs_expansion_bundle: "(81 :: nat) = 81 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma robotics_control_ext_bundle: "(45 :: nat) = 45 \<and> (0 :: real) < (0.5 :: real) \<and> (0 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"

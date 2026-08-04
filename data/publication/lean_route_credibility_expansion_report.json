@@ -1,59 +1,59 @@
 {
-  "generated_at": "2026-08-04T02:19:37.692256+00:00",
+  "generated_at": "2026-08-04T14:03:01.605632+00:00",
   "routes": [
     {
       "route": "energy",
       "prior_status": "numerically_verified",
-      "record_count": 12,
-      "pooled_median_error_pct": 0.0019315,
+      "record_count": 42,
+      "pooled_median_error_pct": 0.0014895,
       "benchmark": "data/energy_lean_route_credibility_benchmark.json",
       "green": true
     },
     {
       "route": "fusion",
       "prior_status": "numerically_verified",
-      "record_count": 11,
-      "pooled_median_error_pct": 9.5e-05,
+      "record_count": 60,
+      "pooled_median_error_pct": 0.0,
       "benchmark": "data/fusion_lean_route_credibility_benchmark.json",
       "green": true
     },
     {
       "route": "proton",
       "prior_status": "numerically_verified",
-      "record_count": 14,
-      "pooled_median_error_pct": 0.020741,
+      "record_count": 73,
+      "pooled_median_error_pct": 0.004174769548765883,
       "benchmark": "data/proton_lean_route_credibility_benchmark.json",
       "green": true
     },
     {
       "route": "nuclear",
       "prior_status": "numerically_verified",
-      "record_count": 13,
-      "pooled_median_error_pct": 0.021221,
+      "record_count": 87,
+      "pooled_median_error_pct": 0.0,
       "benchmark": "data/nuclear_lean_route_credibility_benchmark.json",
       "green": true
     },
     {
       "route": "consciousness",
       "prior_status": "numerically_verified",
-      "record_count": 26,
-      "pooled_median_error_pct": 0.013342,
+      "record_count": 74,
+      "pooled_median_error_pct": 0.000891,
       "benchmark": "data/consciousness_lean_route_credibility_benchmark.json",
       "green": true
     },
     {
       "route": "perceived",
       "prior_status": "numerically_verified",
-      "record_count": 3,
-      "pooled_median_error_pct": 0.0,
+      "record_count": 65,
+      "pooled_median_error_pct": 0.018003,
       "benchmark": "data/perceived_lean_route_credibility_benchmark.json",
       "green": true
     },
     {
       "route": "observer",
       "prior_status": "numerically_verified",
-      "record_count": 13,
-      "pooled_median_error_pct": 0.014767,
+      "record_count": 75,
+      "pooled_median_error_pct": 0.0,
       "benchmark": "data/observer_lean_route_credibility_benchmark.json",
       "green": true
     }

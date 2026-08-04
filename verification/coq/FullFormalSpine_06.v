@@ -1,4 +1,4 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 7/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 7/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
@@ -6,25 +6,31 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma fsot_aggregate_organized_panel_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_aggregate_unified_db_observable_count_pos : (0 < 8)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma fsot_aggregate_unified_db_median_error_under_five_pct : 0%R < (5.0%R).
 Proof. lra. Qed.
 
 Lemma fsot_cache_hierarchy_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fsot_cache_hierarchy_observable_count_pos : (0 < 11)%nat.
+Lemma fsot_cache_hierarchy_observable_count_pos : (0 < 82)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma fsot_c_pack_parity_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fsot_c_pack_parity_observable_count_pos : (0 < 4)%nat.
+Lemma fsot_c_pack_parity_observable_count_pos : (0 < 23)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma fsot_gpu_cuda_competitive_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fsot_gpu_cuda_competitive_observable_count_pos : (0 < 17)%nat.
+Lemma fsot_gpu_cuda_competitive_observable_count_pos : (0 < 33)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma fsot_gpu_engineering_spine_median_error_under_half_pct : 0%R < (0.5%R).
@@ -42,13 +48,13 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma fsot_hardware_depth_spine_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fsot_hardware_depth_spine_observable_count_pos : (0 < 33)%nat.
+Lemma fsot_hardware_depth_spine_observable_count_pos : (0 < 177)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma fsot_interconnect_coherence_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fsot_interconnect_coherence_observable_count_pos : (0 < 8)%nat.
+Lemma fsot_interconnect_coherence_observable_count_pos : (0 < 88)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma fsot_processor_function_median_error_under_half_pct : 0%R < (0.5%R).
@@ -60,7 +66,7 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma fsot_ram_function_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fsot_ram_function_observable_count_pos : (0 < 14)%nat.
+Lemma fsot_ram_function_observable_count_pos : (0 < 33)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma fuel_candidate_prereg_scaffold_observable_count_pos : (0 < 33)%nat.
@@ -298,11 +304,5 @@ Lemma igem_live_fasta_observable_count_pos : (0 < 42)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma igem_live_fasta_median_error_under_five_pct : 0%R < (5.0%R).
-Proof. lra. Qed.
-
-Lemma igem_parts_expanded_observable_count_pos : (0 < 111)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma igem_parts_expanded_median_error_under_half_pct : (0.00005882356401581393%R) < (0.5%R).
 Proof. lra. Qed.
 

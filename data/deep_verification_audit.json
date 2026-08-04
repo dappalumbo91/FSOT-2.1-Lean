@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T05:22:25.699711+00:00",
+  "generated_at": "2026-08-04T14:17:38.527495+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -13,18 +13,18 @@
   },
   "obligation_spine": {
     "connective": 24,
-    "full_formal_total": 2421,
-    "full_formal_provable": 2367,
+    "full_formal_total": 2430,
+    "full_formal_provable": 2376,
     "transcendental": 68,
-    "rust_replay_total": 1990,
-    "rust_replay_expected": 1990,
+    "rust_replay_total": 1996,
+    "rust_replay_expected": 1996,
     "rust_replay_formula": "connective + atomic_provable + transcendental (bundles/margins excluded)",
     "by_kind": {
-      "nat_pos": 591,
+      "nat_pos": 594,
       "r_lt_lit_pure": 324,
-      "bundle_conj": 523,
+      "bundle_conj": 526,
       "lt_lit": 229,
-      "lt_half": 161,
+      "lt_half": 164,
       "gt_lit": 135,
       "eq_nat": 26,
       "nat_le_sym": 30,
@@ -50,26 +50,26 @@
   },
   "triangulation": {
     "coq_atomic": {
-      "atomic_triangulated_ok": 1898,
+      "atomic_triangulated_ok": 1904,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 469,
+      "bundle_conj_triangulated_ok": 472,
       "bundle_conj_triangulated_fail": 0,
       "margin_violations_confirmed_ok": 0,
       "margin_violations_confirmed_fail": 54,
       "pct_atomic_triangulated": 100.0
     },
     "isabelle_atomic": {
-      "atomic_triangulated_ok": 1898,
+      "atomic_triangulated_ok": 1904,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 469,
+      "bundle_conj_triangulated_ok": 472,
       "bundle_conj_triangulated_fail": 0,
       "pct_atomic_triangulated": 100.0
     },
     "rust": {
       "connective_ok": 24,
-      "formal_ok": 1898,
+      "formal_ok": 1904,
       "transcendental_ok": 68,
-      "total": 1990
+      "total": 1996
     },
     "fstar_checks": {
       "fstar_verify_passed": true,
@@ -83,39 +83,39 @@
     }
   },
   "margin_bundle_analysis": {
-    "total_obligations": 2421,
-    "provable_atomic": 1898,
-    "provable_bundle_conj": 469,
+    "total_obligations": 2430,
+    "provable_atomic": 1904,
+    "provable_bundle_conj": 472,
     "structural_bundle_excluded": 54,
     "false_margin_violations": 0,
     "conjunct_atomic_coverage_pct": 99.92,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
-    "lt_half_pooled_median_margin": "0.482210999691835663",
-    "atomic_triangulated": "1898/1898",
-    "bundle_conj_triangulated": "469/469",
+    "lt_half_pooled_median_margin": "0.48221099969184366",
+    "atomic_triangulated": "1904/1904",
+    "bundle_conj_triangulated": "472/472",
     "margin_violations_confirmed_in_lean": 0,
     "margin_violations_unconfirmed": 54
   },
   "structural_bundle_ledger": {
-    "bundle_conj_total": 519,
+    "bundle_conj_total": 523,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 465,
-    "total_conjuncts": 2357,
-    "conjuncts_with_atomic_coverage": 2355,
+    "provable_bundle_conj": 469,
+    "total_conjuncts": 2373,
+    "conjuncts_with_atomic_coverage": 2371,
     "conjunct_atomic_coverage_pct": 99.92,
-    "explicit_linked_conjuncts": 1803,
-    "explicit_linked_in_spine": 1801,
+    "explicit_linked_conjuncts": 1815,
+    "explicit_linked_in_spine": 1813,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "oracle_debt_ledger": {
-    "obligation_total": 2409,
-    "atomic_triangulated": 1890,
+    "obligation_total": 2421,
+    "atomic_triangulated": 1898,
     "oracle_replay": 0,
     "proof_depth_oracle_tagged": 49,
-    "structural_index": 519,
+    "structural_index": 523,
     "oracle_fraction_pct": 0.0,
-    "atomic_fraction_pct": 78.46,
+    "atomic_fraction_pct": 78.4,
     "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
@@ -132,7 +132,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-08-04T04:37:59.354605+00:00",
+    "generated_at": "2026-08-04T05:22:26.884277+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -194,7 +194,7 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-08-04T04:37:59.643800+00:00",
+    "generated_at": "2026-08-04T05:22:27.498211+00:00",
     "version": "1.0",
     "overall_runtime_ok": true,
     "esp32_scalar_only_gap_closed": true,
@@ -236,7 +236,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-08-04T04:37:59.929223+00:00",
+    "generated_at": "2026-08-04T05:22:27.782742+00:00",
     "version": "1.0",
     "verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes",
     "headline_claim": "zero free parameters",
@@ -293,7 +293,7 @@
   "extension_precision": {
     "domain_count": 371,
     "green_gate_pass_count": 371,
-    "core_benchmark_green": 426,
+    "core_benchmark_green": 429,
     "worst_scalar_max_pct": 0.4989
   },
   "scientific_pushback": {
@@ -349,19 +349,19 @@
   },
   "coverage_audit": {
     "full_formal_spine": {
-      "obligations_in_full_json": 2421,
-      "modules_in_full_json": 516,
+      "obligations_in_full_json": 2430,
+      "modules_in_full_json": 519,
       "by_tier": {
-        "priors": 1960,
+        "priors": 1969,
         "extended": 184,
         "bounds": 277
       },
       "by_kind": {
-        "nat_pos": 591,
+        "nat_pos": 594,
         "r_lt_lit_pure": 324,
-        "bundle_conj": 523,
+        "bundle_conj": 526,
         "lt_lit": 229,
-        "lt_half": 161,
+        "lt_half": 164,
         "gt_lit": 135,
         "eq_nat": 26,
         "nat_le_sym": 30,
@@ -384,11 +384,11 @@
         "r_interval_conj": 1,
         "abs_interval_conj": 1
       },
-      "pct_of_formal_theorems": 123.1434,
-      "coq_chunks_generated": 19,
+      "pct_of_formal_theorems": 123.038,
+      "coq_chunks_generated": 20,
       "margin_violations_excluded": 0,
-      "coq_provable_target": 2421,
-      "coq_proved_yet": 2421,
+      "coq_provable_target": 2430,
+      "coq_proved_yet": 2430,
       "coq_proved_pct_of_full_export": 100.0,
       "coq_proved_pct_of_provable": 100.0,
       "coq_compile_status": "passed",
@@ -398,11 +398,11 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-08-04T05:22:18.433107+00:00",
+    "generated_at": "2026-08-04T14:17:31.121024+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
     "overall_ok": true,
-    "provable_bundle_conj_count": 469,
+    "provable_bundle_conj_count": 472,
     "provable_bundles": [
       {
         "id": "acoustic_resonance_materials_bundle",
@@ -554,6 +554,10 @@
       },
       {
         "id": "breakthrough_discoveries_2024_2026_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "breakthrough_fusion_spine_bundle",
         "conjunct_count": 4
       },
       {
@@ -1797,6 +1801,10 @@
         "conjunct_count": 4
       },
       {
+        "id": "qce_elm_fusion_edge_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "quantum_computing_gap_fill_bundle",
         "conjunct_count": 5
       },
@@ -1842,6 +1850,10 @@
       },
       {
         "id": "reality_folding_spine_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "recent_breakthroughs_expansion_bundle",
         "conjunct_count": 4
       },
       {
@@ -2281,11 +2293,11 @@
         "conjunct_count": 7
       }
     ],
-    "structural_proof_count": 1971,
+    "structural_proof_count": 1983,
     "min_required": 10,
     "breakdown": {
-      "bundle_split_lemmas": 458,
-      "bundle_conjunct_lemmas": 1503,
+      "bundle_split_lemmas": 461,
+      "bundle_conjunct_lemmas": 1512,
       "connective_ordering_lemmas": 3,
       "native_transcendental_chain_lemmas": 7
     },
@@ -2361,7 +2373,7 @@
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "1 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
       "closed": false,
       "monitored": true

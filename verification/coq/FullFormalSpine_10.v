@@ -1,10 +1,16 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 11/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 11/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma open_meteo_live_median_error_under_five_pct : (0.026204%R) < (5.0%R).
+Proof. lra. Qed.
+
+Lemma openneuro_full_panel_observable_count_pos : (0 < 123)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma openneuro_full_panel_median_error_under_half_pct : (0.015431%R) < (0.5%R).
 Proof. lra. Qed.
@@ -298,11 +304,5 @@ Lemma phenylalanine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
 Lemma glycine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma histidine_trinary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma isoleucine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

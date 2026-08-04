@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-04T05:22:26.094326+00:00",
+  "generated_at": "2026-08-04T14:17:38.923453+00:00",
   "version": "1.2",
   "summary": {
-    "bundle_conj_total": 523,
+    "bundle_conj_total": 526,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 469,
-    "total_conjuncts": 2373,
-    "conjuncts_with_atomic_coverage": 2371,
+    "provable_bundle_conj": 472,
+    "total_conjuncts": 2385,
+    "conjuncts_with_atomic_coverage": 2383,
     "conjunct_atomic_coverage_pct": 99.92,
-    "explicit_linked_conjuncts": 1815,
-    "explicit_linked_in_spine": 1813,
+    "explicit_linked_conjuncts": 1824,
+    "explicit_linked_in_spine": 1822,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
@@ -105,6 +105,7 @@
     "boundary_partition_tightening_bundle",
     "brain_component_priors_trinary_bundle",
     "breakthrough_discoveries_2024_2026_bundle",
+    "breakthrough_fusion_spine_bundle",
     "canonical_oracle_panel_bundle",
     "cardiology_ext_bundle",
     "cardiology_panel_bundle",
@@ -415,6 +416,7 @@
     "pure_mathematics_ext_bundle",
     "pure_mathematics_panel_bundle",
     "pure_mathematics_bundle",
+    "qce_elm_fusion_edge_bundle",
     "quantum_computing_gap_fill_bundle",
     "quantum_computing_math_depth_panel_bundle",
     "quantum_information_bundle",
@@ -427,6 +429,7 @@
     "rcsb_pdb_structures_bundle",
     "rd_interval_tightening_panel_bundle",
     "reality_folding_spine_bundle",
+    "recent_breakthroughs_expansion_bundle",
     "robotics_control_ext_bundle",
     "robotics_control_systems_panel_bundle",
     "robotics_control_systems_bundle",
@@ -3162,6 +3165,64 @@
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "breakthrough_fusion_spine_bundle",
+      "lean_module": "BreakthroughFusionSpinePriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "breakthrough_fusion_spine_observable_count",
+          "statement": "146 = 146",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "breakthrough_fusion_spine_observable_count_pos"
+          ],
+          "linked_obligation_id": "breakthrough_fusion_spine_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "breakthrough_fusion_spine_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "breakthrough_fusion_spine_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "breakthrough_fusion_spine_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "breakthrough_fusion_spine_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "breakthrough_fusion_spine_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "statement": "raw_S(energy) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -12046,7 +12107,7 @@
         {
           "kind": "eq_nat",
           "symbol": "fsot_cache_hierarchy_observable_count",
-          "statement": "11 = 11",
+          "statement": "82 = 82",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12104,7 +12165,7 @@
         {
           "kind": "eq_nat",
           "symbol": "fsot_c_pack_parity_observable_count",
-          "statement": "4 = 4",
+          "statement": "23 = 23",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12162,7 +12223,7 @@
         {
           "kind": "eq_nat",
           "symbol": "fsot_gpu_cuda_competitive_observable_count",
-          "statement": "17 = 17",
+          "statement": "33 = 33",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12336,7 +12397,7 @@
         {
           "kind": "eq_nat",
           "symbol": "fsot_hardware_depth_spine_observable_count",
-          "statement": "33 = 33",
+          "statement": "177 = 177",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12394,7 +12455,7 @@
         {
           "kind": "eq_nat",
           "symbol": "fsot_interconnect_coherence_observable_count",
-          "statement": "8 = 8",
+          "statement": "88 = 88",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12510,7 +12571,7 @@
         {
           "kind": "eq_nat",
           "symbol": "fsot_ram_function_observable_count",
-          "statement": "14 = 14",
+          "statement": "33 = 33",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -25473,6 +25534,64 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "qce_elm_fusion_edge_bundle",
+      "lean_module": "QceElmFusionEdgePanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "qce_elm_fusion_edge_observable_count",
+          "statement": "86 = 86",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "qce_elm_fusion_edge_observable_count_pos"
+          ],
+          "linked_obligation_id": "qce_elm_fusion_edge_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "qce_elm_fusion_edge_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "qce_elm_fusion_edge_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "qce_elm_fusion_edge_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "qce_elm_fusion_edge_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "qce_elm_fusion_edge_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "statement": "raw_S(energy) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "quantum_computing_gap_fill_bundle",
       "lean_module": "QuantumComputingGapFillPriors",
       "provable": true,
@@ -26224,6 +26343,64 @@
             "reality_folding_spine_median_error_under_half_pct"
           ],
           "linked_obligation_id": "reality_folding_spine_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "statement": "raw_S(energy) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "energy_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "recent_breakthroughs_expansion_bundle",
+      "lean_module": "RecentBreakthroughsExpansionPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "recent_breakthroughs_expansion_observable_count",
+          "statement": "81 = 81",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "recent_breakthroughs_expansion_observable_count_pos"
+          ],
+          "linked_obligation_id": "recent_breakthroughs_expansion_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "recent_breakthroughs_expansion_D_eff",
+          "statement": "13 = 13",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "recent_breakthroughs_expansion_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "recent_breakthroughs_expansion_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "recent_breakthroughs_expansion_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "recent_breakthroughs_expansion_median_error_under_half_pct"
         },
         {
           "kind": "pos",

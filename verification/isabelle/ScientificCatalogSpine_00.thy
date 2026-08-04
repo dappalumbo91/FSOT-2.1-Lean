@@ -303,6 +303,21 @@ lemma cat_oncology_benchmark_json_max_scalar_under_half_pct: "(0.428925 :: real)
 lemma cat_oncology_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_proton_lean_route_credibility_records_pos: "0 < (73 :: nat)"
+  by eval
+
+lemma cat_proton_lean_route_credibility_pooled_under_half_pct: "(0.004174769548765883 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_proton_lean_route_credibility_pooled_lt_half_pure: "(0.004174769548765883 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_proton_lean_route_credibility_max_scalar_under_half_pct: "(0.427138 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_proton_lean_route_credibility_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_material_property_verification_scaffold_records_pos: "0 < (79 :: nat)"
   by eval
 
@@ -346,21 +361,6 @@ lemma cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct: "(0.3712743059251006 ::
   by eval
 
 lemma cat_toe_ckm_pmns_flavor_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_dark_energy_cpl_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_dark_energy_cpl_pooled_under_half_pct: "(0.029733 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dark_energy_cpl_pooled_lt_half_pure: "(0.029733 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dark_energy_cpl_max_scalar_under_half_pct: "(0.368503 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dark_energy_cpl_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

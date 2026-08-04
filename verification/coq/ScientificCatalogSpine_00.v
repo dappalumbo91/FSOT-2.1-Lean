@@ -404,6 +404,26 @@ Lemma cat_oncology_benchmark_json_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
+Lemma cat_proton_lean_route_credibility_records_pos : (0 < 73)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_proton_lean_route_credibility_pooled_under_half_pct : ((0.004174769548765883%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_proton_lean_route_credibility_pooled_lt_half_pure : ((0.004174769548765883%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_proton_lean_route_credibility_max_scalar_under_half_pct : ((0.427138%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_proton_lean_route_credibility_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_material_property_verification_scaffold_records_pos : (0 < 79)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_toe_ckm_pmns_flavor_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_dark_energy_cpl_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_dark_energy_cpl_pooled_under_half_pct : ((0.029733%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_dark_energy_cpl_pooled_lt_half_pure : ((0.029733%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_dark_energy_cpl_max_scalar_under_half_pct : ((0.368503%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_dark_energy_cpl_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

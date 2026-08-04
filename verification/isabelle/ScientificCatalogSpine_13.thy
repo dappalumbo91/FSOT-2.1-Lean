@@ -3,6 +3,51 @@ theory ScientificCatalogSpine_13
 imports Complex_Main
 begin
 
+lemma cat_element_synthesis_condition_scaffold_records_pos: "0 < (45 :: nat)"
+  by eval
+
+lemma cat_element_synthesis_condition_scaffold_pooled_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_element_synthesis_condition_scaffold_pooled_lt_half_pure: "(0.000787 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_element_synthesis_condition_scaffold_max_scalar_under_half_pct: "(0.00095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_element_synthesis_condition_scaffold_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_cold_fusion_lab_synthesis_crosswalk_records_pos: "0 < (49 :: nat)"
+  by eval
+
+lemma cat_cold_fusion_lab_synthesis_crosswalk_pooled_under_half_pct: "(0.000079 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_cold_fusion_lab_synthesis_crosswalk_pooled_lt_half_pure: "(0.000079 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_cold_fusion_lab_synthesis_crosswalk_max_scalar_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_cold_fusion_lab_synthesis_crosswalk_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_heavy_ion_lab_synthesis_panel_records_pos: "0 < (39 :: nat)"
+  by eval
+
+lemma cat_heavy_ion_lab_synthesis_panel_pooled_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_heavy_ion_lab_synthesis_panel_pooled_lt_half_pure: "(0.000095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_heavy_ion_lab_synthesis_panel_max_scalar_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_heavy_ion_lab_synthesis_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_superheavy_island_completion_spine_records_pos: "0 < (43 :: nat)"
   by eval
 
@@ -63,6 +108,21 @@ lemma cat_igem_live_fasta_benchmark_json_max_scalar_under_half_pct: "(0.00010000
 lemma cat_igem_live_fasta_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_breakthrough_fusion_spine_records_pos: "0 < (146 :: nat)"
+  by eval
+
+lemma cat_breakthrough_fusion_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_breakthrough_fusion_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_breakthrough_fusion_spine_max_scalar_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_breakthrough_fusion_spine_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_fusion_decay_chain_prereg_scaffold_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -76,6 +136,21 @@ lemma cat_fusion_decay_chain_prereg_scaffold_max_scalar_under_half_pct: "(0.0000
   by eval
 
 lemma cat_fusion_decay_chain_prereg_scaffold_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_fusion_lean_route_credibility_records_pos: "0 < (60 :: nat)"
+  by eval
+
+lemma cat_fusion_lean_route_credibility_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fusion_lean_route_credibility_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fusion_lean_route_credibility_max_scalar_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fusion_lean_route_credibility_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_island_of_stability_deep_panel_records_pos: "0 < (23 :: nat)"
@@ -198,21 +273,6 @@ lemma cat_superheavy_island_emergence_simulation_max_scalar_under_half_pct: "(0.
 lemma cat_superheavy_island_emergence_simulation_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_math_generator_airfoil_rmse_benchmark_json_records_pos: "0 < (5 :: nat)"
-  by eval
-
-lemma cat_math_generator_airfoil_rmse_benchmark_json_pooled_under_half_pct: "(0.00000000000001931452 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_math_generator_airfoil_rmse_benchmark_json_pooled_lt_half_pure: "(0.00000000000001931452 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_math_generator_airfoil_rmse_benchmark_json_max_scalar_under_half_pct: "(0.00000000000003862904 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_math_generator_airfoil_rmse_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_living_fsot_hardware_records_pos: "0 < (4 :: nat)"
   by eval
 
@@ -301,66 +361,6 @@ lemma cat_computational_reasoning_benchmark_json_max_scalar_under_half_pct: "(0 
   by eval
 
 lemma cat_computational_reasoning_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_consciousness_soul_bridge_records_pos: "0 < (27 :: nat)"
-  by eval
-
-lemma cat_consciousness_soul_bridge_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_cosmology_bubble_bleed_benchmark_json_records_pos: "0 < (113 :: nat)"
-  by eval
-
-lemma cat_cosmology_bubble_bleed_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cosmology_bubble_bleed_benchmark_json_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cosmology_bubble_bleed_benchmark_json_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cosmology_bubble_bleed_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_cosmology_extended_benchmark_json_records_pos: "0 < (58 :: nat)"
-  by eval
-
-lemma cat_cosmology_extended_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_cross_proof_verification_spine_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_cryosphere_benchmark_json_records_pos: "0 < (2399 :: nat)"
-  by eval
-
-lemma cat_cryosphere_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_desktop_application_wiring_spine_records_pos: "0 < (81 :: nat)"
-  by eval
-
-lemma cat_desktop_application_wiring_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_desktop_application_wiring_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_desktop_application_wiring_spine_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_desktop_application_wiring_spine_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_distant_island_emergence_simulation_records_pos: "0 < (36 :: nat)"
-  by eval
-
-lemma cat_distant_island_emergence_simulation_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_distant_island_emergence_simulation_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

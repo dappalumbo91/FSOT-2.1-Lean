@@ -1,10 +1,28 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 18/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 18/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma cosmological_cos_t_hi : (0.3537447475152753%R) < (0.37%R).
+Proof. lra. Qed.
+
+Lemma cosmological_cos_lt_neg_093 : (-0.9380820636690238%R) < (0.93%R).
+Proof. lra. Qed.
+
+Lemma alpha_pos : 0%R < (0.0008082937414140402%R).
+Proof. lra. Qed.
+
+Lemma cosmological_N_pos : 0%R < (1.0%R).
+Proof. lra. Qed.
+
+Lemma cosmological_P_pos : 0%R < (1.0%R).
+Proof. lra. Qed.
+
+Lemma acoustic_bleed_mul_sin_sq_le_phi : (0.7413341974524184%R) <= (1.618033988749895%R).
+Proof. lra. Qed.
 
 Lemma acoustic_inflow_le_acoustic_bleed_mul_phi : (1.6668538450045731%R) <= (1.694038919615534%R).
 Proof. lra. Qed.
@@ -287,22 +305,4 @@ Proof. lra. Qed.
 
 Lemma dark_energy_term2_eq_one : (1.0%R) = (1.0%R).
 Proof. reflexivity. Qed.
-
-Lemma cosmological_term1_dominates_term3 : (0.000000000000000007824928065101266%R) < (2.1956926285882763%R).
-Proof. lra. Qed.
-
-Lemma cellular_params_eq_biological : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-Lemma dark_energy_params_eq : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-Lemma cosmological_domain_eq : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-Lemma domain_term2_eq_one : (1.0%R) = (1.0%R).
-Proof. reflexivity. Qed.
-
-Lemma domain_term3_abs_lt_fifth : (0.000000000000000026942103679946702%R) < (0.2%R).
-Proof. lra. Qed.
 
