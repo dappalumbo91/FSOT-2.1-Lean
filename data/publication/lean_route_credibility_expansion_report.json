@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T15:52:56.745948+00:00",
+  "generated_at": "2026-08-04T01:51:19.635000+00:00",
   "routes": [
     {
       "route": "energy",
@@ -20,7 +20,7 @@
     {
       "route": "proton",
       "prior_status": "numerically_verified",
-      "record_count": 4,
+      "record_count": 14,
       "pooled_median_error_pct": 0.020741,
       "benchmark": "data/proton_lean_route_credibility_benchmark.json",
       "green": true
@@ -28,7 +28,7 @@
     {
       "route": "nuclear",
       "prior_status": "numerically_verified",
-      "record_count": 3,
+      "record_count": 13,
       "pooled_median_error_pct": 0.021221,
       "benchmark": "data/nuclear_lean_route_credibility_benchmark.json",
       "green": true
@@ -36,8 +36,8 @@
     {
       "route": "consciousness",
       "prior_status": "numerically_verified",
-      "record_count": 6,
-      "pooled_median_error_pct": 0.006671,
+      "record_count": 26,
+      "pooled_median_error_pct": 0.013342,
       "benchmark": "data/consciousness_lean_route_credibility_benchmark.json",
       "green": true
     },
@@ -52,7 +52,7 @@
     {
       "route": "observer",
       "prior_status": "numerically_verified",
-      "record_count": 3,
+      "record_count": 13,
       "pooled_median_error_pct": 0.014767,
       "benchmark": "data/observer_lean_route_credibility_benchmark.json",
       "green": true

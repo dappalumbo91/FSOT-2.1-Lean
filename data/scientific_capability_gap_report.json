@@ -1,0 +1,708 @@
+{
+  "generated_at": "2026-08-04T01:51:23.643167+00:00",
+  "goal": "Beat or exceed scientific SOTA / literature capability on measured observables",
+  "live_atlas": {
+    "green_pass": 414,
+    "green_fail": 0,
+    "worst_max_error_pct": 0.4989,
+    "worst_domain": "Phi_Morphogenetic_Scaling",
+    "domains_above_aspiration_0_05": 97,
+    "threshold_green_pct": 0.5,
+    "threshold_aspiration_pct": 0.05
+  },
+  "sota_domain_summary": {
+    "domains_compared": 35,
+    "domains_beats_sota": 35,
+    "beats_sota_fraction": 1.0,
+    "average_margin_vs_sota_pct": 5.822020755531143,
+    "aggregate_sota_free_parameters_replaced": 782,
+    "fsot_free_parameters_claim": 0,
+    "below_sota_domains": []
+  },
+  "sota_observable_summary": {
+    "observable_count": 65,
+    "beats_or_meets_sota_count": 57,
+    "headline_beats_or_meets_count": 14,
+    "below_sota_ids": [],
+    "parameter_honesty": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes"
+  },
+  "tightest_sota_leads_need_most_refine": [
+    {
+      "id": "airfoil_held_out_rmse",
+      "domain": "Acoustics",
+      "fsot_error_pct": 5.102551799768952,
+      "sota_typical_error_pct": 5.412721340832612,
+      "margin_vs_sota_pp": 0.3101695410636607,
+      "sota_model": "Chosen-feature quadratic regression",
+      "sota_free_parameters": 10,
+      "status": "beats_sota",
+      "refine_tier": "THIN_LEAD \u2014 refine to lock exceed",
+      "fsot_source": "data/math_generator_airfoil_rmse_benchmark.json"
+    },
+    {
+      "id": "higgs_branching",
+      "domain": "High_Energy_Physics",
+      "fsot_error_pct": 0.08808351263334355,
+      "sota_typical_error_pct": 0.5,
+      "margin_vs_sota_pp": 0.4119164873666564,
+      "sota_model": "PDG SM branching fits",
+      "sota_free_parameters": 25,
+      "status": "beats_sota",
+      "refine_tier": "THIN_LEAD \u2014 refine to lock exceed",
+      "fsot_source": "data/higgs_branching_benchmark.json"
+    },
+    {
+      "id": "H0_planck",
+      "domain": "Cosmology",
+      "fsot_error_pct": 0.13329620344595866,
+      "sota_typical_error_pct": 0.8,
+      "margin_vs_sota_pp": 0.6667037965540414,
+      "sota_model": "Planck 2018 TT,TE,EE+lowE",
+      "sota_free_parameters": 6,
+      "status": "beats_sota",
+      "refine_tier": "MODERATE_LEAD \u2014 optional polish",
+      "fsot_source": "data/h0_planck_benchmark.json"
+    },
+    {
+      "id": "Omega_Lambda",
+      "domain": "Cosmology",
+      "fsot_error_pct": 0.05,
+      "sota_typical_error_pct": 1.1,
+      "margin_vs_sota_pp": 1.05,
+      "sota_model": "Planck 2018 Lambda-CDM",
+      "sota_free_parameters": 6,
+      "status": "beats_sota",
+      "refine_tier": "MODERATE_LEAD \u2014 optional polish",
+      "fsot_source": null
+    },
+    {
+      "id": "N_eff",
+      "domain": "Cosmology",
+      "fsot_error_pct": 0.01,
+      "sota_typical_error_pct": 4.0,
+      "margin_vs_sota_pp": 3.99,
+      "sota_model": "Planck 2018",
+      "sota_free_parameters": 6,
+      "status": "beats_sota",
+      "refine_tier": "STRONG_LEAD \u2014 maintain",
+      "fsot_source": null
+    },
+    {
+      "id": "phobos_density",
+      "domain": "Planetary_Science",
+      "fsot_error_pct": 0.0,
+      "sota_typical_error_pct": 4.0,
+      "margin_vs_sota_pp": 4.0,
+      "sota_model": "JPL Horizons GM/MR",
+      "sota_free_parameters": 5,
+      "status": "beats_sota",
+      "refine_tier": "STRONG_LEAD \u2014 maintain",
+      "fsot_source": "data/planetary_structure_benchmark.json"
+    },
+    {
+      "id": "pa_temperature_channel",
+      "domain": "Planetary_Science",
+      "fsot_error_pct": 0.1764512018643632,
+      "sota_typical_error_pct": 5.0,
+      "margin_vs_sota_pp": 4.823548798135636,
+      "sota_model": "JPL Horizons vs NASA fact-sheet temperatures",
+      "sota_free_parameters": 35,
+      "status": "beats_sota",
+      "refine_tier": "STRONG_LEAD \u2014 maintain",
+      "fsot_source": "data/planetary_atmospheres_benchmark.json"
+    },
+    {
+      "id": "culinary_coffee_roast",
+      "domain": "Thermodynamics",
+      "fsot_error_pct": 0.07869745016116055,
+      "sota_typical_error_pct": 5.0,
+      "margin_vs_sota_pp": 4.921302549838839,
+      "sota_model": "SCA roast curve profiling",
+      "sota_free_parameters": 0,
+      "status": "beats_sota",
+      "refine_tier": "STRONG_LEAD \u2014 maintain",
+      "fsot_source": "data/culinary_arts_benchmark.json"
+    },
+    {
+      "id": "fic_best_intelligence_score",
+      "domain": "Psychology",
+      "fsot_error_pct": 0.029066672228905688,
+      "sota_typical_error_pct": 5.0,
+      "margin_vs_sota_pp": 4.970933327771094,
+      "sota_model": "INT8 LLM quantization fidelity drift",
+      "sota_free_parameters": 30,
+      "status": "beats_sota",
+      "refine_tier": "STRONG_LEAD \u2014 maintain",
+      "fsot_source": "data/intelligence_compression_benchmark.json"
+    },
+    {
+      "id": "fic_optimal_S_final",
+      "domain": "Psychology",
+      "fsot_error_pct": 0.04959966617804441,
+      "sota_typical_error_pct": 8.0,
+      "margin_vs_sota_pp": 7.950400333821956,
+      "sota_model": "Neural knowledge distillation scalar calibration",
+      "sota_free_parameters": 35,
+      "status": "beats_sota",
+      "refine_tier": "STRONG_LEAD \u2014 maintain",
+      "fsot_source": "data/intelligence_compression_benchmark.json"
+    },
+    {
+      "id": "onco_biology_strict",
+      "domain": "Biology",
+      "fsot_error_pct": 0.0,
+      "sota_typical_error_pct": 8.0,
+      "margin_vs_sota_pp": 8.0,
+      "sota_model": "Comparative genomics operon regression",
+      "sota_free_parameters": 25,
+      "status": "beats_sota",
+      "refine_tier": "STRONG_LEAD \u2014 maintain",
+      "fsot_source": "data/oncology_benchmark.json"
+    },
+    {
+      "id": "fic_optimal_fidelity",
+      "domain": "Psychology",
+      "fsot_error_pct": 0.0180939582217432,
+      "sota_typical_error_pct": 12.0,
+      "margin_vs_sota_pp": 11.981906041778256,
+      "sota_model": "Semantic autoencoder reconstruction error",
+      "sota_free_parameters": 25,
+      "status": "beats_sota",
+      "refine_tier": "STRONG_LEAD \u2014 maintain",
+      "fsot_source": "data/intelligence_compression_benchmark.json"
+    },
+    {
+      "id": "pa_pressure_channel",
+      "domain": "Planetary_Science",
+      "fsot_error_pct": 0.0,
+      "sota_typical_error_pct": 12.0,
+      "margin_vs_sota_pp": 12.0,
+      "sota_model": "Horizons physical block vs fact-sheet pressure",
+      "sota_free_parameters": 35,
+      "status": "beats_sota",
+      "refine_tier": "STRONG_LEAD \u2014 maintain",
+      "fsot_source": "data/planetary_atmospheres_benchmark.json"
+    },
+    {
+      "id": "deimos_density",
+      "domain": "Planetary_Science",
+      "fsot_error_pct": 0.0,
+      "sota_typical_error_pct": 17.0,
+      "margin_vs_sota_pp": 17.0,
+      "sota_model": "JPL Horizons GM/MR",
+      "sota_free_parameters": 5,
+      "status": "beats_sota",
+      "refine_tier": "STRONG_LEAD \u2014 maintain",
+      "fsot_source": "data/planetary_structure_benchmark.json"
+    }
+  ],
+  "strongest_sota_domain_leads": [
+    {
+      "domain": "Psychology",
+      "fsot_median": -0.0007873774796219538,
+      "sota_typical": 15.0,
+      "margin_pp": 15.000787377479622,
+      "sota_params": 50
+    },
+    {
+      "domain": "Sociology",
+      "fsot_median": -0.0007873774796219538,
+      "sota_typical": 15.0,
+      "margin_pp": 15.000787377479622,
+      "sota_params": 45
+    },
+    {
+      "domain": "Economics",
+      "fsot_median": -0.0007873774796219538,
+      "sota_typical": 12.0,
+      "margin_pp": 12.000787377479622,
+      "sota_params": 40
+    },
+    {
+      "domain": "Ecology",
+      "fsot_median": 0.0,
+      "sota_typical": 10.0,
+      "margin_pp": 10.0,
+      "sota_params": 15
+    },
+    {
+      "domain": "Quantum_Gravity",
+      "fsot_median": 0.0,
+      "sota_typical": 10.0,
+      "margin_pp": 10.0,
+      "sota_params": 8
+    },
+    {
+      "domain": "Biochemistry",
+      "fsot_median": 0.238193,
+      "sota_typical": 10.0,
+      "margin_pp": 9.761807,
+      "sota_params": 20
+    },
+    {
+      "domain": "Atmospheric_Physics",
+      "fsot_median": 0.0,
+      "sota_typical": 8.0,
+      "margin_pp": 8.0,
+      "sota_params": 50
+    },
+    {
+      "domain": "Biology",
+      "fsot_median": 0.0,
+      "sota_typical": 8.0,
+      "margin_pp": 8.0,
+      "sota_params": 25
+    },
+    {
+      "domain": "Meteorology",
+      "fsot_median": 0.0,
+      "sota_typical": 8.0,
+      "margin_pp": 8.0,
+      "sota_params": 50
+    },
+    {
+      "domain": "Oceanography",
+      "fsot_median": 0.0,
+      "sota_typical": 7.0,
+      "margin_pp": 7.0,
+      "sota_params": 30
+    }
+  ],
+  "thinnest_sota_domain_leads": [
+    {
+      "domain": "High_Energy_Physics",
+      "fsot_median": 0.003531579785510005,
+      "sota_typical": 1.5,
+      "margin_pp": 1.49646842021449,
+      "sota_model": "Standard Model fits (PDG)"
+    },
+    {
+      "domain": "Atomic_Physics",
+      "fsot_median": 0.07716615321446607,
+      "sota_typical": 2.0,
+      "margin_pp": 1.922833846785534,
+      "sota_model": "NIST ASD + Hartree-Fock"
+    },
+    {
+      "domain": "Particle_Physics",
+      "fsot_median": 0.07716615321446607,
+      "sota_typical": 2.0,
+      "margin_pp": 1.922833846785534,
+      "sota_model": "SM RG-improved couplings"
+    },
+    {
+      "domain": "Planetary_Science",
+      "fsot_median": 0.017721515188881255,
+      "sota_typical": 2.0,
+      "margin_pp": 1.9822784848111188,
+      "sota_model": "JPL DE440 ephemeris + GRAIL"
+    },
+    {
+      "domain": "Quantum_Mechanics",
+      "fsot_median": 0.963701,
+      "sota_typical": 3.0,
+      "margin_pp": 2.036299,
+      "sota_model": "Hartree-Fock + DFT"
+    },
+    {
+      "domain": "Cosmology",
+      "fsot_median": 0.0008593004744053731,
+      "sota_typical": 2.5,
+      "margin_pp": 2.4991406995255945,
+      "sota_model": "Planck Lambda-CDM MCMC"
+    },
+    {
+      "domain": "Optics",
+      "fsot_median": 0.344711,
+      "sota_typical": 3.0,
+      "margin_pp": 2.655289,
+      "sota_model": "Sellmeier + thin-film optimization"
+    },
+    {
+      "domain": "Astronomy",
+      "fsot_median": 0.0,
+      "sota_typical": 3.0,
+      "margin_pp": 3.0,
+      "sota_model": "Lambda-CDM + distance ladder"
+    },
+    {
+      "domain": "Quantum_Optics",
+      "fsot_median": 0.963701,
+      "sota_typical": 4.0,
+      "margin_pp": 3.036299,
+      "sota_model": "Jaynes-Cummings + cavity QED fits"
+    },
+    {
+      "domain": "Nuclear_Physics",
+      "fsot_median": 0.106761,
+      "sota_typical": 4.0,
+      "margin_pp": 3.893239,
+      "sota_model": "DFRM + shell-model fits"
+    },
+    {
+      "domain": "Particle_Astrophysics",
+      "fsot_median": 0.005577753040363415,
+      "sota_typical": 4.0,
+      "margin_pp": 3.9944222469596364,
+      "sota_model": "Fermi/LAT + CMB foreground templates"
+    },
+    {
+      "domain": "Astrophysics",
+      "fsot_median": 0.0007352339307450013,
+      "sota_typical": 4.0,
+      "margin_pp": 3.999264766069255,
+      "sota_model": "Stellar evolution + population synthesis"
+    },
+    {
+      "domain": "Electromagnetism",
+      "fsot_median": 0.0,
+      "sota_typical": 4.0,
+      "margin_pp": 4.0,
+      "sota_model": "Maxwell FEA + IGRF geomagnetic"
+    },
+    {
+      "domain": "Acoustics",
+      "fsot_median": 0.344711,
+      "sota_typical": 5.0,
+      "margin_pp": 4.655289,
+      "sota_model": "Finite-element + empirical QSPR"
+    },
+    {
+      "domain": "Thermodynamics",
+      "fsot_median": 0.191604,
+      "sota_typical": 5.0,
+      "margin_pp": 4.808396,
+      "sota_model": "NASA CEA + empirical fuel models"
+    }
+  ],
+  "near_gate_atlas_max": [
+    {
+      "domain": "Phi_Morphogenetic_Scaling",
+      "max_error_pct": 0.4989,
+      "median_error_pct": 0.01760779720633292,
+      "scalar_count": 289,
+      "max_name": "Hg"
+    },
+    {
+      "domain": "CRC_Handbook_Properties",
+      "max_error_pct": 0.498862,
+      "median_error_pct": 0.026922,
+      "scalar_count": 391,
+      "max_name": "Hg"
+    },
+    {
+      "domain": "geochemistry_benchmark.json",
+      "max_error_pct": 0.498368,
+      "median_error_pct": 0.006625234573930708,
+      "scalar_count": 153,
+      "max_name": "Ni_EDTA"
+    },
+    {
+      "domain": "Zebrafish_Predictive_Validation_Panel",
+      "max_error_pct": 0.492044,
+      "median_error_pct": 0.3579695,
+      "scalar_count": 20,
+      "max_name": "ZSNS003"
+    },
+    {
+      "domain": "materials_engineering_benchmark.json",
+      "max_error_pct": 0.491159,
+      "median_error_pct": 0.027170334947435038,
+      "scalar_count": 87,
+      "max_name": "Fe"
+    },
+    {
+      "domain": "quantum_materials_benchmark.json",
+      "max_error_pct": 0.489023,
+      "median_error_pct": 0.024318115591995593,
+      "scalar_count": 168,
+      "max_name": "K"
+    },
+    {
+      "domain": "Clinical_Medicine",
+      "max_error_pct": 0.480058,
+      "median_error_pct": 0.002458296751538192,
+      "scalar_count": 260,
+      "max_name": "TA/AT"
+    },
+    {
+      "domain": "immunology_benchmark.json",
+      "max_error_pct": 0.480058,
+      "median_error_pct": 0.061205,
+      "scalar_count": 84,
+      "max_name": "TA/AT"
+    },
+    {
+      "domain": "neuroimmunology_benchmark.json",
+      "max_error_pct": 0.480058,
+      "median_error_pct": 0.05041956982053305,
+      "scalar_count": 92,
+      "max_name": "TA/AT"
+    },
+    {
+      "domain": "Creative_Arts_Math_Spine",
+      "max_error_pct": 0.462279,
+      "median_error_pct": 0.0,
+      "scalar_count": 54,
+      "max_name": "sucrose_hydrolysis"
+    },
+    {
+      "domain": "culinary_arts_benchmark.json",
+      "max_error_pct": 0.462279,
+      "median_error_pct": 0.047615187057821064,
+      "scalar_count": 26,
+      "max_name": "sucrose_hydrolysis"
+    },
+    {
+      "domain": "Information_Theory_Public_Panel",
+      "max_error_pct": 0.462279,
+      "median_error_pct": 0.0,
+      "scalar_count": 24,
+      "max_name": "sucrose_hydrolysis"
+    },
+    {
+      "domain": "Music_Harmonics_Public_Panel",
+      "max_error_pct": 0.462279,
+      "median_error_pct": 0.0,
+      "scalar_count": 23,
+      "max_name": "sucrose_hydrolysis"
+    },
+    {
+      "domain": "Malware_Threat_Intelligence",
+      "max_error_pct": 0.431577,
+      "median_error_pct": 0.04593318440797134,
+      "scalar_count": 82,
+      "max_name": "Asp_pKR"
+    },
+    {
+      "domain": "Virology",
+      "max_error_pct": 0.431577,
+      "median_error_pct": 0.04593318440797614,
+      "scalar_count": 50,
+      "max_name": "Asp_pKR"
+    },
+    {
+      "domain": "oncology_benchmark.json",
+      "max_error_pct": 0.428925,
+      "median_error_pct": 0.05041956982053305,
+      "scalar_count": 66,
+      "max_name": "sildenafil_PDE5"
+    },
+    {
+      "domain": "Material_Property_Verification_Scaffold",
+      "max_error_pct": 0.424443,
+      "median_error_pct": 0.002271,
+      "scalar_count": 67,
+      "max_name": "NaBr"
+    },
+    {
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "max_error_pct": 0.4219868071131969,
+      "median_error_pct": 0.04789442119649137,
+      "scalar_count": 38,
+      "max_name": "dm2_31_abs"
+    },
+    {
+      "domain": "TOE_GR_SM_Deep",
+      "max_error_pct": 0.4219868071131969,
+      "median_error_pct": 0.013893853126499888,
+      "scalar_count": 72,
+      "max_name": "dm2_31_abs"
+    },
+    {
+      "domain": "Speleology",
+      "max_error_pct": 0.406301,
+      "median_error_pct": 0.0034072140135262413,
+      "scalar_count": 40,
+      "max_name": "He"
+    }
+  ],
+  "thin_panels": [
+    {
+      "domain": "Bibliography_Corpus_Panel",
+      "scalar_count": 1,
+      "max_error_pct": 0.013294,
+      "file": "bibliography_corpus_panel_benchmark.json"
+    },
+    {
+      "domain": "DESI_wa_Constraint",
+      "scalar_count": 1,
+      "max_error_pct": 0.000595,
+      "file": "desi_wa_constraint_benchmark.json"
+    },
+    {
+      "domain": "Hubble_Dark_Sector_Crosswalk",
+      "scalar_count": 2,
+      "max_error_pct": 0.039797,
+      "file": "hubble_dark_sector_crosswalk_benchmark.json"
+    },
+    {
+      "domain": "Formula_Corpus_Closure",
+      "scalar_count": 2,
+      "max_error_pct": 0.0,
+      "file": "formula_corpus_closure_benchmark.json"
+    },
+    {
+      "domain": "Proton_Lean_Route_Credibility",
+      "scalar_count": 3,
+      "max_error_pct": 0.322515,
+      "file": "proton_lean_route_credibility_benchmark.json"
+    },
+    {
+      "domain": "intelligence_compression_benchmark.json",
+      "scalar_count": 3,
+      "max_error_pct": 0.04959966617804441,
+      "file": "intelligence_compression_benchmark.json"
+    },
+    {
+      "domain": "Tokenization_Live_Panel",
+      "scalar_count": 3,
+      "max_error_pct": 0.031506,
+      "file": "tokenization_live_panel_benchmark.json"
+    },
+    {
+      "domain": "Physarum_Biological_CUDA_Panel",
+      "scalar_count": 3,
+      "max_error_pct": 0.022236,
+      "file": "physarum_biological_cuda_panel_benchmark.json"
+    },
+    {
+      "domain": "Nuclear_Lean_Route_Credibility",
+      "scalar_count": 3,
+      "max_error_pct": 0.021221,
+      "file": "nuclear_lean_route_credibility_benchmark.json"
+    },
+    {
+      "domain": "Observer_Lean_Route_Credibility",
+      "scalar_count": 3,
+      "max_error_pct": 0.014767,
+      "file": "observer_lean_route_credibility_benchmark.json"
+    },
+    {
+      "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+      "scalar_count": 3,
+      "max_error_pct": 0.0,
+      "file": "cold_fusion_lab_synthesis_crosswalk_benchmark.json"
+    },
+    {
+      "domain": "Foundational_Ontology_Spine",
+      "scalar_count": 3,
+      "max_error_pct": 0.0,
+      "file": "foundational_ontology_spine_benchmark.json"
+    },
+    {
+      "domain": "Tier_96_Circuit_Spine",
+      "scalar_count": 3,
+      "max_error_pct": 0.0,
+      "file": "tier_96_circuit_spine_benchmark.json"
+    },
+    {
+      "domain": "Unified_DB_Crosswalk_Spine",
+      "scalar_count": 4,
+      "max_error_pct": 0.192564276915754,
+      "file": "unified_db_crosswalk_spine_benchmark.json"
+    },
+    {
+      "domain": "Consciousness_Lean_Route_Credibility",
+      "scalar_count": 4,
+      "max_error_pct": 0.031506,
+      "file": "consciousness_lean_route_credibility_benchmark.json"
+    },
+    {
+      "domain": "VL_Agent_Distill_Panel",
+      "scalar_count": 4,
+      "max_error_pct": 0.031506,
+      "file": "vl_agent_distill_panel_benchmark.json"
+    },
+    {
+      "domain": "Living_FSOT_Hardware",
+      "scalar_count": 4,
+      "max_error_pct": 1.3209968920124464e-14,
+      "file": "living_fsot_hardware_benchmark.json"
+    },
+    {
+      "domain": "Astrophysical_Structure_Crosswalk",
+      "scalar_count": 4,
+      "max_error_pct": 0.0,
+      "file": "astrophysical_structure_crosswalk_benchmark.json"
+    },
+    {
+      "domain": "Compact_Object_Binary_Events",
+      "scalar_count": 4,
+      "max_error_pct": 0.0,
+      "file": "compact_object_binary_events_benchmark.json"
+    },
+    {
+      "domain": "Interactive_Media_Prereg_Scaffold",
+      "scalar_count": 4,
+      "max_error_pct": 0.0,
+      "file": "interactive_media_prereg_scaffold_benchmark.json"
+    },
+    {
+      "domain": "Scientific_Expansion_Depth_Spine",
+      "scalar_count": 4,
+      "max_error_pct": 0.0,
+      "file": "scientific_expansion_depth_spine_benchmark.json"
+    },
+    {
+      "domain": "Schematic_Netlist_Intrinsic_Panel",
+      "scalar_count": 5,
+      "max_error_pct": 0.051887,
+      "file": "schematic_netlist_intrinsic_panel_benchmark.json"
+    },
+    {
+      "domain": "Ionospheric_Chemistry_Coupling",
+      "scalar_count": 5,
+      "max_error_pct": 0.023609235048340338,
+      "file": "ionospheric_chemistry_coupling_benchmark.json"
+    },
+    {
+      "domain": "Canonical_Oracle_Panel",
+      "scalar_count": 5,
+      "max_error_pct": 0.013294,
+      "file": "canonical_oracle_panel_benchmark.json"
+    },
+    {
+      "domain": "Fuel_Candidate_Prereg_Scaffold",
+      "scalar_count": 5,
+      "max_error_pct": 0.0,
+      "file": "fuel_candidate_prereg_scaffold_benchmark.json"
+    }
+  ],
+  "expansion_map": {
+    "total_scientific_domains": 404,
+    "recommended_next_waves": [
+      "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
+      "Knowledge-base per-formula portable bundle",
+      "Culinary arts fermentation + Maillard kinetics extension",
+      "Materials engineering species-catalog machine/molecule bridge",
+      "Re-ingest Tier 38 deep caches from Game drive on schedule"
+    ],
+    "thin_empirical_coverage": [
+      "Neuroscience"
+    ]
+  },
+  "toe_depth": {
+    "label_B": true,
+    "gr_sm_ckm_overall_ok": true,
+    "next_research": [
+      "CKM angle centrals (\u03b1,\u03b2,\u03b3) residual-gated to \u22640.5% of PDG central (now seed predictions inside experimental bands + exact \u03b1+\u03b2+\u03b3=\u03c0)",
+      "Full non-abelian path-integral confinement theorem (scales \u039b_QCD, \u221a\u03c3, Casimirs, \u03b2\u2080 shipped)",
+      "Spin-2 Fock uniqueness from fluid action (helicity/TT/quadrupole probes shipped)",
+      "Independent clean-clone by third party",
+      "arXiv endorsement + peer review"
+    ]
+  },
+  "refine_strategy": {
+    "beat_or_exceed_rule": "FSOT already beats registered SOTA typical error on headline observables with 0 free fit coefficients. To *exceed more confidently*, refine THIN_LEAD items (margin < 0.5 pp) first: higgs_mass, airfoil RMSE, higgs_branching, H0_planck \u2014 without adding free parameters.",
+    "near_gate_rule": "Atlas max ~0.5% residuals are mostly SMILES closed-form headroom already under green; do not free-param shave. Use formula-class upgrades only.",
+    "coverage_rule": "Thicken thin panels (lean routes, hybrid FI) for capability breadth.",
+    "priority_queue": [
+      "1. THIN_LEAD SOTA observables (higgs_mass, airfoil, H0_planck)",
+      "2. Near-gate formula-class only if definitional (not fishing)",
+      "3. Thin-panel thickening (lean routes, multi-hero strata)",
+      "4. TOE research spine (path-integral, spin-2 Fock, CKM angle centrals)",
+      "5. Registered expansion waves (culinary Maillard, materials bridge, KB)"
+    ]
+  }
+}

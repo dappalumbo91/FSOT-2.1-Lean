@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-16T15:52:56.786804+00:00",
+  "generated_at": "2026-08-04T01:51:19.674125+00:00",
   "domain": "Proton_Lean_Route_Credibility",
-  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "lean_route_credibility_expansion:proton"
   ],
@@ -11,13 +11,13 @@
     "particle"
   ],
   "D_eff": 8,
-  "record_count": 4,
-  "observable_count": 4,
-  "scalar_record_count": 3,
+  "record_count": 14,
+  "observable_count": 14,
+  "scalar_record_count": 13,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.020741,
   "pooled_median_error_pct": 0.020741,
-  "headline_median_error_pct": 0.322515,
+  "headline_median_error_pct": 0.04199369724217353,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -39,16 +39,16 @@
       "computed": 0.020741,
       "measured": 0.0,
       "error_pct": 0.020741,
-      "observable_count": 4
+      "observable_count": 14
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "lean_route_proton",
       "name": "credibility_depth",
-      "computed": 0.322515,
+      "computed": 0.041994,
       "measured": 0.0,
-      "error_pct": 0.322515,
-      "observable_count": 2
+      "error_pct": 0.04199369724217353,
+      "observable_count": 12
     }
   ],
   "material_records": [
@@ -91,11 +91,111 @@
       "error_pct": 0.020741,
       "lab": "lean_route_proton_lab",
       "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "tau",
+      "computed": 1774.3897235273942,
+      "measured": 1776.86,
+      "error_pct": 0.139025,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "proton",
+      "computed": 941.3036566521167,
+      "measured": 938.272,
+      "error_pct": 0.323111,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "neutron",
+      "computed": 941.3036566521167,
+      "measured": 939.565,
+      "error_pct": 0.185049,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "pion_pm",
+      "computed": 139.56693362840684,
+      "measured": 139.57,
+      "error_pct": 0.0021970133933865424,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "pion_0",
+      "computed": 134.97696759145,
+      "measured": 134.977,
+      "error_pct": 2.4010423996909433e-05,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "kaon_pm",
+      "computed": 493.6904773043601,
+      "measured": 493.677,
+      "error_pct": 0.002729984252880815,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "W_boson",
+      "computed": 80368.975983002,
+      "measured": 80369.0,
+      "error_pct": 2.988341026416192e-05,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "Z_boson",
+      "computed": 91422.48586497341,
+      "measured": 91188.0,
+      "error_pct": 0.257145528987815,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "Higgs",
+      "computed": 125200.01875723811,
+      "measured": 125200.0,
+      "error_pct": 1.4981819577470493e-05,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "D_meson",
+      "computed": 1868.874860640142,
+      "measured": 1869.66,
+      "error_pct": 0.04199369724217353,
+      "lab": "lean_route_proton_lab",
+      "lean_route": "proton"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.020741,
-    "max_scalar_error_pct": 0.322515,
+    "max_scalar_error_pct": 0.323111,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

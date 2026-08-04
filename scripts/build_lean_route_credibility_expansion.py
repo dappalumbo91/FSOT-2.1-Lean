@@ -153,7 +153,8 @@ def _partial_route_records(route_id: str, bench_files: list[str]) -> tuple[list[
                 "lean_route": route_id,
             }
         )
-        for r in (bench.get("material_records") or bench.get("records") or [])[:2]:
+        # Thickening wave: relay up to 12 material rows per source bench (was 2)
+        for r in (bench.get("material_records") or bench.get("records") or [])[:12]:
             if r.get("error_pct") is None:
                 continue
             err = float(r["error_pct"])
