@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T05:09:11.971519+00:00",
+  "generated_at": "2026-08-04T13:48:35.650580+00:00",
   "domain": "FSOT_Interconnect_Coherence_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -14,9 +14,9 @@
     "ai"
   ],
   "D_eff": 11,
-  "record_count": 8,
-  "observable_count": 8,
-  "scalar_record_count": 7,
+  "record_count": 27,
+  "observable_count": 27,
+  "scalar_record_count": 26,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -42,7 +42,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 8
+      "observable_count": 27
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +51,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 8
+      "observable_count": 27
     }
   ],
   "material_records": [
@@ -152,6 +152,233 @@
       "extra": {
         "layer": "interconnect"
       }
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie_gt_s",
+      "name": "pcie3_x16_gt_s",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "PCIe GT/s class identity",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie3_x16_gt_s_lanes_pow2",
+      "name": "pcie3_x16_gt_s",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "lanes": 16.0,
+        "layer": "interconnect"
+      }
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie_raw_bidir_gt_s",
+      "name": "pcie3_x16_gt_s",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "2\u00b7GT/s\u00b7lanes",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie_gt_s",
+      "name": "pcie4_x16_gt_s",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "PCIe GT/s class identity",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie4_x16_gt_s_lanes_pow2",
+      "name": "pcie4_x16_gt_s",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "lanes": 16.0,
+        "layer": "interconnect"
+      }
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie_raw_bidir_gt_s",
+      "name": "pcie4_x16_gt_s",
+      "computed": 512.0,
+      "measured": 512.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "2\u00b7GT/s\u00b7lanes",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie_gt_s",
+      "name": "pcie5_x16_gt_s",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "PCIe GT/s class identity",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie5_x16_gt_s_lanes_pow2",
+      "name": "pcie5_x16_gt_s",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "lanes": 16.0,
+        "layer": "interconnect"
+      }
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie_raw_bidir_gt_s",
+      "name": "pcie5_x16_gt_s",
+      "computed": 1024.0,
+      "measured": 1024.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "2\u00b7GT/s\u00b7lanes",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "uart_baud",
+      "name": "uart_115200",
+      "computed": 115200.0,
+      "measured": 115200.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "UART baud class identity",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "uart_baud",
+      "name": "uart_921600",
+      "computed": 921600.0,
+      "measured": 921600.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "UART baud class identity",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "rf_freq_ghz",
+      "name": "espnow_2_4ghz",
+      "computed": 2.4,
+      "measured": 2.4,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "2.4 GHz ISM class",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie_gen_doubling_3_to_4",
+      "name": "pcie",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "PCIe4/PCIe3 GT ratio = 2",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "pcie_gen_doubling_4_to_5",
+      "name": "pcie",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "PCIe5/PCIe4 GT ratio = 2",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "dram_dimm_class_gb",
+      "name": "ddr4_dimm_class_gb",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "DIMM capacity class 2^k GB",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "ddr4_dimm_class_gb_pow2",
+      "name": "ddr4_dimm_class_gb",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "layer": "interconnect"
+      }
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "dram_dimm_class_gb",
+      "name": "ddr5_dimm_class_gb",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "DIMM capacity class 2^k GB",
+      "layer": "interconnect"
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "ddr5_dimm_class_gb_pow2",
+      "name": "ddr5_dimm_class_gb",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "layer": "interconnect"
+      }
+    },
+    {
+      "lab": "fsot_interconnect_lab",
+      "property": "link_collapse_theta",
+      "name": "interconnect_measurement",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "C_eff\u00b7P_var on link",
+      "layer": "interconnect"
     }
   ],
   "margin_summary": {

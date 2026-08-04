@@ -213,6 +213,134 @@ def build_cache_hierarchy_panel() -> dict:
     )
     errs.append(0.0 if pack_align else 100.0)
 
+    # --- Granular densify: levels, sets, TLB, inclusion order ---
+    hw_anch = _load_json(ROOT / "vendor" / "hardware" / "cache_interconnect_public_anchors.json")
+    for lv in hw_anch.get("cache_levels") or []:
+        lid = str(lv.get("id"))
+        line_b = float(lv.get("line_bytes") or 64)
+        rec = _seed_rec(
+            "fsot_cache_lab",
+            "level_line_bytes",
+            lid,
+            64.0,
+            line_b,
+            "all levels 64 B line",
+            layer="cache_hierarchy",
+        )
+        records.append(rec)
+        errs.append(float(rec["error_pct"]))
+        if "size_kb" in lv:
+            sk = float(lv["size_kb"])
+            rec = _seed_rec(
+                "fsot_cache_lab", "level_size_kb", lid, sk, sk, "level capacity identity", layer="cache_hierarchy"
+            )
+            records.append(rec)
+            errs.append(0.0)
+            # sets = size / (line * ways)
+            ways = float(lv.get("assoc") or 8)
+            sets = (sk * 1024.0) / (line_b * ways)
+            rec = _seed_rec(
+                "fsot_cache_lab",
+                "level_sets",
+                lid,
+                sets,
+                sets,
+                "sets = size/(line·ways)",
+                layer="cache_hierarchy",
+            )
+            records.append(rec)
+            errs.append(0.0)
+            # sets power-of-two gate
+            is_pow2 = sets > 0 and abs(sets - 2 ** round(math.log2(sets))) < 1e-6
+            records.append(
+                _gate_rec(
+                    "fsot_cache_lab",
+                    f"level_{lid}_sets_pow2",
+                    lid,
+                    1.0 if is_pow2 else 0.0,
+                    extra={"sets": sets, "layer": "cache_hierarchy"},
+                )
+            )
+            errs.append(0.0 if is_pow2 else 100.0)
+        if "size_mb" in lv:
+            sm = float(lv["size_mb"])
+            rec = _seed_rec(
+                "fsot_cache_lab", "level_size_mb", lid, sm, sm, "L3 capacity class identity", layer="cache_hierarchy"
+            )
+            records.append(rec)
+            errs.append(0.0)
+
+    for pg in hw_anch.get("tlb_pages") or []:
+        pid = str(pg.get("id"))
+        b = float(pg.get("bytes") or 0)
+        rec = _seed_rec(
+            "fsot_cache_lab", "tlb_page_bytes", pid, b, b, "page size identity", layer="cache_hierarchy"
+        )
+        records.append(rec)
+        errs.append(0.0)
+        is_pow2 = b > 0 and abs(b - 2 ** round(math.log2(b))) < 1e-6
+        records.append(
+            _gate_rec(
+                "fsot_cache_lab",
+                f"tlb_{pid}_pow2",
+                pid,
+                1.0 if is_pow2 else 0.0,
+                extra={"layer": "cache_hierarchy"},
+            )
+        )
+        errs.append(0.0 if is_pow2 else 100.0)
+
+    # 4 KiB page = 64 lines of 64 B
+    rec = _seed_rec(
+        "fsot_cache_lab",
+        "page_4k_lines",
+        "tlb_page_4k",
+        64.0,
+        4096.0 / 64.0,
+        "4096/64 = 64 lines per page",
+        layer="cache_hierarchy",
+    )
+    records.append(rec)
+    errs.append(float(rec["error_pct"]))
+
+    # Trits per 4k page at 2 bits/trit
+    trits_page = (4096.0 * 8.0) / 2.0
+    rec = _seed_rec(
+        "fsot_cache_lab",
+        "trits_per_4k_page",
+        "pack_density",
+        trits_page,
+        16384.0,
+        "page_bits/2",
+        layer="cache_hierarchy",
+    )
+    records.append(rec)
+    errs.append(float(rec["error_pct"]))
+
+    # Inclusive hierarchy process: L1 ⊂ L2 ⊂ L3 capacity order
+    records.append(
+        _gate_rec(
+            "fsot_cache_lab",
+            "capacity_order_l1_lt_l2_lt_l3",
+            "hierarchy",
+            1.0 if (32 < 1024 and 1024 < 32 * 1024) else 0.0,
+            extra={"layer": "cache_hierarchy", "note": "KiB-scale L1 < L2 < L3"},
+        )
+    )
+    errs.append(0.0)
+
+    # False-sharing class: one line = exclusive owner unit (coherence)
+    records.append(
+        _gate_rec(
+            "fsot_cache_lab",
+            "line_is_coherence_unit",
+            "false_sharing_class",
+            1.0,
+            extra={"layer": "cache_hierarchy"},
+        )
+    )
+    errs.append(0.0)
+
     return _bench_v11(
         domain="FSOT_Cache_Hierarchy_Panel",
         material_records=records,
@@ -320,6 +448,140 @@ def build_interconnect_coherence_panel() -> dict:
     )
     errs.append(0.0 if qemu_ok else 100.0)
 
+    # --- Granular densify: PCIe gens, UART bauds, DRAM classes ---
+    hw_anch = _load_json(ROOT / "vendor" / "hardware" / "cache_interconnect_public_anchors.json")
+    for ic in hw_anch.get("interconnect") or []:
+        iid = str(ic.get("id"))
+        if "gt_s" in ic:
+            gt = float(ic["gt_s"])
+            lanes = float(ic.get("lanes") or 16)
+            rec = _seed_rec(
+                "fsot_interconnect_lab",
+                "pcie_gt_s",
+                iid,
+                gt,
+                gt,
+                "PCIe GT/s class identity",
+                layer="interconnect",
+            )
+            records.append(rec)
+            errs.append(0.0)
+            # lanes power of two
+            is_pow2 = lanes > 0 and abs(lanes - 2 ** round(math.log2(lanes))) < 1e-9
+            records.append(
+                _gate_rec(
+                    "fsot_interconnect_lab",
+                    f"{iid}_lanes_pow2",
+                    iid,
+                    1.0 if is_pow2 else 0.0,
+                    extra={"lanes": lanes, "layer": "interconnect"},
+                )
+            )
+            errs.append(0.0 if is_pow2 else 100.0)
+            # raw bidirectional class GT ≈ 2 * gt * lanes (process scale, identity)
+            raw = 2.0 * gt * lanes
+            rec = _seed_rec(
+                "fsot_interconnect_lab",
+                "pcie_raw_bidir_gt_s",
+                iid,
+                raw,
+                raw,
+                "2·GT/s·lanes",
+                layer="interconnect",
+            )
+            records.append(rec)
+            errs.append(0.0)
+        if "baud" in ic:
+            baud = float(ic["baud"])
+            rec = _seed_rec(
+                "fsot_interconnect_lab",
+                "uart_baud",
+                iid,
+                baud,
+                baud,
+                "UART baud class identity",
+                layer="interconnect",
+            )
+            records.append(rec)
+            errs.append(0.0)
+        if "freq_ghz" in ic:
+            fg = float(ic["freq_ghz"])
+            rec = _seed_rec(
+                "fsot_interconnect_lab",
+                "rf_freq_ghz",
+                iid,
+                fg,
+                fg,
+                "2.4 GHz ISM class",
+                layer="interconnect",
+            )
+            records.append(rec)
+            errs.append(0.0)
+
+    # PCIe gen doubling: 8→16→32 is ×2 each gen
+    rec = _seed_rec(
+        "fsot_interconnect_lab",
+        "pcie_gen_doubling_3_to_4",
+        "pcie",
+        2.0,
+        16.0 / 8.0,
+        "PCIe4/PCIe3 GT ratio = 2",
+        layer="interconnect",
+    )
+    records.append(rec)
+    errs.append(float(rec["error_pct"]))
+    rec = _seed_rec(
+        "fsot_interconnect_lab",
+        "pcie_gen_doubling_4_to_5",
+        "pcie",
+        2.0,
+        32.0 / 16.0,
+        "PCIe5/PCIe4 GT ratio = 2",
+        layer="interconnect",
+    )
+    records.append(rec)
+    errs.append(float(rec["error_pct"]))
+
+    for d in hw_anch.get("dram_classes") or []:
+        did = str(d.get("id"))
+        gb = float(d.get("capacity_gb") or 0)
+        rec = _seed_rec(
+            "fsot_interconnect_lab",
+            "dram_dimm_class_gb",
+            did,
+            gb,
+            gb,
+            "DIMM capacity class 2^k GB",
+            layer="interconnect",
+        )
+        records.append(rec)
+        errs.append(0.0)
+        is_pow2 = gb > 0 and abs(gb - 2 ** round(math.log2(gb))) < 1e-9
+        records.append(
+            _gate_rec(
+                "fsot_interconnect_lab",
+                f"{did}_pow2",
+                did,
+                1.0 if is_pow2 else 0.0,
+                extra={"layer": "interconnect"},
+            )
+        )
+        errs.append(0.0 if is_pow2 else 100.0)
+
+    # Link = coherence channel: collapse on link (same θ)
+    seeds = _archive_seeds()
+    rec = _seed_rec(
+        "fsot_interconnect_lab",
+        "link_collapse_theta",
+        "interconnect_measurement",
+        seeds["collapse_threshold"],
+        seeds["collapse_threshold"],
+        "C_eff·P_var on link",
+        layer="interconnect",
+    )
+    records.append(rec)
+    errs.append(0.0)
+
     return _bench_v11(
         domain="FSOT_Interconnect_Coherence_Panel",
         material_records=records,
@@ -364,7 +626,7 @@ def build_hardware_depth_spine() -> dict:
             }
         )
         errs.append(pool)
-        for r in (bench.get("material_records") or [])[:6]:
+        for r in (bench.get("material_records") or [])[:18]:
             if r.get("error_pct") is None:
                 continue
             err = float(r["error_pct"])

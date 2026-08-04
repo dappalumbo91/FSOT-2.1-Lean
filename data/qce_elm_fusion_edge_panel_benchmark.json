@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T13:41:59.584735+00:00",
+  "generated_at": "2026-08-04T13:48:35.161360+00:00",
   "domain": "QCE_ELM_Fusion_Edge_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -13,9 +13,9 @@
     "plasma_physics"
   ],
   "D_eff": 14,
-  "record_count": 22,
-  "observable_count": 22,
-  "scalar_record_count": 20,
+  "record_count": 60,
+  "observable_count": 60,
+  "scalar_record_count": 57,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -41,7 +41,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 22
+      "observable_count": 60
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +50,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 22
+      "observable_count": 60
     }
   ],
   "material_records": [
@@ -113,7 +113,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "order-1 km/s filament velocity class"
+      "formula": "literature velocity class identity"
     },
     {
       "lab": "qce_elm_lab",
@@ -123,7 +123,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "order-1 cm perpendicular size class"
+      "formula": "literature perp size identity"
     },
     {
       "lab": "qce_elm_lab",
@@ -133,7 +133,7 @@
       "measured": 20.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "20 m = 4\u00b75 parallel elongation class"
+      "formula": "literature parallel length identity"
     },
     {
       "lab": "qce_elm_lab",
@@ -143,7 +143,207 @@
       "measured": 2000.0,
       "error_pct": 0.0,
       "eval_kind": "live_formula",
-      "formula": "L_parallel / perp = 20 / 0.01"
+      "formula": "L_parallel_m / (perp_cm\u00b70.01)"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_v_km_s",
+      "name": "QCE_blob_slow",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "literature velocity class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_perp_cm",
+      "name": "QCE_blob_slow",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "literature perp size identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_parallel_m",
+      "name": "QCE_blob_slow",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "literature parallel length identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_aspect_ratio",
+      "name": "QCE_blob_slow",
+      "computed": 2000.0,
+      "measured": 2000.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "L_parallel_m / (perp_cm\u00b70.01)"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_v_km_s",
+      "name": "QCE_blob_fast",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "literature velocity class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_perp_cm",
+      "name": "QCE_blob_fast",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "literature perp size identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_parallel_m",
+      "name": "QCE_blob_fast",
+      "computed": 40.0,
+      "measured": 40.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "literature parallel length identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "blob_aspect_ratio",
+      "name": "QCE_blob_fast",
+      "computed": 2000.0,
+      "measured": 2000.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "L_parallel_m / (perp_cm\u00b70.01)"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "sol_width_mm",
+      "name": "sol_width_min_mm",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SOL width class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "sol_width_mm",
+      "name": "sol_width_max_mm",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SOL width class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "sol_width_mm",
+      "name": "sol_width_mid_mm",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SOL width class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "sol_width_span_mm",
+      "name": "sol_span",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "max\u2212min = 9 mm"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "sol_width_ratio_max_min",
+      "name": "sol_ratio",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "max/min = 10"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "exhaust_power_mw",
+      "name": "present_devices_low_mw",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "exhaust power class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "exhaust_power_mw",
+      "name": "present_devices_mw",
+      "computed": 15.0,
+      "measured": 15.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "exhaust power class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "exhaust_power_mw",
+      "name": "present_devices_high_mw",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "exhaust power class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "exhaust_power_mw",
+      "name": "reactor_scale_mw",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "exhaust power class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "exhaust_power_mw",
+      "name": "reactor_scale_high_mw",
+      "computed": 150.0,
+      "measured": 150.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "exhaust power class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "temp_class_kev",
+      "name": "core_fusion_class",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "temperature class identity"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "temp_class_kev",
+      "name": "edge_pedestal_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "temperature class identity"
     },
     {
       "lab": "qce_elm_lab",
@@ -169,6 +369,39 @@
     },
     {
       "lab": "qce_elm_lab",
+      "property": "qce_high_shaping",
+      "name": "QCE_Goldilocks",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "qce_high_sep_density",
+      "name": "QCE_Goldilocks",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "qce_broad_divertor",
+      "name": "QCE_Goldilocks",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
       "property": "regime_ELMy_H_mode_continuous_exhaust",
       "name": "ELMy_H_mode",
       "computed": 1.0,
@@ -182,6 +415,28 @@
       "lab": "qce_elm_lab",
       "property": "regime_ELMy_H_mode_hmode_class",
       "name": "ELMy_H_mode",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "regime_L_mode_continuous_exhaust",
+      "name": "L_mode",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "regime_L_mode_hmode_class",
+      "name": "L_mode",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -260,6 +515,28 @@
     },
     {
       "lab": "qce_elm_lab",
+      "property": "machine_EU_DEMO_QCE_candidate_qce_candidate",
+      "name": "EU_DEMO_QCE_candidate",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "machine_SPARC_QCE_candidate_qce_candidate",
+      "name": "SPARC_QCE_candidate",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
       "property": "reactor_to_present_power_ratio",
       "name": "exhaust_power_scale",
       "computed": 6.666666666666667,
@@ -277,6 +554,126 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "two-mode self-org exhaust"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "mech_KBM_mesoscale_maxwell_stress_suppresses_zonal",
+      "name": "KBM_mesoscale",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "mech_KBM_mesoscale_flr_stabilizes_transport_efficiency",
+      "name": "KBM_mesoscale",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "mech_RXM_xpoint_interchange_near_xpoint",
+      "name": "RXM_xpoint",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "obs8_mean_profiles",
+      "name": "GRILLIX_validation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "obs8_fluctuation_spectra",
+      "name": "GRILLIX_validation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "obs8_mode_structure",
+      "name": "GRILLIX_validation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "obs8_blob_statistics",
+      "name": "GRILLIX_validation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "obs8_decoupled_falloff_lengths",
+      "name": "GRILLIX_validation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "obs8_count",
+      "name": "validation_suite",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "observable class count"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "prl_editors_suggestion",
+      "name": "Zhang_2026",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
+    },
+    {
+      "lab": "qce_elm_lab",
+      "property": "prl_featured_in_physics",
+      "name": "Zhang_2026",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
     },
     {
       "lab": "qce_elm_lab",

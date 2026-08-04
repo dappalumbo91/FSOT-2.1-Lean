@@ -1,0 +1,26 @@
+{
+  "source": "Industry x86/AMD64 structural defaults + FSOT packing laws; not SKU microbench free-fits",
+  "cache_levels": [
+    {"id": "L1D", "size_kb": 32, "assoc": 8, "line_bytes": 64, "latency_cycles_class": 4},
+    {"id": "L1I", "size_kb": 32, "assoc": 8, "line_bytes": 64, "latency_cycles_class": 4},
+    {"id": "L2", "size_kb": 1024, "assoc": 8, "line_bytes": 64, "latency_cycles_class": 14},
+    {"id": "L3", "size_mb": 32, "assoc": 16, "line_bytes": 64, "latency_cycles_class": 50}
+  ],
+  "tlb_pages": [
+    {"id": "page_4k", "bytes": 4096},
+    {"id": "page_2m", "bytes": 2097152},
+    {"id": "page_1g", "bytes": 1073741824}
+  ],
+  "interconnect": [
+    {"id": "pcie3_x16_gt_s", "gt_s": 8.0, "lanes": 16},
+    {"id": "pcie4_x16_gt_s", "gt_s": 16.0, "lanes": 16},
+    {"id": "pcie5_x16_gt_s", "gt_s": 32.0, "lanes": 16},
+    {"id": "uart_115200", "baud": 115200},
+    {"id": "uart_921600", "baud": 921600},
+    {"id": "espnow_2_4ghz", "freq_ghz": 2.4}
+  ],
+  "dram_classes": [
+    {"id": "ddr4_dimm_class_gb", "capacity_gb": 16},
+    {"id": "ddr5_dimm_class_gb", "capacity_gb": 32}
+  ]
+}

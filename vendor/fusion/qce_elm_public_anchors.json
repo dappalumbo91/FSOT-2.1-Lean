@@ -1,13 +1,16 @@
 {
-  "source": "Public literature + TechTimes summary of Zhang et al. PRL 2026 (Max Planck IPP / GRILLIX QCE); ASDEX Upgrade / JET QCE campaign reports",
+  "source": "Public literature + TechTimes summary of Zhang et al. PRL 2026 (Max Planck IPP / GRILLIX QCE); ASDEX Upgrade / JET QCE campaign reports; Eurofusion QCE notes",
   "paper": {
     "id": "Zhang_et_al_PRL_2026_QCE",
     "title": "First-principles turbulence explanation of Quasicontinuous Exhaust (QCE)",
     "journal": "Physical Review Letters",
     "year": 2026,
+    "volume_article": "137, 055102",
     "institute": "Max Planck Institute for Plasma Physics",
     "doi_hint": "10.1103/j44y-5dp6",
-    "method": "GRILLIX full-f electromagnetic turbulence, no free-parameter retune to force profiles"
+    "method": "GRILLIX full-f electromagnetic turbulence, no free-parameter retune to force profiles",
+    "editors_suggestion": true,
+    "featured_in_physics": true
   },
   "regimes": [
     {
@@ -17,7 +20,10 @@
       "h_mode_class_confinement": true,
       "access_primary": "ballooning_beta_parameter",
       "access_secondary_not_required": "edge_collisionality",
-      "self_organized_turbulence": true
+      "self_organized_turbulence": true,
+      "high_shaping_required": true,
+      "high_separatrix_density": true,
+      "divertor_heat_footprint_broad": true
     },
     {
       "id": "ELMy_H_mode",
@@ -25,6 +31,14 @@
       "elm_free_continuous_exhaust": false,
       "h_mode_class_confinement": true,
       "elm_energy_fraction_upper": 0.20,
+      "self_organized_turbulence": false,
+      "divertor_heat_footprint_broad": false
+    },
+    {
+      "id": "L_mode",
+      "name": "L-mode baseline",
+      "elm_free_continuous_exhaust": true,
+      "h_mode_class_confinement": false,
       "self_organized_turbulence": false
     }
   ],
@@ -32,12 +46,15 @@
     {
       "id": "KBM_mesoscale",
       "name": "Kinetic ballooning mode (electromagnetic self-organization)",
-      "role": "pedestal_foot_transport_without_full_flatten"
+      "role": "pedestal_foot_transport_without_full_flatten",
+      "maxwell_stress_suppresses_zonal": true,
+      "flr_stabilizes_transport_efficiency": true
     },
     {
       "id": "RXM_xpoint",
       "name": "Resistive X-point mode",
-      "role": "blob_ejection_to_SOL"
+      "role": "blob_ejection_to_SOL",
+      "interchange_near_xpoint": true
     }
   ],
   "blob_filaments": [
@@ -46,15 +63,48 @@
       "v_km_s": 1.0,
       "perp_size_cm": 1.0,
       "parallel_length_m": 20.0
+    },
+    {
+      "id": "QCE_blob_slow",
+      "v_km_s": 0.5,
+      "perp_size_cm": 0.5,
+      "parallel_length_m": 10.0
+    },
+    {
+      "id": "QCE_blob_fast",
+      "v_km_s": 2.0,
+      "perp_size_cm": 2.0,
+      "parallel_length_m": 40.0
     }
   ],
+  "sol_geometry": [
+    {"id": "sol_width_min_mm", "width_mm": 1.0},
+    {"id": "sol_width_max_mm", "width_mm": 10.0},
+    {"id": "sol_width_mid_mm", "width_mm": 5.0}
+  ],
   "power_scales": [
+    {"id": "present_devices_low_mw", "exhaust_power_mw": 10.0},
     {"id": "present_devices_mw", "exhaust_power_mw": 15.0},
-    {"id": "reactor_scale_mw", "exhaust_power_mw": 100.0}
+    {"id": "present_devices_high_mw", "exhaust_power_mw": 20.0},
+    {"id": "reactor_scale_mw", "exhaust_power_mw": 100.0},
+    {"id": "reactor_scale_high_mw", "exhaust_power_mw": 150.0}
+  ],
+  "temperature_class_keV": [
+    {"id": "core_fusion_class", "temp_kev": 100.0},
+    {"id": "edge_pedestal_class", "temp_kev": 1.0}
   ],
   "machines": [
-    {"id": "ASDEX_Upgrade_QCE", "demonstrated_qce": true},
-    {"id": "JET_DT_QCE", "demonstrated_qce": true},
-    {"id": "ITER_QCE_candidate", "demonstrated_qce": false, "candidate": true}
-  ]
+    {"id": "ASDEX_Upgrade_QCE", "demonstrated_qce": true, "device_class": "tokamak"},
+    {"id": "JET_DT_QCE", "demonstrated_qce": true, "device_class": "tokamak", "fuel": "DT"},
+    {"id": "ITER_QCE_candidate", "demonstrated_qce": false, "candidate": true, "device_class": "tokamak"},
+    {"id": "EU_DEMO_QCE_candidate", "demonstrated_qce": false, "candidate": true, "device_class": "tokamak"},
+    {"id": "SPARC_QCE_candidate", "demonstrated_qce": false, "candidate": true, "device_class": "tokamak"}
+  ],
+  "observables_eight_plus": {
+    "mean_profiles": true,
+    "fluctuation_spectra": true,
+    "mode_structure": true,
+    "blob_statistics": true,
+    "decoupled_falloff_lengths": true
+  }
 }

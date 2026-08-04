@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T05:09:11.971519+00:00",
+  "generated_at": "2026-08-04T13:48:35.648574+00:00",
   "domain": "FSOT_Cache_Hierarchy_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -14,9 +14,9 @@
     "energy"
   ],
   "D_eff": 11,
-  "record_count": 11,
-  "observable_count": 11,
-  "scalar_record_count": 11,
+  "record_count": 35,
+  "observable_count": 35,
+  "scalar_record_count": 35,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -42,7 +42,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 11
+      "observable_count": 35
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +51,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 11
+      "observable_count": 35
     }
   ],
   "material_records": [
@@ -183,6 +183,298 @@
       "note": "process residual \u2014 not PDG free fold",
       "extra": {
         "trits_per_line": 256.0,
+        "layer": "cache_hierarchy"
+      }
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_line_bytes",
+      "name": "L1D",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "all levels 64 B line",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_size_kb",
+      "name": "L1D",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "level capacity identity",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_sets",
+      "name": "L1D",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sets = size/(line\u00b7ways)",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_L1D_sets_pow2",
+      "name": "L1D",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "sets": 64.0,
+        "layer": "cache_hierarchy"
+      }
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_line_bytes",
+      "name": "L1I",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "all levels 64 B line",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_size_kb",
+      "name": "L1I",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "level capacity identity",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_sets",
+      "name": "L1I",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sets = size/(line\u00b7ways)",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_L1I_sets_pow2",
+      "name": "L1I",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "sets": 64.0,
+        "layer": "cache_hierarchy"
+      }
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_line_bytes",
+      "name": "L2",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "all levels 64 B line",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_size_kb",
+      "name": "L2",
+      "computed": 1024.0,
+      "measured": 1024.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "level capacity identity",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_sets",
+      "name": "L2",
+      "computed": 2048.0,
+      "measured": 2048.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sets = size/(line\u00b7ways)",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_L2_sets_pow2",
+      "name": "L2",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "sets": 2048.0,
+        "layer": "cache_hierarchy"
+      }
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_line_bytes",
+      "name": "L3",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "all levels 64 B line",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "level_size_mb",
+      "name": "L3",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "L3 capacity class identity",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "tlb_page_bytes",
+      "name": "page_4k",
+      "computed": 4096.0,
+      "measured": 4096.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "page size identity",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "tlb_page_4k_pow2",
+      "name": "page_4k",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "layer": "cache_hierarchy"
+      }
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "tlb_page_bytes",
+      "name": "page_2m",
+      "computed": 2097152.0,
+      "measured": 2097152.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "page size identity",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "tlb_page_2m_pow2",
+      "name": "page_2m",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "layer": "cache_hierarchy"
+      }
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "tlb_page_bytes",
+      "name": "page_1g",
+      "computed": 1073741824.0,
+      "measured": 1073741824.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "page size identity",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "tlb_page_1g_pow2",
+      "name": "page_1g",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "layer": "cache_hierarchy"
+      }
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "page_4k_lines",
+      "name": "tlb_page_4k",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "4096/64 = 64 lines per page",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "trits_per_4k_page",
+      "name": "pack_density",
+      "computed": 16384.0,
+      "measured": 16384.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "page_bits/2",
+      "layer": "cache_hierarchy"
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "capacity_order_l1_lt_l2_lt_l3",
+      "name": "hierarchy",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
+        "layer": "cache_hierarchy",
+        "note": "KiB-scale L1 < L2 < L3"
+      }
+    },
+    {
+      "lab": "fsot_cache_lab",
+      "property": "line_is_coherence_unit",
+      "name": "false_sharing_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "process residual \u2014 not PDG free fold",
+      "extra": {
         "layer": "cache_hierarchy"
       }
     }

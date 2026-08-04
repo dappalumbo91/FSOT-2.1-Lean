@@ -31,8 +31,14 @@ python scripts/audit_all_benchmark_margins.py
 4. **ITER / SPARC design Q** — design targets  
 5. **Room-temp quantum comm literature class** — θ measurement law invariant (not device fidelity fold)  
 
+## Densify status (2026-08-04)
+
+Granular depth added: multi-blob classes, SOL 1–10 mm, power ladder, L-mode/ELMy/QCE regimes, KBM/RXM flags, 8+ validation obs class, machine candidates (ITER/DEMO/SPARC), NIF/EAST/facility Q ladder on breakthroughs panel.
+
 ## Gap for later densify
 
 - Numeric α_m ballooning threshold residual (needs equilibrium numbers)  
 - Gyrokinetic follow-on parameters from paper limitations section  
 - Thin science domains outside fusion (separate campaign)  
+- Full multiprover re-run after this densify batch  
+

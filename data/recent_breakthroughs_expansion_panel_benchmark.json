@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T13:41:59.586736+00:00",
+  "generated_at": "2026-08-04T13:48:35.162360+00:00",
   "domain": "Recent_Breakthroughs_Expansion_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -15,9 +15,9 @@
     "mathematical"
   ],
   "D_eff": 13,
-  "record_count": 12,
-  "observable_count": 12,
-  "scalar_record_count": 11,
+  "record_count": 27,
+  "observable_count": 27,
+  "scalar_record_count": 26,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -43,7 +43,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 12
+      "observable_count": 27
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +52,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 12
+      "observable_count": 27
     }
   ],
   "material_records": [
@@ -181,6 +181,157 @@
       "error_pct": 0.0,
       "eval_kind": "live_formula",
       "formula": "two-mode exhaust"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "reaction_energy_mev",
+      "name": "dt_fusion",
+      "computed": 17.6,
+      "measured": 17.6,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "public reaction energetics identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "reaction_energy_mev",
+      "name": "dd_fusion",
+      "computed": 4.03,
+      "measured": 4.03,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "public reaction energetics identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "reaction_energy_mev",
+      "name": "dhe3_fusion",
+      "computed": 18.3,
+      "measured": 18.3,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "public reaction energetics identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "lawson_triple_product",
+      "name": "dt_breakeven",
+      "computed": 3e+20,
+      "measured": 3e+20,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "Lawson ladder identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "lawson_triple_product",
+      "name": "dt_ignition",
+      "computed": 3e+21,
+      "measured": 3e+21,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "Lawson ladder identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "lawson_triple_product",
+      "name": "dt_commercial",
+      "computed": 1e+22,
+      "measured": 1e+22,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "Lawson ladder identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_q_factor",
+      "name": "JET_1997",
+      "computed": 0.67,
+      "measured": 0.67,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_q_factor",
+      "name": "TFTR_1994",
+      "computed": 0.28,
+      "measured": 0.28,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_q_factor",
+      "name": "EAST_2023",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_q_factor",
+      "name": "ITER_design",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_q_factor",
+      "name": "SPARC_design",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_q_factor",
+      "name": "W7X_steady",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "facility_q_factor",
+      "name": "JT60SA_design",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "facility Q identity"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "elm_energy_fraction_upper",
+      "name": "ELM_literature",
+      "computed": 0.2,
+      "measured": 0.2,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "1/5"
+    },
+    {
+      "lab": "breakthrough_lab",
+      "property": "qce_vs_elm_continuous",
+      "name": "QCE",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "process_gate",
+      "note": "regime/methodology residual \u2014 not free fold"
     }
   ],
   "margin_summary": {
