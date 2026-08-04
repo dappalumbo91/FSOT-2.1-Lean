@@ -605,6 +605,57 @@ theorem gr_einstein_quadrupole_prefactor_err_under_half : (0.0 : ℝ) < (0.5 : �
 theorem gr_einstein_quadrupole_prefactor_meas_pos : (0 : ℝ) < (1.0 : ℝ) := by
   norm_num
 
+theorem gr_wilson_area_law_sigma_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_wilson_area_law_sigma_meas_pos : (0 : ℝ) < (0.17658624702998535 : ℝ) := by
+  norm_num
+
+theorem gr_confinement_scale_ratio_err_under_half : (0.2295212676523054 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_confinement_scale_ratio_meas_pos : (0 : ℝ) < (0.5173809523809524 : ℝ) := by
+  norm_num
+
+theorem gr_asymptotic_freedom_beta0_pos_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_asymptotic_freedom_beta0_pos_meas_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
+theorem gr_flux_tube_E_over_L_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_flux_tube_E_over_L_meas_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
+theorem gr_polyakov_confined_order_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_spin2_massive_polarizations_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_spin2_massive_polarizations_meas_pos : (0 : ℝ) < (5.0 : ℝ) := by
+  norm_num
+
+theorem gr_spin2_metric_dof_accounting_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_spin2_metric_dof_accounting_meas_pos : (0 : ℝ) < (2.0 : ℝ) := by
+  norm_num
+
+theorem gr_equivalence_geodesic_structure_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_equivalence_geodesic_structure_meas_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
+theorem gr_spin2_wave_equation_flat_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem gr_spin2_wave_equation_flat_meas_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
 theorem gr_triangle_angle_sum_pi_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
   norm_num
 

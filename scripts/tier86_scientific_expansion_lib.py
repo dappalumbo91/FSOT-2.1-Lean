@@ -13,18 +13,26 @@ DATA = ROOT / "data"
 VENDOR = ROOT / "vendor" / "scientific_expansion"
 
 CULINARY_CIDS = (
-    612,
-    5793,
-    962,
-    5950,
-    5281,
-    65065,
-    5287570,
-    5462224,
-    1183,
-    637511,
-    2244,
-    6036,
+    612,       # lactic_acid (fermentation)
+    5793,      # glucose
+    962,       # water
+    5950,      # glycine (Maillard amino)
+    5281,      # stearic_acid
+    65065,     # hydroxymethylfurfural-adjacent
+    5287570,   # caffeine
+    5462224,   # sucrose
+    1183,      # vanillin
+    637511,    # cinnamaldehyde
+    2244,      # aspirin control / aroma family
+    6036,      # galactose
+    7362,      # furfural (Maillard)
+    237332,    # HMF (Maillard)
+    6579,      # acrylamide (Maillard)
+    9261,      # pyrazine (Maillard)
+    8369,      # maltol (Maillard)
+    176,       # acetic_acid (fermentation)
+    650,       # diacetyl (fermentation aroma)
+    179,       # acetoin (fermentation)
 )
 
 METAL_PROPS = (
@@ -209,7 +217,9 @@ def ingest_culinary_fermentation_maillard() -> dict:
             )
         except Exception:
             continue
-    fermentations = list((_load_json(DATA / "fermentation_reference_observables.json").get("fermentations") or []))
+    ferm_doc = _load_json(DATA / "fermentation_reference_observables.json")
+    fermentations = list(ferm_doc.get("fermentations") or [])
+    maillard_process = list(ferm_doc.get("maillard_process") or [])
     culinary_doc = _load_json(ROOT / "vendor" / "public_data" / "pubchem" / "pubchem_culinary_expansion.json")
     if len(compounds) < 4:
         pubchem_bench = _load_json(DATA / "pubchem_compound_properties_benchmark.json")
@@ -239,7 +249,10 @@ def ingest_culinary_fermentation_maillard() -> dict:
     else:
         doc = {"source": "pubchem_culinary_maillard", "compounds": compounds}
     doc["fermentations"] = fermentations
+    doc["maillard_process"] = maillard_process
     doc["compound_count"] = len(compounds)
+    doc["fermentation_count"] = len(fermentations)
+    doc["maillard_process_count"] = len(maillard_process)
     _write_cache("culinary_fermentation_maillard_cache.json", doc)
     return doc
 
@@ -447,6 +460,26 @@ def build_culinary_fermentation_maillard_panel() -> dict:
                 measured=float(val),
                 domain=domain,
                 extra={"ingest_source": "fermentation_reference"},
+            )
+            records.append(rec)
+            errs.append(float(rec["error_pct"]))
+    # Maillard process anchors (onset / roast / development) — literature process gates
+    for row in live.get("maillard_process") or []:
+        for prop, domain in (
+            ("onset_temp_C", "Thermodynamics"),
+            ("typical_roast_C", "Thermodynamics"),
+            ("development_min", "Chemistry"),
+        ):
+            val = row.get(prop)
+            if val is None:
+                continue
+            rec = make_fsot_record(
+                lab="culinary_fermentation_maillard_lab",
+                property_name=prop,
+                name=str(row.get("name") or "maillard"),
+                measured=float(val),
+                domain=domain,
+                extra={"ingest_source": "maillard_process_reference"},
             )
             records.append(rec)
             errs.append(float(rec["error_pct"]))

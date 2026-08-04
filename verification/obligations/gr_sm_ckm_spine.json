@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-04T01:58:24.602898+00:00",
+  "generated_at": "2026-08-04T02:05:39.872479+00:00",
   "version": "1.0",
   "tier": "gr_sm_ckm",
-  "obligation_count": 240,
+  "obligation_count": 257,
   "modules": [
     "FSOT/Formal/GRSMCKMSpine.lean",
     "verification/coq/GRSMCKMSpine.v",
@@ -1803,6 +1803,151 @@
       "module": "GRSMCKM.GR",
       "claim": "T3_spin2_quadrupole",
       "coq_id": "gr_einstein_quadrupole_prefactor_meas_pos"
+    },
+    {
+      "id": "gr_wilson_area_law_sigma_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_wilson_area",
+      "statement": "error_pct(wilson_area_law_sigma) < 0.5",
+      "coq_id": "gr_wilson_area_law_sigma_err_under_half"
+    },
+    {
+      "id": "gr_wilson_area_law_sigma_meas_pos",
+      "kind": "pos",
+      "value": 0.17658624702998535,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_wilson_area",
+      "coq_id": "gr_wilson_area_law_sigma_meas_pos"
+    },
+    {
+      "id": "gr_confinement_scale_ratio_err_under_half",
+      "kind": "lt_half",
+      "value": 0.2295212676523054,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_scale_ratio",
+      "statement": "error_pct(confinement_scale_ratio) < 0.5",
+      "coq_id": "gr_confinement_scale_ratio_err_under_half"
+    },
+    {
+      "id": "gr_confinement_scale_ratio_meas_pos",
+      "kind": "pos",
+      "value": 0.5173809523809524,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_scale_ratio",
+      "coq_id": "gr_confinement_scale_ratio_meas_pos"
+    },
+    {
+      "id": "gr_asymptotic_freedom_beta0_pos_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_AF",
+      "statement": "error_pct(asymptotic_freedom_beta0_pos) < 0.5",
+      "coq_id": "gr_asymptotic_freedom_beta0_pos_err_under_half"
+    },
+    {
+      "id": "gr_asymptotic_freedom_beta0_pos_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_AF",
+      "coq_id": "gr_asymptotic_freedom_beta0_pos_meas_pos"
+    },
+    {
+      "id": "gr_flux_tube_E_over_L_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_flux_tube",
+      "statement": "error_pct(flux_tube_E_over_L) < 0.5",
+      "coq_id": "gr_flux_tube_E_over_L_err_under_half"
+    },
+    {
+      "id": "gr_flux_tube_E_over_L_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_flux_tube",
+      "coq_id": "gr_flux_tube_E_over_L_meas_pos"
+    },
+    {
+      "id": "gr_polyakov_confined_order_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T4_confinement_polyakov",
+      "statement": "error_pct(polyakov_confined_order) < 0.5",
+      "coq_id": "gr_polyakov_confined_order_err_under_half"
+    },
+    {
+      "id": "gr_spin2_massive_polarizations_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_massive_dof",
+      "statement": "error_pct(spin2_massive_polarizations) < 0.5",
+      "coq_id": "gr_spin2_massive_polarizations_err_under_half"
+    },
+    {
+      "id": "gr_spin2_massive_polarizations_meas_pos",
+      "kind": "pos",
+      "value": 5.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_massive_dof",
+      "coq_id": "gr_spin2_massive_polarizations_meas_pos"
+    },
+    {
+      "id": "gr_spin2_metric_dof_accounting_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_fock_accounting",
+      "statement": "error_pct(spin2_metric_dof_accounting) < 0.5",
+      "coq_id": "gr_spin2_metric_dof_accounting_err_under_half"
+    },
+    {
+      "id": "gr_spin2_metric_dof_accounting_meas_pos",
+      "kind": "pos",
+      "value": 2.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_fock_accounting",
+      "coq_id": "gr_spin2_metric_dof_accounting_meas_pos"
+    },
+    {
+      "id": "gr_equivalence_geodesic_structure_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_equivalence",
+      "statement": "error_pct(equivalence_geodesic_structure) < 0.5",
+      "coq_id": "gr_equivalence_geodesic_structure_err_under_half"
+    },
+    {
+      "id": "gr_equivalence_geodesic_structure_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_equivalence",
+      "coq_id": "gr_equivalence_geodesic_structure_meas_pos"
+    },
+    {
+      "id": "gr_spin2_wave_equation_flat_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_wave",
+      "statement": "error_pct(spin2_wave_equation_flat) < 0.5",
+      "coq_id": "gr_spin2_wave_equation_flat_err_under_half"
+    },
+    {
+      "id": "gr_spin2_wave_equation_flat_meas_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "GRSMCKM.GR",
+      "claim": "T3_spin2_wave",
+      "coq_id": "gr_spin2_wave_equation_flat_meas_pos"
     },
     {
       "id": "gr_triangle_angle_sum_pi_err_under_half",

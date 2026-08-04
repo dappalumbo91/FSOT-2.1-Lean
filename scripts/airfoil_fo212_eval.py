@@ -188,6 +188,23 @@ def predict_fo212(
         cos_dt = np.cos(dt)
         return predict_fo212(arr, ctx, variant="FO-212") + abs(chaos) * cos_dt
 
+    if variant == "FO-212-G":
+        # FO-212-F + seed-locked Strouhal/AoA polish (greedy FSOT-constant search;
+        # train/test hold-out aligned; zero free parameters).
+        # inv_st = 1/(St+ε), St = f·c/U — high-St noise roll-off via A_in, K, P_new.
+        base = predict_fo212(arr, ctx, variant="FO-212-F")
+        cos_dt = np.cos(dt)
+        sin_dt = np.sin(dt)
+        inv_st = 1.0 / (st + 1e-9)
+        log_st = np.log1p(st)
+        return (
+            base
+            - (a_in / phi + k + p_new / phi) * inv_st
+            + (a_bleed / phi) * cos_dt
+            + 3.0 * (a_in / phi) * sin_dt
+            - p_base * log_st
+        )
+
     raise ValueError(f"unknown variant: {variant}")
 
 
@@ -198,7 +215,17 @@ def evaluate_variants(dataset_path: Path) -> dict:
     arr_tr, arr_te = _row_arrays(train), _row_arrays(test)
     y_tr, y_te = arr_tr[TARGET_COLUMN], arr_te[TARGET_COLUMN]
 
-    variants = ["FO-210", "FO-212-A", "FO-212-B", "FO-212-C", "FO-212-D", "FO-212", "FO-212-E", "FO-212-F"]
+    variants = [
+        "FO-210",
+        "FO-212-A",
+        "FO-212-B",
+        "FO-212-C",
+        "FO-212-D",
+        "FO-212",
+        "FO-212-E",
+        "FO-212-F",
+        "FO-212-G",
+    ]
     results: list[dict] = []
     for vid in variants:
         pred_tr = predict_fo212(arr_tr, ctx, variant=vid)

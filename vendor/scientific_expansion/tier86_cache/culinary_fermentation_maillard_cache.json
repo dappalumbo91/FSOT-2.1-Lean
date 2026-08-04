@@ -549,127 +549,106 @@
     },
     {
       "cid": 6306,
-      "molecular_weight": 131.17,
       "name": "isoleucine",
       "category": "amino_acid_food"
     },
     {
       "cid": 6288,
-      "molecular_weight": 119.12,
       "name": "threonine",
       "category": "amino_acid_food"
     },
     {
       "cid": 6267,
-      "molecular_weight": 132.12,
       "name": "asparagine",
       "category": "amino_acid_food"
     },
     {
       "cid": 5961,
-      "molecular_weight": 146.14,
       "name": "glutamine",
       "category": "amino_acid_food"
     },
     {
       "cid": 124886,
-      "molecular_weight": 307.33,
       "name": "glutathione",
       "category": "antioxidant_food"
     },
     {
       "cid": 5280443,
-      "molecular_weight": 270.24,
       "name": "apigenin",
       "category": "herb_polyphenol"
     },
     {
       "cid": 5280445,
-      "molecular_weight": 286.24,
       "name": "luteolin",
       "category": "herb_polyphenol"
     },
     {
       "cid": 5280863,
-      "molecular_weight": 286.24,
       "name": "kaempferol",
       "category": "herb_polyphenol"
     },
     {
       "cid": 1030,
-      "molecular_weight": 76.09,
       "name": "glyceryl_tristearate",
       "category": "culinary_fat"
     },
     {
       "cid": 4873,
-      "molecular_weight": 74.55,
       "name": "potassium_chloride",
       "category": "culinary_salt"
     },
     {
       "cid": 1032,
-      "molecular_weight": 74.08,
       "name": "propionic_acid",
       "category": "fermentation"
     },
     {
       "cid": 10930,
-      "molecular_weight": 101.15,
       "name": "isovaleric_acid",
       "category": "fermentation"
     },
     {
       "cid": 5281232,
-      "molecular_weight": 328.4,
       "name": "crocetin",
       "category": "spice_aromatic"
     },
     {
       "cid": 11965427,
-      "molecular_weight": 615.5,
       "name": "isohumulone",
       "category": "beverage"
     },
     {
       "cid": 92772,
-      "molecular_weight": 328.4,
       "name": "malvidin",
       "category": "beverage"
     },
     {
       "cid": 5281224,
-      "molecular_weight": 596.8,
       "name": "astaxanthin",
       "category": "seafood"
     },
     {
       "cid": 16129778,
-      "molecular_weight": 1701.2,
       "name": "tannic_acid",
       "category": "beverage"
     },
     {
       "cid": 971,
-      "molecular_weight": 90.03,
       "name": "oxalic_acid",
       "category": "culinary_acid"
     },
     {
       "cid": 284,
-      "molecular_weight": 46.025,
       "name": "formic_acid",
       "category": "fermentation"
     },
     {
       "cid": 798,
-      "molecular_weight": 117.15,
       "name": "indole",
       "category": "fermentation"
     },
     {
       "cid": 6736,
-      "molecular_weight": 131.17,
       "name": "skatole",
       "category": "fermentation"
     }
@@ -711,9 +690,97 @@
       "optimal_temp_C": 22.0,
       "optimal_ph": 3.4,
       "lag_phase_h": 24.0
+    },
+    {
+      "name": "sauerkraut_lacto",
+      "optimal_temp_C": 18.0,
+      "optimal_ph": 3.6,
+      "lag_phase_h": 24.0
+    },
+    {
+      "name": "miso_koji",
+      "optimal_temp_C": 30.0,
+      "optimal_ph": 5.5,
+      "lag_phase_h": 48.0
+    },
+    {
+      "name": "tempeh_rhizopus",
+      "optimal_temp_C": 31.0,
+      "optimal_ph": 6.5,
+      "lag_phase_h": 12.0
+    },
+    {
+      "name": "beer_lager_fermentation",
+      "optimal_temp_C": 10.0,
+      "optimal_ph": 4.2,
+      "lag_phase_h": 48.0
+    },
+    {
+      "name": "cider_primary",
+      "optimal_temp_C": 18.0,
+      "optimal_ph": 3.5,
+      "lag_phase_h": 18.0
+    },
+    {
+      "name": "natto_subtilis",
+      "optimal_temp_C": 40.0,
+      "optimal_ph": 6.8,
+      "lag_phase_h": 6.0
+    },
+    {
+      "name": "kefir_mixed",
+      "optimal_temp_C": 22.0,
+      "optimal_ph": 4.4,
+      "lag_phase_h": 8.0
+    },
+    {
+      "name": "pickles_lacto",
+      "optimal_temp_C": 20.0,
+      "optimal_ph": 3.8,
+      "lag_phase_h": 36.0
+    }
+  ],
+  "maillard_process": [
+    {
+      "name": "bread_crust_maillard",
+      "onset_temp_C": 140.0,
+      "typical_roast_C": 180.0,
+      "development_min": 12.0
+    },
+    {
+      "name": "coffee_first_crack_maillard",
+      "onset_temp_C": 150.0,
+      "typical_roast_C": 196.0,
+      "development_min": 3.0
+    },
+    {
+      "name": "seared_meat_maillard",
+      "onset_temp_C": 140.0,
+      "typical_roast_C": 200.0,
+      "development_min": 4.0
+    },
+    {
+      "name": "caramelization_sucrose",
+      "onset_temp_C": 160.0,
+      "typical_roast_C": 170.0,
+      "development_min": 8.0
+    },
+    {
+      "name": "malt_kilning_maillard",
+      "onset_temp_C": 85.0,
+      "typical_roast_C": 120.0,
+      "development_min": 45.0
+    },
+    {
+      "name": "chocolate_roast_maillard",
+      "onset_temp_C": 120.0,
+      "typical_roast_C": 140.0,
+      "development_min": 20.0
     }
   ],
   "compound_count": 112,
-  "fetched_at": "2026-07-12T16:20:13.098406+00:00",
+  "fermentation_count": 14,
+  "maillard_process_count": 6,
+  "fetched_at": "2026-08-04T02:05:32.745699+00:00",
   "credential_free": true
 }

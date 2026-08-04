@@ -1,6 +1,6 @@
 {
   "report_version": "1.2",
-  "generated_at": "2026-08-04T01:58:10.788256+00:00",
+  "generated_at": "2026-08-04T02:06:17.722475+00:00",
   "observable_count": 65,
   "headline_eligible_count": 22,
   "internal_pipeline_metric_count": 38,
@@ -1040,8 +1040,8 @@
       "comparison_class": "external_observable",
       "exclude_from_headline_beats": false,
       "fsot_computed": 0.078697,
-      "fsot_error_pct": 0.07869745016116055,
-      "margin_vs_sota_pct": 4.921302549838839,
+      "fsot_error_pct": 0.0786974501611598,
+      "margin_vs_sota_pct": 4.92130254983884,
       "status": "beats_sota",
       "status_basis": "beats_sota_typical_error_pct",
       "parameter_advantage": 0
@@ -1192,16 +1192,16 @@
       "sota_free_parameters": 10,
       "fsot_source": "data/math_generator_airfoil_rmse_benchmark.json",
       "fsot_property": "held_out_test_rmse",
-      "fsot_computed": 5.095078232775157,
-      "fsot_error_pct": 5.095078232775157,
+      "fsot_computed": 4.598501331670039,
+      "fsot_error_pct": 4.598501331670039,
       "reference": "UCI airfoil self-noise / FO-212 gas-medium readout",
       "comparison_class": "external_observable",
       "exclude_from_headline_beats": false,
-      "margin_vs_sota_pct": 0.3176431080574549,
+      "margin_vs_sota_pct": 0.8142200091625735,
       "status": "beats_sota",
       "status_basis": "beats_sota_typical_error_pct",
       "parameter_advantage": 10,
-      "fsot_rmse": 5.095078232775157
+      "fsot_rmse": 4.598501331670039
     },
     {
       "id": "domain_coupling_simulation_pooled",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T01:35:54.815272+00:00",
+  "generated_at": "2026-08-04T02:05:40.106163+00:00",
   "version": "2.0",
   "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md",
   "gap_closure_doc": "docs/TOE_GAP_CLOSURE.md",
@@ -19,8 +19,8 @@
       "T3_limit_recovery": {
         "pass": true,
         "artifact": "data/toe_limit_recovery_benchmark.json + vendor/fsot_gr_sm.py",
-        "median_error_pct": 0.022461,
-        "record_count": 33,
+        "median_error_pct": 0.016460322231694493,
+        "record_count": 37,
         "note": "Deep GR recovery map is executable and residual-gated. Not a uniqueness theorem for the Einstein\u2013Hilbert action; full spin-2 quantization remains open research."
       },
       "T4_force_or_scope": {
@@ -28,12 +28,12 @@
         "artifact": "vendor/fsot_gr_sm.py + data/toe_force_package_manifest.json",
         "status": "force_package_v1",
         "sm_row_count": 40,
-        "gr_sm_median_error_pct": 0.013893853126499888
+        "gr_sm_median_error_pct": 0.0047099996121108675
       },
       "T5_prereg_freeze": {
         "pass": true,
         "artifact": "data/toe_prereg_freeze.json",
-        "bundle_sha256": "9b17537b67bce99fd957e7bdb8bfccc2ed44ed40e85eb0de1bc18cb733873418"
+        "bundle_sha256": "2b1bfcf5a93e715452362f464bfa94875f4239b8a3780b3955fd8248f5b95e5e"
       },
       "T6_falsification": {
         "pass": true,

@@ -1,7 +1,7 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:12:30.928319+00:00",
-  "authority_path": "vendor/fsot_compute.py",
+  "generated_at": "2026-08-04T02:05:30.500270+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
     "data/culinary_recipe_observables.json"
@@ -13,10 +13,10 @@
     "energy"
   ],
   "D_eff": 15,
-  "record_count": 26,
-  "observable_count": 26,
+  "record_count": 52,
+  "observable_count": 52,
   "smiles_record_count": 10,
-  "recipe_record_count": 16,
+  "recipe_record_count": 42,
   "section_count": 8,
   "median_error_pct": 0.047615187057821064,
   "headline_median_error_pct": 0.047615187057821064,
@@ -73,12 +73,12 @@
   },
   "source_decomposition": {
     "coffee_roast": {
-      "record_count": 4,
-      "median_error_pct": 0.07869745016116055
+      "record_count": 6,
+      "median_error_pct": 0.0786974501611598
     },
     "recipe_process": {
-      "record_count": 12,
-      "median_error_pct": 0.04761518705781972
+      "record_count": 36,
+      "median_error_pct": 0.047615187057818434
     },
     "smiles_food_chemistry": {
       "record_count": 10,
@@ -127,20 +127,7 @@
       "computed": 0.047615,
       "measured": 0.0,
       "error_pct": 0.047615187057821064,
-      "observable_count": 26,
-      "domain_display_name": "culinary arts",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.047615,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 52
     },
     {
       "lab": "culinary_arts_lab",
@@ -150,21 +137,7 @@
       "measured": 0.0,
       "error_pct": 0.462279,
       "observable_count": 1,
-      "section": "\u00a745 Activation Ea",
-      "domain_display_name": "culinary arts",
-      "display_name": "\u00a745 Activation Ea",
-      "scientific_measurement": {
-        "delta": 0.462279,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": false,
-        "sigma_equivalent": 666.6667,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false,
-        "reference_uncertainty_pct": 0.15
-      }
+      "section": "\u00a745 Activation Ea"
     },
     {
       "lab": "culinary_arts_lab",
@@ -174,20 +147,7 @@
       "measured": 0.0,
       "error_pct": 0.014039232435055806,
       "observable_count": 2,
-      "section": "\u00a751 Solubility logS",
-      "domain_display_name": "culinary arts",
-      "display_name": "\u00a751 Solubility logS",
-      "scientific_measurement": {
-        "delta": 0.014039,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "section": "\u00a751 Solubility logS"
     },
     {
       "lab": "culinary_arts_lab",
@@ -197,20 +157,7 @@
       "measured": 0.0,
       "error_pct": 0.052193,
       "observable_count": 1,
-      "section": "\u00a761 Glass Tg",
-      "domain_display_name": "culinary arts",
-      "display_name": "\u00a761 Glass Tg",
-      "scientific_measurement": {
-        "delta": 0.052193,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "section": "\u00a761 Glass Tg"
     },
     {
       "lab": "culinary_arts_lab",
@@ -220,20 +167,7 @@
       "measured": 0.0,
       "error_pct": 0.04553530974273094,
       "observable_count": 1,
-      "section": "\u00a790 Heat of Combustion",
-      "domain_display_name": "culinary arts",
-      "display_name": "\u00a790 Heat of Combustion",
-      "scientific_measurement": {
-        "delta": 0.045535,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "section": "\u00a790 Heat of Combustion"
     },
     {
       "lab": "culinary_arts_lab",
@@ -241,22 +175,9 @@
       "name": "recipe_process",
       "computed": 0.047615,
       "measured": 0.0,
-      "error_pct": 0.04761518705781972,
-      "observable_count": 12,
-      "source": "recipe_process",
-      "domain_display_name": "culinary arts",
-      "display_name": "recipe process",
-      "scientific_measurement": {
-        "delta": 0.047615,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.047615187057818434,
+      "observable_count": 36,
+      "source": "recipe_process"
     },
     {
       "lab": "culinary_arts_lab",
@@ -264,22 +185,9 @@
       "name": "coffee_roast",
       "computed": 0.078697,
       "measured": 0.0,
-      "error_pct": 0.07869745016116055,
-      "observable_count": 4,
-      "source": "coffee_roast",
-      "domain_display_name": "culinary arts",
-      "display_name": "coffee roast",
-      "scientific_measurement": {
-        "delta": 0.078697,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0786974501611598,
+      "observable_count": 6,
+      "source": "coffee_roast"
     }
   ],
   "material_records": [
@@ -290,21 +198,7 @@
       "computed": 7.0,
       "measured": 7.0,
       "error_pct": 0.0,
-      "source": "smiles_food_chemistry",
-      "section_display_name": "SMILES Lab \u00a71 Foundation",
-      "domain_display_name": "culinary arts",
-      "display_name": "SMILES Lab \u00a71 Foundation",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "smiles_food_chemistry"
     },
     {
       "lab": "culinary_arts_lab",
@@ -313,21 +207,7 @@
       "computed": 108.49926097775192,
       "measured": 108.0,
       "error_pct": 0.462279,
-      "source": "smiles_food_chemistry",
-      "section_display_name": "SMILES Lab \u00a745 Activation Ea",
-      "domain_display_name": "culinary arts",
-      "display_name": "SMILES Lab \u00a745 Activation Ea",
-      "scientific_measurement": {
-        "delta": 0.49926098,
-        "delta_pct": 0.462279,
-        "effective_error_pct": 0.462279,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "smiles_food_chemistry"
     },
     {
       "lab": "culinary_arts_lab",
@@ -336,21 +216,7 @@
       "computed": 0.6727328685350314,
       "measured": 0.673,
       "error_pct": 0.039692639668439104,
-      "source": "smiles_food_chemistry",
-      "section_display_name": "SMILES Lab \u00a750 Diffusion D",
-      "domain_display_name": "culinary arts",
-      "display_name": "SMILES Lab \u00a750 Diffusion D",
-      "scientific_measurement": {
-        "delta": -0.00026713,
-        "delta_pct": 0.039693,
-        "effective_error_pct": 0.039693,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "smiles_food_chemistry"
     },
     {
       "lab": "culinary_arts_lab",
@@ -359,21 +225,7 @@
       "computed": 0.5229465399247466,
       "measured": 0.523,
       "error_pct": 0.01022181171193495,
-      "source": "smiles_food_chemistry",
-      "section_display_name": "SMILES Lab \u00a750 Diffusion D",
-      "domain_display_name": "culinary arts",
-      "display_name": "SMILES Lab \u00a750 Diffusion D",
-      "scientific_measurement": {
-        "delta": -5.346e-05,
-        "delta_pct": 0.010222,
-        "effective_error_pct": 0.010222,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "smiles_food_chemistry"
     },
     {
       "lab": "culinary_arts_lab",
@@ -382,21 +234,7 @@
       "computed": 0.8099997612391344,
       "measured": 0.81,
       "error_pct": 2.947665007827326e-05,
-      "source": "smiles_food_chemistry",
-      "section_display_name": "SMILES Lab \u00a751 Solubility logS",
-      "domain_display_name": "culinary arts",
-      "display_name": "SMILES Lab \u00a751 Solubility logS",
-      "scientific_measurement": {
-        "delta": -2.4e-07,
-        "delta_pct": 2.9e-05,
-        "effective_error_pct": 2.9e-05,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "smiles_food_chemistry"
     },
     {
       "lab": "culinary_arts_lab",
@@ -405,21 +243,7 @@
       "computed": 0.9398680312151104,
       "measured": 0.94,
       "error_pct": 0.014039232435055806,
-      "source": "smiles_food_chemistry",
-      "section_display_name": "SMILES Lab \u00a751 Solubility logS",
-      "domain_display_name": "culinary arts",
-      "display_name": "SMILES Lab \u00a751 Solubility logS",
-      "scientific_measurement": {
-        "delta": -0.00013197,
-        "delta_pct": 0.014039,
-        "effective_error_pct": 0.014039,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "smiles_food_chemistry"
     },
     {
       "lab": "culinary_arts_lab",
@@ -428,21 +252,7 @@
       "computed": 309.16127743887125,
       "measured": 309.0,
       "error_pct": 0.052193,
-      "source": "smiles_food_chemistry",
-      "section_display_name": "SMILES Lab \u00a761 Glass Tg",
-      "domain_display_name": "culinary arts",
-      "display_name": "SMILES Lab \u00a761 Glass Tg",
-      "scientific_measurement": {
-        "delta": 0.16127744,
-        "delta_pct": 0.052193,
-        "effective_error_pct": 0.052193,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "smiles_food_chemistry"
     },
     {
       "lab": "culinary_arts_lab",
@@ -451,21 +261,7 @@
       "computed": 1.4747388085852202,
       "measured": 1.48,
       "error_pct": 0.355486,
-      "source": "smiles_food_chemistry",
-      "section_display_name": "SMILES Lab \u00a774 Acoustic Impedance",
-      "domain_display_name": "culinary arts",
-      "display_name": "SMILES Lab \u00a774 Acoustic Impedance",
-      "scientific_measurement": {
-        "delta": -0.00526119,
-        "delta_pct": 0.355486,
-        "effective_error_pct": 0.355486,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "smiles_food_chemistry"
     },
     {
       "lab": "culinary_arts_lab",
@@ -474,21 +270,7 @@
       "computed": 2804.2763547320887,
       "measured": 2803.0,
       "error_pct": 0.04553530974273094,
-      "source": "smiles_food_chemistry",
-      "section_display_name": "SMILES Lab \u00a790 Heat of Combustion",
-      "domain_display_name": "culinary arts",
-      "display_name": "SMILES Lab \u00a790 Heat of Combustion",
-      "scientific_measurement": {
-        "delta": 1.27635473,
-        "delta_pct": 0.045535,
-        "effective_error_pct": 0.045535,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "smiles_food_chemistry"
     },
     {
       "lab": "culinary_arts_lab",
@@ -497,21 +279,7 @@
       "computed": 23.798373876248846,
       "measured": 23.76,
       "error_pct": 0.161506,
-      "source": "smiles_food_chemistry",
-      "section_display_name": "SMILES Lab \u00a798 Vapor Pressure",
-      "domain_display_name": "culinary arts",
-      "display_name": "SMILES Lab \u00a798 Vapor Pressure",
-      "scientific_measurement": {
-        "delta": 0.03837388,
-        "delta_pct": 0.161506,
-        "effective_error_pct": 0.161506,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "smiles_food_chemistry"
     },
     {
       "lab": "culinary_arts_lab",
@@ -523,21 +291,7 @@
       "measured": 175.0,
       "error_pct": 0.047615187057821064,
       "source": "recipe_process",
-      "unit": "C",
-      "domain_display_name": "culinary arts",
-      "display_name": "banana bread:bake temperature C",
-      "scientific_measurement": {
-        "delta": 0.083327,
-        "delta_pct": 0.047615,
-        "effective_error_pct": 0.047615,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "C"
-      }
+      "unit": "C"
     },
     {
       "lab": "culinary_arts_lab",
@@ -549,21 +303,7 @@
       "measured": 58.0,
       "error_pct": 0.047615187057828696,
       "source": "recipe_process",
-      "unit": "min",
-      "domain_display_name": "culinary arts",
-      "display_name": "banana bread:bake time min",
-      "scientific_measurement": {
-        "delta": 0.027617,
-        "delta_pct": 0.047616,
-        "effective_error_pct": 0.047616,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "min"
-      }
+      "unit": "min"
     },
     {
       "lab": "culinary_arts_lab",
@@ -575,21 +315,7 @@
       "measured": 0.34,
       "error_pct": 0.023807593528905633,
       "source": "recipe_process",
-      "unit": "mass_fraction",
-      "domain_display_name": "culinary arts",
-      "display_name": "banana bread:banana mass fraction",
-      "scientific_measurement": {
-        "delta": 8.1e-05,
-        "delta_pct": 0.023824,
-        "effective_error_pct": 0.023824,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "mass_fraction"
-      }
+      "unit": "mass_fraction"
     },
     {
       "lab": "culinary_arts_lab",
@@ -601,21 +327,7 @@
       "measured": 28.5,
       "error_pct": 0.023807593528913595,
       "source": "recipe_process",
-      "unit": "pct",
-      "domain_display_name": "culinary arts",
-      "display_name": "banana bread:final moisture pct",
-      "scientific_measurement": {
-        "delta": 0.006785,
-        "delta_pct": 0.023807,
-        "effective_error_pct": 0.023807,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "pct"
-      }
+      "unit": "pct"
     },
     {
       "lab": "culinary_arts_lab",
@@ -627,21 +339,7 @@
       "measured": 175.0,
       "error_pct": 0.047615187057821064,
       "source": "recipe_process",
-      "unit": "C",
-      "domain_display_name": "culinary arts",
-      "display_name": "zucchini bread:bake temperature C",
-      "scientific_measurement": {
-        "delta": 0.083327,
-        "delta_pct": 0.047615,
-        "effective_error_pct": 0.047615,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "C"
-      }
+      "unit": "C"
     },
     {
       "lab": "culinary_arts_lab",
@@ -653,21 +351,7 @@
       "measured": 52.0,
       "error_pct": 0.047615187057832464,
       "source": "recipe_process",
-      "unit": "min",
-      "domain_display_name": "culinary arts",
-      "display_name": "zucchini bread:bake time min",
-      "scientific_measurement": {
-        "delta": 0.02476,
-        "delta_pct": 0.047615,
-        "effective_error_pct": 0.047615,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "min"
-      }
+      "unit": "min"
     },
     {
       "lab": "culinary_arts_lab",
@@ -679,21 +363,7 @@
       "measured": 0.29,
       "error_pct": 0.023807593528919712,
       "source": "recipe_process",
-      "unit": "mass_fraction",
-      "domain_display_name": "culinary arts",
-      "display_name": "zucchini bread:zucchini mass fraction",
-      "scientific_measurement": {
-        "delta": 6.9e-05,
-        "delta_pct": 0.023793,
-        "effective_error_pct": 0.023793,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "mass_fraction"
-      }
+      "unit": "mass_fraction"
     },
     {
       "lab": "culinary_arts_lab",
@@ -705,21 +375,7 @@
       "measured": 26.0,
       "error_pct": 0.023807593528916232,
       "source": "recipe_process",
-      "unit": "pct",
-      "domain_display_name": "culinary arts",
-      "display_name": "zucchini bread:final moisture pct",
-      "scientific_measurement": {
-        "delta": 0.00619,
-        "delta_pct": 0.023808,
-        "effective_error_pct": 0.023808,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "pct"
-      }
+      "unit": "pct"
     },
     {
       "lab": "culinary_arts_lab",
@@ -731,22 +387,7 @@
       "measured": 175.0,
       "error_pct": 0.047615187057821064,
       "source": "recipe_process",
-      "unit": "C",
-      "domain_display_name": "culinary arts",
-      "display_name": "pumpkin bread:bake temperature C",
-      "scientific_measurement": {
-        "delta": 0.083327,
-        "delta_pct": 0.047615,
-        "effective_error_pct": 0.047615,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.3174,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.15,
-        "unit": "C"
-      }
+      "unit": "C"
     },
     {
       "lab": "culinary_arts_lab",
@@ -758,22 +399,7 @@
       "measured": 60.0,
       "error_pct": 0.04761518705781972,
       "source": "recipe_process",
-      "unit": "min",
-      "domain_display_name": "culinary arts",
-      "display_name": "pumpkin bread:bake time min",
-      "scientific_measurement": {
-        "delta": 0.028569,
-        "delta_pct": 0.047615,
-        "effective_error_pct": 0.047615,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.3174,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.15,
-        "unit": "min"
-      }
+      "unit": "min"
     },
     {
       "lab": "culinary_arts_lab",
@@ -785,22 +411,7 @@
       "measured": 0.31,
       "error_pct": 0.023807593528913533,
       "source": "recipe_process",
-      "unit": "mass_fraction",
-      "domain_display_name": "culinary arts",
-      "display_name": "pumpkin bread:pumpkin mass fraction",
-      "scientific_measurement": {
-        "delta": 7.4e-05,
-        "delta_pct": 0.023871,
-        "effective_error_pct": 0.023871,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.1587,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.15,
-        "unit": "mass_fraction"
-      }
+      "unit": "mass_fraction"
     },
     {
       "lab": "culinary_arts_lab",
@@ -812,22 +423,295 @@
       "measured": 27.2,
       "error_pct": 0.02380759352891543,
       "source": "recipe_process",
-      "unit": "pct",
-      "domain_display_name": "culinary arts",
-      "display_name": "pumpkin bread:final moisture pct",
-      "scientific_measurement": {
-        "delta": 0.006476,
-        "delta_pct": 0.023809,
-        "effective_error_pct": 0.023809,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.1587,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.15,
-        "unit": "pct"
-      }
+      "unit": "pct"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "bake_temperature_C",
+      "name": "sourdough_loaf:bake_temperature_C",
+      "recipe_id": "sourdough_loaf",
+      "category": "fermented_bread",
+      "computed": 230.109515,
+      "measured": 230.0,
+      "error_pct": 0.04761518705782178,
+      "source": "recipe_process",
+      "unit": "C"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "bake_time_min",
+      "name": "sourdough_loaf:bake_time_min",
+      "recipe_id": "sourdough_loaf",
+      "category": "fermented_bread",
+      "computed": 40.019046,
+      "measured": 40.0,
+      "error_pct": 0.047615187057825636,
+      "source": "recipe_process",
+      "unit": "min"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "hydration_pct",
+      "name": "sourdough_loaf:hydration_pct",
+      "recipe_id": "sourdough_loaf",
+      "category": "fermented_bread",
+      "computed": 72.017141,
+      "measured": 72.0,
+      "error_pct": 0.023807593528917752,
+      "source": "recipe_process",
+      "unit": "pct"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "final_moisture_pct",
+      "name": "sourdough_loaf:final_moisture_pct",
+      "recipe_id": "sourdough_loaf",
+      "category": "fermented_bread",
+      "computed": 35.008333,
+      "measured": 35.0,
+      "error_pct": 0.023807593528906473,
+      "source": "recipe_process",
+      "unit": "pct"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "bake_temperature_C",
+      "name": "pizza_dough:bake_temperature_C",
+      "recipe_id": "pizza_dough",
+      "category": "fermented_bread",
+      "computed": 450.214268,
+      "measured": 450.0,
+      "error_pct": 0.047615187057822875,
+      "source": "recipe_process",
+      "unit": "C"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "bake_time_min",
+      "name": "pizza_dough:bake_time_min",
+      "recipe_id": "pizza_dough",
+      "category": "fermented_bread",
+      "computed": 1.500714,
+      "measured": 1.5,
+      "error_pct": 0.047615187057825636,
+      "source": "recipe_process",
+      "unit": "min"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "hydration_pct",
+      "name": "pizza_dough:hydration_pct",
+      "recipe_id": "pizza_dough",
+      "category": "fermented_bread",
+      "computed": 65.015475,
+      "measured": 65.0,
+      "error_pct": 0.023807593528908037,
+      "source": "recipe_process",
+      "unit": "pct"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "final_moisture_pct",
+      "name": "pizza_dough:final_moisture_pct",
+      "recipe_id": "pizza_dough",
+      "category": "fermented_bread",
+      "computed": 22.005238,
+      "measured": 22.0,
+      "error_pct": 0.023807593528908783,
+      "source": "recipe_process",
+      "unit": "pct"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "bake_temperature_C",
+      "name": "chocolate_chip_cookie:bake_temperature_C",
+      "recipe_id": "chocolate_chip_cookie",
+      "category": "cookie_roast",
+      "computed": 190.090469,
+      "measured": 190.0,
+      "error_pct": 0.04761518705783218,
+      "source": "recipe_process",
+      "unit": "C"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "bake_time_min",
+      "name": "chocolate_chip_cookie:bake_time_min",
+      "recipe_id": "chocolate_chip_cookie",
+      "category": "cookie_roast",
+      "computed": 11.005238,
+      "measured": 11.0,
+      "error_pct": 0.047615187057817566,
+      "source": "recipe_process",
+      "unit": "min"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "sugar_mass_fraction",
+      "name": "chocolate_chip_cookie:sugar_mass_fraction",
+      "recipe_id": "chocolate_chip_cookie",
+      "category": "cookie_roast",
+      "computed": 0.280067,
+      "measured": 0.28,
+      "error_pct": 0.023807593528903298,
+      "source": "recipe_process",
+      "unit": "mass_fraction"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "final_moisture_pct",
+      "name": "chocolate_chip_cookie:final_moisture_pct",
+      "recipe_id": "chocolate_chip_cookie",
+      "category": "cookie_roast",
+      "computed": 8.502024,
+      "measured": 8.5,
+      "error_pct": 0.02380759352891543,
+      "source": "recipe_process",
+      "unit": "pct"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "bake_temperature_C",
+      "name": "roast_chicken:bake_temperature_C",
+      "recipe_id": "roast_chicken",
+      "category": "maillard_roast",
+      "computed": 200.09523,
+      "measured": 200.0,
+      "error_pct": 0.04761518705782919,
+      "source": "recipe_process",
+      "unit": "C"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "bake_time_min",
+      "name": "roast_chicken:bake_time_min",
+      "recipe_id": "roast_chicken",
+      "category": "maillard_roast",
+      "computed": 75.035711,
+      "measured": 75.0,
+      "error_pct": 0.04761518705782919,
+      "source": "recipe_process",
+      "unit": "min"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "internal_temp_C",
+      "name": "roast_chicken:internal_temp_C",
+      "recipe_id": "roast_chicken",
+      "category": "maillard_roast",
+      "computed": 74.035235,
+      "measured": 74.0,
+      "error_pct": 0.047615187057818434,
+      "source": "recipe_process",
+      "unit": "C"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "final_moisture_pct",
+      "name": "roast_chicken:final_moisture_pct",
+      "recipe_id": "roast_chicken",
+      "category": "maillard_roast",
+      "computed": 62.014761,
+      "measured": 62.0,
+      "error_pct": 0.023807593528911385,
+      "source": "recipe_process",
+      "unit": "pct"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "ferment_temperature_C",
+      "name": "kimchi_batch:ferment_temperature_C",
+      "recipe_id": "kimchi_batch",
+      "category": "fermented_veg",
+      "computed": 18.008571,
+      "measured": 18.0,
+      "error_pct": 0.047615187057835504,
+      "source": "recipe_process",
+      "unit": "C"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "ferment_time_h",
+      "name": "kimchi_batch:ferment_time_h",
+      "recipe_id": "kimchi_batch",
+      "category": "fermented_veg",
+      "computed": 72.034283,
+      "measured": 72.0,
+      "error_pct": 0.047615187057835504,
+      "source": "recipe_process",
+      "unit": "h"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "final_ph",
+      "name": "kimchi_batch:final_ph",
+      "recipe_id": "kimchi_batch",
+      "category": "fermented_veg",
+      "computed": 4.301024,
+      "measured": 4.3,
+      "error_pct": 0.023807593528911784,
+      "source": "recipe_process",
+      "unit": "ph"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "salt_mass_fraction",
+      "name": "kimchi_batch:salt_mass_fraction",
+      "recipe_id": "kimchi_batch",
+      "category": "fermented_veg",
+      "computed": 0.025006,
+      "measured": 0.025,
+      "error_pct": 0.023807593528907267,
+      "source": "recipe_process",
+      "unit": "mass_fraction"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "ferment_temperature_C",
+      "name": "yogurt_batch:ferment_temperature_C",
+      "recipe_id": "yogurt_batch",
+      "category": "fermented_dairy",
+      "computed": 42.019998,
+      "measured": 42.0,
+      "error_pct": 0.04761518705782986,
+      "source": "recipe_process",
+      "unit": "C"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "ferment_time_h",
+      "name": "yogurt_batch:ferment_time_h",
+      "recipe_id": "yogurt_batch",
+      "category": "fermented_dairy",
+      "computed": 6.002857,
+      "measured": 6.0,
+      "error_pct": 0.047615187057825636,
+      "source": "recipe_process",
+      "unit": "h"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "final_ph",
+      "name": "yogurt_batch:final_ph",
+      "recipe_id": "yogurt_batch",
+      "category": "fermented_dairy",
+      "computed": 4.501071,
+      "measured": 4.5,
+      "error_pct": 0.023807593528917752,
+      "source": "recipe_process",
+      "unit": "ph"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "final_moisture_pct",
+      "name": "yogurt_batch:final_moisture_pct",
+      "recipe_id": "yogurt_batch",
+      "category": "fermented_dairy",
+      "computed": 87.020713,
+      "measured": 87.0,
+      "error_pct": 0.023807593528912308,
+      "source": "recipe_process",
+      "unit": "pct"
     },
     {
       "lab": "culinary_arts_lab",
@@ -837,21 +721,7 @@
       "measured": 196.0,
       "error_pct": 0.07869745016115089,
       "source": "coffee_roast",
-      "unit": "C",
-      "domain_display_name": "culinary arts",
-      "display_name": "coffee roast:first crack temperature C",
-      "scientific_measurement": {
-        "delta": 0.154247,
-        "delta_pct": 0.078697,
-        "effective_error_pct": 0.078697,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "C"
-      }
+      "unit": "C"
     },
     {
       "lab": "culinary_arts_lab",
@@ -861,21 +731,7 @@
       "measured": 0.24,
       "error_pct": 0.07869745016115398,
       "source": "coffee_roast",
-      "unit": "ratio",
-      "domain_display_name": "culinary arts",
-      "display_name": "coffee roast:development time ratio",
-      "scientific_measurement": {
-        "delta": 0.000189,
-        "delta_pct": 0.07875,
-        "effective_error_pct": 0.07875,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "ratio"
-      }
+      "unit": "ratio"
     },
     {
       "lab": "culinary_arts_lab",
@@ -885,21 +741,7 @@
       "measured": 14.8,
       "error_pct": 0.07869745016116055,
       "source": "coffee_roast",
-      "unit": "pct",
-      "domain_display_name": "culinary arts",
-      "display_name": "coffee roast:weight loss pct",
-      "scientific_measurement": {
-        "delta": 0.011647,
-        "delta_pct": 0.078696,
-        "effective_error_pct": 0.078696,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "pct"
-      }
+      "unit": "pct"
     },
     {
       "lab": "culinary_arts_lab",
@@ -909,38 +751,30 @@
       "measured": 205.0,
       "error_pct": 0.07869745016116335,
       "source": "coffee_roast",
-      "unit": "C",
-      "domain_display_name": "culinary arts",
-      "display_name": "coffee roast:end temperature C",
-      "scientific_measurement": {
-        "delta": 0.16133,
-        "delta_pct": 0.078698,
-        "effective_error_pct": 0.078698,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "C"
-      }
+      "unit": "C"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "second_crack_temperature_C",
+      "name": "coffee_roast:second_crack_temperature_C",
+      "computed": 224.176282,
+      "measured": 224.0,
+      "error_pct": 0.07869745016115814,
+      "source": "coffee_roast",
+      "unit": "C"
+    },
+    {
+      "lab": "culinary_arts_lab",
+      "property": "city_plus_end_C",
+      "name": "coffee_roast:city_plus_end_C",
+      "computed": 215.1692,
+      "measured": 215.0,
+      "error_pct": 0.0786974501611598,
+      "source": "coffee_roast",
+      "unit": "C"
     }
   ],
   "crosswalk_modules": [
     "FSOT.Formal.CulinaryArtsPriors"
-  ],
-  "display_name": "Culinary Arts",
-  "tier_label": "Tier 33",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:45.396528+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 26,
-    "median_error_pct": 0.047615,
-    "max_error_pct": 0.462279,
-    "mean_abs_delta": 0.10226907769230771,
-    "precision_tier_counts": {
-      "green": 26
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  ]
 }

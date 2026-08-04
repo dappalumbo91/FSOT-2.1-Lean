@@ -30,20 +30,22 @@ FO210_FORMULA = (
     "(1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / "
     "(1 + (k^7) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
 )
-FO212_RULE_ID = "FO-212-F"
+FO212_RULE_ID = "FO-212-G"
 FO212_DESCRIPTION = (
-    "FO-212 (FO-210 ln-transport + gas/similarity readout) plus |Chaos|·cos(Δθ) "
-    "geometry-instability polish — FSOT seed Chaos only, zero free parameters."
+    "FO-212-F plus seed-locked Strouhal/AoA polish: inv(St) roll-off (A_in,K,P_new), "
+    "extra bleed cos(Δθ), 3·(A_in/φ)·sin(Δθ), −P_base·log(1+St). Zero free parameters."
 )
 TARGET_COLUMN = "scaled_sound_pressure_level_db"
 TRAIN_FRACTION = 0.8
 SPLIT_SEED = 17
 SOTA_HELD_OUT_RMSE = 5.412721340832612
-GOLDEN_HELD_OUT_RMSE = 5.095078232775157  # FO-212-F held-out
-GOLDEN_FULL_RMSE = 5.061015749458651  # refreshed below if full metrics change
+GOLDEN_HELD_OUT_RMSE = 4.5985013316700405  # FO-212-G held-out
+GOLDEN_FULL_RMSE = 4.571447321650111  # FO-212-G full-dataset (refreshed)
 LEGACY_FO210_HELD_OUT_RMSE = 5.907214506805364
 LEGACY_FO210_FULL_RMSE = 5.961109363514883
 LEGACY_FO212_HELD_OUT_RMSE = 5.102551799768952
+LEGACY_FO212F_HELD_OUT_RMSE = 5.095078232775157
+LEGACY_FO212F_FULL_RMSE = 5.061015749458651
 
 
 def _metrics(actual: list[float] | object, pred: object) -> dict[str, float]:

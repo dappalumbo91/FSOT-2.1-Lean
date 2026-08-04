@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0",
-  "source": "Food microbiology literature anchors",
-  "updated": "2026-07-09",
+  "schema_version": "1.1",
+  "source": "Food microbiology literature anchors (widened fermentation + Maillard process panel)",
+  "updated": "2026-08-03",
   "fermentations": [
     {
       "name": "yogurt_lactobacillus",
@@ -38,6 +38,92 @@
       "optimal_temp_C": 22.0,
       "optimal_ph": 3.4,
       "lag_phase_h": 24.0
+    },
+    {
+      "name": "sauerkraut_lacto",
+      "optimal_temp_C": 18.0,
+      "optimal_ph": 3.6,
+      "lag_phase_h": 24.0
+    },
+    {
+      "name": "miso_koji",
+      "optimal_temp_C": 30.0,
+      "optimal_ph": 5.5,
+      "lag_phase_h": 48.0
+    },
+    {
+      "name": "tempeh_rhizopus",
+      "optimal_temp_C": 31.0,
+      "optimal_ph": 6.5,
+      "lag_phase_h": 12.0
+    },
+    {
+      "name": "beer_lager_fermentation",
+      "optimal_temp_C": 10.0,
+      "optimal_ph": 4.2,
+      "lag_phase_h": 48.0
+    },
+    {
+      "name": "cider_primary",
+      "optimal_temp_C": 18.0,
+      "optimal_ph": 3.5,
+      "lag_phase_h": 18.0
+    },
+    {
+      "name": "natto_subtilis",
+      "optimal_temp_C": 40.0,
+      "optimal_ph": 6.8,
+      "lag_phase_h": 6.0
+    },
+    {
+      "name": "kefir_mixed",
+      "optimal_temp_C": 22.0,
+      "optimal_ph": 4.4,
+      "lag_phase_h": 8.0
+    },
+    {
+      "name": "pickles_lacto",
+      "optimal_temp_C": 20.0,
+      "optimal_ph": 3.8,
+      "lag_phase_h": 36.0
+    }
+  ],
+  "maillard_process": [
+    {
+      "name": "bread_crust_maillard",
+      "onset_temp_C": 140.0,
+      "typical_roast_C": 180.0,
+      "development_min": 12.0
+    },
+    {
+      "name": "coffee_first_crack_maillard",
+      "onset_temp_C": 150.0,
+      "typical_roast_C": 196.0,
+      "development_min": 3.0
+    },
+    {
+      "name": "seared_meat_maillard",
+      "onset_temp_C": 140.0,
+      "typical_roast_C": 200.0,
+      "development_min": 4.0
+    },
+    {
+      "name": "caramelization_sucrose",
+      "onset_temp_C": 160.0,
+      "typical_roast_C": 170.0,
+      "development_min": 8.0
+    },
+    {
+      "name": "malt_kilning_maillard",
+      "onset_temp_C": 85.0,
+      "typical_roast_C": 120.0,
+      "development_min": 45.0
+    },
+    {
+      "name": "chocolate_roast_maillard",
+      "onset_temp_C": 120.0,
+      "typical_roast_C": 140.0,
+      "development_min": 20.0
     }
   ]
 }

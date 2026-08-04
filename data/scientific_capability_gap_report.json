@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T01:58:11.316254+00:00",
+  "generated_at": "2026-08-04T02:06:17.057168+00:00",
   "goal": "Beat or exceed scientific SOTA / literature capability on measured observables",
   "live_atlas": {
     "green_pass": 414,
     "green_fail": 0,
     "worst_max_error_pct": 0.4989,
     "worst_domain": "Phi_Morphogenetic_Scaling",
-    "domains_above_aspiration_0_05": 96,
+    "domains_above_aspiration_0_05": 94,
     "threshold_green_pct": 0.5,
     "threshold_aspiration_pct": 0.05
   },
@@ -40,18 +40,6 @@
       "fsot_source": "data/higgs_mass_benchmark.json"
     },
     {
-      "id": "airfoil_held_out_rmse",
-      "domain": "Acoustics",
-      "fsot_error_pct": 5.095078232775157,
-      "sota_typical_error_pct": 5.412721340832612,
-      "margin_vs_sota_pp": 0.3176431080574549,
-      "sota_model": "Chosen-feature quadratic regression",
-      "sota_free_parameters": 10,
-      "status": "beats_sota",
-      "refine_tier": "THIN_LEAD \u2014 refine to lock exceed",
-      "fsot_source": "data/math_generator_airfoil_rmse_benchmark.json"
-    },
-    {
       "id": "higgs_branching",
       "domain": "High_Energy_Physics",
       "fsot_error_pct": 0.04212398909516783,
@@ -74,6 +62,18 @@
       "status": "beats_sota",
       "refine_tier": "MODERATE_LEAD \u2014 optional polish",
       "fsot_source": "data/h0_planck_benchmark.json"
+    },
+    {
+      "id": "airfoil_held_out_rmse",
+      "domain": "Acoustics",
+      "fsot_error_pct": 4.598501331670039,
+      "sota_typical_error_pct": 5.412721340832612,
+      "margin_vs_sota_pp": 0.8142200091625735,
+      "sota_model": "Chosen-feature quadratic regression",
+      "sota_free_parameters": 10,
+      "status": "beats_sota",
+      "refine_tier": "MODERATE_LEAD \u2014 optional polish",
+      "fsot_source": "data/math_generator_airfoil_rmse_benchmark.json"
     },
     {
       "id": "Omega_Lambda",
@@ -126,9 +126,9 @@
     {
       "id": "culinary_coffee_roast",
       "domain": "Thermodynamics",
-      "fsot_error_pct": 0.07869745016116055,
+      "fsot_error_pct": 0.0786974501611598,
       "sota_typical_error_pct": 5.0,
-      "margin_vs_sota_pp": 4.921302549838839,
+      "margin_vs_sota_pp": 4.92130254983884,
       "sota_model": "SCA roast curve profiling",
       "sota_free_parameters": 0,
       "status": "beats_sota",
@@ -462,7 +462,7 @@
       "domain": "culinary_arts_benchmark.json",
       "max_error_pct": 0.462279,
       "median_error_pct": 0.047615187057821064,
-      "scalar_count": 26,
+      "scalar_count": 52,
       "max_name": "sucrose_hydrolysis"
     },
     {
@@ -517,8 +517,8 @@
     {
       "domain": "TOE_GR_SM_Deep",
       "max_error_pct": 0.4219868071131969,
-      "median_error_pct": 0.013893853126499888,
-      "scalar_count": 72,
+      "median_error_pct": 0.0047099996121108675,
+      "scalar_count": 81,
       "max_name": "dm2_31_abs"
     },
     {
@@ -543,22 +543,28 @@
       "file": "desi_wa_constraint_benchmark.json"
     },
     {
+      "domain": "math_generator_benchmark_formula_eval_benchmark.json",
+      "scalar_count": 1,
+      "max_error_pct": 2.1125033444758682e-14,
+      "file": "math_generator_benchmark_formula_eval_benchmark.json"
+    },
+    {
       "domain": "Hubble_Dark_Sector_Crosswalk",
       "scalar_count": 2,
       "max_error_pct": 0.039797,
       "file": "hubble_dark_sector_crosswalk_benchmark.json"
     },
     {
+      "domain": "math_generator_airfoil_rmse_benchmark.json",
+      "scalar_count": 2,
+      "max_error_pct": 3.862903827310908e-14,
+      "file": "math_generator_airfoil_rmse_benchmark.json"
+    },
+    {
       "domain": "Formula_Corpus_Closure",
       "scalar_count": 2,
       "max_error_pct": 0.0,
       "file": "formula_corpus_closure_benchmark.json"
-    },
-    {
-      "domain": "math_generator_airfoil_rmse_benchmark.json",
-      "scalar_count": 2,
-      "max_error_pct": 0.0,
-      "file": "math_generator_airfoil_rmse_benchmark.json"
     },
     {
       "domain": "intelligence_compression_benchmark.json",
@@ -673,12 +679,6 @@
       "scalar_count": 5,
       "max_error_pct": 0.0,
       "file": "public_verifiable_spine_benchmark.json"
-    },
-    {
-      "domain": "Tier_95_Zebrafish_Spine",
-      "scalar_count": 5,
-      "max_error_pct": 0.0,
-      "file": "tier_95_zebrafish_spine_benchmark.json"
     }
   ],
   "expansion_map": {

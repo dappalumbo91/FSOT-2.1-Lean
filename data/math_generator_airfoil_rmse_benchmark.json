@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T01:58:09.881098+00:00",
+  "generated_at": "2026-08-04T02:06:06.083755+00:00",
   "source": [
     "vendor/math_generator/datasets/airfoil_self_noise.csv",
     "vendor/math_generator/benchmark_reports/airfoil_three_seed_report.json"
@@ -10,7 +10,7 @@
     "consciousness"
   ],
   "D_eff": 17,
-  "rule_id": "FO-212-F",
+  "rule_id": "FO-212-G",
   "sota_beat": true,
   "sota_held_out_rmse": 5.412721340832612,
   "held_out_source": "python_split_fo212",
@@ -21,21 +21,21 @@
     {
       "lab": "math_generator_airfoil_rmse",
       "property": "full_dataset_rmse",
-      "rule_id": "FO-212-F",
-      "computed": 5.051578976253906,
-      "measured": 5.061015749458651,
-      "error_pct": 0.18646006398525977,
+      "rule_id": "FO-212-G",
+      "computed": 4.571447321650111,
+      "measured": 4.571447321650111,
+      "error_pct": 0.0,
       "eval_kind": "live_formula_full_dataset"
     },
     {
       "lab": "math_generator_airfoil_rmse",
       "property": "held_out_test_rmse",
-      "rule_id": "FO-212-F",
-      "computed": 5.095078232775157,
-      "measured": 5.095078232775157,
+      "rule_id": "FO-212-G",
+      "computed": 4.598501331670039,
+      "measured": 4.5985013316700405,
       "sota_held_out_rmse": 5.412721340832612,
       "sota_beat": true,
-      "error_pct": 0.0,
+      "error_pct": 3.862903827310908e-14,
       "eval_kind": "python_split_live_recompute",
       "train_row_count": 1202,
       "test_row_count": 301,
@@ -44,7 +44,7 @@
     {
       "lab": "math_generator_airfoil_rmse",
       "property": "row_count",
-      "rule_id": "FO-212-F",
+      "rule_id": "FO-212-G",
       "computed": 1503,
       "measured": 1503,
       "error_pct": 0.0,
@@ -53,7 +53,7 @@
     {
       "lab": "math_generator_airfoil_rmse",
       "property": "dataset_artifact",
-      "rule_id": "FO-212-F",
+      "rule_id": "FO-212-G",
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
@@ -62,7 +62,7 @@
     {
       "lab": "math_generator_airfoil_rmse",
       "property": "report_artifact",
-      "rule_id": "FO-212-F",
+      "rule_id": "FO-212-G",
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,

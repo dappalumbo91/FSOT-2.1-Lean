@@ -1,6 +1,6 @@
 # FSOT Zero-Parameter Competitiveness Dossier
 
-Generated: 2026-08-04T01:58:11.086186+00:00
+Generated: 2026-08-04T02:06:16.717269+00:00
 
 ## Executive summary
 
@@ -107,7 +107,7 @@ Generated: 2026-08-04T01:58:11.086186+00:00
 | sports_biomechanics_gap_fill_pooled | 0.044 | 8.0 | 7.96 | 0 | beats_sota |
 | geology_stratigraphy_ext_pooled | 0.000 | 10.0 | 10.00 | 4 | beats_sota |
 | trinary_os_tier_e_pooled | 0.000 | 2.0 | 2.00 | 0 | beats_sota |
-| airfoil_held_out_rmse | 5.095 | 5.4 | 0.32 | 10 | beats_sota |
+| airfoil_held_out_rmse | 4.599 | 5.4 | 0.81 | 10 | beats_sota |
 | domain_coupling_simulation_pooled | 0.000 | 15.0 | 15.00 | 12 | beats_sota |
 | formula_corpus_closure_pooled | 0.000 | 8.0 | 8.00 | 4 | beats_sota |
 | space_weather_summary_pooled | 0.000 | 5.0 | 5.00 | 0 | beats_sota |

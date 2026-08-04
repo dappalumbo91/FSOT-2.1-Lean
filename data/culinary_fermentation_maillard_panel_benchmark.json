@@ -1,10 +1,10 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T16:20:15.780285+00:00",
+  "generated_at": "2026-08-04T02:05:32.813356+00:00",
   "domain": "Culinary_Fermentation_Maillard_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "vendor/fsot_compute.py\\vendor\\scientific_expansion\\tier86_cache\\culinary_fermentation_maillard_cache.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\scientific_expansion\\tier86_cache\\culinary_fermentation_maillard_cache.json",
     "PubChem",
     "fermentation_reference"
   ],
@@ -14,9 +14,9 @@
     "material"
   ],
   "D_eff": 15,
-  "record_count": 130,
-  "observable_count": 130,
-  "scalar_record_count": 130,
+  "record_count": 151,
+  "observable_count": 151,
+  "scalar_record_count": 151,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.040788,
   "pooled_median_error_pct": 0.040788,
@@ -42,20 +42,7 @@
       "computed": 0.040788,
       "measured": 0.0,
       "error_pct": 0.040788,
-      "observable_count": 130,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.040788,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 151
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -64,20 +51,7 @@
       "computed": 0.040788,
       "measured": 0.0,
       "error_pct": 0.040788,
-      "observable_count": 130,
-      "domain_display_name": "tier gap fill",
-      "display_name": "culinary fermentation maillard",
-      "scientific_measurement": {
-        "delta": 0.040788,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 151
     }
   ],
   "material_records": [
@@ -91,20 +65,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "sodium chloride",
-      "scientific_measurement": {
-        "delta": 0.023837,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -116,20 +77,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "fructose",
-      "scientific_measurement": {
-        "delta": 0.073484,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -141,20 +89,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "maltose",
-      "scientific_measurement": {
-        "delta": 0.139619,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -166,20 +101,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "lactose",
-      "scientific_measurement": {
-        "delta": 0.139619,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -191,20 +113,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "galactose",
-      "scientific_measurement": {
-        "delta": 0.073484,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -216,20 +125,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "trehalose",
-      "scientific_measurement": {
-        "delta": 0.139619,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -241,20 +137,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "raffinose",
-      "scientific_measurement": {
-        "delta": 0.205737,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -266,20 +149,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "citric acid",
-      "scientific_measurement": {
-        "delta": 0.078363,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -291,20 +161,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "malic acid",
-      "scientific_measurement": {
-        "delta": 0.054693,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -316,20 +173,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "tartaric acid",
-      "scientific_measurement": {
-        "delta": 0.061219,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -341,20 +185,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "acetic acid",
-      "scientific_measurement": {
-        "delta": 0.024493,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -366,20 +197,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "lactic acid",
-      "scientific_measurement": {
-        "delta": 0.036742,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -391,20 +209,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "butyric acid",
-      "scientific_measurement": {
-        "delta": 0.035939,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -416,20 +221,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "oleic acid",
-      "scientific_measurement": {
-        "delta": 0.115227,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -441,20 +233,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "palmitic acid",
-      "scientific_measurement": {
-        "delta": 0.10459,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -466,20 +245,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "stearic acid",
-      "scientific_measurement": {
-        "delta": 0.116043,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -491,20 +257,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "linoleic acid",
-      "scientific_measurement": {
-        "delta": 0.114371,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -516,20 +269,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "caprylic acid",
-      "scientific_measurement": {
-        "delta": 0.058821,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -541,20 +281,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "lauric acid",
-      "scientific_measurement": {
-        "delta": 0.081707,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -566,20 +293,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "vanillin",
-      "scientific_measurement": {
-        "delta": 0.06206,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -591,20 +305,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "eugenol",
-      "scientific_measurement": {
-        "delta": 0.066975,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -616,20 +317,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "cinnamaldehyde",
-      "scientific_measurement": {
-        "delta": 0.053906,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -641,20 +329,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "menthol",
-      "scientific_measurement": {
-        "delta": 0.063736,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -666,20 +341,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "thymol",
-      "scientific_measurement": {
-        "delta": 0.061272,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -691,20 +353,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "carvacrol",
-      "scientific_measurement": {
-        "delta": 0.061272,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -716,20 +365,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "piperine",
-      "scientific_measurement": {
-        "delta": 0.116386,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -741,20 +377,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "capsaicin",
-      "scientific_measurement": {
-        "delta": 0.124568,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -766,20 +389,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "gingerol",
-      "scientific_measurement": {
-        "delta": 0.120081,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -791,20 +401,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "zingerone",
-      "scientific_measurement": {
-        "delta": 0.079223,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -816,20 +413,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "shogaol",
-      "scientific_measurement": {
-        "delta": 0.112739,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -841,20 +425,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "allicin",
-      "scientific_measurement": {
-        "delta": 0.0662,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -866,20 +437,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "diallyl disulfide",
-      "scientific_measurement": {
-        "delta": 0.059673,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -891,20 +449,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "rosmarinic acid",
-      "scientific_measurement": {
-        "delta": 0.146961,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -916,20 +461,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "myristicin",
-      "scientific_measurement": {
-        "delta": 0.078399,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -941,20 +473,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "allyl isothiocyanate",
-      "scientific_measurement": {
-        "delta": 0.080622,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -966,20 +485,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "limonene",
-      "scientific_measurement": {
-        "delta": 0.055566,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -991,20 +497,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "linalool",
-      "scientific_measurement": {
-        "delta": 0.062916,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1016,20 +509,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "geraniol",
-      "scientific_measurement": {
-        "delta": 0.062916,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1041,20 +521,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "citral",
-      "scientific_measurement": {
-        "delta": 0.062092,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1066,20 +533,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "furaneol",
-      "scientific_measurement": {
-        "delta": 0.116377,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1091,20 +545,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "diacetyl",
-      "scientific_measurement": {
-        "delta": 0.035115,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1116,20 +557,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "furfural",
-      "scientific_measurement": {
-        "delta": 0.03919,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1141,20 +569,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "hmf",
-      "scientific_measurement": {
-        "delta": 0.051438,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1166,20 +581,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "acrylamide",
-      "scientific_measurement": {
-        "delta": 0.028992,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1191,20 +593,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "pyrazine",
-      "scientific_measurement": {
-        "delta": 0.032667,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1216,20 +605,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "maltol",
-      "scientific_measurement": {
-        "delta": 0.051438,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1241,20 +617,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "ethyl maltol",
-      "scientific_measurement": {
-        "delta": 0.093507,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1266,20 +629,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "benzaldehyde",
-      "scientific_measurement": {
-        "delta": 0.043285,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1291,20 +641,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "acetoin",
-      "scientific_measurement": {
-        "delta": 0.035939,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1316,20 +653,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "isoamyl alcohol",
-      "scientific_measurement": {
-        "delta": 0.035955,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1341,20 +665,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "ethyl acetate",
-      "scientific_measurement": {
-        "delta": 0.035939,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1366,20 +677,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "theobromine",
-      "scientific_measurement": {
-        "delta": 0.073484,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1391,20 +689,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "theophylline",
-      "scientific_measurement": {
-        "delta": 0.073484,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1416,20 +701,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "chlorogenic acid",
-      "scientific_measurement": {
-        "delta": 0.144517,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1441,20 +713,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "trigonelline",
-      "scientific_measurement": {
-        "delta": 0.055937,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1466,20 +725,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "l theanine",
-      "scientific_measurement": {
-        "delta": 0.071053,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1491,20 +737,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "catechin",
-      "scientific_measurement": {
-        "delta": 0.118397,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1516,20 +749,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "epicatechin",
-      "scientific_measurement": {
-        "delta": 0.124923,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1541,20 +761,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "humulene",
-      "scientific_measurement": {
-        "delta": 0.090701,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1566,20 +773,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "phenethylamine",
-      "scientific_measurement": {
-        "delta": 0.049427,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1591,20 +785,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "sodium bicarbonate",
-      "scientific_measurement": {
-        "delta": 0.034265,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1616,20 +797,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "monosodium glutamate",
-      "scientific_measurement": {
-        "delta": 0.068977,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1641,20 +809,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "inosinic acid",
-      "scientific_measurement": {
-        "delta": 0.148152,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1666,20 +821,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "daidzein",
-      "scientific_measurement": {
-        "delta": 0.121668,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1691,20 +833,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "glycitein",
-      "scientific_measurement": {
-        "delta": 0.115945,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1716,20 +845,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "carnosine",
-      "scientific_measurement": {
-        "delta": 0.092276,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1741,20 +857,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "anserine",
-      "scientific_measurement": {
-        "delta": 0.097998,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1766,20 +869,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "taurine",
-      "scientific_measurement": {
-        "delta": 0.051047,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1791,20 +881,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "tyramine",
-      "scientific_measurement": {
-        "delta": 0.055954,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1816,20 +893,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "histamine",
-      "scientific_measurement": {
-        "delta": 0.045336,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1841,20 +905,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "putrescine",
-      "scientific_measurement": {
-        "delta": 0.035955,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1866,20 +917,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "epa",
-      "scientific_measurement": {
-        "delta": 0.123385,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1891,20 +929,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "dha",
-      "scientific_measurement": {
-        "delta": 0.13399,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1916,20 +941,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "beta carotene",
-      "scientific_measurement": {
-        "delta": 0.218993,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1941,20 +953,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "lycopene",
-      "scientific_measurement": {
-        "delta": 0.218993,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1966,20 +965,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "lutein",
-      "scientific_measurement": {
-        "delta": 0.232045,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -1991,20 +977,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "sodium benzoate",
-      "scientific_measurement": {
-        "delta": 0.058776,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2016,20 +989,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "potassium sorbate",
-      "scientific_measurement": {
-        "delta": 0.061272,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2041,20 +1001,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "bht",
-      "scientific_measurement": {
-        "delta": 0.089877,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2066,20 +1013,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "aspartame",
-      "scientific_measurement": {
-        "delta": 0.12004,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2091,20 +1025,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "sucralose",
-      "scientific_measurement": {
-        "delta": 0.162175,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2116,20 +1037,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "saccharin",
-      "scientific_measurement": {
-        "delta": 0.07472,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2141,20 +1049,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "rebaudioside a",
-      "scientific_measurement": {
-        "delta": 0.113473,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2166,20 +1061,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "hydroxytyrosol",
-      "scientific_measurement": {
-        "delta": 0.062879,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2191,20 +1073,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "oleocanthal",
-      "scientific_measurement": {
-        "delta": 0.090244,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2216,20 +1085,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "phosphatidylcholine",
-      "scientific_measurement": {
-        "delta": 0.309217,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2241,20 +1097,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "methionine",
-      "scientific_measurement": {
-        "delta": 0.197473,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2266,20 +1109,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "arginine",
-      "scientific_measurement": {
-        "delta": 0.071053,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2291,20 +1121,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "histidine",
-      "scientific_measurement": {
-        "delta": 0.063283,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2316,20 +1133,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "proline",
-      "scientific_measurement": {
-        "delta": 0.101257,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2341,570 +1145,19 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "tyrosine",
-      "scientific_measurement": {
-        "delta": 0.073905,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "isoleucine",
-      "computed": 131.223502,
-      "measured": 131.17,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "isoleucine",
-      "scientific_measurement": {
-        "delta": 0.053502,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "threonine",
-      "computed": 119.168587,
-      "measured": 119.12,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "threonine",
-      "scientific_measurement": {
-        "delta": 0.048587,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "asparagine",
-      "computed": 132.17389,
-      "measured": 132.12,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "asparagine",
-      "scientific_measurement": {
-        "delta": 0.05389,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "glutamine",
-      "computed": 146.199608,
-      "measured": 146.14,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "glutamine",
-      "scientific_measurement": {
-        "delta": 0.059608,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "glutathione",
-      "computed": 307.455355,
-      "measured": 307.33,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "glutathione",
-      "scientific_measurement": {
-        "delta": 0.125355,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "apigenin",
-      "computed": 270.350227,
-      "measured": 270.24,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "apigenin",
-      "scientific_measurement": {
-        "delta": 0.110227,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "luteolin",
-      "computed": 286.356753,
-      "measured": 286.24,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "luteolin",
-      "scientific_measurement": {
-        "delta": 0.116753,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "kaempferol",
-      "computed": 286.356753,
-      "measured": 286.24,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "kaempferol",
-      "scientific_measurement": {
-        "delta": 0.116753,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "glyceryl_tristearate",
-      "computed": 76.121036,
-      "measured": 76.09,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "glyceryl tristearate",
-      "scientific_measurement": {
-        "delta": 0.031036,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "potassium_chloride",
-      "computed": 74.580408,
-      "measured": 74.55,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "potassium chloride",
-      "scientific_measurement": {
-        "delta": 0.030408,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "propionic_acid",
-      "computed": 74.110216,
-      "measured": 74.08,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "propionic acid",
-      "scientific_measurement": {
-        "delta": 0.030216,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "isovaleric_acid",
-      "computed": 101.191257,
-      "measured": 101.15,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "isovaleric acid",
-      "scientific_measurement": {
-        "delta": 0.041257,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "crocetin",
-      "computed": 328.533949,
-      "measured": 328.4,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "crocetin",
-      "scientific_measurement": {
-        "delta": 0.133949,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "isohumulone",
-      "computed": 615.751053,
-      "measured": 615.5,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "isohumulone",
-      "scientific_measurement": {
-        "delta": 0.251053,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "malvidin",
-      "computed": 328.533949,
-      "measured": 328.4,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "malvidin",
-      "scientific_measurement": {
-        "delta": 0.133949,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "astaxanthin",
-      "computed": 597.043425,
-      "measured": 596.8,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "astaxanthin",
-      "scientific_measurement": {
-        "delta": 0.243425,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "tannic_acid",
-      "computed": 1701.893892,
-      "measured": 1701.2,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "tannic acid",
-      "scientific_measurement": {
-        "delta": 0.693892,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "oxalic_acid",
-      "computed": 90.066722,
-      "measured": 90.03,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "oxalic acid",
-      "scientific_measurement": {
-        "delta": 0.036722,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "formic_acid",
-      "computed": 46.043773,
-      "measured": 46.025,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "formic acid",
-      "scientific_measurement": {
-        "delta": 0.018773,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "indole",
-      "computed": 117.197784,
-      "measured": 117.15,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "indole",
-      "scientific_measurement": {
-        "delta": 0.047784,
-        "delta_pct": 0.040789,
-        "effective_error_pct": 0.040789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "culinary_fermentation_maillard_lab",
-      "property": "molecular_weight",
-      "name": "skatole",
-      "computed": 131.223502,
-      "measured": 131.17,
-      "error_pct": 0.040788,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Chemistry",
-      "fsot_scalar": 0.407884,
-      "ingest_source": "culinary_pubchem_bundled",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "skatole",
-      "scientific_measurement": {
-        "delta": 0.053502,
-        "delta_pct": 0.040788,
-        "effective_error_pct": 0.040788,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "culinary_pubchem_bundled"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
       "property": "optimal_temp_C",
       "name": "yogurt_lactobacillus",
-      "computed": 42.033053,
+      "computed": 42.016526,
       "measured": 42.0,
-      "error_pct": 0.078697,
+      "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "yogurt lactobacillus",
-      "scientific_measurement": {
-        "delta": 0.033053,
-        "delta_pct": 0.078698,
-        "effective_error_pct": 0.078698,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2916,20 +1169,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "yogurt lactobacillus",
-      "scientific_measurement": {
-        "delta": 0.001835,
-        "delta_pct": 0.040778,
-        "effective_error_pct": 0.040778,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2941,45 +1181,19 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "yogurt lactobacillus",
-      "scientific_measurement": {
-        "delta": 0.000445,
-        "delta_pct": 0.02225,
-        "effective_error_pct": 0.02225,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
       "property": "optimal_temp_C",
       "name": "sourdough_starter",
-      "computed": 27.021248,
+      "computed": 27.010624,
       "measured": 27.0,
-      "error_pct": 0.078697,
+      "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "sourdough starter",
-      "scientific_measurement": {
-        "delta": 0.021248,
-        "delta_pct": 0.078696,
-        "effective_error_pct": 0.078696,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -2991,20 +1205,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "sourdough starter",
-      "scientific_measurement": {
-        "delta": 0.001713,
-        "delta_pct": 0.040786,
-        "effective_error_pct": 0.040786,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -3016,46 +1217,19 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "sourdough starter",
-      "scientific_measurement": {
-        "delta": 0.001779,
-        "delta_pct": 0.022238,
-        "effective_error_pct": 0.022238,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
       "property": "optimal_temp_C",
       "name": "kimchi_lacto",
-      "computed": 18.014166,
+      "computed": 18.007083,
       "measured": 18.0,
-      "error_pct": 0.078697,
+      "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "kimchi lacto",
-      "scientific_measurement": {
-        "delta": 0.014166,
-        "delta_pct": 0.0787,
-        "effective_error_pct": 0.0787,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.3935,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.2
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -3067,21 +1241,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "kimchi lacto",
-      "scientific_measurement": {
-        "delta": 0.001795,
-        "delta_pct": 0.040795,
-        "effective_error_pct": 0.040795,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.2039,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.2
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -3093,46 +1253,19 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "kimchi lacto",
-      "scientific_measurement": {
-        "delta": 0.002668,
-        "delta_pct": 0.022233,
-        "effective_error_pct": 0.022233,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.1112,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.2
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
       "property": "optimal_temp_C",
       "name": "kombucha",
-      "computed": 26.020461,
+      "computed": 26.010231,
       "measured": 26.0,
-      "error_pct": 0.078697,
+      "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "kombucha",
-      "scientific_measurement": {
-        "delta": 0.020461,
-        "delta_pct": 0.078696,
-        "effective_error_pct": 0.078696,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -3144,20 +1277,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "kombucha",
-      "scientific_measurement": {
-        "delta": 0.001305,
-        "delta_pct": 0.040781,
-        "effective_error_pct": 0.040781,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -3169,45 +1289,19 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "kombucha",
-      "scientific_measurement": {
-        "delta": 0.000667,
-        "delta_pct": 0.022233,
-        "effective_error_pct": 0.022233,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
       "property": "optimal_temp_C",
       "name": "beer_ale_fermentation",
-      "computed": 20.015739,
+      "computed": 20.00787,
       "measured": 20.0,
-      "error_pct": 0.078697,
+      "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "beer ale fermentation",
-      "scientific_measurement": {
-        "delta": 0.015739,
-        "delta_pct": 0.078695,
-        "effective_error_pct": 0.078695,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -3219,20 +1313,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "beer ale fermentation",
-      "scientific_measurement": {
-        "delta": 0.001754,
-        "delta_pct": 0.040791,
-        "effective_error_pct": 0.040791,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -3244,45 +1325,19 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "beer ale fermentation",
-      "scientific_measurement": {
-        "delta": 0.001334,
-        "delta_pct": 0.022233,
-        "effective_error_pct": 0.022233,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
       "property": "optimal_temp_C",
       "name": "wine_primary",
-      "computed": 22.017313,
+      "computed": 22.008657,
       "measured": 22.0,
-      "error_pct": 0.078697,
+      "error_pct": 0.039349,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "wine primary",
-      "scientific_measurement": {
-        "delta": 0.017313,
-        "delta_pct": 0.078695,
-        "effective_error_pct": 0.078695,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -3294,20 +1349,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "wine primary",
-      "scientific_measurement": {
-        "delta": 0.001387,
-        "delta_pct": 0.040794,
-        "effective_error_pct": 0.040794,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
     },
     {
       "lab": "culinary_fermentation_maillard_lab",
@@ -3319,25 +1361,516 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "fermentation_reference",
-      "domain_display_name": "culinary fermentation maillard",
-      "display_name": "wine primary",
-      "scientific_measurement": {
-        "delta": 0.005337,
-        "delta_pct": 0.022238,
-        "effective_error_pct": 0.022238,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_temp_C",
+      "name": "sauerkraut_lacto",
+      "computed": 18.007083,
+      "measured": 18.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_ph",
+      "name": "sauerkraut_lacto",
+      "computed": 3.601468,
+      "measured": 3.6,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "lag_phase_h",
+      "name": "sauerkraut_lacto",
+      "computed": 24.005337,
+      "measured": 24.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_temp_C",
+      "name": "miso_koji",
+      "computed": 30.011805,
+      "measured": 30.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_ph",
+      "name": "miso_koji",
+      "computed": 5.502243,
+      "measured": 5.5,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "lag_phase_h",
+      "name": "miso_koji",
+      "computed": 48.010673,
+      "measured": 48.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_temp_C",
+      "name": "tempeh_rhizopus",
+      "computed": 31.012198,
+      "measured": 31.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_ph",
+      "name": "tempeh_rhizopus",
+      "computed": 6.502651,
+      "measured": 6.5,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "lag_phase_h",
+      "name": "tempeh_rhizopus",
+      "computed": 12.002668,
+      "measured": 12.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_temp_C",
+      "name": "beer_lager_fermentation",
+      "computed": 10.003935,
+      "measured": 10.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_ph",
+      "name": "beer_lager_fermentation",
+      "computed": 4.201713,
+      "measured": 4.2,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "lag_phase_h",
+      "name": "beer_lager_fermentation",
+      "computed": 48.010673,
+      "measured": 48.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_temp_C",
+      "name": "cider_primary",
+      "computed": 18.007083,
+      "measured": 18.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_ph",
+      "name": "cider_primary",
+      "computed": 3.501428,
+      "measured": 3.5,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "lag_phase_h",
+      "name": "cider_primary",
+      "computed": 18.004003,
+      "measured": 18.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_temp_C",
+      "name": "natto_subtilis",
+      "computed": 40.015739,
+      "measured": 40.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_ph",
+      "name": "natto_subtilis",
+      "computed": 6.802774,
+      "measured": 6.8,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "lag_phase_h",
+      "name": "natto_subtilis",
+      "computed": 6.001334,
+      "measured": 6.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_temp_C",
+      "name": "kefir_mixed",
+      "computed": 22.008657,
+      "measured": 22.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_ph",
+      "name": "kefir_mixed",
+      "computed": 4.401795,
+      "measured": 4.4,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "lag_phase_h",
+      "name": "kefir_mixed",
+      "computed": 8.001779,
+      "measured": 8.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_temp_C",
+      "name": "pickles_lacto",
+      "computed": 20.00787,
+      "measured": 20.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "optimal_ph",
+      "name": "pickles_lacto",
+      "computed": 3.80155,
+      "measured": 3.8,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "lag_phase_h",
+      "name": "pickles_lacto",
+      "computed": 36.008005,
+      "measured": 36.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "fermentation_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "onset_temp_C",
+      "name": "bread_crust_maillard",
+      "computed": 140.055088,
+      "measured": 140.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "typical_roast_C",
+      "name": "bread_crust_maillard",
+      "computed": 180.070828,
+      "measured": 180.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "development_min",
+      "name": "bread_crust_maillard",
+      "computed": 12.004895,
+      "measured": 12.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "onset_temp_C",
+      "name": "coffee_first_crack_maillard",
+      "computed": 150.059023,
+      "measured": 150.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "typical_roast_C",
+      "name": "coffee_first_crack_maillard",
+      "computed": 196.077124,
+      "measured": 196.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "development_min",
+      "name": "coffee_first_crack_maillard",
+      "computed": 3.001224,
+      "measured": 3.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "onset_temp_C",
+      "name": "seared_meat_maillard",
+      "computed": 140.055088,
+      "measured": 140.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "typical_roast_C",
+      "name": "seared_meat_maillard",
+      "computed": 200.078697,
+      "measured": 200.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "development_min",
+      "name": "seared_meat_maillard",
+      "computed": 4.001632,
+      "measured": 4.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "onset_temp_C",
+      "name": "caramelization_sucrose",
+      "computed": 160.062958,
+      "measured": 160.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "typical_roast_C",
+      "name": "caramelization_sucrose",
+      "computed": 170.066893,
+      "measured": 170.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "development_min",
+      "name": "caramelization_sucrose",
+      "computed": 8.003263,
+      "measured": 8.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "onset_temp_C",
+      "name": "malt_kilning_maillard",
+      "computed": 85.033446,
+      "measured": 85.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "typical_roast_C",
+      "name": "malt_kilning_maillard",
+      "computed": 120.047218,
+      "measured": 120.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "development_min",
+      "name": "malt_kilning_maillard",
+      "computed": 45.018355,
+      "measured": 45.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "onset_temp_C",
+      "name": "chocolate_roast_maillard",
+      "computed": 120.047218,
+      "measured": 120.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "typical_roast_C",
+      "name": "chocolate_roast_maillard",
+      "computed": 140.055088,
+      "measured": 140.0,
+      "error_pct": 0.039349,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Thermodynamics",
+      "fsot_scalar": 0.786975,
+      "ingest_source": "maillard_process_reference"
+    },
+    {
+      "lab": "culinary_fermentation_maillard_lab",
+      "property": "development_min",
+      "name": "chocolate_roast_maillard",
+      "computed": 20.008158,
+      "measured": 20.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "maillard_process_reference"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.040788,
-    "max_scalar_error_pct": 0.078697,
+    "max_scalar_error_pct": 0.040788,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -3346,19 +1879,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Culinary Fermentation Maillard Panel",
-  "tier_label": "Tier 86",
-  "scientific_precision_summary": {
-    "scalar_count": 130,
-    "median_error_pct": 0.040788,
-    "max_error_pct": 0.0787,
-    "mean_abs_delta": 0.08227844615384614,
-    "precision_tier_counts": {
-      "green": 130
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.144871+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

@@ -74,11 +74,24 @@ See **[`docs/GR_SM_CKM_MULTIPROVER.md`](GR_SM_CKM_MULTIPROVER.md)** — magnitud
 | Triangle | α,β,γ from (ρ̄,η̄); α+β+γ=π | identity green; angle centrals = seed predictions inside exp. bands |
 | Spin-2 probes | massless helicities=2, TT dof=2, quadrupole prefactor | exact identity |
 
+## Depth v3 (path-integral / Fock *probes* — not theorems)
+
+| Layer | Content | Residual gate |
+|-------|---------|---------------|
+| Wilson area law | σ = (√σ)² structural slope | identity |
+| Scale hierarchy | Λ_QCD / √σ vs lattice anchors | ≤0.5% |
+| AF + flux tube + Polyakov | β₀>0; E/L→σ; ⟨L⟩_confined→0 | identity |
+| Massive spin-2 | 2s+1 = 5 polarizations | identity |
+| Fock accounting | 10 − 4 − 4 = 2 TT physical modes | identity |
+| Equivalence + wave | geodesic structure; □h=0 flat | identity |
+
+These deepen the **executable probe layer**. They do **not** close the full path-integral confinement theorem or spin-2 Fock uniqueness.
+
 ## What is still open (honest, not hidden)
 
-1. Full non-abelian **path-integral** confinement theorem (scales + Casimirs shipped)  
+1. Full non-abelian **path-integral** confinement theorem (scales + Casimirs + area-law/Polyakov *probes* shipped)  
 2. CKM angle centrals residual-gated to ≤0.5% of PDG *central* (predictions inside bands; exact triangle closure shipped)  
-3. Spin-2 graviton **Fock uniqueness** from fluid action (helicity/TT probes shipped)  
+3. Spin-2 graviton **Fock uniqueness** from fluid action (helicity/TT/massive-dof/accounting probes shipped)  
 4. Uniqueness theorem for Einstein–Hilbert measure  
 5. Peer review / arXiv endorsement (social)  
 6. Independent third-party clone (process)

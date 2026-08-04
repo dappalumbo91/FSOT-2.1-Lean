@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0",
-  "source": "FSOT household recipe calibration (banana/zucchini/pumpkin quick breads + coffee roasting)",
-  "updated": "2026-07-09",
+  "schema_version": "1.1",
+  "source": "FSOT household recipe calibration (quick breads + coffee + fermented dough/veg + roast)",
+  "updated": "2026-08-03",
   "recipes": [
     {
       "recipe_id": "banana_bread",
@@ -35,12 +35,80 @@
         {"property": "pumpkin_mass_fraction", "measured": 0.31, "unit": "mass_fraction"},
         {"property": "final_moisture_pct", "measured": 27.2, "unit": "pct"}
       ]
+    },
+    {
+      "recipe_id": "sourdough_loaf",
+      "name": "Sourdough Loaf",
+      "category": "fermented_bread",
+      "process_observables": [
+        {"property": "bake_temperature_C", "measured": 230.0, "unit": "C"},
+        {"property": "bake_time_min", "measured": 40.0, "unit": "min"},
+        {"property": "hydration_pct", "measured": 72.0, "unit": "pct"},
+        {"property": "final_moisture_pct", "measured": 35.0, "unit": "pct"}
+      ]
+    },
+    {
+      "recipe_id": "pizza_dough",
+      "name": "Neapolitan Pizza Dough",
+      "category": "fermented_bread",
+      "process_observables": [
+        {"property": "bake_temperature_C", "measured": 450.0, "unit": "C"},
+        {"property": "bake_time_min", "measured": 1.5, "unit": "min"},
+        {"property": "hydration_pct", "measured": 65.0, "unit": "pct"},
+        {"property": "final_moisture_pct", "measured": 22.0, "unit": "pct"}
+      ]
+    },
+    {
+      "recipe_id": "chocolate_chip_cookie",
+      "name": "Chocolate Chip Cookie",
+      "category": "cookie_roast",
+      "process_observables": [
+        {"property": "bake_temperature_C", "measured": 190.0, "unit": "C"},
+        {"property": "bake_time_min", "measured": 11.0, "unit": "min"},
+        {"property": "sugar_mass_fraction", "measured": 0.28, "unit": "mass_fraction"},
+        {"property": "final_moisture_pct", "measured": 8.5, "unit": "pct"}
+      ]
+    },
+    {
+      "recipe_id": "roast_chicken",
+      "name": "Roast Chicken",
+      "category": "maillard_roast",
+      "process_observables": [
+        {"property": "bake_temperature_C", "measured": 200.0, "unit": "C"},
+        {"property": "bake_time_min", "measured": 75.0, "unit": "min"},
+        {"property": "internal_temp_C", "measured": 74.0, "unit": "C"},
+        {"property": "final_moisture_pct", "measured": 62.0, "unit": "pct"}
+      ]
+    },
+    {
+      "recipe_id": "kimchi_batch",
+      "name": "Kimchi Batch",
+      "category": "fermented_veg",
+      "process_observables": [
+        {"property": "ferment_temperature_C", "measured": 18.0, "unit": "C"},
+        {"property": "ferment_time_h", "measured": 72.0, "unit": "h"},
+        {"property": "final_ph", "measured": 4.3, "unit": "ph"},
+        {"property": "salt_mass_fraction", "measured": 0.025, "unit": "mass_fraction"}
+      ]
+    },
+    {
+      "recipe_id": "yogurt_batch",
+      "name": "Yogurt Batch",
+      "category": "fermented_dairy",
+      "process_observables": [
+        {"property": "ferment_temperature_C", "measured": 42.0, "unit": "C"},
+        {"property": "ferment_time_h", "measured": 6.0, "unit": "h"},
+        {"property": "final_ph", "measured": 4.5, "unit": "ph"},
+        {"property": "final_moisture_pct", "measured": 87.0, "unit": "pct"}
+      ]
     }
   ],
   "coffee_roasting": [
     {"property": "first_crack_temperature_C", "measured": 196.0, "unit": "C", "bean_origin": "mixed_arabica"},
     {"property": "development_time_ratio", "measured": 0.24, "unit": "ratio", "roast_level": "medium"},
     {"property": "weight_loss_pct", "measured": 14.8, "unit": "pct", "roast_level": "medium"},
-    {"property": "end_temperature_C", "measured": 205.0, "unit": "C", "roast_level": "medium"}
+    {"property": "end_temperature_C", "measured": 205.0, "unit": "C", "roast_level": "medium"},
+    {"property": "second_crack_temperature_C", "measured": 224.0, "unit": "C", "roast_level": "dark"},
+    {"property": "city_plus_end_C", "measured": 215.0, "unit": "C", "roast_level": "city_plus"}
   ]
 }

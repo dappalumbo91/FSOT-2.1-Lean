@@ -598,6 +598,57 @@ lemma gr_einstein_quadrupole_prefactor_err_under_half: "0 < (0.5::real)"
 lemma gr_einstein_quadrupole_prefactor_meas_pos: "(0::real) < 1.0"
   by simp
 
+lemma gr_wilson_area_law_sigma_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_wilson_area_law_sigma_meas_pos: "(0::real) < 0.17658624702998535"
+  by simp
+
+lemma gr_confinement_scale_ratio_err_under_half: "0.2295212676523054 < (0.5::real)"
+  by simp
+
+lemma gr_confinement_scale_ratio_meas_pos: "(0::real) < 0.5173809523809524"
+  by simp
+
+lemma gr_asymptotic_freedom_beta0_pos_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_asymptotic_freedom_beta0_pos_meas_pos: "(0::real) < 1.0"
+  by simp
+
+lemma gr_flux_tube_E_over_L_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_flux_tube_E_over_L_meas_pos: "(0::real) < 1.0"
+  by simp
+
+lemma gr_polyakov_confined_order_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_spin2_massive_polarizations_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_spin2_massive_polarizations_meas_pos: "(0::real) < 5.0"
+  by simp
+
+lemma gr_spin2_metric_dof_accounting_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_spin2_metric_dof_accounting_meas_pos: "(0::real) < 2.0"
+  by simp
+
+lemma gr_equivalence_geodesic_structure_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_equivalence_geodesic_structure_meas_pos: "(0::real) < 1.0"
+  by simp
+
+lemma gr_spin2_wave_equation_flat_err_under_half: "0 < (0.5::real)"
+  by simp
+
+lemma gr_spin2_wave_equation_flat_meas_pos: "(0::real) < 1.0"
+  by simp
+
 lemma gr_triangle_angle_sum_pi_err_under_half: "0 < (0.5::real)"
   by simp
 

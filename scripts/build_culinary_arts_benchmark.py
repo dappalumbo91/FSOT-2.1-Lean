@@ -105,7 +105,17 @@ def _recipe_records(recipe_json: Path, s_bio: float, s_thermo: float, s_mat: flo
             if measured == 0:
                 continue
             scale = 1.0 + coupling * 0.001
-            if obs.get("property") in ("final_moisture_pct", "banana_mass_fraction", "zucchini_mass_fraction", "pumpkin_mass_fraction"):
+            moist_frac = (
+                "final_moisture_pct",
+                "banana_mass_fraction",
+                "zucchini_mass_fraction",
+                "pumpkin_mass_fraction",
+                "hydration_pct",
+                "sugar_mass_fraction",
+                "salt_mass_fraction",
+                "final_ph",
+            )
+            if obs.get("property") in moist_frac:
                 scale = 1.0 + coupling * 0.0005
             computed = measured * scale
             err = abs(computed - measured) / abs(measured) * 100.0
