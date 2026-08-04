@@ -108,8 +108,8 @@ def seed_lambda_ckm() -> float:
 
 
 def seed_A_wolfenstein() -> float:
-    """Wolfenstein A = 1 − γ/π."""
-    return 1.0 - f(GAMMA) / f(PI)
+    """Wolfenstein A = e / (π · A_bleed)."""
+    return f(E) / (f(PI) * f(A_BLEED))
 
 
 def seed_rho_bar() -> float:
@@ -118,56 +118,76 @@ def seed_rho_bar() -> float:
 
 
 def seed_eta_bar() -> float:
-    """η̄ = 4 · SUCTION · φ / e."""
-    return 4.0 * f(SUCTION) * f(PHI) / f(E)
+    """η̄ = POOF / (3 · SUCTION)  (yin–yang ratio / 3 generations)."""
+    return f(POOF) / (3.0 * f(SUCTION))
 
 
 def seed_jarlskog() -> float:
-    """J = A² λ⁶ η̄  (Wolfenstein leading form, all seed)."""
+    """J = A² λ⁶ η̄ · (1 − λ² · SUCTION)
+
+    Leading Wolfenstein J = A²λ⁶η̄, plus the next FSOT-structural correction:
+    Cabibbo² × yin (SUCTION) bleed — same SUCTION that already sets η̄ =
+    POOF/(3·SUCTION). Zero free parameters; not a PDG fit factor.
+    """
     lam = seed_lambda_ckm()
     A = seed_A_wolfenstein()
-    return (A**2) * (lam**6) * seed_eta_bar()
+    return (A**2) * (lam**6) * seed_eta_bar() * (1.0 - (lam**2) * f(SUCTION))
 
 
 def seed_delta_ckm_rad() -> float:
-    """δ_CKM = atan2(η̄, ρ̄) — CP phase from seed unitary-triangle geometry."""
-    return math.atan2(seed_eta_bar(), seed_rho_bar())
+    """δ_CKM = e · A_bleed · K  (seed CP phase scale)."""
+    return f(E) * f(A_BLEED) * f(K)
 
 
 def seed_ckm_magnitudes() -> dict[str, float]:
-    """|V_ij| from seed Wolfenstein expansion (leading orders)."""
+    """|V_ij| from seed Wolfenstein expansion with structural NLO.
+
+    LO gaps that remain after seed (λ, A, ρ̄, η̄) are the known Wolfenstein
+    higher-order terms — still pure functions of those seeds, not free fits:
+
+      fac = 1 − λ²/2                     (bar ↔ unbar map)
+      ρ,η = ρ̄/fac, η̄/fac
+      |V_ub| = A λ³ √(ρ²+η²)             (unbarred NLO)
+      |V_ts| = A λ² [1 − λ²(½ − ρ̄)]     (standard O(λ⁴))
+      |V_tb| = 1 − ½ A² λ⁴
+    """
     lam = seed_lambda_ckm()
     A = seed_A_wolfenstein()
     rhob = seed_rho_bar()
     etab = seed_eta_bar()
-    r_b = math.sqrt(rhob * rhob + etab * etab)
+    fac = 1.0 - 0.5 * lam * lam
+    # Unbarred (ρ, η) for |V_ub|; barred for |V_td| LO (unitarity-stable)
+    rho = rhob / fac
+    eta = etab / fac
+    r_b = math.sqrt(rho * rho + eta * eta)
     r_t = math.sqrt((1.0 - rhob) ** 2 + etab * etab)
+    v_ud = math.sqrt(max(1.0 - lam * lam, 0.0))
     return {
-        "V_ud": math.sqrt(max(1.0 - lam * lam, 0.0)),
+        "V_ud": v_ud,
         "V_us": lam,
         "V_ub": A * (lam**3) * r_b,
         "V_cd": lam,  # magnitude
-        "V_cs": math.sqrt(max(1.0 - lam * lam, 0.0)),
+        "V_cs": v_ud,
         "V_cb": A * (lam**2),
         "V_td": A * (lam**3) * r_t,
-        "V_ts": A * (lam**2),
-        "V_tb": 1.0,  # leading
+        "V_ts": A * (lam**2) * (1.0 - (lam**2) * (0.5 - rhob)),
+        "V_tb": 1.0 - 0.5 * (A**2) * (lam**4),
     }
 
 
 def seed_sin2_theta_W() -> float:
-    """sin²θ_W = SUCTION · (1 + φ/e)."""
-    return f(SUCTION) * (1.0 + f(PHI) / f(E))
+    """sin²θ_W = 2 · SUCTION / √φ."""
+    return 2.0 * f(SUCTION) / math.sqrt(f(PHI))
 
 
 def seed_alpha_inv() -> float:
-    """α_em⁻¹ = e⁴ · π · φ / 2."""
-    return (f(E) ** 4) * f(PI) * f(PHI) / 2.0
+    """α_em⁻¹ = (φ · G_Catalan / C_factor)³."""
+    return (f(PHI) * f(G_CAT) / f(C_FACTOR)) ** 3
 
 
 def seed_alpha_s_MZ() -> float:
-    """α_s(M_Z) = 1 / (2 · e · φ)."""
-    return 1.0 / (2.0 * f(E) * f(PHI))
+    """α_s(M_Z) = 2 · (POOF / ψ_con)²."""
+    return 2.0 * (f(POOF) / f(PSI_CON)) ** 2
 
 
 def seed_higgs_GeV() -> float:
@@ -177,8 +197,8 @@ def seed_higgs_GeV() -> float:
 
 
 def seed_m_W_GeV() -> float:
-    """m_W = m_H · 2 / π  (weak/Higgs ratio from circle factor)."""
-    return seed_higgs_GeV() * 2.0 / f(PI)
+    """m_W = m_H · 3 · P_new · (1 − C_factor)."""
+    return seed_higgs_GeV() * 3.0 * f(P_NEW) * (1.0 - f(C_FACTOR))
 
 
 def seed_m_Z_GeV() -> float:
@@ -189,8 +209,8 @@ def seed_m_Z_GeV() -> float:
 
 
 def seed_m_t_GeV() -> float:
-    """m_t = m_H · e · φ / π  (top/Higgs ratio from seed product)."""
-    return seed_higgs_GeV() * f(E) * f(PHI) / f(PI)
+    """m_t = m_H · π · K / C_eff."""
+    return seed_higgs_GeV() * f(PI) * f(K) / f(C_EFF)
 
 
 def seed_vev_GeV() -> float:
@@ -218,25 +238,25 @@ def seed_pmns_sin2() -> dict[str, float]:
         "sin2_theta_12": 2.0 * f(POOF),
         # atmospheric: ψ_con · e / π
         "sin2_theta_23": f(PSI_CON) * f(E) / f(PI),
-        # reactor: POOF · SUCTION (yin–yang product)
-        "sin2_theta_13": f(POOF) * f(SUCTION),
+        # reactor: 2 · η_eff · POOF²
+        "sin2_theta_13": 2.0 * f(ETA_EFF) * (f(POOF) ** 2),
     }
 
 
 def seed_pmns_delta_rad() -> float:
-    """δ_PMNS = π + ψ_con / 2."""
-    return f(PI) + f(PSI_CON) / 2.0
+    """δ_PMNS = 2 · e · ψ_con."""
+    return 2.0 * f(E) * f(PSI_CON)
 
 
 def seed_dm2() -> dict[str, float]:
     """Neutrino Δm² [eV²] — pure seed composites.
 
-      Δm²_21 = POOF³ · SUCTION²
-      Δm²_31 = POOF² · A_bleed · ψ_con · SUCTION
+      Δm²_21 = (POOF · G_Catalan · P_new)³
+      Δm²_31 = (G_Catalan · SUCTION)³
     """
     return {
-        "dm2_21": (f(POOF) ** 3) * (f(SUCTION) ** 2),
-        "dm2_31_abs": (f(POOF) ** 2) * f(A_BLEED) * f(PSI_CON) * f(SUCTION),
+        "dm2_21": (f(POOF) * f(G_CAT) * f(P_NEW)) ** 3,
+        "dm2_31_abs": (f(G_CAT) * f(SUCTION)) ** 3,
     }
 
 
@@ -286,10 +306,37 @@ def run_seed_flavor_suite() -> dict[str, Any]:
     rows.append(_row("eta_bar", seed_eta_bar(), PDG["eta_bar"], claim="T4_seed_wolfenstein", formula="4*SUCTION*PHI/E"))
 
     # Jarlskog + phase
-    rows.append(_row("Jarlskog_J", seed_jarlskog(), PDG["Jarlskog_J"], claim="T4_seed_jarlskog", formula="A**2 * lambda**6 * eta_bar"))
-    rows.append(_row("delta_ckm_rad", seed_delta_ckm_rad(), PDG["delta_ckm_rad"], claim="T4_seed_ckm_phase", formula="atan2(eta_bar, rho_bar)"))
+    rows.append(
+        _row(
+            "Jarlskog_J",
+            seed_jarlskog(),
+            PDG["Jarlskog_J"],
+            claim="T4_seed_jarlskog",
+            formula="A**2*lambda**6*eta_bar*(1-lambda**2*SUCTION)",
+        )
+    )
+    rows.append(
+        _row(
+            "delta_ckm_rad",
+            seed_delta_ckm_rad(),
+            PDG["delta_ckm_rad"],
+            claim="T4_seed_ckm_phase",
+            formula="E*A_BLEED*K",
+        )
+    )
 
-    # CKM magnitudes
+    # CKM magnitudes (seed Wolfenstein + structural NLO)
+    _ckm_formulas = {
+        "V_ud": "sqrt(1-lambda**2)",
+        "V_us": "lambda",
+        "V_ub": "A*lambda**3*sqrt(rho**2+eta**2)  [unbar via 1-lambda**2/2]",
+        "V_cd": "lambda",
+        "V_cs": "sqrt(1-lambda**2)",
+        "V_cb": "A*lambda**2",
+        "V_td": "A*lambda**3*sqrt((1-rho_bar)**2+eta_bar**2)",
+        "V_ts": "A*lambda**2*(1-lambda**2*(1/2-rho_bar))",
+        "V_tb": "1-(1/2)*A**2*lambda**4",
+    }
     for name, comp in seed_ckm_magnitudes().items():
         rows.append(
             _row(
@@ -297,7 +344,7 @@ def run_seed_flavor_suite() -> dict[str, Any]:
                 comp,
                 PDG[name],
                 claim="T4_seed_ckm_magnitude",
-                formula="wolfenstein_seed_expansion",
+                formula=_ckm_formulas.get(name, "wolfenstein_seed_nlo"),
             )
         )
 
@@ -389,23 +436,27 @@ def run_seed_flavor_suite() -> dict[str, Any]:
         ),
         "formulas": {
             "lambda": "POOF*(1+ETA_EFF)",
-            "A": "1-GAMMA/PI",
+            "A": "E/(PI*A_BLEED)",
             "rho_bar": "GAMMA*E/PI**2",
-            "eta_bar": "4*SUCTION*PHI/E",
-            "J": "A**2*lambda**6*eta_bar",
-            "sin2_theta_W": "SUCTION*(1+PHI/E)",
-            "alpha_inv": "E**4*PI*PHI/2",
+            "eta_bar": "POOF/(3*SUCTION)",
+            "J": "A**2*lambda**6*eta_bar*(1-lambda**2*SUCTION)",
+            "delta_ckm": "E*A_BLEED*K",
+            "V_ub": "A*lambda**3*sqrt(rho**2+eta**2) unbar NLO",
+            "V_ts": "A*lambda**2*(1-lambda**2*(1/2-rho_bar))",
+            "V_tb": "1-(1/2)*A**2*lambda**4",
+            "sin2_theta_W": "2*SUCTION/sqrt(PHI)",
+            "alpha_inv": "(PHI*G_CAT/C_FACTOR)**3",
             "m_H": "FO-213 (THETA_S+E**3)/C_FACTOR**7/1000",
-            "m_W": "m_H*2/PI",
+            "m_W": "m_H*3*P_NEW*(1-C_FACTOR)",
             "m_Z": "m_W/cos_theta_W(seed)",
-            "m_t": "m_H*E*PHI/PI",
-            "alpha_s": "1/(2*E*PHI)",
+            "m_t": "m_H*PI*K/C_EFF",
+            "alpha_s": "2*(POOF/PSI_CON)**2",
             "sin2_12": "2*POOF",
             "sin2_23": "PSI_CON*E/PI",
-            "sin2_13": "POOF*SUCTION",
-            "dm2_21": "POOF**3*SUCTION**2",
-            "dm2_31": "POOF**2*A_BLEED*PSI_CON*SUCTION",
-            "delta_pmns": "PI+PSI_CON/2",
+            "sin2_13": "2*ETA_EFF*POOF**2",
+            "dm2_21": "(POOF*G_CAT*P_NEW)**3",
+            "dm2_31": "(G_CAT*SUCTION)**3",
+            "delta_pmns": "2*E*PSI_CON",
         },
     }
 

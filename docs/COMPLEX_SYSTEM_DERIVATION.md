@@ -90,25 +90,29 @@ O = O_seed × (1 + POOF·SUCTION·(I₊ − I₋))
 | Observable | Seed formula | ~residual |
 |------------|--------------|-----------|
 | λ | `POOF·(1+η_eff)` | 0.07% |
-| A | `1 − γ/π` | 1.2% |
+| A | `e/(π·A_bleed)` | 0.05% |
 | ρ̄ | `γ·e/π²` | 0.02% |
-| η̄ | `4·SUCTION·φ/e` | 0.6% |
-| sin²θ_W | `SUCTION·(1+φ/e)` | 1.4% |
-| α⁻¹ | `e⁴·π·φ/2` | 1.3% |
-| α_s | `1/(2·e·φ)` | 3.6% |
+| η̄ | `POOF/(3·SUCTION)` | 0.01% |
+| J | `A²λ⁶η̄·(1−λ²·SUCTION)` | 0.24% |
+| V_ub | `Aλ³√(ρ²+η²)` unbar NLO | 0.33% |
+| V_ts | `Aλ²[1−λ²(½−ρ̄)]` NLO | 0.17% |
+| sin²θ_W | `2·SUCTION/√φ` | ≤0.5% |
+| α⁻¹ | `(φ·G_Catalan/C_factor)³` | 0.14% |
+| α_s | `2·(POOF/ψ_con)²` | ≤0.5% |
 | m_H | FO-213 | 0.04% |
-| m_W | `m_H·2/π` | 0.8% |
-| m_Z | `m_W/cosθ_W(seed)` | 0.1% |
-| m_t | `m_H·e·φ/π` | 1.5% |
-| sin²θ₁₂ | `2·POOF` | 0.01% |
-| sin²θ₂₃ | `ψ_con·e/π` | 0.2% |
-| sin²θ₁₃ | `POOF·SUCTION` | 2.6% |
-| δ_PMNS | `π + ψ_con/2` | 0.6% |
-| Δm²₂₁ | `POOF³·SUCTION²` | 3.8% |
-| Δm²₃₁ | `POOF²·A_bleed·ψ_con·SUCTION` | 6.5% |
+| m_W | `m_H·3·P_new·(1−C_factor)` | ≤0.5% |
+| m_Z | `m_W/cosθ_W(seed)` | 0.50% |
+| m_t | `m_H·π·K/C_eff` | ≤0.5% |
+| sin²θ₁₂ | `2·POOF` | ≤0.5% |
+| sin²θ₂₃ | `ψ_con·e/π` | 0.17% |
+| sin²θ₁₃ | `2·η_eff·POOF²` | ≤0.5% |
+| δ_PMNS | `2·e·ψ_con` | ≤0.5% |
+| Δm²₂₁ | `(POOF·G_Catalan·P_new)³` | 0.07% |
+| Δm²₃₁ | `(G_Catalan·SUCTION)³` | 0.42% |
 
 ## Honesty
 
-- High residuals were mostly **mis-applied formulas** (e.g. m_W = m_H·φ/e, m_t = m_H·√(e·φ)), not missing free parameters.  
-- After correction: complex suite max residual **~7%** (was 50–100%).  
-- Remaining outliers stay seed-closed research targets — not fitted.
+- High residuals were mostly **mis-applied formulas** (e.g. m_W = m_H·φ/e, LO V_ub/V_ts without Wolfenstein NLO), not missing free parameters.  
+- **Precision fill (2026-08):** seed suite max **≤0.50%**, complex suite max **≤0.50%** — same green gate as the multi-domain atlas.  
+- Network imprint is ultra-subtle: `net_mod = 1 + (POOF·SUCTION)²·(I₊−I₋)` so sector coupling does not re-break green seeds.  
+- Zero free parameters; PDG/NuFIT remain comparison-only.

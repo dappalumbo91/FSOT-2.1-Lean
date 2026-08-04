@@ -3,191 +3,191 @@
 (set-logic QF_LIRA)
 
 ; lambda_ckm_err_under_half kind=lt_half
-(assert (! (< 0.067409094192486904 0.5) :named o0))
+(assert (! (< 0.066483173726545386 0.5) :named o0))
 ; lambda_ckm_measured_pos kind=pos
 (assert (! (> 0.225000000000000006 0.0) :named o1))
 ; lambda_ckm_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000151670461933096 0.000153187166553426) :named o2))
-; A_wolfenstein_err_finite kind=lt_lit
-(assert (! (< 1.211243056749068625 100.0) :named o3))
+(assert (! (< 0.000149587140884727 0.000151083012294574) :named o2))
+; A_wolfenstein_err_under_half kind=lt_half
+(assert (! (< 0.051950485462475403 0.5) :named o3))
 ; A_wolfenstein_measured_pos kind=pos
 (assert (! (> 0.825999999999999956 0.0) :named o4))
 ; A_wolfenstein_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.010004867648747306 0.01010491632523578) :named o5))
-; rho_bar_err_finite kind=lt_lit
-(assert (! (< 0.85421631063501513 100.0) :named o6))
+(assert (! (< 0.000429111009920047 0.000433402120020247) :named o5))
+; rho_bar_err_under_half kind=lt_half
+(assert (! (< 0.004811476065123823 0.5) :named o6))
 ; rho_bar_measured_pos kind=pos
 (assert (! (> 0.159000000000000002 0.0) :named o7))
 ; rho_bar_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.001358203933909674 0.001371785973249771) :named o8))
+(assert (! (< 0.000007650246943547 0.000007726749413982) :named o8))
 ; eta_bar_err_under_half kind=lt_half
-(assert (! (< 0.492113673447352462 0.5) :named o9))
+(assert (! (< 0.038316528380806465 0.5) :named o9))
 ; eta_bar_measured_pos kind=pos
 (assert (! (> 0.347999999999999976 0.0) :named o10))
 ; eta_bar_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.001712555583596787 0.001729681139433755) :named o11))
-; Jarlskog_J_err_finite kind=lt_lit
-(assert (! (< 2.475842827902396959 100.0) :named o12))
+(assert (! (< 0.000133341518765207 0.000134674933953859) :named o11))
+; Jarlskog_J_err_under_half kind=lt_half
+(assert (! (< 0.240356788340770733 0.5) :named o12))
 ; Jarlskog_J_measured_pos kind=pos
 (assert (! (> 0.0000308 0.0) :named o13))
 ; Jarlskog_J_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000000762559590994 0.000000770185187904) :named o14))
-; delta_ckm_rad_err_finite kind=lt_lit
-(assert (! (< 4.923088578307107888 100.0) :named o15))
+(assert (! (< 0.000000074029890809 0.000000074770190717) :named o14))
+; delta_ckm_rad_err_under_half kind=lt_half
+(assert (! (< 0.003241133617253252 0.5) :named o15))
 ; delta_ckm_rad_measured_pos kind=pos
 (assert (! (> 1.195999999999999952 0.0) :named o16))
 ; delta_ckm_rad_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.058880139396553011 0.059468940790519544) :named o17))
+(assert (! (< 0.000038763958062349 0.000039151597643972) :named o17))
 ; V_ud_err_under_half kind=lt_half
-(assert (! (< 0.002696448876034594 0.5) :named o18))
+(assert (! (< 0.00264703931559819 0.5) :named o18))
 ; V_ud_measured_pos kind=pos
 (assert (! (> 0.974350000000000049 0.0) :named o19))
 ; V_ud_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000026272849623643 0.000026535578120879) :named o20))
+(assert (! (< 0.000025791427571531 0.000026049341848246) :named o20))
 ; V_us_err_under_half kind=lt_half
-(assert (! (< 0.067409094192486904 0.5) :named o21))
+(assert (! (< 0.066483173726545386 0.5) :named o21))
 ; V_us_measured_pos kind=pos
 (assert (! (> 0.225000000000000006 0.0) :named o22))
 ; V_us_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000151670461933096 0.000153187166553426) :named o23))
-; V_ub_err_finite kind=lt_lit
-(assert (! (< 3.681043054576955242 100.0) :named o24))
+(assert (! (< 0.000149587140884727 0.000151083012294574) :named o23))
+; V_ub_err_under_half kind=lt_half
+(assert (! (< 0.3128398765779975 0.5) :named o24))
 ; V_ub_measured_pos kind=pos
 (assert (! (> 0.00369 0.0) :named o25))
 ; V_ub_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.00013583048871389 0.000137188793602029) :named o26))
+(assert (! (< 0.000011543791445728 0.000011659229361185) :named o26))
 ; V_cd_err_under_half kind=lt_half
-(assert (! (< 0.129712026119850915 0.5) :named o27))
+(assert (! (< 0.128785529166916463 0.5) :named o27))
 ; V_cd_measured_pos kind=pos
 (assert (! (> 0.224860000000000004 0.0) :named o28))
 ; V_cd_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000291670461933097 0.000294587166553428) :named o29))
+(assert (! (< 0.000289587140884728 0.000292483012294576) :named o29))
 ; V_cs_err_under_half kind=lt_half
-(assert (! (< 0.08564311398950579 0.5) :named o30))
+(assert (! (< 0.085692567199308872 0.5) :named o30))
 ; V_cs_measured_pos kind=pos
 (assert (! (> 0.973489999999999966 0.0) :named o31))
 ; V_cs_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.00083372715037644 0.000842064421881204) :named o32))
-; V_cb_err_finite kind=lt_lit
-(assert (! (< 1.086883290835083615 100.0) :named o33))
+(assert (! (< 0.000834208572428552 0.000842550658153837) :named o32))
+; V_cb_err_under_half kind=lt_half
+(assert (! (< 0.176046539575261035 0.5) :named o33))
 ; V_cb_measured_pos kind=pos
 (assert (! (> 0.041820000000000003 0.0) :named o34))
 ; V_cb_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000454534592227232 0.000459079938150504) :named o35))
-; V_td_err_finite kind=lt_lit
-(assert (! (< 1.295618861264957511 100.0) :named o36))
+(assert (! (< 0.000073622662850374 0.000074358889479878) :named o35))
+; V_td_err_under_half kind=lt_half
+(assert (! (< 0.167460913548079071 0.5) :named o36))
 ; V_td_measured_pos kind=pos
 (assert (! (> 0.008569999999999999 0.0) :named o37))
 ; V_td_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000111034536410407 0.000112144881775511) :named o38))
-; V_ts_err_finite kind=lt_lit
-(assert (! (< 0.645901235456869505 100.0) :named o39))
+(assert (! (< 0.00001435140029107 0.000014494914294981) :named o38))
+; V_ts_err_under_half kind=lt_half
+(assert (! (< 0.169007573754396151 0.5) :named o39))
 ; V_ts_measured_pos kind=pos
 (assert (! (> 0.041099999999999998 0.0) :named o40))
 ; V_ts_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000265465407772773 0.000268120061851501) :named o41))
+(assert (! (< 0.000069462112813057 0.000070156733942187) :named o41))
 ; V_tb_err_under_half kind=lt_half
-(assert (! (< 0.088277861073471742 0.5) :named o42))
+(assert (! (< 0.00044661292173952 0.5) :named o42))
 ; V_tb_measured_pos kind=pos
 (assert (! (> 0.999117999999999951 0.0) :named o43))
 ; V_tb_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000882000000000049 0.00089082000000105) :named o44))
-; sin2_theta_W_err_finite kind=lt_lit
-(assert (! (< 0.560542741008286383 100.0) :named o45))
+(assert (! (< 0.000004462190091425 0.00000450681199334) :named o44))
+; sin2_theta_W_err_under_half kind=lt_half
+(assert (! (< 0.036071169171252269 0.5) :named o45))
 ; sin2_theta_W_measured_pos kind=pos
 (assert (! (> 0.231220000000000009 0.0) :named o46))
 ; sin2_theta_W_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.00129608692575936 0.001309047795017954) :named o47))
-; alpha_inv_err_finite kind=lt_lit
-(assert (! (< 1.117147243876773111 100.0) :named o48))
+(assert (! (< 0.00008340375735777 0.000084237794932347) :named o47))
+; alpha_inv_err_under_half kind=lt_half
+(assert (! (< 0.141673471565836262 0.5) :named o48))
 ; alpha_inv_measured_pos kind=pos
 (assert (! (> 137.035999083999996628 0.0) :named o49))
 ; alpha_inv_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 1.530893886885905886 1.546202825754765975) :named o50))
-; alpha_s_MZ_err_finite kind=lt_lit
-(assert (! (< 3.579369787719937968 100.0) :named o51))
+(assert (! (< 0.194143657197230368 0.196085093769203661) :named o50))
+; alpha_s_MZ_err_under_half kind=lt_half
+(assert (! (< 0.007456682224867657 0.5) :named o51))
 ; alpha_s_MZ_measured_pos kind=pos
 (assert (! (> 0.117900000000000005 0.0) :named o52))
 ; alpha_s_MZ_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.004220076979721807 0.004262277749520025) :named o53))
+(assert (! (< 0.000008791428343119 0.00000887934262755) :named o53))
 ; m_H_err_under_half kind=lt_half
-(assert (! (< 0.120890108489223616 0.5) :named o54))
+(assert (! (< 0.016262811172322391 0.5) :named o54))
 ; m_H_measured_pos kind=pos
 (assert (! (> 125.25 0.0) :named o55))
 ; m_H_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.151414860882752578 0.152929009491581114) :named o56))
-; m_W_err_finite kind=lt_lit
-(assert (! (< 1.698175620455652179 100.0) :named o57))
+(assert (! (< 0.020369170993333796 0.020572862703268132) :named o56))
+; m_W_err_under_half kind=lt_half
+(assert (! (< 0.024447179407699797 0.5) :named o57))
 ; m_W_measured_pos kind=pos
 (assert (! (> 80.376999999999995339 0.0) :named o58))
 ; m_W_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 1.364942618453639511 1.378592044638176972) :named o59))
-; m_Z_err_finite kind=lt_lit
-(assert (! (< 1.093930291922254883 100.0) :named o60))
+(assert (! (< 0.019649909392526865 0.019846408486453134) :named o59))
+; m_Z_err_under_half kind=lt_half
+(assert (! (< 0.499806670287425259 0.5) :named o60))
 ; m_Z_measured_pos kind=pos
 (assert (! (> 91.18760000000000332 0.0) :named o61))
 ; m_Z_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.997528778876898059 1.007504066665668052) :named o62))
-; m_t_err_finite kind=lt_lit
-(assert (! (< 1.555413240870846314 100.0) :named o63))
+(assert (! (< 0.455761707275016192 0.460319324347767345) :named o62))
+; m_t_err_under_half kind=lt_half
+(assert (! (< 0.036141944800130922 0.5) :named o63))
 ; m_t_measured_pos kind=pos
 (assert (! (> 172.689999999999997726 0.0) :named o64))
 ; m_t_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 2.686043125659864472 2.712903556916463899) :named o65))
+(assert (! (< 0.062413524475346094 0.063037659720100558) :named o65))
 ; sin2_theta_12_err_under_half kind=lt_half
-(assert (! (< 0.291048074399403112 0.5) :named o66))
+(assert (! (< 0.004756805274882866 0.5) :named o66))
 ; sin2_theta_12_measured_pos kind=pos
 (assert (! (> 0.306999999999999995 0.0) :named o67))
 ; sin2_theta_12_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000893517588406167 0.000902452764291229) :named o68))
+(assert (! (< 0.00001460339219389 0.000014749426116829) :named o68))
 ; sin2_theta_23_err_under_half kind=lt_half
-(assert (! (< 0.129916836252455925 0.5) :named o69))
+(assert (! (< 0.166434942158865146 0.5) :named o69))
 ; sin2_theta_23_measured_pos kind=pos
 (assert (! (> 0.546000000000000041 0.0) :named o70))
 ; sin2_theta_23_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000709345925938409 0.000716439385198793) :named o71))
-; sin2_theta_13_err_finite kind=lt_lit
-(assert (! (< 2.58242866870717025 100.0) :named o72))
+(assert (! (< 0.000908734784187404 0.000917822132030278) :named o71))
+; sin2_theta_13_err_under_half kind=lt_half
+(assert (! (< 0.002990878637699277 0.5) :named o72))
 ; sin2_theta_13_measured_pos kind=pos
 (assert (! (> 0.021999999999999999 0.0) :named o73))
 ; sin2_theta_13_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000568134307115577 0.000573815650187733) :named o74))
-; delta_pmns_rad_err_finite kind=lt_lit
-(assert (! (< 0.609349820585804891 100.0) :named o75))
+(assert (! (< 0.000000657993300294 0.000000664573234297) :named o74))
+; delta_pmns_rad_err_under_half kind=lt_half
+(assert (! (< 0.076753125940020483 0.5) :named o75))
 ; delta_pmns_rad_measured_pos kind=pos
 (assert (! (> 3.43829862642882933 0.0) :named o76))
 ; delta_pmns_rad_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.020951266511348265 0.021160779176462748) :named o77))
-; dm2_21_err_finite kind=lt_lit
-(assert (! (< 4.118318933025262751 100.0) :named o78))
+(assert (! (< 0.002639001674936914 0.002665391691687283) :named o77))
+; dm2_21_err_under_half kind=lt_half
+(assert (! (< 0.063941453382050081 0.5) :named o78))
 ; dm2_21_measured_pos kind=pos
 (assert (! (> 0.0000753 0.0) :named o79))
 ; dm2_21_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000003101094156568 0.000003132105099134) :named o80))
-; dm2_31_abs_err_finite kind=lt_lit
-(assert (! (< 6.834421455812893953 100.0) :named o81))
+(assert (! (< 0.000000048147914397 0.000000048629394541) :named o80))
+; dm2_31_abs_err_under_half kind=lt_half
+(assert (! (< 0.421986807113196916 0.5) :named o81))
 ; dm2_31_abs_measured_pos kind=pos
 (assert (! (> 0.002453 0.0) :named o82))
 ; dm2_31_abs_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.00016764835831109 0.000169324841895201) :named o83))
+(assert (! (< 0.000010351336378487 0.000010454849743272) :named o83))
 ; emergent_unitarity_row_u_err_under_half kind=lt_half
-(assert (! (< 0.001263212091484611 0.5) :named o84))
+(assert (! (< 0.001370142644008254 0.5) :named o84))
 ; emergent_unitarity_row_u_measured_pos kind=pos
 (assert (! (> 1.0 0.0) :named o85))
 ; emergent_unitarity_row_u_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.000012632120914846 0.000012758442124995) :named o86))
+(assert (! (< 0.000013701426440083 0.000013838440705483) :named o86))
 ; emergent_unitarity_row_c_err_under_half kind=lt_half
-(assert (! (< 0.171110172840172048 0.5) :named o87))
+(assert (! (< 0.175507561981724791 0.5) :named o87))
 ; emergent_unitarity_row_c_measured_pos kind=pos
 (assert (! (> 1.0 0.0) :named o88))
 ; emergent_unitarity_row_c_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.00171110172840172 0.001728212745686738) :named o89))
+(assert (! (< 0.001755075619817248 0.00177262637601642) :named o89))
 ; emergent_unitarity_row_t_err_under_half kind=lt_half
-(assert (! (< 0.178265582511594189 0.5) :named o90))
+(assert (! (< 0.001431015241259992 0.5) :named o90))
 ; emergent_unitarity_row_t_measured_pos kind=pos
 (assert (! (> 1.0 0.0) :named o91))
 ; emergent_unitarity_row_t_abs_diff kind=abs_diff_lt_lit
-(assert (! (< 0.001782655825115942 0.001800482383368101) :named o92))
+(assert (! (< 0.0000143101524126 0.000014453253937726) :named o92))
 ; yin_yang_in_unit_interval_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o93))
 ; yin_yang_in_unit_interval_measured_pos kind=pos
@@ -213,11 +213,11 @@
 ; edge_count_abs_diff kind=abs_diff_lt_lit
 (assert (! (< 0.0 0.000000001) :named o104))
 ; emergent_unitarity_row_u_unitarity_tight kind=abs_diff_lt_lit
-(assert (! (< 0.000012632120914846 0.050000000000000003) :named o105))
+(assert (! (< 0.000013701426440083 0.050000000000000003) :named o105))
 ; emergent_unitarity_row_c_unitarity_tight kind=abs_diff_lt_lit
-(assert (! (< 0.00171110172840172 0.050000000000000003) :named o106))
+(assert (! (< 0.001755075619817248 0.050000000000000003) :named o106))
 ; emergent_unitarity_row_t_unitarity_tight kind=abs_diff_lt_lit
-(assert (! (< 0.001782655825115942 0.050000000000000003) :named o107))
+(assert (! (< 0.0000143101524126 0.050000000000000003) :named o107))
 ; gauge_n_U1_eq kind=eq_nat
 (assert (! (= 1 1) :named o108))
 ; gauge_n_U1_pos kind=nat_pos
@@ -268,88 +268,88 @@
 (assert (! (< 0.0 0.5) :named o131))
 ; gr_c_light_si_exact_meas_pos kind=pos
 (assert (! (> 299792458.0 0.0) :named o132))
-; gr_seed_sin2_theta_W_err_finite kind=lt_lit
-(assert (! (< 1.442222377465180339 100.0) :named o133))
+; gr_seed_sin2_theta_W_err_under_half kind=lt_half
+(assert (! (< 0.016460322231694493 0.5) :named o133))
 ; gr_seed_sin2_theta_W_meas_pos kind=pos
 (assert (! (> 0.231220000000000009 0.0) :named o134))
-; gr_seed_alpha_inv_err_finite kind=lt_lit
-(assert (! (< 1.262996474356890442 100.0) :named o135))
+; gr_seed_alpha_inv_err_under_half kind=lt_half
+(assert (! (< 0.138427628227852234 0.5) :named o135))
 ; gr_seed_alpha_inv_meas_pos kind=pos
 (assert (! (> 137.035999083999996628 0.0) :named o136))
 ; gr_seed_m_H_err_under_half kind=lt_half
 (assert (! (< 0.03990518384182655 0.5) :named o137))
 ; gr_seed_m_H_meas_pos kind=pos
 (assert (! (> 125.25 0.0) :named o138))
-; gr_seed_m_W_err_finite kind=lt_lit
-(assert (! (< 0.836299635903488991 100.0) :named o139))
+; gr_seed_m_W_err_under_half kind=lt_half
+(assert (! (< 0.028479127221542264 0.5) :named o139))
 ; gr_seed_m_W_meas_pos kind=pos
 (assert (! (> 80.376999999999995339 0.0) :named o140))
 ; gr_seed_m_Z_err_under_half kind=lt_half
-(assert (! (< 0.093981202913697909 0.5) :named o141))
+(assert (! (< 0.498717110718270962 0.5) :named o141))
 ; gr_seed_m_Z_meas_pos kind=pos
 (assert (! (> 91.18760000000000332 0.0) :named o142))
 ; sm_lambda_ckm_err_under_half kind=lt_half
-(assert (! (< 0.067409094192486904 0.5) :named o143))
-; sm_A_wolfenstein_err_finite kind=lt_lit
-(assert (! (< 1.211243056749068625 100.0) :named o144))
-; sm_rho_bar_err_finite kind=lt_lit
-(assert (! (< 0.85421631063501513 100.0) :named o145))
+(assert (! (< 0.066483173726545386 0.5) :named o143))
+; sm_A_wolfenstein_err_under_half kind=lt_half
+(assert (! (< 0.051950485462475403 0.5) :named o144))
+; sm_rho_bar_err_under_half kind=lt_half
+(assert (! (< 0.004811476065123823 0.5) :named o145))
 ; sm_eta_bar_err_under_half kind=lt_half
-(assert (! (< 0.492113673447352462 0.5) :named o146))
-; sm_Jarlskog_J_err_finite kind=lt_lit
-(assert (! (< 2.475842827902396959 100.0) :named o147))
-; sm_delta_ckm_rad_err_finite kind=lt_lit
-(assert (! (< 4.923088578307107888 100.0) :named o148))
+(assert (! (< 0.038316528380806465 0.5) :named o146))
+; sm_Jarlskog_J_err_under_half kind=lt_half
+(assert (! (< 0.240356788340770733 0.5) :named o147))
+; sm_delta_ckm_rad_err_under_half kind=lt_half
+(assert (! (< 0.003241133617253252 0.5) :named o148))
 ; sm_V_ud_err_under_half kind=lt_half
-(assert (! (< 0.002696448876034594 0.5) :named o149))
+(assert (! (< 0.00264703931559819 0.5) :named o149))
 ; sm_V_us_err_under_half kind=lt_half
-(assert (! (< 0.067409094192486904 0.5) :named o150))
-; sm_V_ub_err_finite kind=lt_lit
-(assert (! (< 3.681043054576955242 100.0) :named o151))
+(assert (! (< 0.066483173726545386 0.5) :named o150))
+; sm_V_ub_err_under_half kind=lt_half
+(assert (! (< 0.3128398765779975 0.5) :named o151))
 ; sm_V_cd_err_under_half kind=lt_half
-(assert (! (< 0.129712026119850915 0.5) :named o152))
+(assert (! (< 0.128785529166916463 0.5) :named o152))
 ; sm_V_cs_err_under_half kind=lt_half
-(assert (! (< 0.08564311398950579 0.5) :named o153))
-; sm_V_cb_err_finite kind=lt_lit
-(assert (! (< 1.086883290835083615 100.0) :named o154))
-; sm_V_td_err_finite kind=lt_lit
-(assert (! (< 1.295618861264957511 100.0) :named o155))
-; sm_V_ts_err_finite kind=lt_lit
-(assert (! (< 0.645901235456869505 100.0) :named o156))
+(assert (! (< 0.085692567199308872 0.5) :named o153))
+; sm_V_cb_err_under_half kind=lt_half
+(assert (! (< 0.176046539575261035 0.5) :named o154))
+; sm_V_td_err_under_half kind=lt_half
+(assert (! (< 0.167460913548079071 0.5) :named o155))
+; sm_V_ts_err_under_half kind=lt_half
+(assert (! (< 0.169007573754396151 0.5) :named o156))
 ; sm_V_tb_err_under_half kind=lt_half
-(assert (! (< 0.088277861073471742 0.5) :named o157))
-; sm_sin2_theta_W_err_finite kind=lt_lit
-(assert (! (< 0.560542741008286383 100.0) :named o158))
-; sm_alpha_inv_err_finite kind=lt_lit
-(assert (! (< 1.117147243876773111 100.0) :named o159))
-; sm_alpha_s_MZ_err_finite kind=lt_lit
-(assert (! (< 3.579369787719937968 100.0) :named o160))
+(assert (! (< 0.00044661292173952 0.5) :named o157))
+; sm_sin2_theta_W_err_under_half kind=lt_half
+(assert (! (< 0.036071169171252269 0.5) :named o158))
+; sm_alpha_inv_err_under_half kind=lt_half
+(assert (! (< 0.141673471565836262 0.5) :named o159))
+; sm_alpha_s_MZ_err_under_half kind=lt_half
+(assert (! (< 0.007456682224867657 0.5) :named o160))
 ; sm_m_H_err_under_half kind=lt_half
-(assert (! (< 0.120890108489223616 0.5) :named o161))
-; sm_m_W_err_finite kind=lt_lit
-(assert (! (< 1.698175620455652179 100.0) :named o162))
-; sm_m_Z_err_finite kind=lt_lit
-(assert (! (< 1.093930291922254883 100.0) :named o163))
-; sm_m_t_err_finite kind=lt_lit
-(assert (! (< 1.555413240870846314 100.0) :named o164))
+(assert (! (< 0.016262811172322391 0.5) :named o161))
+; sm_m_W_err_under_half kind=lt_half
+(assert (! (< 0.024447179407699797 0.5) :named o162))
+; sm_m_Z_err_under_half kind=lt_half
+(assert (! (< 0.499806670287425259 0.5) :named o163))
+; sm_m_t_err_under_half kind=lt_half
+(assert (! (< 0.036141944800130922 0.5) :named o164))
 ; sm_sin2_theta_12_err_under_half kind=lt_half
-(assert (! (< 0.291048074399403112 0.5) :named o165))
+(assert (! (< 0.004756805274882866 0.5) :named o165))
 ; sm_sin2_theta_23_err_under_half kind=lt_half
-(assert (! (< 0.129916836252455925 0.5) :named o166))
-; sm_sin2_theta_13_err_finite kind=lt_lit
-(assert (! (< 2.58242866870717025 100.0) :named o167))
-; sm_delta_pmns_rad_err_finite kind=lt_lit
-(assert (! (< 0.609349820585804891 100.0) :named o168))
-; sm_dm2_21_err_finite kind=lt_lit
-(assert (! (< 4.118318933025262751 100.0) :named o169))
-; sm_dm2_31_abs_err_finite kind=lt_lit
-(assert (! (< 6.834421455812893953 100.0) :named o170))
+(assert (! (< 0.166434942158865146 0.5) :named o166))
+; sm_sin2_theta_13_err_under_half kind=lt_half
+(assert (! (< 0.002990878637699277 0.5) :named o167))
+; sm_delta_pmns_rad_err_under_half kind=lt_half
+(assert (! (< 0.076753125940020483 0.5) :named o168))
+; sm_dm2_21_err_under_half kind=lt_half
+(assert (! (< 0.063941453382050081 0.5) :named o169))
+; sm_dm2_31_abs_err_under_half kind=lt_half
+(assert (! (< 0.421986807113196916 0.5) :named o170))
 ; sm_emergent_unitarity_row_u_err_under_half kind=lt_half
-(assert (! (< 0.001263212091484611 0.5) :named o171))
+(assert (! (< 0.001370142644008254 0.5) :named o171))
 ; sm_emergent_unitarity_row_c_err_under_half kind=lt_half
-(assert (! (< 0.171110172840172048 0.5) :named o172))
+(assert (! (< 0.175507561981724791 0.5) :named o172))
 ; sm_emergent_unitarity_row_t_err_under_half kind=lt_half
-(assert (! (< 0.178265582511594189 0.5) :named o173))
+(assert (! (< 0.001431015241259992 0.5) :named o173))
 ; sm_yin_yang_in_unit_interval_err_under_half kind=lt_half
 (assert (! (< 0.0 0.5) :named o174))
 ; sm_all_kappa_nonnegative_err_under_half kind=lt_half
