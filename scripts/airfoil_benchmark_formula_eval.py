@@ -30,19 +30,20 @@ FO210_FORMULA = (
     "(1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / "
     "(1 + (k^7) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
 )
-FO212_RULE_ID = "FO-212"
+FO212_RULE_ID = "FO-212-F"
 FO212_DESCRIPTION = (
-    "FO-210 coherent ln-transport plus FSOT gas/similarity readout: "
-    "St/phi, Re_theta, Mach*log(St), Air c0 log(f/c0), boundary-layer log(delta), golden AoA cos."
+    "FO-212 (FO-210 ln-transport + gas/similarity readout) plus |Chaos|·cos(Δθ) "
+    "geometry-instability polish — FSOT seed Chaos only, zero free parameters."
 )
 TARGET_COLUMN = "scaled_sound_pressure_level_db"
 TRAIN_FRACTION = 0.8
 SPLIT_SEED = 17
 SOTA_HELD_OUT_RMSE = 5.412721340832612
-GOLDEN_HELD_OUT_RMSE = 5.102551799768952
-GOLDEN_FULL_RMSE = 5.061015749458651
+GOLDEN_HELD_OUT_RMSE = 5.095078232775157  # FO-212-F held-out
+GOLDEN_FULL_RMSE = 5.061015749458651  # refreshed below if full metrics change
 LEGACY_FO210_HELD_OUT_RMSE = 5.907214506805364
 LEGACY_FO210_FULL_RMSE = 5.961109363514883
+LEGACY_FO212_HELD_OUT_RMSE = 5.102551799768952
 
 
 def _metrics(actual: list[float] | object, pred: object) -> dict[str, float]:

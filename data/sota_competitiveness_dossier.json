@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T01:51:20.555038+00:00",
+  "generated_at": "2026-08-04T01:58:11.086186+00:00",
   "title": "FSOT Zero-Parameter Competitiveness Dossier",
   "fsot_free_parameters": 0,
   "domain_summary": {
@@ -11,7 +11,7 @@
   },
   "observable_summary": {
     "observable_count": 65,
-    "beats_or_meets_sota_count": 57,
+    "beats_or_meets_sota_count": 58,
     "below_sota_ids": []
   },
   "domain_table": [
@@ -411,20 +411,20 @@
       "id": "higgs_mass",
       "domain": "High_Energy_Physics",
       "name": "Higgs_boson_mass",
-      "fsot_error_pct": null,
+      "fsot_error_pct": 0.03990518384182655,
       "sota_typical_error_pct": 0.14,
-      "delta_pct": null,
+      "delta_pct": 0.10009481615817346,
       "sota_free_parameters": 25,
-      "status": "structural_only",
+      "status": "beats_sota",
       "comparison_metric": null
     },
     {
       "id": "higgs_branching",
       "domain": "High_Energy_Physics",
       "name": "Higgs_branching_ratios",
-      "fsot_error_pct": 0.08808351263334355,
+      "fsot_error_pct": 0.04212398909516783,
       "sota_typical_error_pct": 0.5,
-      "delta_pct": 0.4119164873666564,
+      "delta_pct": 0.45787601090483215,
       "sota_free_parameters": 25,
       "status": "beats_sota",
       "comparison_metric": null
@@ -884,9 +884,9 @@
       "id": "airfoil_held_out_rmse",
       "domain": "Acoustics",
       "name": "Airfoil_self_noise_RMSE",
-      "fsot_error_pct": 5.102551799768952,
+      "fsot_error_pct": 5.095078232775157,
       "sota_typical_error_pct": 5.412721340832612,
-      "delta_pct": 0.3101695410636607,
+      "delta_pct": 0.3176431080574549,
       "sota_free_parameters": 10,
       "status": "beats_sota",
       "comparison_metric": "rmse"

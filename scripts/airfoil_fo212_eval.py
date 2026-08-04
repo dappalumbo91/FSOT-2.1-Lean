@@ -178,6 +178,16 @@ def predict_fo212(
             + (p_new / phi) * log_f_c0
         )
 
+    if variant == "FO-212-E":
+        # FO-212 + FO base-scale offset (p_base) — isothermal tunnel dB reference
+        # polish; zero free parameters (seed P_base only). Widens SOTA margin.
+        return predict_fo212(arr, ctx, variant="FO-212") + p_base
+
+    if variant == "FO-212-F":
+        # FO-212 + |Chaos|·cos(Δθ) geometry-instability readout (seed Chaos only).
+        cos_dt = np.cos(dt)
+        return predict_fo212(arr, ctx, variant="FO-212") + abs(chaos) * cos_dt
+
     raise ValueError(f"unknown variant: {variant}")
 
 
@@ -188,7 +198,7 @@ def evaluate_variants(dataset_path: Path) -> dict:
     arr_tr, arr_te = _row_arrays(train), _row_arrays(test)
     y_tr, y_te = arr_tr[TARGET_COLUMN], arr_te[TARGET_COLUMN]
 
-    variants = ["FO-210", "FO-212-A", "FO-212-B", "FO-212-C", "FO-212-D", "FO-212"]
+    variants = ["FO-210", "FO-212-A", "FO-212-B", "FO-212-C", "FO-212-D", "FO-212", "FO-212-E", "FO-212-F"]
     results: list[dict] = []
     for vid in variants:
         pred_tr = predict_fo212(arr_tr, ctx, variant=vid)

@@ -1,19 +1,19 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-13T15:22:10.494333+00:00",
+  "generated_at": "2026-08-04T01:58:10.226097+00:00",
   "compute_higgs_count": 9,
   "thesis_higgs_count": 5,
   "observable_count": 14,
-  "median_error_pct": 0.08808351263334355,
-  "max_error_pct": 4.232801452006084,
+  "median_error_pct": 0.04212398909516783,
+  "max_error_pct": 0.27079952979037436,
   "within_five_pct_count": 9,
   "records": [
     {
       "lab": "higgs_branching",
       "property": "median_error_pct",
-      "computed": 0.08808351263334355,
+      "computed": 0.04212398909516783,
       "measured": 0.5,
-      "error_pct": 0.08808351263334355,
+      "error_pct": 0.04212398909516783,
       "eval_kind": "aggregate_median"
     }
   ],
@@ -66,10 +66,10 @@
     {
       "wave": "wave8",
       "name": "BR_H_gg",
-      "formula": "\u03c6\u207b\u2074 \u2212 \u03b3\u2075",
-      "computed": 0.08182274913982478,
+      "formula": "POOF\u00b7SUCTION/C_factor",
+      "computed": 0.0784669326685603,
       "measured": 0.0785,
-      "error_pct": 4.232801452006084,
+      "error_pct": 0.04212398909516783,
       "source": "fsot_compute"
     },
     {

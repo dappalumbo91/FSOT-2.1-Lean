@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T01:51:23.643167+00:00",
+  "generated_at": "2026-08-04T01:58:11.316254+00:00",
   "goal": "Beat or exceed scientific SOTA / literature capability on measured observables",
   "live_atlas": {
     "green_pass": 414,
     "green_fail": 0,
     "worst_max_error_pct": 0.4989,
     "worst_domain": "Phi_Morphogenetic_Scaling",
-    "domains_above_aspiration_0_05": 97,
+    "domains_above_aspiration_0_05": 96,
     "threshold_green_pct": 0.5,
     "threshold_aspiration_pct": 0.05
   },
@@ -21,18 +21,30 @@
   },
   "sota_observable_summary": {
     "observable_count": 65,
-    "beats_or_meets_sota_count": 57,
-    "headline_beats_or_meets_count": 14,
+    "beats_or_meets_sota_count": 58,
+    "headline_beats_or_meets_count": 15,
     "below_sota_ids": [],
     "parameter_honesty": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes"
   },
   "tightest_sota_leads_need_most_refine": [
     {
+      "id": "higgs_mass",
+      "domain": "High_Energy_Physics",
+      "fsot_error_pct": 0.03990518384182655,
+      "sota_typical_error_pct": 0.14,
+      "margin_vs_sota_pp": 0.10009481615817346,
+      "sota_model": "SM fits (PDG)",
+      "sota_free_parameters": 25,
+      "status": "beats_sota",
+      "refine_tier": "THIN_LEAD \u2014 refine to lock exceed",
+      "fsot_source": "data/higgs_mass_benchmark.json"
+    },
+    {
       "id": "airfoil_held_out_rmse",
       "domain": "Acoustics",
-      "fsot_error_pct": 5.102551799768952,
+      "fsot_error_pct": 5.095078232775157,
       "sota_typical_error_pct": 5.412721340832612,
-      "margin_vs_sota_pp": 0.3101695410636607,
+      "margin_vs_sota_pp": 0.3176431080574549,
       "sota_model": "Chosen-feature quadratic regression",
       "sota_free_parameters": 10,
       "status": "beats_sota",
@@ -42,9 +54,9 @@
     {
       "id": "higgs_branching",
       "domain": "High_Energy_Physics",
-      "fsot_error_pct": 0.08808351263334355,
+      "fsot_error_pct": 0.04212398909516783,
       "sota_typical_error_pct": 0.5,
-      "margin_vs_sota_pp": 0.4119164873666564,
+      "margin_vs_sota_pp": 0.45787601090483215,
       "sota_model": "PDG SM branching fits",
       "sota_free_parameters": 25,
       "status": "beats_sota",
@@ -543,10 +555,10 @@
       "file": "formula_corpus_closure_benchmark.json"
     },
     {
-      "domain": "Proton_Lean_Route_Credibility",
-      "scalar_count": 3,
-      "max_error_pct": 0.322515,
-      "file": "proton_lean_route_credibility_benchmark.json"
+      "domain": "math_generator_airfoil_rmse_benchmark.json",
+      "scalar_count": 2,
+      "max_error_pct": 0.0,
+      "file": "math_generator_airfoil_rmse_benchmark.json"
     },
     {
       "domain": "intelligence_compression_benchmark.json",
@@ -565,18 +577,6 @@
       "scalar_count": 3,
       "max_error_pct": 0.022236,
       "file": "physarum_biological_cuda_panel_benchmark.json"
-    },
-    {
-      "domain": "Nuclear_Lean_Route_Credibility",
-      "scalar_count": 3,
-      "max_error_pct": 0.021221,
-      "file": "nuclear_lean_route_credibility_benchmark.json"
-    },
-    {
-      "domain": "Observer_Lean_Route_Credibility",
-      "scalar_count": 3,
-      "max_error_pct": 0.014767,
-      "file": "observer_lean_route_credibility_benchmark.json"
     },
     {
       "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
@@ -601,12 +601,6 @@
       "scalar_count": 4,
       "max_error_pct": 0.192564276915754,
       "file": "unified_db_crosswalk_spine_benchmark.json"
-    },
-    {
-      "domain": "Consciousness_Lean_Route_Credibility",
-      "scalar_count": 4,
-      "max_error_pct": 0.031506,
-      "file": "consciousness_lean_route_credibility_benchmark.json"
     },
     {
       "domain": "VL_Agent_Distill_Panel",
@@ -667,6 +661,24 @@
       "scalar_count": 5,
       "max_error_pct": 0.0,
       "file": "fuel_candidate_prereg_scaffold_benchmark.json"
+    },
+    {
+      "domain": "Government_Open_Data_Spine",
+      "scalar_count": 5,
+      "max_error_pct": 0.0,
+      "file": "government_open_data_spine_benchmark.json"
+    },
+    {
+      "domain": "Public_Verifiable_Spine",
+      "scalar_count": 5,
+      "max_error_pct": 0.0,
+      "file": "public_verifiable_spine_benchmark.json"
+    },
+    {
+      "domain": "Tier_95_Zebrafish_Spine",
+      "scalar_count": 5,
+      "max_error_pct": 0.0,
+      "file": "tier_95_zebrafish_spine_benchmark.json"
     }
   ],
   "expansion_map": {

@@ -1,6 +1,6 @@
 # Scientific capability & accuracy gap report
 
-Generated: `2026-08-04T01:51:23.643167+00:00`
+Generated: `2026-08-04T01:58:11.316254+00:00`
 
 ## Goal
 
@@ -10,13 +10,13 @@ Beat or exceed scientific SOTA / literature capability on measured observables
 
 - Green: **414** pass / 0 fail
 - Worst max residual: **0.4989%** (Phi_Morphogenetic_Scaling)
-- Domains with max > 0.05% aspiration: **97**
+- Domains with max > 0.05% aspiration: **96**
 
 ## SOTA competitiveness (registered comparisons)
 
 - Domains beating SOTA median: **35/35** (100.0%)
 - Average margin vs SOTA: **5.82 pp**
-- Observables beats/meets: **57/65**
+- Observables beats/meets: **58/65**
 - Below SOTA IDs: none
 - SOTA free parameters replaced (aggregate): **782**
 
@@ -24,8 +24,9 @@ Beat or exceed scientific SOTA / literature capability on measured observables
 
 | ID | FSOT err% | SOTA typ% | Margin pp | Tier | SOTA model |
 |----|-----------|-----------|-----------|------|------------|
-| airfoil_held_out_rmse | 5.102551799768952 | 5.412721340832612 | 0.310 | THIN_LEAD — refine to lock exceed | Chosen-feature quadratic regression |
-| higgs_branching | 0.08808351263334355 | 0.5 | 0.412 | THIN_LEAD — refine to lock exceed | PDG SM branching fits |
+| higgs_mass | 0.03990518384182655 | 0.14 | 0.100 | THIN_LEAD — refine to lock exceed | SM fits (PDG) |
+| airfoil_held_out_rmse | 5.095078232775157 | 5.412721340832612 | 0.318 | THIN_LEAD — refine to lock exceed | Chosen-feature quadratic regression |
+| higgs_branching | 0.04212398909516783 | 0.5 | 0.458 | THIN_LEAD — refine to lock exceed | PDG SM branching fits |
 | H0_planck | 0.13329620344595866 | 0.8 | 0.667 | MODERATE_LEAD — optional polish | Planck 2018 TT,TE,EE+lowE |
 | Omega_Lambda | 0.05 | 1.1 | 1.050 | MODERATE_LEAD — optional polish | Planck 2018 Lambda-CDM |
 | N_eff | 0.01 | 4.0 | 3.990 | STRONG_LEAD — maintain | Planck 2018 |
@@ -35,7 +36,6 @@ Beat or exceed scientific SOTA / literature capability on measured observables
 | fic_best_intelligence_score | 0.029066672228905688 | 5.0 | 4.971 | STRONG_LEAD — maintain | INT8 LLM quantization fidelity drift |
 | fic_optimal_S_final | 0.04959966617804441 | 8.0 | 7.950 | STRONG_LEAD — maintain | Neural knowledge distillation scalar calibration |
 | onco_biology_strict | 0.0 | 8.0 | 8.000 | STRONG_LEAD — maintain | Comparative genomics operon regression |
-| fic_optimal_fidelity | 0.0180939582217432 | 12.0 | 11.982 | STRONG_LEAD — maintain | Semantic autoencoder reconstruction error |
 
 ### How much refinement is needed?
 
@@ -67,14 +67,14 @@ FSOT already beats registered SOTA typical error on headline observables with 0 
 - n=1 max=0.000595  DESI_wa_Constraint
 - n=2 max=0.039797  Hubble_Dark_Sector_Crosswalk
 - n=2 max=0.0  Formula_Corpus_Closure
-- n=3 max=0.322515  Proton_Lean_Route_Credibility
+- n=2 max=0.0  math_generator_airfoil_rmse_benchmark.json
 - n=3 max=0.04959966617804441  intelligence_compression_benchmark.json
 - n=3 max=0.031506  Tokenization_Live_Panel
 - n=3 max=0.022236  Physarum_Biological_CUDA_Panel
-- n=3 max=0.021221  Nuclear_Lean_Route_Credibility
-- n=3 max=0.014767  Observer_Lean_Route_Credibility
 - n=3 max=0.0  Cold_Fusion_Lab_Synthesis_Crosswalk
 - n=3 max=0.0  Foundational_Ontology_Spine
+- n=3 max=0.0  Tier_96_Circuit_Spine
+- n=4 max=0.192564276915754  Unified_DB_Crosswalk_Spine
 
 ## Priority queue
 

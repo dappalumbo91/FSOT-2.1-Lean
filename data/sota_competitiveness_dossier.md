@@ -1,6 +1,6 @@
 # FSOT Zero-Parameter Competitiveness Dossier
 
-Generated: 2026-08-04T01:51:20.555038+00:00
+Generated: 2026-08-04T01:58:11.086186+00:00
 
 ## Executive summary
 
@@ -8,7 +8,7 @@ Generated: 2026-08-04T01:51:20.555038+00:00
 - **Domains beating SOTA (median):** 35/35 (100.0%)
 - **Average margin vs SOTA:** 5.82 percentage points
 - **Aggregate SOTA parameters replaced:** 782
-- **Key observables beats/meets SOTA:** 57/65
+- **Key observables beats/meets SOTA:** 58/65
 
 ## Per-domain comparison
 
@@ -64,8 +64,8 @@ Generated: 2026-08-04T01:51:20.555038+00:00
 | cmb_cold_spot | — | 20.0 | — | 6 | structural_only |
 | jwst_early_z | — | 5.0 | — | 8 | structural_only |
 | frb_dm_excess | — | 12.0 | — | 15 | structural_only |
-| higgs_mass | — | 0.1 | — | 25 | structural_only |
-| higgs_branching | 0.088 | 0.5 | 0.41 | 25 | beats_sota |
+| higgs_mass | 0.040 | 0.1 | 0.10 | 25 | beats_sota |
+| higgs_branching | 0.042 | 0.5 | 0.46 | 25 | beats_sota |
 | phobos_density | 0.000 | 4.0 | 4.00 | 5 | beats_sota |
 | deimos_density | 0.000 | 17.0 | 17.00 | 5 | beats_sota |
 | fic_optimal_S_final | 0.050 | 8.0 | 7.95 | 35 | beats_sota |
@@ -107,7 +107,7 @@ Generated: 2026-08-04T01:51:20.555038+00:00
 | sports_biomechanics_gap_fill_pooled | 0.044 | 8.0 | 7.96 | 0 | beats_sota |
 | geology_stratigraphy_ext_pooled | 0.000 | 10.0 | 10.00 | 4 | beats_sota |
 | trinary_os_tier_e_pooled | 0.000 | 2.0 | 2.00 | 0 | beats_sota |
-| airfoil_held_out_rmse | 5.103 | 5.4 | 0.31 | 10 | beats_sota |
+| airfoil_held_out_rmse | 5.095 | 5.4 | 0.32 | 10 | beats_sota |
 | domain_coupling_simulation_pooled | 0.000 | 15.0 | 15.00 | 12 | beats_sota |
 | formula_corpus_closure_pooled | 0.000 | 8.0 | 8.00 | 4 | beats_sota |
 | space_weather_summary_pooled | 0.000 | 5.0 | 5.00 | 0 | beats_sota |
