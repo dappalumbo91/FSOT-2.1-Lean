@@ -30,7 +30,18 @@ def main() -> int:
     }
 
     # --- Near-gate findings (read-only audit) ---
-    from _near_gate_audit import NEAR  # type: ignore
+    NEAR = [
+        "phi_morphogenetic_scaling_benchmark.json",
+        "crc_handbook_properties_benchmark.json",
+        "geochemistry_benchmark.json",
+        "zebrafish_predictive_validation_panel_benchmark.json",
+        "materials_engineering_benchmark.json",
+        "quantum_materials_benchmark.json",
+        "clinical_medicine_extension_benchmark.json",
+        "immunology_benchmark.json",
+        "neuroimmunology_benchmark.json",
+        "culinary_arts_benchmark.json",
+    ]
 
     offenders = []
     for fn in NEAR:

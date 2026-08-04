@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T01:46:03.097228+00:00",
+  "generated_at": "2026-08-04T01:47:52.319484+00:00",
   "wave": "near_gate_and_thin_pace",
   "actions": [
     "near_gate_audit",
@@ -15,14 +15,14 @@
       "record_count": 32,
       "material_records": 32,
       "scalar_record_count": 6,
-      "median_error_pct": 0.49,
-      "max_error_pct": 0.49
+      "median_error_pct": 0.0,
+      "max_error_pct": 0.0
     },
     {
       "rebuild": "materials_species_bridge",
-      "record_count": 45,
+      "record_count": 34,
       "overlap_metal_count": 10,
-      "median_error_pct": 0.002730116109889546
+      "median_error_pct": 0.0
     },
     "audit_all_benchmark_margins"
   ],
@@ -413,6 +413,13 @@
     "green_pass": 414,
     "green_fail": 0,
     "worst_max": 0.4989,
-    "worst_domain": "Phi_Morphogenetic_Scaling"
+    "worst_domain": "Phi_Morphogenetic_Scaling",
+    "hybrid_fi_row": {
+      "domain": "Hybrid_FI_Sim_Stratum_Deep_Panel",
+      "scalar_count": 18,
+      "max_scalar_error_pct": 0.031506,
+      "pooled_median_error_pct": 0.018003,
+      "green_gate_pass": true
+    }
   }
 }
