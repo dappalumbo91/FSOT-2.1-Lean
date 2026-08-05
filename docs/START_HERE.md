@@ -40,8 +40,10 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 | 3 | Skim [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) | What we may claim (Label A vs B) |
 | 4 | Run `python scripts/audit_all_benchmark_margins.py` | Empirical green gate |
 | 5 | Optional formal: `python scripts/run_cross_proof_verification.py` | Multi-prover report (long) |
+| 6 | Atlas: `python scripts/query_fsot_atlas.py --stats` | Organized inventory of all green solves |
 
-Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
+Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).  
+**Open science only (no keys):** [`OPEN_SCIENCE_ONLY_POLICY.md`](OPEN_SCIENCE_ONLY_POLICY.md) · Atlas design: [`ATLAS_DATABASE_DESIGN.md`](ATLAS_DATABASE_DESIGN.md)
 
 ---
 

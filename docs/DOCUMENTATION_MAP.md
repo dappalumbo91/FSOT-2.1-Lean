@@ -55,6 +55,8 @@ Frozen criteria: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 | ~15 min kill path | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) |
 | Full human guide | [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
 | **Public data citations** | [`BENCHMARK_DATA_CITATIONS.md`](BENCHMARK_DATA_CITATIONS.md) · `python scripts/build_benchmark_anchor_citation_ledger.py` |
+| **Atlas SQLite (organize solves)** | [`ATLAS_DATABASE_DESIGN.md`](ATLAS_DATABASE_DESIGN.md) · `python scripts/build_fsot_atlas_sqlite.py` · `query_fsot_atlas.py` |
+| **Open science only** | [`OPEN_SCIENCE_ONLY_POLICY.md`](OPEN_SCIENCE_ONLY_POLICY.md) — no credentials / sign-on |
 | Lean-first formal | [`../REPRODUCE.md`](../REPRODUCE.md) |
 | Publication bundle | `python scripts/run_publication_verification_bundle.py` |
 | Cross-prover (long) | `python scripts/run_cross_proof_verification.py` |

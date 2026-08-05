@@ -43,6 +43,8 @@ Frameworks passed: `coq`, `cross_refinement`, `esp32_harness`, `fstar`, `fstar_r
 
 ## Expansion highlights (recent)
 
+- **FSOT Atlas SQLite** (open-science only): python scripts/query_fsot_atlas.py --stats — 433 domains, formulas, citations, high-value gaps
+- Policy: [OPEN_SCIENCE_ONLY_POLICY.md](OPEN_SCIENCE_ONLY_POLICY.md) · design: [ATLAS_DATABASE_DESIGN.md](ATLAS_DATABASE_DESIGN.md)
 - Dzhanibekov / intermediate-axis vacuum flip: [`docs/DZHANIBEKOV_FSOT_RESPONSE.md`](DZHANIBEKOV_FSOT_RESPONSE.md)
 - Proper densify (formula + real data only): [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](FSOT_PROPER_DENSIFY_POLICY.md)
 - Multiprover debt clarified: [`docs/MULTIPROVER_DESIGN_DEBT_CLARIFIED.md`](MULTIPROVER_DESIGN_DEBT_CLARIFIED.md)

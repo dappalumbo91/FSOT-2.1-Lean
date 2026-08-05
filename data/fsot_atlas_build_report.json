@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-08-05T14:58:30.953731+00:00",
+  "db_path": "data/fsot_atlas.sqlite",
+  "pin_prefix": "D1D38A",
+  "domains": 433,
+  "green_domains": 433,
+  "records_seen_in_json": 92329,
+  "records_stored": 66387,
+  "records_table_count": 66387,
+  "formulas": 1071,
+  "citations": 821,
+  "open_sources": 54,
+  "high_value_gaps_open": 12,
+  "high_value_gaps_skipped_credentials": 2,
+  "sampled_large_domains": 2,
+  "missing_benchmark_files": 0,
+  "by_family": {
+    "other": 150,
+    "physics_particle_cosmo": 79,
+    "biology_life": 61,
+    "math_formal_compute": 36,
+    "chemistry_materials": 34,
+    "engineering_hardware": 27,
+    "earth_climate": 23,
+    "open_science_meta": 13,
+    "consciousness_social": 10
+  },
+  "policy": "open_science_only_no_credentials",
+  "query": "python scripts/query_fsot_atlas.py --stats"
+}
