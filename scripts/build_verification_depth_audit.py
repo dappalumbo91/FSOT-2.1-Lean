@@ -358,7 +358,39 @@ def build() -> dict:
             "documented_exclusion_count": documented_exclusions,
             "raw_lemma_string_parity": raw_lemma_parity,
             "undeniable_toe_claim": undeniable,
-            "full_mathlib_rederivation_of_all_lemmas": False,
+            "full_mathlib_rederivation_of_all_lemmas": bool(
+                (
+                    json.loads(
+                        (ROOT / "data" / "mathlib_rederivation_campaign_report.json").read_text(
+                            encoding="utf-8"
+                        )
+                    )
+                    if (ROOT / "data" / "mathlib_rederivation_campaign_report.json").exists()
+                    else {}
+                ).get("full_mathlib_rederivation_of_all_lemmas")
+            ),
+            "mathlib_rederivation_verdict": (
+                (
+                    json.loads(
+                        (ROOT / "data" / "mathlib_rederivation_campaign_report.json").read_text(
+                            encoding="utf-8"
+                        )
+                    )
+                    if (ROOT / "data" / "mathlib_rederivation_campaign_report.json").exists()
+                    else {}
+                ).get("verdict")
+            ),
+            "engine_core_mathlib_closed": bool(
+                (
+                    json.loads(
+                        (ROOT / "data" / "mathlib_rederivation_campaign_report.json").read_text(
+                            encoding="utf-8"
+                        )
+                    )
+                    if (ROOT / "data" / "mathlib_rederivation_campaign_report.json").exists()
+                    else {}
+                ).get("engine_core_closed")
+            ),
             "honest_assessment": honest,
         },
         "undeniable_criteria": {
@@ -404,11 +436,17 @@ def build() -> dict:
             "purpose": "Resolve FO-200, PRED-001, tier numbers, obligation ids to human text",
         },
         "roadmap_beyond_undeniable": [
-            "Deeper analytic Mathlib chains beyond norm_num residual certificates",
-            "Uniqueness research: free-color dampening candidate multiprover (not classical YM PI)",
-            "Structural bundle unparsed-conjunct parser depth (indices, not margin fails)",
+            "Mathlib re-derivation campaign: python scripts/run_mathlib_rederivation_campaign.py",
+            "Engine-only Mathlib depth: python scripts/run_mathlib_rederivation_campaign.py --engine-only",
+            "Uniqueness research multiprover (not classical YM PI)",
             "Propagate display_label / σ envelopes to every scalar export",
         ],
+        "mathlib_rederivation": {
+            "campaign": "python scripts/run_mathlib_rederivation_campaign.py",
+            "inventory": "data/mathlib_rederivation_inventory.json",
+            "report": "data/mathlib_rederivation_campaign_report.json",
+            "doc": "docs/MATHLIB_REDERIVATION_CAMPAIGN.md",
+        },
         "open_gaps": [g for g in gaps if not g.get("closed")],
     }
 

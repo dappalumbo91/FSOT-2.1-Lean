@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:03:05.662547+00:00",
+  "generated_at": "2026-08-05T22:13:04.697745+00:00",
   "version": "1.1",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -21,6 +21,8 @@
     "raw_lemma_string_parity": false,
     "undeniable_toe_claim": true,
     "full_mathlib_rederivation_of_all_lemmas": false,
+    "mathlib_rederivation_verdict": "ENGINE_CORE_MATHLIB_DEPTH_CLOSED",
+    "engine_core_mathlib_closed": true,
     "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5183 vs 2581 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
   },
   "undeniable_criteria": {
@@ -280,11 +282,17 @@
     "purpose": "Resolve FO-200, PRED-001, tier numbers, obligation ids to human text"
   },
   "roadmap_beyond_undeniable": [
-    "Deeper analytic Mathlib chains beyond norm_num residual certificates",
-    "Uniqueness research: free-color dampening candidate multiprover (not classical YM PI)",
-    "Structural bundle unparsed-conjunct parser depth (indices, not margin fails)",
+    "Mathlib re-derivation campaign: python scripts/run_mathlib_rederivation_campaign.py",
+    "Engine-only Mathlib depth: python scripts/run_mathlib_rederivation_campaign.py --engine-only",
+    "Uniqueness research multiprover (not classical YM PI)",
     "Propagate display_label / \u03c3 envelopes to every scalar export"
   ],
+  "mathlib_rederivation": {
+    "campaign": "python scripts/run_mathlib_rederivation_campaign.py",
+    "inventory": "data/mathlib_rederivation_inventory.json",
+    "report": "data/mathlib_rederivation_campaign_report.json",
+    "doc": "docs/MATHLIB_REDERIVATION_CAMPAIGN.md"
+  },
   "open_gaps": [
     {
       "id": "rust_report_stale",

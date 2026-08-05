@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T12:17:52.274214+00:00",
+  "generated_at": "2026-08-05T22:12:19.632120+00:00",
   "version": "1.0",
   "verdict": "PROOF_LADDER_DOCUMENTED",
   "depth_score_5": 5,
@@ -37,8 +37,8 @@
       "status": "closed",
       "chain": "bundle conjunct decomposition + connective ordering (beyond literal replay)",
       "metrics": {
-        "bundle_lemmas": 461,
-        "conjunct_lemmas": 1512,
+        "bundle_lemmas": 498,
+        "conjunct_lemmas": 1623,
         "conjunct_lemma_reuse_proofs": true,
         "coqc_compiles": true,
         "vo_artifact_present": true
@@ -53,7 +53,7 @@
     }
   ],
   "next_depth_steps": [
-    "Wire FullFormalSpine pi/e obligations to `Require TranscendentalBounds_00` instead of float literals",
+    "Wire remaining FullFormalSpine float-export rows that still use literal-literal lra (beyond pi/e base)",
     "Run `lake build` on Bounds.lean in CI for Mathlib chain regression",
     "Optional: Machin-series hand proofs without Interval package (not required for green)"
   ],

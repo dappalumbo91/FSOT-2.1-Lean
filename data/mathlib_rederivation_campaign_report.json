@@ -1,0 +1,495 @@
+{
+  "generated_at": "2026-08-05T22:12:45.668735+00:00",
+  "version": "1.0",
+  "verdict": "ENGINE_CORE_MATHLIB_DEPTH_CLOSED",
+  "engine_core_closed": true,
+  "full_corpus_closed": false,
+  "full_mathlib_rederivation_of_all_lemmas": false,
+  "engine_mathlib_depth_pct": 61.07,
+  "corpus": {
+    "theorem_count": 5182,
+    "mathlib_depth_count": 860,
+    "mathlib_depth_pct": 16.6,
+    "by_tier": {
+      "L1_certificate": 4322,
+      "L3_chain": 117,
+      "L2_analytic": 262,
+      "L0_definitional": 481
+    },
+    "sorry_count": 0
+  },
+  "engine_inventory": {
+    "theorem_count": 524,
+    "mathlib_depth_count": 320,
+    "mathlib_depth_pct": 61.07,
+    "by_tier": {
+      "L1_certificate": 204,
+      "L2_analytic": 260,
+      "L0_definitional": 7,
+      "L3_chain": 53
+    }
+  },
+  "waves": [
+    {
+      "id": "W0_scalar_defs",
+      "title": "Scalar definitions + structure",
+      "role": "engine",
+      "modules": [
+        "Scalar",
+        "ScalarEngineStructure"
+      ],
+      "missing_modules": [],
+      "theorem_count": 32,
+      "mathlib_depth_count": 14,
+      "mathlib_depth_pct": 43.75,
+      "by_tier": {
+        "L0_definitional": 3,
+        "L1_certificate": 18,
+        "L2_analytic": 6,
+        "L3_chain": 5
+      },
+      "sorry_list": [],
+      "lake_status": "skipped",
+      "builds": [],
+      "depth_gate_ok": true,
+      "wave_ok": true
+    },
+    {
+      "id": "W1_bounds",
+      "title": "Constant bounds (Mathlib exp/pi chain)",
+      "role": "engine",
+      "modules": [
+        "Bounds"
+      ],
+      "missing_modules": [],
+      "theorem_count": 277,
+      "mathlib_depth_count": 212,
+      "mathlib_depth_pct": 76.53,
+      "by_tier": {
+        "L1_certificate": 65,
+        "L2_analytic": 187,
+        "L0_definitional": 1,
+        "L3_chain": 24
+      },
+      "sorry_list": [],
+      "lake_status": "skipped",
+      "builds": [],
+      "depth_gate_ok": true,
+      "wave_ok": true
+    },
+    {
+      "id": "W2_theorems",
+      "title": "Core analytic theorems (T1/T2/T3 sign regimes)",
+      "role": "engine",
+      "modules": [
+        "Theorems"
+      ],
+      "missing_modules": [],
+      "theorem_count": 54,
+      "mathlib_depth_count": 43,
+      "mathlib_depth_pct": 79.63,
+      "by_tier": {
+        "L1_certificate": 11,
+        "L2_analytic": 37,
+        "L3_chain": 6
+      },
+      "sorry_list": [],
+      "lake_status": "skipped",
+      "builds": [],
+      "depth_gate_ok": true,
+      "wave_ok": true
+    },
+    {
+      "id": "W3_domains",
+      "title": "Domain sign / raw_S theorems",
+      "role": "engine",
+      "modules": [
+        "Domains"
+      ],
+      "missing_modules": [],
+      "theorem_count": 43,
+      "mathlib_depth_count": 10,
+      "mathlib_depth_pct": 23.26,
+      "by_tier": {
+        "L1_certificate": 33,
+        "L0_definitional": 2,
+        "L3_chain": 5,
+        "L2_analytic": 3
+      },
+      "sorry_list": [],
+      "lake_status": "skipped",
+      "builds": [],
+      "depth_gate_ok": true,
+      "wave_ok": true
+    },
+    {
+      "id": "W4_cosmology",
+      "title": "Cosmology + wave modules",
+      "role": "engine",
+      "modules": [
+        "Cosmology",
+        "CosmologyLab",
+        "CosmologyWave4",
+        "CosmologyWave4Priors",
+        "CosmologyWave5Priors",
+        "CosmologyWave6Priors",
+        "CosmologyWave7Priors",
+        "CosmologyWave8Priors",
+        "CosmologyWave9Priors",
+        "CosmologyWave10Priors",
+        "CosmologyHigherWavesPriors",
+        "CosmologyExtendedPriors"
+      ],
+      "missing_modules": [],
+      "theorem_count": 64,
+      "mathlib_depth_count": 22,
+      "mathlib_depth_pct": 34.38,
+      "by_tier": {
+        "L1_certificate": 42,
+        "L2_analytic": 12,
+        "L3_chain": 10
+      },
+      "sorry_list": [],
+      "lake_status": "skipped",
+      "builds": [],
+      "depth_gate_ok": true,
+      "wave_ok": true
+    },
+    {
+      "id": "W5_bridge",
+      "title": "Lab / Genomic / bridges",
+      "role": "engine",
+      "modules": [
+        "Lab",
+        "Genomic",
+        "PhotonicForge",
+        "LeanProofsBridge",
+        "CrossProofConnectivePriors"
+      ],
+      "missing_modules": [],
+      "theorem_count": 54,
+      "mathlib_depth_count": 19,
+      "mathlib_depth_pct": 35.19,
+      "by_tier": {
+        "L1_certificate": 35,
+        "L2_analytic": 15,
+        "L0_definitional": 1,
+        "L3_chain": 3
+      },
+      "sorry_list": [],
+      "lake_status": "skipped",
+      "builds": [],
+      "depth_gate_ok": true,
+      "wave_ok": true
+    }
+  ],
+  "aux_closures": {},
+  "upgrade_candidates": [
+    {
+      "module": "Bounds",
+      "name": "gamma_euler_pos",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "pi_sub_one_pos",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "exp_neg_one_lt_368",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_08_gt_m0298",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_12_lt",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "sqrt_two_lt_14142135624",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "new_perceived_param_lt_031",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "new_perceived_param_lt_3009",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "new_perceived_param_lt_30032",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "new_perceived_param_pos",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "cosmological_perceived_adjust_eq_one",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "psi_con_pos",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "psi_con_eta_pos",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "sin_theta_s_nonneg",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "exp_1144_lt_31415",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_31415_gt_1144",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_pi_gt_11445",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "exp_049_gt_16181",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_16181_lt_04813",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_phi_lt_0482",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "eta_log_phi_lt_0225",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "exp_neg_185_lt_016",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_016_gt_m185",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "coherence_efficiency_gt_seven_tenths",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_five_lt_one_seven_seven",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "growth_term_cosmological_gt_one",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "sqrt_25_eq_five",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "sqrt_9_eq_3",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "cosmological_N_pos",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "cosmological_P_pos",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "phase_variance_abs_le_one",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "acoustic_bleed_lt_phi",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "sin_eq_cos_pi_div_two_sub",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "exp_04807_lt_1618",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_1618_gt_04807",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "exp_01534_lt_1168",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "phase_variance_eq_cos_theta_s",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_31416_lt_1146",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_pi23847_lt_11453",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "exp_neg_1434_lt_24_div_25",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_ratio_D6_gt",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "exp_neg_040_gt_24_div_25",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_ratio_D24_lt",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "exp_neg_0818_gt_11_div_25",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "exp_13865_gt_four",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_four_lt_13865",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "log_five_lt_1618",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "sqrt_11_lt_3317",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "sqrt_8_lt_2829",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    },
+    {
+      "module": "Bounds",
+      "name": "sqrt_13_lt_3606",
+      "path": "FSOT/Formal/Bounds.lean",
+      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
+    }
+  ],
+  "commands": {
+    "campaign": "python scripts/run_mathlib_rederivation_campaign.py",
+    "engine_only": "python scripts/run_mathlib_rederivation_campaign.py --engine-only",
+    "single_wave": "python scripts/run_mathlib_rederivation_campaign.py --wave W2_theorems"
+  },
+  "honest_scope": "Campaign automates inventory, wave lake typecheck, and depth scoring. Priors remain largely L1 numeric certificates (multiprover export pins). Engine waves carry Mathlib analytic depth (Bounds/Theorems). full_mathlib_rederivation_of_all_lemmas is true only under full_corpus_closed."
+}

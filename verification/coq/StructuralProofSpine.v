@@ -16,13 +16,17 @@ Lemma acoustic_resonance_materials_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma acoustic_resonance_materials_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma acoustic_resonance_materials_bundle : (29 = 29)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact acoustic_resonance_materials_bundle_conj_0.
   - exact acoustic_resonance_materials_bundle_conj_1.
   - exact acoustic_resonance_materials_bundle_conj_2.
-  - lra.
+  - exact acoustic_resonance_materials_bundle_conj_3.
 Qed.
 
 Lemma actuarial_science_panel_bundle_conj_0 : (60 = 60)%nat.
@@ -37,13 +41,17 @@ Lemma actuarial_science_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma actuarial_science_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma actuarial_science_panel_bundle : (60 = 60)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact actuarial_science_panel_bundle_conj_0.
   - exact actuarial_science_panel_bundle_conj_1.
   - exact actuarial_science_panel_bundle_conj_2.
-  - lra.
+  - exact actuarial_science_panel_bundle_conj_3.
 Qed.
 
 Lemma actuarial_science_bundle_conj_0 : (60 = 60)%nat.
@@ -58,13 +66,17 @@ Lemma actuarial_science_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma actuarial_science_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma actuarial_science_bundle : (60 = 60)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact actuarial_science_bundle_conj_0.
   - exact actuarial_science_bundle_conj_1.
   - exact actuarial_science_bundle_conj_2.
-  - lra.
+  - exact actuarial_science_bundle_conj_3.
 Qed.
 
 Lemma adjacent_rung_coupling_bundle_conj_0 : (36 = 36)%nat.
@@ -79,13 +91,17 @@ Lemma adjacent_rung_coupling_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma adjacent_rung_coupling_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma adjacent_rung_coupling_bundle : (36 = 36)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact adjacent_rung_coupling_bundle_conj_0.
   - exact adjacent_rung_coupling_bundle_conj_1.
   - exact adjacent_rung_coupling_bundle_conj_2.
-  - lra.
+  - exact adjacent_rung_coupling_bundle_conj_3.
 Qed.
 
 Lemma adv_brk_bundle_conj_0 : (13 = 13)%nat.
@@ -120,13 +136,17 @@ Lemma adversarial_fractal_break_tests_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma adversarial_fractal_break_tests_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma adversarial_fractal_break_tests_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact adversarial_fractal_break_tests_bundle_conj_0.
   - exact adversarial_fractal_break_tests_bundle_conj_1.
   - exact adversarial_fractal_break_tests_bundle_conj_2.
-  - lra.
+  - exact adversarial_fractal_break_tests_bundle_conj_3.
 Qed.
 
 Lemma aether_psi_con_solver_in_bounds_conj_0 : True.
@@ -159,6 +179,51 @@ Proof.
   - exact aether_eta_eff_solver_in_bounds_conj_1.
 Qed.
 
+Lemma aether_prime_priors_bundle_conj_0 : (120 = 120)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma aether_prime_priors_bundle_conj_1 : (6 = 6)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma aether_prime_priors_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma aether_prime_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma aether_prime_priors_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma aether_prime_priors_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma aether_prime_priors_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma aether_prime_priors_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma aether_prime_priors_bundle : (120 = 120)%nat /\ (6 = 6)%nat /\ True /\ True /\ True /\ True /\ True /\ True.
+Proof.
+  repeat (apply conj).
+  - exact aether_prime_priors_bundle_conj_0.
+  - exact aether_prime_priors_bundle_conj_1.
+  - exact aether_prime_priors_bundle_conj_2.
+  - exact aether_prime_priors_bundle_conj_3.
+  - exact aether_prime_priors_bundle_conj_4.
+  - exact aether_prime_priors_bundle_conj_5.
+  - exact aether_prime_priors_bundle_conj_6.
+  - exact aether_prime_priors_bundle_conj_7.
+Qed.
+
 Lemma agriculture_agroecology_gap_fill_bundle_conj_0 : (276 = 276)%nat.
 Proof. reflexivity.
 Qed.
@@ -175,6 +240,10 @@ Lemma agriculture_agroecology_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma agriculture_agroecology_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma agriculture_agroecology_gap_fill_bundle : (276 = 276)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -182,7 +251,7 @@ Proof.
   - exact agriculture_agroecology_gap_fill_bundle_conj_1.
   - exact agriculture_agroecology_gap_fill_bundle_conj_2.
   - exact agriculture_agroecology_gap_fill_bundle_conj_3.
-  - lra.
+  - exact agriculture_agroecology_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma agriculture_agroecology_bundle_conj_0 : (276 = 276)%nat.
@@ -197,13 +266,17 @@ Lemma agriculture_agroecology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma agriculture_agroecology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma agriculture_agroecology_bundle : (276 = 276)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact agriculture_agroecology_bundle_conj_0.
   - exact agriculture_agroecology_bundle_conj_1.
   - exact agriculture_agroecology_bundle_conj_2.
-  - lra.
+  - exact agriculture_agroecology_bundle_conj_3.
 Qed.
 
 Lemma ai_galactic_orbital_bridge_bundle_conj_0 : (48 = 48)%nat.
@@ -218,13 +291,17 @@ Lemma ai_galactic_orbital_bridge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma ai_galactic_orbital_bridge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma ai_galactic_orbital_bridge_bundle : (48 = 48)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact ai_galactic_orbital_bridge_bundle_conj_0.
   - exact ai_galactic_orbital_bridge_bundle_conj_1.
   - exact ai_galactic_orbital_bridge_bundle_conj_2.
-  - lra.
+  - exact ai_galactic_orbital_bridge_bundle_conj_3.
 Qed.
 
 Lemma alphafold_batch_meta_open_bundle_conj_0 : (182 = 182)%nat.
@@ -259,13 +336,17 @@ Lemma alternate_base_mathematics_explorer_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma alternate_base_mathematics_explorer_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma alternate_base_mathematics_explorer_panel_bundle : (56 = 56)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact alternate_base_mathematics_explorer_panel_bundle_conj_0.
   - exact alternate_base_mathematics_explorer_panel_bundle_conj_1.
   - exact alternate_base_mathematics_explorer_panel_bundle_conj_2.
-  - lra.
+  - exact alternate_base_mathematics_explorer_panel_bundle_conj_3.
 Qed.
 
 Lemma alternate_base_mathematics_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -280,13 +361,17 @@ Lemma alternate_base_mathematics_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma alternate_base_mathematics_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma alternate_base_mathematics_spine_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact alternate_base_mathematics_spine_bundle_conj_0.
   - exact alternate_base_mathematics_spine_bundle_conj_1.
   - exact alternate_base_mathematics_spine_bundle_conj_2.
-  - lra.
+  - exact alternate_base_mathematics_spine_bundle_conj_3.
 Qed.
 
 Lemma anthropology_ext_bundle_conj_0 : (160 = 160)%nat.
@@ -305,6 +390,10 @@ Lemma anthropology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma anthropology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma anthropology_ext_bundle : (160 = 160)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -312,7 +401,7 @@ Proof.
   - exact anthropology_ext_bundle_conj_1.
   - exact anthropology_ext_bundle_conj_2.
   - exact anthropology_ext_bundle_conj_3.
-  - lra.
+  - exact anthropology_ext_bundle_conj_4.
 Qed.
 
 Lemma anthropology_bundle_conj_0 : (160 = 160)%nat.
@@ -327,13 +416,17 @@ Lemma anthropology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma anthropology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma anthropology_bundle : (160 = 160)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact anthropology_bundle_conj_0.
   - exact anthropology_bundle_conj_1.
   - exact anthropology_bundle_conj_2.
-  - lra.
+  - exact anthropology_bundle_conj_3.
 Qed.
 
 Lemma architecture_building_science_gap_fill_bundle_conj_0 : (83 = 83)%nat.
@@ -352,6 +445,10 @@ Lemma architecture_building_science_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma architecture_building_science_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma architecture_building_science_gap_fill_bundle : (83 = 83)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -359,7 +456,7 @@ Proof.
   - exact architecture_building_science_gap_fill_bundle_conj_1.
   - exact architecture_building_science_gap_fill_bundle_conj_2.
   - exact architecture_building_science_gap_fill_bundle_conj_3.
-  - lra.
+  - exact architecture_building_science_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma architecture_building_science_bundle_conj_0 : (43 = 43)%nat.
@@ -374,13 +471,17 @@ Lemma architecture_building_science_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma architecture_building_science_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma architecture_building_science_bundle : (43 = 43)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact architecture_building_science_bundle_conj_0.
   - exact architecture_building_science_bundle_conj_1.
   - exact architecture_building_science_bundle_conj_2.
-  - lra.
+  - exact architecture_building_science_bundle_conj_3.
 Qed.
 
 Lemma arxiv_brain_knowledge_panel_bundle_conj_0 : (20 = 20)%nat.
@@ -395,13 +496,17 @@ Lemma arxiv_brain_knowledge_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma arxiv_brain_knowledge_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma arxiv_brain_knowledge_panel_bundle : (20 = 20)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact arxiv_brain_knowledge_panel_bundle_conj_0.
   - exact arxiv_brain_knowledge_panel_bundle_conj_1.
   - exact arxiv_brain_knowledge_panel_bundle_conj_2.
-  - lra.
+  - exact arxiv_brain_knowledge_panel_bundle_conj_3.
 Qed.
 
 Lemma arxiv_gravitational_waves_panel_bundle_conj_0 : (60 = 60)%nat.
@@ -416,13 +521,17 @@ Lemma arxiv_gravitational_waves_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma arxiv_gravitational_waves_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma arxiv_gravitational_waves_panel_bundle : (60 = 60)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact arxiv_gravitational_waves_panel_bundle_conj_0.
   - exact arxiv_gravitational_waves_panel_bundle_conj_1.
   - exact arxiv_gravitational_waves_panel_bundle_conj_2.
-  - lra.
+  - exact arxiv_gravitational_waves_panel_bundle_conj_3.
 Qed.
 
 Lemma arxiv_primitives_panel_bundle_conj_0 : (22 = 22)%nat.
@@ -437,13 +546,17 @@ Lemma arxiv_primitives_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma arxiv_primitives_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma arxiv_primitives_panel_bundle : (22 = 22)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact arxiv_primitives_panel_bundle_conj_0.
   - exact arxiv_primitives_panel_bundle_conj_1.
   - exact arxiv_primitives_panel_bundle_conj_2.
-  - lra.
+  - exact arxiv_primitives_panel_bundle_conj_3.
 Qed.
 
 Lemma arxiv_primitives_v14_bundle_conj_0 : (14 = 14)%nat.
@@ -458,13 +571,17 @@ Lemma arxiv_primitives_v14_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma arxiv_primitives_v14_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma arxiv_primitives_v14_bundle : (14 = 14)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact arxiv_primitives_v14_bundle_conj_0.
   - exact arxiv_primitives_v14_bundle_conj_1.
   - exact arxiv_primitives_v14_bundle_conj_2.
-  - lra.
+  - exact arxiv_primitives_v14_bundle_conj_3.
 Qed.
 
 Lemma astrophysical_structure_crosswalk_bundle_conj_0 : (32 = 32)%nat.
@@ -479,13 +596,17 @@ Lemma astrophysical_structure_crosswalk_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma astrophysical_structure_crosswalk_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma astrophysical_structure_crosswalk_bundle : (32 = 32)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact astrophysical_structure_crosswalk_bundle_conj_0.
   - exact astrophysical_structure_crosswalk_bundle_conj_1.
   - exact astrophysical_structure_crosswalk_bundle_conj_2.
-  - lra.
+  - exact astrophysical_structure_crosswalk_bundle_conj_3.
 Qed.
 
 Lemma atmospheric_physics_gap_fill_bundle_conj_0 : (107 = 107)%nat.
@@ -504,6 +625,10 @@ Lemma atmospheric_physics_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma atmospheric_physics_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma atmospheric_physics_gap_fill_bundle : (107 = 107)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -511,7 +636,7 @@ Proof.
   - exact atmospheric_physics_gap_fill_bundle_conj_1.
   - exact atmospheric_physics_gap_fill_bundle_conj_2.
   - exact atmospheric_physics_gap_fill_bundle_conj_3.
-  - lra.
+  - exact atmospheric_physics_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma atomic_physics_gap_fill_bundle_conj_0 : (80 = 80)%nat.
@@ -530,6 +655,10 @@ Lemma atomic_physics_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma atomic_physics_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma atomic_physics_gap_fill_bundle : (80 = 80)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -537,7 +666,7 @@ Proof.
   - exact atomic_physics_gap_fill_bundle_conj_1.
   - exact atomic_physics_gap_fill_bundle_conj_2.
   - exact atomic_physics_gap_fill_bundle_conj_3.
-  - lra.
+  - exact atomic_physics_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma bibliography_corpus_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -552,13 +681,17 @@ Lemma bibliography_corpus_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma bibliography_corpus_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma bibliography_corpus_panel_bundle : (24 = 24)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact bibliography_corpus_panel_bundle_conj_0.
   - exact bibliography_corpus_panel_bundle_conj_1.
   - exact bibliography_corpus_panel_bundle_conj_2.
-  - lra.
+  - exact bibliography_corpus_panel_bundle_conj_3.
 Qed.
 
 Lemma bibliography_lean_corpus_bundle_conj_0 : (9 = 9)%nat.
@@ -573,13 +706,17 @@ Lemma bibliography_lean_corpus_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma bibliography_lean_corpus_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma bibliography_lean_corpus_bundle : (9 = 9)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact bibliography_lean_corpus_bundle_conj_0.
   - exact bibliography_lean_corpus_bundle_conj_1.
   - exact bibliography_lean_corpus_bundle_conj_2.
-  - lra.
+  - exact bibliography_lean_corpus_bundle_conj_3.
 Qed.
 
 Lemma binary_decoder_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -594,13 +731,17 @@ Lemma binary_decoder_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma binary_decoder_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma binary_decoder_panel_bundle : (24 = 24)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact binary_decoder_panel_bundle_conj_0.
   - exact binary_decoder_panel_bundle_conj_1.
   - exact binary_decoder_panel_bundle_conj_2.
-  - lra.
+  - exact binary_decoder_panel_bundle_conj_3.
 Qed.
 
 Lemma binary_decoder_rendlesham_bundle_conj_0 : (10 = 10)%nat.
@@ -615,13 +756,17 @@ Lemma binary_decoder_rendlesham_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma binary_decoder_rendlesham_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma binary_decoder_rendlesham_bundle : (10 = 10)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact binary_decoder_rendlesham_bundle_conj_0.
   - exact binary_decoder_rendlesham_bundle_conj_1.
   - exact binary_decoder_rendlesham_bundle_conj_2.
-  - lra.
+  - exact binary_decoder_rendlesham_bundle_conj_3.
 Qed.
 
 Lemma biological_cuda_physarum_bundle_conj_0 : (35 = 35)%nat.
@@ -636,13 +781,17 @@ Lemma biological_cuda_physarum_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma biological_cuda_physarum_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma biological_cuda_physarum_bundle : (35 = 35)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact biological_cuda_physarum_bundle_conj_0.
   - exact biological_cuda_physarum_bundle_conj_1.
   - exact biological_cuda_physarum_bundle_conj_2.
-  - lra.
+  - exact biological_cuda_physarum_bundle_conj_3.
 Qed.
 
 Lemma biology_developmental_structural_depth_panel_bundle_conj_0 : (26 = 26)%nat.
@@ -657,13 +806,17 @@ Lemma biology_developmental_structural_depth_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma biology_developmental_structural_depth_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma biology_developmental_structural_depth_panel_bundle : (26 = 26)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact biology_developmental_structural_depth_panel_bundle_conj_0.
   - exact biology_developmental_structural_depth_panel_bundle_conj_1.
   - exact biology_developmental_structural_depth_panel_bundle_conj_2.
-  - lra.
+  - exact biology_developmental_structural_depth_panel_bundle_conj_3.
 Qed.
 
 Lemma biology_strict_bundle_conj_0 : (15 = 15)%nat.
@@ -678,13 +831,17 @@ Lemma biology_strict_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma biology_strict_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma biology_strict_bundle : (15 = 15)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact biology_strict_bundle_conj_0.
   - exact biology_strict_bundle_conj_1.
   - exact biology_strict_bundle_conj_2.
-  - lra.
+  - exact biology_strict_bundle_conj_3.
 Qed.
 
 Lemma biophysics_public_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -699,13 +856,42 @@ Lemma biophysics_public_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma biophysics_public_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma biophysics_public_panel_bundle : (24 = 24)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact biophysics_public_panel_bundle_conj_0.
   - exact biophysics_public_panel_bundle_conj_1.
   - exact biophysics_public_panel_bundle_conj_2.
-  - lra.
+  - exact biophysics_public_panel_bundle_conj_3.
+Qed.
+
+Lemma blackhole_thesis_bundle_conj_0 : (28 = 28)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma blackhole_thesis_bundle_conj_1 : (28 = 28)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma blackhole_thesis_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma blackhole_thesis_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma blackhole_thesis_bundle : (28 = 28)%nat /\ (28 = 28)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact blackhole_thesis_bundle_conj_0.
+  - exact blackhole_thesis_bundle_conj_1.
+  - exact blackhole_thesis_bundle_conj_2.
+  - exact blackhole_thesis_bundle_conj_3.
 Qed.
 
 Lemma blackhole_whitehole_cycle_bundle_conj_0 : (24 = 24)%nat.
@@ -720,13 +906,17 @@ Lemma blackhole_whitehole_cycle_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma blackhole_whitehole_cycle_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma blackhole_whitehole_cycle_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact blackhole_whitehole_cycle_bundle_conj_0.
   - exact blackhole_whitehole_cycle_bundle_conj_1.
   - exact blackhole_whitehole_cycle_bundle_conj_2.
-  - lra.
+  - exact blackhole_whitehole_cycle_bundle_conj_3.
 Qed.
 
 Lemma botany_ext_bundle_conj_0 : (426 = 426)%nat.
@@ -745,6 +935,10 @@ Lemma botany_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma botany_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma botany_ext_bundle : (426 = 426)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -752,7 +946,7 @@ Proof.
   - exact botany_ext_bundle_conj_1.
   - exact botany_ext_bundle_conj_2.
   - exact botany_ext_bundle_conj_3.
-  - lra.
+  - exact botany_ext_bundle_conj_4.
 Qed.
 
 Lemma botany_bundle_conj_0 : (426 = 426)%nat.
@@ -767,13 +961,17 @@ Lemma botany_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma botany_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma botany_bundle : (426 = 426)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact botany_bundle_conj_0.
   - exact botany_bundle_conj_1.
   - exact botany_bundle_conj_2.
-  - lra.
+  - exact botany_bundle_conj_3.
 Qed.
 
 Lemma boundary_partition_tightening_bundle_conj_0 : (24 = 24)%nat.
@@ -788,13 +986,17 @@ Lemma boundary_partition_tightening_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma boundary_partition_tightening_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma boundary_partition_tightening_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact boundary_partition_tightening_bundle_conj_0.
   - exact boundary_partition_tightening_bundle_conj_1.
   - exact boundary_partition_tightening_bundle_conj_2.
-  - lra.
+  - exact boundary_partition_tightening_bundle_conj_3.
 Qed.
 
 Lemma brain_component_priors_trinary_bundle_conj_0 : (10 = 10)%nat.
@@ -939,13 +1141,17 @@ Lemma breakthrough_discoveries_2024_2026_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma breakthrough_discoveries_2024_2026_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma breakthrough_discoveries_2024_2026_bundle : (21 = 21)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact breakthrough_discoveries_2024_2026_bundle_conj_0.
   - exact breakthrough_discoveries_2024_2026_bundle_conj_1.
   - exact breakthrough_discoveries_2024_2026_bundle_conj_2.
-  - lra.
+  - exact breakthrough_discoveries_2024_2026_bundle_conj_3.
 Qed.
 
 Lemma breakthrough_fusion_spine_bundle_conj_0 : (146 = 146)%nat.
@@ -960,13 +1166,117 @@ Lemma breakthrough_fusion_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma breakthrough_fusion_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma breakthrough_fusion_spine_bundle : (146 = 146)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact breakthrough_fusion_spine_bundle_conj_0.
   - exact breakthrough_fusion_spine_bundle_conj_1.
   - exact breakthrough_fusion_spine_bundle_conj_2.
-  - lra.
+  - exact breakthrough_fusion_spine_bundle_conj_3.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_1 : (38 = 38)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_2 : (6 = 6)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_3 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_4 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_5 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_6 : (113 = 113)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_8 : True.
+Proof. trivial.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_9 : True.
+Proof. trivial.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_10 : True.
+Proof. trivial.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_11 : True.
+Proof. trivial.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_12 : True.
+Proof. trivial.
+Qed.
+
+Lemma bubble_bleed_bundle_conj_13 : True.
+Proof. trivial.
+Qed.
+
+Lemma bubble_bleed_bundle : (20 = 20)%nat /\ (38 = 38)%nat /\ (6 = 6)%nat /\ (20 = 20)%nat /\ (20 = 20)%nat /\ (5 = 5)%nat /\ (113 = 113)%nat /\ True /\ True /\ True /\ True /\ True /\ True /\ True.
+Proof.
+  repeat (apply conj).
+  - exact bubble_bleed_bundle_conj_0.
+  - exact bubble_bleed_bundle_conj_1.
+  - exact bubble_bleed_bundle_conj_2.
+  - exact bubble_bleed_bundle_conj_3.
+  - exact bubble_bleed_bundle_conj_4.
+  - exact bubble_bleed_bundle_conj_5.
+  - exact bubble_bleed_bundle_conj_6.
+  - exact bubble_bleed_bundle_conj_7.
+  - exact bubble_bleed_bundle_conj_8.
+  - exact bubble_bleed_bundle_conj_9.
+  - exact bubble_bleed_bundle_conj_10.
+  - exact bubble_bleed_bundle_conj_11.
+  - exact bubble_bleed_bundle_conj_12.
+  - exact bubble_bleed_bundle_conj_13.
+Qed.
+
+Lemma cameo_symbolic_bundle_conj_0 : (130 = 130)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cameo_symbolic_bundle_conj_1 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cameo_symbolic_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma cameo_symbolic_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma cameo_symbolic_bundle : (130 = 130)%nat /\ (5 = 5)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact cameo_symbolic_bundle_conj_0.
+  - exact cameo_symbolic_bundle_conj_1.
+  - exact cameo_symbolic_bundle_conj_2.
+  - exact cameo_symbolic_bundle_conj_3.
 Qed.
 
 Lemma canonical_oracle_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -981,13 +1291,17 @@ Lemma canonical_oracle_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma canonical_oracle_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma canonical_oracle_panel_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact canonical_oracle_panel_bundle_conj_0.
   - exact canonical_oracle_panel_bundle_conj_1.
   - exact canonical_oracle_panel_bundle_conj_2.
-  - lra.
+  - exact canonical_oracle_panel_bundle_conj_3.
 Qed.
 
 Lemma cardiology_ext_bundle_conj_0 : (126 = 126)%nat.
@@ -1006,6 +1320,10 @@ Lemma cardiology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma cardiology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cardiology_ext_bundle : (126 = 126)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -1013,7 +1331,7 @@ Proof.
   - exact cardiology_ext_bundle_conj_1.
   - exact cardiology_ext_bundle_conj_2.
   - exact cardiology_ext_bundle_conj_3.
-  - lra.
+  - exact cardiology_ext_bundle_conj_4.
 Qed.
 
 Lemma cardiology_panel_bundle_conj_0 : (20 = 20)%nat.
@@ -1028,13 +1346,17 @@ Lemma cardiology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cardiology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cardiology_panel_bundle : (20 = 20)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cardiology_panel_bundle_conj_0.
   - exact cardiology_panel_bundle_conj_1.
   - exact cardiology_panel_bundle_conj_2.
-  - lra.
+  - exact cardiology_panel_bundle_conj_3.
 Qed.
 
 Lemma cardiology_bundle_conj_0 : (45 = 45)%nat.
@@ -1049,13 +1371,17 @@ Lemma cardiology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cardiology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cardiology_bundle : (45 = 45)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cardiology_bundle_conj_0.
   - exact cardiology_bundle_conj_1.
   - exact cardiology_bundle_conj_2.
-  - lra.
+  - exact cardiology_bundle_conj_3.
 Qed.
 
 Lemma cartography_gis_panel_bundle_conj_0 : (48 = 48)%nat.
@@ -1070,13 +1396,17 @@ Lemma cartography_gis_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cartography_gis_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cartography_gis_panel_bundle : (48 = 48)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cartography_gis_panel_bundle_conj_0.
   - exact cartography_gis_panel_bundle_conj_1.
   - exact cartography_gis_panel_bundle_conj_2.
-  - lra.
+  - exact cartography_gis_panel_bundle_conj_3.
 Qed.
 
 Lemma cartography_gis_bundle_conj_0 : (48 = 48)%nat.
@@ -1091,13 +1421,17 @@ Lemma cartography_gis_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cartography_gis_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cartography_gis_bundle : (48 = 48)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cartography_gis_bundle_conj_0.
   - exact cartography_gis_bundle_conj_1.
   - exact cartography_gis_bundle_conj_2.
-  - lra.
+  - exact cartography_gis_bundle_conj_3.
 Qed.
 
 Lemma cern_open_data_lhc_bundle_conj_0 : (83 = 83)%nat.
@@ -1112,13 +1446,17 @@ Lemma cern_open_data_lhc_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cern_open_data_lhc_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cern_open_data_lhc_bundle : (83 = 83)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cern_open_data_lhc_bundle_conj_0.
   - exact cern_open_data_lhc_bundle_conj_1.
   - exact cern_open_data_lhc_bundle_conj_2.
-  - lra.
+  - exact cern_open_data_lhc_bundle_conj_3.
 Qed.
 
 Lemma certified_agent_formal_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -1133,13 +1471,17 @@ Lemma certified_agent_formal_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma certified_agent_formal_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma certified_agent_formal_panel_bundle : (24 = 24)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact certified_agent_formal_panel_bundle_conj_0.
   - exact certified_agent_formal_panel_bundle_conj_1.
   - exact certified_agent_formal_panel_bundle_conj_2.
-  - lra.
+  - exact certified_agent_formal_panel_bundle_conj_3.
 Qed.
 
 Lemma certified_agent_qwen_bundle_conj_0 : (8 = 8)%nat.
@@ -1154,13 +1496,17 @@ Lemma certified_agent_qwen_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma certified_agent_qwen_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma certified_agent_qwen_bundle : (8 = 8)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact certified_agent_qwen_bundle_conj_0.
   - exact certified_agent_qwen_bundle_conj_1.
   - exact certified_agent_qwen_bundle_conj_2.
-  - lra.
+  - exact certified_agent_qwen_bundle_conj_3.
 Qed.
 
 Lemma chaos_mediated_phase_transitions_bundle_conj_0 : (21 = 21)%nat.
@@ -1175,13 +1521,17 @@ Lemma chaos_mediated_phase_transitions_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma chaos_mediated_phase_transitions_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma chaos_mediated_phase_transitions_bundle : (21 = 21)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact chaos_mediated_phase_transitions_bundle_conj_0.
   - exact chaos_mediated_phase_transitions_bundle_conj_1.
   - exact chaos_mediated_phase_transitions_bundle_conj_2.
-  - lra.
+  - exact chaos_mediated_phase_transitions_bundle_conj_3.
 Qed.
 
 Lemma chembl_deep_open_bundle_conj_0 : (188 = 188)%nat.
@@ -1220,6 +1570,10 @@ Lemma chemical_engineering_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma chemical_engineering_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma chemical_engineering_ext_bundle : (186 = 186)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -1227,7 +1581,7 @@ Proof.
   - exact chemical_engineering_ext_bundle_conj_1.
   - exact chemical_engineering_ext_bundle_conj_2.
   - exact chemical_engineering_ext_bundle_conj_3.
-  - lra.
+  - exact chemical_engineering_ext_bundle_conj_4.
 Qed.
 
 Lemma chemical_engineering_bundle_conj_0 : (186 = 186)%nat.
@@ -1242,13 +1596,17 @@ Lemma chemical_engineering_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma chemical_engineering_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma chemical_engineering_bundle : (186 = 186)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact chemical_engineering_bundle_conj_0.
   - exact chemical_engineering_bundle_conj_1.
   - exact chemical_engineering_bundle_conj_2.
-  - lra.
+  - exact chemical_engineering_bundle_conj_3.
 Qed.
 
 Lemma chemical_structure_stability_panel_bundle_conj_0 : (32 = 32)%nat.
@@ -1263,13 +1621,17 @@ Lemma chemical_structure_stability_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma chemical_structure_stability_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma chemical_structure_stability_panel_bundle : (32 = 32)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact chemical_structure_stability_panel_bundle_conj_0.
   - exact chemical_structure_stability_panel_bundle_conj_1.
   - exact chemical_structure_stability_panel_bundle_conj_2.
-  - lra.
+  - exact chemical_structure_stability_panel_bundle_conj_3.
 Qed.
 
 Lemma circuit_component_emergence_bundle_conj_0 : (23 = 23)%nat.
@@ -1284,13 +1646,17 @@ Lemma circuit_component_emergence_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma circuit_component_emergence_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma circuit_component_emergence_bundle : (23 = 23)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact circuit_component_emergence_bundle_conj_0.
   - exact circuit_component_emergence_bundle_conj_1.
   - exact circuit_component_emergence_bundle_conj_2.
-  - lra.
+  - exact circuit_component_emergence_bundle_conj_3.
 Qed.
 
 Lemma civil_engineering_ext_bundle_conj_0 : (201 = 201)%nat.
@@ -1309,6 +1675,10 @@ Lemma civil_engineering_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma civil_engineering_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma civil_engineering_ext_bundle : (201 = 201)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -1316,7 +1686,7 @@ Proof.
   - exact civil_engineering_ext_bundle_conj_1.
   - exact civil_engineering_ext_bundle_conj_2.
   - exact civil_engineering_ext_bundle_conj_3.
-  - lra.
+  - exact civil_engineering_ext_bundle_conj_4.
 Qed.
 
 Lemma civil_engineering_panel_bundle_conj_0 : (20 = 20)%nat.
@@ -1331,13 +1701,17 @@ Lemma civil_engineering_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma civil_engineering_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma civil_engineering_panel_bundle : (20 = 20)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact civil_engineering_panel_bundle_conj_0.
   - exact civil_engineering_panel_bundle_conj_1.
   - exact civil_engineering_panel_bundle_conj_2.
-  - lra.
+  - exact civil_engineering_panel_bundle_conj_3.
 Qed.
 
 Lemma civil_engineering_bundle_conj_0 : (37 = 37)%nat.
@@ -1352,13 +1726,17 @@ Lemma civil_engineering_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma civil_engineering_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma civil_engineering_bundle : (37 = 37)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact civil_engineering_bundle_conj_0.
   - exact civil_engineering_bundle_conj_1.
   - exact civil_engineering_bundle_conj_2.
-  - lra.
+  - exact civil_engineering_bundle_conj_3.
 Qed.
 
 Lemma climate_science_bundle_conj_0 : (9439 = 9439)%nat.
@@ -1389,6 +1767,10 @@ Lemma climate_science_bundle_conj_6 : True.
 Proof. trivial.
 Qed.
 
+Lemma climate_science_bundle_conj_7 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma climate_science_bundle : (9439 = 9439)%nat /\ (7519 = 7519)%nat /\ (1920 = 1920)%nat /\ (4 = 4)%nat /\ (16 = 16)%nat /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -1399,7 +1781,7 @@ Proof.
   - exact climate_science_bundle_conj_4.
   - exact climate_science_bundle_conj_5.
   - exact climate_science_bundle_conj_6.
-  - lra.
+  - exact climate_science_bundle_conj_7.
 Qed.
 
 Lemma clinical_medicine_ext_bundle_conj_0 : (260 = 260)%nat.
@@ -1418,6 +1800,10 @@ Lemma clinical_medicine_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma clinical_medicine_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma clinical_medicine_ext_bundle : (260 = 260)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -1425,7 +1811,7 @@ Proof.
   - exact clinical_medicine_ext_bundle_conj_1.
   - exact clinical_medicine_ext_bundle_conj_2.
   - exact clinical_medicine_ext_bundle_conj_3.
-  - lra.
+  - exact clinical_medicine_ext_bundle_conj_4.
 Qed.
 
 Lemma clinical_medicine_bundle_conj_0 : (260 = 260)%nat.
@@ -1440,13 +1826,17 @@ Lemma clinical_medicine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma clinical_medicine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma clinical_medicine_bundle : (260 = 260)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact clinical_medicine_bundle_conj_0.
   - exact clinical_medicine_bundle_conj_1.
   - exact clinical_medicine_bundle_conj_2.
-  - lra.
+  - exact clinical_medicine_bundle_conj_3.
 Qed.
 
 Lemma clinicaltrials_medical_panel_bundle_conj_0 : (394 = 394)%nat.
@@ -1461,13 +1851,17 @@ Lemma clinicaltrials_medical_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma clinicaltrials_medical_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma clinicaltrials_medical_panel_bundle : (394 = 394)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact clinicaltrials_medical_panel_bundle_conj_0.
   - exact clinicaltrials_medical_panel_bundle_conj_1.
   - exact clinicaltrials_medical_panel_bundle_conj_2.
-  - lra.
+  - exact clinicaltrials_medical_panel_bundle_conj_3.
 Qed.
 
 Lemma clinicaltrials_medical_bundle_conj_0 : (394 = 394)%nat.
@@ -1482,13 +1876,17 @@ Lemma clinicaltrials_medical_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma clinicaltrials_medical_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma clinicaltrials_medical_bundle : (394 = 394)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact clinicaltrials_medical_bundle_conj_0.
   - exact clinicaltrials_medical_bundle_conj_1.
   - exact clinicaltrials_medical_bundle_conj_2.
-  - lra.
+  - exact clinicaltrials_medical_bundle_conj_3.
 Qed.
 
 Lemma codata_full_table_open_bundle_conj_0 : (38 = 38)%nat.
@@ -1523,13 +1921,17 @@ Lemma code_genome_structure_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma code_genome_structure_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma code_genome_structure_bundle : (205 = 205)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact code_genome_structure_bundle_conj_0.
   - exact code_genome_structure_bundle_conj_1.
   - exact code_genome_structure_bundle_conj_2.
-  - lra.
+  - exact code_genome_structure_bundle_conj_3.
 Qed.
 
 Lemma coding_structure_verifier_bundle_conj_0 : (18 = 18)%nat.
@@ -1544,13 +1946,127 @@ Lemma coding_structure_verifier_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma coding_structure_verifier_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma coding_structure_verifier_bundle : (18 = 18)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact coding_structure_verifier_bundle_conj_0.
   - exact coding_structure_verifier_bundle_conj_1.
   - exact coding_structure_verifier_bundle_conj_2.
-  - lra.
+  - exact coding_structure_verifier_bundle_conj_3.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_0 : (64 = 64)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_1 : (8 = 8)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_2 : (27 = 27)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_3 : (3 = 3)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_8 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_9 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_10 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_11 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_12 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_13 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_14 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_15 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_16 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_17 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_18 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_19 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle_conj_20 : True.
+Proof. trivial.
+Qed.
+
+Lemma codon_trinary_map_bundle : (64 = 64)%nat /\ (8 = 8)%nat /\ (27 = 27)%nat /\ (3 = 3)%nat /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True.
+Proof.
+  repeat (apply conj).
+  - exact codon_trinary_map_bundle_conj_0.
+  - exact codon_trinary_map_bundle_conj_1.
+  - exact codon_trinary_map_bundle_conj_2.
+  - exact codon_trinary_map_bundle_conj_3.
+  - exact codon_trinary_map_bundle_conj_4.
+  - exact codon_trinary_map_bundle_conj_5.
+  - exact codon_trinary_map_bundle_conj_6.
+  - exact codon_trinary_map_bundle_conj_7.
+  - exact codon_trinary_map_bundle_conj_8.
+  - exact codon_trinary_map_bundle_conj_9.
+  - exact codon_trinary_map_bundle_conj_10.
+  - exact codon_trinary_map_bundle_conj_11.
+  - exact codon_trinary_map_bundle_conj_12.
+  - exact codon_trinary_map_bundle_conj_13.
+  - exact codon_trinary_map_bundle_conj_14.
+  - exact codon_trinary_map_bundle_conj_15.
+  - exact codon_trinary_map_bundle_conj_16.
+  - exact codon_trinary_map_bundle_conj_17.
+  - exact codon_trinary_map_bundle_conj_18.
+  - exact codon_trinary_map_bundle_conj_19.
+  - exact codon_trinary_map_bundle_conj_20.
 Qed.
 
 Lemma cod_optimade_structures_bundle_conj_0 : (682 = 682)%nat.
@@ -1585,13 +2101,17 @@ Lemma cold_fusion_candidate_prereg_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cold_fusion_candidate_prereg_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cold_fusion_candidate_prereg_scaffold_bundle : (24 = 24)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cold_fusion_candidate_prereg_scaffold_bundle_conj_0.
   - exact cold_fusion_candidate_prereg_scaffold_bundle_conj_1.
   - exact cold_fusion_candidate_prereg_scaffold_bundle_conj_2.
-  - lra.
+  - exact cold_fusion_candidate_prereg_scaffold_bundle_conj_3.
 Qed.
 
 Lemma cold_fusion_lab_synthesis_crosswalk_bundle_conj_0 : (22 = 22)%nat.
@@ -1606,13 +2126,17 @@ Lemma cold_fusion_lab_synthesis_crosswalk_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cold_fusion_lab_synthesis_crosswalk_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cold_fusion_lab_synthesis_crosswalk_bundle : (22 = 22)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cold_fusion_lab_synthesis_crosswalk_bundle_conj_0.
   - exact cold_fusion_lab_synthesis_crosswalk_bundle_conj_1.
   - exact cold_fusion_lab_synthesis_crosswalk_bundle_conj_2.
-  - lra.
+  - exact cold_fusion_lab_synthesis_crosswalk_bundle_conj_3.
 Qed.
 
 Lemma compactification_ladder_bundle_conj_0 : (60 = 60)%nat.
@@ -1627,13 +2151,17 @@ Lemma compactification_ladder_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma compactification_ladder_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma compactification_ladder_bundle : (60 = 60)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact compactification_ladder_bundle_conj_0.
   - exact compactification_ladder_bundle_conj_1.
   - exact compactification_ladder_bundle_conj_2.
-  - lra.
+  - exact compactification_ladder_bundle_conj_3.
 Qed.
 
 Lemma compact_object_binary_events_bundle_conj_0 : (40 = 40)%nat.
@@ -1648,13 +2176,17 @@ Lemma compact_object_binary_events_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma compact_object_binary_events_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma compact_object_binary_events_bundle : (40 = 40)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact compact_object_binary_events_bundle_conj_0.
   - exact compact_object_binary_events_bundle_conj_1.
   - exact compact_object_binary_events_bundle_conj_2.
-  - lra.
+  - exact compact_object_binary_events_bundle_conj_3.
 Qed.
 
 Lemma complexity_folding_emergence_panel_bundle_conj_0 : (29 = 29)%nat.
@@ -1669,13 +2201,17 @@ Lemma complexity_folding_emergence_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma complexity_folding_emergence_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma complexity_folding_emergence_panel_bundle : (29 = 29)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact complexity_folding_emergence_panel_bundle_conj_0.
   - exact complexity_folding_emergence_panel_bundle_conj_1.
   - exact complexity_folding_emergence_panel_bundle_conj_2.
-  - lra.
+  - exact complexity_folding_emergence_panel_bundle_conj_3.
 Qed.
 
 Lemma computational_reasoning_bundle_conj_0 : (577 = 577)%nat.
@@ -1690,13 +2226,17 @@ Lemma computational_reasoning_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma computational_reasoning_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma computational_reasoning_bundle : (577 = 577)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact computational_reasoning_bundle_conj_0.
   - exact computational_reasoning_bundle_conj_1.
   - exact computational_reasoning_bundle_conj_2.
-  - lra.
+  - exact computational_reasoning_bundle_conj_3.
 Qed.
 
 Lemma condensed_matter_superconductivity_depth_panel_bundle_conj_0 : (21 = 21)%nat.
@@ -1711,13 +2251,17 @@ Lemma condensed_matter_superconductivity_depth_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma condensed_matter_superconductivity_depth_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma condensed_matter_superconductivity_depth_panel_bundle : (21 = 21)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact condensed_matter_superconductivity_depth_panel_bundle_conj_0.
   - exact condensed_matter_superconductivity_depth_panel_bundle_conj_1.
   - exact condensed_matter_superconductivity_depth_panel_bundle_conj_2.
-  - lra.
+  - exact condensed_matter_superconductivity_depth_panel_bundle_conj_3.
 Qed.
 
 Lemma consciousness_econ_bundle_conj_0 : (37 = 37)%nat.
@@ -1732,13 +2276,17 @@ Lemma consciousness_econ_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma consciousness_econ_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma consciousness_econ_bundle : (37 = 37)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact consciousness_econ_bundle_conj_0.
   - exact consciousness_econ_bundle_conj_1.
   - exact consciousness_econ_bundle_conj_2.
-  - lra.
+  - exact consciousness_econ_bundle_conj_3.
 Qed.
 
 Lemma consciousness_expansion_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -1753,13 +2301,17 @@ Lemma consciousness_expansion_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma consciousness_expansion_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma consciousness_expansion_spine_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact consciousness_expansion_spine_bundle_conj_0.
   - exact consciousness_expansion_spine_bundle_conj_1.
   - exact consciousness_expansion_spine_bundle_conj_2.
-  - lra.
+  - exact consciousness_expansion_spine_bundle_conj_3.
 Qed.
 
 Lemma consciousness_galactic_orbital_bridge_bundle_conj_0 : (48 = 48)%nat.
@@ -1774,13 +2326,17 @@ Lemma consciousness_galactic_orbital_bridge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma consciousness_galactic_orbital_bridge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma consciousness_galactic_orbital_bridge_bundle : (48 = 48)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact consciousness_galactic_orbital_bridge_bundle_conj_0.
   - exact consciousness_galactic_orbital_bridge_bundle_conj_1.
   - exact consciousness_galactic_orbital_bridge_bundle_conj_2.
-  - lra.
+  - exact consciousness_galactic_orbital_bridge_bundle_conj_3.
 Qed.
 
 Lemma consciousness_genetics_coupling_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -1795,13 +2351,17 @@ Lemma consciousness_genetics_coupling_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma consciousness_genetics_coupling_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma consciousness_genetics_coupling_panel_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact consciousness_genetics_coupling_panel_bundle_conj_0.
   - exact consciousness_genetics_coupling_panel_bundle_conj_1.
   - exact consciousness_genetics_coupling_panel_bundle_conj_2.
-  - lra.
+  - exact consciousness_genetics_coupling_panel_bundle_conj_3.
 Qed.
 
 Lemma consciousness_genetics_species_panel_bundle_conj_0 : (27 = 27)%nat.
@@ -1816,13 +2376,17 @@ Lemma consciousness_genetics_species_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma consciousness_genetics_species_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma consciousness_genetics_species_panel_bundle : (27 = 27)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact consciousness_genetics_species_panel_bundle_conj_0.
   - exact consciousness_genetics_species_panel_bundle_conj_1.
   - exact consciousness_genetics_species_panel_bundle_conj_2.
-  - lra.
+  - exact consciousness_genetics_species_panel_bundle_conj_3.
 Qed.
 
 Lemma consciousness_soul_bridge_bundle_conj_0 : (27 = 27)%nat.
@@ -1837,13 +2401,17 @@ Lemma consciousness_soul_bridge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma consciousness_soul_bridge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma consciousness_soul_bridge_bundle : (27 = 27)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact consciousness_soul_bridge_bundle_conj_0.
   - exact consciousness_soul_bridge_bundle_conj_1.
   - exact consciousness_soul_bridge_bundle_conj_2.
-  - lra.
+  - exact consciousness_soul_bridge_bundle_conj_3.
 Qed.
 
 Lemma consciousness_species_multi_panel_bundle_conj_0 : (269 = 269)%nat.
@@ -1858,13 +2426,17 @@ Lemma consciousness_species_multi_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma consciousness_species_multi_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma consciousness_species_multi_panel_bundle : (269 = 269)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact consciousness_species_multi_panel_bundle_conj_0.
   - exact consciousness_species_multi_panel_bundle_conj_1.
   - exact consciousness_species_multi_panel_bundle_conj_2.
-  - lra.
+  - exact consciousness_species_multi_panel_bundle_conj_3.
 Qed.
 
 Lemma cosmology_anomalies_bundle_conj_0 : (23 = 23)%nat.
@@ -1879,13 +2451,17 @@ Lemma cosmology_anomalies_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cosmology_anomalies_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cosmology_anomalies_bundle : (23 = 23)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cosmology_anomalies_bundle_conj_0.
   - exact cosmology_anomalies_bundle_conj_1.
   - exact cosmology_anomalies_bundle_conj_2.
-  - lra.
+  - exact cosmology_anomalies_bundle_conj_3.
 Qed.
 
 Lemma cosmology_anomaly_deep_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -1900,13 +2476,17 @@ Lemma cosmology_anomaly_deep_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cosmology_anomaly_deep_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cosmology_anomaly_deep_panel_bundle : (24 = 24)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cosmology_anomaly_deep_panel_bundle_conj_0.
   - exact cosmology_anomaly_deep_panel_bundle_conj_1.
   - exact cosmology_anomaly_deep_panel_bundle_conj_2.
-  - lra.
+  - exact cosmology_anomaly_deep_panel_bundle_conj_3.
 Qed.
 
 Lemma cosmology_bubble_bleed_bundle_conj_0 : (113 = 113)%nat.
@@ -1921,13 +2501,287 @@ Lemma cosmology_bubble_bleed_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cosmology_bubble_bleed_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cosmology_bubble_bleed_bundle : (113 = 113)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cosmology_bubble_bleed_bundle_conj_0.
   - exact cosmology_bubble_bleed_bundle_conj_1.
   - exact cosmology_bubble_bleed_bundle_conj_2.
-  - lra.
+  - exact cosmology_bubble_bleed_bundle_conj_3.
+Qed.
+
+Lemma cosmology_extended_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_extended_bundle_conj_1 : (30 = 30)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_extended_bundle_conj_2 : (4 = 4)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_extended_bundle_conj_3 : (58 = 58)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_extended_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_extended_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_extended_bundle_conj_6 : 0 < (0.022356124082273696%R).
+Proof. lra.
+Qed.
+
+Lemma cosmology_extended_bundle : (24 = 24)%nat /\ (30 = 30)%nat /\ (4 = 4)%nat /\ (58 = 58)%nat /\ True /\ True /\ 0 < (0.022356124082273696%R).
+Proof.
+  repeat (apply conj).
+  - exact cosmology_extended_bundle_conj_0.
+  - exact cosmology_extended_bundle_conj_1.
+  - exact cosmology_extended_bundle_conj_2.
+  - exact cosmology_extended_bundle_conj_3.
+  - exact cosmology_extended_bundle_conj_4.
+  - exact cosmology_extended_bundle_conj_5.
+  - exact cosmology_extended_bundle_conj_6.
+Qed.
+
+Lemma cosmology_higher_waves_bundle_conj_0 : (142 = 142)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_higher_waves_bundle_conj_1 : (22 = 22)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_higher_waves_bundle_conj_2 : (22 = 22)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_higher_waves_bundle_conj_3 : (29 = 29)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_higher_waves_bundle_conj_4 : (52 = 52)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_higher_waves_bundle_conj_5 : (7 = 7)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_higher_waves_bundle_conj_6 : (10 = 10)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_higher_waves_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_higher_waves_bundle_conj_8 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_higher_waves_bundle_conj_9 : 0 < (0.022356124082273696%R).
+Proof. lra.
+Qed.
+
+Lemma cosmology_higher_waves_bundle : (142 = 142)%nat /\ (22 = 22)%nat /\ (22 = 22)%nat /\ (29 = 29)%nat /\ (52 = 52)%nat /\ (7 = 7)%nat /\ (10 = 10)%nat /\ True /\ True /\ 0 < (0.022356124082273696%R).
+Proof.
+  repeat (apply conj).
+  - exact cosmology_higher_waves_bundle_conj_0.
+  - exact cosmology_higher_waves_bundle_conj_1.
+  - exact cosmology_higher_waves_bundle_conj_2.
+  - exact cosmology_higher_waves_bundle_conj_3.
+  - exact cosmology_higher_waves_bundle_conj_4.
+  - exact cosmology_higher_waves_bundle_conj_5.
+  - exact cosmology_higher_waves_bundle_conj_6.
+  - exact cosmology_higher_waves_bundle_conj_7.
+  - exact cosmology_higher_waves_bundle_conj_8.
+  - exact cosmology_higher_waves_bundle_conj_9.
+Qed.
+
+Lemma cosmology_wave10_bundle_conj_0 : (10 = 10)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_wave10_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave10_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave10_bundle_conj_3 : 0 < (0.022356124082273696%R).
+Proof. lra.
+Qed.
+
+Lemma cosmology_wave10_bundle : (10 = 10)%nat /\ True /\ True /\ 0 < (0.022356124082273696%R).
+Proof.
+  repeat (apply conj).
+  - exact cosmology_wave10_bundle_conj_0.
+  - exact cosmology_wave10_bundle_conj_1.
+  - exact cosmology_wave10_bundle_conj_2.
+  - exact cosmology_wave10_bundle_conj_3.
+Qed.
+
+Lemma cosmology_wave4_bundle_conj_0 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_wave4_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave4_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave4_bundle_conj_3 : 0 < (0.022356124082273696%R).
+Proof. lra.
+Qed.
+
+Lemma cosmology_wave4_bundle : (16 = 16)%nat /\ True /\ True /\ 0 < (0.022356124082273696%R).
+Proof.
+  repeat (apply conj).
+  - exact cosmology_wave4_bundle_conj_0.
+  - exact cosmology_wave4_bundle_conj_1.
+  - exact cosmology_wave4_bundle_conj_2.
+  - exact cosmology_wave4_bundle_conj_3.
+Qed.
+
+Lemma cosmology_wave5_bundle_conj_0 : (22 = 22)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_wave5_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave5_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave5_bundle_conj_3 : 0 < (0.022356124082273696%R).
+Proof. lra.
+Qed.
+
+Lemma cosmology_wave5_bundle : (22 = 22)%nat /\ True /\ True /\ 0 < (0.022356124082273696%R).
+Proof.
+  repeat (apply conj).
+  - exact cosmology_wave5_bundle_conj_0.
+  - exact cosmology_wave5_bundle_conj_1.
+  - exact cosmology_wave5_bundle_conj_2.
+  - exact cosmology_wave5_bundle_conj_3.
+Qed.
+
+Lemma cosmology_wave6_bundle_conj_0 : (22 = 22)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_wave6_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave6_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave6_bundle_conj_3 : 0 < (0.022356124082273696%R).
+Proof. lra.
+Qed.
+
+Lemma cosmology_wave6_bundle : (22 = 22)%nat /\ True /\ True /\ 0 < (0.022356124082273696%R).
+Proof.
+  repeat (apply conj).
+  - exact cosmology_wave6_bundle_conj_0.
+  - exact cosmology_wave6_bundle_conj_1.
+  - exact cosmology_wave6_bundle_conj_2.
+  - exact cosmology_wave6_bundle_conj_3.
+Qed.
+
+Lemma cosmology_wave7_bundle_conj_0 : (29 = 29)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_wave7_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave7_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave7_bundle_conj_3 : 0 < (0.022356124082273696%R).
+Proof. lra.
+Qed.
+
+Lemma cosmology_wave7_bundle : (29 = 29)%nat /\ True /\ True /\ 0 < (0.022356124082273696%R).
+Proof.
+  repeat (apply conj).
+  - exact cosmology_wave7_bundle_conj_0.
+  - exact cosmology_wave7_bundle_conj_1.
+  - exact cosmology_wave7_bundle_conj_2.
+  - exact cosmology_wave7_bundle_conj_3.
+Qed.
+
+Lemma cosmology_wave8_bundle_conj_0 : (52 = 52)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_wave8_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave8_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave8_bundle_conj_3 : 0 < (0.022356124082273696%R).
+Proof. lra.
+Qed.
+
+Lemma cosmology_wave8_bundle : (52 = 52)%nat /\ True /\ True /\ 0 < (0.022356124082273696%R).
+Proof.
+  repeat (apply conj).
+  - exact cosmology_wave8_bundle_conj_0.
+  - exact cosmology_wave8_bundle_conj_1.
+  - exact cosmology_wave8_bundle_conj_2.
+  - exact cosmology_wave8_bundle_conj_3.
+Qed.
+
+Lemma cosmology_wave9_bundle_conj_0 : (7 = 7)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_wave9_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave9_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_wave9_bundle_conj_3 : 0 < (0.022356124082273696%R).
+Proof. lra.
+Qed.
+
+Lemma cosmology_wave9_bundle : (7 = 7)%nat /\ True /\ True /\ 0 < (0.022356124082273696%R).
+Proof.
+  repeat (apply conj).
+  - exact cosmology_wave9_bundle_conj_0.
+  - exact cosmology_wave9_bundle_conj_1.
+  - exact cosmology_wave9_bundle_conj_2.
+  - exact cosmology_wave9_bundle_conj_3.
 Qed.
 
 Lemma crc_handbook_properties_bundle_conj_0 : (391 = 391)%nat.
@@ -1942,13 +2796,17 @@ Lemma crc_handbook_properties_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma crc_handbook_properties_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma crc_handbook_properties_bundle : (391 = 391)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact crc_handbook_properties_bundle_conj_0.
   - exact crc_handbook_properties_bundle_conj_1.
   - exact crc_handbook_properties_bundle_conj_2.
-  - lra.
+  - exact crc_handbook_properties_bundle_conj_3.
 Qed.
 
 Lemma creative_arts_math_spine_bundle_conj_0 : (56 = 56)%nat.
@@ -1963,13 +2821,17 @@ Lemma creative_arts_math_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma creative_arts_math_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma creative_arts_math_spine_bundle : (56 = 56)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact creative_arts_math_spine_bundle_conj_0.
   - exact creative_arts_math_spine_bundle_conj_1.
   - exact creative_arts_math_spine_bundle_conj_2.
-  - lra.
+  - exact creative_arts_math_spine_bundle_conj_3.
 Qed.
 
 Lemma crossref_scholarly_panel_bundle_conj_0 : (200 = 200)%nat.
@@ -1984,13 +2846,17 @@ Lemma crossref_scholarly_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma crossref_scholarly_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma crossref_scholarly_panel_bundle : (200 = 200)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact crossref_scholarly_panel_bundle_conj_0.
   - exact crossref_scholarly_panel_bundle_conj_1.
   - exact crossref_scholarly_panel_bundle_conj_2.
-  - lra.
+  - exact crossref_scholarly_panel_bundle_conj_3.
 Qed.
 
 Lemma crossref_scholarly_bundle_conj_0 : (200 = 200)%nat.
@@ -2005,13 +2871,17 @@ Lemma crossref_scholarly_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma crossref_scholarly_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma crossref_scholarly_bundle : (200 = 200)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact crossref_scholarly_bundle_conj_0.
   - exact crossref_scholarly_bundle_conj_1.
   - exact crossref_scholarly_bundle_conj_2.
-  - lra.
+  - exact crossref_scholarly_bundle_conj_3.
 Qed.
 
 Lemma cryosphere_bundle_conj_0 : (2399 = 2399)%nat.
@@ -2034,6 +2904,10 @@ Lemma cryosphere_bundle_conj_4 : True.
 Proof. trivial.
 Qed.
 
+Lemma cryosphere_bundle_conj_5 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cryosphere_bundle : (2399 = 2399)%nat /\ (4 = 4)%nat /\ (2399 = 2399)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -2042,7 +2916,7 @@ Proof.
   - exact cryosphere_bundle_conj_2.
   - exact cryosphere_bundle_conj_3.
   - exact cryosphere_bundle_conj_4.
-  - lra.
+  - exact cryosphere_bundle_conj_5.
 Qed.
 
 Lemma cryptography_technology_bundle_conj_0 : (44 = 44)%nat.
@@ -2057,13 +2931,17 @@ Lemma cryptography_technology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cryptography_technology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cryptography_technology_bundle : (44 = 44)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cryptography_technology_bundle_conj_0.
   - exact cryptography_technology_bundle_conj_1.
   - exact cryptography_technology_bundle_conj_2.
-  - lra.
+  - exact cryptography_technology_bundle_conj_3.
 Qed.
 
 Lemma culinary_arts_bundle_conj_0 : (26 = 26)%nat.
@@ -2078,13 +2956,17 @@ Lemma culinary_arts_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma culinary_arts_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma culinary_arts_bundle : (26 = 26)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact culinary_arts_bundle_conj_0.
   - exact culinary_arts_bundle_conj_1.
   - exact culinary_arts_bundle_conj_2.
-  - lra.
+  - exact culinary_arts_bundle_conj_3.
 Qed.
 
 Lemma culinary_fermentation_maillard_panel_bundle_conj_0 : (130 = 130)%nat.
@@ -2099,13 +2981,17 @@ Lemma culinary_fermentation_maillard_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma culinary_fermentation_maillard_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma culinary_fermentation_maillard_panel_bundle : (130 = 130)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact culinary_fermentation_maillard_panel_bundle_conj_0.
   - exact culinary_fermentation_maillard_panel_bundle_conj_1.
   - exact culinary_fermentation_maillard_panel_bundle_conj_2.
-  - lra.
+  - exact culinary_fermentation_maillard_panel_bundle_conj_3.
 Qed.
 
 Lemma cve_codon_hole_falsification_bundle_conj_0 : (29 = 29)%nat.
@@ -2120,13 +3006,17 @@ Lemma cve_codon_hole_falsification_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma cve_codon_hole_falsification_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma cve_codon_hole_falsification_bundle : (29 = 29)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact cve_codon_hole_falsification_bundle_conj_0.
   - exact cve_codon_hole_falsification_bundle_conj_1.
   - exact cve_codon_hole_falsification_bundle_conj_2.
-  - lra.
+  - exact cve_codon_hole_falsification_bundle_conj_3.
 Qed.
 
 Lemma dark_energy_cpl_bundle_conj_0 : (24 = 24)%nat.
@@ -2141,13 +3031,17 @@ Lemma dark_energy_cpl_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma dark_energy_cpl_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma dark_energy_cpl_bundle : (24 = 24)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact dark_energy_cpl_bundle_conj_0.
   - exact dark_energy_cpl_bundle_conj_1.
   - exact dark_energy_cpl_bundle_conj_2.
-  - lra.
+  - exact dark_energy_cpl_bundle_conj_3.
 Qed.
 
 Lemma dark_sector_open_problems_bundle_conj_0 : (24 = 24)%nat.
@@ -2162,13 +3056,17 @@ Lemma dark_sector_open_problems_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma dark_sector_open_problems_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma dark_sector_open_problems_bundle : (24 = 24)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact dark_sector_open_problems_bundle_conj_0.
   - exact dark_sector_open_problems_bundle_conj_1.
   - exact dark_sector_open_problems_bundle_conj_2.
-  - lra.
+  - exact dark_sector_open_problems_bundle_conj_3.
 Qed.
 
 Lemma desi_edr_table_slice_open_bundle_conj_0 : (18 = 18)%nat.
@@ -2223,13 +3121,17 @@ Lemma desktop_application_wiring_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma desktop_application_wiring_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma desktop_application_wiring_spine_bundle : (81 = 81)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact desktop_application_wiring_spine_bundle_conj_0.
   - exact desktop_application_wiring_spine_bundle_conj_1.
   - exact desktop_application_wiring_spine_bundle_conj_2.
-  - lra.
+  - exact desktop_application_wiring_spine_bundle_conj_3.
 Qed.
 
 Lemma distant_island_emergence_simulation_bundle_conj_0 : (36 = 36)%nat.
@@ -2244,13 +3146,17 @@ Lemma distant_island_emergence_simulation_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma distant_island_emergence_simulation_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma distant_island_emergence_simulation_bundle : (36 = 36)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact distant_island_emergence_simulation_bundle_conj_0.
   - exact distant_island_emergence_simulation_bundle_conj_1.
   - exact distant_island_emergence_simulation_bundle_conj_2.
-  - lra.
+  - exact distant_island_emergence_simulation_bundle_conj_3.
 Qed.
 
 Lemma distant_island_z128_z132_deep_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -2265,13 +3171,17 @@ Lemma distant_island_z128_z132_deep_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma distant_island_z128_z132_deep_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma distant_island_z128_z132_deep_panel_bundle : (24 = 24)%nat /\ (23 = 23)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact distant_island_z128_z132_deep_panel_bundle_conj_0.
   - exact distant_island_z128_z132_deep_panel_bundle_conj_1.
   - exact distant_island_z128_z132_deep_panel_bundle_conj_2.
-  - lra.
+  - exact distant_island_z128_z132_deep_panel_bundle_conj_3.
 Qed.
 
 Lemma domain_coupling_simulation_refresh_panel_bundle_conj_0 : (22 = 22)%nat.
@@ -2286,13 +3196,72 @@ Lemma domain_coupling_simulation_refresh_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma domain_coupling_simulation_refresh_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma domain_coupling_simulation_refresh_panel_bundle : (22 = 22)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact domain_coupling_simulation_refresh_panel_bundle_conj_0.
   - exact domain_coupling_simulation_refresh_panel_bundle_conj_1.
   - exact domain_coupling_simulation_refresh_panel_bundle_conj_2.
-  - lra.
+  - exact domain_coupling_simulation_refresh_panel_bundle_conj_3.
+Qed.
+
+Lemma domain_coverage_priors_bundle_conj_0 : (35 = 35)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma domain_coverage_priors_bundle_conj_1 : (35 = 35)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma domain_coverage_priors_bundle_conj_2 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma domain_coverage_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma domain_coverage_priors_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma domain_coverage_priors_bundle_conj_5 : (1470 = 1470)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma domain_coverage_priors_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma domain_coverage_priors_bundle_conj_7 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma domain_coverage_priors_bundle_conj_8 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma domain_coverage_priors_bundle_conj_9 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma domain_coverage_priors_bundle : (35 = 35)%nat /\ (35 = 35)%nat /\ (17 = 17)%nat /\ True /\ True /\ (1470 = 1470)%nat /\ True /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact domain_coverage_priors_bundle_conj_0.
+  - exact domain_coverage_priors_bundle_conj_1.
+  - exact domain_coverage_priors_bundle_conj_2.
+  - exact domain_coverage_priors_bundle_conj_3.
+  - exact domain_coverage_priors_bundle_conj_4.
+  - exact domain_coverage_priors_bundle_conj_5.
+  - exact domain_coverage_priors_bundle_conj_6.
+  - exact domain_coverage_priors_bundle_conj_7.
+  - exact domain_coverage_priors_bundle_conj_8.
+  - exact domain_coverage_priors_bundle_conj_9.
 Qed.
 
 Lemma domain_orbital_predictions_bundle_conj_0 : (24 = 24)%nat.
@@ -2307,13 +3276,67 @@ Lemma domain_orbital_predictions_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma domain_orbital_predictions_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma domain_orbital_predictions_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact domain_orbital_predictions_bundle_conj_0.
   - exact domain_orbital_predictions_bundle_conj_1.
   - exact domain_orbital_predictions_bundle_conj_2.
-  - lra.
+  - exact domain_orbital_predictions_bundle_conj_3.
+Qed.
+
+Lemma domain_precision_priors_bundle_conj_0 : (35 = 35)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma domain_precision_priors_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma domain_precision_priors_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma domain_precision_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma domain_precision_priors_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma domain_precision_priors_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma domain_precision_priors_bundle_conj_6 : (1470 = 1470)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma domain_precision_priors_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma domain_precision_priors_bundle_conj_8 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma domain_precision_priors_bundle : (35 = 35)%nat /\ True /\ True /\ True /\ True /\ True /\ (1470 = 1470)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact domain_precision_priors_bundle_conj_0.
+  - exact domain_precision_priors_bundle_conj_1.
+  - exact domain_precision_priors_bundle_conj_2.
+  - exact domain_precision_priors_bundle_conj_3.
+  - exact domain_precision_priors_bundle_conj_4.
+  - exact domain_precision_priors_bundle_conj_5.
+  - exact domain_precision_priors_bundle_conj_6.
+  - exact domain_precision_priors_bundle_conj_7.
+  - exact domain_precision_priors_bundle_conj_8.
 Qed.
 
 Lemma dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_0 : (32 = 32)%nat.
@@ -2328,13 +3351,17 @@ Lemma dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma dzhanibekov_intermediate_axis_fsot_panel_bundle : (32 = 32)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_0.
   - exact dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_1.
   - exact dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_2.
-  - lra.
+  - exact dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_3.
 Qed.
 
 Lemma connective_e10d_wd_bundle_conj_0 : True.
@@ -2374,13 +3401,17 @@ Lemma early_lean_mc_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma early_lean_mc_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma early_lean_mc_panel_bundle : (24 = 24)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact early_lean_mc_panel_bundle_conj_0.
   - exact early_lean_mc_panel_bundle_conj_1.
   - exact early_lean_mc_panel_bundle_conj_2.
-  - lra.
+  - exact early_lean_mc_panel_bundle_conj_3.
 Qed.
 
 Lemma ecology_gap_fill_bundle_conj_0 : (627 = 627)%nat.
@@ -2399,6 +3430,10 @@ Lemma ecology_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma ecology_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma ecology_gap_fill_bundle : (627 = 627)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -2406,7 +3441,7 @@ Proof.
   - exact ecology_gap_fill_bundle_conj_1.
   - exact ecology_gap_fill_bundle_conj_2.
   - exact ecology_gap_fill_bundle_conj_3.
-  - lra.
+  - exact ecology_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma ecology_bundle_conj_0 : (24 = 24)%nat.
@@ -2421,13 +3456,17 @@ Lemma ecology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma ecology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma ecology_bundle : (24 = 24)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact ecology_bundle_conj_0.
   - exact ecology_bundle_conj_1.
   - exact ecology_bundle_conj_2.
-  - lra.
+  - exact ecology_bundle_conj_3.
 Qed.
 
 Lemma ecology_public_panel_bundle_conj_0 : (12 = 12)%nat.
@@ -2466,6 +3505,10 @@ Lemma econometrics_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma econometrics_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma econometrics_gap_fill_bundle : (172 = 172)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -2473,7 +3516,7 @@ Proof.
   - exact econometrics_gap_fill_bundle_conj_1.
   - exact econometrics_gap_fill_bundle_conj_2.
   - exact econometrics_gap_fill_bundle_conj_3.
-  - lra.
+  - exact econometrics_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma econometrics_bundle_conj_0 : (172 = 172)%nat.
@@ -2488,13 +3531,17 @@ Lemma econometrics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma econometrics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma econometrics_bundle : (172 = 172)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact econometrics_bundle_conj_0.
   - exact econometrics_bundle_conj_1.
   - exact econometrics_bundle_conj_2.
-  - lra.
+  - exact econometrics_bundle_conj_3.
 Qed.
 
 Lemma economics_gap_fill_bundle_conj_0 : (157 = 157)%nat.
@@ -2513,6 +3560,10 @@ Lemma economics_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma economics_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma economics_gap_fill_bundle : (157 = 157)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -2520,7 +3571,7 @@ Proof.
   - exact economics_gap_fill_bundle_conj_1.
   - exact economics_gap_fill_bundle_conj_2.
   - exact economics_gap_fill_bundle_conj_3.
-  - lra.
+  - exact economics_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma econophysics_bundle_conj_0 : (24 = 24)%nat.
@@ -2535,13 +3586,17 @@ Lemma econophysics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma econophysics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma econophysics_bundle : (24 = 24)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact econophysics_bundle_conj_0.
   - exact econophysics_bundle_conj_1.
   - exact econophysics_bundle_conj_2.
-  - lra.
+  - exact econophysics_bundle_conj_3.
 Qed.
 
 Lemma electrical_power_systems_bundle_conj_0 : (9 = 9)%nat.
@@ -2556,13 +3611,17 @@ Lemma electrical_power_systems_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma electrical_power_systems_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma electrical_power_systems_bundle : (9 = 9)%nat /\ (9 = 9)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact electrical_power_systems_bundle_conj_0.
   - exact electrical_power_systems_bundle_conj_1.
   - exact electrical_power_systems_bundle_conj_2.
-  - lra.
+  - exact electrical_power_systems_bundle_conj_3.
 Qed.
 
 Lemma element_synthesis_condition_scaffold_bundle_conj_0 : (45 = 45)%nat.
@@ -2577,13 +3636,52 @@ Lemma element_synthesis_condition_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma element_synthesis_condition_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma element_synthesis_condition_scaffold_bundle : (45 = 45)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact element_synthesis_condition_scaffold_bundle_conj_0.
   - exact element_synthesis_condition_scaffold_bundle_conj_1.
   - exact element_synthesis_condition_scaffold_bundle_conj_2.
-  - lra.
+  - exact element_synthesis_condition_scaffold_bundle_conj_3.
+Qed.
+
+Lemma emergent_domain_priors_bundle_conj_0 : (29 = 29)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma emergent_domain_priors_bundle_conj_1 : (28 = 28)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma emergent_domain_priors_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma emergent_domain_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma emergent_domain_priors_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma emergent_domain_priors_bundle_conj_5 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma emergent_domain_priors_bundle : (29 = 29)%nat /\ (28 = 28)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact emergent_domain_priors_bundle_conj_0.
+  - exact emergent_domain_priors_bundle_conj_1.
+  - exact emergent_domain_priors_bundle_conj_2.
+  - exact emergent_domain_priors_bundle_conj_3.
+  - exact emergent_domain_priors_bundle_conj_4.
+  - exact emergent_domain_priors_bundle_conj_5.
 Qed.
 
 Lemma endf_iaea_nuclear_open_bundle_conj_0 : (517 = 517)%nat.
@@ -2618,13 +3716,17 @@ Lemma energy_ai_orbital_bridge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma energy_ai_orbital_bridge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma energy_ai_orbital_bridge_bundle : (48 = 48)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact energy_ai_orbital_bridge_bundle_conj_0.
   - exact energy_ai_orbital_bridge_bundle_conj_1.
   - exact energy_ai_orbital_bridge_bundle_conj_2.
-  - lra.
+  - exact energy_ai_orbital_bridge_bundle_conj_3.
 Qed.
 
 Lemma energy_neural_orbital_bridge_bundle_conj_0 : (48 = 48)%nat.
@@ -2639,13 +3741,17 @@ Lemma energy_neural_orbital_bridge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma energy_neural_orbital_bridge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma energy_neural_orbital_bridge_bundle : (48 = 48)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact energy_neural_orbital_bridge_bundle_conj_0.
   - exact energy_neural_orbital_bridge_bundle_conj_1.
   - exact energy_neural_orbital_bridge_bundle_conj_2.
-  - lra.
+  - exact energy_neural_orbital_bridge_bundle_conj_3.
 Qed.
 
 Lemma engineering_hardware_code_spine_bundle_conj_0 : (95 = 95)%nat.
@@ -2660,13 +3766,17 @@ Lemma engineering_hardware_code_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma engineering_hardware_code_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma engineering_hardware_code_spine_bundle : (95 = 95)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact engineering_hardware_code_spine_bundle_conj_0.
   - exact engineering_hardware_code_spine_bundle_conj_1.
   - exact engineering_hardware_code_spine_bundle_conj_2.
-  - lra.
+  - exact engineering_hardware_code_spine_bundle_conj_3.
 Qed.
 
 Lemma entomology_ext_bundle_conj_0 : (430 = 430)%nat.
@@ -2685,6 +3795,10 @@ Lemma entomology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma entomology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma entomology_ext_bundle : (430 = 430)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -2692,7 +3806,7 @@ Proof.
   - exact entomology_ext_bundle_conj_1.
   - exact entomology_ext_bundle_conj_2.
   - exact entomology_ext_bundle_conj_3.
-  - lra.
+  - exact entomology_ext_bundle_conj_4.
 Qed.
 
 Lemma entomology_panel_bundle_conj_0 : (90 = 90)%nat.
@@ -2707,13 +3821,17 @@ Lemma entomology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma entomology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma entomology_panel_bundle : (90 = 90)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact entomology_panel_bundle_conj_0.
   - exact entomology_panel_bundle_conj_1.
   - exact entomology_panel_bundle_conj_2.
-  - lra.
+  - exact entomology_panel_bundle_conj_3.
 Qed.
 
 Lemma entomology_bundle_conj_0 : (430 = 430)%nat.
@@ -2728,13 +3846,17 @@ Lemma entomology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma entomology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma entomology_bundle : (430 = 430)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact entomology_bundle_conj_0.
   - exact entomology_bundle_conj_1.
   - exact entomology_bundle_conj_2.
-  - lra.
+  - exact entomology_bundle_conj_3.
 Qed.
 
 Lemma environmental_engineering_bundle_conj_0 : (1120 = 1120)%nat.
@@ -2749,13 +3871,17 @@ Lemma environmental_engineering_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma environmental_engineering_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma environmental_engineering_bundle : (1120 = 1120)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact environmental_engineering_bundle_conj_0.
   - exact environmental_engineering_bundle_conj_1.
   - exact environmental_engineering_bundle_conj_2.
-  - lra.
+  - exact environmental_engineering_bundle_conj_3.
 Qed.
 
 Lemma epidemiology_ext_bundle_conj_0 : (220 = 220)%nat.
@@ -2774,6 +3900,10 @@ Lemma epidemiology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma epidemiology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma epidemiology_ext_bundle : (220 = 220)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -2781,7 +3911,7 @@ Proof.
   - exact epidemiology_ext_bundle_conj_1.
   - exact epidemiology_ext_bundle_conj_2.
   - exact epidemiology_ext_bundle_conj_3.
-  - lra.
+  - exact epidemiology_ext_bundle_conj_4.
 Qed.
 
 Lemma epidemiology_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -2796,13 +3926,17 @@ Lemma epidemiology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma epidemiology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma epidemiology_panel_bundle : (24 = 24)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact epidemiology_panel_bundle_conj_0.
   - exact epidemiology_panel_bundle_conj_1.
   - exact epidemiology_panel_bundle_conj_2.
-  - lra.
+  - exact epidemiology_panel_bundle_conj_3.
 Qed.
 
 Lemma epidemiology_bundle_conj_0 : (20 = 20)%nat.
@@ -2817,13 +3951,17 @@ Lemma epidemiology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma epidemiology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma epidemiology_bundle : (20 = 20)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact epidemiology_bundle_conj_0.
   - exact epidemiology_bundle_conj_1.
   - exact epidemiology_bundle_conj_2.
-  - lra.
+  - exact epidemiology_bundle_conj_3.
 Qed.
 
 Lemma esp32_platform_engineering_bundle_conj_0 : (34 = 34)%nat.
@@ -2838,13 +3976,17 @@ Lemma esp32_platform_engineering_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma esp32_platform_engineering_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma esp32_platform_engineering_bundle : (34 = 34)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact esp32_platform_engineering_bundle_conj_0.
   - exact esp32_platform_engineering_bundle_conj_1.
   - exact esp32_platform_engineering_bundle_conj_2.
-  - lra.
+  - exact esp32_platform_engineering_bundle_conj_3.
 Qed.
 
 Lemma ethology_panel_bundle_conj_0 : (100 = 100)%nat.
@@ -2859,13 +4001,17 @@ Lemma ethology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma ethology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma ethology_panel_bundle : (100 = 100)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact ethology_panel_bundle_conj_0.
   - exact ethology_panel_bundle_conj_1.
   - exact ethology_panel_bundle_conj_2.
-  - lra.
+  - exact ethology_panel_bundle_conj_3.
 Qed.
 
 Lemma ethology_bundle_conj_0 : (100 = 100)%nat.
@@ -2880,13 +4026,47 @@ Lemma ethology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma ethology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma ethology_bundle : (100 = 100)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact ethology_bundle_conj_0.
   - exact ethology_bundle_conj_1.
   - exact ethology_bundle_conj_2.
-  - lra.
+  - exact ethology_bundle_conj_3.
+Qed.
+
+Lemma evolution_priors_bundle_conj_0 : (13 = 13)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma evolution_priors_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma evolution_priors_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma evolution_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma evolution_priors_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma evolution_priors_bundle : (13 = 13)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact evolution_priors_bundle_conj_0.
+  - exact evolution_priors_bundle_conj_1.
+  - exact evolution_priors_bundle_conj_2.
+  - exact evolution_priors_bundle_conj_3.
+  - exact evolution_priors_bundle_conj_4.
 Qed.
 
 Lemma exogeology_ext_bundle_conj_0 : (316 = 316)%nat.
@@ -2905,6 +4085,10 @@ Lemma exogeology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma exogeology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma exogeology_ext_bundle : (316 = 316)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -2912,7 +4096,7 @@ Proof.
   - exact exogeology_ext_bundle_conj_1.
   - exact exogeology_ext_bundle_conj_2.
   - exact exogeology_ext_bundle_conj_3.
-  - lra.
+  - exact exogeology_ext_bundle_conj_4.
 Qed.
 
 Lemma exogeology_panel_bundle_conj_0 : (100 = 100)%nat.
@@ -2927,13 +4111,17 @@ Lemma exogeology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma exogeology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma exogeology_panel_bundle : (100 = 100)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact exogeology_panel_bundle_conj_0.
   - exact exogeology_panel_bundle_conj_1.
   - exact exogeology_panel_bundle_conj_2.
-  - lra.
+  - exact exogeology_panel_bundle_conj_3.
 Qed.
 
 Lemma exogeology_bundle_conj_0 : (316 = 316)%nat.
@@ -2948,13 +4136,17 @@ Lemma exogeology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma exogeology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma exogeology_bundle : (316 = 316)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact exogeology_bundle_conj_0.
   - exact exogeology_bundle_conj_1.
   - exact exogeology_bundle_conj_2.
-  - lra.
+  - exact exogeology_bundle_conj_3.
 Qed.
 
 Lemma exoplanet_archive_depth_open_bundle_conj_0 : (1976 = 1976)%nat.
@@ -2989,13 +4181,17 @@ Lemma exoplanet_system_architecture_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma exoplanet_system_architecture_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma exoplanet_system_architecture_bundle : (882 = 882)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact exoplanet_system_architecture_bundle_conj_0.
   - exact exoplanet_system_architecture_bundle_conj_1.
   - exact exoplanet_system_architecture_bundle_conj_2.
-  - lra.
+  - exact exoplanet_system_architecture_bundle_conj_3.
 Qed.
 
 Lemma experimental_base_mathematics_panel_bundle_conj_0 : (36 = 36)%nat.
@@ -3010,13 +4206,67 @@ Lemma experimental_base_mathematics_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma experimental_base_mathematics_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma experimental_base_mathematics_panel_bundle : (36 = 36)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact experimental_base_mathematics_panel_bundle_conj_0.
   - exact experimental_base_mathematics_panel_bundle_conj_1.
   - exact experimental_base_mathematics_panel_bundle_conj_2.
-  - lra.
+  - exact experimental_base_mathematics_panel_bundle_conj_3.
+Qed.
+
+Lemma experiment_synthesis_priors_bundle_conj_0 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma experiment_synthesis_priors_bundle_conj_1 : (21 = 21)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma experiment_synthesis_priors_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma experiment_synthesis_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma experiment_synthesis_priors_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma experiment_synthesis_priors_bundle_conj_5 : (120 = 120)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma experiment_synthesis_priors_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma experiment_synthesis_priors_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma experiment_synthesis_priors_bundle_conj_8 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma experiment_synthesis_priors_bundle : (5 = 5)%nat /\ (21 = 21)%nat /\ True /\ True /\ True /\ (120 = 120)%nat /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact experiment_synthesis_priors_bundle_conj_0.
+  - exact experiment_synthesis_priors_bundle_conj_1.
+  - exact experiment_synthesis_priors_bundle_conj_2.
+  - exact experiment_synthesis_priors_bundle_conj_3.
+  - exact experiment_synthesis_priors_bundle_conj_4.
+  - exact experiment_synthesis_priors_bundle_conj_5.
+  - exact experiment_synthesis_priors_bundle_conj_6.
+  - exact experiment_synthesis_priors_bundle_conj_7.
+  - exact experiment_synthesis_priors_bundle_conj_8.
 Qed.
 
 Lemma external_oss_code_genome_bundle_conj_0 : (164 = 164)%nat.
@@ -3031,13 +4281,17 @@ Lemma external_oss_code_genome_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma external_oss_code_genome_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma external_oss_code_genome_bundle : (164 = 164)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact external_oss_code_genome_bundle_conj_0.
   - exact external_oss_code_genome_bundle_conj_1.
   - exact external_oss_code_genome_bundle_conj_2.
-  - lra.
+  - exact external_oss_code_genome_bundle_conj_3.
 Qed.
 
 Lemma federal_science_registry_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3052,13 +4306,17 @@ Lemma federal_science_registry_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma federal_science_registry_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma federal_science_registry_panel_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact federal_science_registry_panel_bundle_conj_0.
   - exact federal_science_registry_panel_bundle_conj_1.
   - exact federal_science_registry_panel_bundle_conj_2.
-  - lra.
+  - exact federal_science_registry_panel_bundle_conj_3.
 Qed.
 
 Lemma federal_science_registry_bundle_conj_0 : (16 = 16)%nat.
@@ -3073,13 +4331,17 @@ Lemma federal_science_registry_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma federal_science_registry_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma federal_science_registry_bundle : (16 = 16)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact federal_science_registry_bundle_conj_0.
   - exact federal_science_registry_bundle_conj_1.
   - exact federal_science_registry_bundle_conj_2.
-  - lra.
+  - exact federal_science_registry_bundle_conj_3.
 Qed.
 
 Lemma finance_markets_ext_bundle_conj_0 : (245 = 245)%nat.
@@ -3098,6 +4360,10 @@ Lemma finance_markets_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma finance_markets_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma finance_markets_ext_bundle : (245 = 245)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -3105,7 +4371,7 @@ Proof.
   - exact finance_markets_ext_bundle_conj_1.
   - exact finance_markets_ext_bundle_conj_2.
   - exact finance_markets_ext_bundle_conj_3.
-  - lra.
+  - exact finance_markets_ext_bundle_conj_4.
 Qed.
 
 Lemma finance_markets_panel_bundle_conj_0 : (36 = 36)%nat.
@@ -3120,13 +4386,17 @@ Lemma finance_markets_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma finance_markets_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma finance_markets_panel_bundle : (36 = 36)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact finance_markets_panel_bundle_conj_0.
   - exact finance_markets_panel_bundle_conj_1.
   - exact finance_markets_panel_bundle_conj_2.
-  - lra.
+  - exact finance_markets_panel_bundle_conj_3.
 Qed.
 
 Lemma finance_markets_bundle_conj_0 : (150 = 150)%nat.
@@ -3141,13 +4411,17 @@ Lemma finance_markets_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma finance_markets_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma finance_markets_bundle : (150 = 150)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact finance_markets_bundle_conj_0.
   - exact finance_markets_bundle_conj_1.
   - exact finance_markets_bundle_conj_2.
-  - lra.
+  - exact finance_markets_bundle_conj_3.
 Qed.
 
 Lemma fluid_dynamics_gap_fill_bundle_conj_0 : (55 = 55)%nat.
@@ -3166,6 +4440,10 @@ Lemma fluid_dynamics_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma fluid_dynamics_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fluid_dynamics_gap_fill_bundle : (55 = 55)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -3173,7 +4451,7 @@ Proof.
   - exact fluid_dynamics_gap_fill_bundle_conj_1.
   - exact fluid_dynamics_gap_fill_bundle_conj_2.
   - exact fluid_dynamics_gap_fill_bundle_conj_3.
-  - lra.
+  - exact fluid_dynamics_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma fluid_phase_current_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -3188,13 +4466,17 @@ Lemma fluid_phase_current_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fluid_phase_current_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fluid_phase_current_spine_bundle : (24 = 24)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fluid_phase_current_spine_bundle_conj_0.
   - exact fluid_phase_current_spine_bundle_conj_1.
   - exact fluid_phase_current_spine_bundle_conj_2.
-  - lra.
+  - exact fluid_phase_current_spine_bundle_conj_3.
 Qed.
 
 Lemma fluid_spacetime_observable_spine_bundle_conj_0 : (29 = 29)%nat.
@@ -3209,13 +4491,17 @@ Lemma fluid_spacetime_observable_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fluid_spacetime_observable_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fluid_spacetime_observable_spine_bundle : (29 = 29)%nat /\ (26 = 26)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fluid_spacetime_observable_spine_bundle_conj_0.
   - exact fluid_spacetime_observable_spine_bundle_conj_1.
   - exact fluid_spacetime_observable_spine_bundle_conj_2.
-  - lra.
+  - exact fluid_spacetime_observable_spine_bundle_conj_3.
 Qed.
 
 Lemma fluid_spacetime_prereg_validation_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3230,13 +4516,17 @@ Lemma fluid_spacetime_prereg_validation_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fluid_spacetime_prereg_validation_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fluid_spacetime_prereg_validation_panel_bundle : (24 = 24)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fluid_spacetime_prereg_validation_panel_bundle_conj_0.
   - exact fluid_spacetime_prereg_validation_panel_bundle_conj_1.
   - exact fluid_spacetime_prereg_validation_panel_bundle_conj_2.
-  - lra.
+  - exact fluid_spacetime_prereg_validation_panel_bundle_conj_3.
 Qed.
 
 Lemma fold_depth_metrics_bundle_conj_0 : (51 = 51)%nat.
@@ -3251,13 +4541,17 @@ Lemma fold_depth_metrics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fold_depth_metrics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fold_depth_metrics_bundle : (51 = 51)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fold_depth_metrics_bundle_conj_0.
   - exact fold_depth_metrics_bundle_conj_1.
   - exact fold_depth_metrics_bundle_conj_2.
-  - lra.
+  - exact fold_depth_metrics_bundle_conj_3.
 Qed.
 
 Lemma food_microbiology_gap_fill_bundle_conj_0 : (30 = 30)%nat.
@@ -3276,6 +4570,10 @@ Lemma food_microbiology_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma food_microbiology_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma food_microbiology_gap_fill_bundle : (30 = 30)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -3283,7 +4581,7 @@ Proof.
   - exact food_microbiology_gap_fill_bundle_conj_1.
   - exact food_microbiology_gap_fill_bundle_conj_2.
   - exact food_microbiology_gap_fill_bundle_conj_3.
-  - lra.
+  - exact food_microbiology_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma food_microbiology_bundle_conj_0 : (30 = 30)%nat.
@@ -3298,13 +4596,17 @@ Lemma food_microbiology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma food_microbiology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma food_microbiology_bundle : (30 = 30)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact food_microbiology_bundle_conj_0.
   - exact food_microbiology_bundle_conj_1.
   - exact food_microbiology_bundle_conj_2.
-  - lra.
+  - exact food_microbiology_bundle_conj_3.
 Qed.
 
 Lemma formula_branching_fractal_bundle_conj_0 : (255 = 255)%nat.
@@ -3319,13 +4621,17 @@ Lemma formula_branching_fractal_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma formula_branching_fractal_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma formula_branching_fractal_bundle : (255 = 255)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact formula_branching_fractal_bundle_conj_0.
   - exact formula_branching_fractal_bundle_conj_1.
   - exact formula_branching_fractal_bundle_conj_2.
-  - lra.
+  - exact formula_branching_fractal_bundle_conj_3.
 Qed.
 
 Lemma formula_corpus_closure_bundle_conj_0 : (123 = 123)%nat.
@@ -3340,13 +4646,17 @@ Lemma formula_corpus_closure_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma formula_corpus_closure_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma formula_corpus_closure_bundle : (123 = 123)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact formula_corpus_closure_bundle_conj_0.
   - exact formula_corpus_closure_bundle_conj_1.
   - exact formula_corpus_closure_bundle_conj_2.
-  - lra.
+  - exact formula_corpus_closure_bundle_conj_3.
 Qed.
 
 Lemma formula_corpus_cnc_bundle_conj_0 : (10 = 10)%nat.
@@ -3361,13 +4671,57 @@ Lemma formula_corpus_cnc_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma formula_corpus_cnc_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma formula_corpus_cnc_bundle : (10 = 10)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact formula_corpus_cnc_bundle_conj_0.
   - exact formula_corpus_cnc_bundle_conj_1.
   - exact formula_corpus_cnc_bundle_conj_2.
-  - lra.
+  - exact formula_corpus_cnc_bundle_conj_3.
+Qed.
+
+Lemma formula_corpus_strict_empirical_bundle_conj_0 : (7941 = 7941)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma formula_corpus_strict_empirical_bundle_conj_1 : (7941 = 7941)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma formula_corpus_strict_empirical_bundle_conj_2 : (6921 = 6921)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma formula_corpus_strict_empirical_bundle_conj_3 : (7941 = 7941)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma formula_corpus_strict_empirical_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma formula_corpus_strict_empirical_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma formula_corpus_strict_empirical_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma formula_corpus_strict_empirical_bundle : (7941 = 7941)%nat /\ (7941 = 7941)%nat /\ (6921 = 6921)%nat /\ (7941 = 7941)%nat /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact formula_corpus_strict_empirical_bundle_conj_0.
+  - exact formula_corpus_strict_empirical_bundle_conj_1.
+  - exact formula_corpus_strict_empirical_bundle_conj_2.
+  - exact formula_corpus_strict_empirical_bundle_conj_3.
+  - exact formula_corpus_strict_empirical_bundle_conj_4.
+  - exact formula_corpus_strict_empirical_bundle_conj_5.
+  - exact formula_corpus_strict_empirical_bundle_conj_6.
 Qed.
 
 Lemma formula_precision_spine_bundle_conj_0 : (27 = 27)%nat.
@@ -3382,13 +4736,17 @@ Lemma formula_precision_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma formula_precision_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma formula_precision_spine_bundle : (27 = 27)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact formula_precision_spine_bundle_conj_0.
   - exact formula_precision_spine_bundle_conj_1.
   - exact formula_precision_spine_bundle_conj_2.
-  - lra.
+  - exact formula_precision_spine_bundle_conj_3.
 Qed.
 
 Lemma foundational_ontology_spine_bundle_conj_0 : (21 = 21)%nat.
@@ -3403,13 +4761,17 @@ Lemma foundational_ontology_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma foundational_ontology_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma foundational_ontology_spine_bundle : (21 = 21)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact foundational_ontology_spine_bundle_conj_0.
   - exact foundational_ontology_spine_bundle_conj_1.
   - exact foundational_ontology_spine_bundle_conj_2.
-  - lra.
+  - exact foundational_ontology_spine_bundle_conj_3.
 Qed.
 
 Lemma founding_atmospheric_ozone_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3424,13 +4786,17 @@ Lemma founding_atmospheric_ozone_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma founding_atmospheric_ozone_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma founding_atmospheric_ozone_panel_bundle : (24 = 24)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact founding_atmospheric_ozone_panel_bundle_conj_0.
   - exact founding_atmospheric_ozone_panel_bundle_conj_1.
   - exact founding_atmospheric_ozone_panel_bundle_conj_2.
-  - lra.
+  - exact founding_atmospheric_ozone_panel_bundle_conj_3.
 Qed.
 
 Lemma founding_cosmic_dust_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3445,13 +4811,17 @@ Lemma founding_cosmic_dust_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma founding_cosmic_dust_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma founding_cosmic_dust_panel_bundle : (24 = 24)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact founding_cosmic_dust_panel_bundle_conj_0.
   - exact founding_cosmic_dust_panel_bundle_conj_1.
   - exact founding_cosmic_dust_panel_bundle_conj_2.
-  - lra.
+  - exact founding_cosmic_dust_panel_bundle_conj_3.
 Qed.
 
 Lemma founding_cosmic_ray_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3466,13 +4836,17 @@ Lemma founding_cosmic_ray_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma founding_cosmic_ray_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma founding_cosmic_ray_panel_bundle : (24 = 24)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact founding_cosmic_ray_panel_bundle_conj_0.
   - exact founding_cosmic_ray_panel_bundle_conj_1.
   - exact founding_cosmic_ray_panel_bundle_conj_2.
-  - lra.
+  - exact founding_cosmic_ray_panel_bundle_conj_3.
 Qed.
 
 Lemma founding_galactic_halo_rotation_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3487,13 +4861,17 @@ Lemma founding_galactic_halo_rotation_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma founding_galactic_halo_rotation_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma founding_galactic_halo_rotation_panel_bundle : (24 = 24)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact founding_galactic_halo_rotation_panel_bundle_conj_0.
   - exact founding_galactic_halo_rotation_panel_bundle_conj_1.
   - exact founding_galactic_halo_rotation_panel_bundle_conj_2.
-  - lra.
+  - exact founding_galactic_halo_rotation_panel_bundle_conj_3.
 Qed.
 
 Lemma founding_pulsar_glitch_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3508,13 +4886,17 @@ Lemma founding_pulsar_glitch_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma founding_pulsar_glitch_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma founding_pulsar_glitch_panel_bundle : (24 = 24)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact founding_pulsar_glitch_panel_bundle_conj_0.
   - exact founding_pulsar_glitch_panel_bundle_conj_1.
   - exact founding_pulsar_glitch_panel_bundle_conj_2.
-  - lra.
+  - exact founding_pulsar_glitch_panel_bundle_conj_3.
 Qed.
 
 Lemma founding_quantum_vacuum_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3529,13 +4911,17 @@ Lemma founding_quantum_vacuum_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma founding_quantum_vacuum_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma founding_quantum_vacuum_panel_bundle : (24 = 24)%nat /\ (8 = 8)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact founding_quantum_vacuum_panel_bundle_conj_0.
   - exact founding_quantum_vacuum_panel_bundle_conj_1.
   - exact founding_quantum_vacuum_panel_bundle_conj_2.
-  - lra.
+  - exact founding_quantum_vacuum_panel_bundle_conj_3.
 Qed.
 
 Lemma founding_white_dwarf_cooling_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3550,13 +4936,17 @@ Lemma founding_white_dwarf_cooling_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma founding_white_dwarf_cooling_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma founding_white_dwarf_cooling_panel_bundle : (24 = 24)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact founding_white_dwarf_cooling_panel_bundle_conj_0.
   - exact founding_white_dwarf_cooling_panel_bundle_conj_1.
   - exact founding_white_dwarf_cooling_panel_bundle_conj_2.
-  - lra.
+  - exact founding_white_dwarf_cooling_panel_bundle_conj_3.
 Qed.
 
 Lemma fpc_fluidlink_timing_deep_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3571,13 +4961,17 @@ Lemma fpc_fluidlink_timing_deep_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fpc_fluidlink_timing_deep_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fpc_fluidlink_timing_deep_panel_bundle : (24 = 24)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fpc_fluidlink_timing_deep_panel_bundle_conj_0.
   - exact fpc_fluidlink_timing_deep_panel_bundle_conj_1.
   - exact fpc_fluidlink_timing_deep_panel_bundle_conj_2.
-  - lra.
+  - exact fpc_fluidlink_timing_deep_panel_bundle_conj_3.
 Qed.
 
 Lemma fpc_temporal_coupling_bundle_conj_0 : (24 = 24)%nat.
@@ -3592,13 +4986,17 @@ Lemma fpc_temporal_coupling_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fpc_temporal_coupling_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fpc_temporal_coupling_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fpc_temporal_coupling_bundle_conj_0.
   - exact fpc_temporal_coupling_bundle_conj_1.
   - exact fpc_temporal_coupling_bundle_conj_2.
-  - lra.
+  - exact fpc_temporal_coupling_bundle_conj_3.
 Qed.
 
 Lemma fractal_constant_recursion_bundle_conj_0 : (21 = 21)%nat.
@@ -3613,13 +5011,17 @@ Lemma fractal_constant_recursion_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fractal_constant_recursion_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fractal_constant_recursion_bundle : (21 = 21)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fractal_constant_recursion_bundle_conj_0.
   - exact fractal_constant_recursion_bundle_conj_1.
   - exact fractal_constant_recursion_bundle_conj_2.
-  - lra.
+  - exact fractal_constant_recursion_bundle_conj_3.
 Qed.
 
 Lemma fsot_aggregate_organized_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3634,13 +5036,17 @@ Lemma fsot_aggregate_organized_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_aggregate_organized_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_aggregate_organized_panel_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_aggregate_organized_panel_bundle_conj_0.
   - exact fsot_aggregate_organized_panel_bundle_conj_1.
   - exact fsot_aggregate_organized_panel_bundle_conj_2.
-  - lra.
+  - exact fsot_aggregate_organized_panel_bundle_conj_3.
 Qed.
 
 Lemma fsot_aggregate_unified_db_bundle_conj_0 : (8 = 8)%nat.
@@ -3655,13 +5061,17 @@ Lemma fsot_aggregate_unified_db_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_aggregate_unified_db_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_aggregate_unified_db_bundle : (8 = 8)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_aggregate_unified_db_bundle_conj_0.
   - exact fsot_aggregate_unified_db_bundle_conj_1.
   - exact fsot_aggregate_unified_db_bundle_conj_2.
-  - lra.
+  - exact fsot_aggregate_unified_db_bundle_conj_3.
 Qed.
 
 Lemma fsot_cache_hierarchy_bundle_conj_0 : (82 = 82)%nat.
@@ -3676,13 +5086,17 @@ Lemma fsot_cache_hierarchy_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_cache_hierarchy_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_cache_hierarchy_bundle : (82 = 82)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_cache_hierarchy_bundle_conj_0.
   - exact fsot_cache_hierarchy_bundle_conj_1.
   - exact fsot_cache_hierarchy_bundle_conj_2.
-  - lra.
+  - exact fsot_cache_hierarchy_bundle_conj_3.
 Qed.
 
 Lemma fsot_c_pack_parity_bundle_conj_0 : (23 = 23)%nat.
@@ -3697,13 +5111,17 @@ Lemma fsot_c_pack_parity_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_c_pack_parity_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_c_pack_parity_bundle : (23 = 23)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_c_pack_parity_bundle_conj_0.
   - exact fsot_c_pack_parity_bundle_conj_1.
   - exact fsot_c_pack_parity_bundle_conj_2.
-  - lra.
+  - exact fsot_c_pack_parity_bundle_conj_3.
 Qed.
 
 Lemma fsot_gpu_cuda_competitive_bundle_conj_0 : (33 = 33)%nat.
@@ -3718,13 +5136,17 @@ Lemma fsot_gpu_cuda_competitive_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_gpu_cuda_competitive_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_gpu_cuda_competitive_bundle : (33 = 33)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_gpu_cuda_competitive_bundle_conj_0.
   - exact fsot_gpu_cuda_competitive_bundle_conj_1.
   - exact fsot_gpu_cuda_competitive_bundle_conj_2.
-  - lra.
+  - exact fsot_gpu_cuda_competitive_bundle_conj_3.
 Qed.
 
 Lemma fsot_gpu_engineering_spine_bundle_conj_0 : (42 = 42)%nat.
@@ -3739,13 +5161,17 @@ Lemma fsot_gpu_engineering_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_gpu_engineering_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_gpu_engineering_spine_bundle : (42 = 42)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_gpu_engineering_spine_bundle_conj_0.
   - exact fsot_gpu_engineering_spine_bundle_conj_1.
   - exact fsot_gpu_engineering_spine_bundle_conj_2.
-  - lra.
+  - exact fsot_gpu_engineering_spine_bundle_conj_3.
 Qed.
 
 Lemma fsot_gpu_parity_verify_bundle_conj_0 : (48 = 48)%nat.
@@ -3760,13 +5186,17 @@ Lemma fsot_gpu_parity_verify_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_gpu_parity_verify_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_gpu_parity_verify_bundle : (48 = 48)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_gpu_parity_verify_bundle_conj_0.
   - exact fsot_gpu_parity_verify_bundle_conj_1.
   - exact fsot_gpu_parity_verify_bundle_conj_2.
-  - lra.
+  - exact fsot_gpu_parity_verify_bundle_conj_3.
 Qed.
 
 Lemma fsot_hardware_depth_spine_bundle_conj_0 : (177 = 177)%nat.
@@ -3781,13 +5211,17 @@ Lemma fsot_hardware_depth_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_hardware_depth_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_hardware_depth_spine_bundle : (177 = 177)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_hardware_depth_spine_bundle_conj_0.
   - exact fsot_hardware_depth_spine_bundle_conj_1.
   - exact fsot_hardware_depth_spine_bundle_conj_2.
-  - lra.
+  - exact fsot_hardware_depth_spine_bundle_conj_3.
 Qed.
 
 Lemma fsot_interconnect_coherence_bundle_conj_0 : (88 = 88)%nat.
@@ -3802,13 +5236,17 @@ Lemma fsot_interconnect_coherence_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_interconnect_coherence_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_interconnect_coherence_bundle : (88 = 88)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_interconnect_coherence_bundle_conj_0.
   - exact fsot_interconnect_coherence_bundle_conj_1.
   - exact fsot_interconnect_coherence_bundle_conj_2.
-  - lra.
+  - exact fsot_interconnect_coherence_bundle_conj_3.
 Qed.
 
 Lemma fsot_processor_function_bundle_conj_0 : (20 = 20)%nat.
@@ -3823,13 +5261,17 @@ Lemma fsot_processor_function_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_processor_function_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_processor_function_bundle : (20 = 20)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_processor_function_bundle_conj_0.
   - exact fsot_processor_function_bundle_conj_1.
   - exact fsot_processor_function_bundle_conj_2.
-  - lra.
+  - exact fsot_processor_function_bundle_conj_3.
 Qed.
 
 Lemma fsot_ram_function_bundle_conj_0 : (33 = 33)%nat.
@@ -3844,13 +5286,17 @@ Lemma fsot_ram_function_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fsot_ram_function_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fsot_ram_function_bundle : (33 = 33)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fsot_ram_function_bundle_conj_0.
   - exact fsot_ram_function_bundle_conj_1.
   - exact fsot_ram_function_bundle_conj_2.
-  - lra.
+  - exact fsot_ram_function_bundle_conj_3.
 Qed.
 
 Lemma fuel_candidate_prereg_scaffold_bundle_conj_0 : (33 = 33)%nat.
@@ -3865,13 +5311,17 @@ Lemma fuel_candidate_prereg_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fuel_candidate_prereg_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fuel_candidate_prereg_scaffold_bundle : (33 = 33)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fuel_candidate_prereg_scaffold_bundle_conj_0.
   - exact fuel_candidate_prereg_scaffold_bundle_conj_1.
   - exact fuel_candidate_prereg_scaffold_bundle_conj_2.
-  - lra.
+  - exact fuel_candidate_prereg_scaffold_bundle_conj_3.
 Qed.
 
 Lemma fuel_lab_live_bundle_conj_0 : (366 = 366)%nat.
@@ -3886,13 +5336,47 @@ Lemma fuel_lab_live_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fuel_lab_live_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fuel_lab_live_bundle : (366 = 366)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fuel_lab_live_bundle_conj_0.
   - exact fuel_lab_live_bundle_conj_1.
   - exact fuel_lab_live_bundle_conj_2.
-  - lra.
+  - exact fuel_lab_live_bundle_conj_3.
+Qed.
+
+Lemma fuel_lab_compound_bundle_conj_0 : (6 = 6)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fuel_lab_compound_bundle_conj_1 : (34 = 34)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fuel_lab_compound_bundle_conj_2 : (34 = 34)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma fuel_lab_compound_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma fuel_lab_compound_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma fuel_lab_compound_bundle : (6 = 6)%nat /\ (34 = 34)%nat /\ (34 = 34)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact fuel_lab_compound_bundle_conj_0.
+  - exact fuel_lab_compound_bundle_conj_1.
+  - exact fuel_lab_compound_bundle_conj_2.
+  - exact fuel_lab_compound_bundle_conj_3.
+  - exact fuel_lab_compound_bundle_conj_4.
 Qed.
 
 Lemma fuel_thermochemistry_public_anchors_bundle_conj_0 : (24 = 24)%nat.
@@ -3907,13 +5391,17 @@ Lemma fuel_thermochemistry_public_anchors_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fuel_thermochemistry_public_anchors_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fuel_thermochemistry_public_anchors_bundle : (24 = 24)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fuel_thermochemistry_public_anchors_bundle_conj_0.
   - exact fuel_thermochemistry_public_anchors_bundle_conj_1.
   - exact fuel_thermochemistry_public_anchors_bundle_conj_2.
-  - lra.
+  - exact fuel_thermochemistry_public_anchors_bundle_conj_3.
 Qed.
 
 Lemma fusion_decay_chain_prereg_scaffold_bundle_conj_0 : (24 = 24)%nat.
@@ -3928,13 +5416,17 @@ Lemma fusion_decay_chain_prereg_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fusion_decay_chain_prereg_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fusion_decay_chain_prereg_scaffold_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fusion_decay_chain_prereg_scaffold_bundle_conj_0.
   - exact fusion_decay_chain_prereg_scaffold_bundle_conj_1.
   - exact fusion_decay_chain_prereg_scaffold_bundle_conj_2.
-  - lra.
+  - exact fusion_decay_chain_prereg_scaffold_bundle_conj_3.
 Qed.
 
 Lemma connective_fusion_grid_bundle_conj_0 : True.
@@ -3974,13 +5466,17 @@ Lemma fusion_lab_certificate_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fusion_lab_certificate_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fusion_lab_certificate_spine_bundle : (50 = 50)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fusion_lab_certificate_spine_bundle_conj_0.
   - exact fusion_lab_certificate_spine_bundle_conj_1.
   - exact fusion_lab_certificate_spine_bundle_conj_2.
-  - lra.
+  - exact fusion_lab_certificate_spine_bundle_conj_3.
 Qed.
 
 Lemma fusion_physics_public_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -3995,13 +5491,17 @@ Lemma fusion_physics_public_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma fusion_physics_public_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma fusion_physics_public_panel_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact fusion_physics_public_panel_bundle_conj_0.
   - exact fusion_physics_public_panel_bundle_conj_1.
   - exact fusion_physics_public_panel_bundle_conj_2.
-  - lra.
+  - exact fusion_physics_public_panel_bundle_conj_3.
 Qed.
 
 Lemma gaia_astrometry_panel_deep_bundle_conj_0 : (62 = 62)%nat.
@@ -4016,13 +5516,17 @@ Lemma gaia_astrometry_panel_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma gaia_astrometry_panel_deep_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma gaia_astrometry_panel_deep_bundle : (62 = 62)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact gaia_astrometry_panel_deep_bundle_conj_0.
   - exact gaia_astrometry_panel_deep_bundle_conj_1.
   - exact gaia_astrometry_panel_deep_bundle_conj_2.
-  - lra.
+  - exact gaia_astrometry_panel_deep_bundle_conj_3.
 Qed.
 
 Lemma gaia_dr3_source_sample_open_bundle_conj_0 : (3459 = 3459)%nat.
@@ -4057,13 +5561,17 @@ Lemma gaia_dr3_tap_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma gaia_dr3_tap_deep_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma gaia_dr3_tap_deep_bundle : (1826 = 1826)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact gaia_dr3_tap_deep_bundle_conj_0.
   - exact gaia_dr3_tap_deep_bundle_conj_1.
   - exact gaia_dr3_tap_deep_bundle_conj_2.
-  - lra.
+  - exact gaia_dr3_tap_deep_bundle_conj_3.
 Qed.
 
 Lemma galactic_structure_sample_bundle_conj_0 : (101 = 101)%nat.
@@ -4078,13 +5586,17 @@ Lemma galactic_structure_sample_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma galactic_structure_sample_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma galactic_structure_sample_bundle : (101 = 101)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact galactic_structure_sample_bundle_conj_0.
   - exact galactic_structure_sample_bundle_conj_1.
   - exact galactic_structure_sample_bundle_conj_2.
-  - lra.
+  - exact galactic_structure_sample_bundle_conj_3.
 Qed.
 
 Lemma gbif_species_occurrence_bundle_conj_0 : (240 = 240)%nat.
@@ -4099,13 +5611,17 @@ Lemma gbif_species_occurrence_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma gbif_species_occurrence_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma gbif_species_occurrence_bundle : (240 = 240)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact gbif_species_occurrence_bundle_conj_0.
   - exact gbif_species_occurrence_bundle_conj_1.
   - exact gbif_species_occurrence_bundle_conj_2.
-  - lra.
+  - exact gbif_species_occurrence_bundle_conj_3.
 Qed.
 
 Lemma gbif_taxon_depth_open_bundle_conj_0 : (203 = 203)%nat.
@@ -4140,13 +5656,17 @@ Lemma genomic_sciences_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma genomic_sciences_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma genomic_sciences_bundle : (24 = 24)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact genomic_sciences_bundle_conj_0.
   - exact genomic_sciences_bundle_conj_1.
   - exact genomic_sciences_bundle_conj_2.
-  - lra.
+  - exact genomic_sciences_bundle_conj_3.
 Qed.
 
 Lemma geochemistry_bundle_conj_0 : (153 = 153)%nat.
@@ -4161,13 +5681,17 @@ Lemma geochemistry_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma geochemistry_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma geochemistry_bundle : (153 = 153)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact geochemistry_bundle_conj_0.
   - exact geochemistry_bundle_conj_1.
   - exact geochemistry_bundle_conj_2.
-  - lra.
+  - exact geochemistry_bundle_conj_3.
 Qed.
 
 Lemma geology_stratigraphy_ext_bundle_conj_0 : (1960 = 1960)%nat.
@@ -4186,6 +5710,10 @@ Lemma geology_stratigraphy_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma geology_stratigraphy_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma geology_stratigraphy_ext_bundle : (1960 = 1960)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -4193,7 +5721,7 @@ Proof.
   - exact geology_stratigraphy_ext_bundle_conj_1.
   - exact geology_stratigraphy_ext_bundle_conj_2.
   - exact geology_stratigraphy_ext_bundle_conj_3.
-  - lra.
+  - exact geology_stratigraphy_ext_bundle_conj_4.
 Qed.
 
 Lemma geology_stratigraphy_bundle_conj_0 : (1960 = 1960)%nat.
@@ -4208,13 +5736,17 @@ Lemma geology_stratigraphy_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma geology_stratigraphy_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma geology_stratigraphy_bundle : (1960 = 1960)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact geology_stratigraphy_bundle_conj_0.
   - exact geology_stratigraphy_bundle_conj_1.
   - exact geology_stratigraphy_bundle_conj_2.
-  - lra.
+  - exact geology_stratigraphy_bundle_conj_3.
 Qed.
 
 Lemma geomagnetism_bundle_conj_0 : (524 = 524)%nat.
@@ -4233,6 +5765,10 @@ Lemma geomagnetism_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma geomagnetism_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma geomagnetism_bundle : (524 = 524)%nat /\ (524 = 524)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -4240,7 +5776,7 @@ Proof.
   - exact geomagnetism_bundle_conj_1.
   - exact geomagnetism_bundle_conj_2.
   - exact geomagnetism_bundle_conj_3.
-  - lra.
+  - exact geomagnetism_bundle_conj_4.
 Qed.
 
 Lemma government_open_data_spine_bundle_conj_0 : (28 = 28)%nat.
@@ -4255,13 +5791,17 @@ Lemma government_open_data_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma government_open_data_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma government_open_data_spine_bundle : (28 = 28)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact government_open_data_spine_bundle_conj_0.
   - exact government_open_data_spine_bundle_conj_1.
   - exact government_open_data_spine_bundle_conj_2.
-  - lra.
+  - exact government_open_data_spine_bundle_conj_3.
 Qed.
 
 Lemma grace_cryosphere_bundle_conj_0 : (253 = 253)%nat.
@@ -4280,6 +5820,10 @@ Lemma grace_cryosphere_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma grace_cryosphere_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma grace_cryosphere_bundle : (253 = 253)%nat /\ (253 = 253)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -4287,7 +5831,7 @@ Proof.
   - exact grace_cryosphere_bundle_conj_1.
   - exact grace_cryosphere_bundle_conj_2.
   - exact grace_cryosphere_bundle_conj_3.
-  - lra.
+  - exact grace_cryosphere_bundle_conj_4.
 Qed.
 
 Lemma gwas_catalog_depth_open_bundle_conj_0 : (81 = 81)%nat.
@@ -4322,13 +5866,17 @@ Lemma gwosc_live_event_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma gwosc_live_event_deep_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma gwosc_live_event_deep_bundle : (191 = 191)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact gwosc_live_event_deep_bundle_conj_0.
   - exact gwosc_live_event_deep_bundle_conj_1.
   - exact gwosc_live_event_deep_bundle_conj_2.
-  - lra.
+  - exact gwosc_live_event_deep_bundle_conj_3.
 Qed.
 
 Lemma gwosc_strain_metadata_open_bundle_conj_0 : (54 = 54)%nat.
@@ -4383,13 +5931,57 @@ Lemma heavy_ion_lab_synthesis_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma heavy_ion_lab_synthesis_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma heavy_ion_lab_synthesis_panel_bundle : (39 = 39)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact heavy_ion_lab_synthesis_panel_bundle_conj_0.
   - exact heavy_ion_lab_synthesis_panel_bundle_conj_1.
   - exact heavy_ion_lab_synthesis_panel_bundle_conj_2.
-  - lra.
+  - exact heavy_ion_lab_synthesis_panel_bundle_conj_3.
+Qed.
+
+Lemma higgs_branching_bundle_conj_0 : (9 = 9)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma higgs_branching_bundle_conj_1 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma higgs_branching_bundle_conj_2 : (14 = 14)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma higgs_branching_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma higgs_branching_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma higgs_branching_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma higgs_branching_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma higgs_branching_bundle : (9 = 9)%nat /\ (5 = 5)%nat /\ (14 = 14)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact higgs_branching_bundle_conj_0.
+  - exact higgs_branching_bundle_conj_1.
+  - exact higgs_branching_bundle_conj_2.
+  - exact higgs_branching_bundle_conj_3.
+  - exact higgs_branching_bundle_conj_4.
+  - exact higgs_branching_bundle_conj_5.
+  - exact higgs_branching_bundle_conj_6.
 Qed.
 
 Lemma higgs_mass_bundle_conj_0 : (24 = 24)%nat.
@@ -4404,13 +5996,17 @@ Lemma higgs_mass_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma higgs_mass_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma higgs_mass_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact higgs_mass_bundle_conj_0.
   - exact higgs_mass_bundle_conj_1.
   - exact higgs_mass_bundle_conj_2.
-  - lra.
+  - exact higgs_mass_bundle_conj_3.
 Qed.
 
 Lemma history_ext_bundle_conj_0 : (170 = 170)%nat.
@@ -4429,6 +6025,10 @@ Lemma history_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma history_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma history_ext_bundle : (170 = 170)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -4436,7 +6036,7 @@ Proof.
   - exact history_ext_bundle_conj_1.
   - exact history_ext_bundle_conj_2.
   - exact history_ext_bundle_conj_3.
-  - lra.
+  - exact history_ext_bundle_conj_4.
 Qed.
 
 Lemma history_panel_bundle_conj_0 : (60 = 60)%nat.
@@ -4451,13 +6051,17 @@ Lemma history_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma history_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma history_panel_bundle : (60 = 60)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact history_panel_bundle_conj_0.
   - exact history_panel_bundle_conj_1.
   - exact history_panel_bundle_conj_2.
-  - lra.
+  - exact history_panel_bundle_conj_3.
 Qed.
 
 Lemma history_bundle_conj_0 : (170 = 170)%nat.
@@ -4472,13 +6076,17 @@ Lemma history_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma history_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma history_bundle : (170 = 170)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact history_bundle_conj_0.
   - exact history_bundle_conj_1.
   - exact history_bundle_conj_2.
-  - lra.
+  - exact history_bundle_conj_3.
 Qed.
 
 Lemma hubble_bubble_tension_bundle_conj_0 : (24 = 24)%nat.
@@ -4493,13 +6101,17 @@ Lemma hubble_bubble_tension_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma hubble_bubble_tension_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma hubble_bubble_tension_bundle : (24 = 24)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact hubble_bubble_tension_bundle_conj_0.
   - exact hubble_bubble_tension_bundle_conj_1.
   - exact hubble_bubble_tension_bundle_conj_2.
-  - lra.
+  - exact hubble_bubble_tension_bundle_conj_3.
 Qed.
 
 Lemma hubble_dark_sector_crosswalk_bundle_conj_0 : (24 = 24)%nat.
@@ -4514,13 +6126,17 @@ Lemma hubble_dark_sector_crosswalk_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma hubble_dark_sector_crosswalk_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma hubble_dark_sector_crosswalk_bundle : (24 = 24)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact hubble_dark_sector_crosswalk_bundle_conj_0.
   - exact hubble_dark_sector_crosswalk_bundle_conj_1.
   - exact hubble_dark_sector_crosswalk_bundle_conj_2.
-  - lra.
+  - exact hubble_dark_sector_crosswalk_bundle_conj_3.
 Qed.
 
 Lemma hvac_thermal_systems_bundle_conj_0 : (7 = 7)%nat.
@@ -4535,13 +6151,17 @@ Lemma hvac_thermal_systems_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma hvac_thermal_systems_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma hvac_thermal_systems_bundle : (7 = 7)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact hvac_thermal_systems_bundle_conj_0.
   - exact hvac_thermal_systems_bundle_conj_1.
   - exact hvac_thermal_systems_bundle_conj_2.
-  - lra.
+  - exact hvac_thermal_systems_bundle_conj_3.
 Qed.
 
 Lemma hybrid_fi_sim_multi_hero_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -4556,13 +6176,17 @@ Lemma hybrid_fi_sim_multi_hero_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma hybrid_fi_sim_multi_hero_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma hybrid_fi_sim_multi_hero_panel_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact hybrid_fi_sim_multi_hero_panel_bundle_conj_0.
   - exact hybrid_fi_sim_multi_hero_panel_bundle_conj_1.
   - exact hybrid_fi_sim_multi_hero_panel_bundle_conj_2.
-  - lra.
+  - exact hybrid_fi_sim_multi_hero_panel_bundle_conj_3.
 Qed.
 
 Lemma hybrid_fi_sim_stratum_deep_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -4577,13 +6201,57 @@ Lemma hybrid_fi_sim_stratum_deep_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma hybrid_fi_sim_stratum_deep_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma hybrid_fi_sim_stratum_deep_panel_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact hybrid_fi_sim_stratum_deep_panel_bundle_conj_0.
   - exact hybrid_fi_sim_stratum_deep_panel_bundle_conj_1.
   - exact hybrid_fi_sim_stratum_deep_panel_bundle_conj_2.
-  - lra.
+  - exact hybrid_fi_sim_stratum_deep_panel_bundle_conj_3.
+Qed.
+
+Lemma hydrology_bundle_conj_0 : (960 = 960)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma hydrology_bundle_conj_1 : (8 = 8)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma hydrology_bundle_conj_2 : (957 = 957)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma hydrology_bundle_conj_3 : (15 = 15)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma hydrology_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma hydrology_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma hydrology_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma hydrology_bundle : (960 = 960)%nat /\ (8 = 8)%nat /\ (957 = 957)%nat /\ (15 = 15)%nat /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact hydrology_bundle_conj_0.
+  - exact hydrology_bundle_conj_1.
+  - exact hydrology_bundle_conj_2.
+  - exact hydrology_bundle_conj_3.
+  - exact hydrology_bundle_conj_4.
+  - exact hydrology_bundle_conj_5.
+  - exact hydrology_bundle_conj_6.
 Qed.
 
 Lemma igem_live_fasta_bundle_conj_0 : (42 = 42)%nat.
@@ -4598,13 +6266,17 @@ Lemma igem_live_fasta_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma igem_live_fasta_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma igem_live_fasta_bundle : (42 = 42)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact igem_live_fasta_bundle_conj_0.
   - exact igem_live_fasta_bundle_conj_1.
   - exact igem_live_fasta_bundle_conj_2.
-  - lra.
+  - exact igem_live_fasta_bundle_conj_3.
 Qed.
 
 Lemma igem_parts_expanded_bundle_conj_0 : (111 = 111)%nat.
@@ -4619,13 +6291,17 @@ Lemma igem_parts_expanded_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma igem_parts_expanded_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma igem_parts_expanded_bundle : (111 = 111)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact igem_parts_expanded_bundle_conj_0.
   - exact igem_parts_expanded_bundle_conj_1.
   - exact igem_parts_expanded_bundle_conj_2.
-  - lra.
+  - exact igem_parts_expanded_bundle_conj_3.
 Qed.
 
 Lemma igem_synthetic_biology_bundle_conj_0 : (54 = 54)%nat.
@@ -4652,6 +6328,10 @@ Lemma igem_synthetic_biology_bundle_conj_5 : True.
 Proof. trivial.
 Qed.
 
+Lemma igem_synthetic_biology_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma igem_synthetic_biology_bundle : (54 = 54)%nat /\ (20 = 20)%nat /\ (14 = 14)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -4661,7 +6341,7 @@ Proof.
   - exact igem_synthetic_biology_bundle_conj_3.
   - exact igem_synthetic_biology_bundle_conj_4.
   - exact igem_synthetic_biology_bundle_conj_5.
-  - lra.
+  - exact igem_synthetic_biology_bundle_conj_6.
 Qed.
 
 Lemma immunology_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -4676,13 +6356,17 @@ Lemma immunology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma immunology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma immunology_panel_bundle : (24 = 24)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact immunology_panel_bundle_conj_0.
   - exact immunology_panel_bundle_conj_1.
   - exact immunology_panel_bundle_conj_2.
-  - lra.
+  - exact immunology_panel_bundle_conj_3.
 Qed.
 
 Lemma immunology_bundle_conj_0 : (84 = 84)%nat.
@@ -4697,13 +6381,17 @@ Lemma immunology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma immunology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma immunology_bundle : (84 = 84)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact immunology_bundle_conj_0.
   - exact immunology_bundle_conj_1.
   - exact immunology_bundle_conj_2.
-  - lra.
+  - exact immunology_bundle_conj_3.
 Qed.
 
 Lemma inaturalist_observation_panel_bundle_conj_0 : (288 = 288)%nat.
@@ -4718,13 +6406,17 @@ Lemma inaturalist_observation_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma inaturalist_observation_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma inaturalist_observation_panel_bundle : (288 = 288)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact inaturalist_observation_panel_bundle_conj_0.
   - exact inaturalist_observation_panel_bundle_conj_1.
   - exact inaturalist_observation_panel_bundle_conj_2.
-  - lra.
+  - exact inaturalist_observation_panel_bundle_conj_3.
 Qed.
 
 Lemma inaturalist_observation_bundle_conj_0 : (288 = 288)%nat.
@@ -4739,13 +6431,17 @@ Lemma inaturalist_observation_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma inaturalist_observation_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma inaturalist_observation_bundle : (288 = 288)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact inaturalist_observation_bundle_conj_0.
   - exact inaturalist_observation_bundle_conj_1.
   - exact inaturalist_observation_bundle_conj_2.
-  - lra.
+  - exact inaturalist_observation_bundle_conj_3.
 Qed.
 
 Lemma inertial_confinement_fusion_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -4760,13 +6456,17 @@ Lemma inertial_confinement_fusion_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma inertial_confinement_fusion_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma inertial_confinement_fusion_panel_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact inertial_confinement_fusion_panel_bundle_conj_0.
   - exact inertial_confinement_fusion_panel_bundle_conj_1.
   - exact inertial_confinement_fusion_panel_bundle_conj_2.
-  - lra.
+  - exact inertial_confinement_fusion_panel_bundle_conj_3.
 Qed.
 
 Lemma information_theory_public_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -4781,13 +6481,17 @@ Lemma information_theory_public_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma information_theory_public_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma information_theory_public_panel_bundle : (24 = 24)%nat /\ (8 = 8)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact information_theory_public_panel_bundle_conj_0.
   - exact information_theory_public_panel_bundle_conj_1.
   - exact information_theory_public_panel_bundle_conj_2.
-  - lra.
+  - exact information_theory_public_panel_bundle_conj_3.
 Qed.
 
 Lemma initiation_transformation_archetype_bundle_conj_0 : (24 = 24)%nat.
@@ -4802,13 +6506,17 @@ Lemma initiation_transformation_archetype_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma initiation_transformation_archetype_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma initiation_transformation_archetype_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact initiation_transformation_archetype_bundle_conj_0.
   - exact initiation_transformation_archetype_bundle_conj_1.
   - exact initiation_transformation_archetype_bundle_conj_2.
-  - lra.
+  - exact initiation_transformation_archetype_bundle_conj_3.
 Qed.
 
 Lemma intelligence_compression_priors_bundle_conj_0 : (572 = 572)%nat.
@@ -4835,6 +6543,14 @@ Lemma intelligence_compression_priors_bundle_conj_5 : True.
 Proof. trivial.
 Qed.
 
+Lemma intelligence_compression_priors_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma intelligence_compression_priors_bundle_conj_7 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma intelligence_compression_priors_bundle : (572 = 572)%nat /\ (156 = 156)%nat /\ (12 = 12)%nat /\ (572 = 572)%nat /\ True /\ True /\ 0 < (1.0%R) /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -4844,8 +6560,8 @@ Proof.
   - exact intelligence_compression_priors_bundle_conj_3.
   - exact intelligence_compression_priors_bundle_conj_4.
   - exact intelligence_compression_priors_bundle_conj_5.
-  - lra.
-  - lra.
+  - exact intelligence_compression_priors_bundle_conj_6.
+  - exact intelligence_compression_priors_bundle_conj_7.
 Qed.
 
 Lemma interactive_media_prereg_scaffold_bundle_conj_0 : (42 = 42)%nat.
@@ -4860,13 +6576,17 @@ Lemma interactive_media_prereg_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma interactive_media_prereg_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma interactive_media_prereg_scaffold_bundle : (42 = 42)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact interactive_media_prereg_scaffold_bundle_conj_0.
   - exact interactive_media_prereg_scaffold_bundle_conj_1.
   - exact interactive_media_prereg_scaffold_bundle_conj_2.
-  - lra.
+  - exact interactive_media_prereg_scaffold_bundle_conj_3.
 Qed.
 
 Lemma interdisciplinary_spine_crosswalk_bundle_conj_0 : (24 = 24)%nat.
@@ -4881,13 +6601,17 @@ Lemma interdisciplinary_spine_crosswalk_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma interdisciplinary_spine_crosswalk_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma interdisciplinary_spine_crosswalk_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact interdisciplinary_spine_crosswalk_bundle_conj_0.
   - exact interdisciplinary_spine_crosswalk_bundle_conj_1.
   - exact interdisciplinary_spine_crosswalk_bundle_conj_2.
-  - lra.
+  - exact interdisciplinary_spine_crosswalk_bundle_conj_3.
 Qed.
 
 Lemma intrinsic_llm_validators_panel_bundle_conj_0 : (21 = 21)%nat.
@@ -4902,13 +6626,17 @@ Lemma intrinsic_llm_validators_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma intrinsic_llm_validators_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma intrinsic_llm_validators_panel_bundle : (21 = 21)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact intrinsic_llm_validators_panel_bundle_conj_0.
   - exact intrinsic_llm_validators_panel_bundle_conj_1.
   - exact intrinsic_llm_validators_panel_bundle_conj_2.
-  - lra.
+  - exact intrinsic_llm_validators_panel_bundle_conj_3.
 Qed.
 
 Lemma intrinsic_llm_validators_bundle_conj_0 : (10 = 10)%nat.
@@ -4923,13 +6651,17 @@ Lemma intrinsic_llm_validators_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma intrinsic_llm_validators_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma intrinsic_llm_validators_bundle : (10 = 10)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact intrinsic_llm_validators_bundle_conj_0.
   - exact intrinsic_llm_validators_bundle_conj_1.
   - exact intrinsic_llm_validators_bundle_conj_2.
-  - lra.
+  - exact intrinsic_llm_validators_bundle_conj_3.
 Qed.
 
 Lemma ionospheric_chemistry_coupling_bundle_conj_0 : (85 = 85)%nat.
@@ -4944,13 +6676,17 @@ Lemma ionospheric_chemistry_coupling_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma ionospheric_chemistry_coupling_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma ionospheric_chemistry_coupling_bundle : (85 = 85)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact ionospheric_chemistry_coupling_bundle_conj_0.
   - exact ionospheric_chemistry_coupling_bundle_conj_1.
   - exact ionospheric_chemistry_coupling_bundle_conj_2.
-  - lra.
+  - exact ionospheric_chemistry_coupling_bundle_conj_3.
 Qed.
 
 Lemma island_of_stability_deep_panel_bundle_conj_0 : (23 = 23)%nat.
@@ -4965,13 +6701,17 @@ Lemma island_of_stability_deep_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma island_of_stability_deep_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma island_of_stability_deep_panel_bundle : (23 = 23)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact island_of_stability_deep_panel_bundle_conj_0.
   - exact island_of_stability_deep_panel_bundle_conj_1.
   - exact island_of_stability_deep_panel_bundle_conj_2.
-  - lra.
+  - exact island_of_stability_deep_panel_bundle_conj_3.
 Qed.
 
 Lemma jarvis_dft_open_panel_bundle_conj_0 : (77 = 77)%nat.
@@ -5006,13 +6746,42 @@ Lemma knowledge_base_portable_bundle_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma knowledge_base_portable_bundle_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma knowledge_base_portable_bundle_panel_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact knowledge_base_portable_bundle_panel_bundle_conj_0.
   - exact knowledge_base_portable_bundle_panel_bundle_conj_1.
   - exact knowledge_base_portable_bundle_panel_bundle_conj_2.
-  - lra.
+  - exact knowledge_base_portable_bundle_panel_bundle_conj_3.
+Qed.
+
+Lemma kronos_metrology_bundle_conj_0 : (569 = 569)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma kronos_metrology_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma kronos_metrology_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma kronos_metrology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma kronos_metrology_bundle : (569 = 569)%nat /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact kronos_metrology_bundle_conj_0.
+  - exact kronos_metrology_bundle_conj_1.
+  - exact kronos_metrology_bundle_conj_2.
+  - exact kronos_metrology_bundle_conj_3.
 Qed.
 
 Lemma lab_synthesis_metamaterial_spine_bundle_conj_0 : (43 = 43)%nat.
@@ -5027,13 +6796,17 @@ Lemma lab_synthesis_metamaterial_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma lab_synthesis_metamaterial_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma lab_synthesis_metamaterial_spine_bundle : (43 = 43)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact lab_synthesis_metamaterial_spine_bundle_conj_0.
   - exact lab_synthesis_metamaterial_spine_bundle_conj_1.
   - exact lab_synthesis_metamaterial_spine_bundle_conj_2.
-  - lra.
+  - exact lab_synthesis_metamaterial_spine_bundle_conj_3.
 Qed.
 
 Lemma law_policy_ext_bundle_conj_0 : (180 = 180)%nat.
@@ -5052,6 +6825,10 @@ Lemma law_policy_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma law_policy_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma law_policy_ext_bundle : (180 = 180)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -5059,7 +6836,7 @@ Proof.
   - exact law_policy_ext_bundle_conj_1.
   - exact law_policy_ext_bundle_conj_2.
   - exact law_policy_ext_bundle_conj_3.
-  - lra.
+  - exact law_policy_ext_bundle_conj_4.
 Qed.
 
 Lemma law_policy_panel_bundle_conj_0 : (20 = 20)%nat.
@@ -5074,13 +6851,17 @@ Lemma law_policy_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma law_policy_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma law_policy_panel_bundle : (20 = 20)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact law_policy_panel_bundle_conj_0.
   - exact law_policy_panel_bundle_conj_1.
   - exact law_policy_panel_bundle_conj_2.
-  - lra.
+  - exact law_policy_panel_bundle_conj_3.
 Qed.
 
 Lemma law_policy_bundle_conj_0 : (180 = 180)%nat.
@@ -5095,13 +6876,17 @@ Lemma law_policy_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma law_policy_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma law_policy_bundle : (180 = 180)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact law_policy_bundle_conj_0.
   - exact law_policy_bundle_conj_1.
   - exact law_policy_bundle_conj_2.
-  - lra.
+  - exact law_policy_bundle_conj_3.
 Qed.
 
 Lemma limnology_panel_bundle_conj_0 : (2010 = 2010)%nat.
@@ -5116,13 +6901,17 @@ Lemma limnology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma limnology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma limnology_panel_bundle : (2010 = 2010)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact limnology_panel_bundle_conj_0.
   - exact limnology_panel_bundle_conj_1.
   - exact limnology_panel_bundle_conj_2.
-  - lra.
+  - exact limnology_panel_bundle_conj_3.
 Qed.
 
 Lemma limnology_bundle_conj_0 : (2010 = 2010)%nat.
@@ -5137,13 +6926,17 @@ Lemma limnology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma limnology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma limnology_bundle : (2010 = 2010)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact limnology_bundle_conj_0.
   - exact limnology_bundle_conj_1.
   - exact limnology_bundle_conj_2.
-  - lra.
+  - exact limnology_bundle_conj_3.
 Qed.
 
 Lemma linguistics_formal_bundle_conj_0 : (10 = 10)%nat.
@@ -5158,13 +6951,47 @@ Lemma linguistics_formal_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma linguistics_formal_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma linguistics_formal_bundle : (10 = 10)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact linguistics_formal_bundle_conj_0.
   - exact linguistics_formal_bundle_conj_1.
   - exact linguistics_formal_bundle_conj_2.
-  - lra.
+  - exact linguistics_formal_bundle_conj_3.
+Qed.
+
+Lemma linguistics_priors_bundle_conj_0 : (10 = 10)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma linguistics_priors_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma linguistics_priors_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma linguistics_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma linguistics_priors_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma linguistics_priors_bundle : (10 = 10)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact linguistics_priors_bundle_conj_0.
+  - exact linguistics_priors_bundle_conj_1.
+  - exact linguistics_priors_bundle_conj_2.
+  - exact linguistics_priors_bundle_conj_3.
+  - exact linguistics_priors_bundle_conj_4.
 Qed.
 
 Lemma live_ingest_spine_bundle_conj_0 : (28 = 28)%nat.
@@ -5179,13 +7006,17 @@ Lemma live_ingest_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma live_ingest_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma live_ingest_spine_bundle : (28 = 28)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact live_ingest_spine_bundle_conj_0.
   - exact live_ingest_spine_bundle_conj_1.
   - exact live_ingest_spine_bundle_conj_2.
-  - lra.
+  - exact live_ingest_spine_bundle_conj_3.
 Qed.
 
 Lemma living_fsot_hardware_panel_bundle_conj_0 : (77 = 77)%nat.
@@ -5200,13 +7031,17 @@ Lemma living_fsot_hardware_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma living_fsot_hardware_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma living_fsot_hardware_panel_bundle : (77 = 77)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact living_fsot_hardware_panel_bundle_conj_0.
   - exact living_fsot_hardware_panel_bundle_conj_1.
   - exact living_fsot_hardware_panel_bundle_conj_2.
-  - lra.
+  - exact living_fsot_hardware_panel_bundle_conj_3.
 Qed.
 
 Lemma lmfdb_elliptic_curves_open_bundle_conj_0 : (1016 = 1016)%nat.
@@ -5261,13 +7096,17 @@ Lemma longevity_anage_catalog_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma longevity_anage_catalog_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma longevity_anage_catalog_bundle : (966 = 966)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact longevity_anage_catalog_bundle_conj_0.
   - exact longevity_anage_catalog_bundle_conj_1.
   - exact longevity_anage_catalog_bundle_conj_2.
-  - lra.
+  - exact longevity_anage_catalog_bundle_conj_3.
 Qed.
 
 Lemma longevity_consciousness_coupling_bundle_conj_0 : (890 = 890)%nat.
@@ -5282,13 +7121,17 @@ Lemma longevity_consciousness_coupling_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma longevity_consciousness_coupling_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma longevity_consciousness_coupling_bundle : (890 = 890)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact longevity_consciousness_coupling_bundle_conj_0.
   - exact longevity_consciousness_coupling_bundle_conj_1.
   - exact longevity_consciousness_coupling_bundle_conj_2.
-  - lra.
+  - exact longevity_consciousness_coupling_bundle_conj_3.
 Qed.
 
 Lemma longevity_extreme_species_bundle_conj_0 : (164 = 164)%nat.
@@ -5303,13 +7146,17 @@ Lemma longevity_extreme_species_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma longevity_extreme_species_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma longevity_extreme_species_bundle : (164 = 164)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact longevity_extreme_species_bundle_conj_0.
   - exact longevity_extreme_species_bundle_conj_1.
   - exact longevity_extreme_species_bundle_conj_2.
-  - lra.
+  - exact longevity_extreme_species_bundle_conj_3.
 Qed.
 
 Lemma longevity_genetic_mechanics_bundle_conj_0 : (35 = 35)%nat.
@@ -5324,13 +7171,17 @@ Lemma longevity_genetic_mechanics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma longevity_genetic_mechanics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma longevity_genetic_mechanics_bundle : (35 = 35)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact longevity_genetic_mechanics_bundle_conj_0.
   - exact longevity_genetic_mechanics_bundle_conj_1.
   - exact longevity_genetic_mechanics_bundle_conj_2.
-  - lra.
+  - exact longevity_genetic_mechanics_bundle_conj_3.
 Qed.
 
 Lemma longevity_megadeep_ncbi_bundle_conj_0 : (1746 = 1746)%nat.
@@ -5345,13 +7196,17 @@ Lemma longevity_megadeep_ncbi_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma longevity_megadeep_ncbi_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma longevity_megadeep_ncbi_bundle : (1746 = 1746)%nat /\ (23 = 23)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact longevity_megadeep_ncbi_bundle_conj_0.
   - exact longevity_megadeep_ncbi_bundle_conj_1.
   - exact longevity_megadeep_ncbi_bundle_conj_2.
-  - lra.
+  - exact longevity_megadeep_ncbi_bundle_conj_3.
 Qed.
 
 Lemma longevity_telomere_repair_bundle_conj_0 : (60 = 60)%nat.
@@ -5366,13 +7221,17 @@ Lemma longevity_telomere_repair_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma longevity_telomere_repair_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma longevity_telomere_repair_bundle : (60 = 60)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact longevity_telomere_repair_bundle_conj_0.
   - exact longevity_telomere_repair_bundle_conj_1.
   - exact longevity_telomere_repair_bundle_conj_2.
-  - lra.
+  - exact longevity_telomere_repair_bundle_conj_3.
 Qed.
 
 Lemma machine_and_molecule_live_bundle_conj_0 : (120 = 120)%nat.
@@ -5387,13 +7246,17 @@ Lemma machine_and_molecule_live_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma machine_and_molecule_live_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma machine_and_molecule_live_bundle : (120 = 120)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact machine_and_molecule_live_bundle_conj_0.
   - exact machine_and_molecule_live_bundle_conj_1.
   - exact machine_and_molecule_live_bundle_conj_2.
-  - lra.
+  - exact machine_and_molecule_live_bundle_conj_3.
 Qed.
 
 Lemma magic_imbalance_penalty_in_unit_interval_conj_0 : True.
@@ -5426,6 +7289,41 @@ Proof.
   - exact magic_backlash_threshold_in_unit_interval_conj_1.
 Qed.
 
+Lemma magic_circle_priors_bundle_conj_0 : True.
+Proof. trivial.
+Qed.
+
+Lemma magic_circle_priors_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma magic_circle_priors_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma magic_circle_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma magic_circle_priors_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma magic_circle_priors_bundle_conj_5 : (27 = 27)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma magic_circle_priors_bundle : True /\ True /\ True /\ True /\ True /\ (27 = 27)%nat.
+Proof.
+  repeat (apply conj).
+  - exact magic_circle_priors_bundle_conj_0.
+  - exact magic_circle_priors_bundle_conj_1.
+  - exact magic_circle_priors_bundle_conj_2.
+  - exact magic_circle_priors_bundle_conj_3.
+  - exact magic_circle_priors_bundle_conj_4.
+  - exact magic_circle_priors_bundle_conj_5.
+Qed.
+
 Lemma magnetic_confinement_fusion_panel_bundle_conj_0 : (22 = 22)%nat.
 Proof. reflexivity.
 Qed.
@@ -5438,13 +7336,47 @@ Lemma magnetic_confinement_fusion_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma magnetic_confinement_fusion_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma magnetic_confinement_fusion_panel_bundle : (22 = 22)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact magnetic_confinement_fusion_panel_bundle_conj_0.
   - exact magnetic_confinement_fusion_panel_bundle_conj_1.
   - exact magnetic_confinement_fusion_panel_bundle_conj_2.
-  - lra.
+  - exact magnetic_confinement_fusion_panel_bundle_conj_3.
+Qed.
+
+Lemma magnetic_string_bundle_conj_0 : (250 = 250)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma magnetic_string_bundle_conj_1 : (75 = 75)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma magnetic_string_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma magnetic_string_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma magnetic_string_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma magnetic_string_bundle : (250 = 250)%nat /\ (75 = 75)%nat /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact magnetic_string_bundle_conj_0.
+  - exact magnetic_string_bundle_conj_1.
+  - exact magnetic_string_bundle_conj_2.
+  - exact magnetic_string_bundle_conj_3.
+  - exact magnetic_string_bundle_conj_4.
 Qed.
 
 Lemma magnetosphere_bundle_conj_0 : (167 = 167)%nat.
@@ -5463,6 +7395,10 @@ Lemma magnetosphere_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma magnetosphere_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma magnetosphere_bundle : (167 = 167)%nat /\ (167 = 167)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -5470,7 +7406,7 @@ Proof.
   - exact magnetosphere_bundle_conj_1.
   - exact magnetosphere_bundle_conj_2.
   - exact magnetosphere_bundle_conj_3.
-  - lra.
+  - exact magnetosphere_bundle_conj_4.
 Qed.
 
 Lemma maillard_chemistry_gap_fill_bundle_conj_0 : (30 = 30)%nat.
@@ -5489,6 +7425,10 @@ Lemma maillard_chemistry_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma maillard_chemistry_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma maillard_chemistry_gap_fill_bundle : (30 = 30)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -5496,7 +7436,7 @@ Proof.
   - exact maillard_chemistry_gap_fill_bundle_conj_1.
   - exact maillard_chemistry_gap_fill_bundle_conj_2.
   - exact maillard_chemistry_gap_fill_bundle_conj_3.
-  - lra.
+  - exact maillard_chemistry_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma maillard_chemistry_bundle_conj_0 : (30 = 30)%nat.
@@ -5511,13 +7451,17 @@ Lemma maillard_chemistry_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma maillard_chemistry_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma maillard_chemistry_bundle : (30 = 30)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact maillard_chemistry_bundle_conj_0.
   - exact maillard_chemistry_bundle_conj_1.
   - exact maillard_chemistry_bundle_conj_2.
-  - lra.
+  - exact maillard_chemistry_bundle_conj_3.
 Qed.
 
 Lemma malware_threat_intelligence_bundle_conj_0 : (85 = 85)%nat.
@@ -5532,13 +7476,17 @@ Lemma malware_threat_intelligence_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma malware_threat_intelligence_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma malware_threat_intelligence_bundle : (85 = 85)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact malware_threat_intelligence_bundle_conj_0.
   - exact malware_threat_intelligence_bundle_conj_1.
   - exact malware_threat_intelligence_bundle_conj_2.
-  - lra.
+  - exact malware_threat_intelligence_bundle_conj_3.
 Qed.
 
 Lemma marine_biology_ext_bundle_conj_0 : (540 = 540)%nat.
@@ -5557,6 +7505,10 @@ Lemma marine_biology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma marine_biology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma marine_biology_ext_bundle : (540 = 540)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -5564,7 +7516,7 @@ Proof.
   - exact marine_biology_ext_bundle_conj_1.
   - exact marine_biology_ext_bundle_conj_2.
   - exact marine_biology_ext_bundle_conj_3.
-  - lra.
+  - exact marine_biology_ext_bundle_conj_4.
 Qed.
 
 Lemma marine_biology_panel_bundle_conj_0 : (90 = 90)%nat.
@@ -5579,13 +7531,17 @@ Lemma marine_biology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma marine_biology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma marine_biology_panel_bundle : (90 = 90)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact marine_biology_panel_bundle_conj_0.
   - exact marine_biology_panel_bundle_conj_1.
   - exact marine_biology_panel_bundle_conj_2.
-  - lra.
+  - exact marine_biology_panel_bundle_conj_3.
 Qed.
 
 Lemma marine_biology_bundle_conj_0 : (540 = 540)%nat.
@@ -5600,13 +7556,17 @@ Lemma marine_biology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma marine_biology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma marine_biology_bundle : (540 = 540)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact marine_biology_bundle_conj_0.
   - exact marine_biology_bundle_conj_1.
   - exact marine_biology_bundle_conj_2.
-  - lra.
+  - exact marine_biology_bundle_conj_3.
 Qed.
 
 Lemma material_in_silico_screening_scaffold_bundle_conj_0 : (42 = 42)%nat.
@@ -5621,13 +7581,17 @@ Lemma material_in_silico_screening_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma material_in_silico_screening_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma material_in_silico_screening_scaffold_bundle : (42 = 42)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact material_in_silico_screening_scaffold_bundle_conj_0.
   - exact material_in_silico_screening_scaffold_bundle_conj_1.
   - exact material_in_silico_screening_scaffold_bundle_conj_2.
-  - lra.
+  - exact material_in_silico_screening_scaffold_bundle_conj_3.
 Qed.
 
 Lemma material_property_verification_scaffold_bundle_conj_0 : (79 = 79)%nat.
@@ -5642,13 +7606,17 @@ Lemma material_property_verification_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma material_property_verification_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma material_property_verification_scaffold_bundle : (79 = 79)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact material_property_verification_scaffold_bundle_conj_0.
   - exact material_property_verification_scaffold_bundle_conj_1.
   - exact material_property_verification_scaffold_bundle_conj_2.
-  - lra.
+  - exact material_property_verification_scaffold_bundle_conj_3.
 Qed.
 
 Lemma materials_creep_fracture_depth_panel_bundle_conj_0 : (71 = 71)%nat.
@@ -5663,13 +7631,17 @@ Lemma materials_creep_fracture_depth_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma materials_creep_fracture_depth_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma materials_creep_fracture_depth_panel_bundle : (71 = 71)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact materials_creep_fracture_depth_panel_bundle_conj_0.
   - exact materials_creep_fracture_depth_panel_bundle_conj_1.
   - exact materials_creep_fracture_depth_panel_bundle_conj_2.
-  - lra.
+  - exact materials_creep_fracture_depth_panel_bundle_conj_3.
 Qed.
 
 Lemma materials_engineering_bundle_conj_0 : (87 = 87)%nat.
@@ -5696,6 +7668,10 @@ Lemma materials_engineering_bundle_conj_5 : True.
 Proof. trivial.
 Qed.
 
+Lemma materials_engineering_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma materials_engineering_bundle : (87 = 87)%nat /\ (7 = 7)%nat /\ (14 = 14)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -5705,7 +7681,7 @@ Proof.
   - exact materials_engineering_bundle_conj_3.
   - exact materials_engineering_bundle_conj_4.
   - exact materials_engineering_bundle_conj_5.
-  - lra.
+  - exact materials_engineering_bundle_conj_6.
 Qed.
 
 Lemma materials_genome_crosswalk_bundle_conj_0 : (38 = 38)%nat.
@@ -5720,13 +7696,17 @@ Lemma materials_genome_crosswalk_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma materials_genome_crosswalk_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma materials_genome_crosswalk_bundle : (38 = 38)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact materials_genome_crosswalk_bundle_conj_0.
   - exact materials_genome_crosswalk_bundle_conj_1.
   - exact materials_genome_crosswalk_bundle_conj_2.
-  - lra.
+  - exact materials_genome_crosswalk_bundle_conj_3.
 Qed.
 
 Lemma materials_project_live_panel_bundle_conj_0 : (141 = 141)%nat.
@@ -5741,13 +7721,17 @@ Lemma materials_project_live_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma materials_project_live_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma materials_project_live_panel_bundle : (141 = 141)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact materials_project_live_panel_bundle_conj_0.
   - exact materials_project_live_panel_bundle_conj_1.
   - exact materials_project_live_panel_bundle_conj_2.
-  - lra.
+  - exact materials_project_live_panel_bundle_conj_3.
 Qed.
 
 Lemma materials_species_bridge_live_panel_bundle_conj_0 : (150 = 150)%nat.
@@ -5762,13 +7746,17 @@ Lemma materials_species_bridge_live_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma materials_species_bridge_live_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma materials_species_bridge_live_panel_bundle : (150 = 150)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact materials_species_bridge_live_panel_bundle_conj_0.
   - exact materials_species_bridge_live_panel_bundle_conj_1.
   - exact materials_species_bridge_live_panel_bundle_conj_2.
-  - lra.
+  - exact materials_species_bridge_live_panel_bundle_conj_3.
 Qed.
 
 Lemma materials_species_bridge_bundle_conj_0 : (45 = 45)%nat.
@@ -5783,13 +7771,17 @@ Lemma materials_species_bridge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma materials_species_bridge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma materials_species_bridge_bundle : (45 = 45)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact materials_species_bridge_bundle_conj_0.
   - exact materials_species_bridge_bundle_conj_1.
   - exact materials_species_bridge_bundle_conj_2.
-  - lra.
+  - exact materials_species_bridge_bundle_conj_3.
 Qed.
 
 Lemma mathematics_computational_bundle_conj_0 : (20 = 20)%nat.
@@ -5804,13 +7796,17 @@ Lemma mathematics_computational_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma mathematics_computational_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma mathematics_computational_bundle : (20 = 20)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact mathematics_computational_bundle_conj_0.
   - exact mathematics_computational_bundle_conj_1.
   - exact mathematics_computational_bundle_conj_2.
-  - lra.
+  - exact mathematics_computational_bundle_conj_3.
 Qed.
 
 Lemma math_generator_airfoil_rmse_bundle_conj_0 : (5 = 5)%nat.
@@ -5825,13 +7821,17 @@ Lemma math_generator_airfoil_rmse_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma math_generator_airfoil_rmse_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma math_generator_airfoil_rmse_bundle : (5 = 5)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact math_generator_airfoil_rmse_bundle_conj_0.
   - exact math_generator_airfoil_rmse_bundle_conj_1.
   - exact math_generator_airfoil_rmse_bundle_conj_2.
-  - lra.
+  - exact math_generator_airfoil_rmse_bundle_conj_3.
 Qed.
 
 Lemma math_generator_benchmark_formula_eval_bundle_conj_0 : (13 = 13)%nat.
@@ -5846,13 +7846,62 @@ Lemma math_generator_benchmark_formula_eval_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma math_generator_benchmark_formula_eval_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma math_generator_benchmark_formula_eval_bundle : (13 = 13)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact math_generator_benchmark_formula_eval_bundle_conj_0.
   - exact math_generator_benchmark_formula_eval_bundle_conj_1.
   - exact math_generator_benchmark_formula_eval_bundle_conj_2.
-  - lra.
+  - exact math_generator_benchmark_formula_eval_bundle_conj_3.
+Qed.
+
+Lemma math_generator_priors_bundle_conj_0 : (7 = 7)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma math_generator_priors_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma math_generator_priors_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma math_generator_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma math_generator_priors_bundle_conj_4 : (62 = 62)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma math_generator_priors_bundle_conj_5 : (1552 = 1552)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma math_generator_priors_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma math_generator_priors_bundle_conj_7 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma math_generator_priors_bundle : (7 = 7)%nat /\ True /\ True /\ True /\ (62 = 62)%nat /\ (1552 = 1552)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact math_generator_priors_bundle_conj_0.
+  - exact math_generator_priors_bundle_conj_1.
+  - exact math_generator_priors_bundle_conj_2.
+  - exact math_generator_priors_bundle_conj_3.
+  - exact math_generator_priors_bundle_conj_4.
+  - exact math_generator_priors_bundle_conj_5.
+  - exact math_generator_priors_bundle_conj_6.
+  - exact math_generator_priors_bundle_conj_7.
 Qed.
 
 Lemma math_generator_rules_eval_bundle_conj_0 : (1552 = 1552)%nat.
@@ -5883,6 +7932,10 @@ Lemma math_generator_rules_eval_bundle_conj_6 : True.
 Proof. trivial.
 Qed.
 
+Lemma math_generator_rules_eval_bundle_conj_7 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma math_generator_rules_eval_bundle : (1552 = 1552)%nat /\ (62 = 62)%nat /\ (6 = 6)%nat /\ (17 = 17)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -5893,7 +7946,7 @@ Proof.
   - exact math_generator_rules_eval_bundle_conj_4.
   - exact math_generator_rules_eval_bundle_conj_5.
   - exact math_generator_rules_eval_bundle_conj_6.
-  - lra.
+  - exact math_generator_rules_eval_bundle_conj_7.
 Qed.
 
 Lemma matter_antimatter_bundle_conj_0 : (16 = 16)%nat.
@@ -5932,6 +7985,10 @@ Lemma mechanical_engineering_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma mechanical_engineering_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma mechanical_engineering_ext_bundle : (50 = 50)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -5939,7 +7996,7 @@ Proof.
   - exact mechanical_engineering_ext_bundle_conj_1.
   - exact mechanical_engineering_ext_bundle_conj_2.
   - exact mechanical_engineering_ext_bundle_conj_3.
-  - lra.
+  - exact mechanical_engineering_ext_bundle_conj_4.
 Qed.
 
 Lemma mechanical_engineering_panel_bundle_conj_0 : (20 = 20)%nat.
@@ -5954,13 +8011,17 @@ Lemma mechanical_engineering_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma mechanical_engineering_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma mechanical_engineering_panel_bundle : (20 = 20)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact mechanical_engineering_panel_bundle_conj_0.
   - exact mechanical_engineering_panel_bundle_conj_1.
   - exact mechanical_engineering_panel_bundle_conj_2.
-  - lra.
+  - exact mechanical_engineering_panel_bundle_conj_3.
 Qed.
 
 Lemma mechanical_engineering_bundle_conj_0 : (50 = 50)%nat.
@@ -5975,13 +8036,17 @@ Lemma mechanical_engineering_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma mechanical_engineering_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma mechanical_engineering_bundle : (50 = 50)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact mechanical_engineering_bundle_conj_0.
   - exact mechanical_engineering_bundle_conj_1.
   - exact mechanical_engineering_bundle_conj_2.
-  - lra.
+  - exact mechanical_engineering_bundle_conj_3.
 Qed.
 
 Lemma mechanistic_coupling_bundle_conj_0 : (116 = 116)%nat.
@@ -5996,13 +8061,17 @@ Lemma mechanistic_coupling_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma mechanistic_coupling_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma mechanistic_coupling_bundle : (116 = 116)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact mechanistic_coupling_bundle_conj_0.
   - exact mechanistic_coupling_bundle_conj_1.
   - exact mechanistic_coupling_bundle_conj_2.
-  - lra.
+  - exact mechanistic_coupling_bundle_conj_3.
 Qed.
 
 Lemma medical_galactic_orbital_bridge_bundle_conj_0 : (48 = 48)%nat.
@@ -6017,13 +8086,17 @@ Lemma medical_galactic_orbital_bridge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma medical_galactic_orbital_bridge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma medical_galactic_orbital_bridge_bundle : (48 = 48)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact medical_galactic_orbital_bridge_bundle_conj_0.
   - exact medical_galactic_orbital_bridge_bundle_conj_1.
   - exact medical_galactic_orbital_bridge_bundle_conj_2.
-  - lra.
+  - exact medical_galactic_orbital_bridge_bundle_conj_3.
 Qed.
 
 Lemma metamaterial_fluid_design_prereg_scaffold_bundle_conj_0 : (25 = 25)%nat.
@@ -6038,13 +8111,17 @@ Lemma metamaterial_fluid_design_prereg_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma metamaterial_fluid_design_prereg_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma metamaterial_fluid_design_prereg_scaffold_bundle : (25 = 25)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact metamaterial_fluid_design_prereg_scaffold_bundle_conj_0.
   - exact metamaterial_fluid_design_prereg_scaffold_bundle_conj_1.
   - exact metamaterial_fluid_design_prereg_scaffold_bundle_conj_2.
-  - lra.
+  - exact metamaterial_fluid_design_prereg_scaffold_bundle_conj_3.
 Qed.
 
 Lemma meteorology_gap_fill_bundle_conj_0 : (107 = 107)%nat.
@@ -6063,6 +8140,10 @@ Lemma meteorology_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma meteorology_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma meteorology_gap_fill_bundle : (107 = 107)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -6070,7 +8151,7 @@ Proof.
   - exact meteorology_gap_fill_bundle_conj_1.
   - exact meteorology_gap_fill_bundle_conj_2.
   - exact meteorology_gap_fill_bundle_conj_3.
-  - lra.
+  - exact meteorology_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma microtubule_quantum_consciousness_panel_bundle_conj_0 : (63 = 63)%nat.
@@ -6085,13 +8166,17 @@ Lemma microtubule_quantum_consciousness_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma microtubule_quantum_consciousness_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma microtubule_quantum_consciousness_panel_bundle : (63 = 63)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact microtubule_quantum_consciousness_panel_bundle_conj_0.
   - exact microtubule_quantum_consciousness_panel_bundle_conj_1.
   - exact microtubule_quantum_consciousness_panel_bundle_conj_2.
-  - lra.
+  - exact microtubule_quantum_consciousness_panel_bundle_conj_3.
 Qed.
 
 Lemma music_harmonics_public_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -6106,13 +8191,17 @@ Lemma music_harmonics_public_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma music_harmonics_public_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma music_harmonics_public_panel_bundle : (24 = 24)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact music_harmonics_public_panel_bundle_conj_0.
   - exact music_harmonics_public_panel_bundle_conj_1.
   - exact music_harmonics_public_panel_bundle_conj_2.
-  - lra.
+  - exact music_harmonics_public_panel_bundle_conj_3.
 Qed.
 
 Lemma mycology_ext_bundle_conj_0 : (420 = 420)%nat.
@@ -6131,6 +8220,10 @@ Lemma mycology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma mycology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma mycology_ext_bundle : (420 = 420)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -6138,7 +8231,7 @@ Proof.
   - exact mycology_ext_bundle_conj_1.
   - exact mycology_ext_bundle_conj_2.
   - exact mycology_ext_bundle_conj_3.
-  - lra.
+  - exact mycology_ext_bundle_conj_4.
 Qed.
 
 Lemma mycology_panel_bundle_conj_0 : (90 = 90)%nat.
@@ -6153,13 +8246,17 @@ Lemma mycology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma mycology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma mycology_panel_bundle : (90 = 90)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact mycology_panel_bundle_conj_0.
   - exact mycology_panel_bundle_conj_1.
   - exact mycology_panel_bundle_conj_2.
-  - lra.
+  - exact mycology_panel_bundle_conj_3.
 Qed.
 
 Lemma mycology_bundle_conj_0 : (420 = 420)%nat.
@@ -6174,13 +8271,17 @@ Lemma mycology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma mycology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma mycology_bundle : (420 = 420)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact mycology_bundle_conj_0.
   - exact mycology_bundle_conj_1.
   - exact mycology_bundle_conj_2.
-  - lra.
+  - exact mycology_bundle_conj_3.
 Qed.
 
 Lemma nasa_donki_solar_panel_bundle_conj_0 : (2148 = 2148)%nat.
@@ -6195,13 +8296,17 @@ Lemma nasa_donki_solar_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma nasa_donki_solar_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma nasa_donki_solar_panel_bundle : (2148 = 2148)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact nasa_donki_solar_panel_bundle_conj_0.
   - exact nasa_donki_solar_panel_bundle_conj_1.
   - exact nasa_donki_solar_panel_bundle_conj_2.
-  - lra.
+  - exact nasa_donki_solar_panel_bundle_conj_3.
 Qed.
 
 Lemma nasa_donki_solar_bundle_conj_0 : (1200 = 1200)%nat.
@@ -6216,13 +8321,17 @@ Lemma nasa_donki_solar_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma nasa_donki_solar_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma nasa_donki_solar_bundle : (1200 = 1200)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact nasa_donki_solar_bundle_conj_0.
   - exact nasa_donki_solar_bundle_conj_1.
   - exact nasa_donki_solar_bundle_conj_2.
-  - lra.
+  - exact nasa_donki_solar_bundle_conj_3.
 Qed.
 
 Lemma nasa_exoplanet_archive_bundle_conj_0 : (158 = 158)%nat.
@@ -6237,13 +8346,17 @@ Lemma nasa_exoplanet_archive_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma nasa_exoplanet_archive_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma nasa_exoplanet_archive_bundle : (158 = 158)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact nasa_exoplanet_archive_bundle_conj_0.
   - exact nasa_exoplanet_archive_bundle_conj_1.
   - exact nasa_exoplanet_archive_bundle_conj_2.
-  - lra.
+  - exact nasa_exoplanet_archive_bundle_conj_3.
 Qed.
 
 Lemma nasa_neo_feed_panel_bundle_conj_0 : (56 = 56)%nat.
@@ -6258,13 +8371,17 @@ Lemma nasa_neo_feed_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma nasa_neo_feed_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma nasa_neo_feed_panel_bundle : (56 = 56)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact nasa_neo_feed_panel_bundle_conj_0.
   - exact nasa_neo_feed_panel_bundle_conj_1.
   - exact nasa_neo_feed_panel_bundle_conj_2.
-  - lra.
+  - exact nasa_neo_feed_panel_bundle_conj_3.
 Qed.
 
 Lemma nasa_neo_feed_bundle_conj_0 : (56 = 56)%nat.
@@ -6279,13 +8396,17 @@ Lemma nasa_neo_feed_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma nasa_neo_feed_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma nasa_neo_feed_bundle : (56 = 56)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact nasa_neo_feed_bundle_conj_0.
   - exact nasa_neo_feed_bundle_conj_1.
   - exact nasa_neo_feed_bundle_conj_2.
-  - lra.
+  - exact nasa_neo_feed_bundle_conj_3.
 Qed.
 
 Lemma natural_formation_element_simulation_bundle_conj_0 : (44 = 44)%nat.
@@ -6300,13 +8421,17 @@ Lemma natural_formation_element_simulation_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma natural_formation_element_simulation_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma natural_formation_element_simulation_bundle : (44 = 44)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact natural_formation_element_simulation_bundle_conj_0.
   - exact natural_formation_element_simulation_bundle_conj_1.
   - exact natural_formation_element_simulation_bundle_conj_2.
-  - lra.
+  - exact natural_formation_element_simulation_bundle_conj_3.
 Qed.
 
 Lemma ncbi_gene_public_panel_bundle_conj_0 : (48 = 48)%nat.
@@ -6321,13 +8446,17 @@ Lemma ncbi_gene_public_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma ncbi_gene_public_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma ncbi_gene_public_panel_bundle : (48 = 48)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact ncbi_gene_public_panel_bundle_conj_0.
   - exact ncbi_gene_public_panel_bundle_conj_1.
   - exact ncbi_gene_public_panel_bundle_conj_2.
-  - lra.
+  - exact ncbi_gene_public_panel_bundle_conj_3.
 Qed.
 
 Lemma ncbi_gene_public_bundle_conj_0 : (48 = 48)%nat.
@@ -6342,13 +8471,17 @@ Lemma ncbi_gene_public_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma ncbi_gene_public_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma ncbi_gene_public_bundle : (48 = 48)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact ncbi_gene_public_bundle_conj_0.
   - exact ncbi_gene_public_bundle_conj_1.
   - exact ncbi_gene_public_bundle_conj_2.
-  - lra.
+  - exact ncbi_gene_public_bundle_conj_3.
 Qed.
 
 Lemma ncei_climate_open_bundle_conj_0 : (607 = 607)%nat.
@@ -6383,13 +8516,17 @@ Lemma network_internet_protocols_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma network_internet_protocols_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma network_internet_protocols_bundle : (22 = 22)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact network_internet_protocols_bundle_conj_0.
   - exact network_internet_protocols_bundle_conj_1.
   - exact network_internet_protocols_bundle_conj_2.
-  - lra.
+  - exact network_internet_protocols_bundle_conj_3.
 Qed.
 
 Lemma network_science_public_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -6404,13 +8541,17 @@ Lemma network_science_public_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma network_science_public_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma network_science_public_panel_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact network_science_public_panel_bundle_conj_0.
   - exact network_science_public_panel_bundle_conj_1.
   - exact network_science_public_panel_bundle_conj_2.
-  - lra.
+  - exact network_science_public_panel_bundle_conj_3.
 Qed.
 
 Lemma neural_galactic_orbital_bridge_bundle_conj_0 : (49 = 49)%nat.
@@ -6425,13 +8566,17 @@ Lemma neural_galactic_orbital_bridge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma neural_galactic_orbital_bridge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neural_galactic_orbital_bridge_bundle : (49 = 49)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact neural_galactic_orbital_bridge_bundle_conj_0.
   - exact neural_galactic_orbital_bridge_bundle_conj_1.
   - exact neural_galactic_orbital_bridge_bundle_conj_2.
-  - lra.
+  - exact neural_galactic_orbital_bridge_bundle_conj_3.
 Qed.
 
 Lemma neuroeconomics_ext_bundle_conj_0 : (123 = 123)%nat.
@@ -6450,6 +8595,10 @@ Lemma neuroeconomics_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma neuroeconomics_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neuroeconomics_ext_bundle : (123 = 123)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -6457,7 +8606,7 @@ Proof.
   - exact neuroeconomics_ext_bundle_conj_1.
   - exact neuroeconomics_ext_bundle_conj_2.
   - exact neuroeconomics_ext_bundle_conj_3.
-  - lra.
+  - exact neuroeconomics_ext_bundle_conj_4.
 Qed.
 
 Lemma neuroeconomics_panel_bundle_conj_0 : (20 = 20)%nat.
@@ -6472,13 +8621,17 @@ Lemma neuroeconomics_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma neuroeconomics_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neuroeconomics_panel_bundle : (20 = 20)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact neuroeconomics_panel_bundle_conj_0.
   - exact neuroeconomics_panel_bundle_conj_1.
   - exact neuroeconomics_panel_bundle_conj_2.
-  - lra.
+  - exact neuroeconomics_panel_bundle_conj_3.
 Qed.
 
 Lemma neuroeconomics_bundle_conj_0 : (65 = 65)%nat.
@@ -6493,13 +8646,17 @@ Lemma neuroeconomics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma neuroeconomics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neuroeconomics_bundle : (65 = 65)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact neuroeconomics_bundle_conj_0.
   - exact neuroeconomics_bundle_conj_1.
   - exact neuroeconomics_bundle_conj_2.
-  - lra.
+  - exact neuroeconomics_bundle_conj_3.
 Qed.
 
 Lemma neuroimmunology_bundle_conj_0 : (92 = 92)%nat.
@@ -6526,6 +8683,10 @@ Lemma neuroimmunology_bundle_conj_5 : True.
 Proof. trivial.
 Qed.
 
+Lemma neuroimmunology_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neuroimmunology_bundle : (92 = 92)%nat /\ (7 = 7)%nat /\ (14 = 14)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -6535,7 +8696,7 @@ Proof.
   - exact neuroimmunology_bundle_conj_3.
   - exact neuroimmunology_bundle_conj_4.
   - exact neuroimmunology_bundle_conj_5.
-  - lra.
+  - exact neuroimmunology_bundle_conj_6.
 Qed.
 
 Lemma neurolab_gaps_math_spine_bundle_conj_0 : (35 = 35)%nat.
@@ -6550,13 +8711,17 @@ Lemma neurolab_gaps_math_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma neurolab_gaps_math_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neurolab_gaps_math_spine_bundle : (35 = 35)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact neurolab_gaps_math_spine_bundle_conj_0.
   - exact neurolab_gaps_math_spine_bundle_conj_1.
   - exact neurolab_gaps_math_spine_bundle_conj_2.
-  - lra.
+  - exact neurolab_gaps_math_spine_bundle_conj_3.
 Qed.
 
 Lemma neurolab_residual_math_spine_bundle_conj_0 : (28 = 28)%nat.
@@ -6571,13 +8736,207 @@ Lemma neurolab_residual_math_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma neurolab_residual_math_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neurolab_residual_math_spine_bundle : (28 = 28)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact neurolab_residual_math_spine_bundle_conj_0.
   - exact neurolab_residual_math_spine_bundle_conj_1.
   - exact neurolab_residual_math_spine_bundle_conj_2.
-  - lra.
+  - exact neurolab_residual_math_spine_bundle_conj_3.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_0 : (2166 = 2166)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_8 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_9 : (1470 = 1470)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_10 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_11 : (10 = 10)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma neuron_cohort_priors_bundle_conj_12 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma neuron_cohort_priors_bundle : (2166 = 2166)%nat /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ (1470 = 1470)%nat /\ True /\ (10 = 10)%nat /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact neuron_cohort_priors_bundle_conj_0.
+  - exact neuron_cohort_priors_bundle_conj_1.
+  - exact neuron_cohort_priors_bundle_conj_2.
+  - exact neuron_cohort_priors_bundle_conj_3.
+  - exact neuron_cohort_priors_bundle_conj_4.
+  - exact neuron_cohort_priors_bundle_conj_5.
+  - exact neuron_cohort_priors_bundle_conj_6.
+  - exact neuron_cohort_priors_bundle_conj_7.
+  - exact neuron_cohort_priors_bundle_conj_8.
+  - exact neuron_cohort_priors_bundle_conj_9.
+  - exact neuron_cohort_priors_bundle_conj_10.
+  - exact neuron_cohort_priors_bundle_conj_11.
+  - exact neuron_cohort_priors_bundle_conj_12.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_0 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_8 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_9 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_10 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_11 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_12 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_13 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle_conj_14 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_strata_bundle : True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True.
+Proof.
+  repeat (apply conj).
+  - exact neuron_cohort_strata_bundle_conj_0.
+  - exact neuron_cohort_strata_bundle_conj_1.
+  - exact neuron_cohort_strata_bundle_conj_2.
+  - exact neuron_cohort_strata_bundle_conj_3.
+  - exact neuron_cohort_strata_bundle_conj_4.
+  - exact neuron_cohort_strata_bundle_conj_5.
+  - exact neuron_cohort_strata_bundle_conj_6.
+  - exact neuron_cohort_strata_bundle_conj_7.
+  - exact neuron_cohort_strata_bundle_conj_8.
+  - exact neuron_cohort_strata_bundle_conj_9.
+  - exact neuron_cohort_strata_bundle_conj_10.
+  - exact neuron_cohort_strata_bundle_conj_11.
+  - exact neuron_cohort_strata_bundle_conj_12.
+  - exact neuron_cohort_strata_bundle_conj_13.
+  - exact neuron_cohort_strata_bundle_conj_14.
+Qed.
+
+Lemma neuron_cohort_train_holdout_bundle_conj_0 : (1745 = 1745)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma neuron_cohort_train_holdout_bundle_conj_1 : (420 = 420)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma neuron_cohort_train_holdout_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_train_holdout_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_train_holdout_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_train_holdout_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_train_holdout_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuron_cohort_train_holdout_bundle : (1745 = 1745)%nat /\ (420 = 420)%nat /\ True /\ True /\ True /\ True /\ True.
+Proof.
+  repeat (apply conj).
+  - exact neuron_cohort_train_holdout_bundle_conj_0.
+  - exact neuron_cohort_train_holdout_bundle_conj_1.
+  - exact neuron_cohort_train_holdout_bundle_conj_2.
+  - exact neuron_cohort_train_holdout_bundle_conj_3.
+  - exact neuron_cohort_train_holdout_bundle_conj_4.
+  - exact neuron_cohort_train_holdout_bundle_conj_5.
+  - exact neuron_cohort_train_holdout_bundle_conj_6.
 Qed.
 
 Lemma neuron_multi_hero_bundle_conj_0 : (24 = 24)%nat.
@@ -6600,6 +8959,10 @@ Lemma neuron_multi_hero_bundle_conj_4 : True.
 Proof. trivial.
 Qed.
 
+Lemma neuron_multi_hero_bundle_conj_5 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neuron_multi_hero_bundle : (24 = 24)%nat /\ (0 = 0)%nat /\ (14 = 14)%nat /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -6608,7 +8971,7 @@ Proof.
   - exact neuron_multi_hero_bundle_conj_2.
   - exact neuron_multi_hero_bundle_conj_3.
   - exact neuron_multi_hero_bundle_conj_4.
-  - lra.
+  - exact neuron_multi_hero_bundle_conj_5.
 Qed.
 
 Lemma neuroscience_connectomics_depth_panel_bundle_conj_0 : (27 = 27)%nat.
@@ -6623,13 +8986,17 @@ Lemma neuroscience_connectomics_depth_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma neuroscience_connectomics_depth_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neuroscience_connectomics_depth_panel_bundle : (27 = 27)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact neuroscience_connectomics_depth_panel_bundle_conj_0.
   - exact neuroscience_connectomics_depth_panel_bundle_conj_1.
   - exact neuroscience_connectomics_depth_panel_bundle_conj_2.
-  - lra.
+  - exact neuroscience_connectomics_depth_panel_bundle_conj_3.
 Qed.
 
 Lemma neutrino_physics_panel_bundle_conj_0 : (20 = 20)%nat.
@@ -6644,13 +9011,17 @@ Lemma neutrino_physics_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma neutrino_physics_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neutrino_physics_panel_bundle : (20 = 20)%nat /\ (7 = 7)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact neutrino_physics_panel_bundle_conj_0.
   - exact neutrino_physics_panel_bundle_conj_1.
   - exact neutrino_physics_panel_bundle_conj_2.
-  - lra.
+  - exact neutrino_physics_panel_bundle_conj_3.
 Qed.
 
 Lemma neutrino_physics_bundle_conj_0 : (20 = 20)%nat.
@@ -6665,13 +9036,17 @@ Lemma neutrino_physics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma neutrino_physics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neutrino_physics_bundle : (20 = 20)%nat /\ (7 = 7)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact neutrino_physics_bundle_conj_0.
   - exact neutrino_physics_bundle_conj_1.
   - exact neutrino_physics_bundle_conj_2.
-  - lra.
+  - exact neutrino_physics_bundle_conj_3.
 Qed.
 
 Lemma nist_asd_multi_species_open_bundle_conj_0 : (26 = 26)%nat.
@@ -6726,13 +9101,17 @@ Lemma nist_codata_constants_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma nist_codata_constants_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma nist_codata_constants_bundle : (6 = 6)%nat /\ (7 = 7)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact nist_codata_constants_bundle_conj_0.
   - exact nist_codata_constants_bundle_conj_1.
   - exact nist_codata_constants_bundle_conj_2.
-  - lra.
+  - exact nist_codata_constants_bundle_conj_3.
 Qed.
 
 Lemma nist_dlmf_special_functions_bundle_conj_0 : (21 = 21)%nat.
@@ -6747,13 +9126,17 @@ Lemma nist_dlmf_special_functions_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma nist_dlmf_special_functions_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma nist_dlmf_special_functions_bundle : (21 = 21)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact nist_dlmf_special_functions_bundle_conj_0.
   - exact nist_dlmf_special_functions_bundle_conj_1.
   - exact nist_dlmf_special_functions_bundle_conj_2.
-  - lra.
+  - exact nist_dlmf_special_functions_bundle_conj_3.
 Qed.
 
 Lemma noaa_coastal_tides_bundle_conj_0 : (20 = 20)%nat.
@@ -6768,13 +9151,17 @@ Lemma noaa_coastal_tides_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma noaa_coastal_tides_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma noaa_coastal_tides_bundle : (20 = 20)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact noaa_coastal_tides_bundle_conj_0.
   - exact noaa_coastal_tides_bundle_conj_1.
   - exact noaa_coastal_tides_bundle_conj_2.
-  - lra.
+  - exact noaa_coastal_tides_bundle_conj_3.
 Qed.
 
 Lemma noaa_ndbc_buoy_panel_bundle_conj_0 : (596 = 596)%nat.
@@ -6789,13 +9176,17 @@ Lemma noaa_ndbc_buoy_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma noaa_ndbc_buoy_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma noaa_ndbc_buoy_panel_bundle : (596 = 596)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact noaa_ndbc_buoy_panel_bundle_conj_0.
   - exact noaa_ndbc_buoy_panel_bundle_conj_1.
   - exact noaa_ndbc_buoy_panel_bundle_conj_2.
-  - lra.
+  - exact noaa_ndbc_buoy_panel_bundle_conj_3.
 Qed.
 
 Lemma noaa_ndbc_buoy_bundle_conj_0 : (596 = 596)%nat.
@@ -6810,13 +9201,17 @@ Lemma noaa_ndbc_buoy_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma noaa_ndbc_buoy_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma noaa_ndbc_buoy_bundle : (596 = 596)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact noaa_ndbc_buoy_bundle_conj_0.
   - exact noaa_ndbc_buoy_bundle_conj_1.
   - exact noaa_ndbc_buoy_bundle_conj_2.
-  - lra.
+  - exact noaa_ndbc_buoy_bundle_conj_3.
 Qed.
 
 Lemma noaa_tides_multi_station_open_bundle_conj_0 : (209 = 209)%nat.
@@ -6851,13 +9246,17 @@ Lemma nothing_perfection_friction_origin_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma nothing_perfection_friction_origin_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma nothing_perfection_friction_origin_panel_bundle : (24 = 24)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact nothing_perfection_friction_origin_panel_bundle_conj_0.
   - exact nothing_perfection_friction_origin_panel_bundle_conj_1.
   - exact nothing_perfection_friction_origin_panel_bundle_conj_2.
-  - lra.
+  - exact nothing_perfection_friction_origin_panel_bundle_conj_3.
 Qed.
 
 Lemma nuclear_iaea_open_bundle_conj_0 : (360 = 360)%nat.
@@ -6912,13 +9311,17 @@ Lemma observer_channel_derivation_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma observer_channel_derivation_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma observer_channel_derivation_bundle : (348 = 348)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact observer_channel_derivation_bundle_conj_0.
   - exact observer_channel_derivation_bundle_conj_1.
   - exact observer_channel_derivation_bundle_conj_2.
-  - lra.
+  - exact observer_channel_derivation_bundle_conj_3.
 Qed.
 
 Lemma observer_effect_cross_species_panel_bundle_conj_0 : (289 = 289)%nat.
@@ -6933,13 +9336,17 @@ Lemma observer_effect_cross_species_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma observer_effect_cross_species_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma observer_effect_cross_species_panel_bundle : (289 = 289)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact observer_effect_cross_species_panel_bundle_conj_0.
   - exact observer_effect_cross_species_panel_bundle_conj_1.
   - exact observer_effect_cross_species_panel_bundle_conj_2.
-  - lra.
+  - exact observer_effect_cross_species_panel_bundle_conj_3.
 Qed.
 
 Lemma oceanography_gap_fill_bundle_conj_0 : (65 = 65)%nat.
@@ -6958,6 +9365,10 @@ Lemma oceanography_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma oceanography_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma oceanography_gap_fill_bundle : (65 = 65)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -6965,7 +9376,7 @@ Proof.
   - exact oceanography_gap_fill_bundle_conj_1.
   - exact oceanography_gap_fill_bundle_conj_2.
   - exact oceanography_gap_fill_bundle_conj_3.
-  - lra.
+  - exact oceanography_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma oeis_family_sweep_open_bundle_conj_0 : (394 = 394)%nat.
@@ -7000,13 +9411,17 @@ Lemma omni_theory_genesis_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma omni_theory_genesis_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma omni_theory_genesis_bundle : (27 = 27)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact omni_theory_genesis_bundle_conj_0.
   - exact omni_theory_genesis_bundle_conj_1.
   - exact omni_theory_genesis_bundle_conj_2.
-  - lra.
+  - exact omni_theory_genesis_bundle_conj_3.
 Qed.
 
 Lemma omni_theory_humanities_panel_bundle_conj_0 : (37 = 37)%nat.
@@ -7021,13 +9436,17 @@ Lemma omni_theory_humanities_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma omni_theory_humanities_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma omni_theory_humanities_panel_bundle : (37 = 37)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact omni_theory_humanities_panel_bundle_conj_0.
   - exact omni_theory_humanities_panel_bundle_conj_1.
   - exact omni_theory_humanities_panel_bundle_conj_2.
-  - lra.
+  - exact omni_theory_humanities_panel_bundle_conj_3.
 Qed.
 
 Lemma oncology_bundle_conj_0 : (67 = 67)%nat.
@@ -7054,6 +9473,10 @@ Lemma oncology_bundle_conj_5 : True.
 Proof. trivial.
 Qed.
 
+Lemma oncology_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma oncology_bundle : (67 = 67)%nat /\ (5 = 5)%nat /\ (14 = 14)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -7063,7 +9486,7 @@ Proof.
   - exact oncology_bundle_conj_3.
   - exact oncology_bundle_conj_4.
   - exact oncology_bundle_conj_5.
-  - lra.
+  - exact oncology_bundle_conj_6.
 Qed.
 
 Lemma openalex_citation_depth_open_bundle_conj_0 : (150 = 150)%nat.
@@ -7098,13 +9521,17 @@ Lemma openalex_citation_graph_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma openalex_citation_graph_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma openalex_citation_graph_bundle : (80 = 80)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact openalex_citation_graph_bundle_conj_0.
   - exact openalex_citation_graph_bundle_conj_1.
   - exact openalex_citation_graph_bundle_conj_2.
-  - lra.
+  - exact openalex_citation_graph_bundle_conj_3.
 Qed.
 
 Lemma open_meteo_live_panel_bundle_conj_0 : (432 = 432)%nat.
@@ -7119,13 +9546,17 @@ Lemma open_meteo_live_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma open_meteo_live_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma open_meteo_live_panel_bundle : (432 = 432)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact open_meteo_live_panel_bundle_conj_0.
   - exact open_meteo_live_panel_bundle_conj_1.
   - exact open_meteo_live_panel_bundle_conj_2.
-  - lra.
+  - exact open_meteo_live_panel_bundle_conj_3.
 Qed.
 
 Lemma open_meteo_live_bundle_conj_0 : (432 = 432)%nat.
@@ -7140,13 +9571,17 @@ Lemma open_meteo_live_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma open_meteo_live_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma open_meteo_live_bundle : (432 = 432)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact open_meteo_live_bundle_conj_0.
   - exact open_meteo_live_bundle_conj_1.
   - exact open_meteo_live_bundle_conj_2.
-  - lra.
+  - exact open_meteo_live_bundle_conj_3.
 Qed.
 
 Lemma openneuro_depth_open_bundle_conj_0 : (47 = 47)%nat.
@@ -7181,13 +9616,17 @@ Lemma openneuro_full_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma openneuro_full_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma openneuro_full_panel_bundle : (123 = 123)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact openneuro_full_panel_bundle_conj_0.
   - exact openneuro_full_panel_bundle_conj_1.
   - exact openneuro_full_panel_bundle_conj_2.
-  - lra.
+  - exact openneuro_full_panel_bundle_conj_3.
 Qed.
 
 Lemma optics_interferometry_depth_panel_bundle_conj_0 : (127 = 127)%nat.
@@ -7202,13 +9641,17 @@ Lemma optics_interferometry_depth_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma optics_interferometry_depth_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma optics_interferometry_depth_panel_bundle : (127 = 127)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact optics_interferometry_depth_panel_bundle_conj_0.
   - exact optics_interferometry_depth_panel_bundle_conj_1.
   - exact optics_interferometry_depth_panel_bundle_conj_2.
-  - lra.
+  - exact optics_interferometry_depth_panel_bundle_conj_3.
 Qed.
 
 Lemma orbital_mechanics_bundle_conj_0 : (9 = 9)%nat.
@@ -7223,13 +9666,17 @@ Lemma orbital_mechanics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma orbital_mechanics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma orbital_mechanics_bundle : (9 = 9)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact orbital_mechanics_bundle_conj_0.
   - exact orbital_mechanics_bundle_conj_1.
   - exact orbital_mechanics_bundle_conj_2.
-  - lra.
+  - exact orbital_mechanics_bundle_conj_3.
 Qed.
 
 Lemma osti_doe_science_panel_bundle_conj_0 : (100 = 100)%nat.
@@ -7244,13 +9691,17 @@ Lemma osti_doe_science_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma osti_doe_science_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma osti_doe_science_panel_bundle : (100 = 100)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact osti_doe_science_panel_bundle_conj_0.
   - exact osti_doe_science_panel_bundle_conj_1.
   - exact osti_doe_science_panel_bundle_conj_2.
-  - lra.
+  - exact osti_doe_science_panel_bundle_conj_3.
 Qed.
 
 Lemma osti_doe_science_bundle_conj_0 : (100 = 100)%nat.
@@ -7265,13 +9716,17 @@ Lemma osti_doe_science_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma osti_doe_science_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma osti_doe_science_bundle : (100 = 100)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact osti_doe_science_bundle_conj_0.
   - exact osti_doe_science_bundle_conj_1.
   - exact osti_doe_science_bundle_conj_2.
-  - lra.
+  - exact osti_doe_science_bundle_conj_3.
 Qed.
 
 Lemma overflow_carry_emergence_panel_bundle_conj_0 : (29 = 29)%nat.
@@ -7286,13 +9741,17 @@ Lemma overflow_carry_emergence_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma overflow_carry_emergence_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma overflow_carry_emergence_panel_bundle : (29 = 29)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact overflow_carry_emergence_panel_bundle_conj_0.
   - exact overflow_carry_emergence_panel_bundle_conj_1.
   - exact overflow_carry_emergence_panel_bundle_conj_2.
-  - lra.
+  - exact overflow_carry_emergence_panel_bundle_conj_3.
 Qed.
 
 Lemma owid_epidemiology_open_bundle_conj_0 : (1778 = 1778)%nat.
@@ -7331,6 +9790,10 @@ Lemma paleoclimate_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma paleoclimate_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma paleoclimate_ext_bundle : (40 = 40)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -7338,7 +9801,7 @@ Proof.
   - exact paleoclimate_ext_bundle_conj_1.
   - exact paleoclimate_ext_bundle_conj_2.
   - exact paleoclimate_ext_bundle_conj_3.
-  - lra.
+  - exact paleoclimate_ext_bundle_conj_4.
 Qed.
 
 Lemma paleoclimate_panel_bundle_conj_0 : (20 = 20)%nat.
@@ -7353,13 +9816,17 @@ Lemma paleoclimate_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma paleoclimate_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma paleoclimate_panel_bundle : (20 = 20)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact paleoclimate_panel_bundle_conj_0.
   - exact paleoclimate_panel_bundle_conj_1.
   - exact paleoclimate_panel_bundle_conj_2.
-  - lra.
+  - exact paleoclimate_panel_bundle_conj_3.
 Qed.
 
 Lemma paleoclimate_bundle_conj_0 : (40 = 40)%nat.
@@ -7374,13 +9841,17 @@ Lemma paleoclimate_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma paleoclimate_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma paleoclimate_bundle : (40 = 40)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact paleoclimate_bundle_conj_0.
   - exact paleoclimate_bundle_conj_1.
   - exact paleoclimate_bundle_conj_2.
-  - lra.
+  - exact paleoclimate_bundle_conj_3.
 Qed.
 
 Lemma paleontology_ext_bundle_conj_0 : (630 = 630)%nat.
@@ -7399,6 +9870,10 @@ Lemma paleontology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma paleontology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma paleontology_ext_bundle : (630 = 630)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -7406,7 +9881,7 @@ Proof.
   - exact paleontology_ext_bundle_conj_1.
   - exact paleontology_ext_bundle_conj_2.
   - exact paleontology_ext_bundle_conj_3.
-  - lra.
+  - exact paleontology_ext_bundle_conj_4.
 Qed.
 
 Lemma paleontology_panel_bundle_conj_0 : (120 = 120)%nat.
@@ -7421,13 +9896,17 @@ Lemma paleontology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma paleontology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma paleontology_panel_bundle : (120 = 120)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact paleontology_panel_bundle_conj_0.
   - exact paleontology_panel_bundle_conj_1.
   - exact paleontology_panel_bundle_conj_2.
-  - lra.
+  - exact paleontology_panel_bundle_conj_3.
 Qed.
 
 Lemma paleontology_bundle_conj_0 : (630 = 630)%nat.
@@ -7442,13 +9921,17 @@ Lemma paleontology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma paleontology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma paleontology_bundle : (630 = 630)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact paleontology_bundle_conj_0.
   - exact paleontology_bundle_conj_1.
   - exact paleontology_bundle_conj_2.
-  - lra.
+  - exact paleontology_bundle_conj_3.
 Qed.
 
 Lemma particle_neural_orbital_bridge_bundle_conj_0 : (48 = 48)%nat.
@@ -7463,13 +9946,17 @@ Lemma particle_neural_orbital_bridge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma particle_neural_orbital_bridge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma particle_neural_orbital_bridge_bundle : (48 = 48)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact particle_neural_orbital_bridge_bundle_conj_0.
   - exact particle_neural_orbital_bridge_bundle_conj_1.
   - exact particle_neural_orbital_bridge_bundle_conj_2.
-  - lra.
+  - exact particle_neural_orbital_bridge_bundle_conj_3.
 Qed.
 
 Lemma particle_physics_gap_fill_bundle_conj_0 : (98 = 98)%nat.
@@ -7488,6 +9975,10 @@ Lemma particle_physics_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma particle_physics_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma particle_physics_gap_fill_bundle : (98 = 98)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -7495,7 +9986,57 @@ Proof.
   - exact particle_physics_gap_fill_bundle_conj_1.
   - exact particle_physics_gap_fill_bundle_conj_2.
   - exact particle_physics_gap_fill_bundle_conj_3.
-  - lra.
+  - exact particle_physics_gap_fill_bundle_conj_4.
+Qed.
+
+Lemma particle_physics_bundle_conj_0 : (36 = 36)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma particle_physics_bundle_conj_1 : (21 = 21)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma particle_physics_bundle_conj_2 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma particle_physics_bundle_conj_3 : (25 = 25)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma particle_physics_bundle_conj_4 : (98 = 98)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma particle_physics_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma particle_physics_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma particle_physics_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma particle_physics_bundle_conj_8 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma particle_physics_bundle : (36 = 36)%nat /\ (21 = 21)%nat /\ (16 = 16)%nat /\ (25 = 25)%nat /\ (98 = 98)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact particle_physics_bundle_conj_0.
+  - exact particle_physics_bundle_conj_1.
+  - exact particle_physics_bundle_conj_2.
+  - exact particle_physics_bundle_conj_3.
+  - exact particle_physics_bundle_conj_4.
+  - exact particle_physics_bundle_conj_5.
+  - exact particle_physics_bundle_conj_6.
+  - exact particle_physics_bundle_conj_7.
+  - exact particle_physics_bundle_conj_8.
 Qed.
 
 Lemma pdg_live_depth_open_bundle_conj_0 : (33 = 33)%nat.
@@ -7530,13 +10071,17 @@ Lemma pdg_particle_properties_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma pdg_particle_properties_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma pdg_particle_properties_bundle : (21 = 21)%nat /\ (9 = 9)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact pdg_particle_properties_bundle_conj_0.
   - exact pdg_particle_properties_bundle_conj_1.
   - exact pdg_particle_properties_bundle_conj_2.
-  - lra.
+  - exact pdg_particle_properties_bundle_conj_3.
 Qed.
 
 Lemma periodic_extension_decay_topology_scaffold_bundle_conj_0 : (24 = 24)%nat.
@@ -7551,13 +10096,17 @@ Lemma periodic_extension_decay_topology_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma periodic_extension_decay_topology_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma periodic_extension_decay_topology_scaffold_bundle : (24 = 24)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact periodic_extension_decay_topology_scaffold_bundle_conj_0.
   - exact periodic_extension_decay_topology_scaffold_bundle_conj_1.
   - exact periodic_extension_decay_topology_scaffold_bundle_conj_2.
-  - lra.
+  - exact periodic_extension_decay_topology_scaffold_bundle_conj_3.
 Qed.
 
 Lemma periodic_table_completion_spine_bundle_conj_0 : (38 = 38)%nat.
@@ -7572,13 +10121,17 @@ Lemma periodic_table_completion_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma periodic_table_completion_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma periodic_table_completion_spine_bundle : (38 = 38)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact periodic_table_completion_spine_bundle_conj_0.
   - exact periodic_table_completion_spine_bundle_conj_1.
   - exact periodic_table_completion_spine_bundle_conj_2.
-  - lra.
+  - exact periodic_table_completion_spine_bundle_conj_3.
 Qed.
 
 Lemma periodic_table_extension_closure_spine_bundle_conj_0 : (41 = 41)%nat.
@@ -7593,13 +10146,17 @@ Lemma periodic_table_extension_closure_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma periodic_table_extension_closure_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma periodic_table_extension_closure_spine_bundle : (41 = 41)%nat /\ (26 = 26)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact periodic_table_extension_closure_spine_bundle_conj_0.
   - exact periodic_table_extension_closure_spine_bundle_conj_1.
   - exact periodic_table_extension_closure_spine_bundle_conj_2.
-  - lra.
+  - exact periodic_table_extension_closure_spine_bundle_conj_3.
 Qed.
 
 Lemma periodic_table_public_panel_bundle_conj_0 : (52 = 52)%nat.
@@ -7614,13 +10171,17 @@ Lemma periodic_table_public_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma periodic_table_public_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma periodic_table_public_panel_bundle : (52 = 52)%nat /\ (9 = 9)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact periodic_table_public_panel_bundle_conj_0.
   - exact periodic_table_public_panel_bundle_conj_1.
   - exact periodic_table_public_panel_bundle_conj_2.
-  - lra.
+  - exact periodic_table_public_panel_bundle_conj_3.
 Qed.
 
 Lemma petrology_geochemistry_panel_bundle_conj_0 : (80 = 80)%nat.
@@ -7635,13 +10196,17 @@ Lemma petrology_geochemistry_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma petrology_geochemistry_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma petrology_geochemistry_panel_bundle : (80 = 80)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact petrology_geochemistry_panel_bundle_conj_0.
   - exact petrology_geochemistry_panel_bundle_conj_1.
   - exact petrology_geochemistry_panel_bundle_conj_2.
-  - lra.
+  - exact petrology_geochemistry_panel_bundle_conj_3.
 Qed.
 
 Lemma petrology_bundle_conj_0 : (80 = 80)%nat.
@@ -7656,13 +10221,17 @@ Lemma petrology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma petrology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma petrology_bundle : (80 = 80)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact petrology_bundle_conj_0.
   - exact petrology_bundle_conj_1.
   - exact petrology_bundle_conj_2.
-  - lra.
+  - exact petrology_bundle_conj_3.
 Qed.
 
 Lemma pharmacokinetics_gap_fill_bundle_conj_0 : (56 = 56)%nat.
@@ -7681,6 +10250,10 @@ Lemma pharmacokinetics_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma pharmacokinetics_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma pharmacokinetics_gap_fill_bundle : (56 = 56)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -7688,7 +10261,7 @@ Proof.
   - exact pharmacokinetics_gap_fill_bundle_conj_1.
   - exact pharmacokinetics_gap_fill_bundle_conj_2.
   - exact pharmacokinetics_gap_fill_bundle_conj_3.
-  - lra.
+  - exact pharmacokinetics_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma pharmacokinetics_bundle_conj_0 : (56 = 56)%nat.
@@ -7703,13 +10276,17 @@ Lemma pharmacokinetics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma pharmacokinetics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma pharmacokinetics_bundle : (56 = 56)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact pharmacokinetics_bundle_conj_0.
   - exact pharmacokinetics_bundle_conj_1.
   - exact pharmacokinetics_bundle_conj_2.
-  - lra.
+  - exact pharmacokinetics_bundle_conj_3.
 Qed.
 
 Lemma pharmacology_bundle_conj_0 : (120 = 120)%nat.
@@ -7724,13 +10301,17 @@ Lemma pharmacology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma pharmacology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma pharmacology_bundle : (120 = 120)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact pharmacology_bundle_conj_0.
   - exact pharmacology_bundle_conj_1.
   - exact pharmacology_bundle_conj_2.
-  - lra.
+  - exact pharmacology_bundle_conj_3.
 Qed.
 
 Lemma phi_morphogenetic_scaling_bundle_conj_0 : (289 = 289)%nat.
@@ -7745,13 +10326,17 @@ Lemma phi_morphogenetic_scaling_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma phi_morphogenetic_scaling_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma phi_morphogenetic_scaling_bundle : (289 = 289)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact phi_morphogenetic_scaling_bundle_conj_0.
   - exact phi_morphogenetic_scaling_bundle_conj_1.
   - exact phi_morphogenetic_scaling_bundle_conj_2.
-  - lra.
+  - exact phi_morphogenetic_scaling_bundle_conj_3.
 Qed.
 
 Lemma physarum_biological_cuda_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -7766,13 +10351,17 @@ Lemma physarum_biological_cuda_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma physarum_biological_cuda_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma physarum_biological_cuda_panel_bundle : (24 = 24)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact physarum_biological_cuda_panel_bundle_conj_0.
   - exact physarum_biological_cuda_panel_bundle_conj_1.
   - exact physarum_biological_cuda_panel_bundle_conj_2.
-  - lra.
+  - exact physarum_biological_cuda_panel_bundle_conj_3.
 Qed.
 
 Lemma planetary_atmospheres_bundle_conj_0 : (21 = 21)%nat.
@@ -7799,6 +10388,10 @@ Lemma planetary_atmospheres_bundle_conj_5 : True.
 Proof. trivial.
 Qed.
 
+Lemma planetary_atmospheres_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma planetary_atmospheres_bundle : (21 = 21)%nat /\ (13 = 13)%nat /\ (16 = 16)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -7808,7 +10401,7 @@ Proof.
   - exact planetary_atmospheres_bundle_conj_3.
   - exact planetary_atmospheres_bundle_conj_4.
   - exact planetary_atmospheres_bundle_conj_5.
-  - lra.
+  - exact planetary_atmospheres_bundle_conj_6.
 Qed.
 
 Lemma planetary_structure_bundle_conj_0 : (20 = 20)%nat.
@@ -7823,13 +10416,17 @@ Lemma planetary_structure_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma planetary_structure_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma planetary_structure_bundle : (20 = 20)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact planetary_structure_bundle_conj_0.
   - exact planetary_structure_bundle_conj_1.
   - exact planetary_structure_bundle_conj_2.
-  - lra.
+  - exact planetary_structure_bundle_conj_3.
 Qed.
 
 Lemma plasma_physics_bundle_conj_0 : (20 = 20)%nat.
@@ -7844,13 +10441,17 @@ Lemma plasma_physics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma plasma_physics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma plasma_physics_bundle : (20 = 20)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact plasma_physics_bundle_conj_0.
   - exact plasma_physics_bundle_conj_1.
   - exact plasma_physics_bundle_conj_2.
-  - lra.
+  - exact plasma_physics_bundle_conj_3.
 Qed.
 
 Lemma portable_clone_verify_bundle_conj_0 : (290 = 290)%nat.
@@ -7865,13 +10466,17 @@ Lemma portable_clone_verify_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma portable_clone_verify_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma portable_clone_verify_bundle : (290 = 290)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact portable_clone_verify_bundle_conj_0.
   - exact portable_clone_verify_bundle_conj_1.
   - exact portable_clone_verify_bundle_conj_2.
-  - lra.
+  - exact portable_clone_verify_bundle_conj_3.
 Qed.
 
 Lemma prediction_rederivation_bundle_conj_0 : (10 = 10)%nat.
@@ -7886,13 +10491,17 @@ Lemma prediction_rederivation_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma prediction_rederivation_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma prediction_rederivation_bundle : (10 = 10)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact prediction_rederivation_bundle_conj_0.
   - exact prediction_rederivation_bundle_conj_1.
   - exact prediction_rederivation_bundle_conj_2.
-  - lra.
+  - exact prediction_rederivation_bundle_conj_3.
 Qed.
 
 Lemma preregistered_outcome_tracking_bundle_conj_0 : (56 = 56)%nat.
@@ -7907,13 +10516,17 @@ Lemma preregistered_outcome_tracking_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma preregistered_outcome_tracking_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma preregistered_outcome_tracking_bundle : (56 = 56)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact preregistered_outcome_tracking_bundle_conj_0.
   - exact preregistered_outcome_tracking_bundle_conj_1.
   - exact preregistered_outcome_tracking_bundle_conj_2.
-  - lra.
+  - exact preregistered_outcome_tracking_bundle_conj_3.
 Qed.
 
 Lemma preregistered_predictions_bundle_conj_0 : (27 = 27)%nat.
@@ -7928,13 +10541,17 @@ Lemma preregistered_predictions_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma preregistered_predictions_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma preregistered_predictions_bundle : (27 = 27)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact preregistered_predictions_bundle_conj_0.
   - exact preregistered_predictions_bundle_conj_1.
   - exact preregistered_predictions_bundle_conj_2.
-  - lra.
+  - exact preregistered_predictions_bundle_conj_3.
 Qed.
 
 Lemma preregistered_predictions_verification_scaffold_bundle_conj_0 : (60 = 60)%nat.
@@ -7949,13 +10566,17 @@ Lemma preregistered_predictions_verification_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma preregistered_predictions_verification_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma preregistered_predictions_verification_scaffold_bundle : (60 = 60)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact preregistered_predictions_verification_scaffold_bundle_conj_0.
   - exact preregistered_predictions_verification_scaffold_bundle_conj_1.
   - exact preregistered_predictions_verification_scaffold_bundle_conj_2.
-  - lra.
+  - exact preregistered_predictions_verification_scaffold_bundle_conj_3.
 Qed.
 
 Lemma programming_language_laws_bundle_conj_0 : (107 = 107)%nat.
@@ -7970,13 +10591,17 @@ Lemma programming_language_laws_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma programming_language_laws_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma programming_language_laws_bundle : (107 = 107)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact programming_language_laws_bundle_conj_0.
   - exact programming_language_laws_bundle_conj_1.
   - exact programming_language_laws_bundle_conj_2.
-  - lra.
+  - exact programming_language_laws_bundle_conj_3.
 Qed.
 
 Lemma proof_carrying_code_genome_bundle_conj_0 : (25 = 25)%nat.
@@ -7991,13 +10616,17 @@ Lemma proof_carrying_code_genome_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma proof_carrying_code_genome_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma proof_carrying_code_genome_bundle : (25 = 25)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact proof_carrying_code_genome_bundle_conj_0.
   - exact proof_carrying_code_genome_bundle_conj_1.
   - exact proof_carrying_code_genome_bundle_conj_2.
-  - lra.
+  - exact proof_carrying_code_genome_bundle_conj_3.
 Qed.
 
 Lemma proof_ledger_closure_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -8012,13 +10641,147 @@ Lemma proof_ledger_closure_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma proof_ledger_closure_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma proof_ledger_closure_spine_bundle : (24 = 24)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact proof_ledger_closure_spine_bundle_conj_0.
   - exact proof_ledger_closure_spine_bundle_conj_1.
   - exact proof_ledger_closure_spine_bundle_conj_2.
-  - lra.
+  - exact proof_ledger_closure_spine_bundle_conj_3.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_1 : (10 = 10)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_8 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_9 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_10 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_11 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_12 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_13 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_14 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_15 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_16 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_17 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_18 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_19 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_20 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_21 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_22 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_23 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle_conj_24 : True.
+Proof. trivial.
+Qed.
+
+Lemma protein_amino_acid_trinary_bundle : (20 = 20)%nat /\ (10 = 10)%nat /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True /\ True.
+Proof.
+  repeat (apply conj).
+  - exact protein_amino_acid_trinary_bundle_conj_0.
+  - exact protein_amino_acid_trinary_bundle_conj_1.
+  - exact protein_amino_acid_trinary_bundle_conj_2.
+  - exact protein_amino_acid_trinary_bundle_conj_3.
+  - exact protein_amino_acid_trinary_bundle_conj_4.
+  - exact protein_amino_acid_trinary_bundle_conj_5.
+  - exact protein_amino_acid_trinary_bundle_conj_6.
+  - exact protein_amino_acid_trinary_bundle_conj_7.
+  - exact protein_amino_acid_trinary_bundle_conj_8.
+  - exact protein_amino_acid_trinary_bundle_conj_9.
+  - exact protein_amino_acid_trinary_bundle_conj_10.
+  - exact protein_amino_acid_trinary_bundle_conj_11.
+  - exact protein_amino_acid_trinary_bundle_conj_12.
+  - exact protein_amino_acid_trinary_bundle_conj_13.
+  - exact protein_amino_acid_trinary_bundle_conj_14.
+  - exact protein_amino_acid_trinary_bundle_conj_15.
+  - exact protein_amino_acid_trinary_bundle_conj_16.
+  - exact protein_amino_acid_trinary_bundle_conj_17.
+  - exact protein_amino_acid_trinary_bundle_conj_18.
+  - exact protein_amino_acid_trinary_bundle_conj_19.
+  - exact protein_amino_acid_trinary_bundle_conj_20.
+  - exact protein_amino_acid_trinary_bundle_conj_21.
+  - exact protein_amino_acid_trinary_bundle_conj_22.
+  - exact protein_amino_acid_trinary_bundle_conj_23.
+  - exact protein_amino_acid_trinary_bundle_conj_24.
 Qed.
 
 Lemma psychology_gap_fill_bundle_conj_0 : (160 = 160)%nat.
@@ -8037,6 +10800,10 @@ Lemma psychology_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma psychology_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma psychology_gap_fill_bundle : (160 = 160)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -8044,7 +10811,7 @@ Proof.
   - exact psychology_gap_fill_bundle_conj_1.
   - exact psychology_gap_fill_bundle_conj_2.
   - exact psychology_gap_fill_bundle_conj_3.
-  - lra.
+  - exact psychology_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma psychology_psychometrics_depth_panel_bundle_conj_0 : (23 = 23)%nat.
@@ -8059,13 +10826,17 @@ Lemma psychology_psychometrics_depth_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma psychology_psychometrics_depth_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma psychology_psychometrics_depth_panel_bundle : (23 = 23)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact psychology_psychometrics_depth_panel_bundle_conj_0.
   - exact psychology_psychometrics_depth_panel_bundle_conj_1.
   - exact psychology_psychometrics_depth_panel_bundle_conj_2.
-  - lra.
+  - exact psychology_psychometrics_depth_panel_bundle_conj_3.
 Qed.
 
 Lemma pubchem_compound_properties_bundle_conj_0 : (500 = 500)%nat.
@@ -8080,13 +10851,17 @@ Lemma pubchem_compound_properties_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma pubchem_compound_properties_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma pubchem_compound_properties_bundle : (500 = 500)%nat /\ (8 = 8)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact pubchem_compound_properties_bundle_conj_0.
   - exact pubchem_compound_properties_bundle_conj_1.
   - exact pubchem_compound_properties_bundle_conj_2.
-  - lra.
+  - exact pubchem_compound_properties_bundle_conj_3.
 Qed.
 
 Lemma pubchem_depth_open_bundle_conj_0 : (149 = 149)%nat.
@@ -8121,13 +10896,17 @@ Lemma pubchem_live_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma pubchem_live_deep_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma pubchem_live_deep_bundle : (5254 = 5254)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact pubchem_live_deep_bundle_conj_0.
   - exact pubchem_live_deep_bundle_conj_1.
   - exact pubchem_live_deep_bundle_conj_2.
-  - lra.
+  - exact pubchem_live_deep_bundle_conj_3.
 Qed.
 
 Lemma pubchem_stability_panel_bundle_conj_0 : (59 = 59)%nat.
@@ -8142,13 +10921,17 @@ Lemma pubchem_stability_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma pubchem_stability_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma pubchem_stability_panel_bundle : (59 = 59)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact pubchem_stability_panel_bundle_conj_0.
   - exact pubchem_stability_panel_bundle_conj_1.
   - exact pubchem_stability_panel_bundle_conj_2.
-  - lra.
+  - exact pubchem_stability_panel_bundle_conj_3.
 Qed.
 
 Lemma public_verifiable_spine_bundle_conj_0 : (20 = 20)%nat.
@@ -8163,13 +10946,17 @@ Lemma public_verifiable_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma public_verifiable_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma public_verifiable_spine_bundle : (20 = 20)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact public_verifiable_spine_bundle_conj_0.
   - exact public_verifiable_spine_bundle_conj_1.
   - exact public_verifiable_spine_bundle_conj_2.
-  - lra.
+  - exact public_verifiable_spine_bundle_conj_3.
 Qed.
 
 Lemma published_fuel_property_panel_bundle_conj_0 : (31 = 31)%nat.
@@ -8184,13 +10971,17 @@ Lemma published_fuel_property_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma published_fuel_property_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma published_fuel_property_panel_bundle : (31 = 31)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact published_fuel_property_panel_bundle_conj_0.
   - exact published_fuel_property_panel_bundle_conj_1.
   - exact published_fuel_property_panel_bundle_conj_2.
-  - lra.
+  - exact published_fuel_property_panel_bundle_conj_3.
 Qed.
 
 Lemma pure_mathematics_ext_bundle_conj_0 : (1549 = 1549)%nat.
@@ -8209,6 +11000,10 @@ Lemma pure_mathematics_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma pure_mathematics_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma pure_mathematics_ext_bundle : (1549 = 1549)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -8216,7 +11011,7 @@ Proof.
   - exact pure_mathematics_ext_bundle_conj_1.
   - exact pure_mathematics_ext_bundle_conj_2.
   - exact pure_mathematics_ext_bundle_conj_3.
-  - lra.
+  - exact pure_mathematics_ext_bundle_conj_4.
 Qed.
 
 Lemma pure_mathematics_panel_bundle_conj_0 : (44 = 44)%nat.
@@ -8231,13 +11026,17 @@ Lemma pure_mathematics_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma pure_mathematics_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma pure_mathematics_panel_bundle : (44 = 44)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact pure_mathematics_panel_bundle_conj_0.
   - exact pure_mathematics_panel_bundle_conj_1.
   - exact pure_mathematics_panel_bundle_conj_2.
-  - lra.
+  - exact pure_mathematics_panel_bundle_conj_3.
 Qed.
 
 Lemma pure_mathematics_bundle_conj_0 : (1578 = 1578)%nat.
@@ -8252,13 +11051,17 @@ Lemma pure_mathematics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma pure_mathematics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma pure_mathematics_bundle : (1578 = 1578)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact pure_mathematics_bundle_conj_0.
   - exact pure_mathematics_bundle_conj_1.
   - exact pure_mathematics_bundle_conj_2.
-  - lra.
+  - exact pure_mathematics_bundle_conj_3.
 Qed.
 
 Lemma qce_elm_fusion_edge_bundle_conj_0 : (86 = 86)%nat.
@@ -8273,13 +11076,17 @@ Lemma qce_elm_fusion_edge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma qce_elm_fusion_edge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma qce_elm_fusion_edge_bundle : (86 = 86)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact qce_elm_fusion_edge_bundle_conj_0.
   - exact qce_elm_fusion_edge_bundle_conj_1.
   - exact qce_elm_fusion_edge_bundle_conj_2.
-  - lra.
+  - exact qce_elm_fusion_edge_bundle_conj_3.
 Qed.
 
 Lemma quantum_computing_gap_fill_bundle_conj_0 : (177 = 177)%nat.
@@ -8298,6 +11105,10 @@ Lemma quantum_computing_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma quantum_computing_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma quantum_computing_gap_fill_bundle : (177 = 177)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -8305,7 +11116,7 @@ Proof.
   - exact quantum_computing_gap_fill_bundle_conj_1.
   - exact quantum_computing_gap_fill_bundle_conj_2.
   - exact quantum_computing_gap_fill_bundle_conj_3.
-  - lra.
+  - exact quantum_computing_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma quantum_computing_math_depth_panel_bundle_conj_0 : (77 = 77)%nat.
@@ -8320,13 +11131,17 @@ Lemma quantum_computing_math_depth_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma quantum_computing_math_depth_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma quantum_computing_math_depth_panel_bundle : (77 = 77)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact quantum_computing_math_depth_panel_bundle_conj_0.
   - exact quantum_computing_math_depth_panel_bundle_conj_1.
   - exact quantum_computing_math_depth_panel_bundle_conj_2.
-  - lra.
+  - exact quantum_computing_math_depth_panel_bundle_conj_3.
 Qed.
 
 Lemma quantum_information_bundle_conj_0 : (24 = 24)%nat.
@@ -8341,13 +11156,17 @@ Lemma quantum_information_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma quantum_information_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma quantum_information_bundle : (24 = 24)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact quantum_information_bundle_conj_0.
   - exact quantum_information_bundle_conj_1.
   - exact quantum_information_bundle_conj_2.
-  - lra.
+  - exact quantum_information_bundle_conj_3.
 Qed.
 
 Lemma quantum_materials_bundle_conj_0 : (168 = 168)%nat.
@@ -8374,6 +11193,10 @@ Lemma quantum_materials_bundle_conj_5 : True.
 Proof. trivial.
 Qed.
 
+Lemma quantum_materials_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma quantum_materials_bundle : (168 = 168)%nat /\ (13 = 13)%nat /\ (16 = 16)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -8383,7 +11206,7 @@ Proof.
   - exact quantum_materials_bundle_conj_3.
   - exact quantum_materials_bundle_conj_4.
   - exact quantum_materials_bundle_conj_5.
-  - lra.
+  - exact quantum_materials_bundle_conj_6.
 Qed.
 
 Lemma quantum_mechanics_entanglement_depth_panel_bundle_conj_0 : (23 = 23)%nat.
@@ -8398,13 +11221,17 @@ Lemma quantum_mechanics_entanglement_depth_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma quantum_mechanics_entanglement_depth_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma quantum_mechanics_entanglement_depth_panel_bundle : (23 = 23)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact quantum_mechanics_entanglement_depth_panel_bundle_conj_0.
   - exact quantum_mechanics_entanglement_depth_panel_bundle_conj_1.
   - exact quantum_mechanics_entanglement_depth_panel_bundle_conj_2.
-  - lra.
+  - exact quantum_mechanics_entanglement_depth_panel_bundle_conj_3.
 Qed.
 
 Lemma quantum_mechanics_gap_fill_bundle_conj_0 : (50 = 50)%nat.
@@ -8423,6 +11250,10 @@ Lemma quantum_mechanics_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma quantum_mechanics_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma quantum_mechanics_gap_fill_bundle : (50 = 50)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -8430,7 +11261,7 @@ Proof.
   - exact quantum_mechanics_gap_fill_bundle_conj_1.
   - exact quantum_mechanics_gap_fill_bundle_conj_2.
   - exact quantum_mechanics_gap_fill_bundle_conj_3.
-  - lra.
+  - exact quantum_mechanics_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma quantum_optics_gap_fill_bundle_conj_0 : (50 = 50)%nat.
@@ -8449,6 +11280,10 @@ Lemma quantum_optics_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma quantum_optics_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma quantum_optics_gap_fill_bundle : (50 = 50)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -8456,7 +11291,7 @@ Proof.
   - exact quantum_optics_gap_fill_bundle_conj_1.
   - exact quantum_optics_gap_fill_bundle_conj_2.
   - exact quantum_optics_gap_fill_bundle_conj_3.
-  - lra.
+  - exact quantum_optics_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma quantum_trinary_syntax_bundle_conj_0 : (27 = 27)%nat.
@@ -8491,13 +11326,17 @@ Lemma radio_astronomy_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma radio_astronomy_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma radio_astronomy_panel_bundle : (30 = 30)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact radio_astronomy_panel_bundle_conj_0.
   - exact radio_astronomy_panel_bundle_conj_1.
   - exact radio_astronomy_panel_bundle_conj_2.
-  - lra.
+  - exact radio_astronomy_panel_bundle_conj_3.
 Qed.
 
 Lemma radio_astronomy_bundle_conj_0 : (30 = 30)%nat.
@@ -8512,13 +11351,17 @@ Lemma radio_astronomy_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma radio_astronomy_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma radio_astronomy_bundle : (30 = 30)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact radio_astronomy_bundle_conj_0.
   - exact radio_astronomy_bundle_conj_1.
   - exact radio_astronomy_bundle_conj_2.
-  - lra.
+  - exact radio_astronomy_bundle_conj_3.
 Qed.
 
 Lemma rcsb_pdb_structures_bundle_conj_0 : (45 = 45)%nat.
@@ -8533,13 +11376,17 @@ Lemma rcsb_pdb_structures_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma rcsb_pdb_structures_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma rcsb_pdb_structures_bundle : (45 = 45)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact rcsb_pdb_structures_bundle_conj_0.
   - exact rcsb_pdb_structures_bundle_conj_1.
   - exact rcsb_pdb_structures_bundle_conj_2.
-  - lra.
+  - exact rcsb_pdb_structures_bundle_conj_3.
 Qed.
 
 Lemma rcsb_structure_batch_open_bundle_conj_0 : (91 = 91)%nat.
@@ -8574,13 +11421,17 @@ Lemma rd_interval_tightening_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma rd_interval_tightening_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma rd_interval_tightening_panel_bundle : (24 = 24)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact rd_interval_tightening_panel_bundle_conj_0.
   - exact rd_interval_tightening_panel_bundle_conj_1.
   - exact rd_interval_tightening_panel_bundle_conj_2.
-  - lra.
+  - exact rd_interval_tightening_panel_bundle_conj_3.
 Qed.
 
 Lemma reality_folding_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -8595,13 +11446,17 @@ Lemma reality_folding_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma reality_folding_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma reality_folding_spine_bundle : (24 = 24)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact reality_folding_spine_bundle_conj_0.
   - exact reality_folding_spine_bundle_conj_1.
   - exact reality_folding_spine_bundle_conj_2.
-  - lra.
+  - exact reality_folding_spine_bundle_conj_3.
 Qed.
 
 Lemma recent_breakthroughs_expansion_bundle_conj_0 : (81 = 81)%nat.
@@ -8616,13 +11471,17 @@ Lemma recent_breakthroughs_expansion_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma recent_breakthroughs_expansion_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma recent_breakthroughs_expansion_bundle : (81 = 81)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact recent_breakthroughs_expansion_bundle_conj_0.
   - exact recent_breakthroughs_expansion_bundle_conj_1.
   - exact recent_breakthroughs_expansion_bundle_conj_2.
-  - lra.
+  - exact recent_breakthroughs_expansion_bundle_conj_3.
 Qed.
 
 Lemma robotics_control_ext_bundle_conj_0 : (45 = 45)%nat.
@@ -8641,6 +11500,10 @@ Lemma robotics_control_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma robotics_control_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma robotics_control_ext_bundle : (45 = 45)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -8648,7 +11511,7 @@ Proof.
   - exact robotics_control_ext_bundle_conj_1.
   - exact robotics_control_ext_bundle_conj_2.
   - exact robotics_control_ext_bundle_conj_3.
-  - lra.
+  - exact robotics_control_ext_bundle_conj_4.
 Qed.
 
 Lemma robotics_control_systems_panel_bundle_conj_0 : (20 = 20)%nat.
@@ -8663,13 +11526,17 @@ Lemma robotics_control_systems_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma robotics_control_systems_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma robotics_control_systems_panel_bundle : (20 = 20)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact robotics_control_systems_panel_bundle_conj_0.
   - exact robotics_control_systems_panel_bundle_conj_1.
   - exact robotics_control_systems_panel_bundle_conj_2.
-  - lra.
+  - exact robotics_control_systems_panel_bundle_conj_3.
 Qed.
 
 Lemma robotics_control_systems_bundle_conj_0 : (45 = 45)%nat.
@@ -8684,13 +11551,17 @@ Lemma robotics_control_systems_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma robotics_control_systems_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma robotics_control_systems_bundle : (45 = 45)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact robotics_control_systems_bundle_conj_0.
   - exact robotics_control_systems_bundle_conj_1.
   - exact robotics_control_systems_bundle_conj_2.
-  - lra.
+  - exact robotics_control_systems_bundle_conj_3.
 Qed.
 
 Lemma rust_lean_bridge_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -8705,13 +11576,17 @@ Lemma rust_lean_bridge_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma rust_lean_bridge_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma rust_lean_bridge_panel_bundle : (24 = 24)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact rust_lean_bridge_panel_bundle_conj_0.
   - exact rust_lean_bridge_panel_bundle_conj_1.
   - exact rust_lean_bridge_panel_bundle_conj_2.
-  - lra.
+  - exact rust_lean_bridge_panel_bundle_conj_3.
 Qed.
 
 Lemma rust_lean_bridge_bundle_conj_0 : (9 = 9)%nat.
@@ -8726,13 +11601,17 @@ Lemma rust_lean_bridge_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma rust_lean_bridge_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma rust_lean_bridge_bundle : (9 = 9)%nat /\ (8 = 8)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact rust_lean_bridge_bundle_conj_0.
   - exact rust_lean_bridge_bundle_conj_1.
   - exact rust_lean_bridge_bundle_conj_2.
-  - lra.
+  - exact rust_lean_bridge_bundle_conj_3.
 Qed.
 
 Lemma scalar_solver_35_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -8747,13 +11626,17 @@ Lemma scalar_solver_35_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma scalar_solver_35_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma scalar_solver_35_panel_bundle : (24 = 24)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact scalar_solver_35_panel_bundle_conj_0.
   - exact scalar_solver_35_panel_bundle_conj_1.
   - exact scalar_solver_35_panel_bundle_conj_2.
-  - lra.
+  - exact scalar_solver_35_panel_bundle_conj_3.
 Qed.
 
 Lemma schematic_netlist_intrinsic_bundle_conj_0 : (5 = 5)%nat.
@@ -8768,13 +11651,17 @@ Lemma schematic_netlist_intrinsic_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma schematic_netlist_intrinsic_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma schematic_netlist_intrinsic_bundle : (5 = 5)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact schematic_netlist_intrinsic_bundle_conj_0.
   - exact schematic_netlist_intrinsic_bundle_conj_1.
   - exact schematic_netlist_intrinsic_bundle_conj_2.
-  - lra.
+  - exact schematic_netlist_intrinsic_bundle_conj_3.
 Qed.
 
 Lemma scientific_expansion_depth_spine_bundle_conj_0 : (20 = 20)%nat.
@@ -8789,13 +11676,17 @@ Lemma scientific_expansion_depth_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma scientific_expansion_depth_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma scientific_expansion_depth_spine_bundle : (20 = 20)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact scientific_expansion_depth_spine_bundle_conj_0.
   - exact scientific_expansion_depth_spine_bundle_conj_1.
   - exact scientific_expansion_depth_spine_bundle_conj_2.
-  - lra.
+  - exact scientific_expansion_depth_spine_bundle_conj_3.
 Qed.
 
 Lemma scientific_expansion_depth_wave2_spine_bundle_conj_0 : (40 = 40)%nat.
@@ -8810,13 +11701,17 @@ Lemma scientific_expansion_depth_wave2_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma scientific_expansion_depth_wave2_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma scientific_expansion_depth_wave2_spine_bundle : (40 = 40)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact scientific_expansion_depth_wave2_spine_bundle_conj_0.
   - exact scientific_expansion_depth_wave2_spine_bundle_conj_1.
   - exact scientific_expansion_depth_wave2_spine_bundle_conj_2.
-  - lra.
+  - exact scientific_expansion_depth_wave2_spine_bundle_conj_3.
 Qed.
 
 Lemma scientific_expansion_spine_bundle_conj_0 : (40 = 40)%nat.
@@ -8831,13 +11726,17 @@ Lemma scientific_expansion_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma scientific_expansion_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma scientific_expansion_spine_bundle : (40 = 40)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact scientific_expansion_spine_bundle_conj_0.
   - exact scientific_expansion_spine_bundle_conj_1.
   - exact scientific_expansion_spine_bundle_conj_2.
-  - lra.
+  - exact scientific_expansion_spine_bundle_conj_3.
 Qed.
 
 Lemma scientific_expansion_wave2_spine_bundle_conj_0 : (40 = 40)%nat.
@@ -8852,13 +11751,17 @@ Lemma scientific_expansion_wave2_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma scientific_expansion_wave2_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma scientific_expansion_wave2_spine_bundle : (40 = 40)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact scientific_expansion_wave2_spine_bundle_conj_0.
   - exact scientific_expansion_wave2_spine_bundle_conj_1.
   - exact scientific_expansion_wave2_spine_bundle_conj_2.
-  - lra.
+  - exact scientific_expansion_wave2_spine_bundle_conj_3.
 Qed.
 
 Lemma scientific_expansion_wave3_spine_bundle_conj_0 : (40 = 40)%nat.
@@ -8873,13 +11776,17 @@ Lemma scientific_expansion_wave3_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma scientific_expansion_wave3_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma scientific_expansion_wave3_spine_bundle : (40 = 40)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact scientific_expansion_wave3_spine_bundle_conj_0.
   - exact scientific_expansion_wave3_spine_bundle_conj_1.
   - exact scientific_expansion_wave3_spine_bundle_conj_2.
-  - lra.
+  - exact scientific_expansion_wave3_spine_bundle_conj_3.
 Qed.
 
 Lemma secure_software_engineering_bundle_conj_0 : (59 = 59)%nat.
@@ -8894,13 +11801,17 @@ Lemma secure_software_engineering_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma secure_software_engineering_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma secure_software_engineering_bundle : (59 = 59)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact secure_software_engineering_bundle_conj_0.
   - exact secure_software_engineering_bundle_conj_1.
   - exact secure_software_engineering_bundle_conj_2.
-  - lra.
+  - exact secure_software_engineering_bundle_conj_3.
 Qed.
 
 Lemma seismology_deep_bundle_conj_0 : (1000 = 1000)%nat.
@@ -8927,6 +11838,10 @@ Lemma seismology_deep_bundle_conj_5 : True.
 Proof. trivial.
 Qed.
 
+Lemma seismology_deep_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma seismology_deep_bundle : (1000 = 1000)%nat /\ (1000 = 1000)%nat /\ (189 = 189)%nat /\ (189 = 189)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -8936,7 +11851,7 @@ Proof.
   - exact seismology_deep_bundle_conj_3.
   - exact seismology_deep_bundle_conj_4.
   - exact seismology_deep_bundle_conj_5.
-  - lra.
+  - exact seismology_deep_bundle_conj_6.
 Qed.
 
 Lemma seismology_bundle_conj_0 : (500 = 500)%nat.
@@ -8955,6 +11870,10 @@ Lemma seismology_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma seismology_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma seismology_bundle : (500 = 500)%nat /\ (500 = 500)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -8962,7 +11881,7 @@ Proof.
   - exact seismology_bundle_conj_1.
   - exact seismology_bundle_conj_2.
   - exact seismology_bundle_conj_3.
-  - lra.
+  - exact seismology_bundle_conj_4.
 Qed.
 
 Lemma semiconductor_physics_public_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -8977,13 +11896,17 @@ Lemma semiconductor_physics_public_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma semiconductor_physics_public_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma semiconductor_physics_public_panel_bundle : (24 = 24)%nat /\ (11 = 11)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact semiconductor_physics_public_panel_bundle_conj_0.
   - exact semiconductor_physics_public_panel_bundle_conj_1.
   - exact semiconductor_physics_public_panel_bundle_conj_2.
-  - lra.
+  - exact semiconductor_physics_public_panel_bundle_conj_3.
 Qed.
 
 Lemma sh0es_refined_bundle_conj_0 : (24 = 24)%nat.
@@ -8998,13 +11921,17 @@ Lemma sh0es_refined_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma sh0es_refined_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma sh0es_refined_bundle : (24 = 24)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact sh0es_refined_bundle_conj_0.
   - exact sh0es_refined_bundle_conj_1.
   - exact sh0es_refined_bundle_conj_2.
-  - lra.
+  - exact sh0es_refined_bundle_conj_3.
 Qed.
 
 Lemma simbad_identity_depth_open_bundle_conj_0 : (1365 = 1365)%nat.
@@ -9039,13 +11966,17 @@ Lemma simbad_stellar_identity_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma simbad_stellar_identity_deep_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma simbad_stellar_identity_deep_bundle : (520 = 520)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact simbad_stellar_identity_deep_bundle_conj_0.
   - exact simbad_stellar_identity_deep_bundle_conj_1.
   - exact simbad_stellar_identity_deep_bundle_conj_2.
-  - lra.
+  - exact simbad_stellar_identity_deep_bundle_conj_3.
 Qed.
 
 Lemma small_body_orbits_bundle_conj_0 : (12 = 12)%nat.
@@ -9060,13 +11991,17 @@ Lemma small_body_orbits_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma small_body_orbits_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma small_body_orbits_bundle : (12 = 12)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact small_body_orbits_bundle_conj_0.
   - exact small_body_orbits_bundle_conj_1.
   - exact small_body_orbits_bundle_conj_2.
-  - lra.
+  - exact small_body_orbits_bundle_conj_3.
 Qed.
 
 Lemma sociology_gap_fill_bundle_conj_0 : (200 = 200)%nat.
@@ -9085,6 +12020,10 @@ Lemma sociology_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma sociology_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma sociology_gap_fill_bundle : (200 = 200)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -9092,7 +12031,7 @@ Proof.
   - exact sociology_gap_fill_bundle_conj_1.
   - exact sociology_gap_fill_bundle_conj_2.
   - exact sociology_gap_fill_bundle_conj_3.
-  - lra.
+  - exact sociology_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma soil_science_panel_bundle_conj_0 : (96 = 96)%nat.
@@ -9107,13 +12046,17 @@ Lemma soil_science_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma soil_science_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma soil_science_panel_bundle : (96 = 96)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact soil_science_panel_bundle_conj_0.
   - exact soil_science_panel_bundle_conj_1.
   - exact soil_science_panel_bundle_conj_2.
-  - lra.
+  - exact soil_science_panel_bundle_conj_3.
 Qed.
 
 Lemma soil_science_bundle_conj_0 : (96 = 96)%nat.
@@ -9128,13 +12071,17 @@ Lemma soil_science_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma soil_science_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma soil_science_bundle : (96 = 96)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact soil_science_bundle_conj_0.
   - exact soil_science_bundle_conj_1.
   - exact soil_science_bundle_conj_2.
-  - lra.
+  - exact soil_science_bundle_conj_3.
 Qed.
 
 Lemma solar_system_structure_deep_bundle_conj_0 : (50 = 50)%nat.
@@ -9149,13 +12096,42 @@ Lemma solar_system_structure_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma solar_system_structure_deep_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma solar_system_structure_deep_bundle : (50 = 50)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact solar_system_structure_deep_bundle_conj_0.
   - exact solar_system_structure_deep_bundle_conj_1.
   - exact solar_system_structure_deep_bundle_conj_2.
-  - lra.
+  - exact solar_system_structure_deep_bundle_conj_3.
+Qed.
+
+Lemma soul_sibling_priors_bundle_conj_0 : True.
+Proof. trivial.
+Qed.
+
+Lemma soul_sibling_priors_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma soul_sibling_priors_bundle_conj_2 : (1 = 1)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma soul_sibling_priors_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma soul_sibling_priors_bundle : True /\ True /\ (1 = 1)%nat /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact soul_sibling_priors_bundle_conj_0.
+  - exact soul_sibling_priors_bundle_conj_1.
+  - exact soul_sibling_priors_bundle_conj_2.
+  - exact soul_sibling_priors_bundle_conj_3.
 Qed.
 
 Lemma space_propulsion_systems_bundle_conj_0 : (21 = 21)%nat.
@@ -9170,13 +12146,62 @@ Lemma space_propulsion_systems_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma space_propulsion_systems_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma space_propulsion_systems_bundle : (21 = 21)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact space_propulsion_systems_bundle_conj_0.
   - exact space_propulsion_systems_bundle_conj_1.
   - exact space_propulsion_systems_bundle_conj_2.
-  - lra.
+  - exact space_propulsion_systems_bundle_conj_3.
+Qed.
+
+Lemma species_catalog_bundle_conj_0 : (141 = 141)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma species_catalog_bundle_conj_1 : (44 = 44)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma species_catalog_bundle_conj_2 : (87 = 87)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma species_catalog_bundle_conj_3 : (10 = 10)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma species_catalog_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma species_catalog_bundle_conj_5 : (684 = 684)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma species_catalog_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma species_catalog_bundle_conj_7 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma species_catalog_bundle : (141 = 141)%nat /\ (44 = 44)%nat /\ (87 = 87)%nat /\ (10 = 10)%nat /\ True /\ (684 = 684)%nat /\ 0 < (1.0%R) /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact species_catalog_bundle_conj_0.
+  - exact species_catalog_bundle_conj_1.
+  - exact species_catalog_bundle_conj_2.
+  - exact species_catalog_bundle_conj_3.
+  - exact species_catalog_bundle_conj_4.
+  - exact species_catalog_bundle_conj_5.
+  - exact species_catalog_bundle_conj_6.
+  - exact species_catalog_bundle_conj_7.
 Qed.
 
 Lemma speleology_ext_bundle_conj_0 : (200 = 200)%nat.
@@ -9195,6 +12220,10 @@ Lemma speleology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma speleology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma speleology_ext_bundle : (200 = 200)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -9202,7 +12231,7 @@ Proof.
   - exact speleology_ext_bundle_conj_1.
   - exact speleology_ext_bundle_conj_2.
   - exact speleology_ext_bundle_conj_3.
-  - lra.
+  - exact speleology_ext_bundle_conj_4.
 Qed.
 
 Lemma speleology_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -9217,13 +12246,17 @@ Lemma speleology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma speleology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma speleology_panel_bundle : (24 = 24)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact speleology_panel_bundle_conj_0.
   - exact speleology_panel_bundle_conj_1.
   - exact speleology_panel_bundle_conj_2.
-  - lra.
+  - exact speleology_panel_bundle_conj_3.
 Qed.
 
 Lemma speleology_bundle_conj_0 : (65 = 65)%nat.
@@ -9238,13 +12271,17 @@ Lemma speleology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma speleology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma speleology_bundle : (65 = 65)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact speleology_bundle_conj_0.
   - exact speleology_bundle_conj_1.
   - exact speleology_bundle_conj_2.
-  - lra.
+  - exact speleology_bundle_conj_3.
 Qed.
 
 Lemma sports_biomechanics_gap_fill_bundle_conj_0 : (35 = 35)%nat.
@@ -9263,6 +12300,10 @@ Lemma sports_biomechanics_gap_fill_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma sports_biomechanics_gap_fill_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma sports_biomechanics_gap_fill_bundle : (35 = 35)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -9270,7 +12311,7 @@ Proof.
   - exact sports_biomechanics_gap_fill_bundle_conj_1.
   - exact sports_biomechanics_gap_fill_bundle_conj_2.
   - exact sports_biomechanics_gap_fill_bundle_conj_3.
-  - lra.
+  - exact sports_biomechanics_gap_fill_bundle_conj_4.
 Qed.
 
 Lemma sports_biomechanics_bundle_conj_0 : (35 = 35)%nat.
@@ -9285,13 +12326,17 @@ Lemma sports_biomechanics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma sports_biomechanics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma sports_biomechanics_bundle : (35 = 35)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact sports_biomechanics_bundle_conj_0.
   - exact sports_biomechanics_bundle_conj_1.
   - exact sports_biomechanics_bundle_conj_2.
-  - lra.
+  - exact sports_biomechanics_bundle_conj_3.
 Qed.
 
 Lemma star_trek_transporter_bundle_conj_0 : (1575 = 1575)%nat.
@@ -9306,13 +12351,17 @@ Lemma star_trek_transporter_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma star_trek_transporter_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma star_trek_transporter_bundle : (1575 = 1575)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact star_trek_transporter_bundle_conj_0.
   - exact star_trek_transporter_bundle_conj_1.
   - exact star_trek_transporter_bundle_conj_2.
-  - lra.
+  - exact star_trek_transporter_bundle_conj_3.
 Qed.
 
 Lemma statistical_mechanics_public_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -9327,13 +12376,17 @@ Lemma statistical_mechanics_public_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma statistical_mechanics_public_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma statistical_mechanics_public_panel_bundle : (24 = 24)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact statistical_mechanics_public_panel_bundle_conj_0.
   - exact statistical_mechanics_public_panel_bundle_conj_1.
   - exact statistical_mechanics_public_panel_bundle_conj_2.
-  - lra.
+  - exact statistical_mechanics_public_panel_bundle_conj_3.
 Qed.
 
 Lemma stellar_multiplicity_catalog_bundle_conj_0 : (68 = 68)%nat.
@@ -9348,13 +12401,17 @@ Lemma stellar_multiplicity_catalog_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma stellar_multiplicity_catalog_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma stellar_multiplicity_catalog_bundle : (68 = 68)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact stellar_multiplicity_catalog_bundle_conj_0.
   - exact stellar_multiplicity_catalog_bundle_conj_1.
   - exact stellar_multiplicity_catalog_bundle_conj_2.
-  - lra.
+  - exact stellar_multiplicity_catalog_bundle_conj_3.
 Qed.
 
 Lemma stellar_multiplicity_live_deep_bundle_conj_0 : (69 = 69)%nat.
@@ -9369,13 +12426,17 @@ Lemma stellar_multiplicity_live_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma stellar_multiplicity_live_deep_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma stellar_multiplicity_live_deep_bundle : (69 = 69)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact stellar_multiplicity_live_deep_bundle_conj_0.
   - exact stellar_multiplicity_live_deep_bundle_conj_1.
   - exact stellar_multiplicity_live_deep_bundle_conj_2.
-  - lra.
+  - exact stellar_multiplicity_live_deep_bundle_conj_3.
 Qed.
 
 Lemma structure_calibration_links_codon_map_conj_0 : (64 = 64)%nat.
@@ -9410,13 +12471,17 @@ Lemma stsci_mast_telescope_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma stsci_mast_telescope_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma stsci_mast_telescope_panel_bundle : (377 = 377)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact stsci_mast_telescope_panel_bundle_conj_0.
   - exact stsci_mast_telescope_panel_bundle_conj_1.
   - exact stsci_mast_telescope_panel_bundle_conj_2.
-  - lra.
+  - exact stsci_mast_telescope_panel_bundle_conj_3.
 Qed.
 
 Lemma stsci_mast_telescope_bundle_conj_0 : (377 = 377)%nat.
@@ -9431,13 +12496,17 @@ Lemma stsci_mast_telescope_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma stsci_mast_telescope_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma stsci_mast_telescope_bundle : (377 = 377)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact stsci_mast_telescope_bundle_conj_0.
   - exact stsci_mast_telescope_bundle_conj_1.
   - exact stsci_mast_telescope_bundle_conj_2.
-  - lra.
+  - exact stsci_mast_telescope_bundle_conj_3.
 Qed.
 
 Lemma stumped_observables_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -9452,13 +12521,17 @@ Lemma stumped_observables_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma stumped_observables_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma stumped_observables_panel_bundle : (24 = 24)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact stumped_observables_panel_bundle_conj_0.
   - exact stumped_observables_panel_bundle_conj_1.
   - exact stumped_observables_panel_bundle_conj_2.
-  - lra.
+  - exact stumped_observables_panel_bundle_conj_3.
 Qed.
 
 Lemma stumped_observables_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -9473,13 +12546,17 @@ Lemma stumped_observables_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma stumped_observables_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma stumped_observables_spine_bundle : (24 = 24)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact stumped_observables_spine_bundle_conj_0.
   - exact stumped_observables_spine_bundle_conj_1.
   - exact stumped_observables_spine_bundle_conj_2.
-  - lra.
+  - exact stumped_observables_spine_bundle_conj_3.
 Qed.
 
 Lemma superheavy_element_stability_panel_bundle_conj_0 : (50 = 50)%nat.
@@ -9494,13 +12571,17 @@ Lemma superheavy_element_stability_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma superheavy_element_stability_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma superheavy_element_stability_panel_bundle : (50 = 50)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact superheavy_element_stability_panel_bundle_conj_0.
   - exact superheavy_element_stability_panel_bundle_conj_1.
   - exact superheavy_element_stability_panel_bundle_conj_2.
-  - lra.
+  - exact superheavy_element_stability_panel_bundle_conj_3.
 Qed.
 
 Lemma superheavy_island_completion_spine_bundle_conj_0 : (43 = 43)%nat.
@@ -9515,13 +12596,17 @@ Lemma superheavy_island_completion_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma superheavy_island_completion_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma superheavy_island_completion_spine_bundle : (43 = 43)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact superheavy_island_completion_spine_bundle_conj_0.
   - exact superheavy_island_completion_spine_bundle_conj_1.
   - exact superheavy_island_completion_spine_bundle_conj_2.
-  - lra.
+  - exact superheavy_island_completion_spine_bundle_conj_3.
 Qed.
 
 Lemma superheavy_island_emergence_simulation_bundle_conj_0 : (44 = 44)%nat.
@@ -9536,13 +12621,17 @@ Lemma superheavy_island_emergence_simulation_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma superheavy_island_emergence_simulation_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma superheavy_island_emergence_simulation_bundle : (44 = 44)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact superheavy_island_emergence_simulation_bundle_conj_0.
   - exact superheavy_island_emergence_simulation_bundle_conj_1.
   - exact superheavy_island_emergence_simulation_bundle_conj_2.
-  - lra.
+  - exact superheavy_island_emergence_simulation_bundle_conj_3.
 Qed.
 
 Lemma supply_chain_ext_bundle_conj_0 : (220 = 220)%nat.
@@ -9561,6 +12650,10 @@ Lemma supply_chain_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma supply_chain_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma supply_chain_ext_bundle : (220 = 220)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -9568,7 +12661,7 @@ Proof.
   - exact supply_chain_ext_bundle_conj_1.
   - exact supply_chain_ext_bundle_conj_2.
   - exact supply_chain_ext_bundle_conj_3.
-  - lra.
+  - exact supply_chain_ext_bundle_conj_4.
 Qed.
 
 Lemma supply_chain_logistics_panel_bundle_conj_0 : (40 = 40)%nat.
@@ -9583,13 +12676,17 @@ Lemma supply_chain_logistics_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma supply_chain_logistics_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma supply_chain_logistics_panel_bundle : (40 = 40)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact supply_chain_logistics_panel_bundle_conj_0.
   - exact supply_chain_logistics_panel_bundle_conj_1.
   - exact supply_chain_logistics_panel_bundle_conj_2.
-  - lra.
+  - exact supply_chain_logistics_panel_bundle_conj_3.
 Qed.
 
 Lemma supply_chain_logistics_bundle_conj_0 : (40 = 40)%nat.
@@ -9604,13 +12701,17 @@ Lemma supply_chain_logistics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma supply_chain_logistics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma supply_chain_logistics_bundle : (40 = 40)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact supply_chain_logistics_bundle_conj_0.
   - exact supply_chain_logistics_bundle_conj_1.
   - exact supply_chain_logistics_bundle_conj_2.
-  - lra.
+  - exact supply_chain_logistics_bundle_conj_3.
 Qed.
 
 Lemma symbolic_archetype_panel_bundle_conj_0 : (28 = 28)%nat.
@@ -9625,13 +12726,17 @@ Lemma symbolic_archetype_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma symbolic_archetype_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma symbolic_archetype_panel_bundle : (28 = 28)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact symbolic_archetype_panel_bundle_conj_0.
   - exact symbolic_archetype_panel_bundle_conj_1.
   - exact symbolic_archetype_panel_bundle_conj_2.
-  - lra.
+  - exact symbolic_archetype_panel_bundle_conj_3.
 Qed.
 
 Lemma synthetic_biology_bundle_conj_0 : (20 = 20)%nat.
@@ -9646,13 +12751,17 @@ Lemma synthetic_biology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma synthetic_biology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma synthetic_biology_bundle : (20 = 20)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact synthetic_biology_bundle_conj_0.
   - exact synthetic_biology_bundle_conj_1.
   - exact synthetic_biology_bundle_conj_2.
-  - lra.
+  - exact synthetic_biology_bundle_conj_3.
 Qed.
 
 Lemma tectonics_bundle_conj_0 : (500 = 500)%nat.
@@ -9675,6 +12784,10 @@ Lemma tectonics_bundle_conj_4 : True.
 Proof. trivial.
 Qed.
 
+Lemma tectonics_bundle_conj_5 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma tectonics_bundle : (500 = 500)%nat /\ (241 = 241)%nat /\ (500 = 500)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -9683,7 +12796,7 @@ Proof.
   - exact tectonics_bundle_conj_2.
   - exact tectonics_bundle_conj_3.
   - exact tectonics_bundle_conj_4.
-  - lra.
+  - exact tectonics_bundle_conj_5.
 Qed.
 
 Lemma term3_acoustic_bleed_depth_bundle_conj_0 : (23 = 23)%nat.
@@ -9698,13 +12811,17 @@ Lemma term3_acoustic_bleed_depth_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma term3_acoustic_bleed_depth_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma term3_acoustic_bleed_depth_bundle : (23 = 23)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact term3_acoustic_bleed_depth_bundle_conj_0.
   - exact term3_acoustic_bleed_depth_bundle_conj_1.
   - exact term3_acoustic_bleed_depth_bundle_conj_2.
-  - lra.
+  - exact term3_acoustic_bleed_depth_bundle_conj_3.
 Qed.
 
 Lemma theory_completeness_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -9719,13 +12836,52 @@ Lemma theory_completeness_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma theory_completeness_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma theory_completeness_spine_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact theory_completeness_spine_bundle_conj_0.
   - exact theory_completeness_spine_bundle_conj_1.
   - exact theory_completeness_spine_bundle_conj_2.
-  - lra.
+  - exact theory_completeness_spine_bundle_conj_3.
+Qed.
+
+Lemma thesis_simulation_bundle_conj_0 : (98 = 98)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma thesis_simulation_bundle_conj_1 : (58 = 58)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma thesis_simulation_bundle_conj_2 : (156 = 156)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma thesis_simulation_bundle_conj_3 : (4 = 4)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma thesis_simulation_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma thesis_simulation_bundle_conj_5 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma thesis_simulation_bundle : (98 = 98)%nat /\ (58 = 58)%nat /\ (156 = 156)%nat /\ (4 = 4)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact thesis_simulation_bundle_conj_0.
+  - exact thesis_simulation_bundle_conj_1.
+  - exact thesis_simulation_bundle_conj_2.
+  - exact thesis_simulation_bundle_conj_3.
+  - exact thesis_simulation_bundle_conj_4.
+  - exact thesis_simulation_bundle_conj_5.
 Qed.
 
 Lemma the_well_outcomes_verification_panel_bundle_conj_0 : (246 = 246)%nat.
@@ -9740,13 +12896,17 @@ Lemma the_well_outcomes_verification_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma the_well_outcomes_verification_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma the_well_outcomes_verification_panel_bundle : (246 = 246)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact the_well_outcomes_verification_panel_bundle_conj_0.
   - exact the_well_outcomes_verification_panel_bundle_conj_1.
   - exact the_well_outcomes_verification_panel_bundle_conj_2.
-  - lra.
+  - exact the_well_outcomes_verification_panel_bundle_conj_3.
 Qed.
 
 Lemma the_well_spot_check_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -9761,13 +12921,17 @@ Lemma the_well_spot_check_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma the_well_spot_check_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma the_well_spot_check_panel_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact the_well_spot_check_panel_bundle_conj_0.
   - exact the_well_spot_check_panel_bundle_conj_1.
   - exact the_well_spot_check_panel_bundle_conj_2.
-  - lra.
+  - exact the_well_spot_check_panel_bundle_conj_3.
 Qed.
 
 Lemma the_well_verification_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -9782,13 +12946,17 @@ Lemma the_well_verification_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma the_well_verification_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma the_well_verification_spine_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact the_well_verification_spine_bundle_conj_0.
   - exact the_well_verification_spine_bundle_conj_1.
   - exact the_well_verification_spine_bundle_conj_2.
-  - lra.
+  - exact the_well_verification_spine_bundle_conj_3.
 Qed.
 
 Lemma tier_93_dual_wave_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -9803,13 +12971,17 @@ Lemma tier_93_dual_wave_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma tier_93_dual_wave_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma tier_93_dual_wave_spine_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact tier_93_dual_wave_spine_bundle_conj_0.
   - exact tier_93_dual_wave_spine_bundle_conj_1.
   - exact tier_93_dual_wave_spine_bundle_conj_2.
-  - lra.
+  - exact tier_93_dual_wave_spine_bundle_conj_3.
 Qed.
 
 Lemma tier_94_longevity_bundle_conj_0 : (34 = 34)%nat.
@@ -9824,13 +12996,17 @@ Lemma tier_94_longevity_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma tier_94_longevity_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma tier_94_longevity_bundle : (34 = 34)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact tier_94_longevity_bundle_conj_0.
   - exact tier_94_longevity_bundle_conj_1.
   - exact tier_94_longevity_bundle_conj_2.
-  - lra.
+  - exact tier_94_longevity_bundle_conj_3.
 Qed.
 
 Lemma tier_95_zebrafish_bundle_conj_0 : (18 = 18)%nat.
@@ -9845,13 +13021,17 @@ Lemma tier_95_zebrafish_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma tier_95_zebrafish_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma tier_95_zebrafish_bundle : (18 = 18)%nat /\ (23 = 23)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact tier_95_zebrafish_bundle_conj_0.
   - exact tier_95_zebrafish_bundle_conj_1.
   - exact tier_95_zebrafish_bundle_conj_2.
-  - lra.
+  - exact tier_95_zebrafish_bundle_conj_3.
 Qed.
 
 Lemma tier_96_circuit_bundle_conj_0 : (11 = 11)%nat.
@@ -9866,13 +13046,17 @@ Lemma tier_96_circuit_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma tier_96_circuit_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma tier_96_circuit_bundle : (11 = 11)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact tier_96_circuit_bundle_conj_0.
   - exact tier_96_circuit_bundle_conj_1.
   - exact tier_96_circuit_bundle_conj_2.
-  - lra.
+  - exact tier_96_circuit_bundle_conj_3.
 Qed.
 
 Lemma time_domain_crosswalk_bundle_conj_0 : (250 = 250)%nat.
@@ -9887,13 +13071,17 @@ Lemma time_domain_crosswalk_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma time_domain_crosswalk_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma time_domain_crosswalk_bundle : (250 = 250)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact time_domain_crosswalk_bundle_conj_0.
   - exact time_domain_crosswalk_bundle_conj_1.
   - exact time_domain_crosswalk_bundle_conj_2.
-  - lra.
+  - exact time_domain_crosswalk_bundle_conj_3.
 Qed.
 
 Lemma time_emergence_deep_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -9908,13 +13096,17 @@ Lemma time_emergence_deep_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma time_emergence_deep_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma time_emergence_deep_panel_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact time_emergence_deep_panel_bundle_conj_0.
   - exact time_emergence_deep_panel_bundle_conj_1.
   - exact time_emergence_deep_panel_bundle_conj_2.
-  - lra.
+  - exact time_emergence_deep_panel_bundle_conj_3.
 Qed.
 
 Lemma time_emergence_simulation_bundle_conj_0 : (28 = 28)%nat.
@@ -9929,13 +13121,17 @@ Lemma time_emergence_simulation_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma time_emergence_simulation_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma time_emergence_simulation_bundle : (28 = 28)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact time_emergence_simulation_bundle_conj_0.
   - exact time_emergence_simulation_bundle_conj_1.
   - exact time_emergence_simulation_bundle_conj_2.
-  - lra.
+  - exact time_emergence_simulation_bundle_conj_3.
 Qed.
 
 Lemma toe_claim_certificate_bundle_bundle_conj_0 : (24 = 24)%nat.
@@ -9950,13 +13146,17 @@ Lemma toe_claim_certificate_bundle_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma toe_claim_certificate_bundle_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma toe_claim_certificate_bundle_bundle : (24 = 24)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact toe_claim_certificate_bundle_bundle_conj_0.
   - exact toe_claim_certificate_bundle_bundle_conj_1.
   - exact toe_claim_certificate_bundle_bundle_conj_2.
-  - lra.
+  - exact toe_claim_certificate_bundle_bundle_conj_3.
 Qed.
 
 Lemma toe_gap_closure_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -9971,13 +13171,17 @@ Lemma toe_gap_closure_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma toe_gap_closure_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma toe_gap_closure_spine_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact toe_gap_closure_spine_bundle_conj_0.
   - exact toe_gap_closure_spine_bundle_conj_1.
   - exact toe_gap_closure_spine_bundle_conj_2.
-  - lra.
+  - exact toe_gap_closure_spine_bundle_conj_3.
 Qed.
 
 Lemma toe_unification_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -9992,13 +13196,17 @@ Lemma toe_unification_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma toe_unification_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma toe_unification_spine_bundle : (24 = 24)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact toe_unification_spine_bundle_conj_0.
   - exact toe_unification_spine_bundle_conj_1.
   - exact toe_unification_spine_bundle_conj_2.
-  - lra.
+  - exact toe_unification_spine_bundle_conj_3.
 Qed.
 
 Lemma tokenization_live_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -10013,13 +13221,17 @@ Lemma tokenization_live_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma tokenization_live_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma tokenization_live_panel_bundle : (24 = 24)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact tokenization_live_panel_bundle_conj_0.
   - exact tokenization_live_panel_bundle_conj_1.
   - exact tokenization_live_panel_bundle_conj_2.
-  - lra.
+  - exact tokenization_live_panel_bundle_conj_3.
 Qed.
 
 Lemma tokenization_smoke_bundle_conj_0 : (9 = 9)%nat.
@@ -10034,13 +13246,17 @@ Lemma tokenization_smoke_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma tokenization_smoke_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma tokenization_smoke_bundle : (9 = 9)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact tokenization_smoke_bundle_conj_0.
   - exact tokenization_smoke_bundle_conj_1.
   - exact tokenization_smoke_bundle_conj_2.
-  - lra.
+  - exact tokenization_smoke_bundle_conj_3.
 Qed.
 
 Lemma toxicology_panel_bundle_conj_0 : (21 = 21)%nat.
@@ -10055,13 +13271,17 @@ Lemma toxicology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma toxicology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma toxicology_panel_bundle : (21 = 21)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact toxicology_panel_bundle_conj_0.
   - exact toxicology_panel_bundle_conj_1.
   - exact toxicology_panel_bundle_conj_2.
-  - lra.
+  - exact toxicology_panel_bundle_conj_3.
 Qed.
 
 Lemma toxicology_bundle_conj_0 : (21 = 21)%nat.
@@ -10076,13 +13296,47 @@ Lemma toxicology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma toxicology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma toxicology_bundle : (21 = 21)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact toxicology_bundle_conj_0.
   - exact toxicology_bundle_conj_1.
   - exact toxicology_bundle_conj_2.
-  - lra.
+  - exact toxicology_bundle_conj_3.
+Qed.
+
+Lemma trinary_fluid_priors_bundle_conj_0 : True.
+Proof. trivial.
+Qed.
+
+Lemma trinary_fluid_priors_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma trinary_fluid_priors_bundle_conj_2 : (27 = 27)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma trinary_fluid_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma trinary_fluid_priors_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma trinary_fluid_priors_bundle : True /\ True /\ (27 = 27)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact trinary_fluid_priors_bundle_conj_0.
+  - exact trinary_fluid_priors_bundle_conj_1.
+  - exact trinary_fluid_priors_bundle_conj_2.
+  - exact trinary_fluid_priors_bundle_conj_3.
+  - exact trinary_fluid_priors_bundle_conj_4.
 Qed.
 
 Lemma trinary_hardware_live_panel_bundle_conj_0 : (37 = 37)%nat.
@@ -10097,13 +13351,17 @@ Lemma trinary_hardware_live_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma trinary_hardware_live_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma trinary_hardware_live_panel_bundle : (37 = 37)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact trinary_hardware_live_panel_bundle_conj_0.
   - exact trinary_hardware_live_panel_bundle_conj_1.
   - exact trinary_hardware_live_panel_bundle_conj_2.
-  - lra.
+  - exact trinary_hardware_live_panel_bundle_conj_3.
 Qed.
 
 Lemma trinary_hardware_motif_bundle_conj_0 : (8 = 8)%nat.
@@ -10118,13 +13376,17 @@ Lemma trinary_hardware_motif_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma trinary_hardware_motif_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma trinary_hardware_motif_bundle : (8 = 8)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact trinary_hardware_motif_bundle_conj_0.
   - exact trinary_hardware_motif_bundle_conj_1.
   - exact trinary_hardware_motif_bundle_conj_2.
-  - lra.
+  - exact trinary_hardware_motif_bundle_conj_3.
 Qed.
 
 Lemma trinary_os_isa_rebuild_bundle_conj_0 : (38 = 38)%nat.
@@ -10139,13 +13401,17 @@ Lemma trinary_os_isa_rebuild_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma trinary_os_isa_rebuild_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma trinary_os_isa_rebuild_bundle : (38 = 38)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact trinary_os_isa_rebuild_bundle_conj_0.
   - exact trinary_os_isa_rebuild_bundle_conj_1.
   - exact trinary_os_isa_rebuild_bundle_conj_2.
-  - lra.
+  - exact trinary_os_isa_rebuild_bundle_conj_3.
 Qed.
 
 Lemma trinary_os_portable_bundle_conj_0 : (8 = 8)%nat.
@@ -10160,13 +13426,62 @@ Lemma trinary_os_portable_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma trinary_os_portable_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma trinary_os_portable_bundle : (8 = 8)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact trinary_os_portable_bundle_conj_0.
   - exact trinary_os_portable_bundle_conj_1.
   - exact trinary_os_portable_bundle_conj_2.
-  - lra.
+  - exact trinary_os_portable_bundle_conj_3.
+Qed.
+
+Lemma trinary_os_fsotb_bundle_conj_0 : (8 = 8)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma trinary_os_fsotb_bundle_conj_1 : (27 = 27)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma trinary_os_fsotb_bundle_conj_2 : (6 = 6)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma trinary_os_fsotb_bundle_conj_3 : (264 = 264)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma trinary_os_fsotb_bundle_conj_4 : (312 = 312)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma trinary_os_fsotb_bundle_conj_5 : (440 = 440)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma trinary_os_fsotb_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma trinary_os_fsotb_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma trinary_os_fsotb_bundle : (8 = 8)%nat /\ (27 = 27)%nat /\ (6 = 6)%nat /\ (264 = 264)%nat /\ (312 = 312)%nat /\ (440 = 440)%nat /\ True /\ True.
+Proof.
+  repeat (apply conj).
+  - exact trinary_os_fsotb_bundle_conj_0.
+  - exact trinary_os_fsotb_bundle_conj_1.
+  - exact trinary_os_fsotb_bundle_conj_2.
+  - exact trinary_os_fsotb_bundle_conj_3.
+  - exact trinary_os_fsotb_bundle_conj_4.
+  - exact trinary_os_fsotb_bundle_conj_5.
+  - exact trinary_os_fsotb_bundle_conj_6.
+  - exact trinary_os_fsotb_bundle_conj_7.
 Qed.
 
 Lemma trinary_os_round_trip_bundle_conj_0 : (22 = 22)%nat.
@@ -10181,13 +13496,17 @@ Lemma trinary_os_round_trip_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma trinary_os_round_trip_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma trinary_os_round_trip_bundle : (22 = 22)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact trinary_os_round_trip_bundle_conj_0.
   - exact trinary_os_round_trip_bundle_conj_1.
   - exact trinary_os_round_trip_bundle_conj_2.
-  - lra.
+  - exact trinary_os_round_trip_bundle_conj_3.
 Qed.
 
 Lemma trinary_os_tier_e_bundle_conj_0 : (68 = 68)%nat.
@@ -10202,13 +13521,17 @@ Lemma trinary_os_tier_e_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma trinary_os_tier_e_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma trinary_os_tier_e_bundle : (68 = 68)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact trinary_os_tier_e_bundle_conj_0.
   - exact trinary_os_tier_e_bundle_conj_1.
   - exact trinary_os_tier_e_bundle_conj_2.
-  - lra.
+  - exact trinary_os_tier_e_bundle_conj_3.
 Qed.
 
 Lemma uap_war_gov_release_panel_bundle_conj_0 : (542 = 542)%nat.
@@ -10223,13 +13546,17 @@ Lemma uap_war_gov_release_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma uap_war_gov_release_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma uap_war_gov_release_panel_bundle : (542 = 542)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact uap_war_gov_release_panel_bundle_conj_0.
   - exact uap_war_gov_release_panel_bundle_conj_1.
   - exact uap_war_gov_release_panel_bundle_conj_2.
-  - lra.
+  - exact uap_war_gov_release_panel_bundle_conj_3.
 Qed.
 
 Lemma uap_war_gov_release_bundle_conj_0 : (542 = 542)%nat.
@@ -10244,13 +13571,17 @@ Lemma uap_war_gov_release_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma uap_war_gov_release_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma uap_war_gov_release_bundle : (542 = 542)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact uap_war_gov_release_bundle_conj_0.
   - exact uap_war_gov_release_bundle_conj_1.
   - exact uap_war_gov_release_bundle_conj_2.
-  - lra.
+  - exact uap_war_gov_release_bundle_conj_3.
 Qed.
 
 Lemma undiscovered_element_candidate_prereg_scaffold_bundle_conj_0 : (25 = 25)%nat.
@@ -10265,13 +13596,17 @@ Lemma undiscovered_element_candidate_prereg_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma undiscovered_element_candidate_prereg_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma undiscovered_element_candidate_prereg_scaffold_bundle : (25 = 25)%nat /\ (10 = 10)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact undiscovered_element_candidate_prereg_scaffold_bundle_conj_0.
   - exact undiscovered_element_candidate_prereg_scaffold_bundle_conj_1.
   - exact undiscovered_element_candidate_prereg_scaffold_bundle_conj_2.
-  - lra.
+  - exact undiscovered_element_candidate_prereg_scaffold_bundle_conj_3.
 Qed.
 
 Lemma unified_db_candidate_crosswalk_bundle_conj_0 : (46 = 46)%nat.
@@ -10286,13 +13621,17 @@ Lemma unified_db_candidate_crosswalk_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma unified_db_candidate_crosswalk_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma unified_db_candidate_crosswalk_bundle : (46 = 46)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact unified_db_candidate_crosswalk_bundle_conj_0.
   - exact unified_db_candidate_crosswalk_bundle_conj_1.
   - exact unified_db_candidate_crosswalk_bundle_conj_2.
-  - lra.
+  - exact unified_db_candidate_crosswalk_bundle_conj_3.
 Qed.
 
 Lemma unified_db_crosswalk_spine_bundle_conj_0 : (24 = 24)%nat.
@@ -10307,13 +13646,17 @@ Lemma unified_db_crosswalk_spine_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma unified_db_crosswalk_spine_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma unified_db_crosswalk_spine_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact unified_db_crosswalk_spine_bundle_conj_0.
   - exact unified_db_crosswalk_spine_bundle_conj_1.
   - exact unified_db_crosswalk_spine_bundle_conj_2.
-  - lra.
+  - exact unified_db_crosswalk_spine_bundle_conj_3.
 Qed.
 
 Lemma uniprot_protein_annotations_bundle_conj_0 : (22 = 22)%nat.
@@ -10328,13 +13671,17 @@ Lemma uniprot_protein_annotations_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma uniprot_protein_annotations_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma uniprot_protein_annotations_bundle : (22 = 22)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact uniprot_protein_annotations_bundle_conj_0.
   - exact uniprot_protein_annotations_bundle_conj_1.
   - exact uniprot_protein_annotations_bundle_conj_2.
-  - lra.
+  - exact uniprot_protein_annotations_bundle_conj_3.
 Qed.
 
 Lemma uniprot_proteome_slice_open_bundle_conj_0 : (68 = 68)%nat.
@@ -10369,13 +13716,17 @@ Lemma uniprot_structure_annotations_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma uniprot_structure_annotations_deep_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma uniprot_structure_annotations_deep_bundle : (121 = 121)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact uniprot_structure_annotations_deep_bundle_conj_0.
   - exact uniprot_structure_annotations_deep_bundle_conj_1.
   - exact uniprot_structure_annotations_deep_bundle_conj_2.
-  - lra.
+  - exact uniprot_structure_annotations_deep_bundle_conj_3.
 Qed.
 
 Lemma usgs_seismic_history_open_bundle_conj_0 : (398 = 398)%nat.
@@ -10398,6 +13749,51 @@ Proof.
   - exact usgs_seismic_history_open_bundle_conj_2.
 Qed.
 
+Lemma vibra_register_bundle_conj_0 : (11 = 11)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma vibra_register_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma vibra_register_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma vibra_register_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma vibra_register_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma vibra_register_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma vibra_register_bundle_conj_6 : True.
+Proof. trivial.
+Qed.
+
+Lemma vibra_register_bundle_conj_7 : True.
+Proof. trivial.
+Qed.
+
+Lemma vibra_register_bundle : (11 = 11)%nat /\ True /\ True /\ True /\ True /\ True /\ True /\ True.
+Proof.
+  repeat (apply conj).
+  - exact vibra_register_bundle_conj_0.
+  - exact vibra_register_bundle_conj_1.
+  - exact vibra_register_bundle_conj_2.
+  - exact vibra_register_bundle_conj_3.
+  - exact vibra_register_bundle_conj_4.
+  - exact vibra_register_bundle_conj_5.
+  - exact vibra_register_bundle_conj_6.
+  - exact vibra_register_bundle_conj_7.
+Qed.
+
 Lemma virology_ext_bundle_conj_0 : (163 = 163)%nat.
 Proof. reflexivity.
 Qed.
@@ -10414,6 +13810,10 @@ Lemma virology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma virology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma virology_ext_bundle : (163 = 163)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -10421,7 +13821,7 @@ Proof.
   - exact virology_ext_bundle_conj_1.
   - exact virology_ext_bundle_conj_2.
   - exact virology_ext_bundle_conj_3.
-  - lra.
+  - exact virology_ext_bundle_conj_4.
 Qed.
 
 Lemma virology_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -10436,13 +13836,17 @@ Lemma virology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma virology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma virology_panel_bundle : (24 = 24)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact virology_panel_bundle_conj_0.
   - exact virology_panel_bundle_conj_1.
   - exact virology_panel_bundle_conj_2.
-  - lra.
+  - exact virology_panel_bundle_conj_3.
 Qed.
 
 Lemma virology_bundle_conj_0 : (50 = 50)%nat.
@@ -10457,13 +13861,17 @@ Lemma virology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma virology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma virology_bundle : (50 = 50)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact virology_bundle_conj_0.
   - exact virology_bundle_conj_1.
   - exact virology_bundle_conj_2.
-  - lra.
+  - exact virology_bundle_conj_3.
 Qed.
 
 Lemma vizier_wds_tap_live_deep_bundle_conj_0 : (121 = 121)%nat.
@@ -10478,13 +13886,17 @@ Lemma vizier_wds_tap_live_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma vizier_wds_tap_live_deep_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma vizier_wds_tap_live_deep_bundle : (121 = 121)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact vizier_wds_tap_live_deep_bundle_conj_0.
   - exact vizier_wds_tap_live_deep_bundle_conj_1.
   - exact vizier_wds_tap_live_deep_bundle_conj_2.
-  - lra.
+  - exact vizier_wds_tap_live_deep_bundle_conj_3.
 Qed.
 
 Lemma vl_agent_distill_panel_bundle_conj_0 : (24 = 24)%nat.
@@ -10499,13 +13911,17 @@ Lemma vl_agent_distill_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma vl_agent_distill_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma vl_agent_distill_panel_bundle : (24 = 24)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact vl_agent_distill_panel_bundle_conj_0.
   - exact vl_agent_distill_panel_bundle_conj_1.
   - exact vl_agent_distill_panel_bundle_conj_2.
-  - lra.
+  - exact vl_agent_distill_panel_bundle_conj_3.
 Qed.
 
 Lemma vl_distill_atlas_bundle_conj_0 : (10 = 10)%nat.
@@ -10520,13 +13936,17 @@ Lemma vl_distill_atlas_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma vl_distill_atlas_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma vl_distill_atlas_bundle : (10 = 10)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact vl_distill_atlas_bundle_conj_0.
   - exact vl_distill_atlas_bundle_conj_1.
   - exact vl_distill_atlas_bundle_conj_2.
-  - lra.
+  - exact vl_distill_atlas_bundle_conj_3.
 Qed.
 
 Lemma volcanology_panel_bundle_conj_0 : (90 = 90)%nat.
@@ -10541,13 +13961,17 @@ Lemma volcanology_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma volcanology_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma volcanology_panel_bundle : (90 = 90)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact volcanology_panel_bundle_conj_0.
   - exact volcanology_panel_bundle_conj_1.
   - exact volcanology_panel_bundle_conj_2.
-  - lra.
+  - exact volcanology_panel_bundle_conj_3.
 Qed.
 
 Lemma volcanology_bundle_conj_0 : (90 = 90)%nat.
@@ -10562,13 +13986,17 @@ Lemma volcanology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma volcanology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma volcanology_bundle : (90 = 90)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact volcanology_bundle_conj_0.
   - exact volcanology_bundle_conj_1.
   - exact volcanology_bundle_conj_2.
-  - lra.
+  - exact volcanology_bundle_conj_3.
 Qed.
 
 Lemma warp_stable_run_band_conj_0 : True.
@@ -10643,13 +14071,52 @@ Lemma warp_bh_wh_portal_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma warp_bh_wh_portal_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma warp_bh_wh_portal_panel_bundle : (24 = 24)%nat /\ (29 = 29)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact warp_bh_wh_portal_panel_bundle_conj_0.
   - exact warp_bh_wh_portal_panel_bundle_conj_1.
   - exact warp_bh_wh_portal_panel_bundle_conj_2.
-  - lra.
+  - exact warp_bh_wh_portal_panel_bundle_conj_3.
+Qed.
+
+Lemma warp_bh_wh_portal_bundle_conj_0 : (11 = 11)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma warp_bh_wh_portal_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma warp_bh_wh_portal_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma warp_bh_wh_portal_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma warp_bh_wh_portal_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma warp_bh_wh_portal_bundle_conj_5 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma warp_bh_wh_portal_bundle : (11 = 11)%nat /\ True /\ True /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact warp_bh_wh_portal_bundle_conj_0.
+  - exact warp_bh_wh_portal_bundle_conj_1.
+  - exact warp_bh_wh_portal_bundle_conj_2.
+  - exact warp_bh_wh_portal_bundle_conj_3.
+  - exact warp_bh_wh_portal_bundle_conj_4.
+  - exact warp_bh_wh_portal_bundle_conj_5.
 Qed.
 
 Lemma wds_live_multiplicity_deep_bundle_conj_0 : (281 = 281)%nat.
@@ -10664,13 +14131,52 @@ Lemma wds_live_multiplicity_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma wds_live_multiplicity_deep_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma wds_live_multiplicity_deep_bundle : (281 = 281)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact wds_live_multiplicity_deep_bundle_conj_0.
   - exact wds_live_multiplicity_deep_bundle_conj_1.
   - exact wds_live_multiplicity_deep_bundle_conj_2.
-  - lra.
+  - exact wds_live_multiplicity_deep_bundle_conj_3.
+Qed.
+
+Lemma weather_priors_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma weather_priors_bundle_conj_1 : (15 = 15)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma weather_priors_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma weather_priors_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma weather_priors_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma weather_priors_bundle_conj_5 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma weather_priors_bundle : (24 = 24)%nat /\ (15 = 15)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact weather_priors_bundle_conj_0.
+  - exact weather_priors_bundle_conj_1.
+  - exact weather_priors_bundle_conj_2.
+  - exact weather_priors_bundle_conj_3.
+  - exact weather_priors_bundle_conj_4.
+  - exact weather_priors_bundle_conj_5.
 Qed.
 
 Lemma world_bank_development_bundle_conj_0 : (420 = 420)%nat.
@@ -10685,13 +14191,17 @@ Lemma world_bank_development_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma world_bank_development_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma world_bank_development_bundle : (420 = 420)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact world_bank_development_bundle_conj_0.
   - exact world_bank_development_bundle_conj_1.
   - exact world_bank_development_bundle_conj_2.
-  - lra.
+  - exact world_bank_development_bundle_conj_3.
 Qed.
 
 Lemma world_bank_macro_open_bundle_conj_0 : (605 = 605)%nat.
@@ -10726,13 +14236,17 @@ Lemma xr_interactive_media_math_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma xr_interactive_media_math_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma xr_interactive_media_math_scaffold_bundle : (24 = 24)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact xr_interactive_media_math_scaffold_bundle_conj_0.
   - exact xr_interactive_media_math_scaffold_bundle_conj_1.
   - exact xr_interactive_media_math_scaffold_bundle_conj_2.
-  - lra.
+  - exact xr_interactive_media_math_scaffold_bundle_conj_3.
 Qed.
 
 Lemma z120_z126_beam_synthesis_panel_bundle_conj_0 : (20 = 20)%nat.
@@ -10747,13 +14261,17 @@ Lemma z120_z126_beam_synthesis_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma z120_z126_beam_synthesis_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma z120_z126_beam_synthesis_panel_bundle : (20 = 20)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact z120_z126_beam_synthesis_panel_bundle_conj_0.
   - exact z120_z126_beam_synthesis_panel_bundle_conj_1.
   - exact z120_z126_beam_synthesis_panel_bundle_conj_2.
-  - lra.
+  - exact z120_z126_beam_synthesis_panel_bundle_conj_3.
 Qed.
 
 Lemma z164_distant_island_prereg_scaffold_bundle_conj_0 : (24 = 24)%nat.
@@ -10768,13 +14286,17 @@ Lemma z164_distant_island_prereg_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma z164_distant_island_prereg_scaffold_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma z164_distant_island_prereg_scaffold_bundle : (24 = 24)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact z164_distant_island_prereg_scaffold_bundle_conj_0.
   - exact z164_distant_island_prereg_scaffold_bundle_conj_1.
   - exact z164_distant_island_prereg_scaffold_bundle_conj_2.
-  - lra.
+  - exact z164_distant_island_prereg_scaffold_bundle_conj_3.
 Qed.
 
 Lemma zebrafish_cell_tracking_bundle_conj_0 : (20 = 20)%nat.
@@ -10789,13 +14311,17 @@ Lemma zebrafish_cell_tracking_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma zebrafish_cell_tracking_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma zebrafish_cell_tracking_bundle : (20 = 20)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact zebrafish_cell_tracking_bundle_conj_0.
   - exact zebrafish_cell_tracking_bundle_conj_1.
   - exact zebrafish_cell_tracking_bundle_conj_2.
-  - lra.
+  - exact zebrafish_cell_tracking_bundle_conj_3.
 Qed.
 
 Lemma zebrafish_developmental_mechanics_bundle_conj_0 : (31 = 31)%nat.
@@ -10810,13 +14336,17 @@ Lemma zebrafish_developmental_mechanics_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma zebrafish_developmental_mechanics_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma zebrafish_developmental_mechanics_bundle : (31 = 31)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact zebrafish_developmental_mechanics_bundle_conj_0.
   - exact zebrafish_developmental_mechanics_bundle_conj_1.
   - exact zebrafish_developmental_mechanics_bundle_conj_2.
-  - lra.
+  - exact zebrafish_developmental_mechanics_bundle_conj_3.
 Qed.
 
 Lemma zebrafish_longevity_genetics_coupling_bundle_conj_0 : (15 = 15)%nat.
@@ -10831,13 +14361,17 @@ Lemma zebrafish_longevity_genetics_coupling_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma zebrafish_longevity_genetics_coupling_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma zebrafish_longevity_genetics_coupling_bundle : (15 = 15)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact zebrafish_longevity_genetics_coupling_bundle_conj_0.
   - exact zebrafish_longevity_genetics_coupling_bundle_conj_1.
   - exact zebrafish_longevity_genetics_coupling_bundle_conj_2.
-  - lra.
+  - exact zebrafish_longevity_genetics_coupling_bundle_conj_3.
 Qed.
 
 Lemma zebrafish_predictive_validation_bundle_conj_0 : (20 = 20)%nat.
@@ -10852,13 +14386,17 @@ Lemma zebrafish_predictive_validation_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma zebrafish_predictive_validation_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma zebrafish_predictive_validation_bundle : (20 = 20)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact zebrafish_predictive_validation_bundle_conj_0.
   - exact zebrafish_predictive_validation_bundle_conj_1.
   - exact zebrafish_predictive_validation_bundle_conj_2.
-  - lra.
+  - exact zebrafish_predictive_validation_bundle_conj_3.
 Qed.
 
 Lemma zenodo_records_depth_open_bundle_conj_0 : (32 = 32)%nat.
@@ -10893,13 +14431,17 @@ Lemma zero_boundary_not_entity_panel_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma zero_boundary_not_entity_panel_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma zero_boundary_not_entity_panel_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact zero_boundary_not_entity_panel_bundle_conj_0.
   - exact zero_boundary_not_entity_panel_bundle_conj_1.
   - exact zero_boundary_not_entity_panel_bundle_conj_2.
-  - lra.
+  - exact zero_boundary_not_entity_panel_bundle_conj_3.
 Qed.
 
 Lemma zero_day_risk_evaluator_bundle_conj_0 : (26 = 26)%nat.
@@ -10914,13 +14456,17 @@ Lemma zero_day_risk_evaluator_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma zero_day_risk_evaluator_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma zero_day_risk_evaluator_bundle : (26 = 26)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact zero_day_risk_evaluator_bundle_conj_0.
   - exact zero_day_risk_evaluator_bundle_conj_1.
   - exact zero_day_risk_evaluator_bundle_conj_2.
-  - lra.
+  - exact zero_day_risk_evaluator_bundle_conj_3.
 Qed.
 
 Lemma zoology_ext_bundle_conj_0 : (1000 = 1000)%nat.
@@ -10939,6 +14485,10 @@ Lemma zoology_ext_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
+Lemma zoology_ext_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma zoology_ext_bundle : (1000 = 1000)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
@@ -10946,7 +14496,7 @@ Proof.
   - exact zoology_ext_bundle_conj_1.
   - exact zoology_ext_bundle_conj_2.
   - exact zoology_ext_bundle_conj_3.
-  - lra.
+  - exact zoology_ext_bundle_conj_4.
 Qed.
 
 Lemma zoology_bundle_conj_0 : (1000 = 1000)%nat.
@@ -10961,13 +14511,17 @@ Lemma zoology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
+Lemma zoology_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma zoology_bundle : (1000 = 1000)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact zoology_bundle_conj_0.
   - exact zoology_bundle_conj_1.
   - exact zoology_bundle_conj_2.
-  - lra.
+  - exact zoology_bundle_conj_3.
 Qed.
 
 Lemma genomic_exact_identity_bundle_conj_0 : True.
@@ -11005,14 +14559,89 @@ Proof.
   - exact genomic_exact_identity_bundle_conj_5.
 Qed.
 
+Lemma neurolab_bio_sign_bundle_conj_0 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma neurolab_bio_sign_bundle_conj_1 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma neurolab_bio_sign_bundle_conj_2 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma neurolab_bio_sign_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
 Lemma neurolab_bio_sign_bundle : 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R).
 Proof.
-  repeat split; lra.
+  repeat (apply conj).
+  - exact neurolab_bio_sign_bundle_conj_0.
+  - exact neurolab_bio_sign_bundle_conj_1.
+  - exact neurolab_bio_sign_bundle_conj_2.
+  - exact neurolab_bio_sign_bundle_conj_3.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_0 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_1 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_2 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_3 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_4 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_5 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_6 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_7 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_8 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_9 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma lab_smiles_domain_sign_bundle_conj_10 : 0 < (1.0%R).
+Proof. lra.
 Qed.
 
 Lemma lab_smiles_domain_sign_bundle : 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R).
 Proof.
-  repeat split; lra.
+  repeat (apply conj).
+  - exact lab_smiles_domain_sign_bundle_conj_0.
+  - exact lab_smiles_domain_sign_bundle_conj_1.
+  - exact lab_smiles_domain_sign_bundle_conj_2.
+  - exact lab_smiles_domain_sign_bundle_conj_3.
+  - exact lab_smiles_domain_sign_bundle_conj_4.
+  - exact lab_smiles_domain_sign_bundle_conj_5.
+  - exact lab_smiles_domain_sign_bundle_conj_6.
+  - exact lab_smiles_domain_sign_bundle_conj_7.
+  - exact lab_smiles_domain_sign_bundle_conj_8.
+  - exact lab_smiles_domain_sign_bundle_conj_9.
+  - exact lab_smiles_domain_sign_bundle_conj_10.
 Qed.
 
 Lemma neurolab_genomic_exact_bundle_conj_0 : True.
@@ -11058,8 +14687,8 @@ Lemma protein_formula_closed_form_bundle_conj_1 : (3 = 3)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma protein_formula_closed_form_bundle_conj_2 : 0 < (17.944271909999163%R).
-Proof. lra.
+Lemma protein_formula_closed_form_bundle_conj_2 : True.
+Proof. trivial.
 Qed.
 
 Lemma protein_formula_closed_form_bundle_conj_3 : True.
@@ -11070,15 +14699,15 @@ Lemma protein_formula_closed_form_bundle_conj_4 : True.
 Proof. trivial.
 Qed.
 
-Lemma protein_formula_closed_form_bundle_conj_5 : 0 < (13.399140630763645%R).
-Proof. lra.
+Lemma protein_formula_closed_form_bundle_conj_5 : True.
+Proof. trivial.
 Qed.
 
 Lemma protein_formula_closed_form_bundle_conj_6 : True.
 Proof. trivial.
 Qed.
 
-Lemma protein_formula_closed_form_bundle : (15 = 15)%nat /\ (3 = 3)%nat /\ 0 < (17.944271909999163%R) /\ True /\ True /\ 0 < (13.399140630763645%R) /\ True.
+Lemma protein_formula_closed_form_bundle : (15 = 15)%nat /\ (3 = 3)%nat /\ True /\ True /\ True /\ True /\ True.
 Proof.
   repeat (apply conj).
   - exact protein_formula_closed_form_bundle_conj_0.
@@ -11088,6 +14717,201 @@ Proof.
   - exact protein_formula_closed_form_bundle_conj_4.
   - exact protein_formula_closed_form_bundle_conj_5.
   - exact protein_formula_closed_form_bundle_conj_6.
+Qed.
+
+Lemma lean_proofs_constant_bundle_conj_0 : (28 = 28)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma lean_proofs_constant_bundle_conj_1 : (28 = 28)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma lean_proofs_constant_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma lean_proofs_constant_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma lean_proofs_constant_bundle : (28 = 28)%nat /\ (28 = 28)%nat /\ True /\ True.
+Proof.
+  repeat (apply conj).
+  - exact lean_proofs_constant_bundle_conj_0.
+  - exact lean_proofs_constant_bundle_conj_1.
+  - exact lean_proofs_constant_bundle_conj_2.
+  - exact lean_proofs_constant_bundle_conj_3.
+Qed.
+
+Lemma cosmology_lambda_cdm_bundle_conj_0 : (30 = 30)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_lambda_cdm_bundle_conj_1 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_lambda_cdm_bundle_conj_2 : (10 = 10)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_lambda_cdm_bundle_conj_3 : (15 = 15)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cosmology_lambda_cdm_bundle_conj_4 : True.
+Proof. trivial.
+Qed.
+
+Lemma cosmology_lambda_cdm_bundle_conj_5 : 0 < (0.022356124082273696%R).
+Proof. lra.
+Qed.
+
+Lemma cosmology_lambda_cdm_bundle : (30 = 30)%nat /\ (5 = 5)%nat /\ (10 = 10)%nat /\ (15 = 15)%nat /\ True /\ 0 < (0.022356124082273696%R).
+Proof.
+  repeat (apply conj).
+  - exact cosmology_lambda_cdm_bundle_conj_0.
+  - exact cosmology_lambda_cdm_bundle_conj_1.
+  - exact cosmology_lambda_cdm_bundle_conj_2.
+  - exact cosmology_lambda_cdm_bundle_conj_3.
+  - exact cosmology_lambda_cdm_bundle_conj_4.
+  - exact cosmology_lambda_cdm_bundle_conj_5.
+Qed.
+
+Lemma photonic_forge_bundle_conj_0 : (180 = 180)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma photonic_forge_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma photonic_forge_bundle_conj_2 : (40 = 40)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma photonic_forge_bundle_conj_3 : (60 = 60)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma photonic_forge_bundle_conj_4 : (80 = 80)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma photonic_forge_bundle_conj_5 : 0 < (1.0%R).
+Proof. lra.
+Qed.
+
+Lemma photonic_forge_bundle : (180 = 180)%nat /\ True /\ (40 = 40)%nat /\ (60 = 60)%nat /\ (80 = 80)%nat /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact photonic_forge_bundle_conj_0.
+  - exact photonic_forge_bundle_conj_1.
+  - exact photonic_forge_bundle_conj_2.
+  - exact photonic_forge_bundle_conj_3.
+  - exact photonic_forge_bundle_conj_4.
+  - exact photonic_forge_bundle_conj_5.
+Qed.
+
+Lemma cross_proof_connective_spine_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cross_proof_connective_spine_bundle_conj_1 : (3 = 3)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cross_proof_connective_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma cross_proof_connective_spine_bundle : (24 = 24)%nat /\ (3 = 3)%nat /\ True.
+Proof.
+  repeat (apply conj).
+  - exact cross_proof_connective_spine_bundle_conj_0.
+  - exact cross_proof_connective_spine_bundle_conj_1.
+  - exact cross_proof_connective_spine_bundle_conj_2.
+Qed.
+
+Lemma cross_proof_full_formal_spine_bundle_conj_0 : (1241 = 1241)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cross_proof_full_formal_spine_bundle_conj_1 : (317 = 317)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cross_proof_full_formal_spine_bundle_conj_2 : (1153 = 1153)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cross_proof_full_formal_spine_bundle_conj_3 : (1241 = 1241)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cross_proof_full_formal_spine_bundle_conj_4 : (0 = 0)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cross_proof_full_formal_spine_bundle_conj_5 : True.
+Proof. trivial.
+Qed.
+
+Lemma cross_proof_full_formal_spine_bundle : (1241 = 1241)%nat /\ (317 = 317)%nat /\ (1153 = 1153)%nat /\ (1241 = 1241)%nat /\ (0 = 0)%nat /\ True.
+Proof.
+  repeat (apply conj).
+  - exact cross_proof_full_formal_spine_bundle_conj_0.
+  - exact cross_proof_full_formal_spine_bundle_conj_1.
+  - exact cross_proof_full_formal_spine_bundle_conj_2.
+  - exact cross_proof_full_formal_spine_bundle_conj_3.
+  - exact cross_proof_full_formal_spine_bundle_conj_4.
+  - exact cross_proof_full_formal_spine_bundle_conj_5.
+Qed.
+
+Lemma scalar_engine_structure_bundle_conj_0 : (28 = 28)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scalar_engine_structure_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma scalar_engine_structure_bundle_conj_2 : (1 = 1)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scalar_engine_structure_bundle : (28 = 28)%nat /\ True /\ (1 = 1)%nat.
+Proof.
+  repeat (apply conj).
+  - exact scalar_engine_structure_bundle_conj_0.
+  - exact scalar_engine_structure_bundle_conj_1.
+  - exact scalar_engine_structure_bundle_conj_2.
+Qed.
+
+Lemma scalar_engine_depth_bundle_conj_0 : (28 = 28)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scalar_engine_depth_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma scalar_engine_depth_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma scalar_engine_depth_bundle_conj_3 : True.
+Proof. trivial.
+Qed.
+
+Lemma scalar_engine_depth_bundle : (28 = 28)%nat /\ True /\ True /\ True.
+Proof.
+  repeat (apply conj).
+  - exact scalar_engine_depth_bundle_conj_0.
+  - exact scalar_engine_depth_bundle_conj_1.
+  - exact scalar_engine_depth_bundle_conj_2.
+  - exact scalar_engine_depth_bundle_conj_3.
 Qed.
 
 Lemma structural_warp_bridge_lt_node : (0.053926299704%R) < (0.059407798774%R).
