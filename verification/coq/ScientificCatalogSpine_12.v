@@ -4,6 +4,46 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_higgs_branching_records_pos : (0 < 27)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_higgs_branching_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_higgs_branching_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_higgs_branching_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_higgs_branching_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_neutrino_physics_panel_records_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_neutrino_physics_panel_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_neutrino_physics_panel_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_neutrino_physics_panel_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_neutrino_physics_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_nufit_neutrino_open_records_pos : (0 < 10)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -441,45 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_hvac_thermal_systems_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_linguistics_formal_records_pos : (0 < 23)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_linguistics_formal_pooled_under_half_pct : ((0.000561846%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_linguistics_formal_pooled_lt_half_pure : ((0.000561846%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_linguistics_formal_max_scalar_under_half_pct : ((0.00423739%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_linguistics_formal_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_math_generator_airfoil_rmse_records_pos : (0 < 23)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_math_generator_airfoil_rmse_pooled_under_half_pct : ((0.000561846%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_math_generator_airfoil_rmse_pooled_lt_half_pure : ((0.000561846%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_math_generator_airfoil_rmse_max_scalar_under_half_pct : ((0.00423739%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_math_generator_airfoil_rmse_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

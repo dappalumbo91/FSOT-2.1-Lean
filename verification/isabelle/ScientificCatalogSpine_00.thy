@@ -228,21 +228,6 @@ lemma cat_culinary_arts_benchmark_json_max_scalar_under_half_pct: "(0.462279 :: 
 lemma cat_culinary_arts_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_intelligence_compression_benchmark_json_records_pos: "0 < (572 :: nat)"
-  by eval
-
-lemma cat_intelligence_compression_benchmark_json_pooled_under_half_pct: "(0.21775817740070294 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_intelligence_compression_benchmark_json_pooled_lt_half_pure: "(0.21775817740070294 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_intelligence_compression_benchmark_json_max_scalar_under_half_pct: "(0.4567065036654742 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_intelligence_compression_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_malware_threat_intelligence_records_pos: "0 < (85 :: nat)"
   by eval
 
@@ -361,6 +346,21 @@ lemma cat_dark_sector_open_problems_max_scalar_under_half_pct: "(0.368503 :: rea
   by eval
 
 lemma cat_dark_sector_open_problems_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_acoustic_resonance_materials_records_pos: "0 < (29 :: nat)"
+  by eval
+
+lemma cat_acoustic_resonance_materials_pooled_under_half_pct: "(0.008381497018411083 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_acoustic_resonance_materials_pooled_lt_half_pure: "(0.008381497018411083 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_acoustic_resonance_materials_max_scalar_under_half_pct: "(0.3555 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_acoustic_resonance_materials_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

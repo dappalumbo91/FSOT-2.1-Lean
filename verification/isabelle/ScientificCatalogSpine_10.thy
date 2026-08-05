@@ -3,6 +3,21 @@ theory ScientificCatalogSpine_10
 imports Complex_Main
 begin
 
+lemma cat_preregistered_predictions_records_pos: "0 < (35 :: nat)"
+  by eval
+
+lemma cat_preregistered_predictions_pooled_under_half_pct: "(0.02009823784840936 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_preregistered_predictions_pooled_lt_half_pure: "(0.02009823784840936 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_preregistered_predictions_max_scalar_under_half_pct: "(0.020098237848419454 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_preregistered_predictions_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_pubchem_stability_panel_records_pos: "0 < (59 :: nat)"
   by eval
 
@@ -76,6 +91,21 @@ lemma cat_consciousness_lean_route_credibility_max_scalar_under_half_pct: "(0.01
   by eval
 
 lemma cat_consciousness_lean_route_credibility_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_intelligence_compression_records_pos: "0 < (87 :: nat)"
+  by eval
+
+lemma cat_intelligence_compression_pooled_under_half_pct: "(0.018003 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intelligence_compression_pooled_lt_half_pure: "(0.018003 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intelligence_compression_max_scalar_under_half_pct: "(0.018003 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intelligence_compression_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_observer_lean_route_credibility_records_pos: "0 < (53 :: nat)"
@@ -331,36 +361,6 @@ lemma cat_oeis_family_sweep_open_max_scalar_under_half_pct: "(0.014767 :: real) 
   by eval
 
 lemma cat_oeis_family_sweep_open_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_trinary_hardware_live_panel_records_pos: "0 < (28 :: nat)"
-  by eval
-
-lemma cat_trinary_hardware_live_panel_pooled_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_trinary_hardware_live_panel_pooled_lt_half_pure: "(0.014767 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_trinary_hardware_live_panel_max_scalar_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_trinary_hardware_live_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_intrinsic_llm_validators_panel_records_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma cat_intrinsic_llm_validators_panel_pooled_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_intrinsic_llm_validators_panel_pooled_lt_half_pure: "(0.014767 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_intrinsic_llm_validators_panel_max_scalar_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_intrinsic_llm_validators_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

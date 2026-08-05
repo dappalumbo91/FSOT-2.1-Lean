@@ -3,6 +3,36 @@ theory ScientificCatalogSpine_15
 imports Complex_Main
 begin
 
+lemma cat_breakthrough_discoveries_2024_2026_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_breakthrough_discoveries_2024_2026_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_breakthrough_discoveries_2024_2026_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_clinicaltrials_medical_panel_records_pos: "0 < (394 :: nat)"
+  by eval
+
+lemma cat_clinicaltrials_medical_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_computational_reasoning_benchmark_json_records_pos: "0 < (577 :: nat)"
+  by eval
+
+lemma cat_computational_reasoning_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_computational_reasoning_benchmark_json_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_computational_reasoning_benchmark_json_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_computational_reasoning_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_consciousness_expansion_spine_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -331,36 +361,6 @@ lemma cat_geology_stratigraphy_records_pos: "0 < (1957 :: nat)"
   by eval
 
 lemma cat_geology_stratigraphy_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_geomagnetism_benchmark_json_records_pos: "0 < (524 :: nat)"
-  by eval
-
-lemma cat_geomagnetism_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_geomagnetism_benchmark_json_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_geomagnetism_benchmark_json_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_geomagnetism_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_government_open_data_spine_records_pos: "0 < (28 :: nat)"
-  by eval
-
-lemma cat_government_open_data_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_government_open_data_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_government_open_data_spine_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_government_open_data_spine_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

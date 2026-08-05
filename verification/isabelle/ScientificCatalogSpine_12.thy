@@ -3,6 +3,36 @@ theory ScientificCatalogSpine_12
 imports Complex_Main
 begin
 
+lemma cat_higgs_branching_records_pos: "0 < (27 :: nat)"
+  by eval
+
+lemma cat_higgs_branching_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_higgs_branching_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_higgs_branching_max_scalar_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_higgs_branching_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_neutrino_physics_panel_records_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cat_neutrino_physics_panel_pooled_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_neutrino_physics_panel_pooled_lt_half_pure: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_neutrino_physics_panel_max_scalar_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_neutrino_physics_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_nufit_neutrino_open_records_pos: "0 < (10 :: nat)"
   by eval
 
@@ -331,36 +361,6 @@ lemma cat_hvac_thermal_systems_max_scalar_under_half_pct: "(0.00423739 :: real) 
   by eval
 
 lemma cat_hvac_thermal_systems_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_linguistics_formal_records_pos: "0 < (23 :: nat)"
-  by eval
-
-lemma cat_linguistics_formal_pooled_under_half_pct: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_linguistics_formal_pooled_lt_half_pure: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_linguistics_formal_max_scalar_under_half_pct: "(0.00423739 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_linguistics_formal_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_math_generator_airfoil_rmse_records_pos: "0 < (23 :: nat)"
-  by eval
-
-lemma cat_math_generator_airfoil_rmse_pooled_under_half_pct: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_math_generator_airfoil_rmse_pooled_lt_half_pure: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_math_generator_airfoil_rmse_max_scalar_under_half_pct: "(0.00423739 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_math_generator_airfoil_rmse_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

@@ -3,21 +3,6 @@ theory ScientificCatalogSpine_01
 imports Complex_Main
 begin
 
-lemma cat_acoustic_resonance_materials_records_pos: "0 < (29 :: nat)"
-  by eval
-
-lemma cat_acoustic_resonance_materials_pooled_under_half_pct: "(0.008381497018411083 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_acoustic_resonance_materials_pooled_lt_half_pure: "(0.008381497018411083 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_acoustic_resonance_materials_max_scalar_under_half_pct: "(0.3555 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_acoustic_resonance_materials_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_formula_precision_spine_records_pos: "0 < (26 :: nat)"
   by eval
 
@@ -361,6 +346,21 @@ lemma cat_intrinsic_llm_validators_max_scalar_under_half_pct: "(0.238944484 :: r
   by eval
 
 lemma cat_intrinsic_llm_validators_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_network_science_public_panel_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_network_science_public_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_network_science_public_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_network_science_public_panel_max_scalar_under_half_pct: "(0.238944484 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_network_science_public_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

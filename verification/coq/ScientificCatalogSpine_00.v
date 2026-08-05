@@ -304,26 +304,6 @@ Lemma cat_culinary_arts_benchmark_json_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_intelligence_compression_benchmark_json_records_pos : (0 < 572)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_intelligence_compression_benchmark_json_pooled_under_half_pct : ((0.21775817740070294%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_intelligence_compression_benchmark_json_pooled_lt_half_pure : ((0.21775817740070294%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_intelligence_compression_benchmark_json_max_scalar_under_half_pct : ((0.4567065036654742%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_intelligence_compression_benchmark_json_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
 Lemma cat_malware_threat_intelligence_records_pos : (0 < 85)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -481,5 +461,25 @@ Proof. lra. Qed.
 
 
 Lemma cat_dark_sector_open_problems_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_acoustic_resonance_materials_records_pos : (0 < 29)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_acoustic_resonance_materials_pooled_under_half_pct : ((0.008381497018411083%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_acoustic_resonance_materials_pooled_lt_half_pure : ((0.008381497018411083%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_acoustic_resonance_materials_max_scalar_under_half_pct : ((0.3555%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_acoustic_resonance_materials_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

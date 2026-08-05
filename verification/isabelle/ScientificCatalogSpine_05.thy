@@ -3,21 +3,6 @@ theory ScientificCatalogSpine_05
 imports Complex_Main
 begin
 
-lemma cat_rcsb_pdb_structures_records_pos: "0 < (45 :: nat)"
-  by eval
-
-lemma cat_rcsb_pdb_structures_pooled_under_half_pct: "(0.0265185 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_rcsb_pdb_structures_pooled_lt_half_pure: "(0.0265185 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_rcsb_pdb_structures_max_scalar_under_half_pct: "(0.040788 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_rcsb_pdb_structures_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_fluid_spacetime_observable_spine_records_pos: "0 < (29 :: nat)"
   by eval
 
@@ -183,6 +168,36 @@ lemma cat_complexity_folding_emergence_panel_max_scalar_under_half_pct: "(0.0380
 lemma cat_complexity_folding_emergence_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_nist_asd_multi_species_open_records_pos: "0 < (26 :: nat)"
+  by eval
+
+lemma cat_nist_asd_multi_species_open_pooled_under_half_pct: "(0.036791 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nist_asd_multi_species_open_pooled_lt_half_pure: "(0.036791 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nist_asd_multi_species_open_max_scalar_under_half_pct: "(0.036791 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nist_asd_multi_species_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_nist_asd_spectroscopy_open_records_pos: "0 < (13 :: nat)"
+  by eval
+
+lemma cat_nist_asd_spectroscopy_open_pooled_under_half_pct: "(0.036791 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nist_asd_spectroscopy_open_pooled_lt_half_pure: "(0.036791 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nist_asd_spectroscopy_open_max_scalar_under_half_pct: "(0.036791 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nist_asd_spectroscopy_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_consciousness_galactic_orbital_bridge_records_pos: "0 < (48 :: nat)"
   by eval
 
@@ -346,21 +361,6 @@ lemma cat_fpc_temporal_coupling_max_scalar_under_half_pct: "(0.032418 :: real) <
   by eval
 
 lemma cat_fpc_temporal_coupling_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_finance_markets_records_pos: "0 < (150 :: nat)"
-  by eval
-
-lemma cat_finance_markets_pooled_under_half_pct: "(0.02584018082743169 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_finance_markets_pooled_lt_half_pure: "(0.02584018082743169 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_finance_markets_max_scalar_under_half_pct: "(0.03230022603429596 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_finance_markets_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

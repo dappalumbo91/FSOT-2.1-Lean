@@ -4,26 +4,6 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma cat_rcsb_pdb_structures_records_pos : (0 < 45)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_rcsb_pdb_structures_pooled_under_half_pct : ((0.0265185%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_rcsb_pdb_structures_pooled_lt_half_pure : ((0.0265185%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_rcsb_pdb_structures_max_scalar_under_half_pct : ((0.040788%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_rcsb_pdb_structures_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
 Lemma cat_fluid_spacetime_observable_spine_records_pos : (0 < 29)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -244,6 +224,46 @@ Lemma cat_complexity_folding_emergence_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
+Lemma cat_nist_asd_multi_species_open_records_pos : (0 < 26)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_nist_asd_multi_species_open_pooled_under_half_pct : ((0.036791%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_multi_species_open_pooled_lt_half_pure : ((0.036791%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_multi_species_open_max_scalar_under_half_pct : ((0.036791%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_multi_species_open_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_nist_asd_spectroscopy_open_records_pos : (0 < 13)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_nist_asd_spectroscopy_open_pooled_under_half_pct : ((0.036791%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_spectroscopy_open_pooled_lt_half_pure : ((0.036791%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_spectroscopy_open_max_scalar_under_half_pct : ((0.036791%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_spectroscopy_open_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_consciousness_galactic_orbital_bridge_records_pos : (0 < 48)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_fpc_temporal_coupling_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_finance_markets_records_pos : (0 < 150)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_finance_markets_pooled_under_half_pct : ((0.02584018082743169%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_finance_markets_pooled_lt_half_pure : ((0.02584018082743169%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_finance_markets_max_scalar_under_half_pct : ((0.03230022603429596%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_finance_markets_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

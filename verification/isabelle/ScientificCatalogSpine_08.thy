@@ -3,6 +3,21 @@ theory ScientificCatalogSpine_08
 imports Complex_Main
 begin
 
+lemma cat_blackhole_whitehole_cycle_live_panel_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_blackhole_whitehole_cycle_live_panel_pooled_under_half_pct: "(0.026472 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_blackhole_whitehole_cycle_live_panel_pooled_lt_half_pure: "(0.026472 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_blackhole_whitehole_cycle_live_panel_max_scalar_under_half_pct: "(0.026472 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_blackhole_whitehole_cycle_live_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_desi_edr_fits_residual_records_pos: "0 < (97144 :: nat)"
   by eval
 
@@ -346,21 +361,6 @@ lemma cat_gaia_dr3_tap_deep_max_scalar_under_half_pct: "(0.022461 :: real) < (0.
   by eval
 
 lemma cat_gaia_dr3_tap_deep_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_nasa_donki_solar_panel_records_pos: "0 < (2148 :: nat)"
-  by eval
-
-lemma cat_nasa_donki_solar_panel_pooled_under_half_pct: "(0.020755 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nasa_donki_solar_panel_pooled_lt_half_pure: "(0.020755 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nasa_donki_solar_panel_max_scalar_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nasa_donki_solar_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

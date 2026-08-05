@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_blackhole_whitehole_cycle_live_panel_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_blackhole_whitehole_cycle_live_panel_pooled_under_half_pct : ((0.026472%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_blackhole_whitehole_cycle_live_panel_pooled_lt_half_pure : ((0.026472%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_blackhole_whitehole_cycle_live_panel_max_scalar_under_half_pct : ((0.026472%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_blackhole_whitehole_cycle_live_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_desi_edr_fits_residual_records_pos : (0 < 97144)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_gaia_dr3_tap_deep_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_nasa_donki_solar_panel_records_pos : (0 < 2148)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_nasa_donki_solar_panel_pooled_under_half_pct : ((0.020755%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_nasa_donki_solar_panel_pooled_lt_half_pure : ((0.020755%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_nasa_donki_solar_panel_max_scalar_under_half_pct : ((0.022461%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_nasa_donki_solar_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

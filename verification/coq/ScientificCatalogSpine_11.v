@@ -4,6 +4,46 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_trinary_hardware_live_panel_records_pos : (0 < 28)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_trinary_hardware_live_panel_pooled_under_half_pct : ((0.014767%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_trinary_hardware_live_panel_pooled_lt_half_pure : ((0.014767%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_trinary_hardware_live_panel_max_scalar_under_half_pct : ((0.014767%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_trinary_hardware_live_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_intrinsic_llm_validators_panel_records_pos : (0 < 21)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_intrinsic_llm_validators_panel_pooled_under_half_pct : ((0.014767%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_intrinsic_llm_validators_panel_pooled_lt_half_pure : ((0.014767%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_intrinsic_llm_validators_panel_max_scalar_under_half_pct : ((0.014767%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_intrinsic_llm_validators_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_crossref_scholarly_panel_records_pos : (0 < 200)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -441,45 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_fusion_lean_route_credibility_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_higgs_branching_records_pos : (0 < 27)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_higgs_branching_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_higgs_branching_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_higgs_branching_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_higgs_branching_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_neutrino_physics_panel_records_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_neutrino_physics_panel_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_neutrino_physics_panel_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_neutrino_physics_panel_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_neutrino_physics_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

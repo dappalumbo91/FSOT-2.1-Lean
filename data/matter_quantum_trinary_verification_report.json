@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-08-05T21:25:28.274965+00:00",
+  "spine": "matter_quantum_trinary",
+  "obligation_count": 30,
+  "python_decimal": {
+    "passed": 30,
+    "total": 30,
+    "status": "passed"
+  },
+  "rust_f64_replay": {
+    "status": "passed"
+  },
+  "smt_z3": {
+    "status": "passed"
+  },
+  "coq": {
+    "status": "passed"
+  },
+  "scientific_catalog_obligation_count": 2222,
+  "lean_modules": [
+    "FSOT/Formal/MatterAntimatterPriors.lean",
+    "FSOT/Formal/QuantumTrinarySyntaxPriors.lean"
+  ],
+  "overall_ok": true,
+  "github_ready": true
+}

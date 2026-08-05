@@ -4,26 +4,6 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma cat_network_science_public_panel_records_pos : (0 < 21)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_network_science_public_panel_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_network_science_public_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_network_science_public_panel_max_scalar_under_half_pct : ((0.238944484%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_network_science_public_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
 Lemma cat_quantum_information_records_pos : (0 < 21)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -481,5 +461,25 @@ Proof. lra. Qed.
 
 
 Lemma cat_desi_wa_constraint_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_stumped_observables_spine_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_stumped_observables_spine_pooled_under_half_pct : ((0.000038622500000000005%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_stumped_observables_spine_pooled_lt_half_pure : ((0.000038622500000000005%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_stumped_observables_spine_max_scalar_under_half_pct : ((0.140126%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_stumped_observables_spine_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

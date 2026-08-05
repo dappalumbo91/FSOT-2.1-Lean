@@ -4,26 +4,6 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma cat_acoustic_resonance_materials_records_pos : (0 < 29)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_acoustic_resonance_materials_pooled_under_half_pct : ((0.008381497018411083%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_acoustic_resonance_materials_pooled_lt_half_pure : ((0.008381497018411083%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_acoustic_resonance_materials_max_scalar_under_half_pct : ((0.3555%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_acoustic_resonance_materials_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
 Lemma cat_formula_precision_spine_records_pos : (0 < 26)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -481,5 +461,25 @@ Proof. lra. Qed.
 
 
 Lemma cat_intrinsic_llm_validators_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_network_science_public_panel_records_pos : (0 < 21)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_network_science_public_panel_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_network_science_public_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_network_science_public_panel_max_scalar_under_half_pct : ((0.238944484%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_network_science_public_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

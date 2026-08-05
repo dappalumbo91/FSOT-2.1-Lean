@@ -3,6 +3,36 @@ theory ScientificCatalogSpine_11
 imports Complex_Main
 begin
 
+lemma cat_trinary_hardware_live_panel_records_pos: "0 < (28 :: nat)"
+  by eval
+
+lemma cat_trinary_hardware_live_panel_pooled_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_trinary_hardware_live_panel_pooled_lt_half_pure: "(0.014767 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_trinary_hardware_live_panel_max_scalar_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_trinary_hardware_live_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_panel_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_panel_pooled_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_panel_pooled_lt_half_pure: "(0.014767 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_panel_max_scalar_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_crossref_scholarly_panel_records_pos: "0 < (200 :: nat)"
   by eval
 
@@ -331,36 +361,6 @@ lemma cat_fusion_lean_route_credibility_max_scalar_under_half_pct: "(0.009504 ::
   by eval
 
 lemma cat_fusion_lean_route_credibility_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_higgs_branching_records_pos: "0 < (27 :: nat)"
-  by eval
-
-lemma cat_higgs_branching_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_higgs_branching_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_higgs_branching_max_scalar_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_higgs_branching_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_neutrino_physics_panel_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_neutrino_physics_panel_pooled_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_neutrino_physics_panel_pooled_lt_half_pure: "(0.009504 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_neutrino_physics_panel_max_scalar_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_neutrino_physics_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

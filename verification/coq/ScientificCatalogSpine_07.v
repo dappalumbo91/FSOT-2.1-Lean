@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_fluid_phase_current_spine_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_fluid_phase_current_spine_pooled_under_half_pct : ((0.000038622500000000005%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fluid_phase_current_spine_pooled_lt_half_pure : ((0.000038622500000000005%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_fluid_phase_current_spine_max_scalar_under_half_pct : ((0.0310845%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fluid_phase_current_spine_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_epidemiology_records_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_arxiv_gravitational_waves_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_blackhole_whitehole_cycle_live_panel_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_blackhole_whitehole_cycle_live_panel_pooled_under_half_pct : ((0.026472%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_blackhole_whitehole_cycle_live_panel_pooled_lt_half_pure : ((0.026472%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_blackhole_whitehole_cycle_live_panel_max_scalar_under_half_pct : ((0.026472%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_blackhole_whitehole_cycle_live_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

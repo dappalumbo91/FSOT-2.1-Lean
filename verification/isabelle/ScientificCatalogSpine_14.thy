@@ -3,6 +3,36 @@ theory ScientificCatalogSpine_14
 imports Complex_Main
 begin
 
+lemma cat_warp_bh_wh_portal_panel_records_pos: "0 < (23 :: nat)"
+  by eval
+
+lemma cat_warp_bh_wh_portal_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_warp_bh_wh_portal_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_warp_bh_wh_portal_panel_max_scalar_under_half_pct: "(0.000713348 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_warp_bh_wh_portal_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_ecology_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_ecology_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_ecology_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_ecology_max_scalar_under_half_pct: "(0.000561846 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_ecology_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_econophysics_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -331,36 +361,6 @@ lemma cat_breakthrough_discoveries_2024_2026_records_pos: "0 < (21 :: nat)"
   by eval
 
 lemma cat_breakthrough_discoveries_2024_2026_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_breakthrough_discoveries_2024_2026_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_breakthrough_discoveries_2024_2026_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_breakthrough_discoveries_2024_2026_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_clinicaltrials_medical_panel_records_pos: "0 < (394 :: nat)"
-  by eval
-
-lemma cat_clinicaltrials_medical_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_computational_reasoning_benchmark_json_records_pos: "0 < (577 :: nat)"
-  by eval
-
-lemma cat_computational_reasoning_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_computational_reasoning_benchmark_json_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_computational_reasoning_benchmark_json_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_computational_reasoning_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

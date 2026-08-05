@@ -1,0 +1,265 @@
+{
+  "generated_at": "2026-08-05T21:25:18.630867+00:00",
+  "version": "1.0",
+  "tier": "matter_quantum_trinary",
+  "obligation_count": 30,
+  "panels": [
+    "matter_antimatter_benchmark.json",
+    "quantum_trinary_syntax_benchmark.json"
+  ],
+  "modules": [
+    "FSOT/Formal/MatterAntimatterPriors.lean",
+    "FSOT/Formal/QuantumTrinarySyntaxPriors.lean",
+    "verification/coq/MatterQuantumTrinarySpine.v",
+    "verification/isabelle/MatterQuantumTrinarySpine.thy",
+    "verification/smt/matter_quantum_trinary_bounds.smt2",
+    "verification/rust/fsot_matter_quantum_trinary_replay"
+  ],
+  "obligations": [
+    {
+      "id": "matter_antimatter_count_pos",
+      "coq_id": "matter_antimatter_count_pos",
+      "kind": "nat_pos",
+      "value": 16,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "matter_antimatter_records"
+    },
+    {
+      "id": "matter_antimatter_pooled_under_half",
+      "coq_id": "matter_antimatter_pooled_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "matter_antimatter_green",
+      "statement": "pooled_median_error_pct(matter_antimatter) < 0.5"
+    },
+    {
+      "id": "matter_antimatter_deff_eq",
+      "coq_id": "matter_antimatter_deff_eq",
+      "kind": "eq_nat",
+      "value": 5,
+      "right_value": 5,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "matter_antimatter_D_eff"
+    },
+    {
+      "id": "matter_antimatter_electron_positron_mass_equality_err_lt_half",
+      "coq_id": "matter_antimatter_electron_positron_mass_equality_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_CPT_mass_equality"
+    },
+    {
+      "id": "matter_antimatter_proton_antiproton_mass_equality_err_lt_half",
+      "coq_id": "matter_antimatter_proton_antiproton_mass_equality_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_CPT_mass_equality"
+    },
+    {
+      "id": "matter_antimatter_muon_antimuon_mass_equality_err_lt_half",
+      "coq_id": "matter_antimatter_muon_antimuon_mass_equality_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_CPT_mass_equality"
+    },
+    {
+      "id": "matter_antimatter_ee_pair_threshold_MeV_err_lt_half",
+      "coq_id": "matter_antimatter_ee_pair_threshold_MeV_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_pair_threshold_ee"
+    },
+    {
+      "id": "matter_antimatter_ppbar_pair_threshold_MeV_err_lt_half",
+      "coq_id": "matter_antimatter_ppbar_pair_threshold_MeV_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_pair_threshold_ppbar"
+    },
+    {
+      "id": "matter_antimatter_eta_baryon_photon_err_lt_half",
+      "coq_id": "matter_antimatter_eta_baryon_photon_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.004079227596869896,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_baryon_asymmetry_eta"
+    },
+    {
+      "id": "matter_antimatter_Omega_b_h2_err_lt_half",
+      "coq_id": "matter_antimatter_Omega_b_h2_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.06202913601381668,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_Omega_b_h2"
+    },
+    {
+      "id": "matter_antimatter_matter_particle_S_emergence_err_lt_half",
+      "coq_id": "matter_antimatter_matter_particle_S_emergence_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_matter_emergence"
+    },
+    {
+      "id": "matter_antimatter_nuclear_matter_S_emergence_err_lt_half",
+      "coq_id": "matter_antimatter_nuclear_matter_S_emergence_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_nuclear_emergence"
+    },
+    {
+      "id": "matter_antimatter_cosmology_damping_sign_err_lt_half",
+      "coq_id": "matter_antimatter_cosmology_damping_sign_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_cosmo_damps_bulk"
+    },
+    {
+      "id": "matter_antimatter_conjugate_channel_not_equal_matter_err_lt_half",
+      "coq_id": "matter_antimatter_conjugate_channel_not_equal_matter_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_conjugate_distinct"
+    },
+    {
+      "id": "matter_antimatter_matter_over_conjugate_preference_err_lt_half",
+      "coq_id": "matter_antimatter_matter_over_conjugate_preference_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Matter_Antimatter",
+      "claim": "MA_matter_preference"
+    },
+    {
+      "id": "quantum_trinary_syntax_count_pos",
+      "coq_id": "quantum_trinary_syntax_count_pos",
+      "kind": "nat_pos",
+      "value": 27,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax_records"
+    },
+    {
+      "id": "quantum_trinary_syntax_pooled_under_half",
+      "coq_id": "quantum_trinary_syntax_pooled_under_half",
+      "kind": "lt_half",
+      "value": 0.005907,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax_green",
+      "statement": "pooled_median_error_pct(quantum_trinary_syntax) < 0.5"
+    },
+    {
+      "id": "quantum_trinary_syntax_deff_eq",
+      "coq_id": "quantum_trinary_syntax_deff_eq",
+      "kind": "eq_nat",
+      "value": 11,
+      "right_value": 11,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax_D_eff"
+    },
+    {
+      "id": "quantum_trinary_syntax_chsh_classical_bound_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_chsh_classical_bound_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.095551,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_chsh_tsirelson_bound_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_chsh_tsirelson_bound_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.095551,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_bell_state_entropy_ebits_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_bell_state_entropy_ebits_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.095551,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_epr_singlet_correlation_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_epr_singlet_correlation_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.095551,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_surface_code_threshold_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_surface_code_threshold_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.005907,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_grover_speedup_exponent_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_grover_speedup_exponent_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.005907,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_Quantum_Mechanics_S_positive_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_Quantum_Mechanics_S_positive_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_tsirelson_exceeds_chsh_classical_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_tsirelson_exceeds_chsh_classical_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_tsirelson_minus_classical_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_tsirelson_minus_classical_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.095551,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_quantum_core_S_bundle_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_quantum_core_S_bundle_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_opcodes_eq_27_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_opcodes_eq_27_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    },
+    {
+      "id": "quantum_trinary_syntax_3_pow_3_err_lt_half",
+      "coq_id": "quantum_trinary_syntax_3_pow_3_err_lt_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "MatterQuantumTrinary.Quantum_Trinary_Syntax",
+      "claim": "quantum_trinary_syntax"
+    }
+  ],
+  "honest_scope": "Numeric residual gates for Matter/Antimatter and Quantum/Trinary syntax panels. Not continuum Sakharov or full QI complexity theory."
+}

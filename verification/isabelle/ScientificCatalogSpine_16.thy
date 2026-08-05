@@ -3,6 +3,36 @@ theory ScientificCatalogSpine_16
 imports Complex_Main
 begin
 
+lemma cat_geomagnetism_benchmark_json_records_pos: "0 < (524 :: nat)"
+  by eval
+
+lemma cat_geomagnetism_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_geomagnetism_benchmark_json_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_geomagnetism_benchmark_json_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_geomagnetism_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_government_open_data_spine_records_pos: "0 < (28 :: nat)"
+  by eval
+
+lemma cat_government_open_data_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_government_open_data_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_government_open_data_spine_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_government_open_data_spine_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_grace_cryosphere_benchmark_json_records_pos: "0 < (253 :: nat)"
   by eval
 
@@ -331,36 +361,6 @@ lemma cat_planetary_structure_benchmark_json_max_scalar_under_half_pct: "(0 :: r
   by eval
 
 lemma cat_planetary_structure_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_plasma_physics_benchmark_json_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_plasma_physics_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_plasma_physics_benchmark_json_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_plasma_physics_benchmark_json_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_plasma_physics_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_portable_clone_verify_records_pos: "0 < (419 :: nat)"
-  by eval
-
-lemma cat_portable_clone_verify_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_portable_clone_verify_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_portable_clone_verify_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_portable_clone_verify_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

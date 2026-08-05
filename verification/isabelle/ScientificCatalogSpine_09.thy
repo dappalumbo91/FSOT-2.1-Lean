@@ -3,6 +3,21 @@ theory ScientificCatalogSpine_09
 imports Complex_Main
 begin
 
+lemma cat_nasa_donki_solar_panel_records_pos: "0 < (2148 :: nat)"
+  by eval
+
+lemma cat_nasa_donki_solar_panel_pooled_under_half_pct: "(0.020755 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nasa_donki_solar_panel_pooled_lt_half_pure: "(0.020755 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nasa_donki_solar_panel_max_scalar_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nasa_donki_solar_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_simbad_identity_depth_open_records_pos: "0 < (1365 :: nat)"
   by eval
 
@@ -346,21 +361,6 @@ lemma cat_fsot_gpu_engineering_spine_max_scalar_under_half_pct: "(0.020755 :: re
   by eval
 
 lemma cat_fsot_gpu_engineering_spine_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_preregistered_predictions_records_pos: "0 < (35 :: nat)"
-  by eval
-
-lemma cat_preregistered_predictions_pooled_under_half_pct: "(0.02009823784840936 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_preregistered_predictions_pooled_lt_half_pure: "(0.02009823784840936 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_preregistered_predictions_max_scalar_under_half_pct: "(0.020098237848419454 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_preregistered_predictions_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

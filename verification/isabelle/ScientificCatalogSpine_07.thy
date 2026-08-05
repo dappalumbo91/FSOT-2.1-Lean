@@ -3,6 +3,21 @@ theory ScientificCatalogSpine_07
 imports Complex_Main
 begin
 
+lemma cat_fluid_phase_current_spine_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_fluid_phase_current_spine_pooled_under_half_pct: "(0.0000386225 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_phase_current_spine_pooled_lt_half_pure: "(0.0000386225 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_phase_current_spine_max_scalar_under_half_pct: "(0.0310845 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_phase_current_spine_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_epidemiology_records_pos: "0 < (20 :: nat)"
   by eval
 
@@ -346,21 +361,6 @@ lemma cat_arxiv_gravitational_waves_panel_max_scalar_under_half_pct: "(0.026472 
   by eval
 
 lemma cat_arxiv_gravitational_waves_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_blackhole_whitehole_cycle_live_panel_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_blackhole_whitehole_cycle_live_panel_pooled_under_half_pct: "(0.026472 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_blackhole_whitehole_cycle_live_panel_pooled_lt_half_pure: "(0.026472 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_blackhole_whitehole_cycle_live_panel_max_scalar_under_half_pct: "(0.026472 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_blackhole_whitehole_cycle_live_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

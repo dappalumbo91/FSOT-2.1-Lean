@@ -3,51 +3,6 @@ theory ScientificCatalogSpine_04
 imports Complex_Main
 begin
 
-lemma cat_immunology_panel_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_immunology_panel_pooled_under_half_pct: "(0.040788 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_immunology_panel_pooled_lt_half_pure: "(0.040788 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_immunology_panel_max_scalar_under_half_pct: "(0.048946 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_immunology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_pubchem_live_deep_records_pos: "0 < (5043 :: nat)"
-  by eval
-
-lemma cat_pubchem_live_deep_pooled_under_half_pct: "(0.032631 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_pubchem_live_deep_pooled_lt_half_pure: "(0.032631 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_pubchem_live_deep_max_scalar_under_half_pct: "(0.048946 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_pubchem_live_deep_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_founding_quantum_vacuum_panel_records_pos: "0 < (5 :: nat)"
-  by eval
-
-lemma cat_founding_quantum_vacuum_panel_pooled_under_half_pct: "(0.047775 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_founding_quantum_vacuum_panel_pooled_lt_half_pure: "(0.047775 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_founding_quantum_vacuum_panel_max_scalar_under_half_pct: "(0.047775 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_founding_quantum_vacuum_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_mycology_records_pos: "0 < (420 :: nat)"
   by eval
 
@@ -61,6 +16,36 @@ lemma cat_mycology_max_scalar_under_half_pct: "(0.047615187057828696 :: real) < 
   by eval
 
 lemma cat_mycology_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_endf_iaea_nuclear_open_records_pos: "0 < (517 :: nat)"
+  by eval
+
+lemma cat_endf_iaea_nuclear_open_pooled_under_half_pct: "(0.046065 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_endf_iaea_nuclear_open_pooled_lt_half_pure: "(0.046065 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_endf_iaea_nuclear_open_max_scalar_under_half_pct: "(0.046065 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_endf_iaea_nuclear_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_nuclear_iaea_open_records_pos: "0 < (360 :: nat)"
+  by eval
+
+lemma cat_nuclear_iaea_open_pooled_under_half_pct: "(0.046065 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nuclear_iaea_open_pooled_lt_half_pure: "(0.046065 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nuclear_iaea_open_max_scalar_under_half_pct: "(0.046065 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nuclear_iaea_open_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_cardiology_records_pos: "0 < (45 :: nat)"
@@ -361,6 +346,21 @@ lemma cat_pubchem_depth_open_max_scalar_under_half_pct: "(0.040788 :: real) < (0
   by eval
 
 lemma cat_pubchem_depth_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_rcsb_pdb_structures_records_pos: "0 < (45 :: nat)"
+  by eval
+
+lemma cat_rcsb_pdb_structures_pooled_under_half_pct: "(0.0265185 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_rcsb_pdb_structures_pooled_lt_half_pure: "(0.0265185 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_rcsb_pdb_structures_max_scalar_under_half_pct: "(0.040788 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_rcsb_pdb_structures_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

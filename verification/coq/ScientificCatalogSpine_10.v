@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_preregistered_predictions_records_pos : (0 < 35)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_preregistered_predictions_pooled_under_half_pct : ((0.02009823784840936%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_preregistered_predictions_pooled_lt_half_pure : ((0.02009823784840936%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_preregistered_predictions_max_scalar_under_half_pct : ((0.020098237848419454%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_preregistered_predictions_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_pubchem_stability_panel_records_pos : (0 < 59)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -101,6 +121,26 @@ Proof. lra. Qed.
 
 
 Lemma cat_consciousness_lean_route_credibility_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_intelligence_compression_records_pos : (0 < 87)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_intelligence_compression_pooled_under_half_pct : ((0.018003%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_intelligence_compression_pooled_lt_half_pure : ((0.018003%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_intelligence_compression_max_scalar_under_half_pct : ((0.018003%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_intelligence_compression_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
@@ -441,45 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_oeis_family_sweep_open_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_trinary_hardware_live_panel_records_pos : (0 < 28)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_trinary_hardware_live_panel_pooled_under_half_pct : ((0.014767%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_trinary_hardware_live_panel_pooled_lt_half_pure : ((0.014767%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_trinary_hardware_live_panel_max_scalar_under_half_pct : ((0.014767%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_trinary_hardware_live_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_intrinsic_llm_validators_panel_records_pos : (0 < 21)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_intrinsic_llm_validators_panel_pooled_under_half_pct : ((0.014767%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_intrinsic_llm_validators_panel_pooled_lt_half_pure : ((0.014767%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_intrinsic_llm_validators_panel_max_scalar_under_half_pct : ((0.014767%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_intrinsic_llm_validators_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

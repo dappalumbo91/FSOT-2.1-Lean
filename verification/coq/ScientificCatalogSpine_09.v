@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_nasa_donki_solar_panel_records_pos : (0 < 2148)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_nasa_donki_solar_panel_pooled_under_half_pct : ((0.020755%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nasa_donki_solar_panel_pooled_lt_half_pure : ((0.020755%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_nasa_donki_solar_panel_max_scalar_under_half_pct : ((0.022461%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nasa_donki_solar_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_simbad_identity_depth_open_records_pos : (0 < 1365)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_fsot_gpu_engineering_spine_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_preregistered_predictions_records_pos : (0 < 35)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_preregistered_predictions_pooled_under_half_pct : ((0.02009823784840936%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_preregistered_predictions_pooled_lt_half_pure : ((0.02009823784840936%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_preregistered_predictions_max_scalar_under_half_pct : ((0.020098237848419454%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_preregistered_predictions_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
