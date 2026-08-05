@@ -3,6 +3,24 @@ theory FullFormalSpine_13
 imports Complex_Main
 begin
 
+lemma secure_software_engineering_observable_count_pos: "0 < (59 :: nat)"
+  by eval
+
+lemma secure_software_engineering_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma seismology_deep_observable_count_pos: "0 < (1000 :: nat)"
+  by eval
+
+lemma seismology_deep_match_le_total: "(1000 :: nat) <= (1000 :: nat)"
+  by eval
+
+lemma seismology_deep_holdout_match_le_total: "(189 :: nat) <= (189 :: nat)"
+  by eval
+
+lemma seismology_event_count_pos: "0 < (500 :: nat)"
+  by eval
+
 lemma seismology_match_le_total: "(500 :: nat) <= (500 :: nat)"
   by eval
 
@@ -162,7 +180,7 @@ lemma star_trek_transporter_psi_portal_doorway_under_half_pct: "(0.009663204175 
 lemma star_trek_transporter_psi_traverse_under_half_pct: "(0.0004641395 :: real) < (0.5 :: real)"
   by eval
 
-lemma star_trek_transporter_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
+lemma star_trek_transporter_median_error_under_half_pct: "(0.012464 :: real) < (0.5 :: real)"
   by eval
 
 lemma star_trek_transporter_info_preservation_proxy_pos: "0 < (0.981227203621 :: real)"
@@ -186,7 +204,7 @@ lemma star_trek_transporter_stabilization_margin_pos: "0 < (1.722776467449 :: re
 lemma star_trek_transporter_observable_count_pos: "0 < (1575 :: nat)"
   by eval
 
-lemma star_trek_transporter_median_error_under_five_pct: "(0.031159 :: real) < (5.0 :: real)"
+lemma star_trek_transporter_median_error_under_five_pct: "(0.012464 :: real) < (5.0 :: real)"
   by eval
 
 lemma statistical_mechanics_public_panel_observable_count_pos: "0 < (24 :: nat)"
@@ -283,24 +301,6 @@ lemma symbolic_archetype_panel_observable_count_pos: "0 < (28 :: nat)"
   by eval
 
 lemma symbolic_archetype_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma synthetic_biology_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma synthetic_biology_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma tectonics_event_count_pos: "0 < (500 :: nat)"
-  by eval
-
-lemma tectonics_boundary_count_pos: "0 < (241 :: nat)"
-  by eval
-
-lemma tectonics_match_le_total: "(500 :: nat) <= (500 :: nat)"
-  by eval
-
-lemma term3_acoustic_bleed_depth_observable_count_pos: "0 < (23 :: nat)"
   by eval
 
 end

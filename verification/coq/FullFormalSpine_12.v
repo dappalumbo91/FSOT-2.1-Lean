@@ -6,6 +6,15 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma valine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma tryptophan_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma tyrosine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
 Lemma protein_amino_acid_genomic_identity : (20.0%R) = (20.0%R).
 Proof. reflexivity. Qed.
 
@@ -165,6 +174,15 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma quantum_optics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
+Lemma quantum_trinary_syntax_pooled_median_under_half_pct : (0.005907%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma quantum_trinary_syntax_headline_median_under_half_pct : (0.005907%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma quantum_trinary_syntax_observable_count_pos : (0 < 27)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma radio_astronomy_panel_observable_count_pos : (0 < 30)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -287,22 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma scientific_expansion_wave3_spine_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
-
-Lemma secure_software_engineering_observable_count_pos : (0 < 59)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma secure_software_engineering_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma seismology_deep_observable_count_pos : (0 < 1000)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma seismology_deep_match_le_total : (1000 <= 1000)%nat.
-Proof. apply Nat.leb_le; reflexivity. Qed.
-
-Lemma seismology_deep_holdout_match_le_total : (189 <= 189)%nat.
-Proof. apply Nat.leb_le; reflexivity. Qed.
-
-Lemma seismology_event_count_pos : (0 < 500)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -6,6 +6,15 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma paleoclimate_ext_headline_median_under_half_pct : (0.015015854077432778%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma paleoclimate_ext_observable_count_pos : (0 < 40)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma paleoclimate_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma paleoclimate_panel_observable_count_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -295,14 +304,5 @@ Lemma serine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
 Lemma threonine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma valine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma tryptophan_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma tyrosine_trinary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

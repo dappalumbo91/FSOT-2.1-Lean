@@ -3,6 +3,15 @@ theory FullFormalSpine_12
 imports Complex_Main
 begin
 
+lemma valine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma tryptophan_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma tyrosine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
 lemma protein_amino_acid_genomic_identity: "(20.0 :: real) = (20.0 :: real)"
   by eval
 
@@ -162,6 +171,15 @@ lemma quantum_optics_gap_fill_observable_count_pos: "0 < (50 :: nat)"
 lemma quantum_optics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
+lemma quantum_trinary_syntax_pooled_median_under_half_pct: "(0.005907 :: real) < (0.5 :: real)"
+  by eval
+
+lemma quantum_trinary_syntax_headline_median_under_half_pct: "(0.005907 :: real) < (0.5 :: real)"
+  by eval
+
+lemma quantum_trinary_syntax_observable_count_pos: "0 < (27 :: nat)"
+  by eval
+
 lemma radio_astronomy_panel_observable_count_pos: "0 < (30 :: nat)"
   by eval
 
@@ -283,24 +301,6 @@ lemma scientific_expansion_wave3_spine_observable_count_pos: "0 < (40 :: nat)"
   by eval
 
 lemma scientific_expansion_wave3_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma secure_software_engineering_observable_count_pos: "0 < (59 :: nat)"
-  by eval
-
-lemma secure_software_engineering_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma seismology_deep_observable_count_pos: "0 < (1000 :: nat)"
-  by eval
-
-lemma seismology_deep_match_le_total: "(1000 :: nat) <= (1000 :: nat)"
-  by eval
-
-lemma seismology_deep_holdout_match_le_total: "(189 :: nat) <= (189 :: nat)"
-  by eval
-
-lemma seismology_event_count_pos: "0 < (500 :: nat)"
   by eval
 
 end

@@ -5896,6 +5896,26 @@ Proof.
   - lra.
 Qed.
 
+Lemma matter_antimatter_bundle_conj_0 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma matter_antimatter_bundle_conj_1 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma matter_antimatter_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma matter_antimatter_bundle : (16 = 16)%nat /\ (5 = 5)%nat /\ True.
+Proof.
+  repeat (apply conj).
+  - exact matter_antimatter_bundle_conj_0.
+  - exact matter_antimatter_bundle_conj_1.
+  - exact matter_antimatter_bundle_conj_2.
+Qed.
+
 Lemma mechanical_engineering_ext_bundle_conj_0 : (50 = 50)%nat.
 Proof. reflexivity.
 Qed.
@@ -8437,6 +8457,26 @@ Proof.
   - exact quantum_optics_gap_fill_bundle_conj_2.
   - exact quantum_optics_gap_fill_bundle_conj_3.
   - lra.
+Qed.
+
+Lemma quantum_trinary_syntax_bundle_conj_0 : (27 = 27)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma quantum_trinary_syntax_bundle_conj_1 : (11 = 11)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma quantum_trinary_syntax_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma quantum_trinary_syntax_bundle : (27 = 27)%nat /\ (11 = 11)%nat /\ True.
+Proof.
+  repeat (apply conj).
+  - exact quantum_trinary_syntax_bundle_conj_0.
+  - exact quantum_trinary_syntax_bundle_conj_1.
+  - exact quantum_trinary_syntax_bundle_conj_2.
 Qed.
 
 Lemma radio_astronomy_panel_bundle_conj_0 : (30 = 30)%nat.

@@ -1,0 +1,329 @@
+{
+  "generated_at": "2026-08-05T21:42:26.563731+00:00",
+  "version": "1.0",
+  "source": "scripts/build_wave_inventory_obligation_map.py",
+  "wave_count": 10,
+  "obligation_count": 30,
+  "obligations": [
+    {
+      "id": "wave1_observable_count",
+      "kind": "eq_nat",
+      "wave": 1,
+      "claim": "wave1 has 5 Results",
+      "value": 5,
+      "lean_module": "Cosmology",
+      "provable": true
+    },
+    {
+      "id": "wave1_median_under_half",
+      "kind": "r_lt_lit",
+      "wave": 1,
+      "claim": "wave1 median error_pct < 0.5",
+      "value": 0.11335,
+      "threshold": 0.5,
+      "holds": true,
+      "lean_module": "Cosmology",
+      "provable": true
+    },
+    {
+      "id": "wave1_max_under_green",
+      "kind": "r_lt_lit",
+      "wave": 1,
+      "claim": "wave1 max error_pct < 0.5 (strict green aspiration)",
+      "value": 1.543111,
+      "threshold": 0.5,
+      "holds": false,
+      "note": "Some waves use sigma bands; max may exceed 0.5% while median is green",
+      "lean_module": "Cosmology",
+      "provable": false
+    },
+    {
+      "id": "wave2_observable_count",
+      "kind": "eq_nat",
+      "wave": 2,
+      "claim": "wave2 has 10 Results",
+      "value": 10,
+      "lean_module": "Cosmology",
+      "provable": true
+    },
+    {
+      "id": "wave2_median_under_half",
+      "kind": "r_lt_lit",
+      "wave": 2,
+      "claim": "wave2 median error_pct < 0.5",
+      "value": 0.002173,
+      "threshold": 0.5,
+      "holds": true,
+      "lean_module": "Cosmology",
+      "provable": true
+    },
+    {
+      "id": "wave2_max_under_green",
+      "kind": "r_lt_lit",
+      "wave": 2,
+      "claim": "wave2 max error_pct < 0.5 (strict green aspiration)",
+      "value": 0.012986,
+      "threshold": 0.5,
+      "holds": true,
+      "note": "Some waves use sigma bands; max may exceed 0.5% while median is green",
+      "lean_module": "Cosmology",
+      "provable": true
+    },
+    {
+      "id": "wave3_observable_count",
+      "kind": "eq_nat",
+      "wave": 3,
+      "claim": "wave3 has 15 Results",
+      "value": 15,
+      "lean_module": "Cosmology",
+      "provable": true
+    },
+    {
+      "id": "wave3_median_under_half",
+      "kind": "r_lt_lit",
+      "wave": 3,
+      "claim": "wave3 median error_pct < 0.5",
+      "value": 0.001927,
+      "threshold": 0.5,
+      "holds": true,
+      "lean_module": "Cosmology",
+      "provable": true
+    },
+    {
+      "id": "wave3_max_under_green",
+      "kind": "r_lt_lit",
+      "wave": 3,
+      "claim": "wave3 max error_pct < 0.5 (strict green aspiration)",
+      "value": 0.240732,
+      "threshold": 0.5,
+      "holds": true,
+      "note": "Some waves use sigma bands; max may exceed 0.5% while median is green",
+      "lean_module": "Cosmology",
+      "provable": true
+    },
+    {
+      "id": "wave4_observable_count",
+      "kind": "eq_nat",
+      "wave": 4,
+      "claim": "wave4 has 16 Results",
+      "value": 16,
+      "lean_module": "CosmologyWave4Priors",
+      "provable": true
+    },
+    {
+      "id": "wave4_median_under_half",
+      "kind": "r_lt_lit",
+      "wave": 4,
+      "claim": "wave4 median error_pct < 0.5",
+      "value": 0.011586,
+      "threshold": 0.5,
+      "holds": true,
+      "lean_module": "CosmologyWave4Priors",
+      "provable": true
+    },
+    {
+      "id": "wave4_max_under_green",
+      "kind": "r_lt_lit",
+      "wave": 4,
+      "claim": "wave4 max error_pct < 0.5 (strict green aspiration)",
+      "value": 0.234682,
+      "threshold": 0.5,
+      "holds": true,
+      "note": "Some waves use sigma bands; max may exceed 0.5% while median is green",
+      "lean_module": "CosmologyWave4Priors",
+      "provable": true
+    },
+    {
+      "id": "wave5_observable_count",
+      "kind": "eq_nat",
+      "wave": 5,
+      "claim": "wave5 has 22 Results",
+      "value": 22,
+      "lean_module": "CosmologyWave5Priors",
+      "provable": true
+    },
+    {
+      "id": "wave5_median_under_half",
+      "kind": "r_lt_lit",
+      "wave": 5,
+      "claim": "wave5 median error_pct < 0.5",
+      "value": 0.002077,
+      "threshold": 0.5,
+      "holds": true,
+      "lean_module": "CosmologyWave5Priors",
+      "provable": true
+    },
+    {
+      "id": "wave5_max_under_green",
+      "kind": "r_lt_lit",
+      "wave": 5,
+      "claim": "wave5 max error_pct < 0.5 (strict green aspiration)",
+      "value": 0.090986,
+      "threshold": 0.5,
+      "holds": true,
+      "note": "Some waves use sigma bands; max may exceed 0.5% while median is green",
+      "lean_module": "CosmologyWave5Priors",
+      "provable": true
+    },
+    {
+      "id": "wave6_observable_count",
+      "kind": "eq_nat",
+      "wave": 6,
+      "claim": "wave6 has 22 Results",
+      "value": 22,
+      "lean_module": "CosmologyWave6Priors",
+      "provable": true
+    },
+    {
+      "id": "wave6_median_under_half",
+      "kind": "r_lt_lit",
+      "wave": 6,
+      "claim": "wave6 median error_pct < 0.5",
+      "value": 0.000344,
+      "threshold": 0.5,
+      "holds": true,
+      "lean_module": "CosmologyWave6Priors",
+      "provable": true
+    },
+    {
+      "id": "wave6_max_under_green",
+      "kind": "r_lt_lit",
+      "wave": 6,
+      "claim": "wave6 max error_pct < 0.5 (strict green aspiration)",
+      "value": 0.031298,
+      "threshold": 0.5,
+      "holds": true,
+      "note": "Some waves use sigma bands; max may exceed 0.5% while median is green",
+      "lean_module": "CosmologyWave6Priors",
+      "provable": true
+    },
+    {
+      "id": "wave7_observable_count",
+      "kind": "eq_nat",
+      "wave": 7,
+      "claim": "wave7 has 29 Results",
+      "value": 29,
+      "lean_module": "CosmologyWave7Priors",
+      "provable": true
+    },
+    {
+      "id": "wave7_median_under_half",
+      "kind": "r_lt_lit",
+      "wave": 7,
+      "claim": "wave7 median error_pct < 0.5",
+      "value": 0.003988,
+      "threshold": 0.5,
+      "holds": true,
+      "lean_module": "CosmologyWave7Priors",
+      "provable": true
+    },
+    {
+      "id": "wave7_max_under_green",
+      "kind": "r_lt_lit",
+      "wave": 7,
+      "claim": "wave7 max error_pct < 0.5 (strict green aspiration)",
+      "value": 0.298055,
+      "threshold": 0.5,
+      "holds": true,
+      "note": "Some waves use sigma bands; max may exceed 0.5% while median is green",
+      "lean_module": "CosmologyWave7Priors",
+      "provable": true
+    },
+    {
+      "id": "wave8_observable_count",
+      "kind": "eq_nat",
+      "wave": 8,
+      "claim": "wave8 has 52 Results",
+      "value": 52,
+      "lean_module": "CosmologyWave8Priors",
+      "provable": true
+    },
+    {
+      "id": "wave8_median_under_half",
+      "kind": "r_lt_lit",
+      "wave": 8,
+      "claim": "wave8 median error_pct < 0.5",
+      "value": 0.014207,
+      "threshold": 0.5,
+      "holds": true,
+      "lean_module": "CosmologyWave8Priors",
+      "provable": true
+    },
+    {
+      "id": "wave8_max_under_green",
+      "kind": "r_lt_lit",
+      "wave": 8,
+      "claim": "wave8 max error_pct < 0.5 (strict green aspiration)",
+      "value": 4.232801,
+      "threshold": 0.5,
+      "holds": false,
+      "note": "Some waves use sigma bands; max may exceed 0.5% while median is green",
+      "lean_module": "CosmologyWave8Priors",
+      "provable": false
+    },
+    {
+      "id": "wave9_observable_count",
+      "kind": "eq_nat",
+      "wave": 9,
+      "claim": "wave9 has 7 Results",
+      "value": 7,
+      "lean_module": "CosmologyWave9Priors",
+      "provable": true
+    },
+    {
+      "id": "wave9_median_under_half",
+      "kind": "r_lt_lit",
+      "wave": 9,
+      "claim": "wave9 median error_pct < 0.5",
+      "value": 0.014279,
+      "threshold": 0.5,
+      "holds": true,
+      "lean_module": "CosmologyWave9Priors",
+      "provable": true
+    },
+    {
+      "id": "wave9_max_under_green",
+      "kind": "r_lt_lit",
+      "wave": 9,
+      "claim": "wave9 max error_pct < 0.5 (strict green aspiration)",
+      "value": 0.193758,
+      "threshold": 0.5,
+      "holds": true,
+      "note": "Some waves use sigma bands; max may exceed 0.5% while median is green",
+      "lean_module": "CosmologyWave9Priors",
+      "provable": true
+    },
+    {
+      "id": "wave10_observable_count",
+      "kind": "eq_nat",
+      "wave": 10,
+      "claim": "wave10 has 10 Results",
+      "value": 10,
+      "lean_module": "CosmologyWave10Priors",
+      "provable": true
+    },
+    {
+      "id": "wave10_median_under_half",
+      "kind": "r_lt_lit",
+      "wave": 10,
+      "claim": "wave10 median error_pct < 0.5",
+      "value": 0.000656,
+      "threshold": 0.5,
+      "holds": true,
+      "lean_module": "CosmologyWave10Priors",
+      "provable": true
+    },
+    {
+      "id": "wave10_max_under_green",
+      "kind": "r_lt_lit",
+      "wave": 10,
+      "claim": "wave10 max error_pct < 0.5 (strict green aspiration)",
+      "value": 0.004079,
+      "threshold": 0.5,
+      "holds": true,
+      "note": "Some waves use sigma bands; max may exceed 0.5% while median is green",
+      "lean_module": "CosmologyWave10Priors",
+      "provable": true
+    }
+  ]
+}

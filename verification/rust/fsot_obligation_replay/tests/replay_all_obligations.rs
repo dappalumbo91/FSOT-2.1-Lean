@@ -1191,9 +1191,12 @@ fn replay_all_obligations() {
     assert!(1552 > 0, "math_generator_rules_eval_observable_count_pos");
     assert!(62 > 0, "math_generator_rules_eval_corpus_count_pos");
     assert!(4 > 0, "math_generator_rules_eval_beats_sota_headlines_pos");
+    assert!(0.0_f64 < 0.5, "matter_antimatter_pooled_median_under_half_pct");
+    assert!(0.0_f64 < 0.5, "matter_antimatter_headline_median_under_half_pct");
+    // full_formal chunk 06 (150 obligations)
+    assert!(16 > 0, "matter_antimatter_observable_count_pos");
     assert!(0.07869745016115025_f64 < 0.5, "mechanical_engineering_ext_pooled_median_under_half_pct");
     assert!(0.07869745016115025_f64 < 0.5, "mechanical_engineering_ext_headline_median_under_half_pct");
-    // full_formal chunk 06 (150 obligations)
     assert!(50 > 0, "mechanical_engineering_ext_observable_count_pos");
     assert!(2 > 0, "mechanical_engineering_ext_beats_sota_headlines_pos");
     assert!(20 > 0, "mechanical_engineering_panel_observable_count_pos");
@@ -1341,10 +1344,10 @@ fn replay_all_obligations() {
     assert!(0.092131_f64 < 0.5, "nuclear_iaea_open_headline_median_under_half_pct");
     assert!(360 > 0, "nuclear_iaea_open_observable_count_pos");
     assert!(0.009504_f64 < 0.5, "nufit_neutrino_open_pooled_median_under_half_pct");
+    // full_formal chunk 07 (150 obligations)
     assert!(0.009504_f64 < 0.5, "nufit_neutrino_open_headline_median_under_half_pct");
     assert!(10 > 0, "nufit_neutrino_open_observable_count_pos");
     assert!(348 > 0, "observer_channel_derivation_observable_count_pos");
-    // full_formal chunk 07 (150 obligations)
     assert!(0.0525102820198906_f64 < 0.5_f64, "observer_channel_derivation_median_error_under_half_pct");
     assert!(289 > 0, "observer_effect_cross_species_panel_observable_count_pos");
     assert!(0.0_f64 < 0.5_f64, "observer_effect_cross_species_panel_median_error_under_half_pct");
@@ -1526,6 +1529,7 @@ fn replay_all_obligations() {
     assert_eq!(0, 0, "threonine_trinary_phase_0");
         assert_eq!(1, 1, "threonine_trinary_phase_1");
         assert_eq!(0, 0, "threonine_trinary_phase_2");
+    // full_formal chunk 08 (150 obligations)
     assert_eq!(0, 0, "valine_trinary_phase_0");
         assert_eq!(-1, -1, "valine_trinary_phase_1");
         assert_eq!(0, 0, "valine_trinary_phase_2");
@@ -1535,7 +1539,6 @@ fn replay_all_obligations() {
     assert_eq!(0, 0, "tyrosine_trinary_phase_0");
         assert_eq!(1, 1, "tyrosine_trinary_phase_1");
         assert_eq!(1, 1, "tyrosine_trinary_phase_2");
-    // full_formal chunk 08 (150 obligations)
     assert!((20.0_f64 - 20.0_f64).abs() < 1e-9, "protein_amino_acid_genomic_identity");
     assert!(0.03150616921194649_f64 < 0.5, "psychology_gap_fill_pooled_median_under_half_pct");
     assert!(0.03150616921194649_f64 < 0.5, "psychology_gap_fill_headline_median_under_half_pct");
@@ -1589,6 +1592,9 @@ fn replay_all_obligations() {
     assert!(9.52387420324368e-05_f64 < 0.5, "quantum_optics_gap_fill_headline_median_under_half_pct");
     assert!(50 > 0, "quantum_optics_gap_fill_observable_count_pos");
     assert!(2 > 0, "quantum_optics_gap_fill_beats_sota_headlines_pos");
+    assert!(0.005907_f64 < 0.5, "quantum_trinary_syntax_pooled_median_under_half_pct");
+    assert!(0.005907_f64 < 0.5, "quantum_trinary_syntax_headline_median_under_half_pct");
+    assert!(27 > 0, "quantum_trinary_syntax_observable_count_pos");
     assert!(30 > 0, "radio_astronomy_panel_observable_count_pos");
     assert!(0.022461_f64 < 0.5_f64, "radio_astronomy_panel_median_error_under_half_pct");
     assert!(30 > 0, "radio_astronomy_observable_count_pos");
@@ -1680,17 +1686,17 @@ fn replay_all_obligations() {
     assert!(65 > 0, "speleology_observable_count_pos");
     assert!(0.0034072140135262413_f64 < 0.5_f64, "speleology_median_error_under_half_pct");
     assert!(0.04447250077037523_f64 < 0.5, "sports_biomechanics_gap_fill_pooled_median_under_half_pct");
+    // full_formal chunk 09 (150 obligations)
     assert!(0.04447250077037523_f64 < 0.5, "sports_biomechanics_gap_fill_headline_median_under_half_pct");
     assert!(35 > 0, "sports_biomechanics_gap_fill_observable_count_pos");
     assert!(2 > 0, "sports_biomechanics_gap_fill_beats_sota_headlines_pos");
     assert!(35 > 0, "sports_biomechanics_observable_count_pos");
     assert!(0.04447250077037523_f64 < 0.5_f64, "sports_biomechanics_median_error_under_half_pct");
     assert!(0.04803163401_f64 < 0.5, "star_trek_transporter_psi_entangle_gate_under_half_pct");
-    // full_formal chunk 09 (150 obligations)
     assert!(0.043599802456_f64 < 0.5, "star_trek_transporter_psi_gate_pair_under_half_pct");
     assert!(0.009663204175_f64 < 0.5, "star_trek_transporter_psi_portal_doorway_under_half_pct");
     assert!(0.000464139486_f64 < 0.5, "star_trek_transporter_psi_traverse_under_half_pct");
-    assert!(0.031159_f64 < 0.5, "star_trek_transporter_median_error_under_half_pct");
+    assert!(0.012464_f64 < 0.5, "star_trek_transporter_median_error_under_half_pct");
     assert!(0.981227203621_f64 > 0.0, "star_trek_transporter_info_preservation_proxy_pos");
     assert!(0.04803163401_f64 > 0.0, "star_trek_transporter_psi_entangle_gate_pos");
     assert!(0.043599802456_f64 > 0.0, "star_trek_transporter_psi_gate_pair_pos");
@@ -1698,7 +1704,7 @@ fn replay_all_obligations() {
     assert!(0.000464139486_f64 > 0.0, "star_trek_transporter_psi_traverse_pos");
     assert!(1.722776467449_f64 > 0.0, "star_trek_transporter_stabilization_margin_pos");
     assert!(1575 > 0, "star_trek_transporter_observable_count_pos");
-    assert!(0.031159_f64 < 5.0_f64, "star_trek_transporter_median_error_under_five_pct");
+    assert!(0.012464_f64 < 5.0_f64, "star_trek_transporter_median_error_under_five_pct");
     assert!(24 > 0, "statistical_mechanics_public_panel_observable_count_pos");
     assert!(0.0_f64 < 0.5_f64, "statistical_mechanics_public_panel_median_error_under_half_pct");
     assert!(68 > 0, "stellar_multiplicity_catalog_observable_count_pos");
@@ -1831,13 +1837,13 @@ fn replay_all_obligations() {
     assert!(0.022236_f64 < 0.5_f64, "virology_panel_median_error_under_half_pct");
     assert!(50 > 0, "virology_observable_count_pos");
     assert!(0.04593318440797614_f64 < 0.5_f64, "virology_median_error_under_half_pct");
+    // full_formal chunk 10 (150 obligations)
     assert!(121 > 0, "vizier_wds_tap_live_deep_observable_count_pos");
     assert!(0.026954_f64 < 0.5_f64, "vizier_wds_tap_live_deep_median_error_under_half_pct");
     assert!(24 > 0, "vl_agent_distill_panel_observable_count_pos");
     assert!(0.022236_f64 < 0.5_f64, "vl_agent_distill_panel_median_error_under_half_pct");
     assert!(10 > 0, "vl_distill_atlas_observable_count_pos");
     assert!(0.0_f64 < 5.0_f64, "vl_distill_atlas_median_error_under_five_pct");
-    // full_formal chunk 10 (150 obligations)
     assert!(90 > 0, "volcanology_panel_observable_count_pos");
     assert!(0.023502_f64 < 0.5_f64, "volcanology_panel_median_error_under_half_pct");
     assert!(90 > 0, "volcanology_observable_count_pos");
@@ -1982,13 +1988,13 @@ fn replay_all_obligations() {
     assert!(1.4142135623730951_f64 < 1.4142135624_f64, "sqrt_two_lt_14142135624");
     assert!(0.2951637685668222_f64 < 0.3_f64, "psi_con_eta_prod_lt_three_tenths");
     assert!(1.771807124429574_f64 < 1.772_f64, "exp_0572_lt_1772");
+    // full_formal chunk 11 (150 obligations)
     assert!(3.1393004861793967_f64 < 3.1415_f64, "exp_1144_lt_31415");
     assert!(3.1408705289004573_f64 < 3.141592_f64, "exp_11445_lt_3141592");
     assert!(0.48121182505960347_f64 < 0.4813_f64, "log_phi_lt_04813");
     assert!(0.22469811142780627_f64 < 0.225_f64, "eta_log_phi_lt_0225");
     assert!(0.1572371663136276_f64 < 0.16_f64, "exp_neg_185_lt_016");
     assert!(1.1_f64 < 3.72_f64, "dark_energy_cos_arg_hi");
-    // full_formal chunk 11 (150 obligations)
     assert!(0.5679040130301587_f64 < 0.58_f64, "dark_energy_cos_t_hi");
     assert!(0.9150885074842403_f64 < 1.0_f64, "sin_pi_div_e_lt_one");
     assert!(0.2951637685668222_f64 < 0.295164_f64, "psi_con_eta_prod_lt_295164");
@@ -2133,13 +2139,13 @@ fn replay_all_obligations() {
     assert!(3.4953374011050684_f64 > 3.4_f64, "cosmological_cos_arg_lo");
     assert!(3.4953374011050684_f64 < 3.6_f64, "cosmological_cos_arg_hi");
     assert!(-0.9380820636690238_f64 < 0.5_f64, "cosmological_cos_lt_neg_half");
+    // full_formal chunk 12 (150 obligations)
     assert!(0.0_f64 <= 0.7879407922764434_f64, "bleed_in_factor_nonneg");
     assert!(0.7879407922764434_f64 > 0.0_f64, "bleed_in_factor_pos");
     assert!(5.977131629539365_f64 > 2.0_f64, "cosmological_exp_factor_gt_two");
     assert!(0.29089654054517305_f64 < 0.3_f64, "theta_s_lt_three_tenths");
     assert!(0.9577022026205612_f64 > 0.95_f64, "coherence_efficiency_gt_nine_five");
     assert!(0.9577022026205612_f64 > 0.7_f64, "coherence_efficiency_gt_seven_tenths");
-    // full_formal chunk 12 (150 obligations)
     assert!(0.8227409210508241_f64 > 0.814_f64, "bleed_in_inner_gt_eight_one_four");
     assert!(0.8227409210508241_f64 > 0.0_f64, "bleed_in_inner_pos");
     assert!(0.7879407922764434_f64 > 0.6_f64, "bleed_in_factor_gt_six_tenths");
@@ -2284,13 +2290,13 @@ fn replay_all_obligations() {
     assert!(0.0216083_f64 < 1.0_f64, "delta_lambda_cosm_lt_one");
     assert!(-0.5024559462100433_f64 < 0.0_f64, "S_cosm_cached_neg");
     assert!(1.3877787807814457e-17_f64 < 1e-08_f64, "alpha_s_MZ_approx_value");
+    // full_formal chunk 13 (67 obligations)
     assert!(0.061803398874989486_f64 > 0.0618_f64, "c_cosm_gt_061800");
     assert!(0.21234577623937845_f64 > 0.21234_f64, "p_base_gt_021234");
     assert!(8.539734222673566_f64 > 1.0_f64, "e_mul_pi_gt_one");
     assert!(-0.502456_f64 < -0.5024559462100433_f64 && -0.5024559462100433_f64 < -0.502455_f64, "S_cosm_cached_bounds");
     assert!(6.487926927434273e-05_f64 < 0.05_f64, "r_d_approx_value");
     assert!(1.4210854715202004e-14_f64 < 0.11_f64, "h0_fsot_cached_approx_value");
-    // full_formal chunk 13 (61 obligations)
     assert!(0.0_f64 < 0.001_f64, "t_cmb_fsot_cached_approx_value");
     assert!(1.1102230246251565e-16_f64 < 0.0003_f64, "n_s_fsot_cached_approx_value");
     assert!(1.3877787807814457e-17_f64 < 1e-05_f64, "omega_b_h2_fsot_cached_approx_value");

@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-05T19:48:30.786602+00:00",
+  "generated_at": "2026-08-05T21:42:09.440931+00:00",
   "version": "1.2",
   "summary": {
-    "bundle_conj_total": 562,
+    "bundle_conj_total": 564,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 508,
-    "total_conjuncts": 2494,
-    "conjuncts_with_atomic_coverage": 2492,
+    "provable_bundle_conj": 510,
+    "total_conjuncts": 2500,
+    "conjuncts_with_atomic_coverage": 2498,
     "conjunct_atomic_coverage_pct": 99.92,
-    "explicit_linked_conjuncts": 1897,
-    "explicit_linked_in_spine": 1895,
+    "explicit_linked_conjuncts": 1901,
+    "explicit_linked_in_spine": 1899,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
@@ -338,6 +338,7 @@
     "math_generator_airfoil_rmse_bundle",
     "math_generator_benchmark_formula_eval_bundle",
     "math_generator_rules_eval_bundle",
+    "matter_antimatter_bundle",
     "mechanical_engineering_ext_bundle",
     "mechanical_engineering_panel_bundle",
     "mechanical_engineering_bundle",
@@ -454,6 +455,7 @@
     "quantum_mechanics_entanglement_depth_panel_bundle",
     "quantum_mechanics_gap_fill_bundle",
     "quantum_optics_gap_fill_bundle",
+    "quantum_trinary_syntax_bundle",
     "radio_astronomy_panel_bundle",
     "radio_astronomy_bundle",
     "rcsb_pdb_structures_bundle",
@@ -19570,6 +19572,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "matter_antimatter_bundle",
+      "lean_module": "MatterAntimatterPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "matter_antimatter_observable_count",
+          "statement": "16 = 16",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "matter_antimatter_observable_count_pos"
+          ],
+          "linked_obligation_id": "matter_antimatter_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "matter_antimatter_D_eff",
+          "statement": "5 = 5",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "matter_antimatter_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "matter_antimatter_pooled_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "matter_antimatter_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "matter_antimatter_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "mechanical_engineering_ext_bundle",
       "lean_module": "MechanicalEngineeringExtensionPriors",
       "provable": true,
@@ -27498,6 +27546,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "quantum_trinary_syntax_bundle",
+      "lean_module": "QuantumTrinarySyntaxPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "quantum_trinary_syntax_observable_count",
+          "statement": "27 = 27",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "quantum_trinary_syntax_observable_count_pos"
+          ],
+          "linked_obligation_id": "quantum_trinary_syntax_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "quantum_trinary_syntax_D_eff",
+          "statement": "11 = 11",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "quantum_trinary_syntax_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "quantum_trinary_syntax_pooled_median_error_pct",
+          "statement": "0.005907 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "quantum_trinary_syntax_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "quantum_trinary_syntax_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "radio_astronomy_panel_bundle",
       "lean_module": "RadioAstronomyPanelPriors",
       "provable": true,
@@ -29995,7 +30089,7 @@
         {
           "kind": "lt_half",
           "symbol": "star_trek_transporter_median_error_pct",
-          "statement": "0.031159 < 0.5",
+          "statement": "0.012464 < 0.5",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,

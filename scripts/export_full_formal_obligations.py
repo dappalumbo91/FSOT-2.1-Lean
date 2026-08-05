@@ -39,6 +39,7 @@ EXTENDED_FORMAL_MODULES = (
     "DomainPrecisionPriors.lean",
     "TrinaryOSPriors.lean",
     "SotaCompetitivenessPriors.lean",
+    "ScalarEngineStructure.lean",
 )
 from fsot_label_registry_lib import annotate_obligation  # noqa: E402
 from undeniable_gap_lib import enrich_obligation_labels  # noqa: E402

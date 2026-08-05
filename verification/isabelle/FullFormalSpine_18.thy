@@ -3,6 +3,24 @@ theory FullFormalSpine_18
 imports Complex_Main
 begin
 
+lemma bleed_in_factor_nonneg: "(0 :: real) <= (0.7879407922764434 :: real)"
+  by eval
+
+lemma bleed_in_factor_pos: "(0 :: real) < (0.7879407922764434 :: real)"
+  by eval
+
+lemma cosmological_exp_factor_gt_two: "(2.0 :: real) < (5.977131629539365 :: real)"
+  by eval
+
+lemma theta_s_lt_three_tenths: "(0.29089654054517305 :: real) < (0.3 :: real)"
+  by eval
+
+lemma coherence_efficiency_gt_nine_five: "(0.95 :: real) < (0.9577022026205612 :: real)"
+  by eval
+
+lemma coherence_efficiency_gt_seven_tenths: "(0.7 :: real) < (0.9577022026205612 :: real)"
+  by eval
+
 lemma bleed_in_inner_gt_eight_one_four: "(0.814 :: real) < (0.8227409210508241 :: real)"
   by eval
 
@@ -283,24 +301,6 @@ lemma D_eff_shift_abs_le: "(19.0 :: real) <= (19.0 :: real)"
   by eval
 
 lemma chaos_perturbation_abs_le_two: "(1.2515783787839663 :: real) <= (2.0 :: real)"
-  by eval
-
-lemma cosmological_observed_false: "(0 :: nat) = (0 :: nat)"
-  by eval
-
-lemma dark_energy_observed_false: "(0 :: nat) = (0 :: nat)"
-  by eval
-
-lemma cmb_observed_false: "(0 :: nat) = (0 :: nat)"
-  by eval
-
-lemma ai_observed_false: "(0 :: nat) = (0 :: nat)"
-  by eval
-
-lemma neural_observed_true: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cosmological_D_eff_eq: "(25 :: nat) = (25 :: nat)"
   by eval
 
 end

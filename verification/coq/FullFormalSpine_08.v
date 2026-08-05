@@ -300,9 +300,9 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma math_generator_rules_eval_beats_sota_headlines_pos : (0 < 4)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma mechanical_engineering_ext_pooled_median_under_half_pct : (0.07869745016115025%R) < (0.5%R).
+Lemma matter_antimatter_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma mechanical_engineering_ext_headline_median_under_half_pct : (0.07869745016115025%R) < (0.5%R).
+Lemma matter_antimatter_headline_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 

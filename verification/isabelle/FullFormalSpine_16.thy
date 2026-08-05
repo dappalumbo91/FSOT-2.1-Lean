@@ -3,6 +3,24 @@ theory FullFormalSpine_16
 imports Complex_Main
 begin
 
+lemma domain_term1_gt_neg_08_material: "(-0.8 :: real) < (-0.20218325391197037 :: real)"
+  by eval
+
+lemma domain_term1_positive_biological: "0 < (0.0583105195018667 :: real)"
+  by eval
+
+lemma domain_ai_term1_overcomes_term3: "(-1.3514171596284352 :: real) < (-1.0 :: real)"
+  by eval
+
+lemma domain_cmb_term1_overcomes_term3: "(-2.0099710610507393 :: real) < (-1.0 :: real)"
+  by eval
+
+lemma term1_base_negative_for_high_D_eff: "(-2.1956926285882763 :: real) < (0 :: real)"
+  by eval
+
+lemma term1_base_negative_of_typical_delta: "(-1.7936205462413415 :: real) < (0 :: real)"
+  by eval
+
 lemma term1_dominates_term3_when_base_large: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
   by eval
 
@@ -283,24 +301,6 @@ lemma new_perceived_param_gt_30030: "(0.3003 :: real) < (0.30030117056875677 :: 
   by eval
 
 lemma sqrt2_gt_14142135623: "(1.4142135623 :: real) < (1.4142135623730951 :: real)"
-  by eval
-
-lemma psi_con_gt_6321205588: "(0.6321205588 :: real) < (0.6321205588287557 :: real)"
-  by eval
-
-lemma eta_eff_gt_466942206: "(0.466942206 :: real) < (0.46694220658433505 :: real)"
-  by eval
-
-lemma acoustic_bleed_gt_10455: "(1.0455 :: real) < (1.046973630587551 :: real)"
-  by eval
-
-lemma acoustic_inflow_gt_16639: "(1.6639 :: real) < (1.6668538450045731 :: real)"
-  by eval
-
-lemma k_gt_0420: "(0.42 :: real) < (0.420222080893624 :: real)"
-  by eval
-
-lemma exp_neg_one_gt_367: "(0.367 :: real) < (0.36787944117144233 :: real)"
   by eval
 
 end

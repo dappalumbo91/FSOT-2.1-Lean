@@ -3,6 +3,24 @@ theory FullFormalSpine_17
 imports Complex_Main
 begin
 
+lemma psi_con_gt_6321205588: "(0.6321205588 :: real) < (0.6321205588287557 :: real)"
+  by eval
+
+lemma eta_eff_gt_466942206: "(0.466942206 :: real) < (0.46694220658433505 :: real)"
+  by eval
+
+lemma acoustic_bleed_gt_10455: "(1.0455 :: real) < (1.046973630587551 :: real)"
+  by eval
+
+lemma acoustic_inflow_gt_16639: "(1.6639 :: real) < (1.6668538450045731 :: real)"
+  by eval
+
+lemma k_gt_0420: "(0.42 :: real) < (0.420222080893624 :: real)"
+  by eval
+
+lemma exp_neg_one_gt_367: "(0.367 :: real) < (0.36787944117144233 :: real)"
+  by eval
+
 lemma exp_03_gt_12: "(1.2 :: real) < (1.3498588075760032 :: real)"
   by eval
 
@@ -283,24 +301,6 @@ lemma cosmological_cos_arg_hi: "(3.4953374011050684 :: real) < (3.6 :: real)"
   by eval
 
 lemma cosmological_cos_lt_neg_half: "(-0.9380820636690238 :: real) < (0.5 :: real)"
-  by eval
-
-lemma bleed_in_factor_nonneg: "(0 :: real) <= (0.7879407922764434 :: real)"
-  by eval
-
-lemma bleed_in_factor_pos: "(0 :: real) < (0.7879407922764434 :: real)"
-  by eval
-
-lemma cosmological_exp_factor_gt_two: "(2.0 :: real) < (5.977131629539365 :: real)"
-  by eval
-
-lemma theta_s_lt_three_tenths: "(0.29089654054517305 :: real) < (0.3 :: real)"
-  by eval
-
-lemma coherence_efficiency_gt_nine_five: "(0.95 :: real) < (0.9577022026205612 :: real)"
-  by eval
-
-lemma coherence_efficiency_gt_seven_tenths: "(0.7 :: real) < (0.9577022026205612 :: real)"
   by eval
 
 end

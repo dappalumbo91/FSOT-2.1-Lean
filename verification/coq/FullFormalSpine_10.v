@@ -6,6 +6,15 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma stratum_sst_cell_count_pos : (150 < 154)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stratum_pv_cell_count_pos : (200 < 222)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stratum_vip_cell_count_pos : (140 < 146)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma stratum_l23_pyramidal_cell_count_pos : (1100 < 1127)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -296,13 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma paleoclimate_ext_pooled_median_under_half_pct : (0.015015854077432778%R) < (0.5%R).
 Proof. lra. Qed.
-
-Lemma paleoclimate_ext_headline_median_under_half_pct : (0.015015854077432778%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma paleoclimate_ext_observable_count_pos : (0 < 40)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma paleoclimate_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

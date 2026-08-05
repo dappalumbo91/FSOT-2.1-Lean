@@ -6,6 +6,24 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma synthetic_biology_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma synthetic_biology_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma tectonics_event_count_pos : (0 < 500)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma tectonics_boundary_count_pos : (0 < 241)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma tectonics_match_le_total : (500 <= 500)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma term3_acoustic_bleed_depth_observable_count_pos : (0 < 23)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma term3_acoustic_bleed_depth_median_error_under_half_pct : (0.008381497018408523%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -286,23 +304,5 @@ Lemma virology_observable_count_pos : (0 < 50)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma virology_median_error_under_half_pct : (0.04593318440797614%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma vizier_wds_tap_live_deep_observable_count_pos : (0 < 121)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma vizier_wds_tap_live_deep_median_error_under_half_pct : (0.026954%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma vl_agent_distill_panel_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma vl_agent_distill_panel_median_error_under_half_pct : (0.022236%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma vl_distill_atlas_observable_count_pos : (0 < 10)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma vl_distill_atlas_median_error_under_five_pct : 0%R < (5.0%R).
 Proof. lra. Qed.
 

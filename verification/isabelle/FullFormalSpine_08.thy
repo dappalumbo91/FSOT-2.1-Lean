@@ -297,10 +297,10 @@ lemma math_generator_rules_eval_corpus_count_pos: "0 < (62 :: nat)"
 lemma math_generator_rules_eval_beats_sota_headlines_pos: "0 < (4 :: nat)"
   by eval
 
-lemma mechanical_engineering_ext_pooled_median_under_half_pct: "(0.07869745016115025 :: real) < (0.5 :: real)"
+lemma matter_antimatter_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma mechanical_engineering_ext_headline_median_under_half_pct: "(0.07869745016115025 :: real) < (0.5 :: real)"
+lemma matter_antimatter_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

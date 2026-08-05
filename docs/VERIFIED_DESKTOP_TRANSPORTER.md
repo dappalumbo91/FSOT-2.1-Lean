@@ -21,7 +21,7 @@ Lean module: `FSOT.Formal.StarTrekTransporterLivePanelPriors`
 | Metric | Value |
 |--------|------:|
 | Records | 1575 |
-| Pooled median error | 0.031159% |
+| Pooled median error | 0.012464% |
 | Benchmark | `data/star_trek_transporter_live_panel_benchmark.json` |
 | Figure | `data/figures/verified_desktop_transporter.png` |
 

@@ -6,6 +6,24 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma bleed_in_factor_nonneg : 0%R <= (0.7879407922764434%R).
+Proof. lra. Qed.
+
+Lemma bleed_in_factor_pos : 0%R < (0.7879407922764434%R).
+Proof. lra. Qed.
+
+Lemma cosmological_exp_factor_gt_two : (2.0%R) < (5.977131629539365%R).
+Proof. lra. Qed.
+
+Lemma theta_s_lt_three_tenths : (0.29089654054517305%R) < (0.3%R).
+Proof. lra. Qed.
+
+Lemma coherence_efficiency_gt_nine_five : (0.95%R) < (0.9577022026205612%R).
+Proof. lra. Qed.
+
+Lemma coherence_efficiency_gt_seven_tenths : (0.7%R) < (0.9577022026205612%R).
+Proof. lra. Qed.
+
 Lemma bleed_in_inner_gt_eight_one_four : (0.814%R) < (0.8227409210508241%R).
 Proof. lra. Qed.
 
@@ -287,22 +305,4 @@ Proof. lra. Qed.
 
 Lemma chaos_perturbation_abs_le_two : (1.2515783787839663%R) <= (2.0%R).
 Proof. lra. Qed.
-
-Lemma cosmological_observed_false : (0 = 0)%nat.
-Proof. reflexivity. Qed.
-
-Lemma dark_energy_observed_false : (0 = 0)%nat.
-Proof. reflexivity. Qed.
-
-Lemma cmb_observed_false : (0 = 0)%nat.
-Proof. reflexivity. Qed.
-
-Lemma ai_observed_false : (0 = 0)%nat.
-Proof. reflexivity. Qed.
-
-Lemma neural_observed_true : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-Lemma cosmological_D_eff_eq : (25 = 25)%nat.
-Proof. reflexivity. Qed.
 

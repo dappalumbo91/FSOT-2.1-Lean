@@ -292,16 +292,30 @@ def audit() -> dict[str, Any]:
             }
         )
     # Wave inventory without dedicated residual panels
-    gaps.append(
-        {
-            "id": "wave_inventory_connection",
-            "severity": "medium",
-            "fix": (
-                "Ensure fsot_compute wave* Results are either residual panels or explicit "
-                "inventory rows in atlas formulas — avoid orphan wave numbers."
-            ),
-        }
-    )
+    wave_map = _json("data/wave_inventory_obligation_map.json") or {}
+    if wave_map.get("status") not in ("MAPPED", "MAPPED_WITH_GAPS"):
+        gaps.append(
+            {
+                "id": "wave_inventory_connection",
+                "severity": "medium",
+                "fix": (
+                    "Ensure fsot_compute wave* Results are either residual panels or explicit "
+                    "inventory rows in atlas formulas — avoid orphan wave numbers. "
+                    "Run: python scripts/build_wave_inventory_obligation_map.py"
+                ),
+            }
+        )
+    elif wave_map.get("orphan_waves") or wave_map.get("missing_lean_modules"):
+        gaps.append(
+            {
+                "id": "wave_inventory_gaps",
+                "severity": "low",
+                "fix": (
+                    f"Wave map present but gaps: orphans={wave_map.get('orphan_waves')} "
+                    f"missing_lean={wave_map.get('missing_lean_modules')}"
+                ),
+            }
+        )
     if (margin.get("green_gate_fail_count") or 0) > 0:
         gaps.append({"id": "green_fails", "severity": "high", "fix": "Close green residual fails"})
 

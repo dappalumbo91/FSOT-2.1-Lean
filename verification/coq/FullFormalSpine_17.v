@@ -6,6 +6,24 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma psi_con_gt_6321205588 : (0.6321205588%R) < (0.6321205588287557%R).
+Proof. lra. Qed.
+
+Lemma eta_eff_gt_466942206 : (0.466942206%R) < (0.46694220658433505%R).
+Proof. lra. Qed.
+
+Lemma acoustic_bleed_gt_10455 : (1.0455%R) < (1.046973630587551%R).
+Proof. lra. Qed.
+
+Lemma acoustic_inflow_gt_16639 : (1.6639%R) < (1.6668538450045731%R).
+Proof. lra. Qed.
+
+Lemma k_gt_0420 : (0.42%R) < (0.420222080893624%R).
+Proof. lra. Qed.
+
+Lemma exp_neg_one_gt_367 : (0.367%R) < (0.36787944117144233%R).
+Proof. lra. Qed.
+
 Lemma exp_03_gt_12 : (1.2%R) < (1.3498588075760032%R).
 Proof. lra. Qed.
 
@@ -286,23 +304,5 @@ Lemma cosmological_cos_arg_hi : (3.4953374011050684%R) < (3.6%R).
 Proof. lra. Qed.
 
 Lemma cosmological_cos_lt_neg_half : (-0.9380820636690238%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma bleed_in_factor_nonneg : 0%R <= (0.7879407922764434%R).
-Proof. lra. Qed.
-
-Lemma bleed_in_factor_pos : 0%R < (0.7879407922764434%R).
-Proof. lra. Qed.
-
-Lemma cosmological_exp_factor_gt_two : (2.0%R) < (5.977131629539365%R).
-Proof. lra. Qed.
-
-Lemma theta_s_lt_three_tenths : (0.29089654054517305%R) < (0.3%R).
-Proof. lra. Qed.
-
-Lemma coherence_efficiency_gt_nine_five : (0.95%R) < (0.9577022026205612%R).
-Proof. lra. Qed.
-
-Lemma coherence_efficiency_gt_seven_tenths : (0.7%R) < (0.9577022026205612%R).
 Proof. lra. Qed.
 

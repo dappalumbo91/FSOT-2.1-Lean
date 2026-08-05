@@ -13,7 +13,7 @@ noncomputable section
 open Real
 
 def star_trek_transporter_observable_count : ℕ := 1575
-def star_trek_transporter_median_error_pct : ℝ := (0.031159 : ℝ)
+def star_trek_transporter_median_error_pct : ℝ := (0.012464 : ℝ)
 def star_trek_transporter_D_eff : ℕ := 17
 
 def star_trek_transporter_info_preservation_proxy : ℝ := (0.981227203621 : ℝ)

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T19:36:46.871228+00:00",
+  "generated_at": "2026-08-05T21:30:28.625596+00:00",
   "version": "1.0",
   "verdict": "VERIFIED_DESKTOP_CROSS_PROOF_READY",
   "panels": [
@@ -341,7 +341,7 @@
       "panel": "Star_Trek_Transporter_Live_Panel",
       "lean_module": "FSOT.Formal.StarTrekTransporterLivePanelPriors",
       "record_count": 1575,
-      "pooled_median_error_pct": 0.031159,
+      "pooled_median_error_pct": 0.012464,
       "python_oracle_samples": [
         {
           "name": "qubit_teleport_fidelity_typical",
@@ -418,24 +418,24 @@
         {
           "name": "poof_tunneling_proxy",
           "property": "value",
-          "stored_error_pct": 0.05256,
-          "replay_error_pct": 0.05256,
+          "stored_error_pct": 0.010512,
+          "replay_error_pct": 0.010512,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "suction_recompact_proxy",
           "property": "value",
-          "stored_error_pct": 0.05256,
-          "replay_error_pct": 0.05256,
+          "stored_error_pct": 0.010512,
+          "replay_error_pct": 0.010512,
           "delta_pct": 0.0,
           "ok": true
         },
         {
           "name": "coherence_efficiency_proxy",
           "property": "value",
-          "stored_error_pct": 0.05256,
-          "replay_error_pct": 0.05256,
+          "stored_error_pct": 0.010512,
+          "replay_error_pct": 0.010512,
           "delta_pct": 0.0,
           "ok": true
         }

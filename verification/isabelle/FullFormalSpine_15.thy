@@ -3,6 +3,24 @@ theory FullFormalSpine_15
 imports Complex_Main
 begin
 
+lemma vizier_wds_tap_live_deep_observable_count_pos: "0 < (121 :: nat)"
+  by eval
+
+lemma vizier_wds_tap_live_deep_median_error_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
+  by eval
+
+lemma vl_agent_distill_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma vl_agent_distill_panel_median_error_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma vl_distill_atlas_observable_count_pos: "0 < (10 :: nat)"
+  by eval
+
+lemma vl_distill_atlas_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
 lemma volcanology_panel_observable_count_pos: "0 < (90 :: nat)"
   by eval
 
@@ -283,24 +301,6 @@ lemma domain_term1_gt_neg_08_medical: "(-0.8 :: real) < (-0.2712864292749448 :: 
   by eval
 
 lemma domain_term1_gt_neg_08_molecular: "(-0.8 :: real) < (-0.2798684851972981 :: real)"
-  by eval
-
-lemma domain_term1_gt_neg_08_material: "(-0.8 :: real) < (-0.20218325391197037 :: real)"
-  by eval
-
-lemma domain_term1_positive_biological: "0 < (0.0583105195018667 :: real)"
-  by eval
-
-lemma domain_ai_term1_overcomes_term3: "(-1.3514171596284352 :: real) < (-1.0 :: real)"
-  by eval
-
-lemma domain_cmb_term1_overcomes_term3: "(-2.0099710610507393 :: real) < (-1.0 :: real)"
-  by eval
-
-lemma term1_base_negative_for_high_D_eff: "(-2.1956926285882763 :: real) < (0 :: real)"
-  by eval
-
-lemma term1_base_negative_of_typical_delta: "(-1.7936205462413415 :: real) < (0 :: real)"
   by eval
 
 end

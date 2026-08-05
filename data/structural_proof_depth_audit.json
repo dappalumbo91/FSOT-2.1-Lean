@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-05T19:48:23.816244+00:00",
+  "generated_at": "2026-08-05T21:42:02.617735+00:00",
   "version": "1.0",
   "tier": "92_structural_proof_depth",
   "overall_ok": true,
-  "provable_bundle_conj_count": 508,
+  "provable_bundle_conj_count": 510,
   "provable_bundles": [
     {
       "id": "acoustic_resonance_materials_bundle",
@@ -1090,6 +1090,10 @@
       "conjunct_count": 8
     },
     {
+      "id": "matter_antimatter_bundle",
+      "conjunct_count": 3
+    },
+    {
       "id": "mechanical_engineering_ext_bundle",
       "conjunct_count": 5
     },
@@ -1552,6 +1556,10 @@
     {
       "id": "quantum_optics_gap_fill_bundle",
       "conjunct_count": 5
+    },
+    {
+      "id": "quantum_trinary_syntax_bundle",
+      "conjunct_count": 3
     },
     {
       "id": "radio_astronomy_panel_bundle",
@@ -2038,11 +2046,11 @@
       "conjunct_count": 7
     }
   ],
-  "structural_proof_count": 2120,
+  "structural_proof_count": 2128,
   "min_required": 10,
   "breakdown": {
-    "bundle_split_lemmas": 496,
-    "bundle_conjunct_lemmas": 1617,
+    "bundle_split_lemmas": 498,
+    "bundle_conjunct_lemmas": 1623,
     "connective_ordering_lemmas": 3,
     "native_transcendental_chain_lemmas": 4
   },

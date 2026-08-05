@@ -6,6 +6,24 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma secure_software_engineering_observable_count_pos : (0 < 59)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma secure_software_engineering_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma seismology_deep_observable_count_pos : (0 < 1000)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma seismology_deep_match_le_total : (1000 <= 1000)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma seismology_deep_holdout_match_le_total : (189 <= 189)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma seismology_event_count_pos : (0 < 500)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma seismology_match_le_total : (500 <= 500)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
@@ -165,7 +183,7 @@ Proof. lra. Qed.
 Lemma star_trek_transporter_psi_traverse_under_half_pct : (0.000464139486%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma star_trek_transporter_median_error_under_half_pct : (0.031159%R) < (0.5%R).
+Lemma star_trek_transporter_median_error_under_half_pct : (0.012464%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma star_trek_transporter_info_preservation_proxy_pos : 0 < (0.981227203621%R).
@@ -189,7 +207,7 @@ Proof. lra. Qed.
 Lemma star_trek_transporter_observable_count_pos : (0 < 1575)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma star_trek_transporter_median_error_under_five_pct : (0.031159%R) < (5.0%R).
+Lemma star_trek_transporter_median_error_under_five_pct : (0.012464%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma statistical_mechanics_public_panel_observable_count_pos : (0 < 24)%nat.
@@ -287,22 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma symbolic_archetype_panel_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
-
-Lemma synthetic_biology_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma synthetic_biology_observable_count_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma tectonics_event_count_pos : (0 < 500)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma tectonics_boundary_count_pos : (0 < 241)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma tectonics_match_le_total : (500 <= 500)%nat.
-Proof. apply Nat.leb_le; reflexivity. Qed.
-
-Lemma term3_acoustic_bleed_depth_observable_count_pos : (0 < 23)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

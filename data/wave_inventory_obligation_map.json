@@ -1,0 +1,2798 @@
+{
+  "generated_at": "2026-08-05T21:42:26.563731+00:00",
+  "version": "1.0",
+  "status": "MAPPED",
+  "master_formula": "S = K*(T1+T2+T3); c = m*(1+|S|*f)",
+  "structure_module": "FSOT/Formal/ScalarEngineStructure.lean",
+  "wave_count": 10,
+  "total_observables": 188,
+  "total_linked_obligations": 127,
+  "missing_lean_modules": [],
+  "orphan_waves": [],
+  "waves": [
+    {
+      "wave": 1,
+      "fn": "wave1",
+      "theme": "\u039bCDM core (\u03b1_s, H0, T_CMB, n_s, \u03a9_b h\u00b2)",
+      "domain_route": "cosmological",
+      "lab_key": "cosmology_wave1_lab",
+      "lean_modules": [
+        {
+          "module": "Cosmology",
+          "path": "FSOT/Formal/Cosmology.lean",
+          "exists": true
+        },
+        {
+          "module": "CosmologyLab",
+          "path": "FSOT/Formal/CosmologyLab.lean",
+          "exists": true
+        }
+      ],
+      "observable_count": 5,
+      "median_error_pct": 0.11335,
+      "max_error_pct": 1.543111,
+      "all_within_half_pct": false,
+      "observables": [
+        {
+          "name": "alpha_s(M_Z)",
+          "formula": "1/(e\u00b7\u03c0)",
+          "computed": 0.11709966304863832,
+          "measured": 0.1179,
+          "sigma": 0.9,
+          "error_pct": 0.678827,
+          "within_half_pct": false,
+          "within_green": false
+        },
+        {
+          "name": "H0",
+          "formula": "100\u00b7(1 + S_cosm\u00b7A_bleed/A_in)",
+          "computed": 68.44005682979427,
+          "measured": 67.4,
+          "sigma": 2.1,
+          "error_pct": 1.543111,
+          "within_half_pct": false,
+          "within_green": false
+        },
+        {
+          "name": "T_CMB",
+          "formula": "\u03c6\u00b2 + P_base\u00b7|S_cosm|",
+          "computed": 2.724728386673958,
+          "measured": 2.72548,
+          "sigma": 1.3,
+          "error_pct": 0.027577,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "n_s",
+          "formula": "1 + S_cosm\u00b7C_cosm\u00b7\u03c6^(1/\u03c0)",
+          "computed": 0.9638062833678815,
+          "measured": 0.9649,
+          "sigma": 0.3,
+          "error_pct": 0.11335,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Omega_b_h2",
+          "formula": "|S_cosm|\u00b7(1 \u2212 S_quant)",
+          "computed": 0.0223561240822737,
+          "measured": 0.02237,
+          "sigma": 0.1,
+          "error_pct": 0.062029,
+          "within_half_pct": true,
+          "within_green": true
+        }
+      ],
+      "obligation_ids": [
+        "c_cosm_pos",
+        "alpha_s_MZ_pos",
+        "p_base_pos",
+        "delta_lambda_cosm_pos",
+        "c_cosm_lt_061806",
+        "p_base_lt_0212371",
+        "alpha_s_MZ_lt_one",
+        "delta_lambda_cosm_lt_one",
+        "S_cosm_cached_neg",
+        "alpha_s_MZ_approx_value",
+        "c_cosm_gt_061800",
+        "p_base_gt_021234",
+        "e_mul_pi_gt_one",
+        "S_cosm_cached_bounds",
+        "r_d_approx_value",
+        "h0_fsot_cached_approx_value",
+        "t_cmb_fsot_cached_approx_value",
+        "n_s_fsot_cached_approx_value",
+        "omega_b_h2_fsot_cached_approx_value",
+        "S_cosm_cached_abs_bounds",
+        "omega_b_h2_fsot_cached_pos",
+        "lambda_cdm_wave1_links_genomic_cosmology",
+        "lambda_cdm_wave_partition",
+        "cosmology_lambda_cdm_bundle"
+      ],
+      "obligation_count": 24,
+      "obligations_sample": [
+        {
+          "id": "c_cosm_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "alpha_s_MZ_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "p_base_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "delta_lambda_cosm_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "c_cosm_lt_061806",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "p_base_lt_0212371",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "alpha_s_MZ_lt_one",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "delta_lambda_cosm_lt_one",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "S_cosm_cached_neg",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "alpha_s_MZ_approx_value",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "c_cosm_gt_061800",
+          "kind": "gt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "p_base_gt_021234",
+          "kind": "gt_lit",
+          "provable": true,
+          "name": null
+        }
+      ],
+      "lean_modules_missing": []
+    },
+    {
+      "wave": 2,
+      "fn": "wave2",
+      "theme": "Extended SM / dark-sector anchors",
+      "domain_route": "cosmological",
+      "lab_key": "cosmology_wave2_lab",
+      "lean_modules": [
+        {
+          "module": "Cosmology",
+          "path": "FSOT/Formal/Cosmology.lean",
+          "exists": true
+        },
+        {
+          "module": "CosmologyLab",
+          "path": "FSOT/Formal/CosmologyLab.lean",
+          "exists": true
+        },
+        {
+          "module": "CosmologyExtendedPriors",
+          "path": "FSOT/Formal/CosmologyExtendedPriors.lean",
+          "exists": true
+        }
+      ],
+      "observable_count": 10,
+      "median_error_pct": 0.002173,
+      "max_error_pct": 0.012986,
+      "all_within_half_pct": true,
+      "observables": [
+        {
+          "name": "1/alpha_em",
+          "formula": "e\u00b3\u00b7\u03c6\u2074 \u2212 \u03c8_con",
+          "computed": 137.03619755957268,
+          "measured": 137.036,
+          "sigma": null,
+          "error_pct": 0.000144,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "sin2_theta_W",
+          "formula": "\u221ae\u00b7P_new\u00b7\u03b7_eff",
+          "computed": 0.23118997459960097,
+          "measured": 0.23122,
+          "sigma": 0.8,
+          "error_pct": 0.012986,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "M_W/M_Z",
+          "formula": "S_quant\u00b7ln(\u03c0) \u2212 P_base",
+          "computed": 0.8814508416055906,
+          "measured": 0.88147,
+          "sigma": 0.1,
+          "error_pct": 0.002173,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Omega_Lambda",
+          "formula": "S_quant/e + \u03b3\u00b2",
+          "computed": 0.6846890475252997,
+          "measured": 0.6847,
+          "sigma": 0.0,
+          "error_pct": 0.0016,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Omega_m",
+          "formula": "C_eff\u00b7C\u00b7ln(\u03c0)",
+          "computed": 0.31529901823577033,
+          "measured": 0.3153,
+          "sigma": 0.0,
+          "error_pct": 0.000311,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Omega_DM_h2",
+          "formula": "(1 \u2212 S_quant)\u00b7\u03c6\u00b7A_in",
+          "computed": 0.120000673267622,
+          "measured": 0.12,
+          "sigma": 0.0,
+          "error_pct": 0.000561,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "sigma_8",
+          "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
+          "computed": 0.8111240047382514,
+          "measured": 0.8111,
+          "sigma": 0.0,
+          "error_pct": 0.00296,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "tau_reion",
+          "formula": "\u03c6\u00b7|Chaos| \u2212 ln(\u03c6)",
+          "computed": 0.05439655350230806,
+          "measured": 0.0544,
+          "sigma": 0.0,
+          "error_pct": 0.006335,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_pi/m_p",
+          "formula": "K\u00b7P_new\u00b7ln(\u03c0)",
+          "computed": 0.14445749655332277,
+          "measured": 0.14446,
+          "sigma": 0.3,
+          "error_pct": 0.001733,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "N_eff",
+          "formula": "P_new\u00b7e\u00b7\u03c0 + ln(\u03c6)",
+          "computed": 3.045713454288361,
+          "measured": 3.046,
+          "sigma": 0.1,
+          "error_pct": 0.009407,
+          "within_half_pct": true,
+          "within_green": true
+        }
+      ],
+      "obligation_ids": [
+        "c_cosm_pos",
+        "alpha_s_MZ_pos",
+        "p_base_pos",
+        "delta_lambda_cosm_pos",
+        "c_cosm_lt_061806",
+        "p_base_lt_0212371",
+        "alpha_s_MZ_lt_one",
+        "delta_lambda_cosm_lt_one",
+        "S_cosm_cached_neg",
+        "alpha_s_MZ_approx_value",
+        "c_cosm_gt_061800",
+        "p_base_gt_021234",
+        "e_mul_pi_gt_one",
+        "S_cosm_cached_bounds",
+        "r_d_approx_value",
+        "h0_fsot_cached_approx_value",
+        "t_cmb_fsot_cached_approx_value",
+        "n_s_fsot_cached_approx_value",
+        "omega_b_h2_fsot_cached_approx_value",
+        "S_cosm_cached_abs_bounds",
+        "omega_b_h2_fsot_cached_pos",
+        "lambda_cdm_wave1_links_genomic_cosmology",
+        "lambda_cdm_wave_partition",
+        "cosmology_lambda_cdm_bundle",
+        "cosmology_extended_median_error_under_half_pct",
+        "cosmology_skeleton_derivation_count_pos",
+        "cosmology_lambda_cdm_extended_count_pos",
+        "cosmology_extended_observable_count_pos",
+        "cosmology_extended_within_le_total",
+        "cosmology_extended_components_sum",
+        "cosmology_extended_bundle"
+      ],
+      "obligation_count": 31,
+      "obligations_sample": [
+        {
+          "id": "c_cosm_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "alpha_s_MZ_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "p_base_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "delta_lambda_cosm_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "c_cosm_lt_061806",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "p_base_lt_0212371",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "alpha_s_MZ_lt_one",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "delta_lambda_cosm_lt_one",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "S_cosm_cached_neg",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "alpha_s_MZ_approx_value",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "c_cosm_gt_061800",
+          "kind": "gt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "p_base_gt_021234",
+          "kind": "gt_lit",
+          "provable": true,
+          "name": null
+        }
+      ],
+      "lean_modules_missing": []
+    },
+    {
+      "wave": 3,
+      "fn": "wave3",
+      "theme": "CKM / age / acoustic-scale anchors",
+      "domain_route": "particle",
+      "lab_key": "cosmology_wave3_lab",
+      "lean_modules": [
+        {
+          "module": "Cosmology",
+          "path": "FSOT/Formal/Cosmology.lean",
+          "exists": true
+        },
+        {
+          "module": "CosmologyLab",
+          "path": "FSOT/Formal/CosmologyLab.lean",
+          "exists": true
+        },
+        {
+          "module": "CosmologyExtendedPriors",
+          "path": "FSOT/Formal/CosmologyExtendedPriors.lean",
+          "exists": true
+        }
+      ],
+      "observable_count": 15,
+      "median_error_pct": 0.001927,
+      "max_error_pct": 0.240732,
+      "all_within_half_pct": true,
+      "observables": [
+        {
+          "name": "|V_us|",
+          "formula": "\u03b8_S/\u03c6 + (1 \u2212 S_quant)",
+          "computed": 0.22427764916395915,
+          "measured": 0.2243,
+          "sigma": null,
+          "error_pct": 0.009965,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "|V_cb|",
+          "formula": "S_quant/C_eff \u2212 S_quant",
+          "computed": 0.04220081332791359,
+          "measured": 0.0422,
+          "sigma": null,
+          "error_pct": 0.001927,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "sin_theta_C",
+          "formula": "\u03c6/e\u00b3 + Suction",
+          "computed": 0.22759115424752144,
+          "measured": 0.22759,
+          "sigma": null,
+          "error_pct": 0.000507,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Age_Gyr",
+          "formula": "A_in\u00b7\u03c6 + \u03c6\u2075",
+          "computed": 13.787196119245323,
+          "measured": 13.787,
+          "sigma": null,
+          "error_pct": 0.001422,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "z_eq",
+          "formula": "\u03c0\u2075\u00b7\u03c6\u2075",
+          "computed": 3393.8103104014167,
+          "measured": 3402.0,
+          "sigma": null,
+          "error_pct": 0.240732,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "theta_star",
+          "formula": "P_base\u00b7\u03c6 \u2212 \u03b3\u00b2",
+          "computed": 0.01040475951507544,
+          "measured": 0.010411,
+          "sigma": null,
+          "error_pct": 0.059941,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "r_star_Mpc",
+          "formula": "\u03c0\u00b3/P_base \u2212 \u03c6",
+          "computed": 144.39983003198907,
+          "measured": 144.43,
+          "sigma": null,
+          "error_pct": 0.020889,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Deuteron_binding_MeV",
+          "formula": "\u221ae/e + \u03c6",
+          "computed": 2.224564648462528,
+          "measured": 2.224566,
+          "sigma": 0.7,
+          "error_pct": 6.1e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Neutron_lifetime_s",
+          "formula": "\u03c0\u2077\u00b7\u03b8_S",
+          "computed": 878.5928513922833,
+          "measured": 878.4,
+          "sigma": 0.4,
+          "error_pct": 0.021955,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Ising2D_beta",
+          "formula": "\u03b8_S/\u03c6\u2075 + P_new",
+          "computed": 0.3265324013682464,
+          "measured": 0.32653,
+          "sigma": null,
+          "error_pct": 0.000735,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Ising2D_nu",
+          "formula": "\u221a\u03c6/ln(\u03c0) \u2212 ln(\u03c6)",
+          "computed": 0.6299845062655096,
+          "measured": 0.63002,
+          "sigma": 0.4,
+          "error_pct": 0.005634,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Ising2D_gamma",
+          "formula": "(1\u2212S_quant)/ln(\u03c6) + ln(\u03c0)",
+          "computed": 1.2371916616832948,
+          "measured": 1.2372,
+          "sigma": null,
+          "error_pct": 0.000674,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_t/m_W",
+          "formula": "|S_cosm|/|Chaos| + \u03c8_con",
+          "computed": 2.15000345864463,
+          "measured": 2.1498,
+          "sigma": null,
+          "error_pct": 0.009464,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_H/m_W",
+          "formula": "S_quant\u00b7\u03c8_con + S_quant",
+          "computed": 1.5595014764878583,
+          "measured": 1.5595,
+          "sigma": null,
+          "error_pct": 9.5e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_tau/m_e",
+          "formula": "\u03c0\u2077\u00b7ln(\u03c0) + e\u00b3",
+          "computed": 3477.5054587878312,
+          "measured": 3477.48,
+          "sigma": 0.2,
+          "error_pct": 0.000732,
+          "within_half_pct": true,
+          "within_green": true
+        }
+      ],
+      "obligation_ids": [
+        "c_cosm_pos",
+        "alpha_s_MZ_pos",
+        "p_base_pos",
+        "delta_lambda_cosm_pos",
+        "c_cosm_lt_061806",
+        "p_base_lt_0212371",
+        "alpha_s_MZ_lt_one",
+        "delta_lambda_cosm_lt_one",
+        "S_cosm_cached_neg",
+        "alpha_s_MZ_approx_value",
+        "c_cosm_gt_061800",
+        "p_base_gt_021234",
+        "e_mul_pi_gt_one",
+        "S_cosm_cached_bounds",
+        "r_d_approx_value",
+        "h0_fsot_cached_approx_value",
+        "t_cmb_fsot_cached_approx_value",
+        "n_s_fsot_cached_approx_value",
+        "omega_b_h2_fsot_cached_approx_value",
+        "S_cosm_cached_abs_bounds",
+        "omega_b_h2_fsot_cached_pos",
+        "lambda_cdm_wave1_links_genomic_cosmology",
+        "lambda_cdm_wave_partition",
+        "cosmology_lambda_cdm_bundle",
+        "cosmology_extended_median_error_under_half_pct",
+        "cosmology_skeleton_derivation_count_pos",
+        "cosmology_lambda_cdm_extended_count_pos",
+        "cosmology_extended_observable_count_pos",
+        "cosmology_extended_within_le_total",
+        "cosmology_extended_components_sum",
+        "cosmology_extended_bundle"
+      ],
+      "obligation_count": 31,
+      "obligations_sample": [
+        {
+          "id": "c_cosm_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "alpha_s_MZ_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "p_base_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "delta_lambda_cosm_pos",
+          "kind": "pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "c_cosm_lt_061806",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "p_base_lt_0212371",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "alpha_s_MZ_lt_one",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "delta_lambda_cosm_lt_one",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "S_cosm_cached_neg",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "alpha_s_MZ_approx_value",
+          "kind": "lt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "c_cosm_gt_061800",
+          "kind": "gt_lit",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "p_base_gt_021234",
+          "kind": "gt_lit",
+          "provable": true,
+          "name": null
+        }
+      ],
+      "lean_modules_missing": []
+    },
+    {
+      "wave": 4,
+      "fn": "wave4",
+      "theme": "PMNS + CKM depth",
+      "domain_route": "particle",
+      "lab_key": "cosmology_wave4_lab",
+      "lean_modules": [
+        {
+          "module": "CosmologyWave4Priors",
+          "path": "FSOT/Formal/CosmologyWave4Priors.lean",
+          "exists": true
+        },
+        {
+          "module": "CosmologyWave4",
+          "path": "FSOT/Formal/CosmologyWave4.lean",
+          "exists": true
+        }
+      ],
+      "observable_count": 16,
+      "median_error_pct": 0.011586,
+      "max_error_pct": 0.234682,
+      "all_within_half_pct": true,
+      "observables": [
+        {
+          "name": "sin2_theta12",
+          "formula": "2\u00b7Poof",
+          "computed": 0.3069644297889016,
+          "measured": 0.307,
+          "sigma": null,
+          "error_pct": 0.011586,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "sin2_theta23",
+          "formula": "|Chaos|\u00b7\u221ae",
+          "computed": 0.5457666109860249,
+          "measured": 0.546,
+          "sigma": null,
+          "error_pct": 0.042745,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "sin2_theta13",
+          "formula": "\u03b3\u2076\u00b7\u03c6/e",
+          "computed": 0.02201515822114412,
+          "measured": 0.022,
+          "sigma": null,
+          "error_pct": 0.068901,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Dm2_21/Dm2_32",
+          "formula": "\u03b3\u00b3\u00b7Poof",
+          "computed": 0.02951701148028642,
+          "measured": 0.0295,
+          "sigma": null,
+          "error_pct": 0.057666,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "|V_ub|",
+          "formula": "C_cosm\u00b2",
+          "computed": 0.0038196601125010513,
+          "measured": 0.00382,
+          "sigma": null,
+          "error_pct": 0.008898,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "|V_td|",
+          "formula": "\u221a\u03c6/e\u2075",
+          "computed": 0.00857080098022107,
+          "measured": 0.00857,
+          "sigma": null,
+          "error_pct": 0.009346,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "|V_ts|",
+          "formula": "\u03b3\u2075\u00b7\u03c8_con",
+          "computed": 0.04050330471508225,
+          "measured": 0.0405,
+          "sigma": null,
+          "error_pct": 0.00816,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Jarlskog_J",
+          "formula": "G/(\u03c0\u2079)",
+          "computed": 3.072771786665467e-05,
+          "measured": 3.08e-05,
+          "sigma": null,
+          "error_pct": 0.234682,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Feigenbaum_delta",
+          "formula": "ln(\u03c0)\u00b7(e/G) + \u221a\u03c6",
+          "computed": 4.669197957279608,
+          "measured": 4.6692,
+          "sigma": 0.2,
+          "error_pct": 4.4e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Feigenbaum_alpha",
+          "formula": "|Chaos|\u00b7\u03c6\u00b7e + A_bleed",
+          "computed": 2.5029081532028084,
+          "measured": 2.50291,
+          "sigma": 0.2,
+          "error_pct": 7.4e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "r_p_fm",
+          "formula": "G\u2077 + P_new",
+          "computed": 0.8412485409697683,
+          "measured": 0.8414,
+          "sigma": 0.1,
+          "error_pct": 0.018001,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_n-m_p_MeV",
+          "formula": "\u03b3\u2074/|Chaos| + P_var",
+          "computed": 1.2933328005542002,
+          "measured": 1.29333,
+          "sigma": 0.3,
+          "error_pct": 0.000217,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "mu_p_muN",
+          "formula": "\u03c0\u00b7(1 \u2212 \u03b3\u2074)",
+          "computed": 2.792852216264115,
+          "measured": 2.79285,
+          "sigma": 0.2,
+          "error_pct": 7.9e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "w0",
+          "formula": "\u2212P_new\u00b7\u03c0/G",
+          "computed": -1.0299812921372637,
+          "measured": -1.03,
+          "sigma": null,
+          "error_pct": 0.001816,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_c/m_b",
+          "formula": "C_cosm/P_base",
+          "computed": 0.2910507567869785,
+          "measured": 0.291,
+          "sigma": null,
+          "error_pct": 0.017442,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "alpha_s_ratio",
+          "formula": "\u03c0\u2076\u00b7\u03b3\u2078",
+          "computed": 11.846883192361886,
+          "measured": 11.85,
+          "sigma": null,
+          "error_pct": 0.026302,
+          "within_half_pct": true,
+          "within_green": true
+        }
+      ],
+      "obligation_ids": [
+        "cosmology_wave4_max_error_under_half_pct",
+        "cosmology_wave4_median_error_under_half_pct",
+        "cosmology_wave4_observable_count_pos",
+        "cosmology_wave4_bundle",
+        "wave4_observable_count_pos"
+      ],
+      "obligation_count": 5,
+      "obligations_sample": [
+        {
+          "id": "cosmology_wave4_max_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave4_median_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave4_observable_count_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave4_bundle",
+          "kind": "bundle_conj",
+          "provable": false,
+          "name": null
+        },
+        {
+          "id": "wave4_observable_count_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        }
+      ],
+      "lean_modules_missing": []
+    },
+    {
+      "wave": 5,
+      "fn": "wave5",
+      "theme": "Z-pole / electroweak precision",
+      "domain_route": "particle",
+      "lab_key": "cosmology_wave5_lab",
+      "lean_modules": [
+        {
+          "module": "CosmologyWave5Priors",
+          "path": "FSOT/Formal/CosmologyWave5Priors.lean",
+          "exists": true
+        }
+      ],
+      "observable_count": 22,
+      "median_error_pct": 0.002077,
+      "max_error_pct": 0.090986,
+      "all_within_half_pct": true,
+      "observables": [
+        {
+          "name": "Gamma_Z/M_Z",
+          "formula": "\u03c6\u2075/e\u2076",
+          "computed": 0.027489782887668835,
+          "measured": 0.02749,
+          "sigma": null,
+          "error_pct": 0.00079,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "R_ell",
+          "formula": "G\u00b3/\u03b3\u2076",
+          "computed": 20.77824342349839,
+          "measured": 20.767,
+          "sigma": 0.4,
+          "error_pct": 0.054141,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "R_b",
+          "formula": "G/\u03c6\u00b3",
+          "computed": 0.21623014527680923,
+          "measured": 0.21629,
+          "sigma": 0.1,
+          "error_pct": 0.027673,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "R_c",
+          "formula": "\u2212ln(2) + e/\u03c0",
+          "computed": 0.17210879887231978,
+          "measured": 0.1721,
+          "sigma": null,
+          "error_pct": 0.005113,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "A_FB_ell",
+          "formula": "A_in/\u03c0\u2074",
+          "computed": 0.0171118919939693,
+          "measured": 0.0171,
+          "sigma": null,
+          "error_pct": 0.069544,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "A_ell_SLD",
+          "formula": "\u03b3\u00b3/\u221a\u03c6",
+          "computed": 0.15118910851310519,
+          "measured": 0.1513,
+          "sigma": 0.1,
+          "error_pct": 0.073292,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_H/m_t",
+          "formula": "A_bleed\u00b7ln(2)",
+          "computed": 0.7257068201623708,
+          "measured": 0.7256,
+          "sigma": null,
+          "error_pct": 0.014722,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "BR_H_bb",
+          "formula": "C_eff/\u221ae",
+          "computed": 0.5808757487636912,
+          "measured": 0.5809,
+          "sigma": null,
+          "error_pct": 0.004175,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "BR_H_WW",
+          "formula": "ln(\u03c6)/\u221a5",
+          "computed": 0.21520447048200203,
+          "measured": 0.2152,
+          "sigma": null,
+          "error_pct": 0.002077,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "BR_H_tautau",
+          "formula": "\u03b7_eff/e\u00b2",
+          "computed": 0.06319375582922372,
+          "measured": 0.0632,
+          "sigma": null,
+          "error_pct": 0.00988,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Y_p_He4",
+          "formula": "\u03b8_S\u00b7sin(1)",
+          "computed": 0.24478099844975698,
+          "measured": 0.2449,
+          "sigma": null,
+          "error_pct": 0.048592,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "D_H_ratio",
+          "formula": "1/(\u03c0\u2074\u00b7e\u2076)",
+          "computed": 2.5446825859417006e-05,
+          "measured": 2.547e-05,
+          "sigma": 0.1,
+          "error_pct": 0.090986,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Khinchin_K0",
+          "formula": "A_bleed/ln(3) + 1/\u03b3",
+          "computed": 2.685451182405338,
+          "measured": 2.685452,
+          "sigma": 0.1,
+          "error_pct": 3e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Glaisher_A",
+          "formula": "G\u2074\u221a5 \u2212 G/\u03c0",
+          "computed": 1.2824279243871977,
+          "measured": 1.282427,
+          "sigma": 0.1,
+          "error_pct": 7.2e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Twin_prime_C2",
+          "formula": "\u03b3\u2074/G\u2074 + |S_cosm|",
+          "computed": 0.6601574344174435,
+          "measured": 0.660162,
+          "sigma": 0.4,
+          "error_pct": 0.000692,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Mertens_M",
+          "formula": "\u2212Poof\u00b7ln(2) + 1/e",
+          "computed": 0.2614936766512581,
+          "measured": 0.261497,
+          "sigma": 0.4,
+          "error_pct": 0.001271,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Dottie_number",
+          "formula": "\u2212G\u2076/e\u00b3 + G\u00b3",
+          "computed": 0.7390857024468026,
+          "measured": 0.739085,
+          "sigma": 0.1,
+          "error_pct": 9.5e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Omega_constant",
+          "formula": "Suction/\u03c6\u2074 + sin(\u03b3)",
+          "computed": 0.5671447925724256,
+          "measured": 0.567143,
+          "sigma": 0.2,
+          "error_pct": 0.000316,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Conway_lambda",
+          "formula": "G\u2075ln(3) + \u03c6/e",
+          "computed": 1.3035789762668335,
+          "measured": 1.303577,
+          "sigma": 0.2,
+          "error_pct": 0.000152,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Plastic_number",
+          "formula": "\u2212G\u00b3\u03c0\u03b3 + e",
+          "computed": 1.324722496060228,
+          "measured": 1.324718,
+          "sigma": 0.5,
+          "error_pct": 0.000339,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Landau_Ramanujan",
+          "formula": "\u22121/(G\u00b3\u03c0\u2075) + G\u00b3",
+          "computed": 0.7642364991979522,
+          "measured": 0.764236,
+          "sigma": null,
+          "error_pct": 6.5e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Laplace_limit",
+          "formula": "G\u2078C_cosm + \u03c8_con",
+          "computed": 0.6627434116142251,
+          "measured": 0.662743,
+          "sigma": null,
+          "error_pct": 6.2e-05,
+          "within_half_pct": true,
+          "within_green": true
+        }
+      ],
+      "obligation_ids": [
+        "cosmology_wave5_max_error_under_half_pct",
+        "cosmology_wave5_median_error_under_half_pct",
+        "cosmology_wave5_observable_count_pos",
+        "cosmology_wave5_bundle"
+      ],
+      "obligation_count": 4,
+      "obligations_sample": [
+        {
+          "id": "cosmology_wave5_max_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave5_median_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave5_observable_count_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave5_bundle",
+          "kind": "bundle_conj",
+          "provable": false,
+          "name": null
+        }
+      ],
+      "lean_modules_missing": []
+    },
+    {
+      "wave": 6,
+      "fn": "wave6",
+      "theme": "Mathematical constants (\u03b6, Levy, \u2026)",
+      "domain_route": "mathematical",
+      "lab_key": "cosmology_wave6_lab",
+      "lean_modules": [
+        {
+          "module": "CosmologyWave6Priors",
+          "path": "FSOT/Formal/CosmologyWave6Priors.lean",
+          "exists": true
+        }
+      ],
+      "observable_count": 22,
+      "median_error_pct": 0.000344,
+      "max_error_pct": 0.031298,
+      "all_within_half_pct": true,
+      "observables": [
+        {
+          "name": "zeta_5",
+          "formula": "\u03c0/3 \u2212 \u03c0\u207b\u2074",
+          "computed": 1.0369315689419134,
+          "measured": 1.036928,
+          "sigma": 0.4,
+          "error_pct": 0.000344,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "zeta_7",
+          "formula": "\u2212\u221a2\u00b7cos(1) + \u221a\u03c0",
+          "computed": 1.0083510021653366,
+          "measured": 1.008349,
+          "sigma": 0.2,
+          "error_pct": 0.000199,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Levy_constant",
+          "formula": "\u03c8_con\u00b7P_base + \u03c0",
+          "computed": 3.275820784331113,
+          "measured": 3.275823,
+          "sigma": 0.2,
+          "error_pct": 6.8e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Erdos_Borwein",
+          "formula": "\u221a2/G\u2076 \u2212 B_in",
+          "computed": 1.6066981052307703,
+          "measured": 1.606695,
+          "sigma": 0.3,
+          "error_pct": 0.000193,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Bernstein",
+          "formula": "\u2212\u03b3\u2075\u03c6/e + 1/\u03c0",
+          "computed": 0.28016962153089064,
+          "measured": 0.280169,
+          "sigma": null,
+          "error_pct": 0.000222,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Backhouse",
+          "formula": "\u221a\u03c0/3 + e/\u03c0",
+          "computed": 1.4560739297341037,
+          "measured": 1.456075,
+          "sigma": 0.1,
+          "error_pct": 7.4e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Viswanath",
+          "formula": "\u03c0\u03b3/\u03c6\u00b3 + G\u2074",
+          "computed": 1.131989324238136,
+          "measured": 1.131988,
+          "sigma": 0.1,
+          "error_pct": 0.000117,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Kepler_Bouwkamp",
+          "formula": "\u2212\u03b3ln(2) + \u03c6/\u03c0",
+          "computed": 0.11494080409895219,
+          "measured": 0.114942,
+          "sigma": 0.1,
+          "error_pct": 0.00104,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Sphere_packing_3D",
+          "formula": "\u221a2\u03c6/e \u2212 1/\u03c0\u00b2",
+          "computed": 0.7404773330949465,
+          "measured": 0.74048,
+          "sigma": 0.3,
+          "error_pct": 0.00036,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Gauss_AGM",
+          "formula": "A_bleed \u2212 P_base",
+          "computed": 0.8346278543481727,
+          "measured": 0.834627,
+          "sigma": 0.1,
+          "error_pct": 0.000102,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Lemniscate",
+          "formula": "(e/\u03c6)/G + B_in",
+          "computed": 2.6220605143146716,
+          "measured": 2.622058,
+          "sigma": 0.3,
+          "error_pct": 9.6e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Hashing_bound",
+          "formula": "\u2212G\u2077\u221a3 + A_bleed",
+          "computed": 0.11002721665641338,
+          "measured": 0.110028,
+          "sigma": 0.1,
+          "error_pct": 0.000712,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "von_Karman",
+          "formula": "A_bleed/\u03c6\u00b2",
+          "computed": 0.39990834155956795,
+          "measured": 0.4,
+          "sigma": null,
+          "error_pct": 0.022915,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Madelung_NaCl",
+          "formula": "e/3 + sin(1)",
+          "computed": 1.7475649276275782,
+          "measured": 1.747565,
+          "sigma": null,
+          "error_pct": 4e-06,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Madelung_CsCl",
+          "formula": "G\u2078C_cosm + \u221a3",
+          "computed": 1.7626736603545448,
+          "measured": 1.762672,
+          "sigma": 0.2,
+          "error_pct": 9.4e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Methane_angle",
+          "formula": "e\u2074/G\u2077 + e\u03c0",
+          "computed": 109.4705542253899,
+          "measured": 109.471,
+          "sigma": 0.1,
+          "error_pct": 0.000407,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "O_N_electronegativity",
+          "formula": "e\u207b\u2074 + G\u2076",
+          "computed": 0.608890511720405,
+          "measured": 0.6087,
+          "sigma": null,
+          "error_pct": 0.031298,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Water_max_density_C",
+          "formula": "ln(\u03c0)/C",
+          "computed": 3.9802826201882504,
+          "measured": 3.98,
+          "sigma": null,
+          "error_pct": 0.007101,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Perc_sq_site",
+          "formula": "\u2212C_cosm\u00b7sin(1) + G\u2075",
+          "computed": 0.5927508446708531,
+          "measured": 0.592746,
+          "sigma": 0.5,
+          "error_pct": 0.000817,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Polya_3D_return",
+          "formula": "\u221a\u03c0/2 \u2212 sin(\u03b3)",
+          "computed": 0.34053410224876524,
+          "measured": 0.340537,
+          "sigma": 0.3,
+          "error_pct": 0.000851,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Random_walk_CN",
+          "formula": "G\u2077/K \u2212 \u03b3\u2074",
+          "computed": 1.1762803727707378,
+          "measured": 1.176281,
+          "sigma": null,
+          "error_pct": 5.3e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Nats_per_bit",
+          "formula": "\u2212\u03b7_eff\u00b7cos(\u03c6) + G\u207b\u2074",
+          "computed": 1.4426868248704778,
+          "measured": 1.442695,
+          "sigma": 0.8,
+          "error_pct": 0.000567,
+          "within_half_pct": true,
+          "within_green": true
+        }
+      ],
+      "obligation_ids": [
+        "cosmology_wave6_max_error_under_half_pct",
+        "cosmology_wave6_median_error_under_half_pct",
+        "cosmology_wave6_observable_count_pos",
+        "cosmology_wave6_bundle"
+      ],
+      "obligation_count": 4,
+      "obligations_sample": [
+        {
+          "id": "cosmology_wave6_max_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave6_median_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave6_observable_count_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave6_bundle",
+          "kind": "bundle_conj",
+          "provable": false,
+          "name": null
+        }
+      ],
+      "lean_modules_missing": []
+    },
+    {
+      "wave": 7,
+      "fn": "wave7",
+      "theme": "Ap\u00e9ry / Soldner / number-theory constants",
+      "domain_route": "mathematical",
+      "lab_key": "cosmology_wave7_lab",
+      "lean_modules": [
+        {
+          "module": "CosmologyWave7Priors",
+          "path": "FSOT/Formal/CosmologyWave7Priors.lean",
+          "exists": true
+        }
+      ],
+      "observable_count": 29,
+      "median_error_pct": 0.003988,
+      "max_error_pct": 0.298055,
+      "all_within_half_pct": true,
+      "observables": [
+        {
+          "name": "Apery_zeta3_w7",
+          "formula": "\u03b3\u00b3/\u03b8_S + G\u2077",
+          "computed": 1.2020593750320427,
+          "measured": 1.20206,
+          "sigma": 0.2,
+          "error_pct": 5.2e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Soldner",
+          "formula": "\u221a5/2 + 1/3",
+          "computed": 1.4513673220832282,
+          "measured": 1.45136,
+          "sigma": 0.2,
+          "error_pct": 0.000504,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Mills",
+          "formula": "\u03b3\u00b3\u03c6/e + G\u207b\u00b2",
+          "computed": 1.306379265718492,
+          "measured": 1.30637,
+          "sigma": 0.1,
+          "error_pct": 0.000709,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Sierpinski_const",
+          "formula": "\u03c6\u00b3/2 + \u03b7_eff",
+          "computed": 2.584976195674155,
+          "measured": 2.5849,
+          "sigma": 0.6,
+          "error_pct": 0.002948,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Niven",
+          "formula": "1/(G\u00b3\u221ae) + G",
+          "computed": 1.7052168407275836,
+          "measured": 1.7052,
+          "sigma": 0.0,
+          "error_pct": 0.000988,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Artin",
+          "formula": "C_eff/\u03c6\u2075 + C",
+          "computed": 0.37395610555822756,
+          "measured": 0.374,
+          "sigma": null,
+          "error_pct": 0.011736,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Hafner_Sarnak",
+          "formula": "ln(2)/e\u2074 + \u03c6/e",
+          "computed": 0.6079368730335913,
+          "measured": 0.608,
+          "sigma": 1.0,
+          "error_pct": 0.010383,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Porter",
+          "formula": "1/(\u03c0\u03c6\u2074) + G\u207b\u2074",
+          "computed": 1.4670785554317929,
+          "measured": 1.467,
+          "sigma": null,
+          "error_pct": 0.005355,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Thue_Morse",
+          "formula": "C_eff/(e\u03c0) + P_new",
+          "computed": 0.41244888189817797,
+          "measured": 0.4125,
+          "sigma": 0.5,
+          "error_pct": 0.012392,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "MRB",
+          "formula": "C/\u03c6\u2074 + \u03c6\u207b\u2074",
+          "computed": 0.1878583304070266,
+          "measured": 0.1879,
+          "sigma": 0.1,
+          "error_pct": 0.022176,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Gauss_Kuzmin",
+          "formula": "\u03b3/(e\u03c0) + \u03c6\u207b\u00b3",
+          "computed": 0.3036597373661549,
+          "measured": 0.3036,
+          "sigma": 0.3,
+          "error_pct": 0.019676,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Universal_parabolic",
+          "formula": "B_in/G\u2077 + G\u00b2",
+          "computed": 2.295590129689312,
+          "measured": 2.2956,
+          "sigma": 0.3,
+          "error_pct": 0.00043,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Lieb_square_ice",
+          "formula": "B_in/G\u2074 + K",
+          "computed": 1.5396001133368624,
+          "measured": 1.5396,
+          "sigma": 0.1,
+          "error_pct": 7e-06,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Komornik_Loreti",
+          "formula": "(\u03c0/e)\u00b7A_bleed + \u03b3",
+          "computed": 1.7872317242814628,
+          "measured": 1.7872,
+          "sigma": null,
+          "error_pct": 0.001775,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Bloch_Landau",
+          "formula": "1/(G\u00b2\u221a5) + \u03c0\u207b\u2074",
+          "computed": 0.5433021478033816,
+          "measured": 0.5433,
+          "sigma": null,
+          "error_pct": 0.000395,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Golden_angle_deg",
+          "formula": "(\u03c6/\u03c0)/cos(\u03c6) + e\u2075",
+          "computed": 137.50601880311288,
+          "measured": 137.508,
+          "sigma": 0.2,
+          "error_pct": 0.001441,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Ising3D_eta",
+          "formula": "\u221a\u03c6/\u03c0\u2075 + 1/\u03c0\u00b3",
+          "computed": 0.03640819399713107,
+          "measured": 0.0363,
+          "sigma": null,
+          "error_pct": 0.298055,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Ising3D_alpha",
+          "formula": "Suction \u2212 \u03b3\u2076",
+          "computed": 0.11004872741790349,
+          "measured": 0.1101,
+          "sigma": null,
+          "error_pct": 0.046569,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Ising3D_delta",
+          "formula": "\u221a5/\u03b7_eff",
+          "computed": 4.788746753540937,
+          "measured": 4.7898,
+          "sigma": null,
+          "error_pct": 0.021989,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "XY_nu",
+          "formula": "G\u2074 \u2212 1/\u03c0\u00b3",
+          "computed": 0.671657668800388,
+          "measured": 0.672,
+          "sigma": null,
+          "error_pct": 0.050942,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "XY_eta",
+          "formula": "\u03b3\u2075\u03c6/e",
+          "computed": 0.03814026465290003,
+          "measured": 0.0381,
+          "sigma": null,
+          "error_pct": 0.105682,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Heisenberg_nu",
+          "formula": "cos(1)/\u221a\u03b3",
+          "computed": 0.7111607292512704,
+          "measured": 0.7112,
+          "sigma": null,
+          "error_pct": 0.005522,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Heisenberg_eta",
+          "formula": "C_cosm/\u221ae",
+          "computed": 0.037485656292130395,
+          "measured": 0.0375,
+          "sigma": null,
+          "error_pct": 0.03825,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Perc_honeycomb_site",
+          "formula": "\u03c0/(3\u03c6) + e\u207b\u00b3",
+          "computed": 0.6969907479430195,
+          "measured": 0.697,
+          "sigma": null,
+          "error_pct": 0.001327,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Perc_SC_bond",
+          "formula": "G\u2077/e + e\u207b\u00b3",
+          "computed": 0.2487900777821054,
+          "measured": 0.2488,
+          "sigma": 0.2,
+          "error_pct": 0.003988,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Perc_SC_site",
+          "formula": "cos(\u03c6)/G\u00b2 + 1/e",
+          "computed": 0.31159756759350293,
+          "measured": 0.3116,
+          "sigma": null,
+          "error_pct": 0.000781,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_u/m_d",
+          "formula": "\u221a3 \u2212 \u221a\u03c6",
+          "computed": 0.4600311580548083,
+          "measured": 0.4596,
+          "sigma": null,
+          "error_pct": 0.093812,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_s/m_d",
+          "formula": "e\u00b3 + \u03b3\u2074",
+          "computed": 20.19654445210049,
+          "measured": 20.196,
+          "sigma": null,
+          "error_pct": 0.002696,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_tau/m_mu",
+          "formula": "\u03c0\u00b2e/\u03c6 + \u03c6\u207b\u00b3",
+          "computed": 16.81691021202443,
+          "measured": 16.817,
+          "sigma": 0.1,
+          "error_pct": 0.000534,
+          "within_half_pct": true,
+          "within_green": true
+        }
+      ],
+      "obligation_ids": [
+        "cosmology_wave7_max_error_under_half_pct",
+        "cosmology_wave7_median_error_under_half_pct",
+        "cosmology_wave7_observable_count_pos",
+        "cosmology_wave7_bundle"
+      ],
+      "obligation_count": 4,
+      "obligations_sample": [
+        {
+          "id": "cosmology_wave7_max_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave7_median_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave7_observable_count_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave7_bundle",
+          "kind": "bundle_conj",
+          "provable": false,
+          "name": null
+        }
+      ],
+      "lean_modules_missing": []
+    },
+    {
+      "wave": 8,
+      "fn": "wave8",
+      "theme": "CKM unitarity + BR / mass ratios",
+      "domain_route": "particle",
+      "lab_key": "cosmology_wave8_lab",
+      "lean_modules": [
+        {
+          "module": "CosmologyWave8Priors",
+          "path": "FSOT/Formal/CosmologyWave8Priors.lean",
+          "exists": true
+        },
+        {
+          "module": "CosmologyHigherWavesPriors",
+          "path": "FSOT/Formal/CosmologyHigherWavesPriors.lean",
+          "exists": true
+        }
+      ],
+      "observable_count": 52,
+      "median_error_pct": 0.014207,
+      "max_error_pct": 4.232801,
+      "all_within_half_pct": false,
+      "observables": [
+        {
+          "name": "|V_ud|",
+          "formula": "A_in \u2212 ln(2)",
+          "computed": 0.9737066644446277,
+          "measured": 0.9737,
+          "sigma": 0.2,
+          "error_pct": 0.000684,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "|V_cd|",
+          "formula": "\u221a\u03b3\u00b7\u03b8_S",
+          "computed": 0.22100780479132598,
+          "measured": 0.221,
+          "sigma": null,
+          "error_pct": 0.003532,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "|V_cs|",
+          "formula": "\u03c6\u03b3/P_var",
+          "computed": 0.9749134853131556,
+          "measured": 0.9735,
+          "sigma": 0.1,
+          "error_pct": 0.145196,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "delta_CP_PMNS",
+          "formula": "\u03c6\u00b3 \u2212 1/e",
+          "computed": 3.8681885363283475,
+          "measured": 3.8685,
+          "sigma": null,
+          "error_pct": 0.008051,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "m_t/m_b",
+          "formula": "\u03c0\u2074\u00b7K",
+          "computed": 40.933410338689306,
+          "measured": 41.08,
+          "sigma": 0.1,
+          "error_pct": 0.356839,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "BR_Z_ee",
+          "formula": "\u03b3\u2076/ln(3)",
+          "computed": 0.03366543264779789,
+          "measured": 0.03363,
+          "sigma": 0.4,
+          "error_pct": 0.10536,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "BR_Z_had",
+          "formula": "sin(\u03b3) + Poof",
+          "computed": 0.6991750380984436,
+          "measured": 0.6991,
+          "sigma": 0.1,
+          "error_pct": 0.010734,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "BR_Z_inv",
+          "formula": "(1/3)/A_in",
+          "computed": 0.19997754112174054,
+          "measured": 0.2,
+          "sigma": null,
+          "error_pct": 0.011229,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "BR_H_ZZ",
+          "formula": "1/(e\u2074ln(2))",
+          "computed": 0.026423881395489845,
+          "measured": 0.0264,
+          "sigma": null,
+          "error_pct": 0.09046,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "BR_H_gg",
+          "formula": "\u03c6\u207b\u2074 \u2212 \u03b3\u2075",
+          "computed": 0.08182274913982478,
+          "measured": 0.0785,
+          "sigma": null,
+          "error_pct": 4.232801,
+          "within_half_pct": false,
+          "within_green": false
+        },
+        {
+          "name": "BR_H_cc",
+          "formula": "Suction/(\u03c0\u03c6)",
+          "computed": 0.028925456135151035,
+          "measured": 0.0289,
+          "sigma": null,
+          "error_pct": 0.088084,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "BR_H_gamgam",
+          "formula": "\u03b3\u2076\u00b7C_cosm",
+          "computed": 0.0022858146532987495,
+          "measured": 0.00228,
+          "sigma": 0.1,
+          "error_pct": 0.255029,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "BR_H_Zgam",
+          "formula": "\u03b7_eff/\u03c0\u2075",
+          "computed": 0.0015258567671942072,
+          "measured": 0.00153,
+          "sigma": 0.1,
+          "error_pct": 0.2708,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "He4_binding_MeV",
+          "formula": "\u03c0\u03b3/\u03b3\u2075",
+          "computed": 28.30071693656917,
+          "measured": 28.3,
+          "sigma": 0.5,
+          "error_pct": 0.002533,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Triton_binding_MeV",
+          "formula": "e\u00b2 + G\u207b\u00b9",
+          "computed": 8.480800162634557,
+          "measured": 8.482,
+          "sigma": 0.1,
+          "error_pct": 0.014146,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Deuteron_mu_muN",
+          "formula": "G\u2074 + Poof",
+          "computed": 0.8573914181280383,
+          "measured": 0.8574,
+          "sigma": null,
+          "error_pct": 0.001001,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "S_8",
+          "formula": "\u03c8_con/\u221a\u03b3",
+          "computed": 0.8320144347134201,
+          "measured": 0.832,
+          "sigma": null,
+          "error_pct": 0.001735,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "z_reion",
+          "formula": "e\u00b3/\u03c6\u00b2",
+          "computed": 7.671992422366703,
+          "measured": 7.68,
+          "sigma": null,
+          "error_pct": 0.104265,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "XY_beta",
+          "formula": "\u03c8_con/(\u03c0\u03b3)",
+          "computed": 0.3485875996963401,
+          "measured": 0.3486,
+          "sigma": null,
+          "error_pct": 0.003557,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "XY_gamma",
+          "formula": "\u03c6 \u2212 P_new",
+          "computed": 1.3177317120795233,
+          "measured": 1.3177,
+          "sigma": 0.1,
+          "error_pct": 0.002407,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Heisenberg_beta",
+          "formula": "\u03c6/\u03c0 \u2212 \u03c6\u207b\u2074",
+          "computed": 0.36913818105016843,
+          "measured": 0.3689,
+          "sigma": 0.2,
+          "error_pct": 0.064565,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Heisenberg_gamma",
+          "formula": "\u221a2 \u2212 e\u207b\u2074",
+          "computed": 1.395897923484361,
+          "measured": 1.3962,
+          "sigma": 0.1,
+          "error_pct": 0.021636,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Perc_BCC_bond",
+          "formula": "G\u2077/3",
+          "computed": 0.18031542143313228,
+          "measured": 0.1803,
+          "sigma": null,
+          "error_pct": 0.008553,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Perc_FCC_site",
+          "formula": "1/3 \u2212 e\u207b\u00b2",
+          "computed": 0.19799805009672064,
+          "measured": 0.1982,
+          "sigma": null,
+          "error_pct": 0.101892,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Perc3D_nu",
+          "formula": "sin(\u03b3) \u2212 Chaos",
+          "computed": 0.8767170058144746,
+          "measured": 0.875,
+          "sigma": 0.2,
+          "error_pct": 0.196229,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Perc3D_beta",
+          "formula": "\u221a\u03c0/\u03c6\u00b3",
+          "computed": 0.41841959579497895,
+          "measured": 0.4181,
+          "sigma": 0.3,
+          "error_pct": 0.07644,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Perc3D_gamma",
+          "formula": "\u03b3\u2077 + \u221a\u03c0",
+          "computed": 1.793802321199428,
+          "measured": 1.8052,
+          "sigma": 0.5,
+          "error_pct": 0.63138,
+          "within_half_pct": false,
+          "within_green": false
+        },
+        {
+          "name": "Brun_B2",
+          "formula": "\u03b3\u00b2 + e\u03b3",
+          "computed": 1.902212776811461,
+          "measured": 1.9022,
+          "sigma": null,
+          "error_pct": 0.000672,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Copeland_Erdos",
+          "formula": "(1/3)/\u221a2",
+          "computed": 0.23570226039551584,
+          "measured": 0.2357,
+          "sigma": 0.1,
+          "error_pct": 0.000959,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Erdos_Tenenbaum_Ford",
+          "formula": "\u03b3\u00b3/\u221a5",
+          "computed": 0.0860061137480346,
+          "measured": 0.0862,
+          "sigma": 0.7,
+          "error_pct": 0.224926,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Foias_alpha",
+          "formula": "e\u03b3 \u2212 \u03c6\u207b\u00b2",
+          "computed": 1.187068841753637,
+          "measured": 1.1874,
+          "sigma": 0.1,
+          "error_pct": 0.027889,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Madelung_ZnS",
+          "formula": "e\u03b3/C_eff",
+          "computed": 1.6383327183652612,
+          "measured": 1.6381,
+          "sigma": 0.2,
+          "error_pct": 0.014207,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Madelung_CaF2",
+          "formula": "G\u207b\u2074 + ln(3)",
+          "computed": 2.5192500575824006,
+          "measured": 2.5194,
+          "sigma": 0.1,
+          "error_pct": 0.005952,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Madelung_TiO2",
+          "formula": "G\u00b2 + e\u03b3",
+          "computed": 2.408027822720168,
+          "measured": 2.408,
+          "sigma": null,
+          "error_pct": 0.001155,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Ice_Ih_density",
+          "formula": "sin(\u03b3)\u00b7e/\u03c6",
+          "computed": 0.9167587921820931,
+          "measured": 0.917,
+          "sigma": 0.1,
+          "error_pct": 0.026304,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "H2O_bond_angle",
+          "formula": "e\u00b3/\u03b3\u00b3",
+          "computed": 104.4405425791162,
+          "measured": 104.5,
+          "sigma": 0.1,
+          "error_pct": 0.056897,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Lorenz_dim",
+          "formula": "\u221a\u03c6 + B_in",
+          "computed": 2.0599604417905124,
+          "measured": 2.06,
+          "sigma": null,
+          "error_pct": 0.00192,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Henon_dim",
+          "formula": "P_var/\u221a\u03b3",
+          "computed": 1.2609289528725578,
+          "measured": 1.261,
+          "sigma": null,
+          "error_pct": 0.005634,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Apollonian_dim",
+          "formula": "ln(3)/sin(1)",
+          "computed": 1.305585467000882,
+          "measured": 1.3058,
+          "sigma": 0.1,
+          "error_pct": 0.016429,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "SAW_mu_sq",
+          "formula": "\u221a\u03c0 + e/\u03c0",
+          "computed": 2.6377098303377813,
+          "measured": 2.6382,
+          "sigma": 0.5,
+          "error_pct": 0.01858,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "SAW_nu_3D",
+          "formula": "cos(1) \u2212 cos(\u03c6)",
+          "computed": 0.5875224021224995,
+          "measured": 0.5877,
+          "sigma": 0.1,
+          "error_pct": 0.030219,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "SAW_gamma_3D",
+          "formula": "G\u207b\u00b2 \u2212 \u03c0\u207b\u00b3",
+          "computed": 1.159653566199519,
+          "measured": 1.1575,
+          "sigma": 0.1,
+          "error_pct": 0.186053,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Potts3_beta",
+          "formula": "1/9",
+          "computed": 0.1111111111111111,
+          "measured": 0.11111,
+          "sigma": null,
+          "error_pct": 0.001,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "KT_T/J",
+          "formula": "A_bleed \u2212 Poof",
+          "computed": 0.8934914156931002,
+          "measured": 0.8935,
+          "sigma": null,
+          "error_pct": 0.000961,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Quark_condensate",
+          "formula": "1/4",
+          "computed": 0.25,
+          "measured": 0.25,
+          "sigma": null,
+          "error_pct": 0.0,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Figure8_knot_vol",
+          "formula": "G\u207b\u00b2 + cos(\u03b3)",
+          "computed": 2.029890388512915,
+          "measured": 2.0299,
+          "sigma": 0.1,
+          "error_pct": 0.000473,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Bessel_J0_zero1",
+          "formula": "A_in/ln(2)",
+          "computed": 2.4047617760747984,
+          "measured": 2.405,
+          "sigma": 0.6,
+          "error_pct": 0.009905,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Airy_Ai_zero1",
+          "formula": "(1/G)/\u03b7_eff",
+          "computed": 2.3380710664285527,
+          "measured": 2.338,
+          "sigma": 0.4,
+          "error_pct": 0.00304,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "gamma_2_Stieltjes",
+          "formula": "\u03c0\u207b\u00b2 \u2212 \u03b3\u2074",
+          "computed": -0.009686345270484219,
+          "measured": -0.00946,
+          "sigma": null,
+          "error_pct": 2.392656,
+          "within_half_pct": false,
+          "within_green": false
+        },
+        {
+          "name": "First_Riemann_zero",
+          "formula": "e/\u03b3\u00b3",
+          "computed": 14.1344904113302,
+          "measured": 14.135,
+          "sigma": 0.2,
+          "error_pct": 0.003605,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Spanning_tree_sq",
+          "formula": "\u03b3\u2077 + ln(\u03c0)",
+          "computed": 1.1660783561433121,
+          "measured": 1.1663,
+          "sigma": 0.2,
+          "error_pct": 0.019004,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Hard_sq_entropy",
+          "formula": "e\u03b3\u00b7P_var",
+          "computed": 1.5031151842015722,
+          "measured": 1.5031,
+          "sigma": 0.1,
+          "error_pct": 0.00101,
+          "within_half_pct": true,
+          "within_green": true
+        }
+      ],
+      "obligation_ids": [
+        "cosmology_wave8_max_error_under_half_pct",
+        "cosmology_wave8_median_error_under_half_pct",
+        "cosmology_wave8_observable_count_pos",
+        "cosmology_wave8_bundle",
+        "cosmology_higher_waves_max_error_under_half_pct",
+        "cosmology_higher_waves_total_pos",
+        "cosmology_higher_waves_partition",
+        "cosmology_higher_waves_bundle"
+      ],
+      "obligation_count": 8,
+      "obligations_sample": [
+        {
+          "id": "cosmology_wave8_max_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave8_median_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave8_observable_count_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave8_bundle",
+          "kind": "bundle_conj",
+          "provable": false,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_max_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_total_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_partition",
+          "kind": "eq_nat_arith",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_bundle",
+          "kind": "bundle_conj",
+          "provable": false,
+          "name": null
+        }
+      ],
+      "lean_modules_missing": []
+    },
+    {
+      "wave": 9,
+      "fn": "wave9",
+      "theme": "Top / radiation / fractal geometry",
+      "domain_route": "particle",
+      "lab_key": "cosmology_wave9_lab",
+      "lean_modules": [
+        {
+          "module": "CosmologyWave9Priors",
+          "path": "FSOT/Formal/CosmologyWave9Priors.lean",
+          "exists": true
+        },
+        {
+          "module": "CosmologyHigherWavesPriors",
+          "path": "FSOT/Formal/CosmologyHigherWavesPriors.lean",
+          "exists": true
+        }
+      ],
+      "observable_count": 7,
+      "median_error_pct": 0.014279,
+      "max_error_pct": 0.193758,
+      "all_within_half_pct": true,
+      "observables": [
+        {
+          "name": "|V_tb|",
+          "formula": "cos(1/e)/(\u03c6\u03b3)",
+          "computed": 0.9990765192612288,
+          "measured": 0.9991,
+          "sigma": 0.2,
+          "error_pct": 0.00235,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Omega_r",
+          "formula": "\u03b3\u2076/e\u2076",
+          "computed": 9.167728879734846e-05,
+          "measured": 9.15e-05,
+          "sigma": null,
+          "error_pct": 0.193758,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "O4_nu",
+          "formula": "(\u03b3/G)/sin(1)",
+          "computed": 0.7488930539619457,
+          "measured": 0.749,
+          "sigma": null,
+          "error_pct": 0.014279,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Gluon_condensate",
+          "formula": "C_cosm \u2212 e\u207b\u00b3",
+          "computed": 0.012016330507125542,
+          "measured": 0.012,
+          "sigma": null,
+          "error_pct": 0.136088,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Mandelbrot_boundary",
+          "formula": "\u03c6 + 1/\u03c6\u00b2",
+          "computed": 2.0,
+          "measured": 2.0,
+          "sigma": null,
+          "error_pct": 0.0,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Sierpinski_dim",
+          "formula": "ln(3)/ln(2)",
+          "computed": 1.584962500721156,
+          "measured": 1.584963,
+          "sigma": null,
+          "error_pct": 3.2e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "gamma1_Stieltjes",
+          "formula": "G\u00b2 + cos(e)",
+          "computed": -0.07274094507053921,
+          "measured": -0.072816,
+          "sigma": 0.7,
+          "error_pct": 0.103075,
+          "within_half_pct": true,
+          "within_green": true
+        }
+      ],
+      "obligation_ids": [
+        "cosmology_wave9_max_error_under_half_pct",
+        "cosmology_wave9_median_error_under_half_pct",
+        "cosmology_wave9_observable_count_pos",
+        "cosmology_wave9_bundle",
+        "cosmology_higher_waves_max_error_under_half_pct",
+        "cosmology_higher_waves_total_pos",
+        "cosmology_higher_waves_partition",
+        "cosmology_higher_waves_bundle"
+      ],
+      "obligation_count": 8,
+      "obligations_sample": [
+        {
+          "id": "cosmology_wave9_max_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave9_median_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave9_observable_count_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave9_bundle",
+          "kind": "bundle_conj",
+          "provable": false,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_max_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_total_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_partition",
+          "kind": "eq_nat_arith",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_bundle",
+          "kind": "bundle_conj",
+          "provable": false,
+          "name": null
+        }
+      ],
+      "lean_modules_missing": []
+    },
+    {
+      "wave": 10,
+      "fn": "wave10",
+      "theme": "Lepton moments / logistic / triple-point",
+      "domain_route": "particle",
+      "lab_key": "cosmology_wave10_lab",
+      "lean_modules": [
+        {
+          "module": "CosmologyWave10Priors",
+          "path": "FSOT/Formal/CosmologyWave10Priors.lean",
+          "exists": true
+        },
+        {
+          "module": "CosmologyHigherWavesPriors",
+          "path": "FSOT/Formal/CosmologyHigherWavesPriors.lean",
+          "exists": true
+        }
+      ],
+      "observable_count": 10,
+      "median_error_pct": 0.000656,
+      "max_error_pct": 0.004079,
+      "all_within_half_pct": true,
+      "observables": [
+        {
+          "name": "m_mu/m_e",
+          "formula": "(\u03c0\u00b3 \u2212 G\u00b2)\u00b7\u03c6\u2074",
+          "computed": 206.7696385971217,
+          "measured": 206.768283,
+          "sigma": 0.1,
+          "error_pct": 0.000656,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "(g-2)/2_electron",
+          "formula": "(e/\u03c0 \u2212 ln2)/e\u2075",
+          "computed": 0.0011596599648779514,
+          "measured": 0.00115965,
+          "sigma": 0.1,
+          "error_pct": 0.000859,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Logistic_accum",
+          "formula": "e\u221ae + cos(e)",
+          "computed": 3.5699551555510998,
+          "measured": 3.569946,
+          "sigma": 0.9,
+          "error_pct": 0.000256,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Cahen_constant",
+          "formula": "(C_eff + K)\u00b7\u03b7_eff",
+          "computed": 0.6434108113284505,
+          "measured": 0.643411,
+          "sigma": null,
+          "error_pct": 2.9e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Reciprocal_Fib",
+          "formula": "(Poof + C_cosm)/\u03b3\u2075",
+          "computed": 3.3598854078939637,
+          "measured": 3.359886,
+          "sigma": null,
+          "error_pct": 1.8e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Water_triple_K",
+          "formula": "\u03c0\u2075sin(\u03c0/\u03c6)\u00b7C_eff",
+          "computed": 273.1560794175609,
+          "measured": 273.16,
+          "sigma": 0.4,
+          "error_pct": 0.001435,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "CO2_bond_angle",
+          "formula": "\u03c0\u2074/cos(1) \u2212 C",
+          "computed": 179.99867657892466,
+          "measured": 180.0,
+          "sigma": 0.1,
+          "error_pct": 0.000735,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "SAW_connective_hex",
+          "formula": "\u03c0/A_in \u2212 \u03b3\u2076",
+          "computed": 1.8477586642028332,
+          "measured": 1.847759,
+          "sigma": null,
+          "error_pct": 1.8e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "Bessel_J1_zero1",
+          "formula": "\u03c8_con/G + \u03c0",
+          "computed": 3.831706521236067,
+          "measured": 3.831706,
+          "sigma": null,
+          "error_pct": 1.4e-05,
+          "within_half_pct": true,
+          "within_green": true
+        },
+        {
+          "name": "eta_baryon_photon",
+          "formula": "Poof\u00b9\u00b9/(\u03c0\u03b3)",
+          "computed": 6.139749535425554e-10,
+          "measured": 6.14e-10,
+          "sigma": null,
+          "error_pct": 0.004079,
+          "within_half_pct": true,
+          "within_green": true
+        }
+      ],
+      "obligation_ids": [
+        "cosmology_wave10_max_error_under_half_pct",
+        "cosmology_wave10_median_error_under_half_pct",
+        "cosmology_wave10_observable_count_pos",
+        "cosmology_wave10_bundle",
+        "cosmology_higher_waves_max_error_under_half_pct",
+        "cosmology_higher_waves_total_pos",
+        "cosmology_higher_waves_partition",
+        "cosmology_higher_waves_bundle"
+      ],
+      "obligation_count": 8,
+      "obligations_sample": [
+        {
+          "id": "cosmology_wave10_max_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave10_median_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave10_observable_count_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_wave10_bundle",
+          "kind": "bundle_conj",
+          "provable": false,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_max_error_under_half_pct",
+          "kind": "lt_half",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_total_pos",
+          "kind": "nat_pos",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_partition",
+          "kind": "eq_nat_arith",
+          "provable": true,
+          "name": null
+        },
+        {
+          "id": "cosmology_higher_waves_bundle",
+          "kind": "bundle_conj",
+          "provable": false,
+          "name": null
+        }
+      ],
+      "lean_modules_missing": []
+    }
+  ],
+  "artifacts": {
+    "json": "data/wave_inventory_obligation_map.json",
+    "md": "docs/WAVE_INVENTORY_OBLIGATION_MAP.md",
+    "obligation_spine": "verification/obligations/wave_inventory_spine.json"
+  },
+  "commands": {
+    "rebuild": "python scripts/build_wave_inventory_obligation_map.py",
+    "regen_wave_priors": "python scripts/gen_cosmology_wave_lean.py",
+    "cross_proof": "python scripts/run_cross_proof_verification.py"
+  }
+}

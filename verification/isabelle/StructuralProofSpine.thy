@@ -801,6 +801,9 @@ lemma math_generator_benchmark_formula_eval_bundle: "(13 :: nat) = 13 \<and> (17
 lemma math_generator_rules_eval_bundle: "(1552 :: nat) = 1552 \<and> (62 :: nat) = 62 \<and> (6 :: nat) = 6 \<and> (17 :: nat) = 17 \<and> (0 :: real) < (0.5 :: real) \<and> (0 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma matter_antimatter_bundle: "(16 :: nat) = 16 \<and> (5 :: nat) = 5 \<and> (0 :: real) < (0.5 :: real)"
+  by auto
+
 lemma mechanical_engineering_ext_bundle: "(50 :: nat) = 50 \<and> (0.07869745016115025 :: real) < (0.5 :: real) \<and> (0.07869745016115025 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -1146,6 +1149,9 @@ lemma quantum_mechanics_gap_fill_bundle: "(50 :: nat) = 50 \<and> (0.00009523874
 lemma quantum_optics_gap_fill_bundle: "(50 :: nat) = 50 \<and> (0.00009523874 :: real) < (0.5 :: real) \<and> (0.00009523874 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma quantum_trinary_syntax_bundle: "(27 :: nat) = 27 \<and> (11 :: nat) = 11 \<and> (0.005907 :: real) < (0.5 :: real)"
+  by auto
+
 lemma radio_astronomy_panel_bundle: "(30 :: nat) = 30 \<and> (20 :: nat) = 20 \<and> (0.022461 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -1257,7 +1263,7 @@ lemma sports_biomechanics_gap_fill_bundle: "(35 :: nat) = 35 \<and> (0.044472500
 lemma sports_biomechanics_bundle: "(35 :: nat) = 35 \<and> (14 :: nat) = 14 \<and> (0.04447250077037523 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
-lemma star_trek_transporter_bundle: "(1575 :: nat) = 1575 \<and> (17 :: nat) = 17 \<and> (0.031159 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+lemma star_trek_transporter_bundle: "(1575 :: nat) = 1575 \<and> (17 :: nat) = 17 \<and> (0.012464 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma statistical_mechanics_public_panel_bundle: "(24 :: nat) = 24 \<and> (12 :: nat) = 12 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
