@@ -3,9 +3,6 @@ theory FullFormalSpine_10
 imports Complex_Main
 begin
 
-lemma stratum_sst_cell_count_pos: "(150 :: nat) < (154 :: nat)"
-  by eval
-
 lemma stratum_pv_cell_count_pos: "(200 :: nat) < (222 :: nat)"
   by eval
 
@@ -301,6 +298,9 @@ lemma owid_epidemiology_open_observable_count_pos: "0 < (1778 :: nat)"
   by eval
 
 lemma paleoclimate_ext_pooled_median_under_half_pct: "(0.015015854077432778 :: real) < (0.5 :: real)"
+  by eval
+
+lemma paleoclimate_ext_headline_median_under_half_pct: "(0.015015854077432778 :: real) < (0.5 :: real)"
   by eval
 
 end

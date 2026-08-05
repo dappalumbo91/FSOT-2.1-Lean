@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma psi_con_gt_6321205588 : (0.6321205588%R) < (0.6321205588287557%R).
-Proof. lra. Qed.
-
 Lemma eta_eff_gt_466942206 : (0.466942206%R) < (0.46694220658433505%R).
 Proof. lra. Qed.
 
@@ -304,5 +301,8 @@ Lemma cosmological_cos_arg_hi : (3.4953374011050684%R) < (3.6%R).
 Proof. lra. Qed.
 
 Lemma cosmological_cos_lt_neg_half : (-0.9380820636690238%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma bleed_in_factor_nonneg : 0%R <= (0.7879407922764434%R).
 Proof. lra. Qed.
 

@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma domain_term1_gt_neg_08_material : (-0.8%R) < (-0.20218325391197037%R).
-Proof. lra. Qed.
-
 Lemma domain_term1_positive_biological : 0 < (0.0583105195018667%R).
 Proof. lra. Qed.
 
@@ -304,5 +301,8 @@ Lemma new_perceived_param_gt_30030 : (0.3003%R) < (0.30030117056875677%R).
 Proof. lra. Qed.
 
 Lemma sqrt2_gt_14142135623 : (1.4142135623%R) < (1.4142135623730951%R).
+Proof. lra. Qed.
+
+Lemma psi_con_gt_6321205588 : (0.6321205588%R) < (0.6321205588287557%R).
 Proof. lra. Qed.
 

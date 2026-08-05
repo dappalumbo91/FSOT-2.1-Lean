@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma synthetic_biology_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
 Lemma synthetic_biology_observable_count_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -305,4 +302,7 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma virology_median_error_under_half_pct : (0.04593318440797614%R) < (0.5%R).
 Proof. lra. Qed.
+
+Lemma vizier_wds_tap_live_deep_observable_count_pos : (0 < 121)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

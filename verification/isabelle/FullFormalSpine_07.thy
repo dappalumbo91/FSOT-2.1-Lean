@@ -3,9 +3,6 @@ theory FullFormalSpine_07
 imports Complex_Main
 begin
 
-lemma grace_cryosphere_match_le_total: "(253 :: nat) <= (253 :: nat)"
-  by eval
-
 lemma gwas_catalog_depth_open_pooled_median_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
   by eval
 
@@ -301,6 +298,9 @@ lemma law_policy_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
 lemma law_policy_panel_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma law_policy_panel_median_error_under_half_pct: "(0.013003 :: real) < (0.5 :: real)"
   by eval
 
 end

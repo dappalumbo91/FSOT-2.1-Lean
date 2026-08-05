@@ -3,9 +3,6 @@ theory FullFormalSpine_18
 imports Complex_Main
 begin
 
-lemma bleed_in_factor_nonneg: "(0 :: real) <= (0.7879407922764434 :: real)"
-  by eval
-
 lemma bleed_in_factor_pos: "(0 :: real) < (0.7879407922764434 :: real)"
   by eval
 
@@ -301,6 +298,9 @@ lemma D_eff_shift_abs_le: "(19.0 :: real) <= (19.0 :: real)"
   by eval
 
 lemma chaos_perturbation_abs_le_two: "(1.2515783787839663 :: real) <= (2.0 :: real)"
+  by eval
+
+lemma cosmological_observed_false: "(0 :: nat) = (0 :: nat)"
   by eval
 
 end

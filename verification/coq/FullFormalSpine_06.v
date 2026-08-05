@@ -177,9 +177,6 @@ Proof. lra. Qed.
 Lemma fuel_profile_count_pos : (0 < 6)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fuel_lab_chemical_domain_positive : 0%R < (1.0%R).
-Proof. lra. Qed.
-
 Lemma fuel_resolved_le_entries : (34 <= 34)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
@@ -305,4 +302,7 @@ Proof. lra. Qed.
 
 Lemma grace_cryosphere_month_count_pos : (0 < 253)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma grace_cryosphere_match_le_total : (253 <= 253)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
 

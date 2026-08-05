@@ -3,9 +3,6 @@ theory FullFormalSpine_08
 imports Complex_Main
 begin
 
-lemma law_policy_panel_median_error_under_half_pct: "(0.013003 :: real) < (0.5 :: real)"
-  by eval
-
 lemma law_policy_observable_count_pos: "0 < (180 :: nat)"
   by eval
 
@@ -301,6 +298,9 @@ lemma matter_antimatter_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: rea
   by eval
 
 lemma matter_antimatter_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma matter_antimatter_observable_count_pos: "0 < (16 :: nat)"
   by eval
 
 end

@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma matter_antimatter_observable_count_pos : (0 < 16)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
 Lemma mechanical_engineering_ext_pooled_median_under_half_pct : (0.07869745016115025%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -304,5 +301,8 @@ Lemma stratum_l23_pyramidal_fi_pearson_gt_bound : (0.2%R) < (0.23129805826359506
 Proof. lra. Qed.
 
 Lemma held_out_cell_count_large : (2100 < 2165)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stratum_sst_cell_count_pos : (150 < 154)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma secure_software_engineering_observable_count_pos : (0 < 59)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
 Lemma secure_software_engineering_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
@@ -304,5 +301,8 @@ Lemma symbolic_archetype_panel_observable_count_pos : (0 < 28)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma symbolic_archetype_panel_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma synthetic_biology_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 

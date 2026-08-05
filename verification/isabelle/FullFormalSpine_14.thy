@@ -3,9 +3,6 @@ theory FullFormalSpine_14
 imports Complex_Main
 begin
 
-lemma synthetic_biology_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
 lemma synthetic_biology_observable_count_pos: "0 < (20 :: nat)"
   by eval
 
@@ -301,6 +298,9 @@ lemma virology_observable_count_pos: "0 < (50 :: nat)"
   by eval
 
 lemma virology_median_error_under_half_pct: "(0.04593318440797614 :: real) < (0.5 :: real)"
+  by eval
+
+lemma vizier_wds_tap_live_deep_observable_count_pos: "0 < (121 :: nat)"
   by eval
 
 end

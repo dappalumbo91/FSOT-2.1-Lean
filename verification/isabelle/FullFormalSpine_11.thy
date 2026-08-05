@@ -3,9 +3,6 @@ theory FullFormalSpine_11
 imports Complex_Main
 begin
 
-lemma paleoclimate_ext_headline_median_under_half_pct: "(0.015015854077432778 :: real) < (0.5 :: real)"
-  by eval
-
 lemma paleoclimate_ext_observable_count_pos: "0 < (40 :: nat)"
   by eval
 
@@ -301,6 +298,9 @@ lemma serine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: i
   by eval
 
 lemma threonine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma valine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
 end

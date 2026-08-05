@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma grace_cryosphere_match_le_total : (253 <= 253)%nat.
-Proof. apply Nat.leb_le; reflexivity. Qed.
-
 Lemma gwas_catalog_depth_open_pooled_median_under_half_pct : (0.022236%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -305,4 +302,7 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma law_policy_panel_observable_count_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma law_policy_panel_median_error_under_half_pct : (0.013003%R) < (0.5%R).
+Proof. lra. Qed.
 

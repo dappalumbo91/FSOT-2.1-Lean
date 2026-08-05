@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:45:28.137796+00:00",
+  "generated_at": "2026-08-05T23:08:34.873899+00:00",
   "version": "1.1",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -23,7 +23,7 @@
     "full_mathlib_rederivation_of_all_lemmas": true,
     "mathlib_rederivation_verdict": "FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED",
     "engine_core_mathlib_closed": true,
-    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5183 vs 2581 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
+    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5183 vs 2585 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
   },
   "undeniable_criteria": {
     "cross_ok": true,
@@ -37,17 +37,17 @@
     "label_B": true,
     "residual_closed": true,
     "five_prover_quad": true,
-    "note": "undeniable_toe_claim = Label B + residual closed + multiprover residual gates + residual export debt 0. Does NOT require formal_ob == raw lemma string count (2581 vs 5183).",
+    "note": "undeniable_toe_claim = Label B + residual closed + multiprover residual gates + residual export debt 0. Does NOT require formal_ob == raw lemma string count (2585 vs 5183).",
     "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md"
   },
   "prover_coverage": {
     "lean_4": {
       "role": "primary authority",
       "connective_obligations": 24,
-      "full_formal_obligations": 2581,
+      "full_formal_obligations": 2585,
       "transcendental_lemmas": 68,
       "lean_theorem_count_estimate": 5183,
-      "export_fraction_pct": 49.8,
+      "export_fraction_pct": 49.87,
       "proof_style": "norm_num / decide / linarith certificates"
     },
     "coq": {
@@ -58,12 +58,12 @@
     },
     "isabelle": {
       "status": "passed",
-      "provable_obligations": 2527,
+      "provable_obligations": 2585,
       "coverage": "numeric literal replay of exported obligations"
     },
     "rust_f64_replay": {
       "status": "passed",
-      "obligation_count": 2109,
+      "obligation_count": 2114,
       "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
     },
     "fstar": {
@@ -115,7 +115,7 @@
       "severity": "low",
       "description": "cross_proof_verification_report.json may lag rust_replay_lib until full pipeline re-run",
       "remedy": "Re-run run_cross_proof_verification.py to refresh rust obligation_count",
-      "closed": false
+      "closed": true
     },
     {
       "id": "living_fsot_hardware",
@@ -293,13 +293,5 @@
     "report": "data/mathlib_rederivation_campaign_report.json",
     "doc": "docs/MATHLIB_REDERIVATION_CAMPAIGN.md"
   },
-  "open_gaps": [
-    {
-      "id": "rust_report_stale",
-      "severity": "low",
-      "description": "cross_proof_verification_report.json may lag rust_replay_lib until full pipeline re-run",
-      "remedy": "Re-run run_cross_proof_verification.py to refresh rust obligation_count",
-      "closed": false
-    }
-  ]
+  "open_gaps": []
 }

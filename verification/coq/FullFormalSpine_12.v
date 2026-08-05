@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma valine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
 Lemma tryptophan_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
@@ -305,4 +302,7 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma scientific_expansion_wave3_spine_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
+
+Lemma secure_software_engineering_observable_count_pos : (0 < 59)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

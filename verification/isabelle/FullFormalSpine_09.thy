@@ -3,9 +3,6 @@ theory FullFormalSpine_09
 imports Complex_Main
 begin
 
-lemma matter_antimatter_observable_count_pos: "0 < (16 :: nat)"
-  by eval
-
 lemma mechanical_engineering_ext_pooled_median_under_half_pct: "(0.07869745016115025 :: real) < (0.5 :: real)"
   by eval
 
@@ -301,6 +298,9 @@ lemma stratum_l23_pyramidal_fi_pearson_gt_bound: "(0.2 :: real) < (0.23129805826
   by eval
 
 lemma held_out_cell_count_large: "(2100 :: nat) < (2165 :: nat)"
+  by eval
+
+lemma stratum_sst_cell_count_pos: "(150 :: nat) < (154 :: nat)"
   by eval
 
 end

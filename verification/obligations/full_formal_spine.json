@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-05T22:02:43.090689+00:00",
+  "generated_at": "2026-08-05T22:56:21.847397+00:00",
   "version": "2.0",
   "tier": "80_full_formal_spine",
-  "obligation_count": 2586,
+  "obligation_count": 2585,
   "modules_exported": 558,
   "by_tier": {
-    "priors": 2120,
+    "priors": 2119,
     "extended": 189,
     "bounds": 277
   },
@@ -15,7 +15,7 @@
     "bundle_conj": 563,
     "lt_lit": 230,
     "lt_half": 239,
-    "gt_lit": 135,
+    "gt_lit": 134,
     "eq_nat": 27,
     "nat_le_sym": 30,
     "eq_nat_arith": 32,
@@ -531,7 +531,6 @@
           "statement": "0.0 < 0.5",
           "lean_conjunct": "adv_brk_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 1,
-          "proof_style": "norm_num",
           "linked_obligation_id": "adv_brk_pooled_median_under_half_pct"
         },
         {
@@ -541,7 +540,6 @@
           "statement": "0 < 2",
           "lean_conjunct": "adv_brk_beats_sota_headlines > 0",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "adv_brk_beats_sota_headlines_pos"
         }
       ],
@@ -1360,7 +1358,6 @@
           "statement": "0.015311 < 0.5",
           "lean_conjunct": "alphafold_batch_meta_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "alphafold_batch_meta_open_pooled_median_under_half_pct"
         }
       ],
@@ -4873,7 +4870,6 @@
           "statement": "72 = 72",
           "lean_conjunct": "brain_prior_codon_count * 3 = brain_prior_dna_bases",
           "index": 3,
-          "proof_style": "norm_num",
           "linked_obligation_id": "brain_prior_codon_from_dna"
         },
         {
@@ -7060,7 +7056,6 @@
           "statement": "0.040788 < 0.5",
           "lean_conjunct": "chembl_deep_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "chembl_deep_open_pooled_median_under_half_pct"
         }
       ],
@@ -8595,7 +8590,6 @@
           "statement": "0.073582 < 0.5",
           "lean_conjunct": "codata_full_table_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "codata_full_table_open_pooled_median_under_half_pct"
         }
       ],
@@ -12333,7 +12327,6 @@
           "statement": "0.01341 < 0.5",
           "lean_conjunct": "cod_optimade_structures_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "cod_optimade_structures_pooled_median_under_half_pct"
         }
       ],
@@ -16489,7 +16482,6 @@
           "statement": "0.0224614892042 < 0.5",
           "lean_conjunct": "desi_edr_fits_residual_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "desi_edr_fits_residual_pooled_median_under_half_pct"
         }
       ],
@@ -16591,7 +16583,6 @@
           "statement": "0.010049 < 0.5",
           "lean_conjunct": "desi_edr_table_slice_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "desi_edr_table_slice_open_pooled_median_under_half_pct"
         }
       ],
@@ -16693,7 +16684,6 @@
           "statement": "0.010049 < 0.5",
           "lean_conjunct": "desi_public_depth_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "desi_public_depth_open_pooled_median_under_half_pct"
         }
       ],
@@ -17673,36 +17663,6 @@
       "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
     },
     {
-      "id": "cosmology_median_under_one_pct",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.0007354204043789445,
-      "right_value": 1.0,
-      "statement": "0.0007354204043789445 < 1.0",
-      "lean_module": "DomainPrecisionPriors",
-      "source_file": "DomainPrecisionPriors.lean",
-      "source_tier": "priors",
-      "coq_id": "cosmology_median_under_one_pct",
-      "provable": true,
-      "display_label": "DomainPrecision: r_lt_lit_pure (cosmology_median_under_one_pct)",
-      "triangulation_class": "atomic_triangulated",
-      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
-    },
-    {
-      "id": "smiles_chemical_median_under_one_pct",
-      "kind": "r_lt_lit_pure",
-      "left_value": 0.028389499999999998,
-      "right_value": 1.0,
-      "statement": "0.028389499999999998 < 1.0",
-      "lean_module": "DomainPrecisionPriors",
-      "source_file": "DomainPrecisionPriors.lean",
-      "source_tier": "priors",
-      "coq_id": "smiles_chemical_median_under_one_pct",
-      "provable": true,
-      "display_label": "DomainPrecision: r_lt_lit_pure (smiles_chemical_median_under_one_pct)",
-      "triangulation_class": "atomic_triangulated",
-      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
-    },
-    {
       "id": "domain_precision_numeric_majority",
       "kind": "nat_gt_lit",
       "symbol": "domain_precision_numeric_count",
@@ -17747,6 +17707,36 @@
       "coq_id": "domain_precision_huge_gap_bounded",
       "provable": true,
       "display_label": "DomainPrecision: domain precision huge gap count \u2014 count within bound",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
+      "id": "cosmology_median_under_one_pct",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.0007354204043789445,
+      "right_value": 1.0,
+      "statement": "0.0007354204043789445 < 1.0",
+      "lean_module": "DomainPrecisionPriors",
+      "source_file": "DomainPrecisionPriors.lean",
+      "source_tier": "priors",
+      "coq_id": "cosmology_median_under_one_pct",
+      "provable": true,
+      "display_label": "DomainPrecision: r_lt_lit_pure (cosmology_median_under_one_pct)",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
+      "id": "smiles_chemical_median_under_one_pct",
+      "kind": "r_lt_lit_pure",
+      "left_value": 0.028389499999999998,
+      "right_value": 1.0,
+      "statement": "0.028389499999999998 < 1.0",
+      "lean_module": "DomainPrecisionPriors",
+      "source_file": "DomainPrecisionPriors.lean",
+      "source_tier": "priors",
+      "coq_id": "smiles_chemical_median_under_one_pct",
+      "provable": true,
+      "display_label": "DomainPrecision: r_lt_lit_pure (smiles_chemical_median_under_one_pct)",
       "triangulation_class": "atomic_triangulated",
       "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
     },
@@ -18565,7 +18555,6 @@
           "statement": "0.0 < 0.5",
           "lean_conjunct": "ecology_public_panel_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 1,
-          "proof_style": "norm_num",
           "linked_obligation_id": "ecology_public_panel_pooled_median_under_half_pct"
         },
         {
@@ -18575,7 +18564,6 @@
           "statement": "0 < 2",
           "lean_conjunct": "ecology_public_panel_beats_sota_headlines > 0",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "ecology_public_panel_beats_sota_headlines_pos"
         }
       ],
@@ -19536,7 +19524,6 @@
           "statement": "0.092131 < 0.5",
           "lean_conjunct": "endf_iaea_nuclear_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "endf_iaea_nuclear_open_pooled_median_under_half_pct"
         }
       ],
@@ -21658,7 +21645,6 @@
           "statement": "0.023015 < 0.5",
           "lean_conjunct": "exoplanet_archive_depth_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "exoplanet_archive_depth_open_pooled_median_under_half_pct"
         }
       ],
@@ -26553,22 +26539,6 @@
       "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
     },
     {
-      "id": "fuel_lab_chemical_domain_positive",
-      "kind": "gt_lit",
-      "left_expr": "1",
-      "value": 1.0,
-      "bound": 0.0,
-      "statement": "0.0 < 1.0",
-      "lean_module": "FuelPriors",
-      "source_file": "FuelPriors.lean",
-      "source_tier": "priors",
-      "coq_id": "fuel_lab_chemical_domain_positive",
-      "provable": true,
-      "display_label": "Fuel: scalar above literature bound (fuel_lab_chemical_domain_positive)",
-      "triangulation_class": "atomic_triangulated",
-      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
-    },
-    {
       "id": "fuel_resolved_le_entries",
       "kind": "nat_le_sym",
       "left": "fuel_resolved_entry_count",
@@ -27381,7 +27351,6 @@
           "statement": "0.022461 < 0.5",
           "lean_conjunct": "gaia_dr3_source_sample_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "gaia_dr3_source_sample_open_pooled_median_under_half_pct"
         }
       ],
@@ -27788,7 +27757,6 @@
           "statement": "0.006006 < 0.5",
           "lean_conjunct": "gbif_taxon_depth_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "gbif_taxon_depth_open_pooled_median_under_half_pct"
         }
       ],
@@ -28674,7 +28642,6 @@
           "statement": "0.022236 < 0.5",
           "lean_conjunct": "gwas_catalog_depth_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "gwas_catalog_depth_open_pooled_median_under_half_pct"
         }
       ],
@@ -28877,7 +28844,6 @@
           "statement": "0.008488 < 0.5",
           "lean_conjunct": "gwosc_strain_metadata_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "gwosc_strain_metadata_open_pooled_median_under_half_pct"
         }
       ],
@@ -28979,7 +28945,6 @@
           "statement": "0.008488 < 0.5",
           "lean_conjunct": "gwtc_catalog_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "gwtc_catalog_open_pooled_median_under_half_pct"
         }
       ],
@@ -32386,7 +32351,6 @@
           "statement": "0.01341 < 0.5",
           "lean_conjunct": "jarvis_dft_open_panel_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "jarvis_dft_open_panel_pooled_median_under_half_pct"
         }
       ],
@@ -33996,7 +33960,6 @@
           "statement": "0.014767 < 0.5",
           "lean_conjunct": "lmfdb_elliptic_curves_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "lmfdb_elliptic_curves_open_pooled_median_under_half_pct"
         }
       ],
@@ -34098,7 +34061,6 @@
           "statement": "0.014767 < 0.5",
           "lean_conjunct": "lmfdb_oeis_math_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "lmfdb_oeis_math_open_pooled_median_under_half_pct"
         }
       ],
@@ -37963,7 +37925,6 @@
           "statement": "0.0 < 0.5",
           "lean_conjunct": "matter_antimatter_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "matter_antimatter_pooled_median_under_half_pct"
         }
       ],
@@ -40422,7 +40383,6 @@
           "statement": "0.0291 < 0.5",
           "lean_conjunct": "ncei_climate_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "ncei_climate_open_pooled_median_under_half_pct"
         }
       ],
@@ -43240,7 +43200,6 @@
           "statement": "0.073582 < 0.5",
           "lean_conjunct": "nist_asd_multi_species_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "nist_asd_multi_species_open_pooled_median_under_half_pct"
         }
       ],
@@ -43342,7 +43301,6 @@
           "statement": "0.073582 < 0.5",
           "lean_conjunct": "nist_asd_spectroscopy_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "nist_asd_spectroscopy_open_pooled_median_under_half_pct"
         }
       ],
@@ -43955,7 +43913,6 @@
           "statement": "0.030173 < 0.5",
           "lean_conjunct": "noaa_tides_multi_station_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "noaa_tides_multi_station_open_pooled_median_under_half_pct"
         }
       ],
@@ -44158,7 +44115,6 @@
           "statement": "0.092131 < 0.5",
           "lean_conjunct": "nuclear_iaea_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "nuclear_iaea_open_pooled_median_under_half_pct"
         }
       ],
@@ -44260,7 +44216,6 @@
           "statement": "0.009504 < 0.5",
           "lean_conjunct": "nufit_neutrino_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "nufit_neutrino_open_pooled_median_under_half_pct"
         }
       ],
@@ -44712,7 +44667,6 @@
           "statement": "0.014767 < 0.5",
           "lean_conjunct": "oeis_family_sweep_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "oeis_family_sweep_open_pooled_median_under_half_pct"
         }
       ],
@@ -45204,7 +45158,6 @@
           "statement": "0.008863 < 0.5",
           "lean_conjunct": "openalex_citation_depth_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "openalex_citation_depth_open_pooled_median_under_half_pct"
         }
       ],
@@ -45613,7 +45566,6 @@
           "statement": "0.018003 < 0.5",
           "lean_conjunct": "openneuro_depth_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "openneuro_depth_open_pooled_median_under_half_pct"
         }
       ],
@@ -46323,7 +46275,6 @@
           "statement": "0.022236 < 0.5",
           "lean_conjunct": "owid_epidemiology_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "owid_epidemiology_open_pooled_median_under_half_pct"
         }
       ],
@@ -47597,7 +47548,6 @@
           "statement": "0.009504 < 0.5",
           "lean_conjunct": "pdg_live_depth_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "pdg_live_depth_open_pooled_median_under_half_pct"
         }
       ],
@@ -51762,7 +51712,6 @@
           "statement": "0.040788 < 0.5",
           "lean_conjunct": "pubchem_depth_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "pubchem_depth_open_pooled_median_under_half_pct"
         }
       ],
@@ -53652,7 +53601,6 @@
           "statement": "0.005907 < 0.5",
           "lean_conjunct": "quantum_trinary_syntax_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "quantum_trinary_syntax_pooled_median_under_half_pct"
         }
       ],
@@ -54061,7 +54009,6 @@
           "statement": "0.022236 < 0.5",
           "lean_conjunct": "rcsb_structure_batch_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "rcsb_structure_batch_open_pooled_median_under_half_pct"
         }
       ],
@@ -56303,7 +56250,6 @@
           "statement": "0.022461 < 0.5",
           "lean_conjunct": "simbad_identity_depth_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "simbad_identity_depth_open_pooled_median_under_half_pct"
         }
       ],
@@ -58764,8 +58710,7 @@
           "value": 68,
           "statement": "0 < 68",
           "lean_conjunct": "structure_calibration_protein_count > 0",
-          "index": 1,
-          "proof_style": "norm_num"
+          "index": 1
         },
         {
           "kind": "gt_lit",
@@ -64144,7 +64089,6 @@
           "statement": "0.022236 < 0.5",
           "lean_conjunct": "uniprot_proteome_slice_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "uniprot_proteome_slice_open_pooled_median_under_half_pct"
         }
       ],
@@ -64347,7 +64291,6 @@
           "statement": "0.022295 < 0.5",
           "lean_conjunct": "usgs_seismic_history_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "usgs_seismic_history_open_pooled_median_under_half_pct"
         }
       ],
@@ -66012,7 +65955,6 @@
           "statement": "0.0 < 0.5",
           "lean_conjunct": "warp_bh_wh_portal_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 1,
-          "proof_style": "norm_num",
           "linked_obligation_id": "warp_bh_wh_portal_pooled_under_half_pct"
         },
         {
@@ -66023,7 +65965,6 @@
           "statement": "0.009663204175 > 0.0",
           "lean_conjunct": "(0 : \u211d) < warp_psi_portal_doorway",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "warp_psi_portal_doorway_pos"
         },
         {
@@ -66034,7 +65975,6 @@
           "statement": "0.04803163401 > 0.0",
           "lean_conjunct": "(0 : \u211d) < warp_psi_entangle_gate",
           "index": 3,
-          "proof_style": "norm_num",
           "linked_obligation_id": "warp_psi_entangle_gate_pos"
         },
         {
@@ -66044,8 +65984,7 @@
           "bound": 1.0,
           "statement": "1.722776467449 > 1.0",
           "lean_conjunct": "(1 : \u211d) < warp_stabilization_margin_portal",
-          "index": 4,
-          "proof_style": "norm_num"
+          "index": 4
         },
         {
           "kind": "pos",
@@ -66056,7 +65995,6 @@
           "domain": "blackhole",
           "structural_witness": true,
           "index": 5,
-          "proof_style": "norm_num",
           "linked_obligation_id": "warp_bh_wh_linked_to_blackhole_domain"
         }
       ],
@@ -66489,7 +66427,6 @@
           "statement": "0.02584 < 0.5",
           "lean_conjunct": "world_bank_macro_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "world_bank_macro_open_pooled_median_under_half_pct"
         }
       ],
@@ -67306,7 +67243,6 @@
           "statement": "0.031506 < 0.5",
           "lean_conjunct": "zenodo_records_depth_open_pooled_median_error_pct < (0.5 : \u211d)",
           "index": 2,
-          "proof_style": "norm_num",
           "linked_obligation_id": "zenodo_records_depth_open_pooled_median_under_half_pct"
         }
       ],
@@ -76220,8 +76156,7 @@
           "statement": "warp_stabilization_margin > 1.0",
           "lean_conjunct": "(1 : \u211d) < warp_stabilization_margin",
           "structural_witness": true,
-          "index": 2,
-          "proof_style": "norm_num"
+          "index": 2
         }
       ],
       "proof_witness_ids": [
@@ -76309,8 +76244,7 @@
           "right_value": 1241,
           "statement": "24 < 1241",
           "lean_conjunct": "cross_proof_connective_obligation_count < cross_proof_full_formal_obligation_count",
-          "index": 5,
-          "proof_style": "norm_num"
+          "index": 5
         }
       ],
       "proof_witness_ids": [

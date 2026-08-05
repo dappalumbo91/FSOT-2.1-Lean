@@ -3,9 +3,6 @@ theory FullFormalSpine_16
 imports Complex_Main
 begin
 
-lemma domain_term1_gt_neg_08_material: "(-0.8 :: real) < (-0.20218325391197037 :: real)"
-  by eval
-
 lemma domain_term1_positive_biological: "0 < (0.0583105195018667 :: real)"
   by eval
 
@@ -301,6 +298,9 @@ lemma new_perceived_param_gt_30030: "(0.3003 :: real) < (0.30030117056875677 :: 
   by eval
 
 lemma sqrt2_gt_14142135623: "(1.4142135623 :: real) < (1.4142135623730951 :: real)"
+  by eval
+
+lemma psi_con_gt_6321205588: "(0.6321205588 :: real) < (0.6321205588287557 :: real)"
   by eval
 
 end

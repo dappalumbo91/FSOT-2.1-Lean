@@ -3,9 +3,6 @@ theory FullFormalSpine_12
 imports Complex_Main
 begin
 
-lemma valine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
 lemma tryptophan_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
@@ -301,6 +298,9 @@ lemma scientific_expansion_wave3_spine_observable_count_pos: "0 < (40 :: nat)"
   by eval
 
 lemma scientific_expansion_wave3_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma secure_software_engineering_observable_count_pos: "0 < (59 :: nat)"
   by eval
 
 end

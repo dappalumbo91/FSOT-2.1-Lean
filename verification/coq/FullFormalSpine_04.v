@@ -192,12 +192,6 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma domain_orbital_predictions_median_error_under_half_pct : (0.01529034996934153%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma cosmology_median_under_one_pct : (0.0007354204043789445%R) < (1.0%R).
-Proof. lra. Qed.
-
-Lemma smiles_chemical_median_under_one_pct : (0.028389499999999998%R) < (1.0%R).
-Proof. lra. Qed.
-
 Lemma domain_precision_numeric_majority : (30 < 35)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -206,6 +200,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma domain_precision_huge_gap_bounded : (0 <= 2)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma cosmology_median_under_one_pct : (0.0007354204043789445%R) < (1.0%R).
+Proof. lra. Qed.
+
+Lemma smiles_chemical_median_under_one_pct : (0.028389499999999998%R) < (1.0%R).
+Proof. lra. Qed.
 
 Lemma dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.

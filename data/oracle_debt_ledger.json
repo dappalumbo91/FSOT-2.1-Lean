@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-05T21:42:09.560607+00:00",
+  "generated_at": "2026-08-05T23:08:35.351417+00:00",
   "version": "1.0",
   "summary": {
-    "obligation_total": 2581,
-    "atomic_triangulated": 2017,
+    "obligation_total": 2585,
+    "atomic_triangulated": 2022,
     "oracle_replay": 0,
     "proof_depth_oracle_tagged": 49,
-    "structural_index": 564,
+    "structural_index": 563,
     "oracle_fraction_pct": 0.0,
-    "atomic_fraction_pct": 78.15,
+    "atomic_fraction_pct": 78.22,
     "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
@@ -25,11 +25,11 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "by_triangulation_class": {
-    "atomic_triangulated": 2017,
-    "structural_index": 564
+    "atomic_triangulated": 2022,
+    "structural_index": 563
   },
   "by_proof_class": {
-    "(none)": 2532,
+    "(none)": 2536,
     "decimal_eval_chain": 33,
     "certified_interval": 2,
     "witness_instantiation": 8,

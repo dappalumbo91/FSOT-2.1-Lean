@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma cosmological_observed_false : (0 = 0)%nat.
-Proof. reflexivity. Qed.
-
 Lemma dark_energy_observed_false : (0 = 0)%nat.
 Proof. reflexivity. Qed.
 
@@ -42,6 +39,9 @@ Proof. lra. Qed.
 Lemma dark_energy_term1_negative : (-2.1349793149885588%R) < 0%R.
 Proof. lra. Qed.
 
+Lemma cmb_term1_negative : (-2.0099710610507393%R) < 0%R.
+Proof. lra. Qed.
+
 Lemma dark_energy_term2_eq_one : (1.0%R) = (1.0%R).
 Proof. reflexivity. Qed.
 
@@ -66,6 +66,9 @@ Proof. lra. Qed.
 Lemma neural_raw_S_positive : 0 < (1.2240253341904455%R).
 Proof. lra. Qed.
 
+Lemma quantum_raw_S_positive : 0 < (2.2738149448128526%R).
+Proof. lra. Qed.
+
 Lemma particle_raw_S_positive : 0 < (1.751037437187807%R).
 Proof. lra. Qed.
 
@@ -85,6 +88,9 @@ Lemma galactic_raw_S_positive : 0 < (1.8256534680881713%R).
 Proof. lra. Qed.
 
 Lemma fusion_raw_S_positive : 0 < (2.0283662645128167%R).
+Proof. lra. Qed.
+
+Lemma proton_raw_S_positive : 0 < (1.2362775761857145%R).
 Proof. lra. Qed.
 
 Lemma medical_raw_S_positive : 0 < (0.7287135707250552%R).
@@ -298,11 +304,5 @@ Lemma lab_cellular_raw_S_positive : 0 < (1.0583105195018667%R).
 Proof. lra. Qed.
 
 Lemma lab_consciousness_raw_S_positive : 0 < (2.4991706281862376%R).
-Proof. lra. Qed.
-
-Lemma disulfide_bridge_force_pos : 0 < (17.944271909999163%R).
-Proof. lra. Qed.
-
-Lemma dipole_damping_denominator_pos : 0 < (13.399140630763645%R).
 Proof. lra. Qed.
 

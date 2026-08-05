@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma vizier_wds_tap_live_deep_observable_count_pos : (0 < 121)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
 Lemma vizier_wds_tap_live_deep_median_error_under_half_pct : (0.026954%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -304,5 +301,8 @@ Lemma domain_term1_gt_neg_08_medical : (-0.8%R) < (-0.2712864292749448%R).
 Proof. lra. Qed.
 
 Lemma domain_term1_gt_neg_08_molecular : (-0.8%R) < (-0.2798684851972981%R).
+Proof. lra. Qed.
+
+Lemma domain_term1_gt_neg_08_material : (-0.8%R) < (-0.20218325391197037%R).
 Proof. lra. Qed.
 

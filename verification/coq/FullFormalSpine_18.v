@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma bleed_in_factor_nonneg : 0%R <= (0.7879407922764434%R).
-Proof. lra. Qed.
-
 Lemma bleed_in_factor_pos : 0%R < (0.7879407922764434%R).
 Proof. lra. Qed.
 
@@ -305,4 +302,7 @@ Proof. lra. Qed.
 
 Lemma chaos_perturbation_abs_le_two : (1.2515783787839663%R) <= (2.0%R).
 Proof. lra. Qed.
+
+Lemma cosmological_observed_false : (0 = 0)%nat.
+Proof. reflexivity. Qed.
 

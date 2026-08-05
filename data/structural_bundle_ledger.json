@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-05T22:02:43.391832+00:00",
+  "generated_at": "2026-08-05T23:08:35.201387+00:00",
   "version": "1.2",
   "summary": {
     "bundle_conj_total": 563,
     "structural_bundle_excluded": 0,
     "provable_bundle_conj": 563,
     "total_conjuncts": 2501,
-    "conjuncts_with_atomic_coverage": 2499,
-    "conjunct_atomic_coverage_pct": 99.92,
+    "conjuncts_with_atomic_coverage": 2497,
+    "conjunct_atomic_coverage_pct": 99.84,
     "explicit_linked_conjuncts": 1904,
     "explicit_linked_in_spine": 1902,
     "explicit_link_hit_pct": 99.89,
@@ -30311,12 +30311,10 @@
           "kind": "nat_pos",
           "symbol": "structure_calibration_protein_count",
           "statement": "0 < 68",
-          "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
-          "matching_atomic_ids": [
-            "structure_calibration_links_codon_map"
-          ],
+          "atomic_coverage": false,
+          "coverage_via": null,
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [],
           "linked_obligation_id": null
         },
         {
@@ -30332,7 +30330,7 @@
           "linked_obligation_id": "structure_calibration_burial_beats_fifty_pct"
         }
       ],
-      "conjunct_atomic_coverage_pct": 100.0
+      "conjunct_atomic_coverage_pct": 66.67
     },
     {
       "id": "structure_calibration_bundle",
@@ -34344,8 +34342,8 @@
           "symbol": "warp_stabilization_margin_portal",
           "statement": "1.722776467449 > 1.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "numeric_conjunct_tautology",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "warp_bh_wh_portal_bundle"
           ],
@@ -36022,8 +36020,8 @@
           "symbol": "warp_stabilization_margin",
           "statement": "warp_stabilization_margin > 1.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "numeric_conjunct_tautology",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "cross_proof_connective_spine_bundle"
           ],
@@ -36103,16 +36101,14 @@
           "kind": "nat_lt_sym",
           "symbol": null,
           "statement": "24 < 1241",
-          "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
-          "matching_atomic_ids": [
-            "cross_proof_full_formal_spine_bundle"
-          ],
+          "atomic_coverage": false,
+          "coverage_via": null,
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [],
           "linked_obligation_id": null
         }
       ],
-      "conjunct_atomic_coverage_pct": 100.0
+      "conjunct_atomic_coverage_pct": 83.33
     },
     {
       "id": "scalar_engine_structure_bundle",

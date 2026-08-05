@@ -3,9 +3,6 @@ theory FullFormalSpine_15
 imports Complex_Main
 begin
 
-lemma vizier_wds_tap_live_deep_observable_count_pos: "0 < (121 :: nat)"
-  by eval
-
 lemma vizier_wds_tap_live_deep_median_error_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
   by eval
 
@@ -301,6 +298,9 @@ lemma domain_term1_gt_neg_08_medical: "(-0.8 :: real) < (-0.2712864292749448 :: 
   by eval
 
 lemma domain_term1_gt_neg_08_molecular: "(-0.8 :: real) < (-0.2798684851972981 :: real)"
+  by eval
+
+lemma domain_term1_gt_neg_08_material: "(-0.8 :: real) < (-0.20218325391197037 :: real)"
   by eval
 
 end

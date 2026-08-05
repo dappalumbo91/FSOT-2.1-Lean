@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma law_policy_panel_median_error_under_half_pct : (0.013003%R) < (0.5%R).
-Proof. lra. Qed.
-
 Lemma law_policy_observable_count_pos : (0 < 180)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -305,4 +302,7 @@ Proof. lra. Qed.
 
 Lemma matter_antimatter_headline_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
+
+Lemma matter_antimatter_observable_count_pos : (0 < 16)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:03:05.886063+00:00",
+  "generated_at": "2026-08-05T23:08:44.022788+00:00",
   "version": "1.0",
   "tier": "adversarial_round3_v1",
   "roles": {
@@ -12,7 +12,7 @@
     ],
     "bad_cop": [
       "undeniable_toe_claim is numeric replay unanimity \u2014 not independent deep proof in four provers.",
-      "54 bundle_conj rows sit off the cross-proof spine by design.",
+      "0 bundle_conj rows sit off the cross-proof spine by design.",
       "49 proof_depth_oracle-tagged rows are replay certificates, not Mathlib forall proofs.",
       "Green gate uses pooled median \u22640.5%, not per-record universal max \u2014 worst single scalar 0.499%.",
       "13 stumped observables remain scientifically contested \u2014 kill criteria registered, not resolved.",
@@ -25,21 +25,13 @@
     "overall_ok": true,
     "github_ready": true,
     "undeniable_toe_claim": true,
-    "open_gaps_depth_audit": [
-      {
-        "id": "rust_report_stale",
-        "severity": "low",
-        "description": "cross_proof_verification_report.json may lag rust_replay_lib until full pipeline re-run",
-        "remedy": "Re-run run_cross_proof_verification.py to refresh rust obligation_count",
-        "closed": false
-      }
-    ]
+    "open_gaps_depth_audit": []
   },
   "gaps": [
     {
       "id": "structural_bundle_conjunct_linkage",
       "severity": "low",
-      "attack": "99.92% total conjunct witness resolution; 99.89% explicit linked_obligation_id hit rate on spine.",
+      "attack": "99.84% total conjunct witness resolution; 99.89% explicit linked_obligation_id hit rate on spine.",
       "mitigation": "structural_bundle_ledger.json v1.1: 100% explicit link hit; residual eq_nat inventory conjuncts are Lean-only tautologies.",
       "closed": true,
       "evidence": "data/structural_bundle_ledger.json"

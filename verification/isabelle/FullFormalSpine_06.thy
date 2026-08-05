@@ -174,9 +174,6 @@ lemma fuel_lab_live_median_error_under_five_pct: "(0.039349 :: real) < (5.0 :: r
 lemma fuel_profile_count_pos: "0 < (6 :: nat)"
   by eval
 
-lemma fuel_lab_chemical_domain_positive: "(0 :: real) < (1.0 :: real)"
-  by eval
-
 lemma fuel_resolved_le_entries: "(34 :: nat) <= (34 :: nat)"
   by eval
 
@@ -301,6 +298,9 @@ lemma government_open_data_spine_median_error_under_half_pct: "(0 :: real) < (0.
   by eval
 
 lemma grace_cryosphere_month_count_pos: "0 < (253 :: nat)"
+  by eval
+
+lemma grace_cryosphere_match_le_total: "(253 :: nat) <= (253 :: nat)"
   by eval
 
 end

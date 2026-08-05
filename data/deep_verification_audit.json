@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:17:50.532899+00:00",
+  "generated_at": "2026-08-05T23:08:34.991396+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -9,30 +9,30 @@
     "extension_domains_all_green": true,
     "transcendental_certificates_ok": true,
     "export_gap_closed": true,
-    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5183 vs 2581 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
+    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5183 vs 2585 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
   },
   "obligation_spine": {
     "connective": 24,
-    "full_formal_total": 2581,
-    "full_formal_provable": 2527,
+    "full_formal_total": 2585,
+    "full_formal_provable": 2585,
     "transcendental": 68,
-    "rust_replay_total": 2109,
-    "rust_replay_expected": 2109,
+    "rust_replay_total": 2114,
+    "rust_replay_expected": 2114,
     "rust_replay_formula": "connective + atomic_provable + transcendental (bundles/margins excluded)",
     "by_kind": {
-      "nat_pos": 632,
+      "nat_pos": 633,
       "r_lt_lit_pure": 324,
-      "bundle_conj": 564,
-      "lt_lit": 229,
+      "bundle_conj": 563,
+      "lt_lit": 230,
       "lt_half": 239,
-      "gt_lit": 135,
-      "eq_nat": 26,
+      "gt_lit": 134,
+      "eq_nat": 27,
       "nat_le_sym": 30,
       "eq_nat_arith": 32,
       "r_eq_sym": 12,
       "r_eq_lit": 28,
       "r_nonneg": 10,
-      "pos": 101,
+      "pos": 104,
       "int_tuple3_eq": 148,
       "nat_gt_lit": 13,
       "nat_le_lit": 2,
@@ -50,26 +50,26 @@
   },
   "triangulation": {
     "coq_atomic": {
-      "atomic_triangulated_ok": 2017,
+      "atomic_triangulated_ok": 2022,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 564,
+      "bundle_conj_triangulated_ok": 563,
       "bundle_conj_triangulated_fail": 0,
       "margin_violations_confirmed_ok": 0,
       "margin_violations_confirmed_fail": 0,
       "pct_atomic_triangulated": 100.0
     },
     "isabelle_atomic": {
-      "atomic_triangulated_ok": 2017,
+      "atomic_triangulated_ok": 2022,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 564,
+      "bundle_conj_triangulated_ok": 563,
       "bundle_conj_triangulated_fail": 0,
       "pct_atomic_triangulated": 100.0
     },
     "rust": {
       "connective_ok": 24,
-      "formal_ok": 2017,
+      "formal_ok": 2022,
       "transcendental_ok": 68,
-      "total": 2109
+      "total": 2114
     },
     "fstar_checks": {
       "fstar_verify_passed": true,
@@ -83,16 +83,16 @@
     }
   },
   "margin_bundle_analysis": {
-    "total_obligations": 2581,
-    "provable_atomic": 2017,
-    "provable_bundle_conj": 564,
-    "structural_bundle_excluded": 54,
+    "total_obligations": 2585,
+    "provable_atomic": 2022,
+    "provable_bundle_conj": 563,
+    "structural_bundle_excluded": 0,
     "false_margin_violations": 0,
     "conjunct_atomic_coverage_pct": 99.92,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
     "lt_half_pooled_median_margin": "0.482163937115593848",
-    "atomic_triangulated": "2017/2017",
-    "bundle_conj_triangulated": "564/564",
+    "atomic_triangulated": "2022/2022",
+    "bundle_conj_triangulated": "563/563",
     "margin_violations_confirmed_in_lean": 0,
     "margin_violations_unconfirmed": 0
   },
@@ -236,7 +236,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-08-05T21:42:09.982852+00:00",
+    "generated_at": "2026-08-05T22:45:21.382482+00:00",
     "version": "1.0",
     "verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes",
     "headline_claim": "zero free parameters",
@@ -349,27 +349,27 @@
   },
   "coverage_audit": {
     "full_formal_spine": {
-      "obligations_in_full_json": 2581,
-      "modules_in_full_json": 557,
+      "obligations_in_full_json": 2585,
+      "modules_in_full_json": 558,
       "by_tier": {
-        "priors": 2120,
-        "extended": 184,
+        "priors": 2119,
+        "extended": 189,
         "bounds": 277
       },
       "by_kind": {
-        "nat_pos": 632,
+        "nat_pos": 633,
         "r_lt_lit_pure": 324,
-        "bundle_conj": 564,
-        "lt_lit": 229,
+        "bundle_conj": 563,
+        "lt_lit": 230,
         "lt_half": 239,
-        "gt_lit": 135,
-        "eq_nat": 26,
+        "gt_lit": 134,
+        "eq_nat": 27,
         "nat_le_sym": 30,
         "eq_nat_arith": 32,
         "r_eq_sym": 12,
         "r_eq_lit": 28,
         "r_nonneg": 10,
-        "pos": 101,
+        "pos": 104,
         "int_tuple3_eq": 148,
         "nat_gt_lit": 13,
         "nat_le_lit": 2,
@@ -384,11 +384,11 @@
         "r_interval_conj": 1,
         "abs_interval_conj": 1
       },
-      "pct_of_formal_theorems": 121.4017,
+      "pct_of_formal_theorems": 121.5898,
       "coq_chunks_generated": 21,
       "margin_violations_excluded": 0,
-      "coq_provable_target": 2581,
-      "coq_proved_yet": 2581,
+      "coq_provable_target": 2585,
+      "coq_proved_yet": 2585,
       "coq_proved_pct_of_full_export": 100.0,
       "coq_proved_pct_of_provable": 100.0,
       "coq_compile_status": "passed",
@@ -398,7 +398,7 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-08-05T22:17:26.404792+00:00",
+    "generated_at": "2026-08-05T23:08:28.097510+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
     "overall_ok": true,
@@ -2733,15 +2733,7 @@
     "coq_connective_coverage_pct_of_lean_theorems": 1.43,
     "note": "Cross-proof triangulates exported numeric obligations and scientific catalog residual gates; F* boot kernel uses oracle literals; Coq/Isabelle pi/e base intervals are native (Isabelle via HOL-Decision_Procs.Approximation). SMT (Z3/CVC5 when present) bulk-checks continuous catalog bounds; TLA+ models routing flow."
   },
-  "open_gaps_from_depth_audit": [
-    {
-      "id": "rust_report_stale",
-      "severity": "low",
-      "description": "cross_proof_verification_report.json may lag rust_replay_lib until full pipeline re-run",
-      "remedy": "Re-run run_cross_proof_verification.py to refresh rust obligation_count",
-      "closed": false
-    }
-  ],
+  "open_gaps_from_depth_audit": [],
   "findings": [
     {
       "id": "missing_literature_uncertainty",

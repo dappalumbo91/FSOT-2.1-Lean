@@ -3,9 +3,6 @@ theory FullFormalSpine_13
 imports Complex_Main
 begin
 
-lemma secure_software_engineering_observable_count_pos: "0 < (59 :: nat)"
-  by eval
-
 lemma secure_software_engineering_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
@@ -301,6 +298,9 @@ lemma symbolic_archetype_panel_observable_count_pos: "0 < (28 :: nat)"
   by eval
 
 lemma symbolic_archetype_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma synthetic_biology_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

@@ -3,9 +3,6 @@ theory FullFormalSpine_19
 imports Complex_Main
 begin
 
-lemma cosmological_observed_false: "(0 :: nat) = (0 :: nat)"
-  by eval
-
 lemma dark_energy_observed_false: "(0 :: nat) = (0 :: nat)"
   by eval
 
@@ -39,6 +36,9 @@ lemma cosmological_term1_negative: "(-2.1956926285882763 :: real) < (0 :: real)"
 lemma dark_energy_term1_negative: "(-2.1349793149885588 :: real) < (0 :: real)"
   by eval
 
+lemma cmb_term1_negative: "(-2.0099710610507393 :: real) < (0 :: real)"
+  by eval
+
 lemma dark_energy_term2_eq_one: "(1.0 :: real) = (1.0 :: real)"
   by eval
 
@@ -63,6 +63,9 @@ lemma domain_term3_abs_lt_fifth: "(0.0000000000000000269421 :: real) < (0.2 :: r
 lemma neural_raw_S_positive: "0 < (1.2240253341904455 :: real)"
   by eval
 
+lemma quantum_raw_S_positive: "0 < (2.2738149448128526 :: real)"
+  by eval
+
 lemma particle_raw_S_positive: "0 < (1.751037437187807 :: real)"
   by eval
 
@@ -82,6 +85,9 @@ lemma galactic_raw_S_positive: "0 < (1.8256534680881713 :: real)"
   by eval
 
 lemma fusion_raw_S_positive: "0 < (2.0283662645128167 :: real)"
+  by eval
+
+lemma proton_raw_S_positive: "0 < (1.2362775761857145 :: real)"
   by eval
 
 lemma medical_raw_S_positive: "0 < (0.7287135707250552 :: real)"
@@ -295,12 +301,6 @@ lemma lab_cellular_raw_S_positive: "0 < (1.0583105195018667 :: real)"
   by eval
 
 lemma lab_consciousness_raw_S_positive: "0 < (2.4991706281862376 :: real)"
-  by eval
-
-lemma disulfide_bridge_force_pos: "0 < (17.944271909999163 :: real)"
-  by eval
-
-lemma dipole_damping_denominator_pos: "0 < (13.399140630763645 :: real)"
   by eval
 
 end
