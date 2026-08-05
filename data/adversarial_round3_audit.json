@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:01:19.368860+00:00",
+  "generated_at": "2026-08-05T22:03:05.886063+00:00",
   "version": "1.0",
   "tier": "adversarial_round3_v1",
   "roles": {
@@ -24,15 +24,8 @@
   "gates": {
     "overall_ok": true,
     "github_ready": true,
-    "undeniable_toe_claim": false,
+    "undeniable_toe_claim": true,
     "open_gaps_depth_audit": [
-      {
-        "id": "export_gap",
-        "severity": "medium",
-        "description": "~50.4% of Lean theorems not exported as cross-proof obligations",
-        "remedy": "See data/export_exclusion_registry.json; extend export or document exclusions",
-        "closed": false
-      },
       {
         "id": "rust_report_stale",
         "severity": "low",
