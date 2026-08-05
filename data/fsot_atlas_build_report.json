@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-05T19:36:32.894438+00:00",
+  "generated_at": "2026-08-05T20:57:01.457541+00:00",
   "db_path": "data/fsot_atlas.sqlite",
   "pin_prefix": "D1D38A",
   "domains": 470,
   "green_domains": 470,
-  "records_seen_in_json": 210831,
-  "records_stored": 92745,
-  "records_table_count": 92745,
+  "records_seen_in_json": 210902,
+  "records_stored": 92816,
+  "records_table_count": 92816,
   "formulas": 1158,
   "citations": 821,
   "open_sources": 59,
@@ -25,6 +25,15 @@
     "open_science_meta": 14,
     "consciousness_social": 10
   },
+  "engine_math": {
+    "seeds": 5,
+    "derived": 20,
+    "branches": 4,
+    "interfaces": 406,
+    "edges": 22264,
+    "source": "data/fsot_system_math_audit.json"
+  },
   "policy": "open_science_only_no_credentials",
-  "query": "python scripts/query_fsot_atlas.py --stats"
+  "query": "python scripts/query_fsot_atlas.py --stats",
+  "reality_os": "python scripts/run_fsot_reality_os.py"
 }

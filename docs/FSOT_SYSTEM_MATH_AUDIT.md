@@ -1,6 +1,6 @@
 # FSOT system math audit — summary
 
-**Generated:** 2026-08-05T20:41:31.712757+00:00  
+**Generated:** 2026-08-05T20:57:01.045588+00:00  
 **Authority pin file:** `vendor/fsot_compute_AUTHORITY_PIN.json`  
 **Consistency:** PASS (16/16)
 

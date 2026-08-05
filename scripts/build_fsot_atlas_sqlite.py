@@ -35,6 +35,9 @@ CITATION_LEDGER = ROOT / "data" / "benchmark_anchor_citation_ledger.json"
 API_REQ = ROOT / "data" / "api_requirements.yaml"
 OUT_DB = ROOT / "data" / "fsot_atlas.sqlite"
 OUT_REPORT = ROOT / "data" / "fsot_atlas_build_report.json"
+MATH_AUDIT = ROOT / "data" / "fsot_system_math_audit.json"
+HIERARCHY = ROOT / "data" / "fsot_building_block_hierarchy.json"
+NETWORK = ROOT / "data" / "fsot_domain_formula_network.json"
 
 # Huge catalogs: store sample only (full JSON remains authority)
 LARGE_RECORD_THRESHOLD = 10_000
@@ -479,6 +482,176 @@ def _pin_prefix() -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest().upper()[:6]
 
 
+def _ingest_engine_math(cur: sqlite3.Cursor) -> dict[str, Any]:
+    """Load seeds, derived constants, formula branches, all domain interfaces, edges."""
+    stats: dict[str, Any] = {
+        "seeds": 0,
+        "derived": 0,
+        "branches": 0,
+        "interfaces": 0,
+        "edges": 0,
+        "source": None,
+    }
+    if not MATH_AUDIT.exists():
+        # Soft-generate if missing
+        try:
+            import subprocess
+
+            subprocess.run(
+                [sys.executable, str(ROOT / "scripts" / "build_fsot_system_math_audit.py")],
+                cwd=str(ROOT),
+                check=False,
+                timeout=300,
+            )
+        except Exception:
+            pass
+    if not MATH_AUDIT.exists():
+        stats["source"] = "missing"
+        return stats
+
+    audit = json.loads(MATH_AUDIT.read_text(encoding="utf-8"))
+    stats["source"] = "data/fsot_system_math_audit.json"
+
+    for n in (audit.get("seeds") or {}).get("nodes") or []:
+        cur.execute(
+            "INSERT OR REPLACE INTO engine_seeds(id, symbol, value, role, code) VALUES (?,?,?,?,?)",
+            (n.get("id"), n.get("symbol"), n.get("value"), n.get("role"), n.get("code")),
+        )
+        stats["seeds"] += 1
+
+    for layer_key, layer_num in (
+        ("layer1_primary_derived", 1),
+        ("layer2_composite_derived", 2),
+    ):
+        for n in (audit.get(layer_key) or {}).get("nodes") or []:
+            cur.execute(
+                "INSERT OR REPLACE INTO engine_derived(id, layer, formula, value, role, section) "
+                "VALUES (?,?,?,?,?,?)",
+                (
+                    n.get("id"),
+                    layer_num,
+                    n.get("formula"),
+                    n.get("value"),
+                    n.get("role"),
+                    n.get("section"),
+                ),
+            )
+            stats["derived"] += 1
+
+    for b in (audit.get("formula_branches") or {}).get("branches") or []:
+        cur.execute(
+            "INSERT OR REPLACE INTO formula_branches(id, name, role, structure_json, fluid_note) "
+            "VALUES (?,?,?,?,?)",
+            (
+                b.get("id"),
+                b.get("name"),
+                b.get("role"),
+                json.dumps(b.get("structure") or b.get("depends") or []),
+                b.get("fluid_note"),
+            ),
+        )
+        stats["branches"] += 1
+
+    for d in audit.get("domains") or []:
+        cur.execute(
+            """
+            INSERT OR REPLACE INTO domain_interfaces(
+              domain, kind, d_eff, hits, delta_psi, observed, s_scalar, sign, band,
+              domain_factor_f, pure_residual_floor_pct, routes_to_core
+            ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+            """,
+            (
+                d.get("domain"),
+                d.get("kind"),
+                d.get("D_eff"),
+                d.get("hits"),
+                d.get("delta_psi"),
+                1 if d.get("observed") else 0,
+                d.get("S"),
+                d.get("sign"),
+                d.get("band"),
+                d.get("domain_factor_f"),
+                d.get("pure_residual_floor_pct"),
+                d.get("routes_to_core"),
+            ),
+        )
+        stats["interfaces"] += 1
+
+    # Connective edges from hierarchy + network (cap size for SQLite)
+    edges: list[tuple[str, str, str, float]] = []
+    if HIERARCHY.exists():
+        hier = json.loads(HIERARCHY.read_text(encoding="utf-8"))
+        for e in hier.get("edges") or []:
+            edges.append(
+                (
+                    str(e.get("from") or ""),
+                    str(e.get("to") or ""),
+                    str(e.get("rel") or "hier"),
+                    1.0,
+                )
+            )
+    if NETWORK.exists():
+        net = json.loads(NETWORK.read_text(encoding="utf-8"))
+        for e in net.get("domain_domain_links") or []:
+            edges.append(
+                (
+                    str(e.get("source") or ""),
+                    str(e.get("target") or ""),
+                    str(e.get("kind") or "network"),
+                    float(e.get("weight") or 1.0),
+                )
+            )
+        # seed strings: store unique seed→domain as compact sample if huge
+        for e in (net.get("seed_domain_links") or [])[:2500]:
+            edges.append(
+                (
+                    str(e.get("source") or ""),
+                    str(e.get("target") or ""),
+                    "seed_domain",
+                    1.0,
+                )
+            )
+
+    # Dedup lightly
+    seen: set[tuple[str, str, str]] = set()
+    batch = []
+    for src, dst, rel, w in edges:
+        if not src or not dst:
+            continue
+        key = (src, dst, rel)
+        if key in seen:
+            continue
+        seen.add(key)
+        batch.append((src, dst, rel, w))
+        if len(batch) >= 5000:
+            cur.executemany(
+                "INSERT INTO connective_edges(src, dst, rel, weight) VALUES (?,?,?,?)",
+                batch,
+            )
+            stats["edges"] += len(batch)
+            batch = []
+    if batch:
+        cur.executemany(
+            "INSERT INTO connective_edges(src, dst, rel, weight) VALUES (?,?,?,?)",
+            batch,
+        )
+        stats["edges"] += len(batch)
+
+    cur.execute(
+        "INSERT OR REPLACE INTO meta(key, value) VALUES (?, ?)",
+        ("engine_math_interfaces", str(stats["interfaces"])),
+    )
+    cur.execute(
+        "INSERT OR REPLACE INTO meta(key, value) VALUES (?, ?)",
+        ("engine_math_edges", str(stats["edges"])),
+    )
+    cur.execute(
+        "INSERT OR REPLACE INTO meta(key, value) VALUES (?, ?)",
+        ("master_formula", "S = K * (T1 + T2 + T3); c = m * (1 + |S| * f)"),
+    )
+    return stats
+
+
 def _load_margin_domains() -> list[dict[str, Any]]:
     if not MARGIN.exists():
         return []
@@ -601,6 +774,55 @@ def build() -> dict[str, Any]:
         CREATE VIRTUAL TABLE fts_domains USING fts5(
           domain, file_name, family, content='domains', content_rowid='id'
         );
+
+        -- Engine math (from system audit / fsot_compute) — full formula fabric
+        CREATE TABLE engine_seeds (
+          id TEXT PRIMARY KEY,
+          symbol TEXT,
+          value REAL,
+          role TEXT,
+          code TEXT
+        );
+        CREATE TABLE engine_derived (
+          id TEXT PRIMARY KEY,
+          layer INTEGER,
+          formula TEXT,
+          value REAL,
+          role TEXT,
+          section TEXT
+        );
+        CREATE TABLE formula_branches (
+          id TEXT PRIMARY KEY,
+          name TEXT,
+          role TEXT,
+          structure_json TEXT,
+          fluid_note TEXT
+        );
+        CREATE TABLE domain_interfaces (
+          domain TEXT PRIMARY KEY,
+          kind TEXT,
+          d_eff INTEGER,
+          hits INTEGER,
+          delta_psi REAL,
+          observed INTEGER,
+          s_scalar REAL,
+          sign TEXT,
+          band TEXT,
+          domain_factor_f REAL,
+          pure_residual_floor_pct REAL,
+          routes_to_core TEXT
+        );
+        CREATE INDEX idx_interfaces_deff ON domain_interfaces(d_eff);
+        CREATE INDEX idx_interfaces_sign ON domain_interfaces(sign);
+        CREATE TABLE connective_edges (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          src TEXT,
+          dst TEXT,
+          rel TEXT,
+          weight REAL
+        );
+        CREATE INDEX idx_edges_src ON connective_edges(src);
+        CREATE INDEX idx_edges_dst ON connective_edges(dst);
         """
     )
 
@@ -803,6 +1025,9 @@ def build() -> dict[str, Any]:
         "SELECT id, domain, file_name, family FROM domains"
     )
 
+    # Engine math + domain interfaces + connective edges (full formula fabric)
+    math_stats = _ingest_engine_math(cur)
+
     conn.commit()
 
     # Stats
@@ -835,8 +1060,10 @@ def build() -> dict[str, Any]:
         "sampled_large_domains": sampled_domains,
         "missing_benchmark_files": missing_files,
         "by_family": by_family,
+        "engine_math": math_stats,
         "policy": "open_science_only_no_credentials",
         "query": "python scripts/query_fsot_atlas.py --stats",
+        "reality_os": "python scripts/run_fsot_reality_os.py",
     }
     OUT_REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
     return report
