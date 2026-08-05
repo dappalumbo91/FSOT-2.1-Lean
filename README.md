@@ -4,17 +4,32 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.8 — Label A + Label B (T1–T6) · densify remediation · Dzhanibekov panel · multiprover green · **2026-08-05**  
+**Edition:** v2.9 — Label A + Label B (T1–T6) · live scoreboard · documentation accuracy · **2026-08-05**  
 **Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)  
 **Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · sync checklist: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)  
 **New here?** → **[`docs/START_HERE.md`](docs/START_HERE.md)** · Audience map → [`docs/DOCUMENTATION_MAP.md`](docs/DOCUMENTATION_MAP.md) · Reproduce → [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) · Math key → [`docs/FSOT_MATH_KEY.md`](docs/FSOT_MATH_KEY.md)
 
-> *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
+### Live scoreboard (this edition — regenerate after every expansion)
+
+| Metric | Value | Source |
+|--------|------:|--------|
+| **Authority pin** | **D1D38A** (match) | `vendor/fsot_compute.py` SHA-256 prefix |
+| **Green residual benchmarks** | **432 / 432** fail 0 | `data/benchmark_margin_audit.json` (≤0.5% pooled median) |
+| **Scientific domains covered** | **407** (35 core + 371 extensions + IC) | `data/scientific_domain_expansion_map.json` |
+| **Publication atlas rows** | **403** (35 core + 368 extension) | `data/publication/domain_atlas.csv` |
+| **Empirical records (summed panels)** | **~2.19M** | expansion map `total_empirical_records` (includes MPCORB **1,554,101**) |
+| **Median-of-medians residual** | **~0.00056%** | `docs/CURRENT_STATUS.md` |
+| **Catalog multiprover obligations** | **2025** | scientific catalog spine |
+| **Lean formal modules** | **523** | `FSOT/Formal/*.lean` |
+| **Multiprover** | `overall_ok: true` | `data/cross_proof_verification_report.json` |
+
+> Older prose saying **394**, **402**, **~537k**, or **~1912** obligations is **stale**. Prefer this table and [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
 
 ```bash
 git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 cd FSOT-2.1-Lean
 pip install -r requirements.txt
+python scripts/build_repo_status_snapshot.py
 python scripts/run_publication_verification_bundle.py
 ```
 
@@ -114,11 +129,11 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 ## Abstract
 
-Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan), **zero free parameters** — evaluated against measured reality across **403+ routed scientific domains (35 core + extensions)** and **~2.63M empirical records** (including the IAU **MPCORB** full minor-planet catalog at **~0.023%** pooled residual).
+Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan), **zero free parameters** — evaluated against measured reality across **407 scientific domains** (35 core + 371 extensions + intelligence compression) and **~2.19 million empirical records** (including the IAU **MPCORB** full minor-planet catalog: **1,554,101** objects at **~0.023%** pooled residual).
 
-The results, as of this edition: **430/430** public benchmark files pass a ≤0.5% pooled error green gate (see live [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md)); framework-wide domain medians sit in the **sub-0.05%** band. The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain. Densify must use **seed formula + real measured data only** ([`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md)).
+The results, as of this edition: **432/432** public benchmark files pass a ≤0.5% pooled error green gate ([`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md)); framework median-of-medians sits near **0.00056%**. The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain. Densify must use **seed formula + real measured data only** ([`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md)).
 
-Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator), Coq/Rocq, Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (~1912 multi-prover obligations). QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
+Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator), Coq/Rocq (Interval-native π/e), Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (**2025** multiprover obligations). QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
 
 FSOT further demonstrates that the same engine guides grounded engineering readouts: FSOT-designed alternative fuels (366 records, 0.039% pooled median), species-scale molecular catalogs, and black-hole / white-hole information-cycle panels â€” cross-verified against seed-scalar predictions, not post-hoc curve fits.
 
@@ -224,15 +239,15 @@ One proposition, stated precisely:
 
 > Reality is a **25-dimensional fluid condensate**. What we call space, time, matter, life, and mind are regimes of the same scalar field `raw_S`, computed from seed geometry with **no per-observable least-squares tuning**.
 
-This is not poetry layered on curve fits. It is a **falsifiable engineering specification** tested across 402 routed domains with preregistered kill criteria (`data/preregistered_predictions_manifest.yaml`).
+This is not poetry layered on curve fits. It is a **falsifiable engineering specification** tested across **407** scientific domains (**432** green residual benchmarks) with preregistered kill criteria (`data/preregistered_predictions_manifest.yaml`).
 
 <!-- README_CONTRIBUTIONS_START -->
 ### 1.3 Contributions
 
 This work makes five contributions at arXiv preprint standard:
 
-1. **Unified scalar architecture** â€” A single seed-derived engine (`raw_S = term1 + term2 + term3`) evaluated across **402 routed scientific domains** (35 core + 367 extension panels) and **536,740** empirical records, with **no per-observable least-squares tuning**.
-2. **Cross-domain empirical closure** â€” **394/394** public benchmark domains pass a â‰¤0.5% pooled median error gate; cross-domain pooled median is **0.013%** (Planck 2018, PDG 2024, NIST/CODATA targets per row).
+1. **Unified scalar architecture** — A single seed-derived engine (`raw_S = term1 + term2 + term3`) evaluated across **407 scientific domains** (35 core + 371 extensions + IC) and **~2.19M** empirical records, with **no per-observable least-squares tuning**.
+2. **Cross-domain empirical closure** — **432/432** public benchmark files pass a ≤0.5% pooled median error gate; median-of-medians ≈ **0.00056%** (Planck 2018, PDG 2024, NIST/CODATA targets per row).
 3. **Contested-sector readouts** â€” Unified FSOT predictions on Hâ‚€, Ïƒâ‚ˆ, BBN, hierarchy, and dark-energy proxies achieve **0.030%** pooled median across 13 actively monitored observables vs ~15% typical Î›CDM/SM sector baselines (Riess et al. 2024; Planck Collaboration 2018).
 4. **Five-prover formal triangulation** â€” **1,863** atomic obligations exported to Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust with `overall_ok: true` â€” proof assistants as scientific instruments, not software-only checks.
 5. **Executable falsification registry** â€” Preregistered predictions **PRED-001â€“041**, per-domain kill criteria, and a one-command verification bundle that any reader can run on GitHub.
@@ -257,7 +272,7 @@ The Standard Model plus CODATA/NIST tabulations supply authoritative measured ta
 
 ### Unified theories and emergent gravity
 
-String/M-theory, loop quantum gravity, and emergent-gravity programs pursue unification through extra structure (branes, spin networks, entanglement entropy). FSOT pursues unification through **one scalar field equation** verified across 402 routed domains. The falsifiable distinction is operational: FSOT registers preregistered predictions (PRED-001â€“041) and domain kill criteria in `data/fsot_domain_navigator.json`; a failed green gate is a ledger event, not a post-hoc parameter rescue.
+String/M-theory, loop quantum gravity, and emergent-gravity programs pursue unification through extra structure (branes, spin networks, entanglement entropy). FSOT pursues unification through **one scalar field equation** verified across **407** scientific domains. The falsifiable distinction is operational: FSOT registers preregistered predictions (PRED-001–041) and domain kill criteria in `data/fsot_domain_navigator.json`; a failed green gate is a ledger event, not a post-hoc parameter rescue.
 
 ### Formal methods in science
 
@@ -268,7 +283,7 @@ Proof assistants (Lean, Coq, Isabelle) are standard in software verification; th
 | Dimension | Typical siloed model | FSOT (this repository) |
 |-----------|------------------------|---------------------------|
 | Parameters per observable | Sector-specific fits | Seed-derived; no per-row least squares |
-| Cross-domain test | Uncommon | 402 routed domains, 536,740 records |
+| Cross-domain test | Uncommon | 407 domains · ~2.19M records · 432/432 green |
 | Formal triangulation | Rare | Lean + Coq + Isabelle + F* + Rust |
 | Kill criteria | Often informal | Navigator + prereg manifest |
 | Living edition | Static PDF | GitHub commit history + tagged releases |
@@ -389,9 +404,9 @@ Formal definitions: `FSOT/Scalar.lean`, `FSOT/Formal/Scalar.lean`, decimal autho
 
 Nature's "departments" â€” quantum mechanics, economics, immunology, propulsion â€” are **routing labels** for the same engine at different folds:
 
-- **35 core NeuroLab domains** with manifest-declared `(D_eff, Î´Ïˆ, recent_hits, observed)`  
-- **367 extension panels** with Lean priors modules (`FSOT.Formal.*Priors`)  
-- **402 routed domains** in the publication atlas (`data/publication/domain_atlas.csv`)
+- **35 core NeuroLab domains** with manifest-declared `(D_eff, δψ, recent_hits, observed)`  
+- **371 extension panels** with Lean priors modules (`FSOT.Formal.*Priors`)  
+- **403 rows** in the publication atlas (`data/publication/domain_atlas.csv`); **407** in the scientific coverage map
 
 A cosmology prediction and a fuel-molecule prediction share seeds. They differ in domain route, not in underlying arithmetic.
 
@@ -486,7 +501,7 @@ Authoritative artifact: `data/cross_proof_verification_report.json` â†’ **`
 ### 5.3 Benchmark margin gate
 
 - **GREEN:** pooled median â‰¤ 0.5% AND classifier â‰¥ 99.5%  
-- **Result:** **394/394** green (`data/benchmark_margin_audit.json`)
+- **Result:** **432/432** green (`data/benchmark_margin_audit.json`)
 
 ### 5.4 AI assistance â€” human responsibility
 
@@ -511,7 +526,7 @@ where \(\epsilon_{\mathrm{floor}}\) guards division near zero for classifier-val
 
 **GREEN gate (benchmark margin):** \(\tilde{\varepsilon} \leq 0.5\%\) and stability classifier agreement \(\geq 99.5\%\) where applicable (`data/benchmark_margin_audit.json`).
 
-**Cross-domain headline:** median of per-domain \(\tilde{\varepsilon}\) over the 402-domain atlas (not a global re-fit across all 536,740 rows).
+**Cross-domain headline:** median of per-domain \(\tilde{\varepsilon}\) over the green benchmark ledger (not a global re-fit across all ~2.19M rows).
 
 ### 5.6 Preregistration and kill criteria
 
@@ -541,14 +556,17 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 
 | Metric | Value |
 |--------|------:|
-| Scientific domains | 402 |
-| Empirical records | 536,740 |
-| Benchmark domains green (â‰¤0.5%) | 394/394 |
-| Cross-domain pooled median | 0.013% |
-| Worst domain max scalar error | 0.499% |
-| Lean formal modules | 501+ |
-| Tier A_strong domains | 116 |
-| Tier B_verified domains | 287 |
+| Scientific domains covered | **407** |
+| Publication atlas rows | **403** |
+| Empirical records (panel sum) | **~2.19M** |
+| MPCORB catalog objects | **1,554,101** (~0.023% residual) |
+| Benchmark files green (≤0.5%) | **432/432** |
+| Median-of-medians residual | **~0.00056%** |
+| Worst domain max scalar error | **0.4989%** |
+| Catalog multiprover obligations | **2025** |
+| Lean formal modules | **523** |
+| Tier A_strong (status) | **95** |
+| Tier B_verified (status) | **329** |
 
 ![Empirical headline summary](data/figures/empirical_headline_summary.png)
 
@@ -564,7 +582,7 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 
 ### 6.2 Representative domains
 
-Full atlas: [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) (402 rows; measured targets per NIST, PDG, Planck-class surveys as cited per row)
+Full atlas: [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) (**403** rows; measured targets per NIST, PDG, Planck-class surveys as cited per row)
 
 | Domain | Records | Median error % | Tier |
 |--------|--------:|---------------:|------|
@@ -587,16 +605,19 @@ python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine
 ```
 
 <!-- README_SECTION_63_START -->
-### 6.3 Domain-by-domain coverage (402 routed domains)
+### 6.3 Domain-by-domain coverage (407 scientific domains)
 
-FSOT does not verify a single silo â€” it verifies a **spine of 35 core scientific domains** and **367 extension panels** across **26 thesis clusters**, each with measured records, Lean formal modules, and registered kill criteria.
+FSOT does not verify a single silo — it verifies a **spine of 35 core scientific domains** and **371 extension panels** (plus intelligence compression) across **26 thesis clusters**, each with measured records, Lean formal modules, and registered kill criteria.
 
 | Layer | Count | Role |
 |-------|------:|------|
-| Core NeuroLab domains | 35 | Primary scientific departments (cosmology, quantum mechanics, biology, â€¦) |
-| Extension panels | 367 | Specialized depth across 26 clusters |
-| Lean formal modules | 501+ | Machine-checked priors per panel |
-| Empirical records | 536,740 | Measured vs seed-derived FSOT predictions |
+| Core NeuroLab domains | 35 | Primary scientific departments (cosmology, quantum mechanics, biology, …) |
+| Extension panels | **371** | Specialized depth across 26 clusters |
+| Intelligence compression | 1 | Specialized bridge domain |
+| **Total scientific domains** | **407** | Core + extensions + IC |
+| Lean formal modules | **523** | Machine-checked priors per panel |
+| Empirical records (panel sum) | **~2.19M** | Measured vs seed-derived FSOT predictions |
+| Green residual benchmarks | **432/432** | Public ≤0.5% gate files |
 
 **Scientific clusters** (extension panels grouped for the thesis):
 
@@ -764,7 +785,7 @@ Numeric agreement alone cannot guard against silent code drift. Exporting Lean o
 - **Wet-lab longevity depth:** Tier 94/95 biology panels restored as first-class credibility layer (`WETLAB_LONGEVITY_DEPTH.md`)  
 - **Circuitry emergence (Tier 96):** component-variable atlas scaffold â€” BOM from seed math + industry tables (`CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`)  
 - **ESP32 hardware observer:** eight-way UART closure **convenience-deferred** until boot-sequence workflow is ergonomic (laptop bench); QEMU bare-metal and `Trinary_Hardware_Live_Panel` remain authoritative â€” not a math gap  
-- **Domain atlas rollup:** **402** routed domains (35 core + 367 extension); prior 403 figure was summary rollup miscount
+- **Domain atlas rollup:** **403** atlas rows · **407** scientific coverage map (35 core + 371 extension + IC) · **432** green residual benchmarks
 <!-- README_DISCUSSION_OPEN_WORK_END -->
 
 <!-- README_NEAR_MISS_START -->
@@ -851,7 +872,7 @@ Full audit: [`docs/FOUNDING_35_LAWS_AUDIT.md`](docs/FOUNDING_35_LAWS_AUDIT.md)
 
 The universe does not present itself as a hundred separate accidents. It presents as **repetition with variation** â€” the same mathematics in stellar fusion and mitochondrial chemistry, in Hubble tension and brain metabolism, in molecular bonds and thermochemistry readouts.
 
-FSOT names that repetition: **one fluid, one scalar, seed-derived, observer-coupled, fractal across 402 routed domains**. The empirical record says it is tight. The formal record says it is triangulated. The engineering record says it builds.
+FSOT names that repetition: **one fluid, one scalar, seed-derived, observer-coupled, fractal across 407 scientific domains (~2.19M records, 432/432 green)**. The empirical record says it is tight. The formal record says it is triangulated. The engineering record says it builds.
 
 This thesis will expand. The repository will deepen. The invitation is unchanged:
 
@@ -952,7 +973,7 @@ python scripts/merge_readme_thesis_expansion.py
 <!-- README_APPENDIX_XII_STUB_START -->
 ## Appendix XII â€” Domain-by-Domain Scientific Coverage (summary)
 
-*Full volume:* [`docs/THESIS_APPENDIX_XII.md`](docs/THESIS_APPENDIX_XII.md) Â· *26 clusters Â· 367 extension panels Â· Regenerated: 2026-07-16
+*Full volume:* [`docs/THESIS_APPENDIX_XII.md`](docs/THESIS_APPENDIX_XII.md) · *26 clusters · **371** extension panels · live scoreboard on this README · Regenerated: 2026-08-05
 
 | Cluster | Panels |
 |---------|-------:|

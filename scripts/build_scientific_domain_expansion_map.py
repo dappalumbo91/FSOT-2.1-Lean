@@ -158,7 +158,13 @@ def build_map() -> dict:
         }
 
     total_covered = len(neurolab_domains) + len(extensions) + (1 if intelligence_compression else 0)
-    total_records = int(coverage.get("total_empirical_records") or 0)
+    # Sum live panel/lab record counts (includes large catalogs e.g. MPCORB).
+    # Do not trust stale domain_coverage_report rollups alone.
+    total_records = 0
+    for entry in neurolab_domains + extensions + ([intelligence_compression] if intelligence_compression else []):
+        total_records += int(entry.get("record_count") or 0)
+    if total_records <= 0:
+        total_records = int(coverage.get("total_empirical_records") or 0)
 
     # Aggregate coverage tiers across NeuroLab + extension + rollup (not NeuroLab-only).
     tier_counts = {
@@ -179,6 +185,7 @@ def build_map() -> dict:
             "extension_domains": len(extensions),
             "total_scientific_domains_covered": total_covered,
             "total_empirical_records": total_records,
+            "total_empirical_records_note": "sum of neurolab+extension(+IC) record_count fields",
             "domains_target_band_2pct": precision.get("domains_target_band_2pct"),
             "domains_sign_mismatch": precision.get("domains_sign_mismatch"),
             "neurolab_tier_distribution": neurolab_tier_counts,
