@@ -16,7 +16,7 @@ def zebrafish_longevity_genetics_coupling_median_error_pct : ℝ := (0.013342 : 
 def zebrafish_longevity_genetics_coupling_D_eff : ℕ := 22
 
 theorem zebrafish_longevity_genetics_coupling_observable_count_pos : 0 < zebrafish_longevity_genetics_coupling_observable_count := by
-  unfold zebrafish_longevity_genetics_coupling_observable_count; norm_num
+  unfold zebrafish_longevity_genetics_coupling_observable_count; decide
 
 theorem zebrafish_longevity_genetics_coupling_median_error_under_five_pct :
     zebrafish_longevity_genetics_coupling_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem zebrafish_longevity_genetics_coupling_bundle :
     zebrafish_longevity_genetics_coupling_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold zebrafish_longevity_genetics_coupling_observable_count; norm_num,
-    by unfold zebrafish_longevity_genetics_coupling_D_eff; norm_num,
+    by unfold zebrafish_longevity_genetics_coupling_observable_count; decide,
+    by unfold zebrafish_longevity_genetics_coupling_D_eff; decide,
     zebrafish_longevity_genetics_coupling_median_error_under_five_pct,
     biological_raw_S_positive
   ⟩

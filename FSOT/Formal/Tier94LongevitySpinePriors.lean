@@ -16,7 +16,7 @@ def tier_94_longevity_median_error_pct : ℝ := (0.0 : ℝ)
 def tier_94_longevity_D_eff : ℕ := 25
 
 theorem tier_94_longevity_observable_count_pos : 0 < tier_94_longevity_observable_count := by
-  unfold tier_94_longevity_observable_count; norm_num
+  unfold tier_94_longevity_observable_count; decide
 
 theorem tier_94_longevity_median_error_under_five_pct :
     tier_94_longevity_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem tier_94_longevity_bundle :
     tier_94_longevity_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold tier_94_longevity_observable_count; norm_num,
-    by unfold tier_94_longevity_D_eff; norm_num,
+    by unfold tier_94_longevity_observable_count; decide,
+    by unfold tier_94_longevity_D_eff; decide,
     tier_94_longevity_median_error_under_five_pct,
     biological_raw_S_positive
   ⟩

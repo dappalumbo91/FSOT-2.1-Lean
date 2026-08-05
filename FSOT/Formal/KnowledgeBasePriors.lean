@@ -24,10 +24,10 @@ def knowledge_base_per_formula_verified : ℕ := 105
 def knowledge_base_per_formula_within_target_2pct : ℕ := 50
 
 theorem knowledge_base_source_count_pos : 0 < knowledge_base_source_count := by
-  unfold knowledge_base_source_count; norm_num
+  unfold knowledge_base_source_count; decide
 
 theorem knowledge_base_catalog_formulas_pos : 0 < knowledge_base_catalog_formulas := by
-  unfold knowledge_base_catalog_formulas; norm_num
+  unfold knowledge_base_catalog_formulas; decide
 
 theorem knowledge_base_observable_matched_le_verified :
     knowledge_base_observable_verified_matched ≤ knowledge_base_observable_verified_formulas := by
@@ -49,17 +49,17 @@ theorem knowledge_base_corpus_bundle :
     knowledge_base_observable_verified_matched ≤ knowledge_base_observable_verified_formulas ∧
     (0 : ℝ) < raw_S (get_domain_params "molecular") := by
   refine ⟨
-    by unfold knowledge_base_source_count; norm_num,
-    by unfold knowledge_base_catalog_formulas; norm_num,
-    by unfold knowledge_base_resolved_formulas; norm_num,
-    by unfold knowledge_base_observable_citations; norm_num,
-    by unfold knowledge_base_observable_verified_formulas; norm_num,
-    by unfold knowledge_base_observable_verified_matched; norm_num,
-    by unfold knowledge_base_within_target_2pct; norm_num,
-    by unfold knowledge_base_per_formula_total; norm_num,
-    by unfold knowledge_base_per_formula_evaluated; norm_num,
-    by unfold knowledge_base_per_formula_verified; norm_num,
-    by unfold knowledge_base_per_formula_within_target_2pct; norm_num,
+    by unfold knowledge_base_source_count; decide,
+    by unfold knowledge_base_catalog_formulas; decide,
+    by unfold knowledge_base_resolved_formulas; decide,
+    by unfold knowledge_base_observable_citations; decide,
+    by unfold knowledge_base_observable_verified_formulas; decide,
+    by unfold knowledge_base_observable_verified_matched; decide,
+    by unfold knowledge_base_within_target_2pct; decide,
+    by unfold knowledge_base_per_formula_total; decide,
+    by unfold knowledge_base_per_formula_evaluated; decide,
+    by unfold knowledge_base_per_formula_verified; decide,
+    by unfold knowledge_base_per_formula_within_target_2pct; decide,
     knowledge_base_observable_matched_le_verified,
     molecular_raw_S_positive
   ⟩

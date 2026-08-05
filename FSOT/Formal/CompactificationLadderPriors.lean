@@ -13,7 +13,7 @@ def compactification_ladder_observable_count : ℕ := 60
 def compactification_ladder_D_eff : ℕ := 18
 
 theorem compactification_ladder_observable_count_pos : 0 < compactification_ladder_observable_count := by
-  unfold compactification_ladder_observable_count; norm_num
+  unfold compactification_ladder_observable_count; decide
 
 theorem compactification_ladder_median_error_under_half_pct :
     (0.0220747159758794 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem compactification_ladder_bundle :
     (0.0220747159758794 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold compactification_ladder_observable_count; norm_num,
-    by unfold compactification_ladder_D_eff; norm_num,
+    by unfold compactification_ladder_observable_count; decide,
+    by unfold compactification_ladder_D_eff; decide,
     compactification_ladder_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

@@ -18,23 +18,27 @@ def matter_antimatter_headline_median_error_pct : ℝ := (0 : ℝ)
 def matter_antimatter_D_eff : ℕ := 5
 
 theorem matter_antimatter_observable_count_pos : 0 < matter_antimatter_observable_count := by
-  unfold matter_antimatter_observable_count; norm_num
+  unfold matter_antimatter_observable_count; decide
 
 theorem matter_antimatter_pooled_median_under_half_pct :
     matter_antimatter_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold matter_antimatter_pooled_median_error_pct; norm_num
+  unfold matter_antimatter_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem matter_antimatter_headline_median_under_half_pct :
     matter_antimatter_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold matter_antimatter_headline_median_error_pct; norm_num
+  unfold matter_antimatter_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem matter_antimatter_bundle :
     matter_antimatter_observable_count = 16 ∧
     matter_antimatter_D_eff = 5 ∧
     matter_antimatter_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
-  · unfold matter_antimatter_observable_count; norm_num
-  · unfold matter_antimatter_D_eff; norm_num
+  · unfold matter_antimatter_observable_count; decide
+  · unfold matter_antimatter_D_eff; decide
   · exact matter_antimatter_pooled_median_under_half_pct
 
 end

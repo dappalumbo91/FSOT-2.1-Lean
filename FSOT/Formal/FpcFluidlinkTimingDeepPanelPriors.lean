@@ -13,7 +13,7 @@ def fpc_fluidlink_timing_deep_panel_observable_count : ℕ := 24
 def fpc_fluidlink_timing_deep_panel_D_eff : ℕ := 20
 
 theorem fpc_fluidlink_timing_deep_panel_observable_count_pos : 0 < fpc_fluidlink_timing_deep_panel_observable_count := by
-  unfold fpc_fluidlink_timing_deep_panel_observable_count; norm_num
+  unfold fpc_fluidlink_timing_deep_panel_observable_count; decide
 
 theorem fpc_fluidlink_timing_deep_panel_median_error_under_half_pct :
     (0.021117999999999998 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem fpc_fluidlink_timing_deep_panel_bundle :
     (0.021117999999999998 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold fpc_fluidlink_timing_deep_panel_observable_count; norm_num,
-    by unfold fpc_fluidlink_timing_deep_panel_D_eff; norm_num,
+    by unfold fpc_fluidlink_timing_deep_panel_observable_count; decide,
+    by unfold fpc_fluidlink_timing_deep_panel_D_eff; decide,
     fpc_fluidlink_timing_deep_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

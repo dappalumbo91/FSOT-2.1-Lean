@@ -28,7 +28,7 @@ def magnetosphere_extended_storm_holdout_misclassification_pct : ℝ := (0.0 : �
 def magnetosphere_extended_bz_misclassification_pct : ℝ := (0.0 : ℝ)
 
 theorem magnetosphere_extended_historical_hours_pos : 0 < magnetosphere_extended_historical_hours := by
-  unfold magnetosphere_extended_historical_hours; norm_num
+  unfold magnetosphere_extended_historical_hours; decide
 
 theorem magnetosphere_extended_historical_match_le_total :
     magnetosphere_extended_historical_match_count ≤ magnetosphere_extended_historical_hours := by
@@ -53,13 +53,13 @@ theorem magnetosphere_extended_bundle :
     magnetosphere_extended_historical_match_count ≤ magnetosphere_extended_historical_hours ∧
     raw_S (get_domain_params "electron") > 0 := by
   refine ⟨
-    by unfold magnetosphere_extended_historical_hours; norm_num,
-    by unfold magnetosphere_extended_historical_match_count; norm_num,
-    by unfold magnetosphere_extended_storm_holdout_hours; norm_num,
-    by unfold magnetosphere_extended_storm_holdout_match_count; norm_num,
-    by unfold magnetosphere_extended_bz_record_count; norm_num,
-    by unfold magnetosphere_extended_bz_match_count; norm_num,
-    by unfold magnetosphere_extended_D_eff; norm_num,
+    by unfold magnetosphere_extended_historical_hours; decide,
+    by unfold magnetosphere_extended_historical_match_count; decide,
+    by unfold magnetosphere_extended_storm_holdout_hours; decide,
+    by unfold magnetosphere_extended_storm_holdout_match_count; decide,
+    by unfold magnetosphere_extended_bz_record_count; decide,
+    by unfold magnetosphere_extended_bz_match_count; decide,
+    by unfold magnetosphere_extended_D_eff; decide,
     magnetosphere_extended_historical_match_le_total,
     electron_raw_S_positive
   ⟩

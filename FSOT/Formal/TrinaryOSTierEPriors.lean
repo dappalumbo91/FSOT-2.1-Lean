@@ -13,7 +13,7 @@ def trinary_os_tier_e_observable_count : ℕ := 68
 def trinary_os_tier_e_D_eff : ℕ := 12
 
 theorem trinary_os_tier_e_observable_count_pos : 0 < trinary_os_tier_e_observable_count := by
-  unfold trinary_os_tier_e_observable_count; norm_num
+  unfold trinary_os_tier_e_observable_count; decide
 
 theorem trinary_os_tier_e_median_error_under_half_pct :
     (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem trinary_os_tier_e_bundle :
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold trinary_os_tier_e_observable_count; norm_num,
-    by unfold trinary_os_tier_e_D_eff; norm_num,
+    by unfold trinary_os_tier_e_observable_count; decide,
+    by unfold trinary_os_tier_e_D_eff; decide,
     trinary_os_tier_e_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

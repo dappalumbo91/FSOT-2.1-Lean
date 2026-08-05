@@ -18,18 +18,22 @@ def anthropology_ext_beats_sota_headlines : ℕ := 2
 def anthropology_ext_D_eff : ℕ := 17
 
 theorem anthropology_ext_observable_count_pos : 0 < anthropology_ext_observable_count := by
-  unfold anthropology_ext_observable_count; norm_num
+  unfold anthropology_ext_observable_count; decide
 
 theorem anthropology_ext_pooled_median_under_half_pct :
     anthropology_ext_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold anthropology_ext_pooled_median_error_pct; norm_num
+  unfold anthropology_ext_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem anthropology_ext_headline_median_under_half_pct :
     anthropology_ext_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold anthropology_ext_headline_median_error_pct; norm_num
+  unfold anthropology_ext_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem anthropology_ext_beats_sota_headlines_pos : 0 < anthropology_ext_beats_sota_headlines := by
-  unfold anthropology_ext_beats_sota_headlines; norm_num
+  unfold anthropology_ext_beats_sota_headlines; decide
 
 theorem anthropology_ext_bundle :
     anthropology_ext_observable_count = 160 ∧
@@ -38,7 +42,7 @@ theorem anthropology_ext_bundle :
     0 < anthropology_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨
-    by unfold anthropology_ext_observable_count; norm_num,
+    by unfold anthropology_ext_observable_count; decide,
     anthropology_ext_pooled_median_under_half_pct,
     anthropology_ext_headline_median_under_half_pct,
     anthropology_ext_beats_sota_headlines_pos,

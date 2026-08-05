@@ -1,9 +1,9 @@
 # Mathlib re-derivation campaign
 
-**Generated:** 2026-08-05T22:17:26.616833+00:00  
+**Generated:** 2026-08-05T22:31:00.257203+00:00  
 **Verdict:** `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`  
 **Engine core closed:** True  
-**Corpus Mathlib-depth %:** 16.6%  (860/5182)
+**Corpus Mathlib-depth %:** 56.1%  (2907/5182)
 
 ## What this campaign is
 
@@ -21,26 +21,26 @@ across `FSOT/Formal` — beyond residual multiprover numeric certificate replay.
 
 | Wave | Role | Thms | Mathlib% | Lake | OK |
 |------|------|-----:|---------:|:----:|:--:|
-| `W0_scalar_defs` | engine | 32 | 43.75 | passed | ✓ |
-| `W1_bounds` | engine | 277 | 76.53 | passed | ✓ |
-| `W2_theorems` | engine | 54 | 79.63 | passed | ✓ |
-| `W3_domains` | engine | 43 | 23.26 | passed | ✓ |
-| `W4_cosmology` | engine | 64 | 34.38 | passed | ✓ |
-| `W5_bridge` | engine | 54 | 35.19 | passed | ✓ |
-| `W6_priors_00` | priors | 171 | 4.68 | passed | ✓ |
-| `W6_priors_01` | priors | 271 | 1.85 | passed | ✓ |
-| `W6_priors_02` | priors | 148 | 4.73 | passed | ✓ |
-| `W6_priors_03` | priors | 138 | 5.07 | passed | ✓ |
-| `W6_priors_04` | priors | 128 | 0.78 | passed | ✓ |
-| `W6_priors_05` | priors | 138 | 1.45 | passed | ✓ |
-| `W6_priors_06` | priors | 138 | 2.9 | passed | ✓ |
-| `W6_priors_07` | priors | 151 | 3.31 | passed | ✓ |
-| `W6_priors_08` | priors | 158 | 2.53 | passed | ✓ |
-| `W6_priors_09` | priors | 160 | 3.12 | passed | ✓ |
-| `W6_priors_10` | priors | 137 | 3.65 | passed | ✓ |
-| `W6_priors_11` | priors | 144 | 2.78 | passed | ✓ |
-| `W6_priors_12` | priors | 139 | 2.88 | passed | ✓ |
-| `W6_priors_13` | priors | 60 | 5.0 | passed | ✓ |
+| `W0_scalar_defs` | engine | 32 | 100.0 | passed | ✓ |
+| `W1_bounds` | engine | 277 | 99.28 | passed | ✓ |
+| `W2_theorems` | engine | 54 | 94.44 | passed | ✓ |
+| `W3_domains` | engine | 43 | 97.67 | passed | ✓ |
+| `W4_cosmology` | engine | 64 | 90.62 | passed | ✓ |
+| `W5_bridge` | engine | 54 | 96.3 | passed | ✓ |
+| `W6_priors_00` | priors | 171 | 63.16 | passed | ✓ |
+| `W6_priors_01` | priors | 271 | 39.85 | passed | ✓ |
+| `W6_priors_02` | priors | 148 | 74.32 | passed | ✓ |
+| `W6_priors_03` | priors | 138 | 78.26 | passed | ✓ |
+| `W6_priors_04` | priors | 128 | 71.88 | passed | ✓ |
+| `W6_priors_05` | priors | 138 | 73.91 | passed | ✓ |
+| `W6_priors_06` | priors | 138 | 72.46 | passed | ✓ |
+| `W6_priors_07` | priors | 151 | 72.85 | passed | ✓ |
+| `W6_priors_08` | priors | 158 | 74.68 | passed | ✓ |
+| `W6_priors_09` | priors | 160 | 69.38 | passed | ✓ |
+| `W6_priors_10` | priors | 137 | 78.1 | passed | ✓ |
+| `W6_priors_11` | priors | 144 | 73.61 | passed | ✓ |
+| `W6_priors_12` | priors | 139 | 64.03 | passed | ✓ |
+| `W6_priors_13` | priors | 60 | 68.33 | passed | ✓ |
 
 ## Engine core modules
 
@@ -58,46 +58,20 @@ W6+ Priors batches (certificate-heavy by design)
 
 | Module | Theorem |
 |--------|---------|
-| `Bounds` | `gamma_euler_pos` |
-| `Bounds` | `pi_sub_one_pos` |
-| `Bounds` | `exp_neg_one_lt_368` |
-| `Bounds` | `log_08_gt_m0298` |
-| `Bounds` | `log_12_lt` |
-| `Bounds` | `sqrt_two_lt_14142135624` |
-| `Bounds` | `new_perceived_param_lt_031` |
-| `Bounds` | `new_perceived_param_lt_3009` |
-| `Bounds` | `new_perceived_param_lt_30032` |
-| `Bounds` | `new_perceived_param_pos` |
-| `Bounds` | `cosmological_perceived_adjust_eq_one` |
-| `Bounds` | `psi_con_pos` |
-| `Bounds` | `psi_con_eta_pos` |
-| `Bounds` | `sin_theta_s_nonneg` |
-| `Bounds` | `exp_1144_lt_31415` |
-| `Bounds` | `log_31415_gt_1144` |
-| `Bounds` | `log_pi_gt_11445` |
-| `Bounds` | `exp_049_gt_16181` |
-| `Bounds` | `log_16181_lt_04813` |
-| `Bounds` | `log_phi_lt_0482` |
-| `Bounds` | `eta_log_phi_lt_0225` |
-| `Bounds` | `exp_neg_185_lt_016` |
-| `Bounds` | `log_016_gt_m185` |
-| `Bounds` | `coherence_efficiency_gt_seven_tenths` |
-| `Bounds` | `log_five_lt_one_seven_seven` |
-| `Bounds` | `growth_term_cosmological_gt_one` |
 | `Bounds` | `sqrt_25_eq_five` |
 | `Bounds` | `sqrt_9_eq_3` |
-| `Bounds` | `cosmological_N_pos` |
-| `Bounds` | `cosmological_P_pos` |
-| `Bounds` | `phase_variance_abs_le_one` |
-| `Bounds` | `acoustic_bleed_lt_phi` |
-| `Bounds` | `sin_eq_cos_pi_div_two_sub` |
-| `Bounds` | `exp_04807_lt_1618` |
-| `Bounds` | `log_1618_gt_04807` |
-| `Bounds` | `exp_01534_lt_1168` |
-| `Bounds` | `phase_variance_eq_cos_theta_s` |
-| `Bounds` | `log_31416_lt_1146` |
-| `Bounds` | `log_pi23847_lt_11453` |
-| `Bounds` | `exp_neg_1434_lt_24_div_25` |
+| `Cosmology` | `omega_b_h2_fsot_cached_pos` |
+| `CosmologyExtendedPriors` | `cosmology_extended_components_sum` |
+| `CosmologyExtendedPriors` | `cosmology_extended_within_le_total` |
+| `CosmologyHigherWavesPriors` | `cosmology_higher_waves_partition` |
+| `CosmologyLab` | `lambda_cdm_wave_partition` |
+| `CosmologyWave4` | `wave4_observable_count_pos` |
+| `Domains` | `dark_energy_delta_bounds` |
+| `LeanProofsBridge` | `lean_proofs_domain_proven_le_formal` |
+| `PhotonicForge` | `photonic_trinary_partition` |
+| `Theorems` | `cosmological_delta_bounds` |
+| `Theorems` | `cosmological_D_bounds` |
+| `Theorems` | `cmb_delta_bounds` |
 
 ## Reproduction
 

@@ -13,7 +13,7 @@ def heavy_ion_lab_synthesis_panel_observable_count : ℕ := 39
 def heavy_ion_lab_synthesis_panel_D_eff : ℕ := 13
 
 theorem heavy_ion_lab_synthesis_panel_observable_count_pos : 0 < heavy_ion_lab_synthesis_panel_observable_count := by
-  unfold heavy_ion_lab_synthesis_panel_observable_count; norm_num
+  unfold heavy_ion_lab_synthesis_panel_observable_count; decide
 
 theorem heavy_ion_lab_synthesis_panel_median_error_under_half_pct :
     (9.5e-05 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem heavy_ion_lab_synthesis_panel_bundle :
     (9.5e-05 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold heavy_ion_lab_synthesis_panel_observable_count; norm_num,
-    by unfold heavy_ion_lab_synthesis_panel_D_eff; norm_num,
+    by unfold heavy_ion_lab_synthesis_panel_observable_count; decide,
+    by unfold heavy_ion_lab_synthesis_panel_D_eff; decide,
     heavy_ion_lab_synthesis_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

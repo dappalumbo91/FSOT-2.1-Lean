@@ -18,18 +18,22 @@ def clinical_medicine_ext_beats_sota_headlines : ℕ := 2
 def clinical_medicine_ext_D_eff : ℕ := 15
 
 theorem clinical_medicine_ext_observable_count_pos : 0 < clinical_medicine_ext_observable_count := by
-  unfold clinical_medicine_ext_observable_count; norm_num
+  unfold clinical_medicine_ext_observable_count; decide
 
 theorem clinical_medicine_ext_pooled_median_under_half_pct :
     clinical_medicine_ext_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold clinical_medicine_ext_pooled_median_error_pct; norm_num
+  unfold clinical_medicine_ext_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem clinical_medicine_ext_headline_median_under_half_pct :
     clinical_medicine_ext_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold clinical_medicine_ext_headline_median_error_pct; norm_num
+  unfold clinical_medicine_ext_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem clinical_medicine_ext_beats_sota_headlines_pos : 0 < clinical_medicine_ext_beats_sota_headlines := by
-  unfold clinical_medicine_ext_beats_sota_headlines; norm_num
+  unfold clinical_medicine_ext_beats_sota_headlines; decide
 
 theorem clinical_medicine_ext_bundle :
     clinical_medicine_ext_observable_count = 260 ∧
@@ -38,7 +42,7 @@ theorem clinical_medicine_ext_bundle :
     0 < clinical_medicine_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨
-    by unfold clinical_medicine_ext_observable_count; norm_num,
+    by unfold clinical_medicine_ext_observable_count; decide,
     clinical_medicine_ext_pooled_median_under_half_pct,
     clinical_medicine_ext_headline_median_under_half_pct,
     clinical_medicine_ext_beats_sota_headlines_pos,

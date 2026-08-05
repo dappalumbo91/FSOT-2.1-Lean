@@ -20,11 +20,13 @@ def mpcorb_kepler_median_error_pct : ℝ := (1.5875572596619725e-06 : ℝ)
 def mpcorb_green_gate_flag : ℕ := 1
 
 theorem mpcorb_object_count_pos : 0 < mpcorb_object_count := by
-  unfold mpcorb_object_count; norm_num
+  unfold mpcorb_object_count; decide
 
 theorem mpcorb_pooled_median_under_half_pct :
     mpcorb_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold mpcorb_pooled_median_error_pct; norm_num
+  unfold mpcorb_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem mpcorb_pooled_median_under_tier_aspiration :
     mpcorb_pooled_median_error_pct < (0.05 : ℝ) := by
@@ -46,8 +48,8 @@ theorem mpcorb_minor_planet_catalog_bundle :
     mpcorb_green_gate_flag = 1 ∧
     raw_S (get_domain_params "astronomical") > 0 := by
   refine ⟨
-    by unfold mpcorb_object_count; norm_num,
-    by unfold mpcorb_D_eff; norm_num,
+    by unfold mpcorb_object_count; decide,
+    by unfold mpcorb_D_eff; decide,
     mpcorb_pooled_median_under_half_pct,
     mpcorb_pooled_median_under_tier_aspiration,
     mpcorb_kepler_integrity_under_ppm,

@@ -18,7 +18,7 @@ def kronos_best_fractional_error : ℝ := (1.644295e-07 : ℝ)
 def kronos_record_fractional_uncertainty : ℝ := (5.5e-19 : ℝ)
 
 theorem kronos_run_count_pos : 0 < kronos_run_count := by
-  unfold kronos_run_count; norm_num
+  unfold kronos_run_count; decide
 
 theorem kronos_best_fractional_error_positive : (0 : ℝ) < kronos_best_fractional_error := by
   unfold kronos_best_fractional_error; norm_num
@@ -34,7 +34,7 @@ theorem kronos_metrology_bundle :
     kronos_record_fractional_uncertainty = (5.5e-19 : ℝ) ∧
     (0 : ℝ) < raw_S (get_domain_params "medical") := by
   refine ⟨
-    by unfold kronos_run_count; norm_num,
+    by unfold kronos_run_count; decide,
     by unfold kronos_best_fractional_error; norm_num,
     by unfold kronos_record_fractional_uncertainty; norm_num,
     medical_raw_S_positive

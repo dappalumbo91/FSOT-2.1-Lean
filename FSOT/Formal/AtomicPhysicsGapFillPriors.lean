@@ -18,18 +18,22 @@ def atomic_physics_gap_fill_beats_sota_headlines : ℕ := 2
 def atomic_physics_gap_fill_D_eff : ℕ := 7
 
 theorem atomic_physics_gap_fill_observable_count_pos : 0 < atomic_physics_gap_fill_observable_count := by
-  unfold atomic_physics_gap_fill_observable_count; norm_num
+  unfold atomic_physics_gap_fill_observable_count; decide
 
 theorem atomic_physics_gap_fill_pooled_median_under_half_pct :
     atomic_physics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold atomic_physics_gap_fill_pooled_median_error_pct; norm_num
+  unfold atomic_physics_gap_fill_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem atomic_physics_gap_fill_headline_median_under_half_pct :
     atomic_physics_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold atomic_physics_gap_fill_headline_median_error_pct; norm_num
+  unfold atomic_physics_gap_fill_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem atomic_physics_gap_fill_beats_sota_headlines_pos : 0 < atomic_physics_gap_fill_beats_sota_headlines := by
-  unfold atomic_physics_gap_fill_beats_sota_headlines; norm_num
+  unfold atomic_physics_gap_fill_beats_sota_headlines; decide
 
 theorem atomic_physics_gap_fill_bundle :
     atomic_physics_gap_fill_observable_count = 80 ∧
@@ -38,7 +42,7 @@ theorem atomic_physics_gap_fill_bundle :
     0 < atomic_physics_gap_fill_beats_sota_headlines ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
-    by unfold atomic_physics_gap_fill_observable_count; norm_num,
+    by unfold atomic_physics_gap_fill_observable_count; decide,
     atomic_physics_gap_fill_pooled_median_under_half_pct,
     atomic_physics_gap_fill_headline_median_under_half_pct,
     atomic_physics_gap_fill_beats_sota_headlines_pos,

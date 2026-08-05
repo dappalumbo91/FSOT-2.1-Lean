@@ -25,7 +25,7 @@ theorem trinary_resonance_persist_positive : (0 : ℝ) < trinary_resonance_persi
   unfold trinary_resonance_persist; norm_num
 
 theorem trinary_metatron_pathways_pos : 0 < trinary_metatron_pathways := by
-  unfold trinary_metatron_pathways; norm_num
+  unfold trinary_metatron_pathways; decide
 
 /-- Bundle: Trinary Fluid v2 engine constants with consciousness-domain sign proxy. -/
 theorem trinary_fluid_priors_bundle :
@@ -37,7 +37,7 @@ theorem trinary_fluid_priors_bundle :
   refine ⟨
     by unfold trinary_ignition_coherence; norm_num,
     by unfold trinary_resonance_persist; norm_num,
-    by unfold trinary_metatron_pathways; norm_num,
+    by unfold trinary_metatron_pathways; decide,
     by unfold trinary_engine_accuracy_pct; norm_num,
     lab_consciousness_raw_S_positive
   ⟩

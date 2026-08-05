@@ -32,7 +32,7 @@ def neurolab_strict_empirical_records : ℕ := 7941
 def neurolab_brain_component_count : ℕ := 10
 
 theorem allen_cohort_cell_count_pos : 0 < allen_cohort_cell_count := by
-  unfold allen_cohort_cell_count; norm_num
+  unfold allen_cohort_cell_count; decide
 
 theorem allen_cohort_fi_median_rel_err_lt_thirty_pct : allen_cohort_fi_median_rel_err < (0.30 : ℝ) := by
   unfold allen_cohort_fi_median_rel_err; norm_num
@@ -59,10 +59,10 @@ theorem canonical_bridge_scale_gt_one : (1 : ℝ) < canonical_bridge_scale := by
   unfold canonical_bridge_scale; norm_num
 
 theorem neurolab_smiles_mapped_records_pos : 0 < neurolab_smiles_mapped_records := by
-  unfold neurolab_smiles_mapped_records; norm_num
+  unfold neurolab_smiles_mapped_records; decide
 
 theorem neurolab_strict_empirical_records_large : (7900 : ℕ) < neurolab_strict_empirical_records := by
-  unfold neurolab_strict_empirical_records; norm_num
+  unfold neurolab_strict_empirical_records; decide
 
 /-- Bundle: 2166-cell Allen cohort + hero FI + SMILES/NeuroLab bridge certificates. -/
 theorem neuron_cohort_priors_bundle :
@@ -80,7 +80,7 @@ theorem neuron_cohort_priors_bundle :
     neurolab_brain_component_count = 10 ∧
     (0 : ℝ) < raw_S (get_domain_params "neural") := by
   refine ⟨
-    by unfold allen_cohort_cell_count; norm_num,
+    by unfold allen_cohort_cell_count; decide,
     allen_cohort_fi_median_rel_err_lt_thirty_pct,
     allen_cohort_fi_pearson_r_gt_fifty_five,
     hero_certified_fi_mean_rel_err_lt_fifteen_pct,
@@ -89,9 +89,9 @@ theorem neuron_cohort_priors_bundle :
     hero_canonical_bridge_delta_lt_five_pct,
     canonical_bridge_scale_gt_one,
     cohort_canonical_scalar_min_positive,
-    by unfold neurolab_smiles_mapped_records; norm_num,
+    by unfold neurolab_smiles_mapped_records; decide,
     neurolab_strict_empirical_records_large,
-    by unfold neurolab_brain_component_count; norm_num,
+    by unfold neurolab_brain_component_count; decide,
     neural_raw_S_positive
   ⟩
 

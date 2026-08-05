@@ -16,7 +16,7 @@ def igem_live_fasta_median_error_pct : ℝ := (0.0 : ℝ)
 def igem_live_fasta_D_eff : ℕ := 14
 
 theorem igem_live_fasta_observable_count_pos : 0 < igem_live_fasta_observable_count := by
-  unfold igem_live_fasta_observable_count; norm_num
+  unfold igem_live_fasta_observable_count; decide
 
 theorem igem_live_fasta_median_error_under_five_pct :
     igem_live_fasta_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem igem_live_fasta_bundle :
     igem_live_fasta_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold igem_live_fasta_observable_count; norm_num,
-    by unfold igem_live_fasta_D_eff; norm_num,
+    by unfold igem_live_fasta_observable_count; decide,
+    by unfold igem_live_fasta_D_eff; decide,
     igem_live_fasta_median_error_under_five_pct,
     biological_raw_S_positive
   ⟩

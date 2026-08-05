@@ -16,7 +16,7 @@ def rcsb_pdb_structures_median_error_pct : ℝ := (0.022236 : ℝ)
 def rcsb_pdb_structures_D_eff : ℕ := 13
 
 theorem rcsb_pdb_structures_observable_count_pos : 0 < rcsb_pdb_structures_observable_count := by
-  unfold rcsb_pdb_structures_observable_count; norm_num
+  unfold rcsb_pdb_structures_observable_count; decide
 
 theorem rcsb_pdb_structures_median_error_under_five_pct :
     rcsb_pdb_structures_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem rcsb_pdb_structures_bundle :
     rcsb_pdb_structures_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨
-    by unfold rcsb_pdb_structures_observable_count; norm_num,
-    by unfold rcsb_pdb_structures_D_eff; norm_num,
+    by unfold rcsb_pdb_structures_observable_count; decide,
+    by unfold rcsb_pdb_structures_D_eff; decide,
     rcsb_pdb_structures_median_error_under_five_pct,
     medical_raw_S_positive
   ⟩

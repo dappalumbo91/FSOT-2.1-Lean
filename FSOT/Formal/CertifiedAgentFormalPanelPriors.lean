@@ -13,7 +13,7 @@ def certified_agent_formal_panel_observable_count : ℕ := 24
 def certified_agent_formal_panel_D_eff : ℕ := 14
 
 theorem certified_agent_formal_panel_observable_count_pos : 0 < certified_agent_formal_panel_observable_count := by
-  unfold certified_agent_formal_panel_observable_count; norm_num
+  unfold certified_agent_formal_panel_observable_count; decide
 
 theorem certified_agent_formal_panel_median_error_under_half_pct :
     (0.014767 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem certified_agent_formal_panel_bundle :
     (0.014767 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold certified_agent_formal_panel_observable_count; norm_num,
-    by unfold certified_agent_formal_panel_D_eff; norm_num,
+    by unfold certified_agent_formal_panel_observable_count; decide,
+    by unfold certified_agent_formal_panel_D_eff; decide,
     certified_agent_formal_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

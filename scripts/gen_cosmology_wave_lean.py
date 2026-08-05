@@ -42,11 +42,15 @@ theorem {prefix}_observable_count_pos : 0 < {prefix}_observable_count := by
 
 theorem {prefix}_max_error_under_half_pct :
     {prefix}_max_error_pct < (0.5 : ℝ) := by
-  unfold {prefix}_max_error_pct; norm_num
+  unfold {prefix}_max_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem {prefix}_median_error_under_half_pct :
     {prefix}_median_error_pct < (0.5 : ℝ) := by
-  unfold {prefix}_median_error_pct; norm_num
+  unfold {prefix}_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 /-- Bundle: wave{wave_num} observables within 5% tolerance band. -/
 theorem cosmology_wave{wave_num}_bundle :

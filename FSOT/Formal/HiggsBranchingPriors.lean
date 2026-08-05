@@ -18,10 +18,10 @@ def higgs_branching_median_error_pct : ℝ := (0.08808351263334355 : ℝ)
 def higgs_branching_max_error_pct : ℝ := (4.232801452006084 : ℝ)
 
 theorem higgs_compute_branching_count_pos : 0 < higgs_compute_branching_count := by
-  unfold higgs_compute_branching_count; norm_num
+  unfold higgs_compute_branching_count; decide
 
 theorem higgs_branching_observable_count_pos : 0 < higgs_branching_observable_count := by
-  unfold higgs_branching_observable_count; norm_num
+  unfold higgs_branching_observable_count; decide
 
 theorem higgs_branching_components_sum :
     higgs_compute_branching_count + higgs_thesis_target_count = higgs_branching_observable_count := by
@@ -29,7 +29,9 @@ theorem higgs_branching_components_sum :
 
 theorem higgs_branching_median_error_under_half_pct :
     higgs_branching_median_error_pct < (0.5 : ℝ) := by
-  unfold higgs_branching_median_error_pct; norm_num
+  unfold higgs_branching_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem higgs_branching_max_error_under_five_pct :
     higgs_branching_max_error_pct < (5 : ℝ) := by
@@ -45,9 +47,9 @@ theorem higgs_branching_bundle :
     higgs_branching_max_error_pct < (5 : ℝ) ∧
     (0 : ℝ) < raw_S (get_domain_params "higgs") := by
   refine ⟨
-    by unfold higgs_compute_branching_count; norm_num,
-    by unfold higgs_thesis_target_count; norm_num,
-    by unfold higgs_branching_observable_count; norm_num,
+    by unfold higgs_compute_branching_count; decide,
+    by unfold higgs_thesis_target_count; decide,
+    by unfold higgs_branching_observable_count; decide,
     higgs_branching_components_sum,
     higgs_branching_median_error_under_half_pct,
     higgs_branching_max_error_under_five_pct,

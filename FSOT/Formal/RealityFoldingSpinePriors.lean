@@ -13,7 +13,7 @@ def reality_folding_spine_observable_count : ℕ := 24
 def reality_folding_spine_D_eff : ℕ := 21
 
 theorem reality_folding_spine_observable_count_pos : 0 < reality_folding_spine_observable_count := by
-  unfold reality_folding_spine_observable_count; norm_num
+  unfold reality_folding_spine_observable_count; decide
 
 theorem reality_folding_spine_median_error_under_half_pct :
     (0.023914275640537417 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem reality_folding_spine_bundle :
     (0.023914275640537417 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold reality_folding_spine_observable_count; norm_num,
-    by unfold reality_folding_spine_D_eff; norm_num,
+    by unfold reality_folding_spine_observable_count; decide,
+    by unfold reality_folding_spine_D_eff; decide,
     reality_folding_spine_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

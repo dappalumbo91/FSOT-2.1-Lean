@@ -20,21 +20,25 @@ def materials_engineering_headline_median_error_pct : ℝ := (0.0271703349474350
 def materials_engineering_beats_sota_headlines : ℕ := 6
 
 theorem materials_engineering_observable_count_pos : 0 < materials_engineering_observable_count := by
-  unfold materials_engineering_observable_count; norm_num
+  unfold materials_engineering_observable_count; decide
 
 theorem materials_engineering_section_count_pos : 0 < materials_engineering_section_count := by
-  unfold materials_engineering_section_count; norm_num
+  unfold materials_engineering_section_count; decide
 
 theorem materials_engineering_pooled_median_under_half_pct :
     materials_engineering_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold materials_engineering_pooled_median_error_pct; norm_num
+  unfold materials_engineering_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem materials_engineering_headline_median_under_half_pct :
     materials_engineering_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold materials_engineering_headline_median_error_pct; norm_num
+  unfold materials_engineering_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem materials_engineering_beats_sota_headlines_pos : 0 < materials_engineering_beats_sota_headlines := by
-  unfold materials_engineering_beats_sota_headlines; norm_num
+  unfold materials_engineering_beats_sota_headlines; decide
 
 /-- Bundle: Materials Engineering mechanical/thermal SMILES with material/energy maps. -/
 theorem materials_engineering_bundle :
@@ -46,9 +50,9 @@ theorem materials_engineering_bundle :
     0 < materials_engineering_beats_sota_headlines ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨
-    by unfold materials_engineering_observable_count; norm_num,
-    by unfold materials_engineering_section_count; norm_num,
-    by unfold materials_engineering_D_eff; norm_num,
+    by unfold materials_engineering_observable_count; decide,
+    by unfold materials_engineering_section_count; decide,
+    by unfold materials_engineering_D_eff; decide,
     materials_engineering_pooled_median_under_half_pct,
     materials_engineering_headline_median_under_half_pct,
     materials_engineering_beats_sota_headlines_pos,

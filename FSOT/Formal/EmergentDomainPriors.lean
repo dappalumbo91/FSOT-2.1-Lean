@@ -18,7 +18,7 @@ def emergent_final_emergence_health : ℝ := (0.8547351151068473 : ℝ)
 def emergent_final_meta_S : ℝ := (0.32988227338082093 : ℝ)
 
 theorem emergent_domain_count_pos : 0 < emergent_domain_count := by
-  unfold emergent_domain_count; norm_num
+  unfold emergent_domain_count; decide
 
 theorem emergent_observed_le_total :
     emergent_observed_domain_count ≤ emergent_domain_count := by
@@ -39,8 +39,8 @@ theorem emergent_domain_priors_bundle :
     emergent_final_meta_S = (0.32988227338082093 : ℝ) ∧
     (0 : ℝ) < raw_S (get_domain_params "quantum") := by
   refine ⟨
-    by unfold emergent_domain_count; norm_num,
-    by unfold emergent_observed_domain_count; norm_num,
+    by unfold emergent_domain_count; decide,
+    by unfold emergent_observed_domain_count; decide,
     emergent_observed_le_total,
     by unfold emergent_final_emergence_health; norm_num,
     by unfold emergent_final_meta_S; norm_num,

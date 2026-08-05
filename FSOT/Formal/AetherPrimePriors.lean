@@ -24,10 +24,10 @@ def aether_eta_eff_solver : ℝ := (0.466942 : ℝ)
 def aether_golden_angle_solver_deg : ℝ := (137.507764 : ℝ)
 
 theorem aether_distill_row_count_pos : 0 < aether_distill_row_count := by
-  unfold aether_distill_row_count; norm_num
+  unfold aether_distill_row_count; decide
 
 theorem aether_solver_op_count_eq_six : aether_solver_op_count = 6 := by
-  unfold aether_solver_op_count; norm_num
+  unfold aether_solver_op_count; decide
 
 theorem aether_psi_con_solver_in_bounds : (0.632 : ℝ) < aether_psi_con_solver ∧ aether_psi_con_solver < (0.633 : ℝ) := by
   unfold aether_psi_con_solver
@@ -51,7 +51,7 @@ theorem aether_prime_priors_bundle :
     (137 : ℝ) < aether_golden_angle_solver_deg ∧
     (0 : ℕ) < aether_distill_row_count := by
   refine ⟨
-    by unfold aether_distill_row_count; norm_num,
+    by unfold aether_distill_row_count; decide,
     aether_solver_op_count_eq_six,
     aether_psi_con_solver_in_bounds.1,
     aether_psi_con_solver_in_bounds.2,

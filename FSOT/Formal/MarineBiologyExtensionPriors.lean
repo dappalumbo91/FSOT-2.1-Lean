@@ -18,18 +18,22 @@ def marine_biology_ext_beats_sota_headlines : ℕ := 2
 def marine_biology_ext_D_eff : ℕ := 15
 
 theorem marine_biology_ext_observable_count_pos : 0 < marine_biology_ext_observable_count := by
-  unfold marine_biology_ext_observable_count; norm_num
+  unfold marine_biology_ext_observable_count; decide
 
 theorem marine_biology_ext_pooled_median_under_half_pct :
     marine_biology_ext_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold marine_biology_ext_pooled_median_error_pct; norm_num
+  unfold marine_biology_ext_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem marine_biology_ext_headline_median_under_half_pct :
     marine_biology_ext_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold marine_biology_ext_headline_median_error_pct; norm_num
+  unfold marine_biology_ext_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem marine_biology_ext_beats_sota_headlines_pos : 0 < marine_biology_ext_beats_sota_headlines := by
-  unfold marine_biology_ext_beats_sota_headlines; norm_num
+  unfold marine_biology_ext_beats_sota_headlines; decide
 
 theorem marine_biology_ext_bundle :
     marine_biology_ext_observable_count = 540 ∧
@@ -38,7 +42,7 @@ theorem marine_biology_ext_bundle :
     0 < marine_biology_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold marine_biology_ext_observable_count; norm_num,
+    by unfold marine_biology_ext_observable_count; decide,
     marine_biology_ext_pooled_median_under_half_pct,
     marine_biology_ext_headline_median_under_half_pct,
     marine_biology_ext_beats_sota_headlines_pos,

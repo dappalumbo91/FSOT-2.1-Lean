@@ -13,7 +13,7 @@ def z120_z126_beam_synthesis_panel_observable_count : ℕ := 20
 def z120_z126_beam_synthesis_panel_D_eff : ℕ := 20
 
 theorem z120_z126_beam_synthesis_panel_observable_count_pos : 0 < z120_z126_beam_synthesis_panel_observable_count := by
-  unfold z120_z126_beam_synthesis_panel_observable_count; norm_num
+  unfold z120_z126_beam_synthesis_panel_observable_count; decide
 
 theorem z120_z126_beam_synthesis_panel_median_error_under_half_pct :
     (9.5e-05 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem z120_z126_beam_synthesis_panel_bundle :
     (9.5e-05 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold z120_z126_beam_synthesis_panel_observable_count; norm_num,
-    by unfold z120_z126_beam_synthesis_panel_D_eff; norm_num,
+    by unfold z120_z126_beam_synthesis_panel_observable_count; decide,
+    by unfold z120_z126_beam_synthesis_panel_D_eff; decide,
     z120_z126_beam_synthesis_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

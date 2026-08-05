@@ -18,23 +18,27 @@ def exoplanet_archive_depth_open_headline_median_error_pct : ℝ := (0.023015 : 
 def exoplanet_archive_depth_open_D_eff : ℕ := 16
 
 theorem exoplanet_archive_depth_open_observable_count_pos : 0 < exoplanet_archive_depth_open_observable_count := by
-  unfold exoplanet_archive_depth_open_observable_count; norm_num
+  unfold exoplanet_archive_depth_open_observable_count; decide
 
 theorem exoplanet_archive_depth_open_pooled_median_under_half_pct :
     exoplanet_archive_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold exoplanet_archive_depth_open_pooled_median_error_pct; norm_num
+  unfold exoplanet_archive_depth_open_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem exoplanet_archive_depth_open_headline_median_under_half_pct :
     exoplanet_archive_depth_open_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold exoplanet_archive_depth_open_headline_median_error_pct; norm_num
+  unfold exoplanet_archive_depth_open_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem exoplanet_archive_depth_open_bundle :
     exoplanet_archive_depth_open_observable_count = 1976 ∧
     exoplanet_archive_depth_open_D_eff = 16 ∧
     exoplanet_archive_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
-  · unfold exoplanet_archive_depth_open_observable_count; norm_num
-  · unfold exoplanet_archive_depth_open_D_eff; norm_num
+  · unfold exoplanet_archive_depth_open_observable_count; decide
+  · unfold exoplanet_archive_depth_open_D_eff; decide
   · exact exoplanet_archive_depth_open_pooled_median_under_half_pct
 
 end

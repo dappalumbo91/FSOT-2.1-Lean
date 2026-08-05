@@ -18,18 +18,22 @@ def virology_ext_beats_sota_headlines : ℕ := 2
 def virology_ext_D_eff : ℕ := 14
 
 theorem virology_ext_observable_count_pos : 0 < virology_ext_observable_count := by
-  unfold virology_ext_observable_count; norm_num
+  unfold virology_ext_observable_count; decide
 
 theorem virology_ext_pooled_median_under_half_pct :
     virology_ext_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold virology_ext_pooled_median_error_pct; norm_num
+  unfold virology_ext_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem virology_ext_headline_median_under_half_pct :
     virology_ext_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold virology_ext_headline_median_error_pct; norm_num
+  unfold virology_ext_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem virology_ext_beats_sota_headlines_pos : 0 < virology_ext_beats_sota_headlines := by
-  unfold virology_ext_beats_sota_headlines; norm_num
+  unfold virology_ext_beats_sota_headlines; decide
 
 theorem virology_ext_bundle :
     virology_ext_observable_count = 163 ∧
@@ -38,7 +42,7 @@ theorem virology_ext_bundle :
     0 < virology_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨
-    by unfold virology_ext_observable_count; norm_num,
+    by unfold virology_ext_observable_count; decide,
     virology_ext_pooled_median_under_half_pct,
     virology_ext_headline_median_under_half_pct,
     virology_ext_beats_sota_headlines_pos,

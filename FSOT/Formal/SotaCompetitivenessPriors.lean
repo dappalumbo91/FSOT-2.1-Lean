@@ -23,18 +23,18 @@ def sota_fsot_free_parameters : ℕ := 0
 
 theorem sota_beats_majority :
     (32 : ℕ) < sota_domains_beats := by
-  unfold sota_domains_beats; norm_num
+  unfold sota_domains_beats; decide
 
 theorem sota_meets_or_beats_large :
     (32 : ℕ) < sota_domains_meets_or_beats := by
-  unfold sota_domains_meets_or_beats; norm_num
+  unfold sota_domains_meets_or_beats; decide
 
 theorem sota_below_bounded :
     sota_domains_below ≤ (5 : ℕ) := by
-  unfold sota_domains_below; norm_num
+  unfold sota_domains_below; decide
 
 theorem sota_zero_free_parameters :
     sota_fsot_free_parameters = 0 := by
-  unfold sota_fsot_free_parameters; norm_num
+  unfold sota_fsot_free_parameters; decide
 
 end

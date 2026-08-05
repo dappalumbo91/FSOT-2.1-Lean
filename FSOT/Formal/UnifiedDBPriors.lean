@@ -23,13 +23,13 @@ theorem unified_db_strict_le_total :
   unfold unified_db_strict_empirical unified_db_total_candidates; norm_num
 
 theorem unified_db_evaluation_ok_pos : 0 < unified_db_evaluation_ok := by
-  unfold unified_db_evaluation_ok; norm_num
+  unfold unified_db_evaluation_ok; decide
 
 theorem unified_db_records_total_pos : 0 < unified_db_records_total := by
-  unfold unified_db_records_total; norm_num
+  unfold unified_db_records_total; decide
 
 theorem unified_db_top_project_count_pos : 0 < unified_db_top_project_count := by
-  unfold unified_db_top_project_count; norm_num
+  unfold unified_db_top_project_count; decide
 
 /-- Bundle: 30k+ indexed records with 13k+ candidates and molecular-domain sign proxy. -/
 theorem unified_db_meta_bundle :
@@ -41,11 +41,11 @@ theorem unified_db_meta_bundle :
     unified_db_strict_empirical ≤ unified_db_total_candidates ∧
     (0 : ℝ) < raw_S (get_domain_params "molecular") := by
   refine ⟨
-    by unfold unified_db_total_candidates; norm_num,
-    by unfold unified_db_strict_empirical; norm_num,
-    by unfold unified_db_evaluation_ok; norm_num,
-    by unfold unified_db_records_total; norm_num,
-    by unfold unified_db_top_project_count; norm_num,
+    by unfold unified_db_total_candidates; decide,
+    by unfold unified_db_strict_empirical; decide,
+    by unfold unified_db_evaluation_ok; decide,
+    by unfold unified_db_records_total; decide,
+    by unfold unified_db_top_project_count; decide,
     unified_db_strict_le_total,
     lab_molecular_raw_S_positive
   ⟩

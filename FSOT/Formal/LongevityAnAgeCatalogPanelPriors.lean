@@ -16,7 +16,7 @@ def longevity_anage_catalog_median_error_pct : ℝ := (0.022236 : ℝ)
 def longevity_anage_catalog_D_eff : ℕ := 20
 
 theorem longevity_anage_catalog_observable_count_pos : 0 < longevity_anage_catalog_observable_count := by
-  unfold longevity_anage_catalog_observable_count; norm_num
+  unfold longevity_anage_catalog_observable_count; decide
 
 theorem longevity_anage_catalog_median_error_under_five_pct :
     longevity_anage_catalog_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem longevity_anage_catalog_bundle :
     longevity_anage_catalog_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold longevity_anage_catalog_observable_count; norm_num,
-    by unfold longevity_anage_catalog_D_eff; norm_num,
+    by unfold longevity_anage_catalog_observable_count; decide,
+    by unfold longevity_anage_catalog_D_eff; decide,
     longevity_anage_catalog_median_error_under_five_pct,
     biological_raw_S_positive
   ⟩

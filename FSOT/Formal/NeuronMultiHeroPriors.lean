@@ -18,11 +18,13 @@ def neuron_multi_hero_median_fi_proxy_rel_err_pct : ℝ := (0.0 : ℝ)
 def neuron_multi_hero_D_eff : ℕ := 14
 
 theorem neuron_multi_hero_count_pos : 0 < neuron_multi_hero_count := by
-  unfold neuron_multi_hero_count; norm_num
+  unfold neuron_multi_hero_count; decide
 
 theorem neuron_multi_hero_median_error_under_half_pct :
     neuron_multi_hero_median_error_pct < (0.5 : ℝ) := by
-  unfold neuron_multi_hero_median_error_pct; norm_num
+  unfold neuron_multi_hero_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem neuron_multi_hero_median_fi_under_thirty_pct :
     neuron_multi_hero_median_fi_proxy_rel_err_pct < (30 : ℝ) := by
@@ -36,9 +38,9 @@ theorem neuron_multi_hero_bundle :
     neuron_multi_hero_median_fi_proxy_rel_err_pct < (30 : ℝ) ∧
     raw_S (get_domain_params "neural") > 0 := by
   refine ⟨
-    by unfold neuron_multi_hero_count; norm_num,
-    by unfold neuron_multi_hero_stratum_count; norm_num,
-    by unfold neuron_multi_hero_D_eff; norm_num,
+    by unfold neuron_multi_hero_count; decide,
+    by unfold neuron_multi_hero_stratum_count; decide,
+    by unfold neuron_multi_hero_D_eff; decide,
     neuron_multi_hero_median_error_under_half_pct,
     neuron_multi_hero_median_fi_under_thirty_pct,
     neural_raw_S_positive

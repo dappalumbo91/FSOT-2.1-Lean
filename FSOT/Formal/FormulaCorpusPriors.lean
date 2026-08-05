@@ -18,7 +18,7 @@ def formula_corpus_within_target_2pct : ℕ := 6921
 def formula_corpus_within_tolerable_5pct : ℕ := 7941
 
 theorem formula_corpus_records_total_pos : 0 < formula_corpus_records_total := by
-  unfold formula_corpus_records_total; norm_num
+  unfold formula_corpus_records_total; decide
 
 theorem formula_corpus_matched_le_total :
     formula_corpus_matched_count ≤ formula_corpus_records_total := by
@@ -42,10 +42,10 @@ theorem formula_corpus_strict_empirical_bundle :
     formula_corpus_within_target_2pct ≤ formula_corpus_within_tolerable_5pct ∧
     (0 : ℝ) < raw_S (get_domain_params "molecular") := by
   refine ⟨
-    by unfold formula_corpus_records_total; norm_num,
-    by unfold formula_corpus_matched_count; norm_num,
-    by unfold formula_corpus_within_target_2pct; norm_num,
-    by unfold formula_corpus_within_tolerable_5pct; norm_num,
+    by unfold formula_corpus_records_total; decide,
+    by unfold formula_corpus_matched_count; decide,
+    by unfold formula_corpus_within_target_2pct; decide,
+    by unfold formula_corpus_within_tolerable_5pct; decide,
     formula_corpus_matched_le_total,
     formula_corpus_target_le_tolerable,
     molecular_raw_S_positive

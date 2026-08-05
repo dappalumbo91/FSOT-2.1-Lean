@@ -16,11 +16,13 @@ def dzhanibekov_intermediate_axis_fsot_panel_median_error_pct : ℝ := (0.0 : �
 def dzhanibekov_intermediate_axis_fsot_panel_D_eff : ℕ := 12
 
 theorem dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos : 0 < dzhanibekov_intermediate_axis_fsot_panel_observable_count := by
-  unfold dzhanibekov_intermediate_axis_fsot_panel_observable_count; norm_num
+  unfold dzhanibekov_intermediate_axis_fsot_panel_observable_count; decide
 
 theorem dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct :
     dzhanibekov_intermediate_axis_fsot_panel_median_error_pct < (0.5 : ℝ) := by
-  unfold dzhanibekov_intermediate_axis_fsot_panel_median_error_pct; norm_num
+  unfold dzhanibekov_intermediate_axis_fsot_panel_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem dzhanibekov_intermediate_axis_fsot_panel_bundle :
     dzhanibekov_intermediate_axis_fsot_panel_observable_count = 32 ∧
@@ -28,8 +30,8 @@ theorem dzhanibekov_intermediate_axis_fsot_panel_bundle :
     dzhanibekov_intermediate_axis_fsot_panel_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold dzhanibekov_intermediate_axis_fsot_panel_observable_count; norm_num,
-    by unfold dzhanibekov_intermediate_axis_fsot_panel_D_eff; norm_num,
+    by unfold dzhanibekov_intermediate_axis_fsot_panel_observable_count; decide,
+    by unfold dzhanibekov_intermediate_axis_fsot_panel_D_eff; decide,
     dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

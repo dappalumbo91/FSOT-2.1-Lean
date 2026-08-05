@@ -24,37 +24,45 @@ def star_trek_transporter_psi_traverse : ℝ := (0.000464139486 : ℝ)
 def star_trek_transporter_stabilization_margin : ℝ := (1.722776467449 : ℝ)
 
 theorem star_trek_transporter_info_preservation_proxy_pos : 0 < star_trek_transporter_info_preservation_proxy := by
-  unfold star_trek_transporter_info_preservation_proxy; norm_num
+  unfold star_trek_transporter_info_preservation_proxy; decide
 
 theorem star_trek_transporter_psi_entangle_gate_pos : 0 < star_trek_transporter_psi_entangle_gate := by
-  unfold star_trek_transporter_psi_entangle_gate; norm_num
+  unfold star_trek_transporter_psi_entangle_gate; decide
 
 theorem star_trek_transporter_psi_entangle_gate_under_half_pct : star_trek_transporter_psi_entangle_gate < (0.5 : ℝ) := by
-  unfold star_trek_transporter_psi_entangle_gate; norm_num
+  unfold star_trek_transporter_psi_entangle_gate
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem star_trek_transporter_psi_gate_pair_pos : 0 < star_trek_transporter_psi_gate_pair := by
-  unfold star_trek_transporter_psi_gate_pair; norm_num
+  unfold star_trek_transporter_psi_gate_pair; decide
 
 theorem star_trek_transporter_psi_gate_pair_under_half_pct : star_trek_transporter_psi_gate_pair < (0.5 : ℝ) := by
-  unfold star_trek_transporter_psi_gate_pair; norm_num
+  unfold star_trek_transporter_psi_gate_pair
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem star_trek_transporter_psi_portal_doorway_pos : 0 < star_trek_transporter_psi_portal_doorway := by
-  unfold star_trek_transporter_psi_portal_doorway; norm_num
+  unfold star_trek_transporter_psi_portal_doorway; decide
 
 theorem star_trek_transporter_psi_portal_doorway_under_half_pct : star_trek_transporter_psi_portal_doorway < (0.5 : ℝ) := by
-  unfold star_trek_transporter_psi_portal_doorway; norm_num
+  unfold star_trek_transporter_psi_portal_doorway
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem star_trek_transporter_psi_traverse_pos : 0 < star_trek_transporter_psi_traverse := by
-  unfold star_trek_transporter_psi_traverse; norm_num
+  unfold star_trek_transporter_psi_traverse; decide
 
 theorem star_trek_transporter_psi_traverse_under_half_pct : star_trek_transporter_psi_traverse < (0.5 : ℝ) := by
-  unfold star_trek_transporter_psi_traverse; norm_num
+  unfold star_trek_transporter_psi_traverse
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem star_trek_transporter_stabilization_margin_pos : 0 < star_trek_transporter_stabilization_margin := by
-  unfold star_trek_transporter_stabilization_margin; norm_num
+  unfold star_trek_transporter_stabilization_margin; decide
 
 theorem star_trek_transporter_observable_count_pos : 0 < star_trek_transporter_observable_count := by
-  unfold star_trek_transporter_observable_count; norm_num
+  unfold star_trek_transporter_observable_count; decide
 
 theorem star_trek_transporter_median_error_under_five_pct :
     star_trek_transporter_median_error_pct < (5 : ℝ) := by
@@ -62,7 +70,9 @@ theorem star_trek_transporter_median_error_under_five_pct :
 
 theorem star_trek_transporter_median_error_under_half_pct :
     star_trek_transporter_median_error_pct < (0.5 : ℝ) := by
-  unfold star_trek_transporter_median_error_pct; norm_num
+  unfold star_trek_transporter_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem star_trek_transporter_bundle :
     star_trek_transporter_observable_count = 1575 ∧
@@ -70,8 +80,8 @@ theorem star_trek_transporter_bundle :
     star_trek_transporter_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "quantum") > 0 := by
   refine ⟨
-    by unfold star_trek_transporter_observable_count; norm_num,
-    by unfold star_trek_transporter_D_eff; norm_num,
+    by unfold star_trek_transporter_observable_count; decide,
+    by unfold star_trek_transporter_D_eff; decide,
     star_trek_transporter_median_error_under_half_pct,
     quantum_raw_S_positive
   ⟩

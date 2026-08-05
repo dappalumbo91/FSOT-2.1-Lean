@@ -119,12 +119,12 @@ lemma alpha_s_MZ_lt_one : alpha_s_MZ < (1 : ℝ) := by
 
 lemma S_cosm_cached_neg : S_cosm_cached < 0 := by
   unfold S_cosm_cached
-  norm_num
+  linarith
 
 lemma S_cosm_cached_bounds :
     (-0.502456 : ℝ) < S_cosm_cached ∧ S_cosm_cached < (-0.502455 : ℝ) := by
   unfold S_cosm_cached
-  constructor <;> norm_num
+  constructor <;> linarith
 
 lemma S_cosm_cached_abs_bounds :
     (0.502455 : ℝ) < |S_cosm_cached| ∧ |S_cosm_cached| < (0.502456 : ℝ) := by
@@ -296,12 +296,12 @@ lemma p_base_pos : (0 : ℝ) < p_base := by
 
 lemma delta_lambda_cosm_pos : (0 : ℝ) < delta_lambda_cosm := by
   unfold delta_lambda_cosm
-  norm_num
+  linarith
 
 /-- Baryon-drag shift is small enough to keep r_d in the observed Mpc band (algebraic bound). -/
 lemma delta_lambda_cosm_lt_one : delta_lambda_cosm < (1 : ℝ) := by
   unfold delta_lambda_cosm
-  norm_num
+  linarith
 
 /-- Baryon drag horizon lies in the observation band around 147.52 Mpc.
    Interval certificate: r_d ∈ (147.48, 147.55), hence |r_d − 147.52| < 0.05. -/

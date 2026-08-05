@@ -16,7 +16,7 @@ def nist_codata_constants_median_error_pct : ℝ := (0.0 : ℝ)
 def nist_codata_constants_D_eff : ℕ := 7
 
 theorem nist_codata_constants_observable_count_pos : 0 < nist_codata_constants_observable_count := by
-  unfold nist_codata_constants_observable_count; norm_num
+  unfold nist_codata_constants_observable_count; decide
 
 theorem nist_codata_constants_median_error_under_five_pct :
     nist_codata_constants_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem nist_codata_constants_bundle :
     nist_codata_constants_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
-    by unfold nist_codata_constants_observable_count; norm_num,
-    by unfold nist_codata_constants_D_eff; norm_num,
+    by unfold nist_codata_constants_observable_count; decide,
+    by unfold nist_codata_constants_D_eff; decide,
     nist_codata_constants_median_error_under_five_pct,
     particle_raw_S_positive
   ⟩

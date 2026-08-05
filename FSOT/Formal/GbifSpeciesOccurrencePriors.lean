@@ -16,7 +16,7 @@ def gbif_species_occurrence_median_error_pct : ℝ := (0.006006 : ℝ)
 def gbif_species_occurrence_D_eff : ℕ := 15
 
 theorem gbif_species_occurrence_observable_count_pos : 0 < gbif_species_occurrence_observable_count := by
-  unfold gbif_species_occurrence_observable_count; norm_num
+  unfold gbif_species_occurrence_observable_count; decide
 
 theorem gbif_species_occurrence_median_error_under_five_pct :
     gbif_species_occurrence_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem gbif_species_occurrence_bundle :
     gbif_species_occurrence_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold gbif_species_occurrence_observable_count; norm_num,
-    by unfold gbif_species_occurrence_D_eff; norm_num,
+    by unfold gbif_species_occurrence_observable_count; decide,
+    by unfold gbif_species_occurrence_D_eff; decide,
     gbif_species_occurrence_median_error_under_five_pct,
     biological_raw_S_positive
   ⟩

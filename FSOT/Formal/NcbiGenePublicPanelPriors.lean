@@ -13,7 +13,7 @@ def ncbi_gene_public_panel_observable_count : ℕ := 48
 def ncbi_gene_public_panel_D_eff : ℕ := 12
 
 theorem ncbi_gene_public_panel_observable_count_pos : 0 < ncbi_gene_public_panel_observable_count := by
-  unfold ncbi_gene_public_panel_observable_count; norm_num
+  unfold ncbi_gene_public_panel_observable_count; decide
 
 theorem ncbi_gene_public_panel_median_error_under_half_pct :
     (0.025571999999999998 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem ncbi_gene_public_panel_bundle :
     (0.025571999999999998 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold ncbi_gene_public_panel_observable_count; norm_num,
-    by unfold ncbi_gene_public_panel_D_eff; norm_num,
+    by unfold ncbi_gene_public_panel_observable_count; decide,
+    by unfold ncbi_gene_public_panel_D_eff; decide,
     ncbi_gene_public_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

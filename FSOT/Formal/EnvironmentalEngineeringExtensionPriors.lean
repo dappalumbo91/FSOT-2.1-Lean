@@ -18,18 +18,22 @@ def environmental_engineering_ext_beats_sota_headlines : ℕ := 2
 def environmental_engineering_ext_D_eff : ℕ := 17
 
 theorem environmental_engineering_ext_observable_count_pos : 0 < environmental_engineering_ext_observable_count := by
-  unfold environmental_engineering_ext_observable_count; norm_num
+  unfold environmental_engineering_ext_observable_count; decide
 
 theorem environmental_engineering_ext_pooled_median_under_half_pct :
     environmental_engineering_ext_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold environmental_engineering_ext_pooled_median_error_pct; norm_num
+  unfold environmental_engineering_ext_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem environmental_engineering_ext_headline_median_under_half_pct :
     environmental_engineering_ext_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold environmental_engineering_ext_headline_median_error_pct; norm_num
+  unfold environmental_engineering_ext_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem environmental_engineering_ext_beats_sota_headlines_pos : 0 < environmental_engineering_ext_beats_sota_headlines := by
-  unfold environmental_engineering_ext_beats_sota_headlines; norm_num
+  unfold environmental_engineering_ext_beats_sota_headlines; decide
 
 theorem environmental_engineering_ext_bundle :
     environmental_engineering_ext_observable_count = 18416 ∧
@@ -38,7 +42,7 @@ theorem environmental_engineering_ext_bundle :
     0 < environmental_engineering_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold environmental_engineering_ext_observable_count; norm_num,
+    by unfold environmental_engineering_ext_observable_count; decide,
     environmental_engineering_ext_pooled_median_under_half_pct,
     environmental_engineering_ext_headline_median_under_half_pct,
     environmental_engineering_ext_beats_sota_headlines_pos,

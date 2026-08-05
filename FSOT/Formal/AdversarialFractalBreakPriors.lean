@@ -19,25 +19,29 @@ def adv_brk_D_eff : ℕ := 17
 def adv_brk_detection_rate_centipercent : ℕ := 100
 
 theorem adv_brk_observable_count_pos : 0 < adv_brk_observable_count := by
-  unfold adv_brk_observable_count; norm_num
+  unfold adv_brk_observable_count; decide
 
 theorem adv_brk_pooled_median_under_half_pct :
     adv_brk_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold adv_brk_pooled_median_error_pct; norm_num
+  unfold adv_brk_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem adv_brk_headline_median_under_half_pct :
     adv_brk_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold adv_brk_headline_median_error_pct; norm_num
+  unfold adv_brk_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem adv_brk_beats_sota_headlines_pos : 0 < adv_brk_beats_sota_headlines := by
-  unfold adv_brk_beats_sota_headlines; norm_num
+  unfold adv_brk_beats_sota_headlines; decide
 
 theorem adv_brk_bundle :
     adv_brk_observable_count = 13 ∧
     adv_brk_pooled_median_error_pct < (0.5 : ℝ) ∧
     adv_brk_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
-  · unfold adv_brk_observable_count; norm_num
+  · unfold adv_brk_observable_count; decide
   · exact adv_brk_pooled_median_under_half_pct
   · exact adv_brk_beats_sota_headlines_pos
 

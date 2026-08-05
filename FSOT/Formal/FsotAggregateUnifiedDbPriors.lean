@@ -16,7 +16,7 @@ def fsot_aggregate_unified_db_median_error_pct : ℝ := (0.0 : ℝ)
 def fsot_aggregate_unified_db_D_eff : ℕ := 17
 
 theorem fsot_aggregate_unified_db_observable_count_pos : 0 < fsot_aggregate_unified_db_observable_count := by
-  unfold fsot_aggregate_unified_db_observable_count; norm_num
+  unfold fsot_aggregate_unified_db_observable_count; decide
 
 theorem fsot_aggregate_unified_db_median_error_under_five_pct :
     fsot_aggregate_unified_db_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem fsot_aggregate_unified_db_bundle :
     fsot_aggregate_unified_db_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
-    by unfold fsot_aggregate_unified_db_observable_count; norm_num,
-    by unfold fsot_aggregate_unified_db_D_eff; norm_num,
+    by unfold fsot_aggregate_unified_db_observable_count; decide,
+    by unfold fsot_aggregate_unified_db_D_eff; decide,
     fsot_aggregate_unified_db_median_error_under_five_pct,
     particle_raw_S_positive
   ⟩

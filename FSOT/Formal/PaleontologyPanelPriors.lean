@@ -13,7 +13,7 @@ def paleontology_panel_observable_count : ℕ := 120
 def paleontology_panel_D_eff : ℕ := 18
 
 theorem paleontology_panel_observable_count_pos : 0 < paleontology_panel_observable_count := by
-  unfold paleontology_panel_observable_count; norm_num
+  unfold paleontology_panel_observable_count; decide
 
 theorem paleontology_panel_median_error_under_half_pct :
     (0.0167305 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem paleontology_panel_bundle :
     (0.0167305 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold paleontology_panel_observable_count; norm_num,
-    by unfold paleontology_panel_D_eff; norm_num,
+    by unfold paleontology_panel_observable_count; decide,
+    by unfold paleontology_panel_D_eff; decide,
     paleontology_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

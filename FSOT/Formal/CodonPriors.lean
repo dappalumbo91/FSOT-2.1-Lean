@@ -23,7 +23,7 @@ def stop_codon_count_cert : ℕ := 3
 
 theorem codon_table_count_eq_sixty_four :
     codon_table_count = 64 := by
-  unfold codon_table_count; norm_num
+  unfold codon_table_count; decide
 
 theorem codon_primary_pattern_space_eq_eight :
     (2 : ℝ) ^ 3 = 8 := by norm_num
@@ -1023,7 +1023,7 @@ theorem codon_trinary_map_bundle :
     (codon_cgt_secondary_0, codon_cgt_secondary_1, codon_cgt_secondary_2) = (0, 0, -1) ∧
     (codon_atg_secondary_0, codon_atg_secondary_1, codon_atg_secondary_2) = (1, -1, 0) ∧
     (codon_taa_secondary_0, codon_taa_secondary_1, codon_taa_secondary_2) = (-1, 1, 1) := by
-  refine ⟨by unfold codon_table_count; norm_num, by unfold distinct_primary_codon_patterns; norm_num, by unfold distinct_secondary_codon_patterns; norm_num, by unfold stop_codon_count_cert; norm_num, by unfold distinct_primary_codon_patterns; norm_num,
+  refine ⟨by unfold codon_table_count; decide, by unfold distinct_primary_codon_patterns; decide, by unfold distinct_secondary_codon_patterns; decide, by unfold stop_codon_count_cert; decide, by unfold distinct_primary_codon_patterns; decide,
     by unfold distinct_secondary_codon_patterns genetic_trinary_alphabet_card; norm_num, codon_secondary_pattern_space_eq_twenty_seven, codon_genomic_table_link, stop_codon_fraction_cert,
     codon_aaa_primary_phase,
     codon_ttt_primary_phase,

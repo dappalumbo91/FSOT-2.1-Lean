@@ -16,7 +16,7 @@ def circuit_component_emergence_median_error_pct : ℝ := (0.051887 : ℝ)
 def circuit_component_emergence_D_eff : ℕ := 10
 
 theorem circuit_component_emergence_observable_count_pos : 0 < circuit_component_emergence_observable_count := by
-  unfold circuit_component_emergence_observable_count; norm_num
+  unfold circuit_component_emergence_observable_count; decide
 
 theorem circuit_component_emergence_median_error_under_five_pct :
     circuit_component_emergence_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem circuit_component_emergence_bundle :
     circuit_component_emergence_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨
-    by unfold circuit_component_emergence_observable_count; norm_num,
-    by unfold circuit_component_emergence_D_eff; norm_num,
+    by unfold circuit_component_emergence_observable_count; decide,
+    by unfold circuit_component_emergence_D_eff; decide,
     circuit_component_emergence_median_error_under_five_pct,
     material_raw_S_positive
   ⟩

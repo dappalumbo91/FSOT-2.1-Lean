@@ -35,13 +35,13 @@ def bubble_bleed_frb_match_rate : ℝ := (1.0 : ℝ)
 def bubble_bleed_frb_fp_rate : ℝ := (0.0 : ℝ)
 
 theorem bubble_bleed_nebula_count_pos : 0 < bubble_bleed_nebula_count := by
-  unfold bubble_bleed_nebula_count; norm_num
+  unfold bubble_bleed_nebula_count; decide
 
 theorem bubble_bleed_frb_count_pos : 0 < bubble_bleed_frb_count := by
-  unfold bubble_bleed_frb_count; norm_num
+  unfold bubble_bleed_frb_count; decide
 
 theorem bubble_bleed_observable_count_pos : 0 < bubble_bleed_observable_count := by
-  unfold bubble_bleed_observable_count; norm_num
+  unfold bubble_bleed_observable_count; decide
 
 theorem bubble_bleed_framework_fit_le_total :
     bubble_bleed_framework_fit_count ≤ bubble_bleed_framework_count := by
@@ -84,13 +84,13 @@ theorem bubble_bleed_bundle :
     0 ≤ bubble_bleed_observability_ratio ∧
     |h0_fsot S_cosm_cached - h0_fsot_canonical| < (0.11 : ℝ) := by
   refine ⟨
-    by unfold bubble_bleed_nebula_count; norm_num,
-    by unfold bubble_bleed_frb_count; norm_num,
-    by unfold bubble_bleed_h0_sector_count; norm_num,
-    by unfold bubble_bleed_framework_count; norm_num,
-    by unfold bubble_bleed_wh_closure_count; norm_num,
-    by unfold bubble_bleed_bh_spin_count; norm_num,
-    by unfold bubble_bleed_observable_count; norm_num,
+    by unfold bubble_bleed_nebula_count; decide,
+    by unfold bubble_bleed_frb_count; decide,
+    by unfold bubble_bleed_h0_sector_count; decide,
+    by unfold bubble_bleed_framework_count; decide,
+    by unfold bubble_bleed_wh_closure_count; decide,
+    by unfold bubble_bleed_bh_spin_count; decide,
+    by unfold bubble_bleed_observable_count; decide,
     bubble_bleed_framework_fit_le_total,
     bubble_bleed_wh_closure_match_le_total,
     bubble_bleed_bh_spin_match_le_total,

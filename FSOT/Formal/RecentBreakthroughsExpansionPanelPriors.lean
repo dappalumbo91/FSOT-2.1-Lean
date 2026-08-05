@@ -16,11 +16,13 @@ def recent_breakthroughs_expansion_median_error_pct : ℝ := (0.0 : ℝ)
 def recent_breakthroughs_expansion_D_eff : ℕ := 13
 
 theorem recent_breakthroughs_expansion_observable_count_pos : 0 < recent_breakthroughs_expansion_observable_count := by
-  unfold recent_breakthroughs_expansion_observable_count; norm_num
+  unfold recent_breakthroughs_expansion_observable_count; decide
 
 theorem recent_breakthroughs_expansion_median_error_under_half_pct :
     recent_breakthroughs_expansion_median_error_pct < (0.5 : ℝ) := by
-  unfold recent_breakthroughs_expansion_median_error_pct; norm_num
+  unfold recent_breakthroughs_expansion_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem recent_breakthroughs_expansion_bundle :
     recent_breakthroughs_expansion_observable_count = 81 ∧
@@ -28,8 +30,8 @@ theorem recent_breakthroughs_expansion_bundle :
     recent_breakthroughs_expansion_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold recent_breakthroughs_expansion_observable_count; norm_num,
-    by unfold recent_breakthroughs_expansion_D_eff; norm_num,
+    by unfold recent_breakthroughs_expansion_observable_count; decide,
+    by unfold recent_breakthroughs_expansion_D_eff; decide,
     recent_breakthroughs_expansion_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

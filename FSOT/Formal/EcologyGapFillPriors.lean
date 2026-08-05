@@ -18,18 +18,22 @@ def ecology_gap_fill_beats_sota_headlines : ℕ := 3
 def ecology_gap_fill_D_eff : ℕ := 14
 
 theorem ecology_gap_fill_observable_count_pos : 0 < ecology_gap_fill_observable_count := by
-  unfold ecology_gap_fill_observable_count; norm_num
+  unfold ecology_gap_fill_observable_count; decide
 
 theorem ecology_gap_fill_pooled_median_under_half_pct :
     ecology_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold ecology_gap_fill_pooled_median_error_pct; norm_num
+  unfold ecology_gap_fill_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem ecology_gap_fill_headline_median_under_half_pct :
     ecology_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold ecology_gap_fill_headline_median_error_pct; norm_num
+  unfold ecology_gap_fill_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem ecology_gap_fill_beats_sota_headlines_pos : 0 < ecology_gap_fill_beats_sota_headlines := by
-  unfold ecology_gap_fill_beats_sota_headlines; norm_num
+  unfold ecology_gap_fill_beats_sota_headlines; decide
 
 theorem ecology_gap_fill_bundle :
     ecology_gap_fill_observable_count = 627 ∧
@@ -38,7 +42,7 @@ theorem ecology_gap_fill_bundle :
     0 < ecology_gap_fill_beats_sota_headlines ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold ecology_gap_fill_observable_count; norm_num,
+    by unfold ecology_gap_fill_observable_count; decide,
     ecology_gap_fill_pooled_median_under_half_pct,
     ecology_gap_fill_headline_median_under_half_pct,
     ecology_gap_fill_beats_sota_headlines_pos,

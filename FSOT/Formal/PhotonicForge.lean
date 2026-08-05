@@ -22,7 +22,7 @@ theorem photonic_trinary_partition :
   unfold photonic_trinary_neg_count photonic_trinary_zero_count photonic_trinary_pos_count photonic_voxel_count; norm_num
 
 theorem photonic_voxel_count_pos : 0 < photonic_voxel_count := by
-  unfold photonic_voxel_count; norm_num
+  unfold photonic_voxel_count; decide
 
 /-- Bundle: 180-voxel trinary crystal grid with electron-domain sign certificate. -/
 theorem photonic_forge_bundle :
@@ -33,11 +33,11 @@ theorem photonic_forge_bundle :
     photonic_trinary_pos_count = 80 ∧
     (0 : ℝ) < raw_S (get_domain_params "electron") := by
   refine ⟨
-    by unfold photonic_voxel_count; norm_num,
+    by unfold photonic_voxel_count; decide,
     photonic_trinary_partition,
-    by unfold photonic_trinary_neg_count; norm_num,
-    by unfold photonic_trinary_zero_count; norm_num,
-    by unfold photonic_trinary_pos_count; norm_num,
+    by unfold photonic_trinary_neg_count; decide,
+    by unfold photonic_trinary_zero_count; decide,
+    by unfold photonic_trinary_pos_count; decide,
     electron_raw_S_positive
   ⟩
 

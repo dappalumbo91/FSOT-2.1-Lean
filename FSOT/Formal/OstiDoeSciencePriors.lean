@@ -16,7 +16,7 @@ def osti_doe_science_median_error_pct : ℝ := (0.01382 : ℝ)
 def osti_doe_science_D_eff : ℕ := 18
 
 theorem osti_doe_science_observable_count_pos : 0 < osti_doe_science_observable_count := by
-  unfold osti_doe_science_observable_count; norm_num
+  unfold osti_doe_science_observable_count; decide
 
 theorem osti_doe_science_median_error_under_five_pct :
     osti_doe_science_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem osti_doe_science_bundle :
     osti_doe_science_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "nuclear") > 0 := by
   refine ⟨
-    by unfold osti_doe_science_observable_count; norm_num,
-    by unfold osti_doe_science_D_eff; norm_num,
+    by unfold osti_doe_science_observable_count; decide,
+    by unfold osti_doe_science_D_eff; decide,
     osti_doe_science_median_error_under_five_pct,
     nuclear_raw_S_positive
   ⟩

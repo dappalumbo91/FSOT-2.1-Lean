@@ -16,7 +16,7 @@ def ncbi_gene_public_median_error_pct : ℝ := (0.025571999999999998 : ℝ)
 def ncbi_gene_public_D_eff : ℕ := 12
 
 theorem ncbi_gene_public_observable_count_pos : 0 < ncbi_gene_public_observable_count := by
-  unfold ncbi_gene_public_observable_count; norm_num
+  unfold ncbi_gene_public_observable_count; decide
 
 theorem ncbi_gene_public_median_error_under_five_pct :
     ncbi_gene_public_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem ncbi_gene_public_bundle :
     ncbi_gene_public_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold ncbi_gene_public_observable_count; norm_num,
-    by unfold ncbi_gene_public_D_eff; norm_num,
+    by unfold ncbi_gene_public_observable_count; decide,
+    by unfold ncbi_gene_public_D_eff; decide,
     ncbi_gene_public_median_error_under_five_pct,
     biological_raw_S_positive
   ⟩

@@ -13,7 +13,7 @@ def simbad_stellar_identity_deep_observable_count : ℕ := 520
 def simbad_stellar_identity_deep_D_eff : ℕ := 20
 
 theorem simbad_stellar_identity_deep_observable_count_pos : 0 < simbad_stellar_identity_deep_observable_count := by
-  unfold simbad_stellar_identity_deep_observable_count; norm_num
+  unfold simbad_stellar_identity_deep_observable_count; decide
 
 theorem simbad_stellar_identity_deep_median_error_under_half_pct :
     (0.022461 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem simbad_stellar_identity_deep_bundle :
     (0.022461 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold simbad_stellar_identity_deep_observable_count; norm_num,
-    by unfold simbad_stellar_identity_deep_D_eff; norm_num,
+    by unfold simbad_stellar_identity_deep_observable_count; decide,
+    by unfold simbad_stellar_identity_deep_D_eff; decide,
     simbad_stellar_identity_deep_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:17:26.616833+00:00",
+  "generated_at": "2026-08-05T22:31:00.257203+00:00",
   "version": "1.1",
   "verdict": "FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED",
   "engine_core_closed": true,
@@ -7,33 +7,43 @@
   "full_mathlib_rederivation_of_all_lemmas": true,
   "global_lake": {
     "status": "passed",
-    "seconds": 15.41,
+    "seconds": 2.47,
     "cmd": "lake build FSOT",
     "stderr_tail": ""
   },
-  "engine_mathlib_depth_pct": 61.07,
+  "engine_mathlib_depth_pct": 97.33,
+  "depth_gates": {
+    "engine_mathlib_min_pct": 90.0,
+    "engine_l1_max": 40,
+    "corpus_mathlib_min_pct": 55.0,
+    "engine_l1_count": 14,
+    "corpus_l1_count": 2275,
+    "engine_mathlib_pct": 97.33,
+    "corpus_mathlib_pct": 56.1
+  },
   "corpus": {
     "theorem_count": 5182,
-    "mathlib_depth_count": 860,
-    "mathlib_depth_pct": 16.6,
+    "mathlib_depth_count": 2907,
+    "mathlib_depth_pct": 56.1,
     "by_tier": {
-      "L1_certificate": 4322,
-      "L3_chain": 117,
-      "L2_analytic": 262,
-      "L0_definitional": 481
+      "L0_definitional": 1689,
+      "L1_certificate": 2275,
+      "L3_chain": 945,
+      "L2_analytic": 273
     },
     "sorry_count": 0
   },
   "engine_inventory": {
     "theorem_count": 524,
-    "mathlib_depth_count": 320,
-    "mathlib_depth_pct": 61.07,
+    "mathlib_depth_count": 510,
+    "mathlib_depth_pct": 97.33,
     "by_tier": {
-      "L1_certificate": 204,
-      "L2_analytic": 260,
-      "L0_definitional": 7,
-      "L3_chain": 53
-    }
+      "L2_analytic": 271,
+      "L0_definitional": 64,
+      "L3_chain": 175,
+      "L1_certificate": 14
+    },
+    "l1_certificate_count": 14
   },
   "waves": [
     {
@@ -46,17 +56,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 32,
-      "mathlib_depth_count": 14,
-      "mathlib_depth_pct": 43.75,
+      "mathlib_depth_count": 32,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L0_definitional": 3,
-        "L1_certificate": 18,
-        "L2_analytic": 6,
-        "L3_chain": 5
+        "L0_definitional": 16,
+        "L3_chain": 10,
+        "L2_analytic": 6
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -76,17 +85,17 @@
       ],
       "missing_modules": [],
       "theorem_count": 277,
-      "mathlib_depth_count": 212,
-      "mathlib_depth_pct": 76.53,
+      "mathlib_depth_count": 275,
+      "mathlib_depth_pct": 99.28,
       "by_tier": {
-        "L1_certificate": 65,
-        "L2_analytic": 187,
-        "L0_definitional": 1,
-        "L3_chain": 24
+        "L2_analytic": 188,
+        "L0_definitional": 9,
+        "L3_chain": 78,
+        "L1_certificate": 2
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -106,16 +115,17 @@
       ],
       "missing_modules": [],
       "theorem_count": 54,
-      "mathlib_depth_count": 43,
-      "mathlib_depth_pct": 79.63,
+      "mathlib_depth_count": 51,
+      "mathlib_depth_pct": 94.44,
       "by_tier": {
-        "L1_certificate": 11,
+        "L3_chain": 10,
         "L2_analytic": 37,
-        "L3_chain": 6
+        "L1_certificate": 3,
+        "L0_definitional": 4
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -135,17 +145,17 @@
       ],
       "missing_modules": [],
       "theorem_count": 43,
-      "mathlib_depth_count": 10,
-      "mathlib_depth_pct": 23.26,
+      "mathlib_depth_count": 42,
+      "mathlib_depth_pct": 97.67,
       "by_tier": {
-        "L1_certificate": 33,
-        "L0_definitional": 2,
-        "L3_chain": 5,
+        "L0_definitional": 14,
+        "L1_certificate": 1,
+        "L3_chain": 25,
         "L2_analytic": 3
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -176,16 +186,17 @@
       ],
       "missing_modules": [],
       "theorem_count": 64,
-      "mathlib_depth_count": 22,
-      "mathlib_depth_pct": 34.38,
+      "mathlib_depth_count": 58,
+      "mathlib_depth_pct": 90.62,
       "by_tier": {
-        "L1_certificate": 42,
-        "L2_analytic": 12,
-        "L3_chain": 10
+        "L3_chain": 30,
+        "L2_analytic": 16,
+        "L1_certificate": 6,
+        "L0_definitional": 12
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -209,17 +220,17 @@
       ],
       "missing_modules": [],
       "theorem_count": 54,
-      "mathlib_depth_count": 19,
-      "mathlib_depth_pct": 35.19,
+      "mathlib_depth_count": 52,
+      "mathlib_depth_pct": 96.3,
       "by_tier": {
-        "L1_certificate": 35,
-        "L2_analytic": 15,
-        "L0_definitional": 1,
-        "L3_chain": 3
+        "L0_definitional": 9,
+        "L3_chain": 22,
+        "L2_analytic": 21,
+        "L1_certificate": 2
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -278,15 +289,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 171,
-      "mathlib_depth_count": 8,
-      "mathlib_depth_pct": 4.68,
+      "mathlib_depth_count": 108,
+      "mathlib_depth_pct": 63.16,
       "by_tier": {
-        "L1_certificate": 163,
-        "L3_chain": 8
+        "L0_definitional": 48,
+        "L1_certificate": 63,
+        "L3_chain": 60
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -345,15 +357,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 271,
-      "mathlib_depth_count": 5,
-      "mathlib_depth_pct": 1.85,
+      "mathlib_depth_count": 108,
+      "mathlib_depth_pct": 39.85,
       "by_tier": {
-        "L1_certificate": 266,
-        "L3_chain": 5
+        "L0_definitional": 49,
+        "L1_certificate": 163,
+        "L3_chain": 59
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -412,15 +425,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 148,
-      "mathlib_depth_count": 7,
-      "mathlib_depth_pct": 4.73,
+      "mathlib_depth_count": 110,
+      "mathlib_depth_pct": 74.32,
       "by_tier": {
-        "L1_certificate": 141,
-        "L3_chain": 7
+        "L0_definitional": 55,
+        "L1_certificate": 38,
+        "L3_chain": 55
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -479,15 +493,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 138,
-      "mathlib_depth_count": 7,
-      "mathlib_depth_pct": 5.07,
+      "mathlib_depth_count": 108,
+      "mathlib_depth_pct": 78.26,
       "by_tier": {
-        "L1_certificate": 131,
-        "L3_chain": 7
+        "L0_definitional": 48,
+        "L1_certificate": 30,
+        "L3_chain": 60
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -546,15 +561,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 128,
-      "mathlib_depth_count": 1,
-      "mathlib_depth_pct": 0.78,
+      "mathlib_depth_count": 92,
+      "mathlib_depth_pct": 71.88,
       "by_tier": {
-        "L1_certificate": 127,
-        "L3_chain": 1
+        "L0_definitional": 40,
+        "L1_certificate": 36,
+        "L3_chain": 52
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -613,15 +629,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 138,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 1.45,
+      "mathlib_depth_count": 102,
+      "mathlib_depth_pct": 73.91,
       "by_tier": {
-        "L1_certificate": 136,
-        "L3_chain": 2
+        "L0_definitional": 46,
+        "L3_chain": 56,
+        "L1_certificate": 36
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -680,15 +697,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 138,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 2.9,
+      "mathlib_depth_count": 100,
+      "mathlib_depth_pct": 72.46,
       "by_tier": {
-        "L1_certificate": 134,
-        "L3_chain": 4
+        "L0_definitional": 45,
+        "L3_chain": 55,
+        "L1_certificate": 38
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -747,16 +765,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 151,
-      "mathlib_depth_count": 5,
-      "mathlib_depth_pct": 3.31,
+      "mathlib_depth_count": 110,
+      "mathlib_depth_pct": 72.85,
       "by_tier": {
-        "L1_certificate": 146,
-        "L3_chain": 4,
-        "L0_definitional": 1
+        "L0_definitional": 53,
+        "L1_certificate": 41,
+        "L3_chain": 57
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -815,15 +833,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 158,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 2.53,
+      "mathlib_depth_count": 118,
+      "mathlib_depth_pct": 74.68,
       "by_tier": {
-        "L1_certificate": 154,
-        "L3_chain": 4
+        "L0_definitional": 51,
+        "L1_certificate": 40,
+        "L3_chain": 67
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -882,15 +901,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 160,
-      "mathlib_depth_count": 5,
-      "mathlib_depth_pct": 3.12,
+      "mathlib_depth_count": 111,
+      "mathlib_depth_pct": 69.38,
       "by_tier": {
-        "L1_certificate": 155,
-        "L3_chain": 5
+        "L0_definitional": 49,
+        "L3_chain": 62,
+        "L1_certificate": 49
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -949,15 +969,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 137,
-      "mathlib_depth_count": 5,
-      "mathlib_depth_pct": 3.65,
+      "mathlib_depth_count": 107,
+      "mathlib_depth_pct": 78.1,
       "by_tier": {
-        "L1_certificate": 132,
-        "L3_chain": 5
+        "L0_definitional": 47,
+        "L1_certificate": 30,
+        "L3_chain": 60
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -1016,15 +1037,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 144,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 2.78,
+      "mathlib_depth_count": 106,
+      "mathlib_depth_pct": 73.61,
       "by_tier": {
-        "L1_certificate": 140,
-        "L3_chain": 4
+        "L0_definitional": 54,
+        "L1_certificate": 38,
+        "L3_chain": 52
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -1083,15 +1105,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 139,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 2.88,
+      "mathlib_depth_count": 89,
+      "mathlib_depth_pct": 64.03,
       "by_tier": {
-        "L1_certificate": 135,
-        "L3_chain": 4
+        "L0_definitional": 41,
+        "L1_certificate": 50,
+        "L3_chain": 48
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -1126,15 +1149,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 60,
-      "mathlib_depth_count": 3,
-      "mathlib_depth_pct": 5.0,
+      "mathlib_depth_count": 41,
+      "mathlib_depth_pct": 68.33,
       "by_tier": {
-        "L1_certificate": 57,
-        "L3_chain": 3
+        "L0_definitional": 17,
+        "L3_chain": 24,
+        "L1_certificate": 19
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 15.41,
+      "lake_build_seconds": 2.47,
       "builds": [
         {
           "target": "FSOT",
@@ -1153,177 +1177,8 @@
     "priors_ok": 14,
     "priors_total": 14
   },
-  "aux_closures": {
-    "build_formal_proof_depth_closure.py": {
-      "status": "passed",
-      "seconds": 4.38
-    },
-    "audit_structural_proof_depth.py": {
-      "status": "passed",
-      "seconds": 5.59
-    },
-    "generate_structural_proof_artifacts.py": {
-      "status": "passed",
-      "seconds": 0.12
-    }
-  },
+  "aux_closures": {},
   "upgrade_candidates": [
-    {
-      "module": "Bounds",
-      "name": "gamma_euler_pos",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "pi_sub_one_pos",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "exp_neg_one_lt_368",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_08_gt_m0298",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_12_lt",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "sqrt_two_lt_14142135624",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "new_perceived_param_lt_031",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "new_perceived_param_lt_3009",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "new_perceived_param_lt_30032",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "new_perceived_param_pos",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "cosmological_perceived_adjust_eq_one",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "psi_con_pos",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "psi_con_eta_pos",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "sin_theta_s_nonneg",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "exp_1144_lt_31415",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_31415_gt_1144",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_pi_gt_11445",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "exp_049_gt_16181",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_16181_lt_04813",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_phi_lt_0482",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "eta_log_phi_lt_0225",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "exp_neg_185_lt_016",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_016_gt_m185",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "coherence_efficiency_gt_seven_tenths",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_five_lt_one_seven_seven",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "growth_term_cosmological_gt_one",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
     {
       "module": "Bounds",
       "name": "sqrt_25_eq_five",
@@ -1337,135 +1192,75 @@
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "cosmological_N_pos",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "Cosmology",
+      "name": "omega_b_h2_fsot_cached_pos",
+      "path": "FSOT/Formal/Cosmology.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "cosmological_P_pos",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "CosmologyExtendedPriors",
+      "name": "cosmology_extended_components_sum",
+      "path": "FSOT/Formal/CosmologyExtendedPriors.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "phase_variance_abs_le_one",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "CosmologyExtendedPriors",
+      "name": "cosmology_extended_within_le_total",
+      "path": "FSOT/Formal/CosmologyExtendedPriors.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "acoustic_bleed_lt_phi",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "CosmologyHigherWavesPriors",
+      "name": "cosmology_higher_waves_partition",
+      "path": "FSOT/Formal/CosmologyHigherWavesPriors.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "sin_eq_cos_pi_div_two_sub",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "CosmologyLab",
+      "name": "lambda_cdm_wave_partition",
+      "path": "FSOT/Formal/CosmologyLab.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "exp_04807_lt_1618",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "CosmologyWave4",
+      "name": "wave4_observable_count_pos",
+      "path": "FSOT/Formal/CosmologyWave4.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "log_1618_gt_04807",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "Domains",
+      "name": "dark_energy_delta_bounds",
+      "path": "FSOT/Formal/Domains.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "exp_01534_lt_1168",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "LeanProofsBridge",
+      "name": "lean_proofs_domain_proven_le_formal",
+      "path": "FSOT/Formal/LeanProofsBridge.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "phase_variance_eq_cos_theta_s",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "PhotonicForge",
+      "name": "photonic_trinary_partition",
+      "path": "FSOT/Formal/PhotonicForge.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "log_31416_lt_1146",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "Theorems",
+      "name": "cosmological_delta_bounds",
+      "path": "FSOT/Formal/Theorems.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "log_pi23847_lt_11453",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "Theorems",
+      "name": "cosmological_D_bounds",
+      "path": "FSOT/Formal/Theorems.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     },
     {
-      "module": "Bounds",
-      "name": "exp_neg_1434_lt_24_div_25",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_ratio_D6_gt",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "exp_neg_040_gt_24_div_25",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_ratio_D24_lt",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "exp_neg_0818_gt_11_div_25",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "exp_13865_gt_four",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_four_lt_13865",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "log_five_lt_1618",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "sqrt_11_lt_3317",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "sqrt_8_lt_2829",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "sqrt_13_lt_3606",
-      "path": "FSOT/Formal/Bounds.lean",
+      "module": "Theorems",
+      "name": "cmb_delta_bounds",
+      "path": "FSOT/Formal/Theorems.lean",
       "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
     }
   ],

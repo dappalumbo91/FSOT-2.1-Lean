@@ -16,7 +16,7 @@ def open_meteo_live_median_error_pct : ℝ := (0.026204 : ℝ)
 def open_meteo_live_D_eff : ℕ := 16
 
 theorem open_meteo_live_observable_count_pos : 0 < open_meteo_live_observable_count := by
-  unfold open_meteo_live_observable_count; norm_num
+  unfold open_meteo_live_observable_count; decide
 
 theorem open_meteo_live_median_error_under_five_pct :
     open_meteo_live_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem open_meteo_live_bundle :
     open_meteo_live_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold open_meteo_live_observable_count; norm_num,
-    by unfold open_meteo_live_D_eff; norm_num,
+    by unfold open_meteo_live_observable_count; decide,
+    by unfold open_meteo_live_D_eff; decide,
     open_meteo_live_median_error_under_five_pct,
     energy_raw_S_positive
   ⟩

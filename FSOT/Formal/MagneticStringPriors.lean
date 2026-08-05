@@ -19,7 +19,7 @@ theorem magnetic_S_em_positive : (0 : ℝ) < magnetic_S_em := by
   unfold magnetic_S_em; norm_num
 
 theorem magnetic_string_count_pos : 0 < magnetic_string_count := by
-  unfold magnetic_string_count; norm_num
+  unfold magnetic_string_count; decide
 
 /-- Bundle: 250-string lattice with positive electromagnetic scalar (electron domain). -/
 theorem magnetic_string_bundle :
@@ -29,8 +29,8 @@ theorem magnetic_string_bundle :
     (0 : ℝ) < magnetic_S_em ∧
     (0 : ℝ) < raw_S (get_domain_params "electron") := by
   refine ⟨
-    by unfold magnetic_string_count; norm_num,
-    by unfold magnetic_top_aligned_count; norm_num,
+    by unfold magnetic_string_count; decide,
+    by unfold magnetic_top_aligned_count; decide,
     by unfold magnetic_S_em; norm_num,
     magnetic_S_em_positive,
     electron_raw_S_positive

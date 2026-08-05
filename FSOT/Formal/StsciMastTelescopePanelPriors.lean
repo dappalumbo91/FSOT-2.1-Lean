@@ -13,7 +13,7 @@ def stsci_mast_telescope_panel_observable_count : ℕ := 377
 def stsci_mast_telescope_panel_D_eff : ℕ := 21
 
 theorem stsci_mast_telescope_panel_observable_count_pos : 0 < stsci_mast_telescope_panel_observable_count := by
-  unfold stsci_mast_telescope_panel_observable_count; norm_num
+  unfold stsci_mast_telescope_panel_observable_count; decide
 
 theorem stsci_mast_telescope_panel_median_error_under_half_pct :
     (0.022461 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem stsci_mast_telescope_panel_bundle :
     (0.022461 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold stsci_mast_telescope_panel_observable_count; norm_num,
-    by unfold stsci_mast_telescope_panel_D_eff; norm_num,
+    by unfold stsci_mast_telescope_panel_observable_count; decide,
+    by unfold stsci_mast_telescope_panel_D_eff; decide,
     stsci_mast_telescope_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

@@ -21,7 +21,7 @@ def cosmology_wave10_count : ℕ := 10
 def cosmology_higher_waves_max_error_pct : ℝ := (0.35683948712437213 : ℝ)
 
 theorem cosmology_higher_waves_total_pos : 0 < cosmology_higher_waves_total := by
-  unfold cosmology_higher_waves_total; norm_num
+  unfold cosmology_higher_waves_total; decide
 
 theorem cosmology_higher_waves_partition :
     cosmology_wave5_count + cosmology_wave6_count + cosmology_wave7_count +
@@ -33,7 +33,9 @@ theorem cosmology_higher_waves_partition :
 
 theorem cosmology_higher_waves_max_error_under_half_pct :
     cosmology_higher_waves_max_error_pct < (0.5 : ℝ) := by
-  unfold cosmology_higher_waves_max_error_pct; norm_num
+  unfold cosmology_higher_waves_max_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 /-- Bundle: 142 higher-wave observables (electroweak, Higgs, lattice, mega-wave). -/
 theorem cosmology_higher_waves_bundle :
@@ -49,13 +51,13 @@ theorem cosmology_higher_waves_bundle :
     cosmology_higher_waves_max_error_pct < (0.5 : ℝ) ∧
     (0 : ℝ) < omega_b_h2_fsot S_cosm_cached S_quant_cached := by
   refine ⟨
-    by unfold cosmology_higher_waves_total; norm_num,
-    by unfold cosmology_wave5_count; norm_num,
-    by unfold cosmology_wave6_count; norm_num,
-    by unfold cosmology_wave7_count; norm_num,
-    by unfold cosmology_wave8_count; norm_num,
-    by unfold cosmology_wave9_count; norm_num,
-    by unfold cosmology_wave10_count; norm_num,
+    by unfold cosmology_higher_waves_total; decide,
+    by unfold cosmology_wave5_count; decide,
+    by unfold cosmology_wave6_count; decide,
+    by unfold cosmology_wave7_count; decide,
+    by unfold cosmology_wave8_count; decide,
+    by unfold cosmology_wave9_count; decide,
+    by unfold cosmology_wave10_count; decide,
     cosmology_higher_waves_partition,
     cosmology_higher_waves_max_error_under_half_pct,
     omega_b_h2_fsot_cached_pos

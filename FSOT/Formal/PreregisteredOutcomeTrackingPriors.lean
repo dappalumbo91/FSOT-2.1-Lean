@@ -13,7 +13,7 @@ def preregistered_outcome_tracking_observable_count : ℕ := 56
 def preregistered_outcome_tracking_D_eff : ℕ := 17
 
 theorem preregistered_outcome_tracking_observable_count_pos : 0 < preregistered_outcome_tracking_observable_count := by
-  unfold preregistered_outcome_tracking_observable_count; norm_num
+  unfold preregistered_outcome_tracking_observable_count; decide
 
 theorem preregistered_outcome_tracking_median_error_under_half_pct :
     (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem preregistered_outcome_tracking_bundle :
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold preregistered_outcome_tracking_observable_count; norm_num,
-    by unfold preregistered_outcome_tracking_D_eff; norm_num,
+    by unfold preregistered_outcome_tracking_observable_count; decide,
+    by unfold preregistered_outcome_tracking_D_eff; decide,
     preregistered_outcome_tracking_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

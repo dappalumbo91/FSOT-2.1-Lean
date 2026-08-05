@@ -13,7 +13,7 @@ def neuroeconomics_observable_count : ℕ := 65
 def neuroeconomics_D_eff : ℕ := 16
 
 theorem neuroeconomics_observable_count_pos : 0 < neuroeconomics_observable_count := by
-  unfold neuroeconomics_observable_count; norm_num
+  unfold neuroeconomics_observable_count; decide
 
 theorem neuroeconomics_median_error_under_half_pct :
     (0.10502056403980387 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem neuroeconomics_bundle :
     (0.10502056403980387 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold neuroeconomics_observable_count; norm_num,
-    by unfold neuroeconomics_D_eff; norm_num,
+    by unfold neuroeconomics_observable_count; decide,
+    by unfold neuroeconomics_D_eff; decide,
     neuroeconomics_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

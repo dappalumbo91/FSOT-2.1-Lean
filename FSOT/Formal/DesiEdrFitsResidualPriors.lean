@@ -18,23 +18,27 @@ def desi_edr_fits_residual_headline_median_error_pct : ℝ := (0.0224614892042 :
 def desi_edr_fits_residual_D_eff : ℕ := 18
 
 theorem desi_edr_fits_residual_observable_count_pos : 0 < desi_edr_fits_residual_observable_count := by
-  unfold desi_edr_fits_residual_observable_count; norm_num
+  unfold desi_edr_fits_residual_observable_count; decide
 
 theorem desi_edr_fits_residual_pooled_median_under_half_pct :
     desi_edr_fits_residual_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold desi_edr_fits_residual_pooled_median_error_pct; norm_num
+  unfold desi_edr_fits_residual_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem desi_edr_fits_residual_headline_median_under_half_pct :
     desi_edr_fits_residual_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold desi_edr_fits_residual_headline_median_error_pct; norm_num
+  unfold desi_edr_fits_residual_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem desi_edr_fits_residual_bundle :
     desi_edr_fits_residual_observable_count = 97144 ∧
     desi_edr_fits_residual_D_eff = 18 ∧
     desi_edr_fits_residual_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
-  · unfold desi_edr_fits_residual_observable_count; norm_num
-  · unfold desi_edr_fits_residual_D_eff; norm_num
+  · unfold desi_edr_fits_residual_observable_count; decide
+  · unfold desi_edr_fits_residual_D_eff; decide
   · exact desi_edr_fits_residual_pooled_median_under_half_pct
 
 end

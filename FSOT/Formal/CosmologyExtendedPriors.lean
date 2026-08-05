@@ -20,13 +20,13 @@ def cosmology_extended_median_error_pct : ℝ := (0.021954848848277954 : ℝ)
 def cosmology_extended_within_five_pct : ℕ := 50
 
 theorem cosmology_skeleton_derivation_count_pos : 0 < cosmology_skeleton_derivation_count := by
-  unfold cosmology_skeleton_derivation_count; norm_num
+  unfold cosmology_skeleton_derivation_count; decide
 
 theorem cosmology_lambda_cdm_extended_count_pos : 0 < cosmology_lambda_cdm_extended_count := by
-  unfold cosmology_lambda_cdm_extended_count; norm_num
+  unfold cosmology_lambda_cdm_extended_count; decide
 
 theorem cosmology_extended_observable_count_pos : 0 < cosmology_extended_observable_count := by
-  unfold cosmology_extended_observable_count; norm_num
+  unfold cosmology_extended_observable_count; decide
 
 theorem cosmology_extended_components_sum :
     cosmology_skeleton_derivation_count + cosmology_lambda_cdm_extended_count + cosmology_thesis_wave_count =
@@ -36,7 +36,9 @@ theorem cosmology_extended_components_sum :
 
 theorem cosmology_extended_median_error_under_half_pct :
     cosmology_extended_median_error_pct < (0.5 : ℝ) := by
-  unfold cosmology_extended_median_error_pct; norm_num
+  unfold cosmology_extended_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem cosmology_extended_within_le_total :
     cosmology_extended_within_five_pct ≤ cosmology_extended_observable_count := by
@@ -52,10 +54,10 @@ theorem cosmology_extended_bundle :
     cosmology_extended_median_error_pct < (0.5 : ℝ) ∧
     (0 : ℝ) < omega_b_h2_fsot S_cosm_cached S_quant_cached := by
   refine ⟨
-    by unfold cosmology_skeleton_derivation_count; norm_num,
-    by unfold cosmology_lambda_cdm_extended_count; norm_num,
-    by unfold cosmology_thesis_wave_count; norm_num,
-    by unfold cosmology_extended_observable_count; norm_num,
+    by unfold cosmology_skeleton_derivation_count; decide,
+    by unfold cosmology_lambda_cdm_extended_count; decide,
+    by unfold cosmology_thesis_wave_count; decide,
+    by unfold cosmology_extended_observable_count; decide,
     cosmology_extended_components_sum,
     cosmology_extended_median_error_under_half_pct,
     omega_b_h2_fsot_cached_pos

@@ -16,7 +16,7 @@ def prediction_rederivation_median_error_pct : ℝ := (0.0 : ℝ)
 def prediction_rederivation_D_eff : ℕ := 14
 
 theorem prediction_rederivation_observable_count_pos : 0 < prediction_rederivation_observable_count := by
-  unfold prediction_rederivation_observable_count; norm_num
+  unfold prediction_rederivation_observable_count; decide
 
 theorem prediction_rederivation_median_error_under_five_pct :
     prediction_rederivation_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem prediction_rederivation_bundle :
     prediction_rederivation_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "galactic") > 0 := by
   refine ⟨
-    by unfold prediction_rederivation_observable_count; norm_num,
-    by unfold prediction_rederivation_D_eff; norm_num,
+    by unfold prediction_rederivation_observable_count; decide,
+    by unfold prediction_rederivation_D_eff; decide,
     prediction_rederivation_median_error_under_five_pct,
     galactic_raw_S_positive
   ⟩

@@ -16,7 +16,7 @@ def openalex_citation_graph_median_error_pct : ℝ := (0.031506 : ℝ)
 def openalex_citation_graph_D_eff : ℕ := 18
 
 theorem openalex_citation_graph_observable_count_pos : 0 < openalex_citation_graph_observable_count := by
-  unfold openalex_citation_graph_observable_count; norm_num
+  unfold openalex_citation_graph_observable_count; decide
 
 theorem openalex_citation_graph_median_error_under_five_pct :
     openalex_citation_graph_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem openalex_citation_graph_bundle :
     openalex_citation_graph_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨
-    by unfold openalex_citation_graph_observable_count; norm_num,
-    by unfold openalex_citation_graph_D_eff; norm_num,
+    by unfold openalex_citation_graph_observable_count; decide,
+    by unfold openalex_citation_graph_D_eff; decide,
     openalex_citation_graph_median_error_under_five_pct,
     consciousness_raw_S_positive
   ⟩

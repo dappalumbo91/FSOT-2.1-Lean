@@ -18,10 +18,10 @@ def tectonics_D_eff : ℕ := 17
 def tectonics_match_rate : ℝ := (1.0 : ℝ)
 
 theorem tectonics_event_count_pos : 0 < tectonics_event_count := by
-  unfold tectonics_event_count; norm_num
+  unfold tectonics_event_count; decide
 
 theorem tectonics_boundary_count_pos : 0 < tectonics_boundary_count := by
-  unfold tectonics_boundary_count; norm_num
+  unfold tectonics_boundary_count; decide
 
 theorem tectonics_match_le_total : tectonics_match_count ≤ tectonics_event_count := by
   unfold tectonics_match_count tectonics_event_count; norm_num
@@ -34,10 +34,10 @@ theorem tectonics_bundle :
     tectonics_match_count ≤ tectonics_event_count ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold tectonics_event_count; norm_num,
-    by unfold tectonics_boundary_count; norm_num,
-    by unfold tectonics_match_count; norm_num,
-    by unfold tectonics_D_eff; norm_num,
+    by unfold tectonics_event_count; decide,
+    by unfold tectonics_boundary_count; decide,
+    by unfold tectonics_match_count; decide,
+    by unfold tectonics_D_eff; decide,
     tectonics_match_le_total,
     energy_raw_S_positive
   ⟩

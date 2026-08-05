@@ -18,23 +18,27 @@ def world_bank_macro_open_headline_median_error_pct : ℝ := (0.02584 : ℝ)
 def world_bank_macro_open_D_eff : ℕ := 18
 
 theorem world_bank_macro_open_observable_count_pos : 0 < world_bank_macro_open_observable_count := by
-  unfold world_bank_macro_open_observable_count; norm_num
+  unfold world_bank_macro_open_observable_count; decide
 
 theorem world_bank_macro_open_pooled_median_under_half_pct :
     world_bank_macro_open_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold world_bank_macro_open_pooled_median_error_pct; norm_num
+  unfold world_bank_macro_open_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem world_bank_macro_open_headline_median_under_half_pct :
     world_bank_macro_open_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold world_bank_macro_open_headline_median_error_pct; norm_num
+  unfold world_bank_macro_open_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem world_bank_macro_open_bundle :
     world_bank_macro_open_observable_count = 605 ∧
     world_bank_macro_open_D_eff = 18 ∧
     world_bank_macro_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
-  · unfold world_bank_macro_open_observable_count; norm_num
-  · unfold world_bank_macro_open_D_eff; norm_num
+  · unfold world_bank_macro_open_observable_count; decide
+  · unfold world_bank_macro_open_D_eff; decide
   · exact world_bank_macro_open_pooled_median_under_half_pct
 
 end

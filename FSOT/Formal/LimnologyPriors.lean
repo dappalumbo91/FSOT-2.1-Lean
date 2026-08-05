@@ -16,7 +16,7 @@ def limnology_median_error_pct : ℝ := (0.030173 : ℝ)
 def limnology_D_eff : ℕ := 16
 
 theorem limnology_observable_count_pos : 0 < limnology_observable_count := by
-  unfold limnology_observable_count; norm_num
+  unfold limnology_observable_count; decide
 
 theorem limnology_median_error_under_five_pct :
     limnology_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem limnology_bundle :
     limnology_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "galactic") > 0 := by
   refine ⟨
-    by unfold limnology_observable_count; norm_num,
-    by unfold limnology_D_eff; norm_num,
+    by unfold limnology_observable_count; decide,
+    by unfold limnology_D_eff; decide,
     limnology_median_error_under_five_pct,
     galactic_raw_S_positive
   ⟩

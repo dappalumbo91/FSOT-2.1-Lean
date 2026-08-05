@@ -21,7 +21,7 @@ noncomputable section
 
 open Real
 
-lemma gamma_euler_pos : (0 : ℝ) < gamma_euler := by unfold gamma_euler; norm_num
+lemma gamma_euler_pos : (0 : ℝ) < gamma_euler := by unfold gamma_euler; positivity
 
 lemma phi_gt_one : (1 : ℝ) < phi := by
   unfold phi

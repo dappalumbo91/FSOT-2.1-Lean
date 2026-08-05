@@ -19,7 +19,7 @@ def held_out_cell_count : ℕ := 2165
 def held_out_fi_median_rel_err : ℝ := (0.24625990376478163 : ℝ)
 def held_out_fi_pearson_r : ℝ := (0.6086458495175734 : ℝ)
 theorem held_out_cell_count_large : (2100 : ℕ) < held_out_cell_count := by
-  unfold held_out_cell_count; norm_num
+  unfold held_out_cell_count; decide
 
 theorem held_out_fi_median_rel_err_lt_thirty_pct : held_out_fi_median_rel_err < (0.30 : ℝ) := by
   unfold held_out_fi_median_rel_err; norm_num
@@ -30,7 +30,7 @@ def stratum_sst_cell_count : ℕ := 154
 def stratum_sst_fi_median_rel_err : ℝ := (0.6532385249479395 : ℝ)
 def stratum_sst_fi_pearson_r : ℝ := (0.52310926097775 : ℝ)
 theorem stratum_sst_cell_count_pos : (150 : ℕ) < stratum_sst_cell_count := by
-  unfold stratum_sst_cell_count; norm_num
+  unfold stratum_sst_cell_count; decide
 
 theorem stratum_sst_fi_median_lt_bound : stratum_sst_fi_median_rel_err < (0.7 : ℝ) := by
   unfold stratum_sst_fi_median_rel_err; norm_num
@@ -42,7 +42,7 @@ def stratum_pv_cell_count : ℕ := 222
 def stratum_pv_fi_median_rel_err : ℝ := (0.26052599991828185 : ℝ)
 def stratum_pv_fi_pearson_r : ℝ := (0.3931199346029611 : ℝ)
 theorem stratum_pv_cell_count_pos : (200 : ℕ) < stratum_pv_cell_count := by
-  unfold stratum_pv_cell_count; norm_num
+  unfold stratum_pv_cell_count; decide
 
 theorem stratum_pv_fi_median_lt_bound : stratum_pv_fi_median_rel_err < (0.35 : ℝ) := by
   unfold stratum_pv_fi_median_rel_err; norm_num
@@ -54,7 +54,7 @@ def stratum_vip_cell_count : ℕ := 146
 def stratum_vip_fi_median_rel_err : ℝ := (0.4741701150886025 : ℝ)
 def stratum_vip_fi_pearson_r : ℝ := (0.4308059942466856 : ℝ)
 theorem stratum_vip_cell_count_pos : (140 : ℕ) < stratum_vip_cell_count := by
-  unfold stratum_vip_cell_count; norm_num
+  unfold stratum_vip_cell_count; decide
 
 theorem stratum_vip_fi_median_lt_bound : stratum_vip_fi_median_rel_err < (0.5 : ℝ) := by
   unfold stratum_vip_fi_median_rel_err; norm_num
@@ -66,7 +66,7 @@ def stratum_l23_pyramidal_cell_count : ℕ := 1127
 def stratum_l23_pyramidal_fi_median_rel_err : ℝ := (0.49782232037293184 : ℝ)
 def stratum_l23_pyramidal_fi_pearson_r : ℝ := (0.23129805826359506 : ℝ)
 theorem stratum_l23_pyramidal_cell_count_pos : (1100 : ℕ) < stratum_l23_pyramidal_cell_count := by
-  unfold stratum_l23_pyramidal_cell_count; norm_num
+  unfold stratum_l23_pyramidal_cell_count; decide
 
 theorem stratum_l23_pyramidal_fi_median_lt_bound : stratum_l23_pyramidal_fi_median_rel_err < (0.55 : ℝ) := by
   unfold stratum_l23_pyramidal_fi_median_rel_err; norm_num

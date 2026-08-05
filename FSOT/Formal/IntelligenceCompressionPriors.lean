@@ -20,10 +20,10 @@ def fic_best_intelligence_score : ℝ := (0.9997093332777109 : ℝ)
 def fic_fertile_replay_match_rate : ℝ := (1.0 : ℝ)
 
 theorem fic_sweep_row_count_pos : 0 < fic_sweep_row_count := by
-  unfold fic_sweep_row_count; norm_num
+  unfold fic_sweep_row_count; decide
 
 theorem fic_fertile_rows_present : 0 < fic_fertile_row_count := by
-  unfold fic_fertile_row_count; norm_num
+  unfold fic_fertile_row_count; decide
 
 theorem fic_fertile_replay_match_le_total :
     fic_fertile_replay_match_count ≤ fic_sweep_row_count := by
@@ -48,10 +48,10 @@ theorem intelligence_compression_priors_bundle :
     raw_S (get_domain_params "neural") > 0 ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨
-    by unfold fic_sweep_row_count; norm_num,
-    by unfold fic_fertile_row_count; norm_num,
-    by unfold fic_D_eff_optimal; norm_num,
-    by unfold fic_fertile_replay_match_count; norm_num,
+    by unfold fic_sweep_row_count; decide,
+    by unfold fic_fertile_row_count; decide,
+    by unfold fic_D_eff_optimal; decide,
+    by unfold fic_fertile_replay_match_count; decide,
     fic_best_intelligence_score_positive,
     fic_fertile_replay_match_le_total,
     neural_raw_S_positive,

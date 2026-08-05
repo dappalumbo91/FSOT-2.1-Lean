@@ -115,6 +115,14 @@ def strip_lean_comments(text: str) -> str:
 
 
 def classify_proof_body(body: str) -> dict[str, Any]:
+    """Classify proof depth.
+
+    Honest tiers:
+      L0 — definitional / structural (rfl, decide, pure simp reductions)
+      L1 — *pure* numeric certificate (norm_num only, no structure) — weak multiprover pin style
+      L2 — analytic Mathlib (linarith / nlinarith / ring / positivity)
+      L3 — multi-step constructive chains (have / refine / exact), even if subgoals use norm_num
+    """
     counts = {name: len(pat.findall(body)) for name, pat in TACTIC_PATTERNS.items()}
     has_sorry = counts["sorry"] + counts["admit"] > 0
     analytic = (
@@ -124,26 +132,41 @@ def classify_proof_body(body: str) -> dict[str, Any]:
         + counts["positivity"]
         + counts["field_simp"]
     )
-    certificate = counts["norm_num"] + counts["native_decide"] + counts["decide"]
-    definitional = counts["rfl"] > 0 and analytic == 0 and certificate == 0
+    # decide/native_decide are constructive closed-goal solvers (count as L0 when alone)
+    certificate = counts["norm_num"]  # pure float/norm certificates only
+    decidable = counts["decide"] + counts["native_decide"]
     chain = counts["exact"] + counts["refine"] + counts["have"]
+    structural = counts["simp"] + counts["rfl"]
+
+    pure_norm_num = (
+        certificate > 0
+        and analytic == 0
+        and chain == 0
+        and structural == 0
+        and decidable == 0
+    )
+    definitional = (
+        (counts["rfl"] > 0 or decidable > 0 or (counts["simp"] > 0 and certificate == 0))
+        and analytic == 0
+        and chain == 0
+    )
 
     if has_sorry:
         tier = "LX_sorry"
-    elif definitional or (counts["rfl"] > 0 and analytic == 0 and certificate <= 1):
-        tier = "L0_definitional"
-    elif analytic > 0 and certificate == 0:
-        tier = "L2_analytic"
     elif analytic > 0:
-        tier = "L2_analytic"  # mixed analytic + norm_num still analytic-class
-    elif chain >= 2 and certificate == 0:
+        tier = "L2_analytic"
+    elif chain >= 1:
+        # Multi-step constructive proof (domain raw_S, etc.) — real depth
         tier = "L3_chain"
-    elif chain >= 1 and certificate <= 1:
-        tier = "L3_chain"
-    elif certificate > 0:
+    elif definitional:
+        tier = "L0_definitional"
+    elif pure_norm_num:
+        tier = "L1_certificate"
+    elif certificate > 0 and (structural > 0 or decidable > 0):
+        # unfold + norm_num or simp + norm_num → still certificate-class
         tier = "L1_certificate"
     else:
-        tier = "L1_certificate"  # default unfold-only / trivial
+        tier = "L0_definitional"  # trivial / split / constructor-only
 
     mathlib_depth = tier in ("L0_definitional", "L2_analytic", "L3_chain", "L4_mathlib_core")
     return {
@@ -154,6 +177,7 @@ def classify_proof_body(body: str) -> dict[str, Any]:
         "analytic_score": analytic,
         "certificate_score": certificate,
         "chain_score": chain,
+        "pure_norm_num": pure_norm_num,
     }
 
 
@@ -176,8 +200,9 @@ def parse_module_theorems(path: Path) -> list[TheoremRecord]:
         name = m.group(1)
         chunk_end = starts[i + 1].start() if i + 1 < len(starts) else len(text)
         chunk = text[m.start() : chunk_end]
-        # Proof body after first `:= by` (or `:=` for term-mode proofs)
+        # Proof body after first `:= by` (or term-mode `:= <expr>`)
         body = ""
+        term_mode = False
         by_m = re.search(r":=\s*by\b", chunk)
         if by_m:
             body = chunk[by_m.end() :]
@@ -185,10 +210,27 @@ def parse_module_theorems(path: Path) -> list[TheoremRecord]:
             term_m = re.search(r":=\s*", chunk)
             if term_m:
                 body = chunk[term_m.end() :]
-                # term-mode equality proofs count as definitional if short
+                term_mode = True
                 if "rfl" in body or body.strip() in ("rfl", "trivial", "exact rfl"):
                     body = "rfl"
+                    term_mode = False
         cls = classify_proof_body(body)
+        # Term-mode proofs (`:= long_expr`) are constructive Mathlib (exact-style),
+        # not empty/L0 — e.g. Bounds log lemmas using lt_log_iff_exp_lt.
+        if (
+            term_mode
+            and body.strip()
+            and len(body.strip()) > 8
+            and not cls["has_sorry"]
+            and cls["tier"] in ("L0_definitional", "L1_certificate")
+        ):
+            cls["tier"] = "L3_chain"
+            cls["mathlib_depth"] = True
+            cls["chain_score"] = max(cls.get("chain_score", 0), 1)
+        try:
+            rel = str(path.resolve().relative_to(ROOT.resolve())).replace("\\", "/")
+        except ValueError:
+            rel = str(path).replace("\\", "/")
         rows.append(
             TheoremRecord(
                 module=path.stem,
@@ -197,7 +239,7 @@ def parse_module_theorems(path: Path) -> list[TheoremRecord]:
                 mathlib_depth=bool(cls["mathlib_depth"]),
                 has_sorry=bool(cls["has_sorry"]),
                 tactic_counts=cls["tactic_counts"],
-                path=str(path.relative_to(ROOT)).replace("\\", "/"),
+                path=rel,
             )
         )
     return rows

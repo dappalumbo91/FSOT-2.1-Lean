@@ -13,7 +13,7 @@ def cardiology_observable_count : ℕ := 45
 def cardiology_D_eff : ℕ := 15
 
 theorem cardiology_observable_count_pos : 0 < cardiology_observable_count := by
-  unfold cardiology_observable_count; norm_num
+  unfold cardiology_observable_count; decide
 
 theorem cardiology_median_error_under_half_pct :
     (0.030622122938654326 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem cardiology_bundle :
     (0.030622122938654326 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold cardiology_observable_count; norm_num,
-    by unfold cardiology_D_eff; norm_num,
+    by unfold cardiology_observable_count; decide,
+    by unfold cardiology_D_eff; decide,
     cardiology_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

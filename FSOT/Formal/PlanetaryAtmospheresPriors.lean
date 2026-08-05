@@ -20,21 +20,25 @@ def planetary_atmospheres_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def planetary_atmospheres_beats_sota_headlines : ℕ := 3
 
 theorem planetary_atmospheres_observable_count_pos : 0 < planetary_atmospheres_observable_count := by
-  unfold planetary_atmospheres_observable_count; norm_num
+  unfold planetary_atmospheres_observable_count; decide
 
 theorem planetary_atmospheres_body_count_pos : 0 < planetary_atmospheres_body_count := by
-  unfold planetary_atmospheres_body_count; norm_num
+  unfold planetary_atmospheres_body_count; decide
 
 theorem planetary_atmospheres_pooled_median_under_half_pct :
     planetary_atmospheres_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold planetary_atmospheres_pooled_median_error_pct; norm_num
+  unfold planetary_atmospheres_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem planetary_atmospheres_headline_median_under_half_pct :
     planetary_atmospheres_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold planetary_atmospheres_headline_median_error_pct; norm_num
+  unfold planetary_atmospheres_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem planetary_atmospheres_beats_sota_headlines_pos : 0 < planetary_atmospheres_beats_sota_headlines := by
-  unfold planetary_atmospheres_beats_sota_headlines; norm_num
+  unfold planetary_atmospheres_beats_sota_headlines; decide
 
 theorem planetary_atmospheres_bundle :
     planetary_atmospheres_observable_count = 21 ∧
@@ -45,9 +49,9 @@ theorem planetary_atmospheres_bundle :
     0 < planetary_atmospheres_beats_sota_headlines ∧
     raw_S (get_domain_params "galactic") > 0 := by
   refine ⟨
-    by unfold planetary_atmospheres_observable_count; norm_num,
-    by unfold planetary_atmospheres_body_count; norm_num,
-    by unfold planetary_atmospheres_D_eff; norm_num,
+    by unfold planetary_atmospheres_observable_count; decide,
+    by unfold planetary_atmospheres_body_count; decide,
+    by unfold planetary_atmospheres_D_eff; decide,
     planetary_atmospheres_pooled_median_under_half_pct,
     planetary_atmospheres_headline_median_under_half_pct,
     planetary_atmospheres_beats_sota_headlines_pos,

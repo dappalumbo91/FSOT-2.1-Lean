@@ -22,7 +22,7 @@ theorem species_total_count_eq_sum :
   unfold species_metal_count species_molecule_count species_polymer_count species_total_count; norm_num
 
 theorem species_property_count_pos : 0 < species_property_count := by
-  unfold species_property_count; norm_num
+  unfold species_property_count; decide
 
 /-- Bundle: 141 species across metals/molecules/polymers; material+molecular domain signs. -/
 theorem species_catalog_bundle :
@@ -35,12 +35,12 @@ theorem species_catalog_bundle :
     (0 : ℝ) < raw_S (get_domain_params "material") ∧
     (0 : ℝ) < raw_S (get_domain_params "molecular") := by
   refine ⟨
-    by unfold species_total_count; norm_num,
-    by unfold species_metal_count; norm_num,
-    by unfold species_molecule_count; norm_num,
-    by unfold species_polymer_count; norm_num,
+    by unfold species_total_count; decide,
+    by unfold species_metal_count; decide,
+    by unfold species_molecule_count; decide,
+    by unfold species_polymer_count; decide,
     species_total_count_eq_sum,
-    by unfold species_property_count; norm_num,
+    by unfold species_property_count; decide,
     material_raw_S_positive,
     molecular_raw_S_positive
   ⟩

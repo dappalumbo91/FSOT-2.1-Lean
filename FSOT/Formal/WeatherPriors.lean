@@ -20,7 +20,7 @@ theorem weather_S_min_positive : (0 : ℝ) < weather_S_min := by
   unfold weather_S_min; norm_num
 
 theorem weather_hour_count_pos : 0 < weather_hour_count := by
-  unfold weather_hour_count; norm_num
+  unfold weather_hour_count; decide
 
 /-- Bundle: 24-hour weather sim at D_eff=15 with positive S (medical-domain sign proxy). -/
 theorem weather_priors_bundle :
@@ -31,8 +31,8 @@ theorem weather_priors_bundle :
     (0 : ℝ) < weather_S_min ∧
     (0 : ℝ) < raw_S (get_domain_params "medical") := by
   refine ⟨
-    by unfold weather_hour_count; norm_num,
-    by unfold weather_D_eff; norm_num,
+    by unfold weather_hour_count; decide,
+    by unfold weather_D_eff; decide,
     by unfold weather_S_min; norm_num,
     by unfold weather_S_mean; norm_num,
     weather_S_min_positive,

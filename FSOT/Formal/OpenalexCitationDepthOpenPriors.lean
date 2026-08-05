@@ -18,23 +18,27 @@ def openalex_citation_depth_open_headline_median_error_pct : ℝ := (0.031506 : 
 def openalex_citation_depth_open_D_eff : ℕ := 12
 
 theorem openalex_citation_depth_open_observable_count_pos : 0 < openalex_citation_depth_open_observable_count := by
-  unfold openalex_citation_depth_open_observable_count; norm_num
+  unfold openalex_citation_depth_open_observable_count; decide
 
 theorem openalex_citation_depth_open_pooled_median_under_half_pct :
     openalex_citation_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold openalex_citation_depth_open_pooled_median_error_pct; norm_num
+  unfold openalex_citation_depth_open_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem openalex_citation_depth_open_headline_median_under_half_pct :
     openalex_citation_depth_open_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold openalex_citation_depth_open_headline_median_error_pct; norm_num
+  unfold openalex_citation_depth_open_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem openalex_citation_depth_open_bundle :
     openalex_citation_depth_open_observable_count = 150 ∧
     openalex_citation_depth_open_D_eff = 12 ∧
     openalex_citation_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
-  · unfold openalex_citation_depth_open_observable_count; norm_num
-  · unfold openalex_citation_depth_open_D_eff; norm_num
+  · unfold openalex_citation_depth_open_observable_count; decide
+  · unfold openalex_citation_depth_open_D_eff; decide
   · exact openalex_citation_depth_open_pooled_median_under_half_pct
 
 end

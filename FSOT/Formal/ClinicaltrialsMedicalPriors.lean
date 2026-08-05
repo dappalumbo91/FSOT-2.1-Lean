@@ -16,7 +16,7 @@ def clinicaltrials_medical_median_error_pct : ℝ := (0.0 : ℝ)
 def clinicaltrials_medical_D_eff : ℕ := 13
 
 theorem clinicaltrials_medical_observable_count_pos : 0 < clinicaltrials_medical_observable_count := by
-  unfold clinicaltrials_medical_observable_count; norm_num
+  unfold clinicaltrials_medical_observable_count; decide
 
 theorem clinicaltrials_medical_median_error_under_five_pct :
     clinicaltrials_medical_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem clinicaltrials_medical_bundle :
     clinicaltrials_medical_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨
-    by unfold clinicaltrials_medical_observable_count; norm_num,
-    by unfold clinicaltrials_medical_D_eff; norm_num,
+    by unfold clinicaltrials_medical_observable_count; decide,
+    by unfold clinicaltrials_medical_D_eff; decide,
     clinicaltrials_medical_median_error_under_five_pct,
     medical_raw_S_positive
   ⟩

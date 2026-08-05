@@ -13,7 +13,7 @@ def knowledge_base_portable_bundle_panel_observable_count : ℕ := 24
 def knowledge_base_portable_bundle_panel_D_eff : ℕ := 19
 
 theorem knowledge_base_portable_bundle_panel_observable_count_pos : 0 < knowledge_base_portable_bundle_panel_observable_count := by
-  unfold knowledge_base_portable_bundle_panel_observable_count; norm_num
+  unfold knowledge_base_portable_bundle_panel_observable_count; decide
 
 theorem knowledge_base_portable_bundle_panel_median_error_under_half_pct :
     (0.0020923899350648867 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem knowledge_base_portable_bundle_panel_bundle :
     (0.0020923899350648867 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold knowledge_base_portable_bundle_panel_observable_count; norm_num,
-    by unfold knowledge_base_portable_bundle_panel_D_eff; norm_num,
+    by unfold knowledge_base_portable_bundle_panel_observable_count; decide,
+    by unfold knowledge_base_portable_bundle_panel_D_eff; decide,
     knowledge_base_portable_bundle_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

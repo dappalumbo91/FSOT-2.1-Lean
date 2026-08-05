@@ -28,7 +28,7 @@ def fsot_burial_bias : ℝ := (-0.259391 : ℝ)
 
 theorem structure_calibration_residue_count_pos :
     0 < structure_calibration_residue_count := by
-  unfold structure_calibration_residue_count; norm_num
+  unfold structure_calibration_residue_count; decide
 
 theorem structure_calibration_burial_beats_fifty_pct :
     (50 : ℝ) < structure_calibration_burial_accuracy_pct := by
@@ -38,7 +38,7 @@ theorem structure_calibration_links_codon_map :
     codon_table_count = 64 ∧
     structure_calibration_protein_count > 0 ∧
     structure_calibration_burial_accuracy_pct > (50 : ℝ) := by
-  refine ⟨codon_table_count_eq_sixty_four, by unfold structure_calibration_protein_count; norm_num,
+  refine ⟨codon_table_count_eq_sixty_four, by unfold structure_calibration_protein_count; decide,
     structure_calibration_burial_beats_fifty_pct⟩
 
 theorem structure_calibration_bundle :
@@ -49,8 +49,8 @@ theorem structure_calibration_bundle :
     structure_calibration_median_error_pct = (40.53 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold structure_calibration_residue_count; norm_num,
-    by unfold structure_calibration_protein_count; norm_num,
+    by unfold structure_calibration_residue_count; decide,
+    by unfold structure_calibration_protein_count; decide,
     by unfold structure_calibration_burial_accuracy_pct; norm_num,
     by unfold structure_calibration_disorder_accuracy_pct; norm_num,
     by unfold structure_calibration_median_error_pct; norm_num,

@@ -13,7 +13,7 @@ def chemical_engineering_observable_count : ℕ := 186
 def chemical_engineering_D_eff : ℕ := 16
 
 theorem chemical_engineering_observable_count_pos : 0 < chemical_engineering_observable_count := by
-  unfold chemical_engineering_observable_count; norm_num
+  unfold chemical_engineering_observable_count; decide
 
 theorem chemical_engineering_median_error_under_half_pct :
     (0.0010333425185953097 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem chemical_engineering_bundle :
     (0.0010333425185953097 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold chemical_engineering_observable_count; norm_num,
-    by unfold chemical_engineering_D_eff; norm_num,
+    by unfold chemical_engineering_observable_count; decide,
+    by unfold chemical_engineering_D_eff; decide,
     chemical_engineering_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

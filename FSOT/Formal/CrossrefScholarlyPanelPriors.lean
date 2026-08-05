@@ -13,7 +13,7 @@ def crossref_scholarly_panel_observable_count : ℕ := 200
 def crossref_scholarly_panel_D_eff : ℕ := 18
 
 theorem crossref_scholarly_panel_observable_count_pos : 0 < crossref_scholarly_panel_observable_count := by
-  unfold crossref_scholarly_panel_observable_count; norm_num
+  unfold crossref_scholarly_panel_observable_count; decide
 
 theorem crossref_scholarly_panel_median_error_under_half_pct :
     (0.01382 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem crossref_scholarly_panel_bundle :
     (0.01382 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold crossref_scholarly_panel_observable_count; norm_num,
-    by unfold crossref_scholarly_panel_D_eff; norm_num,
+    by unfold crossref_scholarly_panel_observable_count; decide,
+    by unfold crossref_scholarly_panel_D_eff; decide,
     crossref_scholarly_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

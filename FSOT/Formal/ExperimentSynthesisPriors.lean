@@ -22,10 +22,10 @@ def experiment_synthesis_approach_count : ℕ := 5
 def experiment_llm_project_folder_count : ℕ := 21
 
 theorem experiment_synthesis_approach_count_pos : 0 < experiment_synthesis_approach_count := by
-  unfold experiment_synthesis_approach_count; norm_num
+  unfold experiment_synthesis_approach_count; decide
 
 theorem experiment_llm_project_count_pos : 0 < experiment_llm_project_folder_count := by
-  unfold experiment_llm_project_folder_count; norm_num
+  unfold experiment_llm_project_folder_count; decide
 
 /-- Bundle: neuron cohort + hybrid + Aether Prime + magic circle synthesis floor. -/
 theorem experiment_synthesis_priors_bundle :
@@ -39,8 +39,8 @@ theorem experiment_synthesis_priors_bundle :
     (7900 : ℕ) < neurolab_strict_empirical_records ∧
     (0 : ℝ) < raw_S (get_domain_params "neural") := by
   refine ⟨
-    by unfold experiment_synthesis_approach_count; norm_num,
-    by unfold experiment_llm_project_folder_count; norm_num,
+    by unfold experiment_synthesis_approach_count; decide,
+    by unfold experiment_llm_project_folder_count; decide,
     allen_cohort_fi_median_rel_err_lt_thirty_pct,
     hero_certified_fi_mean_rel_err_lt_fifteen_pct,
     held_out_cell_count_large,

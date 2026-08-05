@@ -21,21 +21,25 @@ def math_generator_rules_eval_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def math_generator_rules_eval_beats_sota_headlines : ℕ := 4
 
 theorem math_generator_rules_eval_observable_count_pos : 0 < math_generator_rules_eval_observable_count := by
-  unfold math_generator_rules_eval_observable_count; norm_num
+  unfold math_generator_rules_eval_observable_count; decide
 
 theorem math_generator_rules_eval_corpus_count_pos : 0 < math_generator_rules_eval_corpus_count := by
-  unfold math_generator_rules_eval_corpus_count; norm_num
+  unfold math_generator_rules_eval_corpus_count; decide
 
 theorem math_generator_rules_eval_pooled_median_under_half_pct :
     math_generator_rules_eval_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold math_generator_rules_eval_pooled_median_error_pct; norm_num
+  unfold math_generator_rules_eval_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem math_generator_rules_eval_headline_median_under_half_pct :
     math_generator_rules_eval_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold math_generator_rules_eval_headline_median_error_pct; norm_num
+  unfold math_generator_rules_eval_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem math_generator_rules_eval_beats_sota_headlines_pos : 0 < math_generator_rules_eval_beats_sota_headlines := by
-  unfold math_generator_rules_eval_beats_sota_headlines; norm_num
+  unfold math_generator_rules_eval_beats_sota_headlines; decide
 
 theorem math_generator_rules_eval_bundle :
     math_generator_rules_eval_observable_count = 1552 ∧
@@ -47,10 +51,10 @@ theorem math_generator_rules_eval_bundle :
     0 < math_generator_rules_eval_beats_sota_headlines ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
-    by unfold math_generator_rules_eval_observable_count; norm_num,
-    by unfold math_generator_rules_eval_corpus_count; norm_num,
-    by unfold math_generator_rules_eval_numeric_eval_count; norm_num,
-    by unfold math_generator_rules_eval_D_eff; norm_num,
+    by unfold math_generator_rules_eval_observable_count; decide,
+    by unfold math_generator_rules_eval_corpus_count; decide,
+    by unfold math_generator_rules_eval_numeric_eval_count; decide,
+    by unfold math_generator_rules_eval_D_eff; decide,
     math_generator_rules_eval_pooled_median_under_half_pct,
     math_generator_rules_eval_headline_median_under_half_pct,
     math_generator_rules_eval_beats_sota_headlines_pos,

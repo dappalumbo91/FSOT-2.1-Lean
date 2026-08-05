@@ -13,7 +13,7 @@ def natural_formation_element_simulation_observable_count : ℕ := 44
 def natural_formation_element_simulation_D_eff : ℕ := 11
 
 theorem natural_formation_element_simulation_observable_count_pos : 0 < natural_formation_element_simulation_observable_count := by
-  unfold natural_formation_element_simulation_observable_count; norm_num
+  unfold natural_formation_element_simulation_observable_count; decide
 
 theorem natural_formation_element_simulation_median_error_under_half_pct :
     (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem natural_formation_element_simulation_bundle :
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold natural_formation_element_simulation_observable_count; norm_num,
-    by unfold natural_formation_element_simulation_D_eff; norm_num,
+    by unfold natural_formation_element_simulation_observable_count; decide,
+    by unfold natural_formation_element_simulation_D_eff; decide,
     natural_formation_element_simulation_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

@@ -21,7 +21,7 @@ def distinct_aa_trinary_patterns : ℕ := 10
 
 theorem canonical_amino_acid_count_eq_twenty :
     canonical_amino_acid_count = 20 := by
-  unfold canonical_amino_acid_count; norm_num
+  unfold canonical_amino_acid_count; decide
 
 theorem protein_trinary_pattern_space_eq_twenty_seven :
     genetic_trinary_alphabet_card ^ 3 = 27 :=
@@ -218,7 +218,7 @@ theorem protein_amino_acid_trinary_bundle :
     (valine_charge, valine_polarity, valine_volume) = (0, -1, 0) ∧
     (tryptophan_charge, tryptophan_polarity, tryptophan_volume) = (0, -1, 1) ∧
     (tyrosine_charge, tyrosine_polarity, tyrosine_volume) = (0, 1, 1) := by
-  refine ⟨by unfold canonical_amino_acid_count; norm_num, by unfold distinct_aa_trinary_patterns; norm_num, by unfold distinct_aa_trinary_patterns genetic_trinary_alphabet_card; norm_num, protein_trinary_pattern_space_eq_twenty_seven, protein_amino_acid_genomic_identity,
+  refine ⟨by unfold canonical_amino_acid_count; decide, by unfold distinct_aa_trinary_patterns; decide, by unfold distinct_aa_trinary_patterns genetic_trinary_alphabet_card; norm_num, protein_trinary_pattern_space_eq_twenty_seven, protein_amino_acid_genomic_identity,
     alanine_trinary_phase,
     cysteine_trinary_phase,
     aspartic_acid_trinary_phase,

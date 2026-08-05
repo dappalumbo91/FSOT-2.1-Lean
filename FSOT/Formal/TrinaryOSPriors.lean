@@ -20,7 +20,7 @@ def trinary_os_call_ret_bytes : ℕ := 312
 def trinary_os_spawn_join_bytes : ℕ := 440
 
 theorem trinary_os_word_width_eq_27 : trinary_os_word_width = 27 := by
-  unfold trinary_os_word_width; norm_num
+  unfold trinary_os_word_width; decide
 
 theorem trinary_os_hello_smaller_than_spawn :
     trinary_os_hello_bytes < trinary_os_spawn_join_bytes := by
@@ -37,12 +37,12 @@ theorem trinary_os_fsotb_bundle :
     trinary_os_hello_bytes < trinary_os_spawn_join_bytes ∧
     (0.42 : ℝ) < k := by
   refine ⟨
-    by unfold trinary_os_task_slots; norm_num,
-    by unfold trinary_os_word_width; norm_num,
-    by unfold trinary_os_cortical_layers; norm_num,
-    by unfold trinary_os_hello_bytes; norm_num,
-    by unfold trinary_os_call_ret_bytes; norm_num,
-    by unfold trinary_os_spawn_join_bytes; norm_num,
+    by unfold trinary_os_task_slots; decide,
+    by unfold trinary_os_word_width; decide,
+    by unfold trinary_os_cortical_layers; decide,
+    by unfold trinary_os_hello_bytes; decide,
+    by unfold trinary_os_call_ret_bytes; decide,
+    by unfold trinary_os_spawn_join_bytes; decide,
     trinary_os_hello_smaller_than_spawn,
     k_gt_0420
   ⟩

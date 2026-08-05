@@ -18,23 +18,27 @@ def gbif_taxon_depth_open_headline_median_error_pct : ℝ := (0.006006 : ℝ)
 def gbif_taxon_depth_open_D_eff : ℕ := 14
 
 theorem gbif_taxon_depth_open_observable_count_pos : 0 < gbif_taxon_depth_open_observable_count := by
-  unfold gbif_taxon_depth_open_observable_count; norm_num
+  unfold gbif_taxon_depth_open_observable_count; decide
 
 theorem gbif_taxon_depth_open_pooled_median_under_half_pct :
     gbif_taxon_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold gbif_taxon_depth_open_pooled_median_error_pct; norm_num
+  unfold gbif_taxon_depth_open_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem gbif_taxon_depth_open_headline_median_under_half_pct :
     gbif_taxon_depth_open_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold gbif_taxon_depth_open_headline_median_error_pct; norm_num
+  unfold gbif_taxon_depth_open_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem gbif_taxon_depth_open_bundle :
     gbif_taxon_depth_open_observable_count = 203 ∧
     gbif_taxon_depth_open_D_eff = 14 ∧
     gbif_taxon_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
-  · unfold gbif_taxon_depth_open_observable_count; norm_num
-  · unfold gbif_taxon_depth_open_D_eff; norm_num
+  · unfold gbif_taxon_depth_open_observable_count; decide
+  · unfold gbif_taxon_depth_open_D_eff; decide
   · exact gbif_taxon_depth_open_pooled_median_under_half_pct
 
 end

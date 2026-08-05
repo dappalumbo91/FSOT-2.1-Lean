@@ -13,7 +13,7 @@ def proof_carrying_code_genome_observable_count : ℕ := 25
 def proof_carrying_code_genome_D_eff : ℕ := 16
 
 theorem proof_carrying_code_genome_observable_count_pos : 0 < proof_carrying_code_genome_observable_count := by
-  unfold proof_carrying_code_genome_observable_count; norm_num
+  unfold proof_carrying_code_genome_observable_count; decide
 
 theorem proof_carrying_code_genome_median_error_under_half_pct :
     (0.0051685586271776884 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem proof_carrying_code_genome_bundle :
     (0.0051685586271776884 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold proof_carrying_code_genome_observable_count; norm_num,
-    by unfold proof_carrying_code_genome_D_eff; norm_num,
+    by unfold proof_carrying_code_genome_observable_count; decide,
+    by unfold proof_carrying_code_genome_D_eff; decide,
     proof_carrying_code_genome_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

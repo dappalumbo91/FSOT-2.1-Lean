@@ -17,7 +17,7 @@ def fuel_resolved_entry_count : ℕ := 34
 def fuel_source_file_count : ℕ := 2
 
 theorem fuel_profile_count_pos : 0 < fuel_profile_count := by
-  unfold fuel_profile_count; norm_num
+  unfold fuel_profile_count; decide
 
 theorem fuel_resolved_le_entries :
     fuel_resolved_entry_count ≤ fuel_lookup_entry_count := by
@@ -34,9 +34,9 @@ theorem fuel_lab_compound_bundle :
     fuel_resolved_entry_count ≤ fuel_lookup_entry_count ∧
     (0 : ℝ) < raw_S (get_domain_params "chemical") := by
   refine ⟨
-    by unfold fuel_profile_count; norm_num,
-    by unfold fuel_lookup_entry_count; norm_num,
-    by unfold fuel_resolved_entry_count; norm_num,
+    by unfold fuel_profile_count; decide,
+    by unfold fuel_lookup_entry_count; decide,
+    by unfold fuel_resolved_entry_count; decide,
     fuel_resolved_le_entries,
     chemical_raw_S_positive
   ⟩

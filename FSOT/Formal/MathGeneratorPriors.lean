@@ -23,13 +23,13 @@ def math_generator_rule_corpus_count : ℕ := 62
 def math_generator_rule_observable_count : ℕ := 1552
 
 theorem math_generator_comparison_count_pos : 0 < math_generator_comparison_count := by
-  unfold math_generator_comparison_count; norm_num
+  unfold math_generator_comparison_count; decide
 
 theorem math_generator_rule_corpus_count_pos : 0 < math_generator_rule_corpus_count := by
-  unfold math_generator_rule_corpus_count; norm_num
+  unfold math_generator_rule_corpus_count; decide
 
 theorem math_generator_rule_observable_count_pos : 0 < math_generator_rule_observable_count := by
-  unfold math_generator_rule_observable_count; norm_num
+  unfold math_generator_rule_observable_count; decide
 
 theorem math_generator_max_error_pct_positive : (0 : ℝ) < math_generator_max_error_pct := by
   unfold math_generator_max_error_pct; norm_num
@@ -49,12 +49,12 @@ theorem math_generator_priors_bundle :
     math_generator_rule_corpus_count ≤ math_generator_rule_observable_count ∧
     (0 : ℝ) < raw_S (get_domain_params "particle") := by
   refine ⟨
-    by unfold math_generator_comparison_count; norm_num,
+    by unfold math_generator_comparison_count; decide,
     by unfold math_generator_max_error_pct; norm_num,
     by unfold math_generator_c_eff; norm_num,
     by unfold math_generator_p_base; norm_num,
-    by unfold math_generator_rule_corpus_count; norm_num,
-    by unfold math_generator_rule_observable_count; norm_num,
+    by unfold math_generator_rule_corpus_count; decide,
+    by unfold math_generator_rule_observable_count; decide,
     math_generator_rule_observables_ge_corpora,
     particle_raw_S_positive
   ⟩

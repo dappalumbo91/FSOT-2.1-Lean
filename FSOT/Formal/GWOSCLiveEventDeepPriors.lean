@@ -13,7 +13,7 @@ def gwosc_live_event_deep_observable_count : ℕ := 191
 def gwosc_live_event_deep_D_eff : ℕ := 20
 
 theorem gwosc_live_event_deep_observable_count_pos : 0 < gwosc_live_event_deep_observable_count := by
-  unfold gwosc_live_event_deep_observable_count; norm_num
+  unfold gwosc_live_event_deep_observable_count; decide
 
 theorem gwosc_live_event_deep_median_error_under_half_pct :
     (0.008488 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem gwosc_live_event_deep_bundle :
     (0.008488 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold gwosc_live_event_deep_observable_count; norm_num,
-    by unfold gwosc_live_event_deep_D_eff; norm_num,
+    by unfold gwosc_live_event_deep_observable_count; decide,
+    by unfold gwosc_live_event_deep_D_eff; decide,
     gwosc_live_event_deep_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

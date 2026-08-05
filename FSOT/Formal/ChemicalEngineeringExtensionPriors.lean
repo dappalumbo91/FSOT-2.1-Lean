@@ -18,18 +18,22 @@ def chemical_engineering_ext_beats_sota_headlines : ℕ := 2
 def chemical_engineering_ext_D_eff : ℕ := 16
 
 theorem chemical_engineering_ext_observable_count_pos : 0 < chemical_engineering_ext_observable_count := by
-  unfold chemical_engineering_ext_observable_count; norm_num
+  unfold chemical_engineering_ext_observable_count; decide
 
 theorem chemical_engineering_ext_pooled_median_under_half_pct :
     chemical_engineering_ext_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold chemical_engineering_ext_pooled_median_error_pct; norm_num
+  unfold chemical_engineering_ext_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem chemical_engineering_ext_headline_median_under_half_pct :
     chemical_engineering_ext_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold chemical_engineering_ext_headline_median_error_pct; norm_num
+  unfold chemical_engineering_ext_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem chemical_engineering_ext_beats_sota_headlines_pos : 0 < chemical_engineering_ext_beats_sota_headlines := by
-  unfold chemical_engineering_ext_beats_sota_headlines; norm_num
+  unfold chemical_engineering_ext_beats_sota_headlines; decide
 
 theorem chemical_engineering_ext_bundle :
     chemical_engineering_ext_observable_count = 186 ∧
@@ -38,7 +42,7 @@ theorem chemical_engineering_ext_bundle :
     0 < chemical_engineering_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "chemical") > 0 := by
   refine ⟨
-    by unfold chemical_engineering_ext_observable_count; norm_num,
+    by unfold chemical_engineering_ext_observable_count; decide,
     chemical_engineering_ext_pooled_median_under_half_pct,
     chemical_engineering_ext_headline_median_under_half_pct,
     chemical_engineering_ext_beats_sota_headlines_pos,

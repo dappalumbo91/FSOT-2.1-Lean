@@ -38,7 +38,7 @@ theorem vibra_register_bundle :
     (0 : ℝ) < vibra_avg_S_mean ∧
     raw_S (get_domain_params "ai") ≤ 0 := by
   refine ⟨
-    by unfold vibra_d_eff; norm_num,
+    by unfold vibra_d_eff; decide,
     by unfold vibra_base_freq_hz; norm_num,
     by unfold vibra_pattern_stability; norm_num,
     by unfold vibra_avg_S_mean; norm_num,

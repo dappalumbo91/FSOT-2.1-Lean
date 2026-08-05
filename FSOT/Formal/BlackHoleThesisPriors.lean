@@ -13,7 +13,7 @@ def blackhole_thesis_observable_count : ℕ := 28
 def blackhole_thesis_within_target_2pct : ℕ := 28
 
 theorem blackhole_thesis_observable_count_pos : 0 < blackhole_thesis_observable_count := by
-  unfold blackhole_thesis_observable_count; norm_num
+  unfold blackhole_thesis_observable_count; decide
 
 theorem blackhole_thesis_within_le_total :
     blackhole_thesis_within_target_2pct ≤ blackhole_thesis_observable_count := by
@@ -26,8 +26,8 @@ theorem blackhole_thesis_bundle :
     blackhole_thesis_within_target_2pct ≤ blackhole_thesis_observable_count ∧
     (0 : ℝ) < raw_S (get_domain_params "blackhole") := by
   refine ⟨
-    by unfold blackhole_thesis_observable_count; norm_num,
-    by unfold blackhole_thesis_within_target_2pct; norm_num,
+    by unfold blackhole_thesis_observable_count; decide,
+    by unfold blackhole_thesis_within_target_2pct; decide,
     blackhole_thesis_within_le_total,
     blackhole_raw_S_positive
   ⟩

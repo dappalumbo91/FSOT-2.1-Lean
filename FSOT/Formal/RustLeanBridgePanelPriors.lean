@@ -13,7 +13,7 @@ def rust_lean_bridge_panel_observable_count : ℕ := 24
 def rust_lean_bridge_panel_D_eff : ℕ := 13
 
 theorem rust_lean_bridge_panel_observable_count_pos : 0 < rust_lean_bridge_panel_observable_count := by
-  unfold rust_lean_bridge_panel_observable_count; norm_num
+  unfold rust_lean_bridge_panel_observable_count; decide
 
 theorem rust_lean_bridge_panel_median_error_under_half_pct :
     (0.014767 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem rust_lean_bridge_panel_bundle :
     (0.014767 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold rust_lean_bridge_panel_observable_count; norm_num,
-    by unfold rust_lean_bridge_panel_D_eff; norm_num,
+    by unfold rust_lean_bridge_panel_observable_count; decide,
+    by unfold rust_lean_bridge_panel_D_eff; decide,
     rust_lean_bridge_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

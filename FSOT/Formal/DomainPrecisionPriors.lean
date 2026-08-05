@@ -25,15 +25,15 @@ def domain_precision_sign_mismatch_count : ℕ := 0
 
 theorem domain_precision_numeric_majority :
     (30 : ℕ) < domain_precision_numeric_count := by
-  unfold domain_precision_numeric_count; norm_num
+  unfold domain_precision_numeric_count; decide
 
 theorem domain_precision_target_band_large :
     (32 : ℕ) < domain_precision_target_band_count := by
-  unfold domain_precision_target_band_count; norm_num
+  unfold domain_precision_target_band_count; decide
 
 theorem domain_precision_huge_gap_bounded :
     domain_precision_huge_gap_count ≤ (2 : ℕ) := by
-  unfold domain_precision_huge_gap_count; norm_num
+  unfold domain_precision_huge_gap_count; decide
 
 theorem cosmology_median_under_one_pct :
     (0.0007354204043789445 : ℝ) < (1 : ℝ) := by norm_num

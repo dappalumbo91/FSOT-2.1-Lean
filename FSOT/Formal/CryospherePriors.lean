@@ -18,7 +18,7 @@ def cryosphere_D_eff : ℕ := 16
 def cryosphere_match_rate : ℝ := (1.0 : ℝ)
 
 theorem cryosphere_month_count_pos : 0 < cryosphere_month_count := by
-  unfold cryosphere_month_count; norm_num
+  unfold cryosphere_month_count; decide
 
 theorem cryosphere_match_le_total : cryosphere_match_count ≤ cryosphere_month_count := by
   unfold cryosphere_match_count cryosphere_month_count; norm_num
@@ -31,10 +31,10 @@ theorem cryosphere_bundle :
     cryosphere_match_count ≤ cryosphere_month_count ∧
     raw_S (get_domain_params "galactic") > 0 := by
   refine ⟨
-    by unfold cryosphere_month_count; norm_num,
-    by unfold cryosphere_station_count; norm_num,
-    by unfold cryosphere_match_count; norm_num,
-    by unfold cryosphere_D_eff; norm_num,
+    by unfold cryosphere_month_count; decide,
+    by unfold cryosphere_station_count; decide,
+    by unfold cryosphere_match_count; decide,
+    by unfold cryosphere_D_eff; decide,
     cryosphere_match_le_total,
     galactic_raw_S_positive
   ⟩

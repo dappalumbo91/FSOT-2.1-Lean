@@ -16,7 +16,7 @@ def ethology_median_error_pct : ℝ := (0.006607 : ℝ)
 def ethology_D_eff : ℕ := 15
 
 theorem ethology_observable_count_pos : 0 < ethology_observable_count := by
-  unfold ethology_observable_count; norm_num
+  unfold ethology_observable_count; decide
 
 theorem ethology_median_error_under_five_pct :
     ethology_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem ethology_bundle :
     ethology_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold ethology_observable_count; norm_num,
-    by unfold ethology_D_eff; norm_num,
+    by unfold ethology_observable_count; decide,
+    by unfold ethology_D_eff; decide,
     ethology_median_error_under_five_pct,
     biological_raw_S_positive
   ⟩

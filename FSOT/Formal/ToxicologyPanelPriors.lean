@@ -13,7 +13,7 @@ def toxicology_panel_observable_count : ℕ := 21
 def toxicology_panel_D_eff : ℕ := 13
 
 theorem toxicology_panel_observable_count_pos : 0 < toxicology_panel_observable_count := by
-  unfold toxicology_panel_observable_count; norm_num
+  unfold toxicology_panel_observable_count; decide
 
 theorem toxicology_panel_median_error_under_half_pct :
     (0.033401 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem toxicology_panel_bundle :
     (0.033401 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold toxicology_panel_observable_count; norm_num,
-    by unfold toxicology_panel_D_eff; norm_num,
+    by unfold toxicology_panel_observable_count; decide,
+    by unfold toxicology_panel_D_eff; decide,
     toxicology_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

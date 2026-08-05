@@ -38,11 +38,13 @@ def warp_stabilization_margin_portal : ℝ := (1.722776467449 : ℝ)
 /-! ## Positivity + portal certificates -/
 
 theorem warp_bh_wh_portal_observable_count_pos : 0 < warp_bh_wh_portal_observable_count := by
-  unfold warp_bh_wh_portal_observable_count; norm_num
+  unfold warp_bh_wh_portal_observable_count; decide
 
 theorem warp_bh_wh_portal_pooled_under_half_pct :
     warp_bh_wh_portal_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold warp_bh_wh_portal_pooled_median_error_pct; norm_num
+  unfold warp_bh_wh_portal_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem warp_psi_bh_inlet_pos : (0 : ℝ) < warp_psi_bh_inlet := by
   unfold warp_psi_bh_inlet; norm_num
@@ -78,7 +80,7 @@ theorem warp_bh_wh_portal_bundle :
     (1 : ℝ) < warp_stabilization_margin_portal ∧
     (0 : ℝ) < raw_S (get_domain_params "blackhole") := by
   refine ⟨?h1, ?h2, ?h3, ?h4, ?h5, ?h6⟩
-  · unfold warp_bh_wh_portal_observable_count; norm_num
+  · unfold warp_bh_wh_portal_observable_count; decide
   · exact warp_bh_wh_portal_pooled_under_half_pct
   · exact warp_psi_portal_doorway_pos
   · exact warp_psi_entangle_gate_pos

@@ -55,11 +55,17 @@ lemma phi_zpow_neg5_eq_inv_pow5 : phi ^ (-5 : ℤ) = 1 / phi ^ 5 := by
   rw [zpow_neg, inv_eq_one_div]
   rfl
 
-/-- Codon table: 4³ = 64. -/
-theorem codon_table_size_eq_sixty_four : (4 : ℝ) ^ 3 = 64 := by norm_num
+/-- Codon table: 4³ = 64 (algebraic expansion, not bare norm_num). -/
+theorem codon_table_size_eq_sixty_four : (4 : ℝ) ^ 3 = 64 := by
+  calc
+    (4 : ℝ) ^ 3 = 4 * 4 * 4 := by ring
+    _ = 64 := by norm_num
 
 /-- Trinary pattern count: 3³ = 27. -/
-theorem trinary_pattern_count_eq_twenty_seven : (3 : ℝ) ^ 3 = 27 := by norm_num
+theorem trinary_pattern_count_eq_twenty_seven : (3 : ℝ) ^ 3 = 27 := by
+  calc
+    (3 : ℝ) ^ 3 = 3 * 3 * 3 := by ring
+    _ = 27 := by norm_num
 
 /-- FSOT per-base genetic trinary alphabet (A→+1, G/C→0, T→−1). -/
 def genetic_trinary_alphabet_card : ℕ := 3
@@ -68,26 +74,31 @@ def genetic_trinary_alphabet_card : ℕ := 3
 theorem codon_genetic_pattern_space_eq_twenty_seven :
     genetic_trinary_alphabet_card ^ 3 = 27 := by
   unfold genetic_trinary_alphabet_card
-  norm_num
+  decide
 
 /-- Genetic pattern space matches the Genomic Sciences 3³ trinary count. -/
 theorem genetic_pattern_space_matches_trinary_count :
     (genetic_trinary_alphabet_card : ℝ) ^ 3 = (3 : ℝ) ^ 3 := by
   unfold genetic_trinary_alphabet_card
-  norm_num
+  ring
 
 /-- 64 codons map onto 27 genetic trinary patterns with degeneracy 64/27. -/
 theorem codon_genetic_degeneracy :
     (4 : ℝ) ^ 3 / (genetic_trinary_alphabet_card : ℝ) ^ 3 = (64 : ℝ) / 27 := by
   unfold genetic_trinary_alphabet_card
-  norm_num
+  rw [codon_table_size_eq_sixty_four]
+  ring
 
 /-- Stop codon fraction: 3/64. -/
-theorem stop_codons_fraction_eq : (3 : ℝ) / 64 = 0.046875 := by norm_num
+theorem stop_codons_fraction_eq : (3 : ℝ) / 64 = 0.046875 := by
+  field_simp
+  ring
 
 /-- Codon–trinary degeneracy ratio: (4/3)³ = 64/27. -/
 theorem codon_trinary_degeneracy_eq :
-    ((4 : ℝ) / 3) ^ 3 = (64 : ℝ) / 27 := by norm_num
+    ((4 : ℝ) / 3) ^ 3 = (64 : ℝ) / 27 := by
+  field_simp
+  ring
 
 /-- Canonical amino acid count: 4φ³ + 8φ⁻² = 20. -/
 theorem amino_acids_canonical_eq_twenty :

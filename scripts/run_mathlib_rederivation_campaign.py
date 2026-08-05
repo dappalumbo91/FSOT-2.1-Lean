@@ -358,14 +358,19 @@ def main() -> int:
     all_waves_ok = all(w.get("wave_ok") for w in wave_results) if wave_results else False
     global_lake_ok = lake_status == "passed"
 
-    # Closure criteria
+    engine_l1 = int((eng_inv.get("by_tier") or {}).get("L1_certificate") or 0)
+    corpus_mathlib_pct = float(corpus.get("mathlib_depth_pct") or 0.0)
+    corpus_l1 = int((corpus.get("by_tier") or {}).get("L1_certificate") or 0)
+
+    # REAL depth gates (not lake-only laziness)
     engine_core_closed = (
         engine_ok
         and not eng_inv.get("sorry_list")
-        and engine_mathlib_pct >= 20.0
+        and engine_mathlib_pct >= 90.0
+        and engine_l1 <= 40
         and global_lake_ok
     )
-    # Full corpus: every wave ok + zero sorry + full lake build + priors waves present
+    # Full corpus: lake + no sorry + engine depth + corpus Mathlib-class majority
     full_corpus_closed = (
         all_waves_ok
         and not corpus.get("sorry_list")
@@ -374,6 +379,8 @@ def main() -> int:
         and priors_ok
         and global_lake_ok
         and engine_core_closed
+        and corpus_mathlib_pct >= 55.0
+        and corpus_l1 <= int(0.55 * max(corpus.get("theorem_count") or 1, 1))
     )
 
     if full_corpus_closed:
@@ -401,6 +408,15 @@ def main() -> int:
             "stderr_tail": (lake_build.get("stderr_tail") or "")[-500:],
         },
         "engine_mathlib_depth_pct": engine_mathlib_pct,
+        "depth_gates": {
+            "engine_mathlib_min_pct": 90.0,
+            "engine_l1_max": 40,
+            "corpus_mathlib_min_pct": 55.0,
+            "engine_l1_count": engine_l1,
+            "corpus_l1_count": corpus_l1,
+            "engine_mathlib_pct": engine_mathlib_pct,
+            "corpus_mathlib_pct": corpus_mathlib_pct,
+        },
         "corpus": {
             "theorem_count": corpus["theorem_count"],
             "mathlib_depth_count": corpus["mathlib_depth_count"],
@@ -413,6 +429,7 @@ def main() -> int:
             "mathlib_depth_count": eng_inv.get("mathlib_depth_count"),
             "mathlib_depth_pct": eng_inv.get("mathlib_depth_pct"),
             "by_tier": eng_inv.get("by_tier"),
+            "l1_certificate_count": engine_l1,
         },
         "waves": wave_results,
         "wave_summary": {

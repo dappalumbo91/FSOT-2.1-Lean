@@ -17,7 +17,7 @@ def seismology_D_eff : ℕ := 15
 def seismology_match_rate : ℝ := (1.0 : ℝ)
 
 theorem seismology_event_count_pos : 0 < seismology_event_count := by
-  unfold seismology_event_count; norm_num
+  unfold seismology_event_count; decide
 
 theorem seismology_match_le_total : seismology_match_count ≤ seismology_event_count := by
   unfold seismology_match_count seismology_event_count; norm_num
@@ -29,9 +29,9 @@ theorem seismology_bundle :
     seismology_match_count ≤ seismology_event_count ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold seismology_event_count; norm_num,
-    by unfold seismology_match_count; norm_num,
-    by unfold seismology_D_eff; norm_num,
+    by unfold seismology_event_count; decide,
+    by unfold seismology_match_count; decide,
+    by unfold seismology_D_eff; decide,
     seismology_match_le_total,
     energy_raw_S_positive
   ⟩

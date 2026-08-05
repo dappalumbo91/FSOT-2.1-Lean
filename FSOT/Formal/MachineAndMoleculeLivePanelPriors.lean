@@ -17,7 +17,7 @@ def machine_and_molecule_live_median_error_pct : ℝ := (0.01341 : ℝ)
 def machine_and_molecule_live_D_eff : ℕ := 15
 
 theorem machine_and_molecule_live_observable_count_pos : 0 < machine_and_molecule_live_observable_count := by
-  unfold machine_and_molecule_live_observable_count; norm_num
+  unfold machine_and_molecule_live_observable_count; decide
 
 theorem machine_and_molecule_live_median_error_under_five_pct :
     machine_and_molecule_live_median_error_pct < (5 : ℝ) := by
@@ -25,7 +25,9 @@ theorem machine_and_molecule_live_median_error_under_five_pct :
 
 theorem machine_and_molecule_live_median_error_under_half_pct :
     machine_and_molecule_live_median_error_pct < (0.5 : ℝ) := by
-  unfold machine_and_molecule_live_median_error_pct; norm_num
+  unfold machine_and_molecule_live_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem machine_and_molecule_live_bundle :
     machine_and_molecule_live_observable_count = 120 ∧
@@ -33,8 +35,8 @@ theorem machine_and_molecule_live_bundle :
     machine_and_molecule_live_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨
-    by unfold machine_and_molecule_live_observable_count; norm_num,
-    by unfold machine_and_molecule_live_D_eff; norm_num,
+    by unfold machine_and_molecule_live_observable_count; decide,
+    by unfold machine_and_molecule_live_D_eff; decide,
     machine_and_molecule_live_median_error_under_half_pct,
     material_raw_S_positive
   ⟩

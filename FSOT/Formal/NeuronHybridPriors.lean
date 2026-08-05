@@ -29,7 +29,7 @@ def neuron_soma_gain_scalar : ℝ := (0.5 : ℝ)
 def neuron_canonical_neuroscience_S : ℝ := (0.5143619629083619 : ℝ)
 
 theorem neuron_fi_point_count_pos : 0 < neuron_fi_point_count := by
-  unfold neuron_fi_point_count; norm_num
+  unfold neuron_fi_point_count; decide
 
 theorem neuron_mean_rel_err_lt_fifteen_pct : neuron_mean_rel_err < (0.15 : ℝ) := by
   unfold neuron_mean_rel_err; norm_num
@@ -54,8 +54,8 @@ theorem neuron_hybrid_priors_bundle :
     (0 : ℝ) < neuron_canonical_neuroscience_S ∧
     (0 : ℝ) < raw_S (get_domain_params "neural") := by
   refine ⟨
-    by unfold neuron_allen_specimen_id; norm_num,
-    by unfold neuron_fi_point_count; norm_num,
+    by unfold neuron_allen_specimen_id; decide,
+    by unfold neuron_fi_point_count; decide,
     neuron_mean_rel_err_lt_fifteen_pct,
     neuron_verifier_confidence_gt_ninety_pct,
     neuron_K_matches_thalamic_gate,

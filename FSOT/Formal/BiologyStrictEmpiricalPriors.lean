@@ -17,10 +17,10 @@ def biology_strict_operon_count : ℕ := 13
 def biology_strict_median_error_pct : ℝ := (0.0 : ℝ)
 
 theorem biology_strict_observable_count_pos : 0 < biology_strict_observable_count := by
-  unfold biology_strict_observable_count; norm_num
+  unfold biology_strict_observable_count; decide
 
 theorem biology_strict_operon_count_pos : 0 < biology_strict_operon_count := by
-  unfold biology_strict_operon_count; norm_num
+  unfold biology_strict_operon_count; decide
 
 theorem biology_strict_median_error_under_two_pct :
     biology_strict_median_error_pct < (2 : ℝ) := by
@@ -32,8 +32,8 @@ theorem biology_strict_bundle :
     biology_strict_median_error_pct < (2 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
-    by unfold biology_strict_observable_count; norm_num,
-    by unfold biology_strict_operon_count; norm_num,
+    by unfold biology_strict_observable_count; decide,
+    by unfold biology_strict_operon_count; decide,
     biology_strict_median_error_under_two_pct,
     lab_biological_raw_S_positive
   ⟩

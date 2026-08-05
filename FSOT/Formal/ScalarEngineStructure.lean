@@ -275,11 +275,11 @@ def scalar_engine_structure_theorem_count : ℕ := 28
 
 theorem scalar_engine_structure_theorem_count_pos :
     0 < scalar_engine_structure_theorem_count := by
-  unfold scalar_engine_structure_theorem_count; norm_num
+  unfold scalar_engine_structure_theorem_count; decide
 
 theorem scalar_engine_structure_theorem_count_eq :
     scalar_engine_structure_theorem_count = 28 := by
-  unfold scalar_engine_structure_theorem_count; norm_num
+  unfold scalar_engine_structure_theorem_count; decide
 
 /-- Bundle: master formula structure is definitionally pinned. -/
 theorem scalar_engine_structure_bundle :

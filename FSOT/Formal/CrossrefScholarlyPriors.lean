@@ -16,7 +16,7 @@ def crossref_scholarly_median_error_pct : ℝ := (0.01382 : ℝ)
 def crossref_scholarly_D_eff : ℕ := 18
 
 theorem crossref_scholarly_observable_count_pos : 0 < crossref_scholarly_observable_count := by
-  unfold crossref_scholarly_observable_count; norm_num
+  unfold crossref_scholarly_observable_count; decide
 
 theorem crossref_scholarly_median_error_under_five_pct :
     crossref_scholarly_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem crossref_scholarly_bundle :
     crossref_scholarly_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨
-    by unfold crossref_scholarly_observable_count; norm_num,
-    by unfold crossref_scholarly_D_eff; norm_num,
+    by unfold crossref_scholarly_observable_count; decide,
+    by unfold crossref_scholarly_D_eff; decide,
     crossref_scholarly_median_error_under_five_pct,
     consciousness_raw_S_positive
   ⟩

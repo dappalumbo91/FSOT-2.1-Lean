@@ -18,18 +18,22 @@ def mechanical_engineering_ext_beats_sota_headlines : ℕ := 2
 def mechanical_engineering_ext_D_eff : ℕ := 16
 
 theorem mechanical_engineering_ext_observable_count_pos : 0 < mechanical_engineering_ext_observable_count := by
-  unfold mechanical_engineering_ext_observable_count; norm_num
+  unfold mechanical_engineering_ext_observable_count; decide
 
 theorem mechanical_engineering_ext_pooled_median_under_half_pct :
     mechanical_engineering_ext_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold mechanical_engineering_ext_pooled_median_error_pct; norm_num
+  unfold mechanical_engineering_ext_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem mechanical_engineering_ext_headline_median_under_half_pct :
     mechanical_engineering_ext_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold mechanical_engineering_ext_headline_median_error_pct; norm_num
+  unfold mechanical_engineering_ext_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem mechanical_engineering_ext_beats_sota_headlines_pos : 0 < mechanical_engineering_ext_beats_sota_headlines := by
-  unfold mechanical_engineering_ext_beats_sota_headlines; norm_num
+  unfold mechanical_engineering_ext_beats_sota_headlines; decide
 
 theorem mechanical_engineering_ext_bundle :
     mechanical_engineering_ext_observable_count = 50 ∧
@@ -38,7 +42,7 @@ theorem mechanical_engineering_ext_bundle :
     0 < mechanical_engineering_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨
-    by unfold mechanical_engineering_ext_observable_count; norm_num,
+    by unfold mechanical_engineering_ext_observable_count; decide,
     mechanical_engineering_ext_pooled_median_under_half_pct,
     mechanical_engineering_ext_headline_median_under_half_pct,
     mechanical_engineering_ext_beats_sota_headlines_pos,

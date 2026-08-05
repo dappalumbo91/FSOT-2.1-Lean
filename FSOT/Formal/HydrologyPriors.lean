@@ -18,7 +18,7 @@ def hydrology_D_eff : ℕ := 15
 def hydrology_stability_match_rate : ℝ := (0.996875 : ℝ)
 
 theorem hydrology_month_count_pos : 0 < hydrology_month_count := by
-  unfold hydrology_month_count; norm_num
+  unfold hydrology_month_count; decide
 
 theorem hydrology_stability_match_le_total :
     hydrology_stability_match_count ≤ hydrology_month_count := by
@@ -36,10 +36,10 @@ theorem hydrology_bundle :
     (0 : ℝ) ≤ hydrology_stability_match_rate ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold hydrology_month_count; norm_num,
-    by unfold hydrology_station_count; norm_num,
-    by unfold hydrology_stability_match_count; norm_num,
-    by unfold hydrology_D_eff; norm_num,
+    by unfold hydrology_month_count; decide,
+    by unfold hydrology_station_count; decide,
+    by unfold hydrology_stability_match_count; decide,
+    by unfold hydrology_D_eff; decide,
     hydrology_stability_match_le_total,
     hydrology_stability_match_rate_nonneg,
     energy_raw_S_positive

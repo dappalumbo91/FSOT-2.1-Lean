@@ -20,21 +20,25 @@ def quantum_materials_headline_median_error_pct : ℝ := (0.01692529386942307 : 
 def quantum_materials_beats_sota_headlines : ℕ := 6
 
 theorem quantum_materials_observable_count_pos : 0 < quantum_materials_observable_count := by
-  unfold quantum_materials_observable_count; norm_num
+  unfold quantum_materials_observable_count; decide
 
 theorem quantum_materials_section_count_pos : 0 < quantum_materials_section_count := by
-  unfold quantum_materials_section_count; norm_num
+  unfold quantum_materials_section_count; decide
 
 theorem quantum_materials_pooled_median_under_half_pct :
     quantum_materials_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold quantum_materials_pooled_median_error_pct; norm_num
+  unfold quantum_materials_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem quantum_materials_headline_median_under_half_pct :
     quantum_materials_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold quantum_materials_headline_median_error_pct; norm_num
+  unfold quantum_materials_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem quantum_materials_beats_sota_headlines_pos : 0 < quantum_materials_beats_sota_headlines := by
-  unfold quantum_materials_beats_sota_headlines; norm_num
+  unfold quantum_materials_beats_sota_headlines; decide
 
 /-- Bundle: Quantum Materials condensed-matter SMILES depth with material/quantum maps. -/
 theorem quantum_materials_bundle :
@@ -46,9 +50,9 @@ theorem quantum_materials_bundle :
     0 < quantum_materials_beats_sota_headlines ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨
-    by unfold quantum_materials_observable_count; norm_num,
-    by unfold quantum_materials_section_count; norm_num,
-    by unfold quantum_materials_D_eff; norm_num,
+    by unfold quantum_materials_observable_count; decide,
+    by unfold quantum_materials_section_count; decide,
+    by unfold quantum_materials_D_eff; decide,
     quantum_materials_pooled_median_under_half_pct,
     quantum_materials_headline_median_under_half_pct,
     quantum_materials_beats_sota_headlines_pos,

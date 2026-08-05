@@ -18,23 +18,27 @@ def gaia_dr3_source_sample_open_headline_median_error_pct : ℝ := (0.022461 : �
 def gaia_dr3_source_sample_open_D_eff : ℕ := 18
 
 theorem gaia_dr3_source_sample_open_observable_count_pos : 0 < gaia_dr3_source_sample_open_observable_count := by
-  unfold gaia_dr3_source_sample_open_observable_count; norm_num
+  unfold gaia_dr3_source_sample_open_observable_count; decide
 
 theorem gaia_dr3_source_sample_open_pooled_median_under_half_pct :
     gaia_dr3_source_sample_open_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold gaia_dr3_source_sample_open_pooled_median_error_pct; norm_num
+  unfold gaia_dr3_source_sample_open_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem gaia_dr3_source_sample_open_headline_median_under_half_pct :
     gaia_dr3_source_sample_open_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold gaia_dr3_source_sample_open_headline_median_error_pct; norm_num
+  unfold gaia_dr3_source_sample_open_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem gaia_dr3_source_sample_open_bundle :
     gaia_dr3_source_sample_open_observable_count = 3459 ∧
     gaia_dr3_source_sample_open_D_eff = 18 ∧
     gaia_dr3_source_sample_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
-  · unfold gaia_dr3_source_sample_open_observable_count; norm_num
-  · unfold gaia_dr3_source_sample_open_D_eff; norm_num
+  · unfold gaia_dr3_source_sample_open_observable_count; decide
+  · unfold gaia_dr3_source_sample_open_D_eff; decide
   · exact gaia_dr3_source_sample_open_pooled_median_under_half_pct
 
 end

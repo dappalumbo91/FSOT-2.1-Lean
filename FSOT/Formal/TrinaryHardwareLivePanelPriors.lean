@@ -13,7 +13,7 @@ def trinary_hardware_live_panel_observable_count : ℕ := 37
 def trinary_hardware_live_panel_D_eff : ℕ := 14
 
 theorem trinary_hardware_live_panel_observable_count_pos : 0 < trinary_hardware_live_panel_observable_count := by
-  unfold trinary_hardware_live_panel_observable_count; norm_num
+  unfold trinary_hardware_live_panel_observable_count; decide
 
 theorem trinary_hardware_live_panel_median_error_under_half_pct :
     (0.014767 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem trinary_hardware_live_panel_bundle :
     (0.014767 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold trinary_hardware_live_panel_observable_count; norm_num,
-    by unfold trinary_hardware_live_panel_D_eff; norm_num,
+    by unfold trinary_hardware_live_panel_observable_count; decide,
+    by unfold trinary_hardware_live_panel_D_eff; decide,
     trinary_hardware_live_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

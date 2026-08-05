@@ -13,7 +13,7 @@ def gaia_astrometry_panel_deep_observable_count : ℕ := 62
 def gaia_astrometry_panel_deep_D_eff : ℕ := 20
 
 theorem gaia_astrometry_panel_deep_observable_count_pos : 0 < gaia_astrometry_panel_deep_observable_count := by
-  unfold gaia_astrometry_panel_deep_observable_count; norm_num
+  unfold gaia_astrometry_panel_deep_observable_count; decide
 
 theorem gaia_astrometry_panel_deep_median_error_under_half_pct :
     (0.022461 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem gaia_astrometry_panel_deep_bundle :
     (0.022461 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold gaia_astrometry_panel_deep_observable_count; norm_num,
-    by unfold gaia_astrometry_panel_deep_D_eff; norm_num,
+    by unfold gaia_astrometry_panel_deep_observable_count; decide,
+    by unfold gaia_astrometry_panel_deep_D_eff; decide,
     gaia_astrometry_panel_deep_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

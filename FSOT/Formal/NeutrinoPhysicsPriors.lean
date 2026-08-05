@@ -16,7 +16,7 @@ def neutrino_physics_median_error_pct : ℝ := (0.009504 : ℝ)
 def neutrino_physics_D_eff : ℕ := 7
 
 theorem neutrino_physics_observable_count_pos : 0 < neutrino_physics_observable_count := by
-  unfold neutrino_physics_observable_count; norm_num
+  unfold neutrino_physics_observable_count; decide
 
 theorem neutrino_physics_median_error_under_five_pct :
     neutrino_physics_median_error_pct < (5 : ℝ) := by
@@ -28,8 +28,8 @@ theorem neutrino_physics_bundle :
     neutrino_physics_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
-    by unfold neutrino_physics_observable_count; norm_num,
-    by unfold neutrino_physics_D_eff; norm_num,
+    by unfold neutrino_physics_observable_count; decide,
+    by unfold neutrino_physics_D_eff; decide,
     neutrino_physics_median_error_under_five_pct,
     particle_raw_S_positive
   ⟩

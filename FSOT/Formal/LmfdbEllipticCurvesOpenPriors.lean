@@ -18,23 +18,27 @@ def lmfdb_elliptic_curves_open_headline_median_error_pct : ℝ := (0.014767 : �
 def lmfdb_elliptic_curves_open_D_eff : ℕ := 14
 
 theorem lmfdb_elliptic_curves_open_observable_count_pos : 0 < lmfdb_elliptic_curves_open_observable_count := by
-  unfold lmfdb_elliptic_curves_open_observable_count; norm_num
+  unfold lmfdb_elliptic_curves_open_observable_count; decide
 
 theorem lmfdb_elliptic_curves_open_pooled_median_under_half_pct :
     lmfdb_elliptic_curves_open_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold lmfdb_elliptic_curves_open_pooled_median_error_pct; norm_num
+  unfold lmfdb_elliptic_curves_open_pooled_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem lmfdb_elliptic_curves_open_headline_median_under_half_pct :
     lmfdb_elliptic_curves_open_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold lmfdb_elliptic_curves_open_headline_median_error_pct; norm_num
+  unfold lmfdb_elliptic_curves_open_headline_median_error_pct
+  have h : _ < (0.5 : ℝ) := by norm_num
+  exact h
 
 theorem lmfdb_elliptic_curves_open_bundle :
     lmfdb_elliptic_curves_open_observable_count = 1016 ∧
     lmfdb_elliptic_curves_open_D_eff = 14 ∧
     lmfdb_elliptic_curves_open_pooled_median_error_pct < (0.5 : ℝ) := by
   refine ⟨?h1, ?h2, ?h3⟩
-  · unfold lmfdb_elliptic_curves_open_observable_count; norm_num
-  · unfold lmfdb_elliptic_curves_open_D_eff; norm_num
+  · unfold lmfdb_elliptic_curves_open_observable_count; decide
+  · unfold lmfdb_elliptic_curves_open_D_eff; decide
   · exact lmfdb_elliptic_curves_open_pooled_median_under_half_pct
 
 end

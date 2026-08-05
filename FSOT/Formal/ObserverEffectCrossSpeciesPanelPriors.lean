@@ -13,7 +13,7 @@ def observer_effect_cross_species_panel_observable_count : ℕ := 289
 def observer_effect_cross_species_panel_D_eff : ℕ := 16
 
 theorem observer_effect_cross_species_panel_observable_count_pos : 0 < observer_effect_cross_species_panel_observable_count := by
-  unfold observer_effect_cross_species_panel_observable_count; norm_num
+  unfold observer_effect_cross_species_panel_observable_count; decide
 
 theorem observer_effect_cross_species_panel_median_error_under_half_pct :
     (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
@@ -24,8 +24,8 @@ theorem observer_effect_cross_species_panel_bundle :
     (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
-    by unfold observer_effect_cross_species_panel_observable_count; norm_num,
-    by unfold observer_effect_cross_species_panel_D_eff; norm_num,
+    by unfold observer_effect_cross_species_panel_observable_count; decide,
+    by unfold observer_effect_cross_species_panel_D_eff; decide,
     observer_effect_cross_species_panel_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩

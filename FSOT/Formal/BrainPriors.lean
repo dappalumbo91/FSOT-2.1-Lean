@@ -262,7 +262,7 @@ theorem brain_component_priors_trinary_bundle :
     oligodendrocyte_myelination_spin_plus + oligodendrocyte_myelination_spin_minus = brain_prior_dna_bases ∧
     amygdala_spin_plus + amygdala_spin_minus = brain_prior_dna_bases ∧
     microglial_surveillance_spin_plus + microglial_surveillance_spin_minus = brain_prior_dna_bases := by
-  refine ⟨by unfold brain_component_count; norm_num, by unfold brain_prior_dna_bases; norm_num, by unfold brain_prior_codon_count; norm_num,
+  refine ⟨by unfold brain_component_count; decide, by unfold brain_prior_dna_bases; decide, by unfold brain_prior_codon_count; decide,
     by unfold brain_prior_codon_count brain_prior_dna_bases; norm_num, brain_prior_codon_pattern_space_eq_twenty_seven,
     neocortex_genetic_counts_sum,
     cerebellum_genetic_counts_sum,
