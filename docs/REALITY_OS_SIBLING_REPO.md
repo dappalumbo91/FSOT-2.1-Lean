@@ -6,20 +6,18 @@ The **standalone Reality OS** lives in a separate project so it can become a rea
 |--|--|
 | **GitHub** | https://github.com/dappalumbo91/FSOT-Reality-OS |
 | **Sibling path (local)** | `C:\Users\damia\Desktop\FSOT-Reality-OS` |
-| **Role** | Formula shell (Python) + **must drive monorepo Rust/QEMU OS spine** |
-| **This monorepo** | Formula authority, residual atlas, multiprover, **and** the real OS spine |
+| **Role** | **Real OS:** Rust `no_std` kernel + QEMU in `kernel/` (v0.1 booting) |
+| **This monorepo** | Formula authority, residual atlas, multiprover, reference crates |
 
-**OS spine lives here, not in Python:**
+**Sibling Reality OS (independent kernel tree):**
 
-| Spine | Path |
-|-------|------|
-| Scalar kernel | `verification/rust/fsot_scalar_kernel` |
-| Hardware kernel | `verification/rust/fsot_hardware_kernel` |
-| Boot bridge | `vendor/rust_lean_bridge` |
-| QEMU | `verification/qemu` + `scripts/run_rust_lean_bridge_qemu_harness.py` |
-| Bare metal runner | `scripts/run_fsot_hardware_bare_metal.py` |
-| Reality OS execute | `python scripts/run_fsot_reality_os.py hardware --run` |
+| Component | Path in FSOT-Reality-OS |
+|-----------|-------------------------|
+| Scalar lib | `kernel/crates/reality_os_scalar` |
+| Hardware lib | `kernel/crates/reality_os_hw` |
+| Kernel binary | `kernel/crates/reality_os_kernel` |
+| Boot image | `data/reality_os_kernel.img` |
+| Build | `cd kernel && cargo bootimage -p reality_os_kernel --release` |
 
-Upstream pin and `vendor/fsot_compute.py` remain formula authority.  
-Sibling repo runs the same spine via `scripts/run_hardware_spine.py` (env `FSOT_MONOREPO_ROOT`).  
-Do **not** scaffold a second Python “kernel.”
+Reference implementations in this monorepo (`verification/rust/*`, `vendor/rust_lean_bridge`) remain the multiprover hardware path.  
+**Python residual CLI is not the OS** in either tree.
