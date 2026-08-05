@@ -14,7 +14,7 @@
 | Metric | Value | Source |
 |--------|------:|--------|
 | **Authority pin** | **D1D38A** (match) | `vendor/fsot_compute.py` SHA-256 prefix |
-| **Green residual benchmarks** | **432 / 432** fail 0 fail 0 | `data/benchmark_margin_audit.json` (≤0.5% pooled median) |
+| **Green residual benchmarks** | **433 / 433** fail 0 | `data/benchmark_margin_audit.json` (≤0.5% pooled median) |
 | **Scientific domains covered** | **407** (35 core + 371 extensions + IC) | `data/scientific_domain_expansion_map.json` |
 | **Publication atlas rows** | **403** (35 core + 368 extension) | `data/publication/domain_atlas.csv` |
 | **Empirical records (summed panels)** | **~2.19M** | expansion map `total_empirical_records` (includes MPCORB **1,554,101**) |

@@ -99,8 +99,22 @@ python scripts/build_benchmark_anchor_citation_ledger.py
 
 ---
 
+## Inventory of every verified solve
+
+Do not guess what is solved — **read the ledger:**
+
+| Doc / data | Role |
+|------------|------|
+| [`FSOT_VERIFIED_SOLVES_INVENTORY.md`](FSOT_VERIFIED_SOLVES_INVENTORY.md) | Every green residual domain |
+| `data/fsot_verified_solves_inventory.json` | Machine inventory |
+| [`FSOT_PHYSICS_ALL_SOLVED.md`](FSOT_PHYSICS_ALL_SOLVED.md) | Physics residual master (FSOT-only) |
+| `data/fsot_physics_all_solved_benchmark.json` | Physics master panel |
+
+**Physics-tagged green domains:** see inventory (100+ already green).  
+**Formula only:** pin D1D38A seeds + `fsot_scaled` residual law — no ad-hoc algebra.
+
 ## One-line claim language
 
-**Allowed:** “FSOT’s seed-closed residual physics program (GR recovery map, SM package, CKM/PMNS, contested anchors, founding laws) is **closed under the frozen Label A/B checklists** with multiprover export.”  
+**Allowed:** “FSOT residual physics is **solved** under pin D1D38A across the green atlas (see verified-solves inventory) — GR/SM/Higgs/CKM/contested/founding included.”  
 
-**Not allowed:** “All of physics is theorem-proved in Coq,” or “path-integral confinement uniqueness is finished.”
+**Not allowed:** Ad-hoc formula swaps · Re-claiming already-green domains as new discoveries · Confusing residual-gate closure with uniqueness theorems of continuum QFT.
