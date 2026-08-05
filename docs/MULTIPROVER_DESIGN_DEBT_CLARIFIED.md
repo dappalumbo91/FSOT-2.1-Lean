@@ -11,9 +11,13 @@
 | Multiprover | **All 68** IDs appear in `verification/obligations/transcendental_bounds.json` |
 | Checks | Python decimal + Coq/Isabelle transcendental chunks + Rust replay (68) |
 
-**Only 2** lemmas (`e_lt_…`, `pi_lt_…` class) use Mathlib-style transcendental interval proofs rather than pure float-export. They are **proved in Lean** and still exported; they are not residual-gate failures.
+**Only 2** lemmas (`pi_gt_314159265358979323846`, `pi_lt_314159265358979323847`) use Mathlib-style tight digit intervals rather than coarse float-export. They are **proved in Lean** (via `pi_gt_d20` / `pi_lt_d20`) and still exported; they are not residual-gate failures.
 
-Nothing to “solve” for green multiprover. Optional future: deeper independent Coq/Isabelle analytic proofs of those two intervals.
+**Python oracle solidification (2026-08-05):** float64 cannot distinguish those digit strings from `math.pi` (IEEE π sits *between* the two certified bounds in a way that broke naive `Decimal(str(math.pi))` comparisons). `scripts/transcendental_bounds_lib.py` now evaluates with **≥50-digit `Decimal` `PI_REF` / `E_REF`**, so all **68/68** inventory rows report `python_decimal_verified: true` in `verification/obligations/transcendental_bounds.json`.
+
+Nothing open for green multiprover. Optional future: deeper *native* Coq analytic proofs of the two tight π intervals (Isabelle native approximation is already stronger; Coq still uses certified axioms for Rocq 9 `lra`/PI gaps).
+
+**Not a formal path:** Lissajous figures (two orthogonal sines; frequency ratios ≈ rational approximations involving π harmonics) are good *intuition* for circular/periodicity geometry. They do **not** replace Mathlib digit bounds or the Decimal multiprover oracle.
 
 ---
 

@@ -23,10 +23,14 @@ LEMMA_TYPE_RE = re.compile(
 )
 
 # Certified base intervals (Lean Mathlib + Python decimal verified).
+# Use high-precision reference digits — float64 cannot distinguish PI_LO/PI_HI.
 EXP_ONE_LO = Decimal("2.7182818283")
 EXP_ONE_HI = Decimal("2.7182818286")
 PI_LO = Decimal("3.14159265358979323846")
 PI_HI = Decimal("3.14159265358979323847")
+# ≥50-digit references (OEIS / standard math tables; matches Bounds.lean Mathlib chain)
+PI_REF = Decimal("3.14159265358979323846264338327950288419716939937510")
+E_REF = Decimal("2.71828182845904523536028747135266249775724709369995")
 
 LEAN_TO_COQ = (
     (r"\(0\.5\s*:\s*ℝ\)", "(0.5%R)"),
@@ -92,20 +96,67 @@ def lean_type_to_isabelle(lean_type: str) -> str:
 
 
 def _eval_lean_expr(expr: str) -> Decimal | None:
+    """Evaluate a simple Lean ℝ expression with high-precision Decimal (not float64).
+
+    Critical: float64 rounds π to 3.141592653589793, which is *below* the tight
+    certified lower digit string 3.14159265358979323846 when compared naively —
+    so pi_gt / pi_lt high-digit lemmas must never go through float.
+    """
     e = expr.strip()
     if "Set." in e or "∈" in e or "Icc" in e:
         return None
     e = e.replace("π", "pi")
     e = re.sub(r"\((-?\d+(?:\.\d+)?)\s*:\s*ℝ\)", r"\1", e)
     e = re.sub(r"\((-?\d+(?:\.\d+)?)\s*:\s*ℕ\)", r"\1", e)
-    e = re.sub(r"\bexp\s+(-?[\d.]+)\b", r"exp(\1)", e)
-    e = re.sub(r"\bexp\s*\(\s*(-?[\d.]+)\s*\)", r"exp(\1)", e)
-    e = re.sub(r"\bpi\b", "PI", e)
-    e = re.sub(r"\be\b", "E", e)
-    e = e.replace("PI", str(math.pi)).replace("E", str(math.e))
-    e = e.replace("exp", "math.exp")
+    # Pure constants / simple arithmetic only
+    if re.fullmatch(r"-?\d+(?:\.\d+)?", e):
+        return Decimal(e)
+    # Bare pi / e
+    if re.fullmatch(r"pi", e, re.I):
+        return PI_REF
+    if re.fullmatch(r"e", e, re.I):
+        return E_REF
+    # exp(c) for small c
+    m_exp = re.fullmatch(r"exp\s*\(\s*(-?\d+(?:\.\d+)?)\s*\)", e) or re.fullmatch(
+        r"exp\s+(-?\d+(?:\.\d+)?)", e
+    )
+    if m_exp:
+        # high-prec exp via series for |x| small / Decimal.exp
+        x = Decimal(m_exp.group(1))
+        return x.exp()
+    # pi / e, e * pi, pi / 2, e - 1, etc.
+    e2 = e
+    e2 = re.sub(r"\bpi\b", "PI", e2)
+    e2 = re.sub(r"\be\b", "E", e2)
+    e2 = re.sub(r"\bexp\s*\(\s*(-?\d+(?:\.\d+)?)\s*\)", r"EXP(\1)", e2)
+    e2 = re.sub(r"\bexp\s+(-?\d+(?:\.\d+)?)", r"EXP(\1)", e2)
+    # Only allow safe tokens
+    if not re.fullmatch(r"[\d\s.+\-*/()PIEEXP]+", e2.replace("EXP", "X")):
+        # fallback float path only for non-pi/e-critical exprs
+        try:
+            ef = e
+            ef = re.sub(r"\bpi\b", str(math.pi), ef)
+            ef = re.sub(r"\be\b", str(math.e), ef)
+            ef = re.sub(r"\bexp\s*\(\s*(-?\d+(?:\.\d+)?)\s*\)", r"math.exp(\1)", ef)
+            ef = re.sub(r"\bexp\s+(-?\d+(?:\.\d+)?)", r"math.exp(\1)", ef)
+            val = eval(ef, {"__builtins__": {}, "math": math})  # noqa: S307
+            return Decimal(str(val))
+        except Exception:
+            return None
     try:
-        val = eval(e, {"__builtins__": {}, "math": math})  # noqa: S307
+        # manual safe eval with Decimal env
+        env = {
+            "PI": PI_REF,
+            "E": E_REF,
+            "EXP": lambda x: Decimal(str(x)).exp() if not isinstance(x, Decimal) else x.exp(),
+        }
+        # replace EXP(n) with env call
+        e3 = e2
+        for m in re.finditer(r"EXP\((-?\d+(?:\.\d+)?)\)", e2):
+            e3 = e3.replace(m.group(0), f"EXP({m.group(1)})")
+        val = eval(e3, {"__builtins__": {}}, env)  # noqa: S307
+        if isinstance(val, Decimal):
+            return val
         return Decimal(str(val))
     except Exception:
         return None
@@ -144,13 +195,30 @@ def classify_obligation(lemma_id: str, lean_type: str) -> dict[str, Any]:
 
 
 def python_verify_lean_type(lean_type: str) -> bool | None:
+    """High-precision residual check of Lean inequality types (Decimal, not float64)."""
     if "∈" in lean_type or "Set.Icc" in lean_type:
         if "pi / e" in lean_type:
-            lo = -float(PI_HI) / 2
-            hi = float(PI_HI) / 2
-            val = float(PI_LO) / float(EXP_ONE_HI)
+            lo = -PI_HI / 2
+            hi = PI_HI / 2
+            val = PI_LO / EXP_ONE_HI
             return lo <= val <= hi
         return None
+    # Certified base intervals: direct Decimal digit comparison (solid multiprover oracle)
+    lt = lean_type.replace(" ", "")
+    if "pi<(3.14159265358979323847" in lt or re.search(
+        r"pi\s*<\s*\(3\.14159265358979323847", lean_type
+    ):
+        return PI_REF < PI_HI
+    if re.search(r"\(3\.14159265358979323846\s*:\s*ℝ\)\s*<\s*pi", lean_type) or re.search(
+        r"3\.14159265358979323846.*<\s*pi", lean_type
+    ):
+        return PI_LO < PI_REF
+    if re.search(r"e\s*<\s*\(2\.7182818286", lean_type):
+        return E_REF < EXP_ONE_HI
+    if re.search(r"\(2\.7182818283\s*:\s*ℝ\)\s*<\s*e", lean_type) or re.search(
+        r"2\.7182818283.*<\s*e\b", lean_type
+    ):
+        return EXP_ONE_LO < E_REF
     for op in ("<", ">"):
         if op in lean_type:
             parts = lean_type.split(op, 1)

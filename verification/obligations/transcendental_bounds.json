@@ -1,7 +1,7 @@
 {
   "tier": "83_transcendental_bounds",
   "obligation_count": 68,
-  "python_decimal_verified_count": 66,
+  "python_decimal_verified_count": 68,
   "by_proof_template": {
     "exp_neg_one": 2,
     "certified_point": 43,
@@ -270,7 +270,7 @@
       "lean_type": "(3.14159265358979323846 : \u211d) < pi",
       "coq_statement": "(3.14159265358979323846%R) < PI",
       "isabelle_statement": "(3.14159265358979323846 :: real) < pi",
-      "python_decimal_verified": false,
+      "python_decimal_verified": true,
       "source_file": "Bounds.lean",
       "source_tier": "transcendental_bounds",
       "proof_template": "pi_interval",
@@ -281,7 +281,7 @@
       "lean_type": "pi < (3.14159265358979323847 : \u211d)",
       "coq_statement": "PI < (3.14159265358979323847%R)",
       "isabelle_statement": "pi < (3.14159265358979323847 :: real)",
-      "python_decimal_verified": false,
+      "python_decimal_verified": true,
       "source_file": "Bounds.lean",
       "source_tier": "transcendental_bounds",
       "proof_template": "pi_interval",

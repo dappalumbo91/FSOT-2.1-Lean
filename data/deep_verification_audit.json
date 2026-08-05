@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T15:08:15.039477+00:00",
+  "generated_at": "2026-08-05T12:03:28.868693+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -52,16 +52,16 @@
     "coq_atomic": {
       "atomic_triangulated_ok": 1904,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 472,
+      "bundle_conj_triangulated_ok": 526,
       "bundle_conj_triangulated_fail": 0,
       "margin_violations_confirmed_ok": 0,
-      "margin_violations_confirmed_fail": 54,
+      "margin_violations_confirmed_fail": 0,
       "pct_atomic_triangulated": 100.0
     },
     "isabelle_atomic": {
       "atomic_triangulated_ok": 1904,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 472,
+      "bundle_conj_triangulated_ok": 526,
       "bundle_conj_triangulated_fail": 0,
       "pct_atomic_triangulated": 100.0
     },
@@ -85,16 +85,16 @@
   "margin_bundle_analysis": {
     "total_obligations": 2430,
     "provable_atomic": 1904,
-    "provable_bundle_conj": 472,
+    "provable_bundle_conj": 526,
     "structural_bundle_excluded": 54,
     "false_margin_violations": 0,
     "conjunct_atomic_coverage_pct": 99.92,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
     "lt_half_pooled_median_margin": "0.48221099969184366",
     "atomic_triangulated": "1904/1904",
-    "bundle_conj_triangulated": "472/472",
+    "bundle_conj_triangulated": "526/526",
     "margin_violations_confirmed_in_lean": 0,
-    "margin_violations_unconfirmed": 54
+    "margin_violations_unconfirmed": 0
   },
   "structural_bundle_ledger": {
     "bundle_conj_total": 526,
@@ -132,7 +132,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-08-04T14:17:39.722676+00:00",
+    "generated_at": "2026-08-04T15:08:16.228823+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -194,7 +194,7 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-08-04T14:17:40.022409+00:00",
+    "generated_at": "2026-08-04T15:08:16.528902+00:00",
     "version": "1.0",
     "overall_runtime_ok": true,
     "esp32_scalar_only_gap_closed": true,
@@ -236,7 +236,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-08-04T14:17:40.317487+00:00",
+    "generated_at": "2026-08-04T15:08:16.818918+00:00",
     "version": "1.0",
     "verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes",
     "headline_claim": "zero free parameters",
@@ -275,11 +275,8 @@
     "gap_report_status": "coq_and_isabelle_artifacts_generated",
     "native_coq_isabelle": "coq_native_isabelle_native_intervals",
     "obligation_count": 68,
-    "python_decimal_verified_count": 66,
-    "missing_python_decimal": [
-      "pi_gt_314159265358979323846",
-      "pi_lt_314159265358979323847"
-    ],
+    "python_decimal_verified_count": 68,
+    "missing_python_decimal": [],
     "native_pi_e_intervals": [
       "e_gt_27182818283",
       "e_lt_27182818286",
@@ -293,7 +290,7 @@
   "extension_precision": {
     "domain_count": 371,
     "green_gate_pass_count": 371,
-    "core_benchmark_green": 429,
+    "core_benchmark_green": 430,
     "worst_scalar_max_pct": 0.4989
   },
   "scientific_pushback": {
@@ -313,21 +310,21 @@
     "missing_uncertainty_domains": [
       {
         "domain": "TOE_Contested_Sector_Refresh",
-        "scalar_count": 22,
-        "missing_scientific_measurement": 19,
+        "scalar_count": 24,
+        "missing_scientific_measurement": 24,
         "stumped_missing_uncertainty": 1,
         "stumped_untagged_contested": 12,
-        "max_scalar_error_pct": 0.192564276915754,
-        "max_effective_scalar_error_pct": 0.192564276915754,
-        "pooled_median_error_pct": 0.009504134401233218,
+        "max_scalar_error_pct": 0.018002668701804225,
+        "max_effective_scalar_error_pct": 0.018002668701804225,
+        "pooled_median_error_pct": 0.0009255267903276525,
         "green_gate_pass": true,
         "raw_eff_divergence_count": 0,
         "top_raw_eff_divergence": [],
         "max_pushback_scalar": {
-          "property": "engine_native_h0",
-          "name": null,
-          "raw_pct": 0.192564276915754,
-          "effective_pct": 0.192564276915754,
+          "property": "e_con",
+          "name": "e_con",
+          "raw_pct": 0.018002668701804225,
+          "effective_pct": 0.018002668701804225,
           "contested": false
         }
       }
@@ -2386,21 +2383,21 @@
       "detail": [
         {
           "domain": "TOE_Contested_Sector_Refresh",
-          "scalar_count": 22,
-          "missing_scientific_measurement": 19,
+          "scalar_count": 24,
+          "missing_scientific_measurement": 24,
           "stumped_missing_uncertainty": 1,
           "stumped_untagged_contested": 12,
-          "max_scalar_error_pct": 0.192564276915754,
-          "max_effective_scalar_error_pct": 0.192564276915754,
-          "pooled_median_error_pct": 0.009504134401233218,
+          "max_scalar_error_pct": 0.018002668701804225,
+          "max_effective_scalar_error_pct": 0.018002668701804225,
+          "pooled_median_error_pct": 0.0009255267903276525,
           "green_gate_pass": true,
           "raw_eff_divergence_count": 0,
           "top_raw_eff_divergence": [],
           "max_pushback_scalar": {
-            "property": "engine_native_h0",
-            "name": null,
-            "raw_pct": 0.192564276915754,
-            "effective_pct": 0.192564276915754,
+            "property": "e_con",
+            "name": "e_con",
+            "raw_pct": 0.018002668701804225,
+            "effective_pct": 0.018002668701804225,
             "contested": false
           }
         }

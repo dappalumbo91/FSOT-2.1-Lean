@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-08-05T11:56:33.929278+00:00`  
+**Generated:** `2026-08-05T12:03:29.731076+00:00`  
 **Edition stamp:** 2026-08-05  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -43,6 +43,7 @@ Frameworks passed: `coq`, `cross_refinement`, `esp32_harness`, `fstar`, `fstar_r
 
 ## Expansion highlights (recent)
 
+- **π/e multiprover oracle solid (2026-08-05):** Decimal `PI_REF`/`E_REF` in `transcendental_bounds_lib.py` — **68/68** `python_decimal_verified` (tight π digit intervals no longer fail float64). See [`MULTIPROVER_DESIGN_DEBT_CLARIFIED.md`](MULTIPROVER_DESIGN_DEBT_CLARIFIED.md).
 - Dzhanibekov / intermediate-axis vacuum flip: [`docs/DZHANIBEKOV_FSOT_RESPONSE.md`](DZHANIBEKOV_FSOT_RESPONSE.md)
 - Proper densify (formula + real data only): [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](FSOT_PROPER_DENSIFY_POLICY.md)
 - Multiprover debt clarified: [`docs/MULTIPROVER_DESIGN_DEBT_CLARIFIED.md`](MULTIPROVER_DESIGN_DEBT_CLARIFIED.md)
