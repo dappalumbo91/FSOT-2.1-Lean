@@ -22,6 +22,7 @@ Kinds: pos, lt_half, abs_diff_lt_lit, eq_nat, nat_pos (match cross_proof_lib).
 from __future__ import annotations
 
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -357,6 +358,19 @@ def gen_isabelle(obs: list[dict]) -> str:
     return "\n".join(lines)
 
 
+def _fstar_real(v: float) -> str:
+    """F* Real literals: decimal form only (scientific e-notation is rejected)."""
+    if v == 0.0:
+        return "0.0R"
+    if v < 0:
+        return f"(- {_fstar_real(-v)})"
+    # Enough digits for uniqueness residuals; strip trailing zeros.
+    s = f"{v:.30f}".rstrip("0").rstrip(".")
+    if "." not in s:
+        s = s + ".0"
+    return s + "R"
+
+
 def gen_fstar(obs: list[dict]) -> str:
     lines = [
         "(* FSOT Uniqueness Research F* certificates. *)",
@@ -367,21 +381,39 @@ def gen_fstar(obs: list[dict]) -> str:
     n = 0
     for ob in obs:
         kind = ob["kind"]
-        oid = ob["coq_id"]
+        # F* value binders must start lowercase (uppercase = type constructors).
+        raw_id = re.sub(r"[^A-Za-z0-9_]", "_", str(ob.get("coq_id") or ob.get("id") or f"o{n}"))
+        oid = raw_id if raw_id[:1].islower() else f"u_{raw_id}"
         if kind == "pos":
             v = float(ob["value"])
-            lines.append(f"let {oid}_ok : squash (0.0R <. {v}R) = ()")
+            lines.append(f"let {oid}_ok : squash (0.0R <. {_fstar_real(v)}) = ()")
             n += 1
         elif kind == "lt_half":
             v = float(ob["value"])
-            lines.append(f"let {oid}_ok : squash ({v}R <. 0.5R) = ()")
+            lines.append(f"let {oid}_ok : squash ({_fstar_real(v)} <. 0.5R) = ()")
+            n += 1
+        elif kind == "lt_lit":
+            v, b = float(ob["value"]), float(ob["bound"])
+            lines.append(f"let {oid}_ok : squash ({_fstar_real(v)} <. {_fstar_real(b)}) = ()")
+            n += 1
+        elif kind == "r_lt_lit_pure":
+            l, r = float(ob["left_value"]), float(ob["right_value"])
+            lines.append(f"let {oid}_ok : squash ({_fstar_real(l)} <. {_fstar_real(r)}) = ()")
+            n += 1
+        elif kind == "abs_diff_lt_lit":
+            d, b = float(ob.get("diff", ob.get("value", 0))), float(ob["bound"])
+            lines.append(f"let {oid}_ok : squash ({_fstar_real(d)} <. {_fstar_real(b)}) = ()")
             n += 1
         elif kind == "eq_nat":
             l = int(ob["value"])
             r = int(ob.get("right_value", l))
             lines.append(f"let {oid}_ok : squash ({l} = {r}) = ()")
             n += 1
-        if n >= 100:
+        elif kind == "nat_pos":
+            v = int(ob["value"])
+            lines.append(f"let {oid}_ok : squash (0 < {v}) = ()")
+            n += 1
+        if n >= 120:
             break
     lines.append("")
     lines.append(f"(* emitted {n} F* squash certificates *)")

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T21:50:37.412194+00:00",
+  "generated_at": "2026-08-05T22:02:25.737494+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -88,7 +88,7 @@
     "provable_bundle_conj": 564,
     "structural_bundle_excluded": 54,
     "false_margin_violations": 0,
-    "conjunct_atomic_coverage_pct": 99.88,
+    "conjunct_atomic_coverage_pct": 99.92,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
     "lt_half_pooled_median_margin": "0.482163937115593848",
     "atomic_triangulated": "2017/2017",
@@ -97,15 +97,15 @@
     "margin_violations_unconfirmed": 0
   },
   "structural_bundle_ledger": {
-    "bundle_conj_total": 566,
-    "structural_bundle_excluded": 56,
-    "provable_bundle_conj": 510,
-    "total_conjuncts": 2507,
-    "conjuncts_with_atomic_coverage": 2504,
-    "conjunct_atomic_coverage_pct": 99.88,
-    "explicit_linked_conjuncts": 1906,
-    "explicit_linked_in_spine": 1904,
-    "explicit_link_hit_pct": 99.9,
+    "bundle_conj_total": 563,
+    "structural_bundle_excluded": 1,
+    "provable_bundle_conj": 562,
+    "total_conjuncts": 2501,
+    "conjuncts_with_atomic_coverage": 2499,
+    "conjunct_atomic_coverage_pct": 99.92,
+    "explicit_linked_conjuncts": 1904,
+    "explicit_linked_in_spine": 1902,
+    "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "oracle_debt_ledger": {

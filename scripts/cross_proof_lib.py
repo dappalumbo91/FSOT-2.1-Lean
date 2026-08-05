@@ -1664,6 +1664,7 @@ def parse_formal_module(
             text,
             r_defs=r_defs,
             n_defs=n_defs,
+            z_defs=z_defs,
             atomic_by_id=atomic_by_id,
             lean_module=path.stem,
             source_file=path.name,

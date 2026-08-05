@@ -135,26 +135,32 @@ def main() -> int:
         print("Isabelle: skipped (theory missing)")
 
     fstar_status = "skipped"
-    fstar = _find_exe(("fstar.exe", "fstar"))
     fstar_file = ROOT / "verification" / "fstar" / "FSOTUniquenessResearch.fst"
+    try:
+        from fstar_verification_lib import resolve_fstar_exe  # noqa: WPS433
+
+        fstar = resolve_fstar_exe()
+    except Exception:
+        fstar = _find_exe(("fstar.exe", "fstar"))
     if fstar and fstar_file.exists():
         try:
+            # Run from verification/fstar so sibling modules resolve cleanly
             fr = subprocess.run(
-                [fstar, str(fstar_file)],
-                cwd=str(ROOT),
+                [fstar, fstar_file.name],
+                cwd=str(fstar_file.parent),
                 capture_output=True,
                 text=True,
                 timeout=300,
             )
             fstar_status = "passed" if fr.returncode == 0 else "failed"
-            print(f"F*: {fstar_status}")
+            print(f"F*: {fstar_status}  tool={fstar}")
             if fstar_status == "failed":
-                print(((fr.stderr or "") + (fr.stdout or ""))[-400:])
+                print(((fr.stderr or "") + (fr.stdout or ""))[-500:])
         except OSError as exc:
             fstar_status = "skipped"
             print(f"F*: skipped (cannot exec: {exc})")
     else:
-        print("F*: skipped")
+        print(f"F*: skipped (exe={fstar!r})")
 
     overall = py_ok and rust_status in ("passed", "skipped") and smt_status in ("passed", "skipped")
     if rust_status == "failed" or smt_status == "failed" or coq_status == "failed" or fstar_status == "failed":
