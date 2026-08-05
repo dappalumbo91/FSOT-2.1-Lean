@@ -16,6 +16,8 @@ Research tracks are **branches** — not the trunk.
 | Hierarchy ladder | `hierarchy` | building-blocks simulation |
 | Reality syntax rules | `rules` | simulation JSON |
 | **Quantum science** | **`quantum`** | QM/QC/QO/QG cores + extension panels + green residuals |
+| **Quantum entanglement/QI depth** | **`quantum-depth`** | CHSH/Tsirelson/EPR + existing quantum_* panels + unified suite |
+| **Trinary string syntax** | **`trinary`** / **`syntax`** | 27 Metatron opcodes, trit=sign(S), regs=25=D_eff ceiling |
 | Matter / antimatter | `dual` `matter` | `fsot_matter_antimatter` |
 | Sector map | `sectors` | full fabric sectors |
 | Coverage checklist | `coverage` | not-missing inventory |

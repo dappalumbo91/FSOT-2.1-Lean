@@ -44,12 +44,14 @@ from fsot_reality_os import (  # noqa: E402
     multiprover_status,
     neighbors,
     predict_demo,
+    quantum_depth_status,
     quantum_status,
     reality_syntax_rules,
     residual_predict,
     sector_coverage,
     seeds_table,
     snapshot,
+    trinary_syntax_status,
 )
 
 
@@ -160,6 +162,7 @@ def cmd_snapshot(_: argparse.Namespace) -> int:
 def cmd_rebuild(_: argparse.Namespace) -> int:
     steps = [
         ["build_fsot_system_math_audit.py"],
+        ["build_quantum_trinary_syntax_benchmark.py"],
         ["run_reality_building_blocks_simulation.py"],
         ["build_fsot_atlas_sqlite.py"],
         ["audit_fsot_complete_system.py"],
@@ -246,6 +249,18 @@ def main() -> int:
     sub.add_parser("rebuild", help="Rebuild math audit + atlas DB + system audit").set_defaults(func=cmd_rebuild)
     sub.add_parser("audit", help="Run complete system connective audit").set_defaults(func=cmd_audit)
     sub.add_parser("quantum", help="Quantum mechanics/science coverage + live S").set_defaults(func=cmd_quantum)
+
+    def _cmd_qdepth(_: argparse.Namespace) -> int:
+        print(json.dumps(quantum_depth_status(), indent=2))
+        return 0
+
+    def _cmd_trinary(_: argparse.Namespace) -> int:
+        print(json.dumps(trinary_syntax_status(), indent=2))
+        return 0
+
+    sub.add_parser("quantum-depth", help="Entanglement/QI depth + unified suite").set_defaults(func=_cmd_qdepth)
+    sub.add_parser("trinary", help="Trinary OS string syntax (opcodes, trit=sign S)").set_defaults(func=_cmd_trinary)
+    sub.add_parser("syntax", help="Alias of trinary (reality string language)").set_defaults(func=_cmd_trinary)
     sub.add_parser("dual", help="Matter/antimatter conjugate duals + eta").set_defaults(func=cmd_dual)
     sub.add_parser("matter", help="Matter sector (particle/nuclear/QM + duals)").set_defaults(func=cmd_matter)
     sub.add_parser("multiprover", help="Cross-proof / GR-SM multiprover status").set_defaults(func=cmd_multiprover)

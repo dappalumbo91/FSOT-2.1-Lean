@@ -49,7 +49,7 @@ SECTOR_MAP: dict[str, dict[str, Any]] = {
         "reality_os": ["S", "predict", "seeds", "boot"],
     },
     "quantum": {
-        "title": "Quantum mechanics / information / optics / gravity",
+        "title": "Quantum mechanics / information / optics / gravity / entanglement",
         "core_domains": [
             "Quantum_Mechanics",
             "Quantum_Computing",
@@ -57,7 +57,23 @@ SECTOR_MAP: dict[str, dict[str, Any]] = {
             "Quantum_Gravity",
         ],
         "extension_patterns": ["Quantum_", "quantum_"],
-        "reality_os": ["quantum", "S", "predict", "interfaces"],
+        "paths": [
+            "data/quantum_mechanics_entanglement_depth_panel_benchmark.json",
+            "data/quantum_information_benchmark.json",
+            "data/quantum_trinary_syntax_benchmark.json",
+            "vendor/fsot_quantum_trinary_syntax.py",
+        ],
+        "reality_os": ["quantum", "quantum-depth", "S", "predict", "interfaces"],
+    },
+    "trinary_syntax": {
+        "title": "Trinary string language (Metatron opcodes / trit = sign(S))",
+        "paths": [
+            "vendor/trinary_os/isa/fsotb_opcode_registry.json",
+            "data/trinary_os_tier_e_benchmark.json",
+            "data/quantum_trinary_syntax_benchmark.json",
+            "vendor/fsot_quantum_trinary_syntax.py",
+        ],
+        "reality_os": ["trinary", "syntax", "quantum-depth"],
     },
     "particle_nuclear": {
         "title": "Particle / nuclear / high energy",
@@ -541,6 +557,16 @@ def coverage_checklist() -> dict[str, Any]:
         {"id": "quantum_core", "present": (q.get("core_count") or 0) >= 4, "via": "quantum"},
         {"id": "quantum_extensions", "present": (q.get("extension_count") or 0) >= 3, "via": "quantum"},
         {"id": "quantum_green_panels", "present": (q.get("green_panel_count") or 0) >= 5, "via": "quantum"},
+        {
+            "id": "quantum_trinary_unified_panel",
+            "present": (ROOT / "data/quantum_trinary_syntax_benchmark.json").exists(),
+            "via": "quantum-depth / trinary",
+        },
+        {
+            "id": "trinary_opcode_abi",
+            "present": (ROOT / "vendor/trinary_os/isa/fsotb_opcode_registry.json").exists(),
+            "via": "trinary",
+        },
         {"id": "matter_antimatter", "present": MATTER.exists(), "via": "dual"},
         {"id": "hierarchy_sim", "present": SIM.exists(), "via": "hierarchy / rules"},
         {"id": "connective_edges", "present": st.connective_edges > 1000, "via": "neighbors"},
@@ -619,3 +645,101 @@ def hierarchy_head(n: int = 10) -> list[dict[str, Any]]:
         doc = json.loads(SIM.read_text(encoding="utf-8"))
         return (doc.get("hierarchy_ladder_head") or [])[:n]
     return list_interfaces(limit=n)
+
+
+def quantum_depth_status() -> dict[str, Any]:
+    """Entanglement / QI depth + live residual panel if built."""
+    out: dict[str, Any] = {
+        "base_quantum": quantum_status(),
+        "related_panels": [],
+    }
+    for rel in (
+        "data/quantum_mechanics_entanglement_depth_panel_benchmark.json",
+        "data/quantum_information_benchmark.json",
+        "data/quantum_computing_math_depth_panel_benchmark.json",
+        "data/quantum_trinary_syntax_benchmark.json",
+    ):
+        p = ROOT / rel
+        if not p.exists():
+            continue
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+            out["related_panels"].append(
+                {
+                    "path": rel,
+                    "domain": d.get("domain"),
+                    "pooled_median_error_pct": d.get("pooled_median_error_pct"),
+                    "record_count": d.get("record_count"),
+                }
+            )
+        except Exception:
+            out["related_panels"].append({"path": rel, "error": "unreadable"})
+    try:
+        from fsot_quantum_trinary_syntax import suite_summary  # type: ignore
+
+        out["unified_suite"] = suite_summary()
+    except Exception as exc:  # noqa: BLE001
+        out["unified_suite_error"] = str(exc)
+    return out
+
+
+def trinary_syntax_status() -> dict[str, Any]:
+    """Trinary OS as string language of the continuum."""
+    out: dict[str, Any] = {"available": True}
+    reg_path = ROOT / "vendor/trinary_os/isa/fsotb_opcode_registry.json"
+    if reg_path.exists():
+        reg = json.loads(reg_path.read_text(encoding="utf-8"))
+        out["abi"] = {
+            "opcodes": len(reg.get("opcodes") or []),
+            "word_width_trits": reg.get("word_width_trits"),
+            "register_count": reg.get("register_count"),
+            "cortical_layers": reg.get("cortical_layers"),
+            "source": reg.get("source"),
+        }
+    try:
+        from fsot_quantum_trinary_syntax import (  # type: ignore
+            encode_string_from_domains,
+            suite_summary,
+        )
+
+        enc = encode_string_from_domains(
+            [
+                "Particle_Physics",
+                "Quantum_Mechanics",
+                "Atomic_Physics",
+                "Chemistry",
+                "Biology",
+                "Neuroscience",
+                "Nuclear_Physics",
+                "Astronomy",
+                "Planetary_Science",
+                "Cosmology",
+            ]
+        )
+        out["reality_string"] = "".join(e["symbol"] for e in enc)
+        out["encoding"] = enc
+        out["suite"] = suite_summary()
+        out["note"] = (
+            "Balanced trit = sign(S): + emerge, 0 null, - damp. "
+            "27 Metatron opcodes = 3³; 25 registers = D_eff ceiling. "
+            "Same S as the residual atlas — machine syntax of fluid spacetime."
+        )
+    except Exception as exc:  # noqa: BLE001
+        out["error"] = str(exc)
+    for rel in (
+        "data/trinary_os_tier_e_benchmark.json",
+        "data/trinary_os_portable_benchmark.json",
+        "data/quantum_trinary_syntax_benchmark.json",
+    ):
+        p = ROOT / rel
+        if p.exists():
+            d = json.loads(p.read_text(encoding="utf-8"))
+            out.setdefault("panels", []).append(
+                {
+                    "path": rel,
+                    "domain": d.get("domain"),
+                    "pooled": d.get("pooled_median_error_pct"),
+                    "records": d.get("record_count"),
+                }
+            )
+    return out

@@ -1,0 +1,585 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-05T21:06:34.024052+00:00",
+  "domain": "Quantum_Trinary_Syntax",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "vendor/fsot_quantum_trinary_syntax.py",
+    "vendor/trinary_os/isa/fsotb_opcode_registry.json",
+    "CHSH/Tsirelson/Bell literature structure",
+    "existing quantum_* residual panels"
+  ],
+  "maps_to_lean": [
+    "quantum",
+    "consciousness",
+    "ai"
+  ],
+  "D_eff": 11,
+  "record_count": 27,
+  "observable_count": 27,
+  "scalar_record_count": 26,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.005907,
+  "pooled_median_error_pct": 0.005907,
+  "headline_median_error_pct": 0.005907,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "bell_tests": {
+        "sota_typical_error_pct": 1.0,
+        "sota_model": "CHSH experiment class"
+      },
+      "trinary_abi": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "binary ISA baseline"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true,
+      "channel_seed_identity_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.005907,
+      "measured": 0.0,
+      "error_pct": 0.005907,
+      "observable_count": 27
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "quantum_depth",
+      "computed": 0.005907,
+      "measured": 0.0,
+      "error_pct": 0.005907,
+      "observable_count": 27
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "seed_identity",
+      "name": "trinary_syntax",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "quantum_depth_lab",
+      "property": "chsh_classical_bound",
+      "name": "chsh_classical_bound",
+      "computed": 2.001911,
+      "measured": 2.0,
+      "error_pct": 0.095551,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Mechanics",
+      "fsot_scalar": 0.955506,
+      "formula": "2  [CHSH classical]",
+      "sector": "quantum_depth",
+      "source": "literature_structure+fsot_scaled"
+    },
+    {
+      "lab": "quantum_depth_lab",
+      "property": "chsh_tsirelson_bound",
+      "name": "chsh_tsirelson_bound",
+      "computed": 2.83113,
+      "measured": 2.8284271247461903,
+      "error_pct": 0.095551,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Mechanics",
+      "fsot_scalar": 0.955506,
+      "formula": "2*sqrt(2)  [Tsirelson]",
+      "sector": "quantum_depth",
+      "source": "literature_structure+fsot_scaled"
+    },
+    {
+      "lab": "quantum_depth_lab",
+      "property": "bell_state_entropy_ebits",
+      "name": "bell_state_entropy_ebits",
+      "computed": 1.000956,
+      "measured": 1.0,
+      "error_pct": 0.095551,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Mechanics",
+      "fsot_scalar": 0.955506,
+      "formula": "log2(2)=1 ebit",
+      "sector": "quantum_depth",
+      "source": "literature_structure+fsot_scaled"
+    },
+    {
+      "lab": "quantum_depth_lab",
+      "property": "epr_singlet_correlation",
+      "name": "epr_singlet_correlation",
+      "computed": 1.000956,
+      "measured": 1.0,
+      "error_pct": 0.095551,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Mechanics",
+      "fsot_scalar": 0.955506,
+      "formula": "|<-1>| singlet corr mag",
+      "sector": "quantum_depth",
+      "source": "literature_structure+fsot_scaled"
+    },
+    {
+      "lab": "quantum_depth_lab",
+      "property": "surface_code_threshold",
+      "name": "surface_code_threshold",
+      "computed": 0.0057,
+      "measured": 0.0057,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "formula": "surface-code p_th class",
+      "sector": "quantum_depth",
+      "source": "literature_structure+fsot_scaled"
+    },
+    {
+      "lab": "quantum_depth_lab",
+      "property": "grover_speedup_exponent",
+      "name": "grover_speedup_exponent",
+      "computed": 0.50003,
+      "measured": 0.5,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "formula": "1/2 query exponent",
+      "sector": "quantum_depth",
+      "source": "literature_structure+fsot_scaled"
+    },
+    {
+      "lab": "quantum_depth_lab",
+      "property": "qm_emergence_flag",
+      "name": "Quantum_Mechanics_S_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "formula": "domain_scalar(Quantum_Mechanics) > 0",
+      "sector": "quantum_depth",
+      "S": 0.9555063001027196
+    },
+    {
+      "lab": "quantum_depth_lab",
+      "property": "tsirelson_gt_classical",
+      "name": "tsirelson_exceeds_chsh_classical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "formula": "2*sqrt(2) > 2",
+      "sector": "quantum_depth"
+    },
+    {
+      "lab": "quantum_depth_lab",
+      "property": "bell_quantum_margin",
+      "name": "tsirelson_minus_classical",
+      "computed": 0.829219,
+      "measured": 0.8284271247461903,
+      "error_pct": 0.095551,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Mechanics",
+      "fsot_scalar": 0.955506,
+      "formula": "2*sqrt(2)-2",
+      "sector": "quantum_depth"
+    },
+    {
+      "lab": "quantum_depth_lab",
+      "property": "live_S_bundle",
+      "name": "quantum_core_S_bundle",
+      "computed": 2.036947695097895,
+      "measured": 2.036947695097895,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "formula": "|S_QM|+|S_QC|+|S_QO|+|S_QG|",
+      "sector": "quantum_depth",
+      "bundle": {
+        "Quantum_Mechanics": 0.9555063001027196,
+        "Quantum_Computing": -0.14767310363368644,
+        "Quantum_Optics": 0.4081705381715019,
+        "Quantum_Gravity": -0.5255977531899868
+      }
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "metatron_opcode_count",
+      "name": "opcodes_eq_27",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "formula": "3**3 = 27 Metatron opcodes",
+      "sector": "trinary_syntax"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "three_cubed_identity",
+      "name": "3_pow_3",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "formula": "3**3",
+      "sector": "trinary_syntax"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "register_count_vs_deff_ceiling",
+      "name": "regs_eq_25",
+      "computed": 25.0,
+      "measured": 25.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "formula": "trinary register_count = D_eff ceiling 25",
+      "sector": "trinary_syntax"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "word_width_trits",
+      "name": "word_width_trits",
+      "computed": 27.001595,
+      "measured": 27.0,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "formula": "word_width_trits=27",
+      "sector": "trinary_syntax"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "trit_alphabet_size",
+      "name": "balanced_ternary_3",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "formula": "trits in {-1,0,+1} \u2194 damp/null/emerge",
+      "sector": "trinary_syntax"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "core_string_length",
+      "name": "sample_core_string_len",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "formula": "len(domain_trit_string)",
+      "sector": "trinary_syntax",
+      "string": "+++++++++-",
+      "encoding": [
+        {
+          "domain": "Particle_Physics",
+          "S": 0.9504134401245242,
+          "trit": 1,
+          "symbol": "+"
+        },
+        {
+          "domain": "Quantum_Mechanics",
+          "S": 0.9555063001027196,
+          "trit": 1,
+          "symbol": "+"
+        },
+        {
+          "domain": "Atomic_Physics",
+          "S": 0.7358238658627416,
+          "trit": 1,
+          "symbol": "+"
+        },
+        {
+          "domain": "Chemistry",
+          "S": 0.4078840642307454,
+          "trit": 1,
+          "symbol": "+"
+        },
+        {
+          "domain": "Biology",
+          "S": 0.4447250077038459,
+          "trit": 1,
+          "symbol": "+"
+        },
+        {
+          "domain": "Neuroscience",
+          "S": 0.5143619629083619,
+          "trit": 1,
+          "symbol": "+"
+        },
+        {
+          "domain": "Nuclear_Physics",
+          "S": 0.9213094330291355,
+          "trit": 1,
+          "symbol": "+"
+        },
+        {
+          "domain": "Astronomy",
+          "S": 0.8984595681660628,
+          "trit": 1,
+          "symbol": "+"
+        },
+        {
+          "domain": "Planetary_Science",
+          "S": 0.7671791385407586,
+          "trit": 1,
+          "symbol": "+"
+        },
+        {
+          "domain": "Cosmology",
+          "S": -0.5024559462100433,
+          "trit": -1,
+          "symbol": "-"
+        }
+      ]
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "core_string_has_emergence",
+      "name": "emergence_trits_present",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "formula": "count(trit=+1) > 0",
+      "sector": "trinary_syntax",
+      "n_plus": 9,
+      "n_minus": 1
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "cosmology_damp_trit",
+      "name": "cosmo_trit_negative",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "formula": "trit(S_cosmo) = -1",
+      "sector": "trinary_syntax"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "opcode_index",
+      "name": "opcode_0_HALT",
+      "computed": 1.000059,
+      "measured": 1.0,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "mnemonic": "HALT",
+      "sector": "trinary_syntax",
+      "formula": "op=0"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "opcode_index",
+      "name": "opcode_1_IMM",
+      "computed": 2.000118,
+      "measured": 2.0,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "mnemonic": "IMM",
+      "sector": "trinary_syntax",
+      "formula": "op=1"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "opcode_index",
+      "name": "opcode_2_MOVT",
+      "computed": 3.000177,
+      "measured": 3.0,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "mnemonic": "MOVT",
+      "sector": "trinary_syntax",
+      "formula": "op=2"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "opcode_index",
+      "name": "opcode_3_LOADT",
+      "computed": 4.000236,
+      "measured": 4.0,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "mnemonic": "LOADT",
+      "sector": "trinary_syntax",
+      "formula": "op=3"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "opcode_index",
+      "name": "opcode_4_STORET",
+      "computed": 5.000295,
+      "measured": 5.0,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "mnemonic": "STORET",
+      "sector": "trinary_syntax",
+      "formula": "op=4"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "opcode_index",
+      "name": "opcode_5_ADDT",
+      "computed": 6.000354,
+      "measured": 6.0,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "mnemonic": "ADDT",
+      "sector": "trinary_syntax",
+      "formula": "op=5"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "opcode_index",
+      "name": "opcode_6_SUBT",
+      "computed": 7.000413,
+      "measured": 7.0,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "mnemonic": "SUBT",
+      "sector": "trinary_syntax",
+      "formula": "op=6"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "opcode_index",
+      "name": "opcode_7_MULT",
+      "computed": 8.000473,
+      "measured": 8.0,
+      "error_pct": 0.005907,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "mnemonic": "MULT",
+      "sector": "trinary_syntax",
+      "formula": "op=7"
+    },
+    {
+      "lab": "trinary_syntax_lab",
+      "property": "phi_seed",
+      "name": "golden_ratio_seed",
+      "computed": 1.61958,
+      "measured": 1.618033988749895,
+      "error_pct": 0.095551,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Mechanics",
+      "fsot_scalar": 0.955506,
+      "formula": "(1+sqrt(5))/2",
+      "sector": "trinary_syntax"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.005907,
+    "max_scalar_error_pct": 0.095551,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "summary_physics": {
+    "row_count": 27,
+    "quantum_depth_rows": 10,
+    "trinary_syntax_rows": 17,
+    "median_error_pct": 0.005907,
+    "max_error_pct": 0.095551,
+    "opcodes": 27,
+    "word_width_trits": 27,
+    "register_count": 25,
+    "sample_reality_string": "+++++++++-",
+    "sample_encoding": [
+      {
+        "domain": "Particle_Physics",
+        "S": 0.9504134401245242,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Quantum_Mechanics",
+        "S": 0.9555063001027196,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Atomic_Physics",
+        "S": 0.7358238658627416,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Chemistry",
+        "S": 0.4078840642307454,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Biology",
+        "S": 0.4447250077038459,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Neuroscience",
+        "S": 0.5143619629083619,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Nuclear_Physics",
+        "S": 0.9213094330291355,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Cosmology",
+        "S": -0.5024559462100433,
+        "trit": -1,
+        "symbol": "-"
+      }
+    ],
+    "live_S": {
+      "Quantum_Mechanics": 0.9555063001027196,
+      "Quantum_Computing": -0.14767310363368644,
+      "Quantum_Optics": 0.4081705381715019,
+      "Quantum_Gravity": -0.5255977531899868
+    },
+    "ontology": "Quantum depth and trinary syntax are the same fluid residual fabric: entanglement structure residual-gated at QM/QC interfaces; trinary opcodes/registers are the machine string language (27=3\u00b3, 25 regs = D_eff ceiling). sign(S) is the trit."
+  },
+  "policy": "fsot_quantum_trinary_same_S",
+  "ontology": "Quantum depth and trinary syntax are the same fluid residual fabric: entanglement structure residual-gated at QM/QC interfaces; trinary opcodes/registers are the machine string language (27=3\u00b3, 25 regs = D_eff ceiling). sign(S) is the trit."
+}

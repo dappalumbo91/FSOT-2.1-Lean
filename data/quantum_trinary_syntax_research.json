@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-08-05T21:06:34.024052+00:00",
+  "version": "1.0",
+  "benchmark": "data/quantum_trinary_syntax_benchmark.json",
+  "module": "vendor/fsot_quantum_trinary_syntax.py",
+  "summary": {
+    "row_count": 27,
+    "quantum_depth_rows": 10,
+    "trinary_syntax_rows": 17,
+    "median_error_pct": 0.005907,
+    "max_error_pct": 0.095551,
+    "opcodes": 27,
+    "word_width_trits": 27,
+    "register_count": 25,
+    "sample_reality_string": "+++++++++-",
+    "sample_encoding": [
+      {
+        "domain": "Particle_Physics",
+        "S": 0.9504134401245242,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Quantum_Mechanics",
+        "S": 0.9555063001027196,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Atomic_Physics",
+        "S": 0.7358238658627416,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Chemistry",
+        "S": 0.4078840642307454,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Biology",
+        "S": 0.4447250077038459,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Neuroscience",
+        "S": 0.5143619629083619,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Nuclear_Physics",
+        "S": 0.9213094330291355,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "trit": 1,
+        "symbol": "+"
+      },
+      {
+        "domain": "Cosmology",
+        "S": -0.5024559462100433,
+        "trit": -1,
+        "symbol": "-"
+      }
+    ],
+    "live_S": {
+      "Quantum_Mechanics": 0.9555063001027196,
+      "Quantum_Computing": -0.14767310363368644,
+      "Quantum_Optics": 0.4081705381715019,
+      "Quantum_Gravity": -0.5255977531899868
+    },
+    "ontology": "Quantum depth and trinary syntax are the same fluid residual fabric: entanglement structure residual-gated at QM/QC interfaces; trinary opcodes/registers are the machine string language (27=3\u00b3, 25 regs = D_eff ceiling). sign(S) is the trit."
+  },
+  "claims_allowed": [
+    "CHSH classical / Tsirelson residual-gated under Quantum_Mechanics",
+    "Bell entropy / EPR correlation structure under same residual law",
+    "27 Metatron opcodes = 3\u00b3; 25 registers = D_eff ceiling",
+    "sign(S) is the balanced trit of the reality string",
+    "Trinary OS is the machine syntax of the fluid continuum \u2014 not a second physics"
+  ],
+  "claims_forbidden": [
+    "New free parameters for entanglement",
+    "Trinary OS uses different seeds than fsot_compute"
+  ],
+  "related_existing_panels": [
+    "data/quantum_mechanics_entanglement_depth_panel_benchmark.json",
+    "data/quantum_information_benchmark.json",
+    "data/quantum_computing_math_depth_panel_benchmark.json",
+    "data/trinary_os_tier_e_benchmark.json"
+  ]
+}
