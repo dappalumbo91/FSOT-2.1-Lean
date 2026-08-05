@@ -126,7 +126,7 @@ def main() -> int:
             },
         ],
         "next_depth_steps": [
-            "Wire FullFormalSpine pi/e obligations to `Require TranscendentalBounds_00` instead of float literals",
+            "Wire remaining FullFormalSpine float-export rows that still use literal-literal lra (beyond pi/e base)",
             "Run `lake build` on Bounds.lean in CI for Mathlib chain regression",
             "Optional: Machin-series hand proofs without Interval package (not required for green)",
         ],

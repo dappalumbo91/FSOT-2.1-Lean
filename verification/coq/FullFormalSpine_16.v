@@ -1,9 +1,11 @@
 (* FSOT Tier 80 — FullFormalSpine chunk 17/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
+(* Tight pi/e intervals re-export TranscendentalBoundsNative (Interval), not float-float lra. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
+Require Import TranscendentalBoundsCert.
 Local Open Scope R_scope.
 
 Lemma exp_185_gt_626 : (6.26%R) < (6.359819522601832%R).
@@ -33,8 +35,8 @@ Proof. lra. Qed.
 Lemma exp_28_gt_410 : (410.0%R) < (1446257064291.475%R).
 Proof. lra. Qed.
 
-Lemma e_gt_27182818283 : (2.7182818283%R) < (2.718281828459045%R).
-Proof. lra. Qed.
+Lemma e_gt_27182818283 : (2.7182818283%R) < exp 1.
+Proof. exact certified_exp_one_lo. Qed.
 
 Lemma pi_half_gt_02956 : (0.295612%R) < (1.5707963267948966%R).
 Proof. lra. Qed.
@@ -138,17 +140,17 @@ Proof. reflexivity. Qed.
 Lemma sqrt_9_eq_3 : (3.0%R) = (3.0%R).
 Proof. reflexivity. Qed.
 
-Lemma pi_gt_314159265358979323846 : (3.14159265358979323846%R) < (3.14159265358979323847%R).
-Proof. lra. Qed.
+Lemma pi_gt_314159265358979323846 : (3.14159265358979323846%R) < PI.
+Proof. exact certified_pi_lo. Qed.
 
-Lemma pi_lt_314159265358979323847 : (3.14159265358979323846%R) < (3.14159265358979323847%R).
-Proof. lra. Qed.
+Lemma pi_lt_314159265358979323847 : PI < (3.14159265358979323847%R).
+Proof. exact certified_pi_hi. Qed.
 
 Lemma pi_div_e_lt_pi_div_two : (1.1557273497909217%R) < (1.5707963267948966%R).
 Proof. lra. Qed.
 
-Lemma e_lt_27182818286 : (2.718281828459045%R) < (2.7182818286%R).
-Proof. lra. Qed.
+Lemma e_lt_27182818286 : exp 1 < (2.7182818286%R).
+Proof. exact certified_exp_one_hi. Qed.
 
 Lemma e_pi_gt_27182818283_mul_pi : (8.53973422217391%R) < (8.539734222673566%R).
 Proof. lra. Qed.

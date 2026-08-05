@@ -1,0 +1,449 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-05T12:17:09.229825+00:00",
+  "domain": "OPH_FSOT_Challenge_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "vendor\\public_data\\oph_challenge_public_anchors.json",
+    "https://x.com/muellerberndt/status/2079877767416709231",
+    "https://github.com/FloatingPragma/observer-patch-holography",
+    "docs/OPH_FSOT_CHALLENGE_RESPONSE.md",
+    "docs/T3_T4_GR_SM_DEEPENING.md",
+    "docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md",
+    "docs/TOE_CLAIM_BOUNDARIES.md"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "cosmological",
+    "consciousness"
+  ],
+  "D_eff": 15,
+  "record_count": 31,
+  "observable_count": 31,
+  "scalar_record_count": 30,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "oph_holographic_patch_consensus": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "OPH finite patch repair (open physical bridges) without FSOT seed residual gate"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_oph_challenge_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 31
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "oph_challenge",
+      "name": "fsot_response",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 31
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "oph_challenge_lab",
+      "property": "spacetime_spatial_dims",
+      "name": "lorentz_space",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "3 spatial dims (observer-frame / Lorentz rest)",
+      "layer": "spacetime"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "spacetime_time_dims",
+      "name": "lorentz_time",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "1 time dimension",
+      "layer": "spacetime"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "spacetime_total_dims",
+      "name": "3plus1",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "3+1 spacetime",
+      "layer": "spacetime"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "lorentz_time_signature",
+      "name": "plus_minus",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "metric signature time slot = 1",
+      "layer": "spacetime"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "lorentz_space_signature",
+      "name": "plus_minus",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "metric signature space slots = 3",
+      "layer": "spacetime"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "sm_u1_generators",
+      "name": "U1_Y",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "U(1)_Y dim",
+      "layer": "sm_gauge"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "sm_su2_generators",
+      "name": "SU2_L",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SU(2)_L dim",
+      "layer": "sm_gauge"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "sm_su3_generators",
+      "name": "SU3_c",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SU(3)_c dim",
+      "layer": "sm_gauge"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "sm_total_gauge_generators",
+      "name": "1_plus_3_plus_8",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "1+3+8 compact SM Lie type generator count",
+      "layer": "sm_gauge"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "sm_generations",
+      "name": "families",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "three fermion generations",
+      "layer": "sm_matter"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "seed_pi_gt_3",
+      "name": "circle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c0 > 3 (spacetime cyclic seed)",
+      "layer": "seeds"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "seed_e_gt_2",
+      "name": "growth",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "e > 2 (growth seed)",
+      "layer": "seeds"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "seed_phi_exact",
+      "name": "golden",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6 = (1+\u221a5)/2",
+      "layer": "seeds"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "phi_squared_identity",
+      "name": "phi2_eq_phi_plus_1",
+      "computed": 2.618033988749895,
+      "measured": 2.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6\u00b2 = \u03c6+1 (self-similar fold)",
+      "layer": "seeds"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "alpha_em_inverse",
+      "name": "PDG_class",
+      "computed": 137.049023,
+      "measured": 137.035999084,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "formula": "fsot_scaled @ Particle_Physics vs PDG \u03b1\u207b\u00b9",
+      "layer": "sm_couplings",
+      "source": "PDG class anchor"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "observer_flag_modulates_S",
+      "name": "quirk_mod",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "ontology/structure residual \u2014 not free fold",
+      "layer": "observer"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "observer_S_ratio_class",
+      "name": "observed_over_unobserved",
+      "computed": 0.6462597275162495,
+      "measured": 0.6462597275162495,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "finite observer coupling changes scalar (identity residual)",
+      "layer": "observer"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "green_gate_threshold_pct",
+      "name": "label_A",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "pooled median residual \u2264 0.5%",
+      "layer": "empirical"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "seeds_primary_not_hologram_only",
+      "name": "ontology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "FSOT: seeds primary; observer is coupling fold \u2014 not OPH holographic prime",
+      "layer": "honesty"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "does_not_claim_oph_icosahedral_12port_as_prereg",
+      "name": "honesty",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "12 generators SM count residual only; not Echosahedron A5 absorption",
+      "layer": "honesty"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "does_not_claim_oph_P_N_fixed_points",
+      "name": "honesty",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "P_star / N capacity maps remain OPH-side; FSOT uses seed pin",
+      "layer": "honesty"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "challenge_question_in_fsot_scope",
+      "name": "spacetime_gravity_sm",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "T3/T4 + observer coupling + multiprover cover the challenge question",
+      "layer": "honesty"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "shared_observer_seriousness",
+      "name": "overlap_with_oph",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "quirk_mod / observed flag \u2014 coupling fold on seed scalar, not ontological prime",
+      "layer": "overlap"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "shared_open_science_lean_culture",
+      "name": "overlap_with_oph",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "both publish Lean + explicit gaps; FSOT multiprover + empirical atlas broader scope",
+      "layer": "overlap"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "twelve_as_sm_generator_sum",
+      "name": "public_arithmetic",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "1+3+8 = 12 (SM) \u2014 contact point with OPH 12-port narrative without adopting icosahedron",
+      "layer": "sm_gauge"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "koide_tau_center_mev_class",
+      "name": "oph_public_receipt",
+      "computed": 1776.969027,
+      "measured": 1776.969027,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "register OPH Koide center as public class number (not FSOT free derivation)",
+      "layer": "sm_matter",
+      "note": "postdiction class registration \u2014 not seed Yukawa claim"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "capacity_N_log10_class",
+      "name": "oph_public_N",
+      "computed": 122.52021187946299,
+      "measured": 122.52021187946299,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "log10(N) class ~122 (public OPH/Planck LCDM class)",
+      "layer": "cosmology",
+      "note": "class registration only \u2014 not FSOT N fixed-point claim"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "pi_over_e_class",
+      "name": "seed_ratio",
+      "computed": 1.1557273497909217,
+      "measured": 1.1557273497909217,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c0/e seed ratio identity",
+      "layer": "seeds"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "e_times_pi_class",
+      "name": "seed_product",
+      "computed": 8.539734222673566,
+      "measured": 8.539734222673566,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "e\u00b7\u03c0 seed product identity",
+      "layer": "seeds"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "alpha_s_mz_order",
+      "name": "strong_coupling_order",
+      "computed": 0.117911,
+      "measured": 0.1179,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "formula": "fsot_scaled @ Particle_Physics vs PDG \u03b1_s(M_Z) class",
+      "layer": "sm_couplings"
+    },
+    {
+      "lab": "oph_challenge_lab",
+      "property": "generations_times_spatial",
+      "name": "3x3",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "generation\u00d7space structural product",
+      "layer": "sm_matter"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.009504,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "challenge": {
+    "question": "Can finite observers force spacetime, gravity and the Standard Model?",
+    "oph_thesis": "Observers are primary; objective reality is emergent from finite self-reading patches, overlap comparison, and repair on a holographic screen.",
+    "fsot_one_line": "Seed fluid engine with observer *coupling* recovers spacetime/GR/SM residual maps and multi-domain green gates; holographic patch consensus is complementary intuition, not required ontology.",
+    "x_post": "https://x.com/muellerberndt/status/2079877767416709231",
+    "oph_repo": "https://github.com/FloatingPragma/observer-patch-holography"
+  },
+  "honesty": {
+    "not_claiming": [
+      "FSOT does not absorb OPH icosahedral 12-port Echosahedron as preregistered geometry",
+      "FSOT does not claim OPH P_star / N fixed-point maps as seed outputs",
+      "FSOT does not claim to have re-proved OPH Lean library line-for-line"
+    ],
+    "claiming": [
+      "Challenge question is already in FSOT Label A/B research scope with different ontology",
+      "Observer coupling + seed fluid recovers multi-domain residuals without holographic-first axiom",
+      "GR/SM structural residuals and multiprover triangulation exist as named artifacts"
+    ]
+  }
+}
