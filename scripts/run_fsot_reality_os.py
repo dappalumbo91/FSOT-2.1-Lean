@@ -35,12 +35,20 @@ from fsot_reality_os import (  # noqa: E402
     boot_message,
     compute_domain_S,
     compute_S_raw,
+    coverage_checklist,
+    derived_table,
     hardware_status,
     hierarchy_head,
     list_interfaces,
+    matter_dual_status,
+    multiprover_status,
     neighbors,
     predict_demo,
+    quantum_status,
+    reality_syntax_rules,
     residual_predict,
+    sector_coverage,
+    seeds_table,
     snapshot,
 )
 
@@ -134,6 +142,14 @@ def cmd_snapshot(_: argparse.Namespace) -> int:
                 "engine_interfaces": st.engine_interfaces,
                 "connective_edges": st.connective_edges,
                 "hardware": st.hardware,
+                "quantum": {
+                    "core_count": (st.quantum or {}).get("core_count"),
+                    "extension_count": (st.quantum or {}).get("extension_count"),
+                    "green_panel_count": (st.quantum or {}).get("green_panel_count"),
+                    "all_green": (st.quantum or {}).get("all_green"),
+                    "live_core_S": (st.quantum or {}).get("live_core_S"),
+                },
+                "multiprover": st.multiprover,
             },
             indent=2,
         )
@@ -167,6 +183,57 @@ def cmd_audit(_: argparse.Namespace) -> int:
     return r.returncode
 
 
+def cmd_quantum(_: argparse.Namespace) -> int:
+    print(json.dumps(quantum_status(), indent=2))
+    return 0
+
+
+def cmd_dual(_: argparse.Namespace) -> int:
+    print(json.dumps(matter_dual_status(), indent=2))
+    return 0
+
+
+def cmd_matter(args: argparse.Namespace) -> int:
+    # alias of dual + particle S
+    out = matter_dual_status()
+    try:
+        out["S_particle"] = compute_domain_S("Particle_Physics")
+        out["S_nuclear"] = compute_domain_S("Nuclear_Physics")
+        out["S_quantum"] = compute_domain_S("Quantum_Mechanics")
+    except Exception as exc:  # noqa: BLE001
+        out["live_S_error"] = str(exc)
+    print(json.dumps(out, indent=2))
+    return 0
+
+
+def cmd_multiprover(_: argparse.Namespace) -> int:
+    print(json.dumps(multiprover_status(), indent=2))
+    return 0
+
+
+def cmd_sectors(_: argparse.Namespace) -> int:
+    print(json.dumps(sector_coverage(), indent=2))
+    return 0
+
+
+def cmd_coverage(_: argparse.Namespace) -> int:
+    print(json.dumps(coverage_checklist(), indent=2))
+    return 0
+
+
+def cmd_rules(_: argparse.Namespace) -> int:
+    print(json.dumps({"reality_syntax_rules": reality_syntax_rules()}, indent=2))
+    return 0
+
+
+def cmd_seeds(args: argparse.Namespace) -> int:
+    out: dict = {"seeds": seeds_table()}
+    if args.derived:
+        out["derived"] = derived_table(args.layer)
+    print(json.dumps(out, indent=2))
+    return 0
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description="FSOT Reality OS — singular complete-engine runtime")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -178,6 +245,18 @@ def main() -> int:
     sub.add_parser("hierarchy", help="Building-block hierarchy head").set_defaults(func=cmd_hierarchy)
     sub.add_parser("rebuild", help="Rebuild math audit + atlas DB + system audit").set_defaults(func=cmd_rebuild)
     sub.add_parser("audit", help="Run complete system connective audit").set_defaults(func=cmd_audit)
+    sub.add_parser("quantum", help="Quantum mechanics/science coverage + live S").set_defaults(func=cmd_quantum)
+    sub.add_parser("dual", help="Matter/antimatter conjugate duals + eta").set_defaults(func=cmd_dual)
+    sub.add_parser("matter", help="Matter sector (particle/nuclear/QM + duals)").set_defaults(func=cmd_matter)
+    sub.add_parser("multiprover", help="Cross-proof / GR-SM multiprover status").set_defaults(func=cmd_multiprover)
+    sub.add_parser("sectors", help="All fabric sectors mapped into Reality OS").set_defaults(func=cmd_sectors)
+    sub.add_parser("coverage", help="Not-missing checklist for Reality OS").set_defaults(func=cmd_coverage)
+    sub.add_parser("rules", help="Reality syntax rules from building-blocks sim").set_defaults(func=cmd_rules)
+
+    sp_seeds = sub.add_parser("seeds", help="Engine seeds (+ optional derived stack)")
+    sp_seeds.add_argument("--derived", action="store_true", help="Include L1/L2 derived constants")
+    sp_seeds.add_argument("--layer", type=int, default=None, help="Filter derived layer 1 or 2")
+    sp_seeds.set_defaults(func=cmd_seeds)
 
     sp = sub.add_parser("S", help="Compute domain or raw S")
     sp.add_argument("domain", nargs="?", help="Named core domain")
