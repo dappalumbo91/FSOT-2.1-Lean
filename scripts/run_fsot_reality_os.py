@@ -10,12 +10,15 @@ Condense scripts/panels into one running program:
   python scripts/run_fsot_reality_os.py neighbors Cosmology
   python scripts/run_fsot_reality_os.py hierarchy
   python scripts/run_fsot_reality_os.py atlas-stats
-  python scripts/run_fsot_reality_os.py hardware
+  python scripts/run_fsot_reality_os.py hardware          # inventory Rust/QEMU spine
+  python scripts/run_fsot_reality_os.py hardware --run    # EXECUTE bare-metal + QEMU
   python scripts/run_fsot_reality_os.py rebuild   # math audit + atlas DB
   python scripts/run_fsot_reality_os.py audit     # complete system audit
 
-Bare-metal / QEMU path remains verification/rust/fsot_scalar_kernel +
-scripts/run_fsot_hardware_bare_metal.py — this CLI is the host OS of the fabric.
+OS execution spine (not optional later): verification/rust/fsot_scalar_kernel +
+fsot_hardware_kernel + vendor/rust_lean_bridge + verification/qemu, driven by
+scripts/run_fsot_hardware_bare_metal.py and run_rust_lean_bridge_qemu_harness.py.
+Python residual CLI is formula authority only — not the operating system.
 """
 
 from __future__ import annotations
@@ -38,6 +41,7 @@ from fsot_reality_os import (  # noqa: E402
     coverage_checklist,
     derived_table,
     hardware_status,
+    run_hardware_spine,
     hierarchy_head,
     list_interfaces,
     matter_dual_status,
@@ -124,7 +128,11 @@ def cmd_atlas(_: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_hardware(_: argparse.Namespace) -> int:
+def cmd_hardware(args: argparse.Namespace) -> int:
+    if getattr(args, "run", False):
+        doc = run_hardware_spine(skip_qemu=bool(getattr(args, "skip_qemu", False)))
+        print(json.dumps(doc, indent=2))
+        return 0 if doc.get("overall_ok") else 1
     print(json.dumps(hardware_status(), indent=2))
     return 0
 
@@ -244,7 +252,21 @@ def main() -> int:
     sub.add_parser("boot", help="Print Reality OS boot banner").set_defaults(func=cmd_boot)
     sub.add_parser("snapshot", help="JSON fabric snapshot").set_defaults(func=cmd_snapshot)
     sub.add_parser("atlas-stats", help="SQLite atlas stats").set_defaults(func=cmd_atlas)
-    sub.add_parser("hardware", help="Rust/QEMU/trinary path status").set_defaults(func=cmd_hardware)
+    hw = sub.add_parser(
+        "hardware",
+        help="Rust/QEMU OS spine inventory; use --run to execute bare-metal + QEMU",
+    )
+    hw.add_argument(
+        "--run",
+        action="store_true",
+        help="Execute fsot_hardware_bare_metal + rust_lean_bridge QEMU harness",
+    )
+    hw.add_argument(
+        "--skip-qemu",
+        action="store_true",
+        help="With --run: only host Rust hardware kernel tests (no QEMU)",
+    )
+    hw.set_defaults(func=cmd_hardware)
     sub.add_parser("hierarchy", help="Building-block hierarchy head").set_defaults(func=cmd_hierarchy)
     sub.add_parser("rebuild", help="Rebuild math audit + atlas DB + system audit").set_defaults(func=cmd_rebuild)
     sub.add_parser("audit", help="Run complete system connective audit").set_defaults(func=cmd_audit)

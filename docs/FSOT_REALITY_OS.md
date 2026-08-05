@@ -23,7 +23,7 @@ Research tracks are **branches** — not the trunk.
 | Coverage checklist | `coverage` | not-missing inventory |
 | Multiprover | `multiprover` | cross-proof + GR/SM reports |
 | Atlas DB | `atlas-stats` | residuals + formula tables |
-| Hardware path | `hardware` | Rust kernel, QEMU, trinary OS |
+| Hardware path (OS spine) | `hardware` / `hardware --run` | **Rust kernels + QEMU** (not Python): `fsot_scalar_kernel`, `fsot_hardware_kernel`, `rust_lean_bridge`, `verification/qemu` |
 | Full rebuild / audit | `rebuild` `audit` | math audit → sim → atlas → system audit |
 
 **Master formula:**
@@ -73,8 +73,22 @@ python scripts/run_fsot_reality_os.py S Quantum_Mechanics
 python scripts/run_fsot_reality_os.py predict Quantum_Optics 1.0
 python scripts/run_fsot_reality_os.py multiprover
 python scripts/run_fsot_reality_os.py rules
-python scripts/run_fsot_reality_os.py hardware
+python scripts/run_fsot_reality_os.py hardware          # inventory Rust/QEMU spine
+python scripts/run_fsot_reality_os.py hardware --run    # EXECUTE bare-metal + QEMU
 ```
+
+### Hard rule — Python is not the OS
+
+The residual CLI is formula authority only (pin D1D38A, \(S\), residual law).  
+**OS execution** is the monorepo Rust + QEMU architecture already under:
+
+- `verification/rust/fsot_scalar_kernel`
+- `verification/rust/fsot_hardware_kernel`
+- `vendor/rust_lean_bridge`
+- `verification/qemu`
+- runners: `scripts/run_fsot_hardware_bare_metal.py`, `scripts/run_rust_lean_bridge_qemu_harness.py`
+
+Sibling Reality OS must call this spine (`scripts/run_hardware_spine.py`), not reimplement it in Python.
 
 ---
 

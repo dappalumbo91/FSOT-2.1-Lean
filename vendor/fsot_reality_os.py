@@ -277,23 +277,115 @@ def neighbors(domain: str, limit: int = 20) -> list[dict[str, Any]]:
 
 
 def hardware_status() -> dict[str, Any]:
+    """Inventory of the *real* OS execution path (Rust + QEMU), not a Python stand-in.
+
+    Python residual CLI is the formula shell only. The OS spine lives under
+    verification/rust/* + vendor/rust_lean_bridge + verification/qemu and is
+    exercised by run_fsot_hardware_bare_metal / run_rust_lean_bridge_qemu_harness.
+    """
     from living_fsot_lib import qemu_available
 
     q_ok, q_path = qemu_available()
+    crates = {
+        "fsot_scalar_kernel": ROOT / "verification/rust/fsot_scalar_kernel",
+        "fsot_hardware_kernel": ROOT / "verification/rust/fsot_hardware_kernel",
+        "fsot_observer_serial": ROOT / "verification/rust/fsot_observer_serial",
+        "fsot_obligation_replay": ROOT / "verification/rust/fsot_obligation_replay",
+        "rust_lean_bridge": ROOT / "vendor/rust_lean_bridge",
+    }
+    runners = {
+        "bare_metal": ROOT / "scripts/run_fsot_hardware_bare_metal.py",
+        "qemu_harness": ROOT / "scripts/run_rust_lean_bridge_qemu_harness.py",
+        "esp32_observer": ROOT / "verification/esp32/fsot_esp32_observer",
+    }
+    present = {k: p.exists() for k, p in crates.items()}
+    runner_ok = {k: p.exists() for k, p in runners.items()}
+    spine_ready = (
+        q_ok
+        and present.get("fsot_scalar_kernel")
+        and present.get("fsot_hardware_kernel")
+        and present.get("rust_lean_bridge")
+        and runner_ok.get("bare_metal")
+        and runner_ok.get("qemu_harness")
+        and (ROOT / "verification/qemu").exists()
+    )
     return {
+        "os_spine": "rust_qemu",
+        "formula_shell": "python_pin_D1D38A",
+        "spine_ready": spine_ready,
         "qemu_available": q_ok,
         "qemu_path": q_path,
-        "rust_scalar_kernel": (ROOT / "verification/rust/fsot_scalar_kernel").exists(),
-        "rust_hardware_kernel": (ROOT / "verification/rust/fsot_hardware_kernel").exists(),
-        "qemu_dir": (ROOT / "verification/qemu").exists(),
+        "crates": {k: str(p) for k, p in crates.items()},
+        "crates_present": present,
+        "runners": {k: str(p) for k, p in runners.items()},
+        "runners_present": runner_ok,
+        "qemu_dir": str(ROOT / "verification/qemu"),
+        "qemu_dir_present": (ROOT / "verification/qemu").exists(),
         "trinary_os": (ROOT / "vendor/trinary_os").exists(),
         "trinary_hardware": (ROOT / "vendor/trinary_hardware").exists(),
-        "bare_metal_runner": (ROOT / "scripts/run_fsot_hardware_bare_metal.py").exists(),
         "path_note": (
-            "Host Reality OS uses Python authority engine; bare-metal path is "
-            "fsot_scalar_kernel (no_std) + QEMU/ESP32 kits."
+            "Reality OS execution spine = Rust no_std scalar/hardware kernels + "
+            "QEMU disk/serial harness (already in this monorepo). Python is residual "
+            "authority only — not the OS. Run: python scripts/run_fsot_reality_os.py hardware --run"
         ),
     }
+
+
+def run_hardware_spine(*, skip_qemu: bool = False) -> dict[str, Any]:
+    """Execute monorepo Rust processor gates + QEMU harness (the real OS path)."""
+    import subprocess
+    import sys
+
+    status = hardware_status()
+    results: dict[str, Any] = {
+        "os_spine": "rust_qemu",
+        "inventory": status,
+        "steps": {},
+    }
+    if not status.get("spine_ready") and not status.get("crates_present", {}).get(
+        "fsot_hardware_kernel"
+    ):
+        results["overall_ok"] = False
+        results["reason"] = "Rust/QEMU spine crates missing from monorepo"
+        return results
+
+    steps = [
+        ("bare_metal", ROOT / "scripts/run_fsot_hardware_bare_metal.py"),
+    ]
+    if not skip_qemu:
+        steps.append(
+            ("qemu_harness", ROOT / "scripts/run_rust_lean_bridge_qemu_harness.py")
+        )
+
+    all_ok = True
+    for name, script in steps:
+        if not script.exists():
+            results["steps"][name] = {"status": "missing", "path": str(script)}
+            all_ok = False
+            continue
+        try:
+            proc = subprocess.run(
+                [sys.executable, str(script)],
+                cwd=str(ROOT),
+                capture_output=True,
+                text=True,
+                timeout=900,
+            )
+            results["steps"][name] = {
+                "status": "passed" if proc.returncode == 0 else "failed",
+                "returncode": proc.returncode,
+                "stdout_tail": (proc.stdout or "")[-1500:],
+                "stderr_tail": (proc.stderr or "")[-800:],
+            }
+            if proc.returncode != 0:
+                all_ok = False
+        except Exception as exc:  # noqa: BLE001
+            results["steps"][name] = {"status": "error", "error": str(exc)}
+            all_ok = False
+
+    results["overall_ok"] = all_ok
+    results["command"] = "python scripts/run_fsot_reality_os.py hardware --run"
+    return results
 
 
 def pin_prefix() -> str:
