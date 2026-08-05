@@ -1,16 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:49:50.441199+00:00",
+  "generated_at": "2026-08-05T14:36:00.689197+00:00",
   "domain": "SH0ES_Refined",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "G:/FSOT-PublicData/anomaly_observables/sh0es",
     "data/sh0es_host_coordinates.json",
-    "data/sector_h0_seed.json",
-    "c_thin_depth_pass",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-    "fsot_proper_green_remediation"
+    "data/sector_h0_seed.json"
   ],
   "maps_to_lean": [
     "cosmological",
@@ -18,24 +14,24 @@
     "cmb"
   ],
   "D_eff": 25,
-  "record_count": 20,
-  "observable_count": 20,
-  "scalar_record_count": 17,
-  "scalar_gate_applicable": true,
+  "record_count": 7,
+  "observable_count": 7,
+  "scalar_record_count": 0,
+  "scalar_gate_applicable": false,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 2.1766e-05,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "pre": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "pre"
+      "per_host_h0_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Single H0 ignores sightline bubble structure"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_proper_vs_baseline": true
+      "channel_sh0es_vs_baseline": true
     }
   },
   "records": [
@@ -46,19 +42,41 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 20
+      "observable_count": 7
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_proper",
-      "name": "green_fix",
-      "computed": 2.2e-05,
+      "property": "sh0es",
+      "name": "per_host_h0_panel",
+      "computed": 0.625765,
       "measured": 0.0,
-      "error_pct": 2.1766e-05,
-      "observable_count": 20
+      "error_pct": 0.625765,
+      "observable_count": 7
     }
   ],
   "material_records": [
+    {
+      "lab": "sh0es_refined_lab",
+      "property": "host_h0_weighted_mean",
+      "name": "SH0ES_cepheid_hosts_weighted",
+      "computed": 73.582592,
+      "measured": 73.04,
+      "error_pct": 0.74287,
+      "host_count": 46,
+      "method": "bubble_bleed_weighted_by_cepheid_count",
+      "eval_kind": "contested_observable"
+    },
+    {
+      "lab": "sh0es_refined_lab",
+      "property": "host_h0_median",
+      "name": "SH0ES_cepheid_hosts_median",
+      "computed": 73.497059,
+      "measured": 73.04,
+      "error_pct": 0.625765,
+      "host_count": 46,
+      "method": "bubble_bleed_median_sightline",
+      "eval_kind": "contested_observable"
+    },
     {
       "lab": "sh0es_refined_lab",
       "property": "sector_h0_global_cmb_background",
@@ -72,20 +90,7 @@
       "method": "FSOT_Wave1_CMB",
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
-      "eval_kind": "contested_observable",
-      "domain_display_name": "sh0es refined",
-      "display_name": "global cmb background",
-      "scientific_measurement": {
-        "delta": 1.7e-07,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "contested_observable"
     },
     {
       "lab": "sh0es_refined_lab",
@@ -101,20 +106,7 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "eval_kind": "contested_observable",
-      "h0_tension_note": "dual_anchor_literature_sector",
-      "domain_display_name": "sh0es refined",
-      "display_name": "planck cmb local",
-      "scientific_measurement": {
-        "delta": -0.016042,
-        "delta_pct": 0.023801,
-        "effective_error_pct": 0.023801,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "h0_tension_note": "dual_anchor_literature_sector"
     },
     {
       "lab": "sh0es_refined_lab",
@@ -130,246 +122,44 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "eval_kind": "contested_observable",
-      "h0_tension_note": "dual_anchor_literature_sector",
-      "domain_display_name": "sh0es refined",
-      "display_name": "freedman jwst",
-      "scientific_measurement": {
-        "delta": -0.110662,
-        "delta_pct": 0.157213,
-        "effective_error_pct": 0.157213,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "h0_tension_note": "dual_anchor_literature_sector"
     },
     {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "pH_water",
-      "name": "276b06aa421154fe",
-      "computed": 7.000000000000001,
-      "measured": 7.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ ( - 4 ) + phi ^ 4",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
+      "lab": "sh0es_refined_lab",
+      "property": "sector_h0_fsot_document_local",
+      "name": "fsot_document_local",
+      "computed": 71.501983,
+      "measured": 72.1,
+      "error_pct": 0.829428,
+      "bubble_density_proxy": 3.15,
+      "bubble_density_model": 2.89928,
+      "bubble_density_sky": -0.6379,
+      "method": "FSOT_local_bubble",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "eval_kind": "contested_observable",
+      "h0_tension_note": "dual_anchor_literature_sector"
     },
     {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "CO\u2082",
-      "name": "4997f65cea526a23",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "BF\u2083",
-      "name": "964b34bd5d316085",
-      "computed": 119.99999999999999,
-      "measured": 120.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "SF\u2086",
-      "name": "3dd4abfdff6593a5",
-      "computed": 90.0,
-      "measured": 90.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi / 2 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "XeF\u2082",
-      "name": "d5f905492d3792d4",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "BeCl\u2082",
-      "name": "d100218fdd574f15",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "H\u207a/H\u2082",
-      "name": "0d36931a8021c0b6",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi - pi",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Bard, Parsons & Jordan (1985)"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "alpha_Fe",
-      "name": "a3464d3321da787e",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ 2 - phi - 1",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Long & Greenwood (1997)"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "Bi2Te3",
-      "name": "dce748561902febf",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "PHI ^ 2 - PHI ^ 1",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "R_N",
-      "name": "07b3e073b02aa441",
-      "computed": 0.7500001632454711,
-      "measured": 0.75,
-      "error_pct": 2.1766e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "G ^ ( - 7 ) - ln ( 3 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "CS2",
-      "name": "b570b63cbc8dce71",
-      "computed": 358.99980082967573,
-      "measured": 359.0,
-      "error_pct": 5.5479e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E ^ 4 + PI ^ 5 - PHI ^ 1",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST Chemistry WebBook / CRC"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "Fe",
-      "name": "de190b5a1618a827",
-      "computed": 1.679990560988901,
-      "measured": 1.68,
-      "error_pct": 0.000561846,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E / PHI",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Anderson (1966)"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "F",
-      "name": "c1f0a37d1a7e1851",
-      "computed": 3.4009757390356903,
-      "measured": 3.401,
-      "error_pct": 0.000713348,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma ^ ( - 2 ) + \u03a8 ^ 2",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "IE_Ar",
-      "name": "6a9af01dd6d7066c",
-      "computed": 15.76012377846974,
-      "measured": 15.76,
-      "error_pct": 0.000785396,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma ^ ( - 5 ) + Poof",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "Ca",
-      "name": "4583c5321dccbc9d",
-      "computed": 177.8014017941265,
-      "measured": 177.8,
-      "error_pct": 0.000788411,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E ^ 5 + PI ^ 3 - PHI ^ 1",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST-JANAF / CRC / Kittel"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "P",
-      "name": "11f7ccc79d6fc81f",
-      "computed": 0.7469924420819796,
-      "measured": 0.747,
-      "error_pct": 0.001011769,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma * \u03a9",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
-    },
-    {
-      "lab": "sh0es_refined_fsot_lab",
-      "property": "CH\u2084",
-      "name": "9ab02109a8e3ee2c",
-      "computed": 109.47122063449069,
-      "measured": 109.47,
-      "error_pct": 0.00111504,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "arccos ( - 1 / 3 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
+      "lab": "sh0es_refined_lab",
+      "property": "sector_h0_carnegie_h0",
+      "name": "carnegie_h0",
+      "computed": 70.417583,
+      "measured": 69.8,
+      "error_pct": 0.88479,
+      "bubble_density_proxy": 2.04,
+      "bubble_density_model": 1.872483,
+      "bubble_density_sky": -0.6897,
+      "method": "Carnegie_distance_ladder",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "eval_kind": "contested_observable",
+      "h0_tension_note": "dual_anchor_literature_sector"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.00111504,
+    "scalar_pooled_median_error_pct": null,
+    "max_scalar_error_pct": null,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -378,5 +168,380 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 51,
+  "host_count": 46,
+  "host_details": [
+    {
+      "host": "LMC",
+      "computed_h0": 73.603794,
+      "ra_deg": 80.894,
+      "bubble_density_sky": -0.431,
+      "bubble_density_model": 4.8894,
+      "cepheid_count": 137
+    },
+    {
+      "host": "M101",
+      "computed_h0": 73.497059,
+      "ra_deg": 210.802,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 518
+    },
+    {
+      "host": "M31",
+      "computed_h0": 74.164154,
+      "ra_deg": 11.1871,
+      "bubble_density_sky": 0.6552,
+      "bubble_density_model": 5.42,
+      "cepheid_count": 55
+    },
+    {
+      "host": "N1015",
+      "computed_h0": 74.164154,
+      "ra_deg": 39.5485,
+      "bubble_density_sky": 0.6552,
+      "bubble_density_model": 5.42,
+      "cepheid_count": 39
+    },
+    {
+      "host": "N1309",
+      "computed_h0": 74.164154,
+      "ra_deg": 50.529,
+      "bubble_density_sky": 0.6552,
+      "bubble_density_model": 5.42,
+      "cepheid_count": 95
+    },
+    {
+      "host": "N1365",
+      "computed_h0": 74.164154,
+      "ra_deg": 53.443,
+      "bubble_density_sky": 0.6552,
+      "bubble_density_model": 5.42,
+      "cepheid_count": 93
+    },
+    {
+      "host": "N1448",
+      "computed_h0": 74.164154,
+      "ra_deg": 56.1663,
+      "bubble_density_sky": 0.6552,
+      "bubble_density_model": 5.42,
+      "cepheid_count": 146
+    },
+    {
+      "host": "N2442",
+      "computed_h0": 73.603794,
+      "ra_deg": 114.0751,
+      "bubble_density_sky": -0.431,
+      "bubble_density_model": 4.8894,
+      "cepheid_count": 303
+    },
+    {
+      "host": "N3021",
+      "computed_h0": 73.470375,
+      "ra_deg": 147.7347,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 30
+    },
+    {
+      "host": "N3370",
+      "computed_h0": 73.470375,
+      "ra_deg": 161.7676,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 133
+    },
+    {
+      "host": "N3447",
+      "computed_h0": 73.470375,
+      "ra_deg": 163.3606,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 203
+    },
+    {
+      "host": "N3972",
+      "computed_h0": 73.470375,
+      "ra_deg": 178.9381,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 99
+    },
+    {
+      "host": "N3982",
+      "computed_h0": 73.470375,
+      "ra_deg": 179.116,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 47
+    },
+    {
+      "host": "N4038",
+      "computed_h0": 73.497059,
+      "ra_deg": 180.4694,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 58
+    },
+    {
+      "host": "N4258",
+      "computed_h0": 73.497059,
+      "ra_deg": 184.7285,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 841
+    },
+    {
+      "host": "N4424",
+      "computed_h0": 73.497059,
+      "ra_deg": 186.8019,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 10
+    },
+    {
+      "host": "N4536",
+      "computed_h0": 73.497059,
+      "ra_deg": 188.5808,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 81
+    },
+    {
+      "host": "N4639",
+      "computed_h0": 73.497059,
+      "ra_deg": 190.7192,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 55
+    },
+    {
+      "host": "N5584",
+      "computed_h0": 73.497059,
+      "ra_deg": 215.6005,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 328
+    },
+    {
+      "host": "N5917",
+      "computed_h0": 73.497059,
+      "ra_deg": 230.3889,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 27
+    },
+    {
+      "host": "N7250",
+      "computed_h0": 73.523742,
+      "ra_deg": 334.5721,
+      "bubble_density_sky": -0.5862,
+      "bubble_density_model": 4.8136,
+      "cepheid_count": 33
+    },
+    {
+      "host": "NGC1015",
+      "computed_h0": 74.164154,
+      "ra_deg": 39.5485,
+      "bubble_density_sky": 0.6552,
+      "bubble_density_model": 5.42,
+      "cepheid_count": 39
+    },
+    {
+      "host": "NGC1309",
+      "computed_h0": 74.164154,
+      "ra_deg": 50.423,
+      "bubble_density_sky": 0.6552,
+      "bubble_density_model": 5.42,
+      "cepheid_count": 95
+    },
+    {
+      "host": "NGC1365",
+      "computed_h0": 74.164154,
+      "ra_deg": 53.401,
+      "bubble_density_sky": 0.6552,
+      "bubble_density_model": 5.42,
+      "cepheid_count": 93
+    },
+    {
+      "host": "NGC1448",
+      "computed_h0": 74.164154,
+      "ra_deg": 56.138,
+      "bubble_density_sky": 0.6552,
+      "bubble_density_model": 5.42,
+      "cepheid_count": 146
+    },
+    {
+      "host": "NGC1559",
+      "computed_h0": 73.603794,
+      "ra_deg": 67.767,
+      "bubble_density_sky": -0.431,
+      "bubble_density_model": 4.8894,
+      "cepheid_count": 0
+    },
+    {
+      "host": "NGC2442",
+      "computed_h0": 73.603794,
+      "ra_deg": 111.108,
+      "bubble_density_sky": -0.431,
+      "bubble_density_model": 4.8894,
+      "cepheid_count": 303
+    },
+    {
+      "host": "NGC3021",
+      "computed_h0": 73.470375,
+      "ra_deg": 147.371,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 30
+    },
+    {
+      "host": "NGC3370",
+      "computed_h0": 73.470375,
+      "ra_deg": 161.132,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 133
+    },
+    {
+      "host": "NGC3447",
+      "computed_h0": 73.470375,
+      "ra_deg": 163.3606,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 203
+    },
+    {
+      "host": "NGC3627",
+      "computed_h0": 73.470375,
+      "ra_deg": 170.062,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 0
+    },
+    {
+      "host": "NGC3972",
+      "computed_h0": 73.470375,
+      "ra_deg": 178.9381,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 99
+    },
+    {
+      "host": "NGC3982",
+      "computed_h0": 73.470375,
+      "ra_deg": 179.075,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 47
+    },
+    {
+      "host": "NGC4038",
+      "computed_h0": 73.497059,
+      "ra_deg": 180.466,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 58
+    },
+    {
+      "host": "NGC4254",
+      "computed_h0": 73.497059,
+      "ra_deg": 184.674,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 0
+    },
+    {
+      "host": "NGC4258",
+      "computed_h0": 73.497059,
+      "ra_deg": 184.74,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 841
+    },
+    {
+      "host": "NGC4321",
+      "computed_h0": 73.497059,
+      "ra_deg": 185.899,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 0
+    },
+    {
+      "host": "NGC4424",
+      "computed_h0": 73.497059,
+      "ra_deg": 186.8019,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 10
+    },
+    {
+      "host": "NGC4536",
+      "computed_h0": 73.497059,
+      "ra_deg": 188.614,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 81
+    },
+    {
+      "host": "NGC4639",
+      "computed_h0": 73.497059,
+      "ra_deg": 190.677,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 55
+    },
+    {
+      "host": "NGC5584",
+      "computed_h0": 73.497059,
+      "ra_deg": 215.289,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 328
+    },
+    {
+      "host": "NGC5643",
+      "computed_h0": 73.497059,
+      "ra_deg": 219.059,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 0
+    },
+    {
+      "host": "NGC5917",
+      "computed_h0": 73.497059,
+      "ra_deg": 232.288,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 27
+    },
+    {
+      "host": "NGC7250",
+      "computed_h0": 73.523742,
+      "ra_deg": 334.215,
+      "bubble_density_sky": -0.5862,
+      "bubble_density_model": 4.8136,
+      "cepheid_count": 33
+    },
+    {
+      "host": "U9391",
+      "computed_h0": 73.497059,
+      "ra_deg": 218.6547,
+      "bubble_density_sky": -0.6379,
+      "bubble_density_model": 4.7884,
+      "cepheid_count": 66
+    },
+    {
+      "host": "UGC9391",
+      "computed_h0": 73.470375,
+      "ra_deg": 175.628,
+      "bubble_density_sky": -0.6897,
+      "bubble_density_model": 4.7631,
+      "cepheid_count": 66
+    }
+  ],
+  "h0_global_fsot": 68.44005682979427,
+  "sh0es_measured_h0": 73.04,
+  "sh0es_status": "GREEN"
 }

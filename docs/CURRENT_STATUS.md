@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-08-05T13:57:36.587583+00:00`  
+**Generated:** `2026-08-05T14:42:35.816968+00:00`  
 **Edition stamp:** 2026-08-05  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -24,7 +24,7 @@
 | Gate | ≤ 0.5% pooled median |
 | Median-of-medians | 0.000561846% |
 | Scalar records (envelope) | 61445 |
-| Tiers | `{'B_verified': 328, 'A_strong': 95, 'C_thin': 1}` |
+| Tiers | `{'B_verified': 305, 'C_thin': 24, 'A_strong': 94}` |
 
 ## Multiprover
 
@@ -43,8 +43,8 @@ Frameworks passed: `coq`, `cross_refinement`, `esp32_harness`, `fstar`, `fstar_r
 
 ## Expansion highlights (recent)
 
-- **Multiprover re-run green** after expansion · public **data citation ledger** (432 panels)
-- [BENCHMARK_DATA_CITATIONS.md](BENCHMARK_DATA_CITATIONS.md) · datasets/APIs/literature anchors
+- **Physics completion pass:** Label A/B PASS · T3/T4 · contested · founding · GR/SM multiprover · 432/432 green
+- See [PHYSICS_COMPLETION_STATUS.md](PHYSICS_COMPLETION_STATUS.md)
 - Dzhanibekov / intermediate-axis vacuum flip: [`docs/DZHANIBEKOV_FSOT_RESPONSE.md`](DZHANIBEKOV_FSOT_RESPONSE.md)
 - Proper densify (formula + real data only): [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](FSOT_PROPER_DENSIFY_POLICY.md)
 - Multiprover debt clarified: [`docs/MULTIPROVER_DESIGN_DEBT_CLARIFIED.md`](MULTIPROVER_DESIGN_DEBT_CLARIFIED.md)

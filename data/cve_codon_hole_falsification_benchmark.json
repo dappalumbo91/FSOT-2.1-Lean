@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:36.257168+00:00",
+  "generated_at": "2026-08-05T14:37:14.516462+00:00",
   "domain": "CVE_Codon_Hole_Falsification",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "cisa_kev_summary.json",
     "code_genome_lib",
@@ -16,6 +16,8 @@
   "D_eff": 17,
   "record_count": 29,
   "observable_count": 29,
+  "scalar_record_count": 29,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.009186636881580057,
   "pooled_median_error_pct": 0.009186636881580057,
   "headline_median_error_pct": 0.009186636881580057,
@@ -45,20 +47,7 @@
       "computed": 0.009187,
       "measured": 0.0,
       "error_pct": 0.009186636881580057,
-      "observable_count": 29,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.009187,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 29
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -67,20 +56,7 @@
       "computed": 0.009187,
       "measured": 0.0,
       "error_pct": 0.009186636881585558,
-      "observable_count": 15,
-      "domain_display_name": "tier gap fill",
-      "display_name": "kev panel",
-      "scientific_measurement": {
-        "delta": 0.009187,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 15
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -89,20 +65,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 13,
-      "domain_display_name": "tier gap fill",
-      "display_name": "hole panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 13
     }
   ],
   "material_records": [
@@ -115,22 +78,9 @@
       "error_pct": 0.009186636881590415,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
-        "static",
-        "void"
-      ],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-20",
-      "scientific_measurement": {
-        "delta": 0.01084,
-        "delta_pct": 0.009186,
-        "effective_error_pct": 0.009186,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+        "void",
+        "static"
+      ]
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -141,22 +91,9 @@
       "error_pct": 0.00918663688158115,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
-        "exec",
-        "eval"
-      ],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-78",
-      "scientific_measurement": {
-        "delta": 0.009554,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+        "eval",
+        "exec"
+      ]
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -167,23 +104,10 @@
       "error_pct": 0.009186636881580057,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
-        "strcpy",
+        "malloc",
         "memcpy",
-        "malloc"
-      ],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-787",
-      "scientific_measurement": {
-        "delta": 0.009187,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+        "strcpy"
+      ]
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -196,20 +120,7 @@
       "risk_tokens": [
         "malloc",
         "free"
-      ],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-416",
-      "scientific_measurement": {
-        "delta": 0.008452,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      ]
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -220,23 +131,10 @@
       "error_pct": 0.009186636881591562,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
-        "strcpy",
+        "malloc",
         "memcpy",
-        "malloc"
-      ],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-119",
-      "scientific_measurement": {
-        "delta": 0.007717,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+        "strcpy"
+      ]
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -246,20 +144,7 @@
       "measured": 76.0,
       "error_pct": 0.00918663688158978,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": [],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-22",
-      "scientific_measurement": {
-        "delta": 0.006982,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "risk_tokens": []
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -272,20 +157,7 @@
       "risk_tokens": [
         "pickle",
         "eval"
-      ],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-502",
-      "scientific_measurement": {
-        "delta": 0.006155,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      ]
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -298,20 +170,7 @@
       "risk_tokens": [
         "exec",
         "eval"
-      ],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-94",
-      "scientific_measurement": {
-        "delta": 0.005971,
-        "delta_pct": 0.009186,
-        "effective_error_pct": 0.009186,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      ]
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -321,20 +180,7 @@
       "measured": 39.0,
       "error_pct": 0.00918663688158115,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": [],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-287",
-      "scientific_measurement": {
-        "delta": 0.003583,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "risk_tokens": []
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -344,20 +190,7 @@
       "measured": 37.0,
       "error_pct": 0.009186636881579674,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": [],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-843",
-      "scientific_measurement": {
-        "delta": 0.003399,
-        "delta_pct": 0.009186,
-        "effective_error_pct": 0.009186,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "risk_tokens": []
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -367,20 +200,7 @@
       "measured": 36.0,
       "error_pct": 0.009186636881588741,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": [],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-306",
-      "scientific_measurement": {
-        "delta": 0.003307,
-        "delta_pct": 0.009186,
-        "effective_error_pct": 0.009186,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "risk_tokens": []
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -390,20 +210,7 @@
       "measured": 34.0,
       "error_pct": 0.00918663688158758,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": [],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-284",
-      "scientific_measurement": {
-        "delta": 0.003123,
-        "delta_pct": 0.009185,
-        "effective_error_pct": 0.009185,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "risk_tokens": []
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -414,22 +221,9 @@
       "error_pct": 0.009186636881576182,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
-        "innerHTML",
-        "document"
-      ],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-79",
-      "scientific_measurement": {
-        "delta": 0.003032,
-        "delta_pct": 0.009188,
-        "effective_error_pct": 0.009188,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+        "document",
+        "innerHTML"
+      ]
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -439,20 +233,7 @@
       "measured": 31.0,
       "error_pct": 0.009186636881585558,
       "source": "cisa_kev_summary.json",
-      "risk_tokens": [],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-264",
-      "scientific_measurement": {
-        "delta": 0.002848,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "risk_tokens": []
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -465,20 +246,7 @@
       "risk_tokens": [
         "strcpy",
         "malloc"
-      ],
-      "domain_display_name": "cve codon falsification",
-      "display_name": "CWE-122",
-      "scientific_measurement": {
-        "delta": 0.002756,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      ]
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -493,20 +261,7 @@
         "strcpy",
         "void"
       ],
-      "hole_count": 4,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "vulnerable legacy",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 4
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -517,20 +272,7 @@
       "error_pct": 0.0,
       "source": "vendor\\cybersecurity\\samples\\secure_buffer.c",
       "cwe_token_overlap": [],
-      "hole_count": 0,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "secure buffer",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 0
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -543,20 +285,7 @@
       "cwe_token_overlap": [
         "eval"
       ],
-      "hole_count": 2,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "xss sink legacy",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 2
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -567,48 +296,20 @@
       "error_pct": 0.0,
       "source": "vendor\\cybersecurity\\samples\\csp_safe_dom.js",
       "cwe_token_overlap": [],
-      "hole_count": 3,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "csp safe dom",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 3
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "sample_hole_detected",
       "name": "cpython_ceval",
-      "computed": 5.0,
-      "measured": 5.0,
+      "computed": 3.0,
+      "measured": 3.0,
       "error_pct": 0.0,
       "source": "vendor\\github_oss\\snapshots\\cpython_ceval.c",
       "cwe_token_overlap": [
-        "free",
-        "static",
-        "void"
+        "static"
       ],
-      "hole_count": 5,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "cpython ceval",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 3
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -619,27 +320,14 @@
       "error_pct": 0.0,
       "source": "vendor\\github_oss\\snapshots\\openssl_mem_clr.c",
       "cwe_token_overlap": [],
-      "hole_count": 0,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "openssl mem clr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 0
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "sample_hole_detected",
       "name": "python_dictobject",
-      "computed": 7.0,
-      "measured": 7.0,
+      "computed": 6.0,
+      "measured": 6.0,
       "error_pct": 0.0,
       "source": "vendor\\github_oss\\snapshots\\python_dictobject.c",
       "cwe_token_overlap": [
@@ -649,27 +337,14 @@
         "static",
         "void"
       ],
-      "hole_count": 7,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "python dictobject",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 6
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "sample_hole_detected",
       "name": "redis_sds",
-      "computed": 8.0,
-      "measured": 8.0,
+      "computed": 7.0,
+      "measured": 7.0,
       "error_pct": 0.0,
       "source": "vendor\\github_oss\\snapshots\\redis_sds.c",
       "cwe_token_overlap": [
@@ -678,49 +353,22 @@
         "static",
         "void"
       ],
-      "hole_count": 8,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "redis sds",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 7
     },
     {
       "lab": "cve_codon_falsification_lab",
       "property": "sample_hole_detected",
       "name": "sqlite_mem",
-      "computed": 4.0,
-      "measured": 4.0,
+      "computed": 3.0,
+      "measured": 3.0,
       "error_pct": 0.0,
       "source": "vendor\\github_oss\\snapshots\\sqlite_mem.c",
       "cwe_token_overlap": [
         "free",
         "malloc",
-        "static",
-        "void"
+        "static"
       ],
-      "hole_count": 4,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "sqlite mem",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 3
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -731,20 +379,7 @@
       "error_pct": 0.0,
       "source": "vendor\\github_oss\\snapshots\\express_router.js",
       "cwe_token_overlap": [],
-      "hole_count": 2,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "express router",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 2
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -755,20 +390,7 @@
       "error_pct": 0.0,
       "source": "vendor\\github_oss\\snapshots\\nodejs_buffer.js",
       "cwe_token_overlap": [],
-      "hole_count": 3,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "nodejs buffer",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 3
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -779,20 +401,7 @@
       "error_pct": 0.0,
       "source": "vendor\\github_oss\\snapshots\\react_hooks.js",
       "cwe_token_overlap": [],
-      "hole_count": 0,
-      "domain_display_name": "cve codon falsification",
-      "display_name": "react hooks",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "hole_count": 0
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -801,20 +410,7 @@
       "computed": 0.750111,
       "measured": 0.75,
       "error_pct": 0.014767310363369054,
-      "source": "code_genome_lib",
-      "domain_display_name": "cve codon falsification",
-      "display_name": "aggregate sample hole rate",
-      "scientific_measurement": {
-        "delta": 0.000111,
-        "delta_pct": 0.0148,
-        "effective_error_pct": 0.0148,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "code_genome_lib"
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -823,20 +419,7 @@
       "computed": 0.500153,
       "measured": 0.5,
       "error_pct": 0.03062212293865052,
-      "source": "cwe_codon_map",
-      "domain_display_name": "cve codon falsification",
-      "display_name": "kev top cwe token overlap rate",
-      "scientific_measurement": {
-        "delta": 0.000153,
-        "delta_pct": 0.0306,
-        "effective_error_pct": 0.0306,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "cwe_codon_map"
     }
   ],
   "margin_summary": {
@@ -860,19 +443,5 @@
     "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
     "FSOT.Formal.ExternalOSSCodeGenomePriors",
     "FSOT.Formal.TheoryCompletenessSpinePriors"
-  ],
-  "display_name": "CVE Codon Hole Falsification",
-  "tier_label": "Tier 45",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.094348+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 29,
-    "median_error_pct": 0.009186,
-    "max_error_pct": 0.0306,
-    "mean_abs_delta": 0.0030058620689655175,
-    "precision_tier_counts": {
-      "green": 29
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  ]
 }

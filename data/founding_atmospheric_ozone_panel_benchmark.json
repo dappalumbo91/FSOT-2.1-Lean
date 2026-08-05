@@ -1,38 +1,35 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:48:55.189084+00:00",
+  "generated_at": "2026-08-05T14:35:49.177183+00:00",
   "domain": "Founding_Atmospheric_Ozone_Panel",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "authority_path": "vendor/fsot_compute.py",
   "source": [
     "data/founding_unmapped_laws_reference.json",
-    "founding_law:law_26",
-    "c_thin_depth_pass",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "founding_law:law_26"
   ],
   "maps_to_lean": [
     "atmospheric",
     "climate"
   ],
   "D_eff": 12,
-  "record_count": 24,
-  "observable_count": 24,
-  "scalar_record_count": 23,
+  "record_count": 5,
+  "observable_count": 5,
+  "scalar_record_count": 4,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.000561846,
-  "pooled_median_error_pct": 0.000561846,
-  "headline_median_error_pct": 0.000561846,
+  "median_error_pct": 0.023822,
+  "pooled_median_error_pct": 0.023822,
+  "headline_median_error_pct": 0.023822,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Founding_Atmospheric_Ozone_Panel_depth": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "sector model without seed-closed FSOT formula"
+      "Atmospheric Ozone Concentration Anomaly": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_seed_formula_vs_baseline": true
+      "channel_law_26_vs_baseline": true
     }
   },
   "records": [
@@ -40,19 +37,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.000562,
+      "computed": 0.023822,
       "measured": 0.0,
-      "error_pct": 0.000561846,
-      "observable_count": 24
+      "error_pct": 0.023822,
+      "observable_count": 5
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_seed_formula",
-      "name": "Founding_Atmospheric_Ozone_Panel_depth",
-      "computed": 0.000562,
+      "property": "law_26",
+      "name": "Atmospheric Ozone Concentration Anomaly",
+      "computed": 0.023822,
       "measured": 0.0,
-      "error_pct": 0.000561846,
-      "observable_count": 24
+      "error_pct": 0.023822,
+      "observable_count": 4
     }
   ],
   "material_records": [
@@ -67,21 +64,7 @@
       "literature_reference": "NASA OMI/OMPS climatology",
       "founding_law_id": "law_26",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used",
-      "domain_display_name": "founding law 26",
-      "display_name": "global mean total column du",
-      "scientific_measurement": {
-        "delta": 0.07146479,
-        "delta_pct": 0.023822,
-        "effective_error_pct": 0.023822,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "DU"
-      }
+      "note": "Public anchor \u2014 founding accuracy claims not used"
     },
     {
       "lab": "founding_law_26_lab",
@@ -94,21 +77,7 @@
       "literature_reference": "US Standard Atmosphere 1976",
       "founding_law_id": "law_26",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used",
-      "domain_display_name": "founding law 26",
-      "display_name": "stratospheric peak ppmv",
-      "scientific_measurement": {
-        "delta": 0.00238216,
-        "delta_pct": 0.023822,
-        "effective_error_pct": 0.023822,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "ppmv"
-      }
+      "note": "Public anchor \u2014 founding accuracy claims not used"
     },
     {
       "lab": "founding_law_26_lab",
@@ -121,21 +90,7 @@
       "literature_reference": "WMO Antarctic ozone hole minima",
       "founding_law_id": "law_26",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used",
-      "domain_display_name": "founding law 26",
-      "display_name": "antarctic ozone hole min du",
-      "scientific_measurement": {
-        "delta": 0.0238216,
-        "delta_pct": 0.023822,
-        "effective_error_pct": 0.023822,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "DU"
-      }
+      "note": "Public anchor \u2014 founding accuracy claims not used"
     },
     {
       "lab": "founding_law_26_lab",
@@ -148,21 +103,7 @@
       "literature_reference": "NOAA ozonesonde climatology",
       "founding_law_id": "law_26",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used",
-      "domain_display_name": "founding law 26",
-      "display_name": "tropopause ozone ppbv",
-      "scientific_measurement": {
-        "delta": 0.0119108,
-        "delta_pct": 0.023822,
-        "effective_error_pct": 0.023822,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "ppbv"
-      }
+      "note": "Public anchor \u2014 founding accuracy claims not used"
     },
     {
       "lab": "founding_law_26_lab",
@@ -172,271 +113,11 @@
       "measured": -0.47643191,
       "error_pct": 0.0,
       "founding_law_id": "law_26",
-      "eval_kind": "scalar_bridge",
-      "domain_display_name": "founding law 26",
-      "display_name": "fsot Atmospheric Physics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "pH_water",
-      "name": "276b06aa421154fe",
-      "computed": 7.000000000000001,
-      "measured": 7.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ ( - 4 ) + phi ^ 4",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "CO\u2082",
-      "name": "4997f65cea526a23",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "BF\u2083",
-      "name": "964b34bd5d316085",
-      "computed": 119.99999999999999,
-      "measured": 120.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "SF\u2086",
-      "name": "3dd4abfdff6593a5",
-      "computed": 90.0,
-      "measured": 90.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi / 2 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "XeF\u2082",
-      "name": "d5f905492d3792d4",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "BeCl\u2082",
-      "name": "d100218fdd574f15",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "H\u207a/H\u2082",
-      "name": "0d36931a8021c0b6",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi - pi",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Bard, Parsons & Jordan (1985)"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "alpha_Fe",
-      "name": "a3464d3321da787e",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ 2 - phi - 1",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Long & Greenwood (1997)"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "Bi2Te3",
-      "name": "dce748561902febf",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "PHI ^ 2 - PHI ^ 1",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "R_N",
-      "name": "07b3e073b02aa441",
-      "computed": 0.7500001632454711,
-      "measured": 0.75,
-      "error_pct": 2.1766e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "G ^ ( - 7 ) - ln ( 3 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "CS2",
-      "name": "b570b63cbc8dce71",
-      "computed": 358.99980082967573,
-      "measured": 359.0,
-      "error_pct": 5.5479e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E ^ 4 + PI ^ 5 - PHI ^ 1",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST Chemistry WebBook / CRC"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "Fe",
-      "name": "de190b5a1618a827",
-      "computed": 1.679990560988901,
-      "measured": 1.68,
-      "error_pct": 0.000561846,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E / PHI",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Anderson (1966)"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "F",
-      "name": "c1f0a37d1a7e1851",
-      "computed": 3.4009757390356903,
-      "measured": 3.401,
-      "error_pct": 0.000713348,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma ^ ( - 2 ) + \u03a8 ^ 2",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "IE_Ar",
-      "name": "6a9af01dd6d7066c",
-      "computed": 15.76012377846974,
-      "measured": 15.76,
-      "error_pct": 0.000785396,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma ^ ( - 5 ) + Poof",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "Ca",
-      "name": "4583c5321dccbc9d",
-      "computed": 177.8014017941265,
-      "measured": 177.8,
-      "error_pct": 0.000788411,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E ^ 5 + PI ^ 3 - PHI ^ 1",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST-JANAF / CRC / Kittel"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "P",
-      "name": "11f7ccc79d6fc81f",
-      "computed": 0.7469924420819796,
-      "measured": 0.747,
-      "error_pct": 0.001011769,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma * \u03a9",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "CH\u2084",
-      "name": "9ab02109a8e3ee2c",
-      "computed": 109.47122063449069,
-      "measured": 109.47,
-      "error_pct": 0.00111504,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "arccos ( - 1 / 3 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "BL_N\u2212H",
-      "name": "fff1ff66c36b0580",
-      "computed": 1.0099883725773517,
-      "measured": 1.01,
-      "error_pct": 0.00115123,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "A_bleed - gamma ^ 6",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "founding_atmospheric_ozone_panel_fsot_lab",
-      "property": "Water",
-      "name": "5a39d1f6034db5f4",
-      "computed": 45.24943474548015,
-      "measured": 45.25,
-      "error_pct": 0.001249181,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E ^ 2 + PI ^ 3 + PHI ^ 4",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "CRC / Riddick et al. (1986)"
+      "eval_kind": "scalar_bridge"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.000561846,
+    "scalar_pooled_median_error_pct": 0.023822,
     "max_scalar_error_pct": 0.023822,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -446,5 +127,9 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_26",
+  "founding_law_name": "Atmospheric Ozone Concentration Anomaly",
+  "panel_status": "GREEN"
 }

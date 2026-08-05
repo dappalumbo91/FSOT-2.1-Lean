@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:14:42.958222+00:00",
+  "generated_at": "2026-08-05T14:36:44.487906+00:00",
   "domain": "Medical_Galactic_Orbital_Bridge",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "extension_domains_manifest",
     "domain_coupling_simulation_benchmark.json"
@@ -14,9 +14,11 @@
   "D_eff": 17,
   "record_count": 48,
   "observable_count": 48,
-  "median_error_pct": 0.010717743028517818,
-  "pooled_median_error_pct": 0.010717743028517818,
-  "headline_median_error_pct": 0.010717743028517818,
+  "scalar_record_count": 47,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.010717743028516056,
+  "pooled_median_error_pct": 0.010717743028516056,
+  "headline_median_error_pct": 0.010717743028516056,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,21 +39,8 @@
       "name": "all_channels",
       "computed": 0.010718,
       "measured": 0.0,
-      "error_pct": 0.010717743028517818,
-      "observable_count": 47,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.010718,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.010717743028516056,
+      "observable_count": 47
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -59,21 +48,8 @@
       "name": "bridge_panel",
       "computed": 0.010718,
       "measured": 0.0,
-      "error_pct": 0.010717743028517818,
-      "observable_count": 47,
-      "domain_display_name": "tier gap fill",
-      "display_name": "bridge panel",
-      "scientific_measurement": {
-        "delta": 0.010718,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.010717743028516056,
+      "observable_count": 47
     }
   ],
   "material_records": [
@@ -83,27 +59,14 @@
       "name": "Adjacent_Rung_Coupling__AI_Galactic_Orbital_Bridge",
       "computed": 0.014931,
       "measured": 0.01493,
-      "error_pct": 0.01071774302851635,
+      "error_pct": 0.010717743028517397,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Adjacent_Rung_Coupling",
       "target_domain": "AI_Galactic_Orbital_Bridge",
       "source_records": 36,
-      "target_records": 48,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adjacent Rung Coupling AI Galactic Orbital Bridge",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.006698,
-        "effective_error_pct": 0.006698,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 48
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -118,76 +81,37 @@
       "source_domain": "Adjacent_Rung_Coupling",
       "target_domain": "Astrophysical_Structure_Crosswalk",
       "source_records": 36,
-      "target_records": 32,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adjacent Rung Coupling Astrophysical Structure Crosswalk",
-      "scientific_measurement": {
-        "delta": 2e-06,
-        "delta_pct": 0.009951,
-        "effective_error_pct": 0.009951,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 24
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "orbital_bridge_coupling",
       "name": "Adjacent_Rung_Coupling__Climate_Science",
-      "computed": 0.0201,
-      "measured": 0.020098,
-      "error_pct": 0.010717743028515095,
+      "computed": 0.008086,
+      "measured": 0.008086,
+      "error_pct": 0.010717743028515294,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Adjacent_Rung_Coupling",
       "target_domain": "Climate_Science",
       "source_records": 36,
-      "target_records": 17296,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adjacent Rung Coupling Climate Science",
-      "scientific_measurement": {
-        "delta": 2e-06,
-        "delta_pct": 0.009951,
-        "effective_error_pct": 0.009951,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 17325
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "orbital_bridge_coupling",
       "name": "Adjacent_Rung_Coupling__Compact_Object_Binary_Events",
-      "computed": 0.0201,
-      "measured": 0.020098,
-      "error_pct": 0.010717743028515095,
+      "computed": 0.01005,
+      "measured": 0.010049,
+      "error_pct": 0.010717743028528433,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Adjacent_Rung_Coupling",
       "target_domain": "Compact_Object_Binary_Events",
       "source_records": 36,
-      "target_records": 40,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adjacent Rung Coupling Compact Object Binary Events",
-      "scientific_measurement": {
-        "delta": 2e-06,
-        "delta_pct": 0.009951,
-        "effective_error_pct": 0.009951,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 40
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -202,20 +126,7 @@
       "source_domain": "Adjacent_Rung_Coupling",
       "target_domain": "Compactification_Ladder",
       "source_records": 36,
-      "target_records": 60,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adjacent Rung Coupling Compactification Ladder",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.050607,
-        "effective_error_pct": 0.050607,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 60
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -223,27 +134,14 @@
       "name": "Adversarial_Fractal_Break_Tests__AI_Galactic_Orbital_Bridge",
       "computed": 0.005169,
       "measured": 0.005169,
-      "error_pct": 0.010717743028528254,
+      "error_pct": 0.010717743028525234,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Adversarial_Fractal_Break_Tests",
       "target_domain": "AI_Galactic_Orbital_Bridge",
       "source_records": 13,
-      "target_records": 48,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adversarial Fractal Break Tests AI Galactic Orbital Bridge",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 48
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -258,20 +156,7 @@
       "source_domain": "Adversarial_Fractal_Break_Tests",
       "target_domain": "Adjacent_Rung_Coupling",
       "source_records": 13,
-      "target_records": 36,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adversarial Fractal Break Tests Adjacent Rung Coupling",
-      "scientific_measurement": {
-        "delta": 2e-06,
-        "delta_pct": 0.009951,
-        "effective_error_pct": 0.009951,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 36
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -286,76 +171,37 @@
       "source_domain": "Adversarial_Fractal_Break_Tests",
       "target_domain": "Astrophysical_Structure_Crosswalk",
       "source_records": 13,
-      "target_records": 32,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adversarial Fractal Break Tests Astrophysical Structure Crosswalk",
-      "scientific_measurement": {
-        "delta": 0.000107,
-        "delta_pct": 0.0107,
-        "effective_error_pct": 0.0107,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 24
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "orbital_bridge_coupling",
       "name": "Adversarial_Fractal_Break_Tests__Climate_Science",
-      "computed": 1.000107,
-      "measured": 1.0,
-      "error_pct": 0.01071774302852102,
+      "computed": 0.012014,
+      "measured": 0.012013,
+      "error_pct": 0.010717743028514961,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Adversarial_Fractal_Break_Tests",
       "target_domain": "Climate_Science",
       "source_records": 13,
-      "target_records": 17296,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adversarial Fractal Break Tests Climate Science",
-      "scientific_measurement": {
-        "delta": 0.000107,
-        "delta_pct": 0.0107,
-        "effective_error_pct": 0.0107,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 17325
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "orbital_bridge_coupling",
       "name": "Adversarial_Fractal_Break_Tests__Compact_Object_Binary_Events",
-      "computed": 1.000107,
-      "measured": 1.0,
-      "error_pct": 0.01071774302852102,
+      "computed": 0.01005,
+      "measured": 0.010049,
+      "error_pct": 0.01071774302851902,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Adversarial_Fractal_Break_Tests",
       "target_domain": "Compact_Object_Binary_Events",
       "source_records": 13,
-      "target_records": 40,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adversarial Fractal Break Tests Compact Object Binary Events",
-      "scientific_measurement": {
-        "delta": 0.000107,
-        "delta_pct": 0.0107,
-        "effective_error_pct": 0.0107,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 40
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -370,20 +216,7 @@
       "source_domain": "Adversarial_Fractal_Break_Tests",
       "target_domain": "Compactification_Ladder",
       "source_records": 13,
-      "target_records": 60,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adversarial Fractal Break Tests Compactification Ladder",
-      "scientific_measurement": {
-        "delta": 2e-06,
-        "delta_pct": 0.00906,
-        "effective_error_pct": 0.00906,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 60
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -391,27 +224,14 @@
       "name": "Biological_CUDA_Physarum__AI_Galactic_Orbital_Bridge",
       "computed": 0.005169,
       "measured": 0.005169,
-      "error_pct": 0.010717743028528254,
+      "error_pct": 0.010717743028525234,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Biological_CUDA_Physarum",
       "target_domain": "AI_Galactic_Orbital_Bridge",
-      "source_records": 35,
-      "target_records": 48,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biological CUDA Physarum AI Galactic Orbital Bridge",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 34,
+      "target_records": 48
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -425,21 +245,8 @@
       "tag_b": "galactic",
       "source_domain": "Biological_CUDA_Physarum",
       "target_domain": "Adjacent_Rung_Coupling",
-      "source_records": 35,
-      "target_records": 36,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biological CUDA Physarum Adjacent Rung Coupling",
-      "scientific_measurement": {
-        "delta": 2e-06,
-        "delta_pct": 0.009951,
-        "effective_error_pct": 0.009951,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 34,
+      "target_records": 36
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -453,77 +260,38 @@
       "tag_b": "galactic",
       "source_domain": "Biological_CUDA_Physarum",
       "target_domain": "Astrophysical_Structure_Crosswalk",
-      "source_records": 35,
-      "target_records": 32,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biological CUDA Physarum Astrophysical Structure Crosswalk",
-      "scientific_measurement": {
-        "delta": 0.000107,
-        "delta_pct": 0.0107,
-        "effective_error_pct": 0.0107,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 34,
+      "target_records": 24
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "orbital_bridge_coupling",
       "name": "Biological_CUDA_Physarum__Climate_Science",
-      "computed": 1.000107,
-      "measured": 1.0,
-      "error_pct": 0.01071774302852102,
+      "computed": 0.012014,
+      "measured": 0.012013,
+      "error_pct": 0.010717743028514961,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Biological_CUDA_Physarum",
       "target_domain": "Climate_Science",
-      "source_records": 35,
-      "target_records": 17296,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biological CUDA Physarum Climate Science",
-      "scientific_measurement": {
-        "delta": 0.000107,
-        "delta_pct": 0.0107,
-        "effective_error_pct": 0.0107,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 34,
+      "target_records": 17325
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "orbital_bridge_coupling",
       "name": "Biological_CUDA_Physarum__Compact_Object_Binary_Events",
-      "computed": 1.000107,
-      "measured": 1.0,
-      "error_pct": 0.01071774302852102,
+      "computed": 0.01005,
+      "measured": 0.010049,
+      "error_pct": 0.01071774302851902,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Biological_CUDA_Physarum",
       "target_domain": "Compact_Object_Binary_Events",
-      "source_records": 35,
-      "target_records": 40,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biological CUDA Physarum Compact Object Binary Events",
-      "scientific_measurement": {
-        "delta": 0.000107,
-        "delta_pct": 0.0107,
-        "effective_error_pct": 0.0107,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 34,
+      "target_records": 40
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -537,21 +305,98 @@
       "tag_b": "galactic",
       "source_domain": "Biological_CUDA_Physarum",
       "target_domain": "Compactification_Ladder",
-      "source_records": 35,
-      "target_records": 60,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biological CUDA Physarum Compactification Ladder",
-      "scientific_measurement": {
-        "delta": 2e-06,
-        "delta_pct": 0.00906,
-        "effective_error_pct": 0.00906,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 34,
+      "target_records": 60
+    },
+    {
+      "lab": "medical_galactic_orbital_bridge_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Biology_Developmental_Structural_Depth_Panel__AI_Galactic_Orbital_Bridge",
+      "computed": 0.010144,
+      "measured": 0.010142,
+      "error_pct": 0.010717743028526369,
+      "source": "extension_domains_manifest",
+      "tag_a": "medical",
+      "tag_b": "galactic",
+      "source_domain": "Biology_Developmental_Structural_Depth_Panel",
+      "target_domain": "AI_Galactic_Orbital_Bridge",
+      "source_records": 24,
+      "target_records": 48
+    },
+    {
+      "lab": "medical_galactic_orbital_bridge_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Biology_Developmental_Structural_Depth_Panel__Adjacent_Rung_Coupling",
+      "computed": 0.004788,
+      "measured": 0.004787,
+      "error_pct": 0.010717743028516502,
+      "source": "extension_domains_manifest",
+      "tag_a": "medical",
+      "tag_b": "galactic",
+      "source_domain": "Biology_Developmental_Structural_Depth_Panel",
+      "target_domain": "Adjacent_Rung_Coupling",
+      "source_records": 24,
+      "target_records": 36
+    },
+    {
+      "lab": "medical_galactic_orbital_bridge_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Biology_Developmental_Structural_Depth_Panel__Astrophysical_Structure_Crosswalk",
+      "computed": 0.015313,
+      "measured": 0.015311,
+      "error_pct": 0.010717743028520322,
+      "source": "extension_domains_manifest",
+      "tag_a": "medical",
+      "tag_b": "galactic",
+      "source_domain": "Biology_Developmental_Structural_Depth_Panel",
+      "target_domain": "Astrophysical_Structure_Crosswalk",
+      "source_records": 24,
+      "target_records": 24
+    },
+    {
+      "lab": "medical_galactic_orbital_bridge_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Biology_Developmental_Structural_Depth_Panel__Climate_Science",
+      "computed": 0.003299,
+      "measured": 0.003298,
+      "error_pct": 0.010717743028526691,
+      "source": "extension_domains_manifest",
+      "tag_a": "medical",
+      "tag_b": "galactic",
+      "source_domain": "Biology_Developmental_Structural_Depth_Panel",
+      "target_domain": "Climate_Science",
+      "source_records": 24,
+      "target_records": 17325
+    },
+    {
+      "lab": "medical_galactic_orbital_bridge_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Biology_Developmental_Structural_Depth_Panel__Compact_Object_Binary_Events",
+      "computed": 0.005263,
+      "measured": 0.005262,
+      "error_pct": 0.010717743028522806,
+      "source": "extension_domains_manifest",
+      "tag_a": "medical",
+      "tag_b": "galactic",
+      "source_domain": "Biology_Developmental_Structural_Depth_Panel",
+      "target_domain": "Compact_Object_Binary_Events",
+      "source_records": 24,
+      "target_records": 40
+    },
+    {
+      "lab": "medical_galactic_orbital_bridge_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Biology_Developmental_Structural_Depth_Panel__Compactification_Ladder",
+      "computed": 0.006764,
+      "measured": 0.006764,
+      "error_pct": 0.010717743028526176,
+      "source": "extension_domains_manifest",
+      "tag_a": "medical",
+      "tag_b": "galactic",
+      "source_domain": "Biology_Developmental_Structural_Depth_Panel",
+      "target_domain": "Compactification_Ladder",
+      "source_records": 24,
+      "target_records": 60
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -559,27 +404,14 @@
       "name": "Biophysics_Public_Panel__AI_Galactic_Orbital_Bridge",
       "computed": 0.005169,
       "measured": 0.005169,
-      "error_pct": 0.010717743028528254,
+      "error_pct": 0.010717743028525234,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Biophysics_Public_Panel",
       "target_domain": "AI_Galactic_Orbital_Bridge",
-      "source_records": 11,
-      "target_records": 48,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biophysics Public Panel AI Galactic Orbital Bridge",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 24,
+      "target_records": 48
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -593,21 +425,8 @@
       "tag_b": "galactic",
       "source_domain": "Biophysics_Public_Panel",
       "target_domain": "Adjacent_Rung_Coupling",
-      "source_records": 11,
-      "target_records": 36,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biophysics Public Panel Adjacent Rung Coupling",
-      "scientific_measurement": {
-        "delta": 2e-06,
-        "delta_pct": 0.009951,
-        "effective_error_pct": 0.009951,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 24,
+      "target_records": 36
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -621,77 +440,38 @@
       "tag_b": "galactic",
       "source_domain": "Biophysics_Public_Panel",
       "target_domain": "Astrophysical_Structure_Crosswalk",
-      "source_records": 11,
-      "target_records": 32,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biophysics Public Panel Astrophysical Structure Crosswalk",
-      "scientific_measurement": {
-        "delta": 0.000107,
-        "delta_pct": 0.0107,
-        "effective_error_pct": 0.0107,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 24,
+      "target_records": 24
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "orbital_bridge_coupling",
       "name": "Biophysics_Public_Panel__Climate_Science",
-      "computed": 1.000107,
-      "measured": 1.0,
-      "error_pct": 0.01071774302852102,
+      "computed": 0.012014,
+      "measured": 0.012013,
+      "error_pct": 0.010717743028514961,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Biophysics_Public_Panel",
       "target_domain": "Climate_Science",
-      "source_records": 11,
-      "target_records": 17296,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biophysics Public Panel Climate Science",
-      "scientific_measurement": {
-        "delta": 0.000107,
-        "delta_pct": 0.0107,
-        "effective_error_pct": 0.0107,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 24,
+      "target_records": 17325
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "orbital_bridge_coupling",
       "name": "Biophysics_Public_Panel__Compact_Object_Binary_Events",
-      "computed": 1.000107,
-      "measured": 1.0,
-      "error_pct": 0.01071774302852102,
+      "computed": 0.01005,
+      "measured": 0.010049,
+      "error_pct": 0.01071774302851902,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "Biophysics_Public_Panel",
       "target_domain": "Compact_Object_Binary_Events",
-      "source_records": 11,
-      "target_records": 40,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biophysics Public Panel Compact Object Binary Events",
-      "scientific_measurement": {
-        "delta": 0.000107,
-        "delta_pct": 0.0107,
-        "effective_error_pct": 0.0107,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 24,
+      "target_records": 40
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -705,21 +485,8 @@
       "tag_b": "galactic",
       "source_domain": "Biophysics_Public_Panel",
       "target_domain": "Compactification_Ladder",
-      "source_records": 11,
-      "target_records": 60,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biophysics Public Panel Compactification Ladder",
-      "scientific_measurement": {
-        "delta": 2e-06,
-        "delta_pct": 0.00906,
-        "effective_error_pct": 0.00906,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source_records": 24,
+      "target_records": 60
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -727,27 +494,14 @@
       "name": "CVE_Codon_Hole_Falsification__AI_Galactic_Orbital_Bridge",
       "computed": 0.004019,
       "measured": 0.004018,
-      "error_pct": 0.010717743028513175,
+      "error_pct": 0.010717743028517059,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "CVE_Codon_Hole_Falsification",
       "target_domain": "AI_Galactic_Orbital_Bridge",
       "source_records": 29,
-      "target_records": 48,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "CVE Codon Hole Falsification AI Galactic Orbital Bridge",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.024888,
-        "effective_error_pct": 0.024888,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 48
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -762,20 +516,7 @@
       "source_domain": "CVE_Codon_Hole_Falsification",
       "target_domain": "Adjacent_Rung_Coupling",
       "source_records": 29,
-      "target_records": 36,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "CVE Codon Hole Falsification Adjacent Rung Coupling",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.009164,
-        "effective_error_pct": 0.009164,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 36
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -790,76 +531,37 @@
       "source_domain": "CVE_Codon_Hole_Falsification",
       "target_domain": "Astrophysical_Structure_Crosswalk",
       "source_records": 29,
-      "target_records": 32,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "CVE Codon Hole Falsification Astrophysical Structure Crosswalk",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.010885,
-        "effective_error_pct": 0.010885,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 24
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "orbital_bridge_coupling",
       "name": "CVE_Codon_Hole_Falsification__Climate_Science",
-      "computed": 0.009188,
-      "measured": 0.009187,
-      "error_pct": 0.010717743028521659,
+      "computed": 0.002826,
+      "measured": 0.002826,
+      "error_pct": 0.010717743028523881,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "CVE_Codon_Hole_Falsification",
       "target_domain": "Climate_Science",
       "source_records": 29,
-      "target_records": 17296,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "CVE Codon Hole Falsification Climate Science",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.010885,
-        "effective_error_pct": 0.010885,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 17325
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "orbital_bridge_coupling",
       "name": "CVE_Codon_Hole_Falsification__Compact_Object_Binary_Events",
-      "computed": 0.009188,
-      "measured": 0.009187,
-      "error_pct": 0.010717743028521659,
+      "computed": 0.000862,
+      "measured": 0.000862,
+      "error_pct": 0.010717743028516056,
       "source": "extension_domains_manifest",
       "tag_a": "medical",
       "tag_b": "galactic",
       "source_domain": "CVE_Codon_Hole_Falsification",
       "target_domain": "Compact_Object_Binary_Events",
       "source_records": 29,
-      "target_records": 40,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "CVE Codon Hole Falsification Compact Object Binary Events",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.010885,
-        "effective_error_pct": 0.010885,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 40
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -874,188 +576,7 @@
       "source_domain": "CVE_Codon_Hole_Falsification",
       "target_domain": "Compactification_Ladder",
       "source_records": 29,
-      "target_records": 60,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "CVE Codon Hole Falsification Compactification Ladder",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.007759,
-        "effective_error_pct": 0.007759,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "medical_galactic_orbital_bridge_lab",
-      "property": "orbital_bridge_coupling",
-      "name": "Cardiology__AI_Galactic_Orbital_Bridge",
-      "computed": 0.025456,
-      "measured": 0.025454,
-      "error_pct": 0.010717743028519106,
-      "source": "extension_domains_manifest",
-      "tag_a": "medical",
-      "tag_b": "galactic",
-      "source_domain": "Cardiology",
-      "target_domain": "AI_Galactic_Orbital_Bridge",
-      "source_records": 45,
-      "target_records": 48,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Cardiology AI Galactic Orbital Bridge",
-      "scientific_measurement": {
-        "delta": 2e-06,
-        "delta_pct": 0.007857,
-        "effective_error_pct": 0.007857,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "medical_galactic_orbital_bridge_lab",
-      "property": "orbital_bridge_coupling",
-      "name": "Cardiology__Adjacent_Rung_Coupling",
-      "computed": 0.010525,
-      "measured": 0.010524,
-      "error_pct": 0.010717743028523017,
-      "source": "extension_domains_manifest",
-      "tag_a": "medical",
-      "tag_b": "galactic",
-      "source_domain": "Cardiology",
-      "target_domain": "Adjacent_Rung_Coupling",
-      "source_records": 45,
-      "target_records": 36,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Cardiology Adjacent Rung Coupling",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.009502,
-        "effective_error_pct": 0.009502,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "medical_galactic_orbital_bridge_lab",
-      "property": "orbital_bridge_coupling",
-      "name": "Cardiology__Astrophysical_Structure_Crosswalk",
-      "computed": 0.030625,
-      "measured": 0.030622,
-      "error_pct": 0.010717743028517818,
-      "source": "extension_domains_manifest",
-      "tag_a": "medical",
-      "tag_b": "galactic",
-      "source_domain": "Cardiology",
-      "target_domain": "Astrophysical_Structure_Crosswalk",
-      "source_records": 45,
-      "target_records": 32,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Cardiology Astrophysical Structure Crosswalk",
-      "scientific_measurement": {
-        "delta": 3e-06,
-        "delta_pct": 0.009797,
-        "effective_error_pct": 0.009797,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "medical_galactic_orbital_bridge_lab",
-      "property": "orbital_bridge_coupling",
-      "name": "Cardiology__Climate_Science",
-      "computed": 0.030625,
-      "measured": 0.030622,
-      "error_pct": 0.010717743028517818,
-      "source": "extension_domains_manifest",
-      "tag_a": "medical",
-      "tag_b": "galactic",
-      "source_domain": "Cardiology",
-      "target_domain": "Climate_Science",
-      "source_records": 45,
-      "target_records": 17296,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Cardiology Climate Science",
-      "scientific_measurement": {
-        "delta": 3e-06,
-        "delta_pct": 0.009797,
-        "effective_error_pct": 0.009797,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "medical_galactic_orbital_bridge_lab",
-      "property": "orbital_bridge_coupling",
-      "name": "Cardiology__Compact_Object_Binary_Events",
-      "computed": 0.030625,
-      "measured": 0.030622,
-      "error_pct": 0.010717743028517818,
-      "source": "extension_domains_manifest",
-      "tag_a": "medical",
-      "tag_b": "galactic",
-      "source_domain": "Cardiology",
-      "target_domain": "Compact_Object_Binary_Events",
-      "source_records": 45,
-      "target_records": 40,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Cardiology Compact Object Binary Events",
-      "scientific_measurement": {
-        "delta": 3e-06,
-        "delta_pct": 0.009797,
-        "effective_error_pct": 0.009797,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "medical_galactic_orbital_bridge_lab",
-      "property": "orbital_bridge_coupling",
-      "name": "Cardiology__Compactification_Ladder",
-      "computed": 0.008548,
-      "measured": 0.008547,
-      "error_pct": 0.010717743028527014,
-      "source": "extension_domains_manifest",
-      "tag_a": "medical",
-      "tag_b": "galactic",
-      "source_domain": "Cardiology",
-      "target_domain": "Compactification_Ladder",
-      "source_records": 45,
-      "target_records": 60,
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Cardiology Compactification Ladder",
-      "scientific_measurement": {
-        "delta": 1e-06,
-        "delta_pct": 0.0117,
-        "effective_error_pct": 0.0117,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_records": 60
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -1065,20 +586,7 @@
       "measured": 0.037458,
       "error_pct": 0.009186636881594226,
       "source": "data/adjacent_rung_coupling_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adjacent Rung Coupling AR01",
-      "scientific_measurement": {
-        "delta": 3e-06,
-        "delta_pct": 0.008009,
-        "effective_error_pct": 0.008009,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -1088,20 +596,7 @@
       "measured": 1.0925,
       "error_pct": 0.009186636881587341,
       "source": "data/adjacent_rung_coupling_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adjacent Rung Coupling AR01",
-      "scientific_measurement": {
-        "delta": 0.0001,
-        "delta_pct": 0.009153,
-        "effective_error_pct": 0.009153,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -1111,20 +606,7 @@
       "measured": 0.039905,
       "error_pct": 0.009186636881588285,
       "source": "data/adjacent_rung_coupling_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adjacent Rung Coupling AR01",
-      "scientific_measurement": {
-        "delta": 4e-06,
-        "delta_pct": 0.010024,
-        "effective_error_pct": 0.010024,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -1134,20 +616,7 @@
       "measured": 1.0,
       "error_pct": 0.009186636881586274,
       "source": "data/adversarial_fractal_break_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adversarial Fractal Break Tests adv c memcpy chain",
-      "scientific_measurement": {
-        "delta": 9.2e-05,
-        "delta_pct": 0.0092,
-        "effective_error_pct": 0.0092,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -1157,20 +626,7 @@
       "measured": 1.0,
       "error_pct": 0.009186636881586274,
       "source": "data/adversarial_fractal_break_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adversarial Fractal Break Tests adv c memcpy chain attach",
-      "scientific_measurement": {
-        "delta": 9.2e-05,
-        "delta_pct": 0.0092,
-        "effective_error_pct": 0.0092,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -1180,20 +636,7 @@
       "measured": 1.0,
       "error_pct": 0.009186636881586274,
       "source": "data/adversarial_fractal_break_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Adversarial Fractal Break Tests adv c double free",
-      "scientific_measurement": {
-        "delta": 9.2e-05,
-        "delta_pct": 0.0092,
-        "effective_error_pct": 0.0092,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -1203,20 +646,7 @@
       "measured": 141.0,
       "error_pct": 0.009186636881580763,
       "source": "data/biological_cuda_physarum_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biological CUDA Physarum nuclei 8",
-      "scientific_measurement": {
-        "delta": 0.012953,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -1226,20 +656,7 @@
       "measured": 6.932,
       "error_pct": 0.009186636881586134,
       "source": "data/biological_cuda_physarum_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biological CUDA Physarum nuclei 8",
-      "scientific_measurement": {
-        "delta": 0.000637,
-        "delta_pct": 0.009189,
-        "effective_error_pct": 0.009189,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
@@ -1249,120 +666,55 @@
       "measured": 72.2,
       "error_pct": 0.009186636881585844,
       "source": "data/biological_cuda_physarum_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biological CUDA Physarum nuclei 8",
-      "scientific_measurement": {
-        "delta": 0.006633,
-        "delta_pct": 0.009187,
-        "effective_error_pct": 0.009187,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "tag_a_anchor_observable",
-      "name": "Biophysics_Public_Panel__phyllotaxis_angle",
-      "computed": 2.40018,
-      "measured": 2.39996,
-      "error_pct": 0.009186636881595291,
-      "source": "data/biophysics_public_panel_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biophysics Public Panel phyllotaxis angle",
-      "scientific_measurement": {
-        "delta": 0.00022,
-        "delta_pct": 0.009167,
-        "effective_error_pct": 0.009167,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "name": "Biology_Developmental_Structural_Depth_Panel__human_gestation_days",
+      "computed": 280.025723,
+      "measured": 280.0,
+      "error_pct": 0.009186636881578027,
+      "source": "data/biology_developmental_structural_depth_panel_benchmark.json",
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "tag_a_anchor_observable",
-      "name": "Biophysics_Public_Panel__phyllotaxis_deg",
-      "computed": 137.520632,
-      "measured": 137.508,
-      "error_pct": 0.009186636881580876,
-      "source": "data/biophysics_public_panel_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biophysics Public Panel phyllotaxis deg",
-      "scientific_measurement": {
-        "delta": 0.012632,
-        "delta_pct": 0.009186,
-        "effective_error_pct": 0.009186,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "name": "Biology_Developmental_Structural_Depth_Panel__mouse_gestation_days",
+      "computed": 19.501791,
+      "measured": 19.5,
+      "error_pct": 0.00918663688158115,
+      "source": "data/biology_developmental_structural_depth_panel_benchmark.json",
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "tag_a_anchor_observable",
-      "name": "Biophysics_Public_Panel__dna_pitch_diameter",
-      "computed": 1.700156,
-      "measured": 1.7,
-      "error_pct": 0.00918663688158758,
-      "source": "data/biophysics_public_panel_benchmark.json",
-      "tag": "medical",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Biophysics Public Panel dna pitch diameter",
-      "scientific_measurement": {
-        "delta": 0.000156,
-        "delta_pct": 0.009176,
-        "effective_error_pct": 0.009176,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "name": "Biology_Developmental_Structural_Depth_Panel__zebrafish_development_hours",
+      "computed": 72.006614,
+      "measured": 72.0,
+      "error_pct": 0.009186636881588741,
+      "source": "data/biology_developmental_structural_depth_panel_benchmark.json",
+      "tag": "medical"
     },
     {
       "lab": "medical_galactic_orbital_bridge_lab",
       "property": "cross_scale_self_similarity",
       "name": "Immunology__Climate_Science",
-      "computed": 0.061211,
-      "measured": 0.061205,
-      "error_pct": 0.009186636881581382,
+      "computed": 0.049197,
+      "measured": 0.049192,
+      "error_pct": 0.00918663688159277,
       "source": "cross_scale_motif",
       "small_scale_domain": "Immunology",
       "large_scale_domain": "Climate_Science",
       "formula_branch": "term1.coherence_efficiency",
-      "scientific_framing": "same_scalar_architecture_different_observational_scale",
-      "domain_display_name": "medical galactic orbital bridge",
-      "display_name": "Immunology Climate Science",
-      "scientific_measurement": {
-        "delta": 6e-06,
-        "delta_pct": 0.009803,
-        "effective_error_pct": 0.009803,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "scientific_framing": "same_scalar_architecture_different_observational_scale"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.010717743028517818,
-    "max_scalar_error_pct": 0.010717743028528254,
+    "scalar_pooled_median_error_pct": 0.010717743028516056,
+    "max_scalar_error_pct": 0.010717743028528433,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -1385,19 +737,5 @@
     "FSOT.Formal.MechanisticCouplingPriors"
   ],
   "cross_scale_motif_count": 1,
-  "external_cache_pointer": "G:\\FSOT-PublicData\\cross_scale_bridges",
-  "display_name": "Medical Galactic Orbital Bridge",
-  "tier_label": "Tier 48",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.207984+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 48,
-    "median_error_pct": 0.009951,
-    "max_error_pct": 0.050607,
-    "mean_abs_delta": 0.0007212916666666668,
-    "precision_tier_counts": {
-      "green": 48
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "external_cache_pointer": "G:\\FSOT-PublicData\\cross_scale_bridges"
 }

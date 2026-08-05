@@ -1,13 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:48:54.749242+00:00",
+  "generated_at": "2026-08-05T14:37:14.454545+00:00",
   "domain": "Mechanistic_Coupling",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "mechanistic_coupling_manifest.yaml",
-    "domain_coupling_simulation_benchmark.json",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "domain_coupling_simulation_benchmark.json"
   ],
   "maps_to_lean": [
     "particle",
@@ -15,24 +13,24 @@
     "consciousness"
   ],
   "D_eff": 17,
-  "record_count": 115,
-  "observable_count": 115,
-  "scalar_record_count": 115,
+  "record_count": 39,
+  "observable_count": 39,
+  "scalar_record_count": 39,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0,
-  "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.0,
+  "median_error_pct": 0.0073836551816993294,
+  "pooled_median_error_pct": 0.0073836551816993294,
+  "headline_median_error_pct": 0.0073836551816993294,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Mechanistic_Coupling_depth": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "sector model without seed-closed FSOT formula"
+      "mechanistic_panel": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "Correlation-only graphs"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_seed_formula_vs_baseline": true
+      "channel_mechanism_channels_vs_baseline": true
     }
   },
   "records": [
@@ -40,19 +38,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 0.007384,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 115
+      "error_pct": 0.0073836551816993294,
+      "observable_count": 39
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_seed_formula",
-      "name": "Mechanistic_Coupling_depth",
-      "computed": 0.0,
+      "property": "mechanism_channels",
+      "name": "mechanistic_panel",
+      "computed": 0.007384,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 115
+      "error_pct": 0.0073836551816993294,
+      "observable_count": 39
     }
   ],
   "material_records": [
@@ -67,20 +65,7 @@
       "mechanism": "magnetic_reconnection_energy_transfer",
       "formula_branch": "term3.chaos_factor",
       "source_domain": "Plasma_Physics",
-      "target_domain": "Magnetosphere",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-001",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Magnetosphere"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -93,20 +78,7 @@
       "mechanism": "solar_wind_magnetopause_coupling",
       "formula_branch": "term1.term1_base",
       "source_domain": "Geomagnetism",
-      "target_domain": "Space_Weather",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-002",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Space_Weather"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -119,20 +91,7 @@
       "mechanism": "plate_boundary_stress_accumulation",
       "formula_branch": "term2.trend_bias",
       "source_domain": "Seismology",
-      "target_domain": "Tectonics",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-003",
-      "scientific_measurement": {
-        "delta": 0.000148,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Tectonics"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -145,20 +104,7 @@
       "mechanism": "codon_expression_chemistry_bridge",
       "formula_branch": "term1.growth_term",
       "source_domain": "Biochemistry",
-      "target_domain": "Genomic",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-004",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Genomic"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -171,20 +117,7 @@
       "mechanism": "genomic_illness_vulnerability_analog",
       "formula_branch": "term1.quirkMod",
       "source_domain": "Code_Genome_Structure",
-      "target_domain": "Malware_Threat_Intelligence",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-005",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Malware_Threat_Intelligence"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -197,20 +130,7 @@
       "mechanism": "symbolic_semantics_morphism",
       "formula_branch": "term1.perceived_adjust",
       "source_domain": "Programming_Language_Laws",
-      "target_domain": "Linguistics_Formal",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-006",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Linguistics_Formal"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -223,20 +143,7 @@
       "mechanism": "extrinsic_code_structure_risk_projection",
       "formula_branch": "term3.acoustic_bleed",
       "source_domain": "External_OSS_Code_Genome",
-      "target_domain": "Zero_Day_Risk_Evaluator",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-007",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Zero_Day_Risk_Evaluator"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -249,20 +156,7 @@
       "mechanism": "primitive_to_implementation_security_chain",
       "formula_branch": "term1.term1_base",
       "source_domain": "Cryptography_Technology",
-      "target_domain": "Secure_Software_Engineering",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-008",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Secure_Software_Engineering"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -275,20 +169,7 @@
       "mechanism": "effective_field_cosmological_scaling",
       "formula_branch": "scaled_S",
       "source_domain": "Particle_Physics",
-      "target_domain": "Cosmology",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-009",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Cosmology"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -301,20 +182,7 @@
       "mechanism": "neural_consciousness_observer_channel",
       "formula_branch": "term1.quirkMod",
       "source_domain": "Neuroscience",
-      "target_domain": "Psychology",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-010",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Psychology"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -327,20 +195,7 @@
       "mechanism": "strict_empirical_spine_reduction",
       "formula_branch": "raw_S",
       "source_domain": "Formula_Corpus_Closure",
-      "target_domain": "Formula_Branching_Fractal",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-011",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Formula_Branching_Fractal"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -353,20 +208,7 @@
       "mechanism": "pl_law_codon_stability_constraint",
       "formula_branch": "term1.coherence_efficiency",
       "source_domain": "Programming_Language_Laws",
-      "target_domain": "Code_Genome_Structure",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-012",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Code_Genome_Structure"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -379,20 +221,7 @@
       "mechanism": "host_pathogen_immune_dynamics",
       "formula_branch": "term1.growth_term",
       "source_domain": "Immunology",
-      "target_domain": "Virology",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-013",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Virology"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -405,20 +234,7 @@
       "mechanism": "type_effect_computation_functor",
       "formula_branch": "term1.perceived_adjust",
       "source_domain": "Quantum_Computing",
-      "target_domain": "Programming_Language_Laws",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-014",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Programming_Language_Laws"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -431,20 +247,7 @@
       "mechanism": "opcode_scalar_register_evolution",
       "formula_branch": "term2.scale",
       "source_domain": "Trinary_OS",
-      "target_domain": "FSOTB_ISA",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-015",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "FSOTB_ISA"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -457,20 +260,7 @@
       "mechanism": "acoustic_impedance_material_resonance",
       "formula_branch": "term3.acoustic_bleed",
       "source_domain": "Acoustic_Resonance_Materials",
-      "target_domain": "Materials_Science",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-016",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Materials_Science"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -483,20 +273,7 @@
       "mechanism": "ionospheric_plasma_magnetopause_chemistry",
       "formula_branch": "term3.acoustic_inflow",
       "source_domain": "Ionospheric_Chemistry_Coupling",
-      "target_domain": "Magnetosphere",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-017",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Magnetosphere"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -509,20 +286,7 @@
       "mechanism": "mhd_beta_chaos_phase_gate",
       "formula_branch": "term3.chaos_factor",
       "source_domain": "Chaos_Mediated_Phase_Transitions",
-      "target_domain": "Plasma_Physics",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-018",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Plasma_Physics"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -535,20 +299,7 @@
       "mechanism": "golden_ratio_morphogen_expression",
       "formula_branch": "term1.term1_base",
       "source_domain": "Phi_Morphogenetic_Scaling",
-      "target_domain": "Biochemistry",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-019",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Biochemistry"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -561,20 +312,7 @@
       "mechanism": "thermodynamic_compute_energy_orbital",
       "formula_branch": "term1.coherence_efficiency",
       "source_domain": "Energy_AI_Orbital_Bridge",
-      "target_domain": "External_OSS_Code_Genome",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-020",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "External_OSS_Code_Genome"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -587,20 +325,7 @@
       "mechanism": "observer_cosmic_scale_coherence",
       "formula_branch": "term1.coherence_efficiency",
       "source_domain": "Consciousness_Galactic_Orbital_Bridge",
-      "target_domain": "Cosmology_Extended",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-021",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Cosmology_Extended"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -613,20 +338,7 @@
       "mechanism": "metabolic_neural_energy_orbital",
       "formula_branch": "term1.coherence_efficiency",
       "source_domain": "Energy_Neural_Orbital_Bridge",
-      "target_domain": "Neuroscience",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-022",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Neuroscience"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -639,20 +351,7 @@
       "mechanism": "microstate_neural_field_coupling",
       "formula_branch": "term1.coherence_efficiency",
       "source_domain": "Particle_Neural_Orbital_Bridge",
-      "target_domain": "Particle_Physics",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-023",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Particle_Physics"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -665,20 +364,7 @@
       "mechanism": "runtime_proof_genome_carrying",
       "formula_branch": "term1.perceived_adjust",
       "source_domain": "Proof_Carrying_Code_Genome",
-      "target_domain": "Rust_Lean_Bridge",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-024",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Rust_Lean_Bridge"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -691,20 +377,7 @@
       "mechanism": "orbital_prediction_fractal_closure",
       "formula_branch": "raw_S",
       "source_domain": "Domain_Orbital_Predictions",
-      "target_domain": "Formula_Branching_Fractal",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-025",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Formula_Branching_Fractal"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -717,20 +390,7 @@
       "mechanism": "cross_scale_biochemical_planetary_coherence",
       "formula_branch": "term1.coherence_efficiency",
       "source_domain": "Medical_Galactic_Orbital_Bridge",
-      "target_domain": "Immunology",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-026",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Immunology"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -743,20 +403,7 @@
       "mechanism": "cross_scale_computational_cosmology_coherence",
       "formula_branch": "term1.coherence_efficiency",
       "source_domain": "AI_Galactic_Orbital_Bridge",
-      "target_domain": "Cosmology_Extended",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-027",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Cosmology_Extended"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -769,20 +416,7 @@
       "mechanism": "cross_scale_neural_planetary_coherence",
       "formula_branch": "term1.coherence_efficiency",
       "source_domain": "Neural_Galactic_Orbital_Bridge",
-      "target_domain": "Planetary_Structure",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-028",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Planetary_Structure"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -795,20 +429,7 @@
       "mechanism": "toe_unity_single_architecture_rollup",
       "formula_branch": "raw_S",
       "source_domain": "ToE_Unification_Spine",
-      "target_domain": "ToE_Gap_Closure_Spine",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-029",
-      "scientific_measurement": {
-        "delta": 0.000295,
-        "delta_pct": 0.007375,
-        "effective_error_pct": 0.007375,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "ToE_Gap_Closure_Spine"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -821,20 +442,7 @@
       "mechanism": "string_to_nuclear_adjacent_fold",
       "formula_branch": "scaled_S",
       "source_domain": "Higgs_Mass",
-      "target_domain": "Particle_Physics",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-030",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Particle_Physics"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -847,20 +455,7 @@
       "mechanism": "nuclear_to_atomic_adjacent_fold",
       "formula_branch": "term3.chaos_factor",
       "source_domain": "Particle_Physics",
-      "target_domain": "Atomic_Physics",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-031",
-      "scientific_measurement": {
-        "delta": 0.000148,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Atomic_Physics"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -873,20 +468,7 @@
       "mechanism": "atomic_to_molecular_adjacent_fold",
       "formula_branch": "term2.trend_bias",
       "source_domain": "Atomic_Physics",
-      "target_domain": "Materials_Species_Bridge",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-032",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Materials_Species_Bridge"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -899,20 +481,7 @@
       "mechanism": "molecular_to_cellular_adjacent_fold",
       "formula_branch": "term1.growth_term",
       "source_domain": "Materials_Species_Bridge",
-      "target_domain": "Synthetic_Biology",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-033",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Synthetic_Biology"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -925,20 +494,7 @@
       "mechanism": "cellular_to_organismic_adjacent_fold",
       "formula_branch": "term1.growth_term",
       "source_domain": "Synthetic_Biology",
-      "target_domain": "Immunology",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-034",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Immunology"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -951,20 +507,7 @@
       "mechanism": "organismic_to_planetary_adjacent_fold",
       "formula_branch": "term2.scale",
       "source_domain": "Immunology",
-      "target_domain": "Planetary_Structure",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-035",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Planetary_Structure"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -977,20 +520,7 @@
       "mechanism": "planetary_to_stellar_adjacent_fold",
       "formula_branch": "term3.chaos_factor",
       "source_domain": "Planetary_Structure",
-      "target_domain": "Breakthrough_Discoveries_2024_2026",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-036",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Breakthrough_Discoveries_2024_2026"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -1003,20 +533,7 @@
       "mechanism": "stellar_to_galactic_adjacent_fold",
       "formula_branch": "term1.coherence_efficiency",
       "source_domain": "Breakthrough_Discoveries_2024_2026",
-      "target_domain": "Climate_Science",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-037",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Climate_Science"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -1029,20 +546,7 @@
       "mechanism": "galactic_to_cosmological_adjacent_fold",
       "formula_branch": "scaled_S",
       "source_domain": "Climate_Science",
-      "target_domain": "Cosmology_Extended",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-038",
-      "scientific_measurement": {
-        "delta": 0.000222,
-        "delta_pct": 0.0074,
-        "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "Cosmology_Extended"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -1055,1772 +559,11 @@
       "mechanism": "folding_ladder_toe_unity_rollup",
       "formula_branch": "raw_S",
       "source_domain": "Reality_Folding_Spine",
-      "target_domain": "ToE_Unification_Spine",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "MEC-039",
-      "scientific_measurement": {
-        "delta": 0.000295,
-        "delta_pct": 0.007375,
-        "effective_error_pct": 0.007375,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Plasma_Physics__Magnetosphere",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "magnetic_reconnection_energy_transfer",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Plasma Physics Magnetosphere",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Geomagnetism__Space_Weather",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "solar_wind_magnetopause_coupling",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Geomagnetism Space Weather",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Seismology__Tectonics",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "plate_boundary_stress_accumulation",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Seismology Tectonics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Code_Genome_Structure__Malware_Threat_Intelligence",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "genomic_illness_vulnerability_analog",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Code Genome Structure Malware Threat Intelligence",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Programming_Language_Laws__Linguistics_Formal",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "symbolic_semantics_morphism",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Programming Language Laws Linguistics Formal",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "External_OSS_Code_Genome__Zero_Day_Risk_Evaluator",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "extrinsic_code_structure_risk_projection",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "External OSS Code Genome Zero Day Risk Evaluator",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Cryptography_Technology__Secure_Software_Engineering",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "primitive_to_implementation_security_chain",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Cryptography Technology Secure Software Engineering",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Particle_Physics__Cosmology",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "effective_field_cosmological_scaling",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Particle Physics Cosmology",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Neuroscience__Psychology",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "neural_consciousness_observer_channel",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Neuroscience Psychology",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Formula_Corpus_Closure__Formula_Branching_Fractal",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "strict_empirical_spine_reduction",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Formula Corpus Closure Formula Branching Fractal",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Programming_Language_Laws__Code_Genome_Structure",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "pl_law_codon_stability_constraint",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Programming Language Laws Code Genome Structure",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Immunology__Virology",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "host_pathogen_immune_dynamics",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Immunology Virology",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Quantum_Computing__Programming_Language_Laws",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "type_effect_computation_functor",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Quantum Computing Programming Language Laws",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Acoustic_Resonance_Materials__Materials_Science",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "acoustic_impedance_material_resonance",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Acoustic Resonance Materials Materials Science",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Ionospheric_Chemistry_Coupling__Magnetosphere",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "ionospheric_plasma_magnetopause_chemistry",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Ionospheric Chemistry Coupling Magnetosphere",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Chaos_Mediated_Phase_Transitions__Plasma_Physics",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "mhd_beta_chaos_phase_gate",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Chaos Mediated Phase Transitions Plasma Physics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Phi_Morphogenetic_Scaling__Biochemistry",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "golden_ratio_morphogen_expression",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Phi Morphogenetic Scaling Biochemistry",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Energy_AI_Orbital_Bridge__External_OSS_Code_Genome",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "thermodynamic_compute_energy_orbital",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Energy AI Orbital Bridge External OSS Code Genome",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Consciousness_Galactic_Orbital_Bridge__Cosmology_Extended",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "observer_cosmic_scale_coherence",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Consciousness Galactic Orbital Bridge Cosmology Extended",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Energy_Neural_Orbital_Bridge__Neuroscience",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "metabolic_neural_energy_orbital",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Energy Neural Orbital Bridge Neuroscience",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Particle_Neural_Orbital_Bridge__Particle_Physics",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "microstate_neural_field_coupling",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Particle Neural Orbital Bridge Particle Physics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Proof_Carrying_Code_Genome__Rust_Lean_Bridge",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "runtime_proof_genome_carrying",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Proof Carrying Code Genome Rust Lean Bridge",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Domain_Orbital_Predictions__Formula_Branching_Fractal",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "orbital_prediction_fractal_closure",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Domain Orbital Predictions Formula Branching Fractal",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Medical_Galactic_Orbital_Bridge__Immunology",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "cross_scale_biochemical_planetary_coherence",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Medical Galactic Orbital Bridge Immunology",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "AI_Galactic_Orbital_Bridge__Cosmology_Extended",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "cross_scale_computational_cosmology_coherence",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "AI Galactic Orbital Bridge Cosmology Extended",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Neural_Galactic_Orbital_Bridge__Planetary_Structure",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "cross_scale_neural_planetary_coherence",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Neural Galactic Orbital Bridge Planetary Structure",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "ToE_Unification_Spine__ToE_Gap_Closure_Spine",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "toe_unity_single_architecture_rollup",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "ToE Unification Spine ToE Gap Closure Spine",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Higgs_Mass__Particle_Physics",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "string_to_nuclear_adjacent_fold",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Higgs Mass Particle Physics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Particle_Physics__Atomic_Physics",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "nuclear_to_atomic_adjacent_fold",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Particle Physics Atomic Physics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Atomic_Physics__Materials_Species_Bridge",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "atomic_to_molecular_adjacent_fold",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Materials Species Bridge",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Materials_Species_Bridge__Synthetic_Biology",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "molecular_to_cellular_adjacent_fold",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Materials Species Bridge Synthetic Biology",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Synthetic_Biology__Immunology",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "cellular_to_organismic_adjacent_fold",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Synthetic Biology Immunology",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Immunology__Planetary_Structure",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "organismic_to_planetary_adjacent_fold",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Immunology Planetary Structure",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Planetary_Structure__Breakthrough_Discoveries_2024_2026",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "planetary_to_stellar_adjacent_fold",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Planetary Structure Breakthrough Discoveries 2024 2026",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Breakthrough_Discoveries_2024_2026__Climate_Science",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "stellar_to_galactic_adjacent_fold",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Breakthrough Discoveries 2024 2026 Climate Science",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Climate_Science__Cosmology_Extended",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "galactic_to_cosmological_adjacent_fold",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Climate Science Cosmology Extended",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "mechanism_node_pair_validated",
-      "name": "Reality_Folding_Spine__ToE_Unification_Spine",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "mechanism": "folding_ladder_toe_unity_rollup",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Reality Folding Spine ToE Unification Spine",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Cosmology_Extended__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Cosmology Extended astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Planetary_Structure__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Planetary Structure astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Orbital_Mechanics__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Orbital Mechanics astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Small_Body_Orbits__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Small Body Orbits astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Planetary_Atmospheres__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Planetary Atmospheres astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__NASA_Exoplanet_Archive__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy NASA Exoplanet Archive astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Space_Propulsion_Systems__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Space Propulsion Systems astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Breakthrough_Discoveries_2024_2026__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Breakthrough Discoveries 2024 2026 astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Exogeology__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Exogeology astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Astrophysical_Structure_Crosswalk__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Astrophysical Structure Crosswalk astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Stellar_Multiplicity_Catalog__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Stellar Multiplicity Catalog astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Compact_Object_Binary_Events__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Compact Object Binary Events astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Galactic_Structure_Sample__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Galactic Structure Sample astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Solar_System_Structure_Deep__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Solar System Structure Deep astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Exoplanet_System_Architecture__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Exoplanet System Architecture astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Interdisciplinary_Spine_Crosswalk__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Interdisciplinary Spine Crosswalk astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__GWOSC_Live_Event_Deep__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy GWOSC Live Event Deep astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Stellar_Multiplicity_Live_Deep__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Stellar Multiplicity Live Deep astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Gaia_Astrometry_Panel_Deep__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Gaia Astrometry Panel Deep astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__WDS_Live_Multiplicity_Deep__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy WDS Live Multiplicity Deep astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Gaia_DR3_TAP_Deep__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Gaia DR3 TAP Deep astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__VizieR_WDS_TAP_Live_Deep__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy VizieR WDS TAP Live Deep astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Live_Ingest_Spine__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Live Ingest Spine astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Natural_Formation_Element_Simulation__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Natural Formation Element Simulation astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Superheavy_Island_Emergence_Simulation__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Superheavy Island Emergence Simulation astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Astronomy__Distant_Island_Emergence_Simulation__astronomical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Astronomy Distant Island Emergence Simulation astronomical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Particle_Physics__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Particle Physics particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Higgs_Mass__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Higgs Mass particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Mathematics_Computational__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Mathematics Computational particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Math_Generator_Rules_Eval__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Math Generator Rules Eval particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Math_Generator_Benchmark_Formula_Eval__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Math Generator Benchmark Formula Eval particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Math_Generator_Airfoil_RMSE__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Math Generator Airfoil RMSE particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Formula_Corpus_CNC__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Formula Corpus CNC particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__FSOT_Aggregate_Unified_DB__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics FSOT Aggregate Unified DB particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Prediction_Rederivation__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Prediction Rederivation particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Bibliography_Lean_Corpus__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Bibliography Lean Corpus particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__NIST_CODATA_Constants__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics NIST CODATA Constants particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__CERN_Open_Data_LHC__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics CERN Open Data LHC particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Space_Propulsion_Systems__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap",
-      "domain_display_name": "mechanistic coupling",
-      "display_name": "Atomic Physics Space Propulsion Systems particle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "target_domain": "ToE_Unification_Spine"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
+    "scalar_pooled_median_error_pct": 0.0073836551816993294,
     "max_scalar_error_pct": 0.0073836551816993294,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -2830,5 +573,442 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "mechanism_count": 39,
+  "validated_mechanism_pairs": 0,
+  "causal_manifest": [
+    {
+      "id": "MEC-001",
+      "source": "Plasma_Physics",
+      "target": "Magnetosphere",
+      "mechanism": "magnetic_reconnection_energy_transfer",
+      "lean_tags": [
+        "particle",
+        "electron"
+      ],
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "id": "MEC-002",
+      "source": "Geomagnetism",
+      "target": "Space_Weather",
+      "mechanism": "solar_wind_magnetopause_coupling",
+      "lean_tags": [
+        "electron",
+        "energy"
+      ],
+      "formula_branch": "term1.term1_base"
+    },
+    {
+      "id": "MEC-003",
+      "source": "Seismology",
+      "target": "Tectonics",
+      "mechanism": "plate_boundary_stress_accumulation",
+      "lean_tags": [
+        "energy"
+      ],
+      "formula_branch": "term2.trend_bias"
+    },
+    {
+      "id": "MEC-004",
+      "source": "Biochemistry",
+      "target": "Genomic",
+      "mechanism": "codon_expression_chemistry_bridge",
+      "lean_tags": [
+        "medical",
+        "biological"
+      ],
+      "formula_branch": "term1.growth_term"
+    },
+    {
+      "id": "MEC-005",
+      "source": "Code_Genome_Structure",
+      "target": "Malware_Threat_Intelligence",
+      "mechanism": "genomic_illness_vulnerability_analog",
+      "lean_tags": [
+        "biological",
+        "medical"
+      ],
+      "formula_branch": "term1.quirkMod"
+    },
+    {
+      "id": "MEC-006",
+      "source": "Programming_Language_Laws",
+      "target": "Linguistics_Formal",
+      "mechanism": "symbolic_semantics_morphism",
+      "lean_tags": [
+        "consciousness",
+        "ai"
+      ],
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "id": "MEC-007",
+      "source": "External_OSS_Code_Genome",
+      "target": "Zero_Day_Risk_Evaluator",
+      "mechanism": "extrinsic_code_structure_risk_projection",
+      "lean_tags": [
+        "ai",
+        "biological"
+      ],
+      "formula_branch": "term3.acoustic_bleed"
+    },
+    {
+      "id": "MEC-008",
+      "source": "Cryptography_Technology",
+      "target": "Secure_Software_Engineering",
+      "mechanism": "primitive_to_implementation_security_chain",
+      "lean_tags": [
+        "particle",
+        "ai"
+      ],
+      "formula_branch": "term1.term1_base"
+    },
+    {
+      "id": "MEC-009",
+      "source": "Particle_Physics",
+      "target": "Cosmology",
+      "mechanism": "effective_field_cosmological_scaling",
+      "lean_tags": [
+        "particle",
+        "cosmological"
+      ],
+      "formula_branch": "scaled_S"
+    },
+    {
+      "id": "MEC-010",
+      "source": "Neuroscience",
+      "target": "Psychology",
+      "mechanism": "neural_consciousness_observer_channel",
+      "lean_tags": [
+        "neural",
+        "consciousness"
+      ],
+      "formula_branch": "term1.quirkMod"
+    },
+    {
+      "id": "MEC-011",
+      "source": "Formula_Corpus_Closure",
+      "target": "Formula_Branching_Fractal",
+      "mechanism": "strict_empirical_spine_reduction",
+      "lean_tags": [
+        "mathematical",
+        "particle"
+      ],
+      "formula_branch": "raw_S"
+    },
+    {
+      "id": "MEC-012",
+      "source": "Programming_Language_Laws",
+      "target": "Code_Genome_Structure",
+      "mechanism": "pl_law_codon_stability_constraint",
+      "lean_tags": [
+        "consciousness",
+        "biological"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-013",
+      "source": "Immunology",
+      "target": "Virology",
+      "mechanism": "host_pathogen_immune_dynamics",
+      "lean_tags": [
+        "medical",
+        "biological"
+      ],
+      "formula_branch": "term1.growth_term"
+    },
+    {
+      "id": "MEC-014",
+      "source": "Quantum_Computing",
+      "target": "Programming_Language_Laws",
+      "mechanism": "type_effect_computation_functor",
+      "lean_tags": [
+        "ai",
+        "consciousness"
+      ],
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "id": "MEC-015",
+      "source": "Trinary_OS",
+      "target": "FSOTB_ISA",
+      "mechanism": "opcode_scalar_register_evolution",
+      "lean_tags": [
+        "ai",
+        "particle"
+      ],
+      "formula_branch": "term2.scale"
+    },
+    {
+      "id": "MEC-016",
+      "source": "Acoustic_Resonance_Materials",
+      "target": "Materials_Science",
+      "mechanism": "acoustic_impedance_material_resonance",
+      "lean_tags": [
+        "material",
+        "acoustical"
+      ],
+      "formula_branch": "term3.acoustic_bleed"
+    },
+    {
+      "id": "MEC-017",
+      "source": "Ionospheric_Chemistry_Coupling",
+      "target": "Magnetosphere",
+      "mechanism": "ionospheric_plasma_magnetopause_chemistry",
+      "lean_tags": [
+        "electron",
+        "chemical"
+      ],
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "id": "MEC-018",
+      "source": "Chaos_Mediated_Phase_Transitions",
+      "target": "Plasma_Physics",
+      "mechanism": "mhd_beta_chaos_phase_gate",
+      "lean_tags": [
+        "particle",
+        "fusion"
+      ],
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "id": "MEC-019",
+      "source": "Phi_Morphogenetic_Scaling",
+      "target": "Biochemistry",
+      "mechanism": "golden_ratio_morphogen_expression",
+      "lean_tags": [
+        "biological",
+        "medical"
+      ],
+      "formula_branch": "term1.term1_base"
+    },
+    {
+      "id": "MEC-020",
+      "source": "Energy_AI_Orbital_Bridge",
+      "target": "External_OSS_Code_Genome",
+      "mechanism": "thermodynamic_compute_energy_orbital",
+      "lean_tags": [
+        "energy",
+        "ai"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-021",
+      "source": "Consciousness_Galactic_Orbital_Bridge",
+      "target": "Cosmology_Extended",
+      "mechanism": "observer_cosmic_scale_coherence",
+      "lean_tags": [
+        "consciousness",
+        "galactic"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-022",
+      "source": "Energy_Neural_Orbital_Bridge",
+      "target": "Neuroscience",
+      "mechanism": "metabolic_neural_energy_orbital",
+      "lean_tags": [
+        "energy",
+        "neural"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-023",
+      "source": "Particle_Neural_Orbital_Bridge",
+      "target": "Particle_Physics",
+      "mechanism": "microstate_neural_field_coupling",
+      "lean_tags": [
+        "particle",
+        "neural"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-024",
+      "source": "Proof_Carrying_Code_Genome",
+      "target": "Rust_Lean_Bridge",
+      "mechanism": "runtime_proof_genome_carrying",
+      "lean_tags": [
+        "ai",
+        "mathematical"
+      ],
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "id": "MEC-025",
+      "source": "Domain_Orbital_Predictions",
+      "target": "Formula_Branching_Fractal",
+      "mechanism": "orbital_prediction_fractal_closure",
+      "lean_tags": [
+        "mathematical",
+        "particle"
+      ],
+      "formula_branch": "raw_S"
+    },
+    {
+      "id": "MEC-026",
+      "source": "Medical_Galactic_Orbital_Bridge",
+      "target": "Immunology",
+      "mechanism": "cross_scale_biochemical_planetary_coherence",
+      "lean_tags": [
+        "medical",
+        "galactic"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-027",
+      "source": "AI_Galactic_Orbital_Bridge",
+      "target": "Cosmology_Extended",
+      "mechanism": "cross_scale_computational_cosmology_coherence",
+      "lean_tags": [
+        "ai",
+        "galactic"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-028",
+      "source": "Neural_Galactic_Orbital_Bridge",
+      "target": "Planetary_Structure",
+      "mechanism": "cross_scale_neural_planetary_coherence",
+      "lean_tags": [
+        "neural",
+        "galactic"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-029",
+      "source": "ToE_Unification_Spine",
+      "target": "ToE_Gap_Closure_Spine",
+      "mechanism": "toe_unity_single_architecture_rollup",
+      "lean_tags": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "formula_branch": "raw_S"
+    },
+    {
+      "id": "MEC-030",
+      "source": "Higgs_Mass",
+      "target": "Particle_Physics",
+      "mechanism": "string_to_nuclear_adjacent_fold",
+      "lean_tags": [
+        "particle",
+        "higgs"
+      ],
+      "formula_branch": "scaled_S"
+    },
+    {
+      "id": "MEC-031",
+      "source": "Particle_Physics",
+      "target": "Atomic_Physics",
+      "mechanism": "nuclear_to_atomic_adjacent_fold",
+      "lean_tags": [
+        "particle"
+      ],
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "id": "MEC-032",
+      "source": "Atomic_Physics",
+      "target": "Materials_Species_Bridge",
+      "mechanism": "atomic_to_molecular_adjacent_fold",
+      "lean_tags": [
+        "particle",
+        "material"
+      ],
+      "formula_branch": "term2.trend_bias"
+    },
+    {
+      "id": "MEC-033",
+      "source": "Materials_Species_Bridge",
+      "target": "Synthetic_Biology",
+      "mechanism": "molecular_to_cellular_adjacent_fold",
+      "lean_tags": [
+        "biological",
+        "medical"
+      ],
+      "formula_branch": "term1.growth_term"
+    },
+    {
+      "id": "MEC-034",
+      "source": "Synthetic_Biology",
+      "target": "Immunology",
+      "mechanism": "cellular_to_organismic_adjacent_fold",
+      "lean_tags": [
+        "biological",
+        "medical"
+      ],
+      "formula_branch": "term1.growth_term"
+    },
+    {
+      "id": "MEC-035",
+      "source": "Immunology",
+      "target": "Planetary_Structure",
+      "mechanism": "organismic_to_planetary_adjacent_fold",
+      "lean_tags": [
+        "medical",
+        "galactic"
+      ],
+      "formula_branch": "term2.scale"
+    },
+    {
+      "id": "MEC-036",
+      "source": "Planetary_Structure",
+      "target": "Breakthrough_Discoveries_2024_2026",
+      "mechanism": "planetary_to_stellar_adjacent_fold",
+      "lean_tags": [
+        "galactic",
+        "energy"
+      ],
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "id": "MEC-037",
+      "source": "Breakthrough_Discoveries_2024_2026",
+      "target": "Climate_Science",
+      "mechanism": "stellar_to_galactic_adjacent_fold",
+      "lean_tags": [
+        "energy",
+        "galactic"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-038",
+      "source": "Climate_Science",
+      "target": "Cosmology_Extended",
+      "mechanism": "galactic_to_cosmological_adjacent_fold",
+      "lean_tags": [
+        "galactic",
+        "cosmological"
+      ],
+      "formula_branch": "scaled_S"
+    },
+    {
+      "id": "MEC-039",
+      "source": "Reality_Folding_Spine",
+      "target": "ToE_Unification_Spine",
+      "mechanism": "folding_ladder_toe_unity_rollup",
+      "lean_tags": [
+        "mathematical",
+        "particle",
+        "cosmological"
+      ],
+      "formula_branch": "raw_S"
+    }
+  ],
+  "crosswalk_modules": [
+    "FSOT.Formal.DomainCouplingSimulationPriors",
+    "FSOT.Formal.TheoryCompletenessSpinePriors"
+  ]
 }

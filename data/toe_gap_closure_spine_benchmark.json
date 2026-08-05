@@ -1,14 +1,10 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:49:51.039196+00:00",
+  "generated_at": "2026-08-05T14:42:15.612710+00:00",
   "domain": "ToE_Gap_Closure_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
-    "tier_k_gap_closure_pillars",
-    "c_thin_depth_pass",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-    "fsot_proper_green_remediation"
+    "tier_k_gap_closure_pillars"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -17,9 +13,9 @@
     "ai"
   ],
   "D_eff": 19,
-  "record_count": 21,
-  "observable_count": 21,
-  "scalar_record_count": 15,
+  "record_count": 7,
+  "observable_count": 7,
+  "scalar_record_count": 1,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -27,14 +23,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "pre": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "pre"
+      "closure_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Partial domain theories"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_proper_vs_baseline": true
+      "channel_gap_closure_vs_baseline": true
     }
   },
   "records": [
@@ -45,16 +41,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 21
+      "observable_count": 7
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_proper",
-      "name": "green_fix",
+      "property": "gap_closure",
+      "name": "closure_panel",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 21
+      "observable_count": 7
     }
   ],
   "material_records": [
@@ -65,86 +61,34 @@
       "computed": 21.0,
       "measured": 21.0,
       "error_pct": 0.0,
-      "source": "Fractal_Constant_Recursion",
-      "domain_display_name": "toe gap closure spine",
-      "display_name": "recursion",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "Fractal_Constant_Recursion"
     },
     {
       "lab": "toe_gap_closure_spine_lab",
       "property": "gap_pillar_records",
       "name": "predictions",
-      "computed": 27.0,
-      "measured": 27.0,
-      "error_pct": 0.020098237848408945,
-      "source": "Preregistered_Predictions",
-      "domain_display_name": "toe gap closure spine",
-      "display_name": "predictions",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 35.0,
+      "measured": 35.0,
+      "error_pct": 0.02009823784840936,
+      "source": "Preregistered_Predictions"
     },
     {
       "lab": "toe_gap_closure_spine_lab",
       "property": "gap_pillar_records",
       "name": "portable",
-      "computed": 290.0,
-      "measured": 290.0,
+      "computed": 419.0,
+      "measured": 419.0,
       "error_pct": 0.0,
-      "source": "Portable_Clone_Verify",
-      "domain_display_name": "toe gap closure spine",
-      "display_name": "portable",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "Portable_Clone_Verify"
     },
     {
       "lab": "toe_gap_closure_spine_lab",
       "property": "gap_pillar_records",
       "name": "observer",
-      "computed": 247.0,
-      "measured": 247.0,
-      "error_pct": 0.0525102820198906,
-      "source": "Observer_Channel_Derivation",
-      "domain_display_name": "toe gap closure spine",
-      "display_name": "observer",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 372.0,
+      "measured": 372.0,
+      "error_pct": 0.052510282019890844,
+      "source": "Observer_Channel_Derivation"
     },
     {
       "lab": "toe_gap_closure_spine_lab",
@@ -153,20 +97,7 @@
       "computed": 13.0,
       "measured": 13.0,
       "error_pct": 0.0,
-      "source": "Adversarial_Fractal_Break_Tests",
-      "domain_display_name": "toe gap closure spine",
-      "display_name": "adversarial",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "Adversarial_Fractal_Break_Tests"
     },
     {
       "lab": "toe_gap_closure_spine_lab",
@@ -175,20 +106,7 @@
       "computed": 24.0,
       "measured": 24.0,
       "error_pct": 0.0,
-      "source": "preregistered_predictions",
-      "domain_display_name": "toe gap closure spine",
-      "display_name": "discriminant pass",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "preregistered_predictions"
     },
     {
       "lab": "toe_gap_closure_spine_lab",
@@ -197,207 +115,12 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "portable_clone_verify",
-      "domain_display_name": "toe gap closure spine",
-      "display_name": "portable clone",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "acetazolamide_CAII",
-      "name": "e519765ed2390456",
-      "computed": 7.901075596837236,
-      "measured": 7.92,
-      "error_pct": 0.238944484,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "PHI ^ 4 + A_BLEED",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "BRENDA / Copeland (2005)"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "pH_water",
-      "name": "276b06aa421154fe",
-      "computed": 7.000000000000001,
-      "measured": 7.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ ( - 4 ) + phi ^ 4",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "CO\u2082",
-      "name": "4997f65cea526a23",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "BF\u2083",
-      "name": "964b34bd5d316085",
-      "computed": 119.99999999999999,
-      "measured": 120.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "SF\u2086",
-      "name": "3dd4abfdff6593a5",
-      "computed": 90.0,
-      "measured": 90.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi / 2 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "XeF\u2082",
-      "name": "d5f905492d3792d4",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "BeCl\u2082",
-      "name": "d100218fdd574f15",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "H\u207a/H\u2082",
-      "name": "0d36931a8021c0b6",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi - pi",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Bard, Parsons & Jordan (1985)"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "alpha_Fe",
-      "name": "a3464d3321da787e",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ 2 - phi - 1",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Long & Greenwood (1997)"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "Bi2Te3",
-      "name": "dce748561902febf",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "PHI ^ 2 - PHI ^ 1",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "R_N",
-      "name": "07b3e073b02aa441",
-      "computed": 0.7500001632454711,
-      "measured": 0.75,
-      "error_pct": 2.1766e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "G ^ ( - 7 ) - ln ( 3 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "CS2",
-      "name": "b570b63cbc8dce71",
-      "computed": 358.99980082967573,
-      "measured": 359.0,
-      "error_pct": 5.5479e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E ^ 4 + PI ^ 5 - PHI ^ 1",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST Chemistry WebBook / CRC"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "Fe",
-      "name": "de190b5a1618a827",
-      "computed": 1.679990560988901,
-      "measured": 1.68,
-      "error_pct": 0.000561846,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E / PHI",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Anderson (1966)"
-    },
-    {
-      "lab": "toe_gap_closure_spine_fsot_lab",
-      "property": "F",
-      "name": "c1f0a37d1a7e1851",
-      "computed": 3.4009757390356903,
-      "measured": 3.401,
-      "error_pct": 0.000713348,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma ^ ( - 2 ) + \u03a8 ^ 2",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
+      "source": "portable_clone_verify"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.238944484,
+    "max_scalar_error_pct": 0.0,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -406,5 +129,11 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "pillar_count": 5,
+  "gap_closure_status": "GREEN",
+  "crosswalk_modules": [
+    "FSOT.Formal.ToEGapClosureSpinePriors",
+    "FSOT.Formal.TheoryCompletenessSpinePriors"
+  ]
 }

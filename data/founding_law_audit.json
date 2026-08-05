@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-15T00:21:16.815204+00:00",
+  "generated_at": "2026-08-05T14:35:48.997003+00:00",
   "law_count": 35,
   "strict_empirical_corpus_size": 7941,
-  "extension_domain_count": 347,
+  "extension_domain_count": 371,
   "status_counts": {
     "verified_extension_panel": 28,
     "verified_strict_empirical": 7
@@ -626,6 +626,13 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
+          "panel": "Quantum_Mechanics_Entanglement_Depth_Panel",
+          "lean_module": "FSOT.Formal.QuantumMechanicsEntanglementDepthPanelPriors",
+          "benchmark_data": "data/quantum_mechanics_entanglement_depth_panel_benchmark.json",
+          "score": 2,
+          "match": "keyword"
+        },
+        {
           "panel": "Compactification_Ladder",
           "lean_module": "FSOT.Formal.CompactificationLadderPriors",
           "benchmark_data": "data/compactification_ladder_benchmark.json",
@@ -650,13 +657,6 @@
           "panel": "Materials_Genome_Crosswalk",
           "lean_module": "FSOT.Formal.MaterialsGenomeCrosswalkPriors",
           "benchmark_data": "data/materials_genome_crosswalk_benchmark.json",
-          "score": 1,
-          "match": "keyword"
-        },
-        {
-          "panel": "Microtubule_Quantum_Consciousness_Panel",
-          "lean_module": "FSOT.Formal.MicrotubuleQuantumConsciousnessPanelPriors",
-          "benchmark_data": "data/microtubule_quantum_consciousness_panel_benchmark.json",
           "score": 1,
           "match": "keyword"
         }
@@ -911,6 +911,13 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
+          "panel": "Quantum_Mechanics_Entanglement_Depth_Panel",
+          "lean_module": "FSOT.Formal.QuantumMechanicsEntanglementDepthPanelPriors",
+          "benchmark_data": "data/quantum_mechanics_entanglement_depth_panel_benchmark.json",
+          "score": 2,
+          "match": "keyword"
+        },
+        {
           "panel": "Compactification_Ladder",
           "lean_module": "FSOT.Formal.CompactificationLadderPriors",
           "benchmark_data": "data/compactification_ladder_benchmark.json",
@@ -935,13 +942,6 @@
           "panel": "FPC_Temporal_Coupling",
           "lean_module": "FSOT.Formal.FPCTemporalCouplingPriors",
           "benchmark_data": "data/fpc_temporal_coupling_benchmark.json",
-          "score": 1,
-          "match": "keyword"
-        },
-        {
-          "panel": "Fluid_Spacetime_Observable_Spine",
-          "lean_module": "FSOT.Formal.FluidSpacetimeObservableSpinePriors",
-          "benchmark_data": "data/fluid_spacetime_observable_spine_benchmark.json",
           "score": 1,
           "match": "keyword"
         }
@@ -1086,6 +1086,13 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
+          "panel": "Arxiv_Brain_Knowledge_Panel",
+          "lean_module": "FSOT.Formal.ArxivBrainKnowledgePanelPriors",
+          "benchmark_data": "data/arxiv_brain_knowledge_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
           "panel": "Consciousness_Genetics_Coupling_Panel",
           "lean_module": "FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors",
           "benchmark_data": "data/consciousness_genetics_coupling_panel_benchmark.json",
@@ -1110,13 +1117,6 @@
           "panel": "Longevity_Consciousness_Coupling_Panel",
           "lean_module": "FSOT.Formal.LongevityConsciousnessCouplingPanelPriors",
           "benchmark_data": "data/longevity_consciousness_coupling_panel_benchmark.json",
-          "score": 1,
-          "match": "keyword"
-        },
-        {
-          "panel": "Neural_Galactic_Orbital_Bridge",
-          "lean_module": "FSOT.Formal.NeuralGalacticOrbitalBridgePriors",
-          "benchmark_data": "data/neural_galactic_orbital_bridge_benchmark.json",
           "score": 1,
           "match": "keyword"
         }
@@ -1456,6 +1456,13 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
+          "panel": "Quantum_Mechanics_Entanglement_Depth_Panel",
+          "lean_module": "FSOT.Formal.QuantumMechanicsEntanglementDepthPanelPriors",
+          "benchmark_data": "data/quantum_mechanics_entanglement_depth_panel_benchmark.json",
+          "score": 2,
+          "match": "keyword"
+        },
+        {
           "panel": "Compactification_Ladder",
           "lean_module": "FSOT.Formal.CompactificationLadderPriors",
           "benchmark_data": "data/compactification_ladder_benchmark.json",
@@ -1480,13 +1487,6 @@
           "panel": "Materials_Genome_Crosswalk",
           "lean_module": "FSOT.Formal.MaterialsGenomeCrosswalkPriors",
           "benchmark_data": "data/materials_genome_crosswalk_benchmark.json",
-          "score": 1,
-          "match": "keyword"
-        },
-        {
-          "panel": "Microtubule_Quantum_Consciousness_Panel",
-          "lean_module": "FSOT.Formal.MicrotubuleQuantumConsciousnessPanelPriors",
-          "benchmark_data": "data/microtubule_quantum_consciousness_panel_benchmark.json",
           "score": 1,
           "match": "keyword"
         }

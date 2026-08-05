@@ -1,43 +1,39 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:48:54.785904+00:00",
+  "generated_at": "2026-08-05T14:36:51.512691+00:00",
   "domain": "ToE_Unification_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "toe_gap_closure_spine",
     "theory_completeness_spine",
-    "domain_orbital_predictions",
-    "c_thin_depth_pass",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "domain_orbital_predictions"
   ],
   "maps_to_lean": [
     "mathematical",
     "particle",
     "consciousness",
     "energy",
-    "galactic",
-    "medical"
+    "galactic"
   ],
   "D_eff": 20,
-  "record_count": 24,
-  "observable_count": 24,
-  "scalar_record_count": 24,
+  "record_count": 8,
+  "observable_count": 8,
+  "scalar_record_count": 8,
   "scalar_gate_applicable": true,
-  "median_error_pct": 3.8622500000000005e-05,
-  "pooled_median_error_pct": 3.8622500000000005e-05,
-  "headline_median_error_pct": 5.5479e-05,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "ToE_Unification_Spine_depth": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "sector model without seed-closed FSOT formula"
+      "unification_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Siloed domain theories"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_seed_formula_vs_baseline": true
+      "channel_toe_unity_vs_baseline": true
     }
   },
   "records": [
@@ -45,19 +41,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 3.9e-05,
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 3.8622500000000005e-05,
-      "observable_count": 24
+      "error_pct": 0.0,
+      "observable_count": 8
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_seed_formula",
-      "name": "ToE_Unification_Spine_depth",
-      "computed": 5.5e-05,
+      "property": "toe_unity",
+      "name": "unification_panel",
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 5.5479e-05,
-      "observable_count": 24
+      "error_pct": 0.0,
+      "observable_count": 8
     }
   ],
   "material_records": [
@@ -68,42 +64,16 @@
       "computed": 7.0,
       "measured": 7.0,
       "error_pct": 0.0,
-      "source": "ToE_Gap_Closure_Spine",
-      "domain_display_name": "toe unification spine",
-      "display_name": "gap closure",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "ToE_Gap_Closure_Spine"
     },
     {
       "lab": "toe_unification_spine_lab",
       "property": "unity_pillar",
       "name": "completeness",
-      "computed": 6.0,
-      "measured": 6.0,
+      "computed": 24.0,
+      "measured": 24.0,
       "error_pct": 0.0,
-      "source": "Theory_Completeness_Spine",
-      "domain_display_name": "toe unification spine",
-      "display_name": "completeness",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "Theory_Completeness_Spine"
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -111,65 +81,26 @@
       "name": "orbital_rollup",
       "computed": 12.0,
       "measured": 12.0,
-      "error_pct": 0.027544107556407217,
-      "source": "Domain_Orbital_Predictions",
-      "domain_display_name": "toe unification spine",
-      "display_name": "orbital rollup",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0,
+      "source": "Domain_Orbital_Predictions"
     },
     {
       "lab": "toe_unification_spine_lab",
       "property": "coupling_nodes",
       "name": "domain_graph",
-      "computed": 282.053603,
-      "measured": 282.0,
-      "error_pct": 0.019008268802510223,
-      "source": "toe_unification_metrics",
-      "domain_display_name": "toe unification spine",
-      "display_name": "domain graph",
-      "scientific_measurement": {
-        "delta": 0.053603,
-        "delta_pct": 0.019008,
-        "effective_error_pct": 0.019008,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "toe_unification_metrics"
     },
     {
       "lab": "toe_unification_spine_lab",
       "property": "coupling_edges",
       "name": "domain_graph",
-      "computed": 18694.552836,
-      "measured": 18691.0,
-      "error_pct": 0.019008268802492807,
-      "source": "toe_unification_metrics",
-      "domain_display_name": "toe unification spine",
-      "display_name": "domain graph",
-      "scientific_measurement": {
-        "delta": 3.552836,
-        "delta_pct": 0.019008,
-        "effective_error_pct": 0.019008,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "toe_unification_metrics"
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -178,20 +109,7 @@
       "computed": 246.04676,
       "measured": 246.0,
       "error_pct": 0.019008268802502604,
-      "source": "toe_unification_metrics",
-      "domain_display_name": "toe unification spine",
-      "display_name": "raw S spine",
-      "scientific_measurement": {
-        "delta": 0.04676,
-        "delta_pct": 0.019008,
-        "effective_error_pct": 0.019008,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "toe_unification_metrics"
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -200,20 +118,7 @@
       "computed": 7942.509447,
       "measured": 7941.0,
       "error_pct": 0.019008268802504343,
-      "source": "toe_unification_metrics",
-      "domain_display_name": "toe unification spine",
-      "display_name": "raw S spine",
-      "scientific_measurement": {
-        "delta": 1.509447,
-        "delta_pct": 0.019008,
-        "effective_error_pct": 0.019008,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "toe_unification_metrics"
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -222,233 +127,12 @@
       "computed": 12.002281,
       "measured": 12.0,
       "error_pct": 0.019008268802493213,
-      "source": "toe_unification_metrics",
-      "domain_display_name": "toe unification spine",
-      "display_name": "prediction registry",
-      "scientific_measurement": {
-        "delta": 0.002281,
-        "delta_pct": 0.019008,
-        "effective_error_pct": 0.019008,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "pH_water",
-      "name": "276b06aa421154fe",
-      "computed": 7.000000000000001,
-      "measured": 7.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ ( - 4 ) + phi ^ 4",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "CO\u2082",
-      "name": "4997f65cea526a23",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "BF\u2083",
-      "name": "964b34bd5d316085",
-      "computed": 119.99999999999999,
-      "measured": 120.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "SF\u2086",
-      "name": "3dd4abfdff6593a5",
-      "computed": 90.0,
-      "measured": 90.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi / 2 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "XeF\u2082",
-      "name": "d5f905492d3792d4",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "BeCl\u2082",
-      "name": "d100218fdd574f15",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "H\u207a/H\u2082",
-      "name": "0d36931a8021c0b6",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi - pi",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Bard, Parsons & Jordan (1985)"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "alpha_Fe",
-      "name": "a3464d3321da787e",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ 2 - phi - 1",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Long & Greenwood (1997)"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "Bi2Te3",
-      "name": "dce748561902febf",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "PHI ^ 2 - PHI ^ 1",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "R_N",
-      "name": "07b3e073b02aa441",
-      "computed": 0.7500001632454711,
-      "measured": 0.75,
-      "error_pct": 2.1766e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "G ^ ( - 7 ) - ln ( 3 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "CS2",
-      "name": "b570b63cbc8dce71",
-      "computed": 358.99980082967573,
-      "measured": 359.0,
-      "error_pct": 5.5479e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E ^ 4 + PI ^ 5 - PHI ^ 1",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST Chemistry WebBook / CRC"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "Fe",
-      "name": "de190b5a1618a827",
-      "computed": 1.679990560988901,
-      "measured": 1.68,
-      "error_pct": 0.000561846,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E / PHI",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Anderson (1966)"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "F",
-      "name": "c1f0a37d1a7e1851",
-      "computed": 3.4009757390356903,
-      "measured": 3.401,
-      "error_pct": 0.000713348,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma ^ ( - 2 ) + \u03a8 ^ 2",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "IE_Ar",
-      "name": "6a9af01dd6d7066c",
-      "computed": 15.76012377846974,
-      "measured": 15.76,
-      "error_pct": 0.000785396,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma ^ ( - 5 ) + Poof",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "Ca",
-      "name": "4583c5321dccbc9d",
-      "computed": 177.8014017941265,
-      "measured": 177.8,
-      "error_pct": 0.000788411,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E ^ 5 + PI ^ 3 - PHI ^ 1",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST-JANAF / CRC / Kittel"
-    },
-    {
-      "lab": "toe_unification_spine_fsot_lab",
-      "property": "P",
-      "name": "11f7ccc79d6fc81f",
-      "computed": 0.7469924420819796,
-      "measured": 0.747,
-      "error_pct": 0.001011769,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma * \u03a9",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
+      "source": "toe_unification_metrics"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 3.8622500000000005e-05,
-    "max_scalar_error_pct": 0.027544107556407217,
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.019008268802504343,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -457,5 +141,17 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "coupling_node_count": 0,
+  "fractal_domain_attachment_count": 246,
+  "orbital_prediction_fill_ratio": 1.0,
+  "unification_status": "YELLOW",
+  "cross_scale_claim": "same_formula_different_scale",
+  "external_cache_root": "G:\\FSOT-PublicData",
+  "crosswalk_modules": [
+    "FSOT.Formal.ToEGapClosureSpinePriors",
+    "FSOT.Formal.TheoryCompletenessSpinePriors",
+    "FSOT.Formal.DomainOrbitalPredictionsPriors",
+    "FSOT.Formal.FormulaBranchingFractalPriors"
+  ]
 }

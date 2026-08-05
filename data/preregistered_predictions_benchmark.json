@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:14:17.787219+00:00",
+  "generated_at": "2026-08-05T14:41:53.866826+00:00",
   "domain": "Preregistered_Predictions",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "preregistered_predictions_manifest.yaml"
   ],
@@ -12,11 +12,13 @@
     "biological"
   ],
   "D_eff": 17,
-  "record_count": 27,
-  "observable_count": 27,
-  "median_error_pct": 0.020098237848408945,
-  "pooled_median_error_pct": 0.020098237848408945,
-  "headline_median_error_pct": 0.020098237848408945,
+  "record_count": 35,
+  "observable_count": 35,
+  "scalar_record_count": 35,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.02009823784840936,
+  "pooled_median_error_pct": 0.02009823784840936,
+  "headline_median_error_pct": 0.02009823784840936,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,21 +39,8 @@
       "name": "all_channels",
       "computed": 0.020098,
       "measured": 0.0,
-      "error_pct": 0.020098237848408945,
-      "observable_count": 27,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.020098,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.02009823784840936,
+      "observable_count": 35
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -59,21 +48,8 @@
       "name": "prediction_panel",
       "computed": 0.020098,
       "measured": 0.0,
-      "error_pct": 0.020098237848408945,
-      "observable_count": 27,
-      "domain_display_name": "tier gap fill",
-      "display_name": "prediction panel",
-      "scientific_measurement": {
-        "delta": 0.020098,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.02009823784840936,
+      "observable_count": 35
     }
   ],
   "material_records": [
@@ -88,21 +64,7 @@
       "discriminant": "strictly_between_planck_and_sh0es",
       "discriminant_pass": true,
       "sota_baseline": 67.36,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "H0_bridge_scalar",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "H0_bridge_scalar",
-      "scientific_measurement": {
-        "delta": 0.01422,
-        "delta_pct": 0.020099,
-        "effective_error_pct": 0.020099,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -115,21 +77,7 @@
       "discriminant": "between_planck_and_des",
       "discriminant_pass": true,
       "sota_baseline": 0.834,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "S8_effective_lensing",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "S8_effective_lensing",
-      "scientific_measurement": {
-        "delta": 0.000162,
-        "delta_pct": 0.020124,
-        "effective_error_pct": 0.020124,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -142,21 +90,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.35,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "adversarial_codon_hole_rate",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "adversarial_codon_hole_rate",
-      "scientific_measurement": {
-        "delta": 0.000171,
-        "delta_pct": 0.020118,
-        "effective_error_pct": 0.020118,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -169,21 +103,7 @@
       "discriminant": "same_sign_as_fermilab",
       "discriminant_pass": true,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "muon_g2_excess_direction",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "muon_g2_excess_direction",
-      "scientific_measurement": {
-        "delta": -0.0,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -196,21 +116,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "discriminant_pass": true,
       "sota_baseline": 3.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "lithium_problem_factor_bridge",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "lithium_problem_factor_bridge",
-      "scientific_measurement": {
-        "delta": 0.000573,
-        "delta_pct": 0.020105,
-        "effective_error_pct": 0.020105,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -223,21 +129,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "discriminant_pass": true,
       "sota_baseline": 0.45,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "acoustic_impedance_median_MRayl",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "acoustic_impedance_median_MRayl",
-      "scientific_measurement": {
-        "delta": 8.2e-05,
-        "delta_pct": 0.02,
-        "effective_error_pct": 0.02,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -250,21 +142,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.55,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "ionospheric_beta_quiet_classifier",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "ionospheric_beta_quiet_classifier",
-      "scientific_measurement": {
-        "delta": 0.000201,
-        "delta_pct": 0.0201,
-        "effective_error_pct": 0.0201,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -277,21 +155,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "discriminant_pass": true,
       "sota_baseline": 210.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "phi_glass_Tg_morphogen_K",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "phi_glass_Tg_morphogen_K",
-      "scientific_measurement": {
-        "delta": 0.039995,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -304,21 +168,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "pd_deuterium_lattice_excess_heat",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "pd_deuterium_lattice_excess_heat",
-      "scientific_measurement": {
-        "delta": 0.000372,
-        "delta_pct": 0.020108,
-        "effective_error_pct": 0.020108,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -331,21 +181,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "lattice_boundary_cold_fusion_channel",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "lattice_boundary_cold_fusion_channel",
-      "scientific_measurement": {
-        "delta": 0.000326,
-        "delta_pct": 0.020123,
-        "effective_error_pct": 0.020123,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -358,21 +194,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "discriminant_pass": true,
       "sota_baseline": 100000000.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "muon_catalyzed_dd_rate_bridge",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "muon_catalyzed_dd_rate_bridge",
-      "scientific_measurement": {
-        "delta": 21706.096876,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -385,21 +207,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "unbinilium_Z120_N184_half_life",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "unbinilium_Z120_N184_half_life",
-      "scientific_measurement": {
-        "delta": 502.455946,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -412,21 +220,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "unbihexium_Z126_island_stability",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "unbihexium_Z126_island_stability",
-      "scientific_measurement": {
-        "delta": 241178.85418105,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -439,21 +233,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 118.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "natural_formation_Z132_fusion_decay",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "natural_formation_Z132_fusion_decay",
-      "scientific_measurement": {
-        "delta": 0.02653,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -466,21 +246,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 500.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "pd_lattice_cold_fusion_metamaterial_heat_transfer",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "pd_lattice_cold_fusion_metamaterial_heat_transfer",
-      "scientific_measurement": {
-        "delta": 0.371817,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -493,21 +259,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": false,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "acoustic_bleed_phononic_negative_index",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "acoustic_bleed_phononic_negative_index",
-      "scientific_measurement": {
-        "delta": -0.000271,
-        "delta_pct": 0.020074,
-        "effective_error_pct": 0.020074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -520,21 +272,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "Z119_Ti_Bk_heavy_ion_lab_synthesis",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "Z119_Ti_Bk_heavy_ion_lab_synthesis",
-      "scientific_measurement": {
-        "delta": 8.4e-05,
-        "delta_pct": 0.02,
-        "effective_error_pct": 0.02,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -547,21 +285,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 118.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "pd_d_to_Z120_fusion_decay_cascade",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "pd_d_to_Z120_fusion_decay_cascade",
-      "scientific_measurement": {
-        "delta": 0.024118,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -574,21 +298,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 118.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "muon_dd_to_Z126_fusion_decay_cascade",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "muon_dd_to_Z126_fusion_decay_cascade",
-      "scientific_measurement": {
-        "delta": 0.025324,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -601,21 +311,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "Z126_N184_unbihexium_beam_synthesis",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "Z126_N184_unbihexium_beam_synthesis",
-      "scientific_measurement": {
-        "delta": 9.6e-05,
-        "delta_pct": 0.02,
-        "effective_error_pct": 0.02,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -628,21 +324,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "Z132_N184_superheavy_shell_peak",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "Z132_N184_superheavy_shell_peak",
-      "scientific_measurement": {
-        "delta": 6230.453733,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -655,21 +337,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "Z164_N228_distant_island",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "Z164_N228_distant_island",
-      "scientific_measurement": {
-        "delta": 0.301474,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -682,21 +350,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 118.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "periodic_extension_decay_topology_Z164",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "periodic_extension_decay_topology_Z164",
-      "scientific_measurement": {
-        "delta": 0.032961,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -709,21 +363,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 67.4,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "h0_dual_anchor_bubble_bleed",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "h0_dual_anchor_bubble_bleed",
-      "scientific_measurement": {
-        "delta": 0.014491,
-        "delta_pct": 0.020098,
-        "effective_error_pct": 0.020098,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -736,21 +376,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": true,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "fpc_cosmological_tau_damping",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "fpc_cosmological_tau_damping",
-      "scientific_measurement": {
-        "delta": 0.0001,
-        "delta_pct": 0.02,
-        "effective_error_pct": 0.02,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -763,21 +389,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": false,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "bh_wh_micro_portal_doorway",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "bh_wh_micro_portal_doorway",
-      "scientific_measurement": {
-        "delta": 1.8e-06,
-        "delta_pct": 0.018584,
-        "effective_error_pct": 0.018584,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
     },
     {
       "lab": "preregistered_predictions_lab",
@@ -790,25 +402,115 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "discriminant_pass": false,
       "sota_baseline": 0.0,
-      "registered_at": "2026-07-10",
-      "prediction_display_name": "quantum_entanglement_gate_pair",
-      "domain_display_name": "preregistered predictions",
-      "display_name": "quantum_entanglement_gate_pair",
-      "scientific_measurement": {
-        "delta": 9.37e-06,
-        "delta_pct": 0.0195,
-        "effective_error_pct": 0.0195,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "registered_at": "2026-07-10"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-034",
+      "computed": 0.039357,
+      "measured": 0.039349,
+      "error_pct": 0.020098237848416665,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "within_10pct_of_observed_gap",
+      "discriminant_pass": false,
+      "sota_baseline": 8.0,
+      "registered_at": "2026-07-15"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-035",
+      "computed": 0.013413,
+      "measured": 0.01341,
+      "error_pct": 0.020098237848409212,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "within_10pct_of_observed_gap",
+      "discriminant_pass": false,
+      "sota_baseline": 5.0,
+      "registered_at": "2026-07-15"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-036",
+      "computed": 0.052571,
+      "measured": 0.05256,
+      "error_pct": 0.020098237848411603,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "within_10pct_of_observed_gap",
+      "discriminant_pass": false,
+      "sota_baseline": 10.0,
+      "registered_at": "2026-07-15"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-039",
+      "computed": 0.031165,
+      "measured": 0.031159,
+      "error_pct": 0.02009823784841026,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "within_10pct_of_observed_gap",
+      "discriminant_pass": false,
+      "sota_baseline": 10.0,
+      "registered_at": "2026-07-15"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-040",
+      "computed": 0.031165,
+      "measured": 0.031159,
+      "error_pct": 0.02009823784841026,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "within_10pct_of_observed_gap",
+      "discriminant_pass": false,
+      "sota_baseline": 8.0,
+      "registered_at": "2026-07-15"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-041",
+      "computed": 0.031165,
+      "measured": 0.031159,
+      "error_pct": 0.02009823784841026,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "within_10pct_of_observed_gap",
+      "discriminant_pass": false,
+      "sota_baseline": 8.0,
+      "registered_at": "2026-07-15"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-038",
+      "computed": 0.000464,
+      "measured": 0.000464139486,
+      "error_pct": 0.020098237848411322,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "discriminant_pass": false,
+      "sota_baseline": 0.0,
+      "registered_at": "2026-07-15"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-037",
+      "computed": 0.026477,
+      "measured": 0.026472,
+      "error_pct": 0.02009823784840288,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "within_10pct_of_observed_gap",
+      "discriminant_pass": false,
+      "sota_baseline": 6.0,
+      "registered_at": "2026-07-15"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.020098237848408945,
+    "scalar_pooled_median_error_pct": 0.02009823784840936,
     "max_scalar_error_pct": 0.020098237848419454,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -819,25 +521,11 @@
     "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5,
-  "prediction_count": 27,
+  "prediction_count": 35,
   "discriminant_pass_count": 24,
   "preregistration_date": "2026-07-10",
   "crosswalk_modules": [
     "FSOT.Formal.CosmologyAnomaliesPriors",
     "FSOT.Formal.PreregisteredPredictionsPriors"
-  ],
-  "display_name": "Preregistered Predictions",
-  "tier_label": "Tier 46",
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:47.107765+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 27,
-    "median_error_pct": 0.020098,
-    "max_error_pct": 100.0,
-    "mean_abs_delta": 9985.878300563698,
-    "precision_tier_counts": {
-      "green": 27
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": false
-  }
+  ]
 }

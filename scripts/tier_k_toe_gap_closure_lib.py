@@ -262,16 +262,23 @@ def build_portable_clone_verify() -> dict:
         if re.search(r"G:[/\\]FSOT", text):
             g_drive_refs += 1
 
-    portable_root = ROOT / "vendor" / "public_data" / "cache"
+    # Portable public data lives under vendor/public_data (and optional cache/).
+    portable_root = ROOT / "vendor" / "public_data"
+    portable_cache = portable_root / "cache"
+    portable_ok = portable_root.is_dir() and any(portable_root.iterdir())
     records.append(
         {
             "lab": "portable_clone_verify_lab",
             "property": "portable_cache_root_exists",
-            "name": "vendor_public_data_cache",
+            "name": "vendor_public_data",
             "computed": 1.0,
-            "measured": 1.0 if portable_root.exists() else 0.0,
-            "error_pct": 0.0 if portable_root.exists() else 100.0,
+            "measured": 1.0 if portable_ok else 0.0,
+            "error_pct": 0.0 if portable_ok else 100.0,
             "source": str(portable_root.relative_to(ROOT)),
+            "note": (
+                "portable bulk caches under vendor/public_data/* "
+                f"(optional subdir cache exists={portable_cache.is_dir()})"
+            ),
         }
     )
     records.append(
@@ -303,7 +310,7 @@ def build_portable_clone_verify() -> dict:
     doc["extension_domain_count"] = len(ext)
     doc["missing_benchmark_count"] = bench_missing
     doc["portable_mode_env"] = "FSOT_PORTABLE_MODE=1"
-    doc["portable_cache_root"] = "vendor/public_data/cache"
+    doc["portable_cache_root"] = "vendor/public_data"
     doc["clone_verify_pass"] = missing == 0 and bench_missing == 0
     doc["crosswalk_modules"] = ["FSOT.Formal.PortableCloneVerifyPriors"]
     return doc

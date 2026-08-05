@@ -1,8 +1,8 @@
 # Benchmark data citations & public anchors
 
-**Generated:** `2026-08-05T12:47:49.642265+00:00`  
+**Generated:** `2026-08-05T14:42:38.052072+00:00`  
 **Panels scanned:** 432  
-**Unique resolved anchors:** 830  
+**Unique resolved anchors:** 833  
 **API registry entries:** 36 · open-science no-key: 20
 
 This ledger supports **multiprover + empirical reproducibility**: measured targets 
@@ -21,14 +21,14 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 
 | Kind | Count |
 |------|------:|
-| `dataset` | 896 |
-| `literature` | 433 |
-| `unresolved` | 420 |
-| `process` | 403 |
-| `vendor_cache` | 370 |
-| `api` | 170 |
-| `software` | 162 |
-| `ingest_script` | 131 |
+| `dataset` | 690 |
+| `unresolved` | 417 |
+| `vendor_cache` | 373 |
+| `process` | 331 |
+| `literature` | 313 |
+| `software` | 161 |
+| `api` | 155 |
+| `ingest_script` | 130 |
 | `url` | 11 |
 
 ## Global public anchors (deduplicated)
@@ -40,9 +40,9 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | api | Crossref funders (open) | https://api.crossref.org/funders?query=national+science+foundation&rows=3 | 1 |
 | api | Ensembl REST API | https://rest.ensembl.org/ | 1 |
 | api | FDA open drug labeling records | https://api.fda.gov/drug/label.json?limit=5 | 1 |
-| api | GBIF Occurrence API | https://api.gbif.org/v1/ | 15 |
+| api | GBIF Occurrence API | https://api.gbif.org/v1/ | 13 |
 | api | GWAS Catalog studies (EBI) | https://www.ebi.ac.uk/gwas/rest/api/studies?size=5 | 1 |
-| api | JPL Horizons system | https://ssd.jpl.nasa.gov/horizons/ | 3 |
+| api | JPL Horizons system | https://ssd.jpl.nasa.gov/horizons/ | 2 |
 | api | JPL Solar System Dynamics / Horizons | https://ssd.jpl.nasa.gov/ | 5 |
 | api | NASA Exoplanet Archive TAP | https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html | 1 |
 | api | NASA open data portals (SSD/JPL, DONKI, Exoplanet Archive as cited per panel) | https://api.nasa.gov/ | 8 |
@@ -50,22 +50,22 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | api | NCBI PubMed eSearch (open eutils) | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Hubble+tension&retmode=json&retmax=5 | 1 |
 | api | NOAA tides, climate, space-weather open services | https://www.noaa.gov/ | 9 |
 | api | Open-Meteo weather API / archive | https://open-meteo.com/ | 6 |
-| api | OpenAlex scholarly graph API | https://api.openalex.org/ | 9 |
+| api | OpenAlex scholarly graph API | https://api.openalex.org/ | 8 |
 | api | Our World in Data CO2 codebook (GitHub raw) | https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-codebook.csv | 1 |
-| api | PubChem PUG REST | https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest | 18 |
+| api | PubChem PUG REST | https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest | 13 |
 | api | RCSB PDB REST API | https://data.rcsb.org/ | 2 |
 | api | STRING protein network API version | https://string-db.org/api/json/version | 1 |
 | api | USGS earthquake / water / hazards open APIs | https://earthquake.usgs.gov/fdsnws/event/1/ | 10 |
 | api | UniProt REST API | https://www.uniprot.org/help/api | 1 |
 | api | Wikidata entity for π | https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q167&format=json | 1 |
-| api | World Bank Open Data Indicators API | https://api.worldbank.org/v2/ | 18 |
+| api | World Bank Open Data Indicators API | https://api.worldbank.org/v2/ | 17 |
 | api | World Bank population indicator | https://api.worldbank.org/v2/country/USA/indicator/SP.POP.TOTL?format=json&per_page=5 | 1 |
 | api | Zenodo open research records (physics) | https://zenodo.org/api/records/?q=subject:physics&size=3&sort=mostrecent | 1 |
 | api | anage | https://genomics.senescence.info/species/dataset.zip | 4 |
-| api | arXiv API / metadata | https://arxiv.org/help/api/ | 7 |
+| api | arXiv API / metadata | https://arxiv.org/help/api/ | 5 |
 | api | obis | https://api.obis.org/v3/occurrence | 2 |
 | api | openneuro | https://openneuro.org/crn/graphql | 2 |
-| dataset | BRENDA enzyme database | https://www.brenda-enzymes.org/ | 23 |
+| dataset | BRENDA enzyme database | https://www.brenda-enzymes.org/ | 20 |
 | dataset | CERN Open Data | https://opendata.cern.ch/ | 3 |
 | dataset | GitHub OSS corpus JetBrains/kotlin | https://github.com/JetBrains/kotlin | 1 |
 | dataset | GitHub OSS corpus USGS/GVP | https://github.com/USGS/GVP | 1 |
@@ -76,22 +76,25 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | dataset | GitHub OSS corpus data/adversarial_fractal_break_benchmark.json | https://github.com/data/adversarial_fractal_break_benchmark.json | 2 |
 | dataset | GitHub OSS corpus data/agriculture_agroecology_gap_fill_benchmark.json | https://github.com/data/agriculture_agroecology_gap_fill_benchmark.json | 2 |
 | dataset | GitHub OSS corpus data/ai_galactic_orbital_bridge_benchmark.json | https://github.com/data/ai_galactic_orbital_bridge_benchmark.json | 1 |
+| dataset | GitHub OSS corpus data/alternate_base_mathematics_explorer_panel_benchmark.json | https://github.com/data/alternate_base_mathematics_explorer_panel_benchmark.json | 1 |
+| dataset | GitHub OSS corpus data/alternate_base_mathematics_spine_benchmark.json | https://github.com/data/alternate_base_mathematics_spine_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/anthropology_extension_benchmark.json | https://github.com/data/anthropology_extension_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/architecture_building_science_gap_fill_benchmark.json | https://github.com/data/architecture_building_science_gap_fill_benchmark.json | 2 |
-| dataset | GitHub OSS corpus data/arxiv_primitives_v14_benchmark.json | https://github.com/data/arxiv_primitives_v14_benchmark.json | 3 |
+| dataset | GitHub OSS corpus data/arxiv_brain_knowledge_panel_benchmark.json | https://github.com/data/arxiv_brain_knowledge_panel_benchmark.json | 1 |
+| dataset | GitHub OSS corpus data/arxiv_primitives_panel_benchmark.json | https://github.com/data/arxiv_primitives_panel_benchmark.json | 1 |
+| dataset | GitHub OSS corpus data/arxiv_primitives_v14_benchmark.json | https://github.com/data/arxiv_primitives_v14_benchmark.json | 2 |
 | dataset | GitHub OSS corpus data/astrophysical_structure_crosswalk_benchmark.json | https://github.com/data/astrophysical_structure_crosswalk_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/atomic_physics_gap_fill_benchmark.json | https://github.com/data/atomic_physics_gap_fill_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/bibliography_lean_corpus_benchmark.json | https://github.com/data/bibliography_lean_corpus_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/binary_decoder_rendlesham_benchmark.json | https://github.com/data/binary_decoder_rendlesham_benchmark.json | 3 |
-| dataset | GitHub OSS corpus data/biological_cuda_physarum_benchmark.json | https://github.com/data/biological_cuda_physarum_benchmark.json | 2 |
+| dataset | GitHub OSS corpus data/binary_decoder_rendlesham_benchmark.json | https://github.com/data/binary_decoder_rendlesham_benchmark.json | 2 |
+| dataset | GitHub OSS corpus data/biological_cuda_physarum_benchmark.json | https://github.com/data/biological_cuda_physarum_benchmark.json | 1 |
+| dataset | GitHub OSS corpus data/biology_developmental_structural_depth_panel_benchmark.json | https://github.com/data/biology_developmental_structural_depth_panel_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/biology_strict_empirical.json | https://github.com/data/biology_strict_empirical.json | 1 |
-| dataset | GitHub OSS corpus data/biophysics_public_panel_benchmark.json | https://github.com/data/biophysics_public_panel_benchmark.json | 2 |
 | dataset | GitHub OSS corpus data/boundary_partition_tightening_benchmark.json | https://github.com/data/boundary_partition_tightening_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/breakthrough_discoveries_2024_2026_benchmark.json | https://github.com/data/breakthrough_discoveries_2024_2026_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/canonical_constants.json | https://github.com/data/canonical_constants.json | 1 |
 | dataset | GitHub OSS corpus data/chaos_mediated_phase_transitions_benchmark.json | https://github.com/data/chaos_mediated_phase_transitions_benchmark.json | 2 |
 | dataset | GitHub OSS corpus data/climate_observed_benchmark.json | https://github.com/data/climate_observed_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/compactification_ladder_manifest.yaml | https://github.com/data/compactification_ladder_manifest.yaml | 1 |
 | dataset | GitHub OSS corpus data/consciousness_econ_benchmark.json | https://github.com/data/consciousness_econ_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/consciousness_reference_observables.json | https://github.com/data/consciousness_reference_observables.json | 2 |
 | dataset | GitHub OSS corpus data/consciousness_resonance_reference.json | https://github.com/data/consciousness_resonance_reference.json | 1 |
@@ -106,7 +109,6 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | dataset | GitHub OSS corpus data/immunology_benchmark.json | https://github.com/data/immunology_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/materials_species_bridge_benchmark.json | https://github.com/data/materials_species_bridge_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/observer_channel_derivation_benchmark.json | https://github.com/data/observer_channel_derivation_benchmark.json | 2 |
-| dataset | GitHub OSS corpus data/orbital_bridge_scientific_framing.yaml | https://github.com/data/orbital_bridge_scientific_framing.yaml | 1 |
 | dataset | GitHub OSS corpus data/particle_physics_gap_fill_benchmark.json | https://github.com/data/particle_physics_gap_fill_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/planetary_jpl_cache.json | https://github.com/data/planetary_jpl_cache.json | 1 |
 | dataset | GitHub OSS corpus data/planetary_structure_benchmark.json | https://github.com/data/planetary_structure_benchmark.json | 1 |
@@ -114,7 +116,6 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | dataset | GitHub OSS corpus data/quantum_computing_math_depth_panel_benchmark.json | https://github.com/data/quantum_computing_math_depth_panel_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/sector_h0_seed.json | https://github.com/data/sector_h0_seed.json | 3 |
 | dataset | GitHub OSS corpus data/sh0es_host_coordinates.json | https://github.com/data/sh0es_host_coordinates.json | 1 |
-| dataset | GitHub OSS corpus data/space_weather_summary_benchmark.json | https://github.com/data/space_weather_summary_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/stumped_observables_reference.json | https://github.com/data/stumped_observables_reference.json | 2 |
 | dataset | GitHub OSS corpus data/symbolic_archetype_reference.json | https://github.com/data/symbolic_archetype_reference.json | 1 |
 | dataset | GitHub OSS corpus data/synthetic_biology_benchmark.json | https://github.com/data/synthetic_biology_benchmark.json | 1 |
@@ -161,36 +162,35 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | dataset | GitHub OSS corpus vendor/physarum | https://github.com/vendor/physarum | 1 |
 | dataset | GitHub OSS corpus vendor/propulsion_electrical | https://github.com/vendor/propulsion_electrical | 1 |
 | dataset | GitHub OSS corpus vendor/public_data | https://github.com/vendor/public_data | 1 |
+| dataset | GitHub OSS corpus vendor/reference_anchors | https://github.com/vendor/reference_anchors | 1 |
 | dataset | GitHub OSS corpus vendor/rust_lean_bridge | https://github.com/vendor/rust_lean_bridge | 1 |
 | dataset | GitHub OSS corpus vendor/thesis | https://github.com/vendor/thesis | 1 |
 | dataset | GitHub OSS corpus vendor/tokenization | https://github.com/vendor/tokenization | 1 |
 | dataset | GitHub OSS corpus vendor/trinary_os | https://github.com/vendor/trinary_os | 4 |
 | dataset | GitHub OSS corpus vendor/vl_distill | https://github.com/vendor/vl_distill | 1 |
 | dataset | GitHub OSS corpus ziglang/zig | https://github.com/ziglang/zig | 1 |
-| dataset | Minor Planet Center Orbit Database (MPCORB) | https://minorplanetcenter.net/data | 12 |
-| dataset | Minor Planet Center data services | https://minorplanetcenter.net/ | 12 |
+| dataset | Minor Planet Center Orbit Database (MPCORB) | https://minorplanetcenter.net/data | 7 |
+| dataset | Minor Planet Center data services | https://minorplanetcenter.net/ | 7 |
 | dataset | NASA Kepler / exoplanet archives (as cited per panel) | https://exoplanetarchive.ipac.caltech.edu/ | 1 |
-| dataset | NIST CODATA / Constants | https://physics.nist.gov/cuu/Constants/ | 133 |
-| dataset | NIST CODATA recommended values (ASCII table) | https://physics.nist.gov/cuu/Constants/Table/allascii.txt | 11 |
+| dataset | NIST CODATA / Constants | https://physics.nist.gov/cuu/Constants/ | 107 |
+| dataset | NIST CODATA recommended values (ASCII table) | https://physics.nist.gov/cuu/Constants/Table/allascii.txt | 7 |
 | dataset | NOAA NCEI climate data | https://www.ncei.noaa.gov/ | 1 |
-| dataset | Particle Data Group Review of Particle Physics | https://pdg.lbl.gov/ | 11 |
-| dataset | Planck Collaboration cosmological parameters | https://www.cosmos.esa.int/web/planck | 6 |
+| dataset | Particle Data Group Review of Particle Physics | https://pdg.lbl.gov/ | 9 |
+| dataset | Planck Collaboration cosmological parameters | https://www.cosmos.esa.int/web/planck | 4 |
 | dataset | SSA Office of the Chief Actuary life tables | https://www.ssa.gov/oact/STATS/table4c6.html | 1 |
-| dataset | vendor/formula_corpus/by_domain/strict_empirical.jsonl | https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl | 129 |
-| literature | Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) | https://www.nist.gov/pml/journal-physical-and-chemical-reference-data | 63 |
-| literature | Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution | https://www.routledge.com/ | 101 |
-| literature | Long & Greenwood (1997) — materials / thermoelectric class reference | https://ui.adsabs.harvard.edu/ | 95 |
-| literature | Snyder & Toberer, Nature Materials 7, 105 (2008) | https://doi.org/10.1038/nmat2090 | 93 |
-| software | FSOT scalar authority (pin D1D38A) | https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py | 121 |
-| unresolved | 4 | Named in panel source; add explicit public URL if this is an external authority | 2 |
+| dataset | vendor/formula_corpus/by_domain/strict_empirical.jsonl | https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl | 103 |
+| literature | Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) | https://www.nist.gov/pml/journal-physical-and-chemical-reference-data | 42 |
+| literature | Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution | https://www.routledge.com/ | 74 |
+| literature | Long & Greenwood (1997) — materials / thermoelectric class reference | https://ui.adsabs.harvard.edu/ | 71 |
+| literature | Snyder & Toberer, Nature Materials 7, 105 (2008) | https://doi.org/10.1038/nmat2090 | 68 |
+| software | FSOT scalar authority (pin D1D38A) | https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py | 120 |
+| unresolved | 4 | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | 9_language_bridges | Named in panel source; add explicit public URL if this is an external authority | 1 |
-| unresolved | : | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | AHA/ESC cardiology reference | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | ASCE/structural engineering reference | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | ASHRAE_HVAC | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | ASM International | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | ASME mechanical engineering reference | Named in panel source; add explicit public URL if this is an external authority | 1 |
-| unresolved | Acoustic_Resonance_Materials | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | Adjacent_Rung_Coupling | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | Adversarial_Fractal_Break_Tests | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | Behavioral neuroeconomics reference | Named in panel source; add explicit public URL if this is an external authority | 1 |
@@ -201,7 +201,6 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | unresolved | CRC Handbook | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | CRYPTOGRAPHY_RULES | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | CVE_CWE_shape | Named in panel source; add explicit public URL if this is an external authority | 1 |
-| unresolved | Chaos_Mediated_Phase_Transitions | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | Compactification_Ladder | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | Cosmology_Anomalies | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | Crossref history corpus | Named in panel source; add explicit public URL if this is an external authority | 1 |
@@ -229,8 +228,7 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | unresolved | IERS Earth sidereal + NULL Island prime-meridian τ prior | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | IERS Earth sidereal phase at prime meridian | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | ISRIC SoilGrids v2 | Named in panel source; add explicit public URL if this is an external authority | 1 |
-| unresolved | Ionospheric_Chemistry_Coupling | Named in panel source; add explicit public URL if this is an external authority | 1 |
-| unresolved | Kittel / CRC | Named in panel source; add explicit public URL if this is an external authority | 2 |
+| unresolved | Kittel / CRC | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | LIGO public GW150914 | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | LIGO public summary 2024 | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | LIGO/Virgo public GW170817 | Named in panel source; add explicit public URL if this is an external authority | 1 |
@@ -244,12 +242,10 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | unresolved | Observer_Channel_Derivation | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | PB2002_tectonics | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | PBDB | Named in panel source; add explicit public URL if this is an external authority | 2 |
-| unresolved | Phi_Morphogenetic_Scaling | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | Physical Review Letters 2026 Zhang et al. QCE | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | Poof-dominant molecular valve — unity τ recycle baseline | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | Portable_Clone_Verify | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | Preregistered_Predictions | Named in panel source; add explicit public URL if this is an external authority | 1 |
-| unresolved | Proof_Carrying_Code_Genome | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | QUANTUM_COMPUTING_rules | Named in panel source; add explicit public URL if this is an external authority | 2 |
 | unresolved | RELATED_EMBODIMENTS.md | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | RFC_IANA_anchors | Named in panel source; add explicit public URL if this is an external authority | 1 |
@@ -331,7 +327,6 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | unresolved | desktop_trinary_hardware | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | desktop_vl_distill | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | developmental_structural_biology_literature_anchors | Named in panel source; add explicit public URL if this is an external authority | 1 |
-| unresolved | domain_coupling_simulation | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | domain_orbital_predictions | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | econometrics | Named in panel source; add explicit public URL if this is an external authority | 2 |
 | unresolved | economics_gap_fill | Named in panel source; add explicit public URL if this is an external authority | 1 |
@@ -419,6 +414,7 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | unresolved | mechanical_engineering_reference | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | mechanical_engineering_reference_observables | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | multi_base_carry_analysis | Named in panel source; add explicit public URL if this is an external authority | 1 |
+| unresolved | multi_hero_benchmark | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | navigation sweep | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | network_internet_protocols_reference_observables | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | neuroeconomics_reference | Named in panel source; add explicit public URL if this is an external authority | 1 |
@@ -484,12 +480,15 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | unresolved | term1.perceived_adjust | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | term1.quirkMod | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | term1.term1_base | Named in panel source; add explicit public URL if this is an external authority | 1 |
+| unresolved | term2.amplitude | Named in panel source; add explicit public URL if this is an external authority | 1 |
+| unresolved | term2.scale | Named in panel source; add explicit public URL if this is an external authority | 1 |
+| unresolved | term2.trend_bias | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | term3.acoustic_bleed | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | term3.acoustic_inflow | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | term3.chaos_factor | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | the_well_hdf5_spot_chunks | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | theory_completeness_spine | Named in panel source; add explicit public URL if this is an external authority | 1 |
-| unresolved | thesis_wave | Named in panel source; add explicit public URL if this is an external authority | 1 |
+| unresolved | thesis_wave | Named in panel source; add explicit public URL if this is an external authority | 2 |
 | unresolved | tier52-56_panels | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | tier55-57_material_panels | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | tier61_creative_panels | Named in panel source; add explicit public URL if this is an external authority | 1 |
@@ -522,6 +521,7 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | unresolved | tier_h_child_rollup | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | tier_k_gap_closure_pillars | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | tier_l_orbital_gap_fill | Named in panel source; add explicit public URL if this is an external authority | 1 |
+| unresolved | tier_m_toe_unity | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | toe_gap_closure_spine | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | toe_unification_metrics | Named in panel source; add explicit public URL if this is an external authority | 1 |
 | unresolved | trinary_genome | Named in panel source; add explicit public URL if this is an external authority | 1 |
@@ -568,6 +568,7 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\data\dark_energy_cpl_reference.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/dark_energy_cpl_reference.json | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\data\foundational_ontology_axioms.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/foundational_ontology_axioms.yaml | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\data\hardware_competitive_refine_report.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/hardware_competitive_refine_report.json | 1 |
+| vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\data\preregistered_predictions_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/preregistered_predictions_manifest.yaml | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\application_wiring\tier88_cache\bibliography_corpus_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/bibliography_corpus_cache.json | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\application_wiring\tier88_cache\biological_cuda_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/biological_cuda_cache.json | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\application_wiring\tier88_cache\living_fsot_hardware_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/living_fsot_hardware_cache.json | 1 |
@@ -681,7 +682,7 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | vendor_cache | data/cosmology_extended_benchmark.json lambda_cdm H0 | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/cosmology_extended_benchmark.json lambda_cdm H0 | 1 |
 | vendor_cache | data\living_fsot_hardware_verification_report.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/data/living_fsot_hardware_verification_report.json | 1 |
 | vendor_cache | domain_coupling_simulation_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json | 10 |
-| vendor_cache | domain_orbital_prediction_report.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_orbital_prediction_report.json | 2 |
+| vendor_cache | domain_orbital_prediction_report.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_orbital_prediction_report.json | 1 |
 | vendor_cache | electrical_power_systems_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/electrical_power_systems_benchmark.json | 1 |
 | vendor_cache | existence_simulation_failure_clusters_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/existence_simulation_failure_clusters_manifest.yaml | 1 |
 | vendor_cache | extension_domains_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/extension_domains_manifest.yaml | 3 |
@@ -732,6 +733,7 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | vendor_cache | network_internet_protocols_cybersecurity_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/network_internet_protocols_cybersecurity_benchmark.json | 1 |
 | vendor_cache | nist_codata_constants_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/nist_codata_constants_benchmark.json | 1 |
 | vendor_cache | openneuro_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/openneuro_summary.json | 1 |
+| vendor_cache | orbital_predictions_registry.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/orbital_predictions_registry.yaml | 1 |
 | vendor_cache | particle_physics_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/particle_physics_benchmark.json | 2 |
 | vendor_cache | periodic_table_completion_spine_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/periodic_table_completion_spine_benchmark.json | 2 |
 | vendor_cache | pharmacology_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/pharmacology_benchmark.json | 1 |
@@ -792,13 +794,13 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | vendor_cache | vendor/certified_agent/fsot_workspace.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/certified_agent/fsot_workspace.json | 1 |
 | vendor_cache | vendor/cosmology/database/FSOT_Mathematical_Database_Unified.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/cosmology/database/FSOT_Mathematical_Database_Unified.json | 1 |
 | vendor_cache | vendor/cybersecurity/samples/secure_buffer.c | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/cybersecurity/samples/secure_buffer.c | 1 |
-| vendor_cache | vendor/evolution/best_evolved_organism.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/evolution/best_evolved_organism.json | 1 |
 | vendor_cache | vendor/evolution/biological_mt_operons.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/evolution/biological_mt_operons.json | 1 |
 | vendor_cache | vendor/fringe_desktop/intelligence_compressor_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fringe_desktop/intelligence_compressor_summary.json | 1 |
 | vendor_cache | vendor/fringe_desktop/soul_simulator_manifest_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fringe_desktop/soul_simulator_manifest_summary.json | 1 |
 | vendor_cache | vendor/fringe_desktop/symbolic_encoding_graph_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fringe_desktop/symbolic_encoding_graph_summary.json | 1 |
 | vendor_cache | vendor/fringe_desktop/vibrafsot_progress_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fringe_desktop/vibrafsot_progress_summary.json | 1 |
 | vendor_cache | vendor/fsot_aggregate/FSOT_Mathematical_Database_Unified.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_aggregate/FSOT_Mathematical_Database_Unified.json | 2 |
+| vendor_cache | vendor/fsot_aggregate/FSOT_UNIFIED.db | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_aggregate/FSOT_UNIFIED.db | 1 |
 | vendor_cache | vendor/fsot_aggregate/prediction_rederivation_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_aggregate/prediction_rederivation_summary.json | 2 |
 | vendor_cache | vendor/fuel/public_fuel_property_catalog.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fuel/public_fuel_property_catalog.json | 1 |
 | vendor_cache | vendor/github_oss/adversarial/broken_memcpy_chain.c | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/github_oss/adversarial/broken_memcpy_chain.c | 1 |
@@ -809,6 +811,7 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | vendor_cache | vendor/igem/fastas | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/igem/fastas | 2 |
 | vendor_cache | vendor/igem/igem_parts_registry.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/igem/igem_parts_registry.json | 3 |
 | vendor_cache | vendor/intrinsic_llm/benchmark_results_final.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/intrinsic_llm/benchmark_results_final.json | 2 |
+| vendor_cache | vendor/knowledge_base/kb_portable_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/knowledge_base/kb_portable_summary.json | 1 |
 | vendor_cache | vendor/linguistics/data/LINGUISTIC_TARGETS.csv | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/linguistics/data/LINGUISTIC_TARGETS.csv | 1 |
 | vendor_cache | vendor/linguistics/linguistics_derivations.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/linguistics/linguistics_derivations.json | 1 |
 | vendor_cache | vendor/materials_live/materials_project_bundled.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/materials_live/materials_project_bundled.json | 1 |
@@ -849,7 +852,7 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | vendor_cache | vendor/vl_distill/fsot_atlas_summary.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/vl_distill/fsot_atlas_summary.json | 1 |
 | vendor_cache | vendor/vl_distill/fsot_competitive_report.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/vl_distill/fsot_competitive_report.json | 1 |
 | vendor_cache | vendor/vl_distill/fsot_domain_registry.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/vl_distill/fsot_domain_registry.json | 1 |
-| vendor_cache | vendor\neuron_cohort\cells.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/neuron_cohort/cells.json | 1 |
+| vendor_cache | vendor\neuron_cohort\cells.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/neuron_cohort/cells.json | 2 |
 | vendor_cache | vendor\public_data\oph_challenge_public_anchors.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/public_data/oph_challenge_public_anchors.json | 1 |
 | vendor_cache | wds_live_multiplicity_deep_benchmark.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/wds_live_multiplicity_deep_benchmark.json | 1 |
 | vendor_cache | wds_multiplicity_expanded.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/wds_multiplicity_expanded.json | 1 |
@@ -881,8 +884,6 @@ They remain listed for honesty; prefer promoting them into `PUBLIC_ANCHORS` or `
 | `recipe_process` | 2 |
 | `coffee_roast` | 2 |
 | `fluidlink_fpc_timing` | 2 |
-| `4` | 2 |
-| `Kittel / CRC` | 2 |
 | `esp32_platform` | 2 |
 | `fsot_gpu_cuda` | 2 |
 | `code_genome_structure_bridge` | 2 |
@@ -893,6 +894,7 @@ They remain listed for honesty; prefer promoting them into `PUBLIC_ANCHORS` or `
 | `culinary_process_bridge` | 2 |
 | `hardware_depth_bridge` | 2 |
 | `phase1_formal_gpu/lean/Trinary.lean` | 2 |
+| `thesis_wave` | 2 |
 | `virology_reference_observables` | 2 |
 | `FSOT.Formal.Scalar.consciousness_factor` | 2 |
 | `biology_strict_lab` | 2 |
@@ -901,6 +903,7 @@ They remain listed for honesty; prefer promoting them into `PUBLIC_ANCHORS` or `
 | `adversarial_corpus` | 1 |
 | `tier92_alternate_base_panels` | 1 |
 | `linguistics_anthropology_bridge` | 1 |
+| `ASHRAE_HVAC` | 1 |
 
 ## Per-panel anchors (compact)
 
@@ -908,14 +911,14 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### AI_Galactic_Orbital_Bridge
 
-- Benchmark: `data/ai_galactic_orbital_bridge_benchmark.json` · records=48 · median%=0.005168558627177688
+- Benchmark: `data/ai_galactic_orbital_bridge_benchmark.json` · records=48 · median%=0.005168558627176023
 - Lean: `FSOT.Formal.AIGalacticOrbitalBridgePriors`
 - Public / portable anchors:
   - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
   - **dataset**: GitHub OSS corpus data/ai_galactic_orbital_bridge_benchmark.json — https://github.com/data/ai_galactic_orbital_bridge_benchmark.json
   - **dataset**: GitHub OSS corpus data/adversarial_fractal_break_benchmark.json — https://github.com/data/adversarial_fractal_break_benchmark.json
-  - **dataset**: GitHub OSS corpus data/arxiv_primitives_v14_benchmark.json — https://github.com/data/arxiv_primitives_v14_benchmark.json
-  - **dataset**: GitHub OSS corpus data/binary_decoder_rendlesham_benchmark.json — https://github.com/data/binary_decoder_rendlesham_benchmark.json
+  - **dataset**: GitHub OSS corpus data/alternate_base_mathematics_explorer_panel_benchmark.json — https://github.com/data/alternate_base_mathematics_explorer_panel_benchmark.json
+  - **dataset**: GitHub OSS corpus data/alternate_base_mathematics_spine_benchmark.json — https://github.com/data/alternate_base_mathematics_spine_benchmark.json
   - **unresolved**: cross_scale_motif — Named in panel source; add explicit public URL if this is an external authority
 
 ### Acoustic_Resonance_Materials
@@ -946,11 +949,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Adversarial_Fractal_Break_Tests
 
-- Benchmark: `data/adversarial_fractal_break_benchmark.json` · records=21 · median%=0.0
+- Benchmark: `data/adversarial_fractal_break_benchmark.json` · records=13 · median%=0.0
 - Lean: `FSOT.Formal.AdversarialFractalBreakPriors`
 - Public / portable anchors:
   - **vendor_cache**: github_oss_adversarial_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/github_oss_adversarial_manifest.yaml
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **vendor_cache**: vendor/github_oss/adversarial/broken_memcpy_chain.c — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/github_oss/adversarial/broken_memcpy_chain.c
   - **unresolved**: formula_branching_fractal — Named in panel source; add explicit public URL if this is an external authority
   - **vendor_cache**: vendor/github_oss/adversarial/double_free_pattern.c — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/github_oss/adversarial/double_free_pattern.c
@@ -959,10 +961,6 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **vendor_cache**: vendor/github_oss/adversarial/race_unsafe.go — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/github_oss/adversarial/race_unsafe.go
   - **vendor_cache**: vendor/cybersecurity/samples/secure_buffer.c — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/cybersecurity/samples/secure_buffer.c
   - **unresolved**: adversarial_corpus — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: BRENDA enzyme database — https://www.brenda-enzymes.org/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
 
 ### Agriculture_Agroecology
 
@@ -1658,24 +1656,6 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **vendor_cache**: G:\FSOT-PublicData\anomaly_observables\consciousness\tier90_species_panel_cache.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/G:/FSOT-PublicData/anomaly_observables/consciousness/tier90_species_panel_cache.json
   - **ingest_script**: scripts/ingest_tier90_consciousness_expansion.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier90_consciousness_expansion.py
 
-### Cosmology_Anomalies
-
-- Benchmark: `data/cosmology_anomalies_benchmark.json` · records=23 · median%=0.000561846
-- Lean: `FSOT.Formal.CosmologyAnomaliesPriors`
-- Public / portable anchors:
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-
 ### Cosmology_Anomaly_Deep_Panel
 
 - Benchmark: `data/cosmology_anomaly_deep_panel_benchmark.json` · records=24 · median%=0.0
@@ -1752,31 +1732,20 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### DESI_wa_Constraint
 
-- Benchmark: `data/desi_wa_constraint_benchmark.json` · records=20 · median%=0.0
+- Benchmark: `data/desi_wa_constraint_benchmark.json` · records=27 · median%=0.0
 - Public / portable anchors:
   - **vendor_cache**: C:\Users\damia\Desktop\FSOT-2.1-Lean\data\dark_energy_cpl_reference.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/dark_energy_cpl_reference.json
   - **dataset**: GitHub OSS corpus scripts/dark_energy_dual_readout_lib.py — https://github.com/scripts/dark_energy_dual_readout_lib.py
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
 
 ### Dark_Energy_CPL
 
-- Benchmark: `data/dark_energy_cpl_benchmark.json` · records=24 · median%=0.0
+- Benchmark: `data/dark_energy_cpl_benchmark.json` · records=14 · median%=0.280515
 - Ingest: `scripts/ingest_anomaly_public_data.py`
 - Lean: `FSOT.Formal.DarkEnergyCPLPriors`
 - Public / portable anchors:
   - **dataset**: GitHub OSS corpus data/dark_energy_cpl_reference.json — https://github.com/data/dark_energy_cpl_reference.json
   - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
   - **dataset**: GitHub OSS corpus scripts/dark_energy_dual_readout_lib.py — https://github.com/scripts/dark_energy_dual_readout_lib.py
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
   - **ingest_script**: scripts/ingest_anomaly_public_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_anomaly_public_data.py
 
 ### Dark_Sector_Open_Problems
@@ -1857,25 +1826,12 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Domain_Orbital_Predictions
 
-- Benchmark: `data/domain_orbital_predictions_benchmark.json` · records=24 · median%=0.0
+- Benchmark: `data/domain_orbital_predictions_benchmark.json` · records=12 · median%=0.0
 - Lean: `FSOT.Formal.DomainOrbitalPredictionsPriors`
 - Public / portable anchors:
-  - **vendor_cache**: domain_orbital_prediction_report.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_orbital_prediction_report.json
+  - **vendor_cache**: orbital_predictions_registry.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/orbital_predictions_registry.yaml
   - **unresolved**: tier_l_orbital_gap_fill — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **unresolved**: Acoustic_Resonance_Materials — Named in panel source; add explicit public URL if this is an external authority
-  - **unresolved**: Chaos_Mediated_Phase_Transitions — Named in panel source; add explicit public URL if this is an external authority
-  - **unresolved**: Phi_Morphogenetic_Scaling — Named in panel source; add explicit public URL if this is an external authority
-  - **unresolved**: Ionospheric_Chemistry_Coupling — Named in panel source; add explicit public URL if this is an external authority
-  - **unresolved**: Proof_Carrying_Code_Genome — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
+  - **unresolved**: tier_m_toe_unity — Named in panel source; add explicit public URL if this is an external authority
 
 ### Dzhanibekov_Intermediate_Axis_FSOT_Panel
 
@@ -2506,21 +2462,24 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Formula_Branching_Fractal
 
-- Benchmark: `data/formula_branching_fractal_benchmark.json` · records=255 · median%=0.038016537604979236
+- Benchmark: `data/formula_branching_fractal_benchmark.json` · records=380 · median%=0.038016537604979236
 - Lean: `FSOT.Formal.FormulaBranchingFractalPriors`
 - Public / portable anchors:
   - **vendor_cache**: fsot_formula_spine.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_formula_spine.yaml
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **unresolved**: term1.quirkMod — Named in panel source; add explicit public URL if this is an external authority
+  - **unresolved**: term3.chaos_factor — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: term1.growth_term — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: term3.acoustic_bleed — Named in panel source; add explicit public URL if this is an external authority
-  - **unresolved**: term3.chaos_factor — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: term1.term1_base — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: term3.acoustic_inflow — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: term1.coherence_efficiency — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: term1.perceived_adjust — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: scaled_S — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: raw_S — Named in panel source; add explicit public URL if this is an external authority
+  - **unresolved**: term2.scale — Named in panel source; add explicit public URL if this is an external authority
+  - **unresolved**: term2.amplitude — Named in panel source; add explicit public URL if this is an external authority
+  - **unresolved**: term2.trend_bias — Named in panel source; add explicit public URL if this is an external authority
 
 ### Formula_Corpus_CNC
 
@@ -2592,136 +2551,59 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Founding_Atmospheric_Ozone_Panel
 
-- Benchmark: `data/founding_atmospheric_ozone_panel_benchmark.json` · records=24 · median%=0.000561846
+- Benchmark: `data/founding_atmospheric_ozone_panel_benchmark.json` · records=5 · median%=0.023822
 - Lean: `FSOT.Formal.FoundingAtmosphericOzonePanelPriors`
 - Public / portable anchors:
   - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_26 — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
 
 ### Founding_Cosmic_Dust_Panel
 
-- Benchmark: `data/founding_cosmic_dust_panel_benchmark.json` · records=24 · median%=0.000561846
+- Benchmark: `data/founding_cosmic_dust_panel_benchmark.json` · records=5 · median%=0.044121
 - Lean: `FSOT.Formal.FoundingCosmicDustPanelPriors`
 - Public / portable anchors:
   - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_20 — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
 
 ### Founding_Cosmic_Ray_Panel
 
-- Benchmark: `data/founding_cosmic_ray_panel_benchmark.json` · records=24 · median%=0.000561846
+- Benchmark: `data/founding_cosmic_ray_panel_benchmark.json` · records=5 · median%=0.021221
 - Lean: `FSOT.Formal.FoundingCosmicRayPanelPriors`
 - Public / portable anchors:
   - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_12 — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
 
 ### Founding_Galactic_Halo_Rotation_Panel
 
-- Benchmark: `data/founding_galactic_halo_rotation_panel_benchmark.json` · records=24 · median%=0.000561846
+- Benchmark: `data/founding_galactic_halo_rotation_panel_benchmark.json` · records=5 · median%=0.025123
 - Lean: `FSOT.Formal.FoundingGalacticHaloRotationPanelPriors`
 - Public / portable anchors:
   - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_13 — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
 
 ### Founding_Pulsar_Glitch_Panel
 
-- Benchmark: `data/founding_pulsar_glitch_panel_benchmark.json` · records=24 · median%=0.000561846
+- Benchmark: `data/founding_pulsar_glitch_panel_benchmark.json` · records=5 · median%=0.044923
 - Lean: `FSOT.Formal.FoundingPulsarGlitchPanelPriors`
 - Public / portable anchors:
   - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_34 — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
 
 ### Founding_Quantum_Vacuum_Panel
 
-- Benchmark: `data/founding_quantum_vacuum_panel_benchmark.json` · records=24 · median%=5.5479e-05
+- Benchmark: `data/founding_quantum_vacuum_panel_benchmark.json` · records=5 · median%=0.047775
 - Lean: `FSOT.Formal.FoundingQuantumVacuumPanelPriors`
 - Public / portable anchors:
   - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_11 — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
 
 ### Founding_White_Dwarf_Cooling_Panel
 
-- Benchmark: `data/founding_white_dwarf_cooling_panel_benchmark.json` · records=24 · median%=0.000561846
+- Benchmark: `data/founding_white_dwarf_cooling_panel_benchmark.json` · records=5 · median%=0.044923
 - Lean: `FSOT.Formal.FoundingWhiteDwarfCoolingPanelPriors`
 - Public / portable anchors:
   - **dataset**: GitHub OSS corpus data/founding_unmapped_laws_reference.json — https://github.com/data/founding_unmapped_laws_reference.json
   - **unresolved**: founding_law:law_23 — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
 
 ### Fractal_Constant_Recursion
 
@@ -2882,12 +2764,6 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **vendor_cache**: vendor/math_generator/benchmark_reports/hubble_report.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/math_generator/benchmark_reports/hubble_report.json
   - **dataset**: GitHub OSS corpus scripts/math_generator_benchmark_formula_eval.py — https://github.com/scripts/math_generator_benchmark_formula_eval.py
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
 
 ### HVAC_Thermal_Systems
 
@@ -2932,34 +2808,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Higgs_Branching
 
-- Benchmark: `data/higgs_branching_benchmark.json` · records=20 · median%=3.8622500000000005e-05
+- Benchmark: `data/higgs_branching_benchmark.json` · records=27 · median%=0.0
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-
-### Higgs_Mass
-
-- Benchmark: `data/higgs_mass_benchmark.json` · records=23 · median%=9.46770027700249e-05
-- Lean: `FSOT.Formal.HiggsMassPriors`
-- Public / portable anchors:
-  - **vendor_cache**: vendor/smiles/FSOT_SMILES_Lab_Dataset.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/smiles/FSOT_SMILES_Lab_Dataset.json
-  - **dataset**: GitHub OSS corpus scripts/higgs_mass_formula_eval.py — https://github.com/scripts/higgs_mass_formula_eval.py
-  - **dataset**: GitHub OSS corpus data/higgs_mass_reference_observables.json — https://github.com/data/higgs_mass_reference_observables.json
-  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
+  - **unresolved**: thesis_wave — Named in panel source; add explicit public URL if this is an external authority
 
 ### History
 
@@ -3544,24 +3396,22 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Mechanistic_Coupling
 
-- Benchmark: `data/mechanistic_coupling_benchmark.json` · records=115 · median%=0.0
+- Benchmark: `data/mechanistic_coupling_benchmark.json` · records=39 · median%=0.0073836551816993294
 - Lean: `FSOT.Formal.MechanisticCouplingPriors`
 - Public / portable anchors:
   - **vendor_cache**: mechanistic_coupling_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/mechanistic_coupling_manifest.yaml
   - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **unresolved**: domain_coupling_simulation — Named in panel source; add explicit public URL if this is an external authority
 
 ### Medical_Galactic_Orbital_Bridge
 
-- Benchmark: `data/medical_galactic_orbital_bridge_benchmark.json` · records=48 · median%=0.010717743028517818
+- Benchmark: `data/medical_galactic_orbital_bridge_benchmark.json` · records=48 · median%=0.010717743028516056
 - Lean: `FSOT.Formal.MedicalGalacticOrbitalBridgePriors`
 - Public / portable anchors:
   - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
   - **dataset**: GitHub OSS corpus data/adjacent_rung_coupling_benchmark.json — https://github.com/data/adjacent_rung_coupling_benchmark.json
   - **dataset**: GitHub OSS corpus data/adversarial_fractal_break_benchmark.json — https://github.com/data/adversarial_fractal_break_benchmark.json
   - **dataset**: GitHub OSS corpus data/biological_cuda_physarum_benchmark.json — https://github.com/data/biological_cuda_physarum_benchmark.json
-  - **dataset**: GitHub OSS corpus data/biophysics_public_panel_benchmark.json — https://github.com/data/biophysics_public_panel_benchmark.json
+  - **dataset**: GitHub OSS corpus data/biology_developmental_structural_depth_panel_benchmark.json — https://github.com/data/biology_developmental_structural_depth_panel_benchmark.json
   - **unresolved**: cross_scale_motif — Named in panel source; add explicit public URL if this is an external authority
 
 ### Metamaterial_Fluid_Design_Prereg_Scaffold
@@ -3668,68 +3518,19 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### NIST_CODATA_Constants
 
-- Benchmark: `data/nist_codata_constants_benchmark.json` · records=23 · median%=0.000561846
+- Benchmark: `data/nist_codata_constants_benchmark.json` · records=6 · median%=0.0
 - Ingest: `scripts/ingest_tier38_public_data.py`
 - Lean: `FSOT.Formal.NistCodataConstantsPriors`
 - Public / portable anchors:
-  - **api**: PubChem PUG REST — https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **unresolved**: : — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Particle Data Group Review of Particle Physics — https://pdg.lbl.gov/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **api**: arXiv API / metadata — https://arxiv.org/help/api/
-  - **api**: PubChem PUG REST — https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **api**: OpenAlex scholarly graph API — https://api.openalex.org/
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - … +6 more in JSON
+  - **ingest_script**: scripts/ingest_tier38_public_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier38_public_data.py
 
 ### NIST_DLMF_Special_Functions
 
-- Benchmark: `data/nist_dlmf_special_functions_benchmark.json` · records=23 · median%=0.000561846
+- Benchmark: `data/nist_dlmf_special_functions_benchmark.json` · records=5 · median%=0.001661
 - Lean: `FSOT.Formal.NistDlmfSpecialFunctionsPriors`
 - Public / portable anchors:
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: NIST CODATA recommended values (ASCII table) — https://physics.nist.gov/cuu/Constants/Table/allascii.txt
-  - **dataset**: Particle Data Group Review of Particle Physics — https://pdg.lbl.gov/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **api**: GBIF Occurrence API — https://api.gbif.org/v1/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **api**: PubChem PUG REST — https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **api**: PubChem PUG REST — https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - … +4 more in JSON
 
 ### NOAA_Coastal_Tides
 
@@ -3785,14 +3586,14 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Neural_Galactic_Orbital_Bridge
 
-- Benchmark: `data/neural_galactic_orbital_bridge_benchmark.json` · records=49 · median%=0.018002668701799784
+- Benchmark: `data/neural_galactic_orbital_bridge_benchmark.json` · records=49 · median%=0.018002668701796568
 - Lean: `FSOT.Formal.NeuralGalacticOrbitalBridgePriors`
 - Public / portable anchors:
   - **vendor_cache**: domain_coupling_simulation_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/domain_coupling_simulation_benchmark.json
+  - **dataset**: GitHub OSS corpus data/arxiv_brain_knowledge_panel_benchmark.json — https://github.com/data/arxiv_brain_knowledge_panel_benchmark.json
+  - **dataset**: GitHub OSS corpus data/arxiv_primitives_panel_benchmark.json — https://github.com/data/arxiv_primitives_panel_benchmark.json
   - **dataset**: GitHub OSS corpus data/arxiv_primitives_v14_benchmark.json — https://github.com/data/arxiv_primitives_v14_benchmark.json
   - **dataset**: GitHub OSS corpus data/binary_decoder_rendlesham_benchmark.json — https://github.com/data/binary_decoder_rendlesham_benchmark.json
-  - **dataset**: GitHub OSS corpus data/biological_cuda_physarum_benchmark.json — https://github.com/data/biological_cuda_physarum_benchmark.json
-  - **dataset**: GitHub OSS corpus data/biophysics_public_panel_benchmark.json — https://github.com/data/biophysics_public_panel_benchmark.json
   - **unresolved**: cross_scale_motif — Named in panel source; add explicit public URL if this is an external authority
 
 ### Neuroeconomics
@@ -3845,25 +3646,9 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Neuroscience
 
-- Benchmark: `data/neuroscience_fi_precision_benchmark.json` · records=20 · median%=0.0
+- Benchmark: `data/neuroscience_fi_precision_benchmark.json` · records=20 · median%=0.0473
 - Public / portable anchors:
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **api**: PubChem PUG REST — https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: NIST CODATA recommended values (ASCII table) — https://physics.nist.gov/cuu/Constants/Table/allascii.txt
-  - **api**: PubChem PUG REST — https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Planck Collaboration cosmological parameters — https://www.cosmos.esa.int/web/planck
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
+  - **unresolved**: multi_hero_benchmark — Named in panel source; add explicit public URL if this is an external authority
 
 ### Neuroscience_Connectomics_Depth_Panel
 
@@ -3951,7 +3736,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Observer_Channel_Derivation
 
-- Benchmark: `data/observer_channel_derivation_benchmark.json` · records=348 · median%=0.0525102820198906
+- Benchmark: `data/observer_channel_derivation_benchmark.json` · records=372 · median%=0.052510282019890844
 - Lean: `FSOT.Formal.ObserverChannelDerivationPriors`
 - Public / portable anchors:
   - **vendor_cache**: fsot_formula_spine.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_formula_spine.yaml
@@ -4066,39 +3851,6 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **unresolved**: MAST_em — Named in panel source; add explicit public URL if this is an external authority
   - **ingest_script**: scripts/ingest_tier87_scientific_expansion.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier87_scientific_expansion.py
 
-### Orbital_Mechanics
-
-- Benchmark: `data/orbital_mechanics_benchmark.json` · records=23 · median%=0.000561846
-- Ingest: `scripts/ingest_planetary_jpl.py`
-- Lean: `FSOT.Formal.OrbitalMechanicsPriors`
-- Public / portable anchors:
-  - **api**: JPL Solar System Dynamics / Horizons — https://ssd.jpl.nasa.gov/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: NIST CODATA recommended values (ASCII table) — https://physics.nist.gov/cuu/Constants/Table/allascii.txt
-  - **api**: PubChem PUG REST — https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **api**: JPL Horizons system — https://ssd.jpl.nasa.gov/horizons/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: Planck Collaboration cosmological parameters — https://www.cosmos.esa.int/web/planck
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - … +1 more in JSON
-
 ### Overflow_Carry_Emergence_Panel
 
 - Benchmark: `data/overflow_carry_emergence_panel_benchmark.json` · records=29 · median%=0.009504
@@ -4109,35 +3861,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### PDG_Particle_Properties
 
-- Benchmark: `data/pdg_particle_properties_benchmark.json` · records=23 · median%=0.000561846
+- Benchmark: `data/pdg_particle_properties_benchmark.json` · records=12 · median%=0.041994
 - Lean: `FSOT.Formal.PdgParticlePropertiesPriors`
 - Public / portable anchors:
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: NIST CODATA recommended values (ASCII table) — https://physics.nist.gov/cuu/Constants/Table/allascii.txt
   - **dataset**: Particle Data Group Review of Particle Physics — https://pdg.lbl.gov/
-  - **literature**: SH0ES / local distance ladder H0 (Riess et al. series) — https://ui.adsabs.harvard.edu/
-  - **unresolved**: 4 — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **api**: arXiv API / metadata — https://arxiv.org/help/api/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **api**: World Bank Open Data Indicators API — https://api.worldbank.org/v2/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **api**: GBIF Occurrence API — https://api.gbif.org/v1/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **dataset**: Minor Planet Center Orbit Database (MPCORB) — https://minorplanetcenter.net/data
-  - **dataset**: Minor Planet Center data services — https://minorplanetcenter.net/
-  - **api**: PubChem PUG REST — https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - … +5 more in JSON
 
 ### Paleoclimate
 
@@ -4191,24 +3918,6 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **dataset**: GitHub OSS corpus data/adjacent_rung_coupling_benchmark.json — https://github.com/data/adjacent_rung_coupling_benchmark.json
   - **dataset**: GitHub OSS corpus data/astrophysical_structure_crosswalk_benchmark.json — https://github.com/data/astrophysical_structure_crosswalk_benchmark.json
   - **dataset**: GitHub OSS corpus data/bibliography_lean_corpus_benchmark.json — https://github.com/data/bibliography_lean_corpus_benchmark.json
-
-### Particle_Physics
-
-- Benchmark: `data/particle_physics_benchmark.json` · records=22 · median%=0.0003086625
-- Lean: `FSOT.Formal.ParticlePhysicsPriors`
-- Public / portable anchors:
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: CRC / Riddick organic solvents handbook class — https://www.routledge.com/
-  - **unresolved**: Kittel / CRC — Named in panel source; add explicit public URL if this is an external authority
 
 ### Particle_Physics
 
@@ -4313,12 +4022,11 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Portable_Clone_Verify
 
-- Benchmark: `data/portable_clone_verify_benchmark.json` · records=289 · median%=0.0
+- Benchmark: `data/portable_clone_verify_benchmark.json` · records=419 · median%=0.0
 - Lean: `FSOT.Formal.PortableCloneVerifyPriors`
 - Public / portable anchors:
   - **vendor_cache**: external_data_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/external_data_manifest.yaml
   - **vendor_cache**: extension_domains_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/extension_domains_manifest.yaml
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
   - **vendor_cache**: vendor/smiles/FSOT_SMILES_Lab_Dataset.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/smiles/FSOT_SMILES_Lab_Dataset.json
   - **vendor_cache**: vendor/evolution/biological_mt_operons.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/evolution/biological_mt_operons.json
@@ -4329,6 +4037,10 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **vendor_cache**: vendor/trinary_os/target — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os/target
   - **vendor_cache**: vendor/species/fsot_species_catalog.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/species/fsot_species_catalog.json
   - **vendor_cache**: vendor/igem/igem_parts_registry.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/igem/igem_parts_registry.json
+  - **dataset**: GitHub OSS corpus vendor/reference_anchors — https://github.com/vendor/reference_anchors
+  - **vendor_cache**: vendor/fsot_aggregate/FSOT_UNIFIED.db — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/fsot_aggregate/FSOT_UNIFIED.db
+  - **vendor_cache**: vendor/neuron_cohort/cells.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/neuron_cohort/cells.json
+  - **vendor_cache**: vendor/knowledge_base/kb_portable_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/knowledge_base/kb_portable_summary.json
   - **vendor_cache**: vendor/math_generator/benchmark_reports — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/math_generator/benchmark_reports
   - **vendor_cache**: vendor/trinary_os/isa/fsotb_opcode_registry.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_os/isa/fsotb_opcode_registry.json
   - **vendor_cache**: vendor/igem/fastas — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/igem/fastas
@@ -4338,9 +4050,6 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **dataset**: GitHub OSS corpus vendor/tokenization — https://github.com/vendor/tokenization
   - **vendor_cache**: vendor/trinary_hardware/motif_influence_profile_stable.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/trinary_hardware/motif_influence_profile_stable.json
   - **vendor_cache**: vendor/intrinsic_llm/benchmark_results_final.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/intrinsic_llm/benchmark_results_final.json
-  - **dataset**: GitHub OSS corpus vendor/physarum — https://github.com/vendor/physarum
-  - **vendor_cache**: vendor/arxiv_primitives/v14_run_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/arxiv_primitives/v14_run_summary.json
-  - **dataset**: GitHub OSS corpus vendor/formula_corpus_cnc — https://github.com/vendor/formula_corpus_cnc
   - … +17 more in JSON
 
 ### Prediction_Rederivation
@@ -4364,15 +4073,15 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Preregistered_Outcome_Tracking
 
-- Benchmark: `data/preregistered_outcome_tracking_benchmark.json` · records=53 · median%=0.0
+- Benchmark: `data/preregistered_outcome_tracking_benchmark.json` · records=72 · median%=0.0
 - Lean: `FSOT.Formal.PreregisteredOutcomeTrackingPriors`
 - Public / portable anchors:
-  - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
+  - **vendor_cache**: C:\Users\damia\Desktop\FSOT-2.1-Lean\data\preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/preregistered_predictions_manifest.yaml
   - **vendor_cache**: preregistered_predictions_verification_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_verification_scaffold_benchmark.json
 
 ### Preregistered_Predictions
 
-- Benchmark: `data/preregistered_predictions_benchmark.json` · records=27 · median%=0.020098237848408945
+- Benchmark: `data/preregistered_predictions_benchmark.json` · records=35 · median%=0.02009823784840936
 - Lean: `FSOT.Formal.PreregisteredPredictionsPriors`
 - Public / portable anchors:
   - **vendor_cache**: preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_manifest.yaml
@@ -4410,16 +4119,12 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Proof_Ledger_Closure_Spine
 
-- Benchmark: `data/proof_ledger_closure_spine_benchmark.json` · records=24 · median%=0.0
+- Benchmark: `data/proof_ledger_closure_spine_benchmark.json` · records=17 · median%=0.0
 - Lean: `FSOT.Formal.ProofLedgerClosureSpinePriors`
 - Public / portable anchors:
   - **vendor_cache**: proof_ledger.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/proof_ledger.yaml
   - **vendor_cache**: fsot_verification_progress.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_verification_progress.yaml
   - **vendor_cache**: certificate.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/certificate.json
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
 
 ### Proton_Lean_Route_Credibility
 
@@ -4695,23 +4400,6 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **ingest_script**: scripts/ingest_tier84_scientific_expansion.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_tier84_scientific_expansion.py
 
-### Rust_Lean_Bridge
-
-- Benchmark: `data/rust_lean_bridge_benchmark.json` · records=24 · median%=0.0
-- Lean: `FSOT.Formal.RustLeanBridgePriors`
-- Public / portable anchors:
-  - **vendor_cache**: vendor/rust_lean_bridge/rust_lean_bridge_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/rust_lean_bridge/rust_lean_bridge_summary.json
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: BRENDA enzyme database — https://www.brenda-enzymes.org/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-
 ### Rust_Lean_Bridge_Panel
 
 - Benchmark: `data/rust_lean_bridge_panel_benchmark.json` · records=21 · median%=0.0
@@ -4733,23 +4421,13 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### SH0ES_Refined
 
-- Benchmark: `data/sh0es_refined_benchmark.json` · records=20 · median%=0.0
+- Benchmark: `data/sh0es_refined_benchmark.json` · records=7 · median%=0.0
 - Ingest: `scripts/ingest_anomaly_public_data.py`
 - Lean: `FSOT.Formal.SH0ESRefinedPriors`
 - Public / portable anchors:
   - **literature**: SH0ES / local distance ladder H0 (Riess et al. series) — https://ui.adsabs.harvard.edu/
   - **dataset**: GitHub OSS corpus data/sh0es_host_coordinates.json — https://github.com/data/sh0es_host_coordinates.json
   - **dataset**: GitHub OSS corpus data/sector_h0_seed.json — https://github.com/data/sector_h0_seed.json
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **ingest_script**: scripts/ingest_anomaly_public_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_anomaly_public_data.py
 
 ### SIMBAD_Stellar_Identity_Deep
@@ -5117,15 +4795,6 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **dataset**: GitHub OSS corpus scripts/symbolic_archetype_lib.py — https://github.com/scripts/symbolic_archetype_lib.py
   - **ingest_script**: scripts/ingest_fringe_desktop_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_fringe_desktop_data.py
 
-### TOE_Dynamics
-
-- Benchmark: `data/toe_dynamics_benchmark.json` · records=24 · median%=0.0
-- Lean: `FSOT.Formal.Domains`
-- Public / portable anchors:
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-
 ### Term3_Acoustic_Bleed_Depth
 
 - Benchmark: `data/term3_acoustic_bleed_depth_benchmark.json` · records=23 · median%=0.008381497018408523
@@ -5184,22 +4853,12 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### Theory_Completeness_Spine
 
-- Benchmark: `data/theory_completeness_spine_benchmark.json` · records=24 · median%=0.0
+- Benchmark: `data/theory_completeness_spine_benchmark.json` · records=6 · median%=0.0
 - Lean: `FSOT.Formal.TheoryCompletenessSpinePriors`
 - Public / portable anchors:
   - **unresolved**: formula_branching_fractal — Named in panel source; add explicit public URL if this is an external authority
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **unresolved**: cve_codon_hole_falsification — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
 
 ### Tier_93_Dual_Wave_Spine
 
@@ -5286,64 +4945,34 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### ToE_Claim_Certificate_Bundle
 
-- Benchmark: `data/toe_claim_certificate_bundle_benchmark.json` · records=24 · median%=0.0
+- Benchmark: `data/toe_claim_certificate_bundle_benchmark.json` · records=7 · median%=0.0
 - Lean: `FSOT.Formal.ToEClaimCertificateBundlePriors`
 - Public / portable anchors:
   - **vendor_cache**: fsot_verification_progress.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/fsot_verification_progress.yaml
   - **vendor_cache**: FSOT_VERIFIED_SCOPE.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/FSOT_VERIFIED_SCOPE.yaml
   - **vendor_cache**: scientific_domain_expansion_map.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/scientific_domain_expansion_map.json
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
 
 ### ToE_Gap_Closure_Spine
 
-- Benchmark: `data/toe_gap_closure_spine_benchmark.json` · records=21 · median%=0.0
+- Benchmark: `data/toe_gap_closure_spine_benchmark.json` · records=7 · median%=0.0
 - Lean: `FSOT.Formal.ToEGapClosureSpinePriors`
 - Public / portable anchors:
   - **unresolved**: tier_k_gap_closure_pillars — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **unresolved**: Fractal_Constant_Recursion — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: Preregistered_Predictions — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: Portable_Clone_Verify — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: Observer_Channel_Derivation — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: Adversarial_Fractal_Break_Tests — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: BRENDA enzyme database — https://www.brenda-enzymes.org/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
 
 ### ToE_Unification_Spine
 
-- Benchmark: `data/toe_unification_spine_benchmark.json` · records=24 · median%=3.8622500000000005e-05
+- Benchmark: `data/toe_unification_spine_benchmark.json` · records=8 · median%=0.0
 - Lean: `FSOT.Formal.ToEUnificationSpinePriors`
 - Public / portable anchors:
   - **unresolved**: toe_gap_closure_spine — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: theory_completeness_spine — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: domain_orbital_predictions — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **unresolved**: toe_unification_metrics — Named in panel source; add explicit public URL if this is an external authority
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Bard, Parsons & Jordan (1985) — Standard Potentials in Aqueous Solution — https://www.routledge.com/
-  - **literature**: Long & Greenwood (1997) — materials / thermoelectric class reference — https://ui.adsabs.harvard.edu/
-  - **literature**: Snyder & Toberer, Nature Materials 7, 105 (2008) — https://doi.org/10.1038/nmat2090
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
-  - **literature**: Anderson (1966) — localization / condensed-matter classic — https://ui.adsabs.harvard.edu/
-  - **literature**: Andersen et al., J. Phys. Chem. Ref. Data 28 (1999) — https://www.nist.gov/pml/journal-physical-and-chemical-reference-data
-  - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
 
 ### Tokenization_Live_Panel
 
@@ -5614,7 +5243,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 
 ### World_Bank_Development
 
-- Benchmark: `data/world_bank_development_benchmark.json` · records=420 · median%=0.02584
+- Benchmark: `data/world_bank_development_benchmark.json` · records=395 · median%=0.02584
 - Ingest: `scripts/ingest_tier38_public_data.py`
 - Lean: `FSOT.Formal.WorldBankDevelopmentPriors`
 - Public / portable anchors:
@@ -5823,6 +5452,15 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **unresolved**: GFZ_GravIS_Greenland_total — Named in panel source; add explicit public URL if this is an external authority
 
+### higgs_mass_benchmark
+
+- Benchmark: `data/higgs_mass_benchmark.json` · records=9 · median%=0.018987449514135373
+- Public / portable anchors:
+  - **vendor_cache**: vendor/smiles/FSOT_SMILES_Lab_Dataset.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/smiles/FSOT_SMILES_Lab_Dataset.json
+  - **dataset**: GitHub OSS corpus scripts/higgs_mass_formula_eval.py — https://github.com/scripts/higgs_mass_formula_eval.py
+  - **dataset**: GitHub OSS corpus data/higgs_mass_reference_observables.json — https://github.com/data/higgs_mass_reference_observables.json
+  - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
+
 ### hydrology_benchmark
 
 - Benchmark: `data/hydrology_benchmark.json` · records=957 · median%=0.0
@@ -5939,6 +5577,12 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **unresolved**: smiles_lab — Named in panel source; add explicit public URL if this is an external authority
   - **unresolved**: biology_strict_lab — Named in panel source; add explicit public URL if this is an external authority
 
+### orbital_mechanics_benchmark
+
+- Benchmark: `data/orbital_mechanics_benchmark.json` · records=9 · median%=0.106141
+- Public / portable anchors:
+  - **api**: JPL Solar System Dynamics / Horizons — https://ssd.jpl.nasa.gov/
+
 ### pharmacology_benchmark
 
 - Benchmark: `data/pharmacology_benchmark.json` · records=120 · median%=0.0011715432153059484
@@ -5964,6 +5608,12 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/quantum_materials_benchmark.json` · records=168 · median%=0.024318115591995593
 - Public / portable anchors:
   - **software**: FSOT scalar authority (pin D1D38A) — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/fsot_compute.py
+
+### rust_lean_bridge_benchmark
+
+- Benchmark: `data/rust_lean_bridge_benchmark.json` · records=9 · median%=0.0
+- Public / portable anchors:
+  - **vendor_cache**: vendor/rust_lean_bridge/rust_lean_bridge_summary.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/vendor/rust_lean_bridge/rust_lean_bridge_summary.json
 
 ### seismology_benchmark
 

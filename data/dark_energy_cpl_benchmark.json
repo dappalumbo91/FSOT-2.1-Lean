@@ -1,39 +1,36 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:48:54.804560+00:00",
+  "generated_at": "2026-08-05T14:36:00.122657+00:00",
   "domain": "Dark_Energy_CPL",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "data/dark_energy_cpl_reference.json",
     "vendor/fsot_compute.py",
-    "scripts/dark_energy_dual_readout_lib.py",
-    "c_thin_depth_pass",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "scripts/dark_energy_dual_readout_lib.py"
   ],
   "maps_to_lean": [
     "cosmological",
     "particle"
   ],
   "D_eff": 24,
-  "record_count": 24,
-  "observable_count": 24,
-  "scalar_record_count": 13,
+  "record_count": 14,
+  "observable_count": 14,
+  "scalar_record_count": 3,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0,
-  "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.000595,
+  "median_error_pct": 0.280515,
+  "pooled_median_error_pct": 0.280515,
+  "headline_median_error_pct": 0.280515,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Dark_Energy_CPL_depth": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "sector model without seed-closed FSOT formula"
+      "survey_constraint_panel": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No unified w0-wa prediction before measurement"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_seed_formula_vs_baseline": true
+      "channel_cpl_vs_baseline": true
     }
   },
   "records": [
@@ -41,19 +38,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 0.280515,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 24
+      "error_pct": 0.280515,
+      "observable_count": 14
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_seed_formula",
-      "name": "Dark_Energy_CPL_depth",
-      "computed": 0.000595,
+      "property": "cpl",
+      "name": "survey_constraint_panel",
+      "computed": 0.280515,
       "measured": 0.0,
-      "error_pct": 0.000595,
-      "observable_count": 24
+      "error_pct": 0.280515,
+      "observable_count": 3
     }
   ],
   "material_records": [
@@ -67,22 +64,7 @@
       "formula": "\u2212P_new\u00b7\u03c0/G",
       "eval_kind": "live_formula",
       "comparison_class": "cmb_sector_prediction",
-      "reference": "Planck2018",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "cmb sector w0",
-      "scientific_measurement": {
-        "delta": 1.9e-05,
-        "delta_pct": 0.001845,
-        "effective_error_pct": 0.001845,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0006,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 3.0,
-        "reference": "Planck2018"
-      }
+      "reference": "Planck2018"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -94,22 +76,7 @@
       "formula": "w0_cmb\u00b7(1 \u2212 G/\u03c0)",
       "eval_kind": "live_formula",
       "comparison_class": "bao_sector_prediction",
-      "reference": "DESI_DR2",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "bao sector w0",
-      "scientific_measurement": {
-        "delta": -0.002679,
-        "delta_pct": 0.368501,
-        "effective_error_pct": 0.368501,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.1228,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 3.0,
-        "reference": "DESI_DR2"
-      }
+      "reference": "DESI_DR2"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -122,22 +89,7 @@
       "eval_kind": "preregistered_certificate",
       "comparison_class": "preregistered_falsifiable",
       "reference": "FSOT_P45c",
-      "note": "CMB-sector preregistration anchor \u2014 BAO lane scored separately",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "cmb sector wa",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 3.0,
-        "reference": "FSOT_P45c"
-      }
+      "note": "CMB-sector preregistration anchor \u2014 BAO lane scored separately"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -149,22 +101,7 @@
       "formula": "wa_cmb + w0_bao\u00b7(G/\u03c0)",
       "eval_kind": "live_formula",
       "comparison_class": "bao_sector_prediction",
-      "reference": "DESI_DR2",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "bao sector wa",
-      "scientific_measurement": {
-        "delta": -0.002856,
-        "delta_pct": 0.28055,
-        "effective_error_pct": 0.28055,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0935,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 3.0,
-        "reference": "DESI_DR2"
-      }
+      "reference": "DESI_DR2"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -179,23 +116,7 @@
       "readout_lane": "cmb",
       "formula": "\u2212P_new\u00b7\u03c0/G",
       "status": "active_measurement",
-      "eval_kind": "w0_live",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "Planck2018 w0",
-      "scientific_measurement": {
-        "delta": 1.9e-05,
-        "delta_pct": 0.001845,
-        "effective_error_pct": 3.1e-05,
-        "comparison_kind": "sigma_distance",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 3.1e-05,
-        "reference": "DESI DR2 BAO + Planck CMB",
-        "observable_status": "dark_energy_open"
-      }
+      "eval_kind": "w0_live"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -212,22 +133,7 @@
       "reference": "Planck2018_table2_base_LCDM_ext",
       "status": "preregistered_falsifiable",
       "eval_kind": "preregistered_falsifiable",
-      "comparison_class": "preregistered_falsifiable",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "Planck2018 wa",
-      "scientific_measurement": {
-        "delta": -0.40811,
-        "delta_pct": 102.0275,
-        "effective_error_pct": 0.051015,
-        "comparison_kind": "preregistered_falsifiable",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.051014,
-        "reference": "Planck2018_table2_base_LCDM_ext"
-      }
+      "comparison_class": "preregistered_falsifiable"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -242,23 +148,7 @@
       "readout_lane": "blended",
       "formula": "mean(CMB,BAO) w0",
       "status": "active_measurement",
-      "eval_kind": "w0_live",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "DES Y3 w0",
-      "scientific_measurement": {
-        "delta": 0.09817,
-        "delta_pct": 10.037832,
-        "effective_error_pct": 0.064585,
-        "comparison_kind": "sigma_distance",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.064585,
-        "reference": "DESI DR2 BAO + Planck CMB",
-        "observable_status": "dark_energy_open"
-      }
+      "eval_kind": "w0_live"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -275,22 +165,7 @@
       "reference": "DES_Y3_2022_SN_BAO_combined",
       "status": "preregistered_falsifiable",
       "eval_kind": "preregistered_falsifiable",
-      "comparison_class": "preregistered_falsifiable",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "DES Y3 wa",
-      "scientific_measurement": {
-        "delta": -0.634483,
-        "delta_pct": 226.601071,
-        "effective_error_pct": 0.102335,
-        "comparison_kind": "preregistered_falsifiable",
-        "within_literature_band": false,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.102336,
-        "reference": "DES_Y3_2022_SN_BAO_combined"
-      }
+      "comparison_class": "preregistered_falsifiable"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -305,23 +180,7 @@
       "readout_lane": "cmb",
       "formula": "\u2212P_new\u00b7\u03c0/G",
       "status": "active_measurement",
-      "eval_kind": "w0_live",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "PantheonPlus w0",
-      "scientific_measurement": {
-        "delta": -0.022981,
-        "delta_pct": 2.282125,
-        "effective_error_pct": 0.025535,
-        "comparison_kind": "sigma_distance",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.025535,
-        "reference": "DESI DR2 BAO + Planck CMB",
-        "observable_status": "dark_energy_open"
-      }
+      "eval_kind": "w0_live"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -338,22 +197,7 @@
       "reference": "PantheonPlus_2022_flat_prior",
       "status": "preregistered_falsifiable",
       "eval_kind": "preregistered_falsifiable",
-      "comparison_class": "preregistered_falsifiable",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "PantheonPlus wa",
-      "scientific_measurement": {
-        "delta": -0.80811,
-        "delta_pct": 100.0,
-        "effective_error_pct": 0.08081,
-        "comparison_kind": "preregistered_falsifiable",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.080811,
-        "reference": "PantheonPlus_2022_flat_prior"
-      }
+      "comparison_class": "preregistered_falsifiable"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -368,23 +212,7 @@
       "readout_lane": "cmb",
       "formula": "\u2212P_new\u00b7\u03c0/G",
       "status": "active_measurement",
-      "eval_kind": "w0_live",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "DESI 2024 BAO preview w0",
-      "scientific_measurement": {
-        "delta": -0.009981,
-        "delta_pct": 0.978529,
-        "effective_error_pct": 0.012477,
-        "comparison_kind": "sigma_distance",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.012477,
-        "reference": "DESI DR2 BAO + Planck CMB",
-        "observable_status": "dark_energy_open"
-      }
+      "eval_kind": "w0_live"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -401,22 +229,7 @@
       "reference": "DESI_2024_dr1_bao_preview",
       "status": "preregistered_falsifiable",
       "eval_kind": "preregistered_falsifiable",
-      "comparison_class": "preregistered_falsifiable",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "DESI 2024 BAO preview wa",
-      "scientific_measurement": {
-        "delta": -0.70811,
-        "delta_pct": 708.11,
-        "effective_error_pct": 0.10116,
-        "comparison_kind": "preregistered_falsifiable",
-        "within_literature_band": false,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.101159,
-        "reference": "DESI_2024_dr1_bao_preview"
-      }
+      "comparison_class": "preregistered_falsifiable"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -431,23 +244,7 @@
       "readout_lane": "bao",
       "formula": "w0_cmb\u00b7(1 \u2212 G/\u03c0)",
       "status": "active_measurement",
-      "eval_kind": "w0_live",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "DESI DR2 w0",
-      "scientific_measurement": {
-        "delta": -0.002679,
-        "delta_pct": 0.368501,
-        "effective_error_pct": 0.004321,
-        "comparison_kind": "sigma_distance",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.004321,
-        "reference": "DESI DR2 BAO + Planck CMB",
-        "observable_status": "dark_energy_open"
-      }
+      "eval_kind": "w0_live"
     },
     {
       "lab": "dark_energy_cpl_lab",
@@ -464,156 +261,11 @@
       "reference": "arxiv_2503.14738_DESI_DR2_BAO_Planck_w0waCDM",
       "status": "preregistered_falsifiable",
       "eval_kind": "preregistered_falsifiable",
-      "comparison_class": "preregistered_falsifiable",
-      "domain_display_name": "dark energy cpl",
-      "display_name": "DESI DR2 wa",
-      "scientific_measurement": {
-        "delta": -0.002856,
-        "delta_pct": 0.28055,
-        "effective_error_pct": 0.000595,
-        "comparison_kind": "preregistered_falsifiable",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.000595,
-        "reference": "arxiv_2503.14738_DESI_DR2_BAO_Planck_w0waCDM"
-      }
-    },
-    {
-      "lab": "dark_energy_cpl_fsot_lab",
-      "property": "pH_water",
-      "name": "276b06aa421154fe",
-      "computed": 7.000000000000001,
-      "measured": 7.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ ( - 4 ) + phi ^ 4",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "dark_energy_cpl_fsot_lab",
-      "property": "CO\u2082",
-      "name": "4997f65cea526a23",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "dark_energy_cpl_fsot_lab",
-      "property": "BF\u2083",
-      "name": "964b34bd5d316085",
-      "computed": 119.99999999999999,
-      "measured": 120.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "dark_energy_cpl_fsot_lab",
-      "property": "SF\u2086",
-      "name": "3dd4abfdff6593a5",
-      "computed": 90.0,
-      "measured": 90.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi / 2 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "dark_energy_cpl_fsot_lab",
-      "property": "XeF\u2082",
-      "name": "d5f905492d3792d4",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "dark_energy_cpl_fsot_lab",
-      "property": "BeCl\u2082",
-      "name": "d100218fdd574f15",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "dark_energy_cpl_fsot_lab",
-      "property": "H\u207a/H\u2082",
-      "name": "0d36931a8021c0b6",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi - pi",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Bard, Parsons & Jordan (1985)"
-    },
-    {
-      "lab": "dark_energy_cpl_fsot_lab",
-      "property": "alpha_Fe",
-      "name": "a3464d3321da787e",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ 2 - phi - 1",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Long & Greenwood (1997)"
-    },
-    {
-      "lab": "dark_energy_cpl_fsot_lab",
-      "property": "Bi2Te3",
-      "name": "dce748561902febf",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "PHI ^ 2 - PHI ^ 1",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
-    },
-    {
-      "lab": "dark_energy_cpl_fsot_lab",
-      "property": "R_N",
-      "name": "07b3e073b02aa441",
-      "computed": 0.7500001632454711,
-      "measured": 0.75,
-      "error_pct": 2.1766e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "G ^ ( - 7 ) - ln ( 3 )",
-      "fsot_domain": "Cosmology",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
+      "comparison_class": "preregistered_falsifiable"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
+    "scalar_pooled_median_error_pct": 0.280515,
     "max_scalar_error_pct": 0.368503,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -623,5 +275,82 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 51,
+  "dual_readout": {
+    "w0_cmb": -1.0299812921372637,
+    "w0_cmb_formula": "\u2212P_new\u00b7\u03c0/G",
+    "wa_cmb": -0.808109771581081,
+    "wa_cmb_formula": "\u2212\u03b3\u00b7e\u00b7\u03c6/\u03c0",
+    "w0_bao": -0.7296790154668923,
+    "w0_bao_formula": "w0_cmb\u00b7(1 \u2212 G/\u03c0)",
+    "wa_bao": -1.0208556449829258,
+    "wa_bao_formula": "wa_cmb + w0_bao\u00b7(G/\u03c0)",
+    "bao_bleed_factor": 0.7084390959691812,
+    "g_over_pi": 0.2915609040308188,
+    "mechanism": "CMB sound-horizon vs BAO acoustic-scale readout (Catalan/\u03c0 bleed)"
+  },
+  "fsot_w0_cmb": -1.0299812921372637,
+  "fsot_w0_bao": -0.7296790154668923,
+  "fsot_wa_cmb": -0.808109771581081,
+  "fsot_wa_bao": -1.0208556449829258,
+  "preregistered": true,
+  "open_predictions": [
+    {
+      "survey": "Planck2018",
+      "readout_lane": "cmb",
+      "fsot_w0": -1.029981,
+      "fsot_wa": -0.80811,
+      "published_w0": -1.03,
+      "published_wa": -0.4,
+      "w0_sigma_distance": 0.0006,
+      "wa_sigma_distance": 1.0203,
+      "status": "dual_readout_vs_active_survey"
+    },
+    {
+      "survey": "DES_Y3",
+      "readout_lane": "blended",
+      "fsot_w0": -0.87983,
+      "fsot_wa": -0.914483,
+      "published_w0": -0.978,
+      "published_wa": -0.28,
+      "w0_sigma_distance": 1.2917,
+      "wa_sigma_distance": 2.0467,
+      "status": "dual_readout_vs_active_survey"
+    },
+    {
+      "survey": "PantheonPlus",
+      "readout_lane": "cmb",
+      "fsot_w0": -1.029981,
+      "fsot_wa": -0.80811,
+      "published_w0": -1.007,
+      "published_wa": 0.0,
+      "w0_sigma_distance": 0.5107,
+      "wa_sigma_distance": 1.6162,
+      "status": "dual_readout_vs_active_survey"
+    },
+    {
+      "survey": "DESI_2024_BAO_preview",
+      "readout_lane": "cmb",
+      "fsot_w0": -1.029981,
+      "fsot_wa": -0.80811,
+      "published_w0": -1.02,
+      "published_wa": -0.1,
+      "w0_sigma_distance": 0.2495,
+      "wa_sigma_distance": 2.0232,
+      "status": "dual_readout_vs_active_survey"
+    },
+    {
+      "survey": "DESI_DR2",
+      "readout_lane": "bao",
+      "fsot_w0": -0.729679,
+      "fsot_wa": -1.020856,
+      "published_w0": -0.727,
+      "published_wa": -1.018,
+      "w0_sigma_distance": 0.0864,
+      "wa_sigma_distance": 0.0119,
+      "status": "dual_readout_vs_active_survey"
+    }
+  ],
+  "cpl_status": "GREEN"
 }

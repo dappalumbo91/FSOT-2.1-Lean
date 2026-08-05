@@ -1,6 +1,6 @@
 # Founding 35 Laws — FSOT 2.1 Audit
 
-*Generated: 2026-07-15T00:21:16.815204+00:00*
+*Generated: 2026-08-05T14:35:48.997003+00:00*
 
 Founding-era accuracy percentages are never trusted without individual FSOT 2.1 strict_empirical or extension panel verification.
 
@@ -10,7 +10,7 @@ Founding-era accuracy percentages are never trusted without individual FSOT 2.1 
 |--------|-------|
 | Laws audited | 35 |
 | Strict empirical corpus | 7941 |
-| Extension domains | 347 |
+| Extension domains | 371 |
 
 ### Status counts
 
@@ -137,9 +137,9 @@ Founding-era accuracy percentages are never trusted without individual FSOT 2.1 
 - **Founding accuracy trusted:** False
 - **Recommendation:** Cite extension benchmark; run panel build if stale.
 - **Extension panels:**
+  - `Quantum_Mechanics_Entanglement_Depth_Panel` → FSOT.Formal.QuantumMechanicsEntanglementDepthPanelPriors
   - `Compactification_Ladder` → FSOT.Formal.CompactificationLadderPriors
   - `Condensed_Matter_Superconductivity_Depth_Panel` → FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors
-  - `Founding_Quantum_Vacuum_Panel` → FSOT.Formal.FoundingQuantumVacuumPanelPriors
 
 ### law_15: Intergalactic Magnetic Field Anomaly
 - **Audit status:** `verified_extension_panel`
@@ -196,9 +196,9 @@ Founding-era accuracy percentages are never trusted without individual FSOT 2.1 
 - **Founding accuracy trusted:** False
 - **Recommendation:** Cite extension benchmark; run panel build if stale.
 - **Extension panels:**
+  - `Quantum_Mechanics_Entanglement_Depth_Panel` → FSOT.Formal.QuantumMechanicsEntanglementDepthPanelPriors
   - `Compactification_Ladder` → FSOT.Formal.CompactificationLadderPriors
   - `Condensed_Matter_Superconductivity_Depth_Panel` → FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors
-  - `Domain_Coupling_Simulation_Refresh_Panel` → FSOT.Formal.DomainCouplingSimulationRefreshPanelPriors
 
 ### law_22: Exoplanet Orbital Resonance Anomaly
 - **Audit status:** `verified_extension_panel`
@@ -230,9 +230,9 @@ Founding-era accuracy percentages are never trusted without individual FSOT 2.1 
 - **Founding accuracy trusted:** False
 - **Recommendation:** Cite extension benchmark; run panel build if stale.
 - **Extension panels:**
+  - `Arxiv_Brain_Knowledge_Panel` → FSOT.Formal.ArxivBrainKnowledgePanelPriors
   - `Consciousness_Genetics_Coupling_Panel` → FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors
   - `Consciousness_Species_Multi_Panel` → FSOT.Formal.ConsciousnessSpeciesMultiPanelPriors
-  - `Energy_Neural_Orbital_Bridge` → FSOT.Formal.EnergyNeuralOrbitalBridgePriors
 
 ### law_26: Atmospheric Ozone Concentration Anomaly
 - **Audit status:** `verified_extension_panel`
@@ -290,9 +290,9 @@ Founding-era accuracy percentages are never trusted without individual FSOT 2.1 
 - **Founding accuracy trusted:** False
 - **Recommendation:** Cite extension benchmark; run panel build if stale.
 - **Extension panels:**
+  - `Quantum_Mechanics_Entanglement_Depth_Panel` → FSOT.Formal.QuantumMechanicsEntanglementDepthPanelPriors
   - `Compactification_Ladder` → FSOT.Formal.CompactificationLadderPriors
   - `Condensed_Matter_Superconductivity_Depth_Panel` → FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors
-  - `Founding_Quantum_Vacuum_Panel` → FSOT.Formal.FoundingQuantumVacuumPanelPriors
 
 ### law_32: Ecosystem Biodiversity Index Anomaly
 - **Audit status:** `verified_extension_panel`

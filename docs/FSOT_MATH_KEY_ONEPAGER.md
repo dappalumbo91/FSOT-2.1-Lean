@@ -42,10 +42,10 @@ Factors: `scripts/fsot_api_predict_lib.py`. Engine: `vendor/fsot_compute.py`.
 |----------|------:|
 | Pin | D1D38A (match=True) |
 | Atlas domains | 403 |
-| Green benchmarks | 432/432 |
-| Scalar-record envelope | 61,335 (envelope) |
+| Green benchmarks | 430/432 |
+| Scalar-record envelope | 61,445 (envelope) |
 | MPCORB objects · residual | 1,554,101 · 0.023% |
-| Scientific catalog obligations | 2025 |
+| Scientific catalog obligations | 2040 |
 | π/e inventory decimal-verified | 68/68 |
 | Multiprover overall_ok | True |
 

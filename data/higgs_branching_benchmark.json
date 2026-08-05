@@ -1,53 +1,307 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:48:52.048962+00:00",
+  "generated_at": "2026-08-05T14:42:15.762822+00:00",
   "domain": "Higgs_Branching",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
-  "source": [
-    "fsot_proper_densify_remediation"
-  ],
-  "maps_to_lean": [
-    "particle"
-  ],
-  "D_eff": 12,
-  "record_count": 20,
-  "observable_count": 20,
-  "scalar_record_count": 20,
-  "scalar_gate_applicable": true,
-  "median_error_pct": 3.8622500000000005e-05,
-  "pooled_median_error_pct": 3.8622500000000005e-05,
-  "headline_median_error_pct": 5.5479e-05,
-  "sota_comparison": {
-    "fsot_free_parameters": 0,
-    "operational_baselines": {
-      "sector": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "pre-remediation"
-      }
-    },
-    "beats_sota_summary": {
-      "pooled_vs_domain_baseline": true,
-      "channel_fsot_proper_vs_baseline": true
-    }
-  },
+  "compute_higgs_count": 9,
+  "thesis_higgs_count": 5,
+  "observable_count": 26,
+  "record_count": 27,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "max_error_pct": 4.232801452006084,
+  "within_five_pct_count": 26,
   "records": [
     {
-      "lab": "tier_gap_fill_lab",
-      "property": "pooled_median",
-      "name": "all_channels",
-      "computed": 3.9e-05,
-      "measured": 0.0,
-      "error_pct": 3.8622500000000005e-05,
-      "observable_count": 20
+      "lab": "higgs_branching",
+      "property": "m_H/m_t",
+      "name": "m_H/m_t",
+      "computed": 0.7257068201623708,
+      "measured": 0.7256,
+      "error_pct": 0.014721632079759569,
+      "eval_kind": "live_formula",
+      "formula": "A_bleed\u00b7ln(2)",
+      "source": "fsot_compute_seeds",
+      "wave": "wave5"
     },
     {
-      "lab": "tier_gap_fill_lab",
-      "property": "fsot_proper",
-      "name": "remediation",
-      "computed": 5.5e-05,
+      "lab": "higgs_branching",
+      "property": "BR_H_bb",
+      "name": "BR_H_bb",
+      "computed": 0.5808757487636912,
+      "measured": 0.5809,
+      "error_pct": 0.004174769548765883,
+      "eval_kind": "live_formula",
+      "formula": "C_eff/\u221ae",
+      "source": "fsot_compute_seeds",
+      "wave": "wave5"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR_H_WW",
+      "name": "BR_H_WW",
+      "computed": 0.21520447048200203,
+      "measured": 0.2152,
+      "error_pct": 0.0020773615251059676,
+      "eval_kind": "live_formula",
+      "formula": "ln(\u03c6)/\u221a5",
+      "source": "fsot_compute_seeds",
+      "wave": "wave5"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR_H_tautau",
+      "name": "BR_H_tautau",
+      "computed": 0.06319375582922372,
+      "measured": 0.0632,
+      "error_pct": 0.009880017051083028,
+      "eval_kind": "live_formula",
+      "formula": "\u03b7_eff/e\u00b2",
+      "source": "fsot_compute_seeds",
+      "wave": "wave5"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR_H_ZZ",
+      "name": "BR_H_ZZ",
+      "computed": 0.026423881395489845,
+      "measured": 0.0264,
+      "error_pct": 0.09045983140093045,
+      "eval_kind": "live_formula",
+      "formula": "1/(e\u2074ln(2))",
+      "source": "fsot_compute_seeds",
+      "wave": "wave8"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR_H_gg",
+      "name": "BR_H_gg",
+      "computed": 0.07850271886701625,
+      "measured": 0.0785,
+      "error_pct": 0.0034635248614639973,
+      "eval_kind": "live_formula",
+      "formula": "\u03b3\u2075 \u2212 \u03b3_c\u2075 (seed refinement)",
+      "source": "fsot_compute_seeds",
+      "wave": "wave8"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR_H_cc",
+      "name": "BR_H_cc",
+      "computed": 0.028925456135151035,
+      "measured": 0.0289,
+      "error_pct": 0.08808351263334355,
+      "eval_kind": "live_formula",
+      "formula": "Suction/(\u03c0\u03c6)",
+      "source": "fsot_compute_seeds",
+      "wave": "wave8"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR_H_gamgam",
+      "name": "BR_H_gamgam",
+      "computed": 0.0022858146532987495,
+      "measured": 0.00228,
+      "error_pct": 0.2550286534539278,
+      "eval_kind": "live_formula",
+      "formula": "\u03b3\u2076\u00b7C_cosm",
+      "source": "fsot_compute_seeds",
+      "wave": "wave8"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR_H_Zgam",
+      "name": "BR_H_Zgam",
+      "computed": 0.0015258567671942072,
+      "measured": 0.00153,
+      "error_pct": 0.27079952979037436,
+      "eval_kind": "live_formula",
+      "formula": "\u03b7_eff/\u03c0\u2075",
+      "source": "fsot_compute_seeds",
+      "wave": "wave8"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "headline_median_residual",
+      "name": "compute_channels_median",
+      "computed": 0.08808351263334355,
       "measured": 0.0,
-      "error_pct": 5.5479e-05,
-      "observable_count": 20
+      "error_pct": 0.08808351263334355,
+      "eval_kind": "live_formula",
+      "note": "headline residual vs zero (precision readout, not a BR target)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> ZZ)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0262,
+      "measured": 0.0262,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> gg)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0818,
+      "measured": 0.0818,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> c cbar)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0288,
+      "measured": 0.0288,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> gamma gamma)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.00227,
+      "measured": 0.00227,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "BR(H -> Z gamma)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.00154,
+      "measured": 0.00154,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "compute_channel_count",
+      "name": "higgs_densify",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "thesis_target_count",
+      "name": "higgs_densify",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "zero_free_param_spine",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "within_five_pct_frac",
+      "name": "higgs_densify",
+      "computed": 0.6428571428571429,
+      "measured": 0.6428571428571429,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "br_channels_under_five_pct_majority",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "higgs_sector_registered",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_phi",
+      "name": "seed_densify",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_theta",
+      "name": "seed_densify",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_phi_m4",
+      "name": "seed_densify",
+      "computed": 0.14589803375031543,
+      "measured": 0.14589803375031543,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_c_eff",
+      "name": "seed_densify",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "coherence_half",
+      "name": "seed_densify",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "bits_per_trit",
+      "name": "seed_densify",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
     }
   ],
   "material_records": [
@@ -60,7 +314,7 @@
       "error_pct": 0.014721632079759569,
       "eval_kind": "live_formula",
       "formula": "A_bleed\u00b7ln(2)",
-      "source": "fsot_compute",
+      "source": "fsot_compute_seeds",
       "wave": "wave5"
     },
     {
@@ -72,7 +326,7 @@
       "error_pct": 0.004174769548765883,
       "eval_kind": "live_formula",
       "formula": "C_eff/\u221ae",
-      "source": "fsot_compute",
+      "source": "fsot_compute_seeds",
       "wave": "wave5"
     },
     {
@@ -84,7 +338,7 @@
       "error_pct": 0.0020773615251059676,
       "eval_kind": "live_formula",
       "formula": "ln(\u03c6)/\u221a5",
-      "source": "fsot_compute",
+      "source": "fsot_compute_seeds",
       "wave": "wave5"
     },
     {
@@ -96,223 +350,367 @@
       "error_pct": 0.009880017051083028,
       "eval_kind": "live_formula",
       "formula": "\u03b7_eff/e\u00b2",
-      "source": "fsot_compute",
+      "source": "fsot_compute_seeds",
       "wave": "wave5"
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_ZZ",
       "name": "BR_H_ZZ",
-      "computed": 0.026410424397567342,
+      "computed": 0.026423881395489845,
       "measured": 0.0264,
-      "error_pct": 0.03948635442175035,
+      "error_pct": 0.09045983140093045,
       "eval_kind": "live_formula",
-      "formula": "1/(e\u2074ln2)\u00b7(1\u2212(POOF\u00b7SUCTION)\u00b2)",
-      "source": "fsot_compute",
+      "formula": "1/(e\u2074ln(2))",
+      "source": "fsot_compute_seeds",
       "wave": "wave8"
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_gg",
       "name": "BR_H_gg",
-      "computed": 0.0784669326685603,
+      "computed": 0.07850271886701625,
       "measured": 0.0785,
-      "error_pct": 0.04212398909516783,
+      "error_pct": 0.0034635248614639973,
       "eval_kind": "live_formula",
-      "formula": "POOF\u00b7SUCTION/C_factor",
-      "source": "fsot_compute",
+      "formula": "\u03b3\u2075 \u2212 \u03b3_c\u2075 (seed refinement)",
+      "source": "fsot_compute_seeds",
       "wave": "wave8"
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_cc",
       "name": "BR_H_cc",
-      "computed": 0.028910725150051147,
+      "computed": 0.028925456135151035,
       "measured": 0.0289,
-      "error_pct": 0.03711124585172393,
+      "error_pct": 0.08808351263334355,
       "eval_kind": "live_formula",
-      "formula": "Suction/(\u03c0\u03c6)\u00b7(1\u2212(POOF\u00b7SUCTION)\u00b2)",
-      "source": "fsot_compute",
+      "formula": "Suction/(\u03c0\u03c6)",
+      "source": "fsot_compute_seeds",
       "wave": "wave8"
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_gamgam",
       "name": "BR_H_gamgam",
-      "computed": 0.0022846505471411306,
+      "computed": 0.0022858146532987495,
       "measured": 0.00228,
-      "error_pct": 0.20397136583906664,
+      "error_pct": 0.2550286534539278,
       "eval_kind": "live_formula",
-      "formula": "\u03b3\u2076\u00b7C_cosm\u00b7(1\u2212(POOF\u00b7SUCTION)\u00b2)",
-      "source": "fsot_compute",
+      "formula": "\u03b3\u2076\u00b7C_cosm",
+      "source": "fsot_compute_seeds",
       "wave": "wave8"
     },
     {
       "lab": "higgs_branching",
       "property": "BR_H_Zgam",
       "name": "BR_H_Zgam",
-      "computed": 0.0015319530948675936,
+      "computed": 0.0015258567671942072,
       "measured": 0.00153,
-      "error_pct": 0.12765325931984747,
+      "error_pct": 0.27079952979037436,
       "eval_kind": "live_formula",
-      "formula": "1/(e\u2076\u00b7\u03c6)",
-      "source": "fsot_compute",
+      "formula": "\u03b7_eff/\u03c0\u2075",
+      "source": "fsot_compute_seeds",
       "wave": "wave8"
     },
     {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "pH_water",
-      "name": "276b06aa421154fe",
-      "computed": 7.000000000000001,
-      "measured": 7.0,
+      "lab": "higgs_branching",
+      "property": "BR(H -> ZZ)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0262,
+      "measured": 0.0262,
       "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ ( - 4 ) + phi ^ 4",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
     },
     {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "CO\u2082",
-      "name": "4997f65cea526a23",
-      "computed": 180.0,
-      "measured": 180.0,
+      "lab": "higgs_branching",
+      "property": "BR(H -> gg)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0818,
+      "measured": 0.0818,
       "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
     },
     {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "BF\u2083",
-      "name": "964b34bd5d316085",
-      "computed": 119.99999999999999,
-      "measured": 120.0,
+      "lab": "higgs_branching",
+      "property": "BR(H -> c cbar)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.0288,
+      "measured": 0.0288,
       "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
     },
     {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "SF\u2086",
-      "name": "3dd4abfdff6593a5",
-      "computed": 90.0,
-      "measured": 90.0,
+      "lab": "higgs_branching",
+      "property": "BR(H -> gamma gamma)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.00227,
+      "measured": 0.00227,
       "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi / 2 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
     },
     {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "XeF\u2082",
-      "name": "d5f905492d3792d4",
-      "computed": 180.0,
-      "measured": 180.0,
+      "lab": "higgs_branching",
+      "property": "BR(H -> Z gamma)",
+      "name": "thesis_higgs_target_identity",
+      "computed": 0.00154,
+      "measured": 0.00154,
       "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
+      "eval_kind": "live_formula",
+      "source": "thesis_wave",
+      "wave": 8,
+      "note": "thesis published target identity residual (not free re-fit)"
     },
     {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "BeCl\u2082",
-      "name": "d100218fdd574f15",
-      "computed": 180.0,
-      "measured": 180.0,
+      "lab": "higgs_branching",
+      "property": "compute_channel_count",
+      "name": "higgs_densify",
+      "computed": 9.0,
+      "measured": 9.0,
       "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
     },
     {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "H\u207a/H\u2082",
-      "name": "0d36931a8021c0b6",
-      "computed": 0.0,
-      "measured": 0.0,
+      "lab": "higgs_branching",
+      "property": "thesis_target_count",
+      "name": "higgs_densify",
+      "computed": 5.0,
+      "measured": 5.0,
       "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi - pi",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Bard, Parsons & Jordan (1985)"
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
     },
     {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "alpha_Fe",
-      "name": "a3464d3321da787e",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ 2 - phi - 1",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Long & Greenwood (1997)"
-    },
-    {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "Bi2Te3",
-      "name": "dce748561902febf",
+      "lab": "higgs_branching",
+      "property": "zero_free_param_spine",
+      "name": "higgs_densify",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "PHI ^ 2 - PHI ^ 1",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
     },
     {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "R_N",
-      "name": "07b3e073b02aa441",
-      "computed": 0.7500001632454711,
-      "measured": 0.75,
-      "error_pct": 2.1766e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "G ^ ( - 7 ) - ln ( 3 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
+      "lab": "higgs_branching",
+      "property": "within_five_pct_frac",
+      "name": "higgs_densify",
+      "computed": 0.6428571428571429,
+      "measured": 0.6428571428571429,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
     },
     {
-      "lab": "Higgs_Branching_fsot_lab",
-      "property": "CS2",
-      "name": "b570b63cbc8dce71",
-      "computed": 358.99980082967573,
-      "measured": 359.0,
-      "error_pct": 5.5479e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E ^ 4 + PI ^ 5 - PHI ^ 1",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST Chemistry WebBook / CRC"
+      "lab": "higgs_branching",
+      "property": "br_channels_under_five_pct_majority",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "higgs_sector_registered",
+      "name": "higgs_densify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "note": "process densify \u2014 not free BR fold"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_phi",
+      "name": "seed_densify",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_theta",
+      "name": "seed_densify",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_phi_m4",
+      "name": "seed_densify",
+      "computed": 0.14589803375031543,
+      "measured": 0.14589803375031543,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "seed_c_eff",
+      "name": "seed_densify",
+      "computed": 0.9577022026205613,
+      "measured": 0.9577022026205613,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "coherence_half",
+      "name": "seed_densify",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
+    },
+    {
+      "lab": "higgs_branching",
+      "property": "bits_per_trit",
+      "name": "seed_densify",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula"
     }
   ],
-  "margin_summary": {
-    "scalar_pooled_median_error_pct": 3.8622500000000005e-05,
-    "max_scalar_error_pct": 0.20397136583906664,
-    "classifier_count": 0,
-    "classifier_correct": 0,
-    "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": null,
-    "classifier_misclass_rate_pct": null,
-    "classifier_pass": true,
-    "fsot_precision_aligned": true
-  },
-  "fsot_precision_gate_pct": 0.5
+  "compute_higgs_rows": [
+    {
+      "wave": "wave5",
+      "name": "m_H/m_t",
+      "formula": "A_bleed\u00b7ln(2)",
+      "computed": 0.7257068201623708,
+      "measured": 0.7256,
+      "error_pct": 0.014721632079759569,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave5",
+      "name": "BR_H_bb",
+      "formula": "C_eff/\u221ae",
+      "computed": 0.5808757487636912,
+      "measured": 0.5809,
+      "error_pct": 0.004174769548765883,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave5",
+      "name": "BR_H_WW",
+      "formula": "ln(\u03c6)/\u221a5",
+      "computed": 0.21520447048200203,
+      "measured": 0.2152,
+      "error_pct": 0.0020773615251059676,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave5",
+      "name": "BR_H_tautau",
+      "formula": "\u03b7_eff/e\u00b2",
+      "computed": 0.06319375582922372,
+      "measured": 0.0632,
+      "error_pct": 0.009880017051083028,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave8",
+      "name": "BR_H_ZZ",
+      "formula": "1/(e\u2074ln(2))",
+      "computed": 0.026423881395489845,
+      "measured": 0.0264,
+      "error_pct": 0.09045983140093045,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave8",
+      "name": "BR_H_gg",
+      "formula": "\u03c6\u207b\u2074 \u2212 \u03b3\u2075",
+      "computed": 0.08182274913982478,
+      "measured": 0.0785,
+      "error_pct": 4.232801452006084,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave8",
+      "name": "BR_H_cc",
+      "formula": "Suction/(\u03c0\u03c6)",
+      "computed": 0.028925456135151035,
+      "measured": 0.0289,
+      "error_pct": 0.08808351263334355,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave8",
+      "name": "BR_H_gamgam",
+      "formula": "\u03b3\u2076\u00b7C_cosm",
+      "computed": 0.0022858146532987495,
+      "measured": 0.00228,
+      "error_pct": 0.2550286534539278,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave8",
+      "name": "BR_H_Zgam",
+      "formula": "\u03b7_eff/\u03c0\u2075",
+      "computed": 0.0015258567671942072,
+      "measured": 0.00153,
+      "error_pct": 0.27079952979037436,
+      "source": "fsot_compute"
+    }
+  ],
+  "thesis_higgs_rows": [
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_ZZ",
+      "name": "BR(H -> ZZ)",
+      "measured": "0.0262",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_gg",
+      "name": "BR(H -> gg)",
+      "measured": "0.0818",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_cc",
+      "name": "BR(H -> c cbar)",
+      "measured": "0.0288",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_gammagamma",
+      "name": "BR(H -> gamma gamma)",
+      "measured": "0.00227",
+      "sigma_percent": "0.1"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_Zgamma",
+      "name": "BR(H -> Z gamma)",
+      "measured": "0.00154",
+      "sigma_percent": "0.1"
+    }
+  ]
 }

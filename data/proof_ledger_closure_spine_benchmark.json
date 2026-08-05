@@ -1,15 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:48:54.929027+00:00",
+  "generated_at": "2026-08-05T14:36:51.765838+00:00",
   "domain": "Proof_Ledger_Closure_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "proof_ledger.yaml",
     "fsot_verification_progress.yaml",
-    "certificate.json",
-    "c_thin_depth_pass",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "certificate.json"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -18,9 +15,9 @@
     "consciousness"
   ],
   "D_eff": 25,
-  "record_count": 24,
-  "observable_count": 24,
-  "scalar_record_count": 21,
+  "record_count": 17,
+  "observable_count": 17,
+  "scalar_record_count": 14,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -28,14 +25,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Proof_Ledger_Closure_Spine_depth": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "sector model without seed-closed FSOT formula"
+      "proof_ledger": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No formal ToE proof bundle"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_seed_formula_vs_baseline": true
+      "channel_ledger_anchor_vs_baseline": true
     }
   },
   "records": [
@@ -46,16 +43,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 17
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_seed_formula",
-      "name": "Proof_Ledger_Closure_Spine_depth",
+      "property": "ledger_anchor",
+      "name": "proof_ledger",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 1
     }
   ],
   "material_records": [
@@ -66,20 +63,7 @@
       "computed": 29.0,
       "measured": 29.0,
       "error_pct": 0.0,
-      "eval_kind": "ledger_anchor",
-      "domain_display_name": "proof ledger closure",
-      "display_name": "proof ledger",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ledger_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -88,20 +72,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "formal_gate",
-      "domain_display_name": "proof ledger closure",
-      "display_name": "formal layer",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "formal_gate"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -110,20 +81,7 @@
       "computed": 65.0,
       "measured": 65.0,
       "error_pct": 0.0,
-      "eval_kind": "progress_anchor",
-      "domain_display_name": "proof ledger closure",
-      "display_name": "verification progress",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "progress_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -132,20 +90,7 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "ledger_gate",
-      "domain_display_name": "proof ledger closure",
-      "display_name": "formal closure",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ledger_gate"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -155,20 +100,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "cosmological",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "cosmological",
-      "display_name": "cosmological raw S negative",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -178,20 +110,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "dark_energy",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "dark energy",
-      "display_name": "dark energy raw S negative",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -201,20 +120,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "cmb",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "cmb",
-      "display_name": "cmb raw S negative",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -224,20 +130,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "ai",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "ai",
-      "display_name": "ai raw S non positive",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -247,20 +140,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "medical",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "medical",
-      "display_name": "medical raw S positive",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -270,20 +150,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "chemical",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "chemical",
-      "display_name": "chemical raw S positive",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -293,20 +160,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "electron",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "electron",
-      "display_name": "electron raw S positive",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -316,20 +170,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "neural",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "neural",
-      "display_name": "neural raw S positive",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -339,20 +180,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "quantum",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "quantum",
-      "display_name": "quantum raw S positive",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -362,20 +190,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "particle",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "particle",
-      "display_name": "particle raw S positive",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -385,20 +200,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "*",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "*",
-      "display_name": "term3 negligible default",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -408,20 +210,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "domain": "*",
-      "eval_kind": "claim_anchor",
-      "domain_display_name": "*",
-      "display_name": "raw S positive template",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "claim_anchor"
     },
     {
       "lab": "proof_ledger_closure_lab",
@@ -430,111 +219,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "certificate_anchor",
-      "domain_display_name": "proof ledger closure",
-      "display_name": "certificate json",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "proof_ledger_closure_spine_fsot_lab",
-      "property": "pH_water",
-      "name": "276b06aa421154fe",
-      "computed": 7.000000000000001,
-      "measured": 7.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ ( - 4 ) + phi ^ 4",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "proof_ledger_closure_spine_fsot_lab",
-      "property": "CO\u2082",
-      "name": "4997f65cea526a23",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "proof_ledger_closure_spine_fsot_lab",
-      "property": "BF\u2083",
-      "name": "964b34bd5d316085",
-      "computed": 119.99999999999999,
-      "measured": 120.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "proof_ledger_closure_spine_fsot_lab",
-      "property": "SF\u2086",
-      "name": "3dd4abfdff6593a5",
-      "computed": 90.0,
-      "measured": 90.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi / 2 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "proof_ledger_closure_spine_fsot_lab",
-      "property": "XeF\u2082",
-      "name": "d5f905492d3792d4",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "proof_ledger_closure_spine_fsot_lab",
-      "property": "BeCl\u2082",
-      "name": "d100218fdd574f15",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "proof_ledger_closure_spine_fsot_lab",
-      "property": "H\u207a/H\u2082",
-      "name": "0d36931a8021c0b6",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi - pi",
-      "fsot_domain": "Atomic_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Bard, Parsons & Jordan (1985)"
+      "eval_kind": "certificate_anchor"
     }
   ],
   "margin_summary": {

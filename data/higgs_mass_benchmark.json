@@ -1,63 +1,19 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:49:50.063034+00:00",
-  "domain": "Higgs_Mass",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "generated_at": "2026-08-05T14:35:49.939973+00:00",
   "source": [
     "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
     "scripts/higgs_mass_formula_eval.py",
     "data/higgs_mass_reference_observables.json",
-    "vendor/fsot_compute.py",
-    "c_thin_depth_pass",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-    "fsot_proper_green_remediation"
+    "vendor/fsot_compute.py"
   ],
   "maps_to_lean": [
-    "particle",
-    "higgs"
+    "particle"
   ],
-  "D_eff": 19,
-  "record_count": 23,
-  "observable_count": 23,
-  "scalar_record_count": 23,
-  "scalar_gate_applicable": true,
-  "median_error_pct": 9.46770027700249e-05,
-  "pooled_median_error_pct": 9.46770027700249e-05,
-  "headline_median_error_pct": 9.46770027700249e-05,
-  "sota_comparison": {
-    "fsot_free_parameters": 0,
-    "operational_baselines": {
-      "pre": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "pre"
-      }
-    },
-    "beats_sota_summary": {
-      "pooled_vs_domain_baseline": true,
-      "channel_fsot_proper_vs_baseline": true
-    }
-  },
-  "records": [
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "pooled_median",
-      "name": "all_channels",
-      "computed": 9.5e-05,
-      "measured": 0.0,
-      "error_pct": 9.46770027700249e-05,
-      "observable_count": 23
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "fsot_proper",
-      "name": "green_fix",
-      "computed": 9.5e-05,
-      "measured": 0.0,
-      "error_pct": 9.46770027700249e-05,
-      "observable_count": 23
-    }
-  ],
+  "rule_id": "FO-213",
+  "record_count": 9,
+  "observable_count": 9,
+  "median_error_pct": 0.018987449514135373,
   "material_records": [
     {
       "lab": "higgs_mass",
@@ -165,200 +121,115 @@
       "channel": "PDG_mass_ratio",
       "reference": "PDG_electroweak_ratios",
       "wave": "wave5"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "pH_water",
-      "name": "276b06aa421154fe",
-      "computed": 7.000000000000001,
-      "measured": 7.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ ( - 4 ) + phi ^ 4",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "CO\u2082",
-      "name": "4997f65cea526a23",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "BF\u2083",
-      "name": "964b34bd5d316085",
-      "computed": 119.99999999999999,
-      "measured": 120.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "SF\u2086",
-      "name": "3dd4abfdff6593a5",
-      "computed": 90.0,
-      "measured": 90.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi / 2 ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "XeF\u2082",
-      "name": "d5f905492d3792d4",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "BeCl\u2082",
-      "name": "d100218fdd574f15",
-      "computed": 180.0,
-      "measured": 180.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi ( rad\u2192\u00b0 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST CCCBDB"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "H\u207a/H\u2082",
-      "name": "0d36931a8021c0b6",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "pi - pi",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Bard, Parsons & Jordan (1985)"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "alpha_Fe",
-      "name": "a3464d3321da787e",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "phi ^ 2 - phi - 1",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Long & Greenwood (1997)"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "Bi2Te3",
-      "name": "dce748561902febf",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "PHI ^ 2 - PHI ^ 1",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "R_N",
-      "name": "07b3e073b02aa441",
-      "computed": 0.7500001632454711,
-      "measured": 0.75,
-      "error_pct": 2.1766e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "G ^ ( - 7 ) - ln ( 3 )",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "CS2",
-      "name": "b570b63cbc8dce71",
-      "computed": 358.99980082967573,
-      "measured": 359.0,
-      "error_pct": 5.5479e-05,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E ^ 4 + PI ^ 5 - PHI ^ 1",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST Chemistry WebBook / CRC"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "Fe",
-      "name": "de190b5a1618a827",
-      "computed": 1.679990560988901,
-      "measured": 1.68,
-      "error_pct": 0.000561846,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "E / PHI",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Anderson (1966)"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "F",
-      "name": "c1f0a37d1a7e1851",
-      "computed": 3.4009757390356903,
-      "measured": 3.401,
-      "error_pct": 0.000713348,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma ^ ( - 2 ) + \u03a8 ^ 2",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
-    },
-    {
-      "lab": "higgs_mass_fsot_lab",
-      "property": "IE_Ar",
-      "name": "6a9af01dd6d7066c",
-      "computed": 15.76012377846974,
-      "measured": 15.76,
-      "error_pct": 0.000785396,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "gamma ^ ( - 5 ) + Poof",
-      "fsot_domain": "Particle_Physics",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "NIST / CRC / Allen / Luo"
     }
   ],
-  "margin_summary": {
-    "scalar_pooled_median_error_pct": 9.46770027700249e-05,
-    "max_scalar_error_pct": 0.11491358837235732,
-    "classifier_count": 0,
-    "classifier_correct": 0,
-    "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": null,
-    "classifier_misclass_rate_pct": null,
-    "classifier_pass": true,
-    "fsot_precision_aligned": true
-  },
-  "fsot_precision_gate_pct": 0.5
+  "records": [
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV",
+      "rule_id": "FO-213",
+      "computed": 125.2637798817715,
+      "measured": 125.25,
+      "error_pct": 0.01100190161397048,
+      "eval_kind": "live_formula",
+      "formula": "((theta_s + e^3) / c_factor^7) * (1 + (poof * suction)^2)",
+      "channel": "PDG2024_world_average"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_MeV",
+      "rule_id": "FO-213",
+      "computed": 125263.7798817715,
+      "measured": 125250.0,
+      "error_pct": 0.01100190161397048,
+      "eval_kind": "live_formula",
+      "channel": "unit_conversion"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_atlas_combined_run2",
+      "rule_id": "FO-213",
+      "computed": 125.2637798817715,
+      "measured": 125.35,
+      "error_pct": 0.06878350078061132,
+      "eval_kind": "measurement_channel",
+      "formula": "((theta_s + e^3) / c_factor^7) * (1 + (poof * suction)^2)",
+      "channel": "ATLAS_Run2_combined",
+      "reference": "ATLAS_Higgs_mass_2023"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_cms_combined_run2",
+      "rule_id": "FO-213",
+      "computed": 125.2637798817715,
+      "measured": 125.38,
+      "error_pct": 0.09269430389894515,
+      "eval_kind": "measurement_channel",
+      "formula": "((theta_s + e^3) / c_factor^7) * (1 + (poof * suction)^2)",
+      "channel": "CMS_Run2_combined",
+      "reference": "CMS_Higgs_mass_2023"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_atlas_diphoton",
+      "rule_id": "FO-213",
+      "computed": 125.2637798817715,
+      "measured": 125.24,
+      "error_pct": 0.018987449514135373,
+      "eval_kind": "measurement_channel",
+      "formula": "((theta_s + e^3) / c_factor^7) * (1 + (poof * suction)^2)",
+      "channel": "ATLAS_gamma_gamma",
+      "reference": "ATLAS_diphoton_channel"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_cms_four_lepton",
+      "rule_id": "FO-213",
+      "computed": 125.2637798817715,
+      "measured": 125.12,
+      "error_pct": 0.11491358837235732,
+      "eval_kind": "measurement_channel",
+      "formula": "((theta_s + e^3) / c_factor^7) * (1 + (poof * suction)^2)",
+      "channel": "CMS_ZZ_star",
+      "reference": "CMS_4l_channel"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_lhcb_inclusive",
+      "rule_id": "FO-213",
+      "computed": 125.2637798817715,
+      "measured": 125.17,
+      "error_pct": 0.0749220114815821,
+      "eval_kind": "measurement_channel",
+      "formula": "((theta_s + e^3) / c_factor^7) * (1 + (poof * suction)^2)",
+      "channel": "LHCb_inclusive",
+      "reference": "LHCb_Higgs_mass"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_m_W",
+      "rule_id": "m_H/m_W",
+      "computed": 1.5595014764878583,
+      "measured": 1.5595,
+      "error_pct": 9.46770027700249e-05,
+      "eval_kind": "fsot_compute_ratio",
+      "formula": "S_quant\u00b7\u03c8_con + S_quant",
+      "channel": "PDG_mass_ratio",
+      "reference": "PDG_electroweak_ratios",
+      "wave": "wave3"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_m_t",
+      "rule_id": "m_H/m_t",
+      "computed": 0.7257068201623708,
+      "measured": 0.7256,
+      "error_pct": 0.014721632079759569,
+      "eval_kind": "fsot_compute_ratio",
+      "formula": "A_bleed\u00b7ln(2)",
+      "channel": "PDG_mass_ratio",
+      "reference": "PDG_electroweak_ratios",
+      "wave": "wave5"
+    }
+  ]
 }

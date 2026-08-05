@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-03T15:17:32.722789+00:00",
+  "generated_at": "2026-08-05T14:39:27.197130+00:00",
   "policy": "no_signup_no_credentials",
-  "ok_count": 20,
-  "fail_count": 0,
+  "ok_count": 19,
+  "fail_count": 1,
   "results": [
     {
       "source_id": "openfda_drug_label",
@@ -76,8 +76,8 @@
     },
     {
       "source_id": "nasa_donki_flares",
-      "status": "ok",
-      "path": "vendor\\open_science\\nasa_donki_flares\\live.json",
+      "status": "fail",
+      "error": "URLError: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
       "family": "cosmology_astrophysics",
       "auth": "none"
     },

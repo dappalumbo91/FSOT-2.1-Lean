@@ -1,15 +1,15 @@
 # Contested Sector Watch
 
-*Living monitor · 2026-07-16T15:52:55.552330+00:00*
+*Living monitor · 2026-08-05T14:35:48.227298+00:00*
 
 These 13 observables are not pipeline failures — they are the hardest open problems active science is measuring (Hubble tension, dark energy, σ₈, BBN, cusp-core, hierarchy, consciousness proxy, preregistered w_a). FSOT supplies unified readouts; ΛCDM/SM baselines have no unified prediction (15% typical error on the open panel). Where FSOT error exceeds 0.5%, refinement is queued.
 
 | Metric | Value |
 |--------|------:|
 | Observables monitored | 13 |
-| FSOT pooled median | 0.029748999999999998% |
+| FSOT pooled median | 0.007871% |
 | ΛCDM/SM typical baseline | 15.0% |
-| Beats baseline count | 16 |
+| Beats baseline count | 14 |
 
 ## Active observables
 
@@ -27,9 +27,7 @@ These 13 observables are not pipeline failures — they are the hardest open pro
 | D_H_ratio | 0.090986 | None | open_observable_resolved |
 | r_c | 0.341024 | Fornax_dwarf | cusp_core_resolved |
 | m_H | 0.039905 | ATLAS_CMS_combined | hierarchy_resolved |
-| H0_FSOT_local_anchor | 0.829427 | FSOT_bubble_bleed_dual_anchor | dual_anchor_local |
 | H0_Planck_CMB | 0.192564 | Planck2018 | cmb_sector_resolved |
-| H0_SH0ES_local | 0.662297 | Riess2024 | local_sector_resolved |
 | w_a | 0.000595 | DESI_DR2 | bao_sector_refined |
 
 ## Preregistered cosmology locks

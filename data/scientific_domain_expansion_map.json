@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-05T12:41:02.605400+00:00",
+  "generated_at": "2026-08-05T14:42:36.876716+00:00",
   "summary": {
     "neurolab_domains": 35,
     "extension_domains": 371,
     "total_scientific_domains_covered": 407,
-    "total_empirical_records": 2190754,
+    "total_empirical_records": 2190672,
     "total_empirical_records_note": "sum of neurolab+extension(+IC) record_count fields",
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
@@ -16,9 +16,9 @@
       "unverified": 0
     },
     "tier_distribution": {
-      "A_strong": 114,
-      "B_verified": 293,
-      "C_thin": 0,
+      "A_strong": 113,
+      "B_verified": 269,
+      "C_thin": 25,
       "D_needs_work": 0,
       "unverified": 0
     },
@@ -565,25 +565,25 @@
     {
       "domain": "Cosmology_Anomalies",
       "tier": 25,
-      "record_count": 23,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 12,
+      "median_error_pct": 0.096204,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.CosmologyAnomaliesPriors"
     },
     {
       "domain": "Particle_Physics",
       "tier": 16,
-      "record_count": 22,
-      "median_error_pct": 0.0003086625,
+      "record_count": 98,
+      "median_error_pct": 0.014415233331492876,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.ParticlePhysicsPriors"
     },
     {
       "domain": "Higgs_Mass",
       "tier": 17,
-      "record_count": 23,
-      "median_error_pct": 9.46770027700249e-05,
-      "coverage_tier": "B_verified",
+      "record_count": 9,
+      "median_error_pct": 0.018987449514135373,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.HiggsMassPriors"
     },
     {
@@ -653,9 +653,9 @@
     {
       "domain": "Orbital_Mechanics",
       "tier": 21,
-      "record_count": 23,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 9,
+      "median_error_pct": 0.106141,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.OrbitalMechanicsPriors"
     },
     {
@@ -669,9 +669,9 @@
     {
       "domain": "TOE_Dynamics",
       "tier": 99,
-      "record_count": 24,
+      "record_count": 18,
       "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.Domains"
     },
     {
@@ -685,9 +685,9 @@
     {
       "domain": "TOE_Contested_Sector_Refresh",
       "tier": 99,
-      "record_count": 24,
-      "median_error_pct": 0.0009255267903276525,
-      "coverage_tier": "B_verified",
+      "record_count": 15,
+      "median_error_pct": 0.009407278780006464,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.Domains"
     },
     {
@@ -1109,9 +1109,9 @@
     {
       "domain": "Rust_Lean_Bridge",
       "tier": 37,
-      "record_count": 24,
+      "record_count": 9,
       "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.RustLeanBridgePriors"
     },
     {
@@ -1125,9 +1125,9 @@
     {
       "domain": "NIST_CODATA_Constants",
       "tier": 38,
-      "record_count": 23,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 6,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.NistCodataConstantsPriors"
     },
     {
@@ -1149,7 +1149,7 @@
     {
       "domain": "World_Bank_Development",
       "tier": 38,
-      "record_count": 420,
+      "record_count": 395,
       "median_error_pct": 0.02584,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.WorldBankDevelopmentPriors"
@@ -1477,7 +1477,7 @@
     {
       "domain": "Formula_Branching_Fractal",
       "tier": 45,
-      "record_count": 255,
+      "record_count": 380,
       "median_error_pct": 0.038016537604979236,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.FormulaBranchingFractalPriors"
@@ -1485,9 +1485,9 @@
     {
       "domain": "Mechanistic_Coupling",
       "tier": 45,
-      "record_count": 115,
-      "median_error_pct": 0.0,
-      "coverage_tier": "A_strong",
+      "record_count": 39,
+      "median_error_pct": 0.0073836551816993294,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.MechanisticCouplingPriors"
     },
     {
@@ -1501,9 +1501,9 @@
     {
       "domain": "Theory_Completeness_Spine",
       "tier": 45,
-      "record_count": 24,
+      "record_count": 6,
       "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.TheoryCompletenessSpinePriors"
     },
     {
@@ -1517,15 +1517,15 @@
     {
       "domain": "Preregistered_Predictions",
       "tier": 46,
-      "record_count": 27,
-      "median_error_pct": 0.020098237848408945,
+      "record_count": 35,
+      "median_error_pct": 0.02009823784840936,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.PreregisteredPredictionsPriors"
     },
     {
       "domain": "Portable_Clone_Verify",
       "tier": 46,
-      "record_count": 289,
+      "record_count": 419,
       "median_error_pct": 0.0,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.PortableCloneVerifyPriors"
@@ -1533,25 +1533,25 @@
     {
       "domain": "Observer_Channel_Derivation",
       "tier": 46,
-      "record_count": 348,
-      "median_error_pct": 0.0525102820198906,
+      "record_count": 372,
+      "median_error_pct": 0.052510282019890844,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.ObserverChannelDerivationPriors"
     },
     {
       "domain": "Adversarial_Fractal_Break_Tests",
       "tier": 46,
-      "record_count": 21,
+      "record_count": 13,
       "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.AdversarialFractalBreakPriors"
     },
     {
       "domain": "ToE_Gap_Closure_Spine",
       "tier": 46,
-      "record_count": 21,
+      "record_count": 7,
       "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.ToEGapClosureSpinePriors"
     },
     {
@@ -1629,16 +1629,16 @@
     {
       "domain": "Domain_Orbital_Predictions",
       "tier": 48,
-      "record_count": 24,
+      "record_count": 12,
       "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.DomainOrbitalPredictionsPriors"
     },
     {
       "domain": "Medical_Galactic_Orbital_Bridge",
       "tier": 48,
       "record_count": 48,
-      "median_error_pct": 0.010717743028517818,
+      "median_error_pct": 0.010717743028516056,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.MedicalGalacticOrbitalBridgePriors"
     },
@@ -1646,7 +1646,7 @@
       "domain": "AI_Galactic_Orbital_Bridge",
       "tier": 48,
       "record_count": 48,
-      "median_error_pct": 0.005168558627177688,
+      "median_error_pct": 0.005168558627176023,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.AIGalacticOrbitalBridgePriors"
     },
@@ -1654,16 +1654,16 @@
       "domain": "Neural_Galactic_Orbital_Bridge",
       "tier": 48,
       "record_count": 49,
-      "median_error_pct": 0.018002668701799784,
+      "median_error_pct": 0.018002668701796568,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.NeuralGalacticOrbitalBridgePriors"
     },
     {
       "domain": "ToE_Unification_Spine",
       "tier": 48,
-      "record_count": 24,
-      "median_error_pct": 3.8622500000000005e-05,
-      "coverage_tier": "B_verified",
+      "record_count": 8,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.ToEUnificationSpinePriors"
     },
     {
@@ -1773,17 +1773,17 @@
     {
       "domain": "Dark_Energy_CPL",
       "tier": 51,
-      "record_count": 24,
-      "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "record_count": 14,
+      "median_error_pct": 0.280515,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.DarkEnergyCPLPriors"
     },
     {
       "domain": "SH0ES_Refined",
       "tier": 51,
-      "record_count": 20,
+      "record_count": 7,
       "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.SH0ESRefinedPriors"
     },
     {
@@ -2213,15 +2213,15 @@
     {
       "domain": "Proof_Ledger_Closure_Spine",
       "tier": 70,
-      "record_count": 24,
+      "record_count": 17,
       "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.ProofLedgerClosureSpinePriors"
     },
     {
       "domain": "Preregistered_Outcome_Tracking",
       "tier": 70,
-      "record_count": 53,
+      "record_count": 72,
       "median_error_pct": 0.0,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.PreregisteredOutcomeTrackingPriors"
@@ -2229,9 +2229,9 @@
     {
       "domain": "ToE_Claim_Certificate_Bundle",
       "tier": 70,
-      "record_count": 24,
+      "record_count": 7,
       "median_error_pct": 0.0,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.ToEClaimCertificateBundlePriors"
     },
     {
@@ -2525,9 +2525,9 @@
     {
       "domain": "PDG_Particle_Properties",
       "tier": 78,
-      "record_count": 23,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 12,
+      "median_error_pct": 0.041994,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.PdgParticlePropertiesPriors"
     },
     {
@@ -2541,9 +2541,9 @@
     {
       "domain": "NIST_DLMF_Special_Functions",
       "tier": 78,
-      "record_count": 23,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 5,
+      "median_error_pct": 0.001661,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.NistDlmfSpecialFunctionsPriors"
     },
     {
@@ -3277,57 +3277,57 @@
     {
       "domain": "Founding_Quantum_Vacuum_Panel",
       "tier": 96,
-      "record_count": 24,
-      "median_error_pct": 5.5479e-05,
-      "coverage_tier": "B_verified",
+      "record_count": 5,
+      "median_error_pct": 0.047775,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.FoundingQuantumVacuumPanelPriors"
     },
     {
       "domain": "Founding_Cosmic_Ray_Panel",
       "tier": 96,
-      "record_count": 24,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 5,
+      "median_error_pct": 0.021221,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.FoundingCosmicRayPanelPriors"
     },
     {
       "domain": "Founding_Galactic_Halo_Rotation_Panel",
       "tier": 96,
-      "record_count": 24,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 5,
+      "median_error_pct": 0.025123,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.FoundingGalacticHaloRotationPanelPriors"
     },
     {
       "domain": "Founding_Cosmic_Dust_Panel",
       "tier": 96,
-      "record_count": 24,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 5,
+      "median_error_pct": 0.044121,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.FoundingCosmicDustPanelPriors"
     },
     {
       "domain": "Founding_White_Dwarf_Cooling_Panel",
       "tier": 96,
-      "record_count": 24,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 5,
+      "median_error_pct": 0.044923,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.FoundingWhiteDwarfCoolingPanelPriors"
     },
     {
       "domain": "Founding_Atmospheric_Ozone_Panel",
       "tier": 96,
-      "record_count": 24,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 5,
+      "median_error_pct": 0.023822,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.FoundingAtmosphericOzonePanelPriors"
     },
     {
       "domain": "Founding_Pulsar_Glitch_Panel",
       "tier": 96,
-      "record_count": 24,
-      "median_error_pct": 0.000561846,
-      "coverage_tier": "B_verified",
+      "record_count": 5,
+      "median_error_pct": 0.044923,
+      "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.FoundingPulsarGlitchPanelPriors"
     },
     {
