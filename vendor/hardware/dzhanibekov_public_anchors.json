@@ -1,0 +1,33 @@
+{
+  "source": "Public rigid-body / intermediate-axis (tennis racket / Dzhanibekov) literature; ISS video class; not free SKU fits",
+  "phenomenon": {
+    "id": "Dzhanibekov_intermediate_axis",
+    "also_known_as": ["tennis_racket_theorem", "intermediate_axis_theorem", "Janibekov_effect"],
+    "vacuum_environment": true,
+    "requires_classical_aether_drag": false,
+    "flip_angle_deg": 180.0,
+    "principal_axes": 3,
+    "stable_principal_axes": 2,
+    "unstable_principal_axes": 1
+  },
+  "axis_stability": [
+    {"id": "I_min_axis", "role": "stable", "index_order": 1},
+    {"id": "I_mid_axis", "role": "unstable_intermediate", "index_order": 2},
+    {"id": "I_max_axis", "role": "stable", "index_order": 3}
+  ],
+  "literature_geometry": {
+    "flip_radians": 3.141592653589793,
+    "note": "180° discrete reorientation of the intermediate principal axis"
+  },
+  "critique_context": {
+    "x_post_id": "2084655064602358240",
+    "author": "dr_logvinovich",
+    "claim_class": "macro_spin_flip_in_vacuum_without_fluid_push",
+    "fsot_response": "Euler rigid-body geometry + FSOT metric/condensate ontology; not luminiferous aether drag"
+  },
+  "solar_system_class_anchors": {
+    "kuiper_cliff_au_literature_class": 48.0,
+    "kuiper_cliff_au_logvinovich_claim": 46.77,
+    "note": "Outer TNO drop-off class; FSOT residual-gates seed shell vs literature class"
+  }
+}

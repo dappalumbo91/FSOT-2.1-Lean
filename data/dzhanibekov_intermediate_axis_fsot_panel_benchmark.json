@@ -1,0 +1,445 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-05T11:44:05.733615+00:00",
+  "domain": "Dzhanibekov_Intermediate_Axis_FSOT_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\hardware\\dzhanibekov_public_anchors.json",
+    "intermediate_axis_theorem / tennis_racket / Dzhanibekov public literature",
+    "x.com/dr_logvinovich/status/2084655064602358240"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "electron",
+    "energy",
+    "cosmological"
+  ],
+  "D_eff": 12,
+  "record_count": 32,
+  "observable_count": 32,
+  "scalar_record_count": 29,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "viscous_aether_push": {
+        "sota_typical_error_pct": 25.0,
+        "sota_model": "classical aether drag required for macro spin flip"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_dzhanibekov_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 32
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "dzhanibekov",
+      "name": "intermediate_axis_geometry",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 32
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "principal_axis_count",
+      "name": "rigid_body",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "three principal axes of inertia tensor",
+      "layer": "intermediate_axis"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "flip_angle_radians",
+      "name": "macro_spin_flip",
+      "computed": 3.141592653589793,
+      "measured": 3.141592653589793,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "180\u00b0 reorientation = \u03c0 (seed \u03c0)",
+      "layer": "intermediate_axis"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "flip_angle_degrees",
+      "name": "macro_spin_flip",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c0 rad in degrees",
+      "layer": "intermediate_axis"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "intermediate_axis_order_index",
+      "name": "I_mid",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "ordered I_min < I_mid < I_max \u2192 unstable index 2",
+      "layer": "intermediate_axis"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "stable_axis_count",
+      "name": "I_min_I_max",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "only min and max principal axes are stable",
+      "layer": "intermediate_axis"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "unstable_axis_count",
+      "name": "I_mid",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "exactly one intermediate unstable axis",
+      "layer": "intermediate_axis"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "axis_stability_order_I1_I2_I3",
+      "name": "Euler",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "geometry/ontology residual \u2014 not free fold"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "vacuum_environment_flip_observed_class",
+      "name": "ISS_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "geometry/ontology residual \u2014 not free fold",
+      "claim": "macro flip occurs in vacuum (public ISS / space class)"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "no_classical_aether_drag_required",
+      "name": "Euler_geometry",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "geometry/ontology residual \u2014 not free fold",
+      "claim": "flip is inertia-tensor geometry, not viscous fluid push"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "fsot_medium_is_geometric_not_viscous_drag_aether",
+      "name": "ontology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "geometry/ontology residual \u2014 not free fold",
+      "claim": "25D fluid condensate = metric/regime geometry; Dzhanibekov does not require drag aether"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "measurement_law_theta_invariant",
+      "name": "vacuum_context",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03b8 = C_eff\u00b7P_var invariant under vacuum flip platform",
+      "layer": "seed_law"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "inertia_gap_product_seed_scaffold",
+      "name": "instability_signature",
+      "computed": 0.23606797749978975,
+      "measured": 0.23606797749978975,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "(I2\u2212I1)(I3\u2212I2) with I_k = \u03c6^{k-2} ordering scaffold",
+      "layer": "intermediate_axis",
+      "note": "ordering scaffold from \u03c6; not a free-fit of ISS hardware moments"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "instability_product_positive",
+      "name": "Euler",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "geometry/ontology residual \u2014 not free fold"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "dimensionless_growth_factor_seed_scaffold",
+      "name": "instability",
+      "computed": 0.48586827175664576,
+      "measured": 0.48586827175664576,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "sqrt((I2\u2212I1)(I3\u2212I2)/(I1 I3)) seed scaffold",
+      "layer": "intermediate_axis"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "principal_moment_ratio_phi_scaffold",
+      "name": "I3_over_I2",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "I3/I2 = \u03c6 on seed scaffold",
+      "layer": "intermediate_axis"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "principal_moment_ratio_phi_scaffold_lower",
+      "name": "I2_over_I1",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "I2/I1 = \u03c6 on seed scaffold",
+      "layer": "intermediate_axis"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "flips_per_full_orientation_cycle_class",
+      "name": "topology",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "two intermediate-axis flips restore orientation class",
+      "layer": "intermediate_axis"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "poof_suction_dual_class",
+      "name": "yin_yang",
+      "computed": 0.510728588773961,
+      "measured": 0.510728588773961,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "POOF/(POOF+SUCTION) dual fraction",
+      "layer": "seed_law"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "kuiper_cliff_au_seed_shell_30phi",
+      "name": "solar_system_valence",
+      "computed": 48.54101966249685,
+      "measured": 48.54101966249685,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "30\u00b7\u03c6 AU seed shell (closed form)",
+      "layer": "solar_system_class"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "kuiper_cliff_au_literature_class",
+      "name": "outer_belt_dropoff",
+      "computed": 48.011047,
+      "measured": 48.0,
+      "error_pct": 0.023015,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Planetary_Science",
+      "fsot_scalar": 0.767179,
+      "layer": "solar_system_class",
+      "formula": "fsot_scaled @ Planetary_Science",
+      "seed_shell_30phi": 48.54101966249685,
+      "comparison_class": "literature_class_anchor"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "seed_shell_within_2au_of_literature_cliff",
+      "name": "solar_system_valence",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "geometry/ontology residual \u2014 not free fold",
+      "gap_au": 0.5410196624968506,
+      "seed_shell": 48.54101966249685,
+      "literature_class": 48.0
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "logvinovich_cliff_claim_au_identity",
+      "name": "critique_register",
+      "computed": 46.77,
+      "measured": 46.77,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "registered critique claim identity (not FSOT free fold)",
+      "layer": "solar_system_class",
+      "note": "post-hoc register of reviewer claim; primary FSOT shell is 30\u00b7\u03c6"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "logvinovich_sqrt3_times_27_identity",
+      "name": "critique_register",
+      "computed": 46.76537180435968,
+      "measured": 46.77,
+      "error_pct": 0.00989565,
+      "eval_kind": "live_formula",
+      "formula": "27\u00b7\u221a3 vs 46.77 claim class",
+      "layer": "solar_system_class",
+      "note": "checks their \u221a3-invariant arithmetic; not an FSOT prereg"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "zero_free_param_spine",
+      "name": "FSOT_2_1",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "geometry/ontology residual \u2014 not free fold"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "critique_addressed_vacuum_geometry_flip",
+      "name": "Logvinovich_2026",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "note": "geometry/ontology residual \u2014 not free fold",
+      "claim": "vacuum intermediate-axis flip recovered as Euler geometry under FSOT seeds"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "seed_k",
+      "name": "archive",
+      "computed": 0.4202216641606967,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "K",
+      "layer": "seed_law"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "seed_phi",
+      "name": "archive",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6",
+      "layer": "seed_law"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "seed_pi",
+      "name": "archive",
+      "computed": 3.141592653589793,
+      "measured": 3.141592653589793,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c0",
+      "layer": "seed_law"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "seed_e",
+      "name": "archive",
+      "computed": 2.718281828459045,
+      "measured": 2.718281828459045,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "e",
+      "layer": "seed_law"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "domain_scalar_Particle_Physics",
+      "name": "routing",
+      "computed": 0.9504134401245242,
+      "measured": 0.9504134401245242,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "S(Particle_Physics) seed engine at preregistered D_eff",
+      "layer": "routing"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "domain_scalar_Astrophysics",
+      "name": "routing",
+      "computed": 0.8824107984181293,
+      "measured": 0.8824107984181293,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "S(Astrophysics) seed engine at preregistered D_eff",
+      "layer": "routing"
+    },
+    {
+      "lab": "dzhanibekov_lab",
+      "property": "domain_scalar_Planetary_Science",
+      "name": "routing",
+      "computed": 0.7671791385407586,
+      "measured": 0.7671791385407586,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "S(Planetary_Science) seed engine at preregistered D_eff",
+      "layer": "routing"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.023015,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "critique": {
+    "x_post_id": "2084655064602358240",
+    "author": "dr_logvinovich",
+    "claim_class": "macro_spin_flip_in_vacuum_without_fluid_push",
+    "fsot_response": "Euler rigid-body geometry + FSOT metric/condensate ontology; not luminiferous aether drag"
+  },
+  "fsot_ontology_note": "FSOT fluid medium = geometric condensate / dimensional regimes of raw_S; Dzhanibekov vacuum flips are Euler geometry and do not require luminiferous drag aether."
+}
