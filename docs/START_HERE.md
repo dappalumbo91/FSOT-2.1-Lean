@@ -20,17 +20,28 @@ It is the **public formal face** of FSOT. Related embodiments (Zig mind, neural 
 
 ---
 
-## 10-minute path
+## Pick your audience first
+
+Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
+
+| You are… | Start with |
+|----------|------------|
+| Curious lay reader | [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) |
+| Working scientist / engineer | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) |
+| PhD / formal methods | Math key §14 + [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) |
+| Here to break it | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
+
+## 10-minute path (any technical reader)
 
 | Step | Do this | Why |
 |------|---------|-----|
-| 1 | Read [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) | Seeds + scalar in one page |
-| 2 | Skim [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) | What we may claim (Label A vs B) |
-| 3 | Open [`CURRENT_STATUS.md`](CURRENT_STATUS.md) | Green count, pin, multiprover flags |
+| 1 | Open [`CURRENT_STATUS.md`](CURRENT_STATUS.md) | Live pin, green count, multiprover |
+| 2 | Read [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) | Seeds + scalar in one page |
+| 3 | Skim [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) | What we may claim (Label A vs B) |
 | 4 | Run `python scripts/audit_all_benchmark_margins.py` | Empirical green gate |
 | 5 | Optional formal: `python scripts/run_cross_proof_verification.py` | Multi-prover report (long) |
 
-Skeptic clone path: [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md).
+Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 
 ---
 

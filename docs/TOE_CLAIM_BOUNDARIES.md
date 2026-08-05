@@ -16,7 +16,7 @@
 |----|-----------|----------|
 | A1 | Seed-locked engine (π,e,φ,γ,G) | `vendor/fsot_compute.py` pin D1D38A |
 | A2 | Preregistered routes, not per-row LS fits | `parameter_honesty_closure.json` |
-| A3 | Multi-domain residual gate ≤ 0.5% | `benchmark_margin_audit.json` (410/410) |
+| A3 | Multi-domain residual gate ≤ 0.5% | `benchmark_margin_audit.json` (live N/N in `docs/CURRENT_STATUS.md`) |
 | A4 | Multi-prover residual triangulation | `cross_proof_verification_report.json` overall_ok |
 | A5 | Falsification registry | `falsification_registry_closure.json` |
 | A6 | Public reproduce path | `docs/SKEPTIC_REPLICATION_KIT.md` |

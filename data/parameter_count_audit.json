@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T15:52:59.027119+00:00",
+  "generated_at": "2026-08-05T12:36:17.484451+00:00",
   "headline_claim": "zero free parameters",
   "audit_verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes",
   "parameter_model": "Constants and domain-route coordinates derive from seeds (\u03c0, e, \u03c6, \u03b3, G). The 35\u00d75 domain table is the fractal routing spine \u2014 not a per-observable fit vector.",
@@ -292,11 +292,11 @@
       }
     ]
   },
-  "domain_route_note": "175 core route slots + 1101 extension route slots = 1276 preregistered coordinates (D_eff, \u03b4\u03c8, recent_hits, \u03b4\u03b8, C) \u2014 seed-derived folds, not least-squares tunables.",
+  "domain_route_note": "175 core route slots + 1113 extension route slots = 1288 preregistered coordinates (D_eff, \u03b4\u03c8, recent_hits, \u03b4\u03b8, C) \u2014 seed-derived folds, not least-squares tunables.",
   "extension_domains": {
-    "extension_domain_count": 367,
+    "extension_domain_count": 371,
     "per_extension_tunable_fields": 3,
-    "total_extension_slots": 1101,
+    "total_extension_slots": 1113,
     "domains": [
       {
         "domain": "AI_Galactic_Orbital_Bridge",
@@ -1349,6 +1349,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "MPCORB_Minor_Planet_Catalog",
+        "D_eff": 21,
+        "delta_psi": 0.9,
+        "recent_hits": 1
+      },
+      {
         "domain": "Machine_And_Molecule_Live_Panel",
         "D_eff": 15,
         "delta_psi": 0.72,
@@ -2207,6 +2213,24 @@
         "recent_hits": 2
       },
       {
+        "domain": "TOE_Contested_Sector_Refresh",
+        "D_eff": 25,
+        "delta_psi": 1.0,
+        "recent_hits": 0
+      },
+      {
+        "domain": "TOE_Dynamics",
+        "D_eff": 15,
+        "delta_psi": 0.9,
+        "recent_hits": 1
+      },
+      {
+        "domain": "TOE_Limit_Recovery",
+        "D_eff": 22,
+        "delta_psi": 1.0,
+        "recent_hits": 0
+      },
+      {
         "domain": "Tectonics",
         "D_eff": 17,
         "delta_psi": 0.88,
@@ -2510,12 +2534,12 @@
     },
     {
       "pattern": "mpf\\(\"0\\.99\"\\)",
-      "line": 1101,
+      "line": 725,
       "match": "mpf(\"0.99\")"
     },
     {
       "pattern": "mpf\\(\"0\\.99\"\\)",
-      "line": 1397,
+      "line": 1021,
       "match": "mpf(\"0.99\")"
     },
     {
@@ -2585,8 +2609,8 @@
     }
   ],
   "literal_coefficient_count": 16,
-  "route_slot_count": 1276,
-  "empirical_tunable_slot_estimate": 1316,
+  "route_slot_count": 1288,
+  "empirical_tunable_slot_estimate": 1328,
   "honest_framing": "FSOT uses a fixed closed-form constant spine (\u03c6, e, \u03c0, \u03b3, G) with deterministic per-domain route coordinates. Zero free parameters means: no post-hoc dial added when a prediction misses \u2014 routes are declared upfront.",
   "what_is_zero_free": [
     "All constants from five seeds \u2014 no fitted physics constants",

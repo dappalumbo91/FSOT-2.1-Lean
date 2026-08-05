@@ -1,9 +1,18 @@
 # FSOT Explained — For Everyone
 
 **Fluid Spacetime Omni-Theory (FSOT)**  
-**Author:** Damian Arthur Palumbo
+**Author:** Damian Arthur Palumbo  
+**Updated:** 2026-08-05 (accuracy pass — live counts live in [`CURRENT_STATUS.md`](CURRENT_STATUS.md))
 
 This is the plain-language explanation of what FSOT is, why it exists, and how the mathematics supports the philosophy — without requiring a physics degree.
+
+| If you want… | Go here |
+|--------------|---------|
+| Where to start in the repo | [`START_HERE.md`](START_HERE.md) |
+| Who should read which doc | [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) |
+| How to check the math yourself | [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
+| Scientist one-page math | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) |
+| Full technical key | [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) |
 
 For technical proof details, see `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md` and `docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`.
 
@@ -11,7 +20,7 @@ For technical proof details, see `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.m
 
 ## In one paragraph
 
-Imagine the universe is not a collection of separate puzzles (gravity, atoms, life, mind) but **one flowing medium** — like an ocean where waves at different sizes follow the same rules. FSOT is a mathematical way to describe that ocean using only five seed numbers from geometry (π, e, φ, γ, G). From those seeds, one formula produces predictions across **cosmology, chemistry, biology, consciousness, economics, and hundreds more topics** — and a formal verification system checks whether the predictions match real measurements.
+Imagine the universe is not a collection of separate puzzles (gravity, atoms, life, mind) but **one flowing medium** — like an ocean where waves at different sizes follow the same rules. FSOT is a mathematical way to describe that ocean using only five seed numbers from geometry (π, e, φ, γ, G). From those seeds, one formula produces predictions across **cosmology, chemistry, biology, consciousness, economics, and hundreds of residual-gated domains** — and a formal verification system checks whether the predictions match real measurements (green if typical error stays under half a percent; live scoreboard in [`CURRENT_STATUS.md`](CURRENT_STATUS.md)).
 
 ---
 
@@ -26,7 +35,7 @@ Everything is the same process at different zoom levels:
 - A storm discharging  
 - Two galaxies colliding  
 
-FSOT calls this **As Above, So Below**. It is not poetry only — it is how the theory is built and tested across 340 extension domains.
+FSOT calls this **As Above, So Below**. It is not poetry only — it is how the theory is built and tested across a large multi-domain atlas (hundreds of residual-gated panels; exact counts in [`CURRENT_STATUS.md`](CURRENT_STATUS.md)).
 
 ### 2. Fluid spacetime
 

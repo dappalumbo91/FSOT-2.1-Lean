@@ -7,7 +7,7 @@
 **Edition:** v2.8 — Label A + Label B (T1–T6) · densify remediation · Dzhanibekov panel · multiprover green · **2026-08-05**  
 **Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)  
 **Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · sync checklist: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)  
-**New here?** → **[`docs/START_HERE.md`](docs/START_HERE.md)** · Machine/OS path → [`docs/NEURON_ZIG_TO_OS_ROADMAP.md`](docs/NEURON_ZIG_TO_OS_ROADMAP.md)
+**New here?** → **[`docs/START_HERE.md`](docs/START_HERE.md)** · Audience map → [`docs/DOCUMENTATION_MAP.md`](docs/DOCUMENTATION_MAP.md) · Reproduce → [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) · Math key → [`docs/FSOT_MATH_KEY.md`](docs/FSOT_MATH_KEY.md)
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
 

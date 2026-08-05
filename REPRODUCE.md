@@ -1,6 +1,10 @@
 # FSOT Formal Verification — Reproduction Guide
 
-This repository machine-checks FSOT domain scalar **signs** and Wave-1 ΛCDM **numeric certificates** at canonical parameters. The formal source is ~0.3 MB; the first Lean build downloads Mathlib (~3 GB under `.lake/`).
+> **Human-first guide (recommended for most readers):** [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md)  
+> **Audience map:** [`docs/DOCUMENTATION_MAP.md`](docs/DOCUMENTATION_MAP.md)  
+> **Live pin / green counts:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) — do not trust fixed ratios in older prose.
+
+This repository machine-checks FSOT domain scalar structure, residual gates, and multiprover exports. The formal Lean source is comparatively small; the first Lean build downloads Mathlib (~3 GB under `.lake/`).
 
 ## Prerequisites
 
@@ -43,7 +47,7 @@ python scripts/run_cross_proof_verification.py
 
 **Expected when toolchains installed:** `overall_ok: true`, `seven_way_bare_metal: true`, `github_ready: true`.
 
-**Honesty gates:** Report includes `proof_debt` (F\* assumes, π/e certified axioms). `status_local` in `data/cross_proof_verification_manifest.yaml` is **auto-generated** — do not hand-edit.
+**Honesty gates:** Report includes `proof_debt`. π/e base intervals are **native** (Coq Interval; Isabelle `approximation`); remaining debt is documented in the report. `status_local` in `data/cross_proof_verification_manifest.yaml` is **auto-generated** — do not hand-edit.
 
 ESP32 hardware harness is **optional** (skipped without COM port). Use `--require-esp32` only when flashing hardware.
 

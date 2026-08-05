@@ -1,7 +1,8 @@
 # FSOT Mathematical Key — one page (scientists)
 
-**Fluid Spacetime Omni-Theory** · pin **D1D38A** · 2026-08-05 · green **430/430** (live: `docs/CURRENT_STATUS.md`)  
-Full key: `docs/FSOT_MATH_KEY.md` · Repo: https://github.com/dappalumbo91/FSOT-2.1-Lean
+**Fluid Spacetime Omni-Theory** · pin **D1D38A** (match=True) · 2026-08-05  
+Full key: `docs/FSOT_MATH_KEY.md` · Live status: `docs/CURRENT_STATUS.md` · Map: `docs/DOCUMENTATION_MAP.md`  
+Repo: https://github.com/dappalumbo91/FSOT-2.1-Lean
 
 ## Unified principle
 
@@ -35,23 +36,26 @@ Factors: `scripts/fsot_api_predict_lib.py`. Engine: `vendor/fsot_compute.py`.
 
 **Mismatch rule:** first check dimensional interface (e.g. NEO vs belt vs distant), then observer / \(C_{\mathrm{factor}}\) / Poof — never add free parameters.
 
-## Snapshot (this repo edition)
+## Snapshot (regenerated — prefer CURRENT_STATUS if conflict)
 
 | Quantity | Value |
 |----------|------:|
+| Pin | D1D38A (match=True) |
 | Atlas domains | 403 |
-| Green benchmarks | 430/430 |
-| Empirical records (atlas sum) | ~2.63M |
+| Green benchmarks | 432/432 |
+| Scalar-record envelope | 61,335 (envelope) |
 | MPCORB objects · residual | 1,554,101 · 0.023% |
-| Scientific catalog obligations | 1912 |
+| Scientific catalog obligations | 2025 |
+| π/e inventory decimal-verified | 68/68 |
+| Multiprover overall_ok | True |
 
 ## Verification stack (not decoration)
 
-Lean 4 (master) · Coq · Isabelle · F* · Rust replay · SMT (Z3/CVC5) · TLA+ routing flow  
+Lean 4 (master) · Coq (Interval-native π/e) · Isabelle · F* · Rust replay · SMT (Z3/CVC5) · TLA+ routing · hardware/QEMU  
 Layers: **A** engine math · **B** empirical residuals · **C** streams/catalog integrity  
 
 Honesty: multi-prover locks **exported residual gates**; Python/data own measurements.  
-Kill path: `python scripts/run_publication_verification_bundle.py`
+Reproduce: `docs/REPRODUCIBILITY.md` · Kill path: `python scripts/run_publication_verification_bundle.py`
 
 ---
-*Not a second theory — the same key applied at every domain fold.*
+*Not a second theory — the same key applied at every domain fold. PhD scope notes: FSOT_MATH_KEY.md §14.*

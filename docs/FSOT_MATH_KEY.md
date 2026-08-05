@@ -1,9 +1,11 @@
 # FSOT Mathematical Key — unified principle for every domain
 
-**Edition:** 2026-08-05  
-**Authority pin:** `D1D38A` · `vendor/fsot_compute.py`  
+**Edition:** 2026-08-05 (documentation accuracy pass)  
+**Authority pin:** `D1D38A` · `vendor/fsot_compute.py` (SHA-256 prefix; confirm with [`CURRENT_STATUS.md`](CURRENT_STATUS.md))  
 **Precision gates:** green ≤ **0.5%** pooled median · aspiration ≤ **0.05%** (`scripts/fsot_precision_constants.py`)  
-**Live green count:** [`docs/CURRENT_STATUS.md`](CURRENT_STATUS.md) (currently **430/430** margin-audit green)  
+**Live green count:** **always** [`CURRENT_STATUS.md`](CURRENT_STATUS.md) — do not trust memorized ratios in prose  
+**Audience map:** [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) (lay · scientist · PhD)  
+**Reproduce:** [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md)  
 **Full atlas:** `data/publication/domain_atlas.csv` + extension benchmarks · MPCORB-class catalogs in-repo
 
 This is the **single readable key** for using the math across every covered domain.  
@@ -184,30 +186,37 @@ Field language (MAPE / ppm): `data/scientific_error_metrics_map.md`
 
 ## 7. What verification frameworks actually prove
 
-| Layer | Frameworks | Proves |
-|-------|------------|--------|
-| **A Engine math** | Lean 4 (master), Coq, Isabelle, F\*, Rust, seeds pin | Identities, scalar structure, exported bounds |
-| **B Empirical atlas** | Python + **430** green benchmarks (live: CURRENT_STATUS) | Domain residuals vs data ≤ 0.5% |
+| Layer | Frameworks | Proves / checks |
+|-------|------------|-----------------|
+| **A Engine math** | Lean 4 (master), Coq (Interval-native π/e base), Isabelle, F\*, Rust, seeds pin | Identities, scalar structure, exported bounds, transcendental digit intervals |
+| **B Empirical atlas** | Python + green benchmarks (live: CURRENT_STATUS) | Domain residuals vs data ≤ 0.5% pooled median |
 | **C Streams / catalogs** | Live APIs, MPCORB, MAST, … | Provenance + integrity (e.g. Kepler n↔a) |
 | **Bulk bounds** | Z3 / CVC5 SMT | Conjunction of residual inequalities |
 | **Flow** | TLA+ | Domain-routing state machine (no gate skips) |
+| **Hardware** | QEMU / Rust kernel / optional ESP32 | Executable pack, θ, serial markers |
 
 Roles map: `docs/FORMAL_PIPELINE_ROLES.md`  
-Granularity audit: `docs/VERIFICATION_GRANULARITY_AUDIT.md`
+Granularity audit: `docs/VERIFICATION_GRANULARITY_AUDIT.md`  
+Honesty ledger: `docs/VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`
 
-**Positioning (honest):** multi-prover + zero free parameters + hundreds of domains at sub-percent residuals is an unusually complete public stack for a novel scalar framework. Claims should still match layer (A/B/C) — not “proved the universe in Coq.”
+**Positioning (honest):** multi-prover + zero free parameters + hundreds of residual-gated domains is a strong public stack for a novel scalar framework. Claims must still match layer (A/B/C) — **not** “proved the universe in Coq,” and **not** “provers re-downloaded every catalog.”
 
 ---
 
 ## 8. Domain coverage snapshot
 
-| Quantity | Value |
-|----------|------:|
-| Publication atlas domains | **403** |
-| Margin-audit green benchmarks | **430 / 430** (refresh via `build_repo_status_snapshot.py`) |
-| Empirical record sum (atlas) | **~2.63M** (incl. MPCORB 1.55M) |
-| Scientific catalog obligations | **~1912** multi-prover residual gates |
-| MPCORB pooled residual | **0.023015%** (A_strong, D_eff=21) |
+> **Live columns:** regenerate `python scripts/build_repo_status_snapshot.py` and `python scripts/build_fsot_math_key_onepager.py`.  
+> Figures below are **order-of-magnitude / last-documented class** only if status is offline.
+
+| Quantity | How to read | Typical class (refresh live) |
+|----------|-------------|------------------------------|
+| Publication atlas domains | `data/publication/domain_atlas.csv` row count | ~403 |
+| Margin-audit green benchmarks | `green_gate_pass_count` / `benchmark_file_count` | see CURRENT_STATUS (e.g. 432/432) |
+| Scalar-record envelope | status snapshot | see CURRENT_STATUS |
+| Scientific catalog obligations | `verification/obligations/scientific_catalog_spine.json` | ~2025 |
+| Full formal spine obligations | `verification/obligations/full_formal_spine.json` | ~2430 |
+| Transcendental inventory | `python_decimal_verified` on 68 lemmas | 68/68 |
+| MPCORB pooled residual | `data/mpcorb_fsot_benchmark.json` | ~0.023% (A_strong, D_eff=21) |
 
 **Largest extension by records:** `MPCORB_Minor_Planet_Catalog` — IAU full minor-planet catalog + comets.  
 **Lean:** `FSOT.Formal.MpcorbMinorPlanetCatalogPriors`
@@ -319,8 +328,68 @@ python scripts/run_tla_domain_routing_check.py
 | **One-pager (PDF)** | [`docs/FSOT_MATH_KEY_ONEPAGER.pdf`](FSOT_MATH_KEY_ONEPAGER.pdf) · MD twin `docs/FSOT_MATH_KEY_ONEPAGER.md` |
 | **ToE claim boundaries (frozen)** | `docs/TOE_CLAIM_BOUNDARIES.md` |
 | **ToE gap closure** | `docs/TOE_GAP_CLOSURE.md` · `python scripts/build_toe_gap_closure.py` |
+| **Documentation map** | `docs/DOCUMENTATION_MAP.md` |
+| **Reproducibility** | `docs/REPRODUCIBILITY.md` |
+| **Live status** | `docs/CURRENT_STATUS.md` |
 
 ---
 
-**Bottom line:** one seed set, one scalar \(S\), one prediction law, many dimensional interfaces.  
+## 14. PhD / formal-methods reading (precision of claims)
+
+This section is for mathematicians and formal-methods researchers who need **scope**, not slogans.
+
+### 14.1 What is formalized
+
+| Object | Artifact | Status class |
+|--------|----------|--------------|
+| Scalar \(S=K(T_1+T_2+T_3)\) on \(\mathbb{R}\) | `FSOT/Formal/Scalar.lean`, Isabelle `FSOTScalarMath.thy` | Engine definitions + identities |
+| Seed bounds (e.g. tight \(\pi\) digit intervals) | Lean Mathlib chain in `Bounds.lean`; Coq `TranscendentalBoundsNative.v` (Interval); Isabelle `approximation` | Machine-checked inequalities on \(\mathbb{R}\) |
+| Domain residual **gates** as exported literals | Priors modules + `scientific_catalog_spine` obligations | “\( \varepsilon_{\mathrm{med}} < 0.5 \)” style, not catalog re-ingest |
+| Routing / control flow | TLA+ domain-routing | Invariant: no silent gate skip |
+| Bulk continuous residual conjunction | SMT (Z3/CVC5) | Satisfiability of exported bounds |
+
+### 14.2 What is *not* claimed as a theorem
+
+1. **Uniqueness of Einstein–Hilbert measure** or full spin-2 Fock uniqueness from the fluid action (probe layer residual-gated; uniqueness open — see ToE gap report).  
+2. **Full non-abelian path-integral confinement theorem** (probe scales residual-gated; uniqueness open).  
+3. That multiprover **re-derives** raw telescope / survey pixels — it re-checks **exported residual obligations**.  
+4. That Label B “ToE” means peer-reviewed acceptance — peer process is separate (`TOE_CLAIM_BOUNDARIES.md`).
+
+### 14.3 Residual metric (scientific, not decorative)
+
+For each observable \(i\) with computed \(c_i\) and measured \(m_i\):
+
+\[
+\varepsilon_i = 100\cdot\frac{|c_i-m_i|}{\max(|m_i|,\varepsilon_{\mathrm{floor}})}.
+\]
+
+Domain headline = **pooled median** of \(\varepsilon_i\).  
+**Green** iff that median \(\le 0.5\) (and classifier accuracy \(\ge 99.5\%\) where applicable).  
+**Aspiration** band \(0.05\%\) is soft for tier scalar work — not a second secret green gate.
+
+Prediction form used in the atlas:
+
+\[
+c = m\cdot\bigl(1 + |S(D)|\,f_D\bigr),
+\]
+
+with \(S(D)=\texttt{compute\_scalar}\) at preregistered domain \(D\) and factor \(f_D\) from a **fixed** table (`fsot_api_predict_lib.py`) — not least-squares per row.
+
+### 14.4 Zero free parameters (operational definition)
+
+- **Allowed:** five seeds; closed derived stack; preregistered \(D_{\mathrm{eff}}\) / observer flags.  
+- **Forbidden:** per-observable fit coefficients, silent rescaling of \(m\), densify padding that copies residuals across domains.  
+- **Audit:** `python scripts/audit_parameter_count.py` must report **ZERO_FREE**.
+
+### 14.5 Suggested PhD audit order
+
+1. Pin D1D38A + `Scalar.lean` definitions.  
+2. One domain residual: recompute `fsot_scaled` on a public \(m\).  
+3. Margin audit green on clean clone.  
+4. One multiprover path (e.g. Lean prior theorem or Coq Interval \(\pi\) base).  
+5. Read honesty ledger before writing a referee report.
+
+---
+
+**Bottom line:** one seed set, one scalar \(S\), one prediction law, many dimensional interfaces — with **explicit** layers of what is identity-proved, residual-gated, or still open uniqueness research.  
 That is the mathematical key for every domain FSOT covers — including the full IAU minor-planet catalog at framework precision.

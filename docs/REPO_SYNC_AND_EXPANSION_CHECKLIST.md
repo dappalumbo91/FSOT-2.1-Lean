@@ -33,11 +33,12 @@
 | Doc | What to update |
 |-----|----------------|
 | [`CURRENT_STATUS.md`](CURRENT_STATUS.md) | Auto via snapshot script |
-| [`README.md`](../README.md) | Edition date + **headline** green count + links to new spines |
-| [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) | Green count / edition |
-| [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) | Green count |
-| [`CLEAR_PATH_FOR_INDEPENDENTS.md`](CLEAR_PATH_FOR_INDEPENDENTS.md) | Expect green N/N |
-| [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) | Only if kill path changed |
+| [`README.md`](../README.md) | Edition date + links; prefer CURRENT_STATUS for live green |
+| [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) | Structural math; **avoid hard-coded N/N** — point at status |
+| [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) | `python scripts/build_fsot_math_key_onepager.py` |
+| [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) | `python scripts/build_skeptic_replication_kit.py` |
+| [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) / [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) | Only if paths or kill criteria change |
+| [`CLEAR_PATH_FOR_INDEPENDENTS.md`](CLEAR_PATH_FOR_INDEPENDENTS.md) | Expect green N/N via CURRENT_STATUS |
 | Domain-specific docs | Hardware, QCE, Dzhanibekov, etc. when that domain moved |
 | [`verification/README.md`](../verification/README.md) | Pass bar if multiprover shape changed |
 | Paper scaffolds under `papers/` | Only when freezing a preprint |

@@ -14,16 +14,37 @@ OUT_MD = ROOT / "docs" / "FSOT_MATH_KEY_ONEPAGER.md"
 
 def _stats() -> dict:
     out: dict = {
-        "atlas_domains": "403+",
-        "green": "410/410",
-        "records": "~2.63M",
+        "atlas_domains": "—",
+        "green": "see CURRENT_STATUS",
+        "records": "see CURRENT_STATUS",
         "mpcorb_objects": "1,554,101",
         "mpcorb_residual": "0.023%",
-        "catalog_obligations": "~1912",
+        "catalog_obligations": "—",
+        "transcendental_verified": "68/68",
         "green_gate": "0.5%",
         "aspiration": "0.05%",
         "pin": "D1D38A",
+        "pin_match": "?",
+        "multiprover_ok": "?",
     }
+    st = ROOT / "data" / "repo_status_snapshot.json"
+    if st.exists():
+        d = json.loads(st.read_text(encoding="utf-8"))
+        emp = d.get("empirical") or {}
+        auth = d.get("authority") or {}
+        mp = d.get("multiprover") or {}
+        if emp.get("green_gate_pass_count") is not None and emp.get("benchmark_file_count") is not None:
+            out["green"] = f"{emp['green_gate_pass_count']}/{emp['benchmark_file_count']}"
+        if emp.get("total_scalar_records") is not None:
+            out["records"] = f"{int(emp['total_scalar_records']):,} (envelope)"
+        if auth.get("pin_prefix"):
+            out["pin"] = str(auth["pin_prefix"])
+        if "pin_match" in auth:
+            out["pin_match"] = str(auth["pin_match"])
+        if "overall_ok" in mp:
+            out["multiprover_ok"] = str(mp["overall_ok"])
+        if mp.get("catalog_obligations") is not None:
+            out["catalog_obligations"] = str(mp["catalog_obligations"])
     bm = ROOT / "data" / "benchmark_margin_audit.json"
     if bm.exists():
         d = json.loads(bm.read_text(encoding="utf-8"))
@@ -43,6 +64,13 @@ def _stats() -> dict:
         d = json.loads(cat.read_text(encoding="utf-8"))
         if d.get("obligation_count"):
             out["catalog_obligations"] = str(d["obligation_count"])
+    trans = ROOT / "verification" / "obligations" / "transcendental_bounds.json"
+    if trans.exists():
+        d = json.loads(trans.read_text(encoding="utf-8"))
+        if d.get("obligation_count") is not None and d.get("python_decimal_verified_count") is not None:
+            out["transcendental_verified"] = (
+                f"{d['python_decimal_verified_count']}/{d['obligation_count']}"
+            )
     atlas = ROOT / "data" / "publication" / "domain_atlas.csv"
     if atlas.exists():
         n = sum(1 for _ in atlas.read_text(encoding="utf-8").splitlines() if _.strip()) - 1
@@ -54,8 +82,9 @@ def _stats() -> dict:
 def write_md(s: dict) -> None:
     md = f"""# FSOT Mathematical Key — one page (scientists)
 
-**Fluid Spacetime Omni-Theory** · pin **{s['pin']}** · {datetime.now(timezone.utc).date().isoformat()}  
-Full key: `docs/FSOT_MATH_KEY.md` · Repo: https://github.com/dappalumbo91/FSOT-2.1-Lean
+**Fluid Spacetime Omni-Theory** · pin **{s['pin']}** (match={s.get('pin_match', '?')}) · {datetime.now(timezone.utc).date().isoformat()}  
+Full key: `docs/FSOT_MATH_KEY.md` · Live status: `docs/CURRENT_STATUS.md` · Map: `docs/DOCUMENTATION_MAP.md`  
+Repo: https://github.com/dappalumbo91/FSOT-2.1-Lean
 
 ## Unified principle
 
@@ -89,26 +118,29 @@ Factors: `scripts/fsot_api_predict_lib.py`. Engine: `vendor/fsot_compute.py`.
 
 **Mismatch rule:** first check dimensional interface (e.g. NEO vs belt vs distant), then observer / \\(C_{{\\mathrm{{factor}}}}\\) / Poof — never add free parameters.
 
-## Snapshot (this repo edition)
+## Snapshot (regenerated — prefer CURRENT_STATUS if conflict)
 
 | Quantity | Value |
 |----------|------:|
+| Pin | {s['pin']} (match={s.get('pin_match', '?')}) |
 | Atlas domains | {s['atlas_domains']} |
 | Green benchmarks | {s['green']} |
-| Empirical records (atlas sum) | {s['records']} |
+| Scalar-record envelope | {s['records']} |
 | MPCORB objects · residual | {s['mpcorb_objects']} · {s['mpcorb_residual']} |
 | Scientific catalog obligations | {s['catalog_obligations']} |
+| π/e inventory decimal-verified | {s.get('transcendental_verified', '68/68')} |
+| Multiprover overall_ok | {s.get('multiprover_ok', '?')} |
 
 ## Verification stack (not decoration)
 
-Lean 4 (master) · Coq · Isabelle · F* · Rust replay · SMT (Z3/CVC5) · TLA+ routing flow  
+Lean 4 (master) · Coq (Interval-native π/e) · Isabelle · F* · Rust replay · SMT (Z3/CVC5) · TLA+ routing · hardware/QEMU  
 Layers: **A** engine math · **B** empirical residuals · **C** streams/catalog integrity  
 
 Honesty: multi-prover locks **exported residual gates**; Python/data own measurements.  
-Kill path: `python scripts/run_publication_verification_bundle.py`
+Reproduce: `docs/REPRODUCIBILITY.md` · Kill path: `python scripts/run_publication_verification_bundle.py`
 
 ---
-*Not a second theory — the same key applied at every domain fold.*
+*Not a second theory — the same key applied at every domain fold. PhD scope notes: FSOT_MATH_KEY.md §14.*
 """
     OUT_MD.write_text(md, encoding="utf-8")
     print(f"Wrote {OUT_MD}")
