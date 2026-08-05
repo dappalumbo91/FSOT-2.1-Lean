@@ -31,7 +31,7 @@ theorem knowledge_base_catalog_formulas_pos : 0 < knowledge_base_catalog_formula
 
 theorem knowledge_base_observable_matched_le_verified :
     knowledge_base_observable_verified_matched ≤ knowledge_base_observable_verified_formulas := by
-  unfold knowledge_base_observable_verified_matched knowledge_base_observable_verified_formulas; norm_num
+  unfold knowledge_base_observable_verified_matched knowledge_base_observable_verified_formulas; decide
 
 /-- Bundle: 19k catalog per-formula pass + 7941 strict-empirical observable bridge. -/
 theorem knowledge_base_corpus_bundle :

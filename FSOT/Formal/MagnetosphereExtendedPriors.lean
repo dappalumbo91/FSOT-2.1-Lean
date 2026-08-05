@@ -32,15 +32,15 @@ theorem magnetosphere_extended_historical_hours_pos : 0 < magnetosphere_extended
 
 theorem magnetosphere_extended_historical_match_le_total :
     magnetosphere_extended_historical_match_count ≤ magnetosphere_extended_historical_hours := by
-  unfold magnetosphere_extended_historical_match_count magnetosphere_extended_historical_hours; norm_num
+  unfold magnetosphere_extended_historical_match_count magnetosphere_extended_historical_hours; decide
 
 theorem magnetosphere_extended_storm_holdout_match_le_total :
     magnetosphere_extended_storm_holdout_match_count ≤ magnetosphere_extended_storm_holdout_hours := by
-  unfold magnetosphere_extended_storm_holdout_match_count magnetosphere_extended_storm_holdout_hours; norm_num
+  unfold magnetosphere_extended_storm_holdout_match_count magnetosphere_extended_storm_holdout_hours; decide
 
 theorem magnetosphere_extended_bz_match_le_total :
     magnetosphere_extended_bz_match_count ≤ magnetosphere_extended_bz_record_count := by
-  unfold magnetosphere_extended_bz_match_count magnetosphere_extended_bz_record_count; norm_num
+  unfold magnetosphere_extended_bz_match_count magnetosphere_extended_bz_record_count; decide
 
 theorem magnetosphere_extended_bundle :
     magnetosphere_extended_historical_hours = 120879 ∧

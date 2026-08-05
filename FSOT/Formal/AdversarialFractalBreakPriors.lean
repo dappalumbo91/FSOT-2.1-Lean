@@ -24,14 +24,12 @@ theorem adv_brk_observable_count_pos : 0 < adv_brk_observable_count := by
 theorem adv_brk_pooled_median_under_half_pct :
     adv_brk_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold adv_brk_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem adv_brk_headline_median_under_half_pct :
     adv_brk_headline_median_error_pct < (0.5 : ℝ) := by
   unfold adv_brk_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem adv_brk_beats_sota_headlines_pos : 0 < adv_brk_beats_sota_headlines := by
   unfold adv_brk_beats_sota_headlines; decide

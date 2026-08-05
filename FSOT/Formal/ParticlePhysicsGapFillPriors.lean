@@ -23,14 +23,12 @@ theorem particle_physics_gap_fill_observable_count_pos : 0 < particle_physics_ga
 theorem particle_physics_gap_fill_pooled_median_under_half_pct :
     particle_physics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold particle_physics_gap_fill_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.002729984252880815  : ℝ) < 0.5)
 
 theorem particle_physics_gap_fill_headline_median_under_half_pct :
     particle_physics_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold particle_physics_gap_fill_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.002729984252880815  : ℝ) < 0.5)
 
 theorem particle_physics_gap_fill_beats_sota_headlines_pos : 0 < particle_physics_gap_fill_beats_sota_headlines := by
   unfold particle_physics_gap_fill_beats_sota_headlines; decide

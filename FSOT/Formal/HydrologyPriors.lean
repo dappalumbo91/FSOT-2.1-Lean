@@ -22,7 +22,7 @@ theorem hydrology_month_count_pos : 0 < hydrology_month_count := by
 
 theorem hydrology_stability_match_le_total :
     hydrology_stability_match_count ≤ hydrology_month_count := by
-  unfold hydrology_stability_match_count hydrology_month_count; norm_num
+  unfold hydrology_stability_match_count hydrology_month_count; decide
 
 theorem hydrology_stability_match_rate_nonneg : (0 : ℝ) ≤ hydrology_stability_match_rate := by
   unfold hydrology_stability_match_rate; norm_num

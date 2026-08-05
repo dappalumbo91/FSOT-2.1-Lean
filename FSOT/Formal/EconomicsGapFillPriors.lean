@@ -23,14 +23,12 @@ theorem economics_gap_fill_observable_count_pos : 0 < economics_gap_fill_observa
 theorem economics_gap_fill_pooled_median_under_half_pct :
     economics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold economics_gap_fill_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.1292009041371501  : ℝ) < 0.5)
 
 theorem economics_gap_fill_headline_median_under_half_pct :
     economics_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold economics_gap_fill_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.1292009041371501  : ℝ) < 0.5)
 
 theorem economics_gap_fill_beats_sota_headlines_pos : 0 < economics_gap_fill_beats_sota_headlines := by
   unfold economics_gap_fill_beats_sota_headlines; decide

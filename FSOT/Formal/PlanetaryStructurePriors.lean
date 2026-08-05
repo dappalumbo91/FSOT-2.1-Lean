@@ -21,8 +21,7 @@ theorem planetary_structure_body_count_pos : 0 < planetary_structure_body_count 
 theorem planetary_structure_median_error_under_half_pct :
     planetary_structure_median_error_pct < (0.5 : ℝ) := by
   unfold planetary_structure_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem planetary_structure_bundle :
     planetary_structure_body_count = 20 ∧

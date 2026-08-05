@@ -23,14 +23,12 @@ theorem nufit_neutrino_open_observable_count_pos : 0 < nufit_neutrino_open_obser
 theorem nufit_neutrino_open_pooled_median_under_half_pct :
     nufit_neutrino_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold nufit_neutrino_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.009504  : ℝ) < 0.5)
 
 theorem nufit_neutrino_open_headline_median_under_half_pct :
     nufit_neutrino_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold nufit_neutrino_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.009504  : ℝ) < 0.5)
 
 theorem nufit_neutrino_open_bundle :
     nufit_neutrino_open_observable_count = 10 ∧

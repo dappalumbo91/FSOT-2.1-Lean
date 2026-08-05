@@ -23,14 +23,12 @@ theorem agriculture_agroecology_gap_fill_observable_count_pos : 0 < agriculture_
 theorem agriculture_agroecology_gap_fill_pooled_median_under_half_pct :
     agriculture_agroecology_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold agriculture_agroecology_gap_fill_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.018019024892929635  : ℝ) < 0.5)
 
 theorem agriculture_agroecology_gap_fill_headline_median_under_half_pct :
     agriculture_agroecology_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold agriculture_agroecology_gap_fill_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.018019024892929635  : ℝ) < 0.5)
 
 theorem agriculture_agroecology_gap_fill_beats_sota_headlines_pos : 0 < agriculture_agroecology_gap_fill_beats_sota_headlines := by
   unfold agriculture_agroecology_gap_fill_beats_sota_headlines; decide

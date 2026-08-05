@@ -23,8 +23,7 @@ theorem neuron_multi_hero_count_pos : 0 < neuron_multi_hero_count := by
 theorem neuron_multi_hero_median_error_under_half_pct :
     neuron_multi_hero_median_error_pct < (0.5 : ℝ) := by
   unfold neuron_multi_hero_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.00225237811160842  : ℝ) < 0.5)
 
 theorem neuron_multi_hero_median_fi_under_thirty_pct :
     neuron_multi_hero_median_fi_proxy_rel_err_pct < (30 : ℝ) := by

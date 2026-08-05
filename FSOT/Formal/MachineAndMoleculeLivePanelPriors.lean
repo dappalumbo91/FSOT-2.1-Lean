@@ -26,8 +26,7 @@ theorem machine_and_molecule_live_median_error_under_five_pct :
 theorem machine_and_molecule_live_median_error_under_half_pct :
     machine_and_molecule_live_median_error_pct < (0.5 : ℝ) := by
   unfold machine_and_molecule_live_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.01341  : ℝ) < 0.5)
 
 theorem machine_and_molecule_live_bundle :
     machine_and_molecule_live_observable_count = 120 ∧

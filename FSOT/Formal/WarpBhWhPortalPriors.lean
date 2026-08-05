@@ -43,8 +43,7 @@ theorem warp_bh_wh_portal_observable_count_pos : 0 < warp_bh_wh_portal_observabl
 theorem warp_bh_wh_portal_pooled_under_half_pct :
     warp_bh_wh_portal_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold warp_bh_wh_portal_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem warp_psi_bh_inlet_pos : (0 : ℝ) < warp_psi_bh_inlet := by
   unfold warp_psi_bh_inlet; norm_num

@@ -21,8 +21,7 @@ theorem fsot_c_pack_parity_observable_count_pos : 0 < fsot_c_pack_parity_observa
 theorem fsot_c_pack_parity_median_error_under_half_pct :
     fsot_c_pack_parity_median_error_pct < (0.5 : ℝ) := by
   unfold fsot_c_pack_parity_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem fsot_c_pack_parity_bundle :
     fsot_c_pack_parity_observable_count = 23 ∧

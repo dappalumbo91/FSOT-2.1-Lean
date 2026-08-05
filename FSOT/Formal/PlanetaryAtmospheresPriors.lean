@@ -28,14 +28,12 @@ theorem planetary_atmospheres_body_count_pos : 0 < planetary_atmospheres_body_co
 theorem planetary_atmospheres_pooled_median_under_half_pct :
     planetary_atmospheres_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold planetary_atmospheres_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem planetary_atmospheres_headline_median_under_half_pct :
     planetary_atmospheres_headline_median_error_pct < (0.5 : ℝ) := by
   unfold planetary_atmospheres_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem planetary_atmospheres_beats_sota_headlines_pos : 0 < planetary_atmospheres_beats_sota_headlines := by
   unfold planetary_atmospheres_beats_sota_headlines; decide

@@ -23,14 +23,12 @@ theorem exoplanet_archive_depth_open_observable_count_pos : 0 < exoplanet_archiv
 theorem exoplanet_archive_depth_open_pooled_median_under_half_pct :
     exoplanet_archive_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold exoplanet_archive_depth_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.023015  : ℝ) < 0.5)
 
 theorem exoplanet_archive_depth_open_headline_median_under_half_pct :
     exoplanet_archive_depth_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold exoplanet_archive_depth_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.023015  : ℝ) < 0.5)
 
 theorem exoplanet_archive_depth_open_bundle :
     exoplanet_archive_depth_open_observable_count = 1976 ∧

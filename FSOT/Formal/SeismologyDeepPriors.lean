@@ -22,11 +22,11 @@ theorem seismology_deep_observable_count_pos : 0 < seismology_deep_observable_co
   unfold seismology_deep_observable_count; decide
 
 theorem seismology_deep_match_le_total : seismology_deep_match_count ≤ seismology_deep_observable_count := by
-  unfold seismology_deep_match_count seismology_deep_observable_count; norm_num
+  unfold seismology_deep_match_count seismology_deep_observable_count; decide
 
 theorem seismology_deep_holdout_match_le_total :
     seismology_deep_holdout_match_count ≤ seismology_deep_holdout_count := by
-  unfold seismology_deep_holdout_match_count seismology_deep_holdout_count; norm_num
+  unfold seismology_deep_holdout_match_count seismology_deep_holdout_count; decide
 
 theorem seismology_deep_bundle :
     seismology_deep_observable_count = 1000 ∧

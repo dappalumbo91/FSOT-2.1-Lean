@@ -21,8 +21,7 @@ theorem orbital_mechanics_body_count_pos : 0 < orbital_mechanics_body_count := b
 theorem orbital_mechanics_median_error_under_half_pct :
     orbital_mechanics_median_error_pct < (0.5 : ℝ) := by
   unfold orbital_mechanics_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.106141  : ℝ) < 0.5)
 
 theorem orbital_mechanics_bundle :
     orbital_mechanics_body_count = 9 ∧

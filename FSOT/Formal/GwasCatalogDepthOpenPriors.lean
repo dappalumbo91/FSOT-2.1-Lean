@@ -23,14 +23,12 @@ theorem gwas_catalog_depth_open_observable_count_pos : 0 < gwas_catalog_depth_op
 theorem gwas_catalog_depth_open_pooled_median_under_half_pct :
     gwas_catalog_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold gwas_catalog_depth_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.022236  : ℝ) < 0.5)
 
 theorem gwas_catalog_depth_open_headline_median_under_half_pct :
     gwas_catalog_depth_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold gwas_catalog_depth_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.022236  : ℝ) < 0.5)
 
 theorem gwas_catalog_depth_open_bundle :
     gwas_catalog_depth_open_observable_count = 81 ∧

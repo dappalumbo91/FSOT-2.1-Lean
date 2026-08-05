@@ -23,14 +23,12 @@ theorem alphafold_batch_meta_open_observable_count_pos : 0 < alphafold_batch_met
 theorem alphafold_batch_meta_open_pooled_median_under_half_pct :
     alphafold_batch_meta_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold alphafold_batch_meta_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.015311  : ℝ) < 0.5)
 
 theorem alphafold_batch_meta_open_headline_median_under_half_pct :
     alphafold_batch_meta_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold alphafold_batch_meta_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.015311  : ℝ) < 0.5)
 
 theorem alphafold_batch_meta_open_bundle :
     alphafold_batch_meta_open_observable_count = 182 ∧

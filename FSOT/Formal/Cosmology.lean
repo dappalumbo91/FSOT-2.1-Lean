@@ -138,7 +138,10 @@ lemma S_cosm_cached_abs_bounds :
 /-- Cached Wave-1 Ω_b h² is strictly positive (Python oracle values). -/
 theorem omega_b_h2_fsot_cached_pos : (0 : ℝ) < omega_b_h2_fsot S_cosm_cached S_quant_cached := by
   unfold omega_b_h2_fsot S_cosm_cached S_quant_cached
-  norm_num
+  -- |S_cosm| * (1 - S_quant) with cached Wave-1 scalars (positive by construction)
+  have h : (0 : ℝ) < |-(0.5024559462100433 : ℝ)| * (1 - (0.9555063001027196 : ℝ)) := by
+    positivity
+  simpa using h
 
 /-- α_s(M_Z) matches the canonical Wave-1 cache (`1/(e·π)`). -/
 theorem alpha_s_MZ_approx_value : |alpha_s_MZ - alpha_s_MZ_canonical| < (1e-8 : ℝ) := by

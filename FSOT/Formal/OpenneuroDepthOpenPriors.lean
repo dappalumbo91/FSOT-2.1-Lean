@@ -23,14 +23,12 @@ theorem openneuro_depth_open_observable_count_pos : 0 < openneuro_depth_open_obs
 theorem openneuro_depth_open_pooled_median_under_half_pct :
     openneuro_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold openneuro_depth_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.018003  : ℝ) < 0.5)
 
 theorem openneuro_depth_open_headline_median_under_half_pct :
     openneuro_depth_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold openneuro_depth_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.018003  : ℝ) < 0.5)
 
 theorem openneuro_depth_open_bundle :
     openneuro_depth_open_observable_count = 47 ∧

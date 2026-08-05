@@ -32,7 +32,7 @@ theorem thesis_intrinsic_best_rmse_positive : (0 : ℝ) < thesis_intrinsic_best_
 
 theorem thesis_simulation_components_le_total :
     thesis_wave_target_count + thesis_intrinsic_screen_count = thesis_simulation_observable_count := by
-  unfold thesis_wave_target_count thesis_intrinsic_screen_count thesis_simulation_observable_count; norm_num
+  unfold thesis_wave_target_count thesis_intrinsic_screen_count thesis_simulation_observable_count; decide
 
 /-- Bundle: wave observations + intrinsic formula screens with particle-domain sign proxy. -/
 theorem thesis_simulation_bundle :

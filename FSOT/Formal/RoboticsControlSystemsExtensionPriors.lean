@@ -23,14 +23,12 @@ theorem robotics_control_ext_observable_count_pos : 0 < robotics_control_ext_obs
 theorem robotics_control_ext_pooled_median_under_half_pct :
     robotics_control_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold robotics_control_ext_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem robotics_control_ext_headline_median_under_half_pct :
     robotics_control_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold robotics_control_ext_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem robotics_control_ext_beats_sota_headlines_pos : 0 < robotics_control_ext_beats_sota_headlines := by
   unfold robotics_control_ext_beats_sota_headlines; decide

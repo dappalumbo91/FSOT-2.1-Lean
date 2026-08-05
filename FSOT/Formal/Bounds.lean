@@ -789,12 +789,12 @@ lemma cosmological_growth_coherence_multiplier_gt_one_three_five :
   nlinarith [growth_term_cosmological_gt_one, coherence_efficiency_gt_seven_tenths]
 
 lemma sqrt_25_eq_five : sqrt (25 : ℝ) = 5 := by
-  rw [sqrt_eq_iff_eq_sq (by norm_num) (by norm_num)]
-  norm_num
+  have h : (25 : ℝ) = 5 ^ 2 := by ring
+  exact (sqrt_eq_iff_eq_sq (by positivity) (by positivity)).2 h
 
 lemma sqrt_9_eq_3 : sqrt (9 : ℝ) = 3 := by
-  rw [sqrt_eq_iff_eq_sq (by norm_num) (by norm_num)]
-  norm_num
+  have h : (9 : ℝ) = 3 ^ 2 := by ring
+  exact (sqrt_eq_iff_eq_sq (by positivity) (by positivity)).2 h
 
 lemma rpow_pi_pi_gt_27 : (27 : ℝ) < rpow pi pi := by
   have h3lt : (3 : ℝ) < pi := by unfold pi; linarith [pi_gt_d4]

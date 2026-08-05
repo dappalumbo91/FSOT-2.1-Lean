@@ -23,7 +23,7 @@ def brain_prior_codon_count : ℕ := 24
 
 theorem brain_prior_codon_from_dna :
     brain_prior_codon_count * 3 = brain_prior_dna_bases := by
-  unfold brain_prior_codon_count brain_prior_dna_bases; norm_num
+  unfold brain_prior_codon_count brain_prior_dna_bases; decide
 
 /-- Each codon's 3-base genetic vector ranges over 3³ = 27 trinary patterns (link to Genomic Sciences). -/
 theorem brain_prior_codon_pattern_space_eq_twenty_seven :
@@ -45,7 +45,7 @@ def neocortex_superposition_ratio : ℝ := (neocortex_genetic_zero : ℝ) / brai
 
 theorem neocortex_genetic_counts_sum :
     neocortex_genetic_plus + neocortex_genetic_zero + neocortex_genetic_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases neocortex_genetic_plus neocortex_genetic_zero neocortex_genetic_minus; norm_num
+  unfold brain_prior_dna_bases neocortex_genetic_plus neocortex_genetic_zero neocortex_genetic_minus; decide
 
 theorem neocortex_genetic_zero_is_superposition :
     (neocortex_genetic_zero : ℝ) / brain_prior_dna_bases = neocortex_superposition_ratio := by
@@ -53,7 +53,7 @@ theorem neocortex_genetic_zero_is_superposition :
 
 theorem neocortex_spin_counts_sum :
     neocortex_spin_plus + neocortex_spin_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases neocortex_spin_plus neocortex_spin_minus; norm_num
+  unfold brain_prior_dna_bases neocortex_spin_plus neocortex_spin_minus; decide
 
 /-- `Cerebellum` genetic trinary counts from dna_proxy (72 bp). -/
 def cerebellum_genetic_plus : ℕ := 16
@@ -65,7 +65,7 @@ def cerebellum_superposition_ratio : ℝ := (cerebellum_genetic_zero : ℝ) / br
 
 theorem cerebellum_genetic_counts_sum :
     cerebellum_genetic_plus + cerebellum_genetic_zero + cerebellum_genetic_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases cerebellum_genetic_plus cerebellum_genetic_zero cerebellum_genetic_minus; norm_num
+  unfold brain_prior_dna_bases cerebellum_genetic_plus cerebellum_genetic_zero cerebellum_genetic_minus; decide
 
 theorem cerebellum_genetic_zero_is_superposition :
     (cerebellum_genetic_zero : ℝ) / brain_prior_dna_bases = cerebellum_superposition_ratio := by
@@ -73,7 +73,7 @@ theorem cerebellum_genetic_zero_is_superposition :
 
 theorem cerebellum_spin_counts_sum :
     cerebellum_spin_plus + cerebellum_spin_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases cerebellum_spin_plus cerebellum_spin_minus; norm_num
+  unfold brain_prior_dna_bases cerebellum_spin_plus cerebellum_spin_minus; decide
 
 /-- `Brainstem Arousal` genetic trinary counts from dna_proxy (72 bp). -/
 def brainstem_arousal_genetic_plus : ℕ := 14
@@ -85,7 +85,7 @@ def brainstem_arousal_superposition_ratio : ℝ := (brainstem_arousal_genetic_ze
 
 theorem brainstem_arousal_genetic_counts_sum :
     brainstem_arousal_genetic_plus + brainstem_arousal_genetic_zero + brainstem_arousal_genetic_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases brainstem_arousal_genetic_plus brainstem_arousal_genetic_zero brainstem_arousal_genetic_minus; norm_num
+  unfold brain_prior_dna_bases brainstem_arousal_genetic_plus brainstem_arousal_genetic_zero brainstem_arousal_genetic_minus; decide
 
 theorem brainstem_arousal_genetic_zero_is_superposition :
     (brainstem_arousal_genetic_zero : ℝ) / brain_prior_dna_bases = brainstem_arousal_superposition_ratio := by
@@ -93,7 +93,7 @@ theorem brainstem_arousal_genetic_zero_is_superposition :
 
 theorem brainstem_arousal_spin_counts_sum :
     brainstem_arousal_spin_plus + brainstem_arousal_spin_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases brainstem_arousal_spin_plus brainstem_arousal_spin_minus; norm_num
+  unfold brain_prior_dna_bases brainstem_arousal_spin_plus brainstem_arousal_spin_minus; decide
 
 /-- `Hippocampus` genetic trinary counts from dna_proxy (72 bp). -/
 def hippocampus_genetic_plus : ℕ := 14
@@ -105,7 +105,7 @@ def hippocampus_superposition_ratio : ℝ := (hippocampus_genetic_zero : ℝ) / 
 
 theorem hippocampus_genetic_counts_sum :
     hippocampus_genetic_plus + hippocampus_genetic_zero + hippocampus_genetic_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases hippocampus_genetic_plus hippocampus_genetic_zero hippocampus_genetic_minus; norm_num
+  unfold brain_prior_dna_bases hippocampus_genetic_plus hippocampus_genetic_zero hippocampus_genetic_minus; decide
 
 theorem hippocampus_genetic_zero_is_superposition :
     (hippocampus_genetic_zero : ℝ) / brain_prior_dna_bases = hippocampus_superposition_ratio := by
@@ -113,7 +113,7 @@ theorem hippocampus_genetic_zero_is_superposition :
 
 theorem hippocampus_spin_counts_sum :
     hippocampus_spin_plus + hippocampus_spin_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases hippocampus_spin_plus hippocampus_spin_minus; norm_num
+  unfold brain_prior_dna_bases hippocampus_spin_plus hippocampus_spin_minus; decide
 
 /-- `Basal Ganglia` genetic trinary counts from dna_proxy (72 bp). -/
 def basal_ganglia_genetic_plus : ℕ := 17
@@ -125,7 +125,7 @@ def basal_ganglia_superposition_ratio : ℝ := (basal_ganglia_genetic_zero : ℝ
 
 theorem basal_ganglia_genetic_counts_sum :
     basal_ganglia_genetic_plus + basal_ganglia_genetic_zero + basal_ganglia_genetic_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases basal_ganglia_genetic_plus basal_ganglia_genetic_zero basal_ganglia_genetic_minus; norm_num
+  unfold brain_prior_dna_bases basal_ganglia_genetic_plus basal_ganglia_genetic_zero basal_ganglia_genetic_minus; decide
 
 theorem basal_ganglia_genetic_zero_is_superposition :
     (basal_ganglia_genetic_zero : ℝ) / brain_prior_dna_bases = basal_ganglia_superposition_ratio := by
@@ -133,7 +133,7 @@ theorem basal_ganglia_genetic_zero_is_superposition :
 
 theorem basal_ganglia_spin_counts_sum :
     basal_ganglia_spin_plus + basal_ganglia_spin_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases basal_ganglia_spin_plus basal_ganglia_spin_minus; norm_num
+  unfold brain_prior_dna_bases basal_ganglia_spin_plus basal_ganglia_spin_minus; decide
 
 /-- `Thalamus` genetic trinary counts from dna_proxy (72 bp). -/
 def thalamus_genetic_plus : ℕ := 14
@@ -145,7 +145,7 @@ def thalamus_superposition_ratio : ℝ := (thalamus_genetic_zero : ℝ) / brain_
 
 theorem thalamus_genetic_counts_sum :
     thalamus_genetic_plus + thalamus_genetic_zero + thalamus_genetic_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases thalamus_genetic_plus thalamus_genetic_zero thalamus_genetic_minus; norm_num
+  unfold brain_prior_dna_bases thalamus_genetic_plus thalamus_genetic_zero thalamus_genetic_minus; decide
 
 theorem thalamus_genetic_zero_is_superposition :
     (thalamus_genetic_zero : ℝ) / brain_prior_dna_bases = thalamus_superposition_ratio := by
@@ -153,7 +153,7 @@ theorem thalamus_genetic_zero_is_superposition :
 
 theorem thalamus_spin_counts_sum :
     thalamus_spin_plus + thalamus_spin_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases thalamus_spin_plus thalamus_spin_minus; norm_num
+  unfold brain_prior_dna_bases thalamus_spin_plus thalamus_spin_minus; decide
 
 /-- `Astrocyte Syncytium` genetic trinary counts from dna_proxy (72 bp). -/
 def astrocyte_syncytium_genetic_plus : ℕ := 15
@@ -165,7 +165,7 @@ def astrocyte_syncytium_superposition_ratio : ℝ := (astrocyte_syncytium_geneti
 
 theorem astrocyte_syncytium_genetic_counts_sum :
     astrocyte_syncytium_genetic_plus + astrocyte_syncytium_genetic_zero + astrocyte_syncytium_genetic_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases astrocyte_syncytium_genetic_plus astrocyte_syncytium_genetic_zero astrocyte_syncytium_genetic_minus; norm_num
+  unfold brain_prior_dna_bases astrocyte_syncytium_genetic_plus astrocyte_syncytium_genetic_zero astrocyte_syncytium_genetic_minus; decide
 
 theorem astrocyte_syncytium_genetic_zero_is_superposition :
     (astrocyte_syncytium_genetic_zero : ℝ) / brain_prior_dna_bases = astrocyte_syncytium_superposition_ratio := by
@@ -173,7 +173,7 @@ theorem astrocyte_syncytium_genetic_zero_is_superposition :
 
 theorem astrocyte_syncytium_spin_counts_sum :
     astrocyte_syncytium_spin_plus + astrocyte_syncytium_spin_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases astrocyte_syncytium_spin_plus astrocyte_syncytium_spin_minus; norm_num
+  unfold brain_prior_dna_bases astrocyte_syncytium_spin_plus astrocyte_syncytium_spin_minus; decide
 
 /-- `Oligodendrocyte Myelination` genetic trinary counts from dna_proxy (72 bp). -/
 def oligodendrocyte_myelination_genetic_plus : ℕ := 14
@@ -185,7 +185,7 @@ def oligodendrocyte_myelination_superposition_ratio : ℝ := (oligodendrocyte_my
 
 theorem oligodendrocyte_myelination_genetic_counts_sum :
     oligodendrocyte_myelination_genetic_plus + oligodendrocyte_myelination_genetic_zero + oligodendrocyte_myelination_genetic_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases oligodendrocyte_myelination_genetic_plus oligodendrocyte_myelination_genetic_zero oligodendrocyte_myelination_genetic_minus; norm_num
+  unfold brain_prior_dna_bases oligodendrocyte_myelination_genetic_plus oligodendrocyte_myelination_genetic_zero oligodendrocyte_myelination_genetic_minus; decide
 
 theorem oligodendrocyte_myelination_genetic_zero_is_superposition :
     (oligodendrocyte_myelination_genetic_zero : ℝ) / brain_prior_dna_bases = oligodendrocyte_myelination_superposition_ratio := by
@@ -193,7 +193,7 @@ theorem oligodendrocyte_myelination_genetic_zero_is_superposition :
 
 theorem oligodendrocyte_myelination_spin_counts_sum :
     oligodendrocyte_myelination_spin_plus + oligodendrocyte_myelination_spin_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases oligodendrocyte_myelination_spin_plus oligodendrocyte_myelination_spin_minus; norm_num
+  unfold brain_prior_dna_bases oligodendrocyte_myelination_spin_plus oligodendrocyte_myelination_spin_minus; decide
 
 /-- `Amygdala` genetic trinary counts from dna_proxy (72 bp). -/
 def amygdala_genetic_plus : ℕ := 23
@@ -205,7 +205,7 @@ def amygdala_superposition_ratio : ℝ := (amygdala_genetic_zero : ℝ) / brain_
 
 theorem amygdala_genetic_counts_sum :
     amygdala_genetic_plus + amygdala_genetic_zero + amygdala_genetic_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases amygdala_genetic_plus amygdala_genetic_zero amygdala_genetic_minus; norm_num
+  unfold brain_prior_dna_bases amygdala_genetic_plus amygdala_genetic_zero amygdala_genetic_minus; decide
 
 theorem amygdala_genetic_zero_is_superposition :
     (amygdala_genetic_zero : ℝ) / brain_prior_dna_bases = amygdala_superposition_ratio := by
@@ -213,7 +213,7 @@ theorem amygdala_genetic_zero_is_superposition :
 
 theorem amygdala_spin_counts_sum :
     amygdala_spin_plus + amygdala_spin_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases amygdala_spin_plus amygdala_spin_minus; norm_num
+  unfold brain_prior_dna_bases amygdala_spin_plus amygdala_spin_minus; decide
 
 /-- `Microglial Surveillance` genetic trinary counts from dna_proxy (72 bp). -/
 def microglial_surveillance_genetic_plus : ℕ := 20
@@ -225,7 +225,7 @@ def microglial_surveillance_superposition_ratio : ℝ := (microglial_surveillanc
 
 theorem microglial_surveillance_genetic_counts_sum :
     microglial_surveillance_genetic_plus + microglial_surveillance_genetic_zero + microglial_surveillance_genetic_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases microglial_surveillance_genetic_plus microglial_surveillance_genetic_zero microglial_surveillance_genetic_minus; norm_num
+  unfold brain_prior_dna_bases microglial_surveillance_genetic_plus microglial_surveillance_genetic_zero microglial_surveillance_genetic_minus; decide
 
 theorem microglial_surveillance_genetic_zero_is_superposition :
     (microglial_surveillance_genetic_zero : ℝ) / brain_prior_dna_bases = microglial_surveillance_superposition_ratio := by
@@ -233,7 +233,7 @@ theorem microglial_surveillance_genetic_zero_is_superposition :
 
 theorem microglial_surveillance_spin_counts_sum :
     microglial_surveillance_spin_plus + microglial_surveillance_spin_minus = brain_prior_dna_bases := by
-  unfold brain_prior_dna_bases microglial_surveillance_spin_plus microglial_surveillance_spin_minus; norm_num
+  unfold brain_prior_dna_bases microglial_surveillance_spin_plus microglial_surveillance_spin_minus; decide
 
 /-- Bundle: 10 brain components, 72bp genetic vectors, 27-pattern codon space. -/
 theorem brain_component_priors_trinary_bundle :
@@ -263,7 +263,7 @@ theorem brain_component_priors_trinary_bundle :
     amygdala_spin_plus + amygdala_spin_minus = brain_prior_dna_bases ∧
     microglial_surveillance_spin_plus + microglial_surveillance_spin_minus = brain_prior_dna_bases := by
   refine ⟨by unfold brain_component_count; decide, by unfold brain_prior_dna_bases; decide, by unfold brain_prior_codon_count; decide,
-    by unfold brain_prior_codon_count brain_prior_dna_bases; norm_num, brain_prior_codon_pattern_space_eq_twenty_seven,
+    by unfold brain_prior_codon_count brain_prior_dna_bases; decide, brain_prior_codon_pattern_space_eq_twenty_seven,
     neocortex_genetic_counts_sum,
     cerebellum_genetic_counts_sum,
     brainstem_arousal_genetic_counts_sum,

@@ -28,14 +28,12 @@ theorem igem_synthetic_biology_part_count_pos : 0 < igem_synthetic_biology_part_
 theorem igem_synthetic_biology_pooled_median_under_half_pct :
     igem_synthetic_biology_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold igem_synthetic_biology_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.022236250385203583  : ℝ) < 0.5)
 
 theorem igem_synthetic_biology_headline_median_under_half_pct :
     igem_synthetic_biology_headline_median_error_pct < (0.5 : ℝ) := by
   unfold igem_synthetic_biology_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.022236250385203583  : ℝ) < 0.5)
 
 theorem igem_synthetic_biology_beats_sota_headlines_pos : 0 < igem_synthetic_biology_beats_sota_headlines := by
   unfold igem_synthetic_biology_beats_sota_headlines; decide

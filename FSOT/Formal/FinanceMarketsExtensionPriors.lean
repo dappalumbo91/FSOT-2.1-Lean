@@ -23,14 +23,12 @@ theorem finance_markets_ext_observable_count_pos : 0 < finance_markets_ext_obser
 theorem finance_markets_ext_pooled_median_under_half_pct :
     finance_markets_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold finance_markets_ext_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.025840180827434747  : ℝ) < 0.5)
 
 theorem finance_markets_ext_headline_median_under_half_pct :
     finance_markets_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold finance_markets_ext_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.025840180827434747  : ℝ) < 0.5)
 
 theorem finance_markets_ext_beats_sota_headlines_pos : 0 < finance_markets_ext_beats_sota_headlines := by
   unfold finance_markets_ext_beats_sota_headlines; decide

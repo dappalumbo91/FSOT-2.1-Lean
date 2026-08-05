@@ -34,19 +34,17 @@ theorem particle_physics_components_sum :
     particle_smiles_record_count + particle_thesis_wave_count + particle_wave4_count + particle_math_physics_rule_count =
       particle_physics_observable_count := by
   unfold particle_smiles_record_count particle_thesis_wave_count particle_wave4_count
-    particle_math_physics_rule_count particle_physics_observable_count; norm_num
+    particle_math_physics_rule_count particle_physics_observable_count; decide
 
 theorem particle_physics_median_error_under_half_pct :
     particle_physics_median_error_pct < (0.5 : ℝ) := by
   unfold particle_physics_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.014415233331492876  : ℝ) < 0.5)
 
 theorem particle_physics_max_error_under_half_pct :
     particle_physics_max_error_pct < (0.5 : ℝ) := by
   unfold particle_physics_max_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.492528  : ℝ) < 0.5)
 
 /-- Bundle: particle masses, Higgs/Z branching, CKM/PMNS Wave-4, formal math-physics rules. -/
 theorem particle_physics_bundle :

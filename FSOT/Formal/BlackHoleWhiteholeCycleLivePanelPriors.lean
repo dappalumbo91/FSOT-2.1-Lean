@@ -26,8 +26,7 @@ theorem blackhole_whitehole_cycle_median_error_under_five_pct :
 theorem blackhole_whitehole_cycle_median_error_under_half_pct :
     blackhole_whitehole_cycle_median_error_pct < (0.5 : ℝ) := by
   unfold blackhole_whitehole_cycle_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.026472  : ℝ) < 0.5)
 
 theorem blackhole_whitehole_cycle_bundle :
     blackhole_whitehole_cycle_observable_count = 24 ∧

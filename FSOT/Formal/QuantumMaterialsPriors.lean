@@ -28,14 +28,12 @@ theorem quantum_materials_section_count_pos : 0 < quantum_materials_section_coun
 theorem quantum_materials_pooled_median_under_half_pct :
     quantum_materials_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold quantum_materials_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.024318115591995593  : ℝ) < 0.5)
 
 theorem quantum_materials_headline_median_under_half_pct :
     quantum_materials_headline_median_error_pct < (0.5 : ℝ) := by
   unfold quantum_materials_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.01692529386942307  : ℝ) < 0.5)
 
 theorem quantum_materials_beats_sota_headlines_pos : 0 < quantum_materials_beats_sota_headlines := by
   unfold quantum_materials_beats_sota_headlines; decide

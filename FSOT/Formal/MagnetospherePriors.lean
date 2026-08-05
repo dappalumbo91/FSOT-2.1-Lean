@@ -20,7 +20,7 @@ theorem magnetosphere_observable_count_pos : 0 < magnetosphere_observable_count 
   unfold magnetosphere_observable_count; decide
 
 theorem magnetosphere_match_le_total : magnetosphere_match_count ≤ magnetosphere_observable_count := by
-  unfold magnetosphere_match_count magnetosphere_observable_count; norm_num
+  unfold magnetosphere_match_count magnetosphere_observable_count; decide
 
 theorem magnetosphere_bundle :
     magnetosphere_observable_count = 167 ∧

@@ -20,7 +20,7 @@ theorem geomagnetism_observable_count_pos : 0 < geomagnetism_observable_count :=
   unfold geomagnetism_observable_count; decide
 
 theorem geomagnetism_match_le_total : geomagnetism_match_count ≤ geomagnetism_observable_count := by
-  unfold geomagnetism_match_count geomagnetism_observable_count; norm_num
+  unfold geomagnetism_match_count geomagnetism_observable_count; decide
 
 theorem geomagnetism_bundle :
     geomagnetism_observable_count = 524 ∧

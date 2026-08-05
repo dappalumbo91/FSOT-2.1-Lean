@@ -21,8 +21,7 @@ theorem coding_structure_verifier_observable_count_pos : 0 < coding_structure_ve
 theorem coding_structure_verifier_median_error_under_half_pct :
     coding_structure_verifier_median_error_pct < (0.5 : ℝ) := by
   unfold coding_structure_verifier_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem coding_structure_verifier_bundle :
     coding_structure_verifier_observable_count = 18 ∧

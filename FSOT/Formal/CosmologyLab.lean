@@ -20,7 +20,7 @@ def lambda_cdm_wave3_count : ℕ := 15
 
 theorem lambda_cdm_wave_partition :
     lambda_cdm_wave1_count + lambda_cdm_wave2_count + lambda_cdm_wave3_count = lambda_cdm_observable_count := by
-  unfold lambda_cdm_wave1_count lambda_cdm_wave2_count lambda_cdm_wave3_count lambda_cdm_observable_count; norm_num
+  unfold lambda_cdm_wave1_count lambda_cdm_wave2_count lambda_cdm_wave3_count lambda_cdm_observable_count; decide
 
 theorem lambda_cdm_wave1_links_genomic_cosmology :
     lambda_cdm_wave1_count = 5 := by

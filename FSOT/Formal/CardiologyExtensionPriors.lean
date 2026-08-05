@@ -23,14 +23,12 @@ theorem cardiology_ext_observable_count_pos : 0 < cardiology_ext_observable_coun
 theorem cardiology_ext_pooled_median_under_half_pct :
     cardiology_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold cardiology_ext_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.030622122938654326  : ℝ) < 0.5)
 
 theorem cardiology_ext_headline_median_under_half_pct :
     cardiology_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold cardiology_ext_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.030622122938654326  : ℝ) < 0.5)
 
 theorem cardiology_ext_beats_sota_headlines_pos : 0 < cardiology_ext_beats_sota_headlines := by
   unfold cardiology_ext_beats_sota_headlines; decide

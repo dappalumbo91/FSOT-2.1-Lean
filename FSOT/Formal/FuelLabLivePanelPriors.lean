@@ -19,7 +19,7 @@ def fuel_lab_live_D_eff : ℕ := 16
 def fuel_lab_live_designed_fuel_count : ℝ := (7.0 : ℝ)
 
 theorem fuel_lab_live_designed_fuel_count_pos : 0 < fuel_lab_live_designed_fuel_count := by
-  unfold fuel_lab_live_designed_fuel_count; decide
+  unfold fuel_lab_live_designed_fuel_count; norm_num
 
 theorem fuel_lab_live_observable_count_pos : 0 < fuel_lab_live_observable_count := by
   unfold fuel_lab_live_observable_count; decide
@@ -31,8 +31,7 @@ theorem fuel_lab_live_median_error_under_five_pct :
 theorem fuel_lab_live_median_error_under_half_pct :
     fuel_lab_live_median_error_pct < (0.5 : ℝ) := by
   unfold fuel_lab_live_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.039349  : ℝ) < 0.5)
 
 theorem fuel_lab_live_bundle :
     fuel_lab_live_observable_count = 366 ∧

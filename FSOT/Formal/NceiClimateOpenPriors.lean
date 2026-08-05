@@ -23,14 +23,12 @@ theorem ncei_climate_open_observable_count_pos : 0 < ncei_climate_open_observabl
 theorem ncei_climate_open_pooled_median_under_half_pct :
     ncei_climate_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold ncei_climate_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0291  : ℝ) < 0.5)
 
 theorem ncei_climate_open_headline_median_under_half_pct :
     ncei_climate_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold ncei_climate_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0291  : ℝ) < 0.5)
 
 theorem ncei_climate_open_bundle :
     ncei_climate_open_observable_count = 607 ∧

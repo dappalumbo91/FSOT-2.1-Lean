@@ -29,14 +29,12 @@ theorem math_generator_rules_eval_corpus_count_pos : 0 < math_generator_rules_ev
 theorem math_generator_rules_eval_pooled_median_under_half_pct :
     math_generator_rules_eval_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold math_generator_rules_eval_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem math_generator_rules_eval_headline_median_under_half_pct :
     math_generator_rules_eval_headline_median_error_pct < (0.5 : ℝ) := by
   unfold math_generator_rules_eval_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem math_generator_rules_eval_beats_sota_headlines_pos : 0 < math_generator_rules_eval_beats_sota_headlines := by
   unfold math_generator_rules_eval_beats_sota_headlines; decide

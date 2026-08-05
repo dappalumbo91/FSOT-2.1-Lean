@@ -23,14 +23,12 @@ theorem oeis_family_sweep_open_observable_count_pos : 0 < oeis_family_sweep_open
 theorem oeis_family_sweep_open_pooled_median_under_half_pct :
     oeis_family_sweep_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold oeis_family_sweep_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.014767  : ℝ) < 0.5)
 
 theorem oeis_family_sweep_open_headline_median_under_half_pct :
     oeis_family_sweep_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold oeis_family_sweep_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.014767  : ℝ) < 0.5)
 
 theorem oeis_family_sweep_open_bundle :
     oeis_family_sweep_open_observable_count = 394 ∧

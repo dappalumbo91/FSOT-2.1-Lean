@@ -25,15 +25,15 @@ theorem climate_science_observable_count_pos : 0 < climate_science_observable_co
 theorem climate_science_holdout_month_count_pos : 0 < climate_science_holdout_month_count := by
   unfold climate_science_holdout_month_count; decide
 
-theorem climate_science_median_error_under_half_pct : climate_science_median_error_pct < (0.5 : ℝ) := by
+theorem climate_science_median_error_under_half_pct :
+    climate_science_median_error_pct < (0.5 : ℝ) := by
   unfold climate_science_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
-theorem climate_science_holdout_median_error_under_half_pct : climate_science_holdout_median_error_pct < (0.5 : ℝ) := by
+theorem climate_science_holdout_median_error_under_half_pct :
+    climate_science_holdout_median_error_pct < (0.5 : ℝ) := by
   unfold climate_science_holdout_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem climate_science_bundle :
     climate_science_observable_count = 9439 ∧

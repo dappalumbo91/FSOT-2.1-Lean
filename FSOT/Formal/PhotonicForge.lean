@@ -19,7 +19,7 @@ def photonic_trinary_pos_count : ℕ := 80
 theorem photonic_trinary_partition :
     photonic_trinary_neg_count + photonic_trinary_zero_count + photonic_trinary_pos_count
       = photonic_voxel_count := by
-  unfold photonic_trinary_neg_count photonic_trinary_zero_count photonic_trinary_pos_count photonic_voxel_count; norm_num
+  unfold photonic_trinary_neg_count photonic_trinary_zero_count photonic_trinary_pos_count photonic_voxel_count; decide
 
 theorem photonic_voxel_count_pos : 0 < photonic_voxel_count := by
   unfold photonic_voxel_count; decide

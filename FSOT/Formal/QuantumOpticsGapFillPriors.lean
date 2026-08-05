@@ -23,14 +23,12 @@ theorem quantum_optics_gap_fill_observable_count_pos : 0 < quantum_optics_gap_fi
 theorem quantum_optics_gap_fill_pooled_median_under_half_pct :
     quantum_optics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold quantum_optics_gap_fill_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (9.52387420324368e-05  : ℝ) < 0.5)
 
 theorem quantum_optics_gap_fill_headline_median_under_half_pct :
     quantum_optics_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold quantum_optics_gap_fill_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (9.52387420324368e-05  : ℝ) < 0.5)
 
 theorem quantum_optics_gap_fill_beats_sota_headlines_pos : 0 < quantum_optics_gap_fill_beats_sota_headlines := by
   unfold quantum_optics_gap_fill_beats_sota_headlines; decide

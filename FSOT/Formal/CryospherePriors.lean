@@ -21,7 +21,7 @@ theorem cryosphere_month_count_pos : 0 < cryosphere_month_count := by
   unfold cryosphere_month_count; decide
 
 theorem cryosphere_match_le_total : cryosphere_match_count ≤ cryosphere_month_count := by
-  unfold cryosphere_match_count cryosphere_month_count; norm_num
+  unfold cryosphere_match_count cryosphere_month_count; decide
 
 theorem cryosphere_bundle :
     cryosphere_month_count = 2399 ∧

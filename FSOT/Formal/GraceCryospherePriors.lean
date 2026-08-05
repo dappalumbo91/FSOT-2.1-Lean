@@ -20,7 +20,7 @@ theorem grace_cryosphere_month_count_pos : 0 < grace_cryosphere_month_count := b
   unfold grace_cryosphere_month_count; decide
 
 theorem grace_cryosphere_match_le_total : grace_cryosphere_match_count ≤ grace_cryosphere_month_count := by
-  unfold grace_cryosphere_match_count grace_cryosphere_month_count; norm_num
+  unfold grace_cryosphere_match_count grace_cryosphere_month_count; decide
 
 theorem grace_cryosphere_bundle :
     grace_cryosphere_month_count = 253 ∧

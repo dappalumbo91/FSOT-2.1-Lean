@@ -22,7 +22,7 @@ theorem space_weather_kp_record_count_pos : 0 < space_weather_kp_record_count :=
 
 theorem space_weather_stability_match_le_total :
     space_weather_stability_match_count ≤ space_weather_kp_record_count := by
-  unfold space_weather_stability_match_count space_weather_kp_record_count; norm_num
+  unfold space_weather_stability_match_count space_weather_kp_record_count; decide
 
 theorem space_weather_stability_match_rate_nonneg : (0 : ℝ) ≤ space_weather_stability_match_rate := by
   unfold space_weather_stability_match_rate; norm_num

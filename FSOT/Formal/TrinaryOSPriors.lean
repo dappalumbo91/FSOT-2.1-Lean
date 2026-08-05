@@ -24,7 +24,7 @@ theorem trinary_os_word_width_eq_27 : trinary_os_word_width = 27 := by
 
 theorem trinary_os_hello_smaller_than_spawn :
     trinary_os_hello_bytes < trinary_os_spawn_join_bytes := by
-  unfold trinary_os_hello_bytes trinary_os_spawn_join_bytes; norm_num
+  unfold trinary_os_hello_bytes trinary_os_spawn_join_bytes; decide
 
 /-- Bundle: FSOTB regression sizes and derived trinary ISA geometry (K coupling positive). -/
 theorem trinary_os_fsotb_bundle :

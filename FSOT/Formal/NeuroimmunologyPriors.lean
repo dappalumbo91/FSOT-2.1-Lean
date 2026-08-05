@@ -28,14 +28,12 @@ theorem neuroimmunology_section_count_pos : 0 < neuroimmunology_section_count :=
 theorem neuroimmunology_pooled_median_under_half_pct :
     neuroimmunology_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold neuroimmunology_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.05041956982053305  : ℝ) < 0.5)
 
 theorem neuroimmunology_headline_median_under_half_pct :
     neuroimmunology_headline_median_error_pct < (0.5 : ℝ) := by
   unfold neuroimmunology_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.060502  : ℝ) < 0.5)
 
 theorem neuroimmunology_beats_sota_headlines_pos : 0 < neuroimmunology_beats_sota_headlines := by
   unfold neuroimmunology_beats_sota_headlines; decide

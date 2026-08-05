@@ -20,7 +20,7 @@ def unified_db_top_project_count : ℕ := 15
 
 theorem unified_db_strict_le_total :
     unified_db_strict_empirical ≤ unified_db_total_candidates := by
-  unfold unified_db_strict_empirical unified_db_total_candidates; norm_num
+  unfold unified_db_strict_empirical unified_db_total_candidates; decide
 
 theorem unified_db_evaluation_ok_pos : 0 < unified_db_evaluation_ok := by
   unfold unified_db_evaluation_ok; decide

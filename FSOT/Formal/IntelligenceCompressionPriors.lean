@@ -27,7 +27,7 @@ theorem fic_fertile_rows_present : 0 < fic_fertile_row_count := by
 
 theorem fic_fertile_replay_match_le_total :
     fic_fertile_replay_match_count ≤ fic_sweep_row_count := by
-  unfold fic_fertile_replay_match_count fic_sweep_row_count; norm_num
+  unfold fic_fertile_replay_match_count fic_sweep_row_count; decide
 
 theorem fic_best_intelligence_score_positive :
     (0 : ℝ) < fic_best_intelligence_score := by

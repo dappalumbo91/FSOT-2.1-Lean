@@ -23,14 +23,12 @@ theorem matter_antimatter_observable_count_pos : 0 < matter_antimatter_observabl
 theorem matter_antimatter_pooled_median_under_half_pct :
     matter_antimatter_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold matter_antimatter_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0  : ℝ) < 0.5)
 
 theorem matter_antimatter_headline_median_under_half_pct :
     matter_antimatter_headline_median_error_pct < (0.5 : ℝ) := by
   unfold matter_antimatter_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0  : ℝ) < 0.5)
 
 theorem matter_antimatter_bundle :
     matter_antimatter_observable_count = 16 ∧

@@ -23,14 +23,12 @@ theorem meteorology_gap_fill_observable_count_pos : 0 < meteorology_gap_fill_obs
 theorem meteorology_gap_fill_pooled_median_under_half_pct :
     meteorology_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold meteorology_gap_fill_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem meteorology_gap_fill_headline_median_under_half_pct :
     meteorology_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold meteorology_gap_fill_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem meteorology_gap_fill_beats_sota_headlines_pos : 0 < meteorology_gap_fill_beats_sota_headlines := by
   unfold meteorology_gap_fill_beats_sota_headlines; decide

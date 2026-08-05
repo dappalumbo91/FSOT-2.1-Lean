@@ -21,8 +21,7 @@ theorem dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos : 0 < dzha
 theorem dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct :
     dzhanibekov_intermediate_axis_fsot_panel_median_error_pct < (0.5 : ℝ) := by
   unfold dzhanibekov_intermediate_axis_fsot_panel_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem dzhanibekov_intermediate_axis_fsot_panel_bundle :
     dzhanibekov_intermediate_axis_fsot_panel_observable_count = 32 ∧

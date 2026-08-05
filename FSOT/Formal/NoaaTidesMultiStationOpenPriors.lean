@@ -23,14 +23,12 @@ theorem noaa_tides_multi_station_open_observable_count_pos : 0 < noaa_tides_mult
 theorem noaa_tides_multi_station_open_pooled_median_under_half_pct :
     noaa_tides_multi_station_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold noaa_tides_multi_station_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.030173  : ℝ) < 0.5)
 
 theorem noaa_tides_multi_station_open_headline_median_under_half_pct :
     noaa_tides_multi_station_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold noaa_tides_multi_station_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.030173  : ℝ) < 0.5)
 
 theorem noaa_tides_multi_station_open_bundle :
     noaa_tides_multi_station_open_observable_count = 209 ∧

@@ -45,23 +45,23 @@ theorem bubble_bleed_observable_count_pos : 0 < bubble_bleed_observable_count :=
 
 theorem bubble_bleed_framework_fit_le_total :
     bubble_bleed_framework_fit_count ≤ bubble_bleed_framework_count := by
-  unfold bubble_bleed_framework_fit_count bubble_bleed_framework_count; norm_num
+  unfold bubble_bleed_framework_fit_count bubble_bleed_framework_count; decide
 
 theorem bubble_bleed_wh_closure_match_le_total :
     bubble_bleed_wh_closure_match_count ≤ bubble_bleed_wh_closure_count := by
-  unfold bubble_bleed_wh_closure_match_count bubble_bleed_wh_closure_count; norm_num
+  unfold bubble_bleed_wh_closure_match_count bubble_bleed_wh_closure_count; decide
 
 theorem bubble_bleed_bh_spin_match_le_total :
     bubble_bleed_bh_spin_match_count ≤ bubble_bleed_bh_spin_count := by
-  unfold bubble_bleed_bh_spin_match_count bubble_bleed_bh_spin_count; norm_num
+  unfold bubble_bleed_bh_spin_match_count bubble_bleed_bh_spin_count; decide
 
 theorem bubble_bleed_nebula_match_le_total :
     bubble_bleed_nebula_match_count ≤ bubble_bleed_nebula_count := by
-  unfold bubble_bleed_nebula_match_count bubble_bleed_nebula_count; norm_num
+  unfold bubble_bleed_nebula_match_count bubble_bleed_nebula_count; decide
 
 theorem bubble_bleed_frb_match_le_total :
     bubble_bleed_frb_match_count ≤ bubble_bleed_frb_count := by
-  unfold bubble_bleed_frb_match_count bubble_bleed_frb_count; norm_num
+  unfold bubble_bleed_frb_match_count bubble_bleed_frb_count; decide
 
 theorem bubble_bleed_observability_ratio_nonneg :
     0 ≤ bubble_bleed_observability_ratio := by

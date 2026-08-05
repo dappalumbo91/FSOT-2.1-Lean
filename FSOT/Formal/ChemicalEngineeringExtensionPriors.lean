@@ -23,14 +23,12 @@ theorem chemical_engineering_ext_observable_count_pos : 0 < chemical_engineering
 theorem chemical_engineering_ext_pooled_median_under_half_pct :
     chemical_engineering_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold chemical_engineering_ext_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0010333425185953097  : ℝ) < 0.5)
 
 theorem chemical_engineering_ext_headline_median_under_half_pct :
     chemical_engineering_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold chemical_engineering_ext_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0010333425185953097  : ℝ) < 0.5)
 
 theorem chemical_engineering_ext_beats_sota_headlines_pos : 0 < chemical_engineering_ext_beats_sota_headlines := by
   unfold chemical_engineering_ext_beats_sota_headlines; decide

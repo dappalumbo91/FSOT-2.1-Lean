@@ -32,17 +32,16 @@ theorem cosmology_extended_components_sum :
     cosmology_skeleton_derivation_count + cosmology_lambda_cdm_extended_count + cosmology_thesis_wave_count =
       cosmology_extended_observable_count := by
   unfold cosmology_skeleton_derivation_count cosmology_lambda_cdm_extended_count
-    cosmology_thesis_wave_count cosmology_extended_observable_count; norm_num
+    cosmology_thesis_wave_count cosmology_extended_observable_count; decide
 
 theorem cosmology_extended_median_error_under_half_pct :
     cosmology_extended_median_error_pct < (0.5 : ℝ) := by
   unfold cosmology_extended_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.021954848848277954  : ℝ) < 0.5)
 
 theorem cosmology_extended_within_le_total :
     cosmology_extended_within_five_pct ≤ cosmology_extended_observable_count := by
-  unfold cosmology_extended_within_five_pct cosmology_extended_observable_count; norm_num
+  unfold cosmology_extended_within_five_pct cosmology_extended_observable_count; decide
 
 /-- Bundle: CMB/BBN/rotation-curve skeleton + ΛCDM + thesis cosmology waves. -/
 theorem cosmology_extended_bundle :

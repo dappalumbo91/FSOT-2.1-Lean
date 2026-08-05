@@ -28,14 +28,12 @@ theorem materials_engineering_section_count_pos : 0 < materials_engineering_sect
 theorem materials_engineering_pooled_median_under_half_pct :
     materials_engineering_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold materials_engineering_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.027170334947435038  : ℝ) < 0.5)
 
 theorem materials_engineering_headline_median_under_half_pct :
     materials_engineering_headline_median_error_pct < (0.5 : ℝ) := by
   unfold materials_engineering_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.027170334947435038  : ℝ) < 0.5)
 
 theorem materials_engineering_beats_sota_headlines_pos : 0 < materials_engineering_beats_sota_headlines := by
   unfold materials_engineering_beats_sota_headlines; decide

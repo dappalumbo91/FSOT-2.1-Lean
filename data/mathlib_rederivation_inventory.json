@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-05T22:30:56.832463+00:00",
+  "generated_at": "2026-08-05T22:38:04.892989+00:00",
   "version": "1.0",
   "theorem_count": 5182,
-  "mathlib_depth_count": 2907,
-  "mathlib_depth_pct": 56.1,
+  "mathlib_depth_count": 2969,
+  "mathlib_depth_pct": 57.29,
   "by_tier": {
-    "L0_definitional": 1689,
-    "L1_certificate": 2275,
+    "L0_definitional": 1744,
+    "L1_certificate": 2213,
     "L3_chain": 945,
-    "L2_analytic": 273
+    "L2_analytic": 280
   },
   "by_module": {
     "AcousticResonanceMaterialsPriors": {
@@ -449,24 +449,24 @@
     },
     "Bounds": {
       "theorem_count": 277,
-      "mathlib_depth_count": 275,
-      "mathlib_depth_pct": 99.28,
+      "mathlib_depth_count": 277,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L2_analytic": 188,
+        "L2_analytic": 190,
         "L0_definitional": 9,
-        "L3_chain": 78,
-        "L1_certificate": 2
+        "L3_chain": 78
       },
       "has_sorry": false,
       "path": "FSOT/Formal/Bounds.lean"
     },
     "BrainPriors": {
       "theorem_count": 34,
-      "mathlib_depth_count": 3,
-      "mathlib_depth_pct": 8.82,
+      "mathlib_depth_count": 24,
+      "mathlib_depth_pct": 70.59,
       "tier_counts": {
-        "L1_certificate": 31,
-        "L3_chain": 3
+        "L0_definitional": 21,
+        "L3_chain": 3,
+        "L1_certificate": 10
       },
       "has_sorry": false,
       "path": "FSOT/Formal/BrainPriors.lean"
@@ -496,11 +496,11 @@
     },
     "BubbleBleedPriors": {
       "theorem_count": 10,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 40.0,
+      "mathlib_depth_count": 9,
+      "mathlib_depth_pct": 90.0,
       "tier_counts": {
-        "L0_definitional": 3,
-        "L1_certificate": 6,
+        "L0_definitional": 8,
+        "L1_certificate": 1,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -1026,12 +1026,11 @@
     },
     "Cosmology": {
       "theorem_count": 21,
-      "mathlib_depth_count": 20,
-      "mathlib_depth_pct": 95.24,
+      "mathlib_depth_count": 21,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
         "L3_chain": 4,
-        "L2_analytic": 16,
-        "L1_certificate": 1
+        "L2_analytic": 17
       },
       "has_sorry": false,
       "path": "FSOT/Formal/Cosmology.lean"
@@ -1074,11 +1073,10 @@
     },
     "CosmologyExtendedPriors": {
       "theorem_count": 7,
-      "mathlib_depth_count": 5,
-      "mathlib_depth_pct": 71.43,
+      "mathlib_depth_count": 7,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 3,
-        "L1_certificate": 2,
+        "L0_definitional": 5,
         "L3_chain": 2
       },
       "has_sorry": false,
@@ -1086,11 +1084,10 @@
     },
     "CosmologyHigherWavesPriors": {
       "theorem_count": 4,
-      "mathlib_depth_count": 3,
-      "mathlib_depth_pct": 75.0,
+      "mathlib_depth_count": 4,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 1,
+        "L0_definitional": 2,
         "L3_chain": 2
       },
       "has_sorry": false,
@@ -1098,11 +1095,10 @@
     },
     "CosmologyLab": {
       "theorem_count": 3,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L1_certificate": 1,
-        "L0_definitional": 1,
+        "L0_definitional": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -1121,10 +1117,10 @@
     },
     "CosmologyWave4": {
       "theorem_count": 1,
-      "mathlib_depth_count": 0,
-      "mathlib_depth_pct": 0.0,
+      "mathlib_depth_count": 1,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L1_certificate": 1
+        "L0_definitional": 1
       },
       "has_sorry": false,
       "path": "FSOT/Formal/CosmologyWave4.lean"
@@ -1256,11 +1252,10 @@
     },
     "CryospherePriors": {
       "theorem_count": 3,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 1,
+        "L0_definitional": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -1433,11 +1428,10 @@
     },
     "DomainCoveragePriors": {
       "theorem_count": 14,
-      "mathlib_depth_count": 12,
-      "mathlib_depth_pct": 85.71,
+      "mathlib_depth_count": 14,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 11,
-        "L1_certificate": 2,
+        "L0_definitional": 13,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -1469,13 +1463,12 @@
     },
     "Domains": {
       "theorem_count": 43,
-      "mathlib_depth_count": 42,
-      "mathlib_depth_pct": 97.67,
+      "mathlib_depth_count": 43,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
         "L0_definitional": 14,
-        "L1_certificate": 1,
-        "L3_chain": 25,
-        "L2_analytic": 3
+        "L2_analytic": 4,
+        "L3_chain": 25
       },
       "has_sorry": false,
       "path": "FSOT/Formal/Domains.lean"
@@ -1620,11 +1613,11 @@
     },
     "EmergentDomainPriors": {
       "theorem_count": 5,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 40.0,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 60.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 3,
+        "L0_definitional": 2,
+        "L1_certificate": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -2088,11 +2081,11 @@
     },
     "FormulaCorpusPriors": {
       "theorem_count": 5,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 40.0,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 60.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 3,
+        "L0_definitional": 2,
+        "L1_certificate": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -2379,11 +2372,11 @@
     },
     "FuelLabLivePanelPriors": {
       "theorem_count": 5,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 80.0,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 60.0,
       "tier_counts": {
-        "L0_definitional": 2,
-        "L1_certificate": 1,
+        "L1_certificate": 2,
+        "L0_definitional": 1,
         "L3_chain": 2
       },
       "has_sorry": false,
@@ -2391,11 +2384,11 @@
     },
     "FuelPriors": {
       "theorem_count": 4,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 50.0,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 75.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 2,
+        "L0_definitional": 2,
+        "L1_certificate": 1,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -2590,11 +2583,10 @@
     },
     "GeomagnetismPriors": {
       "theorem_count": 3,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 1,
+        "L0_definitional": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -2614,11 +2606,10 @@
     },
     "GraceCryospherePriors": {
       "theorem_count": 3,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 1,
+        "L0_definitional": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -2694,12 +2685,12 @@
     },
     "HiggsBranchingPriors": {
       "theorem_count": 6,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 5,
+      "mathlib_depth_pct": 83.33,
       "tier_counts": {
-        "L0_definitional": 2,
-        "L1_certificate": 2,
-        "L3_chain": 2
+        "L0_definitional": 3,
+        "L3_chain": 2,
+        "L1_certificate": 1
       },
       "has_sorry": false,
       "path": "FSOT/Formal/HiggsBranchingPriors.lean"
@@ -2813,11 +2804,11 @@
     },
     "HydrologyPriors": {
       "theorem_count": 4,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 50.0,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 75.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 2,
+        "L0_definitional": 2,
+        "L1_certificate": 1,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -2944,11 +2935,11 @@
     },
     "IntelligenceCompressionPriors": {
       "theorem_count": 6,
-      "mathlib_depth_count": 3,
-      "mathlib_depth_pct": 50.0,
+      "mathlib_depth_count": 4,
+      "mathlib_depth_pct": 66.67,
       "tier_counts": {
-        "L0_definitional": 2,
-        "L1_certificate": 3,
+        "L0_definitional": 3,
+        "L1_certificate": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -3051,11 +3042,10 @@
     },
     "KnowledgeBasePriors": {
       "theorem_count": 4,
-      "mathlib_depth_count": 3,
-      "mathlib_depth_pct": 75.0,
+      "mathlib_depth_count": 4,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 2,
-        "L1_certificate": 1,
+        "L0_definitional": 3,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -3133,11 +3123,10 @@
     },
     "LeanProofsBridge": {
       "theorem_count": 4,
-      "mathlib_depth_count": 3,
-      "mathlib_depth_pct": 75.0,
+      "mathlib_depth_count": 4,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 2,
-        "L1_certificate": 1,
+        "L0_definitional": 3,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -3358,11 +3347,10 @@
     },
     "MagnetosphereExtendedPriors": {
       "theorem_count": 5,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 40.0,
+      "mathlib_depth_count": 5,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 3,
+        "L0_definitional": 4,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -3370,11 +3358,10 @@
     },
     "MagnetospherePriors": {
       "theorem_count": 3,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 1,
+        "L0_definitional": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -3583,11 +3570,11 @@
     },
     "MathGeneratorPriors": {
       "theorem_count": 6,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 5,
+      "mathlib_depth_pct": 83.33,
       "tier_counts": {
-        "L0_definitional": 3,
-        "L1_certificate": 2,
+        "L0_definitional": 4,
+        "L1_certificate": 1,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -4520,11 +4507,10 @@
     },
     "ParticlePhysicsPriors": {
       "theorem_count": 7,
-      "mathlib_depth_count": 6,
-      "mathlib_depth_pct": 85.71,
+      "mathlib_depth_count": 7,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 3,
-        "L1_certificate": 1,
+        "L0_definitional": 4,
         "L3_chain": 3
       },
       "has_sorry": false,
@@ -4673,11 +4659,10 @@
     },
     "PhotonicForge": {
       "theorem_count": 3,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L1_certificate": 1,
-        "L0_definitional": 1,
+        "L0_definitional": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -4827,13 +4812,12 @@
     },
     "ProteinFormulas": {
       "theorem_count": 8,
-      "mathlib_depth_count": 6,
-      "mathlib_depth_pct": 75.0,
+      "mathlib_depth_count": 8,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L1_certificate": 2,
+        "L0_definitional": 3,
         "L3_chain": 3,
-        "L2_analytic": 2,
-        "L0_definitional": 1
+        "L2_analytic": 2
       },
       "has_sorry": false,
       "path": "FSOT/Formal/ProteinFormulas.lean"
@@ -5343,11 +5327,10 @@
     },
     "SeismologyDeepPriors": {
       "theorem_count": 4,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 50.0,
+      "mathlib_depth_count": 4,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 2,
+        "L0_definitional": 3,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -5355,11 +5338,10 @@
     },
     "SeismologyPriors": {
       "theorem_count": 3,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 1,
+        "L0_definitional": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -5506,11 +5488,11 @@
     },
     "SpaceWeatherPriors": {
       "theorem_count": 4,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 50.0,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 75.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 2,
+        "L0_definitional": 2,
+        "L1_certificate": 1,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -5518,11 +5500,10 @@
     },
     "SpeciesPriors": {
       "theorem_count": 3,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L1_certificate": 1,
-        "L0_definitional": 1,
+        "L0_definitional": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -5588,12 +5569,12 @@
     },
     "StarTrekTransporterLivePanelPriors": {
       "theorem_count": 14,
-      "mathlib_depth_count": 13,
-      "mathlib_depth_pct": 92.86,
+      "mathlib_depth_count": 7,
+      "mathlib_depth_pct": 50.0,
       "tier_counts": {
-        "L0_definitional": 7,
+        "L1_certificate": 7,
         "L3_chain": 6,
-        "L1_certificate": 1
+        "L0_definitional": 1
       },
       "has_sorry": false,
       "path": "FSOT/Formal/StarTrekTransporterLivePanelPriors.lean"
@@ -5790,11 +5771,10 @@
     },
     "TectonicsPriors": {
       "theorem_count": 4,
-      "mathlib_depth_count": 3,
-      "mathlib_depth_pct": 75.0,
+      "mathlib_depth_count": 4,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 2,
-        "L1_certificate": 1,
+        "L0_definitional": 3,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -5814,12 +5794,11 @@
     },
     "Theorems": {
       "theorem_count": 54,
-      "mathlib_depth_count": 51,
-      "mathlib_depth_pct": 94.44,
+      "mathlib_depth_count": 54,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
         "L3_chain": 10,
-        "L2_analytic": 37,
-        "L1_certificate": 3,
+        "L2_analytic": 40,
         "L0_definitional": 4
       },
       "has_sorry": false,
@@ -5839,11 +5818,11 @@
     },
     "ThesisSimulationPriors": {
       "theorem_count": 6,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 5,
+      "mathlib_depth_pct": 83.33,
       "tier_counts": {
-        "L0_definitional": 3,
-        "L1_certificate": 2,
+        "L0_definitional": 4,
+        "L1_certificate": 1,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -6115,11 +6094,10 @@
     },
     "TrinaryOSPriors": {
       "theorem_count": 3,
-      "mathlib_depth_count": 2,
-      "mathlib_depth_pct": 66.67,
+      "mathlib_depth_count": 3,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L1_certificate": 1,
+        "L0_definitional": 2,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -6211,11 +6189,10 @@
     },
     "UnifiedDBPriors": {
       "theorem_count": 5,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 80.0,
+      "mathlib_depth_count": 5,
+      "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L1_certificate": 1,
-        "L0_definitional": 3,
+        "L0_definitional": 4,
         "L3_chain": 1
       },
       "has_sorry": false,
@@ -6610,90 +6587,5 @@
     }
   },
   "sorry_list": [],
-  "upgrade_candidates_preview": [
-    {
-      "module": "Bounds",
-      "name": "sqrt_25_eq_five",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Bounds",
-      "name": "sqrt_9_eq_3",
-      "path": "FSOT/Formal/Bounds.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Cosmology",
-      "name": "omega_b_h2_fsot_cached_pos",
-      "path": "FSOT/Formal/Cosmology.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "CosmologyExtendedPriors",
-      "name": "cosmology_extended_components_sum",
-      "path": "FSOT/Formal/CosmologyExtendedPriors.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "CosmologyExtendedPriors",
-      "name": "cosmology_extended_within_le_total",
-      "path": "FSOT/Formal/CosmologyExtendedPriors.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "CosmologyHigherWavesPriors",
-      "name": "cosmology_higher_waves_partition",
-      "path": "FSOT/Formal/CosmologyHigherWavesPriors.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "CosmologyLab",
-      "name": "lambda_cdm_wave_partition",
-      "path": "FSOT/Formal/CosmologyLab.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "CosmologyWave4",
-      "name": "wave4_observable_count_pos",
-      "path": "FSOT/Formal/CosmologyWave4.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Domains",
-      "name": "dark_energy_delta_bounds",
-      "path": "FSOT/Formal/Domains.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "LeanProofsBridge",
-      "name": "lean_proofs_domain_proven_le_formal",
-      "path": "FSOT/Formal/LeanProofsBridge.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "PhotonicForge",
-      "name": "photonic_trinary_partition",
-      "path": "FSOT/Formal/PhotonicForge.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Theorems",
-      "name": "cosmological_delta_bounds",
-      "path": "FSOT/Formal/Theorems.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Theorems",
-      "name": "cosmological_D_bounds",
-      "path": "FSOT/Formal/Theorems.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    },
-    {
-      "module": "Theorems",
-      "name": "cmb_delta_bounds",
-      "path": "FSOT/Formal/Theorems.lean",
-      "suggested_upgrade": "Prefer linarith/nlinarith/ring/positivity or exact of existing Bounds/Theorems lemmas over bare norm_num where the statement is analytic."
-    }
-  ]
+  "upgrade_candidates_preview": []
 }

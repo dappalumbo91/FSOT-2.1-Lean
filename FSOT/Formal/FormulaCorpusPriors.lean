@@ -22,7 +22,7 @@ theorem formula_corpus_records_total_pos : 0 < formula_corpus_records_total := b
 
 theorem formula_corpus_matched_le_total :
     formula_corpus_matched_count ≤ formula_corpus_records_total := by
-  unfold formula_corpus_matched_count formula_corpus_records_total; norm_num
+  unfold formula_corpus_matched_count formula_corpus_records_total; decide
 
 theorem formula_corpus_target_le_tolerable :
     formula_corpus_within_target_2pct ≤ formula_corpus_within_tolerable_5pct := by

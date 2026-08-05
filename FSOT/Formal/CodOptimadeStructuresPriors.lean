@@ -23,14 +23,12 @@ theorem cod_optimade_structures_observable_count_pos : 0 < cod_optimade_structur
 theorem cod_optimade_structures_pooled_median_under_half_pct :
     cod_optimade_structures_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold cod_optimade_structures_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.01341  : ℝ) < 0.5)
 
 theorem cod_optimade_structures_headline_median_under_half_pct :
     cod_optimade_structures_headline_median_error_pct < (0.5 : ℝ) := by
   unfold cod_optimade_structures_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.01341  : ℝ) < 0.5)
 
 theorem cod_optimade_structures_bundle :
     cod_optimade_structures_observable_count = 682 ∧

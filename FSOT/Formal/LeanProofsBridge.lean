@@ -24,7 +24,7 @@ theorem lean_proofs_domain_proven_count_pos : 0 < lean_proofs_domain_proven_coun
 
 theorem lean_proofs_domain_proven_le_formal :
     lean_proofs_domain_proven_count ≤ lean_proofs_formal_constant_count := by
-  unfold lean_proofs_domain_proven_count lean_proofs_formal_constant_count; norm_num
+  unfold lean_proofs_domain_proven_count lean_proofs_formal_constant_count; decide
 
 /-- Bundle: formalized constants with SMILES k-alignment certificate. -/
 theorem lean_proofs_constant_bundle :

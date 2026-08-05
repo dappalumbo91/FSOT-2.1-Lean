@@ -23,14 +23,12 @@ theorem jarvis_dft_open_panel_observable_count_pos : 0 < jarvis_dft_open_panel_o
 theorem jarvis_dft_open_panel_pooled_median_under_half_pct :
     jarvis_dft_open_panel_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold jarvis_dft_open_panel_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.01341  : ℝ) < 0.5)
 
 theorem jarvis_dft_open_panel_headline_median_under_half_pct :
     jarvis_dft_open_panel_headline_median_error_pct < (0.5 : ℝ) := by
   unfold jarvis_dft_open_panel_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.01341  : ℝ) < 0.5)
 
 theorem jarvis_dft_open_panel_bundle :
     jarvis_dft_open_panel_observable_count = 77 ∧

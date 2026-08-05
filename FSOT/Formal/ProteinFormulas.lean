@@ -19,11 +19,11 @@ def protein_proposed_formula_count : ℕ := 3
 
 theorem protein_formula_catalog_count_eq_fifteen :
     protein_formula_catalog_count = 15 := by
-  unfold protein_formula_catalog_count; norm_num
+  unfold protein_formula_catalog_count; decide
 
 theorem protein_proposed_formula_count_eq_three :
     protein_proposed_formula_count = 3 := by
-  unfold protein_proposed_formula_count; norm_num
+  unfold protein_proposed_formula_count; decide
 
 /-- F03 disulfide bridge: φ⁶ (largest covalent term in chemical.rs). -/
 def disulfide_bridge_force : ℝ := phi ^ 6
@@ -71,8 +71,8 @@ theorem protein_formula_closed_form_bundle :
     0 < dipole_damping_denominator ∧
     4 * phi ^ 3 + 8 / phi ^ 2 = 20 := by
   refine ⟨
-    by unfold protein_formula_catalog_count; norm_num,
-    by unfold protein_proposed_formula_count; norm_num,
+    by unfold protein_formula_catalog_count; decide,
+    by unfold protein_proposed_formula_count; decide,
     disulfide_bridge_force_pos,
     disulfide_bridge_force_gt_seventeen,
     disulfide_bridge_force_lt_eighteen,

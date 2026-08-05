@@ -23,14 +23,12 @@ theorem openalex_citation_depth_open_observable_count_pos : 0 < openalex_citatio
 theorem openalex_citation_depth_open_pooled_median_under_half_pct :
     openalex_citation_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold openalex_citation_depth_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.008863  : ℝ) < 0.5)
 
 theorem openalex_citation_depth_open_headline_median_under_half_pct :
     openalex_citation_depth_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold openalex_citation_depth_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.031506  : ℝ) < 0.5)
 
 theorem openalex_citation_depth_open_bundle :
     openalex_citation_depth_open_observable_count = 150 ∧

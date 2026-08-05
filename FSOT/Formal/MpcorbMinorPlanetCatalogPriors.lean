@@ -25,8 +25,7 @@ theorem mpcorb_object_count_pos : 0 < mpcorb_object_count := by
 theorem mpcorb_pooled_median_under_half_pct :
     mpcorb_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold mpcorb_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.023015  : ℝ) < 0.5)
 
 theorem mpcorb_pooled_median_under_tier_aspiration :
     mpcorb_pooled_median_error_pct < (0.05 : ℝ) := by

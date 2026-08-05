@@ -20,7 +20,7 @@ theorem seismology_event_count_pos : 0 < seismology_event_count := by
   unfold seismology_event_count; decide
 
 theorem seismology_match_le_total : seismology_match_count ≤ seismology_event_count := by
-  unfold seismology_match_count seismology_event_count; norm_num
+  unfold seismology_match_count seismology_event_count; decide
 
 theorem seismology_bundle :
     seismology_event_count = 500 ∧

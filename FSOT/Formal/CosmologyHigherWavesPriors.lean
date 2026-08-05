@@ -29,13 +29,12 @@ theorem cosmology_higher_waves_partition :
       cosmology_higher_waves_total := by
   unfold cosmology_wave5_count cosmology_wave6_count cosmology_wave7_count
     cosmology_wave8_count cosmology_wave9_count cosmology_wave10_count
-    cosmology_higher_waves_total; norm_num
+    cosmology_higher_waves_total; decide
 
 theorem cosmology_higher_waves_max_error_under_half_pct :
     cosmology_higher_waves_max_error_pct < (0.5 : ℝ) := by
   unfold cosmology_higher_waves_max_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.35683948712437213  : ℝ) < 0.5)
 
 /-- Bundle: 142 higher-wave observables (electroweak, Higgs, lattice, mega-wave). -/
 theorem cosmology_higher_waves_bundle :

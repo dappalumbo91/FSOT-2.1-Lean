@@ -23,14 +23,12 @@ theorem pharmacokinetics_gap_fill_observable_count_pos : 0 < pharmacokinetics_ga
 theorem pharmacokinetics_gap_fill_pooled_median_under_half_pct :
     pharmacokinetics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold pharmacokinetics_gap_fill_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.00241237063663613  : ℝ) < 0.5)
 
 theorem pharmacokinetics_gap_fill_headline_median_under_half_pct :
     pharmacokinetics_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold pharmacokinetics_gap_fill_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.04593318440797578  : ℝ) < 0.5)
 
 theorem pharmacokinetics_gap_fill_beats_sota_headlines_pos : 0 < pharmacokinetics_gap_fill_beats_sota_headlines := by
   unfold pharmacokinetics_gap_fill_beats_sota_headlines; decide

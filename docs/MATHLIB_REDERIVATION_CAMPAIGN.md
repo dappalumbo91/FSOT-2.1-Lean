@@ -1,9 +1,9 @@
 # Mathlib re-derivation campaign
 
-**Generated:** 2026-08-05T22:31:00.257203+00:00  
+**Generated:** 2026-08-05T22:38:08.205071+00:00  
 **Verdict:** `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`  
 **Engine core closed:** True  
-**Corpus Mathlib-depth %:** 56.1%  (2907/5182)
+**Corpus Mathlib-depth %:** 57.29%  (2969/5182)
 
 ## What this campaign is
 
@@ -22,24 +22,24 @@ across `FSOT/Formal` — beyond residual multiprover numeric certificate replay.
 | Wave | Role | Thms | Mathlib% | Lake | OK |
 |------|------|-----:|---------:|:----:|:--:|
 | `W0_scalar_defs` | engine | 32 | 100.0 | passed | ✓ |
-| `W1_bounds` | engine | 277 | 99.28 | passed | ✓ |
-| `W2_theorems` | engine | 54 | 94.44 | passed | ✓ |
-| `W3_domains` | engine | 43 | 97.67 | passed | ✓ |
-| `W4_cosmology` | engine | 64 | 90.62 | passed | ✓ |
-| `W5_bridge` | engine | 54 | 96.3 | passed | ✓ |
-| `W6_priors_00` | priors | 171 | 63.16 | passed | ✓ |
-| `W6_priors_01` | priors | 271 | 39.85 | passed | ✓ |
-| `W6_priors_02` | priors | 148 | 74.32 | passed | ✓ |
-| `W6_priors_03` | priors | 138 | 78.26 | passed | ✓ |
-| `W6_priors_04` | priors | 128 | 71.88 | passed | ✓ |
-| `W6_priors_05` | priors | 138 | 73.91 | passed | ✓ |
-| `W6_priors_06` | priors | 138 | 72.46 | passed | ✓ |
-| `W6_priors_07` | priors | 151 | 72.85 | passed | ✓ |
+| `W1_bounds` | engine | 277 | 100.0 | passed | ✓ |
+| `W2_theorems` | engine | 54 | 100.0 | passed | ✓ |
+| `W3_domains` | engine | 43 | 100.0 | passed | ✓ |
+| `W4_cosmology` | engine | 64 | 100.0 | passed | ✓ |
+| `W5_bridge` | engine | 54 | 100.0 | passed | ✓ |
+| `W6_priors_00` | priors | 171 | 75.44 | passed | ✓ |
+| `W6_priors_01` | priors | 271 | 41.7 | passed | ✓ |
+| `W6_priors_02` | priors | 148 | 76.35 | passed | ✓ |
+| `W6_priors_03` | priors | 138 | 78.99 | passed | ✓ |
+| `W6_priors_04` | priors | 128 | 72.66 | passed | ✓ |
+| `W6_priors_05` | priors | 138 | 77.54 | passed | ✓ |
+| `W6_priors_06` | priors | 138 | 76.09 | passed | ✓ |
+| `W6_priors_07` | priors | 151 | 73.51 | passed | ✓ |
 | `W6_priors_08` | priors | 158 | 74.68 | passed | ✓ |
-| `W6_priors_09` | priors | 160 | 69.38 | passed | ✓ |
-| `W6_priors_10` | priors | 137 | 78.1 | passed | ✓ |
-| `W6_priors_11` | priors | 144 | 73.61 | passed | ✓ |
-| `W6_priors_12` | priors | 139 | 64.03 | passed | ✓ |
+| `W6_priors_09` | priors | 160 | 70.0 | passed | ✓ |
+| `W6_priors_10` | priors | 137 | 80.29 | passed | ✓ |
+| `W6_priors_11` | priors | 144 | 72.22 | passed | ✓ |
+| `W6_priors_12` | priors | 139 | 65.47 | passed | ✓ |
 | `W6_priors_13` | priors | 60 | 68.33 | passed | ✓ |
 
 ## Engine core modules
@@ -56,22 +56,7 @@ W6+ Priors batches (certificate-heavy by design)
 
 ## Upgrade queue (engine L1 → analytic)
 
-| Module | Theorem |
-|--------|---------|
-| `Bounds` | `sqrt_25_eq_five` |
-| `Bounds` | `sqrt_9_eq_3` |
-| `Cosmology` | `omega_b_h2_fsot_cached_pos` |
-| `CosmologyExtendedPriors` | `cosmology_extended_components_sum` |
-| `CosmologyExtendedPriors` | `cosmology_extended_within_le_total` |
-| `CosmologyHigherWavesPriors` | `cosmology_higher_waves_partition` |
-| `CosmologyLab` | `lambda_cdm_wave_partition` |
-| `CosmologyWave4` | `wave4_observable_count_pos` |
-| `Domains` | `dark_energy_delta_bounds` |
-| `LeanProofsBridge` | `lean_proofs_domain_proven_le_formal` |
-| `PhotonicForge` | `photonic_trinary_partition` |
-| `Theorems` | `cosmological_delta_bounds` |
-| `Theorems` | `cosmological_D_bounds` |
-| `Theorems` | `cmb_delta_bounds` |
+_No engine L1 upgrade candidates listed (or queue empty)._
 
 ## Reproduction
 

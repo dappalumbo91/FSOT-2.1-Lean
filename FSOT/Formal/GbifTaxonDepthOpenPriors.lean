@@ -23,14 +23,12 @@ theorem gbif_taxon_depth_open_observable_count_pos : 0 < gbif_taxon_depth_open_o
 theorem gbif_taxon_depth_open_pooled_median_under_half_pct :
     gbif_taxon_depth_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold gbif_taxon_depth_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.006006  : ℝ) < 0.5)
 
 theorem gbif_taxon_depth_open_headline_median_under_half_pct :
     gbif_taxon_depth_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold gbif_taxon_depth_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.006006  : ℝ) < 0.5)
 
 theorem gbif_taxon_depth_open_bundle :
     gbif_taxon_depth_open_observable_count = 203 ∧

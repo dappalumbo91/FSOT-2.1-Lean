@@ -21,14 +21,12 @@ theorem cosmology_wave10_observable_count_pos : 0 < cosmology_wave10_observable_
 theorem cosmology_wave10_max_error_under_half_pct :
     cosmology_wave10_max_error_pct < (0.5 : ℝ) := by
   unfold cosmology_wave10_max_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.004079227596853056  : ℝ) < 0.5)
 
 theorem cosmology_wave10_median_error_under_half_pct :
     cosmology_wave10_median_error_pct < (0.5 : ℝ) := by
   unfold cosmology_wave10_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0006556117321513212  : ℝ) < 0.5)
 
 /-- Bundle: wave10 observables within 5% tolerance band. -/
 theorem cosmology_wave10_bundle :

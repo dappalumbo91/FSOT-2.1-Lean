@@ -19,7 +19,7 @@ def species_property_count : ℕ := 684
 
 theorem species_total_count_eq_sum :
     species_metal_count + species_molecule_count + species_polymer_count = species_total_count := by
-  unfold species_metal_count species_molecule_count species_polymer_count species_total_count; norm_num
+  unfold species_metal_count species_molecule_count species_polymer_count species_total_count; decide
 
 theorem species_property_count_pos : 0 < species_property_count := by
   unfold species_property_count; decide

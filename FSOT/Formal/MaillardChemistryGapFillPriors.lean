@@ -23,14 +23,12 @@ theorem maillard_chemistry_gap_fill_observable_count_pos : 0 < maillard_chemistr
 theorem maillard_chemistry_gap_fill_pooled_median_under_half_pct :
     maillard_chemistry_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold maillard_chemistry_gap_fill_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.09443694019339524  : ℝ) < 0.5)
 
 theorem maillard_chemistry_gap_fill_headline_median_under_half_pct :
     maillard_chemistry_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold maillard_chemistry_gap_fill_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.09443694019339524  : ℝ) < 0.5)
 
 theorem maillard_chemistry_gap_fill_beats_sota_headlines_pos : 0 < maillard_chemistry_gap_fill_beats_sota_headlines := by
   unfold maillard_chemistry_gap_fill_beats_sota_headlines; decide

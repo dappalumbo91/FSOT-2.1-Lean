@@ -23,14 +23,12 @@ theorem chembl_deep_open_observable_count_pos : 0 < chembl_deep_open_observable_
 theorem chembl_deep_open_pooled_median_under_half_pct :
     chembl_deep_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold chembl_deep_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.040788  : ℝ) < 0.5)
 
 theorem chembl_deep_open_headline_median_under_half_pct :
     chembl_deep_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold chembl_deep_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.040788  : ℝ) < 0.5)
 
 theorem chembl_deep_open_bundle :
     chembl_deep_open_observable_count = 188 ∧

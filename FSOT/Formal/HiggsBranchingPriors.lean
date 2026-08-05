@@ -25,13 +25,12 @@ theorem higgs_branching_observable_count_pos : 0 < higgs_branching_observable_co
 
 theorem higgs_branching_components_sum :
     higgs_compute_branching_count + higgs_thesis_target_count = higgs_branching_observable_count := by
-  unfold higgs_compute_branching_count higgs_thesis_target_count higgs_branching_observable_count; norm_num
+  unfold higgs_compute_branching_count higgs_thesis_target_count higgs_branching_observable_count; decide
 
 theorem higgs_branching_median_error_under_half_pct :
     higgs_branching_median_error_pct < (0.5 : ℝ) := by
   unfold higgs_branching_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.08808351263334355  : ℝ) < 0.5)
 
 theorem higgs_branching_max_error_under_five_pct :
     higgs_branching_max_error_pct < (5 : ℝ) := by

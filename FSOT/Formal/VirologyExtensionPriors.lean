@@ -23,14 +23,12 @@ theorem virology_ext_observable_count_pos : 0 < virology_ext_observable_count :=
 theorem virology_ext_pooled_median_under_half_pct :
     virology_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold virology_ext_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.04593318440798183  : ℝ) < 0.5)
 
 theorem virology_ext_headline_median_under_half_pct :
     virology_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold virology_ext_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.04593318440798183  : ℝ) < 0.5)
 
 theorem virology_ext_beats_sota_headlines_pos : 0 < virology_ext_beats_sota_headlines := by
   unfold virology_ext_beats_sota_headlines; decide

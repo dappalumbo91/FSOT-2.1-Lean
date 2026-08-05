@@ -23,14 +23,12 @@ theorem sports_biomechanics_gap_fill_observable_count_pos : 0 < sports_biomechan
 theorem sports_biomechanics_gap_fill_pooled_median_under_half_pct :
     sports_biomechanics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold sports_biomechanics_gap_fill_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.04447250077037523  : ℝ) < 0.5)
 
 theorem sports_biomechanics_gap_fill_headline_median_under_half_pct :
     sports_biomechanics_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold sports_biomechanics_gap_fill_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.04447250077037523  : ℝ) < 0.5)
 
 theorem sports_biomechanics_gap_fill_beats_sota_headlines_pos : 0 < sports_biomechanics_gap_fill_beats_sota_headlines := by
   unfold sports_biomechanics_gap_fill_beats_sota_headlines; decide

@@ -28,14 +28,12 @@ theorem oncology_section_count_pos : 0 < oncology_section_count := by
 theorem oncology_pooled_median_under_half_pct :
     oncology_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold oncology_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.05041956982053305  : ℝ) < 0.5)
 
 theorem oncology_headline_median_under_half_pct :
     oncology_headline_median_error_pct < (0.5 : ℝ) := by
   unfold oncology_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.05041956982053305  : ℝ) < 0.5)
 
 theorem oncology_beats_sota_headlines_pos : 0 < oncology_beats_sota_headlines := by
   unfold oncology_beats_sota_headlines; decide

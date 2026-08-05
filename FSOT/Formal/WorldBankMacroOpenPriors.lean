@@ -23,14 +23,12 @@ theorem world_bank_macro_open_observable_count_pos : 0 < world_bank_macro_open_o
 theorem world_bank_macro_open_pooled_median_under_half_pct :
     world_bank_macro_open_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold world_bank_macro_open_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.02584  : ℝ) < 0.5)
 
 theorem world_bank_macro_open_headline_median_under_half_pct :
     world_bank_macro_open_headline_median_error_pct < (0.5 : ℝ) := by
   unfold world_bank_macro_open_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.02584  : ℝ) < 0.5)
 
 theorem world_bank_macro_open_bundle :
     world_bank_macro_open_observable_count = 605 ∧

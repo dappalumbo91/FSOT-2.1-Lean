@@ -22,7 +22,7 @@ theorem emergent_domain_count_pos : 0 < emergent_domain_count := by
 
 theorem emergent_observed_le_total :
     emergent_observed_domain_count ≤ emergent_domain_count := by
-  unfold emergent_observed_domain_count emergent_domain_count; norm_num
+  unfold emergent_observed_domain_count emergent_domain_count; decide
 
 theorem emergent_final_emergence_health_positive : (0 : ℝ) < emergent_final_emergence_health := by
   unfold emergent_final_emergence_health; norm_num

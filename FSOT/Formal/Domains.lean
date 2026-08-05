@@ -52,7 +52,7 @@ lemma dark_energy_delta_bounds :
     (0.5 : ℝ) ≤ (get_domain_params "dark_energy").delta_psi ∧
       (get_domain_params "dark_energy").delta_psi ≤ 1.3 := by
   simp [get_domain_params]
-  norm_num
+  constructor <;> linarith
 
 lemma cmb_observed_false :
     (get_domain_params "cmb").observed = false := by

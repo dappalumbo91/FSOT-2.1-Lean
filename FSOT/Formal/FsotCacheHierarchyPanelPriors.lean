@@ -21,8 +21,7 @@ theorem fsot_cache_hierarchy_observable_count_pos : 0 < fsot_cache_hierarchy_obs
 theorem fsot_cache_hierarchy_median_error_under_half_pct :
     fsot_cache_hierarchy_median_error_pct < (0.5 : ℝ) := by
   unfold fsot_cache_hierarchy_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem fsot_cache_hierarchy_bundle :
     fsot_cache_hierarchy_observable_count = 82 ∧

@@ -36,7 +36,7 @@ theorem math_generator_max_error_pct_positive : (0 : ℝ) < math_generator_max_e
 
 theorem math_generator_rule_observables_ge_corpora :
     math_generator_rule_corpus_count ≤ math_generator_rule_observable_count := by
-  unfold math_generator_rule_corpus_count math_generator_rule_observable_count; norm_num
+  unfold math_generator_rule_corpus_count math_generator_rule_observable_count; decide
 
 /-- Bundle: Ada/Spark comparisons + formal rule corpora with particle-domain sign proxy. -/
 theorem math_generator_priors_bundle :

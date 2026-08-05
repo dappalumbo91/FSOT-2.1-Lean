@@ -21,8 +21,7 @@ theorem esp32_platform_engineering_observable_count_pos : 0 < esp32_platform_eng
 theorem esp32_platform_engineering_median_error_under_half_pct :
     esp32_platform_engineering_median_error_pct < (0.5 : ℝ) := by
   unfold esp32_platform_engineering_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.020755  : ℝ) < 0.5)
 
 theorem esp32_platform_engineering_bundle :
     esp32_platform_engineering_observable_count = 34 ∧

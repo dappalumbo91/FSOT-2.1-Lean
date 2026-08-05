@@ -23,14 +23,12 @@ theorem paleoclimate_ext_observable_count_pos : 0 < paleoclimate_ext_observable_
 theorem paleoclimate_ext_pooled_median_under_half_pct :
     paleoclimate_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold paleoclimate_ext_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.015015854077432778  : ℝ) < 0.5)
 
 theorem paleoclimate_ext_headline_median_under_half_pct :
     paleoclimate_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold paleoclimate_ext_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.015015854077432778  : ℝ) < 0.5)
 
 theorem paleoclimate_ext_beats_sota_headlines_pos : 0 < paleoclimate_ext_beats_sota_headlines := by
   unfold paleoclimate_ext_beats_sota_headlines; decide

@@ -156,11 +156,11 @@ lemma beta_nonneg : (0 : ℝ) ≤ beta := by unfold beta; positivity
 lemma cosmological_delta_bounds :
     (0.5 : ℝ) ≤ cosmologicalParams.delta_psi ∧ cosmologicalParams.delta_psi ≤ 1.3 := by
   simp [cosmologicalParams]
-  norm_num
+  constructor <;> linarith
 
 lemma cosmological_D_bounds : (20 : ℝ) ≤ cosmologicalParams.D_eff := by
   simp [cosmologicalParams]
-  norm_num
+  linarith
 
 lemma growth_term_hits_zero_gt_one (p : FSOTParams)
     (h_hits : p.recent_hits = 0) (h_N : p.N = 1) :
@@ -174,7 +174,7 @@ lemma cmb_delta_bounds :
     (0.5 : ℝ) ≤ (get_domain_params "cmb").delta_psi ∧
       (get_domain_params "cmb").delta_psi ≤ 1.3 := by
   simp [get_domain_params]
-  norm_num
+  constructor <;> linarith
 
 lemma cosmological_term3_abs_lt_fifth :
     abs (term3 cosmologicalParams) < (0.2 : ℝ) := by

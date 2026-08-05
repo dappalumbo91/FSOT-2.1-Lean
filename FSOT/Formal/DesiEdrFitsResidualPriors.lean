@@ -23,14 +23,12 @@ theorem desi_edr_fits_residual_observable_count_pos : 0 < desi_edr_fits_residual
 theorem desi_edr_fits_residual_pooled_median_under_half_pct :
     desi_edr_fits_residual_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold desi_edr_fits_residual_pooled_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0224614892042  : ℝ) < 0.5)
 
 theorem desi_edr_fits_residual_headline_median_under_half_pct :
     desi_edr_fits_residual_headline_median_error_pct < (0.5 : ℝ) := by
   unfold desi_edr_fits_residual_headline_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0224614892042  : ℝ) < 0.5)
 
 theorem desi_edr_fits_residual_bundle :
     desi_edr_fits_residual_observable_count = 97144 ∧

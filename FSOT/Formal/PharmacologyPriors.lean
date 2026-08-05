@@ -21,8 +21,7 @@ theorem pharmacology_observable_count_pos : 0 < pharmacology_observable_count :=
 theorem pharmacology_median_error_under_half_pct :
     pharmacology_median_error_pct < (0.5 : ℝ) := by
   unfold pharmacology_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0011715432153059484  : ℝ) < 0.5)
 
 theorem pharmacology_bundle :
     pharmacology_observable_count = 120 ∧

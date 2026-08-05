@@ -21,8 +21,7 @@ theorem engineering_hardware_code_spine_observable_count_pos : 0 < engineering_h
 theorem engineering_hardware_code_spine_median_error_under_half_pct :
     engineering_hardware_code_spine_median_error_pct < (0.5 : ℝ) := by
   unfold engineering_hardware_code_spine_median_error_pct
-  have h : _ < (0.5 : ℝ) := by norm_num
-  exact h
+  exact (by norm_num : (0.0  : ℝ) < 0.5)
 
 theorem engineering_hardware_code_spine_bundle :
     engineering_hardware_code_spine_observable_count = 95 ∧

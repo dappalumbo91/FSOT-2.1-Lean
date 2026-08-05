@@ -58,6 +58,6 @@ theorem cross_proof_full_formal_spine_bundle :
   · unfold cross_proof_full_priors_obligation_count; decide
   · unfold cross_proof_full_formal_provable_count; decide
   · unfold cross_proof_full_priors_margin_violation_count; decide
-  · unfold cross_proof_connective_obligation_count cross_proof_full_formal_obligation_count; norm_num
+  · unfold cross_proof_connective_obligation_count cross_proof_full_formal_obligation_count; decide
 
 end

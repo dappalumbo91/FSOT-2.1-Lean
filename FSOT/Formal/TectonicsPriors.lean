@@ -24,7 +24,7 @@ theorem tectonics_boundary_count_pos : 0 < tectonics_boundary_count := by
   unfold tectonics_boundary_count; decide
 
 theorem tectonics_match_le_total : tectonics_match_count ≤ tectonics_event_count := by
-  unfold tectonics_match_count tectonics_event_count; norm_num
+  unfold tectonics_match_count tectonics_event_count; decide
 
 theorem tectonics_bundle :
     tectonics_event_count = 500 ∧

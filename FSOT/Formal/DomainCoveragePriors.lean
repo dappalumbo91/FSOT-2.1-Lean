@@ -27,11 +27,11 @@ theorem fsot_neurolab_domain_count_eq_thirty_five : fsot_neurolab_domain_count =
   unfold fsot_neurolab_domain_count; decide
 
 theorem domains_with_empirical_data_full : domains_with_empirical_data_count = fsot_neurolab_domain_count := by
-  unfold domains_with_empirical_data_count fsot_neurolab_domain_count; norm_num
+  unfold domains_with_empirical_data_count fsot_neurolab_domain_count; decide
 
 theorem lean_override_aligned_all_mapped :
     lean_override_aligned_count = lean_override_mapped_count := by
-  unfold lean_override_aligned_count lean_override_mapped_count; norm_num
+  unfold lean_override_aligned_count lean_override_mapped_count; decide
 
 theorem negative_scalar_domain_count_pos : 0 < negative_scalar_domain_count := by
   unfold negative_scalar_domain_count; decide

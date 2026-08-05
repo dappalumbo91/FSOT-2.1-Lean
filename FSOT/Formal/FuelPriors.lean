@@ -21,7 +21,7 @@ theorem fuel_profile_count_pos : 0 < fuel_profile_count := by
 
 theorem fuel_resolved_le_entries :
     fuel_resolved_entry_count ≤ fuel_lookup_entry_count := by
-  unfold fuel_resolved_entry_count fuel_lookup_entry_count; norm_num
+  unfold fuel_resolved_entry_count fuel_lookup_entry_count; decide
 
 theorem fuel_lab_chemical_domain_positive :
     (0 : ℝ) < 1 := by norm_num
