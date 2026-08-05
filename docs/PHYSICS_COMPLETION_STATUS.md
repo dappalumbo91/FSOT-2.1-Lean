@@ -38,7 +38,21 @@ That is the **operational “physics finished” bar** for this repo: one seed e
 | Particle / plasma / Higgs / PDG anchors | particle, plasma, higgs, PDG benchmarks |
 | Open science physics streams | NIST CODATA, CERN Open Data, PubChem, OpenAlex, … |
 
-**Depth rebuild this session:** TOE gap closure, contested, founding unmapped laws, particle/plasma, H0/Higgs, cosmology anomalies, DESI *w_a*, SH0ES refined, Tier J/K/M/70 ToE spines, GR/SM multiprover, open-science ingest.
+**Depth rebuild this session:** TOE gap closure, contested, founding unmapped laws, particle/plasma, H0, cosmology anomalies, DESI *w_a*, SH0ES refined, Tier J/K/M/70 ToE spines, GR/SM multiprover, open-science ingest.
+
+### Already solved (do not re-claim as new)
+
+These were **already** FSOT residual-closed before any “completion pass” slogans:
+
+| Sector | How FSOT already solves it |
+|--------|----------------------------|
+| **Higgs mass \(m_H\)** | Seed FO-213 / `seed_higgs_GeV` + panel residual ≪0.5% (`higgs_mass_benchmark`, T3_SM_higgs in `fsot_gr_sm`) |
+| **SM masses / couplings** | `vendor/fsot_gr_sm.py` force package + multiprover GR/SM/CKM spine |
+| **CKM / PMNS** | Seed+NLO residual gates, multiprover exported |
+| **GR classic tests** | Weak field, light deflection, perihelion, Schwarzschild, etc. in `toe_gr_sm_deep` |
+| **Contested H₀ / DESI class** | Contested-sector FSOT readouts (not free ΛCDM rescue) |
+
+**Policy:** residual gates use the **FSOT prediction law** \(c = m\,(1+|S|\,f)\) or **authority pin seed formulas** — never panel-local alternate algebra.
 
 ---
 
