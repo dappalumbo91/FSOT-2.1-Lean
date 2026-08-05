@@ -7,7 +7,7 @@
 **Edition:** v2.9 — Label A + Label B (T1–T6) · live scoreboard · documentation accuracy · **2026-08-05**  
 **Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)  
 **Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · sync checklist: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)  
-**New here?** → **[`docs/START_HERE.md`](docs/START_HERE.md)** · Audience map → [`docs/DOCUMENTATION_MAP.md`](docs/DOCUMENTATION_MAP.md) · Reproduce → [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) · Math key → [`docs/FSOT_MATH_KEY.md`](docs/FSOT_MATH_KEY.md) · **Public data citations** → [`docs/BENCHMARK_DATA_CITATIONS.md`](docs/BENCHMARK_DATA_CITATIONS.md)
+**New here?** → [docs/START_HERE.md](docs/START_HERE.md) · **Atlas SQLite** → [docs/ATLAS_DATABASE_DESIGN.md](docs/ATLAS_DATABASE_DESIGN.md) · python scripts/query_fsot_atlas.py --stats · **Open science only (no keys)** → [docs/OPEN_SCIENCE_ONLY_POLICY.md](docs/OPEN_SCIENCE_ONLY_POLICY.md) · map → [docs/DOCUMENTATION_MAP.md](docs/DOCUMENTATION_MAP.md)
 
 ### Live scoreboard (this edition — regenerate after every expansion)
 
