@@ -6,7 +6,8 @@
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
 **Edition:** v2.8 — Label A + Label B (T1–T6) · densify remediation · Dzhanibekov panel · multiprover green · **2026-08-05**  
 **Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)  
-**Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · sync checklist: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)
+**Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · sync checklist: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)  
+**New here?** → **[`docs/START_HERE.md`](docs/START_HERE.md)** · Machine/OS path → [`docs/NEURON_ZIG_TO_OS_ROADMAP.md`](docs/NEURON_ZIG_TO_OS_ROADMAP.md)
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
 
@@ -36,7 +37,7 @@ FSOT is put forward as a **candidate Theory of Everything** under a **frozen tec
 
 1. One seed-derived scalar engine (π, e, φ, γ, G / Catalan) — pin **D1D38A** — zero free fits.  
 2. Continuum / fluid dynamics (`vendor/fsot_dynamics.py`) + limit-recovery probes (GR weak field, QM scales, SM bridges).  
-3. Multi-domain residual atlas green (**430/430** ≤0.5% pooled); live stamp in [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).  
+3. Multi-domain residual atlas green (live count in [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md), ≤0.5% pooled).  
 4. Contested-sector public anchors (H₀ Planck/SH0ES, DESI *w_a*, N_eff, σ₈, Higgs, …) with utilization fixes, not excuses.  
 5. Preregistered freeze + falsification registry.  
 6. Multi-prover triangulation (Lean master + Coq/Isabelle/F*/Rust + SMT + TLA+).

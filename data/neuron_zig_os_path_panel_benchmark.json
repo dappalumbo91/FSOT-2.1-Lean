@@ -1,0 +1,541 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-05T12:24:27.998201+00:00",
+  "domain": "Neuron_Zig_OS_Path_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "vendor/trinary_os/isa/fsotb_opcode_registry.json",
+    "vendor/trinary_os/target/",
+    "docs/NEURON_ZIG_TO_OS_ROADMAP.md",
+    "docs/ENGINEERING_HARDWARE_CODE_DIRECTION.md",
+    "RELATED_EMBODIMENTS.md",
+    "https://github.com/dappalumbo91/fsot-neuron-zig"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "neural",
+    "consciousness"
+  ],
+  "D_eff": 12,
+  "record_count": 41,
+  "observable_count": 41,
+  "scalar_record_count": 38,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "commodity_os_without_seed_pin": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "generic runtime without D1D38A residual gates"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_os_path_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 41
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "os_path",
+      "name": "neuron_zig_stack",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 41
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "os_path_lab",
+      "property": "opcode_count",
+      "name": "FSOTB",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "registry opcode cardinality",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "word_width_trits",
+      "name": "abi",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "27-trit word",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "register_count",
+      "name": "abi",
+      "computed": 25.0,
+      "measured": 25.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "25 registers",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "num_task_slots",
+      "name": "scheduler",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "8 task slots",
+      "layer": "scheduler"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "cortical_layers",
+      "name": "mind_layout",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "6 cortical layers",
+      "layer": "neuron"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "instr_bytes",
+      "name": "abi",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "6-byte instruction",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "abi_tier_count",
+      "name": "v1_0_v1_1_v1_2",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "three ABI tiers",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "max_opcode_id",
+      "name": "JOIN",
+      "computed": 26.0,
+      "measured": 26.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "SPAWN/JOIN complete v1.2",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "opcode_HALT",
+      "name": "present",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "opcode_SYSCALL",
+      "name": "present",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "opcode_CALL",
+      "name": "present",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "opcode_RET",
+      "name": "present",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "opcode_SPAWN",
+      "name": "present",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "opcode_JOIN",
+      "name": "present",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "opcode_CONSENSUS",
+      "name": "present",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "opcode_COLLAPSE",
+      "name": "present",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "opcode_MEASURE",
+      "name": "present",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "hello_file_size",
+      "name": "oracle",
+      "computed": 264.0,
+      "measured": 264.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "FSOTB oracle file size",
+      "layer": "oracle"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "hello_n_instructions",
+      "name": "oracle",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "FSOTB oracle instruction count",
+      "layer": "oracle"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "call_ret_file_size",
+      "name": "oracle",
+      "computed": 312.0,
+      "measured": 312.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "FSOTB oracle file size",
+      "layer": "oracle"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "call_ret_n_instructions",
+      "name": "oracle",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "FSOTB oracle instruction count",
+      "layer": "oracle"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "spawn_join_file_size",
+      "name": "oracle",
+      "computed": 440.0,
+      "measured": 440.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "FSOTB oracle file size",
+      "layer": "oracle"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "spawn_join_n_instructions",
+      "name": "oracle",
+      "computed": 31.0,
+      "measured": 31.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "FSOTB oracle instruction count",
+      "layer": "oracle"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "collapse_threshold",
+      "name": "c_eff_times_p_var",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "collapse \u03b8 = C_eff \u00b7 P_var",
+      "layer": "seeds"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "task_slots_const",
+      "name": "derived",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "task slots",
+      "layer": "scheduler"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "trit_word_const",
+      "name": "derived",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "trit word",
+      "layer": "isa"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "bits_per_trit",
+      "name": "pack",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "balanced ternary packing class",
+      "layer": "hardware"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "trits_per_u64",
+      "name": "pack",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "32 trits / u64",
+      "layer": "hardware"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "active_fraction_phi_inv4",
+      "name": "locality",
+      "computed": 0.14589803375031543,
+      "measured": 0.14589803375031543,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "A_frac \u2264 \u03c6\u207b\u2074 class (coherence / cache)",
+      "layer": "hardware"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "scheduler_capacity_class",
+      "name": "slots_times_phi_inv4",
+      "computed": 1.1671842700025234,
+      "measured": 1.1671842700025234,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "task_slots \u00b7 \u03c6\u207b\u2074 capacity class (not free fit)",
+      "layer": "scheduler"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "layers_times_slots",
+      "name": "mind_schedule",
+      "computed": 48.0,
+      "measured": 48.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "cortical_layers \u00d7 task_slots",
+      "layer": "neuron"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "bare_metal_report_present",
+      "name": "qemu",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "bare_metal"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "bare_metal_overall_ok",
+      "name": "qemu",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "bare_metal"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "hub_is_law_not_full_os_yet",
+      "name": "honesty",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "honesty"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "neuron_zig_is_sibling_under_same_pin",
+      "name": "honesty",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "honesty"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "no_free_param_llm_core",
+      "name": "honesty",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "honesty"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "roadmap_not_shipped_unix_clone",
+      "name": "honesty",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "honesty"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "authority_pin_d1d38a",
+      "name": "D1D38A",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "structure_gate",
+      "layer": "pin"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "seed_pi",
+      "name": "cycle",
+      "computed": 3.141592653589793,
+      "measured": 3.141592653589793,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c0 seed identity",
+      "layer": "seeds"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "seed_phi",
+      "name": "fold",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "\u03c6 exact",
+      "layer": "seeds"
+    },
+    {
+      "lab": "os_path_lab",
+      "property": "isa_opcode_count_summary",
+      "name": "summarize_isa",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula",
+      "formula": "summarize_isa matches registry",
+      "layer": "isa"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "os_path": {
+    "opcode_count": 27,
+    "abi_tiers": [
+      "v1_0",
+      "v1_1",
+      "v1_2"
+    ],
+    "oracle_programs": [
+      "hello",
+      "call_ret",
+      "spawn_join"
+    ],
+    "bare_metal_report": "data\\fsot_hardware_bare_metal_report.json",
+    "neuron_zig": "https://github.com/dappalumbo91/fsot-neuron-zig",
+    "claim": "roadmap residual panel \u2014 not a shipped multi-user OS"
+  }
+}

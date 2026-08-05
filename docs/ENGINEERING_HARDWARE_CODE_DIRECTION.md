@@ -9,7 +9,7 @@
 
 1. **Circuit / ESP32 engineering** — absolute rails (3.3 V, current, clocks, pull-ups, RC, LDO/buck) so BOM and bring-up are seed-grounded, not wall-banging.
 2. **Coding structure verifier** — same *class* of panel as linguistics / Protofluid / code-genome: structure, parity, genome stats — **not** importing transformer weights into the seed spine.
-3. **Neuron-zig bridge** — live bio-accurate mind stack on `I:\fsot-neuron-zig` (Lean wet-lab certificate, 0 free params on scalar path). Replaces “Living FSOT hardware” as the embodiment/bio direction.
+3. **Neuron-zig → OS path** — fixed-lattice mind ([fsot-neuron-zig](https://github.com/dappalumbo91/fsot-neuron-zig)) under D1D38A, sitting on **trinary FSOTB ABI** (`vendor/trinary_os/`) + QEMU bare metal + hardware laws. Roadmap: [`NEURON_ZIG_TO_OS_ROADMAP.md`](NEURON_ZIG_TO_OS_ROADMAP.md) · panel: `python scripts/build_neuron_zig_os_path_panel.py`. Not a Unix clone claim — OS-class runtime direction.
 4. **FSOT-GPU CUDA system** — same pattern as your Desktop FSOT-GPU lab: own collapse θ / coherence gate / consensus (no softmax exp) / sparse active-key CUDA vs industry dense-SDPA, multi-lang parity, FSOT 2.1 verify bridge. Residual-gated into Lean as competitive + parity panels — **operators and seeds**, not weight import.
 5. **Processor function + RAM function** — map silicon work and memory as FSOT law (not opaque FLOPS/allocator bags): warp/pack (32 trits/u64), collapse work \(W=H\cdot S\cdot A\cdot D\), VRAM crystal sectors, usable capacity \(C_\mathrm{eff}\cdot\) formal boundary.
 6. **Cache hierarchy + interconnect** — line/trit packing, L1&lt;L2&lt;L3 order, working-set \(A_\mathrm{frac}\le\phi^{-4}\); bus “who may speak” = coherence gate (same connective law as attention).

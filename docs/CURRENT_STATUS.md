@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-08-05T12:17:53.273082+00:00`  
+**Generated:** `2026-08-05T12:24:33.245064+00:00`  
 **Edition stamp:** 2026-08-05  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -19,12 +19,12 @@
 
 | Item | Value |
 |------|-------|
-| Green pass | **431 / 431** |
+| Green pass | **432 / 432** |
 | Fail | 0 |
 | Gate | ≤ 0.5% pooled median |
 | Median-of-medians | 0.000561846% |
 | Scalar records (envelope) | 61335 |
-| Tiers | `{'B_verified': 328, 'A_strong': 95}` |
+| Tiers | `{'B_verified': 329, 'A_strong': 95}` |
 
 ## Multiprover
 
@@ -43,8 +43,8 @@ Frameworks passed: `coq`, `cross_refinement`, `esp32_harness`, `fstar`, `fstar_r
 
 ## Expansion highlights (recent)
 
-- **OPH challenge response (2026-08-05):** FSOT vs Observer Patch Holography. [docs/OPH_FSOT_CHALLENGE_RESPONSE.md](OPH_FSOT_CHALLENGE_RESPONSE.md)
-- **Coq π/e Interval native + FullFormalSpine_16 wire**
+- **START_HERE + neuron→OS roadmap** (docs depth; no external-repo hijack)
+- **Neuron_Zig_OS_Path_Panel** residual + bare-metal overall_ok
 - Dzhanibekov / intermediate-axis vacuum flip: [`docs/DZHANIBEKOV_FSOT_RESPONSE.md`](DZHANIBEKOV_FSOT_RESPONSE.md)
 - Proper densify (formula + real data only): [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](FSOT_PROPER_DENSIFY_POLICY.md)
 - Multiprover debt clarified: [`docs/MULTIPROVER_DESIGN_DEBT_CLARIFIED.md`](MULTIPROVER_DESIGN_DEBT_CLARIFIED.md)
