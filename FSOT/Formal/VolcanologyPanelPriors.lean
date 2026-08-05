@@ -16,7 +16,8 @@ theorem volcanology_panel_observable_count_pos : 0 < volcanology_panel_observabl
   unfold volcanology_panel_observable_count; decide
 
 theorem volcanology_panel_median_error_under_half_pct :
-    (0.023502 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.023502 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.023502 : ℝ) < (0.5 : ℝ))
 
 theorem volcanology_panel_bundle :
     volcanology_panel_observable_count = 90 ∧

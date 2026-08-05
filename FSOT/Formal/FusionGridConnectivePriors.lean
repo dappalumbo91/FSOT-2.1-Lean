@@ -31,17 +31,25 @@ def connective_lawson_triple_product_relay : ℝ := (1.2078658957280072e+19 : �
 /-- ITER design Q public anchor (comparison only). -/
 def connective_iter_q_public_anchor : ℝ := (10.0 : ℝ)
 
-theorem connective_plasma_confinement_pos : (0 : ℝ) < connective_plasma_confinement_coupling := by
-  unfold connective_plasma_confinement_coupling; norm_num
+theorem connective_plasma_confinement_pos :
+    (0 : ℝ) < connective_plasma_confinement_coupling := by
+  unfold connective_plasma_confinement_coupling
+  exact (by norm_num : (0 : ℝ) < (0.131181176323  : ℝ))
 
-theorem connective_seawater_acoustic_pos : (0 : ℝ) < connective_seawater_plasma_acoustic := by
-  unfold connective_seawater_plasma_acoustic; norm_num
+theorem connective_seawater_acoustic_pos :
+    (0 : ℝ) < connective_seawater_plasma_acoustic := by
+  unfold connective_seawater_plasma_acoustic
+  exact (by norm_num : (0 : ℝ) < (0.094115088176  : ℝ))
 
-theorem connective_decay_chain_relay_pos : (0 : ℝ) < connective_fusion_decay_chain_relay := by
-  unfold connective_fusion_decay_chain_relay; norm_num
+theorem connective_decay_chain_relay_pos :
+    (0 : ℝ) < connective_fusion_decay_chain_relay := by
+  unfold connective_fusion_decay_chain_relay
+  exact (by norm_num : (0 : ℝ) < (0.029710640768  : ℝ))
 
-theorem connective_dt_energy_pos : (0 : ℝ) < connective_dt_fusion_energy_mev := by
-  unfold connective_dt_fusion_energy_mev; norm_num
+theorem connective_dt_energy_pos :
+    (0 : ℝ) < connective_dt_fusion_energy_mev := by
+  unfold connective_dt_fusion_energy_mev
+  exact (by norm_num : (0 : ℝ) < (17.6  : ℝ))
 
 theorem connective_fusion_grid_bundle :
     (0 : ℝ) < connective_plasma_confinement_coupling ∧

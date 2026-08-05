@@ -36,10 +36,12 @@ theorem domain_precision_huge_gap_bounded :
   unfold domain_precision_huge_gap_count; decide
 
 theorem cosmology_median_under_one_pct :
-    (0.0007354204043789445 : ℝ) < (1 : ℝ) := by norm_num
+    (0.0007354204043789445 : ℝ) < (1 : ℝ) :=
+  (by norm_num : (0.0007354204043789445 : ℝ) < (1 : ℝ))
 
 theorem smiles_chemical_median_under_one_pct :
-    (0.028389499999999998 : ℝ) < (1 : ℝ) := by norm_num
+    (0.028389499999999998 : ℝ) < (1 : ℝ) :=
+  (by norm_num : (0.028389499999999998 : ℝ) < (1 : ℝ))
 
 /-- Bundle: Tier-10 numeric precision floor + Tier-9 coverage inheritance. -/
 theorem domain_precision_priors_bundle :

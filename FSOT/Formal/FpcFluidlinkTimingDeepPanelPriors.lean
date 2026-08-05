@@ -16,7 +16,8 @@ theorem fpc_fluidlink_timing_deep_panel_observable_count_pos : 0 < fpc_fluidlink
   unfold fpc_fluidlink_timing_deep_panel_observable_count; decide
 
 theorem fpc_fluidlink_timing_deep_panel_median_error_under_half_pct :
-    (0.021117999999999998 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.021117999999999998 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.021117999999999998 : ℝ) < (0.5 : ℝ))
 
 theorem fpc_fluidlink_timing_deep_panel_bundle :
     fpc_fluidlink_timing_deep_panel_observable_count = 24 ∧

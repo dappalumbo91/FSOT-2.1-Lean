@@ -16,7 +16,8 @@ theorem undiscovered_element_candidate_prereg_scaffold_observable_count_pos : 0 
   unfold undiscovered_element_candidate_prereg_scaffold_observable_count; decide
 
 theorem undiscovered_element_candidate_prereg_scaffold_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem undiscovered_element_candidate_prereg_scaffold_bundle :
     undiscovered_element_candidate_prereg_scaffold_observable_count = 25 ∧

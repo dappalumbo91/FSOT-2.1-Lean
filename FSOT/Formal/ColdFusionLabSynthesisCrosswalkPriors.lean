@@ -16,7 +16,8 @@ theorem cold_fusion_lab_synthesis_crosswalk_observable_count_pos : 0 < cold_fusi
   unfold cold_fusion_lab_synthesis_crosswalk_observable_count; decide
 
 theorem cold_fusion_lab_synthesis_crosswalk_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem cold_fusion_lab_synthesis_crosswalk_bundle :
     cold_fusion_lab_synthesis_crosswalk_observable_count = 22 ∧

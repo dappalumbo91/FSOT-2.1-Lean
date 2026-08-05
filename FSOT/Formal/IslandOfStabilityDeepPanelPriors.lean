@@ -16,7 +16,8 @@ theorem island_of_stability_deep_panel_observable_count_pos : 0 < island_of_stab
   unfold island_of_stability_deep_panel_observable_count; decide
 
 theorem island_of_stability_deep_panel_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem island_of_stability_deep_panel_bundle :
     island_of_stability_deep_panel_observable_count = 23 ∧

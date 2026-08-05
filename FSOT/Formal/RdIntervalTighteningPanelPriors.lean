@@ -16,7 +16,8 @@ theorem rd_interval_tightening_panel_observable_count_pos : 0 < rd_interval_tigh
   unfold rd_interval_tightening_panel_observable_count; decide
 
 theorem rd_interval_tightening_panel_median_error_under_half_pct :
-    (0.000502 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.000502 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.000502 : ℝ) < (0.5 : ℝ))
 
 theorem rd_interval_tightening_panel_bundle :
     rd_interval_tightening_panel_observable_count = 24 ∧

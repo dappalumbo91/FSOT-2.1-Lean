@@ -26,7 +26,8 @@ theorem codon_table_count_eq_sixty_four :
   unfold codon_table_count; decide
 
 theorem codon_primary_pattern_space_eq_eight :
-    (2 : ℝ) ^ 3 = 8 := by norm_num
+    (2 : ℝ) ^ 3 = 8 :=
+  (by norm_num : (2 : ℝ) ^ 3 = 8)
 
 theorem codon_secondary_pattern_space_eq_twenty_seven :
     genetic_trinary_alphabet_card ^ 3 = 27 :=
@@ -46,14 +47,14 @@ def codon_aaa_primary_1 : ℤ := 1
 def codon_aaa_primary_2 : ℤ := 1
 theorem codon_aaa_primary_phase :
     (codon_aaa_primary_0, codon_aaa_primary_1, codon_aaa_primary_2) = (1, 1, 1) := by
-  unfold codon_aaa_primary_0 codon_aaa_primary_1 codon_aaa_primary_2; norm_num
+  unfold codon_aaa_primary_0 codon_aaa_primary_1 codon_aaa_primary_2; decide
 /-- `AAA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_aaa_secondary_0 : ℤ := 1
 def codon_aaa_secondary_1 : ℤ := 1
 def codon_aaa_secondary_2 : ℤ := 1
 theorem codon_aaa_secondary_phase :
     (codon_aaa_secondary_0, codon_aaa_secondary_1, codon_aaa_secondary_2) = (1, 1, 1) := by
-  unfold codon_aaa_secondary_0 codon_aaa_secondary_1 codon_aaa_secondary_2; norm_num
+  unfold codon_aaa_secondary_0 codon_aaa_secondary_1 codon_aaa_secondary_2; decide
 
 /-- `AAC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_aac_primary_0 : ℤ := 1
@@ -61,14 +62,14 @@ def codon_aac_primary_1 : ℤ := 1
 def codon_aac_primary_2 : ℤ := -1
 theorem codon_aac_primary_phase :
     (codon_aac_primary_0, codon_aac_primary_1, codon_aac_primary_2) = (1, 1, -1) := by
-  unfold codon_aac_primary_0 codon_aac_primary_1 codon_aac_primary_2; norm_num
+  unfold codon_aac_primary_0 codon_aac_primary_1 codon_aac_primary_2; decide
 /-- `AAC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_aac_secondary_0 : ℤ := 1
 def codon_aac_secondary_1 : ℤ := 1
 def codon_aac_secondary_2 : ℤ := 0
 theorem codon_aac_secondary_phase :
     (codon_aac_secondary_0, codon_aac_secondary_1, codon_aac_secondary_2) = (1, 1, 0) := by
-  unfold codon_aac_secondary_0 codon_aac_secondary_1 codon_aac_secondary_2; norm_num
+  unfold codon_aac_secondary_0 codon_aac_secondary_1 codon_aac_secondary_2; decide
 
 /-- `AAG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_aag_primary_0 : ℤ := 1
@@ -76,14 +77,14 @@ def codon_aag_primary_1 : ℤ := 1
 def codon_aag_primary_2 : ℤ := 1
 theorem codon_aag_primary_phase :
     (codon_aag_primary_0, codon_aag_primary_1, codon_aag_primary_2) = (1, 1, 1) := by
-  unfold codon_aag_primary_0 codon_aag_primary_1 codon_aag_primary_2; norm_num
+  unfold codon_aag_primary_0 codon_aag_primary_1 codon_aag_primary_2; decide
 /-- `AAG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_aag_secondary_0 : ℤ := 1
 def codon_aag_secondary_1 : ℤ := 1
 def codon_aag_secondary_2 : ℤ := 0
 theorem codon_aag_secondary_phase :
     (codon_aag_secondary_0, codon_aag_secondary_1, codon_aag_secondary_2) = (1, 1, 0) := by
-  unfold codon_aag_secondary_0 codon_aag_secondary_1 codon_aag_secondary_2; norm_num
+  unfold codon_aag_secondary_0 codon_aag_secondary_1 codon_aag_secondary_2; decide
 
 /-- `AAT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_aat_primary_0 : ℤ := 1
@@ -91,14 +92,14 @@ def codon_aat_primary_1 : ℤ := 1
 def codon_aat_primary_2 : ℤ := -1
 theorem codon_aat_primary_phase :
     (codon_aat_primary_0, codon_aat_primary_1, codon_aat_primary_2) = (1, 1, -1) := by
-  unfold codon_aat_primary_0 codon_aat_primary_1 codon_aat_primary_2; norm_num
+  unfold codon_aat_primary_0 codon_aat_primary_1 codon_aat_primary_2; decide
 /-- `AAT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_aat_secondary_0 : ℤ := 1
 def codon_aat_secondary_1 : ℤ := 1
 def codon_aat_secondary_2 : ℤ := -1
 theorem codon_aat_secondary_phase :
     (codon_aat_secondary_0, codon_aat_secondary_1, codon_aat_secondary_2) = (1, 1, -1) := by
-  unfold codon_aat_secondary_0 codon_aat_secondary_1 codon_aat_secondary_2; norm_num
+  unfold codon_aat_secondary_0 codon_aat_secondary_1 codon_aat_secondary_2; decide
 
 /-- `ACA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_aca_primary_0 : ℤ := 1
@@ -106,14 +107,14 @@ def codon_aca_primary_1 : ℤ := -1
 def codon_aca_primary_2 : ℤ := 1
 theorem codon_aca_primary_phase :
     (codon_aca_primary_0, codon_aca_primary_1, codon_aca_primary_2) = (1, -1, 1) := by
-  unfold codon_aca_primary_0 codon_aca_primary_1 codon_aca_primary_2; norm_num
+  unfold codon_aca_primary_0 codon_aca_primary_1 codon_aca_primary_2; decide
 /-- `ACA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_aca_secondary_0 : ℤ := 1
 def codon_aca_secondary_1 : ℤ := 0
 def codon_aca_secondary_2 : ℤ := 1
 theorem codon_aca_secondary_phase :
     (codon_aca_secondary_0, codon_aca_secondary_1, codon_aca_secondary_2) = (1, 0, 1) := by
-  unfold codon_aca_secondary_0 codon_aca_secondary_1 codon_aca_secondary_2; norm_num
+  unfold codon_aca_secondary_0 codon_aca_secondary_1 codon_aca_secondary_2; decide
 
 /-- `ACC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_acc_primary_0 : ℤ := 1
@@ -121,14 +122,14 @@ def codon_acc_primary_1 : ℤ := -1
 def codon_acc_primary_2 : ℤ := -1
 theorem codon_acc_primary_phase :
     (codon_acc_primary_0, codon_acc_primary_1, codon_acc_primary_2) = (1, -1, -1) := by
-  unfold codon_acc_primary_0 codon_acc_primary_1 codon_acc_primary_2; norm_num
+  unfold codon_acc_primary_0 codon_acc_primary_1 codon_acc_primary_2; decide
 /-- `ACC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_acc_secondary_0 : ℤ := 1
 def codon_acc_secondary_1 : ℤ := 0
 def codon_acc_secondary_2 : ℤ := 0
 theorem codon_acc_secondary_phase :
     (codon_acc_secondary_0, codon_acc_secondary_1, codon_acc_secondary_2) = (1, 0, 0) := by
-  unfold codon_acc_secondary_0 codon_acc_secondary_1 codon_acc_secondary_2; norm_num
+  unfold codon_acc_secondary_0 codon_acc_secondary_1 codon_acc_secondary_2; decide
 
 /-- `ACG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_acg_primary_0 : ℤ := 1
@@ -136,14 +137,14 @@ def codon_acg_primary_1 : ℤ := -1
 def codon_acg_primary_2 : ℤ := 1
 theorem codon_acg_primary_phase :
     (codon_acg_primary_0, codon_acg_primary_1, codon_acg_primary_2) = (1, -1, 1) := by
-  unfold codon_acg_primary_0 codon_acg_primary_1 codon_acg_primary_2; norm_num
+  unfold codon_acg_primary_0 codon_acg_primary_1 codon_acg_primary_2; decide
 /-- `ACG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_acg_secondary_0 : ℤ := 1
 def codon_acg_secondary_1 : ℤ := 0
 def codon_acg_secondary_2 : ℤ := 0
 theorem codon_acg_secondary_phase :
     (codon_acg_secondary_0, codon_acg_secondary_1, codon_acg_secondary_2) = (1, 0, 0) := by
-  unfold codon_acg_secondary_0 codon_acg_secondary_1 codon_acg_secondary_2; norm_num
+  unfold codon_acg_secondary_0 codon_acg_secondary_1 codon_acg_secondary_2; decide
 
 /-- `ACT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_act_primary_0 : ℤ := 1
@@ -151,14 +152,14 @@ def codon_act_primary_1 : ℤ := -1
 def codon_act_primary_2 : ℤ := -1
 theorem codon_act_primary_phase :
     (codon_act_primary_0, codon_act_primary_1, codon_act_primary_2) = (1, -1, -1) := by
-  unfold codon_act_primary_0 codon_act_primary_1 codon_act_primary_2; norm_num
+  unfold codon_act_primary_0 codon_act_primary_1 codon_act_primary_2; decide
 /-- `ACT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_act_secondary_0 : ℤ := 1
 def codon_act_secondary_1 : ℤ := 0
 def codon_act_secondary_2 : ℤ := -1
 theorem codon_act_secondary_phase :
     (codon_act_secondary_0, codon_act_secondary_1, codon_act_secondary_2) = (1, 0, -1) := by
-  unfold codon_act_secondary_0 codon_act_secondary_1 codon_act_secondary_2; norm_num
+  unfold codon_act_secondary_0 codon_act_secondary_1 codon_act_secondary_2; decide
 
 /-- `AGA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_aga_primary_0 : ℤ := 1
@@ -166,14 +167,14 @@ def codon_aga_primary_1 : ℤ := 1
 def codon_aga_primary_2 : ℤ := 1
 theorem codon_aga_primary_phase :
     (codon_aga_primary_0, codon_aga_primary_1, codon_aga_primary_2) = (1, 1, 1) := by
-  unfold codon_aga_primary_0 codon_aga_primary_1 codon_aga_primary_2; norm_num
+  unfold codon_aga_primary_0 codon_aga_primary_1 codon_aga_primary_2; decide
 /-- `AGA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_aga_secondary_0 : ℤ := 1
 def codon_aga_secondary_1 : ℤ := 0
 def codon_aga_secondary_2 : ℤ := 1
 theorem codon_aga_secondary_phase :
     (codon_aga_secondary_0, codon_aga_secondary_1, codon_aga_secondary_2) = (1, 0, 1) := by
-  unfold codon_aga_secondary_0 codon_aga_secondary_1 codon_aga_secondary_2; norm_num
+  unfold codon_aga_secondary_0 codon_aga_secondary_1 codon_aga_secondary_2; decide
 
 /-- `AGC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_agc_primary_0 : ℤ := 1
@@ -181,14 +182,14 @@ def codon_agc_primary_1 : ℤ := 1
 def codon_agc_primary_2 : ℤ := -1
 theorem codon_agc_primary_phase :
     (codon_agc_primary_0, codon_agc_primary_1, codon_agc_primary_2) = (1, 1, -1) := by
-  unfold codon_agc_primary_0 codon_agc_primary_1 codon_agc_primary_2; norm_num
+  unfold codon_agc_primary_0 codon_agc_primary_1 codon_agc_primary_2; decide
 /-- `AGC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_agc_secondary_0 : ℤ := 1
 def codon_agc_secondary_1 : ℤ := 0
 def codon_agc_secondary_2 : ℤ := 0
 theorem codon_agc_secondary_phase :
     (codon_agc_secondary_0, codon_agc_secondary_1, codon_agc_secondary_2) = (1, 0, 0) := by
-  unfold codon_agc_secondary_0 codon_agc_secondary_1 codon_agc_secondary_2; norm_num
+  unfold codon_agc_secondary_0 codon_agc_secondary_1 codon_agc_secondary_2; decide
 
 /-- `AGG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_agg_primary_0 : ℤ := 1
@@ -196,14 +197,14 @@ def codon_agg_primary_1 : ℤ := 1
 def codon_agg_primary_2 : ℤ := 1
 theorem codon_agg_primary_phase :
     (codon_agg_primary_0, codon_agg_primary_1, codon_agg_primary_2) = (1, 1, 1) := by
-  unfold codon_agg_primary_0 codon_agg_primary_1 codon_agg_primary_2; norm_num
+  unfold codon_agg_primary_0 codon_agg_primary_1 codon_agg_primary_2; decide
 /-- `AGG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_agg_secondary_0 : ℤ := 1
 def codon_agg_secondary_1 : ℤ := 0
 def codon_agg_secondary_2 : ℤ := 0
 theorem codon_agg_secondary_phase :
     (codon_agg_secondary_0, codon_agg_secondary_1, codon_agg_secondary_2) = (1, 0, 0) := by
-  unfold codon_agg_secondary_0 codon_agg_secondary_1 codon_agg_secondary_2; norm_num
+  unfold codon_agg_secondary_0 codon_agg_secondary_1 codon_agg_secondary_2; decide
 
 /-- `AGT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_agt_primary_0 : ℤ := 1
@@ -211,14 +212,14 @@ def codon_agt_primary_1 : ℤ := 1
 def codon_agt_primary_2 : ℤ := -1
 theorem codon_agt_primary_phase :
     (codon_agt_primary_0, codon_agt_primary_1, codon_agt_primary_2) = (1, 1, -1) := by
-  unfold codon_agt_primary_0 codon_agt_primary_1 codon_agt_primary_2; norm_num
+  unfold codon_agt_primary_0 codon_agt_primary_1 codon_agt_primary_2; decide
 /-- `AGT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_agt_secondary_0 : ℤ := 1
 def codon_agt_secondary_1 : ℤ := 0
 def codon_agt_secondary_2 : ℤ := -1
 theorem codon_agt_secondary_phase :
     (codon_agt_secondary_0, codon_agt_secondary_1, codon_agt_secondary_2) = (1, 0, -1) := by
-  unfold codon_agt_secondary_0 codon_agt_secondary_1 codon_agt_secondary_2; norm_num
+  unfold codon_agt_secondary_0 codon_agt_secondary_1 codon_agt_secondary_2; decide
 
 /-- `ATA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ata_primary_0 : ℤ := 1
@@ -226,14 +227,14 @@ def codon_ata_primary_1 : ℤ := -1
 def codon_ata_primary_2 : ℤ := 1
 theorem codon_ata_primary_phase :
     (codon_ata_primary_0, codon_ata_primary_1, codon_ata_primary_2) = (1, -1, 1) := by
-  unfold codon_ata_primary_0 codon_ata_primary_1 codon_ata_primary_2; norm_num
+  unfold codon_ata_primary_0 codon_ata_primary_1 codon_ata_primary_2; decide
 /-- `ATA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ata_secondary_0 : ℤ := 1
 def codon_ata_secondary_1 : ℤ := -1
 def codon_ata_secondary_2 : ℤ := 1
 theorem codon_ata_secondary_phase :
     (codon_ata_secondary_0, codon_ata_secondary_1, codon_ata_secondary_2) = (1, -1, 1) := by
-  unfold codon_ata_secondary_0 codon_ata_secondary_1 codon_ata_secondary_2; norm_num
+  unfold codon_ata_secondary_0 codon_ata_secondary_1 codon_ata_secondary_2; decide
 
 /-- `ATC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_atc_primary_0 : ℤ := 1
@@ -241,14 +242,14 @@ def codon_atc_primary_1 : ℤ := -1
 def codon_atc_primary_2 : ℤ := -1
 theorem codon_atc_primary_phase :
     (codon_atc_primary_0, codon_atc_primary_1, codon_atc_primary_2) = (1, -1, -1) := by
-  unfold codon_atc_primary_0 codon_atc_primary_1 codon_atc_primary_2; norm_num
+  unfold codon_atc_primary_0 codon_atc_primary_1 codon_atc_primary_2; decide
 /-- `ATC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_atc_secondary_0 : ℤ := 1
 def codon_atc_secondary_1 : ℤ := -1
 def codon_atc_secondary_2 : ℤ := 0
 theorem codon_atc_secondary_phase :
     (codon_atc_secondary_0, codon_atc_secondary_1, codon_atc_secondary_2) = (1, -1, 0) := by
-  unfold codon_atc_secondary_0 codon_atc_secondary_1 codon_atc_secondary_2; norm_num
+  unfold codon_atc_secondary_0 codon_atc_secondary_1 codon_atc_secondary_2; decide
 
 /-- `ATG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_atg_primary_0 : ℤ := 1
@@ -256,14 +257,14 @@ def codon_atg_primary_1 : ℤ := -1
 def codon_atg_primary_2 : ℤ := 1
 theorem codon_atg_primary_phase :
     (codon_atg_primary_0, codon_atg_primary_1, codon_atg_primary_2) = (1, -1, 1) := by
-  unfold codon_atg_primary_0 codon_atg_primary_1 codon_atg_primary_2; norm_num
+  unfold codon_atg_primary_0 codon_atg_primary_1 codon_atg_primary_2; decide
 /-- `ATG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_atg_secondary_0 : ℤ := 1
 def codon_atg_secondary_1 : ℤ := -1
 def codon_atg_secondary_2 : ℤ := 0
 theorem codon_atg_secondary_phase :
     (codon_atg_secondary_0, codon_atg_secondary_1, codon_atg_secondary_2) = (1, -1, 0) := by
-  unfold codon_atg_secondary_0 codon_atg_secondary_1 codon_atg_secondary_2; norm_num
+  unfold codon_atg_secondary_0 codon_atg_secondary_1 codon_atg_secondary_2; decide
 
 /-- `ATT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_att_primary_0 : ℤ := 1
@@ -271,14 +272,14 @@ def codon_att_primary_1 : ℤ := -1
 def codon_att_primary_2 : ℤ := -1
 theorem codon_att_primary_phase :
     (codon_att_primary_0, codon_att_primary_1, codon_att_primary_2) = (1, -1, -1) := by
-  unfold codon_att_primary_0 codon_att_primary_1 codon_att_primary_2; norm_num
+  unfold codon_att_primary_0 codon_att_primary_1 codon_att_primary_2; decide
 /-- `ATT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_att_secondary_0 : ℤ := 1
 def codon_att_secondary_1 : ℤ := -1
 def codon_att_secondary_2 : ℤ := -1
 theorem codon_att_secondary_phase :
     (codon_att_secondary_0, codon_att_secondary_1, codon_att_secondary_2) = (1, -1, -1) := by
-  unfold codon_att_secondary_0 codon_att_secondary_1 codon_att_secondary_2; norm_num
+  unfold codon_att_secondary_0 codon_att_secondary_1 codon_att_secondary_2; decide
 
 /-- `CAA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_caa_primary_0 : ℤ := -1
@@ -286,14 +287,14 @@ def codon_caa_primary_1 : ℤ := 1
 def codon_caa_primary_2 : ℤ := 1
 theorem codon_caa_primary_phase :
     (codon_caa_primary_0, codon_caa_primary_1, codon_caa_primary_2) = (-1, 1, 1) := by
-  unfold codon_caa_primary_0 codon_caa_primary_1 codon_caa_primary_2; norm_num
+  unfold codon_caa_primary_0 codon_caa_primary_1 codon_caa_primary_2; decide
 /-- `CAA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_caa_secondary_0 : ℤ := 0
 def codon_caa_secondary_1 : ℤ := 1
 def codon_caa_secondary_2 : ℤ := 1
 theorem codon_caa_secondary_phase :
     (codon_caa_secondary_0, codon_caa_secondary_1, codon_caa_secondary_2) = (0, 1, 1) := by
-  unfold codon_caa_secondary_0 codon_caa_secondary_1 codon_caa_secondary_2; norm_num
+  unfold codon_caa_secondary_0 codon_caa_secondary_1 codon_caa_secondary_2; decide
 
 /-- `CAC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_cac_primary_0 : ℤ := -1
@@ -301,14 +302,14 @@ def codon_cac_primary_1 : ℤ := 1
 def codon_cac_primary_2 : ℤ := -1
 theorem codon_cac_primary_phase :
     (codon_cac_primary_0, codon_cac_primary_1, codon_cac_primary_2) = (-1, 1, -1) := by
-  unfold codon_cac_primary_0 codon_cac_primary_1 codon_cac_primary_2; norm_num
+  unfold codon_cac_primary_0 codon_cac_primary_1 codon_cac_primary_2; decide
 /-- `CAC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_cac_secondary_0 : ℤ := 0
 def codon_cac_secondary_1 : ℤ := 1
 def codon_cac_secondary_2 : ℤ := 0
 theorem codon_cac_secondary_phase :
     (codon_cac_secondary_0, codon_cac_secondary_1, codon_cac_secondary_2) = (0, 1, 0) := by
-  unfold codon_cac_secondary_0 codon_cac_secondary_1 codon_cac_secondary_2; norm_num
+  unfold codon_cac_secondary_0 codon_cac_secondary_1 codon_cac_secondary_2; decide
 
 /-- `CAG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_cag_primary_0 : ℤ := -1
@@ -316,14 +317,14 @@ def codon_cag_primary_1 : ℤ := 1
 def codon_cag_primary_2 : ℤ := 1
 theorem codon_cag_primary_phase :
     (codon_cag_primary_0, codon_cag_primary_1, codon_cag_primary_2) = (-1, 1, 1) := by
-  unfold codon_cag_primary_0 codon_cag_primary_1 codon_cag_primary_2; norm_num
+  unfold codon_cag_primary_0 codon_cag_primary_1 codon_cag_primary_2; decide
 /-- `CAG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_cag_secondary_0 : ℤ := 0
 def codon_cag_secondary_1 : ℤ := 1
 def codon_cag_secondary_2 : ℤ := 0
 theorem codon_cag_secondary_phase :
     (codon_cag_secondary_0, codon_cag_secondary_1, codon_cag_secondary_2) = (0, 1, 0) := by
-  unfold codon_cag_secondary_0 codon_cag_secondary_1 codon_cag_secondary_2; norm_num
+  unfold codon_cag_secondary_0 codon_cag_secondary_1 codon_cag_secondary_2; decide
 
 /-- `CAT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_cat_primary_0 : ℤ := -1
@@ -331,14 +332,14 @@ def codon_cat_primary_1 : ℤ := 1
 def codon_cat_primary_2 : ℤ := -1
 theorem codon_cat_primary_phase :
     (codon_cat_primary_0, codon_cat_primary_1, codon_cat_primary_2) = (-1, 1, -1) := by
-  unfold codon_cat_primary_0 codon_cat_primary_1 codon_cat_primary_2; norm_num
+  unfold codon_cat_primary_0 codon_cat_primary_1 codon_cat_primary_2; decide
 /-- `CAT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_cat_secondary_0 : ℤ := 0
 def codon_cat_secondary_1 : ℤ := 1
 def codon_cat_secondary_2 : ℤ := -1
 theorem codon_cat_secondary_phase :
     (codon_cat_secondary_0, codon_cat_secondary_1, codon_cat_secondary_2) = (0, 1, -1) := by
-  unfold codon_cat_secondary_0 codon_cat_secondary_1 codon_cat_secondary_2; norm_num
+  unfold codon_cat_secondary_0 codon_cat_secondary_1 codon_cat_secondary_2; decide
 
 /-- `CCA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_cca_primary_0 : ℤ := -1
@@ -346,14 +347,14 @@ def codon_cca_primary_1 : ℤ := -1
 def codon_cca_primary_2 : ℤ := 1
 theorem codon_cca_primary_phase :
     (codon_cca_primary_0, codon_cca_primary_1, codon_cca_primary_2) = (-1, -1, 1) := by
-  unfold codon_cca_primary_0 codon_cca_primary_1 codon_cca_primary_2; norm_num
+  unfold codon_cca_primary_0 codon_cca_primary_1 codon_cca_primary_2; decide
 /-- `CCA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_cca_secondary_0 : ℤ := 0
 def codon_cca_secondary_1 : ℤ := 0
 def codon_cca_secondary_2 : ℤ := 1
 theorem codon_cca_secondary_phase :
     (codon_cca_secondary_0, codon_cca_secondary_1, codon_cca_secondary_2) = (0, 0, 1) := by
-  unfold codon_cca_secondary_0 codon_cca_secondary_1 codon_cca_secondary_2; norm_num
+  unfold codon_cca_secondary_0 codon_cca_secondary_1 codon_cca_secondary_2; decide
 
 /-- `CCC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ccc_primary_0 : ℤ := -1
@@ -361,14 +362,14 @@ def codon_ccc_primary_1 : ℤ := -1
 def codon_ccc_primary_2 : ℤ := -1
 theorem codon_ccc_primary_phase :
     (codon_ccc_primary_0, codon_ccc_primary_1, codon_ccc_primary_2) = (-1, -1, -1) := by
-  unfold codon_ccc_primary_0 codon_ccc_primary_1 codon_ccc_primary_2; norm_num
+  unfold codon_ccc_primary_0 codon_ccc_primary_1 codon_ccc_primary_2; decide
 /-- `CCC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ccc_secondary_0 : ℤ := 0
 def codon_ccc_secondary_1 : ℤ := 0
 def codon_ccc_secondary_2 : ℤ := 0
 theorem codon_ccc_secondary_phase :
     (codon_ccc_secondary_0, codon_ccc_secondary_1, codon_ccc_secondary_2) = (0, 0, 0) := by
-  unfold codon_ccc_secondary_0 codon_ccc_secondary_1 codon_ccc_secondary_2; norm_num
+  unfold codon_ccc_secondary_0 codon_ccc_secondary_1 codon_ccc_secondary_2; decide
 
 /-- `CCG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ccg_primary_0 : ℤ := -1
@@ -376,14 +377,14 @@ def codon_ccg_primary_1 : ℤ := -1
 def codon_ccg_primary_2 : ℤ := 1
 theorem codon_ccg_primary_phase :
     (codon_ccg_primary_0, codon_ccg_primary_1, codon_ccg_primary_2) = (-1, -1, 1) := by
-  unfold codon_ccg_primary_0 codon_ccg_primary_1 codon_ccg_primary_2; norm_num
+  unfold codon_ccg_primary_0 codon_ccg_primary_1 codon_ccg_primary_2; decide
 /-- `CCG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ccg_secondary_0 : ℤ := 0
 def codon_ccg_secondary_1 : ℤ := 0
 def codon_ccg_secondary_2 : ℤ := 0
 theorem codon_ccg_secondary_phase :
     (codon_ccg_secondary_0, codon_ccg_secondary_1, codon_ccg_secondary_2) = (0, 0, 0) := by
-  unfold codon_ccg_secondary_0 codon_ccg_secondary_1 codon_ccg_secondary_2; norm_num
+  unfold codon_ccg_secondary_0 codon_ccg_secondary_1 codon_ccg_secondary_2; decide
 
 /-- `CCT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_cct_primary_0 : ℤ := -1
@@ -391,14 +392,14 @@ def codon_cct_primary_1 : ℤ := -1
 def codon_cct_primary_2 : ℤ := -1
 theorem codon_cct_primary_phase :
     (codon_cct_primary_0, codon_cct_primary_1, codon_cct_primary_2) = (-1, -1, -1) := by
-  unfold codon_cct_primary_0 codon_cct_primary_1 codon_cct_primary_2; norm_num
+  unfold codon_cct_primary_0 codon_cct_primary_1 codon_cct_primary_2; decide
 /-- `CCT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_cct_secondary_0 : ℤ := 0
 def codon_cct_secondary_1 : ℤ := 0
 def codon_cct_secondary_2 : ℤ := -1
 theorem codon_cct_secondary_phase :
     (codon_cct_secondary_0, codon_cct_secondary_1, codon_cct_secondary_2) = (0, 0, -1) := by
-  unfold codon_cct_secondary_0 codon_cct_secondary_1 codon_cct_secondary_2; norm_num
+  unfold codon_cct_secondary_0 codon_cct_secondary_1 codon_cct_secondary_2; decide
 
 /-- `CGA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_cga_primary_0 : ℤ := -1
@@ -406,14 +407,14 @@ def codon_cga_primary_1 : ℤ := 1
 def codon_cga_primary_2 : ℤ := 1
 theorem codon_cga_primary_phase :
     (codon_cga_primary_0, codon_cga_primary_1, codon_cga_primary_2) = (-1, 1, 1) := by
-  unfold codon_cga_primary_0 codon_cga_primary_1 codon_cga_primary_2; norm_num
+  unfold codon_cga_primary_0 codon_cga_primary_1 codon_cga_primary_2; decide
 /-- `CGA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_cga_secondary_0 : ℤ := 0
 def codon_cga_secondary_1 : ℤ := 0
 def codon_cga_secondary_2 : ℤ := 1
 theorem codon_cga_secondary_phase :
     (codon_cga_secondary_0, codon_cga_secondary_1, codon_cga_secondary_2) = (0, 0, 1) := by
-  unfold codon_cga_secondary_0 codon_cga_secondary_1 codon_cga_secondary_2; norm_num
+  unfold codon_cga_secondary_0 codon_cga_secondary_1 codon_cga_secondary_2; decide
 
 /-- `CGC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_cgc_primary_0 : ℤ := -1
@@ -421,14 +422,14 @@ def codon_cgc_primary_1 : ℤ := 1
 def codon_cgc_primary_2 : ℤ := -1
 theorem codon_cgc_primary_phase :
     (codon_cgc_primary_0, codon_cgc_primary_1, codon_cgc_primary_2) = (-1, 1, -1) := by
-  unfold codon_cgc_primary_0 codon_cgc_primary_1 codon_cgc_primary_2; norm_num
+  unfold codon_cgc_primary_0 codon_cgc_primary_1 codon_cgc_primary_2; decide
 /-- `CGC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_cgc_secondary_0 : ℤ := 0
 def codon_cgc_secondary_1 : ℤ := 0
 def codon_cgc_secondary_2 : ℤ := 0
 theorem codon_cgc_secondary_phase :
     (codon_cgc_secondary_0, codon_cgc_secondary_1, codon_cgc_secondary_2) = (0, 0, 0) := by
-  unfold codon_cgc_secondary_0 codon_cgc_secondary_1 codon_cgc_secondary_2; norm_num
+  unfold codon_cgc_secondary_0 codon_cgc_secondary_1 codon_cgc_secondary_2; decide
 
 /-- `CGG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_cgg_primary_0 : ℤ := -1
@@ -436,14 +437,14 @@ def codon_cgg_primary_1 : ℤ := 1
 def codon_cgg_primary_2 : ℤ := 1
 theorem codon_cgg_primary_phase :
     (codon_cgg_primary_0, codon_cgg_primary_1, codon_cgg_primary_2) = (-1, 1, 1) := by
-  unfold codon_cgg_primary_0 codon_cgg_primary_1 codon_cgg_primary_2; norm_num
+  unfold codon_cgg_primary_0 codon_cgg_primary_1 codon_cgg_primary_2; decide
 /-- `CGG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_cgg_secondary_0 : ℤ := 0
 def codon_cgg_secondary_1 : ℤ := 0
 def codon_cgg_secondary_2 : ℤ := 0
 theorem codon_cgg_secondary_phase :
     (codon_cgg_secondary_0, codon_cgg_secondary_1, codon_cgg_secondary_2) = (0, 0, 0) := by
-  unfold codon_cgg_secondary_0 codon_cgg_secondary_1 codon_cgg_secondary_2; norm_num
+  unfold codon_cgg_secondary_0 codon_cgg_secondary_1 codon_cgg_secondary_2; decide
 
 /-- `CGT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_cgt_primary_0 : ℤ := -1
@@ -451,14 +452,14 @@ def codon_cgt_primary_1 : ℤ := 1
 def codon_cgt_primary_2 : ℤ := -1
 theorem codon_cgt_primary_phase :
     (codon_cgt_primary_0, codon_cgt_primary_1, codon_cgt_primary_2) = (-1, 1, -1) := by
-  unfold codon_cgt_primary_0 codon_cgt_primary_1 codon_cgt_primary_2; norm_num
+  unfold codon_cgt_primary_0 codon_cgt_primary_1 codon_cgt_primary_2; decide
 /-- `CGT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_cgt_secondary_0 : ℤ := 0
 def codon_cgt_secondary_1 : ℤ := 0
 def codon_cgt_secondary_2 : ℤ := -1
 theorem codon_cgt_secondary_phase :
     (codon_cgt_secondary_0, codon_cgt_secondary_1, codon_cgt_secondary_2) = (0, 0, -1) := by
-  unfold codon_cgt_secondary_0 codon_cgt_secondary_1 codon_cgt_secondary_2; norm_num
+  unfold codon_cgt_secondary_0 codon_cgt_secondary_1 codon_cgt_secondary_2; decide
 
 /-- `CTA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_cta_primary_0 : ℤ := -1
@@ -466,14 +467,14 @@ def codon_cta_primary_1 : ℤ := -1
 def codon_cta_primary_2 : ℤ := 1
 theorem codon_cta_primary_phase :
     (codon_cta_primary_0, codon_cta_primary_1, codon_cta_primary_2) = (-1, -1, 1) := by
-  unfold codon_cta_primary_0 codon_cta_primary_1 codon_cta_primary_2; norm_num
+  unfold codon_cta_primary_0 codon_cta_primary_1 codon_cta_primary_2; decide
 /-- `CTA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_cta_secondary_0 : ℤ := 0
 def codon_cta_secondary_1 : ℤ := -1
 def codon_cta_secondary_2 : ℤ := 1
 theorem codon_cta_secondary_phase :
     (codon_cta_secondary_0, codon_cta_secondary_1, codon_cta_secondary_2) = (0, -1, 1) := by
-  unfold codon_cta_secondary_0 codon_cta_secondary_1 codon_cta_secondary_2; norm_num
+  unfold codon_cta_secondary_0 codon_cta_secondary_1 codon_cta_secondary_2; decide
 
 /-- `CTC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ctc_primary_0 : ℤ := -1
@@ -481,14 +482,14 @@ def codon_ctc_primary_1 : ℤ := -1
 def codon_ctc_primary_2 : ℤ := -1
 theorem codon_ctc_primary_phase :
     (codon_ctc_primary_0, codon_ctc_primary_1, codon_ctc_primary_2) = (-1, -1, -1) := by
-  unfold codon_ctc_primary_0 codon_ctc_primary_1 codon_ctc_primary_2; norm_num
+  unfold codon_ctc_primary_0 codon_ctc_primary_1 codon_ctc_primary_2; decide
 /-- `CTC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ctc_secondary_0 : ℤ := 0
 def codon_ctc_secondary_1 : ℤ := -1
 def codon_ctc_secondary_2 : ℤ := 0
 theorem codon_ctc_secondary_phase :
     (codon_ctc_secondary_0, codon_ctc_secondary_1, codon_ctc_secondary_2) = (0, -1, 0) := by
-  unfold codon_ctc_secondary_0 codon_ctc_secondary_1 codon_ctc_secondary_2; norm_num
+  unfold codon_ctc_secondary_0 codon_ctc_secondary_1 codon_ctc_secondary_2; decide
 
 /-- `CTG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ctg_primary_0 : ℤ := -1
@@ -496,14 +497,14 @@ def codon_ctg_primary_1 : ℤ := -1
 def codon_ctg_primary_2 : ℤ := 1
 theorem codon_ctg_primary_phase :
     (codon_ctg_primary_0, codon_ctg_primary_1, codon_ctg_primary_2) = (-1, -1, 1) := by
-  unfold codon_ctg_primary_0 codon_ctg_primary_1 codon_ctg_primary_2; norm_num
+  unfold codon_ctg_primary_0 codon_ctg_primary_1 codon_ctg_primary_2; decide
 /-- `CTG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ctg_secondary_0 : ℤ := 0
 def codon_ctg_secondary_1 : ℤ := -1
 def codon_ctg_secondary_2 : ℤ := 0
 theorem codon_ctg_secondary_phase :
     (codon_ctg_secondary_0, codon_ctg_secondary_1, codon_ctg_secondary_2) = (0, -1, 0) := by
-  unfold codon_ctg_secondary_0 codon_ctg_secondary_1 codon_ctg_secondary_2; norm_num
+  unfold codon_ctg_secondary_0 codon_ctg_secondary_1 codon_ctg_secondary_2; decide
 
 /-- `CTT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ctt_primary_0 : ℤ := -1
@@ -511,14 +512,14 @@ def codon_ctt_primary_1 : ℤ := -1
 def codon_ctt_primary_2 : ℤ := -1
 theorem codon_ctt_primary_phase :
     (codon_ctt_primary_0, codon_ctt_primary_1, codon_ctt_primary_2) = (-1, -1, -1) := by
-  unfold codon_ctt_primary_0 codon_ctt_primary_1 codon_ctt_primary_2; norm_num
+  unfold codon_ctt_primary_0 codon_ctt_primary_1 codon_ctt_primary_2; decide
 /-- `CTT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ctt_secondary_0 : ℤ := 0
 def codon_ctt_secondary_1 : ℤ := -1
 def codon_ctt_secondary_2 : ℤ := -1
 theorem codon_ctt_secondary_phase :
     (codon_ctt_secondary_0, codon_ctt_secondary_1, codon_ctt_secondary_2) = (0, -1, -1) := by
-  unfold codon_ctt_secondary_0 codon_ctt_secondary_1 codon_ctt_secondary_2; norm_num
+  unfold codon_ctt_secondary_0 codon_ctt_secondary_1 codon_ctt_secondary_2; decide
 
 /-- `GAA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gaa_primary_0 : ℤ := 1
@@ -526,14 +527,14 @@ def codon_gaa_primary_1 : ℤ := 1
 def codon_gaa_primary_2 : ℤ := 1
 theorem codon_gaa_primary_phase :
     (codon_gaa_primary_0, codon_gaa_primary_1, codon_gaa_primary_2) = (1, 1, 1) := by
-  unfold codon_gaa_primary_0 codon_gaa_primary_1 codon_gaa_primary_2; norm_num
+  unfold codon_gaa_primary_0 codon_gaa_primary_1 codon_gaa_primary_2; decide
 /-- `GAA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gaa_secondary_0 : ℤ := 0
 def codon_gaa_secondary_1 : ℤ := 1
 def codon_gaa_secondary_2 : ℤ := 1
 theorem codon_gaa_secondary_phase :
     (codon_gaa_secondary_0, codon_gaa_secondary_1, codon_gaa_secondary_2) = (0, 1, 1) := by
-  unfold codon_gaa_secondary_0 codon_gaa_secondary_1 codon_gaa_secondary_2; norm_num
+  unfold codon_gaa_secondary_0 codon_gaa_secondary_1 codon_gaa_secondary_2; decide
 
 /-- `GAC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gac_primary_0 : ℤ := 1
@@ -541,14 +542,14 @@ def codon_gac_primary_1 : ℤ := 1
 def codon_gac_primary_2 : ℤ := -1
 theorem codon_gac_primary_phase :
     (codon_gac_primary_0, codon_gac_primary_1, codon_gac_primary_2) = (1, 1, -1) := by
-  unfold codon_gac_primary_0 codon_gac_primary_1 codon_gac_primary_2; norm_num
+  unfold codon_gac_primary_0 codon_gac_primary_1 codon_gac_primary_2; decide
 /-- `GAC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gac_secondary_0 : ℤ := 0
 def codon_gac_secondary_1 : ℤ := 1
 def codon_gac_secondary_2 : ℤ := 0
 theorem codon_gac_secondary_phase :
     (codon_gac_secondary_0, codon_gac_secondary_1, codon_gac_secondary_2) = (0, 1, 0) := by
-  unfold codon_gac_secondary_0 codon_gac_secondary_1 codon_gac_secondary_2; norm_num
+  unfold codon_gac_secondary_0 codon_gac_secondary_1 codon_gac_secondary_2; decide
 
 /-- `GAG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gag_primary_0 : ℤ := 1
@@ -556,14 +557,14 @@ def codon_gag_primary_1 : ℤ := 1
 def codon_gag_primary_2 : ℤ := 1
 theorem codon_gag_primary_phase :
     (codon_gag_primary_0, codon_gag_primary_1, codon_gag_primary_2) = (1, 1, 1) := by
-  unfold codon_gag_primary_0 codon_gag_primary_1 codon_gag_primary_2; norm_num
+  unfold codon_gag_primary_0 codon_gag_primary_1 codon_gag_primary_2; decide
 /-- `GAG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gag_secondary_0 : ℤ := 0
 def codon_gag_secondary_1 : ℤ := 1
 def codon_gag_secondary_2 : ℤ := 0
 theorem codon_gag_secondary_phase :
     (codon_gag_secondary_0, codon_gag_secondary_1, codon_gag_secondary_2) = (0, 1, 0) := by
-  unfold codon_gag_secondary_0 codon_gag_secondary_1 codon_gag_secondary_2; norm_num
+  unfold codon_gag_secondary_0 codon_gag_secondary_1 codon_gag_secondary_2; decide
 
 /-- `GAT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gat_primary_0 : ℤ := 1
@@ -571,14 +572,14 @@ def codon_gat_primary_1 : ℤ := 1
 def codon_gat_primary_2 : ℤ := -1
 theorem codon_gat_primary_phase :
     (codon_gat_primary_0, codon_gat_primary_1, codon_gat_primary_2) = (1, 1, -1) := by
-  unfold codon_gat_primary_0 codon_gat_primary_1 codon_gat_primary_2; norm_num
+  unfold codon_gat_primary_0 codon_gat_primary_1 codon_gat_primary_2; decide
 /-- `GAT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gat_secondary_0 : ℤ := 0
 def codon_gat_secondary_1 : ℤ := 1
 def codon_gat_secondary_2 : ℤ := -1
 theorem codon_gat_secondary_phase :
     (codon_gat_secondary_0, codon_gat_secondary_1, codon_gat_secondary_2) = (0, 1, -1) := by
-  unfold codon_gat_secondary_0 codon_gat_secondary_1 codon_gat_secondary_2; norm_num
+  unfold codon_gat_secondary_0 codon_gat_secondary_1 codon_gat_secondary_2; decide
 
 /-- `GCA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gca_primary_0 : ℤ := 1
@@ -586,14 +587,14 @@ def codon_gca_primary_1 : ℤ := -1
 def codon_gca_primary_2 : ℤ := 1
 theorem codon_gca_primary_phase :
     (codon_gca_primary_0, codon_gca_primary_1, codon_gca_primary_2) = (1, -1, 1) := by
-  unfold codon_gca_primary_0 codon_gca_primary_1 codon_gca_primary_2; norm_num
+  unfold codon_gca_primary_0 codon_gca_primary_1 codon_gca_primary_2; decide
 /-- `GCA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gca_secondary_0 : ℤ := 0
 def codon_gca_secondary_1 : ℤ := 0
 def codon_gca_secondary_2 : ℤ := 1
 theorem codon_gca_secondary_phase :
     (codon_gca_secondary_0, codon_gca_secondary_1, codon_gca_secondary_2) = (0, 0, 1) := by
-  unfold codon_gca_secondary_0 codon_gca_secondary_1 codon_gca_secondary_2; norm_num
+  unfold codon_gca_secondary_0 codon_gca_secondary_1 codon_gca_secondary_2; decide
 
 /-- `GCC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gcc_primary_0 : ℤ := 1
@@ -601,14 +602,14 @@ def codon_gcc_primary_1 : ℤ := -1
 def codon_gcc_primary_2 : ℤ := -1
 theorem codon_gcc_primary_phase :
     (codon_gcc_primary_0, codon_gcc_primary_1, codon_gcc_primary_2) = (1, -1, -1) := by
-  unfold codon_gcc_primary_0 codon_gcc_primary_1 codon_gcc_primary_2; norm_num
+  unfold codon_gcc_primary_0 codon_gcc_primary_1 codon_gcc_primary_2; decide
 /-- `GCC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gcc_secondary_0 : ℤ := 0
 def codon_gcc_secondary_1 : ℤ := 0
 def codon_gcc_secondary_2 : ℤ := 0
 theorem codon_gcc_secondary_phase :
     (codon_gcc_secondary_0, codon_gcc_secondary_1, codon_gcc_secondary_2) = (0, 0, 0) := by
-  unfold codon_gcc_secondary_0 codon_gcc_secondary_1 codon_gcc_secondary_2; norm_num
+  unfold codon_gcc_secondary_0 codon_gcc_secondary_1 codon_gcc_secondary_2; decide
 
 /-- `GCG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gcg_primary_0 : ℤ := 1
@@ -616,14 +617,14 @@ def codon_gcg_primary_1 : ℤ := -1
 def codon_gcg_primary_2 : ℤ := 1
 theorem codon_gcg_primary_phase :
     (codon_gcg_primary_0, codon_gcg_primary_1, codon_gcg_primary_2) = (1, -1, 1) := by
-  unfold codon_gcg_primary_0 codon_gcg_primary_1 codon_gcg_primary_2; norm_num
+  unfold codon_gcg_primary_0 codon_gcg_primary_1 codon_gcg_primary_2; decide
 /-- `GCG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gcg_secondary_0 : ℤ := 0
 def codon_gcg_secondary_1 : ℤ := 0
 def codon_gcg_secondary_2 : ℤ := 0
 theorem codon_gcg_secondary_phase :
     (codon_gcg_secondary_0, codon_gcg_secondary_1, codon_gcg_secondary_2) = (0, 0, 0) := by
-  unfold codon_gcg_secondary_0 codon_gcg_secondary_1 codon_gcg_secondary_2; norm_num
+  unfold codon_gcg_secondary_0 codon_gcg_secondary_1 codon_gcg_secondary_2; decide
 
 /-- `GCT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gct_primary_0 : ℤ := 1
@@ -631,14 +632,14 @@ def codon_gct_primary_1 : ℤ := -1
 def codon_gct_primary_2 : ℤ := -1
 theorem codon_gct_primary_phase :
     (codon_gct_primary_0, codon_gct_primary_1, codon_gct_primary_2) = (1, -1, -1) := by
-  unfold codon_gct_primary_0 codon_gct_primary_1 codon_gct_primary_2; norm_num
+  unfold codon_gct_primary_0 codon_gct_primary_1 codon_gct_primary_2; decide
 /-- `GCT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gct_secondary_0 : ℤ := 0
 def codon_gct_secondary_1 : ℤ := 0
 def codon_gct_secondary_2 : ℤ := -1
 theorem codon_gct_secondary_phase :
     (codon_gct_secondary_0, codon_gct_secondary_1, codon_gct_secondary_2) = (0, 0, -1) := by
-  unfold codon_gct_secondary_0 codon_gct_secondary_1 codon_gct_secondary_2; norm_num
+  unfold codon_gct_secondary_0 codon_gct_secondary_1 codon_gct_secondary_2; decide
 
 /-- `GGA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gga_primary_0 : ℤ := 1
@@ -646,14 +647,14 @@ def codon_gga_primary_1 : ℤ := 1
 def codon_gga_primary_2 : ℤ := 1
 theorem codon_gga_primary_phase :
     (codon_gga_primary_0, codon_gga_primary_1, codon_gga_primary_2) = (1, 1, 1) := by
-  unfold codon_gga_primary_0 codon_gga_primary_1 codon_gga_primary_2; norm_num
+  unfold codon_gga_primary_0 codon_gga_primary_1 codon_gga_primary_2; decide
 /-- `GGA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gga_secondary_0 : ℤ := 0
 def codon_gga_secondary_1 : ℤ := 0
 def codon_gga_secondary_2 : ℤ := 1
 theorem codon_gga_secondary_phase :
     (codon_gga_secondary_0, codon_gga_secondary_1, codon_gga_secondary_2) = (0, 0, 1) := by
-  unfold codon_gga_secondary_0 codon_gga_secondary_1 codon_gga_secondary_2; norm_num
+  unfold codon_gga_secondary_0 codon_gga_secondary_1 codon_gga_secondary_2; decide
 
 /-- `GGC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ggc_primary_0 : ℤ := 1
@@ -661,14 +662,14 @@ def codon_ggc_primary_1 : ℤ := 1
 def codon_ggc_primary_2 : ℤ := -1
 theorem codon_ggc_primary_phase :
     (codon_ggc_primary_0, codon_ggc_primary_1, codon_ggc_primary_2) = (1, 1, -1) := by
-  unfold codon_ggc_primary_0 codon_ggc_primary_1 codon_ggc_primary_2; norm_num
+  unfold codon_ggc_primary_0 codon_ggc_primary_1 codon_ggc_primary_2; decide
 /-- `GGC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ggc_secondary_0 : ℤ := 0
 def codon_ggc_secondary_1 : ℤ := 0
 def codon_ggc_secondary_2 : ℤ := 0
 theorem codon_ggc_secondary_phase :
     (codon_ggc_secondary_0, codon_ggc_secondary_1, codon_ggc_secondary_2) = (0, 0, 0) := by
-  unfold codon_ggc_secondary_0 codon_ggc_secondary_1 codon_ggc_secondary_2; norm_num
+  unfold codon_ggc_secondary_0 codon_ggc_secondary_1 codon_ggc_secondary_2; decide
 
 /-- `GGG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ggg_primary_0 : ℤ := 1
@@ -676,14 +677,14 @@ def codon_ggg_primary_1 : ℤ := 1
 def codon_ggg_primary_2 : ℤ := 1
 theorem codon_ggg_primary_phase :
     (codon_ggg_primary_0, codon_ggg_primary_1, codon_ggg_primary_2) = (1, 1, 1) := by
-  unfold codon_ggg_primary_0 codon_ggg_primary_1 codon_ggg_primary_2; norm_num
+  unfold codon_ggg_primary_0 codon_ggg_primary_1 codon_ggg_primary_2; decide
 /-- `GGG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ggg_secondary_0 : ℤ := 0
 def codon_ggg_secondary_1 : ℤ := 0
 def codon_ggg_secondary_2 : ℤ := 0
 theorem codon_ggg_secondary_phase :
     (codon_ggg_secondary_0, codon_ggg_secondary_1, codon_ggg_secondary_2) = (0, 0, 0) := by
-  unfold codon_ggg_secondary_0 codon_ggg_secondary_1 codon_ggg_secondary_2; norm_num
+  unfold codon_ggg_secondary_0 codon_ggg_secondary_1 codon_ggg_secondary_2; decide
 
 /-- `GGT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ggt_primary_0 : ℤ := 1
@@ -691,14 +692,14 @@ def codon_ggt_primary_1 : ℤ := 1
 def codon_ggt_primary_2 : ℤ := -1
 theorem codon_ggt_primary_phase :
     (codon_ggt_primary_0, codon_ggt_primary_1, codon_ggt_primary_2) = (1, 1, -1) := by
-  unfold codon_ggt_primary_0 codon_ggt_primary_1 codon_ggt_primary_2; norm_num
+  unfold codon_ggt_primary_0 codon_ggt_primary_1 codon_ggt_primary_2; decide
 /-- `GGT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ggt_secondary_0 : ℤ := 0
 def codon_ggt_secondary_1 : ℤ := 0
 def codon_ggt_secondary_2 : ℤ := -1
 theorem codon_ggt_secondary_phase :
     (codon_ggt_secondary_0, codon_ggt_secondary_1, codon_ggt_secondary_2) = (0, 0, -1) := by
-  unfold codon_ggt_secondary_0 codon_ggt_secondary_1 codon_ggt_secondary_2; norm_num
+  unfold codon_ggt_secondary_0 codon_ggt_secondary_1 codon_ggt_secondary_2; decide
 
 /-- `GTA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gta_primary_0 : ℤ := 1
@@ -706,14 +707,14 @@ def codon_gta_primary_1 : ℤ := -1
 def codon_gta_primary_2 : ℤ := 1
 theorem codon_gta_primary_phase :
     (codon_gta_primary_0, codon_gta_primary_1, codon_gta_primary_2) = (1, -1, 1) := by
-  unfold codon_gta_primary_0 codon_gta_primary_1 codon_gta_primary_2; norm_num
+  unfold codon_gta_primary_0 codon_gta_primary_1 codon_gta_primary_2; decide
 /-- `GTA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gta_secondary_0 : ℤ := 0
 def codon_gta_secondary_1 : ℤ := -1
 def codon_gta_secondary_2 : ℤ := 1
 theorem codon_gta_secondary_phase :
     (codon_gta_secondary_0, codon_gta_secondary_1, codon_gta_secondary_2) = (0, -1, 1) := by
-  unfold codon_gta_secondary_0 codon_gta_secondary_1 codon_gta_secondary_2; norm_num
+  unfold codon_gta_secondary_0 codon_gta_secondary_1 codon_gta_secondary_2; decide
 
 /-- `GTC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gtc_primary_0 : ℤ := 1
@@ -721,14 +722,14 @@ def codon_gtc_primary_1 : ℤ := -1
 def codon_gtc_primary_2 : ℤ := -1
 theorem codon_gtc_primary_phase :
     (codon_gtc_primary_0, codon_gtc_primary_1, codon_gtc_primary_2) = (1, -1, -1) := by
-  unfold codon_gtc_primary_0 codon_gtc_primary_1 codon_gtc_primary_2; norm_num
+  unfold codon_gtc_primary_0 codon_gtc_primary_1 codon_gtc_primary_2; decide
 /-- `GTC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gtc_secondary_0 : ℤ := 0
 def codon_gtc_secondary_1 : ℤ := -1
 def codon_gtc_secondary_2 : ℤ := 0
 theorem codon_gtc_secondary_phase :
     (codon_gtc_secondary_0, codon_gtc_secondary_1, codon_gtc_secondary_2) = (0, -1, 0) := by
-  unfold codon_gtc_secondary_0 codon_gtc_secondary_1 codon_gtc_secondary_2; norm_num
+  unfold codon_gtc_secondary_0 codon_gtc_secondary_1 codon_gtc_secondary_2; decide
 
 /-- `GTG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gtg_primary_0 : ℤ := 1
@@ -736,14 +737,14 @@ def codon_gtg_primary_1 : ℤ := -1
 def codon_gtg_primary_2 : ℤ := 1
 theorem codon_gtg_primary_phase :
     (codon_gtg_primary_0, codon_gtg_primary_1, codon_gtg_primary_2) = (1, -1, 1) := by
-  unfold codon_gtg_primary_0 codon_gtg_primary_1 codon_gtg_primary_2; norm_num
+  unfold codon_gtg_primary_0 codon_gtg_primary_1 codon_gtg_primary_2; decide
 /-- `GTG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gtg_secondary_0 : ℤ := 0
 def codon_gtg_secondary_1 : ℤ := -1
 def codon_gtg_secondary_2 : ℤ := 0
 theorem codon_gtg_secondary_phase :
     (codon_gtg_secondary_0, codon_gtg_secondary_1, codon_gtg_secondary_2) = (0, -1, 0) := by
-  unfold codon_gtg_secondary_0 codon_gtg_secondary_1 codon_gtg_secondary_2; norm_num
+  unfold codon_gtg_secondary_0 codon_gtg_secondary_1 codon_gtg_secondary_2; decide
 
 /-- `GTT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_gtt_primary_0 : ℤ := 1
@@ -751,14 +752,14 @@ def codon_gtt_primary_1 : ℤ := -1
 def codon_gtt_primary_2 : ℤ := -1
 theorem codon_gtt_primary_phase :
     (codon_gtt_primary_0, codon_gtt_primary_1, codon_gtt_primary_2) = (1, -1, -1) := by
-  unfold codon_gtt_primary_0 codon_gtt_primary_1 codon_gtt_primary_2; norm_num
+  unfold codon_gtt_primary_0 codon_gtt_primary_1 codon_gtt_primary_2; decide
 /-- `GTT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_gtt_secondary_0 : ℤ := 0
 def codon_gtt_secondary_1 : ℤ := -1
 def codon_gtt_secondary_2 : ℤ := -1
 theorem codon_gtt_secondary_phase :
     (codon_gtt_secondary_0, codon_gtt_secondary_1, codon_gtt_secondary_2) = (0, -1, -1) := by
-  unfold codon_gtt_secondary_0 codon_gtt_secondary_1 codon_gtt_secondary_2; norm_num
+  unfold codon_gtt_secondary_0 codon_gtt_secondary_1 codon_gtt_secondary_2; decide
 
 /-- `TAA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_taa_primary_0 : ℤ := -1
@@ -766,14 +767,14 @@ def codon_taa_primary_1 : ℤ := 1
 def codon_taa_primary_2 : ℤ := 1
 theorem codon_taa_primary_phase :
     (codon_taa_primary_0, codon_taa_primary_1, codon_taa_primary_2) = (-1, 1, 1) := by
-  unfold codon_taa_primary_0 codon_taa_primary_1 codon_taa_primary_2; norm_num
+  unfold codon_taa_primary_0 codon_taa_primary_1 codon_taa_primary_2; decide
 /-- `TAA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_taa_secondary_0 : ℤ := -1
 def codon_taa_secondary_1 : ℤ := 1
 def codon_taa_secondary_2 : ℤ := 1
 theorem codon_taa_secondary_phase :
     (codon_taa_secondary_0, codon_taa_secondary_1, codon_taa_secondary_2) = (-1, 1, 1) := by
-  unfold codon_taa_secondary_0 codon_taa_secondary_1 codon_taa_secondary_2; norm_num
+  unfold codon_taa_secondary_0 codon_taa_secondary_1 codon_taa_secondary_2; decide
 
 /-- `TAC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tac_primary_0 : ℤ := -1
@@ -781,14 +782,14 @@ def codon_tac_primary_1 : ℤ := 1
 def codon_tac_primary_2 : ℤ := -1
 theorem codon_tac_primary_phase :
     (codon_tac_primary_0, codon_tac_primary_1, codon_tac_primary_2) = (-1, 1, -1) := by
-  unfold codon_tac_primary_0 codon_tac_primary_1 codon_tac_primary_2; norm_num
+  unfold codon_tac_primary_0 codon_tac_primary_1 codon_tac_primary_2; decide
 /-- `TAC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tac_secondary_0 : ℤ := -1
 def codon_tac_secondary_1 : ℤ := 1
 def codon_tac_secondary_2 : ℤ := 0
 theorem codon_tac_secondary_phase :
     (codon_tac_secondary_0, codon_tac_secondary_1, codon_tac_secondary_2) = (-1, 1, 0) := by
-  unfold codon_tac_secondary_0 codon_tac_secondary_1 codon_tac_secondary_2; norm_num
+  unfold codon_tac_secondary_0 codon_tac_secondary_1 codon_tac_secondary_2; decide
 
 /-- `TAG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tag_primary_0 : ℤ := -1
@@ -796,14 +797,14 @@ def codon_tag_primary_1 : ℤ := 1
 def codon_tag_primary_2 : ℤ := 1
 theorem codon_tag_primary_phase :
     (codon_tag_primary_0, codon_tag_primary_1, codon_tag_primary_2) = (-1, 1, 1) := by
-  unfold codon_tag_primary_0 codon_tag_primary_1 codon_tag_primary_2; norm_num
+  unfold codon_tag_primary_0 codon_tag_primary_1 codon_tag_primary_2; decide
 /-- `TAG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tag_secondary_0 : ℤ := -1
 def codon_tag_secondary_1 : ℤ := 1
 def codon_tag_secondary_2 : ℤ := 0
 theorem codon_tag_secondary_phase :
     (codon_tag_secondary_0, codon_tag_secondary_1, codon_tag_secondary_2) = (-1, 1, 0) := by
-  unfold codon_tag_secondary_0 codon_tag_secondary_1 codon_tag_secondary_2; norm_num
+  unfold codon_tag_secondary_0 codon_tag_secondary_1 codon_tag_secondary_2; decide
 
 /-- `TAT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tat_primary_0 : ℤ := -1
@@ -811,14 +812,14 @@ def codon_tat_primary_1 : ℤ := 1
 def codon_tat_primary_2 : ℤ := -1
 theorem codon_tat_primary_phase :
     (codon_tat_primary_0, codon_tat_primary_1, codon_tat_primary_2) = (-1, 1, -1) := by
-  unfold codon_tat_primary_0 codon_tat_primary_1 codon_tat_primary_2; norm_num
+  unfold codon_tat_primary_0 codon_tat_primary_1 codon_tat_primary_2; decide
 /-- `TAT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tat_secondary_0 : ℤ := -1
 def codon_tat_secondary_1 : ℤ := 1
 def codon_tat_secondary_2 : ℤ := -1
 theorem codon_tat_secondary_phase :
     (codon_tat_secondary_0, codon_tat_secondary_1, codon_tat_secondary_2) = (-1, 1, -1) := by
-  unfold codon_tat_secondary_0 codon_tat_secondary_1 codon_tat_secondary_2; norm_num
+  unfold codon_tat_secondary_0 codon_tat_secondary_1 codon_tat_secondary_2; decide
 
 /-- `TCA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tca_primary_0 : ℤ := -1
@@ -826,14 +827,14 @@ def codon_tca_primary_1 : ℤ := -1
 def codon_tca_primary_2 : ℤ := 1
 theorem codon_tca_primary_phase :
     (codon_tca_primary_0, codon_tca_primary_1, codon_tca_primary_2) = (-1, -1, 1) := by
-  unfold codon_tca_primary_0 codon_tca_primary_1 codon_tca_primary_2; norm_num
+  unfold codon_tca_primary_0 codon_tca_primary_1 codon_tca_primary_2; decide
 /-- `TCA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tca_secondary_0 : ℤ := -1
 def codon_tca_secondary_1 : ℤ := 0
 def codon_tca_secondary_2 : ℤ := 1
 theorem codon_tca_secondary_phase :
     (codon_tca_secondary_0, codon_tca_secondary_1, codon_tca_secondary_2) = (-1, 0, 1) := by
-  unfold codon_tca_secondary_0 codon_tca_secondary_1 codon_tca_secondary_2; norm_num
+  unfold codon_tca_secondary_0 codon_tca_secondary_1 codon_tca_secondary_2; decide
 
 /-- `TCC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tcc_primary_0 : ℤ := -1
@@ -841,14 +842,14 @@ def codon_tcc_primary_1 : ℤ := -1
 def codon_tcc_primary_2 : ℤ := -1
 theorem codon_tcc_primary_phase :
     (codon_tcc_primary_0, codon_tcc_primary_1, codon_tcc_primary_2) = (-1, -1, -1) := by
-  unfold codon_tcc_primary_0 codon_tcc_primary_1 codon_tcc_primary_2; norm_num
+  unfold codon_tcc_primary_0 codon_tcc_primary_1 codon_tcc_primary_2; decide
 /-- `TCC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tcc_secondary_0 : ℤ := -1
 def codon_tcc_secondary_1 : ℤ := 0
 def codon_tcc_secondary_2 : ℤ := 0
 theorem codon_tcc_secondary_phase :
     (codon_tcc_secondary_0, codon_tcc_secondary_1, codon_tcc_secondary_2) = (-1, 0, 0) := by
-  unfold codon_tcc_secondary_0 codon_tcc_secondary_1 codon_tcc_secondary_2; norm_num
+  unfold codon_tcc_secondary_0 codon_tcc_secondary_1 codon_tcc_secondary_2; decide
 
 /-- `TCG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tcg_primary_0 : ℤ := -1
@@ -856,14 +857,14 @@ def codon_tcg_primary_1 : ℤ := -1
 def codon_tcg_primary_2 : ℤ := 1
 theorem codon_tcg_primary_phase :
     (codon_tcg_primary_0, codon_tcg_primary_1, codon_tcg_primary_2) = (-1, -1, 1) := by
-  unfold codon_tcg_primary_0 codon_tcg_primary_1 codon_tcg_primary_2; norm_num
+  unfold codon_tcg_primary_0 codon_tcg_primary_1 codon_tcg_primary_2; decide
 /-- `TCG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tcg_secondary_0 : ℤ := -1
 def codon_tcg_secondary_1 : ℤ := 0
 def codon_tcg_secondary_2 : ℤ := 0
 theorem codon_tcg_secondary_phase :
     (codon_tcg_secondary_0, codon_tcg_secondary_1, codon_tcg_secondary_2) = (-1, 0, 0) := by
-  unfold codon_tcg_secondary_0 codon_tcg_secondary_1 codon_tcg_secondary_2; norm_num
+  unfold codon_tcg_secondary_0 codon_tcg_secondary_1 codon_tcg_secondary_2; decide
 
 /-- `TCT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tct_primary_0 : ℤ := -1
@@ -871,14 +872,14 @@ def codon_tct_primary_1 : ℤ := -1
 def codon_tct_primary_2 : ℤ := -1
 theorem codon_tct_primary_phase :
     (codon_tct_primary_0, codon_tct_primary_1, codon_tct_primary_2) = (-1, -1, -1) := by
-  unfold codon_tct_primary_0 codon_tct_primary_1 codon_tct_primary_2; norm_num
+  unfold codon_tct_primary_0 codon_tct_primary_1 codon_tct_primary_2; decide
 /-- `TCT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tct_secondary_0 : ℤ := -1
 def codon_tct_secondary_1 : ℤ := 0
 def codon_tct_secondary_2 : ℤ := -1
 theorem codon_tct_secondary_phase :
     (codon_tct_secondary_0, codon_tct_secondary_1, codon_tct_secondary_2) = (-1, 0, -1) := by
-  unfold codon_tct_secondary_0 codon_tct_secondary_1 codon_tct_secondary_2; norm_num
+  unfold codon_tct_secondary_0 codon_tct_secondary_1 codon_tct_secondary_2; decide
 
 /-- `TGA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tga_primary_0 : ℤ := -1
@@ -886,14 +887,14 @@ def codon_tga_primary_1 : ℤ := 1
 def codon_tga_primary_2 : ℤ := 1
 theorem codon_tga_primary_phase :
     (codon_tga_primary_0, codon_tga_primary_1, codon_tga_primary_2) = (-1, 1, 1) := by
-  unfold codon_tga_primary_0 codon_tga_primary_1 codon_tga_primary_2; norm_num
+  unfold codon_tga_primary_0 codon_tga_primary_1 codon_tga_primary_2; decide
 /-- `TGA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tga_secondary_0 : ℤ := -1
 def codon_tga_secondary_1 : ℤ := 0
 def codon_tga_secondary_2 : ℤ := 1
 theorem codon_tga_secondary_phase :
     (codon_tga_secondary_0, codon_tga_secondary_1, codon_tga_secondary_2) = (-1, 0, 1) := by
-  unfold codon_tga_secondary_0 codon_tga_secondary_1 codon_tga_secondary_2; norm_num
+  unfold codon_tga_secondary_0 codon_tga_secondary_1 codon_tga_secondary_2; decide
 
 /-- `TGC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tgc_primary_0 : ℤ := -1
@@ -901,14 +902,14 @@ def codon_tgc_primary_1 : ℤ := 1
 def codon_tgc_primary_2 : ℤ := -1
 theorem codon_tgc_primary_phase :
     (codon_tgc_primary_0, codon_tgc_primary_1, codon_tgc_primary_2) = (-1, 1, -1) := by
-  unfold codon_tgc_primary_0 codon_tgc_primary_1 codon_tgc_primary_2; norm_num
+  unfold codon_tgc_primary_0 codon_tgc_primary_1 codon_tgc_primary_2; decide
 /-- `TGC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tgc_secondary_0 : ℤ := -1
 def codon_tgc_secondary_1 : ℤ := 0
 def codon_tgc_secondary_2 : ℤ := 0
 theorem codon_tgc_secondary_phase :
     (codon_tgc_secondary_0, codon_tgc_secondary_1, codon_tgc_secondary_2) = (-1, 0, 0) := by
-  unfold codon_tgc_secondary_0 codon_tgc_secondary_1 codon_tgc_secondary_2; norm_num
+  unfold codon_tgc_secondary_0 codon_tgc_secondary_1 codon_tgc_secondary_2; decide
 
 /-- `TGG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tgg_primary_0 : ℤ := -1
@@ -916,14 +917,14 @@ def codon_tgg_primary_1 : ℤ := 1
 def codon_tgg_primary_2 : ℤ := 1
 theorem codon_tgg_primary_phase :
     (codon_tgg_primary_0, codon_tgg_primary_1, codon_tgg_primary_2) = (-1, 1, 1) := by
-  unfold codon_tgg_primary_0 codon_tgg_primary_1 codon_tgg_primary_2; norm_num
+  unfold codon_tgg_primary_0 codon_tgg_primary_1 codon_tgg_primary_2; decide
 /-- `TGG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tgg_secondary_0 : ℤ := -1
 def codon_tgg_secondary_1 : ℤ := 0
 def codon_tgg_secondary_2 : ℤ := 0
 theorem codon_tgg_secondary_phase :
     (codon_tgg_secondary_0, codon_tgg_secondary_1, codon_tgg_secondary_2) = (-1, 0, 0) := by
-  unfold codon_tgg_secondary_0 codon_tgg_secondary_1 codon_tgg_secondary_2; norm_num
+  unfold codon_tgg_secondary_0 codon_tgg_secondary_1 codon_tgg_secondary_2; decide
 
 /-- `TGT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tgt_primary_0 : ℤ := -1
@@ -931,14 +932,14 @@ def codon_tgt_primary_1 : ℤ := 1
 def codon_tgt_primary_2 : ℤ := -1
 theorem codon_tgt_primary_phase :
     (codon_tgt_primary_0, codon_tgt_primary_1, codon_tgt_primary_2) = (-1, 1, -1) := by
-  unfold codon_tgt_primary_0 codon_tgt_primary_1 codon_tgt_primary_2; norm_num
+  unfold codon_tgt_primary_0 codon_tgt_primary_1 codon_tgt_primary_2; decide
 /-- `TGT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tgt_secondary_0 : ℤ := -1
 def codon_tgt_secondary_1 : ℤ := 0
 def codon_tgt_secondary_2 : ℤ := -1
 theorem codon_tgt_secondary_phase :
     (codon_tgt_secondary_0, codon_tgt_secondary_1, codon_tgt_secondary_2) = (-1, 0, -1) := by
-  unfold codon_tgt_secondary_0 codon_tgt_secondary_1 codon_tgt_secondary_2; norm_num
+  unfold codon_tgt_secondary_0 codon_tgt_secondary_1 codon_tgt_secondary_2; decide
 
 /-- `TTA` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_tta_primary_0 : ℤ := -1
@@ -946,14 +947,14 @@ def codon_tta_primary_1 : ℤ := -1
 def codon_tta_primary_2 : ℤ := 1
 theorem codon_tta_primary_phase :
     (codon_tta_primary_0, codon_tta_primary_1, codon_tta_primary_2) = (-1, -1, 1) := by
-  unfold codon_tta_primary_0 codon_tta_primary_1 codon_tta_primary_2; norm_num
+  unfold codon_tta_primary_0 codon_tta_primary_1 codon_tta_primary_2; decide
 /-- `TTA` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_tta_secondary_0 : ℤ := -1
 def codon_tta_secondary_1 : ℤ := -1
 def codon_tta_secondary_2 : ℤ := 1
 theorem codon_tta_secondary_phase :
     (codon_tta_secondary_0, codon_tta_secondary_1, codon_tta_secondary_2) = (-1, -1, 1) := by
-  unfold codon_tta_secondary_0 codon_tta_secondary_1 codon_tta_secondary_2; norm_num
+  unfold codon_tta_secondary_0 codon_tta_secondary_1 codon_tta_secondary_2; decide
 
 /-- `TTC` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ttc_primary_0 : ℤ := -1
@@ -961,14 +962,14 @@ def codon_ttc_primary_1 : ℤ := -1
 def codon_ttc_primary_2 : ℤ := -1
 theorem codon_ttc_primary_phase :
     (codon_ttc_primary_0, codon_ttc_primary_1, codon_ttc_primary_2) = (-1, -1, -1) := by
-  unfold codon_ttc_primary_0 codon_ttc_primary_1 codon_ttc_primary_2; norm_num
+  unfold codon_ttc_primary_0 codon_ttc_primary_1 codon_ttc_primary_2; decide
 /-- `TTC` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ttc_secondary_0 : ℤ := -1
 def codon_ttc_secondary_1 : ℤ := -1
 def codon_ttc_secondary_2 : ℤ := 0
 theorem codon_ttc_secondary_phase :
     (codon_ttc_secondary_0, codon_ttc_secondary_1, codon_ttc_secondary_2) = (-1, -1, 0) := by
-  unfold codon_ttc_secondary_0 codon_ttc_secondary_1 codon_ttc_secondary_2; norm_num
+  unfold codon_ttc_secondary_0 codon_ttc_secondary_1 codon_ttc_secondary_2; decide
 
 /-- `TTG` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ttg_primary_0 : ℤ := -1
@@ -976,14 +977,14 @@ def codon_ttg_primary_1 : ℤ := -1
 def codon_ttg_primary_2 : ℤ := 1
 theorem codon_ttg_primary_phase :
     (codon_ttg_primary_0, codon_ttg_primary_1, codon_ttg_primary_2) = (-1, -1, 1) := by
-  unfold codon_ttg_primary_0 codon_ttg_primary_1 codon_ttg_primary_2; norm_num
+  unfold codon_ttg_primary_0 codon_ttg_primary_1 codon_ttg_primary_2; decide
 /-- `TTG` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ttg_secondary_0 : ℤ := -1
 def codon_ttg_secondary_1 : ℤ := -1
 def codon_ttg_secondary_2 : ℤ := 0
 theorem codon_ttg_secondary_phase :
     (codon_ttg_secondary_0, codon_ttg_secondary_1, codon_ttg_secondary_2) = (-1, -1, 0) := by
-  unfold codon_ttg_secondary_0 codon_ttg_secondary_1 codon_ttg_secondary_2; norm_num
+  unfold codon_ttg_secondary_0 codon_ttg_secondary_1 codon_ttg_secondary_2; decide
 
 /-- `TTT` primary spin axis [A,G=+1; C,T=-1]. -/
 def codon_ttt_primary_0 : ℤ := -1
@@ -991,14 +992,14 @@ def codon_ttt_primary_1 : ℤ := -1
 def codon_ttt_primary_2 : ℤ := -1
 theorem codon_ttt_primary_phase :
     (codon_ttt_primary_0, codon_ttt_primary_1, codon_ttt_primary_2) = (-1, -1, -1) := by
-  unfold codon_ttt_primary_0 codon_ttt_primary_1 codon_ttt_primary_2; norm_num
+  unfold codon_ttt_primary_0 codon_ttt_primary_1 codon_ttt_primary_2; decide
 /-- `TTT` secondary genetic axis [A=+1; T=-1; G,C=0]. -/
 def codon_ttt_secondary_0 : ℤ := -1
 def codon_ttt_secondary_1 : ℤ := -1
 def codon_ttt_secondary_2 : ℤ := -1
 theorem codon_ttt_secondary_phase :
     (codon_ttt_secondary_0, codon_ttt_secondary_1, codon_ttt_secondary_2) = (-1, -1, -1) := by
-  unfold codon_ttt_secondary_0 codon_ttt_secondary_1 codon_ttt_secondary_2; norm_num
+  unfold codon_ttt_secondary_0 codon_ttt_secondary_1 codon_ttt_secondary_2; decide
 
 /-- Bundle: 64 codons, dual-axis trinary map linked to Genomic exact identities. -/
 theorem codon_trinary_map_bundle :

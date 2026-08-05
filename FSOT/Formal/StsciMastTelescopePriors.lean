@@ -20,7 +20,8 @@ theorem stsci_mast_telescope_observable_count_pos : 0 < stsci_mast_telescope_obs
 
 theorem stsci_mast_telescope_median_error_under_five_pct :
     stsci_mast_telescope_median_error_pct < (5 : ℝ) := by
-  unfold stsci_mast_telescope_median_error_pct; norm_num
+  unfold stsci_mast_telescope_median_error_pct
+  exact (by norm_num : (0.022461  : ℝ) < (5 : ℝ))
 
 theorem stsci_mast_telescope_bundle :
     stsci_mast_telescope_observable_count = 377 ∧

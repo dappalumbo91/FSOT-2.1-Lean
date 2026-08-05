@@ -16,7 +16,8 @@ theorem heavy_ion_lab_synthesis_panel_observable_count_pos : 0 < heavy_ion_lab_s
   unfold heavy_ion_lab_synthesis_panel_observable_count; decide
 
 theorem heavy_ion_lab_synthesis_panel_median_error_under_half_pct :
-    (9.5e-05 : ℝ) < (0.5 : ℝ) := by norm_num
+    (9.5e-05 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (9.5e-05 : ℝ) < (0.5 : ℝ))
 
 theorem heavy_ion_lab_synthesis_panel_bundle :
     heavy_ion_lab_synthesis_panel_observable_count = 39 ∧

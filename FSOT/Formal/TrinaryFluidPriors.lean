@@ -18,11 +18,15 @@ def trinary_resonance_persist : ℝ := (0.8652559794322651 : ℝ)
 def trinary_metatron_pathways : ℕ := 27
 def trinary_engine_accuracy_pct : ℝ := (99.3 : ℝ)
 
-theorem trinary_ignition_coherence_positive : (0 : ℝ) < trinary_ignition_coherence := by
-  unfold trinary_ignition_coherence; norm_num
+theorem trinary_ignition_coherence_positive :
+    (0 : ℝ) < trinary_ignition_coherence := by
+  unfold trinary_ignition_coherence
+  exact (by norm_num : (0 : ℝ) < (0.3921734915875944  : ℝ))
 
-theorem trinary_resonance_persist_positive : (0 : ℝ) < trinary_resonance_persist := by
-  unfold trinary_resonance_persist; norm_num
+theorem trinary_resonance_persist_positive :
+    (0 : ℝ) < trinary_resonance_persist := by
+  unfold trinary_resonance_persist
+  exact (by norm_num : (0 : ℝ) < (0.8652559794322651  : ℝ))
 
 theorem trinary_metatron_pathways_pos : 0 < trinary_metatron_pathways := by
   unfold trinary_metatron_pathways; decide

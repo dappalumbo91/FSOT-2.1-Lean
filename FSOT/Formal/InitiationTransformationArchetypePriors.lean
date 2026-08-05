@@ -16,7 +16,8 @@ theorem initiation_transformation_archetype_observable_count_pos : 0 < initiatio
   unfold initiation_transformation_archetype_observable_count; decide
 
 theorem initiation_transformation_archetype_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem initiation_transformation_archetype_bundle :
     initiation_transformation_archetype_observable_count = 24 ∧

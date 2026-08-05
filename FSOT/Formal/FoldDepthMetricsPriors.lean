@@ -16,7 +16,8 @@ theorem fold_depth_metrics_observable_count_pos : 0 < fold_depth_metrics_observa
   unfold fold_depth_metrics_observable_count; decide
 
 theorem fold_depth_metrics_median_error_under_half_pct :
-    (0.025753835305195434 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.025753835305195434 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.025753835305195434 : ℝ) < (0.5 : ℝ))
 
 theorem fold_depth_metrics_bundle :
     fold_depth_metrics_observable_count = 51 ∧

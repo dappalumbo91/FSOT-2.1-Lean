@@ -30,14 +30,20 @@ theorem neuron_train_cell_count_ge_gate : (1744 : ℕ) < neuron_train_cell_count
 theorem neuron_holdout_cell_count_ge_gate : (419 : ℕ) < neuron_holdout_cell_count := by
   unfold neuron_holdout_cell_count; decide
 
-theorem neuron_train_fi_median_lt_thirty_pct : neuron_train_fi_median_rel_err < (0.30 : ℝ) := by
-  unfold neuron_train_fi_median_rel_err; norm_num
+theorem neuron_train_fi_median_lt_thirty_pct :
+    neuron_train_fi_median_rel_err < (0.30 : ℝ) := by
+  unfold neuron_train_fi_median_rel_err
+  exact (by norm_num : (0.24544591854270223  : ℝ) < (0.30 : ℝ))
 
-theorem neuron_holdout_fi_median_lt_thirty_pct : neuron_holdout_fi_median_rel_err < (0.30 : ℝ) := by
-  unfold neuron_holdout_fi_median_rel_err; norm_num
+theorem neuron_holdout_fi_median_lt_thirty_pct :
+    neuron_holdout_fi_median_rel_err < (0.30 : ℝ) := by
+  unfold neuron_holdout_fi_median_rel_err
+  exact (by norm_num : (0.23879717016341562  : ℝ) < (0.30 : ℝ))
 
-theorem neuron_holdout_fi_pearson_gt_fifty_five : (0.55 : ℝ) < neuron_holdout_fi_pearson_r := by
-  unfold neuron_holdout_fi_pearson_r; norm_num
+theorem neuron_holdout_fi_pearson_gt_fifty_five :
+    (0.55 : ℝ) < neuron_holdout_fi_pearson_r := by
+  unfold neuron_holdout_fi_pearson_r
+  exact (by norm_num : (0.55 : ℝ) < (0.5982032061315143 : ℝ))
 
 theorem neuron_cohort_train_holdout_bundle :
     neuron_train_cell_count = 1745 ∧

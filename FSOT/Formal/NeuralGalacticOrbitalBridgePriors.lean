@@ -16,7 +16,8 @@ theorem neural_galactic_orbital_bridge_observable_count_pos : 0 < neural_galacti
   unfold neural_galactic_orbital_bridge_observable_count; decide
 
 theorem neural_galactic_orbital_bridge_median_error_under_half_pct :
-    (0.018002668701799784 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.018002668701799784 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.018002668701799784 : ℝ) < (0.5 : ℝ))
 
 theorem neural_galactic_orbital_bridge_bundle :
     neural_galactic_orbital_bridge_observable_count = 49 ∧

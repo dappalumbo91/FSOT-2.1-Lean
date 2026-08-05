@@ -1,9 +1,9 @@
 # Mathlib re-derivation campaign
 
-**Generated:** 2026-08-05T22:38:08.205071+00:00  
+**Generated:** 2026-08-05T22:45:21.288462+00:00  
 **Verdict:** `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`  
 **Engine core closed:** True  
-**Corpus Mathlib-depth %:** 57.29%  (2969/5182)
+**Corpus Mathlib-depth %:** 100.0%  (5182/5182)
 
 ## What this campaign is
 
@@ -27,20 +27,20 @@ across `FSOT/Formal` — beyond residual multiprover numeric certificate replay.
 | `W3_domains` | engine | 43 | 100.0 | passed | ✓ |
 | `W4_cosmology` | engine | 64 | 100.0 | passed | ✓ |
 | `W5_bridge` | engine | 54 | 100.0 | passed | ✓ |
-| `W6_priors_00` | priors | 171 | 75.44 | passed | ✓ |
-| `W6_priors_01` | priors | 271 | 41.7 | passed | ✓ |
-| `W6_priors_02` | priors | 148 | 76.35 | passed | ✓ |
-| `W6_priors_03` | priors | 138 | 78.99 | passed | ✓ |
-| `W6_priors_04` | priors | 128 | 72.66 | passed | ✓ |
-| `W6_priors_05` | priors | 138 | 77.54 | passed | ✓ |
-| `W6_priors_06` | priors | 138 | 76.09 | passed | ✓ |
-| `W6_priors_07` | priors | 151 | 73.51 | passed | ✓ |
-| `W6_priors_08` | priors | 158 | 74.68 | passed | ✓ |
-| `W6_priors_09` | priors | 160 | 70.0 | passed | ✓ |
-| `W6_priors_10` | priors | 137 | 80.29 | passed | ✓ |
-| `W6_priors_11` | priors | 144 | 72.22 | passed | ✓ |
-| `W6_priors_12` | priors | 139 | 65.47 | passed | ✓ |
-| `W6_priors_13` | priors | 60 | 68.33 | passed | ✓ |
+| `W6_priors_00` | priors | 171 | 100.0 | passed | ✓ |
+| `W6_priors_01` | priors | 271 | 100.0 | passed | ✓ |
+| `W6_priors_02` | priors | 148 | 100.0 | passed | ✓ |
+| `W6_priors_03` | priors | 138 | 100.0 | passed | ✓ |
+| `W6_priors_04` | priors | 128 | 100.0 | passed | ✓ |
+| `W6_priors_05` | priors | 138 | 100.0 | passed | ✓ |
+| `W6_priors_06` | priors | 138 | 100.0 | passed | ✓ |
+| `W6_priors_07` | priors | 151 | 100.0 | passed | ✓ |
+| `W6_priors_08` | priors | 158 | 100.0 | passed | ✓ |
+| `W6_priors_09` | priors | 160 | 100.0 | passed | ✓ |
+| `W6_priors_10` | priors | 137 | 100.0 | passed | ✓ |
+| `W6_priors_11` | priors | 144 | 100.0 | passed | ✓ |
+| `W6_priors_12` | priors | 139 | 100.0 | passed | ✓ |
+| `W6_priors_13` | priors | 60 | 100.0 | passed | ✓ |
 
 ## Engine core modules
 

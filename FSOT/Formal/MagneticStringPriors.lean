@@ -15,8 +15,10 @@ def magnetic_string_count : ℕ := 250
 def magnetic_top_aligned_count : ℕ := 75
 def magnetic_S_em : ℝ := (0.5188655207983146 : ℝ)
 
-theorem magnetic_S_em_positive : (0 : ℝ) < magnetic_S_em := by
-  unfold magnetic_S_em; norm_num
+theorem magnetic_S_em_positive :
+    (0 : ℝ) < magnetic_S_em := by
+  unfold magnetic_S_em
+  exact (by norm_num : (0 : ℝ) < (0.5188655207983146  : ℝ))
 
 theorem magnetic_string_count_pos : 0 < magnetic_string_count := by
   unfold magnetic_string_count; decide

@@ -16,7 +16,8 @@ theorem virology_observable_count_pos : 0 < virology_observable_count := by
   unfold virology_observable_count; decide
 
 theorem virology_median_error_under_half_pct :
-    (0.04593318440797614 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.04593318440797614 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.04593318440797614 : ℝ) < (0.5 : ℝ))
 
 theorem virology_bundle :
     virology_observable_count = 50 ∧

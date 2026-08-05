@@ -20,7 +20,8 @@ theorem cern_open_data_lhc_observable_count_pos : 0 < cern_open_data_lhc_observa
 
 theorem cern_open_data_lhc_median_error_under_five_pct :
     cern_open_data_lhc_median_error_pct < (5 : ℝ) := by
-  unfold cern_open_data_lhc_median_error_pct; norm_num
+  unfold cern_open_data_lhc_median_error_pct
+  exact (by norm_num : (0.013294  : ℝ) < (5 : ℝ))
 
 theorem cern_open_data_lhc_bundle :
     cern_open_data_lhc_observable_count = 83 ∧

@@ -49,46 +49,67 @@ def warp_delta_phi_stable : ℝ := (0.004581413686 : ℝ)
 
 /-! ## Positivity certificates -/
 
-theorem warp_psi_friction_pos : (0 : ℝ) < warp_psi_friction := by
-  unfold warp_psi_friction; norm_num
+theorem warp_psi_friction_pos :
+    (0 : ℝ) < warp_psi_friction := by
+  unfold warp_psi_friction
+  exact (by norm_num : (0 : ℝ) < (0.082300635102  : ℝ))
 
-theorem warp_psi_node_pos : (0 : ℝ) < warp_psi_node_actuation := by
-  unfold warp_psi_node_actuation; norm_num
+theorem warp_psi_node_pos :
+    (0 : ℝ) < warp_psi_node_actuation := by
+  unfold warp_psi_node_actuation
+  exact (by norm_num : (0 : ℝ) < (0.059407798774  : ℝ))
 
-theorem warp_tunneling_bridge_pos : (0 : ℝ) < warp_psi_tunneling_bridge := by
-  unfold warp_psi_tunneling_bridge; norm_num
+theorem warp_tunneling_bridge_pos :
+    (0 : ℝ) < warp_psi_tunneling_bridge := by
+  unfold warp_psi_tunneling_bridge
+  exact (by norm_num : (0 : ℝ) < (0.053926299704  : ℝ))
 
-theorem warp_psi_stabilization_pos : (0 : ℝ) < warp_psi_stabilization := by
-  unfold warp_psi_stabilization; norm_num
+theorem warp_psi_stabilization_pos :
+    (0 : ℝ) < warp_psi_stabilization := by
+  unfold warp_psi_stabilization
+  exact (by norm_num : (0 : ℝ) < (2.386649570184  : ℝ))
 
-theorem warp_psi_run_pos : (0 : ℝ) < warp_psi_run_sustained := by
-  unfold warp_psi_run_sustained; norm_num
+theorem warp_psi_run_pos :
+    (0 : ℝ) < warp_psi_run_sustained := by
+  unfold warp_psi_run_sustained
+  exact (by norm_num : (0 : ℝ) < (0.14178559741  : ℝ))
 
-theorem warp_delta_phi_stable_pos : (0 : ℝ) < warp_delta_phi_stable := by
-  unfold warp_delta_phi_stable; norm_num
+theorem warp_delta_phi_stable_pos :
+    (0 : ℝ) < warp_delta_phi_stable := by
+  unfold warp_delta_phi_stable
+  exact (by norm_num : (0 : ℝ) < (0.004581413686  : ℝ))
 
 /-! ## Structural ordering (formula consistency) -/
 
-theorem warp_bridge_lt_node : warp_psi_tunneling_bridge < warp_psi_node_actuation := by
-  unfold warp_psi_tunneling_bridge warp_psi_node_actuation; norm_num
+theorem warp_bridge_lt_node :
+    warp_psi_tunneling_bridge < warp_psi_node_actuation := by
+  unfold warp_psi_tunneling_bridge warp_psi_node_actuation
+  exact (by norm_num : (0.053926299704 : ℝ) < (0.059407798774 : ℝ))
 
-theorem warp_exotic_lt_friction : warp_y_exotic_byproduct < warp_psi_friction := by
-  unfold warp_y_exotic_byproduct warp_psi_friction; norm_num
+theorem warp_exotic_lt_friction :
+    warp_y_exotic_byproduct < warp_psi_friction := by
+  unfold warp_y_exotic_byproduct warp_psi_friction
+  exact (by norm_num : (0.011637689406 : ℝ) < (0.082300635102 : ℝ))
 
 theorem warp_delta_phi_stable_le_raw :
     warp_delta_phi_stable ≤ warp_delta_phi_fluid := by
-  unfold warp_delta_phi_stable warp_delta_phi_fluid; norm_num
+  unfold warp_delta_phi_stable warp_delta_phi_fluid
+  exact (by norm_num : (0.004581413686 : ℝ) ≤ (0.004581413686 : ℝ))
 
 /-! ## Stabilization band (device-run certificate) -/
 
-theorem warp_stabilization_margin_gt_one : (1 : ℝ) < warp_stabilization_margin := by
-  unfold warp_stabilization_margin; norm_num
+theorem warp_stabilization_margin_gt_one :
+    (1 : ℝ) < warp_stabilization_margin := by
+  unfold warp_stabilization_margin
+  exact (by norm_num : (1 : ℝ) < (1.722776467449 : ℝ))
 
 theorem warp_stable_run_band : (1 : ℝ) < warp_stabilization_margin ∧ (0 : ℝ) < warp_psi_run_sustained := by
   refine ⟨warp_stabilization_margin_gt_one, warp_psi_run_pos⟩
 
-theorem warp_y_exotic_byproduct_pos : (0 : ℝ) < warp_y_exotic_byproduct := by
-  unfold warp_y_exotic_byproduct; norm_num
+theorem warp_y_exotic_byproduct_pos :
+    (0 : ℝ) < warp_y_exotic_byproduct := by
+  unfold warp_y_exotic_byproduct
+  exact (by norm_num : (0 : ℝ) < (0.011637689406  : ℝ))
 
 /-! ## Bundle -/
 

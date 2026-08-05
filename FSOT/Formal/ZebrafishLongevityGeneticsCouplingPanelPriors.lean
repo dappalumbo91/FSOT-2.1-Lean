@@ -20,7 +20,8 @@ theorem zebrafish_longevity_genetics_coupling_observable_count_pos : 0 < zebrafi
 
 theorem zebrafish_longevity_genetics_coupling_median_error_under_five_pct :
     zebrafish_longevity_genetics_coupling_median_error_pct < (5 : ℝ) := by
-  unfold zebrafish_longevity_genetics_coupling_median_error_pct; norm_num
+  unfold zebrafish_longevity_genetics_coupling_median_error_pct
+  exact (by norm_num : (0.013342  : ℝ) < (5 : ℝ))
 
 theorem zebrafish_longevity_genetics_coupling_bundle :
     zebrafish_longevity_genetics_coupling_observable_count = 15 ∧

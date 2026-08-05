@@ -16,7 +16,8 @@ theorem consciousness_expansion_spine_observable_count_pos : 0 < consciousness_e
   unfold consciousness_expansion_spine_observable_count; decide
 
 theorem consciousness_expansion_spine_median_error_under_half_pct :
-    (0.008488 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.008488 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.008488 : ℝ) < (0.5 : ℝ))
 
 theorem consciousness_expansion_spine_bundle :
     consciousness_expansion_spine_observable_count = 24 ∧

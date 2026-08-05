@@ -16,7 +16,8 @@ theorem domain_orbital_predictions_observable_count_pos : 0 < domain_orbital_pre
   unfold domain_orbital_predictions_observable_count; decide
 
 theorem domain_orbital_predictions_median_error_under_half_pct :
-    (0.01529034996934153 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.01529034996934153 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.01529034996934153 : ℝ) < (0.5 : ℝ))
 
 theorem domain_orbital_predictions_bundle :
     domain_orbital_predictions_observable_count = 24 ∧

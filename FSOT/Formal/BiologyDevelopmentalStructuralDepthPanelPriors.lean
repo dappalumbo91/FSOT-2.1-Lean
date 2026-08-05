@@ -16,7 +16,8 @@ theorem biology_developmental_structural_depth_panel_observable_count_pos : 0 < 
   unfold biology_developmental_structural_depth_panel_observable_count; decide
 
 theorem biology_developmental_structural_depth_panel_median_error_under_half_pct :
-    (0.022236 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022236 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022236 : ℝ) < (0.5 : ℝ))
 
 theorem biology_developmental_structural_depth_panel_bundle :
     biology_developmental_structural_depth_panel_observable_count = 26 ∧

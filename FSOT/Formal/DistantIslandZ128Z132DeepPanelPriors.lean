@@ -16,7 +16,8 @@ theorem distant_island_z128_z132_deep_panel_observable_count_pos : 0 < distant_i
   unfold distant_island_z128_z132_deep_panel_observable_count; decide
 
 theorem distant_island_z128_z132_deep_panel_median_error_under_half_pct :
-    (1e-06 : ℝ) < (0.5 : ℝ) := by norm_num
+    (1e-06 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (1e-06 : ℝ) < (0.5 : ℝ))
 
 theorem distant_island_z128_z132_deep_panel_bundle :
     distant_island_z128_z132_deep_panel_observable_count = 24 ∧

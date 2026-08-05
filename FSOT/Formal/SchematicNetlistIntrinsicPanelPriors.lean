@@ -20,7 +20,8 @@ theorem schematic_netlist_intrinsic_observable_count_pos : 0 < schematic_netlist
 
 theorem schematic_netlist_intrinsic_median_error_under_five_pct :
     schematic_netlist_intrinsic_median_error_pct < (5 : ℝ) := by
-  unfold schematic_netlist_intrinsic_median_error_pct; norm_num
+  unfold schematic_netlist_intrinsic_median_error_pct
+  exact (by norm_num : (0.051887  : ℝ) < (5 : ℝ))
 
 theorem schematic_netlist_intrinsic_bundle :
     schematic_netlist_intrinsic_observable_count = 5 ∧

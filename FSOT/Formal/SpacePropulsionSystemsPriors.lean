@@ -20,7 +20,8 @@ theorem space_propulsion_systems_observable_count_pos : 0 < space_propulsion_sys
 
 theorem space_propulsion_systems_median_error_under_five_pct :
     space_propulsion_systems_median_error_pct < (5 : ℝ) := by
-  unfold space_propulsion_systems_median_error_pct; norm_num
+  unfold space_propulsion_systems_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem space_propulsion_systems_bundle :
     space_propulsion_systems_observable_count = 21 ∧

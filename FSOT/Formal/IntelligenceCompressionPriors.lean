@@ -31,11 +31,13 @@ theorem fic_fertile_replay_match_le_total :
 
 theorem fic_best_intelligence_score_positive :
     (0 : ℝ) < fic_best_intelligence_score := by
-  unfold fic_best_intelligence_score; norm_num
+  unfold fic_best_intelligence_score
+  exact (by norm_num : (0 : ℝ) < (0.9997093332777109  : ℝ))
 
 theorem fic_fertile_replay_match_rate_le_one :
     fic_fertile_replay_match_rate ≤ (1 : ℝ) := by
-  unfold fic_fertile_replay_match_rate; norm_num
+  unfold fic_fertile_replay_match_rate
+  exact (by norm_num : (1.0 : ℝ) ≤ (1 : ℝ))
 
 /-- Bundle: Intelligence Compression fertile-window sweep with neural/consciousness/ai maps. -/
 theorem intelligence_compression_priors_bundle :

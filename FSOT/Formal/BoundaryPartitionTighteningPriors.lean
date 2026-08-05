@@ -16,7 +16,8 @@ theorem boundary_partition_tightening_observable_count_pos : 0 < boundary_partit
   unfold boundary_partition_tightening_observable_count; decide
 
 theorem boundary_partition_tightening_median_error_under_half_pct :
-    (0.017672674984670764 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.017672674984670764 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.017672674984670764 : ℝ) < (0.5 : ℝ))
 
 theorem boundary_partition_tightening_bundle :
     boundary_partition_tightening_observable_count = 24 ∧

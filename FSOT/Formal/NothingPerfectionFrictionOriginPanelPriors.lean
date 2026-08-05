@@ -16,7 +16,8 @@ theorem nothing_perfection_friction_origin_panel_observable_count_pos : 0 < noth
   unfold nothing_perfection_friction_origin_panel_observable_count; decide
 
 theorem nothing_perfection_friction_origin_panel_median_error_under_half_pct :
-    (0.008488 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.008488 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.008488 : ℝ) < (0.5 : ℝ))
 
 theorem nothing_perfection_friction_origin_panel_bundle :
     nothing_perfection_friction_origin_panel_observable_count = 24 ∧

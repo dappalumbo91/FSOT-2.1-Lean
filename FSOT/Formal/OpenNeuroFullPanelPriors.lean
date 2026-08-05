@@ -16,7 +16,8 @@ theorem openneuro_full_panel_observable_count_pos : 0 < openneuro_full_panel_obs
   unfold openneuro_full_panel_observable_count; decide
 
 theorem openneuro_full_panel_median_error_under_half_pct :
-    (0.015431 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.015431 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.015431 : ℝ) < (0.5 : ℝ))
 
 theorem openneuro_full_panel_bundle :
     openneuro_full_panel_observable_count = 123 ∧

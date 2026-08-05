@@ -16,7 +16,8 @@ theorem unified_db_crosswalk_spine_observable_count_pos : 0 < unified_db_crosswa
   unfold unified_db_crosswalk_spine_observable_count; decide
 
 theorem unified_db_crosswalk_spine_median_error_under_half_pct :
-    (0.0020923899350648867 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0020923899350648867 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0020923899350648867 : ℝ) < (0.5 : ℝ))
 
 theorem unified_db_crosswalk_spine_bundle :
     unified_db_crosswalk_spine_observable_count = 24 ∧

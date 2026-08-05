@@ -20,7 +20,8 @@ theorem computational_reasoning_observable_count_pos : 0 < computational_reasoni
 
 theorem computational_reasoning_median_error_under_five_pct :
     computational_reasoning_median_error_pct < (5 : ℝ) := by
-  unfold computational_reasoning_median_error_pct; norm_num
+  unfold computational_reasoning_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem computational_reasoning_bundle :
     computational_reasoning_observable_count = 577 ∧

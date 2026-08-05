@@ -20,7 +20,8 @@ theorem soil_science_observable_count_pos : 0 < soil_science_observable_count :=
 
 theorem soil_science_median_error_under_five_pct :
     soil_science_median_error_pct < (5 : ℝ) := by
-  unfold soil_science_median_error_pct; norm_num
+  unfold soil_science_median_error_pct
+  exact (by norm_num : (0.006006  : ℝ) < (5 : ℝ))
 
 theorem soil_science_bundle :
     soil_science_observable_count = 96 ∧

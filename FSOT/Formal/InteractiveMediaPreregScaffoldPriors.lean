@@ -16,7 +16,8 @@ theorem interactive_media_prereg_scaffold_observable_count_pos : 0 < interactive
   unfold interactive_media_prereg_scaffold_observable_count; decide
 
 theorem interactive_media_prereg_scaffold_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem interactive_media_prereg_scaffold_bundle :
     interactive_media_prereg_scaffold_observable_count = 42 ∧

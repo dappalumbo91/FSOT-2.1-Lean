@@ -29,11 +29,13 @@ theorem mpcorb_pooled_median_under_half_pct :
 
 theorem mpcorb_pooled_median_under_tier_aspiration :
     mpcorb_pooled_median_error_pct < (0.05 : ℝ) := by
-  unfold mpcorb_pooled_median_error_pct; norm_num
+  unfold mpcorb_pooled_median_error_pct
+  exact (by norm_num : (0.023015  : ℝ) < (0.05 : ℝ))
 
 theorem mpcorb_kepler_integrity_under_ppm :
     mpcorb_kepler_median_error_pct < (0.001 : ℝ) := by
-  unfold mpcorb_kepler_median_error_pct; norm_num
+  unfold mpcorb_kepler_median_error_pct
+  exact (by norm_num : (1.5875572596619725e-06  : ℝ) < (0.001 : ℝ))
 
 theorem mpcorb_green_gate_pass : mpcorb_green_gate_flag = 1 := by
   unfold mpcorb_green_gate_flag; rfl

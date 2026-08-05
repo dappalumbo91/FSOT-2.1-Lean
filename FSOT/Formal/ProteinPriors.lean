@@ -37,7 +37,7 @@ def alanine_polarity : ℤ := -1
 def alanine_volume : ℤ := -1
 theorem alanine_trinary_phase :
     (alanine_charge, alanine_polarity, alanine_volume) = (0, -1, -1) := by
-  unfold alanine_charge alanine_polarity alanine_volume; norm_num
+  unfold alanine_charge alanine_polarity alanine_volume; decide
 
 /-- `Cysteine` (C) trinary phase [Charge, Polarity, Volume]. -/
 def cysteine_charge : ℤ := 0
@@ -45,7 +45,7 @@ def cysteine_polarity : ℤ := 0
 def cysteine_volume : ℤ := -1
 theorem cysteine_trinary_phase :
     (cysteine_charge, cysteine_polarity, cysteine_volume) = (0, 0, -1) := by
-  unfold cysteine_charge cysteine_polarity cysteine_volume; norm_num
+  unfold cysteine_charge cysteine_polarity cysteine_volume; decide
 
 /-- `Aspartic Acid` (D) trinary phase [Charge, Polarity, Volume]. -/
 def aspartic_acid_charge : ℤ := -1
@@ -53,7 +53,7 @@ def aspartic_acid_polarity : ℤ := 1
 def aspartic_acid_volume : ℤ := 0
 theorem aspartic_acid_trinary_phase :
     (aspartic_acid_charge, aspartic_acid_polarity, aspartic_acid_volume) = (-1, 1, 0) := by
-  unfold aspartic_acid_charge aspartic_acid_polarity aspartic_acid_volume; norm_num
+  unfold aspartic_acid_charge aspartic_acid_polarity aspartic_acid_volume; decide
 
 /-- `Glutamic Acid` (E) trinary phase [Charge, Polarity, Volume]. -/
 def glutamic_acid_charge : ℤ := -1
@@ -61,7 +61,7 @@ def glutamic_acid_polarity : ℤ := 1
 def glutamic_acid_volume : ℤ := 1
 theorem glutamic_acid_trinary_phase :
     (glutamic_acid_charge, glutamic_acid_polarity, glutamic_acid_volume) = (-1, 1, 1) := by
-  unfold glutamic_acid_charge glutamic_acid_polarity glutamic_acid_volume; norm_num
+  unfold glutamic_acid_charge glutamic_acid_polarity glutamic_acid_volume; decide
 
 /-- `Phenylalanine` (F) trinary phase [Charge, Polarity, Volume]. -/
 def phenylalanine_charge : ℤ := 0
@@ -69,7 +69,7 @@ def phenylalanine_polarity : ℤ := -1
 def phenylalanine_volume : ℤ := 1
 theorem phenylalanine_trinary_phase :
     (phenylalanine_charge, phenylalanine_polarity, phenylalanine_volume) = (0, -1, 1) := by
-  unfold phenylalanine_charge phenylalanine_polarity phenylalanine_volume; norm_num
+  unfold phenylalanine_charge phenylalanine_polarity phenylalanine_volume; decide
 
 /-- `Glycine` (G) trinary phase [Charge, Polarity, Volume]. -/
 def glycine_charge : ℤ := 0
@@ -77,7 +77,7 @@ def glycine_polarity : ℤ := -1
 def glycine_volume : ℤ := -1
 theorem glycine_trinary_phase :
     (glycine_charge, glycine_polarity, glycine_volume) = (0, -1, -1) := by
-  unfold glycine_charge glycine_polarity glycine_volume; norm_num
+  unfold glycine_charge glycine_polarity glycine_volume; decide
 
 /-- `Histidine` (H) trinary phase [Charge, Polarity, Volume]. -/
 def histidine_charge : ℤ := 1
@@ -85,7 +85,7 @@ def histidine_polarity : ℤ := 1
 def histidine_volume : ℤ := 1
 theorem histidine_trinary_phase :
     (histidine_charge, histidine_polarity, histidine_volume) = (1, 1, 1) := by
-  unfold histidine_charge histidine_polarity histidine_volume; norm_num
+  unfold histidine_charge histidine_polarity histidine_volume; decide
 
 /-- `Isoleucine` (I) trinary phase [Charge, Polarity, Volume]. -/
 def isoleucine_charge : ℤ := 0
@@ -93,7 +93,7 @@ def isoleucine_polarity : ℤ := -1
 def isoleucine_volume : ℤ := 1
 theorem isoleucine_trinary_phase :
     (isoleucine_charge, isoleucine_polarity, isoleucine_volume) = (0, -1, 1) := by
-  unfold isoleucine_charge isoleucine_polarity isoleucine_volume; norm_num
+  unfold isoleucine_charge isoleucine_polarity isoleucine_volume; decide
 
 /-- `Lysine` (K) trinary phase [Charge, Polarity, Volume]. -/
 def lysine_charge : ℤ := 1
@@ -101,7 +101,7 @@ def lysine_polarity : ℤ := 1
 def lysine_volume : ℤ := 1
 theorem lysine_trinary_phase :
     (lysine_charge, lysine_polarity, lysine_volume) = (1, 1, 1) := by
-  unfold lysine_charge lysine_polarity lysine_volume; norm_num
+  unfold lysine_charge lysine_polarity lysine_volume; decide
 
 /-- `Leucine` (L) trinary phase [Charge, Polarity, Volume]. -/
 def leucine_charge : ℤ := 0
@@ -109,7 +109,7 @@ def leucine_polarity : ℤ := -1
 def leucine_volume : ℤ := 1
 theorem leucine_trinary_phase :
     (leucine_charge, leucine_polarity, leucine_volume) = (0, -1, 1) := by
-  unfold leucine_charge leucine_polarity leucine_volume; norm_num
+  unfold leucine_charge leucine_polarity leucine_volume; decide
 
 /-- `Methionine` (M) trinary phase [Charge, Polarity, Volume]. -/
 def methionine_charge : ℤ := 0
@@ -117,7 +117,7 @@ def methionine_polarity : ℤ := -1
 def methionine_volume : ℤ := 1
 theorem methionine_trinary_phase :
     (methionine_charge, methionine_polarity, methionine_volume) = (0, -1, 1) := by
-  unfold methionine_charge methionine_polarity methionine_volume; norm_num
+  unfold methionine_charge methionine_polarity methionine_volume; decide
 
 /-- `Asparagine` (N) trinary phase [Charge, Polarity, Volume]. -/
 def asparagine_charge : ℤ := 0
@@ -125,7 +125,7 @@ def asparagine_polarity : ℤ := 1
 def asparagine_volume : ℤ := 0
 theorem asparagine_trinary_phase :
     (asparagine_charge, asparagine_polarity, asparagine_volume) = (0, 1, 0) := by
-  unfold asparagine_charge asparagine_polarity asparagine_volume; norm_num
+  unfold asparagine_charge asparagine_polarity asparagine_volume; decide
 
 /-- `Proline` (P) trinary phase [Charge, Polarity, Volume]. -/
 def proline_charge : ℤ := 0
@@ -133,7 +133,7 @@ def proline_polarity : ℤ := -1
 def proline_volume : ℤ := 0
 theorem proline_trinary_phase :
     (proline_charge, proline_polarity, proline_volume) = (0, -1, 0) := by
-  unfold proline_charge proline_polarity proline_volume; norm_num
+  unfold proline_charge proline_polarity proline_volume; decide
 
 /-- `Glutamine` (Q) trinary phase [Charge, Polarity, Volume]. -/
 def glutamine_charge : ℤ := 0
@@ -141,7 +141,7 @@ def glutamine_polarity : ℤ := 1
 def glutamine_volume : ℤ := 1
 theorem glutamine_trinary_phase :
     (glutamine_charge, glutamine_polarity, glutamine_volume) = (0, 1, 1) := by
-  unfold glutamine_charge glutamine_polarity glutamine_volume; norm_num
+  unfold glutamine_charge glutamine_polarity glutamine_volume; decide
 
 /-- `Arginine` (R) trinary phase [Charge, Polarity, Volume]. -/
 def arginine_charge : ℤ := 1
@@ -149,7 +149,7 @@ def arginine_polarity : ℤ := 1
 def arginine_volume : ℤ := 1
 theorem arginine_trinary_phase :
     (arginine_charge, arginine_polarity, arginine_volume) = (1, 1, 1) := by
-  unfold arginine_charge arginine_polarity arginine_volume; norm_num
+  unfold arginine_charge arginine_polarity arginine_volume; decide
 
 /-- `Serine` (S) trinary phase [Charge, Polarity, Volume]. -/
 def serine_charge : ℤ := 0
@@ -157,7 +157,7 @@ def serine_polarity : ℤ := 1
 def serine_volume : ℤ := -1
 theorem serine_trinary_phase :
     (serine_charge, serine_polarity, serine_volume) = (0, 1, -1) := by
-  unfold serine_charge serine_polarity serine_volume; norm_num
+  unfold serine_charge serine_polarity serine_volume; decide
 
 /-- `Threonine` (T) trinary phase [Charge, Polarity, Volume]. -/
 def threonine_charge : ℤ := 0
@@ -165,7 +165,7 @@ def threonine_polarity : ℤ := 1
 def threonine_volume : ℤ := 0
 theorem threonine_trinary_phase :
     (threonine_charge, threonine_polarity, threonine_volume) = (0, 1, 0) := by
-  unfold threonine_charge threonine_polarity threonine_volume; norm_num
+  unfold threonine_charge threonine_polarity threonine_volume; decide
 
 /-- `Valine` (V) trinary phase [Charge, Polarity, Volume]. -/
 def valine_charge : ℤ := 0
@@ -173,7 +173,7 @@ def valine_polarity : ℤ := -1
 def valine_volume : ℤ := 0
 theorem valine_trinary_phase :
     (valine_charge, valine_polarity, valine_volume) = (0, -1, 0) := by
-  unfold valine_charge valine_polarity valine_volume; norm_num
+  unfold valine_charge valine_polarity valine_volume; decide
 
 /-- `Tryptophan` (W) trinary phase [Charge, Polarity, Volume]. -/
 def tryptophan_charge : ℤ := 0
@@ -181,7 +181,7 @@ def tryptophan_polarity : ℤ := -1
 def tryptophan_volume : ℤ := 1
 theorem tryptophan_trinary_phase :
     (tryptophan_charge, tryptophan_polarity, tryptophan_volume) = (0, -1, 1) := by
-  unfold tryptophan_charge tryptophan_polarity tryptophan_volume; norm_num
+  unfold tryptophan_charge tryptophan_polarity tryptophan_volume; decide
 
 /-- `Tyrosine` (Y) trinary phase [Charge, Polarity, Volume]. -/
 def tyrosine_charge : ℤ := 0
@@ -189,7 +189,7 @@ def tyrosine_polarity : ℤ := 1
 def tyrosine_volume : ℤ := 1
 theorem tyrosine_trinary_phase :
     (tyrosine_charge, tyrosine_polarity, tyrosine_volume) = (0, 1, 1) := by
-  unfold tyrosine_charge tyrosine_polarity tyrosine_volume; norm_num
+  unfold tyrosine_charge tyrosine_polarity tyrosine_volume; decide
 
 /-- Bundle: 20 amino acids, trinary phases ⊆ 27-pattern genomic space. -/
 theorem protein_amino_acid_trinary_bundle :

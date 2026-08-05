@@ -16,7 +16,8 @@ theorem phi_morphogenetic_scaling_observable_count_pos : 0 < phi_morphogenetic_s
   unfold phi_morphogenetic_scaling_observable_count; decide
 
 theorem phi_morphogenetic_scaling_median_error_under_half_pct :
-    (0.01760779720633292 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.01760779720633292 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.01760779720633292 : ℝ) < (0.5 : ℝ))
 
 theorem phi_morphogenetic_scaling_bundle :
     phi_morphogenetic_scaling_observable_count = 289 ∧

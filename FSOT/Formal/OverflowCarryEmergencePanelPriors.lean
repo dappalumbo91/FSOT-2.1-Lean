@@ -16,7 +16,8 @@ theorem overflow_carry_emergence_panel_observable_count_pos : 0 < overflow_carry
   unfold overflow_carry_emergence_panel_observable_count; decide
 
 theorem overflow_carry_emergence_panel_median_error_under_half_pct :
-    (0.009504 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.009504 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.009504 : ℝ) < (0.5 : ℝ))
 
 theorem overflow_carry_emergence_panel_bundle :
     overflow_carry_emergence_panel_observable_count = 29 ∧

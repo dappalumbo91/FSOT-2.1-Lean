@@ -20,7 +20,8 @@ theorem math_generator_benchmark_formula_eval_observable_count_pos : 0 < math_ge
 
 theorem math_generator_benchmark_formula_eval_median_error_under_five_pct :
     math_generator_benchmark_formula_eval_median_error_pct < (5 : ℝ) := by
-  unfold math_generator_benchmark_formula_eval_median_error_pct; norm_num
+  unfold math_generator_benchmark_formula_eval_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem math_generator_benchmark_formula_eval_bundle :
     math_generator_benchmark_formula_eval_observable_count = 13 ∧

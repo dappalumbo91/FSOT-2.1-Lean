@@ -20,7 +20,8 @@ theorem tier_96_circuit_observable_count_pos : 0 < tier_96_circuit_observable_co
 
 theorem tier_96_circuit_median_error_under_five_pct :
     tier_96_circuit_median_error_pct < (5 : ℝ) := by
-  unfold tier_96_circuit_median_error_pct; norm_num
+  unfold tier_96_circuit_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem tier_96_circuit_bundle :
     tier_96_circuit_observable_count = 11 ∧

@@ -20,7 +20,8 @@ theorem certified_agent_qwen_observable_count_pos : 0 < certified_agent_qwen_obs
 
 theorem certified_agent_qwen_median_error_under_five_pct :
     certified_agent_qwen_median_error_pct < (5 : ℝ) := by
-  unfold certified_agent_qwen_median_error_pct; norm_num
+  unfold certified_agent_qwen_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem certified_agent_qwen_bundle :
     certified_agent_qwen_observable_count = 8 ∧

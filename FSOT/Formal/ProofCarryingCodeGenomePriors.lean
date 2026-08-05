@@ -16,7 +16,8 @@ theorem proof_carrying_code_genome_observable_count_pos : 0 < proof_carrying_cod
   unfold proof_carrying_code_genome_observable_count; decide
 
 theorem proof_carrying_code_genome_median_error_under_half_pct :
-    (0.0051685586271776884 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0051685586271776884 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0051685586271776884 : ℝ) < (0.5 : ℝ))
 
 theorem proof_carrying_code_genome_bundle :
     proof_carrying_code_genome_observable_count = 25 ∧

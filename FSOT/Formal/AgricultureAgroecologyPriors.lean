@@ -16,7 +16,8 @@ theorem agriculture_agroecology_observable_count_pos : 0 < agriculture_agroecolo
   unfold agriculture_agroecology_observable_count; decide
 
 theorem agriculture_agroecology_median_error_under_half_pct :
-    (0.018019024892929635 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.018019024892929635 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.018019024892929635 : ℝ) < (0.5 : ℝ))
 
 theorem agriculture_agroecology_bundle :
     agriculture_agroecology_observable_count = 276 ∧

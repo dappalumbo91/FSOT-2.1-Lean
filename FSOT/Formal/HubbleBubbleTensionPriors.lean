@@ -16,7 +16,8 @@ theorem hubble_bubble_tension_observable_count_pos : 0 < hubble_bubble_tension_o
   unfold hubble_bubble_tension_observable_count; decide
 
 theorem hubble_bubble_tension_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem hubble_bubble_tension_bundle :
     hubble_bubble_tension_observable_count = 24 ∧

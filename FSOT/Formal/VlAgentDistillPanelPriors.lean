@@ -16,7 +16,8 @@ theorem vl_agent_distill_panel_observable_count_pos : 0 < vl_agent_distill_panel
   unfold vl_agent_distill_panel_observable_count; decide
 
 theorem vl_agent_distill_panel_median_error_under_half_pct :
-    (0.022236 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022236 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022236 : ℝ) < (0.5 : ℝ))
 
 theorem vl_agent_distill_panel_bundle :
     vl_agent_distill_panel_observable_count = 24 ∧

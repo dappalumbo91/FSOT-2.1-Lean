@@ -16,7 +16,8 @@ theorem trinary_os_tier_e_observable_count_pos : 0 < trinary_os_tier_e_observabl
   unfold trinary_os_tier_e_observable_count; decide
 
 theorem trinary_os_tier_e_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem trinary_os_tier_e_bundle :
     trinary_os_tier_e_observable_count = 68 ∧

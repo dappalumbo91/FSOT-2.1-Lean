@@ -16,7 +16,8 @@ theorem actuarial_science_panel_observable_count_pos : 0 < actuarial_science_pan
   unfold actuarial_science_panel_observable_count; decide
 
 theorem actuarial_science_panel_median_error_under_half_pct :
-    (0.02261 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.02261 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.02261 : ℝ) < (0.5 : ℝ))
 
 theorem actuarial_science_panel_bundle :
     actuarial_science_panel_observable_count = 60 ∧

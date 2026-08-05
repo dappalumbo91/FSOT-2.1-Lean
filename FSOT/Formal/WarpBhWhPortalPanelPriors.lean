@@ -16,7 +16,8 @@ theorem warp_bh_wh_portal_panel_observable_count_pos : 0 < warp_bh_wh_portal_pan
   unfold warp_bh_wh_portal_panel_observable_count; decide
 
 theorem warp_bh_wh_portal_panel_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem warp_bh_wh_portal_panel_bundle :
     warp_bh_wh_portal_panel_observable_count = 24 ∧

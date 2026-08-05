@@ -16,7 +16,8 @@ theorem uap_war_gov_release_panel_observable_count_pos : 0 < uap_war_gov_release
   unfold uap_war_gov_release_panel_observable_count; decide
 
 theorem uap_war_gov_release_panel_median_error_under_half_pct :
-    (0.008488 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.008488 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.008488 : ℝ) < (0.5 : ℝ))
 
 theorem uap_war_gov_release_panel_bundle :
     uap_war_gov_release_panel_observable_count = 542 ∧

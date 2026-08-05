@@ -16,7 +16,8 @@ theorem z164_distant_island_prereg_scaffold_observable_count_pos : 0 < z164_dist
   unfold z164_distant_island_prereg_scaffold_observable_count; decide
 
 theorem z164_distant_island_prereg_scaffold_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem z164_distant_island_prereg_scaffold_bundle :
     z164_distant_island_prereg_scaffold_observable_count = 24 ∧

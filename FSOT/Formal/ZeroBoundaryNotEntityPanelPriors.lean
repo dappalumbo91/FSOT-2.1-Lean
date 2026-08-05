@@ -16,7 +16,8 @@ theorem zero_boundary_not_entity_panel_observable_count_pos : 0 < zero_boundary_
   unfold zero_boundary_not_entity_panel_observable_count; decide
 
 theorem zero_boundary_not_entity_panel_median_error_under_half_pct :
-    (0.020055 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.020055 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.020055 : ℝ) < (0.5 : ℝ))
 
 theorem zero_boundary_not_entity_panel_bundle :
     zero_boundary_not_entity_panel_observable_count = 24 ∧

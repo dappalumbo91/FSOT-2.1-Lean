@@ -20,7 +20,8 @@ theorem biological_cuda_physarum_observable_count_pos : 0 < biological_cuda_phys
 
 theorem biological_cuda_physarum_median_error_under_five_pct :
     biological_cuda_physarum_median_error_pct < (5 : ℝ) := by
-  unfold biological_cuda_physarum_median_error_pct; norm_num
+  unfold biological_cuda_physarum_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem biological_cuda_physarum_bundle :
     biological_cuda_physarum_observable_count = 35 ∧

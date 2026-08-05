@@ -16,7 +16,8 @@ theorem stellar_multiplicity_live_deep_observable_count_pos : 0 < stellar_multip
   unfold stellar_multiplicity_live_deep_observable_count; decide
 
 theorem stellar_multiplicity_live_deep_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem stellar_multiplicity_live_deep_bundle :
     stellar_multiplicity_live_deep_observable_count = 69 ∧

@@ -16,7 +16,8 @@ theorem acoustic_resonance_materials_observable_count_pos : 0 < acoustic_resonan
   unfold acoustic_resonance_materials_observable_count; decide
 
 theorem acoustic_resonance_materials_median_error_under_half_pct :
-    (0.008381497018411083 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.008381497018411083 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.008381497018411083 : ℝ) < (0.5 : ℝ))
 
 theorem acoustic_resonance_materials_bundle :
     acoustic_resonance_materials_observable_count = 29 ∧

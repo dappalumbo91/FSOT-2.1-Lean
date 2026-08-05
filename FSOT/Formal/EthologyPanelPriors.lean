@@ -16,7 +16,8 @@ theorem ethology_panel_observable_count_pos : 0 < ethology_panel_observable_coun
   unfold ethology_panel_observable_count; decide
 
 theorem ethology_panel_median_error_under_half_pct :
-    (0.006607 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.006607 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.006607 : ℝ) < (0.5 : ℝ))
 
 theorem ethology_panel_bundle :
     ethology_panel_observable_count = 100 ∧

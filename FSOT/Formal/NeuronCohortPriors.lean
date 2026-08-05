@@ -34,29 +34,45 @@ def neurolab_brain_component_count : ℕ := 10
 theorem allen_cohort_cell_count_pos : 0 < allen_cohort_cell_count := by
   unfold allen_cohort_cell_count; decide
 
-theorem allen_cohort_fi_median_rel_err_lt_thirty_pct : allen_cohort_fi_median_rel_err < (0.30 : ℝ) := by
-  unfold allen_cohort_fi_median_rel_err; norm_num
+theorem allen_cohort_fi_median_rel_err_lt_thirty_pct :
+    allen_cohort_fi_median_rel_err < (0.30 : ℝ) := by
+  unfold allen_cohort_fi_median_rel_err
+  exact (by norm_num : (0.24631729333045121  : ℝ) < (0.30 : ℝ))
 
-theorem allen_cohort_fi_pearson_r_gt_fifty_five : (0.55 : ℝ) < allen_cohort_fi_pearson_r := by
-  unfold allen_cohort_fi_pearson_r; norm_num
+theorem allen_cohort_fi_pearson_r_gt_fifty_five :
+    (0.55 : ℝ) < allen_cohort_fi_pearson_r := by
+  unfold allen_cohort_fi_pearson_r
+  exact (by norm_num : (0.55 : ℝ) < (0.608876904981479 : ℝ))
 
-theorem hero_certified_fi_mean_rel_err_lt_fifteen_pct : hero_certified_fi_mean_rel_err < (0.15 : ℝ) := by
-  unfold hero_certified_fi_mean_rel_err; norm_num
+theorem hero_certified_fi_mean_rel_err_lt_fifteen_pct :
+    hero_certified_fi_mean_rel_err < (0.15 : ℝ) := by
+  unfold hero_certified_fi_mean_rel_err
+  exact (by norm_num : (0.07002728543379658  : ℝ) < (0.15 : ℝ))
 
-theorem hero_certified_verifier_confidence_gt_ninety_pct : (0.90 : ℝ) < hero_certified_verifier_confidence := by
-  unfold hero_certified_verifier_confidence; norm_num
+theorem hero_certified_verifier_confidence_gt_ninety_pct :
+    (0.90 : ℝ) < hero_certified_verifier_confidence := by
+  unfold hero_certified_verifier_confidence
+  exact (by norm_num : (0.90 : ℝ) < (0.9598886696481669 : ℝ))
 
-theorem cohort_canonical_scalar_min_positive : (0 : ℝ) < cohort_canonical_scalar_min := by
-  unfold cohort_canonical_scalar_min; norm_num
+theorem cohort_canonical_scalar_min_positive :
+    (0 : ℝ) < cohort_canonical_scalar_min := by
+  unfold cohort_canonical_scalar_min
+  exact (by norm_num : (0 : ℝ) < (0.25241247006708056  : ℝ))
 
-theorem hero_canonical_bridge_mean_rel_err_lt_twelve_pct : hero_canonical_bridge_mean_rel_err < (0.12 : ℝ) := by
-  unfold hero_canonical_bridge_mean_rel_err; norm_num
+theorem hero_canonical_bridge_mean_rel_err_lt_twelve_pct :
+    hero_canonical_bridge_mean_rel_err < (0.12 : ℝ) := by
+  unfold hero_canonical_bridge_mean_rel_err
+  exact (by norm_num : (0.07354375821147667  : ℝ) < (0.12 : ℝ))
 
-theorem hero_canonical_bridge_delta_lt_five_pct : hero_canonical_bridge_delta < (0.05 : ℝ) := by
-  unfold hero_canonical_bridge_delta; norm_num
+theorem hero_canonical_bridge_delta_lt_five_pct :
+    hero_canonical_bridge_delta < (0.05 : ℝ) := by
+  unfold hero_canonical_bridge_delta
+  exact (by norm_num : (0.0035164727776800936  : ℝ) < (0.05 : ℝ))
 
-theorem canonical_bridge_scale_gt_one : (1 : ℝ) < canonical_bridge_scale := by
-  unfold canonical_bridge_scale; norm_num
+theorem canonical_bridge_scale_gt_one :
+    (1 : ℝ) < canonical_bridge_scale := by
+  unfold canonical_bridge_scale
+  exact (by norm_num : (1 : ℝ) < (1.1099062765752818 : ℝ))
 
 theorem neurolab_smiles_mapped_records_pos : 0 < neurolab_smiles_mapped_records := by
   unfold neurolab_smiles_mapped_records; decide

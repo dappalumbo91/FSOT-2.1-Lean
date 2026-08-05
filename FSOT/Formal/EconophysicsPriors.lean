@@ -16,7 +16,8 @@ theorem econophysics_observable_count_pos : 0 < econophysics_observable_count :=
   unfold econophysics_observable_count; decide
 
 theorem econophysics_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem econophysics_bundle :
     econophysics_observable_count = 24 ∧

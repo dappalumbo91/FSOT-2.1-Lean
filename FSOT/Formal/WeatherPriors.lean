@@ -16,8 +16,10 @@ def weather_D_eff : ℕ := 15
 def weather_S_min : ℝ := (0.364542 : ℝ)
 def weather_S_mean : ℝ := (0.48326775000000016 : ℝ)
 
-theorem weather_S_min_positive : (0 : ℝ) < weather_S_min := by
-  unfold weather_S_min; norm_num
+theorem weather_S_min_positive :
+    (0 : ℝ) < weather_S_min := by
+  unfold weather_S_min
+  exact (by norm_num : (0 : ℝ) < (0.364542  : ℝ))
 
 theorem weather_hour_count_pos : 0 < weather_hour_count := by
   unfold weather_hour_count; decide

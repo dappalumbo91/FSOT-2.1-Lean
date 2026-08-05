@@ -20,7 +20,8 @@ theorem formula_corpus_cnc_observable_count_pos : 0 < formula_corpus_cnc_observa
 
 theorem formula_corpus_cnc_median_error_under_five_pct :
     formula_corpus_cnc_median_error_pct < (5 : ℝ) := by
-  unfold formula_corpus_cnc_median_error_pct; norm_num
+  unfold formula_corpus_cnc_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem formula_corpus_cnc_bundle :
     formula_corpus_cnc_observable_count = 10 ∧

@@ -16,7 +16,8 @@ theorem higgs_mass_observable_count_pos : 0 < higgs_mass_observable_count := by
   unfold higgs_mass_observable_count; decide
 
 theorem higgs_mass_median_error_under_half_pct :
-    (0.012112816039879785 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.012112816039879785 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.012112816039879785 : ℝ) < (0.5 : ℝ))
 
 theorem higgs_mass_bundle :
     higgs_mass_observable_count = 24 ∧

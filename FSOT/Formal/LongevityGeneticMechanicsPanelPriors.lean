@@ -20,7 +20,8 @@ theorem longevity_genetic_mechanics_observable_count_pos : 0 < longevity_genetic
 
 theorem longevity_genetic_mechanics_median_error_under_five_pct :
     longevity_genetic_mechanics_median_error_pct < (5 : ℝ) := by
-  unfold longevity_genetic_mechanics_median_error_pct; norm_num
+  unfold longevity_genetic_mechanics_median_error_pct
+  exact (by norm_num : (0.022236  : ℝ) < (5 : ℝ))
 
 theorem longevity_genetic_mechanics_bundle :
     longevity_genetic_mechanics_observable_count = 35 ∧

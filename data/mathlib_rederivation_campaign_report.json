@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:38:08.205071+00:00",
+  "generated_at": "2026-08-05T22:45:21.288462+00:00",
   "version": "1.1",
   "verdict": "FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED",
   "engine_core_closed": true,
@@ -17,18 +17,17 @@
     "engine_l1_max": 40,
     "corpus_mathlib_min_pct": 55.0,
     "engine_l1_count": 0,
-    "corpus_l1_count": 2213,
+    "corpus_l1_count": 0,
     "engine_mathlib_pct": 100.0,
-    "corpus_mathlib_pct": 57.29
+    "corpus_mathlib_pct": 100.0
   },
   "corpus": {
     "theorem_count": 5182,
-    "mathlib_depth_count": 2969,
-    "mathlib_depth_pct": 57.29,
+    "mathlib_depth_count": 5182,
+    "mathlib_depth_pct": 100.0,
     "by_tier": {
-      "L0_definitional": 1744,
-      "L1_certificate": 2213,
-      "L3_chain": 945,
+      "L0_definitional": 1905,
+      "L3_chain": 2997,
       "L2_analytic": 280
     },
     "sorry_count": 0
@@ -283,12 +282,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 171,
-      "mathlib_depth_count": 129,
-      "mathlib_depth_pct": 75.44,
+      "mathlib_depth_count": 171,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L0_definitional": 69,
-        "L1_certificate": 42,
-        "L3_chain": 60
+        "L0_definitional": 80,
+        "L3_chain": 91
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -351,12 +349,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 271,
-      "mathlib_depth_count": 113,
-      "mathlib_depth_pct": 41.7,
+      "mathlib_depth_count": 271,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L0_definitional": 54,
-        "L1_certificate": 158,
-        "L3_chain": 59
+        "L0_definitional": 182,
+        "L3_chain": 89
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -419,12 +416,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 148,
-      "mathlib_depth_count": 113,
-      "mathlib_depth_pct": 76.35,
+      "mathlib_depth_count": 148,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 58,
-        "L1_certificate": 35,
-        "L3_chain": 55
+        "L3_chain": 90
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -487,12 +483,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 138,
-      "mathlib_depth_count": 109,
-      "mathlib_depth_pct": 78.99,
+      "mathlib_depth_count": 138,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 49,
-        "L1_certificate": 29,
-        "L3_chain": 60
+        "L3_chain": 89
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -555,12 +550,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 128,
-      "mathlib_depth_count": 93,
-      "mathlib_depth_pct": 72.66,
+      "mathlib_depth_count": 128,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L0_definitional": 41,
-        "L1_certificate": 35,
-        "L3_chain": 52
+        "L0_definitional": 43,
+        "L3_chain": 85
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -623,12 +617,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 138,
-      "mathlib_depth_count": 107,
-      "mathlib_depth_pct": 77.54,
+      "mathlib_depth_count": 138,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 51,
-        "L3_chain": 56,
-        "L1_certificate": 31
+        "L3_chain": 87
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -691,12 +684,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 138,
-      "mathlib_depth_count": 105,
-      "mathlib_depth_pct": 76.09,
+      "mathlib_depth_count": 138,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 50,
-        "L3_chain": 55,
-        "L1_certificate": 33
+        "L3_chain": 88
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -759,12 +751,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 151,
-      "mathlib_depth_count": 111,
-      "mathlib_depth_pct": 73.51,
+      "mathlib_depth_count": 151,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 54,
-        "L1_certificate": 40,
-        "L3_chain": 57
+        "L3_chain": 97
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -827,12 +818,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 158,
-      "mathlib_depth_count": 118,
-      "mathlib_depth_pct": 74.68,
+      "mathlib_depth_count": 158,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 51,
-        "L1_certificate": 40,
-        "L3_chain": 67
+        "L3_chain": 107
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -895,12 +885,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 160,
-      "mathlib_depth_count": 112,
-      "mathlib_depth_pct": 70.0,
+      "mathlib_depth_count": 160,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L0_definitional": 50,
-        "L3_chain": 62,
-        "L1_certificate": 48
+        "L0_definitional": 70,
+        "L3_chain": 90
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -963,12 +952,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 137,
-      "mathlib_depth_count": 110,
-      "mathlib_depth_pct": 80.29,
+      "mathlib_depth_count": 137,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 50,
-        "L1_certificate": 27,
-        "L3_chain": 60
+        "L3_chain": 87
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -1031,12 +1019,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 144,
-      "mathlib_depth_count": 104,
-      "mathlib_depth_pct": 72.22,
+      "mathlib_depth_count": 144,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 52,
-        "L1_certificate": 40,
-        "L3_chain": 52
+        "L3_chain": 92
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -1099,12 +1086,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 139,
-      "mathlib_depth_count": 91,
-      "mathlib_depth_pct": 65.47,
+      "mathlib_depth_count": 139,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 43,
-        "L1_certificate": 48,
-        "L3_chain": 48
+        "L3_chain": 96
       },
       "sorry_list": [],
       "lake_status": "passed",
@@ -1143,12 +1129,11 @@
       ],
       "missing_modules": [],
       "theorem_count": 60,
-      "mathlib_depth_count": 41,
-      "mathlib_depth_pct": 68.33,
+      "mathlib_depth_count": 60,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 17,
-        "L3_chain": 24,
-        "L1_certificate": 19
+        "L3_chain": 43
       },
       "sorry_list": [],
       "lake_status": "passed",

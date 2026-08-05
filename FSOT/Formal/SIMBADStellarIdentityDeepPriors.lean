@@ -16,7 +16,8 @@ theorem simbad_stellar_identity_deep_observable_count_pos : 0 < simbad_stellar_i
   unfold simbad_stellar_identity_deep_observable_count; decide
 
 theorem simbad_stellar_identity_deep_median_error_under_half_pct :
-    (0.022461 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022461 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022461 : ℝ) < (0.5 : ℝ))
 
 theorem simbad_stellar_identity_deep_bundle :
     simbad_stellar_identity_deep_observable_count = 520 ∧

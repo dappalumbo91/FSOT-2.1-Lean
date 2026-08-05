@@ -16,7 +16,8 @@ theorem marine_biology_observable_count_pos : 0 < marine_biology_observable_coun
   unfold marine_biology_observable_count; decide
 
 theorem marine_biology_median_error_under_half_pct :
-    (0.022236250385192644 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022236250385192644 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022236250385192644 : ℝ) < (0.5 : ℝ))
 
 theorem marine_biology_bundle :
     marine_biology_observable_count = 540 ∧

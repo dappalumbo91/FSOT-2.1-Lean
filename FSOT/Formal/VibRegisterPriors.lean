@@ -17,15 +17,20 @@ def vibra_pattern_stability : ℝ := (0.7662378870755164 : ℝ)
 def vibra_avg_S_mean : ℝ := (0.4744906315011612 : ℝ)
 def vibra_mc_prob_non_decrease_cp5 : ℝ := (1.0 : ℝ)
 
-theorem vibra_pattern_stability_positive : (0 : ℝ) < vibra_pattern_stability := by
-  unfold vibra_pattern_stability; norm_num
+theorem vibra_pattern_stability_positive :
+    (0 : ℝ) < vibra_pattern_stability := by
+  unfold vibra_pattern_stability
+  exact (by norm_num : (0 : ℝ) < (0.7662378870755164  : ℝ))
 
-theorem vibra_avg_S_mean_positive : (0 : ℝ) < vibra_avg_S_mean := by
-  unfold vibra_avg_S_mean; norm_num
+theorem vibra_avg_S_mean_positive :
+    (0 : ℝ) < vibra_avg_S_mean := by
+  unfold vibra_avg_S_mean
+  exact (by norm_num : (0 : ℝ) < (0.4744906315011612  : ℝ))
 
 theorem vibra_mc_prob_non_decrease_cp5_le_one :
     vibra_mc_prob_non_decrease_cp5 ≤ (1 : ℝ) := by
-  unfold vibra_mc_prob_non_decrease_cp5; norm_num
+  unfold vibra_mc_prob_non_decrease_cp5
+  exact (by norm_num : (1.0 : ℝ) ≤ (1 : ℝ))
 
 /-- Bundle: VibraFSOT register at D_eff=11 with positive S and MC observer-stability alignment. -/
 theorem vibra_register_bundle :

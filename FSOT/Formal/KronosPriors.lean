@@ -20,12 +20,15 @@ def kronos_record_fractional_uncertainty : ℝ := (5.5e-19 : ℝ)
 theorem kronos_run_count_pos : 0 < kronos_run_count := by
   unfold kronos_run_count; decide
 
-theorem kronos_best_fractional_error_positive : (0 : ℝ) < kronos_best_fractional_error := by
-  unfold kronos_best_fractional_error; norm_num
+theorem kronos_best_fractional_error_positive :
+    (0 : ℝ) < kronos_best_fractional_error := by
+  unfold kronos_best_fractional_error
+  exact (by norm_num : (0 : ℝ) < (1.644295e-07  : ℝ))
 
 theorem kronos_record_fractional_uncertainty_positive :
     (0 : ℝ) < kronos_record_fractional_uncertainty := by
-  unfold kronos_record_fractional_uncertainty; norm_num
+  unfold kronos_record_fractional_uncertainty
+  exact (by norm_num : (0 : ℝ) < (5.5e-19  : ℝ))
 
 /-- Bundle: Kronos metrology runs with medical-domain observed-sign proxy. -/
 theorem kronos_metrology_bundle :

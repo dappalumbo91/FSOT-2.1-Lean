@@ -16,7 +16,8 @@ theorem igem_parts_expanded_observable_count_pos : 0 < igem_parts_expanded_obser
   unfold igem_parts_expanded_observable_count; decide
 
 theorem igem_parts_expanded_median_error_under_half_pct :
-    (5.882356401581393e-05 : ℝ) < (0.5 : ℝ) := by norm_num
+    (5.882356401581393e-05 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (5.882356401581393e-05 : ℝ) < (0.5 : ℝ))
 
 theorem igem_parts_expanded_bundle :
     igem_parts_expanded_observable_count = 111 ∧

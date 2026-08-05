@@ -20,7 +20,8 @@ theorem linguistics_formal_observable_count_pos : 0 < linguistics_formal_observa
 
 theorem linguistics_formal_median_error_under_five_pct :
     linguistics_formal_median_error_pct < (5 : ℝ) := by
-  unfold linguistics_formal_median_error_pct; norm_num
+  unfold linguistics_formal_median_error_pct
+  exact (by norm_num : (0.0013504254899468224  : ℝ) < (5 : ℝ))
 
 theorem linguistics_formal_bundle :
     linguistics_formal_observable_count = 10 ∧

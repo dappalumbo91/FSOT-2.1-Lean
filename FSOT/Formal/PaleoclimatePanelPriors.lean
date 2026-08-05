@@ -16,7 +16,8 @@ theorem paleoclimate_panel_observable_count_pos : 0 < paleoclimate_panel_observa
   unfold paleoclimate_panel_observable_count; decide
 
 theorem paleoclimate_panel_median_error_under_half_pct :
-    (0.006006 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.006006 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.006006 : ℝ) < (0.5 : ℝ))
 
 theorem paleoclimate_panel_bundle :
     paleoclimate_panel_observable_count = 20 ∧

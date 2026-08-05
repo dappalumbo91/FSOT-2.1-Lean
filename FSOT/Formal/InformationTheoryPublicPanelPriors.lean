@@ -16,7 +16,8 @@ theorem information_theory_public_panel_observable_count_pos : 0 < information_t
   unfold information_theory_public_panel_observable_count; decide
 
 theorem information_theory_public_panel_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem information_theory_public_panel_bundle :
     information_theory_public_panel_observable_count = 24 ∧

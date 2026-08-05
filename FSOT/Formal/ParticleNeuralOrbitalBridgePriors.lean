@@ -16,7 +16,8 @@ theorem particle_neural_orbital_bridge_observable_count_pos : 0 < particle_neura
   unfold particle_neural_orbital_bridge_observable_count; decide
 
 theorem particle_neural_orbital_bridge_median_error_under_half_pct :
-    (0.03326447040434832 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.03326447040434832 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.03326447040434832 : ℝ) < (0.5 : ℝ))
 
 theorem particle_neural_orbital_bridge_bundle :
     particle_neural_orbital_bridge_observable_count = 48 ∧

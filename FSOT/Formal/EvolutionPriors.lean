@@ -16,8 +16,10 @@ def evolution_operon_count : ℕ := 13
 def evolution_best_fitness : ℝ := (58.493466 : ℝ)
 def evolution_biological_capacity : ℝ := (8002.5 : ℝ)
 
-theorem evolution_fitness_positive : (0 : ℝ) < evolution_best_fitness := by
-  unfold evolution_best_fitness; norm_num
+theorem evolution_fitness_positive :
+    (0 : ℝ) < evolution_best_fitness := by
+  unfold evolution_best_fitness
+  exact (by norm_num : (0 : ℝ) < (58.493466  : ℝ))
 
 theorem evolution_operon_count_pos : 0 < evolution_operon_count := by
   unfold evolution_operon_count; decide

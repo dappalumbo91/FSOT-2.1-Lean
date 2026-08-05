@@ -16,7 +16,8 @@ theorem epidemiology_panel_observable_count_pos : 0 < epidemiology_panel_observa
   unfold epidemiology_panel_observable_count; decide
 
 theorem epidemiology_panel_median_error_under_half_pct :
-    (0.015311 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.015311 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.015311 : ℝ) < (0.5 : ℝ))
 
 theorem epidemiology_panel_bundle :
     epidemiology_panel_observable_count = 24 ∧

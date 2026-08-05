@@ -34,7 +34,8 @@ theorem higgs_branching_median_error_under_half_pct :
 
 theorem higgs_branching_max_error_under_five_pct :
     higgs_branching_max_error_pct < (5 : ℝ) := by
-  unfold higgs_branching_max_error_pct; norm_num
+  unfold higgs_branching_max_error_pct
+  exact (by norm_num : (4.232801452006084  : ℝ) < (5 : ℝ))
 
 /-- Bundle: Higgs BR from fsot_compute + thesis wave8 with higgs-domain sign proxy. -/
 theorem higgs_branching_bundle :

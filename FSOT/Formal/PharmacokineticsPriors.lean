@@ -16,7 +16,8 @@ theorem pharmacokinetics_observable_count_pos : 0 < pharmacokinetics_observable_
   unfold pharmacokinetics_observable_count; decide
 
 theorem pharmacokinetics_median_error_under_half_pct :
-    (0.00241237063663613 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.00241237063663613 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.00241237063663613 : ℝ) < (0.5 : ℝ))
 
 theorem pharmacokinetics_bundle :
     pharmacokinetics_observable_count = 56 ∧

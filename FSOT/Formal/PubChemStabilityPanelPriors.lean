@@ -16,7 +16,8 @@ theorem pubchem_stability_panel_observable_count_pos : 0 < pubchem_stability_pan
   unfold pubchem_stability_panel_observable_count; decide
 
 theorem pubchem_stability_panel_median_error_under_half_pct :
-    (0.0024238898584426276 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0024238898584426276 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0024238898584426276 : ℝ) < (0.5 : ℝ))
 
 theorem pubchem_stability_panel_bundle :
     pubchem_stability_panel_observable_count = 59 ∧

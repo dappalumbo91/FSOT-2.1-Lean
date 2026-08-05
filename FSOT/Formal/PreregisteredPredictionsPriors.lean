@@ -16,7 +16,8 @@ theorem preregistered_predictions_observable_count_pos : 0 < preregistered_predi
   unfold preregistered_predictions_observable_count; decide
 
 theorem preregistered_predictions_median_error_under_half_pct :
-    (0.020098237848408945 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.020098237848408945 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.020098237848408945 : ℝ) < (0.5 : ℝ))
 
 theorem preregistered_predictions_bundle :
     preregistered_predictions_observable_count = 27 ∧

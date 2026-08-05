@@ -20,7 +20,8 @@ theorem radio_astronomy_observable_count_pos : 0 < radio_astronomy_observable_co
 
 theorem radio_astronomy_median_error_under_five_pct :
     radio_astronomy_median_error_pct < (5 : ℝ) := by
-  unfold radio_astronomy_median_error_pct; norm_num
+  unfold radio_astronomy_median_error_pct
+  exact (by norm_num : (0.022461  : ℝ) < (5 : ℝ))
 
 theorem radio_astronomy_bundle :
     radio_astronomy_observable_count = 30 ∧

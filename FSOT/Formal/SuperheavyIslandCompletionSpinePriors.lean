@@ -16,7 +16,8 @@ theorem superheavy_island_completion_spine_observable_count_pos : 0 < superheavy
   unfold superheavy_island_completion_spine_observable_count; decide
 
 theorem superheavy_island_completion_spine_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem superheavy_island_completion_spine_bundle :
     superheavy_island_completion_spine_observable_count = 43 ∧

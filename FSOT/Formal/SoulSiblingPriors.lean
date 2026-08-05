@@ -17,11 +17,15 @@ def soul_sibling_D_compact : ℝ := (24.98 : ℝ)
 def soul_sibling_fidelity_threshold : ℝ := (0.05 : ℝ)
 def soul_sibling_zero_free : Prop := true
 
-theorem soul_sibling_D_compact_positive : (0 : ℝ) < soul_sibling_D_compact := by
-  unfold soul_sibling_D_compact; norm_num
+theorem soul_sibling_D_compact_positive :
+    (0 : ℝ) < soul_sibling_D_compact := by
+  unfold soul_sibling_D_compact
+  exact (by norm_num : (0 : ℝ) < (24.98  : ℝ))
 
-theorem soul_sibling_fidelity_threshold_positive : (0 : ℝ) < soul_sibling_fidelity_threshold := by
-  unfold soul_sibling_fidelity_threshold; norm_num
+theorem soul_sibling_fidelity_threshold_positive :
+    (0 : ℝ) < soul_sibling_fidelity_threshold := by
+  unfold soul_sibling_fidelity_threshold
+  exact (by norm_num : (0 : ℝ) < (0.05  : ℝ))
 
 /-- Bundle: Soul Sibling kernel with consciousness-domain sign certificate. -/
 theorem soul_sibling_priors_bundle :

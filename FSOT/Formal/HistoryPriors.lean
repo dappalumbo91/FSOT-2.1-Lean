@@ -16,7 +16,8 @@ theorem history_observable_count_pos : 0 < history_observable_count := by
   unfold history_observable_count; decide
 
 theorem history_median_error_under_half_pct :
-    (0.019504399572477397 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.019504399572477397 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.019504399572477397 : ℝ) < (0.5 : ℝ))
 
 theorem history_bundle :
     history_observable_count = 170 ∧

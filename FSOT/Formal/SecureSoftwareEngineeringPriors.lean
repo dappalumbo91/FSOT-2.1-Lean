@@ -16,7 +16,8 @@ theorem secure_software_engineering_observable_count_pos : 0 < secure_software_e
   unfold secure_software_engineering_observable_count; decide
 
 theorem secure_software_engineering_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem secure_software_engineering_bundle :
     secure_software_engineering_observable_count = 59 ∧

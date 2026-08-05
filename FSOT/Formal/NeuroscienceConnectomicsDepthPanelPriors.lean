@@ -16,7 +16,8 @@ theorem neuroscience_connectomics_depth_panel_observable_count_pos : 0 < neurosc
   unfold neuroscience_connectomics_depth_panel_observable_count; decide
 
 theorem neuroscience_connectomics_depth_panel_median_error_under_half_pct :
-    (0.0201195 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0201195 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0201195 : ℝ) < (0.5 : ℝ))
 
 theorem neuroscience_connectomics_depth_panel_bundle :
     neuroscience_connectomics_depth_panel_observable_count = 27 ∧

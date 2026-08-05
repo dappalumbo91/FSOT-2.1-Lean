@@ -16,7 +16,8 @@ theorem crc_handbook_properties_observable_count_pos : 0 < crc_handbook_properti
   unfold crc_handbook_properties_observable_count; decide
 
 theorem crc_handbook_properties_median_error_under_half_pct :
-    (0.026922 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.026922 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.026922 : ℝ) < (0.5 : ℝ))
 
 theorem crc_handbook_properties_bundle :
     crc_handbook_properties_observable_count = 391 ∧

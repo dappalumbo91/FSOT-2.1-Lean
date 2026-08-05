@@ -20,7 +20,8 @@ theorem neutrino_physics_observable_count_pos : 0 < neutrino_physics_observable_
 
 theorem neutrino_physics_median_error_under_five_pct :
     neutrino_physics_median_error_pct < (5 : ℝ) := by
-  unfold neutrino_physics_median_error_pct; norm_num
+  unfold neutrino_physics_median_error_pct
+  exact (by norm_num : (0.009504  : ℝ) < (5 : ℝ))
 
 theorem neutrino_physics_bundle :
     neutrino_physics_observable_count = 20 ∧

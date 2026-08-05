@@ -16,7 +16,8 @@ theorem stsci_mast_telescope_panel_observable_count_pos : 0 < stsci_mast_telesco
   unfold stsci_mast_telescope_panel_observable_count; decide
 
 theorem stsci_mast_telescope_panel_median_error_under_half_pct :
-    (0.022461 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022461 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022461 : ℝ) < (0.5 : ℝ))
 
 theorem stsci_mast_telescope_panel_bundle :
     stsci_mast_telescope_panel_observable_count = 377 ∧

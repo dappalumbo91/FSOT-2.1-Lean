@@ -16,7 +16,8 @@ theorem creative_arts_math_spine_observable_count_pos : 0 < creative_arts_math_s
   unfold creative_arts_math_spine_observable_count; decide
 
 theorem creative_arts_math_spine_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem creative_arts_math_spine_bundle :
     creative_arts_math_spine_observable_count = 56 ∧

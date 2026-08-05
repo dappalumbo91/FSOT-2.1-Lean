@@ -16,7 +16,8 @@ theorem element_synthesis_condition_scaffold_observable_count_pos : 0 < element_
   unfold element_synthesis_condition_scaffold_observable_count; decide
 
 theorem element_synthesis_condition_scaffold_median_error_under_half_pct :
-    (0.000787 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.000787 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.000787 : ℝ) < (0.5 : ℝ))
 
 theorem element_synthesis_condition_scaffold_bundle :
     element_synthesis_condition_scaffold_observable_count = 45 ∧

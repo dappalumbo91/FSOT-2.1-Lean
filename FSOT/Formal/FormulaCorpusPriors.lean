@@ -26,11 +26,11 @@ theorem formula_corpus_matched_le_total :
 
 theorem formula_corpus_target_le_tolerable :
     formula_corpus_within_target_2pct ≤ formula_corpus_within_tolerable_5pct := by
-  unfold formula_corpus_within_target_2pct formula_corpus_within_tolerable_5pct; norm_num
+  unfold formula_corpus_within_target_2pct formula_corpus_within_tolerable_5pct; decide
 
 theorem formula_corpus_tolerable_le_total :
     formula_corpus_within_tolerable_5pct ≤ formula_corpus_records_total := by
-  unfold formula_corpus_within_tolerable_5pct formula_corpus_records_total; norm_num
+  unfold formula_corpus_within_tolerable_5pct formula_corpus_records_total; decide
 
 /-- Bundle: 7941 FSOT-derived formulas checked against measured observables. -/
 theorem formula_corpus_strict_empirical_bundle :

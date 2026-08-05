@@ -16,7 +16,8 @@ theorem founding_white_dwarf_cooling_panel_observable_count_pos : 0 < founding_w
   unfold founding_white_dwarf_cooling_panel_observable_count; decide
 
 theorem founding_white_dwarf_cooling_panel_median_error_under_half_pct :
-    (0.022461 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022461 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022461 : ℝ) < (0.5 : ℝ))
 
 theorem founding_white_dwarf_cooling_panel_bundle :
     founding_white_dwarf_cooling_panel_observable_count = 24 ∧

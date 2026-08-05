@@ -20,7 +20,8 @@ theorem mathematics_computational_observable_count_pos : 0 < mathematics_computa
 
 theorem mathematics_computational_median_error_under_five_pct :
     mathematics_computational_median_error_pct < (5 : ℝ) := by
-  unfold mathematics_computational_median_error_pct; norm_num
+  unfold mathematics_computational_median_error_pct
+  exact (by norm_num : (1.4090183367935627e-14  : ℝ) < (5 : ℝ))
 
 theorem mathematics_computational_bundle :
     mathematics_computational_observable_count = 20 ∧

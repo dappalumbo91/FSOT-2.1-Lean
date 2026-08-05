@@ -20,7 +20,8 @@ theorem igem_live_fasta_observable_count_pos : 0 < igem_live_fasta_observable_co
 
 theorem igem_live_fasta_median_error_under_five_pct :
     igem_live_fasta_median_error_pct < (5 : ℝ) := by
-  unfold igem_live_fasta_median_error_pct; norm_num
+  unfold igem_live_fasta_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem igem_live_fasta_bundle :
     igem_live_fasta_observable_count = 42 ∧

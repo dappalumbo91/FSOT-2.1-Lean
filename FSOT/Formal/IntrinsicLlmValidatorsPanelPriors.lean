@@ -16,7 +16,8 @@ theorem intrinsic_llm_validators_panel_observable_count_pos : 0 < intrinsic_llm_
   unfold intrinsic_llm_validators_panel_observable_count; decide
 
 theorem intrinsic_llm_validators_panel_median_error_under_half_pct :
-    (0.014767 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.014767 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.014767 : ℝ) < (0.5 : ℝ))
 
 theorem intrinsic_llm_validators_panel_bundle :
     intrinsic_llm_validators_panel_observable_count = 21 ∧

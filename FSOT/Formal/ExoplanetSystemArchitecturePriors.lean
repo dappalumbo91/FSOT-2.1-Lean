@@ -16,7 +16,8 @@ theorem exoplanet_system_architecture_observable_count_pos : 0 < exoplanet_syste
   unfold exoplanet_system_architecture_observable_count; decide
 
 theorem exoplanet_system_architecture_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem exoplanet_system_architecture_bundle :
     exoplanet_system_architecture_observable_count = 882 ∧

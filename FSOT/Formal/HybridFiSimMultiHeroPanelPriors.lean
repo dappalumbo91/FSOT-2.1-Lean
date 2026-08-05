@@ -16,7 +16,8 @@ theorem hybrid_fi_sim_multi_hero_panel_observable_count_pos : 0 < hybrid_fi_sim_
   unfold hybrid_fi_sim_multi_hero_panel_observable_count; decide
 
 theorem hybrid_fi_sim_multi_hero_panel_median_error_under_half_pct :
-    (0.008488 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.008488 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.008488 : ℝ) < (0.5 : ℝ))
 
 theorem hybrid_fi_sim_multi_hero_panel_bundle :
     hybrid_fi_sim_multi_hero_panel_observable_count = 24 ∧

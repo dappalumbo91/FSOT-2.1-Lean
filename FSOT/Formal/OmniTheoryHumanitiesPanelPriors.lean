@@ -16,7 +16,8 @@ theorem omni_theory_humanities_panel_observable_count_pos : 0 < omni_theory_huma
   unfold omni_theory_humanities_panel_observable_count; decide
 
 theorem omni_theory_humanities_panel_median_error_under_half_pct :
-    (0.0222545 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0222545 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0222545 : ℝ) < (0.5 : ℝ))
 
 theorem omni_theory_humanities_panel_bundle :
     omni_theory_humanities_panel_observable_count = 37 ∧

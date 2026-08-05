@@ -20,7 +20,8 @@ theorem gbif_species_occurrence_observable_count_pos : 0 < gbif_species_occurren
 
 theorem gbif_species_occurrence_median_error_under_five_pct :
     gbif_species_occurrence_median_error_pct < (5 : ℝ) := by
-  unfold gbif_species_occurrence_median_error_pct; norm_num
+  unfold gbif_species_occurrence_median_error_pct
+  exact (by norm_num : (0.006006  : ℝ) < (5 : ℝ))
 
 theorem gbif_species_occurrence_bundle :
     gbif_species_occurrence_observable_count = 240 ∧

@@ -16,7 +16,8 @@ theorem nasa_donki_solar_panel_observable_count_pos : 0 < nasa_donki_solar_panel
   unfold nasa_donki_solar_panel_observable_count; decide
 
 theorem nasa_donki_solar_panel_median_error_under_half_pct :
-    (0.020755 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.020755 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.020755 : ℝ) < (0.5 : ℝ))
 
 theorem nasa_donki_solar_panel_bundle :
     nasa_donki_solar_panel_observable_count = 2148 ∧

@@ -16,7 +16,8 @@ theorem uniprot_structure_annotations_deep_observable_count_pos : 0 < uniprot_st
   unfold uniprot_structure_annotations_deep_observable_count; decide
 
 theorem uniprot_structure_annotations_deep_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem uniprot_structure_annotations_deep_bundle :
     uniprot_structure_annotations_deep_observable_count = 121 ∧

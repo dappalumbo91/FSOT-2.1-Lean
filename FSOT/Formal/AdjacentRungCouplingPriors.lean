@@ -16,7 +16,8 @@ theorem adjacent_rung_coupling_observable_count_pos : 0 < adjacent_rung_coupling
   unfold adjacent_rung_coupling_observable_count; decide
 
 theorem adjacent_rung_coupling_median_error_under_half_pct :
-    (0.020098237848404983 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.020098237848404983 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.020098237848404983 : ℝ) < (0.5 : ℝ))
 
 theorem adjacent_rung_coupling_bundle :
     adjacent_rung_coupling_observable_count = 36 ∧

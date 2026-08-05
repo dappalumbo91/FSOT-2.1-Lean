@@ -16,7 +16,8 @@ theorem stumped_observables_spine_observable_count_pos : 0 < stumped_observables
   unfold stumped_observables_spine_observable_count; decide
 
 theorem stumped_observables_spine_median_error_under_half_pct :
-    (0.027761 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.027761 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.027761 : ℝ) < (0.5 : ℝ))
 
 theorem stumped_observables_spine_bundle :
     stumped_observables_spine_observable_count = 24 ∧

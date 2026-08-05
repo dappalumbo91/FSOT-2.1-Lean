@@ -31,8 +31,10 @@ theorem math_generator_rule_corpus_count_pos : 0 < math_generator_rule_corpus_co
 theorem math_generator_rule_observable_count_pos : 0 < math_generator_rule_observable_count := by
   unfold math_generator_rule_observable_count; decide
 
-theorem math_generator_max_error_pct_positive : (0 : ℝ) < math_generator_max_error_pct := by
-  unfold math_generator_max_error_pct; norm_num
+theorem math_generator_max_error_pct_positive :
+    (0 : ℝ) < math_generator_max_error_pct := by
+  unfold math_generator_max_error_pct
+  exact (by norm_num : (0 : ℝ) < (1.1862232544535427  : ℝ))
 
 theorem math_generator_rule_observables_ge_corpora :
     math_generator_rule_corpus_count ≤ math_generator_rule_observable_count := by

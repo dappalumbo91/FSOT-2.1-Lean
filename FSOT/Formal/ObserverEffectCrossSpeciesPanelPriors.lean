@@ -16,7 +16,8 @@ theorem observer_effect_cross_species_panel_observable_count_pos : 0 < observer_
   unfold observer_effect_cross_species_panel_observable_count; decide
 
 theorem observer_effect_cross_species_panel_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem observer_effect_cross_species_panel_bundle :
     observer_effect_cross_species_panel_observable_count = 289 ∧

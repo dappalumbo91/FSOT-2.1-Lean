@@ -16,7 +16,8 @@ theorem cve_codon_hole_falsification_observable_count_pos : 0 < cve_codon_hole_f
   unfold cve_codon_hole_falsification_observable_count; decide
 
 theorem cve_codon_hole_falsification_median_error_under_half_pct :
-    (0.009186636881580057 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.009186636881580057 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.009186636881580057 : ℝ) < (0.5 : ℝ))
 
 theorem cve_codon_hole_falsification_bundle :
     cve_codon_hole_falsification_observable_count = 29 ∧

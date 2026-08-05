@@ -16,7 +16,8 @@ theorem periodic_extension_decay_topology_scaffold_observable_count_pos : 0 < pe
   unfold periodic_extension_decay_topology_scaffold_observable_count; decide
 
 theorem periodic_extension_decay_topology_scaffold_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem periodic_extension_decay_topology_scaffold_bundle :
     periodic_extension_decay_topology_scaffold_observable_count = 24 ∧

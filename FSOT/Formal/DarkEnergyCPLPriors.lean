@@ -16,7 +16,8 @@ theorem dark_energy_cpl_observable_count_pos : 0 < dark_energy_cpl_observable_co
   unfold dark_energy_cpl_observable_count; decide
 
 theorem dark_energy_cpl_median_error_under_half_pct :
-    (0.029733 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.029733 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.029733 : ℝ) < (0.5 : ℝ))
 
 theorem dark_energy_cpl_bundle :
     dark_energy_cpl_observable_count = 24 ∧

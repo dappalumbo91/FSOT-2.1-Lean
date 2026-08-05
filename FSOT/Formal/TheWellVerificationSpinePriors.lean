@@ -16,7 +16,8 @@ theorem the_well_verification_spine_observable_count_pos : 0 < the_well_verifica
   unfold the_well_verification_spine_observable_count; decide
 
 theorem the_well_verification_spine_median_error_under_half_pct :
-    (0.028287 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.028287 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.028287 : ℝ) < (0.5 : ℝ))
 
 theorem the_well_verification_spine_bundle :
     the_well_verification_spine_observable_count = 24 ∧

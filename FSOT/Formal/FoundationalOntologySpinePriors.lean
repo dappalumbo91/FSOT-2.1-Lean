@@ -16,7 +16,8 @@ theorem foundational_ontology_spine_observable_count_pos : 0 < foundational_onto
   unfold foundational_ontology_spine_observable_count; decide
 
 theorem foundational_ontology_spine_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem foundational_ontology_spine_bundle :
     foundational_ontology_spine_observable_count = 21 ∧

@@ -21,7 +21,8 @@ theorem blackhole_whitehole_cycle_observable_count_pos : 0 < blackhole_whitehole
 
 theorem blackhole_whitehole_cycle_median_error_under_five_pct :
     blackhole_whitehole_cycle_median_error_pct < (5 : ℝ) := by
-  unfold blackhole_whitehole_cycle_median_error_pct; norm_num
+  unfold blackhole_whitehole_cycle_median_error_pct
+  exact (by norm_num : (0.026472  : ℝ) < (5 : ℝ))
 
 theorem blackhole_whitehole_cycle_median_error_under_half_pct :
     blackhole_whitehole_cycle_median_error_pct < (0.5 : ℝ) := by

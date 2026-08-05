@@ -16,7 +16,8 @@ theorem maillard_chemistry_observable_count_pos : 0 < maillard_chemistry_observa
   unfold maillard_chemistry_observable_count; decide
 
 theorem maillard_chemistry_median_error_under_half_pct :
-    (0.09443694019339477 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.09443694019339477 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.09443694019339477 : ℝ) < (0.5 : ℝ))
 
 theorem maillard_chemistry_bundle :
     maillard_chemistry_observable_count = 30 ∧

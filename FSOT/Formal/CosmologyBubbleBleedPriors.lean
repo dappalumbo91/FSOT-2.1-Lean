@@ -16,7 +16,8 @@ theorem cosmology_bubble_bleed_observable_count_pos : 0 < cosmology_bubble_bleed
   unfold cosmology_bubble_bleed_observable_count; decide
 
 theorem cosmology_bubble_bleed_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem cosmology_bubble_bleed_bundle :
     cosmology_bubble_bleed_observable_count = 113 ∧

@@ -16,7 +16,8 @@ theorem trinary_hardware_live_panel_observable_count_pos : 0 < trinary_hardware_
   unfold trinary_hardware_live_panel_observable_count; decide
 
 theorem trinary_hardware_live_panel_median_error_under_half_pct :
-    (0.014767 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.014767 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.014767 : ℝ) < (0.5 : ℝ))
 
 theorem trinary_hardware_live_panel_bundle :
     trinary_hardware_live_panel_observable_count = 37 ∧

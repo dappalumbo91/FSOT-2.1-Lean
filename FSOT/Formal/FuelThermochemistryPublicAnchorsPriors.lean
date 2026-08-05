@@ -16,7 +16,8 @@ theorem fuel_thermochemistry_public_anchors_observable_count_pos : 0 < fuel_ther
   unfold fuel_thermochemistry_public_anchors_observable_count; decide
 
 theorem fuel_thermochemistry_public_anchors_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem fuel_thermochemistry_public_anchors_bundle :
     fuel_thermochemistry_public_anchors_observable_count = 24 ∧

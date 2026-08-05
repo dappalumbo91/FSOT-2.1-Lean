@@ -16,7 +16,8 @@ theorem entomology_panel_observable_count_pos : 0 < entomology_panel_observable_
   unfold entomology_panel_observable_count; decide
 
 theorem entomology_panel_median_error_under_half_pct :
-    (0.006006 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.006006 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.006006 : ℝ) < (0.5 : ℝ))
 
 theorem entomology_panel_bundle :
     entomology_panel_observable_count = 90 ∧

@@ -20,7 +20,8 @@ theorem crossref_scholarly_observable_count_pos : 0 < crossref_scholarly_observa
 
 theorem crossref_scholarly_median_error_under_five_pct :
     crossref_scholarly_median_error_pct < (5 : ℝ) := by
-  unfold crossref_scholarly_median_error_pct; norm_num
+  unfold crossref_scholarly_median_error_pct
+  exact (by norm_num : (0.01382  : ℝ) < (5 : ℝ))
 
 theorem crossref_scholarly_bundle :
     crossref_scholarly_observable_count = 200 ∧

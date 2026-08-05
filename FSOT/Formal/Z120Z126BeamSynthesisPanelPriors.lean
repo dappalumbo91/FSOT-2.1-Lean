@@ -16,7 +16,8 @@ theorem z120_z126_beam_synthesis_panel_observable_count_pos : 0 < z120_z126_beam
   unfold z120_z126_beam_synthesis_panel_observable_count; decide
 
 theorem z120_z126_beam_synthesis_panel_median_error_under_half_pct :
-    (9.5e-05 : ℝ) < (0.5 : ℝ) := by norm_num
+    (9.5e-05 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (9.5e-05 : ℝ) < (0.5 : ℝ))
 
 theorem z120_z126_beam_synthesis_panel_bundle :
     z120_z126_beam_synthesis_panel_observable_count = 20 ∧

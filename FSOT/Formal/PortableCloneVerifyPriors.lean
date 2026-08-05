@@ -16,7 +16,8 @@ theorem portable_clone_verify_observable_count_pos : 0 < portable_clone_verify_o
   unfold portable_clone_verify_observable_count; decide
 
 theorem portable_clone_verify_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem portable_clone_verify_bundle :
     portable_clone_verify_observable_count = 290 ∧

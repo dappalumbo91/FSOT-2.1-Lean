@@ -16,7 +16,8 @@ theorem reality_folding_spine_observable_count_pos : 0 < reality_folding_spine_o
   unfold reality_folding_spine_observable_count; decide
 
 theorem reality_folding_spine_median_error_under_half_pct :
-    (0.023914275640537417 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.023914275640537417 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.023914275640537417 : ℝ) < (0.5 : ℝ))
 
 theorem reality_folding_spine_bundle :
     reality_folding_spine_observable_count = 24 ∧

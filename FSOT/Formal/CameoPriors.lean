@@ -18,8 +18,10 @@ def cameo_symbolic_mae_angstrom : ℝ := (8.85 : ℝ)
 theorem cameo_benchmark_count_pos : 0 < cameo_benchmark_count := by
   unfold cameo_benchmark_count; decide
 
-theorem cameo_symbolic_mae_positive : (0 : ℝ) < cameo_symbolic_mae_angstrom := by
-  unfold cameo_symbolic_mae_angstrom; norm_num
+theorem cameo_symbolic_mae_positive :
+    (0 : ℝ) < cameo_symbolic_mae_angstrom := by
+  unfold cameo_symbolic_mae_angstrom
+  exact (by norm_num : (0 : ℝ) < (8.85  : ℝ))
 
 /-- Bundle: CAMEO benchmarks and crystallized FSOT symbolic folding (molecular domain). -/
 theorem cameo_symbolic_bundle :

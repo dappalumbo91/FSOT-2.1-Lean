@@ -27,8 +27,10 @@ theorem thesis_intrinsic_screen_count_pos : 0 < thesis_intrinsic_screen_count :=
 theorem thesis_simulation_observable_count_pos : 0 < thesis_simulation_observable_count := by
   unfold thesis_simulation_observable_count; decide
 
-theorem thesis_intrinsic_best_rmse_positive : (0 : ℝ) < thesis_intrinsic_best_rmse := by
-  unfold thesis_intrinsic_best_rmse; norm_num
+theorem thesis_intrinsic_best_rmse_positive :
+    (0 : ℝ) < thesis_intrinsic_best_rmse := by
+  unfold thesis_intrinsic_best_rmse
+  exact (by norm_num : (0 : ℝ) < (6.763968608085996  : ℝ))
 
 theorem thesis_simulation_components_le_total :
     thesis_wave_target_count + thesis_intrinsic_screen_count = thesis_simulation_observable_count := by

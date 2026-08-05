@@ -16,7 +16,8 @@ theorem chaos_mediated_phase_transitions_observable_count_pos : 0 < chaos_mediat
   unfold chaos_mediated_phase_transitions_observable_count; decide
 
 theorem chaos_mediated_phase_transitions_median_error_under_half_pct :
-    (0.03147898006445882 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.03147898006445882 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.03147898006445882 : ℝ) < (0.5 : ℝ))
 
 theorem chaos_mediated_phase_transitions_bundle :
     chaos_mediated_phase_transitions_observable_count = 21 ∧

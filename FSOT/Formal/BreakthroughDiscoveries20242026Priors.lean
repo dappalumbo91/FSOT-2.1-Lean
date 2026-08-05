@@ -20,7 +20,8 @@ theorem breakthrough_discoveries_2024_2026_observable_count_pos : 0 < breakthrou
 
 theorem breakthrough_discoveries_2024_2026_median_error_under_five_pct :
     breakthrough_discoveries_2024_2026_median_error_pct < (5 : ℝ) := by
-  unfold breakthrough_discoveries_2024_2026_median_error_pct; norm_num
+  unfold breakthrough_discoveries_2024_2026_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem breakthrough_discoveries_2024_2026_bundle :
     breakthrough_discoveries_2024_2026_observable_count = 21 ∧

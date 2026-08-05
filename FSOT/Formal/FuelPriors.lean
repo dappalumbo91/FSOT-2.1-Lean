@@ -24,7 +24,8 @@ theorem fuel_resolved_le_entries :
   unfold fuel_resolved_entry_count fuel_lookup_entry_count; decide
 
 theorem fuel_lab_chemical_domain_positive :
-    (0 : ℝ) < 1 := by norm_num
+    (0 : ℝ) < 1 :=
+  (by norm_num : (0 : ℝ) < 1)
 
 /-- Bundle: Fuel Lab profiles and resolved compound lookups (chemical domain). -/
 theorem fuel_lab_compound_bundle :

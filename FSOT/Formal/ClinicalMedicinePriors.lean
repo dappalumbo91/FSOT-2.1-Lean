@@ -16,7 +16,8 @@ theorem clinical_medicine_observable_count_pos : 0 < clinical_medicine_observabl
   unfold clinical_medicine_observable_count; decide
 
 theorem clinical_medicine_median_error_under_half_pct :
-    (0.002458296751538192 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.002458296751538192 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.002458296751538192 : ℝ) < (0.5 : ℝ))
 
 theorem clinical_medicine_bundle :
     clinical_medicine_observable_count = 260 ∧

@@ -20,7 +20,8 @@ theorem trinary_os_portable_observable_count_pos : 0 < trinary_os_portable_obser
 
 theorem trinary_os_portable_median_error_under_five_pct :
     trinary_os_portable_median_error_pct < (5 : ℝ) := by
-  unfold trinary_os_portable_median_error_pct; norm_num
+  unfold trinary_os_portable_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem trinary_os_portable_bundle :
     trinary_os_portable_observable_count = 8 ∧

@@ -16,7 +16,8 @@ theorem alternate_base_mathematics_spine_observable_count_pos : 0 < alternate_ba
   unfold alternate_base_mathematics_spine_observable_count; decide
 
 theorem alternate_base_mathematics_spine_median_error_under_half_pct :
-    (0.004184779870129773 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.004184779870129773 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.004184779870129773 : ℝ) < (0.5 : ℝ))
 
 theorem alternate_base_mathematics_spine_bundle :
     alternate_base_mathematics_spine_observable_count = 24 ∧

@@ -16,7 +16,8 @@ theorem ncbi_gene_public_panel_observable_count_pos : 0 < ncbi_gene_public_panel
   unfold ncbi_gene_public_panel_observable_count; decide
 
 theorem ncbi_gene_public_panel_median_error_under_half_pct :
-    (0.025571999999999998 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.025571999999999998 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.025571999999999998 : ℝ) < (0.5 : ℝ))
 
 theorem ncbi_gene_public_panel_bundle :
     ncbi_gene_public_panel_observable_count = 48 ∧

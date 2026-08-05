@@ -20,7 +20,8 @@ theorem omni_theory_genesis_observable_count_pos : 0 < omni_theory_genesis_obser
 
 theorem omni_theory_genesis_median_error_under_five_pct :
     omni_theory_genesis_median_error_pct < (5 : ℝ) := by
-  unfold omni_theory_genesis_median_error_pct; norm_num
+  unfold omni_theory_genesis_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem omni_theory_genesis_bundle :
     omni_theory_genesis_observable_count = 27 ∧

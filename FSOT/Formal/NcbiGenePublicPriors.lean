@@ -20,7 +20,8 @@ theorem ncbi_gene_public_observable_count_pos : 0 < ncbi_gene_public_observable_
 
 theorem ncbi_gene_public_median_error_under_five_pct :
     ncbi_gene_public_median_error_pct < (5 : ℝ) := by
-  unfold ncbi_gene_public_median_error_pct; norm_num
+  unfold ncbi_gene_public_median_error_pct
+  exact (by norm_num : (0.025571999999999998  : ℝ) < (5 : ℝ))
 
 theorem ncbi_gene_public_bundle :
     ncbi_gene_public_observable_count = 48 ∧

@@ -16,7 +16,8 @@ theorem arxiv_primitives_panel_observable_count_pos : 0 < arxiv_primitives_panel
   unfold arxiv_primitives_panel_observable_count; decide
 
 theorem arxiv_primitives_panel_median_error_under_half_pct :
-    (0.031506 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.031506 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.031506 : ℝ) < (0.5 : ℝ))
 
 theorem arxiv_primitives_panel_bundle :
     arxiv_primitives_panel_observable_count = 22 ∧

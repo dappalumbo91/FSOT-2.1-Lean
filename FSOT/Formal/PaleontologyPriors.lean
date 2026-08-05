@@ -16,7 +16,8 @@ theorem paleontology_observable_count_pos : 0 < paleontology_observable_count :=
   unfold paleontology_observable_count; decide
 
 theorem paleontology_median_error_under_half_pct :
-    (0.017836062884406152 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.017836062884406152 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.017836062884406152 : ℝ) < (0.5 : ℝ))
 
 theorem paleontology_bundle :
     paleontology_observable_count = 630 ∧

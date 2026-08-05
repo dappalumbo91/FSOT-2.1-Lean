@@ -16,7 +16,8 @@ theorem arxiv_brain_knowledge_panel_observable_count_pos : 0 < arxiv_brain_knowl
   unfold arxiv_brain_knowledge_panel_observable_count; decide
 
 theorem arxiv_brain_knowledge_panel_median_error_under_half_pct :
-    (0.018003 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.018003 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.018003 : ℝ) < (0.5 : ℝ))
 
 theorem arxiv_brain_knowledge_panel_bundle :
     arxiv_brain_knowledge_panel_observable_count = 20 ∧

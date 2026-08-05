@@ -16,7 +16,8 @@ theorem physarum_biological_cuda_panel_observable_count_pos : 0 < physarum_biolo
   unfold physarum_biological_cuda_panel_observable_count; decide
 
 theorem physarum_biological_cuda_panel_median_error_under_half_pct :
-    (0.022236 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022236 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022236 : ℝ) < (0.5 : ℝ))
 
 theorem physarum_biological_cuda_panel_bundle :
     physarum_biological_cuda_panel_observable_count = 24 ∧

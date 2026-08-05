@@ -16,7 +16,8 @@ theorem architecture_building_science_observable_count_pos : 0 < architecture_bu
   unfold architecture_building_science_observable_count; decide
 
 theorem architecture_building_science_median_error_under_half_pct :
-    (0.07869745016115058 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.07869745016115058 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.07869745016115058 : ℝ) < (0.5 : ℝ))
 
 theorem architecture_building_science_bundle :
     architecture_building_science_observable_count = 43 ∧

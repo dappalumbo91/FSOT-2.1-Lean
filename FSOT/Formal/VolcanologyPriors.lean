@@ -20,7 +20,8 @@ theorem volcanology_observable_count_pos : 0 < volcanology_observable_count := b
 
 theorem volcanology_median_error_under_five_pct :
     volcanology_median_error_pct < (5 : ℝ) := by
-  unfold volcanology_median_error_pct; norm_num
+  unfold volcanology_median_error_pct
+  exact (by norm_num : (0.023502  : ℝ) < (5 : ℝ))
 
 theorem volcanology_bundle :
     volcanology_observable_count = 90 ∧

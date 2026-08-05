@@ -16,7 +16,8 @@ theorem genomic_sciences_observable_count_pos : 0 < genomic_sciences_observable_
   unfold genomic_sciences_observable_count; decide
 
 theorem genomic_sciences_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem genomic_sciences_bundle :
     genomic_sciences_observable_count = 24 ∧

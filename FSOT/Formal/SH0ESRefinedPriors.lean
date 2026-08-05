@@ -16,7 +16,8 @@ theorem sh0es_refined_observable_count_pos : 0 < sh0es_refined_observable_count 
   unfold sh0es_refined_observable_count; decide
 
 theorem sh0es_refined_median_error_under_half_pct :
-    (0.024894 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.024894 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.024894 : ℝ) < (0.5 : ℝ))
 
 theorem sh0es_refined_bundle :
     sh0es_refined_observable_count = 24 ∧

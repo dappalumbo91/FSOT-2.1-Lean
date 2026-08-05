@@ -16,7 +16,8 @@ theorem term3_acoustic_bleed_depth_observable_count_pos : 0 < term3_acoustic_ble
   unfold term3_acoustic_bleed_depth_observable_count; decide
 
 theorem term3_acoustic_bleed_depth_median_error_under_half_pct :
-    (0.008381497018408523 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.008381497018408523 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.008381497018408523 : ℝ) < (0.5 : ℝ))
 
 theorem term3_acoustic_bleed_depth_bundle :
     term3_acoustic_bleed_depth_observable_count = 23 ∧

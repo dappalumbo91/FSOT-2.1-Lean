@@ -16,7 +16,8 @@ theorem desktop_application_wiring_spine_observable_count_pos : 0 < desktop_appl
   unfold desktop_application_wiring_spine_observable_count; decide
 
 theorem desktop_application_wiring_spine_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem desktop_application_wiring_spine_bundle :
     desktop_application_wiring_spine_observable_count = 81 ∧

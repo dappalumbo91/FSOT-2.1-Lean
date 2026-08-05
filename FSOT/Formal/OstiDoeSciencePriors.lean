@@ -20,7 +20,8 @@ theorem osti_doe_science_observable_count_pos : 0 < osti_doe_science_observable_
 
 theorem osti_doe_science_median_error_under_five_pct :
     osti_doe_science_median_error_pct < (5 : ℝ) := by
-  unfold osti_doe_science_median_error_pct; norm_num
+  unfold osti_doe_science_median_error_pct
+  exact (by norm_num : (0.01382  : ℝ) < (5 : ℝ))
 
 theorem osti_doe_science_bundle :
     osti_doe_science_observable_count = 100 ∧

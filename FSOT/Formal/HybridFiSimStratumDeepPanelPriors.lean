@@ -16,7 +16,8 @@ theorem hybrid_fi_sim_stratum_deep_panel_observable_count_pos : 0 < hybrid_fi_si
   unfold hybrid_fi_sim_stratum_deep_panel_observable_count; decide
 
 theorem hybrid_fi_sim_stratum_deep_panel_median_error_under_half_pct :
-    (0.018003 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.018003 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.018003 : ℝ) < (0.5 : ℝ))
 
 theorem hybrid_fi_sim_stratum_deep_panel_bundle :
     hybrid_fi_sim_stratum_deep_panel_observable_count = 24 ∧

@@ -16,7 +16,8 @@ theorem superheavy_element_stability_panel_observable_count_pos : 0 < superheavy
   unfold superheavy_element_stability_panel_observable_count; decide
 
 theorem superheavy_element_stability_panel_median_error_under_half_pct :
-    (1e-06 : ℝ) < (0.5 : ℝ) := by norm_num
+    (1e-06 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (1e-06 : ℝ) < (0.5 : ℝ))
 
 theorem superheavy_element_stability_panel_bundle :
     superheavy_element_stability_panel_observable_count = 50 ∧

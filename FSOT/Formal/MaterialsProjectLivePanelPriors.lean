@@ -16,7 +16,8 @@ theorem materials_project_live_panel_observable_count_pos : 0 < materials_projec
   unfold materials_project_live_panel_observable_count; decide
 
 theorem materials_project_live_panel_median_error_under_half_pct :
-    (0.011734 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.011734 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.011734 : ℝ) < (0.5 : ℝ))
 
 theorem materials_project_live_panel_bundle :
     materials_project_live_panel_observable_count = 141 ∧

@@ -16,7 +16,8 @@ theorem pure_mathematics_panel_observable_count_pos : 0 < pure_mathematics_panel
   unfold pure_mathematics_panel_observable_count; decide
 
 theorem pure_mathematics_panel_median_error_under_half_pct :
-    (0.02584 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.02584 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.02584 : ℝ) < (0.5 : ℝ))
 
 theorem pure_mathematics_panel_bundle :
     pure_mathematics_panel_observable_count = 44 ∧

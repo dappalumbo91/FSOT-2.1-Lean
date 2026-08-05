@@ -16,7 +16,8 @@ theorem quantum_mechanics_entanglement_depth_panel_observable_count_pos : 0 < qu
   unfold quantum_mechanics_entanglement_depth_panel_observable_count; decide
 
 theorem quantum_mechanics_entanglement_depth_panel_median_error_under_half_pct :
-    (0.095551 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.095551 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.095551 : ℝ) < (0.5 : ℝ))
 
 theorem quantum_mechanics_entanglement_depth_panel_bundle :
     quantum_mechanics_entanglement_depth_panel_observable_count = 23 ∧

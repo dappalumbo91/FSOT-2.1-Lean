@@ -16,7 +16,8 @@ theorem environmental_engineering_observable_count_pos : 0 < environmental_engin
   unfold environmental_engineering_observable_count; decide
 
 theorem environmental_engineering_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem environmental_engineering_bundle :
     environmental_engineering_observable_count = 1120 ∧

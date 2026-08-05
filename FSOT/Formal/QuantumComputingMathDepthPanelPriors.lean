@@ -16,7 +16,8 @@ theorem quantum_computing_math_depth_panel_observable_count_pos : 0 < quantum_co
   unfold quantum_computing_math_depth_panel_observable_count; decide
 
 theorem quantum_computing_math_depth_panel_median_error_under_half_pct :
-    (0.014767 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.014767 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.014767 : ℝ) < (0.5 : ℝ))
 
 theorem quantum_computing_math_depth_panel_bundle :
     quantum_computing_math_depth_panel_observable_count = 77 ∧

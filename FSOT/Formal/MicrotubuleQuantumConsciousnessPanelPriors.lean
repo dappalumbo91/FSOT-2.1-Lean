@@ -16,7 +16,8 @@ theorem microtubule_quantum_consciousness_panel_observable_count_pos : 0 < micro
   unfold microtubule_quantum_consciousness_panel_observable_count; decide
 
 theorem microtubule_quantum_consciousness_panel_median_error_under_half_pct :
-    (0.044671 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.044671 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.044671 : ℝ) < (0.5 : ℝ))
 
 theorem microtubule_quantum_consciousness_panel_bundle :
     microtubule_quantum_consciousness_panel_observable_count = 63 ∧

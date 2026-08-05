@@ -16,7 +16,8 @@ theorem cardiology_observable_count_pos : 0 < cardiology_observable_count := by
   unfold cardiology_observable_count; decide
 
 theorem cardiology_median_error_under_half_pct :
-    (0.030622122938654326 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.030622122938654326 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.030622122938654326 : ℝ) < (0.5 : ℝ))
 
 theorem cardiology_bundle :
     cardiology_observable_count = 45 ∧

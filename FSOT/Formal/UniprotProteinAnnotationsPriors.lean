@@ -20,7 +20,8 @@ theorem uniprot_protein_annotations_observable_count_pos : 0 < uniprot_protein_a
 
 theorem uniprot_protein_annotations_median_error_under_five_pct :
     uniprot_protein_annotations_median_error_pct < (5 : ℝ) := by
-  unfold uniprot_protein_annotations_median_error_pct; norm_num
+  unfold uniprot_protein_annotations_median_error_pct
+  exact (by norm_num : (0.026684  : ℝ) < (5 : ℝ))
 
 theorem uniprot_protein_annotations_bundle :
     uniprot_protein_annotations_observable_count = 22 ∧

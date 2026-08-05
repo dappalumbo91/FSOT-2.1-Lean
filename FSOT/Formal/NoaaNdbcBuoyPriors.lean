@@ -20,7 +20,8 @@ theorem noaa_ndbc_buoy_observable_count_pos : 0 < noaa_ndbc_buoy_observable_coun
 
 theorem noaa_ndbc_buoy_median_error_under_five_pct :
     noaa_ndbc_buoy_median_error_pct < (5 : ℝ) := by
-  unfold noaa_ndbc_buoy_median_error_pct; norm_num
+  unfold noaa_ndbc_buoy_median_error_pct
+  exact (by norm_num : (0.028287  : ℝ) < (5 : ℝ))
 
 theorem noaa_ndbc_buoy_bundle :
     noaa_ndbc_buoy_observable_count = 596 ∧

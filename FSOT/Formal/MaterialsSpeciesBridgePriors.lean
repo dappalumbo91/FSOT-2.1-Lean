@@ -20,7 +20,8 @@ theorem materials_species_bridge_observable_count_pos : 0 < materials_species_br
 
 theorem materials_species_bridge_median_error_under_five_pct :
     materials_species_bridge_median_error_pct < (5 : ℝ) := by
-  unfold materials_species_bridge_median_error_pct; norm_num
+  unfold materials_species_bridge_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem materials_species_bridge_bundle :
     materials_species_bridge_observable_count = 45 ∧

@@ -17,7 +17,7 @@ theorem blackhole_thesis_observable_count_pos : 0 < blackhole_thesis_observable_
 
 theorem blackhole_thesis_within_le_total :
     blackhole_thesis_within_target_2pct ≤ blackhole_thesis_observable_count := by
-  unfold blackhole_thesis_within_target_2pct blackhole_thesis_observable_count; norm_num
+  unfold blackhole_thesis_within_target_2pct blackhole_thesis_observable_count; decide
 
 /-- Bundle: BlackHole thermo thesis observables with blackhole-domain sign proxy. -/
 theorem blackhole_thesis_bundle :

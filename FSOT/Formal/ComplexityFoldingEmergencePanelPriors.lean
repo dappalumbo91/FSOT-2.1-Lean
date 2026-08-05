@@ -16,7 +16,8 @@ theorem complexity_folding_emergence_panel_observable_count_pos : 0 < complexity
   unfold complexity_folding_emergence_panel_observable_count; decide
 
 theorem complexity_folding_emergence_panel_median_error_under_half_pct :
-    (0.02658792169940266 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.02658792169940266 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.02658792169940266 : ℝ) < (0.5 : ℝ))
 
 theorem complexity_folding_emergence_panel_bundle :
     complexity_folding_emergence_panel_observable_count = 29 ∧

@@ -16,7 +16,8 @@ theorem mycology_observable_count_pos : 0 < mycology_observable_count := by
   unfold mycology_observable_count; decide
 
 theorem mycology_median_error_under_half_pct :
-    (0.022236250385193498 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022236250385193498 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022236250385193498 : ℝ) < (0.5 : ℝ))
 
 theorem mycology_bundle :
     mycology_observable_count = 420 ∧

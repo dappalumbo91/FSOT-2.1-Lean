@@ -16,7 +16,8 @@ theorem geology_stratigraphy_observable_count_pos : 0 < geology_stratigraphy_obs
   unfold geology_stratigraphy_observable_count; decide
 
 theorem geology_stratigraphy_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem geology_stratigraphy_bundle :
     geology_stratigraphy_observable_count = 1960 ∧

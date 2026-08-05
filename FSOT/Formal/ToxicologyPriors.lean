@@ -20,7 +20,8 @@ theorem toxicology_observable_count_pos : 0 < toxicology_observable_count := by
 
 theorem toxicology_median_error_under_five_pct :
     toxicology_median_error_pct < (5 : ℝ) := by
-  unfold toxicology_median_error_pct; norm_num
+  unfold toxicology_median_error_pct
+  exact (by norm_num : (0.033401  : ℝ) < (5 : ℝ))
 
 theorem toxicology_bundle :
     toxicology_observable_count = 21 ∧

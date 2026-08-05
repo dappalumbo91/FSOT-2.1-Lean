@@ -16,7 +16,8 @@ theorem nasa_neo_feed_panel_observable_count_pos : 0 < nasa_neo_feed_panel_obser
   unfold nasa_neo_feed_panel_observable_count; decide
 
 theorem nasa_neo_feed_panel_median_error_under_half_pct :
-    (0.021097 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.021097 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.021097 : ℝ) < (0.5 : ℝ))
 
 theorem nasa_neo_feed_panel_bundle :
     nasa_neo_feed_panel_observable_count = 56 ∧

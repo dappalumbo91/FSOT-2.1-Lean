@@ -20,7 +20,8 @@ theorem clinicaltrials_medical_observable_count_pos : 0 < clinicaltrials_medical
 
 theorem clinicaltrials_medical_median_error_under_five_pct :
     clinicaltrials_medical_median_error_pct < (5 : ℝ) := by
-  unfold clinicaltrials_medical_median_error_pct; norm_num
+  unfold clinicaltrials_medical_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem clinicaltrials_medical_bundle :
     clinicaltrials_medical_observable_count = 394 ∧

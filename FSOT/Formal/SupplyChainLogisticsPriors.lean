@@ -16,7 +16,8 @@ theorem supply_chain_logistics_observable_count_pos : 0 < supply_chain_logistics
   unfold supply_chain_logistics_observable_count; decide
 
 theorem supply_chain_logistics_median_error_under_half_pct :
-    (0.03230022603427978 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.03230022603427978 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.03230022603427978 : ℝ) < (0.5 : ℝ))
 
 theorem supply_chain_logistics_bundle :
     supply_chain_logistics_observable_count = 40 ∧

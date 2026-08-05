@@ -16,7 +16,8 @@ theorem energy_ai_orbital_bridge_observable_count_pos : 0 < energy_ai_orbital_br
   unfold energy_ai_orbital_bridge_observable_count; decide
 
 theorem energy_ai_orbital_bridge_median_error_under_half_pct :
-    (0.027544107556407217 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.027544107556407217 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.027544107556407217 : ℝ) < (0.5 : ℝ))
 
 theorem energy_ai_orbital_bridge_bundle :
     energy_ai_orbital_bridge_observable_count = 48 ∧

@@ -16,7 +16,8 @@ theorem finance_markets_observable_count_pos : 0 < finance_markets_observable_co
   unfold finance_markets_observable_count; decide
 
 theorem finance_markets_median_error_under_half_pct :
-    (0.025840180827433133 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.025840180827433133 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.025840180827433133 : ℝ) < (0.5 : ℝ))
 
 theorem finance_markets_bundle :
     finance_markets_observable_count = 150 ∧

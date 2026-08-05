@@ -16,7 +16,8 @@ theorem toe_claim_certificate_bundle_observable_count_pos : 0 < toe_claim_certif
   unfold toe_claim_certificate_bundle_observable_count; decide
 
 theorem toe_claim_certificate_bundle_median_error_under_half_pct :
-    (0.0020923899350648867 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0020923899350648867 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0020923899350648867 : ℝ) < (0.5 : ℝ))
 
 theorem toe_claim_certificate_bundle_bundle :
     toe_claim_certificate_bundle_observable_count = 24 ∧

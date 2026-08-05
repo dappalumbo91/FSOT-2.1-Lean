@@ -16,7 +16,8 @@ theorem noaa_ndbc_buoy_panel_observable_count_pos : 0 < noaa_ndbc_buoy_panel_obs
   unfold noaa_ndbc_buoy_panel_observable_count; decide
 
 theorem noaa_ndbc_buoy_panel_median_error_under_half_pct :
-    (0.028287 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.028287 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.028287 : ℝ) < (0.5 : ℝ))
 
 theorem noaa_ndbc_buoy_panel_bundle :
     noaa_ndbc_buoy_panel_observable_count = 596 ∧

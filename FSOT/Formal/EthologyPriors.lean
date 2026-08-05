@@ -20,7 +20,8 @@ theorem ethology_observable_count_pos : 0 < ethology_observable_count := by
 
 theorem ethology_median_error_under_five_pct :
     ethology_median_error_pct < (5 : ℝ) := by
-  unfold ethology_median_error_pct; norm_num
+  unfold ethology_median_error_pct
+  exact (by norm_num : (0.006607  : ℝ) < (5 : ℝ))
 
 theorem ethology_bundle :
     ethology_observable_count = 100 ∧

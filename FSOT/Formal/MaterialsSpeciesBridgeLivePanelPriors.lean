@@ -16,7 +16,8 @@ theorem materials_species_bridge_live_panel_observable_count_pos : 0 < materials
   unfold materials_species_bridge_live_panel_observable_count; decide
 
 theorem materials_species_bridge_live_panel_median_error_under_half_pct :
-    (0.01341 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.01341 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.01341 : ℝ) < (0.5 : ℝ))
 
 theorem materials_species_bridge_live_panel_bundle :
     materials_species_bridge_live_panel_observable_count = 150 ∧

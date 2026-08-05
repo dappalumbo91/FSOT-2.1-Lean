@@ -24,8 +24,10 @@ theorem hydrology_stability_match_le_total :
     hydrology_stability_match_count ≤ hydrology_month_count := by
   unfold hydrology_stability_match_count hydrology_month_count; decide
 
-theorem hydrology_stability_match_rate_nonneg : (0 : ℝ) ≤ hydrology_stability_match_rate := by
-  unfold hydrology_stability_match_rate; norm_num
+theorem hydrology_stability_match_rate_nonneg :
+    (0 : ℝ) ≤ hydrology_stability_match_rate := by
+  unfold hydrology_stability_match_rate
+  exact (by norm_num : (0 : ℝ) ≤ (0.996875 : ℝ))
 
 theorem hydrology_bundle :
     hydrology_month_count = 960 ∧

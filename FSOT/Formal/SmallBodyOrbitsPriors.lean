@@ -20,7 +20,8 @@ theorem small_body_orbit_count_pos : 0 < small_body_orbit_count := by
 
 theorem small_body_median_error_under_eight_pct :
     small_body_median_error_pct < (8 : ℝ) := by
-  unfold small_body_median_error_pct; norm_num
+  unfold small_body_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (8 : ℝ))
 
 theorem small_body_orbits_bundle :
     small_body_orbit_count = 12 ∧

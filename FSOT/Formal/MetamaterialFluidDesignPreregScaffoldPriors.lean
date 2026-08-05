@@ -16,7 +16,8 @@ theorem metamaterial_fluid_design_prereg_scaffold_observable_count_pos : 0 < met
   unfold metamaterial_fluid_design_prereg_scaffold_observable_count; decide
 
 theorem metamaterial_fluid_design_prereg_scaffold_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem metamaterial_fluid_design_prereg_scaffold_bundle :
     metamaterial_fluid_design_prereg_scaffold_observable_count = 25 ∧

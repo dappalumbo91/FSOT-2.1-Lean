@@ -20,7 +20,8 @@ theorem actuarial_science_observable_count_pos : 0 < actuarial_science_observabl
 
 theorem actuarial_science_median_error_under_five_pct :
     actuarial_science_median_error_pct < (5 : ℝ) := by
-  unfold actuarial_science_median_error_pct; norm_num
+  unfold actuarial_science_median_error_pct
+  exact (by norm_num : (0.02261  : ℝ) < (5 : ℝ))
 
 theorem actuarial_science_bundle :
     actuarial_science_observable_count = 60 ∧

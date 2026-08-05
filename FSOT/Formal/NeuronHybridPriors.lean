@@ -31,18 +31,24 @@ def neuron_canonical_neuroscience_S : ℝ := (0.5143619629083619 : ℝ)
 theorem neuron_fi_point_count_pos : 0 < neuron_fi_point_count := by
   unfold neuron_fi_point_count; decide
 
-theorem neuron_mean_rel_err_lt_fifteen_pct : neuron_mean_rel_err < (0.15 : ℝ) := by
-  unfold neuron_mean_rel_err; norm_num
+theorem neuron_mean_rel_err_lt_fifteen_pct :
+    neuron_mean_rel_err < (0.15 : ℝ) := by
+  unfold neuron_mean_rel_err
+  exact (by norm_num : (0.07002728543379658  : ℝ) < (0.15 : ℝ))
 
-theorem neuron_verifier_confidence_gt_ninety_pct : (0.90 : ℝ) < neuron_verifier_confidence := by
-  unfold neuron_verifier_confidence; norm_num
+theorem neuron_verifier_confidence_gt_ninety_pct :
+    (0.90 : ℝ) < neuron_verifier_confidence := by
+  unfold neuron_verifier_confidence
+  exact (by norm_num : (0.90 : ℝ) < (0.9598886696481669 : ℝ))
 
 theorem neuron_K_matches_thalamic_gate : |k - neuron_K_cached| < (5e-4 : ℝ) := by
   unfold neuron_K_cached
   exact thalamic_K_matches_formal_k
 
-theorem neuron_canonical_neuroscience_S_positive : (0 : ℝ) < neuron_canonical_neuroscience_S := by
-  unfold neuron_canonical_neuroscience_S; norm_num
+theorem neuron_canonical_neuroscience_S_positive :
+    (0 : ℝ) < neuron_canonical_neuroscience_S := by
+  unfold neuron_canonical_neuroscience_S
+  exact (by norm_num : (0 : ℝ) < (0.5143619629083619  : ℝ))
 
 /-- Bundle: Allen hybrid FI fit + K alignment + neural-domain canon S (Python oracle). -/
 theorem neuron_hybrid_priors_bundle :

@@ -16,7 +16,8 @@ theorem cosmology_anomaly_deep_panel_observable_count_pos : 0 < cosmology_anomal
   unfold cosmology_anomaly_deep_panel_observable_count; decide
 
 theorem cosmology_anomaly_deep_panel_median_error_under_half_pct :
-    (0.029733 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.029733 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.029733 : ℝ) < (0.5 : ℝ))
 
 theorem cosmology_anomaly_deep_panel_bundle :
     cosmology_anomaly_deep_panel_observable_count = 24 ∧

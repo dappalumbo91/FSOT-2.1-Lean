@@ -16,7 +16,8 @@ theorem formula_corpus_closure_observable_count_pos : 0 < formula_corpus_closure
   unfold formula_corpus_closure_observable_count; decide
 
 theorem formula_corpus_closure_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem formula_corpus_closure_bundle :
     formula_corpus_closure_observable_count = 123 ∧

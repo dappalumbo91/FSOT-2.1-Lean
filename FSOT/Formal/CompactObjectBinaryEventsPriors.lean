@@ -16,7 +16,8 @@ theorem compact_object_binary_events_observable_count_pos : 0 < compact_object_b
   unfold compact_object_binary_events_observable_count; decide
 
 theorem compact_object_binary_events_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem compact_object_binary_events_bundle :
     compact_object_binary_events_observable_count = 40 ∧

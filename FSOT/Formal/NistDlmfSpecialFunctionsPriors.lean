@@ -16,7 +16,8 @@ theorem nist_dlmf_special_functions_observable_count_pos : 0 < nist_dlmf_special
   unfold nist_dlmf_special_functions_observable_count; decide
 
 theorem nist_dlmf_special_functions_median_error_under_half_pct :
-    (0.020055 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.020055 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.020055 : ℝ) < (0.5 : ℝ))
 
 theorem nist_dlmf_special_functions_bundle :
     nist_dlmf_special_functions_observable_count = 21 ∧

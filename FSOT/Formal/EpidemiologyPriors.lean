@@ -16,7 +16,8 @@ theorem epidemiology_observable_count_pos : 0 < epidemiology_observable_count :=
   unfold epidemiology_observable_count; decide
 
 theorem epidemiology_median_error_under_half_pct :
-    (0.03062212293865052 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.03062212293865052 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.03062212293865052 : ℝ) < (0.5 : ℝ))
 
 theorem epidemiology_bundle :
     epidemiology_observable_count = 20 ∧

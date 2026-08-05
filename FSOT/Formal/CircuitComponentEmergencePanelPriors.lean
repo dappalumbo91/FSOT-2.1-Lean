@@ -20,7 +20,8 @@ theorem circuit_component_emergence_observable_count_pos : 0 < circuit_component
 
 theorem circuit_component_emergence_median_error_under_five_pct :
     circuit_component_emergence_median_error_pct < (5 : ℝ) := by
-  unfold circuit_component_emergence_median_error_pct; norm_num
+  unfold circuit_component_emergence_median_error_pct
+  exact (by norm_num : (0.051887  : ℝ) < (5 : ℝ))
 
 theorem circuit_component_emergence_bundle :
     circuit_component_emergence_observable_count = 23 ∧

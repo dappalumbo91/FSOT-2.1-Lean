@@ -16,7 +16,8 @@ theorem civil_engineering_panel_observable_count_pos : 0 < civil_engineering_pan
   unfold civil_engineering_panel_observable_count; decide
 
 theorem civil_engineering_panel_median_error_under_half_pct :
-    (0.01341 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.01341 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.01341 : ℝ) < (0.5 : ℝ))
 
 theorem civil_engineering_panel_bundle :
     civil_engineering_panel_observable_count = 20 ∧

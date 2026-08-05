@@ -16,7 +16,8 @@ theorem fusion_lab_certificate_spine_observable_count_pos : 0 < fusion_lab_certi
   unfold fusion_lab_certificate_spine_observable_count; decide
 
 theorem fusion_lab_certificate_spine_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem fusion_lab_certificate_spine_bundle :
     fusion_lab_certificate_spine_observable_count = 50 ∧

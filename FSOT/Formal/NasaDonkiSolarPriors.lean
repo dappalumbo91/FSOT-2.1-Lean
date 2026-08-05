@@ -20,7 +20,8 @@ theorem nasa_donki_solar_observable_count_pos : 0 < nasa_donki_solar_observable_
 
 theorem nasa_donki_solar_median_error_under_five_pct :
     nasa_donki_solar_median_error_pct < (5 : ℝ) := by
-  unfold nasa_donki_solar_median_error_pct; norm_num
+  unfold nasa_donki_solar_median_error_pct
+  exact (by norm_num : (0.020755  : ℝ) < (5 : ℝ))
 
 theorem nasa_donki_solar_bundle :
     nasa_donki_solar_observable_count = 1200 ∧

@@ -16,7 +16,8 @@ theorem pdg_particle_properties_observable_count_pos : 0 < pdg_particle_properti
   unfold pdg_particle_properties_observable_count; decide
 
 theorem pdg_particle_properties_median_error_under_half_pct :
-    (9.5e-05 : ℝ) < (0.5 : ℝ) := by norm_num
+    (9.5e-05 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (9.5e-05 : ℝ) < (0.5 : ℝ))
 
 theorem pdg_particle_properties_bundle :
     pdg_particle_properties_observable_count = 21 ∧

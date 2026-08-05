@@ -16,7 +16,8 @@ theorem time_emergence_simulation_observable_count_pos : 0 < time_emergence_simu
   unfold time_emergence_simulation_observable_count; decide
 
 theorem time_emergence_simulation_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem time_emergence_simulation_bundle :
     time_emergence_simulation_observable_count = 28 ∧

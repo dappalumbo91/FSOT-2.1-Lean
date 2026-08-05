@@ -16,7 +16,8 @@ theorem sports_biomechanics_observable_count_pos : 0 < sports_biomechanics_obser
   unfold sports_biomechanics_observable_count; decide
 
 theorem sports_biomechanics_median_error_under_half_pct :
-    (0.04447250077037523 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.04447250077037523 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.04447250077037523 : ℝ) < (0.5 : ℝ))
 
 theorem sports_biomechanics_bundle :
     sports_biomechanics_observable_count = 35 ∧

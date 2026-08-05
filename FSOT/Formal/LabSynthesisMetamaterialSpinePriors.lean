@@ -16,7 +16,8 @@ theorem lab_synthesis_metamaterial_spine_observable_count_pos : 0 < lab_synthesi
   unfold lab_synthesis_metamaterial_spine_observable_count; decide
 
 theorem lab_synthesis_metamaterial_spine_median_error_under_half_pct :
-    (3.4e-05 : ℝ) < (0.5 : ℝ) := by norm_num
+    (3.4e-05 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (3.4e-05 : ℝ) < (0.5 : ℝ))
 
 theorem lab_synthesis_metamaterial_spine_bundle :
     lab_synthesis_metamaterial_spine_observable_count = 43 ∧

@@ -16,7 +16,8 @@ theorem neuroeconomics_panel_observable_count_pos : 0 < neuroeconomics_panel_obs
   unfold neuroeconomics_panel_observable_count; decide
 
 theorem neuroeconomics_panel_median_error_under_half_pct :
-    (0.031506 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.031506 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.031506 : ℝ) < (0.5 : ℝ))
 
 theorem neuroeconomics_panel_bundle :
     neuroeconomics_panel_observable_count = 20 ∧

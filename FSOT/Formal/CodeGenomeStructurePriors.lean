@@ -16,7 +16,8 @@ theorem code_genome_structure_observable_count_pos : 0 < code_genome_structure_o
   unfold code_genome_structure_observable_count; decide
 
 theorem code_genome_structure_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem code_genome_structure_bundle :
     code_genome_structure_observable_count = 205 ∧

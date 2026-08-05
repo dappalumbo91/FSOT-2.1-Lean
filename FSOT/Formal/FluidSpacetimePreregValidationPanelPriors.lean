@@ -16,7 +16,8 @@ theorem fluid_spacetime_prereg_validation_panel_observable_count_pos : 0 < fluid
   unfold fluid_spacetime_prereg_validation_panel_observable_count; decide
 
 theorem fluid_spacetime_prereg_validation_panel_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem fluid_spacetime_prereg_validation_panel_bundle :
     fluid_spacetime_prereg_validation_panel_observable_count = 24 ∧

@@ -16,7 +16,8 @@ theorem cardiology_panel_observable_count_pos : 0 < cardiology_panel_observable_
   unfold cardiology_panel_observable_count; decide
 
 theorem cardiology_panel_median_error_under_half_pct :
-    (0.015311 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.015311 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.015311 : ℝ) < (0.5 : ℝ))
 
 theorem cardiology_panel_bundle :
     cardiology_panel_observable_count = 20 ∧

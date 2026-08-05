@@ -16,7 +16,8 @@ theorem distant_island_emergence_simulation_observable_count_pos : 0 < distant_i
   unfold distant_island_emergence_simulation_observable_count; decide
 
 theorem distant_island_emergence_simulation_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem distant_island_emergence_simulation_bundle :
     distant_island_emergence_simulation_observable_count = 36 ∧

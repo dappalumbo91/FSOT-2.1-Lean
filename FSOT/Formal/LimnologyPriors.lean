@@ -20,7 +20,8 @@ theorem limnology_observable_count_pos : 0 < limnology_observable_count := by
 
 theorem limnology_median_error_under_five_pct :
     limnology_median_error_pct < (5 : ℝ) := by
-  unfold limnology_median_error_pct; norm_num
+  unfold limnology_median_error_pct
+  exact (by norm_num : (0.030173  : ℝ) < (5 : ℝ))
 
 theorem limnology_bundle :
     limnology_observable_count = 2010 ∧

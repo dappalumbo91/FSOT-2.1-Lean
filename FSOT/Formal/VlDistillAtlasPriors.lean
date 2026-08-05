@@ -20,7 +20,8 @@ theorem vl_distill_atlas_observable_count_pos : 0 < vl_distill_atlas_observable_
 
 theorem vl_distill_atlas_median_error_under_five_pct :
     vl_distill_atlas_median_error_pct < (5 : ℝ) := by
-  unfold vl_distill_atlas_median_error_pct; norm_num
+  unfold vl_distill_atlas_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem vl_distill_atlas_bundle :
     vl_distill_atlas_observable_count = 10 ∧

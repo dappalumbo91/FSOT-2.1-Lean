@@ -20,7 +20,8 @@ theorem noaa_coastal_tides_observable_count_pos : 0 < noaa_coastal_tides_observa
 
 theorem noaa_coastal_tides_median_error_under_five_pct :
     noaa_coastal_tides_median_error_pct < (5 : ℝ) := by
-  unfold noaa_coastal_tides_median_error_pct; norm_num
+  unfold noaa_coastal_tides_median_error_pct
+  exact (by norm_num : (0.030173  : ℝ) < (5 : ℝ))
 
 theorem noaa_coastal_tides_bundle :
     noaa_coastal_tides_observable_count = 20 ∧

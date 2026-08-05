@@ -16,7 +16,8 @@ theorem crossref_scholarly_panel_observable_count_pos : 0 < crossref_scholarly_p
   unfold crossref_scholarly_panel_observable_count; decide
 
 theorem crossref_scholarly_panel_median_error_under_half_pct :
-    (0.01382 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.01382 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.01382 : ℝ) < (0.5 : ℝ))
 
 theorem crossref_scholarly_panel_bundle :
     crossref_scholarly_panel_observable_count = 200 ∧

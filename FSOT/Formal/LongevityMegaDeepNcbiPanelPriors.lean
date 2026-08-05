@@ -20,7 +20,8 @@ theorem longevity_megadeep_ncbi_observable_count_pos : 0 < longevity_megadeep_nc
 
 theorem longevity_megadeep_ncbi_median_error_under_five_pct :
     longevity_megadeep_ncbi_median_error_pct < (5 : ℝ) := by
-  unfold longevity_megadeep_ncbi_median_error_pct; norm_num
+  unfold longevity_megadeep_ncbi_median_error_pct
+  exact (by norm_num : (0.017789  : ℝ) < (5 : ℝ))
 
 theorem longevity_megadeep_ncbi_bundle :
     longevity_megadeep_ncbi_observable_count = 1746 ∧

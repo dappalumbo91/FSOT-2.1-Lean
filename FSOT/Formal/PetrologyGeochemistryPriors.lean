@@ -20,7 +20,8 @@ theorem petrology_observable_count_pos : 0 < petrology_observable_count := by
 
 theorem petrology_median_error_under_five_pct :
     petrology_median_error_pct < (5 : ℝ) := by
-  unfold petrology_median_error_pct; norm_num
+  unfold petrology_median_error_pct
+  exact (by norm_num : (0.030428  : ℝ) < (5 : ℝ))
 
 theorem petrology_bundle :
     petrology_observable_count = 80 ∧

@@ -16,7 +16,8 @@ theorem formula_precision_spine_observable_count_pos : 0 < formula_precision_spi
   unfold formula_precision_spine_observable_count; decide
 
 theorem formula_precision_spine_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem formula_precision_spine_bundle :
     formula_precision_spine_observable_count = 27 ∧

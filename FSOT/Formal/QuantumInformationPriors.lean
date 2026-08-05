@@ -16,7 +16,8 @@ theorem quantum_information_observable_count_pos : 0 < quantum_information_obser
   unfold quantum_information_observable_count; decide
 
 theorem quantum_information_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem quantum_information_bundle :
     quantum_information_observable_count = 24 ∧

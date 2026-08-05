@@ -20,7 +20,8 @@ theorem pubchem_compound_properties_observable_count_pos : 0 < pubchem_compound_
 
 theorem pubchem_compound_properties_median_error_under_five_pct :
     pubchem_compound_properties_median_error_pct < (5 : ℝ) := by
-  unfold pubchem_compound_properties_median_error_pct; norm_num
+  unfold pubchem_compound_properties_median_error_pct
+  exact (by norm_num : (0.002637  : ℝ) < (5 : ℝ))
 
 theorem pubchem_compound_properties_bundle :
     pubchem_compound_properties_observable_count = 500 ∧

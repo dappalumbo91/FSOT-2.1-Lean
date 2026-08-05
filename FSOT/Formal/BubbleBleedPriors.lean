@@ -65,7 +65,8 @@ theorem bubble_bleed_frb_match_le_total :
 
 theorem bubble_bleed_observability_ratio_nonneg :
     0 ≤ bubble_bleed_observability_ratio := by
-  unfold bubble_bleed_observability_ratio; norm_num
+  unfold bubble_bleed_observability_ratio
+  exact (by norm_num : (0 : ℝ) ≤ (0.7142857142857143  : ℝ))
 
 /-- Bundle: BH→WH mechanics — framework fit, WH closure, spin, FRB, sector H₀ bleed. -/
 theorem bubble_bleed_bundle :

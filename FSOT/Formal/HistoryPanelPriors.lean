@@ -16,7 +16,8 @@ theorem history_panel_observable_count_pos : 0 < history_panel_observable_count 
   unfold history_panel_observable_count; decide
 
 theorem history_panel_median_error_under_half_pct :
-    (0.01382 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.01382 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.01382 : ℝ) < (0.5 : ℝ))
 
 theorem history_panel_bundle :
     history_panel_observable_count = 60 ∧

@@ -16,7 +16,8 @@ theorem fpc_temporal_coupling_observable_count_pos : 0 < fpc_temporal_coupling_o
   unfold fpc_temporal_coupling_observable_count; decide
 
 theorem fpc_temporal_coupling_median_error_under_half_pct :
-    (0.029733 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.029733 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.029733 : ℝ) < (0.5 : ℝ))
 
 theorem fpc_temporal_coupling_bundle :
     fpc_temporal_coupling_observable_count = 24 ∧

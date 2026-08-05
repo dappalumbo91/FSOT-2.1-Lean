@@ -20,7 +20,8 @@ theorem world_bank_development_observable_count_pos : 0 < world_bank_development
 
 theorem world_bank_development_median_error_under_five_pct :
     world_bank_development_median_error_pct < (5 : ℝ) := by
-  unfold world_bank_development_median_error_pct; norm_num
+  unfold world_bank_development_median_error_pct
+  exact (by norm_num : (0.02584  : ℝ) < (5 : ℝ))
 
 theorem world_bank_development_bundle :
     world_bank_development_observable_count = 420 ∧

@@ -20,7 +20,8 @@ theorem nist_codata_constants_observable_count_pos : 0 < nist_codata_constants_o
 
 theorem nist_codata_constants_median_error_under_five_pct :
     nist_codata_constants_median_error_pct < (5 : ℝ) := by
-  unfold nist_codata_constants_median_error_pct; norm_num
+  unfold nist_codata_constants_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem nist_codata_constants_bundle :
     nist_codata_constants_observable_count = 6 ∧

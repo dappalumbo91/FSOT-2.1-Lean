@@ -20,7 +20,8 @@ theorem longevity_consciousness_coupling_observable_count_pos : 0 < longevity_co
 
 theorem longevity_consciousness_coupling_median_error_under_five_pct :
     longevity_consciousness_coupling_median_error_pct < (5 : ℝ) := by
-  unfold longevity_consciousness_coupling_median_error_pct; norm_num
+  unfold longevity_consciousness_coupling_median_error_pct
+  exact (by norm_num : (0.022424  : ℝ) < (5 : ℝ))
 
 theorem longevity_consciousness_coupling_bundle :
     longevity_consciousness_coupling_observable_count = 890 ∧

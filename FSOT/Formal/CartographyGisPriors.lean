@@ -20,7 +20,8 @@ theorem cartography_gis_observable_count_pos : 0 < cartography_gis_observable_co
 
 theorem cartography_gis_median_error_under_five_pct :
     cartography_gis_median_error_pct < (5 : ℝ) := by
-  unfold cartography_gis_median_error_pct; norm_num
+  unfold cartography_gis_median_error_pct
+  exact (by norm_num : (0.018855999999999998  : ℝ) < (5 : ℝ))
 
 theorem cartography_gis_bundle :
     cartography_gis_observable_count = 48 ∧

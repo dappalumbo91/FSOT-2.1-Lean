@@ -16,7 +16,8 @@ theorem arxiv_gravitational_waves_panel_observable_count_pos : 0 < arxiv_gravita
   unfold arxiv_gravitational_waves_panel_observable_count; decide
 
 theorem arxiv_gravitational_waves_panel_median_error_under_half_pct :
-    (0.01748 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.01748 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.01748 : ℝ) < (0.5 : ℝ))
 
 theorem arxiv_gravitational_waves_panel_bundle :
     arxiv_gravitational_waves_panel_observable_count = 60 ∧

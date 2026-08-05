@@ -49,7 +49,7 @@ theorem neocortex_genetic_counts_sum :
 
 theorem neocortex_genetic_zero_is_superposition :
     (neocortex_genetic_zero : ℝ) / brain_prior_dna_bases = neocortex_superposition_ratio := by
-  unfold neocortex_superposition_ratio neocortex_genetic_zero brain_prior_dna_bases; norm_num
+  unfold neocortex_superposition_ratio; rfl
 
 theorem neocortex_spin_counts_sum :
     neocortex_spin_plus + neocortex_spin_minus = brain_prior_dna_bases := by
@@ -69,7 +69,7 @@ theorem cerebellum_genetic_counts_sum :
 
 theorem cerebellum_genetic_zero_is_superposition :
     (cerebellum_genetic_zero : ℝ) / brain_prior_dna_bases = cerebellum_superposition_ratio := by
-  unfold cerebellum_superposition_ratio cerebellum_genetic_zero brain_prior_dna_bases; norm_num
+  unfold cerebellum_superposition_ratio; rfl
 
 theorem cerebellum_spin_counts_sum :
     cerebellum_spin_plus + cerebellum_spin_minus = brain_prior_dna_bases := by
@@ -89,7 +89,7 @@ theorem brainstem_arousal_genetic_counts_sum :
 
 theorem brainstem_arousal_genetic_zero_is_superposition :
     (brainstem_arousal_genetic_zero : ℝ) / brain_prior_dna_bases = brainstem_arousal_superposition_ratio := by
-  unfold brainstem_arousal_superposition_ratio brainstem_arousal_genetic_zero brain_prior_dna_bases; norm_num
+  unfold brainstem_arousal_superposition_ratio; rfl
 
 theorem brainstem_arousal_spin_counts_sum :
     brainstem_arousal_spin_plus + brainstem_arousal_spin_minus = brain_prior_dna_bases := by
@@ -109,7 +109,7 @@ theorem hippocampus_genetic_counts_sum :
 
 theorem hippocampus_genetic_zero_is_superposition :
     (hippocampus_genetic_zero : ℝ) / brain_prior_dna_bases = hippocampus_superposition_ratio := by
-  unfold hippocampus_superposition_ratio hippocampus_genetic_zero brain_prior_dna_bases; norm_num
+  unfold hippocampus_superposition_ratio; rfl
 
 theorem hippocampus_spin_counts_sum :
     hippocampus_spin_plus + hippocampus_spin_minus = brain_prior_dna_bases := by
@@ -129,7 +129,7 @@ theorem basal_ganglia_genetic_counts_sum :
 
 theorem basal_ganglia_genetic_zero_is_superposition :
     (basal_ganglia_genetic_zero : ℝ) / brain_prior_dna_bases = basal_ganglia_superposition_ratio := by
-  unfold basal_ganglia_superposition_ratio basal_ganglia_genetic_zero brain_prior_dna_bases; norm_num
+  unfold basal_ganglia_superposition_ratio; rfl
 
 theorem basal_ganglia_spin_counts_sum :
     basal_ganglia_spin_plus + basal_ganglia_spin_minus = brain_prior_dna_bases := by
@@ -149,7 +149,7 @@ theorem thalamus_genetic_counts_sum :
 
 theorem thalamus_genetic_zero_is_superposition :
     (thalamus_genetic_zero : ℝ) / brain_prior_dna_bases = thalamus_superposition_ratio := by
-  unfold thalamus_superposition_ratio thalamus_genetic_zero brain_prior_dna_bases; norm_num
+  unfold thalamus_superposition_ratio; rfl
 
 theorem thalamus_spin_counts_sum :
     thalamus_spin_plus + thalamus_spin_minus = brain_prior_dna_bases := by
@@ -169,7 +169,7 @@ theorem astrocyte_syncytium_genetic_counts_sum :
 
 theorem astrocyte_syncytium_genetic_zero_is_superposition :
     (astrocyte_syncytium_genetic_zero : ℝ) / brain_prior_dna_bases = astrocyte_syncytium_superposition_ratio := by
-  unfold astrocyte_syncytium_superposition_ratio astrocyte_syncytium_genetic_zero brain_prior_dna_bases; norm_num
+  unfold astrocyte_syncytium_superposition_ratio; rfl
 
 theorem astrocyte_syncytium_spin_counts_sum :
     astrocyte_syncytium_spin_plus + astrocyte_syncytium_spin_minus = brain_prior_dna_bases := by
@@ -189,7 +189,7 @@ theorem oligodendrocyte_myelination_genetic_counts_sum :
 
 theorem oligodendrocyte_myelination_genetic_zero_is_superposition :
     (oligodendrocyte_myelination_genetic_zero : ℝ) / brain_prior_dna_bases = oligodendrocyte_myelination_superposition_ratio := by
-  unfold oligodendrocyte_myelination_superposition_ratio oligodendrocyte_myelination_genetic_zero brain_prior_dna_bases; norm_num
+  unfold oligodendrocyte_myelination_superposition_ratio; rfl
 
 theorem oligodendrocyte_myelination_spin_counts_sum :
     oligodendrocyte_myelination_spin_plus + oligodendrocyte_myelination_spin_minus = brain_prior_dna_bases := by
@@ -209,7 +209,7 @@ theorem amygdala_genetic_counts_sum :
 
 theorem amygdala_genetic_zero_is_superposition :
     (amygdala_genetic_zero : ℝ) / brain_prior_dna_bases = amygdala_superposition_ratio := by
-  unfold amygdala_superposition_ratio amygdala_genetic_zero brain_prior_dna_bases; norm_num
+  unfold amygdala_superposition_ratio; rfl
 
 theorem amygdala_spin_counts_sum :
     amygdala_spin_plus + amygdala_spin_minus = brain_prior_dna_bases := by
@@ -229,7 +229,7 @@ theorem microglial_surveillance_genetic_counts_sum :
 
 theorem microglial_surveillance_genetic_zero_is_superposition :
     (microglial_surveillance_genetic_zero : ℝ) / brain_prior_dna_bases = microglial_surveillance_superposition_ratio := by
-  unfold microglial_surveillance_superposition_ratio microglial_surveillance_genetic_zero brain_prior_dna_bases; norm_num
+  unfold microglial_surveillance_superposition_ratio; rfl
 
 theorem microglial_surveillance_spin_counts_sum :
     microglial_surveillance_spin_plus + microglial_surveillance_spin_minus = brain_prior_dna_bases := by

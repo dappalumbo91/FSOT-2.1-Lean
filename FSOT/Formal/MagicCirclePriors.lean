@@ -22,15 +22,22 @@ def magic_backlash_risk_threshold_high : ℝ := (0.35 : ℝ)
 
 theorem magic_min_resonance_lt_internalized :
     magic_min_resonance_for_emergence < magic_internalized_threshold := by
-  unfold magic_min_resonance_for_emergence magic_internalized_threshold; norm_num
+  unfold magic_min_resonance_for_emergence magic_internalized_threshold
+  exact (by norm_num : (0.45 : ℝ) < (0.92 : ℝ))
 
 theorem magic_imbalance_penalty_in_unit_interval :
     (0 : ℝ) < magic_imbalance_penalty_max ∧ magic_imbalance_penalty_max ≤ (1 : ℝ) := by
-  unfold magic_imbalance_penalty_max; constructor <;> norm_num
+  unfold magic_imbalance_penalty_max
+  constructor
+  · exact (by norm_num : (0 : ℝ) < (0.65 : ℝ))
+  · exact (by norm_num : (0.65 : ℝ) ≤ (1 : ℝ))
 
 theorem magic_backlash_threshold_in_unit_interval :
     (0 : ℝ) < magic_backlash_risk_threshold_high ∧ magic_backlash_risk_threshold_high < (1 : ℝ) := by
-  unfold magic_backlash_risk_threshold_high; constructor <;> norm_num
+  unfold magic_backlash_risk_threshold_high
+  constructor
+  · exact (by norm_num : (0 : ℝ) < (0.35  : ℝ))
+  · exact (by norm_num : (0.35  : ℝ) < (1 : ℝ))
 
 /-- Bundle: glyph stabilization thresholds + trinary fluid pathway anchor. -/
 theorem magic_circle_priors_bundle :

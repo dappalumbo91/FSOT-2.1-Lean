@@ -20,7 +20,8 @@ theorem zebrafish_cell_tracking_observable_count_pos : 0 < zebrafish_cell_tracki
 
 theorem zebrafish_cell_tracking_median_error_under_five_pct :
     zebrafish_cell_tracking_median_error_pct < (5 : ℝ) := by
-  unfold zebrafish_cell_tracking_median_error_pct; norm_num
+  unfold zebrafish_cell_tracking_median_error_pct
+  exact (by norm_num : (0.022236  : ℝ) < (5 : ℝ))
 
 theorem zebrafish_cell_tracking_bundle :
     zebrafish_cell_tracking_observable_count = 20 ∧

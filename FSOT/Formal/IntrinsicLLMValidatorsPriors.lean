@@ -20,7 +20,8 @@ theorem intrinsic_llm_validators_observable_count_pos : 0 < intrinsic_llm_valida
 
 theorem intrinsic_llm_validators_median_error_under_five_pct :
     intrinsic_llm_validators_median_error_pct < (5 : ℝ) := by
-  unfold intrinsic_llm_validators_median_error_pct; norm_num
+  unfold intrinsic_llm_validators_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem intrinsic_llm_validators_bundle :
     intrinsic_llm_validators_observable_count = 10 ∧

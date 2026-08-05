@@ -16,7 +16,8 @@ theorem open_meteo_live_panel_observable_count_pos : 0 < open_meteo_live_panel_o
   unfold open_meteo_live_panel_observable_count; decide
 
 theorem open_meteo_live_panel_median_error_under_half_pct :
-    (0.026204 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.026204 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.026204 : ℝ) < (0.5 : ℝ))
 
 theorem open_meteo_live_panel_bundle :
     open_meteo_live_panel_observable_count = 432 ∧

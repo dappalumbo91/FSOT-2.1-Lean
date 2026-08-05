@@ -16,7 +16,8 @@ theorem econometrics_observable_count_pos : 0 < econometrics_observable_count :=
   unfold econometrics_observable_count; decide
 
 theorem econometrics_median_error_under_half_pct :
-    (0.12920090413715177 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.12920090413715177 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.12920090413715177 : ℝ) < (0.5 : ℝ))
 
 theorem econometrics_bundle :
     econometrics_observable_count = 172 ∧

@@ -16,7 +16,8 @@ theorem fusion_decay_chain_prereg_scaffold_observable_count_pos : 0 < fusion_dec
   unfold fusion_decay_chain_prereg_scaffold_observable_count; decide
 
 theorem fusion_decay_chain_prereg_scaffold_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem fusion_decay_chain_prereg_scaffold_bundle :
     fusion_decay_chain_prereg_scaffold_observable_count = 24 ∧

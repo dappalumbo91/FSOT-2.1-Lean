@@ -16,7 +16,8 @@ theorem fuel_candidate_prereg_scaffold_observable_count_pos : 0 < fuel_candidate
   unfold fuel_candidate_prereg_scaffold_observable_count; decide
 
 theorem fuel_candidate_prereg_scaffold_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem fuel_candidate_prereg_scaffold_bundle :
     fuel_candidate_prereg_scaffold_observable_count = 33 ∧

@@ -20,7 +20,8 @@ theorem open_meteo_live_observable_count_pos : 0 < open_meteo_live_observable_co
 
 theorem open_meteo_live_median_error_under_five_pct :
     open_meteo_live_median_error_pct < (5 : ℝ) := by
-  unfold open_meteo_live_median_error_pct; norm_num
+  unfold open_meteo_live_median_error_pct
+  exact (by norm_num : (0.026204  : ℝ) < (5 : ℝ))
 
 theorem open_meteo_live_bundle :
     open_meteo_live_observable_count = 432 ∧

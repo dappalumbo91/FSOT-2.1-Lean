@@ -16,7 +16,8 @@ theorem law_policy_panel_observable_count_pos : 0 < law_policy_panel_observable_
   unfold law_policy_panel_observable_count; decide
 
 theorem law_policy_panel_median_error_under_half_pct :
-    (0.013003 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.013003 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.013003 : ℝ) < (0.5 : ℝ))
 
 theorem law_policy_panel_bundle :
     law_policy_panel_observable_count = 20 ∧

@@ -24,11 +24,15 @@ theorem emergent_observed_le_total :
     emergent_observed_domain_count ≤ emergent_domain_count := by
   unfold emergent_observed_domain_count emergent_domain_count; decide
 
-theorem emergent_final_emergence_health_positive : (0 : ℝ) < emergent_final_emergence_health := by
-  unfold emergent_final_emergence_health; norm_num
+theorem emergent_final_emergence_health_positive :
+    (0 : ℝ) < emergent_final_emergence_health := by
+  unfold emergent_final_emergence_health
+  exact (by norm_num : (0 : ℝ) < (0.8547351151068473  : ℝ))
 
-theorem emergent_final_meta_S_positive : (0 : ℝ) < emergent_final_meta_S := by
-  unfold emergent_final_meta_S; norm_num
+theorem emergent_final_meta_S_positive :
+    (0 : ℝ) < emergent_final_meta_S := by
+  unfold emergent_final_meta_S
+  exact (by norm_num : (0 : ℝ) < (0.32988227338082093  : ℝ))
 
 /-- Bundle: 29 MC-discovered emergent domains with quantum-domain sign proxy. -/
 theorem emergent_domain_priors_bundle :

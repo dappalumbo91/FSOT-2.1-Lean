@@ -16,7 +16,8 @@ theorem mechanical_engineering_panel_observable_count_pos : 0 < mechanical_engin
   unfold mechanical_engineering_panel_observable_count; decide
 
 theorem mechanical_engineering_panel_median_error_under_half_pct :
-    (0.039349 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.039349 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.039349 : ℝ) < (0.5 : ℝ))
 
 theorem mechanical_engineering_panel_bundle :
     mechanical_engineering_panel_observable_count = 20 ∧

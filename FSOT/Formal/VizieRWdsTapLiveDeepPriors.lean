@@ -16,7 +16,8 @@ theorem vizier_wds_tap_live_deep_observable_count_pos : 0 < vizier_wds_tap_live_
   unfold vizier_wds_tap_live_deep_observable_count; decide
 
 theorem vizier_wds_tap_live_deep_median_error_under_half_pct :
-    (0.026954 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.026954 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.026954 : ℝ) < (0.5 : ℝ))
 
 theorem vizier_wds_tap_live_deep_bundle :
     vizier_wds_tap_live_deep_observable_count = 121 ∧

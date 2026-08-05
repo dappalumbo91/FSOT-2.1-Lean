@@ -16,7 +16,8 @@ theorem tokenization_live_panel_observable_count_pos : 0 < tokenization_live_pan
   unfold tokenization_live_panel_observable_count; decide
 
 theorem tokenization_live_panel_median_error_under_half_pct :
-    (0.022236 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022236 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022236 : ℝ) < (0.5 : ℝ))
 
 theorem tokenization_live_panel_bundle :
     tokenization_live_panel_observable_count = 24 ∧

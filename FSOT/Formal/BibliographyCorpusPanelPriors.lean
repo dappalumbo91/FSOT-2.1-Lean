@@ -16,7 +16,8 @@ theorem bibliography_corpus_panel_observable_count_pos : 0 < bibliography_corpus
   unfold bibliography_corpus_panel_observable_count; decide
 
 theorem bibliography_corpus_panel_median_error_under_half_pct :
-    (0.03801653760497401 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.03801653760497401 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.03801653760497401 : ℝ) < (0.5 : ℝ))
 
 theorem bibliography_corpus_panel_bundle :
     bibliography_corpus_panel_observable_count = 24 ∧

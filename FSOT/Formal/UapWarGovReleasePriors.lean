@@ -20,7 +20,8 @@ theorem uap_war_gov_release_observable_count_pos : 0 < uap_war_gov_release_obser
 
 theorem uap_war_gov_release_median_error_under_five_pct :
     uap_war_gov_release_median_error_pct < (5 : ℝ) := by
-  unfold uap_war_gov_release_median_error_pct; norm_num
+  unfold uap_war_gov_release_median_error_pct
+  exact (by norm_num : (0.008488  : ℝ) < (5 : ℝ))
 
 theorem uap_war_gov_release_bundle :
     uap_war_gov_release_observable_count = 542 ∧

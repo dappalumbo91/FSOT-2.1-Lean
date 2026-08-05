@@ -16,7 +16,8 @@ theorem mycology_panel_observable_count_pos : 0 < mycology_panel_observable_coun
   unfold mycology_panel_observable_count; decide
 
 theorem mycology_panel_median_error_under_half_pct :
-    (0.006006 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.006006 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.006006 : ℝ) < (0.5 : ℝ))
 
 theorem mycology_panel_bundle :
     mycology_panel_observable_count = 90 ∧

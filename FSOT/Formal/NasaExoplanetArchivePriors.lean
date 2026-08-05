@@ -20,7 +20,8 @@ theorem nasa_exoplanet_archive_observable_count_pos : 0 < nasa_exoplanet_archive
 
 theorem nasa_exoplanet_archive_median_error_under_five_pct :
     nasa_exoplanet_archive_median_error_pct < (5 : ℝ) := by
-  unfold nasa_exoplanet_archive_median_error_pct; norm_num
+  unfold nasa_exoplanet_archive_median_error_pct
+  exact (by norm_num : (0.023015  : ℝ) < (5 : ℝ))
 
 theorem nasa_exoplanet_archive_bundle :
     nasa_exoplanet_archive_observable_count = 158 ∧

@@ -16,7 +16,8 @@ theorem living_fsot_hardware_panel_observable_count_pos : 0 < living_fsot_hardwa
   unfold living_fsot_hardware_panel_observable_count; decide
 
 theorem living_fsot_hardware_panel_median_error_under_half_pct :
-    (0.031506 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.031506 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.031506 : ℝ) < (0.5 : ℝ))
 
 theorem living_fsot_hardware_panel_bundle :
     living_fsot_hardware_panel_observable_count = 77 ∧

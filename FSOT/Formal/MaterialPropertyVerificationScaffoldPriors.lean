@@ -16,7 +16,8 @@ theorem material_property_verification_scaffold_observable_count_pos : 0 < mater
   unfold material_property_verification_scaffold_observable_count; decide
 
 theorem material_property_verification_scaffold_median_error_under_half_pct :
-    (0.002271 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.002271 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.002271 : ℝ) < (0.5 : ℝ))
 
 theorem material_property_verification_scaffold_bundle :
     material_property_verification_scaffold_observable_count = 79 ∧

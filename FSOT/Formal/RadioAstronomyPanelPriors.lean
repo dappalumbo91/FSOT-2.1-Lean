@@ -16,7 +16,8 @@ theorem radio_astronomy_panel_observable_count_pos : 0 < radio_astronomy_panel_o
   unfold radio_astronomy_panel_observable_count; decide
 
 theorem radio_astronomy_panel_median_error_under_half_pct :
-    (0.022461 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022461 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022461 : ℝ) < (0.5 : ℝ))
 
 theorem radio_astronomy_panel_bundle :
     radio_astronomy_panel_observable_count = 30 ∧

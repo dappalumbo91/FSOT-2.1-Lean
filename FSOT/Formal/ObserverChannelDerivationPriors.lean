@@ -16,7 +16,8 @@ theorem observer_channel_derivation_observable_count_pos : 0 < observer_channel_
   unfold observer_channel_derivation_observable_count; decide
 
 theorem observer_channel_derivation_median_error_under_half_pct :
-    (0.0525102820198906 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0525102820198906 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0525102820198906 : ℝ) < (0.5 : ℝ))
 
 theorem observer_channel_derivation_bundle :
     observer_channel_derivation_observable_count = 348 ∧

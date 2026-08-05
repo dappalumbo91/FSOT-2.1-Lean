@@ -16,7 +16,8 @@ theorem periodic_table_public_panel_observable_count_pos : 0 < periodic_table_pu
   unfold periodic_table_public_panel_observable_count; decide
 
 theorem periodic_table_public_panel_median_error_under_half_pct :
-    (9.5e-05 : ℝ) < (0.5 : ℝ) := by norm_num
+    (9.5e-05 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (9.5e-05 : ℝ) < (0.5 : ℝ))
 
 theorem periodic_table_public_panel_bundle :
     periodic_table_public_panel_observable_count = 52 ∧

@@ -16,7 +16,8 @@ theorem canonical_oracle_panel_observable_count_pos : 0 < canonical_oracle_panel
   unfold canonical_oracle_panel_observable_count; decide
 
 theorem canonical_oracle_panel_median_error_under_half_pct :
-    (0.013294 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.013294 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.013294 : ℝ) < (0.5 : ℝ))
 
 theorem canonical_oracle_panel_bundle :
     canonical_oracle_panel_observable_count = 24 ∧

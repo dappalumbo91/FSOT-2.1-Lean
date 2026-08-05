@@ -16,7 +16,8 @@ theorem wds_live_multiplicity_deep_observable_count_pos : 0 < wds_live_multiplic
   unfold wds_live_multiplicity_deep_observable_count; decide
 
 theorem wds_live_multiplicity_deep_median_error_under_half_pct :
-    (0.026954 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.026954 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.026954 : ℝ) < (0.5 : ℝ))
 
 theorem wds_live_multiplicity_deep_bundle :
     wds_live_multiplicity_deep_observable_count = 281 ∧

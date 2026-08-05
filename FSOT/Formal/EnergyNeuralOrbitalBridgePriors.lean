@@ -16,7 +16,8 @@ theorem energy_neural_orbital_bridge_observable_count_pos : 0 < energy_neural_or
   unfold energy_neural_orbital_bridge_observable_count; decide
 
 theorem energy_neural_orbital_bridge_median_error_under_half_pct :
-    (0.018002668701796887 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.018002668701796887 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.018002668701796887 : ℝ) < (0.5 : ℝ))
 
 theorem energy_neural_orbital_bridge_bundle :
     energy_neural_orbital_bridge_observable_count = 48 ∧

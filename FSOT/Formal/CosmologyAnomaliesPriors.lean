@@ -16,7 +16,8 @@ theorem cosmology_anomalies_observable_count_pos : 0 < cosmology_anomalies_obser
   unfold cosmology_anomalies_observable_count; decide
 
 theorem cosmology_anomalies_median_error_under_half_pct :
-    (0.024602 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.024602 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.024602 : ℝ) < (0.5 : ℝ))
 
 theorem cosmology_anomalies_bundle :
     cosmology_anomalies_observable_count = 23 ∧

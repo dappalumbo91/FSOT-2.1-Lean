@@ -16,7 +16,8 @@ theorem domain_coupling_simulation_refresh_panel_observable_count_pos : 0 < doma
   unfold domain_coupling_simulation_refresh_panel_observable_count; decide
 
 theorem domain_coupling_simulation_refresh_panel_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem domain_coupling_simulation_refresh_panel_bundle :
     domain_coupling_simulation_refresh_panel_observable_count = 22 ∧

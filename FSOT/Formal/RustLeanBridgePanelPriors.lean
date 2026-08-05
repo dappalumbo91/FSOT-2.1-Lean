@@ -16,7 +16,8 @@ theorem rust_lean_bridge_panel_observable_count_pos : 0 < rust_lean_bridge_panel
   unfold rust_lean_bridge_panel_observable_count; decide
 
 theorem rust_lean_bridge_panel_median_error_under_half_pct :
-    (0.014767 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.014767 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.014767 : ℝ) < (0.5 : ℝ))
 
 theorem rust_lean_bridge_panel_bundle :
     rust_lean_bridge_panel_observable_count = 24 ∧

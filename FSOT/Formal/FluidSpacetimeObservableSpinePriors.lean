@@ -16,7 +16,8 @@ theorem fluid_spacetime_observable_spine_observable_count_pos : 0 < fluid_spacet
   unfold fluid_spacetime_observable_spine_observable_count; decide
 
 theorem fluid_spacetime_observable_spine_median_error_under_half_pct :
-    (0.000595 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.000595 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.000595 : ℝ) < (0.5 : ℝ))
 
 theorem fluid_spacetime_observable_spine_bundle :
     fluid_spacetime_observable_spine_observable_count = 29 ∧

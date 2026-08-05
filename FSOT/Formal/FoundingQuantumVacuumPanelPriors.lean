@@ -16,7 +16,8 @@ theorem founding_quantum_vacuum_panel_observable_count_pos : 0 < founding_quantu
   unfold founding_quantum_vacuum_panel_observable_count; decide
 
 theorem founding_quantum_vacuum_panel_median_error_under_half_pct :
-    (0.01529034996934153 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.01529034996934153 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.01529034996934153 : ℝ) < (0.5 : ℝ))
 
 theorem founding_quantum_vacuum_panel_bundle :
     founding_quantum_vacuum_panel_observable_count = 24 ∧

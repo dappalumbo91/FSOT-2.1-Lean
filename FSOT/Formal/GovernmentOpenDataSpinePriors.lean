@@ -16,7 +16,8 @@ theorem government_open_data_spine_observable_count_pos : 0 < government_open_da
   unfold government_open_data_spine_observable_count; decide
 
 theorem government_open_data_spine_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem government_open_data_spine_bundle :
     government_open_data_spine_observable_count = 28 ∧

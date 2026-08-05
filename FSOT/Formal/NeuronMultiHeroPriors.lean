@@ -27,7 +27,8 @@ theorem neuron_multi_hero_median_error_under_half_pct :
 
 theorem neuron_multi_hero_median_fi_under_thirty_pct :
     neuron_multi_hero_median_fi_proxy_rel_err_pct < (30 : ℝ) := by
-  unfold neuron_multi_hero_median_fi_proxy_rel_err_pct; norm_num
+  unfold neuron_multi_hero_median_fi_proxy_rel_err_pct
+  exact (by norm_num : (0.0  : ℝ) < (30 : ℝ))
 
 theorem neuron_multi_hero_bundle :
     neuron_multi_hero_count = 24 ∧

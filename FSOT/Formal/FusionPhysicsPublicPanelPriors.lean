@@ -16,7 +16,8 @@ theorem fusion_physics_public_panel_observable_count_pos : 0 < fusion_physics_pu
   unfold fusion_physics_public_panel_observable_count; decide
 
 theorem fusion_physics_public_panel_median_error_under_half_pct :
-    (9.5e-05 : ℝ) < (0.5 : ℝ) := by norm_num
+    (9.5e-05 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (9.5e-05 : ℝ) < (0.5 : ℝ))
 
 theorem fusion_physics_public_panel_bundle :
     fusion_physics_public_panel_observable_count = 24 ∧

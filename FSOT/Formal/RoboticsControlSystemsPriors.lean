@@ -16,7 +16,8 @@ theorem robotics_control_systems_observable_count_pos : 0 < robotics_control_sys
   unfold robotics_control_systems_observable_count; decide
 
 theorem robotics_control_systems_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem robotics_control_systems_bundle :
     robotics_control_systems_observable_count = 45 ∧

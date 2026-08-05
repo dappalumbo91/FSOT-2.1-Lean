@@ -20,7 +20,8 @@ theorem rcsb_pdb_structures_observable_count_pos : 0 < rcsb_pdb_structures_obser
 
 theorem rcsb_pdb_structures_median_error_under_five_pct :
     rcsb_pdb_structures_median_error_pct < (5 : ℝ) := by
-  unfold rcsb_pdb_structures_median_error_pct; norm_num
+  unfold rcsb_pdb_structures_median_error_pct
+  exact (by norm_num : (0.022236  : ℝ) < (5 : ℝ))
 
 theorem rcsb_pdb_structures_bundle :
     rcsb_pdb_structures_observable_count = 45 ∧

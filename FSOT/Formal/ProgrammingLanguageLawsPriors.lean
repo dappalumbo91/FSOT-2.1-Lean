@@ -16,7 +16,8 @@ theorem programming_language_laws_observable_count_pos : 0 < programming_languag
   unfold programming_language_laws_observable_count; decide
 
 theorem programming_language_laws_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem programming_language_laws_bundle :
     programming_language_laws_observable_count = 107 ∧

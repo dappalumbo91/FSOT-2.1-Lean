@@ -20,7 +20,8 @@ theorem zebrafish_predictive_validation_observable_count_pos : 0 < zebrafish_pre
 
 theorem zebrafish_predictive_validation_median_error_under_five_pct :
     zebrafish_predictive_validation_median_error_pct < (5 : ℝ) := by
-  unfold zebrafish_predictive_validation_median_error_pct; norm_num
+  unfold zebrafish_predictive_validation_median_error_pct
+  exact (by norm_num : (0.3579695  : ℝ) < (5 : ℝ))
 
 theorem zebrafish_predictive_validation_bundle :
     zebrafish_predictive_validation_observable_count = 20 ∧

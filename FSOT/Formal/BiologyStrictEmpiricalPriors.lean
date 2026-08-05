@@ -24,7 +24,8 @@ theorem biology_strict_operon_count_pos : 0 < biology_strict_operon_count := by
 
 theorem biology_strict_median_error_under_two_pct :
     biology_strict_median_error_pct < (2 : ℝ) := by
-  unfold biology_strict_median_error_pct; norm_num
+  unfold biology_strict_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (2 : ℝ))
 
 theorem biology_strict_bundle :
     biology_strict_observable_count = 15 ∧

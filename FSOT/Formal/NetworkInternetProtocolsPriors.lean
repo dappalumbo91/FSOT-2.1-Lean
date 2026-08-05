@@ -16,7 +16,8 @@ theorem network_internet_protocols_observable_count_pos : 0 < network_internet_p
   unfold network_internet_protocols_observable_count; decide
 
 theorem network_internet_protocols_median_error_under_half_pct :
-    (0.010337117254355377 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.010337117254355377 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.010337117254355377 : ℝ) < (0.5 : ℝ))
 
 theorem network_internet_protocols_bundle :
     network_internet_protocols_observable_count = 22 ∧

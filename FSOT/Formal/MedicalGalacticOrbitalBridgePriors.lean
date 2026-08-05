@@ -16,7 +16,8 @@ theorem medical_galactic_orbital_bridge_observable_count_pos : 0 < medical_galac
   unfold medical_galactic_orbital_bridge_observable_count; decide
 
 theorem medical_galactic_orbital_bridge_median_error_under_half_pct :
-    (0.010717743028517818 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.010717743028517818 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.010717743028517818 : ℝ) < (0.5 : ℝ))
 
 theorem medical_galactic_orbital_bridge_bundle :
     medical_galactic_orbital_bridge_observable_count = 48 ∧

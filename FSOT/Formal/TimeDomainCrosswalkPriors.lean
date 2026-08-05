@@ -16,7 +16,8 @@ theorem time_domain_crosswalk_observable_count_pos : 0 < time_domain_crosswalk_o
   unfold time_domain_crosswalk_observable_count; decide
 
 theorem time_domain_crosswalk_median_error_under_half_pct :
-    (0.028056 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.028056 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.028056 : ℝ) < (0.5 : ℝ))
 
 theorem time_domain_crosswalk_bundle :
     time_domain_crosswalk_observable_count = 250 ∧

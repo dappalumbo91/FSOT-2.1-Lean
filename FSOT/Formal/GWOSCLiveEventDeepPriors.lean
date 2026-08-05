@@ -16,7 +16,8 @@ theorem gwosc_live_event_deep_observable_count_pos : 0 < gwosc_live_event_deep_o
   unfold gwosc_live_event_deep_observable_count; decide
 
 theorem gwosc_live_event_deep_median_error_under_half_pct :
-    (0.008488 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.008488 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.008488 : ℝ) < (0.5 : ℝ))
 
 theorem gwosc_live_event_deep_bundle :
     gwosc_live_event_deep_observable_count = 191 ∧

@@ -16,7 +16,8 @@ theorem materials_genome_crosswalk_observable_count_pos : 0 < materials_genome_c
   unfold materials_genome_crosswalk_observable_count; decide
 
 theorem materials_genome_crosswalk_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem materials_genome_crosswalk_bundle :
     materials_genome_crosswalk_observable_count = 38 ∧

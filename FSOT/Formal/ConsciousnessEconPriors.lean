@@ -16,7 +16,8 @@ theorem consciousness_econ_observable_count_pos : 0 < consciousness_econ_observa
   unfold consciousness_econ_observable_count; decide
 
 theorem consciousness_econ_median_error_under_half_pct :
-    (0.008898 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.008898 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.008898 : ℝ) < (0.5 : ℝ))
 
 theorem consciousness_econ_bundle :
     consciousness_econ_observable_count = 37 ∧

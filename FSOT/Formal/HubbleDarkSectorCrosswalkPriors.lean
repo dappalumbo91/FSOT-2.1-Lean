@@ -16,7 +16,8 @@ theorem hubble_dark_sector_crosswalk_observable_count_pos : 0 < hubble_dark_sect
   unfold hubble_dark_sector_crosswalk_observable_count; decide
 
 theorem hubble_dark_sector_crosswalk_median_error_under_half_pct :
-    (0.0198985 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0198985 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0198985 : ℝ) < (0.5 : ℝ))
 
 theorem hubble_dark_sector_crosswalk_bundle :
     hubble_dark_sector_crosswalk_observable_count = 24 ∧

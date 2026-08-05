@@ -16,7 +16,8 @@ theorem soil_science_panel_observable_count_pos : 0 < soil_science_panel_observa
   unfold soil_science_panel_observable_count; decide
 
 theorem soil_science_panel_median_error_under_half_pct :
-    (0.006006 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.006006 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.006006 : ℝ) < (0.5 : ℝ))
 
 theorem soil_science_panel_bundle :
     soil_science_panel_observable_count = 96 ∧

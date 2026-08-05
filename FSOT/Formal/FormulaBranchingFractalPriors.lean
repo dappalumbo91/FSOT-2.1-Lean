@@ -16,7 +16,8 @@ theorem formula_branching_fractal_observable_count_pos : 0 < formula_branching_f
   unfold formula_branching_fractal_observable_count; decide
 
 theorem formula_branching_fractal_median_error_under_half_pct :
-    (0.038016537604979236 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.038016537604979236 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.038016537604979236 : ℝ) < (0.5 : ℝ))
 
 theorem formula_branching_fractal_bundle :
     formula_branching_fractal_observable_count = 255 ∧

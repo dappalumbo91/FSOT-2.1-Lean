@@ -20,7 +20,8 @@ theorem math_generator_airfoil_rmse_observable_count_pos : 0 < math_generator_ai
 
 theorem math_generator_airfoil_rmse_median_error_under_five_pct :
     math_generator_airfoil_rmse_median_error_pct < (5 : ℝ) := by
-  unfold math_generator_airfoil_rmse_median_error_pct; norm_num
+  unfold math_generator_airfoil_rmse_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem math_generator_airfoil_rmse_bundle :
     math_generator_airfoil_rmse_observable_count = 5 ∧

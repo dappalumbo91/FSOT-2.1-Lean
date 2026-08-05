@@ -20,7 +20,8 @@ theorem bibliography_lean_corpus_observable_count_pos : 0 < bibliography_lean_co
 
 theorem bibliography_lean_corpus_median_error_under_five_pct :
     bibliography_lean_corpus_median_error_pct < (5 : ℝ) := by
-  unfold bibliography_lean_corpus_median_error_pct; norm_num
+  unfold bibliography_lean_corpus_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem bibliography_lean_corpus_bundle :
     bibliography_lean_corpus_observable_count = 9 ∧

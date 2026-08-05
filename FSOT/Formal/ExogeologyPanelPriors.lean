@@ -16,7 +16,8 @@ theorem exogeology_panel_observable_count_pos : 0 < exogeology_panel_observable_
   unfold exogeology_panel_observable_count; decide
 
 theorem exogeology_panel_median_error_under_half_pct :
-    (0.026472 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.026472 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.026472 : ℝ) < (0.5 : ℝ))
 
 theorem exogeology_panel_bundle :
     exogeology_panel_observable_count = 100 ∧

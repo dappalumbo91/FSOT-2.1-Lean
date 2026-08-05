@@ -45,27 +45,40 @@ theorem warp_bh_wh_portal_pooled_under_half_pct :
   unfold warp_bh_wh_portal_pooled_median_error_pct
   exact (by norm_num : (0.0  : ℝ) < 0.5)
 
-theorem warp_psi_bh_inlet_pos : (0 : ℝ) < warp_psi_bh_inlet := by
-  unfold warp_psi_bh_inlet; norm_num
+theorem warp_psi_bh_inlet_pos :
+    (0 : ℝ) < warp_psi_bh_inlet := by
+  unfold warp_psi_bh_inlet
+  exact (by norm_num : (0 : ℝ) < (0.009663204175  : ℝ))
 
-theorem warp_psi_wh_outlet_pos : (0 : ℝ) < warp_psi_wh_outlet := by
-  unfold warp_psi_wh_outlet; norm_num
+theorem warp_psi_wh_outlet_pos :
+    (0 : ℝ) < warp_psi_wh_outlet := by
+  unfold warp_psi_wh_outlet
+  exact (by norm_num : (0 : ℝ) < (0.501689416811  : ℝ))
 
-theorem warp_psi_portal_doorway_pos : (0 : ℝ) < warp_psi_portal_doorway := by
-  unfold warp_psi_portal_doorway; norm_num
+theorem warp_psi_portal_doorway_pos :
+    (0 : ℝ) < warp_psi_portal_doorway := by
+  unfold warp_psi_portal_doorway
+  exact (by norm_num : (0 : ℝ) < (0.009663204175  : ℝ))
 
-theorem warp_info_preservation_pos : (0 : ℝ) < warp_info_preservation_proxy := by
-  unfold warp_info_preservation_proxy; norm_num
+theorem warp_info_preservation_pos :
+    (0 : ℝ) < warp_info_preservation_proxy := by
+  unfold warp_info_preservation_proxy
+  exact (by norm_num : (0 : ℝ) < (0.981227203621  : ℝ))
 
-theorem warp_psi_entangle_gate_pos : (0 : ℝ) < warp_psi_entangle_gate := by
-  unfold warp_psi_entangle_gate; norm_num
+theorem warp_psi_entangle_gate_pos :
+    (0 : ℝ) < warp_psi_entangle_gate := by
+  unfold warp_psi_entangle_gate
+  exact (by norm_num : (0 : ℝ) < (0.04803163401  : ℝ))
 
-theorem warp_psi_traverse_pos : (0 : ℝ) < warp_psi_traverse := by
-  unfold warp_psi_traverse; norm_num
+theorem warp_psi_traverse_pos :
+    (0 : ℝ) < warp_psi_traverse := by
+  unfold warp_psi_traverse
+  exact (by norm_num : (0 : ℝ) < (0.000464139486  : ℝ))
 
 theorem warp_portal_stabilization_margin_gt_one :
     (1 : ℝ) < warp_stabilization_margin_portal := by
-  unfold warp_stabilization_margin_portal; norm_num
+  unfold warp_stabilization_margin_portal
+  exact (by norm_num : (1 : ℝ) < (1.722776467449 : ℝ))
 
 theorem warp_bh_wh_linked_to_blackhole_domain :
     (0 : ℝ) < raw_S (get_domain_params "blackhole") := by

@@ -16,7 +16,8 @@ theorem osti_doe_science_panel_observable_count_pos : 0 < osti_doe_science_panel
   unfold osti_doe_science_panel_observable_count; decide
 
 theorem osti_doe_science_panel_median_error_under_half_pct :
-    (0.01382 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.01382 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.01382 : ℝ) < (0.5 : ℝ))
 
 theorem osti_doe_science_panel_bundle :
     osti_doe_science_panel_observable_count = 100 ∧

@@ -16,7 +16,8 @@ theorem supply_chain_logistics_panel_observable_count_pos : 0 < supply_chain_log
   unfold supply_chain_logistics_panel_observable_count; decide
 
 theorem supply_chain_logistics_panel_median_error_under_half_pct :
-    (0.02584 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.02584 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.02584 : ℝ) < (0.5 : ℝ))
 
 theorem supply_chain_logistics_panel_bundle :
     supply_chain_logistics_panel_observable_count = 40 ∧

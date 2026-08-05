@@ -16,7 +16,8 @@ theorem tier_93_dual_wave_spine_observable_count_pos : 0 < tier_93_dual_wave_spi
   unfold tier_93_dual_wave_spine_observable_count; decide
 
 theorem tier_93_dual_wave_spine_median_error_under_half_pct :
-    (0.011093889935064888 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.011093889935064888 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.011093889935064888 : ℝ) < (0.5 : ℝ))
 
 theorem tier_93_dual_wave_spine_bundle :
     tier_93_dual_wave_spine_observable_count = 24 ∧

@@ -20,7 +20,8 @@ theorem federal_science_registry_observable_count_pos : 0 < federal_science_regi
 
 theorem federal_science_registry_median_error_under_five_pct :
     federal_science_registry_median_error_pct < (5 : ℝ) := by
-  unfold federal_science_registry_median_error_pct; norm_num
+  unfold federal_science_registry_median_error_pct
+  exact (by norm_num : (0.024225  : ℝ) < (5 : ℝ))
 
 theorem federal_science_registry_bundle :
     federal_science_registry_observable_count = 16 ∧

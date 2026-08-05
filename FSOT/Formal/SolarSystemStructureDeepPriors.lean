@@ -16,7 +16,8 @@ theorem solar_system_structure_deep_observable_count_pos : 0 < solar_system_stru
   unfold solar_system_structure_deep_observable_count; decide
 
 theorem solar_system_structure_deep_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem solar_system_structure_deep_bundle :
     solar_system_structure_deep_observable_count = 50 ∧

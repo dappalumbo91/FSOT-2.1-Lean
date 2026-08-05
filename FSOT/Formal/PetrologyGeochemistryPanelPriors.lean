@@ -16,7 +16,8 @@ theorem petrology_geochemistry_panel_observable_count_pos : 0 < petrology_geoche
   unfold petrology_geochemistry_panel_observable_count; decide
 
 theorem petrology_geochemistry_panel_median_error_under_half_pct :
-    (0.030428 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.030428 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.030428 : ℝ) < (0.5 : ℝ))
 
 theorem petrology_geochemistry_panel_bundle :
     petrology_geochemistry_panel_observable_count = 80 ∧

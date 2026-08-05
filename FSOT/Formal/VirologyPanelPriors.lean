@@ -16,7 +16,8 @@ theorem virology_panel_observable_count_pos : 0 < virology_panel_observable_coun
   unfold virology_panel_observable_count; decide
 
 theorem virology_panel_median_error_under_half_pct :
-    (0.022236 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.022236 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.022236 : ℝ) < (0.5 : ℝ))
 
 theorem virology_panel_bundle :
     virology_panel_observable_count = 24 ∧

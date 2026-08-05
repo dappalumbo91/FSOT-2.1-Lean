@@ -16,7 +16,8 @@ theorem culinary_arts_observable_count_pos : 0 < culinary_arts_observable_count 
   unfold culinary_arts_observable_count; decide
 
 theorem culinary_arts_median_error_under_half_pct :
-    (0.047615187057821064 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.047615187057821064 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.047615187057821064 : ℝ) < (0.5 : ℝ))
 
 theorem culinary_arts_bundle :
     culinary_arts_observable_count = 26 ∧

@@ -16,7 +16,8 @@ theorem zero_day_risk_evaluator_observable_count_pos : 0 < zero_day_risk_evaluat
   unfold zero_day_risk_evaluator_observable_count; decide
 
 theorem zero_day_risk_evaluator_median_error_under_half_pct :
-    (0.010337117254355377 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.010337117254355377 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.010337117254355377 : ℝ) < (0.5 : ℝ))
 
 theorem zero_day_risk_evaluator_bundle :
     zero_day_risk_evaluator_observable_count = 26 ∧

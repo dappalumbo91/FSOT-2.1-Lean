@@ -16,7 +16,8 @@ theorem founding_cosmic_dust_panel_observable_count_pos : 0 < founding_cosmic_du
   unfold founding_cosmic_dust_panel_observable_count; decide
 
 theorem founding_cosmic_dust_panel_median_error_under_half_pct :
-    (0.026675 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.026675 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.026675 : ℝ) < (0.5 : ℝ))
 
 theorem founding_cosmic_dust_panel_bundle :
     founding_cosmic_dust_panel_observable_count = 24 ∧

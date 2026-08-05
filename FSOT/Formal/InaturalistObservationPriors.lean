@@ -20,7 +20,8 @@ theorem inaturalist_observation_observable_count_pos : 0 < inaturalist_observati
 
 theorem inaturalist_observation_median_error_under_five_pct :
     inaturalist_observation_median_error_pct < (5 : ℝ) := by
-  unfold inaturalist_observation_median_error_pct; norm_num
+  unfold inaturalist_observation_median_error_pct
+  exact (by norm_num : (0.006006  : ℝ) < (5 : ℝ))
 
 theorem inaturalist_observation_bundle :
     inaturalist_observation_observable_count = 288 ∧

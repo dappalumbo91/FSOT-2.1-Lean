@@ -32,7 +32,8 @@ theorem structure_calibration_residue_count_pos :
 
 theorem structure_calibration_burial_beats_fifty_pct :
     (50 : ℝ) < structure_calibration_burial_accuracy_pct := by
-  unfold structure_calibration_burial_accuracy_pct; norm_num
+  unfold structure_calibration_burial_accuracy_pct
+  exact (by norm_num : (50 : ℝ) < (59.47 : ℝ))
 
 theorem structure_calibration_links_codon_map :
     codon_table_count = 64 ∧

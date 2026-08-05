@@ -16,7 +16,8 @@ theorem dark_sector_open_problems_observable_count_pos : 0 < dark_sector_open_pr
   unfold dark_sector_open_problems_observable_count; decide
 
 theorem dark_sector_open_problems_median_error_under_half_pct :
-    (0.01529034996934153 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.01529034996934153 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.01529034996934153 : ℝ) < (0.5 : ℝ))
 
 theorem dark_sector_open_problems_bundle :
     dark_sector_open_problems_observable_count = 24 ∧

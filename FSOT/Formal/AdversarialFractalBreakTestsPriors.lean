@@ -16,7 +16,8 @@ theorem adversarial_fractal_break_tests_observable_count_pos : 0 < adversarial_f
   unfold adversarial_fractal_break_tests_observable_count; decide
 
 theorem adversarial_fractal_break_tests_median_error_under_half_pct :
-    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0 : ℝ) < (0.5 : ℝ))
 
 theorem adversarial_fractal_break_tests_bundle :
     adversarial_fractal_break_tests_observable_count = 24 ∧

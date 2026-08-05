@@ -24,8 +24,10 @@ theorem space_weather_stability_match_le_total :
     space_weather_stability_match_count ≤ space_weather_kp_record_count := by
   unfold space_weather_stability_match_count space_weather_kp_record_count; decide
 
-theorem space_weather_stability_match_rate_nonneg : (0 : ℝ) ≤ space_weather_stability_match_rate := by
-  unfold space_weather_stability_match_rate; norm_num
+theorem space_weather_stability_match_rate_nonneg :
+    (0 : ℝ) ≤ space_weather_stability_match_rate := by
+  unfold space_weather_stability_match_rate
+  exact (by norm_num : (0 : ℝ) ≤ (1.0 : ℝ))
 
 /-- Bundle: NOAA Kp storm classifier bridged to fusion-domain sign proxy. -/
 theorem space_weather_bundle :

@@ -16,7 +16,8 @@ theorem knowledge_base_portable_bundle_panel_observable_count_pos : 0 < knowledg
   unfold knowledge_base_portable_bundle_panel_observable_count; decide
 
 theorem knowledge_base_portable_bundle_panel_median_error_under_half_pct :
-    (0.0020923899350648867 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.0020923899350648867 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.0020923899350648867 : ℝ) < (0.5 : ℝ))
 
 theorem knowledge_base_portable_bundle_panel_bundle :
     knowledge_base_portable_bundle_panel_observable_count = 24 ∧

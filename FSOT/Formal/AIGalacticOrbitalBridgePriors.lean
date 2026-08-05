@@ -16,7 +16,8 @@ theorem ai_galactic_orbital_bridge_observable_count_pos : 0 < ai_galactic_orbita
   unfold ai_galactic_orbital_bridge_observable_count; decide
 
 theorem ai_galactic_orbital_bridge_median_error_under_half_pct :
-    (0.005168558627177688 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.005168558627177688 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.005168558627177688 : ℝ) < (0.5 : ℝ))
 
 theorem ai_galactic_orbital_bridge_bundle :
     ai_galactic_orbital_bridge_observable_count = 48 ∧

@@ -20,7 +20,8 @@ theorem openalex_citation_graph_observable_count_pos : 0 < openalex_citation_gra
 
 theorem openalex_citation_graph_median_error_under_five_pct :
     openalex_citation_graph_median_error_pct < (5 : ℝ) := by
-  unfold openalex_citation_graph_median_error_pct; norm_num
+  unfold openalex_citation_graph_median_error_pct
+  exact (by norm_num : (0.031506  : ℝ) < (5 : ℝ))
 
 theorem openalex_citation_graph_bundle :
     openalex_citation_graph_observable_count = 80 ∧

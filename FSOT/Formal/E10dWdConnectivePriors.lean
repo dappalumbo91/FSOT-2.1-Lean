@@ -28,20 +28,30 @@ def connective_fluid_spacetime_consistency : ℝ := (0.075670330033 : ℝ)
 /-- Warp stabilization margin relay (public from actuation formula). -/
 def connective_warp_stabilization_margin : ℝ := (1.722776467449 : ℝ)
 
-theorem connective_energy_bus_pos : (0 : ℝ) < connective_qveh_warp_energy_bus := by
-  unfold connective_qveh_warp_energy_bus; norm_num
+theorem connective_energy_bus_pos :
+    (0 : ℝ) < connective_qveh_warp_energy_bus := by
+  unfold connective_qveh_warp_energy_bus
+  exact (by norm_num : (0 : ℝ) < (6.5226644e-05  : ℝ))
 
-theorem connective_cryo_rejection_pos : (0 : ℝ) < connective_cryo_thermal_rejection := by
-  unfold connective_cryo_thermal_rejection; norm_num
+theorem connective_cryo_rejection_pos :
+    (0 : ℝ) < connective_cryo_thermal_rejection := by
+  unfold connective_cryo_thermal_rejection
+  exact (by norm_num : (0 : ℝ) < (0.040494897615  : ℝ))
 
-theorem connective_em_coil_pos : (0 : ℝ) < connective_em_coil_actuation := by
-  unfold connective_em_coil_actuation; norm_num
+theorem connective_em_coil_pos :
+    (0 : ℝ) < connective_em_coil_actuation := by
+  unfold connective_em_coil_actuation
+  exact (by norm_num : (0 : ℝ) < (0.076350367522  : ℝ))
 
-theorem connective_fluid_consistency_pos : (0 : ℝ) < connective_fluid_spacetime_consistency := by
-  unfold connective_fluid_spacetime_consistency; norm_num
+theorem connective_fluid_consistency_pos :
+    (0 : ℝ) < connective_fluid_spacetime_consistency := by
+  unfold connective_fluid_spacetime_consistency
+  exact (by norm_num : (0 : ℝ) < (0.075670330033  : ℝ))
 
-theorem connective_stab_margin_gt_one : (1 : ℝ) < connective_warp_stabilization_margin := by
-  unfold connective_warp_stabilization_margin; norm_num
+theorem connective_stab_margin_gt_one :
+    (1 : ℝ) < connective_warp_stabilization_margin := by
+  unfold connective_warp_stabilization_margin
+  exact (by norm_num : (1 : ℝ) < (1.722776467449 : ℝ))
 
 theorem connective_e10d_wd_bundle :
     (0 : ℝ) < connective_qveh_warp_energy_bus ∧

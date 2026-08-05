@@ -29,16 +29,24 @@ theorem aether_distill_row_count_pos : 0 < aether_distill_row_count := by
 theorem aether_solver_op_count_eq_six : aether_solver_op_count = 6 := by
   unfold aether_solver_op_count; decide
 
-theorem aether_psi_con_solver_in_bounds : (0.632 : ℝ) < aether_psi_con_solver ∧ aether_psi_con_solver < (0.633 : ℝ) := by
+theorem aether_psi_con_solver_in_bounds :
+    (0.632 : ℝ) < aether_psi_con_solver ∧ aether_psi_con_solver < (0.633 : ℝ) := by
   unfold aether_psi_con_solver
-  constructor <;> norm_num
+  constructor
+  · exact (by norm_num : (0.632 : ℝ) < (0.632121 : ℝ))
+  · exact (by norm_num : (0.632121 : ℝ) < (0.633 : ℝ))
 
-theorem aether_eta_eff_solver_in_bounds : (0.466 : ℝ) < aether_eta_eff_solver ∧ aether_eta_eff_solver < (0.467 : ℝ) := by
+theorem aether_eta_eff_solver_in_bounds :
+    (0.466 : ℝ) < aether_eta_eff_solver ∧ aether_eta_eff_solver < (0.467 : ℝ) := by
   unfold aether_eta_eff_solver
-  constructor <;> norm_num
+  constructor
+  · exact (by norm_num : (0.466 : ℝ) < (0.466942 : ℝ))
+  · exact (by norm_num : (0.466942 : ℝ) < (0.467 : ℝ))
 
-theorem aether_golden_angle_gt_137 : (137 : ℝ) < aether_golden_angle_solver_deg := by
-  unfold aether_golden_angle_solver_deg; norm_num
+theorem aether_golden_angle_gt_137 :
+    (137 : ℝ) < aether_golden_angle_solver_deg := by
+  unfold aether_golden_angle_solver_deg
+  exact (by norm_num : (137 : ℝ) < (137.507764 : ℝ))
 
 /-- Bundle: 6-op solver + distill corpus + ψ_con/η_eff alignment with formal bounds. -/
 theorem aether_prime_priors_bundle :

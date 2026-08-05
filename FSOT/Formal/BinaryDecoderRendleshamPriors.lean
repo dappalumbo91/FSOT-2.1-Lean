@@ -20,7 +20,8 @@ theorem binary_decoder_rendlesham_observable_count_pos : 0 < binary_decoder_rend
 
 theorem binary_decoder_rendlesham_median_error_under_five_pct :
     binary_decoder_rendlesham_median_error_pct < (5 : ℝ) := by
-  unfold binary_decoder_rendlesham_median_error_pct; norm_num
+  unfold binary_decoder_rendlesham_median_error_pct
+  exact (by norm_num : (0.0  : ℝ) < (5 : ℝ))
 
 theorem binary_decoder_rendlesham_bundle :
     binary_decoder_rendlesham_observable_count = 10 ∧

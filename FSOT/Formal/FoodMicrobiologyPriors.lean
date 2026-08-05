@@ -16,7 +16,8 @@ theorem food_microbiology_observable_count_pos : 0 < food_microbiology_observabl
   unfold food_microbiology_observable_count; decide
 
 theorem food_microbiology_median_error_under_half_pct :
-    (0.04447250077037743 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.04447250077037743 : ℝ) < (0.5 : ℝ) :=
+  (by norm_num : (0.04447250077037743 : ℝ) < (0.5 : ℝ))
 
 theorem food_microbiology_bundle :
     food_microbiology_observable_count = 30 ∧
