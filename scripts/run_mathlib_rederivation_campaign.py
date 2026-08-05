@@ -91,47 +91,37 @@ def _run(cmd: list[str], *, timeout: int = 3600) -> dict:
         }
 
 
-def build_wave(wave: dict, *, skip_lake: bool) -> dict:
+def lake_build_library(*, timeout: int = 7200) -> dict:
+    """One-shot typecheck of the whole FSOT Lean package (all Formal modules)."""
+    print("\n=== lake build FSOT (full library) ===")
+    # `lake build FSOT` compiles the default library target from lakefile.lean
+    result = _run(["lake", "build", "FSOT"], timeout=timeout)
+    print(f"  lake build FSOT → {result['status']} ({result['seconds']}s)")
+    if result["status"] != "passed":
+        print((result.get("stderr_tail") or result.get("stdout_tail") or "")[-800:])
+    return result
+
+
+def build_wave(wave: dict, *, lake_status: str, lake_build: dict | None = None) -> dict:
     modules = [m for m in wave["modules"] if (FORMAL / f"{m}.lean").exists()]
     missing = [m for m in wave["modules"] if m not in modules]
     inv = inventory_formal(modules)
-
-    builds: list[dict] = []
-    if skip_lake:
-        lake_status = "skipped"
-    else:
-        # Prefer building the whole library target once per wave via module paths
-        all_ok = True
-        for mod in modules:
-            # `lake env lean` typechecks a single file with its imports
-            lean_file = FORMAL / f"{mod}.lean"
-            result = _run(
-                ["lake", "env", "lean", str(lean_file.relative_to(ROOT))],
-                timeout=1800,
-            )
-            result["module"] = mod
-            result["target"] = lake_module_target(mod)
-            builds.append(result)
-            if result["status"] not in ("passed", "skipped"):
-                all_ok = False
-        lake_status = "passed" if all_ok and modules else ("skipped" if not modules else "failed")
 
     sorry = inv.get("sorry_list") or []
     mathlib_pct = inv.get("mathlib_depth_pct") or 0.0
     # Engine waves require high Mathlib-class depth; priors are certificate-heavy by design
     if wave.get("role") == "engine":
-        # Bounds/Theorems are analytic; Scalar defs mostly definitional; priors in engine waves ok
         depth_ok = mathlib_pct >= 15.0 or inv.get("theorem_count", 0) == 0
-        # ScalarEngineStructure is definitional-heavy (counts as mathlib_depth via L0)
         if wave["id"] in ("W0_scalar_defs", "W3_domains", "W5_bridge"):
             depth_ok = (mathlib_pct >= 5.0 or inv.get("theorem_count", 0) < 5) and not sorry
         if wave["id"] in ("W1_bounds", "W2_theorems"):
             depth_ok = mathlib_pct >= 40.0 and not sorry
     else:
-        # Priors: lake build + no sorry is the gate; depth is tracked not blocking
+        # Priors: full-library lake build + no sorry is the gate
         depth_ok = not sorry
 
-    wave_ok = lake_status in ("passed", "skipped") and not sorry and depth_ok
+    # Full-corpus closure requires a real lake pass (not skipped)
+    wave_ok = lake_status == "passed" and not sorry and depth_ok
 
     return {
         "id": wave["id"],
@@ -145,7 +135,14 @@ def build_wave(wave: dict, *, skip_lake: bool) -> dict:
         "by_tier": inv.get("by_tier"),
         "sorry_list": sorry,
         "lake_status": lake_status,
-        "builds": builds,
+        "lake_build_seconds": (lake_build or {}).get("seconds"),
+        "builds": [
+            {
+                "target": "FSOT",
+                "status": lake_status,
+                "note": "shared full-library lake build FSOT",
+            }
+        ],
         "depth_gate_ok": depth_ok,
         "wave_ok": wave_ok,
     }
@@ -262,8 +259,13 @@ def main() -> int:
     parser.add_argument(
         "--lake-timeout",
         type=int,
-        default=1800,
-        help="Per-module lake env lean timeout seconds",
+        default=7200,
+        help="Timeout seconds for full `lake build FSOT`",
+    )
+    parser.add_argument(
+        "--per-module-lake",
+        action="store_true",
+        help="Legacy: typecheck each module with lake env lean (slow)",
     )
     args = parser.parse_args()
 
@@ -288,6 +290,8 @@ def main() -> int:
         f"  theorems={corpus['theorem_count']} mathlib_depth="
         f"{corpus['mathlib_depth_count']} ({corpus['mathlib_depth_pct']}%)"
     )
+    if corpus.get("sorry_list"):
+        print(f"  SORRY present: {corpus['sorry_list'][:10]}")
 
     waves_spec = all_waves(
         include_priors=not args.engine_only,
@@ -300,11 +304,36 @@ def main() -> int:
             print("Known:", ", ".join(w["id"] for w in all_waves(True)))
             return 2
 
+    # Shared library build — one pass covers all Formal modules
+    lake_build: dict = {"status": "skipped", "seconds": 0.0}
+    if args.skip_lake:
+        lake_status = "skipped"
+        print("  lake: skipped (--skip-lake)")
+    else:
+        lake_build = lake_build_library(timeout=args.lake_timeout)
+        lake_status = lake_build.get("status") or "failed"
+
     wave_results: list[dict] = []
     for wave in waves_spec:
         print(f"\n--- {wave['id']}: {wave['title']} ---")
         print(f"  modules: {', '.join(wave['modules'][:8])}{'…' if len(wave['modules'])>8 else ''}")
-        wr = build_wave(wave, skip_lake=args.skip_lake)
+        if args.per_module_lake and not args.skip_lake:
+            # Legacy path: typecheck each module (slow)
+            modules = [m for m in wave["modules"] if (FORMAL / f"{m}.lean").exists()]
+            all_ok = True
+            for mod in modules:
+                lean_file = FORMAL / f"{mod}.lean"
+                result = _run(
+                    ["lake", "env", "lean", str(lean_file.relative_to(ROOT))],
+                    timeout=min(args.lake_timeout, 1800),
+                )
+                if result["status"] not in ("passed", "skipped"):
+                    all_ok = False
+                    print(f"  FAIL {mod}: {(result.get('stderr_tail') or '')[-200:]}")
+            local_status = "passed" if all_ok else "failed"
+            wr = build_wave(wave, lake_status=local_status, lake_build=lake_build)
+        else:
+            wr = build_wave(wave, lake_status=lake_status, lake_build=lake_build)
         wave_results.append(wr)
         print(
             f"  thms={wr['theorem_count']} mathlib%={wr['mathlib_depth_pct']} "
@@ -312,42 +341,39 @@ def main() -> int:
         )
         if wr["sorry_list"]:
             print(f"  SORRY: {wr['sorry_list'][:5]}")
-        if wr["lake_status"] == "failed":
-            for b in wr.get("builds") or []:
-                if b.get("status") == "failed":
-                    print(f"  FAIL {b.get('module')}: {(b.get('stderr_tail') or '')[-300:]}")
 
     aux = {} if args.skip_aux else run_aux_closures()
 
     engine_results = [w for w in wave_results if w.get("role") == "engine"]
     priors_results = [w for w in wave_results if w.get("role") == "priors"]
     engine_ok = all(w.get("wave_ok") for w in engine_results) if engine_results else False
-    # If only a single non-engine wave was requested, engine_ok may be false vacuously
     if args.wave and not engine_results:
         engine_ok = False
 
-    engine_mathlib_pct = 0.0
     engine_mods = {m for w in ENGINE_WAVES for m in w["modules"]}
     eng_inv = inventory_formal(sorted(engine_mods))
     engine_mathlib_pct = eng_inv.get("mathlib_depth_pct") or 0.0
 
     priors_ok = all(w.get("wave_ok") for w in priors_results) if priors_results else True
     all_waves_ok = all(w.get("wave_ok") for w in wave_results) if wave_results else False
+    global_lake_ok = lake_status == "passed"
 
     # Closure criteria
     engine_core_closed = (
         engine_ok
         and not eng_inv.get("sorry_list")
         and engine_mathlib_pct >= 20.0
-        and (args.engine_only or True)
+        and global_lake_ok
     )
-    # Full corpus: every wave ok + zero sorry + lake builds not failed
+    # Full corpus: every wave ok + zero sorry + full lake build + priors waves present
     full_corpus_closed = (
         all_waves_ok
         and not corpus.get("sorry_list")
         and not args.engine_only
         and len(priors_results) > 0
         and priors_ok
+        and global_lake_ok
+        and engine_core_closed
     )
 
     if full_corpus_closed:
@@ -363,11 +389,17 @@ def main() -> int:
 
     report = {
         "generated_at": _now(),
-        "version": "1.0",
+        "version": "1.1",
         "verdict": verdict,
         "engine_core_closed": engine_core_closed,
         "full_corpus_closed": full_corpus_closed,
         "full_mathlib_rederivation_of_all_lemmas": full_corpus_closed,
+        "global_lake": {
+            "status": lake_status,
+            "seconds": lake_build.get("seconds"),
+            "cmd": "lake build FSOT",
+            "stderr_tail": (lake_build.get("stderr_tail") or "")[-500:],
+        },
         "engine_mathlib_depth_pct": engine_mathlib_pct,
         "corpus": {
             "theorem_count": corpus["theorem_count"],
@@ -383,6 +415,13 @@ def main() -> int:
             "by_tier": eng_inv.get("by_tier"),
         },
         "waves": wave_results,
+        "wave_summary": {
+            "total": len(wave_results),
+            "ok": sum(1 for w in wave_results if w.get("wave_ok")),
+            "engine_ok": sum(1 for w in engine_results if w.get("wave_ok")),
+            "priors_ok": sum(1 for w in priors_results if w.get("wave_ok")),
+            "priors_total": len(priors_results),
+        },
         "aux_closures": {
             k: {"status": v.get("status"), "seconds": v.get("seconds")} for k, v in aux.items()
         },
@@ -393,10 +432,12 @@ def main() -> int:
             "single_wave": "python scripts/run_mathlib_rederivation_campaign.py --wave W2_theorems",
         },
         "honest_scope": (
-            "Campaign automates inventory, wave lake typecheck, and depth scoring. "
-            "Priors remain largely L1 numeric certificates (multiprover export pins). "
+            "Campaign automates inventory, full `lake build FSOT`, wave depth scoring. "
+            "Priors remain largely L1 numeric certificates (multiprover export pins) — "
+            "full_corpus_closed means typecheck+no-sorry across all waves under shared lake build, "
+            "not that every prior is L2 analytic Mathlib. "
             "Engine waves carry Mathlib analytic depth (Bounds/Theorems). "
-            "full_mathlib_rederivation_of_all_lemmas is true only under full_corpus_closed."
+            "full_mathlib_rederivation_of_all_lemmas tracks full_corpus_closed."
         ),
     }
 

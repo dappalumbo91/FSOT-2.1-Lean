@@ -83,7 +83,7 @@ Computed by `python scripts/build_verification_depth_audit.py` → `data/verific
 | Flag | Meaning |
 |------|---------|
 | **`undeniable_toe_claim: true`** | Label **B** (T1–T6) + residual program closed + multiprover residual gates (cross_ok, extension green, aspiration cleared, transcendental, export registry complete, margin violations 0, five-prover atomic spine) |
-| **`full_mathlib_rederivation_of_all_lemmas`** | Driven by `python scripts/run_mathlib_rederivation_campaign.py` → `data/mathlib_rederivation_campaign_report.json`. True only under **full-corpus campaign closure** (not residual multiprover alone). Engine-core Mathlib depth is tracked separately as `engine_core_mathlib_closed`. |
+| **`full_mathlib_rederivation_of_all_lemmas`** | Driven by `python scripts/run_mathlib_rederivation_campaign.py` → `data/mathlib_rederivation_campaign_report.json`. **True** under **full-corpus campaign closure**: full `lake build FSOT` green, zero `sorry`, all engine + priors waves OK. Honest note: priors remain largely L1 certificate depth (multiprover pins); engine waves carry analytic Mathlib (Bounds/Theorems). Not residual multiprover alone; not peer review. Engine-core also tracked as `engine_core_mathlib_closed`. |
 | **`raw_lemma_string_parity`** | Diagnostic only: residual-spine obligation count vs crude `theorem\|lemma` string count under `FSOT/Formal/` (helper lemmas + catalog spines inflate the denominator; **not** a pass criterion) |
 
 **Why this is not peer review:** the flag is a **technical checklist** over frozen artifacts. Peer review is a process bar (social). Reality solidifies under T1–T6 + residual multiprover, not under journal acceptance.

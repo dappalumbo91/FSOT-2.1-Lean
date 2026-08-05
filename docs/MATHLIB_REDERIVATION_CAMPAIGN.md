@@ -1,7 +1,7 @@
 # Mathlib re-derivation campaign
 
-**Generated:** 2026-08-05T22:12:45.668735+00:00  
-**Verdict:** `ENGINE_CORE_MATHLIB_DEPTH_CLOSED`  
+**Generated:** 2026-08-05T22:17:26.616833+00:00  
+**Verdict:** `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`  
 **Engine core closed:** True  
 **Corpus Mathlib-depth %:** 16.6%  (860/5182)
 
@@ -21,12 +21,26 @@ across `FSOT/Formal` — beyond residual multiprover numeric certificate replay.
 
 | Wave | Role | Thms | Mathlib% | Lake | OK |
 |------|------|-----:|---------:|:----:|:--:|
-| `W0_scalar_defs` | engine | 32 | 43.75 | skipped | ✓ |
-| `W1_bounds` | engine | 277 | 76.53 | skipped | ✓ |
-| `W2_theorems` | engine | 54 | 79.63 | skipped | ✓ |
-| `W3_domains` | engine | 43 | 23.26 | skipped | ✓ |
-| `W4_cosmology` | engine | 64 | 34.38 | skipped | ✓ |
-| `W5_bridge` | engine | 54 | 35.19 | skipped | ✓ |
+| `W0_scalar_defs` | engine | 32 | 43.75 | passed | ✓ |
+| `W1_bounds` | engine | 277 | 76.53 | passed | ✓ |
+| `W2_theorems` | engine | 54 | 79.63 | passed | ✓ |
+| `W3_domains` | engine | 43 | 23.26 | passed | ✓ |
+| `W4_cosmology` | engine | 64 | 34.38 | passed | ✓ |
+| `W5_bridge` | engine | 54 | 35.19 | passed | ✓ |
+| `W6_priors_00` | priors | 171 | 4.68 | passed | ✓ |
+| `W6_priors_01` | priors | 271 | 1.85 | passed | ✓ |
+| `W6_priors_02` | priors | 148 | 4.73 | passed | ✓ |
+| `W6_priors_03` | priors | 138 | 5.07 | passed | ✓ |
+| `W6_priors_04` | priors | 128 | 0.78 | passed | ✓ |
+| `W6_priors_05` | priors | 138 | 1.45 | passed | ✓ |
+| `W6_priors_06` | priors | 138 | 2.9 | passed | ✓ |
+| `W6_priors_07` | priors | 151 | 3.31 | passed | ✓ |
+| `W6_priors_08` | priors | 158 | 2.53 | passed | ✓ |
+| `W6_priors_09` | priors | 160 | 3.12 | passed | ✓ |
+| `W6_priors_10` | priors | 137 | 3.65 | passed | ✓ |
+| `W6_priors_11` | priors | 144 | 2.78 | passed | ✓ |
+| `W6_priors_12` | priors | 139 | 2.88 | passed | ✓ |
+| `W6_priors_13` | priors | 60 | 5.0 | passed | ✓ |
 
 ## Engine core modules
 
