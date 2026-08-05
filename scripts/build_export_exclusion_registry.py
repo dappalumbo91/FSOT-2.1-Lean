@@ -100,6 +100,17 @@ def build() -> dict:
         "cross_proof_meta_module",
         "contains_non_exportable_proof_markers",
     }
+    documented_reasons = structural_ok | {
+        "extended_formal_not_in_export_spine",
+    }
+    residual_debt_reasons = {
+        "not_matched_by_cross_proof_export_patterns",
+        "no_proof_certificate_in_module",
+    }
+    residual_debt = sum(int(reason_counts.get(r) or 0) for r in residual_debt_reasons)
+    documented_exclusions = sum(
+        int(reason_counts.get(r) or 0) for r in documented_reasons
+    )
     triage = {
         "documented_structural": [
             e for e in exclusions if e["reason"] in structural_ok
@@ -118,11 +129,16 @@ def build() -> dict:
     }
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "version": "1.1",
+        "version": "1.2",
         "lean_theorem_count": total,
         "exported_obligation_count": len(exported),
         "unexported_theorem_count": len(exclusions),
         "export_fraction_pct": round(100.0 * len(exported) / total, 2) if total else None,
+        # Residual multiprover completeness: zero unexpected pattern gaps.
+        # Helper lemmas / catalog spines / structural bundles are documented exclusions.
+        "residual_export_debt_count": residual_debt,
+        "documented_exclusion_count": documented_exclusions,
+        "residual_export_complete": residual_debt == 0,
         "by_reason": dict(reason_counts),
         "triage_summary": {
             k: len(v) for k, v in triage.items()

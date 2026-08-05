@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-08-05T21:42:26.333739+00:00",
+  "generated_at": "2026-08-05T21:48:50.938350+00:00",
   "version": "2.0",
   "tier": "80_full_formal_spine",
-  "obligation_count": 2583,
+  "obligation_count": 2586,
   "modules_exported": 558,
   "by_tier": {
     "priors": 2120,
-    "extended": 186,
+    "extended": 189,
     "bounds": 277
   },
   "by_kind": {
     "nat_pos": 633,
     "r_lt_lit_pure": 324,
-    "bundle_conj": 565,
+    "bundle_conj": 566,
     "lt_lit": 229,
     "lt_half": 239,
     "gt_lit": 135,
-    "eq_nat": 26,
+    "eq_nat": 27,
     "nat_le_sym": 30,
     "eq_nat_arith": 32,
     "r_eq_sym": 12,
     "r_eq_lit": 28,
     "r_nonneg": 10,
-    "pos": 101,
+    "pos": 102,
     "int_tuple3_eq": 148,
     "nat_gt_lit": 13,
     "nat_le_lit": 2,
@@ -74737,11 +74737,26 @@
       "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
     },
     {
+      "id": "k_pos",
+      "kind": "pos",
+      "symbol": "k",
+      "value": 0.420222080893624,
+      "statement": "0 < 0.420222080893624",
+      "lean_module": "ScalarEngineStructure",
+      "source_file": "ScalarEngineStructure.lean",
+      "source_tier": "extended",
+      "coq_id": "k_pos",
+      "provable": true,
+      "display_label": "ScalarEngineStructure: k \u2014 scalar > 0",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
       "id": "scalar_engine_structure_theorem_count_pos",
       "kind": "nat_pos",
       "symbol": "scalar_engine_structure_theorem_count",
-      "value": 18,
-      "statement": "0 < 18",
+      "value": 28,
+      "statement": "0 < 28",
       "lean_module": "ScalarEngineStructure",
       "source_file": "ScalarEngineStructure.lean",
       "source_tier": "extended",
@@ -74752,20 +74767,36 @@
       "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
     },
     {
+      "id": "scalar_engine_structure_theorem_count_eq",
+      "kind": "eq_nat",
+      "left": "scalar_engine_structure_theorem_count",
+      "right_value": 28,
+      "value": 28,
+      "statement": "28 = 28",
+      "lean_module": "ScalarEngineStructure",
+      "source_file": "ScalarEngineStructure.lean",
+      "source_tier": "extended",
+      "coq_id": "scalar_engine_structure_theorem_count_eq",
+      "provable": true,
+      "display_label": "ScalarEngineStructure: count identity (scalar_engine_structure_theorem_count_eq)",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
       "id": "scalar_engine_structure_bundle",
       "kind": "bundle_conj",
       "lean_theorem": "scalar_engine_structure_bundle",
-      "statement": "18 = 18 \u2227 0.420222080893624 > 0.0 \u2227 term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1",
-      "lean_statement": "scalar_engine_structure_theorem_count = 18 \u2227     (0 : \u211d) < k \u2227     term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1",
+      "statement": "28 = 28 \u2227 0.420222080893624 > 0.0 \u2227 term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1",
+      "lean_statement": "scalar_engine_structure_theorem_count = 28 \u2227     (0 : \u211d) < k \u2227     term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1",
       "conjunct_count": 3,
       "conjuncts": [
         {
           "kind": "eq_nat",
           "symbol": "scalar_engine_structure_theorem_count",
-          "value": 18,
-          "right_value": 18,
-          "statement": "18 = 18",
-          "lean_conjunct": "scalar_engine_structure_theorem_count = 18",
+          "value": 28,
+          "right_value": 28,
+          "statement": "28 = 28",
+          "lean_conjunct": "scalar_engine_structure_theorem_count = 28",
           "index": 0,
           "proof_style": "norm_num",
           "linked_obligation_id": "scalar_engine_structure_theorem_count_pos"
@@ -74778,14 +74809,13 @@
           "statement": "0.420222080893624 > 0.0",
           "lean_conjunct": "(0 : \u211d) < k",
           "index": 1,
-          "proof_style": "norm_num"
+          "linked_obligation_id": "k_pos"
         },
         {
           "kind": "opaque_conj",
           "statement": "term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1",
           "lean_conjunct": "term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1",
-          "index": 2,
-          "proof_style": "norm_num"
+          "index": 2
         }
       ],
       "proof_witness_ids": [
@@ -74804,6 +74834,78 @@
       "unprovable_reason": "structural_bundle_excluded",
       "exclusion_class": "structural_bundle",
       "display_label": "ScalarEngineStructure: structural bundle index (conjunct witness linkage) (scalar_engine_structure_bundle)",
+      "triangulation_class": "structural_index",
+      "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
+    },
+    {
+      "id": "scalar_engine_depth_bundle",
+      "kind": "bundle_conj",
+      "lean_theorem": "scalar_engine_depth_bundle",
+      "statement": "28 = 28 \u2227 0.420222080893624 > 0.0 \u2227 (0 : \u211d) < 0.42 \u2227 0.420222080893624 > 0.42",
+      "lean_statement": "scalar_engine_structure_theorem_count = 28 \u2227     (0 : \u211d) < k \u2227     (0 : \u211d) < 0.42 \u2227     (0.42 : \u211d) < k",
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "scalar_engine_structure_theorem_count",
+          "value": 28,
+          "right_value": 28,
+          "statement": "28 = 28",
+          "lean_conjunct": "scalar_engine_structure_theorem_count = 28",
+          "index": 0,
+          "proof_witness_id": "scalar_engine_structure_theorem_count_eq",
+          "proof_style": "exact",
+          "linked_obligation_id": "scalar_engine_structure_theorem_count_eq"
+        },
+        {
+          "kind": "gt_lit",
+          "symbol": "k",
+          "value": 0.420222080893624,
+          "bound": 0.0,
+          "statement": "0.420222080893624 > 0.0",
+          "lean_conjunct": "(0 : \u211d) < k",
+          "index": 1,
+          "proof_witness_id": "k_pos",
+          "proof_style": "exact",
+          "linked_obligation_id": "k_pos"
+        },
+        {
+          "kind": "opaque_conj",
+          "statement": "(0 : \u211d) < 0.42",
+          "lean_conjunct": "(0 : \u211d) < 0.42",
+          "index": 2,
+          "proof_style": "norm_num"
+        },
+        {
+          "kind": "gt_lit",
+          "symbol": "k",
+          "value": 0.420222080893624,
+          "bound": 0.42,
+          "statement": "0.420222080893624 > 0.42",
+          "lean_conjunct": "(0.42 : \u211d) < k",
+          "index": 3,
+          "proof_witness_id": "k_gt_0420",
+          "proof_style": "exact",
+          "linked_obligation_id": "k_pos"
+        }
+      ],
+      "proof_witness_ids": [
+        "scalar_engine_structure_theorem_count_eq",
+        "k_pos",
+        null,
+        "k_gt_0420"
+      ],
+      "unparsed_conjunct_count": 1,
+      "exportable_conjunct_count": 3,
+      "lean_module": "ScalarEngineStructure",
+      "source_file": "ScalarEngineStructure.lean",
+      "source_tier": "extended",
+      "cross_proof_role": "structural_index",
+      "coq_id": "scalar_engine_depth_bundle",
+      "provable": false,
+      "unprovable_reason": "structural_bundle_excluded",
+      "exclusion_class": "structural_bundle",
+      "display_label": "ScalarEngineStructure: structural bundle index (conjunct witness linkage) (scalar_engine_depth_bundle)",
       "triangulation_class": "structural_index",
       "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
     }

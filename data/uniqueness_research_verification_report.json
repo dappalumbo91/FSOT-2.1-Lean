@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T20:30:19.699596+00:00",
+  "generated_at": "2026-08-05T21:48:54.873292+00:00",
   "spine": "uniqueness_research",
   "obligation_count": 59,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
@@ -10,7 +10,7 @@
   },
   "rust_f64_replay": {
     "status": "passed",
-    "detail_tail": "out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_uniqueness_research_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n1-Lean\\verification\\rust\\fsot_uniqueness_research_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.32s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\fsot_uniqueness_research_replay-cf2e6db928dd5056.exe)\n     Running tests\\replay_uniqueness_research.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\replay_uniqueness_research-ea9b8853ad918fbf.exe)\n   Doc-tests fsot_uniqueness_research_replay\n"
+    "detail_tail": "out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_uniqueness_research_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n1-Lean\\verification\\rust\\fsot_uniqueness_research_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.33s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\fsot_uniqueness_research_replay-cf2e6db928dd5056.exe)\n     Running tests\\replay_uniqueness_research.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\replay_uniqueness_research-ea9b8853ad918fbf.exe)\n   Doc-tests fsot_uniqueness_research_replay\n"
   },
   "smt_z3": {
     "status": "passed",
@@ -20,6 +20,10 @@
   "coq_uniqueness": {
     "status": "passed",
     "file": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\coq\\UniquenessResearchSpine.v"
+  },
+  "isabelle_uniqueness": {
+    "status": "passed",
+    "file": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\isabelle\\UniquenessResearchSpine.thy"
   },
   "fstar": {
     "status": "skipped",
@@ -35,7 +39,8 @@
     "tla": "verification/tla/FSOTUniquenessResearch.tla",
     "rust": "verification/rust/fsot_uniqueness_research_replay",
     "confinement_research": "data/uniqueness_confinement_research.json",
-    "reality_fiction_calibration": "data/reality_fiction_calibration.json"
+    "reality_fiction_calibration": "data/reality_fiction_calibration.json",
+    "structure_module": "FSOT/Formal/ScalarEngineStructure.lean"
   },
   "source_summaries": {
     "confinement": {
@@ -56,6 +61,14 @@
     "calibration_ok": true
   },
   "honest_scope": "Numeric/structural multiprover certificates for free-color dampening candidate, fluid spacetime omni load-bearing flags, and reality/fiction calibration. Does NOT claim classical continuum Yang-Mills path-integral mass-gap theorem proved. Does claim: absolute rest damps; fluid spacetime is the model; inverted polarity forbidden.",
+  "provers_passed": {
+    "python": true,
+    "rust": true,
+    "smt": true,
+    "coq": true,
+    "isabelle": true,
+    "fstar": false
+  },
   "overall_ok": true,
   "github_ready": true
 }

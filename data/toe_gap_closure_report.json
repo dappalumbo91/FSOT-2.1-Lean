@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T14:39:50.697156+00:00",
+  "generated_at": "2026-08-05T21:48:58.305672+00:00",
   "version": "2.0",
   "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md",
   "gap_closure_doc": "docs/TOE_GAP_CLOSURE.md",
@@ -33,7 +33,7 @@
       "T5_prereg_freeze": {
         "pass": true,
         "artifact": "data/toe_prereg_freeze.json",
-        "bundle_sha256": "67adcf3e668f6b0dd94f369c5b604980c5d3a6e4a7d4b0e1ecbc97f60c7a491b"
+        "bundle_sha256": "74e834bda12e471f01d6110577f65bf9e28230c197a4d6d9e108d995aca90619"
       },
       "T6_falsification": {
         "pass": true,
@@ -65,29 +65,9 @@
     "Labels A/B PASS under frozen criteria"
   ],
   "next_actions_research": [
-    "ACTIVE: FSOT-native confinement uniqueness candidate (free-color dampening) \u2014 docs/UNIQUENESS_RESEARCH_SPINE.md",
-    "DEFERRED: Spin-2 Fock uniqueness from fluid action (probe layer closed; uniqueness proof open)",
-    "DEFERRED: Einstein-Hilbert measure uniqueness theorem (open)"
+    "Full non-abelian path-integral confinement *theorem* (probe layer closed; uniqueness proof open)",
+    "Spin-2 Fock *uniqueness* from fluid action (probe layer closed; uniqueness proof open)",
+    "Einstein\u2013Hilbert measure uniqueness theorem (open)"
   ],
-  "honest_statement": "T3/T4 deepened with GR recovery, SM force package, CKM/PMNS seed+NLO magnitudes, on-shell vs MS-bar Weinberg schemes, confinement scales (\u039b_QCD, \u221a\u03c3), N_eff, SU(3) Casimirs/\u03b2\u2080, spin-2 probes, unitarity-triangle closure, and CKM \u03b1,\u03b2,\u03b3 residual-gated vs geometric PDG(\u03c1\u0304,\u03b7\u0304) \u2014 multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. Executable probe layer for confinement/spin-2 is shipped; full theorems (path-integral confinement uniqueness, spin-2 Fock uniqueness, EH measure uniqueness) remain open.",
-  "residual_program_closed": true,
-  "residual_open_count": 0,
-  "residual_closure_certificate": "data/residual_toe_closure_certificate.json",
-  "residual_closure_at": "2026-08-05T20:03:27.974697+00:00",
-  "residual_note": "Executable residual program CLOSED. next_actions_research are pure-math uniqueness theorems only \u2014 residual_open_count contribution = 0.",
-  "uniqueness_research": {
-    "active_track": "path_integral_confinement_reframe",
-    "status": "CANDIDATE_EXECUTABLE",
-    "classical_ym_path_integral": "OPEN_NOT_CLAIMED",
-    "artifact": "data/uniqueness_confinement_research.json",
-    "manifest": "data/uniqueness_research_manifest.json",
-    "doc": "docs/UNIQUENESS_RESEARCH_SPINE.md",
-    "residual_open_count_contribution": 0,
-    "updated_at": "2026-08-05T20:11:46.948496+00:00",
-    "multiprover": {
-      "overall_ok": true,
-      "obligation_count": 59,
-      "report": "data/uniqueness_research_verification_report.json"
-    }
-  }
+  "honest_statement": "T3/T4 deepened with GR recovery, SM force package, CKM/PMNS seed+NLO magnitudes, on-shell vs MS-bar Weinberg schemes, confinement scales (\u039b_QCD, \u221a\u03c3), N_eff, SU(3) Casimirs/\u03b2\u2080, spin-2 probes, unitarity-triangle closure, and CKM \u03b1,\u03b2,\u03b3 residual-gated vs geometric PDG(\u03c1\u0304,\u03b7\u0304) \u2014 multi-prover exported (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+). Label B remains PASS. Executable probe layer for confinement/spin-2 is shipped; full theorems (path-integral confinement uniqueness, spin-2 Fock uniqueness, EH measure uniqueness) remain open."
 }

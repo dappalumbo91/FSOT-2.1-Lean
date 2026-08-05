@@ -83,6 +83,7 @@ From `run_confinement_uniqueness_suite()`:
 | U8–U10 | strong coupling seed, nuclear emergence sign, timescale ratio |
 
 **Status:** `CANDIDATE_EXECUTABLE`  
+**Multiprover:** `python scripts/run_uniqueness_research_verification.py` → `data/uniqueness_research_verification_report.json` (Python/Rust/Z3/Coq/Isabelle; F* when a native Windows binary is available).  
 **Classical continuum YM path-integral uniqueness as a *required* theorem:** not adopted as residual debt; under ToE logic it is a **candidate for refutation as load-bearing reality** (see claim language).
 
 ---

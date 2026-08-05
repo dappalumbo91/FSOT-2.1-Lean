@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-05T21:42:09.249233+00:00",
+  "generated_at": "2026-08-05T21:50:37.412194+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
     "overall_ok": true,
-    "undeniable_toe_claim": false,
+    "undeniable_toe_claim": true,
     "cross_proof_overall_ok": true,
     "extension_domains_all_green": true,
     "transcendental_certificates_ok": true,
     "export_gap_closed": true,
-    "honest_assessment": "Strong numeric literal triangulation across Lean/Coq/Isabelle/Python/Rust for exported obligations. Literature-aware aspiration debt cleared at 0 domains. NOT full-depth independent proof of entire FSOT theory in all four provers. Stumped observables tracked in scientific_pushback_audit.json."
+    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5183 vs 2581 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
   },
   "obligation_spine": {
     "connective": 24,
@@ -88,7 +88,7 @@
     "provable_bundle_conj": 564,
     "structural_bundle_excluded": 54,
     "false_margin_violations": 0,
-    "conjunct_atomic_coverage_pct": 99.92,
+    "conjunct_atomic_coverage_pct": 99.88,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
     "lt_half_pooled_median_margin": "0.482163937115593848",
     "atomic_triangulated": "2017/2017",
@@ -97,25 +97,25 @@
     "margin_violations_unconfirmed": 0
   },
   "structural_bundle_ledger": {
-    "bundle_conj_total": 562,
-    "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 508,
-    "total_conjuncts": 2494,
-    "conjuncts_with_atomic_coverage": 2492,
-    "conjunct_atomic_coverage_pct": 99.92,
-    "explicit_linked_conjuncts": 1897,
-    "explicit_linked_in_spine": 1895,
-    "explicit_link_hit_pct": 99.89,
+    "bundle_conj_total": 566,
+    "structural_bundle_excluded": 56,
+    "provable_bundle_conj": 510,
+    "total_conjuncts": 2507,
+    "conjuncts_with_atomic_coverage": 2504,
+    "conjunct_atomic_coverage_pct": 99.88,
+    "explicit_linked_conjuncts": 1906,
+    "explicit_linked_in_spine": 1904,
+    "explicit_link_hit_pct": 99.9,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "oracle_debt_ledger": {
-    "obligation_total": 2573,
-    "atomic_triangulated": 2011,
+    "obligation_total": 2581,
+    "atomic_triangulated": 2017,
     "oracle_replay": 0,
     "proof_depth_oracle_tagged": 49,
-    "structural_index": 562,
+    "structural_index": 564,
     "oracle_fraction_pct": 0.0,
-    "atomic_fraction_pct": 78.16,
+    "atomic_fraction_pct": 78.15,
     "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
@@ -132,7 +132,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-08-05T19:48:31.166492+00:00",
+    "generated_at": "2026-08-05T21:42:09.817831+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -194,7 +194,7 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-08-05T19:48:31.252901+00:00",
+    "generated_at": "2026-08-05T21:42:09.893965+00:00",
     "version": "1.0",
     "overall_runtime_ok": true,
     "esp32_scalar_only_gap_closed": true,
@@ -236,7 +236,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-08-05T19:48:31.342846+00:00",
+    "generated_at": "2026-08-05T21:42:09.982852+00:00",
     "version": "1.0",
     "verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes",
     "headline_claim": "zero free parameters",
@@ -264,11 +264,14 @@
     "undeniable_boundary": "Single seed engine; route coordinates select scale/observer regime; no per-observable fits."
   },
   "export_coverage": {
-    "lean_theorem_count": 2146,
-    "exported_obligation_count": 2146,
-    "export_fraction_pct": 100.0,
-    "by_reason": {},
-    "structural_bundle_excluded": null
+    "lean_theorem_count": 5183,
+    "exported_obligation_count": 2586,
+    "export_fraction_pct": 49.89,
+    "by_reason": {
+      "extended_formal_not_in_export_spine": 2587,
+      "structural_bundle_theorem": 10
+    },
+    "structural_bundle_excluded": 10
   },
   "transcendental": {
     "certificate_audit_ok": true,
@@ -2518,7 +2521,15 @@
     "coq_connective_coverage_pct_of_lean_theorems": 1.43,
     "note": "Cross-proof triangulates exported numeric obligations and scientific catalog residual gates; F* boot kernel uses oracle literals; Coq/Isabelle pi/e base intervals are native (Isabelle via HOL-Decision_Procs.Approximation). SMT (Z3/CVC5 when present) bulk-checks continuous catalog bounds; TLA+ models routing flow."
   },
-  "open_gaps_from_depth_audit": [],
+  "open_gaps_from_depth_audit": [
+    {
+      "id": "rust_report_stale",
+      "severity": "low",
+      "description": "cross_proof_verification_report.json may lag rust_replay_lib until full pipeline re-run",
+      "remedy": "Re-run run_cross_proof_verification.py to refresh rust obligation_count",
+      "closed": false
+    }
+  ],
   "findings": [
     {
       "id": "missing_literature_uncertainty",

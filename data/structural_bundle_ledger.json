@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-05T21:42:09.440931+00:00",
+  "generated_at": "2026-08-05T21:50:47.482849+00:00",
   "version": "1.2",
   "summary": {
-    "bundle_conj_total": 564,
-    "structural_bundle_excluded": 54,
+    "bundle_conj_total": 566,
+    "structural_bundle_excluded": 56,
     "provable_bundle_conj": 510,
-    "total_conjuncts": 2500,
-    "conjuncts_with_atomic_coverage": 2498,
-    "conjunct_atomic_coverage_pct": 99.92,
-    "explicit_linked_conjuncts": 1901,
-    "explicit_linked_in_spine": 1899,
-    "explicit_link_hit_pct": 99.89,
+    "total_conjuncts": 2507,
+    "conjuncts_with_atomic_coverage": 2504,
+    "conjunct_atomic_coverage_pct": 99.88,
+    "explicit_linked_conjuncts": 1906,
+    "explicit_linked_in_spine": 1904,
+    "explicit_link_hit_pct": 99.9,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "by_module": {
@@ -64,7 +64,8 @@
     "LeanProofsBridge": 1,
     "CosmologyLab": 1,
     "PhotonicForge": 1,
-    "CrossProofConnectivePriors": 2
+    "CrossProofConnectivePriors": 2,
+    "ScalarEngineStructure": 2
   },
   "provable_bundle_ids": [
     "acoustic_resonance_materials_bundle",
@@ -36211,6 +36212,108 @@
             "cross_proof_full_formal_spine_bundle"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "scalar_engine_structure_bundle",
+      "lean_module": "ScalarEngineStructure",
+      "provable": false,
+      "unprovable_reason": "structural_bundle_excluded",
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "scalar_engine_structure_theorem_count",
+          "statement": "28 = 28",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "scalar_engine_structure_theorem_count_pos"
+          ],
+          "linked_obligation_id": "scalar_engine_structure_theorem_count_pos"
+        },
+        {
+          "kind": "gt_lit",
+          "symbol": "k",
+          "statement": "0.420222080893624 > 0.0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "k_pos"
+          ],
+          "linked_obligation_id": "k_pos"
+        },
+        {
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1",
+          "atomic_coverage": false,
+          "coverage_via": null,
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 66.67
+    },
+    {
+      "id": "scalar_engine_depth_bundle",
+      "lean_module": "ScalarEngineStructure",
+      "provable": false,
+      "unprovable_reason": "structural_bundle_excluded",
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "scalar_engine_structure_theorem_count",
+          "statement": "28 = 28",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "scalar_engine_structure_theorem_count_eq"
+          ],
+          "linked_obligation_id": "scalar_engine_structure_theorem_count_eq"
+        },
+        {
+          "kind": "gt_lit",
+          "symbol": "k",
+          "statement": "0.420222080893624 > 0.0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "k_pos"
+          ],
+          "linked_obligation_id": "k_pos"
+        },
+        {
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(0 : \u211d) < 0.42",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "scalar_engine_depth_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "gt_lit",
+          "symbol": "k",
+          "statement": "0.420222080893624 > 0.42",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "k_pos"
+          ],
+          "linked_obligation_id": "k_pos"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0

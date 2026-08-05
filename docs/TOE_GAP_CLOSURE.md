@@ -1,6 +1,6 @@
 # TOE gap closure runbook
 
-Generated: `2026-08-05T14:39:50.697156+00:00`
+Generated: `2026-08-05T21:48:58.305672+00:00`
 
 Frozen boundaries: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 
@@ -81,13 +81,11 @@ Manifest: `data/toe_force_package_manifest.json`
 
 ### Still open (theorems / social — not claimed)
 
-1. Full non-abelian **path-integral** confinement *theorem* — **active:** FSOT reframe as free-color dampening ([`UNIQUENESS_RESEARCH_SPINE.md`](UNIQUENESS_RESEARCH_SPINE.md))
-2. Spin-2 graviton **Fock uniqueness** theorem from the fluid action (deferred; same dampening pattern later)
-3. Uniqueness theorem for Einstein–Hilbert measure (deferred)
+1. Full non-abelian **path-integral** confinement *theorem*
+2. Spin-2 graviton **Fock uniqueness** theorem from the fluid action
+3. Uniqueness theorem for Einstein–Hilbert measure
 4. Published CKM angle-*fit* centrals as residual gate (≠ geometric PDG ρ̄,η̄ by construction)
 
-**Post-residual uniqueness track:** `python scripts/build_uniqueness_confinement_research.py`  
-Does **not** reopen residual debt. Classical continuum YM uniqueness is still **OPEN_NOT_CLAIMED**.
 
 See also: [`docs/T3_T4_GR_SM_DEEPENING.md`](T3_T4_GR_SM_DEEPENING.md).
 
