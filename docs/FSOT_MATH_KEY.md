@@ -1,9 +1,10 @@
 # FSOT Mathematical Key — unified principle for every domain
 
-**Edition:** 2026-08-03  
+**Edition:** 2026-08-05  
 **Authority pin:** `D1D38A` · `vendor/fsot_compute.py`  
 **Precision gates:** green ≤ **0.5%** pooled median · aspiration ≤ **0.05%** (`scripts/fsot_precision_constants.py`)  
-**Full atlas:** `data/publication/domain_atlas.csv` (**403** domains · **~2.63M** empirical records including MPCORB)
+**Live green count:** [`docs/CURRENT_STATUS.md`](CURRENT_STATUS.md) (currently **430/430** margin-audit green)  
+**Full atlas:** `data/publication/domain_atlas.csv` + extension benchmarks · MPCORB-class catalogs in-repo
 
 This is the **single readable key** for using the math across every covered domain.  
 It is not a second theory. It is the same engine, the same seeds, and the same routing rule — applied at the right **dimensional interface**.
@@ -186,7 +187,7 @@ Field language (MAPE / ppm): `data/scientific_error_metrics_map.md`
 | Layer | Frameworks | Proves |
 |-------|------------|--------|
 | **A Engine math** | Lean 4 (master), Coq, Isabelle, F\*, Rust, seeds pin | Identities, scalar structure, exported bounds |
-| **B Empirical atlas** | Python + 410 green benchmarks | Domain residuals vs data ≤ 0.5% |
+| **B Empirical atlas** | Python + **430** green benchmarks (live: CURRENT_STATUS) | Domain residuals vs data ≤ 0.5% |
 | **C Streams / catalogs** | Live APIs, MPCORB, MAST, … | Provenance + integrity (e.g. Kepler n↔a) |
 | **Bulk bounds** | Z3 / CVC5 SMT | Conjunction of residual inequalities |
 | **Flow** | TLA+ | Domain-routing state machine (no gate skips) |
@@ -203,7 +204,7 @@ Granularity audit: `docs/VERIFICATION_GRANULARITY_AUDIT.md`
 | Quantity | Value |
 |----------|------:|
 | Publication atlas domains | **403** |
-| Margin-audit green benchmarks | **410 / 410** |
+| Margin-audit green benchmarks | **430 / 430** (refresh via `build_repo_status_snapshot.py`) |
 | Empirical record sum (atlas) | **~2.63M** (incl. MPCORB 1.55M) |
 | Scientific catalog obligations | **~1912** multi-prover residual gates |
 | MPCORB pooled residual | **0.023015%** (A_strong, D_eff=21) |

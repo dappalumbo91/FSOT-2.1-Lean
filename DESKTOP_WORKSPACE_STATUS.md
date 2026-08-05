@@ -1,8 +1,9 @@
 # Desktop workspace status — `C:\Users\damia\Desktop\FSOT-2.1-Lean`
 
 **Canonical working root while `I:\` is under repair.**  
-**Reviewed:** 2026-08-03  
-**Remote:** `https://github.com/dappalumbo91/FSOT-2.1-Lean` @ `dfebff1` (+ local verification math upgrades)
+**Reviewed:** 2026-08-05  
+**Remote:** `https://github.com/dappalumbo91/FSOT-2.1-Lean`  
+**Live stamp:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · sync: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)
 
 ---
 

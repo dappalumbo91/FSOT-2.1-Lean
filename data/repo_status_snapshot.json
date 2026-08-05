@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-08-05T11:52:21.653311+00:00",
+  "edition_stamp": "2026-08-05",
+  "authority": {
+    "pin_prefix": "D1D38A",
+    "fsot_compute_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+    "pin_match": true,
+    "path": "vendor/fsot_compute.py"
+  },
+  "empirical": {
+    "green_gate_pass_count": 430,
+    "green_gate_fail_count": 0,
+    "benchmark_file_count": 430,
+    "green_gate_pct": 0.5,
+    "tier_distribution": {
+      "B_verified": 324,
+      "A_strong": 95,
+      "C_thin": 3
+    },
+    "median_of_medians_pct": 0.000561846,
+    "total_scalar_records": 61335
+  },
+  "multiprover": {
+    "overall_ok": true,
+    "github_ready": true,
+    "seven_way_bare_metal": true,
+    "eight_way_hardware": true,
+    "atomic_provable": 1904,
+    "catalog_obligations": 2025,
+    "true_margin_violations": 0,
+    "structural_bundle_excluded": 54,
+    "frameworks_passed": [
+      "coq",
+      "cross_refinement",
+      "esp32_harness",
+      "fstar",
+      "fstar_refinement",
+      "hardware_bare_metal",
+      "isabelle",
+      "isabelle_refinement",
+      "lean_connective",
+      "python_decimal",
+      "qemu_harness",
+      "rust_lean_bridge_parity",
+      "rust_lean_bridge_refinement",
+      "rust_refinement",
+      "rust_replay",
+      "smt_catalog_bounds",
+      "tla_domain_routing"
+    ]
+  },
+  "expansion_highlights": {
+    "dzhanibekov_panel": "data/dzhanibekov_intermediate_axis_fsot_panel_benchmark.json",
+    "dzhanibekov_doc": "docs/DZHANIBEKOV_FSOT_RESPONSE.md",
+    "proper_densify_policy": "docs/FSOT_PROPER_DENSIFY_POLICY.md",
+    "multiprover_debt_clarified": "docs/MULTIPROVER_DESIGN_DEBT_CLARIFIED.md",
+    "hardware_depth": "docs/HARDWARE_DEPTH_CACHE_INTERCONNECT.md",
+    "breakthroughs": "docs/RECENT_BREAKTHROUGH_EXPANSION.md",
+    "false_densify_remediated": true
+  },
+  "sync_rule": "After any densify / new panel / multiprover run: python scripts/build_repo_status_snapshot.py then update README headlines if green count or multiprover flags change. See docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md"
+}

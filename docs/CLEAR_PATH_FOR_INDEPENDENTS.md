@@ -38,7 +38,7 @@ python scripts/run_publication_verification_bundle.py
 ```
 
 **Open:** `data/benchmark_margin_audit.json`  
-**Expect:** `green_gate_fail_count == 0` (currently 405/405 green).  
+**Expect:** `green_gate_fail_count == 0` (currently **430/430** green — live stamp: [`CURRENT_STATUS.md`](CURRENT_STATUS.md)).  
 **If this fails on a clean clone, the empirical claim is broken.**
 
 ---

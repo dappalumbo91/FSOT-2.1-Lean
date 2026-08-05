@@ -43,7 +43,7 @@ Field-language map (MAPE / fractional / ppm): `data/scientific_error_metrics_map
 |------------|-------------------------------|-----------------|
 | Formal proof assistant | Lean | Lean **+** Coq **+** Isabelle **+** F* **+** Rust replay |
 | Numeric oracle pin | often absent | `vendor/fsot_compute.py` pin **D1D38A** |
-| Empirical kill gate | often absent | 402 domains / 405 green files, prereg PRED + open holdouts |
+| Empirical kill gate | often absent | **430** green benchmark files (live: `docs/CURRENT_STATUS.md`), prereg PRED + open holdouts |
 | Live public data | rare | Open streams + MAST/astroquery (public) |
 | Falsification path | informal | Skeptic kit + holdouts + near-miss ledger |
 

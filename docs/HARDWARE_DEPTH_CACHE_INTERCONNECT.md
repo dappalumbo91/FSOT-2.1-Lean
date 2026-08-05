@@ -43,7 +43,7 @@ Vendor anchors: `vendor/hardware/cache_interconnect_public_anchors.json`
 |-------|------------------------|
 | Cache | MESI/MOESI state counts, SIMD widths + trit packing, sector layout, prefetch \(2^k\), store-buffer depths, 2 MiB page lines |
 | Interconnect | AXI widths, DRAM MT/s ladder, NUMA \(2^k\) nodes, PCIe gen3→gen6 doubling, 8b/10b & 128b/130b encoding |
-| C pack | Host golden + seed structural densify (θ, φ⁻⁴, pack word, 6 sectors) to clear C_thin n≥20 |
+| C pack | Host golden + pack/θ parity vs archive (proper densify only — see `FSOT_PROPER_DENSIFY_POLICY.md`) |
 | Spine | Pulls ≤48 green rows per child panel into `FSOT_Hardware_Depth_Spine` |
 
 **Honesty:** most densify rows are literature/structure identities or process gates (measured = computed class). Non-trivial seed forms remain θ, φ⁻⁴, packing 2 bit/trit, C_eff·formal VRAM — not free-param PDG folds.

@@ -37,27 +37,31 @@ This regenerates:
 - `data/cross_proof_verification_manifest.yaml` → `status_local` (fail-closed, no hand-edits)
 - `data/cross_proof_verification_benchmark.json`
 
-**Pass bar (repo):** `overall_ok: true` = seven-way bare-metal (Lean+Coq+Isabelle+Rust+F\*+QEMU serial+disk).
+**Pass bar (repo):** `overall_ok: true` = seven-way bare-metal (Lean+Coq+Isabelle+Rust+F\*+QEMU serial+disk) · **ESP32** extends eight-way hardware when harness passes.
 
 **ESP32 hardware** is optional unless you pass `--require-esp32` (needs CP210x COM port).
 
-## What is cross-verified
+**Live multiprover + green counts:** [`docs/CURRENT_STATUS.md`](../docs/CURRENT_STATUS.md) · debt clarified: [`docs/MULTIPROVER_DESIGN_DEBT_CLARIFIED.md`](../docs/MULTIPROVER_DESIGN_DEBT_CLARIFIED.md).
 
-| Layer | Count | Frameworks |
-|-------|-------|------------|
+## What is cross-verified (typical post–2026-08 multiprover)
+
+| Layer | Count (order) | Frameworks |
+|-------|---------------|------------|
 | Connective spine | 24 obligations | Lean → Python → Coq → Isabelle |
-| Full formal spine | 1,241 provable obligations | same + Rust f64 replay |
-| **Scientific catalog spine** | ~1,980 residual / seed gates | Python + Coq + Isabelle + Lean export + **SMT bulk** |
-| Transcendental bounds | 68 lemmas | Coq/Isabelle with **certified π/e axioms** (2 intervals deferred) |
+| Full formal atomic | **~1,904** provable | same + Rust f64 replay |
+| Structural `bundle_conj` | ~526 indices (54 unparsed-export excluded) | Lean indices; **not** residual fails |
+| **Scientific catalog spine** | **~2,025** residual / seed gates | Python + Coq + Isabelle + Lean + **SMT bulk** |
+| Transcendental bounds | **68** inventory lemmas (all multiprovered) | Coq/Isabelle/Rust; 2 π/e Mathlib-style in Lean |
 | Domain-routing flow | finite TLA+ model | `verification/tla/FSOTDomainRouting.tla` |
 | Boot scalar | 1 canonical value | Rust no_std ↔ Python ↔ F\* constants ↔ QEMU UART |
+| True margin violations | **0** | `margin_violations.json` |
 
-**Coverage honesty:** Coq connective spine = **~1.43%** of Lean theorem count. Cross-proof triangulates **exported numeric obligations**, not every `FSOT.Formal.*` module. Engine math is separately formalized in Lean `FSOT.Formal.*` and Isabelle `FSOTScalarMath.thy` (see `docs/VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`).
+**Coverage honesty:** Cross-proof triangulates **exported numeric obligations**, not every `FSOT.Formal.*` module. Engine math is separately formalized in Lean `FSOT.Formal.*` and Isabelle `FSOTScalarMath.thy` (see `docs/VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`).
 
-## Documented proof debt (`proof_debt` in report)
+## Documented proof debt (honest)
 
-- F\*: `boot_scalar_positive` / `boot_scalar_matches_canonical` are explicit **assume** lemmas (transcendental shell).
-- F\*: `cos`, `sin`, `sqrt` primitives assumed on reals.
+- Structural bundles with unparsed conjuncts: export-index exclusion, **not** green residual fails.
+- Optional: deeper non-numeric π/e proofs in Coq/Isabelle (Lean already proves intervals).
 - Coq/Isabelle: `certified_*` axioms for π/e intervals (see `audit_transcendental_bounds_gap.py`).
 
 Numeric truth for boot scalar is triangulated via **Tier 85 Rust/Python f64** — not hidden `admit()`.

@@ -4,8 +4,9 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.7 — Label A + Label B (T1–T6) closed · CI · clean-clone · arXiv scaffolds · 2026-08-03  
-**Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)
+**Edition:** v2.8 — Label A + Label B (T1–T6) · densify remediation · Dzhanibekov panel · multiprover green · **2026-08-05**  
+**Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)  
+**Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · sync checklist: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
 
@@ -35,7 +36,7 @@ FSOT is put forward as a **candidate Theory of Everything** under a **frozen tec
 
 1. One seed-derived scalar engine (π, e, φ, γ, G / Catalan) — pin **D1D38A** — zero free fits.  
 2. Continuum / fluid dynamics (`vendor/fsot_dynamics.py`) + limit-recovery probes (GR weak field, QM scales, SM bridges).  
-3. Multi-domain residual atlas green (**412/412** ≤0.5% pooled); aspiration tier closed (**≤0.05%** scalar median).  
+3. Multi-domain residual atlas green (**430/430** ≤0.5% pooled); live stamp in [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).  
 4. Contested-sector public anchors (H₀ Planck/SH0ES, DESI *w_a*, N_eff, σ₈, Higgs, …) with utilization fixes, not excuses.  
 5. Preregistered freeze + falsification registry.  
 6. Multi-prover triangulation (Lean master + Coq/Isabelle/F*/Rust + SMT + TLA+).
@@ -103,6 +104,10 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 | [docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) | Ontology and operational consciousness claims |
 | [docs/CLEAR_PATH_FOR_INDEPENDENTS.md](docs/CLEAR_PATH_FOR_INDEPENDENTS.md) | Step ladder for first-time readers |
 | [docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md](docs/RESIDUAL_HONESTY_AND_CLAIM_TIERS.md) | What “accuracy” is allowed to mean |
+| [docs/CURRENT_STATUS.md](docs/CURRENT_STATUS.md) | **Live** green count + multiprover flags (regenerate after expansion) |
+| [docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md) | What to update when deepening the model |
+| [docs/FSOT_PROPER_DENSIFY_POLICY.md](docs/FSOT_PROPER_DENSIFY_POLICY.md) | Densify = formula + real data only |
+| [docs/DZHANIBEKOV_FSOT_RESPONSE.md](docs/DZHANIBEKOV_FSOT_RESPONSE.md) | Vacuum intermediate-axis flip (reviewer critique) |
 
 **The kill command above is the authority for numbers.** The narrative explains *why* the model is shaped this way; it does not replace the green gate or the multi-prover reports.
 
@@ -110,7 +115,7 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan), **zero free parameters** — evaluated against measured reality across **403+ routed scientific domains (35 core + extensions)** and **~2.63M empirical records** (including the IAU **MPCORB** full minor-planet catalog at **~0.023%** pooled residual).
 
-The results, as of this edition: **410/410** public benchmark files pass a ≤0.5% pooled error green gate; framework-wide domain medians sit in the **~0.01–0.03%** band. The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain.
+The results, as of this edition: **430/430** public benchmark files pass a ≤0.5% pooled error green gate (see live [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md)); framework-wide domain medians sit in the **sub-0.05%** band. The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain. Densify must use **seed formula + real measured data only** ([`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md)).
 
 Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator), Coq/Rocq, Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (~1912 multi-prover obligations). QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
 

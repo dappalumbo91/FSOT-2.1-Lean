@@ -43,7 +43,7 @@ True margin violation count must stay **0** on a green ledger.
 
 | Gate | Location | Status |
 |------|----------|--------|
-| Empirical residual ≤ 0.5% | `benchmark_margin_audit.json` | 429/429 green |
+| Empirical residual ≤ 0.5% | `benchmark_margin_audit.json` | **430/430** green (see `CURRENT_STATUS.md`) |
 | Atomic multiprover | Lean/Coq/Isabelle/F*/Rust | passed |
 | True falsifiers in export | `margin_violations.json` | 0 |
 
