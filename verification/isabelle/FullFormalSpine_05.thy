@@ -3,6 +3,12 @@ theory FullFormalSpine_05
 imports Complex_Main
 begin
 
+lemma environmental_engineering_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma environmental_engineering_ext_observable_count_pos: "0 < (18416 :: nat)"
+  by eval
+
 lemma environmental_engineering_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
@@ -295,12 +301,6 @@ lemma fpc_temporal_coupling_median_error_under_half_pct: "(0.029733 :: real) < (
   by eval
 
 lemma fractal_constant_recursion_observable_count_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma fractal_constant_recursion_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma fsot_aggregate_organized_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
 end

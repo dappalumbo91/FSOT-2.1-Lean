@@ -3,6 +3,12 @@ theory FullFormalSpine_06
 imports Complex_Main
 begin
 
+lemma fractal_constant_recursion_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma fsot_aggregate_organized_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
 lemma fsot_aggregate_organized_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
@@ -295,12 +301,6 @@ lemma hydrology_stability_match_le_total: "(957 :: nat) <= (960 :: nat)"
   by eval
 
 lemma hydrology_stability_match_rate_nonneg: "(0 :: real) <= (0.996875 :: real)"
-  by eval
-
-lemma igem_live_fasta_observable_count_pos: "0 < (42 :: nat)"
-  by eval
-
-lemma igem_live_fasta_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
 end

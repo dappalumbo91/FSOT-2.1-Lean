@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma environmental_engineering_ext_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma environmental_engineering_ext_observable_count_pos : (0 < 18416)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma environmental_engineering_ext_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -298,11 +304,5 @@ Lemma fpc_temporal_coupling_median_error_under_half_pct : (0.029733%R) < (0.5%R)
 Proof. lra. Qed.
 
 Lemma fractal_constant_recursion_observable_count_pos : (0 < 21)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma fractal_constant_recursion_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fsot_aggregate_organized_panel_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

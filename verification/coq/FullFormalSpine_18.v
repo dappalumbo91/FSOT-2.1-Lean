@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma dark_energy_term1_negative : (-2.1349793149885588%R) < 0%R.
+Proof. lra. Qed.
+
+Lemma dark_energy_term2_eq_one : (1.0%R) = (1.0%R).
+Proof. reflexivity. Qed.
+
 Lemma cosmological_term1_dominates_term3 : (0.000000000000000007824928065101266%R) < (2.1956926285882763%R).
 Proof. lra. Qed.
 
@@ -298,11 +304,5 @@ Lemma lambda_cdm_wave_partition : (30 = 30)%nat.
 Proof. reflexivity. Qed.
 
 Lemma photonic_voxel_count_pos : (0 < 180)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma photonic_trinary_partition : (180 = 180)%nat.
-Proof. reflexivity. Qed.
-
-Lemma wave4_observable_count_pos : (0 < 16)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

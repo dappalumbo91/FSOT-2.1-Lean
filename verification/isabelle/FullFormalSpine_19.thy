@@ -3,6 +3,12 @@ theory FullFormalSpine_19
 imports Complex_Main
 begin
 
+lemma photonic_trinary_partition: "(180 :: nat) = (180 :: nat)"
+  by eval
+
+lemma wave4_observable_count_pos: "0 < (16 :: nat)"
+  by eval
+
 lemma cross_proof_obligation_count_pos: "0 < (24 :: nat)"
   by eval
 

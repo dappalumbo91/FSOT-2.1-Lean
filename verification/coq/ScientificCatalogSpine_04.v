@@ -4,26 +4,6 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma cat_pubchem_live_deep_records_pos : (0 < 5043)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_pubchem_live_deep_pooled_under_half_pct : ((0.032631%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_pubchem_live_deep_pooled_lt_half_pure : ((0.032631%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_pubchem_live_deep_max_scalar_under_half_pct : ((0.048946%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_pubchem_live_deep_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
 Lemma cat_founding_quantum_vacuum_panel_records_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -184,7 +164,7 @@ Lemma cat_marine_biology_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_fsot_processor_function_panel_records_pos : (0 < 19)%nat.
+Lemma cat_fsot_processor_function_panel_records_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
@@ -481,5 +461,25 @@ Proof. lra. Qed.
 
 
 Lemma cat_fluid_spacetime_observable_spine_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_fluid_spacetime_prereg_validation_panel_records_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_fluid_spacetime_prereg_validation_panel_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fluid_spacetime_prereg_validation_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_fluid_spacetime_prereg_validation_panel_max_scalar_under_half_pct : ((0.039797%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fluid_spacetime_prereg_validation_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T12:41:03.548191+00:00",
+  "generated_at": "2026-08-05T13:57:36.587583+00:00",
   "edition_stamp": "2026-08-05",
   "authority": {
     "pin_prefix": "D1D38A",
@@ -13,19 +13,20 @@
     "benchmark_file_count": 432,
     "green_gate_pct": 0.5,
     "tier_distribution": {
-      "B_verified": 329,
-      "A_strong": 95
+      "B_verified": 328,
+      "A_strong": 95,
+      "C_thin": 1
     },
     "median_of_medians_pct": 0.000561846,
-    "total_scalar_records": 61335
+    "total_scalar_records": 61445
   },
   "multiprover": {
     "overall_ok": true,
     "github_ready": true,
     "seven_way_bare_metal": true,
     "eight_way_hardware": true,
-    "atomic_provable": 1904,
-    "catalog_obligations": 2025,
+    "atomic_provable": 1906,
+    "catalog_obligations": 2040,
     "true_margin_violations": 0,
     "structural_bundle_excluded": 54,
     "frameworks_passed": [

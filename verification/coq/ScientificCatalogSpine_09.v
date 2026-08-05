@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_virology_panel_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_virology_panel_pooled_under_half_pct : ((0.000637597%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_virology_panel_pooled_lt_half_pure : ((0.000637597%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_virology_panel_max_scalar_under_half_pct : ((0.022236%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_virology_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_zebrafish_cell_tracking_panel_records_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_intrinsic_llm_validators_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_crossref_scholarly_panel_records_pos : (0 < 200)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_crossref_scholarly_panel_pooled_under_half_pct : ((0.01382%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_crossref_scholarly_panel_pooled_lt_half_pure : ((0.01382%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_crossref_scholarly_panel_max_scalar_under_half_pct : ((0.01382%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_crossref_scholarly_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

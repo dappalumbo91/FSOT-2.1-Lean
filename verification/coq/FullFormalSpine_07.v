@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma igem_live_fasta_observable_count_pos : (0 < 42)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma igem_live_fasta_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
+
 Lemma igem_parts_expanded_observable_count_pos : (0 < 111)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -299,10 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma maillard_chemistry_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma maillard_chemistry_observable_count_pos : (0 < 30)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma maillard_chemistry_median_error_under_half_pct : (0.09443694019339477%R) < (0.5%R).
-Proof. lra. Qed.
 

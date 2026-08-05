@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma symbolic_archetype_panel_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma synthetic_biology_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
 Lemma synthetic_biology_observable_count_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -298,11 +304,5 @@ Lemma vl_agent_distill_panel_median_error_under_half_pct : (0.022236%R) < (0.5%R
 Proof. lra. Qed.
 
 Lemma vl_distill_atlas_observable_count_pos : (0 < 10)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma vl_distill_atlas_median_error_under_five_pct : 0%R < (5.0%R).
-Proof. lra. Qed.
-
-Lemma volcanology_panel_observable_count_pos : (0 < 90)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

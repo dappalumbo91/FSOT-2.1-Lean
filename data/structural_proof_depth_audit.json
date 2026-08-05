@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-04T15:08:07.734713+00:00",
+  "generated_at": "2026-08-05T13:17:22.309449+00:00",
   "version": "1.0",
   "tier": "92_structural_proof_depth",
   "overall_ok": true,
-  "provable_bundle_conj_count": 472,
+  "provable_bundle_conj_count": 473,
   "provable_bundles": [
     {
       "id": "acoustic_resonance_materials_bundle",
@@ -395,6 +395,10 @@
     },
     {
       "id": "domain_orbital_predictions_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "dzhanibekov_intermediate_axis_fsot_panel_bundle",
       "conjunct_count": 4
     },
     {
@@ -1894,13 +1898,13 @@
       "conjunct_count": 7
     }
   ],
-  "structural_proof_count": 1983,
+  "structural_proof_count": 1984,
   "min_required": 10,
   "breakdown": {
-    "bundle_split_lemmas": 461,
-    "bundle_conjunct_lemmas": 1512,
+    "bundle_split_lemmas": 462,
+    "bundle_conjunct_lemmas": 1515,
     "connective_ordering_lemmas": 3,
-    "native_transcendental_chain_lemmas": 7
+    "native_transcendental_chain_lemmas": 4
   },
   "artifacts": {
     "coq_structural": "verification\\coq\\StructuralProofSpine.v",
@@ -1915,10 +1919,10 @@
       "stderr": ""
     },
     "native_transcendental": {
-      "status": "failed",
+      "status": "passed",
       "file": "TranscendentalBoundsNative.v",
-      "vo_written": false,
-      "stderr": "File \".\\TranscendentalBoundsNative.v\", line 9, characters 7-10:\nError: No applicable tactic.\n\n"
+      "vo_written": true,
+      "stderr": ""
     }
   },
   "proof_depth_note": "Structural spine proves bundle conjunct splits and connective ordering chains independently of Lean proof terms; TranscendentalBoundsNative supplies Taylor/interval depth for pi/e base intervals.",

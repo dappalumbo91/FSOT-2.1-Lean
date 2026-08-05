@@ -54,6 +54,7 @@ Frozen criteria: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 |-------|----------------|
 | ~15 min kill path | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) |
 | Full human guide | [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
+| **Public data citations** | [`BENCHMARK_DATA_CITATIONS.md`](BENCHMARK_DATA_CITATIONS.md) · `python scripts/build_benchmark_anchor_citation_ledger.py` |
 | Lean-first formal | [`../REPRODUCE.md`](../REPRODUCE.md) |
 | Publication bundle | `python scripts/run_publication_verification_bundle.py` |
 | Cross-prover (long) | `python scripts/run_cross_proof_verification.py` |

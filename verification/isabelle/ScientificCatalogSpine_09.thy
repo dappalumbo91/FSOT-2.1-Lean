@@ -3,6 +3,21 @@ theory ScientificCatalogSpine_09
 imports Complex_Main
 begin
 
+lemma cat_virology_panel_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_virology_panel_pooled_under_half_pct: "(0.000637597 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_virology_panel_pooled_lt_half_pure: "(0.000637597 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_virology_panel_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_virology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_zebrafish_cell_tracking_panel_records_pos: "0 < (20 :: nat)"
   by eval
 
@@ -346,21 +361,6 @@ lemma cat_intrinsic_llm_validators_panel_max_scalar_under_half_pct: "(0.014767 :
   by eval
 
 lemma cat_intrinsic_llm_validators_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_crossref_scholarly_panel_records_pos: "0 < (200 :: nat)"
-  by eval
-
-lemma cat_crossref_scholarly_panel_pooled_under_half_pct: "(0.01382 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_crossref_scholarly_panel_pooled_lt_half_pure: "(0.01382 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_crossref_scholarly_panel_max_scalar_under_half_pct: "(0.01382 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_crossref_scholarly_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

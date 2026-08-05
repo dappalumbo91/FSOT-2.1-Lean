@@ -3,6 +3,12 @@ theory FullFormalSpine_10
 imports Complex_Main
 begin
 
+lemma open_meteo_live_panel_median_error_under_half_pct: "(0.026204 :: real) < (0.5 :: real)"
+  by eval
+
+lemma open_meteo_live_observable_count_pos: "0 < (432 :: nat)"
+  by eval
+
 lemma open_meteo_live_median_error_under_five_pct: "(0.026204 :: real) < (5.0 :: real)"
   by eval
 
@@ -295,12 +301,6 @@ lemma aspartic_acid_trinary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) 
   by eval
 
 lemma glutamic_acid_trinary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma phenylalanine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma glycine_trinary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
 end

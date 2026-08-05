@@ -3,6 +3,36 @@ theory ScientificCatalogSpine_12
 imports Complex_Main
 begin
 
+lemma cat_desktop_observer_loop_panel_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_desktop_observer_loop_panel_pooled_under_half_pct: "(0.0010245 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_desktop_observer_loop_panel_pooled_lt_half_pure: "(0.0010245 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_desktop_observer_loop_panel_max_scalar_under_half_pct: "(0.00205 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_desktop_observer_loop_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_music_harmonics_public_panel_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_music_harmonics_public_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_music_harmonics_public_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_music_harmonics_public_panel_max_scalar_under_half_pct: "(0.001716 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_music_harmonics_public_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_hubble_bubble_tension_records_pos: "0 < (21 :: nat)"
   by eval
 
@@ -331,36 +361,6 @@ lemma cat_biological_cuda_physarum_benchmark_max_scalar_under_half_pct: "(0.0001
   by eval
 
 lemma cat_biological_cuda_physarum_benchmark_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_igem_live_fasta_benchmark_json_records_pos: "0 < (42 :: nat)"
-  by eval
-
-lemma cat_igem_live_fasta_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_igem_live_fasta_benchmark_json_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_igem_live_fasta_benchmark_json_max_scalar_under_half_pct: "(0.0001000001 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_igem_live_fasta_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_breakthrough_fusion_spine_records_pos: "0 < (146 :: nat)"
-  by eval
-
-lemma cat_breakthrough_fusion_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_breakthrough_fusion_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_breakthrough_fusion_spine_max_scalar_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_breakthrough_fusion_spine_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

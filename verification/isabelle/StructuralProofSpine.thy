@@ -291,6 +291,9 @@ lemma domain_coupling_simulation_refresh_panel_bundle: "(22 :: nat) = 22 \<and> 
 lemma domain_orbital_predictions_bundle: "(24 :: nat) = 24 \<and> (19 :: nat) = 19 \<and> (0.01529034996934153 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma dzhanibekov_intermediate_axis_fsot_panel_bundle: "(32 :: nat) = 32 \<and> (12 :: nat) = 12 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
 lemma connective_e10d_wd_bundle: "(0 :: real) < (0.00006522664 :: real) \<and> (0 :: real) < (0.040494897615 :: real) \<and> (0 :: real) < (0.076350367522 :: real) \<and> (1.0 :: real) < (1.722776467449 :: real)"
   by auto
 

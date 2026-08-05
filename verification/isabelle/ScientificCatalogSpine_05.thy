@@ -3,21 +3,6 @@ theory ScientificCatalogSpine_05
 imports Complex_Main
 begin
 
-lemma cat_fluid_spacetime_prereg_validation_panel_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_fluid_spacetime_prereg_validation_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fluid_spacetime_prereg_validation_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fluid_spacetime_prereg_validation_panel_max_scalar_under_half_pct: "(0.039797 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fluid_spacetime_prereg_validation_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_fpc_fluidlink_timing_deep_panel_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -166,6 +151,21 @@ lemma cat_consciousness_galactic_orbital_bridge_max_scalar_under_half_pct: "(0.0
   by eval
 
 lemma cat_consciousness_galactic_orbital_bridge_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_nuclear_lean_route_credibility_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_nuclear_lean_route_credibility_pooled_under_half_pct: "(0.000637597 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nuclear_lean_route_credibility_pooled_lt_half_pure: "(0.000637597 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nuclear_lean_route_credibility_max_scalar_under_half_pct: "(0.036559739 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nuclear_lean_route_credibility_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_condensed_matter_superconductivity_depth_panel_records_pos: "0 < (24 :: nat)"

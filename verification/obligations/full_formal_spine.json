@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-04T14:55:19.217326+00:00",
+  "generated_at": "2026-08-05T12:58:00.171132+00:00",
   "version": "2.0",
   "tier": "80_full_formal_spine",
-  "obligation_count": 2430,
-  "modules_exported": 519,
+  "obligation_count": 2433,
+  "modules_exported": 520,
   "by_tier": {
-    "priors": 1969,
+    "priors": 1972,
     "extended": 184,
     "bounds": 277
   },
   "by_kind": {
-    "nat_pos": 594,
+    "nat_pos": 595,
     "r_lt_lit_pure": 324,
-    "bundle_conj": 526,
+    "bundle_conj": 527,
     "lt_lit": 229,
-    "lt_half": 164,
+    "lt_half": 165,
     "gt_lit": 135,
     "eq_nat": 26,
     "nat_le_sym": 30,
@@ -16689,6 +16689,106 @@
       "unprovable_reason": "structural_bundle_excluded",
       "exclusion_class": "structural_bundle",
       "display_label": "DomainPrecision: structural bundle index (conjunct witness linkage) (domain_precision_priors_bundle)",
+      "triangulation_class": "structural_index",
+      "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
+    },
+    {
+      "id": "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct",
+      "kind": "lt_half",
+      "symbol": "dzhanibekov_intermediate_axis_fsot_panel_median_error_pct",
+      "value": 0.0,
+      "statement": "0.0 < 0.5",
+      "lean_module": "DzhanibekovIntermediateAxisFsotPanelPriors",
+      "source_file": "DzhanibekovIntermediateAxisFsotPanelPriors.lean",
+      "source_tier": "priors",
+      "coq_id": "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct",
+      "provable": true,
+      "display_label": "DzhanibekovIntermediateAxisFsotPanel: dzhanibekov intermediate axis fsot panel median \u2014 pooled median error < 0.5%",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
+      "id": "dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos",
+      "kind": "nat_pos",
+      "symbol": "dzhanibekov_intermediate_axis_fsot_panel_observable_count",
+      "value": 32,
+      "statement": "0 < 32",
+      "lean_module": "DzhanibekovIntermediateAxisFsotPanelPriors",
+      "source_file": "DzhanibekovIntermediateAxisFsotPanelPriors.lean",
+      "source_tier": "priors",
+      "coq_id": "dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos",
+      "provable": true,
+      "display_label": "DzhanibekovIntermediateAxisFsotPanel: dzhanibekov intermediate axis fsot panel observable count \u2014 observable count > 0",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
+      "id": "dzhanibekov_intermediate_axis_fsot_panel_bundle",
+      "kind": "bundle_conj",
+      "lean_theorem": "dzhanibekov_intermediate_axis_fsot_panel_bundle",
+      "statement": "32 = 32 \u2227 12 = 12 \u2227 0.0 < 0.5 \u2227 raw_S(energy) > 0",
+      "lean_statement": "dzhanibekov_intermediate_axis_fsot_panel_observable_count = 32 \u2227     dzhanibekov_intermediate_axis_fsot_panel_D_eff = 12 \u2227     dzhanibekov_intermediate_axis_fsot_panel_median_error_pct < (0.5 : \u211d) \u2227     raw_S (get_domain_params \"energy\") > 0",
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "dzhanibekov_intermediate_axis_fsot_panel_observable_count",
+          "value": 32,
+          "right_value": 32,
+          "statement": "32 = 32",
+          "lean_conjunct": "dzhanibekov_intermediate_axis_fsot_panel_observable_count = 32",
+          "index": 0,
+          "proof_style": "norm_num",
+          "linked_obligation_id": "dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "dzhanibekov_intermediate_axis_fsot_panel_D_eff",
+          "value": 12,
+          "right_value": 12,
+          "statement": "12 = 12",
+          "lean_conjunct": "dzhanibekov_intermediate_axis_fsot_panel_D_eff = 12",
+          "index": 1,
+          "proof_style": "norm_num"
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "dzhanibekov_intermediate_axis_fsot_panel_median_error_pct",
+          "value": 0.0,
+          "statement": "0.0 < 0.5",
+          "lean_conjunct": "dzhanibekov_intermediate_axis_fsot_panel_median_error_pct < (0.5 : \u211d)",
+          "index": 2,
+          "proof_witness_id": "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct",
+          "proof_style": "exact",
+          "linked_obligation_id": "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "value": 1.0,
+          "statement": "raw_S(energy) > 0",
+          "lean_conjunct": "raw_S (get_domain_params \"energy\") > 0",
+          "opaque": true,
+          "index": 3,
+          "proof_witness_id": "energy_raw_S_positive",
+          "proof_style": "exact"
+        }
+      ],
+      "proof_witness_ids": [
+        null,
+        null,
+        "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct",
+        "energy_raw_S_positive"
+      ],
+      "unparsed_conjunct_count": 0,
+      "exportable_conjunct_count": 4,
+      "lean_module": "DzhanibekovIntermediateAxisFsotPanelPriors",
+      "source_file": "DzhanibekovIntermediateAxisFsotPanelPriors.lean",
+      "source_tier": "priors",
+      "cross_proof_role": "structural_index",
+      "coq_id": "dzhanibekov_intermediate_axis_fsot_panel_bundle",
+      "provable": true,
+      "display_label": "DzhanibekovIntermediateAxisFsotPanel: structural bundle index (conjunct witness linkage) (dzhanibekov_intermediate_axis_fsot_panel_bundle)",
       "triangulation_class": "structural_index",
       "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
     },
@@ -63559,7 +63659,7 @@
     {
       "id": "exp_1144_lt_31415",
       "kind": "r_lt_lit_pure",
-      "left_value": 3.1393004861793963,
+      "left_value": 3.1393004861793967,
       "right_value": 3.1415,
       "statement": "exp (1.144 : \u211d) < (3.1415 : \u211d)",
       "bounds_oracle": true,
@@ -63579,7 +63679,7 @@
     {
       "id": "exp_11445_lt_3141592",
       "kind": "r_lt_lit_pure",
-      "left_value": 3.1408705289004577,
+      "left_value": 3.1408705289004573,
       "right_value": 3.141592,
       "statement": "exp (1.1445 : \u211d) < (3.141592 : \u211d)",
       "bounds_oracle": true,
@@ -64103,7 +64203,7 @@
     {
       "id": "exp_1602_lt_5",
       "kind": "r_lt_lit_pure",
-      "left_value": 4.962948401916101,
+      "left_value": 4.9629484019161,
       "right_value": 5.0,
       "statement": "exp (1.602 : \u211d) < (5 : \u211d)",
       "bounds_oracle": true,
@@ -64163,7 +64263,7 @@
     {
       "id": "exp_1331_lt_384",
       "kind": "r_lt_lit_pure",
-      "left_value": 3.7848263221083744,
+      "left_value": 3.784826322108375,
       "right_value": 3.84,
       "statement": "exp (1.331 : \u211d) < (3.84 : \u211d)",
       "bounds_oracle": true,
@@ -64183,7 +64283,7 @@
     {
       "id": "exp_1505_lt_5",
       "kind": "r_lt_lit_pure",
-      "left_value": 4.504153630288483,
+      "left_value": 4.504153630288484,
       "right_value": 5.0,
       "statement": "exp (1.505 : \u211d) < (5 : \u211d)",
       "bounds_oracle": true,
@@ -64203,7 +64303,7 @@
     {
       "id": "exp_0351_lt_1470",
       "kind": "r_lt_lit_pure",
-      "left_value": 1.420487325912195,
+      "left_value": 1.4204873259121953,
       "right_value": 1.47,
       "statement": "exp (0.351 : \u211d) < (1.470 : \u211d)",
       "bounds_oracle": true,
@@ -65064,7 +65164,7 @@
       "id": "exp_11453_gt_pi23847",
       "kind": "r_lt_lit_pure",
       "left_value": 3.141592653589793,
-      "right_value": 3.1433842306702213,
+      "right_value": 3.1433842306702218,
       "statement": "(3.14159265358979323847 : \u211d) < exp (1.1453 : \u211d)",
       "bounds_oracle": true,
       "tier83_merge": true,
@@ -65410,7 +65510,7 @@
     {
       "id": "e_pi_gt_27182818283_mul_pi",
       "kind": "gt_lit",
-      "value": 8.539734222673566,
+      "value": 8.539734222673568,
       "bound": 8.53973422217391,
       "statement": "(2.7182818283 : \u211d) * (3.14159265358979323846 : \u211d) < e * pi",
       "bounds_oracle": true,
@@ -65430,7 +65530,7 @@
     {
       "id": "e_pi_lt_27182818286_mul_pi",
       "kind": "lt_lit",
-      "value": 8.539734222673566,
+      "value": 8.539734222673568,
       "bound": 8.539734223116389,
       "statement": "e * pi < (2.7182818286 : \u211d) * (3.14159265358979323847 : \u211d)",
       "bounds_oracle": true,
@@ -65450,7 +65550,7 @@
     {
       "id": "e_pi_gt_85397323",
       "kind": "gt_lit",
-      "value": 8.539734222673566,
+      "value": 8.539734222673568,
       "bound": 8.5397323,
       "statement": "(85397323 : \u211d) / 10000000 < e * pi",
       "bounds_oracle": true,
@@ -65470,7 +65570,7 @@
     {
       "id": "e_pi_gt_8539732",
       "kind": "gt_lit",
-      "value": 8.539734222673566,
+      "value": 8.539734222673568,
       "bound": 8.539732,
       "statement": "(8539732 : \u211d) / 1000000 < e * pi",
       "bounds_oracle": true,
@@ -65490,7 +65590,7 @@
     {
       "id": "e_pi_lt_853973478",
       "kind": "lt_lit",
-      "value": 8.539734222673566,
+      "value": 8.539734222673568,
       "bound": 8.53973478,
       "statement": "e * pi < (853973478 : \u211d) / 100000000",
       "bounds_oracle": true,
@@ -65510,7 +65610,7 @@
     {
       "id": "e_pi_lt_85397348",
       "kind": "lt_lit",
-      "value": 8.539734222673566,
+      "value": 8.539734222673568,
       "bound": 8.5397348,
       "statement": "e * pi < (85397348 : \u211d) / 10000000",
       "bounds_oracle": true,
@@ -65530,7 +65630,7 @@
     {
       "id": "e_pi_lt_8539736",
       "kind": "lt_lit",
-      "value": 8.539734222673566,
+      "value": 8.539734222673568,
       "bound": 8.539736,
       "statement": "e * pi < (8539736 : \u211d) / 1000000",
       "bounds_oracle": true,
@@ -65550,7 +65650,7 @@
     {
       "id": "exp_neg_1434_lt_24_div_25",
       "kind": "lt_lit",
-      "value": 0.23835359847607956,
+      "value": 0.23835359847607954,
       "bound": 0.24,
       "statement": "exp (-1.434) < (6 : \u211d) / 25",
       "bounds_oracle": true,
@@ -65630,7 +65730,7 @@
     {
       "id": "exp_neg_0822_lt_11_div_25",
       "kind": "lt_lit",
-      "value": 0.4395516714733476,
+      "value": 0.43955167147334756,
       "bound": 0.44,
       "statement": "exp (-0.822) < (11 : \u211d) / 25",
       "bounds_oracle": true,
@@ -65650,7 +65750,7 @@
     {
       "id": "exp_0818_lt_25_div_11",
       "kind": "lt_lit",
-      "value": 2.2659633758311957,
+      "value": 2.265963375831196,
       "bound": 2.272727272727273,
       "statement": "exp 0.818 < (25 : \u211d) / 11",
       "bounds_oracle": true,

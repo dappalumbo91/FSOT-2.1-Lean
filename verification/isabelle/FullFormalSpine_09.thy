@@ -3,6 +3,12 @@ theory FullFormalSpine_09
 imports Complex_Main
 begin
 
+lemma network_science_public_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma network_science_public_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
 lemma neural_galactic_orbital_bridge_observable_count_pos: "0 < (49 :: nat)"
   by eval
 
@@ -295,12 +301,6 @@ lemma openalex_citation_graph_median_error_under_five_pct: "(0.031506 :: real) <
   by eval
 
 lemma open_meteo_live_panel_observable_count_pos: "0 < (432 :: nat)"
-  by eval
-
-lemma open_meteo_live_panel_median_error_under_half_pct: "(0.026204 :: real) < (0.5 :: real)"
-  by eval
-
-lemma open_meteo_live_observable_count_pos: "0 < (432 :: nat)"
   by eval
 
 end

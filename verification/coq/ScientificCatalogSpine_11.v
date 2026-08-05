@@ -4,6 +4,46 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_pharmacology_benchmark_json_records_pos : (0 < 120)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_pharmacology_benchmark_json_pooled_under_half_pct : ((0.001166649119945485%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_pharmacology_benchmark_json_pooled_lt_half_pure : ((0.001166649119945485%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_pharmacology_benchmark_json_max_scalar_under_half_pct : ((0.007388748950458895%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_pharmacology_benchmark_json_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_mechanistic_coupling_records_pos : (0 < 115)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_mechanistic_coupling_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_mechanistic_coupling_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_mechanistic_coupling_max_scalar_under_half_pct : ((0.0073836551816993294%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_mechanistic_coupling_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_entomology_panel_records_pos : (0 < 90)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -441,45 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_programming_language_laws_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_desktop_observer_loop_panel_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_desktop_observer_loop_panel_pooled_under_half_pct : ((0.0010245%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desktop_observer_loop_panel_pooled_lt_half_pure : ((0.0010245%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_desktop_observer_loop_panel_max_scalar_under_half_pct : ((0.00205%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desktop_observer_loop_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_music_harmonics_public_panel_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_music_harmonics_public_panel_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_music_harmonics_public_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_music_harmonics_public_panel_max_scalar_under_half_pct : ((0.001716%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_music_harmonics_public_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

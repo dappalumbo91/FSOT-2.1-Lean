@@ -4,6 +4,46 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_igem_live_fasta_benchmark_json_records_pos : (0 < 42)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_igem_live_fasta_benchmark_json_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_igem_live_fasta_benchmark_json_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_igem_live_fasta_benchmark_json_max_scalar_under_half_pct : ((0.00010000009999062986%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_igem_live_fasta_benchmark_json_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_breakthrough_fusion_spine_records_pos : (0 < 146)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_breakthrough_fusion_spine_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_breakthrough_fusion_spine_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_breakthrough_fusion_spine_max_scalar_under_half_pct : ((0.000095%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_breakthrough_fusion_spine_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_distant_island_z128_z132_deep_panel_records_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -442,44 +482,4 @@ Proof. lra. Qed.
 
 Lemma cat_cosmology_bubble_bleed_benchmark_pooled_lt_half_pure : (0%R) < ((0.5%R)).
 Proof. lra. Qed.
-
-
-Lemma cat_cosmology_bubble_bleed_benchmark_max_scalar_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_cosmology_bubble_bleed_benchmark_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_cross_proof_verification_spine_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_cryosphere_benchmark_json_records_pos : (0 < 2399)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_cryosphere_benchmark_json_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_desktop_application_wiring_spine_records_pos : (0 < 81)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_desktop_application_wiring_spine_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desktop_application_wiring_spine_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_desktop_application_wiring_spine_max_scalar_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desktop_application_wiring_spine_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
 

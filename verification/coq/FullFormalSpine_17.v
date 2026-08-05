@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cosmological_exp_factor_gt_five : (5.0%R) < (5.977131629539365%R).
+Proof. lra. Qed.
+
+Lemma cosmological_cos_arg_hi_tight : (3.4953374011050684%R) < (3.51%R).
+Proof. lra. Qed.
+
 Lemma cosmological_cos_t_hi : (0.3537447475152753%R) < (0.37%R).
 Proof. lra. Qed.
 
@@ -299,10 +305,4 @@ Proof. lra. Qed.
 
 Lemma cosmological_term1_negative : (-2.1956926285882763%R) < 0%R.
 Proof. lra. Qed.
-
-Lemma dark_energy_term1_negative : (-2.1349793149885588%R) < 0%R.
-Proof. lra. Qed.
-
-Lemma dark_energy_term2_eq_one : (1.0%R) = (1.0%R).
-Proof. reflexivity. Qed.
 

@@ -4,26 +4,6 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma cat_fluid_spacetime_prereg_validation_panel_records_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_fluid_spacetime_prereg_validation_panel_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_fluid_spacetime_prereg_validation_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_fluid_spacetime_prereg_validation_panel_max_scalar_under_half_pct : ((0.039797%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_fluid_spacetime_prereg_validation_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
 Lemma cat_fpc_fluidlink_timing_deep_panel_records_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -221,6 +201,26 @@ Proof. lra. Qed.
 
 
 Lemma cat_consciousness_galactic_orbital_bridge_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_nuclear_lean_route_credibility_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_nuclear_lean_route_credibility_pooled_under_half_pct : ((0.000637597%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nuclear_lean_route_credibility_pooled_lt_half_pure : ((0.000637597%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_nuclear_lean_route_credibility_max_scalar_under_half_pct : ((0.036559739%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nuclear_lean_route_credibility_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 

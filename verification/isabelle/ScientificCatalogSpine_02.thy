@@ -63,7 +63,7 @@ lemma cat_quantum_mechanics_entanglement_depth_panel_max_scalar_under_half_pct: 
 lemma cat_quantum_mechanics_entanglement_depth_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_rust_lean_bridge_records_pos: "0 < (21 :: nat)"
+lemma cat_rust_lean_bridge_records_pos: "0 < (24 :: nat)"
   by eval
 
 lemma cat_rust_lean_bridge_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"

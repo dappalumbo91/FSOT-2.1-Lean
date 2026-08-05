@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma vl_distill_atlas_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
+
+Lemma volcanology_panel_observable_count_pos : (0 < 90)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma volcanology_panel_median_error_under_half_pct : (0.023502%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -298,11 +304,5 @@ Lemma term3_dominates_with_recent_hits : (0.000000000000000007824928065101266%R)
 Proof. lra. Qed.
 
 Lemma term3_dominates_for_high_D_no_observer_numeric : (0.000000000000000007824928065101266%R) < (2.1956926285882763%R).
-Proof. lra. Qed.
-
-Lemma observer_modulates_term1 : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-Lemma raw_S_positive_of_term1_gt_neg_08 : 0 < (1.2240253341904455%R).
 Proof. lra. Qed.
 

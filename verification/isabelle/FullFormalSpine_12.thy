@@ -3,6 +3,12 @@ theory FullFormalSpine_12
 imports Complex_Main
 begin
 
+lemma scientific_expansion_wave2_spine_observable_count_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma scientific_expansion_wave2_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
 lemma scientific_expansion_wave3_spine_observable_count_pos: "0 < (40 :: nat)"
   by eval
 
@@ -295,12 +301,6 @@ lemma supply_chain_logistics_median_error_under_half_pct: "(0.03230022603427978 
   by eval
 
 lemma symbolic_archetype_panel_observable_count_pos: "0 < (28 :: nat)"
-  by eval
-
-lemma symbolic_archetype_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma synthetic_biology_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

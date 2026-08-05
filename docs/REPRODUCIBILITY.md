@@ -148,8 +148,23 @@ This is **not** a claim that a full multi-user OS ships in-tree.
 | `data/benchmark_margin_audit.json` | Empirical green ledger |
 | `data/cross_proof_verification_report.json` | Multiprover |
 | `data/toe_gap_closure_report.json` | Label A / B |
+| **`docs/BENCHMARK_DATA_CITATIONS.md`** | **Public datasets / APIs / literature for every green panel** |
+| `data/benchmark_anchor_citation_ledger.json` | Machine citation ledger |
+| `data/domain_citations/benchmark_public_anchors.bib` | BibTeX public anchors |
+| `data/api_requirements.yaml` | Live API rebuild registry |
 | `docs/FSOT_MATH_KEY.md` | Mathematical key |
 | `vendor/fsot_compute.py` | Executable authority |
+
+### Public anchors (how to re-fetch measured targets)
+
+```powershell
+python scripts/build_benchmark_anchor_citation_ledger.py
+# Human table:
+#   docs/BENCHMARK_DATA_CITATIONS.md
+# Full catalog example: MPCORB → Harvard/CfA MPC (one dataset cite)
+# Individual literature rows: listed per panel in the ledger
+# APIs: data/api_requirements.yaml + open_science_sources_lib.py
+```
 
 ---
 

@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-04T15:08:15.435095+00:00",
+  "generated_at": "2026-08-05T13:17:29.032359+00:00",
   "version": "1.2",
   "summary": {
-    "bundle_conj_total": 526,
+    "bundle_conj_total": 527,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 472,
-    "total_conjuncts": 2385,
-    "conjuncts_with_atomic_coverage": 2383,
+    "provable_bundle_conj": 473,
+    "total_conjuncts": 2389,
+    "conjuncts_with_atomic_coverage": 2387,
     "conjunct_atomic_coverage_pct": 99.92,
-    "explicit_linked_conjuncts": 1824,
-    "explicit_linked_in_spine": 1822,
+    "explicit_linked_conjuncts": 1827,
+    "explicit_linked_in_spine": 1825,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
@@ -165,6 +165,7 @@
     "domain_coupling_simulation_bundle",
     "domain_coupling_simulation_refresh_panel_bundle",
     "domain_orbital_predictions_bundle",
+    "dzhanibekov_intermediate_axis_fsot_panel_bundle",
     "connective_e10d_wd_bundle",
     "early_lean_mc_panel_bundle",
     "ecology_gap_fill_bundle",
@@ -8139,6 +8140,64 @@
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "chemical_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "dzhanibekov_intermediate_axis_fsot_panel_bundle",
+      "lean_module": "DzhanibekovIntermediateAxisFsotPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "dzhanibekov_intermediate_axis_fsot_panel_observable_count",
+          "statement": "32 = 32",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos"
+          ],
+          "linked_obligation_id": "dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "dzhanibekov_intermediate_axis_fsot_panel_D_eff",
+          "statement": "12 = 12",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "dzhanibekov_intermediate_axis_fsot_panel_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "dzhanibekov_intermediate_axis_fsot_panel_median_error_pct",
+          "statement": "0.0 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct"
+          ],
+          "linked_obligation_id": "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "statement": "raw_S(energy) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
         }

@@ -1049,7 +1049,7 @@ theorem cat_quantum_mechanics_entanglement_depth_panel_green_flag : (1 : ℕ) = 
   rfl
 
 
-theorem cat_rust_lean_bridge_records_pos : 0 < (21 : ℕ) := by
+theorem cat_rust_lean_bridge_records_pos : 0 < (24 : ℕ) := by
   decide
 
 
@@ -1709,26 +1709,6 @@ theorem cat_star_trek_transporter_live_panel_green_flag : (1 : ℕ) = (1 : ℕ) 
   rfl
 
 
-theorem cat_nuclear_lean_route_credibility_records_pos : 0 < (24 : ℕ) := by
-  decide
-
-
-theorem cat_nuclear_lean_route_credibility_pooled_under_half_pct : (0.092131 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_nuclear_lean_route_credibility_pooled_lt_half_pure : (0.092131 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_nuclear_lean_route_credibility_max_scalar_under_half_pct : (0.092131 : ℝ) < (0.5 : ℝ) := by
-  norm_num
-
-
-theorem cat_nuclear_lean_route_credibility_green_flag : (1 : ℕ) = (1 : ℕ) := by
-  rfl
-
-
 theorem cat_the_well_outcomes_verification_panel_records_pos : 0 < (246 : ℕ) := by
   decide
 
@@ -2109,7 +2089,7 @@ theorem cat_marine_biology_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_fsot_processor_function_panel_records_pos : 0 < (19 : ℕ) := by
+theorem cat_fsot_processor_function_panel_records_pos : 0 < (24 : ℕ) := by
   decide
 
 
@@ -2626,6 +2606,26 @@ theorem cat_consciousness_galactic_orbital_bridge_max_scalar_under_half_pct : (0
 
 
 theorem cat_consciousness_galactic_orbital_bridge_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_nuclear_lean_route_credibility_records_pos : 0 < (24 : ℕ) := by
+  decide
+
+
+theorem cat_nuclear_lean_route_credibility_pooled_under_half_pct : (0.000637597 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_nuclear_lean_route_credibility_pooled_lt_half_pure : (0.000637597 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_nuclear_lean_route_credibility_max_scalar_under_half_pct : (0.036559739 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_nuclear_lean_route_credibility_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -3929,6 +3929,26 @@ theorem cat_ionospheric_chemistry_coupling_green_flag : (1 : ℕ) = (1 : ℕ) :=
   rfl
 
 
+theorem cat_dzhanibekov_intermediate_axis_fsot_panel_records_pos : 0 < (32 : ℕ) := by
+  decide
+
+
+theorem cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_dzhanibekov_intermediate_axis_fsot_panel_max_scalar_under_half_pct : (0.023015 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_dzhanibekov_intermediate_axis_fsot_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
 theorem cat_nasa_exoplanet_archive_records_pos : 0 < (158 : ℕ) := by
   decide
 
@@ -5186,6 +5206,26 @@ theorem cat_neutrino_physics_panel_max_scalar_under_half_pct : (0.009504 : ℝ) 
 
 
 theorem cat_neutrino_physics_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_oph_fsot_challenge_panel_records_pos : 0 < (31 : ℕ) := by
+  decide
+
+
+theorem cat_oph_fsot_challenge_panel_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_oph_fsot_challenge_panel_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_oph_fsot_challenge_panel_max_scalar_under_half_pct : (0.009504 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_oph_fsot_challenge_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
@@ -6885,7 +6925,7 @@ theorem cat_fractal_constant_recursion_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 
-theorem cat_fsot_c_pack_parity_panel_records_pos : 0 < (19 : ℕ) := by
+theorem cat_fsot_c_pack_parity_panel_records_pos : 0 < (24 : ℕ) := by
   decide
 
 
@@ -7334,6 +7374,26 @@ theorem cat_neurolab_residual_math_spine_max_scalar_under_half_pct : (0.0 : ℝ)
 
 
 theorem cat_neurolab_residual_math_spine_green_flag : (1 : ℕ) = (1 : ℕ) := by
+  rfl
+
+
+theorem cat_neuron_zig_os_path_panel_records_pos : 0 < (41 : ℕ) := by
+  decide
+
+
+theorem cat_neuron_zig_os_path_panel_pooled_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_neuron_zig_os_path_panel_pooled_lt_half_pure : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_neuron_zig_os_path_panel_max_scalar_under_half_pct : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+
+theorem cat_neuron_zig_os_path_panel_green_flag : (1 : ℕ) = (1 : ℕ) := by
   rfl
 
 

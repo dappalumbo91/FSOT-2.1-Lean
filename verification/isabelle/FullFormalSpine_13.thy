@@ -3,6 +3,12 @@ theory FullFormalSpine_13
 imports Complex_Main
 begin
 
+lemma symbolic_archetype_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma synthetic_biology_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
 lemma synthetic_biology_observable_count_pos: "0 < (20 :: nat)"
   by eval
 
@@ -295,12 +301,6 @@ lemma vl_agent_distill_panel_median_error_under_half_pct: "(0.022236 :: real) < 
   by eval
 
 lemma vl_distill_atlas_observable_count_pos: "0 < (10 :: nat)"
-  by eval
-
-lemma vl_distill_atlas_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma volcanology_panel_observable_count_pos: "0 < (90 :: nat)"
   by eval
 
 end

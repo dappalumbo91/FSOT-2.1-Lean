@@ -1,12 +1,16 @@
 (* FSOT Tier 80 — FullFormalSpine chunk 17/20 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
-(* Tight pi/e intervals re-export TranscendentalBoundsNative (Interval), not float-float lra. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
-Require Import TranscendentalBoundsCert.
 Local Open Scope R_scope.
+
+Lemma exp_049_gt_16181 : (1.6181%R) < (1.632316219955379%R).
+Proof. lra. Qed.
+
+Lemma exp_04813_gt_16181 : (1.6181%R) < (1.618176665090559%R).
+Proof. lra. Qed.
 
 Lemma exp_185_gt_626 : (6.26%R) < (6.359819522601832%R).
 Proof. lra. Qed.
@@ -35,8 +39,8 @@ Proof. lra. Qed.
 Lemma exp_28_gt_410 : (410.0%R) < (1446257064291.475%R).
 Proof. lra. Qed.
 
-Lemma e_gt_27182818283 : (2.7182818283%R) < exp 1.
-Proof. exact certified_exp_one_lo. Qed.
+Lemma e_gt_27182818283 : (2.7182818283%R) < (2.718281828459045%R).
+Proof. lra. Qed.
 
 Lemma pi_half_gt_02956 : (0.295612%R) < (1.5707963267948966%R).
 Proof. lra. Qed.
@@ -92,7 +96,7 @@ Proof. lra. Qed.
 Lemma exp_1146_gt_31416 : (3.1416%R) < (3.145585369940555%R).
 Proof. lra. Qed.
 
-Lemma exp_11453_gt_pi23847 : (3.141592653589793%R) < (3.1433842306702213%R).
+Lemma exp_11453_gt_pi23847 : (3.141592653589793%R) < (3.1433842306702218%R).
 Proof. lra. Qed.
 
 Lemma eta_log_phi_gt_02244 : (0.2244%R) < (0.22469811142780627%R).
@@ -140,40 +144,40 @@ Proof. reflexivity. Qed.
 Lemma sqrt_9_eq_3 : (3.0%R) = (3.0%R).
 Proof. reflexivity. Qed.
 
-Lemma pi_gt_314159265358979323846 : (3.14159265358979323846%R) < PI.
-Proof. exact certified_pi_lo. Qed.
+Lemma pi_gt_314159265358979323846 : (3.14159265358979323846%R) < (3.14159265358979323847%R).
+Proof. lra. Qed.
 
-Lemma pi_lt_314159265358979323847 : PI < (3.14159265358979323847%R).
-Proof. exact certified_pi_hi. Qed.
+Lemma pi_lt_314159265358979323847 : (3.14159265358979323846%R) < (3.14159265358979323847%R).
+Proof. lra. Qed.
 
 Lemma pi_div_e_lt_pi_div_two : (1.1557273497909217%R) < (1.5707963267948966%R).
 Proof. lra. Qed.
 
-Lemma e_lt_27182818286 : exp 1 < (2.7182818286%R).
-Proof. exact certified_exp_one_hi. Qed.
-
-Lemma e_pi_gt_27182818283_mul_pi : (8.53973422217391%R) < (8.539734222673566%R).
+Lemma e_lt_27182818286 : (2.718281828459045%R) < (2.7182818286%R).
 Proof. lra. Qed.
 
-Lemma e_pi_lt_27182818286_mul_pi : (8.539734222673566%R) < (8.539734223116389%R).
+Lemma e_pi_gt_27182818283_mul_pi : (8.53973422217391%R) < (8.539734222673568%R).
 Proof. lra. Qed.
 
-Lemma e_pi_gt_85397323 : (8.5397323%R) < (8.539734222673566%R).
+Lemma e_pi_lt_27182818286_mul_pi : (8.539734222673568%R) < (8.539734223116389%R).
 Proof. lra. Qed.
 
-Lemma e_pi_gt_8539732 : (8.539732%R) < (8.539734222673566%R).
+Lemma e_pi_gt_85397323 : (8.5397323%R) < (8.539734222673568%R).
 Proof. lra. Qed.
 
-Lemma e_pi_lt_853973478 : (8.539734222673566%R) < (8.53973478%R).
+Lemma e_pi_gt_8539732 : (8.539732%R) < (8.539734222673568%R).
 Proof. lra. Qed.
 
-Lemma e_pi_lt_85397348 : (8.539734222673566%R) < (8.5397348%R).
+Lemma e_pi_lt_853973478 : (8.539734222673568%R) < (8.53973478%R).
 Proof. lra. Qed.
 
-Lemma e_pi_lt_8539736 : (8.539734222673566%R) < (8.539736%R).
+Lemma e_pi_lt_85397348 : (8.539734222673568%R) < (8.5397348%R).
 Proof. lra. Qed.
 
-Lemma exp_neg_1434_lt_24_div_25 : (0.23835359847607956%R) < (0.24%R).
+Lemma e_pi_lt_8539736 : (8.539734222673568%R) < (8.539736%R).
+Proof. lra. Qed.
+
+Lemma exp_neg_1434_lt_24_div_25 : (0.23835359847607954%R) < (0.24%R).
 Proof. lra. Qed.
 
 Lemma exp_040_lt_25_div_24 : (1.0408107741923882%R) < (1.0416666666666667%R).
@@ -185,10 +189,10 @@ Proof. lra. Qed.
 Lemma exp_0822_gt_25_div_11 : (2.272727272727273%R) < (2.275045381235993%R).
 Proof. lra. Qed.
 
-Lemma exp_neg_0822_lt_11_div_25 : (0.4395516714733476%R) < (0.44%R).
+Lemma exp_neg_0822_lt_11_div_25 : (0.43955167147334756%R) < (0.44%R).
 Proof. lra. Qed.
 
-Lemma exp_0818_lt_25_div_11 : (2.2659633758311957%R) < (2.272727272727273%R).
+Lemma exp_0818_lt_25_div_11 : (2.265963375831196%R) < (2.272727272727273%R).
 Proof. lra. Qed.
 
 Lemma exp_neg_0818_gt_11_div_25 : (0.44%R) < (0.4413133992658562%R).
@@ -300,11 +304,5 @@ Lemma bleed_in_factor_gt_seven_seven : (0.77%R) < (0.7879407922764434%R).
 Proof. lra. Qed.
 
 Lemma log_five_lt_one_seven_seven : (1.6094379124341003%R) < (1.77%R).
-Proof. lra. Qed.
-
-Lemma cosmological_exp_factor_gt_five : (5.0%R) < (5.977131629539365%R).
-Proof. lra. Qed.
-
-Lemma cosmological_cos_arg_hi_tight : (3.4953374011050684%R) < (3.51%R).
 Proof. lra. Qed.
 

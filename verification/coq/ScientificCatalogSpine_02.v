@@ -84,7 +84,7 @@ Lemma cat_quantum_mechanics_entanglement_depth_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_rust_lean_bridge_records_pos : (0 < 21)%nat.
+Lemma cat_rust_lean_bridge_records_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 

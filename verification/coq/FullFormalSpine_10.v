@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma open_meteo_live_panel_median_error_under_half_pct : (0.026204%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma open_meteo_live_observable_count_pos : (0 < 432)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma open_meteo_live_median_error_under_five_pct : (0.026204%R) < (5.0%R).
 Proof. lra. Qed.
 
@@ -298,11 +304,5 @@ Lemma aspartic_acid_trinary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
 Proof. repeat split; reflexivity. Qed.
 
 Lemma glutamic_acid_trinary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma phenylalanine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma glycine_trinary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

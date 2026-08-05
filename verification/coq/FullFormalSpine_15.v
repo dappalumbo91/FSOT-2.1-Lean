@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma observer_modulates_term1 : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma raw_S_positive_of_term1_gt_neg_08 : 0 < (1.2240253341904455%R).
+Proof. lra. Qed.
+
 Lemma raw_S_negative_of_term1_overcomes_term3 : (-0.3514171596284352%R) < 0%R.
 Proof. lra. Qed.
 
@@ -117,10 +123,10 @@ Proof. lra. Qed.
 Lemma exp_0572_lt_1772 : (1.771807124429574%R) < (1.772%R).
 Proof. lra. Qed.
 
-Lemma exp_1144_lt_31415 : (3.1393004861793963%R) < (3.1415%R).
+Lemma exp_1144_lt_31415 : (3.1393004861793967%R) < (3.1415%R).
 Proof. lra. Qed.
 
-Lemma exp_11445_lt_3141592 : (3.1408705289004577%R) < (3.141592%R).
+Lemma exp_11445_lt_3141592 : (3.1408705289004573%R) < (3.141592%R).
 Proof. lra. Qed.
 
 Lemma log_phi_lt_04813 : (0.48121182505960347%R) < (0.4813%R).
@@ -216,7 +222,7 @@ Proof. lra. Qed.
 Lemma exp_0602_lt_1838 : (1.8257666846595977%R) < (1.838%R).
 Proof. lra. Qed.
 
-Lemma exp_1602_lt_5 : (4.962948401916101%R) < (5.0%R).
+Lemma exp_1602_lt_5 : (4.9629484019161%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma exp_0505_lt_1838 : (1.6569855204608508%R) < (1.838%R).
@@ -225,13 +231,13 @@ Proof. lra. Qed.
 Lemma exp_0331_lt_1412 : (1.3923597923081943%R) < (1.412%R).
 Proof. lra. Qed.
 
-Lemma exp_1331_lt_384 : (3.7848263221083744%R) < (3.84%R).
+Lemma exp_1331_lt_384 : (3.784826322108375%R) < (3.84%R).
 Proof. lra. Qed.
 
-Lemma exp_1505_lt_5 : (4.504153630288483%R) < (5.0%R).
+Lemma exp_1505_lt_5 : (4.504153630288484%R) < (5.0%R).
 Proof. lra. Qed.
 
-Lemma exp_0351_lt_1470 : (1.420487325912195%R) < (1.47%R).
+Lemma exp_0351_lt_1470 : (1.4204873259121953%R) < (1.47%R).
 Proof. lra. Qed.
 
 Lemma exp_1351_lt_4 : (3.8612848855835016%R) < (4.0%R).
@@ -298,11 +304,5 @@ Lemma log_pi_div_e_gt_421 : (0.421%R) < (0.4211225906985263%R).
 Proof. lra. Qed.
 
 Lemma exp_0245_gt_1275 : (1.275%R) < (1.2776213132048866%R).
-Proof. lra. Qed.
-
-Lemma exp_049_gt_16181 : (1.6181%R) < (1.632316219955379%R).
-Proof. lra. Qed.
-
-Lemma exp_04813_gt_16181 : (1.6181%R) < (1.618176665090559%R).
 Proof. lra. Qed.
 

@@ -3,6 +3,12 @@ theory FullFormalSpine_18
 imports Complex_Main
 begin
 
+lemma dark_energy_term1_negative: "(-2.1349793149885588 :: real) < (0 :: real)"
+  by eval
+
+lemma dark_energy_term2_eq_one: "(1.0 :: real) = (1.0 :: real)"
+  by eval
+
 lemma cosmological_term1_dominates_term3: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
   by eval
 
@@ -295,12 +301,6 @@ lemma lambda_cdm_wave_partition: "(30 :: nat) = (30 :: nat)"
   by eval
 
 lemma photonic_voxel_count_pos: "0 < (180 :: nat)"
-  by eval
-
-lemma photonic_trinary_partition: "(180 :: nat) = (180 :: nat)"
-  by eval
-
-lemma wave4_observable_count_pos: "0 < (16 :: nat)"
   by eval
 
 end

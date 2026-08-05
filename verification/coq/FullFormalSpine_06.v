@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma fractal_constant_recursion_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fsot_aggregate_organized_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma fsot_aggregate_organized_panel_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
@@ -298,11 +304,5 @@ Lemma hydrology_stability_match_le_total : (957 <= 960)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
 Lemma hydrology_stability_match_rate_nonneg : 0 <= (0.996875%R).
-Proof. lra. Qed.
-
-Lemma igem_live_fasta_observable_count_pos : (0 < 42)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma igem_live_fasta_median_error_under_five_pct : 0%R < (5.0%R).
 Proof. lra. Qed.
 

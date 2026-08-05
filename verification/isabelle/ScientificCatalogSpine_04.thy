@@ -3,21 +3,6 @@ theory ScientificCatalogSpine_04
 imports Complex_Main
 begin
 
-lemma cat_pubchem_live_deep_records_pos: "0 < (5043 :: nat)"
-  by eval
-
-lemma cat_pubchem_live_deep_pooled_under_half_pct: "(0.032631 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_pubchem_live_deep_pooled_lt_half_pure: "(0.032631 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_pubchem_live_deep_max_scalar_under_half_pct: "(0.048946 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_pubchem_live_deep_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_founding_quantum_vacuum_panel_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -138,7 +123,7 @@ lemma cat_marine_biology_max_scalar_under_half_pct: "(0.04447250077038671 :: rea
 lemma cat_marine_biology_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_fsot_processor_function_panel_records_pos: "0 < (19 :: nat)"
+lemma cat_fsot_processor_function_panel_records_pos: "0 < (24 :: nat)"
   by eval
 
 lemma cat_fsot_processor_function_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -361,6 +346,21 @@ lemma cat_fluid_spacetime_observable_spine_max_scalar_under_half_pct: "(0.039797
   by eval
 
 lemma cat_fluid_spacetime_observable_spine_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_fluid_spacetime_prereg_validation_panel_records_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cat_fluid_spacetime_prereg_validation_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_spacetime_prereg_validation_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_spacetime_prereg_validation_panel_max_scalar_under_half_pct: "(0.039797 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_spacetime_prereg_validation_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

@@ -4,6 +4,26 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_crossref_scholarly_panel_records_pos : (0 < 200)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_crossref_scholarly_panel_pooled_under_half_pct : ((0.01382%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_crossref_scholarly_panel_pooled_lt_half_pure : ((0.01382%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_crossref_scholarly_panel_max_scalar_under_half_pct : ((0.01382%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_crossref_scholarly_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_osti_doe_science_panel_records_pos : (0 < 100)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -384,6 +404,26 @@ Lemma cat_neutrino_physics_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
+Lemma cat_oph_fsot_challenge_panel_records_pos : (0 < 31)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_oph_fsot_challenge_panel_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_oph_fsot_challenge_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_oph_fsot_challenge_panel_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_oph_fsot_challenge_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_environmental_engineering_records_pos : (0 < 1117)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -441,45 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_inaturalist_observation_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_pharmacology_benchmark_json_records_pos : (0 < 120)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_pharmacology_benchmark_json_pooled_under_half_pct : ((0.001166649119945485%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_pharmacology_benchmark_json_pooled_lt_half_pure : ((0.001166649119945485%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_pharmacology_benchmark_json_max_scalar_under_half_pct : ((0.007388748950458895%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_pharmacology_benchmark_json_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_mechanistic_coupling_records_pos : (0 < 115)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_mechanistic_coupling_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_mechanistic_coupling_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_mechanistic_coupling_max_scalar_under_half_pct : ((0.0073836551816993294%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_mechanistic_coupling_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma maillard_chemistry_observable_count_pos : (0 < 30)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma maillard_chemistry_median_error_under_half_pct : (0.09443694019339477%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma malware_threat_intelligence_observable_count_pos : (0 < 85)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -298,11 +304,5 @@ Lemma network_internet_protocols_observable_count_pos : (0 < 22)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma network_internet_protocols_median_error_under_half_pct : (0.010337117254355377%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma network_science_public_panel_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma network_science_public_panel_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 

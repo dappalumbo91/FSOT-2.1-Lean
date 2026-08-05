@@ -141,6 +141,12 @@ lemma domain_precision_target_band_large: "(32 :: nat) < (35 :: nat)"
 lemma domain_precision_huge_gap_bounded: "(0 :: nat) <= (2 :: nat)"
   by eval
 
+lemma dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos: "0 < (32 :: nat)"
+  by eval
+
 lemma connective_energy_bus_pos: "0 < (0.00006522664 :: real)"
   by eval
 
@@ -295,12 +301,6 @@ lemma entomology_median_error_under_half_pct: "(0.022236250385189223 :: real) < 
   by eval
 
 lemma environmental_engineering_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma environmental_engineering_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma environmental_engineering_ext_observable_count_pos: "0 < (18416 :: nat)"
   by eval
 
 end

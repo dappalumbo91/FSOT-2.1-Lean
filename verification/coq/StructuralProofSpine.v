@@ -2196,6 +2196,27 @@ Proof.
   - lra.
 Qed.
 
+Lemma dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_0 : (32 = 32)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_1 : (12 = 12)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma dzhanibekov_intermediate_axis_fsot_panel_bundle : (32 = 32)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  repeat (apply conj).
+  - exact dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_0.
+  - exact dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_1.
+  - exact dzhanibekov_intermediate_axis_fsot_panel_bundle_conj_2.
+  - lra.
+Qed.
+
 Lemma connective_e10d_wd_bundle_conj_0 : True.
 Proof. trivial.
 Qed.

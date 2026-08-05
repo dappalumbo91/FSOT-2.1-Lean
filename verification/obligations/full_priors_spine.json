@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-04T14:55:19.217326+00:00",
+  "generated_at": "2026-08-05T12:58:00.171132+00:00",
   "version": "1.1",
   "tier": "79b_full_priors_spine",
-  "obligation_count": 1969,
-  "modules_exported": 507,
+  "obligation_count": 1972,
+  "modules_exported": 508,
   "obligations": [
     {
       "id": "acoustic_resonance_materials_observable_count_pos",
@@ -16656,6 +16656,106 @@
       "unprovable_reason": "structural_bundle_excluded",
       "exclusion_class": "structural_bundle",
       "display_label": "DomainPrecision: structural bundle index (conjunct witness linkage) (domain_precision_priors_bundle)",
+      "triangulation_class": "structural_index",
+      "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
+    },
+    {
+      "id": "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct",
+      "kind": "lt_half",
+      "symbol": "dzhanibekov_intermediate_axis_fsot_panel_median_error_pct",
+      "value": 0.0,
+      "statement": "0.0 < 0.5",
+      "lean_module": "DzhanibekovIntermediateAxisFsotPanelPriors",
+      "source_file": "DzhanibekovIntermediateAxisFsotPanelPriors.lean",
+      "source_tier": "priors",
+      "coq_id": "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct",
+      "provable": true,
+      "display_label": "DzhanibekovIntermediateAxisFsotPanel: dzhanibekov intermediate axis fsot panel median \u2014 pooled median error < 0.5%",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
+      "id": "dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos",
+      "kind": "nat_pos",
+      "symbol": "dzhanibekov_intermediate_axis_fsot_panel_observable_count",
+      "value": 32,
+      "statement": "0 < 32",
+      "lean_module": "DzhanibekovIntermediateAxisFsotPanelPriors",
+      "source_file": "DzhanibekovIntermediateAxisFsotPanelPriors.lean",
+      "source_tier": "priors",
+      "coq_id": "dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos",
+      "provable": true,
+      "display_label": "DzhanibekovIntermediateAxisFsotPanel: dzhanibekov intermediate axis fsot panel observable count \u2014 observable count > 0",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
+      "id": "dzhanibekov_intermediate_axis_fsot_panel_bundle",
+      "kind": "bundle_conj",
+      "lean_theorem": "dzhanibekov_intermediate_axis_fsot_panel_bundle",
+      "statement": "32 = 32 \u2227 12 = 12 \u2227 0.0 < 0.5 \u2227 raw_S(energy) > 0",
+      "lean_statement": "dzhanibekov_intermediate_axis_fsot_panel_observable_count = 32 \u2227     dzhanibekov_intermediate_axis_fsot_panel_D_eff = 12 \u2227     dzhanibekov_intermediate_axis_fsot_panel_median_error_pct < (0.5 : \u211d) \u2227     raw_S (get_domain_params \"energy\") > 0",
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "dzhanibekov_intermediate_axis_fsot_panel_observable_count",
+          "value": 32,
+          "right_value": 32,
+          "statement": "32 = 32",
+          "lean_conjunct": "dzhanibekov_intermediate_axis_fsot_panel_observable_count = 32",
+          "index": 0,
+          "proof_style": "norm_num",
+          "linked_obligation_id": "dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "dzhanibekov_intermediate_axis_fsot_panel_D_eff",
+          "value": 12,
+          "right_value": 12,
+          "statement": "12 = 12",
+          "lean_conjunct": "dzhanibekov_intermediate_axis_fsot_panel_D_eff = 12",
+          "index": 1,
+          "proof_style": "norm_num"
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "dzhanibekov_intermediate_axis_fsot_panel_median_error_pct",
+          "value": 0.0,
+          "statement": "0.0 < 0.5",
+          "lean_conjunct": "dzhanibekov_intermediate_axis_fsot_panel_median_error_pct < (0.5 : \u211d)",
+          "index": 2,
+          "proof_witness_id": "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct",
+          "proof_style": "exact",
+          "linked_obligation_id": "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_energy",
+          "value": 1.0,
+          "statement": "raw_S(energy) > 0",
+          "lean_conjunct": "raw_S (get_domain_params \"energy\") > 0",
+          "opaque": true,
+          "index": 3,
+          "proof_witness_id": "energy_raw_S_positive",
+          "proof_style": "exact"
+        }
+      ],
+      "proof_witness_ids": [
+        null,
+        null,
+        "dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct",
+        "energy_raw_S_positive"
+      ],
+      "unparsed_conjunct_count": 0,
+      "exportable_conjunct_count": 4,
+      "lean_module": "DzhanibekovIntermediateAxisFsotPanelPriors",
+      "source_file": "DzhanibekovIntermediateAxisFsotPanelPriors.lean",
+      "source_tier": "priors",
+      "cross_proof_role": "structural_index",
+      "coq_id": "dzhanibekov_intermediate_axis_fsot_panel_bundle",
+      "provable": true,
+      "display_label": "DzhanibekovIntermediateAxisFsotPanel: structural bundle index (conjunct witness linkage) (dzhanibekov_intermediate_axis_fsot_panel_bundle)",
       "triangulation_class": "structural_index",
       "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
     },

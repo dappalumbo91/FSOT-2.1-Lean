@@ -3,6 +3,12 @@ theory FullFormalSpine_16
 imports Complex_Main
 begin
 
+lemma exp_049_gt_16181: "(1.6181 :: real) < (1.632316219955379 :: real)"
+  by eval
+
+lemma exp_04813_gt_16181: "(1.6181 :: real) < (1.618176665090559 :: real)"
+  by eval
+
 lemma exp_185_gt_626: "(6.26 :: real) < (6.359819522601832 :: real)"
   by eval
 
@@ -87,7 +93,7 @@ lemma phi_rpow_inv_pi_gt_11653: "(1.1653 :: real) < (1.1655283240586598 :: real)
 lemma exp_1146_gt_31416: "(3.1416 :: real) < (3.145585369940555 :: real)"
   by eval
 
-lemma exp_11453_gt_pi23847: "(3.141592653589793 :: real) < (3.1433842306702213 :: real)"
+lemma exp_11453_gt_pi23847: "(3.141592653589793 :: real) < (3.1433842306702218 :: real)"
   by eval
 
 lemma eta_log_phi_gt_02244: "(0.2244 :: real) < (0.22469811142780627 :: real)"
@@ -147,28 +153,28 @@ lemma pi_div_e_lt_pi_div_two: "(1.1557273497909217 :: real) < (1.570796326794896
 lemma e_lt_27182818286: "(2.718281828459045 :: real) < (2.7182818286 :: real)"
   by eval
 
-lemma e_pi_gt_27182818283_mul_pi: "(8.53973422217391 :: real) < (8.539734222673566 :: real)"
+lemma e_pi_gt_27182818283_mul_pi: "(8.53973422217391 :: real) < (8.539734222673568 :: real)"
   by eval
 
-lemma e_pi_lt_27182818286_mul_pi: "(8.539734222673566 :: real) < (8.539734223116389 :: real)"
+lemma e_pi_lt_27182818286_mul_pi: "(8.539734222673568 :: real) < (8.539734223116389 :: real)"
   by eval
 
-lemma e_pi_gt_85397323: "(8.5397323 :: real) < (8.539734222673566 :: real)"
+lemma e_pi_gt_85397323: "(8.5397323 :: real) < (8.539734222673568 :: real)"
   by eval
 
-lemma e_pi_gt_8539732: "(8.539732 :: real) < (8.539734222673566 :: real)"
+lemma e_pi_gt_8539732: "(8.539732 :: real) < (8.539734222673568 :: real)"
   by eval
 
-lemma e_pi_lt_853973478: "(8.539734222673566 :: real) < (8.53973478 :: real)"
+lemma e_pi_lt_853973478: "(8.539734222673568 :: real) < (8.53973478 :: real)"
   by eval
 
-lemma e_pi_lt_85397348: "(8.539734222673566 :: real) < (8.5397348 :: real)"
+lemma e_pi_lt_85397348: "(8.539734222673568 :: real) < (8.5397348 :: real)"
   by eval
 
-lemma e_pi_lt_8539736: "(8.539734222673566 :: real) < (8.539736 :: real)"
+lemma e_pi_lt_8539736: "(8.539734222673568 :: real) < (8.539736 :: real)"
   by eval
 
-lemma exp_neg_1434_lt_24_div_25: "(0.23835359847607956 :: real) < (0.24 :: real)"
+lemma exp_neg_1434_lt_24_div_25: "(0.23835359847607954 :: real) < (0.24 :: real)"
   by eval
 
 lemma exp_040_lt_25_div_24: "(1.0408107741923882 :: real) < (1.0416666666666667 :: real)"
@@ -180,10 +186,10 @@ lemma exp_neg_040_gt_24_div_25: "(0.96 :: real) < (0.9607894391523232 :: real)"
 lemma exp_0822_gt_25_div_11: "(2.272727272727273 :: real) < (2.275045381235993 :: real)"
   by eval
 
-lemma exp_neg_0822_lt_11_div_25: "(0.4395516714733476 :: real) < (0.44 :: real)"
+lemma exp_neg_0822_lt_11_div_25: "(0.43955167147334756 :: real) < (0.44 :: real)"
   by eval
 
-lemma exp_0818_lt_25_div_11: "(2.2659633758311957 :: real) < (2.272727272727273 :: real)"
+lemma exp_0818_lt_25_div_11: "(2.265963375831196 :: real) < (2.272727272727273 :: real)"
   by eval
 
 lemma exp_neg_0818_gt_11_div_25: "(0.44 :: real) < (0.4413133992658562 :: real)"
@@ -295,12 +301,6 @@ lemma bleed_in_factor_gt_seven_seven: "(0.77 :: real) < (0.7879407922764434 :: r
   by eval
 
 lemma log_five_lt_one_seven_seven: "(1.6094379124341003 :: real) < (1.77 :: real)"
-  by eval
-
-lemma cosmological_exp_factor_gt_five: "(5.0 :: real) < (5.977131629539365 :: real)"
-  by eval
-
-lemma cosmological_cos_arg_hi_tight: "(3.4953374011050684 :: real) < (3.51 :: real)"
   by eval
 
 end

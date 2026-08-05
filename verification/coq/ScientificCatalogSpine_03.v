@@ -264,26 +264,6 @@ Lemma cat_star_trek_transporter_live_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_nuclear_lean_route_credibility_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_nuclear_lean_route_credibility_pooled_under_half_pct : ((0.092131%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_nuclear_lean_route_credibility_pooled_lt_half_pure : ((0.092131%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_nuclear_lean_route_credibility_max_scalar_under_half_pct : ((0.092131%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_nuclear_lean_route_credibility_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
 Lemma cat_the_well_outcomes_verification_panel_records_pos : (0 < 246)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -481,5 +461,25 @@ Proof. lra. Qed.
 
 
 Lemma cat_immunology_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_pubchem_live_deep_records_pos : (0 < 5043)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_pubchem_live_deep_pooled_under_half_pct : ((0.032631%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_pubchem_live_deep_pooled_lt_half_pure : ((0.032631%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_pubchem_live_deep_max_scalar_under_half_pct : ((0.048946%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_pubchem_live_deep_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

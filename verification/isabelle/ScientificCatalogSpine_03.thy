@@ -198,21 +198,6 @@ lemma cat_star_trek_transporter_live_panel_max_scalar_under_half_pct: "(0.095551
 lemma cat_star_trek_transporter_live_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_nuclear_lean_route_credibility_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_nuclear_lean_route_credibility_pooled_under_half_pct: "(0.092131 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nuclear_lean_route_credibility_pooled_lt_half_pure: "(0.092131 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nuclear_lean_route_credibility_max_scalar_under_half_pct: "(0.092131 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nuclear_lean_route_credibility_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_the_well_outcomes_verification_panel_records_pos: "0 < (246 :: nat)"
   by eval
 
@@ -361,6 +346,21 @@ lemma cat_immunology_panel_max_scalar_under_half_pct: "(0.048946 :: real) < (0.5
   by eval
 
 lemma cat_immunology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_pubchem_live_deep_records_pos: "0 < (5043 :: nat)"
+  by eval
+
+lemma cat_pubchem_live_deep_pooled_under_half_pct: "(0.032631 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_pubchem_live_deep_pooled_lt_half_pure: "(0.032631 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_pubchem_live_deep_max_scalar_under_half_pct: "(0.048946 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_pubchem_live_deep_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

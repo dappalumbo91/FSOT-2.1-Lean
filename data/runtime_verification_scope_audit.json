@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-04T15:08:16.528902+00:00",
+  "generated_at": "2026-08-05T13:17:29.470078+00:00",
   "version": "1.0",
-  "overall_runtime_ok": true,
+  "overall_runtime_ok": false,
   "esp32_scalar_only_gap_closed": true,
   "layers": [
     {
       "id": "lean_coq_isabelle_rust",
       "scope": "2146 exported obligations; 1820 atomic triangulated",
-      "status": "passed",
+      "status": "failed",
       "undeniable_for": "numeric atomic spine"
     },
     {

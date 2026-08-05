@@ -3,6 +3,12 @@ theory FullFormalSpine_07
 imports Complex_Main
 begin
 
+lemma igem_live_fasta_observable_count_pos: "0 < (42 :: nat)"
+  by eval
+
+lemma igem_live_fasta_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
 lemma igem_parts_expanded_observable_count_pos: "0 < (111 :: nat)"
   by eval
 
@@ -295,12 +301,6 @@ lemma maillard_chemistry_gap_fill_observable_count_pos: "0 < (30 :: nat)"
   by eval
 
 lemma maillard_chemistry_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma maillard_chemistry_observable_count_pos: "0 < (30 :: nat)"
-  by eval
-
-lemma maillard_chemistry_median_error_under_half_pct: "(0.09443694019339477 :: real) < (0.5 :: real)"
   by eval
 
 end

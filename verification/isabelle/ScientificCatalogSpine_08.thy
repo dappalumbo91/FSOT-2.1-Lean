@@ -63,6 +63,21 @@ lemma cat_ionospheric_chemistry_coupling_max_scalar_under_half_pct: "(0.02360923
 lemma cat_ionospheric_chemistry_coupling_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_dzhanibekov_intermediate_axis_fsot_panel_records_pos: "0 < (32 :: nat)"
+  by eval
+
+lemma cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dzhanibekov_intermediate_axis_fsot_panel_max_scalar_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dzhanibekov_intermediate_axis_fsot_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_nasa_exoplanet_archive_records_pos: "0 < (158 :: nat)"
   by eval
 
@@ -346,21 +361,6 @@ lemma cat_physarum_biological_cuda_panel_max_scalar_under_half_pct: "(0.022236 :
   by eval
 
 lemma cat_physarum_biological_cuda_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_virology_panel_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_virology_panel_pooled_under_half_pct: "(0.000637597 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_virology_panel_pooled_lt_half_pure: "(0.000637597 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_virology_panel_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_virology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

@@ -3,6 +3,12 @@ theory FullFormalSpine_08
 imports Complex_Main
 begin
 
+lemma maillard_chemistry_observable_count_pos: "0 < (30 :: nat)"
+  by eval
+
+lemma maillard_chemistry_median_error_under_half_pct: "(0.09443694019339477 :: real) < (0.5 :: real)"
+  by eval
+
 lemma malware_threat_intelligence_observable_count_pos: "0 < (85 :: nat)"
   by eval
 
@@ -295,12 +301,6 @@ lemma network_internet_protocols_observable_count_pos: "0 < (22 :: nat)"
   by eval
 
 lemma network_internet_protocols_median_error_under_half_pct: "(0.010337117254355377 :: real) < (0.5 :: real)"
-  by eval
-
-lemma network_science_public_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma network_science_public_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

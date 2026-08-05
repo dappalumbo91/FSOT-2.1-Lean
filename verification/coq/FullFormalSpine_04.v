@@ -144,6 +144,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma domain_precision_huge_gap_bounded : (0 <= 2)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
+Lemma dzhanibekov_intermediate_axis_fsot_panel_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma dzhanibekov_intermediate_axis_fsot_panel_observable_count_pos : (0 < 32)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma connective_energy_bus_pos : 0 < (0.000065226644%R).
 Proof. lra. Qed.
 
@@ -299,10 +305,4 @@ Proof. lra. Qed.
 
 Lemma environmental_engineering_ext_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
-
-Lemma environmental_engineering_ext_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma environmental_engineering_ext_observable_count_pos : (0 < 18416)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -3,6 +3,12 @@ theory FullFormalSpine_17
 imports Complex_Main
 begin
 
+lemma cosmological_exp_factor_gt_five: "(5.0 :: real) < (5.977131629539365 :: real)"
+  by eval
+
+lemma cosmological_cos_arg_hi_tight: "(3.4953374011050684 :: real) < (3.51 :: real)"
+  by eval
+
 lemma cosmological_cos_t_hi: "(0.3537447475152753 :: real) < (0.37 :: real)"
   by eval
 
@@ -295,12 +301,6 @@ lemma dark_energy_delta_bounds: "(0.5 :: real) < (1.1 :: real) \<and> (1.1 :: re
   by eval
 
 lemma cosmological_term1_negative: "(-2.1956926285882763 :: real) < (0 :: real)"
-  by eval
-
-lemma dark_energy_term1_negative: "(-2.1349793149885588 :: real) < (0 :: real)"
-  by eval
-
-lemma dark_energy_term2_eq_one: "(1.0 :: real) = (1.0 :: real)"
   by eval
 
 end
