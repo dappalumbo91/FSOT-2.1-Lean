@@ -4,7 +4,7 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.9 — Label A + Label B (T1–T6) · live scoreboard · documentation accuracy · **2026-08-05**  
+**Edition:** v2.10 — full-corpus Mathlib depth · formula authority · clean-clone PASS · **2026-08-05**  
 **Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)  
 **Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · sync checklist: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)  
 **New here?** → [docs/START_HERE.md](docs/START_HERE.md) · **Atlas SQLite** → [docs/ATLAS_DATABASE_DESIGN.md](docs/ATLAS_DATABASE_DESIGN.md) · python scripts/query_fsot_atlas.py --stats · **Open science only (no keys)** → [docs/OPEN_SCIENCE_ONLY_POLICY.md](docs/OPEN_SCIENCE_ONLY_POLICY.md) · map → [docs/DOCUMENTATION_MAP.md](docs/DOCUMENTATION_MAP.md)
@@ -14,22 +14,31 @@
 | Metric | Value | Source |
 |--------|------:|--------|
 | **Authority pin** | **D1D38A** (match) | `vendor/fsot_compute.py` SHA-256 prefix |
-| **Green residual benchmarks** | **433 / 433** fail 0 | `data/benchmark_margin_audit.json` (≤0.5% pooled median) |
+| **Formula authority** | **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** | `data/formula_authority_closure.json` (ZERO_FREE · residual closed · lake green) |
+| **Green residual benchmarks** | **472 / 472** fail 0 | `data/benchmark_margin_audit.json` (≤0.5% pooled median) |
+| **Lean Mathlib depth (full Formal)** | **5182 / 5182 (100%)** L1=0 | `data/mathlib_rederivation_campaign_report.json` |
+| **Engine core Mathlib** | **524 / 524 (100%)** | campaign engine inventory (Scalar/Bounds/Theorems/Domains/…) |
+| **Corpus Mathlib** | **4658 / 4658 (100%)** | priors + spines; campaign verdict **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** |
 | **Scientific domains covered** | **407** (35 core + 371 extensions + IC) | `data/scientific_domain_expansion_map.json` |
 | **Publication atlas rows** | **403** (35 core + 368 extension) | `data/publication/domain_atlas.csv` |
 | **Empirical records (summed panels)** | **~2.19M** | expansion map `total_empirical_records` (includes MPCORB **1,554,101**) |
 | **Median-of-medians residual** | **~0.00056%** | `docs/CURRENT_STATUS.md` |
-| **Catalog multiprover obligations** | **2025** | scientific catalog spine |
-| **Lean formal modules** | **523** | `FSOT/Formal/*.lean` |
+| **Catalog multiprover obligations** | **2222** | scientific catalog spine |
+| **Lean formal modules** | **562** | `FSOT/Formal/*.lean` |
 | **Multiprover** | `overall_ok: true` | `data/cross_proof_verification_report.json` |
+| **Clean-clone repro (Mathlib close)** | **PASS** (0 field mismatches) | `data/fresh_clone_corpus_mathlib_repro_report.md` |
 
-> Older prose saying **394**, **402**, **~537k**, or **~1912** obligations is **stale**. Prefer this table and [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
+> Older prose saying **433/433**, **432/432**, **57% Mathlib**, **523 modules**, or **~1912** obligations is **stale**. Prefer this table, the campaign report, and [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
 
 ```bash
 git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 cd FSOT-2.1-Lean
 pip install -r requirements.txt
-python scripts/build_repo_status_snapshot.py
+lake exe cache get
+lake build FSOT
+python scripts/run_mathlib_rederivation_campaign.py   # expect FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED
+python scripts/run_formula_authority_closure.py       # expect FORMULA_AUTHORITY_SYSTEM_CLOSED
+python scripts/audit_all_benchmark_margins.py         # expect 472/472 fail 0
 python scripts/run_publication_verification_bundle.py
 ```
 
@@ -62,10 +71,22 @@ FSOT is put forward as a **candidate Theory of Everything** under a **frozen tec
 | Remaining | Role |
 |-----------|------|
 | **Peer review** (arXiv + journals) | Social/scientific acceptance path |
-| **Independent clean-clone reproduction** | Trust path — anyone can run the kill commands |
+| **Independent clean-clone reproduction** | **Shipped for Mathlib close:** cold clone of `main` re-ran campaign + formula authority + green gate — **PASS** ([report](data/fresh_clone_corpus_mathlib_repro_report.md)); generic harness: `pwsh scripts/fresh_clone_repro.ps1` |
+| **Multiprover re-pass after Lean depth wave** | Cross-verify Coq / Isabelle / F* / Rust / SMT / TLA+ / QEMU on tip after full-corpus Mathlib upgrade: `python scripts/run_cross_proof_verification.py` |
 | **Deeper T3/T4 research** | **Shipped:** GR+SM force package + CKM/PMNS multi-prover (Lean/Coq/Isabelle/F*/Rust/SMT/TLA+) — [docs/GR_SM_CKM_MULTIPROVER.md](docs/GR_SM_CKM_MULTIPROVER.md); uniqueness/QFT phases still open |
 
 We are **not** hiding the ToE claim. We are separating **technical Label B (closed under frozen T1–T6)** from **peer acknowledgment** (open). Domain count and prover count strengthen Label A; they do not redefine Label B.
+
+### Mathlib depth + formula authority (this close)
+
+| Gate | Verdict | Command |
+|------|---------|---------|
+| Full Formal Mathlib-class depth | **5182/5182 · 100% · L1=0** | `python scripts/run_mathlib_rederivation_campaign.py` |
+| Campaign | **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** | same |
+| Formula authority (pin · ZERO_FREE · residual · lake · depth) | **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** | `python scripts/run_formula_authority_closure.py` |
+| Clean clone (GitHub tip, no local patches) | **PASS** | [data/fresh_clone_corpus_mathlib_repro_report.md](data/fresh_clone_corpus_mathlib_repro_report.md) |
+
+Depth tiers are honest: L0 definitional · L2 analytic Mathlib · L3 constructive chains. Pure `norm_num` certificates (L1) were upgraded to L0/L3 **without changing residual law or free parameters** — same statements, stronger proof shape. Docs: [`docs/MATHLIB_REDERIVATION_CAMPAIGN.md`](docs/MATHLIB_REDERIVATION_CAMPAIGN.md).
 
 ### Skeptic front door (break it in ~15 min)
 
@@ -74,11 +95,12 @@ We are **not** hiding the ToE claim. We are separating **technical Label B (clos
 | 1. Full kit | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) |
 | 2. One-command | `python scripts/run_publication_verification_bundle.py` |
 | 3. Margin | `python scripts/audit_all_benchmark_margins.py` → `data/benchmark_margin_audit.json` |
-| 4. ToE labels | `python scripts/build_toe_gap_closure.py` → `data/toe_gap_closure_report.json` |
-| 5. Cross-proof | `python scripts/run_cross_proof_verification.py` → `overall_ok: true` |
-| 6. Fresh clone | `pwsh scripts/fresh_clone_repro.ps1` |
+| 4. Mathlib + formula authority | `python scripts/run_mathlib_rederivation_campaign.py` · `python scripts/run_formula_authority_closure.py` |
+| 5. ToE labels | `python scripts/build_toe_gap_closure.py` → `data/toe_gap_closure_report.json` |
+| 6. Cross-proof | `python scripts/run_cross_proof_verification.py` → `overall_ok: true` |
+| 7. Fresh clone | `pwsh scripts/fresh_clone_repro.ps1` · Mathlib path: [clean-clone report](data/fresh_clone_corpus_mathlib_repro_report.md) |
 
-**Kill criteria:** any green-gate fail after clean clone; `overall_ok: false`; prereg PRED violation; free-parameter audit finding.
+**Kill criteria:** any green-gate fail after clean clone; Mathlib campaign not closed; formula authority not closed; `overall_ok: false`; prereg PRED violation; free-parameter audit finding.
 
 ### arXiv / paper track
 
@@ -131,9 +153,10 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan), **zero free parameters** — evaluated against measured reality across **407 scientific domains** (35 core + 371 extensions + intelligence compression) and **~2.19 million empirical records** (including the IAU **MPCORB** full minor-planet catalog: **1,554,101** objects at **~0.023%** pooled residual).
 
-The results, as of this edition: **432/432** public benchmark files pass a ≤0.5% pooled error green gate ([`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md)); framework median-of-medians sits near **0.00056%**. The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain. Densify must use **seed formula + real measured data only** ([`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md)).
+The results, as of this edition: **472/472** public benchmark files pass a ≤0.5% pooled error green gate (`data/benchmark_margin_audit.json`); framework median-of-medians sits near **0.00056%**. The **full Lean Formal corpus** is Mathlib-class depth closed at **5182/5182 (100%, L1=0)** with campaign verdict **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** and formula-authority gate **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** (pin **D1D38A**, ZERO_FREE). A cold GitHub clone reproduced those gates with **zero field mismatches** ([clean-clone report](data/fresh_clone_corpus_mathlib_repro_report.md)). The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain. Densify must use **seed formula + real measured data only** ([`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md)).
 
-Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator), Coq/Rocq (Interval-native π/e), Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (**2025** multiprover obligations). QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
+Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator + Mathlib depth campaign), Coq/Rocq (Interval-native π/e), Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (**2222** multiprover obligations). QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
+
 
 FSOT further demonstrates that the same engine guides grounded engineering readouts: FSOT-designed alternative fuels (366 records, 0.039% pooled median), species-scale molecular catalogs, and black-hole / white-hole information-cycle panels â€” cross-verified against seed-scalar predictions, not post-hoc curve fits.
 
@@ -498,10 +521,20 @@ Authoritative artifact: `data/cross_proof_verification_report.json` â†’ **`
 *Seeds â†’ oracle â†’ Lean 4 (primary) â†’ Coq / Isabelle / F* â†’ Rust executable replay of **1,863** atomic obligations. Authoritative report: `data/cross_proof_verification_report.json`.*
 <!-- README_OBLIGATION_MAP_END -->
 
+### 5.2.2 Lean Mathlib re-derivation campaign
+
+| Scope | Theorems | Mathlib-class | L1 left | Verdict |
+|-------|--------:|-------------:|--------:|---------|
+| Engine core | 524 | **100%** | 0 | engine closed |
+| Corpus (priors + spines) | 4658 | **100%** | 0 | corpus closed |
+| **Full Formal** | **5182** | **100%** | **0** | **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** |
+
+Formula-faithful only: same statements, stronger constructive proof shape (term-mode exact, `decide`, multi-step `exact` chains) — **not** residual refits. Report: `data/mathlib_rederivation_campaign_report.json` · narrative: [`docs/MATHLIB_REDERIVATION_CAMPAIGN.md`](docs/MATHLIB_REDERIVATION_CAMPAIGN.md) · authority gate: `python scripts/run_formula_authority_closure.py` → **`FORMULA_AUTHORITY_SYSTEM_CLOSED`**.
+
 ### 5.3 Benchmark margin gate
 
-- **GREEN:** pooled median â‰¤ 0.5% AND classifier â‰¥ 99.5%  
-- **Result:** **432/432** green (`data/benchmark_margin_audit.json`)
+- **GREEN:** pooled median ≤ 0.5% AND classifier ≥ 99.5%  
+- **Result:** **472/472** green (`data/benchmark_margin_audit.json`)
 
 ### 5.4 AI assistance â€” human responsibility
 
@@ -560,11 +593,14 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 | Publication atlas rows | **403** |
 | Empirical records (panel sum) | **~2.19M** |
 | MPCORB catalog objects | **1,554,101** (~0.023% residual) |
-| Benchmark files green (≤0.5%) | **432/432** |
+| Benchmark files green (≤0.5%) | **472/472** |
 | Median-of-medians residual | **~0.00056%** |
 | Worst domain max scalar error | **0.4989%** |
-| Catalog multiprover obligations | **2025** |
-| Lean formal modules | **523** |
+| Catalog multiprover obligations | **2222** |
+| Lean formal modules | **562** |
+| Lean Mathlib depth (full Formal) | **5182/5182 (100%)** |
+| Formula authority | **CLOSED** (pin D1D38A · ZERO_FREE) |
+| Clean-clone Mathlib path | **PASS** |
 | Tier A_strong (status) | **95** |
 | Tier B_verified (status) | **329** |
 
@@ -615,7 +651,7 @@ FSOT does not verify a single silo — it verifies a **spine of 35 core scientif
 | Extension panels | **371** | Specialized depth across 26 clusters |
 | Intelligence compression | 1 | Specialized bridge domain |
 | **Total scientific domains** | **407** | Core + extensions + IC |
-| Lean formal modules | **523** | Machine-checked priors per panel |
+| Lean formal modules | **562** | Machine-checked priors per panel (Mathlib depth **100%**) |
 | Empirical records (panel sum) | **~2.19M** | Measured vs seed-derived FSOT predictions |
 | Green residual benchmarks | **432/432** | Public ≤0.5% gate files |
 
