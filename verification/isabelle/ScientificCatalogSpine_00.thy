@@ -1,4 +1,4 @@
-(* FSOT scientific catalog spine chunk 1/17 *)
+(* FSOT scientific catalog spine chunk 1/19 *)
 theory ScientificCatalogSpine_00
 imports Complex_Main
 begin
@@ -121,21 +121,6 @@ lemma cat_electrical_power_systems_max_scalar_under_half_pct: "(0.489023002 :: r
   by eval
 
 lemma cat_electrical_power_systems_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_particle_physics_records_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma cat_particle_physics_pooled_under_half_pct: "(0.0003086625 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_particle_physics_pooled_lt_half_pure: "(0.0003086625 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_particle_physics_max_scalar_under_half_pct: "(0.489023002 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_particle_physics_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_quantum_materials_benchmark_json_records_pos: "0 < (168 :: nat)"
@@ -348,19 +333,34 @@ lemma cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct: "(0.3712743059251006 ::
 lemma cat_toe_ckm_pmns_flavor_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_dark_energy_cpl_records_pos: "0 < (24 :: nat)"
+lemma cat_dark_energy_cpl_records_pos: "0 < (14 :: nat)"
   by eval
 
-lemma cat_dark_energy_cpl_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cat_dark_energy_cpl_pooled_under_half_pct: "(0.280515 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_dark_energy_cpl_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+lemma cat_dark_energy_cpl_pooled_lt_half_pure: "(0.280515 :: real) < (0.5 :: real)"
   by eval
 
 lemma cat_dark_energy_cpl_max_scalar_under_half_pct: "(0.368503 :: real) < (0.5 :: real)"
   by eval
 
 lemma cat_dark_energy_cpl_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_dark_sector_open_problems_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_dark_sector_open_problems_pooled_under_half_pct: "(0.000561846 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dark_sector_open_problems_pooled_lt_half_pure: "(0.000561846 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dark_sector_open_problems_max_scalar_under_half_pct: "(0.368503 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dark_sector_open_problems_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

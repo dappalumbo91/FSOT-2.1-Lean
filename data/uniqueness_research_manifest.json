@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-08-05T20:30:15.270617+00:00",
+  "version": "1.0",
+  "policy": "uniqueness_research_after_residual_closure",
+  "active_track": "path_integral_confinement_reframe",
+  "order_hardest_first": [
+    "path_integral_confinement_reframe",
+    "spin2_fock_uniqueness",
+    "einstein_hilbert_measure_uniqueness"
+  ],
+  "artifacts": {
+    "confinement_research": "data/uniqueness_confinement_research.json",
+    "module": "vendor/fsot_uniqueness_confinement.py",
+    "spine_doc": "docs/UNIQUENESS_RESEARCH_SPINE.md",
+    "multiprover_report": "data/uniqueness_research_verification_report.json",
+    "spine": "verification/obligations/uniqueness_research_spine.json"
+  },
+  "residual_open_count_contribution": 0,
+  "multiprover": {
+    "report": "data/uniqueness_research_verification_report.json",
+    "spine": "verification/obligations/uniqueness_research_spine.json",
+    "overall_ok": true,
+    "github_ready": true,
+    "obligation_count": 59,
+    "python": {
+      "passed": 59,
+      "total": 59,
+      "status": "passed"
+    },
+    "rust": "passed",
+    "smt": "passed",
+    "coq": "passed",
+    "fstar": "skipped",
+    "updated_at": "2026-08-05T20:30:30.053534+00:00"
+  },
+  "builders": {
+    "export": "scripts/export_and_generate_uniqueness_research_artifacts.py",
+    "verify": "scripts/run_uniqueness_research_verification.py"
+  }
+}

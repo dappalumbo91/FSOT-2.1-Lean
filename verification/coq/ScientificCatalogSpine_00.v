@@ -1,4 +1,4 @@
-(* FSOT scientific catalog spine chunk 1/17 — multi-prover re-proof of domain residual gates. *)
+(* FSOT scientific catalog spine chunk 1/19 — multi-prover re-proof of domain residual gates. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
@@ -161,26 +161,6 @@ Proof. lra. Qed.
 
 
 Lemma cat_electrical_power_systems_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_particle_physics_records_pos : (0 < 22)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_particle_physics_pooled_under_half_pct : ((0.0003086625%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_particle_physics_pooled_lt_half_pure : ((0.0003086625%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_particle_physics_max_scalar_under_half_pct : ((0.489023002%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_particle_physics_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
@@ -464,15 +444,15 @@ Lemma cat_toe_ckm_pmns_flavor_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_dark_energy_cpl_records_pos : (0 < 24)%nat.
+Lemma cat_dark_energy_cpl_records_pos : (0 < 14)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
-Lemma cat_dark_energy_cpl_pooled_under_half_pct : (0%R) < (0.5%R).
+Lemma cat_dark_energy_cpl_pooled_under_half_pct : ((0.280515%R)) < (0.5%R).
 Proof. lra. Qed.
 
 
-Lemma cat_dark_energy_cpl_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Lemma cat_dark_energy_cpl_pooled_lt_half_pure : ((0.280515%R)) < ((0.5%R)).
 Proof. lra. Qed.
 
 
@@ -481,5 +461,25 @@ Proof. lra. Qed.
 
 
 Lemma cat_dark_energy_cpl_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_dark_sector_open_problems_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_dark_sector_open_problems_pooled_under_half_pct : ((0.000561846%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_dark_sector_open_problems_pooled_lt_half_pure : ((0.000561846%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_dark_sector_open_problems_max_scalar_under_half_pct : ((0.368503%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_dark_sector_open_problems_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

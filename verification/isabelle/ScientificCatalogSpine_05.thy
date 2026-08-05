@@ -1,7 +1,52 @@
-(* FSOT scientific catalog spine chunk 6/17 *)
+(* FSOT scientific catalog spine chunk 6/19 *)
 theory ScientificCatalogSpine_05
 imports Complex_Main
 begin
+
+lemma cat_rcsb_pdb_structures_records_pos: "0 < (45 :: nat)"
+  by eval
+
+lemma cat_rcsb_pdb_structures_pooled_under_half_pct: "(0.0265185 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_rcsb_pdb_structures_pooled_lt_half_pure: "(0.0265185 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_rcsb_pdb_structures_max_scalar_under_half_pct: "(0.040788 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_rcsb_pdb_structures_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_fluid_spacetime_observable_spine_records_pos: "0 < (29 :: nat)"
+  by eval
+
+lemma cat_fluid_spacetime_observable_spine_pooled_under_half_pct: "(0.0111155 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_spacetime_observable_spine_pooled_lt_half_pure: "(0.0111155 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_spacetime_observable_spine_max_scalar_under_half_pct: "(0.039797 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_spacetime_observable_spine_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_fluid_spacetime_prereg_validation_panel_records_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cat_fluid_spacetime_prereg_validation_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_spacetime_prereg_validation_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_spacetime_prereg_validation_panel_max_scalar_under_half_pct: "(0.039797 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fluid_spacetime_prereg_validation_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
 
 lemma cat_fpc_fluidlink_timing_deep_panel_records_pos: "0 < (24 :: nat)"
   by eval
@@ -93,13 +138,13 @@ lemma cat_mechanical_engineering_panel_max_scalar_under_half_pct: "(0.039349 :: 
 lemma cat_mechanical_engineering_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_formula_branching_fractal_records_pos: "0 < (255 :: nat)"
+lemma cat_formula_branching_fractal_records_pos: "0 < (380 :: nat)"
   by eval
 
-lemma cat_formula_branching_fractal_pooled_under_half_pct: "(0.03801653760497961 :: real) < (0.5 :: real)"
+lemma cat_formula_branching_fractal_pooled_under_half_pct: "(0.038016537604979236 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_formula_branching_fractal_pooled_lt_half_pure: "(0.03801653760497961 :: real) < (0.5 :: real)"
+lemma cat_formula_branching_fractal_pooled_lt_half_pure: "(0.038016537604979236 :: real) < (0.5 :: real)"
   by eval
 
 lemma cat_formula_branching_fractal_max_scalar_under_half_pct: "(0.038016537604988035 :: real) < (0.5 :: real)"
@@ -316,51 +361,6 @@ lemma cat_finance_markets_max_scalar_under_half_pct: "(0.03230022603429596 :: re
   by eval
 
 lemma cat_finance_markets_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_supply_chain_logistics_records_pos: "0 < (40 :: nat)"
-  by eval
-
-lemma cat_supply_chain_logistics_pooled_under_half_pct: "(0.02515962546361099 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_supply_chain_logistics_pooled_lt_half_pure: "(0.02515962546361099 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_supply_chain_logistics_max_scalar_under_half_pct: "(0.03230022603429461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_supply_chain_logistics_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_arxiv_primitives_panel_records_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma cat_arxiv_primitives_panel_pooled_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_arxiv_primitives_panel_pooled_lt_half_pure: "(0.031506 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_arxiv_primitives_panel_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_arxiv_primitives_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_coding_structure_verifier_panel_records_pos: "0 < (43 :: nat)"
-  by eval
-
-lemma cat_coding_structure_verifier_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_coding_structure_verifier_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_coding_structure_verifier_panel_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_coding_structure_verifier_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

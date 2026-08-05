@@ -36,6 +36,9 @@ lemma agriculture_agroecology_bundle: "(276 :: nat) = 276 \<and> (16 :: nat) = 1
 lemma ai_galactic_orbital_bridge_bundle: "(48 :: nat) = 48 \<and> (16 :: nat) = 16 \<and> (0.005168558627177688 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma alphafold_batch_meta_open_bundle: "(182 :: nat) = 182 \<and> (14 :: nat) = 14 \<and> (0.015311 :: real) < (0.5 :: real)"
+  by auto
+
 lemma alternate_base_mathematics_explorer_panel_bundle: "(56 :: nat) = 56 \<and> (17 :: nat) = 17 \<and> (0.009504 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -150,6 +153,9 @@ lemma certified_agent_qwen_bundle: "(8 :: nat) = 8 \<and> (12 :: nat) = 12 \<and
 lemma chaos_mediated_phase_transitions_bundle: "(21 :: nat) = 21 \<and> (17 :: nat) = 17 \<and> (0.03147898006445882 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma chembl_deep_open_bundle: "(188 :: nat) = 188 \<and> (14 :: nat) = 14 \<and> (0.040788 :: real) < (0.5 :: real)"
+  by auto
+
 lemma chemical_engineering_ext_bundle: "(186 :: nat) = 186 \<and> (0.0010333425185953097 :: real) < (0.5 :: real) \<and> (0.0010333425185953097 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -186,10 +192,16 @@ lemma clinicaltrials_medical_panel_bundle: "(394 :: nat) = 394 \<and> (13 :: nat
 lemma clinicaltrials_medical_bundle: "(394 :: nat) = 394 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma codata_full_table_open_bundle: "(38 :: nat) = 38 \<and> (12 :: nat) = 12 \<and> (0.073582 :: real) < (0.5 :: real)"
+  by auto
+
 lemma code_genome_structure_bundle: "(205 :: nat) = 205 \<and> (17 :: nat) = 17 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
 lemma coding_structure_verifier_bundle: "(18 :: nat) = 18 \<and> (14 :: nat) = 14 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma cod_optimade_structures_bundle: "(682 :: nat) = 682 \<and> (14 :: nat) = 14 \<and> (0.01341 :: real) < (0.5 :: real)"
   by auto
 
 lemma cold_fusion_candidate_prereg_scaffold_bundle: "(24 :: nat) = 24 \<and> (14 :: nat) = 14 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -276,6 +288,12 @@ lemma dark_energy_cpl_bundle: "(24 :: nat) = 24 \<and> (24 :: nat) = 24 \<and> (
 lemma dark_sector_open_problems_bundle: "(24 :: nat) = 24 \<and> (24 :: nat) = 24 \<and> (0.01529034996934153 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma desi_edr_table_slice_open_bundle: "(18 :: nat) = 18 \<and> (18 :: nat) = 18 \<and> (0.010049 :: real) < (0.5 :: real)"
+  by auto
+
+lemma desi_public_depth_open_bundle: "(10 :: nat) = 10 \<and> (18 :: nat) = 18 \<and> (0.010049 :: real) < (0.5 :: real)"
+  by auto
+
 lemma desktop_application_wiring_spine_bundle: "(81 :: nat) = 81 \<and> (16 :: nat) = 16 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -327,6 +345,9 @@ lemma electrical_power_systems_bundle: "(9 :: nat) = 9 \<and> (9 :: nat) = 9 \<a
 lemma element_synthesis_condition_scaffold_bundle: "(45 :: nat) = 45 \<and> (14 :: nat) = 14 \<and> (0.000787 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma endf_iaea_nuclear_open_bundle: "(517 :: nat) = 517 \<and> (16 :: nat) = 16 \<and> (0.092131 :: real) < (0.5 :: real)"
+  by auto
+
 lemma energy_ai_orbital_bridge_bundle: "(48 :: nat) = 48 \<and> (16 :: nat) = 16 \<and> (0.027544107556407217 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -373,6 +394,9 @@ lemma exogeology_panel_bundle: "(100 :: nat) = 100 \<and> (20 :: nat) = 20 \<and
   by auto
 
 lemma exogeology_bundle: "(316 :: nat) = 316 \<and> (20 :: nat) = 20 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma exoplanet_archive_depth_open_bundle: "(1976 :: nat) = 1976 \<and> (16 :: nat) = 16 \<and> (0.023015 :: real) < (0.5 :: real)"
   by auto
 
 lemma exoplanet_system_architecture_bundle: "(882 :: nat) = 882 \<and> (21 :: nat) = 21 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -522,6 +546,9 @@ lemma fusion_physics_public_panel_bundle: "(24 :: nat) = 24 \<and> (18 :: nat) =
 lemma gaia_astrometry_panel_deep_bundle: "(62 :: nat) = 62 \<and> (20 :: nat) = 20 \<and> (0.022461 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma gaia_dr3_source_sample_open_bundle: "(3459 :: nat) = 3459 \<and> (18 :: nat) = 18 \<and> (0.022461 :: real) < (0.5 :: real)"
+  by auto
+
 lemma gaia_dr3_tap_deep_bundle: "(1826 :: nat) = 1826 \<and> (20 :: nat) = 20 \<and> (0.022461 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -529,6 +556,9 @@ lemma galactic_structure_sample_bundle: "(101 :: nat) = 101 \<and> (20 :: nat) =
   by auto
 
 lemma gbif_species_occurrence_bundle: "(240 :: nat) = 240 \<and> (15 :: nat) = 15 \<and> (0.006006 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma gbif_taxon_depth_open_bundle: "(203 :: nat) = 203 \<and> (14 :: nat) = 14 \<and> (0.006006 :: real) < (0.5 :: real)"
   by auto
 
 lemma genomic_sciences_bundle: "(24 :: nat) = 24 \<and> (12 :: nat) = 12 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -552,7 +582,16 @@ lemma government_open_data_spine_bundle: "(28 :: nat) = 28 \<and> (18 :: nat) = 
 lemma grace_cryosphere_bundle: "(253 :: nat) = 253 \<and> (253 :: nat) = 253 \<and> (16 :: nat) = 16 \<and> True \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma gwas_catalog_depth_open_bundle: "(81 :: nat) = 81 \<and> (14 :: nat) = 14 \<and> (0.022236 :: real) < (0.5 :: real)"
+  by auto
+
 lemma gwosc_live_event_deep_bundle: "(191 :: nat) = 191 \<and> (20 :: nat) = 20 \<and> (0.008488 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma gwosc_strain_metadata_open_bundle: "(54 :: nat) = 54 \<and> (18 :: nat) = 18 \<and> (0.008488 :: real) < (0.5 :: real)"
+  by auto
+
+lemma gwtc_catalog_open_bundle: "(1972 :: nat) = 1972 \<and> (18 :: nat) = 18 \<and> (0.008488 :: real) < (0.5 :: real)"
   by auto
 
 lemma heavy_ion_lab_synthesis_panel_bundle: "(39 :: nat) = 39 \<and> (13 :: nat) = 13 \<and> (0.000095 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -636,6 +675,9 @@ lemma ionospheric_chemistry_coupling_bundle: "(85 :: nat) = 85 \<and> (15 :: nat
 lemma island_of_stability_deep_panel_bundle: "(23 :: nat) = 23 \<and> (19 :: nat) = 19 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma jarvis_dft_open_panel_bundle: "(77 :: nat) = 77 \<and> (16 :: nat) = 16 \<and> (0.01341 :: real) < (0.5 :: real)"
+  by auto
+
 lemma knowledge_base_portable_bundle_panel_bundle: "(24 :: nat) = 24 \<and> (19 :: nat) = 19 \<and> (0.0020923899350648867 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -664,6 +706,12 @@ lemma live_ingest_spine_bundle: "(28 :: nat) = 28 \<and> (17 :: nat) = 17 \<and>
   by auto
 
 lemma living_fsot_hardware_panel_bundle: "(77 :: nat) = 77 \<and> (15 :: nat) = 15 \<and> (0.031506 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma lmfdb_elliptic_curves_open_bundle: "(1016 :: nat) = 1016 \<and> (14 :: nat) = 14 \<and> (0.014767 :: real) < (0.5 :: real)"
+  by auto
+
+lemma lmfdb_oeis_math_open_bundle: "(3918 :: nat) = 3918 \<and> (14 :: nat) = 14 \<and> (0.014767 :: real) < (0.5 :: real)"
   by auto
 
 lemma longevity_anage_catalog_bundle: "(966 :: nat) = 966 \<and> (20 :: nat) = 20 \<and> (0.022236 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
@@ -813,6 +861,9 @@ lemma ncbi_gene_public_panel_bundle: "(48 :: nat) = 48 \<and> (12 :: nat) = 12 \
 lemma ncbi_gene_public_bundle: "(48 :: nat) = 48 \<and> (12 :: nat) = 12 \<and> (0.025571999999999998 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma ncei_climate_open_bundle: "(607 :: nat) = 607 \<and> (14 :: nat) = 14 \<and> (0.0291 :: real) < (0.5 :: real)"
+  by auto
+
 lemma network_internet_protocols_bundle: "(22 :: nat) = 22 \<and> (15 :: nat) = 15 \<and> (0.010337117254355377 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -852,6 +903,12 @@ lemma neutrino_physics_panel_bundle: "(20 :: nat) = 20 \<and> (7 :: nat) = 7 \<a
 lemma neutrino_physics_bundle: "(20 :: nat) = 20 \<and> (7 :: nat) = 7 \<and> (0.009504 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma nist_asd_multi_species_open_bundle: "(26 :: nat) = 26 \<and> (12 :: nat) = 12 \<and> (0.073582 :: real) < (0.5 :: real)"
+  by auto
+
+lemma nist_asd_spectroscopy_open_bundle: "(13 :: nat) = 13 \<and> (12 :: nat) = 12 \<and> (0.073582 :: real) < (0.5 :: real)"
+  by auto
+
 lemma nist_codata_constants_bundle: "(6 :: nat) = 6 \<and> (7 :: nat) = 7 \<and> (0 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -867,7 +924,16 @@ lemma noaa_ndbc_buoy_panel_bundle: "(596 :: nat) = 596 \<and> (17 :: nat) = 17 \
 lemma noaa_ndbc_buoy_bundle: "(596 :: nat) = 596 \<and> (17 :: nat) = 17 \<and> (0.028287 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma noaa_tides_multi_station_open_bundle: "(209 :: nat) = 209 \<and> (16 :: nat) = 16 \<and> (0.030173 :: real) < (0.5 :: real)"
+  by auto
+
 lemma nothing_perfection_friction_origin_panel_bundle: "(24 :: nat) = 24 \<and> (22 :: nat) = 22 \<and> (0.008488 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma nuclear_iaea_open_bundle: "(360 :: nat) = 360 \<and> (16 :: nat) = 16 \<and> (0.092131 :: real) < (0.5 :: real)"
+  by auto
+
+lemma nufit_neutrino_open_bundle: "(10 :: nat) = 10 \<and> (14 :: nat) = 14 \<and> (0.009504 :: real) < (0.5 :: real)"
   by auto
 
 lemma observer_channel_derivation_bundle: "(348 :: nat) = 348 \<and> (16 :: nat) = 16 \<and> (0.0525102820198906 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -879,6 +945,9 @@ lemma observer_effect_cross_species_panel_bundle: "(289 :: nat) = 289 \<and> (16
 lemma oceanography_gap_fill_bundle: "(65 :: nat) = 65 \<and> (0.03017272606768673 :: real) < (0.5 :: real) \<and> (0.030172726067689837 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma oeis_family_sweep_open_bundle: "(394 :: nat) = 394 \<and> (14 :: nat) = 14 \<and> (0.014767 :: real) < (0.5 :: real)"
+  by auto
+
 lemma omni_theory_genesis_bundle: "(27 :: nat) = 27 \<and> (25 :: nat) = 25 \<and> (0 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -888,6 +957,9 @@ lemma omni_theory_humanities_panel_bundle: "(37 :: nat) = 37 \<and> (17 :: nat) 
 lemma oncology_bundle: "(67 :: nat) = 67 \<and> (5 :: nat) = 5 \<and> (14 :: nat) = 14 \<and> (0.05041956982053305 :: real) < (0.5 :: real) \<and> (0.05041956982053305 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma openalex_citation_depth_open_bundle: "(150 :: nat) = 150 \<and> (12 :: nat) = 12 \<and> (0.008863 :: real) < (0.5 :: real)"
+  by auto
+
 lemma openalex_citation_graph_bundle: "(80 :: nat) = 80 \<and> (18 :: nat) = 18 \<and> (0.031506 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -895,6 +967,9 @@ lemma open_meteo_live_panel_bundle: "(432 :: nat) = 432 \<and> (16 :: nat) = 16 
   by auto
 
 lemma open_meteo_live_bundle: "(432 :: nat) = 432 \<and> (16 :: nat) = 16 \<and> (0.026204 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma openneuro_depth_open_bundle: "(47 :: nat) = 47 \<and> (14 :: nat) = 14 \<and> (0.018003 :: real) < (0.5 :: real)"
   by auto
 
 lemma openneuro_full_panel_bundle: "(123 :: nat) = 123 \<and> (14 :: nat) = 14 \<and> (0.015431 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -913,6 +988,9 @@ lemma osti_doe_science_bundle: "(100 :: nat) = 100 \<and> (18 :: nat) = 18 \<and
   by auto
 
 lemma overflow_carry_emergence_panel_bundle: "(29 :: nat) = 29 \<and> (19 :: nat) = 19 \<and> (0.009504 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma owid_epidemiology_open_bundle: "(1778 :: nat) = 1778 \<and> (16 :: nat) = 16 \<and> (0.022236 :: real) < (0.5 :: real)"
   by auto
 
 lemma paleoclimate_ext_bundle: "(40 :: nat) = 40 \<and> (0.015015854077432778 :: real) < (0.5 :: real) \<and> (0.015015854077432778 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
@@ -937,6 +1015,9 @@ lemma particle_neural_orbital_bridge_bundle: "(48 :: nat) = 48 \<and> (17 :: nat
   by auto
 
 lemma particle_physics_gap_fill_bundle: "(98 :: nat) = 98 \<and> (0.002729984252880815 :: real) < (0.5 :: real) \<and> (0.002729984252880815 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma pdg_live_depth_open_bundle: "(33 :: nat) = 33 \<and> (14 :: nat) = 14 \<and> (0.009504 :: real) < (0.5 :: real)"
   by auto
 
 lemma pdg_particle_properties_bundle: "(21 :: nat) = 21 \<and> (9 :: nat) = 9 \<and> (0.000095 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -1017,6 +1098,9 @@ lemma psychology_psychometrics_depth_panel_bundle: "(23 :: nat) = 23 \<and> (15 
 lemma pubchem_compound_properties_bundle: "(500 :: nat) = 500 \<and> (8 :: nat) = 8 \<and> (0.002637 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma pubchem_depth_open_bundle: "(149 :: nat) = 149 \<and> (14 :: nat) = 14 \<and> (0.040788 :: real) < (0.5 :: real)"
+  by auto
+
 lemma pubchem_live_deep_bundle: "(5254 :: nat) = 5254 \<and> (20 :: nat) = 20 \<and> (0.032631 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -1069,6 +1153,9 @@ lemma radio_astronomy_bundle: "(30 :: nat) = 30 \<and> (20 :: nat) = 20 \<and> (
   by auto
 
 lemma rcsb_pdb_structures_bundle: "(45 :: nat) = 45 \<and> (13 :: nat) = 13 \<and> (0.022236 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma rcsb_structure_batch_open_bundle: "(91 :: nat) = 91 \<and> (14 :: nat) = 14 \<and> (0.022236 :: real) < (0.5 :: real)"
   by auto
 
 lemma rd_interval_tightening_panel_bundle: "(24 :: nat) = 24 \<and> (22 :: nat) = 22 \<and> (0.000502 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -1129,6 +1216,9 @@ lemma semiconductor_physics_public_panel_bundle: "(24 :: nat) = 24 \<and> (11 ::
   by auto
 
 lemma sh0es_refined_bundle: "(24 :: nat) = 24 \<and> (25 :: nat) = 25 \<and> (0.024894 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma simbad_identity_depth_open_bundle: "(1365 :: nat) = 1365 \<and> (16 :: nat) = 16 \<and> (0.022461 :: real) < (0.5 :: real)"
   by auto
 
 lemma simbad_stellar_identity_deep_bundle: "(520 :: nat) = 520 \<and> (20 :: nat) = 20 \<and> (0.022461 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
@@ -1314,7 +1404,13 @@ lemma unified_db_crosswalk_spine_bundle: "(24 :: nat) = 24 \<and> (17 :: nat) = 
 lemma uniprot_protein_annotations_bundle: "(22 :: nat) = 22 \<and> (12 :: nat) = 12 \<and> (0.026684 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma uniprot_proteome_slice_open_bundle: "(68 :: nat) = 68 \<and> (14 :: nat) = 14 \<and> (0.022236 :: real) < (0.5 :: real)"
+  by auto
+
 lemma uniprot_structure_annotations_deep_bundle: "(121 :: nat) = 121 \<and> (13 :: nat) = 13 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma usgs_seismic_history_open_bundle: "(398 :: nat) = 398 \<and> (16 :: nat) = 16 \<and> (0.022295 :: real) < (0.5 :: real)"
   by auto
 
 lemma virology_ext_bundle: "(163 :: nat) = 163 \<and> (0.04593318440798183 :: real) < (0.5 :: real) \<and> (0.04593318440798183 :: real) < (0.5 :: real) \<and> True \<and> 0 < (1.0 :: real)"
@@ -1359,6 +1455,9 @@ lemma wds_live_multiplicity_deep_bundle: "(281 :: nat) = 281 \<and> (19 :: nat) 
 lemma world_bank_development_bundle: "(420 :: nat) = 420 \<and> (20 :: nat) = 20 \<and> (0.02584 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
+lemma world_bank_macro_open_bundle: "(605 :: nat) = 605 \<and> (18 :: nat) = 18 \<and> (0.02584 :: real) < (0.5 :: real)"
+  by auto
+
 lemma xr_interactive_media_math_scaffold_bundle: "(24 :: nat) = 24 \<and> (14 :: nat) = 14 \<and> (0 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"
   by auto
 
@@ -1378,6 +1477,9 @@ lemma zebrafish_longevity_genetics_coupling_bundle: "(15 :: nat) = 15 \<and> (22
   by auto
 
 lemma zebrafish_predictive_validation_bundle: "(20 :: nat) = 20 \<and> (24 :: nat) = 24 \<and> (0.3579695 :: real) < (5.0 :: real) \<and> 0 < (1.0 :: real)"
+  by auto
+
+lemma zenodo_records_depth_open_bundle: "(32 :: nat) = 32 \<and> (12 :: nat) = 12 \<and> (0.031506 :: real) < (0.5 :: real)"
   by auto
 
 lemma zero_boundary_not_entity_panel_bundle: "(24 :: nat) = 24 \<and> (18 :: nat) = 18 \<and> (0.020055 :: real) < (0.5 :: real) \<and> 0 < (1.0 :: real)"

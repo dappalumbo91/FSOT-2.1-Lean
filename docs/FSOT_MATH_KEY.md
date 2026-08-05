@@ -1,30 +1,35 @@
 # FSOT Mathematical Key — unified principle for every domain
 
-**Edition:** 2026-08-05 (documentation accuracy pass)  
+**Edition:** 2026-08-05 (full system math audit + hierarchy)  
 **Authority pin:** `D1D38A` · `vendor/fsot_compute.py` (SHA-256 prefix; confirm with [`CURRENT_STATUS.md`](CURRENT_STATUS.md))  
 **Precision gates:** green ≤ **0.5%** pooled median · aspiration ≤ **0.05%** (`scripts/fsot_precision_constants.py`)  
 **Live green count:** **always** [`CURRENT_STATUS.md`](CURRENT_STATUS.md) — do not trust memorized ratios in prose  
 **Audience map:** [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) (lay · scientist · PhD)  
-**Reproduce:** [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md)  
+**Mathematician how-to:** [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md)  
+**System audit (machine):** [`data/fsot_system_math_audit.json`](../data/fsot_system_math_audit.json) · summary [`FSOT_SYSTEM_MATH_AUDIT.md`](FSOT_SYSTEM_MATH_AUDIT.md)  
+**Building-block hierarchy:** [`data/fsot_building_block_hierarchy.json`](../data/fsot_building_block_hierarchy.json)  
+**Domain network strings:** [`data/fsot_domain_formula_network.json`](../data/fsot_domain_formula_network.json)  
+**Reproduce:** [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) · `python scripts/build_fsot_system_math_audit.py`  
 **Full atlas:** `data/publication/domain_atlas.csv` + extension benchmarks · MPCORB-class catalogs in-repo
 
 This is the **single readable key** for using the math across every covered domain.  
-It is not a second theory. It is the same engine, the same seeds, and the same routing rule — applied at the right **dimensional interface**.
+It is not a second theory. It is the same **fluid spacetime** engine, the same seeds, and the same routing rule — applied at the right **dimensional interface**.
 
 ---
 
 ## 0. One-paragraph thesis
 
-FSOT is a **zero free-parameter** scalar engine: every constant is derived from five seeds \((\pi, e, \varphi, \gamma, G)\).  
-Every scientific domain is a **preregistered fold** of that engine at a fixed effective dimension \(D_{\mathrm{eff}}\), observer flag, and coupling constants — not a separate fitted model.  
+FSOT is a **zero free-parameter fluid-spacetime** scalar engine: every constant is derived from five seeds \((\pi, e, \varphi, \gamma, G)\); continuum dynamics live at effective dimension \(D_{\mathrm{eff}}\) with compactification ceiling **25**.  
+Every scientific domain is a **preregistered fold** of that engine at fixed \((D_{\mathrm{eff}}, h, \delta\psi, \delta\theta, \mathrm{observed})\) — not a separate fitted model.  
 Predictions against measured data use one law:
 
 \[
 \texttt{computed} = \texttt{measured}\cdot\bigl(1 + |S(\mathrm{domain})|\cdot f_{\mathrm{domain}}\bigr)
 \]
 
-with \(S\) from the full scalar stack (observer / consciousness factor / POOF valve / chaos / bleed).  
-When residual mismatches, **change \(D_{\mathrm{eff}}\) interface first** — do not invent a new coefficient.
+with \(S=K(T_1+T_2+T_3)\) from the full stack (observer / \(\mathbf{C}_{\mathrm{factor}}\) / POOF–Suction valves / chaos / bleed).  
+When residual mismatches, **change \(D_{\mathrm{eff}}\) interface first** — do not invent a new coefficient.  
+**Absolute rest frame is not the fluid:** rest-frame fiction damps; the continuum medium is the model.
 
 ---
 
@@ -73,15 +78,61 @@ S &= K\cdot(T_1 + T_2 + T_3)
 \end{aligned}
 \]
 
-**Observer effect (yin–yang duality):**
+### 3.1 Branch T1 — observer-modulated base
+
+\[
+\begin{aligned}
+\mathrm{growth} &= \exp\!\bigl(\alpha(1-h/N)\gamma/\varphi\bigr) \\
+\mathrm{base} &= \frac{NP}{\sqrt{D}}\cos\frac{\psi_{\mathrm{con}}+\delta\psi}{\eta_{\mathrm{eff}}}
+  \exp(-\alpha h/N+\rho+B_{\mathrm{in}}\delta\psi)\,(1+\mathrm{growth}\,C_{\mathrm{eff}}) \\
+T_1 &= \mathrm{base}\,(1+P_{\mathrm{new}}\ln(D/25))
+\end{aligned}
+\]
+
+If `observed`: \(T_1 \leftarrow T_1\cdot\exp(\mathbf{C}_{\mathrm{factor}}P_{\mathrm{var}})\cos(\delta\psi+P_{\mathrm{var}})\).
+
+**Fluid note:** \(\ln(D/25)\) is the fold about the compactification ceiling.
+
+### 3.2 Branch T2 — linear modulation
+
+\[
+T_2 = \mathrm{scale}\cdot\mathrm{amplitude} + \mathrm{trend\_bias}
+\]
+
+(Domain routes use defaults scale=amplitude=1, trend_bias=0.)
+
+### 3.3 Branch T3 — valve–acoustic–phase (fluid heart)
+
+\[
+\begin{aligned}
+\mathrm{valve} &= \beta\cos\delta\psi\cdot\frac{NP}{\sqrt{D}}
+  \Bigl(1+\mathrm{Chaos}\frac{D-25}{25}\Bigr)
+  \bigl(1+\mathrm{Poof}\cos(\theta_S+\pi)+\mathrm{Suction}\sin\theta_S\bigr) \\
+\mathrm{acoustic} &= 1+\frac{A_{\mathrm{bleed}}\sin^2\delta\theta}{\varphi}+\frac{A_{\mathrm{in}}\cos^2\delta\theta}{\varphi} \\
+\mathrm{phase} &= 1+B_{\mathrm{in}}P_{\mathrm{var}} \\
+T_3 &= \mathrm{valve}\cdot\mathrm{acoustic}\cdot\mathrm{phase}
+\end{aligned}
+\]
+
+**Fluid note:** Chaos term vanishes at \(D=25\); POOF/Suction are continuum valves.
+
+### 3.4 Observer duality (yin–yang)
 
 - `observed=True` → \(T_1\) multiplies by \(\exp(\mathbf{C}_{\mathrm{factor}}\cdot P_{\mathrm{var}})\cdot\cos(\delta\psi + P_{\mathrm{var}})\)  
 - `observed=False` → that branch is off → different \(S\) at the **same** \(D_{\mathrm{eff}}\)
 
-That gap is the engine’s observer duality — used as a first-class channel in MPCORB refinement.
+### 3.5 Sign syntax
+
+| \(S\) | Meaning | Formal |
+|------|---------|--------|
+| \(>0\) | emergence | `positive_S_means_emergence` |
+| \(<0\) | damping | `negative_S_means_damping` |
+
+Examples: Nuclear/Particle emergence; Cosmology (\(D=25\)) damping.
 
 **Code:** `compute_scalar()` in `vendor/fsot_compute.py`  
-**Formal:** Lean `FSOT.Formal.Scalar`, multi-prover export spine
+**Formal:** Lean `FSOT.Formal.Scalar`, `FSOT/Theorems.lean`, multi-prover export spine  
+**Full branch dump:** `data/fsot_system_math_audit.json` → `formula_branches`
 
 ---
 
@@ -331,6 +382,39 @@ python scripts/run_tla_domain_routing_check.py
 | **Documentation map** | `docs/DOCUMENTATION_MAP.md` |
 | **Reproducibility** | `docs/REPRODUCIBILITY.md` |
 | **Live status** | `docs/CURRENT_STATUS.md` |
+
+---
+
+## 13b. Hierarchical building blocks & domain network (for simulation)
+
+Regenerate machine graph:
+
+```powershell
+python scripts/build_fsot_system_math_audit.py
+```
+
+| Artifact | Contents |
+|----------|----------|
+| `data/fsot_building_block_hierarchy.json` | Nodes/edges: seeds → L1/L2 → T1/T2/T3 → S → **35 cores + full extension atlas** → residual factors; `emergence_ladder_by_D_eff` |
+| `data/fsot_domain_formula_network.json` | Domain strings + extension→core folds + **all green benchmark panels** + seed strings |
+| `data/fsot_system_math_audit.json` | Live \(S\) for **every** core and extension interface; consistency; counts |
+
+**Scope:** not the 35 alone — **~406 formula interfaces** (35 core + 371 extension) plus **~470 green residual panels** and **~403 atlas rows**. Same \(S\) law everywhere.  
+**Hierarchy rule:** lower \(D_{\mathrm{eff}}\) = micro building blocks; higher \(D_{\mathrm{eff}}\) folds toward ceiling 25.  
+**Syntax bit:** \(\mathrm{sign}(S)\) = emerge vs damp.  
+**Strings:** shared algebra + different interface tuples — extensions fold onto cores for \(f\).
+
+Mathematician protocol: [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md) §7.
+
+### Matter / antimatter (fluid duals)
+
+Dedicated track (was missing as an explicit domain; seed \(\eta\) / \(\Omega_b h^2\) already lived in `fsot_compute`):
+
+- Doc: [`MATTER_ANTIMATTER.md`](MATTER_ANTIMATTER.md)  
+- Module: `vendor/fsot_matter_antimatter.py`  
+- Benchmark: `data/matter_antimatter_benchmark.json`  
+
+Matter = emergence-class particle/nuclear vortices; antimatter = conjugate continuum dual (\(\delta\psi+\pi\)); bulk asymmetry seed \(\eta=\mathrm{Poof}^{11}/(\pi\gamma)\); cosmology damps bulk antimatter residual.
 
 ---
 

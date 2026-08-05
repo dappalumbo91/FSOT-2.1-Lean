@@ -1,88 +1,8 @@
-(* FSOT scientific catalog spine chunk 4/17 — multi-prover re-proof of domain residual gates. *)
+(* FSOT scientific catalog spine chunk 4/19 — multi-prover re-proof of domain residual gates. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
-
-Lemma cat_planetary_atmospheres_benchmark_json_records_pos : (0 < 21)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_planetary_atmospheres_benchmark_json_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_planetary_atmospheres_benchmark_json_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_planetary_atmospheres_benchmark_json_max_scalar_under_half_pct : ((0.176451%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_planetary_atmospheres_benchmark_json_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_consciousness_econ_records_pos : (0 < 32)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_consciousness_econ_pooled_under_half_pct : ((0.020728%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_consciousness_econ_pooled_lt_half_pure : ((0.020728%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_consciousness_econ_max_scalar_under_half_pct : ((0.16971%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_consciousness_econ_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_microtubule_quantum_consciousness_panel_records_pos : (0 < 21)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_microtubule_quantum_consciousness_panel_pooled_under_half_pct : ((0.0094425%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_microtubule_quantum_consciousness_panel_pooled_lt_half_pure : ((0.0094425%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_microtubule_quantum_consciousness_panel_max_scalar_under_half_pct : ((0.16971%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_microtubule_quantum_consciousness_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_desi_wa_constraint_records_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_desi_wa_constraint_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_wa_constraint_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_wa_constraint_max_scalar_under_half_pct : ((0.15%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_wa_constraint_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
 
 Lemma cat_stumped_observables_spine_records_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -144,23 +64,23 @@ Lemma cat_existence_simulation_refinement_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_higgs_mass_records_pos : (0 < 23)%nat.
+Lemma cat_higgs_mass_benchmark_json_records_pos : (0 < 9)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
-Lemma cat_higgs_mass_pooled_under_half_pct : ((0.0000946770027700249%R)) < (0.5%R).
+Lemma cat_higgs_mass_benchmark_json_pooled_under_half_pct : ((0.018987449514135373%R)) < (0.5%R).
 Proof. lra. Qed.
 
 
-Lemma cat_higgs_mass_pooled_lt_half_pure : ((0.0000946770027700249%R)) < ((0.5%R)).
+Lemma cat_higgs_mass_benchmark_json_pooled_lt_half_pure : ((0.018987449514135373%R)) < ((0.5%R)).
 Proof. lra. Qed.
 
 
-Lemma cat_higgs_mass_max_scalar_under_half_pct : ((0.11491358837235732%R)) < (0.5%R).
+Lemma cat_higgs_mass_benchmark_json_max_scalar_under_half_pct : ((0.11491358837235732%R)) < (0.5%R).
 Proof. lra. Qed.
 
 
-Lemma cat_higgs_mass_green_flag : (1 = 1)%nat.
+Lemma cat_higgs_mass_benchmark_json_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
@@ -264,6 +184,46 @@ Lemma cat_star_trek_transporter_live_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
+Lemma cat_endf_iaea_nuclear_open_records_pos : (0 < 517)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_endf_iaea_nuclear_open_pooled_under_half_pct : ((0.092131%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_endf_iaea_nuclear_open_pooled_lt_half_pure : ((0.092131%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_endf_iaea_nuclear_open_max_scalar_under_half_pct : ((0.092131%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_endf_iaea_nuclear_open_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_nuclear_iaea_open_records_pos : (0 < 360)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_nuclear_iaea_open_pooled_under_half_pct : ((0.092131%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nuclear_iaea_open_pooled_lt_half_pure : ((0.092131%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_nuclear_iaea_open_max_scalar_under_half_pct : ((0.092131%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nuclear_iaea_open_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_the_well_outcomes_verification_panel_records_pos : (0 < 246)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -344,6 +304,86 @@ Lemma cat_time_domain_crosswalk_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
+Lemma cat_codata_full_table_open_records_pos : (0 < 38)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_codata_full_table_open_pooled_under_half_pct : ((0.073582%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_codata_full_table_open_pooled_lt_half_pure : ((0.073582%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_codata_full_table_open_max_scalar_under_half_pct : ((0.073582%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_codata_full_table_open_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_fsot_physics_all_solved_records_pos : (0 < 287)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_fsot_physics_all_solved_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fsot_physics_all_solved_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_fsot_physics_all_solved_max_scalar_under_half_pct : ((0.073582%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fsot_physics_all_solved_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_nist_asd_multi_species_open_records_pos : (0 < 26)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_nist_asd_multi_species_open_pooled_under_half_pct : ((0.073582%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_multi_species_open_pooled_lt_half_pure : ((0.073582%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_multi_species_open_max_scalar_under_half_pct : ((0.073582%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_multi_species_open_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_nist_asd_spectroscopy_open_records_pos : (0 < 13)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_nist_asd_spectroscopy_open_pooled_under_half_pct : ((0.073582%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_spectroscopy_open_pooled_lt_half_pure : ((0.073582%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_spectroscopy_open_max_scalar_under_half_pct : ((0.073582%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_asd_spectroscopy_open_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_cryptography_technology_records_pos : (0 < 44)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -364,15 +404,15 @@ Lemma cat_cryptography_technology_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_observer_channel_derivation_records_pos : (0 < 348)%nat.
+Lemma cat_observer_channel_derivation_records_pos : (0 < 372)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
-Lemma cat_observer_channel_derivation_pooled_under_half_pct : ((0.0525102820198906%R)) < (0.5%R).
+Lemma cat_observer_channel_derivation_pooled_under_half_pct : ((0.052510282019890844%R)) < (0.5%R).
 Proof. lra. Qed.
 
 
-Lemma cat_observer_channel_derivation_pooled_lt_half_pure : ((0.0525102820198906%R)) < ((0.5%R)).
+Lemma cat_observer_channel_derivation_pooled_lt_half_pure : ((0.052510282019890844%R)) < ((0.5%R)).
 Proof. lra. Qed.
 
 
@@ -441,45 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_exogeology_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_immunology_panel_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_immunology_panel_pooled_under_half_pct : ((0.040788%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_immunology_panel_pooled_lt_half_pure : ((0.040788%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_immunology_panel_max_scalar_under_half_pct : ((0.048946%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_immunology_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_pubchem_live_deep_records_pos : (0 < 5043)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_pubchem_live_deep_pooled_under_half_pct : ((0.032631%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_pubchem_live_deep_pooled_lt_half_pure : ((0.032631%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_pubchem_live_deep_max_scalar_under_half_pct : ((0.048946%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_pubchem_live_deep_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

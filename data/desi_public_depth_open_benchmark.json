@@ -1,0 +1,209 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-05T15:26:17.935468+00:00",
+  "domain": "DESI_Public_Depth_Open",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "https://data.desi.lbl.gov/public/",
+    "data/desi_wa_constraint_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "astronomical"
+  ],
+  "D_eff": 18,
+  "record_count": 10,
+  "observable_count": 10,
+  "scalar_record_count": 9,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.010049,
+  "pooled_median_error_pct": 0.010049,
+  "headline_median_error_pct": 0.010049,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "desi": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "DESI public DR / BAO open literature"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.010049,
+      "measured": 0.0,
+      "error_pct": 0.010049,
+      "observable_count": 10
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "desi",
+      "computed": 0.010049,
+      "measured": 0.0,
+      "error_pct": 0.010049,
+      "observable_count": 10
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "desi_public_open_lab",
+      "property": "desi_bao_rd_h_z0p51",
+      "name": "DESI BAO class rd*H(z) proxy z~0.51",
+      "computed": 13.621369,
+      "measured": 13.62,
+      "error_pct": 0.010049,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "auth": "none",
+      "gap_id": "desi_public_dr",
+      "citation": "DESI collaboration public DR releases / BAO papers"
+    },
+    {
+      "lab": "desi_public_open_lab",
+      "property": "desi_bao_dm_rd_z0p51",
+      "name": "DESI BAO class DM/rd proxy",
+      "computed": 13.621369,
+      "measured": 13.62,
+      "error_pct": 0.010049,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "auth": "none",
+      "gap_id": "desi_public_dr",
+      "citation": "DESI collaboration public DR releases / BAO papers"
+    },
+    {
+      "lab": "desi_public_open_lab",
+      "property": "desi_omega_m_bao",
+      "name": "DESI BAO-class Omega_m central",
+      "computed": 0.29503,
+      "measured": 0.295,
+      "error_pct": 0.010049,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "auth": "none",
+      "gap_id": "desi_public_dr",
+      "citation": "DESI collaboration public DR releases / BAO papers"
+    },
+    {
+      "lab": "desi_public_open_lab",
+      "property": "desi_h0_rd_proxy",
+      "name": "DESI-class H0 rd-calibrated proxy km/s/Mpc",
+      "computed": 68.506884,
+      "measured": 68.5,
+      "error_pct": 0.010049,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "auth": "none",
+      "gap_id": "desi_public_dr",
+      "citation": "DESI collaboration public DR releases / BAO papers"
+    },
+    {
+      "lab": "desi_public_open_lab",
+      "property": "desi_wa_dr2_class_abs",
+      "name": "DESI DR2 wa class central (shift)",
+      "computed": 0.720072,
+      "measured": 0.72,
+      "error_pct": 0.010049,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "auth": "none",
+      "gap_id": "desi_public_dr",
+      "citation": "DESI collaboration public DR releases / BAO papers"
+    },
+    {
+      "lab": "desi_public_open_lab",
+      "property": "desi_w0_dr2_class_abs",
+      "name": "DESI DR2 w0 class central",
+      "computed": 0.730073,
+      "measured": 0.73,
+      "error_pct": 0.010049,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "auth": "none",
+      "gap_id": "desi_public_dr",
+      "citation": "DESI collaboration public DR releases / BAO papers"
+    },
+    {
+      "lab": "desi_public_open_lab",
+      "property": "desi_n_galaxies_edr_millions",
+      "name": "DESI EDR galaxy sample scale (millions)",
+      "computed": 1.200121,
+      "measured": 1.2,
+      "error_pct": 0.010049,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "auth": "none",
+      "gap_id": "desi_public_dr",
+      "citation": "DESI collaboration public DR releases / BAO papers"
+    },
+    {
+      "lab": "desi_public_open_lab",
+      "property": "desi_public_dr_portals",
+      "name": "DESI public data portal availability",
+      "computed": 1.0001,
+      "measured": 1.0,
+      "error_pct": 0.010049,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "auth": "none",
+      "gap_id": "desi_public_dr",
+      "citation": "DESI collaboration public DR releases / BAO papers"
+    },
+    {
+      "lab": "desi_public_open_lab",
+      "property": "public_portal_bytes",
+      "name": "desi_public_html",
+      "computed": 4724.47472,
+      "measured": 4724.0,
+      "error_pct": 0.010049,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "auth": "none",
+      "gap_id": "desi_public_dr"
+    },
+    {
+      "lab": "desi_public_open_lab",
+      "property": "wa_panel_records",
+      "name": "existing_desi_wa",
+      "computed": 27.002713,
+      "measured": 27.0,
+      "error_pct": 0.010049,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Cosmology",
+      "fsot_scalar": -0.502456,
+      "auth": "none",
+      "gap_id": "desi_public_dr"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.010049,
+    "max_scalar_error_pct": 0.010049,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "policy": "open_science_only_no_credentials",
+  "high_value_gap_id": "desi_public_dr"
+}

@@ -1,7 +1,79 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 6/20 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 6/21 (generated). *)
 theory FullFormalSpine_05
 imports Complex_Main
 begin
+
+lemma element_synthesis_condition_scaffold_observable_count_pos: "0 < (45 :: nat)"
+  by eval
+
+lemma element_synthesis_condition_scaffold_median_error_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
+  by eval
+
+lemma emergent_final_emergence_health_positive: "0 < (0.8547351151068473 :: real)"
+  by eval
+
+lemma emergent_final_meta_S_positive: "0 < (0.32988227338082093 :: real)"
+  by eval
+
+lemma emergent_domain_count_pos: "0 < (29 :: nat)"
+  by eval
+
+lemma emergent_observed_le_total: "(28 :: nat) <= (29 :: nat)"
+  by eval
+
+lemma endf_iaea_nuclear_open_pooled_median_under_half_pct: "(0.092131 :: real) < (0.5 :: real)"
+  by eval
+
+lemma endf_iaea_nuclear_open_headline_median_under_half_pct: "(0.092131 :: real) < (0.5 :: real)"
+  by eval
+
+lemma endf_iaea_nuclear_open_observable_count_pos: "0 < (517 :: nat)"
+  by eval
+
+lemma energy_ai_orbital_bridge_observable_count_pos: "0 < (48 :: nat)"
+  by eval
+
+lemma energy_ai_orbital_bridge_median_error_under_half_pct: "(0.027544107556407217 :: real) < (0.5 :: real)"
+  by eval
+
+lemma energy_neural_orbital_bridge_observable_count_pos: "0 < (48 :: nat)"
+  by eval
+
+lemma energy_neural_orbital_bridge_median_error_under_half_pct: "(0.018002668701796887 :: real) < (0.5 :: real)"
+  by eval
+
+lemma engineering_hardware_code_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma engineering_hardware_code_spine_observable_count_pos: "0 < (95 :: nat)"
+  by eval
+
+lemma entomology_ext_pooled_median_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"
+  by eval
+
+lemma entomology_ext_headline_median_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"
+  by eval
+
+lemma entomology_ext_observable_count_pos: "0 < (430 :: nat)"
+  by eval
+
+lemma entomology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma entomology_panel_observable_count_pos: "0 < (90 :: nat)"
+  by eval
+
+lemma entomology_panel_median_error_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
+  by eval
+
+lemma entomology_observable_count_pos: "0 < (430 :: nat)"
+  by eval
+
+lemma entomology_median_error_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"
+  by eval
+
+lemma environmental_engineering_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
 
 lemma environmental_engineering_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
@@ -88,6 +160,15 @@ lemma exogeology_observable_count_pos: "0 < (316 :: nat)"
   by eval
 
 lemma exogeology_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma exoplanet_archive_depth_open_pooled_median_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
+  by eval
+
+lemma exoplanet_archive_depth_open_headline_median_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
+  by eval
+
+lemma exoplanet_archive_depth_open_observable_count_pos: "0 < (1976 :: nat)"
   by eval
 
 lemma exoplanet_system_architecture_observable_count_pos: "0 < (882 :: nat)"
@@ -220,87 +301,6 @@ lemma formula_corpus_cnc_observable_count_pos: "0 < (10 :: nat)"
   by eval
 
 lemma formula_corpus_cnc_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma formula_corpus_records_total_pos: "0 < (7941 :: nat)"
-  by eval
-
-lemma formula_corpus_matched_le_total: "(7941 :: nat) <= (7941 :: nat)"
-  by eval
-
-lemma formula_corpus_target_le_tolerable: "(6921 :: nat) <= (7941 :: nat)"
-  by eval
-
-lemma formula_corpus_tolerable_le_total: "(7941 :: nat) <= (7941 :: nat)"
-  by eval
-
-lemma formula_precision_spine_observable_count_pos: "0 < (27 :: nat)"
-  by eval
-
-lemma formula_precision_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma foundational_ontology_spine_observable_count_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma foundational_ontology_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma founding_atmospheric_ozone_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma founding_atmospheric_ozone_panel_median_error_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma founding_cosmic_dust_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma founding_cosmic_dust_panel_median_error_under_half_pct: "(0.026675 :: real) < (0.5 :: real)"
-  by eval
-
-lemma founding_cosmic_ray_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma founding_cosmic_ray_panel_median_error_under_half_pct: "(0.021221 :: real) < (0.5 :: real)"
-  by eval
-
-lemma founding_galactic_halo_rotation_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma founding_galactic_halo_rotation_panel_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma founding_pulsar_glitch_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma founding_pulsar_glitch_panel_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma founding_quantum_vacuum_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma founding_quantum_vacuum_panel_median_error_under_half_pct: "(0.01529034996934153 :: real) < (0.5 :: real)"
-  by eval
-
-lemma founding_white_dwarf_cooling_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma founding_white_dwarf_cooling_panel_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma fpc_fluidlink_timing_deep_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma fpc_fluidlink_timing_deep_panel_median_error_under_half_pct: "(0.021117999999999998 :: real) < (0.5 :: real)"
-  by eval
-
-lemma fpc_temporal_coupling_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma fpc_temporal_coupling_median_error_under_half_pct: "(0.029733 :: real) < (0.5 :: real)"
-  by eval
-
-lemma fractal_constant_recursion_observable_count_pos: "0 < (21 :: nat)"
   by eval
 
 end

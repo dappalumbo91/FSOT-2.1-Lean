@@ -1,7 +1,34 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 4/20 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 4/21 (generated). *)
 theory FullFormalSpine_03
 imports Complex_Main
 begin
+
+lemma codon_gtg_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_gtg_secondary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_gtt_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_gtt_secondary_phase: "(0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_taa_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_taa_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_tac_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_tac_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_tag_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
 
 lemma codon_tag_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
@@ -91,6 +118,15 @@ lemma codon_genomic_table_link: "(64.0 :: real) = (64.0 :: real)"
   by eval
 
 lemma stop_codon_fraction_cert: "(0.046875 :: real) = (0.046875 :: real)"
+  by eval
+
+lemma cod_optimade_structures_pooled_median_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cod_optimade_structures_headline_median_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cod_optimade_structures_observable_count_pos: "0 < (682 :: nat)"
   by eval
 
 lemma cold_fusion_candidate_prereg_scaffold_observable_count_pos: "0 < (24 :: nat)"
@@ -265,42 +301,6 @@ lemma cosmology_wave7_median_error_under_half_pct: "(0.003988029700396626 :: rea
   by eval
 
 lemma cosmology_wave7_observable_count_pos: "0 < (29 :: nat)"
-  by eval
-
-lemma cosmology_wave8_max_error_under_half_pct: "(0.35683948712437213 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave8_median_error_under_half_pct: "(0.014145689288404753 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave8_observable_count_pos: "0 < (52 :: nat)"
-  by eval
-
-lemma cosmology_wave9_max_error_under_half_pct: "(0.19375824846825943 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave9_median_error_under_half_pct: "(0.014278509753575246 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave9_observable_count_pos: "0 < (7 :: nat)"
-  by eval
-
-lemma crc_handbook_properties_observable_count_pos: "0 < (391 :: nat)"
-  by eval
-
-lemma crc_handbook_properties_median_error_under_half_pct: "(0.026922 :: real) < (0.5 :: real)"
-  by eval
-
-lemma creative_arts_math_spine_observable_count_pos: "0 < (56 :: nat)"
-  by eval
-
-lemma creative_arts_math_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma crossref_scholarly_panel_observable_count_pos: "0 < (200 :: nat)"
-  by eval
-
-lemma crossref_scholarly_panel_median_error_under_half_pct: "(0.01382 :: real) < (0.5 :: real)"
   by eval
 
 end

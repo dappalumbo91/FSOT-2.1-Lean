@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-08-05T15:45:07.212810+00:00",
+  "policy": "open_science_only_no_credentials",
+  "math_policy": "FSOT residual only (make_fsot_record / fsot_scaled); no free fits; no formula_mass",
+  "results": {
+    "uniprot_proteome_slice": {
+      "status": "ok",
+      "domain": "UniProt_Proteome_Slice_Open",
+      "records": 68,
+      "pooled_median_error_pct": 0.022236,
+      "residual_law": "fsot_scaled_only"
+    },
+    "alphafold_batch_meta": {
+      "status": "ok",
+      "domain": "AlphaFold_Batch_Meta_Open",
+      "records": 182,
+      "pooled_median_error_pct": 0.015311,
+      "residual_law": "fsot_scaled_only"
+    },
+    "rcsb_structure_batch": {
+      "status": "ok",
+      "domain": "RCSB_Structure_Batch_Open",
+      "records": 91,
+      "pooled_median_error_pct": 0.022236,
+      "residual_law": "fsot_scaled_only"
+    },
+    "oeis_family_sweep": {
+      "status": "ok",
+      "domain": "OEIS_Family_Sweep_Open",
+      "records": 394,
+      "pooled_median_error_pct": 0.014767,
+      "residual_law": "fsot_scaled_only"
+    },
+    "usgs_seismic_history": {
+      "status": "ok",
+      "domain": "USGS_Seismic_History_Open",
+      "records": 398,
+      "pooled_median_error_pct": 0.022295,
+      "residual_law": "fsot_scaled_only"
+    },
+    "noaa_tides_multi_station": {
+      "status": "ok",
+      "domain": "NOAA_Tides_Multi_Station_Open",
+      "records": 209,
+      "pooled_median_error_pct": 0.030173,
+      "residual_law": "fsot_scaled_only"
+    },
+    "gbif_taxon_depth": {
+      "status": "ok",
+      "domain": "GBIF_Taxon_Depth_Open",
+      "records": 203,
+      "pooled_median_error_pct": 0.006006,
+      "residual_law": "fsot_scaled_only"
+    },
+    "zenodo_records_depth": {
+      "status": "ok",
+      "domain": "Zenodo_Records_Depth_Open",
+      "records": 32,
+      "pooled_median_error_pct": 0.031506,
+      "residual_law": "fsot_scaled_only"
+    }
+  }
+}

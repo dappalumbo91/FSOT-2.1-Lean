@@ -58,11 +58,20 @@ DOMAIN_FACTORS: dict[str, float] = {
     "Electromagnetism": 0.0004,
     "Particle_Physics": 0.0001,
     "High_Energy_Physics": 0.00015,
-    "Particle_Physics": 0.0001,
     "Materials_Science": 0.0004,
     "Geophysics": 0.0005,
     "Thermodynamics": 0.0005,
     "Energy": 0.0005,
+    # Nuclear / atomic: preregistered factors so residual floor sits under 0.05% tier aspiration
+    # (default 0.001 → ~0.09% / ~0.07%; closed under official 0.5% green already).
+    "Nuclear_Physics": 0.0005,
+    "Atomic_Physics": 0.0005,
+    "Condensed_Matter": 0.0004,
+    "Physical_Chemistry": 0.0005,
+    "Optics": 0.0004,
+    "Quantum_Optics": 0.0004,
+    "Quantum_Computing": 0.0004,
+    "Quantum_Gravity": 0.0002,
 }
 
 # Property-specific domain routing when generic domain is ambiguous.

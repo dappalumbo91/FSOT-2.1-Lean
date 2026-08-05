@@ -1,0 +1,544 @@
+{
+  "generated_at": "2026-08-05T20:30:17.569187+00:00",
+  "version": "1.0",
+  "tier": "uniqueness_research",
+  "obligation_count": 59,
+  "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
+  "modules": [
+    "FSOT/Formal/UniquenessResearchSpine.lean",
+    "verification/coq/UniquenessResearchSpine.v",
+    "verification/isabelle/UniquenessResearchSpine.thy",
+    "verification/fstar/FSOTUniquenessResearch.fst",
+    "verification/rust/fsot_uniqueness_research_replay",
+    "verification/smt/uniqueness_research_bounds.smt2",
+    "verification/tla/FSOTUniquenessResearch.tla"
+  ],
+  "obligations": [
+    {
+      "id": "gamma_color_pos",
+      "kind": "pos",
+      "value": 0.6684908749126979,
+      "module": "Uniqueness.Confinement",
+      "claim": "U1_gamma_color",
+      "coq_id": "gamma_color_pos"
+    },
+    {
+      "id": "gamma_singlet_pos",
+      "kind": "pos",
+      "value": 0.4280434460598068,
+      "module": "Uniqueness.Confinement",
+      "claim": "U5_singlet_rate",
+      "coq_id": "gamma_singlet_pos"
+    },
+    {
+      "id": "nuclear_S_eq_pos",
+      "kind": "pos",
+      "value": 0.9213094330291355,
+      "module": "Uniqueness.Confinement",
+      "claim": "U9_nuclear_S",
+      "coq_id": "nuclear_S_eq_pos"
+    },
+    {
+      "id": "nuclear_S_eq_emergence_pos",
+      "kind": "pos",
+      "value": 0.9213094330291355,
+      "module": "Uniqueness.Confinement",
+      "claim": "U9_nuclear_emergence",
+      "coq_id": "nuclear_S_eq_emergence_pos"
+    },
+    {
+      "id": "lambda_qcd_proxy_pos",
+      "kind": "pos",
+      "value": 0.21740442367390217,
+      "module": "Uniqueness.Confinement",
+      "claim": "U2_mass_gap_proxy",
+      "coq_id": "lambda_qcd_proxy_pos"
+    },
+    {
+      "id": "deff_ceiling_eq_25",
+      "kind": "eq_nat",
+      "value": 25,
+      "right_value": 25,
+      "module": "Uniqueness.FluidSpacetime",
+      "claim": "R7_deff_ceiling",
+      "coq_id": "deff_ceiling_eq_25"
+    },
+    {
+      "id": "deff_ceiling_nat_pos",
+      "kind": "nat_pos",
+      "value": 25,
+      "module": "Uniqueness.FluidSpacetime",
+      "claim": "R7_deff_ceiling",
+      "coq_id": "deff_ceiling_nat_pos"
+    },
+    {
+      "id": "free_color_damping_positive_flag_eq",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.Confinement",
+      "claim": "U1_free_color_gamma_pos",
+      "coq_id": "free_color_damping_positive_flag_eq"
+    },
+    {
+      "id": "mass_gap_proxy_positive_flag_eq",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.Confinement",
+      "claim": "U2_mass_gap_proxy_pos",
+      "coq_id": "mass_gap_proxy_positive_flag_eq"
+    },
+    {
+      "id": "area_law_sigma_positive_flag_eq",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.Confinement",
+      "claim": "U3_area_law_sigma_pos",
+      "coq_id": "area_law_sigma_positive_flag_eq"
+    },
+    {
+      "id": "free_color_damped_to_zero_flag_eq",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.Confinement",
+      "claim": "U4_free_color_damps",
+      "coq_id": "free_color_damped_to_zero_flag_eq"
+    },
+    {
+      "id": "singlet_persists_at_S_eq_flag_eq",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.Confinement",
+      "claim": "U5_singlet_attractor",
+      "coq_id": "singlet_persists_at_S_eq_flag_eq"
+    },
+    {
+      "id": "counterfactual_no_damp_free_color_persists_flag_eq",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.Confinement",
+      "claim": "U6_dampening_load_bearing",
+      "coq_id": "counterfactual_no_damp_free_color_persists_flag_eq"
+    },
+    {
+      "id": "linear_potential_unit_identity_err_under_half",
+      "kind": "lt_half",
+      "value": 1.3209968920124462e-14,
+      "module": "Uniqueness.Confinement",
+      "claim": "U7_linear_potential_identity",
+      "statement": "error_pct(linear_potential_unit_identity) < 0.5",
+      "coq_id": "linear_potential_unit_identity_err_under_half"
+    },
+    {
+      "id": "linear_potential_unit_identity_measured_pos",
+      "kind": "pos",
+      "value": 0.4202216641606967,
+      "module": "Uniqueness.Confinement",
+      "claim": "U7_linear_potential_identity",
+      "coq_id": "linear_potential_unit_identity_measured_pos"
+    },
+    {
+      "id": "linear_potential_unit_identity_computed_pos",
+      "kind": "pos",
+      "value": 0.42022166416069673,
+      "module": "Uniqueness.Confinement",
+      "claim": "U7_linear_potential_identity",
+      "coq_id": "linear_potential_unit_identity_computed_pos"
+    },
+    {
+      "id": "linear_potential_unit_identity_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 5.551115123125783e-17,
+      "bound": 1e-12,
+      "left_value": 0.42022166416069673,
+      "right_value": 0.4202216641606967,
+      "module": "Uniqueness.Confinement",
+      "claim": "U7_linear_potential_identity",
+      "coq_id": "linear_potential_unit_identity_abs_diff"
+    },
+    {
+      "id": "alpha_s_seed_positive_flag_eq",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.Confinement",
+      "claim": "U8_strong_coupling_seed_pos",
+      "coq_id": "alpha_s_seed_positive_flag_eq"
+    },
+    {
+      "id": "nuclear_S_emergence_sign_flag_eq",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.Confinement",
+      "claim": "U9_nuclear_emergence",
+      "coq_id": "nuclear_S_emergence_sign_flag_eq"
+    },
+    {
+      "id": "gamma_color_over_gamma_singlet_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.Confinement",
+      "claim": "U10_timescale_ratio",
+      "statement": "error_pct(gamma_color_over_gamma_singlet) < 0.5",
+      "coq_id": "gamma_color_over_gamma_singlet_err_under_half"
+    },
+    {
+      "id": "gamma_color_over_gamma_singlet_measured_pos",
+      "kind": "pos",
+      "value": 1.5617360365314306,
+      "module": "Uniqueness.Confinement",
+      "claim": "U10_timescale_ratio",
+      "coq_id": "gamma_color_over_gamma_singlet_measured_pos"
+    },
+    {
+      "id": "gamma_color_over_gamma_singlet_computed_pos",
+      "kind": "pos",
+      "value": 1.5617360365314306,
+      "module": "Uniqueness.Confinement",
+      "claim": "U10_timescale_ratio",
+      "coq_id": "gamma_color_over_gamma_singlet_computed_pos"
+    },
+    {
+      "id": "gamma_color_over_gamma_singlet_abs_diff",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-09,
+      "left_value": 1.5617360365314306,
+      "right_value": 1.5617360365314306,
+      "module": "Uniqueness.Confinement",
+      "claim": "U10_timescale_ratio",
+      "coq_id": "gamma_color_over_gamma_singlet_abs_diff"
+    },
+    {
+      "id": "R1_nuclear_emergence_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R1_nuclear_emergence",
+      "coq_id": "R1_nuclear_emergence_calibration_pass"
+    },
+    {
+      "id": "R1_nuclear_emergence_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R1_nuclear_emergence",
+      "coq_id": "R1_nuclear_emergence_score_pos"
+    },
+    {
+      "id": "R2_particle_emergence_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R2_particle_emergence",
+      "coq_id": "R2_particle_emergence_calibration_pass"
+    },
+    {
+      "id": "R2_particle_emergence_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R2_particle_emergence",
+      "coq_id": "R2_particle_emergence_score_pos"
+    },
+    {
+      "id": "R3_confinement_scales_positive_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R3_confinement_scales_positive",
+      "coq_id": "R3_confinement_scales_positive_calibration_pass"
+    },
+    {
+      "id": "R3_confinement_scales_positive_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R3_confinement_scales_positive",
+      "coq_id": "R3_confinement_scales_positive_score_pos"
+    },
+    {
+      "id": "R4_singlet_attractor_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R4_singlet_attractor",
+      "coq_id": "R4_singlet_attractor_calibration_pass"
+    },
+    {
+      "id": "R4_singlet_attractor_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R4_singlet_attractor",
+      "coq_id": "R4_singlet_attractor_score_pos"
+    },
+    {
+      "id": "R5_c_eff_positive_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R5_c_eff_positive",
+      "coq_id": "R5_c_eff_positive_calibration_pass"
+    },
+    {
+      "id": "R5_c_eff_positive_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R5_c_eff_positive",
+      "coq_id": "R5_c_eff_positive_score_pos"
+    },
+    {
+      "id": "R6_fluid_spacetime_omni_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R6_fluid_spacetime_omni",
+      "coq_id": "R6_fluid_spacetime_omni_calibration_pass"
+    },
+    {
+      "id": "R6_fluid_spacetime_omni_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R6_fluid_spacetime_omni",
+      "coq_id": "R6_fluid_spacetime_omni_score_pos"
+    },
+    {
+      "id": "R7_deff_ceiling_25_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R7_deff_ceiling_25",
+      "coq_id": "R7_deff_ceiling_25_calibration_pass"
+    },
+    {
+      "id": "R7_deff_ceiling_25_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.RealityHolds",
+      "claim": "R7_deff_ceiling_25",
+      "coq_id": "R7_deff_ceiling_25_score_pos"
+    },
+    {
+      "id": "F1_free_color_asymptotic_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F1_free_color_asymptotic",
+      "coq_id": "F1_free_color_asymptotic_calibration_pass"
+    },
+    {
+      "id": "F1_free_color_asymptotic_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F1_free_color_asymptotic",
+      "coq_id": "F1_free_color_asymptotic_score_pos"
+    },
+    {
+      "id": "F2_perpetual_motion_unsourced_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F2_perpetual_motion_unsourced",
+      "coq_id": "F2_perpetual_motion_unsourced_calibration_pass"
+    },
+    {
+      "id": "F2_perpetual_motion_unsourced_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F2_perpetual_motion_unsourced",
+      "coq_id": "F2_perpetual_motion_unsourced_score_pos"
+    },
+    {
+      "id": "F3_absolute_rest_frame_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F3_absolute_rest_frame",
+      "coq_id": "F3_absolute_rest_frame_calibration_pass"
+    },
+    {
+      "id": "F3_absolute_rest_frame_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F3_absolute_rest_frame",
+      "coq_id": "F3_absolute_rest_frame_score_pos"
+    },
+    {
+      "id": "F4_phlogiston_free_mass_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F4_phlogiston_free_mass",
+      "coq_id": "F4_phlogiston_free_mass_calibration_pass"
+    },
+    {
+      "id": "F4_phlogiston_free_mass_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F4_phlogiston_free_mass",
+      "coq_id": "F4_phlogiston_free_mass_score_pos"
+    },
+    {
+      "id": "F5_tachyon_superluminal_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F5_tachyon_superluminal",
+      "coq_id": "F5_tachyon_superluminal_calibration_pass"
+    },
+    {
+      "id": "F5_tachyon_superluminal_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F5_tachyon_superluminal",
+      "coq_id": "F5_tachyon_superluminal_score_pos"
+    },
+    {
+      "id": "F6_classical_ym_necessity_meta_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F6_classical_ym_necessity_meta",
+      "coq_id": "F6_classical_ym_necessity_meta_calibration_pass"
+    },
+    {
+      "id": "F6_classical_ym_necessity_meta_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.FictionDamped",
+      "claim": "F6_classical_ym_necessity_meta",
+      "coq_id": "F6_classical_ym_necessity_meta_score_pos"
+    },
+    {
+      "id": "E2_guidance_scalar_order_structure_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.ReevalOpen",
+      "claim": "E2_guidance_scalar_order_structure",
+      "coq_id": "E2_guidance_scalar_order_structure_calibration_pass"
+    },
+    {
+      "id": "E2_guidance_scalar_order_structure_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.ReevalOpen",
+      "claim": "E2_guidance_scalar_order_structure",
+      "coq_id": "E2_guidance_scalar_order_structure_score_pos"
+    },
+    {
+      "id": "E3_varying_constants_prereg_path_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.ReevalOpen",
+      "claim": "E3_varying_constants_prereg_path",
+      "coq_id": "E3_varying_constants_prereg_path_calibration_pass"
+    },
+    {
+      "id": "E3_varying_constants_prereg_path_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.ReevalOpen",
+      "claim": "E3_varying_constants_prereg_path",
+      "coq_id": "E3_varying_constants_prereg_path_score_pos"
+    },
+    {
+      "id": "E4_cold_fusion_class_prereg_structure_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.ReevalOpen",
+      "claim": "E4_cold_fusion_class_prereg_structure",
+      "coq_id": "E4_cold_fusion_class_prereg_structure_calibration_pass"
+    },
+    {
+      "id": "E4_cold_fusion_class_prereg_structure_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.ReevalOpen",
+      "claim": "E4_cold_fusion_class_prereg_structure",
+      "coq_id": "E4_cold_fusion_class_prereg_structure_score_pos"
+    },
+    {
+      "id": "E5_reeval_machinery_exists_calibration_pass",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.ReevalOpen",
+      "claim": "E5_reeval_machinery_exists",
+      "coq_id": "E5_reeval_machinery_exists_calibration_pass"
+    },
+    {
+      "id": "E5_reeval_machinery_exists_score_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.ReevalOpen",
+      "claim": "E5_reeval_machinery_exists",
+      "coq_id": "E5_reeval_machinery_exists_score_pos"
+    },
+    {
+      "id": "reality_fiction_calibration_ok",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.Calibration",
+      "claim": "CALIBRATION_PASS",
+      "coq_id": "reality_fiction_calibration_ok"
+    },
+    {
+      "id": "confinement_suite_gamma_export_pos",
+      "kind": "pos",
+      "value": 0.6684908749126979,
+      "module": "Uniqueness.Confinement",
+      "claim": "suite_gamma",
+      "coq_id": "confinement_suite_gamma_export_pos"
+    }
+  ],
+  "source_summaries": {
+    "confinement": {
+      "row_count": 10,
+      "identity_exact_count": 10,
+      "boolean_pass_count": 8,
+      "boolean_total": 8,
+      "free_color_damping_rate": 0.6684908749126979,
+      "singlet_relaxation_rate": 0.4280434460598068,
+      "nuclear_S_eq": 0.9213094330291355,
+      "Lambda_QCD_GeV": 0.21740442367390217,
+      "sigma_GeV2": 0.17658624702998535,
+      "theorem_status": "CANDIDATE_EXECUTABLE",
+      "classical_path_integral_uniqueness": "OPEN_NOT_CLAIMED",
+      "fsot_reframe": "Confinement = free-color modes damped by seed-locked \u03b3_color; color singlets are nuclear S_eq attractors. Not a continuum Yang\u2013Mills path-integral measure theorem."
+    },
+    "calibration_verdict": "CALIBRATION_PASS",
+    "calibration_ok": true
+  },
+  "honest_scope": "Numeric/structural multiprover certificates for free-color dampening candidate, fluid spacetime omni load-bearing flags, and reality/fiction calibration. Does NOT claim classical continuum Yang-Mills path-integral mass-gap theorem proved. Does claim: absolute rest damps; fluid spacetime is the model; inverted polarity forbidden."
+}

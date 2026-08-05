@@ -1,0 +1,35 @@
+{
+  "source_id": "ncei_global_temp",
+  "kind": "json",
+  "payload": {
+    "points": 175,
+    "sample": [
+      [
+        2020,
+        0.91
+      ],
+      [
+        2021,
+        0.89
+      ],
+      [
+        2022,
+        0.9
+      ],
+      [
+        2023,
+        1.16
+      ],
+      [
+        2024,
+        1.18
+      ]
+    ]
+  },
+  "text_preview": null,
+  "fetched_at": "2026-08-05T15:23:55.957611+00:00",
+  "url": "https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/globe/land_ocean/1/7/1850-2024/data.csv",
+  "auth": "none",
+  "family": "earth_climate_geophysics",
+  "description": "NCEI global land+ocean temp departures"
+}

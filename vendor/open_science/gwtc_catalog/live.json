@@ -1,0 +1,80 @@
+{
+  "source_id": "gwtc_catalog",
+  "kind": "json",
+  "payload": {
+    "events": {
+      "GW250120_042414-v1": {
+        "id": "GW250120_042414-v1",
+        "commonName": "GW250120_042414",
+        "catalog": "GWTC-5.0",
+        "mass_1_source": null,
+        "mass_2_source": null,
+        "chirp_mass_source": null,
+        "final_mass_source": null,
+        "luminosity_distance": null,
+        "network_snr": 8.7,
+        "far": 1.6,
+        "redshift": null
+      },
+      "GW250119_190238-v1": {
+        "id": "GW250119_190238-v1",
+        "commonName": "GW250119_190238",
+        "catalog": "GWTC-5.0",
+        "mass_1_source": 11.54,
+        "mass_2_source": 9.95,
+        "chirp_mass_source": 9.38,
+        "final_mass_source": 20.56,
+        "luminosity_distance": 311.0,
+        "network_snr": 21.3,
+        "far": 1e-05,
+        "redshift": 0.07
+      },
+      "GW250119_025138-v1": {
+        "id": "GW250119_025138-v1",
+        "commonName": "GW250119_025138",
+        "catalog": "GWTC-5.0",
+        "mass_1_source": 33.8,
+        "mass_2_source": 26.7,
+        "chirp_mass_source": 25.7,
+        "final_mass_source": 57.1,
+        "luminosity_distance": 3100.0,
+        "network_snr": 14.5,
+        "far": 1e-05,
+        "redshift": 0.52
+      },
+      "GW250118_170523-v1": {
+        "id": "GW250118_170523-v1",
+        "commonName": "GW250118_170523",
+        "catalog": "GWTC-5.0",
+        "mass_1_source": 38.1,
+        "mass_2_source": 29.6,
+        "chirp_mass_source": 29.0,
+        "final_mass_source": 64.4,
+        "luminosity_distance": 1910.0,
+        "network_snr": 13.9,
+        "far": 1e-05,
+        "redshift": 0.35
+      },
+      "GW250118_055802-v1": {
+        "id": "GW250118_055802-v1",
+        "commonName": "GW250118_055802",
+        "catalog": "GWTC-5.0",
+        "mass_1_source": 10.3,
+        "mass_2_source": 6.9,
+        "chirp_mass_source": 7.36,
+        "final_mass_source": 16.6,
+        "luminosity_distance": 940.0,
+        "network_snr": 10.5,
+        "far": 0.0089,
+        "redshift": 0.19
+      }
+    },
+    "count": 391
+  },
+  "text_preview": null,
+  "fetched_at": "2026-08-05T15:23:50.137729+00:00",
+  "url": "https://gwosc.org/eventapi/json/GWTC/",
+  "auth": "none",
+  "family": "cosmology_astrophysics",
+  "description": "GWTC catalog via GWOSC"
+}

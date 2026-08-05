@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-05T13:17:29.032359+00:00",
+  "generated_at": "2026-08-05T19:48:30.786602+00:00",
   "version": "1.2",
   "summary": {
-    "bundle_conj_total": 527,
+    "bundle_conj_total": 562,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 473,
-    "total_conjuncts": 2389,
-    "conjuncts_with_atomic_coverage": 2387,
+    "provable_bundle_conj": 508,
+    "total_conjuncts": 2494,
+    "conjuncts_with_atomic_coverage": 2492,
     "conjunct_atomic_coverage_pct": 99.92,
-    "explicit_linked_conjuncts": 1827,
-    "explicit_linked_in_spine": 1825,
+    "explicit_linked_conjuncts": 1897,
+    "explicit_linked_in_spine": 1895,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
@@ -78,6 +78,7 @@
     "agriculture_agroecology_gap_fill_bundle",
     "agriculture_agroecology_bundle",
     "ai_galactic_orbital_bridge_bundle",
+    "alphafold_batch_meta_open_bundle",
     "alternate_base_mathematics_explorer_panel_bundle",
     "alternate_base_mathematics_spine_bundle",
     "anthropology_ext_bundle",
@@ -117,6 +118,7 @@
     "certified_agent_formal_panel_bundle",
     "certified_agent_qwen_bundle",
     "chaos_mediated_phase_transitions_bundle",
+    "chembl_deep_open_bundle",
     "chemical_engineering_ext_bundle",
     "chemical_engineering_bundle",
     "chemical_structure_stability_panel_bundle",
@@ -129,8 +131,10 @@
     "clinical_medicine_bundle",
     "clinicaltrials_medical_panel_bundle",
     "clinicaltrials_medical_bundle",
+    "codata_full_table_open_bundle",
     "code_genome_structure_bundle",
     "coding_structure_verifier_bundle",
+    "cod_optimade_structures_bundle",
     "cold_fusion_candidate_prereg_scaffold_bundle",
     "cold_fusion_lab_synthesis_crosswalk_bundle",
     "compactification_ladder_bundle",
@@ -159,6 +163,9 @@
     "cve_codon_hole_falsification_bundle",
     "dark_energy_cpl_bundle",
     "dark_sector_open_problems_bundle",
+    "desi_edr_fits_residual_bundle",
+    "desi_edr_table_slice_open_bundle",
+    "desi_public_depth_open_bundle",
     "desktop_application_wiring_spine_bundle",
     "distant_island_emergence_simulation_bundle",
     "distant_island_z128_z132_deep_panel_bundle",
@@ -177,6 +184,7 @@
     "econophysics_bundle",
     "electrical_power_systems_bundle",
     "element_synthesis_condition_scaffold_bundle",
+    "endf_iaea_nuclear_open_bundle",
     "energy_ai_orbital_bridge_bundle",
     "energy_neural_orbital_bridge_bundle",
     "engineering_hardware_code_spine_bundle",
@@ -194,6 +202,7 @@
     "exogeology_ext_bundle",
     "exogeology_panel_bundle",
     "exogeology_bundle",
+    "exoplanet_archive_depth_open_bundle",
     "exoplanet_system_architecture_bundle",
     "experimental_base_mathematics_panel_bundle",
     "external_oss_code_genome_bundle",
@@ -243,9 +252,11 @@
     "fusion_lab_certificate_spine_bundle",
     "fusion_physics_public_panel_bundle",
     "gaia_astrometry_panel_deep_bundle",
+    "gaia_dr3_source_sample_open_bundle",
     "gaia_dr3_tap_deep_bundle",
     "galactic_structure_sample_bundle",
     "gbif_species_occurrence_bundle",
+    "gbif_taxon_depth_open_bundle",
     "genomic_sciences_bundle",
     "geochemistry_bundle",
     "geology_stratigraphy_ext_bundle",
@@ -253,7 +264,10 @@
     "geomagnetism_bundle",
     "government_open_data_spine_bundle",
     "grace_cryosphere_bundle",
+    "gwas_catalog_depth_open_bundle",
     "gwosc_live_event_deep_bundle",
+    "gwosc_strain_metadata_open_bundle",
+    "gwtc_catalog_open_bundle",
     "heavy_ion_lab_synthesis_panel_bundle",
     "higgs_mass_bundle",
     "history_ext_bundle",
@@ -281,6 +295,7 @@
     "intrinsic_llm_validators_bundle",
     "ionospheric_chemistry_coupling_bundle",
     "island_of_stability_deep_panel_bundle",
+    "jarvis_dft_open_panel_bundle",
     "knowledge_base_portable_bundle_panel_bundle",
     "lab_synthesis_metamaterial_spine_bundle",
     "law_policy_ext_bundle",
@@ -291,6 +306,8 @@
     "linguistics_formal_bundle",
     "live_ingest_spine_bundle",
     "living_fsot_hardware_panel_bundle",
+    "lmfdb_elliptic_curves_open_bundle",
+    "lmfdb_oeis_math_open_bundle",
     "longevity_anage_catalog_bundle",
     "longevity_consciousness_coupling_bundle",
     "longevity_extreme_species_bundle",
@@ -342,6 +359,7 @@
     "natural_formation_element_simulation_bundle",
     "ncbi_gene_public_panel_bundle",
     "ncbi_gene_public_bundle",
+    "ncei_climate_open_bundle",
     "network_internet_protocols_bundle",
     "network_science_public_panel_bundle",
     "neural_galactic_orbital_bridge_bundle",
@@ -355,27 +373,36 @@
     "neuroscience_connectomics_depth_panel_bundle",
     "neutrino_physics_panel_bundle",
     "neutrino_physics_bundle",
+    "nist_asd_multi_species_open_bundle",
+    "nist_asd_spectroscopy_open_bundle",
     "nist_codata_constants_bundle",
     "nist_dlmf_special_functions_bundle",
     "noaa_coastal_tides_bundle",
     "noaa_ndbc_buoy_panel_bundle",
     "noaa_ndbc_buoy_bundle",
+    "noaa_tides_multi_station_open_bundle",
     "nothing_perfection_friction_origin_panel_bundle",
+    "nuclear_iaea_open_bundle",
+    "nufit_neutrino_open_bundle",
     "observer_channel_derivation_bundle",
     "observer_effect_cross_species_panel_bundle",
     "oceanography_gap_fill_bundle",
+    "oeis_family_sweep_open_bundle",
     "omni_theory_genesis_bundle",
     "omni_theory_humanities_panel_bundle",
     "oncology_bundle",
+    "openalex_citation_depth_open_bundle",
     "openalex_citation_graph_bundle",
     "open_meteo_live_panel_bundle",
     "open_meteo_live_bundle",
+    "openneuro_depth_open_bundle",
     "openneuro_full_panel_bundle",
     "optics_interferometry_depth_panel_bundle",
     "orbital_mechanics_bundle",
     "osti_doe_science_panel_bundle",
     "osti_doe_science_bundle",
     "overflow_carry_emergence_panel_bundle",
+    "owid_epidemiology_open_bundle",
     "paleoclimate_ext_bundle",
     "paleoclimate_panel_bundle",
     "paleoclimate_bundle",
@@ -384,6 +411,7 @@
     "paleontology_bundle",
     "particle_neural_orbital_bridge_bundle",
     "particle_physics_gap_fill_bundle",
+    "pdg_live_depth_open_bundle",
     "pdg_particle_properties_bundle",
     "periodic_extension_decay_topology_scaffold_bundle",
     "periodic_table_completion_spine_bundle",
@@ -410,6 +438,7 @@
     "psychology_gap_fill_bundle",
     "psychology_psychometrics_depth_panel_bundle",
     "pubchem_compound_properties_bundle",
+    "pubchem_depth_open_bundle",
     "pubchem_live_deep_bundle",
     "pubchem_stability_panel_bundle",
     "public_verifiable_spine_bundle",
@@ -428,6 +457,7 @@
     "radio_astronomy_panel_bundle",
     "radio_astronomy_bundle",
     "rcsb_pdb_structures_bundle",
+    "rcsb_structure_batch_open_bundle",
     "rd_interval_tightening_panel_bundle",
     "reality_folding_spine_bundle",
     "recent_breakthroughs_expansion_bundle",
@@ -448,6 +478,7 @@
     "seismology_bundle",
     "semiconductor_physics_public_panel_bundle",
     "sh0es_refined_bundle",
+    "simbad_identity_depth_open_bundle",
     "simbad_stellar_identity_deep_bundle",
     "small_body_orbits_bundle",
     "sociology_gap_fill_bundle",
@@ -509,7 +540,9 @@
     "unified_db_candidate_crosswalk_bundle",
     "unified_db_crosswalk_spine_bundle",
     "uniprot_protein_annotations_bundle",
+    "uniprot_proteome_slice_open_bundle",
     "uniprot_structure_annotations_deep_bundle",
+    "usgs_seismic_history_open_bundle",
     "virology_ext_bundle",
     "virology_panel_bundle",
     "virology_bundle",
@@ -524,6 +557,7 @@
     "warp_bh_wh_portal_panel_bundle",
     "wds_live_multiplicity_deep_bundle",
     "world_bank_development_bundle",
+    "world_bank_macro_open_bundle",
     "xr_interactive_media_math_scaffold_bundle",
     "z120_z126_beam_synthesis_panel_bundle",
     "z164_distant_island_prereg_scaffold_bundle",
@@ -531,6 +565,7 @@
     "zebrafish_developmental_mechanics_bundle",
     "zebrafish_longevity_genetics_coupling_bundle",
     "zebrafish_predictive_validation_bundle",
+    "zenodo_records_depth_open_bundle",
     "zero_boundary_not_entity_panel_bundle",
     "zero_day_risk_evaluator_bundle",
     "zoology_ext_bundle",
@@ -1232,6 +1267,52 @@
             "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "alphafold_batch_meta_open_bundle",
+      "lean_module": "AlphafoldBatchMetaOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "alphafold_batch_meta_open_observable_count",
+          "statement": "182 = 182",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "alphafold_batch_meta_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "alphafold_batch_meta_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "alphafold_batch_meta_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "alphafold_batch_meta_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "alphafold_batch_meta_open_pooled_median_error_pct",
+          "statement": "0.015311 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "alphafold_batch_meta_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "alphafold_batch_meta_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -4115,6 +4196,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "chembl_deep_open_bundle",
+      "lean_module": "ChemblDeepOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "chembl_deep_open_observable_count",
+          "statement": "188 = 188",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "chembl_deep_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "chembl_deep_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "chembl_deep_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "chembl_deep_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "chembl_deep_open_pooled_median_error_pct",
+          "statement": "0.040788 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "chembl_deep_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "chembl_deep_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "chemical_engineering_ext_bundle",
       "lean_module": "ChemicalEngineeringExtensionPriors",
       "provable": true,
@@ -4895,6 +5022,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "codata_full_table_open_bundle",
+      "lean_module": "CodataFullTableOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "codata_full_table_open_observable_count",
+          "statement": "38 = 38",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "codata_full_table_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "codata_full_table_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "codata_full_table_open_D_eff",
+          "statement": "12 = 12",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "codata_full_table_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "codata_full_table_open_pooled_median_error_pct",
+          "statement": "0.073582 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "codata_full_table_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "codata_full_table_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "code_genome_structure_bundle",
       "lean_module": "CodeGenomeStructurePriors",
       "provable": true,
@@ -5268,6 +5441,52 @@
             "codon_taa_secondary_phase"
           ],
           "linked_obligation_id": "codon_taa_secondary_phase"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "cod_optimade_structures_bundle",
+      "lean_module": "CodOptimadeStructuresPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "cod_optimade_structures_observable_count",
+          "statement": "682 = 682",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "cod_optimade_structures_observable_count_pos"
+          ],
+          "linked_obligation_id": "cod_optimade_structures_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "cod_optimade_structures_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "cod_optimade_structures_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "cod_optimade_structures_pooled_median_error_pct",
+          "statement": "0.01341 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "cod_optimade_structures_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "cod_optimade_structures_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -7551,6 +7770,144 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "desi_edr_fits_residual_bundle",
+      "lean_module": "DesiEdrFitsResidualPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "desi_edr_fits_residual_observable_count",
+          "statement": "97144 = 97144",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "desi_edr_fits_residual_observable_count_pos"
+          ],
+          "linked_obligation_id": "desi_edr_fits_residual_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "desi_edr_fits_residual_D_eff",
+          "statement": "18 = 18",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "desi_edr_fits_residual_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "desi_edr_fits_residual_pooled_median_error_pct",
+          "statement": "0.0224614892042 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "desi_edr_fits_residual_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "desi_edr_fits_residual_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "desi_edr_table_slice_open_bundle",
+      "lean_module": "DesiEdrTableSliceOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "desi_edr_table_slice_open_observable_count",
+          "statement": "18 = 18",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "desi_edr_table_slice_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "desi_edr_table_slice_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "desi_edr_table_slice_open_D_eff",
+          "statement": "18 = 18",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "desi_edr_table_slice_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "desi_edr_table_slice_open_pooled_median_error_pct",
+          "statement": "0.010049 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "desi_edr_table_slice_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "desi_edr_table_slice_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "desi_public_depth_open_bundle",
+      "lean_module": "DesiPublicDepthOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "desi_public_depth_open_observable_count",
+          "statement": "10 = 10",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "desi_public_depth_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "desi_public_depth_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "desi_public_depth_open_D_eff",
+          "statement": "18 = 18",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "desi_public_depth_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "desi_public_depth_open_pooled_median_error_pct",
+          "statement": "0.010049 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "desi_public_depth_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "desi_public_depth_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "desktop_application_wiring_spine_bundle",
       "lean_module": "DesktopApplicationWiringSpinePriors",
       "provable": true,
@@ -8949,6 +9306,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "endf_iaea_nuclear_open_bundle",
+      "lean_module": "EndfIaeaNuclearOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "endf_iaea_nuclear_open_observable_count",
+          "statement": "517 = 517",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "endf_iaea_nuclear_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "endf_iaea_nuclear_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "endf_iaea_nuclear_open_D_eff",
+          "statement": "16 = 16",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "endf_iaea_nuclear_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "endf_iaea_nuclear_open_pooled_median_error_pct",
+          "statement": "0.092131 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "endf_iaea_nuclear_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "endf_iaea_nuclear_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "energy_ai_orbital_bridge_bundle",
       "lean_module": "EnergyAIOrbitalBridgePriors",
       "provable": true,
@@ -10048,6 +10451,52 @@
             "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "exoplanet_archive_depth_open_bundle",
+      "lean_module": "ExoplanetArchiveDepthOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "exoplanet_archive_depth_open_observable_count",
+          "statement": "1976 = 1976",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "exoplanet_archive_depth_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "exoplanet_archive_depth_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "exoplanet_archive_depth_open_D_eff",
+          "statement": "16 = 16",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "exoplanet_archive_depth_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "exoplanet_archive_depth_open_pooled_median_error_pct",
+          "statement": "0.023015 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "exoplanet_archive_depth_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "exoplanet_archive_depth_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -13213,6 +13662,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "gaia_dr3_source_sample_open_bundle",
+      "lean_module": "GaiaDr3SourceSampleOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "gaia_dr3_source_sample_open_observable_count",
+          "statement": "3459 = 3459",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "gaia_dr3_source_sample_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "gaia_dr3_source_sample_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "gaia_dr3_source_sample_open_D_eff",
+          "statement": "18 = 18",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "gaia_dr3_source_sample_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "gaia_dr3_source_sample_open_pooled_median_error_pct",
+          "statement": "0.022461 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "gaia_dr3_source_sample_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "gaia_dr3_source_sample_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "gaia_dr3_tap_deep_bundle",
       "lean_module": "GaiaDR3TAPDeepPriors",
       "provable": true,
@@ -13382,6 +13877,52 @@
             "biological_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "gbif_taxon_depth_open_bundle",
+      "lean_module": "GbifTaxonDepthOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "gbif_taxon_depth_open_observable_count",
+          "statement": "203 = 203",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "gbif_taxon_depth_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "gbif_taxon_depth_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "gbif_taxon_depth_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "gbif_taxon_depth_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "gbif_taxon_depth_open_pooled_median_error_pct",
+          "statement": "0.006006 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "gbif_taxon_depth_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "gbif_taxon_depth_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -13829,6 +14370,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "gwas_catalog_depth_open_bundle",
+      "lean_module": "GwasCatalogDepthOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "gwas_catalog_depth_open_observable_count",
+          "statement": "81 = 81",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "gwas_catalog_depth_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "gwas_catalog_depth_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "gwas_catalog_depth_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "gwas_catalog_depth_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "gwas_catalog_depth_open_pooled_median_error_pct",
+          "statement": "0.022236 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "gwas_catalog_depth_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "gwas_catalog_depth_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "gwosc_live_event_deep_bundle",
       "lean_module": "GWOSCLiveEventDeepPriors",
       "provable": true,
@@ -13882,6 +14469,98 @@
             "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "gwosc_strain_metadata_open_bundle",
+      "lean_module": "GwoscStrainMetadataOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "gwosc_strain_metadata_open_observable_count",
+          "statement": "54 = 54",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "gwosc_strain_metadata_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "gwosc_strain_metadata_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "gwosc_strain_metadata_open_D_eff",
+          "statement": "18 = 18",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "gwosc_strain_metadata_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "gwosc_strain_metadata_open_pooled_median_error_pct",
+          "statement": "0.008488 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "gwosc_strain_metadata_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "gwosc_strain_metadata_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "gwtc_catalog_open_bundle",
+      "lean_module": "GwtcCatalogOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "gwtc_catalog_open_observable_count",
+          "statement": "1972 = 1972",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "gwtc_catalog_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "gwtc_catalog_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "gwtc_catalog_open_D_eff",
+          "statement": "18 = 18",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "gwtc_catalog_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "gwtc_catalog_open_pooled_median_error_pct",
+          "statement": "0.008488 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "gwtc_catalog_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "gwtc_catalog_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -15737,6 +16416,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "jarvis_dft_open_panel_bundle",
+      "lean_module": "JarvisDftOpenPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "jarvis_dft_open_panel_observable_count",
+          "statement": "77 = 77",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "jarvis_dft_open_panel_observable_count_pos"
+          ],
+          "linked_obligation_id": "jarvis_dft_open_panel_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "jarvis_dft_open_panel_D_eff",
+          "statement": "16 = 16",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "jarvis_dft_open_panel_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "jarvis_dft_open_panel_pooled_median_error_pct",
+          "statement": "0.01341 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "jarvis_dft_open_panel_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "jarvis_dft_open_panel_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "knowledge_base_portable_bundle_panel_bundle",
       "lean_module": "KnowledgeBasePortableBundlePanelPriors",
       "provable": true,
@@ -16618,6 +17343,98 @@
             "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "lmfdb_elliptic_curves_open_bundle",
+      "lean_module": "LmfdbEllipticCurvesOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "lmfdb_elliptic_curves_open_observable_count",
+          "statement": "1016 = 1016",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "lmfdb_elliptic_curves_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "lmfdb_elliptic_curves_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "lmfdb_elliptic_curves_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "lmfdb_elliptic_curves_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "lmfdb_elliptic_curves_open_pooled_median_error_pct",
+          "statement": "0.014767 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "lmfdb_elliptic_curves_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "lmfdb_elliptic_curves_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "lmfdb_oeis_math_open_bundle",
+      "lean_module": "LmfdbOeisMathOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "lmfdb_oeis_math_open_observable_count",
+          "statement": "3918 = 3918",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "lmfdb_oeis_math_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "lmfdb_oeis_math_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "lmfdb_oeis_math_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "lmfdb_oeis_math_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "lmfdb_oeis_math_open_pooled_median_error_pct",
+          "statement": "0.014767 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "lmfdb_oeis_math_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "lmfdb_oeis_math_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -20043,6 +20860,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "ncei_climate_open_bundle",
+      "lean_module": "NceiClimateOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "ncei_climate_open_observable_count",
+          "statement": "607 = 607",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "ncei_climate_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "ncei_climate_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "ncei_climate_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "ncei_climate_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "ncei_climate_open_pooled_median_error_pct",
+          "statement": "0.0291 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "ncei_climate_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "ncei_climate_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "network_internet_protocols_bundle",
       "lean_module": "NetworkInternetProtocolsPriors",
       "provable": true,
@@ -21413,6 +22276,98 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "nist_asd_multi_species_open_bundle",
+      "lean_module": "NistAsdMultiSpeciesOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "nist_asd_multi_species_open_observable_count",
+          "statement": "26 = 26",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "nist_asd_multi_species_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "nist_asd_multi_species_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "nist_asd_multi_species_open_D_eff",
+          "statement": "12 = 12",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "nist_asd_multi_species_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "nist_asd_multi_species_open_pooled_median_error_pct",
+          "statement": "0.073582 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "nist_asd_multi_species_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "nist_asd_multi_species_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "nist_asd_spectroscopy_open_bundle",
+      "lean_module": "NistAsdSpectroscopyOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "nist_asd_spectroscopy_open_observable_count",
+          "statement": "13 = 13",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "nist_asd_spectroscopy_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "nist_asd_spectroscopy_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "nist_asd_spectroscopy_open_D_eff",
+          "statement": "12 = 12",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "nist_asd_spectroscopy_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "nist_asd_spectroscopy_open_pooled_median_error_pct",
+          "statement": "0.073582 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "nist_asd_spectroscopy_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "nist_asd_spectroscopy_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "nist_codata_constants_bundle",
       "lean_module": "NistCodataConstantsPriors",
       "provable": true,
@@ -21703,6 +22658,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "noaa_tides_multi_station_open_bundle",
+      "lean_module": "NoaaTidesMultiStationOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "noaa_tides_multi_station_open_observable_count",
+          "statement": "209 = 209",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "noaa_tides_multi_station_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "noaa_tides_multi_station_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "noaa_tides_multi_station_open_D_eff",
+          "statement": "16 = 16",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "noaa_tides_multi_station_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "noaa_tides_multi_station_open_pooled_median_error_pct",
+          "statement": "0.030173 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "noaa_tides_multi_station_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "noaa_tides_multi_station_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "nothing_perfection_friction_origin_panel_bundle",
       "lean_module": "NothingPerfectionFrictionOriginPanelPriors",
       "provable": true,
@@ -21756,6 +22757,98 @@
             "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "nuclear_iaea_open_bundle",
+      "lean_module": "NuclearIaeaOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "nuclear_iaea_open_observable_count",
+          "statement": "360 = 360",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "nuclear_iaea_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "nuclear_iaea_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "nuclear_iaea_open_D_eff",
+          "statement": "16 = 16",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "nuclear_iaea_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "nuclear_iaea_open_pooled_median_error_pct",
+          "statement": "0.092131 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "nuclear_iaea_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "nuclear_iaea_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "nufit_neutrino_open_bundle",
+      "lean_module": "NufitNeutrinoOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "nufit_neutrino_open_observable_count",
+          "statement": "10 = 10",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "nufit_neutrino_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "nufit_neutrino_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "nufit_neutrino_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "nufit_neutrino_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "nufit_neutrino_open_pooled_median_error_pct",
+          "statement": "0.009504 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "nufit_neutrino_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "nufit_neutrino_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -21942,6 +23035,52 @@
             "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "oeis_family_sweep_open_bundle",
+      "lean_module": "OeisFamilySweepOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "oeis_family_sweep_open_observable_count",
+          "statement": "394 = 394",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "oeis_family_sweep_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "oeis_family_sweep_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "oeis_family_sweep_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "oeis_family_sweep_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "oeis_family_sweep_open_pooled_median_error_pct",
+          "statement": "0.014767 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "oeis_family_sweep_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "oeis_family_sweep_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -22157,6 +23296,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "openalex_citation_depth_open_bundle",
+      "lean_module": "OpenalexCitationDepthOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "openalex_citation_depth_open_observable_count",
+          "statement": "150 = 150",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "openalex_citation_depth_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "openalex_citation_depth_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "openalex_citation_depth_open_D_eff",
+          "statement": "12 = 12",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "openalex_citation_depth_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "openalex_citation_depth_open_pooled_median_error_pct",
+          "statement": "0.008863 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "openalex_citation_depth_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "openalex_citation_depth_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "openalex_citation_graph_bundle",
       "lean_module": "OpenalexCitationGraphPriors",
       "provable": true,
@@ -22326,6 +23511,52 @@
             "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "openneuro_depth_open_bundle",
+      "lean_module": "OpenneuroDepthOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "openneuro_depth_open_observable_count",
+          "statement": "47 = 47",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "openneuro_depth_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "openneuro_depth_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "openneuro_depth_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "openneuro_depth_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "openneuro_depth_open_pooled_median_error_pct",
+          "statement": "0.018003 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "openneuro_depth_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "openneuro_depth_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -22674,6 +23905,52 @@
             "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "owid_epidemiology_open_bundle",
+      "lean_module": "OwidEpidemiologyOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "owid_epidemiology_open_observable_count",
+          "statement": "1778 = 1778",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "owid_epidemiology_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "owid_epidemiology_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "owid_epidemiology_open_D_eff",
+          "statement": "16 = 16",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "owid_epidemiology_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "owid_epidemiology_open_pooled_median_error_pct",
+          "statement": "0.022236 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "owid_epidemiology_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "owid_epidemiology_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -23292,6 +24569,52 @@
             "particle_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "pdg_live_depth_open_bundle",
+      "lean_module": "PdgLiveDepthOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "pdg_live_depth_open_observable_count",
+          "statement": "33 = 33",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "pdg_live_depth_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "pdg_live_depth_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "pdg_live_depth_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "pdg_live_depth_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "pdg_live_depth_open_pooled_median_error_pct",
+          "statement": "0.009504 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "pdg_live_depth_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "pdg_live_depth_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -25175,6 +26498,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "pubchem_depth_open_bundle",
+      "lean_module": "PubchemDepthOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "pubchem_depth_open_observable_count",
+          "statement": "149 = 149",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "pubchem_depth_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "pubchem_depth_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "pubchem_depth_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "pubchem_depth_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "pubchem_depth_open_pooled_median_error_pct",
+          "statement": "0.040788 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "pubchem_depth_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "pubchem_depth_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "pubchem_live_deep_bundle",
       "lean_module": "PubChemLiveDeepPriors",
       "provable": true,
@@ -26298,6 +27667,52 @@
             "medical_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "rcsb_structure_batch_open_bundle",
+      "lean_module": "RcsbStructureBatchOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "rcsb_structure_batch_open_observable_count",
+          "statement": "91 = 91",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "rcsb_structure_batch_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "rcsb_structure_batch_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "rcsb_structure_batch_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "rcsb_structure_batch_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "rcsb_structure_batch_open_pooled_median_error_pct",
+          "statement": "0.022236 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "rcsb_structure_batch_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "rcsb_structure_batch_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -27518,6 +28933,52 @@
             "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "simbad_identity_depth_open_bundle",
+      "lean_module": "SimbadIdentityDepthOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "simbad_identity_depth_open_observable_count",
+          "statement": "1365 = 1365",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "simbad_identity_depth_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "simbad_identity_depth_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "simbad_identity_depth_open_D_eff",
+          "statement": "16 = 16",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "simbad_identity_depth_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "simbad_identity_depth_open_pooled_median_error_pct",
+          "statement": "0.022461 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "simbad_identity_depth_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "simbad_identity_depth_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -31801,6 +33262,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "uniprot_proteome_slice_open_bundle",
+      "lean_module": "UniprotProteomeSliceOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "uniprot_proteome_slice_open_observable_count",
+          "statement": "68 = 68",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "uniprot_proteome_slice_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "uniprot_proteome_slice_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "uniprot_proteome_slice_open_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "uniprot_proteome_slice_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "uniprot_proteome_slice_open_pooled_median_error_pct",
+          "statement": "0.022236 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "uniprot_proteome_slice_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "uniprot_proteome_slice_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "uniprot_structure_annotations_deep_bundle",
       "lean_module": "UniProtStructureAnnotationsDeepPriors",
       "provable": true,
@@ -31854,6 +33361,52 @@
             "energy_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "usgs_seismic_history_open_bundle",
+      "lean_module": "UsgsSeismicHistoryOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "usgs_seismic_history_open_observable_count",
+          "statement": "398 = 398",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "usgs_seismic_history_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "usgs_seismic_history_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "usgs_seismic_history_open_D_eff",
+          "statement": "16 = 16",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "usgs_seismic_history_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "usgs_seismic_history_open_pooled_median_error_pct",
+          "statement": "0.022295 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "usgs_seismic_history_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "usgs_seismic_history_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -32917,6 +34470,52 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "world_bank_macro_open_bundle",
+      "lean_module": "WorldBankMacroOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "world_bank_macro_open_observable_count",
+          "statement": "605 = 605",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "world_bank_macro_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "world_bank_macro_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "world_bank_macro_open_D_eff",
+          "statement": "18 = 18",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "world_bank_macro_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "world_bank_macro_open_pooled_median_error_pct",
+          "statement": "0.02584 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "world_bank_macro_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "world_bank_macro_open_pooled_median_under_half_pct"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "xr_interactive_media_math_scaffold_bundle",
       "lean_module": "XRInteractiveMediaMathScaffoldPriors",
       "provable": true,
@@ -33318,6 +34917,52 @@
             "biological_raw_S_positive"
           ],
           "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "zenodo_records_depth_open_bundle",
+      "lean_module": "ZenodoRecordsDepthOpenPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "zenodo_records_depth_open_observable_count",
+          "statement": "32 = 32",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "zenodo_records_depth_open_observable_count_pos"
+          ],
+          "linked_obligation_id": "zenodo_records_depth_open_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "zenodo_records_depth_open_D_eff",
+          "statement": "12 = 12",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "zenodo_records_depth_open_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "zenodo_records_depth_open_pooled_median_error_pct",
+          "statement": "0.031506 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "zenodo_records_depth_open_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "zenodo_records_depth_open_pooled_median_under_half_pct"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0

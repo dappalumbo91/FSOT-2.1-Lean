@@ -1,7 +1,43 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 5/20 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 5/21 (generated). *)
 theory FullFormalSpine_04
 imports Complex_Main
 begin
+
+lemma cosmology_wave8_max_error_under_half_pct: "(0.35683948712437213 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cosmology_wave8_median_error_under_half_pct: "(0.014145689288404753 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cosmology_wave8_observable_count_pos: "0 < (52 :: nat)"
+  by eval
+
+lemma cosmology_wave9_max_error_under_half_pct: "(0.19375824846825943 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cosmology_wave9_median_error_under_half_pct: "(0.014278509753575246 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cosmology_wave9_observable_count_pos: "0 < (7 :: nat)"
+  by eval
+
+lemma crc_handbook_properties_observable_count_pos: "0 < (391 :: nat)"
+  by eval
+
+lemma crc_handbook_properties_median_error_under_half_pct: "(0.026922 :: real) < (0.5 :: real)"
+  by eval
+
+lemma creative_arts_math_spine_observable_count_pos: "0 < (56 :: nat)"
+  by eval
+
+lemma creative_arts_math_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma crossref_scholarly_panel_observable_count_pos: "0 < (200 :: nat)"
+  by eval
+
+lemma crossref_scholarly_panel_median_error_under_half_pct: "(0.01382 :: real) < (0.5 :: real)"
+  by eval
 
 lemma crossref_scholarly_observable_count_pos: "0 < (200 :: nat)"
   by eval
@@ -49,6 +85,33 @@ lemma dark_sector_open_problems_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
 lemma dark_sector_open_problems_median_error_under_half_pct: "(0.01529034996934153 :: real) < (0.5 :: real)"
+  by eval
+
+lemma desi_edr_fits_residual_pooled_median_under_half_pct: "(0.0224614892042 :: real) < (0.5 :: real)"
+  by eval
+
+lemma desi_edr_fits_residual_headline_median_under_half_pct: "(0.0224614892042 :: real) < (0.5 :: real)"
+  by eval
+
+lemma desi_edr_fits_residual_observable_count_pos: "0 < (97144 :: nat)"
+  by eval
+
+lemma desi_edr_table_slice_open_pooled_median_under_half_pct: "(0.010049 :: real) < (0.5 :: real)"
+  by eval
+
+lemma desi_edr_table_slice_open_headline_median_under_half_pct: "(0.010049 :: real) < (0.5 :: real)"
+  by eval
+
+lemma desi_edr_table_slice_open_observable_count_pos: "0 < (18 :: nat)"
+  by eval
+
+lemma desi_public_depth_open_pooled_median_under_half_pct: "(0.010049 :: real) < (0.5 :: real)"
+  by eval
+
+lemma desi_public_depth_open_headline_median_under_half_pct: "(0.010049 :: real) < (0.5 :: real)"
+  by eval
+
+lemma desi_public_depth_open_observable_count_pos: "0 < (10 :: nat)"
   by eval
 
 lemma desktop_application_wiring_spine_observable_count_pos: "0 < (81 :: nat)"
@@ -238,69 +301,6 @@ lemma electrical_power_systems_observable_count_pos: "0 < (9 :: nat)"
   by eval
 
 lemma electrical_power_systems_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma element_synthesis_condition_scaffold_observable_count_pos: "0 < (45 :: nat)"
-  by eval
-
-lemma element_synthesis_condition_scaffold_median_error_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
-  by eval
-
-lemma emergent_final_emergence_health_positive: "0 < (0.8547351151068473 :: real)"
-  by eval
-
-lemma emergent_final_meta_S_positive: "0 < (0.32988227338082093 :: real)"
-  by eval
-
-lemma emergent_domain_count_pos: "0 < (29 :: nat)"
-  by eval
-
-lemma emergent_observed_le_total: "(28 :: nat) <= (29 :: nat)"
-  by eval
-
-lemma energy_ai_orbital_bridge_observable_count_pos: "0 < (48 :: nat)"
-  by eval
-
-lemma energy_ai_orbital_bridge_median_error_under_half_pct: "(0.027544107556407217 :: real) < (0.5 :: real)"
-  by eval
-
-lemma energy_neural_orbital_bridge_observable_count_pos: "0 < (48 :: nat)"
-  by eval
-
-lemma energy_neural_orbital_bridge_median_error_under_half_pct: "(0.018002668701796887 :: real) < (0.5 :: real)"
-  by eval
-
-lemma engineering_hardware_code_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma engineering_hardware_code_spine_observable_count_pos: "0 < (95 :: nat)"
-  by eval
-
-lemma entomology_ext_pooled_median_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"
-  by eval
-
-lemma entomology_ext_headline_median_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"
-  by eval
-
-lemma entomology_ext_observable_count_pos: "0 < (430 :: nat)"
-  by eval
-
-lemma entomology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma entomology_panel_observable_count_pos: "0 < (90 :: nat)"
-  by eval
-
-lemma entomology_panel_median_error_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
-  by eval
-
-lemma entomology_observable_count_pos: "0 < (430 :: nat)"
-  by eval
-
-lemma entomology_median_error_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"
-  by eval
-
-lemma environmental_engineering_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

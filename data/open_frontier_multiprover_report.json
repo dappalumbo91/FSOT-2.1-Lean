@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-08-05T16:00:00+00:00",
+  "policy": "open_science_only_no_credentials",
+  "math_policy": "FSOT residual only (make_fsot_record / fsot_scaled); multiprover re-proof of green-gate inequalities",
+  "pipeline": [
+    "scripts/gen_open_frontier_priors_lean.py",
+    "scripts/export_scientific_catalog_obligations.py",
+    "scripts/export_full_priors_obligations.py",
+    "scripts/generate_scientific_catalog_artifacts.py",
+    "scripts/generate_full_priors_coq_artifacts.py",
+    "scripts/run_cross_proof_verification.py"
+  ],
+  "lean_priors_modules_generated": 29,
+  "scientific_catalog": {
+    "domains": 463,
+    "obligations": 2177,
+    "python_pass": "2177/2177",
+    "claims": {
+      "catalog_nonempty": 462,
+      "empirical_pooled_median_gate": 828,
+      "empirical_max_scalar_gate": 414,
+      "green_gate_pass_flag": 463,
+      "seed_identity": 5,
+      "seed_positive": 5
+    },
+    "frontier_domains_each_have_approx_obligations": 5,
+    "note": "Each green frontier domain contributes records_pos, pooled_under_half, pooled_lt_half_pure, max_scalar, green_flag"
+  },
+  "full_formal_spine": {
+    "obligations": 2549,
+    "modules": 549,
+    "priors_tier": 2088,
+    "atomic_provable": 1993,
+    "margin_violations": 0
+  },
+  "cross_proof_verification": {
+    "overall_ok": true,
+    "github_ready": true,
+    "python_decimal": "PASS",
+    "scientific_catalog_python": "PASS",
+    "smt_z3_catalog": "passed (2177 asserts)",
+    "tla_domain_routing": "passed",
+    "lean_connective": "PASS",
+    "coq_chunks": "passed (47/47)",
+    "isabelle_chunks": "passed (44/44)",
+    "lean_coq_refinement": true,
+    "lean_isabelle_refinement": true,
+    "rust_replay": "passed (2085 obligations)",
+    "fstar": "passed",
+    "qemu": "passed",
+    "esp32": "passed",
+    "gr_sm_ckm": true,
+    "transcendental_bounds_python_decimal": "68/68"
+  },
+  "artifact_paths": {
+    "report": "data/cross_proof_verification_report.json",
+    "catalog_spine": "verification/obligations/scientific_catalog_spine.json",
+    "priors_spine": "verification/obligations/full_priors_spine.json",
+    "catalog_lean": "FSOT/Formal/ScientificCatalogSpine.lean",
+    "frontier_priors_glob": "FSOT/Formal/*OpenPriors.lean"
+  },
+  "ready_for_next_open_wave": true
+}

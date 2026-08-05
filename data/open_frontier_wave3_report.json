@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-08-05T18:32:50.266976+00:00",
+  "policy": "open_science_only_no_credentials",
+  "math_policy": "FSOT residual only (make_fsot_record / fsot_scaled)",
+  "results": {
+    "endf_reaction_subset": {
+      "status": "ok",
+      "domain": "ENDF_IAEA_Nuclear_Open",
+      "records": 517,
+      "pooled_median_error_pct": 0.092131,
+      "residual_law": "fsot_scaled_only"
+    },
+    "nist_asd_multi_species": {
+      "status": "ok",
+      "domain": "NIST_ASD_Multi_Species_Open",
+      "records": 26,
+      "pooled_median_error_pct": 0.073582,
+      "residual_law": "fsot_scaled_only"
+    },
+    "desi_edr_table_slice": {
+      "status": "ok",
+      "domain": "DESI_EDR_Table_Slice_Open",
+      "records": 17,
+      "pooled_median_error_pct": 0.010049,
+      "residual_law": "fsot_scaled_only"
+    },
+    "gwosc_strain_metadata": {
+      "status": "ok",
+      "domain": "GWOSC_Strain_Metadata_Open",
+      "records": 54,
+      "pooled_median_error_pct": 0.008488,
+      "residual_law": "fsot_scaled_only"
+    },
+    "codata_full_table": {
+      "status": "ok",
+      "domain": "CODATA_Full_Table_Open",
+      "records": 25,
+      "pooled_median_error_pct": 0.073582,
+      "residual_law": "fsot_scaled_only"
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-05T20:00:04.806109+00:00",
+  "domain": "NIST_ASD_Spectroscopy_Open",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm",
+    "https://physics.nist.gov/PhysRefData/ASD/lines_form.html",
+    "vendor/open_science/nist_asd_spectroscopy/line_anchors.json"
+  ],
+  "maps_to_lean": [
+    "atomic",
+    "particle"
+  ],
+  "D_eff": 12,
+  "record_count": 13,
+  "observable_count": 13,
+  "scalar_record_count": 13,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.036791,
+  "pooled_median_error_pct": 0.036791,
+  "headline_median_error_pct": 0.036791,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "nist_asd": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NIST ASD / spectroscopic handbook open anchors"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.036791,
+      "measured": 0.0,
+      "error_pct": 0.036791,
+      "observable_count": 13
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "nist_asd_spectroscopy",
+      "computed": 0.036791,
+      "measured": 0.0,
+      "error_pct": 0.036791,
+      "observable_count": 13
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "H_alpha_nm",
+      "name": "H I Balmer-\u03b1 air wavelength (nm)",
+      "computed": 656.522454,
+      "measured": 656.281,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "H_beta_nm",
+      "name": "H I Balmer-\u03b2 air wavelength (nm)",
+      "computed": 486.311854,
+      "measured": 486.133,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "H_gamma_nm",
+      "name": "H I Balmer-\u03b3 air wavelength (nm)",
+      "computed": 434.206691,
+      "measured": 434.047,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "H_delta_nm",
+      "name": "H I Balmer-\u03b4 air wavelength (nm)",
+      "computed": 410.324908,
+      "measured": 410.174,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "H_epsilon_nm",
+      "name": "H I Balmer-\u03b5 air wavelength (nm)",
+      "computed": 397.153064,
+      "measured": 397.007,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "Ly_alpha_nm",
+      "name": "H I Lyman-\u03b1 vacuum wavelength (nm)",
+      "computed": 121.611726,
+      "measured": 121.567,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "Ly_beta_nm",
+      "name": "H I Lyman-\u03b2 vacuum wavelength (nm)",
+      "computed": 102.609737,
+      "measured": 102.572,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "He_I_587_nm",
+      "name": "He I D3 587.6 nm class",
+      "computed": 587.778171,
+      "measured": 587.562,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "Na_D2_nm",
+      "name": "Na I D2 589.0 nm class",
+      "computed": 589.211698,
+      "measured": 588.995,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "Na_D1_nm",
+      "name": "Na I D1 589.6 nm class",
+      "computed": 589.808918,
+      "measured": 589.592,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "Ca_K_nm",
+      "name": "Ca II K 393.4 nm class",
+      "computed": 393.510724,
+      "measured": 393.366,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "Ca_H_nm",
+      "name": "Ca II H 396.8 nm class",
+      "computed": 396.993005,
+      "measured": 396.847,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy",
+      "source": "NIST_ASD_handbook_class"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "handbook_page_bytes",
+      "name": "NIST_H_strong_lines_page",
+      "computed": 16792.17577,
+      "measured": 16786.0,
+      "error_pct": 0.036791,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.735824,
+      "auth": "none",
+      "gap_id": "nist_asd_spectroscopy"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.036791,
+    "max_scalar_error_pct": 0.036791,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "policy": "open_science_only_no_credentials",
+  "high_value_gap_id": "nist_asd_spectroscopy",
+  "closure_pass": "tier_scalar_factor_rebuild",
+  "closure_at": "2026-08-05T20:00:04.806109+00:00"
+}

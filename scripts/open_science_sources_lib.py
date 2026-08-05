@@ -160,6 +160,38 @@ OPEN_SOURCES: list[OpenSource] = [
         "https://opendata.cern.ch/api/records/?q=collision&size=3",
         "CERN Open Data records search",
     ),
+    # --- Credential replacements (open substitutes for MP key / FRED key) ---
+    OpenSource(
+        "cod_optimade_structures",
+        "chemistry_materials",
+        "https://www.crystallography.net/cod/optimade/v1/structures?page_limit=25",
+        "Crystallography Open Database structures via OPTIMADE (MP substitute path)",
+    ),
+    OpenSource(
+        "jarvis_optimade_dft",
+        "chemistry_materials",
+        # Default page returns empty; filter required for non-empty JARVIS OPTIMADE pages.
+        "https://jarvis.nist.gov/optimade/jarvisdft/v1/structures?filter=nelements<=3&page_limit=25",
+        "JARVIS-DFT computed materials via OPTIMADE (Materials Project open substitute)",
+    ),
+    OpenSource(
+        "worldbank_gdp",
+        "social_econ_linguistics",
+        "https://api.worldbank.org/v2/country/USA/indicator/NY.GDP.MKTP.CD?format=json&per_page=12",
+        "World Bank USA GDP current USD (FRED macro substitute)",
+    ),
+    OpenSource(
+        "worldbank_unemployment",
+        "social_econ_linguistics",
+        "https://api.worldbank.org/v2/country/USA/indicator/SL.UEM.TOTL.ZS?format=json&per_page=12",
+        "World Bank USA unemployment rate % (FRED UNRATE-class substitute)",
+    ),
+    OpenSource(
+        "worldbank_cpi",
+        "social_econ_linguistics",
+        "https://api.worldbank.org/v2/country/USA/indicator/FP.CPI.TOTL?format=json&per_page=12",
+        "World Bank USA CPI index (FRED CPI-class substitute)",
+    ),
 ]
 
 
@@ -241,51 +273,92 @@ def _count_payload(doc: dict[str, Any]) -> int:
     return 1 if p else 0
 
 
+# NIST allascii uses abbreviated heads for some constants.
+CODATA_NAME_ALIASES: dict[str, tuple[str, ...]] = {
+    "vacuum magnetic permeability": ("vacuum mag. permeability", "vacuum magnetic permeability"),
+    "impedance of free space": ("characteristic impedance of vacuum", "impedance of free space"),
+    "atomic mass of carbon-12": ("molar mass of carbon-12", "atomic mass of carbon-12"),
+    "stefan-boltzmann constant": ("stefan-boltzmann constant", "stefan–boltzmann constant"),
+    "inverse fine-structure constant": ("inverse fine-structure constant",),
+    "molar gas constant": ("molar gas constant",),
+    "faraday constant": ("faraday constant",),
+    "proton g factor": ("proton g factor",),
+    "wien wavelength displacement law constant": ("wien wavelength displacement law constant",),
+}
+
+
 def parse_nist_codata_value(text: str, name_substr: str) -> float | None:
     """Parse a CODATA allascii line value (spaces inside numbers, optional e-notation).
 
     Prefers lines whose leading quantity name equals ``name_substr`` (avoids
     matching 'molar Planck constant' when asking for 'Planck constant').
+
+    Exact SI values in allascii often end with ``...`` (ellipsis) — those dots
+    are stripped so float() succeeds.
     """
     name_l = name_substr.strip().lower()
+    aliases = CODATA_NAME_ALIASES.get(name_l, (name_l,))
 
     def _value_from_line(line: str) -> float | None:
-        # Columnar: name then ≥2 spaces then value
-        m = re.search(
-            r"\s{2,}([0-9][0-9\s.]*(?:e[-+]?\s*[0-9]+)?)",
-            line,
-            flags=re.I,
-        )
+        """Parse value column of NIST allascii (name, value, unc, unit).
+
+        Values may contain internal spaces (8.314 462 618) and exacts may end
+        with ``...``. Uncertainty is a separate multi-space column — never
+        concatenate value+unc.
+        """
+        stripped = line.strip()
+        if not stripped:
+            return None
+        parts = re.split(r"\s{2,}", stripped)
+        if len(parts) < 2:
+            return None
+        raw = parts[1].strip()
+        # Exact constants: "8.314 462 618..." → drop ellipsis tail
+        raw = re.sub(r"\.{2,}.*$", "", raw)
+        # Optional leading sign
+        m = re.match(r"^([+-]?[0-9][0-9\s.]*(?:e[-+]?\s*[0-9]+)?)", raw, flags=re.I)
         if not m:
             return None
-        token = re.sub(r"\s+", "", m.group(1))
+        token = re.sub(r"\s+", "", m.group(1)).rstrip(".")
+        if not token or token in (".", "+", "-"):
+            return None
         try:
             return float(token)
         except ValueError:
             return None
 
-    # Pass 1: exact quantity name at start of line
+    def _heads_match(head: str, target: str) -> bool:
+        return head == target or head.startswith(target + " ")
+
+    # Pass 1: exact / alias quantity name at start of line
     for line in text.splitlines():
         stripped = line.strip()
         if not stripped:
             continue
-        # quantity name is left column before multi-space gap
         head = re.split(r"\s{2,}", stripped, maxsplit=1)[0].strip().lower()
-        if head == name_l:
-            val = _value_from_line(line)
-            if val is not None:
-                return val
+        for alias in aliases:
+            if _heads_match(head, alias):
+                val = _value_from_line(line)
+                if val is not None:
+                    return val
 
     # Pass 2: substring fallback (still skip ratio-like compounds when possible)
     for line in text.splitlines():
         low = line.lower()
-        if name_l not in low:
+        matched_alias = None
+        for alias in aliases:
+            if alias in low:
+                matched_alias = alias
+                break
+        if matched_alias is None:
             continue
         if name_l == "electron mass" and "electron mass " not in low[:40] and not low.strip().startswith(
             "electron mass"
         ):
             continue
         if name_l == "planck constant" and "molar planck" in low:
+            continue
+        if "ratio" in low and "ratio" not in name_l:
             continue
         val = _value_from_line(line)
         if val is not None:

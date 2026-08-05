@@ -1,4 +1,4 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 1/20 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 1/21 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
@@ -80,6 +80,15 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma ai_galactic_orbital_bridge_median_error_under_half_pct : (0.005168558627177688%R) < (0.5%R).
 Proof. lra. Qed.
+
+Lemma alphafold_batch_meta_open_pooled_median_under_half_pct : (0.015311%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma alphafold_batch_meta_open_headline_median_under_half_pct : (0.015311%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma alphafold_batch_meta_open_observable_count_pos : (0 < 182)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma alternate_base_mathematics_explorer_panel_observable_count_pos : (0 < 56)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -295,14 +304,5 @@ Lemma thalamus_spin_counts_sum : (72 = 72)%nat.
 Proof. reflexivity. Qed.
 
 Lemma astrocyte_syncytium_spin_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma oligodendrocyte_myelination_spin_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma amygdala_spin_counts_sum : (72 = 72)%nat.
-Proof. reflexivity. Qed.
-
-Lemma microglial_surveillance_spin_counts_sum : (72 = 72)%nat.
 Proof. reflexivity. Qed.
 

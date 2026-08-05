@@ -372,6 +372,17 @@ proprietary_boundary:
     build: scripts/build_open_science_expansion_benchmarks.py
     evaluate: scripts/evaluate_open_science_holdouts.py
     holdouts: data/preregistered_open_science_holdouts.yaml
+    credential_replacements:
+      description: "Open substitutes for MP key + FRED key"
+      build: scripts/build_open_credential_replacements.py
+      materials_project_key_replaced_by:
+        - jarvis_optimade_dft
+        - cod_optimade_structures
+      fred_key_replaced_by:
+        - worldbank_gdp
+        - worldbank_unemployment
+        - worldbank_cpi
+        - world_bank_development (existing green panel)
     sources:
       - id: openfda_drug_label
         url: https://api.fda.gov/drug/label.json
@@ -406,6 +417,26 @@ proprietary_boundary:
       - id: cern_opendata_records
         url: https://opendata.cern.ch/api/records/
         auth: none
+      - id: jarvis_optimade_dft
+        url: https://jarvis.nist.gov/optimade/jarvisdft/v1/structures
+        auth: none
+        note: "Materials Project open substitute"
+      - id: cod_optimade_structures
+        url: https://www.crystallography.net/cod/optimade/v1/structures
+        auth: none
+        note: "Open crystal structures (MP substitute path)"
+      - id: worldbank_gdp
+        url: https://api.worldbank.org/v2/country/USA/indicator/NY.GDP.MKTP.CD
+        auth: none
+        note: "FRED GDP-class open substitute"
+      - id: worldbank_unemployment
+        url: https://api.worldbank.org/v2/country/USA/indicator/SL.UEM.TOTL.ZS
+        auth: none
+        note: "FRED UNRATE-class open substitute"
+      - id: worldbank_cpi
+        url: https://api.worldbank.org/v2/country/USA/indicator/FP.CPI.TOTL
+        auth: none
+        note: "FRED CPI-class open substitute"
       - id: stringdb_version
         url: https://string-db.org/api/json/version
         auth: none

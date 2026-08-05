@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-08-05T18:58:30.181490+00:00",
+  "external_data_root": "G:\\FSOT-PublicData",
+  "open_science_large": "G:\\FSOT-PublicData\\open_science_large",
+  "policy": "open_science_only_no_credentials",
+  "math_policy": "FSOT residual only",
+  "results": {
+    "codata_full_table": {
+      "status": "ok",
+      "domain": "CODATA_Full_Table_Open",
+      "records": 37,
+      "pooled_median_error_pct": 0.073582,
+      "residual_law": "fsot_scaled_only"
+    },
+    "gaia_large": {
+      "status": "ok",
+      "domain": "Gaia_DR3_Source_Sample_Open",
+      "records": 3459,
+      "pooled_median_error_pct": 0.022461,
+      "residual_law": "fsot_scaled_only"
+    },
+    "simbad_large": {
+      "status": "ok",
+      "domain": "SIMBAD_Identity_Depth_Open",
+      "records": 1365,
+      "pooled_median_error_pct": 0.022461,
+      "residual_law": "fsot_scaled_only"
+    },
+    "lmfdb_large": {
+      "status": "ok",
+      "domain": "LMFDB_OEIS_Math_Open",
+      "records": 3918,
+      "pooled_median_error_pct": 0.014767,
+      "residual_law": "fsot_scaled_only"
+    },
+    "climate_multivar": {
+      "status": "ok",
+      "domain": "NCEI_Climate_Open",
+      "records": 607,
+      "pooled_median_error_pct": 0.0291,
+      "residual_law": "fsot_scaled_only"
+    },
+    "desi_bulk": {
+      "status": "ok",
+      "domain": "DESI_EDR_Table_Slice_Open",
+      "records": 15,
+      "pooled_median_error_pct": 0.010049,
+      "residual_law": "fsot_scaled_only"
+    }
+  }
+}

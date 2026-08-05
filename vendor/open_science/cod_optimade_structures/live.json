@@ -1,0 +1,3874 @@
+{
+  "source_id": "cod_optimade_structures",
+  "kind": "json",
+  "payload": {
+    "data": [
+      {
+        "attributes": {
+          "_cod_Rall": 0.1073,
+          "_cod_Robs": 0.0584,
+          "_cod_Z": "4",
+          "_cod_Zprime": 1,
+          "_cod_a": 7.8783,
+          "_cod_acce_code": "GS1096",
+          "_cod_alpha": 90,
+          "_cod_authors": "Phan Thanh, S.; Marrot, J.; Renaudin, J.; Maisonneuve, V.",
+          "_cod_b": 10.4689,
+          "_cod_beta": 95.147,
+          "_cod_c": 16.068,
+          "_cod_calcformula": "- C5 H17 Al N2 O8 P2 -",
+          "_cod_cellformula": "- C20 H68 Al4 N8 O32 P8 -",
+          "_cod_celltemp": 296,
+          "_cod_date": "2020-10-21",
+          "_cod_diffrtemp": 296,
+          "_cod_doi": "10.1107/S0108270100008532",
+          "_cod_duplicateof": "2011331",
+          "_cod_file": "1000000",
+          "_cod_firstpage": "1073",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C5 H17 Al N2 O8 P2 -",
+          "_cod_gamma": 90,
+          "_cod_gofall": 1.055,
+          "_cod_gofref": 1.08,
+          "_cod_issue": "9",
+          "_cod_journal": "Acta Crystallographica, Section C",
+          "_cod_lastpage": "1074",
+          "_cod_nel": "6",
+          "_cod_radType": "MoK\u03b1",
+          "_cod_sg": "P 1 21/n 1",
+          "_cod_sgHall": "-P 2yn",
+          "_cod_sgNumber": "14",
+          "_cod_siga": 0.0002,
+          "_cod_sigb": 0.0001,
+          "_cod_sigbeta": 0.001,
+          "_cod_sigc": 0.0004,
+          "_cod_sigcelltemp": 2,
+          "_cod_sigdiffrtemp": 2,
+          "_cod_sigvol": 0.05,
+          "_cod_svnrevision": "176729",
+          "_cod_text": "Phan Thanh, S.; Marrot, J.; Renaudin, J.; Maisonneuve, V.\n[H~3~N(CH~2~)~5~NH~3~].AlP~2~O~8~H, a one-dimensional aluminophosphate\nActa Crystallographica, Section C\n56(9)\n(2000)\n1073-1074",
+          "_cod_time": "18:00:00",
+          "_cod_title": "[H~3~N(CH~2~)~5~NH~3~].AlP~2~O~8~H, a one-dimensional aluminophosphate",
+          "_cod_vol": 1319.9,
+          "_cod_volume": "56",
+          "_cod_wRall": 0.2069,
+          "_cod_wRref": 0.1362,
+          "_cod_wavelength": 0.71073,
+          "_cod_year": "2000",
+          "chemical_formula_anonymous": "A17B8C5D2E2F",
+          "chemical_formula_descriptive": "C5H17AlN2O8P2",
+          "chemical_formula_hill": "C5H17AlN2O8P2",
+          "chemical_formula_reduced": "AlC5H17N2O8P2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Al",
+            "C",
+            "H",
+            "N",
+            "O",
+            "P"
+          ],
+          "elements_ratios": [
+            0.0285714285714286,
+            0.142857142857143,
+            0.485714285714286,
+            0.0571428571428571,
+            0.228571428571429,
+            0.0571428571428571
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              7.8783,
+              0,
+              0
+            ],
+            [
+              0,
+              10.4689,
+              0
+            ],
+            [
+              -1.44148155534836,
+              0,
+              16.0032107692672
+            ]
+          ],
+          "nelements": 6,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000000",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000000"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000000",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Robs": 0.0771,
+          "_cod_Z": "4",
+          "_cod_Zprime": 1,
+          "_cod_a": 48.48,
+          "_cod_alpha": 90,
+          "_cod_authors": "Bachet, Bernard; Soyer, Alain; Billy, Isabelle; Mornon, Jean-Paul",
+          "_cod_b": 21.72,
+          "_cod_beta": 90,
+          "_cod_c": 10.74,
+          "_cod_calcformula": "- C107 H142 N14 O26 -",
+          "_cod_cellformula": "- C428 H568 N56 O104 -",
+          "_cod_celltemp": 293,
+          "_cod_date": "2020-10-21",
+          "_cod_diffrtemp": 293,
+          "_cod_file": "1000001",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C107 H142 N14 O26 -",
+          "_cod_gamma": 90,
+          "_cod_gofref": 5.0878,
+          "_cod_nel": "4",
+          "_cod_radType": "CuK\u03b1",
+          "_cod_sg": "P 21 21 21",
+          "_cod_sgHall": "P 2ac 2ab",
+          "_cod_sgNumber": "19",
+          "_cod_svnrevision": "176729",
+          "_cod_text": "Bachet, Bernard; Soyer, Alain; Billy, Isabelle; Mornon, Jean-Paul\nPristinamycin complex solved using Shake-and-Bake\n\n\n()\n",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Pristinamycin complex solved using Shake-and-Bake",
+          "_cod_vol": 11309.1,
+          "_cod_wRref": 0.0827,
+          "_cod_wavelength": 1.5418,
+          "chemical_formula_anonymous": "A142B107C26D14",
+          "chemical_formula_descriptive": "C107H142N14O26",
+          "chemical_formula_hill": "C107H142N14O26",
+          "chemical_formula_reduced": "C107H142N14O26",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "C",
+            "H",
+            "N",
+            "O"
+          ],
+          "elements_ratios": [
+            0.370242214532872,
+            0.491349480968858,
+            0.0484429065743945,
+            0.0899653979238754
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              48.48,
+              0,
+              0
+            ],
+            [
+              0,
+              21.72,
+              0
+            ],
+            [
+              0,
+              0,
+              10.74
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000001",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000001"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000001",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Z": "4",
+          "_cod_Zprime": 1,
+          "_cod_a": 6.341,
+          "_cod_alpha": 90,
+          "_cod_authors": "Vanhoyland, G.; Bour\u00e9e, F.; Van Bael, M. K.; Mullens, J.; Van Poucke, L. C.",
+          "_cod_b": 16.88,
+          "_cod_beta": 97.6,
+          "_cod_c": 5.7798,
+          "_cod_calcformula": "- C3 D3 O7 Sr -",
+          "_cod_cellformula": "- C12 D12 O28 Sr4 -",
+          "_cod_commonname": "Deuterated acid strontium oxalate",
+          "_cod_date": "2020-10-21",
+          "_cod_doi": "10.1006/jssc.2000.9057",
+          "_cod_file": "1000002",
+          "_cod_firstpage": "283",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C3 D3 O7 Sr -",
+          "_cod_gamma": 90,
+          "_cod_issue": "2",
+          "_cod_journal": "Journal of Solid State Chemistry",
+          "_cod_lastpage": "288",
+          "_cod_nel": "4",
+          "_cod_sg": "P 1 21/n 1",
+          "_cod_sgHall": "-P 2yn",
+          "_cod_sgNumber": "14",
+          "_cod_siga": 0.001,
+          "_cod_sigb": 0.002,
+          "_cod_sigbeta": 0.01,
+          "_cod_sigc": 0.0008,
+          "_cod_sigvol": 0.8,
+          "_cod_svnrevision": "191935",
+          "_cod_text": "Vanhoyland, G.; Bour\u00e9e, F.; Van Bael, M. K.; Mullens, J.; Van Poucke, L. C.\nStructure determination and refinement of acid strontium oxalate from X-ray and neutron powder diffraction\nJournal of Solid State Chemistry\n157(2)\n(2001)\n283-288",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Structure determination and refinement of acid strontium oxalate from X-ray and neutron powder diffraction",
+          "_cod_vol": 613.2,
+          "_cod_volume": "157",
+          "_cod_year": "2001",
+          "chemical_formula_anonymous": "A7B3C3D",
+          "chemical_formula_descriptive": "C3D3O7Sr",
+          "chemical_formula_hill": "C3D3O7Sr",
+          "chemical_formula_reduced": "C3D3O7Sr",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "C",
+            "D",
+            "O",
+            "Sr"
+          ],
+          "elements_ratios": [
+            0.214285714285714,
+            0.214285714285714,
+            0.5,
+            0.0714285714285714
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              6.341,
+              0,
+              0
+            ],
+            [
+              0,
+              16.88,
+              0
+            ],
+            [
+              -0.764415484408114,
+              0,
+              5.72902757954586
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000002",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000002"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000002",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Z": "4",
+          "_cod_Zprime": 1,
+          "_cod_a": 7.9661,
+          "_cod_alpha": 90,
+          "_cod_authors": "G. Vanhoyland; M.K. Van Bael; J. Mullens; L.C. Van Poucke",
+          "_cod_b": 9.205,
+          "_cod_beta": 102.104,
+          "_cod_c": 7.3198,
+          "_cod_calcformula": "- C3 O6 Sr -",
+          "_cod_cellformula": "- C12 O24 Sr4 -",
+          "_cod_commonname": "Anhydrous acid strontium oxalate",
+          "_cod_date": "2020-10-21",
+          "_cod_doi": "10.1154/1.1401199",
+          "_cod_file": "1000003",
+          "_cod_firstpage": "224",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C3 O6 Sr -",
+          "_cod_gamma": 90,
+          "_cod_issue": "4",
+          "_cod_journal": "Powder Diffraction",
+          "_cod_lastpage": "226",
+          "_cod_nel": "3",
+          "_cod_sg": "P 1 21/c 1",
+          "_cod_sgHall": "-P 2ybc",
+          "_cod_sgNumber": "14",
+          "_cod_siga": 0.0007,
+          "_cod_sigb": 0.001,
+          "_cod_sigbeta": 0.008,
+          "_cod_sigc": 0.0008,
+          "_cod_sigvol": 0.9,
+          "_cod_svnrevision": "208206",
+          "_cod_text": "G. Vanhoyland; M.K. Van Bael; J. Mullens; L.C. Van Poucke\nStructure determination of anhydrous acid strontium oxalate by conventional X-ray powder diffraction\nPowder Diffraction\n16(4)\n(2001)\n224-226",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Structure determination of anhydrous acid strontium oxalate by conventional X-ray powder diffraction",
+          "_cod_vol": 524.8,
+          "_cod_volume": "16",
+          "_cod_year": "2001",
+          "chemical_formula_anonymous": "A6B3C",
+          "chemical_formula_descriptive": "C3O6Sr",
+          "chemical_formula_hill": "C3O6Sr",
+          "chemical_formula_reduced": "C3O6Sr",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "C",
+            "O",
+            "Sr"
+          ],
+          "elements_ratios": [
+            0.3,
+            0.6,
+            0.1
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              7.9661,
+              0,
+              0
+            ],
+            [
+              0,
+              9.205,
+              0
+            ],
+            [
+              -1.53486561827044,
+              0,
+              7.15707060003262
+            ]
+          ],
+          "nelements": 3,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000003",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000003"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000003",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.0499,
+          "_cod_Robs": 0.0469,
+          "_cod_Z": "2",
+          "_cod_Zprime": 1,
+          "_cod_a": 9.899,
+          "_cod_alpha": 103.442,
+          "_cod_b": 11.729,
+          "_cod_beta": 96.291,
+          "_cod_c": 12.259,
+          "_cod_calcformula": "- C29 H30 Cu I P2 -",
+          "_cod_cellformula": "- C58 H60 Cu2 I2 P4 -",
+          "_cod_celltemp": 293,
+          "_cod_date": "2020-10-21",
+          "_cod_diffrtemp": 293,
+          "_cod_file": "1000004",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C29 H30 Cu I P2 -",
+          "_cod_gamma": 95.56,
+          "_cod_gofref": 1.16,
+          "_cod_nel": "5",
+          "_cod_radType": "MoK\u03b1",
+          "_cod_sg": "P -1",
+          "_cod_sgHall": "-P 1",
+          "_cod_sgNumber": "2",
+          "_cod_siga": 0.005,
+          "_cod_sigalpha": 0.005,
+          "_cod_sigb": 0.005,
+          "_cod_sigbeta": 0.005,
+          "_cod_sigc": 0.005,
+          "_cod_sigcelltemp": 2,
+          "_cod_sigdiffrtemp": 2,
+          "_cod_siggamma": 0.005,
+          "_cod_sigvol": 1.1,
+          "_cod_svnrevision": "130149",
+          "_cod_text": "\n\n\n\n()\n",
+          "_cod_time": "18:00:00",
+          "_cod_vol": 1364.9,
+          "_cod_wRobs": 0.132,
+          "_cod_wRref": 0.1372,
+          "_cod_wavelength": 0.7107,
+          "chemical_formula_anonymous": "A30B29C2DE",
+          "chemical_formula_descriptive": "C29H30CuIP2",
+          "chemical_formula_hill": "C29H30CuIP2",
+          "chemical_formula_reduced": "C29CuH30IP2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "C",
+            "Cu",
+            "H",
+            "I",
+            "P"
+          ],
+          "elements_ratios": [
+            0.46031746031746,
+            0.0158730158730159,
+            0.476190476190476,
+            0.0158730158730159,
+            0.0317460317460317
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              9.899,
+              0,
+              0
+            ],
+            [
+              -1.13640024619315,
+              11.6738183761977,
+              0
+            ],
+            [
+              -1.34331889288084,
+              -2.99397584852397,
+              11.8116334166992
+            ]
+          ],
+          "nelements": 5,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000004",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000004"
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.0706,
+          "_cod_Robs": 0.0382,
+          "_cod_Z": "4",
+          "_cod_Zprime": 1,
+          "_cod_a": 11.217,
+          "_cod_alpha": 90,
+          "_cod_b": 8.1775,
+          "_cod_beta": 105.999,
+          "_cod_c": 19.887,
+          "_cod_calcformula": "- F16 H3 O6 Sr5 V3 -",
+          "_cod_cellformula": "- F64 H12 O24 Sr20 V12 -",
+          "_cod_celltemp": 298,
+          "_cod_date": "2020-10-21",
+          "_cod_diffrtemp": 298,
+          "_cod_file": "1000005",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- F16 H3 O6 Sr5 V3 -",
+          "_cod_gamma": 90,
+          "_cod_gofref": 0.927,
+          "_cod_nel": "5",
+          "_cod_radType": "MoK\u03b1",
+          "_cod_sg": "P 1 21/n 1",
+          "_cod_sgHall": "-P 2yn",
+          "_cod_sgNumber": "14",
+          "_cod_siga": 0.002,
+          "_cod_sigb": 0.0015,
+          "_cod_sigbeta": 0.004,
+          "_cod_sigc": 0.004,
+          "_cod_sigcelltemp": 2,
+          "_cod_sigdiffrtemp": 2,
+          "_cod_sigvol": 0.5,
+          "_cod_svnrevision": "176435",
+          "_cod_text": "\n\n\n\n()\n",
+          "_cod_time": "18:00:00",
+          "_cod_vol": 1753.4,
+          "_cod_wRobs": 0.0786,
+          "_cod_wRref": 0.0835,
+          "_cod_wavelength": 0.71073,
+          "chemical_formula_anonymous": "A16B6C5D3E3",
+          "chemical_formula_descriptive": "F16H3O6Sr5V3",
+          "chemical_formula_hill": "F16H3O6Sr5V3",
+          "chemical_formula_reduced": "F16H3O6Sr5V3",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "F",
+            "H",
+            "O",
+            "Sr",
+            "V"
+          ],
+          "elements_ratios": [
+            0.484848484848485,
+            0.0909090909090909,
+            0.181818181818182,
+            0.151515151515152,
+            0.0909090909090909
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              11.217,
+              0,
+              0
+            ],
+            [
+              0,
+              8.1775,
+              0
+            ],
+            [
+              -5.48126644648795,
+              0,
+              19.1167070161837
+            ]
+          ],
+          "nelements": 5,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000005",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000005"
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.0633,
+          "_cod_Robs": 0.0502,
+          "_cod_Z": "4",
+          "_cod_Zprime": 1,
+          "_cod_a": 10.93,
+          "_cod_alpha": 90,
+          "_cod_authors": "Armel Le Bail",
+          "_cod_b": 12.7162,
+          "_cod_beta": 90,
+          "_cod_c": 15.7085,
+          "_cod_calcformula": "- C22 H25 Cl N2 O8 -",
+          "_cod_cellformula": "- C88 H100 Cl4 N8 O32 -",
+          "_cod_celltemp": 150,
+          "_cod_commonname": "tetracycline hydrochloride",
+          "_cod_date": "2020-10-21",
+          "_cod_diffrtemp": 150,
+          "_cod_file": "1000006",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C22 H25 Cl N2 O8 -",
+          "_cod_gamma": 90,
+          "_cod_gofref": 0.969,
+          "_cod_journal": "Personal Communication to COD",
+          "_cod_nel": "5",
+          "_cod_radType": "synchrotron",
+          "_cod_sg": "P 21 21 21",
+          "_cod_sgHall": "P 2ac 2ab",
+          "_cod_sgNumber": "19",
+          "_cod_siga": 0.0009,
+          "_cod_sigb": 0.0011,
+          "_cod_sigc": 0.0013,
+          "_cod_sigcelltemp": 2,
+          "_cod_sigdiffrtemp": 2,
+          "_cod_sigvol": 0.3,
+          "_cod_svnrevision": "176428",
+          "_cod_text": "Armel Le Bail\n\nPersonal Communication to COD\n\n()\n",
+          "_cod_time": "18:00:00",
+          "_cod_vol": 2183.3,
+          "_cod_wRobs": 0.1116,
+          "_cod_wRref": 0.1161,
+          "_cod_wavelength": 0.6883,
+          "chemical_formula_anonymous": "A25B22C8D2E",
+          "chemical_formula_descriptive": "C22H25ClN2O8",
+          "chemical_formula_hill": "C22H25ClN2O8",
+          "chemical_formula_reduced": "C22ClH25N2O8",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "C",
+            "Cl",
+            "H",
+            "N",
+            "O"
+          ],
+          "elements_ratios": [
+            0.379310344827586,
+            0.0172413793103448,
+            0.431034482758621,
+            0.0344827586206897,
+            0.137931034482759
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              10.93,
+              0,
+              0
+            ],
+            [
+              0,
+              12.7162,
+              0
+            ],
+            [
+              0,
+              0,
+              15.7085
+            ]
+          ],
+          "nelements": 5,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000006",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000006"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000006",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 9.7397,
+          "_cod_alpha": 90,
+          "_cod_authors": "Thompson, R. M.; Downs, R. T.",
+          "_cod_b": 8.9174,
+          "_cod_beta": 105.866,
+          "_cod_c": 5.2503,
+          "_cod_calcformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_cellformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_compoundsource": "DeKalb, New York",
+          "_cod_date": "2023-03-26",
+          "_cod_diffrpressure": 100,
+          "_cod_doi": "10.2138/am.2008.2684",
+          "_cod_file": "1000007",
+          "_cod_firstpage": "177",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca Mg O6 Si2 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "186",
+          "_cod_mineral": "Diopside",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Thompson, R. M.; Downs, R. T.\nThe crystal structure of diopside at pressure to 10 GPa Sample: P = 1 atm\nAmerican Mineralogist\n93\n(2008)\n177-186",
+          "_cod_time": "10:11:39",
+          "_cod_title": "The crystal structure of diopside at pressure to 10 GPa Sample: P = 1 atm",
+          "_cod_vol": 438.631,
+          "_cod_volume": "93",
+          "_cod_year": "2008",
+          "chemical_formula_anonymous": "A6B2CD",
+          "chemical_formula_descriptive": "CaMgO6Si2",
+          "chemical_formula_hill": "CaMgO6Si2",
+          "chemical_formula_reduced": "CaMgO6Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.1,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:39Z",
+          "lattice_vectors": [
+            [
+              9.7397,
+              0,
+              0
+            ],
+            [
+              0,
+              8.9174,
+              0
+            ],
+            [
+              -1.43537144050814,
+              0,
+              5.05028305323311
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000007",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000007"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000007",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 9.7377,
+          "_cod_alpha": 90,
+          "_cod_authors": "Thompson, R. M.; Downs, R. T.",
+          "_cod_b": 8.9151,
+          "_cod_beta": 105.851,
+          "_cod_c": 5.2494,
+          "_cod_calcformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_cellformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_compoundsource": "DeKalb, New York",
+          "_cod_date": "2023-03-26",
+          "_cod_diffrpressure": 130000,
+          "_cod_doi": "10.2138/am.2008.2684",
+          "_cod_file": "1000008",
+          "_cod_firstpage": "177",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca Mg O6 Si2 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "186",
+          "_cod_mineral": "Diopside",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Thompson, R. M.; Downs, R. T.\nThe crystal structure of diopside at pressure to 10 GPa Sample: P = 0.13 GPa\nAmerican Mineralogist\n93\n(2008)\n177-186",
+          "_cod_time": "10:11:41",
+          "_cod_title": "The crystal structure of diopside at pressure to 10 GPa Sample: P = 0.13 GPa",
+          "_cod_vol": 438.386,
+          "_cod_volume": "93",
+          "_cod_year": "2008",
+          "chemical_formula_anonymous": "A6B2CD",
+          "chemical_formula_descriptive": "CaMgO6Si2",
+          "chemical_formula_hill": "CaMgO6Si2",
+          "chemical_formula_reduced": "CaMgO6Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.1,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:41Z",
+          "lattice_vectors": [
+            [
+              9.7377,
+              0,
+              0
+            ],
+            [
+              0,
+              8.9151,
+              0
+            ],
+            [
+              -1.4338034073584,
+              0,
+              5.04979288179698
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000008",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000008"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000008",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 9.6808,
+          "_cod_alpha": 90,
+          "_cod_authors": "Thompson, R. M.; Downs, R. T.",
+          "_cod_b": 8.8488,
+          "_cod_beta": 105.606,
+          "_cod_c": 5.218,
+          "_cod_calcformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_cellformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_compoundsource": "DeKalb, New York",
+          "_cod_date": "2023-03-26",
+          "_cod_diffrpressure": 2320000,
+          "_cod_doi": "10.2138/am.2008.2684",
+          "_cod_file": "1000009",
+          "_cod_firstpage": "177",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca Mg O6 Si2 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "186",
+          "_cod_mineral": "Diopside",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Thompson, R. M.; Downs, R. T.\nThe crystal structure of diopside at pressure to 10 GPa Sample: P = 2.32 GPa\nAmerican Mineralogist\n93\n(2008)\n177-186",
+          "_cod_time": "10:11:41",
+          "_cod_title": "The crystal structure of diopside at pressure to 10 GPa Sample: P = 2.32 GPa",
+          "_cod_vol": 430.513,
+          "_cod_volume": "93",
+          "_cod_year": "2008",
+          "chemical_formula_anonymous": "A6B2CD",
+          "chemical_formula_descriptive": "CaMgO6Si2",
+          "chemical_formula_hill": "CaMgO6Si2",
+          "chemical_formula_reduced": "CaMgO6Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.1,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:41Z",
+          "lattice_vectors": [
+            [
+              9.6808,
+              0,
+              0
+            ],
+            [
+              0,
+              8.8488,
+              0
+            ],
+            [
+              -1.40374991496443,
+              0,
+              5.02563530075923
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000009",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000009"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000009",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 9.6341,
+          "_cod_alpha": 90,
+          "_cod_authors": "Thompson, R. M.; Downs, R. T.",
+          "_cod_b": 8.7948,
+          "_cod_beta": 105.421,
+          "_cod_c": 5.1926,
+          "_cod_calcformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_cellformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_compoundsource": "DeKalb, New York",
+          "_cod_date": "2023-03-26",
+          "_cod_diffrpressure": 4220000,
+          "_cod_doi": "10.2138/am.2008.2684",
+          "_cod_file": "1000010",
+          "_cod_firstpage": "177",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca Mg O6 Si2 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "186",
+          "_cod_mineral": "Diopside",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Thompson, R. M.; Downs, R. T.\nThe crystal structure of diopside at pressure to 10 GPa Sample: P = 4.22 GPa\nAmerican Mineralogist\n93\n(2008)\n177-186",
+          "_cod_time": "10:11:44",
+          "_cod_title": "The crystal structure of diopside at pressure to 10 GPa Sample: P = 4.22 GPa",
+          "_cod_vol": 424.129,
+          "_cod_volume": "93",
+          "_cod_year": "2008",
+          "chemical_formula_anonymous": "A6B2CD",
+          "chemical_formula_descriptive": "CaMgO6Si2",
+          "chemical_formula_hill": "CaMgO6Si2",
+          "chemical_formula_reduced": "CaMgO6Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.1,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:44Z",
+          "lattice_vectors": [
+            [
+              9.6341,
+              0,
+              0
+            ],
+            [
+              0,
+              8.7948,
+              0
+            ],
+            [
+              -1.38076145713177,
+              0,
+              5.00565605675214
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000010",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000010"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000010",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 9.6135,
+          "_cod_alpha": 90,
+          "_cod_authors": "Thompson, R. M.; Downs, R. T.",
+          "_cod_b": 8.7695,
+          "_cod_beta": 105.337,
+          "_cod_c": 5.1813,
+          "_cod_calcformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_cellformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_compoundsource": "DeKalb, New York",
+          "_cod_date": "2023-03-26",
+          "_cod_diffrpressure": 5110000,
+          "_cod_doi": "10.2138/am.2008.2684",
+          "_cod_file": "1000011",
+          "_cod_firstpage": "177",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca Mg O6 Si2 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "186",
+          "_cod_mineral": "Diopside",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Thompson, R. M.; Downs, R. T.\nThe crystal structure of diopside at pressure to 10 GPa Sample: P = 5.11 GPa\nAmerican Mineralogist\n93\n(2008)\n177-186",
+          "_cod_time": "10:11:44",
+          "_cod_title": "The crystal structure of diopside at pressure to 10 GPa Sample: P = 5.11 GPa",
+          "_cod_vol": 421.256,
+          "_cod_volume": "93",
+          "_cod_year": "2008",
+          "chemical_formula_anonymous": "A6B2CD",
+          "chemical_formula_descriptive": "CaMgO6Si2",
+          "chemical_formula_hill": "CaMgO6Si2",
+          "chemical_formula_reduced": "CaMgO6Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.1,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:44Z",
+          "lattice_vectors": [
+            [
+              9.6135,
+              0,
+              0
+            ],
+            [
+              0,
+              8.7695,
+              0
+            ],
+            [
+              -1.3704324973678,
+              0,
+              4.99677740750559
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000011",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000011"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000011",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 9.5731,
+          "_cod_alpha": 90,
+          "_cod_authors": "Thompson, R. M.; Downs, R. T.",
+          "_cod_b": 8.7197,
+          "_cod_beta": 105.203,
+          "_cod_c": 5.158,
+          "_cod_calcformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_cellformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_compoundsource": "DeKalb, New York",
+          "_cod_date": "2023-03-26",
+          "_cod_diffrpressure": 7080000,
+          "_cod_doi": "10.2138/am.2008.2684",
+          "_cod_file": "1000012",
+          "_cod_firstpage": "177",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca Mg O6 Si2 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "186",
+          "_cod_mineral": "Diopside",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Thompson, R. M.; Downs, R. T.\nThe crystal structure of diopside at pressure to 10 GPa Sample: P = 7.08 GPa\nAmerican Mineralogist\n93\n(2008)\n177-186",
+          "_cod_time": "10:11:44",
+          "_cod_title": "The crystal structure of diopside at pressure to 10 GPa Sample: P = 7.08 GPa",
+          "_cod_vol": 415.493,
+          "_cod_volume": "93",
+          "_cod_year": "2008",
+          "chemical_formula_anonymous": "A6B2CD",
+          "chemical_formula_descriptive": "CaMgO6Si2",
+          "chemical_formula_hill": "CaMgO6Si2",
+          "chemical_formula_reduced": "CaMgO6Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.1,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:44Z",
+          "lattice_vectors": [
+            [
+              9.5731,
+              0,
+              0
+            ],
+            [
+              0,
+              8.7197,
+              0
+            ],
+            [
+              -1.35263240575012,
+              0,
+              4.97748426164409
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000012",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000012"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000012",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 9.5557,
+          "_cod_alpha": 90,
+          "_cod_authors": "Thompson, R. M.; Downs, R. T.",
+          "_cod_b": 8.6951,
+          "_cod_beta": 105.148,
+          "_cod_c": 5.1474,
+          "_cod_calcformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_cellformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_compoundsource": "DeKalb, New York",
+          "_cod_date": "2023-03-26",
+          "_cod_diffrpressure": 8010000,
+          "_cod_doi": "10.2138/am.2008.2684",
+          "_cod_file": "1000013",
+          "_cod_firstpage": "177",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca Mg O6 Si2 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "186",
+          "_cod_mineral": "Diopside",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Thompson, R. M.; Downs, R. T.\nThe crystal structure of diopside at pressure to 10 GPa Sample: P = 8.01 GPa\nAmerican Mineralogist\n93\n(2008)\n177-186",
+          "_cod_time": "10:11:44",
+          "_cod_title": "The crystal structure of diopside at pressure to 10 GPa Sample: P = 8.01 GPa",
+          "_cod_vol": 412.826,
+          "_cod_volume": "93",
+          "_cod_year": "2008",
+          "chemical_formula_anonymous": "A6B2CD",
+          "chemical_formula_descriptive": "CaMgO6Si2",
+          "chemical_formula_hill": "CaMgO6Si2",
+          "chemical_formula_reduced": "CaMgO6Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.1,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:44Z",
+          "lattice_vectors": [
+            [
+              9.5557,
+              0,
+              0
+            ],
+            [
+              0,
+              8.6951,
+              0
+            ],
+            [
+              -1.34508382094901,
+              0,
+              4.96854870909215
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000013",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000013"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000013",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 9.5391,
+          "_cod_alpha": 90,
+          "_cod_authors": "Thompson, R. M.; Downs, R. T.",
+          "_cod_b": 8.6752,
+          "_cod_beta": 105.106,
+          "_cod_c": 5.1385,
+          "_cod_calcformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_cellformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_compoundsource": "DeKalb, New York",
+          "_cod_date": "2023-03-26",
+          "_cod_diffrpressure": 8880000,
+          "_cod_doi": "10.2138/am.2008.2684",
+          "_cod_file": "1000014",
+          "_cod_firstpage": "177",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca Mg O6 Si2 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "186",
+          "_cod_mineral": "Diopside",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Thompson, R. M.; Downs, R. T.\nThe crystal structure of diopside at pressure to 10 GPa Sample: P = 8.88 GPa\nAmerican Mineralogist\n93\n(2008)\n177-186",
+          "_cod_time": "10:11:44",
+          "_cod_title": "The crystal structure of diopside at pressure to 10 GPa Sample: P = 8.88 GPa",
+          "_cod_vol": 410.536,
+          "_cod_volume": "93",
+          "_cod_year": "2008",
+          "chemical_formula_anonymous": "A6B2CD",
+          "chemical_formula_descriptive": "CaMgO6Si2",
+          "chemical_formula_hill": "CaMgO6Si2",
+          "chemical_formula_reduced": "CaMgO6Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.1,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:44Z",
+          "lattice_vectors": [
+            [
+              9.5391,
+              0,
+              0
+            ],
+            [
+              0,
+              8.6752,
+              0
+            ],
+            [
+              -1.33912193351895,
+              0,
+              4.9609409084536
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000014",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000014"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000014",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 9.527,
+          "_cod_alpha": 90,
+          "_cod_authors": "Thompson, R. M.; Downs, R. T.",
+          "_cod_b": 8.6587,
+          "_cod_beta": 105.067,
+          "_cod_c": 5.1306,
+          "_cod_calcformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_cellformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_compoundsource": "DeKalb, New York",
+          "_cod_date": "2023-03-26",
+          "_cod_diffrpressure": 9500000,
+          "_cod_doi": "10.2138/am.2008.2684",
+          "_cod_file": "1000015",
+          "_cod_firstpage": "177",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca Mg O6 Si2 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "186",
+          "_cod_mineral": "Diopside",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Thompson, R. M.; Downs, R. T.\nThe crystal structure of diopside at pressure to 10 GPa Sample: P = 9.50 GPa\nAmerican Mineralogist\n93\n(2008)\n177-186",
+          "_cod_time": "10:11:44",
+          "_cod_title": "The crystal structure of diopside at pressure to 10 GPa Sample: P = 9.50 GPa",
+          "_cod_vol": 408.681,
+          "_cod_volume": "93",
+          "_cod_year": "2008",
+          "chemical_formula_anonymous": "A6B2CD",
+          "chemical_formula_descriptive": "CaMgO6Si2",
+          "chemical_formula_hill": "CaMgO6Si2",
+          "chemical_formula_reduced": "CaMgO6Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.1,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:44Z",
+          "lattice_vectors": [
+            [
+              9.527,
+              0,
+              0
+            ],
+            [
+              0,
+              8.6587,
+              0
+            ],
+            [
+              -1.33369122588966,
+              0,
+              4.95422285267679
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000015",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000015"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000015",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 9.5164,
+          "_cod_alpha": 90,
+          "_cod_authors": "Thompson, R. M.; Downs, R. T.",
+          "_cod_b": 8.6449,
+          "_cod_beta": 105.033,
+          "_cod_c": 5.1246,
+          "_cod_calcformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_cellformula": "- Ca4 Mg4 O24 Si8 -",
+          "_cod_compoundsource": "DeKalb, New York",
+          "_cod_date": "2023-03-26",
+          "_cod_diffrpressure": 10160000,
+          "_cod_doi": "10.2138/am.2008.2684",
+          "_cod_file": "1000016",
+          "_cod_firstpage": "177",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca Mg O6 Si2 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "186",
+          "_cod_mineral": "Diopside",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Thompson, R. M.; Downs, R. T.\nThe crystal structure of diopside at pressure to 10 GPa Sample: P = 10.16 GPa\nAmerican Mineralogist\n93\n(2008)\n177-186",
+          "_cod_time": "10:11:44",
+          "_cod_title": "The crystal structure of diopside at pressure to 10 GPa Sample: P = 10.16 GPa",
+          "_cod_vol": 407.164,
+          "_cod_volume": "93",
+          "_cod_year": "2008",
+          "chemical_formula_anonymous": "A6B2CD",
+          "chemical_formula_descriptive": "CaMgO6Si2",
+          "chemical_formula_hill": "CaMgO6Si2",
+          "chemical_formula_reduced": "CaMgO6Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.1,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:44Z",
+          "lattice_vectors": [
+            [
+              9.5164,
+              0,
+              0
+            ],
+            [
+              0,
+              8.6449,
+              0
+            ],
+            [
+              -1.32919484420549,
+              0,
+              4.94921874906914
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000016",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000016"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000016",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.063,
+          "_cod_Z": "6",
+          "_cod_Zprime": 0.166667,
+          "_cod_a": 4.7606,
+          "_cod_alpha": 90,
+          "_cod_authors": "Tsirelson, V G; Antipin, M Y; Gerr, R G; Ozerov, R P; Struchkov, Y T",
+          "_cod_b": 4.7606,
+          "_cod_beta": 90,
+          "_cod_c": 12.994,
+          "_cod_calcformula": "- Al2 O3 -",
+          "_cod_cellformula": "- Al12 O18 -",
+          "_cod_chemname": "Aluminium oxide",
+          "_cod_date": "2025-10-31",
+          "_cod_doi": "10.1002/pssa.2210870204",
+          "_cod_file": "1000017",
+          "_cod_firstpage": "425",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Al2 O3 -",
+          "_cod_gamma": 120,
+          "_cod_journal": "Physica Status Solidi, Sectio A: Applied Research",
+          "_cod_lastpage": "433",
+          "_cod_mineral": "Corundum",
+          "_cod_nel": "2",
+          "_cod_sg": "R -3 c :H",
+          "_cod_sgHall": "-R 3 2\"c",
+          "_cod_sgNumber": "167",
+          "_cod_siga": 0.0005,
+          "_cod_sigb": 0.0005,
+          "_cod_sigc": 0.001,
+          "_cod_smiles": "[Al+3].[Al+3].[O-2].[O-2].[O-2]",
+          "_cod_svnrevision": "303120",
+          "_cod_text": "Tsirelson, V G; Antipin, M Y; Gerr, R G; Ozerov, R P; Struchkov, Y T\nRuby structure peculiarities derived from X-ray data. Localization of chromium atoms and electron deformation density\nPhysica Status Solidi, Sectio A: Applied Research\n87\n(1985)\n425-433",
+          "_cod_time": "16:24:54",
+          "_cod_title": "Ruby structure peculiarities derived from X-ray data. Localization of chromium atoms and electron deformation density",
+          "_cod_vol": 255,
+          "_cod_volume": "87",
+          "_cod_year": "1985",
+          "chemical_formula_anonymous": "A3B2",
+          "chemical_formula_descriptive": "Al2O3",
+          "chemical_formula_hill": "Al2O3",
+          "chemical_formula_reduced": "Al2O3",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Al",
+            "O"
+          ],
+          "elements_ratios": [
+            0.4,
+            0.6
+          ],
+          "last_modified": "2025-10-31T16:24:54Z",
+          "lattice_vectors": [
+            [
+              4.7606,
+              0,
+              0
+            ],
+            [
+              -2.3803,
+              4.1228005372562,
+              0
+            ],
+            [
+              0,
+              0,
+              12.994
+            ]
+          ],
+          "nelements": 2,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000017",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000017"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000017",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.094,
+          "_cod_Robs": 0.054,
+          "_cod_Z": "4",
+          "_cod_Zprime": 2,
+          "_cod_a": 9.812,
+          "_cod_acce_code": "SK1554",
+          "_cod_alpha": 82.47,
+          "_cod_authors": "Mondal, Swastik; Mukherjee, Monika; Roy, Arnab; Mukherjee, Debabrata; Helliwell, Madeleine",
+          "_cod_b": 11.141,
+          "_cod_beta": 77.56,
+          "_cod_c": 11.443,
+          "_cod_calcformula": "- C13 H22 O3 -",
+          "_cod_cellformula": "- C52 H88 O12 -",
+          "_cod_celltemp": 293,
+          "_cod_chemname": "(1SR,2RS,5RS,6SR,8RS)-7,7-dimethyltricyclo[6.2.1.0^1,6^]undecane-2,5,6-triol",
+          "_cod_date": "2022-09-14",
+          "_cod_diffrtemp": 293,
+          "_cod_doi": "10.1107/S0108270102010843",
+          "_cod_duplicateof": "2012894",
+          "_cod_file": "1000018",
+          "_cod_firstpage": "o474",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C13 H22 O3 -",
+          "_cod_gamma": 89.46,
+          "_cod_gofref": 1.101,
+          "_cod_issue": "8",
+          "_cod_journal": "Acta Crystallographica, Section C",
+          "_cod_lastpage": "o476",
+          "_cod_nel": "3",
+          "_cod_radType": "MoK\u03b1",
+          "_cod_sg": "P -1",
+          "_cod_sgHall": "-P 1",
+          "_cod_sgNumber": "2",
+          "_cod_siga": 0.002,
+          "_cod_sigalpha": 0.01,
+          "_cod_sigb": 0.001,
+          "_cod_sigbeta": 0.01,
+          "_cod_sigc": 0.002,
+          "_cod_sigcelltemp": 2,
+          "_cod_sigdiffrtemp": 2,
+          "_cod_siggamma": 0.01,
+          "_cod_sigvol": 0.3,
+          "_cod_smiles": "[C@@]123[C@@H](CC[C@H]([C@@]1(C([C@H](CC2)C3)(C)C)O)O)O.[C@]123[C@H](CC[C@@H]([C@]1(C([C@@H](CC2)C3)(C)C)O)O)O",
+          "_cod_svnrevision": "277833",
+          "_cod_text": "Mondal, Swastik; Mukherjee, Monika; Roy, Arnab; Mukherjee, Debabrata; Helliwell, Madeleine\n(1SR,2RS,5RS,6SR,8RS)-7,7-dimethyltricyclo[6.2.1.0^1,6^]undecane-2,5,6-triol: a supramolecular framework built from O-H...O hydrogen bonds\nActa Crystallographica, Section C\n58(8)\n(2002)\no474-o476",
+          "_cod_time": "15:22:10",
+          "_cod_title": "(1SR,2RS,5RS,6SR,8RS)-7,7-dimethyltricyclo[6.2.1.0^1,6^]undecane-2,5,6-triol: a supramolecular framework built from O-H...O hydrogen bonds",
+          "_cod_vol": 1210.8,
+          "_cod_volume": "58",
+          "_cod_wRobs": 0.132,
+          "_cod_wRref": 0.156,
+          "_cod_wavelength": 0.7107,
+          "_cod_year": "2002",
+          "chemical_formula_anonymous": "A22B13C3",
+          "chemical_formula_descriptive": "C13H22O3",
+          "chemical_formula_hill": "C13H22O3",
+          "chemical_formula_reduced": "C13H22O3",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "C",
+            "H",
+            "O"
+          ],
+          "elements_ratios": [
+            0.342105263157895,
+            0.578947368421053,
+            0.0789473684210526
+          ],
+          "last_modified": "2022-09-14T15:22:10Z",
+          "lattice_vectors": [
+            [
+              9.812,
+              0,
+              0
+            ],
+            [
+              0.104999896783656,
+              11.1405051959808,
+              0
+            ],
+            [
+              2.46501811172127,
+              1.47638496097906,
+              11.0763812753029
+            ]
+          ],
+          "nelements": 3,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000018",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000018"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000018",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.126,
+          "_cod_Robs": 0.065,
+          "_cod_Z": "4",
+          "_cod_Zprime": 1,
+          "_cod_a": 12.1194,
+          "_cod_acce_code": "OB1067",
+          "_cod_alpha": 90,
+          "_cod_authors": "Liu, Zhiqiang; Fang, Qi; Yu, Wentao; Xue, Gang; Cao, Duxia; Jiang, Minhua",
+          "_cod_b": 10.2869,
+          "_cod_beta": 115.864,
+          "_cod_c": 12.5048,
+          "_cod_calcformula": "- C17 H17 N O2 -",
+          "_cod_cellformula": "- C68 H68 N4 O8 -",
+          "_cod_celltemp": 293,
+          "_cod_chemname": "3-[4-(dimethylamino)phenyl]-1-(2-hydroxyphenyl)prop-2-en-1-one",
+          "_cod_commonname": "2'-hydroxyl-4''-dimethylaminochalcone",
+          "_cod_date": "2020-10-21",
+          "_cod_diffrtemp": 293,
+          "_cod_doi": "10.1107/S0108270102010247",
+          "_cod_duplicateof": "2012891",
+          "_cod_file": "1000019",
+          "_cod_firstpage": "o445",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C17 H17 N O2 -",
+          "_cod_gamma": 90,
+          "_cod_gofref": 1.005,
+          "_cod_issue": "8",
+          "_cod_journal": "Acta Crystallographica, Section C",
+          "_cod_lastpage": "o446",
+          "_cod_nel": "4",
+          "_cod_radType": "MoK\u03b1",
+          "_cod_sg": "P 1 21/c 1",
+          "_cod_sgHall": "-P 2ybc",
+          "_cod_sgNumber": "14",
+          "_cod_siga": 0.0014,
+          "_cod_sigb": 0.0008,
+          "_cod_sigbeta": 0.008,
+          "_cod_sigc": 0.0016,
+          "_cod_sigcelltemp": 2,
+          "_cod_sigdiffrtemp": 2,
+          "_cod_sigvol": 0.3,
+          "_cod_smiles": "N(c1ccc(/C=C/C(=O)c2c(O)cccc2)cc1)(C)C",
+          "_cod_svnrevision": "176729",
+          "_cod_text": "Liu, Zhiqiang; Fang, Qi; Yu, Wentao; Xue, Gang; Cao, Duxia; Jiang, Minhua\n2'-Hydroxyl-4''-dimethylaminochalcone\nActa Crystallographica, Section C\n58(8)\n(2002)\no445-o446",
+          "_cod_time": "18:00:00",
+          "_cod_title": "2'-Hydroxyl-4''-dimethylaminochalcone",
+          "_cod_vol": 1402.8,
+          "_cod_volume": "58",
+          "_cod_wRobs": 0.178,
+          "_cod_wRref": 0.216,
+          "_cod_wavelength": 0.71073,
+          "_cod_year": "2002",
+          "chemical_formula_anonymous": "A17B17C2D",
+          "chemical_formula_descriptive": "C17H17NO2",
+          "chemical_formula_hill": "C17H17NO2",
+          "chemical_formula_reduced": "C17H17NO2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "C",
+            "H",
+            "N",
+            "O"
+          ],
+          "elements_ratios": [
+            0.459459459459459,
+            0.459459459459459,
+            0.027027027027027,
+            0.0540540540540541
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              12.1194,
+              0,
+              0
+            ],
+            [
+              0,
+              10.2869,
+              0
+            ],
+            [
+              -5.45505010218949,
+              0,
+              11.2522198442175
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000019",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000019"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000019",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.0584,
+          "_cod_Robs": 0.0343,
+          "_cod_Z": "4",
+          "_cod_Zprime": 1,
+          "_cod_a": 8.0566,
+          "_cod_alpha": 90,
+          "_cod_authors": "Otto, Stefanus; Muller, Alfred Johannes",
+          "_cod_b": 17.754,
+          "_cod_beta": 94.2,
+          "_cod_c": 13.083,
+          "_cod_calcformula": "- C12 H30 As2 Cl2 Pt -",
+          "_cod_cellformula": "- C48 H120 As8 Cl8 Pt4 -",
+          "_cod_celltemp": 293,
+          "_cod_chemname": "cis-dichlorobis(triethylarsine)platinum(II)",
+          "_cod_date": "2020-10-21",
+          "_cod_diffrtemp": 293,
+          "_cod_doi": "10.1107/S0108270101016043",
+          "_cod_duplicateof": "2012394",
+          "_cod_file": "1000020",
+          "_cod_firstpage": "1405",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C12 H30 As2 Cl2 Pt -",
+          "_cod_gamma": 90,
+          "_cod_gofref": 0.93,
+          "_cod_issue": "12",
+          "_cod_journal": "Acta Crystallographica, Section C: Crystal Structure Communications",
+          "_cod_lastpage": "1407",
+          "_cod_nel": "5",
+          "_cod_radType": "MoK\u03b1",
+          "_cod_sg": "P 1 21/n 1",
+          "_cod_sgHall": "-P 2yn",
+          "_cod_sgNumber": "14",
+          "_cod_siga": 0.0016,
+          "_cod_sigb": 0.004,
+          "_cod_sigbeta": 0.03,
+          "_cod_sigc": 0.003,
+          "_cod_sigcelltemp": 2,
+          "_cod_sigdiffrtemp": 2,
+          "_cod_sigvol": 0.6,
+          "_cod_svnrevision": "209639",
+          "_cod_text": "Otto, Stefanus; Muller, Alfred Johannes\ncis-Dichlorobis(triethylarsine)platinum(II) and cis-dichlorobis(triethylphosphine)platinum(II)\nActa Crystallographica, Section C: Crystal Structure Communications\n57(12)\n(2001)\n1405-1407",
+          "_cod_time": "18:00:00",
+          "_cod_title": "cis-Dichlorobis(triethylarsine)platinum(II) and cis-dichlorobis(triethylphosphine)platinum(II)",
+          "_cod_vol": 1866.4,
+          "_cod_volume": "57",
+          "_cod_wRobs": 0.0661,
+          "_cod_wRref": 0.072,
+          "_cod_wavelength": 0.71073,
+          "_cod_year": "2001",
+          "chemical_formula_anonymous": "A30B12C2D2E",
+          "chemical_formula_descriptive": "C12H30As2Cl2Pt",
+          "chemical_formula_hill": "C12H30As2Cl2Pt",
+          "chemical_formula_reduced": "As2C12Cl2H30Pt",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "As",
+            "C",
+            "Cl",
+            "H",
+            "Pt"
+          ],
+          "elements_ratios": [
+            0.0425531914893617,
+            0.25531914893617,
+            0.0425531914893617,
+            0.638297872340426,
+            0.0212765957446809
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              8.0566,
+              0,
+              0
+            ],
+            [
+              0,
+              17.754,
+              0
+            ],
+            [
+              -0.958175333020803,
+              0,
+              13.0478653055276
+            ]
+          ],
+          "nelements": 5,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000020",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000020"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000020",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.0641,
+          "_cod_Robs": 0.0499,
+          "_cod_Z": "4",
+          "_cod_Zprime": 1,
+          "_cod_a": 19.967,
+          "_cod_alpha": 90,
+          "_cod_authors": "Gzella, Andrzej; Rozwadowska, Maria D.; Sulima, Agnieszka",
+          "_cod_b": 7.5484,
+          "_cod_beta": 102.967,
+          "_cod_c": 9.1666,
+          "_cod_calcformula": "- C13 H15 N O4 S -",
+          "_cod_cellformula": "- C52 H60 N4 O16 S4 -",
+          "_cod_celltemp": 293,
+          "_cod_chemname": "8,9-Dimethoxy-6,10b-dihydro-1-oxo-5H-thiazolo[2,3-a]isoquinolin-3-one",
+          "_cod_date": "2020-10-21",
+          "_cod_diffrtemp": 293,
+          "_cod_doi": "10.1107/S0108270101016638",
+          "_cod_duplicateof": "2012368",
+          "_cod_file": "1000021",
+          "_cod_firstpage": "1454",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C13 H15 N O4 S -",
+          "_cod_gamma": 90,
+          "_cod_gofref": 1.044,
+          "_cod_issue": "12",
+          "_cod_journal": "Acta Crystallographica, Section C",
+          "_cod_lastpage": "1456",
+          "_cod_nel": "5",
+          "_cod_radType": "CuK\u03b1",
+          "_cod_sg": "P 1 21/c 1",
+          "_cod_sgHall": "-P 2ybc",
+          "_cod_sgNumber": "14",
+          "_cod_siga": 0.002,
+          "_cod_sigb": 0.0009,
+          "_cod_sigbeta": 0.011,
+          "_cod_sigc": 0.0013,
+          "_cod_sigcelltemp": 2,
+          "_cod_sigdiffrtemp": 2,
+          "_cod_sigvol": 0.3,
+          "_cod_svnrevision": "176729",
+          "_cod_text": "Gzella, Andrzej; Rozwadowska, Maria D.; Sulima, Agnieszka\nTwo dihydro-5H-thiazolinono[2,3-a]isoquinoline S-oxides\nActa Crystallographica, Section C\n57(12)\n(2001)\n1454-1456",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Two dihydro-5H-thiazolinono[2,3-a]isoquinoline S-oxides",
+          "_cod_vol": 1346.3,
+          "_cod_volume": "57",
+          "_cod_wRobs": 0.1464,
+          "_cod_wRref": 0.1583,
+          "_cod_wavelength": 1.54178,
+          "_cod_year": "2001",
+          "chemical_formula_anonymous": "A15B13C4DE",
+          "chemical_formula_descriptive": "C13H15NO4S",
+          "chemical_formula_hill": "C13H15NO4S",
+          "chemical_formula_reduced": "C13H15NO4S",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "C",
+            "H",
+            "N",
+            "O",
+            "S"
+          ],
+          "elements_ratios": [
+            0.382352941176471,
+            0.441176470588235,
+            0.0294117647058824,
+            0.117647058823529,
+            0.0294117647058824
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              19.967,
+              0,
+              0
+            ],
+            [
+              0,
+              7.5484,
+              0
+            ],
+            [
+              -2.05689172578463,
+              0,
+              8.93284680202223
+            ]
+          ],
+          "nelements": 5,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000021",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000021"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000021",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.027,
+          "_cod_Z": "4",
+          "_cod_Zprime": 0.5,
+          "_cod_a": 5.38,
+          "_cod_alpha": 90,
+          "_cod_authors": "Beran, A; Libowitzky, E; Armbruster, T",
+          "_cod_b": 5.44,
+          "_cod_beta": 90,
+          "_cod_c": 7.639,
+          "_cod_calcformula": "- Ca O3 Ti -",
+          "_cod_cellformula": "- Ca4 O12 Ti4 -",
+          "_cod_chemname": "Calcium titanate",
+          "_cod_compoundsource": "from Benitoite Gem mine, San Benito Co., California,USA",
+          "_cod_date": "2023-03-26",
+          "_cod_file": "1000022",
+          "_cod_firstpage": "803",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ca O3 Ti -",
+          "_cod_gamma": 90,
+          "_cod_journal": "Canadian Mineralogist",
+          "_cod_lastpage": "809",
+          "_cod_mineral": "Perovskite",
+          "_cod_nel": "3",
+          "_cod_sg": "P b n m",
+          "_cod_sgHall": "-P 2c 2ab",
+          "_cod_sgNumber": "62",
+          "_cod_siga": 0.001,
+          "_cod_sigb": 0.001,
+          "_cod_sigc": 0.001,
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Beran, A; Libowitzky, E; Armbruster, T\nA single-crystal infrared spectroscopic and X-ray diffraction study of untwinned San Benito perovskite containing O H groups\nCanadian Mineralogist\n34\n(1996)\n803-809",
+          "_cod_time": "10:11:44",
+          "_cod_title": "A single-crystal infrared spectroscopic and X-ray diffraction study of untwinned San Benito perovskite containing O H groups",
+          "_cod_vol": 223.6,
+          "_cod_volume": "34",
+          "_cod_year": "1996",
+          "chemical_formula_anonymous": "A3BC",
+          "chemical_formula_descriptive": "CaO3Ti",
+          "chemical_formula_hill": "CaO3Ti",
+          "chemical_formula_reduced": "CaO3Ti",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ca",
+            "O",
+            "Ti"
+          ],
+          "elements_ratios": [
+            0.2,
+            0.6,
+            0.2
+          ],
+          "last_modified": "2023-03-26T10:11:44Z",
+          "lattice_vectors": [
+            [
+              5.38,
+              0,
+              0
+            ],
+            [
+              0,
+              5.44,
+              0
+            ],
+            [
+              0,
+              0,
+              7.639
+            ]
+          ],
+          "nelements": 3,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000022",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000022"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000022",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_a": 7.9296,
+          "_cod_alpha": 107.16,
+          "_cod_b": 9.3275,
+          "_cod_beta": 101.011,
+          "_cod_c": 6.2555,
+          "_cod_calcformula": "- Cu2.9376 Fe4 O24 P6 -",
+          "_cod_cellformula": "- Cu2.9376 Fe4 O24 P6 -",
+          "_cod_date": "2020-10-21",
+          "_cod_file": "1000023",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Cu3 Fe4 O24 P6 -",
+          "_cod_gamma": 105.83,
+          "_cod_method": "powder diffraction",
+          "_cod_nel": "4",
+          "_cod_sg": "P -1",
+          "_cod_sgHall": "-P 1",
+          "_cod_sgNumber": "2",
+          "_cod_siga": 0.0001,
+          "_cod_sigalpha": 0.001,
+          "_cod_sigb": 0.0002,
+          "_cod_sigbeta": 0.001,
+          "_cod_sigc": 0.0001,
+          "_cod_siggamma": 0.001,
+          "_cod_sigvol": 0.01,
+          "_cod_svnrevision": "176435",
+          "_cod_text": "\n\n\n\n()\n",
+          "_cod_time": "18:00:00",
+          "_cod_vol": 406.34,
+          "chemical_formula_anonymous": "A24B6C4D3",
+          "chemical_formula_descriptive": "Cu3Fe4O24P6",
+          "chemical_formula_hill": "Cu3Fe4O24P6",
+          "chemical_formula_reduced": "Cu3Fe4O24P6",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Cu",
+            "Fe",
+            "O",
+            "P"
+          ],
+          "elements_ratios": [
+            0.0810810810810811,
+            0.108108108108108,
+            0.648648648648649,
+            0.162162162162162
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              7.9296,
+              0,
+              0
+            ],
+            [
+              -2.54439300118338,
+              8.97375732374845,
+              0
+            ],
+            [
+              -1.19478455316075,
+              -2.25714925829875,
+              5.71043320136834
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000023",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000023"
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.0247,
+          "_cod_Z": "4",
+          "_cod_Zprime": 0.5,
+          "_cod_a": 8.9928,
+          "_cod_acce_code": "BR1230",
+          "_cod_alpha": 90,
+          "_cod_authors": "Yamane, Hisanori; Sakamoto, Takashi; Kubota, Shun-ichi; Shimada, Masahiko",
+          "_cod_b": 11.2809,
+          "_cod_beta": 90,
+          "_cod_c": 5.48116,
+          "_cod_calcformula": "- Ga Gd3 O6 -",
+          "_cod_cellformula": "- Ga4 Gd12 O24 -",
+          "_cod_celltemp": 293,
+          "_cod_chemname": "trigadolinium galium oxide",
+          "_cod_commonname": "gadolinium gallium oxide",
+          "_cod_date": "2020-10-21",
+          "_cod_diffrtemp": 293,
+          "_cod_doi": "10.1107/S0108270198016096",
+          "_cod_duplicateof": "2008330",
+          "_cod_file": "1000024",
+          "_cod_firstpage": "479",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ga Gd3 O6 -",
+          "_cod_gamma": 90,
+          "_cod_gofall": 1.3236,
+          "_cod_issue": "4",
+          "_cod_journal": "Acta Crystallographica, Section C",
+          "_cod_lastpage": "481",
+          "_cod_nel": "3",
+          "_cod_radType": "CuK\u03b1~1~,\u03b1~2~",
+          "_cod_sg": "C m c 21",
+          "_cod_sgHall": "C 2c -2",
+          "_cod_sgNumber": "36",
+          "_cod_siga": 0.0001,
+          "_cod_sigb": 0.0002,
+          "_cod_sigc": 9e-05,
+          "_cod_sigcelltemp": 2,
+          "_cod_sigdiffrtemp": 2,
+          "_cod_sigvol": 0.02,
+          "_cod_svnrevision": "176435",
+          "_cod_text": "Yamane, Hisanori; Sakamoto, Takashi; Kubota, Shun-ichi; Shimada, Masahiko\nGd~3~GaO~6~ by X-ray powder diffraction\nActa Crystallographica, Section C\n55(4)\n(1999)\n479-481",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Gd~3~GaO~6~ by X-ray powder diffraction",
+          "_cod_vol": 556.05,
+          "_cod_volume": "55",
+          "_cod_year": "1999",
+          "chemical_formula_anonymous": "A6B3C",
+          "chemical_formula_descriptive": "GaGd3O6",
+          "chemical_formula_hill": "GaGd3O6",
+          "chemical_formula_reduced": "GaGd3O6",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ga",
+            "Gd",
+            "O"
+          ],
+          "elements_ratios": [
+            0.1,
+            0.3,
+            0.6
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              8.9928,
+              0,
+              0
+            ],
+            [
+              0,
+              11.2809,
+              0
+            ],
+            [
+              0,
+              0,
+              5.48116
+            ]
+          ],
+          "nelements": 3,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000024",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000024"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000024",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Z": "1",
+          "_cod_Zprime": 0.0416667,
+          "_cod_a": 5.0125,
+          "_cod_alpha": 90,
+          "_cod_authors": "Kisi, E. H.; Buckley, C. E.; Gray, E. M.",
+          "_cod_b": 5.0125,
+          "_cod_beta": 90,
+          "_cod_c": 3.9873,
+          "_cod_calcformula": "- La Ni5 -",
+          "_cod_cellformula": "- La Ni5 -",
+          "_cod_date": "2020-10-21",
+          "_cod_doi": "10.1016/0925-8388(92)90484-Q",
+          "_cod_file": "1000025",
+          "_cod_firstpage": "369",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- La Ni5 -",
+          "_cod_gamma": 120,
+          "_cod_issue": "2",
+          "_cod_journal": "Journal of Alloys and Compounds",
+          "_cod_lastpage": "384",
+          "_cod_nel": "2",
+          "_cod_sg": "P 6/m m m",
+          "_cod_sgHall": "-P 6 2",
+          "_cod_sgNumber": "191",
+          "_cod_siga": 0.0003,
+          "_cod_sigb": 0.0003,
+          "_cod_sigc": 0.0002,
+          "_cod_svnrevision": "174702",
+          "_cod_text": "Kisi, E. H.; Buckley, C. E.; Gray, E. M.\nThe hydrogen activation of LaNi~5~\nJournal of Alloys and Compounds\n185(2)\n(1992)\n369-384",
+          "_cod_time": "18:00:00",
+          "_cod_title": "The hydrogen activation of LaNi~5~",
+          "_cod_vol": 86.76,
+          "_cod_volume": "185",
+          "_cod_year": "1992",
+          "chemical_formula_anonymous": "A5B",
+          "chemical_formula_descriptive": "LaNi5",
+          "chemical_formula_hill": "LaNi5",
+          "chemical_formula_reduced": "LaNi5",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "La",
+            "Ni"
+          ],
+          "elements_ratios": [
+            0.166666666666667,
+            0.833333333333333
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              5.0125,
+              0,
+              0
+            ],
+            [
+              -2.50625,
+              4.3409523364695,
+              0
+            ],
+            [
+              0,
+              0,
+              3.9873
+            ]
+          ],
+          "nelements": 2,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000025",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000025"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000025",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Z": "1",
+          "_cod_Zprime": 0.0416667,
+          "_cod_a": 3.085,
+          "_cod_alpha": 90,
+          "_cod_b": 3.085,
+          "_cod_beta": 90,
+          "_cod_c": 3.523,
+          "_cod_calcformula": "- B2 Mg -",
+          "_cod_cellformula": "- B2 Mg -",
+          "_cod_date": "2020-10-21",
+          "_cod_file": "1000026",
+          "_cod_firstpage": "970",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- B2 Mg -",
+          "_cod_gamma": 120,
+          "_cod_journal": "J. Appl. Chem. USSR, engl. trans.",
+          "_cod_lastpage": "974",
+          "_cod_nel": "2",
+          "_cod_sg": "P 6/m m m",
+          "_cod_sgHall": "-P 6 2",
+          "_cod_sgNumber": "191",
+          "_cod_svnrevision": "176435",
+          "_cod_text": "\n\nJ. Appl. Chem. USSR, engl. trans.\n44\n(1971)\n970-974",
+          "_cod_time": "18:00:00",
+          "_cod_vol": 29.04,
+          "_cod_volume": "44",
+          "_cod_year": "1971",
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "B2Mg",
+          "chemical_formula_hill": "B2Mg",
+          "chemical_formula_reduced": "B2Mg",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "B",
+            "Mg"
+          ],
+          "elements_ratios": [
+            0.666666666666667,
+            0.333333333333333
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              3.085,
+              0,
+              0
+            ],
+            [
+              -1.5425,
+              2.67168837067499,
+              0
+            ],
+            [
+              0,
+              0,
+              3.523
+            ]
+          ],
+          "nelements": 2,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000026",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000026"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000026",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Z": "4",
+          "_cod_Zprime": 0.25,
+          "_cod_a": 5.182,
+          "_cod_alpha": 90,
+          "_cod_authors": "Rentzeperis, P J; Soldatos, C T",
+          "_cod_b": 7.893,
+          "_cod_beta": 90,
+          "_cod_c": 6.506,
+          "_cod_calcformula": "- Mg O4 S -",
+          "_cod_cellformula": "- Mg4 O16 S4 -",
+          "_cod_chemname": "Magnesium sulfate",
+          "_cod_date": "2020-10-21",
+          "_cod_doi": "10.1107/S0365110X58001857",
+          "_cod_file": "1000027",
+          "_cod_firstpage": "686",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Mg O4 S -",
+          "_cod_gamma": 90,
+          "_cod_journal": "Acta Crystallographica (1,1948-23,1967)",
+          "_cod_lastpage": "688",
+          "_cod_nel": "3",
+          "_cod_sg": "C m c m",
+          "_cod_sgHall": "-C 2c 2",
+          "_cod_sgNumber": "63",
+          "_cod_siga": 0.015,
+          "_cod_sigb": 0.002,
+          "_cod_sigc": 0.016,
+          "_cod_smiles": "[Mg+2].S(=O)(=O)([O-])[O-]",
+          "_cod_svnrevision": "130149",
+          "_cod_text": "Rentzeperis, P J; Soldatos, C T\nThe Crystal Structure of the Anhydrous Magnesium Sulfate\nActa Crystallographica (1,1948-23,1967)\n11\n(1958)\n686-688",
+          "_cod_time": "18:00:00",
+          "_cod_title": "The Crystal Structure of the Anhydrous Magnesium Sulfate",
+          "_cod_vol": 266.1,
+          "_cod_volume": "11",
+          "_cod_year": "1958",
+          "chemical_formula_anonymous": "A4BC",
+          "chemical_formula_descriptive": "MgO4S",
+          "chemical_formula_hill": "MgO4S",
+          "chemical_formula_reduced": "MgO4S",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Mg",
+            "O",
+            "S"
+          ],
+          "elements_ratios": [
+            0.166666666666667,
+            0.666666666666667,
+            0.166666666666667
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              5.182,
+              0,
+              0
+            ],
+            [
+              0,
+              7.893,
+              0
+            ],
+            [
+              0,
+              0,
+              6.506
+            ]
+          ],
+          "nelements": 3,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000027",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000027"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000027",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.017,
+          "_cod_Z": "1",
+          "_cod_Zprime": 0.0416667,
+          "_cod_a": 8.875,
+          "_cod_alpha": 90,
+          "_cod_authors": "Hassan, I.; Grundy, H. D.",
+          "_cod_b": 8.875,
+          "_cod_beta": 90,
+          "_cod_c": 8.875,
+          "_cod_calcformula": "- Al6 Cl2 Na8 O24 Si6 -",
+          "_cod_cellformula": "- Al6 Cl2 Na8 O24 Si6 -",
+          "_cod_chemname": "Tetrasodium trialuminium tris(silicate) chloride",
+          "_cod_date": "2020-10-21",
+          "_cod_doi": "10.1107/s0108768184001683",
+          "_cod_file": "1000028",
+          "_cod_firstpage": "6",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Al6 Cl2 Na8 O24 Si6 -",
+          "_cod_gamma": 90,
+          "_cod_issue": "1",
+          "_cod_journal": "Acta Crystallographica, Section B: Structural Science",
+          "_cod_lastpage": "13",
+          "_cod_mineral": "Sodalite",
+          "_cod_nel": "5",
+          "_cod_sg": "P -4 3 n",
+          "_cod_sgHall": "P -4n 2 3",
+          "_cod_sgNumber": "218",
+          "_cod_siga": 0.001,
+          "_cod_sigb": 0.001,
+          "_cod_sigc": 0.001,
+          "_cod_sigvol": 0.1,
+          "_cod_svnrevision": "203897",
+          "_cod_text": "Hassan, I.; Grundy, H. D.\nThe Crystal Structures of Sodalite-Group Minerals\nActa Crystallographica, Section B: Structural Science\n40(1)\n(1984)\n6-13",
+          "_cod_time": "18:00:00",
+          "_cod_title": "The Crystal Structures of Sodalite-Group Minerals",
+          "_cod_vol": 699,
+          "_cod_volume": "40",
+          "_cod_year": "1984",
+          "chemical_formula_anonymous": "A12B4C3D3E",
+          "chemical_formula_descriptive": "Al6Cl2Na8O24Si6",
+          "chemical_formula_hill": "Al6Cl2Na8O24Si6",
+          "chemical_formula_reduced": "Al3ClNa4O12Si3",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Al",
+            "Cl",
+            "Na",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.130434782608696,
+            0.0434782608695652,
+            0.173913043478261,
+            0.521739130434783,
+            0.130434782608696
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              8.875,
+              0,
+              0
+            ],
+            [
+              0,
+              8.875,
+              0
+            ],
+            [
+              0,
+              0,
+              8.875
+            ]
+          ],
+          "nelements": 5,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000028",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000028"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000028",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.059,
+          "_cod_Z": "1",
+          "_cod_Zprime": 0.166667,
+          "_cod_a": 7.82927,
+          "_cod_alpha": 90,
+          "_cod_authors": "Izumi, F.; Mitomo, M.; Bando, Y.",
+          "_cod_b": 7.82927,
+          "_cod_beta": 90,
+          "_cod_c": 5.70757,
+          "_cod_calcformula": "- Al2.76 N15.04 O0.96 Si9.24 Y0.544 -",
+          "_cod_cellformula": "- Al2.76 N15.04 O0.96 Si9.24 Y0.544 -",
+          "_cod_chemname": "Yttrium alumosilicate nitrogen oxide *",
+          "_cod_date": "2020-10-21",
+          "_cod_doi": "10.1007/BF01026991",
+          "_cod_file": "1000029",
+          "_cod_firstpage": "3115",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Al2.7 N15.1 O0.9 Si9.3 Y0.5 -",
+          "_cod_gamma": 120,
+          "_cod_issue": "9",
+          "_cod_journal": "Journal of Materials Science",
+          "_cod_lastpage": "3120",
+          "_cod_nel": "5",
+          "_cod_sg": "P 3 1 c",
+          "_cod_sgHall": "P 3 -2c",
+          "_cod_sgNumber": "159",
+          "_cod_siga": 7e-05,
+          "_cod_sigb": 7e-05,
+          "_cod_sigc": 6e-05,
+          "_cod_svnrevision": "200129",
+          "_cod_text": "Izumi, F.; Mitomo, M.; Bando, Y.\nRietveld refinements for calcium and yttrium containing \u03b1-sialons\nJournal of Materials Science\n19(9)\n(1984)\n3115-3120",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Rietveld refinements for calcium and yttrium containing \u03b1-sialons",
+          "_cod_vol": 303,
+          "_cod_volume": "19",
+          "_cod_year": "1984",
+          "chemical_formula_descriptive": "Al2.7N15.1O0.9Si9.3Y0.5",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Al",
+            "N",
+            "O",
+            "Si",
+            "Y"
+          ],
+          "elements_ratios": [
+            0.0947368421052632,
+            0.529824561403509,
+            0.0315789473684211,
+            0.326315789473684,
+            0.0175438596491228
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              7.82927,
+              0,
+              0
+            ],
+            [
+              -3.914635,
+              6.78034671308739,
+              0
+            ],
+            [
+              0,
+              0,
+              5.70757
+            ]
+          ],
+          "nelements": 5,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000029",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000029"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000029",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.0524,
+          "_cod_Z": "1",
+          "_cod_Zprime": 0.125,
+          "_cod_a": 3.8203,
+          "_cod_alpha": 90,
+          "_cod_authors": "Williams, A; Kwei, G H; Dreele, R B von; Larson, A C; Raistrick, I D; Bish, D L",
+          "_cod_b": 3.88548,
+          "_cod_beta": 90,
+          "_cod_c": 11.68349,
+          "_cod_calcformula": "- Ba2 Cu3 O6.91 Y -",
+          "_cod_cellformula": "- Ba2 Cu3 O6.91 Y -",
+          "_cod_chemname": "Yttrium barium copper oxide (1/2/3/6.9)",
+          "_cod_date": "2020-10-21",
+          "_cod_doi": "10.1103/PhysRevB.37.7960",
+          "_cod_file": "1000030",
+          "_cod_firstpage": "7960",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ba2 Cu3 O6.9 Y -",
+          "_cod_gamma": 90,
+          "_cod_journal": "Physical Review, Serie 3. B - Condensed Matter (18,1978-)",
+          "_cod_lastpage": "7962",
+          "_cod_nel": "4",
+          "_cod_sg": "P m m m",
+          "_cod_sgHall": "-P 2 2",
+          "_cod_sgNumber": "47",
+          "_cod_siga": 8e-05,
+          "_cod_sigb": 0.0001,
+          "_cod_sigc": 0.00023,
+          "_cod_svnrevision": "130149",
+          "_cod_text": "Williams, A; Kwei, G H; Dreele, R B von; Larson, A C; Raistrick, I D; Bish, D L\nJoint X-ray and neutron refinement of the structure of superconducting YBa~2~Cu~3~O~7-x~: precision structure, anisotropic thermal parameters, strain and cation disorder\nPhysical Review, Serie 3. B - Condensed Matter (18,1978-)\n37\n(1988)\n7960-7962",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Joint X-ray and neutron refinement of the structure of superconducting YBa~2~Cu~3~O~7-x~: precision structure, anisotropic thermal parameters, strain and cation disorder",
+          "_cod_vol": 173.4,
+          "_cod_volume": "37",
+          "_cod_year": "1988",
+          "chemical_formula_descriptive": "Ba2Cu3O6.9Y",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ba",
+            "Cu",
+            "O",
+            "Y"
+          ],
+          "elements_ratios": [
+            0.155038759689922,
+            0.232558139534884,
+            0.534883720930233,
+            0.0775193798449612
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              3.8203,
+              0,
+              0
+            ],
+            [
+              0,
+              3.88548,
+              0
+            ],
+            [
+              0,
+              0,
+              11.68349
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000030",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000030"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000030",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Z": "2",
+          "_cod_Zprime": 0.125,
+          "_cod_a": 3.8402,
+          "_cod_alpha": 90,
+          "_cod_authors": "Lightfoot, P.; Pei, S.; Jorgensen, J. D.; Yamada, Y.; Matsumoto, T.; Izumi, F.; Kodama, Y.",
+          "_cod_b": 3.8708,
+          "_cod_beta": 90,
+          "_cod_c": 27.2309,
+          "_cod_calcformula": "- Ba2 Cu4 O8 Y -",
+          "_cod_cellformula": "- Ba4 Cu8 O16 Y2 -",
+          "_cod_celltemp": 295,
+          "_cod_date": "2020-10-21",
+          "_cod_doi": "10.1107/S0108270190011271",
+          "_cod_file": "1000031",
+          "_cod_firstpage": "1143",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ba2 Cu4 O8 Y -",
+          "_cod_gamma": 90,
+          "_cod_journal": "Acta Crystallographica Section C",
+          "_cod_lastpage": "1145",
+          "_cod_nel": "4",
+          "_cod_sg": "A m m m",
+          "_cod_sgHall": "-A 2 2",
+          "_cod_sgNumber": "65",
+          "_cod_siga": 0.0001,
+          "_cod_sigb": 0.0001,
+          "_cod_sigc": 0.0003,
+          "_cod_svnrevision": "198383",
+          "_cod_text": "Lightfoot, P.; Pei, S.; Jorgensen, J. D.; Yamada, Y.; Matsumoto, T.; Izumi, F.; Kodama, Y.\nRedetermination of the structure of the 80 K superconductor YBa~2~Cu~4~O~8~ by time-of-flight neutron powder diffraction\nActa Crystallographica Section C\n47\n(1991)\n1143-1145",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Redetermination of the structure of the 80 K superconductor YBa~2~Cu~4~O~8~ by time-of-flight neutron powder diffraction",
+          "_cod_vol": 404.8,
+          "_cod_volume": "47",
+          "_cod_year": "1991",
+          "chemical_formula_anonymous": "A8B4C2D",
+          "chemical_formula_descriptive": "Ba2Cu4O8Y",
+          "chemical_formula_hill": "Ba2Cu4O8Y",
+          "chemical_formula_reduced": "Ba2Cu4O8Y",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ba",
+            "Cu",
+            "O",
+            "Y"
+          ],
+          "elements_ratios": [
+            0.133333333333333,
+            0.266666666666667,
+            0.533333333333333,
+            0.0666666666666667
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              3.8402,
+              0,
+              0
+            ],
+            [
+              0,
+              3.8708,
+              0
+            ],
+            [
+              0,
+              0,
+              27.2309
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000031",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000031"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000031",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.038,
+          "_cod_Z": "6",
+          "_cod_Zprime": 0.166667,
+          "_cod_a": 4.7605,
+          "_cod_alpha": 90,
+          "_cod_authors": "Lutterotti, L; Scardi, P",
+          "_cod_b": 4.7605,
+          "_cod_beta": 90,
+          "_cod_c": 12.9956,
+          "_cod_calcformula": "- Al2 O3 -",
+          "_cod_cellformula": "- Al12 O18 -",
+          "_cod_chemname": "Aluminium oxide - $-alpha",
+          "_cod_date": "2020-10-21",
+          "_cod_doi": "10.1107/S0021889890002382",
+          "_cod_file": "1000032",
+          "_cod_firstpage": "246",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Al2 O3 -",
+          "_cod_gamma": 120,
+          "_cod_journal": "Journal of Applied Crystallography",
+          "_cod_lastpage": "252",
+          "_cod_mineral": "Corundum",
+          "_cod_nel": "2",
+          "_cod_sg": "R -3 c :H",
+          "_cod_sgHall": "-R 3 2\"c",
+          "_cod_sgNumber": "167",
+          "_cod_siga": 5e-05,
+          "_cod_sigb": 5e-05,
+          "_cod_sigc": 0.0002,
+          "_cod_smiles": "[Al+3].[Al+3].[O-2].[O-2].[O-2]",
+          "_cod_svnrevision": "202022",
+          "_cod_text": "Lutterotti, L; Scardi, P\nSimultaneous structure and size-strain refinement by the Rietveld method\nJournal of Applied Crystallography\n23\n(1990)\n246-252",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Simultaneous structure and size-strain refinement by the Rietveld method",
+          "_cod_vol": 255.1,
+          "_cod_volume": "23",
+          "_cod_year": "1990",
+          "chemical_formula_anonymous": "A3B2",
+          "chemical_formula_descriptive": "Al2O3",
+          "chemical_formula_hill": "Al2O3",
+          "chemical_formula_reduced": "Al2O3",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Al",
+            "O"
+          ],
+          "elements_ratios": [
+            0.4,
+            0.6
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              4.7605,
+              0,
+              0
+            ],
+            [
+              -2.38025,
+              4.12271393471582,
+              0
+            ],
+            [
+              0,
+              0,
+              12.9956
+            ]
+          ],
+          "nelements": 2,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000032",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000032"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000032",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.033,
+          "_cod_Z": "4",
+          "_cod_Zprime": 0.5,
+          "_cod_a": 5.3126,
+          "_cod_alpha": 90,
+          "_cod_authors": "de Villiers, J. P. R.",
+          "_cod_b": 8.8958,
+          "_cod_beta": 90,
+          "_cod_c": 6.4284,
+          "_cod_calcformula": "- C Ba O3 -",
+          "_cod_cellformula": "- C4 Ba4 O12 -",
+          "_cod_chemname": "Barium carbonate",
+          "_cod_compoundsource": "from Anglesarke, Lancashire, England",
+          "_cod_date": "2025-08-18",
+          "_cod_file": "1000033",
+          "_cod_firstpage": "758",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- C Ba O3 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "767",
+          "_cod_mineral": "Witherite",
+          "_cod_nel": "3",
+          "_cod_sg": "P m c n",
+          "_cod_sgHall": "-P 2n 2a",
+          "_cod_sgNumber": "62",
+          "_cod_siga": 0.0005,
+          "_cod_sigb": 0.0005,
+          "_cod_sigc": 0.0005,
+          "_cod_svnrevision": "301771",
+          "_cod_text": "de Villiers, J. P. R.\nCrystal structures of aragonite, strontianite, and witherite\nAmerican Mineralogist\n56\n(1971)\n758-767",
+          "_cod_time": "12:22:43",
+          "_cod_title": "Crystal structures of aragonite, strontianite, and witherite",
+          "_cod_vol": 303.8,
+          "_cod_volume": "56",
+          "_cod_year": "1971",
+          "chemical_formula_anonymous": "A3BC",
+          "chemical_formula_descriptive": "CBaO3",
+          "chemical_formula_hill": "CBaO3",
+          "chemical_formula_reduced": "BaCO3",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ba",
+            "C",
+            "O"
+          ],
+          "elements_ratios": [
+            0.2,
+            0.2,
+            0.6
+          ],
+          "last_modified": "2025-08-18T12:22:43Z",
+          "lattice_vectors": [
+            [
+              5.3126,
+              0,
+              0
+            ],
+            [
+              0,
+              8.8958,
+              0
+            ],
+            [
+              0,
+              0,
+              6.4284
+            ]
+          ],
+          "nelements": 3,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000033",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000033"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000033",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.06,
+          "_cod_Z": "8",
+          "_cod_Zprime": 4,
+          "_cod_a": 8.173,
+          "_cod_alpha": 93.113,
+          "_cod_authors": "Wainwright, J E; Starkey, J",
+          "_cod_b": 12.869,
+          "_cod_beta": 115.913,
+          "_cod_c": 14.165,
+          "_cod_calcformula": "- Al2 Ca O8 Si2 -",
+          "_cod_cellformula": "- Al16 Ca8 O64 Si16 -",
+          "_cod_chemname": "Calcium tecto-dialumodisilicate",
+          "_cod_compoundsource": "from Val Plasmeda, Tyrol, Austria",
+          "_cod_date": "2020-10-21",
+          "_cod_file": "1000034",
+          "_cod_firstpage": "75",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Al2 Ca O8 Si2 -",
+          "_cod_gamma": 91.261,
+          "_cod_journal": "Zeitschrift fuer Kristallographie, Kristallgeometrie, Kristallphysik, Kristallchemie (-144,1977)",
+          "_cod_lastpage": "84",
+          "_cod_mineral": "Anorthite",
+          "_cod_nel": "4",
+          "_cod_sg": "P -1",
+          "_cod_sgHall": "-P 1",
+          "_cod_sgNumber": "2",
+          "_cod_siga": 0.001,
+          "_cod_sigalpha": 0.006,
+          "_cod_sigb": 0.001,
+          "_cod_sigbeta": 0.006,
+          "_cod_sigc": 0.001,
+          "_cod_siggamma": 0.006,
+          "_cod_svnrevision": "130149",
+          "_cod_text": "Wainwright, J E; Starkey, J\nA refinement of the structure of anorthite\nZeitschrift fuer Kristallographie, Kristallgeometrie, Kristallphysik, Kristallchemie (-144,1977)\n133\n(1971)\n75-84",
+          "_cod_time": "18:00:00",
+          "_cod_title": "A refinement of the structure of anorthite",
+          "_cod_vol": 1336.3,
+          "_cod_volume": "133",
+          "_cod_year": "1971",
+          "chemical_formula_anonymous": "A8B2C2D",
+          "chemical_formula_descriptive": "Al2CaO8Si2",
+          "chemical_formula_hill": "Al2CaO8Si2",
+          "chemical_formula_reduced": "Al2CaO8Si2",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Al",
+            "Ca",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.153846153846154,
+            0.0769230769230769,
+            0.615384615384615,
+            0.153846153846154
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              8.173,
+              0,
+              0
+            ],
+            [
+              -0.283205833003938,
+              12.8658833919849,
+              0
+            ],
+            [
+              -6.19018829456719,
+              -0.905681328655523,
+              12.708600835998
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000034",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000034"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000034",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.049,
+          "_cod_Z": "4",
+          "_cod_Zprime": 0.5,
+          "_cod_a": 9.699,
+          "_cod_alpha": 90,
+          "_cod_authors": "Clark, J R; Appleman, D E; Papike, J J",
+          "_cod_b": 8.844,
+          "_cod_beta": 106.97,
+          "_cod_c": 5.272,
+          "_cod_calcformula": "- Al0.342 Ca0.616 Fe0.21 Mg0.902 Na0.09 O6 Si1.82 Ti0.02 -",
+          "_cod_cellformula": "- Al1.368 Ca2.464 Fe0.84 Mg3.608 Na0.36 O24 Si7.28 Ti0.08 -",
+          "_cod_chemname": "Sodium calcium magnesium iron titanium alumosilicate *",
+          "_cod_compoundsource": "from Kakanui, New Zealand",
+          "_cod_date": "2020-10-21",
+          "_cod_file": "1000035",
+          "_cod_firstpage": "31",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Al0.34 Ca0.6 Fe0.2 Mg0.9 Na0.1 O6 Si1.82 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "Mineralogical Society of America: Special Papers",
+          "_cod_lastpage": "50",
+          "_cod_mineral": "Augite",
+          "_cod_nel": "7",
+          "_cod_sg": "C 1 2/c 1",
+          "_cod_sgHall": "-C 2yc",
+          "_cod_sgNumber": "15",
+          "_cod_siga": 0.001,
+          "_cod_sigb": 0.001,
+          "_cod_sigbeta": 0.02,
+          "_cod_sigc": 0.001,
+          "_cod_svnrevision": "176435",
+          "_cod_text": "Clark, J R; Appleman, D E; Papike, J J\nCrystal-Chemical Characterization of Clinopyroxenes based on Eight New Structure Refinements\nMineralogical Society of America: Special Papers\n2\n(1969)\n31-50",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Crystal-Chemical Characterization of Clinopyroxenes based on Eight New Structure Refinements",
+          "_cod_vol": 432.5,
+          "_cod_volume": "2",
+          "_cod_year": "1969",
+          "chemical_formula_descriptive": "Al0.34Ca0.6Fe0.2Mg0.9Na0.1O6Si1.82",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Al",
+            "Ca",
+            "Fe",
+            "Mg",
+            "Na",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.034136546184739,
+            0.0602409638554217,
+            0.0200803212851406,
+            0.0903614457831325,
+            0.0100401606425703,
+            0.602409638554217,
+            0.182730923694779
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              9.699,
+              0,
+              0
+            ],
+            [
+              0,
+              8.844,
+              0
+            ],
+            [
+              -1.53874362029293,
+              0,
+              5.04244504888331
+            ]
+          ],
+          "nelements": 7,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000035",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000035"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000035",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Z": "4",
+          "_cod_Zprime": 1,
+          "_cod_a": 5.33,
+          "_cod_alpha": 90,
+          "_cod_authors": "Hendricks, S B; Jefferson, M E",
+          "_cod_b": 9.18,
+          "_cod_beta": 93.25,
+          "_cod_c": 28.85,
+          "_cod_calcformula": "- H2 Mg3 O12 Si4 -",
+          "_cod_cellformula": "- H8 Mg12 O48 Si16 -",
+          "_cod_chemname": "Trimagnesium dihydrogen phyllo-silicate",
+          "_cod_date": "2020-10-21",
+          "_cod_file": "1000036",
+          "_cod_firstpage": "851",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- H2 Mg3 O12 Si4 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "862",
+          "_cod_mineral": "Vermiculite",
+          "_cod_nel": "4",
+          "_cod_sg": "C 1 c 1",
+          "_cod_sgHall": "C -2yc",
+          "_cod_sgNumber": "9",
+          "_cod_siga": 0.05,
+          "_cod_sigb": 0.05,
+          "_cod_sigbeta": 0.25,
+          "_cod_sigc": 0.1,
+          "_cod_svnrevision": "130149",
+          "_cod_text": "Hendricks, S B; Jefferson, M E\nCrystal structure of vermiculites and mixed vermiculite-chlorites\nAmerican Mineralogist\n23\n(1938)\n851-862",
+          "_cod_time": "18:00:00",
+          "_cod_title": "Crystal structure of vermiculites and mixed vermiculite-chlorites",
+          "_cod_vol": 1409.3,
+          "_cod_volume": "23",
+          "_cod_year": "1938",
+          "chemical_formula_anonymous": "A12B4C3D2",
+          "chemical_formula_descriptive": "H2Mg3O12Si4",
+          "chemical_formula_hill": "H2Mg3O12Si4",
+          "chemical_formula_reduced": "H2Mg3O12Si4",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "H",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.0952380952380952,
+            0.142857142857143,
+            0.571428571428571,
+            0.19047619047619
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              5.33,
+              0,
+              0
+            ],
+            [
+              0,
+              9.18,
+              0
+            ],
+            [
+              -1.63558692120344,
+              0,
+              28.8035996955795
+            ]
+          ],
+          "nelements": 4,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000036",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000036"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000036",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.051,
+          "_cod_Z": "4",
+          "_cod_Zprime": 0.5,
+          "_cod_a": 8.884,
+          "_cod_alpha": 90,
+          "_cod_authors": "Colville, A A; Staudhammer, K",
+          "_cod_b": 5.458,
+          "_cod_beta": 90,
+          "_cod_c": 7.153,
+          "_cod_calcformula": "- Ba O4 S -",
+          "_cod_cellformula": "- Ba4 O16 S4 -",
+          "_cod_chemname": "Barium sulfate",
+          "_cod_compoundsource": "from Cow Green Mine, Teesdale, Durham, England",
+          "_cod_date": "2025-10-31",
+          "_cod_file": "1000037",
+          "_cod_firstpage": "1877",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Ba O4 S -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "1880",
+          "_cod_mineral": "Barite",
+          "_cod_nel": "3",
+          "_cod_sg": "P n m a",
+          "_cod_sgHall": "-P 2ac 2n",
+          "_cod_sgNumber": "62",
+          "_cod_siga": 0.004,
+          "_cod_sigb": 0.003,
+          "_cod_sigc": 0.003,
+          "_cod_smiles": "[Ba+2].S(=O)(=O)([O-])[O-]",
+          "_cod_svnrevision": "303120",
+          "_cod_text": "Colville, A A; Staudhammer, K\nA Refinement of the Structure of Barite\nAmerican Mineralogist\n52\n(1967)\n1877-1880",
+          "_cod_time": "16:25:05",
+          "_cod_title": "A Refinement of the Structure of Barite",
+          "_cod_vol": 346.8,
+          "_cod_volume": "52",
+          "_cod_year": "1967",
+          "chemical_formula_anonymous": "A4BC",
+          "chemical_formula_descriptive": "BaO4S",
+          "chemical_formula_hill": "BaO4S",
+          "chemical_formula_reduced": "BaO4S",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Ba",
+            "O",
+            "S"
+          ],
+          "elements_ratios": [
+            0.166666666666667,
+            0.666666666666667,
+            0.166666666666667
+          ],
+          "last_modified": "2025-10-31T16:25:05Z",
+          "lattice_vectors": [
+            [
+              8.884,
+              0,
+              0
+            ],
+            [
+              0,
+              5.458,
+              0
+            ],
+            [
+              0,
+              0,
+              7.153
+            ]
+          ],
+          "nelements": 3,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000037",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000037"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000037",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.021,
+          "_cod_Z": "2",
+          "_cod_Zprime": 0.25,
+          "_cod_a": 5.345,
+          "_cod_alpha": 90,
+          "_cod_authors": "Brigatti, M F; Davoli, P",
+          "_cod_b": 9.258,
+          "_cod_beta": 100.23,
+          "_cod_c": 10.222,
+          "_cod_calcformula": "- Al Fe H2 K Mg2 O12 Si3 -",
+          "_cod_cellformula": "- Al2 Fe2 H4 K2 Mg4 O24 Si6 -",
+          "_cod_chemname": "Potassium iron dimagnesium phyllo-alumotrisilicate dihydroxide",
+          "_cod_compoundsource": "from Valle de Cervo, Vercelli, Italy",
+          "_cod_date": "2023-03-26",
+          "_cod_file": "1000038",
+          "_cod_firstpage": "305",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Al Fe H2 K Mg2 O12 Si3 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "American Mineralogist",
+          "_cod_lastpage": "313",
+          "_cod_mineral": "Biotite",
+          "_cod_nel": "7",
+          "_cod_sg": "C 1 2/m 1",
+          "_cod_sgHall": "-C 2y",
+          "_cod_sgNumber": "12",
+          "_cod_siga": 0.001,
+          "_cod_sigb": 0.002,
+          "_cod_sigbeta": 0.02,
+          "_cod_sigc": 0.002,
+          "_cod_svnrevision": "282068",
+          "_cod_text": "Brigatti, M F; Davoli, P\nCrystal structure refinement of 1M plutonic biotites\nAmerican Mineralogist\n75\n(1990)\n305-313",
+          "_cod_time": "10:11:44",
+          "_cod_title": "Crystal structure refinement of 1M plutonic biotites",
+          "_cod_vol": 497.8,
+          "_cod_volume": "75",
+          "_cod_year": "1990",
+          "chemical_formula_anonymous": "A12B3C2D2EFG",
+          "chemical_formula_descriptive": "AlFeH2KMg2O12Si3",
+          "chemical_formula_hill": "AlFeH2KMg2O12Si3",
+          "chemical_formula_reduced": "AlFeH2KMg2O12Si3",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Al",
+            "Fe",
+            "H",
+            "K",
+            "Mg",
+            "O",
+            "Si"
+          ],
+          "elements_ratios": [
+            0.0454545454545455,
+            0.0454545454545455,
+            0.0909090909090909,
+            0.0454545454545455,
+            0.0909090909090909,
+            0.545454545454545,
+            0.136363636363636
+          ],
+          "last_modified": "2023-03-26T10:11:44Z",
+          "lattice_vectors": [
+            [
+              5.345,
+              0,
+              0
+            ],
+            [
+              0,
+              9.258,
+              0
+            ],
+            [
+              -1.81542760516865,
+              0,
+              10.059498327968
+            ]
+          ],
+          "nelements": 7,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000038",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000038"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000038",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      },
+      {
+        "attributes": {
+          "_cod_Rall": 0.051,
+          "_cod_Z": "8",
+          "_cod_Zprime": 0.333333,
+          "_cod_a": 15.263,
+          "_cod_alpha": 90,
+          "_cod_authors": "Mondal, P; Jeffery, J W",
+          "_cod_b": 15.263,
+          "_cod_beta": 90,
+          "_cod_c": 15.263,
+          "_cod_calcformula": "- Al6 Ca9 O18 -",
+          "_cod_cellformula": "- Al48 Ca72 O144 -",
+          "_cod_chemname": "Calcium cyclo-hexaaluminate",
+          "_cod_date": "2020-10-21",
+          "_cod_doi": "10.1107/S0567740875003639",
+          "_cod_file": "1000039",
+          "_cod_firstpage": "689",
+          "_cod_flags": "has coordinates",
+          "_cod_formula": "- Al6 Ca9 O18 -",
+          "_cod_gamma": 90,
+          "_cod_journal": "Acta Crystallographica B (24,1968-38,1982)",
+          "_cod_lastpage": "697",
+          "_cod_nel": "3",
+          "_cod_sg": "P a -3",
+          "_cod_sgHall": "-P 2ac 2ab 3",
+          "_cod_sgNumber": "205",
+          "_cod_siga": 0.003,
+          "_cod_sigb": 0.003,
+          "_cod_sigc": 0.003,
+          "_cod_svnrevision": "130149",
+          "_cod_text": "Mondal, P; Jeffery, J W\nThe crystal structure of tricalcium aluminate, Ca~3~ Al~2~ O~6~\nActa Crystallographica B (24,1968-38,1982)\n31\n(1975)\n689-697",
+          "_cod_time": "18:00:00",
+          "_cod_title": "The crystal structure of tricalcium aluminate, Ca~3~ Al~2~ O~6~",
+          "_cod_vol": 3555.7,
+          "_cod_volume": "31",
+          "_cod_year": "1975",
+          "chemical_formula_anonymous": "A6B3C2",
+          "chemical_formula_descriptive": "Al6Ca9O18",
+          "chemical_formula_hill": "Al6Ca9O18",
+          "chemical_formula_reduced": "Al2Ca3O6",
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements": [
+            "Al",
+            "Ca",
+            "O"
+          ],
+          "elements_ratios": [
+            0.181818181818182,
+            0.272727272727273,
+            0.545454545454545
+          ],
+          "last_modified": "2020-10-21T18:00:00Z",
+          "lattice_vectors": [
+            [
+              15.263,
+              0,
+              0
+            ],
+            [
+              0,
+              15.263,
+              0
+            ],
+            [
+              0,
+              0,
+              15.263
+            ]
+          ],
+          "nelements": 3,
+          "nperiodic_dimensions": 3
+        },
+        "id": "1000039",
+        "links": {
+          "self": "https://www.crystallography.net/cod/optimade/v1.1.0/structures/1000039"
+        },
+        "relationships": {
+          "references": {
+            "data": [
+              {
+                "id": "1000039",
+                "type": "references"
+              }
+            ]
+          }
+        },
+        "type": "structures"
+      }
+    ],
+    "links": {
+      "base_url": "https://www.crystallography.net/cod/optimade/v1.1.0/",
+      "first": {
+        "href": "https://www.crystallography.net/cod/optimade/v1.1.0/structures?page_limit=40"
+      },
+      "next": {
+        "href": "https://www.crystallography.net/cod/optimade/v1.1.0/structures?page_offset=40&page_limit=40"
+      }
+    },
+    "meta": {
+      "api_version": "1.1.0",
+      "data_available": 534824,
+      "data_returned": 534824,
+      "implementation": {
+        "issue_tracker": {
+          "href": "https://projects.ibt.lt/repositories/projects/cod-optimade/issues"
+        },
+        "maintainer": {
+          "email": "cod-bugs@ibt.lt"
+        },
+        "name": "Crystallography Open Database",
+        "source_url": "svn+ssh://172.17.170.123/mnt/kakadu-backup/crash-recovery-2025-12-12/svn-repositories/recovered/cod/tags/v0.13.0/cgi-bin/optimade.pl@303284",
+        "version": "1-dev"
+      },
+      "last_id": "1000039",
+      "more_data_available": true,
+      "provider": {
+        "description": "Crystallography Open Database",
+        "name": "Crystallography Open Database",
+        "prefix": "cod"
+      },
+      "query": {
+        "representation": "/structures?page_limit=40"
+      },
+      "schema": "https://schemas.optimade.org/openapi/v1.1.0/optimade.json",
+      "time_stamp": "2026-08-05T15:12:43Z"
+    }
+  },
+  "fetched_at": "2026-08-05T15:12:43.608770+00:00",
+  "url": "https://www.crystallography.net/cod/optimade/v1/structures?page_limit=40",
+  "auth": "none",
+  "family": "chemistry_materials",
+  "description": "COD OPTIMADE crystal structures (open materials structures)"
+}

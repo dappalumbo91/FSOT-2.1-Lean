@@ -1,0 +1,14 @@
+# Matter / antimatter + baryon asymmetry (FSOT fluid-scalar)
+version: '1.0'
+updated: '2026-08-05'
+domain: Matter_Antimatter
+D_eff: 5
+maps_to_lean: [particle, nuclear, cosmological]
+module: vendor/fsot_matter_antimatter.py
+build: scripts/build_matter_antimatter_benchmark.py
+benchmark: data/matter_antimatter_benchmark.json
+research: data/matter_antimatter_research.json
+ontology: fluid_spacetime_omni
+note: >
+  Matter emergence + antimatter conjugate dual + seed η/Ω_b.
+  Not a separate free-parameter antimatter sector.

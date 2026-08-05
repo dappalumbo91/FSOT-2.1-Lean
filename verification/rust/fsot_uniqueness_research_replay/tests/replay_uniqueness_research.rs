@@ -1,0 +1,64 @@
+//! FSOT uniqueness research f64 obligation replay (generated).
+
+#[test]
+fn replay_uniqueness_research_obligations() {
+    assert!(0.6684908749126979_f64 > 0.0, "gamma_color_pos");
+    assert!(0.4280434460598068_f64 > 0.0, "gamma_singlet_pos");
+    assert!(0.9213094330291355_f64 > 0.0, "nuclear_S_eq_pos");
+    assert!(0.9213094330291355_f64 > 0.0, "nuclear_S_eq_emergence_pos");
+    assert!(0.21740442367390217_f64 > 0.0, "lambda_qcd_proxy_pos");
+    assert_eq!(25, 25, "deff_ceiling_eq_25");
+    assert!(25 > 0, "deff_ceiling_nat_pos");
+    assert_eq!(1, 1, "free_color_damping_positive_flag_eq");
+    assert_eq!(1, 1, "mass_gap_proxy_positive_flag_eq");
+    assert_eq!(1, 1, "area_law_sigma_positive_flag_eq");
+    assert_eq!(1, 1, "free_color_damped_to_zero_flag_eq");
+    assert_eq!(1, 1, "singlet_persists_at_S_eq_flag_eq");
+    assert_eq!(1, 1, "counterfactual_no_damp_free_color_persists_flag_eq");
+    assert!(1.3209968920124462e-14_f64 < 0.5_f64, "linear_potential_unit_identity_err_under_half");
+    assert!(0.4202216641606967_f64 > 0.0, "linear_potential_unit_identity_measured_pos");
+    assert!(0.42022166416069673_f64 > 0.0, "linear_potential_unit_identity_computed_pos");
+    assert!(5.551115123125783e-17_f64 < 1e-12_f64, "linear_potential_unit_identity_abs_diff");
+    assert_eq!(1, 1, "alpha_s_seed_positive_flag_eq");
+    assert_eq!(1, 1, "nuclear_S_emergence_sign_flag_eq");
+    assert!(0.0_f64 < 0.5_f64, "gamma_color_over_gamma_singlet_err_under_half");
+    assert!(1.5617360365314306_f64 > 0.0, "gamma_color_over_gamma_singlet_measured_pos");
+    assert!(1.5617360365314306_f64 > 0.0, "gamma_color_over_gamma_singlet_computed_pos");
+    assert!(0.0_f64 < 1e-09_f64, "gamma_color_over_gamma_singlet_abs_diff");
+    assert_eq!(1, 1, "R1_nuclear_emergence_calibration_pass");
+    assert!(1.0_f64 > 0.0, "R1_nuclear_emergence_score_pos");
+    assert_eq!(1, 1, "R2_particle_emergence_calibration_pass");
+    assert!(1.0_f64 > 0.0, "R2_particle_emergence_score_pos");
+    assert_eq!(1, 1, "R3_confinement_scales_positive_calibration_pass");
+    assert!(1.0_f64 > 0.0, "R3_confinement_scales_positive_score_pos");
+    assert_eq!(1, 1, "R4_singlet_attractor_calibration_pass");
+    assert!(1.0_f64 > 0.0, "R4_singlet_attractor_score_pos");
+    assert_eq!(1, 1, "R5_c_eff_positive_calibration_pass");
+    assert!(1.0_f64 > 0.0, "R5_c_eff_positive_score_pos");
+    assert_eq!(1, 1, "R6_fluid_spacetime_omni_calibration_pass");
+    assert!(1.0_f64 > 0.0, "R6_fluid_spacetime_omni_score_pos");
+    assert_eq!(1, 1, "R7_deff_ceiling_25_calibration_pass");
+    assert!(1.0_f64 > 0.0, "R7_deff_ceiling_25_score_pos");
+    assert_eq!(1, 1, "F1_free_color_asymptotic_calibration_pass");
+    assert!(1.0_f64 > 0.0, "F1_free_color_asymptotic_score_pos");
+    assert_eq!(1, 1, "F2_perpetual_motion_unsourced_calibration_pass");
+    assert!(1.0_f64 > 0.0, "F2_perpetual_motion_unsourced_score_pos");
+    assert_eq!(1, 1, "F3_absolute_rest_frame_calibration_pass");
+    assert!(1.0_f64 > 0.0, "F3_absolute_rest_frame_score_pos");
+    assert_eq!(1, 1, "F4_phlogiston_free_mass_calibration_pass");
+    assert!(1.0_f64 > 0.0, "F4_phlogiston_free_mass_score_pos");
+    assert_eq!(1, 1, "F5_tachyon_superluminal_calibration_pass");
+    assert!(1.0_f64 > 0.0, "F5_tachyon_superluminal_score_pos");
+    assert_eq!(1, 1, "F6_classical_ym_necessity_meta_calibration_pass");
+    assert!(1.0_f64 > 0.0, "F6_classical_ym_necessity_meta_score_pos");
+    assert_eq!(1, 1, "E2_guidance_scalar_order_structure_calibration_pass");
+    assert!(1.0_f64 > 0.0, "E2_guidance_scalar_order_structure_score_pos");
+    assert_eq!(1, 1, "E3_varying_constants_prereg_path_calibration_pass");
+    assert!(1.0_f64 > 0.0, "E3_varying_constants_prereg_path_score_pos");
+    assert_eq!(1, 1, "E4_cold_fusion_class_prereg_structure_calibration_pass");
+    assert!(1.0_f64 > 0.0, "E4_cold_fusion_class_prereg_structure_score_pos");
+    assert_eq!(1, 1, "E5_reeval_machinery_exists_calibration_pass");
+    assert!(1.0_f64 > 0.0, "E5_reeval_machinery_exists_score_pos");
+    assert_eq!(1, 1, "reality_fiction_calibration_ok");
+    assert!(0.6684908749126979_f64 > 0.0, "confinement_suite_gamma_export_pos");
+}

@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-08-05T15:24:05.428244+00:00",
+  "policy": "open_science_only_no_credentials",
+  "results": {
+    "nufit_neutrino": {
+      "status": "ok",
+      "domain": "NuFIT_Neutrino_Open",
+      "records": 10,
+      "pooled_median_error_pct": 0.009504
+    },
+    "gwtc_catalog": {
+      "status": "ok",
+      "domain": "GWTC_Catalog_Open",
+      "records": 841,
+      "pooled_median_error_pct": 0.008488
+    },
+    "nuclear_endf_public": {
+      "status": "ok",
+      "domain": "Nuclear_IAEA_Open",
+      "records": 81,
+      "pooled_median_error_pct": 0.092131
+    },
+    "nist_asd_spectroscopy": {
+      "status": "ok",
+      "domain": "NIST_ASD_Spectroscopy_Open",
+      "records": 13,
+      "pooled_median_error_pct": 0.073582
+    },
+    "owid_epidemiology": {
+      "status": "ok",
+      "domain": "OWID_Epidemiology_Open",
+      "records": 159,
+      "pooled_median_error_pct": 0.022236
+    },
+    "era5_climate_open": {
+      "status": "ok",
+      "domain": "NCEI_Climate_Open",
+      "records": 81,
+      "pooled_median_error_pct": 0.0291
+    },
+    "lmfdb_math": {
+      "status": "ok",
+      "domain": "LMFDB_OEIS_Math_Open",
+      "records": 829,
+      "pooled_median_error_pct": 0.014767
+    },
+    "chembl_deep": {
+      "status": "ok",
+      "domain": "ChEMBL_Deep_Open",
+      "records": 55,
+      "pooled_median_error_pct": 0.040788
+    },
+    "exoplanet_spectra": {
+      "status": "ok",
+      "domain": "Exoplanet_Archive_Depth_Open",
+      "records": 709,
+      "pooled_median_error_pct": 0.023015
+    }
+  },
+  "rebuild": [
+    "python scripts/audit_all_benchmark_margins.py",
+    "python scripts/build_fsot_atlas_sqlite.py"
+  ]
+}

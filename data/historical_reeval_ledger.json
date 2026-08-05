@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-08-05T20:30:15.800874+00:00",
+  "version": "1.0",
+  "title": "Historical re-evaluation ledger",
+  "policy": "Topics dismissed or 'disproved' before residual closure + multiprover + dampening may be reconsidered under those tools. Entry here is NOT endorsement.",
+  "status_values": {
+    "REEVAL_OPEN": "Eligible for honest re-test; not asserted true",
+    "FICTION_DAMPED": "Fails load-bearing under FSOT (known fiction calibration)",
+    "REALITY_HOLDS": "Settled structure still holds"
+  },
+  "entries": [
+    {
+      "id": "E2_guidance_scalar_order_structure",
+      "title": "Guidance / order-parameter structure (pilot-wave class, re-eval only)",
+      "status": "REEVAL_OPEN",
+      "detail": "S_QM=0.955506 C_FACTOR=0.2876 \u2014 structure only, not endorsement",
+      "formula": "domain_scalar(Quantum_Mechanics) and C_FACTOR structure present",
+      "pass_calibration": true
+    },
+    {
+      "id": "E3_varying_constants_prereg_path",
+      "title": "Varying-constants class (prereg/contested path only)",
+      "status": "REEVAL_OPEN",
+      "detail": "Seeds fixed; re-eval only via prereg kill criteria \u2014 no free retune",
+      "formula": "seed lock holds; varying-constant claims must use prereg path",
+      "pass_calibration": true
+    },
+    {
+      "id": "E4_cold_fusion_class_prereg_structure",
+      "title": "Cold-fusion class (prereg structure only \u2014 not proven)",
+      "status": "REEVAL_OPEN",
+      "detail": "POOF/A_BLEED/SUCTION structure live; CF not asserted true",
+      "formula": "bleed/poof stack present \u21d2 re-eval via prereg only",
+      "pass_calibration": true
+    },
+    {
+      "id": "E5_reeval_machinery_exists",
+      "title": "Re-evaluation machinery exists (residual + dampening + seeds)",
+      "status": "REEVAL_OPEN",
+      "detail": "Dampening + domain scalars + seeds enable post-hoc re-eval of early disproofs",
+      "formula": "gamma_color>0 and |S_nuc|>0 and K>0",
+      "pass_calibration": true
+    }
+  ],
+  "not_on_this_ledger": [
+    {
+      "id": "fluid_spacetime_omni",
+      "note": "NOT re-eval \u2014 known reality R6/R7. FSOT is the fluid across all scales."
+    },
+    {
+      "id": "absolute_rest_frame",
+      "note": "NOT re-eval \u2014 known fiction F3. Damps. Do not conflate with the fluid."
+    }
+  ],
+  "future_candidates_not_yet_cased": [
+    {
+      "id": "X1_modified_newtonian_dynamics_class",
+      "note": "Re-eval only under contested cosmology prereg \u2014 not free fit"
+    },
+    {
+      "id": "X2_hidden_variable_completions",
+      "note": "Structure tests only; no claim of full completion"
+    }
+  ],
+  "calibration_artifact": "data/reality_fiction_calibration.json"
+}

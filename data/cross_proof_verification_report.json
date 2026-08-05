@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T13:17:15.645934+00:00",
+  "generated_at": "2026-08-05T19:48:16.654156+00:00",
   "tier": "91_seven_way_bare_metal",
   "connective_spine": {
     "obligation_count": 24,
@@ -8,11 +8,11 @@
     }
   },
   "full_formal_spine": {
-    "obligation_count": 2433,
-    "provable_count": 2379,
-    "atomic_provable_count": 1906,
+    "obligation_count": 2573,
+    "provable_count": 2519,
+    "atomic_provable_count": 2011,
     "structural_bundle_excluded_count": 54,
-    "provable_bundle_conj_count": 473,
+    "provable_bundle_conj_count": 508,
     "margin_violation_count": 0,
     "margin_violation_ids": [],
     "structural_bundle_excluded_ids": [
@@ -71,18 +71,18 @@
       "cross_proof_connective_spine_bundle",
       "cross_proof_full_formal_spine_bundle"
     ],
-    "modules_exported": 520,
+    "modules_exported": 555,
     "by_tier": {
-      "priors": 1972,
+      "priors": 2112,
       "extended": 184,
       "bounds": 277
     },
     "by_kind": {
-      "nat_pos": 595,
+      "nat_pos": 630,
       "r_lt_lit_pure": 324,
-      "bundle_conj": 527,
+      "bundle_conj": 562,
       "lt_lit": 229,
-      "lt_half": 165,
+      "lt_half": 235,
       "gt_lit": 135,
       "eq_nat": 26,
       "nat_le_sym": 30,
@@ -131,29 +131,29 @@
   },
   "scientific_catalog_spine": {
     "purpose": "multi_prover_reproof_of_domain_residual_gates",
-    "obligation_count": 2040,
-    "domain_count": 432,
+    "obligation_count": 2212,
+    "domain_count": 470,
     "by_claim": {
       "seed_identity": 5,
       "seed_positive": 5,
-      "catalog_nonempty": 431,
-      "empirical_pooled_median_gate": 778,
-      "empirical_max_scalar_gate": 389,
-      "green_gate_pass_flag": 432
+      "catalog_nonempty": 469,
+      "empirical_pooled_median_gate": 842,
+      "empirical_max_scalar_gate": 421,
+      "green_gate_pass_flag": 470
     },
     "python_decimal": {
       "status": "passed",
-      "passed": 2040,
-      "total": 2040
+      "passed": 2212,
+      "total": 2212
     },
-    "coq_chunks": 17,
-    "isabelle_chunks": 17,
+    "coq_chunks": 19,
+    "isabelle_chunks": 19,
     "lean_module": "FSOT/Formal/ScientificCatalogSpine.lean",
     "smt_bulk_bounds": {
       "status": "passed",
       "overall_ok": true,
       "solver": "z3",
-      "checked": 2040,
+      "checked": 2212,
       "report": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\smt_catalog_bounds_report.json"
     }
   },
@@ -166,7 +166,7 @@
       "total": 288
     },
     "focused_report": {
-      "generated_at": "2026-08-05T12:58:05.573962+00:00",
+      "generated_at": "2026-08-05T19:36:54.571564+00:00",
       "spine": "gr_sm_ckm",
       "obligation_count": 288,
       "python_decimal": {
@@ -176,7 +176,7 @@
       },
       "rust_f64_replay": {
         "status": "passed",
-        "detail_tail": " filtered out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_gr_sm_ckm_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\nCompiling fsot_gr_sm_ckm_replay v0.1.0 (C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\rust\\fsot_gr_sm_ckm_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.32s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\fsot_gr_sm_ckm_replay-d677d0f07c4d6e99.exe)\n     Running tests\\replay_gr_sm_ckm.rs (verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\replay_gr_sm_ckm-a0916c3ae2df9ec1.exe)\n   Doc-tests fsot_gr_sm_ckm_replay\n"
+        "detail_tail": " filtered out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_gr_sm_ckm_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\nCompiling fsot_gr_sm_ckm_replay v0.1.0 (C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\rust\\fsot_gr_sm_ckm_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.33s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\fsot_gr_sm_ckm_replay-d677d0f07c4d6e99.exe)\n     Running tests\\replay_gr_sm_ckm.rs (verification\\rust\\fsot_gr_sm_ckm_replay\\target\\debug\\deps\\replay_gr_sm_ckm-a0916c3ae2df9ec1.exe)\n   Doc-tests fsot_gr_sm_ckm_replay\n"
       },
       "smt_z3": {
         "status": "passed",
@@ -418,21 +418,21 @@
           "statement": "1 < 1.722776467449"
         }
       ],
-      "full_formal_passed": 2379,
-      "full_formal_total": 2379,
-      "scientific_catalog_passed": 2040,
-      "scientific_catalog_total": 2040,
+      "full_formal_passed": 2519,
+      "full_formal_total": 2519,
+      "scientific_catalog_passed": 2212,
+      "scientific_catalog_total": 2212,
       "gr_sm_ckm_passed": 288,
       "gr_sm_ckm_total": 288
     },
     "smt_catalog_bounds": {
-      "generated_at": "2026-08-05T12:58:01.518803+00:00",
+      "generated_at": "2026-08-05T19:36:49.684756+00:00",
       "purpose": "SMT bulk numerical bounds on scientific catalog residual gates",
       "obligation_source": "verification/obligations/scientific_catalog_spine.json",
-      "obligation_count": 2040,
-      "domain_count": 432,
+      "obligation_count": 2212,
+      "domain_count": 470,
       "smt2_bundle": "verification/smt/scientific_catalog_bounds.smt2",
-      "smt2_assert_count": 2040,
+      "smt2_assert_count": 2212,
       "solver": "z3",
       "external_solver": {
         "status": "passed",
@@ -442,18 +442,18 @@
       },
       "python_decimal": {
         "status": "passed",
-        "checked": 2040,
+        "checked": 2212,
         "failed_ids": [],
         "failed_count": 0
       },
-      "checked": 2040,
+      "checked": 2212,
       "status": "passed",
       "overall_ok": true,
       "role": "Bulk continuous residual / margin checks for the catalog atlas. Does not replace Lean master definitions or interactive multi-prover lemmas.",
       "note": "Install z3 or cvc5 on PATH for external SMT; otherwise python_decimal_fallback still machine-checks every exported catalog obligation."
     },
     "tla_domain_routing": {
-      "generated_at": "2026-08-05T12:58:02.592432+00:00",
+      "generated_at": "2026-08-05T19:36:50.761184+00:00",
       "purpose": "TLA+ model of domain-routing / preregistered-fold state flow",
       "spec": "verification/tla/FSOTDomainRouting.tla",
       "python_explorer": {
@@ -469,7 +469,7 @@
         "status": "passed",
         "engine": "tlc_jar",
         "returncode": 0,
-        "stdout_tail": "8035996782750878\\Integers.tla (jar:file:/C:/Users/damia/Desktop/FSOT-2.1-Lean/tools/tla/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Integers\nSemantic processing of module TLCExt\nSemantic processing of module _TLCTrace\nSemantic processing of module FSOTDomainRouting\nLinting of module TLCExt\nLinting of module _TLCTrace\nLinting of module FSOTDomainRouting\nStarting... (2026-08-05 08:58:01)\nComputing initial states...\nFinished computing initial states: 1 distinct state generated at 2026-08-05 08:58:02.\nModel checking completed. No error has been found.\n  Estimates of the probability that TLC did not check all reachable states\n  because two distinct states had the same fingerprint:\n  calculated (optimistic):  val = 1.0E-18\n20 states generated, 19 distinct states found, 0 states left on queue.\nThe depth of the complete state graph search is 19.\nThe average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).\nFinished in 00s at (2026-08-05 08:58:02)\n"
+        "stdout_tail": "6740541017578762\\Integers.tla (jar:file:/C:/Users/damia/Desktop/FSOT-2.1-Lean/tools/tla/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Integers\nSemantic processing of module TLCExt\nSemantic processing of module _TLCTrace\nSemantic processing of module FSOTDomainRouting\nLinting of module TLCExt\nLinting of module _TLCTrace\nLinting of module FSOTDomainRouting\nStarting... (2026-08-05 15:36:50)\nComputing initial states...\nFinished computing initial states: 1 distinct state generated at 2026-08-05 15:36:50.\nModel checking completed. No error has been found.\n  Estimates of the probability that TLC did not check all reachable states\n  because two distinct states had the same fingerprint:\n  calculated (optimistic):  val = 1.0E-18\n20 states generated, 19 distinct states found, 0 states left on queue.\nThe depth of the complete state graph search is 19.\nThe average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).\nFinished in 00s at (2026-08-05 15:36:50)\n"
       },
       "status": "passed",
       "overall_ok": true,
@@ -486,8 +486,8 @@
     "coq": {
       "status": "passed",
       "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqc.exe",
-      "chunk_count": 45,
-      "chunks_passed": 45,
+      "chunk_count": 48,
+      "chunks_passed": 48,
       "chunks": [
         {
           "file": "ConnectiveSpine.v",
@@ -511,7 +511,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "ault]\nFile \".\\StructuralProofSpine.v\", line 1352, characters 0-154:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 1352, characters 0-154:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 1352, characters 0-154:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 7532, characters 0-58:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 7532, characters 0-58:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 7544, characters 0-91:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 7544, characters 0-91:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "ault]\nFile \".\\StructuralProofSpine.v\", line 1392, characters 0-154:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 1392, characters 0-154:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 1392, characters 0-154:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 8092, characters 0-58:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 8092, characters 0-58:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 8104, characters 0-91:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\StructuralProofSpine.v\", line 8104, characters 0-91:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "TranscendentalBoundsNative.v",
@@ -601,7 +601,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_01.v\", line 162, characters 0-51:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_01.v\", line 252, characters 0-60:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_01.v\", line 171, characters 0-51:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_01.v\", line 270, characters 0-60:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_02.v",
@@ -637,7 +637,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_04.v\", line 75, characters 0-72:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_04.v\", line 99, characters 0-68:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_04.v\", line 138, characters 0-72:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_05.v",
@@ -649,7 +649,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 228, characters 0-56:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 231, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 231, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 234, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 234, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 237, characters 0-61:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 237, characters 0-61:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_05.v\", line 84, characters 0-75:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_06.v",
@@ -661,7 +661,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": ""
+          "stderr": "File \".\\FullFormalSpine_06.v\", line 9, characters 0-56:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_06.v\", line 12, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_06.v\", line 12, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_06.v\", line 15, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_06.v\", line 15, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_06.v\", line 18, characters 0-61:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_06.v\", line 18, characters 0-61:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_07.v",
@@ -673,7 +673,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 141, characters 0-73:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 141, characters 0-73:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 279, characters 0-69:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 282, characters 0-80:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 282, characters 0-80:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 285, characters 0-81:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 285, characters 0-81:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_07.v\", line 273, characters 0-60:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 276, characters 0-73:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 276, characters 0-73:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_08.v",
@@ -685,7 +685,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_08.v\", line 213, characters 0-50:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_08.v\", line 132, characters 0-69:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_08.v\", line 135, characters 0-80:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_08.v\", line 135, characters 0-80:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_08.v\", line 138, characters 0-81:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_08.v\", line 138, characters 0-81:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_09.v",
@@ -697,7 +697,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_09.v\", line 102, characters 0-66:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_09.v\", line 102, characters 0-66:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_09.v\", line 66, characters 0-50:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_09.v\", line 264, characters 0-66:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_09.v\", line 264, characters 0-66:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_10.v",
@@ -721,7 +721,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_11.v\", line 84, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": ""
         },
         {
           "file": "FullFormalSpine_12.v",
@@ -733,7 +733,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_12.v\", line 120, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_12.v\", line 123, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_12.v\", line 123, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_12.v\", line 234, characters 0-64:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_12.v\", line 45, characters 0-62:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_13.v",
@@ -745,7 +745,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\FullFormalSpine_13.v\", line 240, characters 0-53:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_13.v\", line 246, characters 0-55:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_13.v\", line 246, characters 0-55:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\FullFormalSpine_13.v\", line 99, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_13.v\", line 102, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_13.v\", line 102, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_13.v\", line 213, characters 0-64:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_14.v",
@@ -757,7 +757,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": ""
+          "stderr": "File \".\\FullFormalSpine_14.v\", line 219, characters 0-53:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_14.v\", line 225, characters 0-55:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_14.v\", line 225, characters 0-55:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "FullFormalSpine_15.v",
@@ -820,6 +820,18 @@
           "stderr": ""
         },
         {
+          "file": "FullFormalSpine_20.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\coq\\FullFormalSpine_20.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
           "file": "ScientificCatalogSpine_00.v",
           "status": "passed",
           "returncode": 0,
@@ -865,7 +877,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_03.v\", line 467, characters 0-57:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": ""
         },
         {
           "file": "ScientificCatalogSpine_04.v",
@@ -877,7 +889,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": ""
+          "stderr": "File \".\\ScientificCatalogSpine_04.v\", line 27, characters 0-57:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "ScientificCatalogSpine_05.v",
@@ -889,7 +901,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_05.v\", line 367, characters 0-67:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\ScientificCatalogSpine_05.v\", line 427, characters 0-67:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "ScientificCatalogSpine_06.v",
@@ -901,7 +913,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_06.v\", line 147, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": "File \".\\ScientificCatalogSpine_06.v\", line 207, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "ScientificCatalogSpine_07.v",
@@ -925,7 +937,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": ""
+          "stderr": "File \".\\ScientificCatalogSpine_08.v\", line 7, characters 0-63:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "ScientificCatalogSpine_09.v",
@@ -949,7 +961,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_10.v\", line 247, characters 0-67:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": ""
         },
         {
           "file": "ScientificCatalogSpine_11.v",
@@ -961,7 +973,7 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": ""
+          "stderr": "File \".\\ScientificCatalogSpine_11.v\", line 267, characters 0-67:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
         },
         {
           "file": "ScientificCatalogSpine_12.v",
@@ -1021,27 +1033,51 @@
             "returncode": 0,
             "status": "passed"
           },
-          "stderr": "File \".\\ScientificCatalogSpine_16.v\", line 191, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\ScientificCatalogSpine_16.v\", line 199, characters 0-78:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+          "stderr": ""
+        },
+        {
+          "file": "ScientificCatalogSpine_17.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\coq\\ScientificCatalogSpine_17.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\ScientificCatalogSpine_17.v\", line 339, characters 0-70:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\ScientificCatalogSpine_17.v\", line 347, characters 0-78:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "ScientificCatalogSpine_18.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\coq\\ScientificCatalogSpine_18.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
         }
       ]
     },
     "cross_refinement": {
       "status": "passed",
       "provable_triangulated_ok": null,
-      "provable_total": 2379,
+      "provable_total": 2519,
       "margin_violations_confirmed": 0
     },
     "isabelle": {
       "status": "passed",
       "tool": "C:\\Users\\damia\\Desktop\\Isabelle2025-2\\bin\\isabelle",
       "session": "FSOT_CrossProof",
-      "theory_count": 42,
+      "theory_count": 45,
       "connective_theories": 1,
-      "formal_theory_count": 20,
+      "formal_theory_count": 21,
       "obligation_scope": "connective_and_full_formal",
-      "provable_obligations": 2379,
-      "chunk_count": 42,
-      "chunks_passed": 42,
+      "provable_obligations": 2519,
+      "chunk_count": 45,
+      "chunks_passed": 45,
       "monolithic_session_status": "passed",
       "chunks": [
         {
@@ -1055,7 +1091,7 @@
           "theory": "StructuralProofSpine",
           "file": "StructuralProofSpine.thy",
           "scope": "structural_proof",
-          "obligation_count": 471,
+          "obligation_count": 505,
           "status": "passed"
         },
         {
@@ -1216,7 +1252,14 @@
           "theory": "FullFormalSpine_19",
           "file": "FullFormalSpine_19.thy",
           "scope": "full_formal",
-          "obligation_count": 6,
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_20",
+          "file": "FullFormalSpine_20.thy",
+          "scope": "full_formal",
+          "obligation_count": 11,
           "status": "passed"
         },
         {
@@ -1337,21 +1380,35 @@
           "scope": "scientific_catalog",
           "obligation_count": 120,
           "status": "passed"
+        },
+        {
+          "theory": "ScientificCatalogSpine_17",
+          "file": "ScientificCatalogSpine_17.thy",
+          "scope": "scientific_catalog",
+          "obligation_count": 120,
+          "status": "passed"
+        },
+        {
+          "theory": "ScientificCatalogSpine_18",
+          "file": "ScientificCatalogSpine_18.thy",
+          "scope": "scientific_catalog",
+          "obligation_count": 52,
+          "status": "passed"
         }
       ],
       "build": {
         "session": "FSOT_CrossProof",
         "status": "passed",
         "returncode": 0,
-        "stdout_tail": "0:00:03 elapsed time\n",
-        "stderr": "0:00:03 elapsed time\n"
+        "stdout_tail": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:01:05 elapsed time)\n0:01:11 elapsed time\n",
+        "stderr": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:01:05 elapsed time)\n0:01:11 elapsed time\n"
       }
     },
     "isabelle_refinement": {
       "status": "passed",
       "provable_triangulated_ok": null,
-      "provable_total": 2379,
-      "isabelle_lemmas_indexed": 1906
+      "provable_total": 2519,
+      "isabelle_lemmas_indexed": 2011
     },
     "transcendental_bounds_gap": {
       "exported_float_obligations_from_bounds": 277,
@@ -1363,8 +1420,8 @@
       "status": "passed",
       "tool": "C:\\Users\\damia\\.cargo\\bin\\cargo.EXE",
       "crate": "fsot_obligation_replay",
-      "obligation_count": 1998,
-      "formal_count": 1906,
+      "obligation_count": 2103,
+      "formal_count": 2011,
       "transcendental_count": 68,
       "test_file": "replay_all_obligations.rs",
       "returncode": 0,
@@ -1373,8 +1430,8 @@
     },
     "rust_refinement": {
       "status": "passed",
-      "total_exported_to_rust": 1998,
-      "formal_python_f64_ok": 1906,
+      "total_exported_to_rust": 2103,
+      "formal_python_f64_ok": 2011,
       "transcendental_python_f64_ok": 68
     },
     "rust_lean_bridge_parity": {
@@ -1438,7 +1495,7 @@
       "stderr_tail": "ESP32 FSOT SERIAL HARNESS (Tier 91)\n  port: COM3\n  flash: skipped\n  serial: passed boot=0.09928895626861721 hardware_boot=ok\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\esp32_fsot_serial_harness_report.json\n"
     },
     "hardware_bare_metal": {
-      "generated_at": "2026-08-05T13:17:13.392296+00:00",
+      "generated_at": "2026-08-05T19:48:14.047344+00:00",
       "tier": "91_hardware_processor_ram_cache_interconnect_bare_metal",
       "purpose": "Executable processor/RAM/C-pack FSOT laws on host + QEMU bare-metal; cache/interconnect residual panels built separately.",
       "cargo_tests": {
@@ -1528,8 +1585,8 @@
   "overall_ok": true,
   "github_ready": true,
   "github_ready_note": "Formal numeric spine + scientific catalog re-proof + GR/SM/CKM multi-prover + SMT bulk + TLA+ routing + QEMU bare-metal verified; 54 structural bundle_conj rows excluded by design; ESP32 hardware is optional unless --require-esp32.",
-  "full_triangulation": false,
-  "four_way_verification": false,
+  "full_triangulation": true,
+  "four_way_verification": true,
   "five_way_runtime": true,
   "six_way_formal_executable": true,
   "seven_way_bare_metal": true,
@@ -1537,6 +1594,5 @@
   "esp32_skipped": false,
   "esp32_serial_ok": true,
   "esp32_build_ok": true,
-  "note": "Tier 91: Lean master integrator + Coq/Isabelle/F*/Rust triangulation + scientific catalog residual re-proof + SMT bulk numerical bounds + TLA+ routing flow + QEMU serial/disk boot + ESP32 RF observer (optional).",
-  "patch_note": "Coq TranscendentalBoundsNative compile order; coqchk soft for Interval; F* prefers local tools over broken I: PATH binary"
+  "note": "Tier 91: Lean master integrator + Coq/Isabelle/F*/Rust triangulation + scientific catalog residual re-proof + SMT bulk numerical bounds + TLA+ routing flow + QEMU serial/disk boot + ESP32 RF observer (optional)."
 }

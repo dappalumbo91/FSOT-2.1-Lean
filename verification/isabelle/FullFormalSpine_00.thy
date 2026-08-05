@@ -1,4 +1,4 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 1/20 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 1/21 (generated). *)
 theory FullFormalSpine_00
 imports Complex_Main
 begin
@@ -76,6 +76,15 @@ lemma ai_galactic_orbital_bridge_observable_count_pos: "0 < (48 :: nat)"
   by eval
 
 lemma ai_galactic_orbital_bridge_median_error_under_half_pct: "(0.005168558627177688 :: real) < (0.5 :: real)"
+  by eval
+
+lemma alphafold_batch_meta_open_pooled_median_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
+  by eval
+
+lemma alphafold_batch_meta_open_headline_median_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
+  by eval
+
+lemma alphafold_batch_meta_open_observable_count_pos: "0 < (182 :: nat)"
   by eval
 
 lemma alternate_base_mathematics_explorer_panel_observable_count_pos: "0 < (56 :: nat)"
@@ -292,15 +301,6 @@ lemma thalamus_spin_counts_sum: "(72 :: nat) = (72 :: nat)"
   by eval
 
 lemma astrocyte_syncytium_spin_counts_sum: "(72 :: nat) = (72 :: nat)"
-  by eval
-
-lemma oligodendrocyte_myelination_spin_counts_sum: "(72 :: nat) = (72 :: nat)"
-  by eval
-
-lemma amygdala_spin_counts_sum: "(72 :: nat) = (72 :: nat)"
-  by eval
-
-lemma microglial_surveillance_spin_counts_sum: "(72 :: nat) = (72 :: nat)"
   by eval
 
 end

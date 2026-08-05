@@ -92,8 +92,12 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "Crystallography Open Database / open materials structures",
         "open_url": "https://www.crystallography.net/cod/",
         "auth": "none",
-        "status": "gap",
-        "note": "Prefer COD over Materials Project (key). Residual-gate structure/properties with FSOT only.",
+        "status": "covered",
+        "note": (
+            "Covered: COD OPTIMADE residual panel (open MP substitute). "
+            "data/cod_optimade_structures_benchmark.json via "
+            "scripts/build_open_credential_replacements.py."
+        ),
     },
     {
         "id": "nuclear_endf_public",
@@ -101,8 +105,11 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "ENDF/B or IAEA public nuclear data evaluations",
         "open_url": "https://www-nds.iaea.org/",
         "auth": "none",
-        "status": "gap",
-        "note": "Evaluated nuclear data — open portals; no login for many downloads.",
+        "status": "covered",
+        "note": (
+            "Covered: IAEA Live Chart ground states + AME2020 open mass table. "
+            "data/nuclear_iaea_open_benchmark.json"
+        ),
     },
     {
         "id": "nist_asd_spectroscopy",
@@ -110,8 +117,11 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "NIST Atomic Spectra Database",
         "open_url": "https://physics.nist.gov/PhysRefData/ASD/lines_form.html",
         "auth": "none",
-        "status": "gap",
-        "note": "Deeper than CODATA constants table alone.",
+        "status": "covered",
+        "note": (
+            "Covered: NIST handbook H/He/Na/Ca line anchors + handbook page. "
+            "data/nist_asd_spectroscopy_open_benchmark.json"
+        ),
     },
     {
         "id": "nufit_neutrino",
@@ -119,8 +129,11 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "NuFIT open neutrino oscillation parameters",
         "open_url": "http://www.nu-fit.org/",
         "auth": "none",
-        "status": "gap",
-        "note": "Public global-fit tables for mixing angles / Δm².",
+        "status": "covered",
+        "note": (
+            "Covered: NuFit-6.0 open literature table (arXiv:2410.05380). "
+            "data/nufit_neutrino_open_benchmark.json"
+        ),
     },
     {
         "id": "gwtc_catalog",
@@ -128,8 +141,11 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "GWTC gravitational-wave event catalog (GWOSC)",
         "open_url": "https://gwosc.org/",
         "auth": "none",
-        "status": "gap",
-        "note": "Open strain/catalog products; deepen beyond sample panels.",
+        "status": "covered",
+        "note": (
+            "Covered: live GWTC catalog residual panel (masses, chirp, distance, SNR). "
+            "data/gwtc_catalog_open_benchmark.json"
+        ),
     },
     {
         "id": "desi_public_dr",
@@ -137,17 +153,23 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "DESI public data releases",
         "open_url": "https://data.desi.lbl.gov/",
         "auth": "none",
-        "status": "partial",
-        "note": "You have wa constraint residual; full catalog depth still open.",
+        "status": "covered",
+        "note": (
+            "Covered: public portal + BAO/cosmology open literature anchors + wa panel. "
+            "data/desi_public_depth_open_benchmark.json"
+        ),
     },
     {
         "id": "era5_climate_open",
         "family": "earth_climate",
-        "title": "Climate reanalysis open subsets (CDS may need free account — prefer NOAA/GHCN open first)",
+        "title": "Climate reanalysis open subsets (NCEI open substitute for CDS)",
         "open_url": "https://www.ncei.noaa.gov/",
         "auth": "none",
-        "status": "gap",
-        "note": "Default to NCEI/NOAA fully open; avoid credentialed CDS if account required.",
+        "status": "covered",
+        "note": (
+            "Covered via NCEI Climate-at-a-Glance open global land+ocean series "
+            "(no CDS account). data/ncei_climate_open_benchmark.json"
+        ),
     },
     {
         "id": "owid_epidemiology",
@@ -155,8 +177,11 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "Our World in Data public health / epidemiology CSVs",
         "open_url": "https://github.com/owid/covid-19-data",
         "auth": "none",
-        "status": "gap",
-        "note": "GitHub raw — no sign-on.",
+        "status": "covered",
+        "note": (
+            "Covered: OWID covid latest CSV multi-country residual panel. "
+            "data/owid_epidemiology_open_benchmark.json"
+        ),
     },
     {
         "id": "chembl_deep",
@@ -164,8 +189,11 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "ChEMBL open pharmacology (deeper than single-molecule probes)",
         "open_url": "https://www.ebi.ac.uk/chembl/",
         "auth": "none",
-        "status": "partial",
-        "note": "Open API; already probed — expand residual panels.",
+        "status": "covered",
+        "note": (
+            "Covered: multi-molecule ChEMBL property panel (MW, ALogP, PSA, …). "
+            "data/chembl_deep_open_benchmark.json"
+        ),
     },
     {
         "id": "openneuro_depth",
@@ -173,26 +201,35 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "OpenNeuro public BIDS datasets",
         "open_url": "https://openneuro.org/",
         "auth": "none",
-        "status": "partial",
-        "note": "Browse without key; deepen neuroscience residual coverage.",
+        "status": "covered",
+        "note": (
+            "Covered: public S3 BIDS dataset_description panel (15 datasets) + bundled summary. "
+            "data/openneuro_depth_open_benchmark.json"
+        ),
     },
     {
-        "id": "fred_skip_credentials",
+        "id": "world_bank_macro_open",
         "family": "consciousness_social",
-        "title": "FRED macro series — SKIP (API key required)",
-        "open_url": "https://fred.stlouisfed.org/",
-        "auth": "key_required",
-        "status": "skipped_credentials",
-        "note": "Out of open-science-only pipeline. Use World Bank / OECD open instead.",
+        "title": "World Bank Open Data macro series (FRED substitute)",
+        "open_url": "https://api.worldbank.org/v2/",
+        "auth": "none",
+        "status": "covered",
+        "note": (
+            "Covered: replaces FRED API key. data/world_bank_macro_open_benchmark.json "
+            "(GDP, unemployment, CPI, population) + existing world_bank_development green."
+        ),
     },
     {
-        "id": "materials_project_skip_key",
+        "id": "jarvis_dft_open",
         "family": "chemistry_materials",
-        "title": "Materials Project — SKIP default (API key)",
-        "open_url": "https://materialsproject.org/",
-        "auth": "key_required",
-        "status": "skipped_credentials",
-        "note": "Use COD / PubChem / bundled caches instead of MP key path.",
+        "title": "JARVIS-DFT via OPTIMADE (Materials Project substitute)",
+        "open_url": "https://jarvis.nist.gov/optimade/jarvisdft/v1/structures",
+        "auth": "none",
+        "status": "covered",
+        "note": (
+            "Covered: replaces Materials Project key path. "
+            "data/jarvis_dft_open_panel_benchmark.json via open OPTIMADE (auth=none)."
+        ),
     },
     {
         "id": "lmfdb_math",
@@ -200,8 +237,11 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "LMFDB / OEIS open mathematical databases",
         "open_url": "https://www.lmfdb.org/",
         "auth": "none",
-        "status": "gap",
-        "note": "Pure-math depth beyond formula corpus.",
+        "status": "covered",
+        "note": (
+            "Covered: LMFDB quadratic fields API + OEIS sequences. "
+            "data/lmfdb_oeis_math_open_benchmark.json"
+        ),
     },
     {
         "id": "exoplanet_spectra",
@@ -209,8 +249,211 @@ HIGH_VALUE_GAPS: list[dict[str, str]] = [
         "title": "NASA Exoplanet Archive open TAP / spectra products",
         "open_url": "https://exoplanetarchive.ipac.caltech.edu/",
         "auth": "none",
-        "status": "partial",
-        "note": "Architecture panels exist; spectral depth open.",
+        "status": "covered",
+        "note": (
+            "Covered: pscomppars TAP depth (radius, mass, period, Teq, host stars). "
+            "data/exoplanet_archive_depth_open_benchmark.json"
+        ),
+    },
+    # --- Frontier wave 1 (FSOT residual only; auth=none) ---
+    {
+        "id": "pdg_live_depth",
+        "family": "physics_particle_cosmo",
+        "title": "PDG Review particle anchors (open literature depth)",
+        "open_url": "https://pdg.lbl.gov/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/pdg_live_depth_open_benchmark.json",
+    },
+    {
+        "id": "gaia_source_sample",
+        "family": "physics_particle_cosmo",
+        "title": "Gaia DR3 public TAP source sample",
+        "open_url": "https://gea.esac.esa.int/tap-server/tap",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/gaia_dr3_source_sample_open_benchmark.json",
+    },
+    {
+        "id": "simbad_identity_depth",
+        "family": "physics_particle_cosmo",
+        "title": "SIMBAD public TAP identity depth",
+        "open_url": "https://simbad.cds.unistra.fr/simbad/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/simbad_identity_depth_open_benchmark.json",
+    },
+    {
+        "id": "lmfdb_elliptic_curves",
+        "family": "math_formal_compute",
+        "title": "LMFDB elliptic curves open API",
+        "open_url": "https://www.lmfdb.org/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/lmfdb_elliptic_curves_open_benchmark.json",
+    },
+    {
+        "id": "gwas_catalog_depth",
+        "family": "biology_life",
+        "title": "EBI GWAS Catalog open REST depth",
+        "open_url": "https://www.ebi.ac.uk/gwas/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/gwas_catalog_depth_open_benchmark.json",
+    },
+    {
+        "id": "pubchem_assay_depth",
+        "family": "chemistry_materials",
+        "title": "PubChem multi-CID open property depth",
+        "open_url": "https://pubchem.ncbi.nlm.nih.gov/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only (no formula_mass path). data/pubchem_depth_open_benchmark.json",
+    },
+    {
+        "id": "openalex_citation_depth",
+        "family": "open_science_meta",
+        "title": "OpenAlex scholarly citation depth",
+        "open_url": "https://api.openalex.org/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/openalex_citation_depth_open_benchmark.json",
+    },
+    # --- Frontier wave 2 (FSOT residual only) ---
+    {
+        "id": "uniprot_proteome_slice",
+        "family": "biology_life",
+        "title": "UniProt open REST proteome slice",
+        "open_url": "https://rest.uniprot.org/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/uniprot_proteome_slice_open_benchmark.json",
+    },
+    {
+        "id": "alphafold_batch_meta",
+        "family": "biology_life",
+        "title": "AlphaFold DB public prediction metadata",
+        "open_url": "https://alphafold.ebi.ac.uk/api/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/alphafold_batch_meta_open_benchmark.json",
+    },
+    {
+        "id": "rcsb_structure_batch",
+        "family": "chemistry_materials",
+        "title": "RCSB PDB structure batch (open REST)",
+        "open_url": "https://data.rcsb.org/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/rcsb_structure_batch_open_benchmark.json",
+    },
+    {
+        "id": "oeis_family_sweep",
+        "family": "math_formal_compute",
+        "title": "OEIS sequence family sweep",
+        "open_url": "https://oeis.org/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/oeis_family_sweep_open_benchmark.json",
+    },
+    {
+        "id": "usgs_seismic_history",
+        "family": "earth_climate",
+        "title": "USGS FDSN seismic catalog (M≥6 history)",
+        "open_url": "https://earthquake.usgs.gov/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/usgs_seismic_history_open_benchmark.json",
+    },
+    {
+        "id": "noaa_tides_multi_station",
+        "family": "earth_climate",
+        "title": "NOAA CO-OPS multi-station water levels",
+        "open_url": "https://api.tidesandcurrents.noaa.gov/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/noaa_tides_multi_station_open_benchmark.json",
+    },
+    {
+        "id": "gbif_taxon_depth",
+        "family": "biology_life",
+        "title": "GBIF occurrence / taxon depth",
+        "open_url": "https://api.gbif.org/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/gbif_taxon_depth_open_benchmark.json",
+    },
+    {
+        "id": "zenodo_records_depth",
+        "family": "open_science_meta",
+        "title": "Zenodo open research records depth",
+        "open_url": "https://zenodo.org/api/records",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/zenodo_records_depth_open_benchmark.json",
+    },
+    # --- Frontier wave 3 ---
+    {
+        "id": "endf_reaction_subset",
+        "family": "physics_particle_cosmo",
+        "title": "IAEA Live Chart levels/gammas (ENDF-class open nuclear)",
+        "open_url": "https://www-nds.iaea.org/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/endf_iaea_nuclear_open_benchmark.json",
+    },
+    {
+        "id": "nist_asd_multi_species",
+        "family": "physics_particle_cosmo",
+        "title": "NIST multi-species spectroscopic line anchors",
+        "open_url": "https://physics.nist.gov/PhysRefData/ASD/lines_form.html",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/nist_asd_multi_species_open_benchmark.json",
+    },
+    {
+        "id": "desi_edr_table_slice",
+        "family": "physics_particle_cosmo",
+        "title": "DESI public portal + open BAO literature slice",
+        "open_url": "https://data.desi.lbl.gov/public/",
+        "auth": "none",
+        "status": "covered",
+        "note": (
+            "Covered: portal + BAO anchors + FITS residual attach. "
+            "data/desi_edr_table_slice_open_benchmark.json · "
+            "data/desi_edr_fits_residual_benchmark.json "
+            "(zall-pix-fuji.fits on external multi-drive root)."
+        ),
+    },
+    {
+        "id": "desi_edr_fits_residual",
+        "family": "physics_particle_cosmo",
+        "title": "DESI EDR zall FITS residual (ZWARN=0 sample)",
+        "open_url": "https://data.desi.lbl.gov/public/edr/spectro/redux/fuji/zcatalog/zall-pix-fuji.fits",
+        "auth": "none",
+        "status": "covered",
+        "note": (
+            "Covered: FSOT residual on redshift/flux/chi2 from local public FITS. "
+            "scripts/build_desi_fits_residual_panel.py → data/desi_edr_fits_residual_benchmark.json"
+        ),
+    },
+    {
+        "id": "gwosc_strain_metadata",
+        "family": "physics_particle_cosmo",
+        "title": "GWOSC open strain archive JSON metadata",
+        "open_url": "https://gwosc.org/",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/gwosc_strain_metadata_open_benchmark.json",
+    },
+    {
+        "id": "codata_full_table",
+        "family": "physics_particle_cosmo",
+        "title": "NIST CODATA complete constants residual sweep",
+        "open_url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+        "auth": "none",
+        "status": "covered",
+        "note": "Covered: FSOT residual only. data/codata_full_table_open_benchmark.json",
     },
 ]
 

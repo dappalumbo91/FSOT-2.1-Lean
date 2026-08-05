@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T12:58:02.592432+00:00",
+  "generated_at": "2026-08-05T19:36:50.761184+00:00",
   "purpose": "TLA+ model of domain-routing / preregistered-fold state flow",
   "spec": "verification/tla/FSOTDomainRouting.tla",
   "python_explorer": {
@@ -15,7 +15,7 @@
     "status": "passed",
     "engine": "tlc_jar",
     "returncode": 0,
-    "stdout_tail": "8035996782750878\\Integers.tla (jar:file:/C:/Users/damia/Desktop/FSOT-2.1-Lean/tools/tla/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Integers\nSemantic processing of module TLCExt\nSemantic processing of module _TLCTrace\nSemantic processing of module FSOTDomainRouting\nLinting of module TLCExt\nLinting of module _TLCTrace\nLinting of module FSOTDomainRouting\nStarting... (2026-08-05 08:58:01)\nComputing initial states...\nFinished computing initial states: 1 distinct state generated at 2026-08-05 08:58:02.\nModel checking completed. No error has been found.\n  Estimates of the probability that TLC did not check all reachable states\n  because two distinct states had the same fingerprint:\n  calculated (optimistic):  val = 1.0E-18\n20 states generated, 19 distinct states found, 0 states left on queue.\nThe depth of the complete state graph search is 19.\nThe average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).\nFinished in 00s at (2026-08-05 08:58:02)\n"
+    "stdout_tail": "6740541017578762\\Integers.tla (jar:file:/C:/Users/damia/Desktop/FSOT-2.1-Lean/tools/tla/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Integers\nSemantic processing of module TLCExt\nSemantic processing of module _TLCTrace\nSemantic processing of module FSOTDomainRouting\nLinting of module TLCExt\nLinting of module _TLCTrace\nLinting of module FSOTDomainRouting\nStarting... (2026-08-05 15:36:50)\nComputing initial states...\nFinished computing initial states: 1 distinct state generated at 2026-08-05 15:36:50.\nModel checking completed. No error has been found.\n  Estimates of the probability that TLC did not check all reachable states\n  because two distinct states had the same fingerprint:\n  calculated (optimistic):  val = 1.0E-18\n20 states generated, 19 distinct states found, 0 states left on queue.\nThe depth of the complete state graph search is 19.\nThe average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).\nFinished in 00s at (2026-08-05 15:36:50)\n"
   },
   "status": "passed",
   "overall_ok": true,

@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-08-05T16:15:00+00:00",
+  "wave": 3,
+  "math_policy": "FSOT residual only (make_fsot_record / fsot_scaled)",
+  "builder": "scripts/build_open_frontier_wave3.py",
+  "panels": {
+    "endf_reaction_subset": {
+      "benchmark": "data/endf_iaea_nuclear_open_benchmark.json",
+      "records": 517,
+      "pooled_median_error_pct": 0.092131
+    },
+    "nist_asd_multi_species": {
+      "benchmark": "data/nist_asd_multi_species_open_benchmark.json",
+      "records": 26,
+      "pooled_median_error_pct": 0.073582
+    },
+    "desi_edr_table_slice": {
+      "benchmark": "data/desi_edr_table_slice_open_benchmark.json",
+      "records": 17,
+      "pooled_median_error_pct": 0.010049
+    },
+    "gwosc_strain_metadata": {
+      "benchmark": "data/gwosc_strain_metadata_open_benchmark.json",
+      "records": 54,
+      "pooled_median_error_pct": 0.008488
+    },
+    "codata_full_table": {
+      "benchmark": "data/codata_full_table_open_benchmark.json",
+      "records": 25,
+      "pooled_median_error_pct": 0.073582
+    }
+  },
+  "green_domains": 468,
+  "scientific_catalog_obligations": 2202,
+  "cross_proof": {
+    "overall_ok": true,
+    "github_ready": true,
+    "scientific_catalog_python": "2202/2202",
+    "coq_chunks": "48/48",
+    "isabelle_chunks": "45/45",
+    "full_formal_obligations": 2569,
+    "atomic_provable": 2008,
+    "rust_replay": 2100,
+    "smt_z3": "passed",
+    "fstar": "passed",
+    "qemu_esp32": "passed"
+  },
+  "lean_priors": "FSOT/Formal/*OpenPriors.lean (wave3 modules included)"
+}

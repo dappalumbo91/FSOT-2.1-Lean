@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-08-05T20:44:27.406059+00:00",
+  "version": "1.0",
+  "track": "matter_antimatter",
+  "benchmark": "data/matter_antimatter_benchmark.json",
+  "module": "vendor/fsot_matter_antimatter.py",
+  "builder": "scripts/build_matter_antimatter_benchmark.py",
+  "summary": {
+    "row_count": 16,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.06202913601381668,
+    "eta_baryon_photon": 6.139749535425553e-10,
+    "Omega_b_h2": 0.02235612408227371,
+    "S_matter_particle": 0.9504134401245242,
+    "S_antimatter_conjugate": -4.267134322726712,
+    "S_nuclear": 0.9213094330291355,
+    "S_cosmo": -0.5024559462100433,
+    "asymmetry_emergence_factor": 1.0,
+    "bulk_antimatter_damped": true,
+    "ontology": "Matter = emergence-class fluid vortices at particle/nuclear interfaces. Antimatter = charge-conjugate continuum dual (\u03b4\u03c8+\u03c0); CPT mass equality. Bulk asymmetry from seed \u03b7; cosmology damps residual antimatter density.",
+    "honest_scope": "Executable residual + dynamics duals. Not a full Sakharov continuum theorem. \u03b7 and \u03a9_b already seed-closed in fsot_compute wave1/wave10."
+  },
+  "claims_allowed": [
+    "CPT mass equality residual identity under FSOT conjugate mode",
+    "Pair thresholds 2m as structural identities",
+    "Seed \u03b7 = Poof^11/(\u03c0\u03b3) residual-gated to Planck class",
+    "\u03a9_b h\u00b2 = |S_cosmo|(1\u2212S_quant) residual-gated",
+    "Matter emergence S>0; conjugate dual distinct; bulk antimatter damped with S_cosmo<0"
+  ],
+  "claims_forbidden": [
+    "Full continuum Sakharov path-integral baryogenesis theorem proved",
+    "Antimatter is a separate free-parameter Lagrangian sector",
+    "Absolute rest aether required for antimatter"
+  ],
+  "hierarchy_attachment": {
+    "seeds": [
+      "pi",
+      "e",
+      "phi",
+      "gamma",
+      "G_Catalan",
+      "POOF"
+    ],
+    "interfaces": [
+      "Particle_Physics",
+      "Nuclear_Physics",
+      "Cosmology",
+      "Quantum_Mechanics"
+    ],
+    "emergence_ladder_note": "Micro particle interface (D~5) hosts matter/antimatter duals; cosmology ceiling (D=25) damps bulk antimatter residual density via \u03b7\u226a1"
+  },
+  "prior_fsot_compute": {
+    "eta_baryon_photon": "vendor/fsot_compute.py wave10",
+    "Omega_b_h2": "vendor/fsot_compute.py wave1"
+  }
+}

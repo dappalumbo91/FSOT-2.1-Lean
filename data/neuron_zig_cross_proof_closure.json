@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-08-05T15:46:23.921670+00:00",
+  "domain": "Neuron_Zig_Mind_Panel",
+  "pin": "D1D38A",
+  "free_params": 0,
+  "benchmark_path": "data\\neuron_zig_mind_panel_benchmark.json",
+  "pooled_median_error_pct": 0.0,
+  "hub_green_gate_pct": 0.5,
+  "hub_green_pass": true,
+  "stamp_ok": true,
+  "blocker_count": 0,
+  "process_debt_count": 0,
+  "overall_ok": true,
+  "holes": [
+    {
+      "severity": "watch",
+      "name": "atomic_acc",
+      "score": 1.0,
+      "residual_vs_perfect": 0.0,
+      "residual_pct": 0.0,
+      "note": "DNA/gene/ATP and some science cue binding",
+      "hub_green_0_5pct_applicable": false,
+      "reason": "process accuracy residual is not a free-param fit; tracked as debt under STEM probe"
+    },
+    {
+      "severity": "watch",
+      "name": "logic_acc",
+      "score": 1.0,
+      "residual_vs_perfect": 0.0,
+      "residual_pct": 0.0,
+      "note": "deduction cue binding",
+      "hub_green_0_5pct_applicable": false,
+      "reason": "process accuracy residual is not a free-param fit; tracked as debt under STEM probe"
+    },
+    {
+      "severity": "watch",
+      "name": "multi_acc",
+      "score": 1.0,
+      "residual_vs_perfect": 0.0,
+      "residual_pct": 0.0,
+      "note": "seed multi-hop strong",
+      "hub_green_0_5pct_applicable": false,
+      "reason": "process accuracy residual is not a free-param fit; tracked as debt under STEM probe"
+    },
+    {
+      "severity": "watch",
+      "name": "unknown_acc",
+      "score": 1.0,
+      "residual_vs_perfect": 0.0,
+      "residual_pct": 0.0,
+      "note": "history refusal",
+      "hub_green_0_5pct_applicable": false,
+      "reason": "process accuracy residual is not a free-param fit; tracked as debt under STEM probe"
+    }
+  ],
+  "maps_to_lean": [
+    "neural",
+    "ai",
+    "consciousness"
+  ],
+  "next_steps": [
+    "fsot_mind verify-stamp in fsot-neuron-zig",
+    "python scripts/build_neuron_zig_mind_panel.py",
+    "python scripts/audit_all_benchmark_margins.py",
+    "python scripts/export_scientific_catalog_obligations.py",
+    "python scripts/generate_scientific_catalog_artifacts.py",
+    "python scripts/run_smt_catalog_bounds.py",
+    "python scripts/run_cross_proof_verification.py  # full multiprover spine",
+    "refine process_debt (atomic DNA/gene/ATP cues) without history corpus"
+  ],
+  "claim": "overall_ok requires stamp + no blockers + scalar pooled \u22640.5%; process debt may remain as refinement list"
+}

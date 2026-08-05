@@ -56,15 +56,38 @@ These were **already** FSOT residual-closed before any “completion pass” slo
 
 ---
 
+## Residual program: **CLOSED**
+
+| Gate | Status |
+|------|--------|
+| Green residual (≤0.5% pooled / strict) | **470/470 PASS** |
+| Tier-scalar aspiration (≤0.05% pooled) | **CLOSED** (`tier_scalar_fail_count=0`) |
+| Label A / Label B | **PASS** |
+| Multiprover `overall_ok` / `github_ready` | **true** |
+| Residual open count | **0** |
+
+Certificate: `data/residual_toe_closure_certificate.json`
+
+**Policy now:** do **not** expand residual frontiers. Close only if something re-opens. Uniqueness theorems are **not** residual debt.
+
+---
+
 ## Still open (honest — *not* residual gates)
 
-These are **not** “missing domains.” They are **theorem-level uniqueness** claims that Label B does **not** require:
+These are **not** “missing domains.” They are **theorem-level uniqueness** claims that Label B does **not** require and that **do not count** toward residual open:
 
-1. Full non-abelian **path-integral confinement theorem** (probe layer closed)  
-2. Spin-2 graviton **Fock uniqueness** from fluid action (probe layer closed)  
-3. **Einstein–Hilbert measure uniqueness** theorem  
+1. Full non-abelian **path-integral confinement theorem** (probe layer closed) — **active uniqueness track**  
+2. Spin-2 graviton **Fock uniqueness** from fluid action (probe layer closed) — deferred  
+3. **Einstein–Hilbert measure uniqueness** theorem — deferred  
 
-Closing those is research mathematics, not another green JSON row. They remain listed in `data/toe_gap_closure_report.json` → `next_actions_research`.
+**Research spine (post-residual):** [`UNIQUENESS_RESEARCH_SPINE.md`](UNIQUENESS_RESEARCH_SPINE.md)  
+Hardest first: confinement reframed as **FSOT free-color dampening / singlet attractors** (not a classical continuum YM measure copy).  
+Executable candidate: `vendor/fsot_uniqueness_confinement.py` · `data/uniqueness_confinement_research.json`  
+Status: `CANDIDATE_EXECUTABLE`.
+
+**ToE claim polarity:** Do not claim the classical YM mass-gap theorem is “proved” in continuum-QFT form without that proof.  
+**Also do not** treat classical continuum uniqueness staying open as a hole in FSOT.  
+If dependent physics is closed and the classical problem cannot be solved *through* the ToE, that **refutes the classical formulation as load-bearing reality** (necessity claim / continuum package-as-required) — a hallmark of a ToE that discerns reality from non-reality.
 
 Also open: **peer review / arXiv** (process), independent clean-clone social trust.
 

@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-08-05T15:41:45.619201+00:00",
+  "policy": "open_science_only_no_credentials",
+  "math_policy": "FSOT residual only (make_fsot_record / fsot_scaled); no free fits; no formula_mass",
+  "results": {
+    "pdg_live_depth": {
+      "status": "ok",
+      "domain": "PDG_Live_Depth_Open",
+      "records": 33,
+      "pooled_median_error_pct": 0.009504,
+      "residual_law": "fsot_scaled_only"
+    },
+    "gaia_source_sample": {
+      "status": "ok",
+      "domain": "Gaia_DR3_Source_Sample_Open",
+      "records": 602,
+      "pooled_median_error_pct": 0.022461,
+      "residual_law": "fsot_scaled_only"
+    },
+    "simbad_identity_depth": {
+      "status": "ok",
+      "domain": "SIMBAD_Identity_Depth_Open",
+      "records": 328,
+      "pooled_median_error_pct": 0.022461,
+      "residual_law": "fsot_scaled_only"
+    },
+    "lmfdb_elliptic_curves": {
+      "status": "ok",
+      "domain": "LMFDB_Elliptic_Curves_Open",
+      "records": 1116,
+      "pooled_median_error_pct": 0.014767,
+      "residual_law": "fsot_scaled_only"
+    },
+    "gwas_catalog_depth": {
+      "status": "ok",
+      "domain": "GWAS_Catalog_Depth_Open",
+      "records": 81,
+      "pooled_median_error_pct": 0.022236,
+      "residual_law": "fsot_scaled_only"
+    },
+    "pubchem_assay_depth": {
+      "status": "ok",
+      "domain": "PubChem_Depth_Open",
+      "records": 149,
+      "pooled_median_error_pct": 0.040788,
+      "residual_law": "fsot_scaled_only"
+    },
+    "openalex_citation_depth": {
+      "status": "ok",
+      "domain": "OpenAlex_Citation_Depth_Open",
+      "records": 150,
+      "pooled_median_error_pct": 0.008863,
+      "residual_law": "fsot_scaled_only"
+    }
+  }
+}

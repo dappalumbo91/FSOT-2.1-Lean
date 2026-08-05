@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-05T13:17:28.775315+00:00",
+  "generated_at": "2026-08-05T20:03:09.216254+00:00",
   "version": "1.0",
   "verdict": {
-    "cross_proof_overall_ok": false,
+    "cross_proof_overall_ok": true,
     "extension_domains_all_green": true,
     "aspiration_scalar_debt_cleared": true,
     "core_benchmarks_all_green": true,
@@ -18,26 +18,26 @@
     "lean_4": {
       "role": "primary authority",
       "connective_obligations": 24,
-      "full_formal_obligations": 2433,
+      "full_formal_obligations": 2573,
       "transcendental_lemmas": 68,
-      "lean_theorem_count_estimate": 4762,
-      "export_fraction_pct": 51.09,
+      "lean_theorem_count_estimate": 5074,
+      "export_fraction_pct": 50.71,
       "proof_style": "norm_num / decide / linarith certificates"
     },
     "coq": {
-      "status": "failed",
-      "chunks_passed": 39,
+      "status": "passed",
+      "chunks_passed": 48,
       "coverage": "numeric literal replay of exported obligations",
       "axiom_debt": "coq_native_isabelle_native_intervals"
     },
     "isabelle": {
       "status": "passed",
-      "provable_obligations": 2379,
+      "provable_obligations": 2519,
       "coverage": "numeric literal replay of exported obligations"
     },
     "rust_f64_replay": {
       "status": "passed",
-      "obligation_count": 1998,
+      "obligation_count": 2103,
       "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
     },
     "fstar": {
@@ -116,9 +116,9 @@
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "1 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "0 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
-      "closed": false,
+      "closed": true,
       "monitored": true
     }
   ],
@@ -261,14 +261,5 @@
     "Propagate display_label to all benchmark exports and obligation JSON",
     "Attach scientific_measurement envelope (\u03c3, \u0394) to every scalar record"
   ],
-  "open_gaps": [
-    {
-      "id": "tier_scalar_aspiration",
-      "severity": "info",
-      "description": "1 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
-      "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
-      "closed": false,
-      "monitored": true
-    }
-  ]
+  "open_gaps": []
 }

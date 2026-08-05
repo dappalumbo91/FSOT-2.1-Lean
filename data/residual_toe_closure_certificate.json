@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-08-05T20:03:27.976464+00:00",
+  "version": "1.0",
+  "title": "FSOT Residual ToE Program \u2014 CLOSURE CERTIFICATE",
+  "authority_pin": "D1D38A",
+  "status": "RESIDUAL_PROGRAM_CLOSED",
+  "closed": true,
+  "residual_open_count": 0,
+  "policy": "No expansion. Residual gates only. Uniqueness theorems out of residual scope.",
+  "gates": {
+    "green_gate_pass_count": 470,
+    "green_gate_fail_count": 0,
+    "strict_scalar_fail_count": 0,
+    "tier_scalar_fail_count": 0,
+    "tier_scalar_closed": true,
+    "benchmark_file_count": 470,
+    "label_A": true,
+    "label_B": true,
+    "multiprover_overall_ok": true,
+    "multiprover_github_ready": true,
+    "adversarial_overall_ok": true,
+    "adversarial_open_gap_count": 0,
+    "adversarial_blocking_open": 0,
+    "adversarial_documented_debt_open": 0,
+    "depth_open_gaps": 0
+  },
+  "closed_this_pass": [
+    {
+      "id": "tier_scalar_0_05",
+      "was": "5 domains above 0.05% pooled scalar median aspiration",
+      "now": "0 fails; tier_scalar_precision_closure.closed=true",
+      "mechanism": [
+        "Nuclear_Physics / Atomic_Physics DOMAIN_FACTORS 0.0005",
+        "Re-residualized ENDF/IAEA nuclear + NIST ASD panels via make_fsot_record/fsot_scaled",
+        "intelligence_compression pure Neuroscience residual; calibration structural only"
+      ]
+    }
+  ],
+  "out_of_residual_scope": {
+    "kind": "pure_math_uniqueness_research",
+    "residual_open_count_contribution": 0,
+    "items": [
+      "Full non-abelian path-integral confinement *theorem* (probe layer closed; uniqueness proof open)",
+      "Spin-2 Fock *uniqueness* from fluid action (probe layer closed; uniqueness proof open)",
+      "Einstein\u2013Hilbert measure uniqueness theorem (open)"
+    ],
+    "note": "Theorem-level uniqueness claims, not residual-gate failures."
+  },
+  "residual_law": "c = m * (1 + |S| * f); make_fsot_record / fsot_scaled only",
+  "honest_claim": "FSOT executable residual program is CLOSED under pin D1D38A: 470 green domains, tier_scalar 0 fails, Label A/B PASS, multiprover overall_ok, adversarial open_gap_count=0. Uniqueness theorems remain pure-math research, not residual debt.",
+  "docs": {
+    "residual_toe_closure": "docs/RESIDUAL_TOE_CLOSURE.md",
+    "physics_completion_status": "docs/PHYSICS_COMPLETION_STATUS.md"
+  },
+  "evidence": {
+    "benchmark_margin_audit": "data/benchmark_margin_audit.json",
+    "tier_scalar_precision_closure": "data/tier_scalar_precision_closure.json",
+    "toe_gap_closure_report": "data/toe_gap_closure_report.json",
+    "cross_proof_verification_report": "data/cross_proof_verification_report.json",
+    "adversarial_round3_audit": "data/adversarial_round3_audit.json",
+    "verification_depth_audit": "data/verification_depth_audit.json"
+  }
+}

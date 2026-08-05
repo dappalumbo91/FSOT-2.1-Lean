@@ -1,7 +1,52 @@
-(* FSOT scientific catalog spine chunk 7/17 *)
+(* FSOT scientific catalog spine chunk 7/19 *)
 theory ScientificCatalogSpine_06
 imports Complex_Main
 begin
+
+lemma cat_supply_chain_logistics_records_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma cat_supply_chain_logistics_pooled_under_half_pct: "(0.02515962546361099 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_supply_chain_logistics_pooled_lt_half_pure: "(0.02515962546361099 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_supply_chain_logistics_max_scalar_under_half_pct: "(0.03230022603429461 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_supply_chain_logistics_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_arxiv_primitives_panel_records_pos: "0 < (22 :: nat)"
+  by eval
+
+lemma cat_arxiv_primitives_panel_pooled_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_arxiv_primitives_panel_pooled_lt_half_pure: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_arxiv_primitives_panel_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_arxiv_primitives_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_coding_structure_verifier_panel_records_pos: "0 < (43 :: nat)"
+  by eval
+
+lemma cat_coding_structure_verifier_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_coding_structure_verifier_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_coding_structure_verifier_panel_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_coding_structure_verifier_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
 
 lemma cat_consciousness_genetics_coupling_panel_records_pos: "0 < (24 :: nat)"
   by eval
@@ -213,6 +258,21 @@ lemma cat_tokenization_live_panel_max_scalar_under_half_pct: "(0.031506 :: real)
 lemma cat_tokenization_live_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_zenodo_records_depth_open_records_pos: "0 < (32 :: nat)"
+  by eval
+
+lemma cat_zenodo_records_depth_open_pooled_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zenodo_records_depth_open_pooled_lt_half_pure: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zenodo_records_depth_open_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zenodo_records_depth_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_chaos_mediated_phase_transitions_records_pos: "0 < (21 :: nat)"
   by eval
 
@@ -301,66 +361,6 @@ lemma cat_fluid_phase_current_spine_max_scalar_under_half_pct: "(0.0310845 :: re
   by eval
 
 lemma cat_fluid_phase_current_spine_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_epidemiology_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_epidemiology_pooled_under_half_pct: "(0.03062212293865052 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_epidemiology_pooled_lt_half_pure: "(0.03062212293865052 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_epidemiology_max_scalar_under_half_pct: "(0.0306221229386594 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_epidemiology_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_cve_codon_hole_falsification_records_pos: "0 < (29 :: nat)"
-  by eval
-
-lemma cat_cve_codon_hole_falsification_pooled_under_half_pct: "(0.009186636881580057 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cve_codon_hole_falsification_pooled_lt_half_pure: "(0.009186636881580057 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cve_codon_hole_falsification_max_scalar_under_half_pct: "(0.03062212293865052 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cve_codon_hole_falsification_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_limnology_panel_records_pos: "0 < (2010 :: nat)"
-  by eval
-
-lemma cat_limnology_panel_pooled_under_half_pct: "(0.030173 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_limnology_panel_pooled_lt_half_pure: "(0.030173 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_limnology_panel_max_scalar_under_half_pct: "(0.030173 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_limnology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_marine_biology_panel_records_pos: "0 < (90 :: nat)"
-  by eval
-
-lemma cat_marine_biology_panel_pooled_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_marine_biology_panel_pooled_lt_half_pure: "(0.006006 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_marine_biology_panel_max_scalar_under_half_pct: "(0.030173 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_marine_biology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

@@ -5,7 +5,7 @@
     "offset": 0,
     "limit": 5,
     "endOfRecords": false,
-    "count": 3742920496,
+    "count": 3752893103,
     "results": [
       {
         "key": 182368733,
@@ -549,9 +549,9 @@
         "hostingOrganizationKey": "ccc2e3ec-98ba-4e74-878d-7dcf0f57baba",
         "publishingCountry": "DK",
         "protocol": "DWC_ARCHIVE",
-        "lastCrawled": "2026-07-23T08:01:21.771+00:00",
-        "lastParsed": "2026-07-23T14:50:49.595+00:00",
-        "crawlId": 553,
+        "lastCrawled": "2026-08-04T15:28:04.153+00:00",
+        "lastParsed": "2026-08-04T15:34:01.824+00:00",
+        "crawlId": 555,
         "extensions": {
           "http://rs.gbif.org/terms/1.0/Multimedia": [
             {
@@ -631,8 +631,8 @@
               }
             ],
             "issues": [
-              "TAXON_ID_NOT_FOUND",
-              "SCIENTIFIC_NAME_ID_NOT_FOUND"
+              "SCIENTIFIC_NAME_ID_NOT_FOUND",
+              "TAXON_ID_NOT_FOUND"
             ]
           },
           "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c": {
@@ -695,8 +695,8 @@
               }
             ],
             "issues": [
-              "TAXON_ID_NOT_FOUND",
-              "SCIENTIFIC_NAME_ID_NOT_FOUND"
+              "SCIENTIFIC_NAME_ID_NOT_FOUND",
+              "TAXON_ID_NOT_FOUND"
             ]
           }
         },
@@ -753,7 +753,7 @@
           "TAXON_ID_NOT_FOUND"
         ],
         "modified": "2026-01-10T19:02:43.000+00:00",
-        "lastInterpreted": "2026-07-23T14:50:49.595+00:00",
+        "lastInterpreted": "2026-08-04T15:34:01.824+00:00",
         "references": "https://svampe.databasen.org/observations/571704",
         "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
         "isSequenced": false,
@@ -789,7 +789,7 @@
         "publishedByGbifRegion": "EUROPE",
         "identifier": "571704",
         "scientificNameID": "urn:lsid:indexfungorum.org:names:438507",
-        "http://unknown.org/crawl_attempt": "553",
+        "http://unknown.org/crawl_attempt": "555",
         "http://unknown.org/status": "not_reviewed",
         "locality": "Lang\u00e5 Egeskov",
         "fieldNumber": "PH00-004",
@@ -1054,9 +1054,9 @@
         "hostingOrganizationKey": "396d5f30-dea9-11db-8ab4-b8a03c50a862",
         "publishingCountry": "NL",
         "protocol": "DWC_ARCHIVE",
-        "lastCrawled": "2026-07-28T14:24:26.392+00:00",
-        "lastParsed": "2026-07-28T14:33:32.624+00:00",
-        "crawlId": 377,
+        "lastCrawled": "2026-08-04T15:12:12.083+00:00",
+        "lastParsed": "2026-08-04T15:21:28.592+00:00",
+        "crawlId": 378,
         "extensions": {
           "http://rs.tdwg.org/ac/terms/Multimedia": [
             {
@@ -1304,7 +1304,7 @@
         "issues": [
           "CONTINENT_DERIVED_FROM_COORDINATES"
         ],
-        "lastInterpreted": "2026-07-28T14:33:32.624+00:00",
+        "lastInterpreted": "2026-08-04T15:21:28.592+00:00",
         "references": "https://data.biodiversitydata.nl/xeno-canto/observation/XC165501",
         "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
         "isSequenced": false,
@@ -1352,7 +1352,7 @@
         "identifier": "165501@XC",
         "verbatimEventDate": "26-1-14",
         "nomenclaturalCode": "ICZN",
-        "http://unknown.org/crawl_attempt": "377",
+        "http://unknown.org/crawl_attempt": "378",
         "http://unknown.org/status": "not_reviewed",
         "locality": "Sinhagad Valley, Pune, Maharashtra",
         "gbifID": "3034438331",
@@ -1369,7 +1369,7 @@
     ],
     "facets": []
   },
-  "fetched_at": "2026-08-03T15:17:28.837060+00:00",
+  "fetched_at": "2026-08-05T14:39:24.967986+00:00",
   "url": "https://api.gbif.org/v1/occurrence/search?limit=5&hasCoordinate=true",
   "auth": "none",
   "family": "biology_medicine_genomics",

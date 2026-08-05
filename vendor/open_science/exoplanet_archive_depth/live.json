@@ -1,0 +1,13 @@
+{
+  "source_id": "exoplanet_archive_depth",
+  "kind": "json",
+  "payload": {
+    "count": 80
+  },
+  "text_preview": null,
+  "fetched_at": "2026-08-05T15:24:05.278067+00:00",
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+80+pl_name,hostname,pl_rade,pl_bmasse,pl_orbper,pl_eqt,pl_orbsmax,st_teff,st_rad,st_mass,sy_dist+from+pscomppars+where+pl_rade+is+not+null+and+pl_orbper+is+not+null&format=json",
+  "auth": "none",
+  "family": "cosmology_astrophysics",
+  "description": "NASA Exoplanet Archive TAP"
+}

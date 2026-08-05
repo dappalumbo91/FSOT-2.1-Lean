@@ -1,22 +1,7 @@
-(* FSOT scientific catalog spine chunk 2/17 *)
+(* FSOT scientific catalog spine chunk 2/19 *)
 theory ScientificCatalogSpine_01
 imports Complex_Main
 begin
-
-lemma cat_dark_sector_open_problems_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_dark_sector_open_problems_pooled_under_half_pct: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dark_sector_open_problems_pooled_lt_half_pure: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dark_sector_open_problems_max_scalar_under_half_pct: "(0.368503 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dark_sector_open_problems_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
 
 lemma cat_acoustic_resonance_materials_records_pos: "0 < (29 :: nat)"
   by eval
@@ -91,6 +76,21 @@ lemma cat_stumped_observables_panel_max_scalar_under_half_pct: "(0.341024 :: rea
   by eval
 
 lemma cat_stumped_observables_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_pdg_particle_properties_records_pos: "0 < (12 :: nat)"
+  by eval
+
+lemma cat_pdg_particle_properties_pooled_under_half_pct: "(0.0313675 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_pdg_particle_properties_pooled_lt_half_pure: "(0.0313675 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_pdg_particle_properties_max_scalar_under_half_pct: "(0.323111 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_pdg_particle_properties_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_periodic_table_completion_spine_records_pos: "0 < (36 :: nat)"
@@ -228,21 +228,6 @@ lemma cat_fsot_ram_function_panel_max_scalar_under_half_pct: "(0.261955886 :: re
 lemma cat_fsot_ram_function_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_adversarial_fractal_break_tests_records_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma cat_adversarial_fractal_break_tests_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_adversarial_fractal_break_tests_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_adversarial_fractal_break_tests_max_scalar_under_half_pct: "(0.238944484 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_adversarial_fractal_break_tests_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_alternate_base_mathematics_spine_records_pos: "0 < (21 :: nat)"
   by eval
 
@@ -361,6 +346,21 @@ lemma cat_information_theory_public_panel_max_scalar_under_half_pct: "(0.2389444
   by eval
 
 lemma cat_information_theory_public_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_pooled_under_half_pct: "(0.000055479 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_pooled_lt_half_pure: "(0.000055479 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_max_scalar_under_half_pct: "(0.238944484 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

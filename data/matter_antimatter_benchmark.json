@@ -1,0 +1,322 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-05T20:44:27.406059+00:00",
+  "domain": "Matter_Antimatter",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "vendor/fsot_matter_antimatter.py",
+    "vendor/fsot_compute.py wave1 Omega_b_h2 / wave10 eta_baryon_photon",
+    "PDG 2024 mass anchors",
+    "Planck 2018 eta / Omega_b h2 class"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "nuclear",
+    "cosmological"
+  ],
+  "D_eff": 5,
+  "record_count": 16,
+  "observable_count": 16,
+  "scalar_record_count": 14,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "sakharov_qualitative": {
+        "sota_typical_error_pct": 50.0,
+        "sota_model": "Qualitative baryogenesis (no unique seed \u03b7 in SM alone)"
+      },
+      "pdg_mass_equality": {
+        "sota_typical_error_pct": 0.01,
+        "sota_model": "PDG CPT tests / mass equality"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true,
+      "channel_seed_identity_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 16
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "matter_antimatter",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 16
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "seed_identity",
+      "name": "cpt_and_thresholds",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 14
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "electron_positron_mass_equality",
+      "name": "electron_positron_mass_equality",
+      "computed": 0.51099895,
+      "measured": 0.51099895,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "MA_CPT_mass_equality",
+      "formula": "m(particle) = m(antiparticle)  [CPT / same fluid mode]",
+      "sector": "Matter_Antimatter",
+      "note": "Antiparticle is conjugate of the same continuum mode; mass equality is structural.",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "proton_antiproton_mass_equality",
+      "name": "proton_antiproton_mass_equality",
+      "computed": 938.27208816,
+      "measured": 938.27208816,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "MA_CPT_mass_equality",
+      "formula": "m(particle) = m(antiparticle)  [CPT / same fluid mode]",
+      "sector": "Matter_Antimatter",
+      "note": "Antiparticle is conjugate of the same continuum mode; mass equality is structural.",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "muon_antimuon_mass_equality",
+      "name": "muon_antimuon_mass_equality",
+      "computed": 105.6583755,
+      "measured": 105.6583755,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "MA_CPT_mass_equality",
+      "formula": "m(particle) = m(antiparticle)  [CPT / same fluid mode]",
+      "sector": "Matter_Antimatter",
+      "note": "Antiparticle is conjugate of the same continuum mode; mass equality is structural.",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "ee_pair_threshold_MeV",
+      "name": "ee_pair_threshold_MeV",
+      "computed": 1.0219979,
+      "measured": 1.0219979,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "MA_pair_threshold_ee",
+      "formula": "2 * m_e  [pair production threshold]",
+      "sector": "Matter_Antimatter",
+      "note": "",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "ppbar_pair_threshold_MeV",
+      "name": "ppbar_pair_threshold_MeV",
+      "computed": 1876.54417632,
+      "measured": 1876.54417632,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "MA_pair_threshold_ppbar",
+      "formula": "2 * m_p  [p p-bar threshold]",
+      "sector": "Matter_Antimatter",
+      "note": "",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "eta_baryon_photon",
+      "name": "eta_baryon_photon",
+      "computed": 6.139749535425553e-10,
+      "measured": 6.14e-10,
+      "error_pct": 0.004079227596869896,
+      "eval_kind": "fsot_prediction",
+      "claim": "MA_baryon_asymmetry_eta",
+      "formula": "Poof**11 / (PI * GAMMA)",
+      "sector": "Matter_Antimatter",
+      "note": "Seed-closed \u03b7; already wave10 in fsot_compute. Explains why bulk antimatter is scarce.",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "Omega_b_h2",
+      "name": "Omega_b_h2",
+      "computed": 0.02235612408227371,
+      "measured": 0.02237,
+      "error_pct": 0.06202913601381668,
+      "eval_kind": "fsot_prediction",
+      "claim": "MA_Omega_b_h2",
+      "formula": "|S_cosmo| * (1 - S_quantum)",
+      "sector": "Matter_Antimatter",
+      "note": "Matter density from cosmology damping \u00d7 quantum interface.",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "matter_particle_S_emergence",
+      "name": "matter_particle_S_emergence",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "MA_matter_emergence",
+      "formula": "domain_scalar(Particle_Physics) > 0",
+      "sector": "Matter_Antimatter",
+      "note": "S_matter=0.950413",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "nuclear_matter_S_emergence",
+      "name": "nuclear_matter_S_emergence",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "MA_nuclear_emergence",
+      "formula": "domain_scalar(Nuclear_Physics) > 0",
+      "sector": "Matter_Antimatter",
+      "note": "S_nuclear=0.921309",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "cosmology_damping_sign",
+      "name": "cosmology_damping_sign",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "MA_cosmo_damps_bulk",
+      "formula": "domain_scalar(Cosmology) < 0",
+      "sector": "Matter_Antimatter",
+      "note": "S_cosmo=-0.502456 \u2014 late-universe bulk antimatter non-load-bearing with \u03b7\u226a1",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "conjugate_channel_not_equal_matter",
+      "name": "conjugate_channel_not_equal_matter",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "MA_conjugate_distinct",
+      "formula": "S(\u03b4\u03c8) \u2260 S(\u03b4\u03c8+\u03c0)  [conjugate channel distinct]",
+      "sector": "Matter_Antimatter",
+      "note": "S_m=0.950413 S_conj=-4.26713",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "matter_over_conjugate_preference",
+      "name": "matter_over_conjugate_preference",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "MA_matter_preference",
+      "formula": "(S_m - S_conj)/(|S_m|+|S_conj|) > 0",
+      "sector": "Matter_Antimatter",
+      "note": "A=1",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "bulk_antimatter_damped_flag",
+      "name": "bulk_antimatter_damped_flag",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "MA_bulk_antimatter_damped",
+      "formula": "S_cosmo<0 and S_particle>0 and S_nuclear>0",
+      "sector": "Matter_Antimatter",
+      "note": "Bulk antimatter does not emerge as stable residual cosmology sector",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "observer_dual_differs",
+      "name": "observer_dual_differs",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "claim": "MA_observer_dual",
+      "formula": "S(observed=True) \u2260 S(observed=False) on Particle_Physics",
+      "sector": "Matter_Antimatter",
+      "note": "S_obs=0.950413 S_unobs=-0.645781",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "eta_positive",
+      "name": "eta_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "MA_eta_positive",
+      "formula": "eta_baryon_photon > 0",
+      "sector": "Matter_Antimatter",
+      "note": "",
+      "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "cp_capable_scale_positive",
+      "name": "cp_capable_scale_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "claim": "MA_cp_scale_pos",
+      "formula": "|Poof * PHI| > 0  [CP-capable seed scale; CKM multiprover owns angle residual]",
+      "sector": "Matter_Antimatter",
+      "note": "Full CKM \u03b4 residual is in toe_ckm_pmns / gr_sm multiprover \u2014 not re-derived here.",
+      "fsot_domain": "Particle_Physics"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.06202913601381668,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "policy": "fsot_seed_locked_matter_antimatter",
+  "residual_law": "make_fsot_record / seed identities + domain duals",
+  "ontology": "Matter = emergence-class fluid vortices at particle/nuclear interfaces. Antimatter = charge-conjugate continuum dual (\u03b4\u03c8+\u03c0); CPT mass equality. Bulk asymmetry from seed \u03b7; cosmology damps residual antimatter density.",
+  "honest_scope": "Executable residual + dynamics duals. Not a full Sakharov continuum theorem. \u03b7 and \u03a9_b already seed-closed in fsot_compute wave1/wave10.",
+  "summary_physics": {
+    "eta_baryon_photon": 6.139749535425553e-10,
+    "Omega_b_h2": 0.02235612408227371,
+    "S_matter_particle": 0.9504134401245242,
+    "S_antimatter_conjugate": -4.267134322726712,
+    "asymmetry_emergence_factor": 1.0,
+    "bulk_antimatter_damped": true
+  }
+}

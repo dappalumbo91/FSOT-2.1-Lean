@@ -1,0 +1,250 @@
+{
+  "generated_at": "2026-08-05T20:30:15.800874+00:00",
+  "version": "1.0",
+  "track": "reality_fiction_calibration",
+  "authority_pin": "D1D38A",
+  "residual_open_count_contribution": 0,
+  "purpose": "Calibrate ToE discernment: known reality holds, known fiction damps, historically early disproofs open for re-eval under residual+dampening+prereg.",
+  "summary": {
+    "case_count": 17,
+    "known_reality": {
+      "count": 7,
+      "pass": 7,
+      "fail": 0,
+      "all_pass": true
+    },
+    "known_fiction": {
+      "count": 6,
+      "pass": 6,
+      "fail": 0,
+      "all_pass": true
+    },
+    "reeval_candidate": {
+      "count": 4,
+      "pass": 4,
+      "fail": 0,
+      "all_pass": true
+    },
+    "calibration_ok": true,
+    "verdict": "CALIBRATION_PASS",
+    "polarity": {
+      "wrong": "classical/open problem unsolved \u2192 FSOT failed",
+      "right": "dependent physics closed + formulation unsolvable through ToE \u2192 formulation non-load-bearing; known fiction damps; re-eval opens early disproofs"
+    },
+    "honest": {
+      "ontology": "FSOT is fluid spacetime omni-theory math across all scales (D_eff ceiling 25 compactified continuum). Apply the model; do not hedge with textbook aether-history framing.",
+      "known_fiction_damped_means": "Should-be-false fails as load-bearing under FSOT",
+      "known_reality_holds_means": "Settled structure holds \u2014 including fluid spacetime itself (not optional)",
+      "reeval_open_means": "Historically dismissed topics (NOT the fluid medium) may be reconsidered with residual+dampening+prereg \u2014 NOT asserted true",
+      "absolute_rest_vs_fluid": "Absolute rest frame damps (fiction). Fluid spacetime is the model (reality)."
+    }
+  },
+  "cases": [
+    {
+      "id": "R1_nuclear_emergence",
+      "tier": "known_reality",
+      "title": "Nuclear interface is emergence-class (S > 0)",
+      "expected": "REALITY_HOLDS",
+      "verdict": "REALITY_HOLDS",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "S_nuclear=0.921309",
+      "formula": "domain_scalar(Nuclear_Physics) > 0"
+    },
+    {
+      "id": "R2_particle_emergence",
+      "tier": "known_reality",
+      "title": "Particle interface is emergence-class (S > 0)",
+      "expected": "REALITY_HOLDS",
+      "verdict": "REALITY_HOLDS",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "S_particle=0.950413",
+      "formula": "domain_scalar(Particle_Physics) > 0"
+    },
+    {
+      "id": "R3_confinement_scales_positive",
+      "tier": "known_reality",
+      "title": "Confinement scales \u039b_QCD, \u03c3 > 0 (seed-locked)",
+      "expected": "REALITY_HOLDS",
+      "verdict": "REALITY_HOLDS",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "Lambda=0.217404 sigma=0.176586",
+      "formula": "seed_lambda_qcd_GeV()>0 and (seed_sqrt_sigma)**2>0"
+    },
+    {
+      "id": "R4_singlet_attractor",
+      "tier": "known_reality",
+      "title": "Color-singlet channel attracts to nuclear S_eq",
+      "expected": "REALITY_HOLDS",
+      "verdict": "REALITY_HOLDS",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "a_singlet=0.921309 S_eq=0.921309",
+      "formula": "a_singlet \u2192 S_eq under FSOT channel dynamics"
+    },
+    {
+      "id": "R5_c_eff_positive",
+      "tier": "known_reality",
+      "title": "Effective continuum speed scale C_EFF > 0",
+      "expected": "REALITY_HOLDS",
+      "verdict": "REALITY_HOLDS",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "C_EFF=0.957702",
+      "formula": "C_EFF > 0 (seed stack)"
+    },
+    {
+      "id": "R6_fluid_spacetime_omni",
+      "tier": "known_reality",
+      "title": "Fluid spacetime omni-theory (D_eff\u226425 compactified continuum) is the model",
+      "expected": "REALITY_HOLDS",
+      "verdict": "REALITY_HOLDS",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "C_EFF=0.957702 transport_stack_live=True S_cosmo(D_eff=25)=-0.502456 \u2014 fluid IS FSOT, not a re-eval maybe",
+      "formula": "C_EFF>0 and POOF/SUCTION/A_BLEED/CHAOS live and Cosmology(D_eff=25) defined"
+    },
+    {
+      "id": "R7_deff_ceiling_25",
+      "tier": "known_reality",
+      "title": "D_eff compactification ceiling 25 is load-bearing",
+      "expected": "REALITY_HOLDS",
+      "verdict": "REALITY_HOLDS",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "mu(D=25)=0.160692 mu(D=20)=0.226897",
+      "formula": "viscosity_eff uses |D_eff-25|; ceiling is architectural not optional"
+    },
+    {
+      "id": "F1_free_color_asymptotic",
+      "tier": "known_fiction",
+      "title": "Stable free-color asymptotic particle",
+      "expected": "FICTION_DAMPED",
+      "verdict": "FICTION_DAMPED",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "|a_color|_final=5.520e-08 gamma=0.668491",
+      "formula": "free color amplitude \u2192 0 under gamma_color > 0"
+    },
+    {
+      "id": "F2_perpetual_motion_unsourced",
+      "tier": "known_fiction",
+      "title": "Perpetual motion (unsourced free gain)",
+      "expected": "FICTION_DAMPED",
+      "verdict": "FICTION_DAMPED",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "gain=0.153482 damp=1.47502 net=-1.32153",
+      "formula": "unsourced gain - ( |CHAOS| + A_BLEED + |PSI_CON|*POOF ) \u2264 0"
+    },
+    {
+      "id": "F3_absolute_rest_frame",
+      "tier": "known_fiction",
+      "title": "Absolute rest frame (not the FSOT fluid medium)",
+      "expected": "FICTION_DAMPED",
+      "verdict": "FICTION_DAMPED",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "gamma_pref=0.565751 a_final=1.486e-10 fluid_C_EFF=0.957702 \u2014 damp REST FRAME, keep fluid spacetime",
+      "formula": "preferred-frame amplitude damps; C_EFF fluid remains load-bearing"
+    },
+    {
+      "id": "F4_phlogiston_free_mass",
+      "tier": "known_fiction",
+      "title": "Phlogiston free mass bookkeeping",
+      "expected": "FICTION_DAMPED",
+      "verdict": "FICTION_DAMPED",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "free_dm_claim=1.0 reality_dm=0.0 err=1.0",
+      "formula": "free \u0394m claim vs seed-locked conservation identity 0 \u2192 rejected"
+    },
+    {
+      "id": "F5_tachyon_superluminal",
+      "tier": "known_fiction",
+      "title": "Stable superluminal tachyon channel",
+      "expected": "FICTION_DAMPED",
+      "verdict": "FICTION_DAMPED",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "growth=1.61803 damp=2.81036 net=-1.19233",
+      "formula": "superluminal claim and (v/c-1) - full_seed_damp < 0"
+    },
+    {
+      "id": "F6_classical_ym_necessity_meta",
+      "tier": "known_fiction",
+      "title": "Continuum path-integral uniqueness as *required* for confinement",
+      "expected": "FICTION_DAMPED",
+      "verdict": "FICTION_DAMPED",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "scales_ok=True damp_ok=True free_color_gone=True |a_c|=1.951e-09 \u2192 necessity meta-claim non-load-bearing under FSOT",
+      "formula": "(dependent confinement physics closed under FSOT) \u21d2 necessity-of-classical-PI uniqueness damps"
+    },
+    {
+      "id": "E2_guidance_scalar_order_structure",
+      "tier": "reeval_candidate",
+      "title": "Guidance / order-parameter structure (pilot-wave class, re-eval only)",
+      "expected": "REEVAL_OPEN",
+      "verdict": "REEVAL_OPEN",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "S_QM=0.955506 C_FACTOR=0.2876 \u2014 structure only, not endorsement",
+      "formula": "domain_scalar(Quantum_Mechanics) and C_FACTOR structure present"
+    },
+    {
+      "id": "E3_varying_constants_prereg_path",
+      "tier": "reeval_candidate",
+      "title": "Varying-constants class (prereg/contested path only)",
+      "expected": "REEVAL_OPEN",
+      "verdict": "REEVAL_OPEN",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "Seeds fixed; re-eval only via prereg kill criteria \u2014 no free retune",
+      "formula": "seed lock holds; varying-constant claims must use prereg path"
+    },
+    {
+      "id": "E4_cold_fusion_class_prereg_structure",
+      "tier": "reeval_candidate",
+      "title": "Cold-fusion class (prereg structure only \u2014 not proven)",
+      "expected": "REEVAL_OPEN",
+      "verdict": "REEVAL_OPEN",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "POOF/A_BLEED/SUCTION structure live; CF not asserted true",
+      "formula": "bleed/poof stack present \u21d2 re-eval via prereg only"
+    },
+    {
+      "id": "E5_reeval_machinery_exists",
+      "tier": "reeval_candidate",
+      "title": "Re-evaluation machinery exists (residual + dampening + seeds)",
+      "expected": "REEVAL_OPEN",
+      "verdict": "REEVAL_OPEN",
+      "pass_calibration": true,
+      "score": 1.0,
+      "detail": "Dampening + domain scalars + seeds enable post-hoc re-eval of early disproofs",
+      "formula": "gamma_color>0 and |S_nuc|>0 and K>0"
+    }
+  ],
+  "claim_language": {
+    "allowed": [
+      "Known fictions fail as load-bearing under FSOT dampening/filters.",
+      "Known realities hold (emergence, scales, attractors).",
+      "Historical disproofs can be reopened as REEVAL_OPEN candidates with new machinery.",
+      "Classical continuum necessity claims can damp when dependent physics is closed under FSOT."
+    ],
+    "forbidden": [
+      "REEVAL_OPEN means the claim is proved true.",
+      "Damping a necessity meta-claim means QCD residual physics is false.",
+      "Calibration failure \u21d2 reopen residual debt without diagnosis.",
+      "Inverted polarity: open classical problem \u21d2 FSOT incomplete."
+    ]
+  },
+  "modules": {
+    "calibration": "vendor/fsot_reality_fiction_calibration.py",
+    "confinement": "vendor/fsot_uniqueness_confinement.py",
+    "spine_doc": "docs/UNIQUENESS_RESEARCH_SPINE.md"
+  }
+}

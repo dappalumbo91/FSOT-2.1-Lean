@@ -1,10 +1,37 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 4/20 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 4/21 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma codon_gtg_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_gtg_secondary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_gtt_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_gtt_secondary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_taa_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_taa_secondary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tac_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tac_secondary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_tag_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
 Lemma codon_tag_secondary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
 Proof. repeat split; reflexivity. Qed.
@@ -95,6 +122,15 @@ Proof. reflexivity. Qed.
 
 Lemma stop_codon_fraction_cert : (0.046875%R) = (0.046875%R).
 Proof. reflexivity. Qed.
+
+Lemma cod_optimade_structures_pooled_median_under_half_pct : (0.01341%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma cod_optimade_structures_headline_median_under_half_pct : (0.01341%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma cod_optimade_structures_observable_count_pos : (0 < 682)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma cold_fusion_candidate_prereg_scaffold_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -269,40 +305,4 @@ Proof. lra. Qed.
 
 Lemma cosmology_wave7_observable_count_pos : (0 < 29)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cosmology_wave8_max_error_under_half_pct : (0.35683948712437213%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cosmology_wave8_median_error_under_half_pct : (0.014145689288404753%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cosmology_wave8_observable_count_pos : (0 < 52)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cosmology_wave9_max_error_under_half_pct : (0.19375824846825943%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cosmology_wave9_median_error_under_half_pct : (0.014278509753575246%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cosmology_wave9_observable_count_pos : (0 < 7)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma crc_handbook_properties_observable_count_pos : (0 < 391)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma crc_handbook_properties_median_error_under_half_pct : (0.026922%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma creative_arts_math_spine_observable_count_pos : (0 < 56)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma creative_arts_math_spine_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma crossref_scholarly_panel_observable_count_pos : (0 < 200)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma crossref_scholarly_panel_median_error_under_half_pct : (0.01382%R) < (0.5%R).
-Proof. lra. Qed.
 

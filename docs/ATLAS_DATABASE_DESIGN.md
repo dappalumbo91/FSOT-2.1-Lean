@@ -5,6 +5,8 @@
 **Authority remains:** `vendor/fsot_compute.py` pin **D1D38A** + green JSON benchmarks.  
 **DB is a view** rebuilt from those artifacts.
 
+> **Atlas `records_stored` (~90k) ≠ full residual scale.** Huge panels are **sampled in SQLite** (≤5k rows each); full solves (e.g. MPCORB 1.55M, DESI quality multi-million observations) live in benchmarks + external multi-drive products. See [`ATLAS_VS_FULL_CATALOG.md`](ATLAS_VS_FULL_CATALOG.md).
+
 ---
 
 ## Policy
@@ -79,7 +81,12 @@ Do not merge blindly; atlas is the **professional inventory layer** for green so
 
 ## After atlas is up
 
-Hit **high-value gaps** with open public data only (Materials Project *only if no key*; prefer COD/NOMAD/PubChem open; ENDF public, GWTC, NuFIT public tables, FRED *requires key → skip*, etc.). Prefer:
+Hit **high-value gaps** with open public data only. Credential walls are **replaced**, not waited on:
+
+- Materials Project key → **JARVIS-DFT OPTIMADE + COD OPTIMADE** (`build_open_credential_replacements.py`)
+- FRED key → **World Bank Open Data** macro panel (same script)
+
+Also prefer:
 
 - NIST, PDG public HTML/tables  
 - GBIF, USGS, OpenAlex, PubChem, UniProt, RCSB, Ensembl, ChEMBL, Zenodo, arXiv API (no key)  

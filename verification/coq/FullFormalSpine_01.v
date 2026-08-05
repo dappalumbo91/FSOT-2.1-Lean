@@ -1,10 +1,19 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 2/20 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 2/21 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma oligodendrocyte_myelination_spin_counts_sum : (72 = 72)%nat.
+Proof. reflexivity. Qed.
+
+Lemma amygdala_spin_counts_sum : (72 = 72)%nat.
+Proof. reflexivity. Qed.
+
+Lemma microglial_surveillance_spin_counts_sum : (72 = 72)%nat.
+Proof. reflexivity. Qed.
 
 Lemma neocortex_genetic_counts_sum : (72 = 72)%nat.
 Proof. reflexivity. Qed.
@@ -189,6 +198,15 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma chaos_mediated_phase_transitions_median_error_under_half_pct : (0.03147898006445882%R) < (0.5%R).
 Proof. lra. Qed.
 
+Lemma chembl_deep_open_pooled_median_under_half_pct : (0.040788%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma chembl_deep_open_headline_median_under_half_pct : (0.040788%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma chembl_deep_open_observable_count_pos : (0 < 188)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma chemical_engineering_ext_pooled_median_under_half_pct : (0.0010333425185953097%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -285,24 +303,6 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma clinicaltrials_medical_median_error_under_five_pct : 0%R < (5.0%R).
 Proof. lra. Qed.
 
-Lemma code_genome_structure_observable_count_pos : (0 < 205)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma code_genome_structure_median_error_under_half_pct : 0%R < (0.5%R).
+Lemma codata_full_table_open_pooled_median_under_half_pct : (0.073582%R) < (0.5%R).
 Proof. lra. Qed.
-
-Lemma coding_structure_verifier_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma coding_structure_verifier_observable_count_pos : (0 < 18)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma codon_table_count_eq_sixty_four : (64 = 64)%nat.
-Proof. reflexivity. Qed.
-
-Lemma codon_secondary_pattern_space_eq_twenty_seven : (27 = 27)%nat.
-Proof. reflexivity. Qed.
-
-Lemma codon_aaa_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
 

@@ -1,10 +1,37 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 3/20 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 3/21 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma codata_full_table_open_headline_median_under_half_pct : (0.073582%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma codata_full_table_open_observable_count_pos : (0 < 38)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma code_genome_structure_observable_count_pos : (0 < 205)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma code_genome_structure_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma coding_structure_verifier_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma coding_structure_verifier_observable_count_pos : (0 < 18)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma codon_table_count_eq_sixty_four : (64 = 64)%nat.
+Proof. reflexivity. Qed.
+
+Lemma codon_secondary_pattern_space_eq_twenty_seven : (27 = 27)%nat.
+Proof. reflexivity. Qed.
+
+Lemma codon_aaa_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
 Lemma codon_aaa_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
@@ -277,32 +304,5 @@ Lemma codon_gtc_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
 Lemma codon_gtc_secondary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_gtg_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_gtg_secondary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_gtt_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_gtt_secondary_phase : (0 = 0)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_taa_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_taa_secondary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tac_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tac_secondary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_tag_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

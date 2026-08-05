@@ -1,0 +1,209 @@
+{
+  "generated_at": "2026-08-05T20:30:15.270617+00:00",
+  "version": "1.0",
+  "track": "uniqueness_research",
+  "hardest_target": "path_integral_confinement_reframe",
+  "classical_problem": "Prove continuum non-abelian Yang\u2013Mills path integral has a mass gap and free color is confined (area law).",
+  "fsot_reframe": "Confinement = free-color modes damped by seed-locked \u03b3_color; color singlets are nuclear S_eq attractors. Not a continuum Yang\u2013Mills path-integral measure theorem.",
+  "why_classical_may_be_wrong_primary": "FSOT is intrinsic: false / non-emergent modes damp under seed-locked dynamics. Asking for continuum path-integral measure uniqueness may be the wrong primary object once residual physics is closed. The native theorem is attractor uniqueness: free color is not a stable attractor; color singlets are.",
+  "authority_pin": "D1D38A",
+  "residual_program": "CLOSED \u2014 this track is pure-math / dynamics research, residual_open_count=0",
+  "theorem_status": "CANDIDATE_EXECUTABLE",
+  "classical_path_integral_uniqueness": "OPEN_NOT_CLAIMED",
+  "summary": {
+    "row_count": 10,
+    "identity_exact_count": 10,
+    "boolean_pass_count": 8,
+    "boolean_total": 8,
+    "free_color_damping_rate": 0.6684908749126979,
+    "singlet_relaxation_rate": 0.4280434460598068,
+    "nuclear_S_eq": 0.9213094330291355,
+    "Lambda_QCD_GeV": 0.21740442367390217,
+    "sigma_GeV2": 0.17658624702998535,
+    "theorem_status": "CANDIDATE_EXECUTABLE",
+    "classical_path_integral_uniqueness": "OPEN_NOT_CLAIMED",
+    "fsot_reframe": "Confinement = free-color modes damped by seed-locked \u03b3_color; color singlets are nuclear S_eq attractors. Not a continuum Yang\u2013Mills path-integral measure theorem."
+  },
+  "rows": [
+    {
+      "name": "free_color_damping_positive",
+      "property": "U1_free_color_gamma_pos",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "record_kind": "structural",
+      "claim": "U1_free_color_gamma_pos",
+      "formula": "gamma_color = |S_nuc|*POOF + |S_part|*SUCTION + |CHAOS|*A_BLEED + PSI_CON*POOF*K",
+      "sector": "QCD_uniqueness",
+      "note": "Free color is not an attractor: \u03b3_color > 0 from seeds only."
+    },
+    {
+      "name": "mass_gap_proxy_positive",
+      "property": "U2_mass_gap_proxy_pos",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "record_kind": "structural",
+      "claim": "U2_mass_gap_proxy_pos",
+      "formula": "Lambda_QCD = seed_lambda_qcd_GeV() > 0",
+      "sector": "QCD_uniqueness",
+      "note": "Proxy only \u2014 continuum spectrum uniqueness not claimed."
+    },
+    {
+      "name": "area_law_sigma_positive",
+      "property": "U3_area_law_sigma_pos",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "record_kind": "structural",
+      "claim": "U3_area_law_sigma_pos",
+      "formula": "sigma = (seed_sqrt_sigma)**2 > 0",
+      "sector": "QCD_uniqueness",
+      "note": ""
+    },
+    {
+      "name": "free_color_damped_to_zero",
+      "property": "U4_free_color_damps",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "record_kind": "structural",
+      "claim": "U4_free_color_damps",
+      "formula": "|a_color|(t_final) < 1e-6 under gamma_color dynamics",
+      "sector": "QCD_uniqueness",
+      "note": "|a_color| final=5.520e-08, gamma=0.668491"
+    },
+    {
+      "name": "singlet_persists_at_S_eq",
+      "property": "U5_singlet_attractor",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "record_kind": "structural",
+      "claim": "U5_singlet_attractor",
+      "formula": "a_singlet \u2192 S_eq(Nuclear_Physics)",
+      "sector": "QCD_uniqueness",
+      "note": "a_singlet final=0.921309, S_eq=0.921309"
+    },
+    {
+      "name": "counterfactual_no_damp_free_color_persists",
+      "property": "U6_dampening_load_bearing",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "dynamics_identity",
+      "record_kind": "structural",
+      "claim": "U6_dampening_load_bearing",
+      "formula": "damp_color=False \u21d2 |a_color| stays O(1)",
+      "sector": "QCD_uniqueness",
+      "note": "Without \u03b3_color, |a_color| final=1 \u2014 dampening is load-bearing."
+    },
+    {
+      "name": "linear_potential_unit_identity",
+      "property": "U7_linear_potential_identity",
+      "computed": 0.42022166416069673,
+      "measured": 0.4202216641606967,
+      "error_pct": 1.3209968920124462e-14,
+      "eval_kind": "seed_identity",
+      "record_kind": "structural",
+      "claim": "U7_linear_potential_identity",
+      "formula": "V(1/sqrt_sigma) = sqrt_sigma",
+      "sector": "QCD_uniqueness",
+      "note": ""
+    },
+    {
+      "name": "alpha_s_seed_positive",
+      "property": "U8_strong_coupling_seed_pos",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "record_kind": "structural",
+      "claim": "U8_strong_coupling_seed_pos",
+      "formula": "seed_alpha_s_MZ() > 0",
+      "sector": "QCD_uniqueness",
+      "note": ""
+    },
+    {
+      "name": "nuclear_S_emergence_sign",
+      "property": "U9_nuclear_emergence",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "record_kind": "structural",
+      "claim": "U9_nuclear_emergence",
+      "formula": "domain_scalar(Nuclear_Physics) > 0",
+      "sector": "QCD_uniqueness",
+      "note": "Positive S = emergence window for nuclear singlets (Theorems.lean nuclear_is_emergence)."
+    },
+    {
+      "name": "gamma_color_over_gamma_singlet",
+      "property": "U10_timescale_ratio",
+      "computed": 1.5617360365314306,
+      "measured": 1.5617360365314306,
+      "error_pct": 0.0,
+      "eval_kind": "seed_identity",
+      "record_kind": "structural",
+      "claim": "U10_timescale_ratio",
+      "formula": "gamma_color / gamma_singlet  [seed-locked research observable]",
+      "sector": "QCD_uniqueness",
+      "note": "Research diagnostic; not a residual gate."
+    }
+  ],
+  "pass_criteria_candidate": {
+    "U1_gamma_color_positive": true,
+    "U4_free_color_damps": true,
+    "U5_singlet_attractor": true,
+    "U6_dampening_load_bearing": true,
+    "formal_lean_uniqueness_proof": false,
+    "continuum_ym_path_integral_closed": false
+  },
+  "next_steps": [
+    "Formalize free_color_damping_rate > 0 in Lean from seed bounds",
+    "Lift 2-channel ODE attractor statement to a dynamics theorem skeleton",
+    "Bridge Wilson area-law probe to dampening statement (not reverse)",
+    "Only after candidate solidifies: attempt EH / spin-2 uniqueness with same dampening pattern"
+  ],
+  "sibling_targets_deferred": [
+    {
+      "id": "spin2_fock_uniqueness",
+      "note": "Same pattern: non-TT / ghost modes damp; TT \u00b12 emerge \u2014 after confinement candidate matures"
+    },
+    {
+      "id": "einstein_hilbert_measure_uniqueness",
+      "note": "Same pattern: non-EH continuum actions damp under diffeomorphism+locality+2nd-order filter \u2014 after confinement"
+    }
+  ],
+  "modules": {
+    "dynamics": "vendor/fsot_uniqueness_confinement.py",
+    "probes_existing": "vendor/fsot_gr_sm.py (T4_confinement_* / path_integral probes)",
+    "fluid": "vendor/fsot_dynamics.py",
+    "emergence_damping_lean": "FSOT/Theorems.lean"
+  },
+  "honest_claim_language": {
+    "toe_hallmark": "A true ToE discerns reality from non-reality: modes/formulations that cannot emerge through the closed dynamics damp out and are not load-bearing residual debt.",
+    "allowed": [
+      "FSOT-native confinement uniqueness *candidate*: free-color damping seed-locked and executable.",
+      "Free color is not an attractor; color singlets are.",
+      "Residual confinement probes green \u2014 dependent physics settled.",
+      "If the classical continuum path-integral uniqueness problem cannot be solved through a framework that already solves what confinement depends on, that classical formulation is not load-bearing reality (ToE falsifies the necessity-claim, not FSOT).",
+      "We may disprove the claim that continuum YM path-integral uniqueness is *required* for confinement once dampening + residual closure underwrite the physics."
+    ],
+    "forbidden": [
+      "We proved the classical Yang\u2013Mills mass gap theorem (continuum QFT formal sense) without that proof.",
+      "Path-integral confinement uniqueness is Coq/Lean proved (classical statement) without that proof.",
+      "Because classical continuum uniqueness remains open, FSOT / residual ToE is incomplete (INVERTED polarity \u2014 forbidden).",
+      "Reopen residual debt to chase an unsolvable classical framing."
+    ],
+    "polarity": {
+      "wrong": "classical problem unsolved \u2192 FSOT failed",
+      "right": "dependent physics closed + classical problem unsolvable through ToE \u2192 classical formulation / continuum-necessity claim fails (non-reality)"
+    }
+  }
+}

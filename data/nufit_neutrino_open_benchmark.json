@@ -1,0 +1,212 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-05T15:23:49.221708+00:00",
+  "domain": "NuFIT_Neutrino_Open",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "http://www.nu-fit.org/",
+    "arXiv:2410.05380",
+    "vendor/open_science/nufit_6_0_literature/parameters.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "quantum"
+  ],
+  "D_eff": 14,
+  "record_count": 10,
+  "observable_count": 10,
+  "scalar_record_count": 10,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.009504,
+  "pooled_median_error_pct": 0.009504,
+  "headline_median_error_pct": 0.009504,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "nufit": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NuFit-6.0 three-flavor global fit"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.009504,
+      "measured": 0.0,
+      "error_pct": 0.009504,
+      "observable_count": 10
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "nufit",
+      "computed": 0.009504,
+      "measured": 0.0,
+      "error_pct": 0.009504,
+      "observable_count": 10
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "nufit_open_lab",
+      "property": "sin2_theta12",
+      "name": "NuFit-6.0 NO best fit sin\u00b2\u03b8\u2081\u2082",
+      "computed": 0.303029,
+      "measured": 0.303,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "citation": "Esteban et al., NuFit-6.0, arXiv:2410.05380; http://www.nu-fit.org/",
+      "auth": "none",
+      "gap_id": "nufit_neutrino"
+    },
+    {
+      "lab": "nufit_open_lab",
+      "property": "sin2_theta13",
+      "name": "NuFit-6.0 NO best fit sin\u00b2\u03b8\u2081\u2083",
+      "computed": 0.022232,
+      "measured": 0.02223,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "citation": "Esteban et al., NuFit-6.0, arXiv:2410.05380; http://www.nu-fit.org/",
+      "auth": "none",
+      "gap_id": "nufit_neutrino"
+    },
+    {
+      "lab": "nufit_open_lab",
+      "property": "sin2_theta23",
+      "name": "NuFit-6.0 NO best fit sin\u00b2\u03b8\u2082\u2083",
+      "computed": 0.572054,
+      "measured": 0.572,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "citation": "Esteban et al., NuFit-6.0, arXiv:2410.05380; http://www.nu-fit.org/",
+      "auth": "none",
+      "gap_id": "nufit_neutrino"
+    },
+    {
+      "lab": "nufit_open_lab",
+      "property": "delta_m2_21_eV2",
+      "name": "NuFit-6.0 NO \u0394m\u00b2\u2082\u2081 (eV\u00b2)",
+      "computed": 7.4e-05,
+      "measured": 7.41e-05,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "citation": "Esteban et al., NuFit-6.0, arXiv:2410.05380; http://www.nu-fit.org/",
+      "auth": "none",
+      "gap_id": "nufit_neutrino"
+    },
+    {
+      "lab": "nufit_open_lab",
+      "property": "delta_m2_31_eV2",
+      "name": "NuFit-6.0 NO |\u0394m\u00b2\u2083\u2081| (eV\u00b2)",
+      "computed": 0.002511,
+      "measured": 0.002511,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "citation": "Esteban et al., NuFit-6.0, arXiv:2410.05380; http://www.nu-fit.org/",
+      "auth": "none",
+      "gap_id": "nufit_neutrino"
+    },
+    {
+      "lab": "nufit_open_lab",
+      "property": "delta_cp_deg",
+      "name": "NuFit-6.0 NO \u03b4_CP (degrees)",
+      "computed": 197.018723,
+      "measured": 197.0,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "citation": "Esteban et al., NuFit-6.0, arXiv:2410.05380; http://www.nu-fit.org/",
+      "auth": "none",
+      "gap_id": "nufit_neutrino"
+    },
+    {
+      "lab": "nufit_open_lab",
+      "property": "rel_precision_theta12_3sigma_pct",
+      "name": "NuFit-6.0 ~3\u03c3 rel. precision \u03b8\u2081\u2082 class",
+      "computed": 13.001236,
+      "measured": 13.0,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "citation": "Esteban et al., NuFit-6.0, arXiv:2410.05380; http://www.nu-fit.org/",
+      "auth": "none",
+      "gap_id": "nufit_neutrino"
+    },
+    {
+      "lab": "nufit_open_lab",
+      "property": "rel_precision_theta13_3sigma_pct",
+      "name": "NuFit-6.0 ~3\u03c3 rel. precision \u03b8\u2081\u2083 class",
+      "computed": 8.00076,
+      "measured": 8.0,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "citation": "Esteban et al., NuFit-6.0, arXiv:2410.05380; http://www.nu-fit.org/",
+      "auth": "none",
+      "gap_id": "nufit_neutrino"
+    },
+    {
+      "lab": "nufit_open_lab",
+      "property": "rel_precision_dm21_3sigma_pct",
+      "name": "NuFit-6.0 ~3\u03c3 rel. precision \u0394m\u00b2\u2082\u2081 class",
+      "computed": 15.001426,
+      "measured": 15.0,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "citation": "Esteban et al., NuFit-6.0, arXiv:2410.05380; http://www.nu-fit.org/",
+      "auth": "none",
+      "gap_id": "nufit_neutrino"
+    },
+    {
+      "lab": "nufit_open_lab",
+      "property": "rel_precision_dm3l_3sigma_pct",
+      "name": "NuFit-6.0 ~3\u03c3 rel. precision |\u0394m\u00b2\u2083\u2113| class",
+      "computed": 6.00057,
+      "measured": 6.0,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "citation": "Esteban et al., NuFit-6.0, arXiv:2410.05380; http://www.nu-fit.org/",
+      "auth": "none",
+      "gap_id": "nufit_neutrino"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.009504,
+    "max_scalar_error_pct": 0.009504,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "policy": "open_science_only_no_credentials",
+  "high_value_gap_id": "nufit_neutrino"
+}

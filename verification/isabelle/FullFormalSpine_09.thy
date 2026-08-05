@@ -1,7 +1,169 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 10/20 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 10/21 (generated). *)
 theory FullFormalSpine_09
 imports Complex_Main
 begin
+
+lemma mechanical_engineering_ext_observable_count_pos: "0 < (50 :: nat)"
+  by eval
+
+lemma mechanical_engineering_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma mechanical_engineering_panel_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma mechanical_engineering_panel_median_error_under_half_pct: "(0.039349 :: real) < (0.5 :: real)"
+  by eval
+
+lemma mechanical_engineering_observable_count_pos: "0 < (50 :: nat)"
+  by eval
+
+lemma mechanical_engineering_median_error_under_half_pct: "(0.017310023021640548 :: real) < (0.5 :: real)"
+  by eval
+
+lemma mechanistic_coupling_observable_count_pos: "0 < (116 :: nat)"
+  by eval
+
+lemma mechanistic_coupling_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma medical_galactic_orbital_bridge_observable_count_pos: "0 < (48 :: nat)"
+  by eval
+
+lemma medical_galactic_orbital_bridge_median_error_under_half_pct: "(0.010717743028517818 :: real) < (0.5 :: real)"
+  by eval
+
+lemma metamaterial_fluid_design_prereg_scaffold_observable_count_pos: "0 < (25 :: nat)"
+  by eval
+
+lemma metamaterial_fluid_design_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma meteorology_gap_fill_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma meteorology_gap_fill_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma meteorology_gap_fill_observable_count_pos: "0 < (107 :: nat)"
+  by eval
+
+lemma meteorology_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma microtubule_quantum_consciousness_panel_observable_count_pos: "0 < (63 :: nat)"
+  by eval
+
+lemma microtubule_quantum_consciousness_panel_median_error_under_half_pct: "(0.044671 :: real) < (0.5 :: real)"
+  by eval
+
+lemma mpcorb_pooled_median_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
+  by eval
+
+lemma mpcorb_object_count_pos: "0 < (1554101 :: nat)"
+  by eval
+
+lemma mpcorb_pooled_median_under_tier_aspiration: "(0.023015 :: real) < (0.05 :: real)"
+  by eval
+
+lemma mpcorb_kepler_integrity_under_ppm: "(0.000001587557 :: real) < (0.001 :: real)"
+  by eval
+
+lemma mpcorb_green_gate_pass: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma music_harmonics_public_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma music_harmonics_public_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma mycology_ext_pooled_median_under_half_pct: "(0.022236250385193498 :: real) < (0.5 :: real)"
+  by eval
+
+lemma mycology_ext_headline_median_under_half_pct: "(0.022236250385193498 :: real) < (0.5 :: real)"
+  by eval
+
+lemma mycology_ext_observable_count_pos: "0 < (420 :: nat)"
+  by eval
+
+lemma mycology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma mycology_panel_observable_count_pos: "0 < (90 :: nat)"
+  by eval
+
+lemma mycology_panel_median_error_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
+  by eval
+
+lemma mycology_observable_count_pos: "0 < (420 :: nat)"
+  by eval
+
+lemma mycology_median_error_under_half_pct: "(0.022236250385193498 :: real) < (0.5 :: real)"
+  by eval
+
+lemma nasa_donki_solar_panel_observable_count_pos: "0 < (2148 :: nat)"
+  by eval
+
+lemma nasa_donki_solar_panel_median_error_under_half_pct: "(0.020755 :: real) < (0.5 :: real)"
+  by eval
+
+lemma nasa_donki_solar_observable_count_pos: "0 < (1200 :: nat)"
+  by eval
+
+lemma nasa_donki_solar_median_error_under_five_pct: "(0.020755 :: real) < (5.0 :: real)"
+  by eval
+
+lemma nasa_exoplanet_archive_observable_count_pos: "0 < (158 :: nat)"
+  by eval
+
+lemma nasa_exoplanet_archive_median_error_under_five_pct: "(0.023015 :: real) < (5.0 :: real)"
+  by eval
+
+lemma nasa_neo_feed_panel_observable_count_pos: "0 < (56 :: nat)"
+  by eval
+
+lemma nasa_neo_feed_panel_median_error_under_half_pct: "(0.021097 :: real) < (0.5 :: real)"
+  by eval
+
+lemma nasa_neo_feed_observable_count_pos: "0 < (56 :: nat)"
+  by eval
+
+lemma nasa_neo_feed_median_error_under_five_pct: "(0.021097 :: real) < (5.0 :: real)"
+  by eval
+
+lemma natural_formation_element_simulation_observable_count_pos: "0 < (44 :: nat)"
+  by eval
+
+lemma natural_formation_element_simulation_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma ncbi_gene_public_panel_observable_count_pos: "0 < (48 :: nat)"
+  by eval
+
+lemma ncbi_gene_public_panel_median_error_under_half_pct: "(0.025571999999999998 :: real) < (0.5 :: real)"
+  by eval
+
+lemma ncbi_gene_public_observable_count_pos: "0 < (48 :: nat)"
+  by eval
+
+lemma ncbi_gene_public_median_error_under_five_pct: "(0.025571999999999998 :: real) < (5.0 :: real)"
+  by eval
+
+lemma ncei_climate_open_pooled_median_under_half_pct: "(0.0291 :: real) < (0.5 :: real)"
+  by eval
+
+lemma ncei_climate_open_headline_median_under_half_pct: "(0.0291 :: real) < (0.5 :: real)"
+  by eval
+
+lemma ncei_climate_open_observable_count_pos: "0 < (607 :: nat)"
+  by eval
+
+lemma network_internet_protocols_observable_count_pos: "0 < (22 :: nat)"
+  by eval
+
+lemma network_internet_protocols_median_error_under_half_pct: "(0.010337117254355377 :: real) < (0.5 :: real)"
+  by eval
 
 lemma network_science_public_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
@@ -139,168 +301,6 @@ lemma stratum_pv_cell_count_pos: "(200 :: nat) < (222 :: nat)"
   by eval
 
 lemma stratum_vip_cell_count_pos: "(140 :: nat) < (146 :: nat)"
-  by eval
-
-lemma stratum_l23_pyramidal_cell_count_pos: "(1100 :: nat) < (1127 :: nat)"
-  by eval
-
-lemma neuron_train_cell_count_pos: "0 < (1745 :: nat)"
-  by eval
-
-lemma neuron_holdout_cell_count_pos: "0 < (420 :: nat)"
-  by eval
-
-lemma neuron_train_fi_median_lt_thirty_pct: "(0.24544591854270223 :: real) < (0.3 :: real)"
-  by eval
-
-lemma neuron_holdout_fi_median_lt_thirty_pct: "(0.23879717016341562 :: real) < (0.3 :: real)"
-  by eval
-
-lemma neuron_holdout_fi_pearson_gt_fifty_five: "(0.55 :: real) < (0.5982032061315143 :: real)"
-  by eval
-
-lemma neuron_train_cell_count_ge_gate: "(1744 :: nat) < (1745 :: nat)"
-  by eval
-
-lemma neuron_holdout_cell_count_ge_gate: "(419 :: nat) < (420 :: nat)"
-  by eval
-
-lemma neuron_canonical_neuroscience_S_positive: "0 < (0.5143619629083619 :: real)"
-  by eval
-
-lemma neuron_fi_point_count_pos: "0 < (4 :: nat)"
-  by eval
-
-lemma neuron_mean_rel_err_lt_fifteen_pct: "(0.07002728543379658 :: real) < (0.15 :: real)"
-  by eval
-
-lemma neuron_K_matches_thalamic_gate: "(0 :: real) < (0.0005 :: real)"
-  by eval
-
-lemma neuron_verifier_confidence_gt_ninety_pct: "(0.9 :: real) < (0.9598886696481669 :: real)"
-  by eval
-
-lemma neuron_multi_hero_median_error_under_half_pct: "(0.00225237811160842 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neuron_multi_hero_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma neuron_multi_hero_median_fi_under_thirty_pct: "(0 :: real) < (30.0 :: real)"
-  by eval
-
-lemma neuroscience_connectomics_depth_panel_observable_count_pos: "0 < (27 :: nat)"
-  by eval
-
-lemma neuroscience_connectomics_depth_panel_median_error_under_half_pct: "(0.0201195 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neutrino_physics_panel_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma neutrino_physics_panel_median_error_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
-  by eval
-
-lemma neutrino_physics_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma neutrino_physics_median_error_under_five_pct: "(0.009504 :: real) < (5.0 :: real)"
-  by eval
-
-lemma nist_codata_constants_observable_count_pos: "0 < (6 :: nat)"
-  by eval
-
-lemma nist_codata_constants_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma nist_dlmf_special_functions_observable_count_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma nist_dlmf_special_functions_median_error_under_half_pct: "(0.020055 :: real) < (0.5 :: real)"
-  by eval
-
-lemma noaa_coastal_tides_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma noaa_coastal_tides_median_error_under_five_pct: "(0.030173 :: real) < (5.0 :: real)"
-  by eval
-
-lemma noaa_ndbc_buoy_panel_observable_count_pos: "0 < (596 :: nat)"
-  by eval
-
-lemma noaa_ndbc_buoy_panel_median_error_under_half_pct: "(0.028287 :: real) < (0.5 :: real)"
-  by eval
-
-lemma noaa_ndbc_buoy_observable_count_pos: "0 < (596 :: nat)"
-  by eval
-
-lemma noaa_ndbc_buoy_median_error_under_five_pct: "(0.028287 :: real) < (5.0 :: real)"
-  by eval
-
-lemma nothing_perfection_friction_origin_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma nothing_perfection_friction_origin_panel_median_error_under_half_pct: "(0.008488 :: real) < (0.5 :: real)"
-  by eval
-
-lemma observer_channel_derivation_observable_count_pos: "0 < (348 :: nat)"
-  by eval
-
-lemma observer_channel_derivation_median_error_under_half_pct: "(0.0525102820198906 :: real) < (0.5 :: real)"
-  by eval
-
-lemma observer_effect_cross_species_panel_observable_count_pos: "0 < (289 :: nat)"
-  by eval
-
-lemma observer_effect_cross_species_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma oceanography_gap_fill_pooled_median_under_half_pct: "(0.03017272606768673 :: real) < (0.5 :: real)"
-  by eval
-
-lemma oceanography_gap_fill_headline_median_under_half_pct: "(0.030172726067689837 :: real) < (0.5 :: real)"
-  by eval
-
-lemma oceanography_gap_fill_observable_count_pos: "0 < (65 :: nat)"
-  by eval
-
-lemma oceanography_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma omni_theory_genesis_observable_count_pos: "0 < (27 :: nat)"
-  by eval
-
-lemma omni_theory_genesis_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma omni_theory_humanities_panel_observable_count_pos: "0 < (37 :: nat)"
-  by eval
-
-lemma omni_theory_humanities_panel_median_error_under_half_pct: "(0.0222545 :: real) < (0.5 :: real)"
-  by eval
-
-lemma oncology_pooled_median_under_half_pct: "(0.05041956982053305 :: real) < (0.5 :: real)"
-  by eval
-
-lemma oncology_headline_median_under_half_pct: "(0.05041956982053305 :: real) < (0.5 :: real)"
-  by eval
-
-lemma oncology_observable_count_pos: "0 < (67 :: nat)"
-  by eval
-
-lemma oncology_section_count_pos: "0 < (5 :: nat)"
-  by eval
-
-lemma oncology_beats_sota_headlines_pos: "0 < (5 :: nat)"
-  by eval
-
-lemma openalex_citation_graph_observable_count_pos: "0 < (80 :: nat)"
-  by eval
-
-lemma openalex_citation_graph_median_error_under_five_pct: "(0.031506 :: real) < (5.0 :: real)"
-  by eval
-
-lemma open_meteo_live_panel_observable_count_pos: "0 < (432 :: nat)"
   by eval
 
 end

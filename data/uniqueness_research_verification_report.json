@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-08-05T20:30:19.699596+00:00",
+  "spine": "uniqueness_research",
+  "obligation_count": 59,
+  "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
+  "python_decimal": {
+    "passed": 59,
+    "total": 59,
+    "status": "passed"
+  },
+  "rust_f64_replay": {
+    "status": "passed",
+    "detail_tail": "out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_uniqueness_research_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n1-Lean\\verification\\rust\\fsot_uniqueness_research_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.32s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\fsot_uniqueness_research_replay-cf2e6db928dd5056.exe)\n     Running tests\\replay_uniqueness_research.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\replay_uniqueness_research-ea9b8853ad918fbf.exe)\n   Doc-tests fsot_uniqueness_research_replay\n"
+  },
+  "smt_z3": {
+    "status": "passed",
+    "output": "sat",
+    "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\smt\\uniqueness_research_bounds.smt2"
+  },
+  "coq_uniqueness": {
+    "status": "passed",
+    "file": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\coq\\UniquenessResearchSpine.v"
+  },
+  "fstar": {
+    "status": "skipped",
+    "file": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\fstar\\FSOTUniquenessResearch.fst"
+  },
+  "artifacts": {
+    "obligations": "verification/obligations/uniqueness_research_spine.json",
+    "lean": "FSOT/Formal/UniquenessResearchSpine.lean",
+    "coq": "verification/coq/UniquenessResearchSpine.v",
+    "isabelle": "verification/isabelle/UniquenessResearchSpine.thy",
+    "fstar": "verification/fstar/FSOTUniquenessResearch.fst",
+    "smt": "verification/smt/uniqueness_research_bounds.smt2",
+    "tla": "verification/tla/FSOTUniquenessResearch.tla",
+    "rust": "verification/rust/fsot_uniqueness_research_replay",
+    "confinement_research": "data/uniqueness_confinement_research.json",
+    "reality_fiction_calibration": "data/reality_fiction_calibration.json"
+  },
+  "source_summaries": {
+    "confinement": {
+      "row_count": 10,
+      "identity_exact_count": 10,
+      "boolean_pass_count": 8,
+      "boolean_total": 8,
+      "free_color_damping_rate": 0.6684908749126979,
+      "singlet_relaxation_rate": 0.4280434460598068,
+      "nuclear_S_eq": 0.9213094330291355,
+      "Lambda_QCD_GeV": 0.21740442367390217,
+      "sigma_GeV2": 0.17658624702998535,
+      "theorem_status": "CANDIDATE_EXECUTABLE",
+      "classical_path_integral_uniqueness": "OPEN_NOT_CLAIMED",
+      "fsot_reframe": "Confinement = free-color modes damped by seed-locked \u03b3_color; color singlets are nuclear S_eq attractors. Not a continuum Yang\u2013Mills path-integral measure theorem."
+    },
+    "calibration_verdict": "CALIBRATION_PASS",
+    "calibration_ok": true
+  },
+  "honest_scope": "Numeric/structural multiprover certificates for free-color dampening candidate, fluid spacetime omni load-bearing flags, and reality/fiction calibration. Does NOT claim classical continuum Yang-Mills path-integral mass-gap theorem proved. Does claim: absolute rest damps; fluid spacetime is the model; inverted polarity forbidden.",
+  "overall_ok": true,
+  "github_ready": true
+}

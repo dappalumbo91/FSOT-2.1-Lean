@@ -1,0 +1,3192 @@
+{
+  "source_id": "jarvis_optimade_dft",
+  "kind": "json",
+  "payload": {
+    "meta": {
+      "api_version": "1.1.0",
+      "query": {
+        "representation": "v1/structures"
+      },
+      "more_data_available": true,
+      "provider": {
+        "name": "NIST-JARVIS",
+        "description": "JARVIS-DFT dataset for 3D and 2D materials.",
+        "prefix": "jarvis",
+        "homepage": "https://jarvis.nist.gov/jarvisdft"
+      },
+      "data_returned": 11346
+    },
+    "links": {
+      "base_url": {
+        "href": "https://jarvis.nist.gov/optimade/jarvisdft",
+        "meta": {
+          "_jarvis_version": "1.0"
+        }
+      },
+      "next": "https://jarvis.nist.gov/optimade/jarvisdft/v1/structures/?filter=nelements%3C%3D3&page=2&page_limit=40",
+      "previous": null
+    },
+    "data": [
+      {
+        "id": "dft_2d_JVASP-13539",
+        "type": "structures",
+        "attributes": {
+          "nsites": 1,
+          "search": "Sb",
+          "species": [
+            {
+              "mass": null,
+              "name": "Sb",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Sb"
+              ]
+            }
+          ],
+          "elements": [
+            "Sb"
+          ],
+          "nelements": 1,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-13539",
+          "_jarvis_nat": 1,
+          "_jarvis_spg": "191",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "hexagonal",
+          "_jarvis_epsx": 1.9433,
+          "_jarvis_epsy": 1.9433,
+          "_jarvis_epsz": 1.5808,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": 2785498.6366666667,
+          "_jarvis_pcond": 2834556.4,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": 4289941786666665.5,
+          "_jarvis_pkappa": 4310326427333333.5,
+          "_jarvis_search": "-Sb",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 1.0,
+          "_jarvis_formula": "Sb",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            1.0
+          ],
+          "lattice_vectors": [
+            [
+              3.152406491550115,
+              4.11144799e-08,
+              0.0
+            ],
+            [
+              -1.5762036745626893,
+              2.730064385189315,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              23.494676
+            ]
+          ],
+          "_jarvis_spillage": 0.402,
+          "species_at_sites": [
+            "Sb"
+          ],
+          "_jarvis_n-Seebeck": -1.4533333333333331,
+          "_jarvis_p-Seebeck": -0.4300000000000003,
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-13539",
+          "_jarvis_maxdiff_bz": 0.1294,
+          "_jarvis_spg_number": "191",
+          "_jarvis_spg_symbol": "P6/mmm",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": 29.166666666666668,
+          "_jarvis_p-powerfact": 114.65666666666668,
+          "_jarvis_maxdiff_mesh": 0.1291,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": 0.0,
+          "_jarvis_avg_hole_mass": 0.0,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.757130015045405e-06,
+              1.8200409100199912,
+              1.3736634555600071
+            ]
+          ],
+          "chemical_formula_reduced": "Sb",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": 571.66,
+          "_jarvis_kpoint_length_unit": 100,
+          "chemical_formula_anonymous": "A",
+          "chemical_formula_descriptive": "Sb",
+          "_jarvis_optb88vdw_total_energy": -1.26856,
+          "_jarvis_formation_energy_peratom": 0.87535,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-13546",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "Br-V",
+          "species": [
+            {
+              "mass": null,
+              "name": "Br",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Br"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "V",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "V"
+              ]
+            }
+          ],
+          "elements": [
+            "Br",
+            "Br",
+            "V"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-13546",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "164",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": 20.7942,
+          "_jarvis_epsy": 20.7942,
+          "_jarvis_epsz": 1.8304,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_ncond": 9004.359999999999,
+          "_jarvis_pcond": 1406.6999999999998,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": 45802047356000.01,
+          "_jarvis_pkappa": 12008569583366.666,
+          "_jarvis_search": "-Br-V",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 1.045,
+          "_jarvis_formula": "VBr2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              3.8039953527060177,
+              0.0,
+              0.0
+            ],
+            [
+              -1.9019976763530089,
+              3.2943567162703387,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              26.721105
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "Br",
+            "Br",
+            "V"
+          ],
+          "_jarvis_n-Seebeck": -260.68,
+          "_jarvis_p-Seebeck": 379.63000000000005,
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-13546",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "164",
+          "_jarvis_spg_symbol": "P-3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": 658.3933333333333,
+          "_jarvis_p-powerfact": 185.41333333333333,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": 226.76000000000002,
+          "_jarvis_avg_hole_mass": 21492.77,
+          "_jarvis_magmom_outcar": 2.609,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_magmom_oszicar": 3.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.4223745619999961,
+              2.2262593064399954,
+              4.822194156604511
+            ],
+            [
+              -0.47962163400000013,
+              1.128137110199993,
+              1.8988839630955663
+            ],
+            [
+              1.422378366000013,
+              0.030014913959990775,
+              3.360552420399912
+            ]
+          ],
+          "chemical_formula_reduced": "Br2V",
+          "_jarvis_optb88vdw_bandgap": 1.245,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": 76.94,
+          "_jarvis_kpoint_length_unit": 30,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "VBr2",
+          "_jarvis_optb88vdw_total_energy": -2.64675,
+          "_jarvis_formation_energy_peratom": -0.78827,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-13560",
+        "type": "structures",
+        "attributes": {
+          "nsites": 2,
+          "search": "N-Zr",
+          "species": [
+            {
+              "mass": null,
+              "name": "N",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "N"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "Zr",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Zr"
+              ]
+            }
+          ],
+          "elements": [
+            "N",
+            "Zr"
+          ],
+          "nelements": 2,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-13560",
+          "_jarvis_nat": 2,
+          "_jarvis_spg": "156",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": 2.763,
+          "_jarvis_epsy": 2.7631,
+          "_jarvis_epsz": 1.6945,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 800,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-N-Zr",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 0.643,
+          "_jarvis_formula": "ZrN",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.5,
+            0.5
+          ],
+          "lattice_vectors": [
+            [
+              3.5011792452956176,
+              -2.8293767547e-05,
+              0.0
+            ],
+            [
+              -1.750614125121105,
+              3.032100283714583,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              25.584097
+            ]
+          ],
+          "_jarvis_spillage": 0.219,
+          "species_at_sites": [
+            "N",
+            "Zr"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [
+            "STM,JVASP-13560_Positive.zip,https://ndownloader.figshare.com/files/24963629",
+            "STM,JVASP-13560_Negative.zip,https://ndownloader.figshare.com/files/24992417",
+            "OPT-LOPTICS,JVASP-13560.zip,https://ndownloader.figshare.com/files/24237920",
+            "OPT-Bandst,JVASP-13560.zip,https://ndownloader.figshare.com/files/23791088",
+            "DFT-SCF,JVASP-13560.zip,https://ndownloader.figshare.com/files/23197451"
+          ],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-13560",
+          "_jarvis_maxdiff_bz": 0.042,
+          "_jarvis_spg_number": "156",
+          "_jarvis_spg_symbol": "P3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": 0.0438,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.7505981401869293,
+              1.0106726143576987,
+              2.264911611270039
+            ],
+            [
+              -2.8140186929536074e-05,
+              2.0213973856423006,
+              2.627868425029961
+            ]
+          ],
+          "chemical_formula_reduced": "NZr",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": 1131.05,
+          "_jarvis_kpoint_length_unit": 65,
+          "chemical_formula_anonymous": "AB",
+          "chemical_formula_descriptive": "ZrN",
+          "_jarvis_optb88vdw_total_energy": -6.93053,
+          "_jarvis_formation_energy_peratom": -0.62925,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-13576",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "Br-Fe",
+          "species": [
+            {
+              "mass": null,
+              "name": "Br",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Br"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "Fe",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Fe"
+              ]
+            }
+          ],
+          "elements": [
+            "Br",
+            "Br",
+            "Fe"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-13576",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "164",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": 5.9565,
+          "_jarvis_epsy": 5.9565,
+          "_jarvis_epsz": 2.1856,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_ncond": 76802.76666666668,
+          "_jarvis_pcond": 82393.84999999999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": 102936236307000.0,
+          "_jarvis_pkappa": 106428948730333.33,
+          "_jarvis_search": "-Br-Fe",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 1.141,
+          "_jarvis_formula": "FeBr2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              3.6934841711507236,
+              5.3246092e-09,
+              0.0
+            ],
+            [
+              -1.8467425763347127,
+              3.198651534820462,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              26.557841
+            ]
+          ],
+          "_jarvis_spillage": 0.049,
+          "species_at_sites": [
+            "Br",
+            "Br",
+            "Fe"
+          ],
+          "_jarvis_n-Seebeck": 39.71666666666667,
+          "_jarvis_p-Seebeck": 34.57,
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-13576",
+          "_jarvis_maxdiff_bz": 0.2294,
+          "_jarvis_spg_number": "164",
+          "_jarvis_spg_symbol": "P-3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": 159.6833333333333,
+          "_jarvis_p-powerfact": 136.23333333333332,
+          "_jarvis_maxdiff_mesh": 0.2481,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": 0.023333333333333334,
+          "_jarvis_avg_hole_mass": 0.023333333333333334,
+          "_jarvis_magmom_outcar": 3.795,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_magmom_oszicar": 4.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.4018160122399876,
+              2.1823429355000084,
+              4.787647552049977
+            ],
+            [
+              -0.44491844753998705,
+              1.116127335049998,
+              1.7702002056300066
+            ],
+            [
+              1.4018160122400005,
+              0.049911734600010554,
+              3.2789105999200263
+            ]
+          ],
+          "chemical_formula_reduced": "Br2Fe",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": 74.28,
+          "_jarvis_kpoint_length_unit": 25,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "FeBr2",
+          "_jarvis_optb88vdw_total_energy": -1.80728,
+          "_jarvis_formation_energy_peratom": -0.35903,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-13597",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "N-W",
+          "species": [
+            {
+              "mass": null,
+              "name": "N",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "N"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "W",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "W"
+              ]
+            }
+          ],
+          "elements": [
+            "N",
+            "W",
+            "W"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-13597",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "164",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": 29.7132,
+          "_jarvis_epsy": 29.7132,
+          "_jarvis_epsz": 7.7405,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 900,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": 1256566.2,
+          "_jarvis_pcond": 1244315.82,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": 1851394434800000.2,
+          "_jarvis_pkappa": 1820054379233333.2,
+          "_jarvis_search": "-N-W",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 3.699,
+          "_jarvis_formula": "W2N",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.6666666666666666,
+            0.3333333333333333
+          ],
+          "lattice_vectors": [
+            [
+              2.776864800931589,
+              1.18110164e-08,
+              0.0
+            ],
+            [
+              -1.3884328799486196,
+              2.4048358722717365,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              25.656657
+            ]
+          ],
+          "_jarvis_spillage": 0.342,
+          "species_at_sites": [
+            "N",
+            "W",
+            "W"
+          ],
+          "_jarvis_n-Seebeck": -16.843333333333334,
+          "_jarvis_p-Seebeck": -13.476666666666668,
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-13597",
+          "_jarvis_maxdiff_bz": 0.0789,
+          "_jarvis_spg_number": "164",
+          "_jarvis_spg_symbol": "P-3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": 115.47666666666667,
+          "_jarvis_p-powerfact": 115.48666666666666,
+          "_jarvis_maxdiff_mesh": 0.0001,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": 0.0,
+          "_jarvis_avg_hole_mass": 0.0,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.001,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              0.0,
+              0.0,
+              8.828328422700075
+            ],
+            [
+              1.3884313884299866,
+              0.8016125317200078,
+              7.352459006849531
+            ],
+            [
+              -1.388429986679031e-06,
+              1.6032274682799923,
+              10.304197838550436
+            ]
+          ],
+          "chemical_formula_reduced": "NW2",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": 515.58,
+          "_jarvis_kpoint_length_unit": 50,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "W2N",
+          "_jarvis_optb88vdw_total_energy": -8.00488,
+          "_jarvis_formation_energy_peratom": 0.91133,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-13647",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "Ge-Te",
+          "species": [
+            {
+              "mass": null,
+              "name": "Ge",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Ge"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "Te",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Te"
+              ]
+            }
+          ],
+          "elements": [
+            "Ge",
+            "Ge",
+            "Te"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-13647",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "156",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": 20.1561,
+          "_jarvis_epsy": 20.1548,
+          "_jarvis_epsz": 6.0533,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-Ge-Te",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 1.683,
+          "_jarvis_formula": "Ge2Te",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.6666666666666666,
+            0.3333333333333333
+          ],
+          "lattice_vectors": [
+            [
+              3.6851840973057475,
+              -2.64308419402e-05,
+              0.0
+            ],
+            [
+              -1.8426149384372785,
+              3.191450023182417,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              22.889599
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "Ge",
+            "Ge",
+            "Te"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [
+            "OPT-LOPTICS,JVASP-13647.zip,https://ndownloader.figshare.com/files/24238181",
+            "OPT-Bandst,JVASP-13647.zip,https://ndownloader.figshare.com/files/23791181",
+            "DFT-SCF,JVASP-13647.zip,https://ndownloader.figshare.com/files/23198405"
+          ],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-13647",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "156",
+          "_jarvis_spg_symbol": "P3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.8426891982602376,
+              1.063735545351057,
+              3.5415633300629437
+            ],
+            [
+              -0.00011975066306170134,
+              2.127684773579133,
+              7.467629064437622
+            ],
+            [
+              5.5240282319953e-07,
+              -3.1893018979664397e-07,
+              5.499428034299351
+            ]
+          ],
+          "chemical_formula_reduced": "Ge2Te",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": -99999,
+          "_jarvis_kpoint_length_unit": 70,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "Ge2Te",
+          "_jarvis_optb88vdw_total_energy": -0.52911,
+          "_jarvis_formation_energy_peratom": 0.58671,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-14419",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "Co-I",
+          "species": [
+            {
+              "mass": null,
+              "name": "Co",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Co"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "I",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "I"
+              ]
+            }
+          ],
+          "elements": [
+            "Co",
+            "I",
+            "I"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-14419",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "164",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": 16.7072,
+          "_jarvis_epsy": 16.7072,
+          "_jarvis_epsz": 2.6201,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": 78108.34666666666,
+          "_jarvis_pcond": 80384.23666666666,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": 98073380780000.0,
+          "_jarvis_pkappa": 99565270086666.7,
+          "_jarvis_search": "-Co-I",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 1.467,
+          "_jarvis_formula": "CoI2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              3.9151521844364323,
+              3.461659e-09,
+              0.0
+            ],
+            [
+              -1.95757658623647,
+              3.3906212312173682,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              26.666722
+            ]
+          ],
+          "_jarvis_spillage": 0.852,
+          "species_at_sites": [
+            "Co",
+            "I",
+            "I"
+          ],
+          "_jarvis_n-Seebeck": 40.9,
+          "_jarvis_p-Seebeck": 37.29,
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-14419",
+          "_jarvis_maxdiff_bz": 0.2359,
+          "_jarvis_spg_number": "164",
+          "_jarvis_spg_symbol": "P-3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": 190.06000000000003,
+          "_jarvis_p-powerfact": 170.57333333333332,
+          "_jarvis_maxdiff_mesh": 0.2271,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": 0.0,
+          "_jarvis_avg_hole_mass": 0.0,
+          "_jarvis_magmom_outcar": 2.2439999999999998,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 2.409,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              -0.6016870958000143,
+              3.313466441900012,
+              3.3333666667199338
+            ],
+            [
+              1.3558876132900044,
+              2.183260905440001,
+              4.88378804183596
+            ],
+            [
+              -0.6016818048899913,
+              1.0530519783599985,
+              1.7829452916040998
+            ]
+          ],
+          "chemical_formula_reduced": "CoI2",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": 85.11,
+          "_jarvis_kpoint_length_unit": 40,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "CoI2",
+          "_jarvis_optb88vdw_total_energy": -1.07073,
+          "_jarvis_formation_energy_peratom": 0.10244,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-14441",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "Co-O",
+          "species": [
+            {
+              "mass": null,
+              "name": "Co",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Co"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "O",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "O"
+              ]
+            }
+          ],
+          "elements": [
+            "Co",
+            "O",
+            "O"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-14441",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "164",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": 14.1627,
+          "_jarvis_epsy": 14.1627,
+          "_jarvis_epsz": 2.0511,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 850,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": 192055.78666666665,
+          "_jarvis_pcond": 196761.98666666666,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": 249390774250000.0,
+          "_jarvis_pkappa": 253818882113333.25,
+          "_jarvis_search": "-Co-O",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 0.895,
+          "_jarvis_formula": "CoO2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              2.8173501021142346,
+              0.0,
+              0.0
+            ],
+            [
+              -1.4086750510571173,
+              2.439896157530945,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              24.551775
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "Co",
+            "O",
+            "O"
+          ],
+          "_jarvis_n-Seebeck": 15.549999999999999,
+          "_jarvis_p-Seebeck": 15.603333333333333,
+          "_jarvis_raw_files": [
+            "STM,JVASP-14441_Positive.zip,https://ndownloader.figshare.com/files/24963740",
+            "STM,JVASP-14441_Negative.zip,https://ndownloader.figshare.com/files/24992651",
+            "OPT-LOPTICS,JVASP-14441.zip,https://ndownloader.figshare.com/files/24246278",
+            "OPT-Bandst,JVASP-14441.zip,https://ndownloader.figshare.com/files/23789699",
+            "DFT-SCF,JVASP-14441.zip,https://ndownloader.figshare.com/files/23216093"
+          ],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-14441",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "164",
+          "_jarvis_spg_symbol": "P-3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": 103.96666666666665,
+          "_jarvis_p-powerfact": 80.70666666666666,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": 0.013333333333333334,
+          "_jarvis_avg_hole_mass": 0.013333333333333334,
+          "_jarvis_magmom_outcar": 0.9079999999999999,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_magmom_oszicar": 0.94,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              -0.5506613372600087,
+              2.2666963788000007,
+              2.275876350660027
+            ],
+            [
+              0.8580139207300049,
+              1.4533971920999926,
+              3.210443187906743
+            ],
+            [
+              2.2666934047499976,
+              0.6400955655000083,
+              1.3413340651932495
+            ]
+          ],
+          "chemical_formula_reduced": "CoO2",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": 66.6,
+          "_jarvis_kpoint_length_unit": 30,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "CoO2",
+          "_jarvis_optb88vdw_total_energy": -4.52094,
+          "_jarvis_formation_energy_peratom": -0.92474,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-14455",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "S-Tl",
+          "species": [
+            {
+              "mass": null,
+              "name": "S",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "S"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "Tl",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Tl"
+              ]
+            }
+          ],
+          "elements": [
+            "S",
+            "S",
+            "Tl"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-14455",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "164",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": 26.29,
+          "_jarvis_epsy": 26.2926,
+          "_jarvis_epsz": 4.7639,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 600,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-S-Tl",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 1.402,
+          "_jarvis_formula": "TlS2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              3.765373423296394,
+              2.59362912579e-05,
+              0.0
+            ],
+            [
+              -1.8826642501636388,
+              3.2609218570301923,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              25.9035
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "S",
+            "S",
+            "Tl"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [
+            "FD-ELAST,JVASP-14455.zip,https://ndownloader.figshare.com/files/22985216",
+            "OPT-LOPTICS,JVASP-14455.zip,https://ndownloader.figshare.com/files/24246317",
+            "OPT-Bandst,JVASP-14455.zip,https://ndownloader.figshare.com/files/23789729",
+            "DFT-SCF,JVASP-14455.zip,https://ndownloader.figshare.com/files/23216108"
+          ],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-14455",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "164",
+          "_jarvis_spg_symbol": "P-3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              -7.518208706341029e-05,
+              2.174009695542797,
+              9.355248000830393
+            ],
+            [
+              1.8827851820870631,
+              1.0869403044572037,
+              12.548259432669497
+            ],
+            [
+              0.0,
+              0.0,
+              10.951740764999977
+            ]
+          ],
+          "chemical_formula_reduced": "S2Tl",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": -99999,
+          "_jarvis_kpoint_length_unit": 65,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "TlS2",
+          "_jarvis_optb88vdw_total_energy": -1.00061,
+          "_jarvis_formation_energy_peratom": 0.38339,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-14456",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "Co-O",
+          "species": [
+            {
+              "mass": null,
+              "name": "Co",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Co"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "O",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "O"
+              ]
+            }
+          ],
+          "elements": [
+            "Co",
+            "O",
+            "O"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-14456",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "191",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "hexagonal",
+          "_jarvis_epsx": 2.9013,
+          "_jarvis_epsy": 2.9013,
+          "_jarvis_epsz": 5.9349,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 850,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_ncond": 483063.5366666667,
+          "_jarvis_pcond": 487942.2033333333,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": 647853860000000.0,
+          "_jarvis_pkappa": 649717782866666.6,
+          "_jarvis_search": "-Co-O",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 0.831,
+          "_jarvis_formula": "CoO2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              2.871736296920084,
+              0.0,
+              0.0
+            ],
+            [
+              -1.435868148460042,
+              2.4869967421882646,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              25.455227
+            ]
+          ],
+          "_jarvis_spillage": 0.03,
+          "species_at_sites": [
+            "Co",
+            "O",
+            "O"
+          ],
+          "_jarvis_n-Seebeck": -45.14000000000001,
+          "_jarvis_p-Seebeck": -45.95333333333334,
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-14456",
+          "_jarvis_maxdiff_bz": 0.0566,
+          "_jarvis_spg_number": "191",
+          "_jarvis_spg_symbol": "P6/mmm",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": 64.61333333333333,
+          "_jarvis_p-powerfact": 45.910000000000004,
+          "_jarvis_maxdiff_mesh": 0.048,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": 0.0,
+          "_jarvis_avg_hole_mass": 0.0,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.435871435869986,
+              0.828999171000008,
+              2.6138193820899747
+            ],
+            [
+              1.435871435869986,
+              0.828999171000008,
+              1.0279718595300011
+            ],
+            [
+              1.435871435869986,
+              0.828999171000008,
+              4.199641449419831
+            ]
+          ],
+          "chemical_formula_reduced": "CoO2",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": 49.87,
+          "_jarvis_kpoint_length_unit": 70,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "CoO2",
+          "_jarvis_optb88vdw_total_energy": -3.38217,
+          "_jarvis_formation_energy_peratom": 0.21403,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-14457",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "O-V",
+          "species": [
+            {
+              "mass": null,
+              "name": "O",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "O"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "V",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "V"
+              ]
+            }
+          ],
+          "elements": [
+            "O",
+            "O",
+            "V"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-14457",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "164",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": 11.7028,
+          "_jarvis_epsy": 11.7028,
+          "_jarvis_epsz": 1.6914,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 850,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-O-V",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 0.717,
+          "_jarvis_formula": "VO2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              2.8991810452012925,
+              -3.3687737861e-06,
+              0.0
+            ],
+            [
+              -1.449593440044752,
+              2.5107631198785283,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              26.3806
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "O",
+            "O",
+            "V"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-14457",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "164",
+          "_jarvis_spg_symbol": "P-3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.9359999999999999,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_magmom_oszicar": 1.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              -2.95594408412178e-06,
+              1.6738417066126652,
+              4.201530153048006
+            ],
+            [
+              1.4495929559440839,
+              0.8369182933873343,
+              6.17905128275198
+            ],
+            [
+              0.0,
+              0.0,
+              5.190303908200053
+            ]
+          ],
+          "chemical_formula_reduced": "O2V",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": 58.83,
+          "_jarvis_kpoint_length_unit": 25,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "VO2",
+          "_jarvis_optb88vdw_total_energy": -6.36024,
+          "_jarvis_formation_energy_peratom": -2.28804,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-14459",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "Bi-O",
+          "species": [
+            {
+              "mass": null,
+              "name": "Bi",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Bi"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "O",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "O"
+              ]
+            }
+          ],
+          "elements": [
+            "Bi",
+            "O",
+            "O"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-14459",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "187",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "hexagonal",
+          "_jarvis_epsx": 1.942,
+          "_jarvis_epsy": 1.942,
+          "_jarvis_epsz": 2.0512,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 800,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_ncond": 2458.4966666666664,
+          "_jarvis_pcond": 21338.053333333333,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": 10062790146127.0,
+          "_jarvis_pkappa": 51301761922870.0,
+          "_jarvis_search": "-Bi-O",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 1.317,
+          "_jarvis_formula": "BiO2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              3.687470787206414,
+              0.0,
+              0.0
+            ],
+            [
+              -1.843735393603207,
+              3.1934438725802305,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              25.806384
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "Bi",
+            "O",
+            "O"
+          ],
+          "_jarvis_n-Seebeck": -8.106666666666664,
+          "_jarvis_p-Seebeck": 103.85666666666667,
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-14459",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "187",
+          "_jarvis_spg_symbol": "P-6m2",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": 103.51333333333334,
+          "_jarvis_p-powerfact": 481.3766666666667,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": 359.74,
+          "_jarvis_avg_hole_mass": 326.22999999999996,
+          "_jarvis_magmom_outcar": 0.821,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_magmom_oszicar": 1.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.8437351770699821,
+              1.0644789355200102,
+              1.9516074875000595
+            ],
+            [
+              -5.177069982265389e-06,
+              2.1289610644799897,
+              0.8533491448903208
+            ],
+            [
+              -5.177069982265389e-06,
+              2.1289610644799897,
+              3.04984002372986
+            ]
+          ],
+          "chemical_formula_reduced": "BiO2",
+          "_jarvis_optb88vdw_bandgap": 0.334,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": 161.3,
+          "_jarvis_kpoint_length_unit": 20,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "BiO2",
+          "_jarvis_optb88vdw_total_energy": -3.02296,
+          "_jarvis_formation_energy_peratom": -0.48464,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-153099",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "B-N",
+          "species": [
+            {
+              "mass": null,
+              "name": "B",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "B"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "N",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "N"
+              ]
+            }
+          ],
+          "elements": [
+            "B",
+            "B",
+            "N"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-153099",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "65",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "orthorhombic",
+          "_jarvis_epsx": -99999,
+          "_jarvis_epsy": -99999,
+          "_jarvis_epsz": -99999,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-B-N",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 0.291,
+          "_jarvis_formula": "B2N",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.6666666666666666,
+            0.3333333333333333
+          ],
+          "lattice_vectors": [
+            [
+              4.001887469408586,
+              -0.0061232454231557,
+              0.0
+            ],
+            [
+              -3.0249569578366,
+              2.620071795839879,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              19.424165763548334
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "B",
+            "B",
+            "N"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-153099",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "65",
+          "_jarvis_spg_symbol": "Cmmm",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.7341790590260764,
+              0.8414061885770255,
+              9.119259485051005
+            ],
+            [
+              -0.7572524019925883,
+              1.7725449256884944,
+              9.119259485051005
+            ],
+            [
+              0.4884633280077349,
+              1.3069755576399944,
+              9.119259485051005
+            ]
+          ],
+          "chemical_formula_reduced": "B2N",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": -99999,
+          "_jarvis_kpoint_length_unit": 40,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "B2N",
+          "_jarvis_optb88vdw_total_energy": -6.1705,
+          "_jarvis_formation_energy_peratom": 0.08959,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-153100",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "B-O",
+          "species": [
+            {
+              "mass": null,
+              "name": "B",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "B"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "O",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "O"
+              ]
+            }
+          ],
+          "elements": [
+            "B",
+            "B",
+            "O"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-153100",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "65",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "orthorhombic",
+          "_jarvis_epsx": -99999,
+          "_jarvis_epsy": -99999,
+          "_jarvis_epsz": -99999,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-B-O",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 0.307,
+          "_jarvis_formula": "B2O",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.6666666666666666,
+            0.3333333333333333
+          ],
+          "lattice_vectors": [
+            [
+              3.920532147729195,
+              0.0190992655071637,
+              0.0
+            ],
+            [
+              -2.9470009932566126,
+              2.585753710085234,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              19.944160926707273
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "B",
+            "B",
+            "O"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-153100",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "65",
+          "_jarvis_spg_symbol": "Cmmm",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.741904233681744,
+              0.833332982691233,
+              9.363384394358928
+            ],
+            [
+              -0.7683775017035187,
+              1.7715181040368284,
+              9.363384394358928
+            ],
+            [
+              0.48676336549363924,
+              1.3024255438651033,
+              9.363384394358928
+            ]
+          ],
+          "chemical_formula_reduced": "B2O",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": -99999,
+          "_jarvis_kpoint_length_unit": 55,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "B2O",
+          "_jarvis_optb88vdw_total_energy": -5.77262,
+          "_jarvis_formation_energy_peratom": -0.73051,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-153106",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "Nb-Te",
+          "species": [
+            {
+              "mass": null,
+              "name": "Nb",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Nb"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "Te",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Te"
+              ]
+            }
+          ],
+          "elements": [
+            "Nb",
+            "Te",
+            "Te"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-153106",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "187",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "hexagonal",
+          "_jarvis_epsx": -99999,
+          "_jarvis_epsy": -99999,
+          "_jarvis_epsz": -99999,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-Nb-Te",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 1.626,
+          "_jarvis_formula": "NbTe2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              1.8507135019798926,
+              -3.20552842201498,
+              0.0
+            ],
+            [
+              1.8507135019798924,
+              3.20552842201498,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              29.953821452863856
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "Nb",
+            "Te",
+            "Te"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-153106",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "187",
+          "_jarvis_spg_symbol": "P-6m2",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              0.0,
+              0.0,
+              9.155325175359938
+            ],
+            [
+              1.85071,
+              1.0685121370199795,
+              11.008123689705567
+            ],
+            [
+              1.85071,
+              1.0685121370199795,
+              7.302526661014521
+            ]
+          ],
+          "chemical_formula_reduced": "NbTe2",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": -99999,
+          "_jarvis_kpoint_length_unit": 30,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "NbTe2",
+          "_jarvis_optb88vdw_total_energy": -3.57295,
+          "_jarvis_formation_energy_peratom": -0.32565,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-153108",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "B-C-Li",
+          "species": [
+            {
+              "mass": null,
+              "name": "B",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "B"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "C",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "C"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "Li",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Li"
+              ]
+            }
+          ],
+          "elements": [
+            "B",
+            "C",
+            "Li"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-153108",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "156",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": -99999,
+          "_jarvis_epsy": -99999,
+          "_jarvis_epsz": -99999,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-B-C-Li",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 0.379,
+          "_jarvis_formula": "LiBC",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "lattice_vectors": [
+            [
+              1.3726799242615368,
+              -2.3775514972876404,
+              0.0
+            ],
+            [
+              1.3726799242615368,
+              2.3775514972876404,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              19.983346649631255
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "B",
+            "C",
+            "Li"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-153108",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "156",
+          "_jarvis_spg_symbol": "P3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.37268,
+              0.7925182516999847,
+              5.189132330656937
+            ],
+            [
+              1.37268,
+              -0.7925182516999847,
+              5.089104326285505
+            ],
+            [
+              0.0,
+              0.0,
+              3.6880467246573714
+            ]
+          ],
+          "chemical_formula_reduced": "BCLi",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": -99999,
+          "_jarvis_kpoint_length_unit": 45,
+          "chemical_formula_anonymous": "ABC",
+          "chemical_formula_descriptive": "LiBC",
+          "_jarvis_optb88vdw_total_energy": -5.03466,
+          "_jarvis_formation_energy_peratom": -0.06357,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-153113",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "B-Mg",
+          "species": [
+            {
+              "mass": null,
+              "name": "B",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "B"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "Mg",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Mg"
+              ]
+            }
+          ],
+          "elements": [
+            "B",
+            "B",
+            "Mg"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-153113",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "183",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "hexagonal",
+          "_jarvis_epsx": -99999,
+          "_jarvis_epsy": -99999,
+          "_jarvis_epsz": -99999,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-B-Mg",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 0.466,
+          "_jarvis_formula": "MgB2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              3.0356274027889545,
+              -6.1427e-12,
+              0.0
+            ],
+            [
+              -1.517813701350413,
+              2.6289304472317627,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              20.502032511359122
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "B",
+            "B",
+            "Mg"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-153113",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "183",
+          "_jarvis_spg_symbol": "P6mm",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.517822220085357,
+              0.8763135428113726,
+              1.7471277903144415
+            ],
+            [
+              7.621209335072241e-06,
+              1.752625361131906,
+              1.7471277903144415
+            ],
+            [
+              0.0,
+              0.0,
+              0.1086072496403178
+            ]
+          ],
+          "chemical_formula_reduced": "B2Mg",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": -99999,
+          "_jarvis_kpoint_length_unit": 50,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "MgB2",
+          "_jarvis_optb88vdw_total_energy": -3.15792,
+          "_jarvis_formation_energy_peratom": 0.43729,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-153114",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "B-H-Mg",
+          "species": [
+            {
+              "mass": null,
+              "name": "B",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "B"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "H",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "H"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "Mg",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Mg"
+              ]
+            }
+          ],
+          "elements": [
+            "B",
+            "H",
+            "Mg"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-153114",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "6",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "monoclinic",
+          "_jarvis_epsx": -99999,
+          "_jarvis_epsy": -99999,
+          "_jarvis_epsz": -99999,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-B-H-Mg",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 0.277,
+          "_jarvis_formula": "MgBH",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "lattice_vectors": [
+            [
+              3.2544419911711056,
+              0.0,
+              -0.8264833963930527
+            ],
+            [
+              0.0,
+              3.0938935216770056,
+              0.0
+            ],
+            [
+              -0.5400505517642713,
+              0.0,
+              21.61384467064666
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "B",
+            "H",
+            "Mg"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-153114",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "6",
+          "_jarvis_spg_symbol": "Pm",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              0.3490980222635172,
+              2.320420957052221,
+              0.9013217839141835
+            ],
+            [
+              0.6481026363820085,
+              2.320420957052221,
+              2.078124507975197
+            ],
+            [
+              1.8521656684963694,
+              0.7734736523145043,
+              -0.0002931919546665054
+            ]
+          ],
+          "chemical_formula_reduced": "BHMg",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": -99999,
+          "_jarvis_kpoint_length_unit": 60,
+          "chemical_formula_anonymous": "ABC",
+          "chemical_formula_descriptive": "MgBH",
+          "_jarvis_optb88vdw_total_energy": -2.16217,
+          "_jarvis_formation_energy_peratom": 0.58761,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-153118",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "Nb-Te",
+          "species": [
+            {
+              "mass": null,
+              "name": "Nb",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Nb"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "Te",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Te"
+              ]
+            }
+          ],
+          "elements": [
+            "Nb",
+            "Te",
+            "Te"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-153118",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "164",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": -99999,
+          "_jarvis_epsy": -99999,
+          "_jarvis_epsz": -99999,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-Nb-Te",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 2.036,
+          "_jarvis_formula": "NbTe2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              3.6823442232907753,
+              -4.363874797e-07,
+              1e-16
+            ],
+            [
+              -1.841173017501005,
+              3.189003547857861,
+              0.0
+            ],
+            [
+              -1e-16,
+              6e-16,
+              24.17732915266208
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "Nb",
+            "Te",
+            "Te"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-153118",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "164",
+          "_jarvis_spg_symbol": "P-3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.71632946815,
+              0.36849851699999525,
+              3.046536998639971
+            ],
+            [
+              -0.12483869067999127,
+              1.4314974540000054,
+              4.905249090462092
+            ],
+            [
+              1.7163276269800047,
+              2.4944995800000074,
+              1.187849084147791
+            ]
+          ],
+          "chemical_formula_reduced": "NbTe2",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": -99999,
+          "_jarvis_kpoint_length_unit": 30,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "NbTe2",
+          "_jarvis_optb88vdw_total_energy": -3.56507,
+          "_jarvis_formation_energy_peratom": -0.31776,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      },
+      {
+        "id": "dft_2d_JVASP-153119",
+        "type": "structures",
+        "attributes": {
+          "nsites": 3,
+          "search": "Ta-Te",
+          "species": [
+            {
+              "mass": null,
+              "name": "Ta",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Ta"
+              ]
+            },
+            {
+              "mass": null,
+              "name": "Te",
+              "attached": null,
+              "nattached": null,
+              "concentration": [
+                1.0
+              ],
+              "original_name": null,
+              "chemical_symbols": [
+                "Te"
+              ]
+            }
+          ],
+          "elements": [
+            "Ta",
+            "Te",
+            "Te"
+          ],
+          "nelements": 3,
+          "_jarvis_efg": [],
+          "_jarvis_jid": "JVASP-153119",
+          "_jarvis_nat": 3,
+          "_jarvis_spg": "164",
+          "_jarvis_typ": "SingleLayer",
+          "_jarvis_crys": "trigonal",
+          "_jarvis_epsx": -99999,
+          "_jarvis_epsy": -99999,
+          "_jarvis_epsz": -99999,
+          "_jarvis_func": "OptB88vdW",
+          "_jarvis_icsd": "",
+          "_jarvis_slme": -99999,
+          "_jarvis_ehull": 0.0,
+          "_jarvis_encut": 500,
+          "_jarvis_mepsx": -99999,
+          "_jarvis_mepsy": -99999,
+          "_jarvis_mepsz": -99999,
+          "_jarvis_modes": -99999,
+          "_jarvis_ncond": -99999,
+          "_jarvis_pcond": -99999,
+          "last_modified": "2024-12-08T04:27:35.204822+00:00",
+          "_jarvis_nkappa": -99999,
+          "_jarvis_pkappa": -99999,
+          "_jarvis_search": "-Ta-Te",
+          "_jarvis_source": "dft_2d",
+          "_jarvis_density": 2.536,
+          "_jarvis_formula": "TaTe2",
+          "_jarvis_hse_gap": -99999,
+          "_jarvis_max_efg": -99999,
+          "_jarvis_poisson": -99999,
+          "dimension_types": [
+            1,
+            1,
+            1
+          ],
+          "elements_ratios": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "lattice_vectors": [
+            [
+              3.7072128641035267,
+              0.0,
+              -1e-16
+            ],
+            [
+              -1.8536064320517633,
+              3.2105389337462933,
+              0.0
+            ],
+            [
+              1e-16,
+              5e-16,
+              23.998627671528276
+            ]
+          ],
+          "_jarvis_spillage": -99999,
+          "species_at_sites": [
+            "Ta",
+            "Te",
+            "Te"
+          ],
+          "_jarvis_n-Seebeck": -99999,
+          "_jarvis_p-Seebeck": -99999,
+          "_jarvis_raw_files": [],
+          "_jarvis_reference": "https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-153119",
+          "_jarvis_maxdiff_bz": -99999,
+          "_jarvis_spg_number": "164",
+          "_jarvis_spg_symbol": "P-3m1",
+          "structure_features": [],
+          "_jarvis_Tc_supercon": -99999,
+          "_jarvis_max_ir_mode": -99999,
+          "_jarvis_mbj_bandgap": -99999,
+          "_jarvis_min_ir_mode": -99999,
+          "_jarvis_n-powerfact": -99999,
+          "_jarvis_p-powerfact": -99999,
+          "_jarvis_maxdiff_mesh": -99999,
+          "nperiodic_dimensions": 3,
+          "_jarvis_avg_elec_mass": -99999,
+          "_jarvis_avg_hole_mass": -99999,
+          "_jarvis_magmom_outcar": 0.0,
+          "_jarvis_dimensionality": -99999,
+          "_jarvis_elastic_tensor": -99999,
+          "_jarvis_magmom_oszicar": 0.0,
+          "_jarvis_bulk_modulus_kv": -99999,
+          "_jarvis_shear_modulus_gv": -99999,
+          "cartesian_site_positions": [
+            [
+              1.7601233647199985,
+              0.40319245536001125,
+              3.0518097825800625
+            ],
+            [
+              1.7601181777799901,
+              2.5435535255400006,
+              4.878860947186213
+            ],
+            [
+              -0.09348144834000585,
+              1.4733713851799985,
+              1.2247586179737378
+            ]
+          ],
+          "chemical_formula_reduced": "TaTe2",
+          "_jarvis_optb88vdw_bandgap": 0.0,
+          "_jarvis_dfpt_piezo_max_dij": -99999,
+          "_jarvis_dfpt_piezo_max_eij": -99999,
+          "_jarvis_exfoliation_energy": -99999,
+          "_jarvis_kpoint_length_unit": 55,
+          "chemical_formula_anonymous": "A2B",
+          "chemical_formula_descriptive": "TaTe2",
+          "_jarvis_optb88vdw_total_energy": -4.00241,
+          "_jarvis_formation_energy_peratom": -0.21262,
+          "_jarvis_dfpt_piezo_max_dielectric": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_ionic": -99999,
+          "_jarvis_dfpt_piezo_max_dielectric_electronic": -99999
+        }
+      }
+    ]
+  },
+  "fetched_at": "2026-08-05T15:12:42.067093+00:00",
+  "url": "https://jarvis.nist.gov/optimade/jarvisdft/v1/structures?filter=nelements<=3&page_limit=40",
+  "auth": "none",
+  "family": "chemistry_materials",
+  "description": "JARVIS-DFT OPTIMADE structures (Materials Project open substitute)"
+}

@@ -11,8 +11,8 @@
 | Audience | Start here | Then | Depth / tone |
 |----------|------------|------|----------------|
 | **Layman** (curious, no degree required) | [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) | [`FSOT_NARRATIVE_CORE.md`](FSOT_NARRATIVE_CORE.md) → [`START_HERE.md`](START_HERE.md) | Stories, metaphors, honest non-claims |
-| **Scientist / engineer** | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) | Full [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) → [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) | Seeds, residual law, gates, commands |
-| **PhD / formal methods** | [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §0–3 + §7 + §PhD | [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) · [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · Lean `FSOT/Formal/Scalar.lean` | Layers A/B/C, what is *proved* vs residual-gated |
+| **Scientist / engineer** | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) | Full [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) → [`FSOT_SYSTEM_MATH_AUDIT.md`](FSOT_SYSTEM_MATH_AUDIT.md) → [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) | Seeds, residual law, gates, commands |
+| **PhD / formal methods** | [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md) | [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §0–3 + hierarchy · [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) · [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · Lean `FSOT/Formal/Scalar.lean` · machine `data/fsot_building_block_hierarchy.json` | Layers A/B/C, building-block network, what is *proved* vs residual-gated |
 
 Everyone who will **run code** also reads [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) or the skeptic kit.
 
@@ -31,6 +31,7 @@ Hand-edited numbers go stale. Prefer generators:
 |-----|-----------|
 | `CURRENT_STATUS.md` | `python scripts/build_repo_status_snapshot.py` |
 | `FSOT_MATH_KEY_ONEPAGER.md` (+ PDF if reportlab present) | `python scripts/build_fsot_math_key_onepager.py` |
+| `FSOT_SYSTEM_MATH_AUDIT.md` + hierarchy/network JSON | `python scripts/build_fsot_system_math_audit.py` |
 | `SKEPTIC_REPLICATION_KIT.md` | `python scripts/build_skeptic_replication_kit.py` |
 
 ---

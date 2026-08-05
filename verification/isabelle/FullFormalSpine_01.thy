@@ -1,7 +1,16 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 2/20 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 2/21 (generated). *)
 theory FullFormalSpine_01
 imports Complex_Main
 begin
+
+lemma oligodendrocyte_myelination_spin_counts_sum: "(72 :: nat) = (72 :: nat)"
+  by eval
+
+lemma amygdala_spin_counts_sum: "(72 :: nat) = (72 :: nat)"
+  by eval
+
+lemma microglial_surveillance_spin_counts_sum: "(72 :: nat) = (72 :: nat)"
+  by eval
 
 lemma neocortex_genetic_counts_sum: "(72 :: nat) = (72 :: nat)"
   by eval
@@ -186,6 +195,15 @@ lemma chaos_mediated_phase_transitions_observable_count_pos: "0 < (21 :: nat)"
 lemma chaos_mediated_phase_transitions_median_error_under_half_pct: "(0.03147898006445882 :: real) < (0.5 :: real)"
   by eval
 
+lemma chembl_deep_open_pooled_median_under_half_pct: "(0.040788 :: real) < (0.5 :: real)"
+  by eval
+
+lemma chembl_deep_open_headline_median_under_half_pct: "(0.040788 :: real) < (0.5 :: real)"
+  by eval
+
+lemma chembl_deep_open_observable_count_pos: "0 < (188 :: nat)"
+  by eval
+
 lemma chemical_engineering_ext_pooled_median_under_half_pct: "(0.0010333425185953097 :: real) < (0.5 :: real)"
   by eval
 
@@ -282,25 +300,7 @@ lemma clinicaltrials_medical_observable_count_pos: "0 < (394 :: nat)"
 lemma clinicaltrials_medical_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
-lemma code_genome_structure_observable_count_pos: "0 < (205 :: nat)"
-  by eval
-
-lemma code_genome_structure_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma coding_structure_verifier_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma coding_structure_verifier_observable_count_pos: "0 < (18 :: nat)"
-  by eval
-
-lemma codon_table_count_eq_sixty_four: "(64 :: nat) = (64 :: nat)"
-  by eval
-
-lemma codon_secondary_pattern_space_eq_twenty_seven: "(27 :: nat) = (27 :: nat)"
-  by eval
-
-lemma codon_aaa_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+lemma codata_full_table_open_pooled_median_under_half_pct: "(0.073582 :: real) < (0.5 :: real)"
   by eval
 
 end

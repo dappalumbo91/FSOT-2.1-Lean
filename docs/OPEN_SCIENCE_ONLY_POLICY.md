@@ -38,8 +38,18 @@ Registry files:
 ## Disallowed for default pipeline
 
 - Materials Project **with** `MP_API_KEY` (optional key path may exist for your machine; not required for green)  
+- FRED API **with** key (optional on a private machine only)  
 - Any service that returns 401 without an account  
 - License-restricted clinical dumps (e.g. full MIMIC) without public subset  
+
+### Open substitutes (default pipeline)
+
+| Credential wall | Open replacement | Builder |
+|-----------------|------------------|---------|
+| Materials Project API key | **JARVIS-DFT OPTIMADE** (NIST) + **COD OPTIMADE** | `scripts/build_open_credential_replacements.py` |
+| FRED API key | **World Bank Open Data** (GDP, unemployment, CPI, population) | same script + existing `world_bank_development` panel |
+
+Bundled MP summary caches may remain for offline clones; live expansion uses open substitutes only.  
 
 ---
 
