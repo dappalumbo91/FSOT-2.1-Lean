@@ -4,7 +4,8 @@ The **standalone Reality OS** lives in a separate project so it can become a rea
 
 | | |
 |--|--|
-| **Sibling path (local)** | `../FSOT-Reality-OS` (Desktop) or clone of GitHub `FSOT-Reality-OS` |
+| **GitHub** | https://github.com/dappalumbo91/FSOT-Reality-OS |
+| **Sibling path (local)** | `C:\Users\damia\Desktop\FSOT-Reality-OS` |
 | **Role** | Host kernel CLI + Linux OS build lab |
 | **This monorepo** | Formula authority, residual atlas, multiprover, research leaves |
 
