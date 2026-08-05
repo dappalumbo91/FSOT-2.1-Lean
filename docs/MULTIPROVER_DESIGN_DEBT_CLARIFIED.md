@@ -15,9 +15,11 @@
 
 **Python oracle solidification (2026-08-05):** float64 cannot distinguish those digit strings from `math.pi` (IEEE π sits *between* the two certified bounds in a way that broke naive `Decimal(str(math.pi))` comparisons). `scripts/transcendental_bounds_lib.py` now evaluates with **≥50-digit `Decimal` `PI_REF` / `E_REF`**, so all **68/68** inventory rows report `python_decimal_verified: true` in `verification/obligations/transcendental_bounds.json`.
 
-Nothing open for green multiprover. Optional future: deeper *native* Coq analytic proofs of the two tight π intervals (Isabelle native approximation is already stronger; Coq still uses certified axioms for Rocq 9 `lra`/PI gaps).
+**Coq native depth (2026-08-05):** `verification/coq/TranscendentalBoundsNative.v` proves the four base intervals with the Rocq Platform **Interval** tactic (`interval with (i_prec …)`). `TranscendentalBoundsCert.v` **Require Export**s Native and proves the remaining pointwise exp/π certificates as **Lemmas** (Interval) — **0 Axioms** on the transcendental cert path. Chunks `TranscendentalBounds_00..02.v` compile against that stack. Isabelle already used `approximation` natively.
 
-**Not a formal path:** Lissajous figures (two orthogonal sines; frequency ratios ≈ rational approximations involving π harmonics) are good *intuition* for circular/periodicity geometry. They do **not** replace Mathlib digit bounds or the Decimal multiprover oracle.
+Nothing open for green multiprover on the π/e ladder. Remaining optional: F\* oracle-literal reduction; deeper Machin-series *hand* proofs without Interval (not required).
+
+**Not a formal path:** Lissajous figures (two orthogonal sines; frequency ratios ≈ rational approximations involving π harmonics) are good *intuition* for circular/periodicity geometry. They do **not** replace Mathlib digit bounds, Interval, or the Decimal multiprover oracle.
 
 ---
 

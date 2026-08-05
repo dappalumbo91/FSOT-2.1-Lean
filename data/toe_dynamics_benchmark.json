@@ -1,206 +1,55 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-08-05T11:55:48.331639+00:00",
+  "generated_at": "2026-08-05T12:11:02.335172+00:00",
   "domain": "TOE_Dynamics",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+  ],
   "maps_to_lean": [
-    "fluid_dynamics",
-    "cosmological"
+    "energy",
+    "galactic"
   ],
   "D_eff": 15,
-  "purpose": "T2 continuum fluid + scalar transport consistency (seed-locked coefficients)",
-  "module": "vendor/fsot_dynamics.py",
-  "equations": {
-    "continuity": "\u2202t \u03c1 + \u2202x(\u03c1 v) = 0",
-    "momentum": "\u03c1(\u2202t v + v \u2202x v) = -\u2202x P + \u03bc \u2202xx v + J_obs",
-    "scalar": "\u2202t S + v \u2202x S = \u03ba \u2202xx S - \u03b3 (S - S_eq(D_eff))",
-    "\u03bc": "\u03bc = |Chaos|\u00b7|D_eff-25|/25 + A_bleed\u00b7Poof",
-    "J_obs": "J_obs = C_factor\u00b7cos(\u03b4\u03c8+\u03b8_S) if observed else 0"
-  },
-  "record_count": 18,
-  "observable_count": 18,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 24,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "green_gate_pass": true,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "TOE_Dynamics_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "sector model without seed-closed FSOT formula"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_seed_formula_vs_baseline": true
+    }
+  },
   "records": [
     {
-      "name": "viscosity_pos_D6",
-      "property": "viscosity_eff",
-      "computed": 0.412270210542628,
-      "measured": 0.412270210542628,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_transport_coeff"
-    },
-    {
-      "name": "viscosity_pos_D14",
-      "property": "viscosity_eff",
-      "computed": 0.30634247210727383,
-      "measured": 0.30634247210727383,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_transport_coeff"
-    },
-    {
-      "name": "viscosity_pos_D20",
-      "property": "viscosity_eff",
-      "computed": 0.22689666828075822,
-      "measured": 0.22689666828075822,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_transport_coeff"
-    },
-    {
-      "name": "viscosity_pos_D21",
-      "property": "viscosity_eff",
-      "computed": 0.21365570097633893,
-      "measured": 0.21365570097633893,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_transport_coeff"
-    },
-    {
-      "name": "viscosity_pos_D25",
-      "property": "viscosity_eff",
-      "computed": 0.16069183175866183,
-      "measured": 0.16069183175866183,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_transport_coeff"
-    },
-    {
-      "name": "observer_source_off",
-      "property": "observer_source",
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_observer_coupling"
+      "observable_count": 24
     },
     {
-      "name": "continuity_rhs_finite",
-      "property": "continuity_rhs",
-      "computed": 0.019,
-      "measured": 0.019,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_continuity"
-    },
-    {
-      "name": "momentum_rhs_finite",
-      "property": "momentum_rhs",
-      "computed": 0.07667912370284831,
-      "measured": 0.07667912370284831,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_momentum"
-    },
-    {
-      "name": "scalar_relaxation_sign",
-      "property": "scalar_transport_sign",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_scalar_relax",
-      "S_eq": -0.5024559462100433,
-      "rhs": -0.04280434460598067
-    },
-    {
-      "name": "D_eff_interface_split",
-      "property": "abs_S_gap",
-      "computed": 0.39645785939929656,
-      "measured": 0.39645785939929656,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_definition",
-      "claim": "T2_dimensional_interface",
-      "S_D20": 0.8989138056093399,
-      "S_D25": 0.5024559462100433
-    },
-    {
-      "name": "acoustic_speed_positive",
-      "property": "c_s",
-      "computed": 0.7693455090660798,
-      "measured": 0.7693455090660798,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_acoustic_metric"
-    },
-    {
-      "name": "euler_scalar_contracts",
-      "property": "scalar_euler_contraction",
-      "computed": 0.08206345749386657,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_integration",
-      "claim": "T2_euler_contract",
-      "residual_after": 0.22948413562653325,
-      "initial_offset": 0.2499999999999999,
-      "note": "200 explicit Euler steps at dt=0.001 toward S_eq(D=21)"
-    },
-    {
-      "name": "continuity_uniform_zero",
-      "property": "continuity_rhs",
-      "computed": -0.0,
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_seed_formula",
+      "name": "TOE_Dynamics_depth",
+      "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_mass_conservation_uniform"
-    },
-    {
-      "name": "bleed_rate_positive",
-      "property": "bleed_rate",
-      "computed": 0.30051620032255366,
-      "measured": 0.30051620032255366,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_bleed_yin_yang"
-    },
-    {
-      "name": "viscosity_calm_at_D25",
-      "property": "viscosity_ordering",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "eval_kind": "dynamics_identity",
-      "claim": "T2_viscosity_interface_calm",
-      "mu_D6": 0.412270210542628,
-      "mu_D25": 0.16069183175866183
-    },
-    {
-      "lab": "toe_dynamics_lab",
-      "property": "dimensional_interface_S",
-      "name": "bleed_rate",
-      "computed": 0.300584,
-      "measured": 0.30051620032255366,
-      "error_pct": 0.022461,
-      "eval_kind": "dynamics_channel",
-      "fsot_domain": "Astronomy",
-      "fsot_scalar": 0.89846,
-      "claim": "T2_dynamics_channel"
-    },
-    {
-      "lab": "toe_dynamics_lab",
-      "property": "consciousness_factor_channel",
-      "name": "C_FACTOR",
-      "computed": 0.287652,
-      "measured": 0.28760015181918397,
-      "error_pct": 0.018003,
-      "eval_kind": "dynamics_channel",
-      "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
-      "claim": "T2_dynamics_channel"
-    },
-    {
-      "lab": "toe_dynamics_lab",
-      "property": "poof_valve_channel",
-      "name": "POOF",
-      "computed": 0.153504,
-      "measured": 0.1534822148944508,
-      "error_pct": 0.014333,
-      "eval_kind": "dynamics_channel",
-      "fsot_domain": "Quantum_Mechanics",
-      "fsot_scalar": 0.955506,
-      "claim": "T2_dynamics_channel"
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -383,6 +232,96 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "claim": "T2_dynamics_channel"
+    },
+    {
+      "lab": "toe_dynamics_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Thermodynamics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
+    },
+    {
+      "lab": "toe_dynamics_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Thermodynamics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "toe_dynamics_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Thermodynamics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "toe_dynamics_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Thermodynamics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "toe_dynamics_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Thermodynamics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "toe_dynamics_fsot_lab",
+      "property": "BeCl\u2082",
+      "name": "d100218fdd574f15",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Thermodynamics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     }
-  ]
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.022461,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

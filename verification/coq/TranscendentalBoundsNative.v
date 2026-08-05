@@ -1,72 +1,34 @@
 (* FSOT Tier 83 — native Coq proofs for pi/e base intervals (no axioms). *)
+(* Proved via Interval (Rocq Platform) interval arithmetic — not Axiom, not fake lra. *)
 From Stdlib Require Import Reals.
-From Stdlib Require Import Rpower.
-From Stdlib Require Import Rtrigo1.
-From Stdlib Require Import Psatz.
+From Interval Require Import Tactic.
 Local Open Scope R_scope.
 
-Lemma PI_gt_314 : (314%R / 100%R) < PI.
-Proof. lra. Qed.
+(** exp 1 lower bound (seed e interval). *)
+Lemma certified_exp_one_lo : 2.7182818283 < exp 1.
+Proof. interval with (i_prec 50). Qed.
 
-Lemma PI_lt_31416 : PI < (31416%R / 10000%R).
-Proof. lra. Qed.
+(** exp 1 upper bound. *)
+Lemma certified_exp_one_hi : exp 1 < 2.7182818286.
+Proof. interval with (i_prec 50). Qed.
 
-(* Taylor partial sum S_13 = (8463398743 / 3113510400)%R > target, S_13 < exp 1 via exp_ineq1. *)
-Definition exp1_taylor_13 : R := (8463398743 / 3113510400)%R.
+(** Tight pi lower digit string (matches Bounds.lean / Mathlib pi_gt_d20 chain). *)
+Lemma certified_pi_lo : 3.14159265358979323846 < PI.
+Proof. interval with (i_prec 80). Qed.
 
-Lemma exp1_taylor_13_gt_target : (27182818283 / 10000000000)%R < exp1_taylor_13.
-Proof. unfold exp1_taylor_13. lra. Qed.
+(** Tight pi upper digit string. *)
+Lemma certified_pi_hi : PI < 3.14159265358979323847.
+Proof. interval with (i_prec 80). Qed.
 
-Lemma exp1_taylor_13_lt_exp1 : exp1_taylor_13 < exp 1.
-Proof.
-  transitivity (2%R).
-  - unfold exp1_taylor_13. lra.
-  - pose proof (exp_ineq1 (1%R)) as H.
-    lra.
-Qed.
+(** Coarser classical bridges (optional consumers / densify docs). *)
+Lemma PI_gt_3 : 3 < PI.
+Proof. interval. Qed.
 
-Lemma certified_exp_one_lo : (2.7182818283%R) < exp 1.
-Proof.
-  apply (Rlt_trans exp1_taylor_13).
-  - exact exp1_taylor_13_gt_target.
-  - exact exp1_taylor_13_lt_exp1.
-Qed.
+Lemma PI_lt_22_7 : PI < 22 / 7.
+Proof. interval. Qed.
 
-Definition exp1_taylor_hi_5 : R := (163 / 60)%R.
+Lemma exp1_gt_2 : 2 < exp 1.
+Proof. interval. Qed.
 
-Lemma exp1_taylor_hi_5_lt_target : exp 1 < (2.7182818286%R).
-Proof.
-  transitivity exp1_taylor_hi_5.
-  - transitivity (3%R).
-    + pose proof (exp_ineq1 (1%R)) as H.
-      lra.
-    + unfold exp1_taylor_hi_5. lra.
-  - unfold exp1_taylor_hi_5. lra.
-Qed.
-
-Lemma certified_exp_one_hi : exp 1 < (2.7182818286%R).
-Proof. exact exp1_taylor_hi_5_lt_target. Qed.
-
-(* 355/113 = (355 / 113)%R bridges target to PI. *)
-Lemma pi_gt_355_113 : (355 / 113)%R < PI.
-Proof.
-  pose proof (PI_gt_314) as H.
-  lra.
-Qed.
-
-Lemma pi_mid_gt_target : (4793689962142629 / 1525878906250000)%R < (355 / 113)%R.
-Proof. lra. Qed.
-
-Lemma certified_pi_lo : (3.14159265358979323846%R) < PI.
-Proof.
-  apply (Rlt_trans (355 / 113)%R).
-  - exact pi_mid_gt_target.
-  - exact pi_gt_355_113.
-Qed.
-
-Lemma certified_pi_hi : PI < (3.14159265358979323847%R).
-Proof.
-  pose proof (PI_lt_31416) as H.
-  lra.
-Qed.
-
+Lemma exp1_lt_3 : exp 1 < 3.
+Proof. interval. Qed.

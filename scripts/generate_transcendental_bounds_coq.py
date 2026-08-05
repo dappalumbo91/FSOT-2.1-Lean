@@ -28,16 +28,10 @@ def main() -> int:
 
     (COQ_DIR / "TranscendentalBoundsBase.v").write_text(gen_coq_base(), encoding="utf-8")
 
-    axioms = coq_certified_axioms(obligations)
-    cert_header = [
-        "From Stdlib Require Import Reals.",
-        "From Stdlib Require Import Rpower.",
-        "From Stdlib Require Import Rtrigo1.",
-        "Local Open Scope R_scope.",
-        "",
-    ]
+    # coq_certified_axioms already includes Requires + Interval proofs (no Axiom base).
+    cert_body = coq_certified_axioms(obligations)
     (COQ_DIR / "TranscendentalBoundsCert.v").write_text(
-        "\n".join(cert_header + axioms + [""]),
+        "\n".join(cert_body) + "\n",
         encoding="utf-8",
     )
 

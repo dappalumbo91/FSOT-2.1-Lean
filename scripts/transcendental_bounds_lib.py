@@ -254,20 +254,78 @@ def coq_proof_for(ob: dict) -> str:
     return f"exact certified_{ob['id']}."
 
 
+def _coq_interval_prec(lean_type: str, lemma_id: str) -> int:
+    """Pick Interval precision from digit density of the statement."""
+    if "3.1415926535897932384" in lean_type or lemma_id.startswith("pi_"):
+        return 80
+    if "2.718281828" in lean_type or lemma_id.startswith("e_"):
+        return 50
+    if "exp" in lean_type and ("1.14" in lean_type or "3.141" in lean_type):
+        return 60
+    return 40
+
+
+def _coq_is_interval_friendly(lean_type: str) -> bool:
+    """True if Interval tactic can discharge a closed numeric inequality on R."""
+    if "Set.Icc" in lean_type or "∈" in lean_type:
+        # conjunction of inequalities — Interval can often do each side
+        return "pi / e" in lean_type or "PI / exp" in lean_type or "/ exp" in lean_type
+    # pure comparison of closed expressions built from exp/pi/rationals
+    return any(op in lean_type for op in ("<", ">"))
+
+
 def coq_certified_axioms(obligations: list[dict]) -> list[str]:
+    """Emit *proved* certificates (Interval) for pointwise bounds; no Axioms for base π/e.
+
+    Base intervals come from TranscendentalBoundsNative (Interval). Remaining numeric
+    inequalities are proved here with Interval. Only non-friendly forms fall back to Axiom
+    (should be empty or rare).
+    """
     lines = [
-        "(* Pointwise certificates: Python decimal + Lean Mathlib (cross-refinement audited). *)",
-        "(* Base pi/e intervals: Isabelle native proofs; Coq certified axioms (Rocq 9 lra/PI gap). *)",
-        "Axiom certified_exp_one_lo : (2.7182818283%R) < exp 1.",
-        "Axiom certified_exp_one_hi : exp 1 < (2.7182818286%R).",
-        "Axiom certified_pi_lo : (3.14159265358979323846%R) < PI.",
-        "Axiom certified_pi_hi : PI < (3.14159265358979323847%R).",
+        "(* Pointwise certificates: Interval-proved (Rocq Platform) + Lean Mathlib audit. *)",
+        "(* Base pi/e intervals: imported from TranscendentalBoundsNative (no Axiom). *)",
+        "From Stdlib Require Import Reals.",
+        "From Stdlib Require Import Rpower.",
+        "From Stdlib Require Import Rtrigo1.",
+        "From Stdlib Require Import Psatz.",
+        "From Interval Require Import Tactic.",
+        "Require Export TranscendentalBoundsNative.",
+        "Local Open Scope R_scope.",
+        "",
+        "(* certified_exp_one_lo/hi + certified_pi_lo/hi come from Native (Interval). *)",
+        "",
     ]
+    axiom_fallback: list[str] = []
     for ob in obligations:
         if ob["proof_template"] in ("exp_add_one", "e_interval", "pi_interval"):
             continue
         stmt = ob["coq_statement"]
-        lines.append(f"Axiom certified_{ob['id']} : {stmt}.")
+        lid = ob["id"]
+        if not _coq_is_interval_friendly(ob.get("lean_type") or stmt):
+            axiom_fallback.append(f"Axiom certified_{lid} : {stmt}.")
+            continue
+        prec = _coq_interval_prec(ob.get("lean_type") or stmt, lid)
+        # Icc / conjunction special case for pi/e in [-pi/2, pi/2]
+        if "Set.Icc" in (ob.get("lean_type") or "") or "∈" in (ob.get("lean_type") or ""):
+            lines += [
+                f"Lemma certified_{lid} : {stmt}.",
+                "Proof.",
+                f"  split; interval with (i_prec {prec}).",
+                "Qed.",
+                "",
+            ]
+            continue
+        lines += [
+            f"Lemma certified_{lid} : {stmt}.",
+            "Proof.",
+            f"  interval with (i_prec {prec}).",
+            "Qed.",
+            "",
+        ]
+    if axiom_fallback:
+        lines.append("(* Residual axioms — Interval could not auto-discharge. *)")
+        lines.extend(axiom_fallback)
+        lines.append("")
     return lines
 
 
@@ -351,9 +409,12 @@ def _count_field(rows: list[dict], field: str) -> dict[str, int]:
 def gen_coq_base() -> str:
     return "\n".join(
         [
-            "(* FSOT Tier 83 — transcendental base intervals via Cert axioms. *)",
-            "(* Isabelle uses TranscendentalBoundsNative.thy; Coq uses Cert (Rocq 9 lra/PI gap). *)",
+            "(* FSOT Tier 83 — transcendental base: Native Interval + Cert re-exports. *)",
+            "From Stdlib Require Import Reals.",
+            "From Stdlib Require Import Psatz.",
+            "Require Import TranscendentalBoundsNative.",
             "Require Import TranscendentalBoundsCert.",
+            "Local Open Scope R_scope.",
             "",
             "Lemma nonzero_03 : (0.3%R) <> 0.",
             "Proof. lra. Qed.",

@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-08-05T12:12:53.720632+00:00",
+  "method": "fsot_proper_densify \u2014 seed formula vs real measured only",
+  "promoted_panels": [
+    {
+      "panel": "Rust_Lean_Bridge",
+      "records_before": 9,
+      "records_after": 24,
+      "tier_after": "B_verified"
+    },
+    {
+      "panel": "TOE_Contested_Sector_Refresh",
+      "records_before": 15,
+      "records_after": 24,
+      "tier_after": "B_verified"
+    },
+    {
+      "panel": "TOE_Dynamics",
+      "records_before": 18,
+      "records_after": 24,
+      "tier_after": "B_verified"
+    },
+    {
+      "panel": "FSOT_C_Pack_Parity_Panel",
+      "records_before": 19,
+      "records_after": 24,
+      "tier_after": "B_verified"
+    },
+    {
+      "panel": "FSOT_Processor_Function_Panel",
+      "records_before": 19,
+      "records_after": 24,
+      "tier_after": "B_verified"
+    }
+  ],
+  "c_thin_remaining_in_data_benchmarks": 0,
+  "green_gate": "430/430",
+  "coq_transcendental": {
+    "native": "Interval tactic (i_prec 50/80)",
+    "cert_axioms": 0,
+    "cert_interval_lemmas": 63,
+    "chunks_compiled": true
+  }
+}

@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "formal_proof_depth_closure.json"
 BOUNDS = ROOT / "FSOT" / "Formal" / "Bounds.lean"
 COQ_TRANSCENDENTAL = ROOT / "verification" / "coq" / "TranscendentalBounds_00.v"
+COQ_NATIVE = ROOT / "verification" / "coq" / "TranscendentalBoundsNative.v"
+COQ_CERT = ROOT / "verification" / "coq" / "TranscendentalBoundsCert.v"
 COQ_STRUCTURAL = ROOT / "verification" / "coq" / "StructuralProofSpine.v"
 STRUCT_AUDIT = ROOT / "data" / "structural_proof_depth_audit.json"
 TRANSCENDENTAL_GAP = ROOT / "data" / "transcendental_bounds_gap_report.json"
@@ -31,6 +33,8 @@ def _coqc_ok(path: Path) -> bool | None:
 def main() -> int:
     bounds_text = BOUNDS.read_text(encoding="utf-8") if BOUNDS.exists() else ""
     coq_t_text = COQ_TRANSCENDENTAL.read_text(encoding="utf-8") if COQ_TRANSCENDENTAL.exists() else ""
+    coq_native_text = COQ_NATIVE.read_text(encoding="utf-8") if COQ_NATIVE.exists() else ""
+    coq_cert_text = COQ_CERT.read_text(encoding="utf-8") if COQ_CERT.exists() else ""
     coq_s_text = COQ_STRUCTURAL.read_text(encoding="utf-8") if COQ_STRUCTURAL.exists() else ""
 
     lean_chain = {
@@ -40,6 +44,13 @@ def main() -> int:
         ),
         "e_interval": all(m in bounds_text for m in ("e_lt_27182818286", "exp_one_lt_d9")),
     }
+    cert_axioms = len(re.findall(r"^Axiom\s+certified_", coq_cert_text, re.M))
+    native_interval = (
+        "From Interval Require Import Tactic" in coq_native_text
+        and "interval with" in coq_native_text
+        and "certified_pi_lo" in coq_native_text
+        and "certified_exp_one_lo" in coq_native_text
+    )
     coq_chain = {
         "certified_exp_pi_lemmas": len(re.findall(r"^Lemma\s+certified_", coq_t_text, re.M)),
         "pi_e_interval_reexported": all(
@@ -47,6 +58,11 @@ def main() -> int:
             for m in ("e_lt_27182818286", "pi_gt_314159265358979323846", "pi_lt_314159265358979323847")
         ),
         "uses_certified_chain": "certified_exp_one_hi" in coq_t_text and "certified_pi_lo" in coq_t_text,
+        "native_interval_base": native_interval,
+        "native_vo_present": COQ_NATIVE.with_suffix(".vo").exists(),
+        "cert_axiom_count": cert_axioms,
+        "cert_interval_lemmas": len(re.findall(r"^Lemma\s+certified_", coq_cert_text, re.M)),
+        "zero_cert_axioms": cert_axioms == 0,
     }
     vo_exists = COQ_STRUCTURAL.with_suffix(".vo").exists()
     structural = {
@@ -84,9 +100,14 @@ def main() -> int:
             },
             {
                 "tier": "L2_coq_transcendental",
-                "artifact": "verification/coq/TranscendentalBounds_00.v",
-                "status": "closed" if coq_chain["pi_e_interval_reexported"] else "partial",
-                "chain": "certified_exp_one_hi/lo + certified_pi_lo/hi (Taylor/interval certificates)",
+                "artifact": "verification/coq/TranscendentalBoundsNative.v",
+                "status": "closed"
+                if coq_chain["pi_e_interval_reexported"] and coq_chain["zero_cert_axioms"] and coq_chain["native_interval_base"]
+                else ("partial" if coq_chain["pi_e_interval_reexported"] else "open"),
+                "chain": (
+                    "TranscendentalBoundsNative (Interval i_prec) → Cert lemmas (0 Axiom) → "
+                    "chunks re-export e/pi inventory"
+                ),
                 "metrics": coq_chain,
             },
             {
@@ -105,9 +126,9 @@ def main() -> int:
             },
         ],
         "next_depth_steps": [
-            "Wire FullFormalSpine pi/e obligations to `Require TranscendentalBounds_00` instead of interval literals",
+            "Wire FullFormalSpine pi/e obligations to `Require TranscendentalBounds_00` instead of float literals",
             "Run `lake build` on Bounds.lean in CI for Mathlib chain regression",
-            "Close norm_num_depth gate: coqc StructuralProofSpine + TranscendentalBoundsNative in audit_structural_proof_depth.py",
+            "Optional: Machin-series hand proofs without Interval package (not required for green)",
         ],
         "remedy_scripts": [
             "scripts/audit_transcendental_bounds_gap.py",

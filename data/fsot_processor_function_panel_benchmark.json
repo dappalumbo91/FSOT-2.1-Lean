@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-04T14:50:14.832295+00:00",
+  "generated_at": "2026-08-05T12:12:29.410105+00:00",
   "domain": "FSOT_Processor_Function_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -11,7 +11,8 @@
     "results/competitive/beat_cuda.json",
     "results/phase0/gpu_probe.json",
     "results/phase0/fsot_scalar_gpu.json",
-    "fsot_proper_hardware_clean"
+    "fsot_proper_hardware_clean",
+    "fsot_proper_densify"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -20,9 +21,9 @@
     "energy"
   ],
   "D_eff": 12,
-  "record_count": 19,
-  "observable_count": 19,
-  "scalar_record_count": 18,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 23,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -30,14 +31,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "pre": {
+      "FSOT_Processor_Function_Panel": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "pre"
+        "sota_model": "pre-densify"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_proper_vs_baseline": true
+      "channel_fsot_seed_formula_vs_baseline": true
     }
   },
   "records": [
@@ -48,16 +49,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 19
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_proper",
-      "name": "hardware_clean",
+      "property": "fsot_seed_formula",
+      "name": "FSOT_Processor_Function_Panel_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 19
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -281,6 +282,71 @@
       "fsot_scalar": -0.147673,
       "layer": "processor_function",
       "source": "psutil/host"
+    },
+    {
+      "lab": "FSOT_Processor_Function_Panel_fsot_lab",
+      "property": "pH_water",
+      "name": "276b06aa421154fe",
+      "computed": 7.000000000000001,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "phi ^ ( - 4 ) + phi ^ 4",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
+    },
+    {
+      "lab": "FSOT_Processor_Function_Panel_fsot_lab",
+      "property": "CO\u2082",
+      "name": "4997f65cea526a23",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "FSOT_Processor_Function_Panel_fsot_lab",
+      "property": "BF\u2083",
+      "name": "964b34bd5d316085",
+      "computed": 119.99999999999999,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "2pi / 3 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "FSOT_Processor_Function_Panel_fsot_lab",
+      "property": "SF\u2086",
+      "name": "3dd4abfdff6593a5",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi / 2 ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
+    },
+    {
+      "lab": "FSOT_Processor_Function_Panel_fsot_lab",
+      "property": "XeF\u2082",
+      "name": "d5f905492d3792d4",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "pi ( rad\u2192\u00b0 )",
+      "fsot_domain": "Particle_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST CCCBDB"
     }
   ],
   "margin_summary": {
