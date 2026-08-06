@@ -1,5 +1,7 @@
 # Prediction monitor system
 
+**Human / X explainers (start here):** [`predictions/EXPLAINED.md`](../predictions/EXPLAINED.md) · [`predictions/public/X_READY.md`](../predictions/public/X_READY.md) · [`predictions/public/ONE_PAGER.md`](../predictions/public/ONE_PAGER.md)
+
 **Goal:** FSOT covers hundreds of domains; only a subset had **falsifiable near-term predictions**. This system expands locks for **public data drops that are imminent or rolling**, and re-checks them on a schedule without retuning the engine.
 
 | Artifact | Role |

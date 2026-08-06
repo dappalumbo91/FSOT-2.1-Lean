@@ -2,6 +2,18 @@
 
 **This folder is the home for all preregistered predictions and monitor artifacts.**
 
+## Start here (human / X)
+
+| Doc | Use |
+|-----|-----|
+| **[`EXPLAINED.md`](EXPLAINED.md)** | Full explanation through the model (read this first) |
+| **[`public/ONE_PAGER.md`](public/ONE_PAGER.md)** | One-screen summary |
+| **[`public/X_READY.md`](public/X_READY.md)** | Copy-paste posts + threads for X |
+| **[`public/STORY_HUBBLE_BUBBLE.md`](public/STORY_HUBBLE_BUBBLE.md)** | Narrative: why the sky disagrees with itself |
+| `reports/` | Tables generated from the machine ledgers |
+
+## Machine ledgers
+
 | Path | Role |
 |------|------|
 | `preregistered_predictions_manifest.yaml` | Hand-curated PRED-001… locks |
@@ -35,8 +47,9 @@ python scripts/rank_nearest_data_drops.py
 python scripts/run_prediction_monitor.py
 ```
 
-## Docs
+## Related docs
 
 - `docs/PREDICTION_MONITOR.md`
 - `docs/PREDICTION_MONITORING_POLICY.md`
 - `docs/PREDATA_RISK.md`
+- `docs/FSOT_EXPLAINED_LAYMAN.md`
