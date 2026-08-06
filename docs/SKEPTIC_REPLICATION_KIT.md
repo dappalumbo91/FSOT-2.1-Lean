@@ -1,10 +1,10 @@
 # FSOT Skeptic Replication Kit
 
-*15-minute verification path · 2026-08-05 · commit `80416359e780`*
+*15-minute verification path · 2026-08-05 · commit `232be08f6a13`*
 
 Run this if you want to **break FSOT fast** — not read 12,000 lines of narrative first.
 
-**Live authority:** pin **D1D38A** (match=True) · green **432/432** · multiprover overall_ok=True  
+**Live authority:** pin **D1D38A** (match=True) · green **472/472** · multiprover overall_ok=True  
 Full human guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) · audience map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) · math: [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md)
 
 Plain-language ladder: [`CLEAR_PATH_FOR_INDEPENDENTS.md`](CLEAR_PATH_FOR_INDEPENDENTS.md) ·  
@@ -32,7 +32,7 @@ python scripts/audit_parameter_count.py
 | Check | Expected |
 |-------|----------|
 | Pin | **D1D38A** with `pin_match: true` in `docs/CURRENT_STATUS.md` |
-| Benchmark green | **432/432** fail 0 (`data/benchmark_margin_audit.json`) |
+| Benchmark green | **472/472** fail 0 (`data/benchmark_margin_audit.json`) |
 | Gate | pooled median ≤ **0.5%** |
 | Parameter audit | **ZERO_FREE** |
 | Label A / B (if toe report present) | A=True, B=True |

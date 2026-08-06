@@ -40,6 +40,11 @@ def build() -> dict:
     empirical = _load(ROOT / "data" / "empirical_accuracy_closure.json")
     densify = _load(ROOT / "data" / "false_densify_remediation_report.json")
     coq_ref = _load(ROOT / "data" / "cross_refinement_lean_coq_report.json")
+    formula = _load(ROOT / "data" / "formula_authority_closure.json")
+    mathlib = _load(ROOT / "data" / "mathlib_rederivation_campaign_report.json")
+    params = _load(ROOT / "data" / "parameter_count_audit.json")
+    toe = _load(ROOT / "data" / "toe_gap_closure_report.json")
+    toe_ev = toe.get("evaluation") or {}
 
     compute = ROOT / "vendor" / "fsot_compute.py"
     sha = hashlib.sha256(compute.read_bytes()).hexdigest().upper() if compute.is_file() else ""
@@ -66,15 +71,20 @@ def build() -> dict:
     formal = xproof.get("full_formal_spine") or {}
     catalog = xproof.get("scientific_catalog_spine") or {}
     frameworks = xproof.get("frameworks") or {}
+    depth = mathlib.get("depth_gates") or {}
+    corpus = mathlib.get("corpus") or {}
 
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "edition_stamp": "2026-08-05",
+        "edition_stamp": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "authority": {
             "pin_prefix": "D1D38A",
             "fsot_compute_sha256": sha,
             "pin_match": pin_ok,
             "path": "vendor/fsot_compute.py",
+            "formula_authority_verdict": formula.get("verdict"),
+            "formula_authority_all_ok": bool(formula.get("all_ok")),
+            "parameter_verdict": params.get("verdict") or params.get("audit_verdict"),
         },
         "empirical": {
             "green_gate_pass_count": green,
@@ -84,29 +94,51 @@ def build() -> dict:
             "tier_distribution": dict(tiers),
             "median_of_medians_pct": (empirical.get("benchmark_envelope") or {}).get(
                 "pooled_median_of_domains_pct"
-            ),
+            )
+            or empirical.get("median_of_medians_pct"),
             "total_scalar_records": (empirical.get("benchmark_envelope") or {}).get(
                 "total_scalar_records"
             ),
+        },
+        "mathlib": {
+            "verdict": mathlib.get("verdict"),
+            "engine_core_closed": bool(mathlib.get("engine_core_closed")),
+            "full_corpus_closed": bool(mathlib.get("full_corpus_closed")),
+            "theorem_count": corpus.get("theorem_count"),
+            "mathlib_depth_count": corpus.get("mathlib_depth_count"),
+            "mathlib_depth_pct": corpus.get("mathlib_depth_pct")
+            or depth.get("corpus_mathlib_pct"),
+            "engine_mathlib_pct": depth.get("engine_mathlib_pct"),
+            "corpus_l1_count": depth.get("corpus_l1_count"),
+            "engine_l1_count": depth.get("engine_l1_count"),
         },
         "multiprover": {
             "overall_ok": bool(xproof.get("overall_ok")),
             "github_ready": bool(xproof.get("github_ready")),
             "seven_way_bare_metal": bool(xproof.get("seven_way_bare_metal")),
             "eight_way_hardware": bool(xproof.get("eight_way_hardware")),
-            "atomic_provable": coq_ref.get("obligation_count_atomic_provable")
-            or formal.get("atomic_provable_count"),
+            "atomic_provable": formal.get("atomic_provable_count")
+            or coq_ref.get("obligation_count_atomic_provable"),
+            "full_formal_obligations": formal.get("obligation_count"),
             "catalog_obligations": catalog.get("obligation_count")
             or (catalog.get("python_decimal") or {}).get("total"),
-            "true_margin_violations": coq_ref.get("obligation_count_margin_violations"),
-            "structural_bundle_excluded": coq_ref.get(
-                "obligation_count_structural_bundle_excluded"
-            ),
+            "catalog_domains": catalog.get("domain_count"),
+            "true_margin_violations": formal.get("margin_violation_count")
+            if formal.get("margin_violation_count") is not None
+            else coq_ref.get("obligation_count_margin_violations"),
+            "structural_bundle_excluded": formal.get("structural_bundle_excluded_count")
+            if formal.get("structural_bundle_excluded_count") is not None
+            else coq_ref.get("obligation_count_structural_bundle_excluded"),
             "frameworks_passed": sorted(
                 k
                 for k, v in frameworks.items()
                 if isinstance(v, dict) and v.get("status") == "passed"
             ),
+        },
+        "toe_labels": {
+            "label_A_empirical_framework": bool(toe_ev.get("label_A_empirical_framework")),
+            "label_B_classical_toe": bool(toe_ev.get("label_B_classical_toe")),
+            "report": "data/toe_gap_closure_report.json",
         },
         "expansion_highlights": {
             "dzhanibekov_panel": "data/dzhanibekov_intermediate_axis_fsot_panel_benchmark.json",
@@ -115,11 +147,15 @@ def build() -> dict:
             "multiprover_debt_clarified": "docs/MULTIPROVER_DESIGN_DEBT_CLARIFIED.md",
             "hardware_depth": "docs/HARDWARE_DEPTH_CACHE_INTERCONNECT.md",
             "breakthroughs": "docs/RECENT_BREAKTHROUGH_EXPANSION.md",
+            "empirical_claim_evidence": "docs/EMPIRICAL_CLAIM_EVIDENCE.md",
+            "mathlib_campaign": "docs/MATHLIB_REDERIVATION_CAMPAIGN.md",
             "false_densify_remediated": bool(densify),
+            "reality_os_sibling": "https://github.com/dappalumbo91/FSOT-Reality-OS",
         },
         "sync_rule": (
-            "After any densify / new panel / multiprover run: "
-            "python scripts/build_repo_status_snapshot.py then update README headlines "
+            "After any densify / new panel / multiprover / Mathlib run: "
+            "python scripts/build_repo_status_snapshot.py && "
+            "python scripts/build_skeptic_replication_kit.py then update README headlines "
             "if green count or multiprover flags change. See docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md"
         ),
     }
@@ -130,6 +166,8 @@ def write_md(doc: dict) -> str:
     emp = doc["empirical"]
     mp = doc["multiprover"]
     auth = doc["authority"]
+    ml = doc.get("mathlib") or {}
+    toe = doc.get("toe_labels") or {}
     hi = doc["expansion_highlights"]
     lines = [
         "# FSOT repo — current status (generated)",
@@ -142,38 +180,66 @@ def write_md(doc: dict) -> str:
         "",
         "## Authority",
         "",
-        f"| Item | Value |",
-        f"|------|-------|",
+        "| Item | Value |",
+        "|------|-------|",
         f"| Pin | **{auth['pin_prefix']}** |",
         f"| Match | **{auth['pin_match']}** |",
         f"| SHA-256 | `{auth['fsot_compute_sha256'][:16]}…` |",
         f"| Path | `{auth['path']}` |",
+        f"| Formula authority | **{auth.get('formula_authority_verdict')}** (all_ok={auth.get('formula_authority_all_ok')}) |",
+        f"| Parameters | **{auth.get('parameter_verdict')}** |",
         "",
         "## Empirical green gate",
         "",
-        f"| Item | Value |",
-        f"|------|-------|",
+        "| Item | Value |",
+        "|------|-------|",
         f"| Green pass | **{emp['green_gate_pass_count']} / {emp['benchmark_file_count']}** |",
-        f"| Fail | {emp['green_gate_fail_count']} |",
+        f"| Fail | **{emp['green_gate_fail_count']}** |",
         f"| Gate | ≤ {emp['green_gate_pct']}% pooled median |",
         f"| Median-of-medians | {emp.get('median_of_medians_pct')}% |",
         f"| Scalar records (envelope) | {emp.get('total_scalar_records')} |",
         f"| Tiers | `{emp.get('tier_distribution')}` |",
         "",
+        "## Mathlib re-derivation (Formal corpus)",
+        "",
+        "| Item | Value |",
+        "|------|-------|",
+        f"| Verdict | **{ml.get('verdict')}** |",
+        f"| Theorems | **{ml.get('mathlib_depth_count')} / {ml.get('theorem_count')}** ({ml.get('mathlib_depth_pct')}%) |",
+        f"| Engine Mathlib % | {ml.get('engine_mathlib_pct')} (L1={ml.get('engine_l1_count')}) |",
+        f"| Corpus L1 left | {ml.get('corpus_l1_count')} |",
+        f"| Engine core closed | {ml.get('engine_core_closed')} |",
+        f"| Full corpus closed | {ml.get('full_corpus_closed')} |",
+        "",
         "## Multiprover",
         "",
-        f"| Item | Value |",
-        f"|------|-------|",
+        "| Item | Value |",
+        "|------|-------|",
         f"| overall_ok | **{mp['overall_ok']}** |",
         f"| github_ready | **{mp['github_ready']}** |",
         f"| seven_way_bare_metal | {mp['seven_way_bare_metal']} |",
         f"| eight_way_hardware | {mp['eight_way_hardware']} |",
         f"| Atomic provable | {mp.get('atomic_provable')} |",
-        f"| Catalog obligations | {mp.get('catalog_obligations')} |",
+        f"| Full formal obligations | {mp.get('full_formal_obligations')} |",
+        f"| Catalog obligations | {mp.get('catalog_obligations')} (domains {mp.get('catalog_domains')}) |",
         f"| True margin violations | **{mp.get('true_margin_violations')}** |",
-        f"| Structural bundle excluded | {mp.get('structural_bundle_excluded')} (export indices, not residual fails) |",
+        f"| Structural bundle excluded | {mp.get('structural_bundle_excluded')} |",
         "",
         "Frameworks passed: " + ", ".join(f"`{x}`" for x in (mp.get("frameworks_passed") or [])),
+        "",
+        "## ToE labels (frozen checklist)",
+        "",
+        "| Item | Value |",
+        "|------|-------|",
+        f"| Label A (empirical framework) | **{toe.get('label_A_empirical_framework')}** |",
+        f"| Label B (classical T1–T6) | **{toe.get('label_B_classical_toe')}** |",
+        f"| Report | `{toe.get('report')}` |",
+        "",
+        "## Claim evidence (kill commands)",
+        "",
+        f"- Machine map for skeptics / dismissals: [`EMPIRICAL_CLAIM_EVIDENCE.md`](EMPIRICAL_CLAIM_EVIDENCE.md)",
+        f"- Mathlib campaign: [`MATHLIB_REDERIVATION_CAMPAIGN.md`](MATHLIB_REDERIVATION_CAMPAIGN.md)",
+        f"- Skeptic kit: [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md)",
         "",
         "## Expansion highlights (recent)",
         "",
@@ -182,6 +248,7 @@ def write_md(doc: dict) -> str:
         f"- Multiprover debt clarified: [`{hi['multiprover_debt_clarified']}`](MULTIPROVER_DESIGN_DEBT_CLARIFIED.md)",
         f"- Hardware depth: [`{hi['hardware_depth']}`](HARDWARE_DEPTH_CACHE_INTERCONNECT.md)",
         f"- Breakthroughs / QCE: [`{hi['breakthroughs']}`](RECENT_BREAKTHROUGH_EXPANSION.md)",
+        f"- Reality OS sibling (FSOT-native kernel lab): {hi.get('reality_os_sibling')}",
         "",
         "## Sync rule",
         "",

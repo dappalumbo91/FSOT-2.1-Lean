@@ -1,34 +1,50 @@
 {
-  "generated_at": "2026-08-05T14:49:03.110331+00:00",
+  "generated_at": "2026-08-05T23:59:58.387335+00:00",
   "edition_stamp": "2026-08-05",
   "authority": {
     "pin_prefix": "D1D38A",
     "fsot_compute_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
     "pin_match": true,
-    "path": "vendor/fsot_compute.py"
+    "path": "vendor/fsot_compute.py",
+    "formula_authority_verdict": "FORMULA_AUTHORITY_SYSTEM_CLOSED",
+    "formula_authority_all_ok": true,
+    "parameter_verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes"
   },
   "empirical": {
-    "green_gate_pass_count": 433,
+    "green_gate_pass_count": 472,
     "green_gate_fail_count": 0,
-    "benchmark_file_count": 433,
+    "benchmark_file_count": 472,
     "green_gate_pct": 0.5,
     "tier_distribution": {
-      "B_verified": 305,
-      "C_thin": 24,
-      "A_strong": 95
+      "B_verified": 318,
+      "C_thin": 29,
+      "A_strong": 116
     },
-    "median_of_medians_pct": 0.000561846,
-    "total_scalar_records": 61445
+    "median_of_medians_pct": 0.006607,
+    "total_scalar_records": 179914
+  },
+  "mathlib": {
+    "verdict": "FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED",
+    "engine_core_closed": true,
+    "full_corpus_closed": true,
+    "theorem_count": 5182,
+    "mathlib_depth_count": 5182,
+    "mathlib_depth_pct": 100.0,
+    "engine_mathlib_pct": 100.0,
+    "corpus_l1_count": 0,
+    "engine_l1_count": 0
   },
   "multiprover": {
     "overall_ok": true,
     "github_ready": true,
     "seven_way_bare_metal": true,
     "eight_way_hardware": true,
-    "atomic_provable": 1906,
-    "catalog_obligations": 2040,
+    "atomic_provable": 2022,
+    "full_formal_obligations": 2585,
+    "catalog_obligations": 2222,
+    "catalog_domains": 472,
     "true_margin_violations": 0,
-    "structural_bundle_excluded": 54,
+    "structural_bundle_excluded": 0,
     "frameworks_passed": [
       "coq",
       "cross_refinement",
@@ -49,6 +65,11 @@
       "tla_domain_routing"
     ]
   },
+  "toe_labels": {
+    "label_A_empirical_framework": true,
+    "label_B_classical_toe": true,
+    "report": "data/toe_gap_closure_report.json"
+  },
   "expansion_highlights": {
     "dzhanibekov_panel": "data/dzhanibekov_intermediate_axis_fsot_panel_benchmark.json",
     "dzhanibekov_doc": "docs/DZHANIBEKOV_FSOT_RESPONSE.md",
@@ -56,7 +77,10 @@
     "multiprover_debt_clarified": "docs/MULTIPROVER_DESIGN_DEBT_CLARIFIED.md",
     "hardware_depth": "docs/HARDWARE_DEPTH_CACHE_INTERCONNECT.md",
     "breakthroughs": "docs/RECENT_BREAKTHROUGH_EXPANSION.md",
-    "false_densify_remediated": true
+    "empirical_claim_evidence": "docs/EMPIRICAL_CLAIM_EVIDENCE.md",
+    "mathlib_campaign": "docs/MATHLIB_REDERIVATION_CAMPAIGN.md",
+    "false_densify_remediated": true,
+    "reality_os_sibling": "https://github.com/dappalumbo91/FSOT-Reality-OS"
   },
-  "sync_rule": "After any densify / new panel / multiprover run: python scripts/build_repo_status_snapshot.py then update README headlines if green count or multiprover flags change. See docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md"
+  "sync_rule": "After any densify / new panel / multiprover / Mathlib run: python scripts/build_repo_status_snapshot.py && python scripts/build_skeptic_replication_kit.py then update README headlines if green count or multiprover flags change. See docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md"
 }

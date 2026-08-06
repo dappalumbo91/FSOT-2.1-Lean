@@ -4,29 +4,27 @@
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
-**Edition:** v2.10 — full-corpus Mathlib depth · formula authority · clean-clone PASS · **2026-08-05**  
+**Edition:** v2.11 — live status refresh · Mathlib 100% · multiprover green · **2026-08-05**  
 **Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)  
-**Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · sync checklist: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)  
-**New here?** → [docs/START_HERE.md](docs/START_HERE.md) · **Atlas SQLite** → [docs/ATLAS_DATABASE_DESIGN.md](docs/ATLAS_DATABASE_DESIGN.md) · python scripts/query_fsot_atlas.py --stats · **Open science only (no keys)** → [docs/OPEN_SCIENCE_ONLY_POLICY.md](docs/OPEN_SCIENCE_ONLY_POLICY.md) · map → [docs/DOCUMENTATION_MAP.md](docs/DOCUMENTATION_MAP.md)
+**Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · kill-command map: [`docs/EMPIRICAL_CLAIM_EVIDENCE.md`](docs/EMPIRICAL_CLAIM_EVIDENCE.md) · sync: [`docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md`](docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md)  
+**New here?** → [docs/START_HERE.md](docs/START_HERE.md) · **Atlas SQLite** → [docs/ATLAS_DATABASE_DESIGN.md](docs/ATLAS_DATABASE_DESIGN.md) · **Open science only** → [docs/OPEN_SCIENCE_ONLY_POLICY.md](docs/OPEN_SCIENCE_ONLY_POLICY.md)
 
-### Live scoreboard (this edition — regenerate after every expansion)
+### Live scoreboard (regenerate: `python scripts/build_repo_status_snapshot.py`)
 
 | Metric | Value | Source |
 |--------|------:|--------|
-| **Authority pin** | **D1D38A** (match) | `vendor/fsot_compute.py` SHA-256 prefix |
-| **Formula authority** | **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** | `data/formula_authority_closure.json` (ZERO_FREE · residual closed · lake green) |
-| **Green residual benchmarks** | **472 / 472** fail 0 | `data/benchmark_margin_audit.json` (≤0.5% pooled median) |
-| **Lean Mathlib depth (full Formal)** | **5182 / 5182 (100%)** L1=0 | `data/mathlib_rederivation_campaign_report.json` |
-| **Engine core Mathlib** | **524 / 524 (100%)** | campaign engine inventory (Scalar/Bounds/Theorems/Domains/…) |
-| **Corpus Mathlib** | **4658 / 4658 (100%)** | priors + spines; campaign verdict **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** |
-| **Scientific domains covered** | **407** (35 core + 371 extensions + IC) | `data/scientific_domain_expansion_map.json` |
-| **Publication atlas rows** | **403** (35 core + 368 extension) | `data/publication/domain_atlas.csv` |
-| **Empirical records (summed panels)** | **~2.19M** | expansion map `total_empirical_records` (includes MPCORB **1,554,101**) |
-| **Median-of-medians residual** | **~0.00056%** | `docs/CURRENT_STATUS.md` |
-| **Catalog multiprover obligations** | **2222** | scientific catalog spine |
-| **Lean formal modules** | **562** | `FSOT/Formal/*.lean` |
-| **Multiprover** | `overall_ok: true` | `data/cross_proof_verification_report.json` |
-| **Clean-clone repro (Mathlib close)** | **PASS** (0 field mismatches) | `data/fresh_clone_corpus_mathlib_repro_report.md` |
+| **Authority pin** | **D1D38A** (match) | `vendor/fsot_compute.py` |
+| **Formula authority** | **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** | `data/formula_authority_closure.json` |
+| **Parameters** | **ZERO_FREE** | `data/parameter_count_audit.json` |
+| **Green residual benchmarks** | **472 / 472** fail **0** | `data/benchmark_margin_audit.json` (≤0.5%) |
+| **Median-of-medians residual** | **~0.0066%** | `docs/CURRENT_STATUS.md` |
+| **Lean Mathlib depth** | **5182 / 5182 (100%)** L1=0 | `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED` |
+| **Catalog multiprover obligations** | **2222** (472 domains) | cross-proof scientific catalog spine |
+| **Full formal obligations** | **2585** · atomic **2022** · margin viol **0** | cross-proof full formal spine |
+| **Multiprover** | **`overall_ok: true`** · 7-way · 8-way | `data/cross_proof_verification_report.json` |
+| **ToE Label A / B** | **true / true** | `data/toe_gap_closure_report.json` |
+| **Clean-clone Mathlib path** | **PASS** | `data/fresh_clone_corpus_mathlib_repro_report.md` |
+| **Reality OS sibling** | v0.6 paused (FSOT-native kernel) | https://github.com/dappalumbo91/FSOT-Reality-OS |
 
 > Older prose saying **433/433**, **432/432**, **57% Mathlib**, **523 modules**, or **~1912** obligations is **stale**. Prefer this table, the campaign report, and [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
 
