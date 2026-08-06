@@ -123,8 +123,9 @@ Cold-fusion scaffolds, superheavy Z islands, transporter, warp portal — keep r
 | Step | Deliverable | Effort |
 |------|-------------|--------|
 | **Now** | Weekly monitor + score any new H₀/TRGB/DESI/LVK paper vs Tier A | Low |
-| **Next build** | `build_catalog_prediction_layer.py` — PREDs from MPCORB / Gaia / DESI / GWTC / PubChem top scalars with kills | Medium |
-| **Then** | CKM/PMNS/Higgs **hand** PRED block (Tier A particle) from existing toe panels | Medium |
+| **Shipped** | `build_catalog_prediction_layer.py` — MPCORB / Gaia / DESI / GWTC / PubChem / exo / climate | Done |
+| **Shipped** | `build_higgs_prediction_layer.py` — mass + BR + CKM companion; dual framework/tight kills | Done |
+| **Next (priority)** | **Higgs tighten program** — beat PDG-class tight % **without** changing global 0.5% gate | See `HIGGS_TIGHTEN_PLAN.md` |
 | **Then** | Multi-messenger bridge PREDs (FRB×density, siren×sector) | Medium |
 | **Ongoing** | Euclid/Rubin watch only — no freeze of model work | Low |
 

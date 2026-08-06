@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T13:37:10.861119+00:00",
+  "generated_at": "2026-08-06T13:50:32.356145+00:00",
   "version": "1.0",
   "authority_pin_prefix": "D1D38A",
   "purpose": "Separate high-weight contested survey predictions from atlas regression holds and scaffold/speculation so public communication stays honest.",
@@ -46,7 +46,7 @@
       "B/scalar_lock": 885,
       "B/sector_portfolio_hold": 9
     },
-    "tier_A_list_count": 120,
+    "tier_A_list_count": 169,
     "tier_B_note": "Tier B is the full residual_hold + scalar_lock + sector_portfolio surface in domain_prediction_atlas.json \u2014 not fully expanded here.",
     "atlas_summary": {
       "green_domains_covered": 472,
@@ -83,7 +83,10 @@
       "hand_prereg_yaml_count": 48,
       "missing_benchmark_files": 0,
       "green_ceiling_pct": 0.5
-    }
+    },
+    "catalog_prediction_count": 35,
+    "higgs_prediction_count": 33,
+    "higgs_beats_tight": 17
   },
   "headline_tier_A": [
     {
@@ -940,6 +943,480 @@
         "unit": "km/s/Mpc",
         "tier": "A",
         "tool_class": "local_ladder_tf"
+      },
+      {
+        "id": "PRED-CAT-GAIA-DR3-RESIDUAL",
+        "source": "catalog_layer",
+        "name": "Gaia_DR3_Source_Sample_Open",
+        "domain": "Gaia_DR3_Source_Sample_Open",
+        "fsot_predicted": 0.022461,
+        "tier": "A",
+        "kind": "catalog_residual_hold"
+      },
+      {
+        "id": "PRED-CAT-GAIA-DR3-S02",
+        "source": "catalog_layer",
+        "name": "gaia_depth",
+        "domain": "Gaia_DR3_Source_Sample_Open",
+        "fsot_predicted": 0.022461,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-CAT-DESI-PUBLIC-RESIDUAL",
+        "source": "catalog_layer",
+        "name": "DESI_Public_Depth_Open",
+        "domain": "DESI_Public_Depth_Open",
+        "fsot_predicted": 0.010049,
+        "tier": "A",
+        "kind": "catalog_residual_hold"
+      },
+      {
+        "id": "PRED-CAT-DESI-PUBLIC-S02",
+        "source": "catalog_layer",
+        "name": "desi",
+        "domain": "DESI_Public_Depth_Open",
+        "fsot_predicted": 0.010049,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-CAT-DESI-EDR-FITS-RESIDUAL",
+        "source": "catalog_layer",
+        "name": "DESI_EDR_FITS_Residual",
+        "domain": "DESI_EDR_FITS_Residual",
+        "fsot_predicted": 0.022461489204152866,
+        "tier": "A",
+        "kind": "catalog_residual_hold"
+      },
+      {
+        "id": "PRED-CAT-DESI-EDR-FITS-S01",
+        "source": "catalog_layer",
+        "name": "delta_chi2",
+        "domain": "DESI_EDR_FITS_Residual",
+        "fsot_predicted": 0.010049,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-CAT-DESI-EDR-FITS-S02",
+        "source": "catalog_layer",
+        "name": "redshift_zerr",
+        "domain": "DESI_EDR_FITS_Residual",
+        "fsot_predicted": 0.010049,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-CAT-DESI-EDR-FITS-S03",
+        "source": "catalog_layer",
+        "name": "redshift_z",
+        "domain": "DESI_EDR_FITS_Residual",
+        "fsot_predicted": 0.010049,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-CAT-DESI-EDR-FITS-S04",
+        "source": "catalog_layer",
+        "name": "chi2",
+        "domain": "DESI_EDR_FITS_Residual",
+        "fsot_predicted": 0.010049,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-CAT-DESI-EDR-FITS-S06",
+        "source": "catalog_layer",
+        "name": "plx_mas",
+        "domain": "DESI_EDR_FITS_Residual",
+        "fsot_predicted": 0.022461,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-CAT-DESI-EDR-FITS-S07",
+        "source": "catalog_layer",
+        "name": "dec_abs_deg",
+        "domain": "DESI_EDR_FITS_Residual",
+        "fsot_predicted": 0.022461,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-CAT-DESI-EDR-FITS-S08",
+        "source": "catalog_layer",
+        "name": "ebv",
+        "domain": "DESI_EDR_FITS_Residual",
+        "fsot_predicted": 0.022461,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-CAT-GWTC-RESIDUAL",
+        "source": "catalog_layer",
+        "name": "GWTC_Catalog_Open",
+        "domain": "GWTC_Catalog_Open",
+        "fsot_predicted": 0.008488,
+        "tier": "A",
+        "kind": "catalog_residual_hold"
+      },
+      {
+        "id": "PRED-CAT-GWTC-S02",
+        "source": "catalog_layer",
+        "name": "gwtc",
+        "domain": "GWTC_Catalog_Open",
+        "fsot_predicted": 0.008488,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-CAT-EXO-RESIDUAL",
+        "source": "catalog_layer",
+        "name": "Exoplanet_Archive_Depth_Open",
+        "domain": "Exoplanet_Archive_Depth_Open",
+        "fsot_predicted": 0.023015,
+        "tier": "A",
+        "kind": "catalog_residual_hold"
+      },
+      {
+        "id": "PRED-CAT-EXO-S02",
+        "source": "catalog_layer",
+        "name": "exoplanet_tap",
+        "domain": "Exoplanet_Archive_Depth_Open",
+        "fsot_predicted": 0.023015,
+        "tier": "A",
+        "kind": "catalog_scalar_lock"
+      },
+      {
+        "id": "PRED-HIGGS-MASS-m_H_GeV",
+        "source": "higgs_layer",
+        "name": "m_H_GeV",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 125.2637798817715,
+        "tier": "A",
+        "kind": "mass",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-MASS-m_H_GeV_atlas_combined_run2",
+        "source": "higgs_layer",
+        "name": "m_H_GeV_atlas_combined_run2",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 125.2637798817715,
+        "tier": "A",
+        "kind": "mass",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-MASS-m_H_GeV_cms_combined_run2",
+        "source": "higgs_layer",
+        "name": "m_H_GeV_cms_combined_run2",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 125.2637798817715,
+        "tier": "A",
+        "kind": "mass",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-MASS-m_H_GeV_atlas_diphoton",
+        "source": "higgs_layer",
+        "name": "m_H_GeV_atlas_diphoton",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 125.2637798817715,
+        "tier": "A",
+        "kind": "mass",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-MASS-m_H_GeV_cms_four_lepton",
+        "source": "higgs_layer",
+        "name": "m_H_GeV_cms_four_lepton",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 125.2637798817715,
+        "tier": "A",
+        "kind": "mass",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-MASS-m_H_GeV_lhcb_inclusive",
+        "source": "higgs_layer",
+        "name": "m_H_GeV_lhcb_inclusive",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 125.2637798817715,
+        "tier": "A",
+        "kind": "mass",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-MASS-m_H_m_W",
+        "source": "higgs_layer",
+        "name": "m_H_m_W",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 1.5595014764878583,
+        "tier": "A",
+        "kind": "mass",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-MASS-m_H_m_t",
+        "source": "higgs_layer",
+        "name": "m_H_m_t",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 0.7257068201623708,
+        "tier": "A",
+        "kind": "mass",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-BR-m_H_m_t",
+        "source": "higgs_layer",
+        "name": "m_H/m_t",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 0.725669,
+        "tier": "A",
+        "kind": "branching",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-BR-BR_H_bb",
+        "source": "higgs_layer",
+        "name": "BR_H_bb",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 0.580955,
+        "tier": "A",
+        "kind": "branching",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-BR-BR_H_WW",
+        "source": "higgs_layer",
+        "name": "BR_H_WW",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 0.21522,
+        "tier": "A",
+        "kind": "branching",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-BR-BR_H_tautau",
+        "source": "higgs_layer",
+        "name": "BR_H_tautau",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 0.063206,
+        "tier": "A",
+        "kind": "branching",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-BR-BR_H_ZZ",
+        "source": "higgs_layer",
+        "name": "BR_H_ZZ",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 0.026403,
+        "tier": "A",
+        "kind": "branching",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-BR-BR_H_gg",
+        "source": "higgs_layer",
+        "name": "BR_H_gg",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 0.078507,
+        "tier": "A",
+        "kind": "branching",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-BR-BR_H_cc",
+        "source": "higgs_layer",
+        "name": "BR_H_cc",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 0.028903,
+        "tier": "A",
+        "kind": "branching",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-BR-BR_H_gamgam",
+        "source": "higgs_layer",
+        "name": "BR_H_gamgam",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 0.00228,
+        "tier": "A",
+        "kind": "branching",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-HIGGS-BR-BR_H_Zgam",
+        "source": "higgs_layer",
+        "name": "BR_H_Zgam",
+        "domain": "Particle_Physics_Higgs",
+        "fsot_predicted": 0.00153,
+        "tier": "A",
+        "kind": "branching",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-triangle_angle_sum_pi",
+        "source": "higgs_layer",
+        "name": "triangle_angle_sum_pi",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 3.141592653589793,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-yin_yang_in_unit_interval",
+        "source": "higgs_layer",
+        "name": "yin_yang_in_unit_interval",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 1.0,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-all_kappa_nonnegative",
+        "source": "higgs_layer",
+        "name": "all_kappa_nonnegative",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 1.0,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-sector_count",
+        "source": "higgs_layer",
+        "name": "sector_count",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 8.0,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-edge_count",
+        "source": "higgs_layer",
+        "name": "edge_count",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 15.0,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-V_tb",
+        "source": "higgs_layer",
+        "name": "V_tb",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 0.9991224621900914,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-delta_ckm_rad",
+        "source": "higgs_layer",
+        "name": "delta_ckm_rad",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 1.147015328140754,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-emergent_unitarity_row_u",
+        "source": "higgs_layer",
+        "name": "emergent_unitarity_row_u",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 1.0000140038107037,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-emergent_unitarity_row_t",
+        "source": "higgs_layer",
+        "name": "emergent_unitarity_row_t",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 1.0000145974023715,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-V_ud",
+        "source": "higgs_layer",
+        "name": "V_ud",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 0.9743242085724285,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-sin2_theta_13",
+        "source": "higgs_layer",
+        "name": "sin2_theta_13",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 0.021999342006699705,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-sin2_theta_12",
+        "source": "higgs_layer",
+        "name": "sin2_theta_12",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 0.3069853966078061,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-alpha_s_MZ",
+        "source": "higgs_layer",
+        "name": "alpha_s_MZ",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 0.11790879142834312,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-m_t",
+        "source": "higgs_layer",
+        "name": "m_t",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 172.71550123103685,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-m_W",
+        "source": "higgs_layer",
+        "name": "m_W",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 80.3982740062519,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
+      },
+      {
+        "id": "PRED-FLAVOR-m_H",
+        "source": "higgs_layer",
+        "name": "m_H",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 125.2934070342007,
+        "tier": "A",
+        "kind": "flavor",
+        "beats_literature_tight_today": true
       },
       {
         "id": "PRED-H0-HOST-LMC",

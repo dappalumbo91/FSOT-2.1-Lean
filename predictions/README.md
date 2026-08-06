@@ -56,9 +56,13 @@ python scripts/build_h0_sightline_predictions.py
 python scripts/build_cchp_trgb_sightline_predictions.py
 python scripts/build_domain_prediction_atlas.py
 python scripts/rank_nearest_data_drops.py
+python scripts/build_catalog_prediction_layer.py
+python scripts/build_higgs_prediction_layer.py
 python scripts/build_prediction_tiers.py
 python scripts/run_prediction_monitor.py
 ```
+
+Higgs next phase (tighten without changing global 0.5%): [`HIGGS_TIGHTEN_PLAN.md`](HIGGS_TIGHTEN_PLAN.md)
 
 ## Related docs
 

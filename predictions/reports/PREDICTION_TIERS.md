@@ -1,6 +1,6 @@
 # Prediction tiers (A–D)
 
-*Generated 2026-08-06T13:37:10.861119+00:00 · pin D1D38A*
+*Generated 2026-08-06T13:50:32.356145+00:00 · pin D1D38A*
 
 Separate high-weight contested survey predictions from atlas regression holds and scaffold/speculation so public communication stays honest.
 
@@ -26,7 +26,7 @@ Separate high-weight contested survey predictions from atlas regression holds an
 | C | 10 |
 | D | 22 |
 
-| Tier A enumerated IDs (unique) | 120 |
+| Tier A enumerated IDs (unique) | 169 |
 
 ## Tier A — contested / public survey (headline)
 

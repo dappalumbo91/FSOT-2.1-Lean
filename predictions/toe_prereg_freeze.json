@@ -1,6 +1,6 @@
 {
   "freeze_id": "TOE-PREREG-20260806",
-  "frozen_at": "2026-08-06T13:22:40.635716+00:00",
+  "frozen_at": "2026-08-06T13:50:32.512229+00:00",
   "review_horizon": "2027-06-30",
   "predata_risk_doc": "docs/PREDATA_RISK.md",
   "discipline": "ZERO free parameters. Pin D1D38A. Predictions frozen before decisive surveys (DESI/Euclid/Rubin/CMB-S4 class). Retuning requires new freeze_id.",
@@ -145,8 +145,8 @@
     },
     {
       "path": "predictions/h0_multi_tool_predictions.json",
-      "sha256": "1e123730ea4fe6a07e285e0757e9b83762a36fc21b200a96cfe08626213040cc",
-      "bytes": 18101
+      "sha256": "298c71f155153ece68fdccffb3596f4ab60bfeba502ff3972393da76a7e415fc",
+      "bytes": 18108
     },
     {
       "path": "predictions/h0_sightline_predictions.json",
@@ -155,18 +155,18 @@
     },
     {
       "path": "predictions/cchp_trgb_sightline_predictions.json",
-      "sha256": "0b471b2a21f3f98e8f792a98de38bbe33866eda471553ef926f911fcae4f2cdd",
+      "sha256": "aab900712686542744c43cae180711df85c7564a4eb589ac59ef5e19f276dc36",
       "bytes": 17923
     },
     {
       "path": "predictions/nearest_data_drop_ranking.json",
-      "sha256": "2ac09b37ab0a11e9b5e8936f6d83b2401756c96c8c01d42de9772b6f4c8278e5",
-      "bytes": 7995
+      "sha256": "3586460929b11ebbc1351b3d7200af24af0ac25248af4c0a5cfa3977a50826df",
+      "bytes": 8147
     },
     {
       "path": "predictions/domain_prediction_atlas.json",
-      "sha256": "f14b3744d4e7780914579c2e710617755aa278a8465b5b3566f4d276fc1108fc",
-      "bytes": 1334321
+      "sha256": "f4bae6be4ac313645ffebdd1fd9716dd1873920d1a16d7e2e2b56c5ee8a8631f",
+      "bytes": 1334349
     },
     {
       "path": "predictions/sector_h0_seed.json",
@@ -175,9 +175,9 @@
     },
     {
       "path": "predictions/external_data_pointers.json",
-      "sha256": "145e7b2a0957b7eb8b785a23215cadce2b29f679cf48a0bbc8bd1d9c8a0b6ef4",
-      "bytes": 470
+      "sha256": "cc2bb33ac01a5df9368f634fd40b3ec997b2087947cb3f5c8f0c780124644381",
+      "bytes": 477
     }
   ],
-  "bundle_sha256": "7a702cac2a481ad774fccc279099a68ba612fefeaf8908bff4c0e467915603f9"
+  "bundle_sha256": "d3333eb0ae2baef1ba6ede6a55a0ea2152e9fe896de8808081d693ccb14cf715"
 }

@@ -25,6 +25,8 @@ PRED = ROOT / "predictions"
 PREREG = PRED / "preregistered_predictions_manifest.yaml"
 ATLAS = PRED / "domain_prediction_atlas.json"
 H0_MULTI = PRED / "h0_multi_tool_predictions.json"
+CATALOG = PRED / "catalog_prediction_layer.json"
+HIGGS = PRED / "higgs_prediction_layer.json"
 OUT_JSON = PRED / "prediction_tiers.json"
 OUT_MD = PRED / "reports" / "PREDICTION_TIERS.md"
 OUT_X = PRED / "public" / "TIERS_FOR_X.md"
@@ -175,6 +177,8 @@ def build() -> dict:
     prereg = _load_yaml(PREREG)
     atlas = _load_json(ATLAS)
     h0 = _load_json(H0_MULTI)
+    catalog = _load_json(CATALOG)
+    higgs = _load_json(HIGGS)
 
     by_tier: dict[str, list] = defaultdict(list)
 
@@ -212,6 +216,34 @@ def build() -> dict:
             }
         )
 
+    for p in catalog.get("predictions") or []:
+        tier = str(p.get("tier") or "C")
+        by_tier[tier].append(
+            {
+                "id": p.get("id"),
+                "source": "catalog_layer",
+                "name": p.get("observable") or p.get("domain"),
+                "domain": p.get("domain"),
+                "fsot_predicted": p.get("fsot_predicted"),
+                "tier": tier,
+                "kind": p.get("kind"),
+            }
+        )
+
+    for p in higgs.get("predictions") or []:
+        by_tier["A"].append(
+            {
+                "id": p.get("id"),
+                "source": "higgs_layer",
+                "name": p.get("name"),
+                "domain": p.get("domain"),
+                "fsot_predicted": p.get("fsot_predicted"),
+                "tier": "A",
+                "kind": p.get("kind"),
+                "beats_literature_tight_today": p.get("beats_literature_tight_today"),
+            }
+        )
+
     atlas_counts = defaultdict(int)
     for p in atlas.get("predictions") or []:
         kind = str(p.get("kind") or "")
@@ -244,6 +276,11 @@ def build() -> dict:
             "surface in domain_prediction_atlas.json — not fully expanded here."
         ),
         "atlas_summary": atlas.get("summary") or {},
+        "catalog_prediction_count": len(catalog.get("predictions") or []),
+        "higgs_prediction_count": len(higgs.get("predictions") or []),
+        "higgs_beats_tight": (higgs.get("summary") or {}).get(
+            "higgs_beats_literature_tight_today"
+        ),
     }
 
     # Deduplicate Tier A by id (hand + multi-tool + atlas overlap)
