@@ -66,11 +66,18 @@ Higgs next phase (tighten without changing global 0.5%): [`HIGGS_TIGHTEN_PLAN.md
 
 MPCORB triple scoreboard (catalog classical + **raw obs O–C** + FSOT %):
 
+**Note:** pilot “24” = **24 asteroids**, not 24 observations (~**52k** optical measurements).  
+Scale with the automated resumable runner:
+
 ```powershell
 python scripts/build_mpcorb_classical_metrics.py
-python scripts/ingest_mpcorb_raw_observations.py   # raw MPC obs → G:/FSOT-PublicData/...
-python scripts/build_mpcorb_raw_oc_residuals.py    # O–C vs JPL Horizons
+# automated: expand queue, fetch raw MPC obs to G:, score O–C (resume-safe)
+python scripts/run_mpcorb_raw_pipeline.py --target-objects 100 --numbered-only
+# overnight example:
+# python scripts/run_mpcorb_raw_pipeline.py --target-objects 500 --numbered-only --per-cell 20
 ```
+
+See `predictions/reports/MPCORB_SCALE_NOTE.md`.
 
 ## Related docs
 
