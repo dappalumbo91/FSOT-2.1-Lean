@@ -7,6 +7,7 @@
 | Doc | Use |
 |-----|-----|
 | **[`EXPLAINED.md`](EXPLAINED.md)** | Full explanation through the model (read this first) |
+| **[`NEXT_LAYERS.md`](NEXT_LAYERS.md)** | **What to watch now + which prediction layer to expand next** |
 | **[`reports/PREDICTION_TIERS.md`](reports/PREDICTION_TIERS.md)** | **Tier A–D split** (contested vs atlas vs scaffold) |
 | **[`public/ONE_PAGER.md`](public/ONE_PAGER.md)** | One-screen summary |
 | **[`public/X_READY.md`](public/X_READY.md)** | Copy-paste posts + threads for X |
