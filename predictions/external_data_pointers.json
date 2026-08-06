@@ -6,6 +6,13 @@
       "predictions": "predictions/cchp_trgb_sightline_predictions.json",
       "updated_at": "2026-08-06T13:25:04.448877+00:00",
       "host_count": 22
+    },
+    "mpcorb_raw_observations": {
+      "path": "G:/FSOT-PublicData/anomaly_observables/mpcorb_raw_observations",
+      "index": "G:/FSOT-PublicData/anomaly_observables/mpcorb_raw_observations/sample_index.json",
+      "updated_at": "2026-08-06T14:17:46.769373+00:00",
+      "fetched_ok": 24,
+      "sample_size": 24
     }
   },
   "policy": "Store large open-science dumps on G:/FSOT-PublicData. Monorepo keeps engines, predictions, and path pointers only."

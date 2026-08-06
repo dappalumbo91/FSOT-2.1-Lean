@@ -64,10 +64,12 @@ python scripts/run_prediction_monitor.py
 
 Higgs next phase (tighten without changing global 0.5%): [`HIGGS_TIGHTEN_PLAN.md`](HIGGS_TIGHTEN_PLAN.md)
 
-MPCORB classical metrics (arcsec RMS / U / Kepler — dual scoreboard with FSOT %):
+MPCORB triple scoreboard (catalog classical + **raw obs O–C** + FSOT %):
 
 ```powershell
 python scripts/build_mpcorb_classical_metrics.py
+python scripts/ingest_mpcorb_raw_observations.py   # raw MPC obs → G:/FSOT-PublicData/...
+python scripts/build_mpcorb_raw_oc_residuals.py    # O–C vs JPL Horizons
 ```
 
 ## Related docs

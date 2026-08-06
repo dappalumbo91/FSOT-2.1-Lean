@@ -1,9 +1,14 @@
 # MPCORB residual refinement process (reproducible)
 
-**Classical field metrics (arcsec RMS, U, Kepler Δn/n):**  
-`python scripts/build_mpcorb_classical_metrics.py` → `data/mpcorb_classical_metrics.json` · `predictions/reports/MPCORB_CLASSICAL_METRICS.md`  
+**Classical + raw granular metrics (three layers):**
 
-Those are **in addition to** the FSOT pooled residual % below — different units, dual scoreboard.
+| Layer | Command | Output |
+|-------|---------|--------|
+| Catalog RMS / U / Kepler | `python scripts/build_mpcorb_classical_metrics.py` | `data/mpcorb_classical_metrics.json` |
+| **Raw MPC obs vs JPL Horizons O–C** | `ingest_mpcorb_raw_observations.py` then `build_mpcorb_raw_oc_residuals.py` | `data/mpcorb_raw_oc_residuals.json` (data on **G:**) |
+| FSOT seed residual % | `build_mpcorb_fsot_benchmark.py` | `data/mpcorb_fsot_benchmark.json` |
+
+Those are **in addition to** each other — different units, triple scoreboard.
 
 **Purpose:** Document how MPCORB / AllCometEls residuals were refined from a first-pass seed-only probe to the **same precision standard** as the rest of the FSOT verified atlas.
 

@@ -1,0 +1,351 @@
+{
+  "generated_at": "2026-08-06T14:20:49.688717+00:00",
+  "version": "2.0",
+  "storage_root": "G:/FSOT-PublicData/anomaly_observables/mpcorb_raw_observations",
+  "ephemeris": "JPL Horizons geocentric OBSERVER (DE441-class)",
+  "observations": "MPC Observations API ADES (optical RA/Dec)",
+  "honesty": {
+    "what_this_is": "O\u2013C in arcseconds between raw MPC optical observations we download and JPL Horizons predicted positions at those epochs \u2014 granular data, not a literature summary table.",
+    "what_this_is_not": "Not a re-fit of orbits. Catalog rms remains the MPC's own orbit-fit residual; Horizons O\u2013C is an independent industrial ephemeris check.",
+    "granular_data": true,
+    "literature_only": false
+  },
+  "sample": {
+    "objects_in_index": 24,
+    "objects_with_oc": 19,
+    "objects_failed": 5,
+    "max_obs_per_object": 40
+  },
+  "raw_oc_summary_arcsec": {
+    "median_of_object_medians": 4.230223137111953,
+    "p95_of_object_medians": 384.2006289689805,
+    "median_of_object_rms": 10.609007903549376,
+    "n_objects": 19
+  },
+  "catalog_rms_on_same_sample_arcsec": {
+    "median": 0.65,
+    "p95": 0.91,
+    "n": 19
+  },
+  "by_regime_median_oc_arcsec": {
+    "distant": 0.48288991906137585,
+    "main_belt": 2.4360599249389043,
+    "neo": 38.141965468172785,
+    "other": 4.1609077054054735
+  },
+  "triple_scoreboard": {
+    "raw_obs_horizons_median_oc_arcsec": 4.230223137111953,
+    "catalog_median_rms_arcsec": 0.76,
+    "fsot_pooled_median_error_pct": 0.023015,
+    "note": "Three layers on real data: (1) raw MPC obs vs Horizons O\u2013C arcsec, (2) MPCORB catalog rms field arcsec, (3) FSOT seed residual %."
+  },
+  "objects": [
+    {
+      "desig": "15760",
+      "regime": "distant",
+      "U": 2,
+      "rms_catalog_arcsec": 0.91,
+      "n_obs_used": 40,
+      "n_obs_available": 113,
+      "raw_oc_median_arcsec": 0.5282110850687085,
+      "raw_oc_mean_arcsec": 0.7500075383936867,
+      "raw_oc_p95_arcsec": 2.2191887015761145,
+      "raw_oc_rms_arcsec": 0.9766434628077105,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "15788",
+      "regime": "distant",
+      "U": 1,
+      "rms_catalog_arcsec": 0.84,
+      "n_obs_used": 40,
+      "n_obs_available": 153,
+      "raw_oc_median_arcsec": 0.2892745823177463,
+      "raw_oc_mean_arcsec": 0.43807082332843406,
+      "raw_oc_p95_arcsec": 1.336844784902586,
+      "raw_oc_rms_arcsec": 0.6662429133768341,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "15807",
+      "regime": "distant",
+      "U": 4,
+      "rms_catalog_arcsec": 0.58,
+      "n_obs_used": 40,
+      "n_obs_available": 69,
+      "raw_oc_median_arcsec": 0.4375687530540432,
+      "raw_oc_mean_arcsec": 0.8865038202103321,
+      "raw_oc_p95_arcsec": 3.226171113919942,
+      "raw_oc_rms_arcsec": 1.2972733178695308,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "15809",
+      "regime": "distant",
+      "U": 5,
+      "rms_catalog_arcsec": 0.65,
+      "n_obs_used": 40,
+      "n_obs_available": 52,
+      "raw_oc_median_arcsec": 0.42362030532211004,
+      "raw_oc_mean_arcsec": 0.6546708649592126,
+      "raw_oc_p95_arcsec": 1.6787622861575338,
+      "raw_oc_rms_arcsec": 0.8492409424465083,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "J95Y03Y",
+      "regime": "distant",
+      "U": null,
+      "rms_catalog_arcsec": 0.91,
+      "n_obs_used": 21,
+      "n_obs_available": 21,
+      "raw_oc_median_arcsec": 1.1742985849116243,
+      "raw_oc_mean_arcsec": 6.444148370165223,
+      "raw_oc_p95_arcsec": 55.82252769983086,
+      "raw_oc_rms_arcsec": 17.632288475869927,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "J96P00W",
+      "regime": "distant",
+      "U": null,
+      "rms_catalog_arcsec": 0.56,
+      "n_obs_used": 40,
+      "n_obs_available": 268,
+      "raw_oc_median_arcsec": 4.230223137111953,
+      "raw_oc_mean_arcsec": 4.119425112731406,
+      "raw_oc_p95_arcsec": 5.763975956181433,
+      "raw_oc_rms_arcsec": 4.295422774936371,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "1",
+      "regime": "main_belt",
+      "U": 0,
+      "rms_catalog_arcsec": 0.83,
+      "n_obs_used": 40,
+      "n_obs_available": 8049,
+      "raw_oc_median_arcsec": 2.578034790331468,
+      "raw_oc_mean_arcsec": 5.9570704799567995,
+      "raw_oc_p95_arcsec": 39.56575797885383,
+      "raw_oc_rms_arcsec": 13.553870437109902,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "2",
+      "regime": "main_belt",
+      "U": 0,
+      "rms_catalog_arcsec": 0.77,
+      "n_obs_used": 40,
+      "n_obs_available": 9648,
+      "raw_oc_median_arcsec": 2.2940850595463402,
+      "raw_oc_mean_arcsec": 3.8741925442560983,
+      "raw_oc_p95_arcsec": 9.348061435538753,
+      "raw_oc_rms_arcsec": 8.544643632273056,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "J98A10K",
+      "regime": "main_belt",
+      "U": 6,
+      "rms_catalog_arcsec": 0.35,
+      "n_obs_used": 26,
+      "n_obs_available": 26,
+      "raw_oc_median_arcsec": 8.972912042408478,
+      "raw_oc_mean_arcsec": 8.934223101689682,
+      "raw_oc_p95_arcsec": 17.137122498510426,
+      "raw_oc_rms_arcsec": 9.970342710147005,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "J99A36C",
+      "regime": "main_belt",
+      "U": 6,
+      "rms_catalog_arcsec": 0.24,
+      "n_obs_used": 22,
+      "n_obs_available": 22,
+      "raw_oc_median_arcsec": 1.4533195658376816,
+      "raw_oc_mean_arcsec": 1.8228728050117609,
+      "raw_oc_p95_arcsec": 3.2160646132898925,
+      "raw_oc_rms_arcsec": 1.9485988710182425,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "433",
+      "regime": "neo",
+      "U": 0,
+      "rms_catalog_arcsec": 0.61,
+      "n_obs_used": 40,
+      "n_obs_available": 18620,
+      "raw_oc_median_arcsec": 8.21199087119598,
+      "raw_oc_mean_arcsec": 56.60570149152096,
+      "raw_oc_p95_arcsec": 481.0999450202337,
+      "raw_oc_rms_arcsec": 145.65004061296625,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "719",
+      "regime": "neo",
+      "U": 0,
+      "rms_catalog_arcsec": 0.77,
+      "n_obs_used": 40,
+      "n_obs_available": 2174,
+      "raw_oc_median_arcsec": 8.38295099304421,
+      "raw_oc_mean_arcsec": 9.083869244660795,
+      "raw_oc_p95_arcsec": 18.888236502713116,
+      "raw_oc_rms_arcsec": 10.609007903549376,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "J92J00D",
+      "regime": "neo",
+      "U": 5,
+      "rms_catalog_arcsec": 0.75,
+      "n_obs_used": 24,
+      "n_obs_available": 24,
+      "raw_oc_median_arcsec": 354.6381100914447,
+      "raw_oc_mean_arcsec": 305.7876669018502,
+      "raw_oc_p95_arcsec": 442.7984064744401,
+      "raw_oc_rms_arcsec": 326.2998349343696,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "J90U00N",
+      "regime": "neo",
+      "U": 8,
+      "rms_catalog_arcsec": 0.51,
+      "n_obs_used": 22,
+      "n_obs_available": 22,
+      "raw_oc_median_arcsec": 38.141965468172785,
+      "raw_oc_mean_arcsec": 52.25492805951196,
+      "raw_oc_p95_arcsec": 119.45297634546674,
+      "raw_oc_rms_arcsec": 62.97246054535962,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "J91J00R",
+      "regime": "neo",
+      "U": 7,
+      "rms_catalog_arcsec": 0.55,
+      "n_obs_used": 20,
+      "n_obs_available": 20,
+      "raw_oc_median_arcsec": 70.95407158180961,
+      "raw_oc_mean_arcsec": 79.83989825716367,
+      "raw_oc_p95_arcsec": 104.18554275117035,
+      "raw_oc_rms_arcsec": 81.45493902941537,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "J93K00A",
+      "regime": "neo",
+      "U": null,
+      "rms_catalog_arcsec": 0.9,
+      "n_obs_used": 38,
+      "n_obs_available": 38,
+      "raw_oc_median_arcsec": 650.2632988667988,
+      "raw_oc_mean_arcsec": 547.9453935517773,
+      "raw_oc_p95_arcsec": 1020.6144197140882,
+      "raw_oc_rms_arcsec": 636.2380272260564,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "K02A01Z",
+      "regime": "neo",
+      "U": null,
+      "rms_catalog_arcsec": 0.65,
+      "n_obs_used": 40,
+      "n_obs_available": 73,
+      "raw_oc_median_arcsec": 12.705525992905478,
+      "raw_oc_mean_arcsec": 13.707906729666332,
+      "raw_oc_p95_arcsec": 22.049696811354533,
+      "raw_oc_rms_arcsec": 15.53812768728494,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "434",
+      "regime": "other",
+      "U": 0,
+      "rms_catalog_arcsec": 0.47,
+      "n_obs_used": 40,
+      "n_obs_available": 10737,
+      "raw_oc_median_arcsec": 6.538455156043941,
+      "raw_oc_mean_arcsec": 97.93664076523262,
+      "raw_oc_p95_arcsec": 273.68544069455135,
+      "raw_oc_rms_arcsec": 147.67324764536033,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    },
+    {
+      "desig": "944",
+      "regime": "other",
+      "U": 0,
+      "rms_catalog_arcsec": 0.68,
+      "n_obs_used": 40,
+      "n_obs_available": 2062,
+      "raw_oc_median_arcsec": 1.7833602547670062,
+      "raw_oc_mean_arcsec": 2.19538216039351,
+      "raw_oc_p95_arcsec": 5.122361869458396,
+      "raw_oc_rms_arcsec": 2.582103663319825,
+      "ephemeris": "JPL_Horizons_OBSERVER_geocentric",
+      "observations_source": "MPC_Observations_API_ADES"
+    }
+  ],
+  "failures": [
+    {
+      "desig": "o5478",
+      "error": "Horizons table missing SOE/EOE",
+      "regime": "distant",
+      "U": 6,
+      "rms_catalog_arcsec": 0.25
+    },
+    {
+      "desig": "s1132",
+      "error": "Horizons table missing SOE/EOE",
+      "regime": "distant",
+      "U": 8,
+      "rms_catalog_arcsec": 0.23
+    },
+    {
+      "desig": "n7339",
+      "error": "Horizons table missing SOE/EOE",
+      "regime": "main_belt",
+      "U": 3,
+      "rms_catalog_arcsec": 0.4
+    },
+    {
+      "desig": "n7354",
+      "error": "Horizons table missing SOE/EOE",
+      "regime": "main_belt",
+      "U": 3,
+      "rms_catalog_arcsec": 0.34
+    },
+    {
+      "desig": "a9296",
+      "error": "Horizons table missing SOE/EOE",
+      "regime": "neo",
+      "U": 4,
+      "rms_catalog_arcsec": 0.85
+    }
+  ],
+  "refresh": [
+    "python scripts/ingest_mpcorb_raw_observations.py",
+    "python scripts/build_mpcorb_raw_oc_residuals.py"
+  ]
+}
