@@ -1,6 +1,6 @@
 # CCHP / Carnegie TRGB sightline H₀ predictions
 
-*Generated 2026-08-06T13:22:38.857649+00:00 · pin D1D38A · 22 hosts*
+*Generated 2026-08-06T13:25:04.448877+00:00 · pin D1D38A · 22 hosts*
 
 CCHP TRGB galaxies are intermediate-ladder sightlines — milder bubble density than SH0ES Cepheid hosts, distinct from CMB-depleted sectors. Each galaxy gets its own FSOT H0 prediction.
 
@@ -34,6 +34,6 @@ CCHP TRGB galaxies are intermediate-ladder sightlines — milder bubble density 
 | NGC1365 | sn_ia_calibrator | 53.401 | `sector_0_planck_depleted` | **70.66578** | jwst_primary |
 | NGC1448 | hst_era_calibrator | 56.138 | `sector_0_planck_depleted` | **70.66578** | hst_era_extended |
 
-Bundle SHA-256: `a77d8d289fd3f16a07b186c0cc7c546bf732231cb0ddadc01cbd1b10d66f8ec1`
+Bundle SHA-256: `7458dfe1704033759987eb34ab2eca8596430b354b0e0dec5d53f59a4a209fed`
 
 Refresh: `python scripts/build_cchp_trgb_sightline_predictions.py`

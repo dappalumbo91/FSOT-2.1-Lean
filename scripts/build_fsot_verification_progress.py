@@ -1499,7 +1499,7 @@ def build_progress() -> dict:
             },
             "artifacts": [
                 "data/fractal_constant_recursion.yaml",
-                "data/preregistered_predictions_manifest.yaml",
+                "predictions/preregistered_predictions_manifest.yaml",
                 "data/github_oss_adversarial_manifest.yaml",
                 "scripts/tier_k_toe_gap_closure_lib.py",
                 "scripts/build_tier_k_toe_gap_closure_benchmarks.py",

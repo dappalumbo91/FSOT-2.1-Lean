@@ -20,7 +20,7 @@ SOURCES = {
     "cross_proof": ROOT / "data" / "cross_proof_verification_report.json",
     "margin": ROOT / "data" / "benchmark_margin_audit.json",
     "atlas": ROOT / "data" / "publication" / "domain_atlas.csv",
-    "prereg": ROOT / "data" / "preregistered_predictions_manifest.yaml",
+    "prereg": ROOT / "predictions" / "preregistered_predictions_manifest.yaml",
 }
 
 IDEAL_TOPICS = [

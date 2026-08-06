@@ -31,7 +31,7 @@ INCLUDE_PATHS = (
     "data/publication_spine_walkthrough.json",
     "data/scientific_domain_expansion_map.yaml",
     "data/fsot_domain_navigator.json",
-    "data/preregistered_predictions_manifest.yaml",
+    "predictions/preregistered_predictions_manifest.yaml",
     "data/domain_citations/verified_desktop.bib",
     "data/figures/spine_walkthrough.png",
     "data/figures/contested_fsot_vs_lcdm.png",

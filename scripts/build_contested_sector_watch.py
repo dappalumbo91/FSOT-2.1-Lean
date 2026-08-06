@@ -9,8 +9,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTESTED = ROOT / "data" / "contested_observables_closure.json"
-PREREG = ROOT / "data" / "preregistered_predictions_manifest.yaml"
-OUT = ROOT / "data" / "publication" / "CONTESTED_SECTOR_WATCH.md"
+PREREG = ROOT / "predictions" / "preregistered_predictions_manifest.yaml"
+OUT = ROOT / "predictions" / "reports" / "CONTESTED_SECTOR_WATCH.md"
 
 
 def main() -> int:
@@ -62,10 +62,10 @@ def main() -> int:
         "## Future-observation ledger",
         "",
         "Pre-data differentiators (surveys not yet closed): "
-        "`data/contested_future_observation_ledger.json` · "
-        "`data/publication/CONTESTED_FUTURE_OBSERVATION_LEDGER.md`",
+        "`predictions/contested_future_observation_ledger.json` · "
+        "`predictions/reports/CONTESTED_FUTURE_OBSERVATION_LEDGER.md`",
         "",
-        "Discipline: [`docs/PREDATA_RISK.md`](../../docs/PREDATA_RISK.md) · freeze: `data/toe_prereg_freeze.json`",
+        "Discipline: [`docs/PREDATA_RISK.md`](../../docs/PREDATA_RISK.md) · freeze: `predictions/toe_prereg_freeze.json`",
         "",
         "Refresh: `python scripts/build_contested_observables_closure.py && "
         "python scripts/build_contested_sector_watch.py && "

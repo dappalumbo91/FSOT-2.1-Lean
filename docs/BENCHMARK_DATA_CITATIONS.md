@@ -114,7 +114,7 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | dataset | GitHub OSS corpus data/planetary_structure_benchmark.json | https://github.com/data/planetary_structure_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/programming_language_laws_benchmark.json | https://github.com/data/programming_language_laws_benchmark.json | 1 |
 | dataset | GitHub OSS corpus data/quantum_computing_math_depth_panel_benchmark.json | https://github.com/data/quantum_computing_math_depth_panel_benchmark.json | 1 |
-| dataset | GitHub OSS corpus data/sector_h0_seed.json | https://github.com/data/sector_h0_seed.json | 3 |
+| dataset | GitHub OSS corpus predictions/sector_h0_seed.json | https://github.com/predictions/sector_h0_seed.json | 3 |
 | dataset | GitHub OSS corpus data/sh0es_host_coordinates.json | https://github.com/data/sh0es_host_coordinates.json | 1 |
 | dataset | GitHub OSS corpus data/stumped_observables_reference.json | https://github.com/data/stumped_observables_reference.json | 2 |
 | dataset | GitHub OSS corpus data/symbolic_archetype_reference.json | https://github.com/data/symbolic_archetype_reference.json | 1 |
@@ -568,7 +568,7 @@ are tied to **public datasets, APIs, or literature landing pages**, not private 
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\data\dark_energy_cpl_reference.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/dark_energy_cpl_reference.json | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\data\foundational_ontology_axioms.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/foundational_ontology_axioms.yaml | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\data\hardware_competitive_refine_report.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/hardware_competitive_refine_report.json | 1 |
-| vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\data\preregistered_predictions_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/preregistered_predictions_manifest.yaml | 1 |
+| vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\data\preregistered_predictions_manifest.yaml | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/preregistered_predictions_manifest.yaml | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\application_wiring\tier88_cache\bibliography_corpus_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/bibliography_corpus_cache.json | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\application_wiring\tier88_cache\biological_cuda_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/biological_cuda_cache.json | 1 |
 | vendor_cache | C:\Users\damia\Desktop\FSOT-2.1-Lean\vendor\application_wiring\tier88_cache\living_fsot_hardware_cache.json | https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/application_wiring/tier88_cache/living_fsot_hardware_cache.json | 1 |
@@ -2837,7 +2837,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/hubble_bubble_tension_benchmark.json` · records=21 · median%=0.0
 - Lean: `FSOT.Formal.HubbleBubbleTensionPriors`
 - Public / portable anchors:
-  - **dataset**: GitHub OSS corpus data/sector_h0_seed.json — https://github.com/data/sector_h0_seed.json
+  - **dataset**: GitHub OSS corpus predictions/sector_h0_seed.json — https://github.com/predictions/sector_h0_seed.json
   - **dataset**: GitHub OSS corpus scripts/build_cosmology_bubble_bleed_benchmark.py — https://github.com/scripts/build_cosmology_bubble_bleed_benchmark.py
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
@@ -4076,7 +4076,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Benchmark: `data/preregistered_outcome_tracking_benchmark.json` · records=72 · median%=0.0
 - Lean: `FSOT.Formal.PreregisteredOutcomeTrackingPriors`
 - Public / portable anchors:
-  - **vendor_cache**: C:\Users\damia\Desktop\FSOT-2.1-Lean\data\preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/data/preregistered_predictions_manifest.yaml
+  - **vendor_cache**: C:\Users\damia\Desktop\FSOT-2.1-Lean\data\preregistered_predictions_manifest.yaml — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/preregistered_predictions_manifest.yaml
   - **vendor_cache**: preregistered_predictions_verification_scaffold_benchmark.json — https://github.com/dappalumbo91/FSOT-2.1-Lean/tree/main/preregistered_predictions_verification_scaffold_benchmark.json
 
 ### Preregistered_Predictions
@@ -4427,7 +4427,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
 - Public / portable anchors:
   - **literature**: SH0ES / local distance ladder H0 (Riess et al. series) — https://ui.adsabs.harvard.edu/
   - **dataset**: GitHub OSS corpus data/sh0es_host_coordinates.json — https://github.com/data/sh0es_host_coordinates.json
-  - **dataset**: GitHub OSS corpus data/sector_h0_seed.json — https://github.com/data/sector_h0_seed.json
+  - **dataset**: GitHub OSS corpus predictions/sector_h0_seed.json — https://github.com/predictions/sector_h0_seed.json
   - **ingest_script**: scripts/ingest_anomaly_public_data.py — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/ingest_anomaly_public_data.py
 
 ### SIMBAD_Stellar_Identity_Deep
@@ -4702,7 +4702,7 @@ Full machine detail: `data/benchmark_anchor_citation_ledger.json`.
   - **dataset**: GitHub OSS corpus data/stumped_observables_reference.json — https://github.com/data/stumped_observables_reference.json
   - **dataset**: GitHub OSS corpus vendor/fsot_compute.py — https://github.com/vendor/fsot_compute.py
   - **dataset**: GitHub OSS corpus scripts/higgs_mass_formula_eval.py — https://github.com/scripts/higgs_mass_formula_eval.py
-  - **dataset**: GitHub OSS corpus data/sector_h0_seed.json — https://github.com/data/sector_h0_seed.json
+  - **dataset**: GitHub OSS corpus predictions/sector_h0_seed.json — https://github.com/predictions/sector_h0_seed.json
   - **dataset**: vendor/formula_corpus/by_domain/strict_empirical.jsonl — https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/vendor/formula_corpus/by_domain/strict_empirical.jsonl
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/
   - **dataset**: NIST CODATA / Constants — https://physics.nist.gov/cuu/Constants/

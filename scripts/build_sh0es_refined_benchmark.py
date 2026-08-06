@@ -33,7 +33,7 @@ HOST_ALIASES = {
     "N7250": "NGC7250",
     "U9391": "UGC9391",
 }
-SECTOR_SEED = ROOT / "data" / "sector_h0_seed.json"
+SECTOR_SEED = ROOT / "predictions" / "sector_h0_seed.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from bubble_bleed_physics import (  # noqa: E402
@@ -187,7 +187,7 @@ def main() -> int:
         source=[
             "G:/FSOT-PublicData/anomaly_observables/sh0es",
             "data/sh0es_host_coordinates.json",
-            "data/sector_h0_seed.json",
+            "predictions/sector_h0_seed.json",
         ],
         channel_stats=[("sh0es", "per_host_h0_panel", errs)],
         sota_baselines={

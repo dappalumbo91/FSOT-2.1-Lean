@@ -28,9 +28,9 @@ OUT_GR_SM_BENCH = ROOT / "data" / "toe_gr_sm_deep_benchmark.json"
 OUT_FORCE_MANIFEST = ROOT / "data" / "toe_force_package_manifest.json"
 OUT_CKM_BENCH = ROOT / "data" / "toe_ckm_pmns_benchmark.json"
 OUT_CONTESTED = ROOT / "data" / "toe_contested_sector_refresh.json"
-OUT_PREREG_FREEZE = ROOT / "data" / "toe_prereg_freeze.json"
+OUT_PREREG_FREEZE = ROOT / "predictions" / "toe_prereg_freeze.json"
 STUMPED_REF = ROOT / "data" / "stumped_observables_reference.json"
-PREREG_MANIFEST = ROOT / "data" / "preregistered_predictions_manifest.yaml"
+PREREG_MANIFEST = ROOT / "predictions" / "preregistered_predictions_manifest.yaml"
 ONTOLOGY = ROOT / "data" / "foundational_ontology_axioms.yaml"
 MARGIN = ROOT / "data" / "benchmark_margin_audit.json"
 CROSS = ROOT / "data" / "cross_proof_verification_report.json"
@@ -618,14 +618,14 @@ def freeze_prereg() -> dict:
         FALSIF,
         ROOT / "data" / "contested_observables_closure.json",
         ROOT / "data" / "toe_contested_sector_refresh.json",
-        ROOT / "data" / "contested_future_observation_ledger.json",
-        ROOT / "data" / "h0_multi_tool_predictions.json",
-        ROOT / "data" / "h0_sightline_predictions.json",
-        ROOT / "data" / "cchp_trgb_sightline_predictions.json",
-        ROOT / "data" / "nearest_data_drop_ranking.json",
-        ROOT / "data" / "domain_prediction_atlas.json",
-        ROOT / "data" / "sector_h0_seed.json",
-        ROOT / "data" / "external_data_pointers.json",
+        ROOT / "predictions" / "contested_future_observation_ledger.json",
+        ROOT / "predictions" / "h0_multi_tool_predictions.json",
+        ROOT / "predictions" / "h0_sightline_predictions.json",
+        ROOT / "predictions" / "cchp_trgb_sightline_predictions.json",
+        ROOT / "predictions" / "nearest_data_drop_ranking.json",
+        ROOT / "predictions" / "domain_prediction_atlas.json",
+        ROOT / "predictions" / "sector_h0_seed.json",
+        ROOT / "predictions" / "external_data_pointers.json",
     ]
     frozen = []
     for path in files:
@@ -858,7 +858,7 @@ def evaluate_t_criteria(
         },
         "T5_prereg_freeze": {
             "pass": t5_ok,
-            "artifact": "data/toe_prereg_freeze.json",
+            "artifact": "predictions/toe_prereg_freeze.json",
             "bundle_sha256": prereg.get("bundle_sha256"),
         },
         "T6_falsification": {
@@ -977,7 +977,7 @@ def write_gap_closure_doc(eval_doc: dict) -> None:
         "",
         "## T5 Prereg freeze",
         "",
-        "File: `data/toe_prereg_freeze.json` (SHA-256 bundle).  ",
+        "File: `predictions/toe_prereg_freeze.json` (SHA-256 bundle).  ",
         "Do not retune sector predictions without a new freeze id.",
         "",
         "## Data pulled / cited",

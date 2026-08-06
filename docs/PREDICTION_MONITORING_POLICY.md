@@ -30,7 +30,7 @@ As of the 2026-08 session research:
 Pre-formal public calls (e.g. Euclid characteristics before drop; I3 Atlas comet morphology/function months before JWST public data) may live on X highlights. Those are **historical context**, not the formal scoreboard. Formal claims use:
 
 - Commit SHA on `dappalumbo91/FSOT-2.1-Lean`
-- `data/domain_prediction_atlas.json` / H0 multi-tool / sightline / TRGB files
+- `predictions/domain_prediction_atlas.json` / H0 multi-tool / sightline / TRGB files
 - Outcome log entries (below)
 
 Being directionally right with residual outside a future 0.5% gate is still useful model information — it does not auto-break the engine unless a registered kill criterion fires.

@@ -218,7 +218,7 @@ This README will grow. Each domain we open, each simulator we wire, each formal 
 | Completeness audit | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) |
 | Skeptic replication kit | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) |
 | Near-miss ledger | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) |
-| Contested-sector watch | [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) |
+| Contested-sector watch | [`predictions/reports/CONTESTED_SECTOR_WATCH.md`](predictions/reports/CONTESTED_SECTOR_WATCH.md) |
 | Wet-lab & longevity depth | [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) |
 | Credibility hardening audit | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) |
 | Circuitry emergence spine | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) |
@@ -260,7 +260,7 @@ One proposition, stated precisely:
 
 > Reality is a **25-dimensional fluid condensate**. What we call space, time, matter, life, and mind are regimes of the same scalar field `raw_S`, computed from seed geometry with **no per-observable least-squares tuning**.
 
-This is not poetry layered on curve fits. It is a **falsifiable engineering specification** tested across **407** scientific domains (**432** green residual benchmarks) with preregistered kill criteria (`data/preregistered_predictions_manifest.yaml`).
+This is not poetry layered on curve fits. It is a **falsifiable engineering specification** tested across **407** scientific domains (**432** green residual benchmarks) with preregistered kill criteria (`predictions/preregistered_predictions_manifest.yaml`).
 
 <!-- README_CONTRIBUTIONS_START -->
 ### 1.3 Contributions
@@ -438,7 +438,7 @@ FSOT invites destruction. Preregistered predictions **PRED-001 through PRED-041*
 <!-- README_PREREG_SUMMARY_START -->
 ### 3.4 Preregistered prediction registry (summary)
 
-**35 predictions** locked in `data/preregistered_predictions_manifest.yaml` before independent comparison. Post-hoc tuning invalidates prereg status.
+**35 predictions** locked in `predictions/preregistered_predictions_manifest.yaml` before independent comparison. Post-hoc tuning invalidates prereg status.
 
 | ID | Name | Domain | FSOT branch | Discriminant |
 |----|------|--------|-------------|--------------|
@@ -561,7 +561,7 @@ where \(\epsilon_{\mathrm{floor}}\) guards division near zero for classifier-val
 
 ### 5.6 Preregistration and kill criteria
 
-- **Preregistered predictions:** `data/preregistered_predictions_manifest.yaml` (PRED-001â€“041) â€” outcomes declared before panel refresh.
+- **Preregistered predictions:** `predictions/preregistered_predictions_manifest.yaml` (PRED-001â€“041) â€” outcomes declared before panel refresh.
 - **Per-domain kill criteria:** `data/fsot_domain_navigator.json` â€” extension panels and core routes register failure thresholds.
 - **Parameter honesty:** `data/honest_claims_manifest.yaml` â€” routing coordinates are seed-derived folds, not fitted observational knobs (audit: `scripts/audit_parameter_count.py` â†’ `ZERO_FREE`).
 
@@ -830,7 +830,7 @@ FSOT publishes domains that pass the green gate but approach the â‰¤0.5% bou
 | Transparency artifact | Role |
 |-----------------------|------|
 | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) | Top domains by max single-record error (still green) |
-| [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) | Living Hâ‚€, Ïƒâ‚ˆ, BBN, w_a monitor vs Planck 2018 / Riess 2024 |
+| [`predictions/reports/CONTESTED_SECTOR_WATCH.md`](predictions/reports/CONTESTED_SECTOR_WATCH.md) | Living Hâ‚€, Ïƒâ‚ˆ, BBN, w_a monitor vs Planck 2018 / Riess 2024 |
 | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute falsification path for independent reviewers |
 
 Regenerate: `python scripts/build_benchmark_near_miss_ledger.py` Â· `python scripts/build_contested_sector_watch.py`
@@ -941,7 +941,7 @@ python scripts/run_cross_proof_verification.py
 | [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) | 402-domain verification table |
 | [`data/cross_proof_verification_report.json`](data/cross_proof_verification_report.json) | Five-prover closure report |
 | [`data/fsot_domain_navigator.json`](data/fsot_domain_navigator.json) | Domain routes + kill criteria |
-| [`data/preregistered_predictions_manifest.yaml`](data/preregistered_predictions_manifest.yaml) | PRED-001â€“041 registry |
+| [`predictions/preregistered_predictions_manifest.yaml`](predictions/preregistered_predictions_manifest.yaml) | PRED-001â€“041 registry |
 | [`data/honest_claims_manifest.yaml`](data/honest_claims_manifest.yaml) | Parameter honesty |
 | [`data/domain_citations/verified_desktop.bib`](data/domain_citations/verified_desktop.bib) | BibTeX export |
 
@@ -969,7 +969,7 @@ python scripts/export_domain_citations.py --bundle verified_desktop
 | [`docs/VERIFIED_DESKTOP_TRANSPORTER.md`](docs/VERIFIED_DESKTOP_TRANSPORTER.md) | Transporter simulation stack (supplementary) |
 | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute skeptic replication path |
 | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) | Near-miss transparency ledger |
-| [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) | Contested-sector living watch |
+| [`predictions/reports/CONTESTED_SECTOR_WATCH.md`](predictions/reports/CONTESTED_SECTOR_WATCH.md) | Contested-sector living watch |
 
 <!-- README_APPENDIX_C_EXTRA_START -->
 | [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) | Tier 94/95 wet-lab & longevity |

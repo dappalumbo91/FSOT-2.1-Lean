@@ -11,8 +11,8 @@ Schedule (example):
   python scripts/run_prediction_monitor.py --online
 
 Outputs:
-  data/prediction_monitor_report.json
-  data/publication/PREDICTION_MONITOR.md
+  predictions/prediction_monitor_report.json
+  predictions/reports/PREDICTION_MONITOR.md
 """
 
 from __future__ import annotations
@@ -30,17 +30,17 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-REGISTRY = ROOT / "data" / "prediction_monitor_registry.yaml"
-PREREG = ROOT / "data" / "preregistered_predictions_manifest.yaml"
-FREEZE = ROOT / "data" / "toe_prereg_freeze.json"
+REGISTRY = ROOT / "predictions" / "prediction_monitor_registry.yaml"
+PREREG = ROOT / "predictions" / "preregistered_predictions_manifest.yaml"
+FREEZE = ROOT / "predictions" / "toe_prereg_freeze.json"
 MARGIN = ROOT / "data" / "benchmark_margin_audit.json"
 CONTESTED = ROOT / "data" / "contested_observables_closure.json"
-FUTURE = ROOT / "data" / "contested_future_observation_ledger.json"
-DOMAIN_ATLAS = ROOT / "data" / "domain_prediction_atlas.json"
-H0_MULTI = ROOT / "data" / "h0_multi_tool_predictions.json"
-H0_SIGHT = ROOT / "data" / "h0_sightline_predictions.json"
-OUT_JSON = ROOT / "data" / "prediction_monitor_report.json"
-OUT_MD = ROOT / "data" / "publication" / "PREDICTION_MONITOR.md"
+FUTURE = ROOT / "predictions" / "contested_future_observation_ledger.json"
+DOMAIN_ATLAS = ROOT / "predictions" / "domain_prediction_atlas.json"
+H0_MULTI = ROOT / "predictions" / "h0_multi_tool_predictions.json"
+H0_SIGHT = ROOT / "predictions" / "h0_sightline_predictions.json"
+OUT_JSON = ROOT / "predictions" / "prediction_monitor_report.json"
+OUT_MD = ROOT / "predictions" / "reports" / "PREDICTION_MONITOR.md"
 
 GREEN_CEILING = 0.5
 
@@ -391,7 +391,7 @@ def write_md(report: dict) -> None:
             "",
             "## Multi-tool H₀ (bubble bleed)",
             "",
-            "Full table: `data/publication/H0_MULTI_TOOL_PREDICTIONS.md`  ",
+            "Full table: `predictions/reports/H0_MULTI_TOOL_PREDICTIONS.md`  ",
             "Theory: each measurement system samples a different BH→WH information-flow sector.",
             "",
             "| Tool | FSOT H₀ | Literature | Class |",
@@ -420,7 +420,7 @@ def write_md(report: dict) -> None:
     lines.extend(
         [
             "",
-            "Full hosts: `data/publication/H0_SIGHTLINE_PREDICTIONS.md`",
+            "Full hosts: `predictions/reports/H0_SIGHTLINE_PREDICTIONS.md`",
             "",
             "## High-urgency open watches",
             "",
@@ -463,8 +463,8 @@ def write_md(report: dict) -> None:
             "  python scripts/run_prediction_monitor.py --online",
             "```",
             "",
-            "Related: `data/prediction_monitor_registry.yaml` · `docs/PREDATA_RISK.md` · "
-            "`data/toe_prereg_freeze.json` · `docs/INDEPENDENT_REPRODUCTION.md`",
+            "Related: `predictions/prediction_monitor_registry.yaml` · `docs/PREDATA_RISK.md` · "
+            "`predictions/toe_prereg_freeze.json` · `docs/INDEPENDENT_REPRODUCTION.md`",
             "",
         ]
     )

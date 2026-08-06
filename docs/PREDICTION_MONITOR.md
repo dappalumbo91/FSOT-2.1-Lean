@@ -4,16 +4,16 @@
 
 | Artifact | Role |
 |----------|------|
-| `data/preregistered_predictions_manifest.yaml` | Hand PRED-001… curated locks |
-| `data/domain_prediction_atlas.json` | **Atlas-scale** PREDs for every green domain |
-| `data/h0_multi_tool_predictions.json` | **Per-tool H₀** under BH→WH bubble bleed |
-| `data/h0_sightline_predictions.json` | **Per-host / sky-sector H₀** (SH0ES sightlines) |
-| `data/sector_h0_seed.json` | H₀ tool seed + density proxies |
-| `data/prediction_monitor_registry.yaml` | Watches ↔ facilities ↔ windows ↔ kill criteria |
-| `data/toe_prereg_freeze.json` | T5 SHA-locked slate |
+| `predictions/preregistered_predictions_manifest.yaml` | Hand PRED-001… curated locks |
+| `predictions/domain_prediction_atlas.json` | **Atlas-scale** PREDs for every green domain |
+| `predictions/h0_multi_tool_predictions.json` | **Per-tool H₀** under BH→WH bubble bleed |
+| `predictions/h0_sightline_predictions.json` | **Per-host / sky-sector H₀** (SH0ES sightlines) |
+| `predictions/sector_h0_seed.json` | H₀ tool seed + density proxies |
+| `predictions/prediction_monitor_registry.yaml` | Watches ↔ facilities ↔ windows ↔ kill criteria |
+| `predictions/toe_prereg_freeze.json` | T5 SHA-locked slate |
 | `scripts/run_prediction_monitor.py` | Offline/online status runner |
-| `data/prediction_monitor_report.json` | Machine report |
-| `data/publication/PREDICTION_MONITOR.md` | Human table |
+| `predictions/prediction_monitor_report.json` | Machine report |
+| `predictions/reports/PREDICTION_MONITOR.md` | Human table |
 | `kaggle/fsot-prediction-monitor/` | Portable dataset + notebook |
 
 ### Multi-tool H₀ (not one number)
@@ -24,15 +24,15 @@ picture, Cepheid ladders, TRGB, CMB, BAO, masers, time-delay lenses, etc. couple
 
 `H0_tool = H0_global_fsot × (1 + density_model × bleed_fraction)`
 
-See `data/publication/H0_MULTI_TOOL_PREDICTIONS.md` and per-host
-`data/publication/H0_SIGHTLINE_PREDICTIONS.md`.
+See `predictions/reports/H0_MULTI_TOOL_PREDICTIONS.md` and per-host
+`predictions/reports/H0_SIGHTLINE_PREDICTIONS.md`.
 
 ### Not cosmology-only
 
 The domain atlas tags every green panel into scientific sectors (bio_med,
 materials_chem, particle_nuclear, earth_climate, social_econ, engineering_compute,
 astro_gw, …) with residual holds, scalar locks, and **sector portfolio** predictions.
-Cosmology is one sector among many — see `data/publication/DOMAIN_PREDICTION_ATLAS.md`.
+Cosmology is one sector among many — see `predictions/reports/DOMAIN_PREDICTION_ATLAS.md`.
 
 Authority pin: **D1D38A** · zero free parameters · see [`PREDATA_RISK.md`](PREDATA_RISK.md).
 

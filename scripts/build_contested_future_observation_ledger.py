@@ -14,10 +14,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTESTED = ROOT / "data" / "contested_observables_closure.json"
-PREREG_FREEZE = ROOT / "data" / "toe_prereg_freeze.json"
+PREREG_FREEZE = ROOT / "predictions" / "toe_prereg_freeze.json"
 MARGIN = ROOT / "data" / "benchmark_margin_audit.json"
-OUT_JSON = ROOT / "data" / "contested_future_observation_ledger.json"
-OUT_MD = ROOT / "data" / "publication" / "CONTESTED_FUTURE_OBSERVATION_LEDGER.md"
+OUT_JSON = ROOT / "predictions" / "contested_future_observation_ledger.json"
+OUT_MD = ROOT / "predictions" / "reports" / "CONTESTED_FUTURE_OBSERVATION_LEDGER.md"
 
 
 def _now() -> str:
@@ -246,8 +246,8 @@ def main() -> int:
             "",
             "Refresh: `python scripts/build_contested_future_observation_ledger.py`",
             "",
-            "Related: `docs/PREDATA_RISK.md` · `data/toe_prereg_freeze.json` · "
-            "`data/publication/CONTESTED_SECTOR_WATCH.md`",
+            "Related: `docs/PREDATA_RISK.md` · `predictions/toe_prereg_freeze.json` · "
+            "`predictions/reports/CONTESTED_SECTOR_WATCH.md`",
             "",
         ]
     )

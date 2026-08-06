@@ -50,4 +50,4 @@ Bundle SHA-256: `081d8faa0a186d4ceda2bb975696c6f2895c19e885d05cbf233a7449d0ee0c9
 
 Refresh: `python scripts/build_h0_sightline_predictions.py`
 
-Related: multi-tool table `H0_MULTI_TOOL_PREDICTIONS.md` · seed `data/sector_h0_seed.json`
+Related: multi-tool table `H0_MULTI_TOOL_PREDICTIONS.md` · seed `predictions/sector_h0_seed.json`

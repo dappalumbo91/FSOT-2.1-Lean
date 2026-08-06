@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_YAML = ROOT / "data" / "fsot_label_registry.yaml"
 REGISTRY_JSON = ROOT / "data" / "fsot_label_registry.json"
 OVERLAY_RULES = ROOT / "vendor" / "math_generator" / "rules" / "FSOT_OVERLAY_RULES.json"
-PREREG_MANIFEST = ROOT / "data" / "preregistered_predictions_manifest.yaml"
+PREREG_MANIFEST = ROOT / "predictions" / "preregistered_predictions_manifest.yaml"
 EXTENSION_MANIFEST = ROOT / "data" / "extension_domains_manifest.yaml"
 EXPANSION_ROADMAP = ROOT / "data" / "expansion_roadmap.yaml"
 

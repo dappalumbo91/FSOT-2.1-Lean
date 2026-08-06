@@ -276,7 +276,7 @@ def build() -> Path:
             _copy(src, DATASET_DIR / name)
 
     # Slim domain atlas: summary + multi-tool H0 preds + top residual holds (not full scalar dump)
-    atlas_src = ROOT / "data" / "domain_prediction_atlas.json"
+    atlas_src = ROOT / "predictions" / "domain_prediction_atlas.json"
     if atlas_src.is_file():
         atlas = json.loads(atlas_src.read_text(encoding="utf-8"))
         preds = atlas.get("predictions") or []
@@ -305,7 +305,7 @@ def build() -> Path:
             "generated_at": atlas.get("generated_at"),
             "summary": atlas.get("summary"),
             "sector_portfolio": atlas.get("sector_portfolio"),
-            "note": "Slim Kaggle export — full atlas on GitHub data/domain_prediction_atlas.json",
+            "note": "Slim Kaggle export — full atlas on GitHub predictions/domain_prediction_atlas.json",
             "predictions_preview": slim_preds,
             "bundle_sha256": atlas.get("bundle_sha256"),
         }

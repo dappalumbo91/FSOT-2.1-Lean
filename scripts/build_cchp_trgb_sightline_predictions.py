@@ -5,8 +5,8 @@ Bulk host catalog lives on external drive:
   G:/FSOT-PublicData/anomaly_observables/carnegie_trgb/
 
 Monorepo outputs (lightweight):
-  data/cchp_trgb_sightline_predictions.json
-  data/publication/CCHP_TRGB_SIGHTLINE_PREDICTIONS.md
+  predictions/cchp_trgb_sightline_predictions.json
+  predictions/reports/CCHP_TRGB_SIGHTLINE_PREDICTIONS.md
 """
 
 from __future__ import annotations
@@ -33,12 +33,12 @@ from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 # Prefer external Seagate; fall back to monorepo vendor mirror if present
 EXTERNAL_HOSTS = Path(r"G:\FSOT-PublicData\anomaly_observables\carnegie_trgb\cchp_trgb_hosts.json")
 LOCAL_MIRROR = ROOT / "vendor" / "public_data_pointers" / "cchp_trgb_hosts.json"
-SECTOR_SEED = ROOT / "data" / "sector_h0_seed.json"
+SECTOR_SEED = ROOT / "predictions" / "sector_h0_seed.json"
 NEBULA = ROOT / "data" / "nebula_lensing_cache.json"
 FRB = ROOT / "data" / "frb_repeater_cache.json"
-OUT_JSON = ROOT / "data" / "cchp_trgb_sightline_predictions.json"
-OUT_MD = ROOT / "data" / "publication" / "CCHP_TRGB_SIGHTLINE_PREDICTIONS.md"
-POINTER = ROOT / "data" / "external_data_pointers.json"
+OUT_JSON = ROOT / "predictions" / "cchp_trgb_sightline_predictions.json"
+OUT_MD = ROOT / "predictions" / "reports" / "CCHP_TRGB_SIGHTLINE_PREDICTIONS.md"
+POINTER = ROOT / "predictions" / "external_data_pointers.json"
 
 
 def _now() -> str:
@@ -243,7 +243,7 @@ def write_pointer(doc: dict) -> None:
     ptr.setdefault("datasets", {})
     ptr["datasets"]["carnegie_trgb"] = {
         "path": doc.get("external_catalog_path"),
-        "predictions": "data/cchp_trgb_sightline_predictions.json",
+        "predictions": "predictions/cchp_trgb_sightline_predictions.json",
         "updated_at": doc.get("generated_at"),
         "host_count": doc.get("host_count"),
     }

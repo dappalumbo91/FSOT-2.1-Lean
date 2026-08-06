@@ -10,8 +10,8 @@ Not cosmology-only:
 Grounded in monorepo benchmarks — zero free parameters.
 
 Outputs:
-  data/domain_prediction_atlas.json
-  data/publication/DOMAIN_PREDICTION_ATLAS.md
+  predictions/domain_prediction_atlas.json
+  predictions/reports/DOMAIN_PREDICTION_ATLAS.md
 """
 
 from __future__ import annotations
@@ -27,12 +27,12 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 MARGIN = ROOT / "data" / "benchmark_margin_audit.json"
-H0_MULTI = ROOT / "data" / "h0_multi_tool_predictions.json"
-H0_SIGHT = ROOT / "data" / "h0_sightline_predictions.json"
-H0_TRGB = ROOT / "data" / "cchp_trgb_sightline_predictions.json"
-PREREG = ROOT / "data" / "preregistered_predictions_manifest.yaml"
-OUT_JSON = ROOT / "data" / "domain_prediction_atlas.json"
-OUT_MD = ROOT / "data" / "publication" / "DOMAIN_PREDICTION_ATLAS.md"
+H0_MULTI = ROOT / "predictions" / "h0_multi_tool_predictions.json"
+H0_SIGHT = ROOT / "predictions" / "h0_sightline_predictions.json"
+H0_TRGB = ROOT / "predictions" / "cchp_trgb_sightline_predictions.json"
+PREREG = ROOT / "predictions" / "preregistered_predictions_manifest.yaml"
+OUT_JSON = ROOT / "predictions" / "domain_prediction_atlas.json"
+OUT_MD = ROOT / "predictions" / "reports" / "DOMAIN_PREDICTION_ATLAS.md"
 
 GREEN_CEILING = 0.5
 
@@ -506,10 +506,10 @@ def build() -> dict:
             "green_ceiling_pct": GREEN_CEILING,
         },
         "sector_portfolio": sector_portfolio,
-        "h0_multi_tool_ref": "data/h0_multi_tool_predictions.json",
-        "h0_sightline_ref": "data/h0_sightline_predictions.json",
-        "h0_trgb_ref": "data/cchp_trgb_sightline_predictions.json",
-        "hand_prereg_ref": "data/preregistered_predictions_manifest.yaml",
+        "h0_multi_tool_ref": "predictions/h0_multi_tool_predictions.json",
+        "h0_sightline_ref": "predictions/h0_sightline_predictions.json",
+        "h0_trgb_ref": "predictions/cchp_trgb_sightline_predictions.json",
+        "hand_prereg_ref": "predictions/preregistered_predictions_manifest.yaml",
         "domains": domain_entries,
         "predictions": predictions,
     }

@@ -12,7 +12,7 @@ OUT = ROOT / "docs" / "PRACTICAL_PIPELINE.md"
 MANIFEST = ROOT / "data" / "practical_pipeline_manifest.yaml"
 INTUITIVE = ROOT / "data" / "intuitive_observation_fsot_map.yaml"
 BLUEPRINTS = ROOT / "data" / "publication" / "tech_blueprints_registry.json"
-PRED = ROOT / "data" / "preregistered_predictions_manifest.yaml"
+PRED = ROOT / "predictions" / "preregistered_predictions_manifest.yaml"
 
 
 def _load_yaml(path: Path) -> dict:
@@ -75,7 +75,7 @@ python scripts/build_practical_pipeline_bundle.py
 
 ## 2. Demonstrate unification (X-style predictions)
 
-**{len(pred_list)} preregistered predictions** locked in `data/preregistered_predictions_manifest.yaml` (PRED-001–041).
+**{len(pred_list)} preregistered predictions** locked in `predictions/preregistered_predictions_manifest.yaml` (PRED-001–041).
 
 Headline locks:
 - **PRED-001** H₀ bridge (Planck ↔ SH0ES)

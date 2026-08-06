@@ -94,7 +94,7 @@ FSOT ≈ 21.79 W vs Raichle & Gusnard ~20 W (brain resting metabolic power). Sam
 
 ### D.4.6 Cosmology — σ₈ tension (DES Y3 vs Planck 2018)
 
-Contested observable `S8_tension_Planck_vs_DES_Y3`: FSOT readout **0.058%** error on tension delta (PRED-002 preregistered). Monitor: [`data/publication/CONTESTED_SECTOR_WATCH.md`](../data/publication/CONTESTED_SECTOR_WATCH.md).
+Contested observable `S8_tension_Planck_vs_DES_Y3`: FSOT readout **0.058%** error on tension delta (PRED-002 preregistered). Monitor: [`predictions/reports/CONTESTED_SECTOR_WATCH.md`](../predictions/reports/CONTESTED_SECTOR_WATCH.md).
 
 ## D.5 What is not a fit parameter
 

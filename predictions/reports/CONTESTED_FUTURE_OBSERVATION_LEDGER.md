@@ -45,4 +45,4 @@ Ledger SHA-256: `053005368695e84dcf3f9a02c8613a8f762baff33c8091a604d70821f3ab442
 
 Refresh: `python scripts/build_contested_future_observation_ledger.py`
 
-Related: `docs/PREDATA_RISK.md` · `data/toe_prereg_freeze.json` · `data/publication/CONTESTED_SECTOR_WATCH.md`
+Related: `docs/PREDATA_RISK.md` · `predictions/toe_prereg_freeze.json` · `predictions/reports/CONTESTED_SECTOR_WATCH.md`

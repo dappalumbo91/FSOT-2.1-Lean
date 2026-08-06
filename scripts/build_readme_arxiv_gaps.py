@@ -69,7 +69,7 @@ def build_toc(ts: str) -> str:
         "| Completeness audit | [`data/publication/THESIS_COMPLETENESS_AUDIT.md`](data/publication/THESIS_COMPLETENESS_AUDIT.md) |",
         "| Skeptic replication kit | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) |",
         "| Near-miss ledger | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) |",
-        "| Contested-sector watch | [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) |",
+        "| Contested-sector watch | [`predictions/reports/CONTESTED_SECTOR_WATCH.md`](predictions/reports/CONTESTED_SECTOR_WATCH.md) |",
         "| Wet-lab & longevity depth | [`docs/WETLAB_LONGEVITY_DEPTH.md`](docs/WETLAB_LONGEVITY_DEPTH.md) |",
         "| Credibility hardening audit | [`data/publication/CREDIBILITY_HARDENING_AUDIT.md`](data/publication/CREDIBILITY_HARDENING_AUDIT.md) |",
         "| Circuitry emergence spine | [`docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md`](docs/CIRCUITRY_COMPONENT_EMERGENCE_SPINE.md) |",
@@ -168,14 +168,14 @@ def build_prereg_summary() -> str:
     try:
         import yaml
 
-        doc = yaml.safe_load((ROOT / "data" / "preregistered_predictions_manifest.yaml").read_text(encoding="utf-8")) or {}
+        doc = yaml.safe_load((ROOT / "predictions" / "preregistered_predictions_manifest.yaml").read_text(encoding="utf-8")) or {}
         preds = doc.get("predictions") or []
     except Exception:
         preds = []
     lines = [
         "### 3.4 Preregistered prediction registry (summary)",
         "",
-        f"**{len(preds)} predictions** locked in `data/preregistered_predictions_manifest.yaml` before independent comparison. "
+        f"**{len(preds)} predictions** locked in `predictions/preregistered_predictions_manifest.yaml` before independent comparison. "
         "Post-hoc tuning invalidates prereg status.",
         "",
         "| ID | Name | Domain | FSOT branch | Discriminant |",
@@ -221,7 +221,7 @@ FSOT publishes domains that pass the green gate but approach the ≤0.5% boundar
 | Transparency artifact | Role |
 |-----------------------|------|
 | [`data/publication/BENCHMARK_NEAR_MISS_LEDGER.md`](data/publication/BENCHMARK_NEAR_MISS_LEDGER.md) | Top domains by max single-record error (still green) |
-| [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) | Living H₀, σ₈, BBN, w_a monitor vs Planck 2018 / Riess 2024 |
+| [`predictions/reports/CONTESTED_SECTOR_WATCH.md`](predictions/reports/CONTESTED_SECTOR_WATCH.md) | Living H₀, σ₈, BBN, w_a monitor vs Planck 2018 / Riess 2024 |
 | [`docs/SKEPTIC_REPLICATION_KIT.md`](docs/SKEPTIC_REPLICATION_KIT.md) | 15-minute falsification path for independent reviewers |
 
 Regenerate: `python scripts/build_benchmark_near_miss_ledger.py` · `python scripts/build_contested_sector_watch.py`
@@ -403,7 +403,7 @@ where \\(\\epsilon_{\\mathrm{floor}}\\) guards division near zero for classifier
 
 ### 5.6 Preregistration and kill criteria
 
-- **Preregistered predictions:** `data/preregistered_predictions_manifest.yaml` (PRED-001–041) — outcomes declared before panel refresh.
+- **Preregistered predictions:** `predictions/preregistered_predictions_manifest.yaml` (PRED-001–041) — outcomes declared before panel refresh.
 - **Per-domain kill criteria:** `data/fsot_domain_navigator.json` — extension panels and core routes register failure thresholds.
 - **Parameter honesty:** `data/honest_claims_manifest.yaml` — routing coordinates are seed-derived folds, not fitted observational knobs (audit: `scripts/audit_parameter_count.py` → `ZERO_FREE`).
 

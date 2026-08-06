@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "docs" / "VERIFIED_DESKTOP_TRANSPORTER.md"
 BENCH = ROOT / "data" / "star_trek_transporter_live_panel_benchmark.json"
-PREREG = ROOT / "data" / "preregistered_predictions_manifest.yaml"
+PREREG = ROOT / "predictions" / "preregistered_predictions_manifest.yaml"
 
 
 def _load_json(path: Path) -> dict:
@@ -98,7 +98,7 @@ def build(ts: str) -> str:
 
     lines.extend([
         "",
-        "Full registry: `data/preregistered_predictions_manifest.yaml`",
+        "Full registry: `predictions/preregistered_predictions_manifest.yaml`",
         "",
         "## 5. Reproduction",
         "",

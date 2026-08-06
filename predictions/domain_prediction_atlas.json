@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T13:22:40.278205+00:00",
+  "generated_at": "2026-08-06T13:25:16.865638+00:00",
   "version": "2.0",
   "authority_pin_prefix": "D1D38A",
   "zero_free_parameters": true,
@@ -105,10 +105,10 @@
       "pred_id": "PRED-SECTOR-1366"
     }
   ],
-  "h0_multi_tool_ref": "data/h0_multi_tool_predictions.json",
-  "h0_sightline_ref": "data/h0_sightline_predictions.json",
-  "h0_trgb_ref": "data/cchp_trgb_sightline_predictions.json",
-  "hand_prereg_ref": "data/preregistered_predictions_manifest.yaml",
+  "h0_multi_tool_ref": "predictions/h0_multi_tool_predictions.json",
+  "h0_sightline_ref": "predictions/h0_sightline_predictions.json",
+  "h0_trgb_ref": "predictions/cchp_trgb_sightline_predictions.json",
+  "hand_prereg_ref": "predictions/preregistered_predictions_manifest.yaml",
   "domains": [
     {
       "domain": "Phi_Morphogenetic_Scaling",
@@ -33483,5 +33483,5 @@
       "note": "Portfolio lock: every domain in this scientific sector stays \u22640.5% pooled; FSOT-predicted watch is sector median residual."
     }
   ],
-  "bundle_sha256": "2a4a713298301c06b0563c0da2dfdeae5025ca7c95e79af05b2c92db0f3f572e"
+  "bundle_sha256": "0f0713cf9c9e715a36de702d23d730cf5f1eed06196c673b87991db3d2b9fe21"
 }

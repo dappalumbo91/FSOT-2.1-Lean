@@ -7,8 +7,8 @@ a host-level H0, not one ladder number:
   H0_host = H0_global * (1 + density_model(host) * bleed_fraction)
 
 Outputs:
-  data/h0_sightline_predictions.json
-  data/publication/H0_SIGHTLINE_PREDICTIONS.md
+  predictions/h0_sightline_predictions.json
+  predictions/reports/H0_SIGHTLINE_PREDICTIONS.md
 """
 
 from __future__ import annotations
@@ -33,11 +33,11 @@ from cosmology_lambda import H0_CANONICAL  # noqa: E402
 from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 
 HOST_COORDS = ROOT / "data" / "sh0es_host_coordinates.json"
-SECTOR_SEED = ROOT / "data" / "sector_h0_seed.json"
+SECTOR_SEED = ROOT / "predictions" / "sector_h0_seed.json"
 NEBULA = ROOT / "data" / "nebula_lensing_cache.json"
 FRB = ROOT / "data" / "frb_repeater_cache.json"
-OUT_JSON = ROOT / "data" / "h0_sightline_predictions.json"
-OUT_MD = ROOT / "data" / "publication" / "H0_SIGHTLINE_PREDICTIONS.md"
+OUT_JSON = ROOT / "predictions" / "h0_sightline_predictions.json"
+OUT_MD = ROOT / "predictions" / "reports" / "H0_SIGHTLINE_PREDICTIONS.md"
 
 
 def _now() -> str:
@@ -230,7 +230,7 @@ def write_md(doc: dict) -> None:
             "",
             "Refresh: `python scripts/build_h0_sightline_predictions.py`",
             "",
-            "Related: multi-tool table `H0_MULTI_TOOL_PREDICTIONS.md` · seed `data/sector_h0_seed.json`",
+            "Related: multi-tool table `H0_MULTI_TOOL_PREDICTIONS.md` · seed `predictions/sector_h0_seed.json`",
             "",
         ]
     )

@@ -36,7 +36,7 @@ This list is **frozen**. Peer acknowledgment is **not** on this list.
 | **T2** | Dynamics (evolution laws) | Continuum / fluid / scalar field equations + numerical checks | `vendor/fsot_dynamics.py`, `data/toe_dynamics_benchmark.json` |
 | **T3** | Limit recovery | Explicit GR / QM / SM (or replacement) limit checks | `data/toe_limit_recovery_benchmark.json` + `vendor/fsot_gr_sm.py` (deep GR map) |
 | **T4** | Force/matter package **or** explicit scope change | Interaction package (gauge/masses/charges) **or** written scope retirement | `vendor/fsot_gr_sm.py` + `data/toe_force_package_manifest.json` (v1); see `docs/T3_T4_GR_SM_DEEPENING.md` |
-| **T5** | Pre-data risky predictions | Frozen slate + SHA-256 **before** decisive surveys | `data/toe_prereg_freeze.json` |
+| **T5** | Pre-data risky predictions | Frozen slate + SHA-256 **before** decisive surveys | `predictions/toe_prereg_freeze.json` |
 | **T6** | Falsifiability | Kill criteria for global + contested sectors | `data/falsification_registry_closure.json` |
 
 **Label B status is computed by** `python scripts/build_toe_gap_closure.py` → `data/toe_gap_closure_report.json`.

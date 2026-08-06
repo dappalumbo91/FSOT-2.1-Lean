@@ -361,16 +361,16 @@ def main() -> int:
         readme = _ensure_marker_block(
             readme,
             "contributions",
-            "(`data/preregistered_predictions_manifest.yaml`).\n\n---",
+            "(`predictions/preregistered_predictions_manifest.yaml`).\n\n---",
         )
     if MARKER["related"][0] not in readme:
         anchor = (
-            "(`data/preregistered_predictions_manifest.yaml`).\n\n---\n\n## II. Why the Universe Exists"
+            "(`predictions/preregistered_predictions_manifest.yaml`).\n\n---\n\n## II. Why the Universe Exists"
         )
         if anchor in readme:
             readme = readme.replace(
                 anchor,
-                "(`data/preregistered_predictions_manifest.yaml`).\n\n---\n\n"
+                "(`predictions/preregistered_predictions_manifest.yaml`).\n\n---\n\n"
                 f"{MARKER['related'][0]}\n{_read_gap('related_work.md')}\n{MARKER['related'][1]}\n\n"
                 "## II. Why the Universe Exists",
             )
@@ -437,7 +437,7 @@ def main() -> int:
             )
             readme = readme[: old_open.start()] + block + readme[old_open.end() :]
     if MARKER["appendix_c_extra"][0] not in readme:
-        anchor = "| [`data/publication/CONTESTED_SECTOR_WATCH.md`](data/publication/CONTESTED_SECTOR_WATCH.md) | Contested-sector living watch |"
+        anchor = "| [`predictions/reports/CONTESTED_SECTOR_WATCH.md`](predictions/reports/CONTESTED_SECTOR_WATCH.md) | Contested-sector living watch |"
         if anchor in readme:
             extra = _read_gap("appendix_c_extra.md").strip()
             readme = readme.replace(anchor, anchor + "\n" + extra)

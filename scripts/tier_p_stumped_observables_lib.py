@@ -415,7 +415,7 @@ def build_stumped_observables_panel() -> dict:
             "data/stumped_observables_reference.json",
             "vendor/fsot_compute.py",
             "scripts/higgs_mass_formula_eval.py",
-            "data/sector_h0_seed.json",
+            "predictions/sector_h0_seed.json",
         ],
         channel_stats=[("stumped_panel", "open_observable_panel", errs)],
         sota_baselines={
@@ -457,7 +457,7 @@ def build_hubble_bubble_tension() -> dict:
         maps_to_lean=["cosmological", "blackhole", "cmb"],
         d_eff=25,
         authority_path=authority,
-        source=["data/sector_h0_seed.json", "scripts/build_cosmology_bubble_bleed_benchmark.py"],
+        source=["predictions/sector_h0_seed.json", "scripts/build_cosmology_bubble_bleed_benchmark.py"],
         channel_stats=[("h0_sector", "dual_anchor_h0_panel", errs)],
         sota_baselines={
             "dual_anchor_h0_panel": {

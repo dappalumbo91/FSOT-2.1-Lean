@@ -23,7 +23,7 @@ python scripts/build_practical_pipeline_bundle.py
 
 ## 2. Demonstrate unification (X-style predictions)
 
-**35 preregistered predictions** locked in `data/preregistered_predictions_manifest.yaml` (PRED-001–041).
+**35 preregistered predictions** locked in `predictions/preregistered_predictions_manifest.yaml` (PRED-001–041).
 
 Headline locks:
 - **PRED-001** H₀ bridge (Planck ↔ SH0ES)

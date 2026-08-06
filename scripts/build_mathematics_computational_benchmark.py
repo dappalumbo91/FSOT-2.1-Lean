@@ -22,7 +22,7 @@ CACHE = ROOT / "data" / "canonical_constants.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 from fsot_paths import math_generator_comparison_path  # noqa: E402
 
-SECTOR_H0_SEED = ROOT / "data" / "sector_h0_seed.json"
+SECTOR_H0_SEED = ROOT / "predictions" / "sector_h0_seed.json"
 
 
 def _alma_chromosphere_live(row: dict, mod) -> tuple[float | None, str | None]:

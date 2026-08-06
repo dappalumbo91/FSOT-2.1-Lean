@@ -15,7 +15,7 @@ Frozen boundaries: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 | T2_dynamics | YES | `vendor/fsot_dynamics.py + data/toe_dynamics_benchmark.json` |
 | T3_limit_recovery | YES | `data/toe_limit_recovery_benchmark.json + vendor/fsot_gr_sm.py` |
 | T4_force_or_scope | YES | `vendor/fsot_gr_sm.py + data/toe_force_package_manifest.json` |
-| T5_prereg_freeze | YES | `data/toe_prereg_freeze.json` |
+| T5_prereg_freeze | YES | `predictions/toe_prereg_freeze.json` |
 | T6_falsification | YES | `data/falsification_registry_closure.json` |
 
 ## T2 Dynamics (what was added)
@@ -91,11 +91,11 @@ See also: [`docs/T3_T4_GR_SM_DEEPENING.md`](T3_T4_GR_SM_DEEPENING.md).
 
 ## T5 Prereg freeze
 
-File: `data/toe_prereg_freeze.json` (SHA-256 bundle).  
+File: `predictions/toe_prereg_freeze.json` (SHA-256 bundle).  
 Do not retune sector predictions without a new freeze id.
 
 **Pre-data risk discipline:** [`docs/PREDATA_RISK.md`](PREDATA_RISK.md)  
-**Future-observation ledger:** `data/contested_future_observation_ledger.json` · `data/publication/CONTESTED_FUTURE_OBSERVATION_LEDGER.md`  
+**Future-observation ledger:** `predictions/contested_future_observation_ledger.json` · `predictions/reports/CONTESTED_FUTURE_OBSERVATION_LEDGER.md`  
 **Anonymous independent path:** [`docs/INDEPENDENT_REPRODUCTION.md`](INDEPENDENT_REPRODUCTION.md)
 
 Expanded slate includes H₀ bridge, S₈, wₐ, N_eff, m_H, σ₈, Ω_Λ, τ_reion, cusp-core, lithium, FRB DM, Dark Energy CPL sign, and worst-green panel holds — each with a `future_survey` tag and kill criterion.

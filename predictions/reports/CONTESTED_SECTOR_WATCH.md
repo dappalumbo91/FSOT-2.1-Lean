@@ -38,9 +38,9 @@ These 13 observables are not pipeline failures — they are the hardest open pro
 
 ## Future-observation ledger
 
-Pre-data differentiators (surveys not yet closed): `data/contested_future_observation_ledger.json` · `data/publication/CONTESTED_FUTURE_OBSERVATION_LEDGER.md`
+Pre-data differentiators (surveys not yet closed): `predictions/contested_future_observation_ledger.json` · `predictions/reports/CONTESTED_FUTURE_OBSERVATION_LEDGER.md`
 
-Discipline: [`docs/PREDATA_RISK.md`](../../docs/PREDATA_RISK.md) · freeze: `data/toe_prereg_freeze.json`
+Discipline: [`docs/PREDATA_RISK.md`](../../docs/PREDATA_RISK.md) · freeze: `predictions/toe_prereg_freeze.json`
 
 Refresh: `python scripts/build_contested_observables_closure.py && python scripts/build_contested_sector_watch.py && python scripts/build_contested_future_observation_ledger.py`
 

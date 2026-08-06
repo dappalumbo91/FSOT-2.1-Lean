@@ -188,7 +188,7 @@ def load_auxiliary() -> tuple[dict, list[dict], list[dict]]:
     nebulae: list[dict] = []
     frbs: list[dict] = []
 
-    h0_path = ROOT / "data" / "sector_h0_seed.json"
+    h0_path = ROOT / "predictions" / "sector_h0_seed.json"
     if h0_path.exists():
         sectors_doc = json.loads(h0_path.read_text(encoding="utf-8"))
 

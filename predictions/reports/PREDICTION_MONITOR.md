@@ -1,6 +1,6 @@
 # FSOT Prediction Monitor
 
-*Generated 2026-08-06T13:22:40.489015+00:00 · online=False · pin D1D38A*
+*Generated 2026-08-06T13:25:07.601218+00:00 · online=False · pin D1D38A*
 
 Tracks **preregistered** FSOT locks against near/future public data drops. Predicted centrals are frozen; this report only updates **outcome status**.
 
@@ -21,7 +21,7 @@ Tracks **preregistered** FSOT locks against near/future public data drops. Predi
 | PREDs with future_survey tag | 13 |
 | T5 freeze | `TOE-PREREG-20260806` |
 | Green gate | 472/472 |
-| Report SHA | `a94f351339e9a35e…` |
+| Report SHA | `0a5d45ef575b9d37…` |
 
 Atlas kinds: h0_sightline_host=22, h0_sightline_sector=5, h0_trgb_host=22, h0_trgb_sector=5, multi_tool_h0=25, residual_hold=472, scalar_lock=885, sector_portfolio_hold=9
 
@@ -34,7 +34,7 @@ Atlas kinds: h0_sightline_host=22, h0_sightline_sector=5, h0_trgb_host=22, h0_tr
 
 ## Multi-tool H₀ (bubble bleed)
 
-Full table: `data/publication/H0_MULTI_TOOL_PREDICTIONS.md`  
+Full table: `predictions/reports/H0_MULTI_TOOL_PREDICTIONS.md`  
 Theory: each measurement system samples a different BH→WH information-flow sector.
 
 | Tool | FSOT H₀ | Literature | Class |
@@ -61,7 +61,7 @@ Theory: each measurement system samples a different BH→WH information-flow sec
 | UGC9391 | **73.470375** | `sector_2_carnegie` | SH0ES_Cepheid |
 | M101 | **73.497059** | `sector_3_fsot_document` | SH0ES_Cepheid |
 
-Full hosts: `data/publication/H0_SIGHTLINE_PREDICTIONS.md`
+Full hosts: `predictions/reports/H0_SIGHTLINE_PREDICTIONS.md`
 
 ## High-urgency open watches
 
@@ -98,4 +98,4 @@ Full hosts: `data/publication/H0_SIGHTLINE_PREDICTIONS.md`
   python scripts/run_prediction_monitor.py --online
 ```
 
-Related: `data/prediction_monitor_registry.yaml` · `docs/PREDATA_RISK.md` · `data/toe_prereg_freeze.json` · `docs/INDEPENDENT_REPRODUCTION.md`
+Related: `predictions/prediction_monitor_registry.yaml` · `docs/PREDATA_RISK.md` · `predictions/toe_prereg_freeze.json` · `docs/INDEPENDENT_REPRODUCTION.md`

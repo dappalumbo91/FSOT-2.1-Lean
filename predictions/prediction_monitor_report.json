@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T13:22:40.489015+00:00",
+  "generated_at": "2026-08-06T13:25:07.601218+00:00",
   "online": false,
   "authority_pin_prefix": "D1D38A",
   "registry_version": "1.0",
@@ -58,7 +58,7 @@
     "sector_portfolio_count": 9,
     "residual_hold_gate_fails": 0,
     "t5_freeze_id": "TOE-PREREG-20260806",
-    "t5_bundle_sha256": "609b0be9e194111d5bc100acfc7f6709809e7a4e22e7b584503ddffa1bc0f3c5",
+    "t5_bundle_sha256": "7a702cac2a481ad774fccc279099a68ba612fefeaf8908bff4c0e467915603f9",
     "future_ledger_rows": 10,
     "green_gate_pass_count": 472,
     "green_gate_fail_count": 0
@@ -839,5 +839,5 @@
     "freeze": "python -c \"import sys; sys.path.insert(0,'scripts'); from build_toe_gap_closure import freeze_prereg; freeze_prereg()\"",
     "kaggle_pack": "python scripts/build_kaggle_prediction_pack.py"
   },
-  "report_sha256": "a94f351339e9a35e16efdb442111ff37ff28ffc90040a3803ecb9c4bc5c6b028"
+  "report_sha256": "0a5d45ef575b9d37b9e80d23b0892427dc2e3b09ecde91aa00360f39e3a8047f"
 }

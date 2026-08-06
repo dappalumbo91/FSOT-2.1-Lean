@@ -50,4 +50,4 @@ Bundle SHA-256: `d39e5cbb3fb947354325ab4b6f9ed39d3f93f1af44f410ea9bc03a339ac353e
 
 Refresh: `python scripts/build_h0_multi_tool_predictions.py`
 
-Seed: `data/sector_h0_seed.json` · Physics: `scripts/bubble_bleed_physics.py`
+Seed: `predictions/sector_h0_seed.json` · Physics: `scripts/bubble_bleed_physics.py`

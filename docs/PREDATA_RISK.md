@@ -3,9 +3,9 @@
 **Purpose:** Make FSOT’s contested-sector predictions **risky before the data land**, not curve-fits after.
 
 **Authority:** pin **D1D38A** · zero free parameters · `docs/TOE_CLAIM_BOUNDARIES.md` T5  
-**Frozen artifact:** `data/toe_prereg_freeze.json` (SHA-256 bundle)  
-**Prereg manifest:** `data/preregistered_predictions_manifest.yaml` (PRED-001–041+)  
-**Future ledger:** `data/contested_future_observation_ledger.json`
+**Frozen artifact:** `predictions/toe_prereg_freeze.json` (SHA-256 bundle)  
+**Prereg manifest:** `predictions/preregistered_predictions_manifest.yaml` (PRED-001–041+)  
+**Future ledger:** `predictions/contested_future_observation_ledger.json`
 
 ---
 
@@ -22,7 +22,7 @@
 
 | Check | Artifact |
 |-------|----------|
-| Freeze file exists with `bundle_sha256` | `data/toe_prereg_freeze.json` |
+| Freeze file exists with `bundle_sha256` | `predictions/toe_prereg_freeze.json` |
 | ≥2 supporting files hashed | prereg manifest, holdouts, falsification, contested |
 | Sector PREDs include future-survey tags | `sector_predictions[].future_survey` |
 | Review horizon set | `review_horizon` (currently through mid-2027 class) |
@@ -61,7 +61,7 @@ python scripts/build_toe_gap_closure.py
 
 ## Independent reader path
 
-1. Open `data/toe_prereg_freeze.json` — note `freeze_id` and `bundle_sha256`.  
+1. Open `predictions/toe_prereg_freeze.json` — note `freeze_id` and `bundle_sha256`.  
 2. Confirm pin D1D38A via `python scripts/build_repo_status_snapshot.py`.  
 3. Re-hash listed `files[]` and verify they match.  
 4. After a survey release: evaluate each `kill` string; register outcome in falsification registry — **do not** edit the frozen predicted centrals.

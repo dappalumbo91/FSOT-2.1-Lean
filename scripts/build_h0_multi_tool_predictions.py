@@ -8,12 +8,12 @@ sector (early-universe depleted → local inflated). Predictions:
   H0_tool = H0_global_fsot * (1 + density_model * bubble_bleed_fraction)
 
 Inputs:
-  data/sector_h0_seed.json
+  predictions/sector_h0_seed.json
   vendor/fsot_compute.py (pin D1D38A)
 
 Outputs:
-  data/h0_multi_tool_predictions.json
-  data/publication/H0_MULTI_TOOL_PREDICTIONS.md
+  predictions/h0_multi_tool_predictions.json
+  predictions/reports/H0_MULTI_TOOL_PREDICTIONS.md
 """
 
 from __future__ import annotations
@@ -34,9 +34,9 @@ from bubble_bleed_physics import (  # noqa: E402
 )
 from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 
-SEED = ROOT / "data" / "sector_h0_seed.json"
-OUT_JSON = ROOT / "data" / "h0_multi_tool_predictions.json"
-OUT_MD = ROOT / "data" / "publication" / "H0_MULTI_TOOL_PREDICTIONS.md"
+SEED = ROOT / "predictions" / "sector_h0_seed.json"
+OUT_JSON = ROOT / "predictions" / "h0_multi_tool_predictions.json"
+OUT_MD = ROOT / "predictions" / "reports" / "H0_MULTI_TOOL_PREDICTIONS.md"
 
 
 def _now() -> str:
@@ -155,7 +155,7 @@ def build() -> dict:
             "min_literature": min(t["literature_anchor_h0"] for t in tools),
             "max_literature": max(t["literature_anchor_h0"] for t in tools),
         },
-        "seed_path": "data/sector_h0_seed.json",
+        "seed_path": "predictions/sector_h0_seed.json",
         "refresh": "python scripts/build_h0_multi_tool_predictions.py",
     }
     raw = json.dumps({k: v for k, v in doc.items() if k != "bundle_sha256"}, sort_keys=True).encode()
@@ -202,7 +202,7 @@ def write_md(doc: dict) -> None:
             "",
             "Refresh: `python scripts/build_h0_multi_tool_predictions.py`",
             "",
-            "Seed: `data/sector_h0_seed.json` · Physics: `scripts/bubble_bleed_physics.py`",
+            "Seed: `predictions/sector_h0_seed.json` · Physics: `scripts/bubble_bleed_physics.py`",
             "",
         ]
     )

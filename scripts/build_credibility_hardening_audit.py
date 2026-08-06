@@ -68,7 +68,7 @@ def main() -> int:
         ("Zero free parameters", "ZERO_FREE" in zf, zf),
         ("Contested sectors", (contested.get("panel_summary") or {}).get("pooled_median_error_pct", 99) < 1.0, "H₀/σ₈/BBN panel"),
         ("Near-miss published", (ROOT / "data/publication/BENCHMARK_NEAR_MISS_LEDGER.md").is_file(), "transparent worst greens"),
-        ("Preregistration locked", (ROOT / "data/preregistered_predictions_manifest.yaml").is_file(), "PRED-001–041"),
+        ("Preregistration locked", (ROOT / "predictions/preregistered_predictions_manifest.yaml").is_file(), "PRED-001–041"),
         ("Wet-lab longevity", wetlab.get("all_ok") is True or (ROOT / "docs/WETLAB_LONGEVITY_DEPTH.md").is_file(), "Tier 94/95"),
         ("Live catalog ingest", live.get("all_ok") is True, "Gaia/GWOSC/NEO refresh"),
         ("Genetics crosswalk", tier95.get("verdict") in {"GENETICS_SYSTEM_CROSSWALK_OK", "OK", True} or tier95.get("overall_ok") is True, "Tier94↔Tier95"),

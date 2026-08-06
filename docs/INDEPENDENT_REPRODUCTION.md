@@ -61,10 +61,10 @@ lake build FSOT.Formal.Bounds FSOT.Formal.Theorems
 | Artifact | Role |
 |----------|------|
 | `docs/PREDATA_RISK.md` | Discipline: freeze before surveys |
-| `data/toe_prereg_freeze.json` | SHA-locked prediction slate |
+| `predictions/toe_prereg_freeze.json` | SHA-locked prediction slate |
 | `data/contested_observables_closure.json` | 13 hard open-science observables |
-| `data/contested_future_observation_ledger.json` | Future survey differentiators |
-| `data/publication/CONTESTED_SECTOR_WATCH.md` | Living watch table |
+| `predictions/contested_future_observation_ledger.json` | Future survey differentiators |
+| `predictions/reports/CONTESTED_SECTOR_WATCH.md` | Living watch table |
 
 Independent readers should **not** ask “who verified this?” — they should re-run the commands and publish their own `bundle_sha256` / green counts.
 

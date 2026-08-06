@@ -6,8 +6,8 @@ as surveys drop while development continues. Git commit timestamps remain the
 legal/scientific prereg clock for anything already committed.
 
 Outputs:
-  data/nearest_data_drop_ranking.json
-  data/publication/NEAREST_DATA_DROPS.md
+  predictions/nearest_data_drop_ranking.json
+  predictions/reports/NEAREST_DATA_DROPS.md
   Optional copy to G:/FSOT-PublicData/anomaly_observables/prediction_monitor_logs/
 """
 
@@ -19,8 +19,8 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_JSON = ROOT / "data" / "nearest_data_drop_ranking.json"
-OUT_MD = ROOT / "data" / "publication" / "NEAREST_DATA_DROPS.md"
+OUT_JSON = ROOT / "predictions" / "nearest_data_drop_ranking.json"
+OUT_MD = ROOT / "predictions" / "reports" / "NEAREST_DATA_DROPS.md"
 EXTERNAL_LOG = Path(
     r"G:\FSOT-PublicData\anomaly_observables\prediction_monitor_logs"
 )

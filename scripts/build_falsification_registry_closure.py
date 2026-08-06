@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PREREG = ROOT / "data" / "preregistered_predictions_manifest.yaml"
+PREREG = ROOT / "predictions" / "preregistered_predictions_manifest.yaml"
 STUMPED = ROOT / "data" / "stumped_observables_reference.json"
 DESI = ROOT / "data" / "desi_wa_constraint_benchmark.json"
 OUT = ROOT / "data" / "falsification_registry_closure.json"
@@ -136,7 +136,7 @@ def build() -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "version": "1.0",
         "verdict": "FALSIFICATION_CRITERIA_REGISTERED",
-        "manifest_source": "data/preregistered_predictions_manifest.yaml",
+        "manifest_source": "predictions/preregistered_predictions_manifest.yaml",
         "summary": {
             "preregistered_prediction_count": len(prereg_rows),
             "stumped_observable_count": len(stumped_rows),

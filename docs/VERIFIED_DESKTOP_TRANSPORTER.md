@@ -54,7 +54,7 @@ Simulators: `vendor/verified_desktop/star_trek_transporter/`
 | PRED-038 | transporter_portal_traverse_scalar | `term1.perceived_adjust` | fsot_exceeds_sota_by_0.4 |
 | PRED-037 | blackhole_whitehole_cycle_constant_drift | `term3.poof_factor` | within_10pct_of_observed_gap |
 
-Full registry: `data/preregistered_predictions_manifest.yaml`
+Full registry: `predictions/preregistered_predictions_manifest.yaml`
 
 ## 5. Reproduction
 

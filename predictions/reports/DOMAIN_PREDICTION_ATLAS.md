@@ -1,6 +1,6 @@
 # Domain prediction atlas (all sectors)
 
-*Generated 2026-08-06T13:22:40.278205+00:00 · pin D1D38A*
+*Generated 2026-08-06T13:25:16.865638+00:00 · pin D1D38A*
 
 Atlas-scale preregistered predictions across the full scientific domain table — bio, materials, particle, earth, social, engineering, astro — not cosmology alone. Plus multi-tool and per-host H0 under BH→WH bubble bleed.
 
@@ -16,7 +16,7 @@ Atlas-scale preregistered predictions across the full scientific domain table �
 | Sightline sky sectors | 5 |
 | Sector portfolios | 9 |
 | Hand prereg YAML | 48 |
-| Bundle SHA | `2a4a713298301c06…` |
+| Bundle SHA | `0f0713cf9c9e715a…` |
 
 ### By kind
 
