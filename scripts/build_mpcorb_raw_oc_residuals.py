@@ -245,17 +245,40 @@ def process_object(
     }
 
 
-def build(max_obs: int = 40) -> dict:
+def build(
+    max_obs: int = 40,
+    *,
+    sleep_s: float = 0.6,
+    limit: int = 0,
+    resume: bool = True,
+) -> dict:
     store = _storage()
     index = json.loads((store / "sample_index.json").read_text(encoding="utf-8"))
     objects_dir = store / "objects"
 
+    # Resume: keep prior good O–C scores to avoid re-hitting Horizons rate limits
+    prior_by_desig: dict[str, dict] = {}
+    if resume and OUT_JSON.is_file():
+        try:
+            prior = json.loads(OUT_JSON.read_text(encoding="utf-8"))
+            for r in prior.get("objects") or []:
+                if r.get("desig") is not None and r.get("raw_oc_median_arcsec") is not None:
+                    prior_by_desig[str(r["desig"])] = r
+        except Exception:
+            prior_by_desig = {}
+
     per_object = []
     errors = []
+    newly_scored = 0
     for entry in index.get("objects") or []:
         if not entry.get("fetch_ok"):
             continue
         desig = str(entry.get("api_desig"))
+        if resume and desig in prior_by_desig:
+            per_object.append(prior_by_desig[desig])
+            continue
+        if limit and newly_scored >= limit:
+            continue
         path = objects_dir / f"{desig}.json"
         if not path.is_file():
             alt = entry.get("path")
@@ -263,10 +286,11 @@ def build(max_obs: int = 40) -> dict:
         if not path.is_file():
             continue
         print(f"O–C {desig}…", end=" ", flush=True)
-        rec = process_object(path, max_obs=max_obs)
+        rec = process_object(path, max_obs=max_obs, sleep_s=sleep_s)
         if rec and rec.get("raw_oc_median_arcsec") is not None:
             print(f"med={rec['raw_oc_median_arcsec']:.3f}\" n={rec['n_obs_used']}")
             per_object.append(rec)
+            newly_scored += 1
         else:
             err = (rec or {}).get("error") or "failed"
             print(f"skip ({err})")
@@ -318,7 +342,11 @@ def build(max_obs: int = 40) -> dict:
             "objects_in_index": index.get("sample_size"),
             "objects_with_oc": len(per_object),
             "objects_failed": len(errors),
+            "objects_newly_scored_this_run": newly_scored,
             "max_obs_per_object": max_obs,
+            "resume": resume,
+            "limit": limit or None,
+            "horizons_sleep_s": sleep_s,
         },
         "raw_oc_summary_arcsec": {
             "median_of_object_medians": _median(all_med),
@@ -434,8 +462,24 @@ def write_md(doc: dict) -> None:
 
 
 def main() -> int:
+    import argparse
+
+    ap = argparse.ArgumentParser(description="Raw MPC obs vs Horizons O–C (rate-limit aware)")
+    ap.add_argument("--max-obs", type=int, default=40, help="Obs subsampled per object")
+    ap.add_argument("--sleep", type=float, default=0.6, help="Sleep between Horizons batches")
+    ap.add_argument("--limit", type=int, default=0, help="Max NEW objects to score this run (0=all pending)")
+    ap.add_argument("--resume", action="store_true", default=True, help="Keep prior scores (default)")
+    ap.add_argument("--no-resume", action="store_true", help="Recompute everything")
+    args = ap.parse_args()
+
     print("Computing raw O–C via Horizons + MPC observations…")
-    doc = build(max_obs=40)
+    print(f"  sleep={args.sleep}s  limit={args.limit or 'all pending'}  resume={not args.no_resume}")
+    doc = build(
+        max_obs=args.max_obs,
+        sleep_s=args.sleep,
+        limit=args.limit,
+        resume=not args.no_resume,
+    )
     OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     write_md(doc)
     print(f"Wrote {OUT_JSON}")

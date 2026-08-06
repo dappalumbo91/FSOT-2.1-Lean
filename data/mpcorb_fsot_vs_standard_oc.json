@@ -1,0 +1,1540 @@
+{
+  "generated_at": "2026-08-06T14:42:06.921656+00:00",
+  "version": "4.0-fpc-time-correct",
+  "question": "Are we applying FSOT on the same objects with the residual law the model actually solved, using how time works in the model (not Newtonian \u0394t)?",
+  "mathematics": {
+    "scalar": "S = K(T1 + T2 + T3)",
+    "residual_law": "computed = measured * (1 + |S| * factor)",
+    "T1_time_fold": "1 + P_new * ln(D/25)  \u2014 dimensional compactification, not years",
+    "T3_chaos_fold": "1 + Chaos * (D-25)/25 \u2014 vanishes at ceiling D=25",
+    "fpc": "Fluid Phase Current: time_is_emergent_byproduct_not_fundamental; \u03c4_rate_unified = (1+S)/(1+|flow_balance|); observed locks sequential now",
+    "what_was_solved": "MPCORB element residual % at regime D_eff (~0.023% pooled). Not: sky-angle ephemeris via residual-scale \u00d7 calendar integration.",
+    "multi_epoch_rule": "Body traveling through observation epochs residual-matches at the interface each time. Bad residuals \u2192 re-route D_eff. Never \u0394n\u00d7\u0394t."
+  },
+  "answer": {
+    "same_objects_same_raw_obs": true,
+    "standard_metric": "O-C arcsec = |MPC optical obs \u2212 JPL Horizons| (clock ephemeris)",
+    "fsot_metric_native": "Residual % on elements a,e,i,n at preregistered D_eff: computed = measured*(1+|S|*factor)",
+    "fsot_time_layer": "FPC \u03c4-rate / solidification at regime domain \u2014 how the model treats time when a body spans many epochs. Not secular sky drift.",
+    "units_differ_on_purpose": true,
+    "why_not_same_arcsec_operator": "Making both sides arcsec by integrating (n_fsot\u2212n)\u00d7\u0394t_years misuses residual scale as a Newtonian rate error. That is not how time works in FSOT and produced the fake thousands-of-arcsec residuals."
+  },
+  "sample": {
+    "objects": 20,
+    "storage": "G:/FSOT-PublicData/anomaly_observables/mpcorb_raw_observations",
+    "note": "objects = asteroids; each has many optical observations across calendar years"
+  },
+  "head_to_head": {
+    "standard_median_oc_arcsec": 3.143148696487467,
+    "fsot_median_element_error_pct": 0.023015374156229097,
+    "fsot_median_fpc_tau_rate": 1.6314940689740418,
+    "fsot_median_kepler_tau_error_pct": 0.033866839333645475,
+    "interpretation": "Standard column: classical O\u2013C arcsec on raw data (field language, clock time). FSOT element column: native solved residual at D_eff (what the atlas gated). FPC \u03c4 column: model time layer for multi-epoch bodies \u2014 phase current at the interface, independent of observation-span years. Do not convert residual % into secular arcsec via \u0394n\u00d7\u0394t."
+  },
+  "objects": [
+    {
+      "desig": "1",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.83,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 121.12223407356636,
+      "standard_oc_arcsec": {
+        "median_arcsec": 2.578034790331468,
+        "mean_arcsec": 5.9570704799567995,
+        "rms_arcsec": 13.553870437109902,
+        "n": 40,
+        "obs_span_years_calendar": 121.12223407356636,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.023015374156230103,
+        "elements": {
+          "a": {
+            "measured": 2.7655526,
+            "fsot_computed": 2.766189102278377,
+            "error_pct": 0.023015374156224455
+          },
+          "e": {
+            "measured": 0.0796923,
+            "fsot_computed": 0.0797106414810187,
+            "error_pct": 0.023015374156226065
+          },
+          "i": {
+            "measured": 10.58803,
+            "fsot_computed": 10.590466874720274,
+            "error_pct": 0.023015374156234142
+          },
+          "n": {
+            "measured": 0.21430445,
+            "fsot_computed": 0.21435377297100097,
+            "error_pct": 0.023015374156236425
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "2",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.77,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 120.99706045453405,
+      "standard_oc_arcsec": {
+        "median_arcsec": 2.2940850595463402,
+        "mean_arcsec": 3.8741925442560983,
+        "rms_arcsec": 8.544643632273056,
+        "n": 40,
+        "obs_span_years_calendar": 120.99706045453405,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.023015374156234572,
+        "elements": {
+          "a": {
+            "measured": 2.769559,
+            "fsot_computed": 2.7701964243663277,
+            "error_pct": 0.023015374156233264
+          },
+          "e": {
+            "measured": 0.2307001,
+            "fsot_computed": 0.2307531964911938,
+            "error_pct": 0.023015374156235877
+          },
+          "i": {
+            "measured": 34.93279,
+            "fsot_computed": 34.94082991232171,
+            "error_pct": 0.023015374156239502
+          },
+          "n": {
+            "measured": 0.2138396,
+            "fsot_computed": 0.21388881598403417,
+            "error_pct": 0.023015374156226825
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "3",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.84,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 122.14257278753742,
+      "standard_oc_arcsec": {
+        "median_arcsec": 3.443217189679257,
+        "mean_arcsec": 4.431868970373993,
+        "rms_arcsec": 7.860405837646414,
+        "n": 40,
+        "obs_span_years_calendar": 122.14257278753742,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.023015374156230655,
+        "elements": {
+          "a": {
+            "measured": 2.6709895,
+            "fsot_computed": 2.671604238227099,
+            "error_pct": 0.02301537415623224
+          },
+          "e": {
+            "measured": 0.2556999,
+            "fsot_computed": 0.2557587502887021,
+            "error_pct": 0.0230153741562343
+          },
+          "i": {
+            "measured": 12.98659,
+            "fsot_computed": 12.989578912278635,
+            "error_pct": 0.023015374156226304
+          },
+          "n": {
+            "measured": 0.22578537,
+            "fsot_computed": 0.22583733534769554,
+            "error_pct": 0.02301537415622907
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "4",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.69,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 118.43257991735767,
+      "standard_oc_arcsec": {
+        "median_arcsec": 3.740489120114641,
+        "mean_arcsec": 7.218823415129193,
+        "rms_arcsec": 16.396807255378327,
+        "n": 40,
+        "obs_span_years_calendar": 118.43257991735767,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.023015374156234475,
+        "elements": {
+          "a": {
+            "measured": 2.361366,
+            "fsot_computed": 2.361909477220098,
+            "error_pct": 0.023015374156232678
+          },
+          "e": {
+            "measured": 0.0902037,
+            "fsot_computed": 0.09022446071905776,
+            "error_pct": 0.023015374156233427
+          },
+          "i": {
+            "measured": 7.14393,
+            "fsot_computed": 7.14557420221896,
+            "error_pct": 0.02301537415623552
+          },
+          "n": {
+            "measured": 0.27161836,
+            "fsot_computed": 0.27168087398183105,
+            "error_pct": 0.023015374156241563
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "5",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.85,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 125.02207154536481,
+      "standard_oc_arcsec": {
+        "median_arcsec": 2.9118807587640214,
+        "mean_arcsec": 7.765489392477794,
+        "rms_arcsec": 19.448594715684713,
+        "n": 40,
+        "obs_span_years_calendar": 125.02207154536481,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.02301537415623782,
+        "elements": {
+          "a": {
+            "measured": 2.5768077,
+            "fsot_computed": 2.5774007619334416,
+            "error_pct": 0.02301537415623891
+          },
+          "e": {
+            "measured": 0.187574,
+            "fsot_computed": 0.1876171708579198,
+            "error_pct": 0.023015374156226235
+          },
+          "i": {
+            "measured": 5.35968,
+            "fsot_computed": 5.360913550405577,
+            "error_pct": 0.023015374156239835
+          },
+          "n": {
+            "measured": 0.23827641,
+            "fsot_computed": 0.23833125020728754,
+            "error_pct": 0.023015374156236734
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "6",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.77,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 122.38321386924183,
+      "standard_oc_arcsec": {
+        "median_arcsec": 3.230788059580065,
+        "mean_arcsec": 3.557449370158681,
+        "rms_arcsec": 4.026774332064809,
+        "n": 40,
+        "obs_span_years_calendar": 122.38321386924183,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.023015374156236286,
+        "elements": {
+          "a": {
+            "measured": 2.4256614,
+            "fsot_computed": 2.4262196750469736,
+            "error_pct": 0.023015374156239516
+          },
+          "e": {
+            "measured": 0.202255,
+            "fsot_computed": 0.20230154974499967,
+            "error_pct": 0.023015374156228473
+          },
+          "i": {
+            "measured": 14.73627,
+            "fsot_computed": 14.739661607677172,
+            "error_pct": 0.023015374156236074
+          },
+          "n": {
+            "measured": 0.26089083,
+            "fsot_computed": 0.26095087500066383,
+            "error_pct": 0.0230153741562365
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "7",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.83,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 123.68236846274719,
+      "standard_oc_arcsec": {
+        "median_arcsec": 3.765031552589015,
+        "mean_arcsec": 6.103005287849757,
+        "rms_arcsec": 11.141744579868162,
+        "n": 40,
+        "obs_span_years_calendar": 123.68236846274719,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.023015374156232074,
+        "elements": {
+          "a": {
+            "measured": 2.3857463,
+            "fsot_computed": 2.3862953884373637,
+            "error_pct": 0.02301537415623636
+          },
+          "e": {
+            "measured": 0.2302746,
+            "fsot_computed": 0.23032759856077675,
+            "error_pct": 0.023015374156227786
+          },
+          "i": {
+            "measured": 5.51857,
+            "fsot_computed": 5.519840119533574,
+            "error_pct": 0.02301537415622424
+          },
+          "n": {
+            "measured": 0.26746545,
+            "fsot_computed": 0.26752700817405617,
+            "error_pct": 0.023015374156241667
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "8",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.85,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 120.88453624483573,
+      "standard_oc_arcsec": {
+        "median_arcsec": 3.18274290634354,
+        "mean_arcsec": 8.255169573479586,
+        "rms_arcsec": 24.605990505343616,
+        "n": 40,
+        "obs_span_years_calendar": 120.88453624483573,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.023015374156233878,
+        "elements": {
+          "a": {
+            "measured": 2.2015606,
+            "fsot_computed": 2.2020672974093665,
+            "error_pct": 0.023015374156240557
+          },
+          "e": {
+            "measured": 0.1561964,
+            "fsot_computed": 0.15623234918587858,
+            "error_pct": 0.023015374156235276
+          },
+          "i": {
+            "measured": 5.89032,
+            "fsot_computed": 5.891675679186999,
+            "error_pct": 0.02301537415623096
+          },
+          "n": {
+            "measured": 0.30172278,
+            "fsot_computed": 0.3017922226267316,
+            "error_pct": 0.02301537415623248
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "153",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "D_eff": 20,
+      "U": 0,
+      "rms_catalog_arcsec": 0.53,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 121.52186607980232,
+      "standard_oc_arcsec": {
+        "median_arcsec": 3.103554486631394,
+        "mean_arcsec": 46.830367227871115,
+        "rms_arcsec": 70.84273759369623,
+        "n": 40,
+        "obs_span_years_calendar": 121.52186607980232,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.8984595681660628,
+        "factor": 0.00025,
+        "D_eff": 20,
+        "median_element_error_pct": 0.02246148920414897,
+        "elements": {
+          "a": {
+            "measured": 3.9683768,
+            "fsot_computed": 3.969268156526512,
+            "error_pct": 0.022461489204151832
+          },
+          "e": {
+            "measured": 0.1384847,
+            "fsot_computed": 0.13851580572593988,
+            "error_pct": 0.02246148920414676
+          },
+          "i": {
+            "measured": 7.83139,
+            "fsot_computed": 7.8331490468193845,
+            "error_pct": 0.022461489204147127
+          },
+          "n": {
+            "measured": 0.12467653,
+            "fsot_computed": 0.12470453420532605,
+            "error_pct": 0.022461489204150815
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 20.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.2231435513142097,
+          "T3_chaos_frac": -0.2,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "time_solidification": -0.6523388695854621,
+        "tau_rate_unified": 1.7317063174465006,
+        "fpc_rate_proxy": 1.935021692027591,
+        "flow_balance": 0.09629418628295425,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8007139189762293,
+        "kepler_orbital_tau_error_pct": 0.039662165346072205,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "190",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "D_eff": 20,
+      "U": 0,
+      "rms_catalog_arcsec": 0.51,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 121.08470859634451,
+      "standard_oc_arcsec": {
+        "median_arcsec": 11.914768131620667,
+        "mean_arcsec": 57.12161135733059,
+        "rms_arcsec": 88.33781051745635,
+        "n": 40,
+        "obs_span_years_calendar": 121.08470859634451,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.8984595681660628,
+        "factor": 0.00025,
+        "D_eff": 20,
+        "median_element_error_pct": 0.022461489204155145,
+        "elements": {
+          "a": {
+            "measured": 3.995049,
+            "fsot_computed": 3.9959463474998356,
+            "error_pct": 0.02246148920415547
+          },
+          "e": {
+            "measured": 0.1681607,
+            "fsot_computed": 0.16819847139747612,
+            "error_pct": 0.022461489204152543
+          },
+          "i": {
+            "measured": 6.17498,
+            "fsot_computed": 6.1763669924660585,
+            "error_pct": 0.02246148920415578
+          },
+          "n": {
+            "measured": 0.12343005,
+            "fsot_computed": 0.12345777422735543,
+            "error_pct": 0.02246148920415482
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 20.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.2231435513142097,
+          "T3_chaos_frac": -0.2,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "time_solidification": -0.6523388695854621,
+        "tau_rate_unified": 1.7317063174465006,
+        "fpc_rate_proxy": 1.935021692027591,
+        "flow_balance": 0.09629418628295425,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8007139189762293,
+        "kepler_orbital_tau_error_pct": 0.039662165346072205,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "279",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "D_eff": 20,
+      "U": 0,
+      "rms_catalog_arcsec": 0.62,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 124.09446215808575,
+      "standard_oc_arcsec": {
+        "median_arcsec": 1.5850659961486895,
+        "mean_arcsec": 30.771025872184538,
+        "rms_arcsec": 60.30029721230129,
+        "n": 40,
+        "obs_span_years_calendar": 124.09446215808575,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.8984595681660628,
+        "factor": 0.00025,
+        "D_eff": 20,
+        "median_element_error_pct": 0.02246148920415025,
+        "elements": {
+          "a": {
+            "measured": 4.2696388,
+            "fsot_computed": 4.270597824458118,
+            "error_pct": 0.02246148920414836
+          },
+          "e": {
+            "measured": 0.043876,
+            "fsot_computed": 0.04388585520300321,
+            "error_pct": 0.022461489204153796
+          },
+          "i": {
+            "measured": 2.3346,
+            "fsot_computed": 2.33512438592696,
+            "error_pct": 0.02246148920415214
+          },
+          "n": {
+            "measured": 0.11171651,
+            "fsot_computed": 0.1117416031918329,
+            "error_pct": 0.02246148920414771
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 20.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.2231435513142097,
+          "T3_chaos_frac": -0.2,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "time_solidification": -0.6523388695854621,
+        "tau_rate_unified": 1.7317063174465006,
+        "fpc_rate_proxy": 1.935021692027591,
+        "flow_balance": 0.09629418628295425,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8007139189762293,
+        "kepler_orbital_tau_error_pct": 0.039662165346072205,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "334",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "D_eff": 20,
+      "U": 0,
+      "rms_catalog_arcsec": 0.74,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 125.50942267472796,
+      "standard_oc_arcsec": {
+        "median_arcsec": 1.7093312287034612,
+        "mean_arcsec": 1.7520622196515305,
+        "rms_arcsec": 1.9633647032748474,
+        "n": 40,
+        "obs_span_years_calendar": 125.50942267472796,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.8984595681660628,
+        "factor": 0.00025,
+        "D_eff": 20,
+        "median_element_error_pct": 0.022461489204148366,
+        "elements": {
+          "a": {
+            "measured": 3.9401533,
+            "fsot_computed": 3.9410383171081063,
+            "error_pct": 0.022461489204145677
+          },
+          "e": {
+            "measured": 0.028403,
+            "fsot_computed": 0.028409379736778657,
+            "error_pct": 0.02246148920415536
+          },
+          "i": {
+            "measured": 4.71628,
+            "fsot_computed": 4.717339346723038,
+            "error_pct": 0.02246148920415105
+          },
+          "n": {
+            "measured": 0.12601853,
+            "fsot_computed": 0.12604683563851116,
+            "error_pct": 0.022461489204140737
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 20.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.2231435513142097,
+          "T3_chaos_frac": -0.2,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "time_solidification": -0.6523388695854621,
+        "tau_rate_unified": 1.7317063174465006,
+        "fpc_rate_proxy": 1.935021692027591,
+        "flow_balance": 0.09629418628295425,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8007139189762293,
+        "kepler_orbital_tau_error_pct": 0.039662165346072205,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "361",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "D_eff": 20,
+      "U": 0,
+      "rms_catalog_arcsec": 0.72,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 125.1310845564931,
+      "standard_oc_arcsec": {
+        "median_arcsec": 1.649244800824739,
+        "mean_arcsec": 1.7226708157388935,
+        "rms_arcsec": 1.8596837231737755,
+        "n": 40,
+        "obs_span_years_calendar": 125.1310845564931,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.8984595681660628,
+        "factor": 0.00025,
+        "D_eff": 20,
+        "median_element_error_pct": 0.022461489204148335,
+        "elements": {
+          "a": {
+            "measured": 3.9754292,
+            "fsot_computed": 3.976322140600577,
+            "error_pct": 0.022461489204156238
+          },
+          "e": {
+            "measured": 0.2103233,
+            "fsot_computed": 0.2103705417453233,
+            "error_pct": 0.022461489204147374
+          },
+          "i": {
+            "measured": 12.57907,
+            "fsot_computed": 12.581895446450032,
+            "error_pct": 0.0224614892041473
+          },
+          "n": {
+            "measured": 0.12434492,
+            "fsot_computed": 0.1243728497207817,
+            "error_pct": 0.022461489204149296
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 20.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.2231435513142097,
+          "T3_chaos_frac": -0.2,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "time_solidification": -0.6523388695854621,
+        "tau_rate_unified": 1.7317063174465006,
+        "fpc_rate_proxy": 1.935021692027591,
+        "flow_balance": 0.09629418628295425,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8007139189762293,
+        "kepler_orbital_tau_error_pct": 0.039662165346072205,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "414",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "D_eff": 20,
+      "U": 0,
+      "rms_catalog_arcsec": 0.64,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 118.16382136157395,
+      "standard_oc_arcsec": {
+        "median_arcsec": 1.9032466226579923,
+        "mean_arcsec": 26.301672455755902,
+        "rms_arcsec": 55.519921961143794,
+        "n": 40,
+        "obs_span_years_calendar": 118.16382136157395,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.8984595681660628,
+        "factor": 0.00025,
+        "D_eff": 20,
+        "median_element_error_pct": 0.022461489204152106,
+        "elements": {
+          "a": {
+            "measured": 3.5022653,
+            "fsot_computed": 3.50305196094226,
+            "error_pct": 0.022461489204150493
+          },
+          "e": {
+            "measured": 0.074511,
+            "fsot_computed": 0.0745277362802209,
+            "error_pct": 0.022461489204151527
+          },
+          "i": {
+            "measured": 9.56073,
+            "fsot_computed": 9.562877482336788,
+            "error_pct": 0.022461489204152685
+          },
+          "n": {
+            "measured": 0.15037668,
+            "fsot_computed": 0.15041045684174378,
+            "error_pct": 0.022461489204157956
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 20.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.2231435513142097,
+          "T3_chaos_frac": -0.2,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "time_solidification": -0.6523388695854621,
+        "tau_rate_unified": 1.7317063174465006,
+        "fpc_rate_proxy": 1.935021692027591,
+        "flow_balance": 0.09629418628295425,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8007139189762293,
+        "kepler_orbital_tau_error_pct": 0.039662165346072205,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "433",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.61,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 125.89543235227006,
+      "standard_oc_arcsec": {
+        "median_arcsec": 8.21199087119598,
+        "mean_arcsec": 56.60570149152096,
+        "rms_arcsec": 145.65004061296625,
+        "n": 40,
+        "obs_span_years_calendar": 125.89543235227006,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.023015374156232546,
+        "elements": {
+          "a": {
+            "measured": 1.4582437,
+            "fsot_computed": 1.4585793202436645,
+            "error_pct": 0.023015374156228136
+          },
+          "e": {
+            "measured": 0.222878,
+            "fsot_computed": 0.22292929620561192,
+            "error_pct": 0.023015374156230138
+          },
+          "i": {
+            "measured": 10.82855,
+            "fsot_computed": 10.831042231298195,
+            "error_pct": 0.023015374156234954
+          },
+          "n": {
+            "measured": 0.55970463,
+            "fsot_computed": 0.5598334481147643,
+            "error_pct": 0.0230153741562374
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "434",
+      "regime": "other",
+      "domain": "Astronomy",
+      "D_eff": 20,
+      "U": 0,
+      "rms_catalog_arcsec": 0.47,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 125.41635989428872,
+      "standard_oc_arcsec": {
+        "median_arcsec": 6.538455156043941,
+        "mean_arcsec": 97.93664076523262,
+        "rms_arcsec": 147.67324764536033,
+        "n": 40,
+        "obs_span_years_calendar": 125.41635989428872,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.8984595681660628,
+        "factor": 0.00025,
+        "D_eff": 20,
+        "median_element_error_pct": 0.02246148920415033,
+        "elements": {
+          "a": {
+            "measured": 1.9440793,
+            "fsot_computed": 1.9445159691620897,
+            "error_pct": 0.02246148920415027
+          },
+          "e": {
+            "measured": 0.073879,
+            "fsot_computed": 0.07389559432360913,
+            "error_pct": 0.02246148920415039
+          },
+          "i": {
+            "measured": 22.50703,
+            "fsot_computed": 22.512085414113624,
+            "error_pct": 0.022461489204145854
+          },
+          "n": {
+            "measured": 0.36360772,
+            "fsot_computed": 0.3636893917087733,
+            "error_pct": 0.022461489204153223
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 20.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.2231435513142097,
+          "T3_chaos_frac": -0.2,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "time_solidification": -0.6523388695854621,
+        "tau_rate_unified": 1.7317063174465006,
+        "fpc_rate_proxy": 1.935021692027591,
+        "flow_balance": 0.09629418628295425,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8007139189762293,
+        "kepler_orbital_tau_error_pct": 0.039662165346072205,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "499",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "D_eff": 20,
+      "U": 0,
+      "rms_catalog_arcsec": 0.61,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 123.33383188201886,
+      "standard_oc_arcsec": {
+        "median_arcsec": 1.9253904508752409,
+        "mean_arcsec": 30.523773799534318,
+        "rms_arcsec": 55.07131331534052,
+        "n": 40,
+        "obs_span_years_calendar": 123.33383188201886,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.8984595681660628,
+        "factor": 0.00025,
+        "D_eff": 20,
+        "median_element_error_pct": 0.02246148920415651,
+        "elements": {
+          "a": {
+            "measured": 4.015525,
+            "fsot_computed": 4.016426946714366,
+            "error_pct": 0.022461489204161023
+          },
+          "e": {
+            "measured": 0.2170917,
+            "fsot_computed": 0.2171404620287586,
+            "error_pct": 0.022461489204153983
+          },
+          "i": {
+            "measured": 2.09225,
+            "fsot_computed": 2.092719950507874,
+            "error_pct": 0.022461489204159035
+          },
+          "n": {
+            "measured": 0.12248716,
+            "fsot_computed": 0.12251467244021987,
+            "error_pct": 0.022461489204148314
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 20.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.2231435513142097,
+          "T3_chaos_frac": -0.2,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "time_solidification": -0.6523388695854621,
+        "tau_rate_unified": 1.7317063174465006,
+        "fpc_rate_proxy": 1.935021692027591,
+        "flow_balance": 0.09629418628295425,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8007139189762293,
+        "kepler_orbital_tau_error_pct": 0.039662165346072205,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "522",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "D_eff": 20,
+      "U": 0,
+      "rms_catalog_arcsec": 0.74,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 124.16715079727267,
+      "standard_oc_arcsec": {
+        "median_arcsec": 1.6345627384512482,
+        "mean_arcsec": 1.6791862745626869,
+        "rms_arcsec": 1.928691014391298,
+        "n": 40,
+        "obs_span_years_calendar": 124.16715079727267,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.8984595681660628,
+        "factor": 0.00025,
+        "D_eff": 20,
+        "median_element_error_pct": 0.02246148920415091,
+        "elements": {
+          "a": {
+            "measured": 3.6262784,
+            "fsot_computed": 3.6270929161313283,
+            "error_pct": 0.022461489204150337
+          },
+          "e": {
+            "measured": 0.0857955,
+            "fsot_computed": 0.08581477094697014,
+            "error_pct": 0.02246148920414588
+          },
+          "i": {
+            "measured": 4.41997,
+            "fsot_computed": 4.420962791084377,
+            "error_pct": 0.02246148920415243
+          },
+          "n": {
+            "measured": 0.14272904,
+            "fsot_computed": 0.1427610990679108,
+            "error_pct": 0.02246148920415148
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 20.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.2231435513142097,
+          "T3_chaos_frac": -0.2,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Astronomy",
+        "S": 0.8984595681660628,
+        "time_solidification": -0.6523388695854621,
+        "tau_rate_unified": 1.7317063174465006,
+        "fpc_rate_proxy": 1.935021692027591,
+        "flow_balance": 0.09629418628295425,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8007139189762293,
+        "kepler_orbital_tau_error_pct": 0.039662165346072205,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "719",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.77,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 113.43972738738019,
+      "standard_oc_arcsec": {
+        "median_arcsec": 8.38295099304421,
+        "mean_arcsec": 9.083869244660795,
+        "rms_arcsec": 10.609007903549376,
+        "n": 40,
+        "obs_span_years_calendar": 113.43972738738019,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.023015374156228497,
+        "elements": {
+          "a": {
+            "measured": 2.6369496,
+            "fsot_computed": 2.637556503816751,
+            "error_pct": 0.023015374156225937
+          },
+          "e": {
+            "measured": 0.5465928,
+            "fsot_computed": 0.546718600378031,
+            "error_pct": 0.0230153741562283
+          },
+          "i": {
+            "measured": 11.57236,
+            "fsot_computed": 11.575023421952706,
+            "error_pct": 0.023015374156228695
+          },
+          "n": {
+            "measured": 0.23017139,
+            "fsot_computed": 0.2302243648066091,
+            "error_pct": 0.023015374156230388
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    },
+    {
+      "desig": "887",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "D_eff": 21,
+      "U": 0,
+      "rms_catalog_arcsec": 0.54,
+      "n_obs_used": 40,
+      "obs_span_years_calendar": 107.42215729333093,
+      "standard_oc_arcsec": {
+        "median_arcsec": 6.123027867081204,
+        "mean_arcsec": 37.66238279313455,
+        "rms_arcsec": 121.52797229418518,
+        "n": 40,
+        "obs_span_years_calendar": 107.42215729333093,
+        "predictor": "JPL_Horizons_geocentric",
+        "metric": "O-C arcsec on raw MPC optical observations",
+        "time_language": "classical clock / ephemeris JD \u2014 not FSOT Fluid Phase Current"
+      },
+      "fsot_native_element_residual": {
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "S_abs": 0.7671791385407586,
+        "factor": 0.0003,
+        "D_eff": 21,
+        "median_element_error_pct": 0.0230153741562297,
+        "elements": {
+          "a": {
+            "measured": 2.473999,
+            "fsot_computed": 2.4745684001264716,
+            "error_pct": 0.02301537415623665
+          },
+          "e": {
+            "measured": 0.5710842,
+            "fsot_computed": 0.5712156371653772,
+            "error_pct": 0.02301537415623001
+          },
+          "i": {
+            "measured": 9.4,
+            "fsot_computed": 9.402163445170686,
+            "error_pct": 0.023015374156229392
+          },
+          "n": {
+            "measured": 0.25328228,
+            "fsot_computed": 0.25334057386441344,
+            "error_pct": 0.023015374156224733
+          }
+        },
+        "dimensional_time_folds": {
+          "D_eff": 21.0,
+          "D_ceiling": 25.0,
+          "T1_ln_fold": -0.1743533871447778,
+          "T3_chaos_frac": -0.16,
+          "note": "These folds are compactification depth, not years of observation span"
+        }
+      },
+      "fsot_time_layer_fpc": {
+        "physics": "Fluid_Phase_Current",
+        "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+        "domain": "Planetary_Science",
+        "S": 0.7671791385407586,
+        "time_solidification": -0.3444177664510685,
+        "tau_rate_unified": 1.6314940689740418,
+        "fpc_rate_proxy": 1.7965730332425072,
+        "flow_balance": 0.08316614332042382,
+        "observed_locks_sequence": true,
+        "fpc_time_coupling_orbital_year": 0.00044144630155173846,
+        "kepler_orbital_tau_anchor": 1.8,
+        "kepler_orbital_tau_fsot": 1.8006096031080057,
+        "kepler_orbital_tau_error_pct": 0.033866839333645475,
+        "multi_epoch_rule": "Each observation residual-matches at this interface. Do not accumulate (n_fsot\u2212n)\u00d7\u0394t_calendar. If residuals degrade across epochs, re-route D_eff first."
+      },
+      "direct_comparison": true,
+      "units_differ_on_purpose": true,
+      "misapplication_rejected": "\u0394n \u00d7 multi-year calendar time secular sky drift is NOT FSOT time. Time in the model is Fluid Phase Current + dimensional folds ln(D/25) and Chaos\u00b7(D\u221225)/25. Multi-epoch residual failure \u2192 re-route D_eff, do not integrate residual scale through calendar years."
+    }
+  ],
+  "refresh": [
+    "python scripts/run_mpcorb_raw_pipeline.py --target-objects 100 --numbered-only",
+    "python scripts/build_mpcorb_fsot_vs_standard_oc.py"
+  ]
+}

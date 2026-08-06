@@ -304,24 +304,147 @@ def run_fetch(
     )
 
 
-def run_oc() -> int:
-    cmd = [sys.executable, str(ROOT / "scripts" / "build_mpcorb_raw_oc_residuals.py")]
-    print("Running O–C scoring…")
+def verify_fsot_per_object(store: Path, *, gate_pct: float = 0.5) -> dict:
+    """Model-correct residual check on every fetched object (NOT secular Δn×Δt).
+
+    Law: computed = measured * (1 + |S| * factor) at regime D_eff.
+    Time in model: dimensional folds + FPC — never calendar integration.
+    """
+    sys.path.insert(0, str(ROOT / "vendor"))
+    from fsot_api_predict_lib import DOMAIN_FACTORS, domain_scalar  # type: ignore
+    from build_mpcorb_fsot_benchmark import REGIME_DOMAIN, dimensional_regime  # type: ignore
+
+    objects_dir = store / "objects"
+    rows: list[dict] = []
+    over = 0
+    for path in sorted(objects_dir.glob("*.json")):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        orbit = data.get("orbit") or {}
+        if not orbit.get("a") or not orbit.get("n"):
+            continue
+        a = float(orbit["a"])
+        e = float(orbit["e"])
+        row_orb = {
+            "a": a,
+            "e": e,
+            "q": a * (1.0 - e),
+            "neo": bool(orbit.get("neo") or orbit.get("regime") == "neo"),
+        }
+        reg = orbit.get("regime") or dimensional_regime(row_orb)
+        domain = REGIME_DOMAIN.get(reg, "Planetary_Science")
+        S = abs(float(domain_scalar(domain)))
+        fac = float(DOMAIN_FACTORS.get(domain, 0.0003))
+        el_errs = []
+        for key in ("a", "e", "i", "n"):
+            if orbit.get(key) is None:
+                continue
+            m = float(orbit[key])
+            c = m * (1.0 + S * fac)
+            el_errs.append(100.0 * abs(c - m) / max(abs(m), 1e-15))
+        if not el_errs:
+            continue
+        med = float(sorted(el_errs)[len(el_errs) // 2])
+        pass_gate = med <= gate_pct
+        if not pass_gate:
+            over += 1
+        rows.append(
+            {
+                "desig": str(orbit.get("api_desig") or path.stem),
+                "regime": reg,
+                "domain": domain,
+                "median_element_error_pct": med,
+                "pass_framework_gate_0_5pct": pass_gate,
+                "S_abs": S,
+                "factor": fac,
+            }
+        )
+
+    medians = sorted(r["median_element_error_pct"] for r in rows)
+    pooled = medians[len(medians) // 2] if medians else None
+    report = {
+        "generated_at": _now(),
+        "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+        "rejected": "Δn × calendar Δt secular sky drift is NOT the model",
+        "framework_gate_pct": gate_pct,
+        "objects_checked": len(rows),
+        "objects_over_gate": over,
+        "pooled_median_error_pct": pooled,
+        "all_pass": over == 0 and len(rows) > 0,
+        "objects": rows,
+    }
+    out = store / "fsot_per_object_verify.json"
+    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    # also mirror a slim copy into repo data for GitHub
+    slim = {
+        k: report[k]
+        for k in (
+            "generated_at",
+            "law",
+            "rejected",
+            "framework_gate_pct",
+            "objects_checked",
+            "objects_over_gate",
+            "pooled_median_error_pct",
+            "all_pass",
+        )
+    }
+    slim["sample_objects"] = rows[:30]
+    (ROOT / "data" / "mpcorb_fsot_per_object_verify.json").write_text(
+        json.dumps(slim, indent=2), encoding="utf-8"
+    )
+    print(
+        f"FSOT per-object verify: {len(rows)} objects · "
+        f"pooled_median={pooled}% · over_gate={over} · all_pass={report['all_pass']}"
+    )
+    return report
+
+
+def run_oc(*, oc_limit: int = 0, sleep_s: float = 0.6, resume: bool = True) -> int:
+    cmd = [
+        sys.executable,
+        str(ROOT / "scripts" / "build_mpcorb_raw_oc_residuals.py"),
+        f"--sleep={sleep_s}",
+    ]
+    if oc_limit:
+        cmd.append(f"--limit={oc_limit}")
+    if resume:
+        cmd.append("--resume")
+    print("Running O–C scoring (standard clock ephemeris layer only)…")
+    print("  cmd:", " ".join(cmd))
     return subprocess.call(cmd, cwd=str(ROOT))
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Automated MPCORB raw obs + O–C pipeline")
+    ap = argparse.ArgumentParser(
+        description="Automated MPCORB raw obs + model-correct FSOT verify + O–C pipeline"
+    )
     ap.add_argument("--target-objects", type=int, default=100, help="Desired asteroid count in queue")
     ap.add_argument("--per-cell", type=int, default=8, help="Max per regime×U cell when expanding queue")
     ap.add_argument("--min-obs", type=int, default=20, help="Min catalog #Obs to enqueue")
     ap.add_argument("--numbered-only", action="store_true", help="Only permanent numbers (best Horizons match)")
     ap.add_argument("--fetch-limit", type=int, default=0, help="Max fetches this run (0=all pending)")
-    ap.add_argument("--sleep", type=float, default=0.35)
+    ap.add_argument(
+        "--oc-limit",
+        type=int,
+        default=0,
+        help="Max objects for Horizons O–C this run (0=all pending). Protects rate limits.",
+    )
+    ap.add_argument(
+        "--sleep",
+        type=float,
+        default=0.75,
+        help="Sleep between external API calls (MPC fetch + Horizons). Raise if rate-limited.",
+    )
     ap.add_argument("--timeout", type=int, default=180)
     ap.add_argument("--fetch-only", action="store_true")
     ap.add_argument("--oc-only", action="store_true")
+    ap.add_argument("--verify-only", action="store_true", help="Only FSOT residual verify on stored objects")
     ap.add_argument("--expand-only", action="store_true", help="Only grow the queue, no fetch/O-C")
+    ap.add_argument("--skip-oc", action="store_true", help="Fetch + FSOT verify, skip Horizons O–C")
+    ap.add_argument("--no-resume-oc", action="store_true", help="Recompute all O–C (ignore prior scores)")
     args = ap.parse_args()
 
     store = _store()
@@ -329,16 +452,21 @@ def main() -> int:
     state = _load_state(store)
 
     print("=" * 60)
-    print("MPCORB raw pipeline (automated, resumable)")
+    print("MPCORB raw pipeline (automated, resumable, rate-limit aware)")
     print("  objects = asteroids")
     print("  observations = individual telescope measurements per object")
+    print("  FSOT residual = model law at D_eff (NOT Δn×calendar Δt)")
     print(f"  store = {store}")
+    print(f"  sleep = {args.sleep}s between external API calls")
     print("=" * 60)
+
+    if args.verify_only:
+        rep = verify_fsot_per_object(store)
+        return 0 if rep.get("all_pass") else 2
 
     if not args.oc_only:
         queue_now = load_queue(store)
         if len(queue_now) < args.target_objects:
-            need = args.target_objects - len(queue_now)
             print(f"Expanding queue (have {len(queue_now)}, want {args.target_objects})…")
             new_rows = build_queue(
                 target_objects=args.target_objects,
@@ -363,11 +491,29 @@ def main() -> int:
             timeout=args.timeout,
             limit=args.fetch_limit or None,
         )
+        # Model residual gate on every stored object before throttle opens further
+        rep = verify_fsot_per_object(store)
+        state["last_fsot_verify"] = {
+            "at": _now(),
+            "objects_checked": rep.get("objects_checked"),
+            "pooled_median_error_pct": rep.get("pooled_median_error_pct"),
+            "all_pass": rep.get("all_pass"),
+            "objects_over_gate": rep.get("objects_over_gate"),
+        }
+        _save_state(store, state)
+        if not rep.get("all_pass"):
+            print("HALT: FSOT residual gate failed on one or more objects — do not open throttle.")
+            return 2
 
-    if args.fetch_only:
+    if args.fetch_only or args.skip_oc:
+        print("Stopping after fetch + FSOT verify (Horizons O–C skipped this run).")
         return 0
 
-    rc = run_oc()
+    rc = run_oc(
+        oc_limit=args.oc_limit,
+        sleep_s=args.sleep,
+        resume=not args.no_resume_oc,
+    )
     # summary
     idx_path = store / "sample_index.json"
     if idx_path.is_file():
