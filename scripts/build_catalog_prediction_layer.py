@@ -37,7 +37,12 @@ CATALOGS = [
         "tier": "C",
         "sector": "astro_gw",
         "future_survey": "MPC / IAU minor-planet catalog refreshes",
-        "note": "Orbital catalog residual hold under Kepler + FSOT channel stack.",
+        "note": (
+            "FSOT residual hold under channel stack. Classical field metrics "
+            "(RMS arcsec, U, Kepler Δn/n) live in data/mpcorb_classical_metrics.json "
+            "— dual scoreboard; not the same unit as residual %."
+        ),
+        "classical_metrics": "data/mpcorb_classical_metrics.json",
     },
     {
         "id": "CAT-GAIA-DR3",

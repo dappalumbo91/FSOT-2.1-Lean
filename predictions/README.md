@@ -64,6 +64,12 @@ python scripts/run_prediction_monitor.py
 
 Higgs next phase (tighten without changing global 0.5%): [`HIGGS_TIGHTEN_PLAN.md`](HIGGS_TIGHTEN_PLAN.md)
 
+MPCORB classical metrics (arcsec RMS / U / Kepler — dual scoreboard with FSOT %):
+
+```powershell
+python scripts/build_mpcorb_classical_metrics.py
+```
+
 ## Related docs
 
 - `docs/PREDICTION_MONITOR.md`
