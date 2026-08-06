@@ -1,6 +1,6 @@
 {
   "freeze_id": "TOE-PREREG-20260806",
-  "frozen_at": "2026-08-06T13:06:59.315804+00:00",
+  "frozen_at": "2026-08-06T13:12:35.840811+00:00",
   "review_horizon": "2027-06-30",
   "predata_risk_doc": "docs/PREDATA_RISK.md",
   "discipline": "ZERO free parameters. Pin D1D38A. Predictions frozen before decisive surveys (DESI/Euclid/Rubin/CMB-S4 class). Retuning requires new freeze_id.",
@@ -145,13 +145,18 @@
     },
     {
       "path": "data/h0_multi_tool_predictions.json",
-      "sha256": "01f16a05b3f62f29f91e125733bf10f3b8e36084899d5fe8403b85bb0f337bd6",
+      "sha256": "1e123730ea4fe6a07e285e0757e9b83762a36fc21b200a96cfe08626213040cc",
       "bytes": 18101
     },
     {
+      "path": "data/h0_sightline_predictions.json",
+      "sha256": "1e050028958296538ccacf9c83bb7373985f191559dc4035b5525cbdda17ac27",
+      "bytes": 19328
+    },
+    {
       "path": "data/domain_prediction_atlas.json",
-      "sha256": "b116870225e3c1bde8ceb1cccead6b3b676b420505408568f7f514c5c3eb0467",
-      "bytes": 1076388
+      "sha256": "27b019454f1fafa56a3edc59abc9ebe9397c4149e7ab4e758e7282447e5f6651",
+      "bytes": 1316538
     },
     {
       "path": "data/sector_h0_seed.json",
@@ -159,5 +164,5 @@
       "bytes": 7698
     }
   ],
-  "bundle_sha256": "09d91c365a6d07ab28049b83f880368e40dd7606b8cb9693b793cab056052be0"
+  "bundle_sha256": "609b0be9e194111d5bc100acfc7f6709809e7a4e22e7b584503ddffa1bc0f3c5"
 }

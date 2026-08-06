@@ -38,6 +38,7 @@ CONTESTED = ROOT / "data" / "contested_observables_closure.json"
 FUTURE = ROOT / "data" / "contested_future_observation_ledger.json"
 DOMAIN_ATLAS = ROOT / "data" / "domain_prediction_atlas.json"
 H0_MULTI = ROOT / "data" / "h0_multi_tool_predictions.json"
+H0_SIGHT = ROOT / "data" / "h0_sightline_predictions.json"
 OUT_JSON = ROOT / "data" / "prediction_monitor_report.json"
 OUT_MD = ROOT / "data" / "publication" / "PREDICTION_MONITOR.md"
 
@@ -259,6 +260,7 @@ def build_report(*, online: bool) -> dict:
     future = _load_json(FUTURE)
     atlas = _load_json(DOMAIN_ATLAS)
     h0_multi = _load_json(H0_MULTI)
+    h0_sight = _load_json(H0_SIGHT)
     margin_idx = _margin_index(margin)
 
     watches = reg.get("watches") or []
@@ -302,6 +304,13 @@ def build_report(*, online: bool) -> dict:
             "h0_multi_tool_count": h0_multi.get("tool_count")
             or atlas_sum.get("h0_multi_tool_count"),
             "h0_fsot_span": (h0_multi.get("span_km_s_mpc") or {}),
+            "h0_sightline_host_count": h0_sight.get("host_count")
+            or atlas_sum.get("h0_sightline_host_count"),
+            "h0_sightline_mean": h0_sight.get("host_mean_fsot_h0"),
+            "h0_sightline_span": (h0_sight.get("span_km_s_mpc") or {}),
+            "atlas_by_sector": atlas_sum.get("by_sector"),
+            "non_cosmology_domains": atlas_sum.get("non_cosmology_domains"),
+            "sector_portfolio_count": atlas_sum.get("sector_portfolio_count"),
             "residual_hold_gate_fails": residual_fail,
             "t5_freeze_id": freeze.get("freeze_id"),
             "t5_bundle_sha256": freeze.get("bundle_sha256"),
@@ -311,6 +320,7 @@ def build_report(*, online: bool) -> dict:
         },
         "watches": results,
         "h0_multi_tool_preview": (h0_multi.get("tools") or [])[:8],
+        "h0_sightline_preview": (h0_sight.get("hosts") or [])[:8],
         "high_urgency_open": [
             r["id"]
             for r in results
@@ -326,6 +336,7 @@ def build_report(*, online: bool) -> dict:
             "offline": "python scripts/run_prediction_monitor.py",
             "online": "python scripts/run_prediction_monitor.py --online",
             "rebuild_h0": "python scripts/build_h0_multi_tool_predictions.py",
+            "rebuild_h0_sightline": "python scripts/build_h0_sightline_predictions.py",
             "rebuild_atlas": "python scripts/build_domain_prediction_atlas.py",
             "freeze": "python -c \"import sys; sys.path.insert(0,'scripts'); from build_toe_gap_closure import freeze_prereg; freeze_prereg()\"",
             "kaggle_pack": "python scripts/build_kaggle_prediction_pack.py",
@@ -355,7 +366,10 @@ def write_md(report: dict) -> None:
         f"| **Atlas predictions** | **{s.get('atlas_prediction_count')}** |",
         f"| Atlas domains covered | {s.get('atlas_domains_covered')} |",
         f"| Multi-tool H₀ locks | {s.get('h0_multi_tool_count')} |",
-        f"| H₀ FSOT span | {(s.get('h0_fsot_span') or {}).get('min_fsot')}–{(s.get('h0_fsot_span') or {}).get('max_fsot')} |",
+        f"| Sightline host H₀ | {s.get('h0_sightline_host_count')} (mean {s.get('h0_sightline_mean')}) |",
+        f"| H₀ tool span | {(s.get('h0_fsot_span') or {}).get('min_fsot')}–{(s.get('h0_fsot_span') or {}).get('max_fsot')} |",
+        f"| Non-cosmology domains | {s.get('non_cosmology_domains')} |",
+        f"| Sector portfolios | {s.get('sector_portfolio_count')} |",
         f"| Residual-hold gate fails | {s.get('residual_hold_gate_fails')} |",
         f"| PREDs with future_survey tag | {s.get('prereg_with_future_survey_tag')} |",
         f"| T5 freeze | `{s.get('t5_freeze_id')}` |",
@@ -391,6 +405,22 @@ def write_md(report: dict) -> None:
         )
     lines.extend(
         [
+            "",
+            "### Sightline hosts (sample)",
+            "",
+            "| Host | FSOT H₀ | Sector | Method |",
+            "|------|--------:|--------|--------|",
+        ]
+    )
+    for h in report.get("h0_sightline_preview") or []:
+        lines.append(
+            f"| {h.get('host')} | **{h.get('fsot_predicted_h0')}** | "
+            f"`{h.get('sky_sector')}` | {h.get('method')} |"
+        )
+    lines.extend(
+        [
+            "",
+            "Full hosts: `data/publication/H0_SIGHTLINE_PREDICTIONS.md`",
             "",
             "## High-urgency open watches",
             "",

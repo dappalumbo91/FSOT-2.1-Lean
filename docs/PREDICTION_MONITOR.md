@@ -7,6 +7,7 @@
 | `data/preregistered_predictions_manifest.yaml` | Hand PRED-001… curated locks |
 | `data/domain_prediction_atlas.json` | **Atlas-scale** PREDs for every green domain |
 | `data/h0_multi_tool_predictions.json` | **Per-tool H₀** under BH→WH bubble bleed |
+| `data/h0_sightline_predictions.json` | **Per-host / sky-sector H₀** (SH0ES sightlines) |
 | `data/sector_h0_seed.json` | H₀ tool seed + density proxies |
 | `data/prediction_monitor_registry.yaml` | Watches ↔ facilities ↔ windows ↔ kill criteria |
 | `data/toe_prereg_freeze.json` | T5 SHA-locked slate |
@@ -23,7 +24,15 @@ picture, Cepheid ladders, TRGB, CMB, BAO, masers, time-delay lenses, etc. couple
 
 `H0_tool = H0_global_fsot × (1 + density_model × bleed_fraction)`
 
-See `data/publication/H0_MULTI_TOOL_PREDICTIONS.md`.
+See `data/publication/H0_MULTI_TOOL_PREDICTIONS.md` and per-host
+`data/publication/H0_SIGHTLINE_PREDICTIONS.md`.
+
+### Not cosmology-only
+
+The domain atlas tags every green panel into scientific sectors (bio_med,
+materials_chem, particle_nuclear, earth_climate, social_econ, engineering_compute,
+astro_gw, …) with residual holds, scalar locks, and **sector portfolio** predictions.
+Cosmology is one sector among many — see `data/publication/DOMAIN_PREDICTION_ATLAS.md`.
 
 Authority pin: **D1D38A** · zero free parameters · see [`PREDATA_RISK.md`](PREDATA_RISK.md).
 
@@ -50,8 +59,9 @@ Sources are public project timelines (ESA Euclid, Rubin Observatory, GWOSC, DESI
 ## Commands
 
 ```powershell
-# Rebuild multi-tool H0 + full domain atlas from monorepo data:
+# Rebuild multi-tool H0 + per-host sightlines + full multi-sector atlas:
 python scripts/build_h0_multi_tool_predictions.py
+python scripts/build_h0_sightline_predictions.py
 python scripts/build_domain_prediction_atlas.py
 python scripts/run_prediction_monitor.py              # offline, uses repo panels
 python scripts/run_prediction_monitor.py --online     # + GWOSC / URL probes

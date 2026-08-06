@@ -1,6 +1,6 @@
 # FSOT Prediction Monitor
 
-*Generated 2026-08-06T13:06:59.168415+00:00 · online=False · pin D1D38A*
+*Generated 2026-08-06T13:12:35.689986+00:00 · online=False · pin D1D38A*
 
 Tracks **preregistered** FSOT locks against near/future public data drops. Predicted centrals are frozen; this report only updates **outcome status**.
 
@@ -10,17 +10,20 @@ Tracks **preregistered** FSOT locks against near/future public data drops. Predi
 |--------|------:|
 | Watches | 14 |
 | Prereg PREDs (hand YAML) | 48 |
-| **Atlas predictions** | **1219** |
+| **Atlas predictions** | **1418** |
 | Atlas domains covered | 472 |
 | Multi-tool H₀ locks | 25 |
-| H₀ FSOT span | 67.383958–75.146282 |
+| Sightline host H₀ | 22 (mean 73.302397) |
+| H₀ tool span | 67.383958–75.146282 |
+| Non-cosmology domains | 458 |
+| Sector portfolios | 9 |
 | Residual-hold gate fails | 0 |
 | PREDs with future_survey tag | 13 |
 | T5 freeze | `TOE-PREREG-20260806` |
 | Green gate | 472/472 |
-| Report SHA | `1a4fe245853be6b4…` |
+| Report SHA | `26c3f63c8468de09…` |
 
-Atlas kinds: multi_tool_h0=25, residual_hold=472, scalar_lock=722
+Atlas kinds: h0_sightline_host=22, h0_sightline_sector=5, multi_tool_h0=25, residual_hold=472, scalar_lock=885, sector_portfolio_hold=9
 
 ### Outcomes
 
@@ -44,6 +47,21 @@ Theory: each measurement system samples a different BH→WH information-flow sec
 | spt3g_cmb | **68.281642** | 68.3 | early_universe_cmb |
 | global_cmb_background | **68.440057** | 68.44005682979427 | fsot_global |
 | desi_bao_rs_anchored | **68.524545** | 68.52 | bao_intermediate |
+
+### Sightline hosts (sample)
+
+| Host | FSOT H₀ | Sector | Method |
+|------|--------:|--------|--------|
+| LMC | **70.214931** | `sector_1_local_low` | TRGB_anchor |
+| NGC4258 | **70.388608** | `sector_3_fsot_document` | Maser_anchor |
+| NGC3021 | **73.470375** | `sector_2_carnegie` | SH0ES_Cepheid |
+| NGC3370 | **73.470375** | `sector_2_carnegie` | SH0ES_Cepheid |
+| NGC3627 | **73.470375** | `sector_2_carnegie` | SH0ES_Cepheid |
+| NGC3982 | **73.470375** | `sector_2_carnegie` | SH0ES_Cepheid |
+| UGC9391 | **73.470375** | `sector_2_carnegie` | SH0ES_Cepheid |
+| M101 | **73.497059** | `sector_3_fsot_document` | SH0ES_Cepheid |
+
+Full hosts: `data/publication/H0_SIGHTLINE_PREDICTIONS.md`
 
 ## High-urgency open watches
 

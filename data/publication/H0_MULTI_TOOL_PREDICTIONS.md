@@ -1,6 +1,6 @@
 # Multi-tool H₀ predictions (BH→WH bubble bleed)
 
-*Generated 2026-08-06T13:06:57.683655+00:00 · pin D1D38A · 25 tools*
+*Generated 2026-08-06T13:12:34.037967+00:00 · pin D1D38A · 25 tools*
 
 ## Why not one number
 
@@ -46,7 +46,7 @@ Kill criteria fire per tool — a SH0ES update does not retune Planck, and vice 
 FSOT span: **67.383958 – 75.146282** km/s/Mpc  
 Literature span: 67.4 – 75.1 km/s/Mpc
 
-Bundle SHA-256: `ca75c6055ee8c629526dbbefe73b2cd10427f65399001cac93d1ca1f3e1e64f9`
+Bundle SHA-256: `d39e5cbb3fb947354325ab4b6f9ed39d3f93f1af44f410ea9bc03a339ac353e3`
 
 Refresh: `python scripts/build_h0_multi_tool_predictions.py`
 

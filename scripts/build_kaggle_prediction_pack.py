@@ -267,6 +267,7 @@ def build() -> Path:
         "contested_observables_closure.json",
         "contested_future_observation_ledger.json",
         "h0_multi_tool_predictions.json",
+        "h0_sightline_predictions.json",
         "sector_h0_seed.json",
         # domain atlas is large; include summary-only slim via extractor below
     ]:
@@ -279,13 +280,31 @@ def build() -> Path:
     if atlas_src.is_file():
         atlas = json.loads(atlas_src.read_text(encoding="utf-8"))
         preds = atlas.get("predictions") or []
-        slim_preds = [p for p in preds if p.get("kind") == "multi_tool_h0"]
+        slim_preds = [
+            p
+            for p in preds
+            if p.get("kind")
+            in {
+                "multi_tool_h0",
+                "h0_sightline_host",
+                "h0_sightline_sector",
+                "sector_portfolio_hold",
+            }
+        ]
         residual = [p for p in preds if p.get("kind") == "residual_hold"]
         residual.sort(key=lambda p: -(p.get("fsot_predicted") or 0))
         slim_preds.extend(residual[:40])
+        # sample non-cosmo scalar locks
+        non_cosmo_scalar = [
+            p
+            for p in preds
+            if p.get("kind") == "scalar_lock" and p.get("sector") != "cosmology"
+        ][:30]
+        slim_preds.extend(non_cosmo_scalar)
         slim = {
             "generated_at": atlas.get("generated_at"),
             "summary": atlas.get("summary"),
+            "sector_portfolio": atlas.get("sector_portfolio"),
             "note": "Slim Kaggle export — full atlas on GitHub data/domain_prediction_atlas.json",
             "predictions_preview": slim_preds,
             "bundle_sha256": atlas.get("bundle_sha256"),
