@@ -8,6 +8,8 @@ Run this if you want to **break FSOT fast** — not read 12,000 lines of narrati
 Full human guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) · audience map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) · math: [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md)
 
 Plain-language ladder: [`CLEAR_PATH_FOR_INDEPENDENTS.md`](CLEAR_PATH_FOR_INDEPENDENTS.md) ·  
+Anonymous independent pack: [`INDEPENDENT_REPRODUCTION.md`](INDEPENDENT_REPRODUCTION.md) ·  
+Pre-data risk (T5): [`PREDATA_RISK.md`](PREDATA_RISK.md) ·  
 Claim tiers: [`RESIDUAL_HONESTY_AND_CLAIM_TIERS.md`](RESIDUAL_HONESTY_AND_CLAIM_TIERS.md) ·  
 Status snapshot: [`CURRENT_STATUS.md`](CURRENT_STATUS.md)
 

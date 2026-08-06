@@ -3,6 +3,8 @@
 You do **not** need to understand every domain panel on day one.  
 Follow this ladder. Each step has a **command**, an **expected artifact**, and a **citation target**.
 
+Anonymous one-pager (no personal names, publish-only-artifacts): [`INDEPENDENT_REPRODUCTION.md`](INDEPENDENT_REPRODUCTION.md) · pre-data risk: [`PREDATA_RISK.md`](PREDATA_RISK.md)
+
 ---
 
 ## Ladder overview

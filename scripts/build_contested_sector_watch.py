@@ -59,9 +59,19 @@ def main() -> int:
 
     lines.extend([
         "",
-        "Refresh: `python scripts/build_contested_observables_closure.py && python scripts/build_contested_sector_watch.py`",
+        "## Future-observation ledger",
         "",
-        "External authorities to monitor: Planck Collaboration (2018); Riess et al. (2024); DES Y3 σ₈; BBN lithium gap.",
+        "Pre-data differentiators (surveys not yet closed): "
+        "`data/contested_future_observation_ledger.json` · "
+        "`data/publication/CONTESTED_FUTURE_OBSERVATION_LEDGER.md`",
+        "",
+        "Discipline: [`docs/PREDATA_RISK.md`](../../docs/PREDATA_RISK.md) · freeze: `data/toe_prereg_freeze.json`",
+        "",
+        "Refresh: `python scripts/build_contested_observables_closure.py && "
+        "python scripts/build_contested_sector_watch.py && "
+        "python scripts/build_contested_future_observation_ledger.py`",
+        "",
+        "External authorities to monitor: Planck Collaboration (2018); Riess et al. (2024); DES Y3 σ₈; BBN lithium gap; DESI/Euclid/CMB-S4 class releases.",
         "",
     ])
     OUT.parent.mkdir(parents=True, exist_ok=True)

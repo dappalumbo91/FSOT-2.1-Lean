@@ -605,12 +605,20 @@ def build_limit_recovery_benchmark() -> dict:
 
 
 def freeze_prereg() -> dict:
-    """T5: freeze current prereg manifest + contested predictions with SHA-256."""
+    """T5: freeze current prereg manifest + contested predictions with SHA-256.
+
+    Pre-data risk discipline: every sector_predictions row is locked *before*
+    decisive survey refreshes. Expand only by adding new freeze_id generations —
+    never silently retune existing fsot_predicted values.
+    """
     files = [
         PREREG_MANIFEST,
         STUMPED_REF,
         ROOT / "data" / "preregistered_open_science_holdouts.yaml",
         FALSIF,
+        ROOT / "data" / "contested_observables_closure.json",
+        ROOT / "data" / "toe_contested_sector_refresh.json",
+        ROOT / "data" / "contested_future_observation_ledger.json",
     ]
     frozen = []
     for path in files:
@@ -623,21 +631,125 @@ def freeze_prereg() -> dict:
                 }
             )
 
-    # Also freeze a dated prediction slate for next survey refresh
+    # Dated prediction slate for next survey refresh (T5 pre-data risk).
+    # Future-observation differentiators: values locked now; kill criteria fire
+    # when independent surveys publish, not when we re-fit.
     slate = {
         "freeze_id": f"TOE-PREREG-{datetime.now(timezone.utc).strftime('%Y%m%d')}",
         "frozen_at": _now(),
-        "review_horizon": "2026-12-31",
+        "review_horizon": "2027-06-30",
+        "predata_risk_doc": "docs/PREDATA_RISK.md",
+        "discipline": (
+            "ZERO free parameters. Pin D1D38A. Predictions frozen before decisive "
+            "surveys (DESI/Euclid/Rubin/CMB-S4 class). Retuning requires new freeze_id."
+        ),
         "global_kill": (
             "If >25% of extension domains fail pooled ≤0.5% on next full benchmark refresh, "
             "downgrade empirical_accuracy_closure verdict."
         ),
         "sector_predictions": [
-            {"id": "PRED-H0-bridge", "fsot_predicted": 70.75, "kill": "not_between_67.4_and_73.04"},
-            {"id": "PRED-S8", "fsot_predicted": 0.805, "kill": "outside_planck_des_band"},
-            {"id": "PRED-wa", "fsot_predicted": -1.018, "kill": "desi_3sigma_exclusion"},
-            {"id": "PRED-Neffective", "fsot_predicted": 3.046, "kill": "cmb_3sigma_exclusion"},
-            {"id": "PRED-mH", "fsot_predicted": 125.25, "kill": "pdg_update_outside_0_5pct"},
+            # Core contested cosmology / particle (Label B T5)
+            {
+                "id": "PRED-H0-bridge",
+                "fsot_predicted": 70.75,
+                "unit": "km/s/Mpc",
+                "kill": "not_between_67.4_and_73.04",
+                "future_survey": "SH0ES/JWST/Carnegie local distance ladder refresh",
+            },
+            {
+                "id": "PRED-S8",
+                "fsot_predicted": 0.805,
+                "unit": "S8",
+                "kill": "outside_planck_des_band",
+                "future_survey": "DES Y3/Y6 + Euclid weak lensing",
+            },
+            {
+                "id": "PRED-wa",
+                "fsot_predicted": -1.018,
+                "unit": "w_a",
+                "kill": "desi_3sigma_exclusion",
+                "future_survey": "DESI DR2+/DR3 BAO + Euclid BAO",
+            },
+            {
+                "id": "PRED-Neffective",
+                "fsot_predicted": 3.046,
+                "unit": "N_eff",
+                "kill": "cmb_3sigma_exclusion",
+                "future_survey": "CMB-S4 / Simons Observatory N_eff",
+            },
+            {
+                "id": "PRED-mH",
+                "fsot_predicted": 125.25,
+                "unit": "GeV",
+                "kill": "pdg_update_outside_0_5pct",
+                "future_survey": "PDG Higgs mass combination update",
+            },
+            # Expanded future-observation differentiators (pre-data risk slate)
+            {
+                "id": "PRED-sigma8-central",
+                "fsot_predicted": 0.8111,
+                "unit": "sigma8",
+                "kill": "outside_0_5pct_of_frozen_central_when_next_lensing_release",
+                "future_survey": "Euclid + LSST year-1 sigma8",
+            },
+            {
+                "id": "PRED-Omega-Lambda",
+                "fsot_predicted": 0.6847,
+                "unit": "dimensionless",
+                "kill": "outside_0_5pct_of_frozen_central",
+                "future_survey": "combined BAO+CMB Omega_Lambda posterior",
+            },
+            {
+                "id": "PRED-tau-reion",
+                "fsot_predicted": 0.0544,
+                "unit": "tau",
+                "kill": "outside_0_5pct_of_frozen_central",
+                "future_survey": "CMB polarization reionization optical depth",
+            },
+            {
+                "id": "PRED-H0-Planck-sector",
+                "fsot_predicted": 67.4,
+                "unit": "km/s/Mpc",
+                "kill": "cmb_only_H0_outside_0_5pct_of_67_4",
+                "future_survey": "Planck-class CMB-only H0 reanalysis",
+            },
+            {
+                "id": "PRED-cusp-core-rc",
+                "fsot_predicted": 0.6,
+                "unit": "kpc",
+                "kill": "fornax_class_core_radius_outside_0_5pct_band",
+                "future_survey": "dwarf spheroidal kinematic core-radius campaigns",
+            },
+            {
+                "id": "PRED-lithium-factor",
+                "fsot_predicted": 3.0,
+                "unit": "underproduction_factor",
+                "kill": "bbn_lithium_gap_factor_outside_10pct_of_3",
+                "future_survey": "BBN abundance reanalysis + metal-poor star Li",
+            },
+            {
+                "id": "PRED-FRB-DM-excess",
+                "fsot_predicted": 200.0,
+                "unit": "pc_cm3_excess",
+                "kill": "chime_class_dm_excess_outside_0_5pct_of_200",
+                "future_survey": "CHIME/FRB high-DM catalog refresh",
+            },
+            {
+                "id": "PRED-DarkEnergy-CPL-wa-sign",
+                "fsot_predicted": -1.018,
+                "unit": "w_a",
+                "kill": "wa_sign_flip_or_3sigma_from_frozen",
+                "future_survey": "DESI+Euclid joint CPL (w0,wa) posterior",
+                "note": "Worst-green cosmology sector Dark_Energy_CPL remains ≤0.5%; this freezes the differentiator vs LCDM wa=0.",
+            },
+            {
+                "id": "PRED-Zebrafish-panel-hold",
+                "fsot_predicted": 0.358,
+                "unit": "pooled_median_error_pct_upper_watch",
+                "kill": "zebrafish_predictive_panel_exceeds_0_5pct_on_refresh",
+                "future_survey": "next open zebrafish developmental atlas refresh",
+                "note": "Worst-green empirical panel watch (not a free parameter).",
+            },
         ],
         "files": frozen,
         "bundle_sha256": None,

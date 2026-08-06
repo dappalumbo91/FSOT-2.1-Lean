@@ -1,6 +1,6 @@
 # Contested Sector Watch
 
-*Living monitor · 2026-08-05T14:35:48.227298+00:00*
+*Living monitor · 2026-08-06T12:48:05.475050+00:00*
 
 These 13 observables are not pipeline failures — they are the hardest open problems active science is measuring (Hubble tension, dark energy, σ₈, BBN, cusp-core, hierarchy, consciousness proxy, preregistered w_a). FSOT supplies unified readouts; ΛCDM/SM baselines have no unified prediction (15% typical error on the open panel). Where FSOT error exceeds 0.5%, refinement is queued.
 
@@ -36,6 +36,12 @@ These 13 observables are not pipeline failures — they are the hardest open pro
 - **PRED-002** `S8_effective_lensing` — FSOT 0.805 S8 vs Planck2018 0.834; discriminant: between_planck_and_des
 - **PRED-005** `lithium_problem_factor_bridge` — FSOT 2.85 underproduction_factor vs BBN theory gap 3.0; discriminant: within_10pct_of_observed_gap
 
-Refresh: `python scripts/build_contested_observables_closure.py && python scripts/build_contested_sector_watch.py`
+## Future-observation ledger
 
-External authorities to monitor: Planck Collaboration (2018); Riess et al. (2024); DES Y3 σ₈; BBN lithium gap.
+Pre-data differentiators (surveys not yet closed): `data/contested_future_observation_ledger.json` · `data/publication/CONTESTED_FUTURE_OBSERVATION_LEDGER.md`
+
+Discipline: [`docs/PREDATA_RISK.md`](../../docs/PREDATA_RISK.md) · freeze: `data/toe_prereg_freeze.json`
+
+Refresh: `python scripts/build_contested_observables_closure.py && python scripts/build_contested_sector_watch.py && python scripts/build_contested_future_observation_ledger.py`
+
+External authorities to monitor: Planck Collaboration (2018); Riess et al. (2024); DES Y3 σ₈; BBN lithium gap; DESI/Euclid/CMB-S4 class releases.

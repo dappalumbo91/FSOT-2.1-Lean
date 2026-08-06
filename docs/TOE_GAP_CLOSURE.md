@@ -94,6 +94,12 @@ See also: [`docs/T3_T4_GR_SM_DEEPENING.md`](T3_T4_GR_SM_DEEPENING.md).
 File: `data/toe_prereg_freeze.json` (SHA-256 bundle).  
 Do not retune sector predictions without a new freeze id.
 
+**Pre-data risk discipline:** [`docs/PREDATA_RISK.md`](PREDATA_RISK.md)  
+**Future-observation ledger:** `data/contested_future_observation_ledger.json` · `data/publication/CONTESTED_FUTURE_OBSERVATION_LEDGER.md`  
+**Anonymous independent path:** [`docs/INDEPENDENT_REPRODUCTION.md`](INDEPENDENT_REPRODUCTION.md)
+
+Expanded slate includes H₀ bridge, S₈, wₐ, N_eff, m_H, σ₈, Ω_Λ, τ_reion, cusp-core, lithium, FRB DM, Dark Energy CPL sign, and worst-green panel holds — each with a `future_survey` tag and kill criterion.
+
 ## Data pulled / cited
 
 - Planck 2018 cosmology anchors (arXiv:1807.06209)

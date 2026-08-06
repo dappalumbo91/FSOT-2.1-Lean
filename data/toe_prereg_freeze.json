@@ -1,33 +1,110 @@
 {
-  "freeze_id": "TOE-PREREG-20260805",
-  "frozen_at": "2026-08-05T21:48:58.298475+00:00",
-  "review_horizon": "2026-12-31",
+  "freeze_id": "TOE-PREREG-20260806",
+  "frozen_at": "2026-08-06T12:48:36.223013+00:00",
+  "review_horizon": "2027-06-30",
+  "predata_risk_doc": "docs/PREDATA_RISK.md",
+  "discipline": "ZERO free parameters. Pin D1D38A. Predictions frozen before decisive surveys (DESI/Euclid/Rubin/CMB-S4 class). Retuning requires new freeze_id.",
   "global_kill": "If >25% of extension domains fail pooled \u22640.5% on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
   "sector_predictions": [
     {
       "id": "PRED-H0-bridge",
       "fsot_predicted": 70.75,
-      "kill": "not_between_67.4_and_73.04"
+      "unit": "km/s/Mpc",
+      "kill": "not_between_67.4_and_73.04",
+      "future_survey": "SH0ES/JWST/Carnegie local distance ladder refresh"
     },
     {
       "id": "PRED-S8",
       "fsot_predicted": 0.805,
-      "kill": "outside_planck_des_band"
+      "unit": "S8",
+      "kill": "outside_planck_des_band",
+      "future_survey": "DES Y3/Y6 + Euclid weak lensing"
     },
     {
       "id": "PRED-wa",
       "fsot_predicted": -1.018,
-      "kill": "desi_3sigma_exclusion"
+      "unit": "w_a",
+      "kill": "desi_3sigma_exclusion",
+      "future_survey": "DESI DR2+/DR3 BAO + Euclid BAO"
     },
     {
       "id": "PRED-Neffective",
       "fsot_predicted": 3.046,
-      "kill": "cmb_3sigma_exclusion"
+      "unit": "N_eff",
+      "kill": "cmb_3sigma_exclusion",
+      "future_survey": "CMB-S4 / Simons Observatory N_eff"
     },
     {
       "id": "PRED-mH",
       "fsot_predicted": 125.25,
-      "kill": "pdg_update_outside_0_5pct"
+      "unit": "GeV",
+      "kill": "pdg_update_outside_0_5pct",
+      "future_survey": "PDG Higgs mass combination update"
+    },
+    {
+      "id": "PRED-sigma8-central",
+      "fsot_predicted": 0.8111,
+      "unit": "sigma8",
+      "kill": "outside_0_5pct_of_frozen_central_when_next_lensing_release",
+      "future_survey": "Euclid + LSST year-1 sigma8"
+    },
+    {
+      "id": "PRED-Omega-Lambda",
+      "fsot_predicted": 0.6847,
+      "unit": "dimensionless",
+      "kill": "outside_0_5pct_of_frozen_central",
+      "future_survey": "combined BAO+CMB Omega_Lambda posterior"
+    },
+    {
+      "id": "PRED-tau-reion",
+      "fsot_predicted": 0.0544,
+      "unit": "tau",
+      "kill": "outside_0_5pct_of_frozen_central",
+      "future_survey": "CMB polarization reionization optical depth"
+    },
+    {
+      "id": "PRED-H0-Planck-sector",
+      "fsot_predicted": 67.4,
+      "unit": "km/s/Mpc",
+      "kill": "cmb_only_H0_outside_0_5pct_of_67_4",
+      "future_survey": "Planck-class CMB-only H0 reanalysis"
+    },
+    {
+      "id": "PRED-cusp-core-rc",
+      "fsot_predicted": 0.6,
+      "unit": "kpc",
+      "kill": "fornax_class_core_radius_outside_0_5pct_band",
+      "future_survey": "dwarf spheroidal kinematic core-radius campaigns"
+    },
+    {
+      "id": "PRED-lithium-factor",
+      "fsot_predicted": 3.0,
+      "unit": "underproduction_factor",
+      "kill": "bbn_lithium_gap_factor_outside_10pct_of_3",
+      "future_survey": "BBN abundance reanalysis + metal-poor star Li"
+    },
+    {
+      "id": "PRED-FRB-DM-excess",
+      "fsot_predicted": 200.0,
+      "unit": "pc_cm3_excess",
+      "kill": "chime_class_dm_excess_outside_0_5pct_of_200",
+      "future_survey": "CHIME/FRB high-DM catalog refresh"
+    },
+    {
+      "id": "PRED-DarkEnergy-CPL-wa-sign",
+      "fsot_predicted": -1.018,
+      "unit": "w_a",
+      "kill": "wa_sign_flip_or_3sigma_from_frozen",
+      "future_survey": "DESI+Euclid joint CPL (w0,wa) posterior",
+      "note": "Worst-green cosmology sector Dark_Energy_CPL remains \u22640.5%; this freezes the differentiator vs LCDM wa=0."
+    },
+    {
+      "id": "PRED-Zebrafish-panel-hold",
+      "fsot_predicted": 0.358,
+      "unit": "pooled_median_error_pct_upper_watch",
+      "kill": "zebrafish_predictive_panel_exceeds_0_5pct_on_refresh",
+      "future_survey": "next open zebrafish developmental atlas refresh",
+      "note": "Worst-green empirical panel watch (not a free parameter)."
     }
   ],
   "files": [
@@ -48,9 +125,24 @@
     },
     {
       "path": "data/falsification_registry_closure.json",
-      "sha256": "8f48bd55aa98af7f0f0074ecb408d39cff7339a6382eca7f9f3b02fd05cd7712",
+      "sha256": "1072eecfec2724ef92d6bc04da2d1761ce0a27338bb71619f82958777dfb51f3",
       "bytes": 26909
+    },
+    {
+      "path": "data/contested_observables_closure.json",
+      "sha256": "12dfed10de82cbdbce2f264ce701520e7b1656f75849463bf9e520c9e72b04d1",
+      "bytes": 8865
+    },
+    {
+      "path": "data/toe_contested_sector_refresh.json",
+      "sha256": "9d8a3b69bb1cdd9d9b3aab1fb5a7e6accac0480bea81dd190b88b5032ad0bb35",
+      "bytes": 24732
+    },
+    {
+      "path": "data/contested_future_observation_ledger.json",
+      "sha256": "86c2b4dd6099b43c9462b88fad2a9825ba9f1ba62225d80ff4c0302e01032106",
+      "bytes": 6295
     }
   ],
-  "bundle_sha256": "74e834bda12e471f01d6110577f65bf9e28230c197a4d6d9e108d995aca90619"
+  "bundle_sha256": "b2bbab9c65dd5957c386c9228998ad1212154c4677bcd6d25fff4bc67abe0864"
 }

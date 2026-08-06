@@ -2574,6 +2574,94 @@ lemma chaos_perturbation_abs_le_two (p : FSOTParams) (h_D : (6 : ℝ) ≤ p.D_ef
   have h_tri := abs_add_le 1 (chaos_factor * (p.D_eff - 25) / 25)
   nlinarith [h_tri, h_prod]
 
+-- ============================================================
+-- L2 depth: engine structure bounds (Mathlib Real, no native_decide)
+-- ============================================================
+
+lemma k_pos : (0 : ℝ) < k :=
+  lt_trans (by norm_num : (0 : ℝ) < 0.42) k_gt_0420
+
+lemma k_lt_half : k < (1 / 2 : ℝ) :=
+  lt_trans k_lt_042042 (by norm_num : (0.42042 : ℝ) < 1 / 2)
+
+lemma k_lt_one : k < (1 : ℝ) :=
+  lt_trans k_lt_half (by norm_num)
+
+lemma scaled_S_eq (p : FSOTParams) : scaled_S p = raw_S p * k := rfl
+
+lemma raw_S_eq (p : FSOTParams) : raw_S p = term1 p + term2 p + term3 p := rfl
+
+lemma scaled_S_neg_of_raw_neg (p : FSOTParams) (h : raw_S p < 0) :
+    scaled_S p < 0 := by
+  unfold scaled_S
+  exact mul_neg_of_neg_of_pos h k_pos
+
+lemma scaled_S_pos_of_raw_pos (p : FSOTParams) (h : (0 : ℝ) < raw_S p) :
+    (0 : ℝ) < scaled_S p := by
+  unfold scaled_S
+  exact mul_pos h k_pos
+
+lemma scaled_S_abs_lt_of_raw
+    (p : FSOTParams) (M : ℝ) (_hM : (0 : ℝ) ≤ M) (h : abs (raw_S p) < M) :
+    abs (scaled_S p) < M := by
+  unfold scaled_S
+  have hk : abs k < (1 : ℝ) := by
+    rw [abs_of_pos k_pos]
+    exact k_lt_one
+  have hmul : abs (raw_S p * k) = abs (raw_S p) * abs k := abs_mul _ _
+  rw [hmul]
+  nlinarith [abs_nonneg (raw_S p), abs_nonneg k, h, hk, _hM]
+
+lemma term2_default (p : FSOTParams) (h_tb : p.trend_bias = 0) :
+    term2 p = p.scale * p.amplitude := by
+  simp [term2, h_tb]
+
+lemma term2_default_eq_one_of
+    (p : FSOTParams) (h_s : p.scale = 1) (h_a : p.amplitude = 1) (h_tb : p.trend_bias = 0) :
+    term2 p = 1 := by
+  simp [term2, h_s, h_a, h_tb]
+
+lemma beta_pos : (0 : ℝ) < beta := by
+  unfold beta
+  exact one_div_pos.mpr (exp_pos _)
+
+lemma chaos_perturbation_pos
+    (p : FSOTParams) (h_D : (6 : ℝ) ≤ p.D_eff ∧ p.D_eff ≤ 25) :
+    (0 : ℝ) < 1 + chaos_factor * (p.D_eff - 25) / 25 := by
+  have h_shift := D_eff_shift_abs_le p h_D
+  have hpos : (0 : ℝ) < (25 : ℝ) := by norm_num
+  have h_frac : abs ((p.D_eff - 25) / 25) ≤ (19 / 25 : ℝ) := by
+    rw [abs_div, abs_of_pos hpos]
+    refine (div_le_iff₀ hpos).mpr ?_
+    linarith [h_shift]
+  have h_prod : abs (chaos_factor * (p.D_eff - 25) / 25) < (1 : ℝ) := by
+    have h_cf : abs chaos_factor < (1 : ℝ) := chaos_factor_abs_lt_one
+    have h_frac_lt : abs ((p.D_eff - 25) / 25) < (1 : ℝ) := by nlinarith [h_frac]
+    have h_mul : abs chaos_factor * abs ((p.D_eff - 25) / 25) < (1 : ℝ) := by
+      nlinarith [h_cf, h_frac_lt, abs_nonneg chaos_factor, abs_nonneg ((p.D_eff - 25) / 25)]
+    have h_rearr : chaos_factor * (p.D_eff - 25) / 25 =
+        chaos_factor * ((p.D_eff - 25) / 25) := by ring
+    rw [h_rearr, abs_mul]
+    exact h_mul
+  have h_gt : -(1 : ℝ) < chaos_factor * (p.D_eff - 25) / 25 :=
+    (abs_lt.mp h_prod).1
+  linarith [h_gt]
+
+lemma poof_factor_pos : (0 : ℝ) < poof_factor := by
+  unfold poof_factor
+  exact exp_pos _
+
+lemma k_mul_neg_raw_lt
+    (p : FSOTParams) (h : raw_S p < -(1 : ℝ)) :
+    scaled_S p < -(0.42 : ℝ) := by
+  unfold scaled_S
+  have hk := k_gt_0420
+  have hneg : raw_S p * k < (-(1 : ℝ)) * k := by
+    exact mul_lt_mul_of_pos_right h k_pos
+  have hbound : (-(1 : ℝ)) * k < -(0.42 : ℝ) := by
+    nlinarith [hk, k_pos]
+  linarith [hneg, hbound]
+
 end
 
 end FSOT.Formal
