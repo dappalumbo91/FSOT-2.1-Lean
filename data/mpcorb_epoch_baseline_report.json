@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-08-06T16:12:47.796379+00:00",
+  "run": {
+    "started_at": "2026-08-06T15:25:22.508567+00:00",
+    "mode": "baseline_epochs",
+    "budget_minutes": 45.0,
+    "epochs_planned": 6,
+    "fetch_per_epoch": 70,
+    "oc_per_epoch": 25,
+    "sleep_s": 0.55,
+    "epochs_completed": 6,
+    "halted": "max_minutes",
+    "epochs": [
+      {
+        "epoch": 1,
+        "at": "2026-08-06T15:32:26.671424+00:00",
+        "elapsed_min": 7.07,
+        "epoch_min": 7.02,
+        "queue_size": 253,
+        "queue_added": 100,
+        "catalog_walk_line": 168,
+        "queue_expand": {
+          "added": 100,
+          "start_line": 0,
+          "new_start_line": 168,
+          "scanned": 168,
+          "eligible_seen": 125,
+          "queue_size": 253,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 237,
+          "pooled_median_error_pct": 0.023015374156234496,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 2,
+        "at": "2026-08-06T15:39:36.431912+00:00",
+        "elapsed_min": 14.23,
+        "epoch_min": 7.16,
+        "queue_size": 353,
+        "queue_added": 100,
+        "catalog_walk_line": 270,
+        "queue_expand": {
+          "added": 100,
+          "start_line": 168,
+          "new_start_line": 270,
+          "scanned": 102,
+          "eligible_seen": 102,
+          "queue_size": 353,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 307,
+          "pooled_median_error_pct": 0.023015374156234288,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 3,
+        "at": "2026-08-06T15:47:58.457230+00:00",
+        "elapsed_min": 22.6,
+        "epoch_min": 8.37,
+        "queue_size": 453,
+        "queue_added": 100,
+        "catalog_walk_line": 371,
+        "queue_expand": {
+          "added": 100,
+          "start_line": 270,
+          "new_start_line": 371,
+          "scanned": 101,
+          "eligible_seen": 101,
+          "queue_size": 453,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 377,
+          "pooled_median_error_pct": 0.023015374156234242,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 4,
+        "at": "2026-08-06T15:56:00.626942+00:00",
+        "elapsed_min": 30.64,
+        "epoch_min": 8.04,
+        "queue_size": 553,
+        "queue_added": 100,
+        "catalog_walk_line": 474,
+        "queue_expand": {
+          "added": 100,
+          "start_line": 371,
+          "new_start_line": 474,
+          "scanned": 103,
+          "eligible_seen": 103,
+          "queue_size": 553,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 447,
+          "pooled_median_error_pct": 0.023015374156234156,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 5,
+        "at": "2026-08-06T16:04:31.215894+00:00",
+        "elapsed_min": 39.15,
+        "epoch_min": 8.51,
+        "queue_size": 653,
+        "queue_added": 100,
+        "catalog_walk_line": 578,
+        "queue_expand": {
+          "added": 100,
+          "start_line": 474,
+          "new_start_line": 578,
+          "scanned": 104,
+          "eligible_seen": 104,
+          "queue_size": 653,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 517,
+          "pooled_median_error_pct": 0.023015374156234242,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 6,
+        "at": "2026-08-06T16:12:47.775350+00:00",
+        "elapsed_min": 47.42,
+        "epoch_min": 8.28,
+        "queue_size": 753,
+        "queue_added": 100,
+        "catalog_walk_line": 682,
+        "queue_expand": {
+          "added": 100,
+          "start_line": 578,
+          "new_start_line": 682,
+          "scanned": 104,
+          "eligible_seen": 104,
+          "queue_size": 753,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 587,
+          "pooled_median_error_pct": 0.023015374156234107,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      }
+    ],
+    "finished_at": "2026-08-06T16:12:47.796379+00:00",
+    "elapsed_min": 47.42
+  },
+  "final_index": {
+    "fetched_ok": 573,
+    "sample_size": 753,
+    "total_optical_observations": 4096166,
+    "queue_size": 753
+  },
+  "final_fsot_verify": {
+    "objects_checked": 587,
+    "pooled_median_error_pct": 0.023015374156234107,
+    "all_pass": true,
+    "objects_over_gate": 0
+  },
+  "final_oc": {
+    "objects_with_oc": 260,
+    "median_oc_arcsec": 2.6765192837982834,
+    "fsot_pooled_from_scoreboard": 0.023015
+  },
+  "push_when_ready": "Do not auto-push. When baseline looks good, ask to commit/push: data/mpcorb_* epoch status, O\u2013C, verify, sample index, reports.",
+  "next_full_run_hint": "python scripts/run_mpcorb_epoch_baseline.py --max-minutes 720 --epochs 40 --fetch-per-epoch 80 --oc-per-epoch 30 --sleep 0.55"
+}

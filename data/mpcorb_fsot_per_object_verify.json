@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-06T14:48:36.568786+00:00",
+  "generated_at": "2026-08-06T16:12:47.764391+00:00",
   "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
   "rejected": "\u0394n \u00d7 calendar \u0394t secular sky drift is NOT the model",
   "framework_gate_pct": 0.5,
-  "objects_checked": 59,
+  "objects_checked": 587,
   "objects_over_gate": 0,
-  "pooled_median_error_pct": 0.023015374156234954,
+  "pooled_median_error_pct": 0.023015374156234107,
   "all_pass": true,
   "sample_objects": [
     {
@@ -13,6 +13,33 @@
       "regime": "main_belt",
       "domain": "Planetary_Science",
       "median_element_error_pct": 0.023015374156234142,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "10",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156235432,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "100",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156237334,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "101",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.02301537415624018,
       "pass_framework_gate_0_5pct": true,
       "S_abs": 0.7671791385407586,
       "factor": 0.0003
@@ -27,6 +54,15 @@
       "factor": 0.00025
     },
     {
+      "desig": "102",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156237025,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
       "desig": "1025",
       "regime": "other",
       "domain": "Astronomy",
@@ -34,6 +70,15 @@
       "pass_framework_gate_0_5pct": true,
       "S_abs": 0.8984595681660628,
       "factor": 0.00025
+    },
+    {
+      "desig": "103",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.02301537415623695,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
     },
     {
       "desig": "1036",
@@ -54,6 +99,87 @@
       "factor": 0.00025
     },
     {
+      "desig": "1038",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "median_element_error_pct": 0.02246148920414903,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025
+    },
+    {
+      "desig": "104",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156236057,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "105",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.02301537415623003,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "106",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156230867,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "107",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156232126,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "108",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156230478,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "109",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156233767,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "11",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.02301537415623117,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "110",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.02301537415623395,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
       "desig": "1103",
       "regime": "other",
       "domain": "Astronomy",
@@ -61,6 +187,33 @@
       "pass_framework_gate_0_5pct": true,
       "S_abs": 0.8984595681660628,
       "factor": 0.00025
+    },
+    {
+      "desig": "111",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156236845,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "112",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156228337,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "113",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.02301537415623377,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
     },
     {
       "desig": "1139",
@@ -72,208 +225,55 @@
       "factor": 0.00025
     },
     {
-      "desig": "1221",
-      "regime": "neo",
-      "domain": "Planetary_Science",
-      "median_element_error_pct": 0.023015374156232834,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.7671791385407586,
-      "factor": 0.0003
-    },
-    {
-      "desig": "1235",
-      "regime": "other",
-      "domain": "Astronomy",
-      "median_element_error_pct": 0.02246148920415403,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8984595681660628,
-      "factor": 0.00025
-    },
-    {
-      "desig": "1355",
-      "regime": "other",
-      "domain": "Astronomy",
-      "median_element_error_pct": 0.022461489204149785,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8984595681660628,
-      "factor": 0.00025
-    },
-    {
-      "desig": "153",
-      "regime": "outer_belt",
-      "domain": "Astronomy",
-      "median_element_error_pct": 0.022461489204150815,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8984595681660628,
-      "factor": 0.00025
-    },
-    {
-      "desig": "1566",
-      "regime": "neo",
-      "domain": "Planetary_Science",
-      "median_element_error_pct": 0.023015374156236418,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.7671791385407586,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15760",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.026472323952543137,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15788",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.026472323952539473,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15789",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.026472323952544306,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "1580",
-      "regime": "neo",
-      "domain": "Planetary_Science",
-      "median_element_error_pct": 0.023015374156235946,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.7671791385407586,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15807",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.02647232395254454,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15809",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.026472323952542533,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15810",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.026472323952540386,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15820",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.02647232395254498,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15836",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.02647232395254661,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15874",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.026472323952546898,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15875",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.026472323952536406,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "15883",
-      "regime": "distant",
-      "domain": "Astrophysics",
-      "median_element_error_pct": 0.026472323952541437,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8824107984181293,
-      "factor": 0.0003
-    },
-    {
-      "desig": "1620",
-      "regime": "neo",
-      "domain": "Planetary_Science",
-      "median_element_error_pct": 0.023015374156233212,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.7671791385407586,
-      "factor": 0.0003
-    },
-    {
-      "desig": "190",
-      "regime": "outer_belt",
-      "domain": "Astronomy",
-      "median_element_error_pct": 0.02246148920415547,
-      "pass_framework_gate_0_5pct": true,
-      "S_abs": 0.8984595681660628,
-      "factor": 0.00025
-    },
-    {
-      "desig": "2",
+      "desig": "114",
       "regime": "main_belt",
       "domain": "Planetary_Science",
-      "median_element_error_pct": 0.023015374156235877,
+      "median_element_error_pct": 0.023015374156231193,
       "pass_framework_gate_0_5pct": true,
       "S_abs": 0.7671791385407586,
       "factor": 0.0003
     },
     {
-      "desig": "279",
+      "desig": "1143",
       "regime": "outer_belt",
       "domain": "Astronomy",
-      "median_element_error_pct": 0.02246148920415214,
+      "median_element_error_pct": 0.022461489204150857,
       "pass_framework_gate_0_5pct": true,
       "S_abs": 0.8984595681660628,
       "factor": 0.00025
     },
     {
-      "desig": "3",
+      "desig": "1144",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "median_element_error_pct": 0.022461489204149743,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025
+    },
+    {
+      "desig": "115",
       "regime": "main_belt",
       "domain": "Planetary_Science",
-      "median_element_error_pct": 0.02301537415623224,
+      "median_element_error_pct": 0.023015374156237417,
       "pass_framework_gate_0_5pct": true,
       "S_abs": 0.7671791385407586,
       "factor": 0.0003
     },
     {
-      "desig": "334",
+      "desig": "116",
+      "regime": "main_belt",
+      "domain": "Planetary_Science",
+      "median_element_error_pct": 0.023015374156233455,
+      "pass_framework_gate_0_5pct": true,
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003
+    },
+    {
+      "desig": "1162",
       "regime": "outer_belt",
       "domain": "Astronomy",
-      "median_element_error_pct": 0.02246148920415105,
+      "median_element_error_pct": 0.02246148920415306,
       "pass_framework_gate_0_5pct": true,
       "S_abs": 0.8984595681660628,
       "factor": 0.00025

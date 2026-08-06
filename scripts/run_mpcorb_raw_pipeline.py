@@ -83,7 +83,12 @@ def build_queue(
     min_obs: int,
     numbered_only: bool,
 ) -> list[dict]:
-    """Walk MPCORB and fill regime|U cells until target_objects reached."""
+    """Stratified sample: fill regime|U cells until target_objects reached.
+
+    Good for balanced pilot coverage. **Cannot** cover the full catalog —
+    hard ceiling ≈ n_cells × per_cell. For full coverage use
+    ``expand_queue_sequential``.
+    """
     if not MPCORB.is_file():
         raise FileNotFoundError(MPCORB)
     buckets: dict[str, list[dict]] = {}
@@ -117,17 +122,103 @@ def build_queue(
     return out
 
 
+def _queue_existing_desigs(store: Path) -> set:
+    existing: set = set()
+    queue_path = store / QUEUE_NAME
+    if not queue_path.is_file():
+        return existing
+    with queue_path.open(encoding="utf-8") as f:
+        for line in f:
+            try:
+                existing.add(json.loads(line).get("api_desig"))
+            except Exception:
+                continue
+    return existing
+
+
+def expand_queue_sequential(
+    store: Path,
+    *,
+    max_add: int,
+    min_obs: int = 15,
+    numbered_only: bool = True,
+    start_line: int = 0,
+) -> dict:
+    """Append the next *new* catalog objects by walking MPCORB in file order.
+
+    Real benefit vs stratified cells:
+      - Stratified ``per_cell`` caps at ~n_cells×per_cell (hundreds).
+      - Sequential walk can enqueue the entire eligible catalog over epochs
+        (resume via start_line / already-queued skip).
+
+    Returns stats: added, new_start_line, scanned, eligible_seen, queue_size.
+    """
+    if max_add <= 0:
+        return {
+            "added": 0,
+            "start_line": start_line,
+            "new_start_line": start_line,
+            "scanned": 0,
+            "eligible_seen": 0,
+            "queue_size": len(load_queue(store)),
+        }
+    if not MPCORB.is_file():
+        raise FileNotFoundError(MPCORB)
+
+    existing = _queue_existing_desigs(store)
+    added_rows: list[dict] = []
+    scanned = 0
+    eligible_seen = 0
+    line_no = 0
+    new_start = start_line
+
+    with MPCORB.open("rt", encoding="latin-1", errors="replace") as f:
+        for line in f:
+            line_no += 1
+            if line_no <= start_line:
+                continue
+            scanned += 1
+            row = parse_mpcorb_sample_line(line)
+            if not row:
+                continue
+            if numbered_only and not str(row.get("api_desig", "")).isdigit():
+                continue
+            if (row.get("n_obs_catalog") or 0) < min_obs:
+                continue
+            eligible_seen += 1
+            desig = row.get("api_desig")
+            if desig in existing:
+                continue
+            added_rows.append(row)
+            existing.add(desig)
+            if len(added_rows) >= max_add:
+                new_start = line_no
+                break
+        else:
+            # exhausted file
+            new_start = line_no
+
+    queue_path = store / QUEUE_NAME
+    with queue_path.open("a", encoding="utf-8") as f:
+        for row in added_rows:
+            f.write(json.dumps(row) + "\n")
+
+    return {
+        "added": len(added_rows),
+        "start_line": start_line,
+        "new_start_line": new_start,
+        "scanned": scanned,
+        "eligible_seen": eligible_seen,
+        "queue_size": len(existing),
+        "mode": "sequential_catalog_walk",
+        "catalog_exhausted": len(added_rows) < max_add and scanned > 0,
+    }
+
+
 def merge_queue(store: Path, new_rows: list[dict]) -> int:
     """Append new designations to queue if not already present. Returns added count."""
     queue_path = store / QUEUE_NAME
-    existing = set()
-    if queue_path.is_file():
-        with queue_path.open(encoding="utf-8") as f:
-            for line in f:
-                try:
-                    existing.add(json.loads(line).get("api_desig"))
-                except Exception:
-                    continue
+    existing = _queue_existing_desigs(store)
     added = 0
     with queue_path.open("a", encoding="utf-8") as f:
         for row in new_rows:
