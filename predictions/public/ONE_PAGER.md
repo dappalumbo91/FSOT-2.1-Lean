@@ -16,8 +16,11 @@ Black hole → white hole **bubble bleed** means each *measurement system* reads
 
 Formula: `H0_tool = 68.44 × (1 + density × 0.015431)`
 
-### Not only cosmology
-~**1445** atlas predictions: residual holds + scalar locks across **bio, materials, particle, earth, social, engineering, astro**. Cosmology is one sector among many.
+### Not only cosmology (but tiered)
+~**1445** atlas items total — **Tier B** residual/scalar holds across bio, materials, particle, earth, social, engineering, astro.
+
+**Lead on X with Tier A only** (contested survey locks + multi-tool H₀).  
+Tier D scaffolds (transporter, cold-fusion design, superheavy islands) are exploratory — **labeled, not leading**.
 
 ### Next public test
 **Euclid DR1-Foundation — 12 Nov 2026** (ESA hard date). Predictions already Git-timestamped.

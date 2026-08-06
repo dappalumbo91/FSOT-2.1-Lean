@@ -7,10 +7,21 @@
 | Doc | Use |
 |-----|-----|
 | **[`EXPLAINED.md`](EXPLAINED.md)** | Full explanation through the model (read this first) |
+| **[`reports/PREDICTION_TIERS.md`](reports/PREDICTION_TIERS.md)** | **Tier A–D split** (contested vs atlas vs scaffold) |
 | **[`public/ONE_PAGER.md`](public/ONE_PAGER.md)** | One-screen summary |
 | **[`public/X_READY.md`](public/X_READY.md)** | Copy-paste posts + threads for X |
+| **[`public/TIERS_FOR_X.md`](public/TIERS_FOR_X.md)** | Short tier blurb for posts |
 | **[`public/STORY_HUBBLE_BUBBLE.md`](public/STORY_HUBBLE_BUBBLE.md)** | Narrative: why the sky disagrees with itself |
 | `reports/` | Tables generated from the machine ledgers |
+
+### Tiers (honest communication)
+
+| Tier | Lead on X? | Contents |
+|------|:----------:|----------|
+| **A** Contested / public survey | Yes | H₀ tools+hosts, S₈, wₐ, Euclid/DESI… |
+| **B** Empirical atlas | Breadth only | Residual + scalar holds (~1400) |
+| **C** Lab / engineering | Support | Fuel, materials, climate, … |
+| **D** Scaffold / speculation | Label only | Cold-fusion scaffolds, Z-islands, transporter… |
 
 ## Machine ledgers
 
@@ -44,6 +55,7 @@ python scripts/build_h0_sightline_predictions.py
 python scripts/build_cchp_trgb_sightline_predictions.py
 python scripts/build_domain_prediction_atlas.py
 python scripts/rank_nearest_data_drops.py
+python scripts/build_prediction_tiers.py
 python scripts/run_prediction_monitor.py
 ```
 

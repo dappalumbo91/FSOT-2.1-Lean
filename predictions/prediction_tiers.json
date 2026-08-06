@@ -1,0 +1,1857 @@
+{
+  "generated_at": "2026-08-06T13:37:10.861119+00:00",
+  "version": "1.0",
+  "authority_pin_prefix": "D1D38A",
+  "purpose": "Separate high-weight contested survey predictions from atlas regression holds and scaffold/speculation so public communication stays honest.",
+  "tier_definitions": {
+    "A": {
+      "name": "Contested / public survey",
+      "audience": "X, skeptics, survey confrontations",
+      "meaning": "Falsifiable against independent literature and named data drops (Euclid, DESI, SH0ES, PDG, LVK, \u2026). Highest epistemic weight.",
+      "include_in_public_headline": true
+    },
+    "B": {
+      "name": "Empirical atlas (regression)",
+      "audience": "engine health, multi-domain claim",
+      "meaning": "Residual-hold and scalar-lock surface across green domains. Shows same seeds stay \u22640.5% \u2014 useful, but less distinctive per item than Tier A survey locks.",
+      "include_in_public_headline": false
+    },
+    "C": {
+      "name": "Grounded engineering / lab",
+      "audience": "applications, open lab panels",
+      "meaning": "Seed-locked panels with real thermochemistry / materials / climate / code-genome style anchors. Not high-energy survey cosmology, not fiction scaffold.",
+      "include_in_public_headline": true
+    },
+    "D": {
+      "name": "Scaffold / high-speculation",
+      "audience": "research roadmap only \u2014 do not lead X with these",
+      "meaning": "Exploratory PREDs (cold-fusion scaffolds, superheavy islands, transporter stack, warp portal scalars). Registered for completeness and future lab design \u2014 NOT equivalent to Tier A survey kills. Must be labeled when shared.",
+      "include_in_public_headline": false
+    }
+  },
+  "summary": {
+    "hand_by_tier": {
+      "A": 16,
+      "B": 0,
+      "C": 10,
+      "D": 22
+    },
+    "atlas_kind_counts": {
+      "A/h0_sightline_host": 22,
+      "A/h0_sightline_sector": 5,
+      "A/h0_trgb_host": 22,
+      "A/h0_trgb_sector": 5,
+      "A/multi_tool_h0": 25,
+      "B/residual_hold": 472,
+      "B/scalar_lock": 885,
+      "B/sector_portfolio_hold": 9
+    },
+    "tier_A_list_count": 120,
+    "tier_B_note": "Tier B is the full residual_hold + scalar_lock + sector_portfolio surface in domain_prediction_atlas.json \u2014 not fully expanded here.",
+    "atlas_summary": {
+      "green_domains_covered": 472,
+      "unique_domains": 470,
+      "non_cosmology_domains": 458,
+      "prediction_count": 1445,
+      "by_kind": {
+        "multi_tool_h0": 25,
+        "h0_sightline_host": 22,
+        "h0_sightline_sector": 5,
+        "h0_trgb_host": 22,
+        "h0_trgb_sector": 5,
+        "residual_hold": 472,
+        "scalar_lock": 885,
+        "sector_portfolio_hold": 9
+      },
+      "by_sector": {
+        "cosmology": 117,
+        "social_econ": 82,
+        "materials_chem": 85,
+        "earth_climate": 60,
+        "bio_med": 194,
+        "cross_domain_other": 648,
+        "particle_nuclear": 113,
+        "engineering_compute": 76,
+        "astro_gw": 70
+      },
+      "h0_multi_tool_count": 25,
+      "h0_sightline_host_count": 22,
+      "h0_sightline_sector_count": 5,
+      "h0_trgb_host_count": 22,
+      "h0_trgb_sector_count": 5,
+      "sector_portfolio_count": 9,
+      "hand_prereg_yaml_count": 48,
+      "missing_benchmark_files": 0,
+      "green_ceiling_pct": 0.5
+    }
+  },
+  "headline_tier_A": [
+    {
+      "id": "PRED-001",
+      "source": "hand_prereg",
+      "name": "H0_bridge_scalar",
+      "domain": "Cosmology",
+      "fsot_predicted": 70.75,
+      "unit": "km/s/Mpc",
+      "discriminant": "strictly_between_planck_and_sh0es",
+      "future_survey": null,
+      "tier": "A"
+    },
+    {
+      "id": "PRED-002",
+      "source": "hand_prereg",
+      "name": "S8_effective_lensing",
+      "domain": "Cosmology",
+      "fsot_predicted": 0.805,
+      "unit": "S8",
+      "discriminant": "between_planck_and_des",
+      "future_survey": null,
+      "tier": "A"
+    },
+    {
+      "id": "PRED-004",
+      "source": "hand_prereg",
+      "name": "muon_g2_excess_direction",
+      "domain": "Particle_Physics",
+      "fsot_predicted": 2.49e-09,
+      "unit": "delta_a_mu",
+      "discriminant": "same_sign_as_fermilab",
+      "future_survey": null,
+      "tier": "A"
+    },
+    {
+      "id": "PRED-005",
+      "source": "hand_prereg",
+      "name": "lithium_problem_factor_bridge",
+      "domain": "Cosmology",
+      "fsot_predicted": 2.85,
+      "unit": "underproduction_factor",
+      "discriminant": "within_10pct_of_observed_gap",
+      "future_survey": null,
+      "tier": "A"
+    },
+    {
+      "id": "PRED-024",
+      "source": "hand_prereg",
+      "name": "h0_dual_anchor_bubble_bleed",
+      "domain": "Hubble_Dark_Sector_Crosswalk",
+      "fsot_predicted": 72.1,
+      "unit": "km/s/Mpc",
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "future_survey": null,
+      "tier": "A"
+    },
+    {
+      "id": "PRED-042",
+      "source": "hand_prereg",
+      "name": "euclid_dr1_s8_lensing",
+      "domain": "Cosmology",
+      "fsot_predicted": 0.805,
+      "unit": "S8",
+      "discriminant": "between_planck_and_des",
+      "future_survey": "Euclid DR1-Foundation Nov 2026; complete DR1 mid-2027",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-043",
+      "source": "hand_prereg",
+      "name": "euclid_desi_joint_wa",
+      "domain": "Cosmology",
+      "fsot_predicted": -1.018,
+      "unit": "w_a",
+      "discriminant": "desi_3sigma_exclusion",
+      "future_survey": "Euclid DR1 + DESI BAO joint DE 2026-2027",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-044",
+      "source": "hand_prereg",
+      "name": "rubin_lsst_early_s8_pathfinder",
+      "domain": "Cosmology",
+      "fsot_predicted": 0.805,
+      "unit": "S8",
+      "discriminant": "between_planck_and_des",
+      "future_survey": "Rubin LSST EDP2 late 2026 / early science pathfinders",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-046",
+      "source": "hand_prereg",
+      "name": "desi_bao_h0_bridge",
+      "domain": "Cosmology",
+      "fsot_predicted": 70.75,
+      "unit": "km/s/Mpc",
+      "discriminant": "strictly_between_planck_and_sh0es",
+      "future_survey": "DESI public BAO / cosmology catalogs ongoing",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-047",
+      "source": "hand_prereg",
+      "name": "cmb_next_neff",
+      "domain": "Cosmology",
+      "fsot_predicted": 3.046,
+      "unit": "N_eff",
+      "discriminant": "cmb_3sigma_exclusion",
+      "future_survey": "Simons Observatory / ACT / SPT-3G N_eff updates",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-048",
+      "source": "hand_prereg",
+      "name": "lvk_compact_binary_catalog_panel",
+      "domain": "Gravitational_Waves",
+      "fsot_predicted": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "discriminant": "within_green_gate_0_5pct",
+      "future_survey": "GWOSC GWTC + O4 remainder + O5",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-049",
+      "source": "hand_prereg",
+      "name": "pdg_higgs_mass_hold",
+      "domain": "Particle_Physics",
+      "fsot_predicted": 125.25,
+      "unit": "GeV",
+      "discriminant": "pdg_update_outside_0_5pct",
+      "future_survey": "annual PDG listings",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-050",
+      "source": "hand_prereg",
+      "name": "muon_g2_excess_sign_hold",
+      "domain": "Particle_Physics",
+      "fsot_predicted": 2.49e-09,
+      "unit": "delta_a_mu",
+      "discriminant": "same_sign_as_fermilab",
+      "future_survey": "Fermilab final + lattice HVP theory updates",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-051",
+      "source": "hand_prereg",
+      "name": "jwst_local_h0_bridge",
+      "domain": "Cosmology",
+      "fsot_predicted": 70.75,
+      "unit": "km/s/Mpc",
+      "discriminant": "strictly_between_planck_and_sh0es",
+      "future_survey": "JWST/HST local distance ladder papers 2026-2027",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-052",
+      "source": "hand_prereg",
+      "name": "chime_frb_dm_excess_hold",
+      "domain": "Cosmology",
+      "fsot_predicted": 200.0,
+      "unit": "pc_cm3_excess",
+      "discriminant": "within_0_5pct_of_frozen_central",
+      "future_survey": "CHIME/FRB catalog refreshes",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-053",
+      "source": "hand_prereg",
+      "name": "jwst_highz_abundance_panel_hold",
+      "domain": "Astrophysics",
+      "fsot_predicted": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "discriminant": "within_green_gate_0_5pct",
+      "future_survey": "JADES / COSMOS-3D / NEXUS public catalogs",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-H0-planck_cmb_local",
+      "source": "h0_multi_tool",
+      "name": "planck_cmb_local",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 67.383958,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "early_universe_cmb"
+    },
+    {
+      "id": "PRED-H0-tdcosmo_conservative",
+      "source": "h0_multi_tool",
+      "name": "tdcosmo_conservative",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 67.436763,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "strong_lens_time_delay"
+    },
+    {
+      "id": "PRED-H0-planck_plus_bao_combo",
+      "source": "h0_multi_tool",
+      "name": "planck_plus_bao_combo",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 67.647983,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "early_universe_cmb"
+    },
+    {
+      "id": "PRED-H0-sn_h0_no_local_cal",
+      "source": "h0_multi_tool",
+      "name": "sn_h0_no_local_cal",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 67.806398,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "snia_early_calibrated"
+    },
+    {
+      "id": "PRED-H0-act_dr6_cmb",
+      "source": "h0_multi_tool",
+      "name": "act_dr6_cmb",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 67.859203,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "early_universe_cmb"
+    },
+    {
+      "id": "PRED-H0-spt3g_cmb",
+      "source": "h0_multi_tool",
+      "name": "spt3g_cmb",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 68.281642,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "early_universe_cmb"
+    },
+    {
+      "id": "PRED-H0-global_cmb_background",
+      "source": "h0_multi_tool",
+      "name": "global_cmb_background",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 68.440057,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "fsot_global"
+    },
+    {
+      "id": "PRED-H0-desi_bao_rs_anchored",
+      "source": "h0_multi_tool",
+      "name": "desi_bao_rs_anchored",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 68.524545,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "bao_intermediate"
+    },
+    {
+      "id": "PRED-H0-sdss_bao_class",
+      "source": "h0_multi_tool",
+      "name": "sdss_bao_class",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 68.598472,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "bao_intermediate"
+    },
+    {
+      "id": "PRED-H0-wmap9_cmb",
+      "source": "h0_multi_tool",
+      "name": "wmap9_cmb",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 69.9714,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "early_universe_cmb"
+    },
+    {
+      "id": "PRED-H0-gw_standard_siren",
+      "source": "h0_multi_tool",
+      "name": "gw_standard_siren",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 70.024205,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "multi_messenger_siren"
+    },
+    {
+      "id": "PRED-H0-trgb_ground_class",
+      "source": "h0_multi_tool",
+      "name": "trgb_ground_class",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 70.256546,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "intermediate_ladder"
+    },
+    {
+      "id": "PRED-H0-freedman_jwst",
+      "source": "h0_multi_tool",
+      "name": "freedman_jwst",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 70.393839,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "intermediate_ladder"
+    },
+    {
+      "id": "PRED-H0-carnegie_h0",
+      "source": "h0_multi_tool",
+      "name": "carnegie_h0",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 70.594498,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "intermediate_ladder"
+    },
+    {
+      "id": "PRED-H0-h0_bridge_scalar",
+      "source": "h0_multi_tool",
+      "name": "h0_bridge_scalar",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 70.763474,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "fsot_bridge"
+    },
+    {
+      "id": "PRED-H0-jagb_miras_class",
+      "source": "h0_multi_tool",
+      "name": "jagb_miras_class",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 70.921888,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "intermediate_ladder"
+    },
+    {
+      "id": "PRED-H0-fsot_document_local",
+      "source": "h0_multi_tool",
+      "name": "fsot_document_local",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 71.766767,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "fsot_local_bubble"
+    },
+    {
+      "id": "PRED-H0-jwst_cepheid_riess",
+      "source": "h0_multi_tool",
+      "name": "jwst_cepheid_riess",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 73.456525,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "local_ladder_cepheid"
+    },
+    {
+      "id": "PRED-H0-sh0es_hst_cepheid",
+      "source": "h0_multi_tool",
+      "name": "sh0es_hst_cepheid",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 73.773354,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "local_ladder_cepheid"
+    },
+    {
+      "id": "PRED-H0-sh0es_jwst",
+      "source": "h0_multi_tool",
+      "name": "sh0es_jwst",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 73.826159,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "local_ladder_cepheid"
+    },
+    {
+      "id": "PRED-H0-h0licow_tdcosmo",
+      "source": "h0_multi_tool",
+      "name": "h0licow_tdcosmo",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 73.984574,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "strong_lens_time_delay"
+    },
+    {
+      "id": "PRED-H0-surface_brightness_fluctuations",
+      "source": "h0_multi_tool",
+      "name": "surface_brightness_fluctuations",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 74.037379,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "local_ladder_sbf"
+    },
+    {
+      "id": "PRED-H0-pantheon_plus_shoes_cal",
+      "source": "h0_multi_tool",
+      "name": "pantheon_plus_shoes_cal",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 74.090184,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "local_ladder_snia"
+    },
+    {
+      "id": "PRED-H0-megamaser_cosmology",
+      "source": "h0_multi_tool",
+      "name": "megamaser_cosmology",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 74.512623,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "geometric_maser"
+    },
+    {
+      "id": "PRED-H0-tully_fisher_class",
+      "source": "h0_multi_tool",
+      "name": "tully_fisher_class",
+      "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+      "fsot_predicted": 75.146282,
+      "unit": "km/s/Mpc",
+      "tier": "A",
+      "tool_class": "local_ladder_tf"
+    }
+  ],
+  "tiers": {
+    "A": [
+      {
+        "id": "PRED-001",
+        "source": "hand_prereg",
+        "name": "H0_bridge_scalar",
+        "domain": "Cosmology",
+        "fsot_predicted": 70.75,
+        "unit": "km/s/Mpc",
+        "discriminant": "strictly_between_planck_and_sh0es",
+        "future_survey": null,
+        "tier": "A"
+      },
+      {
+        "id": "PRED-002",
+        "source": "hand_prereg",
+        "name": "S8_effective_lensing",
+        "domain": "Cosmology",
+        "fsot_predicted": 0.805,
+        "unit": "S8",
+        "discriminant": "between_planck_and_des",
+        "future_survey": null,
+        "tier": "A"
+      },
+      {
+        "id": "PRED-004",
+        "source": "hand_prereg",
+        "name": "muon_g2_excess_direction",
+        "domain": "Particle_Physics",
+        "fsot_predicted": 2.49e-09,
+        "unit": "delta_a_mu",
+        "discriminant": "same_sign_as_fermilab",
+        "future_survey": null,
+        "tier": "A"
+      },
+      {
+        "id": "PRED-005",
+        "source": "hand_prereg",
+        "name": "lithium_problem_factor_bridge",
+        "domain": "Cosmology",
+        "fsot_predicted": 2.85,
+        "unit": "underproduction_factor",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "A"
+      },
+      {
+        "id": "PRED-024",
+        "source": "hand_prereg",
+        "name": "h0_dual_anchor_bubble_bleed",
+        "domain": "Hubble_Dark_Sector_Crosswalk",
+        "fsot_predicted": 72.1,
+        "unit": "km/s/Mpc",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "A"
+      },
+      {
+        "id": "PRED-042",
+        "source": "hand_prereg",
+        "name": "euclid_dr1_s8_lensing",
+        "domain": "Cosmology",
+        "fsot_predicted": 0.805,
+        "unit": "S8",
+        "discriminant": "between_planck_and_des",
+        "future_survey": "Euclid DR1-Foundation Nov 2026; complete DR1 mid-2027",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-043",
+        "source": "hand_prereg",
+        "name": "euclid_desi_joint_wa",
+        "domain": "Cosmology",
+        "fsot_predicted": -1.018,
+        "unit": "w_a",
+        "discriminant": "desi_3sigma_exclusion",
+        "future_survey": "Euclid DR1 + DESI BAO joint DE 2026-2027",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-044",
+        "source": "hand_prereg",
+        "name": "rubin_lsst_early_s8_pathfinder",
+        "domain": "Cosmology",
+        "fsot_predicted": 0.805,
+        "unit": "S8",
+        "discriminant": "between_planck_and_des",
+        "future_survey": "Rubin LSST EDP2 late 2026 / early science pathfinders",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-046",
+        "source": "hand_prereg",
+        "name": "desi_bao_h0_bridge",
+        "domain": "Cosmology",
+        "fsot_predicted": 70.75,
+        "unit": "km/s/Mpc",
+        "discriminant": "strictly_between_planck_and_sh0es",
+        "future_survey": "DESI public BAO / cosmology catalogs ongoing",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-047",
+        "source": "hand_prereg",
+        "name": "cmb_next_neff",
+        "domain": "Cosmology",
+        "fsot_predicted": 3.046,
+        "unit": "N_eff",
+        "discriminant": "cmb_3sigma_exclusion",
+        "future_survey": "Simons Observatory / ACT / SPT-3G N_eff updates",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-048",
+        "source": "hand_prereg",
+        "name": "lvk_compact_binary_catalog_panel",
+        "domain": "Gravitational_Waves",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "GWOSC GWTC + O4 remainder + O5",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-049",
+        "source": "hand_prereg",
+        "name": "pdg_higgs_mass_hold",
+        "domain": "Particle_Physics",
+        "fsot_predicted": 125.25,
+        "unit": "GeV",
+        "discriminant": "pdg_update_outside_0_5pct",
+        "future_survey": "annual PDG listings",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-050",
+        "source": "hand_prereg",
+        "name": "muon_g2_excess_sign_hold",
+        "domain": "Particle_Physics",
+        "fsot_predicted": 2.49e-09,
+        "unit": "delta_a_mu",
+        "discriminant": "same_sign_as_fermilab",
+        "future_survey": "Fermilab final + lattice HVP theory updates",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-051",
+        "source": "hand_prereg",
+        "name": "jwst_local_h0_bridge",
+        "domain": "Cosmology",
+        "fsot_predicted": 70.75,
+        "unit": "km/s/Mpc",
+        "discriminant": "strictly_between_planck_and_sh0es",
+        "future_survey": "JWST/HST local distance ladder papers 2026-2027",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-052",
+        "source": "hand_prereg",
+        "name": "chime_frb_dm_excess_hold",
+        "domain": "Cosmology",
+        "fsot_predicted": 200.0,
+        "unit": "pc_cm3_excess",
+        "discriminant": "within_0_5pct_of_frozen_central",
+        "future_survey": "CHIME/FRB catalog refreshes",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-053",
+        "source": "hand_prereg",
+        "name": "jwst_highz_abundance_panel_hold",
+        "domain": "Astrophysics",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "JADES / COSMOS-3D / NEXUS public catalogs",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-planck_cmb_local",
+        "source": "h0_multi_tool",
+        "name": "planck_cmb_local",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 67.383958,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "early_universe_cmb"
+      },
+      {
+        "id": "PRED-H0-tdcosmo_conservative",
+        "source": "h0_multi_tool",
+        "name": "tdcosmo_conservative",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 67.436763,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "strong_lens_time_delay"
+      },
+      {
+        "id": "PRED-H0-planck_plus_bao_combo",
+        "source": "h0_multi_tool",
+        "name": "planck_plus_bao_combo",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 67.647983,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "early_universe_cmb"
+      },
+      {
+        "id": "PRED-H0-sn_h0_no_local_cal",
+        "source": "h0_multi_tool",
+        "name": "sn_h0_no_local_cal",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 67.806398,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "snia_early_calibrated"
+      },
+      {
+        "id": "PRED-H0-act_dr6_cmb",
+        "source": "h0_multi_tool",
+        "name": "act_dr6_cmb",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 67.859203,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "early_universe_cmb"
+      },
+      {
+        "id": "PRED-H0-spt3g_cmb",
+        "source": "h0_multi_tool",
+        "name": "spt3g_cmb",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 68.281642,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "early_universe_cmb"
+      },
+      {
+        "id": "PRED-H0-global_cmb_background",
+        "source": "h0_multi_tool",
+        "name": "global_cmb_background",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 68.440057,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "fsot_global"
+      },
+      {
+        "id": "PRED-H0-desi_bao_rs_anchored",
+        "source": "h0_multi_tool",
+        "name": "desi_bao_rs_anchored",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 68.524545,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "bao_intermediate"
+      },
+      {
+        "id": "PRED-H0-sdss_bao_class",
+        "source": "h0_multi_tool",
+        "name": "sdss_bao_class",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 68.598472,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "bao_intermediate"
+      },
+      {
+        "id": "PRED-H0-wmap9_cmb",
+        "source": "h0_multi_tool",
+        "name": "wmap9_cmb",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 69.9714,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "early_universe_cmb"
+      },
+      {
+        "id": "PRED-H0-gw_standard_siren",
+        "source": "h0_multi_tool",
+        "name": "gw_standard_siren",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 70.024205,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "multi_messenger_siren"
+      },
+      {
+        "id": "PRED-H0-trgb_ground_class",
+        "source": "h0_multi_tool",
+        "name": "trgb_ground_class",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 70.256546,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "intermediate_ladder"
+      },
+      {
+        "id": "PRED-H0-freedman_jwst",
+        "source": "h0_multi_tool",
+        "name": "freedman_jwst",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 70.393839,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "intermediate_ladder"
+      },
+      {
+        "id": "PRED-H0-carnegie_h0",
+        "source": "h0_multi_tool",
+        "name": "carnegie_h0",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 70.594498,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "intermediate_ladder"
+      },
+      {
+        "id": "PRED-H0-h0_bridge_scalar",
+        "source": "h0_multi_tool",
+        "name": "h0_bridge_scalar",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 70.763474,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "fsot_bridge"
+      },
+      {
+        "id": "PRED-H0-jagb_miras_class",
+        "source": "h0_multi_tool",
+        "name": "jagb_miras_class",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 70.921888,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "intermediate_ladder"
+      },
+      {
+        "id": "PRED-H0-fsot_document_local",
+        "source": "h0_multi_tool",
+        "name": "fsot_document_local",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 71.766767,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "fsot_local_bubble"
+      },
+      {
+        "id": "PRED-H0-jwst_cepheid_riess",
+        "source": "h0_multi_tool",
+        "name": "jwst_cepheid_riess",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 73.456525,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "local_ladder_cepheid"
+      },
+      {
+        "id": "PRED-H0-sh0es_hst_cepheid",
+        "source": "h0_multi_tool",
+        "name": "sh0es_hst_cepheid",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 73.773354,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "local_ladder_cepheid"
+      },
+      {
+        "id": "PRED-H0-sh0es_jwst",
+        "source": "h0_multi_tool",
+        "name": "sh0es_jwst",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 73.826159,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "local_ladder_cepheid"
+      },
+      {
+        "id": "PRED-H0-h0licow_tdcosmo",
+        "source": "h0_multi_tool",
+        "name": "h0licow_tdcosmo",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 73.984574,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "strong_lens_time_delay"
+      },
+      {
+        "id": "PRED-H0-surface_brightness_fluctuations",
+        "source": "h0_multi_tool",
+        "name": "surface_brightness_fluctuations",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 74.037379,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "local_ladder_sbf"
+      },
+      {
+        "id": "PRED-H0-pantheon_plus_shoes_cal",
+        "source": "h0_multi_tool",
+        "name": "pantheon_plus_shoes_cal",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 74.090184,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "local_ladder_snia"
+      },
+      {
+        "id": "PRED-H0-megamaser_cosmology",
+        "source": "h0_multi_tool",
+        "name": "megamaser_cosmology",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 74.512623,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "geometric_maser"
+      },
+      {
+        "id": "PRED-H0-tully_fisher_class",
+        "source": "h0_multi_tool",
+        "name": "tully_fisher_class",
+        "domain": "Hubble_Multi_Tool_Bubble_Bleed",
+        "fsot_predicted": 75.146282,
+        "unit": "km/s/Mpc",
+        "tier": "A",
+        "tool_class": "local_ladder_tf"
+      },
+      {
+        "id": "PRED-H0-HOST-LMC",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "LMC",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 70.214931,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC4258",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC4258",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 70.388608,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC3021",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC3021",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.470375,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC3370",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC3370",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.470375,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC3627",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC3627",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.470375,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC3982",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC3982",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.470375,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-UGC9391",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "UGC9391",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.470375,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-M101",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "M101",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.497059,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC4038",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC4038",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.497059,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC4254",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC4254",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.497059,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC4321",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC4321",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.497059,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC4536",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC4536",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.497059,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC4639",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC4639",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.497059,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC5584",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC5584",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.497059,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC5643",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC5643",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.497059,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC5917",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC5917",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.497059,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC7250",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC7250",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.523742,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC1559",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC1559",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.603794,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC2442",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC2442",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 73.603794,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC1309",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC1309",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 74.164154,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC1365",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC1365",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 74.164154,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-HOST-NGC1448",
+        "source": "atlas",
+        "kind": "h0_sightline_host",
+        "name": "NGC1448",
+        "domain": "Hubble_Sightline_Host_Bubble_Bleed",
+        "fsot_predicted": 74.164154,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-SECTOR-sector_0_planck_depleted",
+        "source": "atlas",
+        "kind": "h0_sightline_sector",
+        "name": "sector_0_planck_depleted",
+        "domain": "Hubble_Sightline_Sky_Sector",
+        "fsot_predicted": 74.164154,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-SECTOR-sector_1_local_low",
+        "source": "atlas",
+        "kind": "h0_sightline_sector",
+        "name": "sector_1_local_low",
+        "domain": "Hubble_Sightline_Sky_Sector",
+        "fsot_predicted": 72.474173,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-SECTOR-sector_2_carnegie",
+        "source": "atlas",
+        "kind": "h0_sightline_sector",
+        "name": "sector_2_carnegie",
+        "domain": "Hubble_Sightline_Sky_Sector",
+        "fsot_predicted": 73.470375,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-SECTOR-sector_3_fsot_document",
+        "source": "atlas",
+        "kind": "h0_sightline_sector",
+        "name": "sector_3_fsot_document",
+        "domain": "Hubble_Sightline_Sky_Sector",
+        "fsot_predicted": 73.186214,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-SECTOR-sector_5_sh0es_inflated",
+        "source": "atlas",
+        "kind": "h0_sightline_sector",
+        "name": "sector_5_sh0es_inflated",
+        "domain": "Hubble_Sightline_Sky_Sector",
+        "fsot_predicted": 73.523742,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC3021",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC3021",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.107586,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC3370",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC3370",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.107586,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC3972",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC3972",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.107586,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC3982",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC3982",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.107586,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-UGC9391",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "UGC9391",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.107586,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-M101",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "M101",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.129055,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC4038",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC4038",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.129055,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC4424",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC4424",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.129055,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC4526",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC4526",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.129055,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC4536",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC4536",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.129055,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC4639",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC4639",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.129055,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC5584",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC5584",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.129055,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC5643",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC5643",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.129055,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC5917",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC5917",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.129055,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC7250",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC7250",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.150524,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC2442",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC2442",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.214931,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC4258",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC4258",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.430852,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC1015",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC1015",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.66578,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC1309",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC1309",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.66578,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC1316",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC1316",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.66578,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC1365",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC1365",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.66578,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-NGC1448",
+        "source": "atlas",
+        "kind": "h0_trgb_host",
+        "name": "NGC1448",
+        "domain": "Hubble_CCHP_TRGB_Sightline",
+        "fsot_predicted": 70.66578,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-SECTOR-sector_0_planck_depleted",
+        "source": "atlas",
+        "kind": "h0_trgb_sector",
+        "name": "sector_0_planck_depleted",
+        "domain": "Hubble_CCHP_TRGB_Sky_Sector",
+        "fsot_predicted": 70.66578,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-SECTOR-sector_1_local_low",
+        "source": "atlas",
+        "kind": "h0_trgb_sector",
+        "name": "sector_1_local_low",
+        "domain": "Hubble_CCHP_TRGB_Sky_Sector",
+        "fsot_predicted": 70.214931,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-SECTOR-sector_2_carnegie",
+        "source": "atlas",
+        "kind": "h0_trgb_sector",
+        "name": "sector_2_carnegie",
+        "domain": "Hubble_CCHP_TRGB_Sky_Sector",
+        "fsot_predicted": 70.107586,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-SECTOR-sector_3_fsot_document",
+        "source": "atlas",
+        "kind": "h0_trgb_sector",
+        "name": "sector_3_fsot_document",
+        "domain": "Hubble_CCHP_TRGB_Sky_Sector",
+        "fsot_predicted": 70.159235,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-H0-TRGB-SECTOR-sector_5_sh0es_inflated",
+        "source": "atlas",
+        "kind": "h0_trgb_sector",
+        "name": "sector_5_sh0es_inflated",
+        "domain": "Hubble_CCHP_TRGB_Sky_Sector",
+        "fsot_predicted": 70.150524,
+        "unit": "km/s/Mpc",
+        "tier": "A"
+      }
+    ],
+    "C": [
+      {
+        "id": "PRED-003",
+        "source": "hand_prereg",
+        "name": "adversarial_codon_hole_rate",
+        "domain": "Code_Genome_Structure",
+        "fsot_predicted": 0.85,
+        "unit": "fraction",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "C"
+      },
+      {
+        "id": "PRED-006",
+        "source": "hand_prereg",
+        "name": "acoustic_impedance_median_MRayl",
+        "domain": "Acoustic_Resonance_Materials",
+        "fsot_predicted": 0.41,
+        "unit": "MRayl",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "C"
+      },
+      {
+        "id": "PRED-007",
+        "source": "hand_prereg",
+        "name": "ionospheric_beta_quiet_classifier",
+        "domain": "Ionospheric_Chemistry_Coupling",
+        "fsot_predicted": 1.0,
+        "unit": "stability_score",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "C"
+      },
+      {
+        "id": "PRED-008",
+        "source": "hand_prereg",
+        "name": "phi_glass_Tg_morphogen_K",
+        "domain": "Phi_Morphogenetic_Scaling",
+        "fsot_predicted": 199.0,
+        "unit": "K",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "C"
+      },
+      {
+        "id": "PRED-025",
+        "source": "hand_prereg",
+        "name": "fpc_cosmological_tau_damping",
+        "domain": "FPC_Fluidlink_Timing_Deep_Panel",
+        "fsot_predicted": 0.5,
+        "unit": "dimensionless_tau",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "C"
+      },
+      {
+        "id": "PRED-034",
+        "source": "hand_prereg",
+        "name": "fsot_designed_fuel_thermochemistry_panel",
+        "domain": "Fuel_Lab_Live_Panel",
+        "fsot_predicted": 0.039349,
+        "unit": "pooled_median_error_pct",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "C"
+      },
+      {
+        "id": "PRED-035",
+        "source": "hand_prereg",
+        "name": "machine_molecule_species_catalog_precision",
+        "domain": "Machine_And_Molecule_Live_Panel",
+        "fsot_predicted": 0.01341,
+        "unit": "pooled_median_error_pct",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "C"
+      },
+      {
+        "id": "PRED-037",
+        "source": "hand_prereg",
+        "name": "blackhole_whitehole_cycle_constant_drift",
+        "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
+        "fsot_predicted": 0.026472,
+        "unit": "pooled_median_error_pct",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "C"
+      },
+      {
+        "id": "PRED-054",
+        "source": "hand_prereg",
+        "name": "climate_ncei_holdout_ceiling",
+        "domain": "Climate_Science",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "NOAA NCEI continuous open station data",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-055",
+        "source": "hand_prereg",
+        "name": "zebrafish_atlas_residual_hold",
+        "domain": "Biology",
+        "fsot_predicted": 0.358,
+        "unit": "pooled_median_error_pct_watch",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "open zebrafish developmental atlas refreshes",
+        "tier": "C"
+      }
+    ],
+    "D": [
+      {
+        "id": "PRED-009",
+        "source": "hand_prereg",
+        "name": "pd_deuterium_lattice_excess_heat",
+        "domain": "Cold_Fusion_Candidate_Prereg_Scaffold",
+        "fsot_predicted": 1.85,
+        "unit": "enhancement_factor",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-010",
+        "source": "hand_prereg",
+        "name": "lattice_boundary_cold_fusion_channel",
+        "domain": "Cold_Fusion_Candidate_Prereg_Scaffold",
+        "fsot_predicted": 1.62,
+        "unit": "enhancement_factor",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-011",
+        "source": "hand_prereg",
+        "name": "muon_catalyzed_dd_rate_bridge",
+        "domain": "Cold_Fusion_Candidate_Prereg_Scaffold",
+        "fsot_predicted": "1.08e8",
+        "unit": "fusions/mol/s",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-012",
+        "source": "hand_prereg",
+        "name": "unbinilium_Z120_N184_half_life",
+        "domain": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+        "fsot_predicted": "2.5e6",
+        "unit": "half_life_s",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-013",
+        "source": "hand_prereg",
+        "name": "unbihexium_Z126_island_stability",
+        "domain": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+        "fsot_predicted": "1.2e9",
+        "unit": "half_life_s",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-014",
+        "source": "hand_prereg",
+        "name": "natural_formation_Z132_fusion_decay",
+        "domain": "Natural_Formation_Element_Simulation",
+        "fsot_predicted": 132,
+        "unit": "atomic_number",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-015",
+        "source": "hand_prereg",
+        "name": "pd_lattice_cold_fusion_metamaterial_heat_transfer",
+        "domain": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+        "fsot_predicted": 1850,
+        "unit": "W/m2/K",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-016",
+        "source": "hand_prereg",
+        "name": "acoustic_bleed_phononic_negative_index",
+        "domain": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+        "fsot_predicted": -1.35,
+        "unit": "refractive_index",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-017",
+        "source": "hand_prereg",
+        "name": "Z119_Ti_Bk_heavy_ion_lab_synthesis",
+        "domain": "Heavy_Ion_Lab_Synthesis_Panel",
+        "fsot_predicted": 0.42,
+        "unit": "viability_score",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-018",
+        "source": "hand_prereg",
+        "name": "pd_d_to_Z120_fusion_decay_cascade",
+        "domain": "Fusion_Decay_Chain_Prereg_Scaffold",
+        "fsot_predicted": 120,
+        "unit": "atomic_number",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-019",
+        "source": "hand_prereg",
+        "name": "muon_dd_to_Z126_fusion_decay_cascade",
+        "domain": "Fusion_Decay_Chain_Prereg_Scaffold",
+        "fsot_predicted": 126,
+        "unit": "atomic_number",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-020",
+        "source": "hand_prereg",
+        "name": "Z126_N184_unbihexium_beam_synthesis",
+        "domain": "Z120_Z126_Beam_Synthesis_Panel",
+        "fsot_predicted": 0.48,
+        "unit": "viability_score",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-021",
+        "source": "hand_prereg",
+        "name": "Z132_N184_superheavy_shell_peak",
+        "domain": "Distant_Island_Z128_Z132_Deep_Panel",
+        "fsot_predicted": "3.1e7",
+        "unit": "half_life_s",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-022",
+        "source": "hand_prereg",
+        "name": "Z164_N228_distant_island",
+        "domain": "Z164_Distant_Island_Prereg_Scaffold",
+        "fsot_predicted": "1.5e3",
+        "unit": "half_life_s",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-023",
+        "source": "hand_prereg",
+        "name": "periodic_extension_decay_topology_Z164",
+        "domain": "Periodic_Extension_Decay_Topology_Scaffold",
+        "fsot_predicted": 164,
+        "unit": "atomic_number",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-032",
+        "source": "hand_prereg",
+        "name": "bh_wh_micro_portal_doorway",
+        "domain": "Warp_BH_WH_Portal_Panel",
+        "fsot_predicted": 0.009663204175,
+        "unit": "dimensionless_portal",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-033",
+        "source": "hand_prereg",
+        "name": "quantum_entanglement_gate_pair",
+        "domain": "Warp_BH_WH_Portal_Panel",
+        "fsot_predicted": 0.04803163401,
+        "unit": "dimensionless_entanglement",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-036",
+        "source": "hand_prereg",
+        "name": "fsot_transporter_technology_stack",
+        "domain": "Star_Trek_Transporter_Live_Panel",
+        "fsot_predicted": 0.05256,
+        "unit": "pooled_median_error_pct",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-039",
+        "source": "hand_prereg",
+        "name": "transporter_pattern_buffer_beam_grid",
+        "domain": "Star_Trek_Transporter_Live_Panel",
+        "fsot_predicted": 0.031159,
+        "unit": "pooled_median_error_pct",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-040",
+        "source": "hand_prereg",
+        "name": "transporter_t3_acoustic_valve_hardware",
+        "domain": "Star_Trek_Transporter_Live_Panel",
+        "fsot_predicted": 0.031159,
+        "unit": "pooled_median_error_pct",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-041",
+        "source": "hand_prereg",
+        "name": "transporter_pad_b_receiver_hardware",
+        "domain": "Star_Trek_Transporter_Live_Panel",
+        "fsot_predicted": 0.031159,
+        "unit": "pooled_median_error_pct",
+        "discriminant": "within_10pct_of_observed_gap",
+        "future_survey": null,
+        "tier": "D"
+      },
+      {
+        "id": "PRED-038",
+        "source": "hand_prereg",
+        "name": "transporter_portal_traverse_scalar",
+        "domain": "Star_Trek_Transporter_Live_Panel",
+        "fsot_predicted": 0.000464139486,
+        "unit": "dimensionless_traverse",
+        "discriminant": "fsot_exceeds_sota_by_0.4",
+        "future_survey": null,
+        "tier": "D"
+      }
+    ],
+    "B": {
+      "description": "Residual-hold and scalar-lock surface across green domains. Shows same seeds stay \u22640.5% \u2014 useful, but less distinctive per item than Tier A survey locks.",
+      "atlas_path": "predictions/domain_prediction_atlas.json",
+      "counts": {
+        "multi_tool_h0": 25,
+        "h0_sightline_host": 22,
+        "h0_sightline_sector": 5,
+        "h0_trgb_host": 22,
+        "h0_trgb_sector": 5,
+        "residual_hold": 472,
+        "scalar_lock": 885,
+        "sector_portfolio_hold": 9
+      }
+    }
+  },
+  "public_communication_rule": "Lead with Tier A. Support with Tier B breadth and Tier C labs. Never lead X posts with Tier D without explicit 'scaffold/exploratory' label."
+}

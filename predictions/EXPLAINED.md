@@ -33,6 +33,23 @@ Machine files (YAML/JSON) are the ledger. **This document is the story.**
 
 ---
 
+## 2b. Prediction tiers (read this before the big numbers)
+
+The list is **intentionally large**. That only stays honest if tiers stay separate:
+
+| Tier | Name | Lead on X? | What it is |
+|------|------|:----------:|------------|
+| **A** | Contested / public survey | **Yes** | H₀ multi-tool + hosts + TRGB, S₈, wₐ, N_eff, m_H, Euclid/DESI/Rubin locks — kill criteria vs literature |
+| **B** | Empirical atlas | Breadth only | ~472 residual-holds + ~885 scalar locks — “same seeds stay ≤0.5%” |
+| **C** | Grounded lab / engineering | Support | Fuel lab, materials, climate, code-genome, zebrafish… |
+| **D** | Scaffold / high-speculation | **No** (label if mentioned) | Cold-fusion scaffolds, superheavy islands, transporter stack, warp portal scalars |
+
+**Public rule:** Lead with **Tier A**. Cite **Tier B** as multi-domain strength, not as 1400 separate cosmology kills. Never lead with **Tier D** without saying *exploratory scaffold*.
+
+Full split: [`reports/PREDICTION_TIERS.md`](reports/PREDICTION_TIERS.md) · X blurb: [`public/TIERS_FOR_X.md`](public/TIERS_FOR_X.md)
+
+---
+
 ## 3. The heart of the contested sky: black hole ↔ white hole bubble bleed
 
 ### The problem everyone sees

@@ -8,6 +8,17 @@ Short posts and a longer thread you can paste. Tone: clear, bold, honest. Link t
 
 ---
 
+## Tiers first (pin this mindset)
+
+See also [`TIERS_FOR_X.md`](TIERS_FOR_X.md).
+
+- **A** = survey kills (lead)  
+- **B** = multi-domain green breadth  
+- **C** = lab/engineering  
+- **D** = scaffold (label; don’t lead)
+
+---
+
 ## Single posts (pick one)
 
 ### A — Hook (Hubble)
