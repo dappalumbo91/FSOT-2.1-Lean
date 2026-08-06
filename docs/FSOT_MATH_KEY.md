@@ -262,10 +262,9 @@ Honesty ledger: `docs/VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`
 | Quantity | How to read | Typical class (refresh live) |
 |----------|-------------|------------------------------|
 | Publication atlas domains | `data/publication/domain_atlas.csv` row count | ~403 |
-| Margin-audit green benchmarks | `green_gate_pass_count` / `benchmark_file_count` | see CURRENT_STATUS (e.g. 432/432) |
+| Margin-audit green benchmarks | `green_gate_pass_count` / `benchmark_file_count` | see CURRENT_STATUS (live **472/472**) |
 | Scalar-record envelope | status snapshot | see CURRENT_STATUS |
-| Scientific catalog obligations | `verification/obligations/scientific_catalog_spine.json` | ~2025 |
-| Full formal spine obligations | `verification/obligations/full_formal_spine.json` | ~2430 |
+| Scientific catalog obligations | `verification/obligations/scientific_catalog_spine.json` | live **2222** (see CURRENT_STATUS) || Full formal spine obligations | `verification/obligations/full_formal_spine.json` | ~2430 |
 | Transcendental inventory | `python_decimal_verified` on 68 lemmas | 68/68 |
 | MPCORB pooled residual | `data/mpcorb_fsot_benchmark.json` | ~0.023% (A_strong, D_eff=21) |
 

@@ -1,7 +1,7 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-08-05T23:59:58.387335+00:00`  
-**Edition stamp:** 2026-08-05  
+**Generated:** `2026-08-06T12:25:34.510716+00:00`  
+**Edition stamp:** 2026-08-06  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
 > Authoritative live numbers for expansion. Prefer this file over hand-edited counts in README when they disagree.

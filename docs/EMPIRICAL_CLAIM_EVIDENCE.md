@@ -24,12 +24,13 @@ Insults without running these are **not a scientific rebuttal**.
 
 ---
 
-## Snapshot (author machine / tip after Mathlib + multiprover re-pass)
+## Snapshot (prefer live `docs/CURRENT_STATUS.md`)
 
-Regenerate anytime; prefer live JSON over this table if they disagree.
+Regenerate: `python scripts/build_repo_status_snapshot.py`.  
+If this table disagrees with CURRENT_STATUS, **CURRENT_STATUS wins**.
 
-| Gate | Snapshot | Artifact |
-|------|----------|----------|
+| Gate | Live target | Artifact |
+|------|-------------|----------|
 | Authority pin | **D1D38A** match | `vendor/fsot_compute.py` + pin JSON |
 | Residual green (≤0.5% pooled) | **472 / 472** fail **0** | `data/benchmark_margin_audit.json` |
 | Parameter honesty | **ZERO_FREE** | `data/parameter_count_audit.json` |
@@ -40,6 +41,8 @@ Regenerate anytime; prefer live JSON over this table if they disagree.
 | Multiprover | **`overall_ok: true`** · 7-way bare metal · 8-way hardware | `data/cross_proof_verification_report.json` |
 | ToE labels (frozen checklist) | Label A **true** · Label B **true** | `data/toe_gap_closure_report.json` |
 | Clean-clone Mathlib path | **PASS** (0 field mismatches) | `data/fresh_clone_corpus_mathlib_repro_report.md` |
+
+**Stale numbers to ignore if you still see them in old prose:** 57% Mathlib, 432/432 or 433/433 green, ~1912 obligations, “priors still mostly L1.”
 
 ---
 

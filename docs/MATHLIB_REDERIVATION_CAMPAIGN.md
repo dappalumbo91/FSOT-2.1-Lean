@@ -74,7 +74,14 @@ python scripts/run_mathlib_rederivation_campaign.py --wave W2_theorems
 
 ## Honest boundary
 
-Priors modules remain largely **L1 certificate** depth by design (multiprover
-export pins). Engine waves are the Mathlib analytic spine. The flag
-`full_mathlib_rederivation_of_all_lemmas` becomes true only when the campaign
-verdict reaches full-corpus closure criteria (see report).
+**Closed (this tip):** full Formal corpus is Mathlib-class depth **5182/5182 (100%)**
+with **L1_certificate = 0** — priors were upgraded formula-faithfully to L0/L2/L3
+shapes (`exact` chains, `decide`, term-mode certificates), not left as pure
+`norm_num` pins. Engine core remains the analytic spine (Bounds/Theorems).
+
+**Still not claimed:** every lemma is a deep Mathlib *research* proof of classical
+analysis; many are constructive certificates of seed-locked literals. Depth tiers
+are honest (L0/L2/L3), not “we rewrote continuum physics.”
+
+The flag `full_mathlib_rederivation_of_all_lemmas` is **true** when campaign
+verdict is `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED` (see report).

@@ -151,7 +151,7 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan), **zero free parameters** — evaluated against measured reality across **407 scientific domains** (35 core + 371 extensions + intelligence compression) and **~2.19 million empirical records** (including the IAU **MPCORB** full minor-planet catalog: **1,554,101** objects at **~0.023%** pooled residual).
 
-The results, as of this edition: **472/472** public benchmark files pass a ≤0.5% pooled error green gate (`data/benchmark_margin_audit.json`); framework median-of-medians sits near **0.00056%**. The **full Lean Formal corpus** is Mathlib-class depth closed at **5182/5182 (100%, L1=0)** with campaign verdict **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** and formula-authority gate **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** (pin **D1D38A**, ZERO_FREE). A cold GitHub clone reproduced those gates with **zero field mismatches** ([clean-clone report](data/fresh_clone_corpus_mathlib_repro_report.md)). The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain. Densify must use **seed formula + real measured data only** ([`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md)).
+The results, as of this edition: **472/472** public benchmark files pass a ≤0.5% pooled error green gate (`data/benchmark_margin_audit.json`); framework median-of-medians sits near **0.0066%** (live status). The **full Lean Formal corpus** is Mathlib-class depth closed at **5182/5182 (100%, L1=0)** with campaign verdict **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** and formula-authority gate **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** (pin **D1D38A**, ZERO_FREE). A cold GitHub clone reproduced those gates with **zero field mismatches** ([clean-clone report](data/fresh_clone_corpus_mathlib_repro_report.md)). The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain. Densify must use **seed formula + real measured data only** ([`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md)).
 
 Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator + Mathlib depth campaign), Coq/Rocq (Interval-native π/e), Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (**2222** multiprover obligations). QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
 
@@ -268,7 +268,7 @@ This is not poetry layered on curve fits. It is a **falsifiable engineering spec
 This work makes five contributions at arXiv preprint standard:
 
 1. **Unified scalar architecture** — A single seed-derived engine (`raw_S = term1 + term2 + term3`) evaluated across **407 scientific domains** (35 core + 371 extensions + IC) and **~2.19M** empirical records, with **no per-observable least-squares tuning**.
-2. **Cross-domain empirical closure** — **432/432** public benchmark files pass a ≤0.5% pooled median error gate; median-of-medians ≈ **0.00056%** (Planck 2018, PDG 2024, NIST/CODATA targets per row).
+2. **Cross-domain empirical closure** — **472/472** public benchmark files pass a ≤0.5% pooled median error gate; median-of-medians ≈ **0.0066%** (Planck 2018, PDG 2024, NIST/CODATA targets per row; see live `docs/CURRENT_STATUS.md`).
 3. **Contested-sector readouts** â€” Unified FSOT predictions on Hâ‚€, Ïƒâ‚ˆ, BBN, hierarchy, and dark-energy proxies achieve **0.030%** pooled median across 13 actively monitored observables vs ~15% typical Î›CDM/SM sector baselines (Riess et al. 2024; Planck Collaboration 2018).
 4. **Five-prover formal triangulation** â€” **1,863** atomic obligations exported to Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust with `overall_ok: true` â€” proof assistants as scientific instruments, not software-only checks.
 5. **Executable falsification registry** â€” Preregistered predictions **PRED-001â€“041**, per-domain kill criteria, and a one-command verification bundle that any reader can run on GitHub.
@@ -304,7 +304,7 @@ Proof assistants (Lean, Coq, Isabelle) are standard in software verification; th
 | Dimension | Typical siloed model | FSOT (this repository) |
 |-----------|------------------------|---------------------------|
 | Parameters per observable | Sector-specific fits | Seed-derived; no per-row least squares |
-| Cross-domain test | Uncommon | 407 domains · ~2.19M records · 432/432 green |
+| Cross-domain test | Uncommon | multi-domain residual atlas · **472/472** green (live) |
 | Formal triangulation | Rare | Lean + Coq + Isabelle + F* + Rust |
 | Kill criteria | Often informal | Navigator + prereg manifest |
 | Living edition | Static PDF | GitHub commit history + tagged releases |
@@ -592,7 +592,7 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 | Empirical records (panel sum) | **~2.19M** |
 | MPCORB catalog objects | **1,554,101** (~0.023% residual) |
 | Benchmark files green (≤0.5%) | **472/472** |
-| Median-of-medians residual | **~0.00056%** |
+| Median-of-medians residual | **~0.0066%** (live status) |
 | Worst domain max scalar error | **0.4989%** |
 | Catalog multiprover obligations | **2222** |
 | Lean formal modules | **562** |
@@ -651,7 +651,7 @@ FSOT does not verify a single silo — it verifies a **spine of 35 core scientif
 | **Total scientific domains** | **407** | Core + extensions + IC |
 | Lean formal modules | **562** | Machine-checked priors per panel (Mathlib depth **100%**) |
 | Empirical records (panel sum) | **~2.19M** | Measured vs seed-derived FSOT predictions |
-| Green residual benchmarks | **432/432** | Public ≤0.5% gate files |
+| Green residual benchmarks | **472/472** | Public ≤0.5% gate files (live margin audit) |
 
 **Scientific clusters** (extension panels grouped for the thesis):
 
@@ -906,7 +906,7 @@ Full audit: [`docs/FOUNDING_35_LAWS_AUDIT.md`](docs/FOUNDING_35_LAWS_AUDIT.md)
 
 The universe does not present itself as a hundred separate accidents. It presents as **repetition with variation** â€” the same mathematics in stellar fusion and mitochondrial chemistry, in Hubble tension and brain metabolism, in molecular bonds and thermochemistry readouts.
 
-FSOT names that repetition: **one fluid, one scalar, seed-derived, observer-coupled, fractal across 407 scientific domains (~2.19M records, 432/432 green)**. The empirical record says it is tight. The formal record says it is triangulated. The engineering record says it builds.
+FSOT names that repetition: **one fluid, one scalar, seed-derived, observer-coupled, fractal across the residual atlas (**472/472 green**, Mathlib Formal **100%**, multiprover `overall_ok`)**. The empirical record says it is tight. The formal record says it is triangulated. The engineering record says it builds.
 
 This thesis will expand. The repository will deepen. The invitation is unchanged:
 
