@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-06T12:59:40.068574+00:00",
-  "online": true,
+  "generated_at": "2026-08-06T13:06:59.168415+00:00",
+  "online": false,
   "authority_pin_prefix": "D1D38A",
   "registry_version": "1.0",
   "schedule": {
@@ -12,16 +12,29 @@
   "summary": {
     "watch_count": 14,
     "outcomes": {
-      "source_reachable_awaiting_release": 2,
-      "local_green_hold": 8,
-      "open_predata": 3,
-      "data_available": 1
+      "open_predata": 6,
+      "local_green_hold": 8
     },
     "prereg_prediction_count": 48,
     "prereg_with_future_survey_tag": 13,
     "prereg_domain_count": 27,
+    "atlas_prediction_count": 1219,
+    "atlas_domains_covered": 472,
+    "atlas_by_kind": {
+      "multi_tool_h0": 25,
+      "residual_hold": 472,
+      "scalar_lock": 722
+    },
+    "h0_multi_tool_count": 25,
+    "h0_fsot_span": {
+      "min_fsot": 67.383958,
+      "max_fsot": 75.146282,
+      "min_literature": 67.4,
+      "max_literature": 75.1
+    },
+    "residual_hold_gate_fails": 0,
     "t5_freeze_id": "TOE-PREREG-20260806",
-    "t5_bundle_sha256": "b2bbab9c65dd5957c386c9228998ad1212154c4677bcd6d25fff4bc67abe0864",
+    "t5_bundle_sha256": "85aa2a8a87dc7ef2c5187fc7f33cc2c055f3f79f4ca0a358fab1245e6ae68cc1",
     "future_ledger_rows": 10,
     "green_gate_pass_count": 472,
     "green_gate_fail_count": 0
@@ -52,7 +65,7 @@
         ]
       },
       "check_kind": "manual_or_catalog",
-      "outcome": "source_reachable_awaiting_release",
+      "outcome": "open_predata",
       "detail": {
         "contested_match": {
           "name": "sigma_8",
@@ -60,18 +73,6 @@
           "within_green_gate": true,
           "status": "open_observable_resolved"
         },
-        "url_probes": [
-          {
-            "ok": true,
-            "status": 200,
-            "url": "https://www.cosmos.esa.int/web/euclid/timeline"
-          },
-          {
-            "ok": true,
-            "status": 200,
-            "url": "https://www.cosmos.esa.int/web/euclid/dr1-timeline"
-          }
-        ],
         "in_t5_freeze": true
       }
     },
@@ -141,7 +142,7 @@
         ]
       },
       "check_kind": "manual_or_catalog",
-      "outcome": "source_reachable_awaiting_release",
+      "outcome": "open_predata",
       "detail": {
         "contested_match": {
           "name": "sigma_8",
@@ -149,18 +150,6 @@
           "within_green_gate": true,
           "status": "open_observable_resolved"
         },
-        "url_probes": [
-          {
-            "ok": true,
-            "status": 200,
-            "url": "https://rubinobservatory.org/"
-          },
-          {
-            "ok": true,
-            "status": 200,
-            "url": "https://lsstdiscoveryalliance.org/"
-          }
-        ],
         "in_t5_freeze": false
       }
     },
@@ -299,14 +288,8 @@
         ]
       },
       "check_kind": "open_api",
-      "outcome": "data_available",
+      "outcome": "open_predata",
       "detail": {
-        "online_probe": {
-          "ok": true,
-          "event_count": 391,
-          "source": "https://www.gwosc.org/eventapi/json/GWTC/"
-        },
-        "note": "GWOSC GWTC reports 391 events \u2014 compare residual panels; do not retune freeze.",
         "in_t5_freeze": false
       }
     },
@@ -549,6 +532,136 @@
       }
     }
   ],
+  "h0_multi_tool_preview": [
+    {
+      "id": "H0-TOOL-planck_cmb_local",
+      "pred_id": "PRED-H0-planck_cmb_local",
+      "name": "planck_cmb_local",
+      "method": "Planck2018_TTTEEE_lowE_lensing",
+      "tool_class": "early_universe_cmb",
+      "reference": "Planck2018",
+      "note": "Early-universe acoustic scale; depleted bubble-density sector.",
+      "literature_anchor_h0": 67.4,
+      "bubble_density_proxy": -1.0,
+      "bubble_density_model": -1.0,
+      "fsot_predicted_h0": 67.383958,
+      "error_vs_literature_pct": 0.023801,
+      "kill": "next_planck_cmb_local_central_outside_2.5pct_of_fsot_predicted",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "id": "H0-TOOL-tdcosmo_conservative",
+      "pred_id": "PRED-H0-tdcosmo_conservative",
+      "name": "tdcosmo_conservative",
+      "method": "TDCOSMO_mass_sheet_conservative",
+      "tool_class": "strong_lens_time_delay",
+      "reference": "TDCOSMO_conservative_branch",
+      "note": "Mass-sheet degeneracy branch pulls toward CMB-like sector \u2014 bubble model must track both branches as separate tools.",
+      "literature_anchor_h0": 67.4,
+      "bubble_density_proxy": -0.95,
+      "bubble_density_model": -0.95,
+      "fsot_predicted_h0": 67.436763,
+      "error_vs_literature_pct": 0.054545,
+      "kill": "next_tdcosmo_conservative_central_outside_2.5pct_of_fsot_predicted",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "id": "H0-TOOL-planck_plus_bao_combo",
+      "pred_id": "PRED-H0-planck_plus_bao_combo",
+      "name": "planck_plus_bao_combo",
+      "method": "Planck_plus_BAO_combo_literature",
+      "tool_class": "early_universe_cmb",
+      "reference": "Planck2018_BAO_combinations",
+      "note": null,
+      "literature_anchor_h0": 67.66,
+      "bubble_density_proxy": -0.75,
+      "bubble_density_model": -0.75,
+      "fsot_predicted_h0": 67.647983,
+      "error_vs_literature_pct": 0.017761,
+      "kill": "next_planck_plus_bao_combo_central_outside_2.5pct_of_fsot_predicted",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "id": "H0-TOOL-sn_h0_no_local_cal",
+      "pred_id": "PRED-H0-sn_h0_no_local_cal",
+      "name": "sn_h0_no_local_cal",
+      "method": "SNIa_with_CMB_or_BAO_absolute_cal",
+      "tool_class": "snia_early_calibrated",
+      "reference": "SN_early_cal_class",
+      "note": null,
+      "literature_anchor_h0": 67.8,
+      "bubble_density_proxy": -0.6,
+      "bubble_density_model": -0.6,
+      "fsot_predicted_h0": 67.806398,
+      "error_vs_literature_pct": 0.009436,
+      "kill": "next_sn_h0_no_local_cal_central_outside_2.5pct_of_fsot_predicted",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "id": "H0-TOOL-act_dr6_cmb",
+      "pred_id": "PRED-H0-act_dr6_cmb",
+      "name": "act_dr6_cmb",
+      "method": "ACT_DR6_CMB",
+      "tool_class": "early_universe_cmb",
+      "reference": "ACT_DR6_literature",
+      "note": null,
+      "literature_anchor_h0": 67.9,
+      "bubble_density_proxy": -0.55,
+      "bubble_density_model": -0.55,
+      "fsot_predicted_h0": 67.859203,
+      "error_vs_literature_pct": 0.060084,
+      "kill": "next_act_dr6_cmb_central_outside_2.5pct_of_fsot_predicted",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "id": "H0-TOOL-spt3g_cmb",
+      "pred_id": "PRED-H0-spt3g_cmb",
+      "name": "spt3g_cmb",
+      "method": "SPT3G_CMB",
+      "tool_class": "early_universe_cmb",
+      "reference": "SPT3G_literature",
+      "note": null,
+      "literature_anchor_h0": 68.3,
+      "bubble_density_proxy": -0.15,
+      "bubble_density_model": -0.15,
+      "fsot_predicted_h0": 68.281642,
+      "error_vs_literature_pct": 0.026878,
+      "kill": "next_spt3g_cmb_central_outside_2.5pct_of_fsot_predicted",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "id": "H0-TOOL-global_cmb_background",
+      "pred_id": "PRED-H0-global_cmb_background",
+      "name": "global_cmb_background",
+      "method": "FSOT_Wave1_CMB",
+      "tool_class": "fsot_global",
+      "reference": "h0_fsot_canonical",
+      "note": "Seed-locked global CMB-class background (wave1).",
+      "literature_anchor_h0": 68.44005682979427,
+      "bubble_density_proxy": 0.0,
+      "bubble_density_model": 0.0,
+      "fsot_predicted_h0": 68.440057,
+      "error_vs_literature_pct": 0.0,
+      "kill": "next_global_cmb_background_central_outside_2.5pct_of_fsot_predicted",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "id": "H0-TOOL-desi_bao_rs_anchored",
+      "pred_id": "PRED-H0-desi_bao_rs_anchored",
+      "name": "desi_bao_rs_anchored",
+      "method": "DESI_BAO_sound_horizon_anchor",
+      "tool_class": "bao_intermediate",
+      "reference": "DESI_DR_BAO_literature",
+      "note": "BAO ruler sits between pure CMB and local ladder sectors.",
+      "literature_anchor_h0": 68.52,
+      "bubble_density_proxy": 0.08,
+      "bubble_density_model": 0.08,
+      "fsot_predicted_h0": 68.524545,
+      "error_vs_literature_pct": 0.006633,
+      "kill": "next_desi_bao_rs_anchored_central_outside_2.5pct_of_fsot_predicted",
+      "unit": "km/s/Mpc"
+    }
+  ],
   "high_urgency_open": [
     "WATCH-Euclid-DR1-S8",
     "WATCH-Rubin-LSST-Y1-structure",
@@ -558,8 +671,10 @@
   "commands": {
     "offline": "python scripts/run_prediction_monitor.py",
     "online": "python scripts/run_prediction_monitor.py --online",
+    "rebuild_h0": "python scripts/build_h0_multi_tool_predictions.py",
+    "rebuild_atlas": "python scripts/build_domain_prediction_atlas.py",
     "freeze": "python -c \"import sys; sys.path.insert(0,'scripts'); from build_toe_gap_closure import freeze_prereg; freeze_prereg()\"",
     "kaggle_pack": "python scripts/build_kaggle_prediction_pack.py"
   },
-  "report_sha256": "e1633804ad823847194414c30a5c0df15f8f5ec7cb369d4bfdad0a97a419c7fd"
+  "report_sha256": "1a4fe245853be6b4682a665dbefc347932ae6bef33f415c79a2dc8d71f6f422b"
 }

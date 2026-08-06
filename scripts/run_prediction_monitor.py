@@ -36,6 +36,8 @@ FREEZE = ROOT / "data" / "toe_prereg_freeze.json"
 MARGIN = ROOT / "data" / "benchmark_margin_audit.json"
 CONTESTED = ROOT / "data" / "contested_observables_closure.json"
 FUTURE = ROOT / "data" / "contested_future_observation_ledger.json"
+DOMAIN_ATLAS = ROOT / "data" / "domain_prediction_atlas.json"
+H0_MULTI = ROOT / "data" / "h0_multi_tool_predictions.json"
 OUT_JSON = ROOT / "data" / "prediction_monitor_report.json"
 OUT_MD = ROOT / "data" / "publication" / "PREDICTION_MONITOR.md"
 
@@ -255,6 +257,8 @@ def build_report(*, online: bool) -> dict:
     margin = _load_json(MARGIN)
     contested = _load_json(CONTESTED)
     future = _load_json(FUTURE)
+    atlas = _load_json(DOMAIN_ATLAS)
+    h0_multi = _load_json(H0_MULTI)
     margin_idx = _margin_index(margin)
 
     watches = reg.get("watches") or []
@@ -270,6 +274,15 @@ def build_report(*, online: bool) -> dict:
     prereg_preds = prereg.get("predictions") or []
     with_future = sum(1 for p in prereg_preds if p.get("future_survey"))
     domains = sorted({p.get("domain") for p in prereg_preds if p.get("domain")})
+    atlas_sum = atlas.get("summary") or {}
+    atlas_preds = atlas.get("predictions") or []
+    residual_holds = [p for p in atlas_preds if p.get("kind") == "residual_hold"]
+    residual_fail = 0
+    for p in residual_holds:
+        dname = str(p.get("domain") or "")
+        row = margin_idx.get(dname) or margin_idx.get(dname.lower())
+        if row is not None and row.get("green_gate_pass") is False:
+            residual_fail += 1
 
     report = {
         "generated_at": _now(),
@@ -283,6 +296,13 @@ def build_report(*, online: bool) -> dict:
             "prereg_prediction_count": len(prereg_preds),
             "prereg_with_future_survey_tag": with_future,
             "prereg_domain_count": len(domains),
+            "atlas_prediction_count": atlas_sum.get("prediction_count") or len(atlas_preds),
+            "atlas_domains_covered": atlas_sum.get("green_domains_covered"),
+            "atlas_by_kind": atlas_sum.get("by_kind"),
+            "h0_multi_tool_count": h0_multi.get("tool_count")
+            or atlas_sum.get("h0_multi_tool_count"),
+            "h0_fsot_span": (h0_multi.get("span_km_s_mpc") or {}),
+            "residual_hold_gate_fails": residual_fail,
             "t5_freeze_id": freeze.get("freeze_id"),
             "t5_bundle_sha256": freeze.get("bundle_sha256"),
             "future_ledger_rows": len(future.get("future_observations") or []),
@@ -290,6 +310,7 @@ def build_report(*, online: bool) -> dict:
             "green_gate_fail_count": margin.get("green_gate_fail_count"),
         },
         "watches": results,
+        "h0_multi_tool_preview": (h0_multi.get("tools") or [])[:8],
         "high_urgency_open": [
             r["id"]
             for r in results
@@ -304,6 +325,8 @@ def build_report(*, online: bool) -> dict:
         "commands": {
             "offline": "python scripts/run_prediction_monitor.py",
             "online": "python scripts/run_prediction_monitor.py --online",
+            "rebuild_h0": "python scripts/build_h0_multi_tool_predictions.py",
+            "rebuild_atlas": "python scripts/build_domain_prediction_atlas.py",
             "freeze": "python -c \"import sys; sys.path.insert(0,'scripts'); from build_toe_gap_closure import freeze_prereg; freeze_prereg()\"",
             "kaggle_pack": "python scripts/build_kaggle_prediction_pack.py",
         },
@@ -328,12 +351,18 @@ def write_md(report: dict) -> None:
         f"| Metric | Value |",
         f"|--------|------:|",
         f"| Watches | {s.get('watch_count')} |",
-        f"| Prereg PREDs | {s.get('prereg_prediction_count')} |",
+        f"| Prereg PREDs (hand YAML) | {s.get('prereg_prediction_count')} |",
+        f"| **Atlas predictions** | **{s.get('atlas_prediction_count')}** |",
+        f"| Atlas domains covered | {s.get('atlas_domains_covered')} |",
+        f"| Multi-tool H₀ locks | {s.get('h0_multi_tool_count')} |",
+        f"| H₀ FSOT span | {(s.get('h0_fsot_span') or {}).get('min_fsot')}–{(s.get('h0_fsot_span') or {}).get('max_fsot')} |",
+        f"| Residual-hold gate fails | {s.get('residual_hold_gate_fails')} |",
         f"| PREDs with future_survey tag | {s.get('prereg_with_future_survey_tag')} |",
-        f"| Prereg domains | {s.get('prereg_domain_count')} |",
         f"| T5 freeze | `{s.get('t5_freeze_id')}` |",
         f"| Green gate | {s.get('green_gate_pass_count')}/{int(s.get('green_gate_pass_count') or 0) + int(s.get('green_gate_fail_count') or 0)} |",
         f"| Report SHA | `{report.get('report_sha256', '')[:16]}…` |",
+        "",
+        "Atlas kinds: " + ", ".join(f"{k}={v}" for k, v in sorted((s.get('atlas_by_kind') or {}).items())),
         "",
         "### Outcomes",
         "",
@@ -343,6 +372,23 @@ def write_md(report: dict) -> None:
     for k, v in sorted((s.get("outcomes") or {}).items()):
         lines.append(f"| {k} | {v} |")
 
+    lines.extend(
+        [
+            "",
+            "## Multi-tool H₀ (bubble bleed)",
+            "",
+            "Full table: `data/publication/H0_MULTI_TOOL_PREDICTIONS.md`  ",
+            "Theory: each measurement system samples a different BH→WH information-flow sector.",
+            "",
+            "| Tool | FSOT H₀ | Literature | Class |",
+            "|------|--------:|-----------:|-------|",
+        ]
+    )
+    for t in report.get("h0_multi_tool_preview") or []:
+        lines.append(
+            f"| {t.get('name')} | **{t.get('fsot_predicted_h0')}** | "
+            f"{t.get('literature_anchor_h0')} | {t.get('tool_class')} |"
+        )
     lines.extend(
         [
             "",

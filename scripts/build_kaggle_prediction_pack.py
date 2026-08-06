@@ -266,10 +266,33 @@ def build() -> Path:
         "prediction_monitor_report.json",
         "contested_observables_closure.json",
         "contested_future_observation_ledger.json",
+        "h0_multi_tool_predictions.json",
+        "sector_h0_seed.json",
+        # domain atlas is large; include summary-only slim via extractor below
     ]:
         src = ROOT / "data" / name
         if src.is_file():
             _copy(src, DATASET_DIR / name)
+
+    # Slim domain atlas: summary + multi-tool H0 preds + top residual holds (not full scalar dump)
+    atlas_src = ROOT / "data" / "domain_prediction_atlas.json"
+    if atlas_src.is_file():
+        atlas = json.loads(atlas_src.read_text(encoding="utf-8"))
+        preds = atlas.get("predictions") or []
+        slim_preds = [p for p in preds if p.get("kind") == "multi_tool_h0"]
+        residual = [p for p in preds if p.get("kind") == "residual_hold"]
+        residual.sort(key=lambda p: -(p.get("fsot_predicted") or 0))
+        slim_preds.extend(residual[:40])
+        slim = {
+            "generated_at": atlas.get("generated_at"),
+            "summary": atlas.get("summary"),
+            "note": "Slim Kaggle export — full atlas on GitHub data/domain_prediction_atlas.json",
+            "predictions_preview": slim_preds,
+            "bundle_sha256": atlas.get("bundle_sha256"),
+        }
+        (DATASET_DIR / "domain_prediction_atlas_slim.json").write_text(
+            json.dumps(slim, indent=2), encoding="utf-8"
+        )
 
     _slim_margin(ROOT / "data" / "benchmark_margin_audit.json", DATASET_DIR / "margin_slim.json")
 

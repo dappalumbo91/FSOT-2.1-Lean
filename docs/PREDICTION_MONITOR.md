@@ -4,13 +4,26 @@
 
 | Artifact | Role |
 |----------|------|
-| `data/preregistered_predictions_manifest.yaml` | PRED-001… PRED values (append-only; new freeze_id to retune) |
+| `data/preregistered_predictions_manifest.yaml` | Hand PRED-001… curated locks |
+| `data/domain_prediction_atlas.json` | **Atlas-scale** PREDs for every green domain |
+| `data/h0_multi_tool_predictions.json` | **Per-tool H₀** under BH→WH bubble bleed |
+| `data/sector_h0_seed.json` | H₀ tool seed + density proxies |
 | `data/prediction_monitor_registry.yaml` | Watches ↔ facilities ↔ windows ↔ kill criteria |
 | `data/toe_prereg_freeze.json` | T5 SHA-locked slate |
 | `scripts/run_prediction_monitor.py` | Offline/online status runner |
 | `data/prediction_monitor_report.json` | Machine report |
 | `data/publication/PREDICTION_MONITOR.md` | Human table |
 | `kaggle/fsot-prediction-monitor/` | Portable dataset + notebook |
+
+### Multi-tool H₀ (not one number)
+
+FSOT does **not** claim a single H₀ for every instrument. Under the BH→WH bubble-bleed
+picture, Cepheid ladders, TRGB, CMB, BAO, masers, time-delay lenses, etc. couple to
+**different information-flow sectors**. Each tool has its own preregistered prediction:
+
+`H0_tool = H0_global_fsot × (1 + density_model × bleed_fraction)`
+
+See `data/publication/H0_MULTI_TOOL_PREDICTIONS.md`.
 
 Authority pin: **D1D38A** · zero free parameters · see [`PREDATA_RISK.md`](PREDATA_RISK.md).
 
@@ -37,7 +50,9 @@ Sources are public project timelines (ESA Euclid, Rubin Observatory, GWOSC, DESI
 ## Commands
 
 ```powershell
-# Expand registry is data/prediction_monitor_registry.yaml (edit) then:
+# Rebuild multi-tool H0 + full domain atlas from monorepo data:
+python scripts/build_h0_multi_tool_predictions.py
+python scripts/build_domain_prediction_atlas.py
 python scripts/run_prediction_monitor.py              # offline, uses repo panels
 python scripts/run_prediction_monitor.py --online     # + GWOSC / URL probes
 

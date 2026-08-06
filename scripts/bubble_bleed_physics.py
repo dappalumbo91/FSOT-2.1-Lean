@@ -14,11 +14,35 @@ P34_CONTESTED_TOLERANCE_PCT = 2.5
 H0_CONTESTED_TOLERANCE_PCT = 2.5
 H0_CONTESTED_SECTORS = frozenset(
     {
-        "sh0es_jwst",
-        "freedman_jwst",
-        "fsot_document_local",
-        "carnegie_h0",
+        # Early-universe / CMB class
         "planck_cmb_local",
+        "planck_plus_bao_combo",
+        "act_dr6_cmb",
+        "spt3g_cmb",
+        "wmap9_cmb",
+        "sn_h0_no_local_cal",
+        # BAO intermediate
+        "desi_bao_rs_anchored",
+        "sdss_bao_class",
+        # Intermediate ladders
+        "carnegie_h0",
+        "freedman_jwst",
+        "trgb_ground_class",
+        "jagb_miras_class",
+        # Local / geometric inflated sectors
+        "sh0es_jwst",
+        "sh0es_hst_cepheid",
+        "jwst_cepheid_riess",
+        "pantheon_plus_shoes_cal",
+        "h0licow_tdcosmo",
+        "tdcosmo_conservative",
+        "megamaser_cosmology",
+        "surface_brightness_fluctuations",
+        "tully_fisher_class",
+        "gw_standard_siren",
+        # FSOT dual-anchor
+        "fsot_document_local",
+        "h0_bridge_scalar",
     }
 )
 
