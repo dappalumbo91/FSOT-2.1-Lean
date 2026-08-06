@@ -1,6 +1,6 @@
 # Domain prediction atlas (all sectors)
 
-*Generated 2026-08-06T13:12:35.479124+00:00 · pin D1D38A*
+*Generated 2026-08-06T13:22:40.278205+00:00 · pin D1D38A*
 
 Atlas-scale preregistered predictions across the full scientific domain table — bio, materials, particle, earth, social, engineering, astro — not cosmology alone. Plus multi-tool and per-host H0 under BH→WH bubble bleed.
 
@@ -10,13 +10,13 @@ Atlas-scale preregistered predictions across the full scientific domain table �
 |--------|------:|
 | Green domains covered | 472 |
 | Non-cosmology domains | 458 |
-| **Total atlas predictions** | **1418** |
+| **Total atlas predictions** | **1445** |
 | Multi-tool H₀ | 25 |
 | Sightline hosts H₀ | 22 |
 | Sightline sky sectors | 5 |
 | Sector portfolios | 9 |
 | Hand prereg YAML | 48 |
-| Bundle SHA | `ac8daa34e462771b…` |
+| Bundle SHA | `2a4a713298301c06…` |
 
 ### By kind
 
@@ -24,6 +24,8 @@ Atlas-scale preregistered predictions across the full scientific domain table �
 |------|------:|
 | h0_sightline_host | 22 |
 | h0_sightline_sector | 5 |
+| h0_trgb_host | 22 |
+| h0_trgb_sector | 5 |
 | multi_tool_h0 | 25 |
 | residual_hold | 472 |
 | scalar_lock | 885 |
@@ -35,8 +37,8 @@ Atlas-scale preregistered predictions across the full scientific domain table �
 |--------|------------:|
 | cross_domain_other | 648 |
 | bio_med | 194 |
+| cosmology | 117 |
 | particle_nuclear | 113 |
-| cosmology | 90 |
 | materials_chem | 85 |
 | social_econ | 82 |
 | engineering_compute | 76 |

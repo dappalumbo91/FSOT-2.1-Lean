@@ -1,6 +1,6 @@
 # FSOT Prediction Monitor
 
-*Generated 2026-08-06T13:12:35.689986+00:00 · online=False · pin D1D38A*
+*Generated 2026-08-06T13:22:40.489015+00:00 · online=False · pin D1D38A*
 
 Tracks **preregistered** FSOT locks against near/future public data drops. Predicted centrals are frozen; this report only updates **outcome status**.
 
@@ -10,7 +10,7 @@ Tracks **preregistered** FSOT locks against near/future public data drops. Predi
 |--------|------:|
 | Watches | 14 |
 | Prereg PREDs (hand YAML) | 48 |
-| **Atlas predictions** | **1418** |
+| **Atlas predictions** | **1445** |
 | Atlas domains covered | 472 |
 | Multi-tool H₀ locks | 25 |
 | Sightline host H₀ | 22 (mean 73.302397) |
@@ -21,9 +21,9 @@ Tracks **preregistered** FSOT locks against near/future public data drops. Predi
 | PREDs with future_survey tag | 13 |
 | T5 freeze | `TOE-PREREG-20260806` |
 | Green gate | 472/472 |
-| Report SHA | `26c3f63c8468de09…` |
+| Report SHA | `a94f351339e9a35e…` |
 
-Atlas kinds: h0_sightline_host=22, h0_sightline_sector=5, multi_tool_h0=25, residual_hold=472, scalar_lock=885, sector_portfolio_hold=9
+Atlas kinds: h0_sightline_host=22, h0_sightline_sector=5, h0_trgb_host=22, h0_trgb_sector=5, multi_tool_h0=25, residual_hold=472, scalar_lock=885, sector_portfolio_hold=9
 
 ### Outcomes
 

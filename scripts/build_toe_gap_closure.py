@@ -621,8 +621,11 @@ def freeze_prereg() -> dict:
         ROOT / "data" / "contested_future_observation_ledger.json",
         ROOT / "data" / "h0_multi_tool_predictions.json",
         ROOT / "data" / "h0_sightline_predictions.json",
+        ROOT / "data" / "cchp_trgb_sightline_predictions.json",
+        ROOT / "data" / "nearest_data_drop_ranking.json",
         ROOT / "data" / "domain_prediction_atlas.json",
         ROOT / "data" / "sector_h0_seed.json",
+        ROOT / "data" / "external_data_pointers.json",
     ]
     frozen = []
     for path in files:

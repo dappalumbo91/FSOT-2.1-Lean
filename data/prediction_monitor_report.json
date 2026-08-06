@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T13:12:35.689986+00:00",
+  "generated_at": "2026-08-06T13:22:40.489015+00:00",
   "online": false,
   "authority_pin_prefix": "D1D38A",
   "registry_version": "1.0",
@@ -18,12 +18,14 @@
     "prereg_prediction_count": 48,
     "prereg_with_future_survey_tag": 13,
     "prereg_domain_count": 27,
-    "atlas_prediction_count": 1418,
+    "atlas_prediction_count": 1445,
     "atlas_domains_covered": 472,
     "atlas_by_kind": {
       "multi_tool_h0": 25,
       "h0_sightline_host": 22,
       "h0_sightline_sector": 5,
+      "h0_trgb_host": 22,
+      "h0_trgb_sector": 5,
       "residual_hold": 472,
       "scalar_lock": 885,
       "sector_portfolio_hold": 9
@@ -42,7 +44,7 @@
       "max_fsot": 74.164154
     },
     "atlas_by_sector": {
-      "cosmology": 90,
+      "cosmology": 117,
       "social_econ": 82,
       "materials_chem": 85,
       "earth_climate": 60,
@@ -56,7 +58,7 @@
     "sector_portfolio_count": 9,
     "residual_hold_gate_fails": 0,
     "t5_freeze_id": "TOE-PREREG-20260806",
-    "t5_bundle_sha256": "09d91c365a6d07ab28049b83f880368e40dd7606b8cb9693b793cab056052be0",
+    "t5_bundle_sha256": "609b0be9e194111d5bc100acfc7f6709809e7a4e22e7b584503ddffa1bc0f3c5",
     "future_ledger_rows": 10,
     "green_gate_pass_count": 472,
     "green_gate_fail_count": 0
@@ -837,5 +839,5 @@
     "freeze": "python -c \"import sys; sys.path.insert(0,'scripts'); from build_toe_gap_closure import freeze_prereg; freeze_prereg()\"",
     "kaggle_pack": "python scripts/build_kaggle_prediction_pack.py"
   },
-  "report_sha256": "26c3f63c8468de09dd437ca3fd82496471b04dde67583ac97781e63bfcbdc167"
+  "report_sha256": "a94f351339e9a35e16efdb442111ff37ff28ffc90040a3803ecb9c4bc5c6b028"
 }

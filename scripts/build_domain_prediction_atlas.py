@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MARGIN = ROOT / "data" / "benchmark_margin_audit.json"
 H0_MULTI = ROOT / "data" / "h0_multi_tool_predictions.json"
 H0_SIGHT = ROOT / "data" / "h0_sightline_predictions.json"
+H0_TRGB = ROOT / "data" / "cchp_trgb_sightline_predictions.json"
 PREREG = ROOT / "data" / "preregistered_predictions_manifest.yaml"
 OUT_JSON = ROOT / "data" / "domain_prediction_atlas.json"
 OUT_MD = ROOT / "data" / "publication" / "DOMAIN_PREDICTION_ATLAS.md"
@@ -188,6 +189,7 @@ def build() -> dict:
     margin = _load_json(MARGIN)
     h0 = _load_json(H0_MULTI)
     h0_sight = _load_json(H0_SIGHT)
+    h0_trgb = _load_json(H0_TRGB)
     rows = margin.get("all_domains") or []
 
     predictions: list[dict[str, Any]] = []
@@ -265,6 +267,45 @@ def build() -> dict:
                 "hosts": s.get("hosts"),
                 "discriminant": s.get("kill"),
                 "fsot_formula_branch": "term3.acoustic_bleed_sightline",
+                "registered_at": "2026-08-06",
+            }
+        )
+
+    # ── CCHP TRGB hosts (external-drive catalog) ────────────────────────
+    trgb_preds = []
+    for h in h0_trgb.get("hosts") or []:
+        trgb_preds.append(
+            {
+                "id": h.get("pred_id") or next_id("PRED-H0-TRGB"),
+                "kind": "h0_trgb_host",
+                "sector": "cosmology",
+                "name": h.get("host"),
+                "domain": "Hubble_CCHP_TRGB_Sightline",
+                "fsot_predicted": h.get("fsot_predicted_h0"),
+                "unit": "km/s/Mpc",
+                "ra_deg": h.get("ra_deg"),
+                "sky_sector": h.get("sky_sector"),
+                "method": h.get("method"),
+                "role": h.get("role"),
+                "sample": h.get("sample"),
+                "discriminant": h.get("kill"),
+                "fsot_formula_branch": "term3.acoustic_bleed_trgb_sightline",
+                "registered_at": "2026-08-06",
+                "external_catalog": h0_trgb.get("external_catalog_path"),
+            }
+        )
+    predictions.extend(trgb_preds)
+    for s in h0_trgb.get("sky_sectors") or []:
+        predictions.append(
+            {
+                "id": s.get("pred_id") or next_id("PRED-H0-TRGB-SEC"),
+                "kind": "h0_trgb_sector",
+                "sector": "cosmology",
+                "name": s.get("sky_sector"),
+                "domain": "Hubble_CCHP_TRGB_Sky_Sector",
+                "fsot_predicted": s.get("fsot_predicted_h0_mean"),
+                "unit": "km/s/Mpc",
+                "host_count": s.get("host_count"),
                 "registered_at": "2026-08-06",
             }
         )
@@ -457,6 +498,8 @@ def build() -> dict:
             "h0_multi_tool_count": len(h0_preds),
             "h0_sightline_host_count": len(host_preds),
             "h0_sightline_sector_count": len(h0_sight.get("sky_sectors") or []),
+            "h0_trgb_host_count": len(trgb_preds),
+            "h0_trgb_sector_count": len(h0_trgb.get("sky_sectors") or []),
             "sector_portfolio_count": len(sector_portfolio),
             "hand_prereg_yaml_count": prereg_count,
             "missing_benchmark_files": missing_files,
@@ -465,6 +508,7 @@ def build() -> dict:
         "sector_portfolio": sector_portfolio,
         "h0_multi_tool_ref": "data/h0_multi_tool_predictions.json",
         "h0_sightline_ref": "data/h0_sightline_predictions.json",
+        "h0_trgb_ref": "data/cchp_trgb_sightline_predictions.json",
         "hand_prereg_ref": "data/preregistered_predictions_manifest.yaml",
         "domains": domain_entries,
         "predictions": predictions,

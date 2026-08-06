@@ -1,0 +1,255 @@
+{
+  "generated_at": "2026-08-06T13:22:56.628181+00:00",
+  "as_of_date": "2026-08-06",
+  "policy": {
+    "do_not_freeze_model_while_monitoring": true,
+    "prereg_clock": "Git commit timestamps on GitHub are the preregistration clock for any prediction already pushed. New work can continue on main; when a survey drops, log outcome against the commit SHA that contained the prediction \u2014 do not retune that SHA's predicted values.",
+    "informal_prior_calls": "Pre-formal X/public calls (e.g. Euclid characteristics, I3 Atlas comet morphology) are historical context. Formal scoreboard uses repo commits + this ranking only.",
+    "separate_predictions_repo": "Recommended: keep predictions *in* the monorepo for pin/engine integrity; optionally add a thin public mirror repo that only tracks prediction JSON + outcomes. Full multiprover stays here."
+  },
+  "nearest_hard_calendar_drop": {
+    "id": "EUCLID-DR1-FOUNDATION",
+    "title": "Euclid DR1-Foundation (raw/calibrated ~1900 deg\u00b2)",
+    "days_until_window_start": 98,
+    "window_start": "2026-11-12",
+    "pred_ids": [
+      "PRED-042",
+      "PRED-043",
+      "PRED-002",
+      "PRED-wa"
+    ],
+    "why": "Hard date on ESA timeline (12 Nov 2026). Foundation is imaging/catalogs; full weak-lensing cosmology products follow mid-2027. Still the cleanest named calendar event for FSOT cosmology locks."
+  },
+  "ranked_drops": [
+    {
+      "id": "EUCLID-DR1-FOUNDATION",
+      "title": "Euclid DR1-Foundation (raw/calibrated ~1900 deg\u00b2)",
+      "window_start": "2026-11-12",
+      "window_end": "2026-11-12",
+      "certainty": "announced_date",
+      "pred_ids": [
+        "PRED-042",
+        "PRED-043",
+        "PRED-002",
+        "PRED-wa"
+      ],
+      "atlas_kinds": [
+        "multi_tool_h0",
+        "residual_hold"
+      ],
+      "sectors": [
+        "cosmology"
+      ],
+      "why_monitor": "Hard date on ESA timeline (12 Nov 2026). Foundation is imaging/catalogs; full weak-lensing cosmology products follow mid-2027. Still the cleanest named calendar event for FSOT cosmology locks.",
+      "priority_note": "Best single hard-date cosmology drop on the public calendar.",
+      "as_of": "2026-08-06",
+      "days_until_window_start": 98,
+      "status": "upcoming",
+      "rank_score": 98,
+      "rank": 1
+    },
+    {
+      "id": "RUBIN-EDP2-COMPLETE",
+      "title": "Rubin LSST Early DP2 complete (visit/diff images)",
+      "window_start": "2026-10-01",
+      "window_end": "2026-12-31",
+      "certainty": "target_window",
+      "pred_ids": [
+        "PRED-044",
+        "PRED-002",
+        "PRED-S8"
+      ],
+      "atlas_kinds": [
+        "residual_hold",
+        "sector_portfolio_hold"
+      ],
+      "sectors": [
+        "cosmology",
+        "astro_gw"
+      ],
+      "why_monitor": "Earliest Stage-IV imaging pathfinder for structure/S8-class tests.",
+      "priority_note": "Closest calendar cluster after now among named survey drops.",
+      "as_of": "2026-08-06",
+      "days_until_window_start": 56,
+      "status": "upcoming",
+      "rank_score": 56,
+      "rank": 2
+    },
+    {
+      "id": "LVK-O4-REMAINDER",
+      "title": "LVK remaining O4 open data / catalog updates",
+      "window_start": "2026-12-01",
+      "window_end": "2026-12-31",
+      "certainty": "expected_window",
+      "pred_ids": [
+        "PRED-048"
+      ],
+      "atlas_kinds": [
+        "residual_hold",
+        "scalar_lock"
+      ],
+      "sectors": [
+        "astro_gw"
+      ],
+      "why_monitor": "GWTC-5.0 already out (May 2026); remainder expected ~Dec 2026.",
+      "as_of": "2026-08-06",
+      "days_until_window_start": 117,
+      "status": "upcoming",
+      "rank_score": 117,
+      "rank": 3
+    },
+    {
+      "id": "LVK-O5-START",
+      "title": "LVK O5 observing run start",
+      "window_start": "2026-08-15",
+      "window_end": "2026-11-30",
+      "certainty": "envisioned",
+      "pred_ids": [
+        "PRED-048"
+      ],
+      "atlas_kinds": [
+        "residual_hold"
+      ],
+      "sectors": [
+        "astro_gw"
+      ],
+      "why_monitor": "Late summer/fall 2026 envisioned; live alerts before full catalogs.",
+      "as_of": "2026-08-06",
+      "days_until_window_start": 9,
+      "status": "upcoming",
+      "rank_score": 9,
+      "rank": 4
+    },
+    {
+      "id": "EUCLID-DR1-COMPLETE",
+      "title": "Euclid DR1 complete (WL / clustering science products)",
+      "window_start": "2027-06-01",
+      "window_end": "2027-09-30",
+      "certainty": "mid_year_target",
+      "pred_ids": [
+        "PRED-042",
+        "PRED-043",
+        "PRED-S8",
+        "PRED-wa"
+      ],
+      "atlas_kinds": [
+        "multi_tool_h0"
+      ],
+      "sectors": [
+        "cosmology"
+      ],
+      "why_monitor": "Where S8/w_a kill criteria get their strongest posterior tests.",
+      "as_of": "2026-08-06",
+      "days_until_window_start": 299,
+      "status": "upcoming",
+      "rank_score": 299,
+      "rank": 5
+    },
+    {
+      "id": "CHIME-FRB-ROLLING",
+      "title": "CHIME/FRB catalog updates",
+      "window_start": "2026-08-06",
+      "window_end": "2027-12-31",
+      "certainty": "continuous",
+      "pred_ids": [
+        "PRED-052",
+        "PRED-FRB-DM-excess"
+      ],
+      "atlas_kinds": [
+        "residual_hold"
+      ],
+      "sectors": [
+        "astro_gw",
+        "cosmology"
+      ],
+      "why_monitor": "DM excess class already in contested panel.",
+      "as_of": "2026-08-06",
+      "days_until_window_start": 0,
+      "status": "open_now",
+      "rank_score": 0,
+      "rank": 6
+    },
+    {
+      "id": "DESI-ROLLING",
+      "title": "DESI public BAO / cosmology catalog refreshes",
+      "window_start": "2026-08-06",
+      "window_end": "2027-12-31",
+      "certainty": "continuous",
+      "pred_ids": [
+        "PRED-046",
+        "PRED-001",
+        "PRED-wa"
+      ],
+      "atlas_kinds": [
+        "multi_tool_h0"
+      ],
+      "sectors": [
+        "cosmology"
+      ],
+      "why_monitor": "Already dropping; check on every public cosmology paper.",
+      "as_of": "2026-08-06",
+      "days_until_window_start": 0,
+      "status": "open_now",
+      "rank_score": 0,
+      "rank": 7
+    },
+    {
+      "id": "JWST-LOCAL-H0-ROLLING",
+      "title": "JWST / CCHP / SH0ES local ladder papers",
+      "window_start": "2026-08-06",
+      "window_end": "2027-12-31",
+      "certainty": "continuous",
+      "pred_ids": [
+        "PRED-051",
+        "PRED-H0-freedman_jwst",
+        "PRED-H0-sh0es_jwst"
+      ],
+      "atlas_kinds": [
+        "h0_sightline_host",
+        "multi_tool_h0"
+      ],
+      "sectors": [
+        "cosmology"
+      ],
+      "why_monitor": "No single drop day \u2014 but every CCHP/SH0ES/JWST host paper is a per-host kill check against sightline predictions.",
+      "as_of": "2026-08-06",
+      "days_until_window_start": 0,
+      "status": "open_now",
+      "rank_score": 0,
+      "rank": 8
+    },
+    {
+      "id": "OPEN-SCIENCE-ROLLING",
+      "title": "Open bio/earth/materials panel refreshes (GBIF, NCEI, PubChem\u2026)",
+      "window_start": "2026-08-06",
+      "window_end": "2027-12-31",
+      "certainty": "continuous",
+      "pred_ids": [
+        "PRED-054",
+        "PRED-055"
+      ],
+      "atlas_kinds": [
+        "residual_hold",
+        "scalar_lock",
+        "sector_portfolio_hold"
+      ],
+      "sectors": [
+        "bio_med",
+        "earth_climate",
+        "materials_chem"
+      ],
+      "why_monitor": "Not a single press-release day \u2014 but residual/scalar locks across 400+ domains can be re-scored anytime panels rebuild.",
+      "as_of": "2026-08-06",
+      "days_until_window_start": 0,
+      "status": "open_now",
+      "rank_score": 0,
+      "rank": 9
+    }
+  ],
+  "monitor_commands": [
+    "python scripts/rank_nearest_data_drops.py",
+    "python scripts/run_prediction_monitor.py",
+    "python scripts/run_prediction_monitor.py --online",
+    "python scripts/build_domain_prediction_atlas.py"
+  ]
+}
