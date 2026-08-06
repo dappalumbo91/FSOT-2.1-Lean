@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-08-06T12:48:36.057708+00:00",
+  "version": "1.0",
+  "purpose": "Future-observation differentiators for contested sectors. FSOT locks are pre-data; baseline defaults are current-model practice. No personal names. Pin D1D38A.",
+  "authority_pin_prefix": "D1D38A",
+  "linked_freeze_id": "TOE-PREREG-20260806",
+  "linked_freeze_sha256": "80a66abfadf27dfcf3587d098d0ba0eb0bfdc237168188d00d7eeaff95134feb",
+  "contested_panel": {
+    "observable_count": 13,
+    "fsot_pooled_median_error_pct": 0.007871,
+    "current_model_baseline_pct": 15.0,
+    "verdict": "CONTESTED_SECTORS_FSOT_AHEAD_OF_CURRENT_MODELS"
+  },
+  "future_observations": [
+    {
+      "id": "FO-H0-ladder",
+      "observable": "H0_local_vs_CMB",
+      "fsot_lock": "bridge_scalar_70.75_between_67.4_and_73.04",
+      "baseline_default": "separate_Planck_and_SH0ES_posteriors",
+      "future_observation": "JWST/HST local ladder + CMB-S4 early-universe H0",
+      "kill_if": "FSOT bridge not strictly between next local and CMB centrals",
+      "related_pred": "PRED-H0-bridge",
+      "status": "open_predata"
+    },
+    {
+      "id": "FO-S8-lensing",
+      "observable": "S8_effective",
+      "fsot_lock": "0.805_between_Planck_and_DES",
+      "baseline_default": "Planck_high_S8_vs_DES_low_S8_tension",
+      "future_observation": "Euclid + LSST year-1 weak lensing S8",
+      "kill_if": "FSOT S8 outside next Planck\u2013DES-class band",
+      "related_pred": "PRED-S8",
+      "status": "open_predata"
+    },
+    {
+      "id": "FO-wa-desi-euclid",
+      "observable": "w_a_CPL",
+      "fsot_lock": "wa_approx_-1.018",
+      "baseline_default": "LCDM_wa_equals_0",
+      "future_observation": "DESI DR2+/DR3 + Euclid BAO joint CPL (w0, wa)",
+      "kill_if": "desi_3sigma_exclusion of frozen wa or sign flip vs lock",
+      "related_pred": "PRED-wa",
+      "status": "open_predata"
+    },
+    {
+      "id": "FO-Neff-cmb",
+      "observable": "N_eff",
+      "fsot_lock": "3.046",
+      "baseline_default": "SM_Neff_3.044_to_3.046",
+      "future_observation": "Simons Observatory / CMB-S4 N_eff",
+      "kill_if": "cmb_3sigma_exclusion of frozen N_eff",
+      "related_pred": "PRED-Neffective",
+      "status": "open_predata"
+    },
+    {
+      "id": "FO-mH-pdg",
+      "observable": "m_H",
+      "fsot_lock": "125.25_GeV",
+      "baseline_default": "SM_input_not_prediction",
+      "future_observation": "next PDG Higgs mass combination",
+      "kill_if": "pdg_update_outside_0_5pct of freeze",
+      "related_pred": "PRED-mH",
+      "status": "open_predata"
+    },
+    {
+      "id": "FO-cusp-core",
+      "observable": "dwarf_core_radius_rc",
+      "fsot_lock": "0.6_kpc_Fornax_class",
+      "baseline_default": "CDM_cusp_vs_cored_baryon_feedback_models",
+      "future_observation": "dwarf spheroidal kinematic campaigns",
+      "kill_if": "core radius outside 0.5% band of freeze when consensus forms",
+      "related_pred": "PRED-cusp-core-rc",
+      "status": "open_predata"
+    },
+    {
+      "id": "FO-lithium-bbn",
+      "observable": "lithium_underproduction_factor",
+      "fsot_lock": "factor_approx_3",
+      "baseline_default": "BBN_theory_vs_halo_star_gap",
+      "future_observation": "metal-poor star Li + BBN nuclear rate updates",
+      "kill_if": "gap factor outside 10% of frozen 3.0",
+      "related_pred": "PRED-lithium-factor",
+      "status": "open_predata"
+    },
+    {
+      "id": "FO-frb-dm",
+      "observable": "FRB_DM_excess_vs_IGM",
+      "fsot_lock": "200_pc_cm3_excess_class",
+      "baseline_default": "IGM_only_DM_models",
+      "future_observation": "CHIME/FRB high-DM catalog refresh",
+      "kill_if": "excess outside 0.5% of frozen central on panel refresh",
+      "related_pred": "PRED-FRB-DM-excess",
+      "status": "open_predata"
+    },
+    {
+      "id": "FO-sigma8-central",
+      "observable": "sigma_8",
+      "fsot_lock": "0.8111",
+      "baseline_default": "LCDM_sigma8_from_Planck_primary",
+      "future_observation": "Euclid + LSST combined sigma8",
+      "kill_if": "outside_0_5pct_of_frozen_central",
+      "related_pred": "PRED-sigma8-central",
+      "status": "open_predata"
+    },
+    {
+      "id": "FO-omega-lambda",
+      "observable": "Omega_Lambda",
+      "fsot_lock": "0.6847",
+      "baseline_default": "LCDM_OmegaL_fit_parameter",
+      "future_observation": "combined BAO+CMB Omega_Lambda posterior",
+      "kill_if": "outside_0_5pct_of_frozen_central",
+      "related_pred": "PRED-Omega-Lambda",
+      "status": "open_predata"
+    }
+  ],
+  "worst_green_empirical_watch": [
+    {
+      "domain": "Zebrafish_Predictive_Validation_Panel",
+      "pooled_median_error_pct": 0.3579695,
+      "file": "zebrafish_predictive_validation_panel_benchmark.json"
+    },
+    {
+      "domain": "Dark_Energy_CPL",
+      "pooled_median_error_pct": 0.280515,
+      "file": "dark_energy_cpl_benchmark.json"
+    },
+    {
+      "domain": "Econometrics",
+      "pooled_median_error_pct": 0.12920090413715177,
+      "file": "econometrics_gap_fill_benchmark.json"
+    },
+    {
+      "domain": "Economics",
+      "pooled_median_error_pct": 0.1292009041371501,
+      "file": "economics_gap_fill_benchmark.json"
+    },
+    {
+      "domain": "orbital_mechanics_benchmark.json",
+      "pooled_median_error_pct": 0.106141,
+      "file": "orbital_mechanics_benchmark.json"
+    },
+    {
+      "domain": "Neuroeconomics",
+      "pooled_median_error_pct": 0.10502056403980387,
+      "file": "neuroeconomics_extension_benchmark.json"
+    },
+    {
+      "domain": "cosmology_anomalies_benchmark.json",
+      "pooled_median_error_pct": 0.096204,
+      "file": "cosmology_anomalies_benchmark.json"
+    },
+    {
+      "domain": "Maillard_Chemistry",
+      "pooled_median_error_pct": 0.09443694019339477,
+      "file": "maillard_chemistry_gap_fill_benchmark.json"
+    }
+  ],
+  "refresh_commands": [
+    "python scripts/build_contested_observables_closure.py",
+    "python scripts/build_contested_sector_watch.py",
+    "python scripts/build_contested_future_observation_ledger.py",
+    "python scripts/build_toe_gap_closure.py"
+  ],
+  "ledger_sha256": "053005368695e84dcf3f9a02c8613a8f762baff33c8091a604d70821f3ab4429"
+}

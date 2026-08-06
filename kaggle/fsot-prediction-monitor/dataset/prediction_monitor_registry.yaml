@@ -1,0 +1,316 @@
+# FSOT prediction monitor registry — near/future public data drops
+# Linked to prereg PRED-IDs. Values are frozen in prereg / toe_prereg_freeze.
+# Monitor script: python scripts/run_prediction_monitor.py
+version: "1.0"
+generated_note: >
+  Near-term survey and open-science releases where FSOT already has (or newly
+  registered) falsifiable locks. Status is updated by the monitor; predicted
+  centrals are NEVER retuned here — only outcome / data_available flags change.
+authority_pin_prefix: D1D38A
+zero_free_parameters: true
+
+# How often the monitor should be scheduled (human + machine hint)
+schedule:
+  recommended_interval: "7d"
+  scheduler_hint: "python scripts/run_prediction_monitor.py --offline"
+  online_interval: "14d"
+  online_hint: "python scripts/run_prediction_monitor.py --online"
+
+watches:
+  # ── Cosmology / dark energy ───────────────────────────────────────────
+  - id: WATCH-Euclid-DR1-S8
+    pred_ids: [PRED-002, PRED-S8, PRED-042]
+    sector: cosmology
+    title: "Euclid DR1 weak-lensing S8"
+    fsot_lock: 0.805
+    unit: S8
+    baseline_default: "Planck high S8 vs DES low S8 tension; Euclid independent"
+    kill_if: "FSOT S8 outside next Euclid–DES–Planck class band"
+    data_drop:
+      facility: Euclid
+      product: DR1-Foundation then DR1 complete (weak lensing / S8)
+      window: "2026-11 to mid-2027"
+      status_as_of: "2026-08-06"
+      notes: >
+        ESA: DR1-Foundation ~12 Nov 2026 (raw/calibrated ~1900 deg²);
+        complete DR1 with higher-level WL/clustering mid-2027.
+      urls:
+        - "https://www.cosmos.esa.int/web/euclid/timeline"
+        - "https://www.cosmos.esa.int/web/euclid/dr1-timeline"
+    check:
+      kind: manual_or_catalog
+      open_probe: null
+    urgency: high
+
+  - id: WATCH-Euclid-DR1-wa
+    pred_ids: [PRED-wa, PRED-043]
+    sector: cosmology
+    title: "Euclid + DESI joint dark-energy wa"
+    fsot_lock: -1.018
+    unit: w_a
+    baseline_default: "ΛCDM wa=0"
+    kill_if: "desi_or_euclid_3sigma_exclusion of frozen wa"
+    data_drop:
+      facility: Euclid + DESI
+      product: BAO / clustering DE posteriors
+      window: "2026-11 to 2027"
+      status_as_of: "2026-08-06"
+      notes: "DESI multi-year BAO already public; Euclid DR1 enables joint Stage-IV DE."
+      urls:
+        - "https://data.desi.lbl.gov/"
+        - "https://www.cosmos.esa.int/web/euclid/timeline"
+    check:
+      kind: open_science_panel
+      panel_hint: desi_wa_constraint_benchmark
+    urgency: high
+
+  - id: WATCH-Rubin-LSST-Y1-structure
+    pred_ids: [PRED-002, PRED-044]
+    sector: cosmology
+    title: "Rubin LSST early structure / S8 pathfinder"
+    fsot_lock: 0.805
+    unit: S8
+    baseline_default: "DES Y3 / HSC class low-S8 vs Planck"
+    kill_if: "early LSST S8 pathfinder outside FSOT band when published"
+    data_drop:
+      facility: NSF-DOE Vera C. Rubin Observatory
+      product: LSST EDP2 / early science / Y1 cosmology pathfinders
+      window: "2026-10 to 2027"
+      status_as_of: "2026-08-06"
+      notes: >
+        LSST science survey began 2026-06-30. EDP2 phase-2 individual-image
+        products expected Oct–Dec 2026. Early-science grants target DP2 lensing.
+      urls:
+        - "https://rubinobservatory.org/"
+        - "https://lsstdiscoveryalliance.org/"
+    check:
+      kind: manual_or_catalog
+    urgency: high
+
+  - id: WATCH-DESI-BAO-H0
+    pred_ids: [PRED-001, PRED-H0-bridge, PRED-046]
+    sector: cosmology
+    title: "DESI BAO / H0 bridge vs FSOT 70.75"
+    fsot_lock: 70.75
+    unit: km/s/Mpc
+    baseline_default: "Planck CMB-only vs SH0ES local"
+    kill_if: "not_between next CMB and local centrals"
+    data_drop:
+      facility: DESI
+      product: public BAO / cosmology catalogs + extensions
+      window: "ongoing 2026-2027"
+      status_as_of: "2026-08-06"
+      notes: "DESI DR-class cosmology public; operations extended; more overlap with Rubin."
+      urls:
+        - "https://data.desi.lbl.gov/"
+    check:
+      kind: open_science_panel
+      panel_hint: desi_public_depth_open_benchmark
+    urgency: high
+
+  - id: WATCH-Local-H0-JWST
+    pred_ids: [PRED-001, PRED-051]
+    sector: cosmology
+    title: "JWST / SH0ES-class local distance ladder H0"
+    fsot_lock: 70.75
+    unit: km/s/Mpc
+    baseline_default: "SH0ES ~73 vs Carnegie intermediate"
+    kill_if: "bridge fails when next local+CMB pair published"
+    data_drop:
+      facility: JWST + HST distance ladder programs
+      product: Cepheid / TRGB / SNIa H0 papers
+      window: "rolling 2026-2027"
+      status_as_of: "2026-08-06"
+      notes: "Local H0 still contested; each new JWST paper is a kill-check opportunity."
+      urls:
+        - "https://arxiv.org/list/astro-ph.CO/recent"
+    check:
+      kind: literature_watch
+    urgency: high
+
+  # ── CMB / neutrinos ───────────────────────────────────────────────────
+  - id: WATCH-CMB-Neff
+    pred_ids: [PRED-Neffective, PRED-047]
+    sector: cosmology
+    title: "Next CMB N_eff (SO / ACT / SPT class)"
+    fsot_lock: 3.046
+    unit: N_eff
+    baseline_default: "SM N_eff ≈ 3.044–3.046"
+    kill_if: "cmb_3sigma_exclusion of frozen N_eff"
+    data_drop:
+      facility: Simons Observatory / ACT / SPT-3G (CMB-S4 not DOE/NSF continued)
+      product: N_eff posterior updates
+      window: "2026-2028"
+      status_as_of: "2026-08-06"
+      notes: "CMB-S4 funding discontinued mid-2025; SO/ACT/SPT remain the near-term N_eff path."
+      urls:
+        - "https://simonsobservatory.org/"
+    check:
+      kind: literature_watch
+    urgency: medium
+
+  # ── Gravitational waves ───────────────────────────────────────────────
+  - id: WATCH-LVK-GWTC
+    pred_ids: [PRED-048]
+    sector: gravitational_waves
+    title: "LVK catalog growth / compact binary rate class"
+    fsot_lock: null
+    unit: "catalog_count_and_rate_class"
+    baseline_default: "population-synthesis rate bands"
+    kill_if: "FSOT compact-binary panel residual >0.5% on next GWOSC refresh"
+    data_drop:
+      facility: LIGO-Virgo-KAGRA
+      product: GWTC-5.0+ and remaining O4 open data; O5 start ~late 2026
+      window: "2026-05 done (GWTC-5); more O4 ~Dec 2026; O5 ~late 2026"
+      status_as_of: "2026-08-06"
+      notes: >
+        GWTC-5.0 (May 2026) brought cumulative p_astro≥0.5 candidates to ~390.
+        Remaining O4 public data expected ~Dec 2026. O5 envisioned late summer/fall 2026.
+      urls:
+        - "https://gwosc.org/"
+        - "https://gwosc.org/GWTC-5.0/"
+    check:
+      kind: open_api
+      open_probe: gwosc_event_count
+    urgency: high
+
+  # ── Particle / nuclear ────────────────────────────────────────────────
+  - id: WATCH-PDG-mH
+    pred_ids: [PRED-mH, PRED-049]
+    sector: particle_physics
+    title: "PDG Higgs mass combination"
+    fsot_lock: 125.25
+    unit: GeV
+    baseline_default: "SM input, not prediction"
+    kill_if: "pdg_update_outside_0_5pct"
+    data_drop:
+      facility: PDG / ATLAS+CMS combinations
+      product: annual PDG particle listings + Higgs mass
+      window: "annual"
+      status_as_of: "2026-08-06"
+      notes: "FSOT m_H is a residual-gated seed readout vs PDG central."
+      urls:
+        - "https://pdg.lbl.gov/"
+    check:
+      kind: open_science_panel
+      panel_hint: particle_physics_benchmark
+    urgency: medium
+
+  - id: WATCH-muon-g2
+    pred_ids: [PRED-004, PRED-050]
+    sector: particle_physics
+    title: "Muon g-2 final / lattice SM theory"
+    fsot_lock: 2.49e-9
+    unit: delta_a_mu
+    baseline_default: "SM_only zero excess"
+    kill_if: "sign flip vs Fermilab-class excess or theory absorbs full excess without FSOT map"
+    data_drop:
+      facility: Fermilab Muon g-2 + BMW/RBC lattice community
+      product: final experimental + hadronic vacuum polarization updates
+      window: "2026-2027 literature"
+      status_as_of: "2026-08-06"
+      notes: "Theory-side lattice HVP still moving; experimental Fermilab program completed phases."
+      urls:
+        - "https://muon-g-2.fnal.gov/"
+    check:
+      kind: literature_watch
+    urgency: medium
+
+  # ── Transients / FRB / multi-messenger ────────────────────────────────
+  - id: WATCH-CHIME-FRB
+    pred_ids: [PRED-FRB-DM-excess, PRED-052]
+    sector: multi_messenger
+    title: "CHIME/FRB high-DM excess class"
+    fsot_lock: 200.0
+    unit: pc_cm3_excess
+    baseline_default: "IGM-only DM models"
+    kill_if: "excess outside 0.5% of frozen central on panel refresh"
+    data_drop:
+      facility: CHIME/FRB
+      product: catalog / DM distribution papers
+      window: "rolling"
+      status_as_of: "2026-08-06"
+      urls:
+        - "https://www.chime-frb.ca/"
+    check:
+      kind: open_science_panel
+      panel_hint: cosmology_anomalies_benchmark
+    urgency: medium
+
+  - id: WATCH-JWST-highz
+    pred_ids: [PRED-053]
+    sector: astrophysics
+    title: "JWST high-z galaxy abundance class (JADES/COSMOS-3D)"
+    fsot_lock: null
+    unit: "panel_residual_pct"
+    baseline_default: "pre-JWST UVLF extrapolations under-predict early galaxies"
+    kill_if: "FSOT high-z / JWST open panels exceed 0.5% on next public catalog refresh"
+    data_drop:
+      facility: JWST public surveys
+      product: JADES / COSMOS-3D / NEXUS public catalogs
+      window: "rolling 2026-2027"
+      status_as_of: "2026-08-06"
+      notes: "Large extragalactic JWST datasets becoming public; time-domain + high-z abundance."
+      urls:
+        - "https://archive.stsci.edu/"
+    check:
+      kind: open_science_panel
+      panel_hint: gaia_astrometry_panel_deep_benchmark
+    urgency: medium
+
+  # ── Open Earth / bio / climate (public streams already in repo) ───────
+  - id: WATCH-Climate-NCEI
+    pred_ids: [PRED-054]
+    sector: earth_science
+    title: "NCEI / open climate station holdout residual"
+    fsot_lock: 0.5
+    unit: "pooled_median_error_pct_ceiling"
+    baseline_default: "per-station free-parameter climatologies"
+    kill_if: "climate observed panel exceeds 0.5% green gate"
+    data_drop:
+      facility: NOAA NCEI open data
+      product: station normals / continuous refresh
+      window: "continuous"
+      status_as_of: "2026-08-06"
+      urls:
+        - "https://www.ncei.noaa.gov/"
+    check:
+      kind: open_science_panel
+      panel_hint: climate_observed_benchmark
+    urgency: low
+
+  - id: WATCH-Zebrafish-atlas
+    pred_ids: [PRED-Zebrafish-panel-hold, PRED-055]
+    sector: biology
+    title: "Open zebrafish developmental atlas residual hold"
+    fsot_lock: 0.358
+    unit: "pooled_median_error_pct_watch"
+    baseline_default: "null model / unstructured expression maps"
+    kill_if: "panel exceeds 0.5% on refresh"
+    data_drop:
+      facility: Zebrahub / open developmental atlases
+      product: public expression / lineage releases
+      window: "rolling"
+      status_as_of: "2026-08-06"
+    check:
+      kind: open_science_panel
+      panel_hint: Zebrafish_Predictive_Validation_Panel
+    urgency: medium
+
+  - id: WATCH-Fuel-lab-hold
+    pred_ids: [PRED-034]
+    sector: energy
+    title: "FSOT fuel thermochemistry panel hold"
+    fsot_lock: 0.039349
+    unit: "pooled_median_error_pct"
+    baseline_default: "desktop engine simulator ~8%"
+    kill_if: "Fuel_Lab_Live_Panel exceeds 0.5%"
+    data_drop:
+      facility: in-repo open thermochemistry + simulator
+      product: panel refresh
+      window: "on demand"
+      status_as_of: "2026-08-06"
+    check:
+      kind: open_science_panel
+      panel_hint: Fuel_Lab_Live_Panel
+    urgency: low

@@ -1,0 +1,22 @@
+{
+  "built_at": "2026-08-06T12:59:47.471900+00:00",
+  "dataset_dir": "kaggle/fsot-prediction-monitor/dataset",
+  "kernel_dir": "kaggle/fsot-prediction-monitor/kernel",
+  "files": [
+    "README.md",
+    "contested_future_observation_ledger.json",
+    "contested_observables_closure.json",
+    "dataset-metadata.json",
+    "fsot_compute.py",
+    "margin_slim.json",
+    "prediction_monitor_registry.yaml",
+    "prediction_monitor_report.json",
+    "preregistered_predictions_manifest.yaml",
+    "toe_prereg_freeze.json"
+  ],
+  "push_commands": [
+    "kaggle datasets create -p kaggle/fsot-prediction-monitor/dataset --dir-mode zip",
+    "kaggle datasets version -p kaggle/fsot-prediction-monitor/dataset -m 'prediction monitor refresh' --dir-mode zip",
+    "kaggle kernels push -p kaggle/fsot-prediction-monitor/kernel"
+  ]
+}

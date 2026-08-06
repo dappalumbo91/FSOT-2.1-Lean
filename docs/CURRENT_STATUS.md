@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-08-06T12:49:33.423882+00:00`  
+**Generated:** `2026-08-06T12:59:48.638943+00:00`  
 **Edition stamp:** 2026-08-06  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 

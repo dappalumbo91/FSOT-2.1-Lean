@@ -1,0 +1,565 @@
+{
+  "generated_at": "2026-08-06T12:59:40.068574+00:00",
+  "online": true,
+  "authority_pin_prefix": "D1D38A",
+  "registry_version": "1.0",
+  "schedule": {
+    "recommended_interval": "7d",
+    "scheduler_hint": "python scripts/run_prediction_monitor.py --offline",
+    "online_interval": "14d",
+    "online_hint": "python scripts/run_prediction_monitor.py --online"
+  },
+  "summary": {
+    "watch_count": 14,
+    "outcomes": {
+      "source_reachable_awaiting_release": 2,
+      "local_green_hold": 8,
+      "open_predata": 3,
+      "data_available": 1
+    },
+    "prereg_prediction_count": 48,
+    "prereg_with_future_survey_tag": 13,
+    "prereg_domain_count": 27,
+    "t5_freeze_id": "TOE-PREREG-20260806",
+    "t5_bundle_sha256": "b2bbab9c65dd5957c386c9228998ad1212154c4677bcd6d25fff4bc67abe0864",
+    "future_ledger_rows": 10,
+    "green_gate_pass_count": 472,
+    "green_gate_fail_count": 0
+  },
+  "watches": [
+    {
+      "id": "WATCH-Euclid-DR1-S8",
+      "title": "Euclid DR1 weak-lensing S8",
+      "sector": "cosmology",
+      "pred_ids": [
+        "PRED-002",
+        "PRED-S8",
+        "PRED-042"
+      ],
+      "fsot_lock": 0.805,
+      "unit": "S8",
+      "kill_if": "FSOT S8 outside next Euclid\u2013DES\u2013Planck class band",
+      "urgency": "high",
+      "data_drop": {
+        "facility": "Euclid",
+        "product": "DR1-Foundation then DR1 complete (weak lensing / S8)",
+        "window": "2026-11 to mid-2027",
+        "status_as_of": "2026-08-06",
+        "notes": "ESA: DR1-Foundation ~12 Nov 2026 (raw/calibrated ~1900 deg\u00b2); complete DR1 with higher-level WL/clustering mid-2027.\n",
+        "urls": [
+          "https://www.cosmos.esa.int/web/euclid/timeline",
+          "https://www.cosmos.esa.int/web/euclid/dr1-timeline"
+        ]
+      },
+      "check_kind": "manual_or_catalog",
+      "outcome": "source_reachable_awaiting_release",
+      "detail": {
+        "contested_match": {
+          "name": "sigma_8",
+          "fsot_error_pct": 0.00296,
+          "within_green_gate": true,
+          "status": "open_observable_resolved"
+        },
+        "url_probes": [
+          {
+            "ok": true,
+            "status": 200,
+            "url": "https://www.cosmos.esa.int/web/euclid/timeline"
+          },
+          {
+            "ok": true,
+            "status": 200,
+            "url": "https://www.cosmos.esa.int/web/euclid/dr1-timeline"
+          }
+        ],
+        "in_t5_freeze": true
+      }
+    },
+    {
+      "id": "WATCH-Euclid-DR1-wa",
+      "title": "Euclid + DESI joint dark-energy wa",
+      "sector": "cosmology",
+      "pred_ids": [
+        "PRED-wa",
+        "PRED-043"
+      ],
+      "fsot_lock": -1.018,
+      "unit": "w_a",
+      "kill_if": "desi_or_euclid_3sigma_exclusion of frozen wa",
+      "urgency": "high",
+      "data_drop": {
+        "facility": "Euclid + DESI",
+        "product": "BAO / clustering DE posteriors",
+        "window": "2026-11 to 2027",
+        "status_as_of": "2026-08-06",
+        "notes": "DESI multi-year BAO already public; Euclid DR1 enables joint Stage-IV DE.",
+        "urls": [
+          "https://data.desi.lbl.gov/",
+          "https://www.cosmos.esa.int/web/euclid/timeline"
+        ]
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "contested_match": {
+          "name": "w_a",
+          "fsot_error_pct": 0.000595,
+          "within_green_gate": true,
+          "status": "bao_sector_refined"
+        },
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.0,
+          "green_gate_pass": true,
+          "domain": "DESI_wa_Constraint",
+          "file": "desi_wa_constraint_benchmark.json"
+        },
+        "in_t5_freeze": true
+      }
+    },
+    {
+      "id": "WATCH-Rubin-LSST-Y1-structure",
+      "title": "Rubin LSST early structure / S8 pathfinder",
+      "sector": "cosmology",
+      "pred_ids": [
+        "PRED-002",
+        "PRED-044"
+      ],
+      "fsot_lock": 0.805,
+      "unit": "S8",
+      "kill_if": "early LSST S8 pathfinder outside FSOT band when published",
+      "urgency": "high",
+      "data_drop": {
+        "facility": "NSF-DOE Vera C. Rubin Observatory",
+        "product": "LSST EDP2 / early science / Y1 cosmology pathfinders",
+        "window": "2026-10 to 2027",
+        "status_as_of": "2026-08-06",
+        "notes": "LSST science survey began 2026-06-30. EDP2 phase-2 individual-image products expected Oct\u2013Dec 2026. Early-science grants target DP2 lensing.\n",
+        "urls": [
+          "https://rubinobservatory.org/",
+          "https://lsstdiscoveryalliance.org/"
+        ]
+      },
+      "check_kind": "manual_or_catalog",
+      "outcome": "source_reachable_awaiting_release",
+      "detail": {
+        "contested_match": {
+          "name": "sigma_8",
+          "fsot_error_pct": 0.00296,
+          "within_green_gate": true,
+          "status": "open_observable_resolved"
+        },
+        "url_probes": [
+          {
+            "ok": true,
+            "status": 200,
+            "url": "https://rubinobservatory.org/"
+          },
+          {
+            "ok": true,
+            "status": 200,
+            "url": "https://lsstdiscoveryalliance.org/"
+          }
+        ],
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-DESI-BAO-H0",
+      "title": "DESI BAO / H0 bridge vs FSOT 70.75",
+      "sector": "cosmology",
+      "pred_ids": [
+        "PRED-001",
+        "PRED-H0-bridge",
+        "PRED-046"
+      ],
+      "fsot_lock": 70.75,
+      "unit": "km/s/Mpc",
+      "kill_if": "not_between next CMB and local centrals",
+      "urgency": "high",
+      "data_drop": {
+        "facility": "DESI",
+        "product": "public BAO / cosmology catalogs + extensions",
+        "window": "ongoing 2026-2027",
+        "status_as_of": "2026-08-06",
+        "notes": "DESI DR-class cosmology public; operations extended; more overlap with Rubin.",
+        "urls": [
+          "https://data.desi.lbl.gov/"
+        ]
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "contested_match": {
+          "name": "H0_Planck_CMB",
+          "fsot_error_pct": 0.192564,
+          "within_green_gate": true,
+          "status": "cmb_sector_resolved"
+        },
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.010049,
+          "green_gate_pass": true,
+          "domain": "DESI_Public_Depth_Open",
+          "file": "desi_public_depth_open_benchmark.json"
+        },
+        "in_t5_freeze": true
+      }
+    },
+    {
+      "id": "WATCH-Local-H0-JWST",
+      "title": "JWST / SH0ES-class local distance ladder H0",
+      "sector": "cosmology",
+      "pred_ids": [
+        "PRED-001",
+        "PRED-051"
+      ],
+      "fsot_lock": 70.75,
+      "unit": "km/s/Mpc",
+      "kill_if": "bridge fails when next local+CMB pair published",
+      "urgency": "high",
+      "data_drop": {
+        "facility": "JWST + HST distance ladder programs",
+        "product": "Cepheid / TRGB / SNIa H0 papers",
+        "window": "rolling 2026-2027",
+        "status_as_of": "2026-08-06",
+        "notes": "Local H0 still contested; each new JWST paper is a kill-check opportunity.",
+        "urls": [
+          "https://arxiv.org/list/astro-ph.CO/recent"
+        ]
+      },
+      "check_kind": "literature_watch",
+      "outcome": "open_predata",
+      "detail": {
+        "contested_match": {
+          "name": "H0_Planck_CMB",
+          "fsot_error_pct": 0.192564,
+          "within_green_gate": true,
+          "status": "cmb_sector_resolved"
+        },
+        "note": "Literature kill-check; no auto scrape of papers.",
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-CMB-Neff",
+      "title": "Next CMB N_eff (SO / ACT / SPT class)",
+      "sector": "cosmology",
+      "pred_ids": [
+        "PRED-Neffective",
+        "PRED-047"
+      ],
+      "fsot_lock": 3.046,
+      "unit": "N_eff",
+      "kill_if": "cmb_3sigma_exclusion of frozen N_eff",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "Simons Observatory / ACT / SPT-3G (CMB-S4 not DOE/NSF continued)",
+        "product": "N_eff posterior updates",
+        "window": "2026-2028",
+        "status_as_of": "2026-08-06",
+        "notes": "CMB-S4 funding discontinued mid-2025; SO/ACT/SPT remain the near-term N_eff path.",
+        "urls": [
+          "https://simonsobservatory.org/"
+        ]
+      },
+      "check_kind": "literature_watch",
+      "outcome": "open_predata",
+      "detail": {
+        "contested_match": {
+          "name": "N_eff",
+          "fsot_error_pct": 0.009407,
+          "within_green_gate": true,
+          "status": "open_observable_resolved"
+        },
+        "note": "Literature kill-check; no auto scrape of papers.",
+        "in_t5_freeze": true
+      }
+    },
+    {
+      "id": "WATCH-LVK-GWTC",
+      "title": "LVK catalog growth / compact binary rate class",
+      "sector": "gravitational_waves",
+      "pred_ids": [
+        "PRED-048"
+      ],
+      "fsot_lock": null,
+      "unit": "catalog_count_and_rate_class",
+      "kill_if": "FSOT compact-binary panel residual >0.5% on next GWOSC refresh",
+      "urgency": "high",
+      "data_drop": {
+        "facility": "LIGO-Virgo-KAGRA",
+        "product": "GWTC-5.0+ and remaining O4 open data; O5 start ~late 2026",
+        "window": "2026-05 done (GWTC-5); more O4 ~Dec 2026; O5 ~late 2026",
+        "status_as_of": "2026-08-06",
+        "notes": "GWTC-5.0 (May 2026) brought cumulative p_astro\u22650.5 candidates to ~390. Remaining O4 public data expected ~Dec 2026. O5 envisioned late summer/fall 2026.\n",
+        "urls": [
+          "https://gwosc.org/",
+          "https://gwosc.org/GWTC-5.0/"
+        ]
+      },
+      "check_kind": "open_api",
+      "outcome": "data_available",
+      "detail": {
+        "online_probe": {
+          "ok": true,
+          "event_count": 391,
+          "source": "https://www.gwosc.org/eventapi/json/GWTC/"
+        },
+        "note": "GWOSC GWTC reports 391 events \u2014 compare residual panels; do not retune freeze.",
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-PDG-mH",
+      "title": "PDG Higgs mass combination",
+      "sector": "particle_physics",
+      "pred_ids": [
+        "PRED-mH",
+        "PRED-049"
+      ],
+      "fsot_lock": 125.25,
+      "unit": "GeV",
+      "kill_if": "pdg_update_outside_0_5pct",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "PDG / ATLAS+CMS combinations",
+        "product": "annual PDG particle listings + Higgs mass",
+        "window": "annual",
+        "status_as_of": "2026-08-06",
+        "notes": "FSOT m_H is a residual-gated seed readout vs PDG central.",
+        "urls": [
+          "https://pdg.lbl.gov/"
+        ]
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "contested_match": {
+          "name": "m_H",
+          "fsot_error_pct": 0.039905,
+          "within_green_gate": true,
+          "status": "hierarchy_resolved"
+        },
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.014415233331492876,
+          "green_gate_pass": true,
+          "domain": "particle_physics_benchmark.json",
+          "file": "particle_physics_benchmark.json"
+        },
+        "in_t5_freeze": true
+      }
+    },
+    {
+      "id": "WATCH-muon-g2",
+      "title": "Muon g-2 final / lattice SM theory",
+      "sector": "particle_physics",
+      "pred_ids": [
+        "PRED-004",
+        "PRED-050"
+      ],
+      "fsot_lock": 2.49e-09,
+      "unit": "delta_a_mu",
+      "kill_if": "sign flip vs Fermilab-class excess or theory absorbs full excess without FSOT map",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "Fermilab Muon g-2 + BMW/RBC lattice community",
+        "product": "final experimental + hadronic vacuum polarization updates",
+        "window": "2026-2027 literature",
+        "status_as_of": "2026-08-06",
+        "notes": "Theory-side lattice HVP still moving; experimental Fermilab program completed phases.",
+        "urls": [
+          "https://muon-g-2.fnal.gov/"
+        ]
+      },
+      "check_kind": "literature_watch",
+      "outcome": "open_predata",
+      "detail": {
+        "note": "Literature kill-check; no auto scrape of papers.",
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-CHIME-FRB",
+      "title": "CHIME/FRB high-DM excess class",
+      "sector": "multi_messenger",
+      "pred_ids": [
+        "PRED-FRB-DM-excess",
+        "PRED-052"
+      ],
+      "fsot_lock": 200.0,
+      "unit": "pc_cm3_excess",
+      "kill_if": "excess outside 0.5% of frozen central on panel refresh",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "CHIME/FRB",
+        "product": "catalog / DM distribution papers",
+        "window": "rolling",
+        "status_as_of": "2026-08-06",
+        "urls": [
+          "https://www.chime-frb.ca/"
+        ]
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "contested_match": {
+          "name": "FRB_DM_excess_vs_IGM",
+          "fsot_error_pct": 0.042611,
+          "within_green_gate": true,
+          "status": "tension_resolved"
+        },
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.096204,
+          "green_gate_pass": true,
+          "domain": "cosmology_anomalies_benchmark.json",
+          "file": "cosmology_anomalies_benchmark.json"
+        },
+        "in_t5_freeze": true
+      }
+    },
+    {
+      "id": "WATCH-JWST-highz",
+      "title": "JWST high-z galaxy abundance class (JADES/COSMOS-3D)",
+      "sector": "astrophysics",
+      "pred_ids": [
+        "PRED-053"
+      ],
+      "fsot_lock": null,
+      "unit": "panel_residual_pct",
+      "kill_if": "FSOT high-z / JWST open panels exceed 0.5% on next public catalog refresh",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "JWST public surveys",
+        "product": "JADES / COSMOS-3D / NEXUS public catalogs",
+        "window": "rolling 2026-2027",
+        "status_as_of": "2026-08-06",
+        "notes": "Large extragalactic JWST datasets becoming public; time-domain + high-z abundance.",
+        "urls": [
+          "https://archive.stsci.edu/"
+        ]
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.022461,
+          "green_gate_pass": true,
+          "domain": "Gaia_Astrometry_Panel_Deep",
+          "file": "gaia_astrometry_panel_deep_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-Climate-NCEI",
+      "title": "NCEI / open climate station holdout residual",
+      "sector": "earth_science",
+      "pred_ids": [
+        "PRED-054"
+      ],
+      "fsot_lock": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "kill_if": "climate observed panel exceeds 0.5% green gate",
+      "urgency": "low",
+      "data_drop": {
+        "facility": "NOAA NCEI open data",
+        "product": "station normals / continuous refresh",
+        "window": "continuous",
+        "status_as_of": "2026-08-06",
+        "urls": [
+          "https://www.ncei.noaa.gov/"
+        ]
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.01201268326195996,
+          "green_gate_pass": true,
+          "domain": "climate_observed_benchmark",
+          "file": "climate_observed_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-Zebrafish-atlas",
+      "title": "Open zebrafish developmental atlas residual hold",
+      "sector": "biology",
+      "pred_ids": [
+        "PRED-Zebrafish-panel-hold",
+        "PRED-055"
+      ],
+      "fsot_lock": 0.358,
+      "unit": "pooled_median_error_pct_watch",
+      "kill_if": "panel exceeds 0.5% on refresh",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "Zebrahub / open developmental atlases",
+        "product": "public expression / lineage releases",
+        "window": "rolling",
+        "status_as_of": "2026-08-06"
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_watch",
+          "pooled_median_error_pct": 0.3579695,
+          "green_gate_pass": true,
+          "domain": "Zebrafish_Predictive_Validation_Panel",
+          "file": "zebrafish_predictive_validation_panel_benchmark.json"
+        },
+        "in_t5_freeze": true
+      }
+    },
+    {
+      "id": "WATCH-Fuel-lab-hold",
+      "title": "FSOT fuel thermochemistry panel hold",
+      "sector": "energy",
+      "pred_ids": [
+        "PRED-034"
+      ],
+      "fsot_lock": 0.039349,
+      "unit": "pooled_median_error_pct",
+      "kill_if": "Fuel_Lab_Live_Panel exceeds 0.5%",
+      "urgency": "low",
+      "data_drop": {
+        "facility": "in-repo open thermochemistry + simulator",
+        "product": "panel refresh",
+        "window": "on demand",
+        "status_as_of": "2026-08-06"
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.039349,
+          "green_gate_pass": true,
+          "domain": "Fuel_Lab_Live_Panel",
+          "file": "fuel_lab_live_panel_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    }
+  ],
+  "high_urgency_open": [
+    "WATCH-Euclid-DR1-S8",
+    "WATCH-Rubin-LSST-Y1-structure",
+    "WATCH-Local-H0-JWST",
+    "WATCH-LVK-GWTC"
+  ],
+  "commands": {
+    "offline": "python scripts/run_prediction_monitor.py",
+    "online": "python scripts/run_prediction_monitor.py --online",
+    "freeze": "python -c \"import sys; sys.path.insert(0,'scripts'); from build_toe_gap_closure import freeze_prereg; freeze_prereg()\"",
+    "kaggle_pack": "python scripts/build_kaggle_prediction_pack.py"
+  },
+  "report_sha256": "e1633804ad823847194414c30a5c0df15f8f5ec7cb369d4bfdad0a97a419c7fd"
+}

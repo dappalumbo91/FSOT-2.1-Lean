@@ -66,4 +66,4 @@ python scripts/build_toe_gap_closure.py
 3. Re-hash listed `files[]` and verify they match.  
 4. After a survey release: evaluate each `kill` string; register outcome in falsification registry — **do not** edit the frozen predicted centrals.
 
-See also: [`TOE_GAP_CLOSURE.md`](TOE_GAP_CLOSURE.md) · [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`INDEPENDENT_REPRODUCTION.md`](INDEPENDENT_REPRODUCTION.md)
+See also: [`PREDICTION_MONITOR.md`](PREDICTION_MONITOR.md) · [`TOE_GAP_CLOSURE.md`](TOE_GAP_CLOSURE.md) · [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`INDEPENDENT_REPRODUCTION.md`](INDEPENDENT_REPRODUCTION.md)
