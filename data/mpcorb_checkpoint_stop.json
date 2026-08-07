@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-08-07T00:01:35.973594+00:00",
+  "stop_requested": true,
+  "what_this_is": {
+    "catalog": "MPCORB \u2014 IAU Minor Planet Center orbit catalog",
+    "bodies": "Minor planets: main-belt asteroids, NEOs, Trojans/Hildas-ish outer belt, distant (TNO-class a>30), other. NOT major planets, NOT moons, NOT stars. Comets live in separate AllCometEls file.",
+    "object": "One minor planet / asteroid designation",
+    "optical_observation": "One telescope RA/Dec measurement of that body",
+    "fsot_solved_for": "Element residual law computed=measured*(1+|S|*factor) at regime D_eff \u2014 NOT secular sky drift",
+    "classical_layer": "Subsampled raw MPC optical vs JPL Horizons O-C arcsec"
+  },
+  "storage": {
+    "objects_dir_bytes": 3771945618,
+    "objects_dir_GB": 3.513,
+    "object_files": 3712,
+    "avg_KB_per_object": 992.3
+  },
+  "counts": {
+    "queue_size": 5403,
+    "fetched_ok_index": 3655,
+    "object_files_on_disk": 3712,
+    "total_optical_observations_index": 24999158,
+    "sum_n_optical_kept_files": 25254081,
+    "catalog_walk_line": 5544,
+    "fetch_fail": 18
+  },
+  "diversity": {
+    "by_regime": {
+      "main_belt": 3442,
+      "other": 54,
+      "neo": 57,
+      "outer_belt": 105,
+      "distant": 54
+    },
+    "by_U": {
+      "U0-2": 3670,
+      "U3-5": 32,
+      "U6-9": 6,
+      "U?": 4
+    },
+    "neo_flag_count": 57,
+    "a_AU_min": 0.8320381,
+    "a_AU_median": 2.71267865,
+    "a_AU_max": 1348.681387,
+    "e_median": 0.1386318,
+    "e_max": 0.9904522,
+    "optical_per_object_median": 6308.0,
+    "optical_per_object_max": 19395
+  },
+  "fsot_residual": {
+    "objects_checked": 3712,
+    "pooled_median_error_pct": 0.023015374156232223,
+    "p95_error_pct": 0.02301537415623719,
+    "max_error_pct": 0.02647232395254742,
+    "over_framework_gate_0_5pct": 0,
+    "all_pass": true,
+    "by_regime_median_pct": {
+      "distant": 0.026472323952541895,
+      "main_belt": 0.023015374156232317,
+      "neo": 0.023015374156232546,
+      "other": 0.02246148920415044,
+      "outer_belt": 0.022461489204150697
+    },
+    "by_regime_n": {
+      "distant": 54,
+      "main_belt": 3442,
+      "neo": 57,
+      "other": 54,
+      "outer_belt": 105
+    },
+    "law": "computed = measured * (1 + |S| * factor) at regime D_eff"
+  },
+  "classical_oc": {
+    "objects_with_oc": 1345,
+    "median_oc_arcsec": 2.670920548806659,
+    "p95_oc_arcsec": 63.49715498339397,
+    "generated_at": "2026-08-06T23:57:28.065984+00:00"
+  },
+  "epoch_run": {
+    "phase": "epoch_32",
+    "elapsed_min": 373.89,
+    "epochs_completed": 31,
+    "halted": null,
+    "started_at": "2026-08-06T17:43:34.984825+00:00",
+    "updated_at": "2026-08-06T23:57:28.186930+00:00"
+  },
+  "not_covered_yet": [
+    "Major planets (Mercury\u2013Neptune) \u2014 not MPCORB",
+    "Natural satellites / moons",
+    "Comets (separate AllCometEls catalog \u2014 partial tooling exists)",
+    "Artificial satellites / spacecraft",
+    "Exoplanets, stars, galaxies",
+    "Full 1.55M MPCORB optical download (stopped for storage)",
+    "Provisional designations dense sample (numbered-only focus)"
+  ],
+  "recommendation": {
+    "stop_full_optical_grind": true,
+    "publishable_now": "Yes \u2014 multi-thousand minor-planet dual residual checkpoint",
+    "next_diversity": [
+      "Comets via AllCometEls + Meteorology D_eff routing (already in regime map)",
+      "Ensure distant/TNO and NEO cells are not under-sampled relative to main_belt",
+      "Optional planetary residual panel from existing planetary benchmarks (not MPCORB)",
+      "Do NOT expand raw optical to full catalog without more disk"
+    ]
+  }
+}

@@ -1,37 +1,37 @@
 {
-  "phase": "finished",
+  "phase": "epoch_32",
   "run": {
-    "started_at": "2026-08-06T15:25:22.508567+00:00",
+    "started_at": "2026-08-06T17:43:34.984825+00:00",
     "mode": "baseline_epochs",
-    "budget_minutes": 45.0,
-    "epochs_planned": 6,
-    "fetch_per_epoch": 70,
-    "oc_per_epoch": 25,
+    "budget_minutes": 10080.0,
+    "epochs_planned": 5000,
+    "fetch_per_epoch": 100,
+    "oc_per_epoch": 35,
     "sleep_s": 0.55,
-    "epochs_completed": 6,
-    "halted": "max_minutes",
+    "epochs_completed": 31,
+    "halted": null,
     "epochs": [
       {
         "epoch": 1,
-        "at": "2026-08-06T15:32:26.671424+00:00",
-        "elapsed_min": 7.07,
-        "epoch_min": 7.02,
-        "queue_size": 253,
-        "queue_added": 100,
-        "catalog_walk_line": 168,
+        "at": "2026-08-06T17:56:07.167278+00:00",
+        "elapsed_min": 12.54,
+        "epoch_min": 12.54,
+        "queue_size": 903,
+        "queue_added": 150,
+        "catalog_walk_line": 836,
         "queue_expand": {
-          "added": 100,
-          "start_line": 0,
-          "new_start_line": 168,
-          "scanned": 168,
-          "eligible_seen": 125,
-          "queue_size": 253,
+          "added": 150,
+          "start_line": 682,
+          "new_start_line": 836,
+          "scanned": 154,
+          "eligible_seen": 154,
+          "queue_size": 903,
           "mode": "sequential_catalog_walk",
           "catalog_exhausted": false
         },
         "fsot": {
-          "objects_checked": 237,
-          "pooled_median_error_pct": 0.023015374156234496,
+          "objects_checked": 687,
+          "pooled_median_error_pct": 0.023015374156234024,
           "all_pass": true,
           "objects_over_gate": 0
         },
@@ -40,25 +40,25 @@
       },
       {
         "epoch": 2,
-        "at": "2026-08-06T15:39:36.431912+00:00",
-        "elapsed_min": 14.23,
-        "epoch_min": 7.16,
-        "queue_size": 353,
-        "queue_added": 100,
-        "catalog_walk_line": 270,
+        "at": "2026-08-06T18:09:50.873027+00:00",
+        "elapsed_min": 26.26,
+        "epoch_min": 13.73,
+        "queue_size": 1053,
+        "queue_added": 150,
+        "catalog_walk_line": 991,
         "queue_expand": {
-          "added": 100,
-          "start_line": 168,
-          "new_start_line": 270,
-          "scanned": 102,
-          "eligible_seen": 102,
-          "queue_size": 353,
+          "added": 150,
+          "start_line": 836,
+          "new_start_line": 991,
+          "scanned": 155,
+          "eligible_seen": 155,
+          "queue_size": 1053,
           "mode": "sequential_catalog_walk",
           "catalog_exhausted": false
         },
         "fsot": {
-          "objects_checked": 307,
-          "pooled_median_error_pct": 0.023015374156234288,
+          "objects_checked": 787,
+          "pooled_median_error_pct": 0.023015374156233993,
           "all_pass": true,
           "objects_over_gate": 0
         },
@@ -67,25 +67,25 @@
       },
       {
         "epoch": 3,
-        "at": "2026-08-06T15:47:58.457230+00:00",
-        "elapsed_min": 22.6,
-        "epoch_min": 8.37,
-        "queue_size": 453,
-        "queue_added": 100,
-        "catalog_walk_line": 371,
+        "at": "2026-08-06T18:22:40.505691+00:00",
+        "elapsed_min": 39.09,
+        "epoch_min": 12.83,
+        "queue_size": 1203,
+        "queue_added": 150,
+        "catalog_walk_line": 1147,
         "queue_expand": {
-          "added": 100,
-          "start_line": 270,
-          "new_start_line": 371,
-          "scanned": 101,
-          "eligible_seen": 101,
-          "queue_size": 453,
+          "added": 150,
+          "start_line": 991,
+          "new_start_line": 1147,
+          "scanned": 156,
+          "eligible_seen": 156,
+          "queue_size": 1203,
           "mode": "sequential_catalog_walk",
           "catalog_exhausted": false
         },
         "fsot": {
-          "objects_checked": 377,
-          "pooled_median_error_pct": 0.023015374156234242,
+          "objects_checked": 887,
+          "pooled_median_error_pct": 0.023015374156233954,
           "all_pass": true,
           "objects_over_gate": 0
         },
@@ -94,25 +94,25 @@
       },
       {
         "epoch": 4,
-        "at": "2026-08-06T15:56:00.626942+00:00",
-        "elapsed_min": 30.64,
-        "epoch_min": 8.04,
-        "queue_size": 553,
-        "queue_added": 100,
-        "catalog_walk_line": 474,
+        "at": "2026-08-06T18:35:43.702621+00:00",
+        "elapsed_min": 52.15,
+        "epoch_min": 13.05,
+        "queue_size": 1353,
+        "queue_added": 150,
+        "catalog_walk_line": 1305,
         "queue_expand": {
-          "added": 100,
-          "start_line": 371,
-          "new_start_line": 474,
-          "scanned": 103,
-          "eligible_seen": 103,
-          "queue_size": 553,
+          "added": 150,
+          "start_line": 1147,
+          "new_start_line": 1305,
+          "scanned": 158,
+          "eligible_seen": 158,
+          "queue_size": 1353,
           "mode": "sequential_catalog_walk",
           "catalog_exhausted": false
         },
         "fsot": {
-          "objects_checked": 447,
-          "pooled_median_error_pct": 0.023015374156234156,
+          "objects_checked": 987,
+          "pooled_median_error_pct": 0.023015374156233823,
           "all_pass": true,
           "objects_over_gate": 0
         },
@@ -121,25 +121,25 @@
       },
       {
         "epoch": 5,
-        "at": "2026-08-06T16:04:31.215894+00:00",
-        "elapsed_min": 39.15,
-        "epoch_min": 8.51,
-        "queue_size": 653,
-        "queue_added": 100,
-        "catalog_walk_line": 578,
+        "at": "2026-08-06T18:48:58.707645+00:00",
+        "elapsed_min": 65.4,
+        "epoch_min": 13.25,
+        "queue_size": 1503,
+        "queue_added": 150,
+        "catalog_walk_line": 1456,
         "queue_expand": {
-          "added": 100,
-          "start_line": 474,
-          "new_start_line": 578,
-          "scanned": 104,
-          "eligible_seen": 104,
-          "queue_size": 653,
+          "added": 150,
+          "start_line": 1305,
+          "new_start_line": 1456,
+          "scanned": 151,
+          "eligible_seen": 151,
+          "queue_size": 1503,
           "mode": "sequential_catalog_walk",
           "catalog_exhausted": false
         },
         "fsot": {
-          "objects_checked": 517,
-          "pooled_median_error_pct": 0.023015374156234242,
+          "objects_checked": 1087,
+          "pooled_median_error_pct": 0.023015374156233837,
           "all_pass": true,
           "objects_over_gate": 0
         },
@@ -148,235 +148,709 @@
       },
       {
         "epoch": 6,
-        "at": "2026-08-06T16:12:47.775350+00:00",
-        "elapsed_min": 47.42,
-        "epoch_min": 8.28,
-        "queue_size": 753,
-        "queue_added": 100,
-        "catalog_walk_line": 682,
+        "at": "2026-08-06T19:00:31.139115+00:00",
+        "elapsed_min": 76.94,
+        "epoch_min": 11.54,
+        "queue_size": 1653,
+        "queue_added": 150,
+        "catalog_walk_line": 1608,
         "queue_expand": {
-          "added": 100,
-          "start_line": 578,
-          "new_start_line": 682,
-          "scanned": 104,
-          "eligible_seen": 104,
-          "queue_size": 753,
+          "added": 150,
+          "start_line": 1456,
+          "new_start_line": 1608,
+          "scanned": 152,
+          "eligible_seen": 152,
+          "queue_size": 1653,
           "mode": "sequential_catalog_walk",
           "catalog_exhausted": false
         },
         "fsot": {
-          "objects_checked": 587,
-          "pooled_median_error_pct": 0.023015374156234107,
+          "objects_checked": 1187,
+          "pooled_median_error_pct": 0.02301537415623395,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 7,
+        "at": "2026-08-06T19:12:25.854974+00:00",
+        "elapsed_min": 88.85,
+        "epoch_min": 11.91,
+        "queue_size": 1803,
+        "queue_added": 150,
+        "catalog_walk_line": 1765,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 1608,
+          "new_start_line": 1765,
+          "scanned": 157,
+          "eligible_seen": 157,
+          "queue_size": 1803,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 1287,
+          "pooled_median_error_pct": 0.023015374156234027,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 8,
+        "at": "2026-08-06T19:24:20.086478+00:00",
+        "elapsed_min": 100.75,
+        "epoch_min": 11.9,
+        "queue_size": 1953,
+        "queue_added": 150,
+        "catalog_walk_line": 1924,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 1765,
+          "new_start_line": 1924,
+          "scanned": 159,
+          "eligible_seen": 159,
+          "queue_size": 1953,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 1387,
+          "pooled_median_error_pct": 0.023015374156234027,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 9,
+        "at": "2026-08-06T19:36:31.232426+00:00",
+        "elapsed_min": 112.94,
+        "epoch_min": 12.19,
+        "queue_size": 2103,
+        "queue_added": 150,
+        "catalog_walk_line": 2085,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 1924,
+          "new_start_line": 2085,
+          "scanned": 161,
+          "eligible_seen": 161,
+          "queue_size": 2103,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 1487,
+          "pooled_median_error_pct": 0.023015374156233993,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 10,
+        "at": "2026-08-06T19:47:44.093295+00:00",
+        "elapsed_min": 124.15,
+        "epoch_min": 11.21,
+        "queue_size": 2253,
+        "queue_added": 150,
+        "catalog_walk_line": 2243,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 2085,
+          "new_start_line": 2243,
+          "scanned": 158,
+          "eligible_seen": 158,
+          "queue_size": 2253,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 1587,
+          "pooled_median_error_pct": 0.023015374156234024,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 11,
+        "at": "2026-08-06T19:59:02.777375+00:00",
+        "elapsed_min": 135.46,
+        "epoch_min": 11.31,
+        "queue_size": 2403,
+        "queue_added": 150,
+        "catalog_walk_line": 2393,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 2243,
+          "new_start_line": 2393,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 2403,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 1687,
+          "pooled_median_error_pct": 0.023015374156234027,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 12,
+        "at": "2026-08-06T20:12:59.481738+00:00",
+        "elapsed_min": 149.41,
+        "epoch_min": 13.94,
+        "queue_size": 2553,
+        "queue_added": 150,
+        "catalog_walk_line": 2543,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 2393,
+          "new_start_line": 2543,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 2553,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 1787,
+          "pooled_median_error_pct": 0.02301537415623395,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 13,
+        "at": "2026-08-06T20:26:51.213451+00:00",
+        "elapsed_min": 163.27,
+        "epoch_min": 13.86,
+        "queue_size": 2703,
+        "queue_added": 150,
+        "catalog_walk_line": 2693,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 2543,
+          "new_start_line": 2693,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 2703,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 1887,
+          "pooled_median_error_pct": 0.02301537415623395,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 14,
+        "at": "2026-08-06T20:43:07.471086+00:00",
+        "elapsed_min": 179.54,
+        "epoch_min": 16.27,
+        "queue_size": 2853,
+        "queue_added": 150,
+        "catalog_walk_line": 2843,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 2693,
+          "new_start_line": 2843,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 2853,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 1970,
+          "pooled_median_error_pct": 0.023015374156233954,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 15,
+        "at": "2026-08-06T20:56:06.178050+00:00",
+        "elapsed_min": 192.52,
+        "epoch_min": 12.98,
+        "queue_size": 3003,
+        "queue_added": 150,
+        "catalog_walk_line": 2993,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 2843,
+          "new_start_line": 2993,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 3003,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 2070,
+          "pooled_median_error_pct": 0.02301537415623395,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 16,
+        "at": "2026-08-06T21:09:21.023645+00:00",
+        "elapsed_min": 205.77,
+        "epoch_min": 13.25,
+        "queue_size": 3153,
+        "queue_added": 150,
+        "catalog_walk_line": 3143,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 2993,
+          "new_start_line": 3143,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 3153,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 2170,
+          "pooled_median_error_pct": 0.0230153741562339,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 17,
+        "at": "2026-08-06T21:21:59.921354+00:00",
+        "elapsed_min": 218.42,
+        "epoch_min": 12.65,
+        "queue_size": 3303,
+        "queue_added": 150,
+        "catalog_walk_line": 3293,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 3143,
+          "new_start_line": 3293,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 3303,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 2270,
+          "pooled_median_error_pct": 0.023015374156233913,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 18,
+        "at": "2026-08-06T21:32:51.343334+00:00",
+        "elapsed_min": 229.27,
+        "epoch_min": 10.86,
+        "queue_size": 3453,
+        "queue_added": 150,
+        "catalog_walk_line": 3443,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 3293,
+          "new_start_line": 3443,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 3453,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 2370,
+          "pooled_median_error_pct": 0.0230153741562339,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 19,
+        "at": "2026-08-06T21:44:21.795356+00:00",
+        "elapsed_min": 240.78,
+        "epoch_min": 11.51,
+        "queue_size": 3603,
+        "queue_added": 150,
+        "catalog_walk_line": 3593,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 3443,
+          "new_start_line": 3593,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 3603,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 2470,
+          "pooled_median_error_pct": 0.0230153741562339,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 20,
+        "at": "2026-08-06T21:55:37.656306+00:00",
+        "elapsed_min": 252.04,
+        "epoch_min": 11.26,
+        "queue_size": 3753,
+        "queue_added": 150,
+        "catalog_walk_line": 3743,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 3593,
+          "new_start_line": 3743,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 3753,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 2570,
+          "pooled_median_error_pct": 0.023015374156233944,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 21,
+        "at": "2026-08-06T22:08:16.306642+00:00",
+        "elapsed_min": 264.69,
+        "epoch_min": 12.64,
+        "queue_size": 3903,
+        "queue_added": 150,
+        "catalog_walk_line": 3893,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 3743,
+          "new_start_line": 3893,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 3903,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 2670,
+          "pooled_median_error_pct": 0.02301537415623395,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 22,
+        "at": "2026-08-06T22:19:14.623929+00:00",
+        "elapsed_min": 275.66,
+        "epoch_min": 10.97,
+        "queue_size": 4053,
+        "queue_added": 150,
+        "catalog_walk_line": 4043,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 3893,
+          "new_start_line": 4043,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 4053,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 2770,
+          "pooled_median_error_pct": 0.023015374156233944,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 23,
+        "at": "2026-08-06T22:29:54.255419+00:00",
+        "elapsed_min": 286.32,
+        "epoch_min": 10.66,
+        "queue_size": 4203,
+        "queue_added": 150,
+        "catalog_walk_line": 4193,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 4043,
+          "new_start_line": 4193,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 4203,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 2870,
+          "pooled_median_error_pct": 0.023015374156233906,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 24,
+        "at": "2026-08-06T22:40:39.937777+00:00",
+        "elapsed_min": 297.08,
+        "epoch_min": 10.76,
+        "queue_size": 4353,
+        "queue_added": 150,
+        "catalog_walk_line": 4343,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 4193,
+          "new_start_line": 4343,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 4353,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 2970,
+          "pooled_median_error_pct": 0.023015374156233965,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 25,
+        "at": "2026-08-06T22:50:44.631869+00:00",
+        "elapsed_min": 307.16,
+        "epoch_min": 10.08,
+        "queue_size": 4503,
+        "queue_added": 150,
+        "catalog_walk_line": 4493,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 4343,
+          "new_start_line": 4493,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 4503,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 3070,
+          "pooled_median_error_pct": 0.023015374156233965,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 26,
+        "at": "2026-08-06T23:00:26.072892+00:00",
+        "elapsed_min": 316.85,
+        "epoch_min": 9.69,
+        "queue_size": 4653,
+        "queue_added": 150,
+        "catalog_walk_line": 4643,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 4493,
+          "new_start_line": 4643,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 4653,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 3170,
+          "pooled_median_error_pct": 0.023015374156233954,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 27,
+        "at": "2026-08-06T23:14:38.973775+00:00",
+        "elapsed_min": 331.07,
+        "epoch_min": 14.21,
+        "queue_size": 4803,
+        "queue_added": 150,
+        "catalog_walk_line": 4793,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 4643,
+          "new_start_line": 4793,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 4803,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 3270,
+          "pooled_median_error_pct": 0.023015374156233934,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 28,
+        "at": "2026-08-06T23:24:59.245270+00:00",
+        "elapsed_min": 341.4,
+        "epoch_min": 10.34,
+        "queue_size": 4953,
+        "queue_added": 150,
+        "catalog_walk_line": 4943,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 4793,
+          "new_start_line": 4943,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 4953,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 3370,
+          "pooled_median_error_pct": 0.023015374156233944,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 29,
+        "at": "2026-08-06T23:35:02.629447+00:00",
+        "elapsed_min": 351.46,
+        "epoch_min": 10.06,
+        "queue_size": 5103,
+        "queue_added": 150,
+        "catalog_walk_line": 5093,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 4943,
+          "new_start_line": 5093,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 5103,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 3470,
+          "pooled_median_error_pct": 0.023015374156233923,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 30,
+        "at": "2026-08-06T23:44:50.667209+00:00",
+        "elapsed_min": 361.26,
+        "epoch_min": 9.8,
+        "queue_size": 5253,
+        "queue_added": 150,
+        "catalog_walk_line": 5243,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 5093,
+          "new_start_line": 5243,
+          "scanned": 150,
+          "eligible_seen": 150,
+          "queue_size": 5253,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 3570,
+          "pooled_median_error_pct": 0.023015374156233944,
+          "all_pass": true,
+          "objects_over_gate": 0
+        },
+        "oc_ran": true,
+        "oc_rc": 0
+      },
+      {
+        "epoch": 31,
+        "at": "2026-08-06T23:57:28.136575+00:00",
+        "elapsed_min": 373.89,
+        "epoch_min": 12.62,
+        "queue_size": 5403,
+        "queue_added": 150,
+        "catalog_walk_line": 5394,
+        "queue_expand": {
+          "added": 150,
+          "start_line": 5243,
+          "new_start_line": 5394,
+          "scanned": 151,
+          "eligible_seen": 151,
+          "queue_size": 5403,
+          "mode": "sequential_catalog_walk",
+          "catalog_exhausted": false
+        },
+        "fsot": {
+          "objects_checked": 3669,
+          "pooled_median_error_pct": 0.023015374156233923,
           "all_pass": true,
           "objects_over_gate": 0
         },
         "oc_ran": true,
         "oc_rc": 0
       }
-    ],
-    "finished_at": "2026-08-06T16:12:47.796379+00:00",
-    "elapsed_min": 47.42
+    ]
   },
-  "elapsed_min": 47.42,
-  "message": "baseline finished: max_minutes",
-  "report": {
-    "generated_at": "2026-08-06T16:12:47.796379+00:00",
-    "run": {
-      "started_at": "2026-08-06T15:25:22.508567+00:00",
-      "mode": "baseline_epochs",
-      "budget_minutes": 45.0,
-      "epochs_planned": 6,
-      "fetch_per_epoch": 70,
-      "oc_per_epoch": 25,
-      "sleep_s": 0.55,
-      "epochs_completed": 6,
-      "halted": "max_minutes",
-      "epochs": [
-        {
-          "epoch": 1,
-          "at": "2026-08-06T15:32:26.671424+00:00",
-          "elapsed_min": 7.07,
-          "epoch_min": 7.02,
-          "queue_size": 253,
-          "queue_added": 100,
-          "catalog_walk_line": 168,
-          "queue_expand": {
-            "added": 100,
-            "start_line": 0,
-            "new_start_line": 168,
-            "scanned": 168,
-            "eligible_seen": 125,
-            "queue_size": 253,
-            "mode": "sequential_catalog_walk",
-            "catalog_exhausted": false
-          },
-          "fsot": {
-            "objects_checked": 237,
-            "pooled_median_error_pct": 0.023015374156234496,
-            "all_pass": true,
-            "objects_over_gate": 0
-          },
-          "oc_ran": true,
-          "oc_rc": 0
-        },
-        {
-          "epoch": 2,
-          "at": "2026-08-06T15:39:36.431912+00:00",
-          "elapsed_min": 14.23,
-          "epoch_min": 7.16,
-          "queue_size": 353,
-          "queue_added": 100,
-          "catalog_walk_line": 270,
-          "queue_expand": {
-            "added": 100,
-            "start_line": 168,
-            "new_start_line": 270,
-            "scanned": 102,
-            "eligible_seen": 102,
-            "queue_size": 353,
-            "mode": "sequential_catalog_walk",
-            "catalog_exhausted": false
-          },
-          "fsot": {
-            "objects_checked": 307,
-            "pooled_median_error_pct": 0.023015374156234288,
-            "all_pass": true,
-            "objects_over_gate": 0
-          },
-          "oc_ran": true,
-          "oc_rc": 0
-        },
-        {
-          "epoch": 3,
-          "at": "2026-08-06T15:47:58.457230+00:00",
-          "elapsed_min": 22.6,
-          "epoch_min": 8.37,
-          "queue_size": 453,
-          "queue_added": 100,
-          "catalog_walk_line": 371,
-          "queue_expand": {
-            "added": 100,
-            "start_line": 270,
-            "new_start_line": 371,
-            "scanned": 101,
-            "eligible_seen": 101,
-            "queue_size": 453,
-            "mode": "sequential_catalog_walk",
-            "catalog_exhausted": false
-          },
-          "fsot": {
-            "objects_checked": 377,
-            "pooled_median_error_pct": 0.023015374156234242,
-            "all_pass": true,
-            "objects_over_gate": 0
-          },
-          "oc_ran": true,
-          "oc_rc": 0
-        },
-        {
-          "epoch": 4,
-          "at": "2026-08-06T15:56:00.626942+00:00",
-          "elapsed_min": 30.64,
-          "epoch_min": 8.04,
-          "queue_size": 553,
-          "queue_added": 100,
-          "catalog_walk_line": 474,
-          "queue_expand": {
-            "added": 100,
-            "start_line": 371,
-            "new_start_line": 474,
-            "scanned": 103,
-            "eligible_seen": 103,
-            "queue_size": 553,
-            "mode": "sequential_catalog_walk",
-            "catalog_exhausted": false
-          },
-          "fsot": {
-            "objects_checked": 447,
-            "pooled_median_error_pct": 0.023015374156234156,
-            "all_pass": true,
-            "objects_over_gate": 0
-          },
-          "oc_ran": true,
-          "oc_rc": 0
-        },
-        {
-          "epoch": 5,
-          "at": "2026-08-06T16:04:31.215894+00:00",
-          "elapsed_min": 39.15,
-          "epoch_min": 8.51,
-          "queue_size": 653,
-          "queue_added": 100,
-          "catalog_walk_line": 578,
-          "queue_expand": {
-            "added": 100,
-            "start_line": 474,
-            "new_start_line": 578,
-            "scanned": 104,
-            "eligible_seen": 104,
-            "queue_size": 653,
-            "mode": "sequential_catalog_walk",
-            "catalog_exhausted": false
-          },
-          "fsot": {
-            "objects_checked": 517,
-            "pooled_median_error_pct": 0.023015374156234242,
-            "all_pass": true,
-            "objects_over_gate": 0
-          },
-          "oc_ran": true,
-          "oc_rc": 0
-        },
-        {
-          "epoch": 6,
-          "at": "2026-08-06T16:12:47.775350+00:00",
-          "elapsed_min": 47.42,
-          "epoch_min": 8.28,
-          "queue_size": 753,
-          "queue_added": 100,
-          "catalog_walk_line": 682,
-          "queue_expand": {
-            "added": 100,
-            "start_line": 578,
-            "new_start_line": 682,
-            "scanned": 104,
-            "eligible_seen": 104,
-            "queue_size": 753,
-            "mode": "sequential_catalog_walk",
-            "catalog_exhausted": false
-          },
-          "fsot": {
-            "objects_checked": 587,
-            "pooled_median_error_pct": 0.023015374156234107,
-            "all_pass": true,
-            "objects_over_gate": 0
-          },
-          "oc_ran": true,
-          "oc_rc": 0
-        }
-      ],
-      "finished_at": "2026-08-06T16:12:47.796379+00:00",
-      "elapsed_min": 47.42
-    },
-    "final_index": {
-      "fetched_ok": 573,
-      "sample_size": 753,
-      "total_optical_observations": 4096166,
-      "queue_size": 753
-    },
-    "final_fsot_verify": {
-      "objects_checked": 587,
-      "pooled_median_error_pct": 0.023015374156234107,
-      "all_pass": true,
-      "objects_over_gate": 0
-    },
-    "final_oc": {
-      "objects_with_oc": 260,
-      "median_oc_arcsec": 2.6765192837982834,
-      "fsot_pooled_from_scoreboard": 0.023015
-    },
-    "push_when_ready": "Do not auto-push. When baseline looks good, ask to commit/push: data/mpcorb_* epoch status, O\u2013C, verify, sample index, reports.",
-    "next_full_run_hint": "python scripts/run_mpcorb_epoch_baseline.py --max-minutes 720 --epochs 40 --fetch-per-epoch 80 --oc-per-epoch 30 --sleep 0.55"
-  },
-  "updated_at": "2026-08-06T16:12:47.802001+00:00"
+  "elapsed_min": 373.89,
+  "message": "running epoch 32",
+  "updated_at": "2026-08-06T23:57:28.186930+00:00"
 }

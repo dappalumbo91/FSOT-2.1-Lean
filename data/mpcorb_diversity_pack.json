@@ -1,0 +1,6261 @@
+{
+  "generated_at": "2026-08-07T00:10:11.033522+00:00",
+  "secular_sky_drift_definition": "Wrong method: treat residual scale on mean motion as a constant rate error and multiply by observation span in years so predicted sky position drifts (fake arcsec blow-up). FSOT does not do this. Time is dimensional fold ln(D/25) / chaos (D-25)/25 + Fluid Phase Current; residual matching is at D_eff.",
+  "machine_note": "Designed for limited home storage (e.g. gaming desktop, ~100MB pack budget).",
+  "storage": {
+    "path": "G:/FSOT-PublicData/anomaly_observables/mpcorb_diversity_pack",
+    "used_mb": 0.24,
+    "budget_mb": 80.0,
+    "within_budget": true
+  },
+  "sample_targets": {
+    "neo": 35,
+    "distant": 35,
+    "outer_belt": 35,
+    "high_u": 25,
+    "comet": 50
+  },
+  "fsot": {
+    "law": "computed = measured * (1 + |S| * factor) at regime D_eff",
+    "objects_checked": 180,
+    "pooled_median_error_pct": 0.026472323952538984,
+    "over_gate_0_5pct": 0,
+    "all_pass": true,
+    "by_regime_n": {
+      "comet": 50,
+      "distant": 35,
+      "high_u": 25,
+      "neo": 35,
+      "outer_belt": 35
+    },
+    "by_regime_median_pct": {
+      "comet": 0.029099821250810898,
+      "distant": 0.026472323952539817,
+      "high_u": 0.026472323952541045,
+      "neo": 0.02301537415623265,
+      "outer_belt": 0.02246148920415081
+    },
+    "domain_routing": {
+      "neo": "Planetary_Science D=21",
+      "main_belt / high_u": "Planetary_Science D=21",
+      "outer_belt": "Astronomy D=20",
+      "distant": "Astrophysics D=24",
+      "comet": "Meteorology D=16 (chaos/T3)"
+    }
+  },
+  "optical": {
+    "enabled": true,
+    "records": [
+      {
+        "desig": "433",
+        "regime": "neo",
+        "n_optical_kept": 30,
+        "n_obs_api": 18629
+      },
+      {
+        "desig": "719",
+        "regime": "neo",
+        "n_optical_kept": 30,
+        "n_obs_api": 2174
+      },
+      {
+        "desig": "887",
+        "regime": "neo",
+        "n_optical_kept": 30,
+        "n_obs_api": 6026
+      },
+      {
+        "desig": "1036",
+        "regime": "neo",
+        "n_optical_kept": 30,
+        "n_obs_api": 13331
+      },
+      {
+        "desig": "1221",
+        "regime": "neo",
+        "n_optical_kept": 30,
+        "n_obs_api": 738
+      },
+      {
+        "desig": "1566",
+        "regime": "neo",
+        "n_optical_kept": 30,
+        "n_obs_api": 1980
+      },
+      {
+        "desig": "1580",
+        "regime": "neo",
+        "n_optical_kept": 30,
+        "n_obs_api": 2128
+      },
+      {
+        "desig": "1620",
+        "regime": "neo",
+        "n_optical_kept": 30,
+        "n_obs_api": 9560
+      },
+      {
+        "desig": "944",
+        "regime": "distant",
+        "n_optical_kept": 30,
+        "n_obs_api": 2063
+      },
+      {
+        "desig": "2060",
+        "regime": "distant",
+        "n_optical_kept": 30,
+        "n_obs_api": 5673
+      },
+      {
+        "desig": "5335",
+        "regime": "distant",
+        "n_optical_kept": 30,
+        "n_obs_api": 50
+      },
+      {
+        "desig": "10370",
+        "regime": "distant",
+        "n_optical_kept": 30,
+        "n_obs_api": 85
+      },
+      {
+        "desig": "153",
+        "regime": "outer_belt",
+        "n_optical_kept": 30,
+        "n_obs_api": 12046
+      },
+      {
+        "desig": "190",
+        "regime": "outer_belt",
+        "n_optical_kept": 30,
+        "n_obs_api": 12428
+      },
+      {
+        "desig": "279",
+        "regime": "outer_belt",
+        "n_optical_kept": 30,
+        "n_obs_api": 9081
+      },
+      {
+        "desig": "334",
+        "regime": "outer_belt",
+        "n_optical_kept": 30,
+        "n_obs_api": 6468
+      },
+      {
+        "desig": "361",
+        "regime": "outer_belt",
+        "n_optical_kept": 30,
+        "n_obs_api": 5401
+      },
+      {
+        "desig": "414",
+        "regime": "outer_belt",
+        "n_optical_kept": 30,
+        "n_obs_api": 7257
+      },
+      {
+        "desig": "499",
+        "regime": "outer_belt",
+        "n_optical_kept": 30,
+        "n_obs_api": 8465
+      },
+      {
+        "desig": "522",
+        "regime": "outer_belt",
+        "n_optical_kept": 30,
+        "n_obs_api": 6498
+      },
+      {
+        "desig": "15807",
+        "regime": "high_u",
+        "n_optical_kept": 30,
+        "n_obs_api": 69
+      },
+      {
+        "desig": "15809",
+        "regime": "high_u",
+        "n_optical_kept": 30,
+        "n_obs_api": 52
+      },
+      {
+        "desig": "15836",
+        "regime": "high_u",
+        "n_optical_kept": 30,
+        "n_obs_api": 82
+      },
+      {
+        "desig": "15883",
+        "regime": "high_u",
+        "n_optical_kept": 30,
+        "n_obs_api": 37
+      },
+      {
+        "desig": "16684",
+        "regime": "high_u",
+        "n_optical_kept": 30,
+        "n_obs_api": 95
+      },
+      {
+        "desig": "19255",
+        "regime": "high_u",
+        "n_optical_kept": 30,
+        "n_obs_api": 77
+      }
+    ],
+    "note": "Capped subsample only; full ADES not stored"
+  },
+  "bodies": [
+    {
+      "desig": "433",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.4582437,
+          "fsot_computed": 1.4585793202436645,
+          "error_pct": 0.023015374156228136
+        },
+        "e": {
+          "measured": 0.222878,
+          "fsot_computed": 0.22292929620561192,
+          "error_pct": 0.023015374156230138
+        },
+        "i": {
+          "measured": 10.82855,
+          "fsot_computed": 10.831042231298195,
+          "error_pct": 0.023015374156234954
+        },
+        "n": {
+          "measured": 0.55970463,
+          "fsot_computed": 0.5598334481147643,
+          "error_pct": 0.0230153741562374
+        }
+      },
+      "median_element_error_pct": 0.023015374156232546,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "719",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.6369496,
+          "fsot_computed": 2.637556503816751,
+          "error_pct": 0.023015374156225937
+        },
+        "e": {
+          "measured": 0.5465928,
+          "fsot_computed": 0.546718600378031,
+          "error_pct": 0.0230153741562283
+        },
+        "i": {
+          "measured": 11.57236,
+          "fsot_computed": 11.575023421952706,
+          "error_pct": 0.023015374156228695
+        },
+        "n": {
+          "measured": 0.23017139,
+          "fsot_computed": 0.2302243648066091,
+          "error_pct": 0.023015374156230388
+        }
+      },
+      "median_element_error_pct": 0.023015374156228497,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "887",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.473999,
+          "fsot_computed": 2.4745684001264716,
+          "error_pct": 0.02301537415623665
+        },
+        "e": {
+          "measured": 0.5710842,
+          "fsot_computed": 0.5712156371653772,
+          "error_pct": 0.02301537415623001
+        },
+        "i": {
+          "measured": 9.4,
+          "fsot_computed": 9.402163445170686,
+          "error_pct": 0.023015374156229392
+        },
+        "n": {
+          "measured": 0.25328228,
+          "fsot_computed": 0.25334057386441344,
+          "error_pct": 0.023015374156224733
+        }
+      },
+      "median_element_error_pct": 0.0230153741562297,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1036",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.6640688,
+          "fsot_computed": 2.664681945402099,
+          "error_pct": 0.02301537415622391
+        },
+        "e": {
+          "measured": 0.5335007,
+          "fsot_computed": 0.5336234871822312,
+          "error_pct": 0.023015374156234874
+        },
+        "i": {
+          "measured": 26.68765,
+          "fsot_computed": 26.693792262501006,
+          "error_pct": 0.023015374156227994
+        },
+        "n": {
+          "measured": 0.22666576,
+          "fsot_computed": 0.22671792797274806,
+          "error_pct": 0.02301537415623268
+        }
+      },
+      "median_element_error_pct": 0.02301537415623034,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1221",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.9197164,
+          "fsot_computed": 1.9201582299121986,
+          "error_pct": 0.02301537415623759
+        },
+        "e": {
+          "measured": 0.4347309,
+          "fsot_computed": 0.4348309549432077,
+          "error_pct": 0.02301537415623095
+        },
+        "i": {
+          "measured": 11.87013,
+          "fsot_computed": 11.87286195483233,
+          "error_pct": 0.023015374156232834
+        },
+        "n": {
+          "measured": 0.3705514,
+          "fsot_computed": 0.3706366837911511,
+          "error_pct": 0.023015374156226683
+        }
+      },
+      "median_element_error_pct": 0.023015374156231894,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1566",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.0779942,
+          "fsot_computed": 1.0782423043985125,
+          "error_pct": 0.023015374156236418
+        },
+        "e": {
+          "measured": 0.8270189,
+          "fsot_computed": 0.8272092414941777,
+          "error_pct": 0.02301537415622993
+        },
+        "i": {
+          "measured": 22.80162,
+          "fsot_computed": 22.806867878156684,
+          "error_pct": 0.023015374156239943
+        },
+        "n": {
+          "measured": 0.88060151,
+          "fsot_computed": 0.8808041837323519,
+          "error_pct": 0.023015374156233667
+        }
+      },
+      "median_element_error_pct": 0.023015374156235044,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1580",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.1947582,
+          "fsot_computed": 2.1952633318115544,
+          "error_pct": 0.023015374156229958
+        },
+        "e": {
+          "measured": 0.4876367,
+          "fsot_computed": 0.4877489314110281,
+          "error_pct": 0.023015374156235294
+        },
+        "i": {
+          "measured": 52.19064,
+          "fsot_computed": 52.202651871070536,
+          "error_pct": 0.023015374156235946
+        },
+        "n": {
+          "measured": 0.30312661,
+          "fsot_computed": 0.30319637572345864,
+          "error_pct": 0.02301537415623978
+        }
+      },
+      "median_element_error_pct": 0.02301537415623562,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1620",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.2458036,
+          "fsot_computed": 1.2460903263597918,
+          "error_pct": 0.02301537415623762
+        },
+        "e": {
+          "measured": 0.3355178,
+          "fsot_computed": 0.33559502067703073,
+          "error_pct": 0.023015374156230683
+        },
+        "i": {
+          "measured": 13.33676,
+          "fsot_computed": 13.339829505214318,
+          "error_pct": 0.023015374156229614
+        },
+        "n": {
+          "measured": 0.70880976,
+          "fsot_computed": 0.7089728952183199,
+          "error_pct": 0.023015374156233212
+        }
+      },
+      "median_element_error_pct": 0.02301537415623195,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1627",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.8631103,
+          "fsot_computed": 1.8635391018064884,
+          "error_pct": 0.023015374156238107
+        },
+        "e": {
+          "measured": 0.3973348,
+          "fsot_computed": 0.3974262480908729,
+          "error_pct": 0.02301537415623154
+        },
+        "i": {
+          "measured": 8.45635,
+          "fsot_computed": 8.45829626059246,
+          "error_pct": 0.02301537415622386
+        },
+        "n": {
+          "measured": 0.38756649,
+          "fsot_computed": 0.38765568987777765,
+          "error_pct": 0.023015374156230107
+        }
+      },
+      "median_element_error_pct": 0.023015374156230825,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1685",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.3678594,
+          "fsot_computed": 1.3681742179588412,
+          "error_pct": 0.023015374156236484
+        },
+        "e": {
+          "measured": 0.4359922,
+          "fsot_computed": 0.436092545236122,
+          "error_pct": 0.023015374156237774
+        },
+        "i": {
+          "measured": 9.38177,
+          "fsot_computed": 9.383929249467977,
+          "error_pct": 0.023015374156237372
+        },
+        "n": {
+          "measured": 0.61608675,
+          "fsot_computed": 0.6162285446706395,
+          "error_pct": 0.02301537415623064
+        }
+      },
+      "median_element_error_pct": 0.023015374156236928,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1862",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.4707151,
+          "fsot_computed": 1.4710535905830373,
+          "error_pct": 0.023015374156235575
+        },
+        "e": {
+          "measured": 0.56018,
+          "fsot_computed": 0.5603089275229484,
+          "error_pct": 0.02301537415622696
+        },
+        "i": {
+          "measured": 6.35218,
+          "fsot_computed": 6.353641977994077,
+          "error_pct": 0.02301537415623702
+        },
+        "n": {
+          "measured": 0.55260044,
+          "fsot_computed": 0.5527276230588549,
+          "error_pct": 0.023015374156226086
+        }
+      },
+      "median_element_error_pct": 0.02301537415623127,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1863",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.2593836,
+          "fsot_computed": 2.2599036055891646,
+          "error_pct": 0.023015374156231838
+        },
+        "e": {
+          "measured": 0.6062316,
+          "fsot_computed": 0.6063711264709933,
+          "error_pct": 0.023015374156239356
+        },
+        "i": {
+          "measured": 18.38389,
+          "fsot_computed": 18.38812112106797,
+          "error_pct": 0.023015374156234798
+        },
+        "n": {
+          "measured": 0.29021451,
+          "fsot_computed": 0.29028130395533214,
+          "error_pct": 0.023015374156225392
+        }
+      },
+      "median_element_error_pct": 0.023015374156233316,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1864",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.4608807,
+          "fsot_computed": 1.4612169271590811,
+          "error_pct": 0.023015374156234315
+        },
+        "e": {
+          "measured": 0.6144606,
+          "fsot_computed": 0.6146020204061327,
+          "error_pct": 0.02301537415623243
+        },
+        "i": {
+          "measured": 22.21679,
+          "fsot_computed": 22.221903277344005,
+          "error_pct": 0.023015374156236074
+        },
+        "n": {
+          "measured": 0.55818988,
+          "fsot_computed": 0.5583183494893843,
+          "error_pct": 0.02301537415624147
+        }
+      },
+      "median_element_error_pct": 0.023015374156235197,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1865",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.0799532,
+          "fsot_computed": 1.0802017552696923,
+          "error_pct": 0.023015374156236786
+        },
+        "e": {
+          "measured": 0.4668682,
+          "fsot_computed": 0.4669756514630465,
+          "error_pct": 0.023015374156233104
+        },
+        "i": {
+          "measured": 16.10127,
+          "fsot_computed": 16.104975767534405,
+          "error_pct": 0.023015374156236616
+        },
+        "n": {
+          "measured": 0.87820654,
+          "fsot_computed": 0.8784086625210454,
+          "error_pct": 0.023015374156227054
+        }
+      },
+      "median_element_error_pct": 0.02301537415623486,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1866",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.8933687,
+          "fsot_computed": 1.8938044658904618,
+          "error_pct": 0.023015374156227644
+        },
+        "e": {
+          "measured": 0.5381206,
+          "fsot_computed": 0.5382444504695018,
+          "error_pct": 0.02301537415624067
+        },
+        "i": {
+          "measured": 41.2063,
+          "fsot_computed": 41.21578378412094,
+          "error_pct": 0.02301537415622929
+        },
+        "n": {
+          "measured": 0.37831301,
+          "fsot_computed": 0.3784000801547332,
+          "error_pct": 0.023015374156229288
+        }
+      },
+      "median_element_error_pct": 0.02301537415622929,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1915",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.5452924,
+          "fsot_computed": 2.5458782085692304,
+          "error_pct": 0.023015374156238198
+        },
+        "e": {
+          "measured": 0.5702562,
+          "fsot_computed": 0.570387446598079,
+          "error_pct": 0.02301537415622312
+        },
+        "i": {
+          "measured": 20.39962,
+          "fsot_computed": 20.40431504886945,
+          "error_pct": 0.023015374156237237
+        },
+        "n": {
+          "measured": 0.24271552,
+          "fsot_computed": 0.24277138188506323,
+          "error_pct": 0.023015374156228372
+        }
+      },
+      "median_element_error_pct": 0.023015374156232803,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1916",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.2733078,
+          "fsot_computed": 2.273831010295893,
+          "error_pct": 0.023015374156239336
+        },
+        "e": {
+          "measured": 0.4490841,
+          "fsot_computed": 0.44918745838589114,
+          "error_pct": 0.0230153741562327
+        },
+        "i": {
+          "measured": 12.87755,
+          "fsot_computed": 12.880513816314656,
+          "error_pct": 0.023015374156234242
+        },
+        "n": {
+          "measured": 0.2875522,
+          "fsot_computed": 0.28761838121472444,
+          "error_pct": 0.02301537415622587
+        }
+      },
+      "median_element_error_pct": 0.02301537415623347,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1917",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.1492315,
+          "fsot_computed": 2.1497261536712085,
+          "error_pct": 0.02301537415622697
+        },
+        "e": {
+          "measured": 0.5054275,
+          "fsot_computed": 0.5055438260302135,
+          "error_pct": 0.023015374156233743
+        },
+        "i": {
+          "measured": 23.95607,
+          "fsot_computed": 23.96158357914363,
+          "error_pct": 0.023015374156227723
+        },
+        "n": {
+          "measured": 0.31280902,
+          "fsot_computed": 0.31288101416634745,
+          "error_pct": 0.023015374156236123
+        }
+      },
+      "median_element_error_pct": 0.023015374156230735,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1943",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.4310205,
+          "fsot_computed": 1.4313498547223273,
+          "error_pct": 0.023015374156227182
+        },
+        "e": {
+          "measured": 0.2561964,
+          "fsot_computed": 0.2562553645600348,
+          "error_pct": 0.023015374156229753
+        },
+        "i": {
+          "measured": 8.70859,
+          "fsot_computed": 8.710594314572232,
+          "error_pct": 0.023015374156236564
+        },
+        "n": {
+          "measured": 0.57575177,
+          "fsot_computed": 0.5758842814240767,
+          "error_pct": 0.023015374156238288
+        }
+      },
+      "median_element_error_pct": 0.023015374156233157,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1980",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.7095531,
+          "fsot_computed": 1.7099465600423644,
+          "error_pct": 0.023015374156234922
+        },
+        "e": {
+          "measured": 0.3646568,
+          "fsot_computed": 0.36474072712690614,
+          "error_pct": 0.023015374156230162
+        },
+        "i": {
+          "measured": 26.8686,
+          "fsot_computed": 26.874783908820543,
+          "error_pct": 0.023015374156236005
+        },
+        "n": {
+          "measured": 0.44094069,
+          "fsot_computed": 0.4410421741496106,
+          "error_pct": 0.02301537415623555
+        }
+      },
+      "median_element_error_pct": 0.023015374156235238,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "1981",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.7762319,
+          "fsot_computed": 1.7766407064176672,
+          "error_pct": 0.02301537415622777
+        },
+        "e": {
+          "measured": 0.6504315,
+          "fsot_computed": 0.650581199243355,
+          "error_pct": 0.023015374156225586
+        },
+        "i": {
+          "measured": 39.82206,
+          "fsot_computed": 39.83122519610572,
+          "error_pct": 0.023015374156232827
+        },
+        "n": {
+          "measured": 0.41634618,
+          "fsot_computed": 0.41644200363111217,
+          "error_pct": 0.023015374156226776
+        }
+      },
+      "median_element_error_pct": 0.023015374156227272,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2059",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.642125,
+          "fsot_computed": 2.6427330949544254,
+          "error_pct": 0.023015374156233167
+        },
+        "e": {
+          "measured": 0.5314016,
+          "fsot_computed": 0.5315239040665123,
+          "error_pct": 0.023015374156242222
+        },
+        "i": {
+          "measured": 11.01874,
+          "fsot_computed": 11.021276004238302,
+          "error_pct": 0.023015374156238697
+        },
+        "n": {
+          "measured": 0.22949542,
+          "fsot_computed": 0.22954823922958442,
+          "error_pct": 0.023015374156232195
+        }
+      },
+      "median_element_error_pct": 0.023015374156235932,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2061",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.2650429,
+          "fsot_computed": 2.265564208098234,
+          "error_pct": 0.02301537415622592
+        },
+        "e": {
+          "measured": 0.5359154,
+          "fsot_computed": 0.536038742934471,
+          "error_pct": 0.023015374156241043
+        },
+        "i": {
+          "measured": 3.80152,
+          "fsot_computed": 3.802394934051624,
+          "error_pct": 0.02301537415623455
+        },
+        "n": {
+          "measured": 0.28912752,
+          "fsot_computed": 0.28919406378051665,
+          "error_pct": 0.023015374156228983
+        }
+      },
+      "median_element_error_pct": 0.02301537415623177,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2062",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 0.9669667,
+          "fsot_computed": 0.9671892510039711,
+          "error_pct": 0.02301537415623227
+        },
+        "e": {
+          "measured": 0.1828582,
+          "fsot_computed": 0.18290028549890536,
+          "error_pct": 0.023015374156236217
+        },
+        "i": {
+          "measured": 18.93555,
+          "fsot_computed": 18.93990808768104,
+          "error_pct": 0.023015374156235
+        },
+        "n": {
+          "measured": 1.03654167,
+          "fsot_computed": 1.0367802339436358,
+          "error_pct": 0.023015374156231467
+        }
+      },
+      "median_element_error_pct": 0.023015374156233635,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2063",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.0775008,
+          "fsot_computed": 1.0777487908406562,
+          "error_pct": 0.023015374156223185
+        },
+        "e": {
+          "measured": 0.349231,
+          "fsot_computed": 0.3493113768213196,
+          "error_pct": 0.023015374156234992
+        },
+        "i": {
+          "measured": 9.43221,
+          "fsot_computed": 9.434380858422701,
+          "error_pct": 0.02301537415623032
+        },
+        "n": {
+          "measured": 0.88120649,
+          "fsot_computed": 0.8814093029707625,
+          "error_pct": 0.023015374156234662
+        }
+      },
+      "median_element_error_pct": 0.02301537415623249,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2100",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 0.8320381,
+          "fsot_computed": 0.8322295966818374,
+          "error_pct": 0.02301537415622885
+        },
+        "e": {
+          "measured": 0.4364995,
+          "fsot_computed": 0.43659996199311507,
+          "error_pct": 0.02301537415623301
+        },
+        "i": {
+          "measured": 15.7591,
+          "fsot_computed": 15.762727015828656,
+          "error_pct": 0.023015374156236994
+        },
+        "n": {
+          "measured": 1.29864143,
+          "fsot_computed": 1.2989403171840623,
+          "error_pct": 0.023015374156232362
+        }
+      },
+      "median_element_error_pct": 0.023015374156232685,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2101",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.8737837,
+          "fsot_computed": 1.8742149583294334,
+          "error_pct": 0.023015374156231075
+        },
+        "e": {
+          "measured": 0.764121,
+          "fsot_computed": 0.7642968653071563,
+          "error_pct": 0.02301537415622626
+        },
+        "i": {
+          "measured": 1.31999,
+          "fsot_computed": 1.3202938006373248,
+          "error_pct": 0.023015374156230332
+        },
+        "n": {
+          "measured": 0.38425975,
+          "fsot_computed": 0.3843481888191943,
+          "error_pct": 0.02301537415622947
+        }
+      },
+      "median_element_error_pct": 0.023015374156229902,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2102",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.2900749,
+          "fsot_computed": 1.2903718155651307,
+          "error_pct": 0.023015374156234895
+        },
+        "e": {
+          "measured": 0.2993525,
+          "fsot_computed": 0.29942139709792104,
+          "error_pct": 0.02301537415622613
+        },
+        "i": {
+          "measured": 64.00427,
+          "fsot_computed": 64.01900082221647,
+          "error_pct": 0.02301537415623041
+        },
+        "n": {
+          "measured": 0.67263847,
+          "fsot_computed": 0.6727932802605893,
+          "error_pct": 0.02301537415623546
+        }
+      },
+      "median_element_error_pct": 0.02301537415623265,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2135",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 1.5997395,
+          "fsot_computed": 1.60010768603145,
+          "error_pct": 0.023015374156226454
+        },
+        "e": {
+          "measured": 0.5030596,
+          "fsot_computed": 0.5031753810491689,
+          "error_pct": 0.02301537415623768
+        },
+        "i": {
+          "measured": 23.07163,
+          "fsot_computed": 23.07694002196844,
+          "error_pct": 0.023015374156229933
+        },
+        "n": {
+          "measured": 0.48711349,
+          "fsot_computed": 0.48722560099228895,
+          "error_pct": 0.02301537415623037
+        }
+      },
+      "median_element_error_pct": 0.023015374156230152,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2201",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.1785708,
+          "fsot_computed": 2.1790722062208787,
+          "error_pct": 0.023015374156239273
+        },
+        "e": {
+          "measured": 0.7108614,
+          "fsot_computed": 0.7110250074109422,
+          "error_pct": 0.02301537415623281
+        },
+        "i": {
+          "measured": 2.52172,
+          "fsot_computed": 2.5223003832931727,
+          "error_pct": 0.023015374156233025
+        },
+        "n": {
+          "measured": 0.30651136,
+          "fsot_computed": 0.30658190473633534,
+          "error_pct": 0.023015374156224344
+        }
+      },
+      "median_element_error_pct": 0.023015374156232917,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2202",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.2905661,
+          "fsot_computed": 2.2910932823582106,
+          "error_pct": 0.023015374156227068
+        },
+        "e": {
+          "measured": 0.5127886,
+          "fsot_computed": 0.5129066202149205,
+          "error_pct": 0.02301537415622476
+        },
+        "i": {
+          "measured": 8.74283,
+          "fsot_computed": 8.744842195036343,
+          "error_pct": 0.023015374156230884
+        },
+        "n": {
+          "measured": 0.28430849,
+          "fsot_computed": 0.2843739246627315,
+          "error_pct": 0.023015374156239984
+        }
+      },
+      "median_element_error_pct": 0.023015374156228976,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2212",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.1673638,
+          "fsot_computed": 2.1678626268878967,
+          "error_pct": 0.023015374156231103
+        },
+        "e": {
+          "measured": 0.8346014,
+          "fsot_computed": 0.8347934866349233,
+          "error_pct": 0.023015374156238572
+        },
+        "i": {
+          "measured": 11.2008,
+          "fsot_computed": 11.203377906028491,
+          "error_pct": 0.023015374156237403
+        },
+        "n": {
+          "measured": 0.30889177,
+          "fsot_computed": 0.3089628625966033,
+          "error_pct": 0.023015374156235086
+        }
+      },
+      "median_element_error_pct": 0.023015374156236244,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2329",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.4124374,
+          "fsot_computed": 2.412992631493895,
+          "error_pct": 0.023015374156238225
+        },
+        "e": {
+          "measured": 0.6532407,
+          "fsot_computed": 0.6533910457912459,
+          "error_pct": 0.023015374156240234
+        },
+        "i": {
+          "measured": 24.49648,
+          "fsot_computed": 24.502117956527105,
+          "error_pct": 0.023015374156231935
+        },
+        "n": {
+          "measured": 0.2630389,
+          "fsot_computed": 0.26309943938701147,
+          "error_pct": 0.023015374156236588
+        }
+      },
+      "median_element_error_pct": 0.023015374156237407,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2340",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 0.8437499,
+          "fsot_computed": 0.8439440921964279,
+          "error_pct": 0.023015374156228095
+        },
+        "e": {
+          "measured": 0.4499561,
+          "fsot_computed": 0.4500596590799538,
+          "error_pct": 0.023015374156233608
+        },
+        "i": {
+          "measured": 5.86018,
+          "fsot_computed": 5.8615287423532285,
+          "error_pct": 0.023015374156234
+        },
+        "n": {
+          "measured": 1.27169655,
+          "fsot_computed": 1.2719892357191143,
+          "error_pct": 0.023015374156227633
+        }
+      },
+      "median_element_error_pct": 0.023015374156230853,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "2368",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "neo",
+      "domain": "Planetary_Science",
+      "S_abs": 0.7671791385407586,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 2.1050268,
+          "fsot_computed": 2.105511279794109,
+          "error_pct": 0.023015374156235845
+        },
+        "e": {
+          "measured": 0.4134502,
+          "fsot_computed": 0.4135453571104797,
+          "error_pct": 0.023015374156232924
+        },
+        "i": {
+          "measured": 5.22387,
+          "fsot_computed": 5.225072293225935,
+          "error_pct": 0.02301537415623352
+        },
+        "n": {
+          "measured": 0.32271386,
+          "fsot_computed": 0.32278813380233307,
+          "error_pct": 0.023015374156240737
+        }
+      },
+      "median_element_error_pct": 0.023015374156234683,
+      "pass_gate": true,
+      "diversity_cell": "neo",
+      "regime_report": "neo"
+    },
+    {
+      "desig": "944",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.7287361,
+          "fsot_computed": 5.730022859440636,
+          "error_pct": 0.022461489204155412
+        },
+        "e": {
+          "measured": 0.6620703,
+          "fsot_computed": 0.6622190108489584,
+          "error_pct": 0.022461489204152477
+        },
+        "i": {
+          "measured": 42.52433,
+          "fsot_computed": 42.53388159779209,
+          "error_pct": 0.022461489204156054
+        },
+        "n": {
+          "measured": 0.07188129,
+          "fsot_computed": 0.07189743560819316,
+          "error_pct": 0.022461489204155475
+        }
+      },
+      "median_element_error_pct": 0.022461489204155444,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "other"
+    },
+    {
+      "desig": "2060",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 13.6842671,
+          "fsot_computed": 13.687340790177334,
+          "error_pct": 0.02246148920415693
+        },
+        "e": {
+          "measured": 0.3797657,
+          "fsot_computed": 0.37985100103170655,
+          "error_pct": 0.022461489204149795
+        },
+        "i": {
+          "measured": 6.93057,
+          "fsot_computed": 6.932126709232336,
+          "error_pct": 0.022461489204147166
+        },
+        "n": {
+          "measured": 0.01947026,
+          "fsot_computed": 0.01947463331034792,
+          "error_pct": 0.022461489204147568
+        }
+      },
+      "median_element_error_pct": 0.022461489204148682,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "other"
+    },
+    {
+      "desig": "5145",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 20.2896548,
+          "fsot_computed": 20.29421215862246,
+          "error_pct": 0.022461489204142954
+        },
+        "e": {
+          "measured": 0.5746874,
+          "fsot_computed": 0.5748164833483086,
+          "error_pct": 0.02246148920415412
+        },
+        "i": {
+          "measured": 24.76069,
+          "fsot_computed": 24.766251619711223,
+          "error_pct": 0.02246148920414953
+        },
+        "n": {
+          "measured": 0.0107843,
+          "fsot_computed": 0.010786722314380243,
+          "error_pct": 0.022461489204144106
+        }
+      },
+      "median_element_error_pct": 0.02246148920414682,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "other"
+    },
+    {
+      "desig": "5335",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 11.8599489,
+          "fsot_computed": 11.86261282114179,
+          "error_pct": 0.02246148920414389
+        },
+        "e": {
+          "measured": 0.8667481,
+          "fsot_computed": 0.8669427845309087,
+          "error_pct": 0.02246148920414719
+        },
+        "i": {
+          "measured": 61.90031,
+          "fsot_computed": 61.91421373144799,
+          "error_pct": 0.022461489204156308
+        },
+        "n": {
+          "measured": 0.02413125,
+          "fsot_computed": 0.024136670238113576,
+          "error_pct": 0.022461489204150233
+        }
+      },
+      "median_element_error_pct": 0.022461489204148713,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "other"
+    },
+    {
+      "desig": "7066",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 24.5062642,
+          "fsot_computed": 24.511768671887623,
+          "error_pct": 0.022461489204145958
+        },
+        "e": {
+          "measured": 0.5184057,
+          "fsot_computed": 0.5185221416403392,
+          "error_pct": 0.02246148920414904
+        },
+        "i": {
+          "measured": 15.65454,
+          "fsot_computed": 15.65805624281206,
+          "error_pct": 0.022461489204151922
+        },
+        "n": {
+          "measured": 0.00812435,
+          "fsot_computed": 0.008126174849998159,
+          "error_pct": 0.022461489204156554
+        }
+      },
+      "median_element_error_pct": 0.022461489204150482,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "other"
+    },
+    {
+      "desig": "8405",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 18.0553773,
+          "fsot_computed": 18.059432806623008,
+          "error_pct": 0.022461489204147995
+        },
+        "e": {
+          "measured": 0.6173476,
+          "fsot_computed": 0.6174862654645261,
+          "error_pct": 0.022461489204156953
+        },
+        "i": {
+          "measured": 17.61794,
+          "fsot_computed": 17.621897251691095,
+          "error_pct": 0.022461489204154396
+        },
+        "n": {
+          "measured": 0.01284678,
+          "fsot_computed": 0.01284966557810278,
+          "error_pct": 0.022461489204145087
+        }
+      },
+      "median_element_error_pct": 0.022461489204151197,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "other"
+    },
+    {
+      "desig": "10199",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 15.7343761,
+          "fsot_computed": 15.737910275189043,
+          "error_pct": 0.022461489204151464
+        },
+        "e": {
+          "measured": 0.1708196,
+          "fsot_computed": 0.17085796862601257,
+          "error_pct": 0.022461489204158042
+        },
+        "i": {
+          "measured": 23.43191,
+          "fsot_computed": 23.437173155934975,
+          "error_pct": 0.02246148920415059
+        },
+        "n": {
+          "measured": 0.01579173,
+          "fsot_computed": 0.0157952770577291,
+          "error_pct": 0.022461489204152155
+        }
+      },
+      "median_element_error_pct": 0.022461489204151808,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "other"
+    },
+    {
+      "desig": "10370",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 24.9482366,
+          "fsot_computed": 24.953840345470535,
+          "error_pct": 0.022461489204146774
+        },
+        "e": {
+          "measured": 0.2466827,
+          "fsot_computed": 0.246738108608029,
+          "error_pct": 0.02246148920414567
+        },
+        "i": {
+          "measured": 4.14458,
+          "fsot_computed": 4.145510934389257,
+          "error_pct": 0.02246148920414021
+        },
+        "n": {
+          "measured": 0.00790941,
+          "fsot_computed": 0.007911186571273262,
+          "error_pct": 0.02246148920414472
+        }
+      },
+      "median_element_error_pct": 0.022461489204145195,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "other"
+    },
+    {
+      "desig": "15504",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 9.3902104,
+          "fsot_computed": 9.392319581095244,
+          "error_pct": 0.02246148920414731
+        },
+        "e": {
+          "measured": 0.7732098,
+          "fsot_computed": 0.7733834744357524,
+          "error_pct": 0.022461489204152182
+        },
+        "i": {
+          "measured": 34.94561,
+          "fsot_computed": 34.95345930441748,
+          "error_pct": 0.022461489204155635
+        },
+        "n": {
+          "measured": 0.03425241,
+          "fsot_computed": 0.03426010360137431,
+          "error_pct": 0.022461489204159704
+        }
+      },
+      "median_element_error_pct": 0.02246148920415391,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "other"
+    },
+    {
+      "desig": "15760",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 44.1310487,
+          "fsot_computed": 44.14273121417552,
+          "error_pct": 0.026472323952543137
+        },
+        "e": {
+          "measured": 0.0711517,
+          "fsot_computed": 0.07117053550852175,
+          "error_pct": 0.026472323952551117
+        },
+        "i": {
+          "measured": 2.18805,
+          "fsot_computed": 2.1886292276842436,
+          "error_pct": 0.02647232395254067
+        },
+        "n": {
+          "measured": 0.00336192,
+          "fsot_computed": 0.003362809978353425,
+          "error_pct": 0.026472323952538877
+        }
+      },
+      "median_element_error_pct": 0.026472323952541905,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "15788",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.6935161,
+          "fsot_computed": 39.70402389617014,
+          "error_pct": 0.026472323952539473
+        },
+        "e": {
+          "measured": 0.3259437,
+          "fsot_computed": 0.3260299848721669,
+          "error_pct": 0.02647232395253729
+        },
+        "i": {
+          "measured": 1.93681,
+          "fsot_computed": 1.9373227186175452,
+          "error_pct": 0.026472323952546496
+        },
+        "n": {
+          "measured": 0.00394117,
+          "fsot_computed": 0.00394221331928992,
+          "error_pct": 0.026472323952533766
+        }
+      },
+      "median_element_error_pct": 0.02647232395253838,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "15789",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.6828971,
+          "fsot_computed": 39.69340208507406,
+          "error_pct": 0.026472323952537645
+        },
+        "e": {
+          "measured": 0.183525,
+          "fsot_computed": 0.1835735833325339,
+          "error_pct": 0.02647232395254489
+        },
+        "i": {
+          "measured": 5.15987,
+          "fsot_computed": 5.16123593750193,
+          "error_pct": 0.026472323952544306
+        },
+        "n": {
+          "measured": 0.00394275,
+          "fsot_computed": 0.003943793737552639,
+          "error_pct": 0.026472323952540882
+        }
+      },
+      "median_element_error_pct": 0.026472323952542592,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "15807",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.7347027,
+          "fsot_computed": 43.746280292178426,
+          "error_pct": 0.02647232395254454
+        },
+        "e": {
+          "measured": 0.0635834,
+          "fsot_computed": 0.06360023200362803,
+          "error_pct": 0.02647232395253591
+        },
+        "i": {
+          "measured": 0.56559,
+          "fsot_computed": 0.5657397248170433,
+          "error_pct": 0.026472323952550184
+        },
+        "n": {
+          "measured": 0.00340773,
+          "fsot_computed": 0.0034086321053250278,
+          "error_pct": 0.02647232395253987
+        }
+      },
+      "median_element_error_pct": 0.026472323952542204,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "15809",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 42.0168354,
+          "fsot_computed": 42.02795823278169,
+          "error_pct": 0.026472323952542533
+        },
+        "e": {
+          "measured": 0.2134984,
+          "fsot_computed": 0.2135549179880815,
+          "error_pct": 0.026472323952537194
+        },
+        "i": {
+          "measured": 14.05332,
+          "fsot_computed": 14.057040240396487,
+          "error_pct": 0.02647232395254641
+        },
+        "n": {
+          "measured": 0.00361884,
+          "fsot_computed": 0.003619797991048124,
+          "error_pct": 0.02647232395253698
+        }
+      },
+      "median_element_error_pct": 0.026472323952539865,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "15810",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.2009396,
+          "fsot_computed": 39.21131699972335,
+          "error_pct": 0.02647232395254415
+        },
+        "e": {
+          "measured": 0.1145083,
+          "fsot_computed": 0.11453861300812854,
+          "error_pct": 0.026472323952537537
+        },
+        "i": {
+          "measured": 3.80716,
+          "fsot_computed": 3.8081678437285915,
+          "error_pct": 0.026472323952537263
+        },
+        "n": {
+          "measured": 0.00401568,
+          "fsot_computed": 0.004016743043818497,
+          "error_pct": 0.026472323952540386
+        }
+      },
+      "median_element_error_pct": 0.026472323952538963,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "15820",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.805904,
+          "fsot_computed": 39.816441547859114,
+          "error_pct": 0.02647232395253641
+        },
+        "e": {
+          "measured": 0.3219777,
+          "fsot_computed": 0.32206293497979893,
+          "error_pct": 0.026472323952545094
+        },
+        "i": {
+          "measured": 12.12487,
+          "fsot_computed": 12.128079734865224,
+          "error_pct": 0.026472323952542908
+        },
+        "n": {
+          "measured": 0.00392449,
+          "fsot_computed": 0.003925528903706285,
+          "error_pct": 0.02647232395254498
+        }
+      },
+      "median_element_error_pct": 0.026472323952543945,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "15836",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 36.467943,
+          "fsot_computed": 36.47759691200979,
+          "error_pct": 0.026472323952542957
+        },
+        "e": {
+          "measured": 0.0766754,
+          "fsot_computed": 0.07669569776027992,
+          "error_pct": 0.02647232395254661
+        },
+        "i": {
+          "measured": 6.54926,
+          "fsot_computed": 6.550993741323695,
+          "error_pct": 0.026472323952547883
+        },
+        "n": {
+          "measured": 0.00447545,
+          "fsot_computed": 0.004476634755622334,
+          "error_pct": 0.02647232395254619
+        }
+      },
+      "median_element_error_pct": 0.026472323952546402,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "15874",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 84.7158212,
+          "fsot_computed": 84.73824744662711,
+          "error_pct": 0.02647232395254158
+        },
+        "e": {
+          "measured": 0.5856276,
+          "fsot_computed": 0.5857826292354276,
+          "error_pct": 0.02647232395254929
+        },
+        "i": {
+          "measured": 23.96489,
+          "fsot_computed": 23.97123406331567,
+          "error_pct": 0.02647232395253849
+        },
+        "n": {
+          "measured": 0.00126403,
+          "fsot_computed": 0.0012643646181164573,
+          "error_pct": 0.026472323952546898
+        }
+      },
+      "median_element_error_pct": 0.026472323952544237,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "15875",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.7060149,
+          "fsot_computed": 39.71652600489297,
+          "error_pct": 0.026472323952535525
+        },
+        "e": {
+          "measured": 0.3336726,
+          "fsot_computed": 0.33376093089161285,
+          "error_pct": 0.02647232395254044
+        },
+        "i": {
+          "measured": 5.68029,
+          "fsot_computed": 5.681793704770244,
+          "error_pct": 0.026472323952536406
+        },
+        "n": {
+          "measured": 0.00393931,
+          "fsot_computed": 0.003940352826904694,
+          "error_pct": 0.026472323952534852
+        }
+      },
+      "median_element_error_pct": 0.026472323952535966,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "15883",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 47.2419365,
+          "fsot_computed": 47.254442538471736,
+          "error_pct": 0.026472323952542398
+        },
+        "e": {
+          "measured": 0.2149175,
+          "fsot_computed": 0.21497439365683071,
+          "error_pct": 0.026472323952541437
+        },
+        "i": {
+          "measured": 19.11994,
+          "fsot_computed": 19.12500149245633,
+          "error_pct": 0.02647232395253987
+        },
+        "n": {
+          "measured": 0.00303538,
+          "fsot_computed": 0.0030361835356267903,
+          "error_pct": 0.02647232395253616
+        }
+      },
+      "median_element_error_pct": 0.026472323952540653,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "16684",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.9146392,
+          "fsot_computed": 43.926264425551615,
+          "error_pct": 0.026472323952536552
+        },
+        "e": {
+          "measured": 0.0462917,
+          "fsot_computed": 0.04630395448878714,
+          "error_pct": 0.02647232395254219
+        },
+        "i": {
+          "measured": 3.74422,
+          "fsot_computed": 3.7452111820478957,
+          "error_pct": 0.026472323952541073
+        },
+        "n": {
+          "measured": 0.0033868,
+          "fsot_computed": 0.0033876965646676247,
+          "error_pct": 0.026472323952536927
+        }
+      },
+      "median_element_error_pct": 0.026472323952538998,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "19255",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.0634108,
+          "fsot_computed": 43.07481068561199,
+          "error_pct": 0.026472323952550118
+        },
+        "e": {
+          "measured": 0.0349002,
+          "fsot_computed": 0.03490943889400409,
+          "error_pct": 0.026472323952549635
+        },
+        "i": {
+          "measured": 1.48682,
+          "fsot_computed": 1.4872135958069912,
+          "error_pct": 0.026472323952540653
+        },
+        "n": {
+          "measured": 0.00348772,
+          "fsot_computed": 0.003488643280536958,
+          "error_pct": 0.0264723239525452
+        }
+      },
+      "median_element_error_pct": 0.02647232395254742,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "19299",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.8937372,
+          "fsot_computed": 39.90429799934836,
+          "error_pct": 0.026472323952546686
+        },
+        "e": {
+          "measured": 0.2626459,
+          "fsot_computed": 0.26271542847349605,
+          "error_pct": 0.026472323952538786
+        },
+        "i": {
+          "measured": 4.73708,
+          "fsot_computed": 4.738334015163491,
+          "error_pct": 0.026472323952544983
+        },
+        "n": {
+          "measured": 0.00391153,
+          "fsot_computed": 0.0039125654728931,
+          "error_pct": 0.026472323952531903
+        }
+      },
+      "median_element_error_pct": 0.026472323952541885,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "19308",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.4053742,
+          "fsot_computed": 43.41686461127104,
+          "error_pct": 0.02647232395255
+        },
+        "e": {
+          "measured": 0.115396,
+          "fsot_computed": 0.11542654800294827,
+          "error_pct": 0.02647232395253897
+        },
+        "i": {
+          "measured": 27.4461,
+          "fsot_computed": 27.45336562050434,
+          "error_pct": 0.02647232395253966
+        },
+        "n": {
+          "measured": 0.00344658,
+          "fsot_computed": 0.0034474923898228835,
+          "error_pct": 0.026472323952545906
+        }
+      },
+      "median_element_error_pct": 0.026472323952542783,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "19521",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 46.0897533,
+          "fsot_computed": 46.1019543288025,
+          "error_pct": 0.026472323952536663
+        },
+        "e": {
+          "measured": 0.1102799,
+          "fsot_computed": 0.11030909365238253,
+          "error_pct": 0.02647232395253685
+        },
+        "i": {
+          "measured": 12.02502,
+          "fsot_computed": 12.028203302249757,
+          "error_pct": 0.026472323952538977
+        },
+        "n": {
+          "measured": 0.00314991,
+          "fsot_computed": 0.0031507438543794137,
+          "error_pct": 0.026472323952543675
+        }
+      },
+      "median_element_error_pct": 0.026472323952537916,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "20000",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.1997148,
+          "fsot_computed": 43.211150768448434,
+          "error_pct": 0.026472323952544497
+        },
+        "e": {
+          "measured": 0.0516135,
+          "fsot_computed": 0.051627163292923245,
+          "error_pct": 0.026472323952541975
+        },
+        "i": {
+          "measured": 17.14056,
+          "fsot_computed": 17.14509750457048,
+          "error_pct": 0.026472323952535654
+        },
+        "n": {
+          "measured": 0.00347122,
+          "fsot_computed": 0.0034721389126035054,
+          "error_pct": 0.026472323952537662
+        }
+      },
+      "median_element_error_pct": 0.026472323952539817,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "20108",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.6452151,
+          "fsot_computed": 39.655710109772954,
+          "error_pct": 0.026472323952538755
+        },
+        "e": {
+          "measured": 0.1449411,
+          "fsot_computed": 0.14497946927753236,
+          "error_pct": 0.02647232395253556
+        },
+        "i": {
+          "measured": 19.55641,
+          "fsot_computed": 19.561587036208685,
+          "error_pct": 0.026472323952533173
+        },
+        "n": {
+          "measured": 0.00394837,
+          "fsot_computed": 0.003949415225297245,
+          "error_pct": 0.026472323952545864
+        }
+      },
+      "median_element_error_pct": 0.02647232395253716,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "20161",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 47.8808495,
+          "fsot_computed": 47.89352467359087,
+          "error_pct": 0.026472323952546468
+        },
+        "e": {
+          "measured": 0.3955876,
+          "fsot_computed": 0.3956923212309881,
+          "error_pct": 0.026472323952543467
+        },
+        "i": {
+          "measured": 12.43418,
+          "fsot_computed": 12.437471616410441,
+          "error_pct": 0.026472323952538353
+        },
+        "n": {
+          "measured": 0.00297482,
+          "fsot_computed": 0.002975607503987405,
+          "error_pct": 0.026472323952545628
+        }
+      },
+      "median_element_error_pct": 0.02647232395254455,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "20461",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 23.7757812,
+          "fsot_computed": 23.78112159452744,
+          "error_pct": 0.02246148920415029
+        },
+        "e": {
+          "measured": 0.900017,
+          "fsot_computed": 0.9002191572212904,
+          "error_pct": 0.02246148920414465
+        },
+        "i": {
+          "measured": 160.41853,
+          "fsot_computed": 160.4545623907974,
+          "error_pct": 0.02246148920414746
+        },
+        "n": {
+          "measured": 0.00850162,
+          "fsot_computed": 0.008503529590458478,
+          "error_pct": 0.02246148920415847
+        }
+      },
+      "median_element_error_pct": 0.022461489204148876,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "other"
+    },
+    {
+      "desig": "24835",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 42.0788069,
+          "fsot_computed": 42.08994613807793,
+          "error_pct": 0.026472323952537527
+        },
+        "e": {
+          "measured": 0.110499,
+          "fsot_computed": 0.11052825165324431,
+          "error_pct": 0.026472323952536927
+        },
+        "i": {
+          "measured": 27.03855,
+          "fsot_computed": 27.04570773254807,
+          "error_pct": 0.026472323952540417
+        },
+        "n": {
+          "measured": 0.00361085,
+          "fsot_computed": 0.0036118058759094405,
+          "error_pct": 0.02647232395254389
+        }
+      },
+      "median_element_error_pct": 0.02647232395253897,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "24952",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.6315892,
+          "fsot_computed": 39.642080602680565,
+          "error_pct": 0.026472323952541565
+        },
+        "e": {
+          "measured": 0.2314746,
+          "fsot_computed": 0.23153587670597986,
+          "error_pct": 0.026472323952544643
+        },
+        "i": {
+          "measured": 16.56594,
+          "fsot_computed": 16.570325389302585,
+          "error_pct": 0.026472323952543775
+        },
+        "n": {
+          "measured": 0.00395041,
+          "fsot_computed": 0.003951455765332654,
+          "error_pct": 0.026472323952548917
+        }
+      },
+      "median_element_error_pct": 0.02647232395254421,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "24978",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.1571702,
+          "fsot_computed": 43.168594905904094,
+          "error_pct": 0.026472323952534346
+        },
+        "e": {
+          "measured": 0.0497118,
+          "fsot_computed": 0.04972495986873864,
+          "error_pct": 0.026472323952546926
+        },
+        "i": {
+          "measured": 2.39408,
+          "fsot_computed": 2.394713768613283,
+          "error_pct": 0.026472323952537232
+        },
+        "n": {
+          "measured": 0.00347636,
+          "fsot_computed": 0.0034772802732809566,
+          "error_pct": 0.02647232395254324
+        }
+      },
+      "median_element_error_pct": 0.026472323952540237,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "26181",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 92.7898348,
+          "fsot_computed": 92.81439842566328,
+          "error_pct": 0.026472323952548543
+        },
+        "e": {
+          "measured": 0.5888169,
+          "fsot_computed": 0.5889727735172553,
+          "error_pct": 0.026472323952543265
+        },
+        "i": {
+          "measured": 13.35376,
+          "fsot_computed": 13.357295050607044,
+          "error_pct": 0.026472323952542693
+        },
+        "n": {
+          "measured": 0.00110269,
+          "fsot_computed": 0.001102981907668992,
+          "error_pct": 0.026472323952533103
+        }
+      },
+      "median_element_error_pct": 0.02647232395254298,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "26308",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 47.8237389,
+          "fsot_computed": 47.83639895508783,
+          "error_pct": 0.02647232395254644
+        },
+        "e": {
+          "measured": 0.3693682,
+          "fsot_computed": 0.36946598034648165,
+          "error_pct": 0.026472323952540705
+        },
+        "i": {
+          "measured": 13.49779,
+          "fsot_computed": 13.501363178695234,
+          "error_pct": 0.02647232395254328
+        },
+        "n": {
+          "measured": 0.00298015,
+          "fsot_computed": 0.0029809389149622716,
+          "error_pct": 0.026472323952538516
+        }
+      },
+      "median_element_error_pct": 0.026472323952541992,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "26375",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 55.6131281,
+          "fsot_computed": 55.627850187430774,
+          "error_pct": 0.026472323952545836
+        },
+        "e": {
+          "measured": 0.4206829,
+          "fsot_computed": 0.420794264540101,
+          "error_pct": 0.026472323952546353
+        },
+        "i": {
+          "measured": 7.61055,
+          "fsot_computed": 7.61256468945057,
+          "error_pct": 0.026472323952544466
+        },
+        "n": {
+          "measured": 0.0023765,
+          "fsot_computed": 0.0023771291147787325,
+          "error_pct": 0.0264723239525498
+        }
+      },
+      "median_element_error_pct": 0.026472323952546097,
+      "pass_gate": true,
+      "diversity_cell": "distant",
+      "regime_report": "distant"
+    },
+    {
+      "desig": "153",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9683768,
+          "fsot_computed": 3.969268156526512,
+          "error_pct": 0.022461489204151832
+        },
+        "e": {
+          "measured": 0.1384847,
+          "fsot_computed": 0.13851580572593988,
+          "error_pct": 0.02246148920414676
+        },
+        "i": {
+          "measured": 7.83139,
+          "fsot_computed": 7.8331490468193845,
+          "error_pct": 0.022461489204147127
+        },
+        "n": {
+          "measured": 0.12467653,
+          "fsot_computed": 0.12470453420532605,
+          "error_pct": 0.022461489204150815
+        }
+      },
+      "median_element_error_pct": 0.02246148920414897,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "190",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.995049,
+          "fsot_computed": 3.9959463474998356,
+          "error_pct": 0.02246148920415547
+        },
+        "e": {
+          "measured": 0.1681607,
+          "fsot_computed": 0.16819847139747612,
+          "error_pct": 0.022461489204152543
+        },
+        "i": {
+          "measured": 6.17498,
+          "fsot_computed": 6.1763669924660585,
+          "error_pct": 0.02246148920415578
+        },
+        "n": {
+          "measured": 0.12343005,
+          "fsot_computed": 0.12345777422735543,
+          "error_pct": 0.02246148920415482
+        }
+      },
+      "median_element_error_pct": 0.022461489204155145,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "279",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 4.2696388,
+          "fsot_computed": 4.270597824458118,
+          "error_pct": 0.02246148920414836
+        },
+        "e": {
+          "measured": 0.043876,
+          "fsot_computed": 0.04388585520300321,
+          "error_pct": 0.022461489204153796
+        },
+        "i": {
+          "measured": 2.3346,
+          "fsot_computed": 2.33512438592696,
+          "error_pct": 0.02246148920415214
+        },
+        "n": {
+          "measured": 0.11171651,
+          "fsot_computed": 0.1117416031918329,
+          "error_pct": 0.02246148920414771
+        }
+      },
+      "median_element_error_pct": 0.02246148920415025,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "334",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9401533,
+          "fsot_computed": 3.9410383171081063,
+          "error_pct": 0.022461489204145677
+        },
+        "e": {
+          "measured": 0.028403,
+          "fsot_computed": 0.028409379736778657,
+          "error_pct": 0.02246148920415536
+        },
+        "i": {
+          "measured": 4.71628,
+          "fsot_computed": 4.717339346723038,
+          "error_pct": 0.02246148920415105
+        },
+        "n": {
+          "measured": 0.12601853,
+          "fsot_computed": 0.12604683563851116,
+          "error_pct": 0.022461489204140737
+        }
+      },
+      "median_element_error_pct": 0.022461489204148366,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "361",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9754292,
+          "fsot_computed": 3.976322140600577,
+          "error_pct": 0.022461489204156238
+        },
+        "e": {
+          "measured": 0.2103233,
+          "fsot_computed": 0.2103705417453233,
+          "error_pct": 0.022461489204147374
+        },
+        "i": {
+          "measured": 12.57907,
+          "fsot_computed": 12.581895446450032,
+          "error_pct": 0.0224614892041473
+        },
+        "n": {
+          "measured": 0.12434492,
+          "fsot_computed": 0.1243728497207817,
+          "error_pct": 0.022461489204149296
+        }
+      },
+      "median_element_error_pct": 0.022461489204148335,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "414",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.5022653,
+          "fsot_computed": 3.50305196094226,
+          "error_pct": 0.022461489204150493
+        },
+        "e": {
+          "measured": 0.074511,
+          "fsot_computed": 0.0745277362802209,
+          "error_pct": 0.022461489204151527
+        },
+        "i": {
+          "measured": 9.56073,
+          "fsot_computed": 9.562877482336788,
+          "error_pct": 0.022461489204152685
+        },
+        "n": {
+          "measured": 0.15037668,
+          "fsot_computed": 0.15041045684174378,
+          "error_pct": 0.022461489204157956
+        }
+      },
+      "median_element_error_pct": 0.022461489204152106,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "499",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 4.015525,
+          "fsot_computed": 4.016426946714366,
+          "error_pct": 0.022461489204161023
+        },
+        "e": {
+          "measured": 0.2170917,
+          "fsot_computed": 0.2171404620287586,
+          "error_pct": 0.022461489204153983
+        },
+        "i": {
+          "measured": 2.09225,
+          "fsot_computed": 2.092719950507874,
+          "error_pct": 0.022461489204159035
+        },
+        "n": {
+          "measured": 0.12248716,
+          "fsot_computed": 0.12251467244021987,
+          "error_pct": 0.022461489204148314
+        }
+      },
+      "median_element_error_pct": 0.02246148920415651,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "522",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.6262784,
+          "fsot_computed": 3.6270929161313283,
+          "error_pct": 0.022461489204150337
+        },
+        "e": {
+          "measured": 0.0857955,
+          "fsot_computed": 0.08581477094697014,
+          "error_pct": 0.02246148920414588
+        },
+        "i": {
+          "measured": 4.41997,
+          "fsot_computed": 4.420962791084377,
+          "error_pct": 0.02246148920415243
+        },
+        "n": {
+          "measured": 0.14272904,
+          "fsot_computed": 0.1427610990679108,
+          "error_pct": 0.02246148920415148
+        }
+      },
+      "median_element_error_pct": 0.02246148920415091,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "536",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.5066282,
+          "fsot_computed": 3.507415840914573,
+          "error_pct": 0.022461489204154583
+        },
+        "e": {
+          "measured": 0.0909639,
+          "fsot_computed": 0.09098433184657817,
+          "error_pct": 0.022461489204145806
+        },
+        "i": {
+          "measured": 19.35314,
+          "fsot_computed": 19.357487003451762,
+          "error_pct": 0.022461489204142232
+        },
+        "n": {
+          "measured": 0.15009613,
+          "fsot_computed": 0.15012984382603578,
+          "error_pct": 0.022461489204142773
+        }
+      },
+      "median_element_error_pct": 0.02246148920414429,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "588",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.215907,
+          "fsot_computed": 5.217078570387703,
+          "error_pct": 0.022461489204150815
+        },
+        "e": {
+          "measured": 0.1481175,
+          "fsot_computed": 0.14815076939627198,
+          "error_pct": 0.022461489204153542
+        },
+        "i": {
+          "measured": 10.31508,
+          "fsot_computed": 10.317396920580599,
+          "error_pct": 0.02246148920414429
+        },
+        "n": {
+          "measured": 0.08273882,
+          "fsot_computed": 0.08275740437112195,
+          "error_pct": 0.022461489204149608
+        }
+      },
+      "median_element_error_pct": 0.022461489204150212,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "617",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.2059752,
+          "fsot_computed": 5.207144539557519,
+          "error_pct": 0.022461489204154618
+        },
+        "e": {
+          "measured": 0.1391468,
+          "fsot_computed": 0.1391780544434599,
+          "error_pct": 0.022461489204147
+        },
+        "i": {
+          "measured": 22.06359,
+          "fsot_computed": 22.0685458108859,
+          "error_pct": 0.022461489204157532
+        },
+        "n": {
+          "measured": 0.0829757,
+          "fsot_computed": 0.08299433757789756,
+          "error_pct": 0.022461489204146562
+        }
+      },
+      "median_element_error_pct": 0.02246148920415081,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "624",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.2769861,
+          "fsot_computed": 5.278171389663156,
+          "error_pct": 0.022461489204152335
+        },
+        "e": {
+          "measured": 0.0243449,
+          "fsot_computed": 0.02435036822708526,
+          "error_pct": 0.022461489204153008
+        },
+        "i": {
+          "measured": 18.14716,
+          "fsot_computed": 18.151236122384258,
+          "error_pct": 0.022461489204143766
+        },
+        "n": {
+          "measured": 0.08130648,
+          "fsot_computed": 0.08132474264622748,
+          "error_pct": 0.02246148920415606
+        }
+      },
+      "median_element_error_pct": 0.02246148920415267,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "659",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.1690928,
+          "fsot_computed": 5.170253855221224,
+          "error_pct": 0.02246148920415342
+        },
+        "e": {
+          "measured": 0.1159332,
+          "fsot_computed": 0.11595924032320203,
+          "error_pct": 0.02246148920415002
+        },
+        "i": {
+          "measured": 4.52236,
+          "fsot_computed": 4.523375789403173,
+          "error_pct": 0.022461489204150437
+        },
+        "n": {
+          "measured": 0.08386535,
+          "fsot_computed": 0.08388418740653628,
+          "error_pct": 0.022461489204147648
+        }
+      },
+      "median_element_error_pct": 0.02246148920415023,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "721",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.5476461,
+          "fsot_computed": 3.548442954145753,
+          "error_pct": 0.022461489204152415
+        },
+        "e": {
+          "measured": 0.1179132,
+          "fsot_computed": 0.11793968506068826,
+          "error_pct": 0.022461489204148997
+        },
+        "i": {
+          "measured": 8.32391,
+          "fsot_computed": 8.325779674146013,
+          "error_pct": 0.022461489204146992
+        },
+        "n": {
+          "measured": 0.14750055,
+          "fsot_computed": 0.1475336808201143,
+          "error_pct": 0.02246148920414339
+        }
+      },
+      "median_element_error_pct": 0.022461489204147995,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "748",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9520557,
+          "fsot_computed": 3.9529433905643976,
+          "error_pct": 0.02246148920415639
+        },
+        "e": {
+          "measured": 0.1895915,
+          "fsot_computed": 0.1896340850743045,
+          "error_pct": 0.022461489204152547
+        },
+        "i": {
+          "measured": 2.25875,
+          "fsot_computed": 2.259257348887399,
+          "error_pct": 0.022461489204152037
+        },
+        "n": {
+          "measured": 0.12544966,
+          "fsot_computed": 0.12547783786183753,
+          "error_pct": 0.022461489204144616
+        }
+      },
+      "median_element_error_pct": 0.022461489204152293,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "884",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.2107322,
+          "fsot_computed": 5.21190260805056,
+          "error_pct": 0.02246148920415767
+        },
+        "e": {
+          "measured": 0.1231798,
+          "fsot_computed": 0.1232074680174787,
+          "error_pct": 0.022461489204150056
+        },
+        "i": {
+          "measured": 8.89625,
+          "fsot_computed": 8.898248230233325,
+          "error_pct": 0.022461489204151745
+        },
+        "n": {
+          "measured": 0.0828621,
+          "fsot_computed": 0.08288071206164582,
+          "error_pct": 0.022461489204145823
+        }
+      },
+      "median_element_error_pct": 0.0224614892041509,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "909",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.541287,
+          "fsot_computed": 3.5420824257971932,
+          "error_pct": 0.022461489204155468
+        },
+        "e": {
+          "measured": 0.0947015,
+          "fsot_computed": 0.09472277136719866,
+          "error_pct": 0.022461489204145264
+        },
+        "i": {
+          "measured": 18.81284,
+          "fsot_computed": 18.817065644025597,
+          "error_pct": 0.0224614892041576
+        },
+        "n": {
+          "measured": 0.14789803,
+          "fsot_computed": 0.14793125010004163,
+          "error_pct": 0.022461489204159347
+        }
+      },
+      "median_element_error_pct": 0.022461489204156533,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "911",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.2867306,
+          "fsot_computed": 5.287918078422972,
+          "error_pct": 0.022461489204146104
+        },
+        "e": {
+          "measured": 0.0666811,
+          "fsot_computed": 0.0666960775680777,
+          "error_pct": 0.02246148920415114
+        },
+        "i": {
+          "measured": 21.75361,
+          "fsot_computed": 21.75849618476166,
+          "error_pct": 0.022461489204149584
+        },
+        "n": {
+          "measured": 0.08108179,
+          "fsot_computed": 0.08110000217750739,
+          "error_pct": 0.022461489204157123
+        }
+      },
+      "median_element_error_pct": 0.022461489204150364,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "958",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9970616,
+          "fsot_computed": 3.9979593995597673,
+          "error_pct": 0.022461489204155163
+        },
+        "e": {
+          "measured": 0.1846111,
+          "fsot_computed": 0.18465256640229616,
+          "error_pct": 0.02246148920414786
+        },
+        "i": {
+          "measured": 5.62552,
+          "fsot_computed": 5.626783575567477,
+          "error_pct": 0.022461489204145157
+        },
+        "n": {
+          "measured": 0.12333684,
+          "fsot_computed": 0.12336454329100134,
+          "error_pct": 0.022461489204148623
+        }
+      },
+      "median_element_error_pct": 0.02246148920414824,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1038",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9749126,
+          "fsot_computed": 3.9758054245645233,
+          "error_pct": 0.022461489204145525
+        },
+        "e": {
+          "measured": 0.2211716,
+          "fsot_computed": 0.22122127843505665,
+          "error_pct": 0.022461489204154066
+        },
+        "i": {
+          "measured": 9.18775,
+          "fsot_computed": 9.189813705474354,
+          "error_pct": 0.02246148920414894
+        },
+        "n": {
+          "measured": 0.12436916,
+          "fsot_computed": 0.1243970951654467,
+          "error_pct": 0.02246148920414903
+        }
+      },
+      "median_element_error_pct": 0.022461489204148984,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1143",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.2272733,
+          "fsot_computed": 5.228447423427951,
+          "error_pct": 0.022461489204155468
+        },
+        "e": {
+          "measured": 0.0898532,
+          "fsot_computed": 0.08987338236681758,
+          "error_pct": 0.022461489204150534
+        },
+        "i": {
+          "measured": 3.14238,
+          "fsot_computed": 3.1430858253444534,
+          "error_pct": 0.02246148920414404
+        },
+        "n": {
+          "measured": 0.0824691,
+          "fsot_computed": 0.08248762378799326,
+          "error_pct": 0.022461489204150857
+        }
+      },
+      "median_element_error_pct": 0.022461489204150697,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1144",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.7548277,
+          "fsot_computed": 3.75567109021847,
+          "error_pct": 0.022461489204155236
+        },
+        "e": {
+          "measured": 0.0797002,
+          "fsot_computed": 0.07971810185181868,
+          "error_pct": 0.022461489204149743
+        },
+        "i": {
+          "measured": 9.8032,
+          "fsot_computed": 9.805401944709661,
+          "error_pct": 0.022461489204148272
+        },
+        "n": {
+          "measured": 0.13546249,
+          "fsot_computed": 0.135492916892567,
+          "error_pct": 0.02246148920414822
+        }
+      },
+      "median_element_error_pct": 0.022461489204149008,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1162",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9324087,
+          "fsot_computed": 3.9332919775556134,
+          "error_pct": 0.022461489204150392
+        },
+        "e": {
+          "measured": 0.1060264,
+          "fsot_computed": 0.10605021510838955,
+          "error_pct": 0.022461489204145205
+        },
+        "i": {
+          "measured": 1.8741,
+          "fsot_computed": 1.8745209507691751,
+          "error_pct": 0.02246148920415306
+        },
+        "n": {
+          "measured": 0.12639099,
+          "fsot_computed": 0.1264193792985739,
+          "error_pct": 0.022461489204157366
+        }
+      },
+      "median_element_error_pct": 0.022461489204151724,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1172",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.2398198,
+          "fsot_computed": 5.240996741558694,
+          "error_pct": 0.022461489204155242
+        },
+        "e": {
+          "measured": 0.1049478,
+          "fsot_computed": 0.104971372838767,
+          "error_pct": 0.022461489204156526
+        },
+        "i": {
+          "measured": 16.65111,
+          "fsot_computed": 16.65485008727502,
+          "error_pct": 0.02246148920414154
+        },
+        "n": {
+          "measured": 0.08217308,
+          "fsot_computed": 0.08219153729749291,
+          "error_pct": 0.0224614892041514
+        }
+      },
+      "median_element_error_pct": 0.02246148920415332,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1173",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.2680401,
+          "fsot_computed": 5.269223380258333,
+          "error_pct": 0.022461489204158736
+        },
+        "e": {
+          "measured": 0.1373623,
+          "fsot_computed": 0.13739315361818508,
+          "error_pct": 0.0224614892041585
+        },
+        "i": {
+          "measured": 6.92704,
+          "fsot_computed": 6.928595916341767,
+          "error_pct": 0.02246148920415573
+        },
+        "n": {
+          "measured": 0.08151367,
+          "fsot_computed": 0.08153197918418695,
+          "error_pct": 0.022461489204143904
+        }
+      },
+      "median_element_error_pct": 0.022461489204157116,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1180",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9811265,
+          "fsot_computed": 3.982020720299001,
+          "error_pct": 0.022461489204148418
+        },
+        "e": {
+          "measured": 0.1561123,
+          "fsot_computed": 0.15614736514741087,
+          "error_pct": 0.022461489204157574
+        },
+        "i": {
+          "measured": 7.18892,
+          "fsot_computed": 7.190534738489696,
+          "error_pct": 0.022461489204152748
+        },
+        "n": {
+          "measured": 0.12407809,
+          "fsot_computed": 0.12410595978679007,
+          "error_pct": 0.022461489204148345
+        }
+      },
+      "median_element_error_pct": 0.022461489204150583,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1202",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9913146,
+          "fsot_computed": 3.992211108697983,
+          "error_pct": 0.022461489204154847
+        },
+        "e": {
+          "measured": 0.1667435,
+          "fsot_computed": 0.1667809530732511,
+          "error_pct": 0.022461489204149032
+        },
+        "i": {
+          "measured": 3.33356,
+          "fsot_computed": 3.3343087672195137,
+          "error_pct": 0.022461489204150836
+        },
+        "n": {
+          "measured": 0.12360332,
+          "fsot_computed": 0.12363108314637777,
+          "error_pct": 0.022461489204150104
+        }
+      },
+      "median_element_error_pct": 0.02246148920415047,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1208",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.254992,
+          "fsot_computed": 5.256172349460758,
+          "error_pct": 0.02246148920414596
+        },
+        "e": {
+          "measured": 0.0923578,
+          "fsot_computed": 0.0923785449372762,
+          "error_pct": 0.02246148920414985
+        },
+        "i": {
+          "measured": 33.53896,
+          "fsot_computed": 33.54649334987959,
+          "error_pct": 0.02246148920415866
+        },
+        "n": {
+          "measured": 0.08181746,
+          "fsot_computed": 0.081835837419945,
+          "error_pct": 0.022461489204149455
+        }
+      },
+      "median_element_error_pct": 0.022461489204149653,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1212",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9528569,
+          "fsot_computed": 3.953744770525849,
+          "error_pct": 0.02246148920414553
+        },
+        "e": {
+          "measured": 0.1907257,
+          "fsot_computed": 0.19076853983251504,
+          "error_pct": 0.022461489204153327
+        },
+        "i": {
+          "measured": 7.59303,
+          "fsot_computed": 7.594735507613717,
+          "error_pct": 0.022461489204146062
+        },
+        "n": {
+          "measured": 0.12541152,
+          "fsot_computed": 0.12543968929502555,
+          "error_pct": 0.02246148920414496
+        }
+      },
+      "median_element_error_pct": 0.0224614892041458,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1256",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.8871971,
+          "fsot_computed": 3.8880702223569603,
+          "error_pct": 0.022461489204148283
+        },
+        "e": {
+          "measured": 0.0782945,
+          "fsot_computed": 0.07831208611066495,
+          "error_pct": 0.02246148920415791
+        },
+        "i": {
+          "measured": 4.17704,
+          "fsot_computed": 4.177978225388653,
+          "error_pct": 0.022461489204153657
+        },
+        "n": {
+          "measured": 0.12860245,
+          "fsot_computed": 0.12863133602542304,
+          "error_pct": 0.022461489204156325
+        }
+      },
+      "median_element_error_pct": 0.022461489204154993,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1268",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9846105,
+          "fsot_computed": 3.985505502857285,
+          "error_pct": 0.022461489204150403
+        },
+        "e": {
+          "measured": 0.1038927,
+          "fsot_computed": 0.1039160358475944,
+          "error_pct": 0.022461489204146947
+        },
+        "i": {
+          "measured": 4.42355,
+          "fsot_computed": 4.42454359520569,
+          "error_pct": 0.022461489204153043
+        },
+        "n": {
+          "measured": 0.12391539,
+          "fsot_computed": 0.12394322324194713,
+          "error_pct": 0.022461489204152835
+        }
+      },
+      "median_element_error_pct": 0.02246148920415162,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1269",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9298073,
+          "fsot_computed": 3.9306899932424333,
+          "error_pct": 0.022461489204152776
+        },
+        "e": {
+          "measured": 0.0972578,
+          "fsot_computed": 0.0972796455502472,
+          "error_pct": 0.02246148920415789
+        },
+        "i": {
+          "measured": 2.76286,
+          "fsot_computed": 2.7634805795006256,
+          "error_pct": 0.022461489204149795
+        },
+        "n": {
+          "measured": 0.12651651,
+          "fsot_computed": 0.12654492749223512,
+          "error_pct": 0.02246148920414939
+        }
+      },
+      "median_element_error_pct": 0.022461489204151287,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1328",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.5008736,
+          "fsot_computed": 3.501659948345715,
+          "error_pct": 0.022461489204155086
+        },
+        "e": {
+          "measured": 0.1367225,
+          "fsot_computed": 0.13675320990957715,
+          "error_pct": 0.02246148920415694
+        },
+        "i": {
+          "measured": 5.77002,
+          "fsot_computed": 5.771316032419377,
+          "error_pct": 0.022461489204151263
+        },
+        "n": {
+          "measured": 0.15046636,
+          "fsot_computed": 0.15050015698520727,
+          "error_pct": 0.02246148920415133
+        }
+      },
+      "median_element_error_pct": 0.02246148920415321,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1345",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 3.9904011,
+          "fsot_computed": 3.991297403512279,
+          "error_pct": 0.022461489204152262
+        },
+        "e": {
+          "measured": 0.1834034,
+          "fsot_computed": 0.18344459513489103,
+          "error_pct": 0.022461489204145972
+        },
+        "i": {
+          "measured": 11.40672,
+          "fsot_computed": 11.409282119181348,
+          "error_pct": 0.02246148920415791
+        },
+        "n": {
+          "measured": 0.12364577,
+          "fsot_computed": 0.12367354268127995,
+          "error_pct": 0.022461489204155125
+        }
+      },
+      "median_element_error_pct": 0.022461489204153695,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "1404",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "outer_belt",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 5.28225,
+          "fsot_computed": 5.283436472013487,
+          "error_pct": 0.022461489204158268
+        },
+        "e": {
+          "measured": 0.1122346,
+          "fsot_computed": 0.11225980956256233,
+          "error_pct": 0.02246148920415657
+        },
+        "i": {
+          "measured": 18.0325,
+          "fsot_computed": 18.036550368040736,
+          "error_pct": 0.02246148920414188
+        },
+        "n": {
+          "measured": 0.08118497,
+          "fsot_computed": 0.08120320535327194,
+          "error_pct": 0.02246148920415295
+        }
+      },
+      "median_element_error_pct": 0.02246148920415476,
+      "pass_gate": true,
+      "diversity_cell": "outer_belt",
+      "regime_report": "outer_belt"
+    },
+    {
+      "desig": "5335",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 11.8599489,
+          "fsot_computed": 11.86261282114179,
+          "error_pct": 0.02246148920414389
+        },
+        "e": {
+          "measured": 0.8667481,
+          "fsot_computed": 0.8669427845309087,
+          "error_pct": 0.02246148920414719
+        },
+        "i": {
+          "measured": 61.90031,
+          "fsot_computed": 61.91421373144799,
+          "error_pct": 0.022461489204156308
+        },
+        "n": {
+          "measured": 0.02413125,
+          "fsot_computed": 0.024136670238113576,
+          "error_pct": 0.022461489204150233
+        }
+      },
+      "median_element_error_pct": 0.022461489204148713,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/other"
+    },
+    {
+      "desig": "10370",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "other",
+      "domain": "Astronomy",
+      "S_abs": 0.8984595681660628,
+      "factor": 0.00025,
+      "elements": {
+        "a": {
+          "measured": 24.9482366,
+          "fsot_computed": 24.953840345470535,
+          "error_pct": 0.022461489204146774
+        },
+        "e": {
+          "measured": 0.2466827,
+          "fsot_computed": 0.246738108608029,
+          "error_pct": 0.02246148920414567
+        },
+        "i": {
+          "measured": 4.14458,
+          "fsot_computed": 4.145510934389257,
+          "error_pct": 0.02246148920414021
+        },
+        "n": {
+          "measured": 0.00790941,
+          "fsot_computed": 0.007911186571273262,
+          "error_pct": 0.02246148920414472
+        }
+      },
+      "median_element_error_pct": 0.022461489204145195,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/other"
+    },
+    {
+      "desig": "15807",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.7347027,
+          "fsot_computed": 43.746280292178426,
+          "error_pct": 0.02647232395254454
+        },
+        "e": {
+          "measured": 0.0635834,
+          "fsot_computed": 0.06360023200362803,
+          "error_pct": 0.02647232395253591
+        },
+        "i": {
+          "measured": 0.56559,
+          "fsot_computed": 0.5657397248170433,
+          "error_pct": 0.026472323952550184
+        },
+        "n": {
+          "measured": 0.00340773,
+          "fsot_computed": 0.0034086321053250278,
+          "error_pct": 0.02647232395253987
+        }
+      },
+      "median_element_error_pct": 0.026472323952542204,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "15809",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 42.0168354,
+          "fsot_computed": 42.02795823278169,
+          "error_pct": 0.026472323952542533
+        },
+        "e": {
+          "measured": 0.2134984,
+          "fsot_computed": 0.2135549179880815,
+          "error_pct": 0.026472323952537194
+        },
+        "i": {
+          "measured": 14.05332,
+          "fsot_computed": 14.057040240396487,
+          "error_pct": 0.02647232395254641
+        },
+        "n": {
+          "measured": 0.00361884,
+          "fsot_computed": 0.003619797991048124,
+          "error_pct": 0.02647232395253698
+        }
+      },
+      "median_element_error_pct": 0.026472323952539865,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "15836",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 36.467943,
+          "fsot_computed": 36.47759691200979,
+          "error_pct": 0.026472323952542957
+        },
+        "e": {
+          "measured": 0.0766754,
+          "fsot_computed": 0.07669569776027992,
+          "error_pct": 0.02647232395254661
+        },
+        "i": {
+          "measured": 6.54926,
+          "fsot_computed": 6.550993741323695,
+          "error_pct": 0.026472323952547883
+        },
+        "n": {
+          "measured": 0.00447545,
+          "fsot_computed": 0.004476634755622334,
+          "error_pct": 0.02647232395254619
+        }
+      },
+      "median_element_error_pct": 0.026472323952546402,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "15883",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 47.2419365,
+          "fsot_computed": 47.254442538471736,
+          "error_pct": 0.026472323952542398
+        },
+        "e": {
+          "measured": 0.2149175,
+          "fsot_computed": 0.21497439365683071,
+          "error_pct": 0.026472323952541437
+        },
+        "i": {
+          "measured": 19.11994,
+          "fsot_computed": 19.12500149245633,
+          "error_pct": 0.02647232395253987
+        },
+        "n": {
+          "measured": 0.00303538,
+          "fsot_computed": 0.0030361835356267903,
+          "error_pct": 0.02647232395253616
+        }
+      },
+      "median_element_error_pct": 0.026472323952540653,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "16684",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.9146392,
+          "fsot_computed": 43.926264425551615,
+          "error_pct": 0.026472323952536552
+        },
+        "e": {
+          "measured": 0.0462917,
+          "fsot_computed": 0.04630395448878714,
+          "error_pct": 0.02647232395254219
+        },
+        "i": {
+          "measured": 3.74422,
+          "fsot_computed": 3.7452111820478957,
+          "error_pct": 0.026472323952541073
+        },
+        "n": {
+          "measured": 0.0033868,
+          "fsot_computed": 0.0033876965646676247,
+          "error_pct": 0.026472323952536927
+        }
+      },
+      "median_element_error_pct": 0.026472323952538998,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "19255",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.0634108,
+          "fsot_computed": 43.07481068561199,
+          "error_pct": 0.026472323952550118
+        },
+        "e": {
+          "measured": 0.0349002,
+          "fsot_computed": 0.03490943889400409,
+          "error_pct": 0.026472323952549635
+        },
+        "i": {
+          "measured": 1.48682,
+          "fsot_computed": 1.4872135958069912,
+          "error_pct": 0.026472323952540653
+        },
+        "n": {
+          "measured": 0.00348772,
+          "fsot_computed": 0.003488643280536958,
+          "error_pct": 0.0264723239525452
+        }
+      },
+      "median_element_error_pct": 0.02647232395254742,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "19299",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.8937372,
+          "fsot_computed": 39.90429799934836,
+          "error_pct": 0.026472323952546686
+        },
+        "e": {
+          "measured": 0.2626459,
+          "fsot_computed": 0.26271542847349605,
+          "error_pct": 0.026472323952538786
+        },
+        "i": {
+          "measured": 4.73708,
+          "fsot_computed": 4.738334015163491,
+          "error_pct": 0.026472323952544983
+        },
+        "n": {
+          "measured": 0.00391153,
+          "fsot_computed": 0.0039125654728931,
+          "error_pct": 0.026472323952531903
+        }
+      },
+      "median_element_error_pct": 0.026472323952541885,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "20108",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.6452151,
+          "fsot_computed": 39.655710109772954,
+          "error_pct": 0.026472323952538755
+        },
+        "e": {
+          "measured": 0.1449411,
+          "fsot_computed": 0.14497946927753236,
+          "error_pct": 0.02647232395253556
+        },
+        "i": {
+          "measured": 19.55641,
+          "fsot_computed": 19.561587036208685,
+          "error_pct": 0.026472323952533173
+        },
+        "n": {
+          "measured": 0.00394837,
+          "fsot_computed": 0.003949415225297245,
+          "error_pct": 0.026472323952545864
+        }
+      },
+      "median_element_error_pct": 0.02647232395253716,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "20161",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 47.8808495,
+          "fsot_computed": 47.89352467359087,
+          "error_pct": 0.026472323952546468
+        },
+        "e": {
+          "measured": 0.3955876,
+          "fsot_computed": 0.3956923212309881,
+          "error_pct": 0.026472323952543467
+        },
+        "i": {
+          "measured": 12.43418,
+          "fsot_computed": 12.437471616410441,
+          "error_pct": 0.026472323952538353
+        },
+        "n": {
+          "measured": 0.00297482,
+          "fsot_computed": 0.002975607503987405,
+          "error_pct": 0.026472323952545628
+        }
+      },
+      "median_element_error_pct": 0.02647232395254455,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "24952",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.6315892,
+          "fsot_computed": 39.642080602680565,
+          "error_pct": 0.026472323952541565
+        },
+        "e": {
+          "measured": 0.2314746,
+          "fsot_computed": 0.23153587670597986,
+          "error_pct": 0.026472323952544643
+        },
+        "i": {
+          "measured": 16.56594,
+          "fsot_computed": 16.570325389302585,
+          "error_pct": 0.026472323952543775
+        },
+        "n": {
+          "measured": 0.00395041,
+          "fsot_computed": 0.003951455765332654,
+          "error_pct": 0.026472323952548917
+        }
+      },
+      "median_element_error_pct": 0.02647232395254421,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "24978",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.1571702,
+          "fsot_computed": 43.168594905904094,
+          "error_pct": 0.026472323952534346
+        },
+        "e": {
+          "measured": 0.0497118,
+          "fsot_computed": 0.04972495986873864,
+          "error_pct": 0.026472323952546926
+        },
+        "i": {
+          "measured": 2.39408,
+          "fsot_computed": 2.394713768613283,
+          "error_pct": 0.026472323952537232
+        },
+        "n": {
+          "measured": 0.00347636,
+          "fsot_computed": 0.0034772802732809566,
+          "error_pct": 0.02647232395254324
+        }
+      },
+      "median_element_error_pct": 0.026472323952540237,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "38083",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 38.9582198,
+          "fsot_computed": 38.968532946151605,
+          "error_pct": 0.026472323952550923
+        },
+        "e": {
+          "measured": 0.156272,
+          "fsot_computed": 0.15631336883008712,
+          "error_pct": 0.026472323952546842
+        },
+        "i": {
+          "measured": 12.74728,
+          "fsot_computed": 12.750654501256738,
+          "error_pct": 0.026472323952547738
+        },
+        "n": {
+          "measured": 0.00405327,
+          "fsot_computed": 0.004054342994765071,
+          "error_pct": 0.026472323952538634
+        }
+      },
+      "median_element_error_pct": 0.02647232395254729,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "45802",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.3536652,
+          "fsot_computed": 43.36514192269705,
+          "error_pct": 0.02647232395254816
+        },
+        "e": {
+          "measured": 0.0110923,
+          "fsot_computed": 0.011095236389589787,
+          "error_pct": 0.0264723239525416
+        },
+        "i": {
+          "measured": 1.18051,
+          "fsot_computed": 1.180822508431492,
+          "error_pct": 0.02647232395253822
+        },
+        "n": {
+          "measured": 0.00345275,
+          "fsot_computed": 0.0034536640231652713,
+          "error_pct": 0.026472323952536767
+        }
+      },
+      "median_element_error_pct": 0.02647232395253991,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "49673",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.1353423,
+          "fsot_computed": 43.14676122755169,
+          "error_pct": 0.026472323952544445
+        },
+        "e": {
+          "measured": 0.105061,
+          "fsot_computed": 0.10508881208826779,
+          "error_pct": 0.02647232395254569
+        },
+        "i": {
+          "measured": 22.55611,
+          "fsot_computed": 22.562081126510293,
+          "error_pct": 0.026472323952546048
+        },
+        "n": {
+          "measured": 0.003479,
+          "fsot_computed": 0.0034799209721503087,
+          "error_pct": 0.026472323952537465
+        }
+      },
+      "median_element_error_pct": 0.02647232395254507,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "52747",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 44.2071019,
+          "fsot_computed": 44.218804547225,
+          "error_pct": 0.026472323952546555
+        },
+        "e": {
+          "measured": 0.0561196,
+          "fsot_computed": 0.05613445616231287,
+          "error_pct": 0.02647232395254433
+        },
+        "i": {
+          "measured": 0.54398,
+          "fsot_computed": 0.544124004147837,
+          "error_pct": 0.02647232395253424
+        },
+        "n": {
+          "measured": 0.00335325,
+          "fsot_computed": 0.0033541376832029383,
+          "error_pct": 0.0264723239525365
+        }
+      },
+      "median_element_error_pct": 0.026472323952540414,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "53311",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.9422534,
+          "fsot_computed": 43.95388593567209,
+          "error_pct": 0.026472323952535633
+        },
+        "e": {
+          "measured": 0.0591467,
+          "fsot_computed": 0.05916235750603124,
+          "error_pct": 0.026472323952545108
+        },
+        "i": {
+          "measured": 0.36602,
+          "fsot_computed": 0.3661168940001311,
+          "error_pct": 0.02647232395253698
+        },
+        "n": {
+          "measured": 0.00338361,
+          "fsot_computed": 0.0033845057202004907,
+          "error_pct": 0.026472323952545167
+        }
+      },
+      "median_element_error_pct": 0.026472323952541045,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "54520",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 121.8317067,
+          "fsot_computed": 121.86395838407454,
+          "error_pct": 0.02647232395254456
+        },
+        "e": {
+          "measured": 0.7655788,
+          "fsot_computed": 0.765781466500048,
+          "error_pct": 0.026472323952539633
+        },
+        "i": {
+          "measured": 5.72083,
+          "fsot_computed": 5.722344436650374,
+          "error_pct": 0.026472323952536146
+        },
+        "n": {
+          "measured": 0.00073293,
+          "fsot_computed": 0.0007331240236039453,
+          "error_pct": 0.026472323952534967
+        }
+      },
+      "median_element_error_pct": 0.026472323952537888,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "58534",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 45.3074492,
+          "fsot_computed": 45.31944313472686,
+          "error_pct": 0.026472323952547373
+        },
+        "e": {
+          "measured": 0.1228989,
+          "fsot_computed": 0.12293143419494211,
+          "error_pct": 0.02647232395253729
+        },
+        "i": {
+          "measured": 2.89629,
+          "fsot_computed": 2.8970567152714053,
+          "error_pct": 0.02647232395254828
+        },
+        "n": {
+          "measured": 0.00323184,
+          "fsot_computed": 0.003232695543154428,
+          "error_pct": 0.02647232395254131
+        }
+      },
+      "median_element_error_pct": 0.02647232395254434,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "60454",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 44.351936,
+          "fsot_computed": 44.36367698817715,
+          "error_pct": 0.026472323952544223
+        },
+        "e": {
+          "measured": 0.0847429,
+          "fsot_computed": 0.08476533341501477,
+          "error_pct": 0.026472323952537388
+        },
+        "i": {
+          "measured": 1.16138,
+          "fsot_computed": 1.1616874442759202,
+          "error_pct": 0.026472323952548702
+        },
+        "n": {
+          "measured": 0.00333684,
+          "fsot_computed": 0.0033377233390945783,
+          "error_pct": 0.026472323952544063
+        }
+      },
+      "median_element_error_pct": 0.026472323952544143,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "60458",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 59.7645845,
+          "fsot_computed": 59.78040557441773,
+          "error_pct": 0.026472323952540188
+        },
+        "e": {
+          "measured": 0.406044,
+          "fsot_computed": 0.4061514892830699,
+          "error_pct": 0.026472323952542457
+        },
+        "i": {
+          "measured": 19.67624,
+          "fsot_computed": 19.68144875799448,
+          "error_pct": 0.026472323952549174
+        },
+        "n": {
+          "measured": 0.00213323,
+          "fsot_computed": 0.0021337947155562528,
+          "error_pct": 0.02647232395254671
+        }
+      },
+      "median_element_error_pct": 0.026472323952544584,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "60620",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 43.6342507,
+          "fsot_computed": 43.64580170019957,
+          "error_pct": 0.02647232395253974
+        },
+        "e": {
+          "measured": 0.2186193,
+          "fsot_computed": 0.21867717360931876,
+          "error_pct": 0.026472323952540306
+        },
+        "i": {
+          "measured": 19.50964,
+          "fsot_computed": 19.514804655102775,
+          "error_pct": 0.026472323952540476
+        },
+        "n": {
+          "measured": 0.0034195,
+          "fsot_computed": 0.003420405221117557,
+          "error_pct": 0.02647232395254433
+        }
+      },
+      "median_element_error_pct": 0.026472323952540393,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "69986",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 39.7127401,
+          "fsot_computed": 39.7232529852097,
+          "error_pct": 0.026472323952533357
+        },
+        "e": {
+          "measured": 0.2264742,
+          "fsot_computed": 0.22653415298389293,
+          "error_pct": 0.02647232395254795
+        },
+        "i": {
+          "measured": 13.91754,
+          "fsot_computed": 13.921224296275025,
+          "error_pct": 0.026472323952536642
+        },
+        "n": {
+          "measured": 0.0039383,
+          "fsot_computed": 0.003939342559534223,
+          "error_pct": 0.026472323952551904
+        }
+      },
+      "median_element_error_pct": 0.026472323952542294,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "69987",
+      "name": null,
+      "kind": "minor_planet",
+      "regime": "distant",
+      "domain": "Astrophysics",
+      "S_abs": 0.8824107984181293,
+      "factor": 0.0003,
+      "elements": {
+        "a": {
+          "measured": 42.7850023,
+          "fsot_computed": 42.79632848441196,
+          "error_pct": 0.026472323952536795
+        },
+        "e": {
+          "measured": 0.0213446,
+          "fsot_computed": 0.021350250411658372,
+          "error_pct": 0.026472323952538165
+        },
+        "i": {
+          "measured": 1.04732,
+          "fsot_computed": 1.0475972499432198,
+          "error_pct": 0.026472323952541676
+        },
+        "n": {
+          "measured": 0.00352182,
+          "fsot_computed": 0.0035227523075994256,
+          "error_pct": 0.026472323952543314
+        }
+      },
+      "median_element_error_pct": 0.02647232395253992,
+      "pass_gate": true,
+      "diversity_cell": "high_u",
+      "regime_report": "high_u/distant"
+    },
+    {
+      "desig": "C.53P010",
+      "name": "C/-146 P1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 6.0,
+          "fsot_computed": 6.001745989275049,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.43,
+          "fsot_computed": 0.43012512923137847,
+          "error_pct": 0.0290998212508078
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C/56K010",
+      "name": "C/- 43 K1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 5.0,
+          "fsot_computed": 5.00145499106254,
+          "error_pct": 0.029099821250806457
+        },
+        "e": {
+          "measured": 0.22,
+          "fsot_computed": 0.2200640196067518,
+          "error_pct": 0.029099821250811907
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C240V010",
+      "name": "C/ 240 V1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 11.0,
+          "fsot_computed": 11.003200980337589,
+          "error_pct": 0.029099821250804844
+        },
+        "e": {
+          "measured": 0.37,
+          "fsot_computed": 0.370107669338628,
+          "error_pct": 0.029099821250808497
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250808497,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C390Q010",
+      "name": "C/ 390 Q1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 9.0,
+          "fsot_computed": 9.002618983912573,
+          "error_pct": 0.02909982125080843
+        },
+        "e": {
+          "measured": 0.92,
+          "fsot_computed": 0.9202677183555075,
+          "error_pct": 0.02909982125080752
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.02909982125080843,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C400F010",
+      "name": "C/ 400 F1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 2.0,
+          "fsot_computed": 2.000581996425016,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.21,
+          "fsot_computed": 0.2100611096246267,
+          "error_pct": 0.029099821250816716
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C418M010",
+      "name": "C/ 418 M1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 10.0,
+          "fsot_computed": 10.00290998212508,
+          "error_pct": 0.029099821250806457
+        },
+        "e": {
+          "measured": 0.35,
+          "fsot_computed": 0.3501018493743778,
+          "error_pct": 0.029099821250814072
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C442V010",
+      "name": "C/ 442 V1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 12.0,
+          "fsot_computed": 12.003491978550098,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        },
+        "i": {
+          "measured": 178.0,
+          "fsot_computed": 178.05179768182646,
+          "error_pct": 0.02909982125081863
+        }
+      },
+      "median_element_error_pct": 0.029099821250818298,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C539W010",
+      "name": "C/ 539 W1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 11.0,
+          "fsot_computed": 11.003200980337589,
+          "error_pct": 0.029099821250804844
+        },
+        "e": {
+          "measured": 0.16,
+          "fsot_computed": 0.1600465597140013,
+          "error_pct": 0.02909982125081506
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C565O010",
+      "name": "C/ 565 O1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 7.0,
+          "fsot_computed": 7.002036987487557,
+          "error_pct": 0.02909982125081407
+        },
+        "e": {
+          "measured": 0.83,
+          "fsot_computed": 0.8302415285163817,
+          "error_pct": 0.029099821250807956
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C568O010",
+      "name": "C/ 568 O1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 8.0,
+          "fsot_computed": 8.002327985700065,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.87,
+          "fsot_computed": 0.8702531684448821,
+          "error_pct": 0.029099821250816258
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C574G010",
+      "name": "C/ 574 G1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 3.0,
+          "fsot_computed": 3.0008729946375245,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.73,
+          "fsot_computed": 0.7302124286951309,
+          "error_pct": 0.029099821250813635
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250813635,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C770K010",
+      "name": "C/ 770 K1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 6.0,
+          "fsot_computed": 6.001745989275049,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.58,
+          "fsot_computed": 0.5801687789632547,
+          "error_pct": 0.029099821250816258
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250816258,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C817C010",
+      "name": "C/ 817 C1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 3.0,
+          "fsot_computed": 3.0008729946375245,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 1.1,
+          "fsot_computed": 1.100320098033759,
+          "error_pct": 0.029099821250816952
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250816952,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C868B010",
+      "name": "C/ 868 B1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 3.0,
+          "fsot_computed": 3.0008729946375245,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.42,
+          "fsot_computed": 0.4201222192492534,
+          "error_pct": 0.029099821250816716
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250816716,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C905K010",
+      "name": "C/ 905 K1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 4.0,
+          "fsot_computed": 4.001163992850032,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.2,
+          "fsot_computed": 0.20005819964250163,
+          "error_pct": 0.029099821250808122
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "C962B010",
+      "name": "C/ 962 B1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 12.0,
+          "fsot_computed": 12.003491978550098,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.63,
+          "fsot_computed": 0.6301833288738801,
+          "error_pct": 0.029099821250803497
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CA14C010",
+      "name": "C/1014 C1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 4.0,
+          "fsot_computed": 4.001163992850032,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.56,
+          "fsot_computed": 0.5601629589990046,
+          "error_pct": 0.029099821250810103
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CA18P010",
+      "name": "C/1018 P1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 8.0,
+          "fsot_computed": 8.002327985700065,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.62,
+          "fsot_computed": 0.620180418891755,
+          "error_pct": 0.029099821250809465
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CA80P010",
+      "name": "C/1080 P1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 9.0,
+          "fsot_computed": 9.002618983912573,
+          "error_pct": 0.02909982125080843
+        },
+        "e": {
+          "measured": 0.681,
+          "fsot_computed": 0.6811981697827181,
+          "error_pct": 0.029099821250811647
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CA92A010",
+      "name": "C/1092 A1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 2.0,
+          "fsot_computed": 2.000581996425016,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.77,
+          "fsot_computed": 0.7702240686236312,
+          "error_pct": 0.029099821250808303
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CA97T010",
+      "name": "C/1097 T1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 9.0,
+          "fsot_computed": 9.002618983912573,
+          "error_pct": 0.02909982125080843
+        },
+        "e": {
+          "measured": 0.3,
+          "fsot_computed": 0.3000872994637524,
+          "error_pct": 0.029099821250803497
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.02909982125080843,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CB10K010",
+      "name": "C/1110 K1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 5.0,
+          "fsot_computed": 5.00145499106254,
+          "error_pct": 0.029099821250806457
+        },
+        "e": {
+          "measured": 0.83,
+          "fsot_computed": 0.8302415285163817,
+          "error_pct": 0.029099821250807956
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250807956,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CB32T010",
+      "name": "C/1132 T1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 8.0,
+          "fsot_computed": 8.002327985700065,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.736,
+          "fsot_computed": 0.736214174684406,
+          "error_pct": 0.029099821250813552
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CB47A010",
+      "name": "C/1147 A1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.12,
+          "fsot_computed": 0.12003491978550097,
+          "error_pct": 0.02909982125081506
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CC30X010",
+      "name": "C/1230 X1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 12.0,
+          "fsot_computed": 12.003491978550098,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.86,
+          "fsot_computed": 0.8602502584627569,
+          "error_pct": 0.0290998212508078
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CC40B010",
+      "name": "C/1240 B1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.668,
+          "fsot_computed": 0.6681943868059554,
+          "error_pct": 0.029099821250809035
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CC45D010",
+      "name": "C/1245 D1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 4.0,
+          "fsot_computed": 4.001163992850032,
+          "error_pct": 0.029099821250810898
+        },
+        "i": {
+          "measured": 0.5,
+          "fsot_computed": 0.500145499106254,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CC64N010",
+      "name": "C/1264 N1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 7.0,
+          "fsot_computed": 7.002036987487557,
+          "error_pct": 0.02909982125081407
+        },
+        "e": {
+          "measured": 0.8249,
+          "fsot_computed": 0.8251400444254979,
+          "error_pct": 0.02909982125081404
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.02909982125081404,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CC93V010",
+      "name": "C/1293 V1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 10.0,
+          "fsot_computed": 10.00290998212508,
+          "error_pct": 0.029099821250806457
+        },
+        "e": {
+          "measured": 0.78,
+          "fsot_computed": 0.7802269786057564,
+          "error_pct": 0.02909982125081773
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CC99B010",
+      "name": "C/1299 B1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 3.0,
+          "fsot_computed": 3.0008729946375245,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.3179,
+          "fsot_computed": 0.31799250833175635,
+          "error_pct": 0.02909982125081339
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.02909982125081339,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CD04C010",
+      "name": "C/1304 C1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 2.0,
+          "fsot_computed": 2.000581996425016,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.84,
+          "fsot_computed": 0.8402444384985068,
+          "error_pct": 0.029099821250816716
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CD04Y010",
+      "name": "C/1304 Y1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.65,
+          "fsot_computed": 0.6501891488381303,
+          "error_pct": 0.029099821250809187
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CD15U010",
+      "name": "C/1315 U1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 10.0,
+          "fsot_computed": 10.00290998212508,
+          "error_pct": 0.029099821250806457
+        },
+        "e": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        },
+        "i": {
+          "measured": 27.3,
+          "fsot_computed": 27.307944251201473,
+          "error_pct": 0.02909982125081407
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CD37M010",
+      "name": "C/1337 M1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 6.0,
+          "fsot_computed": 6.001745989275049,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.749,
+          "fsot_computed": 0.7492179576611686,
+          "error_pct": 0.02909982125081585
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.02909982125081585,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CD40F010",
+      "name": "C/1340 F1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 5.0,
+          "fsot_computed": 5.00145499106254,
+          "error_pct": 0.029099821250806457
+        },
+        "e": {
+          "measured": 1.1362,
+          "fsot_computed": 1.1365306321690518,
+          "error_pct": 0.029099821250810985
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CD45O010",
+      "name": "C/1345 O1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 8.0,
+          "fsot_computed": 8.002327985700065,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.89,
+          "fsot_computed": 0.8902589884091322,
+          "error_pct": 0.029099821250807654
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CD51W010",
+      "name": "C/1351 W1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 11.0,
+          "fsot_computed": 11.003200980337589,
+          "error_pct": 0.029099821250804844
+        },
+        "e": {
+          "measured": 1.01,
+          "fsot_computed": 1.0102939081946332,
+          "error_pct": 0.02909982125080716
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.02909982125080716,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CD62E010",
+      "name": "C/1362 E1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 2.0,
+          "fsot_computed": 2.000581996425016,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.3,
+          "fsot_computed": 0.3000872994637524,
+          "error_pct": 0.029099821250803497
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CD68E010",
+      "name": "C/1368 E1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 5.0,
+          "fsot_computed": 5.00145499106254,
+          "error_pct": 0.029099821250806457
+        },
+        "e": {
+          "measured": 0.48,
+          "fsot_computed": 0.4801396791420039,
+          "error_pct": 0.02909982125081506
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CD76M010",
+      "name": "C/1376 M1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 7.0,
+          "fsot_computed": 7.002036987487557,
+          "error_pct": 0.02909982125081407
+        },
+        "e": {
+          "measured": 0.55,
+          "fsot_computed": 0.5501600490168795,
+          "error_pct": 0.029099821250816952
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.02909982125081407,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CE02D010",
+      "name": "C/1402 D1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 3.0,
+          "fsot_computed": 3.0008729946375245,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.38,
+          "fsot_computed": 0.3801105793207531,
+          "error_pct": 0.029099821250813236
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250813236,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CE33R010",
+      "name": "C/1433 R1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 11.0,
+          "fsot_computed": 11.003200980337589,
+          "error_pct": 0.029099821250804844
+        },
+        "e": {
+          "measured": 0.49277,
+          "fsot_computed": 0.4929133951891776,
+          "error_pct": 0.029099821250808417
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250808417,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CE39F010",
+      "name": "C/1439 F1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 5.0,
+          "fsot_computed": 5.00145499106254,
+          "error_pct": 0.029099821250806457
+        },
+        "e": {
+          "measured": 0.12,
+          "fsot_computed": 0.12003491978550097,
+          "error_pct": 0.02909982125081506
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CE49Y010",
+      "name": "C/1449 Y1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 12.0,
+          "fsot_computed": 12.003491978550098,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.32742,
+          "fsot_computed": 0.3275152786347394,
+          "error_pct": 0.029099821250810617
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CE57L010",
+      "name": "C/1457 L1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 8.0,
+          "fsot_computed": 8.002327985700065,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.76991,
+          "fsot_computed": 0.7701340424337921,
+          "error_pct": 0.029099821250814863
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CE58Y010",
+      "name": "C/1458 Y1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 11.0,
+          "fsot_computed": 11.003200980337589,
+          "error_pct": 0.029099821250804844
+        },
+        "e": {
+          "measured": 0.49,
+          "fsot_computed": 0.49014258912412895,
+          "error_pct": 0.029099821250807272
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250807272,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CE62M010",
+      "name": "C/1462 M1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 8.0,
+          "fsot_computed": 8.002327985700065,
+          "error_pct": 0.029099821250810898
+        },
+        "e": {
+          "measured": 0.25,
+          "fsot_computed": 0.250072749553127,
+          "error_pct": 0.029099821250810898
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CE68S010",
+      "name": "C/1468 S1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 10.0,
+          "fsot_computed": 10.00290998212508,
+          "error_pct": 0.029099821250806457
+        },
+        "e": {
+          "measured": 0.85,
+          "fsot_computed": 0.8502473484806319,
+          "error_pct": 0.029099821250812206
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CE71Y010",
+      "name": "C/1471 Y1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 3.0,
+          "fsot_computed": 3.0008729946375245,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.48589,
+          "fsot_computed": 0.48603139312147553,
+          "error_pct": 0.029099821250806047
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    },
+    {
+      "desig": "CE90Y010",
+      "name": "C/1490 Y1",
+      "kind": "comet",
+      "regime": "comet",
+      "domain": "Meteorology",
+      "S_abs": 0.4849970208468799,
+      "factor": 0.0006,
+      "elements": {
+        "q": {
+          "measured": 12.0,
+          "fsot_computed": 12.003491978550098,
+          "error_pct": 0.029099821250818298
+        },
+        "e": {
+          "measured": 0.7376,
+          "fsot_computed": 0.737814640281546,
+          "error_pct": 0.029099821250805503
+        },
+        "i": {
+          "measured": 1.0,
+          "fsot_computed": 1.000290998212508,
+          "error_pct": 0.029099821250810898
+        }
+      },
+      "median_element_error_pct": 0.029099821250810898,
+      "pass_gate": true,
+      "diversity_cell": "comet",
+      "regime_report": "comet"
+    }
+  ],
+  "not_in_scope": [
+    "Major planets",
+    "Moons",
+    "Stars / exoplanets",
+    "Full 1.55M MPCORB optical history"
+  ]
+}
