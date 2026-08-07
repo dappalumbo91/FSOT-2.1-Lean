@@ -1,6 +1,8 @@
 version: '1.0'
 updated: '2026-06-20'
+# Primary: Physical Archive (I:). Fallback when archive unmounted: Desktop Genetics.
 genetics_root: I:/FSOT-Physical-Archive/04_Genetics-Longevity
+genetics_root_fallback: C:/Users/damia/Desktop/Genetics
 artifacts:
   formulas_json:
     path: fsot_protein/formulas/fsot_protein_formulas.json

@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-08-07T00:46:49.624407+00:00",
+  "purpose": "Native FSOT protein evaluation: F15 distogram vs experimental contacts",
+  "authority": "FSOT_PROTEIN_DERIVATIONS.md v7",
+  "note": "This is the metric the protein stack was designed for (Pearson/Top-L/LR). C\u03b1 RMSD embedding is a separate downstream step; contact ranking must work first.",
+  "summary": {
+    "n_proteins": 5,
+    "median_pearson": 0.613968553883494,
+    "mean_pearson": 0.6859572148562754
+  },
+  "results": [
+    {
+      "pdb": "1UBQ",
+      "name": "Ubiquitin",
+      "accession": "P62988",
+      "n": 76,
+      "n_regions": 5,
+      "pearson_prox_vs_invdist": 0.613968553883494,
+      "top_L_precision": 0.9868421052631579,
+      "long_range_top_L2_precision": 0.05263157894736842,
+      "n_pairs": 2850,
+      "n_true_contacts": 326,
+      "engine": "fsot_protein_F01_F15_port_v3"
+    },
+    {
+      "pdb": "1CRN",
+      "name": "Crambin",
+      "accession": "P01542",
+      "n": 46,
+      "n_regions": 3,
+      "pearson_prox_vs_invdist": 0.6021758156115189,
+      "top_L_precision": 0.8043478260869565,
+      "long_range_top_L2_precision": 0.2608695652173913,
+      "n_pairs": 1035,
+      "n_true_contacts": 203,
+      "engine": "fsot_protein_F01_F15_port_v3"
+    },
+    {
+      "pdb": "1VII",
+      "name": "Villin headpiece",
+      "accession": "P03069",
+      "n": 36,
+      "n_regions": 4,
+      "pearson_prox_vs_invdist": 0.8392895673883193,
+      "top_L_precision": 1.0,
+      "long_range_top_L2_precision": 0.1111111111111111,
+      "n_pairs": 630,
+      "n_true_contacts": 143,
+      "engine": "fsot_protein_F01_F15_port_v3"
+    },
+    {
+      "pdb": "2GB1",
+      "name": "Protein G B1",
+      "accession": "P06654",
+      "n": 56,
+      "n_regions": 5,
+      "pearson_prox_vs_invdist": 0.6054992769206732,
+      "top_L_precision": 1.0,
+      "long_range_top_L2_precision": 0.07142857142857142,
+      "n_pairs": 1540,
+      "n_true_contacts": 247,
+      "engine": "fsot_protein_F01_F15_port_v3"
+    },
+    {
+      "pdb": "1ENH",
+      "name": "Engrailed homeodomain",
+      "accession": "P09017",
+      "n": 54,
+      "n_regions": 5,
+      "pearson_prox_vs_invdist": 0.7688528604773713,
+      "top_L_precision": 1.0,
+      "long_range_top_L2_precision": 0.037037037037037035,
+      "n_pairs": 1431,
+      "n_true_contacts": 205,
+      "engine": "fsot_protein_F01_F15_port_v3"
+    }
+  ]
+}

@@ -336,9 +336,11 @@ def main() -> int:
             "af_align_n": af_n,
             "winner_lower_rmsd": win,
             "fsot_secondary": pred["secondary"][:80],
-            "S_pack": pred["S_pack"],
+            "S_biochem": pred.get("S_biochem"),
+            "S_molchem": pred.get("S_molchem"),
             "engine": pred["engine"],
             "free_parameters": 0,
+            "authority": pred.get("authority"),
         }
         results.append(rec)
         print(f"  WINNER: {win}")
