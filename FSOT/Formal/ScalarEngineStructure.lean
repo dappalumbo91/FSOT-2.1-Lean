@@ -174,10 +174,6 @@ theorem raw_S_pos_of_t1_t3_over_neg_unit_t2
 -- ANALYTIC DEPTH — sign transport, unit T2 rewrite, k-positivity
 -- ============================================================
 
-/-- Universal constant k is strictly positive (Bounds interval k > 0.42). -/
-theorem k_pos : (0 : ℝ) < k :=
-  lt_trans (by norm_num : (0 : ℝ) < 0.42) k_gt_0420
-
 /-- Under unit T2, raw_S rewrites as T1 + T3 + 1. -/
 theorem raw_S_of_unit_term2 (p : FSOTParams) (h2 : term2 p = 1) :
     raw_S p = term1 p + term3 p + 1 := by
