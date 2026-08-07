@@ -1,6 +1,6 @@
 # FSOT distogram contact evaluation (F15 native)
 
-*Generated 2026-08-07T00:46:49.624407+00:00*
+*Generated 2026-08-07T00:51:40.051181+00:00*
 
 This is the metric the protein stack was designed for (Pearson/Top-L/LR). Cα RMSD embedding is a separate downstream step; contact ranking must work first.
 

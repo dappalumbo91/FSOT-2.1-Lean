@@ -283,33 +283,52 @@ def build_distogram(sequence: str) -> tuple[np.ndarray, list[SsPropensity], list
     return M, props, regions, "".join(chars)
 
 
-def proximity_to_distance(M: np.ndarray) -> np.ndarray:
-    """Map proximity (larger=closer) → Å distances for embedding.
+def geometric_scale_dist(sep: int) -> float:
+    """Neuron Zig genetic.zig: geometricScaleDist = φ · dist^(-1/π)."""
+    d = float(max(sep, 1))
+    return PHI * (d ** (-1.0 / PI))
 
-    F07: bb(s)=s^{-1/π}. At sep=1, bb=1 → d=CA_CA.
-    d_ij = CA_CA / max(M_ij, ε)^{π} would explode; use saturating inverse:
-      d = CA_CA * (1 + (π e) * max(0, M_ref - M) / (1 + M))
-    with M_ref = 1 (backbone adjacent scale).
+
+def proximity_to_distance(M: np.ndarray) -> np.ndarray:
+    """Map F15 proximity M (larger ⇒ closer) → Å using F07 inverse + Zig geom.
+
+    F07: bb(s) = s^(-1/π).  If M were pure backbone, s = M^(-π) and
+    collapsed distance scales as CA_CA · s^(1/π) = CA_CA / M.
+
+    Neuron Zig pair geometry uses φ·s^(-1/π) as the *weight* scale; for
+    distance we invert the same exponent (1/π), not Flory ½.
+
+    F08 contact scale π·e sets the soft long-range ceiling.
     """
     n = M.shape[0]
     D = np.zeros((n, n), dtype=np.float64)
-    contact_scale = PI * E  # F08 FSOT contact scale ~8.54 Å
+    contact_scale = PI * E  # F08
+    d_ceil = contact_scale * PHI  # π e φ — long-range soft max (~13.8 Å pull)
+    d_hard = contact_scale * PHI * PHI  # absolute ceiling
     for i in range(n):
         for j in range(i + 1, n):
+            sep = abs(i - j)
             m = max(float(M[i, j]), 1e-9)
-            # Adjacent backbone: enforce geometry
-            if abs(i - j) == 1:
+            if sep == 1:
                 d = CA_CA
-            elif abs(i - j) == 2:
-                # virtual bond length from seeds only: 3.8 · √(e/φ)
+            elif sep == 2:
+                # seed-only virtual bond: CA_CA · √(e/φ)
                 d = CA_CA * math.sqrt(E / PHI)
             else:
-                # Higher proximity → shorter distance; floor at CA_CA, soft ceiling
-                d = CA_CA + contact_scale / (1.0 + m * PHI)
-                # strong contacts pull toward π-scale
-                if m > 1.0:
-                    d = min(d, contact_scale / (m / PHI))
-            d = float(np.clip(d, CA_CA * 0.95, 45.0))
+                # F07 inverse: d ∝ 1/M, calibrated so M=1 → CA_CA
+                d_inv = CA_CA / m
+                # Blend with polymer collapsed distance from sequence sep
+                # (same exponent 1/π as F07 / Zig geometricScaleDist)
+                d_poly = CA_CA * (float(sep) ** (1.0 / PI))
+                # High proximity pulls toward inverse; low M → polymer
+                # Envelope env = s/(s+πe) like genetic.fsotPairWeight
+                env = float(sep) / (float(sep) + PI * E)
+                d = (1.0 - env) * d_poly + env * min(d_inv, d_ceil)
+                # Extra contact compression when M exceeds backbone-only level
+                bb_only = float(sep) ** (-1.0 / PI)
+                if m > bb_only * PHI:
+                    d = min(d, contact_scale / (1.0 + (m - bb_only) * PHI))
+            d = float(np.clip(d, CA_CA * 0.95, d_hard))
             D[i, j] = D[j, i] = d
     return D
 
@@ -320,17 +339,13 @@ def classical_mds(D: np.ndarray, dim: int = 3) -> np.ndarray:
     D2 = D ** 2
     J = np.eye(n) - np.ones((n, n)) / n
     B = -0.5 * J @ D2 @ J
-    # eigh for symmetric
     evals, evecs = np.linalg.eigh(B)
     idx = np.argsort(evals)[::-1]
     evals = evals[idx]
     evecs = evecs[:, idx]
-    # keep positive eigenvalues
     pos = evals[:dim].copy()
     pos[pos < 0] = 0.0
-    L = np.diag(np.sqrt(pos))
-    X = evecs[:, :dim] @ L
-    # scale so mean adjacent CA distance = CA_CA
+    X = evecs[:, :dim] @ np.diag(np.sqrt(pos))
     if n > 1:
         adj = np.linalg.norm(X[1:] - X[:-1], axis=1).mean()
         if adj > 1e-9:
@@ -339,33 +354,100 @@ def classical_mds(D: np.ndarray, dim: int = 3) -> np.ndarray:
     return X
 
 
+def initial_extended(n: int) -> np.ndarray:
+    """Deterministic extended chain (seed angle step 2π/φ)."""
+    X = np.zeros((n, 3), dtype=np.float64)
+    ang = 2.0 * PI / PHI
+    for i in range(1, n):
+        a = i * ang
+        X[i] = X[i - 1] + CA_CA * np.array([math.cos(a), math.sin(a), 1.0 / PHI])
+        # normalize step
+        step = X[i] - X[i - 1]
+        X[i] = X[i - 1] + step * (CA_CA / (np.linalg.norm(step) + 1e-12))
+    X -= X.mean(axis=0)
+    return X
+
+
+def initial_helix_bundle(seq: str, props: list[SsPropensity]) -> np.ndarray:
+    """Deterministic start from F10 helix geometry where p_alpha dominates."""
+    n = len(seq)
+    X = np.zeros((n, 3), dtype=np.float64)
+    turn = 100.0 * PI / 180.0  # α geometry constant (degrees→rad)
+    rise = 1.5
+    r = 2.3
+    k_h = 0
+    for i in range(n):
+        if i == 0:
+            continue
+        if props[i].p_alpha >= props[i].p_beta and props[i].p_alpha >= props[i].p_coil:
+            k_h += 1
+            X[i] = [r * math.cos(k_h * turn), r * math.sin(k_h * turn), X[i - 1, 2] + rise]
+        else:
+            k_h = 0
+            a = i * 2.0 * PI / (PHI * 5.0)
+            X[i] = X[i - 1] + CA_CA * np.array([math.cos(a), math.sin(a), 0.4])
+            step = X[i] - X[i - 1]
+            X[i] = X[i - 1] + step * (CA_CA / (np.linalg.norm(step) + 1e-12))
+    X -= X.mean(axis=0)
+    return X
+
+
+def stress(X: np.ndarray, D: np.ndarray, M: np.ndarray) -> float:
+    """Weighted distance stress (weights = F15 proximity)."""
+    n = X.shape[0]
+    s = 0.0
+    for i in range(n):
+        for j in range(i + 1, n):
+            dist = float(np.linalg.norm(X[i] - X[j]) + 1e-12)
+            w = 1.0 + max(M[i, j], 0.0) * PHI
+            if abs(i - j) == 1:
+                w = 50.0
+            s += w * (dist - D[i, j]) ** 2
+    return s
+
+
 def refine_with_distogram(
-    X: np.ndarray, D: np.ndarray, M: np.ndarray, rounds: int = 60
+    X: np.ndarray, D: np.ndarray, M: np.ndarray, rounds: int = 80
 ) -> np.ndarray:
-    """Light spring refinement toward D, weights from proximity M — still formula-driven."""
+    """Spring refine toward D; weights from F15 M + Zig-style geom emphasis."""
     n = X.shape[0]
     pos = X.copy()
     for rnd in range(rounds):
-        lr = 0.25 * (1.0 - rnd / (rounds + PHI))
+        lr = 0.22 * (1.0 - rnd / (rounds + PHI))
         forces = np.zeros_like(pos)
-        for i in range(n):
-            for j in range(i + 1, n):
-                diff = pos[j] - pos[i]
-                dist = float(np.linalg.norm(diff) + 1e-9)
-                td = D[i, j]
-                w = 1.0 + max(M[i, j], 0.0) * PHI
-                if abs(i - j) == 1:
-                    w = 100.0
-                f = w * (dist - td) / dist * diff
-                forces[i] += f
-                forces[j] -= f
+        # sample strategy for large n
+        if n <= 160:
+            pairs = [(i, j) for i in range(n) for j in range(i + 1, n)]
+        else:
+            pairs = []
+            for i in range(n):
+                for j in range(i + 1, min(n, i + 16)):
+                    pairs.append((i, j))
+                step = max(3, int(PHI * 4))
+                for j in range(i + 16, n, step):
+                    pairs.append((i, j))
+        for i, j in pairs:
+            diff = pos[j] - pos[i]
+            dist = float(np.linalg.norm(diff) + 1e-9)
+            td = D[i, j]
+            # weight ~ neuron pair envelope style
+            sep = abs(i - j)
+            env = float(sep) / (float(sep) + PI * E)
+            w = (1.0 + max(M[i, j], 0.0) * PHI) * (0.35 + 0.65 * env)
+            if sep == 1:
+                w = 120.0
+            elif sep == 2:
+                w = 20.0
+            f = w * (dist - td) / dist * diff
+            forces[i] += f
+            forces[j] -= f
         fn = np.linalg.norm(forces, axis=1, keepdims=True) + PHI
         pos = pos + lr * forces / fn
         for i in range(1, n):
             diff = pos[i] - pos[i - 1]
             dist = float(np.linalg.norm(diff) + 1e-9)
             pos[i] = pos[i - 1] + diff * (CA_CA / dist)
-        if rnd % 10 == 0:
+        if rnd % 8 == 0:
             pos -= pos.mean(axis=0)
     pos -= pos.mean(axis=0)
     return pos
@@ -375,11 +457,10 @@ def clean_sequence(seq: str) -> str:
     return "".join(c for c in seq.upper() if c in "ARNDCEQGHILKMFPSTWYV")
 
 
-def predict_ca_coords(sequence: str, rounds: int = 80) -> dict[str, Any]:
+def predict_ca_coords(sequence: str, rounds: int = 100) -> dict[str, Any]:
     seq = clean_sequence(sequence)
     if len(seq) < 5:
         raise ValueError("sequence too short")
-    # Cap for home PC; full distogram is O(n²)
     max_n = 300
     if len(seq) > max_n:
         seq = seq[:max_n]
@@ -387,23 +468,44 @@ def predict_ca_coords(sequence: str, rounds: int = 80) -> dict[str, Any]:
     M, props, regions, chars = build_distogram(seq)
     assert chars == seq
     D = proximity_to_distance(M)
-    X0 = classical_mds(D, dim=3)
-    X = refine_with_distogram(X0, D, M, rounds=rounds)
+
+    # Deterministic multi-start (no RNG free params): MDS, extended, helix
+    starts = [
+        ("mds", classical_mds(D, dim=3)),
+        ("extended", initial_extended(len(seq))),
+        ("helix", initial_helix_bundle(seq, props)),
+    ]
+    best_X = None
+    best_stress = float("inf")
+    best_name = "mds"
+    for name, X0 in starts:
+        Xr = refine_with_distogram(X0, D, M, rounds=rounds)
+        st = stress(Xr, D, M)
+        if st < best_stress:
+            best_stress = st
+            best_X = Xr
+            best_name = name
+    assert best_X is not None
     ss = "".join(p.dominant() for p in props)
     return {
         "sequence": seq,
         "length": len(seq),
         "secondary": ss,
         "regions": [{"kind": r.kind, "start": r.start, "end": r.end} for r in regions],
-        "ca_coords": X,
+        "ca_coords": best_X,
         "S_biochem": S_BIOCHEM,
         "S_molchem": S_MOLCHEM,
         "chem_amp": CHEM_AMP,
         "region_amp": REGION_AMP,
         "long_range_gate": LONG_RANGE_GATE,
-        "engine": "fsot_protein_F01_F15_port_v3",
+        "embed_start": best_name,
+        "embed_stress": best_stress,
+        "engine": "fsot_protein_F01_F15_ziggeom_v4",
         "free_parameters": 0,
-        "authority": "Genetics/fsot_protein + FSOT_PROTEIN_DERIVATIONS.md v7",
+        "authority": (
+            "Genetics/fsot_protein F01-F15 + fsot-neuron-zig geometricScaleDist "
+            "(φ·dist^{-1/π}) / env F08"
+        ),
     }
 
 
