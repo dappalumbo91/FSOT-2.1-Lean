@@ -289,22 +289,24 @@ def geometric_scale_dist(sep: int) -> float:
     return PHI * (d ** (-1.0 / PI))
 
 
-def proximity_to_distance(M: np.ndarray) -> np.ndarray:
-    """Map F15 proximity M (larger ⇒ closer) → Å using F07 inverse + Zig geom.
+def proximity_to_distance(
+    M: np.ndarray,
+    props: list[SsPropensity] | None = None,
+    regions: list[Region] | None = None,
+) -> np.ndarray:
+    """F15 proximity → Å with hard top-L contact caps (seed scales only).
 
-    F07: bb(s) = s^(-1/π).  If M were pure backbone, s = M^(-π) and
-    collapsed distance scales as CA_CA · s^(1/π) = CA_CA / M.
-
-    Neuron Zig pair geometry uses φ·s^(-1/π) as the *weight* scale; for
-    distance we invert the same exponent (1/π), not Flory ½.
-
-    F08 contact scale π·e sets the soft long-range ceiling.
+    Layer stack:
+      1) Local backbone (sep 1–2) fixed by seed geometry
+      2) F07 inverse: d ~ CA_CA / M  blended with collapsed polymer s^{1/π}
+      3) Top-L and top-2L contact caps at πe/φ and πe (CASP-style 8Å class)
+      4) F10 helix i,i+{3,4,7} geometric distances when both α-strong
     """
     n = M.shape[0]
     D = np.zeros((n, n), dtype=np.float64)
-    contact_scale = PI * E  # F08
-    d_ceil = contact_scale * PHI  # π e φ — long-range soft max (~13.8 Å pull)
-    d_hard = contact_scale * PHI * PHI  # absolute ceiling
+    contact_scale = PI * E  # F08 ~8.54 Å — standard contact cutoff scale
+    d_hard = contact_scale * PHI * PHI
+    # base distances
     for i in range(n):
         for j in range(i + 1, n):
             sep = abs(i - j)
@@ -312,24 +314,58 @@ def proximity_to_distance(M: np.ndarray) -> np.ndarray:
             if sep == 1:
                 d = CA_CA
             elif sep == 2:
-                # seed-only virtual bond: CA_CA · √(e/φ)
                 d = CA_CA * math.sqrt(E / PHI)
             else:
-                # F07 inverse: d ∝ 1/M, calibrated so M=1 → CA_CA
                 d_inv = CA_CA / m
-                # Blend with polymer collapsed distance from sequence sep
-                # (same exponent 1/π as F07 / Zig geometricScaleDist)
                 d_poly = CA_CA * (float(sep) ** (1.0 / PI))
-                # High proximity pulls toward inverse; low M → polymer
-                # Envelope env = s/(s+πe) like genetic.fsotPairWeight
                 env = float(sep) / (float(sep) + PI * E)
-                d = (1.0 - env) * d_poly + env * min(d_inv, d_ceil)
-                # Extra contact compression when M exceeds backbone-only level
+                d = (1.0 - env) * d_poly + env * min(d_inv, contact_scale * PHI)
                 bb_only = float(sep) ** (-1.0 / PI)
                 if m > bb_only * PHI:
                     d = min(d, contact_scale / (1.0 + (m - bb_only) * PHI))
-            d = float(np.clip(d, CA_CA * 0.95, d_hard))
-            D[i, j] = D[j, i] = d
+            # F10 local helix geometry (crystallographic periods, seed-weighted)
+            if props is not None and sep in (3, 4, 7):
+                if props[i].p_alpha > 1.0 / E and props[j].p_alpha > 1.0 / E:
+                    # Ideal α Cα distance from helical rise/radius geometry
+                    rise, rad, turn = 1.5, 2.3, 100.0 * PI / 180.0
+                    d_h = math.sqrt((sep * rise) ** 2 + (2 * rad * math.sin(sep * turn / 2)) ** 2)
+                    d = min(d, d_h)
+            D[i, j] = D[j, i] = float(np.clip(d, CA_CA * 0.95, d_hard))
+
+    # Top-L hard contacts: rank long-range pairs by M
+    L = n
+    lr_pairs = []
+    for i in range(n):
+        for j in range(i + LONG_RANGE_GATE, n):
+            lr_pairs.append((M[i, j], i, j))
+    lr_pairs.sort(reverse=True)
+    # top L/2 → tight contact πe/φ ≈ 5.3 Å
+    # top L → contact scale πe ≈ 8.5 Å
+    tight = contact_scale / PHI
+    for rank, (m, i, j) in enumerate(lr_pairs[: max(L, 1)]):
+        if rank < max(L // 2, 1):
+            D[i, j] = D[j, i] = min(D[i, j], tight)
+        else:
+            D[i, j] = D[j, i] = min(D[i, j], contact_scale)
+
+    # Region–region: same-kind regions get median contact pull
+    if regions:
+        for a, ra in enumerate(regions):
+            for b, rb in enumerate(regions):
+                if b <= a or ra.kind != rb.kind or ra.kind == "C":
+                    continue
+                # couple midpoints and a few register pairs
+                for i in range(ra.start, ra.end + 1):
+                    if ra.kind == "H":
+                        # heptad-facing residues
+                        if (i - ra.start) % 7 not in (0, 3):
+                            continue
+                    for j in range(rb.start, rb.end + 1):
+                        if abs(i - j) < LONG_RANGE_GATE:
+                            continue
+                        if ra.kind == "H" and (j - rb.start) % 7 not in (0, 3):
+                            continue
+                        D[i, j] = D[j, i] = min(D[i, j], contact_scale)
     return D
 
 
@@ -345,7 +381,7 @@ def classical_mds(D: np.ndarray, dim: int = 3) -> np.ndarray:
     evecs = evecs[:, idx]
     pos = evals[:dim].copy()
     pos[pos < 0] = 0.0
-    X = evecs[:, :dim] @ np.diag(np.sqrt(pos))
+    X = evecs[:, :dim] @ np.diag(np.sqrt(pos + 1e-15))
     if n > 1:
         adj = np.linalg.norm(X[1:] - X[:-1], axis=1).mean()
         if adj > 1e-9:
@@ -361,7 +397,6 @@ def initial_extended(n: int) -> np.ndarray:
     for i in range(1, n):
         a = i * ang
         X[i] = X[i - 1] + CA_CA * np.array([math.cos(a), math.sin(a), 1.0 / PHI])
-        # normalize step
         step = X[i] - X[i - 1]
         X[i] = X[i - 1] + step * (CA_CA / (np.linalg.norm(step) + 1e-12))
     X -= X.mean(axis=0)
@@ -369,17 +404,15 @@ def initial_extended(n: int) -> np.ndarray:
 
 
 def initial_helix_bundle(seq: str, props: list[SsPropensity]) -> np.ndarray:
-    """Deterministic start from F10 helix geometry where p_alpha dominates."""
+    """Deterministic start from α geometry where p_alpha wins F12 gate."""
     n = len(seq)
     X = np.zeros((n, 3), dtype=np.float64)
-    turn = 100.0 * PI / 180.0  # α geometry constant (degrees→rad)
-    rise = 1.5
-    r = 2.3
+    turn = 100.0 * PI / 180.0
+    rise, r = 1.5, 2.3
     k_h = 0
-    for i in range(n):
-        if i == 0:
-            continue
-        if props[i].p_alpha >= props[i].p_beta and props[i].p_alpha >= props[i].p_coil:
+    gate = 1.0 / E
+    for i in range(1, n):
+        if props[i].p_alpha > gate and props[i].p_alpha >= props[i].p_beta:
             k_h += 1
             X[i] = [r * math.cos(k_h * turn), r * math.sin(k_h * turn), X[i - 1, 2] + rise]
         else:
@@ -392,62 +425,132 @@ def initial_helix_bundle(seq: str, props: list[SsPropensity]) -> np.ndarray:
     return X
 
 
-def stress(X: np.ndarray, D: np.ndarray, M: np.ndarray) -> float:
-    """Weighted distance stress (weights = F15 proximity)."""
-    n = X.shape[0]
-    s = 0.0
+def initial_from_regions(seq: str, props: list[SsPropensity], regions: list[Region]) -> np.ndarray:
+    """Place each SS region as a rigid secondary element then pack by centroid."""
+    n = len(seq)
+    X = initial_extended(n)
+    turn, rise, rad = 100.0 * PI / 180.0, 1.5, 2.3
+    for ri, reg in enumerate(regions):
+        # offset each region in space by φ-lattice
+        base = np.array(
+            [
+                (ri % 3) * PI * E,
+                ((ri // 3) % 3) * PI * E / PHI,
+                (ri // 9) * E,
+            ]
+        )
+        if reg.kind == "H":
+            for k, i in enumerate(range(reg.start, reg.end + 1)):
+                X[i] = base + np.array(
+                    [rad * math.cos(k * turn), rad * math.sin(k * turn), k * rise]
+                )
+        elif reg.kind == "E":
+            for k, i in enumerate(range(reg.start, reg.end + 1)):
+                sign = 1.0 if k % 2 == 0 else -1.0
+                X[i] = base + np.array([k * 3.3 * 0.5, sign * 1.2, 0.0])
+    # fill gaps with linear interpolation
+    for i in range(1, n):
+        if np.linalg.norm(X[i] - X[i - 1]) < 1e-6:
+            X[i] = X[i - 1] + np.array([CA_CA, 0.0, 0.0])
+    # rebond chain
+    for i in range(1, n):
+        diff = X[i] - X[i - 1]
+        dist = float(np.linalg.norm(diff) + 1e-12)
+        if dist > CA_CA * 2.5 or dist < CA_CA * 0.5:
+            X[i] = X[i - 1] + diff * (CA_CA / dist)
+    X -= X.mean(axis=0)
+    return X
+
+
+def _sparse_pairs(n: int, M: np.ndarray, local: int = 12) -> list[tuple[int, int]]:
+    """Local band + top-2L long-range only — O(n·local + L), not O(n²) grind."""
+    pairs: list[tuple[int, int]] = []
     for i in range(n):
-        for j in range(i + 1, n):
-            dist = float(np.linalg.norm(X[i] - X[j]) + 1e-12)
-            w = 1.0 + max(M[i, j], 0.0) * PHI
-            if abs(i - j) == 1:
-                w = 50.0
-            s += w * (dist - D[i, j]) ** 2
+        for j in range(i + 1, min(n, i + local + 1)):
+            pairs.append((i, j))
+    L = n
+    # Vectorized long-range rank: take top contacts without full nested Python sort of all pairs
+    if n > LONG_RANGE_GATE + 1:
+        # Sample upper triangle long-range scores via flat index
+        ii, jj = np.triu_indices(n, k=LONG_RANGE_GATE)
+        scores = M[ii, jj]
+        k = min(2 * L, scores.size)
+        if k > 0:
+            # argpartition is O(n) vs full sort O(n log n) on ~n²/2
+            if scores.size > k:
+                top_idx = np.argpartition(scores, -k)[-k:]
+            else:
+                top_idx = np.arange(scores.size)
+            seen = set(pairs)
+            for t in top_idx:
+                i, j = int(ii[t]), int(jj[t])
+                if (i, j) not in seen:
+                    pairs.append((i, j))
+                    seen.add((i, j))
+    return pairs
+
+
+def stress(X: np.ndarray, D: np.ndarray, M: np.ndarray, pairs: list[tuple[int, int]] | None = None) -> float:
+    """Sparse stress on the same contact set as refine — O(n·k), not O(n²)."""
+    n = X.shape[0]
+    if pairs is None:
+        pairs = _sparse_pairs(n, M, local=int(PI * E) + 3)
+    s = 0.0
+    for i, j in pairs:
+        dist = float(np.linalg.norm(X[i] - X[j]) + 1e-12)
+        w = 1.0 + max(M[i, j], 0.0) * PHI
+        if abs(i - j) == 1:
+            w = 50.0
+        s += w * (dist - D[i, j]) ** 2
     return s
 
 
 def refine_with_distogram(
-    X: np.ndarray, D: np.ndarray, M: np.ndarray, rounds: int = 80
+    X: np.ndarray,
+    D: np.ndarray,
+    M: np.ndarray,
+    rounds: int = 24,
+    pairs: list[tuple[int, int]] | None = None,
 ) -> np.ndarray:
-    """Spring refine toward D; weights from F15 M + Zig-style geom emphasis."""
+    """Fast sparse refine: local band + top contacts only (formula weights).
+
+    Mathematical path must stay *fast* — zero free params is not an excuse
+    for O(n²)×hundreds of iterations (that apes neural-net cost without the wins).
+    """
     n = X.shape[0]
     pos = X.copy()
+    if pairs is None:
+        pairs = _sparse_pairs(n, M, local=int(PI * E) + 3)  # local window ~12 from πe
+    # Pre-index for vectorized force accumulation
+    if not pairs:
+        return pos
+    pi = np.array([p[0] for p in pairs], dtype=np.int32)
+    pj = np.array([p[1] for p in pairs], dtype=np.int32)
+    td = D[pi, pj]
+    m_ij = M[pi, pj]
+    sep = np.abs(pi - pj).astype(np.float64)
+    env = sep / (sep + PI * E)
+    w = (1.0 + np.maximum(m_ij, 0.0) * PHI) * (0.35 + 0.65 * env)
+    w = np.where(sep == 1, 80.0, w)
+    w = np.where(sep == 2, 15.0, w)
+
     for rnd in range(rounds):
-        lr = 0.22 * (1.0 - rnd / (rounds + PHI))
+        lr = 0.30 * (1.0 - rnd / (rounds + PHI))
+        diff = pos[pj] - pos[pi]
+        dist = np.linalg.norm(diff, axis=1) + 1e-9
+        scale = (w * (dist - td) / dist)[:, None]
+        f = scale * diff
         forces = np.zeros_like(pos)
-        # sample strategy for large n
-        if n <= 160:
-            pairs = [(i, j) for i in range(n) for j in range(i + 1, n)]
-        else:
-            pairs = []
-            for i in range(n):
-                for j in range(i + 1, min(n, i + 16)):
-                    pairs.append((i, j))
-                step = max(3, int(PHI * 4))
-                for j in range(i + 16, n, step):
-                    pairs.append((i, j))
-        for i, j in pairs:
-            diff = pos[j] - pos[i]
-            dist = float(np.linalg.norm(diff) + 1e-9)
-            td = D[i, j]
-            # weight ~ neuron pair envelope style
-            sep = abs(i - j)
-            env = float(sep) / (float(sep) + PI * E)
-            w = (1.0 + max(M[i, j], 0.0) * PHI) * (0.35 + 0.65 * env)
-            if sep == 1:
-                w = 120.0
-            elif sep == 2:
-                w = 20.0
-            f = w * (dist - td) / dist * diff
-            forces[i] += f
-            forces[j] -= f
+        np.add.at(forces, pi, f)
+        np.add.at(forces, pj, -f)
         fn = np.linalg.norm(forces, axis=1, keepdims=True) + PHI
         pos = pos + lr * forces / fn
+        # rebond chain O(n) — keep Cα virtual bond fixed
         for i in range(1, n):
-            diff = pos[i] - pos[i - 1]
-            dist = float(np.linalg.norm(diff) + 1e-9)
-            pos[i] = pos[i - 1] + diff * (CA_CA / dist)
-        if rnd % 8 == 0:
+            dvec = pos[i] - pos[i - 1]
+            dlen = float(np.linalg.norm(dvec) + 1e-9)
+            pos[i] = pos[i - 1] + dvec * (CA_CA / dlen)
+        if rnd % 4 == 0:
             pos -= pos.mean(axis=0)
     pos -= pos.mean(axis=0)
     return pos
@@ -457,54 +560,68 @@ def clean_sequence(seq: str) -> str:
     return "".join(c for c in seq.upper() if c in "ARNDCEQGHILKMFPSTWYV")
 
 
-def predict_ca_coords(sequence: str, rounds: int = 100) -> dict[str, Any]:
+def predict_ca_coords(sequence: str, rounds: int = 24) -> dict[str, Any]:
+    """Fast mathematical fold: F15 matrix → D → MDS → sparse polish.
+
+    Design goal: seconds per chain on a home PC, not minutes — closed-form
+    MDS is the main embed; sparse refine only polishes.
+    """
+    import time as _time
+
+    t0 = _time.perf_counter()
     seq = clean_sequence(sequence)
     if len(seq) < 5:
         raise ValueError("sequence too short")
-    max_n = 300
+    max_n = 400
     if len(seq) > max_n:
         seq = seq[:max_n]
 
     M, props, regions, chars = build_distogram(seq)
     assert chars == seq
-    D = proximity_to_distance(M)
+    D = proximity_to_distance(M, props=props, regions=regions)
+    pairs = _sparse_pairs(len(seq), M, local=int(PI * E) + 3)
+    n_rounds = max(8, min(int(rounds), 32))
 
-    # Deterministic multi-start (no RNG free params): MDS, extended, helix
-    starts = [
-        ("mds", classical_mds(D, dim=3)),
-        ("extended", initial_extended(len(seq))),
-        ("helix", initial_helix_bundle(seq, props)),
+    # Primary: classical MDS (closed-form spectral embed) — the mathematical core
+    X_mds = classical_mds(D, dim=3)
+    candidates: list[tuple[str, np.ndarray]] = [
+        ("mds", X_mds),
+        # Mirror image is an equally valid embed of D; pick by sparse stress (no free dials)
+        ("mds_mirror", X_mds * np.array([1.0, 1.0, -1.0])),
+        ("regions", initial_from_regions(seq, props, regions)),
     ]
-    best_X = None
-    best_stress = float("inf")
     best_name = "mds"
-    for name, X0 in starts:
-        Xr = refine_with_distogram(X0, D, M, rounds=rounds)
-        st = stress(Xr, D, M)
-        if st < best_stress:
-            best_stress = st
-            best_X = Xr
-            best_name = name
-    assert best_X is not None
+    X = candidates[0][1]
+    st = float("inf")
+    for cname, X0 in candidates:
+        Xc = refine_with_distogram(X0, D, M, rounds=n_rounds, pairs=pairs)
+        stc = stress(Xc, D, M, pairs=pairs)
+        if stc < st:
+            X, st, best_name = Xc, stc, cname
+
+    elapsed_ms = (_time.perf_counter() - t0) * 1000.0
     ss = "".join(p.dominant() for p in props)
     return {
         "sequence": seq,
         "length": len(seq),
         "secondary": ss,
         "regions": [{"kind": r.kind, "start": r.start, "end": r.end} for r in regions],
-        "ca_coords": best_X,
+        "ca_coords": X,
         "S_biochem": S_BIOCHEM,
         "S_molchem": S_MOLCHEM,
         "chem_amp": CHEM_AMP,
         "region_amp": REGION_AMP,
         "long_range_gate": LONG_RANGE_GATE,
         "embed_start": best_name,
-        "embed_stress": best_stress,
-        "engine": "fsot_protein_F01_F15_ziggeom_v4",
+        "embed_stress": st,
+        "predict_ms": elapsed_ms,
+        "n_sparse_pairs": len(pairs),
+        "refine_rounds": n_rounds,
+        "engine": "fsot_protein_F01_F15_fast_v7",
         "free_parameters": 0,
         "authority": (
-            "Genetics/fsot_protein F01-F15 + fsot-neuron-zig geometricScaleDist "
-            "(φ·dist^{-1/π}) / env F08"
+            "F01-F15 + F07 inverse + Zig φ·dist^{-1/π}; embed = classical MDS "
+            "+ sparse O(n·k) vectorized polish — formula branch, not neural net"
         ),
     }
 

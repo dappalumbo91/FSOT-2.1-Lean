@@ -1,47 +1,48 @@
 # FSOT vs AlphaFold — structure head-to-head
 
-*Generated 2026-08-07T00:53:22.651377+00:00*
+*Generated 2026-08-07T01:24:11.218913+00:00*
 
 ## Mission
 
 FSOT sequence-only structure prediction vs AlphaFold, scored on experimental PDB Cα RMSD
 
-- Engine: `fsot_structure_engine_v1` · **free parameters: 0**
+- Engine: `fsot_protein_F01_F15_fast_v7` · **free parameters: 0**
 - Metric: Cα RMSD (Å) after Kabsch alignment to experimental PDB (lower is better)
-- Hardware: Designed to run on HP Omen-class desktop, storage-capped cache
+- Hardware: HP Omen-class desktop; formula path (MDS+sparse), storage-capped cache
+- FSOT median fold time: **163.40660001151264 ms**/chain · wall **12.218831300007878 s** (incl. downloads)
 
 ## Scoreboard
 
 | Side | Median Cα RMSD (Å) | Wins |
 |------|-------------------:|-----:|
-| **FSOT** | **15.000374702243178** | **0** |
-| AlphaFold | 0.43535089145183603 | 8 |
+| **FSOT** | **15.629035217133008** | **1** |
+| AlphaFold | 0.43535089145183603 | 7 |
 | Ties | — | 0 |
 
-Paired proteins: **8** · FSOT win rate: **0.0**
+Paired proteins: **8** · FSOT win rate: **0.125**
 
 ## Per protein
 
-| UniProt | Name | PDB | FSOT RMSD Å | AF RMSD Å | Winner |
-|---------|------|-----|------------:|----------:|:------:|
-| P69905 | Hemoglobin alpha | 1A3N | 13.663 | 0.2697832925375286 | AlphaFold |
-| P68871 | Hemoglobin beta | 1A3N | 19.917 | 0.5196952732909565 | AlphaFold |
-| P00918 | Carbonic anhydrase II | 1CA2 | 20.809 | 0.3617948214686656 | AlphaFold |
-| P00441 | SOD1 | 2C9V | 19.832 | 0.28634210236027413 | AlphaFold |
-| P61626 | Lysozyme human | 1LZ1 | 12.674 | 0.43535089145183603 | AlphaFold |
-| P61823 | RNase A | 7RSA | 15.000 | 0.3314052297214222 | AlphaFold |
-| P0CG47 | Ubiquitin | 1UBQ | 12.626 | 1.6959974037473304 | AlphaFold |
-| P01308 | Insulin | 4INS | 7.226 | 6.619892197937176 | AlphaFold |
+| UniProt | Name | PDB | FSOT RMSD Å | AF RMSD Å | predict_ms | Winner |
+|---------|------|-----|------------:|----------:|-----------:|:------:|
+| P69905 | Hemoglobin alpha | 1A3N | 13.653 | 0.2697832925375286 | 151 | AlphaFold |
+| P68871 | Hemoglobin beta | 1A3N | 15.629 | 0.5196952732909565 | 155 | AlphaFold |
+| P00918 | Carbonic anhydrase II | 1CA2 | 26.025 | 0.3617948214686656 | 417 | AlphaFold |
+| P00441 | SOD1 | 2C9V | 23.178 | 0.28634210236027413 | 172 | AlphaFold |
+| P61626 | Lysozyme human | 1LZ1 | 15.223 | 0.43535089145183603 | 158 | AlphaFold |
+| P61823 | RNase A | 7RSA | 18.710 | 0.3314052297214222 | 163 | AlphaFold |
+| P0CG47 | Ubiquitin | 1UBQ | 14.723 | 1.6959974037473304 | 334 | AlphaFold |
+| P01308 | Insulin | 4INS | 5.830 | 6.619892197937176 | 98 | FSOT |
 
 ## How to run
 
 ```powershell
-python scripts/run_fsot_vs_alphafold_structure.py --max-proteins 8 --rounds 90
+python scripts/run_fsot_vs_alphafold_structure.py --max-proteins 8 --rounds 24 --sleep 0.2
 ```
 
 ## Next
 
-- Increase refine rounds / multi-start from secondary string variants
-- Add side-chain packing after Cα (still seed-only)
-- Expand benchmark set (CASP-style hard targets)
-- Distogram assembly F15 full matrix for n>200
+- Accuracy: improve F15→D map / contact caps until RMSD competitive with AF
+- Keep formula path seconds-scale (no O(n²) free-param grind)
+- Optional Zig CLI for distogram parity + speed
+- Expand benchmark set only after median RMSD moves

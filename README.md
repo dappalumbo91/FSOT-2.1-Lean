@@ -119,6 +119,7 @@ Cosmology and the neural mind are **domain folds of one** scalar engine (pin D1D
 | Project | Link |
 |---------|------|
 | **Physical Archive map** | Offline: `I:\FSOT-Physical-Archive\ZIG_MIND_AND_GITHUB_MAP.md` |
+| **FSOT-Genetics (formula structure branch)** | https://github.com/dappalumbo91/FSOT-Genetics |
 | **Zig neural mind** | https://github.com/dappalumbo91/fsot-neuron-zig |
 | **Neural monorepo (Allen / wet-lab)** | https://github.com/dappalumbo91/FSOT-2.1-Neural |
 | **Related embodiments (detail)** | [RELATED_EMBODIMENTS.md](RELATED_EMBODIMENTS.md) |

@@ -13,7 +13,7 @@ Pipeline
 Storage-capped for home PC (Omen-class). No full proteome dump.
 
   python scripts/run_fsot_vs_alphafold_structure.py
-  python scripts/run_fsot_vs_alphafold_structure.py --max-proteins 8 --rounds 100
+  python scripts/run_fsot_vs_alphafold_structure.py --max-proteins 8 --rounds 24 --sleep 0.2
 """
 
 from __future__ import annotations
@@ -241,8 +241,8 @@ def align_by_sequence(
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--max-proteins", type=int, default=8)
-    ap.add_argument("--rounds", type=int, default=90)
-    ap.add_argument("--sleep", type=float, default=0.4)
+    ap.add_argument("--rounds", type=int, default=24, help="sparse polish rounds (capped at 32)")
+    ap.add_argument("--sleep", type=float, default=0.2)
     args = ap.parse_args()
 
     store = _store()
@@ -251,12 +251,14 @@ def main() -> int:
     cache.mkdir(parents=True, exist_ok=True)
     pred_dir.mkdir(parents=True, exist_ok=True)
 
+    t_wall0 = time.perf_counter()
     print("=" * 64)
     print("FSOT vs ALPHAFOLD — structure head-to-head (PDB ground truth)")
     print(f"  store   = {store}")
     print(f"  rounds  = {args.rounds}")
-    print("  engine  = fsot_structure_engine (0 free parameters)")
+    print("  engine  = fsot_structure_engine FAST formula path (0 free parameters)")
     print("  metric  = Cα RMSD after Kabsch to experimental PDB")
+    print("  goal    = seconds/chain math, not multi-minute grind")
     print("=" * 64)
 
     results = []
@@ -270,13 +272,17 @@ def main() -> int:
             continue
         print(f"  sequence length {len(seq)}")
 
-        # FSOT prediction
+        # FSOT prediction (formula branch — timed)
         try:
             pred = predict_ca_coords(seq, rounds=args.rounds)
             fsot_xyz = pred["ca_coords"]
             fsot_seq = pred["sequence"]
             write_ca_pdb(pred_dir / f"FSOT_{acc}.pdb", fsot_seq, fsot_xyz, name=acc)
-            print(f"  FSOT predicted {len(fsot_seq)} CA  ss_H={pred['secondary'].count('H')}")
+            pms = pred.get("predict_ms", 0.0)
+            print(
+                f"  FSOT predicted {len(fsot_seq)} CA  ss_H={pred['secondary'].count('H')}  "
+                f"predict_ms={pms:.1f}  start={pred.get('embed_start')}  eng={pred.get('engine')}"
+            )
         except Exception as e:
             print(f"  FSOT predict FAIL {e}")
             results.append({"accession": acc, "name": name, "error": f"fsot:{e}"})
@@ -336,6 +342,8 @@ def main() -> int:
             "af_align_n": af_n,
             "winner_lower_rmsd": win,
             "fsot_secondary": pred["secondary"][:80],
+            "fsot_predict_ms": pred.get("predict_ms"),
+            "fsot_embed_start": pred.get("embed_start"),
             "S_biochem": pred.get("S_biochem"),
             "S_molchem": pred.get("S_molchem"),
             "engine": pred["engine"],
@@ -352,6 +360,9 @@ def main() -> int:
     ties = sum(1 for r in paired if r.get("winner_lower_rmsd") == "tie")
     fsot_rmsd_list = [r["fsot_rmsd_A"] for r in results if r.get("fsot_rmsd_A") is not None]
     af_rmsd_list = [r["af_rmsd_A"] for r in results if r.get("af_rmsd_A") is not None]
+    predict_ms_list = [r["fsot_predict_ms"] for r in results if r.get("fsot_predict_ms") is not None]
+    wall_s = time.perf_counter() - t_wall0
+    eng_label = next((r.get("engine") for r in results if r.get("engine")), "fsot_protein_F01_F15_fast")
 
     def med(xs):
         if not xs:
@@ -362,11 +373,11 @@ def main() -> int:
     doc = {
         "generated_at": _now(),
         "mission": "FSOT sequence-only structure prediction vs AlphaFold, scored on experimental PDB Cα RMSD",
-        "engine": "fsot_structure_engine_v1",
+        "engine": eng_label,
         "free_parameters": 0,
         "metric": "Cα RMSD (Å) after Kabsch alignment to experimental PDB",
         "lower_is_better": True,
-        "hardware_note": "Designed to run on HP Omen-class desktop, storage-capped cache",
+        "hardware_note": "HP Omen-class desktop; formula path (MDS+sparse), storage-capped cache",
         "summary": {
             "proteins_attempted": len(BENCHMARK_SET[: args.max_proteins]),
             "proteins_scored_fsot": len(fsot_rmsd_list),
@@ -377,13 +388,17 @@ def main() -> int:
             "alphafold_wins": af_wins,
             "ties": ties,
             "fsot_win_rate": (fsot_wins / len(paired)) if paired else None,
+            "fsot_median_predict_ms": med(predict_ms_list),
+            "fsot_mean_predict_ms": (sum(predict_ms_list) / len(predict_ms_list)) if predict_ms_list else None,
+            "wall_clock_s": wall_s,
+            "rounds": args.rounds,
         },
         "results": results,
         "next_iterations": [
-            "Increase refine rounds / multi-start from secondary string variants",
-            "Add side-chain packing after Cα (still seed-only)",
-            "Expand benchmark set (CASP-style hard targets)",
-            "Distogram assembly F15 full matrix for n>200",
+            "Accuracy: improve F15→D map / contact caps until RMSD competitive with AF",
+            "Keep formula path seconds-scale (no O(n²) free-param grind)",
+            "Optional Zig CLI for distogram parity + speed",
+            "Expand benchmark set only after median RMSD moves",
         ],
     }
 
@@ -403,6 +418,7 @@ def main() -> int:
         f"- Engine: `{doc['engine']}` · **free parameters: 0**",
         f"- Metric: {doc['metric']} (lower is better)",
         f"- Hardware: {doc['hardware_note']}",
+        f"- FSOT median fold time: **{s.get('fsot_median_predict_ms')} ms**/chain · wall **{s.get('wall_clock_s')} s** (incl. downloads)",
         "",
         "## Scoreboard",
         "",
@@ -416,19 +432,21 @@ def main() -> int:
         "",
         "## Per protein",
         "",
-        "| UniProt | Name | PDB | FSOT RMSD Å | AF RMSD Å | Winner |",
-        "|---------|------|-----|------------:|----------:|:------:|",
+        "| UniProt | Name | PDB | FSOT RMSD Å | AF RMSD Å | predict_ms | Winner |",
+        "|---------|------|-----|------------:|----------:|-----------:|:------:|",
     ]
     for r in results:
         if r.get("error"):
             lines.append(
-                f"| {r.get('accession')} | {r.get('name')} | {r.get('pdb_id','')} | err | err | {r.get('error')} |"
+                f"| {r.get('accession')} | {r.get('name')} | {r.get('pdb_id','')} | err | err | — | {r.get('error')} |"
             )
         else:
+            pms = r.get("fsot_predict_ms")
+            pms_s = f"{pms:.0f}" if isinstance(pms, (int, float)) else "—"
             lines.append(
                 f"| {r.get('accession')} | {r.get('name')} | {r.get('pdb_id')} | "
                 f"{r.get('fsot_rmsd_A'):.3f} | {r.get('af_rmsd_A') if r.get('af_rmsd_A') is not None else '—'} | "
-                f"{r.get('winner_lower_rmsd')} |"
+                f"{pms_s} | {r.get('winner_lower_rmsd')} |"
             )
     lines.extend(
         [
@@ -436,7 +454,7 @@ def main() -> int:
             "## How to run",
             "",
             "```powershell",
-            "python scripts/run_fsot_vs_alphafold_structure.py --max-proteins 8 --rounds 90",
+            "python scripts/run_fsot_vs_alphafold_structure.py --max-proteins 8 --rounds 24 --sleep 0.2",
             "```",
             "",
             "## Next",
@@ -451,9 +469,11 @@ def main() -> int:
 
     print("\n" + "=" * 64)
     print("SCOREBOARD")
+    print(f"  engine: {eng_label}  free_params=0")
     print(f"  FSOT median RMSD: {s.get('fsot_median_rmsd_A')} Å  wins={s.get('fsot_wins')}")
     print(f"  AF   median RMSD: {s.get('af_median_rmsd_A')} Å  wins={s.get('alphafold_wins')}")
-    print(f"  ties={s.get('ties')}  paired={s.get('proteins_scored_both')}")
+    print(f"  FSOT median predict_ms: {s.get('fsot_median_predict_ms')}  mean: {s.get('fsot_mean_predict_ms')}")
+    print(f"  wall_clock_s: {s.get('wall_clock_s'):.1f}  ties={s.get('ties')}  paired={s.get('proteins_scored_both')}")
     print(f"Wrote {OUT_JSON}")
     print(f"Wrote {OUT_MD}")
     print("=" * 64)

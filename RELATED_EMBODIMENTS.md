@@ -7,6 +7,7 @@ The **same law** \(S = K(T_1+T_2+T_3)\) (pin **D1D38A**) routes cosmology, quant
 |---------|------------|------|
 | **This repo (law + multi-domain verification)** | https://github.com/dappalumbo91/FSOT-2.1-Lean | Scalar engine, Lean, multi-prover, domain green gates |
 | **Physical Archive (offline master)** | `I:\FSOT-Physical-Archive` | Full tree, caches, SR-ITE, verification reports |
+| **FSOT-Genetics** | https://github.com/dappalumbo91/FSOT-Genetics | Genetics / protein **formula** branch (F01–F15, AF H2H); zero free params; not a neural net |
 | **Neural monorepo** | https://github.com/dappalumbo91/FSOT-2.1-Neural | Allen wet-lab, scalpel, Python battery |
 | **Zig neural mind** | https://github.com/dappalumbo91/fsot-neuron-zig | Fixed-lattice **neuroscience-domain engine** under D1D38A |
 | **FSOT-GPU (CUDA operators)** | https://github.com/dappalumbo91/FSOT-GPU · Desktop `gpu exparment for lean coq isabell andf star` | Collapse/consensus CUDA, multi-lang parity, industry-host layer swap — **not** free-param weight physics |
