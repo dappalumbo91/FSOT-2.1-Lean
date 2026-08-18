@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:15:14.969994+00:00",
+  "generated_at": "2026-08-18T02:22:16.411913+00:00",
   "domain": "Matter_Antimatter",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -9,7 +9,8 @@
     "PDG 2024 mass anchors",
     "Planck 2018 eta / Omega_b h2 class",
     "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "FSOT-Quantum results/formula_catalog.json"
   ],
   "maps_to_lean": [
     "particle",
@@ -17,9 +18,9 @@
     "cosmological"
   ],
   "D_eff": 5,
-  "record_count": 17,
-  "observable_count": 17,
-  "scalar_record_count": 15,
+  "record_count": 18,
+  "observable_count": 18,
+  "scalar_record_count": 16,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -33,34 +34,41 @@
         "operational_baselines": {
           "fsot_free_parameters": 0,
           "operational_baselines": {
-            "sakharov_qualitative": {
-              "sota_typical_error_pct": 50.0,
-              "sota_model": "Qualitative baryogenesis (no unique seed \u03b7 in SM alone)"
+            "fsot_free_parameters": 0,
+            "operational_baselines": {
+              "sakharov_qualitative": {
+                "sota_typical_error_pct": 50.0,
+                "sota_model": "Qualitative baryogenesis (no unique seed \u03b7 in SM alone)"
+              },
+              "pdg_mass_equality": {
+                "sota_typical_error_pct": 0.01,
+                "sota_model": "PDG CPT tests / mass equality"
+              }
             },
-            "pdg_mass_equality": {
-              "sota_typical_error_pct": 0.01,
-              "sota_model": "PDG CPT tests / mass equality"
+            "beats_sota_summary": {
+              "pooled_vs_domain_baseline": true,
+              "channel_fsot_prediction_vs_baseline": true,
+              "channel_seed_identity_vs_baseline": true
             }
           },
           "beats_sota_summary": {
             "pooled_vs_domain_baseline": true,
-            "channel_fsot_prediction_vs_baseline": true,
-            "channel_seed_identity_vs_baseline": true
+            "channel_fsot_seed_formula_vs_baseline": true
           }
         },
         "beats_sota_summary": {
           "pooled_vs_domain_baseline": true,
-          "channel_fsot_seed_formula_vs_baseline": true
+          "channel_on_topic_vs_baseline": true
         }
       },
       "beats_sota_summary": {
         "pooled_vs_domain_baseline": true,
-        "channel_on_topic_vs_baseline": true
+        "channel_on_topic_anchors_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_anchors_vs_baseline": true
+      "channel_fsot_quantum_vs_baseline": true
     }
   },
   "records": [
@@ -71,16 +79,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 17
+      "observable_count": 18
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic_anchors",
+      "property": "fsot_quantum",
       "name": "Matter_Antimatter",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 17
+      "observable_count": 18
     }
   ],
   "material_records": [
@@ -318,11 +326,23 @@
       "eval_kind": "literature_anchor",
       "reference": "Planck 2018 eta_b",
       "note": "Integrity row vs published Planck eta_B; not a new free parameter."
+    },
+    {
+      "lab": "matter_antimatter_quantum_lab",
+      "property": "Jarlskog_J",
+      "name": "quantum_Jarlskog_J",
+      "computed": 3.072771786665467e-05,
+      "measured": 3.08e-05,
+      "error_pct": 0.23468225112121452,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "G/(\u03c0\u2079)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.06202913601381668,
+    "max_scalar_error_pct": 0.23468225112121452,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

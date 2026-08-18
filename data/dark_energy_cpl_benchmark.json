@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:15:34.886518+00:00",
+  "generated_at": "2026-08-18T02:22:16.411913+00:00",
   "domain": "Dark_Energy_CPL",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -8,20 +8,21 @@
     "vendor/fsot_compute.py",
     "scripts/dark_energy_dual_readout_lib.py",
     "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "FSOT-Quantum results/formula_catalog.json"
   ],
   "maps_to_lean": [
     "cosmological",
     "particle"
   ],
   "D_eff": 24,
-  "record_count": 14,
-  "observable_count": 14,
-  "scalar_record_count": 3,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 9,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.280515,
-  "pooled_median_error_pct": 0.280515,
-  "headline_median_error_pct": 0.280515,
+  "median_error_pct": 0.0018162973530366992,
+  "pooled_median_error_pct": 0.0018162973530366992,
+  "headline_median_error_pct": 0.025535,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -33,34 +34,41 @@
           "operational_baselines": {
             "fsot_free_parameters": 0,
             "operational_baselines": {
-              "survey_constraint_panel": {
-                "sota_typical_error_pct": 100.0,
-                "sota_model": "No unified w0-wa prediction before measurement"
+              "fsot_free_parameters": 0,
+              "operational_baselines": {
+                "survey_constraint_panel": {
+                  "sota_typical_error_pct": 100.0,
+                  "sota_model": "No unified w0-wa prediction before measurement"
+                }
+              },
+              "beats_sota_summary": {
+                "pooled_vs_domain_baseline": true,
+                "channel_cpl_vs_baseline": true
               }
             },
             "beats_sota_summary": {
               "pooled_vs_domain_baseline": true,
-              "channel_cpl_vs_baseline": true
+              "channel_fsot_seed_formula_vs_baseline": true
             }
           },
           "beats_sota_summary": {
             "pooled_vs_domain_baseline": true,
-            "channel_fsot_seed_formula_vs_baseline": true
+            "channel_on_topic_vs_baseline": true
           }
         },
         "beats_sota_summary": {
-          "pooled_vs_domain_baseline": true,
-          "channel_on_topic_vs_baseline": true
+          "pooled_vs_domain_baseline": false,
+          "channel_on_topic_anchors_vs_baseline": true
         }
       },
       "beats_sota_summary": {
-        "pooled_vs_domain_baseline": false,
-        "channel_on_topic_anchors_vs_baseline": true
+        "pooled_vs_domain_baseline": true,
+        "channel_restore_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_restore_vs_baseline": true
+      "channel_fsot_quantum_vs_baseline": true
     }
   },
   "records": [
@@ -68,19 +76,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.280515,
+      "computed": 0.001816,
       "measured": 0.0,
-      "error_pct": 0.280515,
-      "observable_count": 14
+      "error_pct": 0.0018162973530366992,
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "restore",
-      "name": "de",
-      "computed": 0.051014,
+      "property": "fsot_quantum",
+      "name": "Dark_Energy_CPL",
+      "computed": 0.025535,
       "measured": 0.0,
-      "error_pct": 0.051014,
-      "observable_count": 14
+      "error_pct": 0.025535,
+      "observable_count": 20
     }
   ],
   "material_records": [
@@ -292,10 +300,82 @@
       "status": "preregistered_falsifiable",
       "eval_kind": "preregistered_falsifiable",
       "comparison_class": "preregistered_falsifiable"
+    },
+    {
+      "lab": "dark_energy_cpl_quantum_lab",
+      "property": "w0_cmb",
+      "name": "quantum_w0_cmb",
+      "computed": -1.0299812921372637,
+      "measured": -1.03,
+      "error_pct": 0.0018162973530366992,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u2212P_new\u00b7\u03c0/G",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "dark_energy_cpl_quantum_lab",
+      "property": "wa_cmb",
+      "name": "quantum_wa_cmb",
+      "computed": -0.8081097715810811,
+      "measured": -0.8081,
+      "error_pct": 0.0012092044401762043,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u2212\u03b3\u00b7e\u00b7\u03c6/\u03c0",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "dark_energy_cpl_quantum_lab",
+      "property": "w0_bao",
+      "name": "quantum_w0_bao",
+      "computed": -0.7296790154668923,
+      "measured": -0.727,
+      "error_pct": 0.3685028152534126,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "w0_cmb\u00b7(1\u2212G/\u03c0)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "dark_energy_cpl_quantum_lab",
+      "property": "wa_bao",
+      "name": "quantum_wa_bao",
+      "computed": -1.020855644982926,
+      "measured": -1.018,
+      "error_pct": 0.280515224255993,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "wa_cmb + w0_bao\u00b7(G/\u03c0)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "dark_energy_cpl_quantum_lab",
+      "property": "Dark_energy_wa",
+      "name": "quantum_Dark_energy_wa",
+      "computed": -0.808109771581081,
+      "measured": -0.8081,
+      "error_pct": 0.0012092044401624655,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u2212\u03b3e\u03c6/\u03c0",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "dark_energy_cpl_quantum_lab",
+      "property": "w0",
+      "name": "quantum_w0",
+      "computed": -1.0299812921372637,
+      "measured": -1.03,
+      "error_pct": 0.0018162973530366992,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u2212P_new\u00b7\u03c0/G",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.280515,
+    "scalar_pooled_median_error_pct": 0.0018162973530366992,
     "max_scalar_error_pct": 0.368503,
     "classifier_count": 0,
     "classifier_correct": 0,

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:15:14.967490+00:00",
+  "generated_at": "2026-08-18T02:22:16.407447+00:00",
   "domain": "higgs_mass",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -9,19 +9,20 @@
     "data/higgs_mass_reference_observables.json",
     "vendor/fsot_compute.py",
     "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "FSOT-Quantum results/formula_catalog.json"
   ],
   "maps_to_lean": [
     "particle"
   ],
   "D_eff": 12,
-  "record_count": 10,
-  "observable_count": 10,
-  "scalar_record_count": 10,
+  "record_count": 23,
+  "observable_count": 23,
+  "scalar_record_count": 23,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.04388547514737335,
-  "pooled_median_error_pct": 0.04388547514737335,
-  "headline_median_error_pct": 0.06878350078061132,
+  "median_error_pct": 0.03990518384195136,
+  "pooled_median_error_pct": 0.03990518384195136,
+  "headline_median_error_pct": 0.03990518384195136,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -29,24 +30,31 @@
       "operational_baselines": {
         "fsot_free_parameters": 0,
         "operational_baselines": {
-          "higgs_mass_depth": {
-            "sota_typical_error_pct": 10.0,
-            "sota_model": "sector model without seed-closed FSOT formula"
+          "fsot_free_parameters": 0,
+          "operational_baselines": {
+            "higgs_mass_depth": {
+              "sota_typical_error_pct": 10.0,
+              "sota_model": "sector model without seed-closed FSOT formula"
+            }
+          },
+          "beats_sota_summary": {
+            "pooled_vs_domain_baseline": true,
+            "channel_fsot_seed_formula_vs_baseline": true
           }
         },
         "beats_sota_summary": {
           "pooled_vs_domain_baseline": true,
-          "channel_fsot_seed_formula_vs_baseline": true
+          "channel_on_topic_vs_baseline": true
         }
       },
       "beats_sota_summary": {
         "pooled_vs_domain_baseline": true,
-        "channel_on_topic_vs_baseline": true
+        "channel_on_topic_anchors_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_anchors_vs_baseline": true
+      "channel_fsot_quantum_vs_baseline": true
     }
   },
   "records": [
@@ -54,19 +62,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.043885,
+      "computed": 0.039905,
       "measured": 0.0,
-      "error_pct": 0.04388547514737335,
-      "observable_count": 10
+      "error_pct": 0.03990518384195136,
+      "observable_count": 23
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic_anchors",
+      "property": "fsot_quantum",
       "name": "higgs_mass",
-      "computed": 0.068784,
+      "computed": 0.039905,
       "measured": 0.0,
-      "error_pct": 0.06878350078061132,
-      "observable_count": 10
+      "error_pct": 0.03990518384195136,
+      "observable_count": 23
     }
   ],
   "material_records": [
@@ -187,11 +195,166 @@
       "eval_kind": "measurement_channel",
       "channel": "CMS_2026_diphoton",
       "reference": "CMS-PAS-HIG-24-007"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "m_H_GeV",
+      "name": "quantum_m_H_solve",
+      "computed": 125.20001875723796,
+      "measured": 125.25,
+      "error_pct": 0.03990518384195136,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "(\u03b8_S + e\u00b3)/C_factor\u2077 / 1000",
+      "source": "FSOT-Quantum contested_sectors / formula_catalog",
+      "note": "Quantum solve \u2014 MeV form /1000. Not the FO-213 NLO overlay."
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV",
+      "name": "atlas_2023_combo",
+      "computed": 125.20001875723796,
+      "measured": 125.11,
+      "error_pct": 0.0719516883046571,
+      "eval_kind": "measurement_channel",
+      "formula": "(\u03b8_S + e\u00b3)/C_factor\u2077 / 1000",
+      "reference": "ATLAS Higgs mass 0.09% combo"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "m_H",
+      "name": "quantum_m_H",
+      "computed": 125.20001875723796,
+      "measured": 125.25,
+      "error_pct": 0.03990518384195136,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "(\u03b8_S + e\u00b3)/C_factor\u2077 / 1000",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "m_H/m_W",
+      "name": "quantum_m_H/m_W",
+      "computed": 1.5595014764878583,
+      "measured": 1.5595,
+      "error_pct": 9.46770027700249e-05,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "S_quant\u00b7\u03c8_con + S_quant",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "m_H/m_t",
+      "name": "quantum_m_H/m_t",
+      "computed": 0.7257068201623708,
+      "measured": 0.7256,
+      "error_pct": 0.014721632079759569,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "A_bleed\u00b7ln(2)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "BR_H_bb",
+      "name": "quantum_BR_H_bb",
+      "computed": 0.5808757487636912,
+      "measured": 0.5809,
+      "error_pct": 0.004174769548765883,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "C_eff/\u221ae",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "BR_H_WW",
+      "name": "quantum_BR_H_WW",
+      "computed": 0.21520447048200203,
+      "measured": 0.2152,
+      "error_pct": 0.0020773615251059676,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "ln(\u03c6)/\u221a5",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "BR_H_tautau",
+      "name": "quantum_BR_H_tautau",
+      "computed": 0.06319375582922372,
+      "measured": 0.0632,
+      "error_pct": 0.009880017051083028,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03b7_eff/e\u00b2",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "BR_H_ZZ",
+      "name": "quantum_BR_H_ZZ",
+      "computed": 0.026423881395489845,
+      "measured": 0.0264,
+      "error_pct": 0.09045983140093045,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "1/(e\u2074ln(2))",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "BR_H_gg",
+      "name": "quantum_BR_H_gg",
+      "computed": 0.08182274913982478,
+      "measured": 0.08187,
+      "error_pct": 0.05771449880935801,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03c6\u207b\u2074 \u2212 \u03b3\u2075",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "BR_H_cc",
+      "name": "quantum_BR_H_cc",
+      "computed": 0.028925456135151035,
+      "measured": 0.0289,
+      "error_pct": 0.08808351263334355,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "Suction/(\u03c0\u03c6)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "BR_H_gamgam",
+      "name": "quantum_BR_H_gamgam",
+      "computed": 0.0022858146532987495,
+      "measured": 0.00228,
+      "error_pct": 0.2550286534539278,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03b3\u2076\u00b7C_cosm",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "higgs_mass_quantum_lab",
+      "property": "BR_H_Zgam",
+      "name": "quantum_BR_H_Zgam",
+      "computed": 0.0015258567671942072,
+      "measured": 0.00153,
+      "error_pct": 0.27079952979037436,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03b7_eff/\u03c0\u2075",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.04388547514737335,
-    "max_scalar_error_pct": 0.11491358837235732,
+    "scalar_pooled_median_error_pct": 0.03990518384195136,
+    "max_scalar_error_pct": 0.27079952979037436,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

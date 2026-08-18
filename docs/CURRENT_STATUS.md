@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-08-18T02:16:35.073911+00:00`  
+**Generated:** `2026-08-18T02:22:40.533319+00:00`  
 **Edition stamp:** 2026-08-18  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -26,7 +26,7 @@
 | Gate | ≤ 0.5% pooled median |
 | Median-of-medians | 0.006607% |
 | Scalar records (envelope) | 179914 |
-| Tiers | `{'B_verified': 319, 'C_thin': 28, 'A_strong': 116}` |
+| Tiers | `{'B_verified': 322, 'C_thin': 25, 'A_strong': 116}` |
 
 ## Mathlib re-derivation (Formal corpus)
 

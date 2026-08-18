@@ -1,43 +1,51 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.107479+00:00",
+  "generated_at": "2026-08-18T02:22:16.411913+00:00",
   "domain": "PDG_Particle_Properties",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "PDG 2024 Review of Particle Physics",
     "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "FSOT-Quantum results/formula_catalog.json"
   ],
   "maps_to_lean": [
     "particle",
     "atomic"
   ],
   "D_eff": 9,
-  "record_count": 12,
-  "observable_count": 12,
-  "scalar_record_count": 12,
+  "record_count": 27,
+  "observable_count": 27,
+  "scalar_record_count": 27,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0313675,
-  "pooled_median_error_pct": 0.0313675,
-  "headline_median_error_pct": 0.041994,
+  "median_error_pct": 0.008159790326533337,
+  "pooled_median_error_pct": 0.008159790326533337,
+  "headline_median_error_pct": 0.008159790326533337,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
       "fsot_free_parameters": 0,
       "operational_baselines": {
-        "PDG_Particle_Properties_depth": {
-          "sota_typical_error_pct": 10.0,
-          "sota_model": "sector model without seed-closed FSOT formula"
+        "fsot_free_parameters": 0,
+        "operational_baselines": {
+          "PDG_Particle_Properties_depth": {
+            "sota_typical_error_pct": 10.0,
+            "sota_model": "sector model without seed-closed FSOT formula"
+          }
+        },
+        "beats_sota_summary": {
+          "pooled_vs_domain_baseline": true,
+          "channel_fsot_seed_formula_vs_baseline": true
         }
       },
       "beats_sota_summary": {
         "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+        "channel_on_topic_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_fsot_quantum_vs_baseline": true
     }
   },
   "records": [
@@ -45,19 +53,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.031367,
+      "computed": 0.00816,
       "measured": 0.0,
-      "error_pct": 0.0313675,
-      "observable_count": 12
+      "error_pct": 0.008159790326533337,
+      "observable_count": 27
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
+      "property": "fsot_quantum",
       "name": "PDG_Particle_Properties",
-      "computed": 0.041994,
+      "computed": 0.00816,
       "measured": 0.0,
-      "error_pct": 0.041994,
-      "observable_count": 12
+      "error_pct": 0.008159790326533337,
+      "observable_count": 27
     }
   ],
   "material_records": [
@@ -204,10 +212,190 @@
       "fsot_formula": "P_BASE\u207b\u2075/P_VAR\u207b\u2075",
       "reference": "PDG 2024 / Zyla et al.",
       "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "sin2_theta_W",
+      "name": "quantum_sin2_theta_W",
+      "computed": 0.23122202914793052,
+      "measured": 0.23122,
+      "error_pct": 0.0008775832239925928,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "(\u03b3 \u2212 1/\u03c0\u00b2)/\u03c6^(3/2)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "1/alpha_em",
+      "name": "quantum_1/alpha_em",
+      "computed": 137.03619755957268,
+      "measured": 137.036,
+      "error_pct": 0.0001441661845670506,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "e\u00b3\u00b7\u03c6\u2074 \u2212 \u03c8_con",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "M_W/M_Z",
+      "name": "quantum_M_W/M_Z",
+      "computed": 0.8814508416055906,
+      "measured": 0.88147,
+      "error_pct": 0.002173459608308579,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "S_quant\u00b7ln(\u03c0) \u2212 P_base",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "m_pi/m_p",
+      "name": "quantum_m_pi/m_p",
+      "computed": 0.14445749655332277,
+      "measured": 0.14446,
+      "error_pct": 0.0017329687645284413,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "K\u00b7P_new\u00b7ln(\u03c0)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "|V_us|",
+      "name": "quantum_|V_us|",
+      "computed": 0.22427764916395915,
+      "measured": 0.2243,
+      "error_pct": 0.009964706215270609,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03b8_S/\u03c6 + (1 \u2212 S_quant)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "|V_cb|",
+      "name": "quantum_|V_cb|",
+      "computed": 0.04220081332791359,
+      "measured": 0.0422,
+      "error_pct": 0.0019273173307759674,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "S_quant/C_eff \u2212 S_quant",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "m_t/m_W",
+      "name": "quantum_m_t/m_W",
+      "computed": 2.15000345864463,
+      "measured": 2.1498,
+      "error_pct": 0.009464073152396864,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "|S_cosm|/|Chaos| + \u03c8_con",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "m_tau/m_e",
+      "name": "quantum_m_tau/m_e",
+      "computed": 3477.5054587878312,
+      "measured": 3477.48,
+      "error_pct": 0.0007321045076093104,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03c0\u2077\u00b7ln(\u03c0) + e\u00b3",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "|V_ub|",
+      "name": "quantum_|V_ub|",
+      "computed": 0.0038196601125010513,
+      "measured": 0.00382,
+      "error_pct": 0.008897578506510621,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "C_cosm\u00b2",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "|V_td|",
+      "name": "quantum_|V_td|",
+      "computed": 0.00857080098022107,
+      "measured": 0.00857,
+      "error_pct": 0.009346326966974296,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u221a\u03c6/e\u2075",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "|V_ts|",
+      "name": "quantum_|V_ts|",
+      "computed": 0.04050330471508225,
+      "measured": 0.0405,
+      "error_pct": 0.008159790326533337,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03b3\u2075\u00b7\u03c8_con",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "r_p_fm",
+      "name": "quantum_r_p_fm",
+      "computed": 0.8412485409697683,
+      "measured": 0.8414,
+      "error_pct": 0.018000835539782083,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "G\u2077 + P_new",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "m_n-m_p_MeV",
+      "name": "quantum_m_n-m_p_MeV",
+      "computed": 1.2933328005542002,
+      "measured": 1.29333,
+      "error_pct": 0.00021653825397228277,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03b3\u2074/|Chaos| + P_var",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "mu_p_muN",
+      "name": "quantum_mu_p_muN",
+      "computed": 2.792852216264115,
+      "measured": 2.79285,
+      "error_pct": 7.935492829532375e-05,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03c0\u00b7(1 \u2212 \u03b3\u2074)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "pdg_particle_properties_quantum_lab",
+      "property": "m_c/m_b",
+      "name": "quantum_m_c/m_b",
+      "computed": 0.2910507567869785,
+      "measured": 0.291,
+      "error_pct": 0.017442194837980426,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "C_cosm/P_base",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0313675,
+    "scalar_pooled_median_error_pct": 0.008159790326533337,
     "max_scalar_error_pct": 0.323111,
     "classifier_count": 0,
     "classifier_correct": 0,

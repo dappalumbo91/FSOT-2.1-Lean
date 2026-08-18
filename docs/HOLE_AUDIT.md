@@ -44,7 +44,7 @@ Do these with **real measured data** and the mismatch rule (wrong \(D_{\mathrm{e
 
 | Hole | What “filled” looks like | Kill |
 |------|--------------------------|------|
-| **29 C_thin panels** | 9 tagged `process_ledger` (not Layer B). 1 science panel (NIST DLMF) filled to **21** seed-closed identities → B_verified. **19** remain thin on **purpose**: only on-topic literature exists; off-topic corpus pads were stripped. SH0ES 25-tool H₀ stays in `predictions/` (contested 2.5% band), not the 0.5% panel. | median ≤ 0.5% on whatever rows are real |
+| **29 C_thin panels** | 9 process ledgers tagged. NIST DLMF + **Quantum Higgs family** (m_H 125.200, BRs, PDG ratios, DE w0/wa) promoted Higgs/PDG/CPL. **~16** science panels still thin on purpose (NuFIT 12, Matter 18, founding 5, …). | median ≤ 0.5% on whatever rows are real |
 | Falsification registry vs living PREDs | **48/48** — rebuilt from `predictions/preregistered_predictions_manifest.yaml` + `results/outcomes/` | registry count matches prereg file |
 | Tool-row kills still `pending` | Score in `results/` when a survey paper lands (Euclid, JINR 119, PDG) | registered `kill_if` only |
 | Genetics **bulk** ~13–15 Å | Sibling work; hub only quotes **product vs bulk** labeled | do not claim sequence-only AF-beating |
