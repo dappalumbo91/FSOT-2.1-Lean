@@ -85,7 +85,7 @@ H_0^{\mathrm{tool}} = H_0^{\mathrm{global}}\,(1 + \rho_{\mathrm{sector}}\,\varep
 
 There is **not** one H₀ every instrument is “supposed” to see. Kill a *tool row*, not the whole sky.
 
-SH0ES **1.00%** is not a missing second cosmology. The published 73.04 is a **three-rung mixture** (LMC / NGC 4258 anchors ~70.3 + Cepheid SN hosts ~73.5–74.2). The tool row scores the *class bin* ρ = 5.05 → 73.773. Host-mean already on disk: **73.302 (0.36%)**. Do not retune ρ. [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md).
+SH0ES **class bin** is still 73.773 (1.00%) — frozen tool row. The published 73.04 is the **information-weighted ladder chain** (anchor Cepheids + host Cepheids, local sky density): **72.856 vs 73.04 (0.252%)**. Do not retune ρ. [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) · panel `data/sh0es_ladder_chain_benchmark.json`.
 
 **Code:** `scripts/bubble_bleed_physics.py` · `predictions/h0_multi_tool_predictions.json`  
 **Skeptic map:** [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md)  

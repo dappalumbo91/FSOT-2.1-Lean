@@ -168,6 +168,116 @@ def bubble_density_for_sector(
     return (n + 0.5 * f) / total * 6.0 - 1.0
 
 
+def angular_separation_deg(ra1: float, dec1: float, ra2: float, dec2: float) -> float:
+    r1, d1, r2, d2 = (math.radians(float(x)) for x in (ra1, dec1, ra2, dec2))
+    c = math.sin(d1) * math.sin(d2) + math.cos(d1) * math.cos(d2) * math.cos(r1 - r2)
+    return math.degrees(math.acos(max(-1.0, min(1.0, c))))
+
+
+def sky_kernel_theta0_deg(mod=None) -> float:
+    """Seed-closed angular scale: 180° / φ². Not a fit."""
+    phi = float(getattr(mod, "PHI", 1.618033988749895)) if mod is not None else 1.618033988749895
+    return 180.0 / (phi * phi)
+
+
+def sky_mean_kernel(theta0_deg: float) -> float:
+    """Isotropic sky average of 1/(1+θ/θ0)."""
+    steps = 1800
+    acc = 0.0
+    wsum = 0.0
+    for i in range(steps + 1):
+        th = 180.0 * i / steps
+        sw = math.sin(math.radians(th))
+        acc += (1.0 / (1.0 + th / theta0_deg)) * sw
+        wsum += sw
+    return acc / wsum if wsum else 1.0
+
+
+def local_sky_density(
+    ra_deg: float,
+    dec_deg: float,
+    nebulae: list[dict],
+    frbs: list[dict],
+    *,
+    mod=None,
+) -> float:
+    """Host-local catalog density in the same units as bubble_density_for_sector.
+
+    Uniform catalog around the host → 0. Overdense → +. Underdense → −.
+    Replaces 60° RA bins. No extra stretch.
+    """
+    theta0 = sky_kernel_theta0_deg(mod)
+    w_bar = sky_mean_kernel(theta0)
+    n_w = 0.0
+    f_w = 0.0
+    for row in nebulae:
+        th = angular_separation_deg(
+            ra_deg, dec_deg, float(row.get("ra_deg") or 0.0), float(row.get("dec_deg") or 0.0)
+        )
+        n_w += 1.0 / (1.0 + th / theta0)
+    for row in frbs:
+        th = angular_separation_deg(
+            ra_deg, dec_deg, float(row.get("ra_deg") or 0.0), float(row.get("dec_deg") or 0.0)
+        )
+        f_w += 1.0 / (1.0 + th / theta0)
+    total = len(nebulae) + 0.5 * len(frbs)
+    if total <= 0 or w_bar <= 0:
+        return 0.0
+    return (n_w + 0.5 * f_w) / (total * w_bar) - 1.0
+
+
+def ladder_object_density_model(
+    method: str,
+    density_sky: float,
+    mod,
+    *,
+    cepheid_class_seed: float = 5.1,
+) -> tuple[float, str]:
+    """Per-object interface: geometric/TRGB anchors vs Cepheid SN hosts."""
+    m = str(method or "")
+    if "Maser" in m:
+        return float(sector_h0_density_model("carnegie_h0", 2.0, density_sky, mod)), "anchor"
+    if "TRGB" in m:
+        return float(sector_h0_density_model("freedman_jwst", 1.85, density_sky, mod)), "anchor"
+    return (
+        float(sector_h0_density_model("sh0es_jwst", float(cepheid_class_seed), density_sky, mod)),
+        "host",
+    )
+
+
+def ladder_chain_h0(
+    objects: list[dict],
+    *,
+    h0_global: float,
+    bleed_frac: float,
+) -> dict[str, float]:
+    """Information-weighted mixture of per-object FSOT H0.
+
+    Weights are public Cepheid counts (measured), not a fit to 73.04.
+    Each Cepheid is one unit of calibration information in the SH0ES joint fit.
+    """
+    rows = []
+    for obj in objects:
+        n = max(int(obj.get("cepheid_count") or 1), 1)
+        h0 = float(obj["fsot_h0"])
+        kind = str(obj.get("kind") or "host")
+        rows.append((h0, n, kind))
+    tot = sum(n for _, n, _ in rows) or 1
+    chain = sum(h0 * n for h0, n, _ in rows) / tot
+    hosts = [(h0, n) for h0, n, k in rows if k == "host"]
+    anchors = [(h0, n) for h0, n, k in rows if k == "anchor"]
+    host_w = sum(h0 * n for h0, n in hosts) / sum(n for _, n in hosts) if hosts else None
+    anc_w = sum(h0 * n for h0, n in anchors) / sum(n for _, n in anchors) if anchors else None
+    return {
+        "h0_chain": chain,
+        "h0_hosts_only": host_w if host_w is not None else chain,
+        "h0_anchors_only": anc_w if anc_w is not None else chain,
+        "weight_sum": float(tot),
+        "host_weight_sum": float(sum(n for _, n in hosts)),
+        "anchor_weight_sum": float(sum(n for _, n in anchors)),
+    }
+
+
 def wh_outgassing_mass_split(mod) -> dict[str, float]:
     """BH→WH outgassing: visible (in-phase) vs shadow-phase material."""
     from phase_shift_physics import outgassing_phase_split

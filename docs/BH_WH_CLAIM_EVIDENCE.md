@@ -25,7 +25,7 @@ This page is **not** a gadget spec. Warp / portal titles stay on the [names-only
 
 Valve constants (engine, not new seeds): POOF ≈ 0.1535 · SUCTION ≈ 0.1470 · \(C_{\mathrm{eff}}\) ≈ 0.9577.
 
-PRED-001 (H₀ bridge) stays in `predictions/`. Score the outcome in `results/` when the next survey paper lands. Until then SH0ES **1%** is an honest *class-bin* residual: the published 73.04 is a three-rung mixture (anchors ~70.3 + Cepheid SN hosts ~73.5–74.2). Host-mean already on disk is **73.302 (0.36%)**. Do not retune ρ 5.05 → 4.36. Diagnosis: [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md).
+PRED-001 (H₀ bridge) stays in `predictions/`. The frozen class row is still **73.773 (1.00%)**. The *model gap* (published 73.04 is a ladder, not one ρ) is now filled: [`SH0ES_Ladder_Chain`](../data/sh0es_ladder_chain_benchmark.json) **72.856 vs 73.04 (0.252%)**, anchors vs Freedman **0.172%**. Do not retune ρ 5.05 → 4.36. Outcome: [`../results/sh0es_ladder_chain_outcome.json`](../results/sh0es_ladder_chain_outcome.json).
 
 ---
 

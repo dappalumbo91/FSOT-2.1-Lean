@@ -2335,6 +2335,19 @@ extension_domains:
     benchmark_data: data/sh0es_refined_benchmark.json
     lean_module: FSOT.Formal.SH0ESRefinedPriors
     note: Per-host SH0ES Cepheid sightlines × bubble-density H0 overlay
+  SH0ES_Ladder_Chain:
+    tier: 51
+    D_eff: 20
+    delta_psi: 1.0
+    recent_hits: 1
+    observed: true
+    maps_to_lean:
+    - cosmological
+    - blackhole
+    - astronomy
+    build_script: scripts/build_sh0es_ladder_chain_benchmark.py
+    benchmark_data: data/sh0es_ladder_chain_benchmark.json
+    note: Published SH0ES H0 as information-weighted anchor+host mixture; local sky density; frozen class ρ not retuned
   Consciousness_Soul_Bridge:
     tier: 51
     D_eff: 17

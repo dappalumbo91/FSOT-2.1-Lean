@@ -4,7 +4,9 @@
 **Regenerate:** `python scripts/diagnose_sh0es_ladder.py`  
 **Machine:** [`../results/sh0es_ladder_diagnosis.json`](../results/sh0es_ladder_diagnosis.json)
 
-This is a diagnosis, not a retune. The 1% is real. Stuffing SH0ES into the 0.5% green gate by moving ρ from 5.05 → 4.36 is forbidden.
+This is a diagnosis, not a retune. The 1% class-bin leftover is real. Stuffing SH0ES into the 0.5% green gate by moving ρ from 5.05 → 4.36 is forbidden.
+
+**Filled (2026-08-18):** the published 73.04 is now residual-gated as the information-weighted ladder chain — [`SH0ES_Ladder_Chain`](../data/sh0es_ladder_chain_benchmark.json) · **72.856 vs 73.04 (0.252%)**. Frozen class row stays at 73.773. See [`../results/sh0es_ladder_chain_outcome.json`](../results/sh0es_ladder_chain_outcome.json).
 
 ---
 
@@ -75,12 +77,10 @@ The Cepheid *family* is the outlier cluster (SH0ES HST 1.00%, SH0ES JWST 1.08%, 
 
 ## What we are still not solving for
 
-These stay labeled. Do not invent a coefficient.
+Filled this pass: the ladder mixture (item 1) and host-local sky density (item 3). Still labeled:
 
-1. **Published SH0ES H₀ is a three-rung mixture.** We have host sightlines; we do not yet *use* that mixture as the official tool-row (predictions stay frozen).
-2. **Cepheid PL internals** — metallicity term, crowding, Wesenheit slope. Those are stellar-population systematics *inside* the hosts. FSOT does not currently residual-gate the PL relation itself.
-3. **60° RA bins are coarse.** Three SN hosts (NGC 1309 / 1365 / 1448) land in a bin *named* `sector_0_planck_depleted` because RA < 60°, but their local nebula/FRB density is inflated. The name is a CMB-sector leftover, not Planck’s last-scattering surface.
-4. **No per-host published H₀.** Riess publishes the ladder average. We cannot kill a single host row until a paper gives host-level H₀.
+1. **Cepheid PL internals** — metallicity term, crowding, Wesenheit slope. R22 optical table is on disk; the PL itself is not residual-gated yet.
+2. **No per-host published H₀.** Riess publishes the ladder average. We cannot kill a single host row until a paper gives host-level H₀.
 
 ---
 

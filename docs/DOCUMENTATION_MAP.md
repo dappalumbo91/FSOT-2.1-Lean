@@ -74,7 +74,7 @@ Frozen criteria: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 | [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) | Founding consciousness claim → live panel n / residual / kill command |
 | [`MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md) | C13 conjugate / CPT / \(\eta\) → kill command |
 | [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md) | C2/C3/C10 valve + 25-tool H₀ → kill command |
-| [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) | Why SH0ES is 1%: class bin vs three-rung mixture; do not retune ρ |
+| [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) | Class bin vs ladder chain; chain is **0.252%** (do not retune ρ) |
 | [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) | C6 product 0.13 Å vs AF 0.47 Å; MDS retired |
 | [`CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) | Local observer stack (QEMU; ESP32 deferred) |
 

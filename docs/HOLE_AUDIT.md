@@ -50,7 +50,7 @@ Do these with **real measured data** and the mismatch rule (wrong \(D_{\mathrm{e
 
 | Hole | What “filled” looks like | Kill |
 |------|--------------------------|------|
-| **SH0ES 1% class bin** | Diagnosed: published 73.04 is a three-rung mixture, not one ρ. Host-mean 73.302 (0.36%). **Do not retune ρ.** [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) | keep 2.5% contested band; mixture readout belongs in `results/` not a rewritten seed |
+| **SH0ES 1% class bin** | **Filled.** Ladder chain **72.856 vs 73.04 (0.252%)**; anchors vs Freedman **0.172%**. Frozen class row stays 73.773. [`../results/sh0es_ladder_chain_outcome.json`](../results/sh0es_ladder_chain_outcome.json) | chain median > 0.5%, or anyone retunes ρ to hit 73.04 |
 | Falsification registry vs living PREDs | **48/48** — rebuilt from `predictions/preregistered_predictions_manifest.yaml` + `results/outcomes/` | registry count matches prereg file |
 | Tool-row kills still `pending` | Score in `results/` when a survey paper lands (Euclid, JINR 119, PDG) | registered `kill_if` only |
 | Genetics **no-map** path | Sibling: F01–F15 only; 3-D MDS **retired**. Hub quotes 2026-08-17 freeze | do not claim sequence-only AF-beating; do not grind MDS |

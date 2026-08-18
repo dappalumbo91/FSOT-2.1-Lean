@@ -1,0 +1,412 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-18T03:45:05.369050+00:00",
+  "domain": "SH0ES_Ladder_Chain",
+  "authority_path": "C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fsot_compute.py",
+  "source": [
+    "data/sh0es_host_coordinates.json",
+    "data/sh0es_hosts_parsed.json",
+    "predictions/sector_h0_seed.json",
+    "data/nebula_lensing_cache.json",
+    "data/frb_repeater_cache.json",
+    "Riess+2022 SH0ES public Cepheid counts"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "blackhole",
+    "astronomy"
+  ],
+  "D_eff": 20,
+  "record_count": 2,
+  "observable_count": 2,
+  "scalar_record_count": 2,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.212101,
+  "pooled_median_error_pct": 0.212101,
+  "headline_median_error_pct": 0.252234,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "ladder_chain": {
+        "sota_typical_error_pct": 1.0,
+        "sota_model": "Single class-bin \u03c1=5.05 (73.773 vs 73.04)"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.212101,
+      "measured": 0.0,
+      "error_pct": 0.212101,
+      "observable_count": 2
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "ladder_chain",
+      "computed": 0.252234,
+      "measured": 0.0,
+      "error_pct": 0.252234,
+      "observable_count": 2
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "sh0es_ladder_chain_lab",
+      "property": "published_h0",
+      "name": "SH0ES_R22_ladder_chain",
+      "computed": 72.855768,
+      "measured": 73.04,
+      "error_pct": 0.252234,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "unit": "km/s/Mpc",
+      "note": "Cepheid-count weighted mixture of anchor + host FSOT H0. Not a \u03c1 retune."
+    },
+    {
+      "lab": "sh0es_ladder_chain_lab",
+      "property": "anchor_rung_h0",
+      "name": "SH0ES_geometric_anchors_vs_Freedman",
+      "computed": 70.511048,
+      "measured": 70.39,
+      "error_pct": 0.171968,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "unit": "km/s/Mpc",
+      "note": "LMC+NGC4258 count-weighted vs Freedman JWST TRGB (same mild sector)."
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.212101,
+    "max_scalar_error_pct": 0.252234,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 51,
+  "policy": "do_not_retune_frozen_class_rho",
+  "h0_global_fsot": 68.44005682979427,
+  "bubble_bleed_fraction": 0.015431,
+  "objects": [
+    {
+      "host": "M31",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 10.685,
+      "dec_deg": 41.269,
+      "density_sky": 0.107383,
+      "density_model": 5.152455,
+      "fsot_h0": 73.881557,
+      "cepheid_count": 55
+    },
+    {
+      "host": "M101",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 210.802,
+      "dec_deg": 54.349,
+      "density_sky": -0.07507,
+      "density_model": 5.063329,
+      "fsot_h0": 73.787431,
+      "cepheid_count": 518
+    },
+    {
+      "host": "NGC4258",
+      "method": "Maser_anchor",
+      "kind": "anchor",
+      "ra_deg": 184.74,
+      "dec_deg": 47.304,
+      "density_sky": -0.079558,
+      "density_model": 1.980675,
+      "fsot_h0": 70.531845,
+      "cepheid_count": 841
+    },
+    {
+      "host": "LMC",
+      "method": "TRGB_anchor",
+      "kind": "anchor",
+      "ra_deg": 80.894,
+      "dec_deg": -69.756,
+      "density_sky": -0.025194,
+      "density_model": 1.840098,
+      "fsot_h0": 70.383382,
+      "cepheid_count": 137
+    },
+    {
+      "host": "NGC1015",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 39.548,
+      "dec_deg": -1.32,
+      "density_sky": 0.249646,
+      "density_model": 5.221948,
+      "fsot_h0": 73.954948,
+      "cepheid_count": 39
+    },
+    {
+      "host": "NGC1309",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 50.423,
+      "dec_deg": -19.427,
+      "density_sky": 0.155858,
+      "density_model": 5.176134,
+      "fsot_h0": 73.906564,
+      "cepheid_count": 95
+    },
+    {
+      "host": "NGC1365",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 53.401,
+      "dec_deg": -36.14,
+      "density_sky": 0.07871,
+      "density_model": 5.138448,
+      "fsot_h0": 73.866765,
+      "cepheid_count": 93
+    },
+    {
+      "host": "NGC1448",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 56.138,
+      "dec_deg": -44.404,
+      "density_sky": 0.047142,
+      "density_model": 5.123028,
+      "fsot_h0": 73.850479,
+      "cepheid_count": 146
+    },
+    {
+      "host": "NGC1559",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 67.767,
+      "dec_deg": -62.787,
+      "density_sky": -0.006984,
+      "density_model": 5.096588,
+      "fsot_h0": 73.822556,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC2442",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 111.108,
+      "dec_deg": -50.45,
+      "density_sky": -0.037224,
+      "density_model": 5.081817,
+      "fsot_h0": 73.806956,
+      "cepheid_count": 303
+    },
+    {
+      "host": "NGC3021",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 147.371,
+      "dec_deg": 33.542,
+      "density_sky": -0.063383,
+      "density_model": 5.069039,
+      "fsot_h0": 73.793461,
+      "cepheid_count": 30
+    },
+    {
+      "host": "NGC3370",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 161.132,
+      "dec_deg": 17.315,
+      "density_sky": -0.088804,
+      "density_model": 5.056621,
+      "fsot_h0": 73.780346,
+      "cepheid_count": 133
+    },
+    {
+      "host": "NGC3447",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 163.361,
+      "dec_deg": 16.779,
+      "density_sky": -0.09137,
+      "density_model": 5.055367,
+      "fsot_h0": 73.779023,
+      "cepheid_count": 203
+    },
+    {
+      "host": "NGC3627",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 170.062,
+      "dec_deg": 13.589,
+      "density_sky": -0.098323,
+      "density_model": 5.051971,
+      "fsot_h0": 73.775436,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC3972",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 178.938,
+      "dec_deg": 55.32,
+      "density_sky": -0.062572,
+      "density_model": 5.069435,
+      "fsot_h0": 73.793879,
+      "cepheid_count": 99
+    },
+    {
+      "host": "NGC3982",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 179.075,
+      "dec_deg": 55.17,
+      "density_sky": -0.062902,
+      "density_model": 5.069273,
+      "fsot_h0": 73.793709,
+      "cepheid_count": 47
+    },
+    {
+      "host": "NGC4038",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 180.466,
+      "dec_deg": -18.865,
+      "density_sky": -0.110986,
+      "density_model": 5.045785,
+      "fsot_h0": 73.768903,
+      "cepheid_count": 58
+    },
+    {
+      "host": "NGC4254",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 184.674,
+      "dec_deg": 14.42,
+      "density_sky": -0.107268,
+      "density_model": 5.047601,
+      "fsot_h0": 73.770821,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC4321",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 185.899,
+      "dec_deg": 15.783,
+      "density_sky": -0.10777,
+      "density_model": 5.047356,
+      "fsot_h0": 73.770562,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC4424",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 186.802,
+      "dec_deg": 9.429,
+      "density_sky": -0.108094,
+      "density_model": 5.047198,
+      "fsot_h0": 73.770395,
+      "cepheid_count": 10
+    },
+    {
+      "host": "NGC4536",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 188.614,
+      "dec_deg": 2.069,
+      "density_sky": -0.107505,
+      "density_model": 5.047485,
+      "fsot_h0": 73.770699,
+      "cepheid_count": 81
+    },
+    {
+      "host": "NGC4639",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 190.677,
+      "dec_deg": 13.263,
+      "density_sky": -0.110194,
+      "density_model": 5.046172,
+      "fsot_h0": 73.769312,
+      "cepheid_count": 55
+    },
+    {
+      "host": "NGC5584",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 215.289,
+      "dec_deg": -0.194,
+      "density_sky": -0.117105,
+      "density_model": 5.042796,
+      "fsot_h0": 73.765746,
+      "cepheid_count": 328
+    },
+    {
+      "host": "NGC5643",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 219.059,
+      "dec_deg": -44.175,
+      "density_sky": -0.10217,
+      "density_model": 5.050092,
+      "fsot_h0": 73.773451,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC5917",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 232.288,
+      "dec_deg": -60.458,
+      "density_sky": -0.079254,
+      "density_model": 5.061286,
+      "fsot_h0": 73.785273,
+      "cepheid_count": 27
+    },
+    {
+      "host": "NGC7250",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 334.215,
+      "dec_deg": 40.562,
+      "density_sky": 0.052105,
+      "density_model": 5.125453,
+      "fsot_h0": 73.85304,
+      "cepheid_count": 33
+    },
+    {
+      "host": "UGC9391",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 175.628,
+      "dec_deg": 33.195,
+      "density_sky": -0.092092,
+      "density_model": 5.055014,
+      "fsot_h0": 73.77865,
+      "cepheid_count": 66
+    }
+  ],
+  "chain": {
+    "h0_chain": 72.85576814814812,
+    "h0_hosts_only": 73.80178146080857,
+    "h0_anchors_only": 70.51104803578733,
+    "weight_sum": 3402.0,
+    "host_weight_sum": 2424.0,
+    "anchor_weight_sum": 978.0
+  },
+  "class_bin_h0": 73.773354,
+  "class_bin_error_pct": 1.004045,
+  "sh0es_status": "GREEN"
+}
