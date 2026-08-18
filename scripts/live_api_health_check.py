@@ -394,10 +394,15 @@ def main() -> int:
         return f"bytes={len(raw)}"
 
     def open_mast_astroquery():
-        from mast_astroquery_lib import mast_available, query_public_images  # noqa: WPS433
+        try:
+            from mast_astroquery_lib import mast_available, query_public_images  # noqa: WPS433
+        except ModuleNotFoundError:
+            return "skipped_no_astroquery (optional; bundled MAST cache used)"
 
         ok, msg = mast_available()
         if not ok:
+            if "astroquery" in str(msg).lower() or "no module" in str(msg).lower():
+                return f"skipped_optional ({msg})"
             raise RuntimeError(msg)
         meta = query_public_images(objectname="M1", obs_collection="HST", max_obs=2)
         return (

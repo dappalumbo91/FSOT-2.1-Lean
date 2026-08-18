@@ -4,9 +4,9 @@
 
 1. **Development does not freeze** while we wait for survey drops.  
 2. **Git commit SHA + timestamp** is the preregistration clock for any prediction already on GitHub.  
-3. When data lands, **log the outcome** against that SHA — do not retune the predicted centrals in that historical commit.  
-4. New model work continues on `main` with new commits; outcomes go in a living scoreboard.  
-5. Large raw datasets live on **external drive** `G:/FSOT-PublicData/…`; monorepo keeps engines + predictions + pointers.
+3. When data lands, **log the outcome** against that SHA in **`results/`** — do not retune the predicted centrals in `predictions/`.  
+4. New model work continues on `main` with new commits; outcomes go in the results scoreboard.  
+5. Large raw datasets live on **external drive** (`G:/FSOT-PublicData/…` or `I:\FSOT-Physical-Archive\03_FSOT-PublicData`); monorepo keeps engines + predictions + results pointers.
 
 ## Closest calendar drops (update with ranker)
 
@@ -37,15 +37,29 @@ Being directionally right with residual outside a future 0.5% gate is still usef
 
 ## Outcome log (when a drop happens)
 
-Append to `data/prediction_outcome_log.jsonl` (create if missing):
+**Predictions stay in `predictions/`.**  
+**Results go in `results/`.**
 
-```json
-{"ts":"ISO-UTC","commit_sha":"…","pred_id":"PRED-042","survey":"Euclid-DR1-Foundation","result":"hold|kill|partial","notes":"…","measured":null}
+```powershell
+python scripts/record_prediction_outcome.py `
+  --pred-id PRED-042 `
+  --survey Euclid-DR1-Foundation `
+  --result hold `
+  --notes "…"
 ```
 
-Also mirror a copy to:
+Append-only file: `results/outcomes/prediction_outcome_log.jsonl`
 
-`G:/FSOT-PublicData/anomaly_observables/prediction_monitor_logs/`
+```json
+{"ts":"ISO-UTC","commit_sha":"…","pred_id":"PRED-042","survey":"Euclid-DR1-Foundation","result":"hold|kill|partial|awaiting|theory_rebase","notes":"…","measured":null}
+```
+
+Also write a dated pack under `results/literature/YYYY-MM-DD_crossref.md` and refresh `results/INDEX.md`.
+
+Optional external mirror:
+
+`G:/FSOT-PublicData/anomaly_observables/prediction_monitor_logs/`  
+`I:\FSOT-Physical-Archive\03_FSOT-PublicData\` (same role on the physical archive)
 
 ## Separate predictions repository?
 
@@ -66,4 +80,5 @@ python scripts/build_h0_multi_tool_predictions.py
 python scripts/build_domain_prediction_atlas.py
 python scripts/rank_nearest_data_drops.py
 python scripts/run_prediction_monitor.py
+python scripts/record_prediction_outcome.py --help
 ```

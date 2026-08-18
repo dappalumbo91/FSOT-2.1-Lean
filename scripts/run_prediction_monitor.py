@@ -13,6 +13,8 @@ Schedule (example):
 Outputs:
   predictions/prediction_monitor_report.json
   predictions/reports/PREDICTION_MONITOR.md
+  results/monitor/prediction_monitor_report.json
+  results/monitor/PREDICTION_MONITOR.md
 """
 
 from __future__ import annotations
@@ -41,6 +43,8 @@ H0_MULTI = ROOT / "predictions" / "h0_multi_tool_predictions.json"
 H0_SIGHT = ROOT / "predictions" / "h0_sightline_predictions.json"
 OUT_JSON = ROOT / "predictions" / "prediction_monitor_report.json"
 OUT_MD = ROOT / "predictions" / "reports" / "PREDICTION_MONITOR.md"
+RESULTS_JSON = ROOT / "results" / "monitor" / "prediction_monitor_report.json"
+RESULTS_MD = ROOT / "results" / "monitor" / "PREDICTION_MONITOR.md"
 
 GREEN_CEILING = 0.5
 
@@ -464,12 +468,16 @@ def write_md(report: dict) -> None:
             "```",
             "",
             "Related: `predictions/prediction_monitor_registry.yaml` · `docs/PREDATA_RISK.md` · "
-            "`predictions/toe_prereg_freeze.json` · `docs/INDEPENDENT_REPRODUCTION.md`",
+            "`predictions/toe_prereg_freeze.json` · `docs/INDEPENDENT_REPRODUCTION.md` · "
+            "`results/INDEX.md` (outcomes, not predictions)",
             "",
         ]
     )
+    text = "\n".join(lines).rstrip() + "\n"
     OUT_MD.parent.mkdir(parents=True, exist_ok=True)
-    OUT_MD.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    OUT_MD.write_text(text, encoding="utf-8")
+    RESULTS_MD.parent.mkdir(parents=True, exist_ok=True)
+    RESULTS_MD.write_text(text, encoding="utf-8")
 
 
 def main() -> int:
@@ -480,13 +488,18 @@ def main() -> int:
     online = bool(args.online) and not args.offline
 
     report = build_report(online=online)
+    payload = json.dumps(report, indent=2)
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    OUT_JSON.write_text(payload, encoding="utf-8")
+    RESULTS_JSON.parent.mkdir(parents=True, exist_ok=True)
+    RESULTS_JSON.write_text(payload, encoding="utf-8")
     write_md(report)
 
     s = report["summary"]
     print(f"Wrote {OUT_JSON}")
     print(f"Wrote {OUT_MD}")
+    print(f"Wrote {RESULTS_JSON}")
+    print(f"Wrote {RESULTS_MD}")
     print(
         f"  watches={s['watch_count']} outcomes={s['outcomes']} "
         f"preds={s['prereg_prediction_count']} future_tagged={s['prereg_with_future_survey_tag']} "

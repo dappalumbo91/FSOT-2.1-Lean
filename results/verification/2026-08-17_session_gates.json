@@ -1,0 +1,49 @@
+{
+  "session_id": "2026-08-17-fsot-professionalization",
+  "generated_at": "2026-08-18T01:30:07+00:00",
+  "working_tree": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean",
+  "github": "https://github.com/dappalumbo91/FSOT-2.1-Lean",
+  "physical_archive": "I:\\FSOT-Physical-Archive",
+  "authority_pin_prefix": "D1D38A",
+  "head_commit": "aeb0679eaec722108759589591129fe24f0a77c6",
+  "gates": {
+    "green_gate": {
+      "command": "python scripts/audit_all_benchmark_margins.py",
+      "ran": true,
+      "pass": 472,
+      "fail": 0,
+      "excluded": 1,
+      "excluded_file": "structure_calibration_benchmark.json",
+      "worst_scalar_max_pct": 0.4989,
+      "worst_scalar_domain": "Phi_Morphogenetic_Scaling",
+      "strict_scalar_pass": 472,
+      "classifier_fails": 0
+    },
+    "prediction_monitor_online": {
+      "command": "python scripts/run_prediction_monitor.py --online",
+      "ran": true,
+      "watch_count": 14,
+      "outcomes": {
+        "source_reachable_awaiting_release": 2,
+        "local_green_hold": 8,
+        "open_predata": 3,
+        "data_available": 1
+      },
+      "local_gate_fail": 0,
+      "atlas_predictions": 1445,
+      "atlas_domains": 472
+    },
+    "literature_crossref": {
+      "pack": "results/literature/2026-08-17_crossref.json",
+      "hold": 4,
+      "partial": 1,
+      "awaiting": 5,
+      "kill": 0
+    }
+  },
+  "archive_sync_note": {
+    "desktop_github_head": "aeb0679",
+    "archive_lean_tree_as_of_session_start": "dfebff1, 123 commits behind origin/main, dirty local experiments",
+    "policy": "I:\\FSOT-Physical-Archive is the physical master for offline data + SR-ITE. GitHub/Desktop is the current public Lean+prediction state. This session writes results/ on Desktop and mirrors results/ + predictions/ onto the archive without resetting the archive's extra local work."
+  }
+}

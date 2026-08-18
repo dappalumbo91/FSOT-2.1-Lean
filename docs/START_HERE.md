@@ -55,6 +55,8 @@ Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 | Lean formal | `FSOT/Formal/` | Master integrator |
 | Multiprover | `verification/{coq,isabelle,fstar,rust,smt,tla,qemu,esp32}/` | Independent residual / structure checks |
 | Domain data | `data/*_benchmark.json` | Residual panels |
+| Predictions (frozen) | `predictions/` | Timestamped / SHA-locked forecasts |
+| Results (outcomes) | `results/` | Literature + API outcomes after data lands |
 | Docs | `docs/` | Human claims and runbooks |
 | Hardware / OS path | this file § Machine stack + [`NEURON_ZIG_TO_OS_ROADMAP.md`](NEURON_ZIG_TO_OS_ROADMAP.md) | Embodiment → OS |
 

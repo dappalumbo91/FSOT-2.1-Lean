@@ -16,6 +16,7 @@
 | `scripts/run_prediction_monitor.py` | Offline/online status runner |
 | `predictions/prediction_monitor_report.json` | Machine report |
 | `predictions/reports/PREDICTION_MONITOR.md` | Human table |
+| `results/` | **Outcomes after data lands** (literature packs + jsonl). Predictions stay frozen. |
 | `kaggle/fsot-prediction-monitor/` | Portable dataset + notebook |
 
 ### Multi-tool H₀ (not one number)

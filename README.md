@@ -942,7 +942,8 @@ python scripts/run_cross_proof_verification.py
 | [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) | 402-domain verification table |
 | [`data/cross_proof_verification_report.json`](data/cross_proof_verification_report.json) | Five-prover closure report |
 | [`data/fsot_domain_navigator.json`](data/fsot_domain_navigator.json) | Domain routes + kill criteria |
-| [`predictions/preregistered_predictions_manifest.yaml`](predictions/preregistered_predictions_manifest.yaml) | PRED-001â€“041 registry |
+| [`predictions/preregistered_predictions_manifest.yaml`](predictions/preregistered_predictions_manifest.yaml) | PRED-001–041 registry |
+| [`results/INDEX.md`](results/INDEX.md) | Measured outcomes after data lands (predictions stay frozen) |
 | [`data/honest_claims_manifest.yaml`](data/honest_claims_manifest.yaml) | Parameter honesty |
 | [`data/domain_citations/verified_desktop.bib`](data/domain_citations/verified_desktop.bib) | BibTeX export |
 

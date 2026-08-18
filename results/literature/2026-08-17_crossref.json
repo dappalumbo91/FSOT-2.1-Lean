@@ -1,0 +1,250 @@
+{
+  "pack_id": "LIT-XREF-2026-08-17",
+  "generated_at": "2026-08-17T18:00:00+00:00",
+  "as_of": "2026-08-17",
+  "authority_pin_prefix": "D1D38A",
+  "prediction_freeze_commit": "aeb0679eaec722108759589591129fe24f0a77c6",
+  "prediction_freeze_commit_date": "2026-08-07T15:41:10Z",
+  "policy": "Predictions stay frozen in predictions/. This pack only records published/public measured results that landed after or beside those locks.",
+  "previous_monitor_as_of": "2026-08-06",
+  "search_window": "2026-08-06 through 2026-08-17 plus rolling 2025-2026 papers still live against open watches",
+  "rows": [
+    {
+      "pred_ids": ["PRED-001", "PRED-H0-bridge", "PRED-046", "PRED-051"],
+      "watch_id": "WATCH-Local-H0-JWST",
+      "title": "Local / CMB Hubble constant — tension still live; CCHP TRGB nearest to FSOT bridge",
+      "fsot_lock": 70.75,
+      "unit": "km/s/Mpc",
+      "discriminant": "strictly_between_planck_and_sh0es",
+      "registered_at": "2026-07-10",
+      "result": "hold",
+      "measured": {
+        "CCHP_TRGB_highest_precision": 70.39,
+        "CCHP_TRGB_uncertainty_stat": 1.22,
+        "CCHP_JWST_only_TRGB": 68.81,
+        "CCHP_JWST_only_JAGB": 67.80,
+        "SH0ES_JWST_class": 73.0,
+        "local_distance_network_AandA_2026": 73.50,
+        "local_distance_network_uncertainty": 0.81,
+        "Planck_LCDM_class": 67.4,
+        "DESI_DR2_BAO_LCDM": 68.51
+      },
+      "sources": [
+        {
+          "label": "Freedman et al. CCHP JWST status report",
+          "id": "arXiv:2408.06153",
+          "url": "https://arxiv.org/abs/2408.06153",
+          "published": "2024-08 (ApJ 2025 985 203)"
+        },
+        {
+          "label": "A&A community consensus Local Distance Network (2026)",
+          "url": "https://www.aanda.org/articles/aa/full_html/2026/04/aa57993-25/aa57993-25.html",
+          "published": "2026-04"
+        },
+        {
+          "label": "ESA Webb+Hubble SH0ES confirmation",
+          "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Webb_Hubble_confirm_Universe_s_expansion_rate"
+        }
+      ],
+      "notes": "PRED-001 discriminant is strictly_between_planck_and_sh0es. 70.75 remains between Planck-class ~67.4 and SH0ES-class ~73.0. CCHP TRGB 70.39 ± 1.22 is the closest published high-precision central to the frozen FSOT bridge. Local-network combination 73.50 ± 0.81 (A&A 2026) keeps the local-high side live. No retune."
+    },
+    {
+      "pred_ids": ["PRED-024"],
+      "watch_id": "WATCH-Local-H0-JWST",
+      "title": "Dual-anchor bubble-bleed H0 72.1 vs latest local ladder papers",
+      "fsot_lock": 72.1,
+      "unit": "km/s/Mpc",
+      "result": "hold",
+      "measured": {
+        "SH0ES_class": 73.0,
+        "local_distance_network_AandA_2026": 73.50,
+        "CCHP_Cepheid_class_literature": 72.04
+      },
+      "sources": [
+        {
+          "label": "A&A 2026 Local Distance Network",
+          "url": "https://www.aanda.org/articles/aa/full_html/2026/04/aa57993-25/aa57993-25.html"
+        }
+      ],
+      "notes": "72.1 sits on the local-ladder / Cepheid side of the bubble split. Still consistent with SH0ES-class and CCHP Cepheid-class papers. Compare to its own tool row, not to Planck."
+    },
+    {
+      "pred_ids": ["PRED-002", "PRED-S8", "PRED-042"],
+      "watch_id": "WATCH-Euclid-DR1-S8",
+      "title": "Euclid DR1 S8 — drop not yet public",
+      "fsot_lock": 0.805,
+      "unit": "S8",
+      "result": "awaiting",
+      "measured": null,
+      "sources": [
+        {
+          "label": "ESA Euclid DR1 timeline",
+          "url": "https://www.cosmos.esa.int/web/euclid/dr1-timeline"
+        }
+      ],
+      "notes": "DR1-Foundation still listed ~12 Nov 2026; complete WL/S8 mid-2027. Local DES/Planck tension panel remains a green hold in-repo. No new Euclid S8 posterior to score."
+    },
+    {
+      "pred_ids": ["PRED-wa", "PRED-043"],
+      "watch_id": "WATCH-Euclid-DR1-wa",
+      "title": "Dark-energy wa — DES Y6 + DESI DR2 public; Euclid joint still pending",
+      "fsot_lock": -1.018,
+      "unit": "w_a",
+      "kill_if": "desi_or_euclid_3sigma_exclusion of frozen wa",
+      "result": "hold",
+      "measured": {
+        "DES_Y6_3x2pt_SNe_BAO": -0.44,
+        "DES_Y6_plus_DESI_DR2_BAO": -0.53,
+        "DES_Y6_plus_DESI_plus_CMB": -0.63,
+        "DES_Y6_plus_DESI_plus_CMB_upper": -0.42,
+        "DES_Y6_plus_DESI_plus_CMB_lower": -0.81
+      },
+      "sources": [
+        {
+          "label": "DES Y6 cosmology papers (2026-01-22)",
+          "url": "https://www.darkenergysurvey.org/des-y6-cosmology-results-papers/"
+        },
+        {
+          "label": "DESI DR2 evolving-DE coverage",
+          "url": "https://cerncourier.com/desi-hints-at-evolving-dark-energy/",
+          "published": "2025-05-16"
+        }
+      ],
+      "notes": "Sign of wa is negative (evolving DE, same side as FSOT lock). Combined DES+DESI+CMB wa = -0.63^{+0.21}_{-0.18}. Frozen -1.018 is ~1.9σ from that central — not a 3σ exclusion. Euclid DR1 joint posterior still the registered kill surface. Local DESI_wa panel remains green."
+    },
+    {
+      "pred_ids": ["PRED-004", "PRED-050"],
+      "watch_id": "WATCH-muon-g2",
+      "title": "Muon g-2 — Fermilab final experiment confirmed; lattice SM target moved",
+      "fsot_lock": 2.49e-9,
+      "unit": "delta_a_mu",
+      "kill_if": "sign flip vs Fermilab-class excess or theory absorbs full excess without FSOT map",
+      "result": "partial",
+      "measured": {
+        "fermilab_final_a_mu_x1e11": 116592070.5,
+        "fermilab_final_uncertainty_x1e11": 14.7,
+        "WP20_data_driven_SM_x1e11": 116591810,
+        "WP20_excess_approx": 2.6e-9,
+        "WP25_lattice_SM_x1e11": 116592033,
+        "WP25_excess_approx": 3.75e-10
+      },
+      "sources": [
+        {
+          "label": "Fermilab final result (2025-06-03)",
+          "id": "arXiv:2506.03069",
+          "url": "https://arxiv.org/abs/2506.03069"
+        },
+        {
+          "label": "Theory Initiative WP25 lattice SM",
+          "id": "arXiv:2505.21476",
+          "url": "https://arxiv.org/abs/2505.21476"
+        },
+        {
+          "label": "CERN Courier final-word summary",
+          "url": "https://cerncourier.com/fermilabs-final-word-on-muon-g-2/",
+          "published": "2025-07-08"
+        },
+        {
+          "label": "Muon g-2 Theory Initiative plenary (2026-08-03 to 08-07)",
+          "url": "https://indico.phys.uconn.edu/event/3/"
+        }
+      ],
+      "notes": "Experiment did not flip sign: Fermilab final a_mu stays on the 2021 high side (Breakthrough Prize 2026). Versus WP20 R-ratio SM the excess is still ~2.6e-9, matching FSOT 2.49e-9 direction and scale. Versus WP25 lattice SM the recommended theory target moved up and most of the WP20 excess is absorbed. Recorded as partial: experimental lock holds; theory-target rebase is logged, not a retune of the FSOT lock. Next: 2026 Theory Initiative workshop resolution of lattice vs data-driven HVP."
+    },
+    {
+      "pred_ids": ["PRED-mH", "PRED-049"],
+      "watch_id": "WATCH-PDG-mH",
+      "title": "Higgs mass — CMS 2026 diphoton 125.14 GeV vs FSOT 125.25",
+      "fsot_lock": 125.25,
+      "unit": "GeV",
+      "kill_if": "pdg_update_outside_0_5pct",
+      "result": "hold",
+      "measured": {
+        "CMS_2026_diphoton": 125.14,
+        "CMS_2026_diphoton_uncertainty": 0.15,
+        "ATLAS_2023_combo": 125.11,
+        "ATLAS_2023_uncertainty": 0.11
+      },
+      "error_pct_vs_cms_2026": 0.088,
+      "sources": [
+        {
+          "label": "CMS diphoton mass (announced 2026-03)",
+          "url": "https://cms.cern/news/cms-weighs-higgs-boson-using-flashes-light",
+          "id": "CMS-PAS-HIG-24-007"
+        }
+      ],
+      "notes": "|125.25 − 125.14| / 125.25 = 0.088% ≪ 0.5% kill. Hold."
+    },
+    {
+      "pred_ids": ["PRED-017", "PRED-012"],
+      "watch_id": null,
+      "title": "Z=119 / Z=120 — still not synthesized; JINR 119 run live",
+      "fsot_lock": 0.42,
+      "unit": "viability_score",
+      "result": "awaiting",
+      "measured": null,
+      "sources": [
+        {
+          "label": "Wikipedia Ununennium — JINR May 2026 start, results expected Sep–Oct 2026",
+          "url": "https://en.wikipedia.org/wiki/Ununennium"
+        },
+        {
+          "label": "Oxford Scientist May 2026 review",
+          "url": "https://oxsci.org/beyond-oganesson-the-race-to-create-element-119/"
+        }
+      ],
+      "notes": "IUPAC ceiling still Z=118. JINR 249Bk+50Ti 119 experiment began May 2026; initial results slated Sep–Oct 2026. RIKEN 248Cm+51V continues. No confirmed atom. PRED-017 / PRED-012 remain pre-data."
+    },
+    {
+      "pred_ids": ["PRED-048"],
+      "watch_id": "WATCH-LVK-GWTC",
+      "title": "GWTC-5.0 public; remaining O4 ~Dec 2026",
+      "fsot_lock": null,
+      "unit": "catalog_count_and_rate_class",
+      "result": "awaiting",
+      "measured": {
+        "GWTC_5_pastro_ge_0.5_class": 390
+      },
+      "sources": [
+        {
+          "label": "GWOSC GWTC-5.0",
+          "url": "https://gwosc.org/GWTC-5.0/"
+        }
+      ],
+      "notes": "Catalog exists. Score residual on next GWOSC / in-repo panel refresh — do not treat event count as a kill by itself."
+    },
+    {
+      "pred_ids": ["PRED-044"],
+      "watch_id": "WATCH-Rubin-LSST-Y1-structure",
+      "title": "Rubin LSST science survey live; EDP2 still Oct–Dec 2026",
+      "fsot_lock": 0.805,
+      "unit": "S8",
+      "result": "awaiting",
+      "measured": null,
+      "sources": [
+        {
+          "label": "Rubin Observatory",
+          "url": "https://rubinobservatory.org/"
+        }
+      ],
+      "notes": "Survey began 2026-06-30. No public Y1 S8 pathfinder to score yet."
+    },
+    {
+      "pred_ids": ["PRED-053"],
+      "watch_id": "WATCH-JWST-highz",
+      "title": "JWST high-z catalogs — rolling, no new kill this window",
+      "fsot_lock": null,
+      "result": "awaiting",
+      "measured": null,
+      "notes": "Public JADES / COSMOS-3D / NEXUS remain rolling. Next score is the in-repo high-z / Gaia-adjacent panel refresh, not a single headline number."
+    }
+  ],
+  "summary": {
+    "rows": 10,
+    "hold": 4,
+    "partial": 1,
+    "awaiting": 5,
+    "kill": 0,
+    "predictions_rewritten": false
+  }
+}

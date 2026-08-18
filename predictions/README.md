@@ -1,6 +1,7 @@
 # FSOT predictions
 
-**This folder is the home for all preregistered predictions and monitor artifacts.**
+**This folder is the home for all preregistered predictions.**  
+**When a paper or catalog lands, record it in [`../results/`](../results/) — do not rewrite these locks.**
 
 ## Start here (human / X)
 
