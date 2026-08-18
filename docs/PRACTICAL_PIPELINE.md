@@ -11,7 +11,7 @@
 | Validation (Lean 2.1, benchmarks, reproducible code) | active | `python scripts/run_publication_verification_bundle.py` |
 | Demonstrate unification (X-style predictions + applied domains) | active | `python scripts/build_tier63_prereg_scaffold_benchmarks.py` |
 | Pseudoscience-had-physics gap → testable FSOT extensions | active | `python scripts/reconcile_founding_corpus.py` |
-| ~40 tech blueprints → verified panel crosswalk | active | `python scripts/build_tech_blueprints_registry.py` |
+| Founding philosophy → verified residual | active | `python scripts/reconcile_founding_corpus.py` |
 | Local owned systems (FluidLink-style, no cloud dependency) | active | `—` |
 | Recognition → application (Kaggle, R&D, family stability) | planned | `—` |
 
@@ -64,20 +64,14 @@ Older intuitive observations explicitly mapped:
 | hidden_thing_revealed | measured | PRED-001–041 locked manifest; skeptic replication kit 15-min path |
 | dual_identity_hybrid | scaffold | Living_FSOT_Hardware_Panel + consciousness lean route credibility |
 | local_sovereign_tech | policy | All reproduction offline-capable via vendor/ caches |
-| warp_and_portals_symbolic | interpretive | warp_bh_wh_portal benchmark green; numeric claims per-blueprint audit |
+| warp_and_portals_symbolic | interpretive | warp_bh_wh_portal benchmark green |
 | plasma_fusion_intuition | measured_partial | Tier 71 fusion panel + PRED-009–011 prereg scaffolds |
 
 Full map: [`data/intuitive_observation_fsot_map.yaml`](../data/intuitive_observation_fsot_map.yaml)
 
 Founding reconciliation: [`FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`](FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md)
 
-## 4. Tech blueprints (~24)
-
-**8/24** mapped to measured or partial-measured panels.
-
-Registry: [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](../data/publication/TECH_BLUEPRINTS_REGISTRY.md)
-
-## 5. Local owned systems (subscription-free counter-stack)
+## 4. Local owned systems (subscription-free counter-stack)
 
 - subscription free by design
 - data stays on device

@@ -1,7 +1,7 @@
 # FSOT Founding Lineage and Reconciliation
 
 **Author:** Damian Arthur Palumbo  
-**Founding archives:** `I:\fsuft aasb`, `I:\fsot tech`  
+**Founding theory archive:** `I:\fsuft aasb` (philosophy and literature search). Unpublished applied devices are not part of this public lineage.  
 **Verified successor:** FSOT 2.1 Lean (`I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full`)
 
 This document reconciles your **founding research** (Feb–Jul 2025, FSUFT-U 6.0–9.6) with the **non-hallucinated** FSOT 2.1 verification stack. Early work was co-authored with LLMs; some numeric claims and fitting methods are unreliable. The **philosophy and vision** remain authoritative; the **math engine** is what evolved.
@@ -16,7 +16,6 @@ This document reconciles your **founding research** (Feb–Jul 2025, FSUFT-U 6.0
 | FSUFT-U 9.2 | `FSUFT_U_9_2_unified_field_theory.md` | SCI action, 25D/4D Lagrangian, Simulation Bowl | Ontology + consciousness-in-action formalism |
 | FSUFT-U 9.6 | `Fluid_Spacetime_Unification_Field_Theory As above So below.md`, `fsuft-aasb.py` | Simplified scalar + **per-domain multiplier/base fit** | Domain taxonomy prototype (100+ topics) |
 | FSOT 2.0–2.1 | Desktop + `I:\` archive | `fsot_compute.py`, Lean 4, Coq, Isabelle, F*, Rust | **Ground truth** for training and certification |
-| Applied tech | `I:\fsot tech\` | Blueprints (warp, fusion, Aetherion, PPFG, …) | Engineering vision → extension panels |
 
 ---
 
@@ -31,7 +30,6 @@ These founding ideas are **correct in FSOT** and must appear in any LLM trained 
 5. **First-principles ambition** — zero free parameters as design law (now **enforced** in 2.1).
 6. **Cross-domain truth** — breadth + precision beats single-lab consensus.
 7. **Proto-fluid patterns** — language, myth, and symbol as compression of the same medium (interpretive tier).
-8. **Applied FSOT** — tech blueprints express the same physics at engineering scale (verify before "measured").
 
 ---
 
@@ -96,27 +94,13 @@ Train the model to quote **both**: your founding intuition (retained) and the ve
 
 ---
 
-## 6. `I:\fsot tech` — Blueprint Reconciliation
+## 6. How to Re-Verify a Founding Claim
 
-~40 engineering blueprints (warp drive, SPFR, Aetherion, QVEH, Perpetual Flux Generator, …).
-
-| Tier | Treatment |
-|------|-----------|
-| **Vision / philosophy** | Retain — shows how you extend fluid spacetime to machines |
-| **Numeric claims** | Re-derive through `strict_empirical.jsonl` or domain benchmark before training as fact |
-| **Lean mapping** | propulsion → `tier39_propulsion_electrical`; fusion → fuel_lab; warp → `warp_bh_wh_portal` |
-
-Example: **Palumbo Perpetual Flux Generator** — DIY generator spec; FSOT connection is unified-field *inspiration*, not a certified cosmology prediction. Tag: `epistemic_tier: interpretive`.
-
----
-
-## 7. How to Re-Verify a Founding Claim
-
-Workflow for going back through founding docs:
+Workflow for going back through founding theory docs:
 
 ```
-1. Extract claim from I:\fsuft aasb or I:\fsot tech
-2. Classify: philosophy | numeric | engineering blueprint
+1. Extract claim from I:\fsuft aasb
+2. Classify: philosophy | numeric
 3. If numeric → map to domain in extension_domains_manifest.yaml
 4. Run: python scripts/fsot_verification_runner.py (or domain-specific benchmark script)
 5. If PASS → add to strict_empirical or panel benchmark; tag epistemic_tier: measured
@@ -126,7 +110,7 @@ Workflow for going back through founding docs:
 
 ---
 
-## 8. LLM Training Order (Updated)
+## 7. LLM Training Order (Updated)
 
 1. `vendor/philosophy_corpus/fsot_philosophy_training.jsonl` (verified spine)
 2. `vendor/philosophy_corpus/fsot_founding_reconciled.jsonl` (this reconciliation + founding text with caveats)
@@ -137,7 +121,7 @@ Workflow for going back through founding docs:
 
 ---
 
-## 9. Registry and Automation
+## 8. Registry and Automation
 
 - Machine-readable map: `data/founding_concepts_registry.yaml`
 - Harvest founding + verified pairs: `python scripts/reconcile_founding_corpus.py`

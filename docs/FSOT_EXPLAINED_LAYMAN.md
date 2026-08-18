@@ -107,8 +107,7 @@ Positive **S** tends toward **emergence** (structure forming). Negative **S** te
 
 Early private research drafts live only offline on the author’s systems. They are **not** the public numeric authority.  
 For the public viewpoint in plain language, see **`docs/FSOT_NARRATIVE_CORE.md`**.
-- 35 founding physics laws  
-- Dozens of engineering blueprints (warp concepts, fusion, generators)  
+- 35 founding physics laws
 
 **Important:** accuracy percentages in those old documents are **not trusted** unless individually re-verified. Early code sometimes fit hidden multipliers to hit targets. FSOT 2.1 removed that.
 
@@ -137,14 +136,6 @@ Full detail: `docs/FOUNDING_35_LAWS_AUDIT.md`
 
 Certificate: `data/certificate.json`  
 Founding gate: `data/founding_corpus_verification.json`
-
----
-
-## Engineering visions (`I:\fsot tech`)
-
-Blueprints (Perpetual Flux Generator, warp drive concepts, seawater fusion, Aetherion, etc.) express **how you extend fluid spacetime into machines**. They are part of the creative lineage.
-
-**For readers:** treat blueprints as design explorations until a specific numeric claim appears in the verified corpus. The philosophy transfers; every watt and every efficiency percentage must earn its place in FSOT 2.1.
 
 ---
 
