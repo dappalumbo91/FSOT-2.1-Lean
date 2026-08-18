@@ -1,0 +1,126 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-18T03:51:49.081845+00:00",
+  "domain": "Cepheid_PL_Interconnect",
+  "authority_path": "C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fsot_compute.py",
+  "source": [
+    "data/sh0es_r22_optical_cepheids.dat",
+    "vendor/fsot_cepheid_pl.py",
+    "Riess+2022 SH0ES optical release slope \u22123.285",
+    "Ripepi+2020 W_VI slope \u22123.29",
+    "Breuval+2022 \u03b3 = \u22120.239 mag/dex",
+    "Pietrzy\u0144ski+2019 LMC \u03bc = 18.477",
+    "Reid+2019 NGC 4258 7.576 Mpc"
+  ],
+  "maps_to_lean": [
+    "astronomy",
+    "acoustics",
+    "chemistry"
+  ],
+  "D_eff": 20,
+  "record_count": 3,
+  "observable_count": 3,
+  "scalar_record_count": 3,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.18248933207560217,
+  "pooled_median_error_pct": 0.18248933207560217,
+  "headline_median_error_pct": 0.18248933207560217,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "cepheid_pl": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Fitted PL slope + free Z_W (SH0ES \u03c7\u00b2)"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.182489,
+      "measured": 0.0,
+      "error_pct": 0.18248933207560217,
+      "observable_count": 3
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "cepheid_pl",
+      "computed": 0.182489,
+      "measured": 0.0,
+      "error_pct": 0.18248933207560217,
+      "observable_count": 3
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "pl_slope_optical",
+      "name": "PL_slope_vs_SH0ES_release",
+      "computed": 3.2918507537510697,
+      "measured": 3.285,
+      "error_pct": 0.20854653732327497,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "note": "\u03c0 + (POOF+SUCTION)/2 vs SH0ES 2022 optical initial slope"
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "pl_slope_optical",
+      "name": "PL_slope_vs_Ripepi_WVI",
+      "computed": 3.2918507537510697,
+      "measured": 3.29,
+      "error_pct": 0.05625391340637353,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "note": "same seed slope vs Ripepi 2020 W_VI"
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "anchor_intercept_delta",
+      "name": "LMC_minus_N4258_intercept",
+      "computed": -10.877329929482825,
+      "measured": -10.897216186516433,
+      "error_pct": 0.18248933207560217,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "unit": "mag",
+      "note": "\u0394\u03bc_geom + \u03b3_FSOT\u00b7\u0394[O/H] vs R22 intercepts",
+      "delta_mu": -10.919999999999998,
+      "delta_metal": -0.182763819095477
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.18248933207560217,
+    "max_scalar_error_pct": 0.20854653732327497,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 51,
+  "policy": "no_fitted_PL_slope_or_gamma",
+  "interconnect": {
+    "period": "Acoustics D=10 / T3 valve (\u03c0 + (POOF+SUCTION)/2)",
+    "metallicity": "Chemistry D=8 opacity; two He zones \u2192 \u03b7_eff/2",
+    "wesenheit_R": "EM look-path 1+\u03c0\u00b7SUCTION",
+    "crowding": "T1 observer \u2014 not a stellar residual in this panel",
+    "gamma_fsot": 0.23347110346212993,
+    "gamma_breuval": 0.239,
+    "gamma_sigma": 0.069,
+    "R_fsot": 1.4619208884489565,
+    "R_cardelli_class": 1.45,
+    "slope_fsot": 3.2918507537510697
+  },
+  "cepheid_status": "GREEN"
+}

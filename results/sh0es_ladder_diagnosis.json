@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T03:46:04.089342+00:00",
+  "generated_at": "2026-08-18T03:52:03.724700+00:00",
   "pin": "D1D38A",
   "policy": "do_not_retune_rho_to_hit_73.04",
   "h0_global": 68.44005682979427,
@@ -286,11 +286,12 @@
     }
   ],
   "unsolved": [
-    "cepheid_PL_metallicity_crowding_inside_SN_hosts",
-    "no_per_host_published_H0_to_score_sightlines_individually"
+    "no_per_host_published_H0_to_score_sightlines_individually",
+    "NIR_wesenheit_W_H_primary_candle"
   ],
   "filled": [
     "ladder_chain_information_weighted_mixture",
-    "host_local_angular_sky_density"
+    "host_local_angular_sky_density",
+    "cepheid_PL_slope_gamma_intercept"
   ]
 }

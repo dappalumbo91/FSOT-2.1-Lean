@@ -2348,6 +2348,19 @@ extension_domains:
     build_script: scripts/build_sh0es_ladder_chain_benchmark.py
     benchmark_data: data/sh0es_ladder_chain_benchmark.json
     note: Published SH0ES H0 as information-weighted anchor+host mixture; local sky density; frozen class ρ not retuned
+  Cepheid_PL_Interconnect:
+    tier: 51
+    D_eff: 20
+    delta_psi: 1.0
+    recent_hits: 1
+    observed: true
+    maps_to_lean:
+    - astronomy
+    - acoustics
+    - chemistry
+    build_script: scripts/build_cepheid_pl_benchmark.py
+    benchmark_data: data/cepheid_pl_interconnect_benchmark.json
+    note: Seed-closed PL slope + LMC/N4258 intercept; no fitted b or Z_W
   Consciousness_Soul_Bridge:
     tier: 51
     D_eff: 17

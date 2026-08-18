@@ -77,10 +77,10 @@ The Cepheid *family* is the outlier cluster (SH0ES HST 1.00%, SH0ES JWST 1.08%, 
 
 ## What we are still not solving for
 
-Filled this pass: the ladder mixture (item 1) and host-local sky density (item 3). Still labeled:
+Filled this pass: ladder mixture, host-local sky, and Cepheid PL interconnects (`CEPHEID_PL_PHYSICS.md`). Still labeled:
 
-1. **Cepheid PL internals** — metallicity term, crowding, Wesenheit slope. R22 optical table is on disk; the PL itself is not residual-gated yet.
-2. **No per-host published H₀.** Riess publishes the ladder average. We cannot kill a single host row until a paper gives host-level H₀.
+1. **No per-host published H₀.** Riess publishes the ladder average.
+2. **NIR Wesenheit \(W_H\)** — optical table only. Crowding stays T1.
 
 ---
 
@@ -91,7 +91,7 @@ Filled this pass: the ladder mixture (item 1) and host-local sky density (item 3
 | Set ρ = 4.3556 to hit 73.04 | Forbidden LSQ. That is stuffing SH0ES into the 0.5% gate. |
 | Average 67.4 and 73.04 and call it H₀ | Two sectors, one fluid. PRED-001 is the *bridge*, not a third cosmology. |
 | Blame “SH0ES is wrong” | 0.73 km/s/Mpc is 0.7σ of ±1.04. The class bin is coarse, not a failed pin. |
-| Invent a Cepheid metallicity knob | Change the *interface* (mixture / host ρ), not a new seed. |
+| Invent a Cepheid metallicity knob | eta_eff/2 is seed-closed; do not LSQ Z_W on R22. |
 
 ---
 
