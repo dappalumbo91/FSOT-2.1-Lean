@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-08-18T01:30:00.407510+00:00",
+  "suite": "h0_tension",
+  "pin": "D1D38A",
+  "pin_file_edited": false,
+  "overall_ok": true,
+  "wall_seconds": 3.950000973418355e-05,
+  "authority": "FSOT-2.1-Lean black_hole_white_hole_bubble_bleed",
+  "authority_urls": [
+    "https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/scripts/bubble_bleed_physics.py",
+    "https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/predictions/h0_multi_tool_predictions.json",
+    "https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/README.md"
+  ],
+  "h0_global": 68.44005682979429,
+  "bubble_bleed_fraction": 0.01543111023433652,
+  "policy": "one global rate; tools differ by BH\u2192WH bubble-density sector",
+  "rows": [
+    {
+      "id": "global",
+      "question": "What is the FSOT global H0 (wave1 Cosmology)?",
+      "mechanism": "S(Cosmology) wave1 \u2014 not a tool readout",
+      "density": 0.0,
+      "fold": 68.44005682979429,
+      "published": 68.44005682979429,
+      "rel_pct": 0.0,
+      "ok": true,
+      "role": "single fluid rate; tools sit off this by bubble density"
+    },
+    {
+      "id": "Planck",
+      "question": "What is H0 (Planck CMB / depleted BH\u2192WH sector)?",
+      "mechanism": "H0_global\u00b7(1 + (\u22121)\u00b7bleed_frac)",
+      "density": -1.0,
+      "fold": 67.38395076840948,
+      "published": 67.4,
+      "published_unc": 0.5,
+      "rel_pct": 0.023811916306422452,
+      "sigma": 0.03209846318105747,
+      "ok": true,
+      "role": "early-universe acoustic scale; depleted outgassing sector"
+    },
+    {
+      "id": "SH0ES",
+      "question": "What is H0 (SH0ES / inflated local-bubble sector)?",
+      "mechanism": "H0_global\u00b7(1 + 5.05\u00b7bleed_frac)",
+      "density": 5.05,
+      "fold": 73.7733924397876,
+      "published": 73.04,
+      "published_unc": 1.04,
+      "rel_pct": 1.0040969876609984,
+      "sigma": 0.7051850382573012,
+      "ok": true,
+      "role": "Cepheid + SN Ia local ladder; inflated BH\u2192WH outgassing sector"
+    }
+  ],
+  "neighbor_not_authority": {
+    "Particle_Astrophysics_H0": 73.34212110352536,
+    "note": "D_eff 24 neighbor of Cosmology; not the Lean BH\u2192WH tool formula"
+  }
+}

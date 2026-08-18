@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-08-18T01:49:34.443925+00:00",
+  "authority_pin_prefix": "D1D38A",
+  "hub": "FSOT-2.1-Lean",
+  "siblings": {
+    "genetics": {
+      "root": "C:\\Users\\damia\\Desktop\\FSOT-Genetics",
+      "url": "https://github.com/dappalumbo91/FSOT-Genetics",
+      "files": [
+        {
+          "src": "data/product_vs_alphafold.json",
+          "dest": "results\\siblings\\genetics\\product_vs_alphafold.json",
+          "ok": true,
+          "bytes": 3457
+        },
+        {
+          "src": "docs/PRODUCT_FREEZE.md",
+          "dest": "results\\siblings\\genetics\\PRODUCT_FREEZE.md",
+          "ok": true,
+          "bytes": 3130
+        },
+        {
+          "src": "data/af_coverage.json",
+          "dest": "results\\siblings\\genetics\\af_coverage.json",
+          "ok": true,
+          "bytes": 7616
+        }
+      ]
+    },
+    "quantum": {
+      "root": "C:\\Users\\damia\\Desktop\\fsot quantum",
+      "url": "https://github.com/dappalumbo91/FSOT-Quantum",
+      "files": [
+        {
+          "src": "docs/STATUS.md",
+          "dest": "results\\siblings\\quantum\\STATUS.md",
+          "ok": true,
+          "bytes": 13093
+        },
+        {
+          "src": "docs/H0_TENSION.md",
+          "dest": "results\\siblings\\quantum\\H0_TENSION.md",
+          "ok": true,
+          "bytes": 1737
+        },
+        {
+          "src": "docs/CONCEPTS.md",
+          "dest": "results\\siblings\\quantum\\CONCEPTS.md",
+          "ok": true,
+          "bytes": 3828
+        },
+        {
+          "src": "results/h0_tension.json",
+          "dest": "results\\siblings\\quantum\\h0_tension.json",
+          "ok": true,
+          "bytes": 2245
+        },
+        {
+          "src": "results/contested_sectors.json",
+          "dest": "results\\siblings\\quantum\\contested_sectors.json",
+          "ok": true,
+          "bytes": 4336
+        },
+        {
+          "src": "results/FOLD_NOT_HILBERT.md",
+          "dest": "results\\siblings\\quantum\\FOLD_NOT_HILBERT.md",
+          "ok": true,
+          "bytes": 1557
+        }
+      ]
+    }
+  },
+  "headlines": {
+    "pin": "D1D38A",
+    "genetics_product": {
+      "n": 10,
+      "fsot_product_median_A": 0.12847815425974882,
+      "alphafold_median_A": 0.4706172512401575,
+      "fsot_bulk_median_A": 13.574035917440511,
+      "product_sub2A": 10,
+      "free_parameters": 0,
+      "freeze": "2026-08-13"
+    },
+    "quantum_h0_bubble": {
+      "overall_ok": true,
+      "h0_global": 68.44005682979429,
+      "bubble_bleed_fraction": 0.01543111023433652,
+      "policy": "one global rate; tools differ by BH\u2192WH bubble-density sector"
+    },
+    "quantum_contested": {
+      "n_ok": 14,
+      "n": 14,
+      "overall_ok": true
+    }
+  }
+}

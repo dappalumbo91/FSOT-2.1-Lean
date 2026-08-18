@@ -48,6 +48,19 @@ Re-run: `python scripts/audit_all_benchmark_margins.py`
 
 Snapshot: [`monitor/PREDICTION_MONITOR.md`](monitor/PREDICTION_MONITOR.md)
 
+## Sibling folds (same pin, pulled in)
+
+Headline copies from Genetics + Quantum: [`siblings/INDEX.md`](siblings/INDEX.md)
+
+| Fold | Headline |
+|------|----------|
+| Genetics product | 0.13 Å median vs AF 0.47 Å (10 proteins, 2026-08-13) |
+| Genetics bulk | ~13.6 Å — orphan ceiling, not the product |
+| Quantum H₀ | BH→WH replay: Planck 0.024%, SH0ES 1.00% |
+| Quantum folds | 27/27 fold-not-Hilbert jobs |
+
+Refresh: `python scripts/sync_sibling_embodiment_ledgers.py`
+
 ## Next calendar kills
 
 | When | What | PRED |

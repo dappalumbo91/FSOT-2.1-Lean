@@ -26,8 +26,8 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 
 | You are… | Start with |
 |----------|------------|
-| Curious lay reader | [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) |
-| Working scientist / engineer | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) |
+| Curious lay reader | [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) → [`CONCEPTS.md`](CONCEPTS.md) |
+| Working scientist / engineer | [`CONCEPTS.md`](CONCEPTS.md) → [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) |
 | PhD / formal methods | Math key §14 + [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) |
 | Here to break it | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
 
@@ -55,8 +55,10 @@ Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 | Lean formal | `FSOT/Formal/` | Master integrator |
 | Multiprover | `verification/{coq,isabelle,fstar,rust,smt,tla,qemu,esp32}/` | Independent residual / structure checks |
 | Domain data | `data/*_benchmark.json` | Residual panels |
+| Concepts (BH/WH, bubble, folds) | [`docs/CONCEPTS.md`](CONCEPTS.md) | Picture → engine map — read this before the atlas |
 | Predictions (frozen) | `predictions/` | Timestamped / SHA-locked forecasts |
 | Results (outcomes) | `results/` | Literature + API outcomes after data lands |
+| Sibling ledgers | `results/siblings/` | Genetics product + Quantum fold headlines pulled into this hub |
 | Docs | `docs/` | Human claims and runbooks |
 | Hardware / OS path | this file § Machine stack + [`NEURON_ZIG_TO_OS_ROADMAP.md`](NEURON_ZIG_TO_OS_ROADMAP.md) | Embodiment → OS |
 

@@ -1,0 +1,157 @@
+{
+  "timestamp": "2026-08-18T01:33:52.871818+00:00",
+  "suite": "contested_sectors",
+  "pin": "D1D38A",
+  "pin_file_edited": false,
+  "overall_ok": true,
+  "wall_seconds": 0.027533399988897145,
+  "n": 14,
+  "n_ok": 14,
+  "h0_global": 68.44005682979429,
+  "bubble_bleed_fraction": 0.01543111023433652,
+  "lean_closure_present": true,
+  "lean_verdict": "CONTESTED_SECTORS_FSOT_AHEAD_OF_CURRENT_MODELS",
+  "authority": "FSOT-2.1-Lean contested + BH\u2192WH bubble-bleed",
+  "rows": [
+    {
+      "name": "H0_Planck_CMB",
+      "formula": "H0_global\u00b7(1 \u2212 bleed)",
+      "fold": 67.38395076840948,
+      "published": 67.4,
+      "rel_pct": 0.023811916306422452,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "BH\u2192WH depleted"
+    },
+    {
+      "name": "H0_SH0ES",
+      "formula": "H0_global\u00b7(1 + 5.05\u00b7bleed)",
+      "fold": 73.7733924397876,
+      "published": 73.04,
+      "rel_pct": 1.0040969876609984,
+      "gate_pct": 2.5,
+      "ok": true,
+      "source": "BH\u2192WH inflated"
+    },
+    {
+      "name": "H0_Carnegie",
+      "formula": "H0_global\u00b7(1 + 2.04\u00b7bleed)",
+      "fold": 70.5945131950193,
+      "published": 69.8,
+      "rel_pct": 1.1382710530362548,
+      "gate_pct": 2.5,
+      "ok": true,
+      "source": "BH\u2192WH intermediate"
+    },
+    {
+      "name": "r_c_Fornax_kpc",
+      "formula": "\u03b7_eff\u00b7\u03c6 \u2212 POOF",
+      "fold": 0.6020461466908882,
+      "published": 0.6,
+      "rel_pct": 0.34102444848136776,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "Lean cusp-core"
+    },
+    {
+      "name": "Lithium_problem_factor",
+      "formula": "\u03c0\u00b7C_eff",
+      "fold": 3.008710204079519,
+      "published": 3.0,
+      "rel_pct": 0.29034013598396113,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "Lean BBN"
+    },
+    {
+      "name": "m_H_GeV",
+      "formula": "(\u03b8_S + e\u00b3)/C_factor\u2077 / 1000",
+      "fold": 125.20001875723796,
+      "published": 125.25,
+      "rel_pct": 0.03990518384195136,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "Lean hierarchy"
+    },
+    {
+      "name": "S_8",
+      "formula": "\u03c8_con/\u221a\u03b3",
+      "fold": 0.8320144347134201,
+      "published": 0.832,
+      "rel_pct": 0.0017349415168399496,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "vendor wave8"
+    },
+    {
+      "name": "N_eff",
+      "formula": "P_new\u00b7e\u00b7\u03c0 + ln(\u03c6)",
+      "fold": 3.045713454288361,
+      "published": 3.046,
+      "rel_pct": 0.009407278780006465,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "vendor wave2"
+    },
+    {
+      "name": "Omega_Lambda",
+      "formula": "S_quant/e + \u03b3\u00b2",
+      "fold": 0.6846890475252997,
+      "published": 0.6847,
+      "rel_pct": 0.0015996019717084266,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "vendor wave2"
+    },
+    {
+      "name": "sigma_8",
+      "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
+      "fold": 0.8111240047382514,
+      "published": 0.8111,
+      "rel_pct": 0.00295952881905694,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "vendor wave2"
+    },
+    {
+      "name": "tau_reion",
+      "formula": "\u03c6\u00b7|Chaos| \u2212 ln(\u03c6)",
+      "fold": 0.05439655350230806,
+      "published": 0.0544,
+      "rel_pct": 0.006335473698407175,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "vendor wave2"
+    },
+    {
+      "name": "D_H_ratio",
+      "formula": "1/(\u03c0\u2074\u00b7e\u2076)",
+      "fold": 2.5446825859417006e-05,
+      "published": 2.547e-05,
+      "rel_pct": 0.09098602506082563,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "vendor wave5"
+    },
+    {
+      "name": "w0",
+      "formula": "\u2212P_new\u00b7\u03c0/G",
+      "fold": -1.0299812921372637,
+      "published": -1.03,
+      "rel_pct": 0.0018162973530366992,
+      "gate_pct": 0.5,
+      "ok": true,
+      "source": "vendor wave4"
+    },
+    {
+      "name": "alpha_s(M_Z)",
+      "formula": "1/(e\u00b7\u03c0)",
+      "fold": 0.11709966304863832,
+      "published": 0.1179,
+      "rel_pct": 0.6788269307563042,
+      "gate_pct": 0.9,
+      "ok": true,
+      "source": "vendor wave1"
+    }
+  ]
+}

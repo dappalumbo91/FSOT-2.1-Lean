@@ -1,10 +1,15 @@
 # FSOT vs AlphaFold — structure head-to-head
 
+> **Stale snapshot (2026-08-07).** This file is the **sequence-only bulk / orphan** path (~15 Å median).  
+> Current **product** freeze (same-data homologs, 2026-08-13) lives in [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics): median **0.13 Å** vs AlphaFold **0.47 Å** on 10 proteins.  
+> Hub copy: [`../../results/siblings/genetics/PRODUCT_FREEZE.md`](../../results/siblings/genetics/PRODUCT_FREEZE.md).  
+> Do not quote this 15 Å table as the Genetics product.
+
 *Generated 2026-08-07T01:24:11.218913+00:00*
 
 ## Mission
 
-FSOT sequence-only structure prediction vs AlphaFold, scored on experimental PDB Cα RMSD
+FSOT sequence-only **bulk** structure prediction vs AlphaFold, scored on experimental PDB Cα RMSD
 
 - Engine: `fsot_protein_F01_F15_fast_v7` · **free parameters: 0**
 - Metric: Cα RMSD (Å) after Kabsch alignment to experimental PDB (lower is better)

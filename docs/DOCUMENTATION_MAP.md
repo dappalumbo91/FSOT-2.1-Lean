@@ -10,8 +10,8 @@
 
 | Audience | Start here | Then | Depth / tone |
 |----------|------------|------|----------------|
-| **Layman** (curious, no degree required) | [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) | [`FSOT_NARRATIVE_CORE.md`](FSOT_NARRATIVE_CORE.md) → [`START_HERE.md`](START_HERE.md) | Stories, metaphors, honest non-claims |
-| **Scientist / engineer** | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) | Full [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) → [`FSOT_SYSTEM_MATH_AUDIT.md`](FSOT_SYSTEM_MATH_AUDIT.md) → [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) | Seeds, residual law, gates, commands |
+| **Layman** (curious, no degree required) | [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) | [`CONCEPTS.md`](CONCEPTS.md) (BH→WH + bubble) → [`FSOT_NARRATIVE_CORE.md`](FSOT_NARRATIVE_CORE.md) | Stories mapped to the engine |
+| **Scientist / engineer** | [`CONCEPTS.md`](CONCEPTS.md) | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) → [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) | Seeds, residual law, folds, gates |
 | **PhD / formal methods** | [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md) | [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §0–3 + hierarchy · [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) · [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · Lean `FSOT/Formal/Scalar.lean` · machine `data/fsot_building_block_hierarchy.json` | Layers A/B/C, building-block network, what is *proved* vs residual-gated |
 
 Everyone who will **run code** also reads [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) or the skeptic kit.
@@ -75,4 +75,4 @@ Frozen criteria: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 
 ## Related embodiments (same pin)
 
-[`../RELATED_EMBODIMENTS.md`](../RELATED_EMBODIMENTS.md) — Zig mind, neural monorepo, GPU operators. Do not evaluate one without the pin story.
+[`../RELATED_EMBODIMENTS.md`](../RELATED_EMBODIMENTS.md) — Genetics, Quantum, Zig mind, neural monorepo, GPU operators. Do not evaluate one without the pin story. Pulled headlines: [`../results/siblings/INDEX.md`](../results/siblings/INDEX.md). Picture→engine: [`CONCEPTS.md`](CONCEPTS.md).

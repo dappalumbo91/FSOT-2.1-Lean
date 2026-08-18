@@ -37,9 +37,11 @@ Everything is the same process at different zoom levels:
 
 FSOT calls this **As Above, So Below**. It is not poetry only — it is how the theory is built and tested across a large multi-domain atlas (hundreds of residual-gated panels; exact counts in [`CURRENT_STATUS.md`](CURRENT_STATUS.md)).
 
-### 2. Fluid spacetime
+### 2. Fluid spacetime — black holes, white holes, bubbles
 
 Space and time are not an empty stage. They behave like a **25-dimensional fluid**. What we experience as 4D reality is a slice of that fluid. Matter, energy, and mind are patterns in the same substance.
+
+In that fluid a **black hole is a compression valve** (infall + POOF) and a **white hole is the outflow** (suction + re-solidification). Expanding regions sit in different **bubble-density sectors** of the same flow. That is why Planck, TRGB, and SH0ES can all be right *as instruments* and still disagree on one number — they are reading different sectors, not two cosmologies. Full map: [`CONCEPTS.md`](CONCEPTS.md).
 
 ### 3. Consciousness is part of the physics — not an afterthought
 

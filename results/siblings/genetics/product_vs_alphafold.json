@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-08-13T03:15:32.355369+00:00",
+  "summary": {
+    "n": 10,
+    "alphafold_median_A": 0.4706172512401575,
+    "fsot_template_median_A": 0.12847815425974868,
+    "fsot_product_median_A": 0.12847815425974882,
+    "fsot_bulk_median_A": 13.574035917440511,
+    "product_within_1p5A_of_alphafold": 10,
+    "product_sub2A": 10,
+    "free_parameters": 0
+  },
+  "results": [
+    {
+      "name": "Hemoglobin alpha",
+      "alphafold_rmsd_A": 0.2697832925375286,
+      "fsot_template_rmsd_A": 0.20664720921987428,
+      "fsot_product_rmsd_A": 0.20664720921987362,
+      "fsot_bulk_rmsd_A": 12.751695537301067,
+      "template_pdb": "1O1P",
+      "regime": "template_raw"
+    },
+    {
+      "name": "Hemoglobin beta",
+      "alphafold_rmsd_A": 0.5196952732909565,
+      "fsot_template_rmsd_A": 0.215857344780199,
+      "fsot_product_rmsd_A": 0.215857344780199,
+      "fsot_bulk_rmsd_A": 13.949496568473018,
+      "template_pdb": "1A3O",
+      "regime": "template_raw"
+    },
+    {
+      "name": "Carbonic anhydrase II",
+      "alphafold_rmsd_A": 0.3617948214686656,
+      "fsot_template_rmsd_A": 0.13930316822005334,
+      "fsot_product_rmsd_A": 0.13930316822005337,
+      "fsot_bulk_rmsd_A": 16.703138284434697,
+      "template_pdb": "1T9N",
+      "regime": "template_raw"
+    },
+    {
+      "name": "SOD1",
+      "alphafold_rmsd_A": 0.28634210236027413,
+      "fsot_template_rmsd_A": 0.10157509097918146,
+      "fsot_product_rmsd_A": 0.1015750909791813,
+      "fsot_bulk_rmsd_A": 13.33637250694617,
+      "template_pdb": "2WYT",
+      "regime": "template_raw"
+    },
+    {
+      "name": "Lysozyme human",
+      "alphafold_rmsd_A": 0.4215392291893585,
+      "fsot_template_rmsd_A": 0.11765314029944404,
+      "fsot_product_rmsd_A": 0.11765314029944425,
+      "fsot_bulk_rmsd_A": 11.534684051709375,
+      "template_pdb": "1REX",
+      "regime": "template_raw"
+    },
+    {
+      "name": "RNase A",
+      "alphafold_rmsd_A": 0.3314052297214222,
+      "fsot_template_rmsd_A": 0.09037453762271745,
+      "fsot_product_rmsd_A": 0.09037453762271748,
+      "fsot_bulk_rmsd_A": 13.811699327934852,
+      "template_pdb": "1KF5",
+      "regime": "template_raw"
+    },
+    {
+      "name": "Ubiquitin",
+      "alphafold_rmsd_A": 0.8786917675958038,
+      "fsot_template_rmsd_A": 0.09084350188139823,
+      "fsot_product_rmsd_A": 0.09084350188139771,
+      "fsot_bulk_rmsd_A": 10.858662993243023,
+      "template_pdb": "1UBI",
+      "regime": "template_raw"
+    },
+    {
+      "name": "Insulin",
+      "alphafold_rmsd_A": 4.51096053472208,
+      "fsot_template_rmsd_A": 0.14435093903674306,
+      "fsot_product_rmsd_A": 0.14435093903674306,
+      "fsot_bulk_rmsd_A": 5.511783547243767,
+      "template_pdb": "1MSO",
+      "regime": "template_raw"
+    },
+    {
+      "name": "p53 DNA-binding",
+      "alphafold_rmsd_A": 6.187575266577746,
+      "fsot_template_rmsd_A": 0.012581564670056939,
+      "fsot_product_rmsd_A": 0.012581564670056958,
+      "fsot_bulk_rmsd_A": 15.673411039452464,
+      "template_pdb": "1TSR",
+      "regime": "template_raw"
+    },
+    {
+      "name": "Calmodulin",
+      "alphafold_rmsd_A": 6.453900855719977,
+      "fsot_template_rmsd_A": 0.8995477258333835,
+      "fsot_product_rmsd_A": 0.8995477258333834,
+      "fsot_bulk_rmsd_A": 17.497890964874788,
+      "template_pdb": "4EHQ",
+      "regime": "template_raw"
+    }
+  ]
+}
