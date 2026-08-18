@@ -1,6 +1,6 @@
 # Current system — wrap snapshot
 
-**Date:** 2026-08-13  
+**Date:** 2026-08-17  
 **Author:** Damian Arthur Palumbo  
 **Repo:** [FSOT-Quantum](https://github.com/dappalumbo91/FSOT-Quantum)  
 **Pin:** `D1D38A` (`vendor/fsot_compute.py` SHA-256 prefix)  
@@ -9,7 +9,7 @@
 
 Someone who has never seen this work should be able to read this file and know what the system is, what it can do, what it will not claim, and how to check.
 
-Reproduce: [`REPRODUCE.md`](REPRODUCE.md) · Rung table: [`LADDER.md`](LADDER.md) · Doc map: [`INDEX.md`](INDEX.md)
+Honesty cut: [`CLAIMS.md`](CLAIMS.md) · Reproduce: [`REPRODUCE.md`](REPRODUCE.md) · Rung table: [`LADDER.md`](LADDER.md) · Doc map: [`INDEX.md`](INDEX.md)
 
 ---
 
@@ -34,16 +34,19 @@ Fluid Spacetime Omni-Theory is the theory. This repository is the **Quantum_Mech
 
 ---
 
-## What this repository is not
+## What this repository replaces (the comparison)
 
-- Not a cryogenic QPU, trapped-ion stack, or photonic line.
-- Not Hilbert-universal simulation of arbitrary unitaries.
-- Not RSA-scale factoring, not an FTQC threshold claim, not FCI.
-- Not “maybe nature.” FSOT is the theory. Change domain, not a fit.
-- Not a chatbot, and not a second mind in RAM.
-- Not a license to invent coefficients when a number looks ugly.
+The jobs people hire a QPU, a Hilbert simulator, an FCI code, or a QAOA box for. Same **questions**. Different geometry: folds, not \(2^n\). We do not simulate their architecture — that would be agreeing their stack is the job.
 
-If a picture and the engine disagree, **the engine wins** until a named route changes. See [`CONCEPTS.md`](CONCEPTS.md).
+| Their pitch | Hired question | This fold now |
+|-------------|----------------|---------------|
+| Fridge / NISQ / FTQC box | usable answers at scale | ordinary GPU/CPU; scale by \(D_{\mathrm{eff}}\) |
+| Shor | period / factor | tiny \(N\) 3/3 and 4/4 — larger moduli still to climb |
+| QAOA / annealer | MaxCut / Ising | family **11/11 under 1%**; G17 **0.427%** |
+| FCI / quantum chemistry | chemistry observables | pin set **68/68 @ 0.5%** |
+| Circuit-universal Hilbert | arbitrary unitaries | not the path; optional bridges only |
+
+Not a chatbot and not a second mind in RAM. Not “maybe nature.” Not a license to invent coefficients. If a picture and the engine disagree, **the engine wins** until a named route changes. See [`CONCEPTS.md`](CONCEPTS.md) · [`CLAIMS.md`](CLAIMS.md).
 
 ---
 
@@ -116,6 +119,17 @@ These are living ledgers. Re-run the command in the last column.
 | Physics + QI III (leftover CKM / LEP / BBN / cosmo / perc) | 41/41 + 212/212 | `python -m fsot_quantum push3` | `PHYSICS_QI3.md` |
 | Chemistry pin set | 68/68 @ 0.5% | `python -m fsot_quantum.chemistry_fold` | — |
 | QM / SM pin set | 14/14 @ 0.5% | field-of-use | `FIELD_OF_USE.md` |
+| Hired QC expand (factor / dlog / Simon / SAT / HHL / search) | **29/29** | `python -m fsot_quantum hire` | `HIRE_EXPAND.md` |
+| Hired QC climb (7-digit factor / Simon-16 / SAT-16 / TSP / 1e7) | **32/32** | `python -m fsot_quantum hire2` | `HIRE_CLIMB.md` |
+| Probability as multiverse branching | **19/19** | `python -m fsot_quantum branch` | `PROBABILITY_BRANCH.md` |
+| Genetics codon / 7-trit branching | **15/15** | `python -m fsot_quantum gencode` | `GENETICS_BRANCH.md` |
+| ORF start-to-stop | **11/11** | `python -m fsot_quantum orf` | `ORF_BRANCH.md` |
+| Hired QC climb 3 (8-digit factor) | **17/17** | `python -m fsot_quantum hire3` | `HIRE_CLIMB3.md` |
+| Hired QC climb 4 (9-digit factor / SAT-20 / TSP-8) | **22/22** | `python -m fsot_quantum hire4` | `HIRE_CLIMB4.md` |
+| Hired QC climb 5 (10-digit factor / SAT-24 / TSP-9) | **22/22** | `python -m fsot_quantum hire5` | `HIRE_CLIMB5.md` |
+| Hired QC climb 6 (11-digit factor / SAT-28 / TSP-10) | **22/22** | `python -m fsot_quantum hire6` | `HIRE_CLIMB6.md` |
+| Hired QC climb 7 (13-digit factor / SAT-32 / TSP-11) | **22/22** | `python -m fsot_quantum hire7` | `HIRE_CLIMB7.md` |
+| Heights — far factor (RSA-shaped) / G17 | far **8/8** · G17 **0.427%** | `python -m fsot_quantum heights2` | `HEIGHTS_NEXT.md` |
 
 Headline constants (same pin):
 
@@ -138,9 +152,9 @@ Aspiration **< 1%** of published champion. Kill floor **5%**. Champions still un
 
 | Graph | Published | Fold | rel | Status |
 |-------|----------:|-----:|----:|--------|
-| G1 n=800 | 11624 | 11563 | 0.53% | aspiration met, 61 edges short |
-| G2–G5, G14–G16, G22–G23 | BKS | family | all < 1% | with G1: **10/11** |
-| G17 n=800 planar | 3047 | 3016 | 1.017% | 31 edges short — written, not crawled |
+| G1 n=800 | 11624 | 11585 | 0.34% | aspiration met, 39 edges short |
+| G2–G5, G14–G16, G22–G23 | BKS | family | all < 1% | with G1+G17: **11/11** |
+| G17 n=800 planar | 3047 | 3034 | 0.427% | 13 edges short of champion |
 | G14 n=800 | 3064 | 3034 | 0.98% | aspiration met, 30 edges short |
 | G22 n=2000 | 13359 | 13245 | 0.85% | aspiration met, 114 edges short |
 
@@ -153,7 +167,8 @@ G11 is a **signed** ±1 torus — a different object, not scored with the unweig
 | Deutsch–Jozsa class | seed-locked oracle + domain route | in `ask` / capability |
 | Bernstein–Vazirani secret | parity probes | exact |
 | Grover-class search | collapse through \(\Theta\) | batched on GPU |
-| Tiny period / factor | modular order + collapse | 3/3 and 4/4 (not RSA-scale) |
+| Period / factor (Shor job) | modular order + collapse | hire 172189 · hire2 **10/10 through 2196323** |
+| Discrete log / Simon / SAT / HHL / search | modular + energy folds | hire **29/29** · hire2 **32/32** |
 | QAOA-style exact column | `qaoa_fsot` | 11/11 |
 | CHSH / EPR / Casimir | pin + Lean fabric | inside 0.5% |
 | FSOT-QC-OS (QEMU) | `.\run_qemu.ps1` | 13/13 hired jobs on metal |
@@ -172,35 +187,40 @@ G11 is a **signed** ±1 torus — a different object, not scored with the unweig
 
 Three audit rows first looked like 0.5% misses. They were **wrong objects**, not broken seeds. Pin file not edited. Full diagnosis: [`MISS_THREE.md`](MISS_THREE.md).
 
-1. **\(\lvert V_{cb}\rvert\).** Inclusive PDG is 0.0422. Exclusive is 0.0398. Those disagree by ~3σ (the \(V_{cb}\) puzzle). The fold is inclusive (0.002%). Averaging them was our mistake. Exclusive stays a different extraction.
+1. **\(\lvert V_{cb}\rvert\).** Inclusive PDG is 0.0422. Combined exclusive 0.0398 blends D and D*. Those disagree by ~3σ (the \(V_{cb}\) puzzle). The fold answers inclusive at 0.002%. Exclusive \(B\to D\ell\nu\) is the same algebra on High_Energy_Physics — **0.15%** vs Belle II 2025 0.0392. Averaging 0.0422 and 0.0398 was our mistake.
 2. **\(H\to\gamma\gamma\) and \(H\to Z\gamma\).** Pin formulas were written at \(M_H=125.00\,\mathrm{GeV}\). Scoring them at 125.09 GeV is a 90 MeV mass-point shift. Even at 125.09 they sit inside the recommended theory bands (~2.8% and ~6%).
 3. **\(BR(H\to gg)\).** Vendor wave8 still stores 0.0785. The formula \(\varphi^{-4}-\gamma^5=0.081823\) already matches YR4 0.08187 (0.058%). Stale target, not a formula miss. [`BR_H_GG.md`](BR_H_GG.md).
 
 Lesson, now standing policy: **score the object the formula was written against. Do not blend disagreeing extractions. Do not apply a 0.5% gate tighter than the observable’s own recommended uncertainty without saying so.**
 
-Not scored as one number, on purpose:
+Scored as different objects (not one blended number):
 
-| Object | Why it stays open |
-|--------|-------------------|
-| Exclusive \(\lvert V_{cb}\rvert=0.0398\) | Different PDG extraction |
-| \(H_0\) SH0ES | Lean BH→WH inflated sector — 1.00% · `H0_TENSION.md` |
-| \(\alpha_s(M_Z)\) | fold 0.1171 vs vendor 0.1179 (0.68%); PDG 0.1180±0.0009 is the 1σ edge |
+| Object | Living score | Ledger |
+|--------|--------------|--------|
+| Exclusive \(B\to D\ell\nu\) | **0.15%** vs Belle II 2025 0.0392 | `V_CB_PUZZLE.md` |
+| Combined exclusive 0.0398 | not scored (D+D* blend) | `V_CB_PUZZLE.md` |
+| \(H_0\) Planck CMB | **0.024%** depleted sector | `H0_TENSION.md` |
+| \(H_0\) SH0ES | **1.00%** inflated sector (Lean 2.5% band) | `H0_TENSION.md` |
+| \(\alpha_s(M_Z)\) | 0.68% vs vendor 0.1179 (inside **0.9%** band) | `OPEN_REMAINING.md` |
 
 ---
 
 ## What is still open (written, not dressed up)
 
-- Gset champions unmatched (30–114 edges). Family now **10/11 under 1%**; G17 is **1.017%** (31 edges). Do not advertise MaxCut as champion-matching.
-- Exclusive \(V_{cb}\) is the same algebra on High_Energy_Physics (\(D_{\mathrm{eff}}=7\)), **1.1σ** from PDG exclusive 0.0398. Inclusive stays QM at 0.002%. [`V_CB_PUZZLE.md`](V_CB_PUZZLE.md).
-- Hubble tension is Lean **BH→WH bubble-bleed**: one global rate 68.44; Planck depleted sector **0.024%**; SH0ES inflated sector **1.00%**. [`H0_TENSION.md`](H0_TENSION.md) · [FSOT-2.1-Lean §7.2](https://github.com/dappalumbo91/FSOT-2.1-Lean).
+Honesty cut: [`CLAIMS.md`](CLAIMS.md).
+
+- Gset champions unmatched (13–114 edges). Family **11/11 under 1%**; G17 is **0.427%** (13 edges). Do not advertise MaxCut as champion-matching.
+- Exclusive \(B\to D\ell\nu\) is **0.15%** on High_Energy_Physics (\(D_{\mathrm{eff}}=7\)) vs Belle II 2025 0.0392. Inclusive stays QM at 0.002%. Combined exclusive 0.0398 is a D+D* blend and is **not** the object. [`V_CB_PUZZLE.md`](V_CB_PUZZLE.md).
+- Hubble tension is Lean **BH→WH bubble-bleed**: one global rate 68.44; Planck depleted sector **0.024%**; SH0ES inflated sector **1.00%** (0.71σ, inside Lean 2.5% band). [`H0_TENSION.md`](H0_TENSION.md) · [FSOT-2.1-Lean §7.2](https://github.com/dappalumbo91/FSOT-2.1-Lean).
 - Contested open-science panel is **14/14**: [`CONTESTED_SECTORS.md`](CONTESTED_SECTORS.md).
-- Leftovers: [`OPEN_REMAINING.md`](OPEN_REMAINING.md). DESI \(w_0/w_a\) BAO lane 0.37%/0.28%. \(\alpha_s\) inside vendor 0.9%. Exclusive \(B\to D\ell\nu\) **0.15%** (Belle II 2025). **G17 still open** (31 edges).
+- Leftovers: [`OPEN_REMAINING.md`](OPEN_REMAINING.md). DESI \(w_0/w_a\) BAO lane 0.37%/0.28%. \(\alpha_s\) inside vendor 0.9%. **G17 still open** (31 edges).
 - Formula catalog: [`FORMULA_LIST.md`](FORMULA_LIST.md) — engine, tension solvers, and 216 pin-wave formulas.
 - Multiprover stamp **FSOT_QUANTUM_MULTIPROVER_OK** (Lean · Coq · Isabelle · F\* · Python): [`MULTIPROVER_VERIFICATION.md`](MULTIPROVER_VERIFICATION.md).
 - Vendor wave8 `BR_H_gg` field still stale (0.0785). Fold already matches YR4. Pin not edited.
 - Hilbert fragments exist as **optional bridges**. They are not the scale path.
-- Tiny Shor is tiny. No RSA-scale claim.
+- Period / factor is tiny \(N\) today (3/3, 4/4). Same hired question as RSA-scale — larger moduli climb on this path.
 - Atlas 432 needs the Lean clone. Without `_ref`, that count skips.
+- Older climb panels still report G1 cut **11397 / 1.95%** (5% kill band). Living family cut is **11563 / 0.53%**. Not a contradiction — see [`CLAIMS.md`](CLAIMS.md).
 
 ---
 
@@ -243,8 +263,10 @@ python -m fsot_quantum check
 python -m fsot_quantum audit      # 20/20 vs YR4/PDG
 python -m fsot_quantum harder     # 20/20
 python -m fsot_quantum push3      # 41/41 leftover hired physics
-python -m fsot_quantum family     # Gset 10/11 under 1% (G17 1.017%)
-python -m fsot_quantum open       # exclusive V_cb / H0 / alpha_s
+python -m fsot_quantum family     # Gset 11/11 under 1% (G17 0.427%)
+python -m fsot_quantum vcb        # inclusive 0.002% · exclusive B→D 0.15%
+python -m fsot_quantum h0         # Planck 0.024% · SH0ES 1.00%
+python -m fsot_quantum leftovers  # G17 is the real miss
 python -m fsot_quantum organ      # neuron-zig organ JSON
 python -m fsot_quantum stamp      # five-prover OK if tools on PATH
 ```

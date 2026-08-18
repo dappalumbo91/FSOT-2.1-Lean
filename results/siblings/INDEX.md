@@ -34,7 +34,8 @@ Files: [`genetics/PRODUCT_FREEZE.md`](genetics/PRODUCT_FREEZE.md) · [`genetics/
 |-------|--------|
 | BH→WH H₀ replay | Planck **0.024%** · SH0ES **1.00%** (2.5% contested band) · global 68.440 |
 | Contested sectors | **14/14** |
-| Fold-not-Hilbert | **27/27** job families (DJ, BV, Grover, Shor, QAOA, QPE) |
+| Fold-not-Hilbert / hired QC | hire **29/29** · climb panels through hire7 **22/22** |
+| Gset MaxCut family | **11/11 under 1%** · G17 **0.427%** (13 edges short — not champion-matching) |
 | Observe path | QC dark → QO look → QM measure |
 
 Files: [`quantum/H0_TENSION.md`](quantum/H0_TENSION.md) · [`quantum/STATUS.md`](quantum/STATUS.md)
