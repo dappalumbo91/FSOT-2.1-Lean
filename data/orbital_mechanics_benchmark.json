@@ -1,13 +1,65 @@
 {
-  "benchmark_version": "1.0",
-  "generated_at": "2026-08-05T14:35:49.644186+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-18T02:13:10.107479+00:00",
+  "domain": "orbital_mechanics",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
-  "source": "JPL_Horizons_kepler",
+  "source": [
+    "JPL_Horizons_kepler",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+  ],
+  "maps_to_lean": [
+    "Particle_Physics"
+  ],
+  "D_eff": 18,
   "record_count": 9,
   "observable_count": 9,
-  "median_error_pct": 0.106141,
-  "D_eff": 18,
+  "scalar_record_count": 0,
+  "scalar_gate_applicable": false,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.106141,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "orbital_mechanics_depth": {
+          "sota_typical_error_pct": 10.0,
+          "sota_model": "sector model without seed-closed FSOT formula"
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_fsot_seed_formula_vs_baseline": true
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_on_topic_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 9
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "on_topic",
+      "name": "orbital_mechanics",
+      "computed": 0.106141,
+      "measured": 0.0,
+      "error_pct": 0.106141,
+      "observable_count": 9
+    }
+  ],
+  "material_records": [
     {
       "lab": "orbital_mechanics_lab",
       "property": "kepler_third_law_ratio",
@@ -120,5 +172,17 @@
       "eval_kind": "jpl_kepler",
       "note": "high_eccentricity_dwarf_kepler_closure"
     }
-  ]
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": null,
+    "max_scalar_error_pct": null,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

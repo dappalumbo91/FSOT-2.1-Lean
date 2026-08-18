@@ -1,12 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-05T15:23:49.221708+00:00",
+  "generated_at": "2026-08-18T02:13:10.107479+00:00",
   "domain": "NuFIT_Neutrino_Open",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "http://www.nu-fit.org/",
     "arXiv:2410.05380",
-    "vendor/open_science/nufit_6_0_literature/parameters.json"
+    "vendor/open_science/nufit_6_0_literature/parameters.json",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "particle",
@@ -23,14 +25,28 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "nufit": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "NuFit-6.0 three-flavor global fit"
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "fsot_free_parameters": 0,
+        "operational_baselines": {
+          "nufit": {
+            "sota_typical_error_pct": 5.0,
+            "sota_model": "NuFit-6.0 three-flavor global fit"
+          }
+        },
+        "beats_sota_summary": {
+          "pooled_vs_domain_baseline": true,
+          "channel_fsot_prediction_vs_baseline": true
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_fsot_seed_formula_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_prediction_vs_baseline": true
+      "channel_on_topic_vs_baseline": true
     }
   },
   "records": [
@@ -45,8 +61,8 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_prediction",
-      "name": "nufit",
+      "property": "on_topic",
+      "name": "NuFIT_Neutrino_Open",
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
@@ -206,7 +222,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "policy": "open_science_only_no_credentials",
-  "high_value_gap_id": "nufit_neutrino"
+  "fsot_precision_gate_pct": 0.5
 }

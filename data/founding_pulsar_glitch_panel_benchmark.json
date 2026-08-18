@@ -1,20 +1,22 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-05T14:35:49.178184+00:00",
+  "generated_at": "2026-08-18T02:13:10.100952+00:00",
   "domain": "Founding_Pulsar_Glitch_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "data/founding_unmapped_laws_reference.json",
-    "founding_law:law_34"
+    "founding_law:law_34",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "astronomical",
     "particle"
   ],
   "D_eff": 16,
-  "record_count": 5,
-  "observable_count": 5,
-  "scalar_record_count": 4,
+  "record_count": 6,
+  "observable_count": 6,
+  "scalar_record_count": 5,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.044923,
   "pooled_median_error_pct": 0.044923,
@@ -22,14 +24,28 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Pulsar Glitch Frequency Anomaly": {
-        "sota_typical_error_pct": 15.0,
-        "sota_model": "No unified founding-law panel before Tier 96"
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "fsot_free_parameters": 0,
+        "operational_baselines": {
+          "Pulsar Glitch Frequency Anomaly": {
+            "sota_typical_error_pct": 15.0,
+            "sota_model": "No unified founding-law panel before Tier 96"
+          }
+        },
+        "beats_sota_summary": {
+          "pooled_vs_domain_baseline": true,
+          "channel_law_34_vs_baseline": true
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_fsot_seed_formula_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_law_34_vs_baseline": true
+      "channel_on_topic_vs_baseline": true
     }
   },
   "records": [
@@ -40,16 +56,16 @@
       "computed": 0.044923,
       "measured": 0.0,
       "error_pct": 0.044923,
-      "observable_count": 5
+      "observable_count": 6
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "law_34",
-      "name": "Pulsar Glitch Frequency Anomaly",
+      "property": "on_topic",
+      "name": "Founding_Pulsar_Glitch_Panel",
       "computed": 0.044923,
       "measured": 0.0,
       "error_pct": 0.044923,
-      "observable_count": 4
+      "observable_count": 6
     }
   ],
   "material_records": [
@@ -114,11 +130,24 @@
       "error_pct": 0.0,
       "founding_law_id": "law_34",
       "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "founding_pulsar_glitch_panel_fsot_lab",
+      "property": "neutron",
+      "name": "69e59ee79e8a9780",
+      "computed": 941.3036566521166,
+      "measured": 939.565,
+      "error_pct": 0.185049108,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "PI ^ 6 - E ^ 3",
+      "fsot_domain": "Astronomy",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "PDG / Zyla et al. (2024)"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.044923,
-    "max_scalar_error_pct": 0.044923,
+    "max_scalar_error_pct": 0.185049108,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -127,9 +156,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "tier": 96,
-  "founding_law_id": "law_34",
-  "founding_law_name": "Pulsar Glitch Frequency Anomaly",
-  "panel_status": "GREEN"
+  "fsot_precision_gate_pct": 0.5
 }

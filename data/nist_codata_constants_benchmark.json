@@ -1,17 +1,66 @@
 {
-  "generated_at": "2026-08-05T14:35:59.362206+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-18T02:13:10.105475+00:00",
   "domain": "NIST_CODATA_Constants",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
-  "source": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+  "source": [
+    "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+  ],
   "maps_to_lean": [
     "particle",
     "atomic"
   ],
   "D_eff": 7,
-  "record_count": 6,
-  "observable_count": 6,
-  "median_error_pct": 0.0,
+  "record_count": 8,
+  "observable_count": 8,
+  "scalar_record_count": 8,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 6.80616792130969e-08,
+  "pooled_median_error_pct": 6.80616792130969e-08,
+  "headline_median_error_pct": 1.361233584261938e-07,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "NIST_CODATA_Constants_depth": {
+          "sota_typical_error_pct": 10.0,
+          "sota_model": "sector model without seed-closed FSOT formula"
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_fsot_seed_formula_vs_baseline": true
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_on_topic_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 6.80616792130969e-08,
+      "observable_count": 8
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "on_topic",
+      "name": "NIST_CODATA_Constants",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 1.361233584261938e-07,
+      "observable_count": 8
+    }
+  ],
+  "material_records": [
     {
       "lab": "nist_codata",
       "property": "speed of light in vacuum",
@@ -59,6 +108,44 @@
       "measured": 1.67262192595e-27,
       "error_pct": 0.0,
       "within_band": true
+    },
+    {
+      "lab": "nist_codata_constants_fsot_lab",
+      "property": "electron",
+      "name": "7b2ceb17815ebbbe",
+      "computed": 0.5126480529097499,
+      "measured": 0.511,
+      "error_pct": 0.322515247,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "P_BASE + P_NEW",
+      "fsot_domain": "Atomic_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "PDG / Zyla et al. (2024)"
+    },
+    {
+      "lab": "nist_codata_constants_fsot_lab",
+      "property": "proton",
+      "name": "8141ffdd07912c89",
+      "computed": 941.3036566521166,
+      "measured": 938.272,
+      "error_pct": 0.323110639,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "PI ^ 6 - E ^ 3",
+      "fsot_domain": "Atomic_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "PDG / Zyla et al. (2024)"
     }
-  ]
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 6.80616792130969e-08,
+    "max_scalar_error_pct": 0.323110639,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

@@ -1,12 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-05T20:00:04.806109+00:00",
+  "generated_at": "2026-08-18T02:13:10.105475+00:00",
   "domain": "NIST_ASD_Spectroscopy_Open",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm",
     "https://physics.nist.gov/PhysRefData/ASD/lines_form.html",
-    "vendor/open_science/nist_asd_spectroscopy/line_anchors.json"
+    "vendor/open_science/nist_asd_spectroscopy/line_anchors.json",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "atomic",
@@ -23,14 +25,28 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "nist_asd": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "NIST ASD / spectroscopic handbook open anchors"
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "fsot_free_parameters": 0,
+        "operational_baselines": {
+          "nist_asd": {
+            "sota_typical_error_pct": 5.0,
+            "sota_model": "NIST ASD / spectroscopic handbook open anchors"
+          }
+        },
+        "beats_sota_summary": {
+          "pooled_vs_domain_baseline": true,
+          "channel_fsot_prediction_vs_baseline": true
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_fsot_seed_formula_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_prediction_vs_baseline": true
+      "channel_on_topic_vs_baseline": true
     }
   },
   "records": [
@@ -45,8 +61,8 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_prediction",
-      "name": "nist_asd_spectroscopy",
+      "property": "on_topic",
+      "name": "NIST_ASD_Spectroscopy_Open",
       "computed": 0.036791,
       "measured": 0.0,
       "error_pct": 0.036791,
@@ -247,9 +263,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "policy": "open_science_only_no_credentials",
-  "high_value_gap_id": "nist_asd_spectroscopy",
-  "closure_pass": "tier_scalar_factor_rebuild",
-  "closure_at": "2026-08-05T20:00:04.806109+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

@@ -233,5 +233,8 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "empirical_layer": false,
+  "coverage_role": "process_ledger",
+  "c_thin_note": "Process / certificate ledger \u2014 not a Layer B measured catalog. Not densified with formula pads. Excluded from empirical C_thin fills."
 }

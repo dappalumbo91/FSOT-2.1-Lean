@@ -1,22 +1,80 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-05T14:35:59.950133+00:00",
+  "generated_at": "2026-08-18T02:15:34.886518+00:00",
+  "domain": "cosmology_anomalies",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
-  "mechanism": "bh_wh_bubble_bleed_anomalies",
-  "h0_global_fsot": 68.44005682979427,
-  "bubble_bleed_fraction": 0.015431,
-  "record_count": 12,
-  "observable_count": 12,
-  "resolved_within_15pct_count": 12,
-  "resolved_fraction": 1.0,
-  "median_error_pct": 0.096204,
-  "max_error_pct": 0.325823,
+  "source": [
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+  ],
   "maps_to_lean": [
     "cosmological",
     "cmb",
     "blackhole"
   ],
+  "D_eff": 12,
+  "record_count": 12,
+  "observable_count": 12,
+  "scalar_record_count": 0,
+  "scalar_gate_applicable": false,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.096204,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "fsot_free_parameters": 0,
+        "operational_baselines": {
+          "fsot_free_parameters": 0,
+          "operational_baselines": {
+            "cosmology_anomalies_depth": {
+              "sota_typical_error_pct": 10.0,
+              "sota_model": "sector model without seed-closed FSOT formula"
+            }
+          },
+          "beats_sota_summary": {
+            "pooled_vs_domain_baseline": true,
+            "channel_fsot_seed_formula_vs_baseline": true
+          }
+        },
+        "beats_sota_summary": {
+          "pooled_vs_domain_baseline": true,
+          "channel_on_topic_vs_baseline": true
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_on_topic_anchors_vs_baseline": true
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_restore_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 12
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "restore",
+      "name": "ca",
+      "computed": 0.096204,
+      "measured": 0.0,
+      "error_pct": 0.096204,
+      "observable_count": 12
+    }
+  ],
+  "material_records": [
     {
       "lab": "cosmology_anomalies_lab",
       "property": "hubble_tension",
@@ -185,5 +243,17 @@
       "comparison_class": "tension_sector_prediction",
       "reference_uncertainty_pct": 0.5
     }
-  ]
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": null,
+    "max_scalar_error_pct": null,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

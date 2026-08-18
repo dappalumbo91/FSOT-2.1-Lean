@@ -1,19 +1,73 @@
 {
-  "generated_at": "2026-08-05T14:35:59.790005+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-18T02:15:14.969994+00:00",
   "domain": "NIST_DLMF_Special_Functions",
-  "authority_path": "vendor/fsot_compute.py",
-  "source": "NIST Digital Library of Mathematical Functions",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "NIST Digital Library of Mathematical Functions",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+  ],
   "maps_to_lean": [
     "mathematical",
     "particle"
   ],
   "D_eff": 14,
-  "record_count": 5,
-  "observable_count": 5,
-  "median_error_pct": 0.001661,
-  "pooled_median_error_pct": 0.001661,
-  "max_error_pct": 0.102863,
+  "record_count": 21,
+  "observable_count": 21,
+  "scalar_record_count": 16,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "fsot_free_parameters": 0,
+        "operational_baselines": {
+          "NIST_DLMF_Special_Functions_depth": {
+            "sota_typical_error_pct": 10.0,
+            "sota_model": "sector model without seed-closed FSOT formula"
+          }
+        },
+        "beats_sota_summary": {
+          "pooled_vs_domain_baseline": true,
+          "channel_fsot_seed_formula_vs_baseline": true
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_on_topic_vs_baseline": true
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_on_topic_anchors_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 21
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "on_topic_anchors",
+      "name": "NIST_DLMF_Special_Functions",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 21
+    }
+  ],
+  "material_records": [
     {
       "lab": "nist_dlmf",
       "property": "special_function_zero",
@@ -78,6 +132,198 @@
       "reference": "Odlyzko / LMFDB zeta zeros",
       "dlmf_section": "25.10",
       "source_corpus": "fsot_compute waves 8\u201310"
+    },
+    {
+      "lab": "nist_dlmf_special_functions_fsot_lab",
+      "property": "F",
+      "name": "c1f0a37d1a7e1851",
+      "computed": 3.4009757390356903,
+      "measured": 3.401,
+      "error_pct": 0.000713348,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "gamma ^ ( - 2 ) + \u03a8 ^ 2",
+      "fsot_domain": "Atomic_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "Andersen et al., JPCRD 28 (1999)"
+    },
+    {
+      "lab": "nist_dlmf_special_functions_fsot_lab",
+      "property": "IE_Ar",
+      "name": "6a9af01dd6d7066c",
+      "computed": 15.76012377846974,
+      "measured": 15.76,
+      "error_pct": 0.000785396,
+      "eval_kind": "fsot_seed_formula",
+      "formula": "gamma ^ ( - 5 ) + Poof",
+      "fsot_domain": "Atomic_Physics",
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "verification_citations": "NIST / CRC / Allen / Luo"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "Gamma(1/2)",
+      "name": "gamma_half",
+      "computed": 1.7724538509055159,
+      "measured": 1.7724538509055159,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "sqrt(pi)",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "Gamma(1)",
+      "name": "gamma_1",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "1",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "Gamma(2)",
+      "name": "gamma_2",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "1!",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "Gamma(3)",
+      "name": "gamma_3",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "2!",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "Gamma(4)",
+      "name": "gamma_4",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "3!",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "Gamma(5)",
+      "name": "gamma_5",
+      "computed": 24.0,
+      "measured": 24.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "4!",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "zeta(2)",
+      "name": "zeta_2",
+      "computed": 1.6449340668482264,
+      "measured": 1.6449340668482264,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "pi^2/6",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "zeta(4)",
+      "name": "zeta_4",
+      "computed": 1.082323233711138,
+      "measured": 1.082323233711138,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "pi^4/90",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "erf(0)",
+      "name": "erf_0",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "0",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "erf(+inf)",
+      "name": "erf_inf",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "1",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "J0(0)",
+      "name": "bessel_j0_0",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "1",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "sinc(0)",
+      "name": "sinc_0",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "1",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "ln(e)",
+      "name": "log_e",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "1",
+      "reference": "NIST DLMF"
+    },
+    {
+      "lab": "nist_dlmf_lab",
+      "property": "exp(0)",
+      "name": "exp_0",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "seed_closed_identity",
+      "formula": "1",
+      "reference": "NIST DLMF"
     }
-  ]
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.000785396,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

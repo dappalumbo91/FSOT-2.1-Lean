@@ -1,11 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-05T14:35:49.171186+00:00",
+  "generated_at": "2026-08-18T02:13:10.100952+00:00",
   "domain": "Founding_Quantum_Vacuum_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "data/founding_unmapped_laws_reference.json",
-    "founding_law:law_11"
+    "founding_law:law_11",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "quantum",
@@ -22,14 +24,28 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Quantum Vacuum Energy Oscillation": {
-        "sota_typical_error_pct": 15.0,
-        "sota_model": "No unified founding-law panel before Tier 96"
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "fsot_free_parameters": 0,
+        "operational_baselines": {
+          "Quantum Vacuum Energy Oscillation": {
+            "sota_typical_error_pct": 15.0,
+            "sota_model": "No unified founding-law panel before Tier 96"
+          }
+        },
+        "beats_sota_summary": {
+          "pooled_vs_domain_baseline": true,
+          "channel_law_11_vs_baseline": true
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_fsot_seed_formula_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_law_11_vs_baseline": true
+      "channel_on_topic_vs_baseline": true
     }
   },
   "records": [
@@ -44,12 +60,12 @@
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "law_11",
-      "name": "Quantum Vacuum Energy Oscillation",
+      "property": "on_topic",
+      "name": "Founding_Quantum_Vacuum_Panel",
       "computed": 0.047775,
       "measured": 0.0,
       "error_pct": 0.047775,
-      "observable_count": 4
+      "observable_count": 5
     }
   ],
   "material_records": [
@@ -127,9 +143,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "tier": 96,
-  "founding_law_id": "law_11",
-  "founding_law_name": "Quantum Vacuum Energy Oscillation",
-  "panel_status": "GREEN"
+  "fsot_precision_gate_pct": 0.5
 }

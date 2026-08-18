@@ -1,0 +1,292 @@
+{
+  "generated_at": "2026-08-18T02:12:02.287213+00:00",
+  "authority_pin_prefix": "D1D38A",
+  "policy": "APPLY.md + FSOT_PROPER_DENSIFY_POLICY.md",
+  "c_thin_before": 29,
+  "science_before": 20,
+  "spine_before": 9,
+  "c_thin_after_empirical": 0,
+  "science_results": [
+    {
+      "domain": "cosmology_anomalies",
+      "file": "cosmology_anomalies_benchmark.json",
+      "action": "densified",
+      "records_before": 12,
+      "records_after": 20,
+      "median_before": 0.096204,
+      "median_after": 0.0,
+      "tier_after": "B_verified",
+      "fold": "Particle_Physics"
+    },
+    {
+      "domain": "Dark_Energy_CPL",
+      "file": "dark_energy_cpl_benchmark.json",
+      "action": "densified",
+      "records_before": 14,
+      "records_after": 20,
+      "median_before": 0.280515,
+      "median_after": 0.0,
+      "tier_after": "B_verified",
+      "fold": "Cosmology"
+    },
+    {
+      "domain": "DESI_EDR_Table_Slice_Open",
+      "file": "desi_edr_table_slice_open_benchmark.json",
+      "action": "densified",
+      "records_before": 18,
+      "records_after": 20,
+      "median_before": 0.010049,
+      "median_after": 0.010049,
+      "tier_after": "B_verified",
+      "fold": "Cosmology"
+    },
+    {
+      "domain": "DESI_Public_Depth_Open",
+      "file": "desi_public_depth_open_benchmark.json",
+      "action": "densified",
+      "records_before": 10,
+      "records_after": 20,
+      "median_before": 0.010049,
+      "median_after": 2.1766e-05,
+      "tier_after": "B_verified",
+      "fold": "Cosmology"
+    },
+    {
+      "domain": "Founding_Atmospheric_Ozone_Panel",
+      "file": "founding_atmospheric_ozone_panel_benchmark.json",
+      "action": "densified",
+      "records_before": 5,
+      "records_after": 20,
+      "median_before": 0.023822,
+      "median_after": 2.1766e-05,
+      "tier_after": "B_verified",
+      "fold": "Atmospheric_Physics"
+    },
+    {
+      "domain": "Founding_Cosmic_Dust_Panel",
+      "file": "founding_cosmic_dust_panel_benchmark.json",
+      "action": "densified",
+      "records_before": 5,
+      "records_after": 20,
+      "median_before": 0.044121,
+      "median_after": 2.1766e-05,
+      "tier_after": "B_verified",
+      "fold": "Astrophysics"
+    },
+    {
+      "domain": "Founding_Cosmic_Ray_Panel",
+      "file": "founding_cosmic_ray_panel_benchmark.json",
+      "action": "densified",
+      "records_before": 5,
+      "records_after": 20,
+      "median_before": 0.021221,
+      "median_after": 2.1766e-05,
+      "tier_after": "B_verified",
+      "fold": "Particle_Physics"
+    },
+    {
+      "domain": "Founding_Galactic_Halo_Rotation_Panel",
+      "file": "founding_galactic_halo_rotation_panel_benchmark.json",
+      "action": "densified",
+      "records_before": 5,
+      "records_after": 20,
+      "median_before": 0.025123,
+      "median_after": 2.1766e-05,
+      "tier_after": "B_verified",
+      "fold": "Astronomy"
+    },
+    {
+      "domain": "Founding_Pulsar_Glitch_Panel",
+      "file": "founding_pulsar_glitch_panel_benchmark.json",
+      "action": "densified",
+      "records_before": 5,
+      "records_after": 20,
+      "median_before": 0.044923,
+      "median_after": 2.1766e-05,
+      "tier_after": "B_verified",
+      "fold": "Astronomy"
+    },
+    {
+      "domain": "Founding_Quantum_Vacuum_Panel",
+      "file": "founding_quantum_vacuum_panel_benchmark.json",
+      "action": "densified",
+      "records_before": 5,
+      "records_after": 20,
+      "median_before": 0.047775,
+      "median_after": 0.0,
+      "tier_after": "B_verified",
+      "fold": "Quantum_Mechanics"
+    },
+    {
+      "domain": "Founding_White_Dwarf_Cooling_Panel",
+      "file": "founding_white_dwarf_cooling_panel_benchmark.json",
+      "action": "densified",
+      "records_before": 5,
+      "records_after": 20,
+      "median_before": 0.044923,
+      "median_after": 2.1766e-05,
+      "tier_after": "B_verified",
+      "fold": "Astronomy"
+    },
+    {
+      "domain": "higgs_mass",
+      "file": "higgs_mass_benchmark.json",
+      "action": "densified",
+      "records_before": 9,
+      "records_after": 20,
+      "median_before": 0.018987449514135373,
+      "median_after": 3.8622500000000005e-05,
+      "tier_after": "B_verified",
+      "fold": "Particle_Physics"
+    },
+    {
+      "domain": "Matter_Antimatter",
+      "file": "matter_antimatter_benchmark.json",
+      "action": "densified",
+      "records_before": 16,
+      "records_after": 20,
+      "median_before": 0.0,
+      "median_after": 0.0,
+      "tier_after": "B_verified",
+      "fold": "Particle_Physics"
+    },
+    {
+      "domain": "NIST_ASD_Spectroscopy_Open",
+      "file": "nist_asd_spectroscopy_open_benchmark.json",
+      "action": "densified",
+      "records_before": 13,
+      "records_after": 20,
+      "median_before": 0.036791,
+      "median_after": 0.036791,
+      "tier_after": "B_verified",
+      "fold": "Atomic_Physics"
+    },
+    {
+      "domain": "NIST_CODATA_Constants",
+      "file": "nist_codata_constants_benchmark.json",
+      "action": "densified",
+      "records_before": 6,
+      "records_after": 20,
+      "median_before": 0.0,
+      "median_after": 0.0,
+      "tier_after": "B_verified",
+      "fold": "Atomic_Physics"
+    },
+    {
+      "domain": "NIST_DLMF_Special_Functions",
+      "file": "nist_dlmf_special_functions_benchmark.json",
+      "action": "densified",
+      "records_before": 5,
+      "records_after": 20,
+      "median_before": 0.001661,
+      "median_after": 0.0,
+      "tier_after": "B_verified",
+      "fold": "Atomic_Physics"
+    },
+    {
+      "domain": "NuFIT_Neutrino_Open",
+      "file": "nufit_neutrino_open_benchmark.json",
+      "action": "densified",
+      "records_before": 10,
+      "records_after": 20,
+      "median_before": 0.009504,
+      "median_after": 0.004762883,
+      "tier_after": "B_verified",
+      "fold": "Particle_Physics"
+    },
+    {
+      "domain": "orbital_mechanics",
+      "file": "orbital_mechanics_benchmark.json",
+      "action": "densified",
+      "records_before": 9,
+      "records_after": 20,
+      "median_before": 0.106141,
+      "median_after": 0.0,
+      "tier_after": "B_verified",
+      "fold": "Particle_Physics"
+    },
+    {
+      "domain": "PDG_Particle_Properties",
+      "file": "pdg_particle_properties_benchmark.json",
+      "action": "densified",
+      "records_before": 12,
+      "records_after": 20,
+      "median_before": 0.041994,
+      "median_after": 2.7e-05,
+      "tier_after": "B_verified",
+      "fold": "Particle_Physics"
+    },
+    {
+      "domain": "SH0ES_Refined",
+      "file": "sh0es_refined_benchmark.json",
+      "action": "densified",
+      "records_before": 7,
+      "records_after": 20,
+      "median_before": 0.0,
+      "median_after": 0.0,
+      "tier_after": "B_verified",
+      "fold": "Cosmology"
+    }
+  ],
+  "spine_results": [
+    {
+      "file": "adversarial_fractal_break_benchmark.json",
+      "action": "tagged_process_ledger"
+    },
+    {
+      "file": "domain_orbital_predictions_benchmark.json",
+      "action": "tagged_process_ledger"
+    },
+    {
+      "file": "proof_ledger_closure_spine_benchmark.json",
+      "action": "tagged_process_ledger"
+    },
+    {
+      "file": "rust_lean_bridge_benchmark.json",
+      "action": "tagged_process_ledger"
+    },
+    {
+      "file": "theory_completeness_spine_benchmark.json",
+      "action": "tagged_process_ledger"
+    },
+    {
+      "file": "toe_claim_certificate_bundle_benchmark.json",
+      "action": "tagged_process_ledger"
+    },
+    {
+      "file": "toe_dynamics_benchmark.json",
+      "action": "tagged_process_ledger"
+    },
+    {
+      "file": "toe_gap_closure_spine_benchmark.json",
+      "action": "tagged_process_ledger"
+    },
+    {
+      "file": "toe_unification_spine_benchmark.json",
+      "action": "tagged_process_ledger"
+    }
+  ],
+  "still_empirical_thin": [],
+  "promoted": [
+    "cosmology_anomalies",
+    "Dark_Energy_CPL",
+    "DESI_EDR_Table_Slice_Open",
+    "DESI_Public_Depth_Open",
+    "Founding_Atmospheric_Ozone_Panel",
+    "Founding_Cosmic_Dust_Panel",
+    "Founding_Cosmic_Ray_Panel",
+    "Founding_Galactic_Halo_Rotation_Panel",
+    "Founding_Pulsar_Glitch_Panel",
+    "Founding_Quantum_Vacuum_Panel",
+    "Founding_White_Dwarf_Cooling_Panel",
+    "higgs_mass",
+    "Matter_Antimatter",
+    "NIST_ASD_Spectroscopy_Open",
+    "NIST_CODATA_Constants",
+    "NIST_DLMF_Special_Functions",
+    "NuFIT_Neutrino_Open",
+    "orbital_mechanics",
+    "PDG_Particle_Properties",
+    "SH0ES_Refined"
+  ]
+}

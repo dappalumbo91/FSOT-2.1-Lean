@@ -19,7 +19,15 @@ DISCRIMINANT_KILL: dict[str, str] = {
     "within_10pct_of_observed_gap": "FSOT prediction >10% from measured anchor",
     "fsot_exceeds_sota_by_0.4": "FSOT margin vs null/SOTA baseline < 0.4",
     "same_sign_as_fermilab": "FSOT delta_a_mu opposite sign to Fermilab 2021",
+    "desi_3sigma_exclusion": "desi_or_euclid_3sigma_exclusion of frozen wa",
+    "cmb_3sigma_exclusion": "cmb_3sigma_exclusion of frozen N_eff",
+    "within_green_gate_0_5pct": "panel pooled median exceeds 0.5% green gate",
+    "pdg_update_outside_0_5pct": "PDG/combination update more than 0.5% from frozen central",
+    "within_0_5pct_of_frozen_central": "refresh residual more than 0.5% from frozen central",
 }
+
+OUTCOME_LOG = ROOT / "results" / "outcomes" / "prediction_outcome_log.jsonl"
+RESULTS_XREF = ROOT / "results" / "literature" / "2026-08-17_crossref.json"
 
 
 def _yaml(path: Path) -> dict:
@@ -30,14 +38,39 @@ def _yaml(path: Path) -> dict:
     return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
 
 
-def _pred_status(pred: dict) -> str:
-    pid = pred.get("id", "")
-    if pid == "PRED-001":
-        val = float(pred.get("fsot_predicted") or 0)
-        if 67.4 <= val <= 73.04:
-            return "consistent_with_discriminant"
-        return "would_falsify_if_measured"
-    if pid == "PRED-024":
+def _outcome_index() -> dict[str, list[dict]]:
+    idx: dict[str, list[dict]] = {}
+    if OUTCOME_LOG.is_file():
+        for line in OUTCOME_LOG.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            pid = str(row.get("pred_id") or "")
+            if pid:
+                idx.setdefault(pid, []).append(row)
+    return idx
+
+
+def _pred_status(pred: dict, outcomes: dict[str, list[dict]]) -> str:
+    pid = str(pred.get("id") or "")
+    latest = (outcomes.get(pid) or [None])[-1]
+    if latest:
+        res = str(latest.get("result") or "")
+        mapping = {
+            "hold": "hold_logged",
+            "partial": "partial_logged",
+            "awaiting": "pending_independent_measurement",
+            "theory_rebase": "theory_rebase_logged",
+            "kill": "kill_logged",
+            "local_green_hold": "local_green_hold",
+        }
+        if res in mapping:
+            return mapping[res]
+    if pid in {"PRED-001", "PRED-024", "PRED-046", "PRED-051"}:
         val = float(pred.get("fsot_predicted") or 0)
         if 67.4 <= val <= 73.04:
             return "consistent_with_discriminant"
@@ -90,24 +123,36 @@ def build() -> dict:
     stumped_doc = json.loads(STUMPED.read_text(encoding="utf-8")) if STUMPED.exists() else {}
     stumped = stumped_doc.get("observables") or []
 
+    outcomes = _outcome_index()
     prereg_rows: list[dict] = []
     for p in predictions:
         disc = str(p.get("discriminant") or "")
-        prereg_rows.append(
-            {
-                "id": p.get("id"),
-                "name": p.get("name"),
-                "domain": p.get("domain"),
-                "fsot_predicted": p.get("fsot_predicted"),
-                "unit": p.get("unit"),
-                "sota_baseline": p.get("sota_baseline"),
-                "discriminant": disc,
-                "kill_criterion": DISCRIMINANT_KILL.get(disc, f"Violates discriminant: {disc}"),
-                "registered_at": p.get("registered_at"),
-                "status": _pred_status(p),
-                "review_horizon": "independent_measurement_or_survey_release",
+        pid = p.get("id")
+        latest = (outcomes.get(str(pid)) or [None])[-1]
+        row = {
+            "id": pid,
+            "name": p.get("name"),
+            "domain": p.get("domain"),
+            "fsot_predicted": p.get("fsot_predicted"),
+            "unit": p.get("unit"),
+            "sota_baseline": p.get("sota_baseline"),
+            "discriminant": disc,
+            "kill_criterion": DISCRIMINANT_KILL.get(disc, f"Violates discriminant: {disc}"),
+            "registered_at": p.get("registered_at"),
+            "future_survey": p.get("future_survey"),
+            "status": _pred_status(p, outcomes),
+            "review_horizon": p.get("future_survey")
+            or "independent_measurement_or_survey_release",
+        }
+        if latest:
+            row["latest_outcome"] = {
+                "ts": latest.get("ts"),
+                "survey": latest.get("survey"),
+                "result": latest.get("result"),
+                "measured": latest.get("measured"),
+                "source": latest.get("source"),
             }
-        )
+        prereg_rows.append(row)
 
     stumped_rows: list[dict] = []
     for o in stumped:
@@ -134,9 +179,10 @@ def build() -> dict:
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "version": "1.0",
+        "version": "1.1",
         "verdict": "FALSIFICATION_CRITERIA_REGISTERED",
         "manifest_source": "predictions/preregistered_predictions_manifest.yaml",
+        "outcome_log": "results/outcomes/prediction_outcome_log.jsonl",
         "summary": {
             "preregistered_prediction_count": len(prereg_rows),
             "stumped_observable_count": len(stumped_rows),
@@ -155,10 +201,11 @@ def build() -> dict:
             wa,
             {
                 "id": "cross_domain_envelope",
-                "name": "272_domain_green_gate",
+                "name": "472_file_green_gate",
                 "kill_criterion": ">25% extension domains fail pooled ≤0.5% on refresh",
                 "review_horizon": "2026-12-31",
                 "evidence": "data/benchmark_margin_audit.json",
+                "live_green": "docs/CURRENT_STATUS.md",
             },
             {
                 "id": "PRED-001",

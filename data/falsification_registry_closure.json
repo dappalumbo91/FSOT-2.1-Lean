@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-08-05T23:08:44.347011+00:00",
-  "version": "1.0",
+  "generated_at": "2026-08-18T02:11:56.519376+00:00",
+  "version": "1.1",
   "verdict": "FALSIFICATION_CRITERIA_REGISTERED",
-  "manifest_source": "data/preregistered_predictions_manifest.yaml",
+  "manifest_source": "predictions/preregistered_predictions_manifest.yaml",
+  "outcome_log": "results/outcomes/prediction_outcome_log.jsonl",
   "summary": {
-    "preregistered_prediction_count": 35,
+    "preregistered_prediction_count": 48,
     "stumped_observable_count": 13,
     "confirmed_discriminant_count": 2,
-    "pending_measurement_count": 33,
+    "pending_measurement_count": 41,
     "wa_prereg_status": "confirmed_within_2sigma",
     "global_kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
     "global_review_horizon": "2026-12-31 full benchmark + survey refresh"
@@ -23,8 +24,16 @@
       "discriminant": "strictly_between_planck_and_sh0es",
       "kill_criterion": "FSOT H0 readout outside [67.4, 73.04] km/s/Mpc",
       "registered_at": "2026-07-10",
-      "status": "consistent_with_discriminant",
-      "review_horizon": "independent_measurement_or_survey_release"
+      "future_survey": null,
+      "status": "hold_logged",
+      "review_horizon": "independent_measurement_or_survey_release",
+      "latest_outcome": {
+        "ts": "2026-08-17T18:00:00+00:00",
+        "survey": "AandA-2026-Local-Distance-Network",
+        "result": "hold",
+        "measured": 73.5,
+        "source": "https://www.aanda.org/articles/aa/full_html/2026/04/aa57993-25/aa57993-25.html"
+      }
     },
     {
       "id": "PRED-002",
@@ -36,8 +45,16 @@
       "discriminant": "between_planck_and_des",
       "kill_criterion": "FSOT S8 readout outside Planck\u2013DES tension band",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
-      "review_horizon": "independent_measurement_or_survey_release"
+      "review_horizon": "independent_measurement_or_survey_release",
+      "latest_outcome": {
+        "ts": "2026-08-17T18:00:00+00:00",
+        "survey": "Euclid-DR1-Foundation-calendar",
+        "result": "awaiting",
+        "measured": null,
+        "source": "https://www.cosmos.esa.int/web/euclid/dr1-timeline"
+      }
     },
     {
       "id": "PRED-003",
@@ -49,6 +66,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -62,8 +80,16 @@
       "discriminant": "same_sign_as_fermilab",
       "kill_criterion": "FSOT delta_a_mu opposite sign to Fermilab 2021",
       "registered_at": "2026-07-10",
-      "status": "pending_independent_measurement",
-      "review_horizon": "independent_measurement_or_survey_release"
+      "future_survey": null,
+      "status": "theory_rebase_logged",
+      "review_horizon": "independent_measurement_or_survey_release",
+      "latest_outcome": {
+        "ts": "2026-08-17T18:00:00+00:00",
+        "survey": "Muon-g2-Theory-Initiative-WP25-lattice",
+        "result": "theory_rebase",
+        "measured": 3.75e-10,
+        "source": "https://arxiv.org/abs/2505.21476"
+      }
     },
     {
       "id": "PRED-005",
@@ -75,6 +101,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -88,6 +115,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -101,6 +129,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -114,6 +143,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -127,6 +157,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -140,6 +171,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -153,6 +185,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -166,6 +199,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -179,6 +213,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -192,6 +227,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -205,6 +241,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -218,6 +255,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -231,8 +269,16 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
-      "review_horizon": "independent_measurement_or_survey_release"
+      "review_horizon": "independent_measurement_or_survey_release",
+      "latest_outcome": {
+        "ts": "2026-08-17T18:00:00+00:00",
+        "survey": "JINR-Z119-May2026-run",
+        "result": "awaiting",
+        "measured": null,
+        "source": "https://en.wikipedia.org/wiki/Ununennium"
+      }
     },
     {
       "id": "PRED-018",
@@ -244,6 +290,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -257,6 +304,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -270,6 +318,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -283,6 +332,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -296,6 +346,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -309,6 +360,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -322,8 +374,16 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
-      "status": "consistent_with_discriminant",
-      "review_horizon": "independent_measurement_or_survey_release"
+      "future_survey": null,
+      "status": "hold_logged",
+      "review_horizon": "independent_measurement_or_survey_release",
+      "latest_outcome": {
+        "ts": "2026-08-17T18:00:00+00:00",
+        "survey": "SH0ES-JWST-class-2025-2026",
+        "result": "hold",
+        "measured": 73.0,
+        "source": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Webb_Hubble_confirm_Universe_s_expansion_rate"
+      }
     },
     {
       "id": "PRED-025",
@@ -335,6 +395,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -348,6 +409,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -361,6 +423,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-10",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -374,6 +437,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-15",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -387,6 +451,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-15",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -400,6 +465,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-15",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -413,6 +479,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-15",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -426,6 +493,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-15",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -439,6 +507,7 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-15",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -452,6 +521,7 @@
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "kill_criterion": "FSOT margin vs null/SOTA baseline < 0.4",
       "registered_at": "2026-07-15",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
     },
@@ -465,8 +535,212 @@
       "discriminant": "within_10pct_of_observed_gap",
       "kill_criterion": "FSOT prediction >10% from measured anchor",
       "registered_at": "2026-07-15",
+      "future_survey": null,
       "status": "pending_independent_measurement",
       "review_horizon": "independent_measurement_or_survey_release"
+    },
+    {
+      "id": "PRED-042",
+      "name": "euclid_dr1_s8_lensing",
+      "domain": "Cosmology",
+      "fsot_predicted": 0.805,
+      "unit": "S8",
+      "sota_baseline": 0.834,
+      "discriminant": "between_planck_and_des",
+      "kill_criterion": "FSOT S8 readout outside Planck\u2013DES tension band",
+      "registered_at": "2026-08-06",
+      "future_survey": "Euclid DR1-Foundation Nov 2026; complete DR1 mid-2027",
+      "status": "pending_independent_measurement",
+      "review_horizon": "Euclid DR1-Foundation Nov 2026; complete DR1 mid-2027"
+    },
+    {
+      "id": "PRED-043",
+      "name": "euclid_desi_joint_wa",
+      "domain": "Cosmology",
+      "fsot_predicted": -1.018,
+      "unit": "w_a",
+      "sota_baseline": 0.0,
+      "discriminant": "desi_3sigma_exclusion",
+      "kill_criterion": "desi_or_euclid_3sigma_exclusion of frozen wa",
+      "registered_at": "2026-08-06",
+      "future_survey": "Euclid DR1 + DESI BAO joint DE 2026-2027",
+      "status": "hold_logged",
+      "review_horizon": "Euclid DR1 + DESI BAO joint DE 2026-2027",
+      "latest_outcome": {
+        "ts": "2026-08-17T18:00:00+00:00",
+        "survey": "DES-Y6-plus-DESI-DR2-plus-CMB",
+        "result": "hold",
+        "measured": -0.63,
+        "source": "https://www.darkenergysurvey.org/des-y6-cosmology-results-papers/"
+      }
+    },
+    {
+      "id": "PRED-044",
+      "name": "rubin_lsst_early_s8_pathfinder",
+      "domain": "Cosmology",
+      "fsot_predicted": 0.805,
+      "unit": "S8",
+      "sota_baseline": 0.834,
+      "discriminant": "between_planck_and_des",
+      "kill_criterion": "FSOT S8 readout outside Planck\u2013DES tension band",
+      "registered_at": "2026-08-06",
+      "future_survey": "Rubin LSST EDP2 late 2026 / early science pathfinders",
+      "status": "pending_independent_measurement",
+      "review_horizon": "Rubin LSST EDP2 late 2026 / early science pathfinders"
+    },
+    {
+      "id": "PRED-046",
+      "name": "desi_bao_h0_bridge",
+      "domain": "Cosmology",
+      "fsot_predicted": 70.75,
+      "unit": "km/s/Mpc",
+      "sota_baseline": 67.36,
+      "discriminant": "strictly_between_planck_and_sh0es",
+      "kill_criterion": "FSOT H0 readout outside [67.4, 73.04] km/s/Mpc",
+      "registered_at": "2026-08-06",
+      "future_survey": "DESI public BAO / cosmology catalogs ongoing",
+      "status": "consistent_with_discriminant",
+      "review_horizon": "DESI public BAO / cosmology catalogs ongoing"
+    },
+    {
+      "id": "PRED-047",
+      "name": "cmb_next_neff",
+      "domain": "Cosmology",
+      "fsot_predicted": 3.046,
+      "unit": "N_eff",
+      "sota_baseline": 3.044,
+      "discriminant": "cmb_3sigma_exclusion",
+      "kill_criterion": "cmb_3sigma_exclusion of frozen N_eff",
+      "registered_at": "2026-08-06",
+      "future_survey": "Simons Observatory / ACT / SPT-3G N_eff updates",
+      "status": "pending_independent_measurement",
+      "review_horizon": "Simons Observatory / ACT / SPT-3G N_eff updates"
+    },
+    {
+      "id": "PRED-048",
+      "name": "lvk_compact_binary_catalog_panel",
+      "domain": "Gravitational_Waves",
+      "fsot_predicted": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "sota_baseline": 15.0,
+      "discriminant": "within_green_gate_0_5pct",
+      "kill_criterion": "panel pooled median exceeds 0.5% green gate",
+      "registered_at": "2026-08-06",
+      "future_survey": "GWOSC GWTC + O4 remainder + O5",
+      "status": "pending_independent_measurement",
+      "review_horizon": "GWOSC GWTC + O4 remainder + O5",
+      "latest_outcome": {
+        "ts": "2026-08-17T18:00:00+00:00",
+        "survey": "GWTC-5.0",
+        "result": "awaiting",
+        "measured": 390,
+        "source": "https://gwosc.org/GWTC-5.0/"
+      }
+    },
+    {
+      "id": "PRED-049",
+      "name": "pdg_higgs_mass_hold",
+      "domain": "Particle_Physics",
+      "fsot_predicted": 125.25,
+      "unit": "GeV",
+      "sota_baseline": 125.25,
+      "discriminant": "pdg_update_outside_0_5pct",
+      "kill_criterion": "PDG/combination update more than 0.5% from frozen central",
+      "registered_at": "2026-08-06",
+      "future_survey": "annual PDG listings",
+      "status": "hold_logged",
+      "review_horizon": "annual PDG listings",
+      "latest_outcome": {
+        "ts": "2026-08-17T18:00:00+00:00",
+        "survey": "CMS-PAS-HIG-24-007-2026-03",
+        "result": "hold",
+        "measured": 125.14,
+        "source": "https://cms.cern/news/cms-weighs-higgs-boson-using-flashes-light"
+      }
+    },
+    {
+      "id": "PRED-050",
+      "name": "muon_g2_excess_sign_hold",
+      "domain": "Particle_Physics",
+      "fsot_predicted": 2.49e-09,
+      "unit": "delta_a_mu",
+      "sota_baseline": 0.0,
+      "discriminant": "same_sign_as_fermilab",
+      "kill_criterion": "FSOT delta_a_mu opposite sign to Fermilab 2021",
+      "registered_at": "2026-08-06",
+      "future_survey": "Fermilab final + lattice HVP theory updates",
+      "status": "pending_independent_measurement",
+      "review_horizon": "Fermilab final + lattice HVP theory updates"
+    },
+    {
+      "id": "PRED-051",
+      "name": "jwst_local_h0_bridge",
+      "domain": "Cosmology",
+      "fsot_predicted": 70.75,
+      "unit": "km/s/Mpc",
+      "sota_baseline": 67.36,
+      "discriminant": "strictly_between_planck_and_sh0es",
+      "kill_criterion": "FSOT H0 readout outside [67.4, 73.04] km/s/Mpc",
+      "registered_at": "2026-08-06",
+      "future_survey": "JWST/HST local distance ladder papers 2026-2027",
+      "status": "consistent_with_discriminant",
+      "review_horizon": "JWST/HST local distance ladder papers 2026-2027"
+    },
+    {
+      "id": "PRED-052",
+      "name": "chime_frb_dm_excess_hold",
+      "domain": "Cosmology",
+      "fsot_predicted": 200.0,
+      "unit": "pc_cm3_excess",
+      "sota_baseline": 0.0,
+      "discriminant": "within_0_5pct_of_frozen_central",
+      "kill_criterion": "refresh residual more than 0.5% from frozen central",
+      "registered_at": "2026-08-06",
+      "future_survey": "CHIME/FRB catalog refreshes",
+      "status": "pending_independent_measurement",
+      "review_horizon": "CHIME/FRB catalog refreshes"
+    },
+    {
+      "id": "PRED-053",
+      "name": "jwst_highz_abundance_panel_hold",
+      "domain": "Astrophysics",
+      "fsot_predicted": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "sota_baseline": 15.0,
+      "discriminant": "within_green_gate_0_5pct",
+      "kill_criterion": "panel pooled median exceeds 0.5% green gate",
+      "registered_at": "2026-08-06",
+      "future_survey": "JADES / COSMOS-3D / NEXUS public catalogs",
+      "status": "pending_independent_measurement",
+      "review_horizon": "JADES / COSMOS-3D / NEXUS public catalogs"
+    },
+    {
+      "id": "PRED-054",
+      "name": "climate_ncei_holdout_ceiling",
+      "domain": "Climate_Science",
+      "fsot_predicted": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "sota_baseline": 5.0,
+      "discriminant": "within_green_gate_0_5pct",
+      "kill_criterion": "panel pooled median exceeds 0.5% green gate",
+      "registered_at": "2026-08-06",
+      "future_survey": "NOAA NCEI continuous open station data",
+      "status": "pending_independent_measurement",
+      "review_horizon": "NOAA NCEI continuous open station data"
+    },
+    {
+      "id": "PRED-055",
+      "name": "zebrafish_atlas_residual_hold",
+      "domain": "Biology",
+      "fsot_predicted": 0.358,
+      "unit": "pooled_median_error_pct_watch",
+      "sota_baseline": 5.0,
+      "discriminant": "within_green_gate_0_5pct",
+      "kill_criterion": "panel pooled median exceeds 0.5% green gate",
+      "registered_at": "2026-08-06",
+      "future_survey": "open zebrafish developmental atlas refreshes",
+      "status": "pending_independent_measurement",
+      "review_horizon": "open zebrafish developmental atlas refreshes"
     }
   ],
   "stumped_observables": [
@@ -629,10 +903,11 @@
     },
     {
       "id": "cross_domain_envelope",
-      "name": "272_domain_green_gate",
+      "name": "472_file_green_gate",
       "kill_criterion": ">25% extension domains fail pooled \u22640.5% on refresh",
       "review_horizon": "2026-12-31",
-      "evidence": "data/benchmark_margin_audit.json"
+      "evidence": "data/benchmark_margin_audit.json",
+      "live_green": "docs/CURRENT_STATUS.md"
     },
     {
       "id": "PRED-001",

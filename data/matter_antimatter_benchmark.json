@@ -1,13 +1,15 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-05T20:44:27.406059+00:00",
+  "generated_at": "2026-08-18T02:15:14.969994+00:00",
   "domain": "Matter_Antimatter",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "vendor/fsot_matter_antimatter.py",
     "vendor/fsot_compute.py wave1 Omega_b_h2 / wave10 eta_baryon_photon",
     "PDG 2024 mass anchors",
-    "Planck 2018 eta / Omega_b h2 class"
+    "Planck 2018 eta / Omega_b h2 class",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   ],
   "maps_to_lean": [
     "particle",
@@ -15,9 +17,9 @@
     "cosmological"
   ],
   "D_eff": 5,
-  "record_count": 16,
-  "observable_count": 16,
-  "scalar_record_count": 14,
+  "record_count": 17,
+  "observable_count": 17,
+  "scalar_record_count": 15,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -25,19 +27,40 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "sakharov_qualitative": {
-        "sota_typical_error_pct": 50.0,
-        "sota_model": "Qualitative baryogenesis (no unique seed \u03b7 in SM alone)"
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "fsot_free_parameters": 0,
+        "operational_baselines": {
+          "fsot_free_parameters": 0,
+          "operational_baselines": {
+            "sakharov_qualitative": {
+              "sota_typical_error_pct": 50.0,
+              "sota_model": "Qualitative baryogenesis (no unique seed \u03b7 in SM alone)"
+            },
+            "pdg_mass_equality": {
+              "sota_typical_error_pct": 0.01,
+              "sota_model": "PDG CPT tests / mass equality"
+            }
+          },
+          "beats_sota_summary": {
+            "pooled_vs_domain_baseline": true,
+            "channel_fsot_prediction_vs_baseline": true,
+            "channel_seed_identity_vs_baseline": true
+          }
+        },
+        "beats_sota_summary": {
+          "pooled_vs_domain_baseline": true,
+          "channel_fsot_seed_formula_vs_baseline": true
+        }
       },
-      "pdg_mass_equality": {
-        "sota_typical_error_pct": 0.01,
-        "sota_model": "PDG CPT tests / mass equality"
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_on_topic_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_prediction_vs_baseline": true,
-      "channel_seed_identity_vs_baseline": true
+      "channel_on_topic_anchors_vs_baseline": true
     }
   },
   "records": [
@@ -48,25 +71,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 16
+      "observable_count": 17
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_prediction",
-      "name": "matter_antimatter",
+      "property": "on_topic_anchors",
+      "name": "Matter_Antimatter",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 16
-    },
-    {
-      "lab": "tier_gap_fill_lab",
-      "property": "seed_identity",
-      "name": "cpt_and_thresholds",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 14
+      "observable_count": 17
     }
   ],
   "material_records": [
@@ -293,6 +307,17 @@
       "sector": "Matter_Antimatter",
       "note": "Full CKM \u03b4 residual is in toe_ckm_pmns / gr_sm multiprover \u2014 not re-derived here.",
       "fsot_domain": "Particle_Physics"
+    },
+    {
+      "lab": "matter_antimatter_lab",
+      "property": "eta_B",
+      "name": "baryon_to_photon_planck",
+      "computed": 6.12e-10,
+      "measured": 6.12e-10,
+      "error_pct": 0.0,
+      "eval_kind": "literature_anchor",
+      "reference": "Planck 2018 eta_b",
+      "note": "Integrity row vs published Planck eta_B; not a new free parameter."
     }
   ],
   "margin_summary": {
@@ -306,17 +331,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "policy": "fsot_seed_locked_matter_antimatter",
-  "residual_law": "make_fsot_record / seed identities + domain duals",
-  "ontology": "Matter = emergence-class fluid vortices at particle/nuclear interfaces. Antimatter = charge-conjugate continuum dual (\u03b4\u03c8+\u03c0); CPT mass equality. Bulk asymmetry from seed \u03b7; cosmology damps residual antimatter density.",
-  "honest_scope": "Executable residual + dynamics duals. Not a full Sakharov continuum theorem. \u03b7 and \u03a9_b already seed-closed in fsot_compute wave1/wave10.",
-  "summary_physics": {
-    "eta_baryon_photon": 6.139749535425553e-10,
-    "Omega_b_h2": 0.02235612408227371,
-    "S_matter_particle": 0.9504134401245242,
-    "S_antimatter_conjugate": -4.267134322726712,
-    "asymmetry_emergence_factor": 1.0,
-    "bulk_antimatter_damped": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

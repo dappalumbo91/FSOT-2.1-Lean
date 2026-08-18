@@ -1,8 +1,13 @@
 {
-  "generated_at": "2026-08-05T14:35:59.747954+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-08-18T02:13:10.107479+00:00",
   "domain": "PDG_Particle_Properties",
-  "authority_path": "vendor/fsot_compute.py",
-  "source": "PDG 2024 Review of Particle Physics",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "source": [
+    "PDG 2024 Review of Particle Physics",
+    "fsot_proper_densify",
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+  ],
   "maps_to_lean": [
     "particle",
     "atomic"
@@ -10,10 +15,52 @@
   "D_eff": 9,
   "record_count": 12,
   "observable_count": 12,
-  "median_error_pct": 0.041994,
-  "pooled_median_error_pct": 0.041994,
-  "max_error_pct": 0.323111,
+  "scalar_record_count": 12,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0313675,
+  "pooled_median_error_pct": 0.0313675,
+  "headline_median_error_pct": 0.041994,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fsot_free_parameters": 0,
+      "operational_baselines": {
+        "PDG_Particle_Properties_depth": {
+          "sota_typical_error_pct": 10.0,
+          "sota_model": "sector model without seed-closed FSOT formula"
+        }
+      },
+      "beats_sota_summary": {
+        "pooled_vs_domain_baseline": true,
+        "channel_fsot_seed_formula_vs_baseline": true
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_on_topic_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.031367,
+      "measured": 0.0,
+      "error_pct": 0.0313675,
+      "observable_count": 12
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "on_topic",
+      "name": "PDG_Particle_Properties",
+      "computed": 0.041994,
+      "measured": 0.0,
+      "error_pct": 0.041994,
+      "observable_count": 12
+    }
+  ],
+  "material_records": [
     {
       "lab": "pdg_particle",
       "property": "\u00a766 Particle Masses",
@@ -158,5 +205,17 @@
       "reference": "PDG 2024 / Zyla et al.",
       "source_corpus": "FSOT_SMILES_Lab_Dataset"
     }
-  ]
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0313675,
+    "max_scalar_error_pct": 0.323111,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }
