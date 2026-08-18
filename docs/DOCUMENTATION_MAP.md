@@ -11,8 +11,8 @@
 
 | Audience | Start here | Then | Depth / tone |
 |----------|------------|------|----------------|
-| **Layman** (curious, no degree required) | [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) | [`CONCEPTS.md`](CONCEPTS.md) (BH→WH + bubble) → [`FSOT_NARRATIVE_CORE.md`](FSOT_NARRATIVE_CORE.md) | Stories mapped to the engine |
-| **Scientist / engineer** | [`CONCEPTS.md`](CONCEPTS.md) | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) → [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) | Seeds, residual law, folds, gates |
+| **Layman** (curious, no degree required) | [`CONCEPTS.md`](CONCEPTS.md) | [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) → [`SYSTEM_DIRECTORY.md`](SYSTEM_DIRECTORY.md) | 25-D fluid, valves, BH as information flow |
+| **Scientist / engineer** | [`CONCEPTS.md`](CONCEPTS.md) + [`APPLY.md`](APPLY.md) | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) → [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) | Seeds, interface first, residual law |
 | **PhD / formal methods** | [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md) | [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §0–3 + hierarchy · [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) · [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · Lean `FSOT/Formal/Scalar.lean` · machine `data/fsot_building_block_hierarchy.json` | Layers A/B/C, building-block network, what is *proved* vs residual-gated |
 
 Everyone who will **run code** also reads [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) or the skeptic kit.

@@ -7,7 +7,7 @@
 **Edition:** v2.12 — count vocabulary lock · **2026-08-18**  
 **Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)  
 **Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · what the numbers mean: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md) · kill-command map: [`docs/EMPIRICAL_CLAIM_EVIDENCE.md`](docs/EMPIRICAL_CLAIM_EVIDENCE.md)  
-**New here?** → [docs/START_HERE.md](docs/START_HERE.md) · **Concepts (BH/WH, bubble)** → [docs/CONCEPTS.md](docs/CONCEPTS.md) · **Open science only** → [docs/OPEN_SCIENCE_ONLY_POLICY.md](docs/OPEN_SCIENCE_ONLY_POLICY.md)
+**New here?** → [docs/START_HERE.md](docs/START_HERE.md) · **Concepts** → [docs/CONCEPTS.md](docs/CONCEPTS.md) · **Directory** → [docs/SYSTEM_DIRECTORY.md](docs/SYSTEM_DIRECTORY.md) · **Apply** → [docs/APPLY.md](docs/APPLY.md)
 
 ### Live scoreboard (regenerate: `python scripts/build_repo_status_snapshot.py`)
 

@@ -141,6 +141,89 @@ The 2026-08-07 Lean file `predictions/reports/FSOT_VS_ALPHAFOLD_STRUCTURE.md` is
 
 ---
 
+## C8 — 25-dimensional compactified fluid
+
+**Said:** Reality is a **25-dimensional fluid medium**. What we call 4D spacetime is a slice. Other sciences are other slices of the **same** medium, not other substances.
+
+**Engine:** \(D_{\mathrm{eff}}\) is the fold depth. The ceiling is **25**. Cosmology sits at \(D=25\), `observed=False`. Chaos in \(T_3\) is \((D-25)/25\) — it **vanishes at the ceiling**. \(T_1\) folds with \(\ln(D/25)\).
+
+Compactification is not extra free dimensions you fit. It is the register: when a rung saturates, **carry** opens the next fold (ontology A5–A6).
+
+| \(D_{\mathrm{eff}}\) class | Example domains | What you are looking at |
+|---------------------------:|-----------------|-------------------------|
+| 5–8 | Particle, QM, chemistry | micro / bond / observer-on |
+| 11 | Quantum_Computing (dark) | compute substrate — do not look |
+| 12–14 | Biology, neuroscience | life / \(C_{\mathrm{factor}}\) |
+| 18–21 | Seismology, astronomy, planets | bulk / catalogs |
+| 24–25 | Astrophysics, Cosmology | deep structure / full ceiling |
+
+**Code:** `vendor/fsot_compute.py` · `docs/FSOT_MATH_KEY.md` §3–4  
+**Ontology:** `data/foundational_ontology_axioms.yaml` A5–A6
+
+---
+
+## C9 — Yin–yang valves (creation / destruction)
+
+**Said:** Creation and destruction are one apparatus. You do not get one without the other.
+
+**Engine:**
+
+| Pole | Constant | Job |
+|------|----------|-----|
+| Yang / outgas / create | **POOF** ≈ 0.1535 | orifice open, tunnel, emerge |
+| Yin / take back / destroy form | **SUCTION** ≈ 0.1470 | re-compact, re-solidify |
+| Fraction | \(\mathrm{POOF}/(\mathrm{POOF}+\mathrm{SUCTION})\) | how much of the cycle is outgas |
+
+\(S>0\) emergence. \(S<0\) damping. Same engine. Cosmology at \(D=25\) is damping. Particle/nuclear are emergence. That is not two theories.
+
+Observer duality is the same split: `observed=True` turns on \(C_{\mathrm{factor}}\) in \(T_1\); `observed=False` is the dark / compute / unobserved tank.
+
+**Code:** T3 valve in `fsot_compute.py` · `docs/COMPLEX_SYSTEM_DERIVATION.md`
+
+---
+
+## C10 — Black holes at every scale (information valves)
+
+**Said:** A black hole is not only an astrophysical object. It is an **information-flow state** of the medium: infall, compression, POOF through an orifice, outflow as a white hole. That pattern repeats at scales we do not usually call “black holes.”
+
+**Engine:** BH→WH cycle is the T3 valve applied to information:
+
+```text
+infall / accretion     →  POOF (orifice)  →  outflow / suction / C_eff
+(compress, hide form)     (tunnel)           (new form, same invariants)
+```
+
+Macro: Hubble tools read different **bubble-density sectors** of the same outgassing (C3).  
+Micro: codon / protein / QC collapse is the same valve — trit 0 is the superposed orifice; ±1 are the two collapses.
+
+Matter is not created or destroyed. **Form** changes. \(S\), \(T_1\), \(T_3\) are the invariants the cycle is scored against.
+
+**Code:** `scripts/bubble_bleed_physics.py` · BH/WH panel · Quantum observe path QC→QO→QM
+
+---
+
+## C11 — Self-observing function
+
+**Said:** The medium observes itself. Consciousness is not glued on after physics.
+
+**Engine:** `observed` is a route slot. When it is on, \(T_1\) multiplies by \(\exp(C_{\mathrm{factor}} P_{\mathrm{var}})\cos(\delta\psi+P_{\mathrm{var}})\). \(C_{\mathrm{factor}}=C_{\mathrm{eff}}P_{\mathrm{new}}\) is seed-derived. Neuroscience, medical, and “look” paths use it. QC stays dark on purpose.
+
+This is **not** a claim that every philosophical debate about mind is closed. It is a claim that observation is a **physical coupling** in the same scalar.
+
+**Code:** quirk_mod / `observed` in `fsot_compute.py` · `docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`
+
+---
+
+## C12 — One medium, siloed sciences
+
+**Said:** Fields that do not talk to each other are still in the same fluid. Newtonian gravity is not “wrong” when relativity arrives — it is the local readout. Siloed biology vs cosmology is the same mistake at the institution layer.
+
+**Engine:** \(\kappa_{ij}\) (C4) is how tanks talk. A domain is a fold, not a separate substance. When a residual is bad, **change \(D_{\mathrm{eff}}\)** (MATH_KEY mismatch rule). Do not add a coefficient to make biology ignore cosmology.
+
+**Application recipe:** [`APPLY.md`](APPLY.md)
+
+---
+
 ## C7 — Trinary (the shared alphabet)
 
 Spins and codons use the same three symbols:

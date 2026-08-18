@@ -41,7 +41,7 @@ FSOT calls this **As Above, So Below**. It is not poetry only — it is how the 
 
 Space and time are not an empty stage. They behave like a **25-dimensional fluid**. What we experience as 4D reality is a slice of that fluid. Matter, energy, and mind are patterns in the same substance.
 
-In that fluid a **black hole is a compression valve** (infall + POOF) and a **white hole is the outflow** (suction + re-solidification). Expanding regions sit in different **bubble-density sectors** of the same flow. That is why Planck, TRGB, and SH0ES can all be right *as instruments* and still disagree on one number — they are reading different sectors, not two cosmologies. Full map: [`CONCEPTS.md`](CONCEPTS.md).
+In that fluid a **black hole is a compression valve** (infall + POOF) and a **white hole is the outflow** (suction + re-solidification). That valve is an **information-flow state**. It is not only something in the sky — the same orifice pattern is how form changes while \(S\) is conserved. Expanding regions sit in different **bubble-density sectors** of the same flow. That is why Planck, TRGB, and SH0ES can all be right *as instruments* and still disagree on one number — they are reading different sectors, not two cosmologies. Creation and destruction are one yin–yang pair (POOF / SUCTION). Full map: [`CONCEPTS.md`](CONCEPTS.md).
 
 ### 3. Consciousness is part of the physics — not an afterthought
 
