@@ -59,6 +59,9 @@ Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 | Domain data | `data/*_benchmark.json` | Residual panels |
 | Concepts (BH/WH, bubble, folds, observer) | [`docs/CONCEPTS.md`](CONCEPTS.md) | Picture → engine map — read this before the atlas |
 | Consciousness kill map | [`docs/CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) | Live E_con 20.003601 vs 20.0 W — not the 21.79 W draft |
+| BH→WH / H₀ kill map | [`docs/BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md) | 25-tool bubble bleed; SH0ES stays 1% on the 2.5% band |
+| Conjugate / antimatter | [`docs/MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md) | \(\eta\) 0.004%; CPT identities |
+| Genetics sibling freeze | [`docs/GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) | 0.13 Å vs AF 0.47 Å (2026-08-17); MDS retired |
 | How Damian views the model | [`docs/FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md) | River, seepage, BH–WH, as-above-so-below — picture, not products |
 | Predictions (frozen) | `predictions/` | Timestamped / SHA-locked forecasts |
 | Results (outcomes) | `results/` | Literature + API outcomes after data lands |

@@ -1,7 +1,7 @@
 # FSOT vs AlphaFold — structure head-to-head
 
 > **Stale snapshot (2026-08-07).** This file is the **sequence-only bulk / orphan** path (~15 Å median).  
-> Current **product** freeze (same-data homologs, 2026-08-13) lives in [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics): median **0.13 Å** vs AlphaFold **0.47 Å** on 10 proteins.  
+> Current **product** freeze (same-data homologs, **2026-08-17**) lives in [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics): median **0.13 Å** vs AlphaFold **0.47 Å** on 10 proteins. 3-D MDS bulk is **retired** — this table is that old path only.  
 > Hub copy: [`../../results/siblings/genetics/PRODUCT_FREEZE.md`](../../results/siblings/genetics/PRODUCT_FREEZE.md).  
 > Do not quote this 15 Å table as the Genetics product.
 

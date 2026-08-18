@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T01:49:34.443925+00:00",
+  "generated_at": "2026-08-18T03:33:05.900416+00:00",
   "authority_pin_prefix": "D1D38A",
   "hub": "FSOT-2.1-Lean",
   "siblings": {
@@ -11,19 +11,31 @@
           "src": "data/product_vs_alphafold.json",
           "dest": "results\\siblings\\genetics\\product_vs_alphafold.json",
           "ok": true,
-          "bytes": 3457
+          "bytes": 3454
         },
         {
           "src": "docs/PRODUCT_FREEZE.md",
           "dest": "results\\siblings\\genetics\\PRODUCT_FREEZE.md",
           "ok": true,
-          "bytes": 3130
+          "bytes": 3319
+        },
+        {
+          "src": "docs/OPEN.md",
+          "dest": "results\\siblings\\genetics\\OPEN.md",
+          "ok": true,
+          "bytes": 2683
+        },
+        {
+          "src": "docs/AUDIT.md",
+          "dest": "results\\siblings\\genetics\\AUDIT.md",
+          "ok": true,
+          "bytes": 3053
         },
         {
           "src": "data/af_coverage.json",
           "dest": "results\\siblings\\genetics\\af_coverage.json",
           "ok": true,
-          "bytes": 7616
+          "bytes": 7563
         }
       ]
     },
@@ -35,7 +47,7 @@
           "src": "docs/STATUS.md",
           "dest": "results\\siblings\\quantum\\STATUS.md",
           "ok": true,
-          "bytes": 13093
+          "bytes": 15835
         },
         {
           "src": "docs/H0_TENSION.md",
@@ -74,12 +86,12 @@
     "pin": "D1D38A",
     "genetics_product": {
       "n": 10,
-      "fsot_product_median_A": 0.12847815425974882,
+      "fsot_product_median_A": 0.13251476526304168,
       "alphafold_median_A": 0.4706172512401575,
       "fsot_bulk_median_A": 13.574035917440511,
       "product_sub2A": 10,
       "free_parameters": 0,
-      "freeze": "2026-08-13"
+      "freeze": "2026-08-17"
     },
     "quantum_h0_bubble": {
       "overall_ok": true,

@@ -7,7 +7,7 @@ Not a peer-review lecture. These are the gaps that actually hide the work.
 
 - One pin (D1D38A), one law \(S=K(T_1+T_2+T_3)\), zero free parameters, executable kill criteria.
 - BH→WH **is** the Hubble story: one global rate, tool-sector densities, not two cosmologies.
-- Genetics product path is a real instrument (0.13 Å vs AF 0.47 Å, same-data, 10/10) **and** the bulk ceiling (~13.6 Å) is written honestly.
+- Genetics product path is a real instrument (0.13 Å vs AF 0.47 Å, same-data, 10/10, freeze 2026-08-17) **and** 3-D MDS bulk is retired (old ~13.6 Å is that path, not a live fold).
 - Quantum fold-not-Hilbert is the practical QC claim: jobs by domain fold, not \(2^n\).
 - Predictions vs results are now separate folders.
 
@@ -30,7 +30,7 @@ A new reader hit 472-domain tables and never met:
 
 | Surface | Hub had | Sibling now |
 |---------|---------|-------------|
-| AlphaFold table | 2026-08-07 bulk ~15 Å (1/8 wins) | 2026-08-13 product 0.13 Å, 10/10 |
+| AlphaFold table | 2026-08-07 bulk ~15 Å (1/8 wins) | 2026-08-17 product 0.13 Å, 10/10; MDS retired |
 | Quantum | not in RELATED_EMBODIMENTS | full QM/QC fold + H₀ replay |
 | RELATED_EMBODIMENTS | Genetics + Zig + GPU | Quantum added |
 

@@ -12,18 +12,21 @@ Machine report: [`sync_report.json`](sync_report.json)
 
 ## Genetics — [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics)
 
-Product freeze **2026-08-13** · `product_vs_alphafold.json`
+Product freeze **2026-08-17** · `product_vs_alphafold.json`
 
 | Metric | FSOT product | AlphaFold |
 |--------|-------------:|----------:|
 | Median Cα RMSD (10 proteins) | **0.13 Å** | **0.47 Å** |
-| Sub-2 Å | 10/10 | — |
-| Bulk / orphan (sequence-only) | 13.57 Å | — |
+| Sub-2 Å / beat AF | **10/10** | — |
+| Calmodulin | **0.52 Å** (3CLN) | 6.45 Å |
+| No measured map | F01–F15 only — **3-D MDS not emitted** | — |
 
 Product = measured homologs except the eval PDB + residual only when bonds are broken.  
-Bulk = F01–F15 from sequence. Do not mix the two.
+No-map = formulas only; the old ~13.6 Å figure is the retired `--force-bulk` MDS path. Do not mix the two.
 
-Files: [`genetics/PRODUCT_FREEZE.md`](genetics/PRODUCT_FREEZE.md)
+Hub skeptic map: [`docs/GENETICS_CLAIM_EVIDENCE.md`](../../docs/GENETICS_CLAIM_EVIDENCE.md)
+
+Files: [`genetics/PRODUCT_FREEZE.md`](genetics/PRODUCT_FREEZE.md) · [`genetics/OPEN.md`](genetics/OPEN.md)
 
 ## Quantum — [FSOT-Quantum](https://github.com/dappalumbo91/FSOT-Quantum)
 
@@ -38,4 +41,5 @@ Files: [`quantum/H0_TENSION.md`](quantum/H0_TENSION.md) · [`quantum/STATUS.md`]
 
 ## Theory map on this hub
 
-[`docs/CONCEPTS.md`](../../docs/CONCEPTS.md) — BH→WH, bubble bleed, \(\kappa_{ij}\), folds, genetics residual.
+[`docs/CONCEPTS.md`](../../docs/CONCEPTS.md) — BH→WH, bubble bleed, \(\kappa_{ij}\), folds, genetics residual.  
+Kill maps: [`BH_WH_CLAIM_EVIDENCE.md`](../../docs/BH_WH_CLAIM_EVIDENCE.md) · [`GENETICS_CLAIM_EVIDENCE.md`](../../docs/GENETICS_CLAIM_EVIDENCE.md) · [`MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](../../docs/MATTER_ANTIMATTER_CLAIM_EVIDENCE.md)

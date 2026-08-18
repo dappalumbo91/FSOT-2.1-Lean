@@ -7,7 +7,7 @@ The **same law** \(S = K(T_1+T_2+T_3)\) (pin **D1D38A**) routes cosmology, quant
 |---------|------------|------|
 | **This repo (law + multi-domain verification)** | https://github.com/dappalumbo91/FSOT-2.1-Lean | Scalar engine, Lean, multi-prover, domain green gates |
 | **Physical Archive (offline master)** | `I:\FSOT-Physical-Archive` | Full tree, caches, SR-ITE, verification reports |
-| **FSOT-Genetics** | https://github.com/dappalumbo91/FSOT-Genetics | Protein / codon **formula** branch (F01–F15). Product freeze 2026-08-13: same-data median **0.13 Å** vs AF **0.47 Å**. Bulk orphan ~13.6 Å. Not a neural net. |
+| **FSOT-Genetics** | https://github.com/dappalumbo91/FSOT-Genetics | Protein / codon **formula** branch. Product freeze **2026-08-17**: same-data median **0.13 Å** vs AF **0.47 Å** (10/10). No-map path: F01–F15 only — 3-D MDS **retired**. Not a neural net. |
 | **FSOT-Quantum** | https://github.com/dappalumbo91/FSOT-Quantum | QM / QC **fold** — jobs without Hilbert \(2^n\). Bleed \(\kappa_{ij}\), observe path QC→QO→QM, BH→WH H₀ replay. |
 | **Neural monorepo** | https://github.com/dappalumbo91/FSOT-2.1-Neural | Allen wet-lab, scalpel, Python battery |
 | **Zig neural mind** | https://github.com/dappalumbo91/fsot-neuron-zig | Fixed-lattice **neuroscience-domain engine** under D1D38A |

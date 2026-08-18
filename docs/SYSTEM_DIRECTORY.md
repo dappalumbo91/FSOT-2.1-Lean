@@ -91,7 +91,7 @@ Open **research** (not failed A/B): path-integral confinement uniqueness, spin-2
 
 | Repo | Job |
 |------|-----|
-| [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics) | Protein / codon product vs bulk |
+| [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics) | Protein / codon product 0.13 Å (2026-08-17); no-map MDS retired |
 | [FSOT-Quantum](https://github.com/dappalumbo91/FSOT-Quantum) | QM/QC folds, not Hilbert \(2^n\) |
 | [fsot-neuron-zig](https://github.com/dappalumbo91/fsot-neuron-zig) | Neural mind |
 | [FSOT-GPU](https://github.com/dappalumbo91/FSOT-GPU) | Owned operators |

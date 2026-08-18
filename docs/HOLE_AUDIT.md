@@ -1,7 +1,7 @@
 # Hole audit — fill by the paradigm, not by siloed habit
 
 **Date:** 2026-08-18  
-**Fill pass:** registry 48/48 · green **472/472** · empirical C_thin **1** (SH0ES only) · 7 founding now B_verified · consciousness honesty (live 20.003601 vs 20.0 W) · CONCEPTS C13 conjugate · names-only tech index · cross-proof **overall_ok**  
+**Fill pass:** registry 48/48 · green **472/472** · C_thin **1** (SH0ES on purpose) · consciousness / C13 / BH→WH claim maps · Genetics freeze **2026-08-17** (MDS retired) · cross-proof **overall_ok**  
 **Stance:** This is a real ToE *attempt* under frozen Label A/B. Holes are missing **interfaces, data, or articulation** — not invitations to add free parameters.
 
 Counts: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Apply protocol: [`APPLY.md`](APPLY.md).
@@ -37,7 +37,9 @@ These were in the math and ontology already. They were not on the front door.
 | Where is everything | [`SYSTEM_DIRECTORY.md`](SYSTEM_DIRECTORY.md) |
 | How Damian views the model | [`FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md) — river, seepage, BH/WH fridge-cycle, as-above-so-below |
 | Consciousness honesty (stale 21.79 W / 8.95%) | Live **20.003601 vs 20.0 W (0.018%)** · [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) · CONCEPTS **C11** |
-| Reverse / conjugate (matter–antimatter, “other face”) | CONCEPTS **C13** · [`MATTER_ANTIMATTER.md`](MATTER_ANTIMATTER.md) |
+| Reverse / conjugate (matter–antimatter, “other face”) | CONCEPTS **C13** · [`MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md) |
+| BH→WH / bubble H₀ skeptic map | [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md) |
+| Genetics freeze language (15 Å / 13.6 Å as live fold) | [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) — product **0.13 Å**; 3-D MDS **retired** |
 | Tech titles without unpublished specs | [`../data/publication/TECH_BLUEPRINTS_REGISTRY.md`](../data/publication/TECH_BLUEPRINTS_REGISTRY.md) names-only |
 
 ---
@@ -51,7 +53,7 @@ Do these with **real measured data** and the mismatch rule (wrong \(D_{\mathrm{e
 | **29 C_thin panels** | 9 process ledgers tagged. Continue fill + **founding archive literature** (7 laws → 20 rows each, B_verified). **1** science panel still thin on purpose (SH0ES 1% bubble-bleed). | median ≤ 0.5% on whatever rows are real |
 | Falsification registry vs living PREDs | **48/48** — rebuilt from `predictions/preregistered_predictions_manifest.yaml` + `results/outcomes/` | registry count matches prereg file |
 | Tool-row kills still `pending` | Score in `results/` when a survey paper lands (Euclid, JINR 119, PDG) | registered `kill_if` only |
-| Genetics **bulk** ~13–15 Å | Sibling work; hub only quotes **product vs bulk** labeled | do not claim sequence-only AF-beating |
+| Genetics **no-map** path | Sibling: F01–F15 only; 3-D MDS **retired**. Hub quotes 2026-08-17 freeze | do not claim sequence-only AF-beating; do not grind MDS |
 | T3/T4 uniqueness theorems | Gap report already lists them as **open research** | do not pretend path-integral confinement is proved |
 | Chapter docs vs live 472 | Domain chapter INDEX still useful; any “405/394” line gets a freeze banner | CURRENT_STATUS wins |
 

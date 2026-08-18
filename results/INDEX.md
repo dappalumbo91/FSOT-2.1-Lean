@@ -54,8 +54,8 @@ Headline copies from Genetics + Quantum: [`siblings/INDEX.md`](siblings/INDEX.md
 
 | Fold | Headline |
 |------|----------|
-| Genetics product | 0.13 Å median vs AF 0.47 Å (10 proteins, 2026-08-13) |
-| Genetics bulk | ~13.6 Å — orphan ceiling, not the product |
+| Genetics product | 0.13 Å median vs AF 0.47 Å (10 proteins, **2026-08-17**) |
+| Genetics no-map | F01–F15 only — 3-D MDS **retired** (old ~13.6 Å is that path) |
 | Quantum H₀ | BH→WH replay: Planck 0.024%, SH0ES 1.00% |
 | Quantum folds | 27/27 fold-not-Hilbert jobs |
 

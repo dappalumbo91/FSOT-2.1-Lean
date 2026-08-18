@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-13T03:17:19.826112+00:00",
+  "generated_at": "2026-08-18T02:49:56.346431+00:00",
   "doctrine": "Each AF3 job is a named FSOT system: measured homolog + residual at the ChemLink for that interface. 0 free parameters.",
   "jobs": {
     "protein_monomer": {
       "status": "product",
       "n": 10,
-      "fsot_median_A": 0.12847815425974882,
+      "fsot_median_A": 0.13251476526304168,
       "alphafold_median_A": 0.4706172512401575,
       "beats_af_median": true,
       "note": "same-data monomer C\u03b1 (exclude eval PDB)"
@@ -18,9 +18,9 @@
       "n_protein": 196,
       "n_dna": 21,
       "n_dna_springs": 18,
-      "protein_rmsd_A": 0.10739573869238672,
+      "protein_rmsd_A": 0.012581564670056958,
       "dna_c1_rmsd_A": 0.015678168523822023,
-      "template_protein": "7B47",
+      "template_protein": "9CHT",
       "domain": "Electromagnetism",
       "formula": "DNA is observer; protein residues sharing a base contact are residual-coupled at measured CA\u2013CA; DNA C1' transferred from homolog"
     },
@@ -31,8 +31,8 @@
       "n": 256,
       "n_metal_springs": 3,
       "n_site_residues": 3,
-      "protein_rmsd_A": 0.2789993490159826,
-      "metal_site_rmsd_A": 0.045165562112286714,
+      "protein_rmsd_A": 0.2555586419744521,
+      "metal_site_rmsd_A": 0.06082939665275942,
       "template": "1A42",
       "domain": "Atomic_Physics / Electromagnetism"
     },
@@ -43,8 +43,8 @@
       "n": 153,
       "n_metal_springs": 12,
       "n_site_residues": 7,
-      "protein_rmsd_A": 0.3556444075530406,
-      "metal_site_rmsd_A": 0.19320094961411888,
+      "protein_rmsd_A": 0.350021737102467,
+      "metal_site_rmsd_A": 0.26250431509897837,
       "template": "1HL4",
       "domain": "Atomic_Physics / Electromagnetism"
     },
@@ -57,158 +57,6 @@
       "coverage": 1.0,
       "c1_rmsd_A": 0.6801373917400425,
       "domain": "Chemistry / Biochemistry (RNA backbone C1')"
-    },
-    "protein_protein": {
-      "status": "ok",
-      "pdb": "1A3N",
-      "chains": "A+B",
-      "rmsd_A_A": 0.3168638310487282,
-      "rmsd_B_A": 0.34329419428335,
-      "dimer_rmsd_A": 0.446691287257601,
-      "interface_contact_mae_A": 0.17123622205204592,
-      "template": "1A00",
-      "partner_chain": "B",
-      "partner_identity": 0.993103448275862,
-      "domain": "Biochemistry (measured two-chain assembly)"
-    },
-    "all_atom_sidechains": {
-      "status": "ok",
-      "pdb": "1LZ1",
-      "n": 130,
-      "n_sc": 117,
-      "n_heavy_matched": 490,
-      "n_bb_matched": 0,
-      "ca_rmsd_A": 0.11765314029944425,
-      "sidechain_centroid_rmsd_A": 0.9319620844029083,
-      "sidechain_heavy_rmsd_A": 1.2640762876585323,
-      "backbone_heavy_rmsd_A": null,
-      "all_heavy_rmsd_A": 1.2640762876585323,
-      "n_sc_templates": 7,
-      "template": "1REX",
-      "domain": "Molecular_Chemistry"
-    },
-    "ptm_glycan": {
-      "status": "ok",
-      "pdb": "1NCA",
-      "chain": "N",
-      "n": 386,
-      "n_native_ptm": 4,
-      "n_template_ptm": 10,
-      "n_ptm_springs": 34,
-      "protein_rmsd_A": 0.5547485605501578,
-      "kinds": [
-        "glycan"
-      ],
-      "template": "4DGR",
-      "domain": "Molecular_Chemistry (PTM/glycan node)"
-    },
-    "antibody_cdr": {
-      "status": "ok",
-      "pdb": "1MLC",
-      "n": 214,
-      "n_superposed_cdr": 5,
-      "frac_superposed": 0.02336448598130841,
-      "ca_rmsd_A": 0.9441318818587253,
-      "cdr_rmsd_A": 0.5851742567524219,
-      "framework_rmsd_A": 0.8630435493840715,
-      "template": "1MLB",
-      "domain": "Biochemistry; CDR = Superposed (trit 0)"
-    },
-    "joint_forward": {
-      "status": "ok",
-      "pdb": "1TUP",
-      "protein_rmsd_A": 0.3915652385692323,
-      "sidechain_centroid_rmsd_A": 1.3629297555958555,
-      "sidechain_heavy_rmsd_A": 2.11593204969475,
-      "dna_c1_rmsd_A": 0.015678168523822023,
-      "has_dna": true,
-      "n_interface_springs": 24,
-      "n_collapses": 6,
-      "n_ptms": 0,
-      "template": "1TSR",
-      "engine": "fsot_predict_system"
-    },
-    "ptm_phospho": {
-      "status": "ok",
-      "pdb": "1ATP",
-      "chain": "E",
-      "n": 334,
-      "n_native_ptm": 2,
-      "n_template_ptm": 2,
-      "n_ptm_springs": 1,
-      "protein_rmsd_A": 0.7652970705919817,
-      "kinds": [
-        "phospho"
-      ],
-      "template": "1BKX",
-      "domain": "Molecular_Chemistry (phospho node)"
-    },
-    "protein_rna": {
-      "status": "ok",
-      "pdb": "1URN",
-      "protein_chain": "A",
-      "rna_chain": "P",
-      "n_protein": 96,
-      "n_rna": 17,
-      "n_rna_springs": 795,
-      "n_rna_aligned": 9,
-      "protein_rmsd_A": 1.6036596416101494,
-      "rna_c1_rmsd_A": 0.28408665354275736,
-      "template_protein": "3G8T",
-      "template_rna": "1M5K",
-      "domain": "Electromagnetism (RNA observer)"
-    },
-    "ligand": {
-      "status": "ok",
-      "pdb": "3PTB",
-      "chain": "A",
-      "n": 220,
-      "n_native_lig": 1,
-      "n_template_lig": 1,
-      "ligand_names": [
-        "0ZG",
-        "BEN"
-      ],
-      "n_ligand_springs": 111,
-      "n_site_residues": 16,
-      "protein_rmsd_A": 0.7663176139809684,
-      "ligand_site_rmsd_A": 0.23800304130793465,
-      "template": "2TLD",
-      "ligand_source": "1PPH",
-      "domain": "Molecular_Chemistry (ligand observer)"
-    },
-    "antibody_pair": {
-      "status": "ok",
-      "pdb": "1MLC",
-      "chains": "A+B",
-      "rmsd_H_A": 0.9332357131312059,
-      "rmsd_L_A": 1.049913938134505,
-      "pair_rmsd_A": 1.029566869355367,
-      "interface_contact_mae_A": 0.3959694391902492,
-      "template": "1MLB",
-      "partner_chain": "B",
-      "partner_identity": 1.0,
-      "domain": "Biochemistry (measured Fab assembly)"
-    },
-    "protein_tetramer": {
-      "status": "ok",
-      "pdb": "1A3N",
-      "chains": "A+B+C+D",
-      "per_chain_rmsd_A": [
-        0.3168638310487282,
-        0.34329419428335,
-        0.3068569513625243,
-        0.40181176038091343
-      ],
-      "tetramer_rmsd_A": 0.5076226402302874,
-      "template": "1A00",
-      "partner_chains": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "domain": "Biochemistry (measured four-chain assembly)"
     },
     "modified_na": {
       "status": "ok",
@@ -240,12 +88,163 @@
       "pdb": "1LZN",
       "n": 129,
       "n_native_h": 962,
-      "n_h_matched": 934,
+      "n_h_matched": 961,
       "ca_rmsd_A": 0.1278805685067897,
-      "hydrogen_rmsd_A": 1.914030097556529,
-      "template": "193L",
-      "hydrogen_source": "1IO5",
+      "hydrogen_rmsd_A": 1.0079914062081363,
+      "template": "1A2Y",
+      "hydrogen_source": "8RLH",
       "domain": "Atomic_Physics (neutron H)"
+    },
+    "protein_protein": {
+      "status": "ok",
+      "pdb": "1A3N",
+      "chains": "A+B",
+      "rmsd_A_A": 0.3168638310487282,
+      "rmsd_B_A": 0.34329419428335,
+      "dimer_rmsd_A": 0.446691287257601,
+      "interface_contact_mae_A": 0.17123622205204592,
+      "template": "1A00",
+      "partner_chain": "B",
+      "partner_identity": 0.993103448275862,
+      "domain": "Biochemistry (measured two-chain assembly)"
+    },
+    "all_atom_sidechains": {
+      "status": "ok",
+      "pdb": "1LZ1",
+      "n": 130,
+      "n_sc": 130,
+      "n_heavy_matched": 508,
+      "n_bb_matched": 520,
+      "ca_rmsd_A": 0.11765314029944425,
+      "sidechain_centroid_rmsd_A": 0.4083908925556804,
+      "sidechain_heavy_rmsd_A": 1.005256418023127,
+      "backbone_heavy_rmsd_A": 0.1283676264215411,
+      "all_heavy_rmsd_A": 0.7144791704596163,
+      "n_sc_templates": 1,
+      "template": "1REX",
+      "domain": "Molecular_Chemistry"
+    },
+    "ptm_glycan": {
+      "status": "ok",
+      "pdb": "1NCA",
+      "chain": "N",
+      "n": 386,
+      "n_native_ptm": 4,
+      "n_template_ptm": 10,
+      "n_ptm_springs": 34,
+      "protein_rmsd_A": 0.5626162471735413,
+      "kinds": [
+        "glycan"
+      ],
+      "template": "4DGR",
+      "domain": "Molecular_Chemistry (PTM/glycan node)"
+    },
+    "antibody_cdr": {
+      "status": "ok",
+      "pdb": "1MLC",
+      "n": 218,
+      "n_superposed_cdr": 1,
+      "ca_rmsd_A": 0.9332357131312059,
+      "cdr_rmsd_A": null,
+      "framework_rmsd_A": null,
+      "template": "1MLB",
+      "domain": "Biochemistry; CDR = Superposed (trit 0)"
+    },
+    "joint_forward": {
+      "status": "ok",
+      "pdb": "1TUP",
+      "protein_rmsd_A": 0.012581564670056958,
+      "sidechain_centroid_rmsd_A": 0.016203883155982715,
+      "sidechain_heavy_rmsd_A": 0.21447932909044418,
+      "dna_c1_rmsd_A": 0.015678168523822023,
+      "has_dna": true,
+      "n_interface_springs": 18,
+      "n_collapses": 112,
+      "n_ptms": 0,
+      "template": "1TSR",
+      "engine": "fsot_predict_system"
+    },
+    "ptm_phospho": {
+      "status": "ok",
+      "pdb": "1ATP",
+      "chain": "E",
+      "n": 334,
+      "n_native_ptm": 2,
+      "n_template_ptm": 2,
+      "n_ptm_springs": 1,
+      "protein_rmsd_A": 0.7596181015883045,
+      "kinds": [
+        "phospho"
+      ],
+      "template": "1BKX",
+      "domain": "Molecular_Chemistry (phospho node)"
+    },
+    "protein_rna": {
+      "status": "ok",
+      "pdb": "1URN",
+      "protein_chain": "A",
+      "rna_chain": "P",
+      "n_protein": 96,
+      "n_rna": 17,
+      "n_rna_springs": 795,
+      "n_rna_aligned": 9,
+      "protein_rmsd_A": 0.2282842459999742,
+      "rna_c1_rmsd_A": 0.28408665354275736,
+      "template_protein": "3G8T",
+      "template_rna": "1M5K",
+      "domain": "Electromagnetism (RNA observer)"
+    },
+    "ligand": {
+      "status": "ok",
+      "pdb": "3PTB",
+      "chain": "A",
+      "n": 220,
+      "n_native_lig": 1,
+      "n_template_lig": 1,
+      "ligand_names": [
+        "0ZG",
+        "BEN"
+      ],
+      "n_ligand_springs": 111,
+      "n_site_residues": 16,
+      "protein_rmsd_A": 0.8022150361701769,
+      "ligand_site_rmsd_A": 0.604246360837827,
+      "template": "2TLD",
+      "ligand_source": "1PPH",
+      "domain": "Molecular_Chemistry (ligand observer)"
+    },
+    "protein_tetramer": {
+      "status": "ok",
+      "pdb": "1A3N",
+      "chains": "A+B+C+D",
+      "per_chain_rmsd_A": [
+        0.3168638310487282,
+        0.34329419428335,
+        0.3068569513625243,
+        0.40181176038091343
+      ],
+      "tetramer_rmsd_A": 0.5076226402302874,
+      "template": "1A00",
+      "partner_chains": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "domain": "Biochemistry (measured four-chain assembly)"
+    },
+    "antibody_pair": {
+      "status": "ok",
+      "pdb": "1MLC",
+      "chains": "A+B",
+      "rmsd_H_A": 0.9332357131312059,
+      "rmsd_L_A": 1.049913938134505,
+      "pair_rmsd_A": 1.029566869355367,
+      "interface_contact_mae_A": 0.3959694391902492,
+      "template": "1MLB",
+      "partner_chain": "B",
+      "partner_identity": 1.0,
+      "domain": "Biochemistry (measured Fab assembly)"
     }
   },
   "covered_now": [
@@ -254,18 +253,18 @@
     "metal_caii",
     "metal_sod1",
     "rna",
+    "modified_na",
+    "hydrogens",
     "protein_protein",
     "all_atom_sidechains",
     "ptm_glycan",
-    "antibody_cdr",
     "joint_forward",
     "ptm_phospho",
     "protein_rna",
     "ligand",
-    "antibody_pair",
     "protein_tetramer",
-    "modified_na",
-    "hydrogens"
+    "antibody_pair",
+    "antibody_cdr"
   ],
   "not_yet": [],
   "free_parameters": 0

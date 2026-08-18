@@ -27,7 +27,7 @@ These are **different ledgers**. Using one number for all of them is the discrep
 | 1,863 atomic | older export; live is **2024** |
 | 61,445 scalar records | older envelope; live is **180,042** |
 | 536,740 records as the green envelope | older rollup; do not use as the 472-file gate |
-| 15 Å AlphaFold median as the Genetics **product** | 2026-08-07 **bulk** snapshot; product freeze is in FSOT-Genetics |
+| 15 Å / ~13.6 Å as the Genetics **product** or a live fold | 2026-08-07 retired MDS (`--force-bulk`). Live freeze **2026-08-17**: product **0.13 Å** vs AF **0.47 Å**. No-map path does **not** emit 3-D MDS. |
 | `E_con` ≈ 21.79 W / 8.95% | Retired Cosmology Lab / aggregate P21 draft; live Homo sapiens is **20.003601 vs 20.0 W (0.018%)** |
 
 ## Rule for writers and generators

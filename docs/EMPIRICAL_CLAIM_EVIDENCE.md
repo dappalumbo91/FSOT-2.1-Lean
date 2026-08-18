@@ -20,6 +20,9 @@ This is **not** a request for peer-review social status. It is a map from **publ
 | “Can’t reproduce” | Clean-clone path fails | `data/fresh_clone_corpus_mathlib_repro_report.md` |
 | “Formula authority drifted” | Pin mismatch or gate fail | `data/formula_authority_closure.json` |
 | “Consciousness is missing / 9% off” | Live Homo sapiens `brain_power_w` ≠ 20.003601 vs 20.0 (0.018%) | [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) |
+| “No antimatter / reverse world” | Matter_Antimatter pooled ≠ 0.0% or \(\eta\) leaves 6.14×10⁻¹⁰ | [`MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md) |
+| “No BH/WH / Hubble is two universes” | Cycle panel leaves 0.026% or Planck leaves 0.024% | [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md) |
+| “Genetics is 15 Å / they replaced AF from sequence” | Product freeze ≠ 0.13 Å vs 0.47 Å or MDS re-emitted as product | [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) |
 
 Insults without running these are **not a scientific rebuttal**.
 
@@ -108,4 +111,7 @@ If a critic finds a real fail: open an issue with the command, log, and commit S
 - Mathlib campaign: `docs/MATHLIB_REDERIVATION_CAMPAIGN.md`  
 - Reality OS status (paused for this monorepo): sibling `FSOT-Reality-OS` → `docs/STATUS_AND_NEXT.md`  
 - Consciousness claim map: [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md)  
-- Picture → engine: [`CONCEPTS.md`](CONCEPTS.md) C11 / C13
+- Conjugate (C13): [`MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md)  
+- BH→WH (C2/C3/C10): [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md)  
+- Genetics (C6): [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md)  
+- Picture → engine: [`CONCEPTS.md`](CONCEPTS.md) C2 / C6 / C11 / C13

@@ -57,6 +57,7 @@ infall (BH)  →  POOF (orifice)  →  outflow (WH)
 **Conservation claim:** core scalars \(S, T_1, T_3\) are the invariants. Representation can change. The cycle cost is an engineering proxy, not a new seed.
 
 **Code:** `scripts/bubble_bleed_physics.py` · panel `data/blackhole_whitehole_cycle_live_panel_benchmark.json`  
+**Skeptic map:** [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md)  
 **Desktop prototype:** `Desktop/FSOT_BlackHole_WhiteHole/`  
 **Predictions that use this:** [`../predictions/EXPLAINED.md`](../predictions/EXPLAINED.md) §3
 
@@ -85,6 +86,7 @@ H_0^{\mathrm{tool}} = H_0^{\mathrm{global}}\,(1 + \rho_{\mathrm{sector}}\,\varep
 There is **not** one H₀ every instrument is “supposed” to see. Kill a *tool row*, not the whole sky.
 
 **Code:** `scripts/bubble_bleed_physics.py` · `predictions/h0_multi_tool_predictions.json`  
+**Skeptic map:** [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md)  
 **Sibling replay:** FSOT-Quantum `docs/H0_TENSION.md` (Planck 0.024%, SH0ES 1.00% on the 2.5% contested band)
 
 ---
@@ -130,16 +132,16 @@ Looking at QC flips the compute identity. That is the Hilbert move. Do not do it
 r = 1 + |S_{\mathrm{domain}}|\cdot P_{\mathrm{NEW}},\qquad P_{\mathrm{NEW}}=(\gamma/e)\sqrt{2}
 \]
 
-Two regimes, keep them separate:
+Two regimes, keep them separate. Freeze **2026-08-17** in [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics):
 
-| Regime | What it is | Freeze (2026-08-13) |
-|--------|------------|---------------------:|
-| **Product** | measured homolog Cα except the eval PDB + residual only when bonds are broken | median **0.13 Å** vs AF **0.47 Å** (10/10) |
-| **Bulk / orphan** | sequence-only F01–F15 | median **~13.6 Å** — information ceiling, not a bug |
+| Regime | What it is | Live number |
+|--------|------------|-------------|
+| **Product** | measured homolog Cα except the eval PDB + residual only when bonds are broken | median **0.13 Å** vs AF **0.47 Å** (10/10; CaM **0.52 Å** via 3CLN) |
+| **No measured map** | sequence-only F01–F15 (Rg, secondary). **3-D MDS is not emitted** | we do not invent a fold. Old ~11–14 Å is the retired `--force-bulk` MDS path |
 
-The 2026-08-07 Lean file `predictions/reports/FSOT_VS_ALPHAFOLD_STRUCTURE.md` is the **bulk** snapshot (~15 Å). Do not quote it as the product.
+The 2026-08-07 Lean file `predictions/reports/FSOT_VS_ALPHAFOLD_STRUCTURE.md` is that **retired MDS** snapshot (~15 Å). Do not quote it as the product.
 
-**Repo:** [FSOT-Genetics](https://github.com/dappalumbo91/FSOT-Genetics)
+**Skeptic map:** [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md)
 
 ---
 
@@ -200,7 +202,8 @@ Micro: codon / protein / QC collapse is the same valve — trit 0 is the superpo
 
 Matter is not created or destroyed. **Form** changes. \(S\), \(T_1\), \(T_3\) are the invariants the cycle is scored against.
 
-**Code:** `scripts/bubble_bleed_physics.py` · BH/WH panel · Quantum observe path QC→QO→QM
+**Code:** `scripts/bubble_bleed_physics.py` · BH/WH panel · Quantum observe path QC→QO→QM  
+**Skeptic map:** [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md)
 
 ---
 
@@ -263,7 +266,8 @@ This is the same yin–yang as **C9**, written as a phase flip instead of a POOF
 | Death = decoherence, information persists | interpretive — no cemetery catalog |
 | Reverse-world travel / PFLT as a destination | interpretive — do not residual-gate a travelogue |
 
-**Code:** `vendor/fsot_matter_antimatter.py` · `data/matter_antimatter_benchmark.json`
+**Code:** `vendor/fsot_matter_antimatter.py` · `data/matter_antimatter_benchmark.json`  
+**Skeptic map:** [`MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md)
 
 ---
 

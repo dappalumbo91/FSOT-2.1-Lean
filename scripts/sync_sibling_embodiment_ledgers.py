@@ -31,6 +31,8 @@ CANDIDATES = {
 GENETICS_FILES = [
     ("data/product_vs_alphafold.json", "product_vs_alphafold.json"),
     ("docs/PRODUCT_FREEZE.md", "PRODUCT_FREEZE.md"),
+    ("docs/OPEN.md", "OPEN.md"),
+    ("docs/AUDIT.md", "AUDIT.md"),
     ("data/af_coverage.json", "af_coverage.json"),
 ]
 
@@ -94,7 +96,7 @@ def main() -> int:
             "fsot_bulk_median_A": s.get("fsot_bulk_median_A"),
             "product_sub2A": s.get("product_sub2A"),
             "free_parameters": s.get("free_parameters"),
-            "freeze": "2026-08-13",
+            "freeze": "2026-08-17",
         }
     h0 = OUT / "quantum" / "h0_tension.json"
     if h0.is_file():

@@ -75,5 +75,7 @@ Generators that used to reprint 21.79 W were updated with this pass. If a builde
 
 - Empirical envelope (all domains): [`EMPIRICAL_CLAIM_EVIDENCE.md`](EMPIRICAL_CLAIM_EVIDENCE.md)  
 - Observer stack: [`CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md)  
-- Matter / antimatter conjugate: [`MATTER_ANTIMATTER.md`](MATTER_ANTIMATTER.md)  
+- Matter / antimatter conjugate: [`MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md)  
+- BH→WH valves: [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md)  
+- Genetics freeze: [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md)  
 - Tech titles only (not consciousness math): [`../data/publication/TECH_BLUEPRINTS_REGISTRY.md`](../data/publication/TECH_BLUEPRINTS_REGISTRY.md)

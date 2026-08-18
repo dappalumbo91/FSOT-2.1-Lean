@@ -1,4 +1,4 @@
-# Product freeze — structure path (2026-08-13)
+# Product freeze — structure path (2026-08-17)
 
 **Marked results.** Do not silently overwrite this table. Remaining misses: `docs/OPEN.md`. Audit: `docs/AUDIT.md`.
 
@@ -13,14 +13,15 @@ are clustered (`trit_consensus`); residual ranks inside a collapse; the
 apparatus is scored across collapses. NMR ensembles are Superposed (trit 0)
 and never residual-best. Intact measured transfers are not bond-idealized
 (wrong interface). A near-self sequence search (id ≥ 1/φ) recovers crystals
-the 0.25/80 search buried.
+the 0.25/80 search buried. UniRef100 other-accession xrefs admit isoform
+crystals the query UniProt page never lists (CaM 3CLN / P0DP29).
 
 | metric | value |
 |--------|------:|
 | AlphaFold median Cα RMSD | **0.47 Å** |
 | FSOT **product** median | **0.13 Å** |
 | FSOT template median | **0.13 Å** |
-| FSOT bulk (orphan) median | 13.57 Å |
+| FSOT bulk (orphan) median | 13.57 Å (fallback only — **not** the product) |
 | Product within 1.5 Å of AF | **10/10** |
 | Product sub-2 Å | **10/10** |
 | Fair-cap 0.95 median (handicap) | 1.14 Å |
@@ -33,12 +34,12 @@ Notable product Cα RMSDs:
 | Ubiquitin | 0.09 | 0.88 (product wins) |
 | RNase A | 0.09 | 0.33 (product wins) |
 | SOD1 | 0.10 | 0.29 (product wins) |
-| Lysozyme | 0.12 | 0.42 (product wins) |
+| Lysozyme | 0.13 | 0.42 (product wins) |
 | Insulin | 0.14 | 4.51 (product wins) |
 | CAII | 0.14 | 0.36 (product wins) |
 | Hb α | 0.21 | 0.27 (product wins) |
 | Hb β | 0.22 | 0.52 (product wins) |
-| Calmodulin | 0.90 | 6.45 (product wins) |
+| Calmodulin | 0.52 | 6.45 (product wins) |
 
 ## What the product *is*
 
@@ -61,7 +62,7 @@ measured homolog Cα
 
 - Geometric shotgun (medoid-all, false contacts, residual springs that tank median).
 - Bond-idealizing an already-intact crystal (that was 1EXR 0.80→1.16).
-- Claiming AlphaFold-beating bulk fold without more measured coverage / hardware path.
+- Claiming AlphaFold-beating bulk fold. 3-D MDS bulk is retired as a product (`no_measured_map`). F01–F15 formulas remain.
 
 ## What we *are* doing next
 

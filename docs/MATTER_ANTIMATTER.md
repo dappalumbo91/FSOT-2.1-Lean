@@ -3,7 +3,8 @@
 **Module:** `vendor/fsot_matter_antimatter.py`  
 **Benchmark:** `data/matter_antimatter_benchmark.json`  
 **Research:** `data/matter_antimatter_research.json`  
-**Builder:** `python scripts/build_matter_antimatter_benchmark.py`
+**Builder:** `python scripts/build_matter_antimatter_benchmark.py`  
+**Skeptic map:** [`MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md)
 
 ---
 
