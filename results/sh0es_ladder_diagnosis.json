@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-08-18T03:38:05.331953+00:00",
+  "pin": "D1D38A",
+  "policy": "do_not_retune_rho_to_hit_73.04",
+  "h0_global": 68.44005682979427,
+  "epsilon": 0.015431,
+  "class_bin": {
+    "name": "sh0es_hst_cepheid",
+    "rho_assigned": 5.05,
+    "fsot": 73.773354,
+    "literature": 73.04,
+    "error_pct": 1.004045,
+    "rho_implied_by_73_04": 4.3556,
+    "overshoot_km_s_mpc": 0.7334
+  },
+  "host_mixture_already_computed": {
+    "host_count": 22,
+    "anchor_count": 2,
+    "cepheid_host_count": 20,
+    "anchor_h0": [
+      70.2149,
+      70.3886
+    ],
+    "cepheid_host_span": [
+      73.4704,
+      74.1642
+    ],
+    "host_mean_fsot_h0": 73.302397,
+    "error_vs_73_04_pct": 0.3593
+  },
+  "class_means_error_pct": {
+    "early_universe_cmb": 0.0339,
+    "intermediate_ladder": 0.5295,
+    "local_ladder_cepheid": 1.0867
+  },
+  "tools": [
+    {
+      "name": "planck_cmb_local",
+      "tool_class": "early_universe_cmb",
+      "literature": 67.4,
+      "fsot": 67.383958,
+      "rho_assigned": -1.0,
+      "rho_implied_by_literature": -0.9848,
+      "rho_overshoot": -0.0152,
+      "error_pct": 0.023801
+    },
+    {
+      "name": "tdcosmo_conservative",
+      "tool_class": "strong_lens_time_delay",
+      "literature": 67.4,
+      "fsot": 67.436763,
+      "rho_assigned": -0.95,
+      "rho_implied_by_literature": -0.9848,
+      "rho_overshoot": 0.0348,
+      "error_pct": 0.054545
+    },
+    {
+      "name": "planck_plus_bao_combo",
+      "tool_class": "early_universe_cmb",
+      "literature": 67.66,
+      "fsot": 67.647983,
+      "rho_assigned": -0.75,
+      "rho_implied_by_literature": -0.7386,
+      "rho_overshoot": -0.0114,
+      "error_pct": 0.017761
+    },
+    {
+      "name": "sn_h0_no_local_cal",
+      "tool_class": "snia_early_calibrated",
+      "literature": 67.8,
+      "fsot": 67.806398,
+      "rho_assigned": -0.6,
+      "rho_implied_by_literature": -0.6061,
+      "rho_overshoot": 0.0061,
+      "error_pct": 0.009436
+    },
+    {
+      "name": "act_dr6_cmb",
+      "tool_class": "early_universe_cmb",
+      "literature": 67.9,
+      "fsot": 67.859203,
+      "rho_assigned": -0.55,
+      "rho_implied_by_literature": -0.5114,
+      "rho_overshoot": -0.0386,
+      "error_pct": 0.060084
+    },
+    {
+      "name": "spt3g_cmb",
+      "tool_class": "early_universe_cmb",
+      "literature": 68.3,
+      "fsot": 68.281642,
+      "rho_assigned": -0.15,
+      "rho_implied_by_literature": -0.1326,
+      "rho_overshoot": -0.0174,
+      "error_pct": 0.026878
+    },
+    {
+      "name": "global_cmb_background",
+      "tool_class": "fsot_global",
+      "literature": 68.44005682979427,
+      "fsot": 68.440057,
+      "rho_assigned": 0.0,
+      "rho_implied_by_literature": 0.0,
+      "rho_overshoot": 0.0,
+      "error_pct": 0.0
+    },
+    {
+      "name": "desi_bao_rs_anchored",
+      "tool_class": "bao_intermediate",
+      "literature": 68.52,
+      "fsot": 68.524545,
+      "rho_assigned": 0.08,
+      "rho_implied_by_literature": 0.0757,
+      "rho_overshoot": 0.0043,
+      "error_pct": 0.006633
+    },
+    {
+      "name": "sdss_bao_class",
+      "tool_class": "bao_intermediate",
+      "literature": 68.6,
+      "fsot": 68.598472,
+      "rho_assigned": 0.15,
+      "rho_implied_by_literature": 0.1514,
+      "rho_overshoot": -0.0014,
+      "error_pct": 0.002228
+    },
+    {
+      "name": "wmap9_cmb",
+      "tool_class": "early_universe_cmb",
+      "literature": 70.0,
+      "fsot": 69.9714,
+      "rho_assigned": 1.45,
+      "rho_implied_by_literature": 1.4771,
+      "rho_overshoot": -0.0271,
+      "error_pct": 0.040858
+    },
+    {
+      "name": "gw_standard_siren",
+      "tool_class": "multi_messenger_siren",
+      "literature": 70.0,
+      "fsot": 70.024205,
+      "rho_assigned": 1.5,
+      "rho_implied_by_literature": 1.4771,
+      "rho_overshoot": 0.0229,
+      "error_pct": 0.034578
+    },
+    {
+      "name": "trgb_ground_class",
+      "tool_class": "intermediate_ladder",
+      "literature": 69.6,
+      "fsot": 70.256546,
+      "rho_assigned": 1.72,
+      "rho_implied_by_literature": 1.0983,
+      "rho_overshoot": 0.6217,
+      "error_pct": 0.943314
+    },
+    {
+      "name": "freedman_jwst",
+      "tool_class": "intermediate_ladder",
+      "literature": 70.39,
+      "fsot": 70.393839,
+      "rho_assigned": 1.85,
+      "rho_implied_by_literature": 1.8464,
+      "rho_overshoot": 0.0036,
+      "error_pct": 0.005454
+    },
+    {
+      "name": "carnegie_h0",
+      "tool_class": "intermediate_ladder",
+      "literature": 69.8,
+      "fsot": 70.594498,
+      "rho_assigned": 2.04,
+      "rho_implied_by_literature": 1.2877,
+      "rho_overshoot": 0.7523,
+      "error_pct": 1.138249
+    },
+    {
+      "name": "h0_bridge_scalar",
+      "tool_class": "fsot_bridge",
+      "literature": 70.75,
+      "fsot": 70.763474,
+      "rho_assigned": 2.2,
+      "rho_implied_by_literature": 2.1872,
+      "rho_overshoot": 0.0128,
+      "error_pct": 0.019044
+    },
+    {
+      "name": "jagb_miras_class",
+      "tool_class": "intermediate_ladder",
+      "literature": 70.9,
+      "fsot": 70.921888,
+      "rho_assigned": 2.35,
+      "rho_implied_by_literature": 2.3293,
+      "rho_overshoot": 0.0207,
+      "error_pct": 0.030872
+    },
+    {
+      "name": "fsot_document_local",
+      "tool_class": "fsot_local_bubble",
+      "literature": 72.1,
+      "fsot": 71.766767,
+      "rho_assigned": 3.15,
+      "rho_implied_by_literature": 3.4655,
+      "rho_overshoot": -0.3155,
+      "error_pct": 0.462181
+    },
+    {
+      "name": "jwst_cepheid_riess",
+      "tool_class": "local_ladder_cepheid",
+      "literature": 72.6,
+      "fsot": 73.456525,
+      "rho_assigned": 4.75,
+      "rho_implied_by_literature": 3.939,
+      "rho_overshoot": 0.811,
+      "error_pct": 1.179786
+    },
+    {
+      "name": "sh0es_hst_cepheid",
+      "tool_class": "local_ladder_cepheid",
+      "literature": 73.04,
+      "fsot": 73.773354,
+      "rho_assigned": 5.05,
+      "rho_implied_by_literature": 4.3556,
+      "rho_overshoot": 0.6944,
+      "error_pct": 1.004045
+    },
+    {
+      "name": "sh0es_jwst",
+      "tool_class": "local_ladder_cepheid",
+      "literature": 73.04,
+      "fsot": 73.826159,
+      "rho_assigned": 5.1,
+      "rho_implied_by_literature": 4.3556,
+      "rho_overshoot": 0.7444,
+      "error_pct": 1.076341
+    },
+    {
+      "name": "h0licow_tdcosmo",
+      "tool_class": "strong_lens_time_delay",
+      "literature": 73.3,
+      "fsot": 73.984574,
+      "rho_assigned": 5.25,
+      "rho_implied_by_literature": 4.6018,
+      "rho_overshoot": 0.6482,
+      "error_pct": 0.933935
+    },
+    {
+      "name": "surface_brightness_fluctuations",
+      "tool_class": "local_ladder_sbf",
+      "literature": 73.3,
+      "fsot": 74.037379,
+      "rho_assigned": 5.3,
+      "rho_implied_by_literature": 4.6018,
+      "rho_overshoot": 0.6982,
+      "error_pct": 1.005974
+    },
+    {
+      "name": "pantheon_plus_shoes_cal",
+      "tool_class": "local_ladder_snia",
+      "literature": 73.5,
+      "fsot": 74.090184,
+      "rho_assigned": 5.35,
+      "rho_implied_by_literature": 4.7912,
+      "rho_overshoot": 0.5588,
+      "error_pct": 0.802971
+    },
+    {
+      "name": "megamaser_cosmology",
+      "tool_class": "geometric_maser",
+      "literature": 73.9,
+      "fsot": 74.512623,
+      "rho_assigned": 5.75,
+      "rho_implied_by_literature": 5.1699,
+      "rho_overshoot": 0.5801,
+      "error_pct": 0.82899
+    },
+    {
+      "name": "tully_fisher_class",
+      "tool_class": "local_ladder_tf",
+      "literature": 75.1,
+      "fsot": 75.146282,
+      "rho_assigned": 6.35,
+      "rho_implied_by_literature": 6.3062,
+      "rho_overshoot": 0.0438,
+      "error_pct": 0.061628
+    }
+  ],
+  "unsolved": [
+    "published_SH0ES_H0_is_a_three_rung_mixture_not_one_sector",
+    "cepheid_PL_metallicity_crowding_inside_SN_hosts",
+    "60deg_RA_bins_are_coarser_than_host_geography",
+    "no_per_host_published_H0_to_score_sightlines_individually"
+  ]
+}

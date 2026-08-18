@@ -19,13 +19,13 @@ This page is **not** a gadget spec. Warp / portal titles stay on the [names-only
 | Global H₀ from Cosmology wave1 | \(H_0^{\mathrm{global}}\approx 68.440\) | same + Quantum replay | 1 | identity vs engine | do not average 67.4 and 73 |
 | Bleed fraction | \(\varepsilon=H_0^{\mathrm{global}}/67.4-1\approx 0.015431\) | same | 1 | Cosmology-vs-Planck offset — **not a fit** | pin must still produce 68.440 |
 | Planck CMB = depleted sector \(\rho=-1\) | tool row `planck_cmb_local` | Quantum `results/siblings/quantum/h0_tension.json` | 1 | **67.384 vs 67.4 (0.024%)** | 2.5% contested band |
-| SH0ES = inflated sector \(\rho=5.05\) | tool row SH0ES | same | 1 | **73.773 vs 73.04 (1.00%)** | stays on the **2.5% contested band** — do **not** stuff into the 0.5% green gate |
+| SH0ES = inflated sector \(\rho=5.05\) | tool row SH0ES | same | 1 | **73.773 vs 73.04 (1.00%)** | stays on the **2.5% contested band** — do **not** stuff into the 0.5% green gate. Why: [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) |
 | Bubble-bleed cosmology panel | sector / nebula / FRB overlays | `data/cosmology_bubble_bleed_benchmark.json` | 110 | **0.0%** pooled | `audit_all_benchmark_margins.py` |
 | Sibling replay (same pin) | FSOT-Quantum H₀ suite | `results/siblings/quantum/H0_TENSION.md` | 3 rows | `overall_ok: true` | `python -m fsot_quantum.h0_tension` |
 
 Valve constants (engine, not new seeds): POOF ≈ 0.1535 · SUCTION ≈ 0.1470 · \(C_{\mathrm{eff}}\) ≈ 0.9577.
 
-PRED-001 (H₀ bridge) stays in `predictions/`. Score the outcome in `results/` when the next survey paper lands. Until then SH0ES **1%** is an honest tool-row residual on the contested band.
+PRED-001 (H₀ bridge) stays in `predictions/`. Score the outcome in `results/` when the next survey paper lands. Until then SH0ES **1%** is an honest *class-bin* residual: the published 73.04 is a three-rung mixture (anchors ~70.3 + Cepheid SN hosts ~73.5–74.2). Host-mean already on disk is **73.302 (0.36%)**. Do not retune ρ 5.05 → 4.36. Diagnosis: [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md).
 
 ---
 
