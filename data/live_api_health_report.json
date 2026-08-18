@@ -213,11 +213,12 @@
     },
     {
       "channel": "open_mast_astroquery",
-      "status": "fail",
-      "error_type": "RuntimeError",
-      "error": "ModuleNotFoundError: No module named 'astroquery'"
+      "status": "ok",
+      "detail": "rows_total=1588 returned=2 auth=none_public"
     }
   ],
-  "fail_count": 5,
-  "ok_count": 37
+  "fail_count": 4,
+  "ok_count": 38,
+  "mast_reverified_at": "2026-08-18T01:45:00+00:00",
+  "mast_note": "astroquery 0.4.11 + astropy 8.0.1 installed; required in requirements.txt; live HST/M1 query returned 1588 public images"
 }

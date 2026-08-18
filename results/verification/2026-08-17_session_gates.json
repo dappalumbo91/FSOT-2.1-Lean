@@ -39,6 +39,14 @@
       "partial": 1,
       "awaiting": 5,
       "kill": 0
+    },
+    "live_api_health": {
+      "command": "python scripts/live_api_health_check.py",
+      "ok": 38,
+      "fail": 4,
+      "mast": "ok",
+      "mast_rows_total": 1588,
+      "mast_packages": "astroquery 0.4.11 + astropy 8.0.1 required"
     }
   },
   "archive_sync_note": {

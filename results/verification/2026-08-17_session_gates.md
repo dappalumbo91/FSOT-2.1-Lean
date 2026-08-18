@@ -11,7 +11,7 @@ Physical archive: `I:\FSOT-Physical-Archive`
 | Green envelope | `python scripts/audit_all_benchmark_margins.py` | **472/472 PASS**, 0 fail, worst scalar 0.4989% (`Phi_Morphogenetic_Scaling`) |
 | Prediction monitor | `python scripts/run_prediction_monitor.py --online` | 14 watches · 8 local green hold · 1 data_available · **0 gate fail** |
 | Literature xref | `results/literature/2026-08-17_crossref.md` | 4 hold · 1 partial · 5 awaiting · **0 kill** |
-| Live APIs | `python scripts/live_api_health_check.py` | **37/42 ok** · 4 transient source fails · 1 optional MAST skip |
+| Live APIs | `python scripts/live_api_health_check.py` | **38/42 ok** · MAST live (1588 HST/M1) · 4 transient source fails |
 
 ## Not re-run this session (already GREEN on disk)
 
