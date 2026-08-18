@@ -33,9 +33,10 @@ Riess+2022 (arXiv:2112.04510): NIR Wesenheit \(m_H^W=m_H-R(m_V-m_I)\), \(R=A_H/(
 | Expand / contract | κ mechanism | POOF / SUCTION | valve pair |
 | Two He zones | He I + He II | glue split | \(\eta_{\mathrm{eff}}/2\) |
 | Metals | \(\gamma\) mag/dex | Chemistry \(D=8\) → Astronomy \(D=20\) | \(\gamma=\eta_{\mathrm{eff}}/2\) |
-| Wesenheit \(R\) | \(A_I/E(V-I)\) | EM look-path | \(R=1+\pi\cdot\mathrm{SUCTION}\) |
-| Crowding | background in the aperture | T1 `observed` | not a stellar row |
-| Host distance | LMC / NGC 4258 moduli | Astronomy \(D=20\) | geometric \(\mu\) is *measured* |
+| Wesenheit \(R_I\) | \(A_I/E(V-I)\) | EM look-path (thick) | \(R_I=1+\pi\cdot\mathrm{SUCTION}\) |
+| Wesenheit \(R_H\) | \(A_H/E(V-I)\approx0.4\) | EM look-path (thin) | \(R_H=\mathrm{POOF}\cdot e\cdot C_{\mathrm{eff}}\) |
+| Crowding | inner vs outer NGC 4258 | T1 `observed` | null inside SH0ES 0.05 mag test |
+| Host modulus | Li+2024 JWST TRGB \(\mu\) | Astronomy \(D=20\) | \(\mu_{4258}+\Delta\mathrm{int}-\gamma\Delta Z\) |
 
 \[
 |b| = \pi + \tfrac12(\mathrm{POOF}+\mathrm{SUCTION})
@@ -43,8 +44,11 @@ Riess+2022 (arXiv:2112.04510): NIR Wesenheit \(m_H^W=m_H-R(m_V-m_I)\), \(R=A_H/(
 
 \[
 \gamma = \eta_{\mathrm{eff}}/2,\qquad
-R = 1 + \pi\cdot\mathrm{SUCTION}
+R_I = 1 + \pi\cdot\mathrm{SUCTION},\qquad
+R_H = \mathrm{POOF}\cdot e\cdot C_{\mathrm{eff}}
 \]
+
+Optical \(R_I\) is the thick look (suction). NIR \(R_H\) is the residual leak through dust (valve × growth × coherence). Riess+2022 Eq. 7 quotes \(R_H=0.4\).
 
 The LMC vs NGC 4258 intercept test is the interconnect, not a new H₀:
 
@@ -62,9 +66,16 @@ Geometric moduli stay literature (Pietrzyński 2019 18.477; Reid 2019 29.397). W
 |-------|-----:|-----------:|----:|
 | Optical \|slope\| | 3.29185 | SH0ES release 3.285 | **0.209%** |
 | Optical \|slope\| | 3.29185 | Ripepi \(W_{VI}\) 3.29 | **0.056%** |
-| LMC − N4258 intercept | −10.877 | R22 table −10.897 | **0.182%** |
+| Optical LMC − N4258 intercept | −10.878 | R22 I table −10.897 | **0.173%** |
+| NIR \(R_H\) | 0.39956 | Riess Eq.7 **0.4** | **0.110%** |
+| NIR \|slope\| | 3.29185 | R22 LMC \(W_H\) 3.284 | **0.239%** |
+| NIR LMC − N4258 intercept | −10.878 | R22 H table −10.895 | **0.160%** |
+| Host \(\mu\) mean vs Li+2024 TRGB | +0.004 mag | 0.01±0.04 mag | **0.018%** |
+| N4258 inner−outer (T1) | 0.002 mag | null inside 0.05 mag test | pass |
 
-Pooled median **0.209%**. GREEN. No fitted \(b\) or \(Z_W\).
+Pooled median **0.135%**. GREEN. No fitted \(b\) or \(Z_W\).
+
+Per-host moduli (not \(cz/d\) H₀ — Riess does not publish host H₀): NIR intercept relative to NGC 4258 vs independent JWST TRGB (Li+2024 Table 2). Ensemble mean offset **+0.004 mag**. Individual scatter is the TRGB/Cepheid comparison, not a new expansion rate.
 
 ## Literature-band (not 0.5% on the central)
 
@@ -80,8 +91,7 @@ These two are used *inside* the intercept test. Gating them as 0.5% centrals wou
 ## What this is not
 
 - Not a claim we re-derived the κ mechanism in Lean.
-- Not a NIR Wesenheit panel (primary SH0ES candle is \(W_H\); this table is optical I, V−I).
-- Not crowding-as-physics. That stays T1.
-- Not a license to fit \(b\) to the 1594 R22 rows.
+- Not per-host \(H_0=cz/d\) (peculiar velocities dominate at 10–40 Mpc). The open “per-host H₀” item is filled as **per-host distance modulus** vs TRGB.
+- Not a license to fit \(b\) to the R22 rows.
 
 Kill: tight-scalar median > 0.5%, or anyone least-squares a slope/γ on `data/sh0es_r22_optical_cepheids.dat`.

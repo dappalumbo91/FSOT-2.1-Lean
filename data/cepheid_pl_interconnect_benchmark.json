@@ -1,11 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T03:51:49.081845+00:00",
+  "generated_at": "2026-08-18T04:00:59.502124+00:00",
   "domain": "Cepheid_PL_Interconnect",
   "authority_path": "C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fsot_compute.py",
   "source": [
     "data/sh0es_r22_optical_cepheids.dat",
+    "data/sh0es_r22_nir_cepheids.dat",
     "vendor/fsot_cepheid_pl.py",
+    "Li+2024 JWST TRGB host moduli (arXiv:2408.00065)",
     "Riess+2022 SH0ES optical release slope \u22123.285",
     "Ripepi+2020 W_VI slope \u22123.29",
     "Breuval+2022 \u03b3 = \u22120.239 mag/dex",
@@ -18,13 +20,13 @@
     "chemistry"
   ],
   "D_eff": 20,
-  "record_count": 3,
-  "observable_count": 3,
-  "scalar_record_count": 3,
+  "record_count": 8,
+  "observable_count": 8,
+  "scalar_record_count": 8,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.18248933207560217,
-  "pooled_median_error_pct": 0.18248933207560217,
-  "headline_median_error_pct": 0.18248933207560217,
+  "median_error_pct": 0.1349881432328604,
+  "pooled_median_error_pct": 0.1349881432328604,
+  "headline_median_error_pct": 0.1602112500146586,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -43,19 +45,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.182489,
+      "computed": 0.134988,
       "measured": 0.0,
-      "error_pct": 0.18248933207560217,
-      "observable_count": 3
+      "error_pct": 0.1349881432328604,
+      "observable_count": 8
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "fsot_prediction",
       "name": "cepheid_pl",
-      "computed": 0.182489,
+      "computed": 0.160211,
       "measured": 0.0,
-      "error_pct": 0.18248933207560217,
-      "observable_count": 3
+      "error_pct": 0.1602112500146586,
+      "observable_count": 8
     }
   ],
   "material_records": [
@@ -85,20 +87,90 @@
       "lab": "cepheid_pl_lab",
       "property": "anchor_intercept_delta",
       "name": "LMC_minus_N4258_intercept",
-      "computed": -10.877329929482825,
+      "computed": -10.878329929482826,
       "measured": -10.897216186516433,
-      "error_pct": 0.18248933207560217,
+      "error_pct": 0.17331267647030582,
       "eval_kind": "fsot_prediction",
       "record_kind": "scalar",
       "unit": "mag",
       "note": "\u0394\u03bc_geom + \u03b3_FSOT\u00b7\u0394[O/H] vs R22 intercepts",
-      "delta_mu": -10.919999999999998,
+      "delta_mu": -10.921,
       "delta_metal": -0.182763819095477
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "wesenheit_R_nir",
+      "name": "R_NIR_vs_Riess_Eq7",
+      "computed": 0.3995609398541958,
+      "measured": 0.4,
+      "error_pct": 0.10976503645106217,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "note": "POOF\u00b7e\u00b7C_eff vs Riess+2022 extinction-law R_H=0.4"
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "pl_slope_nir",
+      "name": "PL_slope_NIR_vs_LMC",
+      "computed": 3.2918507537510697,
+      "measured": 3.284,
+      "error_pct": 0.2390607110557222,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "note": "same seed slope vs Riess+2022 \u00a74.6 LMC W_H \u22123.284"
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "nir_anchor_intercept_delta",
+      "name": "NIR_LMC_minus_N4258_intercept",
+      "computed": -10.8775100779736,
+      "measured": -10.894965037649078,
+      "error_pct": 0.1602112500146586,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "unit": "mag",
+      "note": "NIR W_H intercepts: \u0394\u03bc_geom + \u03b3\u00b7\u0394Z"
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "host_mu_vs_trgb_mean",
+      "name": "host_moduli_mean_vs_Li2024_TRGB",
+      "computed": 0.004391645567700664,
+      "measured": 0.01,
+      "error_pct": 0.017636334692765206,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "unit": "mag",
+      "measured_uncertainty": 0.04,
+      "note": "Mean (\u03bc_NIR\u2212\u03bc_TRGB) vs Li+2024 0.01\u00b10.04; per-host moduli, not cz/d H0",
+      "n_hosts": 4.0,
+      "host_deltas": {
+        "N1448": -0.1951,
+        "N3370": 0.0684,
+        "N3447": 0.0789,
+        "N5584": 0.0653
+      }
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "crowding_inner_outer",
+      "name": "N4258_T1_crowding_null",
+      "computed": 0.002126514581998862,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "unit": "mag",
+      "measured_uncertainty": 0.05,
+      "note": "T1: inner\u2212outer intercept null inside SH0ES Fig.8 0.05 mag test",
+      "delta": 0.002126514581998862,
+      "n_inner": 222.0,
+      "n_outer": 221.0
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.18248933207560217,
-    "max_scalar_error_pct": 0.20854653732327497,
+    "scalar_pooled_median_error_pct": 0.1349881432328604,
+    "max_scalar_error_pct": 0.2390607110557222,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

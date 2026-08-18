@@ -77,10 +77,10 @@ The Cepheid *family* is the outlier cluster (SH0ES HST 1.00%, SH0ES JWST 1.08%, 
 
 ## What we are still not solving for
 
-Filled this pass: ladder mixture, host-local sky, and Cepheid PL interconnects (`CEPHEID_PL_PHYSICS.md`). Still labeled:
+Filled this pass: ladder mixture, host-local sky, optical+NIR PL, host moduli vs Li+2024 TRGB, N4258 T1 crowding. Still labeled:
 
-1. **No per-host published H₀.** Riess publishes the ladder average.
-2. **NIR Wesenheit \(W_H\)** — optical table only. Crowding stays T1.
+1. **Per-host \(H_0=cz/d\)** — not published; peculiar velocities dominate. Host *moduli* are gated.
+2. **Full 42-host NIR sample** — this table is the R22 orig-19 release.
 
 ---
 

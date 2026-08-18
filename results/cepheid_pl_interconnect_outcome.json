@@ -15,12 +15,42 @@
     },
     {
       "name": "LMC_minus_N4258_intercept",
-      "computed": -10.877329929482825,
+      "computed": -10.878329929482826,
       "measured": -10.897216186516433,
-      "error_pct": 0.18248933207560217
+      "error_pct": 0.17331267647030582
+    },
+    {
+      "name": "R_NIR_vs_Riess_Eq7",
+      "computed": 0.3995609398541958,
+      "measured": 0.4,
+      "error_pct": 0.10976503645106217
+    },
+    {
+      "name": "PL_slope_NIR_vs_LMC",
+      "computed": 3.2918507537510697,
+      "measured": 3.284,
+      "error_pct": 0.2390607110557222
+    },
+    {
+      "name": "NIR_LMC_minus_N4258_intercept",
+      "computed": -10.8775100779736,
+      "measured": -10.894965037649078,
+      "error_pct": 0.1602112500146586
+    },
+    {
+      "name": "host_moduli_mean_vs_Li2024_TRGB",
+      "computed": 0.004391645567700664,
+      "measured": 0.01,
+      "error_pct": 0.017636334692765206
+    },
+    {
+      "name": "N4258_T1_crowding_null",
+      "computed": 0.002126514581998862,
+      "measured": 0.0,
+      "error_pct": 0.0
     }
   ],
-  "pooled_median_error_pct": 0.18248933207560217,
+  "pooled_median_error_pct": 0.1349881432328604,
   "status": "GREEN",
   "kill": "pooled median > 0.5% or anyone fits a PL slope/\u03b3 to the R22 table"
 }

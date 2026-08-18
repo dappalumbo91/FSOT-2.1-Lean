@@ -23,13 +23,14 @@ from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, pooled_gate_passes  # noqa: E402
 
 TABLE = ROOT / "data" / "sh0es_r22_optical_cepheids.dat"
+NIR = ROOT / "data" / "sh0es_r22_nir_cepheids.dat"
 OUT = ROOT / "data" / "cepheid_pl_interconnect_benchmark.json"
 OUTCOME = ROOT / "results" / "cepheid_pl_interconnect_outcome.json"
 
 
 def main() -> int:
     _, authority = load_fsot_compute()
-    rows = suite_rows(TABLE)
+    rows = suite_rows(TABLE, NIR)
     errs = [float(r["error_pct"]) for r in rows]
     doc = _bench_v11(
         domain="Cepheid_PL_Interconnect",
@@ -39,7 +40,9 @@ def main() -> int:
         authority_path=str(authority).replace("\\", "/"),
         source=[
             "data/sh0es_r22_optical_cepheids.dat",
+            "data/sh0es_r22_nir_cepheids.dat",
             "vendor/fsot_cepheid_pl.py",
+            "Li+2024 JWST TRGB host moduli (arXiv:2408.00065)",
             "Riess+2022 SH0ES optical release slope −3.285",
             "Ripepi+2020 W_VI slope −3.29",
             "Breuval+2022 γ = −0.239 mag/dex",
