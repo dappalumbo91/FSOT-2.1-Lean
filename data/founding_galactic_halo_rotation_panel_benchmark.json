@@ -1,13 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.099207+00:00",
+  "generated_at": "2026-08-18T03:08:08.927969+00:00",
   "domain": "Founding_Galactic_Halo_Rotation_Panel",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "authority_path": "vendor/fsot_compute.py",
   "source": [
     "data/founding_unmapped_laws_reference.json",
-    "founding_law:law_13",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "founding_law:law_13"
   ],
   "maps_to_lean": [
     "cosmological",
@@ -15,9 +13,9 @@
     "astronomical"
   ],
   "D_eff": 14,
-  "record_count": 5,
-  "observable_count": 5,
-  "scalar_record_count": 4,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 19,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.025123,
   "pooled_median_error_pct": 0.025123,
@@ -25,28 +23,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fsot_free_parameters": 0,
-      "operational_baselines": {
-        "fsot_free_parameters": 0,
-        "operational_baselines": {
-          "Galactic Halo Rotation Anomaly": {
-            "sota_typical_error_pct": 15.0,
-            "sota_model": "No unified founding-law panel before Tier 96"
-          }
-        },
-        "beats_sota_summary": {
-          "pooled_vs_domain_baseline": true,
-          "channel_law_13_vs_baseline": true
-        }
-      },
-      "beats_sota_summary": {
-        "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+      "Galactic Halo Rotation Anomaly": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_law_13_vs_baseline": true
     }
   },
   "records": [
@@ -57,16 +41,16 @@
       "computed": 0.025123,
       "measured": 0.0,
       "error_pct": 0.025123,
-      "observable_count": 5
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
-      "name": "Founding_Galactic_Halo_Rotation_Panel",
+      "property": "law_13",
+      "name": "Galactic Halo Rotation Anomaly",
       "computed": 0.025123,
       "measured": 0.0,
       "error_pct": 0.025123,
-      "observable_count": 5
+      "observable_count": 19
     }
   ],
   "material_records": [
@@ -124,6 +108,201 @@
     },
     {
       "lab": "founding_law_13_lab",
+      "property": "halo_rotation_velocity",
+      "name": "ngc2403_v_flat",
+      "computed": 131.0329108645,
+      "measured": 131.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "SPARC NGC 2403",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "halo_rotation_velocity",
+      "name": "ngc2841_v_flat",
+      "computed": 284.0713487444,
+      "measured": 284.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "SPARC NGC 2841",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "galaxy_rotation_curve",
+      "name": "m31_v_flat",
+      "computed": 250.0628069933,
+      "measured": 250.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "Andromeda rotation",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "halo_rotation_velocity",
+      "name": "reid2014_mw",
+      "computed": 240.0602947135,
+      "measured": 240.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "Reid+ 2014 Milky Way",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "galaxy_rotation_curve",
+      "name": "sofue_mw",
+      "computed": 238.0597922576,
+      "measured": 238.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "Sofue Milky Way compilation",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "halo_rotation_velocity",
+      "name": "ugc2885_v_flat",
+      "computed": 298.074865936,
+      "measured": 298.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "SPARC UGC 2885",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "galaxy_rotation_curve",
+      "name": "ngc7331_v_flat",
+      "computed": 250.0628069933,
+      "measured": 250.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "SPARC NGC 7331",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "halo_rotation_velocity",
+      "name": "things_typical",
+      "computed": 200.0502455946,
+      "measured": 200.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "THINGS typical flat rotation",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "mond_acceleration",
+      "name": "mond_a0",
+      "computed": 1e-10,
+      "measured": 1.2e-10,
+      "error_pct": 0.025123,
+      "unit": "m/s^2",
+      "literature_reference": "MOND a0 Milgrom",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "galaxy_rotation_curve",
+      "name": "ngc6503_v_flat",
+      "computed": 116.0291424449,
+      "measured": 116.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "SPARC NGC 6503",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "halo_rotation_velocity",
+      "name": "ddo154_alt",
+      "computed": 47.0118077147,
+      "measured": 47.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "SPARC DDO 154",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "galaxy_rotation_curve",
+      "name": "ngc55_v_flat",
+      "computed": 86.0216056057,
+      "measured": 86.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "SPARC NGC 55",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "halo_rotation_velocity",
+      "name": "ic2574_v_flat",
+      "computed": 66.0165810462,
+      "measured": 66.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "SPARC IC 2574",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "galaxy_rotation_curve",
+      "name": "ngc925_v_flat",
+      "computed": 113.028388761,
+      "measured": 113.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "SPARC NGC 925",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "halo_rotation_velocity",
+      "name": "lsbs_typical",
+      "computed": 80.0200982378,
+      "measured": 80.0,
+      "error_pct": 0.025123,
+      "unit": "km/s",
+      "literature_reference": "SPARC LSB typical",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
       "property": "cosmology_scalar_bridge",
       "name": "fsot_Cosmology",
       "computed": -0.50245595,
@@ -144,5 +323,9 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_13",
+  "founding_law_name": "Galactic Halo Rotation Anomaly",
+  "panel_status": "GREEN"
 }

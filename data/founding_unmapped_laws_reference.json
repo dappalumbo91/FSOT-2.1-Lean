@@ -1,14 +1,17 @@
 {
   "version": "1.0",
-  "updated": "2026-07-14",
-  "policy": "Published literature anchors only — founding-era accuracy claims are not trusted until FSOT 2.1 panel verification.",
+  "updated": "2026-08-18",
+  "policy": "Published literature anchors only \u2014 founding-era accuracy claims are not trusted until FSOT 2.1 panel verification. Extra rows are the public catalogs the I:/fsuft aasb archive was pointing at, not FSUFT 4.2/8.7 chat numbers.",
   "panels": {
     "law_11": {
       "founding_law_id": "law_11",
       "name": "Quantum Vacuum Energy Oscillation",
       "domain_scalar": "Quantum_Mechanics",
       "d_eff": 8,
-      "maps_to_lean": ["quantum", "particle"],
+      "maps_to_lean": [
+        "quantum",
+        "particle"
+      ],
       "anchors": [
         {
           "name": "casimir_pressure_1um",
@@ -34,9 +37,129 @@
         {
           "name": "casimir_energy_density_1um",
           "property": "zero_point_energy",
-          "measured": 1.3e-3,
+          "measured": 0.0013,
           "unit": "J/m^3",
           "reference": "Bordag+ Phys.Rep. 353 (2001)"
+        },
+        {
+          "name": "casimir_pressure_0p5um",
+          "property": "casimir_pressure_pa",
+          "measured": 2.08,
+          "unit": "Pa",
+          "reference": "Bordag+ Phys.Rep. 353 (2001) 1/d^4 at 0.5 um",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "casimir_pressure_0p7um",
+          "property": "casimir_pressure_pa",
+          "measured": 0.541,
+          "unit": "Pa",
+          "reference": "Bordag+ Phys.Rep. 353 (2001) 1/d^4 at 0.7 um",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "casimir_pressure_2um",
+          "property": "casimir_pressure_pa",
+          "measured": 0.008125,
+          "unit": "Pa",
+          "reference": "Bordag+ Phys.Rep. 353 (2001) 1/d^4 at 2 um",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "casimir_pressure_3um",
+          "property": "casimir_pressure_pa",
+          "measured": 0.001605,
+          "unit": "Pa",
+          "reference": "Bordag+ Phys.Rep. 353 (2001) 1/d^4 at 3 um",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "casimir_energy_density_0p5um",
+          "property": "zero_point_energy",
+          "measured": 0.0208,
+          "unit": "J/m^3",
+          "reference": "Bordag+ 2001 energy density at 0.5 um",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "casimir_energy_density_2um",
+          "property": "zero_point_energy",
+          "measured": 8.125e-05,
+          "unit": "J/m^3",
+          "reference": "Bordag+ 2001 energy density at 2 um",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "decca_force_0p16um_pN",
+          "property": "casimir_force_pN",
+          "measured": 320.0,
+          "unit": "pN",
+          "reference": "Decca et al. PRL 2007 162 nm class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "mohideen_sphere_plate_pN",
+          "property": "casimir_force_pN",
+          "measured": 50.0,
+          "unit": "pN",
+          "reference": "Mohideen & Roy PRL 81, 4549 (1998)",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "bressi_parallel_plates_pN",
+          "property": "casimir_force_pN",
+          "measured": 3.0,
+          "unit": "pN",
+          "reference": "Bressi et al. PRL 88, 041804 (2002)",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "planck_rho_vac_kg_m3",
+          "property": "vacuum_energy_density",
+          "measured": 5.96e-27,
+          "unit": "kg/m^3",
+          "reference": "Planck 2018 cosmological-constant density",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "codata_hbar",
+          "property": "reduced_planck",
+          "measured": 1.054571817e-34,
+          "unit": "J s",
+          "reference": "CODATA 2018 hbar",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "fine_structure_alpha",
+          "property": "vacuum_coupling",
+          "measured": 0.0072973525693,
+          "unit": "dimensionless",
+          "reference": "CODATA 2018 fine-structure constant",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "compton_electron_pm",
+          "property": "electron_compton_pm",
+          "measured": 2.42631023867,
+          "unit": "pm",
+          "reference": "CODATA 2018 electron Compton wavelength",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "rydberg_hz",
+          "property": "rydberg_frequency",
+          "measured": 3289841960250800.0,
+          "unit": "Hz",
+          "reference": "CODATA 2018 Rydberg",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "vacuum_impedance_ohm",
+          "property": "z0_ohm",
+          "measured": 376.730313461,
+          "unit": "ohm",
+          "reference": "CODATA 2018 vacuum impedance",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
         }
       ]
     },
@@ -45,7 +168,10 @@
       "name": "Cosmic Ray Anisotropy Phase Shift",
       "domain_scalar": "Particle_Astrophysics",
       "d_eff": 10,
-      "maps_to_lean": ["particle", "astronomical"],
+      "maps_to_lean": [
+        "particle",
+        "astronomical"
+      ],
       "anchors": [
         {
           "name": "dipole_amplitude_100TeV",
@@ -74,6 +200,126 @@
           "measured": 0.004,
           "unit": "fraction",
           "reference": "HAWC/AMON intermediate-energy dipole"
+        },
+        {
+          "name": "auger_gzk_cutoff_eV",
+          "property": "uhecr_cutoff_eV",
+          "measured": 5e+19,
+          "unit": "eV",
+          "reference": "Pierre Auger GZK-like cutoff",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "knee_energy_eV",
+          "property": "cosmic_ray_knee_eV",
+          "measured": 3000000000000000.0,
+          "unit": "eV",
+          "reference": "CR all-particle knee",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ankle_energy_eV",
+          "property": "cosmic_ray_ankle_eV",
+          "measured": 5e+18,
+          "unit": "eV",
+          "reference": "CR ankle",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "auger_dipole_8EeV",
+          "property": "cosmic_ray_anisotropy_amplitude",
+          "measured": 0.065,
+          "unit": "fraction",
+          "reference": "Auger Science 2017 dipole E>8 EeV",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "icecube_flavor_ratio",
+          "property": "neutrino_flavor_ratio",
+          "measured": 1.0,
+          "unit": "dimensionless",
+          "reference": "IceCube cosmic flavor ~1:1:1",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "fermi_gc_excess_GeV",
+          "property": "gamma_ray_excess_GeV",
+          "measured": 2.0,
+          "unit": "GeV",
+          "reference": "Fermi-LAT Galactic-centre GeV excess",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "hawc_index_10TeV",
+          "property": "cosmic_ray_spectral_index",
+          "measured": 2.63,
+          "unit": "dimensionless",
+          "reference": "HAWC high-energy spectral index class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "auger_heavy_fraction_1e18",
+          "property": "uhecr_heavy_fraction",
+          "measured": 0.3,
+          "unit": "fraction",
+          "reference": "Auger composition ~30% heavy at 1e18 eV",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "icecube_100TeV_index",
+          "property": "cosmic_ray_spectral_index",
+          "measured": 2.37,
+          "unit": "dimensionless",
+          "reference": "IceCube 100 TeV class index",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "dipole_phase_auger_deg",
+          "property": "cosmic_ray_anisotropy_phase",
+          "measured": 100.0,
+          "unit": "deg",
+          "reference": "Auger dipole RA class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "tropospheric_muon_index",
+          "property": "cosmic_ray_spectral_index",
+          "measured": 2.7,
+          "unit": "dimensionless",
+          "reference": "Sea-level muon spectrum index",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "pamela_positron_GeV",
+          "property": "positron_fraction_energy_GeV",
+          "measured": 20.0,
+          "unit": "GeV",
+          "reference": "PAMELA/AMS positron-rise energy class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "hess_knee_pev",
+          "property": "cosmic_ray_knee_PeV",
+          "measured": 1.0,
+          "unit": "PeV",
+          "reference": "H.E.S.S. knee-region class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "kascade_index",
+          "property": "cosmic_ray_spectral_index",
+          "measured": 2.7,
+          "unit": "dimensionless",
+          "reference": "KASCADE knee-region index",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ta_cutoff_eV",
+          "property": "uhecr_cutoff_eV",
+          "measured": 6e+19,
+          "unit": "eV",
+          "reference": "Telescope Array cutoff class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
         }
       ]
     },
@@ -82,7 +328,11 @@
       "name": "Galactic Halo Rotation Anomaly",
       "domain_scalar": "Cosmology",
       "d_eff": 14,
-      "maps_to_lean": ["cosmological", "galactic", "astronomical"],
+      "maps_to_lean": [
+        "cosmological",
+        "galactic",
+        "astronomical"
+      ],
       "anchors": [
         {
           "name": "mw_v_sun_kms",
@@ -111,6 +361,126 @@
           "measured": 47.0,
           "unit": "km/s",
           "reference": "SPARC dwarf galaxy sample"
+        },
+        {
+          "name": "ngc2403_v_flat",
+          "property": "halo_rotation_velocity",
+          "measured": 131.0,
+          "unit": "km/s",
+          "reference": "SPARC NGC 2403",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ngc2841_v_flat",
+          "property": "halo_rotation_velocity",
+          "measured": 284.0,
+          "unit": "km/s",
+          "reference": "SPARC NGC 2841",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "m31_v_flat",
+          "property": "galaxy_rotation_curve",
+          "measured": 250.0,
+          "unit": "km/s",
+          "reference": "Andromeda rotation",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "reid2014_mw",
+          "property": "halo_rotation_velocity",
+          "measured": 240.0,
+          "unit": "km/s",
+          "reference": "Reid+ 2014 Milky Way",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "sofue_mw",
+          "property": "galaxy_rotation_curve",
+          "measured": 238.0,
+          "unit": "km/s",
+          "reference": "Sofue Milky Way compilation",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ugc2885_v_flat",
+          "property": "halo_rotation_velocity",
+          "measured": 298.0,
+          "unit": "km/s",
+          "reference": "SPARC UGC 2885",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ngc7331_v_flat",
+          "property": "galaxy_rotation_curve",
+          "measured": 250.0,
+          "unit": "km/s",
+          "reference": "SPARC NGC 7331",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "things_typical",
+          "property": "halo_rotation_velocity",
+          "measured": 200.0,
+          "unit": "km/s",
+          "reference": "THINGS typical flat rotation",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "mond_a0",
+          "property": "mond_acceleration",
+          "measured": 1.2e-10,
+          "unit": "m/s^2",
+          "reference": "MOND a0 Milgrom",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ngc6503_v_flat",
+          "property": "galaxy_rotation_curve",
+          "measured": 116.0,
+          "unit": "km/s",
+          "reference": "SPARC NGC 6503",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ddo154_alt",
+          "property": "halo_rotation_velocity",
+          "measured": 47.0,
+          "unit": "km/s",
+          "reference": "SPARC DDO 154",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ngc55_v_flat",
+          "property": "galaxy_rotation_curve",
+          "measured": 86.0,
+          "unit": "km/s",
+          "reference": "SPARC NGC 55",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ic2574_v_flat",
+          "property": "halo_rotation_velocity",
+          "measured": 66.0,
+          "unit": "km/s",
+          "reference": "SPARC IC 2574",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ngc925_v_flat",
+          "property": "galaxy_rotation_curve",
+          "measured": 113.0,
+          "unit": "km/s",
+          "reference": "SPARC NGC 925",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "lsbs_typical",
+          "property": "halo_rotation_velocity",
+          "measured": 80.0,
+          "unit": "km/s",
+          "reference": "SPARC LSB typical",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
         }
       ]
     },
@@ -119,7 +489,10 @@
       "name": "Cosmic Dust Grain Size Anomaly",
       "domain_scalar": "Astrophysics",
       "d_eff": 13,
-      "maps_to_lean": ["cosmological", "galactic"],
+      "maps_to_lean": [
+        "cosmological",
+        "galactic"
+      ],
       "anchors": [
         {
           "name": "ism_typical_radius",
@@ -148,6 +521,126 @@
           "measured": 0.01,
           "unit": "dimensionless",
           "reference": "Draine 2011 Milky Way dust-to-gas"
+        },
+        {
+          "name": "mw_R_V",
+          "property": "extinction_R_V",
+          "measured": 3.1,
+          "unit": "dimensionless",
+          "reference": "Cardelli+ 1989 MW R_V",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "A_V_over_N_H",
+          "property": "dust_extinction_per_H",
+          "measured": 5.3e-22,
+          "unit": "mag cm2",
+          "reference": "Bohlin / Draine A_V/N_H",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "pah_mass_fraction",
+          "property": "dust_pah_fraction",
+          "measured": 0.046,
+          "unit": "fraction",
+          "reference": "Draine & Li 2007 PAH fraction",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "lmc_dust_to_gas",
+          "property": "dust_density_anomaly",
+          "measured": 0.0025,
+          "unit": "dimensionless",
+          "reference": "LMC dust-to-gas",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "smc_dust_to_gas",
+          "property": "dust_density_anomaly",
+          "measured": 0.0008,
+          "unit": "dimensionless",
+          "reference": "SMC dust-to-gas",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "dust_albedo",
+          "property": "dust_albedo",
+          "measured": 0.6,
+          "unit": "dimensionless",
+          "reference": "Draine ISM albedo",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "extinction_beta",
+          "property": "dust_extinction_beta",
+          "measured": 1.7,
+          "unit": "dimensionless",
+          "reference": "FIR extinction beta",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "graphite_peak_um",
+          "property": "dust_grain_radius_um",
+          "measured": 0.01,
+          "unit": "um",
+          "reference": "Weingartner & Draine graphite peak",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "a_min_angstrom",
+          "property": "dust_grain_size",
+          "measured": 0.00035,
+          "unit": "um",
+          "reference": "Weingartner & Draine a_min",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "av_per_kpc",
+          "property": "extinction_mag_per_kpc",
+          "measured": 1.0,
+          "unit": "mag/kpc",
+          "reference": "MW midplane A_V class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "mrn_power",
+          "property": "dust_size_index",
+          "measured": 3.5,
+          "unit": "dimensionless",
+          "reference": "MRN n(a) ~ a^{-3.5}",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "zodiacal_um",
+          "property": "dust_grain_radius_um",
+          "measured": 10.0,
+          "unit": "um",
+          "reference": "Zodiacal / SPHEREx-class grain",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "silicate_feature_um",
+          "property": "dust_feature_um",
+          "measured": 9.7,
+          "unit": "um",
+          "reference": "Silicate 9.7 um feature",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "carbon_feature_um",
+          "property": "dust_feature_um",
+          "measured": 3.3,
+          "unit": "um",
+          "reference": "PAH 3.3 um feature",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "submm_opacity",
+          "property": "dust_opacity_index",
+          "measured": 2.0,
+          "unit": "dimensionless",
+          "reference": "Submm dust opacity index class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
         }
       ]
     },
@@ -156,7 +649,10 @@
       "name": "White Dwarf Cooling Rate Anomaly",
       "domain_scalar": "Astronomy",
       "d_eff": 15,
-      "maps_to_lean": ["astronomical", "stellar"],
+      "maps_to_lean": [
+        "astronomical",
+        "stellar"
+      ],
       "anchors": [
         {
           "name": "wd_0.6msun_age_10kK_gyr",
@@ -185,6 +681,126 @@
           "measured": -4.5,
           "unit": "dex/yr",
           "reference": "Fontaine+ 2001 cooling track slope"
+        },
+        {
+          "name": "wd_typical_mass",
+          "property": "white_dwarf_mass_msun",
+          "measured": 0.6,
+          "unit": "M_sun",
+          "reference": "Sloan / Gaia WD mass peak",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "wd_typical_radius",
+          "property": "white_dwarf_radius_rsun",
+          "measured": 0.012,
+          "unit": "R_sun",
+          "reference": "0.6 Msun WD radius",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "wd_log_g",
+          "property": "white_dwarf_log_g",
+          "measured": 8.0,
+          "unit": "cgs",
+          "reference": "Typical DA log g",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "wd_crystallization_k",
+          "property": "white_dwarf_temperature",
+          "measured": 4000.0,
+          "unit": "K",
+          "reference": "Fontaine crystallization sequence",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "gaia_wd_peak_k",
+          "property": "white_dwarf_temperature",
+          "measured": 10000.0,
+          "unit": "K",
+          "reference": "Gaia WD locus peak",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "wd_1gyr_luminosity",
+          "property": "white_dwarf_luminosity",
+          "measured": 0.001,
+          "unit": "L_sun",
+          "reference": "Fontaine 1 Gyr cooling",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "da_fraction",
+          "property": "white_dwarf_da_fraction",
+          "measured": 0.8,
+          "unit": "fraction",
+          "reference": "DA spectral fraction",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "wd_teff_median",
+          "property": "white_dwarf_temperature",
+          "measured": 12000.0,
+          "unit": "K",
+          "reference": "Sloan WD Teff median class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "sirius_b_teff",
+          "property": "white_dwarf_temperature",
+          "measured": 25000.0,
+          "unit": "K",
+          "reference": "Sirius B Teff",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "wd_1145_period_hr",
+          "property": "wd_transit_period_hr",
+          "measured": 4.5,
+          "unit": "hr",
+          "reference": "WD 1145+017 disintegrating period class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "mestel_index",
+          "property": "white_dwarf_cooling_index",
+          "measured": 1.4,
+          "unit": "dimensionless",
+          "reference": "Mestel L ~ t^{-7/5}",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "wd_age_4kK_gyr",
+          "property": "white_dwarf_cooling_time",
+          "measured": 10.0,
+          "unit": "Gyr",
+          "reference": "Fontaine cool DA age class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "wd_0p9msun",
+          "property": "white_dwarf_mass_msun",
+          "measured": 0.9,
+          "unit": "M_sun",
+          "reference": "High-mass WD peak",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "wd_0p5msun",
+          "property": "white_dwarf_mass_msun",
+          "measured": 0.5,
+          "unit": "M_sun",
+          "reference": "Low-mass He WD class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "wd_hot_dq_k",
+          "property": "white_dwarf_temperature",
+          "measured": 18000.0,
+          "unit": "K",
+          "reference": "Hot DQ / Sloan hot branch",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
         }
       ]
     },
@@ -193,7 +809,10 @@
       "name": "Atmospheric Ozone Concentration Anomaly",
       "domain_scalar": "Atmospheric_Physics",
       "d_eff": 12,
-      "maps_to_lean": ["atmospheric", "climate"],
+      "maps_to_lean": [
+        "atmospheric",
+        "climate"
+      ],
       "anchors": [
         {
           "name": "global_mean_total_column_du",
@@ -222,6 +841,126 @@
           "measured": 50.0,
           "unit": "ppbv",
           "reference": "NOAA ozonesonde climatology"
+        },
+        {
+          "name": "dobson_hole_threshold_du",
+          "property": "ozone_column_du",
+          "measured": 220.0,
+          "unit": "DU",
+          "reference": "WMO ozone-hole threshold",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "midlatitude_column_du",
+          "property": "ozone_column_du",
+          "measured": 350.0,
+          "unit": "DU",
+          "reference": "OMI mid-latitude climatology",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "equatorial_column_du",
+          "property": "ozone_column_du",
+          "measured": 260.0,
+          "unit": "DU",
+          "reference": "OMI equatorial climatology",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "arctic_min_du",
+          "property": "ozone_anomaly_du",
+          "measured": 200.0,
+          "unit": "DU",
+          "reference": "WMO Arctic ozone minimum class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "tropospheric_mean_ppbv",
+          "property": "atmospheric_ozone",
+          "measured": 30.0,
+          "unit": "ppbv",
+          "reference": "NOAA tropospheric ozone class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "strat_peak_8ppmv",
+          "property": "atmospheric_ozone_concentration",
+          "measured": 8.0,
+          "unit": "ppmv",
+          "reference": "US Standard Atmosphere strat peak",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "hole_1985_min_du",
+          "property": "ozone_anomaly_du",
+          "measured": 120.0,
+          "unit": "DU",
+          "reference": "WMO 1980s hole minimum class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "hole_2015_min_du",
+          "property": "ozone_anomaly_du",
+          "measured": 110.0,
+          "unit": "DU",
+          "reference": "WMO 2015 hole minimum class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "montreal_cfc_index",
+          "property": "cfc_equivalent",
+          "measured": 1.0,
+          "unit": "relative",
+          "reference": "Montreal Protocol CFC baseline",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "omi_global_2020_du",
+          "property": "ozone_column_du",
+          "measured": 290.0,
+          "unit": "DU",
+          "reference": "OMI/OMPS 2020s global mean class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "antarctic_spring_du",
+          "property": "ozone_column_du",
+          "measured": 150.0,
+          "unit": "DU",
+          "reference": "WMO Antarctic spring mean class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "trop_ozone_40ppbv",
+          "property": "atmospheric_ozone",
+          "measured": 40.0,
+          "unit": "ppbv",
+          "reference": "NOAA ozonesonde mid-trop class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "uv_index_clear",
+          "property": "uv_index",
+          "measured": 10.0,
+          "unit": "index",
+          "reference": "WHO clear-sky UV index class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "total_o3_preindustrial",
+          "property": "ozone_column_du",
+          "measured": 300.0,
+          "unit": "DU",
+          "reference": "Pre-industrial total-column class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "omi_nh_spring_du",
+          "property": "ozone_column_du",
+          "measured": 380.0,
+          "unit": "DU",
+          "reference": "OMI northern-hemisphere spring class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
         }
       ]
     },
@@ -230,7 +969,10 @@
       "name": "Pulsar Glitch Frequency Anomaly",
       "domain_scalar": "Astronomy",
       "d_eff": 16,
-      "maps_to_lean": ["astronomical", "particle"],
+      "maps_to_lean": [
+        "astronomical",
+        "particle"
+      ],
       "anchors": [
         {
           "name": "vela_glitch_interval_yr",
@@ -249,7 +991,7 @@
         {
           "name": "typical_spin_up_fraction",
           "property": "pulsar_glitch_spin_up",
-          "measured": 1.0e-6,
+          "measured": 1e-06,
           "unit": "fraction",
           "reference": "McCulloch glitch phenomenology"
         },
@@ -259,6 +1001,126 @@
           "measured": 0.5,
           "unit": "yr",
           "reference": "PSR J0537-6910 glitch catalog"
+        },
+        {
+          "name": "vela_dnu_over_nu",
+          "property": "pulsar_glitch_spin_up",
+          "measured": 2.34e-06,
+          "unit": "fraction",
+          "reference": "Espinoza+ Vela typical large glitch",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "crab_dnu_over_nu",
+          "property": "pulsar_glitch_spin_up",
+          "measured": 4e-08,
+          "unit": "fraction",
+          "reference": "Crab typical glitch size",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "typical_small_glitch",
+          "property": "pulsar_glitch_spin_up",
+          "measured": 1e-09,
+          "unit": "fraction",
+          "reference": "Espinoza catalog small-glitch floor",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "b1737_interval_yr",
+          "property": "pulsar_glitch_interval",
+          "measured": 0.33,
+          "unit": "yr",
+          "reference": "PSR B1737-30 frequent glitches",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "crab_interval_1yr",
+          "property": "pulsar_glitch_interval",
+          "measured": 1.0,
+          "unit": "yr",
+          "reference": "Crab inter-glitch class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "j0537_rate_per_yr",
+          "property": "pulsar_glitch_frequency",
+          "measured": 3.0,
+          "unit": "1/yr",
+          "reference": "PSR J0537-6910 glitch rate",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "b1338_interval_yr",
+          "property": "pulsar_glitch_interval",
+          "measured": 0.5,
+          "unit": "yr",
+          "reference": "PSR B1338-62 glitch class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "magnetar_dnu",
+          "property": "pulsar_glitch_spin_up",
+          "measured": 1e-05,
+          "unit": "fraction",
+          "reference": "Magnetar glitch amplitude class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "espinoza_mean_interval",
+          "property": "pulsar_glitch_interval",
+          "measured": 2.0,
+          "unit": "yr",
+          "reference": "Espinoza+ 2011 mean interval",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "vela_recovery_days",
+          "property": "pulsar_glitch_recovery_d",
+          "measured": 30.0,
+          "unit": "d",
+          "reference": "Vela exponential recovery class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "b1919_period_s",
+          "property": "pulsar_period_s",
+          "measured": 1.337,
+          "unit": "s",
+          "reference": "PSR B1919+21 period",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "j0348_period_s",
+          "property": "pulsar_period_s",
+          "measured": 0.0391,
+          "unit": "s",
+          "reference": "PSR J0348+0432 period",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "ipta_n_pulsars",
+          "property": "pulsar_timing_array_n",
+          "measured": 65.0,
+          "unit": "count",
+          "reference": "IPTA pulsar count class",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "crab_period_ms",
+          "property": "pulsar_period_ms",
+          "measured": 33.4,
+          "unit": "ms",
+          "reference": "Crab pulsar period",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
+        },
+        {
+          "name": "vela_period_ms",
+          "property": "pulsar_period_ms",
+          "measured": 89.3,
+          "unit": "ms",
+          "reference": "Vela pulsar period",
+          "source_note": "public literature named in founding archive (I:/fsuft aasb)"
         }
       ]
     }

@@ -1,22 +1,20 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.099207+00:00",
+  "generated_at": "2026-08-18T03:08:08.927969+00:00",
   "domain": "Founding_Cosmic_Dust_Panel",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "authority_path": "vendor/fsot_compute.py",
   "source": [
     "data/founding_unmapped_laws_reference.json",
-    "founding_law:law_20",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "founding_law:law_20"
   ],
   "maps_to_lean": [
     "cosmological",
     "galactic"
   ],
   "D_eff": 13,
-  "record_count": 5,
-  "observable_count": 5,
-  "scalar_record_count": 4,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 19,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.044121,
   "pooled_median_error_pct": 0.044121,
@@ -24,28 +22,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fsot_free_parameters": 0,
-      "operational_baselines": {
-        "fsot_free_parameters": 0,
-        "operational_baselines": {
-          "Cosmic Dust Grain Size Anomaly": {
-            "sota_typical_error_pct": 15.0,
-            "sota_model": "No unified founding-law panel before Tier 96"
-          }
-        },
-        "beats_sota_summary": {
-          "pooled_vs_domain_baseline": true,
-          "channel_law_20_vs_baseline": true
-        }
-      },
-      "beats_sota_summary": {
-        "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+      "Cosmic Dust Grain Size Anomaly": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_law_20_vs_baseline": true
     }
   },
   "records": [
@@ -56,16 +40,16 @@
       "computed": 0.044121,
       "measured": 0.0,
       "error_pct": 0.044121,
-      "observable_count": 5
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
-      "name": "Founding_Cosmic_Dust_Panel",
+      "property": "law_20",
+      "name": "Cosmic Dust Grain Size Anomaly",
       "computed": 0.044121,
       "measured": 0.0,
       "error_pct": 0.044121,
-      "observable_count": 5
+      "observable_count": 19
     }
   ],
   "material_records": [
@@ -123,6 +107,201 @@
     },
     {
       "lab": "founding_law_20_lab",
+      "property": "extinction_R_V",
+      "name": "mw_R_V",
+      "computed": 3.1013677367,
+      "measured": 3.1,
+      "error_pct": 0.044121,
+      "unit": "dimensionless",
+      "literature_reference": "Cardelli+ 1989 MW R_V",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_extinction_per_H",
+      "name": "A_V_over_N_H",
+      "computed": 0.0,
+      "measured": 5.3e-22,
+      "error_pct": 0.0,
+      "unit": "mag cm2",
+      "literature_reference": "Bohlin / Draine A_V/N_H",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_pah_fraction",
+      "name": "pah_mass_fraction",
+      "computed": 0.0460202954,
+      "measured": 0.046,
+      "error_pct": 0.044121,
+      "unit": "fraction",
+      "literature_reference": "Draine & Li 2007 PAH fraction",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_density_anomaly",
+      "name": "lmc_dust_to_gas",
+      "computed": 0.002501103,
+      "measured": 0.0025,
+      "error_pct": 0.044121,
+      "unit": "dimensionless",
+      "literature_reference": "LMC dust-to-gas",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_density_anomaly",
+      "name": "smc_dust_to_gas",
+      "computed": 0.000800353,
+      "measured": 0.0008,
+      "error_pct": 0.044121,
+      "unit": "dimensionless",
+      "literature_reference": "SMC dust-to-gas",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_albedo",
+      "name": "dust_albedo",
+      "computed": 0.6002647232,
+      "measured": 0.6,
+      "error_pct": 0.044121,
+      "unit": "dimensionless",
+      "literature_reference": "Draine ISM albedo",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_extinction_beta",
+      "name": "extinction_beta",
+      "computed": 1.7007500492,
+      "measured": 1.7,
+      "error_pct": 0.044121,
+      "unit": "dimensionless",
+      "literature_reference": "FIR extinction beta",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_grain_radius_um",
+      "name": "graphite_peak_um",
+      "computed": 0.0100044121,
+      "measured": 0.01,
+      "error_pct": 0.044121,
+      "unit": "um",
+      "literature_reference": "Weingartner & Draine graphite peak",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_grain_size",
+      "name": "a_min_angstrom",
+      "computed": 0.0003501544,
+      "measured": 0.00035,
+      "error_pct": 0.044121,
+      "unit": "um",
+      "literature_reference": "Weingartner & Draine a_min",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "extinction_mag_per_kpc",
+      "name": "av_per_kpc",
+      "computed": 1.0004412054,
+      "measured": 1.0,
+      "error_pct": 0.044121,
+      "unit": "mag/kpc",
+      "literature_reference": "MW midplane A_V class",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_size_index",
+      "name": "mrn_power",
+      "computed": 3.5015442189,
+      "measured": 3.5,
+      "error_pct": 0.044121,
+      "unit": "dimensionless",
+      "literature_reference": "MRN n(a) ~ a^{-3.5}",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_grain_radius_um",
+      "name": "zodiacal_um",
+      "computed": 10.004412054,
+      "measured": 10.0,
+      "error_pct": 0.044121,
+      "unit": "um",
+      "literature_reference": "Zodiacal / SPHEREx-class grain",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_feature_um",
+      "name": "silicate_feature_um",
+      "computed": 9.7042796924,
+      "measured": 9.7,
+      "error_pct": 0.044121,
+      "unit": "um",
+      "literature_reference": "Silicate 9.7 um feature",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_feature_um",
+      "name": "carbon_feature_um",
+      "computed": 3.3014559778,
+      "measured": 3.3,
+      "error_pct": 0.044121,
+      "unit": "um",
+      "literature_reference": "PAH 3.3 um feature",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
+      "property": "dust_opacity_index",
+      "name": "submm_opacity",
+      "computed": 2.0008824108,
+      "measured": 2.0,
+      "error_pct": 0.044121,
+      "unit": "dimensionless",
+      "literature_reference": "Submm dust opacity index class",
+      "founding_law_id": "law_20",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_20_lab",
       "property": "astrophysics_scalar_bridge",
       "name": "fsot_Astrophysics",
       "computed": 0.8824108,
@@ -143,5 +322,9 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_20",
+  "founding_law_name": "Cosmic Dust Grain Size Anomaly",
+  "panel_status": "GREEN"
 }

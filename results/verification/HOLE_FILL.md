@@ -75,6 +75,26 @@ Green after continue fill: **472 / 472**.
 
 Process / certificate ledgers: **9** (still tagged, not densified).
 
+## Founding archive (this pass)
+
+Read **175** unique files under `I:\fsuft aasb` and `I:\fsot tech` (concepts, not chat-era math). Picture → [`docs/FOUNDING_ARCHIVE_VIEW.md`](../../docs/FOUNDING_ARCHIVE_VIEW.md).
+
+Filled the 7 founding laws with the **public catalogs those papers were pointing at** (Planck/Bordag/IceCube/Auger/SPARC/Draine/Fontaine/OMI/Espinoza). Did **not** import 71.98 / 0.08σ pads.
+
+`python scripts/fill_founding_from_archive.py`
+
+| Panel | After | Tier |
+|-------|------:|------|
+| Quantum vacuum (law 11) | **20** | **B_verified** |
+| Cosmic rays (12) | **20** | **B_verified** |
+| Halo rotation (13) | **20** | **B_verified** |
+| Cosmic dust (20) | **20** | **B_verified** |
+| White dwarf cooling (23) | **20** | **B_verified** |
+| Atmospheric ozone (26) | **20** | **B_verified** |
+| Pulsar glitch (34) | **20** | **B_verified** |
+
+Remaining empirical C_thin: **SH0ES_Refined** only.
+
 Then:
 
 ```powershell

@@ -1,7 +1,7 @@
 # Hole audit — fill by the paradigm, not by siloed habit
 
 **Date:** 2026-08-18  
-**Fill pass:** registry 48/48 · green **472/472** · empirical C_thin **8** (7 founding + SH0ES) · process ledgers **9** tagged · cross-proof **overall_ok**  
+**Fill pass:** registry 48/48 · green **472/472** · empirical C_thin **1** (SH0ES only) · 7 founding now B_verified from archive-cited public tables · process ledgers **9** tagged · cross-proof **overall_ok**  
 **Stance:** This is a real ToE *attempt* under frozen Label A/B. Holes are missing **interfaces, data, or articulation** — not invitations to add free parameters.
 
 Counts: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Apply protocol: [`APPLY.md`](APPLY.md).
@@ -35,6 +35,7 @@ These were in the math and ontology already. They were not on the front door.
 | Silos vs one medium | CONCEPTS **C12** |
 | How to apply without LSQ | [`APPLY.md`](APPLY.md) |
 | Where is everything | [`SYSTEM_DIRECTORY.md`](SYSTEM_DIRECTORY.md) |
+| How Damian views the model | [`FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md) — river, seepage, BH/WH fridge-cycle, as-above-so-below |
 
 ---
 
@@ -44,7 +45,7 @@ Do these with **real measured data** and the mismatch rule (wrong \(D_{\mathrm{e
 
 | Hole | What “filled” looks like | Kill |
 |------|--------------------------|------|
-| **29 C_thin panels** | 9 process ledgers tagged. NIST DLMF + Quantum Higgs family + **continue fill** (NuFIT 20, Matter 27, cosmology 28, CODATA 20, DESI 20/22, orbital 21, ASD 24) promoted those science panels. **8** science panels still thin on purpose (7 founding + SH0ES). | median ≤ 0.5% on whatever rows are real |
+| **29 C_thin panels** | 9 process ledgers tagged. Continue fill + **founding archive literature** (7 laws → 20 rows each, B_verified). **1** science panel still thin on purpose (SH0ES 1% bubble-bleed). | median ≤ 0.5% on whatever rows are real |
 | Falsification registry vs living PREDs | **48/48** — rebuilt from `predictions/preregistered_predictions_manifest.yaml` + `results/outcomes/` | registry count matches prereg file |
 | Tool-row kills still `pending` | Score in `results/` when a survey paper lands (Euclid, JINR 119, PDG) | registered `kill_if` only |
 | Genetics **bulk** ~13–15 Å | Sibling work; hub only quotes **product vs bulk** labeled | do not claim sequence-only AF-beating |

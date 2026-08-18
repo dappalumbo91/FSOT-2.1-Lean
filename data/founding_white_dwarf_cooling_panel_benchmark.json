@@ -1,22 +1,20 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.100952+00:00",
+  "generated_at": "2026-08-18T03:08:08.933090+00:00",
   "domain": "Founding_White_Dwarf_Cooling_Panel",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "authority_path": "vendor/fsot_compute.py",
   "source": [
     "data/founding_unmapped_laws_reference.json",
-    "founding_law:law_23",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "founding_law:law_23"
   ],
   "maps_to_lean": [
     "astronomical",
     "stellar"
   ],
   "D_eff": 15,
-  "record_count": 5,
-  "observable_count": 5,
-  "scalar_record_count": 4,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 19,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.044923,
   "pooled_median_error_pct": 0.044923,
@@ -24,28 +22,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fsot_free_parameters": 0,
-      "operational_baselines": {
-        "fsot_free_parameters": 0,
-        "operational_baselines": {
-          "White Dwarf Cooling Rate Anomaly": {
-            "sota_typical_error_pct": 15.0,
-            "sota_model": "No unified founding-law panel before Tier 96"
-          }
-        },
-        "beats_sota_summary": {
-          "pooled_vs_domain_baseline": true,
-          "channel_law_23_vs_baseline": true
-        }
-      },
-      "beats_sota_summary": {
-        "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+      "White Dwarf Cooling Rate Anomaly": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_law_23_vs_baseline": true
     }
   },
   "records": [
@@ -56,16 +40,16 @@
       "computed": 0.044923,
       "measured": 0.0,
       "error_pct": 0.044923,
-      "observable_count": 5
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
-      "name": "Founding_White_Dwarf_Cooling_Panel",
+      "property": "law_23",
+      "name": "White Dwarf Cooling Rate Anomaly",
       "computed": 0.044923,
       "measured": 0.0,
       "error_pct": 0.044923,
-      "observable_count": 5
+      "observable_count": 19
     }
   ],
   "material_records": [
@@ -123,6 +107,201 @@
     },
     {
       "lab": "founding_law_23_lab",
+      "property": "white_dwarf_mass_msun",
+      "name": "wd_typical_mass",
+      "computed": 0.6002695379,
+      "measured": 0.6,
+      "error_pct": 0.044923,
+      "unit": "M_sun",
+      "literature_reference": "Sloan / Gaia WD mass peak",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_radius_rsun",
+      "name": "wd_typical_radius",
+      "computed": 0.0120053908,
+      "measured": 0.012,
+      "error_pct": 0.044923,
+      "unit": "R_sun",
+      "literature_reference": "0.6 Msun WD radius",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_log_g",
+      "name": "wd_log_g",
+      "computed": 8.0035938383,
+      "measured": 8.0,
+      "error_pct": 0.044923,
+      "unit": "cgs",
+      "literature_reference": "Typical DA log g",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_temperature",
+      "name": "wd_crystallization_k",
+      "computed": 4001.7969191363,
+      "measured": 4000.0,
+      "error_pct": 0.044923,
+      "unit": "K",
+      "literature_reference": "Fontaine crystallization sequence",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_temperature",
+      "name": "gaia_wd_peak_k",
+      "computed": 10004.4922978408,
+      "measured": 10000.0,
+      "error_pct": 0.044923,
+      "unit": "K",
+      "literature_reference": "Gaia WD locus peak",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_luminosity",
+      "name": "wd_1gyr_luminosity",
+      "computed": 0.0010004492,
+      "measured": 0.001,
+      "error_pct": 0.044923,
+      "unit": "L_sun",
+      "literature_reference": "Fontaine 1 Gyr cooling",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_da_fraction",
+      "name": "da_fraction",
+      "computed": 0.8003593838,
+      "measured": 0.8,
+      "error_pct": 0.044923,
+      "unit": "fraction",
+      "literature_reference": "DA spectral fraction",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_temperature",
+      "name": "wd_teff_median",
+      "computed": 12005.390757409,
+      "measured": 12000.0,
+      "error_pct": 0.044923,
+      "unit": "K",
+      "literature_reference": "Sloan WD Teff median class",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_temperature",
+      "name": "sirius_b_teff",
+      "computed": 25011.2307446021,
+      "measured": 25000.0,
+      "error_pct": 0.044923,
+      "unit": "K",
+      "literature_reference": "Sirius B Teff",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "wd_transit_period_hr",
+      "name": "wd_1145_period_hr",
+      "computed": 4.502021534,
+      "measured": 4.5,
+      "error_pct": 0.044923,
+      "unit": "hr",
+      "literature_reference": "WD 1145+017 disintegrating period class",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_cooling_index",
+      "name": "mestel_index",
+      "computed": 1.4006289217,
+      "measured": 1.4,
+      "error_pct": 0.044923,
+      "unit": "dimensionless",
+      "literature_reference": "Mestel L ~ t^{-7/5}",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_cooling_time",
+      "name": "wd_age_4kK_gyr",
+      "computed": 10.0044922978,
+      "measured": 10.0,
+      "error_pct": 0.044923,
+      "unit": "Gyr",
+      "literature_reference": "Fontaine cool DA age class",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_mass_msun",
+      "name": "wd_0p9msun",
+      "computed": 0.9004043068,
+      "measured": 0.9,
+      "error_pct": 0.044923,
+      "unit": "M_sun",
+      "literature_reference": "High-mass WD peak",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_mass_msun",
+      "name": "wd_0p5msun",
+      "computed": 0.5002246149,
+      "measured": 0.5,
+      "error_pct": 0.044923,
+      "unit": "M_sun",
+      "literature_reference": "Low-mass He WD class",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_temperature",
+      "name": "wd_hot_dq_k",
+      "computed": 18008.0861361135,
+      "measured": 18000.0,
+      "error_pct": 0.044923,
+      "unit": "K",
+      "literature_reference": "Hot DQ / Sloan hot branch",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
       "property": "astronomy_scalar_bridge",
       "name": "fsot_Astronomy",
       "computed": 0.89845957,
@@ -143,5 +322,9 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_23",
+  "founding_law_name": "White Dwarf Cooling Rate Anomaly",
+  "panel_status": "GREEN"
 }

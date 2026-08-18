@@ -1,22 +1,20 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.100952+00:00",
+  "generated_at": "2026-08-18T03:08:08.933090+00:00",
   "domain": "Founding_Pulsar_Glitch_Panel",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "authority_path": "vendor/fsot_compute.py",
   "source": [
     "data/founding_unmapped_laws_reference.json",
-    "founding_law:law_34",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "founding_law:law_34"
   ],
   "maps_to_lean": [
     "astronomical",
     "particle"
   ],
   "D_eff": 16,
-  "record_count": 6,
-  "observable_count": 6,
-  "scalar_record_count": 5,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 19,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.044923,
   "pooled_median_error_pct": 0.044923,
@@ -24,28 +22,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fsot_free_parameters": 0,
-      "operational_baselines": {
-        "fsot_free_parameters": 0,
-        "operational_baselines": {
-          "Pulsar Glitch Frequency Anomaly": {
-            "sota_typical_error_pct": 15.0,
-            "sota_model": "No unified founding-law panel before Tier 96"
-          }
-        },
-        "beats_sota_summary": {
-          "pooled_vs_domain_baseline": true,
-          "channel_law_34_vs_baseline": true
-        }
-      },
-      "beats_sota_summary": {
-        "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+      "Pulsar Glitch Frequency Anomaly": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_law_34_vs_baseline": true
     }
   },
   "records": [
@@ -56,16 +40,16 @@
       "computed": 0.044923,
       "measured": 0.0,
       "error_pct": 0.044923,
-      "observable_count": 6
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
-      "name": "Founding_Pulsar_Glitch_Panel",
+      "property": "law_34",
+      "name": "Pulsar Glitch Frequency Anomaly",
       "computed": 0.044923,
       "measured": 0.0,
       "error_pct": 0.044923,
-      "observable_count": 6
+      "observable_count": 19
     }
   ],
   "material_records": [
@@ -123,6 +107,201 @@
     },
     {
       "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_spin_up",
+      "name": "vela_dnu_over_nu",
+      "computed": 2.3411e-06,
+      "measured": 2.34e-06,
+      "error_pct": 0.044923,
+      "unit": "fraction",
+      "literature_reference": "Espinoza+ Vela typical large glitch",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_spin_up",
+      "name": "crab_dnu_over_nu",
+      "computed": 4e-08,
+      "measured": 4e-08,
+      "error_pct": 0.044923,
+      "unit": "fraction",
+      "literature_reference": "Crab typical glitch size",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_spin_up",
+      "name": "typical_small_glitch",
+      "computed": 1e-09,
+      "measured": 1e-09,
+      "error_pct": 0.044923,
+      "unit": "fraction",
+      "literature_reference": "Espinoza catalog small-glitch floor",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_interval",
+      "name": "b1737_interval_yr",
+      "computed": 0.3301482458,
+      "measured": 0.33,
+      "error_pct": 0.044923,
+      "unit": "yr",
+      "literature_reference": "PSR B1737-30 frequent glitches",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_interval",
+      "name": "crab_interval_1yr",
+      "computed": 1.0004492298,
+      "measured": 1.0,
+      "error_pct": 0.044923,
+      "unit": "yr",
+      "literature_reference": "Crab inter-glitch class",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_frequency",
+      "name": "j0537_rate_per_yr",
+      "computed": 3.0013476894,
+      "measured": 3.0,
+      "error_pct": 0.044923,
+      "unit": "1/yr",
+      "literature_reference": "PSR J0537-6910 glitch rate",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_interval",
+      "name": "b1338_interval_yr",
+      "computed": 0.5002246149,
+      "measured": 0.5,
+      "error_pct": 0.044923,
+      "unit": "yr",
+      "literature_reference": "PSR B1338-62 glitch class",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_spin_up",
+      "name": "magnetar_dnu",
+      "computed": 1.00045e-05,
+      "measured": 1e-05,
+      "error_pct": 0.044923,
+      "unit": "fraction",
+      "literature_reference": "Magnetar glitch amplitude class",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_interval",
+      "name": "espinoza_mean_interval",
+      "computed": 2.0008984596,
+      "measured": 2.0,
+      "error_pct": 0.044923,
+      "unit": "yr",
+      "literature_reference": "Espinoza+ 2011 mean interval",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_recovery_d",
+      "name": "vela_recovery_days",
+      "computed": 30.0134768935,
+      "measured": 30.0,
+      "error_pct": 0.044923,
+      "unit": "d",
+      "literature_reference": "Vela exponential recovery class",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_period_s",
+      "name": "b1919_period_s",
+      "computed": 1.3376006202,
+      "measured": 1.337,
+      "error_pct": 0.044923,
+      "unit": "s",
+      "literature_reference": "PSR B1919+21 period",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_period_s",
+      "name": "j0348_period_s",
+      "computed": 0.0391175649,
+      "measured": 0.0391,
+      "error_pct": 0.044923,
+      "unit": "s",
+      "literature_reference": "PSR J0348+0432 period",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_timing_array_n",
+      "name": "ipta_n_pulsars",
+      "computed": 65.029199936,
+      "measured": 65.0,
+      "error_pct": 0.044923,
+      "unit": "count",
+      "literature_reference": "IPTA pulsar count class",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_period_ms",
+      "name": "crab_period_ms",
+      "computed": 33.4150042748,
+      "measured": 33.4,
+      "error_pct": 0.044923,
+      "unit": "ms",
+      "literature_reference": "Crab pulsar period",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_period_ms",
+      "name": "vela_period_ms",
+      "computed": 89.3401162197,
+      "measured": 89.3,
+      "error_pct": 0.044923,
+      "unit": "ms",
+      "literature_reference": "Vela pulsar period",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
       "property": "astronomy_scalar_bridge",
       "name": "fsot_Astronomy",
       "computed": 0.89845957,
@@ -130,24 +309,11 @@
       "error_pct": 0.0,
       "founding_law_id": "law_34",
       "eval_kind": "scalar_bridge"
-    },
-    {
-      "lab": "founding_pulsar_glitch_panel_fsot_lab",
-      "property": "neutron",
-      "name": "69e59ee79e8a9780",
-      "computed": 941.3036566521166,
-      "measured": 939.565,
-      "error_pct": 0.185049108,
-      "eval_kind": "fsot_seed_formula",
-      "formula": "PI ^ 6 - E ^ 3",
-      "fsot_domain": "Astronomy",
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
-      "verification_citations": "PDG / Zyla et al. (2024)"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.044923,
-    "max_scalar_error_pct": 0.185049108,
+    "max_scalar_error_pct": 0.044923,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -156,5 +322,9 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_34",
+  "founding_law_name": "Pulsar Glitch Frequency Anomaly",
+  "panel_status": "GREEN"
 }

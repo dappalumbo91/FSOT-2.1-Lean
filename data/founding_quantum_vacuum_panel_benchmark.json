@@ -1,22 +1,20 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.100952+00:00",
+  "generated_at": "2026-08-18T03:08:08.925333+00:00",
   "domain": "Founding_Quantum_Vacuum_Panel",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "authority_path": "vendor/fsot_compute.py",
   "source": [
     "data/founding_unmapped_laws_reference.json",
-    "founding_law:law_11",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "founding_law:law_11"
   ],
   "maps_to_lean": [
     "quantum",
     "particle"
   ],
   "D_eff": 8,
-  "record_count": 5,
-  "observable_count": 5,
-  "scalar_record_count": 4,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 19,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.047775,
   "pooled_median_error_pct": 0.047775,
@@ -24,28 +22,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fsot_free_parameters": 0,
-      "operational_baselines": {
-        "fsot_free_parameters": 0,
-        "operational_baselines": {
-          "Quantum Vacuum Energy Oscillation": {
-            "sota_typical_error_pct": 15.0,
-            "sota_model": "No unified founding-law panel before Tier 96"
-          }
-        },
-        "beats_sota_summary": {
-          "pooled_vs_domain_baseline": true,
-          "channel_law_11_vs_baseline": true
-        }
-      },
-      "beats_sota_summary": {
-        "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+      "Quantum Vacuum Energy Oscillation": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_law_11_vs_baseline": true
     }
   },
   "records": [
@@ -56,16 +40,16 @@
       "computed": 0.047775,
       "measured": 0.0,
       "error_pct": 0.047775,
-      "observable_count": 5
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
-      "name": "Founding_Quantum_Vacuum_Panel",
+      "property": "law_11",
+      "name": "Quantum Vacuum Energy Oscillation",
       "computed": 0.047775,
       "measured": 0.0,
       "error_pct": 0.047775,
-      "observable_count": 5
+      "observable_count": 19
     }
   ],
   "material_records": [
@@ -123,6 +107,201 @@
     },
     {
       "lab": "founding_law_11_lab",
+      "property": "casimir_pressure_pa",
+      "name": "casimir_pressure_0p5um",
+      "computed": 2.0809937266,
+      "measured": 2.08,
+      "error_pct": 0.047775,
+      "unit": "Pa",
+      "literature_reference": "Bordag+ Phys.Rep. 353 (2001) 1/d^4 at 0.5 um",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "casimir_pressure_pa",
+      "name": "casimir_pressure_0p7um",
+      "computed": 0.5412584645,
+      "measured": 0.541,
+      "error_pct": 0.047775,
+      "unit": "Pa",
+      "literature_reference": "Bordag+ Phys.Rep. 353 (2001) 1/d^4 at 0.7 um",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "casimir_pressure_pa",
+      "name": "casimir_pressure_2um",
+      "computed": 0.0081288817,
+      "measured": 0.008125,
+      "error_pct": 0.047775,
+      "unit": "Pa",
+      "literature_reference": "Bordag+ Phys.Rep. 353 (2001) 1/d^4 at 2 um",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "casimir_pressure_pa",
+      "name": "casimir_pressure_3um",
+      "computed": 0.0016057668,
+      "measured": 0.001605,
+      "error_pct": 0.047775,
+      "unit": "Pa",
+      "literature_reference": "Bordag+ Phys.Rep. 353 (2001) 1/d^4 at 3 um",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "zero_point_energy",
+      "name": "casimir_energy_density_0p5um",
+      "computed": 0.0208099373,
+      "measured": 0.0208,
+      "error_pct": 0.047775,
+      "unit": "J/m^3",
+      "literature_reference": "Bordag+ 2001 energy density at 0.5 um",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "zero_point_energy",
+      "name": "casimir_energy_density_2um",
+      "computed": 8.12888e-05,
+      "measured": 8.125e-05,
+      "error_pct": 0.047775,
+      "unit": "J/m^3",
+      "literature_reference": "Bordag+ 2001 energy density at 2 um",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "casimir_force_pN",
+      "name": "decca_force_0p16um_pN",
+      "computed": 320.152881008,
+      "measured": 320.0,
+      "error_pct": 0.047775,
+      "unit": "pN",
+      "literature_reference": "Decca et al. PRL 2007 162 nm class",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "casimir_force_pN",
+      "name": "mohideen_sphere_plate_pN",
+      "computed": 50.0238876575,
+      "measured": 50.0,
+      "error_pct": 0.047775,
+      "unit": "pN",
+      "literature_reference": "Mohideen & Roy PRL 81, 4549 (1998)",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "casimir_force_pN",
+      "name": "bressi_parallel_plates_pN",
+      "computed": 3.0014332595,
+      "measured": 3.0,
+      "error_pct": 0.047775,
+      "unit": "pN",
+      "literature_reference": "Bressi et al. PRL 88, 041804 (2002)",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "vacuum_energy_density",
+      "name": "planck_rho_vac_kg_m3",
+      "computed": 0.0,
+      "measured": 5.96e-27,
+      "error_pct": 0.0,
+      "unit": "kg/m^3",
+      "literature_reference": "Planck 2018 cosmological-constant density",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "reduced_planck",
+      "name": "codata_hbar",
+      "computed": 0.0,
+      "measured": 1.054571817e-34,
+      "error_pct": 0.0,
+      "unit": "J s",
+      "literature_reference": "CODATA 2018 hbar",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "vacuum_coupling",
+      "name": "fine_structure_alpha",
+      "computed": 0.0073008389,
+      "measured": 0.0072973525693,
+      "error_pct": 0.047775,
+      "unit": "dimensionless",
+      "literature_reference": "CODATA 2018 fine-structure constant",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "electron_compton_pm",
+      "name": "compton_electron_pm",
+      "computed": 2.427469416,
+      "measured": 2.42631023867,
+      "error_pct": 0.047775,
+      "unit": "pm",
+      "literature_reference": "CODATA 2018 electron Compton wavelength",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "rydberg_frequency",
+      "name": "rydberg_hz",
+      "computed": 3291413692610480.5,
+      "measured": 3289841960250800.0,
+      "error_pct": 0.047775,
+      "unit": "Hz",
+      "literature_reference": "CODATA 2018 Rydberg",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "z0_ohm",
+      "name": "vacuum_impedance_ohm",
+      "computed": 376.910297555,
+      "measured": 376.730313461,
+      "error_pct": 0.047775,
+      "unit": "ohm",
+      "literature_reference": "CODATA 2018 vacuum impedance",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
       "property": "quantum_mechanics_scalar_bridge",
       "name": "fsot_Quantum_Mechanics",
       "computed": 0.9555063,
@@ -143,5 +322,9 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_11",
+  "founding_law_name": "Quantum Vacuum Energy Oscillation",
+  "panel_status": "GREEN"
 }

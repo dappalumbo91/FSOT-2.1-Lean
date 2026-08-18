@@ -12,6 +12,8 @@ If a picture and `vendor/fsot_compute.py` (pin **D1D38A**) disagree, **the engin
 
 Live counts stay in [`CURRENT_STATUS.md`](CURRENT_STATUS.md). Sibling folds: [`../RELATED_EMBODIMENTS.md`](../RELATED_EMBODIMENTS.md).
 
+How Damian formed the picture (river, seepage, BH/WH fridge-cycle, as-above-so-below, vacuum harvest) is in [`FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md) — read from `I:\fsuft aasb` + `I:\fsot tech`. That archive’s 2025 numbers are **not** this pin.
+
 ---
 
 ## C1 — One fluid, three strings

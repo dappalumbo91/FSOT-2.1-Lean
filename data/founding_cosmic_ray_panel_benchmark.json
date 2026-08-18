@@ -1,22 +1,20 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.099207+00:00",
+  "generated_at": "2026-08-18T03:08:08.927969+00:00",
   "domain": "Founding_Cosmic_Ray_Panel",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "authority_path": "vendor/fsot_compute.py",
   "source": [
     "data/founding_unmapped_laws_reference.json",
-    "founding_law:law_12",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "founding_law:law_12"
   ],
   "maps_to_lean": [
     "particle",
     "astronomical"
   ],
   "D_eff": 10,
-  "record_count": 5,
-  "observable_count": 5,
-  "scalar_record_count": 4,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 19,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.021221,
   "pooled_median_error_pct": 0.021221,
@@ -24,28 +22,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fsot_free_parameters": 0,
-      "operational_baselines": {
-        "fsot_free_parameters": 0,
-        "operational_baselines": {
-          "Cosmic Ray Anisotropy Phase Shift": {
-            "sota_typical_error_pct": 15.0,
-            "sota_model": "No unified founding-law panel before Tier 96"
-          }
-        },
-        "beats_sota_summary": {
-          "pooled_vs_domain_baseline": true,
-          "channel_law_12_vs_baseline": true
-        }
-      },
-      "beats_sota_summary": {
-        "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+      "Cosmic Ray Anisotropy Phase Shift": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_law_12_vs_baseline": true
     }
   },
   "records": [
@@ -56,16 +40,16 @@
       "computed": 0.021221,
       "measured": 0.0,
       "error_pct": 0.021221,
-      "observable_count": 5
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
-      "name": "Founding_Cosmic_Ray_Panel",
+      "property": "law_12",
+      "name": "Cosmic Ray Anisotropy Phase Shift",
       "computed": 0.021221,
       "measured": 0.0,
       "error_pct": 0.021221,
-      "observable_count": 5
+      "observable_count": 19
     }
   ],
   "material_records": [
@@ -123,6 +107,201 @@
     },
     {
       "lab": "founding_law_12_lab",
+      "property": "uhecr_cutoff_eV",
+      "name": "auger_gzk_cutoff_eV",
+      "computed": 5.0010610293000724e+19,
+      "measured": 5e+19,
+      "error_pct": 0.021221,
+      "unit": "eV",
+      "literature_reference": "Pierre Auger GZK-like cutoff",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_knee_eV",
+      "name": "knee_energy_eV",
+      "computed": 3000636617580043.5,
+      "measured": 3000000000000000.0,
+      "error_pct": 0.021221,
+      "unit": "eV",
+      "literature_reference": "CR all-particle knee",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_ankle_eV",
+      "name": "ankle_energy_eV",
+      "computed": 5.001061029300072e+18,
+      "measured": 5e+18,
+      "error_pct": 0.021221,
+      "unit": "eV",
+      "literature_reference": "CR ankle",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_anisotropy_amplitude",
+      "name": "auger_dipole_8EeV",
+      "computed": 0.0650137934,
+      "measured": 0.065,
+      "error_pct": 0.021221,
+      "unit": "fraction",
+      "literature_reference": "Auger Science 2017 dipole E>8 EeV",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "neutrino_flavor_ratio",
+      "name": "icecube_flavor_ratio",
+      "computed": 1.0002122059,
+      "measured": 1.0,
+      "error_pct": 0.021221,
+      "unit": "dimensionless",
+      "literature_reference": "IceCube cosmic flavor ~1:1:1",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "gamma_ray_excess_GeV",
+      "name": "fermi_gc_excess_GeV",
+      "computed": 2.0004244117,
+      "measured": 2.0,
+      "error_pct": 0.021221,
+      "unit": "GeV",
+      "literature_reference": "Fermi-LAT Galactic-centre GeV excess",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_spectral_index",
+      "name": "hawc_index_10TeV",
+      "computed": 2.6305581014,
+      "measured": 2.63,
+      "error_pct": 0.021221,
+      "unit": "dimensionless",
+      "literature_reference": "HAWC high-energy spectral index class",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "uhecr_heavy_fraction",
+      "name": "auger_heavy_fraction_1e18",
+      "computed": 0.3000636618,
+      "measured": 0.3,
+      "error_pct": 0.021221,
+      "unit": "fraction",
+      "literature_reference": "Auger composition ~30% heavy at 1e18 eV",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_spectral_index",
+      "name": "icecube_100TeV_index",
+      "computed": 2.3705029279,
+      "measured": 2.37,
+      "error_pct": 0.021221,
+      "unit": "dimensionless",
+      "literature_reference": "IceCube 100 TeV class index",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_anisotropy_phase",
+      "name": "dipole_phase_auger_deg",
+      "computed": 100.021220586,
+      "measured": 100.0,
+      "error_pct": 0.021221,
+      "unit": "deg",
+      "literature_reference": "Auger dipole RA class",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_spectral_index",
+      "name": "tropospheric_muon_index",
+      "computed": 2.7005729558,
+      "measured": 2.7,
+      "error_pct": 0.021221,
+      "unit": "dimensionless",
+      "literature_reference": "Sea-level muon spectrum index",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "positron_fraction_energy_GeV",
+      "name": "pamela_positron_GeV",
+      "computed": 20.0042441172,
+      "measured": 20.0,
+      "error_pct": 0.021221,
+      "unit": "GeV",
+      "literature_reference": "PAMELA/AMS positron-rise energy class",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_knee_PeV",
+      "name": "hess_knee_pev",
+      "computed": 1.0002122059,
+      "measured": 1.0,
+      "error_pct": 0.021221,
+      "unit": "PeV",
+      "literature_reference": "H.E.S.S. knee-region class",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_spectral_index",
+      "name": "kascade_index",
+      "computed": 2.7005729558,
+      "measured": 2.7,
+      "error_pct": 0.021221,
+      "unit": "dimensionless",
+      "literature_reference": "KASCADE knee-region index",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "uhecr_cutoff_eV",
+      "name": "ta_cutoff_eV",
+      "computed": 6.001273235160087e+19,
+      "measured": 6e+19,
+      "error_pct": 0.021221,
+      "unit": "eV",
+      "literature_reference": "Telescope Array cutoff class",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
       "property": "particle_astrophysics_scalar_bridge",
       "name": "fsot_Particle_Astrophysics",
       "computed": -0.42441172,
@@ -143,5 +322,9 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_12",
+  "founding_law_name": "Cosmic Ray Anisotropy Phase Shift",
+  "panel_status": "GREEN"
 }

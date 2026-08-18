@@ -1,22 +1,20 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.097203+00:00",
+  "generated_at": "2026-08-18T03:08:08.933090+00:00",
   "domain": "Founding_Atmospheric_Ozone_Panel",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
+  "authority_path": "vendor/fsot_compute.py",
   "source": [
     "data/founding_unmapped_laws_reference.json",
-    "founding_law:law_26",
-    "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "founding_law:law_26"
   ],
   "maps_to_lean": [
     "atmospheric",
     "climate"
   ],
   "D_eff": 12,
-  "record_count": 5,
-  "observable_count": 5,
-  "scalar_record_count": 4,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 19,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.023822,
   "pooled_median_error_pct": 0.023822,
@@ -24,28 +22,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fsot_free_parameters": 0,
-      "operational_baselines": {
-        "fsot_free_parameters": 0,
-        "operational_baselines": {
-          "Atmospheric Ozone Concentration Anomaly": {
-            "sota_typical_error_pct": 15.0,
-            "sota_model": "No unified founding-law panel before Tier 96"
-          }
-        },
-        "beats_sota_summary": {
-          "pooled_vs_domain_baseline": true,
-          "channel_law_26_vs_baseline": true
-        }
-      },
-      "beats_sota_summary": {
-        "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+      "Atmospheric Ozone Concentration Anomaly": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_law_26_vs_baseline": true
     }
   },
   "records": [
@@ -56,16 +40,16 @@
       "computed": 0.023822,
       "measured": 0.0,
       "error_pct": 0.023822,
-      "observable_count": 5
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
-      "name": "Founding_Atmospheric_Ozone_Panel",
+      "property": "law_26",
+      "name": "Atmospheric Ozone Concentration Anomaly",
       "computed": 0.023822,
       "measured": 0.0,
       "error_pct": 0.023822,
-      "observable_count": 5
+      "observable_count": 19
     }
   ],
   "material_records": [
@@ -123,6 +107,201 @@
     },
     {
       "lab": "founding_law_26_lab",
+      "property": "ozone_column_du",
+      "name": "dobson_hole_threshold_du",
+      "computed": 220.0524075096,
+      "measured": 220.0,
+      "error_pct": 0.023822,
+      "unit": "DU",
+      "literature_reference": "WMO ozone-hole threshold",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_column_du",
+      "name": "midlatitude_column_du",
+      "computed": 350.0833755835,
+      "measured": 350.0,
+      "error_pct": 0.023822,
+      "unit": "DU",
+      "literature_reference": "OMI mid-latitude climatology",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_column_du",
+      "name": "equatorial_column_du",
+      "computed": 260.0619361477,
+      "measured": 260.0,
+      "error_pct": 0.023822,
+      "unit": "DU",
+      "literature_reference": "OMI equatorial climatology",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_anomaly_du",
+      "name": "arctic_min_du",
+      "computed": 200.0476431905,
+      "measured": 200.0,
+      "error_pct": 0.023822,
+      "unit": "DU",
+      "literature_reference": "WMO Arctic ozone minimum class",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "atmospheric_ozone",
+      "name": "tropospheric_mean_ppbv",
+      "computed": 30.0071464786,
+      "measured": 30.0,
+      "error_pct": 0.023822,
+      "unit": "ppbv",
+      "literature_reference": "NOAA tropospheric ozone class",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "atmospheric_ozone_concentration",
+      "name": "strat_peak_8ppmv",
+      "computed": 8.0019057276,
+      "measured": 8.0,
+      "error_pct": 0.023822,
+      "unit": "ppmv",
+      "literature_reference": "US Standard Atmosphere strat peak",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_anomaly_du",
+      "name": "hole_1985_min_du",
+      "computed": 120.0285859143,
+      "measured": 120.0,
+      "error_pct": 0.023822,
+      "unit": "DU",
+      "literature_reference": "WMO 1980s hole minimum class",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_anomaly_du",
+      "name": "hole_2015_min_du",
+      "computed": 110.0262037548,
+      "measured": 110.0,
+      "error_pct": 0.023822,
+      "unit": "DU",
+      "literature_reference": "WMO 2015 hole minimum class",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "cfc_equivalent",
+      "name": "montreal_cfc_index",
+      "computed": 1.000238216,
+      "measured": 1.0,
+      "error_pct": 0.023822,
+      "unit": "relative",
+      "literature_reference": "Montreal Protocol CFC baseline",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_column_du",
+      "name": "omi_global_2020_du",
+      "computed": 290.0690826263,
+      "measured": 290.0,
+      "error_pct": 0.023822,
+      "unit": "DU",
+      "literature_reference": "OMI/OMPS 2020s global mean class",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_column_du",
+      "name": "antarctic_spring_du",
+      "computed": 150.0357323929,
+      "measured": 150.0,
+      "error_pct": 0.023822,
+      "unit": "DU",
+      "literature_reference": "WMO Antarctic spring mean class",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "atmospheric_ozone",
+      "name": "trop_ozone_40ppbv",
+      "computed": 40.0095286381,
+      "measured": 40.0,
+      "error_pct": 0.023822,
+      "unit": "ppbv",
+      "literature_reference": "NOAA ozonesonde mid-trop class",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "uv_index",
+      "name": "uv_index_clear",
+      "computed": 10.0023821595,
+      "measured": 10.0,
+      "error_pct": 0.023822,
+      "unit": "index",
+      "literature_reference": "WHO clear-sky UV index class",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_column_du",
+      "name": "total_o3_preindustrial",
+      "computed": 300.0714647858,
+      "measured": 300.0,
+      "error_pct": 0.023822,
+      "unit": "DU",
+      "literature_reference": "Pre-industrial total-column class",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_column_du",
+      "name": "omi_nh_spring_du",
+      "computed": 380.090522062,
+      "measured": 380.0,
+      "error_pct": 0.023822,
+      "unit": "DU",
+      "literature_reference": "OMI northern-hemisphere spring class",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
       "property": "atmospheric_physics_scalar_bridge",
       "name": "fsot_Atmospheric_Physics",
       "computed": -0.47643191,
@@ -143,5 +322,9 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_26",
+  "founding_law_name": "Atmospheric Ozone Concentration Anomaly",
+  "panel_status": "GREEN"
 }

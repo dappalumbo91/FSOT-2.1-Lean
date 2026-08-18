@@ -58,6 +58,7 @@ Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 | Multiprover | `verification/{coq,isabelle,fstar,rust,smt,tla,qemu,esp32}/` | Independent residual / structure checks |
 | Domain data | `data/*_benchmark.json` | Residual panels |
 | Concepts (BH/WH, bubble, folds) | [`docs/CONCEPTS.md`](CONCEPTS.md) | Picture → engine map — read this before the atlas |
+| How Damian views the model | [`docs/FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md) | River / seepage / BH–WH from `I:\fsuft aasb` + `I:\fsot tech` |
 | Predictions (frozen) | `predictions/` | Timestamped / SHA-locked forecasts |
 | Results (outcomes) | `results/` | Literature + API outcomes after data lands |
 | Sibling ledgers | `results/siblings/` | Genetics product + Quantum fold headlines pulled into this hub |
