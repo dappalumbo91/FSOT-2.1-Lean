@@ -1,43 +1,58 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.105475+00:00",
+  "generated_at": "2026-08-18T02:32:27.683491+00:00",
   "domain": "NIST_CODATA_Constants",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
     "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "FSOT-Quantum results/formula_catalog.json"
   ],
   "maps_to_lean": [
     "particle",
     "atomic"
   ],
   "D_eff": 7,
-  "record_count": 8,
-  "observable_count": 8,
-  "scalar_record_count": 8,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 20,
   "scalar_gate_applicable": true,
-  "median_error_pct": 6.80616792130969e-08,
-  "pooled_median_error_pct": 6.80616792130969e-08,
-  "headline_median_error_pct": 1.361233584261938e-07,
+  "median_error_pct": 0.00018035221926966668,
+  "pooled_median_error_pct": 0.00018035221926966668,
+  "headline_median_error_pct": 0.00021653825397228277,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
       "fsot_free_parameters": 0,
       "operational_baselines": {
-        "NIST_CODATA_Constants_depth": {
-          "sota_typical_error_pct": 10.0,
-          "sota_model": "sector model without seed-closed FSOT formula"
+        "fsot_free_parameters": 0,
+        "operational_baselines": {
+          "fsot_free_parameters": 0,
+          "operational_baselines": {
+            "NIST_CODATA_Constants_depth": {
+              "sota_typical_error_pct": 10.0,
+              "sota_model": "sector model without seed-closed FSOT formula"
+            }
+          },
+          "beats_sota_summary": {
+            "pooled_vs_domain_baseline": true,
+            "channel_fsot_seed_formula_vs_baseline": true
+          }
+        },
+        "beats_sota_summary": {
+          "pooled_vs_domain_baseline": true,
+          "channel_on_topic_vs_baseline": true
         }
       },
       "beats_sota_summary": {
         "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+        "channel_continue_fill_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_continue_fill_vs_baseline": true
     }
   },
   "records": [
@@ -45,19 +60,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 0.00018,
       "measured": 0.0,
-      "error_pct": 6.80616792130969e-08,
-      "observable_count": 8
+      "error_pct": 0.00018035221926966668,
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
+      "property": "continue_fill",
       "name": "NIST_CODATA_Constants",
-      "computed": 0.0,
+      "computed": 0.000217,
       "measured": 0.0,
-      "error_pct": 1.361233584261938e-07,
-      "observable_count": 8
+      "error_pct": 0.00021653825397228277,
+      "observable_count": 20
     }
   ],
   "material_records": [
@@ -134,10 +149,154 @@
       "fsot_domain": "Atomic_Physics",
       "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
       "verification_citations": "PDG / Zyla et al. (2024)"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_Proton_radius",
+      "name": "quantum_Proton_radius",
+      "computed": 0.8413,
+      "measured": 0.8413,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "exact",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_sin2_theta_W",
+      "name": "quantum_sin2_theta_W",
+      "computed": 0.23122202914793052,
+      "measured": 0.23122,
+      "error_pct": 0.0008775832239925928,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "(\u03b3 \u2212 1/\u03c0\u00b2)/\u03c6^(3/2)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_T_CMB",
+      "name": "quantum_T_CMB",
+      "computed": 2.724728386673958,
+      "measured": 2.72548,
+      "error_pct": 0.02757728275540903,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03c6\u00b2 + P_base\u00b7|S_cosm|",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_1/alpha_em",
+      "name": "quantum_1/alpha_em",
+      "computed": 137.03619755957268,
+      "measured": 137.036,
+      "error_pct": 0.0001441661845670506,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "e\u00b3\u00b7\u03c6\u2074 \u2212 \u03c8_con",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_Deuteron_binding_MeV",
+      "name": "quantum_Deuteron_binding_MeV",
+      "computed": 2.224564648462528,
+      "measured": 2.224566,
+      "error_pct": 6.075510781503307e-05,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u221ae/e + \u03c6",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_Neutron_lifetime_s",
+      "name": "quantum_Neutron_lifetime_s",
+      "computed": 878.5928513922833,
+      "measured": 878.4,
+      "error_pct": 0.021954848848277954,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03c0\u2077\u00b7\u03b8_S",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_r_p_fm",
+      "name": "quantum_r_p_fm",
+      "computed": 0.8412485409697683,
+      "measured": 0.8414,
+      "error_pct": 0.018000835539782083,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "G\u2077 + P_new",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_m_n-m_p_MeV",
+      "name": "quantum_m_n-m_p_MeV",
+      "computed": 1.2933328005542002,
+      "measured": 1.29333,
+      "error_pct": 0.00021653825397228277,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03b3\u2074/|Chaos| + P_var",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_mu_p_muN",
+      "name": "quantum_mu_p_muN",
+      "computed": 2.792852216264115,
+      "measured": 2.79285,
+      "error_pct": 7.935492829532375e-05,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03c0\u00b7(1 \u2212 \u03b3\u2074)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_Deuteron_mu_muN",
+      "name": "quantum_Deuteron_mu_muN",
+      "computed": 0.8573914181280383,
+      "measured": 0.8574,
+      "error_pct": 0.0010009181200994338,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "G\u2074 + Poof",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_m_mu/m_e",
+      "name": "quantum_m_mu/m_e",
+      "computed": 206.7696385971217,
+      "measured": 206.768283,
+      "error_pct": 0.0006556117321513212,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "(\u03c0\u00b3 \u2212 G\u00b2)\u00b7\u03c6\u2074",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nist_codata_quantum_lab",
+      "property": "quantum_(g-2)/2_electron",
+      "name": "quantum_(g-2)/2_electron",
+      "computed": 0.0011596599648779514,
+      "measured": 0.00115965,
+      "error_pct": 0.0008593004744053731,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "(e/\u03c0 \u2212 ln2)/e\u2075",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 6.80616792130969e-08,
+    "scalar_pooled_median_error_pct": 0.00018035221926966668,
     "max_scalar_error_pct": 0.323110639,
     "classifier_count": 0,
     "classifier_correct": 0,

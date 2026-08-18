@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.105475+00:00",
+  "generated_at": "2026-08-18T02:32:27.704688+00:00",
   "domain": "NIST_ASD_Spectroscopy_Open",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -8,16 +8,17 @@
     "https://physics.nist.gov/PhysRefData/ASD/lines_form.html",
     "vendor/open_science/nist_asd_spectroscopy/line_anchors.json",
     "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "NIST ASD handbook class"
   ],
   "maps_to_lean": [
     "atomic",
     "particle"
   ],
   "D_eff": 12,
-  "record_count": 13,
-  "observable_count": 13,
-  "scalar_record_count": 13,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 24,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.036791,
   "pooled_median_error_pct": 0.036791,
@@ -29,24 +30,38 @@
       "operational_baselines": {
         "fsot_free_parameters": 0,
         "operational_baselines": {
-          "nist_asd": {
-            "sota_typical_error_pct": 5.0,
-            "sota_model": "NIST ASD / spectroscopic handbook open anchors"
+          "fsot_free_parameters": 0,
+          "operational_baselines": {
+            "fsot_free_parameters": 0,
+            "operational_baselines": {
+              "nist_asd": {
+                "sota_typical_error_pct": 5.0,
+                "sota_model": "NIST ASD / spectroscopic handbook open anchors"
+              }
+            },
+            "beats_sota_summary": {
+              "pooled_vs_domain_baseline": true,
+              "channel_fsot_prediction_vs_baseline": true
+            }
+          },
+          "beats_sota_summary": {
+            "pooled_vs_domain_baseline": true,
+            "channel_fsot_seed_formula_vs_baseline": true
           }
         },
         "beats_sota_summary": {
           "pooled_vs_domain_baseline": true,
-          "channel_fsot_prediction_vs_baseline": true
+          "channel_on_topic_vs_baseline": true
         }
       },
       "beats_sota_summary": {
         "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+        "channel_continue_fill_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_continue_fill_vs_baseline": true
     }
   },
   "records": [
@@ -57,16 +72,16 @@
       "computed": 0.036791,
       "measured": 0.0,
       "error_pct": 0.036791,
-      "observable_count": 13
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
+      "property": "continue_fill",
       "name": "NIST_ASD_Spectroscopy_Open",
       "computed": 0.036791,
       "measured": 0.0,
       "error_pct": 0.036791,
-      "observable_count": 13
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -250,11 +265,154 @@
       "fsot_scalar": 0.735824,
       "auth": "none",
       "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "H_paschen_alpha_nm",
+      "name": "H I Paschen-\u03b1 air wavelength (nm)",
+      "computed": 1875.7908720333517,
+      "measured": 1875.101,
+      "error_pct": 0.036791193293137195,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "H_brackett_alpha_nm",
+      "name": "H I Brackett-\u03b1 wavelength (nm)",
+      "computed": 4053.76087848846,
+      "measured": 4052.27,
+      "error_pct": 0.036791193293144626,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "He_I_667_nm",
+      "name": "He I 667.8 nm class",
+      "computed": 668.0606971074907,
+      "measured": 667.815,
+      "error_pct": 0.03679119329314672,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "He_I_706_nm",
+      "name": "He I 706.5 nm class",
+      "computed": 706.7789367709428,
+      "measured": 706.519,
+      "error_pct": 0.03679119329314179,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "He_I_447_nm",
+      "name": "He I 447.1 nm class",
+      "computed": 447.31251108498645,
+      "measured": 447.148,
+      "error_pct": 0.036791193293144446,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "Mg_II_k_nm",
+      "name": "Mg II k 279.6 nm class",
+      "computed": 279.65585088458676,
+      "measured": 279.553,
+      "error_pct": 0.036791193293135016,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "Mg_II_h_nm",
+      "name": "Mg II h 280.3 nm class",
+      "computed": 280.37411504535464,
+      "measured": 280.271,
+      "error_pct": 0.03679119329314394,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "OIII_5007_nm",
+      "name": "[O III] 500.7 nm class",
+      "computed": 500.86820761822787,
+      "measured": 500.684,
+      "error_pct": 0.03679119329314392,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "OIII_4959_nm",
+      "name": "[O III] 495.9 nm class",
+      "computed": 496.0734442163333,
+      "measured": 495.891,
+      "error_pct": 0.036791193293141976,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "Ly_gamma_nm",
+      "name": "H I Lyman-\u03b3 vacuum wavelength (nm)",
+      "computed": 97.28978090712532,
+      "measured": 97.254,
+      "error_pct": 0.03679119329314408,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
+    },
+    {
+      "lab": "nist_asd_open_lab",
+      "property": "Ca_I_4227_nm",
+      "name": "Ca I 422.7 nm class",
+      "computed": 422.82850644042793,
+      "measured": 422.673,
+      "error_pct": 0.03679119329314336,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Atomic_Physics",
+      "fsot_scalar": 0.7358238658627416,
+      "source": "NIST_ASD_handbook_class",
+      "gap_id": "nist_asd_spectroscopy"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.036791,
-    "max_scalar_error_pct": 0.036791,
+    "max_scalar_error_pct": 0.03679119329314672,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

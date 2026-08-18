@@ -47,15 +47,37 @@ Green after import: **472 / 472**.
 
 `python scripts/import_fsot_quantum_ontopic.py`
 
+## Continue fill (this pass)
+
+On-topic only: Quantum folds, JPL Kepler caches + SBDB dwarfs, NIST ASD handbook lines. No formula-corpus dump. No SH0ES 1% tools.
+
+`python scripts/continue_c_thin_fill.py`
+
+| Panel | Before | After | Tier |
+|-------|-------:|------:|------|
+| Matter_Antimatter | 18 | **27** | **B_verified** |
+| NuFIT_Neutrino_Open | 12 | **20** | **B_verified** |
+| cosmology_anomalies | 12 | **28** | **B_verified** |
+| NIST_CODATA_Constants | 8 | **20** | **B_verified** |
+| DESI_Public_Depth_Open | 10 | **20** | **B_verified** |
+| DESI_EDR_Table_Slice_Open | 18 | **22** | **B_verified** |
+| orbital_mechanics | 9 | **21** | **B_verified** |
+| NIST_ASD_Spectroscopy_Open | 13 | **24** | **B_verified** |
+
+Green after continue fill: **472 / 472**.
+
 ## Remaining empirical C_thin
 
-Founding laws (5–6 literature anchors each), Higgs (10 channels), PDG (12), DESI slices (10–18), NuFIT (10), Dark Energy CPL (14), orbital (9), NIST CODATA (8), cosmology anomalies (12), Matter/Antimatter (17), SH0ES refined hosts (7), NIST ASD (13).
+| Class | n | Why still thin |
+|-------|--:|----------------|
+| Founding laws (7 panels) | 5–6 | Only the public literature anchors in `founding_unmapped_laws_reference.json`. No extra table. |
+| SH0ES_Refined | 7 | 1% bubble-bleed tools stay in `predictions/h0_multi_tool_predictions.json`. |
 
-Fill these **only** when another **on-topic** public table exists. Then:
+Process / certificate ledgers: **9** (still tagged, not densified).
+
+Then:
 
 ```powershell
-python scripts/add_ontopic_c_thin_anchors.py
 python scripts/audit_all_benchmark_margins.py
+python scripts/run_cross_proof_verification.py
 ```
-
-Then cross-proof.

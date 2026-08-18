@@ -1,19 +1,20 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.107479+00:00",
+  "generated_at": "2026-08-18T02:32:27.704688+00:00",
   "domain": "orbital_mechanics",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "JPL_Horizons_kepler",
     "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "JPL_Horizons_kepler + JPL_SBDB"
   ],
   "maps_to_lean": [
     "Particle_Physics"
   ],
   "D_eff": 18,
-  "record_count": 9,
-  "observable_count": 9,
+  "record_count": 21,
+  "observable_count": 21,
   "scalar_record_count": 0,
   "scalar_gate_applicable": false,
   "median_error_pct": 0.0,
@@ -24,19 +25,33 @@
     "operational_baselines": {
       "fsot_free_parameters": 0,
       "operational_baselines": {
-        "orbital_mechanics_depth": {
-          "sota_typical_error_pct": 10.0,
-          "sota_model": "sector model without seed-closed FSOT formula"
+        "fsot_free_parameters": 0,
+        "operational_baselines": {
+          "fsot_free_parameters": 0,
+          "operational_baselines": {
+            "orbital_mechanics_depth": {
+              "sota_typical_error_pct": 10.0,
+              "sota_model": "sector model without seed-closed FSOT formula"
+            }
+          },
+          "beats_sota_summary": {
+            "pooled_vs_domain_baseline": true,
+            "channel_fsot_seed_formula_vs_baseline": true
+          }
+        },
+        "beats_sota_summary": {
+          "pooled_vs_domain_baseline": true,
+          "channel_on_topic_vs_baseline": true
         }
       },
       "beats_sota_summary": {
         "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+        "channel_continue_fill_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_continue_fill_vs_baseline": true
     }
   },
   "records": [
@@ -47,16 +62,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 9
+      "observable_count": 21
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
+      "property": "continue_fill",
       "name": "orbital_mechanics",
       "computed": 0.106141,
       "measured": 0.0,
       "error_pct": 0.106141,
-      "observable_count": 9
+      "observable_count": 21
     }
   ],
   "material_records": [
@@ -171,6 +186,174 @@
       "eccentricity": 0.2453609208640384,
       "eval_kind": "jpl_kepler",
       "note": "high_eccentricity_dwarf_kepler_closure"
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Quaoar",
+      "semi_major_au": 43.405,
+      "period_years": 285.97,
+      "computed": 1.00005,
+      "measured": 1.0,
+      "error_pct": 0.00499,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "JPL_SBDB_published"
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Orcus",
+      "semi_major_au": 39.174,
+      "period_years": 245.18,
+      "computed": 0.999945,
+      "measured": 1.0,
+      "error_pct": 0.005451,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "JPL_SBDB_published"
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Gonggong",
+      "semi_major_au": 67.38,
+      "period_years": 554.37,
+      "computed": 1.004631,
+      "measured": 1.0,
+      "error_pct": 0.463064,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "JPL_SBDB_published"
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Sedna",
+      "semi_major_au": 506.84,
+      "period_years": 11400.0,
+      "computed": 0.998153,
+      "measured": 1.0,
+      "error_pct": 0.184714,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "JPL_SBDB_published"
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Haumea",
+      "semi_major_au": 43.131,
+      "period_years": 280.935909,
+      "computed": 0.983662,
+      "measured": 1.0,
+      "error_pct": 1.633793,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "planetary_jpl_cache.json",
+      "eccentricity": 0.1995500845975406
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Ceres",
+      "semi_major_au": 2.767,
+      "period_years": 4.603215,
+      "computed": 1.000219,
+      "measured": 1.0,
+      "error_pct": 0.021871,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "small_body_jpl_cache.json",
+      "eccentricity": 0.07898250774570179
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Vesta",
+      "semi_major_au": 2.362,
+      "period_years": 3.628454,
+      "computed": 0.999088,
+      "measured": 1.0,
+      "error_pct": 0.09122,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "small_body_jpl_cache.json",
+      "eccentricity": 0.08974783723267052
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Eros",
+      "semi_major_au": 1.458,
+      "period_years": 1.760887,
+      "computed": 1.000438,
+      "measured": 1.0,
+      "error_pct": 0.043797,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "small_body_jpl_cache.json",
+      "eccentricity": 0.222761672299141,
+      "note": "high_eccentricity_dwarf_kepler_closure"
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Halley",
+      "semi_major_au": 17.834,
+      "period_years": 75.759944,
+      "computed": 1.011889,
+      "measured": 1.0,
+      "error_pct": 1.18893,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "small_body_jpl_cache.json",
+      "eccentricity": 0.967350313866682,
+      "note": "high_eccentricity_dwarf_kepler_closure"
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Pallas",
+      "semi_major_au": 2.773,
+      "period_years": 4.611152,
+      "computed": 0.99717,
+      "measured": 1.0,
+      "error_pct": 0.283003,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "small_body_jpl_cache.json",
+      "eccentricity": 0.2303053074255927,
+      "note": "high_eccentricity_dwarf_kepler_closure"
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Juno",
+      "semi_major_au": 2.668,
+      "period_years": 4.361608,
+      "computed": 1.001696,
+      "measured": 1.0,
+      "error_pct": 0.169585,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "small_body_jpl_cache.json",
+      "eccentricity": 0.2562051674092646,
+      "note": "high_eccentricity_dwarf_kepler_closure"
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Hygiea",
+      "semi_major_au": 3.139,
+      "period_years": 5.563827,
+      "computed": 1.00086,
+      "measured": 1.0,
+      "error_pct": 0.085987,
+      "within_tol": true,
+      "eval_kind": "jpl_kepler",
+      "source": "small_body_jpl_cache.json",
+      "eccentricity": 0.1109479778641034
     }
   ],
   "margin_summary": {

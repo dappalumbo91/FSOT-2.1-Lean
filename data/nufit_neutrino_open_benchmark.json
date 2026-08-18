@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:22:16.407447+00:00",
+  "generated_at": "2026-08-18T02:32:27.679472+00:00",
   "domain": "NuFIT_Neutrino_Open",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -16,9 +16,9 @@
     "quantum"
   ],
   "D_eff": 14,
-  "record_count": 12,
-  "observable_count": 12,
-  "scalar_record_count": 12,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 20,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.009504,
   "pooled_median_error_pct": 0.009504,
@@ -32,29 +32,43 @@
         "operational_baselines": {
           "fsot_free_parameters": 0,
           "operational_baselines": {
-            "nufit": {
-              "sota_typical_error_pct": 5.0,
-              "sota_model": "NuFit-6.0 three-flavor global fit"
+            "fsot_free_parameters": 0,
+            "operational_baselines": {
+              "fsot_free_parameters": 0,
+              "operational_baselines": {
+                "nufit": {
+                  "sota_typical_error_pct": 5.0,
+                  "sota_model": "NuFit-6.0 three-flavor global fit"
+                }
+              },
+              "beats_sota_summary": {
+                "pooled_vs_domain_baseline": true,
+                "channel_fsot_prediction_vs_baseline": true
+              }
+            },
+            "beats_sota_summary": {
+              "pooled_vs_domain_baseline": true,
+              "channel_fsot_seed_formula_vs_baseline": true
             }
           },
           "beats_sota_summary": {
             "pooled_vs_domain_baseline": true,
-            "channel_fsot_prediction_vs_baseline": true
+            "channel_on_topic_vs_baseline": true
           }
         },
         "beats_sota_summary": {
           "pooled_vs_domain_baseline": true,
-          "channel_fsot_seed_formula_vs_baseline": true
+          "channel_fsot_quantum_vs_baseline": true
         }
       },
       "beats_sota_summary": {
         "pooled_vs_domain_baseline": true,
-        "channel_on_topic_vs_baseline": true
+        "channel_continue_fill_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_quantum_vs_baseline": true
+      "channel_continue_fill_vs_baseline": true
     }
   },
   "records": [
@@ -65,16 +79,16 @@
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
-      "observable_count": 12
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_quantum",
+      "property": "continue_fill",
       "name": "NuFIT_Neutrino_Open",
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
-      "observable_count": 12
+      "observable_count": 20
     }
   ],
   "material_records": [
@@ -241,11 +255,107 @@
       "formula": "\u03c6\u00b3 \u2212 1/e",
       "source": "FSOT-Quantum results/formula_catalog.json",
       "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nufit_neutrino_open_quantum_lab",
+      "property": "quantum_sin2_theta12",
+      "name": "quantum_sin2_theta12",
+      "computed": 0.3069644297889016,
+      "measured": 0.307,
+      "error_pct": 0.011586387979935279,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "2\u00b7Poof",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nufit_neutrino_open_quantum_lab",
+      "property": "quantum_sin2_theta23",
+      "name": "quantum_sin2_theta23",
+      "computed": 0.5457666109860249,
+      "measured": 0.546,
+      "error_pct": 0.04274524065479535,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "|Chaos|\u00b7\u221ae",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nufit_neutrino_open_quantum_lab",
+      "property": "quantum_sin2_theta13",
+      "name": "quantum_sin2_theta13",
+      "computed": 0.02201515822114412,
+      "measured": 0.022,
+      "error_pct": 0.06890100520055274,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03b3\u2076\u00b7\u03c6/e",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nufit_neutrino_open_quantum_lab",
+      "property": "U_e1_sq",
+      "name": "quantum_U_e1_sq",
+      "computed": 0.6777782824800203,
+      "measured": 0.6777540000000001,
+      "error_pct": 0.003582786677788232,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "PMNS |U_\u03b1i|\u00b2 from Quantum sin\u00b2\u03b8",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nufit_neutrino_open_quantum_lab",
+      "property": "U_e2_sq",
+      "name": "quantum_U_e2_sq",
+      "computed": 0.30020655929883566,
+      "measured": 0.300246,
+      "error_pct": 0.013136128762531557,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "PMNS |U_\u03b1i|\u00b2 from Quantum sin\u00b2\u03b8",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nufit_neutrino_open_quantum_lab",
+      "property": "U_e3_sq",
+      "name": "quantum_U_e3_sq",
+      "computed": 0.02201515822114412,
+      "measured": 0.022,
+      "error_pct": 0.06890100520055274,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "PMNS |U_\u03b1i|\u00b2 from Quantum sin\u00b2\u03b8",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nufit_neutrino_open_quantum_lab",
+      "property": "U_mu3_sq",
+      "name": "quantum_U_mu3_sq",
+      "computed": 0.5337514726933499,
+      "measured": 0.533988,
+      "error_pct": 0.04429449849999178,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "PMNS |U_\u03b1i|\u00b2 from Quantum sin\u00b2\u03b8",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "nufit_neutrino_open_quantum_lab",
+      "property": "U_tau3_sq",
+      "name": "quantum_U_tau3_sq",
+      "computed": 0.444233369085506,
+      "measured": 0.44401199999999996,
+      "error_pct": 0.049856554666544595,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "PMNS |U_\u03b1i|\u00b2 from Quantum sin\u00b2\u03b8",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.009504,
-    "max_scalar_error_pct": 0.05766603486922898,
+    "max_scalar_error_pct": 0.06890100520055274,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

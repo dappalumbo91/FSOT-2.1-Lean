@@ -1,7 +1,7 @@
 # Hole audit — fill by the paradigm, not by siloed habit
 
 **Date:** 2026-08-18  
-**Fill pass:** registry 48/48 · green **472/472** · empirical C_thin **19** (honest) · process ledgers **9** tagged  
+**Fill pass:** registry 48/48 · green **472/472** · empirical C_thin **8** (7 founding + SH0ES) · process ledgers **9** tagged  
 **Stance:** This is a real ToE *attempt* under frozen Label A/B. Holes are missing **interfaces, data, or articulation** — not invitations to add free parameters.
 
 Counts: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Apply protocol: [`APPLY.md`](APPLY.md).
@@ -44,7 +44,7 @@ Do these with **real measured data** and the mismatch rule (wrong \(D_{\mathrm{e
 
 | Hole | What “filled” looks like | Kill |
 |------|--------------------------|------|
-| **29 C_thin panels** | 9 process ledgers tagged. NIST DLMF + **Quantum Higgs family** (m_H 125.200, BRs, PDG ratios, DE w0/wa) promoted Higgs/PDG/CPL. **~16** science panels still thin on purpose (NuFIT 12, Matter 18, founding 5, …). | median ≤ 0.5% on whatever rows are real |
+| **29 C_thin panels** | 9 process ledgers tagged. NIST DLMF + Quantum Higgs family + **continue fill** (NuFIT 20, Matter 27, cosmology 28, CODATA 20, DESI 20/22, orbital 21, ASD 24) promoted those science panels. **8** science panels still thin on purpose (7 founding + SH0ES). | median ≤ 0.5% on whatever rows are real |
 | Falsification registry vs living PREDs | **48/48** — rebuilt from `predictions/preregistered_predictions_manifest.yaml` + `results/outcomes/` | registry count matches prereg file |
 | Tool-row kills still `pending` | Score in `results/` when a survey paper lands (Euclid, JINR 119, PDG) | registered `kill_if` only |
 | Genetics **bulk** ~13–15 Å | Sibling work; hub only quotes **product vs bulk** labeled | do not claim sequence-only AF-beating |

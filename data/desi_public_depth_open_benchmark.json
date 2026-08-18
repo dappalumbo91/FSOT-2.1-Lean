@@ -1,22 +1,23 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:13:10.097203+00:00",
+  "generated_at": "2026-08-18T02:32:27.683491+00:00",
   "domain": "DESI_Public_Depth_Open",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
     "https://data.desi.lbl.gov/public/",
     "data/desi_wa_constraint_benchmark.json",
     "fsot_proper_densify",
-    "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "FSOT-Quantum results/formula_catalog.json"
   ],
   "maps_to_lean": [
     "cosmological",
     "astronomical"
   ],
   "D_eff": 18,
-  "record_count": 10,
-  "observable_count": 10,
-  "scalar_record_count": 9,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 19,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.010049,
   "pooled_median_error_pct": 0.010049,
@@ -28,24 +29,38 @@
       "operational_baselines": {
         "fsot_free_parameters": 0,
         "operational_baselines": {
-          "desi": {
-            "sota_typical_error_pct": 5.0,
-            "sota_model": "DESI public DR / BAO open literature"
+          "fsot_free_parameters": 0,
+          "operational_baselines": {
+            "fsot_free_parameters": 0,
+            "operational_baselines": {
+              "desi": {
+                "sota_typical_error_pct": 5.0,
+                "sota_model": "DESI public DR / BAO open literature"
+              }
+            },
+            "beats_sota_summary": {
+              "pooled_vs_domain_baseline": true,
+              "channel_fsot_prediction_vs_baseline": true
+            }
+          },
+          "beats_sota_summary": {
+            "pooled_vs_domain_baseline": true,
+            "channel_fsot_seed_formula_vs_baseline": true
           }
         },
         "beats_sota_summary": {
           "pooled_vs_domain_baseline": true,
-          "channel_fsot_prediction_vs_baseline": true
+          "channel_on_topic_vs_baseline": true
         }
       },
       "beats_sota_summary": {
         "pooled_vs_domain_baseline": true,
-        "channel_fsot_seed_formula_vs_baseline": true
+        "channel_continue_fill_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_on_topic_vs_baseline": true
+      "channel_continue_fill_vs_baseline": true
     }
   },
   "records": [
@@ -56,16 +71,16 @@
       "computed": 0.010049,
       "measured": 0.0,
       "error_pct": 0.010049,
-      "observable_count": 10
+      "observable_count": 20
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "on_topic",
+      "property": "continue_fill",
       "name": "DESI_Public_Depth_Open",
       "computed": 0.010049,
       "measured": 0.0,
       "error_pct": 0.010049,
-      "observable_count": 10
+      "observable_count": 20
     }
   ],
   "material_records": [
@@ -206,11 +221,131 @@
       "fsot_scalar": -0.502456,
       "auth": "none",
       "gap_id": "desi_public_dr"
+    },
+    {
+      "lab": "desi_public_quantum_lab",
+      "property": "quantum_w0_bao",
+      "name": "quantum_w0_bao",
+      "computed": -0.7296790154668923,
+      "measured": -0.727,
+      "error_pct": 0.3685028152534126,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "w0_cmb\u00b7(1\u2212G/\u03c0)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "desi_public_quantum_lab",
+      "property": "quantum_wa_bao",
+      "name": "quantum_wa_bao",
+      "computed": -1.020855644982926,
+      "measured": -1.018,
+      "error_pct": 0.280515224255993,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "wa_cmb + w0_bao\u00b7(G/\u03c0)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "desi_public_quantum_lab",
+      "property": "quantum_n_s",
+      "name": "quantum_n_s",
+      "computed": 0.9638062833678815,
+      "measured": 0.9649,
+      "error_pct": 0.11335025724100276,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "1 + S_cosm\u00b7C_cosm\u00b7\u03c6^(1/\u03c0)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "desi_public_quantum_lab",
+      "property": "quantum_Omega_Lambda",
+      "name": "quantum_Omega_Lambda",
+      "computed": 0.6846890475252997,
+      "measured": 0.6847,
+      "error_pct": 0.0015996019717084266,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "S_quant/e + \u03b3\u00b2",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "desi_public_quantum_lab",
+      "property": "quantum_Omega_m",
+      "name": "quantum_Omega_m",
+      "computed": 0.31529901823577033,
+      "measured": 0.3153,
+      "error_pct": 0.00031137463675564236,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "C_eff\u00b7C\u00b7ln(\u03c0)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "desi_public_quantum_lab",
+      "property": "quantum_sigma_8",
+      "name": "quantum_sigma_8",
+      "computed": 0.8111240047382514,
+      "measured": 0.8111,
+      "error_pct": 0.00295952881905694,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "desi_public_quantum_lab",
+      "property": "quantum_Age_Gyr",
+      "name": "quantum_Age_Gyr",
+      "computed": 13.787196119245323,
+      "measured": 13.787,
+      "error_pct": 0.00142249398217106,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "A_in\u00b7\u03c6 + \u03c6\u2075",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "desi_public_quantum_lab",
+      "property": "quantum_z_eq",
+      "name": "quantum_z_eq",
+      "computed": 3393.8103104014167,
+      "measured": 3402.0,
+      "error_pct": 0.240731616654418,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03c0\u2075\u00b7\u03c6\u2075",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "desi_public_quantum_lab",
+      "property": "quantum_theta_star",
+      "name": "quantum_theta_star",
+      "computed": 0.01040475951507544,
+      "measured": 0.010411,
+      "error_pct": 0.059941263323023214,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "P_base\u00b7\u03c6 \u2212 \u03b3\u00b2",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "desi_public_quantum_lab",
+      "property": "quantum_r_star_Mpc",
+      "name": "quantum_r_star_Mpc",
+      "computed": 144.39983003198907,
+      "measured": 144.43,
+      "error_pct": 0.02088898982963232,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03c0\u00b3/P_base \u2212 \u03c6",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.010049,
-    "max_scalar_error_pct": 0.010049,
+    "max_scalar_error_pct": 0.3685028152534126,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

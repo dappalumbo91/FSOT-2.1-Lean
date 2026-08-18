@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T02:22:16.411913+00:00",
+  "generated_at": "2026-08-18T02:32:27.679472+00:00",
   "domain": "Matter_Antimatter",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\vendor\\fsot_compute.py",
   "source": [
@@ -18,9 +18,9 @@
     "cosmological"
   ],
   "D_eff": 5,
-  "record_count": 18,
-  "observable_count": 18,
-  "scalar_record_count": 16,
+  "record_count": 27,
+  "observable_count": 27,
+  "scalar_record_count": 25,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -36,39 +36,53 @@
           "operational_baselines": {
             "fsot_free_parameters": 0,
             "operational_baselines": {
-              "sakharov_qualitative": {
-                "sota_typical_error_pct": 50.0,
-                "sota_model": "Qualitative baryogenesis (no unique seed \u03b7 in SM alone)"
+              "fsot_free_parameters": 0,
+              "operational_baselines": {
+                "fsot_free_parameters": 0,
+                "operational_baselines": {
+                  "sakharov_qualitative": {
+                    "sota_typical_error_pct": 50.0,
+                    "sota_model": "Qualitative baryogenesis (no unique seed \u03b7 in SM alone)"
+                  },
+                  "pdg_mass_equality": {
+                    "sota_typical_error_pct": 0.01,
+                    "sota_model": "PDG CPT tests / mass equality"
+                  }
+                },
+                "beats_sota_summary": {
+                  "pooled_vs_domain_baseline": true,
+                  "channel_fsot_prediction_vs_baseline": true,
+                  "channel_seed_identity_vs_baseline": true
+                }
               },
-              "pdg_mass_equality": {
-                "sota_typical_error_pct": 0.01,
-                "sota_model": "PDG CPT tests / mass equality"
+              "beats_sota_summary": {
+                "pooled_vs_domain_baseline": true,
+                "channel_fsot_seed_formula_vs_baseline": true
               }
             },
             "beats_sota_summary": {
               "pooled_vs_domain_baseline": true,
-              "channel_fsot_prediction_vs_baseline": true,
-              "channel_seed_identity_vs_baseline": true
+              "channel_on_topic_vs_baseline": true
             }
           },
           "beats_sota_summary": {
             "pooled_vs_domain_baseline": true,
-            "channel_fsot_seed_formula_vs_baseline": true
+            "channel_on_topic_anchors_vs_baseline": true
           }
         },
         "beats_sota_summary": {
           "pooled_vs_domain_baseline": true,
-          "channel_on_topic_vs_baseline": true
+          "channel_fsot_quantum_vs_baseline": true
         }
       },
       "beats_sota_summary": {
         "pooled_vs_domain_baseline": true,
-        "channel_on_topic_anchors_vs_baseline": true
+        "channel_continue_fill_vs_baseline": true
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_quantum_vs_baseline": true
+      "channel_continue_fill_vs_baseline": true
     }
   },
   "records": [
@@ -79,16 +93,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 18
+      "observable_count": 27
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_quantum",
+      "property": "continue_fill",
       "name": "Matter_Antimatter",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 18
+      "observable_count": 27
     }
   ],
   "material_records": [
@@ -336,6 +350,114 @@
       "error_pct": 0.23468225112121452,
       "eval_kind": "fsot_quantum_fold",
       "formula": "G/(\u03c0\u2079)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "matter_antimatter_quantum_lab",
+      "property": "quantum_Deuteron_binding_MeV",
+      "name": "quantum_Deuteron_binding_MeV",
+      "computed": 2.224564648462528,
+      "measured": 2.224566,
+      "error_pct": 6.075510781503307e-05,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u221ae/e + \u03c6",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "matter_antimatter_quantum_lab",
+      "property": "quantum_Neutron_lifetime_s",
+      "name": "quantum_Neutron_lifetime_s",
+      "computed": 878.5928513922833,
+      "measured": 878.4,
+      "error_pct": 0.021954848848277954,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03c0\u2077\u00b7\u03b8_S",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "matter_antimatter_quantum_lab",
+      "property": "quantum_m_n-m_p_MeV",
+      "name": "quantum_m_n-m_p_MeV",
+      "computed": 1.2933328005542002,
+      "measured": 1.29333,
+      "error_pct": 0.00021653825397228277,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03b3\u2074/|Chaos| + P_var",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "matter_antimatter_quantum_lab",
+      "property": "quantum_Y_p_He4",
+      "name": "quantum_Y_p_He4",
+      "computed": 0.24478099844975698,
+      "measured": 0.2449,
+      "error_pct": 0.0485918947501124,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03b8_S\u00b7sin(1)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "matter_antimatter_quantum_lab",
+      "property": "quantum_D_H_ratio",
+      "name": "quantum_D_H_ratio",
+      "computed": 2.5446825859417006e-05,
+      "measured": 2.547e-05,
+      "error_pct": 0.09098602506082563,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "1/(\u03c0\u2074\u00b7e\u2076)",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "matter_antimatter_quantum_lab",
+      "property": "quantum_He4_binding_MeV",
+      "name": "quantum_He4_binding_MeV",
+      "computed": 28.30071693656917,
+      "measured": 28.3,
+      "error_pct": 0.002533344767383359,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "\u03c0\u03b3/\u03b3\u2075",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "matter_antimatter_quantum_lab",
+      "property": "quantum_Triton_binding_MeV",
+      "name": "quantum_Triton_binding_MeV",
+      "computed": 8.480800162634557,
+      "measured": 8.482,
+      "error_pct": 0.014145689288404753,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "e\u00b2 + G\u207b\u00b9",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "matter_antimatter_quantum_lab",
+      "property": "quantum_Deuteron_mu_muN",
+      "name": "quantum_Deuteron_mu_muN",
+      "computed": 0.8573914181280383,
+      "measured": 0.8574,
+      "error_pct": 0.0010009181200994338,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "G\u2074 + Poof",
+      "source": "FSOT-Quantum results/formula_catalog.json",
+      "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
+    },
+    {
+      "lab": "matter_antimatter_quantum_lab",
+      "property": "quantum_eta_baryon_photon",
+      "name": "quantum_eta_baryon_photon",
+      "computed": 6.139749535425554e-10,
+      "measured": 6.14e-10,
+      "error_pct": 0.004079227596853056,
+      "eval_kind": "fsot_quantum_fold",
+      "formula": "Poof\u00b9\u00b9/(\u03c0\u03b3)",
       "source": "FSOT-Quantum results/formula_catalog.json",
       "citation": "https://github.com/dappalumbo91/FSOT-Quantum"
     }
