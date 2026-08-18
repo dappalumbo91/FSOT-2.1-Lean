@@ -2,7 +2,7 @@
 
 **Edition:** 2026-08-03  
 **Repo:** `FSOT-2.1-Lean`  
-**Principle:** With ~402 domains and 500k+ empirical records, the ceiling is open-source formal methods **used correctly**, not a longer tool list.
+**Principle:** With 472 green panels and 180k+ scalar records, the ceiling is open-source formal methods **used correctly**, not a longer tool list.
 
 ---
 

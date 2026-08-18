@@ -172,8 +172,8 @@ That is the **empirical gate**.
 
 | Check | What to look at | Recent status on the public spine |
 |-------|-----------------|-----------------------------------|
-| Domain green gates | `data/benchmark_margin_audit.json` | **405 / 405 green**, **0 fail** |
-| Domain map | `data/publication/domain_atlas.csv` | **402** routed domains (35 core + 367 extension) |
+| Domain green gates | `data/benchmark_margin_audit.json` | **472 / 472 green**, **0 fail** (live: `docs/CURRENT_STATUS.md`) |
+| Domain map | `data/publication/domain_atlas.csv` | **~403** atlas rows (coverage map — not the green-file count) |
 | Cross-domain residual language | `data/scientific_error_metrics_map.md` | Field-style MAPE / fractional / ppm mapping |
 | Contested sectors | `data/contested_observables_closure.json` (when regenerated) | Dual-anchor / tension-style panels |
 | Near misses | `data/publication/BENCHMARK_NEAR_MISS_LEDGER.md` | Worst greens published openly |
@@ -211,7 +211,7 @@ So FSOT treats proof assistants as **instruments**, not decoration.
 
 ### 7.1 What is proved where (high-assurance roles)
 
-The bottleneck at 402 domains / 500k+ records is **not** “more provers.”  
+The bottleneck at 472 green panels / 180k+ scalar rows is **not** “more provers.”  
 It is the **translation layer** between systems. Roles stay fixed:
 
 | Layer | Role | Where |
@@ -248,7 +248,7 @@ Nothing outside this core group is required for credibility. Adding more framewo
 | Catalog residual **gates** are re-proved as exported numeric lemmas in Coq/Isabelle/Lean + SMT | “Each prover re-derived Hubble/JWST photometry from pure logic without data” |
 | Lean remains master integrator for Real structure | “Only Lean exists; other systems are theater” |
 | SMT bulk-checks margins; TLA+ checks **flow** | “Z3 alone proves the fluid-spacetime ontology” |
-| Engine identities and boot kernel are machine-checked | “F\* by itself proves all 402 domains’ measured catalogs” |
+| Engine identities and boot kernel are machine-checked | “F\* by itself proves all 472 panels’ measured catalogs” |
 
 Plain language:  
 **Lean holds the math. SMT crunches residual bounds at atlas scale. TLA+ keeps the routing honest. Coq/Isabelle/F\*/Rust stop silent drift. Data still has to match the world.**

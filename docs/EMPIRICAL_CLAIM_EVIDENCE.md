@@ -42,7 +42,7 @@ If this table disagrees with CURRENT_STATUS, **CURRENT_STATUS wins**.
 | ToE labels (frozen checklist) | Label A **true** · Label B **true** | `data/toe_gap_closure_report.json` |
 | Clean-clone Mathlib path | **PASS** (0 field mismatches) | `data/fresh_clone_corpus_mathlib_repro_report.md` |
 
-**Stale numbers to ignore if you still see them in old prose:** 57% Mathlib, 432/432 or 433/433 green, ~1912 obligations, “priors still mostly L1.”
+**Stale numbers to ignore if you still see them in old prose:** 394/394, 405/405, 430/432, 432/432, 433/433 green; **1,863** atomic (live **2022**); 57% Mathlib; ~1912 obligations; “priors still mostly L1.” Ledger: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md).
 
 ---
 

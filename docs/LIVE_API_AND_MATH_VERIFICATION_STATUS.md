@@ -1,7 +1,9 @@
 # Live APIs + multi-prover mathematics — status
 
+> **Historical session note (2026-08-03).** Live green / obligation counts below are **stale**. Use [`CURRENT_STATUS.md`](CURRENT_STATUS.md) and [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md): **472/472** green, **2022** atomic, **2585** full formal. Latest API probe: `data/live_api_health_report.json` (2026-08-18).
+
 **Workspace:** `C:\Users\damia\Desktop\FSOT-2.1-Lean`  
-**Date:** 2026-08-03  
+**Date:** 2026-08-03 (session); counts superseded 2026-08-18  
 **Policy:** Stream/live probe preferred; full bulk re-download not required for verification.
 
 ---
@@ -97,11 +99,10 @@ Seeds \((\pi,e,\varphi,\gamma,G)\). Authority pin **D1D38A** (`vendor/fsot_compu
 
 | Ledger | Value |
 |--------|------:|
-| Routed domains | **402** (35 core + 367 extension) |
-| Benchmark green gates | **405/405** |
-| Atlas record_count sum | **~1.08M** |
-| Benchmark records sum | **~0.76M** |
-| Formal atomic obligations | **1863** verified in Python + Rust replay |
+| Routed / coverage-map domains | **~407** named (atlas CSV ~403 rows) — not the green-file count |
+| Benchmark green gates | **472/472** (live `docs/CURRENT_STATUS.md`) |
+| Scalar-record envelope | **179,914** |
+| Formal atomic obligations | **2022** (full formal **2585**) |
 | Strict-empirical formulas | **7941** |
 
 ---

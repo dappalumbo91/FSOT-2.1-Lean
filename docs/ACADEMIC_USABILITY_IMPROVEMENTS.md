@@ -39,7 +39,7 @@ The 15 Å file is stamped **stale / bulk only**.
 
 ### 3. Number drift across docs
 
-README still says 402 / 394 / 407 / 432 in different sections. `CURRENT_STATUS.md` says **472/472**. Scientists will stop at the first contradiction.
+README headlines and generators now follow [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md): **472/472** green files vs ~407 named domains vs **2022** atomic. Do not re-introduce 394/405/432 as the live gate.
 
 **Fix needed next:** regenerate README headlines from `build_repo_status_snapshot.py` only. Kill hand-typed counts.
 

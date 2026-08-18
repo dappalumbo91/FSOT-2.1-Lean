@@ -1,11 +1,13 @@
 # Fluid Spacetime Omni-Theory (FSOT)
 
+> **Edition freeze 2026-07-16.** Live green / obligation counts are in [`docs/CURRENT_STATUS.md`](../../docs/CURRENT_STATUS.md) and [`docs/COUNT_VOCABULARY.md`](../../docs/COUNT_VOCABULARY.md): **472/472** green, **2022** atomic. Numbers in this file (394/394, 1,863 atomic) are the **July freeze**, not the live gate.
+
 ## A Cross-Domain Theory of Reality — Published on GitHub
 
 **Author:** Damian Arthur Palumbo  
 **Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
 **Edition:** v2.6 — FluidLink archive, desktop observer loop, local bundle 2026-07-16
-**Status:** Living thesis — expanded as each domain and crevice is verified  
+**Status:** Historical thesis snapshot — live numbers in `docs/CURRENT_STATUS.md`
 
 > *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
 

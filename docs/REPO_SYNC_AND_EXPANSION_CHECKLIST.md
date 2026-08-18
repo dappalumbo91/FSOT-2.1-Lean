@@ -3,6 +3,7 @@
 **Purpose:** When we deepen FSOT (new panels, densify, multiprover, hardware), update **every surface** that still shows old numbers or omits new work — not only the new JSON.
 
 **Authoritative live stamp:** [`CURRENT_STATUS.md`](CURRENT_STATUS.md) · `data/repo_status_snapshot.json`  
+**What the numbers mean:** [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md)  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
 ---

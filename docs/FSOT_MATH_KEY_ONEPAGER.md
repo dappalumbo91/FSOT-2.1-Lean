@@ -1,6 +1,6 @@
 # FSOT Mathematical Key — one page (scientists)
 
-**Fluid Spacetime Omni-Theory** · pin **D1D38A** (match=True) · 2026-08-05  
+**Fluid Spacetime Omni-Theory** · pin **D1D38A** (match=True) · 2026-08-18  
 Full key: `docs/FSOT_MATH_KEY.md` · Live status: `docs/CURRENT_STATUS.md` · Map: `docs/DOCUMENTATION_MAP.md`  
 Repo: https://github.com/dappalumbo91/FSOT-2.1-Lean
 
@@ -42,10 +42,10 @@ Factors: `scripts/fsot_api_predict_lib.py`. Engine: `vendor/fsot_compute.py`.
 |----------|------:|
 | Pin | D1D38A (match=True) |
 | Atlas domains | 403 |
-| Green benchmarks | 430/432 |
-| Scalar-record envelope | 61,445 (envelope) |
+| Green benchmarks | 472/472 |
+| Scalar-record envelope | 179,914 (envelope) |
 | MPCORB objects · residual | 1,554,101 · 0.023% |
-| Scientific catalog obligations | 2040 |
+| Scientific catalog obligations | 2222 |
 | π/e inventory decimal-verified | 68/68 |
 | Multiprover overall_ok | True |
 

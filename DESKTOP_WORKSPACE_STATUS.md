@@ -53,7 +53,7 @@ from seeds \((\pi, e, \varphi, \gamma, G)\). Smoke values from oracle: \(\varphi
 | F\* | `verification/fstar/` | passed |
 | Rust replay | `verification/rust/` | passed |
 | QEMU boot | `verification/qemu/` | passed |
-| Obligations | `verification/obligations/` | 2370 full / 1863 atomic |
+| Obligations | `verification/obligations/` | 2585 full / 2022 atomic |
 
 **Isabelle math upgrade (local, uncommitted or pending commit):**
 
@@ -72,10 +72,10 @@ Report snapshot: `data/cross_proof_verification_report.json` → `overall_ok: tr
 
 | Artifact | Status |
 |----------|--------|
-| Domain atlas 402 rows | `data/publication/domain_atlas.csv` — **402** (35 core + 367 extension) |
-| Benchmark margin | **405/405 green**, 0 fails (`data/benchmark_margin_audit.json`) |
+| Domain atlas ~403 rows | `data/publication/domain_atlas.csv` — coverage map, not the green-file count |
+| Benchmark margin | **472/472 green**, 0 fails (`data/benchmark_margin_audit.json`) |
 | Navigator | `data/fsot_domain_navigator.json` + `.db` |
-| Prereg predictions | `data/preregistered_predictions_manifest.yaml` |
+| Prereg predictions | `predictions/preregistered_predictions_manifest.yaml` |
 | Formula corpus | `vendor/formula_corpus/by_domain/strict_empirical.jsonl` (~8.3 MB) |
 | Unified math DB | `vendor/fsot_aggregate/FSOT_UNIFIED.db` (~43 MB) |
 

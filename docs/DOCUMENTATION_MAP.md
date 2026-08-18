@@ -2,6 +2,7 @@
 
 **Purpose:** One accurate front door so PhD readers, working scientists, and lay readers do not get lost in old numbers or the wrong tone.  
 **Live status (always prefer this over memorized counts):** [`CURRENT_STATUS.md`](CURRENT_STATUS.md)  
+**What the numbers mean:** [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md) · **Picture → engine:** [`CONCEPTS.md`](CONCEPTS.md)  
 **Regenerate status:** `python scripts/build_repo_status_snapshot.py`
 
 ---

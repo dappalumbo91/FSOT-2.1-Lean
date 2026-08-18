@@ -6,7 +6,7 @@ Generated: `2026-08-03T15:17:33.294419+00:00`
 
 - Pooled median relative error **≤ 0.5%**
 - Classifier accuracy **≥ 99.5%** where applicable
-- Margin health: **green 405/405**, fail **0**, worst scalar max **0.4989%** (`Phi_Morphogenetic_Scaling`)
+- Margin health: **green 472/472**, fail **0**, worst scalar max **0.4989%** (`Phi_Morphogenetic_Scaling`) — live: `docs/CURRENT_STATUS.md`
 - Nothing fell out: **True**
 
 ## Conversion anchors

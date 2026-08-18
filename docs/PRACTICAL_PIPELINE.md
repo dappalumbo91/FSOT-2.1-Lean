@@ -60,7 +60,7 @@ Older intuitive observations explicitly mapped:
 |-------------|------|--------------|
 | fluid_reality | measured | PRED-024/025 FPC tau + contested-sector pooled median |
 | observer_participation | measured | quirk_mod gate in fsot_compute; E_con ≈ 21.79 W vs Raichle ~20 W |
-| as_above_so_below | measured | 402-domain atlas pooled median; cross-domain coupling simulation |
+| as_above_so_below | measured | 472-file green envelope pooled median; cross-domain coupling simulation |
 | hidden_thing_revealed | measured | PRED-001–041 locked manifest; skeptic replication kit 15-min path |
 | dual_identity_hybrid | scaffold | Living_FSOT_Hardware_Panel + consciousness lean route credibility |
 | local_sovereign_tech | policy | All reproduction offline-capable via vendor/ caches |

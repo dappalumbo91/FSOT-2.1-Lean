@@ -1,5 +1,7 @@
 # Benchmark Near-Miss Ledger
 
+> **Generated 2026-07-16.** Live green is **472/472** (`docs/CURRENT_STATUS.md`). The 405/405 line below is this ledger’s generation date, not the live gate.
+
 *Generated: 2026-07-16T15:52:54.806822+00:00*
 
 Domains that pass the green gate but approach the ≤0.5% boundary — published for transparency, not hidden as post-hoc rescues.

@@ -102,14 +102,14 @@ String/M-theory, loop quantum gravity, and emergent-gravity programs pursue unif
 
 ### Formal methods in science
 
-Proof assistants (Lean, Coq, Isabelle) are standard in software verification; their use as **scientific instruments** for physics claims remains rare. FSOT exports **1,863 atomic obligations** to five independent proof frameworks with `overall_ok: true` (§V.2) — positioning this repository as a **reproducible proof artifact**, not a prose-only preprint.
+Proof assistants (Lean, Coq, Isabelle) are standard in software verification; their use as **scientific instruments** for physics claims remains rare. FSOT exports **2022 atomic obligations** to five independent proof frameworks with `overall_ok: true` (§V.2) — positioning this repository as a **reproducible proof artifact**, not a prose-only preprint.
 
 ### What FSOT adds relative to prior art
 
 | Dimension | Typical siloed model | FSOT (this repository) |
 |-----------|------------------------|---------------------------|
 | Parameters per observable | Sector-specific fits | Seed-derived; no per-row least squares |
-| Cross-domain test | Uncommon | 402 routed domains, 536,740 records |
+| Cross-domain test | Uncommon | 472/472 green residual benchmarks (live) |
 | Formal triangulation | Rare | Lean + Coq + Isabelle + F* + Rust |
 | Kill criteria | Often informal | Navigator + prereg manifest |
 | Living edition | Static PDF | GitHub commit history + tagged releases |
@@ -123,10 +123,10 @@ def build_contributions() -> str:
 
 This work makes five contributions at arXiv preprint standard:
 
-1. **Unified scalar architecture** — A single seed-derived engine (`raw_S = term1 + term2 + term3`) evaluated across **402 routed scientific domains** (35 core + 367 extension panels) and **536,740** empirical records, with **no per-observable least-squares tuning**.
-2. **Cross-domain empirical closure** — **394/394** public benchmark domains pass a ≤0.5% pooled median error gate; cross-domain pooled median is **0.013%** (Planck 2018, PDG 2024, NIST/CODATA targets per row).
+1. **Unified scalar architecture** — A single seed-derived engine (`raw_S = term1 + term2 + term3`) evaluated across **472 / 472** green residual benchmarks (~407 named coverage-map domains) and the live scalar-record envelope, with **no per-observable least-squares tuning**.
+2. **Cross-domain empirical closure** — **472/472** public benchmark files pass a ≤0.5% pooled median error gate; median-of-medians ≈ **0.0066%** (Planck 2018, PDG 2024, NIST/CODATA targets per row; see `docs/CURRENT_STATUS.md`).
 3. **Contested-sector readouts** — Unified FSOT predictions on H₀, σ₈, BBN, hierarchy, and dark-energy proxies achieve **0.030%** pooled median across 13 actively monitored observables vs ~15% typical ΛCDM/SM sector baselines (Riess et al. 2024; Planck Collaboration 2018).
-4. **Five-prover formal triangulation** — **1,863** atomic obligations exported to Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust with `overall_ok: true` — proof assistants as scientific instruments, not software-only checks.
+4. **Five-prover formal triangulation** — **2022** atomic obligations (full formal **2585**) exported to Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust with `overall_ok: true` — proof assistants as scientific instruments, not software-only checks.
 5. **Executable falsification registry** — Preregistered predictions **PRED-001–041**, per-domain kill criteria, and a one-command verification bundle that any reader can run on GitHub.
 
 Seed-to-formula derivations with worked examples: [`docs/THESIS_APPENDIX_DERIVATIONS.md`](docs/THESIS_APPENDIX_DERIVATIONS.md).
@@ -233,7 +233,7 @@ def build_obligation_map_section() -> str:
 
 ![Five-prover obligation map](data/figures/obligation_map_five_provers.png)
 
-*Seeds → oracle → Lean 4 (primary) → Coq / Isabelle / F* → Rust executable replay of **1,863** atomic obligations. Authoritative report: `data/cross_proof_verification_report.json`.*
+*Seeds → oracle → Lean 4 (primary) → Coq / Isabelle / F* → Rust executable replay of **2022** atomic obligations. Authoritative report: `data/cross_proof_verification_report.json`.*
 """
 
 

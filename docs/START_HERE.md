@@ -2,7 +2,8 @@
 
 **Who this is for:** anyone opening the repo for the first time (human or AI).  
 **Authority pin:** `vendor/fsot_compute.py` → **D1D38A** (zero free fit parameters).  
-**Live status:** [`CURRENT_STATUS.md`](CURRENT_STATUS.md) (regenerate with `python scripts/build_repo_status_snapshot.py`).
+**Live status:** [`CURRENT_STATUS.md`](CURRENT_STATUS.md) (regenerate with `python scripts/build_repo_status_snapshot.py`).  
+**What the numbers mean:** [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md).
 
 ---
 
