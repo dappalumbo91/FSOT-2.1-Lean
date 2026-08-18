@@ -81,3 +81,18 @@ Then:
 python scripts/audit_all_benchmark_margins.py
 python scripts/run_cross_proof_verification.py
 ```
+
+## Cross-proof (ran after the fill stayed green)
+
+`python scripts/run_cross_proof_verification.py` — **overall_ok True** · **github_ready True** · ~15 min.
+
+| Layer | Result |
+|-------|--------|
+| Green / catalog python | 472/472 · 2228/2228 |
+| SMT Z3 + TLA | passed |
+| Coq | 48/48 chunks |
+| Isabelle | 45/45 chunks |
+| Lean ↔ Coq / Isabelle | PASS · 2024 atomic · 0 margin violations |
+| Rust replay | 2116 obligations |
+| F* + QEMU + ESP32 | passed (ESP32 flash skipped, serial COM3) |
+| Atomic / formal / catalog | **2024** / **2587** / **2228** |

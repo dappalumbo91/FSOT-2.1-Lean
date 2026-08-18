@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T23:08:34.991396+00:00",
+  "generated_at": "2026-08-18T02:49:31.303701+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -9,23 +9,23 @@
     "extension_domains_all_green": true,
     "transcendental_certificates_ok": true,
     "export_gap_closed": true,
-    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5183 vs 2585 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
+    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5202 vs 2587 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
   },
   "obligation_spine": {
     "connective": 24,
-    "full_formal_total": 2585,
-    "full_formal_provable": 2585,
+    "full_formal_total": 2587,
+    "full_formal_provable": 2587,
     "transcendental": 68,
-    "rust_replay_total": 2114,
-    "rust_replay_expected": 2114,
+    "rust_replay_total": 2116,
+    "rust_replay_expected": 2116,
     "rust_replay_formula": "connective + atomic_provable + transcendental (bundles/margins excluded)",
     "by_kind": {
       "nat_pos": 633,
       "r_lt_lit_pure": 324,
       "bundle_conj": 563,
-      "lt_lit": 230,
+      "lt_lit": 231,
       "lt_half": 239,
-      "gt_lit": 134,
+      "gt_lit": 135,
       "eq_nat": 27,
       "nat_le_sym": 30,
       "eq_nat_arith": 32,
@@ -50,7 +50,7 @@
   },
   "triangulation": {
     "coq_atomic": {
-      "atomic_triangulated_ok": 2022,
+      "atomic_triangulated_ok": 2024,
       "atomic_triangulated_fail": 0,
       "bundle_conj_triangulated_ok": 563,
       "bundle_conj_triangulated_fail": 0,
@@ -59,7 +59,7 @@
       "pct_atomic_triangulated": 100.0
     },
     "isabelle_atomic": {
-      "atomic_triangulated_ok": 2022,
+      "atomic_triangulated_ok": 2024,
       "atomic_triangulated_fail": 0,
       "bundle_conj_triangulated_ok": 563,
       "bundle_conj_triangulated_fail": 0,
@@ -67,9 +67,9 @@
     },
     "rust": {
       "connective_ok": 24,
-      "formal_ok": 2022,
+      "formal_ok": 2024,
       "transcendental_ok": 68,
-      "total": 2114
+      "total": 2116
     },
     "fstar_checks": {
       "fstar_verify_passed": true,
@@ -83,15 +83,15 @@
     }
   },
   "margin_bundle_analysis": {
-    "total_obligations": 2585,
-    "provable_atomic": 2022,
+    "total_obligations": 2587,
+    "provable_atomic": 2024,
     "provable_bundle_conj": 563,
     "structural_bundle_excluded": 0,
     "false_margin_violations": 0,
-    "conjunct_atomic_coverage_pct": 99.92,
+    "conjunct_atomic_coverage_pct": 99.84,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
     "lt_half_pooled_median_margin": "0.482163937115593848",
-    "atomic_triangulated": "2022/2022",
+    "atomic_triangulated": "2024/2024",
     "bundle_conj_triangulated": "563/563",
     "margin_violations_confirmed_in_lean": 0,
     "margin_violations_unconfirmed": 0
@@ -101,21 +101,21 @@
     "structural_bundle_excluded": 0,
     "provable_bundle_conj": 563,
     "total_conjuncts": 2501,
-    "conjuncts_with_atomic_coverage": 2499,
-    "conjunct_atomic_coverage_pct": 99.92,
+    "conjuncts_with_atomic_coverage": 2497,
+    "conjunct_atomic_coverage_pct": 99.84,
     "explicit_linked_conjuncts": 1904,
     "explicit_linked_in_spine": 1902,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "oracle_debt_ledger": {
-    "obligation_total": 2581,
-    "atomic_triangulated": 2017,
+    "obligation_total": 2585,
+    "atomic_triangulated": 2022,
     "oracle_replay": 0,
     "proof_depth_oracle_tagged": 49,
-    "structural_index": 564,
+    "structural_index": 563,
     "oracle_fraction_pct": 0.0,
-    "atomic_fraction_pct": 78.15,
+    "atomic_fraction_pct": 78.22,
     "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
@@ -132,7 +132,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-08-05T21:42:09.817831+00:00",
+    "generated_at": "2026-08-05T23:08:35.678432+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -194,7 +194,7 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-08-05T21:42:09.893965+00:00",
+    "generated_at": "2026-08-05T23:08:35.808699+00:00",
     "version": "1.0",
     "overall_runtime_ok": true,
     "esp32_scalar_only_gap_closed": true,
@@ -236,7 +236,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-08-05T22:45:21.382482+00:00",
+    "generated_at": "2026-08-05T23:08:35.903230+00:00",
     "version": "1.0",
     "verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes",
     "headline_claim": "zero free parameters",
@@ -349,20 +349,20 @@
   },
   "coverage_audit": {
     "full_formal_spine": {
-      "obligations_in_full_json": 2585,
+      "obligations_in_full_json": 2587,
       "modules_in_full_json": 558,
       "by_tier": {
         "priors": 2119,
-        "extended": 189,
-        "bounds": 277
+        "extended": 188,
+        "bounds": 280
       },
       "by_kind": {
         "nat_pos": 633,
         "r_lt_lit_pure": 324,
         "bundle_conj": 563,
-        "lt_lit": 230,
+        "lt_lit": 231,
         "lt_half": 239,
-        "gt_lit": 134,
+        "gt_lit": 135,
         "eq_nat": 27,
         "nat_le_sym": 30,
         "eq_nat_arith": 32,
@@ -384,11 +384,11 @@
         "r_interval_conj": 1,
         "abs_interval_conj": 1
       },
-      "pct_of_formal_theorems": 121.5898,
+      "pct_of_formal_theorems": 121.6839,
       "coq_chunks_generated": 21,
       "margin_violations_excluded": 0,
-      "coq_provable_target": 2585,
-      "coq_proved_yet": 2585,
+      "coq_provable_target": 2587,
+      "coq_proved_yet": 2587,
       "coq_proved_pct_of_full_export": 100.0,
       "coq_proved_pct_of_provable": 100.0,
       "coq_compile_status": "passed",
@@ -398,7 +398,7 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-08-05T23:08:28.097510+00:00",
+    "generated_at": "2026-08-18T02:49:23.199552+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
     "overall_ok": true,

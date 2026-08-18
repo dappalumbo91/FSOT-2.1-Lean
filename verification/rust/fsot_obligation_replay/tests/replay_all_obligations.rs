@@ -1966,6 +1966,7 @@ fn replay_all_obligations() {
     assert!(0.6321205588287557_f64 > 0.0, "psi_con_pos");
     assert!(1.046973630587551_f64 > 0.0, "acoustic_bleed_pos");
     assert!(1.6668538450045731_f64 > 0.0, "acoustic_inflow_pos");
+    assert!(0.420222080893624_f64 > 0.0, "k_pos");
     assert!(1.618033988749895_f64 > 1.0, "phi_gt_one");
     assert!(3.141592653589793_f64 > 1.0, "pi_gt_one");
     assert!(1.046973630587551_f64 < 1.618033988749895_f64, "acoustic_bleed_lt_phi");
@@ -1982,13 +1983,14 @@ fn replay_all_obligations() {
     assert!(1.046973630587551_f64 < 1.0476_f64, "acoustic_bleed_lt_10476");
     assert!(1.6668538450045731_f64 < 1.6695_f64, "acoustic_inflow_lt_16695");
     assert!(0.420222080893624_f64 < 0.42042_f64, "k_lt_042042");
+    assert!(0.420222080893624_f64 < 1.0_f64, "k_lt_one");
     assert!(0.36787944117144233_f64 < 0.368_f64, "exp_neg_one_lt_368");
     assert!(0.7423013397477743_f64 < 0.8_f64, "exp_neg_0298_lt_08");
     assert!(1.4142135623730951_f64 < 1.4142135624_f64, "sqrt_two_lt_14142135624");
     assert!(0.2951637685668222_f64 < 0.3_f64, "psi_con_eta_prod_lt_three_tenths");
+    // full_formal chunk 11 (150 obligations)
     assert!(1.771807124429574_f64 < 1.772_f64, "exp_0572_lt_1772");
     assert!(3.1393004861793967_f64 < 3.1415_f64, "exp_1144_lt_31415");
-    // full_formal chunk 11 (150 obligations)
     assert!(3.1408705289004573_f64 < 3.141592_f64, "exp_11445_lt_3141592");
     assert!(0.48121182505960347_f64 < 0.4813_f64, "log_phi_lt_04813");
     assert!(0.22469811142780627_f64 < 0.225_f64, "eta_log_phi_lt_0225");
@@ -2137,9 +2139,9 @@ fn replay_all_obligations() {
     assert!(0.9577022026205612_f64 < 10.0_f64, "coherence_efficiency_lt_ten");
     assert!(3.4953374011050684_f64 > 3.4_f64, "cosmological_cos_arg_lo");
     assert!(3.4953374011050684_f64 < 3.6_f64, "cosmological_cos_arg_hi");
+    // full_formal chunk 12 (150 obligations)
     assert!(-0.9380820636690238_f64 < 0.5_f64, "cosmological_cos_lt_neg_half");
     assert!(0.0_f64 <= 0.7879407922764434_f64, "bleed_in_factor_nonneg");
-    // full_formal chunk 12 (150 obligations)
     assert!(0.7879407922764434_f64 > 0.0_f64, "bleed_in_factor_pos");
     assert!(5.977131629539365_f64 > 2.0_f64, "cosmological_exp_factor_gt_two");
     assert!(0.29089654054517305_f64 < 0.3_f64, "theta_s_lt_three_tenths");
@@ -2188,6 +2190,7 @@ fn replay_all_obligations() {
     assert!(0.4_f64 < 0.55_f64, "molecular_cos_lt_neg_055");
     assert!(0.5_f64 < 0.74_f64, "material_cos_lt_neg_075");
     assert!(1.2237754316221157_f64 < 1.253_f64, "log_34_lt_1253");
+    assert!(0.1534822148944508_f64 > 0.0_f64, "poof_factor_pos");
     assert!((3.141592653589793_f64 - 3.141592653589793_f64).abs() < 1e-9, "pi_eq_real_pi");
     assert!((1.0_f64 - 1.0_f64).abs() < 1e-9, "cosmological_perceived_adjust_eq_one");
     assert!((0.9579871226722758_f64 - 0.9579871226722758_f64).abs() < 1e-9, "phase_variance_eq_cos_theta_s");
@@ -2287,10 +2290,10 @@ fn replay_all_obligations() {
     assert!(0.21234577623937845_f64 > 0.0, "p_base_pos");
     assert!(0.0216083_f64 > 0.0, "delta_lambda_cosm_pos");
     assert!(0.061803398874989486_f64 < 0.061806_f64, "c_cosm_lt_061806");
+    // full_formal chunk 13 (74 obligations)
     assert!(0.21234577623937845_f64 < 0.212371_f64, "p_base_lt_0212371");
     assert!(0.11709966304863834_f64 < 1.0_f64, "alpha_s_MZ_lt_one");
     assert!(0.0216083_f64 < 1.0_f64, "delta_lambda_cosm_lt_one");
-    // full_formal chunk 13 (72 obligations)
     assert!(-0.5024559462100433_f64 < 0.0_f64, "S_cosm_cached_neg");
     assert!(1.3877787807814457e-17_f64 < 1e-08_f64, "alpha_s_MZ_approx_value");
     assert!(0.061803398874989486_f64 > 0.0618_f64, "c_cosm_gt_061800");
@@ -2360,7 +2363,6 @@ fn replay_all_obligations() {
     assert!(3 > 0, "cross_proof_lean_modules_pos");
     assert!(1241 > 0, "cross_proof_full_formal_obligation_count_pos");
     assert!(1241 > 0, "cross_proof_full_formal_provable_count_pos");
-    assert!(0.420222080893624_f64 > 0.0, "k_pos");
     assert!(28 > 0, "scalar_engine_structure_theorem_count_pos");
     assert_eq!(28, 28, "scalar_engine_structure_theorem_count_eq");
     // transcendental_bounds (68 obligations)

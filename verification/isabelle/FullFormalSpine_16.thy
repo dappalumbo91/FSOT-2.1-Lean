@@ -87,6 +87,9 @@ lemma acoustic_bleed_pos: "0 < (1.046973630587551 :: real)"
 lemma acoustic_inflow_pos: "0 < (1.6668538450045731 :: real)"
   by eval
 
+lemma k_pos: "0 < (0.420222080893624 :: real)"
+  by eval
+
 lemma phi_gt_one: "1 < (1.618033988749895 :: real)"
   by eval
 
@@ -133,6 +136,9 @@ lemma acoustic_inflow_lt_16695: "(1.6668538450045731 :: real) < (1.6695 :: real)
   by eval
 
 lemma k_lt_042042: "(0.420222080893624 :: real) < (0.42042 :: real)"
+  by eval
+
+lemma k_lt_one: "(0.420222080893624 :: real) < (1.0 :: real)"
   by eval
 
 lemma exp_neg_one_lt_368: "(0.36787944117144233 :: real) < (0.368 :: real)"
@@ -295,12 +301,6 @@ lemma new_perceived_param_gt_030: "(0.3 :: real) < (0.30030117056875677 :: real)
   by eval
 
 lemma new_perceived_param_gt_30030: "(0.3003 :: real) < (0.30030117056875677 :: real)"
-  by eval
-
-lemma sqrt2_gt_14142135623: "(1.4142135623 :: real) < (1.4142135623730951 :: real)"
-  by eval
-
-lemma psi_con_gt_6321205588: "(0.6321205588 :: real) < (0.6321205588287557 :: real)"
   by eval
 
 end

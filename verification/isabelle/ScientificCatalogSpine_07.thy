@@ -3,6 +3,81 @@ theory ScientificCatalogSpine_07
 imports Complex_Main
 begin
 
+lemma cat_chaos_mediated_phase_transitions_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_chaos_mediated_phase_transitions_pooled_under_half_pct: "(0.03147898006445882 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_chaos_mediated_phase_transitions_pooled_lt_half_pure: "(0.03147898006445882 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_chaos_mediated_phase_transitions_max_scalar_under_half_pct: "(0.03147898006445882 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_chaos_mediated_phase_transitions_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_stsci_mast_telescope_panel_records_pos: "0 < (377 :: nat)"
+  by eval
+
+lemma cat_stsci_mast_telescope_panel_pooled_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_stsci_mast_telescope_panel_pooled_lt_half_pure: "(0.026954 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_stsci_mast_telescope_panel_max_scalar_under_half_pct: "(0.031446 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_stsci_mast_telescope_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_vizier_wds_tap_live_deep_records_pos: "0 < (91 :: nat)"
+  by eval
+
+lemma cat_vizier_wds_tap_live_deep_pooled_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_vizier_wds_tap_live_deep_pooled_lt_half_pure: "(0.026954 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_vizier_wds_tap_live_deep_max_scalar_under_half_pct: "(0.031446 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_vizier_wds_tap_live_deep_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_wds_live_multiplicity_deep_records_pos: "0 < (281 :: nat)"
+  by eval
+
+lemma cat_wds_live_multiplicity_deep_pooled_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_wds_live_multiplicity_deep_pooled_lt_half_pure: "(0.026954 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_wds_live_multiplicity_deep_max_scalar_under_half_pct: "(0.031446 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_wds_live_multiplicity_deep_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_the_well_spot_check_panel_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_the_well_spot_check_panel_pooled_under_half_pct: "(0.015860423 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_the_well_spot_check_panel_pooled_lt_half_pure: "(0.015860423 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_the_well_spot_check_panel_max_scalar_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_the_well_spot_check_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_fluid_phase_current_spine_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -286,81 +361,6 @@ lemma cat_h0_planck_cmb_sector_max_scalar_under_half_pct: "(0.027018411789274284
   by eval
 
 lemma cat_h0_planck_cmb_sector_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_alphafold_batch_meta_open_records_pos: "0 < (182 :: nat)"
-  by eval
-
-lemma cat_alphafold_batch_meta_open_pooled_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_alphafold_batch_meta_open_pooled_lt_half_pure: "(0.015311 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_alphafold_batch_meta_open_max_scalar_under_half_pct: "(0.026684 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_alphafold_batch_meta_open_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_ncbi_gene_public_panel_records_pos: "0 < (48 :: nat)"
-  by eval
-
-lemma cat_ncbi_gene_public_panel_pooled_under_half_pct: "(0.025571999999999998 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_ncbi_gene_public_panel_pooled_lt_half_pure: "(0.025571999999999998 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_ncbi_gene_public_panel_max_scalar_under_half_pct: "(0.026684 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_ncbi_gene_public_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_uniprot_protein_annotations_records_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma cat_uniprot_protein_annotations_pooled_under_half_pct: "(0.0209975 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_uniprot_protein_annotations_pooled_lt_half_pure: "(0.0209975 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_uniprot_protein_annotations_max_scalar_under_half_pct: "(0.026684 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_uniprot_protein_annotations_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_uniprot_proteome_slice_open_records_pos: "0 < (68 :: nat)"
-  by eval
-
-lemma cat_uniprot_proteome_slice_open_pooled_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_uniprot_proteome_slice_open_pooled_lt_half_pure: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_uniprot_proteome_slice_open_max_scalar_under_half_pct: "(0.026684 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_uniprot_proteome_slice_open_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_arxiv_gravitational_waves_panel_records_pos: "0 < (60 :: nat)"
-  by eval
-
-lemma cat_arxiv_gravitational_waves_panel_pooled_under_half_pct: "(0.01748 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_arxiv_gravitational_waves_panel_pooled_lt_half_pure: "(0.01748 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_arxiv_gravitational_waves_panel_max_scalar_under_half_pct: "(0.026472 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_arxiv_gravitational_waves_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

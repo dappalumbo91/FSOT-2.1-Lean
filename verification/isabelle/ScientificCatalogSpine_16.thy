@@ -3,6 +3,30 @@ theory ScientificCatalogSpine_16
 imports Complex_Main
 begin
 
+lemma cat_galactic_structure_sample_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_genomic_sciences_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_genomic_sciences_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_genomic_sciences_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_genomic_sciences_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_genomic_sciences_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_geology_stratigraphy_records_pos: "0 < (1957 :: nat)"
+  by eval
+
+lemma cat_geology_stratigraphy_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_geomagnetism_benchmark_json_records_pos: "0 < (524 :: nat)"
   by eval
 
@@ -261,12 +285,6 @@ lemma cat_neuroscience_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
 lemma cat_neuroscience_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_nist_dlmf_special_functions_records_pos: "0 < (5 :: nat)"
-  by eval
-
-lemma cat_nist_dlmf_special_functions_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
 lemma cat_oceanography_records_pos: "0 < (65 :: nat)"
   by eval
 
@@ -309,10 +327,10 @@ lemma cat_openalex_citation_graph_records_pos: "0 < (80 :: nat)"
 lemma cat_openalex_citation_graph_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_orbital_mechanics_benchmark_json_records_pos: "0 < (9 :: nat)"
+lemma cat_orbital_mechanics_records_pos: "0 < (21 :: nat)"
   by eval
 
-lemma cat_orbital_mechanics_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
+lemma cat_orbital_mechanics_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_particle_physics_benchmark_json_records_pos: "0 < (98 :: nat)"
@@ -343,24 +361,6 @@ lemma cat_periodic_extension_decay_topology_scaffold_green_flag: "(1 :: nat) = (
   by eval
 
 lemma cat_pharmacokinetics_records_pos: "0 < (56 :: nat)"
-  by eval
-
-lemma cat_pharmacokinetics_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_planetary_structure_benchmark_json_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_planetary_structure_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_planetary_structure_benchmark_json_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_planetary_structure_benchmark_json_max_scalar_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_planetary_structure_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

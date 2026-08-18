@@ -3,6 +3,15 @@ theory FullFormalSpine_20
 imports Complex_Main
 begin
 
+lemma lab_biological_raw_S_positive: "0 < (1.0583105195018667 :: real)"
+  by eval
+
+lemma lab_cellular_raw_S_positive: "0 < (1.0583105195018667 :: real)"
+  by eval
+
+lemma lab_consciousness_raw_S_positive: "0 < (2.4991706281862376 :: real)"
+  by eval
+
 lemma disulfide_bridge_force_pos: "0 < (17.944271909999163 :: real)"
   by eval
 
@@ -58,9 +67,6 @@ lemma cross_proof_full_formal_obligation_count_pos: "0 < (1241 :: nat)"
   by eval
 
 lemma cross_proof_full_formal_provable_count_pos: "0 < (1241 :: nat)"
-  by eval
-
-lemma k_pos: "0 < (0.420222080893624 :: real)"
   by eval
 
 lemma scalar_engine_structure_theorem_count_pos: "0 < (28 :: nat)"

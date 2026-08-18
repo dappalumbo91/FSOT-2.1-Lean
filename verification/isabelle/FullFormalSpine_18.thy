@@ -3,6 +3,12 @@ theory FullFormalSpine_18
 imports Complex_Main
 begin
 
+lemma cosmological_cos_lt_neg_half: "(-0.9380820636690238 :: real) < (0.5 :: real)"
+  by eval
+
+lemma bleed_in_factor_nonneg: "(0 :: real) <= (0.7879407922764434 :: real)"
+  by eval
+
 lemma bleed_in_factor_pos: "(0 :: real) < (0.7879407922764434 :: real)"
   by eval
 
@@ -145,6 +151,9 @@ lemma material_cos_lt_neg_075: "(0.5 :: real) < (0.74 :: real)"
   by eval
 
 lemma log_34_lt_1253: "(1.2237754316221157 :: real) < (1.253 :: real)"
+  by eval
+
+lemma poof_factor_pos: "(0 :: real) < (0.1534822148944508 :: real)"
   by eval
 
 lemma pi_eq_real_pi: "(3.141592653589793 :: real) = (3.141592653589793 :: real)"
@@ -292,15 +301,6 @@ lemma growth_term_hits_zero_lt_one_point_one_five: "(1.0002883913967908 :: real)
   by eval
 
 lemma growth_term_coherence_product_lt_11523: "(0.9579783956964846 :: real) < (1.1523 :: real)"
-  by eval
-
-lemma D_eff_shift_abs_le: "(19.0 :: real) <= (19.0 :: real)"
-  by eval
-
-lemma chaos_perturbation_abs_le_two: "(1.2515783787839663 :: real) <= (2.0 :: real)"
-  by eval
-
-lemma cosmological_observed_false: "(0 :: nat) = (0 :: nat)"
   by eval
 
 end

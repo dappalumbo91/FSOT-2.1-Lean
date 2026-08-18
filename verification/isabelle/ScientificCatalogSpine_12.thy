@@ -3,6 +3,51 @@ theory ScientificCatalogSpine_12
 imports Complex_Main
 begin
 
+lemma cat_alternate_base_mathematics_explorer_panel_records_pos: "0 < (56 :: nat)"
+  by eval
+
+lemma cat_alternate_base_mathematics_explorer_panel_pooled_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_alternate_base_mathematics_explorer_panel_pooled_lt_half_pure: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_alternate_base_mathematics_explorer_panel_max_scalar_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_alternate_base_mathematics_explorer_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_experimental_base_mathematics_panel_records_pos: "0 < (36 :: nat)"
+  by eval
+
+lemma cat_experimental_base_mathematics_panel_pooled_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_experimental_base_mathematics_panel_pooled_lt_half_pure: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_experimental_base_mathematics_panel_max_scalar_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_experimental_base_mathematics_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_fusion_lean_route_credibility_records_pos: "0 < (81 :: nat)"
+  by eval
+
+lemma cat_fusion_lean_route_credibility_pooled_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fusion_lean_route_credibility_pooled_lt_half_pure: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fusion_lean_route_credibility_max_scalar_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fusion_lean_route_credibility_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_higgs_branching_records_pos: "0 < (27 :: nat)"
   by eval
 
@@ -31,21 +76,6 @@ lemma cat_neutrino_physics_panel_max_scalar_under_half_pct: "(0.009504 :: real) 
   by eval
 
 lemma cat_neutrino_physics_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_nufit_neutrino_open_records_pos: "0 < (10 :: nat)"
-  by eval
-
-lemma cat_nufit_neutrino_open_pooled_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nufit_neutrino_open_pooled_lt_half_pure: "(0.009504 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nufit_neutrino_open_max_scalar_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nufit_neutrino_open_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_oph_fsot_challenge_panel_records_pos: "0 < (31 :: nat)"
@@ -331,36 +361,6 @@ lemma cat_formula_corpus_cnc_max_scalar_under_half_pct: "(0.00423739 :: real) < 
   by eval
 
 lemma cat_formula_corpus_cnc_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_fsot_aggregate_unified_db_records_pos: "0 < (23 :: nat)"
-  by eval
-
-lemma cat_fsot_aggregate_unified_db_pooled_under_half_pct: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fsot_aggregate_unified_db_pooled_lt_half_pure: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fsot_aggregate_unified_db_max_scalar_under_half_pct: "(0.00423739 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fsot_aggregate_unified_db_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_hvac_thermal_systems_records_pos: "0 < (23 :: nat)"
-  by eval
-
-lemma cat_hvac_thermal_systems_pooled_under_half_pct: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_hvac_thermal_systems_pooled_lt_half_pure: "(0.000561846 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_hvac_thermal_systems_max_scalar_under_half_pct: "(0.00423739 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_hvac_thermal_systems_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

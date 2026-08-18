@@ -4,6 +4,106 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_particle_neural_orbital_bridge_records_pos : (0 < 48)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_particle_neural_orbital_bridge_pooled_under_half_pct : ((0.03326447040434832%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_particle_neural_orbital_bridge_pooled_lt_half_pure : ((0.03326447040434832%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_particle_neural_orbital_bridge_max_scalar_under_half_pct : ((0.03326447040435723%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_particle_neural_orbital_bridge_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_fold_depth_metrics_records_pos : (0 < 51)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_fold_depth_metrics_pooled_under_half_pct : ((0.025753835305195434%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fold_depth_metrics_pooled_lt_half_pure : ((0.025753835305195434%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_fold_depth_metrics_max_scalar_under_half_pct : ((0.03326447040435376%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fold_depth_metrics_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_law_policy_records_pos : (0 < 180)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_law_policy_pooled_under_half_pct : ((0.019504399572479875%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_law_policy_pooled_lt_half_pure : ((0.019504399572479875%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_law_policy_max_scalar_under_half_pct : ((0.03250733262079721%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_law_policy_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_domain_coupling_simulation_records_pos : (0 < 18617)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_domain_coupling_simulation_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_domain_coupling_simulation_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_domain_coupling_simulation_max_scalar_under_half_pct : ((0.032418%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_domain_coupling_simulation_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_fpc_temporal_coupling_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_fpc_temporal_coupling_pooled_under_half_pct : ((0.000637597%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fpc_temporal_coupling_pooled_lt_half_pure : ((0.000637597%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_fpc_temporal_coupling_max_scalar_under_half_pct : ((0.032418%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fpc_temporal_coupling_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_finance_markets_records_pos : (0 < 150)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -381,105 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_zenodo_records_depth_open_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_chaos_mediated_phase_transitions_records_pos : (0 < 21)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_chaos_mediated_phase_transitions_pooled_under_half_pct : ((0.03147898006445882%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_chaos_mediated_phase_transitions_pooled_lt_half_pure : ((0.03147898006445882%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_chaos_mediated_phase_transitions_max_scalar_under_half_pct : ((0.03147898006445882%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_chaos_mediated_phase_transitions_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_stsci_mast_telescope_panel_records_pos : (0 < 377)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_stsci_mast_telescope_panel_pooled_under_half_pct : ((0.026954%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_stsci_mast_telescope_panel_pooled_lt_half_pure : ((0.026954%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_stsci_mast_telescope_panel_max_scalar_under_half_pct : ((0.031446%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_stsci_mast_telescope_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_vizier_wds_tap_live_deep_records_pos : (0 < 91)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_vizier_wds_tap_live_deep_pooled_under_half_pct : ((0.026954%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_vizier_wds_tap_live_deep_pooled_lt_half_pure : ((0.026954%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_vizier_wds_tap_live_deep_max_scalar_under_half_pct : ((0.031446%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_vizier_wds_tap_live_deep_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_wds_live_multiplicity_deep_records_pos : (0 < 281)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_wds_live_multiplicity_deep_pooled_under_half_pct : ((0.026954%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_wds_live_multiplicity_deep_pooled_lt_half_pure : ((0.026954%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_wds_live_multiplicity_deep_max_scalar_under_half_pct : ((0.031446%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_wds_live_multiplicity_deep_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_the_well_spot_check_panel_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_the_well_spot_check_panel_pooled_under_half_pct : ((0.015860423%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_the_well_spot_check_panel_pooled_lt_half_pure : ((0.015860423%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_the_well_spot_check_panel_max_scalar_under_half_pct : ((0.031159%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_the_well_spot_check_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

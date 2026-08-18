@@ -3,6 +3,15 @@ theory FullFormalSpine_19
 imports Complex_Main
 begin
 
+lemma D_eff_shift_abs_le: "(19.0 :: real) <= (19.0 :: real)"
+  by eval
+
+lemma chaos_perturbation_abs_le_two: "(1.2515783787839663 :: real) <= (2.0 :: real)"
+  by eval
+
+lemma cosmological_observed_false: "(0 :: nat) = (0 :: nat)"
+  by eval
+
 lemma dark_energy_observed_false: "(0 :: nat) = (0 :: nat)"
   by eval
 
@@ -292,15 +301,6 @@ lemma lab_molecular_raw_S_positive: "0 < (0.7201315148027019 :: real)"
   by eval
 
 lemma lab_material_raw_S_positive: "0 < (0.7978167460880297 :: real)"
-  by eval
-
-lemma lab_biological_raw_S_positive: "0 < (1.0583105195018667 :: real)"
-  by eval
-
-lemma lab_cellular_raw_S_positive: "0 < (1.0583105195018667 :: real)"
-  by eval
-
-lemma lab_consciousness_raw_S_positive: "0 < (2.4991706281862376 :: real)"
   by eval
 
 end

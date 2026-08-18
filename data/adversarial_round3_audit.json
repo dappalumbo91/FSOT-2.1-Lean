@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T23:08:44.022788+00:00",
+  "generated_at": "2026-08-18T02:49:42.626777+00:00",
   "version": "1.0",
   "tier": "adversarial_round3_v1",
   "roles": {
@@ -119,7 +119,7 @@
     {
       "id": "falsification_kill_criteria",
       "severity": "info",
-      "attack": "35 preregistered predictions; stumped observables carry 3\u03c3 kill thresholds; w_a prereg vs DESI tracked.",
+      "attack": "48 preregistered predictions; stumped observables carry 3\u03c3 kill thresholds; w_a prereg vs DESI tracked.",
       "mitigation": "falsification_registry_closure.json \u2014 pre-stated kill criteria, not post-hoc retuning.",
       "closed": true,
       "evidence": "data/falsification_registry_closure.json"
@@ -135,7 +135,7 @@
     {
       "id": "five_prover_quad_verification",
       "severity": "info",
-      "attack": "Lean+Coq+Isabelle+F*+Rust: 2017 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
+      "attack": "Lean+Coq+Isabelle+F*+Rust: 2022 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
       "mitigation": "five_prover_quad_closure.json \u2014 strictest multi-prover formal stack on exported spine.",
       "closed": true,
       "evidence": "data/five_prover_quad_closure.json"

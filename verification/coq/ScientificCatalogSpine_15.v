@@ -4,6 +4,46 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_astrophysical_structure_crosswalk_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_astrophysical_structure_crosswalk_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_astrophysical_structure_crosswalk_max_scalar_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_astrophysical_structure_crosswalk_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_atmospheric_physics_records_pos : (0 < 47)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_atmospheric_physics_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_atomic_physics_records_pos : (0 < 80)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_atomic_physics_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_breakthrough_discoveries_2024_2026_records_pos : (0 < 21)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_breakthrough_discoveries_2024_2026_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
 Lemma cat_breakthrough_discoveries_2024_2026_pooled_lt_half_pure : (0%R) < ((0.5%R)).
 Proof. lra. Qed.
 
@@ -69,14 +109,6 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
 Lemma cat_consciousness_soul_bridge_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_cosmology_anomalies_benchmark_json_records_pos : (0 < 12)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_cosmology_anomalies_benchmark_json_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
@@ -450,36 +482,4 @@ Proof. lra. Qed.
 
 Lemma cat_galactic_structure_sample_max_scalar_under_half_pct : (0%R) < (0.5%R).
 Proof. lra. Qed.
-
-
-Lemma cat_galactic_structure_sample_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_genomic_sciences_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_genomic_sciences_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_genomic_sciences_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_genomic_sciences_max_scalar_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_genomic_sciences_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_geology_stratigraphy_records_pos : (0 < 1957)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_geology_stratigraphy_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
 

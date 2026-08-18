@@ -3,6 +3,81 @@ theory ScientificCatalogSpine_02
 imports Complex_Main
 begin
 
+lemma cat_certified_agent_qwen_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_certified_agent_qwen_pooled_under_half_pct: "(0.000055479 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_certified_agent_qwen_pooled_lt_half_pure: "(0.000055479 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_certified_agent_qwen_max_scalar_under_half_pct: "(0.238944484 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_certified_agent_qwen_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_early_lean_mc_panel_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_early_lean_mc_panel_pooled_under_half_pct: "(0.000021766 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_early_lean_mc_panel_pooled_lt_half_pure: "(0.000021766 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_early_lean_mc_panel_max_scalar_under_half_pct: "(0.238944484 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_early_lean_mc_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_information_theory_public_panel_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_information_theory_public_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_information_theory_public_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_information_theory_public_panel_max_scalar_under_half_pct: "(0.238944484 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_information_theory_public_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_pooled_under_half_pct: "(0.000055479 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_pooled_lt_half_pure: "(0.000055479 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_max_scalar_under_half_pct: "(0.238944484 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_intrinsic_llm_validators_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_network_science_public_panel_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_network_science_public_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_network_science_public_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_network_science_public_panel_max_scalar_under_half_pct: "(0.238944484 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_network_science_public_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_quantum_information_records_pos: "0 < (21 :: nat)"
   by eval
 
@@ -138,6 +213,21 @@ lemma cat_vl_distill_atlas_max_scalar_under_half_pct: "(0.238944484 :: real) < (
 lemma cat_vl_distill_atlas_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
+lemma cat_matter_antimatter_records_pos: "0 < (27 :: nat)"
+  by eval
+
+lemma cat_matter_antimatter_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_matter_antimatter_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_matter_antimatter_max_scalar_under_half_pct: "(0.23468225112121452 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_matter_antimatter_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_toe_limit_recovery_records_pos: "0 < (43 :: nat)"
   by eval
 
@@ -271,96 +361,6 @@ lemma cat_igem_synthetic_biology_benchmark_json_max_scalar_under_half_pct: "(0.1
   by eval
 
 lemma cat_igem_synthetic_biology_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_synthetic_biology_benchmark_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_synthetic_biology_benchmark_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_synthetic_biology_benchmark_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_synthetic_biology_benchmark_max_scalar_under_half_pct: "(0.19157088122605362 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_synthetic_biology_benchmark_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_planetary_atmospheres_benchmark_json_records_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma cat_planetary_atmospheres_benchmark_json_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_planetary_atmospheres_benchmark_json_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_planetary_atmospheres_benchmark_json_max_scalar_under_half_pct: "(0.176451 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_planetary_atmospheres_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_consciousness_econ_records_pos: "0 < (32 :: nat)"
-  by eval
-
-lemma cat_consciousness_econ_pooled_under_half_pct: "(0.020728 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_consciousness_econ_pooled_lt_half_pure: "(0.020728 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_consciousness_econ_max_scalar_under_half_pct: "(0.16971 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_consciousness_econ_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_microtubule_quantum_consciousness_panel_records_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma cat_microtubule_quantum_consciousness_panel_pooled_under_half_pct: "(0.0094425 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_microtubule_quantum_consciousness_panel_pooled_lt_half_pure: "(0.0094425 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_microtubule_quantum_consciousness_panel_max_scalar_under_half_pct: "(0.16971 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_microtubule_quantum_consciousness_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_desi_wa_constraint_records_pos: "0 < (27 :: nat)"
-  by eval
-
-lemma cat_desi_wa_constraint_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_desi_wa_constraint_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_desi_wa_constraint_max_scalar_under_half_pct: "(0.15 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_desi_wa_constraint_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_stumped_observables_spine_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_stumped_observables_spine_pooled_under_half_pct: "(0.0000386225 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_stumped_observables_spine_pooled_lt_half_pure: "(0.0000386225 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_stumped_observables_spine_max_scalar_under_half_pct: "(0.140126 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_stumped_observables_spine_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

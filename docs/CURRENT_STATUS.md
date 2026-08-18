@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-08-18T02:34:10.179055+00:00`  
+**Generated:** `2026-08-18T02:50:18.092919+00:00`  
 **Edition stamp:** 2026-08-18  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -24,8 +24,8 @@
 | Green pass | **472 / 472** |
 | Fail | **0** |
 | Gate | ≤ 0.5% pooled median |
-| Median-of-medians | 0.006607% |
-| Scalar records (envelope) | 179914 |
+| Median-of-medians | 0.006006% |
+| Scalar records (envelope) | 180042 |
 | Tiers | `{'B_verified': 330, 'C_thin': 17, 'A_strong': 116}` |
 
 ## Mathlib re-derivation (Formal corpus)
@@ -47,9 +47,9 @@
 | github_ready | **True** |
 | seven_way_bare_metal | True |
 | eight_way_hardware | True |
-| Atomic provable | 2022 |
-| Full formal obligations | 2585 |
-| Catalog obligations | 2222 (domains 472) |
+| Atomic provable | 2024 |
+| Full formal obligations | 2587 |
+| Catalog obligations | 2228 (domains 472) |
 | True margin violations | **0** |
 | Structural bundle excluded | 0 |
 

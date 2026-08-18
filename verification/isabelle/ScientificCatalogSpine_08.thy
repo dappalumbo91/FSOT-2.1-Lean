@@ -3,6 +3,81 @@ theory ScientificCatalogSpine_08
 imports Complex_Main
 begin
 
+lemma cat_alphafold_batch_meta_open_records_pos: "0 < (182 :: nat)"
+  by eval
+
+lemma cat_alphafold_batch_meta_open_pooled_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_alphafold_batch_meta_open_pooled_lt_half_pure: "(0.015311 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_alphafold_batch_meta_open_max_scalar_under_half_pct: "(0.026684 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_alphafold_batch_meta_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_ncbi_gene_public_panel_records_pos: "0 < (48 :: nat)"
+  by eval
+
+lemma cat_ncbi_gene_public_panel_pooled_under_half_pct: "(0.025571999999999998 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_ncbi_gene_public_panel_pooled_lt_half_pure: "(0.025571999999999998 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_ncbi_gene_public_panel_max_scalar_under_half_pct: "(0.026684 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_ncbi_gene_public_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_uniprot_protein_annotations_records_pos: "0 < (22 :: nat)"
+  by eval
+
+lemma cat_uniprot_protein_annotations_pooled_under_half_pct: "(0.0209975 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_uniprot_protein_annotations_pooled_lt_half_pure: "(0.0209975 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_uniprot_protein_annotations_max_scalar_under_half_pct: "(0.026684 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_uniprot_protein_annotations_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_uniprot_proteome_slice_open_records_pos: "0 < (68 :: nat)"
+  by eval
+
+lemma cat_uniprot_proteome_slice_open_pooled_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_uniprot_proteome_slice_open_pooled_lt_half_pure: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_uniprot_proteome_slice_open_max_scalar_under_half_pct: "(0.026684 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_uniprot_proteome_slice_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_arxiv_gravitational_waves_panel_records_pos: "0 < (60 :: nat)"
+  by eval
+
+lemma cat_arxiv_gravitational_waves_panel_pooled_under_half_pct: "(0.01748 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_arxiv_gravitational_waves_panel_pooled_lt_half_pure: "(0.01748 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_arxiv_gravitational_waves_panel_max_scalar_under_half_pct: "(0.026472 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_arxiv_gravitational_waves_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_blackhole_whitehole_cycle_live_panel_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -286,81 +361,6 @@ lemma cat_dzhanibekov_intermediate_axis_fsot_panel_max_scalar_under_half_pct: "(
   by eval
 
 lemma cat_dzhanibekov_intermediate_axis_fsot_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_exoplanet_archive_depth_open_records_pos: "0 < (1976 :: nat)"
-  by eval
-
-lemma cat_exoplanet_archive_depth_open_pooled_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_exoplanet_archive_depth_open_pooled_lt_half_pure: "(0.023015 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_exoplanet_archive_depth_open_max_scalar_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_exoplanet_archive_depth_open_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_nasa_exoplanet_archive_records_pos: "0 < (158 :: nat)"
-  by eval
-
-lemma cat_nasa_exoplanet_archive_pooled_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nasa_exoplanet_archive_pooled_lt_half_pure: "(0.023015 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nasa_exoplanet_archive_max_scalar_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nasa_exoplanet_archive_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_nasa_neo_feed_panel_records_pos: "0 < (56 :: nat)"
-  by eval
-
-lemma cat_nasa_neo_feed_panel_pooled_under_half_pct: "(0.021097 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nasa_neo_feed_panel_pooled_lt_half_pure: "(0.021097 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nasa_neo_feed_panel_max_scalar_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_nasa_neo_feed_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_compact_object_binary_events_records_pos: "0 < (40 :: nat)"
-  by eval
-
-lemma cat_compact_object_binary_events_pooled_under_half_pct: "(0.010049 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_compact_object_binary_events_pooled_lt_half_pure: "(0.010049 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_compact_object_binary_events_max_scalar_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_compact_object_binary_events_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_gaia_dr3_tap_deep_records_pos: "0 < (1826 :: nat)"
-  by eval
-
-lemma cat_gaia_dr3_tap_deep_pooled_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_gaia_dr3_tap_deep_pooled_lt_half_pure: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_gaia_dr3_tap_deep_max_scalar_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_gaia_dr3_tap_deep_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

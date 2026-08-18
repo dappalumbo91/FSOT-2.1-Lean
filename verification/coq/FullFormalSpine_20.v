@@ -6,6 +6,15 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma lab_biological_raw_S_positive : 0 < (1.0583105195018667%R).
+Proof. lra. Qed.
+
+Lemma lab_cellular_raw_S_positive : 0 < (1.0583105195018667%R).
+Proof. lra. Qed.
+
+Lemma lab_consciousness_raw_S_positive : 0 < (2.4991706281862376%R).
+Proof. lra. Qed.
+
 Lemma disulfide_bridge_force_pos : 0 < (17.944271909999163%R).
 Proof. lra. Qed.
 
@@ -62,9 +71,6 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma cross_proof_full_formal_provable_count_pos : (0 < 1241)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma k_pos : 0 < (0.420222080893624%R).
-Proof. lra. Qed.
 
 Lemma scalar_engine_structure_theorem_count_pos : (0 < 28)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.

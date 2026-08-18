@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-05T22:56:21.847397+00:00",
+  "generated_at": "2026-08-18T02:35:03.024347+00:00",
   "version": "2.0",
   "tier": "80_full_formal_spine",
-  "obligation_count": 2585,
+  "obligation_count": 2587,
   "modules_exported": 558,
   "by_tier": {
     "priors": 2119,
-    "extended": 189,
-    "bounds": 277
+    "extended": 188,
+    "bounds": 280
   },
   "by_kind": {
     "nat_pos": 633,
     "r_lt_lit_pure": 324,
     "bundle_conj": 563,
-    "lt_lit": 230,
+    "lt_lit": 231,
     "lt_half": 239,
-    "gt_lit": 134,
+    "gt_lit": 135,
     "eq_nat": 27,
     "nat_le_sym": 30,
     "eq_nat_arith": 32,
@@ -68665,6 +68665,21 @@
       "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
     },
     {
+      "id": "k_pos",
+      "kind": "pos",
+      "symbol": "k",
+      "value": 0.420222080893624,
+      "statement": "0 < 0.420222080893624",
+      "lean_module": "Bounds",
+      "source_file": "Bounds.lean",
+      "source_tier": "bounds",
+      "coq_id": "k_pos",
+      "provable": true,
+      "display_label": "Bounds: k \u2014 scalar > 0",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
       "id": "phi_gt_one",
       "kind": "gt_one",
       "symbol": "phi",
@@ -68914,6 +68929,22 @@
       "source_file": "Bounds.lean",
       "source_tier": "bounds",
       "coq_id": "k_lt_042042",
+      "provable": true,
+      "display_label": "Bounds: k \u2014 scalar below literature bound",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
+      "id": "k_lt_one",
+      "kind": "lt_lit",
+      "symbol": "k",
+      "value": 0.420222080893624,
+      "bound": 1.0,
+      "statement": "0.420222080893624 < 1.0",
+      "lean_module": "Bounds",
+      "source_file": "Bounds.lean",
+      "source_tier": "bounds",
+      "coq_id": "k_lt_one",
       "provable": true,
       "display_label": "Bounds: k \u2014 scalar below literature bound",
       "triangulation_class": "atomic_triangulated",
@@ -72389,6 +72420,23 @@
       "coq_id": "log_34_lt_1253",
       "provable": true,
       "display_label": "Bounds: scalar below literature bound (log_34_lt_1253)",
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
+    },
+    {
+      "id": "poof_factor_pos",
+      "kind": "gt_lit",
+      "value": 0.1534822148944508,
+      "bound": 0.0,
+      "left_expr": "poof_factor",
+      "statement": "0.0 < 0.1534822148944508",
+      "bounds_oracle": true,
+      "lean_module": "Bounds",
+      "source_file": "Bounds.lean",
+      "source_tier": "bounds",
+      "coq_id": "poof_factor_pos",
+      "provable": true,
+      "display_label": "Bounds: scalar above literature bound (poof_factor_pos)",
       "triangulation_class": "atomic_triangulated",
       "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
     },
@@ -76268,21 +76316,6 @@
       "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
     },
     {
-      "id": "k_pos",
-      "kind": "pos",
-      "symbol": "k",
-      "value": 0.420222080893624,
-      "statement": "0 < 0.420222080893624",
-      "lean_module": "ScalarEngineStructure",
-      "source_file": "ScalarEngineStructure.lean",
-      "source_tier": "extended",
-      "coq_id": "k_pos",
-      "provable": true,
-      "display_label": "ScalarEngineStructure: k \u2014 scalar > 0",
-      "triangulation_class": "atomic_triangulated",
-      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay"
-    },
-    {
       "id": "scalar_engine_structure_theorem_count_pos",
       "kind": "nat_pos",
       "symbol": "scalar_engine_structure_theorem_count",
@@ -76339,8 +76372,7 @@
           "bound": 0.0,
           "statement": "0.420222080893624 > 0.0",
           "lean_conjunct": "(0 : \u211d) < k",
-          "index": 1,
-          "linked_obligation_id": "k_pos"
+          "index": 1
         },
         {
           "kind": "eq_nat",
@@ -76400,8 +76432,7 @@
           "lean_conjunct": "(0 : \u211d) < k",
           "index": 1,
           "proof_witness_id": "k_pos",
-          "proof_style": "exact",
-          "linked_obligation_id": "k_pos"
+          "proof_style": "exact"
         },
         {
           "kind": "r_lt_lit_pure",
@@ -76421,8 +76452,7 @@
           "lean_conjunct": "(0.42 : \u211d) < k",
           "index": 3,
           "proof_witness_id": "k_gt_0420",
-          "proof_style": "exact",
-          "linked_obligation_id": "k_pos"
+          "proof_style": "exact"
         }
       ],
       "proof_witness_ids": [

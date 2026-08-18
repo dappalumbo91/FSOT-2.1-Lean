@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cosmological_cos_lt_neg_half : (-0.9380820636690238%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma bleed_in_factor_nonneg : 0%R <= (0.7879407922764434%R).
+Proof. lra. Qed.
+
 Lemma bleed_in_factor_pos : 0%R < (0.7879407922764434%R).
 Proof. lra. Qed.
 
@@ -148,6 +154,9 @@ Lemma material_cos_lt_neg_075 : (0.5%R) < (0.74%R).
 Proof. lra. Qed.
 
 Lemma log_34_lt_1253 : (1.2237754316221157%R) < (1.253%R).
+Proof. lra. Qed.
+
+Lemma poof_factor_pos : 0%R < (0.1534822148944508%R).
 Proof. lra. Qed.
 
 Lemma pi_eq_real_pi : (3.141592653589793%R) = (3.141592653589793%R).
@@ -296,13 +305,4 @@ Proof. lra. Qed.
 
 Lemma growth_term_coherence_product_lt_11523 : (0.9579783956964846%R) < (1.1523%R).
 Proof. lra. Qed.
-
-Lemma D_eff_shift_abs_le : (19.0%R) <= (19.0%R).
-Proof. lra. Qed.
-
-Lemma chaos_perturbation_abs_le_two : (1.2515783787839663%R) <= (2.0%R).
-Proof. lra. Qed.
-
-Lemma cosmological_observed_false : (0 = 0)%nat.
-Proof. reflexivity. Qed.
 

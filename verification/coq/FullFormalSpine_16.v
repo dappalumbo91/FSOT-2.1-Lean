@@ -90,6 +90,9 @@ Proof. lra. Qed.
 Lemma acoustic_inflow_pos : 0 < (1.6668538450045731%R).
 Proof. lra. Qed.
 
+Lemma k_pos : 0 < (0.420222080893624%R).
+Proof. lra. Qed.
+
 Lemma phi_gt_one : 1 < (1.618033988749895%R).
 Proof. lra. Qed.
 
@@ -136,6 +139,9 @@ Lemma acoustic_inflow_lt_16695 : (1.6668538450045731%R) < (1.6695%R).
 Proof. lra. Qed.
 
 Lemma k_lt_042042 : (0.420222080893624%R) < (0.42042%R).
+Proof. lra. Qed.
+
+Lemma k_lt_one : (0.420222080893624%R) < (1.0%R).
 Proof. lra. Qed.
 
 Lemma exp_neg_one_lt_368 : (0.36787944117144233%R) < (0.368%R).
@@ -298,11 +304,5 @@ Lemma new_perceived_param_gt_030 : (0.3%R) < (0.30030117056875677%R).
 Proof. lra. Qed.
 
 Lemma new_perceived_param_gt_30030 : (0.3003%R) < (0.30030117056875677%R).
-Proof. lra. Qed.
-
-Lemma sqrt2_gt_14142135623 : (1.4142135623%R) < (1.4142135623730951%R).
-Proof. lra. Qed.
-
-Lemma psi_con_gt_6321205588 : (0.6321205588%R) < (0.6321205588287557%R).
 Proof. lra. Qed.
 

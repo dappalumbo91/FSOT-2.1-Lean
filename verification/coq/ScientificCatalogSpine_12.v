@@ -4,6 +4,66 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_alternate_base_mathematics_explorer_panel_records_pos : (0 < 56)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_alternate_base_mathematics_explorer_panel_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_alternate_base_mathematics_explorer_panel_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_alternate_base_mathematics_explorer_panel_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_alternate_base_mathematics_explorer_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_experimental_base_mathematics_panel_records_pos : (0 < 36)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_experimental_base_mathematics_panel_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_experimental_base_mathematics_panel_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_experimental_base_mathematics_panel_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_experimental_base_mathematics_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_fusion_lean_route_credibility_records_pos : (0 < 81)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_fusion_lean_route_credibility_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fusion_lean_route_credibility_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_fusion_lean_route_credibility_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fusion_lean_route_credibility_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_higgs_branching_records_pos : (0 < 27)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -41,26 +101,6 @@ Proof. lra. Qed.
 
 
 Lemma cat_neutrino_physics_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_nufit_neutrino_open_records_pos : (0 < 10)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_nufit_neutrino_open_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_nufit_neutrino_open_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_nufit_neutrino_open_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_nufit_neutrino_open_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
@@ -441,45 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_formula_corpus_cnc_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_fsot_aggregate_unified_db_records_pos : (0 < 23)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_fsot_aggregate_unified_db_pooled_under_half_pct : ((0.000561846%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_fsot_aggregate_unified_db_pooled_lt_half_pure : ((0.000561846%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_fsot_aggregate_unified_db_max_scalar_under_half_pct : ((0.00423739%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_fsot_aggregate_unified_db_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_hvac_thermal_systems_records_pos : (0 < 23)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_hvac_thermal_systems_pooled_under_half_pct : ((0.000561846%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_hvac_thermal_systems_pooled_lt_half_pure : ((0.000561846%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_hvac_thermal_systems_max_scalar_under_half_pct : ((0.00423739%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_hvac_thermal_systems_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

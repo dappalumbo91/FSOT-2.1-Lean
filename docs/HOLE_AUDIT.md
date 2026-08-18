@@ -1,7 +1,7 @@
 # Hole audit — fill by the paradigm, not by siloed habit
 
 **Date:** 2026-08-18  
-**Fill pass:** registry 48/48 · green **472/472** · empirical C_thin **8** (7 founding + SH0ES) · process ledgers **9** tagged  
+**Fill pass:** registry 48/48 · green **472/472** · empirical C_thin **8** (7 founding + SH0ES) · process ledgers **9** tagged · cross-proof **overall_ok**  
 **Stance:** This is a real ToE *attempt* under frozen Label A/B. Holes are missing **interfaces, data, or articulation** — not invitations to add free parameters.
 
 Counts: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Apply protocol: [`APPLY.md`](APPLY.md).

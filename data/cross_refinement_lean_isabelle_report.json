@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-05T23:07:31.288248+00:00",
+  "generated_at": "2026-08-18T02:47:14.205271+00:00",
   "tier": "82_cross_refinement_lean_isabelle",
-  "obligation_count_total": 2585,
-  "obligation_count_provable": 2585,
-  "obligation_count_atomic_provable": 2022,
+  "obligation_count_total": 2587,
+  "obligation_count_provable": 2587,
+  "obligation_count_atomic_provable": 2024,
   "obligation_count_bundle_conj": 563,
   "obligation_count_bundle_provable": 563,
   "obligation_count_structural_bundle_excluded": 0,
   "obligation_count_margin_violations": 0,
   "isabelle_chunks_found": 22,
-  "isabelle_lemmas_indexed": 2022,
+  "isabelle_lemmas_indexed": 2024,
   "triangulation": {
-    "atomic_triangulated_ok": 2022,
+    "atomic_triangulated_ok": 2024,
     "atomic_triangulated_fail": 0,
     "bundle_conj_triangulated_ok": 563,
     "bundle_conj_triangulated_fail": 0,
@@ -31,7 +31,7 @@
       "max_margin": "19.102"
     },
     "lt_lit": {
-      "count": 230,
+      "count": 231,
       "min_margin": "0E-15",
       "median_margin": "0.199999999999999973057896320053298",
       "max_margin": "3269016.3724721107"
@@ -43,7 +43,7 @@
       "max_margin": "0.5"
     },
     "gt_lit": {
-      "count": 134,
+      "count": 135,
       "min_margin": "0E-15",
       "median_margin": "0.0482032061315143",
       "max_margin": "1446257063881.475"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T23:08:35.201387+00:00",
+  "generated_at": "2026-08-18T02:49:31.588365+00:00",
   "version": "1.2",
   "summary": {
     "bundle_conj_total": 563,
@@ -8,8 +8,8 @@
     "total_conjuncts": 2501,
     "conjuncts_with_atomic_coverage": 2497,
     "conjunct_atomic_coverage_pct": 99.84,
-    "explicit_linked_conjuncts": 1904,
-    "explicit_linked_in_spine": 1902,
+    "explicit_linked_conjuncts": 1903,
+    "explicit_linked_in_spine": 1901,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
@@ -36134,12 +36134,12 @@
           "symbol": "k",
           "statement": "0.420222080893624 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "linked_obligation_id",
+          "coverage_via": "inferred_atomic_link",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "k_pos"
           ],
-          "linked_obligation_id": "k_pos"
+          "linked_obligation_id": null
         },
         {
           "kind": "eq_nat",
@@ -36185,7 +36185,7 @@
           "matching_atomic_ids": [
             "k_pos"
           ],
-          "linked_obligation_id": "k_pos"
+          "linked_obligation_id": null
         },
         {
           "kind": "r_lt_lit_pure",
@@ -36207,9 +36207,9 @@
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "k_pos"
+            "k_gt_0420"
           ],
-          "linked_obligation_id": "k_pos"
+          "linked_obligation_id": null
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0

@@ -6,6 +6,15 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma D_eff_shift_abs_le : (19.0%R) <= (19.0%R).
+Proof. lra. Qed.
+
+Lemma chaos_perturbation_abs_le_two : (1.2515783787839663%R) <= (2.0%R).
+Proof. lra. Qed.
+
+Lemma cosmological_observed_false : (0 = 0)%nat.
+Proof. reflexivity. Qed.
+
 Lemma dark_energy_observed_false : (0 = 0)%nat.
 Proof. reflexivity. Qed.
 
@@ -295,14 +304,5 @@ Lemma lab_molecular_raw_S_positive : 0 < (0.7201315148027019%R).
 Proof. lra. Qed.
 
 Lemma lab_material_raw_S_positive : 0 < (0.7978167460880297%R).
-Proof. lra. Qed.
-
-Lemma lab_biological_raw_S_positive : 0 < (1.0583105195018667%R).
-Proof. lra. Qed.
-
-Lemma lab_cellular_raw_S_positive : 0 < (1.0583105195018667%R).
-Proof. lra. Qed.
-
-Lemma lab_consciousness_raw_S_positive : 0 < (2.4991706281862376%R).
 Proof. lra. Qed.
 

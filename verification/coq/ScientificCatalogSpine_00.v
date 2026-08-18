@@ -424,15 +424,15 @@ Lemma cat_toe_ckm_pmns_flavor_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_dark_energy_cpl_records_pos : (0 < 14)%nat.
+Lemma cat_dark_energy_cpl_records_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
-Lemma cat_dark_energy_cpl_pooled_under_half_pct : ((0.280515%R)) < (0.5%R).
+Lemma cat_dark_energy_cpl_pooled_under_half_pct : ((0.0018162973530366992%R)) < (0.5%R).
 Proof. lra. Qed.
 
 
-Lemma cat_dark_energy_cpl_pooled_lt_half_pure : ((0.280515%R)) < ((0.5%R)).
+Lemma cat_dark_energy_cpl_pooled_lt_half_pure : ((0.0018162973530366992%R)) < ((0.5%R)).
 Proof. lra. Qed.
 
 
@@ -464,22 +464,22 @@ Lemma cat_dark_sector_open_problems_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
-Lemma cat_acoustic_resonance_materials_records_pos : (0 < 29)%nat.
+Lemma cat_desi_edr_table_slice_open_records_pos : (0 < 22)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 
-Lemma cat_acoustic_resonance_materials_pooled_under_half_pct : ((0.008381497018411083%R)) < (0.5%R).
+Lemma cat_desi_edr_table_slice_open_pooled_under_half_pct : ((0.010049%R)) < (0.5%R).
 Proof. lra. Qed.
 
 
-Lemma cat_acoustic_resonance_materials_pooled_lt_half_pure : ((0.008381497018411083%R)) < ((0.5%R)).
+Lemma cat_desi_edr_table_slice_open_pooled_lt_half_pure : ((0.010049%R)) < ((0.5%R)).
 Proof. lra. Qed.
 
 
-Lemma cat_acoustic_resonance_materials_max_scalar_under_half_pct : ((0.3555%R)) < (0.5%R).
+Lemma cat_desi_edr_table_slice_open_max_scalar_under_half_pct : ((0.3685028152534126%R)) < (0.5%R).
 Proof. lra. Qed.
 
 
-Lemma cat_acoustic_resonance_materials_green_flag : (1 = 1)%nat.
+Lemma cat_desi_edr_table_slice_open_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

@@ -318,13 +318,13 @@ lemma cat_toe_ckm_pmns_flavor_max_scalar_under_half_pct: "(0.3712743059251006 ::
 lemma cat_toe_ckm_pmns_flavor_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_dark_energy_cpl_records_pos: "0 < (14 :: nat)"
+lemma cat_dark_energy_cpl_records_pos: "0 < (20 :: nat)"
   by eval
 
-lemma cat_dark_energy_cpl_pooled_under_half_pct: "(0.280515 :: real) < (0.5 :: real)"
+lemma cat_dark_energy_cpl_pooled_under_half_pct: "(0.0018162973530366992 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_dark_energy_cpl_pooled_lt_half_pure: "(0.280515 :: real) < (0.5 :: real)"
+lemma cat_dark_energy_cpl_pooled_lt_half_pure: "(0.0018162973530366992 :: real) < (0.5 :: real)"
   by eval
 
 lemma cat_dark_energy_cpl_max_scalar_under_half_pct: "(0.368503 :: real) < (0.5 :: real)"
@@ -348,19 +348,19 @@ lemma cat_dark_sector_open_problems_max_scalar_under_half_pct: "(0.368503 :: rea
 lemma cat_dark_sector_open_problems_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_acoustic_resonance_materials_records_pos: "0 < (29 :: nat)"
+lemma cat_desi_edr_table_slice_open_records_pos: "0 < (22 :: nat)"
   by eval
 
-lemma cat_acoustic_resonance_materials_pooled_under_half_pct: "(0.008381497018411083 :: real) < (0.5 :: real)"
+lemma cat_desi_edr_table_slice_open_pooled_under_half_pct: "(0.010049 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_acoustic_resonance_materials_pooled_lt_half_pure: "(0.008381497018411083 :: real) < (0.5 :: real)"
+lemma cat_desi_edr_table_slice_open_pooled_lt_half_pure: "(0.010049 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_acoustic_resonance_materials_max_scalar_under_half_pct: "(0.3555 :: real) < (0.5 :: real)"
+lemma cat_desi_edr_table_slice_open_max_scalar_under_half_pct: "(0.3685028152534126 :: real) < (0.5 :: real)"
   by eval
 
-lemma cat_acoustic_resonance_materials_green_flag: "(1 :: nat) = (1 :: nat)"
+lemma cat_desi_edr_table_slice_open_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

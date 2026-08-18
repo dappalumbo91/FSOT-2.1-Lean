@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-05T23:08:20.400904+00:00",
+  "generated_at": "2026-08-18T02:49:14.290139+00:00",
   "fsot_scale": {
     "extension_domains": 329,
     "priors_lean_modules": 546,
     "priors_only_theorems": 2126,
     "total_lean_theorems": 2126,
-    "cross_proof_spine_obligations": 2585,
+    "cross_proof_spine_obligations": 2587,
     "norm_num_certificate_uses": 750,
     "note": "priors_only_theorems counts *Priors.lean modules only. cross_proof_spine_obligations is the authoritative 2146 export spine (priors + extended + bounds)."
   },
@@ -18,20 +18,20 @@
     "pct_of_extension_domains": 0.9119
   },
   "full_formal_spine": {
-    "obligations_in_full_json": 2585,
+    "obligations_in_full_json": 2587,
     "modules_in_full_json": 558,
     "by_tier": {
       "priors": 2119,
-      "extended": 189,
-      "bounds": 277
+      "extended": 188,
+      "bounds": 280
     },
     "by_kind": {
       "nat_pos": 633,
       "r_lt_lit_pure": 324,
       "bundle_conj": 563,
-      "lt_lit": 230,
+      "lt_lit": 231,
       "lt_half": 239,
-      "gt_lit": 134,
+      "gt_lit": 135,
       "eq_nat": 27,
       "nat_le_sym": 30,
       "eq_nat_arith": 32,
@@ -53,11 +53,11 @@
       "r_interval_conj": 1,
       "abs_interval_conj": 1
     },
-    "pct_of_formal_theorems": 121.5898,
+    "pct_of_formal_theorems": 121.6839,
     "coq_chunks_generated": 21,
     "margin_violations_excluded": 0,
-    "coq_provable_target": 2585,
-    "coq_proved_yet": 2585,
+    "coq_provable_target": 2587,
+    "coq_proved_yet": 2587,
     "coq_proved_pct_of_full_export": 100.0,
     "coq_proved_pct_of_provable": 100.0,
     "coq_compile_status": "passed",

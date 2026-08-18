@@ -1,15 +1,15 @@
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\BlackHoleWhiteholeCycleLivePanelPriors.lean  records=24 median=0.026472%
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\FuelLabLivePanelPriors.lean  records=366 median=0.039349%
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\MachineAndMoleculeLivePanelPriors.lean  records=120 median=0.01341%
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\StarTrekTransporterLivePanelPriors.lean  records=1575 median=0.031159%
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\StarTrekTransporterLivePanelPriors.lean  records=1575 median=0.012464%
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\BlackHoleWhiteholeCycleLivePanelPriors.lean  records=24 median=0.026472%
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\FuelLabLivePanelPriors.lean  records=366 median=0.039349%
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\MachineAndMoleculeLivePanelPriors.lean  records=120 median=0.01341%
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\StarTrekTransporterLivePanelPriors.lean  records=1575 median=0.031159%
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\full_formal_spine.json (2385 obligations from 504 modules)
-  by_tier: {'priors': 1924, 'extended': 184, 'bounds': 277}
-  by_kind: {'nat_pos': 579, 'r_lt_lit_pure': 324, 'bundle_conj': 511, 'lt_lit': 229, 'lt_half': 149, 'gt_lit': 135, 'eq_nat': 26, 'nat_le_sym': 30, 'eq_nat_arith': 32, 'r_eq_sym': 12, 'r_eq_lit': 28, 'r_nonneg': 10, 'pos': 101, 'int_tuple3_eq': 148, 'nat_gt_lit': 13, 'nat_le_lit': 2, 'gt_one': 6, 'r_le_lit': 11, 'lt': 10, 'nat_lt_sym': 1, 'r_le_sym': 11, 'r_interval_le_conj': 7, 'abs_diff_lt_lit': 7, 'r_nonpos': 1, 'r_interval_conj': 1, 'abs_interval_conj': 1}
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\full_priors_spine.json (1924 priors obligations)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\StarTrekTransporterLivePanelPriors.lean  records=1575 median=0.012464%
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\full_formal_spine.json (2587 obligations from 558 modules)
+  by_tier: {'priors': 2119, 'extended': 188, 'bounds': 280}
+  by_kind: {'nat_pos': 633, 'r_lt_lit_pure': 324, 'bundle_conj': 563, 'lt_lit': 231, 'lt_half': 239, 'gt_lit': 135, 'eq_nat': 27, 'nat_le_sym': 30, 'eq_nat_arith': 32, 'r_eq_sym': 12, 'r_eq_lit': 28, 'r_nonneg': 10, 'pos': 104, 'int_tuple3_eq': 148, 'nat_gt_lit': 13, 'nat_le_lit': 2, 'gt_one': 6, 'r_le_lit': 11, 'lt': 10, 'nat_lt_sym': 1, 'r_le_sym': 11, 'r_interval_le_conj': 7, 'abs_diff_lt_lit': 7, 'r_nonpos': 1, 'r_interval_conj': 1, 'abs_interval_conj': 1}
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\full_priors_spine.json (2119 priors obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\verified_desktop_cross_proof_closure.json
   verdict: VERIFIED_DESKTOP_CROSS_PROOF_READY
   Machine_And_Molecule_Live_Panel: oracle=OK obligations=4
@@ -17,21 +17,21 @@ Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\verified_desktop_cross_proof_clo
   BlackHole_WhiteHole_Cycle_Live_Panel: oracle=OK obligations=4
   Star_Trek_Transporter_Live_Panel: oracle=OK obligations=14
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\connective_spine.json (24 obligations)
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\full_formal_spine.json (2385 obligations from 504 modules)
-  by_tier: {'priors': 1924, 'extended': 184, 'bounds': 277}
-  by_kind: {'nat_pos': 579, 'r_lt_lit_pure': 324, 'bundle_conj': 511, 'lt_lit': 229, 'lt_half': 149, 'gt_lit': 135, 'eq_nat': 26, 'nat_le_sym': 30, 'eq_nat_arith': 32, 'r_eq_sym': 12, 'r_eq_lit': 28, 'r_nonneg': 10, 'pos': 101, 'int_tuple3_eq': 148, 'nat_gt_lit': 13, 'nat_le_lit': 2, 'gt_one': 6, 'r_le_lit': 11, 'lt': 10, 'nat_lt_sym': 1, 'r_le_sym': 11, 'r_interval_le_conj': 7, 'abs_diff_lt_lit': 7, 'r_nonpos': 1, 'r_interval_conj': 1, 'abs_interval_conj': 1}
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\full_priors_spine.json (1924 priors obligations)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\full_formal_spine.json (2587 obligations from 558 modules)
+  by_tier: {'priors': 2119, 'extended': 188, 'bounds': 280}
+  by_kind: {'nat_pos': 633, 'r_lt_lit_pure': 324, 'bundle_conj': 563, 'lt_lit': 231, 'lt_half': 239, 'gt_lit': 135, 'eq_nat': 27, 'nat_le_sym': 30, 'eq_nat_arith': 32, 'r_eq_sym': 12, 'r_eq_lit': 28, 'r_nonneg': 10, 'pos': 104, 'int_tuple3_eq': 148, 'nat_gt_lit': 13, 'nat_le_lit': 2, 'gt_one': 6, 'r_le_lit': 11, 'lt': 10, 'nat_lt_sym': 1, 'r_le_sym': 11, 'r_interval_le_conj': 7, 'abs_diff_lt_lit': 7, 'r_nonpos': 1, 'r_interval_conj': 1, 'abs_interval_conj': 1}
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\full_priors_spine.json (2119 priors obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\transcendental_bounds.json
   obligations: 68
-  python_decimal verified: 66
+  python_decimal verified: 68
   by_proof_template: {'exp_neg_one': 2, 'certified_point': 43, 'exp_add_one': 1, 'e_minus_one': 1, 'div_pi_e': 3, 'e_interval': 2, 'pi_interval': 2, 'mul_e_pi': 7, 'pi_fraction': 2, 'icc_membership': 1, 'exp_direct': 4}
   by_strategy: {'certified_base': 9, 'certified_point': 47, 'exp_ineq1': 1, 'lra_chain': 10, 'chain_interval': 1}
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\scientific_catalog_spine.json
-  domains=410 obligations=1912 seeds=10 catalog=1902
-  by_claim={'seed_identity': 5, 'seed_positive': 5, 'catalog_nonempty': 409, 'empirical_pooled_median_gate': 722, 'empirical_max_scalar_gate': 361, 'green_gate_pass_flag': 410}
+  domains=472 obligations=2228 seeds=10 catalog=2218
+  by_claim={'seed_identity': 5, 'seed_positive': 5, 'catalog_nonempty': 471, 'empirical_pooled_median_gate': 850, 'empirical_max_scalar_gate': 425, 'green_gate_pass_flag': 472}
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\ConnectiveSpine.v
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\ConnectiveSpine.thy (18 unique obligations)
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\margin_violations.json (0 margin violations, 1874 provable)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\margin_violations.json (0 margin violations, 2024 provable)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_00.v (100 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_01.v (100 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_02.v (100 obligations)
@@ -50,13 +50,15 @@ Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_14.v
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_15.v (100 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_16.v (100 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_17.v (100 obligations)
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_18.v (74 obligations)
-Updated _CoqProject (19 formal chunks, 1874 provable obligations)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_18.v (100 obligations)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_19.v (100 obligations)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\FullFormalSpine_20.v (24 obligations)
+Updated _CoqProject (21 formal chunks, 2024 provable obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\TranscendentalBounds_00.v (25 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\TranscendentalBounds_01.v (25 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\TranscendentalBounds_02.v (18 obligations)
 Updated _CoqProject (6 transcendental files)
-Isabelle provable: 1874 | margin violations excluded: 0
+Isabelle provable: 2024 | margin violations excluded: 0
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine_00.thy (100 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine_01.thy (100 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine_02.thy (100 obligations)
@@ -75,14 +77,16 @@ Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine_15.thy (100 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine_16.thy (100 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine_17.thy (100 obligations)
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine_18.thy (74 obligations)
-Wrote 19 FullFormalSpine chunks (1874 provable obligations); ROOT finalized by generate_transcendental_bounds_isabelle.py
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine_18.thy (100 obligations)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine_19.thy (100 obligations)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\FullFormalSpine_20.thy (24 obligations)
+Wrote 21 FullFormalSpine chunks (2024 provable obligations); ROOT finalized by generate_transcendental_bounds_isabelle.py
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\TranscendentalBoundsNative.thy
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\TranscendentalBounds_00.thy (25 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\TranscendentalBounds_01.thy (25 obligations)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\TranscendentalBounds_02.thy (18 obligations)
-Updated ROOT (27 theories)
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\StructuralProofSpine.v (452 bundle proofs)
+Updated ROOT (29 theories)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\StructuralProofSpine.v (552 bundle proofs)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\StructuralProofSpine.thy
   connective ordering lemmas: 3
 Wrote coq/ScientificCatalogSpine_00.v (120 lemmas)
@@ -100,7 +104,10 @@ Wrote coq/ScientificCatalogSpine_11.v (120 lemmas)
 Wrote coq/ScientificCatalogSpine_12.v (120 lemmas)
 Wrote coq/ScientificCatalogSpine_13.v (120 lemmas)
 Wrote coq/ScientificCatalogSpine_14.v (120 lemmas)
-Wrote coq/ScientificCatalogSpine_15.v (112 lemmas)
+Wrote coq/ScientificCatalogSpine_15.v (120 lemmas)
+Wrote coq/ScientificCatalogSpine_16.v (120 lemmas)
+Wrote coq/ScientificCatalogSpine_17.v (120 lemmas)
+Wrote coq/ScientificCatalogSpine_18.v (68 lemmas)
 Wrote isabelle/ScientificCatalogSpine_00.thy (120 lemmas)
 Wrote isabelle/ScientificCatalogSpine_01.thy (120 lemmas)
 Wrote isabelle/ScientificCatalogSpine_02.thy (120 lemmas)
@@ -116,17 +123,20 @@ Wrote isabelle/ScientificCatalogSpine_11.thy (120 lemmas)
 Wrote isabelle/ScientificCatalogSpine_12.thy (120 lemmas)
 Wrote isabelle/ScientificCatalogSpine_13.thy (120 lemmas)
 Wrote isabelle/ScientificCatalogSpine_14.thy (120 lemmas)
-Wrote isabelle/ScientificCatalogSpine_15.thy (112 lemmas)
+Wrote isabelle/ScientificCatalogSpine_15.thy (120 lemmas)
+Wrote isabelle/ScientificCatalogSpine_16.thy (120 lemmas)
+Wrote isabelle/ScientificCatalogSpine_17.thy (120 lemmas)
+Wrote isabelle/ScientificCatalogSpine_18.thy (68 lemmas)
 Updated C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\ROOT
-Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\ScientificCatalogSpine.lean (1912 theorems)
-generation complete {'coq_chunks': 16, 'isabelle_chunks': 16, 'obligation_count': 1912, 'lean_module': 'FSOT\\Formal\\ScientificCatalogSpine.lean', 'purpose': 'scientific_catalog_multi_prover_reproof'}
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\ScientificCatalogSpine.lean (2228 theorems)
+generation complete {'coq_chunks': 19, 'isabelle_chunks': 19, 'obligation_count': 2228, 'lean_module': 'FSOT\\Formal\\ScientificCatalogSpine.lean', 'purpose': 'scientific_catalog_multi_prover_reproof'}
 Wrote Rust replay tests under C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\rust\fsot_obligation_replay\tests
   connective obligations: 24
-  formal obligations: 1874
+  formal obligations: 2024
   transcendental obligations: 68
-  total: 1966
+  total: 2116
   test file: replay_all_obligations.rs
-  logical chunks: 15
+  logical chunks: 16
     connective_spine: 24 (connective_spine)
     0: 150 (full_formal)
     1: 150 (full_formal)
@@ -140,52 +150,82 @@ Wrote Rust replay tests under C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\
     9: 150 (full_formal)
     10: 150 (full_formal)
     11: 150 (full_formal)
-    12: 74 (full_formal)
+    12: 150 (full_formal)
+    13: 74 (full_formal)
     transcendental_bounds: 68 (transcendental_bounds)
-SMT catalog bounds: passed (solver=z3, checked=1912, smt2_asserts=1912)
+SMT catalog bounds: passed (solver=z3, checked=2228, smt2_asserts=2228)
 TLA domain routing: passed (states=19, engine=python_state_explorer, tlc=passed)
+Building GR/SM/CKM multi-prover package...
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\toe_ckm_pmns_benchmark.json n=40 med%=0.0519504854624754
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\gr_sm_ckm_spine.json (288 obligations)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\GRSMCKMSpine.lean
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\GRSMCKMSpine.v
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\GRSMCKMSpine.thy
+Patched C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\ROOT with GRSMCKMSpine
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\fstar\FSOTGRSMCKM.fst
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\smt\gr_sm_ckm_bounds.smt2
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\tla\FSOTGRSMCKM.tla + FSOTGRSMCKM.cfg
+Wrote Rust crate C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\rust\fsot_gr_sm_ckm_replay
+Python triangulation: 288/288 ok  bad=0
+Building GR/SM/CKM multi-prover package...
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\toe_ckm_pmns_benchmark.json n=40 med%=0.0519504854624754
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\obligations\gr_sm_ckm_spine.json (288 obligations)
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT\Formal\GRSMCKMSpine.lean
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\coq\GRSMCKMSpine.v
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\isabelle\GRSMCKMSpine.thy
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\fstar\FSOTGRSMCKM.fst
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\smt\gr_sm_ckm_bounds.smt2
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\tla\FSOTGRSMCKM.tla + FSOTGRSMCKM.cfg
+Wrote Rust crate C:\Users\damia\Desktop\FSOT-2.1-Lean\verification\rust\fsot_gr_sm_ckm_replay
+Python triangulation: 288/288 ok  bad=0
+=== GR/SM/CKM multi-prover verification ===
+Python decimal: 288/288  ok=True
+Rust cargo test: passed
+Z3 SMT: passed  (last='sat')
+Coq GRSMCKMSpine: passed
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\gr_sm_ckm_verification_report.json
+overall_ok=True
 CROSS-REFINEMENT LEAN Γåö COQ AUDIT
-  total obligations: 2385
-  atomic provable: 1874 (triangulated 1874)
-  bundle_conj: 457 (triangulated 457)
-  margin violations: 54 (confirmed 0)
-  coq lemmas indexed: 1874
-  issue kinds: {'lean_expected_build_failure_not_confirmed': 54}
-  lt_half pooled median margin to 0.5: 0.481980975107070365
+  total obligations: 2587
+  atomic provable: 2024 (triangulated 2024)
+  bundle_conj: 563 (triangulated 563; excluded_unparsed 0)
+  true margin violations: 0 (confirmed 0)
+  coq lemmas indexed: 2024
+  issue kinds: {}
+  lt_half pooled median margin to 0.5: 0.482163937115593848
   overall_ok: True
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\cross_refinement_lean_coq_report.json
 CROSS-REFINEMENT LEAN Γåö ISABELLE AUDIT
-  total obligations: 2385
-  atomic provable: 1874 (triangulated 1874)
-  bundle_conj: 457 (triangulated 457)
-  margin violations excluded: 54
-  isabelle lemmas indexed: 1874
+  total obligations: 2587
+  atomic provable: 2024 (triangulated 2024)
+  bundle_conj: 563 (triangulated 563; excluded_unparsed 0)
+  true margin violations: 0
+  isabelle lemmas indexed: 2024
   issue kinds: {}
-  lt_half pooled median margin to 0.5: 0.481980975107070365
+  lt_half pooled median margin to 0.5: 0.482163937115593848
   overall_ok: True
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\cross_refinement_lean_isabelle_report.json
 TRANSCENDENTAL BOUNDS GAP AUDIT
-  exported float obligations from Bounds.lean: 277
+  exported float obligations from Bounds.lean: 280
   excluded pi/e interval lemmas: 2
   transcendental lemma inventory (exp/pi/e): 68
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\transcendental_bounds_gap_report.json
 CROSS-REFINEMENT RUST EXECUTABLE AUDIT
   connective: 24 (f64 oracle 24)
-  formal provable: 1874 (f64 oracle 1874)
+  formal provable: 2024 (f64 oracle 2024)
   transcendental: 68 (f64 oracle 68)
-  rust exported: 1966
+  rust exported: 2116
   overall_ok: True
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\cross_refinement_rust_report.json
-Traceback (most recent call last):
-  File "C:\Users\damia\Desktop\FSOT-2.1-Lean\scripts\cross_refinement_rust_lean_bridge_audit.py", line 68, in <module>
-    raise SystemExit(main())
-                     ^^^^^^
-  File "C:\Users\damia\Desktop\FSOT-2.1-Lean\scripts\cross_refinement_rust_lean_bridge_audit.py", line 23, in main
-    atlas = json.loads(vl_distill_atlas_summary_path().read_text(encoding="utf-8"))
-                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\damia\Desktop\FSOT-2.1-Lean\scripts\fsot_paths.py", line 747, in vl_distill_atlas_summary_path
-    raise FileNotFoundError("VL distill atlas summary not found.")
-FileNotFoundError: VL distill atlas summary not found.
+CROSS-REFINEMENT RUST_LEAN_BRIDGE AUDIT
+  python_boot_matches_canonical: True
+  summary_boot_matches_canonical: True
+  python_summary_agree: True
+  k_matches_atlas: True
+  boot_scalar_positive: True
+  cargo_runtime_passed: True
+  overall_ok: True
+Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\cross_refinement_rust_lean_bridge_report.json
 FSTAR VERIFICATION (Tier 86)
   status: passed
   overall_ok: True
@@ -204,18 +244,18 @@ Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\cross_refinement_fstar_report.js
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\cross_proof_verification_benchmark.json (0/24 python obligations)
 CROSS-PROOF COVERAGE AUDIT
   extension domains: 329
-  priors modules: 493
-  lean theorems: 1930
+  priors modules: 546
+  lean theorems: 2126
   Coq obligations (connective): 24 from 3 modules
-  Coq % of priors modules: 0.6085%
-  Coq % of lean theorems: 1.2435%
-  exportable norm_num hints: 632
+  Coq % of priors modules: 0.5495%
+  Coq % of lean theorems: 1.1289%
+  exportable norm_num hints: 639
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\cross_proof_coverage_audit.json
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\fsot_label_registry.json
-  extension_domains: 368
+  extension_domains: 371
   FO rules: 27
   math rule codes: 1487
-  prereg: 35
+  prereg: 48
 LIVING FSOT HARDWARE AUDIT (Tier 93)
   project_found: True
   overall_ok: True
@@ -229,63 +269,63 @@ Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\living_fsot_hardware_verificatio
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\living_fsot_hardware_benchmark.json (4 records)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\structural_proof_depth_audit.json
   overall_ok: True
-  structural_proof_count: 1923
+  structural_proof_count: 2983
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\verification_depth_audit.json
-  extension green: 368/368
-  undeniable ToE: False
+  extension green: 371/371
+  undeniable ToE: True
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\deep_verification_audit.json
-  overall_ok: False
-  undeniable ToE: False
-  findings: 0
-  rust replay: 1966 (expected 1966)
+  overall_ok: True
+  undeniable ToE: True
+  findings: 2
+  rust replay: 2116 (expected 2116)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\structural_bundle_ledger.json
-  bundles: 511 excluded=54 conjunct coverage=99.91% explicit_link_hit=99.89%
+  bundles: 563 excluded=0 conjunct coverage=99.84% explicit_link_hit=99.89%
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\oracle_debt_ledger.json
-  atomic=1874 oracle=0 structural=511
+  atomic=2024 oracle=0 structural=563
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\formula_corpus_honesty_report.json
   rows=7941 unique=1325 factor=5.993
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\runtime_verification_scope_audit.json
-  runtime_ok=False esp32_gap_closed=True
+  runtime_ok=True esp32_gap_closed=True
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\parameter_honesty_closure.json
   route_slots=175 verdict=ZERO_FREE ΓÇö seed-derived constants and preregistered domain routes
 === Scientific pushback audit ===
-  domains: 368 green=368 fail=0
+  domains: 371 green=371 fail=0
   aspiration_debt: 0
   stumped_observables: 13 gaps=0
   pushback_avenues: 12
   wrote: C:\Users\damia\Desktop\FSOT-2.1-Lean\data\scientific_pushback_audit.json
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\adversarial_round3_audit.json
-  skeptic_verdict: BLOCKED_OR_OVERCLAIMED
-  open_gaps: 1 (blocking: 0, documented_debt: 0)
+  skeptic_verdict: EMPIRICALLY_GROUNDED_PUBLISHABLE
+  open_gaps: 0 (blocking: 0, documented_debt: 0)
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\tier_scalar_precision_closure.json
-  tier_scalar closed=False fails=2
+  tier_scalar closed=True fails=0
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\empirical_accuracy_closure.json
-  verdict=CROSS_DOMAIN_EMPIRICALLY_TIGHT domains=410 green=410 median_of_medians=0.012112816039879785%
+  verdict=CROSS_DOMAIN_EMPIRICALLY_TIGHT domains=472 green=472 median_of_medians=0.006006%
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\falsification_registry_closure.json
-  prereg=35 stumped=13 wa_status=confirmed_within_2sigma
+  prereg=48 stumped=13 wa_status=confirmed_within_2sigma
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\claims_alignment_closure.json
   verdict=ALIGNED criteria_met=True
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\five_prover_quad_closure.json
-  verdict=QUAD_INCOMPLETE atomic=1874
+  verdict=FIVE_PROVER_QUAD_UNDENIABLE atomic=2024
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\contested_observables_closure.json
-  pooled=0.029748999999999998% vs baseline=15.0% refinement_queue=0
+  pooled=0.007871% vs baseline=15.0% refinement_queue=0
 CROSS-PROOF VERIFICATION (Tier 91 wide)
   connective obligations: 24
-  full formal obligations: 2385 (504 modules)
-  scientific catalog obligations: 1912 (domains 410)
-  provable: 2331 | atomic provable: 1874 | false margin violations: 0 | structural bundles excluded: 54
-  by_tier: {'priors': 1924, 'extended': 184, 'bounds': 277}
+  full formal obligations: 2587 (558 modules)
+  scientific catalog obligations: 2228 (domains 472)
+  provable: 2587 | atomic provable: 2024 | false margin violations: 0 | structural bundles excluded: 0
+  by_tier: {'priors': 2119, 'extended': 188, 'bounds': 280}
   python_decimal: PASS
-  scientific_catalog python: PASS (1912/1912)
+  scientific_catalog python: PASS (2228/2228)
   smt_bulk_bounds: passed (solver=z3)
   tla_domain_routing: passed
   lean connective: PASS
-  coq: failed (37/40 chunks)
+  coq: passed (48/48 chunks)
   cross_refinement: PASS
-  isabelle: passed (session FSOT_CrossProof, 40/40 chunks)
+  isabelle: passed (session FSOT_CrossProof, 45/45 chunks)
   isabelle_refinement: PASS
   transcendental_gap: 2 pi/e intervals deferred, 68 structural lemmas in Bounds.lean
-  rust_replay: passed (1966 obligations, test replay_all_obligations.rs)
+  rust_replay: passed (2116 obligations, test replay_all_obligations.rs)
   rust_refinement: PASS
   rust_lean_bridge_parity: passed (boot_scalar=0.09928895626861721)
   rust_lean_bridge_refinement: PASS
@@ -295,9 +335,9 @@ CROSS-PROOF VERIFICATION (Tier 91 wide)
   esp32_harness: passed (build=passed, flash=skipped, serial=passed, port=COM3)
   seven_way_bare_metal: True
   eight_way_hardware: True
-  four_way_verification: False
+  four_way_verification: True
   five_way_runtime: True
   six_way_formal_executable: True
-  overall_ok: False
-  github_ready: False
+  overall_ok: True
+  github_ready: True
 Wrote C:\Users\damia\Desktop\FSOT-2.1-Lean\data\cross_proof_verification_report.json

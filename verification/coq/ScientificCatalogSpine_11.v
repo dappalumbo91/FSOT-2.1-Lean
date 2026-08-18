@@ -4,6 +4,106 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_materials_project_live_panel_records_pos : (0 < 141)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_materials_project_live_panel_pooled_under_half_pct : ((0.011734%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_materials_project_live_panel_pooled_lt_half_pure : ((0.011734%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_materials_project_live_panel_max_scalar_under_half_pct : ((0.015087%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_materials_project_live_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_paleoclimate_records_pos : (0 < 40)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_paleoclimate_pooled_under_half_pct : ((0.015015854077438107%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_paleoclimate_pooled_lt_half_pure : ((0.015015854077438107%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_paleoclimate_max_scalar_under_half_pct : ((0.015015854077446988%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_paleoclimate_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_lmfdb_elliptic_curves_open_records_pos : (0 < 1016)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_lmfdb_elliptic_curves_open_pooled_under_half_pct : ((0.014767%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_lmfdb_elliptic_curves_open_pooled_lt_half_pure : ((0.014767%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_lmfdb_elliptic_curves_open_max_scalar_under_half_pct : ((0.014767%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_lmfdb_elliptic_curves_open_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_lmfdb_oeis_math_open_records_pos : (0 < 3918)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_lmfdb_oeis_math_open_pooled_under_half_pct : ((0.014767%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_lmfdb_oeis_math_open_pooled_lt_half_pure : ((0.014767%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_lmfdb_oeis_math_open_max_scalar_under_half_pct : ((0.014767%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_lmfdb_oeis_math_open_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_oeis_family_sweep_open_records_pos : (0 < 394)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_oeis_family_sweep_open_pooled_under_half_pct : ((0.014767%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_oeis_family_sweep_open_pooled_lt_half_pure : ((0.014767%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_oeis_family_sweep_open_max_scalar_under_half_pct : ((0.014767%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_oeis_family_sweep_open_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_trinary_hardware_live_panel_records_pos : (0 < 28)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -381,105 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_zero_day_risk_evaluator_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_desi_edr_table_slice_open_records_pos : (0 < 18)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_desi_edr_table_slice_open_pooled_under_half_pct : ((0.010049%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_edr_table_slice_open_pooled_lt_half_pure : ((0.010049%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_edr_table_slice_open_max_scalar_under_half_pct : ((0.010049%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_edr_table_slice_open_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_desi_public_depth_open_records_pos : (0 < 10)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_desi_public_depth_open_pooled_under_half_pct : ((0.010049%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_public_depth_open_pooled_lt_half_pure : ((0.010049%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_public_depth_open_max_scalar_under_half_pct : ((0.010049%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_public_depth_open_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_alternate_base_mathematics_explorer_panel_records_pos : (0 < 56)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_alternate_base_mathematics_explorer_panel_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_alternate_base_mathematics_explorer_panel_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_alternate_base_mathematics_explorer_panel_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_alternate_base_mathematics_explorer_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_experimental_base_mathematics_panel_records_pos : (0 < 36)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_experimental_base_mathematics_panel_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_experimental_base_mathematics_panel_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_experimental_base_mathematics_panel_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_experimental_base_mathematics_panel_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_fusion_lean_route_credibility_records_pos : (0 < 81)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_fusion_lean_route_credibility_pooled_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_fusion_lean_route_credibility_pooled_lt_half_pure : ((0.009504%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_fusion_lean_route_credibility_max_scalar_under_half_pct : ((0.009504%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_fusion_lean_route_credibility_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
