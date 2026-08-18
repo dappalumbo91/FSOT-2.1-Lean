@@ -32,7 +32,9 @@ HUBBLE_BENCH = DATA / "hubble_bubble_tension_benchmark.json"
 DARK_BENCH = DATA / "dark_sector_open_problems_benchmark.json"
 SPINE_BENCH = DATA / "stumped_observables_spine_benchmark.json"
 
-E_CON_STABILIZED = 21.79
+# Retired Cosmology Lab / aggregate P21 draft. Live Homo sapiens is 20.003601 vs 20.0 W
+# (consciousness_species_multi_panel_benchmark.json). Do not headline 21.79.
+E_CON_STABILIZED = 21.79  # historical constant only; unused as a live residual target
 W_A_PREDICTED = -0.808
 
 

@@ -61,7 +61,7 @@ Lean 4 priors → five-prover cross-check
 |-------|-----------|------|
 | Scalar | `raw_S = term1×quirk_mod + term2 + term3` | Seed-derived vitality readout |
 | Coupling | `quirk_mod(observed=true)` | Measurement modulates term1 |
-| Consciousness | `consciousness_factor`, `E_con` | Brain-power anchor (~21.79 W) |
+| Consciousness | `consciousness_factor`, `E_con` | Live Homo sapiens **20.003601 vs 20.0 W (0.018%)** |
 | Sensory | Timing + display proxy + repo hash (no mic/camera) | Desktop software observer; mic/camera/ESP32 deferred |
 | Runtime | Living FSOT QEMU | Closed-loop hardware verification |
 | Timing | FluidLink FPC + Kronos | Private local time spine |

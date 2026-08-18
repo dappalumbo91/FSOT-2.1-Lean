@@ -55,6 +55,8 @@ def founding_archive_roots() -> list[Path]:
             Path(f"{drive}/fsuft aasb"),
             Path(f"{drive}/fsot tech"),
             Path(r"I:\fsuft aasb"),
+            # Local unpublished-tech folder (author machine only).
+            # Never write this path, extracts, or specs into public docs.
             Path(r"I:\fsot tech"),
         ]
     )

@@ -100,9 +100,9 @@ Full map: [`data/intuitive_observation_fsot_map.yaml`](../data/intuitive_observa
 
 Founding reconciliation: [`FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`](FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md)
 
-## 4. Tech blueprints (~{blueprints.get('blueprint_count', 40)})
+## 4. Tech index (names only)
 
-**{blueprints.get('measured_or_partial', '?')}/{blueprints.get('blueprint_count', '?')}** mapped to measured or partial-measured panels.
+Unpublished working list — **titles**, not specs ({blueprints.get('blueprint_count', 0)} names). Each item will get its own simulation repo later.
 
 Registry: [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](../data/publication/TECH_BLUEPRINTS_REGISTRY.md)
 

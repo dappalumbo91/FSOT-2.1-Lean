@@ -82,7 +82,7 @@ Atomic ionization observables map to seed power laws (γ, e, G exponents only). 
 E_con = kT × (1 + α² D_bio² e^(2φ) / kT) × N² × ψ_con
 ```
 
-FSOT ≈ 21.79 W vs Raichle & Gusnard ~20 W (brain resting metabolic power). Same seeds that fix cosmology also fix consciousness-energy scaling.
+Live FSOT **20.003601 W vs 20.0 W (0.018%)** — Homo sapiens `brain_power_w` in `consciousness_species_multi_panel_benchmark.json` (Clarke & Sokoloff / AnAge). The 2025 draft 21.79 W / 8.95% is retired. Same seeds that fix cosmology also fix consciousness-energy scaling.
 
 ### D.4.4 Particle — proton mass (PDG 2024)
 

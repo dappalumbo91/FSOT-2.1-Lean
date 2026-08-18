@@ -1,165 +1,105 @@
 #!/usr/bin/env python3
-"""Catalog ~40 fsot tech blueprints → FSOT 2.1 panel crosswalk."""
+"""Public names-only tech index.
+
+Does **not** scan I:\\fsot tech, founding PDF extracts, or any private
+blueprint file. Titles and fold labels only. Specs stay unpublished.
+"""
 
 from __future__ import annotations
 
-import json
-import re
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PDF_MANIFEST = ROOT / "vendor" / "founding_corpus" / "pdf_ingest_manifest.json"
 OUT_JSON = ROOT / "data" / "publication" / "tech_blueprints_registry.json"
 OUT_MD = ROOT / "data" / "publication" / "TECH_BLUEPRINTS_REGISTRY.md"
 
-# Keyword → FSOT verified panel / tier mapping
-PANEL_MAP = (
-    (r"warp|portal|wrps|fwd", "Warp_BH_WH_Portal", "tier39/warp_bh_wh", "interpretive"),
-    (r"fusion|spfr|plasma reactor|oxoflash", "Fusion_Physics_Public_Panel", "tier71_fusion", "measured_partial"),
-    (r"fuel|generator|energy unit|benben|ppfg|perpetual flux", "Fuel_Lab_Live_Panel", "tier39/fuel", "measured"),
-    (r"solar|photovoltaic|quantum solar", "Electrical_Power_Systems", "tier39_electrical", "measured"),
-    (r"tricorder|sensing|observer|fluid.*sensor", "Living_FSOT_Hardware_Panel", "living_fsot_qemu", "scaffold"),
-    (r"armor|nanocomposite|vibranium|material", "Materials_Science_gap_fill", "tier55_materials", "scaffold"),
-    (r"plant growth|agriculture", "Agriculture_Agroecology_gap_fill", "tier_gap_fill", "scaffold"),
-    (r"warp drive|fluidic warp", "BlackHole_WhiteHole_Cycle_Live_Panel", "verified_desktop", "measured"),
-    (r"barrier|shield|fluid barrier", "Domain_Coupling_Simulation", "domain_coupling", "measured"),
-    (r"thread|flexi|comm|link", "FPC_Temporal_Coupling", "tier50_fluidlink", "measured"),
-    (r"speaker|acoustic|poof", "Acoustics_gap_fill", "tier_gap_fill", "scaffold"),
-    (r"philosopher|stone|decoding", "Philosophy_Corpus", "founding_interpretive", "interpretive"),
-)
+# Public to-do index. No wattages, parts, paths, or extracts.
+PUBLIC_INDEX: list[dict] = [
+    {"id": "qveh", "title": "Quantum Vacuum Energy Harvester (QVEH)", "fold": "quantum vacuum / Casimir", "epistemic": "unpublished", "notes": "law_11 family"},
+    {"id": "enerframe", "title": "Compact Integrated Quantum Vacuum EnerFrame", "fold": "quantum vacuum", "epistemic": "unpublished", "notes": "same fold"},
+    {"id": "neo_benben", "title": "Neo-Benben Household Energy Unit", "fold": "vacuum / fuel-lab concept", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "ppfg", "title": "Palumbo Perpetual Flux Generator", "fold": "fuel-lab concept", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "dual_surface_barrier", "title": "Dual-Surface Quantum Fluid Barrier", "fold": "domain coupling / valve", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "fluidic_warp", "title": "Fluidic Warp Drive", "fold": "BH→WH valve (C2)", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "warp_portal", "title": "Warp Portal", "fold": "BH→WH valve (C2)", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "mini_10d_wrps", "title": "Mini 10D-WRPS-D", "fold": "BH→WH valve (C2)", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "e10d_wd", "title": "Warp Drive (E10D-WD)", "fold": "BH→WH valve (C2)", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "warp_disc", "title": "Warp disc (starate)", "fold": "BH→WH valve (C2)", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "em_propulsion_ring", "title": "Electromagnetic Propulsion Ring", "fold": "propulsion fold", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "aetherion", "title": "Aetherion spacecraft", "fold": "propulsion / atmosphere", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "aetherion_colossus", "title": "Aetherion Colossus", "fold": "propulsion / atmosphere", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "gxt01", "title": "GXT-01", "fold": "observer / embodiment", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "gxt01_cryo", "title": "GXT-01 Cryogenic Cooling", "fold": "thermal / vacuum sink", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "standalone_emf", "title": "Standalone electromagnetic field generator", "fold": "magnetosphere analog", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "mini_oxoflash", "title": "Mini-Oxoflash", "fold": "atmosphere / ozone (law_26)", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "oxoflash", "title": "The Oxoflash", "fold": "atmosphere / ozone (law_26)", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "oxohive", "title": "OxoHive", "fold": "atmosphere / ozone (law_26)", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "mars_terraform", "title": "Mars Terraforming Blueprint", "fold": "atmosphere / ozone (law_26)", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "neutrfusion", "title": "NeutriFusion Reactor", "fold": "fusion panel family", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "sun_pocket", "title": "The Sun Pocket", "fold": "fusion panel family", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "spfr", "title": "Seawater Plasma Fusion Reactor (SPFR)", "fold": "fusion panel family", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "double_helix_plasma", "title": "Double Helix Plasma", "fold": "plasma fold", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "quantum_solar", "title": "The Quantum Solar Panel", "fold": "electrical-power fold", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "wood_poofcone", "title": "wood-PoofCone Thermo-Plasma Speaker", "fold": "acoustics / POOF–SUCTION (C9)", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "flexithread", "title": "FlexiThread", "fold": "materials fold", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "rubber_aluminum", "title": "Rubber-Aluminum Nanocomposite", "fold": "materials fold", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "vibranium", "title": "FSUFT-Vibranium Synthesizer", "fold": "materials fold", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "gigaflux_armor", "title": "GigaFlux Armor", "fold": "materials fold", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "memorphium", "title": "Memorphium", "fold": "materials fold", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "metaforge", "title": "MetaForge 3D Printer", "fold": "manufacturing fold", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "holoflex", "title": "Holoflex", "fold": "observer / display", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "tricorder", "title": "Quantum Fluid Tricorder", "fold": "observer / living-FSOT", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "qnr", "title": "Quantum noise reducer", "fold": "observer / noise as fluid", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "f8v", "title": "FSUFT 8.3 Verifier (F8V)", "fold": "observer / measurement", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "nanohlsd", "title": "NanoHLSD", "fold": "observer / embodiment", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "plant_growth", "title": "FSUFT-U Plant Growth Stimulator", "fold": "agroecology fold", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "the_blob", "title": "The Blob", "fold": "civic / metabolism analog", "epistemic": "unpublished", "notes": "unpublished"},
+    {"id": "planetary_gear_board", "title": "Planetary Gear Board", "fold": "as-above-so-below (C12)", "epistemic": "unpublished", "notes": "unpublished"},
+    {
+        "id": "bh_wh_cycle",
+        "title": "BlackHole WhiteHole Cycle",
+        "fold": "already scored",
+        "epistemic": "measured_concept",
+        "notes": "BlackHole_WhiteHole_Cycle_Live_Panel — concept residual, not a gadget spec",
+        "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+    },
+    {
+        "id": "philosophers_stone",
+        "title": "Decoding the Philosopher's Stone (6.0)",
+        "fold": "interpretive philosophy",
+        "epistemic": "interpretive",
+        "notes": "not a device",
+    },
+]
 
 
-def _load_json(path: Path) -> dict:
-    return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
-
-
-def _classify(name: str) -> tuple[str, str, str]:
-    lower = name.lower()
-    for pattern, panel, tier, tier_epistemic in PANEL_MAP:
-        if re.search(pattern, lower):
-            return panel, tier, tier_epistemic
-    return "Extension_Panel_TBD", "blueprint_audit_pending", "interpretive"
-
-
-def _scan_fsot_tech_dir() -> list[Path]:
-    roots = [Path(r"I:/fsot tech"), Path(r"I:\fsot tech")]
-    files: list[Path] = []
-    for root in roots:
-        if not root.is_dir():
-            continue
-        for path in sorted(root.rglob("*")):
-            if path.suffix.lower() in {".pdf", ".md"} and path.is_file():
-                if "fsot_updated_blueprints" in str(path):
-                    continue
-                files.append(path)
-        break
-    return files
-
-
-def _unique_blueprints(manifest: dict) -> list[dict]:
-    seen: set[str] = set()
-    rows: list[dict] = []
-    for entry in manifest.get("entries") or []:
-        src = str(entry.get("source_pdf") or "")
-        if "fsot tech" not in src.lower():
-            continue
-        if "fsot_updated_blueprints" in src:
-            continue  # prefer canonical names from parent PDFs
-        name = Path(src).stem
-        key = re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
-        if key in seen:
-            continue
-        seen.add(key)
-        panel, tier, epistemic = _classify(name)
-        rows.append(
-            {
-                "id": key,
-                "title": name,
-                "source_pdf": src,
-                "extracted_txt": entry.get("output_txt"),
-                "char_count": entry.get("char_count"),
-                "fsot_panel": panel,
-                "verification_tier": tier,
-                "epistemic_tier": epistemic,
-                "reverify_command": "python scripts/fsot_verification_runner.py",
-            }
-        )
-    for path in _scan_fsot_tech_dir():
-        name = path.stem
-        key = re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
-        if key in seen:
-            continue
-        seen.add(key)
-        panel, tier, epistemic = _classify(name)
-        rows.append(
-            {
-                "id": key,
-                "title": name,
-                "source_pdf": str(path),
-                "extracted_txt": None,
-                "char_count": path.stat().st_size if path.is_file() else None,
-                "fsot_panel": panel,
-                "verification_tier": tier,
-                "epistemic_tier": epistemic,
-                "reverify_command": "python scripts/fsot_verification_runner.py",
-            }
-        )
-    # Add known .md blueprints from founding registry
-    extras = [
-        ("palumbo_perpetual_flux_generator", "Palumbo Perpetual Flux Generator", "Fuel_Lab_Live_Panel"),
-        ("planetary_gear_board", "Planetary Gear Board", "Robotics_Control_Systems"),
-        ("bh_wh_cycle", "BlackHole WhiteHole Cycle Blueprint", "BlackHole_WhiteHole_Cycle_Live_Panel"),
-    ]
-    for eid, title, panel in extras:
-        if eid not in seen:
-            seen.add(eid)
-            rows.append(
-                {
-                    "id": eid,
-                    "title": title,
-                    "source_pdf": f"I:/fsot tech/{title.replace(' ', '_')}.md",
-                    "extracted_txt": None,
-                    "char_count": None,
-                    "fsot_panel": panel,
-                    "verification_tier": "verified_desktop",
-                    "epistemic_tier": "measured" if "Cycle" in title else "interpretive",
-                    "reverify_command": "python scripts/reproduce_domain_panel.py",
-                }
-            )
-    return sorted(rows, key=lambda r: r["title"].lower())
-
-
-def build_md(rows: list[dict], ts: str) -> str:
-    measured = sum(1 for r in rows if r["epistemic_tier"] in ("measured", "measured_partial"))
+def build_md(rows: list[dict]) -> str:
     lines = [
-        "# FSOT Tech Blueprints Registry",
+        "# FSOT tech index (names only)",
         "",
-        f"*Generated: {ts} · {len(rows)} blueprints cataloged*",
+        "**Status:** unpublished working list. These are **titles of private designs**. "
+        "Specs, wattages, parts lists, and build files are **not** in this repo. "
+        "Each item will get its own simulation repo later. Until then this is a *to-do index*, not a product catalog.",
         "",
-        "> Engineering vision documents from `I:/fsot tech`. **Philosophy retained; numerics verified before citing as measured.**",
+        "**How to read a row:** the name is public; the *fold* is the FSOT 2.1 interface that design will score against when a simulation exists. "
+        "Epistemic is `unpublished` unless a *separate* residual panel already exists for the *concept* (not the gadget).",
         "",
-        f"**Summary:** {measured}/{len(rows)} mapped to measured or partial-measured FSOT panels.",
-        "",
-        "| Blueprint | FSOT panel | Tier | Epistemic |",
-        "|-----------|------------|------|-----------|",
+        "| Name | Fold (later score) | Notes |",
+        "|------|--------------------|-------|",
     ]
     for r in rows:
-        lines.append(
-            f"| {r['title'][:60]} | `{r['fsot_panel']}` | {r['verification_tier']} | {r['epistemic_tier']} |"
-        )
+        lines.append(f"| {r['title']} | {r['fold']} | {r['notes']} |")
     lines.extend(
         [
             "",
-            "## Re-verify a blueprint claim",
+            "Machine copy: [`tech_blueprints_registry.json`](tech_blueprints_registry.json).",
             "",
-            "```bash",
+            "Regenerate names (does **not** ingest private files into public docs):",
+            "",
+            "```powershell",
             "python scripts/build_tech_blueprints_registry.py",
-            "# Per founding workflow:",
-            "python scripts/reconcile_founding_corpus.py",
             "```",
-            "",
-            "See [`FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`](../FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md).",
             "",
         ]
     )
@@ -167,19 +107,24 @@ def build_md(rows: list[dict], ts: str) -> str:
 
 
 def main() -> int:
-    manifest = _load_json(PDF_MANIFEST)
-    rows = _unique_blueprints(manifest)
     ts = datetime.now(timezone.utc).isoformat()
+    rows = [dict(r) for r in PUBLIC_INDEX]
     doc = {
         "generated_at": ts,
+        "policy": "names_only_unpublished_index",
+        "scans_private_tech_folder": False,
         "blueprint_count": len(rows),
-        "measured_or_partial": sum(1 for r in rows if r["epistemic_tier"] in ("measured", "measured_partial")),
+        "unpublished_count": sum(1 for r in rows if r["epistemic"] == "unpublished"),
+        "scored_concept_count": sum(1 for r in rows if r["epistemic"] == "measured_concept"),
+        "interpretive_count": sum(1 for r in rows if r["epistemic"] == "interpretive"),
         "blueprints": rows,
     }
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
+    import json
+
     OUT_JSON.write_text(json.dumps(doc, indent=2), encoding="utf-8")
-    OUT_MD.write_text(build_md(rows, ts[:10]), encoding="utf-8")
-    print(f"Wrote {OUT_JSON}  {len(rows)} blueprints")
+    OUT_MD.write_text(build_md(rows), encoding="utf-8")
+    print(f"Wrote {OUT_JSON}  {len(rows)} names (no private paths)")
     print(f"Wrote {OUT_MD}")
     return 0
 

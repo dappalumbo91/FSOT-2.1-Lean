@@ -30,7 +30,7 @@ This is **one theory**, pin **D1D38A**. Siblings are folds, not other laws.
 | Coupled tanks \(\kappa_{ij}\) | `vendor/fsot_complex_interaction.py` · [`COMPLEX_SYSTEM_DERIVATION.md`](COMPLEX_SYSTEM_DERIVATION.md) |
 | Ontology A1–A6 | `data/foundational_ontology_axioms.yaml` |
 
-Picture → engine: [`CONCEPTS.md`](CONCEPTS.md) C1–C12.
+Picture → engine: [`CONCEPTS.md`](CONCEPTS.md) C1–C13. Consciousness kill map: [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md).
 
 ---
 

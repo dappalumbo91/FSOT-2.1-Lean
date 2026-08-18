@@ -71,6 +71,8 @@ Frozen criteria: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 |-----|------|
 | [`NEURON_ZIG_TO_OS_ROADMAP.md`](NEURON_ZIG_TO_OS_ROADMAP.md) | Mind → trinary OS → bare metal (direction, not shipped full OS) |
 | [`ENGINEERING_HARDWARE_CODE_DIRECTION.md`](ENGINEERING_HARDWARE_CODE_DIRECTION.md) | Engineering rails |
+| [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) | Founding consciousness claim → live panel n / residual / kill command |
+| [`CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) | Local observer stack (QEMU; ESP32 deferred) |
 
 ---
 

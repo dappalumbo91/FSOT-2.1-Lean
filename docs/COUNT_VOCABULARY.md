@@ -28,6 +28,7 @@ These are **different ledgers**. Using one number for all of them is the discrep
 | 61,445 scalar records | older envelope; live is **180,042** |
 | 536,740 records as the green envelope | older rollup; do not use as the 472-file gate |
 | 15 Å AlphaFold median as the Genetics **product** | 2026-08-07 **bulk** snapshot; product freeze is in FSOT-Genetics |
+| `E_con` ≈ 21.79 W / 8.95% | Retired Cosmology Lab / aggregate P21 draft; live Homo sapiens is **20.003601 vs 20.0 W (0.018%)** |
 
 ## Rule for writers and generators
 

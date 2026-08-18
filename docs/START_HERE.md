@@ -57,7 +57,8 @@ Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 | Lean formal | `FSOT/Formal/` | Master integrator |
 | Multiprover | `verification/{coq,isabelle,fstar,rust,smt,tla,qemu,esp32}/` | Independent residual / structure checks |
 | Domain data | `data/*_benchmark.json` | Residual panels |
-| Concepts (BH/WH, bubble, folds) | [`docs/CONCEPTS.md`](CONCEPTS.md) | Picture → engine map — read this before the atlas |
+| Concepts (BH/WH, bubble, folds, observer) | [`docs/CONCEPTS.md`](CONCEPTS.md) | Picture → engine map — read this before the atlas |
+| Consciousness kill map | [`docs/CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) | Live E_con 20.003601 vs 20.0 W — not the 21.79 W draft |
 | How Damian views the model | [`docs/FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md) | River, seepage, BH–WH, as-above-so-below — picture, not products |
 | Predictions (frozen) | `predictions/` | Timestamped / SHA-locked forecasts |
 | Results (outcomes) | `results/` | Literature + API outcomes after data lands |

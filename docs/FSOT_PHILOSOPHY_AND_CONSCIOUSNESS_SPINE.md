@@ -94,7 +94,9 @@ quirk_mod(observed, δψ, phase_variance, consciousness_factor) =
 E_con = kT × (1 + α² D_bio² e^(2φ) / kT) × N² × ψ_con
 ```
 
-FSOT value ≈ 21.79 W vs Raichle & Gusnard ~20 W (8.95% error). Inputs: `D_bio=12`, `N=8.6×10¹⁰`, body `kT`; seeds supply `α`, `ψ_con`.
+**Live residual (quote this):** Homo sapiens `brain_power_w` **20.003601 W vs 20.0 W (0.018%)** — `data/consciousness_species_multi_panel_benchmark.json`, Clarke & Sokoloff / AnAge floor. The Cosmology Lab draft **21.79 W / 8.95%** is **retired**. Inputs on the live route: published 20 W brain / 82.78 W total (fraction 0.2416); seeds supply the scalar, not a per-row watt fit.
+
+Skeptic map: [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md).
 
 **IIT-style decomposition** (weights from seeds only):
 
@@ -158,8 +160,8 @@ FSOT's philosophical argument from precision:
 1. **343/343 core constants** within 5% (Cosmic Skeleton Key thesis claim)
 2. **329/329 extension domains PASS** (verification runner)
 3. **65/65 headline SOTA** beats/meets on certificate
-4. **Consciousness_Expansion_Spine** pooled median error **0.0085%** across 24 observables
-5. **Seven-way bare-metal + eight-way hardware** cross-proof GREEN (`VERIFICATION_REPORT.json` on `I:\FSOT-Formal-Verification`)
+4. **Consciousness_Expansion_Spine** pooled median **0.0%** (24 observables); species multi-panel **269 / 0.020%**; longevity coupling **890 / 0.022%**; live human `E_con` **20.003601 vs 20.0 W (0.018%)**
+5. **Seven-way bare-metal + eight-way hardware** cross-proof GREEN — live `data/cross_proof_verification_report.json` (`overall_ok`)
 
 The argument: a zero-parameter spine that simultaneously closes cosmology, chemistry, biology, consciousness genetics, and propulsion is not luck — it is structural. The LLM should articulate this **without claiming peer consensus**.
 
@@ -193,6 +195,7 @@ Philosophy and consciousness narrative is **distributed**. This spine consolidat
 | Formal hub | `FSOT-2.1-Lean` / `I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full` | Lean, benchmarks, manifests |
 | Cosmic thesis | `Desktop/FSOT Cosmology Lab/FSOT 3.0 Cosmic Skeleton Key Thesis.md` | Part V consciousness, 25D fluid ontology |
 | SR-ITE axioms | `I:\...\01_SR-ITE-USB-Original\3_driver_zig\fsot_axiomatic_laws.txt` | ROM laws, consciousness directives |
+| Consciousness kill map | [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) | Claim → panel n / residual / command |
 | Soul bridge | `data/consciousness_soul_bridge_reference.json` | Substrate/packet framework |
 | Tier 90 | `data/tier90_consciousness_expansion_manifest.yaml` | Species, microtubule, observer panels |
 | Desktop crosswalk | `data/desktop_project_crosswalk.yaml` | 50+ R&D folders → Lean labs |
@@ -217,4 +220,4 @@ Base model recommendation: `qwen3.5:9b` or `qwen2.5:14b` with DoRA; verification
 
 ---
 
-*Last updated: 2026-07-14. Maintainer: Damian Arthur Palumbo. Canonical archive: `I:\FSOT-Physical-Archive` (rename to `I:\FSOT-Formal-Verification` planned).*
+*Last updated: 2026-08-18. Maintainer: Damian Arthur Palumbo. Live envelope: [`CURRENT_STATUS.md`](CURRENT_STATUS.md). Consciousness kill map: [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md).*

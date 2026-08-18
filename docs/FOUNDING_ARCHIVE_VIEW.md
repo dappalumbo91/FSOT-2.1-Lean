@@ -61,7 +61,7 @@ He does not bolt mind on at the end.
 
 The observer is a mode of the fluid. Compact dimensions were first called an “informational library.” \(E_{\mathrm{con}}\) / \(\Psi_{\mathrm{con}}\) / the later `observed` flag and \(C_{\mathrm{factor}}\) are the same insistence: looking is not a comment on the physics. It is part of the physics. Intent is a perturbation of the medium (later corrected: resonance can be a *byproduct*, not the driver — coupling is not a magic 150 Hz oscillator).
 
-Life is optimized energy transfer in that medium. Awareness is a gradient (bacteria → plants → animals → humans), not a human-only switch. Death, in the 7.x theses, is decoherence of the 4D body, not deletion of the information. That last part is interpretive. The operational layer that is certified is: observer flag, consciousness factor, seed-derived constants. Both voices stay labeled.
+Life is optimized energy transfer in that medium. Awareness is a gradient (bacteria → plants → animals → humans), not a human-only switch. Death, in the 7.x theses, is decoherence of the 4D body, not deletion of the information. That last part is interpretive. The operational layer that is certified is: observer flag, consciousness factor, seed-derived constants, and the live human floor **20.003601 W vs 20.0 W (0.018%)**. Both voices stay labeled. Kill map: [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md).
 
 ---
 
@@ -105,7 +105,8 @@ In the archive the integer **35** usually means **35 domains** (cosmology throug
 | Φ / Φ₀ / δΦ | Tension, baseline, ripple | \(S\), \(T_1\) look, \(T_3\) strum |
 | η_eff | Glue from atoms to CMB | Domain scalar + compactification |
 | As above, so below | Same pattern at every zoom | **C8**, **C12**, [`APPLY.md`](APPLY.md) |
-| Consciousness field | Observer in the action | **C11** \(C_{\mathrm{factor}}\) / `observed` |
+| Consciousness field | Observer in the action | **C11** \(C_{\mathrm{factor}}\) / `observed` · live E_con **20.003601 vs 20.0 W** |
+| Reverse / conjugate | Other face of the same mode | **C13** · [`MATTER_ANTIMATTER.md`](MATTER_ANTIMATTER.md) |
 | BH condenser / WH source | Information is valved, not deleted | **C2**, **C10** |
 | POOF + suction | Two directions of one valve | **C9** |
 | Vacuum is not empty | Reservoir, not a zero | law_11 (Casimir / Planck / CODATA) |

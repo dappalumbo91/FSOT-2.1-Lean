@@ -59,7 +59,7 @@ Older intuitive observations explicitly mapped:
 | Observation | Tier | Test surface |
 |-------------|------|--------------|
 | fluid_reality | measured | PRED-024/025 FPC tau + contested-sector pooled median |
-| observer_participation | measured | quirk_mod gate in fsot_compute; E_con ≈ 21.79 W vs Raichle ~20 W |
+| observer_participation | measured | quirk_mod gate; live E_con 20.003601 vs 20.0 W (0.018%) |
 | as_above_so_below | measured | 472-file green envelope pooled median; cross-domain coupling simulation |
 | hidden_thing_revealed | measured | PRED-001–041 locked manifest; skeptic replication kit 15-min path |
 | dual_identity_hybrid | scaffold | Living_FSOT_Hardware_Panel + consciousness lean route credibility |
@@ -71,7 +71,19 @@ Full map: [`data/intuitive_observation_fsot_map.yaml`](../data/intuitive_observa
 
 Founding reconciliation: [`FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`](FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md)
 
-## 4. Local owned systems (subscription-free counter-stack)
+## 4. Tech index (names only)
+
+Unpublished working list — **titles**, not specs. Each item will get its own simulation repo later. Until then this is a to-do index, not a product catalog.
+
+Registry: [`data/publication/TECH_BLUEPRINTS_REGISTRY.md`](../data/publication/TECH_BLUEPRINTS_REGISTRY.md)
+
+Regenerate names (does **not** ingest private files):
+
+```powershell
+python scripts/build_tech_blueprints_registry.py
+```
+
+## 5. Local owned systems (subscription-free counter-stack)
 
 - subscription free by design
 - data stays on device

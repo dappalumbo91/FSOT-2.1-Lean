@@ -242,7 +242,7 @@ def _patch_inline_citations(text: str) -> str:
         ),
         (
             "Brain metabolic power `E_con` ≈ 21.79 W vs ~20 W measured (Raichle & Gusnard)",
-            "Brain metabolic power `E_con` ≈ 21.79 W vs ~20 W measured (Raichle & Gusnard 2002)",
+            "Brain metabolic power `E_con` **20.003601 W vs 20.0 W (0.018%)** (Clarke & Sokoloff / AnAge; 21.79 W draft retired)",
         ),
         (
             "Full atlas: [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) (402 rows)",

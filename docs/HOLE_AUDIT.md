@@ -1,7 +1,7 @@
 # Hole audit — fill by the paradigm, not by siloed habit
 
 **Date:** 2026-08-18  
-**Fill pass:** registry 48/48 · green **472/472** · empirical C_thin **1** (SH0ES only) · 7 founding now B_verified from archive-cited public tables · process ledgers **9** tagged · cross-proof **overall_ok**  
+**Fill pass:** registry 48/48 · green **472/472** · empirical C_thin **1** (SH0ES only) · 7 founding now B_verified · consciousness honesty (live 20.003601 vs 20.0 W) · CONCEPTS C13 conjugate · names-only tech index · cross-proof **overall_ok**  
 **Stance:** This is a real ToE *attempt* under frozen Label A/B. Holes are missing **interfaces, data, or articulation** — not invitations to add free parameters.
 
 Counts: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Apply protocol: [`APPLY.md`](APPLY.md).
@@ -36,6 +36,9 @@ These were in the math and ontology already. They were not on the front door.
 | How to apply without LSQ | [`APPLY.md`](APPLY.md) |
 | Where is everything | [`SYSTEM_DIRECTORY.md`](SYSTEM_DIRECTORY.md) |
 | How Damian views the model | [`FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md) — river, seepage, BH/WH fridge-cycle, as-above-so-below |
+| Consciousness honesty (stale 21.79 W / 8.95%) | Live **20.003601 vs 20.0 W (0.018%)** · [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) · CONCEPTS **C11** |
+| Reverse / conjugate (matter–antimatter, “other face”) | CONCEPTS **C13** · [`MATTER_ANTIMATTER.md`](MATTER_ANTIMATTER.md) |
+| Tech titles without unpublished specs | [`../data/publication/TECH_BLUEPRINTS_REGISTRY.md`](../data/publication/TECH_BLUEPRINTS_REGISTRY.md) names-only |
 
 ---
 

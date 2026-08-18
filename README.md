@@ -484,7 +484,7 @@ Consciousness is **fundamental in the ontology** â€” a core ripple in the 2
 | We claim | We do not claim |
 |----------|-----------------|
 | Consciousness couples to physics through measurable proxies | FSOT has settled the philosophical "hard problem" |
-| Brain metabolic power `E_con` â‰ˆ 21.79 W vs ~20 W measured (Raichle & Gusnard 2002) | Universal consensus on what consciousness *is* |
+| Brain metabolic power `E_con` **20.003601 W vs 20.0 W (0.018%)** (Clarke & Sokoloff / AnAge; 21.79 W draft retired) | Universal consensus on what consciousness *is* |
 | The same seeds that fix Hâ‚€ also fix consciousness-energy scaling | Orch-OR or any single external theory is proven |
 
 **Truth criterion:** a consciousness claim is *supported* when it maps to a Lean panel, produces numeric agreement within the green gate, and survives cross-proof replay. External philosophy debates are evidence, not gate.

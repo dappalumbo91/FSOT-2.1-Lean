@@ -22,7 +22,7 @@ observations:
       lean: [FSOT.Scalar.quirk_mod, consciousness_factor]
       terms: [term1.quirk_mod, observed=true]
       panels: [Consciousness_Expansion_Spine, Longevity_Consciousness_Coupling_Panel]
-    test: "quirk_mod gate in fsot_compute; E_con ≈ 21.79 W vs Raichle ~20 W"
+    test: "quirk_mod gate in fsot_compute; live E_con 20.003601 vs 20.0 W (0.018%)"
     epistemic_tier: measured
 
   - id: as_above_so_below
@@ -32,7 +32,7 @@ observations:
       lean: [FSOT.Formal.CrossScaleSelfSimilarityPriors]
       terms: [cross_scale_bridges, compactification_ladder]
       panels: [Cross_Scale_Self_Similarity, Compactification_Ladder]
-    test: "402-domain atlas pooled median; cross-domain coupling simulation"
+    test: "472-file green envelope pooled median; cross-domain coupling simulation"
     epistemic_tier: measured
 
   - id: hidden_thing_revealed

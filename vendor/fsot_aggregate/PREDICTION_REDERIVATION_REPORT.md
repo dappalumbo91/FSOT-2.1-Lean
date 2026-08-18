@@ -43,7 +43,7 @@
 | r_c (dwarf core) | 0.00% | 0.33% | 0.33 pp |
 | σ₈ | 0.00% | 0.14% | 0.14 pp |
 
-**Note 1:** E_con = 21.79 W vs observed ~20 W. The 9% error is expected given zero free parameters; the formula captures both the magnitude and the dimensional structure correctly.
+**Note 1 (RETIRED draft):** This snapshot recorded E_con = 21.79 W vs ~20 W (8.95%). **Do not quote as live FSOT 2.1.** Live Homo sapiens `brain_power_w` is **20.003601 vs 20.0 W (0.018%)** in `data/consciousness_species_multi_panel_benchmark.json`. See `docs/CONSCIOUSNESS_CLAIM_EVIDENCE.md`.
 
 **Note (r_c, τ, D/H, σ₈):** These sub-1-pp differences are well within observational uncertainties. The r_c regression was resolved — see Dwarf Core Radius section below.
 
@@ -104,7 +104,7 @@ This reduces r_c error from **25.92% → 0.33%**, resolving the only >10% regres
 
 | PID | Prediction | Stabilized | Observed | Error | Status |
 |-----|-----------|:----------:|:--------:|:-----:|:------:|
-| P21 | E_con (W) | 21.79 | ~20 | 8.95% | ✅ |
+| P21 | E_con (W) | 21.79 (retired draft) | ~20 | 8.95% (do not quote) | superseded by live 20.003601 vs 20.0 (0.018%) |
 
 ---
 

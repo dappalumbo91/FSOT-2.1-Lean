@@ -19,6 +19,7 @@ This is **not** a request for peer-review social status. It is a map from **publ
 | “Lean is empty / unparsed” | Mathlib campaign not closed / lake fail | `data/mathlib_rederivation_campaign_report.json` |
 | “Can’t reproduce” | Clean-clone path fails | `data/fresh_clone_corpus_mathlib_repro_report.md` |
 | “Formula authority drifted” | Pin mismatch or gate fail | `data/formula_authority_closure.json` |
+| “Consciousness is missing / 9% off” | Live Homo sapiens `brain_power_w` ≠ 20.003601 vs 20.0 (0.018%) | [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) |
 
 Insults without running these are **not a scientific rebuttal**.
 
@@ -36,13 +37,13 @@ If this table disagrees with CURRENT_STATUS, **CURRENT_STATUS wins**.
 | Parameter honesty | **ZERO_FREE** | `data/parameter_count_audit.json` |
 | Formula authority | **FORMULA_AUTHORITY_SYSTEM_CLOSED** | `data/formula_authority_closure.json` |
 | Mathlib-class Formal depth | **5182 / 5182 (100%)** L1=0 | `data/mathlib_rederivation_campaign_report.json` |
-| Catalog multiprover obligations | **2222** · domains **472** | cross-proof report `scientific_catalog_spine` |
-| Full formal obligations | **2585** · atomic **2022** · margin viol **0** | `full_formal_spine` |
+| Catalog multiprover obligations | **2228** · domains **472** | cross-proof report `scientific_catalog_spine` |
+| Full formal obligations | **2587** · atomic **2024** · margin viol **0** | `full_formal_spine` |
 | Multiprover | **`overall_ok: true`** · 7-way bare metal · 8-way hardware | `data/cross_proof_verification_report.json` |
 | ToE labels (frozen checklist) | Label A **true** · Label B **true** | `data/toe_gap_closure_report.json` |
 | Clean-clone Mathlib path | **PASS** (0 field mismatches) | `data/fresh_clone_corpus_mathlib_repro_report.md` |
 
-**Stale numbers to ignore if you still see them in old prose:** 394/394, 405/405, 430/432, 432/432, 433/433 green; **1,863** atomic (live **2022**); 57% Mathlib; ~1912 obligations; “priors still mostly L1.” Ledger: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md).
+**Stale numbers to ignore if you still see them in old prose:** 394/394, 405/405, 430/432, 432/432, 433/433 green; **1,863** atomic (live **2024**); 57% Mathlib; ~1912 obligations; “priors still mostly L1”; **E_con 21.79 W / 8.95%** (live **20.003601 vs 20.0 W, 0.018%**). Ledger: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Consciousness kill map: [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md).
 
 ---
 
@@ -105,4 +106,6 @@ If a critic finds a real fail: open an issue with the command, log, and commit S
 - Skeptic kit: `docs/SKEPTIC_REPLICATION_KIT.md`  
 - Claim boundaries: `docs/TOE_CLAIM_BOUNDARIES.md`  
 - Mathlib campaign: `docs/MATHLIB_REDERIVATION_CAMPAIGN.md`  
-- Reality OS status (paused for this monorepo): sibling `FSOT-Reality-OS` → `docs/STATUS_AND_NEXT.md`
+- Reality OS status (paused for this monorepo): sibling `FSOT-Reality-OS` → `docs/STATUS_AND_NEXT.md`  
+- Consciousness claim map: [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md)  
+- Picture → engine: [`CONCEPTS.md`](CONCEPTS.md) C11 / C13

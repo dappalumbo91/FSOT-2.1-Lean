@@ -1,44 +1,58 @@
-# FSOT Tech Blueprints Registry
+# FSOT tech index (names only)
 
-*Generated: 2026-07-16 · 24 blueprints cataloged*
+**Status:** unpublished working list. These are **titles of private designs**. Specs, wattages, parts lists, and build files are **not** in this repo. Each item will get its own simulation repo later. Until then this is a *to-do index*, not a product catalog.
 
-> Engineering vision documents from `I:/fsot tech`. **Philosophy retained; numerics verified before citing as measured.**
+**How to read a row:** the name is public; the *fold* is the FSOT 2.1 interface that design will score against when a simulation exists. Epistemic is `unpublished` unless a *separate* residual panel already exists for the *concept* (not the gadget).
 
-**Summary:** 8/24 mapped to measured or partial-measured FSOT panels.
+| Name | Fold (later score) | Notes |
+|------|--------------------|-------|
+| Quantum Vacuum Energy Harvester (QVEH) | quantum vacuum / Casimir | law_11 family |
+| Compact Integrated Quantum Vacuum EnerFrame | quantum vacuum | same fold |
+| Neo-Benben Household Energy Unit | vacuum / fuel-lab concept | unpublished |
+| Palumbo Perpetual Flux Generator | fuel-lab concept | unpublished |
+| Dual-Surface Quantum Fluid Barrier | domain coupling / valve | unpublished |
+| Fluidic Warp Drive | BH→WH valve (C2) | unpublished |
+| Warp Portal | BH→WH valve (C2) | unpublished |
+| Mini 10D-WRPS-D | BH→WH valve (C2) | unpublished |
+| Warp Drive (E10D-WD) | BH→WH valve (C2) | unpublished |
+| Warp disc (starate) | BH→WH valve (C2) | unpublished |
+| Electromagnetic Propulsion Ring | propulsion fold | unpublished |
+| Aetherion spacecraft | propulsion / atmosphere | unpublished |
+| Aetherion Colossus | propulsion / atmosphere | unpublished |
+| GXT-01 | observer / embodiment | unpublished |
+| GXT-01 Cryogenic Cooling | thermal / vacuum sink | unpublished |
+| Standalone electromagnetic field generator | magnetosphere analog | unpublished |
+| Mini-Oxoflash | atmosphere / ozone (law_26) | unpublished |
+| The Oxoflash | atmosphere / ozone (law_26) | unpublished |
+| OxoHive | atmosphere / ozone (law_26) | unpublished |
+| Mars Terraforming Blueprint | atmosphere / ozone (law_26) | unpublished |
+| NeutriFusion Reactor | fusion panel family | unpublished |
+| The Sun Pocket | fusion panel family | unpublished |
+| Seawater Plasma Fusion Reactor (SPFR) | fusion panel family | unpublished |
+| Double Helix Plasma | plasma fold | unpublished |
+| The Quantum Solar Panel | electrical-power fold | unpublished |
+| wood-PoofCone Thermo-Plasma Speaker | acoustics / POOF–SUCTION (C9) | unpublished |
+| FlexiThread | materials fold | unpublished |
+| Rubber-Aluminum Nanocomposite | materials fold | unpublished |
+| FSUFT-Vibranium Synthesizer | materials fold | unpublished |
+| GigaFlux Armor | materials fold | unpublished |
+| Memorphium | materials fold | unpublished |
+| MetaForge 3D Printer | manufacturing fold | unpublished |
+| Holoflex | observer / display | unpublished |
+| Quantum Fluid Tricorder | observer / living-FSOT | unpublished |
+| Quantum noise reducer | observer / noise as fluid | unpublished |
+| FSUFT 8.3 Verifier (F8V) | observer / measurement | unpublished |
+| NanoHLSD | observer / embodiment | unpublished |
+| FSUFT-U Plant Growth Stimulator | agroecology fold | unpublished |
+| The Blob | civic / metabolism analog | unpublished |
+| Planetary Gear Board | as-above-so-below (C12) | unpublished |
+| BlackHole WhiteHole Cycle | already scored | BlackHole_WhiteHole_Cycle_Live_Panel — concept residual, not a gadget spec |
+| Decoding the Philosopher's Stone (6.0) | interpretive philosophy | not a device |
 
-| Blueprint | FSOT panel | Tier | Epistemic |
-|-----------|------------|------|-----------|
-| BlackHole WhiteHole Cycle Blueprint | `BlackHole_WhiteHole_Cycle_Live_Panel` | verified_desktop | measured |
-| Blueprint for Rubber-Aluminum NanocompositeGrok | `Materials_Science_gap_fill` | tier55_materials | scaffold |
-| Compact Integrated Quantum Vacuum EnerFrame Harvestere - Gro | `Extension_Panel_TBD` | blueprint_audit_pending | interpretive |
-| Decoding the Philosopher's Stone through FSUFT-U 6.0 - Grok | `Philosophy_Corpus` | founding_interpretive | interpretive |
-| Double Helix Plasma | `Extension_Panel_TBD` | blueprint_audit_pending | interpretive |
-| Dual-Surface Quantum Fluid Barrier Generator- Grok | `Fuel_Lab_Live_Panel` | tier39/fuel | measured |
-| FlexiThread- Grok | `FPC_Temporal_Coupling` | tier50_fluidlink | measured |
-| Fluidic Warp Drive - Grok | `Warp_BH_WH_Portal` | tier39/warp_bh_wh | interpretive |
-| FSUFT-U Plant Growth Stimulator - Grok | `Agriculture_Agroecology_gap_fill` | tier_gap_fill | scaffold |
-| FSUFT-Vibranium SynthesizerGrok | `Materials_Science_gap_fill` | tier55_materials | scaffold |
-| GigaFlux Armor | `Materials_Science_gap_fill` | tier55_materials | scaffold |
-| Mini 10D-WRPS-D with FWD IntegrationGrok | `Warp_BH_WH_Portal` | tier39/warp_bh_wh | interpretive |
-| Mini-Oxoflash | `Fusion_Physics_Public_Panel` | tier71_fusion | measured_partial |
-| Neo-Benben Household Energy UnitComplete BlueprintX | `Fuel_Lab_Live_Panel` | tier39/fuel | measured |
-| Palumbo Perpetual Flux Generator | `Fuel_Lab_Live_Panel` | verified_desktop | interpretive |
-| Palumbo_Perpetual_Flux_Generator_Blueprint | `Fuel_Lab_Live_Panel` | tier39/fuel | measured |
-| Planetary Gear Board | `Robotics_Control_Systems` | verified_desktop | interpretive |
-| planetary_gear_board_blueprint | `Extension_Panel_TBD` | blueprint_audit_pending | interpretive |
-| Quantum Fluid Tricorder Grok | `Living_FSOT_Hardware_Panel` | living_fsot_qemu | scaffold |
-| Seawater Plasma Fusion Reactor (SPFR) | `Fusion_Physics_Public_Panel` | tier71_fusion | measured_partial |
-| The Blob Grok | `Extension_Panel_TBD` | blueprint_audit_pending | interpretive |
-| The Quantum Solar Panel Grok | `Electrical_Power_Systems` | tier39_electrical | measured |
-| Warp Portal Grok | `Warp_BH_WH_Portal` | tier39/warp_bh_wh | interpretive |
-| wood-PoofCone Thermo-Plasma Speaker | `Acoustics_gap_fill` | tier_gap_fill | scaffold |
+Machine copy: [`tech_blueprints_registry.json`](tech_blueprints_registry.json).
 
-## Re-verify a blueprint claim
+Regenerate names (does **not** ingest private files into public docs):
 
-```bash
+```powershell
 python scripts/build_tech_blueprints_registry.py
-# Per founding workflow:
-python scripts/reconcile_founding_corpus.py
 ```
-
-See [`FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`](../FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md).

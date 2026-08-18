@@ -99,7 +99,7 @@ Positive **S** tends toward **emergence** (structure forming). Negative **S** te
 
 - **Consciousness factor** — how efficiently the fluid converts geometry into aware coupling  
 - **Observer flag** — when true, the observer effect activates; when false, it does not  
-- **Brain energy (E_con)** — FSOT predicts ~21 W metabolic power vs ~20 W measured (Raichle & Gusnard)  
+- **Brain energy (E_con)** — live FSOT **20.003601 W vs 20.0 W (0.018%)** (Clarke & Sokoloff / AnAge). The old ~21.79 W / 8.95% draft is retired.
 
 ---
 

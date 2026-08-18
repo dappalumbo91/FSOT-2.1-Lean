@@ -6,7 +6,7 @@ If a picture and `vendor/fsot_compute.py` (pin **D1D38A**) disagree, **the engin
 
 | You are… | After this page |
 |----------|-----------------|
-| Regular reader | You should be able to say what a black hole, a white hole, and a bubble *do* in FSOT |
+| Regular reader | You should be able to say what a black hole, a white hole, a bubble, and the observer *do* in FSOT |
 | Scientist | You should know which file implements each picture |
 | Mathematician | You should know the closed forms and what is *not* a free parameter |
 
@@ -206,13 +206,28 @@ Matter is not created or destroyed. **Form** changes. \(S\), \(T_1\), \(T_3\) ar
 
 ## C11 — Self-observing function
 
-**Said:** The medium observes itself. Consciousness is not glued on after physics.
+**Said:** The medium observes itself. Consciousness is not glued on after physics. Awareness is a **gradient** (bacteria → plants → animals → humans), not a human-only switch. Looking is part of the physics.
 
 **Engine:** `observed` is a route slot. When it is on, \(T_1\) multiplies by \(\exp(C_{\mathrm{factor}} P_{\mathrm{var}})\cos(\delta\psi+P_{\mathrm{var}})\). \(C_{\mathrm{factor}}=C_{\mathrm{eff}}P_{\mathrm{new}}\) is seed-derived. Neuroscience, medical, and “look” paths use it. QC stays dark on purpose.
 
 This is **not** a claim that every philosophical debate about mind is closed. It is a claim that observation is a **physical coupling** in the same scalar.
 
-**Code:** quirk_mod / `observed` in `fsot_compute.py` · `docs/CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`
+**Live residual (quote this, not the 2025 draft):**
+
+| Layer | What it is | Live check |
+|-------|------------|------------|
+| Ontology | Consciousness is in the action | `consciousness_factor`, Lean `consciousness_raw_S_positive` |
+| Operational | Human brain metabolic floor | Homo sapiens `brain_power_w` **20.003601 vs 20.0 W (0.018%)** |
+| Species gradient | Published metabolic fractions, not invented watts | species multi-panel **269 / 0.020%** |
+| Longevity coupling | Same medium at life-span zoom | **890 / 0.022%** |
+| Scaffold | Microtubule information-flow | **21 / 0.009%** — not Orch-OR proof |
+| Interpretive | Death as 4D decoherence; afterlife; 150 Hz “driver” | labeled, not green-gated |
+
+The Cosmology Lab / aggregate figure **21.79 W vs ~20 W (8.95%)** is **retired draft math**. Do not put it in a headline.
+
+**Code:** quirk_mod / `observed` in `fsot_compute.py`  
+**Skeptic map:** [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md)  
+**Local stack:** [`CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md)
 
 ---
 
@@ -223,6 +238,32 @@ This is **not** a claim that every philosophical debate about mind is closed. It
 **Engine:** \(\kappa_{ij}\) (C4) is how tanks talk. A domain is a fold, not a separate substance. When a residual is bad, **change \(D_{\mathrm{eff}}\)** (MATH_KEY mismatch rule). Do not add a coefficient to make biology ignore cosmology.
 
 **Application recipe:** [`APPLY.md`](APPLY.md)
+
+---
+
+## C13 — Reverse / conjugate (the other face of the same mode)
+
+**Said:** Every emergence has a conjugate. Matter and antimatter are not two Lagrangians. Death is decoherence of the 4D body, not deletion of the information. A “reverse world” is the other phase of the same fluid, not a second universe you visit.
+
+**Engine:** On Particle (\(D_{\mathrm{eff}}=5\)):
+
+- Matter route: standard `domain_scalar` → \(S_m > 0\) (emergence)  
+- Conjugate route: \(\delta\psi \to \delta\psi+\pi\) → \(S_{\mathrm{conj}}\)  
+- CPT mass equality is structural: \(m=\bar m\) for one mode  
+- Cosmology \(S_{\mathrm{cosmo}}<0\) damps bulk antimatter while matter stays load-bearing  
+- Baryon asymmetry \(\eta=\mathrm{POOF}^{11}/(\pi\gamma)\) is the seed residual for “why so little antimatter”
+
+This is the same yin–yang as **C9**, written as a phase flip instead of a POOF/SUCTION pair.
+
+**What is measured vs interpretive:**
+
+| Layer | Status |
+|-------|--------|
+| Conjugate dual, CPT identity, \(\eta\), pair threshold \(2m\) | measured — [`MATTER_ANTIMATTER.md`](MATTER_ANTIMATTER.md) |
+| Death = decoherence, information persists | interpretive — no cemetery catalog |
+| Reverse-world travel / PFLT as a destination | interpretive — do not residual-gate a travelogue |
+
+**Code:** `vendor/fsot_matter_antimatter.py` · `data/matter_antimatter_benchmark.json`
 
 ---
 
@@ -241,7 +282,7 @@ DFG-in vs DFG-out, compact vs extended calmodulin, QC-dark vs QM-look: one appar
 
 ## How to add the next picture
 
-1. Write it here in plain words (C8, C9, …).
+1. Write it here in plain words (C14, …).
 2. Map each phrase to **one existing** engine object.
 3. If nothing maps, stop — do not invent a coefficient.
 4. Add a live check that can fail.

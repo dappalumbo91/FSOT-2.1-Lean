@@ -10,7 +10,7 @@ It was developed in close collaboration with the Python reference implementation
 
 **Domain navigator (find & reproduce by scientific problem):** `python scripts/query_fsot_domain_navigator.py --intent quantum_entanglement` — rebuild index with `python scripts/build_fsot_domain_navigator_db.py`.
 
-**Philosophy & founding reconciliation:** `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`, `docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`, `docs/FOUNDING_35_LAWS_AUDIT.md`. Founding archives: `I:\fsuft aasb`, `I:\fsot tech`. Pipeline (no LLM): `python scripts/build_founding_pipeline.py`.
+**Philosophy & founding reconciliation:** `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`, `docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`, `docs/FOUNDING_35_LAWS_AUDIT.md`. Tech titles only: `data/publication/TECH_BLUEPRINTS_REGISTRY.md` (no unpublished specs). Pipeline (no LLM): `python scripts/build_founding_pipeline.py`.
 
 ## Structure
 

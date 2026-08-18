@@ -6,7 +6,7 @@ purpose: >
 
 founding_roots:
   fsuft_aasb: "I:/fsuft aasb"
-  fsot_tech: "I:/fsot tech"
+  fsot_tech: "unpublished titles only — data/publication/TECH_BLUEPRINTS_REGISTRY.md"
   era: "2025-02 → 2025-07 (FSUFT-U 6.0–9.6)"
   verified_successor: "FSOT 2.1 Lean (I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full)"
 
@@ -31,7 +31,7 @@ concepts:
     fsot_21: "consciousness_factor, quirk_mod(observed), E_con, Tier 90/93 panels"
     lean: [FSOT.Formal.ConsciousnessExpansionSpinePriors, FSOT.Formal.ConsciousnessSoulBridgePriors]
     epistemic_tier: measured
-    note: "Nature of consciousness still definition-open externally; fundamental inside FSOT"
+    note: "Nature of consciousness still definition-open externally; fundamental inside FSOT. Live E_con Homo sapiens 20.003601 vs 20.0 W (0.018%) — docs/CONSCIOUSNESS_CLAIM_EVIDENCE.md. 21.79 W draft retired."
 
   - id: zero_free_parameters
     founding: "Aspirational in FSUFT 8.x axioms; not enforced in 9.x code"
@@ -91,12 +91,12 @@ concepts:
     epistemic_tier: scaffold
 
   - id: tech_blueprints
-    founding: "I:/fsot tech — warp drive, fusion, Aetherion, QVEH, Oxoflash, etc."
+    founding: "Private design titles (QVEH, Aetherion, Oxoflash, warp family, …) — names only"
     status: applied_exploration
-    fsot_21: "tier39 propulsion, fusion labs, warp_bh_wh_portal, fuel_lab panels"
+    fsot_21: "data/publication/TECH_BLUEPRINTS_REGISTRY.md (names-only index)"
     lean: [FSOT.Formal.SpacePropulsionSystemsPriors, FSOT.Formal.FuelLabCompoundPriors]
-    epistemic_tier: interpretive
-    note: "Engineering vision documents; verify numerics before citing as measured"
+    epistemic_tier: unpublished
+    note: "Titles public; specs stay out of this repo until each item has its own simulation repo"
 
 hallucination_patterns_to_strip:
   - "99.999999% accuracy"
@@ -122,5 +122,4 @@ key_founding_text_sources:
   - "I:/fsuft aasb/Fluid_Spacetime_Unification_Field_Theory As above So below.md"
   - "I:/fsuft aasb/fsuft-u 9.2/FSUFT_U_9_2_unified_field_theory.md"
   - "I:/fsuft aasb/fsuft-aasb.py"
-  - "I:/fsot tech/Palumbo_Perpetual_Flux_Generator_Blueprint.md"
-  - "I:/fsot tech/planetary_gear_board_blueprint.md"
+  - "data/publication/TECH_BLUEPRINTS_REGISTRY.md"
