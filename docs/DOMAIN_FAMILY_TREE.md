@@ -1,6 +1,6 @@
 # Domain family tree — folds, subdomains, between-scale gaps
 
-**Generated:** `2026-08-24T22:33:09.031531+00:00` · pin **D1D38A**  
+**Generated:** `2026-08-24T23:35:38.830813+00:00` · pin **D1D38A**  
 **Regenerate:** `python scripts/build_domain_family_tree.py`
 
 This is a **directory of slices**, not 400 theories. Reality is one 25-D fluid
@@ -8,7 +8,7 @@ This is a **directory of slices**, not 400 theories. Reality is one 25-D fluid
 An extension is a subdomain of a slice. A gap is a **missing interconnect**
 between slices (`κ_ij`), not a missing spring constant.
 
-Core folds **35** · extension subdomains **374** · atlas named rows **403**.
+Core folds **35** · extension subdomains **375** · atlas named rows **403**.
 Green-file count stays in [`CURRENT_STATUS.md`](CURRENT_STATUS.md) (do not mix ledgers:
 [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md)).
 
@@ -21,9 +21,10 @@ Green-file count stays in [`CURRENT_STATUS.md`](CURRENT_STATUS.md) (do not mix l
 | Apply without LSQ | [`APPLY.md`](APPLY.md) |
 | Hubble is not one number | C3 — structure + bubble, not a 60° RA silo |
 
-Extension columns attach by **nearest \(D_{\mathrm{eff}}\)**, not by Lean name. A seismology-adjacent Particle_Physics *extension* is a catalog depth, not a claim that PDG lives at D=18. Machine map: `data/domain_family_tree.json`.
-
 ## The tree (core folds by compactification depth)
+
+Extension columns attach by **nearest \(D_{\mathrm{eff}}\)**, not by Lean name.
+Machine map: `data/domain_family_tree.json`.
 
 ### D = 5–8 — micro / bond / observer-on
 
@@ -75,7 +76,7 @@ Atmosphere, ocean, rock, planets, astronomy.
 
 | Core fold | D_eff | observed | Extension subdomains (nearest D) |
 |-----------|------:|:--------:|----------------------------------|
-| **Atmospheric_Physics** | 17 | dark | Tectonics, Mathematics_Computational, Math_Generator_Rules_Eval, Environmental_Engineering, Anthropology, Math_Generator_Benchmark_Formula_Eval, Math_Generator_Airfoil_RMSE, Formula_Corpus_CNC, FSOT_Aggregate_Unified_DB, NOAA_Coastal_Tides, Paleoclimate, Law_Policy … +46 |
+| **Atmospheric_Physics** | 17 | dark | Tectonics, Mathematics_Computational, Math_Generator_Rules_Eval, Environmental_Engineering, Anthropology, Math_Generator_Benchmark_Formula_Eval, Math_Generator_Airfoil_RMSE, Formula_Corpus_CNC, FSOT_Aggregate_Unified_DB, NOAA_Coastal_Tides, Paleoclimate, Law_Policy … +47 |
 | **Oceanography** | 17 | dark | — |
 | **Seismology** | 18 | dark | Particle_Physics, Seismology, Orbital_Mechanics, Small_Body_Orbits, Seismology_Deep, Geology_Stratigraphy, OpenAlex_Citation_Graph, Paleontology, Pure_Mathematics, Supply_Chain_Logistics, Zero_Day_Risk_Evaluator, Formula_Branching_Fractal … +28 |
 | **Sociology** | 18 | yes | — |
@@ -106,6 +107,7 @@ QG, particle-astro, astrophysics, cosmology at D=25.
 | Observer / C_factor | Neuroscience, Quantum_Mechanics, Optics | filled | docs/CONSCIOUSNESS_CLAIM_EVIDENCE.md |
 | Matter–antimatter conjugate | Particle_Physics, High_Energy_Physics, Quantum_Mechanics | filled | docs/MATTER_ANTIMATTER_CLAIM_EVIDENCE.md |
 | Seed cross-ratios (engine §25) | Optics, Quantum_Optics, Materials_Science, Condensed_Matter, Astronomy, Planetary_Science | engine | vendor/fsot_compute.py §25 |
+| Between-scale interconnects (5 gaps) | Acoustics, Seismology, Fluid_Dynamics, Oceanography, Atmospheric_Physics, Thermodynamics, Cosmology, Nuclear_Physics, Particle_Physics, Quantum_Gravity | filled | docs/SCALE_INTERCONNECT_PHYSICS.md |
 
 ## Between-scale gaps (physical conditions still siloed)
 
@@ -115,13 +117,8 @@ SH0ES class 1% into 0.5%, inventing unpublished tech numerics.
 
 | Gap | Cores | Why it is one fluid | What “filled” looks like |
 |-----|-------|---------------------|--------------------------|
-| **Elastic wave across rock vs lab sound** | Seismology, Acoustics, Geophysics | Same T3 standing wave, different viscosity/D. Earthquakes are not a new law. | Public IRIS/USGS period or Q vs seed acoustic slope; no fitted Q. |
-| **Fluid tanks: lab / ocean / air** | Fluid_Dynamics, Oceanography, Atmospheric_Physics, Meteorology | One compressible medium at three zooms. Weather is not a different ontology from Navier–Stokes. | Named public buoy/NCEP scalar (period, density, scale height) routed through Fluid then atmosphere. |
-| **Fridge-cycle heat: thermo ↔ cosmology** | Thermodynamics, Cosmology, Nuclear_Physics | BH→WH is a heat/information pump. C2 is articulated; the thermo residual is still siloed. | Carnot/COP or vacuum-energy table scored as the same valve, not a new coefficient. |
-| **Nuclear orifice ↔ particle emergence** | Nuclear_Physics, Particle_Physics, High_Energy_Physics | POOF at two D_eff. Binding vs PDG masses should talk through κ_ij. | Existing ENDF/PDG panels plus one cross-ratio residual, no Yukawa add-on. |
-| **Quantum gravity compactification ↔ cosmology ceiling** | Quantum_Gravity, Cosmology, Particle_Astrophysics | D=22 dark vs D=25 observed=False. Chaos term vanishes only at 25. | Existing QG/cosmology scalars; do not invent extra dimensions to fit. |
-| **Developmental mechanics sits in life, not astrophysics** | Biology, Fluid_Dynamics, Neuroscience | Zebrafish predictive panel was labeled D=24 (astro). Engine already uses biological connective. Worst empirical pooled 0.358%. | Keep Zebrahub measured tracks; D_eff=12/15; do not LOOCV a new f. |
-| **Social tanks at catalog scale** | Economics, Sociology, Psychology | As-above-so-below says a market is not a different medium from a neural net. Economics pooled 0.129% is the largest social residual. | World Bank/public series already ingested; interconnect is κ(Economics,Neuroscience), not a fitted β. |
+| **Developmental mechanics (sibling-owned)** | Biology, Fluid_Dynamics, Neuroscience | Zebrafish 0.358% is inside 0.5%. Genetics repo is the live fold; migrate when that freeze lands. | Do not densify here. Wait for FSOT-Genetics product freeze, then hub residual. |
+| **Social tanks at catalog scale** | Economics, Sociology, Psychology | As-above-so-below says a market is not a different medium from a neural net. Economics pooled 0.129%. | κ(Economics,Neuroscience) on World Bank series already ingested; no fitted β. |
 
 ## Largest empirical pooled residuals (still green)
 

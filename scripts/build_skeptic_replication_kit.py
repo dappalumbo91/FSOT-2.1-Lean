@@ -167,6 +167,7 @@ Frozen files in `predictions/` are **not** rewritten after data lands. Score in 
 | Ladder mixture | `results/sh0es_ladder_chain_outcome.json` | **72.856 vs 73.04 (0.252%)** |
 | Cepheid PL | `results/cepheid_pl_interconnect_outcome.json` | **0.135%** GREEN, no fitted \(b\) |
 | Table 2 + \(cz/d\) | `results/sh0es_unpublished_objects_outcome.json` | Full NIR **0.141%**; \(cz/d\) **68.623** is local flow, not SH0ES |
+| Between-scale gaps | `results/between_scale_interconnect_outcome.json` | Five adjacent-fold fills, pooled **0.028%** |
 
 ```bash
 python scripts/build_sh0es_ladder_chain_benchmark.py

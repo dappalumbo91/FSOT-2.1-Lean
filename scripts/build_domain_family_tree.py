@@ -91,51 +91,39 @@ FILLED_INTERCONNECTS = [
         "note": "S_i/S_j identities in fsot_compute.predictions(). Not a residual panel.",
         "artifact": "vendor/fsot_compute.py §25",
     },
+    {
+        "name": "Between-scale interconnects (5 gaps)",
+        "cores": [
+            "Acoustics",
+            "Seismology",
+            "Fluid_Dynamics",
+            "Oceanography",
+            "Atmospheric_Physics",
+            "Thermodynamics",
+            "Cosmology",
+            "Nuclear_Physics",
+            "Particle_Physics",
+            "Quantum_Gravity",
+        ],
+        "status": "filled",
+        "note": "PREM+NDBC+ENDF+Carnot+QG ceiling. Pooled 0.028% GREEN. 546 tight scalars.",
+        "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md",
+    },
 ]
 
 # Physical-condition holes: adjacent or functionally coupled scales with no interconnect panel.
 SCALE_GAPS = [
     {
-        "name": "Elastic wave across rock vs lab sound",
-        "cores": ["Seismology", "Acoustics", "Geophysics"],
-        "why": "Same T3 standing wave, different viscosity/D. Earthquakes are not a new law.",
-        "fill_looks_like": "Public IRIS/USGS period or Q vs seed acoustic slope; no fitted Q.",
-    },
-    {
-        "name": "Fluid tanks: lab / ocean / air",
-        "cores": ["Fluid_Dynamics", "Oceanography", "Atmospheric_Physics", "Meteorology"],
-        "why": "One compressible medium at three zooms. Weather is not a different ontology from Navier–Stokes.",
-        "fill_looks_like": "Named public buoy/NCEP scalar (period, density, scale height) routed through Fluid then atmosphere.",
-    },
-    {
-        "name": "Fridge-cycle heat: thermo ↔ cosmology",
-        "cores": ["Thermodynamics", "Cosmology", "Nuclear_Physics"],
-        "why": "BH→WH is a heat/information pump. C2 is articulated; the thermo residual is still siloed.",
-        "fill_looks_like": "Carnot/COP or vacuum-energy table scored as the same valve, not a new coefficient.",
-    },
-    {
-        "name": "Nuclear orifice ↔ particle emergence",
-        "cores": ["Nuclear_Physics", "Particle_Physics", "High_Energy_Physics"],
-        "why": "POOF at two D_eff. Binding vs PDG masses should talk through κ_ij.",
-        "fill_looks_like": "Existing ENDF/PDG panels plus one cross-ratio residual, no Yukawa add-on.",
-    },
-    {
-        "name": "Quantum gravity compactification ↔ cosmology ceiling",
-        "cores": ["Quantum_Gravity", "Cosmology", "Particle_Astrophysics"],
-        "why": "D=22 dark vs D=25 observed=False. Chaos term vanishes only at 25.",
-        "fill_looks_like": "Existing QG/cosmology scalars; do not invent extra dimensions to fit.",
-    },
-    {
-        "name": "Developmental mechanics sits in life, not astrophysics",
+        "name": "Developmental mechanics (sibling-owned)",
         "cores": ["Biology", "Fluid_Dynamics", "Neuroscience"],
-        "why": "Zebrafish predictive panel was labeled D=24 (astro). Engine already uses biological connective. Worst empirical pooled 0.358%.",
-        "fill_looks_like": "Keep Zebrahub measured tracks; D_eff=12/15; do not LOOCV a new f.",
+        "why": "Zebrafish 0.358% is inside 0.5%. Genetics repo is the live fold; migrate when that freeze lands.",
+        "fill_looks_like": "Do not densify here. Wait for FSOT-Genetics product freeze, then hub residual.",
     },
     {
         "name": "Social tanks at catalog scale",
         "cores": ["Economics", "Sociology", "Psychology"],
-        "why": "As-above-so-below says a market is not a different medium from a neural net. Economics pooled 0.129% is the largest social residual.",
-        "fill_looks_like": "World Bank/public series already ingested; interconnect is κ(Economics,Neuroscience), not a fitted β.",
+        "why": "As-above-so-below says a market is not a different medium from a neural net. Economics pooled 0.129%.",
+        "fill_looks_like": "κ(Economics,Neuroscience) on World Bank series already ingested; no fitted β.",
     },
 ]
 
@@ -263,6 +251,9 @@ def main() -> int:
         "| Hubble is not one number | C3 — structure + bubble, not a 60° RA silo |",
         "",
         "## The tree (core folds by compactification depth)",
+        "",
+        "Extension columns attach by **nearest \(D_{\\mathrm{eff}}\)**, not by Lean name.",
+        "Machine map: `data/domain_family_tree.json`.",
         "",
     ]
     for lo, hi, title, said in BANDS:

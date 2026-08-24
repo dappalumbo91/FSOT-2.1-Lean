@@ -7,7 +7,7 @@ These are **different ledgers**. Using one number for all of them is the discrep
 
 | Name | Live value (2026-08-18) | What it counts | Source |
 |------|------------------------:|----------------|--------|
-| **Green residual benchmarks** | **472 / 472** | Benchmark **files** that pass ≤0.5% pooled median (`B_verified` 337 · `C_thin` 10 · `A_strong` 116) | `data/benchmark_margin_audit.json` |
+| **Green residual benchmarks** | **476 / 476** | Benchmark **files** that pass ≤0.5% pooled median (live tiers in CURRENT_STATUS) | `data/benchmark_margin_audit.json` |
 | **Median-of-medians** | **0.006006%** | Median of those domain medians | same + status snapshot |
 | **Scalar-record envelope** | **180,042** | Individual scalar rows inside those panels | status snapshot |
 | **Atlas CSV rows** | **~403–404** | Named rows in `data/publication/domain_atlas.csv` | atlas file (coverage map, not the green-file count) |

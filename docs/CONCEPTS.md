@@ -119,6 +119,7 @@ Cepheid PL internals (period, metals, optical + NIR Wesenheit, host moduli vs TR
 Then \(S\) relaxes. The wave is \(\Delta S\), not a new coefficient.
 
 **Code:** `docs/COMPLEX_SYSTEM_DERIVATION.md` · `vendor/fsot_complex_interaction.py`  
+**Live residual:** five adjacent-fold gaps (seismic-acoustic, fluid tanks, thermo-cosm, nuclear-particle, QG ceiling) pooled **0.028%** — [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md).  
 **Sibling:** FSOT-Quantum `fsot_quantum/quantum_bleed.py`
 
 ---

@@ -1,10 +1,10 @@
 # FSOT Skeptic Replication Kit
 
-*15-minute verification path · 2026-08-24 · commit `03c4e709f310`*
+*15-minute verification path · 2026-08-24 · commit `c775476f046a`*
 
 Run this if you want to **break FSOT fast** — not read 12,000 lines of narrative first.
 
-**Live authority:** pin **D1D38A** (match=True) · green **472/472** · multiprover overall_ok=True  
+**Live authority:** pin **D1D38A** (match=True) · green **476/476** · multiprover overall_ok=True  
 Full human guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) · audience map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) · math: [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md)
 
 Picture first (do not silo H₀): [`CONCEPTS.md`](CONCEPTS.md) C2–C3, C8, C10 · [`FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md)  
@@ -47,11 +47,11 @@ python scripts/audit_parameter_count.py
 | Check | Expected |
 |-------|----------|
 | Pin | **D1D38A** with `pin_match: true` in `docs/CURRENT_STATUS.md` |
-| Benchmark green | **472/472** fail 0 (`data/benchmark_margin_audit.json`) |
+| Benchmark green | **476/476** fail 0 (`data/benchmark_margin_audit.json`) |
 | Gate | pooled median ≤ **0.5%** |
 | Parameter audit | **ZERO_FREE** |
 | Label A / B (if toe report present) | A=True, B=True |
-| C_thin (records < 20) | **12** — mostly process/certificate spines, not missing physics |
+| C_thin (records < 20) | **15** — mostly process/certificate spines, not missing physics |
 
 Optional one-command publication bundle:
 
@@ -83,13 +83,13 @@ Open `data/publication/BENCHMARK_NEAR_MISS_LEDGER.md` — worst green domains pu
 | Domain | Records | Pooled % |
 |--------|--------:|---------:|
 | Zebrafish_Predictive_Validation_Panel | 20 | 0.3580 |
+| SH0ES_Ladder_Chain | 2 | 0.2121 |
+| SH0ES_Full_Sample | 7 | 0.1410 |
+| Cepheid_PL_Interconnect | 8 | 0.1350 |
 | Econometrics | 172 | 0.1292 |
 | Economics | 157 | 0.1292 |
 | Neuroeconomics | 65 | 0.1050 |
 | Maillard_Chemistry | 30 | 0.0944 |
-| Architecture_Building_Science | 43 | 0.0787 |
-| CODATA_Full_Table_Open | 38 | 0.0736 |
-| immunology_benchmark.json | 84 | 0.0612 |
 
 Push these with [`APPLY.md`](APPLY.md) (wrong `D_eff` first). Do **not** least-squares a new \(f\). Zebrafish was labeled D=24 (astro); connective engine is biological — metadata is now D=12.
 
@@ -103,6 +103,7 @@ Frozen files in `predictions/` are **not** rewritten after data lands. Score in 
 | Ladder mixture | `results/sh0es_ladder_chain_outcome.json` | **72.856 vs 73.04 (0.252%)** |
 | Cepheid PL | `results/cepheid_pl_interconnect_outcome.json` | **0.135%** GREEN, no fitted \(b\) |
 | Table 2 + \(cz/d\) | `results/sh0es_unpublished_objects_outcome.json` | Full NIR **0.141%**; \(cz/d\) **68.623** is local flow, not SH0ES |
+| Between-scale gaps | `results/between_scale_interconnect_outcome.json` | Five adjacent-fold fills, pooled **0.028%** |
 
 ```bash
 python scripts/build_sh0es_ladder_chain_benchmark.py

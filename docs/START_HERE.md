@@ -62,6 +62,7 @@ Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 | BH→WH / H₀ kill map | [`docs/BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md) | 25-tool bubble bleed; SH0ES stays 1% on the 2.5% band |
 | SH0ES ladder chain | [`docs/SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) | Chain **72.856 vs 73.04 (0.252%)**; class row stays 73.773; Table 2 full NIR + unpublished \(cz/d\) |
 | Domain family tree | [`docs/DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) | 35 cores by \(D_{\mathrm{eff}}\); where to expand between scales |
+| Between-scale interconnects | [`docs/SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | Five gaps filled, pooled **0.028%**; zebrafish/genetics still sibling |
 | Conjugate / antimatter | [`docs/MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md) | \(\eta\) 0.004%; CPT identities |
 | Genetics sibling freeze | [`docs/GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) | 0.13 Å vs AF 0.47 Å (2026-08-17); MDS retired |
 | How Damian views the model | [`docs/FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md) | River, seepage, BH–WH, as-above-so-below — picture, not products |

@@ -1,0 +1,24 @@
+{
+  "pin": "D1D38A",
+  "status": "GREEN",
+  "pooled_median_error_pct": 0.028136690312852153,
+  "n_scalar": 545,
+  "n_total": 564,
+  "channel_median_error_pct": {
+    "seismic_acoustic_vp_vs": 0.1893480018437519,
+    "seismic_acoustic_lithosphere_median": 0.06848486048287095,
+    "fluid_gamma_diatomic": 0.0,
+    "fluid_water_air_sound_ratio": 0.39284865529600077,
+    "fluid_scale_height": 0.0019006521809173354,
+    "fluid_tanks_pres": 0.02620375479862748,
+    "fluid_tanks_wtmp": 0.030172726067692633,
+    "fluid_tanks_wspd": 0.028136690312852153,
+    "thermo_cosmo_S_ratio": 0.289063776824316,
+    "thermo_carnot_thermodynamics": 0.0393487250805868,
+    "thermo_carnot_cosmology": 0.010049118924196729,
+    "nuclear_level_nuclear_fold": 0.046065471651446206,
+    "nuclear_level_particle_fold": 0.009504134401239747,
+    "qg_cosmo_S_ratio": 0.08751371776326439
+  },
+  "kill": "tight-scalar median > 0.5%, or anyone fits Q / \u03b3 / Poisson, or anyone treats deep-PREM mismatch as a license for a new coefficient"
+}

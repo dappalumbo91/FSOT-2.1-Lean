@@ -1,7 +1,7 @@
 # Hole audit — fill by the paradigm, not by siloed habit
 
 **Date:** 2026-08-18  
-**Fill pass:** registry 48/48 · green **472/472** · C_thin **12** (process/certificate spines; SH0ES class 1% stays on the 2.5% band on purpose) · family tree + skeptic expansion · consciousness / C13 / BH→WH claim maps · Genetics freeze **2026-08-17** (MDS retired) · cross-proof **overall_ok**  
+**Fill pass:** registry 48/48 · green **476 / 476** · between-scale interconnects **0.028%** · SH0ES class 1% stays on the 2.5% band on purpose · family tree + skeptic expansion · Genetics freeze **2026-08-17** (MDS retired) · cross-proof **overall_ok**  
 **Stance:** This is a real ToE *attempt* under frozen Label A/B. Holes are missing **interfaces, data, or articulation** — not invitations to add free parameters.
 
 Counts: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Apply protocol: [`APPLY.md`](APPLY.md).
@@ -12,7 +12,7 @@ Counts: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Apply protocol: [`APPLY.md
 
 | Item | Evidence |
 |------|----------|
-| Label A (A1–A6) | pin, routes, **472/472** green, multiprover `overall_ok`, falsification registry, skeptic kit |
+| Label A (A1–A6) | pin, routes, **476/476** green, multiprover `overall_ok`, falsification registry, skeptic kit |
 | Label B T1–T6 as *checklist* | `data/toe_gap_closure_report.json` PASS |
 | BH→WH bubble H₀ | `scripts/bubble_bleed_physics.py` + 25 tool rows + Quantum replay |
 | Yin–yang valves | POOF / SUCTION in T3; ontology A1–A2 |
@@ -58,7 +58,7 @@ Do these with **real measured data** and the mismatch rule (wrong \(D_{\mathrm{e
 | Genetics **no-map** path | Sibling: F01–F15 only; 3-D MDS **retired**. Hub quotes 2026-08-17 freeze | do not claim sequence-only AF-beating; do not grind MDS |
 | T3/T4 uniqueness theorems | Gap report already lists them as **open research** | do not pretend path-integral confinement is proved |
 | Chapter docs vs live 472 | Domain chapter INDEX still useful; any “405/394” line gets a freeze banner | CURRENT_STATUS wins |
-| **Between-scale interconnects** | **Mapped.** Family tree: 35 cores × extensions + 7 scale-gaps (seismic-acoustic, fluid tanks, thermo↔cosmology, nuclear↔particle, QG ceiling, zebrafish D_eff, social κ). [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) | treating the tree as a request for new free parameters |
+| **Between-scale interconnects** | **Filled (5 of 7).** PREM+NDBC+ENDF+Carnot+QG ceiling pooled **0.028% GREEN** (546 tight). Zebrafish/Genetics sibling-owned. Economics 0.129% still open. [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | pooled > 0.5%; fitted Q/γ/Poisson; stuffing deep-PREM |
 | **Zebrafish 0.358% (worst empirical pooled)** | **Interface label fixed.** Panel was D=24 (astro); connective engine is biological. Metadata now **D=12**. Residual still 0.358% (honest LOOCV, not stuffed). | LSQ a new \(f\) to hide 0.358% |
 
 ---
