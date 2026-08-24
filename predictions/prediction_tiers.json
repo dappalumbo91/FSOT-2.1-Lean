@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T13:50:32.356145+00:00",
+  "generated_at": "2026-08-24T23:45:42.761731+00:00",
   "version": "1.0",
   "authority_pin_prefix": "D1D38A",
   "purpose": "Separate high-weight contested survey predictions from atlas regression holds and scaffold/speculation so public communication stays honest.",
@@ -31,9 +31,9 @@
   },
   "summary": {
     "hand_by_tier": {
-      "A": 16,
+      "A": 17,
       "B": 0,
-      "C": 10,
+      "C": 17,
       "D": 22
     },
     "atlas_kind_counts": {
@@ -46,7 +46,7 @@
       "B/scalar_lock": 885,
       "B/sector_portfolio_hold": 9
     },
-    "tier_A_list_count": 169,
+    "tier_A_list_count": 170,
     "tier_B_note": "Tier B is the full residual_hold + scalar_lock + sector_portfolio surface in domain_prediction_atlas.json \u2014 not fully expanded here.",
     "atlas_summary": {
       "green_domains_covered": 472,
@@ -263,6 +263,17 @@
       "unit": "pooled_median_error_pct_ceiling",
       "discriminant": "within_green_gate_0_5pct",
       "future_survey": "JADES / COSMOS-3D / NEXUS public catalogs",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-057",
+      "source": "hand_prereg",
+      "name": "slow_fast_rupture_one_valve",
+      "domain": "Seismology",
+      "fsot_predicted": 1.0,
+      "unit": "same_valve_classifier",
+      "discriminant": "same_valve_not_two_laws",
+      "future_survey": "slow-slip moment-duration scaling literature",
       "tier": "A"
     },
     {
@@ -692,6 +703,17 @@
         "unit": "pooled_median_error_pct_ceiling",
         "discriminant": "within_green_gate_0_5pct",
         "future_survey": "JADES / COSMOS-3D / NEXUS public catalogs",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-057",
+        "source": "hand_prereg",
+        "name": "slow_fast_rupture_one_valve",
+        "domain": "Seismology",
+        "fsot_predicted": 1.0,
+        "unit": "same_valve_classifier",
+        "discriminant": "same_valve_not_two_laws",
+        "future_survey": "slow-slip moment-duration scaling literature",
         "tier": "A"
       },
       {
@@ -2068,6 +2090,83 @@
         "unit": "pooled_median_error_pct_watch",
         "discriminant": "within_green_gate_0_5pct",
         "future_survey": "open zebrafish developmental atlas refreshes",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-056",
+        "source": "hand_prereg",
+        "name": "usgs_comcat_gr_b_value",
+        "domain": "Seismology",
+        "fsot_predicted": 1.0,
+        "unit": "b_value",
+        "discriminant": "literature_band_b_value",
+        "future_survey": "USGS ComCat annual compilations; ISC-GEM",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-058",
+        "source": "hand_prereg",
+        "name": "volcanology_gvp_residual_hold",
+        "domain": "Volcanology_Panel",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "Smithsonian GVP + USGS volcano monitoring feeds",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-059",
+        "source": "hand_prereg",
+        "name": "swpc_kp_dst_classifier_hold",
+        "domain": "Space_Weather",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "NOAA SWPC Kp/Dst/F10.7 continuous",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-060",
+        "source": "hand_prereg",
+        "name": "ndbc_fluid_tanks_residual_hold",
+        "domain": "Fluid_Dynamics",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "NOAA NDBC realtime",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-061",
+        "source": "hand_prereg",
+        "name": "seismic_acoustic_prem_hold",
+        "domain": "Seismology",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "PREM/IASP91/AK135 community Earth models",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-062",
+        "source": "hand_prereg",
+        "name": "solar_quiet_storm_two_sectors",
+        "domain": "Space_Weather",
+        "fsot_predicted": 1.0,
+        "unit": "two_sector_classifier",
+        "discriminant": "quiet_and_storm_remain_distinct_sectors",
+        "future_survey": "NOAA SWPC F10.7 + Kp class; solar cycle 26 onset",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-063",
+        "source": "hand_prereg",
+        "name": "climate_station_and_marine_hold",
+        "domain": "Climate_Science",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "NOAA NCEI + NDBC continuous",
         "tier": "C"
       }
     ],

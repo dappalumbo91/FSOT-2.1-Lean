@@ -297,6 +297,104 @@ watches:
       panel_hint: Zebrafish_Predictive_Validation_Panel
     urgency: medium
 
+  - id: WATCH-USGS-ComCat-b
+    pred_ids: [PRED-056, PRED-061]
+    sector: seismology
+    title: "USGS ComCat / PREM seismic-acoustic class"
+    fsot_lock: 1.0
+    unit: b_value
+    baseline_default: "Gutenberg-Richter empirical b~1; siloed lab vs PREM"
+    kill_if: "named global MLE b outside 0.90–1.10 or lithosphere vp/vs channel >0.5%"
+    data_drop:
+      facility: USGS FDSN / Smithsonian-adjacent Earth models
+      product: ComCat annual + PREM/AK135
+      window: "continuous"
+      status_as_of: "2026-08-24"
+      urls:
+        - "https://earthquake.usgs.gov/fdsnws/event/1/"
+    check:
+      kind: open_science_panel
+      panel_hint: between_scale_interconnect_benchmark
+    urgency: medium
+
+  - id: WATCH-GVP-volcanology
+    pred_ids: [PRED-058]
+    sector: volcanology
+    title: "GVP/USGS volcanology catalog residual hold"
+    fsot_lock: 0.5
+    unit: pooled_median_error_pct_ceiling
+    baseline_default: "GVP/USGS geohazard heuristics"
+    kill_if: "volcanology_panel_benchmark exceeds 0.5%"
+    data_drop:
+      facility: Smithsonian GVP + USGS volcano
+      product: eruption / unrest catalogs
+      window: "continuous"
+      status_as_of: "2026-08-24"
+      urls:
+        - "https://volcano.si.edu/"
+    check:
+      kind: open_science_panel
+      panel_hint: volcanology_panel_benchmark
+    urgency: medium
+
+  - id: WATCH-SWPC-space-weather
+    pred_ids: [PRED-007, PRED-059, PRED-062]
+    sector: space_weather
+    title: "NOAA SWPC Kp/Dst/F10.7 quiet vs storm sectors"
+    fsot_lock: 0.5
+    unit: pooled_median_error_pct_ceiling
+    baseline_default: "Dst-Kp decoupled heuristic; one solar-activity number"
+    kill_if: "space_weather/geomagnetism panel >0.5% or quiet/storm sectors collapse"
+    data_drop:
+      facility: NOAA SWPC
+      product: Kp, Dst, F10.7 class products
+      window: "continuous"
+      status_as_of: "2026-08-24"
+      urls:
+        - "https://www.swpc.noaa.gov/"
+    check:
+      kind: open_science_panel
+      panel_hint: space_weather_benchmark
+    urgency: medium
+
+  - id: WATCH-NDBC-fluid-tanks
+    pred_ids: [PRED-054, PRED-060, PRED-063]
+    sector: weather_climate
+    title: "NDBC + NCEI fluid-tank residual hold"
+    fsot_lock: 0.5
+    unit: pooled_median_error_pct_ceiling
+    baseline_default: "per-buoy / per-station free-parameter climatology"
+    kill_if: "NDBC fluid_tanks channels or climate_observed exceed 0.5%"
+    data_drop:
+      facility: NOAA NDBC + NCEI
+      product: buoy realtime + station normals
+      window: "continuous"
+      status_as_of: "2026-08-24"
+      urls:
+        - "https://www.ndbc.noaa.gov/"
+        - "https://www.ncei.noaa.gov/"
+    check:
+      kind: open_science_panel
+      panel_hint: between_scale_interconnect_benchmark
+    urgency: medium
+
+  - id: WATCH-SSE-constitutive
+    pred_ids: [PRED-057]
+    sector: seismology
+    title: "Slow-slip vs fast-earthquake constitutive-law literature"
+    fsot_lock: 1.0
+    unit: same_valve_classifier
+    baseline_default: "two unrelated constitutive laws"
+    kill_if: "consensus that SSE and EQ require two laws with no viscosity continuum"
+    data_drop:
+      facility: literature (GJI / Nature / JGR)
+      product: SSE moment-duration scaling reviews
+      window: "rolling 2026-2028"
+      status_as_of: "2026-08-24"
+    check:
+      kind: literature_watch
+    urgency: low
+
   - id: WATCH-Fuel-lab-hold
     pred_ids: [PRED-034]
     sector: energy

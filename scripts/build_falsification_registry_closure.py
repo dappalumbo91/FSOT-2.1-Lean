@@ -24,6 +24,9 @@ DISCRIMINANT_KILL: dict[str, str] = {
     "within_green_gate_0_5pct": "panel pooled median exceeds 0.5% green gate",
     "pdg_update_outside_0_5pct": "PDG/combination update more than 0.5% from frozen central",
     "within_0_5pct_of_frozen_central": "refresh residual more than 0.5% from frozen central",
+    "literature_band_b_value": "USGS ComCat / ISC-GEM named global MLE b-value outside 0.90–1.10",
+    "same_valve_not_two_laws": "consensus that slow slip and fast earthquakes require two constitutive laws with no viscosity continuum",
+    "quiet_and_storm_remain_distinct_sectors": "quiet-time and storm-time SWPC classes collapse to one residual sector on refresh",
 }
 
 OUTCOME_LOG = ROOT / "results" / "outcomes" / "prediction_outcome_log.jsonl"

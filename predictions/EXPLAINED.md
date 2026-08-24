@@ -107,7 +107,7 @@ Tables: `reports/H0_MULTI_TOOL_PREDICTIONS.md`, `H0_SIGHTLINE_PREDICTIONS.md`, `
 
 ## 4. Beyond the sky: the multi-domain prediction atlas
 
-The model is not a cosmology hobby. The same seed engine is residual-gated on **472** green domain panels. The atlas turns that into **predictions**:
+The model is not a cosmology hobby. The same seed engine is residual-gated on **476** green domain panels. The atlas turns that into **predictions**. Earth-system class locks (weather / seismic / volcanic / solar) are the same grammar as H₀ — sectors, not dates: [`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md). Scientist-question map: [`reports/SCIENTIST_OPEN_QUESTIONS.md`](reports/SCIENTIST_OPEN_QUESTIONS.md).
 
 | Kind | Count (approx.) | What it means in English |
 |------|----------------:|--------------------------|
@@ -124,7 +124,7 @@ The model is not a cosmology hobby. The same seed engine is residual-gated on **
 | **bio_med** | Immunology, genomics, zebrafish, pharmacology, species panels |
 | **particle_nuclear** | Higgs, CKM, CERN open data, nuclear scales |
 | **materials_chem** | CRC, PubChem, fuels, acoustics |
-| **earth_climate** | Climate stations, geochemistry, cryosphere |
+| **earth_climate** | Climate stations, NDBC fluid tanks, USGS/PREM seismic-acoustic, GVP volcano, SWPC Kp/Dst |
 | **social_econ** | World Bank, finance-style panels |
 | **engineering_compute** | Hardware, code genome, trinary OS |
 | **astro_gw** | GWOSC, exoplanets, MPCORB, FRB class |

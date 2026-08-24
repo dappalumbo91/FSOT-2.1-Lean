@@ -1,6 +1,6 @@
 # Prediction tiers (A–D)
 
-*Generated 2026-08-06T13:50:32.356145+00:00 · pin D1D38A*
+*Generated 2026-08-24T23:45:42.761731+00:00 · pin D1D38A*
 
 Separate high-weight contested survey predictions from atlas regression holds and scaffold/speculation so public communication stays honest.
 
@@ -21,12 +21,12 @@ Separate high-weight contested survey predictions from atlas regression holds an
 
 | Hand PREDs by tier | Count |
 |--------------------|------:|
-| A | 16 |
+| A | 17 |
 | B | 0 |
-| C | 10 |
+| C | 17 |
 | D | 22 |
 
-| Tier A enumerated IDs (unique) | 169 |
+| Tier A enumerated IDs (unique) | 170 |
 
 ## Tier A — contested / public survey (headline)
 
@@ -48,6 +48,7 @@ Separate high-weight contested survey predictions from atlas regression holds an
 | `PRED-051` | hand_prereg | jwst_local_h0_bridge | 70.75 | km/s/Mpc |
 | `PRED-052` | hand_prereg | chime_frb_dm_excess_hold | 200.0 | pc_cm3_excess |
 | `PRED-053` | hand_prereg | jwst_highz_abundance_panel_hold | 0.5 | pooled_median_error_pct_ceiling |
+| `PRED-057` | hand_prereg | slow_fast_rupture_one_valve | 1.0 | same_valve_classifier |
 | `PRED-H0-planck_cmb_local` | h0_multi_tool | planck_cmb_local | 67.383958 | km/s/Mpc |
 | `PRED-H0-tdcosmo_conservative` | h0_multi_tool | tdcosmo_conservative | 67.436763 | km/s/Mpc |
 | `PRED-H0-planck_plus_bao_combo` | h0_multi_tool | planck_plus_bao_combo | 67.647983 | km/s/Mpc |
@@ -92,6 +93,13 @@ See `reports/H0_MULTI_TOOL_PREDICTIONS.md`, `H0_SIGHTLINE_PREDICTIONS.md`, `CCHP
 | `PRED-037` | BlackHole_WhiteHole_Cycle_Live_Panel | blackhole_whitehole_cycle_constant_drift |
 | `PRED-054` | Climate_Science | climate_ncei_holdout_ceiling |
 | `PRED-055` | Biology | zebrafish_atlas_residual_hold |
+| `PRED-056` | Seismology | usgs_comcat_gr_b_value |
+| `PRED-058` | Volcanology_Panel | volcanology_gvp_residual_hold |
+| `PRED-059` | Space_Weather | swpc_kp_dst_classifier_hold |
+| `PRED-060` | Fluid_Dynamics | ndbc_fluid_tanks_residual_hold |
+| `PRED-061` | Seismology | seismic_acoustic_prem_hold |
+| `PRED-062` | Space_Weather | solar_quiet_storm_two_sectors |
+| `PRED-063` | Climate_Science | climate_station_and_marine_hold |
 
 ## Tier D — scaffold / high-speculation (hand)
 

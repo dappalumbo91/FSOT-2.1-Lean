@@ -590,3 +590,114 @@ predictions:
     discriminant: "within_green_gate_0_5pct"
     future_survey: "open zebrafish developmental atlas refreshes"
     registered_at: "2026-08-06"
+
+  # ── Earth-system class predictions (not event dates) ───────────────────
+  - id: PRED-056
+    name: usgs_comcat_gr_b_value
+    domain: Seismology
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 1.0
+    unit: b_value
+    sota_baseline: 1.0
+    sota_label: "Gutenberg-Richter empirical global b~1"
+    discriminant: "literature_band_b_value"
+    future_survey: "USGS ComCat annual compilations; ISC-GEM"
+    note: >
+      b = φ − 1/φ = 1. Not a date or place for the next M≥7.
+      Kill if named global MLE b is outside 0.90–1.10.
+    registered_at: "2026-08-24"
+
+  - id: PRED-057
+    name: slow_fast_rupture_one_valve
+    domain: Seismology
+    fsot_formula_branch: term3.poof_factor
+    fsot_predicted: 1.0
+    unit: same_valve_classifier
+    sota_baseline: 0.0
+    sota_label: "two unrelated constitutive laws (SSE vs EQ)"
+    discriminant: "same_valve_not_two_laws"
+    future_survey: "slow-slip moment-duration scaling literature"
+    note: >
+      POOF = fast rupture, SUCTION = slow slip. Same T3 valve, viscosity continuum.
+      Kill if consensus requires two constitutive laws with no continuum.
+    registered_at: "2026-08-24"
+
+  - id: PRED-058
+    name: volcanology_gvp_residual_hold
+    domain: Volcanology_Panel
+    fsot_formula_branch: term3.poof_factor
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 8.0
+    sota_label: "GVP/USGS geohazard heuristics"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "Smithsonian GVP + USGS volcano monitoring feeds"
+    note: "Catalog residual hold. Not the date of the next VEI≥4 eruption."
+    registered_at: "2026-08-24"
+
+  - id: PRED-059
+    name: swpc_kp_dst_classifier_hold
+    domain: Space_Weather
+    fsot_formula_branch: term3.acoustic_inflow
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 7.0
+    sota_label: "Dst-Kp decoupled heuristic"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "NOAA SWPC Kp/Dst/F10.7 continuous"
+    note: "Pairs with PRED-007 ionospheric β. Not a named-AR flare ETA."
+    registered_at: "2026-08-24"
+
+  - id: PRED-060
+    name: ndbc_fluid_tanks_residual_hold
+    domain: Fluid_Dynamics
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 10.0
+    sota_label: "per-buoy free-parameter marine climatology"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "NOAA NDBC realtime"
+    note: "Same buoys on Fluid/Ocean/Air. Not S2S vs ECMWF and not El Niño onset date."
+    registered_at: "2026-08-24"
+
+  - id: PRED-061
+    name: seismic_acoustic_prem_hold
+    domain: Seismology
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 10.0
+    sota_label: "siloed lab acoustics vs PREM"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "PREM/IASP91/AK135 community Earth models"
+    note: "Lithosphere vp/vs channel. Deep PREM stays structural."
+    registered_at: "2026-08-24"
+
+  - id: PRED-062
+    name: solar_quiet_storm_two_sectors
+    domain: Space_Weather
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 1.0
+    unit: two_sector_classifier
+    sota_baseline: 0.0
+    sota_label: "one solar-activity number for the whole cycle"
+    discriminant: "quiet_and_storm_remain_distinct_sectors"
+    future_survey: "NOAA SWPC F10.7 + Kp class; solar cycle 26 onset"
+    note: >
+      Quiet vs storm are bubble-density sectors of one solar valve (Hubble grammar).
+      Do not relock Cycle 25 SSN after the peak.
+    registered_at: "2026-08-24"
+
+  - id: PRED-063
+    name: climate_station_and_marine_hold
+    domain: Climate_Science
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 5.0
+    sota_label: "per-station free-parameter climatology"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "NOAA NCEI + NDBC continuous"
+    note: "Pairs with PRED-054. Weather as three fluid tanks, not a week-3 NWP claim."
+    registered_at: "2026-08-24"

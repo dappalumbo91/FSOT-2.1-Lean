@@ -9,6 +9,8 @@
 |-----|-----|
 | **[`EXPLAINED.md`](EXPLAINED.md)** | Full explanation through the model (read this first) |
 | **[`NEXT_LAYERS.md`](NEXT_LAYERS.md)** | **What to watch now + which prediction layer to expand next** |
+| **[`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md)** | Weather / seismic / volcanic / solar class locks (not dates) |
+| **[`reports/SCIENTIST_OPEN_QUESTIONS.md`](reports/SCIENTIST_OPEN_QUESTIONS.md)** | Questions scientists argue about → solved / PRED / refused |
 | **[`reports/PREDICTION_TIERS.md`](reports/PREDICTION_TIERS.md)** | **Tier A–D split** (contested vs atlas vs scaffold) |
 | **[`public/ONE_PAGER.md`](public/ONE_PAGER.md)** | One-screen summary |
 | **[`public/X_READY.md`](public/X_READY.md)** | Copy-paste posts + threads for X |
@@ -60,6 +62,7 @@ python scripts/rank_nearest_data_drops.py
 python scripts/build_catalog_prediction_layer.py
 python scripts/build_higgs_prediction_layer.py
 python scripts/build_prediction_tiers.py
+python scripts/build_earth_system_prediction_layer.py
 python scripts/run_prediction_monitor.py
 ```
 

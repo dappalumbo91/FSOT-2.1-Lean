@@ -1,0 +1,195 @@
+{
+  "generated_at": "2026-08-24T23:45:42.584771+00:00",
+  "pin": "D1D38A",
+  "purpose": "Map questions scientists currently argue about onto FSOT folds: already gated, preregistered, refused, or still open.",
+  "status_counts": {
+    "honest_refusal": 3,
+    "preregistered": 8,
+    "solved_residual": 3,
+    "sibling_owned": 1,
+    "open_residual": 1
+  },
+  "questions": [
+    {
+      "id": "Q-EQ-01",
+      "field": "seismology",
+      "question": "Can we predict the time and place of the next large earthquake?",
+      "community": "No deterministic short-term prediction; probabilistic hazard (Gutenberg\u2013Richter, ETAS, CSE).",
+      "fsot": "We also refuse dates. Class statistics only (PRED-056). Individual M\u22657 is not a 0.5% object.",
+      "status": "honest_refusal",
+      "pred_ids": [
+        "PRED-056"
+      ]
+    },
+    {
+      "id": "Q-EQ-02",
+      "field": "seismology",
+      "question": "Why is the global b-value \u2248 1?",
+      "community": "Empirical Gutenberg\u2013Richter; regional 0.6\u20131.4; physical origin debated.",
+      "fsot": "b = \u03c6 \u2212 1/\u03c6 = 1. Acoustic counting in the crustal fluid. PRED-056 literature band 0.90\u20131.10.",
+      "status": "preregistered",
+      "pred_ids": [
+        "PRED-056"
+      ]
+    },
+    {
+      "id": "Q-EQ-03",
+      "field": "seismology",
+      "question": "Are slow slip and fast earthquakes two different physics?",
+      "community": "Moment-duration scaling linear vs cubic still contested; no unifying constitutive law.",
+      "fsot": "One T3 valve: POOF = fast, SUCTION = slow. Viscosity continuum. PRED-057.",
+      "status": "preregistered",
+      "pred_ids": [
+        "PRED-057"
+      ]
+    },
+    {
+      "id": "Q-EQ-04",
+      "field": "seismology",
+      "question": "Lab acoustics vs Earth PREM \u2014 same wave?",
+      "community": "Often siloed (ultrasonics vs global Earth models).",
+      "fsot": "Already residual-gated: mafic/lid vp/vs from \u03bd=D_atomic/25. PRED-061.",
+      "status": "solved_residual",
+      "pred_ids": [
+        "PRED-061"
+      ]
+    },
+    {
+      "id": "Q-VOLC-01",
+      "field": "volcanology",
+      "question": "Can we predict eruption onset dates?",
+      "community": "Unrest monitoring (InSAR, SO2, seismicity); no reliable date forecast.",
+      "fsot": "Refuse dates. GVP catalog residual hold PRED-058. Eruption = POOF orifice (C10).",
+      "status": "honest_refusal",
+      "pred_ids": [
+        "PRED-058"
+      ]
+    },
+    {
+      "id": "Q-SOL-01",
+      "field": "solar_space_weather",
+      "question": "What will the solar-cycle amplitude be (one SSN)?",
+      "community": "Cycle 25 panel said ~115 (Jul 2025); cycle ran stronger. Amplitude remains hard.",
+      "fsot": "Not one number \u2014 quiet vs storm sectors of one valve (same grammar as H0). PRED-062. Do not relock Cycle 25 SSN after the peak.",
+      "status": "preregistered",
+      "pred_ids": [
+        "PRED-062",
+        "PRED-059",
+        "PRED-007"
+      ]
+    },
+    {
+      "id": "Q-SOL-02",
+      "field": "solar_space_weather",
+      "question": "Can Kp/Dst be classified from first principles rather than decoupled heuristics?",
+      "community": "Empirical Kp/Dst thresholds; coupling to F10.7 / IMF is statistical.",
+      "fsot": "Already green classifiers + PRED-007 ionospheric \u03b2. Hold PRED-059 on SWPC refresh.",
+      "status": "solved_residual",
+      "pred_ids": [
+        "PRED-007",
+        "PRED-059"
+      ]
+    },
+    {
+      "id": "Q-WX-01",
+      "field": "weather_climate",
+      "question": "Is ENSO a separate oscillator from the rest of the fluid?",
+      "community": "Coupled ocean-atmosphere modes; S2S skill is the operational frontier.",
+      "fsot": "\u03ba(Oceanography, Atmospheric_Physics, Fluid_Dynamics). Residual holds PRED-060/063/054. Not an ECMWF-beating week-3 forecast.",
+      "status": "preregistered",
+      "pred_ids": [
+        "PRED-060",
+        "PRED-063",
+        "PRED-054"
+      ]
+    },
+    {
+      "id": "Q-WX-02",
+      "field": "weather_climate",
+      "question": "Can FSOT beat numerical weather prediction at S2S?",
+      "community": "S2S is an active WMO/NOAA program; skill drops after ~2 weeks.",
+      "fsot": "Not claimed. Class residuals on NDBC/NCEI only. Individual storm tracks are T1 look, not a new H0.",
+      "status": "honest_refusal",
+      "pred_ids": []
+    },
+    {
+      "id": "Q-H0-01",
+      "field": "cosmology",
+      "question": "Why do Planck and SH0ES disagree on H0?",
+      "community": "Hubble tension; new physics vs systematics.",
+      "fsot": "Solved as sectors of one fluid, not two cosmologies. Class vs chain vs local cz/d. PRED-001 family.",
+      "status": "solved_residual",
+      "pred_ids": [
+        "PRED-001",
+        "PRED-024",
+        "PRED-051"
+      ]
+    },
+    {
+      "id": "Q-S8-01",
+      "field": "cosmology",
+      "question": "S8 tension (Planck vs weak lensing)?",
+      "community": "Open. Euclid DR1 is the next independent drop.",
+      "fsot": "PRED-002 / PRED-042 lock 0.805 between Planck and DES. Watch Euclid Nov 2026.",
+      "status": "preregistered",
+      "pred_ids": [
+        "PRED-002",
+        "PRED-042"
+      ]
+    },
+    {
+      "id": "Q-LI-01",
+      "field": "cosmology_nuclear",
+      "question": "Cosmological lithium problem?",
+      "community": "BBN vs halo-star Li gap ~factor 3.",
+      "fsot": "PRED-005 factor 2.85. Nuclear orifice already dual-routed (PRED nuclear levels).",
+      "status": "preregistered",
+      "pred_ids": [
+        "PRED-005"
+      ]
+    },
+    {
+      "id": "Q-G2-01",
+      "field": "particle",
+      "question": "Muon g-2 excess?",
+      "community": "Experiment vs lattice SM still moving.",
+      "fsot": "PRED-004/050 same-sign lock. Do not retune after lattice papers.",
+      "status": "preregistered",
+      "pred_ids": [
+        "PRED-004",
+        "PRED-050"
+      ]
+    },
+    {
+      "id": "Q-HIGGS-01",
+      "field": "particle",
+      "question": "Is m_H an input or a prediction?",
+      "community": "SM input; measured ~125.25 GeV.",
+      "fsot": "PRED-049 hold vs next PDG combination at 0.5%.",
+      "status": "preregistered",
+      "pred_ids": [
+        "PRED-049"
+      ]
+    },
+    {
+      "id": "Q-GEN-01",
+      "field": "biology",
+      "question": "Can sequence-only models beat measured-map folds?",
+      "community": "AlphaFold-class interpolators; wet-lab structures still the product.",
+      "fsot": "Genetics sibling freeze 0.13 \u00c5 vs AF 0.47 \u00c5. Hub waits for that freeze to migrate. Zebrafish 0.358% stays inside 0.5%.",
+      "status": "sibling_owned",
+      "pred_ids": [
+        "PRED-055"
+      ]
+    },
+    {
+      "id": "Q-ECON-01",
+      "field": "economics",
+      "question": "Is a market a different medium from a neural net?",
+      "community": "Econophysics vs institutional economics.",
+      "fsot": "As-above-so-below. Economics pooled 0.129% still the largest social residual \u2014 next interconnect, not a fitted \u03b2.",
+      "status": "open_residual",
+      "pred_ids": []
+    }
+  ]
+}

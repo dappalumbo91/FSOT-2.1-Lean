@@ -10,7 +10,7 @@
 
 | Surface | Status (session snapshot) | What to do |
 |---------|---------------------------|------------|
-| Green gate | **472/472** · pin **D1D38A** | Baseline health — always re-check after engine work |
+| Green gate | **476/476** · pin **D1D38A** | Baseline health — always re-check after engine work |
 | Tier A hand PREDs | **16** core contested locks | Scoreboard for X + kills |
 | Multi-tool H₀ | **25** instruments | Compare any new H₀ paper *to its tool row only* |
 | SH0ES hosts | **22** sightline H₀ | New Cepheid/JWST host papers → per-host score |
@@ -24,7 +24,8 @@
 1. Any new **local H₀ / TRGB / SH0ES / CCHP** paper → multi-tool + host tables  
 2. **DESI / BAO / wₐ** papers → PRED-043 / PRED-046  
 3. **LVK / GWOSC** alerts or catalog notes → PRED-048 + GWTC panel  
-4. Full monitor: `python scripts/run_prediction_monitor.py --online`
+4. Full monitor: `python scripts/run_prediction_monitor.py --online`  
+5. Earth-system catalogs: USGS ComCat, GVP, SWPC, NDBC → [`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md)
 
 ---
 
@@ -63,7 +64,11 @@ You already hold huge residual-green catalogs. Turn **named observables** into P
 | **PubChem / CRC** | thousands | Property-class locks (logP, IE, bond energies) as open-chem Tier C |
 | **GWTC / GWOSC** | catalogs | Event-rate class + chirp-mass ladder residual holds (not only “panel ≤0.5%”) |
 | **NASA exoplanet archive** | ~2k | Radius–period–insolation architecture locks |
-| **Climate / NCEI** | ~17k | Station-class residual holds under continuous refresh |
+| **Climate / NCEI** | ~17k | Station-class residual holds under continuous refresh (PRED-054/063) |
+| **USGS / PREM** | catalogs | GR b-value class (PRED-056) + lithosphere vp/vs hold (PRED-061) — **not** event dates |
+| **GVP / volcano** | catalogs | Residual hold PRED-058 — **not** eruption dates |
+| **NOAA SWPC** | Kp/Dst/F10.7 | Quiet vs storm sectors PRED-059/062 + ionospheric PRED-007 |
+| **NDBC buoys** | 150+ | Fluid/Ocean/Air triple fold PRED-060 |
 
 **Why this layer:** public data, already in the monorepo, multi-resource, granular — matches “empirically backed against real data.”
 

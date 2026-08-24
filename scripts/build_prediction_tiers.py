@@ -49,6 +49,7 @@ TIER_A_HAND = {
     "PRED-051",  # JWST H0 bridge
     "PRED-052",  # FRB DM
     "PRED-053",  # JWST high-z hold
+    "PRED-057",  # slow vs fast rupture — literature constitutive-law fight
 }
 
 # Grounded lab / engineering (not scaffold fiction)
@@ -63,6 +64,13 @@ TIER_C_HAND = {
     "PRED-037",  # BH/WH cycle live panel
     "PRED-054",  # climate NCEI
     "PRED-055",  # zebrafish
+    "PRED-056",  # GR b-value
+    "PRED-058",  # volcanology GVP
+    "PRED-059",  # SWPC Kp/Dst
+    "PRED-060",  # NDBC fluid tanks
+    "PRED-061",  # PREM seismic-acoustic
+    "PRED-062",  # solar quiet/storm sectors
+    "PRED-063",  # climate+marine hold
 }
 
 # Everything else hand-curated with Scaffold in domain name → D

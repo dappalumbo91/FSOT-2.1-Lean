@@ -78,6 +78,7 @@ Frozen criteria: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 | [`CEPHEID_PL_PHYSICS.md`](CEPHEID_PL_PHYSICS.md) | Period / metals / Wesenheit as Acoustics–Chemistry–EM interconnects; Table 2 full sample + unpublished \(cz/d\) |
 | [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) | 35 core folds by \(D_{\mathrm{eff}}\) + extension subdomains + between-scale gaps |
 | [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | Five adjacent-fold residual fills (PREM, NDBC, ENDF, Carnot, QG ceiling) |
+| [`../predictions/reports/SCIENTIST_OPEN_QUESTIONS.md`](../predictions/reports/SCIENTIST_OPEN_QUESTIONS.md) | Open scientific questions mapped to folds / PREDs / honest refusals |
 | [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) | C6 product 0.13 Å vs AF 0.47 Å; MDS retired |
 | [`CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) | Local observer stack (QEMU; ESP32 deferred) |
 
