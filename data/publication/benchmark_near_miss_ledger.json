@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-16T15:52:54.806822+00:00",
-  "green_pass": 405,
+  "generated_at": "2026-08-24T22:33:09.181568+00:00",
+  "green_pass": 472,
   "worst_scalar": {
     "domain": "Phi_Morphogenetic_Scaling",
     "error_pct": 0.4989
@@ -32,6 +32,11 @@
       "pooled_median_error_pct": 0.027170334947435038
     },
     {
+      "domain": "Electrical_Power_Systems",
+      "max_scalar_error_pct": 0.489023002,
+      "pooled_median_error_pct": 0.000561846
+    },
+    {
       "domain": "quantum_materials_benchmark.json",
       "max_scalar_error_pct": 0.489023,
       "pooled_median_error_pct": 0.024318115591995593
@@ -52,6 +57,11 @@
       "pooled_median_error_pct": 0.05041956982053305
     },
     {
+      "domain": "TOE_GR_SM_Deep",
+      "max_scalar_error_pct": 0.4774294805097184,
+      "pooled_median_error_pct": 0.0047099996121108675
+    },
+    {
       "domain": "Creative_Arts_Math_Spine",
       "max_scalar_error_pct": 0.462279,
       "pooled_median_error_pct": 0.0
@@ -60,16 +70,6 @@
       "domain": "culinary_arts_benchmark.json",
       "max_scalar_error_pct": 0.462279,
       "pooled_median_error_pct": 0.047615187057821064
-    },
-    {
-      "domain": "Information_Theory_Public_Panel",
-      "max_scalar_error_pct": 0.462279,
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Music_Harmonics_Public_Panel",
-      "max_scalar_error_pct": 0.462279,
-      "pooled_median_error_pct": 0.0
     },
     {
       "domain": "Malware_Threat_Intelligence",

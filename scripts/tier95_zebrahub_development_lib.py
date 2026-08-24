@@ -582,7 +582,7 @@ def build_zebrafish_predictive_validation_panel() -> dict:
         domain="Zebrafish_Predictive_Validation_Panel",
         material_records=records,
         maps_to_lean=["biological", "genetics", "neural"],
-        d_eff=24,
+        d_eff=12,
         authority_path=authority,
         source=["tier95_predictive_crossval", "fsot_developmental_predict_lib"],
         channel_stats=[("fsot_intrinsic_prediction", "developmental_mechanics", errs or [0.0])],

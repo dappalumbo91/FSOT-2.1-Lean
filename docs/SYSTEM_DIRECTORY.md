@@ -48,6 +48,7 @@ substance / scale
 |----------|------|
 | Core 35 | `FSOT_SYSTEM_MATH_AUDIT.md` · navigator |
 | Extensions | `data/extension_domains_manifest.yaml` |
+| Family tree (cores + gaps) | [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) · `data/domain_family_tree.json` |
 | Atlas (named rows) | `data/publication/domain_atlas.csv` (~403) |
 | Green files | `data/benchmark_margin_audit.json` (**472/472**) |
 | Application protocol | [`APPLY.md`](APPLY.md) · MPCORB worked example `MPCORB_REFINEMENT_PROCESS.md` |

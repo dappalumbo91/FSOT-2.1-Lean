@@ -67,6 +67,18 @@ infall (BH)  →  POOF (orifice)  →  outflow (WH)
 
 **Said:** Expanding nebulae and sightlines sit in different **bubble-density sectors** of the same fluid. CMB, TRGB, and Cepheids are not measuring two universes. They couple to different BH→WH outgassing sectors.
 
+The readout is **multi-variant**. It depends on *what structure you are looking at* and *how hard the neighborhood is bubbling* — not on one Hubble constant, and not on a 60° RA bin.
+
+| Structure / coupling | What it sits in | Typical sector |
+|----------------------|-----------------|----------------|
+| Last-scattering acoustic ruler (CMB) | early, depleted outgas | \(\rho \sim -1\) → ~67.4 |
+| Old halo / disk TRGB | intermediate stellar population | \(\rho \sim 1.7\)–2 → ~70.4 |
+| Young disk Cepheids in star-forming SN hosts | inflated local bubble | \(\rho \sim 5\) → ~73.8 class |
+| Nearby \(cz/d\) of those same hosts | local flow / peculiar velocity, not Hubble-flow SNe | ~68.6 — **not** SH0ES H₀ |
+| Information-weighted ladder (anchors + hosts) | mixture of the above | **72.856 vs 73.04** |
+
+Frozen sightline JSON still carries a coarse RA-bin snapshot (do not rewrite those centrals). Live mixture physics is **class coupling + catalog-normalized local sky density** (`local_sky_density` in `bubble_bleed_physics.py`).
+
 \[
 H_0^{\mathrm{global}} \approx 68.4401,\qquad
 \varepsilon = H_0^{\mathrm{global}}/67.4 - 1 \approx 0.015431

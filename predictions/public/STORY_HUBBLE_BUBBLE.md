@@ -29,9 +29,10 @@ Spacetime is a **fluid**. Black holes and white holes are not only endpoints of 
 
 So:
 
-- A CMB acoustic ruler is not sitting in the same sector as a Cepheid in a star-forming disk on a particular sky sightline.  
-- A TRGB measurement in a halo is not the same sector again.  
-- **One fluid. Many legitimate readouts.**
+- A CMB acoustic ruler is not sitting in the same sector as a Cepheid in a star-forming disk. Those are different *structures* in different *bubbles*.  
+- A TRGB measurement in an old halo is not the same sector again.  
+- \(cz/d\) of a nearby calibrator galaxy is local flow (peculiar velocity), not the Hubble-flow SN rung that SH0ES publishes as 73.04.  
+- **One fluid. Many legitimate readouts.** The frozen host JSON still uses a coarse RA-bin snapshot; the live mixture is class coupling + local sky density around catalogs. Do not rewrite frozen centrals.
 
 FSOT freezes a prediction for **each tool** and, where we can, **each host galaxy**:
 

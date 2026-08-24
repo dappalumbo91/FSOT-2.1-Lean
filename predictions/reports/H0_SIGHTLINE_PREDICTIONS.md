@@ -2,6 +2,8 @@
 
 *Generated 2026-08-06T13:12:34.184993+00:00 · pin D1D38A · 22 hosts*
 
+**Physics banner (2026-08-18, do not rewrite frozen centrals):** this table is the Git-locked RA-bin *snapshot*. FSOT does **not** treat H₀ as one constant or as a 60° RA silo. Live mixture physics is **what structure you couple to** (CMB ruler / old TRGB / young disk Cepheid / local \(cz/d\)) plus **catalog-normalized local sky density** around nebulae/FRBs (`scripts/bubble_bleed_physics.py` `local_sky_density`). The published SH0ES 73.04 is the information-weighted **ladder chain** (72.856, 0.252%), not this snapshot’s host-mean and not the frozen class bin 73.773. Nearby \(cz/d\) is local flow (~68.6). See [`../../docs/CONCEPTS.md`](../../docs/CONCEPTS.md) C3.
+
 SH0ES host galaxies lie on different sightlines through the BH→WH information-flow / nebula-bleed field. Each host gets its own FSOT H0 prediction; the ladder average is a mixture, not a single fundamental constant.
 
 **Global FSOT H₀** = `68.44005682979427`  

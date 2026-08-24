@@ -70,11 +70,12 @@ Black hole → white hole dynamics push and bleed information through the fluid.
 
 So:
 
-- CMB rulers read a **depleted / early-sector** density  
-- Local Cepheid hosts sit in **inflated local-bubble** sectors  
-- TRGB ladders sit **in between**  
+- CMB rulers read a **depleted / early-sector** density (last-scattering sound horizon)  
+- Young disk Cepheids in star-forming SN hosts sit in **inflated local-bubble** sectors  
+- Old halo/disk TRGB ladders sit **in between**  
+- Nearby \(cz/d\) of those same galaxies is **local flow**, not the Hubble-flow SN rung  
 
-Same fluid. Different **bubble-density sector**. Different legitimate readout.
+Same fluid. Different **structure + neighborhood bubble**. Different legitimate readout. Not a 60° RA bin, and not one H₀.
 
 ### The formula (plain language)
 
@@ -93,7 +94,7 @@ Same fluid. Different **bubble-density sector**. Different legitimate readout.
 | Layer | Count | Idea |
 |-------|------:|------|
 | Multi-tool H₀ | **25** instruments/methods | Planck, ACT, SPT, DESI BAO, Carnegie TRGB, Freedman JWST, SH0ES, masers, TF, … |
-| SH0ES sightlines | **22** host galaxies | Each Cepheid host has its own RA-sector density → own H₀ |
+| SH0ES sightlines | **22** host galaxies | Frozen JSON is a 2026-08-06 RA-bin snapshot (do not rewrite centrals). Live physics: **structure coupling** (young disk / halo / CMB / local flow) + catalog-normalized bubble density, not a 60° RA silo. |
 | CCHP TRGB hosts | **22** galaxies | Intermediate ladder; milder density than Cepheids |
 | FSOT span (tools) | **~67.4 – 75.1** | Matches the real literature spread *without* inventing two universes |
 
