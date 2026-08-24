@@ -77,10 +77,10 @@ The Cepheid *family* is the outlier cluster (SH0ES HST 1.00%, SH0ES JWST 1.08%, 
 
 ## What we are still not solving for
 
-Filled this pass: ladder mixture, host-local sky, optical+NIR PL, host moduli vs Li+2024 TRGB, N4258 T1 crowding. Still labeled:
+Filled this pass: ladder mixture, host-local sky, optical+NIR PL, host moduli vs Li+2024 TRGB, N4258 T1 crowding, **full Table 2 NIR**, **unpublished \(cz/d\)**.
 
-1. **Per-host \(H_0=cz/d\)** — not published; peculiar velocities dominate. Host *moduli* are gated.
-2. **Full 42-host NIR sample** — this table is the R22 orig-19 release.
+1. **Per-host \(H_0=cz/d\)** — **filled as a diagnostic, not as SH0ES H₀.** Riess does not publish it. Seed-closed NIR \(\mu\) × Pantheon+ \(z_{\mathrm{CMB}}\) gives an inverse-variance ensemble **68.623 vs 73.04 (6.05%)** with \(\sigma_{\mathrm{PV}}=1.27\) km/s/Mpc (\(N=37\), **20/37** at \(cz<2000\) km/s labeled flow-noise). That gap is the object: calibrator \(cz/d\) is local flow, not the Hubble-flow SN rung. Do not 0.5%-gate individuals or stuff this to 73.04. [`../results/sh0es_unpublished_objects_outcome.json`](../results/sh0es_unpublished_objects_outcome.json)
+2. **Full 42-host NIR sample** — **filled.** Orig-19 `.dat` is the R16 subset. Table 2 is 3130 Cepheids in 37 SN hosts + N4258/M31/LMC/SMC. HST-only LMC − N4258 intercept **0.160%**; mean \(\mu\) vs Li+2024 TRGB **+0.004 mag**; vs Table 6 Cepheid-only \(\mu\) **−0.045 mag (0.141%)**. Ground+HST LMC mix is structural (unfitted \(\Delta zp\)). Panel [`../data/sh0es_full_sample_benchmark.json`](../data/sh0es_full_sample_benchmark.json) pooled **0.141% GREEN**.
 
 ---
 

@@ -22,6 +22,7 @@ This is **not** a request for peer-review social status. It is a map from **publ
 | “Consciousness is missing / 9% off” | Live Homo sapiens `brain_power_w` ≠ 20.003601 vs 20.0 (0.018%) | [`CONSCIOUSNESS_CLAIM_EVIDENCE.md`](CONSCIOUSNESS_CLAIM_EVIDENCE.md) |
 | “No antimatter / reverse world” | Matter_Antimatter pooled ≠ 0.0% or \(\eta\) leaves 6.14×10⁻¹⁰ | [`MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md) |
 | “No BH/WH / Hubble is two universes” | Cycle panel leaves 0.026% or Planck leaves 0.024% | [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md) |
+| “SH0ES leftover is unsolved / they hid per-host H0” | Ladder chain leaves 0.252%, or Table 2 tight median leaves 0.141%, or someone 0.5%-gates nearby \(cz/d\) | [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) · [`CEPHEID_PL_PHYSICS.md`](CEPHEID_PL_PHYSICS.md) |
 | “Genetics is 15 Å / they replaced AF from sequence” | Product freeze ≠ 0.13 Å vs 0.47 Å or MDS re-emitted as product | [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) |
 
 Insults without running these are **not a scientific rebuttal**.

@@ -2361,6 +2361,21 @@ extension_domains:
     build_script: scripts/build_cepheid_pl_benchmark.py
     benchmark_data: data/cepheid_pl_interconnect_benchmark.json
     note: Seed-closed PL slope + LMC/N4258 intercept; no fitted b or Z_W
+  SH0ES_Full_Sample:
+    tier: 51
+    D_eff: 20
+    delta_psi: 1.0
+    recent_hits: 1
+    observed: true
+    maps_to_lean:
+    - astronomy
+    - acoustics
+    - chemistry
+    - cosmological
+    build_script: scripts/build_sh0es_unpublished_objects.py
+    ingest_script: scripts/ingest_sh0es_full_sample.py
+    benchmark_data: data/sh0es_full_sample_benchmark.json
+    note: Riess+2022 Table 2 full 37-host NIR; cz/d ensemble is unpublished and PV-labeled, not a 0.5% H0 central
   Consciousness_Soul_Bridge:
     tier: 51
     D_eff: 17

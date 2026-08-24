@@ -1,34 +1,265 @@
 {
   "schema_version": "1.0",
-  "source": "NED approximate coordinates for SH0ES R22 optical hosts",
+  "source": "NED approximate coordinates for SH0ES R22 hosts; extra hosts from Table 2 Cepheid-field means",
   "updated": "2026-08-18",
   "hosts": [
-    {"name": "M31", "ra_deg": 10.685, "dec_deg": 41.269, "method": "SH0ES_Cepheid"},
-    {"name": "M101", "ra_deg": 210.802, "dec_deg": 54.349, "method": "SH0ES_Cepheid"},
-    {"name": "NGC4258", "ra_deg": 184.740, "dec_deg": 47.304, "method": "Maser_anchor"},
-    {"name": "LMC", "ra_deg": 80.894, "dec_deg": -69.756, "method": "TRGB_anchor"},
-    {"name": "NGC1015", "ra_deg": 39.548, "dec_deg": -1.320, "method": "SH0ES_Cepheid"},
-    {"name": "NGC1309", "ra_deg": 50.423, "dec_deg": -19.427, "method": "SH0ES_Cepheid"},
-    {"name": "NGC1365", "ra_deg": 53.401, "dec_deg": -36.140, "method": "SH0ES_Cepheid"},
-    {"name": "NGC1448", "ra_deg": 56.138, "dec_deg": -44.404, "method": "SH0ES_Cepheid"},
-    {"name": "NGC1559", "ra_deg": 67.767, "dec_deg": -62.787, "method": "SH0ES_Cepheid"},
-    {"name": "NGC2442", "ra_deg": 111.108, "dec_deg": -50.450, "method": "SH0ES_Cepheid"},
-    {"name": "NGC3021", "ra_deg": 147.371, "dec_deg": 33.542, "method": "SH0ES_Cepheid"},
-    {"name": "NGC3370", "ra_deg": 161.132, "dec_deg": 17.315, "method": "SH0ES_Cepheid"},
-    {"name": "NGC3447", "ra_deg": 163.361, "dec_deg": 16.779, "method": "SH0ES_Cepheid"},
-    {"name": "NGC3627", "ra_deg": 170.062, "dec_deg": 13.589, "method": "SH0ES_Cepheid"},
-    {"name": "NGC3972", "ra_deg": 178.938, "dec_deg": 55.320, "method": "SH0ES_Cepheid"},
-    {"name": "NGC3982", "ra_deg": 179.075, "dec_deg": 55.170, "method": "SH0ES_Cepheid"},
-    {"name": "NGC4038", "ra_deg": 180.466, "dec_deg": -18.865, "method": "SH0ES_Cepheid"},
-    {"name": "NGC4254", "ra_deg": 184.674, "dec_deg": 14.420, "method": "SH0ES_Cepheid"},
-    {"name": "NGC4321", "ra_deg": 185.899, "dec_deg": 15.783, "method": "SH0ES_Cepheid"},
-    {"name": "NGC4424", "ra_deg": 186.802, "dec_deg": 9.429, "method": "SH0ES_Cepheid"},
-    {"name": "NGC4536", "ra_deg": 188.614, "dec_deg": 2.069, "method": "SH0ES_Cepheid"},
-    {"name": "NGC4639", "ra_deg": 190.677, "dec_deg": 13.263, "method": "SH0ES_Cepheid"},
-    {"name": "NGC5584", "ra_deg": 215.289, "dec_deg": -0.194, "method": "SH0ES_Cepheid"},
-    {"name": "NGC5643", "ra_deg": 219.059, "dec_deg": -44.175, "method": "SH0ES_Cepheid"},
-    {"name": "NGC5917", "ra_deg": 232.288, "dec_deg": -60.458, "method": "SH0ES_Cepheid"},
-    {"name": "NGC7250", "ra_deg": 334.215, "dec_deg": 40.562, "method": "SH0ES_Cepheid"},
-    {"name": "UGC9391", "ra_deg": 175.628, "dec_deg": 33.195, "method": "SH0ES_Cepheid"}
+    {
+      "name": "M31",
+      "ra_deg": 10.685,
+      "dec_deg": 41.269,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "M101",
+      "ra_deg": 210.802,
+      "dec_deg": 54.349,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC4258",
+      "ra_deg": 184.74,
+      "dec_deg": 47.304,
+      "method": "Maser_anchor"
+    },
+    {
+      "name": "LMC",
+      "ra_deg": 80.894,
+      "dec_deg": -69.756,
+      "method": "TRGB_anchor"
+    },
+    {
+      "name": "NGC1015",
+      "ra_deg": 39.548,
+      "dec_deg": -1.32,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC1309",
+      "ra_deg": 50.423,
+      "dec_deg": -19.427,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC1365",
+      "ra_deg": 53.401,
+      "dec_deg": -36.14,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC1448",
+      "ra_deg": 56.138,
+      "dec_deg": -44.404,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC1559",
+      "ra_deg": 67.767,
+      "dec_deg": -62.787,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC2442",
+      "ra_deg": 111.108,
+      "dec_deg": -50.45,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC3021",
+      "ra_deg": 147.371,
+      "dec_deg": 33.542,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC3370",
+      "ra_deg": 161.132,
+      "dec_deg": 17.315,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC3447",
+      "ra_deg": 163.361,
+      "dec_deg": 16.779,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC3627",
+      "ra_deg": 170.062,
+      "dec_deg": 13.589,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC3972",
+      "ra_deg": 178.938,
+      "dec_deg": 55.32,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC3982",
+      "ra_deg": 179.075,
+      "dec_deg": 55.17,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC4038",
+      "ra_deg": 180.466,
+      "dec_deg": -18.865,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC4254",
+      "ra_deg": 184.674,
+      "dec_deg": 14.42,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC4321",
+      "ra_deg": 185.899,
+      "dec_deg": 15.783,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC4424",
+      "ra_deg": 186.802,
+      "dec_deg": 9.429,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC4536",
+      "ra_deg": 188.614,
+      "dec_deg": 2.069,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC4639",
+      "ra_deg": 190.677,
+      "dec_deg": 13.263,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC5584",
+      "ra_deg": 215.289,
+      "dec_deg": -0.194,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC5643",
+      "ra_deg": 219.059,
+      "dec_deg": -44.175,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC5917",
+      "ra_deg": 232.288,
+      "dec_deg": -60.458,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC7250",
+      "ra_deg": 334.215,
+      "dec_deg": 40.562,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "UGC9391",
+      "ra_deg": 175.628,
+      "dec_deg": 33.195,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "Mrk1337",
+      "ra_deg": 193.143,
+      "dec_deg": -9.778,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC691",
+      "ra_deg": 27.669,
+      "dec_deg": 21.757,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC105",
+      "ra_deg": 6.32,
+      "dec_deg": 12.883,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC2525",
+      "ra_deg": 121.409,
+      "dec_deg": -11.427,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC2608",
+      "ra_deg": 128.82,
+      "dec_deg": 28.471,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC3147",
+      "ra_deg": 154.231,
+      "dec_deg": 73.402,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC3254",
+      "ra_deg": 157.347,
+      "dec_deg": 29.502,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC3583",
+      "ra_deg": 168.547,
+      "dec_deg": 48.316,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC4680",
+      "ra_deg": 191.727,
+      "dec_deg": -11.635,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC5468",
+      "ra_deg": 211.649,
+      "dec_deg": -5.453,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC5728",
+      "ra_deg": 220.598,
+      "dec_deg": -17.258,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC5861",
+      "ra_deg": 227.313,
+      "dec_deg": -11.317,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC7329",
+      "ra_deg": 340.096,
+      "dec_deg": -66.477,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC7541",
+      "ra_deg": 348.677,
+      "dec_deg": 4.532,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC7678",
+      "ra_deg": 352.114,
+      "dec_deg": 22.425,
+      "method": "SH0ES_Cepheid"
+    },
+    {
+      "name": "NGC976",
+      "ra_deg": 38.5,
+      "dec_deg": 20.975,
+      "method": "SH0ES_Cepheid"
+    }
   ]
 }

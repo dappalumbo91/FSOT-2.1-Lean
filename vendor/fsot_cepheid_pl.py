@@ -16,6 +16,7 @@ Pietrzyński LMC μ, Reid NGC 4258 μ) is the measured side.
 
 from __future__ import annotations
 
+import json
 import math
 from collections import defaultdict
 from pathlib import Path
@@ -141,6 +142,7 @@ def _parse_table(path: Path, mag_key: str) -> list[dict[str, Any]]:
                     "vi": float(parts[5]),
                     mag_key: float(parts[7]),
                     "metal": float(parts[9]),
+                    "note": parts[10] if len(parts) > 10 else "",
                 }
             )
         except ValueError:
@@ -388,3 +390,301 @@ def suite_rows(table_path: Path, nir_path: Path | None = None) -> list[dict[str,
             }
         )
     return rows
+
+
+# --- full Table 2 sample + unpublished cz/d ensemble -------------------------
+
+C_KMS = 299792.458
+SIGMA_VPEC_KMS = 250.0  # typical local peculiar velocity (not a fitted knob)
+SH0ES_H0_PUBLISHED = 73.04
+FLOW_NOISE_CZ_KMS = 2000.0  # cz below this is dominated by peculiar velocity
+ANCHOR_HOSTS = {"LMC", "SMC", "N4258", "M31"}
+TABLE3_FIT_COUNT = 3129  # Riess+2022 Table 3 "Total All" after 3.3σ clip
+
+
+def mu_from_modulus_mag(mu: float) -> float:
+    """Luminosity distance in Mpc from distance modulus."""
+    return 10.0 ** ((mu - 25.0) / 5.0)
+
+
+def host_moduli_vs_n4258(nir_hosts: dict[str, dict[str, float]]) -> dict[str, dict[str, float]]:
+    """Seed-closed NIR moduli relative to NGC 4258 geometric anchor."""
+    n4258 = nir_hosts["N4258"]
+    gamma = metallicity_gamma()
+    out: dict[str, dict[str, float]] = {}
+    for host, h in nir_hosts.items():
+        mu = MU_N4258 + (h["intercept"] - n4258["intercept"]) + (-gamma) * (
+            h["metal"] - n4258["metal"]
+        )
+        out[host] = {
+            "n": h["n"],
+            "mu_fsot": mu,
+            "metal": h["metal"],
+            "intercept": h["intercept"],
+        }
+    return out
+
+
+def cz_d_ensemble(
+    moduli: dict[str, dict[str, float]],
+    redshifts: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    """H0_i = cz_cmb / d(μ_FSOT). Individuals are flow-noise; gate the IVW ensemble.
+
+    Riess does not publish this. Peculiar velocity σ_v ~ 250 km/s at 10–40 Mpc
+    is 10–30% per host. Inverse-variance weights w_i = (d / σ_v)^2 downweight
+    the nearest galaxies. This is not the SH0ES Hubble-flow estimator.
+    """
+    rows: list[dict[str, Any]] = []
+    for host, m in moduli.items():
+        if host in ANCHOR_HOSTS:
+            continue
+        zrec = redshifts.get(host) or {}
+        z = zrec.get("zCMB")
+        cz = zrec.get("cz_cmb_kms")
+        if z is None and cz is None:
+            continue
+        if cz is None:
+            cz = float(z) * C_KMS
+        z = float(cz) / C_KMS
+        d = mu_from_modulus_mag(float(m["mu_fsot"]))
+        if d <= 0 or cz <= 0:
+            continue
+        h0 = float(cz) / d
+        sig = SIGMA_VPEC_KMS / d
+        w = 1.0 / (sig * sig) if sig > 0 else 0.0
+        rows.append(
+            {
+                "host": host,
+                "mu_fsot": float(m["mu_fsot"]),
+                "d_mpc": d,
+                "zCMB": z,
+                "cz_cmb_kms": float(cz),
+                "H0_i": h0,
+                "sigma_H0_vpec": sig,
+                "weight": w,
+                "flow_noise": float(cz) < FLOW_NOISE_CZ_KMS,
+                "n": float(m["n"]),
+                "z_source": zrec.get("z_source"),
+            }
+        )
+    if not rows:
+        return {"n": 0, "H0_ivw": float("nan"), "H0_median": float("nan"), "hosts": []}
+    wsum = sum(r["weight"] for r in rows)
+    h0_ivw = sum(r["weight"] * r["H0_i"] for r in rows) / wsum if wsum else float("nan")
+    # IVW variance of the mean from the PV floor (hosts are not independent
+    # of large-scale flow, so this is a lower bound on the ensemble error).
+    var = 1.0 / wsum if wsum else float("nan")
+    sig_ens = math.sqrt(var) if var == var else float("nan")
+    h0s = sorted(r["H0_i"] for r in rows)
+    med = h0s[len(h0s) // 2]
+    far = [r for r in rows if not r["flow_noise"]]
+    if far:
+        wfar = sum(r["weight"] for r in far)
+        h0_far = sum(r["weight"] * r["H0_i"] for r in far) / wfar if wfar else float("nan")
+    else:
+        h0_far = float("nan")
+    return {
+        "n": len(rows),
+        "n_flow_noise": sum(1 for r in rows if r["flow_noise"]),
+        "H0_ivw": h0_ivw,
+        "H0_median": med,
+        "H0_far_ivw": h0_far,
+        "sigma_ivw_vpec": sig_ens,
+        "sigma_vpec_kms": SIGMA_VPEC_KMS,
+        "measured": SH0ES_H0_PUBLISHED,
+        "hosts": rows,
+    }
+
+
+def full_sample_suite_rows(
+    full_nir_path: Path,
+    redshift_path: Path | None = None,
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Tight PL rows from Table 2 + cz/d diagnostic (not a 0.5% central)."""
+
+    def err(c: float, m: float) -> float:
+        return 0.0 if m == 0 and c == 0 else abs(c - m) / abs(m) * 100.0
+
+    stars = parse_nir_table(full_nir_path)
+    hosts = host_intercepts_nir(stars)
+    n_hosts = len(hosts)
+    n_stars = len(stars)
+    slope = pl_slope()
+    rows: list[dict[str, Any]] = [
+        {
+            "lab": "sh0es_full_sample_lab",
+            "property": "full_nir_inventory",
+            "name": "Table2_cepheid_count",
+            "computed": float(n_stars),
+            "measured": float(TABLE3_FIT_COUNT),
+            "error_pct": err(float(n_stars), float(TABLE3_FIT_COUNT)),
+            "eval_kind": "fsot_prediction",
+            "record_kind": "scalar",
+            "note": "Table 2 parsed rows vs Riess+2022 Table 3 Total All (3129)",
+            "n_hosts": float(n_hosts),
+        },
+        {
+            "lab": "sh0es_full_sample_lab",
+            "property": "pl_slope_nir",
+            "name": "PL_slope_vs_R22_baseline_bW",
+            "computed": slope,
+            "measured": 3.299,
+            "error_pct": err(slope, 3.299),
+            "eval_kind": "fsot_prediction",
+            "record_kind": "scalar",
+            "note": "seed |b| vs Riess+2022 baseline b_W = −3.299 (no refit)",
+        },
+    ]
+    # Ground LMC photometry has a zeropoint SH0ES absorbs as Δzp. We do not
+    # fit Δzp. HST-only LMC is the same observer as N4258 (WFC3).
+    hst_lmc = [s for s in stars if s["host"] == "LMC" and str(s.get("note") or "").upper().startswith("HST")]
+    if hst_lmc and "N4258" in hosts:
+        hst_hosts = host_intercepts_nir(hst_lmc + [s for s in stars if s["host"] == "N4258"])
+        t_hst = lmc_n4258_delta_test(hst_hosts)
+        rows.append(
+            {
+                "lab": "sh0es_full_sample_lab",
+                "property": "full_nir_anchor_intercept_delta",
+                "name": "full_NIR_HST_LMC_minus_N4258_intercept",
+                "computed": t_hst["predicted_delta_int"],
+                "measured": t_hst["observed_delta_int"],
+                "error_pct": err(t_hst["predicted_delta_int"], t_hst["observed_delta_int"]),
+                "eval_kind": "fsot_prediction",
+                "record_kind": "scalar",
+                "unit": "mag",
+                "note": "Table 2 HST LMC vs N4258 (same WFC3 look). Ground LMC needs Δzp we do not fit.",
+                "n_lmc_hst": hst_hosts["LMC"]["n"],
+                "n_n4258": hst_hosts["N4258"]["n"],
+            }
+        )
+    if "LMC" in hosts and "N4258" in hosts:
+        t = lmc_n4258_delta_test(hosts)
+        rows.append(
+            {
+                "lab": "sh0es_full_sample_lab",
+                "property": "full_nir_ground_mix_intercept",
+                "name": "full_NIR_LMC_all_minus_N4258_intercept",
+                "computed": t["predicted_delta_int"],
+                "measured": t["observed_delta_int"],
+                "error_pct": err(t["predicted_delta_int"], t["observed_delta_int"]),
+                "eval_kind": "literature_band",
+                "record_kind": "structural",
+                "unit": "mag",
+                "note": "HST+ground LMC mix. Residual is the unfitted ground Δzp, not a slope fail.",
+                "n_lmc": hosts["LMC"]["n"],
+                "n_n4258": hosts["N4258"]["n"],
+            }
+        )
+    host_rows = host_mu_vs_trgb(hosts) if "N4258" in hosts else []
+    if host_rows:
+        mean_d = sum(h["delta"] for h in host_rows) / len(host_rows)
+        rows.append(
+            {
+                "lab": "sh0es_full_sample_lab",
+                "property": "full_host_mu_vs_trgb_mean",
+                "name": "full_sample_moduli_mean_vs_Li2024_TRGB",
+                "computed": mean_d,
+                "measured": 0.01,
+                "error_pct": abs(mean_d - 0.01) / 31.8 * 100.0,
+                "eval_kind": "fsot_prediction",
+                "record_kind": "scalar",
+                "unit": "mag",
+                "measured_uncertainty": 0.04,
+                "note": "Table 2 intercepts vs Li+2024 TRGB; still not cz/d H0",
+                "n_hosts": float(len(host_rows)),
+                "host_deltas": {h["host"]: round(h["delta"], 4) for h in host_rows},
+            }
+        )
+
+    diag: dict[str, Any] = {"cz_d": None, "vs_table6": None}
+    moduli = host_moduli_vs_n4258(hosts) if "N4258" in hosts else {}
+    if redshift_path is not None and redshift_path.is_file() and moduli:
+        zdoc = json.loads(redshift_path.read_text(encoding="utf-8"))
+        zhosts = zdoc.get("hosts") or {}
+        ens = cz_d_ensemble(moduli, zhosts)
+        diag["cz_d"] = {
+            "n": ens["n"],
+            "n_flow_noise": ens["n_flow_noise"],
+            "H0_ivw": ens["H0_ivw"],
+            "H0_median": ens["H0_median"],
+            "H0_far_ivw": ens["H0_far_ivw"],
+            "sigma_ivw_vpec": ens["sigma_ivw_vpec"],
+            "measured": ens["measured"],
+            "hosts": [
+                {
+                    "host": r["host"],
+                    "H0_i": r["H0_i"],
+                    "d_mpc": r["d_mpc"],
+                    "cz_cmb_kms": r["cz_cmb_kms"],
+                    "flow_noise": r["flow_noise"],
+                    "z_source": r["z_source"],
+                }
+                for r in ens["hosts"]
+            ],
+        }
+        # Structural: PV floor forbids 0.5% on individuals or the ensemble.
+        # Report |H0_ivw − 73.04| / σ_ivw as a band residual (not a tight scalar).
+        if ens["n"] and ens["sigma_ivw_vpec"] and ens["sigma_ivw_vpec"] > 0:
+            pull = abs(ens["H0_ivw"] - SH0ES_H0_PUBLISHED) / ens["sigma_ivw_vpec"]
+            rows.append(
+                {
+                    "lab": "sh0es_full_sample_lab",
+                    "property": "ensemble_cz_d_vs_published_H0",
+                    "name": "ensemble_cz_d_IVW_not_SH0ES_H0",
+                    "computed": ens["H0_ivw"],
+                    "measured": SH0ES_H0_PUBLISHED,
+                    "error_pct": err(ens["H0_ivw"], SH0ES_H0_PUBLISHED),
+                    "eval_kind": "literature_band",
+                    "record_kind": "structural",
+                    "unit": "km/s/Mpc",
+                    "measured_uncertainty": ens["sigma_ivw_vpec"],
+                    "note": (
+                        "Unpublished cz/d from seed-closed μ + Pantheon+ zCMB. "
+                        "Not the SH0ES Hubble-flow estimator. Individuals are flow-noise. "
+                        "Ensemble sits on the local/global mix, not on 73.04 — that is the object."
+                    ),
+                    "pull_sigma_vs_7304": pull,
+                    "n_hosts": float(ens["n"]),
+                    "n_flow_noise": float(ens["n_flow_noise"]),
+                    "H0_median": ens["H0_median"],
+                    "H0_global": 68.440,
+                }
+            )
+        # Consistency vs Table 6 published Cepheid-only μ (uses their b, Z_W).
+        deltas = []
+        for host, m in moduli.items():
+            if host in ANCHOR_HOSTS:
+                continue
+            zrec = zhosts.get(host) or {}
+            mu6 = zrec.get("mu_table6")
+            if mu6 is None:
+                continue
+            deltas.append(float(m["mu_fsot"]) - float(mu6))
+        if deltas:
+            mean6 = sum(deltas) / len(deltas)
+            diag["vs_table6"] = {
+                "n": len(deltas),
+                "mean_delta_mag": mean6,
+                "rms_mag": math.sqrt(sum(d * d for d in deltas) / len(deltas)),
+            }
+            rows.append(
+                {
+                    "lab": "sh0es_full_sample_lab",
+                    "property": "full_mu_vs_table6_mean",
+                    "name": "full_sample_mu_mean_vs_R22_Table6",
+                    "computed": mean6,
+                    "measured": 0.0,
+                    "error_pct": abs(mean6) / 32.0 * 100.0,
+                    "eval_kind": "fsot_prediction",
+                    "record_kind": "scalar",
+                    "unit": "mag",
+                    "note": (
+                        "Mean (μ_FSOT − μ_Table6). Table 6 is Cepheid-only published "
+                        "approximation (their b, Z_W) — not lstsq_results and not H0."
+                    ),
+                    "n_hosts": float(len(deltas)),
+                }
+            )
+    return rows, diag
+

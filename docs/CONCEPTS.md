@@ -87,7 +87,7 @@ There is **not** one H₀ every instrument is “supposed” to see. Kill a *too
 
 SH0ES **class bin** is still 73.773 (1.00%) — frozen tool row. The published 73.04 is the **information-weighted ladder chain** (anchor Cepheids + host Cepheids, local sky density): **72.856 vs 73.04 (0.252%)**. Do not retune ρ. [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) · panel `data/sh0es_ladder_chain_benchmark.json`.
 
-Cepheid PL internals (period, metals, optical + NIR Wesenheit, host moduli vs TRGB, T1 crowding) are Acoustics–Chemistry–EM interconnects, not a fitted candle: [`CEPHEID_PL_PHYSICS.md`](CEPHEID_PL_PHYSICS.md).
+Cepheid PL internals (period, metals, optical + NIR Wesenheit, host moduli vs TRGB, T1 crowding) are Acoustics–Chemistry–EM interconnects, not a fitted candle: [`CEPHEID_PL_PHYSICS.md`](CEPHEID_PL_PHYSICS.md). Full Table 2 sample (3130 Cepheids / 37 SN hosts) is the same seed; unpublished \(cz/d\) of those hosts is local flow (**68.623**), not the published 73.04 Hubble-flow rung.
 
 **Code:** `scripts/bubble_bleed_physics.py` · `predictions/h0_multi_tool_predictions.json`  
 **Skeptic map:** [`BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md)  

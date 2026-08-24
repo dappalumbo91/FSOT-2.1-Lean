@@ -77,6 +77,22 @@ Pooled median **0.135%**. GREEN. No fitted \(b\) or \(Z_W\).
 
 Per-host moduli (not \(cz/d\) H₀ — Riess does not publish host H₀): NIR intercept relative to NGC 4258 vs independent JWST TRGB (Li+2024 Table 2). Ensemble mean offset **+0.004 mag**. Individual scatter is the TRGB/Cepheid comparison, not a new expansion rate.
 
+### Full Table 2 sample (the other unpublished object)
+
+Orig-19 `.dat` is 19 SN hosts + anchors. Riess+2022 Table 2 is **3130** Cepheids in **37 SN hosts + N4258/M31/LMC/SMC** (42 SNe in 37 hosts). Same seed slope / \(\gamma\) / \(R_H\). Refresh: `python scripts/build_sh0es_unpublished_objects.py`. Outcome: [`../results/sh0es_unpublished_objects_outcome.json`](../results/sh0es_unpublished_objects_outcome.json).
+
+| Claim | FSOT | Literature | err |
+|-------|-----:|-----------:|----:|
+| Table 2 count | 3130 | Table 3 total 3129 | **0.032%** |
+| \|slope\| vs baseline \(b_W\) | 3.29185 | −3.299 | **0.217%** |
+| HST LMC − N4258 intercept | −10.878 | −10.895 | **0.160%** |
+| Host \(\mu\) mean vs Li+2024 | +0.004 mag | 0.01±0.04 | **0.018%** |
+| Host \(\mu\) mean vs Table 6 | −0.045 mag | 0 | **0.141%** |
+
+Pooled tight median **0.141% GREEN**. Ground+HST LMC mix is **structural** (SH0ES \(\Delta zp\); we do not fit it).
+
+Unpublished \(H_0=cz/d\): Pantheon+ \(z_{\mathrm{CMB}}\) × seed-closed \(\mu\). Inverse-variance ensemble **68.623** vs published 73.04 (**6.05%**), \(\sigma_{\mathrm{PV}}=1.27\), **20/37** hosts at \(cz<2000\) km/s labeled flow-noise. This is **not** the SH0ES Hubble-flow estimator. Gating it to 73.04 at 0.5% would be stuffing. Individuals are peculiar-velocity noise.
+
 ## Literature-band (not 0.5% on the central)
 
 | Claim | FSOT | Literature | note |
@@ -91,7 +107,7 @@ These two are used *inside* the intercept test. Gating them as 0.5% centrals wou
 ## What this is not
 
 - Not a claim we re-derived the κ mechanism in Lean.
-- Not per-host \(H_0=cz/d\) (peculiar velocities dominate at 10–40 Mpc). The open “per-host H₀” item is filled as **per-host distance modulus** vs TRGB.
+- Not per-host \(H_0=cz/d\) as a 0.5% cosmology (peculiar velocities dominate at 10–40 Mpc). That unpublished object is now computed: ensemble **68.623 vs 73.04**, individuals labeled flow-noise. Host *moduli* vs TRGB remain the tight gate.
 - Not a license to fit \(b\) to the R22 rows.
 
 Kill: tight-scalar median > 0.5%, or anyone least-squares a slope/γ on `data/sh0es_r22_optical_cepheids.dat`.

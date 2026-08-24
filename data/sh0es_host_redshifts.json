@@ -1,0 +1,1187 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-08-24",
+  "source": [
+    "Riess+2022 Table 2 (PantheonPlusSH0ES/DataRelease table2.tex)",
+    "Pantheon+ zCMB (Scolnic+2022 / Carr+2022) for IS_CALIBRATOR=1",
+    "NED Velocity + Planck 2018 CMB dipole as host-level cross-check",
+    "Riess+2022 Table 6 \u03bc_host (Cepheid-only published approximation)"
+  ],
+  "policy": [
+    "Riess does not publish per-host H0=cz/d",
+    "do not treat lstsq_results.txt fitted mu as measured",
+    "do not retune sector_h0_seed.json rho",
+    "individual nearby H0_i is peculiar-velocity noise"
+  ],
+  "c_kms": 299792.458,
+  "sigma_vpec_kms": 250.0,
+  "n_table2_hosts": 41,
+  "n_table2_cepheids": 3130,
+  "n_sn_hosts": 37,
+  "n_sn_hosts_with_z": 37,
+  "hosts": {
+    "M101": {
+      "host": "M101",
+      "n_cepheids": 259,
+      "is_anchor": false,
+      "ned_name": "M101",
+      "mu_table6": 29.178,
+      "sns": [
+        "2011fe"
+      ],
+      "zCMB": 0.00122,
+      "zHEL": 0.00082,
+      "cz_cmb_kms": 365.74679876,
+      "pantheon_cids": [
+        "2011fe"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 210.81035065637062,
+      "dec_deg": 54.3442935907336,
+      "ned": {
+        "ned_name": "MESSIER 101",
+        "v_helio_kms": 241.0,
+        "z_ned": 0.000804,
+        "ra_deg": 210.80227,
+        "dec_deg": 54.34895
+      },
+      "ned_v_cmb_kms": 361.50831428356634,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "M1337": {
+      "host": "M1337",
+      "n_cepheids": 15,
+      "is_anchor": false,
+      "ned_name": "Mrk 1337",
+      "mu_table6": 32.92,
+      "sns": [
+        "2006D"
+      ],
+      "zCMB": 0.00966,
+      "zHEL": 0.00853,
+      "cz_cmb_kms": 2895.9951442799997,
+      "pantheon_cids": [
+        "2006D"
+      ],
+      "pantheon_n_lc": 3,
+      "ra_deg": 193.14306800000003,
+      "dec_deg": -9.778375333333335,
+      "ned": {
+        "ned_name": "MRK 1337",
+        "v_helio_kms": 2556.0,
+        "z_ned": 0.008526,
+        "ra_deg": 193.14458,
+        "dec_deg": -9.77662
+      },
+      "ned_v_cmb_kms": 2890.929782778125,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N0691": {
+      "host": "N0691",
+      "n_cepheids": 28,
+      "is_anchor": false,
+      "ned_name": "NGC 691",
+      "mu_table6": 32.83,
+      "sns": [
+        "2005W"
+      ],
+      "zCMB": 0.00861,
+      "zHEL": 0.00954,
+      "cz_cmb_kms": 2581.2130633799998,
+      "pantheon_cids": [
+        "2005W"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 27.669384642857136,
+      "dec_deg": 21.7574825,
+      "ned": {
+        "ned_name": "NGC 0691",
+        "v_helio_kms": 2666.0,
+        "z_ned": 0.008893,
+        "ra_deg": 27.6738,
+        "dec_deg": 21.76004
+      },
+      "ned_v_cmb_kms": 2387.2195916791607,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N1015": {
+      "host": "N1015",
+      "n_cepheids": 18,
+      "is_anchor": false,
+      "ned_name": "NGC 1015",
+      "mu_table6": 32.563,
+      "sns": [
+        "2009ig"
+      ],
+      "zCMB": 0.00801,
+      "zHEL": 0.00877,
+      "cz_cmb_kms": 2401.3375885799996,
+      "pantheon_cids": [
+        "2009ig"
+      ],
+      "pantheon_n_lc": 3,
+      "ra_deg": 39.54741166666666,
+      "dec_deg": -1.3194288888888888,
+      "ned": {
+        "ned_name": "NGC 1015",
+        "v_helio_kms": 2629.0,
+        "z_ned": 0.008769,
+        "ra_deg": 39.54812,
+        "dec_deg": -1.31876
+      },
+      "ned_v_cmb_kms": 2402.092877022813,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N105A": {
+      "host": "N105A",
+      "n_cepheids": 8,
+      "is_anchor": false,
+      "ned_name": "NGC 105",
+      "mu_table6": 34.527,
+      "sns": [
+        "2007A"
+      ],
+      "zCMB": 0.01646,
+      "zHEL": 0.01765,
+      "cz_cmb_kms": 4934.583858679999,
+      "pantheon_cids": [
+        "2007A"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 6.32037375,
+      "dec_deg": 12.88292,
+      "ned": {
+        "ned_name": "NGC 0105",
+        "v_helio_kms": 5290.0,
+        "z_ned": 0.017646,
+        "ra_deg": 6.31975,
+        "dec_deg": 12.8838
+      },
+      "ned_v_cmb_kms": 4940.417144154014,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N1309": {
+      "host": "N1309",
+      "n_cepheids": 53,
+      "is_anchor": false,
+      "ned_name": "NGC 1309",
+      "mu_table6": 32.541,
+      "sns": [
+        "2002fk"
+      ],
+      "zCMB": 0.00668,
+      "zHEL": 0.00719,
+      "cz_cmb_kms": 2002.6136194399999,
+      "pantheon_cids": [
+        "2002fk"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 50.52811075471697,
+      "dec_deg": -15.40282830188679,
+      "ned": {
+        "ned_name": "NGC 1309",
+        "v_helio_kms": 2136.0,
+        "z_ned": 0.007125,
+        "ra_deg": 50.52749,
+        "dec_deg": -15.39997
+      },
+      "ned_v_cmb_kms": 1984.9178125556969,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N1365": {
+      "host": "N1365",
+      "n_cepheids": 46,
+      "is_anchor": false,
+      "ned_name": "NGC 1365",
+      "mu_table6": 31.378,
+      "sns": [
+        "2012fr"
+      ],
+      "zCMB": 0.0046,
+      "zHEL": 0.00492,
+      "cz_cmb_kms": 1379.0453068,
+      "pantheon_cids": [
+        "2012fr"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 53.44265913043477,
+      "dec_deg": -36.15431086956523,
+      "ned": {
+        "ned_name": "NGC 1365",
+        "v_helio_kms": 1636.0,
+        "z_ned": 0.005457,
+        "ra_deg": 53.4017,
+        "dec_deg": -36.14019
+      },
+      "ned_v_cmb_kms": 1539.2376969603138,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N1448": {
+      "host": "N1448",
+      "n_cepheids": 73,
+      "is_anchor": false,
+      "ned_name": "NGC 1448",
+      "mu_table6": 31.287,
+      "sns": [
+        "2001el",
+        "2021pit"
+      ],
+      "zCMB": 0.003615,
+      "zHEL": 0.003835,
+      "cz_cmb_kms": 1083.74973567,
+      "pantheon_cids": [
+        "2001el",
+        "2021pit"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 56.16569178082191,
+      "dec_deg": -44.615735342465776,
+      "ned": {
+        "ned_name": "NGC 1448",
+        "v_helio_kms": 1168.0,
+        "z_ned": 0.003896,
+        "ra_deg": 56.13284,
+        "dec_deg": -44.64476
+      },
+      "ned_v_cmb_kms": 1102.3846342878035,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N1559": {
+      "host": "N1559",
+      "n_cepheids": 110,
+      "is_anchor": false,
+      "ned_name": "NGC 1559",
+      "mu_table6": 31.491,
+      "sns": [
+        "2005df"
+      ],
+      "zCMB": 0.00435,
+      "zHEL": 0.00435,
+      "cz_cmb_kms": 1304.0971922999997,
+      "pantheon_cids": [
+        "2005df"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 64.40584036363639,
+      "dec_deg": -62.78717972727273,
+      "ned": {
+        "ned_name": "NGC 1559",
+        "v_helio_kms": 1304.0,
+        "z_ned": 0.00435,
+        "ra_deg": 64.39896,
+        "dec_deg": -62.7837
+      },
+      "ned_v_cmb_kms": 1304.4452410757965,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N2442": {
+      "host": "N2442",
+      "n_cepheids": 177,
+      "is_anchor": false,
+      "ned_name": "NGC 2442",
+      "mu_table6": 31.45,
+      "sns": [
+        "2015F"
+      ],
+      "zCMB": 0.00515,
+      "zHEL": 0.00476,
+      "cz_cmb_kms": 1543.9311587,
+      "pantheon_cids": [
+        "2015F"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 114.07417192090396,
+      "dec_deg": -69.5529763276836,
+      "ned": {
+        "ned_name": "NGC 2442",
+        "v_helio_kms": 1466.0,
+        "z_ned": 0.00489,
+        "ra_deg": 114.0992,
+        "dec_deg": -69.53081
+      },
+      "ned_v_cmb_kms": 1583.6334293935233,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N2525": {
+      "host": "N2525",
+      "n_cepheids": 73,
+      "is_anchor": false,
+      "ned_name": "NGC 2525",
+      "mu_table6": 32.051,
+      "sns": [
+        "2018gv"
+      ],
+      "zCMB": 0.00596,
+      "zHEL": 0.0051,
+      "cz_cmb_kms": 1786.76304968,
+      "pantheon_cids": [
+        "2018gv"
+      ],
+      "pantheon_n_lc": 3,
+      "ra_deg": 121.40878684931506,
+      "dec_deg": -11.427055479452058,
+      "ned": {
+        "ned_name": "NGC 2525",
+        "v_helio_kms": 1580.0,
+        "z_ned": 0.00527,
+        "ra_deg": 121.40854,
+        "dec_deg": -11.427
+      },
+      "ned_v_cmb_kms": 1836.3971886727002,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N2608": {
+      "host": "N2608",
+      "n_cepheids": 22,
+      "is_anchor": false,
+      "ned_name": "NGC 2608",
+      "mu_table6": 32.612,
+      "sns": [
+        "2001bg"
+      ],
+      "zCMB": 0.00796,
+      "zHEL": 0.00719,
+      "cz_cmb_kms": 2386.34796568,
+      "pantheon_cids": [
+        "2001bg"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 128.82001545454543,
+      "dec_deg": 28.47111818181818,
+      "ned": {
+        "ned_name": "NGC 2608",
+        "v_helio_kms": 2156.0,
+        "z_ned": 0.007192,
+        "ra_deg": 128.82221,
+        "dec_deg": 28.47341
+      },
+      "ned_v_cmb_kms": 2385.044374596254,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N3021": {
+      "host": "N3021",
+      "n_cepheids": 16,
+      "is_anchor": false,
+      "ned_name": "NGC 3021",
+      "mu_table6": 32.464,
+      "sns": [
+        "1995al"
+      ],
+      "zCMB": 0.00592,
+      "zHEL": 0.00504,
+      "cz_cmb_kms": 1774.77135136,
+      "pantheon_cids": [
+        "1995al"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 147.736360625,
+      "dec_deg": 33.554974375,
+      "ned": {
+        "ned_name": "NGC 3021",
+        "v_helio_kms": 1535.0,
+        "z_ned": 0.00512,
+        "ra_deg": 147.73826,
+        "dec_deg": 33.55368
+      },
+      "ned_v_cmb_kms": 1797.3980616620204,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N3147": {
+      "host": "N3147",
+      "n_cepheids": 27,
+      "is_anchor": false,
+      "ned_name": "NGC 3147",
+      "mu_table6": 33.014,
+      "sns": [
+        "2021hpr",
+        "1997bq",
+        "2008fv"
+      ],
+      "zCMB": 0.009755,
+      "zHEL": 0.009555000000000001,
+      "cz_cmb_kms": 2924.4754277899997,
+      "pantheon_cids": [
+        "1997bq",
+        "2021hpr"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 154.23064333333335,
+      "dec_deg": 73.40244407407407,
+      "ned": {
+        "ned_name": "NGC 3147",
+        "v_helio_kms": 2802.0,
+        "z_ned": 0.009346,
+        "ra_deg": 154.22354,
+        "dec_deg": 73.40075
+      },
+      "ned_v_cmb_kms": 2861.0326150352316,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N3254": {
+      "host": "N3254",
+      "n_cepheids": 48,
+      "is_anchor": false,
+      "ned_name": "NGC 3254",
+      "mu_table6": 32.331,
+      "sns": [
+        "2019np"
+      ],
+      "zCMB": 0.0055,
+      "zHEL": 0.00452,
+      "cz_cmb_kms": 1648.858519,
+      "pantheon_cids": [
+        "2019np"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 157.34659437499994,
+      "dec_deg": 29.501807499999995,
+      "ned": {
+        "ned_name": "NGC 3254",
+        "v_helio_kms": 1355.0,
+        "z_ned": 0.00452,
+        "ra_deg": 157.33316,
+        "dec_deg": 29.49184
+      },
+      "ned_v_cmb_kms": 1647.0656683140605,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N3370": {
+      "host": "N3370",
+      "n_cepheids": 73,
+      "is_anchor": false,
+      "ned_name": "NGC 3370",
+      "mu_table6": 32.12,
+      "sns": [
+        "1994ae"
+      ],
+      "zCMB": 0.0054,
+      "zHEL": 0.00427,
+      "cz_cmb_kms": 1618.8792732,
+      "pantheon_cids": [
+        "1994ae"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 161.76749616438357,
+      "dec_deg": 17.27510534246575,
+      "ned": {
+        "ned_name": "NGC 3370",
+        "v_helio_kms": 1281.0,
+        "z_ned": 0.004273,
+        "ra_deg": 161.76701,
+        "dec_deg": 17.27378
+      },
+      "ned_v_cmb_kms": 1616.2386790387334,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N3447": {
+      "host": "N3447",
+      "n_cepheids": 101,
+      "is_anchor": false,
+      "ned_name": "NGC 3447",
+      "mu_table6": 31.936,
+      "sns": [
+        "2012ht"
+      ],
+      "zCMB": 0.00465,
+      "zHEL": 0.00352,
+      "cz_cmb_kms": 1394.0349296999998,
+      "pantheon_cids": [
+        "2012ht"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 163.36060425742568,
+      "dec_deg": 16.77930871287128,
+      "ned": {
+        "ned_name": "NGC 3447",
+        "v_helio_kms": 1067.0,
+        "z_ned": 0.003559,
+        "ra_deg": 163.3495,
+        "dec_deg": 16.77211
+      },
+      "ned_v_cmb_kms": 1404.4593841284081,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N3583": {
+      "host": "N3583",
+      "n_cepheids": 54,
+      "is_anchor": false,
+      "ned_name": "NGC 3583",
+      "mu_table6": 32.804,
+      "sns": [
+        "ASASSN-15so",
+        "15so"
+      ],
+      "zCMB": 0.00773,
+      "zHEL": 0.00702,
+      "cz_cmb_kms": 2317.3957003399996,
+      "pantheon_cids": [
+        "ASASSN-15so"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 168.54670462962963,
+      "dec_deg": 48.315985,
+      "ned": {
+        "ned_name": "NGC 3583",
+        "v_helio_kms": 2105.0,
+        "z_ned": 0.007022,
+        "ra_deg": 168.54553,
+        "dec_deg": 48.31857
+      },
+      "ned_v_cmb_kms": 2315.7145856604548,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N3972": {
+      "host": "N3972",
+      "n_cepheids": 52,
+      "is_anchor": false,
+      "ned_name": "NGC 3972",
+      "mu_table6": 31.635,
+      "sns": [
+        "2011by"
+      ],
+      "zCMB": 0.00369,
+      "zHEL": 0.00313,
+      "cz_cmb_kms": 1106.23417002,
+      "pantheon_cids": [
+        "2011by"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 178.93789269230763,
+      "dec_deg": 55.31983692307693,
+      "ned": {
+        "ned_name": "NGC 3972",
+        "v_helio_kms": 842.0,
+        "z_ned": 0.00281,
+        "ra_deg": 178.93803,
+        "dec_deg": 55.32059
+      },
+      "ned_v_cmb_kms": 1010.2737247748285,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N3982": {
+      "host": "N3982",
+      "n_cepheids": 27,
+      "is_anchor": false,
+      "ned_name": "NGC 3982",
+      "mu_table6": 31.722,
+      "sns": [
+        "1998aq"
+      ],
+      "zCMB": 0.00369,
+      "zHEL": 0.00313,
+      "cz_cmb_kms": 1106.23417002,
+      "pantheon_cids": [
+        "1998aq"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 179.11541518518516,
+      "dec_deg": 55.12314222222223,
+      "ned": {
+        "ned_name": "NGC 3982",
+        "v_helio_kms": 1122.0,
+        "z_ned": 0.003741,
+        "ra_deg": 179.1172,
+        "dec_deg": 55.12521
+      },
+      "ned_v_cmb_kms": 1291.2438389235465,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N4038": {
+      "host": "N4038",
+      "n_cepheids": 29,
+      "is_anchor": false,
+      "ned_name": "NGC 4038",
+      "mu_table6": 31.603,
+      "sns": [
+        "2007sr"
+      ],
+      "zCMB": 0.0066,
+      "zHEL": 0.00542,
+      "cz_cmb_kms": 1978.6302228,
+      "pantheon_cids": [
+        "2007sr"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 180.4694344827586,
+      "dec_deg": -18.869898965517244,
+      "ned": {
+        "ned_name": "NGC 4038",
+        "v_helio_kms": 1624.0,
+        "z_ned": 0.005417,
+        "ra_deg": 180.47089,
+        "dec_deg": -18.86762
+      },
+      "ned_v_cmb_kms": 1977.568666555094,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N4424": {
+      "host": "N4424",
+      "n_cepheids": 9,
+      "is_anchor": false,
+      "ned_name": "NGC 4424",
+      "mu_table6": 30.844,
+      "sns": [
+        "2012cg"
+      ],
+      "zCMB": 0.00256,
+      "zHEL": 0.00144,
+      "cz_cmb_kms": 767.4686924800001,
+      "pantheon_cids": [
+        "2012cg"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 186.7996788888889,
+      "dec_deg": 9.420124444444445,
+      "ned": {
+        "ned_name": "NGC 4424",
+        "v_helio_kms": 437.0,
+        "z_ned": 0.001458,
+        "ra_deg": 186.79824,
+        "dec_deg": 9.42054
+      },
+      "ned_v_cmb_kms": 772.4013586928759,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N4536": {
+      "host": "N4536",
+      "n_cepheids": 40,
+      "is_anchor": false,
+      "ned_name": "NGC 4536",
+      "mu_table6": 30.835,
+      "sns": [
+        "1981B"
+      ],
+      "zCMB": 0.0035,
+      "zHEL": 0.00236,
+      "cz_cmb_kms": 1049.2736029999999,
+      "pantheon_cids": [
+        "1981B"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 188.58081249999995,
+      "dec_deg": 2.20675075,
+      "ned": {
+        "ned_name": "NGC 4536",
+        "v_helio_kms": 1808.0,
+        "z_ned": 0.006031,
+        "ra_deg": 188.61278,
+        "dec_deg": 2.18824
+      },
+      "ned_v_cmb_kms": 2149.5163386809713,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N4639": {
+      "host": "N4639",
+      "n_cepheids": 30,
+      "is_anchor": false,
+      "ned_name": "NGC 4639",
+      "mu_table6": 31.812,
+      "sns": [
+        "1990N"
+      ],
+      "zCMB": 0.00462,
+      "zHEL": 0.00355,
+      "cz_cmb_kms": 1385.04115596,
+      "pantheon_cids": [
+        "1990N"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 190.71981633333334,
+      "dec_deg": 13.258909333333332,
+      "ned": {
+        "ned_name": "NGC 4639",
+        "v_helio_kms": 1025.0,
+        "z_ned": 0.003419,
+        "ra_deg": 190.71828,
+        "dec_deg": 13.25744
+      },
+      "ned_v_cmb_kms": 1344.2066346754207,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N4680": {
+      "host": "N4680",
+      "n_cepheids": 11,
+      "is_anchor": false,
+      "ned_name": "NGC 4680",
+      "mu_table6": 32.599,
+      "sns": [
+        "1997bp"
+      ],
+      "zCMB": 0.00931,
+      "zHEL": 0.00817,
+      "cz_cmb_kms": 2791.06778398,
+      "pantheon_cids": [
+        "1997bp"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 191.72698727272729,
+      "dec_deg": -11.63516,
+      "ned": {
+        "ned_name": "NGC 4680",
+        "v_helio_kms": 2492.0,
+        "z_ned": 0.008312,
+        "ra_deg": 191.72801,
+        "dec_deg": -11.63692
+      },
+      "ned_v_cmb_kms": 2830.0382877330208,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N5468": {
+      "host": "N5468",
+      "n_cepheids": 93,
+      "is_anchor": false,
+      "ned_name": "NGC 5468",
+      "mu_table6": 33.116,
+      "sns": [
+        "1999cp",
+        "2002cr"
+      ],
+      "zCMB": 0.00998,
+      "zHEL": 0.00907,
+      "cz_cmb_kms": 2991.92873084,
+      "pantheon_cids": [
+        "1999cp",
+        "2002cr"
+      ],
+      "pantheon_n_lc": 4,
+      "ra_deg": 211.64907010752688,
+      "dec_deg": -5.452765053763442,
+      "ned": {
+        "ned_name": "NGC 5468",
+        "v_helio_kms": 2842.0,
+        "z_ned": 0.00948,
+        "ra_deg": 211.64549,
+        "dec_deg": -5.45307
+      },
+      "ned_v_cmb_kms": 3110.4385072251566,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N5584": {
+      "host": "N5584",
+      "n_cepheids": 165,
+      "is_anchor": false,
+      "ned_name": "NGC 5584",
+      "mu_table6": 31.772,
+      "sns": [
+        "2007af"
+      ],
+      "zCMB": 0.00635,
+      "zHEL": 0.00552,
+      "cz_cmb_kms": 1903.6821082999998,
+      "pantheon_cids": [
+        "2007af"
+      ],
+      "pantheon_n_lc": 4,
+      "ra_deg": 215.60052981818183,
+      "dec_deg": -0.38596854545454545,
+      "ned": {
+        "ned_name": "NGC 5584",
+        "v_helio_kms": 1638.0,
+        "z_ned": 0.005464,
+        "ra_deg": 215.599,
+        "dec_deg": -0.38767
+      },
+      "ned_v_cmb_kms": 1885.567803862747,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N5643": {
+      "host": "N5643",
+      "n_cepheids": 251,
+      "is_anchor": false,
+      "ned_name": "NGC 5643",
+      "mu_table6": 30.546,
+      "sns": [
+        "2013aa",
+        "2017cbv"
+      ],
+      "zCMB": 0.00478,
+      "zHEL": 0.00411,
+      "cz_cmb_kms": 1433.00794924,
+      "pantheon_cids": [
+        "2013aa",
+        "2017cbv"
+      ],
+      "pantheon_n_lc": 4,
+      "ra_deg": 218.1714167330677,
+      "dec_deg": -44.17593585657374,
+      "ned": {
+        "ned_name": "NGC 5643",
+        "v_helio_kms": 1199.0,
+        "z_ned": 0.003999,
+        "ra_deg": 218.16963,
+        "dec_deg": -44.17443
+      },
+      "ned_v_cmb_kms": 1398.59894685867,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N5728": {
+      "host": "N5728",
+      "n_cepheids": 20,
+      "is_anchor": false,
+      "ned_name": "NGC 5728",
+      "mu_table6": 33.094,
+      "sns": [
+        "2009Y"
+      ],
+      "zCMB": 0.0105,
+      "zHEL": 0.00974,
+      "cz_cmb_kms": 3147.820809,
+      "pantheon_cids": [
+        "2009Y"
+      ],
+      "pantheon_n_lc": 3,
+      "ra_deg": 220.597719,
+      "dec_deg": -17.257645,
+      "ned": {
+        "ned_name": "NGC 5728",
+        "v_helio_kms": 2754.0,
+        "z_ned": 0.009186,
+        "ra_deg": 220.59947,
+        "dec_deg": -17.25302
+      },
+      "ned_v_cmb_kms": 2979.9206887959176,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N5861": {
+      "host": "N5861",
+      "n_cepheids": 41,
+      "is_anchor": false,
+      "ned_name": "NGC 5861",
+      "mu_table6": 32.223,
+      "sns": [
+        "2017erp"
+      ],
+      "zCMB": 0.007270000000000001,
+      "zHEL": 0.00662,
+      "cz_cmb_kms": 2179.49116966,
+      "pantheon_cids": [
+        "2017erp"
+      ],
+      "pantheon_n_lc": 3,
+      "ra_deg": 227.31328829268298,
+      "dec_deg": -11.316696585365854,
+      "ned": {
+        "ned_name": "NGC 5861",
+        "v_helio_kms": 1851.0,
+        "z_ned": 0.006174,
+        "ra_deg": 227.31707,
+        "dec_deg": -11.32169
+      },
+      "ned_v_cmb_kms": 2043.1484092360229,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N5917": {
+      "host": "N5917",
+      "n_cepheids": 14,
+      "is_anchor": false,
+      "ned_name": "NGC 5917",
+      "mu_table6": 32.363,
+      "sns": [
+        "2005cf"
+      ],
+      "zCMB": 0.007029999999999999,
+      "zHEL": 0.00644,
+      "cz_cmb_kms": 2107.54097974,
+      "pantheon_cids": [
+        "2005cf"
+      ],
+      "pantheon_n_lc": 3,
+      "ra_deg": 230.38899285714288,
+      "dec_deg": -7.376275,
+      "ned": {
+        "ned_name": "NGC 5917",
+        "v_helio_kms": 1914.0,
+        "z_ned": 0.006384,
+        "ra_deg": 230.38578,
+        "dec_deg": -7.3773
+      },
+      "ned_v_cmb_kms": 2088.1654869034014,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N7250": {
+      "host": "N7250",
+      "n_cepheids": 21,
+      "is_anchor": false,
+      "ned_name": "NGC 7250",
+      "mu_table6": 31.628,
+      "sns": [
+        "2013dy"
+      ],
+      "zCMB": 0.00293,
+      "zHEL": 0.00394,
+      "cz_cmb_kms": 878.3919019399999,
+      "pantheon_cids": [
+        "2013dy"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 334.57439000000005,
+      "dec_deg": 40.56131142857142,
+      "ned": {
+        "ned_name": "NGC 7250",
+        "v_helio_kms": 1166.0,
+        "z_ned": 0.003889,
+        "ra_deg": 334.57409,
+        "dec_deg": 40.56308
+      },
+      "ned_v_cmb_kms": 865.5925069598668,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N7329": {
+      "host": "N7329",
+      "n_cepheids": 31,
+      "is_anchor": false,
+      "ned_name": "NGC 7329",
+      "mu_table6": 33.246,
+      "sns": [
+        "2006bh"
+      ],
+      "zCMB": 0.01042,
+      "zHEL": 0.01077,
+      "cz_cmb_kms": 3123.83741236,
+      "pantheon_cids": [
+        "2006bh"
+      ],
+      "pantheon_n_lc": 1,
+      "ra_deg": 340.0962583870968,
+      "dec_deg": -66.47729000000001,
+      "ned": {
+        "ned_name": "NGC 7329",
+        "v_helio_kms": 3252.0,
+        "z_ned": 0.010847,
+        "ra_deg": 340.10099,
+        "dec_deg": -66.47893
+      },
+      "ned_v_cmb_kms": 3147.859952215719,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N7541": {
+      "host": "N7541",
+      "n_cepheids": 33,
+      "is_anchor": false,
+      "ned_name": "NGC 7541",
+      "mu_table6": 32.5,
+      "sns": [
+        "1998dh"
+      ],
+      "zCMB": 0.00769,
+      "zHEL": 0.00893,
+      "cz_cmb_kms": 2305.40400202,
+      "pantheon_cids": [
+        "1998dh"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 348.6770581818182,
+      "dec_deg": 4.532387575757576,
+      "ned": {
+        "ned_name": "NGC 7541",
+        "v_helio_kms": 2692.0,
+        "z_ned": 0.00898,
+        "ra_deg": 348.68283,
+        "dec_deg": 4.53406
+      },
+      "ned_v_cmb_kms": 2322.53775703838,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N7678": {
+      "host": "N7678",
+      "n_cepheids": 16,
+      "is_anchor": false,
+      "ned_name": "NGC 7678",
+      "mu_table6": 33.187,
+      "sns": [
+        "2002dp"
+      ],
+      "zCMB": 0.01049,
+      "zHEL": 0.01169,
+      "cz_cmb_kms": 3144.82288442,
+      "pantheon_cids": [
+        "2002dp"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 352.113648125,
+      "dec_deg": 22.425359375,
+      "ned": {
+        "ned_name": "NGC 7678",
+        "v_helio_kms": 3489.0,
+        "z_ned": 0.011638,
+        "ra_deg": 352.11618,
+        "dec_deg": 22.4212
+      },
+      "ned_v_cmb_kms": 3133.4906520487502,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N976A": {
+      "host": "N976A",
+      "n_cepheids": 33,
+      "is_anchor": false,
+      "ned_name": "NGC 976",
+      "mu_table6": 33.709,
+      "sns": [
+        "1999dq"
+      ],
+      "zCMB": 0.01334,
+      "zHEL": 0.01413,
+      "cz_cmb_kms": 3999.2313897199997,
+      "pantheon_cids": [
+        "1999dq"
+      ],
+      "pantheon_n_lc": 2,
+      "ra_deg": 38.50036999999999,
+      "dec_deg": 20.975283030303036,
+      "ned": {
+        "ned_name": "NGC 0976",
+        "v_helio_kms": 4296.0,
+        "z_ned": 0.01433,
+        "ra_deg": 38.50005,
+        "dec_deg": 20.97678
+      },
+      "ned_v_cmb_kms": 4062.2286963264028,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "U9391": {
+      "host": "U9391",
+      "n_cepheids": 33,
+      "is_anchor": false,
+      "ned_name": "UGC 9391",
+      "mu_table6": 32.848,
+      "sns": [
+        "2003du"
+      ],
+      "zCMB": 0.00664,
+      "zHEL": 0.00638,
+      "cz_cmb_kms": 1990.62192112,
+      "pantheon_cids": [
+        "2003du"
+      ],
+      "pantheon_n_lc": 3,
+      "ra_deg": 218.6546793939394,
+      "dec_deg": 59.3375896969697,
+      "ned": {
+        "ned_name": "UGC 09391",
+        "v_helio_kms": 1904.0,
+        "z_ned": 0.006352,
+        "ra_deg": 218.65438,
+        "dec_deg": 59.33789
+      },
+      "ned_v_cmb_kms": 1984.0856044046213,
+      "z_source": "Pantheon+_zCMB",
+      "coord_source": "table2_cepheid_mean"
+    },
+    "N4258": {
+      "host": "N4258",
+      "n_cepheids": 443,
+      "is_anchor": true,
+      "ned_name": "NGC 4258",
+      "sns": [],
+      "ned": {
+        "ned_name": "MESSIER 106",
+        "v_helio_kms": 461.0,
+        "z_ned": 0.001538,
+        "ra_deg": 184.7396,
+        "dec_deg": 47.30397
+      },
+      "ra_deg": 184.7396,
+      "dec_deg": 47.30397,
+      "ned_v_cmb_kms": 666.4545385190323,
+      "cz_cmb_kms": 666.4545385190323,
+      "zCMB": 0.00222305305131803,
+      "z_source": "NED_helio_plus_Planck2018_dipole"
+    },
+    "M31": {
+      "host": "M31",
+      "n_cepheids": 55,
+      "is_anchor": true,
+      "ned_name": "M31",
+      "sns": [],
+      "ned": {
+        "ned_name": "MESSIER 031",
+        "v_helio_kms": -297.0,
+        "z_ned": -0.000991,
+        "ra_deg": 10.68479,
+        "dec_deg": 41.26906
+      },
+      "ra_deg": 10.68479,
+      "dec_deg": 41.26906,
+      "ned_v_cmb_kms": -580.9639952575242,
+      "cz_cmb_kms": -580.9639952575242,
+      "zCMB": -0.0019378872942077956,
+      "z_source": "NED_helio_plus_Planck2018_dipole"
+    },
+    "LMC": {
+      "host": "LMC",
+      "n_cepheids": 339,
+      "is_anchor": true,
+      "ned_name": "LMC",
+      "sns": [],
+      "ned": {
+        "ned_name": "Large Magellanic Cloud",
+        "v_helio_kms": 278.0,
+        "z_ned": 0.000927,
+        "ra_deg": 80.89417,
+        "dec_deg": -69.75611
+      },
+      "ra_deg": 80.89417,
+      "dec_deg": -69.75611,
+      "ned_v_cmb_kms": 326.49294860394406,
+      "cz_cmb_kms": 326.49294860394406,
+      "zCMB": 0.0010890632498965136,
+      "z_source": "NED_helio_plus_Planck2018_dipole"
+    },
+    "SMC": {
+      "host": "SMC",
+      "n_cepheids": 143,
+      "is_anchor": true,
+      "ned_name": "SMC",
+      "sns": [],
+      "ned": {
+        "ned_name": "Small Magellanic Cloud",
+        "v_helio_kms": 146.0,
+        "z_ned": 0.000486,
+        "ra_deg": 13.18667,
+        "dec_deg": -72.82861
+      },
+      "ra_deg": 13.18667,
+      "dec_deg": -72.82861,
+      "ned_v_cmb_kms": 90.68926809801374,
+      "cz_cmb_kms": 90.68926809801374,
+      "zCMB": 0.0003025068365729659,
+      "z_source": "NED_helio_plus_Planck2018_dipole"
+    }
+  }
+}

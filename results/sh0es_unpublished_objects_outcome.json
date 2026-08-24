@@ -1,0 +1,374 @@
+{
+  "pin": "D1D38A",
+  "rows": [
+    {
+      "name": "Table2_cepheid_count",
+      "computed": 3130.0,
+      "measured": 3129.0,
+      "error_pct": 0.03195909236177692,
+      "record_kind": "scalar"
+    },
+    {
+      "name": "PL_slope_vs_R22_baseline_bW",
+      "computed": 3.2918507537510697,
+      "measured": 3.299,
+      "error_pct": 0.2167094952691788,
+      "record_kind": "scalar"
+    },
+    {
+      "name": "full_NIR_HST_LMC_minus_N4258_intercept",
+      "computed": -10.8775100779736,
+      "measured": -10.894965037649078,
+      "error_pct": 0.1602112500146586,
+      "record_kind": "scalar"
+    },
+    {
+      "name": "full_NIR_LMC_all_minus_N4258_intercept",
+      "computed": -10.8775100779736,
+      "measured": -10.951030223944281,
+      "error_pct": 0.671353694284674,
+      "record_kind": "structural"
+    },
+    {
+      "name": "full_sample_moduli_mean_vs_Li2024_TRGB",
+      "computed": 0.004391645567700664,
+      "measured": 0.01,
+      "error_pct": 0.017636334692765206,
+      "record_kind": "scalar"
+    },
+    {
+      "name": "ensemble_cz_d_IVW_not_SH0ES_H0",
+      "computed": 68.62274551012013,
+      "measured": 73.04,
+      "error_pct": 6.047719728751205,
+      "record_kind": "structural"
+    },
+    {
+      "name": "full_sample_mu_mean_vs_R22_Table6",
+      "computed": -0.04510407736405785,
+      "measured": 0.0,
+      "error_pct": 0.14095024176268078,
+      "record_kind": "scalar"
+    }
+  ],
+  "pooled_median_error_pct": 0.14095024176268078,
+  "status": "GREEN",
+  "inventory": {
+    "table2_file": "data/sh0es_r22_full_nir_cepheids.dat",
+    "n_tight_scalars": 5
+  },
+  "cz_d": {
+    "published_by_riess": false,
+    "H0_ivw": 68.62274551012013,
+    "H0_median": 71.04871876424502,
+    "sigma_ivw_vpec": 1.268220482947858,
+    "measured_sh0es": 73.04,
+    "n_hosts": 37,
+    "n_flow_noise": 20,
+    "note": "Individual H0_i = cz_cmb/d(\u03bc_FSOT) is peculiar-velocity noise at 10\u201340 Mpc. Ensemble is inverse-variance weighted by \u03c3_v=250 km/s. This is not the SH0ES Hubble-flow estimator and is not a 0.5% central.",
+    "hosts": [
+      {
+        "host": "M101",
+        "H0_i": 56.322677749478075,
+        "d_mpc": 6.493775036528501,
+        "cz_cmb_kms": 365.74679876,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "M1337",
+        "H0_i": 77.08246552097813,
+        "d_mpc": 37.57008970466635,
+        "cz_cmb_kms": 2895.9951442799997,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N0691",
+        "H0_i": 75.31854289478606,
+        "d_mpc": 34.27061868397728,
+        "cz_cmb_kms": 2581.2130633799998,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N1015",
+        "H0_i": 74.66296914740673,
+        "d_mpc": 32.16236396705642,
+        "cz_cmb_kms": 2401.3375885799996,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N105A",
+        "H0_i": 60.762818015331405,
+        "d_mpc": 81.21058271910508,
+        "cz_cmb_kms": 4934.583858679999,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N1309",
+        "H0_i": 62.43752728547112,
+        "d_mpc": 32.07387778641255,
+        "cz_cmb_kms": 2002.6136194399999,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N1365",
+        "H0_i": 76.76507900579267,
+        "d_mpc": 17.96448755945314,
+        "cz_cmb_kms": 1379.0453068,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N1448",
+        "H0_i": 62.50934907041479,
+        "d_mpc": 17.337402353193447,
+        "cz_cmb_kms": 1083.74973567,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N1559",
+        "H0_i": 67.9711635738664,
+        "d_mpc": 19.186036014857923,
+        "cz_cmb_kms": 1304.0971922999997,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N2442",
+        "H0_i": 81.48367697872482,
+        "d_mpc": 18.947735496805286,
+        "cz_cmb_kms": 1543.9311587,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N2525",
+        "H0_i": 73.6303744054056,
+        "d_mpc": 24.266657124981617,
+        "cz_cmb_kms": 1786.76304968,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N2608",
+        "H0_i": 71.04871876424502,
+        "d_mpc": 33.58748767304893,
+        "cz_cmb_kms": 2386.34796568,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N3021",
+        "H0_i": 59.00354795982219,
+        "d_mpc": 30.07906156030669,
+        "cz_cmb_kms": 1774.77135136,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N3147",
+        "H0_i": 70.58754290826117,
+        "d_mpc": 41.430474943585764,
+        "cz_cmb_kms": 2924.4754277899997,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N3254",
+        "H0_i": 55.69393015914937,
+        "d_mpc": 29.60571312328416,
+        "cz_cmb_kms": 1648.858519,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N3370",
+        "H0_i": 57.21696933388204,
+        "d_mpc": 28.293691400417323,
+        "cz_cmb_kms": 1618.8792732,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N3447",
+        "H0_i": 55.52682585690309,
+        "d_mpc": 25.10561171446276,
+        "cz_cmb_kms": 1394.0349296999998,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N3583",
+        "H0_i": 66.67312311510368,
+        "d_mpc": 34.7575693482856,
+        "cz_cmb_kms": 2317.3957003399996,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N3972",
+        "H0_i": 52.04423634852069,
+        "d_mpc": 21.25565187683734,
+        "cz_cmb_kms": 1106.23417002,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N3982",
+        "H0_i": 51.21093093946259,
+        "d_mpc": 21.601524317683275,
+        "cz_cmb_kms": 1106.23417002,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N4038",
+        "H0_i": 99.75988773419874,
+        "d_mpc": 19.83392591691645,
+        "cz_cmb_kms": 1978.6302228,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N4424",
+        "H0_i": 54.97624485926446,
+        "d_mpc": 13.960005716008233,
+        "cz_cmb_kms": 767.4686924800001,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N4536",
+        "H0_i": 72.89815161904097,
+        "d_mpc": 14.393692839887178,
+        "cz_cmb_kms": 1049.2736029999999,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N4639",
+        "H0_i": 66.75886935619293,
+        "d_mpc": 20.74692350719861,
+        "cz_cmb_kms": 1385.04115596,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N4680",
+        "H0_i": 87.05973394606292,
+        "d_mpc": 32.05922712455314,
+        "cz_cmb_kms": 2791.06778398,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N5468",
+        "H0_i": 73.69157327459864,
+        "d_mpc": 40.600690118137464,
+        "cz_cmb_kms": 2991.92873084,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N5584",
+        "H0_i": 80.63536569963384,
+        "d_mpc": 23.608525760163374,
+        "cz_cmb_kms": 1903.6821082999998,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N5643",
+        "H0_i": 120.13550663039265,
+        "d_mpc": 11.928263254000116,
+        "cz_cmb_kms": 1433.00794924,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N5728",
+        "H0_i": 79.39601437276839,
+        "d_mpc": 39.64708850775328,
+        "cz_cmb_kms": 3147.820809,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N5861",
+        "H0_i": 83.58537851806925,
+        "d_mpc": 26.075029009874545,
+        "cz_cmb_kms": 2179.49116966,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N5917",
+        "H0_i": 71.53245723925494,
+        "d_mpc": 29.46272309213282,
+        "cz_cmb_kms": 2107.54097974,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N7250",
+        "H0_i": 39.9796533911063,
+        "d_mpc": 21.970973418579042,
+        "cz_cmb_kms": 878.3919019399999,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N7329",
+        "H0_i": 72.90190279809495,
+        "d_mpc": 42.84987486556567,
+        "cz_cmb_kms": 3123.83741236,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N7541",
+        "H0_i": 73.92522749548725,
+        "d_mpc": 31.18561930919635,
+        "cz_cmb_kms": 2305.40400202,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N7678",
+        "H0_i": 72.81323487007644,
+        "d_mpc": 43.19026465492754,
+        "cz_cmb_kms": 3144.82288442,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "N976A",
+        "H0_i": 70.76013069495136,
+        "d_mpc": 56.51814588868954,
+        "cz_cmb_kms": 3999.2313897199997,
+        "flow_noise": false,
+        "z_source": "Pantheon+_zCMB"
+      },
+      {
+        "host": "U9391",
+        "H0_i": 53.638725819865854,
+        "d_mpc": 37.11165563114002,
+        "cz_cmb_kms": 1990.62192112,
+        "flow_noise": true,
+        "z_source": "Pantheon+_zCMB"
+      }
+    ]
+  },
+  "vs_table6": {
+    "n": 37,
+    "mean_delta_mag": -0.04510407736405785,
+    "rms_mag": 0.09131630901528479
+  },
+  "kill": "tight-scalar median > 0.5%, or anyone treats lstsq \u03bc as measured, or anyone 0.5%-gates an individual nearby cz/d H0, or anyone retunes \u03c1 to hit 73.04"
+}

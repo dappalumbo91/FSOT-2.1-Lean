@@ -59,7 +59,7 @@ substance / scale
 | Folder | Meaning |
 |--------|---------|
 | `predictions/` | Frozen forecasts (SHA + timestamp). Do not rewrite centrals. |
-| `results/` | What landed later (literature, APIs, monitor). |
+| `results/` | What landed later (literature, APIs, monitor). SH0ES Table 2 / unpublished \(cz/d\): `results/sh0es_unpublished_objects_outcome.json` |
 | `results/siblings/` | Genetics product + Quantum fold headlines |
 
 ---
