@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-24T23:45:42.584771+00:00",
+  "generated_at": "2026-08-25T00:07:41.878363+00:00",
   "pin": "D1D38A",
   "purpose": "Map questions scientists currently argue about onto FSOT folds: already gated, preregistered, refused, or still open.",
   "status_counts": {
-    "honest_refusal": 3,
-    "preregistered": 8,
+    "preregistered": 10,
     "solved_residual": 3,
+    "honest_refusal": 1,
     "sibling_owned": 1,
     "open_residual": 1
   },
@@ -15,10 +15,11 @@
       "field": "seismology",
       "question": "Can we predict the time and place of the next large earthquake?",
       "community": "No deterministic short-term prediction; probabilistic hazard (Gutenberg\u2013Richter, ETAS, CSE).",
-      "fsot": "We also refuse dates. Class statistics only (PRED-056). Individual M\u22657 is not a 0.5% object.",
-      "status": "honest_refusal",
+      "fsot": "Not a clock-time hypocenter. Dated *windows* on live pressure cells (PRED-064): location + 7-day POOF window, scored after valid_to.",
+      "status": "preregistered",
       "pred_ids": [
-        "PRED-056"
+        "PRED-056",
+        "PRED-064"
       ]
     },
     {
@@ -59,10 +60,11 @@
       "field": "volcanology",
       "question": "Can we predict eruption onset dates?",
       "community": "Unrest monitoring (InSAR, SO2, seismicity); no reliable date forecast.",
-      "fsot": "Refuse dates. GVP catalog residual hold PRED-058. Eruption = POOF orifice (C10).",
-      "status": "honest_refusal",
+      "fsot": "Not a clock-time. Volcanic USGS cells get 14-day POOF windows (PRED-064) plus GVP residual hold PRED-058.",
+      "status": "preregistered",
       "pred_ids": [
-        "PRED-058"
+        "PRED-058",
+        "PRED-064"
       ]
     },
     {

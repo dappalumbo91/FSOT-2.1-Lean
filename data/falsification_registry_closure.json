@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-24T23:45:42.933423+00:00",
+  "generated_at": "2026-08-25T00:07:42.222997+00:00",
   "version": "1.1",
   "verdict": "FALSIFICATION_CRITERIA_REGISTERED",
   "manifest_source": "predictions/preregistered_predictions_manifest.yaml",
   "outcome_log": "results/outcomes/prediction_outcome_log.jsonl",
   "summary": {
-    "preregistered_prediction_count": 56,
+    "preregistered_prediction_count": 57,
     "stumped_observable_count": 13,
     "confirmed_discriminant_count": 2,
-    "pending_measurement_count": 49,
+    "pending_measurement_count": 50,
     "wa_prereg_status": "confirmed_within_2sigma",
     "global_kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
     "global_review_horizon": "2026-12-31 full benchmark + survey refresh"
@@ -853,6 +853,20 @@
       "future_survey": "NOAA NCEI + NDBC continuous",
       "status": "pending_independent_measurement",
       "review_horizon": "NOAA NCEI + NDBC continuous"
+    },
+    {
+      "id": "PRED-064",
+      "name": "dated_fluid_pressure_forecasts",
+      "domain": "Seismology",
+      "fsot_predicted": 1.0,
+      "unit": "issued_windows_scored",
+      "sota_baseline": 0.0,
+      "discriminant": "dated_windows_issued_and_scored",
+      "kill_criterion": "issued dated forecast file rewritten after valid_from, or scoring abandoned",
+      "registered_at": "2026-08-25",
+      "future_survey": "USGS FDSN + NOAA SWPC + NDBC after each valid_to",
+      "status": "pending_independent_measurement",
+      "review_horizon": "USGS FDSN + NOAA SWPC + NDBC after each valid_to"
     }
   ],
   "stumped_observables": [

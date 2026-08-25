@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T23:45:42.761731+00:00",
+  "generated_at": "2026-08-25T00:07:42.051914+00:00",
   "version": "1.0",
   "authority_pin_prefix": "D1D38A",
   "purpose": "Separate high-weight contested survey predictions from atlas regression holds and scaffold/speculation so public communication stays honest.",
@@ -33,7 +33,7 @@
     "hand_by_tier": {
       "A": 17,
       "B": 0,
-      "C": 17,
+      "C": 18,
       "D": 22
     },
     "atlas_kind_counts": {
@@ -2167,6 +2167,17 @@
         "unit": "pooled_median_error_pct_ceiling",
         "discriminant": "within_green_gate_0_5pct",
         "future_survey": "NOAA NCEI + NDBC continuous",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-064",
+        "source": "hand_prereg",
+        "name": "dated_fluid_pressure_forecasts",
+        "domain": "Seismology",
+        "fsot_predicted": 1.0,
+        "unit": "issued_windows_scored",
+        "discriminant": "dated_windows_issued_and_scored",
+        "future_survey": "USGS FDSN + NOAA SWPC + NDBC after each valid_to",
         "tier": "C"
       }
     ],

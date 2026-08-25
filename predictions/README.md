@@ -11,6 +11,7 @@
 | **[`NEXT_LAYERS.md`](NEXT_LAYERS.md)** | **What to watch now + which prediction layer to expand next** |
 | **[`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md)** | Weather / seismic / volcanic / solar class locks (not dates) |
 | **[`reports/SCIENTIST_OPEN_QUESTIONS.md`](reports/SCIENTIST_OPEN_QUESTIONS.md)** | Questions scientists argue about → solved / PRED / refused |
+| **[`reports/DATED_FLUID_FORECASTS.md`](reports/DATED_FLUID_FORECASTS.md)** | This issue’s located calendar windows (EQ / WX / solar / volcanic) |
 | **[`reports/PREDICTION_TIERS.md`](reports/PREDICTION_TIERS.md)** | **Tier A–D split** (contested vs atlas vs scaffold) |
 | **[`public/ONE_PAGER.md`](public/ONE_PAGER.md)** | One-screen summary |
 | **[`public/X_READY.md`](public/X_READY.md)** | Copy-paste posts + threads for X |
@@ -63,6 +64,8 @@ python scripts/build_catalog_prediction_layer.py
 python scripts/build_higgs_prediction_layer.py
 python scripts/build_prediction_tiers.py
 python scripts/build_earth_system_prediction_layer.py
+python scripts/issue_earth_fluid_forecasts.py
+python scripts/score_earth_fluid_forecasts.py
 python scripts/run_prediction_monitor.py
 ```
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T23:45:42.584771+00:00",
+  "generated_at": "2026-08-25T00:07:41.878363+00:00",
   "pin": "D1D38A",
   "policy": [
     "no_individual_earthquake_dates",
@@ -141,7 +141,23 @@
       "what_it_is_not": "S2S ensemble beating ECMWF at week 3\u20134.",
       "panel": "data/climate_observed_benchmark.json",
       "live_pooled_pct": 0.012
+    },
+    {
+      "id": "PRED-064",
+      "name": "dated_fluid_pressure_forecasts",
+      "domain": "Seismology",
+      "tier_hint": "C",
+      "fsot_predicted": 1.0,
+      "unit": "issued_windows_scored",
+      "sota_baseline": 0.0,
+      "sota_label": "no dated FSOT spatial-class forecast layer",
+      "discriminant": "dated_windows_issued_and_scored",
+      "kill_if": "issued forecast JSON rewritten after valid_from, or scoring abandoned",
+      "future_survey": "USGS FDSN + NOAA SWPC + NDBC after each valid_to",
+      "what_it_is": "Live pressure cells \u2192 location + calendar window. Score hit/miss. Iron the valve.",
+      "what_it_is_not": "A clock-time for a single hypocenter, or a USGS/NWS watch replacement.",
+      "panel": "predictions/dated_forecasts/LATEST.json"
     }
   ],
-  "n_predictions": 8
+  "n_predictions": 9
 }

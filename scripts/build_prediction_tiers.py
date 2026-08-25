@@ -71,6 +71,7 @@ TIER_C_HAND = {
     "PRED-061",  # PREM seismic-acoustic
     "PRED-062",  # solar quiet/storm sectors
     "PRED-063",  # climate+marine hold
+    "PRED-064",  # dated fluid-pressure windows
 }
 
 # Everything else hand-curated with Scaffold in domain name → D

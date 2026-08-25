@@ -64,6 +64,7 @@ Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 | Domain family tree | [`docs/DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) | 35 cores by \(D_{\mathrm{eff}}\); where to expand between scales |
 | Between-scale interconnects | [`docs/SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | Five gaps filled, pooled **0.028%**; zebrafish/genetics still sibling |
 | Earth-system predictions | [`predictions/reports/EARTH_SYSTEM_PREDICTIONS.md`](../predictions/reports/EARTH_SYSTEM_PREDICTIONS.md) | Weather/seismic/volcanic/solar **class** locks — not event dates |
+| Dated fluid forecasts | [`predictions/reports/DATED_FLUID_FORECASTS.md`](../predictions/reports/DATED_FLUID_FORECASTS.md) | Located windows from live pressure cells; score after `valid_to` |
 | Conjugate / antimatter | [`docs/MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md) | \(\eta\) 0.004%; CPT identities |
 | Genetics sibling freeze | [`docs/GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) | 0.13 Å vs AF 0.47 Å (2026-08-17); MDS retired |
 | How Damian views the model | [`docs/FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md) | River, seepage, BH–WH, as-above-so-below — picture, not products |

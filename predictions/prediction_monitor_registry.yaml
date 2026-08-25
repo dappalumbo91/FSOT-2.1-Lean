@@ -395,6 +395,24 @@ watches:
       kind: literature_watch
     urgency: low
 
+  - id: WATCH-Dated-fluid-forecasts
+    pred_ids: [PRED-064]
+    sector: earth_system
+    title: "Dated fluid-pressure windows (USGS/SWPC/NDBC)"
+    fsot_lock: 1.0
+    unit: issued_windows_scored
+    baseline_default: "no located FSOT calendar forecast layer"
+    kill_if: "issued forecast JSON rewritten after valid_from, or scoring abandoned"
+    data_drop:
+      facility: USGS FDSN + NOAA SWPC + NDBC
+      product: events / Kp / buoy obs inside each frozen window
+      window: "score after each valid_to (EQ 7d, WX 48h, solar 72h)"
+      status_as_of: "2026-08-25"
+    check:
+      kind: open_science_panel
+      panel_hint: dated_forecasts
+    urgency: high
+
   - id: WATCH-Fuel-lab-hold
     pred_ids: [PRED-034]
     sector: energy

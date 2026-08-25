@@ -188,6 +188,22 @@ def main() -> int:
             "panel": "data/climate_observed_benchmark.json",
             "live_pooled_pct": 0.0120,
         },
+        {
+            "id": "PRED-064",
+            "name": "dated_fluid_pressure_forecasts",
+            "domain": "Seismology",
+            "tier_hint": "C",
+            "fsot_predicted": 1.0,
+            "unit": "issued_windows_scored",
+            "sota_baseline": 0.0,
+            "sota_label": "no dated FSOT spatial-class forecast layer",
+            "discriminant": "dated_windows_issued_and_scored",
+            "kill_if": "issued forecast JSON rewritten after valid_from, or scoring abandoned",
+            "future_survey": "USGS FDSN + NOAA SWPC + NDBC after each valid_to",
+            "what_it_is": "Live pressure cells → location + calendar window. Score hit/miss. Iron the valve.",
+            "what_it_is_not": "A clock-time for a single hypocenter, or a USGS/NWS watch replacement.",
+            "panel": "predictions/dated_forecasts/LATEST.json",
+        },
     ]
 
     questions = [
@@ -196,9 +212,9 @@ def main() -> int:
             "field": "seismology",
             "question": "Can we predict the time and place of the next large earthquake?",
             "community": "No deterministic short-term prediction; probabilistic hazard (Gutenberg–Richter, ETAS, CSE).",
-            "fsot": "We also refuse dates. Class statistics only (PRED-056). Individual M≥7 is not a 0.5% object.",
-            "status": "honest_refusal",
-            "pred_ids": ["PRED-056"],
+            "fsot": "Not a clock-time hypocenter. Dated *windows* on live pressure cells (PRED-064): location + 7-day POOF window, scored after valid_to.",
+            "status": "preregistered",
+            "pred_ids": ["PRED-056", "PRED-064"],
         },
         {
             "id": "Q-EQ-02",
@@ -232,9 +248,9 @@ def main() -> int:
             "field": "volcanology",
             "question": "Can we predict eruption onset dates?",
             "community": "Unrest monitoring (InSAR, SO2, seismicity); no reliable date forecast.",
-            "fsot": "Refuse dates. GVP catalog residual hold PRED-058. Eruption = POOF orifice (C10).",
-            "status": "honest_refusal",
-            "pred_ids": ["PRED-058"],
+            "fsot": "Not a clock-time. Volcanic USGS cells get 14-day POOF windows (PRED-064) plus GVP residual hold PRED-058.",
+            "status": "preregistered",
+            "pred_ids": ["PRED-058", "PRED-064"],
         },
         {
             "id": "Q-SOL-01",

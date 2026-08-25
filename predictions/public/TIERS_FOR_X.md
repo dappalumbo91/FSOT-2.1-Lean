@@ -8,7 +8,7 @@ FSOT predictions come in **four tiers**. Mixing them confuses people.
 
 **Tier B** — Empirical atlas (~1400 residual + scalar locks): proves same seeds stay green across 472 domains. Cite as *breadth*, not as 1400 separate cosmology kills.
 
-**Tier C** — Grounded lab/engineering (hand **17**): fuel, materials, climate, code-genome, zebrafish holds.
+**Tier C** — Grounded lab/engineering (hand **18**): fuel, materials, climate, code-genome, zebrafish holds.
 
 **Tier D** — Scaffold / high-speculation (hand **22**): cold-fusion scaffolds, superheavy Z islands, transporter stack, warp portal scalars. **Registered for the roadmap — not survey kills. Label if you mention them.**
 

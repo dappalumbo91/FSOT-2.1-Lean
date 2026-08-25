@@ -27,6 +27,7 @@ DISCRIMINANT_KILL: dict[str, str] = {
     "literature_band_b_value": "USGS ComCat / ISC-GEM named global MLE b-value outside 0.90–1.10",
     "same_valve_not_two_laws": "consensus that slow slip and fast earthquakes require two constitutive laws with no viscosity continuum",
     "quiet_and_storm_remain_distinct_sectors": "quiet-time and storm-time SWPC classes collapse to one residual sector on refresh",
+    "dated_windows_issued_and_scored": "issued dated forecast file rewritten after valid_from, or scoring abandoned",
 }
 
 OUTCOME_LOG = ROOT / "results" / "outcomes" / "prediction_outcome_log.jsonl"

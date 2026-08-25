@@ -1,6 +1,6 @@
 # Earth-system predictions (weather, seismic, volcanic, solar)
 
-*Generated 2026-08-24T23:45:42.584771+00:00 · pin D1D38A*
+*Generated 2026-08-25T00:07:41.878363+00:00 · pin D1D38A*
 
 Cosmology already has a 25-tool H₀ layer. This is the **same grammar** for
 Earth: structure + neighborhood bubble, not one number and not a date.
@@ -27,6 +27,7 @@ Those are T1 look / catalog noise, not seed-closed centrals.
 | `PRED-061` | Seismology | 0.5 pooled_median_error_pct_ceiling | lithosphere vp/vs median channel exceeds 0.5% (deep PREM stays structural) | A new radial Earth model replacing PREM. |
 | `PRED-062` | Space_Weather | 1.0 two_sector_classifier | quiet-time and storm-time SWPC classes collapse to one residual sector on refresh | A post-hoc Cycle 25 sunspot-number pick. |
 | `PRED-063` | Climate_Science | 0.5 pooled_median_error_pct_ceiling | climate_observed or NDBC fluid-tank channels exceed 0.5% | S2S ensemble beating ECMWF at week 3–4. |
+| `PRED-064` | Seismology | 1.0 issued_windows_scored | issued forecast JSON rewritten after valid_from, or scoring abandoned | A clock-time for a single hypocenter, or a USGS/NWS watch replacement. |
 
 Hand PREDs live in `predictions/preregistered_predictions_manifest.yaml`.
 Score outcomes in `results/` — do not rewrite these centrals.

@@ -1,6 +1,6 @@
 # Prediction tiers (A–D)
 
-*Generated 2026-08-24T23:45:42.761731+00:00 · pin D1D38A*
+*Generated 2026-08-25T00:07:42.051914+00:00 · pin D1D38A*
 
 Separate high-weight contested survey predictions from atlas regression holds and scaffold/speculation so public communication stays honest.
 
@@ -23,7 +23,7 @@ Separate high-weight contested survey predictions from atlas regression holds an
 |--------------------|------:|
 | A | 17 |
 | B | 0 |
-| C | 17 |
+| C | 18 |
 | D | 22 |
 
 | Tier A enumerated IDs (unique) | 170 |
@@ -100,6 +100,7 @@ See `reports/H0_MULTI_TOOL_PREDICTIONS.md`, `H0_SIGHTLINE_PREDICTIONS.md`, `CCHP
 | `PRED-061` | Seismology | seismic_acoustic_prem_hold |
 | `PRED-062` | Space_Weather | solar_quiet_storm_two_sectors |
 | `PRED-063` | Climate_Science | climate_station_and_marine_hold |
+| `PRED-064` | Seismology | dated_fluid_pressure_forecasts |
 
 ## Tier D — scaffold / high-speculation (hand)
 

@@ -701,3 +701,19 @@ predictions:
     future_survey: "NOAA NCEI + NDBC continuous"
     note: "Pairs with PRED-054. Weather as three fluid tanks, not a week-3 NWP claim."
     registered_at: "2026-08-24"
+
+  - id: PRED-064
+    name: dated_fluid_pressure_forecasts
+    domain: Seismology
+    fsot_formula_branch: term3.poof_factor
+    fsot_predicted: 1.0
+    unit: issued_windows_scored
+    sota_baseline: 0.0
+    sota_label: "no dated FSOT spatial-class forecast layer"
+    discriminant: "dated_windows_issued_and_scored"
+    future_survey: "USGS FDSN + NOAA SWPC + NDBC after each valid_to"
+    note: >
+      Issue located calendar windows from live pressure cells (kernel R_earth*POOF/25).
+      Score hit/miss after the window. Do not rewrite an issued file.
+      Not a clock-time of a single hypocenter.
+    registered_at: "2026-08-25"
