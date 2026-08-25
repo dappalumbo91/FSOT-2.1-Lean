@@ -46,11 +46,15 @@ IAEA/ENDF level energies (He, C, O, Si, Al, Fe) dual-routed. Nuclear fold median
 
 \(|S_{\mathrm{QG}}|/|S_{\mathrm{cosm}}|\) vs \(A_{\mathrm{bleed}}\) **0.088%**. Remainder \(((D-25)/25)/\ln(D/25)\to 1\) as \(D\to 25\) is structural along the ladder (do not invent extra dimensions).
 
+## 6. Social tanks — Economics \(D=20\) ↔ Neuroscience \(D=14\)
+
+A market is not a different medium from a neural net (as-above-so-below). \(\lvert S_{\mathrm{econ}}/S_{\mathrm{neuro}}\rvert\) vs \(5/4\). Same World Bank YoY series on both folds. The old Economics panel’s 0.129% siloed factor is **not** retuned.
+
 ---
 
 ## Live tight envelope
 
-Pooled median **0.028% GREEN** · **546** tight scalars · **564** rows.  
+Pooled median **0.026% GREEN** · **706** tight scalars · **725** rows.  
 Kill: pooled > 0.5%, or anyone fits Q / γ / Poisson, or anyone treats deep-PREM mismatch as a new coefficient.
 
 Related: [`CONCEPTS.md`](CONCEPTS.md) C4 / C8 / C10 · [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) · [`APPLY.md`](APPLY.md)

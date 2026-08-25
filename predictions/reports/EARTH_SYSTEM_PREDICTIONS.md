@@ -1,6 +1,6 @@
 # Earth-system predictions (weather, seismic, volcanic, solar)
 
-*Generated 2026-08-25T00:07:41.878363+00:00 · pin D1D38A*
+*Generated 2026-08-25T00:26:10.606574+00:00 · pin D1D38A*
 
 Cosmology already has a 25-tool H₀ layer. This is the **same grammar** for
 Earth: structure + neighborhood bubble, not one number and not a date.

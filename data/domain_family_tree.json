@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T23:35:38.830813+00:00",
+  "generated_at": "2026-08-25T00:26:10.420791+00:00",
   "pin": "D1D38A",
   "claim": "One 25-D fluid. Core folds are D_eff slices. Extensions are subdomains of a slice, not other ontologies. Gaps are missing interconnects between slices.",
   "core_count": 35,
@@ -2431,7 +2431,9 @@
       ],
       "benchmark": "data/sh0es_ladder_chain_benchmark.json",
       "note": "Published SH0ES H0 as information-weighted anchor+host mixture; local sky density; frozen class \u03c1 not retuned",
-      "band": "D=17\u201321 bulk / catalogs"
+      "band": "D=17\u201321 bulk / catalogs",
+      "pooled_median_error_pct": 0.212101,
+      "records": 2
     },
     {
       "name": "Cepheid_PL_Interconnect",
@@ -2443,7 +2445,9 @@
       ],
       "benchmark": "data/cepheid_pl_interconnect_benchmark.json",
       "note": "Seed-closed PL slope + LMC/N4258 intercept; no fitted b or Z_W",
-      "band": "D=17\u201321 bulk / catalogs"
+      "band": "D=17\u201321 bulk / catalogs",
+      "pooled_median_error_pct": 0.1349881432328604,
+      "records": 8
     },
     {
       "name": "SH0ES_Full_Sample",
@@ -2456,7 +2460,9 @@
       ],
       "benchmark": "data/sh0es_full_sample_benchmark.json",
       "note": "Riess+2022 Table 2 full 37-host NIR; cz/d ensemble is unpublished and PV-labeled, not a 0.5% H0 central",
-      "band": "D=17\u201321 bulk / catalogs"
+      "band": "D=17\u201321 bulk / catalogs",
+      "pooled_median_error_pct": 0.14095024176268078,
+      "records": 7
     },
     {
       "name": "Between_Scale_Interconnects",
@@ -2470,7 +2476,9 @@
       ],
       "benchmark": "data/between_scale_interconnect_benchmark.json",
       "note": "Five between-scale gaps (seismic-acoustic, fluid tanks, thermo-cosm, nuclear-particle, QG ceiling); no new coefficient",
-      "band": "D=17\u201321 bulk / catalogs"
+      "band": "D=17\u201321 bulk / catalogs",
+      "pooled_median_error_pct": 0.02620375479863064,
+      "records": 725
     },
     {
       "name": "Consciousness_Soul_Bridge",
@@ -8847,7 +8855,9 @@
         ],
         "benchmark": "data/between_scale_interconnect_benchmark.json",
         "note": "Five between-scale gaps (seismic-acoustic, fluid tanks, thermo-cosm, nuclear-particle, QG ceiling); no new coefficient",
-        "band": "D=17\u201321 bulk / catalogs"
+        "band": "D=17\u201321 bulk / catalogs",
+        "pooled_median_error_pct": 0.02620375479863064,
+        "records": 725
       },
       {
         "name": "Consciousness_Soul_Bridge",
@@ -10110,7 +10120,9 @@
         ],
         "benchmark": "data/sh0es_ladder_chain_benchmark.json",
         "note": "Published SH0ES H0 as information-weighted anchor+host mixture; local sky density; frozen class \u03c1 not retuned",
-        "band": "D=17\u201321 bulk / catalogs"
+        "band": "D=17\u201321 bulk / catalogs",
+        "pooled_median_error_pct": 0.212101,
+        "records": 2
       },
       {
         "name": "Cepheid_PL_Interconnect",
@@ -10122,7 +10134,9 @@
         ],
         "benchmark": "data/cepheid_pl_interconnect_benchmark.json",
         "note": "Seed-closed PL slope + LMC/N4258 intercept; no fitted b or Z_W",
-        "band": "D=17\u201321 bulk / catalogs"
+        "band": "D=17\u201321 bulk / catalogs",
+        "pooled_median_error_pct": 0.1349881432328604,
+        "records": 8
       },
       {
         "name": "SH0ES_Full_Sample",
@@ -10135,7 +10149,9 @@
         ],
         "benchmark": "data/sh0es_full_sample_benchmark.json",
         "note": "Riess+2022 Table 2 full 37-host NIR; cz/d ensemble is unpublished and PV-labeled, not a 0.5% H0 central",
-        "band": "D=17\u201321 bulk / catalogs"
+        "band": "D=17\u201321 bulk / catalogs",
+        "pooled_median_error_pct": 0.14095024176268078,
+        "records": 7
       },
       {
         "name": "Compact_Object_Binary_Events",
@@ -10767,7 +10783,7 @@
         "Quantum_Gravity"
       ],
       "status": "filled",
-      "note": "PREM+NDBC+ENDF+Carnot+QG ceiling. Pooled 0.028% GREEN. 546 tight scalars.",
+      "note": "PREM+NDBC+ENDF+Carnot+QG+social tanks. Pooled ~0.03% GREEN.",
       "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md"
     }
   ],
@@ -10781,16 +10797,6 @@
       ],
       "why": "Zebrafish 0.358% is inside 0.5%. Genetics repo is the live fold; migrate when that freeze lands.",
       "fill_looks_like": "Do not densify here. Wait for FSOT-Genetics product freeze, then hub residual."
-    },
-    {
-      "name": "Social tanks at catalog scale",
-      "cores": [
-        "Economics",
-        "Sociology",
-        "Psychology"
-      ],
-      "why": "As-above-so-below says a market is not a different medium from a neural net. Economics pooled 0.129%.",
-      "fill_looks_like": "\u03ba(Economics,Neuroscience) on World Bank series already ingested; no fitted \u03b2."
     }
   ]
 }

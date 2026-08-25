@@ -58,7 +58,7 @@ Do these with **real measured data** and the mismatch rule (wrong \(D_{\mathrm{e
 | Genetics **no-map** path | Sibling: F01–F15 only; 3-D MDS **retired**. Hub quotes 2026-08-17 freeze | do not claim sequence-only AF-beating; do not grind MDS |
 | T3/T4 uniqueness theorems | Gap report already lists them as **open research** | do not pretend path-integral confinement is proved |
 | Chapter docs vs live 472 | Domain chapter INDEX still useful; any “405/394” line gets a freeze banner | CURRENT_STATUS wins |
-| **Between-scale interconnects** | **Filled (5 of 7).** PREM+NDBC+ENDF+Carnot+QG ceiling pooled **0.028% GREEN** (546 tight). Zebrafish/Genetics sibling-owned. Economics 0.129% still open. [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | pooled > 0.5%; fitted Q/γ/Poisson; stuffing deep-PREM |
+| **Between-scale interconnects** | **Filled.** PREM+NDBC+ENDF+Carnot+QG+social tanks pooled **0.026% GREEN** (706 tight). Zebrafish/Genetics sibling-owned. [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | pooled > 0.5%; fitted Q/γ/Poisson; stuffing deep-PREM |
 | **Zebrafish 0.358% (worst empirical pooled)** | **Interface label fixed.** Panel was D=24 (astro); connective engine is biological. Metadata now **D=12**. Residual still 0.358% (honest LOOCV, not stuffed). | LSQ a new \(f\) to hide 0.358% |
 
 ---

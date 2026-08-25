@@ -65,6 +65,7 @@ Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 | Between-scale interconnects | [`docs/SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | Five gaps filled, pooled **0.028%**; zebrafish/genetics still sibling |
 | Earth-system predictions | [`predictions/reports/EARTH_SYSTEM_PREDICTIONS.md`](../predictions/reports/EARTH_SYSTEM_PREDICTIONS.md) | Weather/seismic/volcanic/solar **class** locks — not event dates |
 | Dated fluid forecasts | [`predictions/reports/DATED_FLUID_FORECASTS.md`](../predictions/reports/DATED_FLUID_FORECASTS.md) | Located windows from live pressure cells; score after `valid_to` |
+| Weather product approach | [`docs/WEATHER_MONITORING_APPROACH.md`](WEATHER_MONITORING_APPROACH.md) | Math + loop for a later always-on weather sibling |
 | Conjugate / antimatter | [`docs/MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md) | \(\eta\) 0.004%; CPT identities |
 | Genetics sibling freeze | [`docs/GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) | 0.13 Å vs AF 0.47 Å (2026-08-17); MDS retired |
 | How Damian views the model | [`docs/FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md) | River, seepage, BH–WH, as-above-so-below — picture, not products |

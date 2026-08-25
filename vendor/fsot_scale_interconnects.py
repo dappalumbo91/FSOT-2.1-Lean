@@ -64,6 +64,10 @@ _FACTOR = {
     "Particle_Physics": 0.0001,
     "High_Energy_Physics": 0.00015,
     "Quantum_Gravity": 0.0002,
+    "Economics": 0.0004,
+    "Neuroscience": 0.00035,
+    "Psychology": 0.0003,
+    "Sociology": 0.0002,
 }
 
 # Dziewonski & Anderson 1981 PREM (isotropic), discontinuity / lid samples.
@@ -456,11 +460,66 @@ def qg_ceiling_rows() -> list[dict[str, Any]]:
     return rows
 
 
-def suite_rows(*, ndbc_path: Path, endf_path: Path) -> list[dict[str, Any]]:
+def social_tank_rows(econ_path: Path) -> list[dict[str, Any]]:
+    """Market and mind are two zooms of one catalog-scale tank."""
+    se = abs(f(domain_scalar("Economics")))
+    sn = abs(f(domain_scalar("Neuroscience")))
+    rows = [
+        _row(
+            prop="social_S_ratio",
+            name="abs_S_econ_over_S_neuro",
+            computed=se / sn,
+            measured=5.0 / 4.0,
+            note="|S_Economics|/|S_Neuroscience| vs 5/4 — as-above-so-below at catalog scale",
+            extra={"kappa": kappa_domains("Economics", "Neuroscience")},
+        ),
+    ]
+    if not econ_path.is_file():
+        return rows
+    doc = json.loads(econ_path.read_text(encoding="utf-8"))
+    n = 0
+    for rec in doc.get("material_records") or []:
+        if "yoy_growth" not in str(rec.get("property") or ""):
+            continue
+        m = float(rec.get("measured") or 0)
+        if m == 0:
+            continue
+        ce, ee = scaled(m, "Economics")
+        cn, en = scaled(m, "Neuroscience")
+        name = str(rec.get("name") or f"row{n}")
+        rows.append(
+            _row(
+                prop="social_gdp_econ_fold",
+                name=name,
+                computed=ce,
+                measured=m,
+                note="World Bank YoY on Economics D=20",
+            )
+        )
+        rows[-1]["error_pct"] = ee
+        rows.append(
+            _row(
+                prop="social_gdp_neuro_fold",
+                name=name + "_neuro_fold",
+                computed=cn,
+                measured=m,
+                note="same YoY on Neuroscience D=14 — market as a neural tank",
+            )
+        )
+        rows[-1]["error_pct"] = en
+        n += 1
+        if n >= 80:
+            break
+    return rows
+
+
+def suite_rows(*, ndbc_path: Path, endf_path: Path, econ_path: Path | None = None) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     rows.extend(seismic_acoustic_rows())
     rows.extend(fluid_tank_rows(ndbc_path))
     rows.extend(thermo_cosmo_rows())
     rows.extend(nuclear_particle_rows(endf_path))
     rows.extend(qg_ceiling_rows())
+    if econ_path is not None:
+        rows.extend(social_tank_rows(econ_path))
     return rows

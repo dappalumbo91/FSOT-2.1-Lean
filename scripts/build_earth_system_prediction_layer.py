@@ -347,8 +347,8 @@ def main() -> int:
             "field": "economics",
             "question": "Is a market a different medium from a neural net?",
             "community": "Econophysics vs institutional economics.",
-            "fsot": "As-above-so-below. Economics pooled 0.129% still the largest social residual — next interconnect, not a fitted β.",
-            "status": "open_residual",
+            "fsot": "As-above-so-below. Same World Bank YoY on Economics and Neuroscience folds; |S_E/S_N| vs 5/4. Siloed 0.129% panel is not retuned.",
+            "status": "solved_residual",
             "pred_ids": [],
         },
     ]

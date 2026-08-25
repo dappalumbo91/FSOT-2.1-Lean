@@ -106,7 +106,7 @@ FILLED_INTERCONNECTS = [
             "Quantum_Gravity",
         ],
         "status": "filled",
-        "note": "PREM+NDBC+ENDF+Carnot+QG ceiling. Pooled 0.028% GREEN. 546 tight scalars.",
+        "note": "PREM+NDBC+ENDF+Carnot+QG+social tanks. Pooled ~0.03% GREEN.",
         "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md",
     },
 ]
@@ -118,12 +118,6 @@ SCALE_GAPS = [
         "cores": ["Biology", "Fluid_Dynamics", "Neuroscience"],
         "why": "Zebrafish 0.358% is inside 0.5%. Genetics repo is the live fold; migrate when that freeze lands.",
         "fill_looks_like": "Do not densify here. Wait for FSOT-Genetics product freeze, then hub residual.",
-    },
-    {
-        "name": "Social tanks at catalog scale",
-        "cores": ["Economics", "Sociology", "Psychology"],
-        "why": "As-above-so-below says a market is not a different medium from a neural net. Economics pooled 0.129%.",
-        "fill_looks_like": "κ(Economics,Neuroscience) on World Bank series already ingested; no fitted β.",
     },
 ]
 

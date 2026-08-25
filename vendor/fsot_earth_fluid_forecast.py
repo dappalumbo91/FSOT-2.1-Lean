@@ -43,6 +43,21 @@ def forecast_horizon_days() -> int:
     return max(1, int(round(f(PHI) ** 4)))
 
 
+def omori_p() -> float:
+    """Aftershock productivity slope. Same unity as Gutenberg–Richter b = φ − 1/φ."""
+    return 1.0
+
+
+def omori_c_days() -> float:
+    """Characteristic delay after POOF. 1/φ days — timing handle for always-on scoring."""
+    return 1.0 / f(PHI)
+
+
+def omori_rate(t_days_since_poof: float) -> float:
+    """n(t) ∝ 1 / (t + c)^p. Relative rate, not a fitted aftershock model."""
+    return 1.0 / (max(t_days_since_poof, 0.0) + omori_c_days()) ** omori_p()
+
+
 def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     p1, p2 = math.radians(lat1), math.radians(lat2)
     dp = math.radians(lat2 - lat1)
@@ -168,6 +183,9 @@ def earthquake_forecasts(
                     "S_seismology": round(s_seis, 6),
                     "poof": f(POOF),
                     "suction": f(SUCTION),
+                    "omori_p": omori_p(),
+                    "omori_c_days": omori_c_days(),
+                    "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/φ)^1",
                 },
                 "kill_if": (
                     f"{'No' if expect else 'An'} USGS M≥{mag_min} inside "

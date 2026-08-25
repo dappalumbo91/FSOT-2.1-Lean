@@ -1,6 +1,6 @@
 # Scientist open questions → FSOT folds
 
-*Generated 2026-08-25T00:07:41.878363+00:00 · pin D1D38A*
+*Generated 2026-08-25T00:26:10.606574+00:00 · pin D1D38A*
 
 This is a **discovery ledger**, not a trophy wall. Each row is a question
 working scientists actually argue about. Status is one of:
@@ -13,7 +13,7 @@ working scientists actually argue about. Status is one of:
 | `sibling_owned` | Genetics/Quantum live freeze, not this hub's product |
 | `open_residual` | Domain is green but the interconnect is still thin |
 
-Counts: {'preregistered': 10, 'solved_residual': 3, 'honest_refusal': 1, 'sibling_owned': 1, 'open_residual': 1}
+Counts: {'preregistered': 10, 'solved_residual': 4, 'honest_refusal': 1, 'sibling_owned': 1}
 
 | ID | Field | Question | Community | FSOT | Status | PREDs |
 |----|-------|----------|-----------|------|--------|-------|
@@ -32,7 +32,7 @@ Counts: {'preregistered': 10, 'solved_residual': 3, 'honest_refusal': 1, 'siblin
 | `Q-G2-01` | particle | Muon g-2 excess? | Experiment vs lattice SM still moving. | PRED-004/050 same-sign lock. Do not retune after lattice papers. | **preregistered** | PRED-004, PRED-050 |
 | `Q-HIGGS-01` | particle | Is m_H an input or a prediction? | SM input; measured ~125.25 GeV. | PRED-049 hold vs next PDG combination at 0.5%. | **preregistered** | PRED-049 |
 | `Q-GEN-01` | biology | Can sequence-only models beat measured-map folds? | AlphaFold-class interpolators; wet-lab structures still the product. | Genetics sibling freeze 0.13 Å vs AF 0.47 Å. Hub waits for that freeze to migrate. Zebrafish 0.358% stays inside 0.5%. | **sibling_owned** | PRED-055 |
-| `Q-ECON-01` | economics | Is a market a different medium from a neural net? | Econophysics vs institutional economics. | As-above-so-below. Economics pooled 0.129% still the largest social residual — next interconnect, not a fitted β. | **open_residual** | — |
+| `Q-ECON-01` | economics | Is a market a different medium from a neural net? | Econophysics vs institutional economics. | As-above-so-below. Same World Bank YoY on Economics and Neuroscience folds; |S_E/S_N| vs 5/4. Siloed 0.129% panel is not retuned. | **solved_residual** | — |
 
 Related: [`EARTH_SYSTEM_PREDICTIONS.md`](EARTH_SYSTEM_PREDICTIONS.md) ·
 [`PREDICTION_TIERS.md`](PREDICTION_TIERS.md) · [`../EXPLAINED.md`](../EXPLAINED.md)

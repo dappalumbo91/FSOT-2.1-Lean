@@ -17,13 +17,14 @@ from tier_gap_fill_lib import _bench_v11, pooled_gate_passes  # noqa: E402
 
 NDBC = ROOT / "vendor" / "public_verifiable" / "live_cache" / "noaa_ndbc_cache.json"
 ENDF = ROOT / "data" / "endf_iaea_nuclear_open_benchmark.json"
+ECON = ROOT / "data" / "economics_gap_fill_benchmark.json"
 OUT = ROOT / "data" / "between_scale_interconnect_benchmark.json"
 OUTCOME = ROOT / "results" / "between_scale_interconnect_outcome.json"
 
 
 def main() -> int:
     _, authority = load_fsot_compute()
-    rows = suite_rows(ndbc_path=NDBC, endf_path=ENDF)
+    rows = suite_rows(ndbc_path=NDBC, endf_path=ENDF, econ_path=ECON)
     tight = [r for r in rows if r.get("record_kind") == "scalar"]
     by_prop: dict[str, list[float]] = {}
     for r in tight:
@@ -44,6 +45,7 @@ def main() -> int:
             "ISO/CRC 20C sound speeds; US Standard Atmosphere 1976",
             "NOAA NDBC buoy cache (pres, wtmp, wspd)",
             "IAEA/ENDF levels (He4 C12 O16 Si28 Fe56 Al27)",
+            "World Bank YoY dual-fold Economics/Neuroscience",
             "vendor/fsot_scale_interconnects.py",
         ],
         channel_stats=channel_stats or [("fsot_prediction", "scale_interconnect", all_errs)],
@@ -69,6 +71,7 @@ def main() -> int:
         "thermo_cosmo": "Carnot COP dual-fold + |S_T/S_C| vs π/2",
         "nuclear_particle": "IAEA levels dual-fold Nuclear vs Particle",
         "qg_ceiling": "|S_QG/S_C| vs A_bleed; compact remainder vs 1",
+        "social_tanks": "World Bank YoY on Economics and Neuroscience; |S_E/S_N| vs 5/4",
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
 

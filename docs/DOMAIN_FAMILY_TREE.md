@@ -1,6 +1,6 @@
 # Domain family tree — folds, subdomains, between-scale gaps
 
-**Generated:** `2026-08-24T23:35:38.830813+00:00` · pin **D1D38A**  
+**Generated:** `2026-08-25T00:26:10.420791+00:00` · pin **D1D38A**  
 **Regenerate:** `python scripts/build_domain_family_tree.py`
 
 This is a **directory of slices**, not 400 theories. Reality is one 25-D fluid
@@ -118,7 +118,6 @@ SH0ES class 1% into 0.5%, inventing unpublished tech numerics.
 | Gap | Cores | Why it is one fluid | What “filled” looks like |
 |-----|-------|---------------------|--------------------------|
 | **Developmental mechanics (sibling-owned)** | Biology, Fluid_Dynamics, Neuroscience | Zebrafish 0.358% is inside 0.5%. Genetics repo is the live fold; migrate when that freeze lands. | Do not densify here. Wait for FSOT-Genetics product freeze, then hub residual. |
-| **Social tanks at catalog scale** | Economics, Sociology, Psychology | As-above-so-below says a market is not a different medium from a neural net. Economics pooled 0.129%. | κ(Economics,Neuroscience) on World Bank series already ingested; no fitted β. |
 
 ## Largest empirical pooled residuals (still green)
 
@@ -129,6 +128,9 @@ is now 12 (biology), matching the connective engine — not astrophysics 24.
 | Domain | Records | Pooled % |
 |--------|--------:|---------:|
 | Zebrafish_Predictive_Validation_Panel | 20 | 0.3580 |
+| SH0ES_Ladder_Chain | 2 | 0.2121 |
+| SH0ES_Full_Sample | 7 | 0.1410 |
+| Cepheid_PL_Interconnect | 8 | 0.1350 |
 | Econometrics | 172 | 0.1292 |
 | Economics | 157 | 0.1292 |
 | Neuroeconomics | 65 | 0.1050 |
@@ -137,9 +139,6 @@ is now 12 (biology), matching the connective engine — not astrophysics 24.
 | CODATA_Full_Table_Open | 38 | 0.0736 |
 | immunology_benchmark.json | 84 | 0.0612 |
 | Observer_Channel_Derivation | 372 | 0.0525 |
-| TOE_CKM_PMNS_Flavor | 40 | 0.0520 |
-| neuroimmunology_benchmark.json | 92 | 0.0504 |
-| oncology_benchmark.json | 67 | 0.0504 |
 
 Kill: treating the family tree as a request for more free parameters.
 More domains strengthen Label A only. Label B T1–T6 is frozen.
