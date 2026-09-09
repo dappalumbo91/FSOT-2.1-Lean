@@ -56,7 +56,9 @@ Playbook after the 12-kill autopsy (encoded for **new** issues, not rewrites):
 - Weather quiet: only if pres≥1010 hPa **and** gst<8 m/s; skip basin `other`.
 - Tide surge: issue only if residual ≥ POOF·(1+POOF); score still vs POOF.
 - Retrospective of the 12 frozen kills: [`../results/dated_forecast_scores/RULE_RETRO.md`](../results/dated_forecast_scores/RULE_RETRO.md). Public scoreboard of issued files stays those kills.
-- **2026-09-01 playbook issue** already used the refined EQ rule. Honchō and Kermadec were quiet **inside the 39 km cell** and POOF’d on the arc at \(R_\oplus\cdot\mathrm{POOF}\approx 978\) km (Kuril / Kermadec region). That is a transferred tank, not a kernel retune. Scotia Sea loading with nothing inside 978 km stays honest quiet. Cycle diagnosis: [`PLANETARY_CYCLE_CONNECTIVE.md`](PLANETARY_CYCLE_CONNECTIVE.md).
+- **2026-09-01 playbook issue** already used the refined EQ rule. Honchō and Kermadec were quiet **inside the 39 km cell** and POOF’d on the arc at \(R_\oplus\cdot\mathrm{POOF}\approx 978\) km (Kuril / Kermadec region). That is a transferred tank, not a kernel retune.
+- **Scotia Sea:** n_recent=2, max M=6.2. That 6.2 *was* the POOF. Rate-up after a mainshock was labeled `loading` because the big-event check ran second. Next issues: recent M≥5.5 → `post_poof_aftershock`, quiet hold (Omori may go quiet). Not a kernel retune.
+- Cycle diagnosis: [`PLANETARY_CYCLE_CONNECTIVE.md`](PLANETARY_CYCLE_CONNECTIVE.md).
 
 ---
 

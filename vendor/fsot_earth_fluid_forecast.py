@@ -101,10 +101,13 @@ def valve_state(events: list[dict[str, Any]], *, now_ms: int, half_ms: int) -> s
     wr = sum(event_weight(float(e["mag"])) for e in recent)
     wp = sum(event_weight(float(e["mag"])) for e in prior)
     big = any(float(e["mag"]) >= 5.5 for e in recent)
+    # A recent M≥5.5 *is* the POOF. Rate-up after that is Omori, not a new
+    # loading promise. Scotia Sea Aug-25 was this miss: n=2, max=6.2 labeled
+    # loading because wr>wp ran first.
+    if big:
+        return "post_poof_aftershock"
     if wr > wp * 1.15:
         return "loading_suction"
-    if big and wr <= wp:
-        return "post_poof_aftershock"
     if wr < wp * 0.7:
         return "released"
     return "steady"
@@ -163,9 +166,10 @@ def earthquake_forecasts(
     out: list[dict[str, Any]] = []
     for i, cell in enumerate(cluster_cells(events), start=1):
         state = valve_state(cell["members"], now_ms=now_ms, half_ms=half_ms)
-        # Loading cells: continuation class is M>=4.5 (Timor 4.8 at 3.4 km missed a 5.0 bar).
-        # Released/steady: only an M>=5 breaks a quiet hold.
-        expect = state in {"loading_suction", "post_poof_aftershock"}
+        # Loading: SUCTION without a recent mainshock — expect M>=4.5.
+        # Post-POOF: the M≥5.5 already fired; Omori decay may go quiet.
+        # Quiet hold (kill only if another M≥5). Not a second promised rupture.
+        expect = state == "loading_suction"
         mag_min = 4.5 if expect else 5.0
         fid = f"FCAST-EQ-{issued.strftime('%Y%m%dT%H%M')}-{i:02d}"
         out.append(
@@ -190,7 +194,11 @@ def earthquake_forecasts(
                     "fsot_pressure": round(float(cell["pressure"]), 4),
                     "n_recent": int(cell["n"]),
                     "max_mag_recent": float(cell["max_mag"]),
-                    "refine_note": "M>=threshold only on loading/post_poof; released/steady hold if quiet",
+                    "refine_note": (
+                        "Loading (no recent M≥5.5) expects M≥4.5. "
+                        "Post-POOF / released / steady: quiet hold; kill only if another M≥5. "
+                        "A recent M≥5.5 is the POOF, not a new loading promise."
+                    ),
                     "S_seismology": round(s_seis, 6),
                     "poof": f(POOF),
                     "suction": f(SUCTION),

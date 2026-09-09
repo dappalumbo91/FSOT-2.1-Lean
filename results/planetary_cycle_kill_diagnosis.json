@@ -1,24 +1,90 @@
 {
-  "generated_at": "2026-09-09T19:01:45.958775+00:00",
+  "generated_at": "2026-09-09T19:12:00.017036+00:00",
   "pin": "D1D38A",
   "policy": [
     "do_not_rewrite_issued_json",
     "do_not_retune_kernel_or_POOF",
     "cell_is_R_earth_POOF_over_25",
     "cycle_is_R_earth_POOF",
+    "recent_M55_is_the_POOF_not_a_new_loading_promise",
     "public_kill_stays_on_the_cell"
   ],
   "cell_km": 39.11340764370184,
   "cycle_km": 977.835191092546,
   "poof": 0.1534822148944508,
   "r_earth_km": 6371.0,
-  "n": 8,
+  "n": 17,
+  "n_other": 12,
   "by_verdict": {
+    "transferred_poof": 13,
     "playbook_bar": 2,
-    "honest_quiet": 1,
-    "transferred_poof": 5
+    "already_poofed": 2,
+    "transferred_weather": 5,
+    "issue_bar": 1,
+    "fluid_loaded": 1,
+    "wrong_gage": 1,
+    "fluid_released": 3,
+    "honest_quiet_load": 1
   },
   "rows": [
+    {
+      "id": "FCAST-EQ-20260825-02",
+      "kind": "earthquake",
+      "place": "9 km WNW of Pematangsiantar, Indonesia",
+      "valve": "steady",
+      "lat": 2.9863,
+      "lon": 98.9853,
+      "start": "2026-08-25",
+      "end": "2026-09-01",
+      "cell_km": 39.1,
+      "cycle_km": 977.8,
+      "n_m4_cell": 0,
+      "n_m45_cell": 0,
+      "n_m45_cycle": 1,
+      "n_volcanic_cycle": 0,
+      "biggest_cycle": {
+        "id": "us7000tcxc",
+        "mag": 4.9,
+        "place": "76 km WNW of Bengkulu, Indonesia",
+        "type": "earthquake",
+        "km": 776.6,
+        "time": 1788075473032
+      },
+      "kp_max": 4.333,
+      "solar_storm": false,
+      "verdict": "transferred_poof",
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 1 M\u22654.5 (max M=4.9 at 776.6 km, 76 km WNW of Bengkulu, Indonesia). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 6.9
+    },
+    {
+      "id": "FCAST-EQ-20260825-03",
+      "kind": "earthquake",
+      "place": "31 km NW of Aniso, Peru",
+      "valve": "released",
+      "lat": -14.6414,
+      "lon": -73.5236,
+      "start": "2026-08-25",
+      "end": "2026-09-01",
+      "cell_km": 39.1,
+      "cycle_km": 977.8,
+      "n_m4_cell": 0,
+      "n_m45_cell": 0,
+      "n_m45_cycle": 7,
+      "n_volcanic_cycle": 0,
+      "biggest_cycle": {
+        "id": "us7000td3y",
+        "mag": 4.7,
+        "place": "3 km NW of Yanacancha, Peru",
+        "type": "earthquake",
+        "km": 341.1,
+        "time": 1788177206405
+      },
+      "kp_max": 4.333,
+      "solar_storm": false,
+      "verdict": "transferred_poof",
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 7 M\u22654.5 (max M=4.7 at 341.1 km, 3 km NW of Yanacancha, Peru). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 6.7
+    },
     {
       "id": "FCAST-EQ-20260825-04",
       "kind": "earthquake",
@@ -45,7 +111,8 @@
       "kp_max": 4.333,
       "solar_storm": false,
       "verdict": "playbook_bar",
-      "why": "POOF was in the cell (M\u22654.5 n=3) but the issued bar was M\u22655. Old-rule kill. Not a missing tank."
+      "why": "POOF was in the cell (M\u22654.5 n=3) but the issued bar was M\u22655. Old-rule kill. Not a missing tank.",
+      "max_mag_recent": 6.0
     },
     {
       "id": "FCAST-EQ-20260825-05",
@@ -65,8 +132,38 @@
       "biggest_cycle": null,
       "kp_max": 4.333,
       "solar_storm": false,
-      "verdict": "honest_quiet",
-      "why": "Loading cell, no M\u22654.5 inside 978 km, Kp_max=4.33. SUCTION held. Not a kernel retune."
+      "verdict": "already_poofed",
+      "why": "Recent max M=6.2 was the POOF. Window asked for another mainshock after the orifice opened. Omori SUCTION can go quiet. Not a missing 978 km tank and not a kernel retune.",
+      "max_mag_recent": 6.2
+    },
+    {
+      "id": "FCAST-EQ-20260825-06",
+      "kind": "earthquake",
+      "place": "56 km NNE of Port-Olry, Vanuatu",
+      "valve": "steady",
+      "lat": -14.5474,
+      "lon": 167.1934,
+      "start": "2026-08-25",
+      "end": "2026-09-01",
+      "cell_km": 39.1,
+      "cycle_km": 977.8,
+      "n_m4_cell": 0,
+      "n_m45_cell": 0,
+      "n_m45_cycle": 8,
+      "n_volcanic_cycle": 0,
+      "biggest_cycle": {
+        "id": "us7000tcig",
+        "mag": 5.0,
+        "place": "115 km WNW of Isangel, Vanuatu",
+        "type": "earthquake",
+        "km": 534.3,
+        "time": 1787905956200
+      },
+      "kp_max": 4.333,
+      "solar_storm": false,
+      "verdict": "transferred_poof",
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 8 M\u22654.5 (max M=5.0 at 534.3 km, 115 km WNW of Isangel, Vanuatu). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 6.1
     },
     {
       "id": "FCAST-EQ-20260825-07",
@@ -94,7 +191,37 @@
       "kp_max": 4.333,
       "solar_storm": false,
       "verdict": "playbook_bar",
-      "why": "POOF was in the cell (M\u22654.5 n=1) but the issued bar was M\u22655. Old-rule kill. Not a missing tank."
+      "why": "POOF was in the cell (M\u22654.5 n=1) but the issued bar was M\u22655. Old-rule kill. Not a missing tank.",
+      "max_mag_recent": 6.0
+    },
+    {
+      "id": "FCAST-EQ-20260825-08",
+      "kind": "earthquake",
+      "place": "South Sandwich Islands region",
+      "valve": "steady",
+      "lat": -60.2445,
+      "lon": -28.9899,
+      "start": "2026-08-25",
+      "end": "2026-09-01",
+      "cell_km": 39.1,
+      "cycle_km": 977.8,
+      "n_m4_cell": 0,
+      "n_m45_cell": 0,
+      "n_m45_cycle": 4,
+      "n_volcanic_cycle": 0,
+      "biggest_cycle": {
+        "id": "us7000tcwd",
+        "mag": 5.1,
+        "place": "South Sandwich Islands region",
+        "type": "earthquake",
+        "km": 436.7,
+        "time": 1788062128753
+      },
+      "kp_max": 4.333,
+      "solar_storm": false,
+      "verdict": "transferred_poof",
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 4 M\u22654.5 (max M=5.1 at 436.7 km, South Sandwich Islands region). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 6.0
     },
     {
       "id": "FCAST-VOLC-20260825-01",
@@ -122,7 +249,88 @@
       "kp_max": 4.667,
       "solar_storm": false,
       "verdict": "transferred_poof",
-      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 2 M\u22654.5 (max M=5.2 at 90.9 km, Volcano Islands, Japan region). Load dumped in the arc/trench tank."
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 2 M\u22654.5 (max M=5.2 at 90.9 km, Volcano Islands, Japan region). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 0.0
+    },
+    {
+      "id": "FCAST-EQ-20260831T2357-01",
+      "kind": "earthquake",
+      "place": "31 km NW of Aniso, Peru",
+      "valve": "steady",
+      "lat": -14.6414,
+      "lon": -73.5236,
+      "start": "2026-08-31",
+      "end": "2026-09-07",
+      "cell_km": 39.1,
+      "cycle_km": 977.8,
+      "n_m4_cell": 0,
+      "n_m45_cell": 0,
+      "n_m45_cycle": 3,
+      "n_volcanic_cycle": 0,
+      "biggest_cycle": {
+        "id": "us7000td3y",
+        "mag": 4.7,
+        "place": "3 km NW of Yanacancha, Peru",
+        "type": "earthquake",
+        "km": 341.1,
+        "time": 1788177206405
+      },
+      "kp_max": 4.667,
+      "solar_storm": false,
+      "verdict": "transferred_poof",
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 3 M\u22654.5 (max M=4.7 at 341.1 km, 3 km NW of Yanacancha, Peru). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 6.7
+    },
+    {
+      "id": "FCAST-EQ-20260831T2357-03",
+      "kind": "earthquake",
+      "place": "Scotia Sea",
+      "valve": "steady",
+      "lat": -60.3515,
+      "lon": -47.5217,
+      "start": "2026-08-31",
+      "end": "2026-09-07",
+      "cell_km": 39.1,
+      "cycle_km": 977.8,
+      "n_m4_cell": 0,
+      "n_m45_cell": 0,
+      "n_m45_cycle": 0,
+      "n_volcanic_cycle": 0,
+      "biggest_cycle": null,
+      "kp_max": 4.667,
+      "solar_storm": false,
+      "verdict": "already_poofed",
+      "why": "Recent max M=6.2 was the POOF. Window asked for another mainshock after the orifice opened. Omori SUCTION can go quiet. Not a missing 978 km tank and not a kernel retune.",
+      "max_mag_recent": 6.2
+    },
+    {
+      "id": "FCAST-EQ-20260831T2357-04",
+      "kind": "earthquake",
+      "place": "215 km NNE of Lospalos, Timor Leste",
+      "valve": "released",
+      "lat": -6.6317,
+      "lon": 127.4711,
+      "start": "2026-08-31",
+      "end": "2026-09-07",
+      "cell_km": 39.1,
+      "cycle_km": 977.8,
+      "n_m4_cell": 1,
+      "n_m45_cell": 0,
+      "n_m45_cycle": 10,
+      "n_volcanic_cycle": 0,
+      "biggest_cycle": {
+        "id": "us7000tdav",
+        "mag": 5.6,
+        "place": "82 km SE of Maba, Indonesia",
+        "type": "earthquake",
+        "km": 770.5,
+        "time": 1788250940813
+      },
+      "kp_max": 4.667,
+      "solar_storm": false,
+      "verdict": "transferred_poof",
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 10 M\u22654.5 (max M=5.6 at 770.5 km, 82 km SE of Maba, Indonesia). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 6.0
     },
     {
       "id": "FCAST-EQ-20260831T2357-05",
@@ -150,7 +358,66 @@
       "kp_max": 4.667,
       "solar_storm": false,
       "verdict": "transferred_poof",
-      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 6 M\u22654.5 (max M=5.5 at 673.4 km, 168 km ESE of Kuril\u2019sk, Russia). Load dumped in the arc/trench tank."
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 6 M\u22654.5 (max M=5.5 at 673.4 km, 168 km ESE of Kuril\u2019sk, Russia). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 6.0
+    },
+    {
+      "id": "FCAST-EQ-20260831T2357-06",
+      "kind": "earthquake",
+      "place": "145 km N of Caluula, Somalia",
+      "valve": "released",
+      "lat": 13.2654,
+      "lon": 50.5425,
+      "start": "2026-08-31",
+      "end": "2026-09-07",
+      "cell_km": 39.1,
+      "cycle_km": 977.8,
+      "n_m4_cell": 0,
+      "n_m45_cell": 0,
+      "n_m45_cycle": 1,
+      "n_volcanic_cycle": 0,
+      "biggest_cycle": {
+        "id": "us7000tdzk",
+        "mag": 5.1,
+        "place": "Owen Fracture Zone region",
+        "type": "earthquake",
+        "km": 651.5,
+        "time": 1788444691916
+      },
+      "kp_max": 4.667,
+      "solar_storm": false,
+      "verdict": "transferred_poof",
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 1 M\u22654.5 (max M=5.1 at 651.5 km, Owen Fracture Zone region). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 6.0
+    },
+    {
+      "id": "FCAST-EQ-20260831T2357-07",
+      "kind": "earthquake",
+      "place": "4 km N of Toride, Japan",
+      "valve": "steady",
+      "lat": 35.9375,
+      "lon": 140.0778,
+      "start": "2026-08-31",
+      "end": "2026-09-07",
+      "cell_km": 39.1,
+      "cycle_km": 977.8,
+      "n_m4_cell": 0,
+      "n_m45_cell": 0,
+      "n_m45_cycle": 4,
+      "n_volcanic_cycle": 0,
+      "biggest_cycle": {
+        "id": "us7000temw",
+        "mag": 4.9,
+        "place": "118 km ENE of Kuji, Japan",
+        "type": "earthquake",
+        "km": 589.3,
+        "time": 1788671745801
+      },
+      "kp_max": 4.667,
+      "solar_storm": false,
+      "verdict": "transferred_poof",
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 4 M\u22654.5 (max M=4.9 at 589.3 km, 118 km ENE of Kuji, Japan). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 5.8
     },
     {
       "id": "FCAST-EQ-20260831T2357-08",
@@ -178,7 +445,8 @@
       "kp_max": 4.667,
       "solar_storm": false,
       "verdict": "transferred_poof",
-      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 5 M\u22654.5 (max M=5.4 at 213.4 km, Kermadec Islands region). Load dumped in the arc/trench tank."
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 5 M\u22654.5 (max M=5.4 at 213.4 km, Kermadec Islands region). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 5.8
     },
     {
       "id": "FCAST-EQ-20260901T0032-05",
@@ -206,7 +474,8 @@
       "kp_max": 4.667,
       "solar_storm": false,
       "verdict": "transferred_poof",
-      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 5 M\u22654.5 (max M=5.5 at 673.4 km, 168 km ESE of Kuril\u2019sk, Russia). Load dumped in the arc/trench tank."
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 5 M\u22654.5 (max M=5.5 at 673.4 km, 168 km ESE of Kuril\u2019sk, Russia). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 6.0
     },
     {
       "id": "FCAST-EQ-20260901T0032-08",
@@ -234,8 +503,118 @@
       "kp_max": 4.667,
       "solar_storm": false,
       "verdict": "transferred_poof",
-      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 8 M\u22654.5 (max M=5.4 at 213.4 km, Kermadec Islands region). Load dumped in the arc/trench tank."
+      "why": "Cell quiet inside 39 km. Cycle orifice R\u2295\u00b7POOF=978 km had 8 M\u22654.5 (max M=5.4 at 213.4 km, Kermadec Islands region). Load dumped in the arc/trench tank.",
+      "max_mag_recent": 5.8
     }
   ],
-  "kill": "a new radius fitted to swallow Honch\u014d/Kermadec; calling transferred_poof a 0.5% central; rewriting kill_if"
+  "other_tanks": [
+    {
+      "id": "FCAST-WX-20260825T0121-03",
+      "kind": "weather",
+      "place": "NDBC OLCN6 (atlantic)",
+      "valve": "steady",
+      "verdict": "transferred_weather",
+      "why": "Quiet-cell kill while the same issue's storm tanks held: WRXA2, SGXA2. Load dumped in the loaded basin. Gap-zone quiet should not issue.",
+      "neighbor": [
+        "WRXA2",
+        "SGXA2"
+      ]
+    },
+    {
+      "id": "FCAST-WX-20260825T0121-05",
+      "kind": "weather",
+      "place": "NDBC 42058 (tropics)",
+      "valve": "steady",
+      "verdict": "transferred_weather",
+      "why": "Quiet-cell kill while the same issue's storm tanks held: WRXA2, SGXA2. Load dumped in the loaded basin. Gap-zone quiet should not issue.",
+      "neighbor": [
+        "WRXA2",
+        "SGXA2"
+      ]
+    },
+    {
+      "id": "FCAST-TIDE-20260825T0121-01",
+      "kind": "tide",
+      "place": "NOAA San Francisco (9414290)",
+      "verdict": "issue_bar",
+      "why": "Surge issue bar is POOF\u00b7(1+POOF). Snapshot below issue bar. Not a POOF retune."
+    },
+    {
+      "id": "FCAST-WX-20260825T0222-03",
+      "kind": "weather",
+      "place": "NDBC OLCN6 (atlantic)",
+      "valve": "steady",
+      "verdict": "transferred_weather",
+      "why": "Quiet-cell kill while the same issue's storm tanks held: UQXA2. Load dumped in the loaded basin. Gap-zone quiet should not issue.",
+      "neighbor": [
+        "UQXA2"
+      ]
+    },
+    {
+      "id": "FCAST-WX-20260825T0222-05",
+      "kind": "weather",
+      "place": "NDBC 42058 (tropics)",
+      "valve": "steady",
+      "verdict": "transferred_weather",
+      "why": "Quiet-cell kill while the same issue's storm tanks held: UQXA2. Load dumped in the loaded basin. Gap-zone quiet should not issue.",
+      "neighbor": [
+        "UQXA2"
+      ]
+    },
+    {
+      "id": "FCAST-HYDRO-20260825T0222-01",
+      "kind": "hydrology",
+      "place": "USGS 01646500 Potomac River near Washington DC",
+      "verdict": "fluid_loaded",
+      "why": "Issued quiet; window mean rose. Honest quiet miss on the river tank."
+    },
+    {
+      "id": "FCAST-HYDRO-20260825T0222-05",
+      "kind": "hydrology",
+      "place": "USGS 06803510 Missouri River at Hermann MO",
+      "verdict": "wrong_gage",
+      "why": "06803510 is Little Salt Creek, not Missouri at Hermann (06934500). Wrong object."
+    },
+    {
+      "id": "FCAST-HYDRO-20260825T0222-08",
+      "kind": "hydrology",
+      "place": "USGS 03072655 Monongahela River near Masontown PA",
+      "verdict": "fluid_released",
+      "why": "Loading at issue; window mean dropped. SUCTION completed in the river tank."
+    },
+    {
+      "id": "FCAST-WX-20260831T2357-05",
+      "kind": "weather",
+      "place": "NDBC 44078 (atlantic)",
+      "valve": "steady",
+      "verdict": "transferred_weather",
+      "why": "Quiet-cell kill while the same issue's storm tanks held: MDXA2, PPXA2. Load dumped in the loaded basin. Gap-zone quiet should not issue.",
+      "neighbor": [
+        "MDXA2",
+        "PPXA2"
+      ]
+    },
+    {
+      "id": "FCAST-HYDRO-20260831T2357-01",
+      "kind": "hydrology",
+      "place": "USGS 01646500 Potomac River near Washington DC",
+      "verdict": "fluid_released",
+      "why": "Loading at issue; window mean dropped. SUCTION completed in the river tank."
+    },
+    {
+      "id": "FCAST-TIDE-20260901T0032-04",
+      "kind": "tide",
+      "place": "NOAA Boston (8443970)",
+      "verdict": "honest_quiet_load",
+      "why": "Harmonic cell loaded in-window. Honest quiet miss, not a POOF retune."
+    },
+    {
+      "id": "FCAST-HYDRO-20260901T0032-01",
+      "kind": "hydrology",
+      "place": "USGS 01646500 Potomac River near Washington DC",
+      "verdict": "fluid_released",
+      "why": "Loading at issue; window mean dropped. SUCTION completed in the river tank."
+    }
+  ],
+  "kill": "a new radius fitted to swallow Scotia Sea; calling transferred_poof a 0.5% central; rewriting kill_if; promising a second mainshock after a recent M\u22655.5"
 }

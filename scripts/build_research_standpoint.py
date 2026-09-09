@@ -1090,10 +1090,10 @@ def main() -> int:
             {
                 "id": "NW-DATED",
                 "what": (
-                    "Dated windows: hold 65 / kill 45 / awaiting 4. Loading kills: "
-                    "five transferred_poof on the planetary cycle (R⊕·POOF≈978 km); "
-                    "Timor/Honchō Aug-25 are playbook_bar; Scotia Sea honest_quiet. "
-                    "2026-09-09 issue uses corrected hydro IDs. Score after valid_to."
+                    "Dated windows: hold 65 / kill 45 / awaiting 4. Crustal loading "
+                    "kills are transferred_poof on the 978 km cycle or already_poofed "
+                    "(Scotia M6.2). Next issues: recent M≥5.5 is post-POOF, not a new "
+                    "loading promise. Score after valid_to."
                 ),
                 "not": "Rewriting issued JSON. Clock-time hypocenter.",
             },

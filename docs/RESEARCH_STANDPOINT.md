@@ -1,6 +1,6 @@
 # Research standpoint — what the hub is, what still has to hold
 
-*Generated 2026-09-09T19:03:03.122094+00:00 · pin D1D38A*
+*Generated 2026-09-09T19:12:14.267573+00:00 · pin D1D38A*
 
 This is the step-back. **Not** another prediction wave and **not** another
 domain count. Label A is the empirical framework. Label B T1–T6 is the
@@ -262,7 +262,7 @@ Standing compare: [`OBJECT_COMPARE.md`](OBJECT_COMPARE.md) · `results/literatur
 | `NW-APPLY` | Worked APPLY cookbooks cover the remaining high-value cores (Materials, Acoustics, Fluid, Nuclear, Thermo, Chemistry ladder, Neuroscience, Astronomy). Satellite folds use the neighbor page. Keep each cookbook honest to the named public table. | A second math key. |
 | `NW-OBJECT` | Keep OBJECT_COMPARE live: arXiv/PDG/survey papers scored against the named lock. Append via record_prediction_outcome.py. Refresh python scripts/build_object_compare.py. | Retuning fsot_predicted when a paper lands. |
 | `NW-CTHIN` | Remaining measured C_thin are SH0ES/Cepheid headline objects (chain, full NIR sample, PL interconnect). Densify only with the next published named table (more JWST TRGB hosts / host-mean mixture). Do not pad with identical-fraction APPLY copies. | Process/certificate spines counted as scientific depth. Per-star photometry as a median pad. |
-| `NW-DATED` | Dated windows: hold 65 / kill 45 / awaiting 4. Loading kills: five transferred_poof on the planetary cycle (R⊕·POOF≈978 km); Timor/Honchō Aug-25 are playbook_bar; Scotia Sea honest_quiet. 2026-09-09 issue uses corrected hydro IDs. Score after valid_to. | Rewriting issued JSON. Clock-time hypocenter. |
+| `NW-DATED` | Dated windows: hold 65 / kill 45 / awaiting 4. Crustal loading kills are transferred_poof on the 978 km cycle or already_poofed (Scotia M6.2). Next issues: recent M≥5.5 is post-POOF, not a new loading promise. Score after valid_to. | Rewriting issued JSON. Clock-time hypocenter. |
 | `NW-CASP` | Genetics CASP/CAMEO blind protocol (Grok Build owns the run). | Quoting 0.13 Å as sequence-only. Cross-citing FSC Å. |
 | `NW-OPEN` | T3/T4 uniqueness / path-integral confinement stays open research. Euclid DR1 12 Nov 2026 is a watch. | Pretending Label B uniqueness is proved. Euclid CLOE as measured. |
 

@@ -117,7 +117,9 @@ def diagnose_one(fc: dict) -> dict[str, Any] | None:
     valve = str(pred.get("valve_state") or "")
     if kind not in {"earthquake", "volcanic"}:
         return None
-    if kind == "earthquake" and valve not in {"loading_suction", "post_poof_aftershock"}:
+    max_recent = float(pred.get("max_mag_recent") or 0)
+    loading = valve in {"loading_suction", "post_poof_aftershock"} or max_recent >= 5.5
+    if kind == "earthquake" and not loading:
         return None
     if "lat" not in loc:
         return None
@@ -149,7 +151,14 @@ def diagnose_one(fc: dict) -> dict[str, Any] | None:
     n_cycle = len(cycle)
     biggest_cycle = cycle[0] if cycle else None
     solar_storm = kp is not None and kp >= 5.0
-    if n_cell_m45:
+    if max_recent >= 5.5 and n_cell_m45 == 0 and n_cycle == 0:
+        verdict = "already_poofed"
+        why = (
+            f"Recent max M={max_recent} was the POOF. Window asked for another "
+            "mainshock after the orifice opened. Omori SUCTION can go quiet. "
+            "Not a missing 978 km tank and not a kernel retune."
+        )
+    elif n_cell_m45:
         verdict = "playbook_bar"
         why = (
             f"POOF was in the cell (M≥4.5 n={n_cell_m45}) but the issued bar "
@@ -194,13 +203,108 @@ def diagnose_one(fc: dict) -> dict[str, Any] | None:
         "solar_storm": solar_storm,
         "verdict": verdict,
         "why": why,
+        "max_mag_recent": max_recent,
     }
+
+
+def diagnose_other(fc: dict, issue_holds: dict[str, list[str]]) -> dict[str, Any] | None:
+    """Weather / tide / hydro kills as tank transfers or wrong objects."""
+    kind = str(fc.get("kind") or "")
+    loc = fc.get("location") or {}
+    pred = fc.get("predicted") or {}
+    fid = str(fc.get("id") or "")
+    if kind == "weather":
+        storms = issue_holds.get(fid[:22], [])  # weak key; use issued_at
+        issued = str(fc.get("issued_at") or "")
+        storms = issue_holds.get(issued, [])
+        cls = str(pred.get("class") or "")
+        if "quiet" in cls and storms:
+            return {
+                "id": fid,
+                "kind": kind,
+                "place": loc.get("name"),
+                "valve": pred.get("valve_state"),
+                "verdict": "transferred_weather",
+                "why": (
+                    "Quiet-cell kill while the same issue's storm tanks held: "
+                    + ", ".join(storms[:4])
+                    + ". Load dumped in the loaded basin. Gap-zone quiet should not issue."
+                ),
+                "neighbor": storms,
+            }
+        return {
+            "id": fid,
+            "kind": kind,
+            "place": loc.get("name"),
+            "valve": pred.get("valve_state"),
+            "verdict": "gap_zone_quiet",
+            "why": "Issued quiet in the 1000–1010 hPa / 8–15 m/s gap. New issuer skips. Not a POOF retune.",
+        }
+    if kind == "tide":
+        expect = bool(pred.get("expect_surge") or "surge" in str(pred.get("class") or ""))
+        if expect:
+            return {
+                "id": fid,
+                "kind": kind,
+                "place": loc.get("name"),
+                "verdict": "issue_bar",
+                "why": "Surge issue bar is POOF·(1+POOF). Snapshot below issue bar. Not a POOF retune.",
+            }
+        return {
+            "id": fid,
+            "kind": kind,
+            "place": loc.get("name"),
+            "verdict": "honest_quiet_load",
+            "why": "Harmonic cell loaded in-window. Honest quiet miss, not a POOF retune.",
+        }
+    if kind == "hydrology":
+        site = str(loc.get("site_id") or "")
+        name = str(loc.get("name") or "")
+        if "06803510" in site or "06803510" in name:
+            return {
+                "id": fid,
+                "kind": kind,
+                "place": name,
+                "verdict": "wrong_gage",
+                "why": "06803510 is Little Salt Creek, not Missouri at Hermann (06934500). Wrong object.",
+            }
+        if pred.get("expect_high_flow"):
+            return {
+                "id": fid,
+                "kind": kind,
+                "place": name,
+                "verdict": "fluid_released",
+                "why": "Loading at issue; window mean dropped. SUCTION completed in the river tank.",
+            }
+        return {
+            "id": fid,
+            "kind": kind,
+            "place": name,
+            "verdict": "fluid_loaded",
+            "why": "Issued quiet; window mean rose. Honest quiet miss on the river tank.",
+        }
+    return None
 
 
 def main() -> int:
     kills = load_kills()
+    issue_storm_holds: dict[str, list[str]] = {}
+    for p in ISSUE_DIR.glob("*_issue.json"):
+        if p.name == "LATEST.json":
+            continue
+        doc = json.loads(p.read_text(encoding="utf-8"))
+        issued = str(doc.get("issued_at") or "")
+        score_p = SCORE_DIR / p.name.replace("_issue", "_score")
+        holds: list[str] = []
+        if score_p.is_file():
+            for r in json.loads(score_p.read_text(encoding="utf-8")).get("rows") or []:
+                if r.get("result") == "hold" and r.get("expect_storm"):
+                    holds.append(str(r.get("buoy_id") or r.get("id")))
+        issue_storm_holds[issued] = holds
+
     seen: set[tuple] = set()
     rows: list[dict[str, Any]] = []
+    other: list[dict[str, Any]] = []
     for _score, fc in kills:
         loc = fc.get("location") or {}
         start, end = _window(fc)
@@ -215,12 +319,20 @@ def main() -> int:
             continue
         diag = diagnose_one(fc)
         if diag is None:
+            o = diagnose_other(fc, issue_storm_holds)
+            if o is None:
+                continue
+            ok = ("other", o.get("id"))
+            if ok in seen:
+                continue
+            seen.add(ok)
+            other.append(o)
             continue
         seen.add(key)
         rows.append(diag)
 
     by_v: dict[str, int] = {}
-    for r in rows:
+    for r in rows + other:
         by_v[str(r["verdict"])] = by_v.get(str(r["verdict"]), 0) + 1
 
     doc = {
@@ -231,6 +343,7 @@ def main() -> int:
             "do_not_retune_kernel_or_POOF",
             "cell_is_R_earth_POOF_over_25",
             "cycle_is_R_earth_POOF",
+            "recent_M55_is_the_POOF_not_a_new_loading_promise",
             "public_kill_stays_on_the_cell",
         ],
         "cell_km": kernel_km(),
@@ -238,11 +351,14 @@ def main() -> int:
         "poof": f(POOF),
         "r_earth_km": R_EARTH_KM,
         "n": len(rows),
+        "n_other": len(other),
         "by_verdict": by_v,
         "rows": rows,
+        "other_tanks": other,
         "kill": (
-            "a new radius fitted to swallow Honchō/Kermadec; "
-            "calling transferred_poof a 0.5% central; rewriting kill_if"
+            "a new radius fitted to swallow Scotia Sea; "
+            "calling transferred_poof a 0.5% central; rewriting kill_if; "
+            "promising a second mainshock after a recent M≥5.5"
         ),
     }
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
@@ -291,20 +407,50 @@ def main() -> int:
         )
     md += [
         "",
-        f"Counts: {by_v}.",
+        f"Crust counts: { {k: v for k, v in by_v.items() if k in ('transferred_poof','playbook_bar','already_poofed','honest_quiet','solar_coupled')} }.",
+        "",
+        "## Remaining other-tank kills (weather / tide / hydro)",
+        "",
+        "| ID | Place | Verdict | Why |",
+        "|----|-------|---------|-----|",
+    ]
+    if not other:
+        md.append("| *(none)* | | | |")
+    else:
+        seen_o: set[str] = set()
+        for r in other:
+            rid = str(r.get("id") or "")
+            if rid in seen_o:
+                continue
+            seen_o.add(rid)
+            md.append(
+                f"| `{rid}` | {r.get('place')} | **{r['verdict']}** | {r['why']} |"
+            )
+    md += [
+        "",
+        f"All verdicts: {by_v}.",
         "",
         "## Verdict vocabulary",
         "",
         "| Verdict | Meaning | Next issue |",
         "|---------|---------|------------|",
         "| `transferred_poof` | Cell quiet; cycle orifice had M≥4.5 (arc/trench). | Record neighbor tank. Cell kill_if unchanged. |",
+        "| `already_poofed` | Recent M≥5.5 *was* the POOF. Window asked for a second mainshock. | `valve_state` checks big event first; post-POOF is quiet hold. |",
         "| `playbook_bar` | POOF was in the cell under M≥4.5; issued bar was M≥5. | Already encoded: loading uses 4.5. |",
         "| `solar_coupled` | Crust quiet; Kp≥5. Solar tank loaded. | Keep solar as a planetary tank on every crustal issue. |",
-        "| `honest_quiet` | Loading, no cycle POOF, Kp quiet. SUCTION held. | Not a kernel retune. |",
+        "| `honest_quiet` | Loading, no cycle POOF, no recent M≥5.5, Kp quiet. SUCTION held. | Not a kernel retune. |",
+        "| `transferred_weather` | Quiet buoy kill; storm tanks on the same issue held. | Skip gap-zone quiet. |",
+        "| `wrong_gage` | Hydro ID is a different river. | 06934500 Hermann. |",
+        "| `fluid_released` | River loaded at issue; window mean dropped. | SUCTION completed. |",
+        "",
+        "Scotia Sea: n_recent=2, max M=6.2. That 6.2 already opened the orifice. "
+        "Labeling it `loading_suction` because rate-up ran *before* the big-event "
+        "check was the remaining miss. Next issues: recent M≥5.5 → `post_poof_aftershock`, "
+        "expect_event false (Omori may go quiet).",
         "",
         "## What this is not",
         "",
-        "- A fitted 150 km or 1000 km spring to swallow Scotia Sea / Honchō / Kermadec.",
+        "- A fitted 150 km or 1000 km spring to swallow Scotia Sea.",
         "- A clock-time hypocenter.",
         "- Flipping a public cell-kill to hold.",
         "- A new \(D_{\\mathrm{eff}}\) for 'planetary science of earthquakes'.",
@@ -320,9 +466,11 @@ def main() -> int:
     OUT_MD.write_text("\n".join(md), encoding="utf-8")
     print(f"Wrote {OUT_JSON}")
     print(f"Wrote {OUT_MD}")
-    print(f"  n={len(rows)} by_verdict={by_v} cell={kernel_km():.1f} cycle={cycle_km():.1f}")
+    print(f"  n={len(rows)} other={len(other)} by_verdict={by_v} cell={kernel_km():.1f} cycle={cycle_km():.1f}")
     for r in rows:
-        print(f"  {r['verdict']:18s} {r['id']}  {r.get('place')}")
+        print(f"  {r['verdict']:20s} {r['id']}  {r.get('place')}")
+    for r in other:
+        print(f"  {r['verdict']:20s} {r['id']}  {r.get('place')}")
     return 0
 
 
