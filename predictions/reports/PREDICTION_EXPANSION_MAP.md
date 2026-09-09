@@ -1,6 +1,6 @@
 # Prediction expansion map
 
-*Generated 2026-09-09T21:49:07.489240+00:00 · pin D1D38A*
+*Generated 2026-09-09T22:33:43.878711+00:00 · pin D1D38A*
 
 Green residual catalogs are **not** automatically predictions. A prediction
 is a named lock with a public catalog, a place or class, a calendar window
@@ -13,11 +13,11 @@ given the domains this hub already covers.
 
 | Surface | Status |
 |---------|--------|
-| Hand PREDs | **76** (A 28 / C 26 / D 22) |
+| Hand PREDs | **77** (A 29 / C 26 / D 22) |
 | Catalog layer | **35** (MPCORB, Gaia, DESI, GWTC, PubChem, exo, climate) |
 | Higgs + flavor | **33** (all inside literature-tight band) |
-| Dated fluid issue | **2026-08-25 frozen**; newer issues add basins / Kp≥5 / extra GVP / CO-OPS tides |
-| Closed-window scores | WX/tides/solar scored 2026-08-31 · EQ/hydro **2026-09-01** · volcanic **2026-09-08** |
+| Dated fluid issue | **2026-08-25 frozen**; **2026-09-09** issued (do not rewrite) |
+| Closed-window scores | hold **65** · kill **45** · awaiting **4**; score 09-09 after valid_to |
 | Nearest cosmology drop | Euclid DR1-Foundation **2026-11-12** (PRED-042/043) |
 | Family-tree remaining gap | Genetics / zebrafish **sibling-owned** |
 

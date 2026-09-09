@@ -5,7 +5,7 @@ This directory mirrors **claim freezes + abstracts** so the public GitHub repo c
 
 | Slug | Claim | Status |
 |------|-------|--------|
-| [`03-fsot-theory-of-everything-claim`](03-fsot-theory-of-everything-claim/) | Flagship: Label A + Label B (T1–T6) ToE checklist | Scaffold / freeze |
+| [`03-fsot-theory-of-everything-claim`](03-fsot-theory-of-everything-claim/) | Flagship: Label A + Label B (T1–T6) ToE checklist | Freeze **2026-09-09** (477/477, D11) |
 | [`04-fsot-mpcorb-minor-planet-catalog`](04-fsot-mpcorb-minor-planet-catalog/) | Domain: IAU MPCORB residual atlas | Scaffold / freeze |
 
 **Playbook:** clone-root `arxiv-papers/PLAYBOOK.md`  

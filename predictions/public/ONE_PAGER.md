@@ -3,7 +3,7 @@
 **Damian Arthur Palumbo** · [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean) · folder `predictions/`
 
 ### The model
-One fluid spacetime. Seeds only: **π, e, φ, γ, G**. **Zero free parameters.** Pin **D1D38A**. Same engine residual-gated across **476** green files (≤ **0.5%**). Hand PREDs **76** (PRED-001–084).
+One fluid spacetime. Seeds only: **π, e, φ, γ, G**. **Zero free parameters.** Pin **D1D38A**. Same engine residual-gated across **477** green files (≤ **0.5%**). Hand PREDs **77** (PRED-001–084).
 
 ### Hubble is not one number
 Black hole → white hole **bubble bleed** means each *structure + neighborhood* reads a different information-flow sector. CMB, TRGB, young-disk Cepheids, and nearby \(cz/d\) are not supposed to agree.

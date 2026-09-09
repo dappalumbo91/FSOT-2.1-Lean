@@ -12,7 +12,7 @@
 |---------|---------------------------|------------|
 | Green gate | **477/477** · pin **D1D38A** | Baseline health — always re-check after engine work |
 | Hand PREDs | **77** (A 29 / C 26 / D 22) | PRED-001–084 · [`reports/PREDICTION_TIERS.md`](reports/PREDICTION_TIERS.md) |
-| Dated scores | hold **41** · kill **31** · awaiting **42** | 08-31/09-01 EQ+hydro still open until ~09-08 · volcanic **2026-09-08** |
+| Dated scores | hold **65** · kill **45** · awaiting **4** | 09-09 issued; weather ~11 Sep, EQ/hydro **16 Sep**. Do not rewrite issued JSON. |
 | Multi-tool H₀ | **25** instruments | Compare any new H₀ paper *to its tool row only* |
 | SH0ES hosts | **22** sightline H₀ | New Cepheid/JWST host papers → per-host score |
 | CCHP TRGB hosts | **22** intermediate H₀ | New Freedman/CCHP papers → per-host score |

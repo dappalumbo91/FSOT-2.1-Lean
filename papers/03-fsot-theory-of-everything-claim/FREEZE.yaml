@@ -1,46 +1,67 @@
 # Flagship ToE claim freeze — numbers from live JSON only
-edition_id: "arxiv-03-fsot-theory-of-everything-claim-2026-08-03"
-edition_date: "2026-08-03"
-manuscript_date: "2026-08-03"
+edition_id: "arxiv-03-fsot-theory-of-everything-claim-2026-09-09"
+edition_date: "2026-09-09"
+manuscript_date: "2026-09-09"
 author: "Damian Arthur Palumbo"
+supersedes: "arxiv-03-fsot-theory-of-everything-claim-2026-08-03"
 
 repository:
   url: "https://github.com/dappalumbo91/FSOT-2.1-Lean"
   clone: "git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git"
-  commit: "ebc7264e41e0bbd51e0db7722c8d0d83c7f25332"
-  commit_short: "ebc7264"
-  recommended_tag: "v2.7-arxiv-toe-claim"
+  commit: "40de0d9e86bce7c7140988a8b74dc388d4d84bda"
+  commit_short: "40de0d9"
+  recommended_tag: "v2.8-arxiv-toe-claim"
   tag_pushed: false
-  note: "Update commit after publish push that includes CI + papers + aspiration fixes."
+  note: "Claim freeze = 40de0d9 (instrument contract + D11 outline). Paper-docs tip commit lands on top; accept SHA >= 40de0d9 on main with green 477/477."
 
 oracle:
   path: "vendor/fsot_compute.py"
-  sha256_prefix: "d1d38a185487b452"
+  sha256_prefix: "D1D38A185487B452"
   pin: "D1D38A"
 
 toolchains:
-  notes: "python>=3.11; optional Lean 4.31 / Coq / Isabelle / Z3 / TLA+ for full cross-proof"
+  notes: "python>=3.11; Lean 4.31 / Coq / Isabelle / F* / Rust / Z3 / TLA+ for full cross-proof"
 
 formal:
   overall_ok: true
   github_ready: true
   artifact: "data/cross_proof_verification_report.json"
+  mathlib_corpus: "5248/5248 FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED"
+  scalar_engine_structure_theorem_count: 52
+  uniqueness_attractor_lean: "FSOT/Formal/UniquenessAttractor.lean"
+  uniqueness_classical_ym: "OPEN_NOT_CLAIMED"
   acceptance_rule: "overall_ok == true"
 
 empirical:
-  green_gate_pass_count: 412
-  green_gate_file_count: 412
+  green_gate_pass_count: 477
+  green_gate_file_count: 477
   green_gate_fail_count: 0
-  tier_scalar_closed: true
-  tier_scalar_fail_count: 0
-  contested_panel_median_error_pct: 0.009407
+  median_of_medians_pct: 0.006625234573930708
+  scalar_records_envelope: 181477
   mpcorb_pooled_median_error_pct: 0.023015
   mpcorb_objects: 1554101
-  toe_dynamics_median_error_pct: 0.0
-  toe_dynamics_records: 18
-  toe_limit_recovery_median_error_pct: 0.022461
-  toe_limit_recovery_records: 16
-  notes: "Green ≤0.5% pooled; aspiration ≤0.05% tier scalar closed."
+  catalog_class_refresh_hold: 12
+  catalog_class_refresh_kill: 0
+  frb_orifice_classifier: "37/37 frozen complete set"
+  frb_cat2_catalog_n: 3390
+  frb_cat2_note: "Catalog class; not the 0.5%/99.5% orifice object"
+  dated_hold: 65
+  dated_kill: 45
+  dated_awaiting: 4
+  hand_preds: 77
+  hand_pred_range: "PRED-001–084"
+  tier_scalar_closed: false
+  tier_scalar_fail_count: 2
+  tier_scalar_open:
+    - "SH0ES_Ladder_Chain pooled 0.212% (named mixture object; not stuffed)"
+    - "Cepheid_PL_Interconnect pooled 0.135% (named interconnect; not stuffed)"
+  notes: "Official green is ≤0.5% pooled. Aspiration ≤0.05% is soft and open on two named objects."
+
+laws:
+  ledger: "docs/LAWS_OF_REALITY.md"
+  engine: "R1–R9"
+  discovered: "D1–D11"
+  d11: "orifice_scale(L,d)=L·POOF·d/25; cell d=1; cycle d=25"
 
 toe_labels:
   label_A_empirical_framework: true
@@ -49,7 +70,17 @@ toe_labels:
   boundaries_doc: "docs/TOE_CLAIM_BOUNDARIES.md"
   gap_doc: "docs/TOE_GAP_CLOSURE.md"
   report: "data/toe_gap_closure_report.json"
-  honest_scope: "T3 probes/bridges not full EH/SM Lagrangian; T4 scope statement until full gauge sector."
+  honest_scope: "T3 probes/bridges not full EH/SM Lagrangian; T4 uniqueness OPEN_NOT_CLAIMED; YM path-integral uniqueness not claimed."
+
+siblings:
+  genetics: "https://github.com/dappalumbo91/FSOT-Genetics"
+  quantum: "https://github.com/dappalumbo91/FSOT-Quantum"
+  materials: "https://github.com/dappalumbo91/FSOT-Materials"
+  note: "Silo the product, not the law. Same pin D1D38A."
+
+instrument:
+  doc: "docs/SCIENTIFIC_INSTRUMENT.md"
+  apply: "docs/APPLY.md"
 
 reproduction:
   one_command: "python scripts/run_publication_verification_bundle.py"
@@ -57,6 +88,7 @@ reproduction:
     - "python scripts/audit_all_benchmark_margins.py"
     - "python scripts/build_toe_gap_closure.py"
     - "python scripts/run_cross_proof_verification.py"
+    - "python scripts/smoke_dynamic_forecast_potentials.py"
     - "pwsh scripts/fresh_clone_repro.ps1"
   skeptic_kit: "docs/SKEPTIC_REPLICATION_KIT.md"
 
@@ -65,7 +97,13 @@ artifacts_required_after_bundle:
   - data/toe_gap_closure_report.json
   - data/tier_scalar_precision_closure.json
   - data/cross_proof_verification_report.json
-  - data/publication_claims_manifest.json
+  - docs/LAWS_OF_REALITY.md
+  - docs/SCIENTIFIC_INSTRUMENT.md
+
+ci:
+  workflow: "FSOT CI"
+  last_green_runs: [126, 127]
+  note: "Run 125 failed by scoring Cat-2 FRB dump as the orifice classifier; remedied on 5af32be."
 
 arxiv:
   primary: "cs.LO"

@@ -107,7 +107,7 @@ Tables: `reports/H0_MULTI_TOOL_PREDICTIONS.md`, `H0_SIGHTLINE_PREDICTIONS.md`, `
 
 ## 4. Beyond the sky: the multi-domain prediction atlas
 
-The model is not a cosmology hobby. The same seed engine is residual-gated on **476** green domain panels. The atlas turns that into **predictions**. Earth-system class locks (weather / seismic / volcanic / solar) use the same grammar as H₀ — sectors of one valve — **plus** dated pressure-cell windows (PRED-064) scored in `results/`: [`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md) · [`../results/dated_forecast_scores/REPORT.md`](../results/dated_forecast_scores/REPORT.md). Scientist-question map: [`reports/SCIENTIST_OPEN_QUESTIONS.md`](reports/SCIENTIST_OPEN_QUESTIONS.md). Hand PREDs: **76** (PRED-001–084).
+The model is not a cosmology hobby. The same seed engine is residual-gated on **477** green domain panels. The atlas turns that into **predictions**. Earth-system class locks (weather / seismic / volcanic / solar) use the same grammar as H₀ — sectors of one valve — **plus** dated pressure-cell windows (PRED-064) scored in `results/`: [`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md) · [`../results/dated_forecast_scores/REPORT.md`](../results/dated_forecast_scores/REPORT.md). Scientist-question map: [`reports/SCIENTIST_OPEN_QUESTIONS.md`](reports/SCIENTIST_OPEN_QUESTIONS.md). Hand PREDs: **77** (PRED-001–084).
 
 | Kind | Count (approx.) | What it means in English |
 |------|----------------:|--------------------------|
