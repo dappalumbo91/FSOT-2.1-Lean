@@ -247,6 +247,62 @@ GATED_TISSUES = [
         "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §20",
         "live": "same-look D=13/14 vs 1 at 0.179%; transmitter AA MW; mixed vs 1 retired",
     },
+        {
+            "id": "TISSUE-ATOMIC-CHEM",
+            "cores": ["Atomic_Physics", "Chemistry"],
+            "said": "Bound well and composition are adjacent D=7/8; equalize the chemistry look",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §21",
+            "live": "same-look D=7/8 at δψ=0.6; NIST IE + CRC MW",
+        },
+        {
+            "id": "TISSUE-ATOMIC-PC",
+            "cores": ["Atomic_Physics", "Physical_Chemistry"],
+            "said": "Bound well and thermo are adjacent D=7/8; equalize δψ=0.5",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §21",
+            "live": "same-look D=7/8 at δψ=0.5; NIST IE + CRC Tm",
+        },
+        {
+            "id": "TISSUE-HEP-CHEM",
+            "cores": ["High_Energy_Physics", "Chemistry"],
+            "said": "Collision and composition are adjacent D=7/8; equalize δψ=0.6",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §21",
+            "live": "same-look D=7/8 at δψ=0.6; NIST IE on HEP + CRC MW",
+        },
+        {
+            "id": "TISSUE-HEP-PC",
+            "cores": ["High_Energy_Physics", "Physical_Chemistry"],
+            "said": "Collision and thermo are adjacent D=7/8; equalize δψ=0.5",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §21",
+            "live": "same-look D=7/8 at δψ=0.5; NIST IE on HEP + CRC Tm",
+        },
+        {
+            "id": "TISSUE-PC-EM",
+            "cores": ["Physical_Chemistry", "Electromagnetism"],
+            "said": "Thermo and field are adjacent D=8/9; equalize δψ=0.5",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §22",
+            "live": "same-look D=8/9 at δψ=0.5; CRC Tm + n²",
+        },
+        {
+            "id": "TISSUE-EM-MOL",
+            "cores": ["Electromagnetism", "Molecular_Chemistry"],
+            "said": "Field and molecule are two looks at D=9; fold 0.7/0.5 onto D=8",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §22",
+            "live": "look-split vs D=8; CRC n² vs MW; vs 1 retired",
+        },
+        {
+            "id": "TISSUE-MOL-MAT",
+            "cores": ["Molecular_Chemistry", "Materials_Science"],
+            "said": "Molecule and bulk are adjacent D=9/10 already sharing δψ=0.5",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §23",
+            "live": "matched-look live |S| vs 1; CRC MW vs density",
+        },
+        {
+            "id": "TISSUE-MOL-OPT",
+            "cores": ["Molecular_Chemistry", "Optics"],
+            "said": "Molecule and light are adjacent D=9/10; equalize δψ=0.5",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §23",
+            "live": "same-look D=9/10 at δψ=0.5; CRC MW vs n; mixed vs 1 retired",
+        },
 ]
 
 

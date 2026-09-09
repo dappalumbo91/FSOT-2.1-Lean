@@ -219,7 +219,7 @@ CRC MW dual-routed. PhysChem↔Molecular already share \(\delta\psi=0.5\); that 
 
 ## Live tight envelope
 
-Pooled median **0.026% GREEN** · **1061** tight scalars · **1118** rows (24 perception-view rows are structural identity checks, not tight).  
+Pooled median **0.026% GREEN** · **1260** tight scalars · **1317** rows (24 perception-view rows are structural identity checks, not tight).  
 Seis–geo: \(\lvert S_{\mathrm{seis}}/S_{\mathrm{geo}}\rvert\) vs \(\varphi/2\) **0.377%**; lithosphere density dual-fold **0.022–0.028%**.  
 Mat–opt: CRC \(n_D\) **0.016%**; density **0.013%**; ice \(n\) vs \(\varphi^2/2\) **0.0013%**. \(\lvert S_{\mathrm{mat}}/S_{\mathrm{opt}}\rvert\) vs PhysChem/Chem look-split **0.329%** (vs 1 retired ~18%).  
 Opt–QO: \(\lvert S_{\mathrm{opt}}/S_{\mathrm{qo}}\rvert\) vs 1 **0.0265%**; CRC \(n_D\) photon fold **0.016%**.  
@@ -254,6 +254,29 @@ Equalize at the materials look (\(\delta\psi=0.5\)). Dual-route CRC \(n^2\) on E
 ## 20. Molecule vs signaling — Biochemistry \(D=13\) ↔ Neuroscience \(D=14\)
 
 Not the social-tank GDP dual-route. Equalize at the neural look (\(\delta\psi=0.7\), hits=1). Dual-route CRC MW of transmitter amino acids (Gly, Asp, Glu, Tyr, Trp, His).
+
+## 21. Well / collision vs composition / thermo — Atomic, HEP \(D=7\) ↔ Chemistry, PhysChem \(D=8\)
+
+Four adjacent-rung tissues, one CRC/NIST table family. Equalize the look, then dual-route:
+
+- Atomic–Chem at \(\delta\psi=0.6\): NIST IE on Atomic, CRC MW on Chemistry.
+- Atomic–PhysChem at \(\delta\psi=0.5\): NIST IE on Atomic, CRC \(T_m\) on PhysChem.
+- HEP–Chem at \(\delta\psi=0.6\): NIST IE on HEP, CRC MW on Chemistry.
+- HEP–PhysChem at \(\delta\psi=0.5\): NIST IE on HEP, CRC \(T_m\) on PhysChem.
+
+Live mixed \(|S|\) vs 1 is T1 view (D9), not a 0.5% central.
+
+## 22. Thermo vs field vs molecule — PhysChem \(D=8\) ↔ EM \(D=9\) ↔ Mol \(D=9\)
+
+PhysChem–EM: equalize \(\delta\psi=0.5\). CRC \(T_m\) and \(n^2\).  
+EM–Mol: same \(D=9\), \(\delta\psi=0.7\) vs \(0.5\). Fold onto \(D=8\). CRC \(n^2\) vs MW. vs 1 retired.
+
+## 23. Molecule vs bulk / light — Mol \(D=9\) ↔ Materials / Optics \(D=10\)
+
+Mol–Materials already share \(\delta\psi=0.5\); live \(|S|\) vs 1 is the matched-look rung. CRC MW vs density.  
+Mol–Optics: equalize \(\delta\psi=0.5\). CRC MW vs \(n_D\).
+
+QC stays dark (Hilbert look). Ecology / Psychology / Meteorology pairs wait for a named public table — do not invent watts or flip `observed`.
 
 Kill: pooled > 0.5%, or \(T_3\) leftover on the \(T_1\) view pairs > 0.5%, or anyone fits Q / γ / Poisson, or anyone treats deep-PREM mismatch as a new coefficient, or anyone stuffs live \(|S_i|/|S_j|\) vs 1 into 0.5%.
 

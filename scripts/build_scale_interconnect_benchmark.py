@@ -97,6 +97,14 @@ def main() -> int:
         "cm_thermo": "Adjacent D=14/15 at δψ=0.5 vs 1. CRC metal ρ vs Tm. Live mixed vs 1 retired.",
         "em_mat": "Adjacent D=9/10 at δψ=0.5 vs 1. CRC n² on EM, ρ on Materials. Live mixed vs 1 retired.",
         "biochem_neuro": "Adjacent D=13/14 at δψ=0.7 vs 1. Transmitter AA MW. Not social-tank GDP. Live mixed vs 1 retired.",
+        "atomic_chem": "Adjacent D=7/8 at δψ=0.6 vs 1. NIST IE on Atomic, CRC MW on Chemistry.",
+        "atomic_pc": "Adjacent D=7/8 at δψ=0.5 vs 1. NIST IE on Atomic, CRC Tm on PhysChem.",
+        "hep_chem": "Adjacent D=7/8 at δψ=0.6 vs 1. NIST IE on HEP, CRC MW on Chemistry.",
+        "hep_pc": "Adjacent D=7/8 at δψ=0.5 vs 1. NIST IE on HEP, CRC Tm on PhysChem.",
+        "pc_em": "Adjacent D=8/9 at δψ=0.5 vs 1. CRC Tm on PhysChem, n² on EM.",
+        "em_mol": "Same D=9 0.7/0.5 folded onto D=8. CRC n² vs MW. vs 1 retired.",
+        "mol_mat": "Adjacent D=9/10 both δψ=0.5 vs 1. CRC MW vs density.",
+        "mol_opt": "Adjacent D=9/10 at δψ=0.5 vs 1. CRC MW vs n. Live mixed vs 1 retired.",
         "perception_view": "|1+T1_i|/|1+T1_j| vs live |S_i|/|S_j| (T3 leftover). vs 1 is the same-view question, not a 0.5% central. Not a median pad.",
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")

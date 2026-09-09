@@ -16,7 +16,7 @@ These are **different ledgers**. Using one number for all of them is the discrep
 | **Atomic obligations** | **2024** | Exportable atomic multiprover obligations | `data/cross_proof_verification_report.json` |
 | **Full formal obligations** | **2587** | Full formal spine | same |
 | **Catalog obligations** | **2256** | Scientific-catalog spine (477 domains) | same |
-| **Mathlib theorems** | **5182 / 5182** | Formal corpus depth campaign | status snapshot |
+| **Mathlib theorems** | **engine 537/537 (100%) · corpus 3625/5229 (69.32%)** | Formal corpus depth campaign; L1 are generated numeric certificates | status snapshot |
 
 ## Stale phrases — ignore if you still see them
 

@@ -1825,6 +1825,412 @@ def biochem_neuro_rows() -> list[dict[str, Any]]:
     return rows
 
 
+def _ie_rows(domain: str, prop: str, note: str) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for rec in chemistry_ionization():
+        if rec.measured is None:
+            continue
+        m = f(rec.measured)
+        if m <= 0:
+            continue
+        c, e = scaled(m, domain)
+        rows.append(
+            _row(
+                prop=prop,
+                name=str(rec.name) + "_" + domain.split("_")[0].lower(),
+                computed=c,
+                measured=m,
+                note=note,
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def atomic_chem_rows() -> list[dict[str, Any]]:
+    """Atomic_Physics D=7 ↔ Chemistry D=8 — bound well vs composition.
+
+    Equalize at the chemistry look (δψ=0.6). Dual-route NIST IE on Atomic,
+    CRC MW on Chemistry.
+    """
+    s7 = scalar_at(d_eff=7, delta_psi=0.6)
+    s8 = scalar_at(d_eff=8, delta_psi=0.6)
+    live = abs(f(domain_scalar("Atomic_Physics"))) / abs(f(domain_scalar("Chemistry")))
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="atomic_chem_S_ratio_same_look",
+            name="S_D7_over_S_D8_at_dpsi_0p6",
+            computed=s7 / s8,
+            measured=1.0,
+            note=(
+                "|S(D=7,δψ=0.6)|/|S(D=8,δψ=0.6)| vs 1 — well vs composition, "
+                f"same look. Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Atomic_Physics", "Chemistry"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(_ie_rows("Atomic_Physics", "atomic_chem_IE_atomic_fold", "NIST IE on Atomic D=7"))
+    for mol in CRC_MOLECULES:
+        mw = float(mol["mw"])
+        c, e = scaled(mw, "Chemistry")
+        rows.append(
+            _row(
+                prop="atomic_chem_mw_chem_fold",
+                name=str(mol["name"]) + "_mw_chem",
+                computed=c,
+                measured=mw,
+                note="CRC MW on Chemistry D=8 — composition of the same atoms",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def atomic_pc_rows() -> list[dict[str, Any]]:
+    """Atomic_Physics D=7 ↔ Physical_Chemistry D=8 — well vs thermo look.
+
+    Equalize at δψ=0.5. NIST IE on Atomic, CRC Tm on PhysChem.
+    """
+    s7 = scalar_at(d_eff=7, delta_psi=0.5)
+    s8 = scalar_at(d_eff=8, delta_psi=0.5)
+    live = abs(f(domain_scalar("Atomic_Physics"))) / abs(
+        f(domain_scalar("Physical_Chemistry"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="atomic_pc_S_ratio_same_look",
+            name="S_D7_over_S_D8_at_dpsi_0p5",
+            computed=s7 / s8,
+            measured=1.0,
+            note=(
+                "|S(D=7,δψ=0.5)|/|S(D=8,δψ=0.5)| vs 1 — well vs thermo, same look. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Atomic_Physics", "Physical_Chemistry"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(_ie_rows("Atomic_Physics", "atomic_pc_IE_atomic_fold", "NIST IE on Atomic D=7"))
+    for mol in CRC_MOLECULES:
+        tm = float(mol["Tm"])
+        c, e = scaled(tm, "Physical_Chemistry")
+        rows.append(
+            _row(
+                prop="atomic_pc_Tm_pc_fold",
+                name=str(mol["name"]) + "_Tm_pc",
+                computed=c,
+                measured=tm,
+                note="CRC Tm on Physical_Chemistry D=8 — thermo of the well",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def hep_chem_rows() -> list[dict[str, Any]]:
+    """High_Energy_Physics D=7 ↔ Chemistry D=8 — collision vs composition.
+
+    Same compactification step as Atomic–Chem; specimen is the collision face.
+    Equalize at δψ=0.6. NIST IE on HEP, CRC MW on Chemistry.
+    """
+    s7 = scalar_at(d_eff=7, delta_psi=0.6)
+    s8 = scalar_at(d_eff=8, delta_psi=0.6)
+    live = abs(f(domain_scalar("High_Energy_Physics"))) / abs(f(domain_scalar("Chemistry")))
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="hep_chem_S_ratio_same_look",
+            name="S_D7_over_S_D8_at_dpsi_0p6_hep",
+            computed=s7 / s8,
+            measured=1.0,
+            note=(
+                "|S(D=7,δψ=0.6)|/|S(D=8,δψ=0.6)| vs 1 — collision vs composition. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("High_Energy_Physics", "Chemistry"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(_ie_rows("High_Energy_Physics", "hep_chem_IE_hep_fold", "NIST IE on HEP D=7"))
+    for mol in CRC_MOLECULES:
+        mw = float(mol["mw"])
+        c, e = scaled(mw, "Chemistry")
+        rows.append(
+            _row(
+                prop="hep_chem_mw_chem_fold",
+                name=str(mol["name"]) + "_mw_chem",
+                computed=c,
+                measured=mw,
+                note="CRC MW on Chemistry D=8",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def hep_pc_rows() -> list[dict[str, Any]]:
+    """High_Energy_Physics D=7 ↔ Physical_Chemistry D=8 — collision vs thermo."""
+    s7 = scalar_at(d_eff=7, delta_psi=0.5)
+    s8 = scalar_at(d_eff=8, delta_psi=0.5)
+    live = abs(f(domain_scalar("High_Energy_Physics"))) / abs(
+        f(domain_scalar("Physical_Chemistry"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="hep_pc_S_ratio_same_look",
+            name="S_D7_over_S_D8_at_dpsi_0p5_hep",
+            computed=s7 / s8,
+            measured=1.0,
+            note=(
+                "|S(D=7,δψ=0.5)|/|S(D=8,δψ=0.5)| vs 1 — collision vs thermo. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("High_Energy_Physics", "Physical_Chemistry"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(_ie_rows("High_Energy_Physics", "hep_pc_IE_hep_fold", "NIST IE on HEP D=7"))
+    for mol in CRC_MOLECULES:
+        tm = float(mol["Tm"])
+        c, e = scaled(tm, "Physical_Chemistry")
+        rows.append(
+            _row(
+                prop="hep_pc_Tm_pc_fold",
+                name=str(mol["name"]) + "_Tm_pc",
+                computed=c,
+                measured=tm,
+                note="CRC Tm on Physical_Chemistry D=8",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def pc_em_rows() -> list[dict[str, Any]]:
+    """Physical_Chemistry D=8 ↔ Electromagnetism D=9 — thermo vs field.
+
+    Equalize at the PhysChem look (δψ=0.5). CRC Tm on PhysChem, n² on EM.
+    """
+    s8 = scalar_at(d_eff=8, delta_psi=0.5)
+    s9 = scalar_at(d_eff=9, delta_psi=0.5)
+    live = abs(f(domain_scalar("Physical_Chemistry"))) / abs(
+        f(domain_scalar("Electromagnetism"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="pc_em_S_ratio_same_look",
+            name="S_D8_over_S_D9_at_dpsi_0p5",
+            computed=s8 / s9,
+            measured=1.0,
+            note=(
+                "|S(D=8,δψ=0.5)|/|S(D=9,δψ=0.5)| vs 1 — thermo vs field. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Physical_Chemistry", "Electromagnetism"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    for mol in CRC_MOLECULES:
+        tm = float(mol["Tm"])
+        c, e = scaled(tm, "Physical_Chemistry")
+        rows.append(
+            _row(
+                prop="pc_em_Tm_pc_fold",
+                name=str(mol["name"]) + "_Tm_pc",
+                computed=c,
+                measured=tm,
+                note="CRC Tm on Physical_Chemistry D=8",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    for mat in OPTICAL_MATERIALS:
+        eps = float(mat["n"]) ** 2
+        c, e = scaled(eps, "Electromagnetism")
+        rows.append(
+            _row(
+                prop="pc_em_eps_em_fold",
+                name=str(mat["name"]) + "_eps_em",
+                computed=c,
+                measured=eps,
+                note="CRC n² on Electromagnetism D=9 — Maxwell dielectric",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def em_mol_rows() -> list[dict[str, Any]]:
+    """Electromagnetism D=9 ↔ Molecular_Chemistry D=9 — field vs molecule.
+
+    Same D. δψ 0.7 vs 0.5. Fold the look-split onto D=8. CRC n² on EM, MW on Mol.
+    """
+    live = look_split_ratio("Electromagnetism", "Molecular_Chemistry")
+    look = scalar_at(d_eff=8, delta_psi=0.7) / scalar_at(d_eff=8, delta_psi=0.5)
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="em_mol_S_ratio",
+            name="S_em_over_S_mol_vs_D8_look",
+            computed=live,
+            measured=look,
+            note=(
+                "|S_EM|/|S_Mol| vs S(D=8,δψ=0.7)/S(D=8,δψ=0.5) — same 0.7/0.5 "
+                f"look-split. Not vs 1 ({vs1:.1f}%)."
+            ),
+            extra={
+                "kappa": kappa_domains("Electromagnetism", "Molecular_Chemistry"),
+                "rejected_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    for mat in OPTICAL_MATERIALS:
+        eps = float(mat["n"]) ** 2
+        c, e = scaled(eps, "Electromagnetism")
+        rows.append(
+            _row(
+                prop="em_mol_eps_em_fold",
+                name=str(mat["name"]) + "_eps_em",
+                computed=c,
+                measured=eps,
+                note="CRC n² on Electromagnetism D=9",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    for mol in CRC_MOLECULES:
+        mw = float(mol["mw"])
+        c, e = scaled(mw, "Molecular_Chemistry")
+        rows.append(
+            _row(
+                prop="em_mol_mw_mol_fold",
+                name=str(mol["name"]) + "_mw_mol",
+                computed=c,
+                measured=mw,
+                note="CRC MW on Molecular_Chemistry D=9",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def mol_mat_rows() -> list[dict[str, Any]]:
+    """Molecular_Chemistry D=9 ↔ Materials_Science D=10 — molecule vs bulk.
+
+    Both δψ=0.5. Live |S| vs 1 is the matched-look rung. CRC MW vs density.
+    """
+    sm = abs(f(domain_scalar("Molecular_Chemistry")))
+    sa = abs(f(domain_scalar("Materials_Science")))
+    vs1 = err(sm / sa, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="mol_mat_S_ratio_same_look",
+            name="S_mol_over_S_mat_live",
+            computed=sm / sa,
+            measured=1.0,
+            note=(
+                "|S_Mol|/|S_Materials| vs 1 — adjacent D=9/10, both δψ=0.5. "
+                f"({vs1:.3f}%)."
+            ),
+            extra={"kappa": kappa_domains("Molecular_Chemistry", "Materials_Science")},
+        ),
+    ]
+    for mol in CRC_MOLECULES:
+        mw = float(mol["mw"])
+        rho = float(mol["rho"])
+        cm, em = scaled(mw, "Molecular_Chemistry")
+        cr, er = scaled(rho, "Materials_Science")
+        tag = str(mol["name"])
+        rows.append(
+            _row(
+                prop="mol_mat_mw_mol_fold",
+                name=tag + "_mw_mol",
+                computed=cm,
+                measured=mw,
+                note="CRC MW on Molecular_Chemistry D=9",
+            )
+        )
+        rows[-1]["error_pct"] = em
+        rows.append(
+            _row(
+                prop="mol_mat_rho_mat_fold",
+                name=tag + "_rho_mat",
+                computed=cr,
+                measured=rho,
+                note="CRC density on Materials_Science D=10 — bulk of the molecule",
+            )
+        )
+        rows[-1]["error_pct"] = er
+    return rows
+
+
+def mol_opt_rows() -> list[dict[str, Any]]:
+    """Molecular_Chemistry D=9 ↔ Optics D=10 — molecule vs light.
+
+    Equalize at δψ=0.5. CRC MW on Mol, n_D on Optics.
+    """
+    s9 = scalar_at(d_eff=9, delta_psi=0.5)
+    s10 = scalar_at(d_eff=10, delta_psi=0.5)
+    live = abs(f(domain_scalar("Molecular_Chemistry"))) / abs(f(domain_scalar("Optics")))
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="mol_opt_S_ratio_same_look",
+            name="S_D9_over_S_D10_at_dpsi_0p5_molopt",
+            computed=s9 / s10,
+            measured=1.0,
+            note=(
+                "|S(D=9,δψ=0.5)|/|S(D=10,δψ=0.5)| vs 1 — molecule vs light. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Molecular_Chemistry", "Optics"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    for mol in CRC_MOLECULES:
+        mw = float(mol["mw"])
+        c, e = scaled(mw, "Molecular_Chemistry")
+        rows.append(
+            _row(
+                prop="mol_opt_mw_mol_fold",
+                name=str(mol["name"]) + "_mw_mol",
+                computed=c,
+                measured=mw,
+                note="CRC MW on Molecular_Chemistry D=9",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    for mat in OPTICAL_MATERIALS:
+        n = float(mat["n"])
+        c, e = scaled(n, "Optics")
+        rows.append(
+            _row(
+                prop="mol_opt_n_opt_fold",
+                name=str(mat["name"]) + "_n_opt",
+                computed=c,
+                measured=n,
+                note="CRC n_D on Optics D=10",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
 # Live view pairs: high |S_i|/|S_j| vs 1 is perception at that fold, not a failed gate.
 PERCEPTION_PAIRS = (
     ("Quantum_Mechanics", "Atomic_Physics", "qm_atomic"),
@@ -1971,5 +2377,13 @@ def suite_rows(
     rows.extend(cm_thermo_rows())
     rows.extend(em_mat_rows())
     rows.extend(biochem_neuro_rows())
+    rows.extend(atomic_chem_rows())
+    rows.extend(atomic_pc_rows())
+    rows.extend(hep_chem_rows())
+    rows.extend(hep_pc_rows())
+    rows.extend(pc_em_rows())
+    rows.extend(em_mol_rows())
+    rows.extend(mol_mat_rows())
+    rows.extend(mol_opt_rows())
     rows.extend(perception_view_rows())
     return rows

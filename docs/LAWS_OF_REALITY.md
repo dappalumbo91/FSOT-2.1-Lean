@@ -1,6 +1,6 @@
 # Laws of reality (through this model)
 
-*Generated 2026-09-09T16:04:56.098329+00:00 · pin D1D38A*
+*Generated 2026-09-09T16:43:26.901863+00:00 · pin D1D38A*
 
 These are **not** a second Newton list and **not** the founding-era 35
 discrepancy names. They are what the verification spine actually licenses:

@@ -1,6 +1,6 @@
 # Research standpoint — what the hub is, what still has to hold
 
-*Generated 2026-09-09T16:04:56.098329+00:00 · pin D1D38A*
+*Generated 2026-09-09T16:43:26.901863+00:00 · pin D1D38A*
 
 This is the step-back. **Not** another prediction wave and **not** another
 domain count. Label A is the empirical framework. Label B T1–T6 is the
@@ -17,8 +17,8 @@ frozen ToE checklist. More green files strengthen A only.
 | Atlas named rows | **403** | coverage map |
 | Green residual files | **477 / 477** | ≤0.5% pooled median |
 | A_strong / B_verified / C_thin | 117 / 338 / 13 | record-depth tiers (C_thin measured **7**) |
-| Gated tissues | **29** | same physics, two zooms, residual-checked |
-| Adjacent cores still siloed | **57** | next connective simulation, not new domains |
+| Gated tissues | **37** | same physics, two zooms, residual-checked |
+| Adjacent cores still siloed | **49** | next connective simulation, not new domains |
 
 Counts authority: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md) · [`CURRENT_STATUS.md`](CURRENT_STATUS.md).
 Tree: [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md).
@@ -52,7 +52,7 @@ Label B is already a frozen checklist (T1–T6). The work that actually
 |------|-----|--------|
 | **Named objects** | A paper number is not automatically the lock | [`OBJECT_SCORING.md`](OBJECT_SCORING.md) shipped |
 | **Laws ledger** | Verification without stated rules is a scoreboard | this file + [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) |
-| **Connective tissue** | Same physics at two scales is the ToE signature | 29 gated · adjacent pairs still siloed (below) |
+| **Connective tissue** | Same physics at two scales is the ToE signature | 37 gated · adjacent pairs still siloed (below) |
 | **APPLY cookbooks** | General protocol exists; most cores lack a worked example | MPCORB catalog · Seismology wave · Optics wave/photon |
 | **Science vs FSOT** | arXiv/PDG/survey scored on the *named* object | scientist questions + literature packs; needs a standing compare loop |
 | **C_thin measured** | Green-and-thin is not depth | queue below |
@@ -139,8 +139,16 @@ flips identity (QC→QO is the Hilbert move). Do not 'fix' dark by setting
 | `TISSUE-CM-THERMO` | Condensed_Matter, Thermodynamics | Solid and heat are adjacent D=14/15; equalize the CM look | same-look D=14/15 vs 1 at 0.233%; CRC metal ρ vs Tm; mixed vs 1 retired |
 | `TISSUE-EM-MAT` | Electromagnetism, Materials_Science | Field and bulk are adjacent D=9/10; equalize the materials look | same-look D=9/10 vs 1 at 0.205%; CRC n² vs ρ; mixed vs 1 retired |
 | `TISSUE-BIOCHEM-NEURO` | Biochemistry, Neuroscience | Molecule and signaling are adjacent D=13/14; not the social-tank GDP route | same-look D=13/14 vs 1 at 0.179%; transmitter AA MW; mixed vs 1 retired |
+| `TISSUE-ATOMIC-CHEM` | Atomic_Physics, Chemistry | Bound well and composition are adjacent D=7/8; equalize the chemistry look | same-look D=7/8 at δψ=0.6; NIST IE + CRC MW |
+| `TISSUE-ATOMIC-PC` | Atomic_Physics, Physical_Chemistry | Bound well and thermo are adjacent D=7/8; equalize δψ=0.5 | same-look D=7/8 at δψ=0.5; NIST IE + CRC Tm |
+| `TISSUE-HEP-CHEM` | High_Energy_Physics, Chemistry | Collision and composition are adjacent D=7/8; equalize δψ=0.6 | same-look D=7/8 at δψ=0.6; NIST IE on HEP + CRC MW |
+| `TISSUE-HEP-PC` | High_Energy_Physics, Physical_Chemistry | Collision and thermo are adjacent D=7/8; equalize δψ=0.5 | same-look D=7/8 at δψ=0.5; NIST IE on HEP + CRC Tm |
+| `TISSUE-PC-EM` | Physical_Chemistry, Electromagnetism | Thermo and field are adjacent D=8/9; equalize δψ=0.5 | same-look D=8/9 at δψ=0.5; CRC Tm + n² |
+| `TISSUE-EM-MOL` | Electromagnetism, Molecular_Chemistry | Field and molecule are two looks at D=9; fold 0.7/0.5 onto D=8 | look-split vs D=8; CRC n² vs MW; vs 1 retired |
+| `TISSUE-MOL-MAT` | Molecular_Chemistry, Materials_Science | Molecule and bulk are adjacent D=9/10 already sharing δψ=0.5 | matched-look live |S| vs 1; CRC MW vs density |
+| `TISSUE-MOL-OPT` | Molecular_Chemistry, Optics | Molecule and light are adjacent D=9/10; equalize δψ=0.5 | same-look D=9/10 at δψ=0.5; CRC MW vs n; mixed vs 1 retired |
 
-Between-scale panel pooled **0.026% GREEN** (1061 tight). D9: live |S| vs 1 is T1 view (T3 leftover 0.000%). Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.
+Between-scale panel pooled **0.026% GREEN** (1260 tight). D9: live |S| vs 1 is T1 view (T3 leftover 0.000%). Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.
 
 ## 6. Ungated adjacent cores (connective simulation queue)
 
@@ -151,14 +159,6 @@ seed-closed ratio — no new coefficient.
 
 | A | D | B | D |
 |---|--:|---|--:|
-| Atomic_Physics | 7 | Chemistry | 8 |
-| Atomic_Physics | 7 | Physical_Chemistry | 8 |
-| High_Energy_Physics | 7 | Chemistry | 8 |
-| High_Energy_Physics | 7 | Physical_Chemistry | 8 |
-| Physical_Chemistry | 8 | Electromagnetism | 9 |
-| Electromagnetism | 9 | Molecular_Chemistry | 9 |
-| Molecular_Chemistry | 9 | Materials_Science | 10 |
-| Molecular_Chemistry | 9 | Optics | 10 |
 | Acoustics | 10 | Quantum_Computing | 11 |
 | Acoustics | 10 | Quantum_Optics | 11 |
 | Materials_Science | 10 | Quantum_Computing | 11 |
@@ -191,7 +191,15 @@ seed-closed ratio — no new coefficient.
 | Thermodynamics | 15 | Meteorology | 16 |
 | Thermodynamics | 15 | Psychology | 16 |
 | Meteorology | 16 | Psychology | 16 |
-| … | | 17 more in the JSON | |
+| Meteorology | 16 | Atmospheric_Physics | 17 |
+| Meteorology | 16 | Oceanography | 17 |
+| Psychology | 16 | Atmospheric_Physics | 17 |
+| Psychology | 16 | Oceanography | 17 |
+| Atmospheric_Physics | 17 | Seismology | 18 |
+| Atmospheric_Physics | 17 | Sociology | 18 |
+| Oceanography | 17 | Seismology | 18 |
+| Oceanography | 17 | Sociology | 18 |
+| … | | 9 more in the JSON | |
 
 ## 7. Scientific depth still thin (measured C_thin)
 

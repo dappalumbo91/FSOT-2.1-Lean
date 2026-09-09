@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-08-05T22:45:17.992840+00:00",
+  "generated_at": "2026-09-09T16:40:42.954670+00:00",
   "version": "1.0",
-  "theorem_count": 5182,
-  "mathlib_depth_count": 5182,
-  "mathlib_depth_pct": 100.0,
+  "theorem_count": 5229,
+  "mathlib_depth_count": 3625,
+  "mathlib_depth_pct": 69.32,
   "by_tier": {
-    "L0_definitional": 1905,
-    "L3_chain": 2997,
-    "L2_analytic": 280
+    "L0_definitional": 1915,
+    "L3_chain": 1427,
+    "L1_certificate": 1604,
+    "L2_analytic": 283
   },
   "by_module": {
     "AcousticResonanceMaterialsPriors": {
@@ -375,11 +376,11 @@
     },
     "BlackHoleWhiteholeCycleLivePanelPriors": {
       "theorem_count": 4,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 100.0,
+      "mathlib_depth_count": 1,
+      "mathlib_depth_pct": 25.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L3_chain": 3
+        "L1_certificate": 3,
+        "L3_chain": 1
       },
       "has_sorry": false,
       "path": "FSOT/Formal/BlackHoleWhiteholeCycleLivePanelPriors.lean"
@@ -418,13 +419,13 @@
       "path": "FSOT/Formal/BoundaryPartitionTighteningPriors.lean"
     },
     "Bounds": {
-      "theorem_count": 277,
-      "mathlib_depth_count": 277,
+      "theorem_count": 291,
+      "mathlib_depth_count": 291,
       "mathlib_depth_pct": 100.0,
       "tier_counts": {
-        "L2_analytic": 190,
-        "L0_definitional": 9,
-        "L3_chain": 78
+        "L2_analytic": 193,
+        "L0_definitional": 13,
+        "L3_chain": 85
       },
       "has_sorry": false,
       "path": "FSOT/Formal/Bounds.lean"
@@ -2234,11 +2235,11 @@
     },
     "FuelLabLivePanelPriors": {
       "theorem_count": 5,
-      "mathlib_depth_count": 5,
-      "mathlib_depth_pct": 100.0,
+      "mathlib_depth_count": 1,
+      "mathlib_depth_pct": 20.0,
       "tier_counts": {
-        "L3_chain": 4,
-        "L0_definitional": 1
+        "L1_certificate": 4,
+        "L3_chain": 1
       },
       "has_sorry": false,
       "path": "FSOT/Formal/FuelLabLivePanelPriors.lean"
@@ -2465,10 +2466,10 @@
     },
     "GRSMCKMSpine": {
       "theorem_count": 288,
-      "mathlib_depth_count": 288,
-      "mathlib_depth_pct": 100.0,
+      "mathlib_depth_count": 10,
+      "mathlib_depth_pct": 3.47,
       "tier_counts": {
-        "L3_chain": 278,
+        "L1_certificate": 278,
         "L0_definitional": 10
       },
       "has_sorry": false,
@@ -3103,11 +3104,11 @@
     },
     "MachineAndMoleculeLivePanelPriors": {
       "theorem_count": 4,
-      "mathlib_depth_count": 4,
-      "mathlib_depth_pct": 100.0,
+      "mathlib_depth_count": 1,
+      "mathlib_depth_pct": 25.0,
       "tier_counts": {
-        "L0_definitional": 1,
-        "L3_chain": 3
+        "L1_certificate": 3,
+        "L3_chain": 1
       },
       "has_sorry": false,
       "path": "FSOT/Formal/MachineAndMoleculeLivePanelPriors.lean"
@@ -4895,12 +4896,12 @@
       "path": "FSOT/Formal/RustLeanBridgePriors.lean"
     },
     "ScalarEngineStructure": {
-      "theorem_count": 32,
-      "mathlib_depth_count": 32,
+      "theorem_count": 31,
+      "mathlib_depth_count": 31,
       "mathlib_depth_pct": 100.0,
       "tier_counts": {
         "L0_definitional": 16,
-        "L3_chain": 10,
+        "L3_chain": 9,
         "L2_analytic": 6
       },
       "has_sorry": false,
@@ -4929,12 +4930,12 @@
       "path": "FSOT/Formal/SchematicNetlistIntrinsicPanelPriors.lean"
     },
     "ScientificCatalogSpine": {
-      "theorem_count": 2222,
-      "mathlib_depth_count": 2222,
-      "mathlib_depth_pct": 100.0,
+      "theorem_count": 2256,
+      "mathlib_depth_count": 953,
+      "mathlib_depth_pct": 42.24,
       "tier_counts": {
-        "L3_chain": 1279,
-        "L0_definitional": 943
+        "L1_certificate": 1303,
+        "L0_definitional": 953
       },
       "has_sorry": false,
       "path": "FSOT/Formal/ScientificCatalogSpine.lean"
@@ -5236,11 +5237,11 @@
     },
     "StarTrekTransporterLivePanelPriors": {
       "theorem_count": 14,
-      "mathlib_depth_count": 14,
-      "mathlib_depth_pct": 100.0,
+      "mathlib_depth_count": 1,
+      "mathlib_depth_pct": 7.14,
       "tier_counts": {
-        "L3_chain": 13,
-        "L0_definitional": 1
+        "L1_certificate": 13,
+        "L3_chain": 1
       },
       "has_sorry": false,
       "path": "FSOT/Formal/StarTrekTransporterLivePanelPriors.lean"

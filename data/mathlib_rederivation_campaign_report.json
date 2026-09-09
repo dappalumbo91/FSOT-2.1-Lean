@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:45:21.288462+00:00",
+  "generated_at": "2026-09-09T16:40:46.354911+00:00",
   "version": "1.1",
   "verdict": "FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED",
   "engine_core_closed": true,
@@ -7,7 +7,7 @@
   "full_mathlib_rederivation_of_all_lemmas": true,
   "global_lake": {
     "status": "passed",
-    "seconds": 2.35,
+    "seconds": 2.4,
     "cmd": "lake build FSOT",
     "stderr_tail": ""
   },
@@ -17,29 +17,30 @@
     "engine_l1_max": 40,
     "corpus_mathlib_min_pct": 55.0,
     "engine_l1_count": 0,
-    "corpus_l1_count": 0,
+    "corpus_l1_count": 1604,
     "engine_mathlib_pct": 100.0,
-    "corpus_mathlib_pct": 100.0
+    "corpus_mathlib_pct": 69.32
   },
   "corpus": {
-    "theorem_count": 5182,
-    "mathlib_depth_count": 5182,
-    "mathlib_depth_pct": 100.0,
+    "theorem_count": 5229,
+    "mathlib_depth_count": 3625,
+    "mathlib_depth_pct": 69.32,
     "by_tier": {
-      "L0_definitional": 1905,
-      "L3_chain": 2997,
-      "L2_analytic": 280
+      "L0_definitional": 1915,
+      "L3_chain": 1427,
+      "L1_certificate": 1604,
+      "L2_analytic": 283
     },
     "sorry_count": 0
   },
   "engine_inventory": {
-    "theorem_count": 524,
-    "mathlib_depth_count": 524,
+    "theorem_count": 537,
+    "mathlib_depth_count": 537,
     "mathlib_depth_pct": 100.0,
     "by_tier": {
-      "L2_analytic": 278,
-      "L0_definitional": 71,
-      "L3_chain": 175
+      "L2_analytic": 281,
+      "L0_definitional": 75,
+      "L3_chain": 181
     },
     "l1_certificate_count": 0
   },
@@ -53,17 +54,17 @@
         "ScalarEngineStructure"
       ],
       "missing_modules": [],
-      "theorem_count": 32,
-      "mathlib_depth_count": 32,
+      "theorem_count": 31,
+      "mathlib_depth_count": 31,
       "mathlib_depth_pct": 100.0,
       "by_tier": {
         "L0_definitional": 16,
-        "L3_chain": 10,
+        "L3_chain": 9,
         "L2_analytic": 6
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -82,17 +83,17 @@
         "Bounds"
       ],
       "missing_modules": [],
-      "theorem_count": 277,
-      "mathlib_depth_count": 277,
+      "theorem_count": 291,
+      "mathlib_depth_count": 291,
       "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L2_analytic": 190,
-        "L0_definitional": 9,
-        "L3_chain": 78
+        "L2_analytic": 193,
+        "L0_definitional": 13,
+        "L3_chain": 85
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -121,7 +122,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -150,7 +151,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -190,7 +191,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -223,7 +224,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -282,15 +283,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 171,
-      "mathlib_depth_count": 171,
-      "mathlib_depth_pct": 100.0,
+      "mathlib_depth_count": 168,
+      "mathlib_depth_pct": 98.25,
       "by_tier": {
-        "L0_definitional": 80,
-        "L3_chain": 91
+        "L0_definitional": 79,
+        "L3_chain": 89,
+        "L1_certificate": 3
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -357,7 +359,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -424,7 +426,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -491,7 +493,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -550,15 +552,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 128,
-      "mathlib_depth_count": 128,
-      "mathlib_depth_pct": 100.0,
+      "mathlib_depth_count": 124,
+      "mathlib_depth_pct": 96.88,
       "by_tier": {
-        "L0_definitional": 43,
-        "L3_chain": 85
+        "L0_definitional": 42,
+        "L3_chain": 82,
+        "L1_certificate": 4
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -625,7 +628,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -684,15 +687,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 138,
-      "mathlib_depth_count": 138,
-      "mathlib_depth_pct": 100.0,
+      "mathlib_depth_count": 135,
+      "mathlib_depth_pct": 97.83,
       "by_tier": {
-        "L0_definitional": 50,
-        "L3_chain": 88
+        "L0_definitional": 49,
+        "L3_chain": 86,
+        "L1_certificate": 3
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -759,7 +763,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -826,7 +830,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -893,7 +897,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -960,7 +964,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -1019,15 +1023,16 @@
       ],
       "missing_modules": [],
       "theorem_count": 144,
-      "mathlib_depth_count": 144,
-      "mathlib_depth_pct": 100.0,
+      "mathlib_depth_count": 131,
+      "mathlib_depth_pct": 90.97,
       "by_tier": {
-        "L0_definitional": 52,
-        "L3_chain": 92
+        "L0_definitional": 51,
+        "L3_chain": 80,
+        "L1_certificate": 13
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -1094,7 +1099,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",
@@ -1137,7 +1142,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.35,
+      "lake_build_seconds": 2.4,
       "builds": [
         {
           "target": "FSOT",

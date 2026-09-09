@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T16:04:56.098329+00:00",
+  "generated_at": "2026-09-09T16:43:26.901863+00:00",
   "pin": "D1D38A",
   "purpose": "Standpoint of the hub as a research-grade ToE candidate: what is covered, what is already law, what still needs depth \u2014 not more domains.",
   "counts": {
@@ -12,8 +12,8 @@
     "tier_B_verified": 338,
     "tier_C_thin": 13,
     "tier_C_thin_measured": 7,
-    "gated_tissues": 29,
-    "adjacent_ungated_pairs": 57,
+    "gated_tissues": 37,
+    "adjacent_ungated_pairs": 49,
     "engine_laws": 9,
     "discovered_laws": 9
   },
@@ -491,65 +491,89 @@
       "said": "Molecule and signaling are adjacent D=13/14; not the social-tank GDP route",
       "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a720",
       "live": "same-look D=13/14 vs 1 at 0.179%; transmitter AA MW; mixed vs 1 retired"
+    },
+    {
+      "id": "TISSUE-ATOMIC-CHEM",
+      "cores": [
+        "Atomic_Physics",
+        "Chemistry"
+      ],
+      "said": "Bound well and composition are adjacent D=7/8; equalize the chemistry look",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a721",
+      "live": "same-look D=7/8 at \u03b4\u03c8=0.6; NIST IE + CRC MW"
+    },
+    {
+      "id": "TISSUE-ATOMIC-PC",
+      "cores": [
+        "Atomic_Physics",
+        "Physical_Chemistry"
+      ],
+      "said": "Bound well and thermo are adjacent D=7/8; equalize \u03b4\u03c8=0.5",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a721",
+      "live": "same-look D=7/8 at \u03b4\u03c8=0.5; NIST IE + CRC Tm"
+    },
+    {
+      "id": "TISSUE-HEP-CHEM",
+      "cores": [
+        "High_Energy_Physics",
+        "Chemistry"
+      ],
+      "said": "Collision and composition are adjacent D=7/8; equalize \u03b4\u03c8=0.6",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a721",
+      "live": "same-look D=7/8 at \u03b4\u03c8=0.6; NIST IE on HEP + CRC MW"
+    },
+    {
+      "id": "TISSUE-HEP-PC",
+      "cores": [
+        "High_Energy_Physics",
+        "Physical_Chemistry"
+      ],
+      "said": "Collision and thermo are adjacent D=7/8; equalize \u03b4\u03c8=0.5",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a721",
+      "live": "same-look D=7/8 at \u03b4\u03c8=0.5; NIST IE on HEP + CRC Tm"
+    },
+    {
+      "id": "TISSUE-PC-EM",
+      "cores": [
+        "Physical_Chemistry",
+        "Electromagnetism"
+      ],
+      "said": "Thermo and field are adjacent D=8/9; equalize \u03b4\u03c8=0.5",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a722",
+      "live": "same-look D=8/9 at \u03b4\u03c8=0.5; CRC Tm + n\u00b2"
+    },
+    {
+      "id": "TISSUE-EM-MOL",
+      "cores": [
+        "Electromagnetism",
+        "Molecular_Chemistry"
+      ],
+      "said": "Field and molecule are two looks at D=9; fold 0.7/0.5 onto D=8",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a722",
+      "live": "look-split vs D=8; CRC n\u00b2 vs MW; vs 1 retired"
+    },
+    {
+      "id": "TISSUE-MOL-MAT",
+      "cores": [
+        "Molecular_Chemistry",
+        "Materials_Science"
+      ],
+      "said": "Molecule and bulk are adjacent D=9/10 already sharing \u03b4\u03c8=0.5",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a723",
+      "live": "matched-look live |S| vs 1; CRC MW vs density"
+    },
+    {
+      "id": "TISSUE-MOL-OPT",
+      "cores": [
+        "Molecular_Chemistry",
+        "Optics"
+      ],
+      "said": "Molecule and light are adjacent D=9/10; equalize \u03b4\u03c8=0.5",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a723",
+      "live": "same-look D=9/10 at \u03b4\u03c8=0.5; CRC MW vs n; mixed vs 1 retired"
     }
   ],
   "ungated_adjacent": [
-    {
-      "a": "Atomic_Physics",
-      "b": "Chemistry",
-      "D_a": 7,
-      "D_b": 8,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Atomic_Physics",
-      "b": "Physical_Chemistry",
-      "D_a": 7,
-      "D_b": 8,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "High_Energy_Physics",
-      "b": "Chemistry",
-      "D_a": 7,
-      "D_b": 8,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "High_Energy_Physics",
-      "b": "Physical_Chemistry",
-      "D_a": 7,
-      "D_b": 8,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Physical_Chemistry",
-      "b": "Electromagnetism",
-      "D_a": 8,
-      "D_b": 9,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Electromagnetism",
-      "b": "Molecular_Chemistry",
-      "D_a": 9,
-      "D_b": 9,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Molecular_Chemistry",
-      "b": "Materials_Science",
-      "D_a": 9,
-      "D_b": 10,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Molecular_Chemistry",
-      "b": "Optics",
-      "D_a": 9,
-      "D_b": 10,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
     {
       "a": "Acoustics",
       "b": "Quantum_Computing",
