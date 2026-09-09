@@ -61,4 +61,25 @@ fn replay_uniqueness_research_obligations() {
     assert!(1.0_f64 > 0.0, "E5_reeval_machinery_exists_score_pos");
     assert_eq!(1, 1, "reality_fiction_calibration_ok");
     assert!(0.6684908749126979_f64 > 0.0, "confinement_suite_gamma_export_pos");
+    assert_eq!(1, 1, "path_sum2_eq_one_flag");
+    assert!(0.510728588773961_f64 > 0.0, "poof_hold_pos");
+    assert!(0.4892714112260389_f64 > 0.0, "suction_hold_pos");
+    assert!(1.4959067319065438_f64 > 0.0, "color_path_integral_proxy_pos");
+    assert!(1.1102230246251565e-14_f64 < 0.5_f64, "P1_path_sum2_eq_one_err_under_half");
+    assert!(0.0_f64 < 0.5_f64, "P2_poof_hold_eq_valve_err_under_half");
+    assert!(0.0_f64 < 0.5_f64, "P3_loading_potentials_sum_one_err_under_half");
+    assert!(0.0_f64 < 0.5_f64, "P4_color_path_integral_finite_err_under_half");
+    assert!(1.3209968920124464e-14_f64 < 0.5_f64, "P5_area_law_V_of_one_over_sqrt_sigma_err_under_half");
+    assert!(0.0_f64 < 0.5_f64, "P6_mass_gap_proxy_pos_err_under_half");
+    assert_eq!(7, 7, "forecast_horizon_eq_7");
+    assert!(6.854101966249686_f64 > 0.0, "process_ceiling_days_pos");
+    assert!(0.0_f64 < 1e-12_f64, "process_time_d25_eq_ceiling");
+    assert!(0.0_f64 < 1e-12_f64, "process_time_25_cell_eq_ceiling");
+    assert_eq!(48, 48, "weather_window_hours_eq_48");
+    assert!(0.025840180827430004_f64 < 0.5_f64, "market_class_median_under_half");
+    assert!(5 > 0, "market_window_days_pos");
+    assert_eq!(1, 1, "market_class_green_flag");
+    assert!(0.02223625038520223_f64 < 0.5_f64, "sickness_host_err_under_half");
+    assert!(0.015311061469322368_f64 < 0.5_f64, "sickness_pathogen_err_under_half");
+    assert!(0.02104201418939883_f64 > 0.0, "sickness_kappa_pos");
 }

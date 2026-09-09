@@ -19,7 +19,10 @@ python vendor/fsot_path_sum.py
 python scripts/build_market_process_layer.py
 python scripts/smoke_sickness_two_system.py
 python scripts/smoke_dynamic_forecast_potentials.py
+python scripts/run_goal_tracks_verification.py
 ```
+
+That last command rebuilds the tracks, exports obligations into the uniqueness spine, and runs Python / Rust / Z3 / Coq / Isabelle / F* plus `lake build` of `ScalarEngineStructure` and `UniquenessAttractor`.
 
 Docs: [`TIME_EMERGENT.md`](TIME_EMERGENT.md) · [`MARKET_PROCESS_LAYER.md`](MARKET_PROCESS_LAYER.md) ·
 [`SICKNESS_TWO_SYSTEM.md`](SICKNESS_TWO_SYSTEM.md) · [`PATH_SUM.md`](PATH_SUM.md) ·

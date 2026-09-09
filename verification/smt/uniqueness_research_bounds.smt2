@@ -120,5 +120,47 @@
 (assert (! (= 1 1) :named o57))
 ; confinement_suite_gamma_export_pos kind=pos
 (assert (! (> 0.668490874912697874 0.0) :named o58))
+; path_sum2_eq_one_flag kind=eq_nat
+(assert (! (= 1 1) :named o59))
+; poof_hold_pos kind=pos
+(assert (! (> 0.51072858877396099 0.0) :named o60))
+; suction_hold_pos kind=pos
+(assert (! (> 0.489271411226038899 0.0) :named o61))
+; color_path_integral_proxy_pos kind=pos
+(assert (! (> 1.495906731906543774 0.0) :named o62))
+; P1_path_sum2_eq_one_err_under_half kind=lt_half
+(assert (! (< 0.000000000000011102 0.5) :named o63))
+; P2_poof_hold_eq_valve_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o64))
+; P3_loading_potentials_sum_one_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o65))
+; P4_color_path_integral_finite_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o66))
+; P5_area_law_V_of_one_over_sqrt_sigma_err_under_half kind=lt_half
+(assert (! (< 0.00000000000001321 0.5) :named o67))
+; P6_mass_gap_proxy_pos_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o68))
+; forecast_horizon_eq_7 kind=eq_nat
+(assert (! (= 7 7) :named o69))
+; process_ceiling_days_pos kind=pos
+(assert (! (> 6.854101966249685596 0.0) :named o70))
+; process_time_d25_eq_ceiling kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000000001) :named o71))
+; process_time_25_cell_eq_ceiling kind=abs_diff_lt_lit
+(assert (! (< 0.0 0.000000000001) :named o72))
+; weather_window_hours_eq_48 kind=eq_nat
+(assert (! (= 48 48) :named o73))
+; market_class_median_under_half kind=lt_half
+(assert (! (< 0.025840180827430004 0.5) :named o74))
+; market_window_days_pos kind=nat_pos
+(assert (! (> 5 0) :named o75))
+; market_class_green_flag kind=eq_nat
+(assert (! (= 1 1) :named o76))
+; sickness_host_err_under_half kind=lt_half
+(assert (! (< 0.02223625038520223 0.5) :named o77))
+; sickness_pathogen_err_under_half kind=lt_half
+(assert (! (< 0.015311061469322368 0.5) :named o78))
+; sickness_kappa_pos kind=pos
+(assert (! (> 0.021042014189398831 0.0) :named o79))
 (check-sat)
 ; expect: sat

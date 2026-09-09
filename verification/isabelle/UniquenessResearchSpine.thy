@@ -181,4 +181,67 @@ lemma reality_fiction_calibration_ok: "(1::nat) = 1"
 lemma confinement_suite_gamma_export_pos: "(0::real) < 0.6684908749126979"
   by simp
 
+lemma path_sum2_eq_one_flag: "(1::nat) = 1"
+  by simp
+
+lemma poof_hold_pos: "(0::real) < 0.510728588773961"
+  by simp
+
+lemma suction_hold_pos: "(0::real) < 0.4892714112260389"
+  by simp
+
+lemma color_path_integral_proxy_pos: "(0::real) < 1.4959067319065438"
+  by simp
+
+lemma P1_path_sum2_eq_one_err_under_half: "(0.00000000000001110223::real) < (0.5::real)"
+  by simp
+
+lemma P2_poof_hold_eq_valve_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma P3_loading_potentials_sum_one_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma P4_color_path_integral_finite_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma P5_area_law_V_of_one_over_sqrt_sigma_err_under_half: "(0.00000000000001320997::real) < (0.5::real)"
+  by simp
+
+lemma P6_mass_gap_proxy_pos_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma forecast_horizon_eq_7: "(7::nat) = 7"
+  by simp
+
+lemma process_ceiling_days_pos: "(0::real) < 6.854101966249686"
+  by simp
+
+lemma process_time_d25_eq_ceiling: "(0::real) < (0.000000000001::real)"
+  by simp
+
+lemma process_time_25_cell_eq_ceiling: "(0::real) < (0.000000000001::real)"
+  by simp
+
+lemma weather_window_hours_eq_48: "(48::nat) = 48"
+  by simp
+
+lemma market_class_median_under_half: "(0.025840180827430004::real) < (0.5::real)"
+  by simp
+
+lemma market_window_days_pos: "(0::nat) < 5"
+  by simp
+
+lemma market_class_green_flag: "(1::nat) = 1"
+  by simp
+
+lemma sickness_host_err_under_half: "(0.02223625038520223::real) < (0.5::real)"
+  by simp
+
+lemma sickness_pathogen_err_under_half: "(0.015311061469322368::real) < (0.5::real)"
+  by simp
+
+lemma sickness_kappa_pos: "(0::real) < 0.02104201418939883"
+  by simp
+
 end

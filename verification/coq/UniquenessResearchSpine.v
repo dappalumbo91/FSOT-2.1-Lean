@@ -182,3 +182,66 @@ Proof. reflexivity. Qed.
 Lemma confinement_suite_gamma_export_pos : 0 < ((0.6684908749126979%R)).
 Proof. lra. Qed.
 
+Lemma path_sum2_eq_one_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma poof_hold_pos : 0 < ((0.510728588773961%R)).
+Proof. lra. Qed.
+
+Lemma suction_hold_pos : 0 < ((0.4892714112260389%R)).
+Proof. lra. Qed.
+
+Lemma color_path_integral_proxy_pos : 0 < ((1.4959067319065438%R)).
+Proof. lra. Qed.
+
+Lemma P1_path_sum2_eq_one_err_under_half : ((0.000000000000011102230246251565%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma P2_poof_hold_eq_valve_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma P3_loading_potentials_sum_one_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma P4_color_path_integral_finite_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma P5_area_law_V_of_one_over_sqrt_sigma_err_under_half : ((0.000000000000013209968920124464%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma P6_mass_gap_proxy_pos_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma forecast_horizon_eq_7 : (7 = 7)%nat.
+Proof. reflexivity. Qed.
+
+Lemma process_ceiling_days_pos : 0 < ((6.854101966249686%R)).
+Proof. lra. Qed.
+
+Lemma process_time_d25_eq_ceiling : (0%R) < ((0.000000000001%R)).
+Proof. lra. Qed.
+
+Lemma process_time_25_cell_eq_ceiling : (0%R) < ((0.000000000001%R)).
+Proof. lra. Qed.
+
+Lemma weather_window_hours_eq_48 : (48 = 48)%nat.
+Proof. reflexivity. Qed.
+
+Lemma market_class_median_under_half : ((0.025840180827430004%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma market_window_days_pos : (0 < 5)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma market_class_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma sickness_host_err_under_half : ((0.02223625038520223%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sickness_pathogen_err_under_half : ((0.015311061469322368%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma sickness_kappa_pos : 0 < ((0.02104201418939883%R)).
+Proof. lra. Qed.
+

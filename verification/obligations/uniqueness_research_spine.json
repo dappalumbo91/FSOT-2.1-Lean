@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-05T22:01:03.181458+00:00",
+  "generated_at": "2026-09-09T23:57:27.064341+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 59,
+  "obligation_count": 80,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -520,6 +520,184 @@
       "module": "Uniqueness.Confinement",
       "claim": "suite_gamma",
       "coq_id": "confinement_suite_gamma_export_pos"
+    },
+    {
+      "id": "path_sum2_eq_one_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.PathSum",
+      "claim": "P1_path_sum2",
+      "coq_id": "path_sum2_eq_one_flag"
+    },
+    {
+      "id": "poof_hold_pos",
+      "kind": "pos",
+      "value": 0.510728588773961,
+      "module": "Uniqueness.PathSum",
+      "claim": "P2_poof_hold",
+      "coq_id": "poof_hold_pos"
+    },
+    {
+      "id": "suction_hold_pos",
+      "kind": "pos",
+      "value": 0.4892714112260389,
+      "module": "Uniqueness.PathSum",
+      "claim": "P2_suction_hold",
+      "coq_id": "suction_hold_pos"
+    },
+    {
+      "id": "color_path_integral_proxy_pos",
+      "kind": "pos",
+      "value": 1.4959067319065438,
+      "module": "Uniqueness.PathSum",
+      "claim": "P4_color_path_integral",
+      "coq_id": "color_path_integral_proxy_pos"
+    },
+    {
+      "id": "P1_path_sum2_eq_one_err_under_half",
+      "kind": "lt_half",
+      "value": 1.1102230246251565e-14,
+      "module": "Uniqueness.PathSum",
+      "claim": "P1_path_sum2_eq_one",
+      "coq_id": "P1_path_sum2_eq_one_err_under_half"
+    },
+    {
+      "id": "P2_poof_hold_eq_valve_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.PathSum",
+      "claim": "P2_poof_hold_eq_valve",
+      "coq_id": "P2_poof_hold_eq_valve_err_under_half"
+    },
+    {
+      "id": "P3_loading_potentials_sum_one_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.PathSum",
+      "claim": "P3_loading_potentials_sum_one",
+      "coq_id": "P3_loading_potentials_sum_one_err_under_half"
+    },
+    {
+      "id": "P4_color_path_integral_finite_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.PathSum",
+      "claim": "P4_color_path_integral_finite",
+      "coq_id": "P4_color_path_integral_finite_err_under_half"
+    },
+    {
+      "id": "P5_area_law_V_of_one_over_sqrt_sigma_err_under_half",
+      "kind": "lt_half",
+      "value": 1.3209968920124464e-14,
+      "module": "Uniqueness.PathSum",
+      "claim": "P5_area_law_V_of_one_over_sqrt_sigma",
+      "coq_id": "P5_area_law_V_of_one_over_sqrt_sigma_err_under_half"
+    },
+    {
+      "id": "P6_mass_gap_proxy_pos_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.PathSum",
+      "claim": "P6_mass_gap_proxy_pos",
+      "coq_id": "P6_mass_gap_proxy_pos_err_under_half"
+    },
+    {
+      "id": "forecast_horizon_eq_7",
+      "kind": "eq_nat",
+      "value": 7,
+      "right_value": 7,
+      "module": "Uniqueness.ProcessTime",
+      "claim": "D12_horizon",
+      "coq_id": "forecast_horizon_eq_7"
+    },
+    {
+      "id": "process_ceiling_days_pos",
+      "kind": "pos",
+      "value": 6.854101966249686,
+      "module": "Uniqueness.ProcessTime",
+      "claim": "D12_phi4",
+      "coq_id": "process_ceiling_days_pos"
+    },
+    {
+      "id": "process_time_d25_eq_ceiling",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-12,
+      "left_value": 6.854101966249686,
+      "right_value": 6.854101966249686,
+      "module": "Uniqueness.ProcessTime",
+      "claim": "D12_d25",
+      "coq_id": "process_time_d25_eq_ceiling"
+    },
+    {
+      "id": "process_time_25_cell_eq_ceiling",
+      "kind": "abs_diff_lt_lit",
+      "diff": 0.0,
+      "bound": 1e-12,
+      "left_value": 6.854101966249686,
+      "right_value": 6.854101966249686,
+      "module": "Uniqueness.ProcessTime",
+      "claim": "D12_25x",
+      "coq_id": "process_time_25_cell_eq_ceiling"
+    },
+    {
+      "id": "weather_window_hours_eq_48",
+      "kind": "eq_nat",
+      "value": 48,
+      "right_value": 48,
+      "module": "Uniqueness.ProcessTime",
+      "claim": "ECMWF_path_48h_window",
+      "coq_id": "weather_window_hours_eq_48"
+    },
+    {
+      "id": "market_class_median_under_half",
+      "kind": "lt_half",
+      "value": 0.025840180827430004,
+      "module": "Uniqueness.MarketProcess",
+      "claim": "market_class",
+      "coq_id": "market_class_median_under_half"
+    },
+    {
+      "id": "market_window_days_pos",
+      "kind": "nat_pos",
+      "value": 5,
+      "module": "Uniqueness.MarketProcess",
+      "claim": "market_d20_window",
+      "coq_id": "market_window_days_pos"
+    },
+    {
+      "id": "market_class_green_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MarketProcess",
+      "claim": "market_class",
+      "coq_id": "market_class_green_flag"
+    },
+    {
+      "id": "sickness_host_err_under_half",
+      "kind": "lt_half",
+      "value": 0.02223625038520223,
+      "module": "Uniqueness.SicknessTwoSystem",
+      "claim": "host_mt_nd1",
+      "coq_id": "sickness_host_err_under_half"
+    },
+    {
+      "id": "sickness_pathogen_err_under_half",
+      "kind": "lt_half",
+      "value": 0.015311061469322368,
+      "module": "Uniqueness.SicknessTwoSystem",
+      "claim": "spike_cds",
+      "coq_id": "sickness_pathogen_err_under_half"
+    },
+    {
+      "id": "sickness_kappa_pos",
+      "kind": "pos",
+      "value": 0.02104201418939883,
+      "module": "Uniqueness.SicknessTwoSystem",
+      "claim": "R7_kappa",
+      "coq_id": "sickness_kappa_pos"
     }
   ],
   "source_summaries": {

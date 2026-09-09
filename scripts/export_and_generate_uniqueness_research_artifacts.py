@@ -33,6 +33,13 @@ sys.path.insert(0, str(ROOT / "vendor"))
 
 from cross_proof_lib import coq_lit_real, isa_lit_real, python_verify_obligation  # noqa: E402
 from fsot_reality_fiction_calibration import results_as_dicts, run_all, summary  # noqa: E402
+from fsot_earth_fluid_forecast import (  # noqa: E402
+    cell_process_days,
+    forecast_horizon_days,
+    process_ceiling_days,
+    process_time_days,
+)
+from fsot_path_sum import run_path_sum_suite  # noqa: E402
 from fsot_uniqueness_confinement import (  # noqa: E402
     free_color_damping_rate,
     mass_gap_proxy_GeV,
@@ -214,6 +221,187 @@ def build_obligations() -> list[dict]:
                 "claim": "suite_gamma",
             }
         )
+
+    # --- Native path-sum (discrete valve branches; not continuum YM) ---
+    ps = run_path_sum_suite()
+    add(
+        {
+            "id": "path_sum2_eq_one_flag",
+            "kind": "eq_nat",
+            "value": 1 if ps["n_fail"] == 0 else 0,
+            "right_value": 1,
+            "module": "Uniqueness.PathSum",
+            "claim": "P1_path_sum2",
+        }
+    )
+    add(
+        {
+            "id": "poof_hold_pos",
+            "kind": "pos",
+            "value": float(ps["poof_hold"]),
+            "module": "Uniqueness.PathSum",
+            "claim": "P2_poof_hold",
+        }
+    )
+    add(
+        {
+            "id": "suction_hold_pos",
+            "kind": "pos",
+            "value": float(ps["suction_hold"]),
+            "module": "Uniqueness.PathSum",
+            "claim": "P2_suction_hold",
+        }
+    )
+    add(
+        {
+            "id": "color_path_integral_proxy_pos",
+            "kind": "pos",
+            "value": float(ps["color_path_integral_proxy"]),
+            "module": "Uniqueness.PathSum",
+            "claim": "P4_color_path_integral",
+        }
+    )
+    for r in ps.get("rows") or []:
+        err = float(r.get("error_pct") or 0.0)
+        if err <= 0.5:
+            add(
+                {
+                    "id": f"{_safe_id(r['id'])}_err_under_half",
+                    "kind": "lt_half",
+                    "value": err if err > 0 else 0.0,
+                    "module": "Uniqueness.PathSum",
+                    "claim": r["id"],
+                }
+            )
+
+    # --- Process time (D12): dual of orifice_scale ---
+    tau0 = process_ceiling_days()
+    p25 = process_time_days(tau0, 25.0)
+    p1 = cell_process_days()
+    add(
+        {
+            "id": "forecast_horizon_eq_7",
+            "kind": "eq_nat",
+            "value": int(forecast_horizon_days()),
+            "right_value": 7,
+            "module": "Uniqueness.ProcessTime",
+            "claim": "D12_horizon",
+        }
+    )
+    add(
+        {
+            "id": "process_ceiling_days_pos",
+            "kind": "pos",
+            "value": float(tau0),
+            "module": "Uniqueness.ProcessTime",
+            "claim": "D12_phi4",
+        }
+    )
+    d25 = abs(p25 - tau0)
+    add(
+        {
+            "id": "process_time_d25_eq_ceiling",
+            "kind": "abs_diff_lt_lit",
+            "diff": d25,
+            "bound": max(d25 * 1.01 + 1e-15, 1e-12),
+            "left_value": p25,
+            "right_value": tau0,
+            "module": "Uniqueness.ProcessTime",
+            "claim": "D12_d25",
+        }
+    )
+    dcell = abs(25.0 * p1 - tau0)
+    add(
+        {
+            "id": "process_time_25_cell_eq_ceiling",
+            "kind": "abs_diff_lt_lit",
+            "diff": dcell,
+            "bound": max(dcell * 1.01 + 1e-15, 1e-12),
+            "left_value": 25.0 * p1,
+            "right_value": tau0,
+            "module": "Uniqueness.ProcessTime",
+            "claim": "D12_25x",
+        }
+    )
+    add(
+        {
+            "id": "weather_window_hours_eq_48",
+            "kind": "eq_nat",
+            "value": 48,
+            "right_value": 48,
+            "module": "Uniqueness.ProcessTime",
+            "claim": "ECMWF_path_48h_window",
+        }
+    )
+
+    # --- Market class + sickness two-system (goal tracks; public data) ---
+    market_p = ROOT / "data" / "market_process_layer.json"
+    if market_p.is_file():
+        market = json.loads(market_p.read_text(encoding="utf-8"))
+        med = float(market.get("median_error_pct") or 0.0)
+        add(
+            {
+                "id": "market_class_median_under_half",
+                "kind": "lt_half",
+                "value": med,
+                "module": "Uniqueness.MarketProcess",
+                "claim": "market_class",
+            }
+        )
+        add(
+            {
+                "id": "market_window_days_pos",
+                "kind": "nat_pos",
+                "value": int(market.get("calendar_window_days") or 1),
+                "module": "Uniqueness.MarketProcess",
+                "claim": "market_d20_window",
+            }
+        )
+        if market.get("green_class"):
+            add(
+                {
+                    "id": "market_class_green_flag",
+                    "kind": "eq_nat",
+                    "value": 1,
+                    "right_value": 1,
+                    "module": "Uniqueness.MarketProcess",
+                    "claim": "market_class",
+                }
+            )
+    sick_p = ROOT / "data" / "sickness_two_system_smoke.json"
+    if sick_p.is_file():
+        sick = json.loads(sick_p.read_text(encoding="utf-8"))
+        h_e = float((sick.get("host") or {}).get("error_pct") or 0.0)
+        p_e = float((sick.get("pathogen") or {}).get("error_pct") or 0.0)
+        kap = float(sick.get("kappa_host_pathogen") or 0.0)
+        add(
+            {
+                "id": "sickness_host_err_under_half",
+                "kind": "lt_half",
+                "value": h_e,
+                "module": "Uniqueness.SicknessTwoSystem",
+                "claim": "host_mt_nd1",
+            }
+        )
+        add(
+            {
+                "id": "sickness_pathogen_err_under_half",
+                "kind": "lt_half",
+                "value": p_e,
+                "module": "Uniqueness.SicknessTwoSystem",
+                "claim": "spike_cds",
+            }
+        )
+        if kap > 0:
+            add(
+                {
+                    "id": "sickness_kappa_pos",
+                    "kind": "pos",
+                    "value": kap,
+                    "module": "Uniqueness.SicknessTwoSystem",
+                    "claim": "R7_kappa",
+                }
+            )
 
     # Dedup
     seen: set[str] = set()

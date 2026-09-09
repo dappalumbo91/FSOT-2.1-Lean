@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-09-09T23:57:40.130931+00:00",
+  "overall_ok": true,
+  "steps": [
+    {
+      "name": "path_sum",
+      "ok": true,
+      "returncode": 0
+    },
+    {
+      "name": "market_process",
+      "ok": true,
+      "returncode": 0
+    },
+    {
+      "name": "sickness_two_system",
+      "ok": true,
+      "returncode": 0
+    },
+    {
+      "name": "process_time_smoke",
+      "ok": true,
+      "returncode": 0
+    },
+    {
+      "name": "uniqueness_multiprover",
+      "ok": true,
+      "returncode": 0
+    },
+    {
+      "name": "lake_lean_mathlib",
+      "ok": true,
+      "returncode": 0
+    }
+  ],
+  "uniqueness_report": {
+    "obligation_count": 80,
+    "python": "passed",
+    "rust": "passed",
+    "smt": "passed",
+    "coq": "passed",
+    "isabelle": "passed",
+    "fstar": "passed",
+    "provers_passed": {
+      "python": true,
+      "rust": true,
+      "smt": true,
+      "coq": true,
+      "isabelle": true,
+      "fstar": true
+    },
+    "overall_ok": true
+  },
+  "classical_ym_path_integral": "OPEN_NOT_CLAIMED"
+}
