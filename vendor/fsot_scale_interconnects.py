@@ -4799,6 +4799,8 @@ PERCEPTION_PAIRS = (
     ("Neuroscience", "Nuclear_Physics", "neuro_nuc"),
     ("Astronomy", "Planetary_Science", "astro_planetary"),
     ("Astronomy", "Economics", "astro_econ"),
+    ("Electromagnetism", "Molecular_Chemistry", "em_mol"),
+    ("Nuclear_Physics", "Thermodynamics", "nuc_thermo"),
     ("Economics", "Planetary_Science", "econ_planet"),
     ("Economics", "Neuroscience", "econ_neuro"),
     ("Seismology", "Geophysics", "seis_geo"),
@@ -4840,6 +4842,20 @@ SAME_LOOK_T1 = (
     (10, 11, 0.5, 0, True, "d10d11_eq"),
     (9, 10, 0.5, 0, True, "d9d10_eq"),
     (14, 15, 0.7, 1, True, "neuro_d14d15_eq"),
+)
+
+# Fold-D look-split T1. Native live |S_i|/|S_j| vs 1 is already PERCEPTION_PAIRS.
+# The named ~0.4% S-ratio is |S| at the native rung vs |S| at this fold-D
+# with the same two looks. D9: leftover at the fold-D is T3, not a new coefficient.
+# Spec: (D_fold, δψ_a, hits_a, obs_a, δψ_b, hits_b, obs_b, tag)
+LOOK_SPLIT_T1 = (
+    (9, 0.3, 0, True, 0.6, 0, True, "ac_opt_d9"),
+    (9, 0.3, 0, True, 0.5, 0, True, "ac_mat_d9"),
+    (6, 0.85, 0, True, 0.95, 0, True, "atomic_hep_d6"),
+    (8, 0.7, 0, True, 0.5, 0, True, "em_mol_d8"),
+    (14, 1.0, 1, True, 0.9, 1, True, "nuc_thermo_d14"),
+    (13, 0.5, 0, True, 0.7, 1, True, "cm_neuro_d13"),
+    (19, 1.0, 1, True, 1.5, 3, True, "astro_econ_d19"),
 )
 
 _DEMOTE_VS1_PROPS = {
@@ -4923,6 +4939,47 @@ def perception_view_rows() -> list[dict[str, Any]]:
     return rows
 
 
+def look_split_t1_rows() -> list[dict[str, Any]]:
+    """D9 at the fold-D of a same-rung look-split.
+
+    Native |S_a|/|S_b| vs the fold-D look is the named ~0.4% scalar.
+    This row is the T1 leftover *at the fold-D* — identity check, not a
+    median pad, and not a license to stuff the named ratio into a new seed.
+    """
+    rows: list[dict[str, Any]] = []
+    for d_fold, dpsi_a, hits_a, obs_a, dpsi_b, hits_b, obs_b, tag in LOOK_SPLIT_T1:
+        sa = scalar_at(d_eff=d_fold, delta_psi=dpsi_a, hits=hits_a, observed=obs_a)
+        sb = scalar_at(d_eff=d_fold, delta_psi=dpsi_b, hits=hits_b, observed=obs_b)
+        t1a = t1_at(d_eff=d_fold, delta_psi=dpsi_a, hits=hits_a, observed=obs_a)
+        t1b = t1_at(d_eff=d_fold, delta_psi=dpsi_b, hits=hits_b, observed=obs_b)
+        live = sa / sb
+        pred = abs(1.0 + t1a) / abs(1.0 + t1b)
+        e_t3 = err(pred, live)
+        rec = _row(
+            prop="look_split_t1_view",
+            name=f"{tag}_T1_view",
+            computed=pred,
+            measured=live,
+            note=(
+                f"|1+T1(D={d_fold},δψ={dpsi_a},hits={hits_a})|/"
+                f"|1+T1(D={d_fold},δψ={dpsi_b},hits={hits_b})| vs live |S|/|S| "
+                "at the look-split fold-D. Named ~0.4% S-ratio vs this look is "
+                "the D-step still sitting in T1. Residual is T3 leftover."
+            ),
+            kind="structural",
+            extra={
+                "D_fold": float(d_fold),
+                "delta_psi_a": float(dpsi_a),
+                "delta_psi_b": float(dpsi_b),
+                "t3_leftover_ok": e_t3 <= 0.5,
+            },
+        )
+        rec["error_pct"] = e_t3
+        rec["eval_kind"] = "perception_t1_view" if e_t3 <= 0.5 else "t3_leftover_band"
+        rows.append(rec)
+    return rows
+
+
 def same_look_t1_rows() -> list[dict[str, Any]]:
     """D9 at an equalized look: vs 1 is the wrong object; leftover is T3."""
     rows: list[dict[str, Any]] = []
@@ -4979,7 +5036,11 @@ def perception_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, An
     t1 = [
         r
         for r in rows
-        if r.get("property") in ("perception_view_t1", "same_look_t1_view")
+        if r.get("property") in (
+            "perception_view_t1",
+            "same_look_t1_view",
+            "look_split_t1_view",
+        )
     ]
     vs1 = [r for r in rows if r.get("property") == "perception_same_view_vs_1"]
     leftovers = [float(r["error_pct"]) for r in t1]
@@ -5107,5 +5168,6 @@ def suite_rows(
     rows.extend(psychology_ocean_rows(psych, ndbc_path))
     rows.extend(perception_view_rows())
     rows.extend(same_look_t1_rows())
+    rows.extend(look_split_t1_rows())
     demote_vs1_same_look(rows)
     return rows

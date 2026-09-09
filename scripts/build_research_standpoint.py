@@ -700,7 +700,15 @@ def laws() -> list[dict]:
     suc = _f(SUCTION)
     phi = _f(PHI)
     b_gr = phi - 1.0 / phi
-    pv = perception_summary()
+    pv = {}
+    ip = ROOT / "results" / "between_scale_interconnect_outcome.json"
+    if ip.is_file():
+        try:
+            pv = json.loads(ip.read_text(encoding="utf-8")).get("perception_view") or {}
+        except Exception:
+            pv = {}
+    if not pv:
+        pv = perception_summary()
     qm_vs1 = 0.0
     for row in pv.get("pairs") or []:
         if str(row.get("name") or "").startswith("qm_atomic"):
@@ -1038,12 +1046,22 @@ def main() -> int:
             },
             {
                 "id": "NW-TISSUE",
-                "what": "Simulate κ_ij on ungated adjacent core pairs with measured dual-route tables (same grammar as SCALE_INTERCONNECT).",
+                "what": (
+                    "Adjacent ungated cores are 0. Keep κ_ij dual-route residuals live "
+                    "on interconnect refresh. Do not hunt a new pair for its own sake."
+                    if not miss
+                    else "Simulate κ_ij on ungated adjacent core pairs with measured dual-route tables (same grammar as SCALE_INTERCONNECT)."
+                ),
                 "not": "A free coupling coefficient. More isolated green files.",
             },
             {
                 "id": "NW-APPLY",
-                "what": "One worked APPLY cookbook per core fold that still only has the general protocol (MPCORB is the template).",
+                "what": (
+                    "Worked APPLY cookbooks cover the remaining high-value cores "
+                    "(Materials, Acoustics, Fluid, Nuclear, Thermo, Chemistry ladder, "
+                    "Neuroscience, Astronomy). Satellite folds use the neighbor page. "
+                    "Keep each cookbook honest to the named public table."
+                ),
                 "not": "A second math key.",
             },
             {
@@ -1169,7 +1187,7 @@ def main() -> int:
         f"| Green residual files | **{c['green_files']} / {c['green_files'] + c['green_fail']}** | ≤0.5% pooled median |",
         f"| A_strong / B_verified / C_thin | {c['tier_A_strong']} / {c['tier_B_verified']} / {c['tier_C_thin']} | record-depth tiers (C_thin measured **{c['tier_C_thin_measured']}**) |",
         f"| Gated tissues | **{c['gated_tissues']}** | same physics, two zooms, residual-checked |",
-        f"| Adjacent cores still siloed | **{c['adjacent_ungated_pairs']}** | next connective simulation, not new domains |",
+        f"| Adjacent cores still siloed | **{c['adjacent_ungated_pairs']}** | 0 = gated; next work is objects/C_thin/dated, not new domains |",
         "",
         "Counts authority: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md) · [`CURRENT_STATUS.md`](CURRENT_STATUS.md).",
         "Tree: [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md).",
@@ -1204,8 +1222,8 @@ def main() -> int:
         "|------|-----|--------|",
         "| **Named objects** | A paper number is not automatically the lock | [`OBJECT_SCORING.md`](OBJECT_SCORING.md) shipped |",
         "| **Laws ledger** | Verification without stated rules is a scoreboard | this file + [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) |",
-        f"| **Connective tissue** | Same physics at two scales is the ToE signature | {len(GATED_TISSUES)} gated · adjacent pairs still siloed (below) |",
-        "| **APPLY cookbooks** | General protocol exists; most cores lack a worked example | MPCORB catalog · Seismology wave · Optics wave/photon |",
+        f"| **Connective tissue** | Same physics at two scales is the ToE signature | {len(GATED_TISSUES)} gated · adjacent ungated **{len(miss)}** |",
+        "| **APPLY cookbooks** | Worked example per high-value core; general protocol in APPLY.md | Materials · Acoustics · Fluid · Nuclear · Thermo · Chemistry · Neuro · Astronomy · Optics · Seismology · Atomic · EM · HEP · Bio · QC · Ecology · Psychology |",
         "| **Science vs FSOT** | arXiv/PDG/survey scored on the *named* object | scientist questions + literature packs; needs a standing compare loop |",
         "| **C_thin measured** | Green-and-thin is not depth | queue below |",
         "| **Honest refusals** | Clock-time, S2S, prices, diagnoses, CLOE-as-measured | already labeled |",
@@ -1248,23 +1266,35 @@ def main() -> int:
         f"{float((interconnect.get('perception_view') or {}).get('max_t3_leftover_pct') or 0):.3f}%). "
         f"Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.",
         "",
-        "## 6. Ungated adjacent cores (connective simulation queue)",
-        "",
-        "These pairs sit next to each other on the compactification ladder and are",
-        "already residual-green **in isolation**. They do not yet have a dual-route",
-        "measured tissue. Fill like SCALE_INTERCONNECT: one public table, two folds,",
-        "seed-closed ratio — no new coefficient.",
-        "",
-        "| A | D | B | D |",
-        "|---|--:|---|--:|",
     ]
-    for row in miss[:40]:
-        sl.append(f"| {row['a']} | {row['D_a']} | {row['b']} | {row['D_b']} |")
-    if len(miss) > 40:
-        sl.append(f"| … | | {len(miss) - 40} more in the JSON | |")
+    if not miss:
+        sl += [
+            "## 6. Ungated adjacent cores (connective simulation queue)",
+            "",
+            f"**0 ungated.** Every adjacent core pair with a public table is a gated tissue "
+            f"({len(GATED_TISSUES)}). Refresh `python scripts/build_scale_interconnect_benchmark.py`.",
+            "Do not invent watts or flip dark folds to manufacture a new pair.",
+            "",
+        ]
+    else:
+        sl += [
+            "## 6. Ungated adjacent cores (connective simulation queue)",
+            "",
+            "These pairs sit next to each other on the compactification ladder and are",
+            "already residual-green **in isolation**. They do not yet have a dual-route",
+            "measured tissue. Fill like SCALE_INTERCONNECT: one public table, two folds,",
+            "seed-closed ratio — no new coefficient.",
+            "",
+            "| A | D | B | D |",
+            "|---|--:|---|--:|",
+        ]
+        for row in miss[:40]:
+            sl.append(f"| {row['a']} | {row['D_a']} | {row['b']} | {row['D_b']} |")
+        if len(miss) > 40:
+            sl.append(f"| … | | {len(miss) - 40} more in the JSON | |")
+        sl.append("")
 
     sl += [
-        "",
         "## 7. Scientific depth still thin (measured C_thin)",
         "",
         "Process/certificate spines are omitted. These are the panels that are green",

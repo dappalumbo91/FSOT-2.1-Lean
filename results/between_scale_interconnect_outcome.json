@@ -3,9 +3,9 @@
   "status": "GREEN",
   "pooled_median_error_pct": 0.027454714636011984,
   "n_scalar": 7520,
-  "n_structural": 188,
-  "n_total": 7708,
-  "split": "7520 scalar APPLY dual-route / same-look T1 leftover; 188 structural (live |S_i|/|S_j| vs 1, compactification remainder, deep PREM phase change). Not missing rows.",
+  "n_structural": 199,
+  "n_total": 7719,
+  "split": "7520 scalar APPLY dual-route / named look-splits; 199 structural (live |S_i|/|S_j| vs 1, D9 T1 leftover including fold-D look-splits, compactification remainder, deep PREM phase change). Not missing rows.",
   "channel_median_error_pct": {
     "seismic_acoustic_vp_vs": 0.1893480018437519,
     "seismic_acoustic_lithosphere_median": 0.06848486048287095,
@@ -257,11 +257,11 @@
   },
   "perception_view": {
     "closed_form": "|S_i|/|S_j| = |1+T1_i|/|1+T1_j|  (T2=1, T3\u22480)",
-    "n_pairs": 55,
+    "n_pairs": 64,
     "max_t3_leftover_pct": 3.057834424462004e-14,
     "max_live_vs_1_pct": 178.45164219949345,
     "t3_leftover_ok": true,
-    "n_same_view_structural": 49,
+    "n_same_view_structural": 51,
     "pairs": [
       {
         "name": "qm_atomic_T1_view",
@@ -414,6 +414,22 @@
         "t1_pred": 1.3907945523544114,
         "t3_leftover_pct": 0.0,
         "live_vs_1_pct": 39.07945523544114
+      },
+      {
+        "name": "em_mol_T1_view",
+        "pair": "Electromagnetism/Molecular_Chemistry",
+        "live_ratio": 1.5508272535763665,
+        "t1_pred": 1.5508272535763663,
+        "t3_leftover_pct": 1.4317816791842785e-14,
+        "live_vs_1_pct": 55.082725357636654
+      },
+      {
+        "name": "nuc_thermo_T1_view",
+        "pair": "Nuclear_Physics/Thermodynamics",
+        "live_ratio": 1.170697946556681,
+        "t1_pred": 1.1706979465566807,
+        "t3_leftover_pct": 1.8966856957263888e-14,
+        "live_vs_1_pct": 17.06979465566809
       },
       {
         "name": "econ_planet_T1_view",
@@ -701,6 +717,62 @@
         "live_ratio": 1.0017733431519489,
         "t1_pred": 1.0017733431519489,
         "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "ac_opt_d9_T1_view",
+        "pair": null,
+        "live_ratio": 0.7616183801086293,
+        "t1_pred": 0.7616183801086293,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "ac_mat_d9_T1_view",
+        "pair": null,
+        "live_ratio": 0.9286843100820051,
+        "t1_pred": 0.928684310082005,
+        "t3_leftover_pct": 1.1954794676429078e-14,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "atomic_hep_d6_T1_view",
+        "pair": null,
+        "live_ratio": 0.8299052207729966,
+        "t1_pred": 0.8299052207729964,
+        "t3_leftover_pct": 1.3377708644742157e-14,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "em_mol_d8_T1_view",
+        "pair": null,
+        "live_ratio": 1.5553592221186643,
+        "t1_pred": 1.5553592221186645,
+        "t3_leftover_pct": 1.42760978793419e-14,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "nuc_thermo_d14_T1_view",
+        "pair": null,
+        "live_ratio": 1.1715841050717155,
+        "t1_pred": 1.1715841050717155,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "cm_neuro_d13_T1_view",
+        "pair": null,
+        "live_ratio": 0.6551843189520375,
+        "t1_pred": 0.6551843189520374,
+        "t3_leftover_pct": 1.694520141142801e-14,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "astro_econ_d19_T1_view",
+        "pair": null,
+        "live_ratio": 1.3930852725266896,
+        "t1_pred": 1.3930852725266898,
+        "t3_leftover_pct": 1.5939053359045345e-14,
         "live_vs_1_pct": null
       }
     ],

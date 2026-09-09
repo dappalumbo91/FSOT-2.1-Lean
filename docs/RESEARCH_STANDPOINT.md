@@ -1,6 +1,6 @@
 # Research standpoint — what the hub is, what still has to hold
 
-*Generated 2026-09-09T17:51:51.944942+00:00 · pin D1D38A*
+*Generated 2026-09-09T18:18:38.040066+00:00 · pin D1D38A*
 
 This is the step-back. **Not** another prediction wave and **not** another
 domain count. Label A is the empirical framework. Label B T1–T6 is the
@@ -18,7 +18,7 @@ frozen ToE checklist. More green files strengthen A only.
 | Green residual files | **477 / 477** | ≤0.5% pooled median |
 | A_strong / B_verified / C_thin | 117 / 338 / 13 | record-depth tiers (C_thin measured **7**) |
 | Gated tissues | **86** | same physics, two zooms, residual-checked |
-| Adjacent cores still siloed | **0** | next connective simulation, not new domains |
+| Adjacent cores still siloed | **0** | 0 = gated; next work is objects/C_thin/dated, not new domains |
 
 Counts authority: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md) · [`CURRENT_STATUS.md`](CURRENT_STATUS.md).
 Tree: [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md).
@@ -53,8 +53,8 @@ Label B is already a frozen checklist (T1–T6). The work that actually
 |------|-----|--------|
 | **Named objects** | A paper number is not automatically the lock | [`OBJECT_SCORING.md`](OBJECT_SCORING.md) shipped |
 | **Laws ledger** | Verification without stated rules is a scoreboard | this file + [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) |
-| **Connective tissue** | Same physics at two scales is the ToE signature | 86 gated · adjacent pairs still siloed (below) |
-| **APPLY cookbooks** | General protocol exists; most cores lack a worked example | MPCORB catalog · Seismology wave · Optics wave/photon |
+| **Connective tissue** | Same physics at two scales is the ToE signature | 86 gated · adjacent ungated **0** |
+| **APPLY cookbooks** | Worked example per high-value core; general protocol in APPLY.md | Materials · Acoustics · Fluid · Nuclear · Thermo · Chemistry · Neuro · Astronomy · Optics · Seismology · Atomic · EM · HEP · Bio · QC · Ecology · Psychology |
 | **Science vs FSOT** | arXiv/PDG/survey scored on the *named* object | scientist questions + literature packs; needs a standing compare loop |
 | **C_thin measured** | Green-and-thin is not depth | queue below |
 | **Honest refusals** | Clock-time, S2S, prices, diagnoses, CLOE-as-measured | already labeled |
@@ -198,17 +198,12 @@ flips identity (QC→QO is the Hilbert move). Do not 'fix' dark by setting
 | `TISSUE-PSYCH-ATM` | Psychology, Atmospheric_Physics | Psychometric scale and air tank are adjacent D=16/17; Atm stays dark | Nunnally/Cohen + NDBC pressure; not watts |
 | `TISSUE-PSYCH-OCEAN` | Psychology, Oceanography | Psychometric scale and ocean tank are adjacent D=16/17; Ocean stays dark | Nunnally/Cohen + NDBC SST; not watts |
 
-Between-scale panel pooled **0.027% GREEN** (7533 tight). D9: live |S| vs 1 is T1 view (T3 leftover 0.000%). Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.
+Between-scale panel pooled **0.027% GREEN** (7520 tight). D9: live |S| vs 1 is T1 view (T3 leftover 0.000%). Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.
 
 ## 6. Ungated adjacent cores (connective simulation queue)
 
-These pairs sit next to each other on the compactification ladder and are
-already residual-green **in isolation**. They do not yet have a dual-route
-measured tissue. Fill like SCALE_INTERCONNECT: one public table, two folds,
-seed-closed ratio — no new coefficient.
-
-| A | D | B | D |
-|---|--:|---|--:|
+**0 ungated.** Every adjacent core pair with a public table is a gated tissue (86). Refresh `python scripts/build_scale_interconnect_benchmark.py`.
+Do not invent watts or flip dark folds to manufacture a new pair.
 
 ## 7. Scientific depth still thin (measured C_thin)
 
@@ -267,8 +262,8 @@ the prediction monitor, PDG/Euclid/DESI watches. Do not ingest arXiv as a residu
 | ID | Do this | Do not |
 |----|---------|--------|
 | `NW-LAWS` | Keep this laws ledger live. Do not add a law that is not engine or a named solve. | 35 founding discrepancy names as if they were Newton's laws. |
-| `NW-TISSUE` | Simulate κ_ij on ungated adjacent core pairs with measured dual-route tables (same grammar as SCALE_INTERCONNECT). | A free coupling coefficient. More isolated green files. |
-| `NW-APPLY` | One worked APPLY cookbook per core fold that still only has the general protocol (MPCORB is the template). | A second math key. |
+| `NW-TISSUE` | Adjacent ungated cores are 0. Keep κ_ij dual-route residuals live on interconnect refresh. Do not hunt a new pair for its own sake. | A free coupling coefficient. More isolated green files. |
+| `NW-APPLY` | Worked APPLY cookbooks cover the remaining high-value cores (Materials, Acoustics, Fluid, Nuclear, Thermo, Chemistry ladder, Neuroscience, Astronomy). Satellite folds use the neighbor page. Keep each cookbook honest to the named public table. | A second math key. |
 | `NW-OBJECT` | Science vs FSOT object-compare: arXiv/PDG/survey papers scored against the named lock (OBJECT_SCORING), not a headline number. | Retuning fsot_predicted when a paper lands. |
 | `NW-CTHIN` | C_thin *measured* panels: name the public table, APPLY, densify records≥20. | Process/certificate spines counted as scientific depth. |
 | `NW-DATED` | Iron dated-window playbook (09-01 scored hold 20 / kill 4; remaining awaiting are missing catalogs). Next issue uses corrected hydro IDs. Laws of the valve, not USGS replacement. | Rewriting issued JSON. Clock-time hypocenter. |

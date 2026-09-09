@@ -158,6 +158,7 @@ def main() -> int:
         "psych_atm": "Atm stays dark. Nunnally/Cohen + NDBC pressure.",
         "psych_ocean": "Ocean stays dark. Nunnally/Cohen + NDBC SST.",
         "perception_view": "|1+T1_i|/|1+T1_j| vs live |S_i|/|S_j| (T3 leftover). vs 1 is the same-view question, not a 0.5% central. Not a median pad.",
+        "look_split_t1": "D9 leftover at the fold-D of named look-splits (CM–Neuro D=13, ac–opt D=9, atomic–HEP D=6, …). The ~0.4% named S-ratio is the D-step still in T1, not a new seed.",
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
 
@@ -177,8 +178,9 @@ def main() -> int:
         "n_structural": n_struct,
         "n_total": len(rows),
         "split": (
-            f"{len(tight)} scalar APPLY dual-route / same-look T1 leftover; "
-            f"{n_struct} structural (live |S_i|/|S_j| vs 1, compactification remainder, "
+            f"{len(tight)} scalar APPLY dual-route / named look-splits; "
+            f"{n_struct} structural (live |S_i|/|S_j| vs 1, D9 T1 leftover "
+            "including fold-D look-splits, compactification remainder, "
             "deep PREM phase change). Not missing rows."
         ),
         "channel_median_error_pct": channel_med,

@@ -30,7 +30,7 @@ Each core is a preregistered \((D_{\mathrm{eff}}, \delta\psi, \mathrm{hits}, \ma
 measured  →  name the interface (which D_eff)  →  APPLY  →  residual %
 ```
 
-If the residual is large: **change the interface**, do not fit \(f\). Worked protocol: [`APPLY.md`](APPLY.md).
+If the residual is large: **change the interface**, do not fit \(f\). Worked protocol: [`APPLY.md`](APPLY.md). Core-fold cookbooks: Materials, Acoustics, Fluid, Nuclear, Thermo, Chemistry, Neuro, Astronomy, Optics, Seismology, Atomic, EM, HEP, Bio, QC, Ecology, Psychology.
 
 Dark folds (`observed=false`) stay dark. Looking at them (QC Hilbert, Biology, Ecology, Fluid, Meteo, …) is a different object.
 

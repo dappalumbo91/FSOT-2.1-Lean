@@ -57,13 +57,13 @@ Holding \(\delta\psi\) (and observed/hits) fixed then comparing \(D\) to \(D{+}1
 
 Same \(D\), different \(\delta\psi\) (Materials/Optics): two looks at one rung. Equalizing \(\delta\psi\) there makes \(S\) identical (identity pad). The 0.5/0.6 split is the body vs light view; it also appears on Chemistry/PhysChem at \(D=8\).
 
-Forbidden: a coefficient that swallows the live view; stuffing \(\sqrt{\varphi}\) or \(\sqrt{e/\varphi}\) onto live vs 1; retuning \(\delta\psi\); flipping a dark fold to `observed=True` so the look string turns on; gating live vs 1 at 0.5%; padding the pooled median with the \(T_1\) identity.
+Forbidden: a coefficient that swallows the live view; stuffing \(\sqrt{\varphi}\) or \(\sqrt{e/\varphi}\) onto live vs 1; retuning \(\delta\psi\); flipping a dark fold to `observed=True` so the look string turns on; gating live vs 1 at 0.5%; padding the pooled median with the \(T_1\) identity. Named look-split S-ratios near 0.4% (CM–Neuro vs \(D=13\), Seis–Geo vs \(\varphi/2\), mat–opt vs PhysChem/Chem, water/air \(e+\varphi\)) stay the intended objects — D9 leftover at the fold-\(D\) is the closed form, not a license to stuff a new seed.
 
 ---
 
 ## 1. Elastic wave — Acoustics \(D=10\) ↔ Seismology \(D=18\)
 
-A crustal solid is the same T3 standing wave as lab sound. Poisson of the continuum mafic/lid solid is the atomic fold over the ceiling:
+A crustal solid is the same T3 standing wave as lab sound. Cookbook: [`APPLY_ACOUSTICS.md`](APPLY_ACOUSTICS.md) · [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md). Poisson of the continuum mafic/lid solid is the atomic fold over the ceiling:
 
 \[
 \nu = D_{\mathrm{atomic}}/25 = 7/25 = 0.28,\qquad
@@ -76,18 +76,18 @@ Live: lithosphere median **0.069%**; per-layer mafic/lid **0.189%**.
 
 ## 2. Fluid tanks — lab / ocean / air
 
-Diatomic air: \(f=D_{\mathrm{particle}}=5\), \(\gamma=1+2/5=1.400\) vs 1.400.  
-Two viscosities: \(c_{\mathrm{water}}/c_{\mathrm{air}} = e+\varphi\) vs ISO/CRC 20 °C **0.393%**.  
+Cookbook: [`APPLY_FLUID.md`](APPLY_FLUID.md). Diatomic air: \(f=D_{\mathrm{particle}}=5\), \(\gamma=1+2/5=1.400\) vs 1.400.  
+Two viscosities: \(c_{\mathrm{water}}/c_{\mathrm{air}} = e+\varphi\) vs ISO/CRC 20 °C **0.393%** (named seed; do not retune).  
 Scale height \(RT/\mu g\) vs US Std Atmosphere 1976 **0.002%**.  
-Same NOAA NDBC buoys (\(N=150\)): pressure on Atmospheric, SST on Oceanography, wind on Fluid_Dynamics — one measured neighborhood, three tanks.
+Same NOAA NDBC buoys (\(N=150\)): pressure on Atmospheric, SST on Oceanography, wind on Fluid_Dynamics — one measured neighborhood, three tanks. Fluid stays dark.
 
 ## 3. Fridge-cycle — Thermodynamics \(D=15\) ↔ Cosmology \(D=25\)
 
-BH→WH is a heat/information pump (C2). \(|S_{\mathrm{thermo}}|/|S_{\mathrm{cosm}}|\) vs \(\pi/2\) **0.289%**. Named Carnot COP pairs scored on **both** folds (HVAC 0/27 °C, 5/35 °C, …). Valve fraction POOF/(POOF+SUCTION) vs 1/2 stays a literature band (not a 0.5% HVAC η).
+Cookbook: [`APPLY_THERMO.md`](APPLY_THERMO.md). BH→WH is a heat/information pump (C2). \(|S_{\mathrm{thermo}}|/|S_{\mathrm{cosm}}|\) vs \(\pi/2\) **0.289%**. Named Carnot COP pairs scored on **both** folds (HVAC 0/27 °C, 5/35 °C, …). Valve fraction POOF/(POOF+SUCTION) vs 1/2 stays a literature band (not a 0.5% HVAC η).
 
 ## 4. Nuclear orifice — Nuclear \(D=15\) ↔ Particle \(D=5\)
 
-IAEA/ENDF level energies (He, C, O, Si, Al, Fe) dual-routed. Nuclear fold median **0.046%**; Particle fold **0.010%**. Same measured keV, two zooms of the orifice. No Yukawa add-on.
+Cookbook: [`APPLY_NUCLEAR.md`](APPLY_NUCLEAR.md). IAEA/ENDF level energies (He, C, O, Si, Al, Fe) dual-routed. Nuclear fold median **0.046%**; Particle fold **0.010%**. Same measured keV, two zooms of the orifice. No Yukawa add-on.
 
 ## 5. Compactification ceiling — QG \(D=22\) ↔ Cosmology \(D=25\)
 
@@ -115,7 +115,7 @@ Deep PREM (olivine–spinel / CMB) stays structural — another interface, not a
 
 ## 8. n and ρ — Materials_Science \(D=10\) ↔ Optics \(D=10\)
 
-Same compactification rung. CRC \(n_D\) on Optics, density on Materials (APPLY dual-route).
+Same compactification rung. Cookbook: [`APPLY_MATERIALS.md`](APPLY_MATERIALS.md) · [`APPLY_OPTICS.md`](APPLY_OPTICS.md). CRC \(n_D\) on Optics, density on Materials (APPLY dual-route).
 Ice Ih ordinary-ray \(n\) vs \(\varphi^2/2\) (solid-water optical fold).
 
 \(\lvert S_{\mathrm{mat}}/S_{\mathrm{opt}}\rvert\) vs 1 is the **wrong object** (engine §25 `Cross_Opt_QO` is same-\(C\), same-\(\delta\psi\)). Materials \(\delta\psi=1/2\) is the body/mass look; Optics \(\delta\psi=3/5\) is the light look. That 0.5/0.6 split is the same fold as Physical_Chemistry/Chemistry at \(D=8\):
@@ -203,7 +203,7 @@ CODATA \(m_e\), \(m_p\), and NIST IE_H dual-routed. Do not stuff \(\varphi/2\).
 
 ## 14. Composition vs thermo — Chemistry \(D=8\) ↔ Physical_Chemistry \(D=8\)
 
-Same \(D\), same \(C=e/\pi\). \(\delta\psi=0.6\) vs \(0.5\) is the look-split already scored against Materials/Optics. Equalizing \(\delta\psi\) at \(D=8\) is an identity pad. Dual-route CRC: density/MW on Chemistry, \(T_m\)/\(T_b\) on PhysChem.
+Same \(D\), same \(C=e/\pi\). Cookbook: [`APPLY_CHEMISTRY.md`](APPLY_CHEMISTRY.md). \(\delta\psi=0.6\) vs \(0.5\) is the look-split already scored against Materials/Optics. Equalizing \(\delta\psi\) at \(D=8\) is an identity pad. Dual-route CRC: density/MW on Chemistry, \(T_m\)/\(T_b\) on PhysChem.
 
 ---
 
@@ -221,7 +221,7 @@ CRC MW dual-routed. PhysChem↔Molecular already share \(\delta\psi=0.5\); that 
 
 ## Live tight envelope
 
-Pooled median **0.026% GREEN** · **1260** tight scalars · **1317** rows (24 perception-view rows are structural identity checks, not tight).  
+Pooled median **0.027% GREEN** · **7520** tight scalars · **7719** rows (**199** structural: live vs 1, D9 T1 leftover including fold-\(D\) look-splits, compactification remainder, deep PREM). Not missing data.  
 Seis–geo: \(\lvert S_{\mathrm{seis}}/S_{\mathrm{geo}}\rvert\) vs \(\varphi/2\) **0.377%**; lithosphere density dual-fold **0.022–0.028%**.  
 Mat–opt: CRC \(n_D\) **0.016%**; density **0.013%**; ice \(n\) vs \(\varphi^2/2\) **0.0013%**. \(\lvert S_{\mathrm{mat}}/S_{\mathrm{opt}}\rvert\) vs PhysChem/Chem look-split **0.329%** (vs 1 retired ~18%).  
 Opt–QO: \(\lvert S_{\mathrm{opt}}/S_{\mathrm{qo}}\rvert\) vs 1 **0.0265%**; CRC \(n_D\) photon fold **0.016%**.  
@@ -255,7 +255,7 @@ Equalize at the materials look (\(\delta\psi=0.5\)). Dual-route CRC \(n^2\) on E
 
 ## 20. Molecule vs signaling — Biochemistry \(D=13\) ↔ Neuroscience \(D=14\)
 
-Not the social-tank GDP dual-route. Equalize at the neural look (\(\delta\psi=0.7\), hits=1). Dual-route CRC MW of transmitter amino acids (Gly, Asp, Glu, Tyr, Trp, His).
+Cookbook: [`APPLY_NEURO.md`](APPLY_NEURO.md). Not the social-tank GDP dual-route. Equalize at the neural look (\(\delta\psi=0.7\), hits=1). Dual-route CRC MW of transmitter amino acids (Gly, Asp, Glu, Tyr, Trp, His). D9 T1 leftover at the \(D=13\) 0.5/0.7 fold is the closed form for the named ~0.4% look-split.
 
 ## 21. Well / collision vs composition / thermo — Atomic, HEP \(D=7\) ↔ Chemistry, PhysChem \(D=8\)
 
@@ -278,7 +278,7 @@ EM–Mol: same \(D=9\), \(\delta\psi=0.7\) vs \(0.5\). Fold onto \(D=8\). CRC \(
 Mol–Materials already share \(\delta\psi=0.5\); live \(|S|\) vs 1 is the matched-look rung. CRC MW vs density.  
 Mol–Optics: equalize \(\delta\psi=0.5\). CRC MW vs \(n_D\).
 
-QC stays dark (Hilbert look). Ecology / Psychology pairs wait for a named public table — do not invent watts or flip `observed`.
+QC stays dark (Hilbert look). Ecology / Psychology pairs use GBIF latitude and Nunnally/Cohen anchors — do not invent watts or flip `observed`. Cookbooks: [`APPLY_ECOLOGY.md`](APPLY_ECOLOGY.md) · [`APPLY_PSYCHOLOGY.md`](APPLY_PSYCHOLOGY.md).
 
 ## 24. Sound / bulk vs photon — Acoustics, Materials \(D=10\) ↔ Quantum_Optics \(D=11\)
 
@@ -308,7 +308,7 @@ CM–Nuclear: equalize \(\delta\psi=0.5\). CRC metal \(\rho\) and IAEA/ENDF keV 
 Fluid–Nuclear: same \(D=15\). Fluid stays dark. Carnot COP and ENDF keV dual-routed.  
 Fluid–Meteo: both dark. Equalize \(\delta\psi=0.8\), hits=2. Dual-route NDBC pressure. Do not flip `observed`.
 
-QC stays dark (Hilbert look). Ecology / Psychology pairs still wait for a named public table — do not invent watts.
+QC stays dark (Hilbert look). Ecology / Psychology use GBIF and Nunnally/Cohen — do not invent watts.
 
 ## 29. Signaling vs tank / orifice / weather — Neuro \(D=14\) ↔ Fluid / Nuclear \(D=15\) ↔ Meteo \(D=16\)
 
@@ -325,7 +325,7 @@ Ocean–Seis: both dark. NDBC SST on Ocean, PREM lithosphere density on Seis. Do
 ## 31. Photon vs organism · sky vs body — QO \(D=11\) ↔ Biology \(D=12\); Astronomy \(D=20\) ↔ Planetary \(D=21\)
 
 QO–Biology: Biology stays dark. Equalize \(\delta\psi=0.08\) unobserved. CRC \(n_D\) on QO, NCBI mt-operon on Biology.  
-Astronomy–Planetary: equalize \(\delta\psi=1\), hits=1. JPL Horizons mean densities through APPLY — not the identity-pad `computed=measured` planetary_structure rows.
+Astronomy–Planetary: equalize \(\delta\psi=1\), hits=1. Cookbook: [`APPLY_ASTRONOMY.md`](APPLY_ASTRONOMY.md). JPL Horizons mean densities through APPLY — not the identity-pad `computed=measured` planetary_structure rows.
 
 ## 32. Catalog tank vs air / ocean / crust — Sociology \(D=18\) ↔ Atm / Ocean \(D=17\) ↔ Seis \(D=18\) ↔ Geo \(D=19\)
 

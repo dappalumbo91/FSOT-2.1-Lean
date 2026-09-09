@@ -54,7 +54,7 @@ substance / scale
 | Family tree (cores + gaps) | [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) · `data/domain_family_tree.json` |
 | Atlas (named rows) | `data/publication/domain_atlas.csv` (~403) |
 | Green files | `data/benchmark_margin_audit.json` (**477/477**) |
-| Application protocol | [`APPLY.md`](APPLY.md) · catalog example [`MPCORB_REFINEMENT_PROCESS.md`](MPCORB_REFINEMENT_PROCESS.md) · wave example [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md) |
+| Application protocol | [`APPLY.md`](APPLY.md) · catalog [`MPCORB_REFINEMENT_PROCESS.md`](MPCORB_REFINEMENT_PROCESS.md) · wave [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md) · light [`APPLY_OPTICS.md`](APPLY_OPTICS.md) · bulk [`APPLY_MATERIALS.md`](APPLY_MATERIALS.md) · sound [`APPLY_ACOUSTICS.md`](APPLY_ACOUSTICS.md) · chemistry [`APPLY_CHEMISTRY.md`](APPLY_CHEMISTRY.md) · sky [`APPLY_ASTRONOMY.md`](APPLY_ASTRONOMY.md) |
 
 ---
 

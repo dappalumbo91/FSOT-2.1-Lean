@@ -32,15 +32,22 @@ Worked examples in-repo:
 - Catalog fold: MPCORB eccentricity failed ~62% on the wrong fold; Planetary_Science \(D=21\) brought the panel to **~0.023%**. Log: [`MPCORB_REFINEMENT_PROCESS.md`](MPCORB_REFINEMENT_PROCESS.md).
 - Wave fold: [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md) — PREM / \(b\)-value / dated cells. Neighbor Geophysics \(D=19\).
 - Light fold: [`APPLY_OPTICS.md`](APPLY_OPTICS.md) — CRC \(n_D\) wave vs photon. Neighbor Quantum_Optics \(D=11\).
+- Bulk fold: [`APPLY_MATERIALS.md`](APPLY_MATERIALS.md) — CRC density. Same rung as Optics; look-split vs PhysChem/Chem.
+- Lab-sound fold: [`APPLY_ACOUSTICS.md`](APPLY_ACOUSTICS.md) — CRC \(c\); PREM \(v_P/v_S\). Neighbor Seismology \(D=18\).
 - Quantum-to-atom fold: [`APPLY_ATOMIC.md`](APPLY_ATOMIC.md) — NIST hydrogen \(a_0\)/\(R_\infty\); H–Ca ionization. Neighbor Quantum_Mechanics \(D=6\).
 - EM fold: [`APPLY_EM.md`](APPLY_EM.md) — CRC \(n_D\) and Maxwell \(n^2\). Neighbor Optics \(D=10\).
+- Chemistry ladder: [`APPLY_CHEMISTRY.md`](APPLY_CHEMISTRY.md) — CRC MW / \(T_m\) / \(T_b\) / density. Chemistry \(D=8\), Physical_Chemistry \(D=8\), Molecular_Chemistry \(D=9\).
 - Biology fold: [`APPLY_BIO.md`](APPLY_BIO.md) — NCBI mt-operon / AA MW. Neighbor Biochemistry \(D=13\). Dark: do not flip `observed`.
+- Signaling fold: [`APPLY_NEURO.md`](APPLY_NEURO.md) — CRC transmitter AA. Neighbor Biochemistry \(D=13\); not Psychology watts.
 - Hilbert fold: [`APPLY_QC.md`](APPLY_QC.md) — CRC \(n_D\). Neighbor Optics / QO. Dark: do not flip `observed`.
+- Tank fold: [`APPLY_FLUID.md`](APPLY_FLUID.md) — NDBC neighborhood; \(\gamma=1.400\); \(e+\varphi\). Dark: do not flip `observed`.
+- Orifice fold: [`APPLY_NUCLEAR.md`](APPLY_NUCLEAR.md) — IAEA/ENDF keV. Neighbor Particle \(D=5\).
+- Heat fold: [`APPLY_THERMO.md`](APPLY_THERMO.md) — Carnot COP; fridge vs Cosmology \(\pi/2\).
 - Habitat fold: [`APPLY_ECOLOGY.md`](APPLY_ECOLOGY.md) — GBIF latitude. Dark: do not invent watts.
 - Psychometric fold: [`APPLY_PSYCHOLOGY.md`](APPLY_PSYCHOLOGY.md) — Nunnally/Cohen anchors. Not watts; not OpenAlex citations.
+- Sky fold: [`APPLY_ASTRONOMY.md`](APPLY_ASTRONOMY.md) — JPL densities; H0 sectors. Neighbor Planetary \(D=21\).
 - How to read a row: [`SCIENTIST_INTERFACE.md`](SCIENTIST_INTERFACE.md).
 - HEP fold: [`APPLY_HEP.md`](APPLY_HEP.md) — CODATA \(m_e\)/\(m_p\). Neighbor Atomic \(D=7\).
-- Chemistry ladder: CRC MW / \(T_m\) / \(T_b\) / density. Neighbors Physical_Chemistry \(D=8\), Molecular_Chemistry \(D=9\). See [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §14–15.
 
 ---
 

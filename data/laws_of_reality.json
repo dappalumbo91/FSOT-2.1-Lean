@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T17:51:51.944942+00:00",
+  "generated_at": "2026-09-09T18:18:38.040066+00:00",
   "pin": "D1D38A",
   "n": 18,
   "laws": [
@@ -179,7 +179,7 @@
       "name": "perception_is_scale_view",
       "statement": "Perception at a scale is T1 at that fold\u2019s \u03b4\u03c8, hits, and observed. Live |S_i|/|S_j| vs 1 asks for the same view; adjacent folds are not supposed to look the same.",
       "closed_form": "|S_i|/|S_j| = |1+T1_i|/|1+T1_j|  (T2=1, T3\u22480)",
-      "live": "T3 leftover 0.000% on 20 view pairs. QM/atomic live vs 1 is 29.86% = T1 view, not a failed 0.5%. Worst live vs 1 63.27%. Same-look D=6/7 vs 1 is 0.046%.",
+      "live": "T3 leftover 0.000% on 64 view pairs. QM/atomic live vs 1 is 29.86% = T1 view, not a failed 0.5%. Worst live vs 1 178.45%. Same-look D=6/7 vs 1 is 0.046%.",
       "code": "vendor/fsot_scale_interconnects.py t1_of \u00b7 FSOT/Formal/ScalarEngineStructure.lean abs_scaled_S_ratio_of_unit_t2_zero_t3 \u00b7 t3_leftover_of_unit_t2",
       "not": "Stuffing \u221a\u03c6 or \u221a(e/\u03c6) onto live vs 1. Retuning \u03b4\u03c8. Flipping dark folds observed=True. Gating live vs 1 at 0.5%. Padding the pooled median with the T1 identity."
     }
