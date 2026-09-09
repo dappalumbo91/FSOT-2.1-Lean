@@ -278,6 +278,13 @@ def main() -> int:
             a = autopsy_tide(score, fc)
         elif kind == "hydrology":
             a = autopsy_hydro(score, fc)
+        elif kind == "volcanic":
+            a = autopsy_eq(score, fc)
+            a["kind"] = "volcanic"
+            a["gap"] = (
+                (a.get("gap") or "no M>=4 in 39 km cell")
+                + " — check planetary cycle R⊕·POOF (~978 km) / Kp; cell kill_if unchanged"
+            )
         else:
             a = {"kind": kind, "id": score.get("id"), "gap": "unhandled"}
         a["score_file"] = score_file
@@ -297,6 +304,11 @@ def main() -> int:
             "wx_quiet": "Do not issue quiet if already pres<1005 or gst>=12. Skip lake buoys with short realtime buffers.",
             "tide": "Surge issue bar = POOF*(1+POOF). Harmonic cells can still load in 48 h — that is an honest quiet miss, not a POOF retune.",
             "hydro": "Dated-forecast gage IDs must match the named river (06803510 is Little Salt Creek, not Hermann). Do not rewrite issued JSON.",
+            "planetary_cycle": (
+                "Cell is R⊕·POOF/25. Neighbor tanks (solar/volcanic arc/trench/basin) "
+                "talk at R⊕·POOF. Diagnose transferred_poof vs honest_quiet. "
+                "Do not retune kernel km."
+            ),
         },
     }
     out_json.write_text(json.dumps(payload, indent=2), encoding="utf-8")
@@ -354,6 +366,10 @@ def main() -> int:
         "that is an honest quiet miss, not a POOF retune.",
         "- **Hydrology:** dated-forecast gage IDs must match the named river. `06803510` is "
         "Little Salt Creek near Lincoln NE, not Missouri at Hermann (`06934500`). Issued JSON stays.",
+        "- **Planetary cycle:** cell = R⊕·POOF/25 (39 km). Neighbor tanks (solar / volcanic arc / "
+        "trench / basin) talk at R⊕·POOF (~978 km). Five loading kills were transferred_poof on "
+        "the arc. Scotia Sea is honest_quiet. See [`../../docs/PLANETARY_CYCLE_CONNECTIVE.md`]"
+        "(../../docs/PLANETARY_CYCLE_CONNECTIVE.md). Do not retune kernel km.",
         "",
         "Do not retune ρ, POOF, or kernel km to swallow these.",
         "",

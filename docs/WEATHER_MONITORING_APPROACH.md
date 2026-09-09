@@ -19,7 +19,8 @@ A storm, a quake, a flare, an eruption is **pressure that stops** — the cell r
 
 | Handle | Seed-closed form | Now | Later (always-on) |
 |--------|------------------|-----|-------------------|
-| Length | \(R_\oplus \cdot \mathrm{POOF}/25\) ≈ **39.1 km** | EQ/volc radius | grid / station graph at that scale |
+| Length | \(R_\oplus \cdot \mathrm{POOF}/25\) ≈ **39.1 km** | EQ/volc **cell** | grid / station graph at that scale |
+| Planetary cycle | \(R_\oplus \cdot \mathrm{POOF}\) ≈ **978 km** | arc / trench / basin tanks | solar–volcanic–seismic coupling |
 | Horizon | \(\varphi^4\) ≈ **7 days** | freeze one issue per day | sliding window, hourly issue |
 | Aftershock timing | \(n(t)\propto 1/(t+1/\varphi)^{1}\) | carried on each EQ cell | score Omori residual vs USGS decay |
 | Weather window | 48 h | NDBC storm vs quiet, one cell per ocean basin | METAR/NWP ingest, same valve |
@@ -55,7 +56,7 @@ Playbook after the 12-kill autopsy (encoded for **new** issues, not rewrites):
 - Weather quiet: only if pres≥1010 hPa **and** gst<8 m/s; skip basin `other`.
 - Tide surge: issue only if residual ≥ POOF·(1+POOF); score still vs POOF.
 - Retrospective of the 12 frozen kills: [`../results/dated_forecast_scores/RULE_RETRO.md`](../results/dated_forecast_scores/RULE_RETRO.md). Public scoreboard of issued files stays those kills.
-- **2026-09-01 playbook issue** already used the refined EQ rule. Two ocean loading cells (Honchō, Kermadec) stayed quiet inside 39 km — honest kills, same grammar as Scotia Sea. Do not retune kernel km.
+- **2026-09-01 playbook issue** already used the refined EQ rule. Honchō and Kermadec were quiet **inside the 39 km cell** and POOF’d on the arc at \(R_\oplus\cdot\mathrm{POOF}\approx 978\) km (Kuril / Kermadec region). That is a transferred tank, not a kernel retune. Scotia Sea loading with nothing inside 978 km stays honest quiet. Cycle diagnosis: [`PLANETARY_CYCLE_CONNECTIVE.md`](PLANETARY_CYCLE_CONNECTIVE.md).
 
 ---
 

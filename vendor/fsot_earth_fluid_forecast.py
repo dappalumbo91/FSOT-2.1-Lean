@@ -36,7 +36,18 @@ def f(x: Any) -> float:
 
 
 def kernel_km() -> float:
+    """Crustal cell: one compactified slice of Earth's orifice."""
     return R_EARTH_KM * f(POOF) / 25.0
+
+
+def cycle_km() -> float:
+    """Planetary-cycle coupling: the same orifice without the 25-D fold.
+
+    Solar, volcanic arc, trench, and basin tanks talk at R⊕·POOF, not at
+    the 39 km cell. Not a new coefficient — compactification denominator
+    off. Issued kill_if stays on kernel_km.
+    """
+    return R_EARTH_KM * f(POOF)
 
 
 def forecast_horizon_days() -> int:
@@ -186,6 +197,13 @@ def earthquake_forecasts(
                     "omori_p": omori_p(),
                     "omori_c_days": omori_c_days(),
                     "timing_note": "after POOF, relative aftershock rate ~ 1/(t+1/φ)^1",
+                    "cycle_radius_km": round(cycle_km(), 1),
+                    "neighbor_kinds": ["volcanic", "solar", "earthquake"],
+                    "cycle_note": (
+                        "Cell is R⊕·POOF/25. If the cell is quiet, look for POOF "
+                        "in the planetary cycle (R⊕·POOF) — arc/trench/solar tanks. "
+                        "Does not rewrite kill_if."
+                    ),
                 },
                 "kill_if": (
                     f"{'No' if expect else 'An'} USGS M≥{mag_min} inside "
@@ -408,6 +426,12 @@ def volcanic_forecasts(
                     "expect_event": True,
                     "valve_state": "loading_suction",
                     "fsot_pressure": round(float(cell["pressure"]), 4),
+                    "cycle_radius_km": round(cycle_km(), 1),
+                    "neighbor_kinds": ["earthquake", "solar", "volcanic"],
+                    "cycle_note": (
+                        "Volcanic arc is one tank with the trench. Cell kill_if "
+                        "stays 39 km; cycle POOF is R⊕·POOF (~978 km) plus Kp."
+                    ),
                 },
                 "kill_if": (
                     f"No USGS volcanic/explosion or M≥4 within {kernel_km():.0f} km "

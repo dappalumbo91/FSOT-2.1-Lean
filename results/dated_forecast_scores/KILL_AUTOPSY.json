@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T18:54:47.491546+00:00",
+  "generated_at": "2026-09-09T19:03:02.970330+00:00",
   "pin": "D1D38A",
   "n_kills": 45,
   "policy": "do_not_rewrite_issued_json",
@@ -164,7 +164,26 @@
     {
       "kind": "volcanic",
       "id": "FCAST-VOLC-20260825-01",
-      "gap": "unhandled",
+      "place": "Volcano Islands, Japan region",
+      "valve": "loading_suction",
+      "expect_event": true,
+      "mag_min": 4.0,
+      "n_recent": null,
+      "max_mag_recent": null,
+      "pressure": 0.9091,
+      "usgs_error": null,
+      "n_m4_in_kernel": 0,
+      "n_m45_in_kernel": 0,
+      "n_m5_in_kernel": 0,
+      "biggest_in_kernel": null,
+      "nearest_m45_150km": {
+        "id": "us7000tc7l",
+        "mag": 5.2,
+        "place": "Volcano Islands, Japan region",
+        "km": 90.9,
+        "time": 1787809465931
+      },
+      "gap": "no M>=4 in kernel \u2014 check planetary cycle R\u2295\u00b7POOF (~978 km) / Kp; cell kill_if unchanged",
       "score_file": "2026-08-25_score.json"
     },
     {
@@ -367,7 +386,26 @@
     {
       "kind": "volcanic",
       "id": "FCAST-VOLC-20260825T0121-01",
-      "gap": "unhandled",
+      "place": "Volcano Islands, Japan region",
+      "valve": "loading_suction",
+      "expect_event": true,
+      "mag_min": 4.0,
+      "n_recent": null,
+      "max_mag_recent": null,
+      "pressure": 0.9091,
+      "usgs_error": null,
+      "n_m4_in_kernel": 0,
+      "n_m45_in_kernel": 0,
+      "n_m5_in_kernel": 0,
+      "biggest_in_kernel": null,
+      "nearest_m45_150km": {
+        "id": "us7000tc7l",
+        "mag": 5.2,
+        "place": "Volcano Islands, Japan region",
+        "km": 90.9,
+        "time": 1787809465931
+      },
+      "gap": "no M>=4 in kernel \u2014 check planetary cycle R\u2295\u00b7POOF (~978 km) / Kp; cell kill_if unchanged",
       "score_file": "2026-08-25T012157_score.json"
     },
     {
@@ -582,7 +620,26 @@
     {
       "kind": "volcanic",
       "id": "FCAST-VOLC-20260825T0222-01",
-      "gap": "unhandled",
+      "place": "Volcano Islands, Japan region",
+      "valve": "loading_suction",
+      "expect_event": true,
+      "mag_min": 4.0,
+      "n_recent": null,
+      "max_mag_recent": null,
+      "pressure": 0.9091,
+      "usgs_error": null,
+      "n_m4_in_kernel": 0,
+      "n_m45_in_kernel": 0,
+      "n_m5_in_kernel": 0,
+      "biggest_in_kernel": null,
+      "nearest_m45_150km": {
+        "id": "us7000tc7l",
+        "mag": 5.2,
+        "place": "Volcano Islands, Japan region",
+        "km": 90.9,
+        "time": 1787809465931
+      },
+      "gap": "no M>=4 in kernel \u2014 check planetary cycle R\u2295\u00b7POOF (~978 km) / Kp; cell kill_if unchanged",
       "score_file": "2026-08-25T022247_score.json"
     },
     {
@@ -893,6 +950,7 @@
     "eq": "Do not promise M>=5 on released/steady cells. Loading cells: score elevated M>=4.5 rate vs prior half, not a guaranteed M>=5.",
     "wx_quiet": "Do not issue quiet if already pres<1005 or gst>=12. Skip lake buoys with short realtime buffers.",
     "tide": "Surge issue bar = POOF*(1+POOF). Harmonic cells can still load in 48 h \u2014 that is an honest quiet miss, not a POOF retune.",
-    "hydro": "Dated-forecast gage IDs must match the named river (06803510 is Little Salt Creek, not Hermann). Do not rewrite issued JSON."
+    "hydro": "Dated-forecast gage IDs must match the named river (06803510 is Little Salt Creek, not Hermann). Do not rewrite issued JSON.",
+    "planetary_cycle": "Cell is R\u2295\u00b7POOF/25. Neighbor tanks (solar/volcanic arc/trench/basin) talk at R\u2295\u00b7POOF. Diagnose transferred_poof vs honest_quiet. Do not retune kernel km."
   }
 }

@@ -215,6 +215,7 @@ infall / accretion     →  POOF (orifice)  →  outflow / suction / C_eff
 ```
 
 Macro: Hubble tools read different **bubble-density sectors** of the same outgassing (C3).  
+Earth: a dated quake/volcano cell is \(R_\oplus\cdot\mathrm{POOF}/25\) (one compactified slice). Solar, volcanic arc, trench, and basin tanks talk at \(R_\oplus\cdot\mathrm{POOF}\) — same orifice, `/25` off. A quiet 39 km cell with an M5 on the arc is a **transferred POOF**, not a failed planet.  
 Micro: codon / protein / QC collapse is the same valve — trit 0 is the superposed orifice; ±1 are the two collapses.
 
 Matter is not created or destroyed. **Form** changes. \(S\), \(T_1\), \(T_3\) are the invariants the cycle is scored against.

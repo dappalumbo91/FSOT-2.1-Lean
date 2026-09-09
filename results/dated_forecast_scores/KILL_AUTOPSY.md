@@ -1,6 +1,6 @@
 # Kill autopsy — dated fluid windows
 
-*Generated 2026-09-09T18:54:47.491546+00:00 · pin D1D38A · **45 kills***
+*Generated 2026-09-09T19:03:02.970330+00:00 · pin D1D38A · **45 kills***
 
 Issued JSON is frozen. Public scoreboard of those files stays these kills.
 This explains **why** each kill fired. Playbook retro of the first 12:
@@ -72,9 +72,9 @@ This explains **why** each kill fired. Playbook retro of the first 12:
 
 | ID | Issued | Gap |
 |----|--------|-----|
-| `FCAST-VOLC-20260825-01` | harmonic · None | unhandled |
-| `FCAST-VOLC-20260825T0121-01` | harmonic · None | unhandled |
-| `FCAST-VOLC-20260825T0222-01` | harmonic · None | unhandled |
+| `FCAST-VOLC-20260825-01` | loading_suction · Volcano Islands, Japan region | no M>=4 in kernel — check planetary cycle R⊕·POOF (~978 km) / Kp; cell kill_if unchanged |
+| `FCAST-VOLC-20260825T0121-01` | loading_suction · Volcano Islands, Japan region | no M>=4 in kernel — check planetary cycle R⊕·POOF (~978 km) / Kp; cell kill_if unchanged |
+| `FCAST-VOLC-20260825T0222-01` | loading_suction · Volcano Islands, Japan region | no M>=4 in kernel — check planetary cycle R⊕·POOF (~978 km) / Kp; cell kill_if unchanged |
 
 ## Solve (next issues only)
 
@@ -82,6 +82,7 @@ This explains **why** each kill fired. Playbook retro of the first 12:
 - **Quiet weather:** do not issue if already past 1005 hPa / 12 m/s. Skip lake `other` buoys. A clean quiet (pres≥1010, gst<8) that later crosses 12 m/s is an honest 48 h miss.
 - **Tides:** surge *issue* bar = POOF·(1+POOF). Harmonic cells can still load in 48 h — that is an honest quiet miss, not a POOF retune.
 - **Hydrology:** dated-forecast gage IDs must match the named river. `06803510` is Little Salt Creek near Lincoln NE, not Missouri at Hermann (`06934500`). Issued JSON stays.
+- **Planetary cycle:** cell = R⊕·POOF/25 (39 km). Neighbor tanks (solar / volcanic arc / trench / basin) talk at R⊕·POOF (~978 km). Five loading kills were transferred_poof on the arc. Scotia Sea is honest_quiet. See [`../../docs/PLANETARY_CYCLE_CONNECTIVE.md`](../../docs/PLANETARY_CYCLE_CONNECTIVE.md). Do not retune kernel km.
 
 Do not retune ρ, POOF, or kernel km to swallow these.
 
