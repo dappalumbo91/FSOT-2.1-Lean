@@ -3,6 +3,81 @@ theory ScientificCatalogSpine_08
 imports Complex_Main
 begin
 
+lemma cat_energy_ai_orbital_bridge_records_pos: "0 < (48 :: nat)"
+  by eval
+
+lemma cat_energy_ai_orbital_bridge_pooled_under_half_pct: "(0.02754410755640712 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_energy_ai_orbital_bridge_pooled_lt_half_pure: "(0.02754410755640712 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_energy_ai_orbital_bridge_max_scalar_under_half_pct: "(0.027544107556418167 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_energy_ai_orbital_bridge_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_fusion_lab_certificate_spine_records_pos: "0 < (50 :: nat)"
+  by eval
+
+lemma cat_fusion_lab_certificate_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fusion_lab_certificate_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fusion_lab_certificate_spine_max_scalar_under_half_pct: "(0.027544107556414246 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fusion_lab_certificate_spine_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_cartography_gis_panel_records_pos: "0 < (48 :: nat)"
+  by eval
+
+lemma cat_cartography_gis_panel_pooled_under_half_pct: "(0.018855999999999998 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_cartography_gis_panel_pooled_lt_half_pure: "(0.018855999999999998 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_cartography_gis_panel_max_scalar_under_half_pct: "(0.027455 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_cartography_gis_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_paleontology_panel_records_pos: "0 < (120 :: nat)"
+  by eval
+
+lemma cat_paleontology_panel_pooled_under_half_pct: "(0.0167305 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_paleontology_panel_pooled_lt_half_pure: "(0.0167305 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_paleontology_panel_max_scalar_under_half_pct: "(0.027455 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_paleontology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_h0_planck_cmb_sector_records_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cat_h0_planck_cmb_sector_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_h0_planck_cmb_sector_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_h0_planck_cmb_sector_max_scalar_under_half_pct: "(0.027018411789274284 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_h0_planck_cmb_sector_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_alphafold_batch_meta_open_records_pos: "0 < (182 :: nat)"
   by eval
 
@@ -273,7 +348,7 @@ lemma cat_reality_folding_spine_max_scalar_under_half_pct: "(0.02575383530519543
 lemma cat_reality_folding_spine_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_founding_galactic_halo_rotation_panel_records_pos: "0 < (5 :: nat)"
+lemma cat_founding_galactic_halo_rotation_panel_records_pos: "0 < (20 :: nat)"
   by eval
 
 lemma cat_founding_galactic_halo_rotation_panel_pooled_under_half_pct: "(0.025123 :: real) < (0.5 :: real)"
@@ -286,81 +361,6 @@ lemma cat_founding_galactic_halo_rotation_panel_max_scalar_under_half_pct: "(0.0
   by eval
 
 lemma cat_founding_galactic_halo_rotation_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_usgs_seismic_history_open_records_pos: "0 < (398 :: nat)"
-  by eval
-
-lemma cat_usgs_seismic_history_open_pooled_under_half_pct: "(0.022295 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_usgs_seismic_history_open_pooled_lt_half_pure: "(0.022295 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_usgs_seismic_history_open_max_scalar_under_half_pct: "(0.024709 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_usgs_seismic_history_open_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_code_genome_structure_records_pos: "0 < (176 :: nat)"
-  by eval
-
-lemma cat_code_genome_structure_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_code_genome_structure_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_code_genome_structure_max_scalar_under_half_pct: "(0.02449769835093818 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_code_genome_structure_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_founding_atmospheric_ozone_panel_records_pos: "0 < (5 :: nat)"
-  by eval
-
-lemma cat_founding_atmospheric_ozone_panel_pooled_under_half_pct: "(0.023822 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_founding_atmospheric_ozone_panel_pooled_lt_half_pure: "(0.023822 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_founding_atmospheric_ozone_panel_max_scalar_under_half_pct: "(0.023822 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_founding_atmospheric_ozone_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_ionospheric_chemistry_coupling_records_pos: "0 < (85 :: nat)"
-  by eval
-
-lemma cat_ionospheric_chemistry_coupling_pooled_under_half_pct: "(0.023609235048340338 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_ionospheric_chemistry_coupling_pooled_lt_half_pure: "(0.023609235048340338 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_ionospheric_chemistry_coupling_max_scalar_under_half_pct: "(0.023609235048340338 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_ionospheric_chemistry_coupling_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_dzhanibekov_intermediate_axis_fsot_panel_records_pos: "0 < (32 :: nat)"
-  by eval
-
-lemma cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dzhanibekov_intermediate_axis_fsot_panel_max_scalar_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_dzhanibekov_intermediate_axis_fsot_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

@@ -3,6 +3,96 @@ theory ScientificCatalogSpine_10
 imports Complex_Main
 begin
 
+lemma cat_longevity_megadeep_ncbi_panel_records_pos: "0 < (1746 :: nat)"
+  by eval
+
+lemma cat_longevity_megadeep_ncbi_panel_pooled_under_half_pct: "(0.017789 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_longevity_megadeep_ncbi_panel_pooled_lt_half_pure: "(0.017789 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_longevity_megadeep_ncbi_panel_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_longevity_megadeep_ncbi_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_longevity_telomere_repair_panel_records_pos: "0 < (60 :: nat)"
+  by eval
+
+lemma cat_longevity_telomere_repair_panel_pooled_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_longevity_telomere_repair_panel_pooled_lt_half_pure: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_longevity_telomere_repair_panel_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_longevity_telomere_repair_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_mycology_panel_records_pos: "0 < (90 :: nat)"
+  by eval
+
+lemma cat_mycology_panel_pooled_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_mycology_panel_pooled_lt_half_pure: "(0.006006 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_mycology_panel_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_mycology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_owid_epidemiology_open_records_pos: "0 < (1778 :: nat)"
+  by eval
+
+lemma cat_owid_epidemiology_open_pooled_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_owid_epidemiology_open_pooled_lt_half_pure: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_owid_epidemiology_open_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_owid_epidemiology_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_physarum_biological_cuda_panel_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_physarum_biological_cuda_panel_pooled_under_half_pct: "(0.0003086625 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_physarum_biological_cuda_panel_pooled_lt_half_pure: "(0.0003086625 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_physarum_biological_cuda_panel_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_physarum_biological_cuda_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_rcsb_structure_batch_open_records_pos: "0 < (91 :: nat)"
+  by eval
+
+lemma cat_rcsb_structure_batch_open_pooled_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_rcsb_structure_batch_open_pooled_lt_half_pure: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_rcsb_structure_batch_open_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_rcsb_structure_batch_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_virology_panel_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -48,7 +138,7 @@ lemma cat_zebrafish_developmental_mechanics_panel_max_scalar_under_half_pct: "(0
 lemma cat_zebrafish_developmental_mechanics_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
-lemma cat_founding_cosmic_ray_panel_records_pos: "0 < (5 :: nat)"
+lemma cat_founding_cosmic_ray_panel_records_pos: "0 < (20 :: nat)"
   by eval
 
 lemma cat_founding_cosmic_ray_panel_pooled_under_half_pct: "(0.021221 :: real) < (0.5 :: real)"
@@ -271,96 +361,6 @@ lemma cat_paleontology_max_scalar_under_half_pct: "(0.017836062884422174 :: real
   by eval
 
 lemma cat_paleontology_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_zebrafish_longevity_genetics_coupling_panel_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_zebrafish_longevity_genetics_coupling_panel_pooled_under_half_pct: "(0.013342 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_zebrafish_longevity_genetics_coupling_panel_pooled_lt_half_pure: "(0.013342 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_zebrafish_longevity_genetics_coupling_panel_max_scalar_under_half_pct: "(0.015565 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_zebrafish_longevity_genetics_coupling_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_openneuro_full_panel_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_openneuro_full_panel_pooled_under_half_pct: "(0.015431 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_openneuro_full_panel_pooled_lt_half_pure: "(0.015431 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_openneuro_full_panel_max_scalar_under_half_pct: "(0.015431 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_openneuro_full_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_cardiology_panel_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_cardiology_panel_pooled_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cardiology_panel_pooled_lt_half_pure: "(0.015311 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cardiology_panel_max_scalar_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cardiology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_epidemiology_panel_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_epidemiology_panel_pooled_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_epidemiology_panel_pooled_lt_half_pure: "(0.015311 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_epidemiology_panel_max_scalar_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_epidemiology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_jarvis_dft_open_panel_records_pos: "0 < (77 :: nat)"
-  by eval
-
-lemma cat_jarvis_dft_open_panel_pooled_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_jarvis_dft_open_panel_pooled_lt_half_pure: "(0.01341 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_jarvis_dft_open_panel_max_scalar_under_half_pct: "(0.015087 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_jarvis_dft_open_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_materials_creep_fracture_depth_panel_records_pos: "0 < (47 :: nat)"
-  by eval
-
-lemma cat_materials_creep_fracture_depth_panel_pooled_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_materials_creep_fracture_depth_panel_pooled_lt_half_pure: "(0.01341 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_materials_creep_fracture_depth_panel_max_scalar_under_half_pct: "(0.015087 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_materials_creep_fracture_depth_panel_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

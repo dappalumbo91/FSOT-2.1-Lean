@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T00:26:10.420791+00:00",
+  "generated_at": "2026-09-08T00:16:15.575152+00:00",
   "pin": "D1D38A",
   "claim": "One 25-D fluid. Core folds are D_eff slices. Extensions are subdomains of a slice, not other ontologies. Gaps are missing interconnects between slices.",
   "core_count": 35,
@@ -10769,7 +10769,7 @@
       "artifact": "vendor/fsot_compute.py \u00a725"
     },
     {
-      "name": "Between-scale interconnects (5 gaps)",
+      "name": "Between-scale interconnects (wave/fluid/fridge/orifice/ceiling/social/seis-geo)",
       "cores": [
         "Acoustics",
         "Seismology",
@@ -10780,10 +10780,13 @@
         "Cosmology",
         "Nuclear_Physics",
         "Particle_Physics",
-        "Quantum_Gravity"
+        "Quantum_Gravity",
+        "Geophysics",
+        "Materials_Science",
+        "Optics"
       ],
       "status": "filled",
-      "note": "PREM+NDBC+ENDF+Carnot+QG+social tanks. Pooled ~0.03% GREEN.",
+      "note": "PREM+NDBC+ENDF+Carnot+QG+social+seis-geo. Pooled ~0.03% GREEN.",
       "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md"
     }
   ],
@@ -10795,8 +10798,8 @@
         "Fluid_Dynamics",
         "Neuroscience"
       ],
-      "why": "Zebrafish 0.358% is inside 0.5%. Genetics repo is the live fold; migrate when that freeze lands.",
-      "fill_looks_like": "Do not densify here. Wait for FSOT-Genetics product freeze, then hub residual."
+      "why": "Zebrafish 0.358% is inside 0.5%. Genetics product freeze 2026-08-17 is quoted in the hub.",
+      "fill_looks_like": "Do not densify zebrafish here. CASP/CAMEO blind is OPEN (docs/CASP_CAMEO_BLIND_PROTOCOL.md)."
     }
   ]
 }

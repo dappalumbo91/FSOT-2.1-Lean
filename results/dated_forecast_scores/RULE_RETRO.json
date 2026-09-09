@@ -1,0 +1,207 @@
+{
+  "generated_at": "2026-09-01T00:42:40.613794+00:00",
+  "pin": "D1D38A",
+  "policy": [
+    "do_not_rewrite_issued_json",
+    "do_not_restuff_public_scoreboard",
+    "playbook_test_only"
+  ],
+  "poof": 0.1534822148944508,
+  "surge_score_m": 0.1534822148944508,
+  "surge_issue_m": 0.17703900518335716,
+  "n_input_kills": 12,
+  "counts": {
+    "hold": 6,
+    "kill": 1,
+    "would_not_issue": 5
+  },
+  "n_converted_hold": 6,
+  "n_still_kill": 1,
+  "n_would_not_issue": 5,
+  "rows": [
+    {
+      "id": "FCAST-EQ-20260825-02",
+      "kind": "earthquake",
+      "place": "9 km WNW of Pematangsiantar, Indonesia",
+      "issued_expect": true,
+      "issued_mag_min": 5.0,
+      "valve": "steady",
+      "new_expect": false,
+      "new_mag_min": 5.0,
+      "converted": "hold",
+      "reason": "released/steady \u2192 quiet hold (kill only if M\u22655 shows); n_M5=0",
+      "biggest_in_kernel": null,
+      "would_issue": true
+    },
+    {
+      "id": "FCAST-EQ-20260825-03",
+      "kind": "earthquake",
+      "place": "31 km NW of Aniso, Peru",
+      "issued_expect": true,
+      "issued_mag_min": 5.0,
+      "valve": "released",
+      "new_expect": false,
+      "new_mag_min": 5.0,
+      "converted": "hold",
+      "reason": "released/steady \u2192 quiet hold (kill only if M\u22655 shows); n_M5=0",
+      "biggest_in_kernel": null,
+      "would_issue": true
+    },
+    {
+      "id": "FCAST-EQ-20260825-04",
+      "kind": "earthquake",
+      "place": "215 km NNE of Lospalos, Timor Leste",
+      "issued_expect": true,
+      "issued_mag_min": 5.0,
+      "valve": "loading_suction",
+      "new_expect": true,
+      "new_mag_min": 4.5,
+      "converted": "hold",
+      "reason": "loading \u2192 expect M\u22654.5; kernel had 4.8",
+      "biggest_in_kernel": {
+        "id": "us7000tbw3",
+        "mag": 4.8,
+        "place": "215 km NNE of Lospalos, Timor Leste",
+        "km": 3.4,
+        "time": 1787708891757
+      },
+      "would_issue": true
+    },
+    {
+      "id": "FCAST-EQ-20260825-05",
+      "kind": "earthquake",
+      "place": "Scotia Sea",
+      "issued_expect": true,
+      "issued_mag_min": 5.0,
+      "valve": "loading_suction",
+      "new_expect": true,
+      "new_mag_min": 4.5,
+      "converted": "kill",
+      "reason": "loading \u2192 expect M\u22654.5; no M\u22654.5 in kernel",
+      "biggest_in_kernel": null,
+      "would_issue": true
+    },
+    {
+      "id": "FCAST-EQ-20260825-06",
+      "kind": "earthquake",
+      "place": "56 km NNE of Port-Olry, Vanuatu",
+      "issued_expect": true,
+      "issued_mag_min": 5.0,
+      "valve": "steady",
+      "new_expect": false,
+      "new_mag_min": 5.0,
+      "converted": "hold",
+      "reason": "released/steady \u2192 quiet hold (kill only if M\u22655 shows); n_M5=0",
+      "biggest_in_kernel": null,
+      "would_issue": true
+    },
+    {
+      "id": "FCAST-EQ-20260825-07",
+      "kind": "earthquake",
+      "place": "33 km SSW of Honch\u014d, Japan",
+      "issued_expect": true,
+      "issued_mag_min": 5.0,
+      "valve": "loading_suction",
+      "new_expect": true,
+      "new_mag_min": 4.5,
+      "converted": "hold",
+      "reason": "loading \u2192 expect M\u22654.5; kernel had 4.5",
+      "biggest_in_kernel": {
+        "id": "us7000tcvt",
+        "mag": 4.5,
+        "place": "18 km SW of Urakawa, Japan",
+        "km": 28.9,
+        "time": 1788048859915
+      },
+      "would_issue": true
+    },
+    {
+      "id": "FCAST-EQ-20260825-08",
+      "kind": "earthquake",
+      "place": "South Sandwich Islands region",
+      "issued_expect": true,
+      "issued_mag_min": 5.0,
+      "valve": "steady",
+      "new_expect": false,
+      "new_mag_min": 5.0,
+      "converted": "hold",
+      "reason": "released/steady \u2192 quiet hold (kill only if M\u22655 shows); n_M5=0",
+      "biggest_in_kernel": null,
+      "would_issue": true
+    },
+    {
+      "id": "FCAST-WX-20260825T0121-03",
+      "kind": "weather",
+      "place": "NDBC OLCN6 (atlantic)",
+      "pres_now": 1004.4,
+      "gst_now": 9.3,
+      "issued_expect_storm": false,
+      "converted": "would_not_issue",
+      "reason": "gap-zone quiet (pres=1004.4 hPa, gst=9.3 m/s); new issuer skips 1000\u20131010 / 8\u201315",
+      "would_issue": false
+    },
+    {
+      "id": "FCAST-WX-20260825T0121-05",
+      "kind": "weather",
+      "place": "NDBC 42058 (tropics)",
+      "pres_now": 1010.4,
+      "gst_now": 12.0,
+      "issued_expect_storm": false,
+      "converted": "would_not_issue",
+      "reason": "gap-zone quiet (pres=1010.4 hPa, gst=12.0 m/s); new issuer skips 1000\u20131010 / 8\u201315",
+      "would_issue": false
+    },
+    {
+      "id": "FCAST-TIDE-20260825T0121-01",
+      "kind": "tide",
+      "place": "NOAA San Francisco (9414290)",
+      "residual_now_m": 0.157,
+      "max_in_window_m": 0.145,
+      "score_threshold_m": 0.1534822148944508,
+      "issue_threshold_m": 0.17703900518335716,
+      "issued_expect_surge": true,
+      "converted": "would_not_issue",
+      "reason": "snapshot 0.157 m < issue bar POOF\u00b7(1+POOF)=0.177 m (score bar still POOF=0.153 m)",
+      "would_issue": false
+    },
+    {
+      "id": "FCAST-WX-20260825T0222-03",
+      "kind": "weather",
+      "place": "NDBC OLCN6 (atlantic)",
+      "pres_now": 1004.7,
+      "gst_now": 13.9,
+      "issued_expect_storm": false,
+      "converted": "would_not_issue",
+      "reason": "gap-zone quiet (pres=1004.7 hPa, gst=13.9 m/s); new issuer skips 1000\u20131010 / 8\u201315",
+      "would_issue": false
+    },
+    {
+      "id": "FCAST-WX-20260825T0222-05",
+      "kind": "weather",
+      "place": "NDBC 42058 (tropics)",
+      "pres_now": 1011.2,
+      "gst_now": 11.0,
+      "issued_expect_storm": false,
+      "converted": "would_not_issue",
+      "reason": "gap-zone quiet (pres=1011.2 hPa, gst=11.0 m/s); new issuer skips 1000\u20131010 / 8\u201315",
+      "would_issue": false
+    }
+  ],
+  "still_kill": [
+    {
+      "id": "FCAST-EQ-20260825-05",
+      "kind": "earthquake",
+      "place": "Scotia Sea",
+      "issued_expect": true,
+      "issued_mag_min": 5.0,
+      "valve": "loading_suction",
+      "new_expect": true,
+      "new_mag_min": 4.5,
+      "converted": "kill",
+      "reason": "loading \u2192 expect M\u22654.5; no M\u22654.5 in kernel",
+      "biggest_in_kernel": null,
+      "would_issue": true
+    }
+  ],
+  "note": "Frozen issue scores stay kill. This file asks: under the playbook encoded after the autopsy (loading M\u22654.5 / released-steady quiet / quiet only if pres\u22651010 and gst<8 / surge issue bar POOF\u00b7(1+POOF)), which of those 12 would still be a miss?"
+}

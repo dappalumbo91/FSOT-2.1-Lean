@@ -1,6 +1,6 @@
 # Fluid Spacetime Omni-Theory (FSOT)
 
-> **Edition freeze 2026-07-16.** Live green / obligation counts are in [`docs/CURRENT_STATUS.md`](../../docs/CURRENT_STATUS.md) and [`docs/COUNT_VOCABULARY.md`](../../docs/COUNT_VOCABULARY.md): **472/472** green, **2022** atomic. Numbers in this file (394/394, 1,863 atomic) are the **July freeze**, not the live gate.
+> **Edition freeze 2026-07-16.** Live green / obligation counts are in [`docs/CURRENT_STATUS.md`](../../docs/CURRENT_STATUS.md) and [`docs/COUNT_VOCABULARY.md`](../../docs/COUNT_VOCABULARY.md): **477/477** green, **2024** atomic. Numbers in this file (394/394, 1,863 atomic) are the **July freeze**, not the live gate.
 
 ## A Cross-Domain Theory of Reality — Published on GitHub
 

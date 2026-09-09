@@ -1,8 +1,8 @@
 # GitHub / README Sync Audit
 
-**Audited:** 2026-07-15T17:43:25.735822+00:00
-**Local HEAD:** `4156050` | **Origin:** `4156050`
-**Ahead of origin:** 0 | **Behind:** 0
+**Audited:** 2026-09-09T16:11:15.041415+00:00
+**Local HEAD:** `7a0f3e8` | **Origin:** `55b288d`
+**Ahead of origin:** 17 | **Behind:** 0
 
 **Cross-proof:** overall_ok=True github_ready=True
 **Ready for expansive README run:** `True`
@@ -10,7 +10,7 @@
 ## Actions required
 
 1. **[high]** git add + commit + push pending verification artifacts
-   - 46 working-tree changes; ahead of origin by 0
+   - 225 working-tree changes; ahead of origin by 17
 
 2. **[medium]** python scripts/build_readme_thesis_expansion.py
    - {'exists': True, 'written_count': 0, 'pending_count': 7, 'pending_ids': ['cross_verification', 'api_resources', 'literature', 'domain_atlas', 'formula_corpus', 'contested_observables', 'verified_desktop'], 'sections_on_disk': 7}

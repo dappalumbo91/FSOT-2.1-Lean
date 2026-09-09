@@ -16,7 +16,7 @@ python scripts/sync_sibling_embodiment_ledgers.py
 
 ## What the live Genetics repo actually says (2026-08-17)
 
-I re-read `C:\Users\damia\Desktop\FSOT-Genetics` (README, `docs/AUDIT.md`, `docs/OPEN.md`, `docs/PRODUCT_FREEZE.md`, `data/product_vs_alphafold.json`). The product path is **closed** at 0.13 Å. The thing that was “fixed” after the 2026-08-13 Lean pull is **claim language + CaM/SC/H observer law**, not a new median invented here.
+I re-read the living Genetics sibling (README, `docs/AUDIT.md`, `docs/OPEN.md`, `docs/PRODUCT_FREEZE.md`, `data/product_vs_alphafold.json`). The product path is **closed** at 0.13 Å (freeze **2026-08-17**). Claim-language + CaM/SC/H observer law were what changed after the older 2026-08-13 hub pull — not a new median invented here.
 
 | Claim | Live number | Where | Kill |
 |-------|-------------|-------|------|
@@ -29,6 +29,19 @@ I re-read `C:\Users\damia\Desktop\FSOT-Genetics` (README, `docs/AUDIT.md`, `docs
 | **No measured map** | F01–F15 only (Rg, secondary). **3-D MDS is not emitted** | README + OPEN anti-goals | do **not** grind MDS toward AF |
 
 The old **~11–14 Å / ~15 Å** figure is the **retired** `--force-bulk` MDS path. It is **not** the product and it is **not** a live fold the hub should score.
+
+### Do not cross-cite Å objects
+
+There is **no** literature paper whose Å number *is* the 0.13 Å product. CASP16 / AF3 / cryo-EM FSC maps are other objects.
+
+| Object | Number | Cite as |
+|--------|-------:|---------|
+| **FSOT product** (2026-08-17 freeze, n=10) | **0.13 Å** | same-data homolog Cα |
+| **AlphaFold** on that set | **0.47 Å** | trained interpolator, same information universe |
+| **Cryo-EM FSC map** | **~1.2 Å** | experimental map resolution (IUCrJ 1.24 Å class) |
+| **Bulk / no-map MDS** | **~13 Å** | retired `--force-bulk`. Not a live fold |
+
+Blind next step: [`CASP_CAMEO_BLIND_PROTOCOL.md`](CASP_CAMEO_BLIND_PROTOCOL.md) (Grok Build owns the run).
 
 ---
 
@@ -49,7 +62,7 @@ Do **not** say: *de-novo fold beats AlphaFold*, *0.13 Å from sequence alone*, o
 |------|--------|
 | Protein–RNA full hairpin register | Superposed; seed C1′ 0.28 Å (9 nt) |
 | Ligand site (trypsin–BEN) | 0.60 Å first-shell — not a Cα freeze item |
-| CASP / CAMEO blind | still open on the historical wet-lab ledger |
+| CASP / CAMEO blind | **OPEN protocol** — [`CASP_CAMEO_BLIND_PROTOCOL.md`](CASP_CAMEO_BLIND_PROTOCOL.md). No 0.13 Å paper hit. |
 | 3-D MDS bulk → AF | **anti-goal** — retired |
 
 Those are sibling work. The Lean hub quotes the freeze and refuses the 15 Å product headline.

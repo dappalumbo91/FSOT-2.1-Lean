@@ -1,6 +1,6 @@
 # TOE gap closure runbook
 
-Generated: `2026-08-05T21:48:58.305672+00:00`
+Generated: `2026-09-09T16:11:09.792652+00:00`
 
 Frozen boundaries: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 
@@ -93,12 +93,6 @@ See also: [`docs/T3_T4_GR_SM_DEEPENING.md`](T3_T4_GR_SM_DEEPENING.md).
 
 File: `predictions/toe_prereg_freeze.json` (SHA-256 bundle).  
 Do not retune sector predictions without a new freeze id.
-
-**Pre-data risk discipline:** [`docs/PREDATA_RISK.md`](PREDATA_RISK.md)  
-**Future-observation ledger:** `predictions/contested_future_observation_ledger.json` · `predictions/reports/CONTESTED_FUTURE_OBSERVATION_LEDGER.md`  
-**Anonymous independent path:** [`docs/INDEPENDENT_REPRODUCTION.md`](INDEPENDENT_REPRODUCTION.md)
-
-Expanded slate includes H₀ bridge, S₈, wₐ, N_eff, m_H, σ₈, Ω_Λ, τ_reion, cusp-core, lithium, FRB DM, Dark Energy CPL sign, and worst-green panel holds — each with a `future_survey` tag and kill criterion.
 
 ## Data pulled / cited
 

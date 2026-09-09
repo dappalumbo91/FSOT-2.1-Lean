@@ -45,6 +45,13 @@ def build() -> dict:
     params = _load(ROOT / "data" / "parameter_count_audit.json")
     toe = _load(ROOT / "data" / "toe_gap_closure_report.json")
     toe_ev = toe.get("evaluation") or {}
+    fals = _load(ROOT / "data" / "falsification_registry_closure.json")
+    scores = _load(ROOT / "results" / "dated_forecast_scores" / "LATEST.json")
+    n_hold = n_kill = n_await = 0
+    for issue in scores.get("issues") or []:
+        n_hold += int(issue.get("n_hold") or 0)
+        n_kill += int(issue.get("n_kill") or 0)
+        n_await += int(issue.get("n_awaiting") or 0)
 
     compute = ROOT / "vendor" / "fsot_compute.py"
     sha = hashlib.sha256(compute.read_bytes()).hexdigest().upper() if compute.is_file() else ""
@@ -140,6 +147,14 @@ def build() -> dict:
             "label_B_classical_toe": bool(toe_ev.get("label_B_classical_toe")),
             "report": "data/toe_gap_closure_report.json",
         },
+        "predictions": {
+            "hand_prereg_count": (fals.get("summary") or {}).get("preregistered_prediction_count") or 73,
+            "dated_forecast_hold": n_hold,
+            "dated_forecast_kill": n_kill,
+            "dated_forecast_awaiting": n_await,
+            "score_report": "results/dated_forecast_scores/REPORT.md",
+            "expansion_map": "predictions/reports/PREDICTION_EXPANSION_MAP.md",
+        },
         "expansion_highlights": {
             "dzhanibekov_panel": "data/dzhanibekov_intermediate_axis_fsot_panel_benchmark.json",
             "dzhanibekov_doc": "docs/DZHANIBEKOV_FSOT_RESPONSE.md",
@@ -151,6 +166,9 @@ def build() -> dict:
             "mathlib_campaign": "docs/MATHLIB_REDERIVATION_CAMPAIGN.md",
             "false_densify_remediated": bool(densify),
             "reality_os_sibling": "https://github.com/dappalumbo91/FSOT-Reality-OS",
+            "object_scoring": "docs/OBJECT_SCORING.md",
+            "genetics_claim_evidence": "docs/GENETICS_CLAIM_EVIDENCE.md",
+            "casp_cameo_blind": "docs/CASP_CAMEO_BLIND_PROTOCOL.md",
         },
         "sync_rule": (
             "After any densify / new panel / multiprover / Mathlib run: "
@@ -235,6 +253,17 @@ def write_md(doc: dict) -> str:
         f"| Label B (classical T1–T6) | **{toe.get('label_B_classical_toe')}** |",
         f"| Report | `{toe.get('report')}` |",
         "",
+        "## Predictions",
+        "",
+        "| Item | Value |",
+        "|------|-------|",
+        f"| Hand PREDs | **{(doc.get('predictions') or {}).get('hand_prereg_count')}** (PRED-001–084) |",
+        f"| Dated scores | hold {(doc.get('predictions') or {}).get('dated_forecast_hold')} · kill {(doc.get('predictions') or {}).get('dated_forecast_kill')} · awaiting {(doc.get('predictions') or {}).get('dated_forecast_awaiting')} |",
+        f"| Score table | [`../results/dated_forecast_scores/REPORT.md`](../results/dated_forecast_scores/REPORT.md) |",
+        f"| Expansion map | [`../predictions/reports/PREDICTION_EXPANSION_MAP.md`](../predictions/reports/PREDICTION_EXPANSION_MAP.md) |",
+        "",
+        "08-31 / 09-01 EQ+hydro score after **2026-09-08**. Volcanic **2026-09-08**. Do not rewrite issued JSON.",
+        "",
         "## Claim evidence (kill commands)",
         "",
         f"- Machine map for skeptics / dismissals: [`EMPIRICAL_CLAIM_EVIDENCE.md`](EMPIRICAL_CLAIM_EVIDENCE.md)",
@@ -249,6 +278,11 @@ def write_md(doc: dict) -> str:
         f"- Hardware depth: [`{hi['hardware_depth']}`](HARDWARE_DEPTH_CACHE_INTERCONNECT.md)",
         f"- Breakthroughs / QCE: [`{hi['breakthroughs']}`](RECENT_BREAKTHROUGH_EXPANSION.md)",
         f"- Reality OS sibling (FSOT-native kernel lab): {hi.get('reality_os_sibling')}",
+        f"- Object scoring (H₀ / S₈ / wₐ / Euclid): [`OBJECT_SCORING.md`](OBJECT_SCORING.md)",
+        f"- Genetics Å objects + CASP protocol: [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) · [`CASP_CAMEO_BLIND_PROTOCOL.md`](CASP_CAMEO_BLIND_PROTOCOL.md)",
+        f"- Research standpoint / laws of reality: [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md) · [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md)",
+        f"- Seismology APPLY cookbook: [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md)",
+        f"- Isolated residuals (do not stuff): [`ISOLATED_RESIDUALS.md`](ISOLATED_RESIDUALS.md) · [`FRB_INTERFACE_DIAGNOSIS.md`](FRB_INTERFACE_DIAGNOSIS.md)",
         "",
         "## Sync rule",
         "",

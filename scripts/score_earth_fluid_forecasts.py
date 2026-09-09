@@ -24,7 +24,11 @@ from record_prediction_outcome import append_outcome, _git_sha  # noqa: E402
 ISSUE_DIR = ROOT / "predictions" / "dated_forecasts"
 OUT_DIR = ROOT / "results" / "dated_forecast_scores"
 USGS = "https://earthquake.usgs.gov/fdsnws/event/1/query"
-SWPC_KP = "https://services.swpc.noaa.gov/json/planetary_k_index_1m.json"
+SWPC_KP_1M = "https://services.swpc.noaa.gov/json/planetary_k_index_1m.json"
+SWPC_KP_OBS = "https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json"
+SWPC_KP_FCST = "https://services.swpc.noaa.gov/products/noaa-planetary-k-index-forecast.json"
+NDBC_RT = "https://www.ndbc.noaa.gov/data/realtime2"
+COOPS = "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter"
 
 
 def _get(url: str) -> bytes:
@@ -63,29 +67,72 @@ def _usgs_window(q: dict) -> list[dict]:
     return hits
 
 
-def _swpc_kp_max(start_iso: str, end_iso: str) -> float | None:
+def _parse_kp_time(tag: str) -> datetime | None:
+    tag = str(tag or "").replace("Z", "+00:00")
     try:
-        series = json.loads(_get(SWPC_KP).decode("utf-8"))
-    except Exception:
-        return None
+        t = datetime.fromisoformat(tag)
+    except ValueError:
+        try:
+            t = datetime.strptime(tag[:19], "%Y-%m-%dT%H:%M:%S").replace(tzinfo=timezone.utc)
+        except ValueError:
+            return None
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+    return t
+
+
+def _kp_from_rows(rows: list, lo: datetime, hi: datetime) -> float | None:
+    mx = None
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        tag = row.get("time_tag") or row.get("datetime") or row.get("time") or ""
+        t = _parse_kp_time(str(tag))
+        if t is None or t < lo or t > hi:
+            continue
+        raw = row.get("kp_index")
+        if raw is None:
+            raw = row.get("Kp")
+        if raw is None:
+            raw = row.get("kp")
+        try:
+            v = float(raw)
+        except (TypeError, ValueError):
+            continue
+        mx = v if mx is None else max(mx, v)
+    return mx
+
+
+def _swpc_kp_max(start_iso: str, end_iso: str) -> float | None:
+    """1-minute SWPC rolls off; fall back to 3-hour SWPC then GFZ for closed windows."""
     lo = datetime.fromisoformat(start_iso.replace("Z", "+00:00"))
     hi = datetime.fromisoformat(end_iso.replace("Z", "+00:00"))
-    mx = None
-    for row in series:
-        tag = str(row.get("time_tag") or "")
+    if lo.tzinfo is None:
+        lo = lo.replace(tzinfo=timezone.utc)
+    if hi.tzinfo is None:
+        hi = hi.replace(tzinfo=timezone.utc)
+    urls = [
+        SWPC_KP_1M,
+        SWPC_KP_OBS,
+        SWPC_KP_FCST,
+    ]
+    for url in urls:
         try:
-            t = datetime.fromisoformat(tag.replace("Z", "+00:00"))
-        except ValueError:
+            raw = json.loads(_get(url).decode("utf-8"))
+        except Exception:
             continue
-        if t.tzinfo is None:
-            t = t.replace(tzinfo=timezone.utc)
-        if lo <= t <= hi:
-            try:
-                v = float(row.get("kp_index") or 0)
-            except (TypeError, ValueError):
-                continue
-            mx = v if mx is None else max(mx, v)
-    return mx
+        if isinstance(raw, dict):
+            rows = raw.get("data") or raw.get("kp") or raw.get("records") or []
+            if isinstance(rows, dict):
+                rows = [rows]
+        else:
+            rows = raw
+        if not isinstance(rows, list):
+            continue
+        mx = _kp_from_rows(rows, lo, hi)
+        if mx is not None:
+            return mx
+    return None
 
 
 def _score_one(fc: dict, now: datetime) -> dict | None:
@@ -128,12 +175,193 @@ def _score_one(fc: dict, now: datetime) -> dict | None:
             "expect_kp_ge_5": expect,
         }
     if kind == "weather":
-        return {
-            "id": fc["id"],
-            "result": "awaiting",
-            "notes": "re-issue NDBC pull and compare pres/gust by buoy_id (live txt)",
-        }
+        return _score_weather(fc)
+    if kind == "tide":
+        return _score_tide(fc)
+    if kind == "hydrology":
+        return _score_hydrology(fc)
     return {"id": fc["id"], "result": "awaiting", "notes": "unknown kind"}
+
+
+def _parse_ndbc_realtime(text: str, start: datetime, end: datetime) -> list[dict]:
+    rows = []
+    for line in text.splitlines():
+        if not line.strip() or line.startswith("#"):
+            continue
+        parts = line.split()
+        if len(parts) < 13:
+            continue
+        try:
+            t = datetime(
+                int(parts[0]), int(parts[1]), int(parts[2]),
+                int(parts[3]), int(parts[4]), tzinfo=timezone.utc,
+            )
+        except ValueError:
+            continue
+        if t < start or t > end:
+            continue
+        def _f(i: int, bad: set[str]) -> float | None:
+            if i >= len(parts) or parts[i] in bad:
+                return None
+            try:
+                return float(parts[i])
+            except ValueError:
+                return None
+        rows.append({"t": t.isoformat(), "wspd": _f(6, {"MM"}), "gst": _f(7, {"MM"}), "pres": _f(12, {"MM"})})
+    return rows
+
+
+def _score_weather(fc: dict) -> dict:
+    q = fc.get("score_query") or {}
+    bid = str(q.get("buoy_id") or "")
+    storm = bool(q.get("storm"))
+    start = datetime.fromisoformat(str(fc["valid_from"]).replace("Z", "+00:00"))
+    end = datetime.fromisoformat(str(fc["valid_to"]).replace("Z", "+00:00"))
+    if start.tzinfo is None:
+        start = start.replace(tzinfo=timezone.utc)
+    if end.tzinfo is None:
+        end = end.replace(tzinfo=timezone.utc)
+    try:
+        text = _get(f"{NDBC_RT}/{bid}.txt").decode("utf-8", errors="replace")
+    except Exception as exc:
+        return {"id": fc["id"], "result": "awaiting", "notes": f"ndbc {bid}: {exc}"}
+    rows = _parse_ndbc_realtime(text, start, end)
+    if not rows:
+        return {"id": fc["id"], "result": "awaiting", "notes": f"no NDBC realtime in window for {bid}"}
+    saw_storm = any(
+        (r.get("pres") is not None and r["pres"] < 1010.0)
+        or (r.get("gst") is not None and r["gst"] >= 8.0)
+        for r in rows
+        if r.get("pres") is not None or r.get("gst") is not None
+    )
+    quiet_broken = any(
+        (r.get("pres") is not None and r["pres"] < 1005.0)
+        or (r.get("gst") is not None and r["gst"] >= 12.0)
+        for r in rows
+    )
+    ok = saw_storm if storm else (not quiet_broken)
+    return {
+        "id": fc["id"],
+        "result": "hold" if ok else "kill",
+        "n_obs": len(rows),
+        "saw_storm": saw_storm,
+        "expect_storm": storm,
+        "buoy_id": bid,
+    }
+
+
+def _coops(station: str, product: str, start: str, end: str) -> list[dict]:
+    url = (
+        f"{COOPS}?product={product}&application=FSOT-2.1-Lean"
+        f"&station={station}&begin_date={start}&end_date={end}"
+        f"&datum=MLLW&time_zone=gmt&units=metric&format=json"
+    )
+    if product == "predictions":
+        url += "&interval=h"
+    try:
+        doc = json.loads(_get(url).decode("utf-8"))
+    except Exception:
+        return []
+    return list(doc.get("data") or doc.get("predictions") or [])
+
+
+def _parse_coops_t(tag: str) -> datetime | None:
+    try:
+        t = datetime.strptime(str(tag), "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return None
+    return t
+
+
+def _score_tide(fc: dict) -> dict:
+    q = fc.get("score_query") or {}
+    sid = str(q.get("station_id") or "")
+    thr = float(q.get("surge_threshold_m") or 0.1535)
+    expect = bool(q.get("expect_surge"))
+    lo = datetime.fromisoformat(str(fc["valid_from"]).replace("Z", "+00:00"))
+    hi = datetime.fromisoformat(str(fc["valid_to"]).replace("Z", "+00:00"))
+    if lo.tzinfo is None:
+        lo = lo.replace(tzinfo=timezone.utc)
+    if hi.tzinfo is None:
+        hi = hi.replace(tzinfo=timezone.utc)
+    start = lo.strftime("%Y%m%d")
+    end = hi.strftime("%Y%m%d")
+    obs = _coops(sid, "water_level", start, end)
+    pred = _coops(sid, "predictions", start, end)
+    if not obs or not pred:
+        return {"id": fc["id"], "result": "awaiting", "notes": f"CO-OPS {sid} missing obs/pred"}
+    pmap = {str(r.get("t")): r for r in pred}
+    residuals = []
+    for row in obs:
+        t = _parse_coops_t(str(row.get("t") or ""))
+        if t is None or t < lo or t > hi:
+            continue
+        pr = pmap.get(str(row.get("t")))
+        if not pr:
+            continue
+        try:
+            residuals.append(float(row["v"]) - float(pr["v"]))
+        except (TypeError, ValueError, KeyError):
+            continue
+    if not residuals:
+        return {"id": fc["id"], "result": "awaiting", "notes": f"CO-OPS {sid} no overlapping hours in valid window"}
+    mx = max(residuals)
+    ok = (mx >= thr) if expect else (mx < thr)
+    return {
+        "id": fc["id"],
+        "result": "hold" if ok else "kill",
+        "max_residual_m": round(mx, 4),
+        "n_hours": len(residuals),
+        "expect_surge": expect,
+        "station_id": sid,
+        "window_clipped": True,
+    }
+
+
+def _score_hydrology(fc: dict) -> dict:
+    q = fc.get("score_query") or {}
+    sid = str(q.get("site_id") or "")
+    expect = bool(q.get("expect_high_flow"))
+    q_prior = float(q.get("q_prior_cfs") or 0)
+    bar = float(q.get("load_bar") or 1.1535)
+    start = str(q.get("start") or fc["valid_from"][:10])
+    end = str(q.get("end") or fc["valid_to"][:10])
+    url = (
+        f"https://waterservices.usgs.gov/nwis/iv/?format=json&sites={sid}"
+        f"&parameterCd=00060&startDT={start}&endDT={end}"
+    )
+    try:
+        doc = json.loads(_get(url).decode("utf-8"))
+    except Exception as exc:
+        return {"id": fc["id"], "result": "awaiting", "notes": f"nwis {sid}: {exc}"}
+    series = ((doc.get("value") or {}).get("timeSeries")) or []
+    qs: list[float] = []
+    for ts in series:
+        for item in (ts.get("values") or [{}])[0].get("value") or []:
+            raw = item.get("value")
+            if raw in (None, "", "-999999"):
+                continue
+            try:
+                v = float(raw)
+            except (TypeError, ValueError):
+                continue
+            if v >= 0:
+                qs.append(v)
+    if not qs:
+        return {"id": fc["id"], "result": "awaiting", "notes": f"nwis {sid} no discharge in window"}
+    mean_q = sum(qs) / len(qs)
+    if expect:
+        ok = mean_q >= q_prior
+    else:
+        ok = mean_q < q_prior * bar
+    return {
+        "id": fc["id"],
+        "result": "hold" if ok else "kill",
+        "mean_cfs": round(mean_q, 2),
+        "n_obs": len(qs),
+        "expect_high_flow": expect,
+        "site_id": sid,
+    }
 
 
 def main() -> int:

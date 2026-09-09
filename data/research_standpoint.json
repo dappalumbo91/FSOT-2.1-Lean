@@ -1,0 +1,1057 @@
+{
+  "generated_at": "2026-09-09T16:04:56.098329+00:00",
+  "pin": "D1D38A",
+  "purpose": "Standpoint of the hub as a research-grade ToE candidate: what is covered, what is already law, what still needs depth \u2014 not more domains.",
+  "counts": {
+    "core_folds": 35,
+    "extension_subdomains": 375,
+    "atlas_rows": 403,
+    "green_files": 477,
+    "green_fail": 0,
+    "tier_A_strong": 117,
+    "tier_B_verified": 338,
+    "tier_C_thin": 13,
+    "tier_C_thin_measured": 7,
+    "gated_tissues": 29,
+    "adjacent_ungated_pairs": 57,
+    "engine_laws": 9,
+    "discovered_laws": 9
+  },
+  "cores": [
+    {
+      "name": "Particle_Physics",
+      "D_eff": 5,
+      "observed": true
+    },
+    {
+      "name": "Quantum_Mechanics",
+      "D_eff": 6,
+      "observed": true
+    },
+    {
+      "name": "Atomic_Physics",
+      "D_eff": 7,
+      "observed": true
+    },
+    {
+      "name": "High_Energy_Physics",
+      "D_eff": 7,
+      "observed": true
+    },
+    {
+      "name": "Chemistry",
+      "D_eff": 8,
+      "observed": true
+    },
+    {
+      "name": "Physical_Chemistry",
+      "D_eff": 8,
+      "observed": true
+    },
+    {
+      "name": "Electromagnetism",
+      "D_eff": 9,
+      "observed": true
+    },
+    {
+      "name": "Molecular_Chemistry",
+      "D_eff": 9,
+      "observed": true
+    },
+    {
+      "name": "Acoustics",
+      "D_eff": 10,
+      "observed": true
+    },
+    {
+      "name": "Materials_Science",
+      "D_eff": 10,
+      "observed": true
+    },
+    {
+      "name": "Optics",
+      "D_eff": 10,
+      "observed": true
+    },
+    {
+      "name": "Quantum_Computing",
+      "D_eff": 11,
+      "observed": false
+    },
+    {
+      "name": "Quantum_Optics",
+      "D_eff": 11,
+      "observed": true
+    },
+    {
+      "name": "Biology",
+      "D_eff": 12,
+      "observed": false
+    },
+    {
+      "name": "Biochemistry",
+      "D_eff": 13,
+      "observed": true
+    },
+    {
+      "name": "Condensed_Matter",
+      "D_eff": 14,
+      "observed": true
+    },
+    {
+      "name": "Neuroscience",
+      "D_eff": 14,
+      "observed": true
+    },
+    {
+      "name": "Ecology",
+      "D_eff": 15,
+      "observed": false
+    },
+    {
+      "name": "Fluid_Dynamics",
+      "D_eff": 15,
+      "observed": false
+    },
+    {
+      "name": "Nuclear_Physics",
+      "D_eff": 15,
+      "observed": true
+    },
+    {
+      "name": "Thermodynamics",
+      "D_eff": 15,
+      "observed": true
+    },
+    {
+      "name": "Meteorology",
+      "D_eff": 16,
+      "observed": false
+    },
+    {
+      "name": "Psychology",
+      "D_eff": 16,
+      "observed": true
+    },
+    {
+      "name": "Atmospheric_Physics",
+      "D_eff": 17,
+      "observed": false
+    },
+    {
+      "name": "Oceanography",
+      "D_eff": 17,
+      "observed": false
+    },
+    {
+      "name": "Seismology",
+      "D_eff": 18,
+      "observed": false
+    },
+    {
+      "name": "Sociology",
+      "D_eff": 18,
+      "observed": true
+    },
+    {
+      "name": "Geophysics",
+      "D_eff": 19,
+      "observed": false
+    },
+    {
+      "name": "Astronomy",
+      "D_eff": 20,
+      "observed": true
+    },
+    {
+      "name": "Economics",
+      "D_eff": 20,
+      "observed": true
+    },
+    {
+      "name": "Planetary_Science",
+      "D_eff": 21,
+      "observed": true
+    },
+    {
+      "name": "Quantum_Gravity",
+      "D_eff": 22,
+      "observed": false
+    },
+    {
+      "name": "Astrophysics",
+      "D_eff": 24,
+      "observed": true
+    },
+    {
+      "name": "Particle_Astrophysics",
+      "D_eff": 24,
+      "observed": false
+    },
+    {
+      "name": "Cosmology",
+      "D_eff": 25,
+      "observed": false
+    }
+  ],
+  "gated_tissues": [
+    {
+      "id": "TISSUE-H0",
+      "cores": [
+        "Cosmology",
+        "Astronomy",
+        "Astrophysics"
+      ],
+      "said": "H0 is sectors of one fluid, not two cosmologies",
+      "artifact": "docs/CONCEPTS.md C3 \u00b7 docs/OBJECT_SCORING.md",
+      "live": "Planck 0.024%; chain 72.856 vs 73.04 (0.252%); class bin 1% frozen"
+    },
+    {
+      "id": "TISSUE-WAVE",
+      "cores": [
+        "Acoustics",
+        "Seismology"
+      ],
+      "said": "Lab sound and crustal PREM are one T3 standing wave",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a71",
+      "live": "lithosphere median 0.069%"
+    },
+    {
+      "id": "TISSUE-FLUID",
+      "cores": [
+        "Fluid_Dynamics",
+        "Oceanography",
+        "Atmospheric_Physics"
+      ],
+      "said": "One NDBC neighborhood, three tanks",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a72",
+      "live": "pres/SST/wind 0.026\u20130.030%"
+    },
+    {
+      "id": "TISSUE-FRIDGE",
+      "cores": [
+        "Thermodynamics",
+        "Cosmology"
+      ],
+      "said": "BH\u2192WH is a heat/information pump (same fridge cycle)",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a73 \u00b7 CONCEPTS C2",
+      "live": "|S_thermo|/|S_cosm| vs \u03c0/2 0.289%"
+    },
+    {
+      "id": "TISSUE-ORIFICE",
+      "cores": [
+        "Nuclear_Physics",
+        "Particle_Physics"
+      ],
+      "said": "ENDF levels are two zooms of one orifice",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a74",
+      "live": "nuclear 0.046% \u00b7 particle 0.010%"
+    },
+    {
+      "id": "TISSUE-CEILING",
+      "cores": [
+        "Quantum_Gravity",
+        "Cosmology"
+      ],
+      "said": "Compactification remainder \u2192 1 as D\u219225",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a75",
+      "live": "|S_QG|/|S_cosm| vs A_bleed 0.088%"
+    },
+    {
+      "id": "TISSUE-SOCIAL",
+      "cores": [
+        "Economics",
+        "Neuroscience"
+      ],
+      "said": "A market is not a different medium from a neural net",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a76",
+      "live": "same World Bank YoY on both folds; siloed 0.129% not retuned"
+    },
+    {
+      "id": "TISSUE-CEPHEID",
+      "cores": [
+        "Acoustics",
+        "Chemistry",
+        "Electromagnetism",
+        "Astronomy"
+      ],
+      "said": "Cepheid PL is acoustic + chemistry + light, not a fitted b",
+      "artifact": "docs/CEPHEID_PL_PHYSICS.md",
+      "live": "R_H = POOF\u00b7e\u00b7C_eff vs 0.4 at 0.110%"
+    },
+    {
+      "id": "TISSUE-CHEMLINK",
+      "cores": [
+        "Biology",
+        "Chemistry",
+        "Biochemistry"
+      ],
+      "said": "Protein product is residual at named ChemLink interfaces",
+      "artifact": "docs/GENETICS_CLAIM_EVIDENCE.md",
+      "live": "sibling freeze 0.13 \u00c5 vs AF 0.47 \u00c5 (10/10)"
+    },
+    {
+      "id": "TISSUE-OBSERVER",
+      "cores": [
+        "Neuroscience",
+        "Quantum_Mechanics",
+        "Optics"
+      ],
+      "said": "Consciousness is C_factor on the observer string, not a bolt-on",
+      "artifact": "docs/CONSCIOUSNESS_CLAIM_EVIDENCE.md",
+      "live": "20.003601 vs 20.0 W (0.018%)"
+    },
+    {
+      "id": "TISSUE-CONJUGATE",
+      "cores": [
+        "Particle_Physics",
+        "High_Energy_Physics",
+        "Quantum_Mechanics"
+      ],
+      "said": "Matter\u2013antimatter is the other face of the same valve",
+      "artifact": "docs/MATTER_ANTIMATTER_CLAIM_EVIDENCE.md",
+      "live": "C13 conjugate; not a second ontology"
+    },
+    {
+      "id": "TISSUE-VALVE-EQ",
+      "cores": [
+        "Seismology",
+        "Fluid_Dynamics"
+      ],
+      "said": "Slow slip and fast rupture are SUCTION vs POOF of one valve",
+      "artifact": "PRED-057 \u00b7 dated windows PRED-064",
+      "live": "dated cells 39.1 km / \u03c6^4 days; not a clock-time hypocenter"
+    },
+    {
+      "id": "TISSUE-SEIS-GEO",
+      "cores": [
+        "Seismology",
+        "Geophysics"
+      ],
+      "said": "Wave fold vs bulk-earth fold on adjacent D=18/19; same PREM density",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a77 \u00b7 docs/APPLY_SEISMOLOGY.md",
+      "live": "|S_seis|/|S_geo| vs \u03c6/2; PREM lithosphere density dual-routed"
+    },
+    {
+      "id": "TISSUE-FRB-ORIFICE",
+      "cores": [
+        "Particle_Astrophysics",
+        "Cosmology"
+      ],
+      "said": "FRB is BH\u2192WH orifice outgassing; repeaters are saloon-door post-POOF, one-shots a paper-rip",
+      "artifact": "docs/FRB_ORIFICE.md",
+      "live": "E=width\u00d7fluence vs e\u00b7POOF 37/37; width class vs D=5 at 0%; 16.35 d = 5\u03c0+1/\u03c6; 200\u00b7(1+dens) REMEDIED_WRONG_APPLY"
+    },
+    {
+      "id": "TISSUE-MAT-OPT",
+      "cores": [
+        "Materials_Science",
+        "Optics"
+      ],
+      "said": "Same D=10 rung: CRC n_D on Optics, density on Materials; ice n vs \u03c6\u00b2/2",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a78",
+      "live": "n/\u03c1 dual-fold APPLY; |S_mat|/|S_opt| vs PhysChem/Chem look-split 0.329%; vs 1 REMEDIED_WRONG_APPLY"
+    },
+    {
+      "id": "TISSUE-OPT-QO",
+      "cores": [
+        "Optics",
+        "Quantum_Optics"
+      ],
+      "said": "Wave and photon are adjacent D=10/11 of one light; same C=\u03c0/e",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a79 \u00b7 docs/APPLY_OPTICS.md",
+      "live": "|S_opt|/|S_qo| vs 1 at 0.0265%; CRC n_D photon fold 0.016%"
+    },
+    {
+      "id": "TISSUE-QM-ATOMIC",
+      "cores": [
+        "Quantum_Mechanics",
+        "Atomic_Physics"
+      ],
+      "said": "Orbit and bound well are adjacent D=6/7 of one hydrogen; equalize the look",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a710 \u00b7 docs/APPLY_ATOMIC.md",
+      "live": "same-look D=6/7 vs 1 at 0.046%; IE_H seed 0.070%; NIST H\u2013Ca IE/a0/R\u221e dual-routed; mixed vs 1 retired"
+    },
+    {
+      "id": "TISSUE-EM-OPT",
+      "cores": [
+        "Electromagnetism",
+        "Optics"
+      ],
+      "said": "Source and readout are adjacent D=9/10 of one light; \u03b5_opt=n\u00b2; inverse C",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a711 \u00b7 docs/APPLY_EM.md",
+      "live": "same-look D=9/10 vs 1 at 0.024%; CRC n\u00b2 on EM 0.021%; ice \u03b5 vs (\u03c6\u00b2/2)\u00b2 0.0026%; mixed vs 1 retired"
+    },
+    {
+      "id": "TISSUE-BIO-BIOCHEM",
+      "cores": [
+        "Biology",
+        "Biochemistry"
+      ],
+      "said": "Organism and molecule are adjacent D=12/13 of one life; Biology stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a712 \u00b7 docs/APPLY_BIO.md",
+      "live": "dark same-look D=12/13 vs 1 at 0.053%; NCBI mt-operon + AA MW 0.015\u20130.022%; not Genetics 0.13 \u00c5; mixed vs 1 retired"
+    },
+    {
+      "id": "TISSUE-ATOMIC-HEP",
+      "cores": [
+        "Atomic_Physics",
+        "High_Energy_Physics"
+      ],
+      "said": "Bound well and collision are two looks at D=7; fold 0.85/0.95 onto QM",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a713 \u00b7 docs/APPLY_HEP.md",
+      "live": "look-split vs QM rung 0.042%; CODATA m_e/m_p + IE_H dual-route; vs 1 retired"
+    },
+    {
+      "id": "TISSUE-CHEM-PC",
+      "cores": [
+        "Chemistry",
+        "Physical_Chemistry"
+      ],
+      "said": "Composition and thermo are two looks at D=8; 0.5/0.6 is the mat-opt look-split",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a714",
+      "live": "S-ratio vs mat-opt look-split 0.328%; CRC rho/MW vs Tm/Tb 0.017\u20130.041%; vs 1 retired"
+    },
+    {
+      "id": "TISSUE-CHEM-MOL",
+      "cores": [
+        "Chemistry",
+        "Molecular_Chemistry"
+      ],
+      "said": "Composition and molecule are adjacent D=8/9; equalize the chemistry look",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a715",
+      "live": "same-look D=8/9 vs 1 at 0.020%; CRC MW dual-routed; mixed vs 1 retired"
+    },
+    {
+      "id": "TISSUE-PC-MOL",
+      "cores": [
+        "Physical_Chemistry",
+        "Molecular_Chemistry"
+      ],
+      "said": "Thermo and molecule already share \u03b4\u03c8=0.5 on adjacent D=8/9",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a715",
+      "live": "live |S| vs 1 at 0.167% (looks matched); CRC Tm vs MW dual-routed"
+    },
+    {
+      "id": "TISSUE-AC-OPT",
+      "cores": [
+        "Acoustics",
+        "Optics"
+      ],
+      "said": "Lab sound and light are two looks at D=10; fold 0.3/0.6 onto D=9",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a716",
+      "live": "look-split vs D=9 at 0.258%; CRC c vs n 0.013\u20130.016%; vs 1 retired"
+    },
+    {
+      "id": "TISSUE-AC-MAT",
+      "cores": [
+        "Acoustics",
+        "Materials_Science"
+      ],
+      "said": "Lab sound and bulk density are two looks at D=10; fold 0.3/0.5 onto D=9",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a716",
+      "live": "look-split vs D=9 at 0.077%; CRC c vs \u03c1; vs 1 retired"
+    },
+    {
+      "id": "TISSUE-MOL-AC",
+      "cores": [
+        "Molecular_Chemistry",
+        "Acoustics"
+      ],
+      "said": "Molecule and lab sound are adjacent D=9/10; equalize \u03b4\u03c8=0.5",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a717",
+      "live": "same-look D=9/10 vs 1 at 0.205%; CRC MW vs c; mixed vs 1 retired"
+    },
+    {
+      "id": "TISSUE-CM-THERMO",
+      "cores": [
+        "Condensed_Matter",
+        "Thermodynamics"
+      ],
+      "said": "Solid and heat are adjacent D=14/15; equalize the CM look",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a718",
+      "live": "same-look D=14/15 vs 1 at 0.233%; CRC metal \u03c1 vs Tm; mixed vs 1 retired"
+    },
+    {
+      "id": "TISSUE-EM-MAT",
+      "cores": [
+        "Electromagnetism",
+        "Materials_Science"
+      ],
+      "said": "Field and bulk are adjacent D=9/10; equalize the materials look",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a719",
+      "live": "same-look D=9/10 vs 1 at 0.205%; CRC n\u00b2 vs \u03c1; mixed vs 1 retired"
+    },
+    {
+      "id": "TISSUE-BIOCHEM-NEURO",
+      "cores": [
+        "Biochemistry",
+        "Neuroscience"
+      ],
+      "said": "Molecule and signaling are adjacent D=13/14; not the social-tank GDP route",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a720",
+      "live": "same-look D=13/14 vs 1 at 0.179%; transmitter AA MW; mixed vs 1 retired"
+    }
+  ],
+  "ungated_adjacent": [
+    {
+      "a": "Atomic_Physics",
+      "b": "Chemistry",
+      "D_a": 7,
+      "D_b": 8,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Atomic_Physics",
+      "b": "Physical_Chemistry",
+      "D_a": 7,
+      "D_b": 8,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "High_Energy_Physics",
+      "b": "Chemistry",
+      "D_a": 7,
+      "D_b": 8,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "High_Energy_Physics",
+      "b": "Physical_Chemistry",
+      "D_a": 7,
+      "D_b": 8,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Physical_Chemistry",
+      "b": "Electromagnetism",
+      "D_a": 8,
+      "D_b": 9,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Electromagnetism",
+      "b": "Molecular_Chemistry",
+      "D_a": 9,
+      "D_b": 9,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Molecular_Chemistry",
+      "b": "Materials_Science",
+      "D_a": 9,
+      "D_b": 10,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Molecular_Chemistry",
+      "b": "Optics",
+      "D_a": 9,
+      "D_b": 10,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Acoustics",
+      "b": "Quantum_Computing",
+      "D_a": 10,
+      "D_b": 11,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Acoustics",
+      "b": "Quantum_Optics",
+      "D_a": 10,
+      "D_b": 11,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Materials_Science",
+      "b": "Quantum_Computing",
+      "D_a": 10,
+      "D_b": 11,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Materials_Science",
+      "b": "Quantum_Optics",
+      "D_a": 10,
+      "D_b": 11,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Optics",
+      "b": "Quantum_Computing",
+      "D_a": 10,
+      "D_b": 11,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Quantum_Computing",
+      "b": "Quantum_Optics",
+      "D_a": 11,
+      "D_b": 11,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Quantum_Computing",
+      "b": "Biology",
+      "D_a": 11,
+      "D_b": 12,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Quantum_Optics",
+      "b": "Biology",
+      "D_a": 11,
+      "D_b": 12,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Biochemistry",
+      "b": "Condensed_Matter",
+      "D_a": 13,
+      "D_b": 14,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Condensed_Matter",
+      "b": "Neuroscience",
+      "D_a": 14,
+      "D_b": 14,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Condensed_Matter",
+      "b": "Ecology",
+      "D_a": 14,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Condensed_Matter",
+      "b": "Fluid_Dynamics",
+      "D_a": 14,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Condensed_Matter",
+      "b": "Nuclear_Physics",
+      "D_a": 14,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Neuroscience",
+      "b": "Ecology",
+      "D_a": 14,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Neuroscience",
+      "b": "Fluid_Dynamics",
+      "D_a": 14,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Neuroscience",
+      "b": "Nuclear_Physics",
+      "D_a": 14,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Neuroscience",
+      "b": "Thermodynamics",
+      "D_a": 14,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Ecology",
+      "b": "Fluid_Dynamics",
+      "D_a": 15,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Ecology",
+      "b": "Nuclear_Physics",
+      "D_a": 15,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Ecology",
+      "b": "Thermodynamics",
+      "D_a": 15,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Fluid_Dynamics",
+      "b": "Nuclear_Physics",
+      "D_a": 15,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Fluid_Dynamics",
+      "b": "Thermodynamics",
+      "D_a": 15,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Nuclear_Physics",
+      "b": "Thermodynamics",
+      "D_a": 15,
+      "D_b": 15,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Ecology",
+      "b": "Meteorology",
+      "D_a": 15,
+      "D_b": 16,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Ecology",
+      "b": "Psychology",
+      "D_a": 15,
+      "D_b": 16,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Fluid_Dynamics",
+      "b": "Meteorology",
+      "D_a": 15,
+      "D_b": 16,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Fluid_Dynamics",
+      "b": "Psychology",
+      "D_a": 15,
+      "D_b": 16,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Nuclear_Physics",
+      "b": "Meteorology",
+      "D_a": 15,
+      "D_b": 16,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Nuclear_Physics",
+      "b": "Psychology",
+      "D_a": 15,
+      "D_b": 16,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Thermodynamics",
+      "b": "Meteorology",
+      "D_a": 15,
+      "D_b": 16,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Thermodynamics",
+      "b": "Psychology",
+      "D_a": 15,
+      "D_b": 16,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Meteorology",
+      "b": "Psychology",
+      "D_a": 16,
+      "D_b": 16,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Meteorology",
+      "b": "Atmospheric_Physics",
+      "D_a": 16,
+      "D_b": 17,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Meteorology",
+      "b": "Oceanography",
+      "D_a": 16,
+      "D_b": 17,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Psychology",
+      "b": "Atmospheric_Physics",
+      "D_a": 16,
+      "D_b": 17,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Psychology",
+      "b": "Oceanography",
+      "D_a": 16,
+      "D_b": 17,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Atmospheric_Physics",
+      "b": "Seismology",
+      "D_a": 17,
+      "D_b": 18,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Atmospheric_Physics",
+      "b": "Sociology",
+      "D_a": 17,
+      "D_b": 18,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Oceanography",
+      "b": "Seismology",
+      "D_a": 17,
+      "D_b": 18,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Oceanography",
+      "b": "Sociology",
+      "D_a": 17,
+      "D_b": 18,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Seismology",
+      "b": "Sociology",
+      "D_a": 18,
+      "D_b": 18,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Sociology",
+      "b": "Geophysics",
+      "D_a": 18,
+      "D_b": 19,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Geophysics",
+      "b": "Astronomy",
+      "D_a": 19,
+      "D_b": 20,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Geophysics",
+      "b": "Economics",
+      "D_a": 19,
+      "D_b": 20,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Astronomy",
+      "b": "Economics",
+      "D_a": 20,
+      "D_b": 20,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Astronomy",
+      "b": "Planetary_Science",
+      "D_a": 20,
+      "D_b": 21,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Economics",
+      "b": "Planetary_Science",
+      "D_a": 20,
+      "D_b": 21,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Planetary_Science",
+      "b": "Quantum_Gravity",
+      "D_a": 21,
+      "D_b": 22,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    },
+    {
+      "a": "Astrophysics",
+      "b": "Particle_Astrophysics",
+      "D_a": 24,
+      "D_b": 24,
+      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
+    }
+  ],
+  "c_thin_measured": [
+    {
+      "file": "sh0es_ladder_chain_benchmark.json",
+      "domain": "SH0ES_Ladder_Chain",
+      "records": 2,
+      "pooled_pct": 0.212101
+    },
+    {
+      "file": "sh0es_full_sample_benchmark.json",
+      "domain": "SH0ES_Full_Sample",
+      "records": 7,
+      "pooled_pct": 0.14095024176268078
+    },
+    {
+      "file": "cepheid_pl_interconnect_benchmark.json",
+      "domain": "Cepheid_PL_Interconnect",
+      "records": 8,
+      "pooled_pct": 0.1349881432328604
+    },
+    {
+      "file": "adversarial_fractal_break_benchmark.json",
+      "domain": "Adversarial_Fractal_Break_Tests",
+      "records": 13,
+      "pooled_pct": 0.0
+    },
+    {
+      "file": "domain_orbital_predictions_benchmark.json",
+      "domain": "Domain_Orbital_Predictions",
+      "records": 12,
+      "pooled_pct": 0.0
+    },
+    {
+      "file": "sh0es_refined_benchmark.json",
+      "domain": "SH0ES_Refined",
+      "records": 7,
+      "pooled_pct": 0.0
+    },
+    {
+      "file": "theory_completeness_spine_benchmark.json",
+      "domain": "Theory_Completeness_Spine",
+      "records": 6,
+      "pooled_pct": 0.0
+    }
+  ],
+  "largest_pooled": [
+    {
+      "file": "zebrafish_predictive_validation_panel_benchmark.json",
+      "domain": "Zebrafish_Predictive_Validation_Panel",
+      "records": 20,
+      "pooled_pct": 0.3579695
+    },
+    {
+      "file": "sh0es_ladder_chain_benchmark.json",
+      "domain": "SH0ES_Ladder_Chain",
+      "records": 2,
+      "pooled_pct": 0.212101
+    },
+    {
+      "file": "sh0es_full_sample_benchmark.json",
+      "domain": "SH0ES_Full_Sample",
+      "records": 7,
+      "pooled_pct": 0.14095024176268078
+    },
+    {
+      "file": "cepheid_pl_interconnect_benchmark.json",
+      "domain": "Cepheid_PL_Interconnect",
+      "records": 8,
+      "pooled_pct": 0.1349881432328604
+    },
+    {
+      "file": "econometrics_gap_fill_benchmark.json",
+      "domain": "Econometrics",
+      "records": 172,
+      "pooled_pct": 0.12920090413715177
+    },
+    {
+      "file": "economics_gap_fill_benchmark.json",
+      "domain": "Economics",
+      "records": 157,
+      "pooled_pct": 0.1292009041371501
+    },
+    {
+      "file": "neuroeconomics_extension_benchmark.json",
+      "domain": "Neuroeconomics",
+      "records": 65,
+      "pooled_pct": 0.10502056403980387
+    },
+    {
+      "file": "maillard_chemistry_gap_fill_benchmark.json",
+      "domain": "Maillard_Chemistry",
+      "records": 30,
+      "pooled_pct": 0.09443694019339477
+    },
+    {
+      "file": "architecture_building_science_gap_fill_benchmark.json",
+      "domain": "Architecture_Building_Science",
+      "records": 43,
+      "pooled_pct": 0.07869745016115058
+    },
+    {
+      "file": "codata_full_table_open_benchmark.json",
+      "domain": "CODATA_Full_Table_Open",
+      "records": 38,
+      "pooled_pct": 0.073582
+    },
+    {
+      "file": "immunology_benchmark.json",
+      "domain": "immunology_benchmark",
+      "records": 84,
+      "pooled_pct": 0.061205
+    },
+    {
+      "file": "observer_channel_derivation_benchmark.json",
+      "domain": "Observer_Channel_Derivation",
+      "records": 372,
+      "pooled_pct": 0.052510282019890844
+    }
+  ],
+  "next_work": [
+    {
+      "id": "NW-LAWS",
+      "what": "Keep this laws ledger live. Do not add a law that is not engine or a named solve.",
+      "not": "35 founding discrepancy names as if they were Newton's laws."
+    },
+    {
+      "id": "NW-TISSUE",
+      "what": "Simulate \u03ba_ij on ungated adjacent core pairs with measured dual-route tables (same grammar as SCALE_INTERCONNECT).",
+      "not": "A free coupling coefficient. More isolated green files."
+    },
+    {
+      "id": "NW-APPLY",
+      "what": "One worked APPLY cookbook per core fold that still only has the general protocol (MPCORB is the template).",
+      "not": "A second math key."
+    },
+    {
+      "id": "NW-OBJECT",
+      "what": "Science vs FSOT object-compare: arXiv/PDG/survey papers scored against the named lock (OBJECT_SCORING), not a headline number.",
+      "not": "Retuning fsot_predicted when a paper lands."
+    },
+    {
+      "id": "NW-CTHIN",
+      "what": "C_thin *measured* panels: name the public table, APPLY, densify records\u226520.",
+      "not": "Process/certificate spines counted as scientific depth."
+    },
+    {
+      "id": "NW-DATED",
+      "what": "Iron dated-window playbook (09-01 scored hold 20 / kill 4; remaining awaiting are missing catalogs). Next issue uses corrected hydro IDs. Laws of the valve, not USGS replacement.",
+      "not": "Rewriting issued JSON. Clock-time hypocenter."
+    },
+    {
+      "id": "NW-CASP",
+      "what": "Genetics CASP/CAMEO blind protocol (Grok Build owns the run).",
+      "not": "Quoting 0.13 \u00c5 as sequence-only. Cross-citing FSC \u00c5."
+    },
+    {
+      "id": "NW-OPEN",
+      "what": "T3/T4 uniqueness / path-integral confinement stays open research. Euclid DR1 12 Nov 2026 is a watch.",
+      "not": "Pretending Label B uniqueness is proved. Euclid CLOE as measured."
+    }
+  ]
+}

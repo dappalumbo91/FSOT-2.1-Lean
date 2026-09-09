@@ -1,89 +1,993 @@
 {
-  "scored_at": "2026-08-25T00:06:46.793746+00:00",
+  "scored_at": "2026-09-08T00:43:16.377729+00:00",
   "issues": [
     {
-      "scored_at": "2026-08-25T00:06:46.793746+00:00",
+      "scored_at": "2026-09-08T00:43:16.377729+00:00",
       "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25_issue.json",
       "rows": [
         {
           "id": "FCAST-EQ-20260825-01",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "hold",
+          "n_hits": 1,
+          "hits": [
+            {
+              "id": "us7000tbyu",
+              "mag": 5,
+              "place": "60 km NNW of Ende, Indonesia",
+              "lat": -8.3425,
+              "lon": 121.4343,
+              "km": 9.117170055804108
+            }
+          ],
+          "expect_event": true
         },
         {
           "id": "FCAST-EQ-20260825-02",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
         },
         {
           "id": "FCAST-EQ-20260825-03",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
         },
         {
           "id": "FCAST-EQ-20260825-04",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
         },
         {
           "id": "FCAST-EQ-20260825-05",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
         },
         {
           "id": "FCAST-EQ-20260825-06",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
         },
         {
           "id": "FCAST-EQ-20260825-07",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
         },
         {
           "id": "FCAST-EQ-20260825-08",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
         },
         {
           "id": "FCAST-WX-20260825-01",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "hold",
+          "n_obs": 471,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "RDDA2"
         },
         {
           "id": "FCAST-WX-20260825-02",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "hold",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "WRXA2"
         },
         {
           "id": "FCAST-WX-20260825-03",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "hold",
+          "n_obs": 286,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "UQXA2"
         },
         {
           "id": "FCAST-WX-20260825-04",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "hold",
+          "n_obs": 287,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "KOZA2"
         },
         {
           "id": "FCAST-WX-20260825-05",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "hold",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "DHXA2"
         },
         {
           "id": "FCAST-SOL-20260825-01",
           "result": "awaiting",
-          "notes": "window still open"
+          "notes": "no SWPC Kp in window"
         },
         {
           "id": "FCAST-VOLC-20260825-01",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
         }
       ],
-      "n_hold": 0,
-      "n_kill": 0,
-      "n_awaiting": 15
+      "n_hold": 6,
+      "n_kill": 8,
+      "n_awaiting": 1
+    },
+    {
+      "scored_at": "2026-09-08T00:43:16.377729+00:00",
+      "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25T012157_issue.json",
+      "rows": [
+        {
+          "id": "FCAST-EQ-20260825T0121-01",
+          "result": "hold",
+          "n_hits": 1,
+          "hits": [
+            {
+              "id": "us7000tbyu",
+              "mag": 5,
+              "place": "60 km NNW of Ende, Indonesia",
+              "lat": -8.3425,
+              "lon": 121.4343,
+              "km": 9.159558263463394
+            }
+          ],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0121-02",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0121-03",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0121-04",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0121-05",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0121-06",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0121-07",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0121-08",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-WX-20260825T0121-01",
+          "result": "hold",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "WRXA2"
+        },
+        {
+          "id": "FCAST-WX-20260825T0121-02",
+          "result": "hold",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "SGXA2"
+        },
+        {
+          "id": "FCAST-WX-20260825T0121-03",
+          "result": "kill",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": false,
+          "buoy_id": "OLCN6"
+        },
+        {
+          "id": "FCAST-WX-20260825T0121-04",
+          "result": "awaiting",
+          "notes": "no NDBC realtime in window for 45144"
+        },
+        {
+          "id": "FCAST-WX-20260825T0121-05",
+          "result": "kill",
+          "n_obs": 284,
+          "saw_storm": true,
+          "expect_storm": false,
+          "buoy_id": "42058"
+        },
+        {
+          "id": "FCAST-WX-20260825T0121-06",
+          "result": "hold",
+          "n_obs": 474,
+          "saw_storm": true,
+          "expect_storm": false,
+          "buoy_id": "BABT2"
+        },
+        {
+          "id": "FCAST-SOL-20260825T0121-01",
+          "result": "awaiting",
+          "notes": "no SWPC Kp in window"
+        },
+        {
+          "id": "FCAST-VOLC-20260825T0121-01",
+          "result": "awaiting",
+          "notes": "window still open"
+        },
+        {
+          "id": "FCAST-TIDE-20260825T0121-01",
+          "result": "kill",
+          "max_residual_m": 0.145,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "9414290",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260825T0121-02",
+          "result": "hold",
+          "max_residual_m": 0.248,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "8443970",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260825T0121-03",
+          "result": "hold",
+          "max_residual_m": 0.269,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "9410170",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260825T0121-04",
+          "result": "hold",
+          "max_residual_m": 0.121,
+          "n_hours": 48,
+          "expect_surge": false,
+          "station_id": "8724580",
+          "window_clipped": true
+        }
+      ],
+      "n_hold": 7,
+      "n_kill": 10,
+      "n_awaiting": 3
+    },
+    {
+      "scored_at": "2026-09-08T00:43:16.377729+00:00",
+      "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25T022247_issue.json",
+      "rows": [
+        {
+          "id": "FCAST-EQ-20260825T0222-01",
+          "result": "hold",
+          "n_hits": 1,
+          "hits": [
+            {
+              "id": "us7000tbyu",
+              "mag": 5,
+              "place": "60 km NNW of Ende, Indonesia",
+              "lat": -8.3425,
+              "lon": 121.4343,
+              "km": 9.159558263463394
+            }
+          ],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0222-02",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0222-03",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0222-04",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0222-05",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0222-06",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0222-07",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260825T0222-08",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-WX-20260825T0222-01",
+          "result": "hold",
+          "n_obs": 286,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "UQXA2"
+        },
+        {
+          "id": "FCAST-WX-20260825T0222-02",
+          "result": "awaiting",
+          "notes": "no NDBC realtime in window for 46208"
+        },
+        {
+          "id": "FCAST-WX-20260825T0222-03",
+          "result": "kill",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": false,
+          "buoy_id": "OLCN6"
+        },
+        {
+          "id": "FCAST-WX-20260825T0222-04",
+          "result": "awaiting",
+          "notes": "no NDBC realtime in window for 45145"
+        },
+        {
+          "id": "FCAST-WX-20260825T0222-05",
+          "result": "kill",
+          "n_obs": 284,
+          "saw_storm": true,
+          "expect_storm": false,
+          "buoy_id": "42058"
+        },
+        {
+          "id": "FCAST-WX-20260825T0222-06",
+          "result": "hold",
+          "n_obs": 478,
+          "saw_storm": true,
+          "expect_storm": false,
+          "buoy_id": "EPTT2"
+        },
+        {
+          "id": "FCAST-SOL-20260825T0222-01",
+          "result": "awaiting",
+          "notes": "no SWPC Kp in window"
+        },
+        {
+          "id": "FCAST-VOLC-20260825T0222-01",
+          "result": "awaiting",
+          "notes": "window still open"
+        },
+        {
+          "id": "FCAST-TIDE-20260825T0222-01",
+          "result": "hold",
+          "max_residual_m": 0.248,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "8443970",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260825T0222-02",
+          "result": "hold",
+          "max_residual_m": 0.269,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "9410170",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260825T0222-03",
+          "result": "hold",
+          "max_residual_m": 0.145,
+          "n_hours": 48,
+          "expect_surge": false,
+          "station_id": "9414290",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260825T0222-04",
+          "result": "hold",
+          "max_residual_m": 0.121,
+          "n_hours": 48,
+          "expect_surge": false,
+          "station_id": "8724580",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-HYDRO-20260825T0222-01",
+          "result": "kill",
+          "mean_cfs": 3464.93,
+          "n_obs": 2300,
+          "expect_high_flow": false,
+          "site_id": "01646500"
+        },
+        {
+          "id": "FCAST-HYDRO-20260825T0222-02",
+          "result": "hold",
+          "mean_cfs": 29663.72,
+          "n_obs": 1152,
+          "expect_high_flow": false,
+          "site_id": "05420500"
+        },
+        {
+          "id": "FCAST-HYDRO-20260825T0222-03",
+          "result": "hold",
+          "mean_cfs": 31.83,
+          "n_obs": 768,
+          "expect_high_flow": false,
+          "site_id": "08013000"
+        },
+        {
+          "id": "FCAST-HYDRO-20260825T0222-04",
+          "result": "hold",
+          "mean_cfs": 7603.58,
+          "n_obs": 743,
+          "expect_high_flow": false,
+          "site_id": "09402500"
+        },
+        {
+          "id": "FCAST-HYDRO-20260825T0222-05",
+          "result": "kill",
+          "mean_cfs": 2.21,
+          "n_obs": 2304,
+          "expect_high_flow": true,
+          "site_id": "06803510"
+        },
+        {
+          "id": "FCAST-HYDRO-20260825T0222-06",
+          "result": "hold",
+          "mean_cfs": 219745.49,
+          "n_obs": 1552,
+          "expect_high_flow": false,
+          "site_id": "14246900"
+        },
+        {
+          "id": "FCAST-HYDRO-20260825T0222-07",
+          "result": "hold",
+          "mean_cfs": 276.71,
+          "n_obs": 768,
+          "expect_high_flow": false,
+          "site_id": "023177483"
+        },
+        {
+          "id": "FCAST-HYDRO-20260825T0222-08",
+          "result": "kill",
+          "mean_cfs": 3052.06,
+          "n_obs": 768,
+          "expect_high_flow": true,
+          "site_id": "03072655"
+        }
+      ],
+      "n_hold": 12,
+      "n_kill": 12,
+      "n_awaiting": 4
+    },
+    {
+      "scored_at": "2026-09-08T00:43:16.377729+00:00",
+      "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-31_issue.json",
+      "rows": [
+        {
+          "id": "FCAST-EQ-20260831T2357-01",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260831T2357-02",
+          "result": "hold",
+          "n_hits": 4,
+          "hits": [
+            {
+              "id": "us7000tefr",
+              "mag": 4.5,
+              "place": "38 km NNE of Ruteng, Indonesia",
+              "lat": -8.2997,
+              "lon": 120.6133,
+              "km": 6.8848955097515745
+            },
+            {
+              "id": "us7000tdj7",
+              "mag": 4.7,
+              "place": "43 km NE of Ruteng, Indonesia",
+              "lat": -8.2826,
+              "lon": 120.6856,
+              "km": 14.1834337506195
+            },
+            {
+              "id": "us7000tder",
+              "mag": 4.9,
+              "place": "56 km NNE of Ruteng, Indonesia",
+              "lat": -8.1698,
+              "lon": 120.716,
+              "km": 20.882309748998953
+            },
+            {
+              "id": "us7000td2z",
+              "mag": 5.5,
+              "place": "44 km NNE of Ruteng, Indonesia",
+              "lat": -8.241,
+              "lon": 120.6119,
+              "km": 6.970461506903808
+            }
+          ],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260831T2357-03",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260831T2357-04",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260831T2357-05",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260831T2357-06",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260831T2357-07",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260831T2357-08",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-WX-20260831T2357-01",
+          "result": "hold",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "MDXA2"
+        },
+        {
+          "id": "FCAST-WX-20260831T2357-02",
+          "result": "hold",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "PPXA2"
+        },
+        {
+          "id": "FCAST-WX-20260831T2357-03",
+          "result": "hold",
+          "n_obs": 480,
+          "saw_storm": true,
+          "expect_storm": false,
+          "buoy_id": "APRP7"
+        },
+        {
+          "id": "FCAST-WX-20260831T2357-04",
+          "result": "hold",
+          "n_obs": 480,
+          "saw_storm": true,
+          "expect_storm": false,
+          "buoy_id": "BZST2"
+        },
+        {
+          "id": "FCAST-WX-20260831T2357-05",
+          "result": "kill",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": false,
+          "buoy_id": "44078"
+        },
+        {
+          "id": "FCAST-SOL-20260831T2357-01",
+          "result": "hold",
+          "kp_max": 2.67,
+          "expect_kp_ge_5": false
+        },
+        {
+          "id": "FCAST-TIDE-20260831T2357-01",
+          "result": "hold",
+          "max_residual_m": 0.17,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "9414290",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260831T2357-02",
+          "result": "hold",
+          "max_residual_m": 0.266,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "8443970",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260831T2357-03",
+          "result": "hold",
+          "max_residual_m": 0.254,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "9410170",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260831T2357-04",
+          "result": "hold",
+          "max_residual_m": 0.292,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "8771341",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-HYDRO-20260831T2357-01",
+          "result": "kill",
+          "mean_cfs": 2295.39,
+          "n_obs": 2255,
+          "expect_high_flow": true,
+          "site_id": "01646500"
+        },
+        {
+          "id": "FCAST-HYDRO-20260831T2357-02",
+          "result": "hold",
+          "mean_cfs": 31222.47,
+          "n_obs": 1126,
+          "expect_high_flow": false,
+          "site_id": "05420500"
+        },
+        {
+          "id": "FCAST-HYDRO-20260831T2357-03",
+          "result": "hold",
+          "mean_cfs": 30.89,
+          "n_obs": 748,
+          "expect_high_flow": false,
+          "site_id": "08013000"
+        },
+        {
+          "id": "FCAST-HYDRO-20260831T2357-04",
+          "result": "hold",
+          "mean_cfs": 7748.11,
+          "n_obs": 742,
+          "expect_high_flow": false,
+          "site_id": "09402500"
+        },
+        {
+          "id": "FCAST-HYDRO-20260831T2357-05",
+          "result": "hold",
+          "mean_cfs": 1.35,
+          "n_obs": 2242,
+          "expect_high_flow": false,
+          "site_id": "06803510"
+        },
+        {
+          "id": "FCAST-HYDRO-20260831T2357-06",
+          "result": "hold",
+          "mean_cfs": 199467.73,
+          "n_obs": 954,
+          "expect_high_flow": false,
+          "site_id": "14246900"
+        },
+        {
+          "id": "FCAST-HYDRO-20260831T2357-07",
+          "result": "hold",
+          "mean_cfs": 272.81,
+          "n_obs": 745,
+          "expect_high_flow": true,
+          "site_id": "023177483"
+        },
+        {
+          "id": "FCAST-HYDRO-20260831T2357-08",
+          "result": "hold",
+          "mean_cfs": 3756.9,
+          "n_obs": 755,
+          "expect_high_flow": false,
+          "site_id": "03072655"
+        }
+      ],
+      "n_hold": 17,
+      "n_kill": 9,
+      "n_awaiting": 0
+    },
+    {
+      "scored_at": "2026-09-08T00:43:16.377729+00:00",
+      "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-09-01_issue.json",
+      "rows": [
+        {
+          "id": "FCAST-EQ-20260901T0032-01",
+          "result": "hold",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": false
+        },
+        {
+          "id": "FCAST-EQ-20260901T0032-02",
+          "result": "hold",
+          "n_hits": 3,
+          "hits": [
+            {
+              "id": "us7000tefr",
+              "mag": 4.5,
+              "place": "38 km NNE of Ruteng, Indonesia",
+              "lat": -8.2997,
+              "lon": 120.6133,
+              "km": 6.568574376010519
+            },
+            {
+              "id": "us7000tdj7",
+              "mag": 4.7,
+              "place": "43 km NE of Ruteng, Indonesia",
+              "lat": -8.2826,
+              "lon": 120.6856,
+              "km": 13.795983009905653
+            },
+            {
+              "id": "us7000tder",
+              "mag": 4.9,
+              "place": "56 km NNE of Ruteng, Indonesia",
+              "lat": -8.1698,
+              "lon": 120.716,
+              "km": 20.509383270800807
+            }
+          ],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260901T0032-03",
+          "result": "hold",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": false
+        },
+        {
+          "id": "FCAST-EQ-20260901T0032-04",
+          "result": "hold",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": false
+        },
+        {
+          "id": "FCAST-EQ-20260901T0032-05",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-EQ-20260901T0032-06",
+          "result": "hold",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": false
+        },
+        {
+          "id": "FCAST-EQ-20260901T0032-07",
+          "result": "hold",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": false
+        },
+        {
+          "id": "FCAST-EQ-20260901T0032-08",
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
+        },
+        {
+          "id": "FCAST-WX-20260901T0032-01",
+          "result": "hold",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "MDXA2"
+        },
+        {
+          "id": "FCAST-WX-20260901T0032-02",
+          "result": "hold",
+          "n_obs": 288,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "PPXA2"
+        },
+        {
+          "id": "FCAST-WX-20260901T0032-03",
+          "result": "hold",
+          "n_obs": 95,
+          "saw_storm": true,
+          "expect_storm": true,
+          "buoy_id": "42013"
+        },
+        {
+          "id": "FCAST-WX-20260901T0032-04",
+          "result": "hold",
+          "n_obs": 480,
+          "saw_storm": true,
+          "expect_storm": false,
+          "buoy_id": "APRP7"
+        },
+        {
+          "id": "FCAST-WX-20260901T0032-05",
+          "result": "awaiting",
+          "notes": "no NDBC realtime in window for 62146"
+        },
+        {
+          "id": "FCAST-TIDE-20260901T0032-01",
+          "result": "hold",
+          "max_residual_m": 0.17,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "9414290",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260901T0032-02",
+          "result": "hold",
+          "max_residual_m": 0.254,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "9410170",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260901T0032-03",
+          "result": "hold",
+          "max_residual_m": 0.292,
+          "n_hours": 48,
+          "expect_surge": true,
+          "station_id": "8771341",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-TIDE-20260901T0032-04",
+          "result": "kill",
+          "max_residual_m": 0.266,
+          "n_hours": 48,
+          "expect_surge": false,
+          "station_id": "8443970",
+          "window_clipped": true
+        },
+        {
+          "id": "FCAST-HYDRO-20260901T0032-01",
+          "result": "kill",
+          "mean_cfs": 2205.09,
+          "n_obs": 1967,
+          "expect_high_flow": true,
+          "site_id": "01646500"
+        },
+        {
+          "id": "FCAST-HYDRO-20260901T0032-02",
+          "result": "hold",
+          "mean_cfs": 31146.54,
+          "n_obs": 982,
+          "expect_high_flow": false,
+          "site_id": "05420500"
+        },
+        {
+          "id": "FCAST-HYDRO-20260901T0032-03",
+          "result": "hold",
+          "mean_cfs": 30.62,
+          "n_obs": 652,
+          "expect_high_flow": false,
+          "site_id": "08013000"
+        },
+        {
+          "id": "FCAST-HYDRO-20260901T0032-04",
+          "result": "hold",
+          "mean_cfs": 7767.0,
+          "n_obs": 646,
+          "expect_high_flow": false,
+          "site_id": "09402500"
+        },
+        {
+          "id": "FCAST-HYDRO-20260901T0032-05",
+          "result": "hold",
+          "mean_cfs": 1.29,
+          "n_obs": 1954,
+          "expect_high_flow": false,
+          "site_id": "06803510"
+        },
+        {
+          "id": "FCAST-HYDRO-20260901T0032-06",
+          "result": "hold",
+          "mean_cfs": 196919.48,
+          "n_obs": 770,
+          "expect_high_flow": false,
+          "site_id": "14246900"
+        },
+        {
+          "id": "FCAST-HYDRO-20260901T0032-07",
+          "result": "hold",
+          "mean_cfs": 271.29,
+          "n_obs": 649,
+          "expect_high_flow": true,
+          "site_id": "023177483"
+        },
+        {
+          "id": "FCAST-HYDRO-20260901T0032-08",
+          "result": "hold",
+          "mean_cfs": 3967.66,
+          "n_obs": 659,
+          "expect_high_flow": false,
+          "site_id": "03072655"
+        }
+      ],
+      "n_hold": 20,
+      "n_kill": 4,
+      "n_awaiting": 1
     }
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-09-09T16:04:03.910423+00:00",
+  "pin": "D1D38A",
+  "policy": [
+    "do_not_stuff_ugly_into_0_5pct",
+    "diagnose_interface_first",
+    "no_new_coefficient",
+    "remedied_wrong_apply_is_not_an_open_isolate"
+  ],
+  "items": [
+    {
+      "id": "ISO-SHOES-CLASS-BIN",
+      "error_pct": 1.0,
+      "verdict": "WRONG_OBJECT_ISOLATED",
+      "applied": "SH0ES published 73.04 as the \u03c1=5.05 class bin (73.773)",
+      "why": "73.04 is a three-rung mixture, not the class bin. Chain 72.856 vs 73.04 is 0.252%.",
+      "correct": "Kill the class row on the 2.5% band; score the chain; do not retune \u03c1",
+      "not": "Move \u03c1 5.05\u21924.36 to swallow 1%.",
+      "doc": "docs/SH0ES_LADDER_DIAGNOSIS.md"
+    }
+  ],
+  "remedied": [
+    {
+      "id": "ISO-FRB-200x1pdens",
+      "error_pct": 66.4353,
+      "verdict": "REMEDIED_WRONG_APPLY",
+      "applied": "DM_excess \u2248 200\u00b7(1+local_sky_density)",
+      "why": "IGM path (Cosmology D=25) vs H0 angular kernel (\u00b10.2). Formula trapped in ~160\u2013240 pc; measured excess 15\u2013580. Sign wrong. Orifice replaced it \u2014 not an open isolate.",
+      "correct": "PRED-084 orifice (width\u00d7fluence vs e\u00b7POOF). PRED-052 200 class. PRED-076 kernel is angular grammar only.",
+      "not": "Keep 66% on the open isolate list. Stuff 66% into 0.5%. Fit \u03b2. Retune 200. Reuse the formula.",
+      "doc": "docs/FRB_INTERFACE_DIAGNOSIS.md"
+    },
+    {
+      "id": "ISO-FRB-PHI6-DAYS",
+      "error_pct": 9.75089853210496,
+      "verdict": "REMEDIED_WRONG_OBJECT",
+      "applied": "FRB20180916B 16.35 d vs \u03c6\u2076 d (compactification count)",
+      "why": "16.35 d is the saloon-door activity season, not a compactification tick. \u03c6\u2076 is the wrong object. Live handle is T=5\u03c0+1/\u03c6 days (0.147%).",
+      "correct": "T_activity = D_particle\u00b7\u03c0 + 1/\u03c6 days (Particle orifice cycle + Omori c rest)",
+      "not": "0.5%-gate \u03c6\u2076. Stuff 2\u03c0\u03c6\u00b2 (~0.61%). Keep 8.9% as an open isolate.",
+      "doc": "docs/FRB_ORIFICE.md"
+    },
+    {
+      "id": "ISO-MAT-OPT-S-RATIO",
+      "error_pct": 17.841040432395427,
+      "verdict": "REMEDIED_WRONG_APPLY",
+      "applied": "|S_Materials|/|S_Optics| vs 1 (engine \u00a725 Cross_Opt_QO test)",
+      "why": "vs 1 is the same-C same-\u03b4\u03c8 test. Materials \u03b4\u03c8=1/2 is the body/mass look; Optics \u03b4\u03c8=3/5 is the light look. C does not enter S. The 18% is that observer-phase fold (T1 perception, D9), not a failed n/\u03c1 tissue. Closed form |1+T1_mat|/|1+T1_opt| matches live |S| (T3 leftover 0%). Live handle vs PhysChem/Chem is 0.329%.",
+      "correct": "T1 view (D9): |S_i|/|S_j|=|1+T1_i|/|1+T1_j|. Fold the look-split onto Physical_Chemistry/Chemistry (same 0.5/0.6 at D=8). CRC n/\u03c1 dual-route. Ice n vs \u03c6\u00b2/2.",
+      "not": "Stuff ~18% into 0.5%. Keep vs 1 as an open isolate. A new C or \u03b4\u03c8. Pad the pooled median with the T1 identity.",
+      "doc": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a78"
+    }
+  ]
+}

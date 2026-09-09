@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T03:33:05.900416+00:00",
+  "generated_at": "2026-09-07T23:45:53.039968+00:00",
   "authority_pin_prefix": "D1D38A",
   "hub": "FSOT-2.1-Lean",
   "siblings": {
@@ -17,13 +17,13 @@
           "src": "docs/PRODUCT_FREEZE.md",
           "dest": "results\\siblings\\genetics\\PRODUCT_FREEZE.md",
           "ok": true,
-          "bytes": 3319
+          "bytes": 4159
         },
         {
           "src": "docs/OPEN.md",
           "dest": "results\\siblings\\genetics\\OPEN.md",
           "ok": true,
-          "bytes": 2683
+          "bytes": 3498
         },
         {
           "src": "docs/AUDIT.md",
@@ -36,6 +36,36 @@
           "dest": "results\\siblings\\genetics\\af_coverage.json",
           "ok": true,
           "bytes": 7563
+        },
+        {
+          "src": "formulas/fsot_protein_formulas.json",
+          "dest": "results\\siblings\\genetics\\formulas\\fsot_protein_formulas.json",
+          "ok": true,
+          "bytes": 27098
+        },
+        {
+          "src": "formulas/FSOT_PROTEIN_DERIVATIONS.md",
+          "dest": "results\\siblings\\genetics\\formulas\\FSOT_PROTEIN_DERIVATIONS.md",
+          "ok": true,
+          "bytes": 9134
+        },
+        {
+          "src": "crates/fsot_protein/formulas/fsot_protein_formulas.json",
+          "dest": "results\\siblings\\genetics\\formulas\\crate_fsot_protein_formulas.json",
+          "ok": true,
+          "bytes": 27098
+        },
+        {
+          "src": "FSOTGenetics/ChemLink.lean",
+          "dest": "results\\siblings\\genetics\\lean\\ChemLink.lean",
+          "ok": true,
+          "bytes": 3715
+        },
+        {
+          "src": "FSOTGenetics/Seeds.lean",
+          "dest": "results\\siblings\\genetics\\lean\\Seeds.lean",
+          "ok": true,
+          "bytes": 946
         }
       ]
     },
@@ -47,13 +77,13 @@
           "src": "docs/STATUS.md",
           "dest": "results\\siblings\\quantum\\STATUS.md",
           "ok": true,
-          "bytes": 15835
+          "bytes": 17767
         },
         {
           "src": "docs/H0_TENSION.md",
           "dest": "results\\siblings\\quantum\\H0_TENSION.md",
           "ok": true,
-          "bytes": 1737
+          "bytes": 2435
         },
         {
           "src": "docs/CONCEPTS.md",

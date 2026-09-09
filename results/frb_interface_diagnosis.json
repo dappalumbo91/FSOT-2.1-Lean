@@ -1,0 +1,157 @@
+{
+  "generated_at": "2026-09-08T00:37:17.044322+00:00",
+  "pin": "D1D38A",
+  "verdict": "REMEDIED_WRONG_APPLY",
+  "policy": [
+    "do_not_stuff_into_0_5pct",
+    "diagnose_apply_not_retune",
+    "pred_052_class_pred_076_kernel",
+    "pred_084_orifice_replaced_this_formula",
+    "remedied_is_not_an_open_isolate"
+  ],
+  "kernel_theta0_deg": 68.75388202501892,
+  "n_frb": 38,
+  "n_with_ra": 38,
+  "n_with_dm_excess": 10,
+  "density_min": -0.132415,
+  "density_max": 0.243347,
+  "predicted_band_pc": [
+    173.517,
+    248.669
+  ],
+  "measured_excess_min": 15.0,
+  "measured_excess_max": 1200.0,
+  "median_error_pct_200x1pdens": 66.4353,
+  "high_density_n": 5,
+  "low_density_n": 5,
+  "high_density_median_excess": 380.0,
+  "low_density_median_excess": 420.0,
+  "density_tracks_excess_sign": false,
+  "isolated": {
+    "formula": "DM_excess \u2248 200 \u00b7 (1 + local_sky_density)",
+    "why_ugly": "local_sky_density is dimensionless ~\u00b10.2 (H0 angular kernel). The formula is trapped in a ~160\u2013240 pc cm\u207b\u00b3 band and cannot reach nearby excess ~15 or distant excess ~580. High-density sightlines do not even have higher median excess on this seed.",
+    "correct_objects": {
+      "PRED-052": "200 pc cm\u207b\u00b3 excess *class*, not per-FRB 200*(1+dens)",
+      "PRED-076": "same \u03b80=180/\u03c6\u00b2 kernel as H0 (classifier), not a DM residual",
+      "replaced_by": "PRED-084 orifice (width\u00d7fluence vs e\u00b7POOF)",
+      "later_split": "Split DM = DM_MW + DM_IGM(z) + DM_host. Route DM_IGM on Cosmology D=25. Only then test leftover vs local_sky_density. That is a separate Cosmology job for the PRED-052 class when redshifts exist \u2014 not this 66% sitting open."
+    },
+    "not": [
+      "Keep 66% as an open isolate after the orifice replaced it",
+      "Stuff 66% into the 0.5% green gate",
+      "Fit a new \u03b2 in front of density",
+      "Retune the 200 class after looking at these 10 rows",
+      "Reuse 200\u00b7(1+local_sky_density) as a DM residual"
+    ]
+  },
+  "worst_row": {
+    "name": "FRB20171020A",
+    "ra_deg": 180.0,
+    "density_sky": -0.119379,
+    "dm_pc": 114.0,
+    "dm_excess_pc": 15.0,
+    "predicted_200x1pdens": 176.124,
+    "error_pct": 1074.1619
+  },
+  "best_row": {
+    "name": "FRB20121102A",
+    "ra_deg": 65.0,
+    "density_sky": 0.170859,
+    "dm_pc": 557.0,
+    "dm_excess_pc": 210.0,
+    "predicted_200x1pdens": 234.172,
+    "error_pct": 11.5104
+  },
+  "rows": [
+    {
+      "name": "FRB20121102A",
+      "ra_deg": 65.0,
+      "density_sky": 0.170859,
+      "dm_pc": 557.0,
+      "dm_excess_pc": 210.0,
+      "predicted_200x1pdens": 234.172,
+      "error_pct": 11.5104
+    },
+    {
+      "name": "FRB20180916B",
+      "ra_deg": 29.5,
+      "density_sky": 0.233726,
+      "dm_pc": 349.0,
+      "dm_excess_pc": 120.0,
+      "predicted_200x1pdens": 246.745,
+      "error_pct": 105.621
+    },
+    {
+      "name": "FRB20190311A",
+      "ra_deg": 72.0,
+      "density_sky": 0.145953,
+      "dm_pc": 758.0,
+      "dm_excess_pc": 380.0,
+      "predicted_200x1pdens": 229.191,
+      "error_pct": 39.6867
+    },
+    {
+      "name": "FRB20171020A",
+      "ra_deg": 180.0,
+      "density_sky": -0.119379,
+      "dm_pc": 114.0,
+      "dm_excess_pc": 15.0,
+      "predicted_200x1pdens": 176.124,
+      "error_pct": 1074.1619
+    },
+    {
+      "name": "FRB20190618A",
+      "ra_deg": 200.0,
+      "density_sky": -0.128711,
+      "dm_pc": 778.0,
+      "dm_excess_pc": 420.0,
+      "predicted_200x1pdens": 174.258,
+      "error_pct": 58.51
+    },
+    {
+      "name": "FRB20190621A",
+      "ra_deg": 220.0,
+      "density_sky": -0.132415,
+      "dm_pc": 1000.0,
+      "dm_excess_pc": 580.0,
+      "predicted_200x1pdens": 173.517,
+      "error_pct": 70.0833
+    },
+    {
+      "name": "FRB20190701D",
+      "ra_deg": 112.0,
+      "density_sky": 0.001997,
+      "dm_pc": 933.37,
+      "dm_excess_pc": 520.0,
+      "predicted_200x1pdens": 200.399,
+      "error_pct": 61.4616
+    },
+    {
+      "name": "FRB20190702A",
+      "ra_deg": 188.0,
+      "density_sky": -0.123044,
+      "dm_pc": 195.5,
+      "dm_excess_pc": 45.0,
+      "predicted_200x1pdens": 175.391,
+      "error_pct": 289.7584
+    },
+    {
+      "name": "FRB20190415C",
+      "ra_deg": 150.0,
+      "density_sky": -0.08829,
+      "dm_pc": 900.0,
+      "dm_excess_pc": 490.0,
+      "predicted_200x1pdens": 182.342,
+      "error_pct": 62.7873
+    },
+    {
+      "name": "FRB20181219D",
+      "ra_deg": 95.0,
+      "density_sky": 0.062842,
+      "dm_pc": 1900.0,
+      "dm_excess_pc": 1200.0,
+      "predicted_200x1pdens": 212.568,
+      "error_pct": 82.286
+    }
+  ]
+}

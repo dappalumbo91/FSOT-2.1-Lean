@@ -1,7 +1,10 @@
 # FSOT results index
 
 **Last literature pack:** 2026-08-17  
-**Prediction freeze SHA:** `aeb0679eaec722108759589591129fe24f0a77c6` (2026-08-07)  
+**Prediction status pack:** 2026-09-01 ([`literature/2026-09-01_prediction_status.md`](literature/2026-09-01_prediction_status.md))  
+**Dated scores:** [`dated_forecast_scores/REPORT.md`](dated_forecast_scores/REPORT.md) — hold **62** · kill **43** · awaiting **9** (scored 2026-09-08T00:45Z)
+**Playbook retro:** [`dated_forecast_scores/RULE_RETRO.md`](dated_forecast_scores/RULE_RETRO.md) — first 12: refined rule converts 6 EQ + skips gap-zone wx/tide; Scotia Sea still a loading miss.
+**Kill autopsy:** [`dated_forecast_scores/KILL_AUTOPSY.md`](dated_forecast_scores/KILL_AUTOPSY.md)  
 **Pin:** D1D38A
 
 Predictions live in [`../predictions/`](../predictions/). This page is **outcomes only**.
@@ -10,28 +13,31 @@ Predictions live in [`../predictions/`](../predictions/). This page is **outcome
 
 | PRED | Frozen lock | Latest measured | Verdict |
 |------|-------------|-----------------|---------|
-| PRED-001 | H0 = 70.75 | CCHP TRGB 70.39 ± 1.22; SH0ES-class ~73; Planck-class 67.4 | **hold** |
-| PRED-024 | H0 = 72.1 (local-ladder sector) | SH0ES ~73 / Cepheid-class ~72 | **hold** |
-| PRED-002 / 042 | S8 = 0.805 | Euclid DR1 not released | **awaiting** |
-| PRED-043 | wₐ = −1.018 | DES+DESI+CMB −0.63^{+0.21}_{−0.18} | **hold** (not 3σ excluded) |
+| PRED-001 | H0 **bridge** = 70.75 | CCHP TRGB 70.39; dual-anchor 72.1; Planck 67.4. JWST Perfect Host **73.49 is not this object** ([`docs/OBJECT_SCORING.md`](../docs/OBJECT_SCORING.md)) | **hold** |
+| PRED-024 | H0 **dual-anchor** = 72.1 | local-ladder sector; Perfect Host 73.49 belongs here / SH0ES-class 2.5% band, not the bridge | **hold** |
+| PRED-002 / 042 | S8 = 0.805 | DES Y6 **alone** 0.789 = tension row; joint DES+CMB+low-z **0.806** = fair compare (arXiv:2601.14559). Euclid DR1 **awaiting** (CLOE is synthetic) | **awaiting** (Euclid) / joint **adjacent** |
+| PRED-043 | wₐ = −1.018 | DESI prefers wa<0 (direction). SN sample moves σ. **Hold-not-kill** — do not claim 3σ on −1.018 | **hold** (not a 3σ lock) |
 | PRED-004 | Δa_μ = 2.49×10⁻⁹ | Fermilab final confirms high a_μ; WP25 lattice rebase | **partial** |
 | PRED-049 | m_H = 125.25 GeV | CMS 2026 γγ 125.14 ± 0.15 | **hold** (0.088%) |
 | PRED-017 | Z119 viability | No confirmed atom; JINR run live | **awaiting** |
-| PRED-048 | GWTC residual | GWTC-5.0 public | **awaiting** panel refresh |
+| PRED-048 / 067 | GWTC / chirp-mass ≤0.5% | In-repo GWTC **0.0085%**, compact-object **0.010%** | **local_green_hold** |
+| PRED-064 | dated windows scored | 2026-09-08T00:45Z rollup hold 62 / kill 43 / awaiting 9. 09-01 EQ 6 hold / 2 loading misses; hydro Potomac expect-high miss (same as 08-31). Autopsy: [`dated_forecast_scores/KILL_AUTOPSY.md`](dated_forecast_scores/KILL_AUTOPSY.md) | **partial** |
+| PRED-065–083 | residual / flavor / class holds | Live panels inside 0.5%; AG / Gaia / paleoclimate locked | **local_green_hold** |
 
-Full write-up: [`literature/2026-08-17_crossref.md`](literature/2026-08-17_crossref.md)  
+Dated-window detail: [`literature/2026-09-01_prediction_status.md`](literature/2026-09-01_prediction_status.md)  
+Full 17 Aug write-up: [`literature/2026-08-17_crossref.md`](literature/2026-08-17_crossref.md)  
 Append-only log: [`outcomes/prediction_outcome_log.jsonl`](outcomes/prediction_outcome_log.jsonl)
 
 ## Local empirical gate (in-repo panels)
 
 These are **already-measured** domain residuals, not future predictions. Official source: `data/benchmark_margin_audit.json`.
 
-| Item | Value (2026-08-06 snapshot; re-run audit to refresh) |
+| Item | Value (2026-08-31 audit; re-run to refresh) |
 |------|------------------------------------------------------|
-| Green pass | **472 / 472** |
+| Green pass | **477 / 477** |
 | Fail | **0** |
 | Gate | pooled median ≤ 0.5% |
-| Median-of-medians | 0.006607% |
+| Median-of-medians | 0.006625% |
 | Atlas predictions covering those domains | 1445 |
 
 Re-run: `python scripts/audit_all_benchmark_margins.py`

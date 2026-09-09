@@ -27,7 +27,16 @@ Authority: pin **D1D38A** · [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §4–5 · [
 | 5 | Green if domain **median** residual ≤ **0.5%** | Call HTTP 200 a residual |
 | 6 | If it fails: **change the interface** (wrong fold) | Add a free parameter |
 
-Worked example already in-repo: MPCORB eccentricity failed ~62% on the wrong fold; Planetary_Science \(D=21\) brought the panel to **~0.023%**. Log: `docs/MPCORB_REFINEMENT_PROCESS.md`.
+Worked examples in-repo:
+
+- Catalog fold: MPCORB eccentricity failed ~62% on the wrong fold; Planetary_Science \(D=21\) brought the panel to **~0.023%**. Log: [`MPCORB_REFINEMENT_PROCESS.md`](MPCORB_REFINEMENT_PROCESS.md).
+- Wave fold: [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md) — PREM / \(b\)-value / dated cells. Neighbor Geophysics \(D=19\).
+- Light fold: [`APPLY_OPTICS.md`](APPLY_OPTICS.md) — CRC \(n_D\) wave vs photon. Neighbor Quantum_Optics \(D=11\).
+- Quantum-to-atom fold: [`APPLY_ATOMIC.md`](APPLY_ATOMIC.md) — NIST hydrogen \(a_0\)/\(R_\infty\); H–Ca ionization. Neighbor Quantum_Mechanics \(D=6\).
+- EM fold: [`APPLY_EM.md`](APPLY_EM.md) — CRC \(n_D\) and Maxwell \(n^2\). Neighbor Optics \(D=10\).
+- Biology fold: [`APPLY_BIO.md`](APPLY_BIO.md) — NCBI mt-operon / AA MW. Neighbor Biochemistry \(D=13\). Dark: do not flip `observed`.
+- HEP fold: [`APPLY_HEP.md`](APPLY_HEP.md) — CODATA \(m_e\)/\(m_p\). Neighbor Atomic \(D=7\).
+- Chemistry ladder: CRC MW / \(T_m\) / \(T_b\) / density. Neighbors Physical_Chemistry \(D=8\), Molecular_Chemistry \(D=9\). See [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §14–15.
 
 ---
 

@@ -37,7 +37,7 @@ If this table disagrees with CURRENT_STATUS, **CURRENT_STATUS wins**.
 | Gate | Live target | Artifact |
 |------|-------------|----------|
 | Authority pin | **D1D38A** match | `vendor/fsot_compute.py` + pin JSON |
-| Residual green (≤0.5% pooled) | **472 / 472** fail **0** | `data/benchmark_margin_audit.json` |
+| Residual green (≤0.5% pooled) | **477 / 477** fail **0** | `data/benchmark_margin_audit.json` |
 | Parameter honesty | **ZERO_FREE** | `data/parameter_count_audit.json` |
 | Formula authority | **FORMULA_AUTHORITY_SYSTEM_CLOSED** | `data/formula_authority_closure.json` |
 | Mathlib-class Formal depth | **5182 / 5182 (100%)** L1=0 | `data/mathlib_rederivation_campaign_report.json` |

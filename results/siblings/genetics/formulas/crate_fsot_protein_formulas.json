@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Atomic catalog of every mathematical formula used by the FSOT protein-structure pipeline. One entry per formula. Each formula will be stress-tested in isolation against measured observables before being put back into the assembled distogram. No free parameters — every coefficient must reduce to a closed form in {pi, e, phi, gamma}.",
+  "canonical_constants": {
+    "PI":     "3.141592653589793  (FSOT seed)",
+    "E":      "2.718281828459045  (FSOT seed)",
+    "PHI":    "1.618033988749895  (FSOT seed, (1+sqrt(5))/2)",
+    "GAMMA":  "0.577215664901533  (FSOT seed, Euler-Mascheroni)",
+    "P_NEW":  "(GAMMA/E)*sqrt(2)  ~= 0.30033  (FSOT structural promotion)",
+    "C_EFF":  "(1 - POOF*sin(THETA_S))*(1 + 0.01*G_CAT/(PI*PHI))  ~= 1.00097",
+    "ETA_EFF":"1/(PI-1)  ~= 0.46694",
+    "S_BIOCHEM":   "domain_scalar('Biochemistry', D_eff=13, delta_psi=0.1, observed=false)  (FSOT-2.0 scalar engine output)",
+    "S_MOLCHEM":   "domain_scalar('Molecular_Chemistry', D_eff=9, delta_psi=0.4, observed=true)",
+    "source": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\fsot_compute.py and Genetics\\fsot_core\\src\\lib.rs"
+  },
+
+  "formulas": [
+
+    {
+      "id": "F01_amino_acid_trinary_phase",
+      "purpose": "Collapse each of 20 amino acids to a balanced-ternary signature [Charge, Polarity, Volume] in {-1, 0, +1}^3. This is the bedrock — every downstream layer reads from this table.",
+      "current_form": "lookup table in secondary::trinary_phase",
+      "derivation": "Manual classification (Charge: acidic=-1, neutral=0, basic=+1; Polarity: nonpolar=-1, ambiguous=0, polar=+1; Volume: small=-1, medium=0, large=+1).",
+      "input": "amino acid letter (1 of 20)",
+      "output": "(charge, polarity, volume) in {-1,0,1}^3",
+      "observable_target": "Must correctly partition the 20 AAs along each axis vs canonical biochem tables (Kyte-Doolittle hydrophobicity, side-chain volume, side-chain pKa).",
+      "known_issues": [
+        "G (Gly) currently [0,-1,-1] same as A (Ala) — but Gly has NO side chain and is uniquely flexible. Should it have its own row [0, 0, -1]?",
+        "I, L, M, F, W all collapse to [0,-1,+1] — five distinct AAs with same trinary signature. Acceptable at the trinary level, but every downstream chemistry term must distinguish them via the *scalar* mapping (F02), not the trinary.",
+        "H (His) charge = +1 but biologically charge is +0.5 at physiological pH. Trinary forces a choice; F02 stores 0.5 as the floating charge."
+      ],
+      "stress_tests_pending": [
+        "Rank 20 AAs by hydrophobicity using ONLY trinary (polarity coord). Compare to Kyte-Doolittle. Expect Spearman > 0.8.",
+        "Re-derive Chargaff-pair complementarity: AAs of opposite charge should sum to zero in coord 0. Verify D+K, E+R sums are 0."
+      ]
+    },
+
+    {
+      "id": "F02_aa_chemical_scalar_table",
+      "purpose": "Map each AA to four continuous FSOT scalars: hydrophobicity_fsot, volume_fsot, charge, dipole_moment.",
+      "current_form": "ChemicalPropensity::from_amino_acid (chemical.rs)",
+      "derivation": "Each scalar = closed form in {pi, e, phi, gamma}. Examples:\n  G hydrophobicity = phi\n  W hydrophobicity = phi^5\n  K charge = +1, dipole = gamma*e^3\n  D charge = -1, dipole = gamma*pi^3",
+      "input": "amino acid letter",
+      "output": "4-tuple (h, v, q, mu)",
+      "observable_target": "Hydrophobicity ordering vs Kyte-Doolittle; volume vs Zamyatnin side-chain volumes (cubic angstroms); charge vs net charge at pH 7; dipole vs measured dipole moments where available.",
+      "known_issues": [
+        "Magic numbers 1.1, 1.2, 1.3, 1.4, 1.5, 1.7, 1.8, 2.0 appear in many rows (e.g. Y volume = pi^4 * 1.1, T volume = pi*e*1.4). These are FREE PARAMETERS in disguise. Must be replaced with closed forms in {pi, e, phi, gamma} or removed.",
+        "F (Phe) hydrophobicity = phi^4 ~= 6.85 but W (Trp) = phi^5 ~= 11.09 — Trp 60% more hydrophobic than Phe. Kyte-Doolittle has Phe 2.8, Trp -0.9 (Trp is actually LESS hydrophobic on the K-D scale because the indole ring H-bonds). Sign error here.",
+        "C (Cys) hydrophobicity = phi*1.2 ~= 1.94 — but Cys is moderately hydrophobic on K-D (+2.5). Currently sits below most aliphatics."
+      ],
+      "stress_tests_pending": [
+        "Spearman rank of h column vs Kyte-Doolittle. Target >= 0.85.",
+        "Pearson of v column vs Zamyatnin volume. Target >= 0.95.",
+        "Eliminate all magic decimal numbers; rewrite each in {pi, e, phi, gamma}."
+      ]
+    },
+
+    {
+      "id": "F03_disulfide_bridge",
+      "purpose": "Strongest covalent interaction in the model — locks Cys-Cys pairs into closed loops, dominates crambin and many extracellular proteins.",
+      "current_form": "fsot_chemical_interaction returns PHI.powi(6) when both AAs are Cys.",
+      "derivation": "phi^6 ~= 17.94, chosen as 'largest force in the field'.",
+      "observable_target": "Disulfide bond energy ~= 60 kcal/mol vs hydrophobic burial ~= 1-3 kcal/mol per residue. Ratio ~ 20:1 — phi^6 ~ 18:1 vs the typical hydrophobic term magnitude. Good match in magnitude.",
+      "known_issues": [
+        "Fires on ANY Cys-Cys pair regardless of sequence separation. Real disulfides are bonded only when the two Cys side-chains are close in 3D — short loops (sep < ~5) are sterically forbidden; very long loops are entropically penalized. Should be gated by a sequence-separation envelope.",
+        "Doesn't distinguish reduced (free SH) from oxidized (S-S) Cys. In crambin all 6 Cys are disulfide-bonded; in many other proteins Cys are free."
+      ],
+      "stress_tests_pending": [
+        "On 1CRN: top-3 predicted Cys-Cys pairs must match the 3 known disulfides (3-40, 4-32, 16-26).",
+        "Add sequence-separation envelope: ~ exp(-(s - s0)^2 / s0) where s0 = some closed form like pi*e."
+      ]
+    },
+
+    {
+      "id": "F04_hydrophobic_interaction",
+      "purpose": "Burial term — two hydrophobic residues attract in aqueous environment (water entropy gain); hydrophobic + hydrophilic repels.",
+      "current_form": "h_term = ((h1 - phi)/phi) * ((h2 - phi)/phi)\nwhere h_i = hydrophobicity_fsot of residue i, phi acts as neutral threshold.",
+      "derivation": "phi is the FSOT neutral pivot. Centering on phi and dividing by phi makes the term dimensionless and bidirectional: positive when both above OR both below threshold, negative when mixed.",
+      "observable_target": "Should rank Ile-Leu, Val-Val, Phe-Phe pairs as strongly attractive (top decile). Should rank Lys-Asp as attractive only through F05 (charge), and Lys-Leu as weakly repulsive in aqueous.",
+      "known_issues": [
+        "F02 has G hydrophobicity = phi exactly, so the term is 0 for any Gly pair — but Gly is technically hydrophobic on K-D. Probably correct as 'neutral pivot'.",
+        "Magnitude can exceed phi^6 (disulfide) for very hydrophobic pairs: W-W gives ((phi^5 - phi)/phi)^2 = (phi^4 - 1)^2 ~= 33.8. This is LARGER than disulfide. Wrong ordering.",
+        "No saturation — pair like W-W gets ~33.8 which dwarfs everything else and may explain why aromatic-heavy regions get bunched in the prediction."
+      ],
+      "stress_tests_pending": [
+        "Compute pairwise h_term for all 400 AA pairs. Sort. Top-10 should be I-L, L-L, V-V, I-V, L-V, F-W, W-W, F-F, F-L, F-I. Verify.",
+        "Add saturation tanh(h_term/phi^3) or similar — but only if it remains zero-free-parameter.",
+        "Decide whether disulfide (F03) or hydrophobic (F04) should be the dominant scale. Currently F04 wins for W-W."
+      ]
+    },
+
+    {
+      "id": "F05_electrostatic_interaction",
+      "purpose": "Coulomb-like: opposite charges attract, same charges repel.",
+      "current_form": "elec_term = -q1 * q2 * E\nwhere q_i in {-1, -0.5, 0, +0.5, +1}.",
+      "derivation": "Sign convention: -q1*q2 > 0 when charges opposite. Scaled by E (FSOT seed) ~= 2.718. Max magnitude e (K vs D or E).",
+      "observable_target": "Salt-bridge energy ~ 3-5 kcal/mol in water (screened). Should be ~10x weaker than disulfide and ~comparable to a hydrogen bond.",
+      "known_issues": [
+        "No distance dependence at all. Real Coulomb is 1/r. In our distogram the global envelope handles this, but the chemistry term itself is distance-blind.",
+        "His charge = 0.5 — fractional. Pairs like K-H give -0.5*e = -1.36 (attractive, half-strength). Reasonable.",
+        "No screening / Debye factor. In water at physiological ionic strength a salt bridge falls off as exp(-kappa*r) with kappa ~ 1/A. We can encode this in the envelope downstream but should consider here too."
+      ],
+      "stress_tests_pending": [
+        "On 2GB1 (has lysine ladder K4, K10, K13 and acidic E15, E19, D22): top predicted electrostatic pairs should be K-E or K-D. Verify.",
+        "Compare ratio elec_term(K,D) / disulfide(C,C) = E / phi^6 ~= 2.72/17.94 ~= 0.151. Real ratio ~= 4kcal/60kcal ~= 0.067. We over-weight electrostatics by ~2.2x."
+      ]
+    },
+
+    {
+      "id": "F06_dipole_interaction",
+      "purpose": "Weak attractive contribution from co-aligned polar moments.",
+      "current_form": "dip_term = sqrt(mu1 * mu2) / (gamma * pi * e * e)",
+      "derivation": "Geometric mean of both dipole moments, damped by gamma*pi*e^2 ~= 12.95 to keep below hydrophobic and disulfide forces.",
+      "observable_target": "Dipole-dipole ~ 0.5-1 kcal/mol, weakest of the four. Should never dominate any pair.",
+      "known_issues": [
+        "Always positive (attractive). Real dipole-dipole can be repulsive for anti-aligned moments. We have no orientation info, so always-attractive is a forced approximation.",
+        "sqrt of product loses sign — both dipoles always treated as same-sign.",
+        "F02 dipole values span gamma (=0.577) to gamma*e^4 (=31.5). sqrt(min*max)/12.95 = sqrt(0.577*31.5)/12.95 = 4.27/12.95 = 0.33. Magnitude reasonable."
+      ],
+      "stress_tests_pending": [
+        "Verify magnitude never exceeds F04 or F05 for any pair.",
+        "Question: do we even need this term? Polar AAs already get charge=0 in F05 and intermediate hydrophobicity in F04. The dipole term may be redundant."
+      ]
+    },
+
+    {
+      "id": "F07_backbone_proximity",
+      "purpose": "Flory random-walk baseline — residues close in sequence are close in 3D regardless of identity.",
+      "current_form": "backbone = 1 / sqrt(sep)\nwhere sep = |i - j|.",
+      "derivation": "End-to-end distance of a random polymer of N segments scales as N^(1/2). Inverse gives proximity ~ 1/sqrt(sep).",
+      "observable_target": "Cα-Cα distance vs sequence separation in unfolded peptides follows ~ sqrt(sep)*3.8 A. In folded proteins this dominates only for sep<6 because folding shortcuts long-range distances.",
+      "known_issues": [
+        "Folded proteins are NOT random walks. The Flory law is for unstructured chains. In a folded protein the distance saturates around 30-40 A for any sep > ~30.",
+        "This term contributes 1.0 at sep=1, 0.71 at sep=2, 0.58 at sep=3. It dominates short-range and overwhelms the chemistry term unless gated.",
+        "No native FSOT derivation — Flory exponent 1/2 is a polymer-physics result, not FSOT. Can we get the 1/2 from {pi, e, phi, gamma}? Note 1/sqrt(2) is already in C_EFF and POOF. The exponent 1/2 itself is dimensionless."
+      ],
+      "stress_tests_pending": [
+        "On a real folded protein, plot actual_dist[i,j] vs sep for all pairs. Fit 1/sqrt(sep) only for sep < 6. Quantify breakdown.",
+        "Try replacing with 1 / sep^eta_eff (eta_eff ~= 0.467). This is FSOT-native. Compare metrics."
+      ]
+    },
+
+    {
+      "id": "F08_chemistry_envelope",
+      "purpose": "Gate the chemistry term: short-range pairs are already covered by backbone, chemistry should peak at medium/long range where it adds information.",
+      "current_form": "env = s / (s + pi*e)\nwhere s = sep, pi*e ~= 8.54.",
+      "derivation": "Saturating envelope. env(s=1) = 1/9.54 = 0.105; env(s=8.54) = 0.5; env(s->inf) = 1.0. pi*e is the FSOT scale.",
+      "observable_target": "Chemistry contribution should be near-zero for sep<3 (backbone bond geometry), rising through sep=6-12, plateauing at long range.",
+      "known_issues": [
+        "Multiplies into chemistry — for very long sep (50+) chemistry is at full strength. But real protein contacts at sep > 30 are RARE (most residues that far apart never see each other in 3D). The envelope should saturate then DECAY, not plateau.",
+        "8.54 (pi*e) is a sensible turn-over scale (matches typical contact distance), but for a sequence separation the turn-over should probably be larger — maybe pi*e*phi ~= 13.8 or D_biochem = 13."
+      ],
+      "stress_tests_pending": [
+        "On 1UBQ: plot mean chemistry contribution to actual contacts (true_dist < 8) vs non-contacts, binned by sep. Should be higher for contacts at all sep. Quantify.",
+        "Try envelope = (s/s0) * exp(-(s/s0_high)) — peaks then decays. s0 = pi*e, s0_high = D_biochem."
+      ]
+    },
+
+    {
+      "id": "F09_chemistry_amplitude",
+      "purpose": "Set the absolute weight of the chemistry term relative to backbone, helix, sheet, region-pair layers.",
+      "current_form": "chem_amp = max(|S_molchem|, P_NEW) * P_NEW",
+      "derivation": "S_molchem is the FSOT scalar for the Molecular_Chemistry domain (D_eff=9). P_NEW = (gamma/e)*sqrt(2) is the structural promotion constant.",
+      "observable_target": "Chemistry should contribute ~30-50% of the long-range contact signal in a typical protein (vs ~30% backbone, ~20% SS).",
+      "known_issues": [
+        "max(|S|, P_NEW) is a guard against S being near zero. Should we just use |S|? What does S_molchem actually equal numerically? Need to print and record.",
+        "Multiplying by P_NEW again may be double-counting (S already factors in some FSOT constants). Should be one or the other."
+      ],
+      "stress_tests_pending": [
+        "Print S_BIOCHEM, S_MOLCHEM numerical values once, record in this JSON.",
+        "Ablation: set chem_amp = 1.0 (no scaling) — does Pearson change? If yes, the scaling matters; if no, it's cosmetic."
+      ]
+    },
+
+    {
+      "id": "F10_helix_periodicity_bonus",
+      "purpose": "α-helix is a 3.6-residue-per-turn coil — residues at i, i+3, i+4, i+7 sit close in 3D. Boost predicted proximity for such pairs when both prefer α.",
+      "current_form": "if sep in {3, 4, 7}: bonus = (p_alpha_i * p_alpha_j)^1.5 / e\nelse 0",
+      "derivation": "Geometric mean of α-propensities, cubed (powi(3) on sqrt = ^1.5), normalized by E.",
+      "observable_target": "On 1ENH (3-α bundle, 54 AA): residues at i,i+3 and i,i+4 within each of the three helices should be top-ranked. Helices span roughly: H1 = res 8-19, H2 = res 27-39, H3 = res 41-52.",
+      "known_issues": [
+        "Cube is empirical — no FSOT derivation for the exponent 3 here. Why not 2? Why not phi? Need closed-form justification or stress-test.",
+        "Treats sep=3, 4, 7 equally — but i,i+4 has Cα-Cα ~ 6.2 A while i,i+3 ~ 5.5 A and i,i+7 ~ 8 A. They should not all give the same bonus.",
+        "Fires even on isolated α-preferring residues that aren't actually in a helix. F12 regions layer mitigates this for the region-pair term but not for this local term."
+      ],
+      "stress_tests_pending": [
+        "On 1VII (all-α): top-10 i,i+4 pairs should all be within the three helices. Count hits.",
+        "Add sep-specific weight: bonus *= phi/sqrt(sep), so sep=3 gets boost, sep=7 attenuated.",
+        "Gate by region membership: bonus only if both residues are in the SAME detected α region (zero free param — uses F12)."
+      ]
+    },
+
+    {
+      "id": "F11_sheet_pair_bonus",
+      "purpose": "β-sheet pairs (parallel and antiparallel strands) bring residues from distant parts of the sequence into close 3D contact.",
+      "current_form": "if sep < 3: 0\nelse: bonus = (p_beta_i * p_beta_j) * 1 / (1 + ln(sep/pi).clamp(>=0)) / phi",
+      "derivation": "Joint β-propensity squared, modulated by a heavy-tailed log envelope peaked at small sep, divided by phi.",
+      "observable_target": "On 1UBQ: residues in β1 (2-7), β2 (10-17), β3 (40-45), β4 (48-49), β5 (64-72) should pair across strands. Five-stranded mixed sheet.",
+      "known_issues": [
+        "Envelope decays MONOTONICALLY with sep — but ubiquitin β1-β5 are ~60 residues apart and DO pair (it's a five-stranded sheet). The current envelope at sep=60 = 1/(1+ln(60/3.14)) = 1/(1+2.95) = 0.253. Decent but the bonus is also multiplied by joint^2 which is small for non-extreme β residues.",
+        "Doesn't distinguish parallel from antiparallel pairs. They have different geometric registers.",
+        "No register concept (which residue on strand A pairs with which on strand B). Currently every β-β pair gets equal treatment."
+      ],
+      "stress_tests_pending": [
+        "On 1UBQ: enumerate top-20 sheet_pair_bonus pairs. Should be β-β cross-strand. Count true contacts.",
+        "Compare antiparallel vs parallel β-pair positions in known sheets."
+      ]
+    },
+
+    {
+      "id": "F12_region_detection_gate",
+      "purpose": "Collapse per-residue α/β/coil propensities into contiguous runs (≥3 residues) — the FSOT trinary triadic-collapse mechanism. Only collapsed regions can engage in cross-region long-range coupling.",
+      "current_form": "for each residue: collapse to H/E/C using gate p_dominant > 1/e AND p_dominant > the other.\nA region = ≥3 consecutive residues of same kind.",
+      "derivation": "1/e ~= 0.368 is the FSOT uniform-prior threshold (1/3 + one nat of coherence above prior). Minimum length 3 = 3^1 = smallest trinary triad.",
+      "observable_target": "Detected regions should approximately match DSSP-assigned secondary structure for each test protein.",
+      "known_issues": [
+        "Gate of 1/e is arbitrary — phi/e (~0.595), 1/phi (~0.618), or 1 - 1/e (~0.632) might be better calibrated.",
+        "No-overlap rule: a residue can be in at most one region. But real proteins have helix-turn-helix motifs where the turn residues have intermediate propensity. We mark them coil, breaking the region — fine for our purpose.",
+        "Minimum length 3 — but α-helix needs 4+ residues for one turn, β-strand needs 3+. The 3 threshold lets in single-turn helices and short coil-like β. Could split: helix_min=4, strand_min=3."
+      ],
+      "stress_tests_pending": [
+        "On each test protein: print detected regions side-by-side with DSSP. Compute Q3 accuracy (fraction of residues classified correctly).",
+        "Vary gate (1/e, 1/phi, 0.5) and minimum length. Pick the (gate, min_len) that maximizes Q3 across all 5 test proteins — but ONLY if those values come from {pi,e,phi,gamma}."
+      ]
+    },
+
+    {
+      "id": "F13_region_pair_contact",
+      "purpose": "Long-range bonus for residue pairs that belong to two DIFFERENT same-kind collapsed regions (helix-helix packing or strand-strand pairing). The FSOT trinary higher-order coupling.",
+      "current_form": "if both residues in regions of same kind, different regions, sep >= long_range_gate:\n  bonus = sqrt(p_i * p_j) * ln(sqrt(L_i * L_j)).max(0) * region_amp\nwhere p_i = p_alpha or p_beta depending on kind, L = region length, region_amp = max(|S_biochem|, P_NEW) * P_NEW * C_EFF.",
+      "derivation": "long_range_gate = ceil(eta_eff * 13) = 7. Logarithmic length factor because doubling region size shouldn't double the coupling. region_amp combines biochem-domain scalar with structural promotion.",
+      "observable_target": "On 1ENH (3-α bundle): cross-helix residue pairs (H1-H2, H2-H3, H1-H3) should top the long-range contact list. On 2GB1: strand 1-2, 1-4, 3-4 pairings.",
+      "known_issues": [
+        "NO ROTATIONAL REGISTER. Every residue in helix A couples equally to every residue in helix B. Real helix-helix packing is HEPTAD-registered: positions a,d (mod 7) face the partner. Missing this is why 1ENH long-range = 3.70%.",
+        "NO STRAND DIRECTION. Antiparallel β-pairs run in opposite directions: residue i on strand A pairs with residue (j_max - k) on strand B. Parallel pairs run same direction. Missing this is why 2GB1 long-range = 7.14%.",
+        "Length factor ln(sqrt(L_i*L_j)) — for L_i=L_j=3 this is ln(3) ~= 1.10. For L_i=L_j=20 it is ln(20) ~= 3.0. Roughly 3x stronger for big regions — but real coupling probably scales more like sqrt(min(L_i, L_j)) (the shorter region limits the interface).",
+        "region_amp uses S_biochem which we haven't actually printed/verified. May be large or small or even negative."
+      ],
+      "stress_tests_pending": [
+        "Print numerical values: S_biochem, region_amp.",
+        "Add heptad register for helix-helix: residues at positions (start + k) where k mod 7 in {0, 3} get a phi multiplier, others get 1/phi.",
+        "Add strand register: enumerate antiparallel pairing (i on A <-> (end_B - (i - start_A)) on B) as the strong pairing, others suppressed."
+      ]
+    },
+
+    {
+      "id": "F14_long_range_gate",
+      "purpose": "Threshold above which sequence separation counts as 'long range' for the region-pair layer.",
+      "current_form": "long_range_gate = ceil(ETA_EFF * 13) = ceil(0.46694 * 13) = ceil(6.07) = 7",
+      "derivation": "eta_eff * D_biochem. eta_eff = 1/(pi-1). D_biochem = 13.",
+      "observable_target": "Pairs with sep < gate are already covered by local layers (F10 helix or F11 sheet). Gate should be ~= the maximum within-region range for local layers — currently F10 max sep is 7, so gate=7 is consistent.",
+      "known_issues": [
+        "Coincidentally 7 = max sep in F10's helical-period set {3,4,7}. Good — no overlap with local helix term. But for sheets F11 fires at all sep>=3, so there IS overlap with sheet term at sep 7+. Sheet term + region-pair term may double-count.",
+        "Closed-form value 6.07 rounded to 7 — could equally round to 6. Both come from FSOT seeds. Test sensitivity."
+      ],
+      "stress_tests_pending": [
+        "Try gate = 6, 7, 8. Measure long-range precision on all 5 proteins. Pick the value that performs best AND has the cleanest closed form."
+      ]
+    },
+
+    {
+      "id": "F15_distogram_assembly",
+      "purpose": "Final layered sum producing matrix[i][j] = predicted spatial proximity (larger = closer).",
+      "current_form": "matrix[i][j] = F07_backbone + F04_F05_F06_chemistry_F08_envelope_F09_amp + F10_helix + F11_sheet + F13_region_pair",
+      "derivation": "Simple linear superposition. No cross-terms.",
+      "observable_target": "Rank correlation with -1/actual_dist > 0.5 (Spearman). Top-L precision > 90%. Long-range precision: AlphaFold reports 70%+ on CASP14; we need to climb from ~10% to that asymptotically.",
+      "known_issues": [
+        "Linear sum may not be the right combinator. Layers may be multiplicatively, not additively, related. Try matrix = backbone * (1 + chemistry + helix + sheet + region_pair).",
+        "No normalization. Layer magnitudes can vary by orders of magnitude — backbone ~1.0, chemistry ~0.1, helix ~0.06, sheet ~0.03, region_pair varies wildly with L_i, L_j.",
+        "Diagonal forced to 0 — but i=i is trivially proximity = infinity. Doesn't matter for benchmark (we skip diagonal).",
+        "Matrix is symmetric in formula but we fill both halves redundantly — 2x cost. Cosmetic."
+      ],
+      "stress_tests_pending": [
+        "Per-protein, print mean magnitude of each layer for contacts vs non-contacts. Identify which layers actually discriminate.",
+        "Try multiplicative combine: matrix = backbone * exp(chemistry + helix + sheet + region_pair).",
+        "Try the FSOT scalar engine directly: matrix[i][j] = compute_scalar(params_for_pair(i,j)) where params encode the pair's chemistry+geometry."
+      ]
+    }
+  ],
+
+  "missing_formulas_pointed_at_by_data": [
+    {
+      "id": "F16_heptad_register",
+      "purpose": "Helix-helix packing register — residues at positions 0,3 mod 7 face the partner helix in coiled-coils and bundles.",
+      "evidence_from_data": "1ENH (3-α bundle) long-range precision = 3.70%. Without register every cross-helix pair gets the same bonus.",
+      "fsot_motivation": "7 = 3+4 = the trinary triad sum, already appearing in F10 (helical periods {3,4,7}).",
+      "proposed_form": "register_factor(k_i, k_j) = phi if (k_i mod 7 in {0,3} AND k_j mod 7 in {0,3}) else 1/phi.\nApplied as a multiplier inside F13 for helix-helix pairs."
+    },
+    {
+      "id": "F17_strand_register",
+      "purpose": "β-strand pairing register — antiparallel vs parallel, with specific residue-to-residue correspondence.",
+      "evidence_from_data": "2GB1 (α+β, has 4-strand β-sheet) long-range = 7.14%. Without strand register we're sampling random β-β pairs.",
+      "fsot_motivation": "Antiparallel = phase inversion (FSOT trinary spin flip). Parallel = same phase.",
+      "proposed_form": "For two β regions A (start_A..end_A) and B (start_B..end_B):\n  antiparallel pair: i in A <-> j_AP = end_B - (i - start_A).\n  parallel pair:     i in A <-> j_P  = start_B + (i - start_A).\nBonus only for the register-matched pair index; off-register gets suppression 1/phi."
+    },
+    {
+      "id": "F18_disulfide_geometry_gate",
+      "purpose": "Suppress disulfide for sequence separations that are sterically impossible (sep < 4) or entropically penalized (sep > 50).",
+      "evidence_from_data": "F03 fires on every Cys-Cys regardless of geometry. 1CRN disulfides are sep ~ 12-24; many proteins have NO disulfides despite having Cys.",
+      "proposed_form": "PHI^6 * gauss(sep; mu=pi*e*phi, sigma=pi*e) where mu ~ 13.8 (typical disulfide loop), sigma ~ 8.5."
+    }
+  ],
+
+  "test_protocol": {
+    "description": "Each formula is stress-tested in isolation before re-integration.",
+    "phases": [
+      "1. Print numerical values of all currently-uncomputed constants (S_BIOCHEM, S_MOLCHEM, P_NEW, chem_amp, region_amp).",
+      "2. For each formula F##, run its stress_tests_pending against the 5 benchmark proteins.",
+      "3. If formula passes its target, freeze it. If it fails, refine in {pi,e,phi,gamma} or replace.",
+      "4. After all formulas pass in isolation, re-assemble (F15) and re-run the 5-protein benchmark.",
+      "5. Expand benchmark set (β-barrel, αβα sandwich, larger proteins) and repeat."
+    ],
+    "non_negotiables": [
+      "Every coefficient must be a closed form in {pi, e, phi, gamma}. No fitted decimals.",
+      "Long-range contact precision is the only metric that matters for 'meets or exceeds observable'. Top-L is dominated by backbone and is misleading.",
+      "Every formula change must be re-verified against ALL 5 proteins, not just the one it was designed for."
+    ]
+  }
+}

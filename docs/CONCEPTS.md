@@ -28,9 +28,9 @@ S = K\,(T_1 + T_2 + T_3)
 
 | String | Role | Where it lives |
 |--------|------|----------------|
-| \(T_1\) | Look / observer | `observed` flips quirk / \(C_{\mathrm{factor}}\) |
+| \(T_1\) | Look / observer | `observed` flips quirk / \(C_{\mathrm{factor}}\). Perception at a scale is this string at that fold’s \(\delta\psi\), hits, and dark/observed — same premise, different view. Closed form: \(\lvert S_i/S_j\rvert=\lvert 1+T_{1,i}\rvert/\lvert 1+T_{1,j}\rvert\) at \(T_2=1\), \(T_3\approx 0\) (D9). vs 1 is the same-view question, not a 0.5% central. |
 | \(T_2\) | Body / scale | amplitude, linear bias |
-| \(T_3\) | Strum / valve | POOF, SUCTION, acoustic bleed, phase |
+| \(T_3\) | Strum / valve | POOF, SUCTION, acoustic bleed, chaos fold \((D-25)/25\) |
 
 \(K \approx 0.420222\) is frozen from \(\pi,e,\varphi,\gamma\). No new dial per observable.
 
@@ -119,7 +119,7 @@ Cepheid PL internals (period, metals, optical + NIR Wesenheit, host moduli vs TR
 Then \(S\) relaxes. The wave is \(\Delta S\), not a new coefficient.
 
 **Code:** `docs/COMPLEX_SYSTEM_DERIVATION.md` · `vendor/fsot_complex_interaction.py`  
-**Live residual:** five adjacent-fold gaps (seismic-acoustic, fluid tanks, thermo-cosm, nuclear-particle, QG ceiling) pooled **0.028%** — [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md).  
+**Live residual:** between-scale interconnects (wave, fluid tanks, fridge, orifice, ceiling, seis–geo, n/ρ, wave–photon) pooled **0.026%** — [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md).  
 **Sibling:** FSOT-Quantum `fsot_quantum/quantum_bleed.py`
 
 ---

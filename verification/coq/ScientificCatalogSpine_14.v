@@ -4,6 +4,126 @@ From Stdlib Require Import Psatz.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cat_heavy_ion_lab_synthesis_panel_records_pos : (0 < 39)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_heavy_ion_lab_synthesis_panel_pooled_under_half_pct : ((0.000095%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_heavy_ion_lab_synthesis_panel_pooled_lt_half_pure : ((0.000095%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_heavy_ion_lab_synthesis_panel_max_scalar_under_half_pct : ((0.000787%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_heavy_ion_lab_synthesis_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_superheavy_island_completion_spine_records_pos : (0 < 41)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_superheavy_island_completion_spine_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_superheavy_island_completion_spine_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_superheavy_island_completion_spine_max_scalar_under_half_pct : ((0.000787%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_superheavy_island_completion_spine_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_z120_z126_beam_synthesis_panel_records_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_z120_z126_beam_synthesis_panel_pooled_under_half_pct : ((0.000095%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_z120_z126_beam_synthesis_panel_pooled_lt_half_pure : ((0.000095%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_z120_z126_beam_synthesis_panel_max_scalar_under_half_pct : ((0.000787%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_z120_z126_beam_synthesis_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_fsot_aggregate_organized_panel_records_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_fsot_aggregate_organized_panel_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fsot_aggregate_organized_panel_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_fsot_aggregate_organized_panel_max_scalar_under_half_pct : ((0.000785396%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_fsot_aggregate_organized_panel_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_initiation_transformation_archetype_records_pos : (0 < 23)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_initiation_transformation_archetype_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_initiation_transformation_archetype_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_initiation_transformation_archetype_max_scalar_under_half_pct : ((0.000785396%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_initiation_transformation_archetype_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
+Lemma cat_nist_dlmf_special_functions_records_pos : (0 < 21)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_nist_dlmf_special_functions_pooled_under_half_pct : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_dlmf_special_functions_pooled_lt_half_pure : (0%R) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_dlmf_special_functions_max_scalar_under_half_pct : ((0.000785396%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_nist_dlmf_special_functions_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_statistical_mechanics_public_panel_records_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -362,124 +482,4 @@ Proof. lra. Qed.
 
 Lemma cat_knowledge_base_portable_bundle_panel_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
-
-
-Lemma cat_metamaterial_fluid_design_prereg_scaffold_records_pos : (0 < 25)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_metamaterial_fluid_design_prereg_scaffold_pooled_under_half_pct : ((0.000034%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_metamaterial_fluid_design_prereg_scaffold_pooled_lt_half_pure : ((0.000034%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_metamaterial_fluid_design_prereg_scaffold_max_scalar_under_half_pct : ((0.000034%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_metamaterial_fluid_design_prereg_scaffold_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_fuel_thermochemistry_public_anchors_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_fuel_thermochemistry_public_anchors_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_fuel_thermochemistry_public_anchors_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_fuel_thermochemistry_public_anchors_max_scalar_under_half_pct : ((0.000021766%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_fuel_thermochemistry_public_anchors_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_natural_formation_element_simulation_records_pos : (0 < 32)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_natural_formation_element_simulation_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_natural_formation_element_simulation_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_natural_formation_element_simulation_max_scalar_under_half_pct : ((0.000001%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_natural_formation_element_simulation_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_superheavy_island_emergence_simulation_records_pos : (0 < 32)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_superheavy_island_emergence_simulation_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_superheavy_island_emergence_simulation_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_superheavy_island_emergence_simulation_max_scalar_under_half_pct : ((0.000001%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_superheavy_island_emergence_simulation_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_living_fsot_hardware_records_pos : (0 < 4)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_living_fsot_hardware_pooled_under_half_pct : (0%R) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_living_fsot_hardware_pooled_lt_half_pure : (0%R) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_living_fsot_hardware_max_scalar_under_half_pct : ((0.000000000000013209968920124464%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_living_fsot_hardware_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_agriculture_agroecology_records_pos : (0 < 276)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_agriculture_agroecology_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_architecture_building_science_records_pos : (0 < 43)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_architecture_building_science_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_astrophysical_structure_crosswalk_records_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

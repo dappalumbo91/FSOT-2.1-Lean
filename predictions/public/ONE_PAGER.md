@@ -3,7 +3,7 @@
 **Damian Arthur Palumbo** · [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean) · folder `predictions/`
 
 ### The model
-One fluid spacetime. Seeds only: **π, e, φ, γ, G**. **Zero free parameters.** Pin **D1D38A**. Same engine residual-gated across **472** green domains (≤ **0.5%**).
+One fluid spacetime. Seeds only: **π, e, φ, γ, G**. **Zero free parameters.** Pin **D1D38A**. Same engine residual-gated across **476** green files (≤ **0.5%**). Hand PREDs **76** (PRED-001–084).
 
 ### Hubble is not one number
 Black hole → white hole **bubble bleed** means each *structure + neighborhood* reads a different information-flow sector. CMB, TRGB, young-disk Cepheids, and nearby \(cz/d\) are not supposed to agree.
@@ -28,7 +28,7 @@ Tier D scaffolds (transporter, cold-fusion design, superheavy islands) are explo
 **Euclid DR1-Foundation — 12 Nov 2026** (ESA hard date). Predictions already Git-timestamped.
 
 ### How to check
-GitHub commit history + `predictions/` files. Score hold/kill. No silent retune.
+GitHub commit history + `predictions/` files. Dated-window scores: [`../../results/dated_forecast_scores/REPORT.md`](../../results/dated_forecast_scores/REPORT.md). No silent retune.
 
 ### Read more
 - Full explainer: [`../EXPLAINED.md`](../EXPLAINED.md)  

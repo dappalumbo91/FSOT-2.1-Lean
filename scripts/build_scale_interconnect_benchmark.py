@@ -12,19 +12,20 @@ sys.path.insert(0, str(ROOT / "vendor"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
-from fsot_scale_interconnects import suite_rows  # noqa: E402
+from fsot_scale_interconnects import perception_summary, suite_rows  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, pooled_gate_passes  # noqa: E402
 
 NDBC = ROOT / "vendor" / "public_verifiable" / "live_cache" / "noaa_ndbc_cache.json"
 ENDF = ROOT / "data" / "endf_iaea_nuclear_open_benchmark.json"
 ECON = ROOT / "data" / "economics_gap_fill_benchmark.json"
+BIO = ROOT / "data" / "biology_strict_empirical.json"
 OUT = ROOT / "data" / "between_scale_interconnect_benchmark.json"
 OUTCOME = ROOT / "results" / "between_scale_interconnect_outcome.json"
 
 
 def main() -> int:
     _, authority = load_fsot_compute()
-    rows = suite_rows(ndbc_path=NDBC, endf_path=ENDF, econ_path=ECON)
+    rows = suite_rows(ndbc_path=NDBC, endf_path=ENDF, econ_path=ECON, bio_path=BIO)
     tight = [r for r in rows if r.get("record_kind") == "scalar"]
     by_prop: dict[str, list[float]] = {}
     for r in tight:
@@ -36,16 +37,18 @@ def main() -> int:
     doc = _bench_v11(
         domain="Between_Scale_Interconnects",
         material_records=rows,
-        maps_to_lean=["acoustical", "energy", "particle", "cosmological", "nuclear"],
+        maps_to_lean=["acoustical", "energy", "particle", "cosmological", "nuclear", "geological", "biological"],
         d_eff=17,
         authority_path=str(authority).replace("\\", "/"),
         source=[
-            "Dziewonski & Anderson 1981 PREM (PEPI)",
+            "Dziewonski & Anderson 1981 PREM (PEPI) vp/vs + density",
             "Christensen-class crustal vp/vs",
             "ISO/CRC 20C sound speeds; US Standard Atmosphere 1976",
             "NOAA NDBC buoy cache (pres, wtmp, wspd)",
             "IAEA/ENDF levels (He4 C12 O16 Si28 Fe56 Al27)",
             "World Bank YoY dual-fold Economics/Neuroscience",
+            "NCBI NC_012920.1 mt-operon lengths; CRC/IUPAC amino-acid MW",
+            "CODATA electron/proton mass",
             "vendor/fsot_scale_interconnects.py",
         ],
         channel_stats=channel_stats or [("fsot_prediction", "scale_interconnect", all_errs)],
@@ -62,9 +65,15 @@ def main() -> int:
         "deep_PREM_is_phase_change_not_retune",
         "no_identity_pads",
         "zebrafish_genetics_owned_by_sibling",
+        "live_S_ratio_vs_1_is_not_a_0p5_central",
+        "perception_t1_view_is_identity_check_not_median_pad",
     ]
-    status = "GREEN" if pooled_gate_passes(doc.get("pooled_median_error_pct")) else "YELLOW"
+    pv = perception_summary(rows)
+    pooled_ok = pooled_gate_passes(doc.get("pooled_median_error_pct"))
+    t3_ok = bool(pv.get("t3_leftover_ok"))
+    status = "GREEN" if pooled_ok and t3_ok else "YELLOW"
     doc["interconnect_status"] = status
+    doc["perception_view"] = pv
     doc["gap_fill"] = {
         "seismic_acoustic": "PREM+rocks vp/vs vs π/√3; deep mantle structural",
         "fluid_tanks": "γ from D=5; e+φ water/air; NDBC same buoys on Fluid/Ocean/Air",
@@ -72,6 +81,23 @@ def main() -> int:
         "nuclear_particle": "IAEA levels dual-fold Nuclear vs Particle",
         "qg_ceiling": "|S_QG/S_C| vs A_bleed; compact remainder vs 1",
         "social_tanks": "World Bank YoY on Economics and Neuroscience; |S_E/S_N| vs 5/4",
+        "seis_geo": "PREM lithosphere density dual-fold; |S_seis|/|S_geo| vs φ/2",
+        "mat_opt": "CRC n_D dual-fold Optics; density dual-fold Materials; ice n vs φ²/2. S-ratio vs PhysChem/Chem look-split (vs 1 is the wrong object).",
+        "opt_qo": "CRC n_D dual-fold Optics and Quantum_Optics; |S_opt|/|S_qo| vs 1 (same C=π/e, adjacent D=10/11).",
+        "qm_atomic": "Adjacent D=6/7 at shared δψ=1 vs 1; NIST H–Ca IE / a0 / Rydberg dual-fold. Live mixed S vs 1 is the δψ look, not stuffed.",
+        "em_opt": "Adjacent D=9/10 at shared δψ=0.6 vs 1; CRC n on Optics, n² on EM (Maxwell). Ice n² vs (φ²/2)². Live mixed vs 1 retired.",
+        "bio_biochem": "Dark same-look D=12/13 vs 1. NCBI mt-operon + AA MW dual-fold. Not Genetics 0.13 Å. Do not flip Biology observed.",
+        "atomic_hep": "Same D=7 look-split 0.85/0.95 folded onto QM D=6. CODATA m_e/m_p + IE_H dual-fold. vs 1 retired.",
+        "chem_pc": "Same D=8 0.5/0.6 look vs mat-opt. CRC rho/MW on Chemistry, Tm/Tb on PhysChem.",
+        "chem_mol": "Adjacent D=8/9 at shared δψ=0.6 vs 1. CRC MW dual-fold. Live mixed vs 1 retired.",
+        "physchem_mol": "Adjacent D=8/9 both δψ=0.5 vs 1. CRC Tm on PhysChem, MW on Mol.",
+        "ac_opt": "Same D=10 look 0.3/0.6 folded onto D=9. CRC c vs n. vs 1 retired.",
+        "ac_mat": "Same D=10 look 0.3/0.5 folded onto D=9. CRC c vs ρ. vs 1 retired.",
+        "mol_ac": "Adjacent D=9/10 at δψ=0.5 vs 1. CRC MW vs c. Live mixed vs 1 retired.",
+        "cm_thermo": "Adjacent D=14/15 at δψ=0.5 vs 1. CRC metal ρ vs Tm. Live mixed vs 1 retired.",
+        "em_mat": "Adjacent D=9/10 at δψ=0.5 vs 1. CRC n² on EM, ρ on Materials. Live mixed vs 1 retired.",
+        "biochem_neuro": "Adjacent D=13/14 at δψ=0.7 vs 1. Transmitter AA MW. Not social-tank GDP. Live mixed vs 1 retired.",
+        "perception_view": "|1+T1_i|/|1+T1_j| vs live |S_i|/|S_j| (T3 leftover). vs 1 is the same-view question, not a 0.5% central. Not a median pad.",
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
 
@@ -89,9 +115,12 @@ def main() -> int:
         "n_scalar": len(tight),
         "n_total": len(rows),
         "channel_median_error_pct": channel_med,
+        "perception_view": pv,
         "kill": (
-            "tight-scalar median > 0.5%, or anyone fits Q / γ / Poisson, "
-            "or anyone treats deep-PREM mismatch as a license for a new coefficient"
+            "tight-scalar median > 0.5%, or T3 leftover on perception_view_t1 > 0.5%, "
+            "or anyone fits Q / γ / Poisson, "
+            "or anyone treats deep-PREM mismatch as a license for a new coefficient, "
+            "or anyone stuffs live |S_i|/|S_j| vs 1 into 0.5%"
         ),
     }
     OUTCOME.parent.mkdir(parents=True, exist_ok=True)
@@ -99,6 +128,12 @@ def main() -> int:
     print(f"Wrote {OUT}")
     print(f"Wrote {OUTCOME}")
     print(f"  n_scalar={len(tight)} n_total={len(rows)} pooled={doc.get('pooled_median_error_pct')} {status}")
+    print(
+        f"  perception_view n={pv.get('n_pairs')} "
+        f"max_t3_leftover={pv.get('max_t3_leftover_pct')} "
+        f"max_live_vs_1={pv.get('max_live_vs_1_pct')} "
+        f"t3_ok={pv.get('t3_leftover_ok')}"
+    )
     for p, med in sorted(channel_med.items(), key=lambda kv: -(kv[1] or 0)):
         print(f"  {p}: median={med:.4f}% n={len(by_prop[p])}")
     return 0

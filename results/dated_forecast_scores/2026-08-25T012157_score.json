@@ -1,0 +1,165 @@
+{
+  "scored_at": "2026-09-08T00:43:16.377729+00:00",
+  "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25T012157_issue.json",
+  "rows": [
+    {
+      "id": "FCAST-EQ-20260825T0121-01",
+      "result": "hold",
+      "n_hits": 1,
+      "hits": [
+        {
+          "id": "us7000tbyu",
+          "mag": 5,
+          "place": "60 km NNW of Ende, Indonesia",
+          "lat": -8.3425,
+          "lon": 121.4343,
+          "km": 9.159558263463394
+        }
+      ],
+      "expect_event": true
+    },
+    {
+      "id": "FCAST-EQ-20260825T0121-02",
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
+    },
+    {
+      "id": "FCAST-EQ-20260825T0121-03",
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
+    },
+    {
+      "id": "FCAST-EQ-20260825T0121-04",
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
+    },
+    {
+      "id": "FCAST-EQ-20260825T0121-05",
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
+    },
+    {
+      "id": "FCAST-EQ-20260825T0121-06",
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
+    },
+    {
+      "id": "FCAST-EQ-20260825T0121-07",
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
+    },
+    {
+      "id": "FCAST-EQ-20260825T0121-08",
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
+    },
+    {
+      "id": "FCAST-WX-20260825T0121-01",
+      "result": "hold",
+      "n_obs": 288,
+      "saw_storm": true,
+      "expect_storm": true,
+      "buoy_id": "WRXA2"
+    },
+    {
+      "id": "FCAST-WX-20260825T0121-02",
+      "result": "hold",
+      "n_obs": 288,
+      "saw_storm": true,
+      "expect_storm": true,
+      "buoy_id": "SGXA2"
+    },
+    {
+      "id": "FCAST-WX-20260825T0121-03",
+      "result": "kill",
+      "n_obs": 288,
+      "saw_storm": true,
+      "expect_storm": false,
+      "buoy_id": "OLCN6"
+    },
+    {
+      "id": "FCAST-WX-20260825T0121-04",
+      "result": "awaiting",
+      "notes": "no NDBC realtime in window for 45144"
+    },
+    {
+      "id": "FCAST-WX-20260825T0121-05",
+      "result": "kill",
+      "n_obs": 284,
+      "saw_storm": true,
+      "expect_storm": false,
+      "buoy_id": "42058"
+    },
+    {
+      "id": "FCAST-WX-20260825T0121-06",
+      "result": "hold",
+      "n_obs": 474,
+      "saw_storm": true,
+      "expect_storm": false,
+      "buoy_id": "BABT2"
+    },
+    {
+      "id": "FCAST-SOL-20260825T0121-01",
+      "result": "awaiting",
+      "notes": "no SWPC Kp in window"
+    },
+    {
+      "id": "FCAST-VOLC-20260825T0121-01",
+      "result": "awaiting",
+      "notes": "window still open"
+    },
+    {
+      "id": "FCAST-TIDE-20260825T0121-01",
+      "result": "kill",
+      "max_residual_m": 0.145,
+      "n_hours": 48,
+      "expect_surge": true,
+      "station_id": "9414290",
+      "window_clipped": true
+    },
+    {
+      "id": "FCAST-TIDE-20260825T0121-02",
+      "result": "hold",
+      "max_residual_m": 0.248,
+      "n_hours": 48,
+      "expect_surge": true,
+      "station_id": "8443970",
+      "window_clipped": true
+    },
+    {
+      "id": "FCAST-TIDE-20260825T0121-03",
+      "result": "hold",
+      "max_residual_m": 0.269,
+      "n_hours": 48,
+      "expect_surge": true,
+      "station_id": "9410170",
+      "window_clipped": true
+    },
+    {
+      "id": "FCAST-TIDE-20260825T0121-04",
+      "result": "hold",
+      "max_residual_m": 0.121,
+      "n_hours": 48,
+      "expect_surge": false,
+      "station_id": "8724580",
+      "window_clipped": true
+    }
+  ],
+  "n_hold": 7,
+  "n_kill": 10,
+  "n_awaiting": 3
+}

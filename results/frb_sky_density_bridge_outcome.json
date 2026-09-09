@@ -1,0 +1,364 @@
+{
+  "generated_at": "2026-08-25T02:22:47.318238+00:00",
+  "pin": "D1D38A",
+  "kernel_theta0_deg": 68.75388202501892,
+  "policy": [
+    "same_kernel_as_h0_local_sky_density",
+    "do_not_stuff_70pct_into_0_5pct_gate",
+    "pred_052_keeps_200_class"
+  ],
+  "n_frb": 38,
+  "n_with_ra": 38,
+  "n_with_dm_excess": 10,
+  "median_error_pct_200x1pdens": 66.4353,
+  "high_density_n": 5,
+  "low_density_n": 5,
+  "high_density_median_excess": 380.0,
+  "low_density_median_excess": 420.0,
+  "verdict": "NOT_A_0_5PCT_CENTRAL",
+  "lock": "PRED-076 same-kernel classifier + PRED-052 200 pc cm-3 class. Do not 0.5%-gate 200*(1+density) on this 10-row seed.",
+  "rows": [
+    {
+      "name": "FRB20121102A",
+      "ra_deg": 65.0,
+      "density_sky": 0.170859,
+      "dm_pc": 557.0,
+      "dm_excess_pc": 210.0,
+      "predicted_excess_200x1pdens": 234.172,
+      "error_pct_vs_excess": 11.5104
+    },
+    {
+      "name": "FRB20180916B",
+      "ra_deg": 29.5,
+      "density_sky": 0.233726,
+      "dm_pc": 349.0,
+      "dm_excess_pc": 120.0,
+      "predicted_excess_200x1pdens": 246.745,
+      "error_pct_vs_excess": 105.621
+    },
+    {
+      "name": "FRB20190311A",
+      "ra_deg": 72.0,
+      "density_sky": 0.145953,
+      "dm_pc": 758.0,
+      "dm_excess_pc": 380.0,
+      "predicted_excess_200x1pdens": 229.191,
+      "error_pct_vs_excess": 39.6867
+    },
+    {
+      "name": "FRB20200929C",
+      "ra_deg": 44.1,
+      "density_sky": 0.243347,
+      "dm_pc": 157.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 248.669,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20191221A",
+      "ra_deg": 14.5,
+      "density_sky": 0.182027,
+      "dm_pc": 282.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 236.405,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20201124A",
+      "ra_deg": 352.3,
+      "density_sky": 0.102423,
+      "dm_pc": 413.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 220.485,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20200120E",
+      "ra_deg": 348.6,
+      "density_sky": 0.091898,
+      "dm_pc": 88.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 218.38,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20171020A",
+      "ra_deg": 180.0,
+      "density_sky": -0.119379,
+      "dm_pc": 114.0,
+      "dm_excess_pc": 15.0,
+      "predicted_excess_200x1pdens": 176.124,
+      "error_pct_vs_excess": 1074.1619
+    },
+    {
+      "name": "FRB20180924A",
+      "ra_deg": 44.1,
+      "density_sky": 0.243347,
+      "dm_pc": 362.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 248.669,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190102C",
+      "ra_deg": 10.8,
+      "density_sky": 0.166,
+      "dm_pc": 364.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 233.2,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190208A",
+      "ra_deg": 29.3,
+      "density_sky": 0.233476,
+      "dm_pc": 524.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 246.695,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190412A",
+      "ra_deg": 18.2,
+      "density_sky": 0.197454,
+      "dm_pc": 428.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 239.491,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190520B",
+      "ra_deg": 21.9,
+      "density_sky": 0.212578,
+      "dm_pc": 120.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 242.516,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190611B",
+      "ra_deg": 25.6,
+      "density_sky": 0.224551,
+      "dm_pc": 190.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 244.91,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190614D",
+      "ra_deg": 44.1,
+      "density_sky": 0.243347,
+      "dm_pc": 245.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 248.669,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190616B",
+      "ra_deg": 44.1,
+      "density_sky": 0.243347,
+      "dm_pc": 290.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 248.669,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190618A",
+      "ra_deg": 200.0,
+      "density_sky": -0.128711,
+      "dm_pc": 778.0,
+      "dm_excess_pc": 420.0,
+      "predicted_excess_200x1pdens": 174.258,
+      "error_pct_vs_excess": 58.51
+    },
+    {
+      "name": "FRB20190619H",
+      "ra_deg": 77.4,
+      "density_sky": 0.127189,
+      "dm_pc": 350.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 225.438,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190621A",
+      "ra_deg": 220.0,
+      "density_sky": -0.132415,
+      "dm_pc": 1000.0,
+      "dm_excess_pc": 580.0,
+      "predicted_excess_200x1pdens": 173.517,
+      "error_pct_vs_excess": 70.0833
+    },
+    {
+      "name": "FRB20190622A",
+      "ra_deg": 29.3,
+      "density_sky": 0.233476,
+      "dm_pc": 600.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 246.695,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190624A",
+      "ra_deg": 36.7,
+      "density_sky": 0.23975,
+      "dm_pc": 450.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 247.95,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190627B",
+      "ra_deg": 51.5,
+      "density_sky": 0.226478,
+      "dm_pc": 327.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 245.296,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190628A",
+      "ra_deg": 51.5,
+      "density_sky": 0.226478,
+      "dm_pc": 715.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 245.296,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190701A",
+      "ra_deg": 21.9,
+      "density_sky": 0.212578,
+      "dm_pc": 507.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 242.516,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190709A",
+      "ra_deg": 51.5,
+      "density_sky": 0.226478,
+      "dm_pc": 340.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 245.296,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190711A",
+      "ra_deg": 25.6,
+      "density_sky": 0.224551,
+      "dm_pc": 589.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 244.91,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190714A",
+      "ra_deg": 36.7,
+      "density_sky": 0.23975,
+      "dm_pc": 504.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 247.95,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190716A",
+      "ra_deg": 44.1,
+      "density_sky": 0.243347,
+      "dm_pc": 800.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 248.669,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190717A",
+      "ra_deg": 47.8,
+      "density_sky": 0.234878,
+      "dm_pc": 220.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 246.976,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190722A",
+      "ra_deg": 33.0,
+      "density_sky": 0.23668,
+      "dm_pc": 380.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 247.336,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190728A",
+      "ra_deg": 55.2,
+      "density_sky": 0.21202,
+      "dm_pc": 650.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 242.404,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190804F",
+      "ra_deg": 55.2,
+      "density_sky": 0.21202,
+      "dm_pc": 310.0,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 242.404,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190701D",
+      "ra_deg": 112.0,
+      "density_sky": 0.001997,
+      "dm_pc": 933.37,
+      "dm_excess_pc": 520.0,
+      "predicted_excess_200x1pdens": 200.399,
+      "error_pct_vs_excess": 61.4616
+    },
+    {
+      "name": "FRB20190702A",
+      "ra_deg": 188.0,
+      "density_sky": -0.123044,
+      "dm_pc": 195.5,
+      "dm_excess_pc": 45.0,
+      "predicted_excess_200x1pdens": 175.391,
+      "error_pct_vs_excess": 289.7584
+    },
+    {
+      "name": "FRB20190415C",
+      "ra_deg": 150.0,
+      "density_sky": -0.08829,
+      "dm_pc": 900.0,
+      "dm_excess_pc": 490.0,
+      "predicted_excess_200x1pdens": 182.342,
+      "error_pct_vs_excess": 62.7873
+    },
+    {
+      "name": "FRB20181219D",
+      "ra_deg": 95.0,
+      "density_sky": 0.062842,
+      "dm_pc": 1900.0,
+      "dm_excess_pc": 1200.0,
+      "predicted_excess_200x1pdens": 212.568,
+      "error_pct_vs_excess": 82.286
+    },
+    {
+      "name": "FRB20190701E",
+      "ra_deg": 138.5,
+      "density_sky": -0.067756,
+      "dm_pc": 890.49,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 186.449,
+      "error_pct_vs_excess": null
+    },
+    {
+      "name": "FRB20190702B",
+      "ra_deg": 208.1,
+      "density_sky": -0.131382,
+      "dm_pc": 222.1,
+      "dm_excess_pc": null,
+      "predicted_excess_200x1pdens": 173.724,
+      "error_pct_vs_excess": null
+    }
+  ]
+}

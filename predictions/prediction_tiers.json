@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T00:07:42.051914+00:00",
+  "generated_at": "2026-09-08T00:26:16.038497+00:00",
   "version": "1.0",
   "authority_pin_prefix": "D1D38A",
   "purpose": "Separate high-weight contested survey predictions from atlas regression holds and scaffold/speculation so public communication stays honest.",
@@ -31,9 +31,9 @@
   },
   "summary": {
     "hand_by_tier": {
-      "A": 17,
+      "A": 29,
       "B": 0,
-      "C": 18,
+      "C": 26,
       "D": 22
     },
     "atlas_kind_counts": {
@@ -46,7 +46,7 @@
       "B/scalar_lock": 885,
       "B/sector_portfolio_hold": 9
     },
-    "tier_A_list_count": 170,
+    "tier_A_list_count": 182,
     "tier_B_note": "Tier B is the full residual_hold + scalar_lock + sector_portfolio surface in domain_prediction_atlas.json \u2014 not fully expanded here.",
     "atlas_summary": {
       "green_domains_covered": 472,
@@ -274,6 +274,138 @@
       "unit": "same_valve_classifier",
       "discriminant": "same_valve_not_two_laws",
       "future_survey": "slow-slip moment-duration scaling literature",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-066",
+      "source": "hand_prereg",
+      "name": "exoplanet_architecture_class_hold",
+      "domain": "Exoplanet_System_Architecture",
+      "fsot_predicted": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "discriminant": "within_green_gate_0_5pct",
+      "future_survey": "NASA Exoplanet Archive TAP refreshes",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-067",
+      "source": "hand_prereg",
+      "name": "gwtc_chirp_mass_class_hold",
+      "domain": "Compact_Object_Binary_Events",
+      "fsot_predicted": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "discriminant": "within_green_gate_0_5pct",
+      "future_survey": "GWOSC / GWTC O4 remainder and O5",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-070",
+      "source": "hand_prereg",
+      "name": "ckm_V_ud",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "fsot_predicted": 0.9743242085724285,
+      "unit": "magnitude",
+      "discriminant": "pdg_update_outside_0_5pct",
+      "future_survey": "PDG CKM global-fit updates",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-071",
+      "source": "hand_prereg",
+      "name": "ckm_V_tb",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "fsot_predicted": 0.9991224621900914,
+      "unit": "magnitude",
+      "discriminant": "pdg_update_outside_0_5pct",
+      "future_survey": "PDG CKM global-fit updates",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-072",
+      "source": "hand_prereg",
+      "name": "ckm_delta_rad",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "fsot_predicted": 1.147015328140754,
+      "unit": "rad",
+      "discriminant": "pdg_update_outside_0_5pct",
+      "future_survey": "PDG CKM unitarity-triangle updates",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-073",
+      "source": "hand_prereg",
+      "name": "pmns_sin2_theta_12",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "fsot_predicted": 0.3069853966078061,
+      "unit": "sin2",
+      "discriminant": "pdg_update_outside_0_5pct",
+      "future_survey": "NuFIT / PDG PMNS updates",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-074",
+      "source": "hand_prereg",
+      "name": "pmns_sin2_theta_13",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "fsot_predicted": 0.021999342006699705,
+      "unit": "sin2",
+      "discriminant": "pdg_update_outside_0_5pct",
+      "future_survey": "NuFIT / PDG PMNS updates",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-075",
+      "source": "hand_prereg",
+      "name": "alpha_s_MZ",
+      "domain": "TOE_CKM_PMNS_Flavor",
+      "fsot_predicted": 0.11790879142834312,
+      "unit": "coupling",
+      "discriminant": "pdg_update_outside_0_5pct",
+      "future_survey": "PDG QCD coupling combination",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-076",
+      "source": "hand_prereg",
+      "name": "frb_dm_same_sky_density_kernel",
+      "domain": "Cosmology",
+      "fsot_predicted": 1.0,
+      "unit": "same_kernel_classifier",
+      "discriminant": "frb_and_h0_share_local_sky_density",
+      "future_survey": "CHIME/FRB catalog refreshes with DM excess",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-084",
+      "source": "hand_prereg",
+      "name": "frb_orifice_repeater_vs_rip",
+      "domain": "Particle_Astrophysics",
+      "fsot_predicted": 1.0,
+      "unit": "orifice_classifier",
+      "discriminant": "quiet_and_storm_remain_distinct_sectors",
+      "future_survey": "CHIME/FRB catalog refreshes (repeater vs one-shot + widths)",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-077",
+      "source": "hand_prereg",
+      "name": "gw_siren_h0_mid_sector",
+      "domain": "Astronomy",
+      "fsot_predicted": 70.024205,
+      "unit": "km/s/Mpc",
+      "discriminant": "siren_stays_mid_sector_not_shoes",
+      "future_survey": "LVK O4 remainder / O5 public sirens",
+      "tier": "A"
+    },
+    {
+      "id": "PRED-082",
+      "source": "hand_prereg",
+      "name": "gaia_parallax_class_hold",
+      "domain": "Gaia_Astrometry_Panel_Deep",
+      "fsot_predicted": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "discriminant": "within_green_gate_0_5pct",
+      "future_survey": "Gaia DR4 / DR3 reprocess public samples",
       "tier": "A"
     },
     {
@@ -714,6 +846,138 @@
         "unit": "same_valve_classifier",
         "discriminant": "same_valve_not_two_laws",
         "future_survey": "slow-slip moment-duration scaling literature",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-066",
+        "source": "hand_prereg",
+        "name": "exoplanet_architecture_class_hold",
+        "domain": "Exoplanet_System_Architecture",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "NASA Exoplanet Archive TAP refreshes",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-067",
+        "source": "hand_prereg",
+        "name": "gwtc_chirp_mass_class_hold",
+        "domain": "Compact_Object_Binary_Events",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "GWOSC / GWTC O4 remainder and O5",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-070",
+        "source": "hand_prereg",
+        "name": "ckm_V_ud",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 0.9743242085724285,
+        "unit": "magnitude",
+        "discriminant": "pdg_update_outside_0_5pct",
+        "future_survey": "PDG CKM global-fit updates",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-071",
+        "source": "hand_prereg",
+        "name": "ckm_V_tb",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 0.9991224621900914,
+        "unit": "magnitude",
+        "discriminant": "pdg_update_outside_0_5pct",
+        "future_survey": "PDG CKM global-fit updates",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-072",
+        "source": "hand_prereg",
+        "name": "ckm_delta_rad",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 1.147015328140754,
+        "unit": "rad",
+        "discriminant": "pdg_update_outside_0_5pct",
+        "future_survey": "PDG CKM unitarity-triangle updates",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-073",
+        "source": "hand_prereg",
+        "name": "pmns_sin2_theta_12",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 0.3069853966078061,
+        "unit": "sin2",
+        "discriminant": "pdg_update_outside_0_5pct",
+        "future_survey": "NuFIT / PDG PMNS updates",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-074",
+        "source": "hand_prereg",
+        "name": "pmns_sin2_theta_13",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 0.021999342006699705,
+        "unit": "sin2",
+        "discriminant": "pdg_update_outside_0_5pct",
+        "future_survey": "NuFIT / PDG PMNS updates",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-075",
+        "source": "hand_prereg",
+        "name": "alpha_s_MZ",
+        "domain": "TOE_CKM_PMNS_Flavor",
+        "fsot_predicted": 0.11790879142834312,
+        "unit": "coupling",
+        "discriminant": "pdg_update_outside_0_5pct",
+        "future_survey": "PDG QCD coupling combination",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-076",
+        "source": "hand_prereg",
+        "name": "frb_dm_same_sky_density_kernel",
+        "domain": "Cosmology",
+        "fsot_predicted": 1.0,
+        "unit": "same_kernel_classifier",
+        "discriminant": "frb_and_h0_share_local_sky_density",
+        "future_survey": "CHIME/FRB catalog refreshes with DM excess",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-084",
+        "source": "hand_prereg",
+        "name": "frb_orifice_repeater_vs_rip",
+        "domain": "Particle_Astrophysics",
+        "fsot_predicted": 1.0,
+        "unit": "orifice_classifier",
+        "discriminant": "quiet_and_storm_remain_distinct_sectors",
+        "future_survey": "CHIME/FRB catalog refreshes (repeater vs one-shot + widths)",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-077",
+        "source": "hand_prereg",
+        "name": "gw_siren_h0_mid_sector",
+        "domain": "Astronomy",
+        "fsot_predicted": 70.024205,
+        "unit": "km/s/Mpc",
+        "discriminant": "siren_stays_mid_sector_not_shoes",
+        "future_survey": "LVK O4 remainder / O5 public sirens",
+        "tier": "A"
+      },
+      {
+        "id": "PRED-082",
+        "source": "hand_prereg",
+        "name": "gaia_parallax_class_hold",
+        "domain": "Gaia_Astrometry_Panel_Deep",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "Gaia DR4 / DR3 reprocess public samples",
         "tier": "A"
       },
       {
@@ -2178,6 +2442,94 @@
         "unit": "issued_windows_scored",
         "discriminant": "dated_windows_issued_and_scored",
         "future_survey": "USGS FDSN + NOAA SWPC + NDBC after each valid_to",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-065",
+        "source": "hand_prereg",
+        "name": "noaa_coastal_tides_residual_hold",
+        "domain": "NOAA_Coastal_Tides",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "NOAA CO-OPS station dumps",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-068",
+        "source": "hand_prereg",
+        "name": "gbif_occurrence_class_hold",
+        "domain": "GBIF_Species_Occurrence",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "GBIF occurrence dump refreshes",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-069",
+        "source": "hand_prereg",
+        "name": "epidemiology_class_hold",
+        "domain": "Epidemiology_Panel",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "World Bank / WHO named health-indicator refreshes",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-078",
+        "source": "hand_prereg",
+        "name": "hydrology_flood_quiet_two_sectors",
+        "domain": "Hydrology",
+        "fsot_predicted": 1.0,
+        "unit": "two_sector_classifier",
+        "discriminant": "quiet_and_storm_remain_distinct_sectors",
+        "future_survey": "USGS NWIS IV/DV after each hydrology window",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-079",
+        "source": "hand_prereg",
+        "name": "mpcorb_nea_class_hold",
+        "domain": "MPCORB_Minor_Planet_Catalog",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "MPC / IAU NEA.txt refreshes",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-080",
+        "source": "hand_prereg",
+        "name": "grace_greenland_mass_delta_hold",
+        "domain": "Grace_Cryosphere",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "GFZ GravIS Greenland mass time series",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-081",
+        "source": "hand_prereg",
+        "name": "agriculture_season_class_hold",
+        "domain": "Agriculture_Agroecology",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "GBIF crop-proxy + World Bank agriculture indicator refreshes",
+        "tier": "C"
+      },
+      {
+        "id": "PRED-083",
+        "source": "hand_prereg",
+        "name": "paleoclimate_class_hold",
+        "domain": "Paleoclimate_Panel",
+        "fsot_predicted": 0.5,
+        "unit": "pooled_median_error_pct_ceiling",
+        "discriminant": "within_green_gate_0_5pct",
+        "future_survey": "Open paleoclimate / ice-core class refreshes",
         "tier": "C"
       }
     ],

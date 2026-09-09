@@ -79,7 +79,8 @@ Frozen criteria: [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md).
 | [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) | 35 core folds by \(D_{\mathrm{eff}}\) + extension subdomains + between-scale gaps |
 | [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | Adjacent-fold residual fills (PREM, NDBC, ENDF, Carnot, QG, social tanks) |
 | [`WEATHER_MONITORING_APPROACH.md`](WEATHER_MONITORING_APPROACH.md) | Valve, kernel, Omori timing, issue/score loop for a later weather sibling |
-| [`../predictions/reports/SCIENTIST_OPEN_QUESTIONS.md`](../predictions/reports/SCIENTIST_OPEN_QUESTIONS.md) | Open scientific questions mapped to folds / PREDs / honest refusals |
+| [`../predictions/reports/SCIENTIST_OPEN_QUESTIONS.md`](../predictions/reports/SCIENTIST_OPEN_QUESTIONS.md) | Open scientific questions mapped to folds / PREDs / next-layer / honest refusals |
+| [`../predictions/reports/PREDICTION_EXPANSION_MAP.md`](../predictions/reports/PREDICTION_EXPANSION_MAP.md) | Remaining prediction slots given domains already green |
 | [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) | C6 product 0.13 Å vs AF 0.47 Å; MDS retired |
 | [`CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md`](CONSCIOUSNESS_OBSERVER_ARCHITECTURE.md) | Local observer stack (QEMU; ESP32 deferred) |
 

@@ -8,7 +8,7 @@ independent readers (and other AI systems) cannot confuse layers.
 | Layer | What it measures | Pass criterion | Not a pass criterion |
 |-------|------------------|----------------|----------------------|
 | **A. Engine math** | Seed identities, `raw_S = T1+T2+T3`, Lean/Coq/Isabelle/F* obligations | Proofs / exact identities / export triangulation | “Theory of everything is true” |
-| **B. Empirical benchmarks** | Seed-derived predictions vs **measured** anchors in `data/*benchmark*.json` | Pooled median relative residual ≤ **0.5%** (green gate; live **472/472**) | Live API HTTP 200 alone |
+| **B. Empirical benchmarks** | Seed-derived predictions vs **measured** anchors in `data/*benchmark*.json` | Pooled median relative residual ≤ **0.5%** (green gate; live **477/477**) | Live API HTTP 200 alone |
 | **C. Live open streams** | Public APIs still reachable; catalog integrity samples | Stream OK + holdouts in `open_science_holdout_evaluation.json` | Sub-% residual invented by scaling to measured |
 
 ### What we fixed / forbid

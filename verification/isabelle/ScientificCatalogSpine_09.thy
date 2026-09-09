@@ -3,6 +3,81 @@ theory ScientificCatalogSpine_09
 imports Complex_Main
 begin
 
+lemma cat_usgs_seismic_history_open_records_pos: "0 < (398 :: nat)"
+  by eval
+
+lemma cat_usgs_seismic_history_open_pooled_under_half_pct: "(0.022295 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_usgs_seismic_history_open_pooled_lt_half_pure: "(0.022295 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_usgs_seismic_history_open_max_scalar_under_half_pct: "(0.024709 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_usgs_seismic_history_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_code_genome_structure_records_pos: "0 < (176 :: nat)"
+  by eval
+
+lemma cat_code_genome_structure_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_code_genome_structure_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_code_genome_structure_max_scalar_under_half_pct: "(0.02449769835093818 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_code_genome_structure_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_founding_atmospheric_ozone_panel_records_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cat_founding_atmospheric_ozone_panel_pooled_under_half_pct: "(0.023822 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_founding_atmospheric_ozone_panel_pooled_lt_half_pure: "(0.023822 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_founding_atmospheric_ozone_panel_max_scalar_under_half_pct: "(0.023822 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_founding_atmospheric_ozone_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_ionospheric_chemistry_coupling_records_pos: "0 < (85 :: nat)"
+  by eval
+
+lemma cat_ionospheric_chemistry_coupling_pooled_under_half_pct: "(0.023609235048340338 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_ionospheric_chemistry_coupling_pooled_lt_half_pure: "(0.023609235048340338 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_ionospheric_chemistry_coupling_max_scalar_under_half_pct: "(0.023609235048340338 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_ionospheric_chemistry_coupling_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_dzhanibekov_intermediate_axis_fsot_panel_records_pos: "0 < (32 :: nat)"
+  by eval
+
+lemma cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dzhanibekov_intermediate_axis_fsot_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dzhanibekov_intermediate_axis_fsot_panel_max_scalar_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_dzhanibekov_intermediate_axis_fsot_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_exoplanet_archive_depth_open_records_pos: "0 < (1976 :: nat)"
   by eval
 
@@ -16,6 +91,21 @@ lemma cat_exoplanet_archive_depth_open_max_scalar_under_half_pct: "(0.023015 :: 
   by eval
 
 lemma cat_exoplanet_archive_depth_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_grace_cryosphere_benchmark_json_records_pos: "0 < (505 :: nat)"
+  by eval
+
+lemma cat_grace_cryosphere_benchmark_json_pooled_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_grace_cryosphere_benchmark_json_pooled_lt_half_pure: "(0.023015 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_grace_cryosphere_benchmark_json_max_scalar_under_half_pct: "(0.023015 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_grace_cryosphere_benchmark_json_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 lemma cat_nasa_exoplanet_archive_records_pos: "0 < (158 :: nat)"
@@ -271,96 +361,6 @@ lemma cat_longevity_genetic_mechanics_panel_max_scalar_under_half_pct: "(0.02223
   by eval
 
 lemma cat_longevity_genetic_mechanics_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_longevity_megadeep_ncbi_panel_records_pos: "0 < (1746 :: nat)"
-  by eval
-
-lemma cat_longevity_megadeep_ncbi_panel_pooled_under_half_pct: "(0.017789 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_longevity_megadeep_ncbi_panel_pooled_lt_half_pure: "(0.017789 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_longevity_megadeep_ncbi_panel_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_longevity_megadeep_ncbi_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_longevity_telomere_repair_panel_records_pos: "0 < (60 :: nat)"
-  by eval
-
-lemma cat_longevity_telomere_repair_panel_pooled_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_longevity_telomere_repair_panel_pooled_lt_half_pure: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_longevity_telomere_repair_panel_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_longevity_telomere_repair_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_mycology_panel_records_pos: "0 < (90 :: nat)"
-  by eval
-
-lemma cat_mycology_panel_pooled_under_half_pct: "(0.006006 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_mycology_panel_pooled_lt_half_pure: "(0.006006 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_mycology_panel_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_mycology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_owid_epidemiology_open_records_pos: "0 < (1778 :: nat)"
-  by eval
-
-lemma cat_owid_epidemiology_open_pooled_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_owid_epidemiology_open_pooled_lt_half_pure: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_owid_epidemiology_open_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_owid_epidemiology_open_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_physarum_biological_cuda_panel_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_physarum_biological_cuda_panel_pooled_under_half_pct: "(0.0003086625 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_physarum_biological_cuda_panel_pooled_lt_half_pure: "(0.0003086625 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_physarum_biological_cuda_panel_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_physarum_biological_cuda_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_rcsb_structure_batch_open_records_pos: "0 < (91 :: nat)"
-  by eval
-
-lemma cat_rcsb_structure_batch_open_pooled_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_rcsb_structure_batch_open_pooled_lt_half_pure: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_rcsb_structure_batch_open_max_scalar_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_rcsb_structure_batch_open_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

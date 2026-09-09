@@ -30,10 +30,13 @@ watches:
       facility: Euclid
       product: DR1-Foundation then DR1 complete (weak lensing / S8)
       window: "2026-11 to mid-2027"
-      status_as_of: "2026-08-06"
+      status_as_of: "2026-09-07"
       notes: >
         ESA: DR1-Foundation ~12 Nov 2026 (raw/calibrated ~1900 deg²);
         complete DR1 with higher-level WL/clustering mid-2027.
+        DES Y6 alone S8=0.789±0.012 is a TENSION ROW, not this kill.
+        Joint DES+CMB+low-z S8=0.806 is the fair compare (arXiv:2601.14559).
+        Euclid CLOE.3 FoM is synthetic — not a measured S8.
       urls:
         - "https://www.cosmos.esa.int/web/euclid/timeline"
         - "https://www.cosmos.esa.int/web/euclid/dr1-timeline"
@@ -55,7 +58,10 @@ watches:
       product: BAO / clustering DE posteriors
       window: "2026-11 to 2027"
       status_as_of: "2026-08-06"
-      notes: "DESI multi-year BAO already public; Euclid DR1 enables joint Stage-IV DE."
+      notes: >
+        DESI multi-year BAO already public; Euclid DR1 enables joint Stage-IV DE.
+        Direction supports wa<0. Do not claim 3σ on frozen −1.018 until the joint
+        names the same object. Hold-not-kill. CLOE FoM is not measured wa.
       urls:
         - "https://data.desi.lbl.gov/"
         - "https://www.cosmos.esa.int/web/euclid/timeline"
@@ -109,20 +115,25 @@ watches:
     urgency: high
 
   - id: WATCH-Local-H0-JWST
-    pred_ids: [PRED-001, PRED-051]
+    pred_ids: [PRED-024, PRED-051]
     sector: cosmology
     title: "JWST / SH0ES-class local distance ladder H0"
-    fsot_lock: 70.75
+    fsot_lock: 72.1
     unit: km/s/Mpc
-    baseline_default: "SH0ES ~73 vs Carnegie intermediate"
-    kill_if: "bridge fails when next local+CMB pair published"
+    baseline_default: "SH0ES ~73 vs Carnegie intermediate / CCHP TRGB"
+    kill_if: "local-ladder class row outside 2.5% contested band when the named paper is a Cepheid-host H0"
     data_drop:
       facility: JWST + HST distance ladder programs
       product: Cepheid / TRGB / SNIa H0 papers
       window: "rolling 2026-2027"
-      status_as_of: "2026-08-06"
-      notes: "Local H0 still contested; each new JWST paper is a kill-check opportunity."
+      status_as_of: "2026-09-07"
+      notes: >
+        Perfect Host H0=73.49±0.93 (arXiv:2509.01667) is a LOCAL CEPHEID LADDER
+        object, not PRED-001 bridge 70.75. Do not score it as the sky.
+        Fair compares: CCHP TRGB / dual-anchor PRED-024 / SH0ES-class 2.5% band.
+        Sightline hosts (e.g. M101 73.497) stay per-host, not the bridge.
       urls:
+        - "https://arxiv.org/abs/2509.01667"
         - "https://arxiv.org/list/astro-ph.CO/recent"
     check:
       kind: literature_watch
@@ -404,13 +415,172 @@ watches:
     baseline_default: "no located FSOT calendar forecast layer"
     kill_if: "issued forecast JSON rewritten after valid_from, or scoring abandoned"
     data_drop:
-      facility: USGS FDSN + NOAA SWPC + NDBC
-      product: events / Kp / buoy obs inside each frozen window
-      window: "score after each valid_to (EQ 7d, WX 48h, solar 72h)"
+      facility: USGS FDSN + NOAA SWPC + NDBC + CO-OPS + NWIS
+      product: events / Kp / buoy obs / tide residuals / gage discharge inside each frozen window
+      window: "score after each valid_to (EQ 7d, WX 48h, solar 72h, tide 48h, volc 14d)"
       status_as_of: "2026-08-25"
     check:
       kind: open_science_panel
       panel_hint: dated_forecasts
+    urgency: high
+
+  - id: WATCH-Tides-residual
+    pred_ids: [PRED-065]
+    sector: oceanography
+    title: "NOAA CO-OPS coastal tide residual hold"
+    fsot_lock: 0.5
+    unit: pooled_median_error_pct_ceiling
+    baseline_default: "per-station harmonic-only climatology"
+    kill_if: "noaa_coastal_tides_benchmark exceeds 0.5% on CO-OPS refresh"
+    data_drop:
+      facility: NOAA CO-OPS
+      product: station water_level + predictions
+      window: "continuous"
+      status_as_of: "2026-08-25"
+    check:
+      kind: open_science_panel
+      panel_hint: noaa_coastal_tides
+    urgency: medium
+
+  - id: WATCH-Exoplanet-architecture
+    pred_ids: [PRED-066]
+    sector: exoplanets
+    title: "NASA exoplanet radius-period architecture class"
+    fsot_lock: 0.5
+    unit: pooled_median_error_pct_ceiling
+    baseline_default: "per-planet formation-channel zoo"
+    kill_if: "Exoplanet_System_Architecture pooled median exceeds 0.5% on archive refresh"
+    data_drop:
+      facility: NASA Exoplanet Archive
+      product: TAP planetary systems table
+      window: "continuous"
+      status_as_of: "2026-08-25"
+    check:
+      kind: open_science_panel
+      panel_hint: exoplanet_system_architecture
+    urgency: medium
+
+  - id: WATCH-GWTC-chirp-mass
+    pred_ids: [PRED-067, PRED-048]
+    sector: gravitational_waves
+    title: "GWTC chirp-mass class hold"
+    fsot_lock: 0.5
+    unit: pooled_median_error_pct_ceiling
+    baseline_default: "GW surrogate templates"
+    kill_if: "compact_object_binary_events chirp-mass class exceeds 0.5% on GWTC refresh"
+    data_drop:
+      facility: GWOSC / LVK
+      product: GWTC catalog updates (O4 remainder, O5)
+      window: "2026-12 onward"
+      status_as_of: "2026-08-25"
+    check:
+      kind: catalog_refresh
+      panel_hint: compact_object_binary_events
+    urgency: medium
+
+  - id: WATCH-GBIF-occurrence
+    pred_ids: [PRED-068]
+    sector: ecology
+    title: "GBIF occurrence-field class hold"
+    fsot_lock: 0.5
+    unit: pooled_median_error_pct_ceiling
+    baseline_default: "SDM occupancy zoo"
+    kill_if: "gbif_species_occurrence_benchmark exceeds 0.5% on dump refresh"
+    data_drop:
+      facility: GBIF
+      product: occurrence dumps
+      window: "continuous"
+      status_as_of: "2026-08-25"
+    check:
+      kind: open_science_panel
+      panel_hint: gbif_species_occurrence
+    urgency: low
+
+  - id: WATCH-Epidemiology-class
+    pred_ids: [PRED-069]
+    sector: epidemiology
+    title: "Epidemiology class-count hold"
+    fsot_lock: 0.5
+    unit: pooled_median_error_pct_ceiling
+    baseline_default: "unstructured public-health null"
+    kill_if: "epidemiology_panel_benchmark exceeds 0.5% on World Bank / WHO refresh"
+    data_drop:
+      facility: World Bank / WHO
+      product: named health-indicator series
+      window: "annual / continuous"
+      status_as_of: "2026-08-25"
+    check:
+      kind: open_science_panel
+      panel_hint: epidemiology_panel
+    urgency: low
+
+  - id: WATCH-CKM-PMNS
+    pred_ids: [PRED-070, PRED-071, PRED-072, PRED-073, PRED-074, PRED-075]
+    sector: particle
+    title: "CKM / PMNS / alpha_s PDG holds"
+    fsot_lock: 0.5
+    unit: pooled_median_error_pct_ceiling
+    baseline_default: "SM fitted mixings"
+    kill_if: "next PDG combination more than 0.5% from frozen centrals, or a per-channel epsilon"
+    data_drop:
+      facility: PDG / NuFIT
+      product: CKM magnitudes, PMNS angles, alpha_s(M_Z)
+      window: "PDG editions"
+      status_as_of: "2026-08-25"
+    check:
+      kind: literature_watch
+    urgency: medium
+
+  - id: WATCH-FRB-same-kernel
+    pred_ids: [PRED-076, PRED-052]
+    sector: transients
+    title: "FRB DM shares H0 local_sky_density kernel"
+    fsot_lock: 1.0
+    unit: same_kernel_classifier
+    baseline_default: "IGM-only DM with a second fitted angular kernel"
+    kill_if: "CHIME analysis requires a second fitted kernel or per-FRB epsilon distinct from H0 local_sky_density"
+    data_drop:
+      facility: CHIME/FRB
+      product: catalog DM excess vs sky position
+      window: "continuous"
+      status_as_of: "2026-08-25"
+    check:
+      kind: catalog_refresh
+    urgency: medium
+
+  - id: WATCH-GW-siren-mid-sector
+    pred_ids: [PRED-077]
+    sector: gravitational_waves
+    title: "GW standard siren stays mid-sector (~70)"
+    fsot_lock: 70.024205
+    unit: "km/s/Mpc"
+    baseline_default: "SH0ES class bin 73.04"
+    kill_if: "siren H0 forced onto SH0ES class, or rho retuned"
+    data_drop:
+      facility: LVK / GWOSC
+      product: public standard-siren H0
+      window: "O4 remainder / O5"
+      status_as_of: "2026-08-25"
+    check:
+      kind: catalog_refresh
+    urgency: medium
+
+  - id: WATCH-Hydrology-sectors
+    pred_ids: [PRED-078, PRED-064]
+    sector: hydrology
+    title: "NWIS high-flow vs quiet two sectors"
+    fsot_lock: 1.0
+    unit: two_sector_classifier
+    baseline_default: "one catchment-specific flood law per gage"
+    kill_if: "high-flow and quiet NWIS classes collapse to one sector, or hydro windows never scored"
+    data_drop:
+      facility: USGS NWIS
+      product: IV/DV discharge inside each frozen window
+      window: "score after each 7d hydro valid_to"
+      status_as_of: "2026-08-25"
+    check:
+      kind: open_science_panel
+      panel_hint: hydrology
     urgency: high
 
   - id: WATCH-Fuel-lab-hold

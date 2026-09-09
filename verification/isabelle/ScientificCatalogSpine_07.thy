@@ -3,6 +3,81 @@ theory ScientificCatalogSpine_07
 imports Complex_Main
 begin
 
+lemma cat_omni_theory_humanities_panel_records_pos: "0 < (37 :: nat)"
+  by eval
+
+lemma cat_omni_theory_humanities_panel_pooled_under_half_pct: "(0.0222545 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_omni_theory_humanities_panel_pooled_lt_half_pure: "(0.0222545 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_omni_theory_humanities_panel_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_omni_theory_humanities_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_overflow_carry_emergence_panel_records_pos: "0 < (29 :: nat)"
+  by eval
+
+lemma cat_overflow_carry_emergence_panel_pooled_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_overflow_carry_emergence_panel_pooled_lt_half_pure: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_overflow_carry_emergence_panel_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_overflow_carry_emergence_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_psychology_psychometrics_depth_panel_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_psychology_psychometrics_depth_panel_pooled_under_half_pct: "(0.009282423000000001 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_psychology_psychometrics_depth_panel_pooled_lt_half_pure: "(0.009282423000000001 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_psychology_psychometrics_depth_panel_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_psychology_psychometrics_depth_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_tokenization_live_panel_records_pos: "0 < (51 :: nat)"
+  by eval
+
+lemma cat_tokenization_live_panel_pooled_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_tokenization_live_panel_pooled_lt_half_pure: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_tokenization_live_panel_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_tokenization_live_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_zenodo_records_depth_open_records_pos: "0 < (32 :: nat)"
+  by eval
+
+lemma cat_zenodo_records_depth_open_pooled_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zenodo_records_depth_open_pooled_lt_half_pure: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zenodo_records_depth_open_max_scalar_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zenodo_records_depth_open_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_chaos_mediated_phase_transitions_records_pos: "0 < (21 :: nat)"
   by eval
 
@@ -286,81 +361,6 @@ lemma cat_zero_boundary_not_entity_panel_max_scalar_under_half_pct: "(0.028512 :
   by eval
 
 lemma cat_zero_boundary_not_entity_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_energy_ai_orbital_bridge_records_pos: "0 < (48 :: nat)"
-  by eval
-
-lemma cat_energy_ai_orbital_bridge_pooled_under_half_pct: "(0.02754410755640712 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_energy_ai_orbital_bridge_pooled_lt_half_pure: "(0.02754410755640712 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_energy_ai_orbital_bridge_max_scalar_under_half_pct: "(0.027544107556418167 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_energy_ai_orbital_bridge_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_fusion_lab_certificate_spine_records_pos: "0 < (50 :: nat)"
-  by eval
-
-lemma cat_fusion_lab_certificate_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fusion_lab_certificate_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fusion_lab_certificate_spine_max_scalar_under_half_pct: "(0.027544107556414246 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fusion_lab_certificate_spine_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_cartography_gis_panel_records_pos: "0 < (48 :: nat)"
-  by eval
-
-lemma cat_cartography_gis_panel_pooled_under_half_pct: "(0.018855999999999998 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cartography_gis_panel_pooled_lt_half_pure: "(0.018855999999999998 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cartography_gis_panel_max_scalar_under_half_pct: "(0.027455 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_cartography_gis_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_paleontology_panel_records_pos: "0 < (120 :: nat)"
-  by eval
-
-lemma cat_paleontology_panel_pooled_under_half_pct: "(0.0167305 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_paleontology_panel_pooled_lt_half_pure: "(0.0167305 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_paleontology_panel_max_scalar_under_half_pct: "(0.027455 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_paleontology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_h0_planck_cmb_sector_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_h0_planck_cmb_sector_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_h0_planck_cmb_sector_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_h0_planck_cmb_sector_max_scalar_under_half_pct: "(0.027018411789274284 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_h0_planck_cmb_sector_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

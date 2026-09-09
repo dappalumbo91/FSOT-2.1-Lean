@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T02:49:31.303701+00:00",
+  "generated_at": "2026-09-09T16:27:48.196890+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -9,7 +9,7 @@
     "extension_domains_all_green": true,
     "transcendental_certificates_ok": true,
     "export_gap_closed": true,
-    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5202 vs 2587 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
+    "honest_assessment": "Label B (frozen T1\u2013T6) + residual program closed + multiprover residual triangulation + five-prover atomic spine. Residual export debt = 0 (documented off-spine exclusions = 2597; raw unexported lemma strings = 2597). Literature-aware aspiration debt cleared at 0 domains. Raw Formal/ lemma-string count is 5230 vs 2587 residual-spine obligations \u2014 helper lemmas, catalog spines, and structural bundle indices are off-spine by design. NOT classical continuum YM path-integral uniqueness; NOT independent Mathlib re-derivation of every intermediate lemma. Stumped observables tracked in scientific_pushback_audit.json."
   },
   "obligation_spine": {
     "connective": 24,
@@ -103,19 +103,19 @@
     "total_conjuncts": 2501,
     "conjuncts_with_atomic_coverage": 2497,
     "conjunct_atomic_coverage_pct": 99.84,
-    "explicit_linked_conjuncts": 1904,
-    "explicit_linked_in_spine": 1902,
+    "explicit_linked_conjuncts": 1903,
+    "explicit_linked_in_spine": 1901,
     "explicit_link_hit_pct": 99.89,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "oracle_debt_ledger": {
-    "obligation_total": 2585,
-    "atomic_triangulated": 2022,
+    "obligation_total": 2587,
+    "atomic_triangulated": 2024,
     "oracle_replay": 0,
     "proof_depth_oracle_tagged": 49,
     "structural_index": 563,
     "oracle_fraction_pct": 0.0,
-    "atomic_fraction_pct": 78.22,
+    "atomic_fraction_pct": 78.24,
     "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
@@ -132,7 +132,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-08-05T23:08:35.678432+00:00",
+    "generated_at": "2026-09-01T00:14:59.614142+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -194,7 +194,7 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-08-05T23:08:35.808699+00:00",
+    "generated_at": "2026-09-01T00:14:59.881749+00:00",
     "version": "1.0",
     "overall_runtime_ok": true,
     "esp32_scalar_only_gap_closed": true,
@@ -236,7 +236,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-08-05T23:08:35.903230+00:00",
+    "generated_at": "2026-09-01T00:15:00.150026+00:00",
     "version": "1.0",
     "verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes",
     "headline_claim": "zero free parameters",
@@ -255,7 +255,7 @@
       ],
       "note": "Fractal routing coordinates \u2014 seed-derived folds, not fitted observables"
     },
-    "honest_statement": "175 core route slots + 1113 extension route slots = 1288 preregistered coordinates (D_eff, \u03b4\u03c8, recent_hits, \u03b4\u03b8, C) \u2014 seed-derived folds, not least-squares tunables.",
+    "honest_statement": "175 core route slots + 1125 extension route slots = 1300 preregistered coordinates (D_eff, \u03b4\u03c8, recent_hits, \u03b4\u03b8, C) \u2014 seed-derived folds, not least-squares tunables.",
     "closure_actions": [
       "Manifest claim zero_free_parameters: seed-derived constants + preregistered domain routes",
       "parameter_count_audit.json tracks route slots separately from fitted-parameter audits",
@@ -291,15 +291,15 @@
     ]
   },
   "extension_precision": {
-    "domain_count": 371,
-    "green_gate_pass_count": 371,
-    "core_benchmark_green": 472,
+    "domain_count": 375,
+    "green_gate_pass_count": 375,
+    "core_benchmark_green": 477,
     "worst_scalar_max_pct": 0.4989
   },
   "scientific_pushback": {
     "summary": {
-      "extension_domain_count": 371,
-      "green_gate_pass_count": 371,
+      "extension_domain_count": 375,
+      "green_gate_pass_count": 375,
       "green_gate_fail_count": 0,
       "aspiration_scalar_debt_count": 0,
       "stumped_observable_count": 13,
@@ -398,7 +398,7 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-08-18T02:49:23.199552+00:00",
+    "generated_at": "2026-09-09T16:27:36.837928+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
     "overall_ok": true,
@@ -2733,7 +2733,16 @@
     "coq_connective_coverage_pct_of_lean_theorems": 1.43,
     "note": "Cross-proof triangulates exported numeric obligations and scientific catalog residual gates; F* boot kernel uses oracle literals; Coq/Isabelle pi/e base intervals are native (Isabelle via HOL-Decision_Procs.Approximation). SMT (Z3/CVC5 when present) bulk-checks continuous catalog bounds; TLA+ models routing flow."
   },
-  "open_gaps_from_depth_audit": [],
+  "open_gaps_from_depth_audit": [
+    {
+      "id": "tier_scalar_aspiration",
+      "severity": "info",
+      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
+      "closed": false,
+      "monitored": true
+    }
+  ],
   "findings": [
     {
       "id": "missing_literature_uncertainty",

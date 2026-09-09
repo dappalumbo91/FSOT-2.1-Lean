@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-09-01T00:20:00+00:00",
+  "pin": "D1D38A",
+  "predictions_untouched": true,
+  "dated_forecasts": {
+    "hold": 21,
+    "kill": 12,
+    "awaiting": 56,
+    "first_issue_eq": {
+      "hold": 1,
+      "kill": 7,
+      "loading_cells_all_killed": true,
+      "hold_id": "FCAST-EQ-20260825-01",
+      "hold_detail": "Ende Indonesia M5 at 17.9 km"
+    },
+    "refine": "expect_event only loading/post_poof; score elevated rate vs prior half-window, not guaranteed M>=5"
+  },
+  "survey_kills_this_window": 0,
+  "local_green_holds": [
+    "PRED-048",
+    "PRED-054",
+    "PRED-058",
+    "PRED-059",
+    "PRED-065",
+    "PRED-066",
+    "PRED-067",
+    "PRED-068",
+    "PRED-069",
+    "PRED-070",
+    "PRED-071",
+    "PRED-072",
+    "PRED-073",
+    "PRED-074",
+    "PRED-075"
+  ],
+  "awaiting_surveys": ["PRED-002", "PRED-042", "PRED-044", "PRED-017", "PRED-077", "Euclid-DR1-2026-11-12"],
+  "partial": ["PRED-004", "PRED-050", "PRED-064"]
+}

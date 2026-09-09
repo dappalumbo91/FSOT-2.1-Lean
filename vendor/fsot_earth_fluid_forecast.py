@@ -152,12 +152,11 @@ def earthquake_forecasts(
     out: list[dict[str, Any]] = []
     for i, cell in enumerate(cluster_cells(events), start=1):
         state = valve_state(cell["members"], now_ms=now_ms, half_ms=half_ms)
-        mag_min = 5.0 if float(cell["max_mag"]) >= 6.0 else 4.5
-        # Loading cells: expect a release. Post-POOF: aftershocks. Released: still a residual cell.
-        expect = True
-        if state == "released" and float(cell["max_mag"]) < 5.5:
-            expect = False
-        fid = f"FCAST-EQ-{issued.strftime('%Y%m%d')}-{i:02d}"
+        # Loading cells: continuation class is M>=4.5 (Timor 4.8 at 3.4 km missed a 5.0 bar).
+        # Released/steady: only an M>=5 breaks a quiet hold.
+        expect = state in {"loading_suction", "post_poof_aftershock"}
+        mag_min = 4.5 if expect else 5.0
+        fid = f"FCAST-EQ-{issued.strftime('%Y%m%dT%H%M')}-{i:02d}"
         out.append(
             {
                 "id": fid,
@@ -180,6 +179,7 @@ def earthquake_forecasts(
                     "fsot_pressure": round(float(cell["pressure"]), 4),
                     "n_recent": int(cell["n"]),
                     "max_mag_recent": float(cell["max_mag"]),
+                    "refine_note": "M>=threshold only on loading/post_poof; released/steady hold if quiet",
                     "S_seismology": round(s_seis, 6),
                     "poof": f(POOF),
                     "suction": f(SUCTION),
@@ -205,28 +205,80 @@ def earthquake_forecasts(
     return out
 
 
+def marine_basin(lat: float, lon: float) -> str:
+    """Ocean-air tanks by geography so storm cells are not all one pole."""
+    if lat >= 60.0:
+        return "arctic"
+    if lat <= -40.0:
+        return "southern"
+    if 18.0 <= lat <= 32.0 and -98.0 <= lon <= -80.0:
+        return "gulf"
+    if abs(lat) < 20.0:
+        return "tropics"
+    if lon <= -100.0 or lon >= 120.0:
+        return "pacific"
+    if -80.0 <= lon <= 40.0:
+        return "atlantic"
+    return "other"
+
+
 def weather_forecasts(
     buoys: list[dict[str, Any]],
     *,
     issued: datetime,
 ) -> list[dict[str, Any]]:
-    """Storm-sector marine cells: lowest pressure / highest gust = loaded valve."""
+    """Storm-sector marine cells, one loaded cell per ocean basin (not Arctic-only)."""
     valid_to = issued + timedelta(hours=48)
-    ranked = []
+    ranked: list[tuple[float, dict[str, Any], float, float, str]] = []
     for b in buoys:
         try:
             pres = float(b.get("pres") or 0)
             gst = float(b.get("gst") or b.get("wspd") or 0)
+            lat = float(b.get("lat") or 0)
+            lon = float(b.get("lon") or 0)
         except (TypeError, ValueError):
             continue
         if pres <= 0:
             continue
-        ranked.append((pres - 0.4 * gst, b, pres, gst))
+        ranked.append((pres - 0.4 * gst, b, pres, gst, marine_basin(lat, lon)))
     ranked.sort(key=lambda t: t[0])
+    picked: list[tuple[float, dict[str, Any], float, float, str]] = []
+    used_basins: set[str] = set()
+
+    def _storm(pres: float, gst: float) -> bool:
+        return pres < 1000.0 or gst >= 15.0
+
+    def _quiet_clean(pres: float, gst: float) -> bool:
+        # Inside the quiet kill envelope (pres≥1010 and gst<8), not the 1000–1005 / 12–15 gap.
+        return pres >= 1010.0 and gst < 8.0
+
+    for row in ranked:
+        if row[4] == "other":
+            continue
+        if not _storm(row[2], row[3]):
+            continue
+        if row[4] in used_basins:
+            continue
+        used_basins.add(row[4])
+        picked.append(row)
+        if len(picked) >= 6:
+            break
+    if len(picked) < 6:
+        for row in ranked:
+            if row in picked or row[4] == "other":
+                continue
+            if row[4] in used_basins:
+                continue
+            if not _quiet_clean(row[2], row[3]):
+                continue
+            used_basins.add(row[4])
+            picked.append(row)
+            if len(picked) >= 6:
+                break
     out: list[dict[str, Any]] = []
-    for i, (_score, b, pres, gst) in enumerate(ranked[:5], start=1):
+    for i, (_score, b, pres, gst, basin) in enumerate(picked, start=1):
         storm = pres < 1000.0 or gst >= 15.0
-        fid = f"FCAST-WX-{issued.strftime('%Y%m%d')}-{i:02d}"
+        fid = f"FCAST-WX-{issued.strftime('%Y%m%dT%H%M')}-{i:02d}"
         lat = float(b.get("lat") or 0)
         lon = float(b.get("lon") or 0)
         bid = str(b.get("buoy_id") or b.get("station") or f"buoy{i}")
@@ -238,11 +290,12 @@ def weather_forecasts(
                 "valid_from": issued.isoformat(),
                 "valid_to": valid_to.isoformat(),
                 "location": {
-                    "name": f"NDBC {bid}",
+                    "name": f"NDBC {bid} ({basin})",
                     "lat": lat,
                     "lon": lon,
                     "radius_km": 50.0,
                     "buoy_id": bid,
+                    "basin": basin,
                 },
                 "predicted": {
                     "class": "storm_sector" if storm else "quiet_sector",
@@ -251,6 +304,7 @@ def weather_forecasts(
                     "valve_state": "loading_suction" if storm else "steady",
                     "pres_now": pres,
                     "gst_now": gst,
+                    "basin": basin,
                 },
                 "kill_if": (
                     f"NDBC {bid} next 48h: "
@@ -284,7 +338,7 @@ def solar_forecasts(
     latest = vals[-1]
     rising = len(vals) >= 4 and vals[-1] > vals[-4]
     storm = latest >= 4.0 or (rising and latest >= 3.0)
-    fid = f"FCAST-SOL-{issued.strftime('%Y%m%d')}-01"
+    fid = f"FCAST-SOL-{issued.strftime('%Y%m%dT%H%M')}-01"
     return [
         {
             "id": fid,
@@ -333,7 +387,7 @@ def volcanic_forecasts(
     valid_to = issued + timedelta(days=days)
     out: list[dict[str, Any]] = []
     for i, cell in enumerate(cluster_cells(volc, top_n=4), start=1):
-        fid = f"FCAST-VOLC-{issued.strftime('%Y%m%d')}-{i:02d}"
+        fid = f"FCAST-VOLC-{issued.strftime('%Y%m%dT%H%M')}-{i:02d}"
         out.append(
             {
                 "id": fid,
@@ -367,6 +421,197 @@ def volcanic_forecasts(
                     "start": issued.strftime("%Y-%m-%d"),
                     "end": valid_to.strftime("%Y-%m-%d"),
                     "volcanic": True,
+                },
+            }
+        )
+    return out
+
+
+# NOAA CO-OPS stations already residual-gated in noaa_coastal_tides_benchmark.json
+TIDE_STATIONS: list[dict[str, Any]] = [
+    {"id": "9414290", "name": "San Francisco", "lat": 37.8063, "lon": -122.4659},
+    {"id": "8443970", "name": "Boston", "lat": 42.3534, "lon": -71.0534},
+    {"id": "8724580", "name": "Key West", "lat": 24.5508, "lon": -81.8081},
+    {"id": "9447130", "name": "Seattle", "lat": 47.6026, "lon": -122.3393},
+    {"id": "8638610", "name": "Sewells Point", "lat": 36.9467, "lon": -76.3300},
+    {"id": "8518750", "name": "The Battery NY", "lat": 40.7006, "lon": -74.0142},
+    {"id": "9410170", "name": "Los Angeles", "lat": 33.7200, "lon": -118.2722},
+    {"id": "8771341", "name": "Galveston", "lat": 29.3100, "lon": -94.7933},
+]
+
+
+def surge_class_m() -> float:
+    """Surge residual class in metres = POOF. Seed-closed; not a fitted β."""
+    return f(POOF)
+
+
+def surge_issue_m() -> float:
+    """Issue a surge cell only if residual is clearly above POOF.
+
+    Bar = POOF·(1+POOF) — same 1+POOF grammar as hydrology load.
+    Scoring / kill bar stays surge_class_m() = POOF.
+    Closes the San Francisco 8.5 mm miss: snapshot 0.157 m was only
+    3.5 mm over POOF and the window dropped to 0.145 m.
+    """
+    p = f(POOF)
+    return p * (1.0 + p)
+
+
+def tide_forecasts(
+    snapshots: list[dict[str, Any]],
+    *,
+    issued: datetime,
+) -> list[dict[str, Any]]:
+    """48 h high-water *surge* class at CO-OPS stations.
+
+    Harmonic high water always happens. The valve is the residual
+    (observed − predicted). Issue surge only if residual now ≥ POOF·(1+POOF).
+    Gap zone [POOF, issue bar) is not labeled surge or harmonic.
+    """
+    valid_to = issued + timedelta(hours=48)
+    score_thr = surge_class_m()
+    issue_thr = surge_issue_m()
+    loaded = [s for s in snapshots if float(s.get("residual_m") or 0) >= issue_thr]
+    quiet = [s for s in snapshots if float(s.get("residual_m") or 0) < score_thr]
+    picked = loaded[:6]
+    if len(picked) < 4:
+        for s in quiet:
+            picked.append(s)
+            if len(picked) >= 4:
+                break
+    out: list[dict[str, Any]] = []
+    for i, st in enumerate(picked, start=1):
+        resid = float(st.get("residual_m") or 0)
+        storm = resid >= issue_thr
+        sid = str(st["id"])
+        fid = f"FCAST-TIDE-{issued.strftime('%Y%m%dT%H%M')}-{i:02d}"
+        out.append(
+            {
+                "id": fid,
+                "kind": "tide",
+                "issued_at": issued.isoformat(),
+                "valid_from": issued.isoformat(),
+                "valid_to": valid_to.isoformat(),
+                "location": {
+                    "name": f"NOAA {st.get('name')} ({sid})",
+                    "lat": float(st["lat"]),
+                    "lon": float(st["lon"]),
+                    "radius_km": 39.1,
+                    "station_id": sid,
+                },
+                "predicted": {
+                    "class": "surge_sector" if storm else "harmonic_sector",
+                    "surge_threshold_m": round(score_thr, 4),
+                    "surge_issue_threshold_m": round(issue_thr, 4),
+                    "residual_now_m": round(resid, 4),
+                    "obs_now_m": st.get("obs_m"),
+                    "pred_now_m": st.get("pred_m"),
+                    "expect_surge": storm,
+                    "valve_state": "loading_suction" if storm else "steady",
+                },
+                "kill_if": (
+                    f"CO-OPS {sid} next 48h: max(obs−pred) "
+                    + (f"< {score_thr:.3f} m" if storm else f"≥ {score_thr:.3f} m")
+                ),
+                "score_query": {
+                    "station_id": sid,
+                    "expect_surge": storm,
+                    "surge_threshold_m": score_thr,
+                    "start": issued.strftime("%Y-%m-%d"),
+                    "end": valid_to.strftime("%Y-%m-%d"),
+                },
+            }
+        )
+    return out
+
+
+# USGS NWIS reference gages from data/hydrology_usgs_manifest.yaml
+# Dated-forecast gages. IDs verified 2026-09-07 against NWIS site service
+# (names+coords were already right; several IDs had pointed at other rivers).
+# 06803510 is Little Salt Creek near Lincoln NE, not Hermann — that ID
+# stays frozen on issued JSON. Manifest/benchmark IDs are a separate ingest.
+HYDRO_STATIONS: list[dict[str, Any]] = [
+    {"id": "01646500", "name": "Potomac River near Washington DC", "lat": 38.95, "lon": -77.13},
+    {"id": "05464500", "name": "Cedar River at Cedar Rapids IA", "lat": 41.97, "lon": -91.67},
+    {"id": "08114000", "name": "Brazos River at Richmond TX", "lat": 29.58, "lon": -95.76},
+    {"id": "09380000", "name": "Colorado River at Lees Ferry AZ", "lat": 36.86, "lon": -111.59},
+    {"id": "06934500", "name": "Missouri River at Hermann MO", "lat": 38.71, "lon": -91.43},
+    {"id": "14144700", "name": "Columbia River at Vancouver WA", "lat": 45.62, "lon": -122.67},
+    {"id": "023177483", "name": "Withlacoochee River at Skipper Bridge GA", "lat": 30.85, "lon": -83.28},
+    {"id": "03072655", "name": "Monongahela River near Masontown PA", "lat": 39.84, "lon": -79.88},
+]
+
+
+def hydrology_load_bar() -> float:
+    """Recent/prior discharge ratio that counts as loading. Seed-closed: 1+POOF."""
+    return 1.0 + f(POOF)
+
+
+def hydrology_forecasts(
+    snapshots: list[dict[str, Any]],
+    *,
+    issued: datetime,
+) -> list[dict[str, Any]]:
+    """7-day flood/quiet class windows at NWIS gages. Same valve as EQ cells."""
+    days = forecast_horizon_days()
+    valid_to = issued + timedelta(days=days)
+    bar = hydrology_load_bar()
+    out: list[dict[str, Any]] = []
+    for i, st in enumerate(snapshots, start=1):
+        q_recent = float(st.get("q_recent") or 0)
+        q_prior = float(st.get("q_prior") or 0)
+        if q_recent <= 0 or q_prior <= 0:
+            continue
+        ratio = q_recent / q_prior
+        loading = ratio >= bar
+        released = ratio <= 1.0 / bar
+        if loading:
+            state = "loading_suction"
+        elif released:
+            state = "released"
+        else:
+            state = "steady"
+        expect_high = loading
+        fid = f"FCAST-HYDRO-{issued.strftime('%Y%m%dT%H%M')}-{i:02d}"
+        sid = str(st["id"])
+        out.append(
+            {
+                "id": fid,
+                "kind": "hydrology",
+                "issued_at": issued.isoformat(),
+                "valid_from": issued.isoformat(),
+                "valid_to": valid_to.isoformat(),
+                "location": {
+                    "name": f"USGS {sid} {st.get('name')}",
+                    "lat": float(st["lat"]),
+                    "lon": float(st["lon"]),
+                    "radius_km": round(kernel_km(), 1),
+                    "site_id": sid,
+                },
+                "predicted": {
+                    "class": "high_flow_sector" if expect_high else "quiet_flow_sector",
+                    "expect_high_flow": expect_high,
+                    "q_recent_cfs": round(q_recent, 2),
+                    "q_prior_cfs": round(q_prior, 2),
+                    "load_ratio": round(ratio, 4),
+                    "load_bar": round(bar, 4),
+                    "valve_state": state,
+                },
+                "kill_if": (
+                    f"USGS {sid} next {days}d mean discharge "
+                    + (
+                        f"falls below prior {q_prior:.0f} cfs"
+                        if expect_high
+                        else f"rises to ≥ {q_prior * bar:.0f} cfs"
+                    )
+                ),
+                "score_query": {
+                    "site_id": sid,
+                    "expect_high_flow": expect_high,
+                    "q_prior_cfs": q_prior,
+                    "load_bar": bar,
+                    "start": issued.strftime("%Y-%m-%d"),
+                    "end": valid_to.strftime("%Y-%m-%d"),
                 },
             }
         )

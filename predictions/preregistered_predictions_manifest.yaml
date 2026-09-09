@@ -17,6 +17,10 @@ predictions:
     alternate_sota: 73.04
     alternate_label: "SH0ES 2024"
     discriminant: "strictly_between_planck_and_sh0es"
+    note: >
+      Bridge 70.75 is not JWST Perfect Host 73.49 (local Cepheid ladder).
+      Perfect Host is PRED-001 tension only if mis-scored as the bridge;
+      fair compares are CCHP TRGB / dual-anchor PRED-024. See docs/OBJECT_SCORING.md.
     registered_at: "2026-07-10"
 
   - id: PRED-002
@@ -30,6 +34,10 @@ predictions:
     alternate_sota: 0.776
     alternate_label: "DES Y3"
     discriminant: "between_planck_and_des"
+    note: >
+      DES Y6 alone S8=0.789±0.012 is a tension row, not the kill.
+      Joint DES+CMB+low-z S8=0.806 is the fair compare (arXiv:2601.14559).
+      Euclid CLOE is synthetic — PRED-002/042 await DR1 ~12 Nov 2026.
     registered_at: "2026-07-10"
 
   - id: PRED-003
@@ -446,6 +454,10 @@ predictions:
     sota_label: "ΛCDM wa=0"
     discriminant: "desi_3sigma_exclusion"
     future_survey: "Euclid DR1 + DESI BAO joint DE 2026-2027"
+    note: >
+      Direction supports evolving DE (DESI+CMB). Central stays −1.018.
+      Do not claim a 3σ lock on −1.018 until Euclid/DESI joint names the same object.
+      Hold-not-kill. Euclid CLOE FoM is not a measured wa.
     registered_at: "2026-08-06"
 
   - id: PRED-044
@@ -591,7 +603,7 @@ predictions:
     future_survey: "open zebrafish developmental atlas refreshes"
     registered_at: "2026-08-06"
 
-  # ── Earth-system class predictions (not event dates) ───────────────────
+  # ── Earth-system class predictions (windows, not clock-times) ──────────
   - id: PRED-056
     name: usgs_comcat_gr_b_value
     domain: Seismology
@@ -717,3 +729,303 @@ predictions:
       Score hit/miss after the window. Do not rewrite an issued file.
       Not a clock-time of a single hypocenter.
     registered_at: "2026-08-25"
+
+  # ── Wave 2 catalog-class holds (green panels that had no hand PRED) ──
+  - id: PRED-065
+    name: noaa_coastal_tides_residual_hold
+    domain: NOAA_Coastal_Tides
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 5.0
+    sota_label: "per-station harmonic-only climatology"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "NOAA CO-OPS station dumps"
+    note: >
+      20-station residual 0.030%. Dated surge windows live under PRED-064 (POOF metres).
+      Not a beat of the harmonic table at every minute.
+    registered_at: "2026-08-25"
+
+  - id: PRED-066
+    name: exoplanet_architecture_class_hold
+    domain: Exoplanet_System_Architecture
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 12.0
+    sota_label: "per-planet free-parameter formation channels"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "NASA Exoplanet Archive TAP refreshes"
+    note: >
+      Radius–period–insolation as one D=21 fold. Not one ε per planet.
+      Not the discovery date of the next transiting Earth analog.
+    registered_at: "2026-08-25"
+
+  - id: PRED-067
+    name: gwtc_chirp_mass_class_hold
+    domain: Compact_Object_Binary_Events
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 10.0
+    sota_label: "GW surrogate templates / per-event fitted masses"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "GWOSC / GWTC O4 remainder and O5"
+    note: >
+      Chirp-mass class on the compact-object panel (live 0.010%). Pairs with PRED-048.
+      Sirens stay on the ~70 H0 sector. Not the GPS time of the next merger.
+    registered_at: "2026-08-25"
+
+  - id: PRED-068
+    name: gbif_occurrence_class_hold
+    domain: GBIF_Species_Occurrence
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 8.0
+    sota_label: "species-distribution model occupancy zoo"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "GBIF occurrence dump refreshes"
+    note: >
+      Occurrence-field structure as acoustic-ecology counting (240 rec / 0.006%).
+      Not the date a named species arrives in a new county.
+    registered_at: "2026-08-25"
+
+  - id: PRED-069
+    name: epidemiology_class_hold
+    domain: Epidemiology_Panel
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 8.0
+    sota_label: "unstructured public-health null"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "World Bank / WHO named health-indicator refreshes"
+    note: >
+      Class counts on the same POOF/SUCTION grammar as GR b-value (24 rec / 0.015%).
+      Not the start date of the next named outbreak in a named city.
+    registered_at: "2026-08-25"
+
+  # ── Wave 3 flavor + multi-messenger + hydrology ──────────────────────
+  - id: PRED-070
+    name: ckm_V_ud
+    domain: TOE_CKM_PMNS_Flavor
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 0.9743242085724285
+    unit: magnitude
+    sota_baseline: 0.97435
+    sota_label: "PDG 2024 CKM V_ud"
+    discriminant: "pdg_update_outside_0_5pct"
+    future_survey: "PDG CKM global-fit updates"
+    note: "Promoted from Higgs/flavor layer. No per-channel ε."
+    registered_at: "2026-08-25"
+
+  - id: PRED-071
+    name: ckm_V_tb
+    domain: TOE_CKM_PMNS_Flavor
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 0.9991224621900914
+    unit: magnitude
+    sota_baseline: 0.999118
+    sota_label: "PDG 2024 CKM V_tb"
+    discriminant: "pdg_update_outside_0_5pct"
+    future_survey: "PDG CKM global-fit updates"
+    note: "Promoted from Higgs/flavor layer. No per-channel ε."
+    registered_at: "2026-08-25"
+
+  - id: PRED-072
+    name: ckm_delta_rad
+    domain: TOE_CKM_PMNS_Flavor
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 1.147015328140754
+    unit: rad
+    sota_baseline: 1.147
+    sota_label: "PDG 2024 CKM delta = atan2(eta_bar, rho_bar)"
+    discriminant: "pdg_update_outside_0_5pct"
+    future_survey: "PDG CKM unitarity-triangle updates"
+    note: "Promoted from Higgs/flavor layer."
+    registered_at: "2026-08-25"
+
+  - id: PRED-073
+    name: pmns_sin2_theta_12
+    domain: TOE_CKM_PMNS_Flavor
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 0.3069853966078061
+    unit: sin2
+    sota_baseline: 0.307
+    sota_label: "neutrino global-fit sin^2 theta_12"
+    discriminant: "pdg_update_outside_0_5pct"
+    future_survey: "NuFIT / PDG PMNS updates"
+    note: "Promoted from Higgs/flavor layer."
+    registered_at: "2026-08-25"
+
+  - id: PRED-074
+    name: pmns_sin2_theta_13
+    domain: TOE_CKM_PMNS_Flavor
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 0.021999342006699705
+    unit: sin2
+    sota_baseline: 0.022
+    sota_label: "neutrino global-fit sin^2 theta_13"
+    discriminant: "pdg_update_outside_0_5pct"
+    future_survey: "NuFIT / PDG PMNS updates"
+    note: "Promoted from Higgs/flavor layer."
+    registered_at: "2026-08-25"
+
+  - id: PRED-075
+    name: alpha_s_MZ
+    domain: TOE_CKM_PMNS_Flavor
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.11790879142834312
+    unit: coupling
+    sota_baseline: 0.1179
+    sota_label: "PDG / lattice alpha_s(M_Z)"
+    discriminant: "pdg_update_outside_0_5pct"
+    future_survey: "PDG QCD coupling combination"
+    note: "Promoted from Higgs/flavor layer."
+    registered_at: "2026-08-25"
+
+  - id: PRED-076
+    name: frb_dm_same_sky_density_kernel
+    domain: Cosmology
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 1.0
+    unit: same_kernel_classifier
+    sota_baseline: 0.0
+    sota_label: "IGM-only DM with a second fitted angular kernel"
+    discriminant: "frb_and_h0_share_local_sky_density"
+    future_survey: "CHIME/FRB catalog refreshes with DM excess"
+    note: >
+      Same θ0=180/φ² kernel as H0 is a classifier of angular grammar, NOT a DM residual.
+      200·(1+density) is the wrong object (~66%, REMEDIED_WRONG_APPLY — retired, not an
+      open isolate). The burst is BH→WH orifice outgassing (PRED-084). PRED-052 keeps
+      the 200 pc cm-3 class. Not the UTC of the next FRB.
+    registered_at: "2026-08-25"
+
+  - id: PRED-084
+    name: frb_orifice_repeater_vs_rip
+    domain: Particle_Astrophysics
+    fsot_formula_branch: term3.poof_factor
+    fsot_predicted: 1.0
+    unit: orifice_classifier
+    sota_baseline: 0.0
+    sota_label: "IGM-only DM with a fitted angular kernel"
+    discriminant: "quiet_and_storm_remain_distinct_sectors"
+    future_survey: "CHIME/FRB catalog refreshes (repeater vs one-shot + widths)"
+    note: >
+      Repeaters are saloon-door post-POOF; one-shots are a single paper-rip.
+      Puncture energy = width_ms × fluence vs e·POOF. No DM in the energy (that is IGM).
+      Width class ratio vs Particle D_eff=5. Short period vs P34 1000 s (2.5% band).
+      Activity season T = 5π + 1/φ days (Particle orifice cycle + Omori c rest)
+      vs FRB20180916B 16.35 d. Not φ^6 (compactification count). Not 2πφ² (0.61%).
+      200·(1+local_sky_density) is REMEDIED_WRONG_APPLY — retired, not an open isolate.
+      Not the UTC of the next FRB.
+    registered_at: "2026-09-08"
+
+  - id: PRED-077
+    name: gw_siren_h0_mid_sector
+    domain: Astronomy
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 70.024205
+    unit: "km/s/Mpc"
+    sota_baseline: 73.04
+    sota_label: "SH0ES class bin"
+    alternate_sota: 67.36
+    alternate_label: "Planck2018 ΛCDM"
+    discriminant: "siren_stays_mid_sector_not_shoes"
+    future_survey: "LVK O4 remainder / O5 public sirens"
+    note: >
+      Sparse sirens land mid-sector (~70), not on the SH0ES class bin.
+      Do not retune ρ. Already the PRED-H0-gw_standard_siren tool row.
+    registered_at: "2026-08-25"
+
+  - id: PRED-078
+    name: hydrology_flood_quiet_two_sectors
+    domain: Hydrology
+    fsot_formula_branch: term3.poof_factor
+    fsot_predicted: 1.0
+    unit: two_sector_classifier
+    sota_baseline: 0.0
+    sota_label: "one catchment-specific flood law per gage"
+    discriminant: "quiet_and_storm_remain_distinct_sectors"
+    future_survey: "USGS NWIS IV/DV after each hydrology window"
+    note: >
+      High-flow vs quiet are two sectors of one valve (load bar = 1+POOF).
+      Dated 7-day gage windows under PRED-064. Not street-level inundation.
+    registered_at: "2026-08-25"
+
+  - id: PRED-079
+    name: mpcorb_nea_class_hold
+    domain: MPCORB_Minor_Planet_Catalog
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 5.0
+    sota_label: "one free epsilon per NEA designation"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "MPC / IAU NEA.txt refreshes"
+    note: >
+      NEA class (neo_median_a ~0.019%) shares the Planetary_Science fold with MBA.
+      Not an impact date per asteroid.
+    registered_at: "2026-09-01"
+
+  - id: PRED-080
+    name: grace_greenland_mass_delta_hold
+    domain: Grace_Cryosphere
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 10.0
+    sota_label: "ice-sheet model vs GRACE offset"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "GFZ GravIS Greenland mass time series"
+    note: >
+      Month-to-month |delta| APPLY residual on Planetary_Science (live scalar median 0.023%).
+      Decline-direction classifier stays separate. Not the calendar day a shelf calves.
+    registered_at: "2026-09-01"
+
+  - id: PRED-081
+    name: agriculture_season_class_hold
+    domain: Agriculture_Agroecology
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 10.0
+    sota_label: "agroecology field-survey / USDA post-harvest retune"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "GBIF crop-proxy + World Bank agriculture indicator refreshes"
+    note: >
+      Season-class residual on D=16 Meteorology fold (276 rec / 0.018%).
+      Same viscosity as ecology and hydrology. Not county bushels next Tuesday.
+    registered_at: "2026-09-01"
+
+  - id: PRED-082
+    name: gaia_parallax_class_hold
+    domain: Gaia_Astrometry_Panel_Deep
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 5.0
+    sota_label: "one free epsilon per Gaia source"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "Gaia DR4 / DR3 reprocess public samples"
+    note: >
+      Parallax / proper-motion class (deep panel 62 rec / 0.022%; CAT-GAIA-DR3 3459 / 0.022%).
+      Ladder-adjacent astrometry. Not a new H0 from one star.
+    registered_at: "2026-09-01"
+
+  - id: PRED-083
+    name: paleoclimate_class_hold
+    domain: Paleoclimate_Panel
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.5
+    unit: pooled_median_error_pct_ceiling
+    sota_baseline: 10.0
+    sota_label: "GCM paleo surrogate per-epoch retune"
+    discriminant: "within_green_gate_0_5pct"
+    future_survey: "Open paleoclimate / ice-core class refreshes"
+    note: >
+      Millennial climate class on D=17 Atmospheric_Physics (panel 20 rec / 0.006%;
+      extension 40 rec / 0.015%). Distinct from PRED-054 NCEI station climate.
+      Not a named-year drought date.
+    registered_at: "2026-09-01"

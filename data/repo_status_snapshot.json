@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T23:36:20.679643+00:00",
-  "edition_stamp": "2026-08-24",
+  "generated_at": "2026-09-09T16:28:51.692513+00:00",
+  "edition_stamp": "2026-09-09",
   "authority": {
     "pin_prefix": "D1D38A",
     "fsot_compute_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
@@ -11,17 +11,17 @@
     "parameter_verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes"
   },
   "empirical": {
-    "green_gate_pass_count": 476,
+    "green_gate_pass_count": 477,
     "green_gate_fail_count": 0,
-    "benchmark_file_count": 476,
+    "benchmark_file_count": 477,
     "green_gate_pct": 0.5,
     "tier_distribution": {
-      "B_verified": 337,
+      "B_verified": 338,
       "C_thin": 13,
       "A_strong": 117
     },
-    "median_of_medians_pct": 0.006006,
-    "total_scalar_records": 180042
+    "median_of_medians_pct": 0.006625234573930708,
+    "total_scalar_records": 181477
   },
   "mathlib": {
     "verdict": "FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED",
@@ -41,8 +41,8 @@
     "eight_way_hardware": true,
     "atomic_provable": 2024,
     "full_formal_obligations": 2587,
-    "catalog_obligations": 2228,
-    "catalog_domains": 472,
+    "catalog_obligations": 2256,
+    "catalog_domains": 477,
     "true_margin_violations": 0,
     "structural_bundle_excluded": 0,
     "frameworks_passed": [
@@ -70,6 +70,14 @@
     "label_B_classical_toe": true,
     "report": "data/toe_gap_closure_report.json"
   },
+  "predictions": {
+    "hand_prereg_count": 77,
+    "dated_forecast_hold": 62,
+    "dated_forecast_kill": 43,
+    "dated_forecast_awaiting": 9,
+    "score_report": "results/dated_forecast_scores/REPORT.md",
+    "expansion_map": "predictions/reports/PREDICTION_EXPANSION_MAP.md"
+  },
   "expansion_highlights": {
     "dzhanibekov_panel": "data/dzhanibekov_intermediate_axis_fsot_panel_benchmark.json",
     "dzhanibekov_doc": "docs/DZHANIBEKOV_FSOT_RESPONSE.md",
@@ -80,7 +88,10 @@
     "empirical_claim_evidence": "docs/EMPIRICAL_CLAIM_EVIDENCE.md",
     "mathlib_campaign": "docs/MATHLIB_REDERIVATION_CAMPAIGN.md",
     "false_densify_remediated": true,
-    "reality_os_sibling": "https://github.com/dappalumbo91/FSOT-Reality-OS"
+    "reality_os_sibling": "https://github.com/dappalumbo91/FSOT-Reality-OS",
+    "object_scoring": "docs/OBJECT_SCORING.md",
+    "genetics_claim_evidence": "docs/GENETICS_CLAIM_EVIDENCE.md",
+    "casp_cameo_blind": "docs/CASP_CAMEO_BLIND_PROTOCOL.md"
   },
   "sync_rule": "After any densify / new panel / multiprover / Mathlib run: python scripts/build_repo_status_snapshot.py && python scripts/build_skeptic_replication_kit.py then update README headlines if green count or multiprover flags change. See docs/REPO_SYNC_AND_EXPANSION_CHECKLIST.md"
 }

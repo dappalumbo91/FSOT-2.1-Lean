@@ -16,6 +16,9 @@ This is **one theory**, pin **D1D38A**. Siblings are folds, not other laws.
 | Scientist | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) | [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) |
 | Mathematician | [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md) | `FSOT/Formal/Scalar.lean` |
 | ToE checklist | [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) | Label A now · Label B T1–T6 frozen |
+| Standpoint / laws | [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md) | [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) — engine + discovered, not more domains |
+| Isolated residuals | [`ISOLATED_RESIDUALS.md`](ISOLATED_RESIDUALS.md) | Ugly numbers diagnosed, **not** stuffed into 0.5% |
+| FRB orifice | [`FRB_ORIFICE.md`](FRB_ORIFICE.md) | Saloon-door vs paper-rip; not local sky density |
 
 ---
 
@@ -50,8 +53,8 @@ substance / scale
 | Extensions | `data/extension_domains_manifest.yaml` |
 | Family tree (cores + gaps) | [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) · `data/domain_family_tree.json` |
 | Atlas (named rows) | `data/publication/domain_atlas.csv` (~403) |
-| Green files | `data/benchmark_margin_audit.json` (**472/472**) |
-| Application protocol | [`APPLY.md`](APPLY.md) · MPCORB worked example `MPCORB_REFINEMENT_PROCESS.md` |
+| Green files | `data/benchmark_margin_audit.json` (**477/477**) |
+| Application protocol | [`APPLY.md`](APPLY.md) · catalog example [`MPCORB_REFINEMENT_PROCESS.md`](MPCORB_REFINEMENT_PROCESS.md) · wave example [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md) |
 
 ---
 
@@ -60,7 +63,7 @@ substance / scale
 | Folder | Meaning |
 |--------|---------|
 | `predictions/` | Frozen forecasts (SHA + timestamp). Do not rewrite centrals. |
-| `results/` | What landed later (literature, APIs, monitor). SH0ES Table 2 / unpublished \(cz/d\): `results/sh0es_unpublished_objects_outcome.json` |
+| `results/` | What landed later (literature, APIs, monitor). Dated-window scores: `results/dated_forecast_scores/REPORT.md`. SH0ES Table 2 / unpublished \(cz/d\): `results/sh0es_unpublished_objects_outcome.json` |
 | `results/siblings/` | Genetics product + Quantum fold headlines |
 
 ---

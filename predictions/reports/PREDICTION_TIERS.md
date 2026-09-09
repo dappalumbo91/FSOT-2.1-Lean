@@ -1,6 +1,6 @@
 # Prediction tiers (A–D)
 
-*Generated 2026-08-25T00:07:42.051914+00:00 · pin D1D38A*
+*Generated 2026-09-08T00:26:16.038497+00:00 · pin D1D38A*
 
 Separate high-weight contested survey predictions from atlas regression holds and scaffold/speculation so public communication stays honest.
 
@@ -21,12 +21,12 @@ Separate high-weight contested survey predictions from atlas regression holds an
 
 | Hand PREDs by tier | Count |
 |--------------------|------:|
-| A | 17 |
+| A | 29 |
 | B | 0 |
-| C | 18 |
+| C | 26 |
 | D | 22 |
 
-| Tier A enumerated IDs (unique) | 170 |
+| Tier A enumerated IDs (unique) | 182 |
 
 ## Tier A — contested / public survey (headline)
 
@@ -49,6 +49,18 @@ Separate high-weight contested survey predictions from atlas regression holds an
 | `PRED-052` | hand_prereg | chime_frb_dm_excess_hold | 200.0 | pc_cm3_excess |
 | `PRED-053` | hand_prereg | jwst_highz_abundance_panel_hold | 0.5 | pooled_median_error_pct_ceiling |
 | `PRED-057` | hand_prereg | slow_fast_rupture_one_valve | 1.0 | same_valve_classifier |
+| `PRED-066` | hand_prereg | exoplanet_architecture_class_hold | 0.5 | pooled_median_error_pct_ceiling |
+| `PRED-067` | hand_prereg | gwtc_chirp_mass_class_hold | 0.5 | pooled_median_error_pct_ceiling |
+| `PRED-070` | hand_prereg | ckm_V_ud | 0.9743242085724285 | magnitude |
+| `PRED-071` | hand_prereg | ckm_V_tb | 0.9991224621900914 | magnitude |
+| `PRED-072` | hand_prereg | ckm_delta_rad | 1.147015328140754 | rad |
+| `PRED-073` | hand_prereg | pmns_sin2_theta_12 | 0.3069853966078061 | sin2 |
+| `PRED-074` | hand_prereg | pmns_sin2_theta_13 | 0.021999342006699705 | sin2 |
+| `PRED-075` | hand_prereg | alpha_s_MZ | 0.11790879142834312 | coupling |
+| `PRED-076` | hand_prereg | frb_dm_same_sky_density_kernel | 1.0 | same_kernel_classifier |
+| `PRED-084` | hand_prereg | frb_orifice_repeater_vs_rip | 1.0 | orifice_classifier |
+| `PRED-077` | hand_prereg | gw_siren_h0_mid_sector | 70.024205 | km/s/Mpc |
+| `PRED-082` | hand_prereg | gaia_parallax_class_hold | 0.5 | pooled_median_error_pct_ceiling |
 | `PRED-H0-planck_cmb_local` | h0_multi_tool | planck_cmb_local | 67.383958 | km/s/Mpc |
 | `PRED-H0-tdcosmo_conservative` | h0_multi_tool | tdcosmo_conservative | 67.436763 | km/s/Mpc |
 | `PRED-H0-planck_plus_bao_combo` | h0_multi_tool | planck_plus_bao_combo | 67.647983 | km/s/Mpc |
@@ -101,6 +113,14 @@ See `reports/H0_MULTI_TOOL_PREDICTIONS.md`, `H0_SIGHTLINE_PREDICTIONS.md`, `CCHP
 | `PRED-062` | Space_Weather | solar_quiet_storm_two_sectors |
 | `PRED-063` | Climate_Science | climate_station_and_marine_hold |
 | `PRED-064` | Seismology | dated_fluid_pressure_forecasts |
+| `PRED-065` | NOAA_Coastal_Tides | noaa_coastal_tides_residual_hold |
+| `PRED-068` | GBIF_Species_Occurrence | gbif_occurrence_class_hold |
+| `PRED-069` | Epidemiology_Panel | epidemiology_class_hold |
+| `PRED-078` | Hydrology | hydrology_flood_quiet_two_sectors |
+| `PRED-079` | MPCORB_Minor_Planet_Catalog | mpcorb_nea_class_hold |
+| `PRED-080` | Grace_Cryosphere | grace_greenland_mass_delta_hold |
+| `PRED-081` | Agriculture_Agroecology | agriculture_season_class_hold |
+| `PRED-083` | Paleoclimate_Panel | paleoclimate_class_hold |
 
 ## Tier D — scaffold / high-speculation (hand)
 

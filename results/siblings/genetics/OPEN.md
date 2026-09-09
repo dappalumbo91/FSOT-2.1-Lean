@@ -18,7 +18,7 @@ This list is what to clear next. One mechanism at a time. Pin `D1D38A`. 0 free p
 | Joint `predict_system` | **0.013 Å** protein · DNA C1′ **0.016 Å** · SC **0.016 Å** — apparatus min now matches the DNA job. |
 | Protein–RNA | U1A prot **0.23 Å** · RNA seed C1′ **0.28 Å** (9 nt). Full hairpin register still Superposed. |
 | Ligand site | trypsin–BEN **0.60 Å** (was 0.24 on 3PTB/1PPH). First-shell springs; not a Cα freeze item. |
-| Organism 3-D / lineage | Proxy 7 µm **0.92**, lineage **0.78 / 0.86**. Dense 1950 GT: 7 µm **0.83**, 12 µm **0.998**, lineage **0.69 / 0.76**. Density ~20k vs 25–31k estimated. |
+| Organism 3-D / lineage | Proxy find **1.00**, follow **1.00 / 1.00**, Jaccard **1.00**. Dense find **0.96**, follow **0.84 / 0.94**, Jaccard **0.82 (adj. 0.83)** — TP 1538 / FP 6 / FN 333. Leftover-length dests yield when 2-opt cannot swap. Kaggle U-Net leftover public **0.821** (not Final; 0.848 holds). |
 
 ## Historical wet-lab (not the 10-protein freeze)
 
@@ -28,6 +28,18 @@ Medical expansion: `docs/MEDICAL_PLATFORM.md`. Experimental PGx: **10/10** (`scr
 
 - **P72R** → `common_polymorphism` (pop AF ≥ 1/φ³).
 - **HBB E122Q** (Hb D-Punjab) is not a failed driver: mid-conservation, α1β1 interface, compound-sickle apparatus. Catalog role is `context_dependent`. Solo call stays `uncertain`. PGx: `on_ppi_site` on 1A3N B121.
+
+## CASP / CAMEO blind (OPEN — Grok Build owns the run)
+
+There is **no** literature hit that is the 0.13 Å product. CASP16 (prot.70076 / prot.70031), AF3 ensembles, and ~1.24 Å FSC maps are **other objects**. Protocol (do not skip):
+
+1. Freeze the 2026-08-17 product path (no MDS fold).
+2. Register target IDs + sequences + formula-pack SHA **before** eval coordinates are used.
+3. Two tracks: product (homologs except eval PDB) vs no-map (F01–F15 only, no 3-D).
+4. Report product / AF / cryo-EM FSC in **three columns**.
+5. Kill: blind product median > AF median on that set; freeze-winner > 3 Å; fitted spring.
+
+Hub copy of the protocol: Lean `docs/CASP_CAMEO_BLIND_PROTOCOL.md`.
 
 ## Anti-goals (do not “fix” these)
 

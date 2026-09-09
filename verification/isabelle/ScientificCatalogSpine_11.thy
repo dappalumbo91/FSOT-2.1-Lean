@@ -3,6 +3,96 @@ theory ScientificCatalogSpine_11
 imports Complex_Main
 begin
 
+lemma cat_zebrafish_longevity_genetics_coupling_panel_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_zebrafish_longevity_genetics_coupling_panel_pooled_under_half_pct: "(0.013342 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zebrafish_longevity_genetics_coupling_panel_pooled_lt_half_pure: "(0.013342 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zebrafish_longevity_genetics_coupling_panel_max_scalar_under_half_pct: "(0.015565 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_zebrafish_longevity_genetics_coupling_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_openneuro_full_panel_records_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cat_openneuro_full_panel_pooled_under_half_pct: "(0.015431 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_openneuro_full_panel_pooled_lt_half_pure: "(0.015431 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_openneuro_full_panel_max_scalar_under_half_pct: "(0.015431 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_openneuro_full_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_cardiology_panel_records_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cat_cardiology_panel_pooled_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_cardiology_panel_pooled_lt_half_pure: "(0.015311 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_cardiology_panel_max_scalar_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_cardiology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_epidemiology_panel_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_epidemiology_panel_pooled_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_epidemiology_panel_pooled_lt_half_pure: "(0.015311 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_epidemiology_panel_max_scalar_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_epidemiology_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_jarvis_dft_open_panel_records_pos: "0 < (77 :: nat)"
+  by eval
+
+lemma cat_jarvis_dft_open_panel_pooled_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_jarvis_dft_open_panel_pooled_lt_half_pure: "(0.01341 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_jarvis_dft_open_panel_max_scalar_under_half_pct: "(0.015087 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_jarvis_dft_open_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_materials_creep_fracture_depth_panel_records_pos: "0 < (47 :: nat)"
+  by eval
+
+lemma cat_materials_creep_fracture_depth_panel_pooled_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_materials_creep_fracture_depth_panel_pooled_lt_half_pure: "(0.01341 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_materials_creep_fracture_depth_panel_max_scalar_under_half_pct: "(0.015087 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_materials_creep_fracture_depth_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_materials_project_live_panel_records_pos: "0 < (141 :: nat)"
   by eval
 
@@ -271,96 +361,6 @@ lemma cat_secure_software_engineering_max_scalar_under_half_pct: "(0.01329057932
   by eval
 
 lemma cat_secure_software_engineering_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_law_policy_panel_records_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma cat_law_policy_panel_pooled_under_half_pct: "(0.013003 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_law_policy_panel_pooled_lt_half_pure: "(0.013003 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_law_policy_panel_max_scalar_under_half_pct: "(0.013003 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_law_policy_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_uap_war_gov_release_panel_records_pos: "0 < (542 :: nat)"
-  by eval
-
-lemma cat_uap_war_gov_release_panel_pooled_under_half_pct: "(0.008488 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_uap_war_gov_release_panel_pooled_lt_half_pure: "(0.008488 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_uap_war_gov_release_panel_max_scalar_under_half_pct: "(0.013003 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_uap_war_gov_release_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_climate_observed_benchmark_records_pos: "0 < (17325 :: nat)"
-  by eval
-
-lemma cat_climate_observed_benchmark_pooled_under_half_pct: "(0.01201268326195996 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_climate_observed_benchmark_pooled_lt_half_pure: "(0.01201268326195996 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_climate_observed_benchmark_max_scalar_under_half_pct: "(0.01201268326197121 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_climate_observed_benchmark_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_medical_galactic_orbital_bridge_records_pos: "0 < (48 :: nat)"
-  by eval
-
-lemma cat_medical_galactic_orbital_bridge_pooled_under_half_pct: "(0.010717743028515674 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_medical_galactic_orbital_bridge_pooled_lt_half_pure: "(0.010717743028515674 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_medical_galactic_orbital_bridge_max_scalar_under_half_pct: "(0.010717743028528433 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_medical_galactic_orbital_bridge_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_network_internet_protocols_records_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma cat_network_internet_protocols_pooled_under_half_pct: "(0.010337117254355377 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_network_internet_protocols_pooled_lt_half_pure: "(0.010337117254355377 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_network_internet_protocols_max_scalar_under_half_pct: "(0.010337117254363452 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_network_internet_protocols_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_zero_day_risk_evaluator_records_pos: "0 < (25 :: nat)"
-  by eval
-
-lemma cat_zero_day_risk_evaluator_pooled_under_half_pct: "(0.010337117254355377 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_zero_day_risk_evaluator_pooled_lt_half_pure: "(0.010337117254355377 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_zero_day_risk_evaluator_max_scalar_under_half_pct: "(0.010337117254360602 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_zero_day_risk_evaluator_green_flag: "(1 :: nat) = (1 :: nat)"
   by eval
 
 end

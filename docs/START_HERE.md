@@ -29,6 +29,7 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 |----------|------------|
 | Curious lay reader | [`CONCEPTS.md`](CONCEPTS.md) → [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) |
 | Applying FSOT in a field | [`APPLY.md`](APPLY.md) · directory: [`SYSTEM_DIRECTORY.md`](SYSTEM_DIRECTORY.md) |
+| Step-back / ToE standpoint | [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md) · laws: [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) |
 | Working scientist / engineer | [`CONCEPTS.md`](CONCEPTS.md) → [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) |
 | PhD / formal methods | Math key §14 + [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) |
 | Here to break it | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
@@ -62,9 +63,10 @@ Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 | BH→WH / H₀ kill map | [`docs/BH_WH_CLAIM_EVIDENCE.md`](BH_WH_CLAIM_EVIDENCE.md) | 25-tool bubble bleed; SH0ES stays 1% on the 2.5% band |
 | SH0ES ladder chain | [`docs/SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) | Chain **72.856 vs 73.04 (0.252%)**; class row stays 73.773; Table 2 full NIR + unpublished \(cz/d\) |
 | Domain family tree | [`docs/DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) | 35 cores by \(D_{\mathrm{eff}}\); where to expand between scales |
-| Between-scale interconnects | [`docs/SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | Five gaps filled, pooled **0.028%**; zebrafish/genetics still sibling |
-| Earth-system predictions | [`predictions/reports/EARTH_SYSTEM_PREDICTIONS.md`](../predictions/reports/EARTH_SYSTEM_PREDICTIONS.md) | Weather/seismic/volcanic/solar **class** locks — not event dates |
-| Dated fluid forecasts | [`predictions/reports/DATED_FLUID_FORECASTS.md`](../predictions/reports/DATED_FLUID_FORECASTS.md) | Located windows from live pressure cells; score after `valid_to` |
+| Between-scale interconnects | [`docs/SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | Adjacent folds + D9 perception, pooled **0.026%**; zebrafish/genetics still sibling |
+| Earth-system predictions | [`predictions/reports/EARTH_SYSTEM_PREDICTIONS.md`](../predictions/reports/EARTH_SYSTEM_PREDICTIONS.md) | Weather/seismic/volcanic/solar class locks + dated cell windows |
+| Prediction expansion map | [`predictions/reports/PREDICTION_EXPANSION_MAP.md`](../predictions/reports/PREDICTION_EXPANSION_MAP.md) | Remaining dated / survey / bridge slots given domains already green |
+| Dated fluid forecasts | [`predictions/reports/DATED_FLUID_FORECASTS.md`](../predictions/reports/DATED_FLUID_FORECASTS.md) | Located windows; scores in [`../results/dated_forecast_scores/REPORT.md`](../results/dated_forecast_scores/REPORT.md) |
 | Weather product approach | [`docs/WEATHER_MONITORING_APPROACH.md`](WEATHER_MONITORING_APPROACH.md) | Math + loop for a later always-on weather sibling |
 | Conjugate / antimatter | [`docs/MATTER_ANTIMATTER_CLAIM_EVIDENCE.md`](MATTER_ANTIMATTER_CLAIM_EVIDENCE.md) | \(\eta\) 0.004%; CPT identities |
 | Genetics sibling freeze | [`docs/GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) | 0.13 Å vs AF 0.47 Å (2026-08-17); MDS retired |

@@ -1,84 +1,126 @@
 {
-  "scored_at": "2026-08-25T00:06:46.793746+00:00",
+  "scored_at": "2026-09-08T00:43:16.377729+00:00",
   "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25_issue.json",
   "rows": [
     {
       "id": "FCAST-EQ-20260825-01",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "hold",
+      "n_hits": 1,
+      "hits": [
+        {
+          "id": "us7000tbyu",
+          "mag": 5,
+          "place": "60 km NNW of Ende, Indonesia",
+          "lat": -8.3425,
+          "lon": 121.4343,
+          "km": 9.117170055804108
+        }
+      ],
+      "expect_event": true
     },
     {
       "id": "FCAST-EQ-20260825-02",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
     },
     {
       "id": "FCAST-EQ-20260825-03",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
     },
     {
       "id": "FCAST-EQ-20260825-04",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
     },
     {
       "id": "FCAST-EQ-20260825-05",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
     },
     {
       "id": "FCAST-EQ-20260825-06",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
     },
     {
       "id": "FCAST-EQ-20260825-07",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
     },
     {
       "id": "FCAST-EQ-20260825-08",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
     },
     {
       "id": "FCAST-WX-20260825-01",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "hold",
+      "n_obs": 471,
+      "saw_storm": true,
+      "expect_storm": true,
+      "buoy_id": "RDDA2"
     },
     {
       "id": "FCAST-WX-20260825-02",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "hold",
+      "n_obs": 288,
+      "saw_storm": true,
+      "expect_storm": true,
+      "buoy_id": "WRXA2"
     },
     {
       "id": "FCAST-WX-20260825-03",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "hold",
+      "n_obs": 286,
+      "saw_storm": true,
+      "expect_storm": true,
+      "buoy_id": "UQXA2"
     },
     {
       "id": "FCAST-WX-20260825-04",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "hold",
+      "n_obs": 287,
+      "saw_storm": true,
+      "expect_storm": true,
+      "buoy_id": "KOZA2"
     },
     {
       "id": "FCAST-WX-20260825-05",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "hold",
+      "n_obs": 288,
+      "saw_storm": true,
+      "expect_storm": true,
+      "buoy_id": "DHXA2"
     },
     {
       "id": "FCAST-SOL-20260825-01",
       "result": "awaiting",
-      "notes": "window still open"
+      "notes": "no SWPC Kp in window"
     },
     {
       "id": "FCAST-VOLC-20260825-01",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
     }
   ],
-  "n_hold": 0,
-  "n_kill": 0,
-  "n_awaiting": 15
+  "n_hold": 6,
+  "n_kill": 8,
+  "n_awaiting": 1
 }

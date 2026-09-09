@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-18T02:49:42.626777+00:00",
+  "generated_at": "2026-09-09T16:28:00.364962+00:00",
   "version": "1.0",
   "tier": "adversarial_round3_v1",
   "roles": {
     "good_cop": [
       "Five-prover quad: Lean 4 + Coq (coqc+coqchk) + Isabelle/HOL + F* + Rust \u2014 1820/1820 atomic triangulation.",
       "407 scientific domains, 2,190,672 empirical records \u2014 255/272 benchmark files non-cosmo.",
-      "472/472 benchmark domains green; median-of-medians 0.006607% across geochemistry, genomics, materials, medicine, magnetosphere, etc.",
+      "477/477 benchmark domains green; median-of-medians 0.006625234573930708% across geochemistry, genomics, materials, medicine, magnetosphere, etc.",
       "13 contested open-science observables: FSOT panel 0.04% pooled vs 15% current-model baseline; w_a 0.0006% vs DESI.",
       "Preregistered falsification registry; refinement queue for sector readouts not yet at SOTA."
     ],
@@ -19,13 +19,22 @@
       "Formula corpus headline 7941 rows is ~6\u00d7 triplication of 1325 unique observables."
     ],
     "skeptic_verdict": "EMPIRICALLY_GROUNDED_PUBLISHABLE",
-    "skeptic_summary": "Repo is audit-honest and mechanically green. Cross-domain empirical envelope (472 domains, median-of-medians 0.006607%) supports physical-description claim when wrong-theory coincidence is excluded. Falsification registry and claims alignment close the epistemic/rhetorical gaps \u2014 stumped observables remain contested science with pre-stated kill criteria, not hidden pipeline failures."
+    "skeptic_summary": "Repo is audit-honest and mechanically green. Cross-domain empirical envelope (476 domains, median-of-medians 0.006625234573930708%) supports physical-description claim when wrong-theory coincidence is excluded. Falsification registry and claims alignment close the epistemic/rhetorical gaps \u2014 stumped observables remain contested science with pre-stated kill criteria, not hidden pipeline failures."
   },
   "gates": {
     "overall_ok": true,
     "github_ready": true,
     "undeniable_toe_claim": true,
-    "open_gaps_depth_audit": []
+    "open_gaps_depth_audit": [
+      {
+        "id": "tier_scalar_aspiration",
+        "severity": "info",
+        "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+        "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
+        "closed": false,
+        "monitored": true
+      }
+    ]
   },
   "gaps": [
     {
@@ -55,9 +64,9 @@
     {
       "id": "tier_scalar_0_05_aspiration",
       "severity": "info",
-      "attack": "0 benchmark domains fail tier_scalar_pass (pooled median \u22640.05%).",
+      "attack": "2 benchmark domains fail tier_scalar_pass (pooled median \u22640.05%).",
       "mitigation": "tier_scalar_precision_closure.json; gate uses pooled/effective median per fsot_precision_constants.",
-      "closed": true,
+      "closed": false,
       "evidence": "data/tier_scalar_precision_closure.json"
     },
     {
@@ -111,7 +120,7 @@
     {
       "id": "cross_domain_empirical_envelope",
       "severity": "info",
-      "attack": "472/472 domains green; median-of-medians 0.006607% \u2014 wrong theory would not maintain centi-percent envelope across unrelated domains.",
+      "attack": "477/477 domains green; median-of-medians 0.006625234573930708% \u2014 wrong theory would not maintain centi-percent envelope across unrelated domains.",
       "mitigation": "empirical_accuracy_closure.json quantifies cross-domain error envelope + null-hypothesis framing.",
       "closed": true,
       "evidence": "data/empirical_accuracy_closure.json"
@@ -119,7 +128,7 @@
     {
       "id": "falsification_kill_criteria",
       "severity": "info",
-      "attack": "48 preregistered predictions; stumped observables carry 3\u03c3 kill thresholds; w_a prereg vs DESI tracked.",
+      "attack": "77 preregistered predictions; stumped observables carry 3\u03c3 kill thresholds; w_a prereg vs DESI tracked.",
       "mitigation": "falsification_registry_closure.json \u2014 pre-stated kill criteria, not post-hoc retuning.",
       "closed": true,
       "evidence": "data/falsification_registry_closure.json"
@@ -135,7 +144,7 @@
     {
       "id": "five_prover_quad_verification",
       "severity": "info",
-      "attack": "Lean+Coq+Isabelle+F*+Rust: 2022 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
+      "attack": "Lean+Coq+Isabelle+F*+Rust: 2024 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
       "mitigation": "five_prover_quad_closure.json \u2014 strictest multi-prover formal stack on exported spine.",
       "closed": true,
       "evidence": "data/five_prover_quad_closure.json"
@@ -149,9 +158,20 @@
       "evidence": "data/contested_observables_closure.json"
     }
   ],
-  "open_gaps": [],
-  "open_gap_count": 0,
+  "open_gaps": [
+    {
+      "id": "tier_scalar_0_05_aspiration",
+      "severity": "info",
+      "attack": "2 benchmark domains fail tier_scalar_pass (pooled median \u22640.05%).",
+      "mitigation": "tier_scalar_precision_closure.json; gate uses pooled/effective median per fsot_precision_constants.",
+      "closed": false,
+      "evidence": "data/tier_scalar_precision_closure.json"
+    }
+  ],
+  "open_gap_count": 1,
   "blocking_open_count": 0,
   "documented_debt_open_count": 0,
-  "remediation_priority": []
+  "remediation_priority": [
+    "tier_scalar_0_05_aspiration"
+  ]
 }

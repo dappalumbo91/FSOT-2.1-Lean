@@ -4,7 +4,7 @@
 
 **Authority:** pin **D1D38A** · zero free parameters · `docs/TOE_CLAIM_BOUNDARIES.md` T5  
 **Frozen artifact:** `predictions/toe_prereg_freeze.json` (SHA-256 bundle)  
-**Prereg manifest:** `predictions/preregistered_predictions_manifest.yaml` (PRED-001–041+)  
+**Prereg manifest:** `predictions/preregistered_predictions_manifest.yaml` (PRED-001–084)  
 **Future ledger:** `predictions/contested_future_observation_ledger.json`
 
 ---
@@ -15,6 +15,7 @@
 2. **No silent retune.** Changing an `fsot_predicted` value requires a **new** `freeze_id`. The old hash remains in git history as the risk record.
 3. **Kill criteria are executable.** A failed kill is a ledger event (falsification registry), not a narrative rescue.
 4. **Contested ≠ pipeline failure.** H₀ tension, S₈, wₐ, N_eff, cusp-core, BBN lithium, FRB DM excess remain **open science problems** with FSOT seed readouts; see contested closure.
+5. **Score the named object.** JWST Perfect Host 73.49 is not PRED-001; DES Y6-alone S8 is not the PRED-002 kill; Euclid CLOE FoM is not a measured S₈/H₀/wₐ. See [`OBJECT_SCORING.md`](OBJECT_SCORING.md).
 
 ---
 

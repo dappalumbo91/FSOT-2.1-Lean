@@ -1,10 +1,10 @@
 # FSOT Skeptic Replication Kit
 
-*15-minute verification path · 2026-08-24 · commit `c775476f046a`*
+*15-minute verification path · 2026-09-09 · pin D1D38A*
 
 Run this if you want to **break FSOT fast** — not read 12,000 lines of narrative first.
 
-**Live authority:** pin **D1D38A** (match=True) · green **476/476** · multiprover overall_ok=True  
+**Live authority:** pin **D1D38A** (match=True) · green **477/477** · multiprover overall_ok=True  
 Full human guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) · audience map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) · math: [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md)
 
 Picture first (do not silo H₀): [`CONCEPTS.md`](CONCEPTS.md) C2–C3, C8, C10 · [`FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md)  
@@ -47,11 +47,11 @@ python scripts/audit_parameter_count.py
 | Check | Expected |
 |-------|----------|
 | Pin | **D1D38A** with `pin_match: true` in `docs/CURRENT_STATUS.md` |
-| Benchmark green | **476/476** fail 0 (`data/benchmark_margin_audit.json`) |
+| Benchmark green | **477/477** fail 0 (`data/benchmark_margin_audit.json`) |
 | Gate | pooled median ≤ **0.5%** |
 | Parameter audit | **ZERO_FREE** |
 | Label A / B (if toe report present) | A=True, B=True |
-| C_thin (records < 20) | **15** — mostly process/certificate spines, not missing physics |
+| C_thin (records < 20) | **13** — mostly process/certificate spines, not missing physics |
 
 Optional one-command publication bundle:
 
@@ -103,7 +103,8 @@ Frozen files in `predictions/` are **not** rewritten after data lands. Score in 
 | Ladder mixture | `results/sh0es_ladder_chain_outcome.json` | **72.856 vs 73.04 (0.252%)** |
 | Cepheid PL | `results/cepheid_pl_interconnect_outcome.json` | **0.135%** GREEN, no fitted \(b\) |
 | Table 2 + \(cz/d\) | `results/sh0es_unpublished_objects_outcome.json` | Full NIR **0.141%**; \(cz/d\) **68.623** is local flow, not SH0ES |
-| Between-scale gaps | `results/between_scale_interconnect_outcome.json` | Five adjacent-fold fills, pooled **0.028%** |
+| Between-scale gaps | `results/between_scale_interconnect_outcome.json` | Adjacent-fold fills, pooled **0.026%** GREEN (1061 tight) |
+| Live \(\lvert S_i/S_j\rvert\) vs 1 (the 30% class) | same file, `perception_view` | Closed form \(\lvert 1+T_{1,i}\rvert/\lvert 1+T_{1,j}\rvert\). T3 leftover **0.000%**. vs 1 is **not** a 0.5% central. |
 
 ```bash
 python scripts/build_sh0es_ladder_chain_benchmark.py
@@ -127,6 +128,8 @@ python scripts/run_cross_proof_verification.py
 3. Authority pin leaves D1D38A without a documented migration.
 4. Preregistered prediction PRED rows violated after manifest-locked registration.
 5. Parameter audit finds per-observable least-squares tuning.
+
+**Not a falsifier:** live \(|S_i|/|S_j|\) vs 1 at tens of percent (QM/atomic 29.86%, CM/thermo 57%, …). That is \(T_1\) perception at each fold (D9). Adjacent same-look \(D\) vs 1 is 0.046%. Stuffing \(\sqrt{\varphi}\) onto the 30%, retuning \(\delta\psi\), or gating vs 1 at 0.5% would be the dishonest move.
 6. Someone retunes `predictions/sector_h0_seed.json` ρ to stuff SH0ES 73.04 into the 0.5% gate.
 7. Someone 0.5%-gates an individual nearby \(H_0=cz/d\).
 8. Identity pads (`φ=φ`) counted as empirical depth.

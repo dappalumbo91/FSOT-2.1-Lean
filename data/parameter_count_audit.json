@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:45:14.207399+00:00",
+  "generated_at": "2026-09-09T16:11:15.702344+00:00",
   "headline_claim": "zero free parameters",
   "audit_verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes",
   "parameter_model": "Constants and domain-route coordinates derive from seeds (\u03c0, e, \u03c6, \u03b3, G). The 35\u00d75 domain table is the fractal routing spine \u2014 not a per-observable fit vector.",
@@ -292,11 +292,11 @@
       }
     ]
   },
-  "domain_route_note": "175 core route slots + 1113 extension route slots = 1288 preregistered coordinates (D_eff, \u03b4\u03c8, recent_hits, \u03b4\u03b8, C) \u2014 seed-derived folds, not least-squares tunables.",
+  "domain_route_note": "175 core route slots + 1125 extension route slots = 1300 preregistered coordinates (D_eff, \u03b4\u03c8, recent_hits, \u03b4\u03b8, C) \u2014 seed-derived folds, not least-squares tunables.",
   "extension_domains": {
-    "extension_domain_count": 371,
+    "extension_domain_count": 375,
     "per_extension_tunable_fields": 3,
-    "total_extension_slots": 1113,
+    "total_extension_slots": 1125,
     "domains": [
       {
         "domain": "AI_Galactic_Orbital_Bridge",
@@ -387,6 +387,12 @@
         "D_eff": 18,
         "delta_psi": 0.88,
         "recent_hits": 2
+      },
+      {
+        "domain": "Between_Scale_Interconnects",
+        "D_eff": 17,
+        "delta_psi": 1.0,
+        "recent_hits": 1
       },
       {
         "domain": "Bibliography_Corpus_Panel",
@@ -495,6 +501,12 @@
         "D_eff": 18,
         "delta_psi": 1.2,
         "recent_hits": 3
+      },
+      {
+        "domain": "Cepheid_PL_Interconnect",
+        "D_eff": 20,
+        "delta_psi": 1.0,
+        "recent_hits": 1
       },
       {
         "domain": "Certified_Agent_Formal_Panel",
@@ -2009,6 +2021,18 @@
         "recent_hits": 2
       },
       {
+        "domain": "SH0ES_Full_Sample",
+        "D_eff": 20,
+        "delta_psi": 1.0,
+        "recent_hits": 1
+      },
+      {
+        "domain": "SH0ES_Ladder_Chain",
+        "D_eff": 20,
+        "delta_psi": 1.0,
+        "recent_hits": 1
+      },
+      {
         "domain": "SH0ES_Refined",
         "D_eff": 25,
         "delta_psi": 1.0,
@@ -2609,8 +2633,8 @@
     }
   ],
   "literal_coefficient_count": 16,
-  "route_slot_count": 1288,
-  "empirical_tunable_slot_estimate": 1328,
+  "route_slot_count": 1300,
+  "empirical_tunable_slot_estimate": 1340,
   "honest_framing": "FSOT uses a fixed closed-form constant spine (\u03c6, e, \u03c0, \u03b3, G) with deterministic per-domain route coordinates. Zero free parameters means: no post-hoc dial added when a prediction misses \u2014 routes are declared upfront.",
   "what_is_zero_free": [
     "All constants from five seeds \u2014 no fitted physics constants",

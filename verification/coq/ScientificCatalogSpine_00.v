@@ -264,6 +264,26 @@ Lemma cat_toe_gr_sm_deep_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
 
+Lemma cat_between_scale_interconnects_records_pos : (0 < 1118)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+
+Lemma cat_between_scale_interconnects_pooled_under_half_pct : ((0.02620375479862548%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_between_scale_interconnects_pooled_lt_half_pure : ((0.02620375479862548%R)) < ((0.5%R)).
+Proof. lra. Qed.
+
+
+Lemma cat_between_scale_interconnects_max_scalar_under_half_pct : ((0.4746956066563968%R)) < (0.5%R).
+Proof. lra. Qed.
+
+
+Lemma cat_between_scale_interconnects_green_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+
 Lemma cat_creative_arts_math_spine_records_pos : (0 < 56)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -461,25 +481,5 @@ Proof. lra. Qed.
 
 
 Lemma cat_dark_sector_open_problems_green_flag : (1 = 1)%nat.
-Proof. reflexivity. Qed.
-
-
-Lemma cat_desi_edr_table_slice_open_records_pos : (0 < 22)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-
-Lemma cat_desi_edr_table_slice_open_pooled_under_half_pct : ((0.010049%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_edr_table_slice_open_pooled_lt_half_pure : ((0.010049%R)) < ((0.5%R)).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_edr_table_slice_open_max_scalar_under_half_pct : ((0.3685028152534126%R)) < (0.5%R).
-Proof. lra. Qed.
-
-
-Lemma cat_desi_edr_table_slice_open_green_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

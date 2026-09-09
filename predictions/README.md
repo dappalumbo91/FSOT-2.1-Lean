@@ -9,8 +9,9 @@
 |-----|-----|
 | **[`EXPLAINED.md`](EXPLAINED.md)** | Full explanation through the model (read this first) |
 | **[`NEXT_LAYERS.md`](NEXT_LAYERS.md)** | **What to watch now + which prediction layer to expand next** |
-| **[`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md)** | Weather / seismic / volcanic / solar class locks (not dates) |
-| **[`reports/SCIENTIST_OPEN_QUESTIONS.md`](reports/SCIENTIST_OPEN_QUESTIONS.md)** | Questions scientists argue about → solved / PRED / refused |
+| **[`reports/PREDICTION_EXPANSION_MAP.md`](reports/PREDICTION_EXPANSION_MAP.md)** | **Where else we can predict** given domains already green |
+| **[`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md)** | Weather / seismic / volcanic / solar class locks |
+| **[`reports/SCIENTIST_OPEN_QUESTIONS.md`](reports/SCIENTIST_OPEN_QUESTIONS.md)** | Questions scientists argue about → solved / PRED / next layer / refused |
 | **[`reports/DATED_FLUID_FORECASTS.md`](reports/DATED_FLUID_FORECASTS.md)** | This issue’s located calendar windows (EQ / WX / solar / volcanic) |
 | **[`reports/PREDICTION_TIERS.md`](reports/PREDICTION_TIERS.md)** | **Tier A–D split** (contested vs atlas vs scaffold) |
 | **[`public/ONE_PAGER.md`](public/ONE_PAGER.md)** | One-screen summary |
@@ -32,7 +33,7 @@
 
 | Path | Role |
 |------|------|
-| `preregistered_predictions_manifest.yaml` | Hand-curated PRED-001… locks |
+| `preregistered_predictions_manifest.yaml` | Hand-curated PRED-001–084 locks |
 | `prediction_monitor_registry.yaml` | Survey watches + kill criteria |
 | `sector_h0_seed.json` | Multi-tool H₀ density seeds (BH→WH bubble) |
 | `h0_multi_tool_predictions.json` | Per-instrument H₀ predictions |
@@ -64,8 +65,11 @@ python scripts/build_catalog_prediction_layer.py
 python scripts/build_higgs_prediction_layer.py
 python scripts/build_prediction_tiers.py
 python scripts/build_earth_system_prediction_layer.py
+python scripts/build_prediction_expansion_map.py
 python scripts/issue_earth_fluid_forecasts.py
 python scripts/score_earth_fluid_forecasts.py
+python scripts/build_dated_forecast_score_report.py
+python scripts/build_prediction_expansion_map.py
 python scripts/run_prediction_monitor.py
 ```
 

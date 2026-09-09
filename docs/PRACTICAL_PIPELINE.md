@@ -23,7 +23,7 @@ python scripts/build_practical_pipeline_bundle.py
 
 ## 2. Demonstrate unification (X-style predictions)
 
-**35 preregistered predictions** locked in `predictions/preregistered_predictions_manifest.yaml` (PRED-001–041).
+**76 preregistered predictions** locked in `predictions/preregistered_predictions_manifest.yaml` (PRED-001–084).
 
 Headline locks:
 - **PRED-001** H₀ bridge (Planck ↔ SH0ES)
@@ -61,7 +61,7 @@ Older intuitive observations explicitly mapped:
 | fluid_reality | measured | PRED-024/025 FPC tau + contested-sector pooled median |
 | observer_participation | measured | quirk_mod gate; live E_con 20.003601 vs 20.0 W (0.018%) |
 | as_above_so_below | measured | 472-file green envelope pooled median; cross-domain coupling simulation |
-| hidden_thing_revealed | measured | PRED-001–041 locked manifest; skeptic replication kit 15-min path |
+| hidden_thing_revealed | measured | PRED-001–084 locked manifest; skeptic replication kit 15-min path |
 | dual_identity_hybrid | scaffold | Living_FSOT_Hardware_Panel + consciousness lean route credibility |
 | local_sovereign_tech | policy | All reproduction offline-capable via vendor/ caches |
 | warp_and_portals_symbolic | interpretive | warp_bh_wh_portal benchmark green |

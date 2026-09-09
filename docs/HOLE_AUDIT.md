@@ -1,7 +1,7 @@
 # Hole audit — fill by the paradigm, not by siloed habit
 
-**Date:** 2026-08-18  
-**Fill pass:** registry 48/48 · green **476 / 476** · between-scale interconnects **0.028%** · SH0ES class 1% stays on the 2.5% band on purpose · family tree + skeptic expansion · Genetics freeze **2026-08-17** (MDS retired) · cross-proof **overall_ok**  
+**Date:** 2026-08-31  
+**Fill pass:** registry **77** hand PREDs · green **477 / 477** · dated windows scored (WX/tides/solar) · SH0ES class 1% stays on the 2.5% band on purpose · Genetics freeze **2026-08-17** (MDS retired) · cross-proof **overall_ok**  
 **Stance:** This is a real ToE *attempt* under frozen Label A/B. Holes are missing **interfaces, data, or articulation** — not invitations to add free parameters.
 
 Counts: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Apply protocol: [`APPLY.md`](APPLY.md).
@@ -12,13 +12,13 @@ Counts: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Apply protocol: [`APPLY.md
 
 | Item | Evidence |
 |------|----------|
-| Label A (A1–A6) | pin, routes, **476/476** green, multiprover `overall_ok`, falsification registry, skeptic kit |
+| Label A (A1–A6) | pin, routes, **477/477** green, multiprover `overall_ok`, falsification registry, skeptic kit |
 | Label B T1–T6 as *checklist* | `data/toe_gap_closure_report.json` PASS |
 | BH→WH bubble H₀ | `scripts/bubble_bleed_physics.py` + 25 tool rows + Quantum replay |
 | Yin–yang valves | POOF / SUCTION in T3; ontology A1–A2 |
 | Compactification ceiling 25 | \(T_1\) \(\ln(D/25)\), \(T_3\) Chaos \((D-25)/25\) |
 | Predictions vs results split | `predictions/` frozen · `results/` outcomes |
-| Count vocabulary | 472 files ≠ 407 names ≠ 2022 atomic |
+| Count vocabulary | 477 files ≠ 407 names ≠ 2024 atomic |
 
 ---
 
@@ -53,13 +53,14 @@ Do these with **real measured data** and the mismatch rule (wrong \(D_{\mathrm{e
 | **SH0ES 1% class bin** | **Filled.** Ladder chain **72.856 vs 73.04 (0.252%)**; anchors vs Freedman **0.172%**. Frozen class row stays 73.773. [`../results/sh0es_ladder_chain_outcome.json`](../results/sh0es_ladder_chain_outcome.json) | chain median > 0.5%, or anyone retunes ρ to hit 73.04 |
 | **Cepheid PL internals** | **Filled.** Optical + NIR \(W_H\) (\(R_H=\mathrm{POOF}\,e\,C_{\mathrm{eff}}\) vs 0.4 at 0.110%); host \(\mu\) vs Li+2024 TRGB mean +0.004 mag; N4258 crowding 0.002 mag (T1). [`CEPHEID_PL_PHYSICS.md`](CEPHEID_PL_PHYSICS.md) | tight-scalar median > 0.5%, or a fitted \(b\)/\(Z_W\) |
 | **Full 42-host NIR + unpublished \(cz/d\)** | **Filled.** Table 2 **3130** Cepheids / 37 SN hosts; HST LMC intercept **0.160%**; \(\mu\) vs Table 6 **0.141%**. \(cz/d\) IVW **68.623 vs 73.04** is local flow, not SH0ES H₀ (**20/37** flow-noise). [`../results/sh0es_unpublished_objects_outcome.json`](../results/sh0es_unpublished_objects_outcome.json) | tight-scalar median > 0.5%; treating lstsq \(\mu\) as measured; 0.5%-gating a nearby \(cz/d\) host |
-| Falsification registry vs living PREDs | **57** hand PREDs — Earth-system PRED-056–064 including dated fluid windows | registry count matches prereg file |
+| Falsification registry vs living PREDs | **76** hand PREDs — through PRED-083 (AG / Gaia / paleoclimate) | registry count matches prereg file |
 | Tool-row kills still `pending` | Score in `results/` when a survey paper lands (Euclid, JINR 119, PDG) | registered `kill_if` only |
 | Genetics **no-map** path | Sibling: F01–F15 only; 3-D MDS **retired**. Hub quotes 2026-08-17 freeze | do not claim sequence-only AF-beating; do not grind MDS |
 | T3/T4 uniqueness theorems | Gap report already lists them as **open research** | do not pretend path-integral confinement is proved |
 | Chapter docs vs live 472 | Domain chapter INDEX still useful; any “405/394” line gets a freeze banner | CURRENT_STATUS wins |
-| **Between-scale interconnects** | **Filled.** PREM+NDBC+ENDF+Carnot+QG+social tanks pooled **0.026% GREEN** (706 tight). Zebrafish/Genetics sibling-owned. [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) | pooled > 0.5%; fitted Q/γ/Poisson; stuffing deep-PREM |
+| **Between-scale interconnects** | **Filled through EM–mat + biochem–neuro + D9 perception.** Pooled **0.026% GREEN** (1061 tight). Live vs 1 (QM/atomic **29.86%**, CM/thermo **57.00%**, mat/opt **17.84%**, …) is \(T_1\) view; leftover **0.000%** on 12 pairs. Same-look D=6/7 vs 1 is **0.046%**. [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md). | pooled > 0.5%; stuffing mixed live \(S\) vs 1 into 0.5%; identity-pad same-\(D\) equalized \(\delta\psi\); \(\sqrt{\varphi}\) on live vs 1 |
 | **Zebrafish 0.358% (worst empirical pooled)** | **Interface label fixed.** Panel was D=24 (astro); connective engine is biological. Metadata now **D=12**. Residual still 0.358% (honest LOOCV, not stuffed). | LSQ a new \(f\) to hide 0.358% |
+| **Prediction expansion beyond cosmology + first Earth issue** | **Shipped through PRED-084.** Dated scores 2026-09-08T00:45Z: hold **62** / kill **43** / awaiting **9**. 09-01 EQ 6 hold / 2 loading misses; weather 4 hold / 1 missing buoy; hydro Potomac expect-high miss (same as 08-31). Hydro gage IDs corrected for *next* issues (`06934500` Hermann, not `06803510`). Remaining awaiting are missing catalogs, not open windows. | treating the map as free parameters; stuffing retired FRB 66% into 0.5%; S2S/clock-time/prices/diagnoses/Tier D headlines; restuffing frozen kills |
 
 ---
 
@@ -75,6 +76,8 @@ Do these with **real measured data** and the mismatch rule (wrong \(D_{\mathrm{e
 ---
 
 ## Order of work (granular → then cross-proof)
+
+Standpoint (domains, architecture, laws, connective queue): [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md) · [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md).
 
 1. Pick a **C_thin** panel. Name the measured source. Apply [`APPLY.md`](APPLY.md).  
 2. If residual fails: log the interface change (like MPCORB).  

@@ -1,6 +1,6 @@
 # Domain family tree — folds, subdomains, between-scale gaps
 
-**Generated:** `2026-08-25T00:26:10.420791+00:00` · pin **D1D38A**  
+**Generated:** `2026-09-08T00:16:15.575152+00:00` · pin **D1D38A**  
 **Regenerate:** `python scripts/build_domain_family_tree.py`
 
 This is a **directory of slices**, not 400 theories. Reality is one 25-D fluid
@@ -107,7 +107,7 @@ QG, particle-astro, astrophysics, cosmology at D=25.
 | Observer / C_factor | Neuroscience, Quantum_Mechanics, Optics | filled | docs/CONSCIOUSNESS_CLAIM_EVIDENCE.md |
 | Matter–antimatter conjugate | Particle_Physics, High_Energy_Physics, Quantum_Mechanics | filled | docs/MATTER_ANTIMATTER_CLAIM_EVIDENCE.md |
 | Seed cross-ratios (engine §25) | Optics, Quantum_Optics, Materials_Science, Condensed_Matter, Astronomy, Planetary_Science | engine | vendor/fsot_compute.py §25 |
-| Between-scale interconnects (5 gaps) | Acoustics, Seismology, Fluid_Dynamics, Oceanography, Atmospheric_Physics, Thermodynamics, Cosmology, Nuclear_Physics, Particle_Physics, Quantum_Gravity | filled | docs/SCALE_INTERCONNECT_PHYSICS.md |
+| Between-scale interconnects (wave/fluid/fridge/orifice/ceiling/social/seis-geo) | Acoustics, Seismology, Fluid_Dynamics, Oceanography, Atmospheric_Physics, Thermodynamics, Cosmology, Nuclear_Physics, Particle_Physics, Quantum_Gravity, Geophysics, Materials_Science, Optics | filled | docs/SCALE_INTERCONNECT_PHYSICS.md |
 
 ## Between-scale gaps (physical conditions still siloed)
 
@@ -117,7 +117,7 @@ SH0ES class 1% into 0.5%, inventing unpublished tech numerics.
 
 | Gap | Cores | Why it is one fluid | What “filled” looks like |
 |-----|-------|---------------------|--------------------------|
-| **Developmental mechanics (sibling-owned)** | Biology, Fluid_Dynamics, Neuroscience | Zebrafish 0.358% is inside 0.5%. Genetics repo is the live fold; migrate when that freeze lands. | Do not densify here. Wait for FSOT-Genetics product freeze, then hub residual. |
+| **Developmental mechanics (sibling-owned)** | Biology, Fluid_Dynamics, Neuroscience | Zebrafish 0.358% is inside 0.5%. Genetics product freeze 2026-08-17 is quoted in the hub. | Do not densify zebrafish here. CASP/CAMEO blind is OPEN (docs/CASP_CAMEO_BLIND_PROTOCOL.md). |
 
 ## Largest empirical pooled residuals (still green)
 

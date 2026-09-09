@@ -28,6 +28,8 @@ DISCRIMINANT_KILL: dict[str, str] = {
     "same_valve_not_two_laws": "consensus that slow slip and fast earthquakes require two constitutive laws with no viscosity continuum",
     "quiet_and_storm_remain_distinct_sectors": "quiet-time and storm-time SWPC classes collapse to one residual sector on refresh",
     "dated_windows_issued_and_scored": "issued dated forecast file rewritten after valid_from, or scoring abandoned",
+    "frb_and_h0_share_local_sky_density": "CHIME/FRB analysis requires a second fitted angular kernel or per-FRB ε distinct from H0 local_sky_density",
+    "siren_stays_mid_sector_not_shoes": "GW standard-siren H0 forced onto the SH0ES class bin, or ρ retuned",
 }
 
 OUTCOME_LOG = ROOT / "results" / "outcomes" / "prediction_outcome_log.jsonl"

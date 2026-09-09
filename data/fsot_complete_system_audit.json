@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T20:57:03.337801+00:00",
+  "generated_at": "2026-09-09T16:11:10.694106+00:00",
   "version": "1.0",
   "status": "COHERENT",
   "orientation": "Full FSOT fabric: one fluid spacetime engine, residual atlas, multiprover, hardware path. Research tracks (uniqueness, etc.) are leaves \u2014 not the trunk.",
@@ -100,8 +100,8 @@
       "pieces": [
         {
           "path": "data/benchmark_margin_audit.json",
-          "green": 470,
-          "files": 470,
+          "green": 477,
+          "files": 477,
           "fails": 0
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "path": "data/*benchmark*.json",
-          "count": 474
+          "count": 480
         }
       ],
       "note": ""
@@ -140,7 +140,7 @@
         },
         {
           "path": "FSOT/Formal/",
-          "lean_count": 559
+          "lean_count": 562
         }
       ],
       "note": ""
@@ -362,13 +362,7 @@
     "Rust scalar kernel + QEMU/hardware path",
     "Hierarchy network + building-blocks simulation"
   ],
-  "gaps": [
-    {
-      "id": "wave_inventory_connection",
-      "severity": "medium",
-      "fix": "Ensure fsot_compute wave* Results are either residual panels or explicit inventory rows in atlas formulas \u2014 avoid orphan wave numbers."
-    }
-  ],
+  "gaps": [],
   "commands": {
     "math_audit": "python scripts/build_fsot_system_math_audit.py",
     "atlas_rebuild": "python scripts/build_fsot_atlas_sqlite.py",

@@ -1,7 +1,7 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-08-24T23:36:20.679643+00:00`  
-**Edition stamp:** 2026-08-24  
+**Generated:** `2026-09-09T16:28:51.692513+00:00`  
+**Edition stamp:** 2026-09-09  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
 > Authoritative live numbers for expansion. Prefer this file over hand-edited counts in README when they disagree.
@@ -21,12 +21,12 @@
 
 | Item | Value |
 |------|-------|
-| Green pass | **476 / 476** |
+| Green pass | **477 / 477** |
 | Fail | **0** |
 | Gate | ≤ 0.5% pooled median |
-| Median-of-medians | 0.006006% |
-| Scalar records (envelope) | 180042 |
-| Tiers | `{'B_verified': 337, 'C_thin': 13, 'A_strong': 117}` |
+| Median-of-medians | 0.006625234573930708% |
+| Scalar records (envelope) | 181477 |
+| Tiers | `{'B_verified': 338, 'C_thin': 13, 'A_strong': 117}` |
 
 ## Mathlib re-derivation (Formal corpus)
 
@@ -49,7 +49,7 @@
 | eight_way_hardware | True |
 | Atomic provable | 2024 |
 | Full formal obligations | 2587 |
-| Catalog obligations | 2228 (domains 472) |
+| Catalog obligations | 2256 (domains 477) |
 | True margin violations | **0** |
 | Structural bundle excluded | 0 |
 
@@ -62,6 +62,17 @@ Frameworks passed: `coq`, `cross_refinement`, `esp32_harness`, `fstar`, `fstar_r
 | Label A (empirical framework) | **True** |
 | Label B (classical T1–T6) | **True** |
 | Report | `data/toe_gap_closure_report.json` |
+
+## Predictions
+
+| Item | Value |
+|------|-------|
+| Hand PREDs | **77** (PRED-001–084) |
+| Dated scores | hold 62 · kill 43 · awaiting 9 |
+| Score table | [`../results/dated_forecast_scores/REPORT.md`](../results/dated_forecast_scores/REPORT.md) |
+| Expansion map | [`../predictions/reports/PREDICTION_EXPANSION_MAP.md`](../predictions/reports/PREDICTION_EXPANSION_MAP.md) |
+
+08-31 / 09-01 EQ+hydro score after **2026-09-08**. Volcanic **2026-09-08**. Do not rewrite issued JSON.
 
 ## Claim evidence (kill commands)
 
@@ -77,6 +88,11 @@ Frameworks passed: `coq`, `cross_refinement`, `esp32_harness`, `fstar`, `fstar_r
 - Hardware depth: [`docs/HARDWARE_DEPTH_CACHE_INTERCONNECT.md`](HARDWARE_DEPTH_CACHE_INTERCONNECT.md)
 - Breakthroughs / QCE: [`docs/RECENT_BREAKTHROUGH_EXPANSION.md`](RECENT_BREAKTHROUGH_EXPANSION.md)
 - Reality OS sibling (FSOT-native kernel lab): https://github.com/dappalumbo91/FSOT-Reality-OS
+- Object scoring (H₀ / S₈ / wₐ / Euclid): [`OBJECT_SCORING.md`](OBJECT_SCORING.md)
+- Genetics Å objects + CASP protocol: [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) · [`CASP_CAMEO_BLIND_PROTOCOL.md`](CASP_CAMEO_BLIND_PROTOCOL.md)
+- Research standpoint / laws of reality: [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md) · [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md)
+- Seismology APPLY cookbook: [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md)
+- Isolated residuals (do not stuff): [`ISOLATED_RESIDUALS.md`](ISOLATED_RESIDUALS.md) · [`FRB_INTERFACE_DIAGNOSIS.md`](FRB_INTERFACE_DIAGNOSIS.md)
 
 ## Sync rule
 

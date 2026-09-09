@@ -1,7 +1,7 @@
 # FSOT complete system audit
 
 **Status:** `COHERENT`  
-**Generated:** 2026-08-05T20:57:03.337801+00:00
+**Generated:** 2026-09-09T16:11:10.694106+00:00
 
 Full FSOT fabric: one fluid spacetime engine, residual atlas, multiprover, hardware path. Research tracks (uniqueness, etc.) are leaves — not the trunk.
 
@@ -34,9 +34,9 @@ core_domains=35 S_particle=0.9504134401245242 S_cosmo=-0.5024559462100433
 
 ### L2_residual_atlas — Empirical residual atlas (green gates) [ok]
 
-- `{"path": "data/benchmark_margin_audit.json", "green": 470, "files": 470, "fails": 0}`
+- `{"path": "data/benchmark_margin_audit.json", "green": 477, "files": 477, "fails": 0}`
 - `{"path": "data/fsot_atlas.sqlite", "role": "queryable atlas DB"}`
-- `{"path": "data/*benchmark*.json", "count": 474}`
+- `{"path": "data/*benchmark*.json", "count": 480}`
 
 ### L3_formal — Multiprover / formal spines [ok]
 
@@ -44,7 +44,7 @@ core_domains=35 S_particle=0.9504134401245242 S_cosmo=-0.5024559462100433
 - `{"path": "data/gr_sm_ckm_verification_report.json", "overall_ok": true}`
 - `{"path": "data/uniqueness_research_verification_report.json", "overall_ok": true, "note": "one research spine among many \u2014 not the whole ToE"}`
 - `{"path": "verification/obligations/", "role": "exported spines"}`
-- `{"path": "FSOT/Formal/", "lean_count": 559}`
+- `{"path": "FSOT/Formal/", "lean_count": 562}`
 
 ### L4_buried_waves — Seed derivation waves in fsot_compute (must stay connected) [ok]
 
@@ -101,7 +101,7 @@ Goal: one program that runs the complete engine + atlas connectives, path to OS 
 
 ## Gaps / connective work
 
-- **medium** `wave_inventory_connection`: Ensure fsot_compute wave* Results are either residual panels or explicit inventory rows in atlas formulas — avoid orphan wave numbers.
+- None flagged.
 
 ## Commands
 

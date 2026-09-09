@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T21:48:58.305672+00:00",
+  "generated_at": "2026-09-09T16:11:09.794679+00:00",
   "version": "2.0",
   "boundaries_doc": "docs/TOE_CLAIM_BOUNDARIES.md",
   "gap_closure_doc": "docs/TOE_GAP_CLOSURE.md",
@@ -32,8 +32,8 @@
       },
       "T5_prereg_freeze": {
         "pass": true,
-        "artifact": "data/toe_prereg_freeze.json",
-        "bundle_sha256": "74e834bda12e471f01d6110577f65bf9e28230c197a4d6d9e108d995aca90619"
+        "artifact": "predictions/toe_prereg_freeze.json",
+        "bundle_sha256": "1c5cde08ed91a4f14ed41666366b92aa6e178607ded566e9e0129a2548923376"
       },
       "T6_falsification": {
         "pass": true,
@@ -49,7 +49,7 @@
     "gr_sm_deep_benchmark": "data/toe_gr_sm_deep_benchmark.json",
     "force_package_manifest": "data/toe_force_package_manifest.json",
     "contested_refresh": "data/toe_contested_sector_refresh.json",
-    "prereg_freeze": "data/toe_prereg_freeze.json",
+    "prereg_freeze": "predictions/toe_prereg_freeze.json",
     "dynamics_module": "vendor/fsot_dynamics.py",
     "gr_sm_module": "vendor/fsot_gr_sm.py",
     "ckm_pmns_benchmark": "data/toe_ckm_pmns_benchmark.json",

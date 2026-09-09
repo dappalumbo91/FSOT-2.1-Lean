@@ -10,8 +10,9 @@
 
 | Surface | Status (session snapshot) | What to do |
 |---------|---------------------------|------------|
-| Green gate | **476/476** · pin **D1D38A** | Baseline health — always re-check after engine work |
-| Tier A hand PREDs | **16** core contested locks | Scoreboard for X + kills |
+| Green gate | **477/477** · pin **D1D38A** | Baseline health — always re-check after engine work |
+| Hand PREDs | **77** (A 29 / C 26 / D 22) | PRED-001–084 · [`reports/PREDICTION_TIERS.md`](reports/PREDICTION_TIERS.md) |
+| Dated scores | hold **41** · kill **31** · awaiting **42** | 08-31/09-01 EQ+hydro still open until ~09-08 · volcanic **2026-09-08** |
 | Multi-tool H₀ | **25** instruments | Compare any new H₀ paper *to its tool row only* |
 | SH0ES hosts | **22** sightline H₀ | New Cepheid/JWST host papers → per-host score |
 | CCHP TRGB hosts | **22** intermediate H₀ | New Freedman/CCHP papers → per-host score |
@@ -26,6 +27,7 @@
 3. **LVK / GWOSC** alerts or catalog notes → PRED-048 + GWTC panel  
 4. Full monitor: `python scripts/run_prediction_monitor.py --online`  
 5. Earth-system catalogs: USGS ComCat, GVP, SWPC, NDBC → [`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md)
+6. Remaining prediction slots → [`reports/PREDICTION_EXPANSION_MAP.md`](reports/PREDICTION_EXPANSION_MAP.md)
 
 ---
 
@@ -62,13 +64,16 @@ You already hold huge residual-green catalogs. Turn **named observables** into P
 | **Gaia DR3** | thousands+ | Parallax / proper-motion class locks; distance-ladder adjacent astrometry |
 | **DESI EDR** tables | ~97k | BAO / redshift-slice residual holds beyond single wₐ |
 | **PubChem / CRC** | thousands | Property-class locks (logP, IE, bond energies) as open-chem Tier C |
-| **GWTC / GWOSC** | catalogs | Event-rate class + chirp-mass ladder residual holds (not only “panel ≤0.5%”) |
-| **NASA exoplanet archive** | ~2k | Radius–period–insolation architecture locks |
+| **GWTC / GWOSC** | catalogs | PRED-048 ceiling + siren tool row 70.024 — **next** chirp-mass / event-rate class |
+| **NASA exoplanet archive** | ~2k | CAT residual 0.023% — **next** radius–period architecture class PRED |
 | **Climate / NCEI** | ~17k | Station-class residual holds under continuous refresh (PRED-054/063) |
-| **USGS / PREM** | catalogs | GR b-value class (PRED-056) + lithosphere vp/vs hold (PRED-061) — **not** event dates |
-| **GVP / volcano** | catalogs | Residual hold PRED-058 — **not** eruption dates |
-| **NOAA SWPC** | Kp/Dst/F10.7 | Quiet vs storm sectors PRED-059/062 + ionospheric PRED-007 |
-| **NDBC buoys** | 150+ | Fluid/Ocean/Air triple fold PRED-060 |
+| **USGS / PREM** | catalogs | GR b-value (PRED-056) + vp/vs (PRED-061) + **dated cell windows** (PRED-064). Not a clock-time hypocenter. |
+| **GVP / volcano** | catalogs | Residual hold PRED-058 + 14-day volcanic windows on PRED-064 |
+| **NOAA SWPC** | Kp/Dst/F10.7 | Quiet vs storm PRED-059/062 + ionospheric PRED-007 + 72 h Kp window |
+| **NDBC buoys** | 150+ | Fluid/Ocean/Air triple fold PRED-060 + 48 h storm cells |
+| **NOAA CO-OPS tides** | 20 stn | Residual 0.030% — **next** dated station windows |
+| **Hydrology NWIS** | 957 | Classifier green — **next** live gauge windows after ingest |
+| **GBIF occurrence** | 240 | Residual 0.006% — **next** occurrence-class PRED |
 
 **Why this layer:** public data, already in the monorepo, multi-resource, granular — matches “empirically backed against real data.”
 
@@ -131,8 +136,10 @@ Cold-fusion scaffolds, superheavy Z islands, transporter, warp portal — keep r
 | **Shipped** | `build_catalog_prediction_layer.py` — MPCORB / Gaia / DESI / GWTC / PubChem / exo / climate | Done |
 | **Shipped** | `build_higgs_prediction_layer.py` — mass + BR + CKM companion; dual framework/tight kills | Done |
 | **Next (priority)** | **Higgs tighten program** — beat PDG-class tight % **without** changing global 0.5% gate | See `HIGGS_TIGHTEN_PLAN.md` |
-| **Then** | Multi-messenger bridge PREDs (FRB×density, siren×sector) | Medium |
-| **Ongoing** | Euclid/Rubin watch only — no freeze of model work | Low |
+| **Shipped** | Waves 1–3 through PRED-083; dated issues + closed-window scores; playbook retro | Done |
+| **Map** | [`reports/PREDICTION_EXPANSION_MAP.md`](reports/PREDICTION_EXPANSION_MAP.md) | Live |
+| **Next** | Score T012157 / T022247 / 08-31 / 09-01 and volcanic **2026-09-08**; FRB×density on a larger CHIME dump (do not 0.5%-gate the 10-row seed) | Calendar |
+| **Ongoing** | Euclid/Rubin watch — no freeze of model work | Low |
 
 ---
 

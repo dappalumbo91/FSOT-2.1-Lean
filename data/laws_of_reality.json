@@ -1,0 +1,187 @@
+{
+  "generated_at": "2026-09-09T16:04:56.098329+00:00",
+  "pin": "D1D38A",
+  "n": 18,
+  "laws": [
+    {
+      "id": "R1",
+      "kind": "engine",
+      "name": "one_scalar",
+      "statement": "Reality is one compressible fluid. The heartbeat is S = K(T1+T2+T3).",
+      "closed_form": "S = K(T1+T2+T3)",
+      "live": "K \u2248 0.420222",
+      "code": "vendor/fsot_compute.py \u00b7 FSOT/Scalar.lean",
+      "not": "A separate Lagrangian per domain."
+    },
+    {
+      "id": "R2",
+      "kind": "engine",
+      "name": "five_seeds",
+      "statement": "Every constant reduces to {\u03c0, e, \u03c6, \u03b3, G}. Zero free parameters.",
+      "closed_form": "seeds only",
+      "live": "parameter_count_audit ZERO_FREE",
+      "code": "vendor/fsot_compute.py \u00a71",
+      "not": "A Yukawa, dark density, or per-row \u03b5."
+    },
+    {
+      "id": "R3",
+      "kind": "engine",
+      "name": "compactification_ceiling",
+      "statement": "Effective dimension D_eff is a fold of a 25-D ceiling, not a count of extra spatial axes.",
+      "closed_form": "T1 ln(D/25); T3 Chaos (D-25)/25",
+      "live": "D_eff \u2208 [5, 25]; 35 core folds",
+      "code": "DOMAINS table \u00a75",
+      "not": "Inventing D=26 to fit one ugly panel."
+    },
+    {
+      "id": "R4",
+      "kind": "engine",
+      "name": "yin_yang_valve",
+      "statement": "Load (SUCTION) then orifice (POOF). Creation and destruction are one cycle.",
+      "closed_form": "POOF\u22480.1535 \u00b7 SUCTION\u22480.1470",
+      "live": "T3 valve; hydrology load bar 1+POOF; tide score bar POOF m",
+      "code": "fsot_compute T3 \u00b7 fsot_earth_fluid_forecast.py",
+      "not": "Two unrelated constitutive laws for slow vs fast, quiet vs storm."
+    },
+    {
+      "id": "R5",
+      "kind": "engine",
+      "name": "information_valve",
+      "statement": "A black hole is an information-flow valve at every scale, not a trash can.",
+      "closed_form": "infall \u2192 POOF \u2192 WH outflow / C_eff re-solidification",
+      "live": "C_eff\u22480.9577",
+      "code": "scripts/bubble_bleed_physics.py \u00b7 CONCEPTS C2/C10",
+      "not": "A cosmological BH only."
+    },
+    {
+      "id": "R6",
+      "kind": "engine",
+      "name": "observer_is_physical",
+      "statement": "Observation is C_factor on T1 when observed=true. Dark folds stay dark.",
+      "closed_form": "C_factor = C_eff \u00b7 P_new",
+      "live": "C_factor\u22480.287600; Homo sapiens 20.003601 vs 20.0 W (0.018%)",
+      "code": "CONCEPTS C11 \u00b7 CONSCIOUSNESS_CLAIM_EVIDENCE.md",
+      "not": "A 21.79 W Cosmology-Lab leftover. Looking at QC (observed=false)."
+    },
+    {
+      "id": "R7",
+      "kind": "engine",
+      "name": "bleed",
+      "statement": "Adjacent folds talk through \u03ba_ij. Silos are institutional, not physical.",
+      "closed_form": "\u03ba_ij = A_bleed\u00b7POOF\u00b7|Si||Sj| / (1+|Di-Dj|/25)",
+      "live": "A_bleed\u22481.0470; between-scale pooled 0.026%",
+      "code": "vendor/fsot_complex_interaction.py \u00b7 SCALE_INTERCONNECT_PHYSICS.md",
+      "not": "A free spring between two panels."
+    },
+    {
+      "id": "R8",
+      "kind": "engine",
+      "name": "apply_residual",
+      "statement": "computed = measured \u00d7 (1 + |S(domain)| \u00d7 f_domain). Mismatch \u2192 change the interface.",
+      "closed_form": "fsot_scaled(m, name)",
+      "live": "green if domain median \u2264 0.5%",
+      "code": "docs/APPLY.md",
+      "not": "Least-squares a new f. Identity pads."
+    },
+    {
+      "id": "R9",
+      "kind": "engine",
+      "name": "ontology",
+      "statement": "Nothing and perfection are both unstable. Origin is friction at that interface. Zero is a boundary symbol, not a thing.",
+      "closed_form": "A1\u2013A6",
+      "live": "data/foundational_ontology_axioms.yaml",
+      "code": "TOE Label B T1",
+      "not": "A volumetric Big Bang as the only origin picture."
+    },
+    {
+      "id": "D1",
+      "kind": "discovered",
+      "name": "h0_is_sectors",
+      "statement": "There is not one Hubble constant. Tools couple to BH\u2192WH bubble-density sectors.",
+      "closed_form": "H0_tool = H0_global\u00b7(1+\u03c1\u00b7\u03b5), H0_global\u224868.440, \u03b5\u22480.015431",
+      "live": "Planck 67.384 (0.024%); bridge 70.75; class 73.773; chain 72.856 vs 73.04 (0.252%)",
+      "code": "docs/OBJECT_SCORING.md \u00b7 CONCEPTS C3",
+      "not": "JWST Perfect Host 73.49 as PRED-001. Retuning \u03c1 onto 73.04."
+    },
+    {
+      "id": "D2",
+      "kind": "discovered",
+      "name": "gr_b_value",
+      "statement": "The Gutenberg\u2013Richter b-value is acoustic counting in the crustal fluid: b = \u03c6 \u2212 1/\u03c6 = 1.",
+      "closed_form": "b = \u03c6 \u2212 1/\u03c6",
+      "live": "b = 1.000000 (exactly 1). PRED-056 band 0.90\u20131.10",
+      "code": "PRED-056",
+      "not": "A regional fitted b per catalog as a new law."
+    },
+    {
+      "id": "D3",
+      "kind": "discovered",
+      "name": "cepheid_wesenheit",
+      "statement": "NIR Wesenheit R_H is POOF\u00b7e\u00b7C_eff, not a fitted reddening slope.",
+      "closed_form": "R_H = POOF\u00b7e\u00b7C_eff",
+      "live": "vs Riess Eq.7 0.4 at 0.110%; |b|=\u03c0+(POOF+SUCTION)/2",
+      "code": "docs/CEPHEID_PL_PHYSICS.md",
+      "not": "A free b or Z_W per host."
+    },
+    {
+      "id": "D4",
+      "kind": "discovered",
+      "name": "quiet_and_storm_are_sectors",
+      "statement": "Quiet vs storm (weather, solar, tide, hydro, H0) are two sectors of one valve.",
+      "closed_form": "same grammar as Planck vs SH0ES",
+      "live": "PRED-062/060/065/078; dated windows PRED-064",
+      "code": "docs/WEATHER_MONITORING_APPROACH.md",
+      "not": "ECMWF S2S beat. Clock-time hypocenter. Cycle 25 SSN pick."
+    },
+    {
+      "id": "D5",
+      "kind": "discovered",
+      "name": "observer_20W",
+      "statement": "The live Homo sapiens observer lock is 20.00 W, not the retired 21.79 W draft.",
+      "closed_form": "brain_power_w vs 20.0",
+      "live": "20.003601 vs 20.0 (0.018%)",
+      "code": "docs/CONSCIOUSNESS_CLAIM_EVIDENCE.md",
+      "not": "E_con 8.95% as a live fold."
+    },
+    {
+      "id": "D6",
+      "kind": "discovered",
+      "name": "genetics_two_regimes",
+      "statement": "Protein product (measured homologs) and no-map (F01\u2013F15) are two regimes. Do not mix \u00c5 objects.",
+      "closed_form": "ChemLink residual at named D_eff",
+      "live": "product 0.13 \u00c5 vs AF 0.47 \u00c5 vs cryo-EM FSC ~1.2 \u00c5 vs bulk ~13 \u00c5",
+      "code": "docs/GENETICS_CLAIM_EVIDENCE.md",
+      "not": "0.13 \u00c5 from sequence alone. CASP/FSC papers as the product."
+    },
+    {
+      "id": "D7",
+      "kind": "discovered",
+      "name": "s8_joint_not_alone",
+      "statement": "S8 lock 0.805 sits between Planck and DES. DES-alone is a tension row; the joint is the fair compare.",
+      "closed_form": "PRED-002 / PRED-042 = 0.805",
+      "live": "DES Y6 alone 0.789; joint DES+CMB+low-z 0.806 (arXiv:2601.14559). Euclid DR1 awaiting.",
+      "code": "docs/OBJECT_SCORING.md",
+      "not": "Killing 0.805 on DES-alone. Citing Euclid CLOE as measured."
+    },
+    {
+      "id": "D8",
+      "kind": "discovered",
+      "name": "flavor_is_one_fluid",
+      "statement": "CKM/PMNS/\u03b1_s are seed readouts, not fitted SM inputs. Kill = next PDG combination outside 0.5%.",
+      "closed_form": "PRED-070\u2013075",
+      "live": "Higgs/flavor layer inside literature-tight band",
+      "code": "predictions/HIGGS_TIGHTEN_PLAN.md",
+      "not": "A per-channel \u03b5. Uniqueness of the SM Lagrangian as proved."
+    },
+    {
+      "id": "D9",
+      "kind": "discovered",
+      "name": "perception_is_scale_view",
+      "statement": "Perception at a scale is T1 at that fold\u2019s \u03b4\u03c8, hits, and observed. Live |S_i|/|S_j| vs 1 asks for the same view; adjacent folds are not supposed to look the same.",
+      "closed_form": "|S_i|/|S_j| = |1+T1_i|/|1+T1_j|  (T2=1, T3\u22480)",
+      "live": "T3 leftover 0.000% on 12 view pairs. QM/atomic live vs 1 is 29.86% = T1 view, not a failed 0.5%. Worst live vs 1 57.00%. Same-look D=6/7 vs 1 is 0.046%.",
+      "code": "vendor/fsot_scale_interconnects.py t1_of \u00b7 SCALE_INTERCONNECT_PHYSICS.md",
+      "not": "Stuffing \u221a\u03c6 or \u221a(e/\u03c6) onto live vs 1. Retuning \u03b4\u03c8. Flipping dark folds observed=True. Gating live vs 1 at 0.5%. Padding the pooled median with the T1 identity."
+    }
+  ]
+}

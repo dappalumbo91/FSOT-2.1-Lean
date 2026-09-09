@@ -1,12 +1,27 @@
 {
-  "generated_at": "2026-08-18T02:49:42.807966+00:00",
+  "generated_at": "2026-09-09T16:28:00.453672+00:00",
   "version": "1.0",
   "gate": "pooled_scalar_median_or_effective_median <= 0.05%",
   "tier_scalar_max_record_gate_pct": 0.05,
-  "benchmark_file_count": 472,
-  "tier_scalar_pass_count": 472,
-  "tier_scalar_fail_count": 0,
-  "closed": true,
-  "failing_domains": [],
+  "benchmark_file_count": 477,
+  "tier_scalar_pass_count": 475,
+  "tier_scalar_fail_count": 2,
+  "closed": false,
+  "failing_domains": [
+    {
+      "domain": "SH0ES_Ladder_Chain",
+      "file": "sh0es_ladder_chain_benchmark.json",
+      "scalar_pooled_median_error_pct": 0.212101,
+      "effective_scalar_median_error_pct": 0.21210100057464942,
+      "max_scalar_error_pct": 0.252234
+    },
+    {
+      "domain": "Cepheid_PL_Interconnect",
+      "file": "cepheid_pl_interconnect_benchmark.json",
+      "scalar_pooled_median_error_pct": 0.1349881432328604,
+      "effective_scalar_median_error_pct": 0.1349881432328604,
+      "max_scalar_error_pct": 0.2390607110557222
+    }
+  ],
   "honest_statement": "tier_scalar_pass uses pooled scalar median (or literature-aware effective median) \u2264 0.05%, aligned with fsot_precision_constants tier aspiration. Per-record max up to 0.5% remains the green_gate strict_scalar bound."
 }

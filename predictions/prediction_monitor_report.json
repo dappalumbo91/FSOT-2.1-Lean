@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T01:30:07.856570+00:00",
-  "online": true,
+  "generated_at": "2026-09-07T23:46:07.767115+00:00",
+  "online": false,
   "authority_pin_prefix": "D1D38A",
   "registry_version": "1.0",
   "schedule": {
@@ -10,16 +10,14 @@
     "online_hint": "python scripts/run_prediction_monitor.py --online"
   },
   "summary": {
-    "watch_count": 14,
+    "watch_count": 29,
     "outcomes": {
-      "source_reachable_awaiting_release": 2,
-      "local_green_hold": 8,
-      "open_predata": 3,
-      "data_available": 1
+      "open_predata": 12,
+      "local_green_hold": 17
     },
-    "prereg_prediction_count": 48,
-    "prereg_with_future_survey_tag": 13,
-    "prereg_domain_count": 27,
+    "prereg_prediction_count": 76,
+    "prereg_with_future_survey_tag": 41,
+    "prereg_domain_count": 44,
     "atlas_prediction_count": 1445,
     "atlas_domains_covered": 472,
     "atlas_by_kind": {
@@ -62,7 +60,7 @@
     "t5_freeze_id": "TOE-PREREG-20260806",
     "t5_bundle_sha256": "d3333eb0ae2baef1ba6ede6a55a0ea2152e9fe896de8808081d693ccb14cf715",
     "future_ledger_rows": 10,
-    "green_gate_pass_count": 472,
+    "green_gate_pass_count": 476,
     "green_gate_fail_count": 0
   },
   "watches": [
@@ -83,15 +81,15 @@
         "facility": "Euclid",
         "product": "DR1-Foundation then DR1 complete (weak lensing / S8)",
         "window": "2026-11 to mid-2027",
-        "status_as_of": "2026-08-06",
-        "notes": "ESA: DR1-Foundation ~12 Nov 2026 (raw/calibrated ~1900 deg\u00b2); complete DR1 with higher-level WL/clustering mid-2027.\n",
+        "status_as_of": "2026-09-07",
+        "notes": "ESA: DR1-Foundation ~12 Nov 2026 (raw/calibrated ~1900 deg\u00b2); complete DR1 with higher-level WL/clustering mid-2027. DES Y6 alone S8=0.789\u00b10.012 is a TENSION ROW, not this kill. Joint DES+CMB+low-z S8=0.806 is the fair compare (arXiv:2601.14559). Euclid CLOE.3 FoM is synthetic \u2014 not a measured S8.\n",
         "urls": [
           "https://www.cosmos.esa.int/web/euclid/timeline",
           "https://www.cosmos.esa.int/web/euclid/dr1-timeline"
         ]
       },
       "check_kind": "manual_or_catalog",
-      "outcome": "source_reachable_awaiting_release",
+      "outcome": "open_predata",
       "detail": {
         "contested_match": {
           "name": "sigma_8",
@@ -99,18 +97,6 @@
           "within_green_gate": true,
           "status": "open_observable_resolved"
         },
-        "url_probes": [
-          {
-            "ok": true,
-            "status": 200,
-            "url": "https://www.cosmos.esa.int/web/euclid/timeline"
-          },
-          {
-            "ok": true,
-            "status": 200,
-            "url": "https://www.cosmos.esa.int/web/euclid/dr1-timeline"
-          }
-        ],
         "in_t5_freeze": true
       }
     },
@@ -131,7 +117,7 @@
         "product": "BAO / clustering DE posteriors",
         "window": "2026-11 to 2027",
         "status_as_of": "2026-08-06",
-        "notes": "DESI multi-year BAO already public; Euclid DR1 enables joint Stage-IV DE.",
+        "notes": "DESI multi-year BAO already public; Euclid DR1 enables joint Stage-IV DE. Direction supports wa<0. Do not claim 3\u03c3 on frozen \u22121.018 until the joint names the same object. Hold-not-kill. CLOE FoM is not measured wa.\n",
         "urls": [
           "https://data.desi.lbl.gov/",
           "https://www.cosmos.esa.int/web/euclid/timeline"
@@ -180,7 +166,7 @@
         ]
       },
       "check_kind": "manual_or_catalog",
-      "outcome": "source_reachable_awaiting_release",
+      "outcome": "open_predata",
       "detail": {
         "contested_match": {
           "name": "sigma_8",
@@ -188,18 +174,6 @@
           "within_green_gate": true,
           "status": "open_observable_resolved"
         },
-        "url_probes": [
-          {
-            "ok": true,
-            "status": 200,
-            "url": "https://rubinobservatory.org/"
-          },
-          {
-            "ok": true,
-            "status": 200,
-            "url": "https://lsstdiscoveryalliance.org/"
-          }
-        ],
         "in_t5_freeze": false
       }
     },
@@ -250,32 +224,27 @@
       "title": "JWST / SH0ES-class local distance ladder H0",
       "sector": "cosmology",
       "pred_ids": [
-        "PRED-001",
+        "PRED-024",
         "PRED-051"
       ],
-      "fsot_lock": 70.75,
+      "fsot_lock": 72.1,
       "unit": "km/s/Mpc",
-      "kill_if": "bridge fails when next local+CMB pair published",
+      "kill_if": "local-ladder class row outside 2.5% contested band when the named paper is a Cepheid-host H0",
       "urgency": "high",
       "data_drop": {
         "facility": "JWST + HST distance ladder programs",
         "product": "Cepheid / TRGB / SNIa H0 papers",
         "window": "rolling 2026-2027",
-        "status_as_of": "2026-08-06",
-        "notes": "Local H0 still contested; each new JWST paper is a kill-check opportunity.",
+        "status_as_of": "2026-09-07",
+        "notes": "Perfect Host H0=73.49\u00b10.93 (arXiv:2509.01667) is a LOCAL CEPHEID LADDER object, not PRED-001 bridge 70.75. Do not score it as the sky. Fair compares: CCHP TRGB / dual-anchor PRED-024 / SH0ES-class 2.5% band. Sightline hosts (e.g. M101 73.497) stay per-host, not the bridge.\n",
         "urls": [
+          "https://arxiv.org/abs/2509.01667",
           "https://arxiv.org/list/astro-ph.CO/recent"
         ]
       },
       "check_kind": "literature_watch",
       "outcome": "open_predata",
       "detail": {
-        "contested_match": {
-          "name": "H0_Planck_CMB",
-          "fsot_error_pct": 0.192564,
-          "within_green_gate": true,
-          "status": "cmb_sector_resolved"
-        },
         "note": "Literature kill-check; no auto scrape of papers.",
         "in_t5_freeze": false
       }
@@ -338,14 +307,8 @@
         ]
       },
       "check_kind": "open_api",
-      "outcome": "data_available",
+      "outcome": "open_predata",
       "detail": {
-        "online_probe": {
-          "ok": true,
-          "event_count": 391,
-          "source": "https://www.gwosc.org/eventapi/json/GWTC/"
-        },
-        "note": "GWOSC GWTC reports 391 events \u2014 compare residual panels; do not retune freeze.",
         "in_t5_freeze": false
       }
     },
@@ -451,9 +414,9 @@
         },
         "panel": {
           "status": "green_hold",
-          "pooled_median_error_pct": 0.096204,
+          "pooled_median_error_pct": 0.015148134304819393,
           "green_gate_pass": true,
-          "domain": "cosmology_anomalies_benchmark.json",
+          "domain": "cosmology_anomalies",
           "file": "cosmology_anomalies_benchmark.json"
         },
         "in_t5_freeze": true
@@ -555,6 +518,453 @@
           "file": "zebrafish_predictive_validation_panel_benchmark.json"
         },
         "in_t5_freeze": true
+      }
+    },
+    {
+      "id": "WATCH-USGS-ComCat-b",
+      "title": "USGS ComCat / PREM seismic-acoustic class",
+      "sector": "seismology",
+      "pred_ids": [
+        "PRED-056",
+        "PRED-061"
+      ],
+      "fsot_lock": 1.0,
+      "unit": "b_value",
+      "kill_if": "named global MLE b outside 0.90\u20131.10 or lithosphere vp/vs channel >0.5%",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "USGS FDSN / Smithsonian-adjacent Earth models",
+        "product": "ComCat annual + PREM/AK135",
+        "window": "continuous",
+        "status_as_of": "2026-08-24",
+        "urls": [
+          "https://earthquake.usgs.gov/fdsnws/event/1/"
+        ]
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.02620375479863064,
+          "green_gate_pass": true,
+          "domain": "Between_Scale_Interconnects",
+          "file": "between_scale_interconnect_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-GVP-volcanology",
+      "title": "GVP/USGS volcanology catalog residual hold",
+      "sector": "volcanology",
+      "pred_ids": [
+        "PRED-058"
+      ],
+      "fsot_lock": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "kill_if": "volcanology_panel_benchmark exceeds 0.5%",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "Smithsonian GVP + USGS volcano",
+        "product": "eruption / unrest catalogs",
+        "window": "continuous",
+        "status_as_of": "2026-08-24",
+        "urls": [
+          "https://volcano.si.edu/"
+        ]
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.023502,
+          "green_gate_pass": true,
+          "domain": "Volcanology_Panel",
+          "file": "volcanology_panel_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-SWPC-space-weather",
+      "title": "NOAA SWPC Kp/Dst/F10.7 quiet vs storm sectors",
+      "sector": "space_weather",
+      "pred_ids": [
+        "PRED-007",
+        "PRED-059",
+        "PRED-062"
+      ],
+      "fsot_lock": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "kill_if": "space_weather/geomagnetism panel >0.5% or quiet/storm sectors collapse",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "NOAA SWPC",
+        "product": "Kp, Dst, F10.7 class products",
+        "window": "continuous",
+        "status_as_of": "2026-08-24",
+        "urls": [
+          "https://www.swpc.noaa.gov/"
+        ]
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.0,
+          "green_gate_pass": true,
+          "domain": "space_weather_benchmark.json",
+          "file": "space_weather_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-NDBC-fluid-tanks",
+      "title": "NDBC + NCEI fluid-tank residual hold",
+      "sector": "weather_climate",
+      "pred_ids": [
+        "PRED-054",
+        "PRED-060",
+        "PRED-063"
+      ],
+      "fsot_lock": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "kill_if": "NDBC fluid_tanks channels or climate_observed exceed 0.5%",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "NOAA NDBC + NCEI",
+        "product": "buoy realtime + station normals",
+        "window": "continuous",
+        "status_as_of": "2026-08-24",
+        "urls": [
+          "https://www.ndbc.noaa.gov/",
+          "https://www.ncei.noaa.gov/"
+        ]
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.02620375479863064,
+          "green_gate_pass": true,
+          "domain": "Between_Scale_Interconnects",
+          "file": "between_scale_interconnect_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-SSE-constitutive",
+      "title": "Slow-slip vs fast-earthquake constitutive-law literature",
+      "sector": "seismology",
+      "pred_ids": [
+        "PRED-057"
+      ],
+      "fsot_lock": 1.0,
+      "unit": "same_valve_classifier",
+      "kill_if": "consensus that SSE and EQ require two laws with no viscosity continuum",
+      "urgency": "low",
+      "data_drop": {
+        "facility": "literature (GJI / Nature / JGR)",
+        "product": "SSE moment-duration scaling reviews",
+        "window": "rolling 2026-2028",
+        "status_as_of": "2026-08-24"
+      },
+      "check_kind": "literature_watch",
+      "outcome": "open_predata",
+      "detail": {
+        "note": "Literature kill-check; no auto scrape of papers.",
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-Dated-fluid-forecasts",
+      "title": "Dated fluid-pressure windows (USGS/SWPC/NDBC)",
+      "sector": "earth_system",
+      "pred_ids": [
+        "PRED-064"
+      ],
+      "fsot_lock": 1.0,
+      "unit": "issued_windows_scored",
+      "kill_if": "issued forecast JSON rewritten after valid_from, or scoring abandoned",
+      "urgency": "high",
+      "data_drop": {
+        "facility": "USGS FDSN + NOAA SWPC + NDBC + CO-OPS + NWIS",
+        "product": "events / Kp / buoy obs / tide residuals / gage discharge inside each frozen window",
+        "window": "score after each valid_to (EQ 7d, WX 48h, solar 72h, tide 48h, volc 14d)",
+        "status_as_of": "2026-08-25"
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "open_predata",
+      "detail": {
+        "panel": {
+          "status": "no_local_panel",
+          "pooled_median_error_pct": null,
+          "green_gate_pass": null
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-Tides-residual",
+      "title": "NOAA CO-OPS coastal tide residual hold",
+      "sector": "oceanography",
+      "pred_ids": [
+        "PRED-065"
+      ],
+      "fsot_lock": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "kill_if": "noaa_coastal_tides_benchmark exceeds 0.5% on CO-OPS refresh",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "NOAA CO-OPS",
+        "product": "station water_level + predictions",
+        "window": "continuous",
+        "status_as_of": "2026-08-25"
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.030173,
+          "green_gate_pass": true,
+          "domain": "NOAA_Coastal_Tides",
+          "file": "noaa_coastal_tides_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-Exoplanet-architecture",
+      "title": "NASA exoplanet radius-period architecture class",
+      "sector": "exoplanets",
+      "pred_ids": [
+        "PRED-066"
+      ],
+      "fsot_lock": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "kill_if": "Exoplanet_System_Architecture pooled median exceeds 0.5% on archive refresh",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "NASA Exoplanet Archive",
+        "product": "TAP planetary systems table",
+        "window": "continuous",
+        "status_as_of": "2026-08-25"
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.0,
+          "green_gate_pass": true,
+          "domain": "Exoplanet_System_Architecture",
+          "file": "exoplanet_system_architecture_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-GWTC-chirp-mass",
+      "title": "GWTC chirp-mass class hold",
+      "sector": "gravitational_waves",
+      "pred_ids": [
+        "PRED-067",
+        "PRED-048"
+      ],
+      "fsot_lock": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "kill_if": "compact_object_binary_events chirp-mass class exceeds 0.5% on GWTC refresh",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "GWOSC / LVK",
+        "product": "GWTC catalog updates (O4 remainder, O5)",
+        "window": "2026-12 onward",
+        "status_as_of": "2026-08-25"
+      },
+      "check_kind": "catalog_refresh",
+      "outcome": "open_predata",
+      "detail": {
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-GBIF-occurrence",
+      "title": "GBIF occurrence-field class hold",
+      "sector": "ecology",
+      "pred_ids": [
+        "PRED-068"
+      ],
+      "fsot_lock": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "kill_if": "gbif_species_occurrence_benchmark exceeds 0.5% on dump refresh",
+      "urgency": "low",
+      "data_drop": {
+        "facility": "GBIF",
+        "product": "occurrence dumps",
+        "window": "continuous",
+        "status_as_of": "2026-08-25"
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.006006,
+          "green_gate_pass": true,
+          "domain": "GBIF_Species_Occurrence",
+          "file": "gbif_species_occurrence_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-Epidemiology-class",
+      "title": "Epidemiology class-count hold",
+      "sector": "epidemiology",
+      "pred_ids": [
+        "PRED-069"
+      ],
+      "fsot_lock": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "kill_if": "epidemiology_panel_benchmark exceeds 0.5% on World Bank / WHO refresh",
+      "urgency": "low",
+      "data_drop": {
+        "facility": "World Bank / WHO",
+        "product": "named health-indicator series",
+        "window": "annual / continuous",
+        "status_as_of": "2026-08-25"
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.015311,
+          "green_gate_pass": true,
+          "domain": "Epidemiology_Panel",
+          "file": "epidemiology_panel_benchmark.json"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-CKM-PMNS",
+      "title": "CKM / PMNS / alpha_s PDG holds",
+      "sector": "particle",
+      "pred_ids": [
+        "PRED-070",
+        "PRED-071",
+        "PRED-072",
+        "PRED-073",
+        "PRED-074",
+        "PRED-075"
+      ],
+      "fsot_lock": 0.5,
+      "unit": "pooled_median_error_pct_ceiling",
+      "kill_if": "next PDG combination more than 0.5% from frozen centrals, or a per-channel epsilon",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "PDG / NuFIT",
+        "product": "CKM magnitudes, PMNS angles, alpha_s(M_Z)",
+        "window": "PDG editions",
+        "status_as_of": "2026-08-25"
+      },
+      "check_kind": "literature_watch",
+      "outcome": "open_predata",
+      "detail": {
+        "note": "Literature kill-check; no auto scrape of papers.",
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-FRB-same-kernel",
+      "title": "FRB DM shares H0 local_sky_density kernel",
+      "sector": "transients",
+      "pred_ids": [
+        "PRED-076",
+        "PRED-052"
+      ],
+      "fsot_lock": 1.0,
+      "unit": "same_kernel_classifier",
+      "kill_if": "CHIME analysis requires a second fitted kernel or per-FRB epsilon distinct from H0 local_sky_density",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "CHIME/FRB",
+        "product": "catalog DM excess vs sky position",
+        "window": "continuous",
+        "status_as_of": "2026-08-25"
+      },
+      "check_kind": "catalog_refresh",
+      "outcome": "open_predata",
+      "detail": {
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-GW-siren-mid-sector",
+      "title": "GW standard siren stays mid-sector (~70)",
+      "sector": "gravitational_waves",
+      "pred_ids": [
+        "PRED-077"
+      ],
+      "fsot_lock": 70.024205,
+      "unit": "km/s/Mpc",
+      "kill_if": "siren H0 forced onto SH0ES class, or rho retuned",
+      "urgency": "medium",
+      "data_drop": {
+        "facility": "LVK / GWOSC",
+        "product": "public standard-siren H0",
+        "window": "O4 remainder / O5",
+        "status_as_of": "2026-08-25"
+      },
+      "check_kind": "catalog_refresh",
+      "outcome": "open_predata",
+      "detail": {
+        "contested_match": {
+          "name": "H0_Planck_CMB",
+          "fsot_error_pct": 0.192564,
+          "within_green_gate": true,
+          "status": "cmb_sector_resolved"
+        },
+        "in_t5_freeze": false
+      }
+    },
+    {
+      "id": "WATCH-Hydrology-sectors",
+      "title": "NWIS high-flow vs quiet two sectors",
+      "sector": "hydrology",
+      "pred_ids": [
+        "PRED-078",
+        "PRED-064"
+      ],
+      "fsot_lock": 1.0,
+      "unit": "two_sector_classifier",
+      "kill_if": "high-flow and quiet NWIS classes collapse to one sector, or hydro windows never scored",
+      "urgency": "high",
+      "data_drop": {
+        "facility": "USGS NWIS",
+        "product": "IV/DV discharge inside each frozen window",
+        "window": "score after each 7d hydro valid_to",
+        "status_as_of": "2026-08-25"
+      },
+      "check_kind": "open_science_panel",
+      "outcome": "local_green_hold",
+      "detail": {
+        "panel": {
+          "status": "green_hold",
+          "pooled_median_error_pct": 0.0,
+          "green_gate_pass": true,
+          "domain": "hydrology_benchmark",
+          "file": "hydrology_benchmark.json"
+        },
+        "in_t5_freeze": false
       }
     },
     {
@@ -860,7 +1270,8 @@
     "WATCH-Euclid-DR1-S8",
     "WATCH-Rubin-LSST-Y1-structure",
     "WATCH-Local-H0-JWST",
-    "WATCH-LVK-GWTC"
+    "WATCH-LVK-GWTC",
+    "WATCH-Dated-fluid-forecasts"
   ],
   "commands": {
     "offline": "python scripts/run_prediction_monitor.py",
@@ -871,5 +1282,5 @@
     "freeze": "python -c \"import sys; sys.path.insert(0,'scripts'); from build_toe_gap_closure import freeze_prereg; freeze_prereg()\"",
     "kaggle_pack": "python scripts/build_kaggle_prediction_pack.py"
   },
-  "report_sha256": "0b426fe27bcd08ce4ef10cd75e33b01642ffe766468f98d9b52eab6946c66253"
+  "report_sha256": "9e422c58a67e8f97f50edbae36806bf17ebd27271fbbaca69165e0564526ef7a"
 }

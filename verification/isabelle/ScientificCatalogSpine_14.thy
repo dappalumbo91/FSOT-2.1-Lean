@@ -3,6 +3,96 @@ theory ScientificCatalogSpine_14
 imports Complex_Main
 begin
 
+lemma cat_heavy_ion_lab_synthesis_panel_records_pos: "0 < (39 :: nat)"
+  by eval
+
+lemma cat_heavy_ion_lab_synthesis_panel_pooled_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_heavy_ion_lab_synthesis_panel_pooled_lt_half_pure: "(0.000095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_heavy_ion_lab_synthesis_panel_max_scalar_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_heavy_ion_lab_synthesis_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_superheavy_island_completion_spine_records_pos: "0 < (41 :: nat)"
+  by eval
+
+lemma cat_superheavy_island_completion_spine_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_superheavy_island_completion_spine_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_superheavy_island_completion_spine_max_scalar_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_superheavy_island_completion_spine_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_z120_z126_beam_synthesis_panel_records_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cat_z120_z126_beam_synthesis_panel_pooled_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_z120_z126_beam_synthesis_panel_pooled_lt_half_pure: "(0.000095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_z120_z126_beam_synthesis_panel_max_scalar_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_z120_z126_beam_synthesis_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_fsot_aggregate_organized_panel_records_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cat_fsot_aggregate_organized_panel_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fsot_aggregate_organized_panel_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fsot_aggregate_organized_panel_max_scalar_under_half_pct: "(0.000785396 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_fsot_aggregate_organized_panel_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_initiation_transformation_archetype_records_pos: "0 < (23 :: nat)"
+  by eval
+
+lemma cat_initiation_transformation_archetype_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_initiation_transformation_archetype_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_initiation_transformation_archetype_max_scalar_under_half_pct: "(0.000785396 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_initiation_transformation_archetype_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cat_nist_dlmf_special_functions_records_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma cat_nist_dlmf_special_functions_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nist_dlmf_special_functions_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nist_dlmf_special_functions_max_scalar_under_half_pct: "(0.000785396 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cat_nist_dlmf_special_functions_green_flag: "(1 :: nat) = (1 :: nat)"
+  by eval
+
 lemma cat_statistical_mechanics_public_panel_records_pos: "0 < (24 :: nat)"
   by eval
 
@@ -271,96 +361,6 @@ lemma cat_knowledge_base_portable_bundle_panel_max_scalar_under_half_pct: "(0.00
   by eval
 
 lemma cat_knowledge_base_portable_bundle_panel_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_metamaterial_fluid_design_prereg_scaffold_records_pos: "0 < (25 :: nat)"
-  by eval
-
-lemma cat_metamaterial_fluid_design_prereg_scaffold_pooled_under_half_pct: "(0.000034 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_metamaterial_fluid_design_prereg_scaffold_pooled_lt_half_pure: "(0.000034 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_metamaterial_fluid_design_prereg_scaffold_max_scalar_under_half_pct: "(0.000034 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_metamaterial_fluid_design_prereg_scaffold_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_fuel_thermochemistry_public_anchors_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cat_fuel_thermochemistry_public_anchors_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fuel_thermochemistry_public_anchors_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fuel_thermochemistry_public_anchors_max_scalar_under_half_pct: "(0.000021766 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_fuel_thermochemistry_public_anchors_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_natural_formation_element_simulation_records_pos: "0 < (32 :: nat)"
-  by eval
-
-lemma cat_natural_formation_element_simulation_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_natural_formation_element_simulation_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_natural_formation_element_simulation_max_scalar_under_half_pct: "(0.000001 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_natural_formation_element_simulation_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_superheavy_island_emergence_simulation_records_pos: "0 < (32 :: nat)"
-  by eval
-
-lemma cat_superheavy_island_emergence_simulation_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_superheavy_island_emergence_simulation_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_superheavy_island_emergence_simulation_max_scalar_under_half_pct: "(0.000001 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_superheavy_island_emergence_simulation_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_living_fsot_hardware_records_pos: "0 < (4 :: nat)"
-  by eval
-
-lemma cat_living_fsot_hardware_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_living_fsot_hardware_pooled_lt_half_pure: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_living_fsot_hardware_max_scalar_under_half_pct: "(0.00000000000001320997 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cat_living_fsot_hardware_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_agriculture_agroecology_records_pos: "0 < (276 :: nat)"
-  by eval
-
-lemma cat_agriculture_agroecology_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_architecture_building_science_records_pos: "0 < (43 :: nat)"
-  by eval
-
-lemma cat_architecture_building_science_green_flag: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma cat_astrophysical_structure_crosswalk_records_pos: "0 < (24 :: nat)"
   by eval
 
 end

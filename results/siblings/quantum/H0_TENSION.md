@@ -28,6 +28,20 @@ Lean contested-sector band is **2.5%**. SH0ES here is ~1.00% (0.7σ of ±1.04). 
 
 Lean sources: `scripts/bubble_bleed_physics.py`, `predictions/h0_multi_tool_predictions.json`, README §7.2.
 
+## Named objects (do not mix)
+
+JWST Perfect Host **H0 = 73.49 ± 0.93** (arXiv:2509.01667) is a **local Cepheid ladder**, not the PRED-001 bridge **70.75**. Scoring it as “the” H₀ kills the bridge falsely.
+
+| Object | Number | Fair compare |
+|--------|-------:|--------------|
+| Bridge PRED-001 | 70.75 | CCHP TRGB / dual-anchor 72.1 |
+| Dual-anchor PRED-024 | 72.1 | local-ladder *sector* |
+| Global | 68.440 | not a tool |
+| Planck-class | 67.4 | CMB row 67.384 (0.024%) |
+| Local ladder / Perfect Host | 73.49 | SH0ES-class 2.5% band · sightline hosts |
+
+Perfect Host 73.49 is PRED-001 tension **only if mis-scored as the bridge**. Hub wrap: Lean `docs/OBJECT_SCORING.md`.
+
 ```powershell
 python -m fsot_quantum.h0_tension
 ```

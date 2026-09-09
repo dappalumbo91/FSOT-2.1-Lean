@@ -172,7 +172,7 @@ That is the **empirical gate**.
 
 | Check | What to look at | Recent status on the public spine |
 |-------|-----------------|-----------------------------------|
-| Domain green gates | `data/benchmark_margin_audit.json` | **472 / 472 green**, **0 fail** (live: `docs/CURRENT_STATUS.md`) |
+| Domain green gates | `data/benchmark_margin_audit.json` | **477 / 477 green**, **0 fail** (live: `docs/CURRENT_STATUS.md`) |
 | Domain map | `data/publication/domain_atlas.csv` | **~403** atlas rows (coverage map — not the green-file count) |
 | Cross-domain residual language | `data/scientific_error_metrics_map.md` | Field-style MAPE / fractional / ppm mapping |
 | Contested sectors | `data/contested_observables_closure.json` (when regenerated) | Dual-anchor / tension-style panels |

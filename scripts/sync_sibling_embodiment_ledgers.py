@@ -34,6 +34,11 @@ GENETICS_FILES = [
     ("docs/OPEN.md", "OPEN.md"),
     ("docs/AUDIT.md", "AUDIT.md"),
     ("data/af_coverage.json", "af_coverage.json"),
+    ("formulas/fsot_protein_formulas.json", "formulas/fsot_protein_formulas.json"),
+    ("formulas/FSOT_PROTEIN_DERIVATIONS.md", "formulas/FSOT_PROTEIN_DERIVATIONS.md"),
+    ("crates/fsot_protein/formulas/fsot_protein_formulas.json", "formulas/crate_fsot_protein_formulas.json"),
+    ("FSOTGenetics/ChemLink.lean", "lean/ChemLink.lean"),
+    ("FSOTGenetics/Seeds.lean", "lean/Seeds.lean"),
 ]
 
 QUANTUM_FILES = [
@@ -55,8 +60,8 @@ def _first_existing(paths: list[Path]) -> Path | None:
 
 def _copy(src_root: Path, rel_src: str, dest_dir: Path, dest_name: str) -> dict:
     src = src_root / rel_src
-    dest_dir.mkdir(parents=True, exist_ok=True)
     dest = dest_dir / dest_name
+    dest.parent.mkdir(parents=True, exist_ok=True)
     if not src.is_file():
         return {"src": rel_src, "ok": False, "error": "missing"}
     shutil.copy2(src, dest)

@@ -31,6 +31,7 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
 
     sys.path.insert(0, str(ROOT / "scripts"))
     from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
+    from fsot_api_predict_lib import fsot_scaled  # noqa: E402
 
     mod, authority_path = load_fsot_compute()
     from geophysical_empirical_scalar import grace_mass_loss_cutoff_gt  # noqa: E402
@@ -59,19 +60,41 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
                 **scalar_meta,
             }
         )
+        if abs(delta) >= 1.0:
+            computed, err = fsot_scaled(abs(delta), "Planetary_Science")
+            records.append(
+                {
+                    "lab": "grace_cryosphere_lab",
+                    "property": "greenland_abs_delta_gt",
+                    "name": str(cur.get("month")),
+                    "computed": round(float(computed), 6),
+                    "measured": round(abs(delta), 6),
+                    "error_pct": round(float(err), 6),
+                    "eval_kind": "fsot_prediction",
+                    "fsot_domain": "Planetary_Science",
+                    "delta_gt": round(delta, 3),
+                    **scalar_meta,
+                }
+            )
 
-    matches = sum(1 for r in records if r["error_pct"] == 0.0)
-    errs = [r["error_pct"] for r in records]
+    classifiers = [r for r in records if r.get("property") == "greenland_mass_decline_classifier"]
+    matches = sum(1 for r in classifiers if r["error_pct"] == 0.0)
+    errs = [float(r["error_pct"]) for r in records]
+    scalars = [r for r in records if r.get("eval_kind") == "fsot_prediction"]
+    scalar_errs = [float(r["error_pct"]) for r in scalars]
     return {
-        "benchmark_version": "1.0",
+        "benchmark_version": "1.1",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "authority_path": str(authority_path),
         "source": "GFZ_GravIS_Greenland_total",
         "record_count": len(records),
         "observable_count": len(records),
+        "scalar_record_count": len(scalars),
+        "scalar_gate_applicable": True,
         "stability_match_count": matches,
-        "stability_match_rate": matches / len(records) if records else 0.0,
+        "stability_match_rate": matches / len(classifiers) if classifiers else 0.0,
         "median_error_pct": sorted(errs)[len(errs) // 2] if errs else None,
+        "scalar_median_error_pct": sorted(scalar_errs)[len(scalar_errs) // 2] if scalar_errs else None,
         "D_eff": 16,
         "crosswalk_modules": ["FSOT.Formal.CryospherePriors", "FSOT.Formal.GraceCryospherePriors"],
         "records": records,

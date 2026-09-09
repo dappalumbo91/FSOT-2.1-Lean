@@ -60,6 +60,12 @@ experiments/
 # Local session handoff (do not publish)
 docs/SESSION_STATUS_AND_GAP_FILL.md
 
+# Local gauntlet watchers/logs (summary: results/audit_gauntlet_*.md)
+data/audit_gauntlet_*/
+
+# Local journal table extract (Riess+2022 Table 2 dump)
+data/sh0es_r22_table2.tex
+
 
 # Rust build artifacts
 **/target/

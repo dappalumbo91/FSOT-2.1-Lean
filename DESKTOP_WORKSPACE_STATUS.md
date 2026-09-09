@@ -53,7 +53,7 @@ from seeds \((\pi, e, \varphi, \gamma, G)\). Smoke values from oracle: \(\varphi
 | F\* | `verification/fstar/` | passed |
 | Rust replay | `verification/rust/` | passed |
 | QEMU boot | `verification/qemu/` | passed |
-| Obligations | `verification/obligations/` | 2585 full / 2022 atomic |
+| Obligations | `verification/obligations/` | 2587 full / 2024 atomic |
 
 **Isabelle math upgrade (local, uncommitted or pending commit):**
 
@@ -73,7 +73,7 @@ Report snapshot: `data/cross_proof_verification_report.json` → `overall_ok: tr
 | Artifact | Status |
 |----------|--------|
 | Domain atlas ~403 rows | `data/publication/domain_atlas.csv` — coverage map, not the green-file count |
-| Benchmark margin | **472/472 green**, 0 fails (`data/benchmark_margin_audit.json`) |
+| Benchmark margin | **477/477 green**, 0 fails (`data/benchmark_margin_audit.json`) |
 | Navigator | `data/fsot_domain_navigator.json` + `.db` |
 | Prereg predictions | `predictions/preregistered_predictions_manifest.yaml` |
 | Formula corpus | `vendor/formula_corpus/by_domain/strict_empirical.jsonl` (~8.3 MB) |

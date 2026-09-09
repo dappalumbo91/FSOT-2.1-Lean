@@ -22,8 +22,9 @@ A storm, a quake, a flare, an eruption is **pressure that stops** — the cell r
 | Length | \(R_\oplus \cdot \mathrm{POOF}/25\) ≈ **39.1 km** | EQ/volc radius | grid / station graph at that scale |
 | Horizon | \(\varphi^4\) ≈ **7 days** | freeze one issue per day | sliding window, hourly issue |
 | Aftershock timing | \(n(t)\propto 1/(t+1/\varphi)^{1}\) | carried on each EQ cell | score Omori residual vs USGS decay |
-| Weather window | 48 h | NDBC storm vs quiet | METAR/NWP ingest, same valve |
-| Solar window | 72 h | planetary Kp sector | GOES X-ray + Kp stream |
+| Weather window | 48 h | NDBC storm vs quiet, one cell per ocean basin | METAR/NWP ingest, same valve |
+| Solar window | 72 h | planetary Kp sector (Kp≥5 when loading) | GOES X-ray + Kp stream |
+| Tide window | 48 h | CO-OPS surge residual vs harmonic; **score** bar = POOF m; **issue** bar = POOF·(1+POOF) | station graph |
 
 Quiet vs storm are **two sectors of one valve**, not two physics (same grammar as Planck vs SH0ES).
 
@@ -45,6 +46,15 @@ python scripts/score_earth_fluid_forecasts.py
 PRED-064 kills rewriting an issued file or abandoning scoring.
 
 The 2026-08-25 issue is the first iron-out set: Indonesia, Peru, Timor Leste (loading), Scotia Sea, Vanuatu, Japan (loading), South Sandwich; Arctic NDBC storm cells; Kp quiet 72 h; Volcano Islands.
+
+Dated hydrology gages (next issues): IDs verified 2026-09-07 against NWIS. `06803510` is Little Salt Creek near Lincoln NE, **not** Missouri at Hermann (`06934500`). Issued JSON keeps the old IDs.
+
+Playbook after the 12-kill autopsy (encoded for **new** issues, not rewrites):
+
+- EQ: `expect_event` only on `loading_suction` / `post_poof_aftershock`; `mag_min=4.5` if expect else `5.0`.
+- Weather quiet: only if pres≥1010 hPa **and** gst<8 m/s; skip basin `other`.
+- Tide surge: issue only if residual ≥ POOF·(1+POOF); score still vs POOF.
+- Retrospective of the 12 frozen kills: [`../results/dated_forecast_scores/RULE_RETRO.md`](../results/dated_forecast_scores/RULE_RETRO.md). Public scoreboard of issued files stays those kills.
 
 ---
 

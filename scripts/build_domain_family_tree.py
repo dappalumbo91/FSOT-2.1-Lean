@@ -92,7 +92,7 @@ FILLED_INTERCONNECTS = [
         "artifact": "vendor/fsot_compute.py §25",
     },
     {
-        "name": "Between-scale interconnects (5 gaps)",
+        "name": "Between-scale interconnects (wave/fluid/fridge/orifice/ceiling/social/seis-geo)",
         "cores": [
             "Acoustics",
             "Seismology",
@@ -104,9 +104,12 @@ FILLED_INTERCONNECTS = [
             "Nuclear_Physics",
             "Particle_Physics",
             "Quantum_Gravity",
+            "Geophysics",
+            "Materials_Science",
+            "Optics",
         ],
         "status": "filled",
-        "note": "PREM+NDBC+ENDF+Carnot+QG+social tanks. Pooled ~0.03% GREEN.",
+        "note": "PREM+NDBC+ENDF+Carnot+QG+social+seis-geo. Pooled ~0.03% GREEN.",
         "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md",
     },
 ]
@@ -116,8 +119,8 @@ SCALE_GAPS = [
     {
         "name": "Developmental mechanics (sibling-owned)",
         "cores": ["Biology", "Fluid_Dynamics", "Neuroscience"],
-        "why": "Zebrafish 0.358% is inside 0.5%. Genetics repo is the live fold; migrate when that freeze lands.",
-        "fill_looks_like": "Do not densify here. Wait for FSOT-Genetics product freeze, then hub residual.",
+        "why": "Zebrafish 0.358% is inside 0.5%. Genetics product freeze 2026-08-17 is quoted in the hub.",
+        "fill_looks_like": "Do not densify zebrafish here. CASP/CAMEO blind is OPEN (docs/CASP_CAMEO_BLIND_PROTOCOL.md).",
     },
 ]
 

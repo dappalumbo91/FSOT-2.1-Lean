@@ -1,6 +1,6 @@
 # Verification granularity audit (deep cut)
 
-> **Session snapshot 2026-08-03.** Live green is **472/472**, atomic **2022**, full formal **2585**. See [`CURRENT_STATUS.md`](CURRENT_STATUS.md) and [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Layer numbers below are the August 3 cut, not the live gate.
+> **Session snapshot 2026-08-03.** Live green is **477/477**, atomic **2024**, full formal **2587**. See [`CURRENT_STATUS.md`](CURRENT_STATUS.md) and [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md). Layer numbers below are the August 3 cut, not the live gate.
 
 **Generated:** `2026-08-03T21:20:28.623027+00:00`  
 **Repo:** FSOT-2.1-Lean  

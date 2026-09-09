@@ -50,6 +50,18 @@ TIER_A_HAND = {
     "PRED-052",  # FRB DM
     "PRED-053",  # JWST high-z hold
     "PRED-057",  # slow vs fast rupture — literature constitutive-law fight
+    "PRED-066",  # exoplanet architecture class vs NASA archive
+    "PRED-067",  # GWTC chirp-mass class vs O4/O5
+    "PRED-070",  # CKM V_ud
+    "PRED-071",  # CKM V_tb
+    "PRED-072",  # CKM delta
+    "PRED-073",  # PMNS sin2 θ12
+    "PRED-074",  # PMNS sin2 θ13
+    "PRED-075",  # α_s(M_Z)
+    "PRED-076",  # FRB same sky-density kernel as H0
+    "PRED-077",  # GW siren mid-sector H0
+    "PRED-082",  # Gaia parallax class vs DR4
+    "PRED-084",  # FRB orifice repeater vs paper-rip
 }
 
 # Grounded lab / engineering (not scaffold fiction)
@@ -72,6 +84,14 @@ TIER_C_HAND = {
     "PRED-062",  # solar quiet/storm sectors
     "PRED-063",  # climate+marine hold
     "PRED-064",  # dated fluid-pressure windows
+    "PRED-065",  # NOAA CO-OPS tides residual
+    "PRED-068",  # GBIF occurrence class
+    "PRED-069",  # epidemiology class counts
+    "PRED-078",  # hydrology flood/quiet two sectors
+    "PRED-079",  # MPCORB NEA class
+    "PRED-080",  # GRACE Greenland |delta| mass residual
+    "PRED-081",  # agriculture season class
+    "PRED-083",  # paleoclimate millennial class
 }
 
 # Everything else hand-curated with Scaffold in domain name → D

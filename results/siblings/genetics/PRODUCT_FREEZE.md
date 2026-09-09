@@ -26,6 +26,17 @@ crystals the query UniProt page never lists (CaM 3CLN / P0DP29).
 | Product sub-2 Å | **10/10** |
 | Fair-cap 0.95 median (handicap) | 1.14 Å |
 
+**Do not cross-cite Å objects.** Reviewers mix these; they are not the same measurement.
+
+| Object | Typical number | What it is |
+|--------|---------------:|------------|
+| **FSOT product** (this freeze) | **0.13 Å** | Same-data homolog Cα vs eval PDB (n=10) |
+| **AlphaFold** on the same 10 | **0.47 Å** | Trained interpolator, same information universe |
+| **Cryo-EM FSC map** | **~1.2 Å** | Experimental map resolution (e.g. IUCrJ 1.24 Å). Not product RMSD. |
+| **Bulk / no-map MDS** | **~13 Å** | Retired `--force-bulk` ceiling. **Not** the product. |
+
+CASP/AF3 papers that quote an AF ceiling or FSC Å are **not** a hit on 0.13 Å. Blind plan: [`OPEN.md`](OPEN.md) · hub protocol [`FSOT-2.1-Lean/docs/CASP_CAMEO_BLIND_PROTOCOL.md`](https://github.com/dappalumbo91/FSOT-2.1-Lean/blob/main/docs/CASP_CAMEO_BLIND_PROTOCOL.md).
+
 Notable product Cα RMSDs:
 
 | protein | product Å | AF Å |

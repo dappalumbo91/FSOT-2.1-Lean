@@ -1,0 +1,33 @@
+{
+  "pin": "D1D38A",
+  "generated_at": "2026-09-08T00:37:16.886475+00:00",
+  "status": "GREEN",
+  "object": "BH\u2192WH orifice outgassing (width\u00d7fluence vs e\u00b7POOF)",
+  "not_object": "200\u00b7(1+local_sky_density) on DM excess \u2014 REMEDIED_WRONG_APPLY",
+  "classifier_ok": 37,
+  "classifier_n": 37,
+  "classifier_accuracy": 1.0,
+  "missing_fluence": [
+    "FRB20190702B"
+  ],
+  "width_ratio_measured": 5.0,
+  "width_ratio_seed": 5.0,
+  "width_ratio_error_pct": 0.0,
+  "activity_season_days": 16.32599725669886,
+  "activity_season_measured_days": [
+    16.35
+  ],
+  "activity_season_error_pct": 0.1468057694259493,
+  "rejected_phi6_days": 17.944271909999163,
+  "rejected_phi6_error_pct": 9.75089853210496,
+  "rejected_2pi_phi2_days": 16.449592691810107,
+  "rejected_2pi_phi2_error_pct": 0.6091296135174651,
+  "pooled_median_error_pct": 0.0,
+  "short_period_p34_errors_pct": [
+    1.9607843137254901,
+    2.0408163265306123,
+    0.0,
+    0.5025125628140703
+  ],
+  "kill": "Stuff 200\u00b7(1+dens) into 0.5%; put DM back into puncture energy; fit a new threshold; retune POOF; 0.5%-gate \u03c6^6 or 2\u03c0\u03c6\u00b2."
+}

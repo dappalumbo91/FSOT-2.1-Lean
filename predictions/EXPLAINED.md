@@ -107,7 +107,7 @@ Tables: `reports/H0_MULTI_TOOL_PREDICTIONS.md`, `H0_SIGHTLINE_PREDICTIONS.md`, `
 
 ## 4. Beyond the sky: the multi-domain prediction atlas
 
-The model is not a cosmology hobby. The same seed engine is residual-gated on **476** green domain panels. The atlas turns that into **predictions**. Earth-system class locks (weather / seismic / volcanic / solar) are the same grammar as H₀ — sectors, not dates: [`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md). Scientist-question map: [`reports/SCIENTIST_OPEN_QUESTIONS.md`](reports/SCIENTIST_OPEN_QUESTIONS.md).
+The model is not a cosmology hobby. The same seed engine is residual-gated on **476** green domain panels. The atlas turns that into **predictions**. Earth-system class locks (weather / seismic / volcanic / solar) use the same grammar as H₀ — sectors of one valve — **plus** dated pressure-cell windows (PRED-064) scored in `results/`: [`reports/EARTH_SYSTEM_PREDICTIONS.md`](reports/EARTH_SYSTEM_PREDICTIONS.md) · [`../results/dated_forecast_scores/REPORT.md`](../results/dated_forecast_scores/REPORT.md). Scientist-question map: [`reports/SCIENTIST_OPEN_QUESTIONS.md`](reports/SCIENTIST_OPEN_QUESTIONS.md). Hand PREDs: **76** (PRED-001–084).
 
 | Kind | Count (approx.) | What it means in English |
 |------|----------------:|--------------------------|
@@ -177,7 +177,7 @@ Policy: `docs/PREDICTION_MONITORING_POLICY.md`
 2. Read the number + kill criterion in `predictions/`.  
 3. When the survey publishes, compare.  
 4. Log hold / kill — **do not** edit the old predicted central.  
-5. Optional full stack: green gate 472/472, multiprover `overall_ok`, pin D1D38A.
+5. Optional full stack: green gate 477/477, multiprover `overall_ok`, pin D1D38A.
 
 Quick kit: `docs/SKEPTIC_REPLICATION_KIT.md` · `docs/INDEPENDENT_REPRODUCTION.md`
 

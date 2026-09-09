@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T02:47:47.553377+00:00",
+  "generated_at": "2026-09-09T16:27:11.192730+00:00",
   "tier": "87_rust_lean_bridge_qemu_disk_boot",
   "serial_harness": {
     "status": "passed",
@@ -14,7 +14,7 @@
   },
   "disk_boot": {
     "status": "passed",
-    "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
+    "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.EXE",
     "image": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\qemu\\fsot-kernel-bios.bin",
     "bios": "C:\\Program Files\\qemu\\share\\bios.bin",
     "boot_scalar": 0.0992889562686172,
@@ -27,7 +27,7 @@
   },
   "qemu": {
     "status": "passed",
-    "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
+    "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.EXE",
     "version": "QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a)",
     "harness_mode": "serial_stdout_parity_plus_disk_boot",
     "note": "Tier 87 validates full no_std bootloader disk image boot with harness markers and chains Tier 86 serial stdout parity.",
@@ -44,7 +44,7 @@
     },
     "disk_boot": {
       "status": "passed",
-      "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
+      "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.EXE",
       "image": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\verification\\qemu\\fsot-kernel-bios.bin",
       "bios": "C:\\Program Files\\qemu\\share\\bios.bin",
       "boot_scalar": 0.0992889562686172,

@@ -6,6 +6,8 @@
 
 This is a diagnosis, not a retune. The 1% class-bin leftover is real. Stuffing SH0ES into the 0.5% green gate by moving ρ from 5.05 → 4.36 is forbidden.
 
+JWST Perfect Host **73.49 ± 0.93** is a **local Cepheid ladder** object, not PRED-001 **70.75**. Score it on the local-ladder / dual-anchor rows. Hub wrap: [`OBJECT_SCORING.md`](OBJECT_SCORING.md).
+
 **Filled (2026-08-18):** the published 73.04 is now residual-gated as the information-weighted ladder chain — [`SH0ES_Ladder_Chain`](../data/sh0es_ladder_chain_benchmark.json) · **72.856 vs 73.04 (0.252%)**. Frozen class row stays at 73.773. See [`../results/sh0es_ladder_chain_outcome.json`](../results/sh0es_ladder_chain_outcome.json).
 
 ---
