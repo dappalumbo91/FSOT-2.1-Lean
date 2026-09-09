@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-09T21:49:07.720439+00:00",
+  "generated_at": "2026-09-09T23:35:59.491378+00:00",
   "pin": "D1D38A",
-  "n": 20,
+  "n": 21,
   "laws": [
     {
       "id": "R1",
@@ -202,6 +202,16 @@
       "live": "cell 39.1 km \u00b7 cycle 977.8 km \u00b7 cycle/cell = 25. Closed kills map onto transferred_poof / quiet_hold / unexpected_poof. Public cell-kill unchanged.",
       "code": "vendor/fsot_earth_fluid_forecast.py orifice_scale_km \u00b7 scripts/build_dynamic_system_triangulation.py \u00b7 FSOT/Formal/ScalarEngineStructure.lean kernel_km_eq_orifice_scale_one \u00b7 cycle_km_eq_orifice_scale_ceiling",
       "not": "A calibrated event probability. Many-worlds. Rewriting kill_if onto cycle_km. A fitted n-body gravity spring."
+    },
+    {
+      "id": "D12",
+      "kind": "discovered",
+      "name": "time_is_emergent_process",
+      "statement": "Time is not a fundamental axis. It is the duration of a fold/mold as the pattern travels through the flow. Dual of orifice_scale: process_time(\u03c40,d)=\u03c40\u00b7d/25 with \u03c40=\u03c6^4 days at the ceiling. Calendar clocks (Cs-133) are a readout. Dilation is flow-contingent (\u03c4_rate=(1+S)/(1+|flow_balance|)). Dated windows are that process time projected onto SI days at the right fold \u2014 not a UTC hypocenter as a 0.5% central.",
+      "closed_form": "process_time(\u03c40, d) = \u03c40 \u00b7 d / 25;  \u03c40 = \u03c6^4 days;  Omori c = 1/\u03c6",
+      "live": "\u03c6^4 \u2248 6.85 d \u2192 issued EQ/hydro 7 d at d=25; cell tick \u03c6^4/25 \u2248 0.274 d. Volcanic 14 d = 2\u00b7\u03c6^4. Weather/tide 48 h and solar 72 h stay the frozen kind projections. Omori p=1 = GR b. FPC dilation probes (photon sphere, ISCO, GPS) already gated. Public issued JSON unchanged.",
+      "code": "vendor/fsot_earth_fluid_forecast.py process_time_days \u00b7 scripts/time_emergence_lib.py tau_rate_unified \u00b7 FSOT/Formal/ScalarEngineStructure.lean process_time_ceiling \u00b7 process_time_one_mul_ceiling",
+      "not": "Newtonian UTC hypocenter as a 0.5% central. Retuning \u03c6^4 to hit a clock. Rewriting issued windows. Beating ECMWF at S2S. A fitted aftershock \u03b2."
     }
   ]
 }
