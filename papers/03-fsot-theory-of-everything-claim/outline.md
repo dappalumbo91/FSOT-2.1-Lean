@@ -2,7 +2,7 @@
 
 Living law ledger: [`docs/LAWS_OF_REALITY.md`](../../docs/LAWS_OF_REALITY.md) (R1–R9, D1–D11).  
 Instrument contract: [`docs/SCIENTIFIC_INSTRUMENT.md`](../../docs/SCIENTIFIC_INSTRUMENT.md).  
-`FREEZE.yaml` in this folder is an **older 412-green snapshot**. Next manuscript freeze = current `main` (477/477, D11) — do not mix.
+`FREEZE.yaml` in this folder is the **2026-09-09** edition (477/477, D11, claim SHA `40de0d9`). Manuscript: Desktop `arxiv-papers/03-fsot-theory-of-everything-claim/`.
 
 1. Introduction — fragmentation problem; explicit ToE claim under frozen checklist  
 2. Claim taxonomy — Proved / Numerically verified / Empirical / Interpretation  

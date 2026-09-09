@@ -1,6 +1,8 @@
 # FSOT mathematician / scientist how-to
 
-**Purpose:** Enough structure for a mathematician or scientific auditor to **reconstruct**, **verify**, and **simulate** the FSOT scalar engine and its domain interfaces without folklore.  
+**Purpose:** Enough structure for a mathematician or scientific auditor to **reconstruct**, **verify**, and **simulate** the FSOT scalar engine and its domain interfaces without folklore.
+
+**Flagship paper freeze (2026-09-09):** [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) — Label A/B, 477/477, Lean structure theorems 52, classical YM uniqueness OPEN_NOT_CLAIMED. Full T1/T2/T3 identities below match that manuscript.  
 **Companion machine dumps:**  
 - [`data/fsot_system_math_audit.json`](../data/fsot_system_math_audit.json) — seeds, layers, 35 domains, consistency  
 - [`data/fsot_building_block_hierarchy.json`](../data/fsot_building_block_hierarchy.json) — nodes/edges for hierarchical simulation  
@@ -41,10 +43,10 @@ L3  Formula branches:  T1 (observer base), T2 (linear), T3 (valve–acoustic–p
 L4  Scalar:  S = K · (T1 + T2 + T3)
       ↓
 L5a Core domain interfaces (35): DomainConfig → S
-L5b Extension interfaces (~371): same ScalarInput from extension_domains_manifest
-      ↓  (total ~406 formula interfaces — not core-only)
+L5b Extension interfaces (same ScalarInput from extension_domains_manifest)
+      ↓  (full expansion; live green-file count in CURRENT_STATUS / freeze)
 L6  Residual law:  c = m · (1 + |S| · f)   [f from core / nearest-core inheritance]
-L7  Empirical gate:  pooled median ε ≤ 0.5%  (~470 green benchmark panels)
+L7  Empirical gate:  pooled median ε ≤ 0.5%  (freeze 2026-09-09: **477/477** green files)
 ```
 
 **Simulation reading:** L0–L4 is the universal syntax; L5a/L5b choose dimensional folds across the **full expansion**; L6–L7 attach measurement.  

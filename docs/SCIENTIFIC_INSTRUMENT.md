@@ -70,6 +70,6 @@ Siblings (same pin, different product): [`../RELATED_EMBODIMENTS.md`](../RELATED
 
 The preprint **articulates** R1–R9 and D1–D11. The repo **executes** them. The siblings **apply** them.
 
-Next paper freeze (when you say go): current `main`, 477/477, pin D1D38A, laws through D11. Existing `papers/03-…/FREEZE.yaml` is an older 412-green snapshot — do not cite it as live.
+**Live Paper 03 freeze:** edition `arxiv-03-fsot-theory-of-everything-claim-2026-09-09`, 477/477 green, pin D1D38A, laws through D11, claim SHA `40de0d9` (accept `main` tip ≥ that SHA if green stays 477/477). Manuscript: Desktop `arxiv-papers/03-fsot-theory-of-everything-claim/`. Hub pins: [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/).
 
 Kill: a per-user fitted ε. Kill: siloing a second scalar engine per field. Kill: stuffing a dump into the 0.5% gate.

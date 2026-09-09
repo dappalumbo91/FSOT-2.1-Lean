@@ -30,8 +30,9 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 | Curious lay reader | [`CONCEPTS.md`](CONCEPTS.md) → [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) |
 | Applying FSOT in a field | [`APPLY.md`](APPLY.md) · instrument: [`SCIENTIFIC_INSTRUMENT.md`](SCIENTIFIC_INSTRUMENT.md) · directory: [`SYSTEM_DIRECTORY.md`](SYSTEM_DIRECTORY.md) |
 | Step-back / ToE standpoint | [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md) · laws: [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) |
-| Working scientist / engineer | [`CONCEPTS.md`](CONCEPTS.md) → [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) |
-| PhD / formal methods | Math key §14 + [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) |
+| Working scientist / engineer | [`CONCEPTS.md`](CONCEPTS.md) → [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) · instrument: [`SCIENTIFIC_INSTRUMENT.md`](SCIENTIFIC_INSTRUMENT.md) |
+| PhD / mathematician | [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md) → Math key §14 + [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) |
+| Flagship paper (Label A/B) | [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) · freeze 2026-09-09, 477/477 |
 | Here to break it | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
 
 ## 10-minute path (any technical reader)
@@ -44,6 +45,7 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 | 4 | Run `python scripts/audit_all_benchmark_margins.py` | Empirical green gate |
 | 5 | Optional formal: `python scripts/run_cross_proof_verification.py` | Multi-prover report (long) |
 | 6 | Atlas: `python scripts/query_fsot_atlas.py --stats` | Organized inventory of all green solves |
+| 7 | Paper freeze: [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) | Label A/B checklist, 477/477, D11 |
 
 Human reproduction guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).  
 **Open science only (no keys):** [`OPEN_SCIENCE_ONLY_POLICY.md`](OPEN_SCIENCE_ONLY_POLICY.md) · Atlas design: [`ATLAS_DATABASE_DESIGN.md`](ATLAS_DATABASE_DESIGN.md)

@@ -2,7 +2,7 @@
 
 **Fluid Spacetime Omni-Theory (FSOT)**  
 **Author:** Damian Arthur Palumbo  
-**Updated:** 2026-08-05 (accuracy pass — live counts live in [`CURRENT_STATUS.md`](CURRENT_STATUS.md))
+**Updated:** 2026-09-09 (live counts in [`CURRENT_STATUS.md`](CURRENT_STATUS.md); paper freeze 477/477)
 
 This is the plain-language explanation of what FSOT is, why it exists, and how the mathematics supports the philosophy — without requiring a physics degree.
 
@@ -13,6 +13,8 @@ This is the plain-language explanation of what FSOT is, why it exists, and how t
 | How to check the math yourself | [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
 | Scientist one-page math | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) |
 | Full technical key | [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) |
+| Use it as a tool | [`SCIENTIFIC_INSTRUMENT.md`](SCIENTIFIC_INSTRUMENT.md) · [`APPLY.md`](APPLY.md) |
+| The checklist paper | [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) |
 
 For technical proof details, see `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md` and `docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`.
 
@@ -154,17 +156,39 @@ When you see any FSOT statement, ask which tier it is:
 
 ---
 
+## How a regular person uses this
+
+You do not need 477 domains, Lean, or a physics degree.
+
+1. **Read the picture.** [`CONCEPTS.md`](CONCEPTS.md) — one fluid, valves, black hole as information flow.
+2. **Read this file** — what “green” means (typical error under half a percent).
+3. **Open the scoreboard.** [`CURRENT_STATUS.md`](CURRENT_STATUS.md) — live pin **D1D38A**, 477/477 green on this freeze.
+4. **If you want to try one number** (optional, needs Python):
+   ```powershell
+   git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git
+   cd FSOT-2.1-Lean
+   pip install -r requirements.txt
+   python scripts/query_fsot_domain_navigator.py
+   ```
+5. **The checklist paper** (for scientists and reviewers) is [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/). The PDF lives in the Desktop `arxiv-papers` pipeline folder. It is *not* a 477-chapter encyclopedia.
+
+What you should *not* do: invent a new dial when a number looks off. Wrong scale of the thing being measured is the usual mistake, not a missing coefficient.
+
+---
+
 ## For researchers checking this work
 
 ```powershell
 cd FSOT-2.1-Lean
 pip install -r requirements.txt
-python scripts/build_founding_pipeline.py
-python scripts/fsot_verification_runner.py
+python scripts/run_publication_verification_bundle.py
+python scripts/audit_all_benchmark_margins.py
+python scripts/build_toe_gap_closure.py
 ```
 
-Founding pipeline: PDF extract → 35-law audit → reconcile corpus → verify gate.  
-**No LLM training** runs in this pipeline — that comes after the corpus is clean.
+Expect **477/477** green and Label A / Label B true. Full human path: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md). Skeptic 15-minute path: [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md). Mathematician reconstruction: [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md).
+
+Founding-era 35-law audit still exists (`python scripts/build_founding_pipeline.py`) but it is **not** the flagship kill path.
 
 ---
 

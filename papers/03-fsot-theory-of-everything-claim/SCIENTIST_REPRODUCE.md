@@ -25,6 +25,14 @@ Expect:
 - `data/cross_proof_verification_report.json` → `overall_ok: true` (optional full gauntlet)
 - `data/tier_scalar_precision_closure.json` → `closed: false` on **two named objects** (SH0ES chain, Cepheid PL). That is **not** a green-gate fail.
 
+## Three doors (same pin)
+
+| Who | Start |
+|-----|--------|
+| Scientist / field user | [`docs/SCIENTIFIC_INSTRUMENT.md`](../../docs/SCIENTIFIC_INSTRUMENT.md) · [`docs/APPLY.md`](../../docs/APPLY.md) |
+| Mathematician | [`docs/FSOT_MATHEMATICIAN_HOWTO.md`](../../docs/FSOT_MATHEMATICIAN_HOWTO.md) · `FSOT/Formal/ScalarEngineStructure.lean` |
+| Anyone | [`docs/START_HERE.md`](../../docs/START_HERE.md) · [`docs/FSOT_EXPLAINED_LAYMAN.md`](../../docs/FSOT_EXPLAINED_LAYMAN.md) |
+
 ## Instrument (use in a field)
 
 [`docs/SCIENTIFIC_INSTRUMENT.md`](../../docs/SCIENTIFIC_INSTRUMENT.md) · [`docs/APPLY.md`](../../docs/APPLY.md)

@@ -14,6 +14,7 @@
 | **Layman** (curious, no degree required) | [`CONCEPTS.md`](CONCEPTS.md) | [`FSOT_EXPLAINED_LAYMAN.md`](FSOT_EXPLAINED_LAYMAN.md) → [`SYSTEM_DIRECTORY.md`](SYSTEM_DIRECTORY.md) | 25-D fluid, valves, BH as information flow |
 | **Scientist / engineer** | [`CONCEPTS.md`](CONCEPTS.md) + [`APPLY.md`](APPLY.md) + [`SCIENTIFIC_INSTRUMENT.md`](SCIENTIFIC_INSTRUMENT.md) | [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) → [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) | Seeds, interface first, residual law |
 | **PhD / formal methods** | [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md) | [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §0–3 + hierarchy · [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) · [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · Lean `FSOT/Formal/Scalar.lean` · machine `data/fsot_building_block_hierarchy.json` | Layers A/B/C, building-block network, what is *proved* vs residual-gated |
+| **Flagship paper** | [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) | Freeze 2026-09-09 · 477/477 · Label A/B · Desktop `arxiv-papers/03-fsot-theory-of-everything-claim/` (LaTeX/PDF) | Checklist paper, not the 477-domain atlas |
 
 Everyone who will **run code** also reads [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) or the skeptic kit.
 
