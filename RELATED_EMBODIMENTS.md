@@ -12,6 +12,7 @@ The **same law** \(S = K(T_1+T_2+T_3)\) (pin **D1D38A**) routes cosmology, quant
 | **Neural monorepo** | https://github.com/dappalumbo91/FSOT-2.1-Neural | Allen wet-lab, scalpel, Python battery |
 | **Zig neural mind** | https://github.com/dappalumbo91/fsot-neuron-zig | Fixed-lattice **neuroscience-domain engine** under D1D38A |
 | **FSOT-GPU (CUDA operators)** | https://github.com/dappalumbo91/FSOT-GPU | Collapse/consensus CUDA, multi-lang parity, industry-host layer swap — **not** free-param weight physics |
+| **FSOT-Materials** | https://github.com/dappalumbo91/FSOT-Materials | Forward **design** lab (fuels + synthetic lattices). Hub keeps PRED-034 residual green panels. Product freeze is a property vector, not a 477-domain headline. |
 
 **Do not** evaluate the Zig mind without this Lean/archive spine.  
 **Do not** evaluate this Lean hub as if the neural embodiment did not exist.  

@@ -21,6 +21,7 @@ A storm, a quake, a flare, an eruption is **pressure that stops** — the cell r
 |--------|------------------|-----|-------------------|
 | Length | \(R_\oplus \cdot \mathrm{POOF}/25\) ≈ **39.1 km** | EQ/volc **cell** | grid / station graph at that scale |
 | Planetary cycle | \(R_\oplus \cdot \mathrm{POOF}\) ≈ **978 km** | arc / trench / basin tanks | solar–volcanic–seismic coupling |
+| Orifice scale | \(L\cdot\mathrm{POOF}\cdot d/25\) | normalize the scored area to fold \(d\) | potentials from frozen valve (D11) |
 | Horizon | \(\varphi^4\) ≈ **7 days** | freeze one issue per day | sliding window, hourly issue |
 | Aftershock timing | \(n(t)\propto 1/(t+1/\varphi)^{1}\) | carried on each EQ cell | score Omori residual vs USGS decay |
 | Weather window | 48 h | NDBC storm vs quiet, one cell per ocean basin | METAR/NWP ingest, same valve |

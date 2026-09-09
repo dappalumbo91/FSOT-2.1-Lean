@@ -45,7 +45,16 @@ def main() -> int:
         source_note = f"{source_note}+literature"
     fetch_errors: list[str] = []
     if src.get("fetch_chime"):
-        urls = [u for u in (src.get("chime_catalog_url"), src.get("chime_catalog_mirror")) if u]
+        urls = [
+            u
+            for u in (
+                src.get("chime_catalog_url"),
+                src.get("chime_catalog_mirror"),
+                src.get("chime_catalog_zenodo_cat2"),
+                src.get("chime_catalog_iop_excerpt"),
+            )
+            if u
+        ]
         live, live_source, fetch_errors = fetch_chime_catalog_with_fallback(urls)
         if live:
             rows = merge_catalog_rows(rows, live)

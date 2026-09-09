@@ -6,6 +6,8 @@ import csv
 import io
 import json
 import ssl
+import zipfile
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any
 from urllib.request import Request, urlopen
@@ -15,6 +17,8 @@ CHIME_CATALOG_URLS: list[str] = [
     "https://www.chime-frb.ca/catalog/CHIME_FRB_catalog.csv",
     "https://storage.googleapis.com/chimefrb-dev.appspot.com/catalog1/chimefrbcat1.csv",
     "https://storage.googleapis.com/chimefrb-dev.appspot.com/catalog2/chimefrbcat2.csv",
+    # Catalog 2 public dump (Jia+2026 Zenodo; columns 1–11 are CHIME/FRB Cat-2).
+    "https://zenodo.org/api/records/18843430/files/data.csv/content",
 ]
 
 IOP_CATALOG2_EXCERPT_URL = (
@@ -73,6 +77,18 @@ def _row_from_chime_csv(row: dict[str, str]) -> dict[str, Any] | None:
         or _normalize_name(row.get("source"))
     )
     if not name:
+        for key, val in row.items():
+            if key and "tns" in str(key).lower():
+                name = _normalize_name(val)
+                if name:
+                    break
+    if not name:
+        for val in row.values():
+            cand = _normalize_name(val)
+            if cand and cand.upper().startswith("FRB"):
+                name = cand
+                break
+    if not name:
         return None
     repeater_name = str(row.get("repeater_name") or row.get("repeater") or "").strip()
     repeater_raw = repeater_name.lower()
@@ -80,8 +96,8 @@ def _row_from_chime_csv(row: dict[str, str]) -> dict[str, Any] | None:
     if repeater_name.lower() in ("false", "0", "no"):
         repeater = False
     dm = _float_cell(row.get("dm_fitb") or row.get("bonsai_dm") or row.get("dm") or row.get("DM"))
-    width = _float_cell(row.get("width_fitb") or row.get("bc_width") or row.get("width") or row.get("Width"), 1.0)
-    fluence = _float_cell(row.get("fluence") or row.get("Fluence"), 0.1)
+    width = _float_cell(row.get("width_fitb") or row.get("bc_width") or row.get("width") or row.get("Width"), 0.0)
+    fluence = _float_cell(row.get("fluence") or row.get("Fluence"), 0.0)
     ra = _float_cell(row.get("ra") or row.get("RA"), default=-1.0)
     return {
         "name": name,
@@ -137,7 +153,7 @@ def _parse_iop_catalog2_excerpt(text: str) -> list[dict[str, Any]]:
     return out
 
 
-def _urlopen_text(url: str, timeout: float = 45.0) -> str:
+def _urlopen_bytes(url: str, timeout: float = 45.0) -> bytes:
     req = Request(url, headers={"User-Agent": "Mozilla/5.0 FSOT-lab/1.1"})
     ctx = ssl.create_default_context()
     try:
@@ -147,16 +163,81 @@ def _urlopen_text(url: str, timeout: float = 45.0) -> str:
     except ImportError:
         pass
     with urlopen(req, timeout=timeout, context=ctx) as resp:
-        return resp.read().decode("utf-8", errors="replace")
+        return resp.read()
+
+
+def _col_letters(ref: str) -> str:
+    return "".join(ch for ch in ref if ch.isalpha())
+
+
+def _parse_xlsx_dicts(raw: bytes) -> list[dict[str, str]]:
+    ns = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+    with zipfile.ZipFile(io.BytesIO(raw)) as zf:
+        strings: list[str] = []
+        if "xl/sharedStrings.xml" in zf.namelist():
+            root = ET.fromstring(zf.read("xl/sharedStrings.xml"))
+            for si in root.findall("m:si", ns):
+                strings.append("".join((t.text or "") for t in si.findall(".//m:t", ns)))
+        sheet = ET.fromstring(zf.read("xl/worksheets/sheet1.xml"))
+        grid: list[dict[str, str]] = []
+        for row in sheet.findall("m:sheetData/m:row", ns):
+            cells: dict[str, str] = {}
+            for c in row.findall("m:c", ns):
+                ref = c.get("r") or ""
+                col = _col_letters(ref)
+                node = c.find("m:v", ns)
+                if node is None or node.text is None:
+                    continue
+                if c.get("t") == "s":
+                    idx = int(float(node.text))
+                    cells[col] = strings[idx] if 0 <= idx < len(strings) else ""
+                else:
+                    cells[col] = node.text
+            if cells:
+                grid.append(cells)
+    if not grid:
+        return []
+    header = grid[0]
+    out: list[dict[str, str]] = []
+    for row in grid[1:]:
+        rec = {}
+        for col, val in row.items():
+            rec[str(header.get(col) or col)] = val
+        out.append(rec)
+    return out
+
+
+def _bytes_to_text(raw: bytes) -> str:
+    if raw.startswith(b"PK"):
+        with zipfile.ZipFile(io.BytesIO(raw)) as zf:
+            names = zf.namelist()
+            pick = next((n for n in names if n.lower().endswith(".csv")), None)
+            if pick is None:
+                return ""
+            return zf.read(pick).decode("utf-8", errors="replace")
+    return raw.decode("utf-8", errors="replace")
+
+
+def _urlopen_text(url: str, timeout: float = 45.0) -> str:
+    return _bytes_to_text(_urlopen_bytes(url, timeout=timeout))
 
 
 def fetch_chime_catalog(url: str, timeout: float = 45.0) -> list[dict[str, Any]]:
-    """Fetch CHIME FRB catalog CSV when network available."""
-    text = _urlopen_text(url, timeout=timeout)
+    """Fetch CHIME FRB catalog CSV / xlsx when network available."""
+    raw = _urlopen_bytes(url, timeout=timeout)
+    if raw.startswith(b"PK") and b"xl/worksheets/sheet1.xml" in raw:
+        out: list[dict[str, Any]] = []
+        for rec in _parse_xlsx_dicts(raw):
+            parsed = _row_from_chime_csv(rec)
+            if parsed:
+                out.append(parsed)
+        return out
+    text = _bytes_to_text(raw)
     if "tns_name" in text and "\t" in text and "Excerpt from Catalog" in text:
         return _parse_iop_catalog2_excerpt(text)
-    reader = csv.DictReader(io.StringIO(text))
-    out: list[dict[str, Any]] = []
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    reader = csv.DictReader(io.StringIO(normalized, newline=""))
+    out = []
     for row in reader:
         parsed = _row_from_chime_csv(row)
         if parsed:
@@ -175,8 +256,10 @@ def merge_catalog_rows(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
             base = by_name.get(name) or {}
             merged = {**base, **row}
             for key in ("ra_deg", "dm_pc", "width_ms", "fluence_jy_ms", "period_s"):
-                if merged.get(key) is None and base.get(key) is not None:
-                    merged[key] = base[key]
+                incoming = merged.get(key)
+                prior = base.get(key)
+                if (incoming is None or incoming == 0 or incoming == 0.0) and prior not in (None, 0, 0.0):
+                    merged[key] = prior
             by_name[name] = merged
     return list(by_name.values())
 
@@ -202,7 +285,7 @@ def fetch_chime_catalog_with_fallback(
                 sources.append(url)
             else:
                 errors.append(f"{url}: empty catalog")
-        except OSError as exc:
+        except (OSError, csv.Error, UnicodeDecodeError, ValueError) as exc:
             errors.append(f"{url}: {exc}")
     if merged:
         return merged, "+".join(sources[:3]) + (f"+{len(sources)-3}more" if len(sources) > 3 else ""), errors

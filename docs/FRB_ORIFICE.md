@@ -1,7 +1,8 @@
 # FRB as BH→WH orifice outgassing
 
 **Pin:** D1D38A · **panel:** `data/frb_orifice_outgassing_benchmark.json`  
-**Refresh:** `python scripts/build_frb_orifice_benchmark.py`
+**Refresh:** `python scripts/ingest_frb_repeaters.py` then `python scripts/build_frb_orifice_benchmark.py`  
+**Dump:** CHIME/FRB Catalog 2 (Jia+2026 Zenodo) merged onto the literature seed — **3390** sources. Do not 0.5%-gate the 10-row seed or this dump.
 
 The HVAC / fixed-orifice picture (CONCEPTS C2): mass falls in, compactifies and heats, then the orifice opens (POOF) and the other side outgasses cold. That puncture through the fluid **is** the fast radio burst.
 
@@ -19,7 +20,7 @@ The HVAC / fixed-orifice picture (CONCEPTS C2): mass falls in, compactifies and 
 
 | Handle | Form | Live |
 |--------|------|------|
-| Repeater vs rip | \(E \ge e\cdot\mathrm{POOF}\) | **37/37** (one row fluence=0, not scored) |
+| Repeater vs rip | \(E \ge e\cdot\mathrm{POOF}\) | **278/293** (94.9%, YELLOW). Catalog 2 dump **3390** sources; width missing on most Cat-2 rows so those are not scored. **Not** a 0.5% gate. |
 | Pulse-width class | median repeater / one-shot vs Particle \(D_{\mathrm{eff}}=5\) | **5.0 vs 5 (0%)** |
 | Short saloon-door tick | P34 = 1000 s (1 mHz) | 4 periods, 0–2%, **2.5% contested band** (not stuffed into 0.5%) |
 | Activity season | \(T = 5\pi + 1/\varphi\) days (Particle orifice cycle + Omori \(c\) rest) | FRB20180916B **16.35 d** vs **16.326 d (0.147%)** |

@@ -935,6 +935,34 @@ def laws() -> list[dict]:
                 "Promising a second mainshock after a recent M≥5.5."
             ),
         },
+        {
+            "id": "D11",
+            "kind": "discovered",
+            "name": "orifice_scale_is_fold_normalized",
+            "statement": (
+                "Valve length on a body L at fold d is L·POOF·d/25. A dated cell is d=1. "
+                "Coupled tanks talk at d=25. Scoring d=1 while the dump is at d=25 is "
+                "transferred_poof, not a kernel retune. κ_ij names which tanks interact. "
+                "Frozen valve_state splits into discrete potentials (cell POOF, transfer, "
+                "quiet hold) — seed-split, not a fitted probability."
+            ),
+            "closed_form": "orifice_scale(L, d) = L · POOF · d / 25",
+            "live": (
+                "cell 39.1 km · cycle 977.8 km · cycle/cell = 25. "
+                "Closed kills map onto transferred_poof / quiet_hold / unexpected_poof. "
+                "Public cell-kill unchanged."
+            ),
+            "code": (
+                "vendor/fsot_earth_fluid_forecast.py orifice_scale_km · "
+                "scripts/build_dynamic_system_triangulation.py · "
+                "FSOT/Formal/ScalarEngineStructure.lean "
+                "kernel_km_eq_orifice_scale_one · cycle_km_eq_orifice_scale_ceiling"
+            ),
+            "not": (
+                "A calibrated event probability. Many-worlds. Rewriting kill_if onto "
+                "cycle_km. A fitted n-body gravity spring."
+            ),
+        },
     ]
 
 
@@ -1197,8 +1225,9 @@ def main() -> int:
         "- Genetics 0.13 Å as a sequence-only fold.",
         "- JWST Perfect Host 73.49 as PRED-001.",
         "- Live |S_i|/|S_j| vs 1 as a 0.5% central (same-view question; D9).",
+        "- Frozen-state potentials as a calibrated probability of the next earthquake.",
         "",
-        "Picture: [`CONCEPTS.md`](CONCEPTS.md) C1–C13. Apply: [`APPLY.md`](APPLY.md).",
+        "Picture: [`CONCEPTS.md`](CONCEPTS.md) C1–C14. Apply: [`APPLY.md`](APPLY.md).",
         "Object scoring: [`OBJECT_SCORING.md`](OBJECT_SCORING.md).",
         "Standpoint: [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md).",
         "",

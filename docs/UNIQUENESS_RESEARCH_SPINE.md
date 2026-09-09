@@ -82,10 +82,12 @@ From `run_confinement_uniqueness_suite()`:
 | U6 | Counterfactual no-damp: free color **persists** |
 | U7 | \(V(1/\sqrt{\sigma})=\sqrt{\sigma}\) identity |
 | U8–U10 | strong coupling seed, nuclear emergence sign, timescale ratio |
+| Lean | `color_amp_strictly_damped` · `color_amp_no_damp` · `singlet_gap_strictly_shrinks` · `free_color_not_attractor` |
 
-**Status:** `CANDIDATE_EXECUTABLE`  
+**Status:** `CANDIDATE_EXECUTABLE` + **Lean structural attractor**  
+**Lean:** `FSOT/Formal/UniquenessAttractor.lean` — `color_amp_strictly_damped`, `color_amp_no_damp`, `singlet_gap_strictly_shrinks`, `gamma_color_pos`, `free_color_not_attractor`. Closed forms match Python `step_channels`.  
 **Multiprover:** `python scripts/run_uniqueness_research_verification.py` → `data/uniqueness_research_verification_report.json` (Python/Rust/Z3/Coq/Isabelle; F* when a native Windows binary is available).  
-**Classical continuum YM path-integral uniqueness as a *required* theorem:** not adopted as residual debt; under ToE logic it is a **candidate for refutation as load-bearing reality** (see claim language).
+**Classical continuum YM path-integral uniqueness as a *required* theorem:** not adopted as residual debt; under ToE logic it is a **candidate for refutation as load-bearing reality** (see claim language). Still `OPEN_NOT_CLAIMED`.
 
 ---
 
@@ -124,6 +126,14 @@ Right:  dependent physics closed + classical problem unsolvable through ToE
 
 **Disprove the theory that cannot close** — meaning the **classical continuum path-integral uniqueness *as a necessary truth of nature***, not “disprove FSOT.”  
 QCD *phenomenology* residual-gated in-repo stays; what can be disproved is the meta-claim that *only* the open continuum path-integral theorem can underwrite confinement.
+
+---
+
+## Same dampening at planetary scale (not the YM theorem)
+
+A dated Earth cell that stays quiet while the arc dumps is **not** a failed kernel. The attractor was the \(d=25\) tank. Free-color amplitudes that damp are the same grammar: **non-attractors do not persist**.
+
+That does **not** prove continuum Yang–Mills path-integral uniqueness. Status stays `OPEN_NOT_CLAIMED`. It does convert the kill autopsy into a forward operator: name the fold, list the tanks that couple, emit the frozen-state potentials. See [`DYNAMIC_SYSTEM_TRIANGULATION.md`](DYNAMIC_SYSTEM_TRIANGULATION.md) · law D11.
 
 ---
 

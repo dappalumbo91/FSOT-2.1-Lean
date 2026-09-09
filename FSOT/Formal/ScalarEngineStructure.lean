@@ -15,6 +15,7 @@ import FSOT.Formal.Bounds
 import FSOT.Formal.Theorems
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.Ring
 
 namespace FSOT.Formal
 
@@ -399,6 +400,27 @@ theorem kernel_km_eq_cycle_div_ceiling :
   rw [cycle_km_eq_twentyfive_mul_kernel_km]
   field_simp [h25]
 
+/-- Valve length on a body of length `L` at compactification fold `d`.
+    `d = 1` is the dated cell; `d = 25` is the unfolded cycle.
+    Scoring the wrong `d` is a transferred POOF, not a new coefficient. -/
+def orifice_scale (L d : ℝ) : ℝ := L * poof_factor * d / 25
+
+theorem kernel_km_eq_orifice_scale_one :
+    kernel_km = orifice_scale earth_radius_km (1 : ℝ) := by
+  unfold kernel_km orifice_scale
+  ring
+
+theorem cycle_km_eq_orifice_scale_ceiling :
+    cycle_km = orifice_scale earth_radius_km (25 : ℝ) := by
+  unfold cycle_km orifice_scale
+  ring
+
+theorem orifice_scale_one_mul_ceiling :
+    orifice_scale earth_radius_km (25 : ℝ) =
+      (25 : ℝ) * orifice_scale earth_radius_km (1 : ℝ) := by
+  rw [← cycle_km_eq_orifice_scale_ceiling, ← kernel_km_eq_orifice_scale_one]
+  exact cycle_km_eq_twentyfive_mul_kernel_km
+
 -- ============================================================
 -- κ_ij  (bleed coupling, no free spring)
 -- ============================================================
@@ -465,19 +487,19 @@ theorem dark_core_unobserved :
 -- ============================================================
 
 /-- Count of named structural identity theorems in this module (inventory pin). -/
-def scalar_engine_structure_theorem_count : ℕ := 49
+def scalar_engine_structure_theorem_count : ℕ := 52
 
 theorem scalar_engine_structure_theorem_count_pos :
     0 < scalar_engine_structure_theorem_count := by
   unfold scalar_engine_structure_theorem_count; decide
 
 theorem scalar_engine_structure_theorem_count_eq :
-    scalar_engine_structure_theorem_count = 49 := by
+    scalar_engine_structure_theorem_count = 52 := by
   unfold scalar_engine_structure_theorem_count; decide
 
 /-- Bundle: master formula structure is definitionally pinned. -/
 theorem scalar_engine_structure_bundle :
-    scalar_engine_structure_theorem_count = 49 ∧
+    scalar_engine_structure_theorem_count = 52 ∧
     (0 : ℝ) < k ∧
     term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1 := by
   refine ⟨?h1, ?h2, ?h3⟩
@@ -487,7 +509,7 @@ theorem scalar_engine_structure_bundle :
 
 /-- Depth bundle: emergence/damping transport through k-scaling. -/
 theorem scalar_engine_depth_bundle :
-    scalar_engine_structure_theorem_count = 49 ∧
+    scalar_engine_structure_theorem_count = 52 ∧
     (0 : ℝ) < k ∧
     (0 : ℝ) < 0.42 ∧
     (0.42 : ℝ) < k := by

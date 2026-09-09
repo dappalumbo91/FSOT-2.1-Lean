@@ -5,6 +5,10 @@
 **Dated scores:** [`dated_forecast_scores/REPORT.md`](dated_forecast_scores/REPORT.md) — hold **62** · kill **43** · awaiting **9** (scored 2026-09-08T00:45Z)
 **Playbook retro:** [`dated_forecast_scores/RULE_RETRO.md`](dated_forecast_scores/RULE_RETRO.md) — first 12: refined rule converts 6 EQ + skips gap-zone wx/tide; Scotia Sea still a loading miss.
 **Kill autopsy:** [`dated_forecast_scores/KILL_AUTOPSY.md`](dated_forecast_scores/KILL_AUTOPSY.md)  
+**Dynamic triangulation:** [`dynamic_system_triangulation.json`](dynamic_system_triangulation.json) · [`../docs/DYNAMIC_SYSTEM_TRIANGULATION.md`](../docs/DYNAMIC_SYSTEM_TRIANGULATION.md)  
+**Catalog-class refresh:** [`catalog_class_refresh.json`](catalog_class_refresh.json) · [`../predictions/reports/CATALOG_CLASS_REFRESH.md`](../predictions/reports/CATALOG_CLASS_REFRESH.md)  
+**FRB orifice (Cat-2 dump):** [`frb_orifice_outgassing_outcome.json`](frb_orifice_outgassing_outcome.json)  
+**Architecture densify:** [`architecture_building_science_densify_hold.md`](architecture_building_science_densify_hold.md)  
 **Pin:** D1D38A
 
 Predictions live in [`../predictions/`](../predictions/). This page is **outcomes only**.

@@ -302,9 +302,32 @@ DFG-in vs DFG-out, compact vs extended calmodulin, QC-dark vs QM-look: one appar
 
 ---
 
+## C14 — Dynamic tanks (normalize the fold, then the potentials)
+
+**Said:** Isolated 39 km scoring of a 978 km planet is the wrong object. Everything talks. The n-body analog is not Newton's gravity N-body — it is **25 compactified tanks coupled by κ**. Name the area you are predicting, recover its fold, and emit the tanks that can take the dump. Frozen valve state splits into discrete potentials (POOF here, transfer, quiet hold). That is mapping the live branches of one fluid, not a second universe.
+
+**Engine:**
+
+\[
+\mathrm{orifice\_scale}(L,d)=L\cdot\mathrm{POOF}\cdot d/25
+\]
+
+| Fold | Earth length | Job |
+|-----:|-------------:|-----|
+| \(d=1\) | \(R_\oplus\cdot\mathrm{POOF}/25\approx 39.1\,\mathrm{km}\) | dated cell / public `kill_if` |
+| \(d=25\) | \(R_\oplus\cdot\mathrm{POOF}\approx 978\,\mathrm{km}\) | arc / trench / basin / solar tanks |
+
+Invert: \(d=25\cdot L_\mathrm{orifice}/(L_\mathrm{body}\cdot\mathrm{POOF})\). κ_ij (R7) names which tanks interact. Weights are POOF/(POOF+SUCTION) fire vs hold, then split by κ — **valve geometry, not a calibrated probability**.
+
+A quiet cell with an M5 on the arc is **transferred POOF** (the attractor was the cycle tank). Same dampening grammar as uniqueness: modes that are not attractors do not persist. Do not retune the kernel.
+
+**Code:** `vendor/fsot_earth_fluid_forecast.py` `orifice_scale_km` · `frozen_potentials` · Lean `orifice_scale` · [`DYNAMIC_SYSTEM_TRIANGULATION.md`](DYNAMIC_SYSTEM_TRIANGULATION.md)
+
+---
+
 ## How to add the next picture
 
-1. Write it here in plain words (C14, …).
+1. Write it here in plain words (C15, …).
 2. Map each phrase to **one existing** engine object.
 3. If nothing maps, stop — do not invent a coefficient.
 4. Add a live check that can fail.

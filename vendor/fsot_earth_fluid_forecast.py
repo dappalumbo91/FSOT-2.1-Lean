@@ -20,34 +20,251 @@ from datetime import datetime, timedelta, timezone
 from typing import Any
 
 try:
-    from fsot_compute import PHI, POOF, SUCTION, domain_scalar  # type: ignore
+    from fsot_compute import (  # type: ignore
+        A_BLEED,
+        DOMAINS,
+        PHI,
+        POOF,
+        SUCTION,
+        domain_scalar,
+    )
 except ImportError:  # pragma: no cover
     import sys
     from pathlib import Path as _P
 
     sys.path.insert(0, str(_P(__file__).resolve().parent))
-    from fsot_compute import PHI, POOF, SUCTION, domain_scalar
+    from fsot_compute import (  # type: ignore
+        A_BLEED,
+        DOMAINS,
+        PHI,
+        POOF,
+        SUCTION,
+        domain_scalar,
+    )
 
 R_EARTH_KM = 6371.0
+CEILING_D = 25.0
+
+# Dated kinds → core folds that already carry S and D_eff on the pin.
+# Hydrology / volcanic / solar are not extra cores; they are tanks of these.
+TANK_DOMAIN = {
+    "earthquake": "Seismology",
+    "volcanic": "Geophysics",
+    "weather": "Meteorology",
+    "solar": "Planetary_Science",
+    "tide": "Oceanography",
+    "hydrology": "Fluid_Dynamics",
+}
 
 
 def f(x: Any) -> float:
     return float(x)
 
 
+def orifice_scale_km(L_km: float, d: float, *, ceiling: float = CEILING_D) -> float:
+    """Valve length on a body of length L at compactification fold d.
+
+    orifice_scale(L, d) = L · POOF · d / 25.
+    d=1 is one compactified slice (dated cell). d=25 is the unfolded cycle.
+    Not a new coefficient — the 39 km vs 978 km miss is this fold, not a spring.
+    """
+    return float(L_km) * f(POOF) * float(d) / float(ceiling)
+
+
+def fold_from_orifice_km(
+    L_orifice_km: float,
+    *,
+    L_body_km: float = R_EARTH_KM,
+    ceiling: float = CEILING_D,
+) -> float:
+    """Invert: which fold is this scored region on the body?
+
+    d = 25 · L_orifice / (L_body · POOF).
+    kernel_km → 1. cycle_km → 25. Do not use this on the body radius itself
+    (solar Kp is the planetary tank, not an orifice length).
+    """
+    denom = float(L_body_km) * f(POOF)
+    if denom <= 0.0:
+        return 0.0
+    return float(ceiling) * float(L_orifice_km) / denom
+
+
 def kernel_km() -> float:
-    """Crustal cell: one compactified slice of Earth's orifice."""
-    return R_EARTH_KM * f(POOF) / 25.0
+    """Crustal cell: one compactified slice of Earth's orifice (d=1)."""
+    return orifice_scale_km(R_EARTH_KM, 1.0)
 
 
 def cycle_km() -> float:
-    """Planetary-cycle coupling: the same orifice without the 25-D fold.
+    """Planetary-cycle coupling: the same orifice at d=25.
 
     Solar, volcanic arc, trench, and basin tanks talk at R⊕·POOF, not at
     the 39 km cell. Not a new coefficient — compactification denominator
     off. Issued kill_if stays on kernel_km.
     """
-    return R_EARTH_KM * f(POOF)
+    return orifice_scale_km(R_EARTH_KM, CEILING_D)
+
+
+def kappa_named(a: str, b: str) -> float:
+    """κ_ij = A_bleed · POOF · |S_i| · |S_j| / (1 + |D_i−D_j|/25). Same R7."""
+    si = abs(f(domain_scalar(a)))
+    sj = abs(f(domain_scalar(b)))
+    di = int(DOMAINS[a].D_eff)
+    dj = int(DOMAINS[b].D_eff)
+    return f(A_BLEED) * f(POOF) * si * sj / (1.0 + abs(di - dj) / CEILING_D)
+
+
+def tank_kinds() -> list[str]:
+    return list(TANK_DOMAIN.keys())
+
+
+def valve_split() -> tuple[float, float]:
+    """Seed split of the T3 valve. Not a calibrated event probability."""
+    p = f(POOF)
+    s = f(SUCTION)
+    z = p + s
+    return p / z, s / z
+
+
+def _norm_weights(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    total = sum(float(r["weight"]) for r in rows)
+    if total <= 0.0:
+        return rows
+    acc = 0.0
+    for i, r in enumerate(rows):
+        if i == len(rows) - 1:
+            r["weight"] = round(1.0 - acc, 6)
+        else:
+            w = round(float(r["weight"]) / total, 6)
+            r["weight"] = w
+            acc += w
+    return rows
+
+
+def frozen_potentials(kind: str, valve_state: str) -> list[dict[str, Any]]:
+    """Discrete branches from a frozen valve. Kill_if stays the scored cell.
+
+    The n-body analog is 25 compactified tanks coupled by κ, not Newton's
+    gravity N-body. Weights are seed-splits (POOF/SUCTION × κ), not a fit.
+    """
+    here = TANK_DOMAIN[kind]
+    self_k = kappa_named(here, here)
+    neigh: list[tuple[str, float]] = []
+    for k in tank_kinds():
+        if k == kind:
+            continue
+        neigh.append((k, kappa_named(here, TANK_DOMAIN[k])))
+    z = self_k + sum(kj for _, kj in neigh)
+    w_here = self_k / z if z > 0.0 else 1.0
+    w_transfer = 1.0 - w_here
+    tanks_ranked = [
+        {"kind": k, "kappa": round(kj, 8), "weight": round((kj / z) if z > 0 else 0.0, 6)}
+        for k, kj in sorted(neigh, key=lambda t: -t[1])
+    ]
+    p_fire, p_hold = valve_split()
+    state = str(valve_state or "steady")
+
+    if state == "post_poof_aftershock":
+        rows = [
+            {
+                "id": "quiet_hold",
+                "fold_d": 1.0,
+                "weight": p_hold,
+                "means": "Recent M≥5.5 was the POOF. Omori SUCTION can go quiet. Not a new mainshock.",
+            },
+            {
+                "id": "omori_aftershock",
+                "fold_d": 1.0,
+                "weight": p_fire * w_here,
+                "means": "Aftershock in the scored cell. Quiet-hold kill is only another M≥5.",
+            },
+            {
+                "id": "transferred_poof",
+                "fold_d": CEILING_D,
+                "weight": p_fire * w_transfer,
+                "tanks": tanks_ranked,
+                "means": "Load dumped in a coupled tank at R⊕·POOF. Cell kill_if unchanged.",
+            },
+        ]
+        return _norm_weights(rows)
+
+    if state == "loading_suction":
+        rows = [
+            {
+                "id": "cell_poof",
+                "fold_d": 1.0,
+                "weight": p_fire * w_here,
+                "means": "POOF in the scored region (the public kill object).",
+            },
+            {
+                "id": "transferred_poof",
+                "fold_d": CEILING_D,
+                "weight": p_fire * w_transfer,
+                "tanks": tanks_ranked,
+                "means": "Same load, other tank. Isolated 39 km scoring misses this branch.",
+            },
+            {
+                "id": "quiet_hold",
+                "fold_d": 1.0,
+                "weight": p_hold,
+                "means": "SUCTION holds. Honest miss if the cell stays quiet and no cycle POOF.",
+            },
+        ]
+        return _norm_weights(rows)
+
+    # released / steady: same seed split, labels flipped. Do not promise a new POOF.
+    rows = [
+        {
+            "id": "quiet_hold",
+            "fold_d": 1.0,
+            "weight": p_hold,
+            "means": "Valve already released or steady. Quiet hold; kill only if an unexpected POOF.",
+        },
+        {
+            "id": "unexpected_poof",
+            "fold_d": 1.0,
+            "weight": p_fire * w_here,
+            "means": "Cell POOF after released/steady. That is the public kill.",
+        },
+        {
+            "id": "transferred_poof",
+            "fold_d": CEILING_D,
+            "weight": p_fire * w_transfer,
+            "tanks": tanks_ranked,
+            "means": "Coupled tank can still dump. Not this cell's expect_event.",
+        },
+    ]
+    return _norm_weights(rows)
+
+
+def apply_dynamic_fields(fc: dict[str, Any]) -> dict[str, Any]:
+    """Attach fold triangulation + frozen potentials. Does not touch kill_if."""
+    kind = str(fc.get("kind") or "")
+    if kind not in TANK_DOMAIN:
+        return fc
+    loc = fc.get("location") or {}
+    pred = fc.setdefault("predicted", {})
+    score_r = float(loc.get("radius_km") or kernel_km())
+    # Solar Kp is issued on the body, not an orifice length.
+    if kind == "solar" or score_r >= R_EARTH_KM * 0.5:
+        score_d = CEILING_D
+    else:
+        score_d = fold_from_orifice_km(score_r)
+    valve_d = CEILING_D
+    state = str(pred.get("valve_state") or "steady")
+    pots = frozen_potentials(kind, state)
+    pred["fold_score_d"] = round(score_d, 4)
+    pred["fold_valve_d"] = valve_d
+    pred["orifice_score_km"] = round(orifice_scale_km(R_EARTH_KM, min(score_d, CEILING_D)), 1)
+    pred["orifice_valve_km"] = round(cycle_km(), 1)
+    pred["cycle_radius_km"] = round(cycle_km(), 1)
+    pred["neighbor_kinds"] = [k for k in tank_kinds() if k != kind]
+    pred["potentials"] = pots
+    pred["triangulation_note"] = (
+        f"Score object is fold d={score_d:.2f} ({score_r:.1f} km). "
+        f"Coupled tanks talk at d={valve_d:.0f} ({cycle_km():.1f} km). "
+        "If those differ, the load can dump next door. kill_if stays the score object."
+    )
+    return fc
 
 
 def forecast_horizon_days() -> int:
@@ -228,7 +445,7 @@ def earthquake_forecasts(
                 },
             }
         )
-    return out
+    return [apply_dynamic_fields(fc) for fc in out]
 
 
 def marine_basin(lat: float, lon: float) -> str:
@@ -343,7 +560,7 @@ def weather_forecasts(
                 "score_query": {"buoy_id": bid, "storm": storm},
             }
         )
-    return out
+    return [apply_dynamic_fields(fc) for fc in out]
 
 
 def solar_forecasts(
@@ -365,7 +582,7 @@ def solar_forecasts(
     rising = len(vals) >= 4 and vals[-1] > vals[-4]
     storm = latest >= 4.0 or (rising and latest >= 3.0)
     fid = f"FCAST-SOL-{issued.strftime('%Y%m%dT%H%M')}-01"
-    return [
+    raw = [
         {
             "id": fid,
             "kind": "solar",
@@ -393,6 +610,7 @@ def solar_forecasts(
             "score_query": {"expect_kp_ge_5": storm},
         }
     ]
+    return [apply_dynamic_fields(fc) for fc in raw]
 
 
 def volcanic_forecasts(
@@ -456,7 +674,7 @@ def volcanic_forecasts(
                 },
             }
         )
-    return out
+    return [apply_dynamic_fields(fc) for fc in out]
 
 
 # NOAA CO-OPS stations already residual-gated in noaa_coastal_tides_benchmark.json
@@ -554,7 +772,7 @@ def tide_forecasts(
                 },
             }
         )
-    return out
+    return [apply_dynamic_fields(fc) for fc in out]
 
 
 # USGS NWIS reference gages from data/hydrology_usgs_manifest.yaml
@@ -647,4 +865,4 @@ def hydrology_forecasts(
                 },
             }
         )
-    return out
+    return [apply_dynamic_fields(fc) for fc in out]

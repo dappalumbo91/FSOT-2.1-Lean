@@ -26,6 +26,9 @@ color-singlet (hadronic) channels *are*. Executable content:
   5. Counterfactual: zero damping ⇒ free color persists (load-bearing test).
 
 Honest status: research spine + executable dampening theorem *candidate*.
+Lean structural attractor: FSOT/Formal/UniquenessAttractor.lean
+(color_amp_strictly_damped, color_amp_no_damp, singlet_gap_strictly_shrinks).
+Classical YM path-integral uniqueness stays OPEN_NOT_CLAIMED.
 
 Claim polarity (ToE hallmark — reality vs non-reality):
   - Do NOT claim classical continuum YM mass-gap / path-integral uniqueness is

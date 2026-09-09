@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-09-09T19:56:42.396493+00:00",
+  "pin": "D1D38A",
+  "gate_pct": 0.5,
+  "n": 12,
+  "hold": 12,
+  "kill": 0,
+  "missing": 0,
+  "rows": [
+    {
+      "pred": "PRED-066",
+      "domain": "Exoplanet_System_Architecture",
+      "file": "exoplanet_system_architecture_benchmark.json",
+      "present": true,
+      "record_count": 882,
+      "pooled_median_error_pct": 0.0,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-048",
+      "domain": "GWTC_Catalog_Open",
+      "file": "gwtc_catalog_open_benchmark.json",
+      "present": true,
+      "record_count": 1972,
+      "pooled_median_error_pct": 0.008488,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-067",
+      "domain": "Compact_Object_Binary_Events",
+      "file": "compact_object_binary_events_benchmark.json",
+      "present": true,
+      "record_count": 40,
+      "pooled_median_error_pct": 0.010049,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-082",
+      "domain": "Gaia_Astrometry_Panel_Deep",
+      "file": "gaia_astrometry_panel_deep_benchmark.json",
+      "present": true,
+      "record_count": 62,
+      "pooled_median_error_pct": 0.022461,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-068",
+      "domain": "GBIF_Species_Occurrence",
+      "file": "gbif_species_occurrence_benchmark.json",
+      "present": true,
+      "record_count": 240,
+      "pooled_median_error_pct": 0.006006,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-069",
+      "domain": "Epidemiology_Panel",
+      "file": "epidemiology_panel_benchmark.json",
+      "present": true,
+      "record_count": 24,
+      "pooled_median_error_pct": 0.015311,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-080",
+      "domain": "Grace_Cryosphere",
+      "file": "grace_cryosphere_benchmark.json",
+      "present": true,
+      "record_count": 505,
+      "pooled_median_error_pct": 0.0,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-081",
+      "domain": "Agriculture_Agroecology",
+      "file": "agriculture_agroecology_gap_fill_benchmark.json",
+      "present": true,
+      "record_count": 276,
+      "pooled_median_error_pct": 0.018019024892929635,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-083",
+      "domain": "Paleoclimate_Panel",
+      "file": "paleoclimate_panel_benchmark.json",
+      "present": true,
+      "record_count": 20,
+      "pooled_median_error_pct": 0.006006,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-079",
+      "domain": "MPCORB_Minor_Planet_Catalog",
+      "file": "mpcorb_fsot_benchmark.json",
+      "present": true,
+      "record_count": 1554101,
+      "pooled_median_error_pct": 0.023015,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-CAT-GAIA-DR3",
+      "domain": "Gaia_DR3_Source_Sample_Open",
+      "file": "gaia_dr3_source_sample_open_benchmark.json",
+      "present": true,
+      "record_count": 3459,
+      "pooled_median_error_pct": 0.022461,
+      "verdict": "hold"
+    },
+    {
+      "pred": "PRED-CAT-PUBCHEM",
+      "domain": "PubChem_Depth_Open",
+      "file": "pubchem_depth_open_benchmark.json",
+      "present": true,
+      "record_count": 149,
+      "pooled_median_error_pct": 0.040788,
+      "verdict": "hold"
+    }
+  ],
+  "kill_note": "pooled > 0.5%; a per-object fitted \u03b5; stuffing a missing dump"
+}

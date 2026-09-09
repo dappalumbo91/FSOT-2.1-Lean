@@ -13,6 +13,7 @@ import FSOT.Theorems
 import FSOT.Formal.Scalar
 import FSOT.Formal.Theorems
 import FSOT.Formal.ScalarEngineStructure
+import FSOT.Formal.UniquenessAttractor
 import FSOT.Formal.Cosmology
 import FSOT.Formal.Domains
 import FSOT.Formal.Lab

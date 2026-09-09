@@ -1,6 +1,6 @@
 # Laws of reality (through this model)
 
-*Generated 2026-09-09T19:16:36.349429+00:00 · pin D1D38A*
+*Generated 2026-09-09T19:42:11.383804+00:00 · pin D1D38A*
 
 These are **not** a second Newton list and **not** the founding-era 35
 discrepancy names. They are what the verification spine actually licenses:
@@ -42,6 +42,7 @@ Same physics, different scale — these are what the panels taught.
 | `D8` | **flavor_is_one_fluid** | CKM/PMNS/α_s are seed readouts, not fitted SM inputs. Kill = next PDG combination outside 0.5%. | Higgs/flavor layer inside literature-tight band |
 | `D9` | **perception_is_scale_view** | Perception at a scale is T1 at that fold’s δψ, hits, and observed. Live |S_i|/|S_j| vs 1 asks for the same view; adjacent folds are not supposed to look the same. | T3 leftover 0.000% on 64 view pairs. QM/atomic live vs 1 is 29.86% = T1 view, not a failed 0.5%. Worst live vs 1 178.45%. Same-look D=6/7 vs 1 is 0.046%. |
 | `D10` | **planetary_cycle_is_orifice_unfolded** | A dated Earth cell is R⊕·POOF/25. Solar, volcanic arc, trench, and basin tanks talk at R⊕·POOF — same orifice, compactification off. | cell 39.1 km · cycle 977.8 km. Loading kills: transferred_poof on the arc or already_poofed (Scotia M6.2). Public cell-kill unchanged. |
+| `D11` | **orifice_scale_is_fold_normalized** | Valve length on a body L at fold d is L·POOF·d/25. A dated cell is d=1. Coupled tanks talk at d=25. Scoring d=1 while the dump is at d=25 is transferred_poof, not a kernel retune. κ_ij names which tanks interact. Frozen valve_state splits into discrete potentials (cell POOF, transfer, quiet hold) — seed-split, not a fitted probability. | cell 39.1 km · cycle 977.8 km · cycle/cell = 25. Closed kills map onto transferred_poof / quiet_hold / unexpected_poof. Public cell-kill unchanged. |
 
 ## Explicitly not a law (yet / ever)
 
@@ -52,7 +53,8 @@ Same physics, different scale — these are what the panels taught.
 - Genetics 0.13 Å as a sequence-only fold.
 - JWST Perfect Host 73.49 as PRED-001.
 - Live |S_i|/|S_j| vs 1 as a 0.5% central (same-view question; D9).
+- Frozen-state potentials as a calibrated probability of the next earthquake.
 
-Picture: [`CONCEPTS.md`](CONCEPTS.md) C1–C13. Apply: [`APPLY.md`](APPLY.md).
+Picture: [`CONCEPTS.md`](CONCEPTS.md) C1–C14. Apply: [`APPLY.md`](APPLY.md).
 Object scoring: [`OBJECT_SCORING.md`](OBJECT_SCORING.md).
 Standpoint: [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md).
