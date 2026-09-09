@@ -12,7 +12,7 @@ repository:
   commit_short: "40de0d9"
   recommended_tag: "v2.8-arxiv-toe-claim"
   tag_pushed: false
-  note: "Claim freeze = 40de0d9 (instrument contract + D11 outline). Paper-docs tip commit lands on top; accept SHA >= 40de0d9 on main with green 477/477."
+  note: "Claim freeze = 40de0d9 (instrument contract + D11 outline). Paper-docs tip 8c444bf (scientist/math/lay doors) is on main and contains 40de0d9. Accept SHA >= 40de0d9 on main with green 477/477."
 
 oracle:
   path: "vendor/fsot_compute.py"
