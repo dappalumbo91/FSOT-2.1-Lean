@@ -352,24 +352,105 @@ theorem scaled_t3_leftover_of_unit_t2
     _ = k * (raw_S p - (1 + term1 p)) := by ring
     _ = k * term3 p := by rw [h]
 
+/-- |T3| factors exactly as |β| times the absolute composite mods. -/
+theorem abs_term3_eq_beta_mul_abs_factors (p : FSOTParams) :
+    |term3 p| =
+      |beta| * |cos p.delta_psi| * |term3_geometric p| *
+        |term3_chaos_mod p| * |term3_poof_suction| *
+        |term3_acoustic p| * |term3_bleed_phase| := by
+  rw [term3_eq_composite]
+  simp [abs_mul]
+
+/-- D9 leftover is seed-tiny: |raw_S − (1+T1)| = |T3| < 1/5 on the default rung. -/
+theorem t3_leftover_seed_tiny
+    (p : FSOTParams)
+    (h2 : term2 p = 1)
+    (h_D : (6 : ℝ) ≤ p.D_eff ∧ p.D_eff ≤ 25)
+    (h_dp : (0 : ℝ) ≤ p.delta_psi ∧ p.delta_psi ≤ 1.3)
+    (h_N : p.N = 1) (h_P : p.P = 1) (h_dt : p.delta_theta = 1) :
+    |raw_S p - (1 + term1 p)| < (0.2 : ℝ) := by
+  rw [t3_leftover_of_unit_t2 p h2]
+  exact term3_abs_lt_fifth_default p h_D h_dp h_N h_P h_dt
+
+-- ============================================================
+-- κ_ij  (bleed coupling, no free spring)
+-- ============================================================
+
+/-- κ_ij = A_bleed · POOF · |S_i| · |S_j| / (1 + |D_i−D_j|/25). -/
+def kappa (p q : FSOTParams) : ℝ :=
+  acoustic_bleed * poof_factor * |scaled_S p| * |scaled_S q| /
+    (1 + |p.D_eff - q.D_eff| / 25)
+
+theorem kappa_denom_pos (p q : FSOTParams) :
+    (0 : ℝ) < 1 + |p.D_eff - q.D_eff| / 25 := by
+  have h : (0 : ℝ) ≤ |p.D_eff - q.D_eff| / 25 := by
+    exact div_nonneg (abs_nonneg _) (by norm_num : (0 : ℝ) ≤ 25)
+  linarith
+
+theorem kappa_nonneg (p q : FSOTParams) : (0 : ℝ) ≤ kappa p q := by
+  unfold kappa
+  refine div_nonneg ?_ (le_of_lt (kappa_denom_pos p q))
+  exact mul_nonneg
+    (mul_nonneg
+      (mul_nonneg (le_of_lt acoustic_bleed_pos) (le_of_lt poof_factor_pos))
+      (abs_nonneg _))
+    (abs_nonneg _)
+
+-- ============================================================
+-- APPLY  computed = measured · (1 + |S| · f)
+-- ============================================================
+
+/-- Preregistered residual law. f is a frozen domain factor, not a fit. -/
+def apply_residual (measured factor : ℝ) (p : FSOTParams) : ℝ :=
+  measured * (1 + |scaled_S p| * factor)
+
+theorem apply_residual_eq_measured_of_zero_factor
+    (measured : ℝ) (p : FSOTParams) :
+    apply_residual measured 0 p = measured := by
+  simp [apply_residual]
+
+theorem apply_residual_eq_measured_of_zero_S
+    (measured factor : ℝ) (p : FSOTParams) (h : scaled_S p = 0) :
+    apply_residual measured factor p = measured := by
+  simp [apply_residual, h]
+
+-- ============================================================
+-- D_eff ∈ [5, 25]  ·  dark folds stay unobserved
+-- ============================================================
+
+theorem get_domain_params_D_eff_mem (d : String) :
+    (5 : ℝ) ≤ (get_domain_params d).D_eff ∧
+      (get_domain_params d).D_eff ≤ 25 := by
+  unfold get_domain_params
+  split <;> simp <;> first | (constructor <;> linarith) | linarith
+
+theorem dark_core_unobserved :
+    (get_domain_params "biological").observed = false ∧
+    (get_domain_params "cellular").observed = false ∧
+    (get_domain_params "ai").observed = false ∧
+    (get_domain_params "cosmological").observed = false ∧
+    (get_domain_params "cmb").observed = false ∧
+    (get_domain_params "dark_energy").observed = false := by
+  simp [get_domain_params]
+
 -- ============================================================
 -- BUNDLE — exportable structural certificate
 -- ============================================================
 
 /-- Count of named structural identity theorems in this module (inventory pin). -/
-def scalar_engine_structure_theorem_count : ℕ := 39
+def scalar_engine_structure_theorem_count : ℕ := 47
 
 theorem scalar_engine_structure_theorem_count_pos :
     0 < scalar_engine_structure_theorem_count := by
   unfold scalar_engine_structure_theorem_count; decide
 
 theorem scalar_engine_structure_theorem_count_eq :
-    scalar_engine_structure_theorem_count = 39 := by
+    scalar_engine_structure_theorem_count = 47 := by
   unfold scalar_engine_structure_theorem_count; decide
 
 /-- Bundle: master formula structure is definitionally pinned. -/
 theorem scalar_engine_structure_bundle :
-    scalar_engine_structure_theorem_count = 39 ∧
+    scalar_engine_structure_theorem_count = 47 ∧
     (0 : ℝ) < k ∧
     term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1 := by
   refine ⟨?h1, ?h2, ?h3⟩
@@ -379,7 +460,7 @@ theorem scalar_engine_structure_bundle :
 
 /-- Depth bundle: emergence/damping transport through k-scaling. -/
 theorem scalar_engine_depth_bundle :
-    scalar_engine_structure_theorem_count = 39 ∧
+    scalar_engine_structure_theorem_count = 47 ∧
     (0 : ℝ) < k ∧
     (0 : ℝ) < 0.42 ∧
     (0.42 : ℝ) < k := by

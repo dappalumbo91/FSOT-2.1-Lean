@@ -48,6 +48,7 @@ def main() -> int:
             "IAEA/ENDF levels (He4 C12 O16 Si28 Fe56 Al27)",
             "World Bank YoY dual-fold Economics/Neuroscience",
             "NCBI NC_012920.1 mt-operon lengths; CRC/IUPAC amino-acid MW",
+            "JPL Horizons planetary mean densities (measured; APPLY not identity pad)",
             "CODATA electron/proton mass",
             "vendor/fsot_scale_interconnects.py",
         ],
@@ -117,6 +118,15 @@ def main() -> int:
         "neuro_thermo": "Adjacent D=14/15 at δψ=0.7 hits=1 vs 1. Transmitter AA vs Carnot. Not GDP.",
         "fluid_nuclear": "Same D=15; Fluid stays dark. Carnot + ENDF dual-route. Live vs 1 is observed mix.",
         "fluid_meteo": "Dark same-look D=15/16 at δψ=0.8 hits=2. NDBC pressure. Do not flip dark.",
+        "neuro_fluid": "Adjacent D=14/15. Fluid stays dark. Transmitter AA vs CRC water ρ. Live vs 1 is observed mix.",
+        "neuro_nuclear": "Adjacent D=14/15 at δψ=0.7 hits=1 vs 1. Transmitter AA vs ENDF keV.",
+        "thermo_meteo": "Adjacent D=15/16. Meteo stays dark. Carnot + NDBC pressure. Live vs 1 is observed mix.",
+        "nuclear_meteo": "Adjacent D=15/16. Meteo stays dark. ENDF keV + NDBC pressure.",
+        "meteo_ocean": "Dark same-look D=16/17 at δψ=0.8 hits=2. NDBC pressure. Do not flip dark.",
+        "atm_seis": "Dark D=17/18. NDBC pressure + PREM lithosphere density.",
+        "ocean_seis": "Dark D=17/18. NDBC SST + PREM lithosphere density.",
+        "astro_planetary": "Adjacent D=20/21 at δψ=1 vs 1. JPL mean density via APPLY, not identity pad.",
+        "qo_biology": "Dark same-look D=11/12 at δψ=0.08. CRC n vs NCBI mt-operon. Biology stays dark.",
         "perception_view": "|1+T1_i|/|1+T1_j| vs live |S_i|/|S_j| (T3 leftover). vs 1 is the same-view question, not a 0.5% central. Not a median pad.",
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")

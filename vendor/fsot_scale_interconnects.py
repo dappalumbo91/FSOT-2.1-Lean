@@ -116,6 +116,8 @@ _FACTOR = {
     "Neuroscience": 0.00035,
     "Psychology": 0.0003,
     "Sociology": 0.0002,
+    "Astronomy": 0.00025,
+    "Planetary_Science": 0.0003,
 }
 
 # Dziewonski & Anderson 1981 PREM (isotropic), discontinuity / lid samples.
@@ -3051,6 +3053,568 @@ def fluid_meteo_rows(ndbc_path: Path) -> list[dict[str, Any]]:
     return rows
 
 
+def _ndbc_pres_dual(
+    ndbc_path: Path,
+    domain_a: str,
+    domain_b: str,
+    prop_a: str,
+    prop_b: str,
+    note_a: str,
+    note_b: str,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    if not ndbc_path.is_file():
+        return rows
+    doc = json.loads(ndbc_path.read_text(encoding="utf-8"))
+    for rec in doc.get("rows") or []:
+        val = rec.get("pres")
+        if val is None:
+            continue
+        m = float(val)
+        if m <= 0:
+            continue
+        bid = str(rec.get("buoy_id") or "buoy")
+        ts = str(rec.get("timestamp") or "").replace(" ", "_")
+        tag = f"{bid}_{ts}"
+        ca, ea = scaled(m, domain_a)
+        cb, eb = scaled(m, domain_b)
+        rows.append(
+            _row(prop=prop_a, name=tag + "_" + domain_a.split("_")[0].lower(),
+                 computed=ca, measured=m, note=note_a)
+        )
+        rows[-1]["error_pct"] = ea
+        rows.append(
+            _row(prop=prop_b, name=tag + "_" + domain_b.split("_")[0].lower(),
+                 computed=cb, measured=m, note=note_b)
+        )
+        rows[-1]["error_pct"] = eb
+    return rows
+
+
+def neuro_fluid_rows() -> list[dict[str, Any]]:
+    """Neuroscience D=14 ↔ Fluid_Dynamics D=15 — signaling vs tank.
+
+    Fluid stays dark. Dual-route transmitter AA on Neuro, CRC water ρ on Fluid.
+    Live vs 1 is the observed mix, not a 0.5% central.
+    """
+    live = abs(f(domain_scalar("Neuroscience"))) / abs(
+        f(domain_scalar("Fluid_Dynamics"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="neuro_fluid_S_ratio",
+            name="S_neuro_over_S_fluid_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Neuro|/|S_Fluid| vs 1 mixes observed/dark at D=14/15. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Fluid stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Neuroscience", "Fluid_Dynamics"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    mw = {a: m for a, m in AMINO_ACID_MW}
+    for aa in NEURO_AA:
+        m = float(mw[aa])
+        c, e = scaled(m, "Neuroscience")
+        rows.append(
+            _row(
+                prop="neuro_fluid_aa_neuro_fold",
+                name=aa + "_mw_neuro",
+                computed=c,
+                measured=m,
+                note="CRC transmitter AA MW on Neuroscience D=14",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    water = next(sp for sp in ACOUSTIC_SPECIMENS if sp["name"] == "water_20C")
+    cw, ew = scaled(float(water["rho"]), "Fluid_Dynamics")
+    rows.append(
+        _row(
+            prop="neuro_fluid_water_fl_fold",
+            name="water_20C_rho_fl",
+            computed=cw,
+            measured=float(water["rho"]),
+            note="CRC water density on Fluid_Dynamics D=15 — tank stays dark",
+        )
+    )
+    rows[-1]["error_pct"] = ew
+    return rows
+
+
+def neuro_nuclear_rows(endf_path: Path) -> list[dict[str, Any]]:
+    """Neuroscience D=14 ↔ Nuclear_Physics D=15 — signaling vs orifice.
+
+    Equalize at the neural look (δψ=0.7, hits=1). Dual-route transmitter AA
+    on Neuro, IAEA/ENDF keV on Nuclear.
+    """
+    s14 = scalar_at(d_eff=14, delta_psi=0.7, hits=1, observed=True)
+    s15 = scalar_at(d_eff=15, delta_psi=0.7, hits=1, observed=True)
+    live = abs(f(domain_scalar("Neuroscience"))) / abs(
+        f(domain_scalar("Nuclear_Physics"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="neuro_nuclear_S_ratio_same_look",
+            name="S_D14_over_S_D15_at_dpsi_0p7",
+            computed=s14 / s15,
+            measured=1.0,
+            note=(
+                "|S(D=14,δψ=0.7,hits=1)|/|S(D=15,δψ=0.7,hits=1)| vs 1 — "
+                f"signaling vs orifice. Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Neuroscience", "Nuclear_Physics"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    mw = {a: m for a, m in AMINO_ACID_MW}
+    for aa in NEURO_AA:
+        m = float(mw[aa])
+        c, e = scaled(m, "Neuroscience")
+        rows.append(
+            _row(
+                prop="neuro_nuclear_aa_neuro_fold",
+                name=aa + "_mw_neuro",
+                computed=c,
+                measured=m,
+                note="CRC transmitter AA MW on Neuroscience D=14",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    rows.extend(
+        _endf_keV_dual(
+            endf_path,
+            "Nuclear_Physics",
+            "Neuroscience",
+            "neuro_nuclear_level_nuc_fold",
+            "neuro_nuclear_level_neuro_fold",
+            "IAEA/ENDF keV on Nuclear_Physics D=15",
+            "same IAEA keV on Neuroscience D=14 — signaling of the orifice",
+        )
+    )
+    return rows
+
+
+def thermo_meteo_rows(ndbc_path: Path) -> list[dict[str, Any]]:
+    """Thermodynamics D=15 ↔ Meteorology D=16 — heat vs weather.
+
+    Thermo observed, Meteo dark. Dual-route Carnot on Thermo, NDBC pres on
+    Meteo. Do not flip dark. Live vs 1 is the observed mix.
+    """
+    live = abs(f(domain_scalar("Thermodynamics"))) / abs(
+        f(domain_scalar("Meteorology"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="thermo_meteo_S_ratio",
+            name="S_th_over_S_meteo_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Thermo|/|S_Meteo| vs 1 mixes observed/dark at D=15/16. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Meteorology stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Thermodynamics", "Meteorology"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    for name, tc, th in CARNOT_PAIRS:
+        cop = carnot_cop(tc, th)
+        c, e = scaled(cop, "Thermodynamics")
+        rows.append(
+            _row(
+                prop="thermo_meteo_carnot_th_fold",
+                name=name + "_th",
+                computed=c,
+                measured=cop,
+                note="Carnot COP on Thermodynamics D=15",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    rows.extend(
+        _ndbc_pres_dual(
+            ndbc_path,
+            "Meteorology",
+            "Thermodynamics",
+            "thermo_meteo_pres_meteo_fold",
+            "thermo_meteo_pres_th_fold",
+            "NDBC pressure on Meteorology D=16 — weather stays dark",
+            "same NDBC pressure on Thermodynamics D=15",
+        )
+    )
+    return rows
+
+
+def nuclear_meteo_rows(ndbc_path: Path, endf_path: Path) -> list[dict[str, Any]]:
+    """Nuclear_Physics D=15 ↔ Meteorology D=16 — orifice vs weather.
+
+    Nuclear observed, Meteo dark. Dual-route ENDF keV on Nuclear, NDBC pres
+    on Meteo. Do not flip dark.
+    """
+    live = abs(f(domain_scalar("Nuclear_Physics"))) / abs(
+        f(domain_scalar("Meteorology"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="nuclear_meteo_S_ratio",
+            name="S_nuc_over_S_meteo_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Nuclear|/|S_Meteo| vs 1 mixes observed/dark at D=15/16. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Meteorology stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Nuclear_Physics", "Meteorology"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(
+        _endf_keV_dual(
+            endf_path,
+            "Nuclear_Physics",
+            "Meteorology",
+            "nuclear_meteo_level_nuc_fold",
+            "nuclear_meteo_level_meteo_fold",
+            "IAEA/ENDF keV on Nuclear_Physics D=15",
+            "same IAEA keV on Meteorology D=16 — weather stays dark",
+        )
+    )
+    rows.extend(
+        _ndbc_pres_dual(
+            ndbc_path,
+            "Meteorology",
+            "Nuclear_Physics",
+            "nuclear_meteo_pres_meteo_fold",
+            "nuclear_meteo_pres_nuc_fold",
+            "NDBC pressure on Meteorology D=16 — weather stays dark",
+            "same NDBC pressure on Nuclear_Physics D=15",
+        )
+    )
+    return rows
+
+
+def meteo_ocean_rows(ndbc_path: Path) -> list[dict[str, Any]]:
+    """Meteorology D=16 ↔ Oceanography D=17 — weather vs ocean tank, both dark.
+
+    Equalize at the weather look (δψ=0.8, hits=2, observed=False).
+    Dual-route NDBC pressure. Do not flip dark.
+    """
+    s16 = scalar_at(d_eff=16, delta_psi=0.8, hits=2, observed=False)
+    s17 = scalar_at(d_eff=17, delta_psi=0.8, hits=2, observed=False)
+    live = abs(f(domain_scalar("Meteorology"))) / abs(
+        f(domain_scalar("Oceanography"))
+    )
+    vs1 = err(live, 1.0)
+    ratio = s16 / s17
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="meteo_ocean_S_ratio_same_look",
+            name="S_D16_over_S_D17_at_dpsi_0p8_dark",
+            computed=ratio,
+            measured=1.0,
+            note=(
+                "|S(D=16,δψ=0.8,dark)|/|S(D=17,δψ=0.8,dark)| vs 1 — weather vs ocean. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object. Do not flip dark."
+            ),
+            kind="structural" if err(ratio, 1.0) > 0.5 else "scalar",
+            extra={
+                "kappa": kappa_domains("Meteorology", "Oceanography"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(
+        _ndbc_pres_dual(
+            ndbc_path,
+            "Meteorology",
+            "Oceanography",
+            "meteo_ocean_pres_meteo_fold",
+            "meteo_ocean_pres_ocean_fold",
+            "NDBC pressure on Meteorology D=16 — weather stays dark",
+            "same NDBC pressure on Oceanography D=17 — ocean stays dark",
+        )
+    )
+    return rows
+
+
+def atm_seis_rows(ndbc_path: Path) -> list[dict[str, Any]]:
+    """Atmospheric_Physics D=17 ↔ Seismology D=18 — air tank vs crust, both dark.
+
+    Dual-route NDBC pressure on Atm, PREM lithosphere density on Seis.
+    Do not flip dark.
+    """
+    s17 = scalar_at(d_eff=17, delta_psi=0.8, hits=2, observed=False)
+    s18 = scalar_at(d_eff=18, delta_psi=0.8, hits=2, observed=False)
+    live = abs(f(domain_scalar("Atmospheric_Physics"))) / abs(
+        f(domain_scalar("Seismology"))
+    )
+    vs1 = err(live, 1.0)
+    ratio = s17 / s18
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="atm_seis_S_ratio_same_look",
+            name="S_D17_over_S_D18_at_dpsi_0p8_dark",
+            computed=ratio,
+            measured=1.0,
+            note=(
+                "|S(D=17,δψ=0.8,dark)|/|S(D=18,δψ=0.8,dark)| vs 1 — air vs crust. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object. Do not flip dark."
+            ),
+            kind="structural" if err(ratio, 1.0) > 0.5 else "scalar",
+            extra={
+                "kappa": kappa_domains("Atmospheric_Physics", "Seismology"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(
+        _ndbc_pres_dual(
+            ndbc_path,
+            "Atmospheric_Physics",
+            "Seismology",
+            "atm_seis_pres_atm_fold",
+            "atm_seis_pres_seis_fold",
+            "NDBC pressure on Atmospheric_Physics D=17 — air stays dark",
+            "same NDBC pressure on Seismology D=18 — crust stays dark",
+        )
+    )
+    for layer in PREM_SOLID:
+        if layer["family"] != "lithosphere":
+            continue
+        rho = float(layer["rho"])
+        c, e = scaled(rho, "Seismology")
+        rows.append(
+            _row(
+                prop="atm_seis_rho_seis_fold",
+                name=str(layer["name"]) + "_rho_seis",
+                computed=c,
+                measured=rho,
+                note="PREM lithosphere density on Seismology D=18",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def ocean_seis_rows(ndbc_path: Path) -> list[dict[str, Any]]:
+    """Oceanography D=17 ↔ Seismology D=18 — ocean tank vs crust, both dark.
+
+    Dual-route NDBC SST on Ocean, PREM lithosphere density on Seis.
+    Do not flip dark.
+    """
+    s17 = scalar_at(d_eff=17, delta_psi=0.7, hits=1, observed=False)
+    s18 = scalar_at(d_eff=18, delta_psi=0.7, hits=1, observed=False)
+    live = abs(f(domain_scalar("Oceanography"))) / abs(
+        f(domain_scalar("Seismology"))
+    )
+    vs1 = err(live, 1.0)
+    ratio = s17 / s18
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="ocean_seis_S_ratio_same_look",
+            name="S_D17_over_S_D18_at_dpsi_0p7_dark",
+            computed=ratio,
+            measured=1.0,
+            note=(
+                "|S(D=17,δψ=0.7,dark)|/|S(D=18,δψ=0.7,dark)| vs 1 — ocean vs crust. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object. Do not flip dark."
+            ),
+            kind="structural" if err(ratio, 1.0) > 0.5 else "scalar",
+            extra={
+                "kappa": kappa_domains("Oceanography", "Seismology"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    if ndbc_path.is_file():
+        doc = json.loads(ndbc_path.read_text(encoding="utf-8"))
+        for rec in doc.get("rows") or []:
+            val = rec.get("wtmp")
+            if val is None:
+                continue
+            m = float(val)
+            if m <= 0:
+                continue
+            bid = str(rec.get("buoy_id") or "buoy")
+            ts = str(rec.get("timestamp") or "").replace(" ", "_")
+            tag = f"{bid}_{ts}"
+            c, e = scaled(m, "Oceanography")
+            rows.append(
+                _row(
+                    prop="ocean_seis_sst_ocean_fold",
+                    name=tag + "_sst_ocean",
+                    computed=c,
+                    measured=m,
+                    note="NDBC SST on Oceanography D=17 — ocean stays dark",
+                )
+            )
+            rows[-1]["error_pct"] = e
+    for layer in PREM_SOLID:
+        if layer["family"] != "lithosphere":
+            continue
+        rho = float(layer["rho"])
+        c, e = scaled(rho, "Seismology")
+        rows.append(
+            _row(
+                prop="ocean_seis_rho_seis_fold",
+                name=str(layer["name"]) + "_rho_seis",
+                computed=c,
+                measured=rho,
+                note="PREM lithosphere density on Seismology D=18",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def astro_planetary_rows(planetary_path: Path) -> list[dict[str, Any]]:
+    """Astronomy D=20 ↔ Planetary_Science D=21 — sky vs body.
+
+    Equalize at the astronomy look (δψ=1, hits=1). Dual-route JPL/NASA
+    mean densities as measured through APPLY — not the identity-pad
+    planetary_structure computed=measured rows.
+    """
+    s20 = scalar_at(d_eff=20, delta_psi=1.0, hits=1, observed=True)
+    s21 = scalar_at(d_eff=21, delta_psi=1.0, hits=1, observed=True)
+    live = abs(f(domain_scalar("Astronomy"))) / abs(
+        f(domain_scalar("Planetary_Science"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="astro_planetary_S_ratio_same_look",
+            name="S_D20_over_S_D21_at_dpsi_1",
+            computed=s20 / s21,
+            measured=1.0,
+            note=(
+                "|S(D=20,δψ=1,hits=1)|/|S(D=21,δψ=1,hits=1)| vs 1 — sky vs body. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Astronomy", "Planetary_Science"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    if planetary_path.is_file():
+        doc = json.loads(planetary_path.read_text(encoding="utf-8"))
+        for rec in doc.get("records") or []:
+            if rec.get("property") != "mean_density":
+                continue
+            m = float(rec.get("measured") or 0)
+            if m <= 0:
+                continue
+            name = str(rec.get("name") or "body")
+            ca, ea = scaled(m, "Astronomy")
+            cp, ep = scaled(m, "Planetary_Science")
+            rows.append(
+                _row(
+                    prop="astro_planetary_rho_astro_fold",
+                    name=name + "_rho_astro",
+                    computed=ca,
+                    measured=m,
+                    note="JPL Horizons mean density on Astronomy D=20",
+                )
+            )
+            rows[-1]["error_pct"] = ea
+            rows.append(
+                _row(
+                    prop="astro_planetary_rho_pl_fold",
+                    name=name + "_rho_pl",
+                    computed=cp,
+                    measured=m,
+                    note="same JPL density on Planetary_Science D=21 — body",
+                )
+            )
+            rows[-1]["error_pct"] = ep
+    return rows
+
+
+def qo_biology_rows(bio_path: Path) -> list[dict[str, Any]]:
+    """Quantum_Optics D=11 ↔ Biology D=12 — photon vs organism.
+
+    Biology stays dark. Equalize the dark look (δψ=0.08, observed=False).
+    Dual-route CRC n_D on QO, NCBI mt-operon on Biology. Do not flip dark.
+    """
+    s11 = scalar_at(d_eff=11, delta_psi=0.08, hits=0, observed=False)
+    s12 = scalar_at(d_eff=12, delta_psi=0.08, hits=0, observed=False)
+    live = abs(f(domain_scalar("Quantum_Optics"))) / abs(
+        f(domain_scalar("Biology"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="qo_bio_S_ratio_same_look",
+            name="S_D11_over_S_D12_dark_dpsi_0p08",
+            computed=s11 / s12,
+            measured=1.0,
+            note=(
+                "|S(D=11,δψ=0.08,dark)|/|S(D=12,δψ=0.08,dark)| vs 1 — photon vs organism. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object. Biology stays dark."
+            ),
+            extra={
+                "kappa": kappa_domains("Quantum_Optics", "Biology"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    for mat in OPTICAL_MATERIALS:
+        n = float(mat["n"])
+        c, e = scaled(n, "Quantum_Optics")
+        rows.append(
+            _row(
+                prop="qo_bio_n_qo_fold",
+                name=str(mat["name"]) + "_n_qo",
+                computed=c,
+                measured=n,
+                note="CRC n_D on Quantum_Optics D=11",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    if bio_path.is_file():
+        doc = json.loads(bio_path.read_text(encoding="utf-8"))
+        n_op = 0
+        for rec in doc.get("records") or []:
+            if rec.get("property") != "mt_operon_length":
+                continue
+            m = float(rec.get("measured") or 0)
+            if m <= 0:
+                continue
+            c, e = scaled(m, "Biology")
+            name = str(rec.get("name") or f"op{n_op}")
+            rows.append(
+                _row(
+                    prop="qo_bio_operon_bio_fold",
+                    name=name + "_bio",
+                    computed=c,
+                    measured=m,
+                    note="NCBI NC_012920.1 mt-operon on Biology D=12 — stays dark",
+                )
+            )
+            rows[-1]["error_pct"] = e
+            n_op += 1
+    return rows
+
+
 # Live view pairs: high |S_i|/|S_j| vs 1 is perception at that fold, not a failed gate.
 PERCEPTION_PAIRS = (
     ("Quantum_Mechanics", "Atomic_Physics", "qm_atomic"),
@@ -3069,6 +3633,8 @@ PERCEPTION_PAIRS = (
     ("Condensed_Matter", "Neuroscience", "cm_neuro"),
     ("Condensed_Matter", "Nuclear_Physics", "cm_nuc"),
     ("Neuroscience", "Thermodynamics", "neuro_thermo"),
+    ("Neuroscience", "Nuclear_Physics", "neuro_nuc"),
+    ("Astronomy", "Planetary_Science", "astro_planetary"),
 )
 
 
@@ -3221,5 +3787,16 @@ def suite_rows(
     rows.extend(neuro_thermo_rows())
     rows.extend(fluid_nuclear_rows(endf_path))
     rows.extend(fluid_meteo_rows(ndbc_path))
+    rows.extend(neuro_fluid_rows())
+    rows.extend(neuro_nuclear_rows(endf_path))
+    rows.extend(thermo_meteo_rows(ndbc_path))
+    rows.extend(nuclear_meteo_rows(ndbc_path, endf_path))
+    rows.extend(meteo_ocean_rows(ndbc_path))
+    rows.extend(atm_seis_rows(ndbc_path))
+    rows.extend(ocean_seis_rows(ndbc_path))
+    planet = Path(__file__).resolve().parents[1] / "data" / "planetary_structure_benchmark.json"
+    rows.extend(astro_planetary_rows(planet))
+    if bio_path is not None:
+        rows.extend(qo_biology_rows(bio_path))
     rows.extend(perception_view_rows())
     return rows

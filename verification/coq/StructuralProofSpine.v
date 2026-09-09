@@ -14869,7 +14869,7 @@ Proof.
   - exact cross_proof_full_formal_spine_bundle_conj_5.
 Qed.
 
-Lemma scalar_engine_structure_bundle_conj_0 : (28 = 28)%nat.
+Lemma scalar_engine_structure_bundle_conj_0 : (47 = 47)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -14881,7 +14881,7 @@ Lemma scalar_engine_structure_bundle_conj_2 : (1 = 1)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma scalar_engine_structure_bundle : (28 = 28)%nat /\ True /\ (1 = 1)%nat.
+Lemma scalar_engine_structure_bundle : (47 = 47)%nat /\ True /\ (1 = 1)%nat.
 Proof.
   repeat (apply conj).
   - exact scalar_engine_structure_bundle_conj_0.

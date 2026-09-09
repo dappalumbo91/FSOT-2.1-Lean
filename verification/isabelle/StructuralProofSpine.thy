@@ -1653,7 +1653,7 @@ lemma cross_proof_connective_spine_bundle: "(24 :: nat) = 24 \<and> (3 :: nat) =
 lemma cross_proof_full_formal_spine_bundle: "(1241 :: nat) = 1241 \<and> (317 :: nat) = 317 \<and> (1153 :: nat) = 1153 \<and> (1241 :: nat) = 1241 \<and> (0 :: nat) = 0 \<and> True"
   by auto
 
-lemma scalar_engine_structure_bundle: "(28 :: nat) = 28 \<and> (0 :: real) < (0.420222080893624 :: real) \<and> (1 :: nat) = 1"
+lemma scalar_engine_structure_bundle: "(47 :: nat) = 47 \<and> (0 :: real) < (0.420222080893624 :: real) \<and> (1 :: nat) = 1"
   by auto
 
 lemma scalar_engine_depth_bundle: "(28 :: nat) = 28 \<and> (0 :: real) < (0.420222080893624 :: real) \<and> (0 :: real) < (0.42 :: real) \<and> (0.42 :: real) < (0.420222080893624 :: real)"

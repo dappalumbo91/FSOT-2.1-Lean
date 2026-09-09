@@ -1,9 +1,9 @@
 {
   "pin": "D1D38A",
   "status": "GREEN",
-  "pooled_median_error_pct": 0.028136690312852153,
-  "n_scalar": 2240,
-  "n_total": 2310,
+  "pooled_median_error_pct": 0.029099821250807456,
+  "n_scalar": 3784,
+  "n_total": 3864,
   "channel_median_error_pct": {
     "seismic_acoustic_vp_vs": 0.1893480018437519,
     "seismic_acoustic_lithosphere_median": 0.06848486048287095,
@@ -146,15 +146,41 @@
     "fluid_nuclear_level_nuc_fold": 0.0460654716514473,
     "fluid_nuclear_level_fl_fold": 0.02813669031285443,
     "fluid_meteo_pres_fl_fold": 0.028136690312850775,
-    "fluid_meteo_pres_meteo_fold": 0.02909982125081187
+    "fluid_meteo_pres_meteo_fold": 0.02909982125081187,
+    "neuro_fluid_aa_neuro_fold": 0.018002668701804208,
+    "neuro_fluid_water_fl_fold": 0.028136690312855518,
+    "neuro_nuclear_S_ratio_same_look": 0.17733431519488807,
+    "neuro_nuclear_aa_neuro_fold": 0.018002668701804208,
+    "neuro_nuclear_level_nuc_fold": 0.0460654716514473,
+    "neuro_nuclear_level_neuro_fold": 0.018002668701800607,
+    "thermo_meteo_carnot_th_fold": 0.0393487250805868,
+    "thermo_meteo_pres_meteo_fold": 0.02909982125081187,
+    "thermo_meteo_pres_th_fold": 0.03934872508057831,
+    "nuclear_meteo_level_nuc_fold": 0.0460654716514473,
+    "nuclear_meteo_level_meteo_fold": 0.029099821250811734,
+    "nuclear_meteo_pres_meteo_fold": 0.02909982125081187,
+    "nuclear_meteo_pres_nuc_fold": 0.046065471651446525,
+    "meteo_ocean_pres_meteo_fold": 0.02909982125081187,
+    "meteo_ocean_pres_ocean_fold": 0.030172726067689278,
+    "atm_seis_pres_atm_fold": 0.02620375479862748,
+    "atm_seis_pres_seis_fold": 0.02229507860551597,
+    "atm_seis_rho_seis_fold": 0.02229507860551715,
+    "ocean_seis_sst_ocean_fold": 0.030172726067692633,
+    "ocean_seis_rho_seis_fold": 0.02229507860551715,
+    "astro_planetary_S_ratio_same_look": 0.46923331014765424,
+    "astro_planetary_rho_astro_fold": 0.02246148920415081,
+    "astro_planetary_rho_pl_fold": 0.023015374156233743,
+    "qo_bio_S_ratio_same_look": 0.05211249196357404,
+    "qo_bio_n_qo_fold": 0.016326821526857663,
+    "qo_bio_operon_bio_fold": 0.022236250385198133
   },
   "perception_view": {
     "closed_form": "|S_i|/|S_j| = |1+T1_i|/|1+T1_j|  (T2=1, T3\u22480)",
-    "n_pairs": 16,
+    "n_pairs": 18,
     "max_t3_leftover_pct": 3.057834424462004e-14,
     "max_live_vs_1_pct": 63.26901869796948,
     "t3_leftover_ok": true,
-    "n_same_view_structural": 16,
+    "n_same_view_structural": 18,
     "pairs": [
       {
         "name": "qm_atomic_T1_view",
@@ -283,6 +309,22 @@
         "t1_pred": 0.6535941912413266,
         "t3_leftover_pct": 0.0,
         "live_vs_1_pct": 34.64058087586734
+      },
+      {
+        "name": "neuro_nuc_T1_view",
+        "pair": "Neuroscience/Nuclear_Physics",
+        "live_ratio": 0.5582944713994866,
+        "t1_pred": 0.5582944713994866,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 44.17055286005134
+      },
+      {
+        "name": "astro_planetary_T1_view",
+        "pair": "Astronomy/Planetary_Science",
+        "live_ratio": 1.1711209586264442,
+        "t1_pred": 1.1711209586264442,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 17.112095862644416
       }
     ],
     "policy": "live vs 1 is the same-view question, not a 0.5% central; T1 leftover rows are identity checks, not a median pad"

@@ -231,6 +231,31 @@ lemma term2_default_is_one:
   "term2 default_params = 1"
   by (simp add: term2_def default_params_def)
 
+lemma t3_leftover_of_unit_t2:
+  assumes "term2 p = 1"
+  shows "raw_S p - (1 + term1 p) = term3 p"
+  using assms by (simp add: raw_S_def)
+
+lemma t3_leftover_of_default:
+  "raw_S default_params - (1 + term1 default_params) = term3 default_params"
+  using term2_default_is_one by (rule t3_leftover_of_unit_t2)
+
+definition apply_residual :: "real ⇒ real ⇒ fsot_params ⇒ real" where
+  "apply_residual measured factor p = measured * (1 + ¦scaled_S p¦ * factor)"
+
+lemma apply_residual_zero_factor:
+  "apply_residual measured 0 p = measured"
+  by (simp add: apply_residual_def)
+
+lemma apply_residual_zero_S:
+  assumes "scaled_S p = 0"
+  shows "apply_residual measured factor p = measured"
+  using assms by (simp add: apply_residual_def)
+
+lemma kappa_denom_pos:
+  "0 < 1 + ¦di - dj¦ / 25"
+  by simp
+
 lemma cosmological_route_D_eff:
   "D_eff (get_domain_params ''cosmological'') = 25"
   by (simp add: get_domain_params_def default_params_def)

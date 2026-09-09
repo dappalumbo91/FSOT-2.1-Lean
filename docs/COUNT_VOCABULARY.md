@@ -16,7 +16,7 @@ These are **different ledgers**. Using one number for all of them is the discrep
 | **Atomic obligations** | **2024** | Exportable atomic multiprover obligations | `data/cross_proof_verification_report.json` |
 | **Full formal obligations** | **2587** | Full formal spine | same |
 | **Catalog obligations** | **2256** | Scientific-catalog spine (477 domains) | same |
-| **Mathlib theorems** | **5240 / 5240 (100%, L1=0)** | Formal corpus depth campaign | status snapshot |
+| **Mathlib theorems** | **5248 / 5248 (100%, L1=0)** | Formal corpus depth campaign | status snapshot |
 
 ## Stale phrases — ignore if you still see them
 
@@ -26,7 +26,7 @@ These are **different ledgers**. Using one number for all of them is the discrep
 | 405/405 green | mid-2026 snapshot |
 | 430/432 or 432/432 or 433/433 green | pre-472 envelope |
 | 476/476 green | previous file envelope; live is **477/477** |
-| 5229/5229 or 5232/5232 Mathlib | previous corpus stamps; live is **5240/5240** L1=0 |
+| 5229/5229 or 5232/5232 or 5240/5240 Mathlib | previous corpus stamps; live is **5248/5248** L1=0 |
 | 1,863 atomic | older export; live is **2024** |
 | 61,445 scalar records | older envelope; live is **181,477** |
 | 536,740 records as the green envelope | older rollup; do not use as the 472-file gate |

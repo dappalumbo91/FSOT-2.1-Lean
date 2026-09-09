@@ -72,9 +72,9 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma cross_proof_full_formal_provable_count_pos : (0 < 1241)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma scalar_engine_structure_theorem_count_pos : (0 < 28)%nat.
+Lemma scalar_engine_structure_theorem_count_pos : (0 < 47)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma scalar_engine_structure_theorem_count_eq : (28 = 28)%nat.
+Lemma scalar_engine_structure_theorem_count_eq : (47 = 47)%nat.
 Proof. reflexivity. Qed.
 

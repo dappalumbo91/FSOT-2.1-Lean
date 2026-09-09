@@ -2363,8 +2363,8 @@ fn replay_all_obligations() {
     assert!(3 > 0, "cross_proof_lean_modules_pos");
     assert!(1241 > 0, "cross_proof_full_formal_obligation_count_pos");
     assert!(1241 > 0, "cross_proof_full_formal_provable_count_pos");
-    assert!(28 > 0, "scalar_engine_structure_theorem_count_pos");
-    assert_eq!(28, 28, "scalar_engine_structure_theorem_count_eq");
+    assert!(47 > 0, "scalar_engine_structure_theorem_count_pos");
+    assert_eq!(47, 47, "scalar_engine_structure_theorem_count_eq");
     // transcendental_bounds (68 obligations)
     assert!(0.367_f64 < (-1.0_f64).exp(), "exp_neg_one_gt_367");
     assert!((-1.0_f64).exp() < 0.368_f64, "exp_neg_one_lt_368");

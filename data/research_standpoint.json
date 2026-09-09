@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T17:17:32.432648+00:00",
+  "generated_at": "2026-09-09T17:29:34.726198+00:00",
   "pin": "D1D38A",
   "purpose": "Standpoint of the hub as a research-grade ToE candidate: what is covered, what is already law, what still needs depth \u2014 not more domains.",
   "counts": {
@@ -12,8 +12,8 @@
     "tier_B_verified": 338,
     "tier_C_thin": 13,
     "tier_C_thin_measured": 7,
-    "gated_tissues": 49,
-    "adjacent_ungated_pairs": 37,
+    "gated_tissues": 58,
+    "adjacent_ungated_pairs": 28,
     "engine_laws": 9,
     "discovered_laws": 9
   },
@@ -691,6 +691,96 @@
       "said": "Lab tank and weather are adjacent dark rungs D=15/16",
       "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a728",
       "live": "dark same-look \u03b4\u03c8=0.8 hits=2; NDBC pressure; do not flip dark"
+    },
+    {
+      "id": "TISSUE-NEURO-FLUID",
+      "cores": [
+        "Neuroscience",
+        "Fluid_Dynamics"
+      ],
+      "said": "Signaling and tank are adjacent D=14/15; Fluid stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a729",
+      "live": "transmitter AA vs CRC water \u03c1; live vs 1 is observed mix"
+    },
+    {
+      "id": "TISSUE-NEURO-NUC",
+      "cores": [
+        "Neuroscience",
+        "Nuclear_Physics"
+      ],
+      "said": "Signaling and orifice are adjacent D=14/15; equalize the neural look",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a729",
+      "live": "same-look D=14/15 at \u03b4\u03c8=0.7 hits=1; AA vs ENDF keV"
+    },
+    {
+      "id": "TISSUE-THERMO-METEO",
+      "cores": [
+        "Thermodynamics",
+        "Meteorology"
+      ],
+      "said": "Heat and weather are adjacent D=15/16; Meteo stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a729",
+      "live": "Carnot + NDBC pressure; live vs 1 is observed mix"
+    },
+    {
+      "id": "TISSUE-NUC-METEO",
+      "cores": [
+        "Nuclear_Physics",
+        "Meteorology"
+      ],
+      "said": "Orifice and weather are adjacent D=15/16; Meteo stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a729",
+      "live": "ENDF keV + NDBC pressure; do not flip dark"
+    },
+    {
+      "id": "TISSUE-METEO-OCEAN",
+      "cores": [
+        "Meteorology",
+        "Oceanography"
+      ],
+      "said": "Weather and ocean tank are adjacent dark rungs D=16/17",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a730",
+      "live": "dark same-look \u03b4\u03c8=0.8 hits=2; NDBC pressure; do not flip dark"
+    },
+    {
+      "id": "TISSUE-ATM-SEIS",
+      "cores": [
+        "Atmospheric_Physics",
+        "Seismology"
+      ],
+      "said": "Air tank and crust are adjacent dark rungs D=17/18",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a730",
+      "live": "NDBC pressure + PREM lithosphere density; both stay dark"
+    },
+    {
+      "id": "TISSUE-OCEAN-SEIS",
+      "cores": [
+        "Oceanography",
+        "Seismology"
+      ],
+      "said": "Ocean tank and crust are adjacent dark rungs D=17/18",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a730",
+      "live": "NDBC SST + PREM lithosphere density; both stay dark"
+    },
+    {
+      "id": "TISSUE-ASTRO-PLANET",
+      "cores": [
+        "Astronomy",
+        "Planetary_Science"
+      ],
+      "said": "Sky and body are adjacent D=20/21; equalize the astronomy look",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a731",
+      "live": "same-look D=20/21 at \u03b4\u03c8=1; JPL densities via APPLY not identity pad"
+    },
+    {
+      "id": "TISSUE-QO-BIO",
+      "cores": [
+        "Quantum_Optics",
+        "Biology"
+      ],
+      "said": "Photon and organism are adjacent D=11/12; Biology stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a731",
+      "live": "dark same-look \u03b4\u03c8=0.08; CRC n vs NCBI mt-operon; do not flip dark"
     }
   ],
   "ungated_adjacent": [
@@ -730,13 +820,6 @@
       "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
     },
     {
-      "a": "Quantum_Optics",
-      "b": "Biology",
-      "D_a": 11,
-      "D_b": 12,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
       "a": "Condensed_Matter",
       "b": "Ecology",
       "D_a": 14,
@@ -746,20 +829,6 @@
     {
       "a": "Neuroscience",
       "b": "Ecology",
-      "D_a": 14,
-      "D_b": 15,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Neuroscience",
-      "b": "Fluid_Dynamics",
-      "D_a": 14,
-      "D_b": 15,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Neuroscience",
-      "b": "Nuclear_Physics",
       "D_a": 14,
       "D_b": 15,
       "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
@@ -808,21 +877,7 @@
     },
     {
       "a": "Nuclear_Physics",
-      "b": "Meteorology",
-      "D_a": 15,
-      "D_b": 16,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Nuclear_Physics",
       "b": "Psychology",
-      "D_a": 15,
-      "D_b": 16,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Thermodynamics",
-      "b": "Meteorology",
       "D_a": 15,
       "D_b": 16,
       "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
@@ -839,13 +894,6 @@
       "b": "Psychology",
       "D_a": 16,
       "D_b": 16,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Meteorology",
-      "b": "Oceanography",
-      "D_a": 16,
-      "D_b": 17,
       "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
     },
     {
@@ -864,21 +912,7 @@
     },
     {
       "a": "Atmospheric_Physics",
-      "b": "Seismology",
-      "D_a": 17,
-      "D_b": 18,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Atmospheric_Physics",
       "b": "Sociology",
-      "D_a": 17,
-      "D_b": 18,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Oceanography",
-      "b": "Seismology",
       "D_a": 17,
       "D_b": 18,
       "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
@@ -923,13 +957,6 @@
       "b": "Economics",
       "D_a": 20,
       "D_b": 20,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Astronomy",
-      "b": "Planetary_Science",
-      "D_a": 20,
-      "D_b": 21,
       "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
     },
     {

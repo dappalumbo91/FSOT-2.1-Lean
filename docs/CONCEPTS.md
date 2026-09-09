@@ -30,7 +30,7 @@ S = K\,(T_1 + T_2 + T_3)
 |--------|------|----------------|
 | \(T_1\) | Look / observer | `observed` flips quirk / \(C_{\mathrm{factor}}\). Perception at a scale is this string at that fold’s \(\delta\psi\), hits, and dark/observed — same premise, different view. Closed form: \(\lvert S_i/S_j\rvert=\lvert 1+T_{1,i}\rvert/\lvert 1+T_{1,j}\rvert\) at \(T_2=1\), \(T_3\approx 0\) (D9). Lean: `abs_scaled_S_ratio_of_unit_t2_zero_t3` in `FSOT/Formal/ScalarEngineStructure.lean`. vs 1 is the same-view question, not a 0.5% central. |
 | \(T_2\) | Body / scale | amplitude, linear bias |
-| \(T_3\) | Strum / valve | POOF, SUCTION, acoustic bleed, chaos fold \((D-25)/25\). At unit \(T_2\), leftover is exact: \(\mathrm{raw\_S}-(1+T_1)=T_3\) (Lean `t3_leftover_of_unit_t2`). Observer on: `quirkMod_observed`. Node \(\cos\delta\psi=0\) kills \(T_3\) (`term3_eq_zero_of_cos_delta_psi_zero`). |
+| \(T_3\) | Strum / valve | POOF, SUCTION, acoustic bleed, chaos fold \((D-25)/25\). At unit \(T_2\), leftover is exact: \(\mathrm{raw\_S}-(1+T_1)=T_3\) (Lean `t3_leftover_of_unit_t2`). On the default rung that leftover is seed-tiny: \(\lvert T_3\rvert<1/5\) (`t3_leftover_seed_tiny`). \(\kappa_{ij}\) is `kappa` (no free spring). APPLY is `apply_residual`. Dark cores stay unobserved (`dark_core_unobserved`). |
 
 \(K \approx 0.420222\) is frozen from \(\pi,e,\varphi,\gamma\). No new dial per observable.
 

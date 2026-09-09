@@ -308,6 +308,23 @@ Fluid–Meteo: both dark. Equalize \(\delta\psi=0.8\), hits=2. Dual-route NDBC p
 
 QC stays dark (Hilbert look). Ecology / Psychology pairs still wait for a named public table — do not invent watts.
 
+## 29. Signaling vs tank / orifice / weather — Neuro \(D=14\) ↔ Fluid / Nuclear \(D=15\) ↔ Meteo \(D=16\)
+
+Neuro–Fluid: Fluid stays dark. Transmitter AA MW on Neuro, CRC water density on Fluid. Live vs 1 is the observed mix.  
+Neuro–Nuclear: equalize \(\delta\psi=0.7\), hits=1. Transmitter AA vs IAEA/ENDF keV.  
+Thermo–Meteo / Nuclear–Meteo: Meteo stays dark. Carnot or ENDF on the observed fold, NDBC pressure on the weather fold.
+
+## 30. Weather / ocean / air vs crust — Meteo \(D=16\) ↔ Ocean / Atm \(D=17\) ↔ Seismology \(D=18\)
+
+Meteo–Ocean: both dark. Equalize \(\delta\psi=0.8\), hits=2. Dual-route NDBC pressure.  
+Atm–Seis: both dark. NDBC pressure on Atm, PREM lithosphere density on Seis.  
+Ocean–Seis: both dark. NDBC SST on Ocean, PREM lithosphere density on Seis. Do not flip `observed`.
+
+## 31. Photon vs organism · sky vs body — QO \(D=11\) ↔ Biology \(D=12\); Astronomy \(D=20\) ↔ Planetary \(D=21\)
+
+QO–Biology: Biology stays dark. Equalize \(\delta\psi=0.08\) unobserved. CRC \(n_D\) on QO, NCBI mt-operon on Biology.  
+Astronomy–Planetary: equalize \(\delta\psi=1\), hits=1. JPL Horizons mean densities through APPLY — not the identity-pad `computed=measured` planetary_structure rows.
+
 Kill: pooled > 0.5%, or \(T_3\) leftover on the \(T_1\) view pairs > 0.5%, or anyone fits Q / γ / Poisson, or anyone treats deep-PREM mismatch as a new coefficient, or anyone stuffs live \(|S_i|/|S_j|\) vs 1 into 0.5%.
 
 Related: [`CONCEPTS.md`](CONCEPTS.md) C4 / C8 / C10 · [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) · [`APPLY.md`](APPLY.md)

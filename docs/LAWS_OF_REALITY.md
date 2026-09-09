@@ -1,6 +1,6 @@
 # Laws of reality (through this model)
 
-*Generated 2026-09-09T17:17:32.432648+00:00 · pin D1D38A*
+*Generated 2026-09-09T17:29:34.726198+00:00 · pin D1D38A*
 
 These are **not** a second Newton list and **not** the founding-era 35
 discrepancy names. They are what the verification spine actually licenses:
@@ -40,7 +40,7 @@ Same physics, different scale — these are what the panels taught.
 | `D6` | **genetics_two_regimes** | Protein product (measured homologs) and no-map (F01–F15) are two regimes. Do not mix Å objects. | product 0.13 Å vs AF 0.47 Å vs cryo-EM FSC ~1.2 Å vs bulk ~13 Å |
 | `D7` | **s8_joint_not_alone** | S8 lock 0.805 sits between Planck and DES. DES-alone is a tension row; the joint is the fair compare. | DES Y6 alone 0.789; joint DES+CMB+low-z 0.806 (arXiv:2601.14559). Euclid DR1 awaiting. |
 | `D8` | **flavor_is_one_fluid** | CKM/PMNS/α_s are seed readouts, not fitted SM inputs. Kill = next PDG combination outside 0.5%. | Higgs/flavor layer inside literature-tight band |
-| `D9` | **perception_is_scale_view** | Perception at a scale is T1 at that fold’s δψ, hits, and observed. Live |S_i|/|S_j| vs 1 asks for the same view; adjacent folds are not supposed to look the same. | T3 leftover 0.000% on 16 view pairs. QM/atomic live vs 1 is 29.86% = T1 view, not a failed 0.5%. Worst live vs 1 63.27%. Same-look D=6/7 vs 1 is 0.046%. |
+| `D9` | **perception_is_scale_view** | Perception at a scale is T1 at that fold’s δψ, hits, and observed. Live |S_i|/|S_j| vs 1 asks for the same view; adjacent folds are not supposed to look the same. | T3 leftover 0.000% on 18 view pairs. QM/atomic live vs 1 is 29.86% = T1 view, not a failed 0.5%. Worst live vs 1 63.27%. Same-look D=6/7 vs 1 is 0.046%. |
 
 ## Explicitly not a law (yet / ever)
 

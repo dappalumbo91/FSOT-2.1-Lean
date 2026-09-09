@@ -122,6 +122,38 @@ Proof. reflexivity. Qed.
 Lemma term2_default_is_one : term2 default_params = 1.
 Proof. unfold term2, default_params; simpl; lra. Qed.
 
+(* D9 leftover: at unit T2, raw_S − (1+T1) is exactly T3. *)
+Lemma t3_leftover_of_unit_t2 : forall p,
+  term2 p = 1 -> raw_S p - (1 + term1 p) = term3 p.
+Proof. intros p H; unfold raw_S; rewrite H; ring. Qed.
+
+Lemma t3_leftover_of_default :
+  raw_S default_params - (1 + term1 default_params) = term3 default_params.
+Proof. apply t3_leftover_of_unit_t2; apply term2_default_is_one. Qed.
+
+(* APPLY: computed = measured · (1 + |S| · f). f=0 or S=0 ⇒ identity. *)
+Definition apply_residual (measured factor : R) (p : fsot_params) : R :=
+  measured * (1 + Rabs (scaled_S p) * factor).
+
+Lemma apply_residual_zero_factor : forall measured p,
+  apply_residual measured 0 p = measured.
+Proof. intros; unfold apply_residual; ring. Qed.
+
+Lemma apply_residual_zero_S : forall measured factor p,
+  scaled_S p = 0 -> apply_residual measured factor p = measured.
+Proof. intros measured factor p H; unfold apply_residual; rewrite H, Rabs_R0; ring. Qed.
+
+(* κ_ij denominator 1 + |ΔD|/25 is strictly positive. *)
+Lemma kappa_denom_pos : forall di dj,
+  0 < 1 + Rabs (di - dj) / 25.
+Proof.
+  intros di dj.
+  pose proof (Rabs_pos (di - dj)) as H.
+  unfold Rdiv.
+  apply Rplus_lt_le_0_compat; [lra |].
+  apply Rmult_le_pos; [exact H | apply Rlt_le, Rinv_0_lt_compat; lra].
+Qed.
+
 Lemma default_D_eff : D_eff default_params = 25.
 Proof. reflexivity. Qed.
 

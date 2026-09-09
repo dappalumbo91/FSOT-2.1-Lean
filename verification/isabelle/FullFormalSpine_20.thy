@@ -69,10 +69,10 @@ lemma cross_proof_full_formal_obligation_count_pos: "0 < (1241 :: nat)"
 lemma cross_proof_full_formal_provable_count_pos: "0 < (1241 :: nat)"
   by eval
 
-lemma scalar_engine_structure_theorem_count_pos: "0 < (28 :: nat)"
+lemma scalar_engine_structure_theorem_count_pos: "0 < (47 :: nat)"
   by eval
 
-lemma scalar_engine_structure_theorem_count_eq: "(28 :: nat) = (28 :: nat)"
+lemma scalar_engine_structure_theorem_count_eq: "(47 :: nat) = (47 :: nat)"
   by eval
 
 end
