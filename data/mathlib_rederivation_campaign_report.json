@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T16:40:46.354911+00:00",
+  "generated_at": "2026-09-09T16:51:25.430166+00:00",
   "version": "1.1",
   "verdict": "FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED",
   "engine_core_closed": true,
@@ -7,7 +7,7 @@
   "full_mathlib_rederivation_of_all_lemmas": true,
   "global_lake": {
     "status": "passed",
-    "seconds": 2.4,
+    "seconds": 2.07,
     "cmd": "lake build FSOT",
     "stderr_tail": ""
   },
@@ -17,18 +17,17 @@
     "engine_l1_max": 40,
     "corpus_mathlib_min_pct": 55.0,
     "engine_l1_count": 0,
-    "corpus_l1_count": 1604,
+    "corpus_l1_count": 0,
     "engine_mathlib_pct": 100.0,
-    "corpus_mathlib_pct": 69.32
+    "corpus_mathlib_pct": 100.0
   },
   "corpus": {
     "theorem_count": 5229,
-    "mathlib_depth_count": 3625,
-    "mathlib_depth_pct": 69.32,
+    "mathlib_depth_count": 5229,
+    "mathlib_depth_pct": 100.0,
     "by_tier": {
-      "L0_definitional": 1915,
-      "L3_chain": 1427,
-      "L1_certificate": 1604,
+      "L0_definitional": 1919,
+      "L3_chain": 3027,
       "L2_analytic": 283
     },
     "sorry_count": 0
@@ -64,7 +63,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -93,7 +92,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -122,7 +121,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -151,7 +150,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -191,7 +190,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -224,7 +223,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -283,16 +282,15 @@
       ],
       "missing_modules": [],
       "theorem_count": 171,
-      "mathlib_depth_count": 168,
-      "mathlib_depth_pct": 98.25,
+      "mathlib_depth_count": 171,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L0_definitional": 79,
-        "L3_chain": 89,
-        "L1_certificate": 3
+        "L0_definitional": 80,
+        "L3_chain": 91
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -359,7 +357,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -426,7 +424,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -493,7 +491,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -552,16 +550,15 @@
       ],
       "missing_modules": [],
       "theorem_count": 128,
-      "mathlib_depth_count": 124,
-      "mathlib_depth_pct": 96.88,
+      "mathlib_depth_count": 128,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L0_definitional": 42,
-        "L3_chain": 82,
-        "L1_certificate": 4
+        "L0_definitional": 43,
+        "L3_chain": 85
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -628,7 +625,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -687,16 +684,15 @@
       ],
       "missing_modules": [],
       "theorem_count": 138,
-      "mathlib_depth_count": 135,
-      "mathlib_depth_pct": 97.83,
+      "mathlib_depth_count": 138,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L0_definitional": 49,
-        "L3_chain": 86,
-        "L1_certificate": 3
+        "L0_definitional": 50,
+        "L3_chain": 88
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -763,7 +759,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -830,7 +826,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -897,7 +893,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -964,7 +960,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -1023,16 +1019,15 @@
       ],
       "missing_modules": [],
       "theorem_count": 144,
-      "mathlib_depth_count": 131,
-      "mathlib_depth_pct": 90.97,
+      "mathlib_depth_count": 144,
+      "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L0_definitional": 51,
-        "L3_chain": 80,
-        "L1_certificate": 13
+        "L0_definitional": 52,
+        "L3_chain": 92
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -1099,7 +1094,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",
@@ -1142,7 +1137,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.4,
+      "lake_build_seconds": 2.07,
       "builds": [
         {
           "target": "FSOT",

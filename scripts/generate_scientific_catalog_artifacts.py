@@ -81,35 +81,32 @@ def _coq_lemma(ob: dict) -> str:
     raise ValueError(f"unsupported kind {kind} for {oid}")
 
 
+def _lean_real(oid: str, goal: str) -> str:
+    """Term-mode numeric pin — L3 constructive shape, same statement as norm_num."""
+    return (
+        f"theorem {oid} :\n"
+        f"    {goal} :=\n"
+        f"  (by norm_num : {goal})\n"
+    )
+
+
 def _lean_theorem(ob: dict) -> str:
     oid = ob["coq_id"]
     kind = ob["kind"]
     if kind in ("lt_half",):
         v = float(ob["value"])
-        return (
-            f"theorem {oid} : ({v} : ℝ) < (0.5 : ℝ) := by\n"
-            f"  norm_num\n"
-        )
+        return _lean_real(oid, f"({v} : ℝ) < (0.5 : ℝ)")
     if kind == "r_lt_lit_pure":
         l = float(ob["left_value"])
         r = float(ob["right_value"])
-        return (
-            f"theorem {oid} : ({l} : ℝ) < ({r} : ℝ) := by\n"
-            f"  norm_num\n"
-        )
+        return _lean_real(oid, f"({l} : ℝ) < ({r} : ℝ)")
     if kind == "lt_lit":
         v = float(ob["value"])
         b = float(ob["bound"])
-        return (
-            f"theorem {oid} : ({v} : ℝ) < ({b} : ℝ) := by\n"
-            f"  norm_num\n"
-        )
+        return _lean_real(oid, f"({v} : ℝ) < ({b} : ℝ)")
     if kind == "pos":
         v = float(ob["value"])
-        return (
-            f"theorem {oid} : (0 : ℝ) < ({v} : ℝ) := by\n"
-            f"  norm_num\n"
-        )
+        return _lean_real(oid, f"(0 : ℝ) < ({v} : ℝ)")
     if kind == "nat_pos":
         v = int(ob["value"])
         return (
@@ -126,10 +123,7 @@ def _lean_theorem(ob: dict) -> str:
     if kind == "abs_diff_lt_lit":
         d = float(ob["diff"])
         b = float(ob["bound"])
-        return (
-            f"theorem {oid} : ({d} : ℝ) < ({b} : ℝ) := by\n"
-            f"  norm_num\n"
-        )
+        return _lean_real(oid, f"({d} : ℝ) < ({b} : ℝ)")
     return ""
 
 

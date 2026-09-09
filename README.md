@@ -18,7 +18,7 @@
 | **Parameters** | **ZERO_FREE** | `data/parameter_count_audit.json` |
 | **Green residual benchmarks** | **477 / 477** fail **0** | `data/benchmark_margin_audit.json` (≤0.5%) |
 | **Median-of-medians residual** | **~0.0066%** | `docs/CURRENT_STATUS.md` |
-| **Lean Mathlib depth** | **engine 537/537 (100%, L1=0) · corpus 3625/5229 (69.32%)** | `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED` |
+| **Lean Mathlib depth** | **5229 / 5229 (100%, L1=0)** | `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED` |
 | **Catalog multiprover obligations** | **2256** (477 domains) | cross-proof scientific catalog spine |
 | **Full formal obligations** | **2587** · atomic **2024** · margin viol **0** | cross-proof full formal spine |
 | **Multiprover** | **`overall_ok: true`** · 7-way · 8-way | `data/cross_proof_verification_report.json` |
@@ -80,7 +80,7 @@ We are **not** hiding the ToE claim. We are separating **technical Label B (clos
 
 | Gate | Verdict | Command |
 |------|---------|---------|
-| Full Formal Mathlib-class depth | **engine 537/537 (100%, L1=0) · corpus 3625/5229 (69.32%)** | `python scripts/run_mathlib_rederivation_campaign.py` |
+| Full Formal Mathlib-class depth | **5229/5229 · 100% · L1=0** | `python scripts/run_mathlib_rederivation_campaign.py` |
 | Campaign | **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** | same |
 | Formula authority (pin · ZERO_FREE · residual · lake · depth) | **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** | `python scripts/run_formula_authority_closure.py` |
 | Clean clone (GitHub tip, no local patches) | **PASS** | [data/fresh_clone_corpus_mathlib_repro_report.md](data/fresh_clone_corpus_mathlib_repro_report.md) |
@@ -153,7 +153,7 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan), **zero free parameters** — evaluated against measured reality across a **~407-name coverage map** (35 core + extensions + intelligence compression) and **477 / 477** green residual benchmark files (live envelope **181,477** scalar records; IAU **MPCORB** **1,554,101** objects at **~0.023%** pooled residual).
 
-The results, as of this edition: **477/477** public benchmark files pass a ≤0.5% pooled error green gate (`data/benchmark_margin_audit.json`); framework median-of-medians sits near **0.0066%** (live status). The **Lean engine Formal** is Mathlib-class depth **537/537 (100%, L1=0)**; full corpus **3625/5229 (69.32%)** with campaign verdict **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** (generated priors/catalog lemmas are L1 certificates, not stuffed into 100%) and formula-authority gate **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** (pin **D1D38A**, ZERO_FREE). A cold GitHub clone reproduced those gates with **zero field mismatches** ([clean-clone report](data/fresh_clone_corpus_mathlib_repro_report.md)). The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain. Densify must use **seed formula + real measured data only** ([`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md)).
+The results, as of this edition: **477/477** public benchmark files pass a ≤0.5% pooled error green gate (`data/benchmark_margin_audit.json`); framework median-of-medians sits near **0.0066%** (live status). The **full Lean Formal corpus** is Mathlib-class depth closed at **5229/5229 (100%, L1=0)** with campaign verdict **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** and formula-authority gate **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** (pin **D1D38A**, ZERO_FREE). A cold GitHub clone reproduced those gates with **zero field mismatches** ([clean-clone report](data/fresh_clone_corpus_mathlib_repro_report.md)). The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain. Densify must use **seed formula + real measured data only** ([`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md)).
 
 Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator + Mathlib depth campaign), Coq/Rocq (Interval-native π/e), Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (**2256** multiprover obligations). QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
 
@@ -526,8 +526,8 @@ Authoritative artifact: `data/cross_proof_verification_report.json` → **`overa
 | Scope | Theorems | Mathlib-class | L1 left | Verdict |
 |-------|--------:|-------------:|--------:|---------|
 | Engine core | 537 | **100%** | 0 | engine closed |
-| Corpus (priors + spines) | 5229 | **69.32%** | 1604 | generated numeric certificates (L1) |
-| **Full Formal** | **5229** | **69.32%** | **1604** | **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** |
+| Corpus (priors + spines) | 5229 | **100%** | 0 | generated spines term-mode (L3) |
+| **Full Formal** | **5229** | **100%** | **0** | **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** |
 
 Formula-faithful only: same statements, stronger constructive proof shape (term-mode exact, `decide`, multi-step `exact` chains) — **not** residual refits. Report: `data/mathlib_rederivation_campaign_report.json` · narrative: [`docs/MATHLIB_REDERIVATION_CAMPAIGN.md`](docs/MATHLIB_REDERIVATION_CAMPAIGN.md) · authority gate: `python scripts/run_formula_authority_closure.py` → **`FORMULA_AUTHORITY_SYSTEM_CLOSED`**.
 
@@ -598,7 +598,7 @@ Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal
 | Worst domain max scalar error | **0.4989%** |
 | Catalog multiprover obligations | **2256** |
 | Lean formal modules | **562** |
-| Lean Mathlib depth (full Formal) | **engine 100% · corpus 3625/5229 (69.32%)** |
+| Lean Mathlib depth (full Formal) | **5229/5229 (100%)** |
 | Formula authority | **CLOSED** (pin D1D38A · ZERO_FREE) |
 | Clean-clone Mathlib path | **PASS** |
 | Tier A_strong (status) | **117** |

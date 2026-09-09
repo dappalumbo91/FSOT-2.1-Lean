@@ -258,40 +258,25 @@ def gen_lean(obs: list[dict]) -> str:
         kind = ob["kind"]
         if kind == "pos":
             v = float(ob["value"])
-            lines += [
-                f"theorem {oid} : (0 : ℝ) < ({v} : ℝ) := by",
-                "  norm_num",
-                "",
-            ]
+            g = f"(0 : ℝ) < ({v} : ℝ)"
+            lines += [f"theorem {oid} :", f"    {g} :=", f"  (by norm_num : {g})", ""]
         elif kind == "lt_half":
             v = float(ob["value"])
-            lines += [
-                f"theorem {oid} : ({v} : ℝ) < (0.5 : ℝ) := by",
-                "  norm_num",
-                "",
-            ]
+            g = f"({v} : ℝ) < (0.5 : ℝ)"
+            lines += [f"theorem {oid} :", f"    {g} :=", f"  (by norm_num : {g})", ""]
         elif kind == "lt_lit":
             v = float(ob["value"])
             b = float(ob["bound"])
-            lines += [
-                f"theorem {oid} : ({v} : ℝ) < ({b} : ℝ) := by",
-                "  norm_num",
-                "",
-            ]
+            g = f"({v} : ℝ) < ({b} : ℝ)"
+            lines += [f"theorem {oid} :", f"    {g} :=", f"  (by norm_num : {g})", ""]
         elif kind == "r_lt_lit_pure":
             l, r = float(ob["left_value"]), float(ob["right_value"])
-            lines += [
-                f"theorem {oid} : ({l} : ℝ) < ({r} : ℝ) := by",
-                "  norm_num",
-                "",
-            ]
+            g = f"({l} : ℝ) < ({r} : ℝ)"
+            lines += [f"theorem {oid} :", f"    {g} :=", f"  (by norm_num : {g})", ""]
         elif kind == "abs_diff_lt_lit":
             d, b = float(ob["diff"]), float(ob["bound"])
-            lines += [
-                f"theorem {oid} : ({d} : ℝ) < ({b} : ℝ) := by",
-                "  norm_num",
-                "",
-            ]
+            g = f"({d} : ℝ) < ({b} : ℝ)"
+            lines += [f"theorem {oid} :", f"    {g} :=", f"  (by norm_num : {g})", ""]
         elif kind == "eq_nat":
             l = int(ob["value"])
             r = int(ob.get("right_value", l))

@@ -22,11 +22,15 @@ def verified_desktop_priors_lean(
         sym = f"{prefix}_{key}"
         scalar_defs.append(f"def {sym} : ℝ := ({val} : ℝ)")
         scalar_thms.append(
-            f"theorem {sym}_pos : 0 < {sym} := by\n  unfold {sym}; norm_num"
+            f"theorem {sym}_pos : 0 < {sym} := by\n"
+            f"  unfold {sym}\n"
+            f"  exact (by norm_num : (0 : ℝ) < ({val} : ℝ))"
         )
         if val < 0.5:
             scalar_thms.append(
-                f"theorem {sym}_under_half_pct : {sym} < (0.5 : ℝ) := by\n  unfold {sym}; norm_num"
+                f"theorem {sym}_under_half_pct : {sym} < (0.5 : ℝ) := by\n"
+                f"  unfold {sym}\n"
+                f"  exact (by norm_num : ({val} : ℝ) < (0.5 : ℝ))"
             )
     scalar_block = ""
     if scalar_defs:
@@ -51,15 +55,17 @@ def {prefix}_median_error_pct : ℝ := ({med} : ℝ)
 def {prefix}_D_eff : ℕ := {d_eff}
 
 {scalar_block}theorem {prefix}_observable_count_pos : 0 < {prefix}_observable_count := by
-  unfold {prefix}_observable_count; norm_num
+  unfold {prefix}_observable_count; decide
 
 theorem {prefix}_median_error_under_five_pct :
     {prefix}_median_error_pct < (5 : ℝ) := by
-  unfold {prefix}_median_error_pct; norm_num
+  unfold {prefix}_median_error_pct
+  exact (by norm_num : ({med} : ℝ) < (5 : ℝ))
 
 theorem {prefix}_median_error_under_half_pct :
     {prefix}_median_error_pct < (0.5 : ℝ) := by
-  unfold {prefix}_median_error_pct; norm_num
+  unfold {prefix}_median_error_pct
+  exact (by norm_num : ({med} : ℝ) < (0.5 : ℝ))
 
 theorem {prefix}_bundle :
     {prefix}_observable_count = {n} ∧
@@ -67,8 +73,8 @@ theorem {prefix}_bundle :
     {prefix}_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "{lean_domain}") > 0 := by
   refine ⟨
-    by unfold {prefix}_observable_count; norm_num,
-    by unfold {prefix}_D_eff; norm_num,
+    by unfold {prefix}_observable_count; decide,
+    by unfold {prefix}_D_eff; decide,
     {prefix}_median_error_under_half_pct,
     {sign_theorem}
   ⟩

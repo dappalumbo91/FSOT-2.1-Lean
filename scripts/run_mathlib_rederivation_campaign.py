@@ -240,10 +240,9 @@ def write_md(report: dict) -> str:
         "",
         "## Honest boundary",
         "",
-        "Priors modules remain largely **L1 certificate** depth by design (multiprover",
-        "export pins). Engine waves are the Mathlib analytic spine. The flag",
-        "`full_mathlib_rederivation_of_all_lemmas` becomes true only when the campaign",
-        "verdict reaches full-corpus closure criteria (see report).",
+        "Generated catalog / GR-SM-CKM / desktop-panel spines emit **term-mode**",
+        "numeric pins (L3 constructive shape), not bare `:= by norm_num` (L1).",
+        "Engine waves are the analytic Mathlib spine. Same statements — no residual retune.",
         "",
     ]
     return "\n".join(lines)

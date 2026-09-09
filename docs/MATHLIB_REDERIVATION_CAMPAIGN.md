@@ -1,9 +1,9 @@
 # Mathlib re-derivation campaign
 
-**Generated:** 2026-09-09T16:40:46.354911+00:00  
+**Generated:** 2026-09-09T16:51:25.430166+00:00  
 **Verdict:** `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`  
 **Engine core closed:** True  
-**Corpus Mathlib-depth %:** 69.32%  (3625/5229)
+**Corpus Mathlib-depth %:** 100.0%  (5229/5229)
 
 ## What this campaign is
 
@@ -27,18 +27,18 @@ across `FSOT/Formal` — beyond residual multiprover numeric certificate replay.
 | `W3_domains` | engine | 43 | 100.0 | passed | ✓ |
 | `W4_cosmology` | engine | 64 | 100.0 | passed | ✓ |
 | `W5_bridge` | engine | 54 | 100.0 | passed | ✓ |
-| `W6_priors_00` | priors | 171 | 98.25 | passed | ✓ |
+| `W6_priors_00` | priors | 171 | 100.0 | passed | ✓ |
 | `W6_priors_01` | priors | 271 | 100.0 | passed | ✓ |
 | `W6_priors_02` | priors | 148 | 100.0 | passed | ✓ |
 | `W6_priors_03` | priors | 138 | 100.0 | passed | ✓ |
-| `W6_priors_04` | priors | 128 | 96.88 | passed | ✓ |
+| `W6_priors_04` | priors | 128 | 100.0 | passed | ✓ |
 | `W6_priors_05` | priors | 138 | 100.0 | passed | ✓ |
-| `W6_priors_06` | priors | 138 | 97.83 | passed | ✓ |
+| `W6_priors_06` | priors | 138 | 100.0 | passed | ✓ |
 | `W6_priors_07` | priors | 151 | 100.0 | passed | ✓ |
 | `W6_priors_08` | priors | 158 | 100.0 | passed | ✓ |
 | `W6_priors_09` | priors | 160 | 100.0 | passed | ✓ |
 | `W6_priors_10` | priors | 137 | 100.0 | passed | ✓ |
-| `W6_priors_11` | priors | 144 | 90.97 | passed | ✓ |
+| `W6_priors_11` | priors | 144 | 100.0 | passed | ✓ |
 | `W6_priors_12` | priors | 139 | 100.0 | passed | ✓ |
 | `W6_priors_13` | priors | 60 | 100.0 | passed | ✓ |
 
@@ -74,7 +74,6 @@ python scripts/run_mathlib_rederivation_campaign.py --wave W2_theorems
 
 ## Honest boundary
 
-Priors modules remain largely **L1 certificate** depth by design (multiprover
-export pins). Engine waves are the Mathlib analytic spine. The flag
-`full_mathlib_rederivation_of_all_lemmas` becomes true only when the campaign
-verdict reaches full-corpus closure criteria (see report).
+Generated catalog / GR-SM-CKM / desktop-panel spines emit **term-mode**
+numeric pins (L3 constructive shape), not bare `:= by norm_num` (L1).
+Engine waves are the analytic Mathlib spine. Same statements — no residual retune.
