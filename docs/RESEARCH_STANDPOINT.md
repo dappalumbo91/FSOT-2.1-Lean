@@ -1,6 +1,6 @@
 # Research standpoint — what the hub is, what still has to hold
 
-*Generated 2026-09-09T17:29:34.726198+00:00 · pin D1D38A*
+*Generated 2026-09-09T17:39:36.998129+00:00 · pin D1D38A*
 
 This is the step-back. **Not** another prediction wave and **not** another
 domain count. Label A is the empirical framework. Label B T1–T6 is the
@@ -17,8 +17,8 @@ frozen ToE checklist. More green files strengthen A only.
 | Atlas named rows | **403** | coverage map |
 | Green residual files | **477 / 477** | ≤0.5% pooled median |
 | A_strong / B_verified / C_thin | 117 / 338 / 13 | record-depth tiers (C_thin measured **7**) |
-| Gated tissues | **58** | same physics, two zooms, residual-checked |
-| Adjacent cores still siloed | **28** | next connective simulation, not new domains |
+| Gated tissues | **68** | same physics, two zooms, residual-checked |
+| Adjacent cores still siloed | **18** | next connective simulation, not new domains |
 
 Counts authority: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md) · [`CURRENT_STATUS.md`](CURRENT_STATUS.md).
 Tree: [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md).
@@ -52,7 +52,7 @@ Label B is already a frozen checklist (T1–T6). The work that actually
 |------|-----|--------|
 | **Named objects** | A paper number is not automatically the lock | [`OBJECT_SCORING.md`](OBJECT_SCORING.md) shipped |
 | **Laws ledger** | Verification without stated rules is a scoreboard | this file + [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) |
-| **Connective tissue** | Same physics at two scales is the ToE signature | 58 gated · adjacent pairs still siloed (below) |
+| **Connective tissue** | Same physics at two scales is the ToE signature | 68 gated · adjacent pairs still siloed (below) |
 | **APPLY cookbooks** | General protocol exists; most cores lack a worked example | MPCORB catalog · Seismology wave · Optics wave/photon |
 | **Science vs FSOT** | arXiv/PDG/survey scored on the *named* object | scientist questions + literature packs; needs a standing compare loop |
 | **C_thin measured** | Green-and-thin is not depth | queue below |
@@ -168,8 +168,18 @@ flips identity (QC→QO is the Hilbert move). Do not 'fix' dark by setting
 | `TISSUE-OCEAN-SEIS` | Oceanography, Seismology | Ocean tank and crust are adjacent dark rungs D=17/18 | NDBC SST + PREM lithosphere density; both stay dark |
 | `TISSUE-ASTRO-PLANET` | Astronomy, Planetary_Science | Sky and body are adjacent D=20/21; equalize the astronomy look | same-look D=20/21 at δψ=1; JPL densities via APPLY not identity pad |
 | `TISSUE-QO-BIO` | Quantum_Optics, Biology | Photon and organism are adjacent D=11/12; Biology stays dark | dark same-look δψ=0.08; CRC n vs NCBI mt-operon; do not flip dark |
+| `TISSUE-ATM-SOC` | Atmospheric_Physics, Sociology | Air tank and catalog tank are adjacent D=17/18; Atm stays dark | NDBC pressure + World Bank YoY; do not flip dark |
+| `TISSUE-OCEAN-SOC` | Oceanography, Sociology | Ocean tank and catalog tank are adjacent D=17/18; Ocean stays dark | NDBC SST + World Bank YoY; do not flip dark |
+| `TISSUE-SEIS-SOC` | Seismology, Sociology | Crust and catalog share D=18; Seismology stays dark | PREM lithosphere + World Bank YoY; live vs 1 is observed mix |
+| `TISSUE-SOC-GEO` | Sociology, Geophysics | Catalog and bulk-earth are adjacent D=18/19; Geo stays dark | World Bank YoY + PREM lithosphere density |
+| `TISSUE-GEO-ASTRO` | Geophysics, Astronomy | Bulk-earth and sky are adjacent D=19/20; Geo stays dark | PREM lithosphere + JPL densities |
+| `TISSUE-GEO-ECON` | Geophysics, Economics | Bulk-earth and market are adjacent D=19/20; Geo stays dark | PREM lithosphere + World Bank YoY |
+| `TISSUE-ASTRO-ECON` | Astronomy, Economics | Sky and market are two looks at D=20; fold onto D=19 | look-split 1.0/1.5 onto D=19; JPL + World Bank; vs 1 retired |
+| `TISSUE-ECON-PLANET` | Economics, Planetary_Science | Market and body are adjacent D=20/21; equalize the astronomy look | same-look D=20/21 at δψ=1; World Bank YoY + JPL densities |
+| `TISSUE-PLANET-QG` | Planetary_Science, Quantum_Gravity | Body and ceiling are adjacent D=21/22; QG stays dark | JPL densities + compact remainder; do not flip QG |
+| `TISSUE-ASTROPHYS-PA` | Astrophysics, Particle_Astrophysics | Star and cosmic-ray share D=24; PA stays dark | PDG 2024 measured masses via APPLY; live vs 1 is observed mix |
 
-Between-scale panel pooled **0.029% GREEN** (3784 tight). D9: live |S| vs 1 is T1 view (T3 leftover 0.000%). Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.
+Between-scale panel pooled **0.026% GREEN** (5497 tight). D9: live |S| vs 1 is T1 view (T3 leftover 0.000%). Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.
 
 ## 6. Ungated adjacent cores (connective simulation queue)
 
@@ -198,16 +208,6 @@ seed-closed ratio — no new coefficient.
 | Meteorology | 16 | Psychology | 16 |
 | Psychology | 16 | Atmospheric_Physics | 17 |
 | Psychology | 16 | Oceanography | 17 |
-| Atmospheric_Physics | 17 | Sociology | 18 |
-| Oceanography | 17 | Sociology | 18 |
-| Seismology | 18 | Sociology | 18 |
-| Sociology | 18 | Geophysics | 19 |
-| Geophysics | 19 | Astronomy | 20 |
-| Geophysics | 19 | Economics | 20 |
-| Astronomy | 20 | Economics | 20 |
-| Economics | 20 | Planetary_Science | 21 |
-| Planetary_Science | 21 | Quantum_Gravity | 22 |
-| Astrophysics | 24 | Particle_Astrophysics | 24 |
 
 ## 7. Scientific depth still thin (measured C_thin)
 
@@ -274,10 +274,10 @@ the prediction monitor, PDG/Euclid/DESI watches. Do not ingest arXiv as a residu
 | `NW-CASP` | Genetics CASP/CAMEO blind protocol (Grok Build owns the run). | Quoting 0.13 Å as sequence-only. Cross-citing FSC Å. |
 | `NW-OPEN` | T3/T4 uniqueness / path-integral confinement stays open research. Euclid DR1 12 Nov 2026 is a watch. | Pretending Label B uniqueness is proved. Euclid CLOE as measured. |
 
-Next connective: remaining Sociology/Geophysics/Economics cluster,
-Planetary↔Quantum_Gravity, Astrophysics↔Particle_Astrophysics.
-QC stays dark. Ecology/Psychology wait for a named public table
-(do not invent watts). Gate like PREM+NDBC. Not a new theory.
+Next connective: QC stays dark (Hilbert look).
+Ecology/Psychology wait for a named public table (do not invent watts).
+ISO-SHOES-CLASS-BIN 1% stays frozen — chain 0.252%, do not retune ρ.
+Not a new theory.
 
 Related: [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) · [`HOLE_AUDIT.md`](HOLE_AUDIT.md) ·
 [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · [`APPLY.md`](APPLY.md) ·

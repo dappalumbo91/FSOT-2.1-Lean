@@ -325,6 +325,23 @@ Ocean–Seis: both dark. NDBC SST on Ocean, PREM lithosphere density on Seis. Do
 QO–Biology: Biology stays dark. Equalize \(\delta\psi=0.08\) unobserved. CRC \(n_D\) on QO, NCBI mt-operon on Biology.  
 Astronomy–Planetary: equalize \(\delta\psi=1\), hits=1. JPL Horizons mean densities through APPLY — not the identity-pad `computed=measured` planetary_structure rows.
 
+## 32. Catalog tank vs air / ocean / crust — Sociology \(D=18\) ↔ Atm / Ocean \(D=17\) ↔ Seis \(D=18\) ↔ Geo \(D=19\)
+
+Same World Bank YoY catalog as TISSUE-SOCIAL, now on the sociology fold. Air / ocean / crust stay dark. Dual-route NDBC pressure (Atm), SST (Ocean), PREM lithosphere density (Seis / Geo). Do not flip `observed`. Live vs 1 is the observed mix.
+
+## 33. Bulk-earth vs sky vs market vs body — Geo \(D=19\) ↔ Astronomy / Economics \(D=20\) ↔ Planetary \(D=21\)
+
+Geo stays dark. PREM lithosphere + JPL / World Bank.  
+Astronomy–Economics: same \(D=20\), \(\delta\psi=1\) vs \(1.5\). Fold onto \(D=19\). vs 1 retired.  
+Economics–Planetary: equalize \(\delta\psi=1\). World Bank YoY + JPL densities.
+
+## 34. Body vs ceiling · star vs cosmic-ray — Planetary \(D=21\) ↔ QG \(D=22\); Astrophysics \(D=24\) ↔ Particle_Astrophysics \(D=24\)
+
+Planetary–QG: QG stays dark. JPL densities + compact remainder \(((D-25)/25)/\ln(D/25)\). Same ceiling grammar as TISSUE-CEILING.  
+Astrophysics–PA: PA stays dark. PDG 2024 *measured* masses through APPLY — not the SMILES computed column.
+
+QC stays dark (Hilbert look). Ecology / Psychology still wait for a named public table — do not invent watts. ISO-SHOES-CLASS-BIN 1% stays frozen.
+
 Kill: pooled > 0.5%, or \(T_3\) leftover on the \(T_1\) view pairs > 0.5%, or anyone fits Q / γ / Poisson, or anyone treats deep-PREM mismatch as a new coefficient, or anyone stuffs live \(|S_i|/|S_j|\) vs 1 into 0.5%.
 
 Related: [`CONCEPTS.md`](CONCEPTS.md) C4 / C8 / C10 · [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md) · [`APPLY.md`](APPLY.md)

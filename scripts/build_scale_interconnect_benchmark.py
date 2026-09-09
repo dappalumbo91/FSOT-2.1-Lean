@@ -127,6 +127,16 @@ def main() -> int:
         "ocean_seis": "Dark D=17/18. NDBC SST + PREM lithosphere density.",
         "astro_planetary": "Adjacent D=20/21 at δψ=1 vs 1. JPL mean density via APPLY, not identity pad.",
         "qo_biology": "Dark same-look D=11/12 at δψ=0.08. CRC n vs NCBI mt-operon. Biology stays dark.",
+        "atm_soc": "Atm stays dark. NDBC pressure + World Bank YoY.",
+        "ocean_soc": "Ocean stays dark. NDBC SST + World Bank YoY.",
+        "seis_soc": "Seis stays dark. PREM lithosphere + World Bank YoY.",
+        "soc_geo": "Geo stays dark. World Bank YoY + PREM lithosphere.",
+        "geo_astro": "Geo stays dark. PREM lithosphere + JPL densities.",
+        "geo_econ": "Geo stays dark. PREM lithosphere + World Bank YoY.",
+        "astro_econ": "Same D=20 look 1.0/1.5 folded onto D=19. JPL + World Bank. vs 1 retired.",
+        "econ_planet": "Adjacent D=20/21 at δψ=1 vs 1. World Bank YoY + JPL densities.",
+        "planet_qg": "QG stays dark. JPL densities + compact remainder. Do not flip QG.",
+        "astro_pa": "PA stays dark. PDG 2024 measured masses via APPLY. Live vs 1 is observed mix.",
         "perception_view": "|1+T1_i|/|1+T1_j| vs live |S_i|/|S_j| (T3 leftover). vs 1 is the same-view question, not a 0.5% central. Not a median pad.",
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")

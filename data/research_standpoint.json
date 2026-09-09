@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T17:29:34.726198+00:00",
+  "generated_at": "2026-09-09T17:39:36.998129+00:00",
   "pin": "D1D38A",
   "purpose": "Standpoint of the hub as a research-grade ToE candidate: what is covered, what is already law, what still needs depth \u2014 not more domains.",
   "counts": {
@@ -12,8 +12,8 @@
     "tier_B_verified": 338,
     "tier_C_thin": 13,
     "tier_C_thin_measured": 7,
-    "gated_tissues": 58,
-    "adjacent_ungated_pairs": 28,
+    "gated_tissues": 68,
+    "adjacent_ungated_pairs": 18,
     "engine_laws": 9,
     "discovered_laws": 9
   },
@@ -781,6 +781,106 @@
       "said": "Photon and organism are adjacent D=11/12; Biology stays dark",
       "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a731",
       "live": "dark same-look \u03b4\u03c8=0.08; CRC n vs NCBI mt-operon; do not flip dark"
+    },
+    {
+      "id": "TISSUE-ATM-SOC",
+      "cores": [
+        "Atmospheric_Physics",
+        "Sociology"
+      ],
+      "said": "Air tank and catalog tank are adjacent D=17/18; Atm stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a732",
+      "live": "NDBC pressure + World Bank YoY; do not flip dark"
+    },
+    {
+      "id": "TISSUE-OCEAN-SOC",
+      "cores": [
+        "Oceanography",
+        "Sociology"
+      ],
+      "said": "Ocean tank and catalog tank are adjacent D=17/18; Ocean stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a732",
+      "live": "NDBC SST + World Bank YoY; do not flip dark"
+    },
+    {
+      "id": "TISSUE-SEIS-SOC",
+      "cores": [
+        "Seismology",
+        "Sociology"
+      ],
+      "said": "Crust and catalog share D=18; Seismology stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a732",
+      "live": "PREM lithosphere + World Bank YoY; live vs 1 is observed mix"
+    },
+    {
+      "id": "TISSUE-SOC-GEO",
+      "cores": [
+        "Sociology",
+        "Geophysics"
+      ],
+      "said": "Catalog and bulk-earth are adjacent D=18/19; Geo stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a732",
+      "live": "World Bank YoY + PREM lithosphere density"
+    },
+    {
+      "id": "TISSUE-GEO-ASTRO",
+      "cores": [
+        "Geophysics",
+        "Astronomy"
+      ],
+      "said": "Bulk-earth and sky are adjacent D=19/20; Geo stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a733",
+      "live": "PREM lithosphere + JPL densities"
+    },
+    {
+      "id": "TISSUE-GEO-ECON",
+      "cores": [
+        "Geophysics",
+        "Economics"
+      ],
+      "said": "Bulk-earth and market are adjacent D=19/20; Geo stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a733",
+      "live": "PREM lithosphere + World Bank YoY"
+    },
+    {
+      "id": "TISSUE-ASTRO-ECON",
+      "cores": [
+        "Astronomy",
+        "Economics"
+      ],
+      "said": "Sky and market are two looks at D=20; fold onto D=19",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a733",
+      "live": "look-split 1.0/1.5 onto D=19; JPL + World Bank; vs 1 retired"
+    },
+    {
+      "id": "TISSUE-ECON-PLANET",
+      "cores": [
+        "Economics",
+        "Planetary_Science"
+      ],
+      "said": "Market and body are adjacent D=20/21; equalize the astronomy look",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a733",
+      "live": "same-look D=20/21 at \u03b4\u03c8=1; World Bank YoY + JPL densities"
+    },
+    {
+      "id": "TISSUE-PLANET-QG",
+      "cores": [
+        "Planetary_Science",
+        "Quantum_Gravity"
+      ],
+      "said": "Body and ceiling are adjacent D=21/22; QG stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a734",
+      "live": "JPL densities + compact remainder; do not flip QG"
+    },
+    {
+      "id": "TISSUE-ASTROPHYS-PA",
+      "cores": [
+        "Astrophysics",
+        "Particle_Astrophysics"
+      ],
+      "said": "Star and cosmic-ray share D=24; PA stays dark",
+      "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md \u00a734",
+      "live": "PDG 2024 measured masses via APPLY; live vs 1 is observed mix"
     }
   ],
   "ungated_adjacent": [
@@ -908,76 +1008,6 @@
       "b": "Oceanography",
       "D_a": 16,
       "D_b": 17,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Atmospheric_Physics",
-      "b": "Sociology",
-      "D_a": 17,
-      "D_b": 18,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Oceanography",
-      "b": "Sociology",
-      "D_a": 17,
-      "D_b": 18,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Seismology",
-      "b": "Sociology",
-      "D_a": 18,
-      "D_b": 18,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Sociology",
-      "b": "Geophysics",
-      "D_a": 18,
-      "D_b": 19,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Geophysics",
-      "b": "Astronomy",
-      "D_a": 19,
-      "D_b": 20,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Geophysics",
-      "b": "Economics",
-      "D_a": 19,
-      "D_b": 20,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Astronomy",
-      "b": "Economics",
-      "D_a": 20,
-      "D_b": 20,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Economics",
-      "b": "Planetary_Science",
-      "D_a": 20,
-      "D_b": 21,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Planetary_Science",
-      "b": "Quantum_Gravity",
-      "D_a": 21,
-      "D_b": 22,
-      "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
-    },
-    {
-      "a": "Astrophysics",
-      "b": "Particle_Astrophysics",
-      "D_a": 24,
-      "D_b": 24,
       "why": "adjacent D_eff, siloed green, no gated \u03ba residual yet"
     }
   ],

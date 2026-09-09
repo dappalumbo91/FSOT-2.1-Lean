@@ -118,6 +118,8 @@ _FACTOR = {
     "Sociology": 0.0002,
     "Astronomy": 0.00025,
     "Planetary_Science": 0.0003,
+    "Astrophysics": 0.0003,
+    "Particle_Astrophysics": 0.0002,
 }
 
 # Dziewonski & Anderson 1981 PREM (isotropic), discontinuity / lid samples.
@@ -2599,6 +2601,103 @@ def _endf_keV_dual(
     return rows
 
 
+def _wb_yoy_dual(
+    econ_path: Path,
+    domain_a: str,
+    domain_b: str,
+    prop_a: str,
+    prop_b: str,
+    note_a: str,
+    note_b: str,
+    n_max: int = 80,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    if not econ_path.is_file():
+        return rows
+    doc = json.loads(econ_path.read_text(encoding="utf-8"))
+    n = 0
+    for rec in doc.get("material_records") or []:
+        if "yoy_growth" not in str(rec.get("property") or ""):
+            continue
+        m = float(rec.get("measured") or 0)
+        if m == 0:
+            continue
+        ca, ea = scaled(m, domain_a)
+        cb, eb = scaled(m, domain_b)
+        name = str(rec.get("name") or f"row{n}")
+        rows.append(_row(prop=prop_a, name=name + "_a", computed=ca, measured=m, note=note_a))
+        rows[-1]["error_pct"] = ea
+        rows.append(_row(prop=prop_b, name=name + "_b", computed=cb, measured=m, note=note_b))
+        rows[-1]["error_pct"] = eb
+        n += 1
+        if n >= n_max:
+            break
+    return rows
+
+
+def _jpl_rho_dual(
+    planet_path: Path,
+    domain_a: str,
+    domain_b: str,
+    prop_a: str,
+    prop_b: str,
+    note_a: str,
+    note_b: str,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    if not planet_path.is_file():
+        return rows
+    doc = json.loads(planet_path.read_text(encoding="utf-8"))
+    for rec in doc.get("records") or []:
+        if rec.get("property") != "mean_density":
+            continue
+        m = float(rec.get("measured") or 0)
+        if m <= 0:
+            continue
+        name = str(rec.get("name") or "body")
+        ca, ea = scaled(m, domain_a)
+        cb, eb = scaled(m, domain_b)
+        rows.append(_row(prop=prop_a, name=name + "_a", computed=ca, measured=m, note=note_a))
+        rows[-1]["error_pct"] = ea
+        rows.append(_row(prop=prop_b, name=name + "_b", computed=cb, measured=m, note=note_b))
+        rows[-1]["error_pct"] = eb
+    return rows
+
+
+def _pdg_mass_dual(
+    pdg_path: Path,
+    domain_a: str,
+    domain_b: str,
+    prop_a: str,
+    prop_b: str,
+    note_a: str,
+    note_b: str,
+    n_max: int = 20,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    if not pdg_path.is_file():
+        return rows
+    doc = json.loads(pdg_path.read_text(encoding="utf-8"))
+    n = 0
+    for rec in doc.get("material_records") or []:
+        if "Particle Masses" not in str(rec.get("property") or ""):
+            continue
+        m = float(rec.get("measured") or 0)
+        if m <= 0:
+            continue
+        name = str(rec.get("name") or f"p{n}")
+        ca, ea = scaled(m, domain_a)
+        cb, eb = scaled(m, domain_b)
+        rows.append(_row(prop=prop_a, name=name + "_a", computed=ca, measured=m, note=note_a))
+        rows[-1]["error_pct"] = ea
+        rows.append(_row(prop=prop_b, name=name + "_b", computed=cb, measured=m, note=note_b))
+        rows[-1]["error_pct"] = eb
+        n += 1
+        if n >= n_max:
+            break
+    return rows
+
+
 def biochem_cm_rows() -> list[dict[str, Any]]:
     """Biochemistry D=13 ↔ Condensed_Matter D=14 — molecule vs solid.
 
@@ -3615,6 +3714,545 @@ def qo_biology_rows(bio_path: Path) -> list[dict[str, Any]]:
     return rows
 
 
+def atm_sociology_rows(ndbc_path: Path, econ_path: Path) -> list[dict[str, Any]]:
+    """Atmospheric_Physics D=17 ↔ Sociology D=18 — air tank vs catalog tank.
+
+    Atm stays dark. Dual-route NDBC pressure on Atm, World Bank YoY on Sociology.
+    """
+    live = abs(f(domain_scalar("Atmospheric_Physics"))) / abs(
+        f(domain_scalar("Sociology"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="atm_soc_S_ratio",
+            name="S_atm_over_S_soc_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Atm|/|S_Soc| vs 1 mixes dark/observed at D=17/18. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Atmospheric_Physics stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Atmospheric_Physics", "Sociology"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(
+        _ndbc_pres_dual(
+            ndbc_path,
+            "Atmospheric_Physics",
+            "Sociology",
+            "atm_soc_pres_atm_fold",
+            "atm_soc_pres_soc_fold",
+            "NDBC pressure on Atmospheric_Physics D=17 — air stays dark",
+            "same NDBC pressure on Sociology D=18",
+        )
+    )
+    rows.extend(
+        _wb_yoy_dual(
+            econ_path,
+            "Sociology",
+            "Atmospheric_Physics",
+            "atm_soc_yoy_soc_fold",
+            "atm_soc_yoy_atm_fold",
+            "World Bank YoY on Sociology D=18 — catalog tank",
+            "same YoY on Atmospheric_Physics D=17 — air stays dark",
+        )
+    )
+    return rows
+
+
+def ocean_sociology_rows(ndbc_path: Path, econ_path: Path) -> list[dict[str, Any]]:
+    """Oceanography D=17 ↔ Sociology D=18 — ocean tank vs catalog tank.
+
+    Ocean stays dark. Dual-route NDBC SST on Ocean, World Bank YoY on Sociology.
+    """
+    live = abs(f(domain_scalar("Oceanography"))) / abs(f(domain_scalar("Sociology")))
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="ocean_soc_S_ratio",
+            name="S_ocean_over_S_soc_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Ocean|/|S_Soc| vs 1 mixes dark/observed at D=17/18. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Oceanography stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Oceanography", "Sociology"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    if ndbc_path.is_file():
+        doc = json.loads(ndbc_path.read_text(encoding="utf-8"))
+        for rec in doc.get("rows") or []:
+            val = rec.get("wtmp")
+            if val is None:
+                continue
+            m = float(val)
+            if m <= 0:
+                continue
+            bid = str(rec.get("buoy_id") or "buoy")
+            ts = str(rec.get("timestamp") or "").replace(" ", "_")
+            c, e = scaled(m, "Oceanography")
+            rows.append(
+                _row(
+                    prop="ocean_soc_sst_ocean_fold",
+                    name=f"{bid}_{ts}_sst",
+                    computed=c,
+                    measured=m,
+                    note="NDBC SST on Oceanography D=17 — ocean stays dark",
+                )
+            )
+            rows[-1]["error_pct"] = e
+    rows.extend(
+        _wb_yoy_dual(
+            econ_path,
+            "Sociology",
+            "Oceanography",
+            "ocean_soc_yoy_soc_fold",
+            "ocean_soc_yoy_ocean_fold",
+            "World Bank YoY on Sociology D=18",
+            "same YoY on Oceanography D=17 — ocean stays dark",
+        )
+    )
+    return rows
+
+
+def seis_sociology_rows(econ_path: Path) -> list[dict[str, Any]]:
+    """Seismology D=18 ↔ Sociology D=18 — crust vs catalog, same rung.
+
+    Seismology stays dark. Dual-route PREM lithosphere density on Seis,
+    World Bank YoY on Sociology. Live vs 1 is the observed mix.
+    """
+    live = abs(f(domain_scalar("Seismology"))) / abs(f(domain_scalar("Sociology")))
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="seis_soc_S_ratio",
+            name="S_seis_over_S_soc_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Seis|/|S_Soc| vs 1 mixes dark/observed at D=18. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Seismology stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Seismology", "Sociology"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    for layer in PREM_SOLID:
+        if layer["family"] != "lithosphere":
+            continue
+        rho = float(layer["rho"])
+        c, e = scaled(rho, "Seismology")
+        rows.append(
+            _row(
+                prop="seis_soc_rho_seis_fold",
+                name=str(layer["name"]) + "_rho_seis",
+                computed=c,
+                measured=rho,
+                note="PREM lithosphere density on Seismology D=18 — crust stays dark",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    rows.extend(
+        _wb_yoy_dual(
+            econ_path,
+            "Sociology",
+            "Seismology",
+            "seis_soc_yoy_soc_fold",
+            "seis_soc_yoy_seis_fold",
+            "World Bank YoY on Sociology D=18",
+            "same YoY on Seismology D=18 — crust stays dark",
+        )
+    )
+    return rows
+
+
+def sociology_geo_rows(econ_path: Path) -> list[dict[str, Any]]:
+    """Sociology D=18 ↔ Geophysics D=19 — catalog vs bulk-earth.
+
+    Geophysics stays dark. Dual-route World Bank YoY on Sociology,
+    PREM lithosphere density on Geophysics.
+    """
+    live = abs(f(domain_scalar("Sociology"))) / abs(f(domain_scalar("Geophysics")))
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="soc_geo_S_ratio",
+            name="S_soc_over_S_geo_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Soc|/|S_Geo| vs 1 mixes observed/dark at D=18/19. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Geophysics stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Sociology", "Geophysics"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(
+        _wb_yoy_dual(
+            econ_path,
+            "Sociology",
+            "Geophysics",
+            "soc_geo_yoy_soc_fold",
+            "soc_geo_yoy_geo_fold",
+            "World Bank YoY on Sociology D=18",
+            "same YoY on Geophysics D=19 — bulk-earth stays dark",
+        )
+    )
+    for layer in PREM_SOLID:
+        if layer["family"] != "lithosphere":
+            continue
+        rho = float(layer["rho"])
+        c, e = scaled(rho, "Geophysics")
+        rows.append(
+            _row(
+                prop="soc_geo_rho_geo_fold",
+                name=str(layer["name"]) + "_rho_geo",
+                computed=c,
+                measured=rho,
+                note="PREM lithosphere density on Geophysics D=19 — bulk stays dark",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def geo_astronomy_rows(planet_path: Path) -> list[dict[str, Any]]:
+    """Geophysics D=19 ↔ Astronomy D=20 — bulk-earth vs sky.
+
+    Geophysics stays dark. Dual-route PREM lithosphere density on Geo,
+    JPL mean densities on Astronomy.
+    """
+    live = abs(f(domain_scalar("Geophysics"))) / abs(f(domain_scalar("Astronomy")))
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="geo_astro_S_ratio",
+            name="S_geo_over_S_astro_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Geo|/|S_Astro| vs 1 mixes dark/observed at D=19/20. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Geophysics stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Geophysics", "Astronomy"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    for layer in PREM_SOLID:
+        if layer["family"] != "lithosphere":
+            continue
+        rho = float(layer["rho"])
+        c, e = scaled(rho, "Geophysics")
+        rows.append(
+            _row(
+                prop="geo_astro_rho_geo_fold",
+                name=str(layer["name"]) + "_rho_geo",
+                computed=c,
+                measured=rho,
+                note="PREM lithosphere density on Geophysics D=19 — bulk stays dark",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    rows.extend(
+        _jpl_rho_dual(
+            planet_path,
+            "Astronomy",
+            "Geophysics",
+            "geo_astro_jpl_astro_fold",
+            "geo_astro_jpl_geo_fold",
+            "JPL Horizons mean density on Astronomy D=20",
+            "same JPL density on Geophysics D=19 — bulk stays dark",
+        )
+    )
+    return rows
+
+
+def geo_economics_rows(econ_path: Path) -> list[dict[str, Any]]:
+    """Geophysics D=19 ↔ Economics D=20 — bulk-earth vs market.
+
+    Geophysics stays dark. Dual-route PREM on Geo, World Bank YoY on Economics.
+    """
+    live = abs(f(domain_scalar("Geophysics"))) / abs(f(domain_scalar("Economics")))
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="geo_econ_S_ratio",
+            name="S_geo_over_S_econ_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Geo|/|S_Econ| vs 1 mixes dark/observed at D=19/20. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Geophysics stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Geophysics", "Economics"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    for layer in PREM_SOLID:
+        if layer["family"] != "lithosphere":
+            continue
+        rho = float(layer["rho"])
+        c, e = scaled(rho, "Geophysics")
+        rows.append(
+            _row(
+                prop="geo_econ_rho_geo_fold",
+                name=str(layer["name"]) + "_rho_geo",
+                computed=c,
+                measured=rho,
+                note="PREM lithosphere density on Geophysics D=19 — bulk stays dark",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    rows.extend(
+        _wb_yoy_dual(
+            econ_path,
+            "Economics",
+            "Geophysics",
+            "geo_econ_yoy_econ_fold",
+            "geo_econ_yoy_geo_fold",
+            "World Bank YoY on Economics D=20",
+            "same YoY on Geophysics D=19 — bulk stays dark",
+        )
+    )
+    return rows
+
+
+def astronomy_economics_rows(econ_path: Path, planet_path: Path) -> list[dict[str, Any]]:
+    """Astronomy D=20 ↔ Economics D=20 — sky vs market, same rung.
+
+    Live mix is δψ 1.0/hits=1 vs 1.5/hits=3. Fold the look-split onto D=19.
+    Dual-route JPL densities on Astronomy, World Bank YoY on Economics.
+    """
+    live = abs(f(domain_scalar("Astronomy"))) / abs(f(domain_scalar("Economics")))
+    look = scalar_at(d_eff=19, delta_psi=1.0, hits=1) / scalar_at(
+        d_eff=19, delta_psi=1.5, hits=3
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="astro_econ_S_ratio",
+            name="S_astro_over_S_econ_vs_D19_look",
+            computed=live,
+            measured=look,
+            note=(
+                "|S_Astro|/|S_Econ| vs S(D=19,δψ=1,hits=1)/S(D=19,δψ=1.5,hits=3) — "
+                f"same-rung look-split. Not vs 1 ({vs1:.1f}%)."
+            ),
+            extra={
+                "kappa": kappa_domains("Astronomy", "Economics"),
+                "rejected_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(
+        _jpl_rho_dual(
+            planet_path,
+            "Astronomy",
+            "Economics",
+            "astro_econ_jpl_astro_fold",
+            "astro_econ_jpl_econ_fold",
+            "JPL Horizons mean density on Astronomy D=20",
+            "same JPL density on Economics D=20 — catalog sky",
+        )
+    )
+    rows.extend(
+        _wb_yoy_dual(
+            econ_path,
+            "Economics",
+            "Astronomy",
+            "astro_econ_yoy_econ_fold",
+            "astro_econ_yoy_astro_fold",
+            "World Bank YoY on Economics D=20",
+            "same YoY on Astronomy D=20",
+        )
+    )
+    return rows
+
+
+def economics_planetary_rows(econ_path: Path, planet_path: Path) -> list[dict[str, Any]]:
+    """Economics D=20 ↔ Planetary_Science D=21 — market vs body.
+
+    Equalize at the astronomy look (δψ=1, hits=1). Dual-route World Bank YoY
+    on Economics, JPL densities on Planetary.
+    """
+    s20 = scalar_at(d_eff=20, delta_psi=1.0, hits=1, observed=True)
+    s21 = scalar_at(d_eff=21, delta_psi=1.0, hits=1, observed=True)
+    live = abs(f(domain_scalar("Economics"))) / abs(
+        f(domain_scalar("Planetary_Science"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="econ_planet_S_ratio_same_look",
+            name="S_D20_over_S_D21_at_dpsi_1",
+            computed=s20 / s21,
+            measured=1.0,
+            note=(
+                "|S(D=20,δψ=1,hits=1)|/|S(D=21,δψ=1,hits=1)| vs 1 — market vs body. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Economics", "Planetary_Science"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(
+        _wb_yoy_dual(
+            econ_path,
+            "Economics",
+            "Planetary_Science",
+            "econ_planet_yoy_econ_fold",
+            "econ_planet_yoy_pl_fold",
+            "World Bank YoY on Economics D=20",
+            "same YoY on Planetary_Science D=21",
+        )
+    )
+    rows.extend(
+        _jpl_rho_dual(
+            planet_path,
+            "Planetary_Science",
+            "Economics",
+            "econ_planet_jpl_pl_fold",
+            "econ_planet_jpl_econ_fold",
+            "JPL Horizons mean density on Planetary_Science D=21",
+            "same JPL density on Economics D=20",
+        )
+    )
+    return rows
+
+
+def planetary_qg_rows(planet_path: Path) -> list[dict[str, Any]]:
+    """Planetary_Science D=21 ↔ Quantum_Gravity D=22 — body vs ceiling.
+
+    QG stays dark. Dual-route JPL densities on Planetary. Compact remainder
+    at D=21/22 is the CHAOS bleed into the ceiling (same grammar as TISSUE-CEILING).
+    """
+    live = abs(f(domain_scalar("Planetary_Science"))) / abs(
+        f(domain_scalar("Quantum_Gravity"))
+    )
+    vs1 = err(live, 1.0)
+    rem21 = compact_remainder(21)
+    rem22 = compact_remainder(22)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="planet_qg_S_ratio",
+            name="S_pl_over_S_qg_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Planet|/|S_QG| vs 1 mixes observed/dark at D=21/22. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Quantum_Gravity stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Planetary_Science", "Quantum_Gravity"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+        _row(
+            prop="planet_qg_compact_D21",
+            name="chaos_over_ln_D21",
+            computed=rem21,
+            measured=1.0,
+            note="((D-25)/25)/ln(D/25) at Planetary D=21 — compactification bleed",
+            kind="structural" if abs(rem21 - 1.0) * 100 > 0.5 else "scalar",
+        ),
+        _row(
+            prop="planet_qg_compact_D22",
+            name="chaos_over_ln_D22",
+            computed=rem22,
+            measured=1.0,
+            note="((D-25)/25)/ln(D/25) at QG D=22 — ceiling rung, stays dark",
+            kind="structural" if abs(rem22 - 1.0) * 100 > 0.5 else "scalar",
+        ),
+    ]
+    rows.extend(
+        _jpl_rho_dual(
+            planet_path,
+            "Planetary_Science",
+            "Quantum_Gravity",
+            "planet_qg_jpl_pl_fold",
+            "planet_qg_jpl_qg_fold",
+            "JPL Horizons mean density on Planetary_Science D=21",
+            "same JPL density on Quantum_Gravity D=22 — ceiling stays dark",
+        )
+    )
+    return rows
+
+
+def astrophysics_pa_rows(pdg_path: Path) -> list[dict[str, Any]]:
+    """Astrophysics D=24 ↔ Particle_Astrophysics D=24 — star vs cosmic-ray, same rung.
+
+    Particle_Astrophysics stays dark. Dual-route PDG 2024 measured masses
+    through APPLY (not the SMILES computed column). Live vs 1 is observed mix.
+    """
+    live = abs(f(domain_scalar("Astrophysics"))) / abs(
+        f(domain_scalar("Particle_Astrophysics"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="astro_pa_S_ratio",
+            name="S_astro_over_S_pa_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Astrophysics|/|S_PA| vs 1 mixes observed/dark at D=24. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Particle_Astrophysics stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Astrophysics", "Particle_Astrophysics"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    rows.extend(
+        _pdg_mass_dual(
+            pdg_path,
+            "Astrophysics",
+            "Particle_Astrophysics",
+            "astro_pa_pdg_astro_fold",
+            "astro_pa_pdg_pa_fold",
+            "PDG 2024 measured mass on Astrophysics D=24",
+            "same PDG mass on Particle_Astrophysics D=24 — cosmic-ray stays dark",
+        )
+    )
+    return rows
+
+
 # Live view pairs: high |S_i|/|S_j| vs 1 is perception at that fold, not a failed gate.
 PERCEPTION_PAIRS = (
     ("Quantum_Mechanics", "Atomic_Physics", "qm_atomic"),
@@ -3635,6 +4273,8 @@ PERCEPTION_PAIRS = (
     ("Neuroscience", "Thermodynamics", "neuro_thermo"),
     ("Neuroscience", "Nuclear_Physics", "neuro_nuc"),
     ("Astronomy", "Planetary_Science", "astro_planetary"),
+    ("Astronomy", "Economics", "astro_econ"),
+    ("Economics", "Planetary_Science", "econ_planet"),
 )
 
 
@@ -3798,5 +4438,17 @@ def suite_rows(
     rows.extend(astro_planetary_rows(planet))
     if bio_path is not None:
         rows.extend(qo_biology_rows(bio_path))
+    pdg = Path(__file__).resolve().parents[1] / "data" / "pdg_particle_properties_benchmark.json"
+    if econ_path is not None:
+        rows.extend(atm_sociology_rows(ndbc_path, econ_path))
+        rows.extend(ocean_sociology_rows(ndbc_path, econ_path))
+        rows.extend(seis_sociology_rows(econ_path))
+        rows.extend(sociology_geo_rows(econ_path))
+        rows.extend(geo_economics_rows(econ_path))
+        rows.extend(astronomy_economics_rows(econ_path, planet))
+        rows.extend(economics_planetary_rows(econ_path, planet))
+    rows.extend(geo_astronomy_rows(planet))
+    rows.extend(planetary_qg_rows(planet))
+    rows.extend(astrophysics_pa_rows(pdg))
     rows.extend(perception_view_rows())
     return rows

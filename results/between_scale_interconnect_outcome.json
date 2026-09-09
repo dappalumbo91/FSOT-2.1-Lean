@@ -1,9 +1,9 @@
 {
   "pin": "D1D38A",
   "status": "GREEN",
-  "pooled_median_error_pct": 0.029099821250807456,
-  "n_scalar": 3784,
-  "n_total": 3864,
+  "pooled_median_error_pct": 0.026203754798631292,
+  "n_scalar": 5497,
+  "n_total": 5591,
   "channel_median_error_pct": {
     "seismic_acoustic_vp_vs": 0.1893480018437519,
     "seismic_acoustic_lithosphere_median": 0.06848486048287095,
@@ -172,15 +172,48 @@
     "astro_planetary_rho_pl_fold": 0.023015374156233743,
     "qo_bio_S_ratio_same_look": 0.05211249196357404,
     "qo_bio_n_qo_fold": 0.016326821526857663,
-    "qo_bio_operon_bio_fold": 0.022236250385198133
+    "qo_bio_operon_bio_fold": 0.022236250385198133,
+    "atm_soc_pres_atm_fold": 0.02620375479862748,
+    "atm_soc_pres_soc_fold": 0.013002933048312026,
+    "atm_soc_yoy_soc_fold": 0.013002933048310905,
+    "atm_soc_yoy_atm_fold": 0.02620375479862609,
+    "ocean_soc_sst_ocean_fold": 0.030172726067692633,
+    "ocean_soc_yoy_soc_fold": 0.013002933048310905,
+    "ocean_soc_yoy_ocean_fold": 0.03017272606768975,
+    "seis_soc_rho_seis_fold": 0.02229507860551715,
+    "seis_soc_yoy_soc_fold": 0.013002933048310905,
+    "seis_soc_yoy_seis_fold": 0.022295078605516872,
+    "soc_geo_yoy_soc_fold": 0.013002933048310905,
+    "soc_geo_yoy_geo_fold": 0.02745471463600997,
+    "soc_geo_rho_geo_fold": 0.027454714636012165,
+    "geo_econ_rho_geo_fold": 0.027454714636012165,
+    "geo_econ_yoy_econ_fold": 0.025840180827429348,
+    "geo_econ_yoy_geo_fold": 0.02745471463600997,
+    "astro_econ_S_ratio": 0.16443502902901252,
+    "astro_econ_jpl_astro_fold": 0.02246148920415081,
+    "astro_econ_jpl_econ_fold": 0.025840180827427717,
+    "astro_econ_yoy_econ_fold": 0.025840180827429348,
+    "astro_econ_yoy_astro_fold": 0.02246148920415116,
+    "econ_planet_S_ratio_same_look": 0.46923331014765424,
+    "econ_planet_yoy_econ_fold": 0.025840180827429348,
+    "econ_planet_yoy_pl_fold": 0.02301537415623193,
+    "econ_planet_jpl_pl_fold": 0.023015374156233743,
+    "econ_planet_jpl_econ_fold": 0.025840180827427717,
+    "geo_astro_rho_geo_fold": 0.027454714636012165,
+    "geo_astro_jpl_astro_fold": 0.02246148920415081,
+    "geo_astro_jpl_geo_fold": 0.027454714636012126,
+    "planet_qg_jpl_pl_fold": 0.023015374156233743,
+    "planet_qg_jpl_qg_fold": 0.010511955063807282,
+    "astro_pa_pdg_astro_fold": 0.026472323952540414,
+    "astro_pa_pdg_pa_fold": 0.008488234400583859
   },
   "perception_view": {
     "closed_form": "|S_i|/|S_j| = |1+T1_i|/|1+T1_j|  (T2=1, T3\u22480)",
-    "n_pairs": 18,
+    "n_pairs": 20,
     "max_t3_leftover_pct": 3.057834424462004e-14,
     "max_live_vs_1_pct": 63.26901869796948,
     "t3_leftover_ok": true,
-    "n_same_view_structural": 18,
+    "n_same_view_structural": 20,
     "pairs": [
       {
         "name": "qm_atomic_T1_view",
@@ -325,6 +358,22 @@
         "t1_pred": 1.1711209586264442,
         "t3_leftover_pct": 0.0,
         "live_vs_1_pct": 17.112095862644416
+      },
+      {
+        "name": "astro_econ_T1_view",
+        "pair": "Astronomy/Economics",
+        "live_ratio": 1.3907945523544114,
+        "t1_pred": 1.3907945523544114,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 39.07945523544114
+      },
+      {
+        "name": "econ_planet_T1_view",
+        "pair": "Economics/Planetary_Science",
+        "live_ratio": 0.8420517298143769,
+        "t1_pred": 0.8420517298143769,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 15.794827018562307
       }
     ],
     "policy": "live vs 1 is the same-view question, not a 0.5% central; T1 leftover rows are identity checks, not a median pad"
