@@ -47,6 +47,7 @@ Worked examples in-repo:
 - Psychometric fold: [`APPLY_PSYCHOLOGY.md`](APPLY_PSYCHOLOGY.md) — Nunnally/Cohen anchors. Not watts; not OpenAlex citations.
 - Sky fold: [`APPLY_ASTRONOMY.md`](APPLY_ASTRONOMY.md) — JPL densities; H0 sectors. Neighbor Planetary \(D=21\).
 - How to read a row: [`SCIENTIST_INTERFACE.md`](SCIENTIST_INTERFACE.md).
+- Using this as a tool (not a silo): [`SCIENTIFIC_INSTRUMENT.md`](SCIENTIFIC_INSTRUMENT.md).
 - HEP fold: [`APPLY_HEP.md`](APPLY_HEP.md) — CODATA \(m_e\)/\(m_p\). Neighbor Atomic \(D=7\).
 
 ---
