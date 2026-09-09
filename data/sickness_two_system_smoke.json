@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-09-09T23:50:01.267826+00:00",
+  "pin": "D1D38A",
+  "product": "FSOT-Genetics (sibling). Hub smoke only.",
+  "host": {
+    "name": "MT-ND1",
+    "accession": "NC_012920.1",
+    "measured_bp": 956,
+    "domain": "Biology",
+    "source": "NCBI RefSeq human mitochondrial genome",
+    "computed_bp": 956.2125785536825,
+    "error_pct": 0.02223625038520223,
+    "S": 0.4447250077038459
+  },
+  "pathogen": {
+    "name": "S_spike_CDS",
+    "accession": "NC_045512.2",
+    "measured_bp": 3822,
+    "domain": "Biochemistry",
+    "source": "NCBI RefSeq SARS-CoV-2 Wuhan-Hu-1 spike CDS",
+    "computed_bp": 3822.5851887693575,
+    "error_pct": 0.015311061469322368,
+    "S": 0.3062212293865662
+  },
+  "kappa_host_pathogen": 0.02104201418939883,
+  "poof_hold": 0.510728588773961,
+  "suction_hold": 0.4892714112260389,
+  "process_time_days_host_d12": 3.289968943799849,
+  "process_time_days_path_d13": 3.564133022449836,
+  "emergence_note": "Two systems on one pin. Coupling is \u03ba, not a new \u03b5. Class residuals already live (epidemiology panel 0.015%). Person-level onset needs a Genetics product freeze on public pathogen+host structure \u2014 this smoke is the coupling.",
+  "kill": "Individual diagnosis/onset as a 0.5% central. Flip Biology observed."
+}

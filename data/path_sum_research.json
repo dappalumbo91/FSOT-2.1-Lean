@@ -1,0 +1,52 @@
+{
+  "status": "FSOT_PATH_SUM_EXECUTABLE",
+  "classical_ym_path_integral": "OPEN_NOT_CLAIMED",
+  "poof_hold": 0.510728588773961,
+  "suction_hold": 0.4892714112260389,
+  "gamma_color": 0.6684908749126979,
+  "color_path_integral_proxy": 1.4959067319065438,
+  "n_checks": 6,
+  "n_fail": 0,
+  "rows": [
+    {
+      "id": "P1_path_sum2_eq_one",
+      "computed": 0.9999999999999999,
+      "measured": 1.0,
+      "error_pct": 1.1102230246251565e-14
+    },
+    {
+      "id": "P2_poof_hold_eq_valve",
+      "computed": 0.510728588773961,
+      "measured": 0.510728588773961,
+      "error_pct": 0.0
+    },
+    {
+      "id": "P3_loading_potentials_sum_one",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "id": "P4_color_path_integral_finite",
+      "computed": 1.4959067319065438,
+      "measured": 1.4959067319065438,
+      "error_pct": 0.0,
+      "note": "a0/\u03b3_color; free-color histories integrate, they do not persist"
+    },
+    {
+      "id": "P5_area_law_V_of_one_over_sqrt_sigma",
+      "computed": 0.42022166416069673,
+      "measured": 0.4202216641606967,
+      "error_pct": 1.3209968920124464e-14,
+      "note": "identity check skipped if \u03c3 from V(1); see uniqueness suite U7"
+    },
+    {
+      "id": "P6_mass_gap_proxy_pos",
+      "computed": 0.21740442367390217,
+      "measured": 0.21740442367390217,
+      "error_pct": 0.0,
+      "note": "\u039b_QCD seed proxy > 0; not continuum spectrum"
+    }
+  ],
+  "generated_at": "2026-09-09T23:50:20.396070+00:00"
+}

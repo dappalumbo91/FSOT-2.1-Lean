@@ -48,14 +48,14 @@ spin-2 Fock uniqueness, Einstein–Hilbert measure uniqueness.
 
 | Item | Why it is not claimed | What *is* claimed instead |
 |------|------------------------|---------------------------|
-| Continuum YM path-integral mass gap / confinement uniqueness | Different theorem than the Lean attractor. No false formal credit. | Attractor identities + residual confinement probes |
+| Continuum YM path-integral mass gap as *proved* | Different theorem than the native path-sum. No false formal credit. | Discrete path-sum \(w_{\mathrm{POOF}}+w_{\mathrm{hold}}=1\); \(\int a_0 e^{-\gamma t}=a_0/\gamma\) ([`PATH_SUM.md`](PATH_SUM.md)). Classical YM stays OPEN_NOT_CLAIMED |
 | Spin-2 graviton Fock uniqueness from the fluid action | Quantization uniqueness, deferred | Spin-2 helicity / TT **probes** |
 | Einstein–Hilbert measure uniqueness | Action classification theorem, deferred | Weak-field / Schwarzschild / perihelion / deflection **probes** |
 | Full EH / full SM Lagrangian “derived uniquely” | T3/T4 are packages and recoveries, not uniqueness | Force package v1 in `vendor/fsot_gr_sm.py` |
 | Newtonian UTC hypocenter as a 0.5% central | Wrong object: treats time as a fundamental axis, valve-blind | **Process time** (D12 / C15): \(\mathrm{process\_time}(\varphi^4,d)=\varphi^4\cdot d/25\); issued 7 d window is \(d=25\) rounded to SI. See [`TIME_EMERGENT.md`](TIME_EMERGENT.md) |
-| Beating ECMWF at S2S week 3 | Honest refusal of an NWP *skill contest* | Weather **process windows** (48 h) and class residuals; not a track forecast |
-| Next-day prices / crash date | Honest refusal — a ticker as a 0.5% central is a kill | World Bank YoY **class** residuals (market-fold process, not a crash clock) |
-| Individual diagnosis / onset date | Honest refusal — person-level onset is clinical | Immunology/cardiology **class** residuals; 20.00 W observer; cell process time is NCBI operons, not “when sick” |
+| Beating ECMWF at S2S week 3 *today* | Goal, not a present claim | 48 h process windows + class residuals; finer `dt` on φ^4 / Omori is the path ([`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md)) |
+| Next-day ticker / crash date as 0.5% | Wrong object (one print) | Economics **class** + \(d=20\) process window started (`scripts/build_market_process_layer.py`) |
+| Person-level onset as 0.5% | Needs Genetics product on public host+pathogen structure | Class epidemiology 0.015%; two-system smoke ([`SICKNESS_TWO_SYSTEM.md`](SICKNESS_TWO_SYSTEM.md)) |
 | Euclid CLOE FoM as measured S8/H0/wa | Synthetic figure of merit; zero survey-level S8 | PRED-002/042/043; wait for DR1 |
 | Genetics 0.13 Å as sequence-only | Sibling product vs AF vs FSC vs bulk are **four objects** | Hub **quotes** the 2026-08-17 freeze; CASP/CAMEO still OPEN |
 | JWST Perfect Host 73.49 as PRED-001 | Wrong object (local ladder ≠ bridge 70.75) | Score 73.49 on PRED-024 / hosts-only |
@@ -76,7 +76,8 @@ spin-2 Fock uniqueness, Einstein–Hilbert measure uniqueness.
 
 | Kind | Meaning | Example |
 |------|---------|---------|
-| **Honest refusal** | The model will not claim this even later as a 0.5% central | S2S *skill*, tickers, person-level diagnosis |
+| **Goal, not yet** | Same law; more public data / finer `dt` / sibling product | ECMWF week-3 skill; market windows; sickness two-system |
+| **Honest refusal of a wrong object** | Will not become a 0.5% central *as that object* | UTC hypocenter; one ticker print; person onset without structure |
 | **Wrong time object** | UTC hypocenter as fundamental; process time is D12 | “M7 at 14:32:07 UTC” vs \(\varphi^4\) window at fold \(d\) |
 | **Wrong object** | A real number scored against the wrong lock | Perfect Host as PRED-001 |
 | **Awaiting data** | Named survey/paper has not landed | Euclid DR1, JINR 119, CASP blind |

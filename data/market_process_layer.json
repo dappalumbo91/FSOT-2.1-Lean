@@ -1,0 +1,219 @@
+{
+  "generated_at": "2026-09-09T23:50:00.734995+00:00",
+  "pin": "D1D38A",
+  "domain": "Economics",
+  "D_eff": 20,
+  "n": 20,
+  "median_error_pct": 0.025840180827430004,
+  "green_class": true,
+  "valve": "quiet_or_class",
+  "storm_bar_vix": 21.916162082994564,
+  "process_time_days_d20": 5.483281572999748,
+  "calendar_window_days": 5,
+  "poof_hold": 0.510728588773961,
+  "suction_hold": 0.4892714112260389,
+  "kill": "A single ticker close or crash date as a 0.5% central.",
+  "goal": "Dated quiet/storm market windows on public class objects; finer dt later.",
+  "rows": [
+    {
+      "name": "sp500_sharpe_10y",
+      "market": "S&P 500",
+      "property": "sharpe_ratio",
+      "measured": 0.6,
+      "computed": 0.6001550410849645,
+      "error_pct": 0.025840180827426305,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "vix_long_run_mean",
+      "market": "VIX",
+      "property": "volatility_index",
+      "measured": 19.0,
+      "computed": 19.00490963435721,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "us_10y_yield",
+      "market": "US Treasury 10Y",
+      "property": "bond_yield_pct",
+      "measured": 4.5,
+      "computed": 4.501162808137234,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "fed_funds_rate",
+      "market": "Fed funds",
+      "property": "policy_rate_pct",
+      "measured": 5.25,
+      "computed": 5.25135660949344,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "gold_price_usd_oz",
+      "market": "gold spot",
+      "property": "commodity_price_usd",
+      "measured": 2300.0,
+      "computed": 2300.5943241590307,
+      "error_pct": 0.025840180827423825,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "wti_crude_usd_bbl",
+      "market": "WTI crude",
+      "property": "commodity_price_usd",
+      "measured": 75.0,
+      "computed": 75.01938013562057,
+      "error_pct": 0.02584018082742053,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "eur_usd_fx",
+      "market": "EUR/USD",
+      "property": "exchange_rate",
+      "measured": 1.08,
+      "computed": 1.0802790739529362,
+      "error_pct": 0.025840180827420133,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "btc_market_cap_b",
+      "market": "Bitcoin",
+      "property": "market_cap_billion_usd",
+      "measured": 1200.0,
+      "computed": 1200.310082169929,
+      "error_pct": 0.02584018082742053,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "pe_ratio_sp500",
+      "market": "S&P 500 trailing",
+      "property": "price_earnings_ratio",
+      "measured": 22.0,
+      "computed": 22.005684839782035,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "dividend_yield_sp500",
+      "market": "S&P 500",
+      "property": "dividend_yield_pct",
+      "measured": 1.5,
+      "computed": 1.5003876027124115,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "credit_spread_ig",
+      "market": "IG corporate",
+      "property": "credit_spread_bps",
+      "measured": 100.0,
+      "computed": 100.02584018082743,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "credit_spread_hy",
+      "market": "HY corporate",
+      "property": "credit_spread_bps",
+      "measured": 400.0,
+      "computed": 400.1033607233097,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "mortgage_rate_30y",
+      "market": "US 30Y fixed",
+      "property": "mortgage_rate_pct",
+      "measured": 7.0,
+      "computed": 7.00180881265792,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "inflation_cpi_yoy",
+      "market": "US CPI YoY",
+      "property": "inflation_rate_pct",
+      "measured": 3.0,
+      "computed": 3.000775205424823,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "unemployment_rate",
+      "market": "US U3",
+      "property": "unemployment_pct",
+      "measured": 4.0,
+      "computed": 4.001033607233097,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "gdp_growth_us",
+      "market": "US real GDP",
+      "property": "gdp_growth_pct",
+      "measured": 2.5,
+      "computed": 2.5006460045206858,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "corporate_bond_default",
+      "market": "global HY default",
+      "property": "default_rate_pct",
+      "measured": 1.5,
+      "computed": 1.5003876027124115,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "options_implied_move",
+      "market": "earnings straddle",
+      "property": "implied_move_pct",
+      "measured": 5.0,
+      "computed": 5.0012920090413715,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "liquidity_bid_ask_bps",
+      "market": "large-cap equity",
+      "property": "bid_ask_spread_bps",
+      "measured": 2.0,
+      "computed": 2.0005168036165486,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    },
+    {
+      "name": "market_beta_spy",
+      "market": "SPY benchmark",
+      "property": "beta",
+      "measured": 1.0,
+      "computed": 1.0002584018082743,
+      "error_pct": 0.025840180827430004,
+      "domain": "Economics",
+      "source": "data/finance_markets_reference_observables.json"
+    }
+  ]
+}

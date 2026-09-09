@@ -50,7 +50,7 @@ it may not sell them as the refused object.
 
 | Refusal | Why |
 |---------|-----|
-| UTC hypocenter as a 0.5% central | Process time (D12) is claimed; Newtonian wall-clock of the next M7 is the wrong object |
+| UTC hypocenter as a 0.5% central | Process time (D12) is claimed; Newtonian wall-clock of the next M7 is the wrong object. Sharper SI stamp = finer `dt` on the same law. |
 | Beat ECMWF S2S week 3 | NDBC/NCEI class residuals ≠ NWP |
 | Next-day ticker / crash date | World Bank YoY class only |
 | Individual diagnosis / onset | 20.00 W observer + immunology/cardiology **class** only |

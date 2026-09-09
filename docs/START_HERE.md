@@ -36,6 +36,7 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 | Worked examples (cells / chem / sky) | [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md) |
 | Why something is not claimed | [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md) · uniqueness: [`UNIQUENESS_RESEARCH_SPINE.md`](UNIQUENESS_RESEARCH_SPINE.md) |
 | Time (emergent process, not UTC) | [`TIME_EMERGENT.md`](TIME_EMERGENT.md) · C15 / D12 |
+| Goal tracks (ECMWF / prices / sickness / path-sum) | [`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md) |
 | What 477 files cover | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) |
 | Next sibling text / sim | [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md) |
 | Here to break it | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |

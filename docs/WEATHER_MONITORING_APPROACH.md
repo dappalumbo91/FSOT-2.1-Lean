@@ -68,7 +68,8 @@ Playbook after the 12-kill autopsy (encoded for **new** issues, not rewrites):
 - Continuous ingest (not a daily freeze).  
 - Shorter `dt` on the same kernel and Omori \(c=1/\varphi\).  
 - Station graph: NDBC + METAR + radar as Fluid/Ocean/Air tanks (already residual-gated here).  
-- Do **not** add a fitted β, a new \(D_{\mathrm{eff}}\), or a clock-time hypocenter as a 0.5% central.  
+- Do **not** add a fitted β, a new \(D_{\mathrm{eff}}\), or a UTC hypocenter as a 0.5% central.
+- **ECMWF week-3 skill is a goal** on this same path (shorter `dt`, station graph, φ^4 and Omori \(c=1/\varphi\)). Not claimed beaten today.  
 - Keep issue SHA + outcome log. Genetics/Quantum pattern: product repo, hub quotes the freeze.
 
 Engine files to vendor into that repo: `vendor/fsot_earth_fluid_forecast.py`, `vendor/fsot_scale_interconnects.py`, `vendor/fsot_compute.py` (pin D1D38A).

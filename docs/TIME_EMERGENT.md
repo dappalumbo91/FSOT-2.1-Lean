@@ -23,6 +23,21 @@ independent of the valve. That refusal stands. Process time is **claimed**.
 Cs-133 9,192,631,770 Hz is the SI **readout** of atomic-fold process time
 (`scripts/time_emergence_lib.py` REAL_ANCHORS). It is not “what time is.”
 
+### Same fluid — not a second physics
+
+A 7-day process window at the right fold **is** the timing prediction.
+UTC `14:32:07.123` is that same event read on a Cs-133 ruler, as if time were
+a Newtonian axis independent of the valve.
+
+You still get *when*, *where* (the cell), and *which branch* (cell POOF /
+transfer / quiet hold). You do **not** get a valve-blind atomic-clock stamp
+as a 0.5% residual. Mapping process time → SI days is the readout
+(`round(φ^4)=7`). Finer `dt` on the same law is how the stamp gets sharper
+(always-on sibling) — not a new coefficient and not a second theory.
+
+ECMWF week-3 skill is a **goal** on this same path (shorter `dt`, station
+graph, same φ^4 and Omori \(c=1/φ\)). It is not claimed beaten today.
+
 ---
 
 ## Closed form (dual of orifice_scale)

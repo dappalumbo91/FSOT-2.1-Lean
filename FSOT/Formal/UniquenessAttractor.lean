@@ -92,6 +92,50 @@ theorem free_color_not_attractor
     color_amp a0 (gamma_color sNuc sPart) t < a0 :=
   color_amp_strictly_damped ha (gamma_color_pos sNuc sPart) ht
 
+-- ============================================================
+-- Native path-sum (discrete valve branches). Not continuum YM measure.
+-- ============================================================
+
+/-- T3 valve split: POOF / (POOF+|SUCTION|). Same handle as Python `valve_split`. -/
+def valve_denom : ℝ := poof_factor + |suction_factor|
+
+def poof_hold : ℝ := poof_factor / valve_denom
+
+def suction_hold : ℝ := |suction_factor| / valve_denom
+
+theorem valve_denom_pos : (0 : ℝ) < valve_denom := by
+  unfold valve_denom
+  have h1 : (0 : ℝ) < poof_factor := poof_factor_pos
+  have h2 : (0 : ℝ) ≤ |suction_factor| := abs_nonneg _
+  linarith
+
+theorem poof_hold_nonneg : (0 : ℝ) ≤ poof_hold := by
+  unfold poof_hold
+  exact div_nonneg (le_of_lt poof_factor_pos) (le_of_lt valve_denom_pos)
+
+theorem suction_hold_nonneg : (0 : ℝ) ≤ suction_hold := by
+  unfold suction_hold
+  exact div_nonneg (abs_nonneg _) (le_of_lt valve_denom_pos)
+
+theorem poof_hold_add_suction_hold : poof_hold + suction_hold = 1 := by
+  unfold poof_hold suction_hold valve_denom
+  have h : poof_factor + |suction_factor| ≠ 0 := ne_of_gt valve_denom_pos
+  field_simp [h]
+
+/-- Discrete path-sum of two valve branches. Native FSOT path integral. -/
+def path_sum2 (w1 w2 : ℝ) : ℝ := w1 + w2
+
+theorem path_sum2_valve : path_sum2 poof_hold suction_hold = 1 :=
+  poof_hold_add_suction_hold
+
+/-- Path-integral *proxy* of a damped free-color history: ∫_0^∞ a0 e^{-γ t} dt = a0/γ. -/
+def color_path_integral_proxy (a0 γ : ℝ) : ℝ := a0 / γ
+
+theorem color_path_integral_proxy_pos
+    {a0 γ : ℝ} (ha : 0 < a0) (hγ : 0 < γ) :
+    0 < color_path_integral_proxy a0 γ :=
+  div_pos ha hγ
+
 end
 
 end FSOT.Formal.UniquenessAttractor
