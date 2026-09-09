@@ -11,7 +11,7 @@ analog: **25 compactified tanks coupled by κ**, not Newton's gravity N-body.
 
 Lean: `orifice_scale` · `kernel_km_eq_orifice_scale_one` ·
 `cycle_km_eq_orifice_scale_ceiling` in `FSOT/Formal/ScalarEngineStructure.lean`.
-Law **D11**. Picture **C14**.
+Law **D11** (length). Dual **D12** (process time). Picture **C14** / **C15**.
 
 ## Closed form
 

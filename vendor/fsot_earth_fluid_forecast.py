@@ -267,8 +267,35 @@ def apply_dynamic_fields(fc: dict[str, Any]) -> dict[str, Any]:
     return fc
 
 
+def process_ceiling_days() -> float:
+    """Ceiling process duration: φ^4 days.
+
+    Time is not a fundamental axis. It is the duration of a fold/mold as the
+    pattern travels through the flow. φ^4 is that duration at d=25 (unfolded
+    valve). Dual of cycle_km = R⊕·POOF.
+    """
+    return f(PHI) ** 4
+
+
+def process_time_days(tau0_days: float, d: float, *, ceiling: float = CEILING_D) -> float:
+    """Process time at compactification fold d. Dual of orifice_scale.
+
+    process_time(τ0, d) = τ0 · d / 25.
+    d=25 is the issued EQ/hydro window (φ^4 days, rounded to 7 calendar days).
+    d=1 is the compactified cell tick (φ^4/25 days). Scoring a UTC instant as
+    if time were Newtonian is the wrong object — not a missing coefficient.
+    """
+    return float(tau0_days) * float(d) / float(ceiling)
+
+
+def cell_process_days() -> float:
+    """Compactified cell tick: process_time(φ^4, 1)."""
+    return process_time_days(process_ceiling_days(), 1.0)
+
+
 def forecast_horizon_days() -> int:
-    return max(1, int(round(f(PHI) ** 4)))
+    """Calendar projection of process_time(φ^4, 25). Round to SI days for scoring."""
+    return max(1, int(round(process_ceiling_days())))
 
 
 def omori_p() -> float:
@@ -277,7 +304,7 @@ def omori_p() -> float:
 
 
 def omori_c_days() -> float:
-    """Characteristic delay after POOF. 1/φ days — timing handle for always-on scoring."""
+    """Characteristic delay after POOF. 1/φ days — rest after the mold."""
     return 1.0 / f(PHI)
 
 

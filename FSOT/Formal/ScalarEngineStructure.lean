@@ -422,6 +422,51 @@ theorem orifice_scale_one_mul_ceiling :
   exact cycle_km_eq_twentyfive_mul_kernel_km
 
 -- ============================================================
+-- Process time (emergent): dual of orifice_scale
+-- Time is the duration of a fold through the flow, not a fundamental axis.
+-- ============================================================
+
+/-- Ceiling process duration: φ^4 days (unfolded valve, d=25). -/
+def process_ceiling_days : ℝ := phi * phi * phi * phi
+
+/-- Process time at compactification fold `d`. Dual of `orifice_scale`.
+    `d = 25` is the issued EQ/hydro window; `d = 1` is the cell tick.
+    Calendar clocks (Cs-133) are a readout of this process. -/
+def process_time (tau0 d : ℝ) : ℝ := tau0 * d / 25
+
+theorem process_time_ceiling :
+    process_time process_ceiling_days (25 : ℝ) = process_ceiling_days := by
+  unfold process_time
+  have h25 : (25 : ℝ) ≠ 0 := by norm_num
+  field_simp [h25]
+
+theorem process_time_one_mul_ceiling (tau0 : ℝ) :
+    process_time tau0 (25 : ℝ) = (25 : ℝ) * process_time tau0 (1 : ℝ) := by
+  unfold process_time
+  have h25 : (25 : ℝ) ≠ 0 := by norm_num
+  field_simp [h25]
+
+theorem process_time_one_eq_div_ceiling (tau0 : ℝ) :
+    process_time tau0 (1 : ℝ) = process_time tau0 (25 : ℝ) / 25 := by
+  have h25 : (25 : ℝ) ≠ 0 := by norm_num
+  rw [process_time_one_mul_ceiling]
+  field_simp [h25]
+
+/-- Omori rest after POOF: 1/φ days. -/
+def omori_c_days : ℝ := 1 / phi
+
+theorem omori_c_days_pos : (0 : ℝ) < omori_c_days := by
+  unfold omori_c_days
+  have hφ : (0 : ℝ) < phi := lt_trans (by norm_num) phi_gt_one
+  exact one_div_pos.mpr hφ
+
+/-- Aftershock slope. Same unity as Gutenberg–Richter b = φ − 1/φ. -/
+def omori_p : ℝ := 1
+
+theorem omori_p_eq_one : omori_p = 1 := by
+  unfold omori_p; rfl
+
+-- ============================================================
 -- κ_ij  (bleed coupling, no free spring)
 -- ============================================================
 
@@ -487,19 +532,19 @@ theorem dark_core_unobserved :
 -- ============================================================
 
 /-- Count of named structural identity theorems in this module (inventory pin). -/
-def scalar_engine_structure_theorem_count : ℕ := 52
+def scalar_engine_structure_theorem_count : ℕ := 57
 
 theorem scalar_engine_structure_theorem_count_pos :
     0 < scalar_engine_structure_theorem_count := by
   unfold scalar_engine_structure_theorem_count; decide
 
 theorem scalar_engine_structure_theorem_count_eq :
-    scalar_engine_structure_theorem_count = 52 := by
+    scalar_engine_structure_theorem_count = 57 := by
   unfold scalar_engine_structure_theorem_count; decide
 
 /-- Bundle: master formula structure is definitionally pinned. -/
 theorem scalar_engine_structure_bundle :
-    scalar_engine_structure_theorem_count = 52 ∧
+    scalar_engine_structure_theorem_count = 57 ∧
     (0 : ℝ) < k ∧
     term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1 := by
   refine ⟨?h1, ?h2, ?h3⟩
@@ -509,7 +554,7 @@ theorem scalar_engine_structure_bundle :
 
 /-- Depth bundle: emergence/damping transport through k-scaling. -/
 theorem scalar_engine_depth_bundle :
-    scalar_engine_structure_theorem_count = 52 ∧
+    scalar_engine_structure_theorem_count = 57 ∧
     (0 : ℝ) < k ∧
     (0 : ℝ) < 0.42 ∧
     (0.42 : ℝ) < k := by

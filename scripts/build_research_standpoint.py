@@ -963,6 +963,38 @@ def laws() -> list[dict]:
                 "cycle_km. A fitted n-body gravity spring."
             ),
         },
+        {
+            "id": "D12",
+            "kind": "discovered",
+            "name": "time_is_emergent_process",
+            "statement": (
+                "Time is not a fundamental axis. It is the duration of a fold/mold "
+                "as the pattern travels through the flow. Dual of orifice_scale: "
+                "process_time(τ0,d)=τ0·d/25 with τ0=φ^4 days at the ceiling. "
+                "Calendar clocks (Cs-133) are a readout. Dilation is flow-contingent "
+                "(τ_rate=(1+S)/(1+|flow_balance|)). Dated windows are that process "
+                "time projected onto SI days at the right fold — not a UTC hypocenter "
+                "as a 0.5% central."
+            ),
+            "closed_form": "process_time(τ0, d) = τ0 · d / 25;  τ0 = φ^4 days;  Omori c = 1/φ",
+            "live": (
+                "φ^4 ≈ 6.85 d → issued EQ/hydro 7 d at d=25; cell tick φ^4/25 ≈ 0.274 d. "
+                "Volcanic 14 d = 2·φ^4. Weather/tide 48 h and solar 72 h stay the frozen "
+                "kind projections. Omori p=1 = GR b. FPC dilation probes (photon sphere, "
+                "ISCO, GPS) already gated. Public issued JSON unchanged."
+            ),
+            "code": (
+                "vendor/fsot_earth_fluid_forecast.py process_time_days · "
+                "scripts/time_emergence_lib.py tau_rate_unified · "
+                "FSOT/Formal/ScalarEngineStructure.lean "
+                "process_time_ceiling · process_time_one_mul_ceiling"
+            ),
+            "not": (
+                "Newtonian UTC hypocenter as a 0.5% central. Retuning φ^4 to hit a "
+                "clock. Rewriting issued windows. Beating ECMWF at S2S. A fitted "
+                "aftershock β."
+            ),
+        },
     ]
 
 
@@ -1219,15 +1251,16 @@ def main() -> int:
         "## Explicitly not a law (yet / ever)",
         "",
         "- Path-integral confinement / T3–T4 uniqueness as *proved*. Open research.",
-        "- Clock-time of the next earthquake, hurricane, or VEI≥4.",
-        "- Beating ECMWF at S2S week 3. Next-day prices. Individual diagnosis.",
+        "- Newtonian UTC hypocenter as a 0.5% central (process time is D12).",
+        "- Beating ECMWF at S2S week 3 (weather *windows* are process time, not NWP skill).",
+        "- Next-day prices. Individual diagnosis.",
         "- Euclid CLOE FoM as a measured S8/H0/wa.",
         "- Genetics 0.13 Å as a sequence-only fold.",
         "- JWST Perfect Host 73.49 as PRED-001.",
         "- Live |S_i|/|S_j| vs 1 as a 0.5% central (same-view question; D9).",
         "- Frozen-state potentials as a calibrated probability of the next earthquake.",
         "",
-        "Picture: [`CONCEPTS.md`](CONCEPTS.md) C1–C14. Apply: [`APPLY.md`](APPLY.md).",
+        "Picture: [`CONCEPTS.md`](CONCEPTS.md) C1–C15. Apply: [`APPLY.md`](APPLY.md).",
         "Object scoring: [`OBJECT_SCORING.md`](OBJECT_SCORING.md).",
         "Standpoint: [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md).",
         "",

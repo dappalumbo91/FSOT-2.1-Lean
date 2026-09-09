@@ -4,7 +4,7 @@
 
 This hub is the **engine and verification face**. Other people use it by naming a measured object, picking a fold, and scoring a residual or a dated window. They do **not** get a new coefficient.
 
-Laws: [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) (R1–R9, D1–D11). Apply: [`APPLY.md`](APPLY.md). Read a row: [`SCIENTIST_INTERFACE.md`](SCIENTIST_INTERFACE.md).
+Laws: [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) (R1–R9, D1–D12). Apply: [`APPLY.md`](APPLY.md). Read a row: [`SCIENTIST_INTERFACE.md`](SCIENTIST_INTERFACE.md). Time: [`TIME_EMERGENT.md`](TIME_EMERGENT.md).
 
 ---
 
@@ -68,7 +68,7 @@ Siblings (same pin, different product): [`../RELATED_EMBODIMENTS.md`](../RELATED
 | **Living thesis** | This GitHub repo + laws ledger + APPLY cookbooks | A second Newton list invented for the paper |
 | **Domain tool** | Genetics / Materials / dated weather sibling | Copying unpublished candidates into 477/477 |
 
-The preprint **articulates** R1–R9 and D1–D11. The repo **executes** them. The siblings **apply** them.
+The preprint **articulates** R1–R9 and D1–D12. The repo **executes** them. The siblings **apply** them.
 
 **Live Paper 03 freeze:** edition `arxiv-03-fsot-theory-of-everything-claim-2026-09-09`, 477/477 green, pin D1D38A, laws through D11, claim SHA `40de0d9` (accept `main` tip ≥ that SHA if green stays 477/477). This GitHub freeze is the **authority preprint** (not an arXiv upload). Manuscript: Desktop `arxiv-papers/03-fsot-theory-of-everything-claim/`. Hub pins: [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/). Worked examples: [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md). Unclaimed ledger: [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md). Coverage: [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md). Sibling slots: [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md).
 

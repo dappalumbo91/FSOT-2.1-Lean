@@ -14,8 +14,12 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "vendor"))
 
 from fsot_earth_fluid_forecast import (  # noqa: E402
+    cell_process_days,
     earthquake_forecasts,
+    forecast_horizon_days,
     kernel_km,
+    process_ceiling_days,
+    process_time_days,
 )
 
 
@@ -34,6 +38,20 @@ def _events() -> list[dict]:
 
 
 def main() -> int:
+    tau0 = process_ceiling_days()
+    if abs(process_time_days(tau0, 25.0) - tau0) > 1e-9:
+        print("FAIL: process_time(φ^4, 25) != φ^4", file=sys.stderr)
+        return 1
+    if abs(25.0 * cell_process_days() - tau0) > 1e-9:
+        print("FAIL: 25 · cell_process != φ^4", file=sys.stderr)
+        return 1
+    if forecast_horizon_days() != 7:
+        print(f"FAIL: horizon {forecast_horizon_days()} != 7", file=sys.stderr)
+        return 1
+    print(
+        f"ok process_time phi^4={tau0:.4f}d  d=25={process_time_days(tau0,25):.4f}d  "
+        f"d=1={cell_process_days():.4f}d  calendar={forecast_horizon_days()}d"
+    )
     issued = datetime.now(timezone.utc)
     fcs = earthquake_forecasts(_events(), issued=issued)
     if not fcs:

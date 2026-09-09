@@ -50,7 +50,7 @@ it may not sell them as the refused object.
 
 | Refusal | Why |
 |---------|-----|
-| Clock-time hypocenter / hurricane landfall / VEI date | Windows and valves, not ETAS calendars |
+| UTC hypocenter as a 0.5% central | Process time (D12) is claimed; Newtonian wall-clock of the next M7 is the wrong object |
 | Beat ECMWF S2S week 3 | NDBC/NCEI class residuals ≠ NWP |
 | Next-day ticker / crash date | World Bank YoY class only |
 | Individual diagnosis / onset | 20.00 W observer + immunology/cardiology **class** only |
@@ -107,7 +107,7 @@ git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 
 1. Import `fsot_scaled` / quote the oracle hash prefix.
 2. Own **product** JSON and sims in the sibling.
-3. Hub remains Label A/B, laws R1–R9 D1–D11, 477-file gate.
+3. Hub remains Label A/B, laws R1–R9 D1–D12, 477-file gate.
 4. Wrong object and honest refusals travel with the sibling README.
 
 Stand up the sibling when you have a public table **and** a runtime the hub

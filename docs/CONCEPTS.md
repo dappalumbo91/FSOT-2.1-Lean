@@ -325,9 +325,39 @@ A quiet cell with an M5 on the arc is **transferred POOF** (the attractor was th
 
 ---
 
+## C15 — Time is emergent (the mold through the flow)
+
+**Said:** Time is not a fundamental axis sitting underneath the fluid. Time *is* the process it takes to fold or mold a pattern into new form as it travels through the medium. That is why time dilation works: the clock is a process in the flow, so it is contingent on the flow. A Cs-133 hyperfine tick is a readout of atomic-fold process time, not “what time is.”
+
+**Engine (dual of C14):**
+
+\[
+\mathrm{process\_time}(\tau_0,d)=\tau_0\cdot d/25,\qquad \tau_0=\varphi^4\ \mathrm{days}
+\]
+
+| Fold | Earth process time | Job |
+|-----:|-------------------:|-----|
+| \(d=25\) | \(\varphi^4\approx 6.85\,\mathrm{d}\) → issued **7 d** | EQ / hydro window (unfolded valve) |
+| \(d=1\) | \(\varphi^4/25\approx 0.274\,\mathrm{d}\) | compactified cell tick; finer `dt` for the always-on sibling |
+| Omori rest | \(c=1/\varphi\) days, \(p=1=\varphi-1/\varphi\) | after-POOF decay; same unity as GR \(b\) |
+
+Kind projections already frozen (do not retune): volcanic \(2\cdot\varphi^4\) → 14 d; weather/tide 48 h; solar 72 h.
+
+Flow-contingent rate (Fluid Phase Current):
+
+\[
+\tau_{\mathrm{rate}}=\frac{1+S}{1+|\mathrm{flow\_balance}|}
+\]
+
+Dilation is this rate at a deep well vs a reference fold (photon sphere, ISCO, GPS already gated). Accurate “clock time” in FSOT is process time at the right \((D_{\mathrm{eff}},d)\), then mapped to SI. A UTC hypocenter treated as a 0.5% central is the **wrong object** — Newtonian time as fundamental.
+
+**Code:** `vendor/fsot_earth_fluid_forecast.py` `process_time_days` · `scripts/time_emergence_lib.py` `tau_rate_unified` · Lean `process_time` · [`TIME_EMERGENT.md`](TIME_EMERGENT.md)
+
+---
+
 ## How to add the next picture
 
-1. Write it here in plain words (C15, …).
+1. Write it here in plain words (C16, …).
 2. Map each phrase to **one existing** engine object.
 3. If nothing maps, stop — do not invent a coefficient.
 4. Add a live check that can fail.

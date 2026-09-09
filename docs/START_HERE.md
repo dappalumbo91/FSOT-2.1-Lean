@@ -35,6 +35,7 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 | Flagship paper (Label A/B) | [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) · freeze 2026-09-09, 477/477 |
 | Worked examples (cells / chem / sky) | [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md) |
 | Why something is not claimed | [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md) · uniqueness: [`UNIQUENESS_RESEARCH_SPINE.md`](UNIQUENESS_RESEARCH_SPINE.md) |
+| Time (emergent process, not UTC) | [`TIME_EMERGENT.md`](TIME_EMERGENT.md) · C15 / D12 |
 | What 477 files cover | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) |
 | Next sibling text / sim | [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md) |
 | Here to break it | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |

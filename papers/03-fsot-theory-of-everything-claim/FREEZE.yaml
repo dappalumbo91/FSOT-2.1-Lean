@@ -27,7 +27,7 @@ formal:
   github_ready: true
   artifact: "data/cross_proof_verification_report.json"
   mathlib_corpus: "5248/5248 FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED"
-  scalar_engine_structure_theorem_count: 52
+  scalar_engine_structure_theorem_count: 57
   uniqueness_attractor_lean: "FSOT/Formal/UniquenessAttractor.lean"
   uniqueness_classical_ym: "OPEN_NOT_CLAIMED"
   acceptance_rule: "overall_ok == true"
@@ -60,8 +60,9 @@ empirical:
 laws:
   ledger: "docs/LAWS_OF_REALITY.md"
   engine: "R1–R9"
-  discovered: "D1–D11"
+  discovered: "D1–D12"
   d11: "orifice_scale(L,d)=L·POOF·d/25; cell d=1; cycle d=25"
+  d12: "process_time(φ^4,d)=φ^4·d/25; time is emergent fold duration, not UTC"
 
 toe_labels:
   label_A_empirical_framework: true

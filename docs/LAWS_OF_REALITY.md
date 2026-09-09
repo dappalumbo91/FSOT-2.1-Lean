@@ -1,6 +1,6 @@
 # Laws of reality (through this model)
 
-*Generated 2026-09-09T21:49:07.720439+00:00 · pin D1D38A*
+*Generated 2026-09-09T23:35:59.491378+00:00 · pin D1D38A*
 
 These are **not** a second Newton list and **not** the founding-era 35
 discrepancy names. They are what the verification spine actually licenses:
@@ -43,18 +43,20 @@ Same physics, different scale — these are what the panels taught.
 | `D9` | **perception_is_scale_view** | Perception at a scale is T1 at that fold’s δψ, hits, and observed. Live |S_i|/|S_j| vs 1 asks for the same view; adjacent folds are not supposed to look the same. | T3 leftover 0.000% on 64 view pairs. QM/atomic live vs 1 is 29.86% = T1 view, not a failed 0.5%. Worst live vs 1 178.45%. Same-look D=6/7 vs 1 is 0.046%. |
 | `D10` | **planetary_cycle_is_orifice_unfolded** | A dated Earth cell is R⊕·POOF/25. Solar, volcanic arc, trench, and basin tanks talk at R⊕·POOF — same orifice, compactification off. | cell 39.1 km · cycle 977.8 km. Loading kills: transferred_poof on the arc or already_poofed (Scotia M6.2). Public cell-kill unchanged. |
 | `D11` | **orifice_scale_is_fold_normalized** | Valve length on a body L at fold d is L·POOF·d/25. A dated cell is d=1. Coupled tanks talk at d=25. Scoring d=1 while the dump is at d=25 is transferred_poof, not a kernel retune. κ_ij names which tanks interact. Frozen valve_state splits into discrete potentials (cell POOF, transfer, quiet hold) — seed-split, not a fitted probability. | cell 39.1 km · cycle 977.8 km · cycle/cell = 25. Closed kills map onto transferred_poof / quiet_hold / unexpected_poof. Public cell-kill unchanged. |
+| `D12` | **time_is_emergent_process** | Time is not a fundamental axis. It is the duration of a fold/mold as the pattern travels through the flow. Dual of orifice_scale: process_time(τ0,d)=τ0·d/25 with τ0=φ^4 days at the ceiling. Calendar clocks (Cs-133) are a readout. Dilation is flow-contingent (τ_rate=(1+S)/(1+|flow_balance|)). Dated windows are that process time projected onto SI days at the right fold — not a UTC hypocenter as a 0.5% central. | φ^4 ≈ 6.85 d → issued EQ/hydro 7 d at d=25; cell tick φ^4/25 ≈ 0.274 d. Volcanic 14 d = 2·φ^4. Weather/tide 48 h and solar 72 h stay the frozen kind projections. Omori p=1 = GR b. FPC dilation probes (photon sphere, ISCO, GPS) already gated. Public issued JSON unchanged. |
 
 ## Explicitly not a law (yet / ever)
 
 - Path-integral confinement / T3–T4 uniqueness as *proved*. Open research.
-- Clock-time of the next earthquake, hurricane, or VEI≥4.
-- Beating ECMWF at S2S week 3. Next-day prices. Individual diagnosis.
+- Newtonian UTC hypocenter as a 0.5% central (process time is D12).
+- Beating ECMWF at S2S week 3 (weather *windows* are process time, not NWP skill).
+- Next-day prices. Individual diagnosis.
 - Euclid CLOE FoM as a measured S8/H0/wa.
 - Genetics 0.13 Å as a sequence-only fold.
 - JWST Perfect Host 73.49 as PRED-001.
 - Live |S_i|/|S_j| vs 1 as a 0.5% central (same-view question; D9).
 - Frozen-state potentials as a calibrated probability of the next earthquake.
 
-Picture: [`CONCEPTS.md`](CONCEPTS.md) C1–C14. Apply: [`APPLY.md`](APPLY.md).
+Picture: [`CONCEPTS.md`](CONCEPTS.md) C1–C15. Apply: [`APPLY.md`](APPLY.md).
 Object scoring: [`OBJECT_SCORING.md`](OBJECT_SCORING.md).
 Standpoint: [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md).

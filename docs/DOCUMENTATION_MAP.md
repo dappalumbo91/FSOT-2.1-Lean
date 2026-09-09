@@ -17,6 +17,7 @@
 | **Flagship paper** | [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) | Freeze 2026-09-09 · 477/477 · Label A/B · Desktop `arxiv-papers/03-fsot-theory-of-everything-claim/` (LaTeX/PDF, GitHub preprint) | Checklist paper, not the 477-domain atlas |
 | **Worked examples** | [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md) | CRC water, NCBI mt genes, JPL density + Planck H0 | How to apply in three domains |
 | **Why not claimed** | [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md) | Uniqueness split + honest refusals | Every “no” has a reason |
+| **Emergent time** | [`TIME_EMERGENT.md`](TIME_EMERGENT.md) | Process time vs Newtonian UTC | D12 / C15; dilation is flow |
 | **Coverage list** | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) | 35 cores + 477 green files | What the program solves for |
 | **Sibling slots** | [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md) | Residual vs product | Where the next open-source text/sim goes |
 

@@ -5,7 +5,7 @@
 
 ## Claim (one sentence)
 
-FSOT satisfies frozen Label A (multi-domain ≤0.5% green + multi-prover) and Label B (T1–T6 ToE checklist) on the public repository, with residual numbers pinned in `FREEZE.yaml`. Laws R1–R9 and D1–D11 are the living ledger.
+FSOT satisfies frozen Label A (multi-domain ≤0.5% green + multi-prover) and Label B (T1–T6 ToE checklist) on the public repository, with residual numbers pinned in `FREEZE.yaml`. Laws R1–R9 and D1–D12 are the living ledger.
 
 ## One-command path
 

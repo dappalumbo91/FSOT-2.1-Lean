@@ -6,6 +6,7 @@ This page is the **unclaimed ledger**. Every “not claimed” line has a *reaso
 Not claiming is not a hole in the residual program. Mixing objects is.
 
 Related: uniqueness spine [`UNIQUENESS_RESEARCH_SPINE.md`](UNIQUENESS_RESEARCH_SPINE.md) ·
+emergent time [`TIME_EMERGENT.md`](TIME_EMERGENT.md) ·
 open questions [`../predictions/reports/SCIENTIST_OPEN_QUESTIONS.md`](../predictions/reports/SCIENTIST_OPEN_QUESTIONS.md) ·
 object compare [`OBJECT_COMPARE.md`](OBJECT_COMPARE.md) ·
 laws [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md).
@@ -51,15 +52,15 @@ spin-2 Fock uniqueness, Einstein–Hilbert measure uniqueness.
 | Spin-2 graviton Fock uniqueness from the fluid action | Quantization uniqueness, deferred | Spin-2 helicity / TT **probes** |
 | Einstein–Hilbert measure uniqueness | Action classification theorem, deferred | Weak-field / Schwarzschild / perihelion / deflection **probes** |
 | Full EH / full SM Lagrangian “derived uniquely” | T3/T4 are packages and recoveries, not uniqueness | Force package v1 in `vendor/fsot_gr_sm.py` |
-| Clock-time of the next earthquake, hurricane, VEI≥4 | Valve geometry ≠ a calendar of a hypocenter | Dated **windows** on live cells; `kill_if` stays the scored cell |
-| Beating ECMWF at S2S week 3 | Honest refusal — class residuals on NDBC/NCEI are not NWP | Weather **class** holds; not a track forecast |
-| Next-day prices / crash date | Honest refusal — a ticker as a 0.5% central is a kill | World Bank YoY **class** residuals |
-| Individual diagnosis / onset date | Honest refusal — person-level onset is clinical | Immunology/cardiology **class** residuals; 20.00 W observer lock |
+| Newtonian UTC hypocenter as a 0.5% central | Wrong object: treats time as a fundamental axis, valve-blind | **Process time** (D12 / C15): \(\mathrm{process\_time}(\varphi^4,d)=\varphi^4\cdot d/25\); issued 7 d window is \(d=25\) rounded to SI. See [`TIME_EMERGENT.md`](TIME_EMERGENT.md) |
+| Beating ECMWF at S2S week 3 | Honest refusal of an NWP *skill contest* | Weather **process windows** (48 h) and class residuals; not a track forecast |
+| Next-day prices / crash date | Honest refusal — a ticker as a 0.5% central is a kill | World Bank YoY **class** residuals (market-fold process, not a crash clock) |
+| Individual diagnosis / onset date | Honest refusal — person-level onset is clinical | Immunology/cardiology **class** residuals; 20.00 W observer; cell process time is NCBI operons, not “when sick” |
 | Euclid CLOE FoM as measured S8/H0/wa | Synthetic figure of merit; zero survey-level S8 | PRED-002/042/043; wait for DR1 |
 | Genetics 0.13 Å as sequence-only | Sibling product vs AF vs FSC vs bulk are **four objects** | Hub **quotes** the 2026-08-17 freeze; CASP/CAMEO still OPEN |
 | JWST Perfect Host 73.49 as PRED-001 | Wrong object (local ladder ≠ bridge 70.75) | Score 73.49 on PRED-024 / hosts-only |
 | Live \(\lvert S_i/S_j\rvert\) vs 1 as a 0.5% central | Same-view question (law D9), not a failed gate | Dual-route APPLY residuals are the 0.5% object |
-| Frozen-state potentials as calibrated quake probability | Seed-split of valve geometry, not ETAS | Discrete potentials on new issues only |
+| Frozen-state potentials as calibrated ETAS probability | Not a fitted quake probability | Discrete **process-time** branches (cell POOF / transfer / quiet hold) on new issues |
 | SH0ES class-bin 1% stuffed into 0.5% | Isolated on purpose; chain is the fair object (0.25%) | Work the chain; do not retune ρ |
 | Cat-2 FRB dump as the 37/37 orifice classifier | Fluence without pulse width is a **catalog class** | Frozen 37/37 complete set; Cat-2 3390 is structural |
 | JINR Z=119 as observed | No confirmed atom; IUPAC ceiling still 118 | PRED-017 viability **awaiting** |
@@ -75,7 +76,8 @@ spin-2 Fock uniqueness, Einstein–Hilbert measure uniqueness.
 
 | Kind | Meaning | Example |
 |------|---------|---------|
-| **Honest refusal** | The model will not claim this even later as a 0.5% central | S2S beat, prices, diagnoses |
+| **Honest refusal** | The model will not claim this even later as a 0.5% central | S2S *skill*, tickers, person-level diagnosis |
+| **Wrong time object** | UTC hypocenter as fundamental; process time is D12 | “M7 at 14:32:07 UTC” vs \(\varphi^4\) window at fold \(d\) |
 | **Wrong object** | A real number scored against the wrong lock | Perfect Host as PRED-001 |
 | **Awaiting data** | Named survey/paper has not landed | Euclid DR1, JINR 119, CASP blind |
 | **Sibling-owned** | Same pin, different product repo | Genetics 0.13 Å, Quantum fold, Materials design |
