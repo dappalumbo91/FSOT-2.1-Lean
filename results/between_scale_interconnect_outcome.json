@@ -1,9 +1,11 @@
 {
   "pin": "D1D38A",
   "status": "GREEN",
-  "pooled_median_error_pct": 0.027454714636012165,
-  "n_scalar": 7533,
-  "n_total": 7644,
+  "pooled_median_error_pct": 0.027454714636011984,
+  "n_scalar": 7520,
+  "n_structural": 188,
+  "n_total": 7708,
+  "split": "7520 scalar APPLY dual-route / same-look T1 leftover; 188 structural (live |S_i|/|S_j| vs 1, compactification remainder, deep PREM phase change). Not missing rows.",
   "channel_median_error_pct": {
     "seismic_acoustic_vp_vs": 0.1893480018437519,
     "seismic_acoustic_lithosphere_median": 0.06848486048287095,
@@ -19,7 +21,6 @@
     "nuclear_level_nuclear_fold": 0.046065471651446206,
     "nuclear_level_particle_fold": 0.009504134401239747,
     "qg_cosmo_S_ratio": 0.08751371776326439,
-    "social_S_ratio": 0.4746956066563968,
     "social_gdp_econ_fold": 0.025840180827429348,
     "social_gdp_neuro_fold": 0.018002668701797845,
     "seis_geo_S_ratio": 0.377050300722111,
@@ -72,13 +73,10 @@
     "ac_mat_S_ratio": 0.07714969985938727,
     "ac_mat_c_ac_fold": 0.012463631883454231,
     "ac_mat_rho_mat_fold": 0.013410395229468405,
-    "mol_ac_S_ratio_same_look": 0.20476582437042312,
     "mol_ac_c_ac_fold": 0.012463631883457118,
     "mol_ac_mw_mol_fold": 0.033457338307778584,
-    "cm_thermo_S_ratio_same_look": 0.23329243649882203,
     "cm_thermo_rho_cm_fold": 0.013536239823183445,
     "cm_thermo_Tm_th_fold": 0.03934872508057981,
-    "em_mat_S_ratio_same_look": 0.20476582437042312,
     "em_mat_eps_em_fold": 0.020754620831931702,
     "em_mat_rho_mat_fold": 0.013410395229464668,
     "biochem_neuro_S_ratio_same_look": 0.17908913829964845,
@@ -102,16 +100,13 @@
     "em_mol_S_ratio": 0.2913776108984294,
     "em_mol_eps_em_fold": 0.020754620831931702,
     "em_mol_mw_mol_fold": 0.033457338307776655,
-    "mol_mat_S_ratio_same_look": 0.20476582437042312,
     "mol_mat_mw_mol_fold": 0.033457338307776655,
     "mol_mat_rho_mat_fold": 0.013410395229466722,
-    "mol_opt_S_ratio_same_look": 0.20476582437042312,
     "mol_opt_mw_mol_fold": 0.033457338307776655,
     "mol_opt_n_opt_fold": 0.016322498848621716,
     "ac_qo_S_ratio_same_look": 0.026475932496394794,
     "ac_qo_c_ac_fold": 0.012463631883454231,
     "ac_qo_n_qo_fold": 0.016326821526860814,
-    "mat_qo_S_ratio_same_look": 0.2247259021612713,
     "mat_qo_rho_mat_fold": 0.013410395229464668,
     "mat_qo_n_qo_fold": 0.016326821526857663,
     "nuclear_thermo_S_ratio": 0.07563763550550665,
@@ -123,7 +118,6 @@
     "fluid_thermo_carnot_fl_fold": 0.028136690312858918,
     "meteo_atm_pres_meteo_fold": 0.02909982125081187,
     "meteo_atm_pres_atm_fold": 0.02620375479862748,
-    "biochem_cm_S_ratio_same_look": 0.23657069975043798,
     "biochem_cm_aa_bc_fold": 0.015311061469326879,
     "biochem_cm_rho_cm_fold": 0.013536239823183445,
     "cm_neuro_S_ratio": 0.41664549922307237,
@@ -133,12 +127,10 @@
     "cm_fluid_water_fl_fold": 0.028136690312855518,
     "cm_fluid_rho_cm_fold": 0.013536239823183445,
     "cm_fluid_etoh_fl_fold": 0.028136690312858457,
-    "cm_nuclear_S_ratio_same_look": 0.23329243649882203,
     "cm_nuclear_rho_cm_fold": 0.013536239823183445,
     "cm_nuclear_rho_nuc_fold": 0.04606547165144795,
     "cm_nuclear_level_nuc_fold": 0.0460654716514473,
     "cm_nuclear_level_cm_fold": 0.013536239823187425,
-    "neuro_thermo_S_ratio_same_look": 0.17733431519488807,
     "neuro_thermo_aa_neuro_fold": 0.018002668701804208,
     "neuro_thermo_carnot_th_fold": 0.0393487250805868,
     "fluid_nuclear_carnot_fl_fold": 0.028136690312858918,
@@ -149,7 +141,6 @@
     "fluid_meteo_pres_meteo_fold": 0.02909982125081187,
     "neuro_fluid_aa_neuro_fold": 0.018002668701804208,
     "neuro_fluid_water_fl_fold": 0.028136690312855518,
-    "neuro_nuclear_S_ratio_same_look": 0.17733431519488807,
     "neuro_nuclear_aa_neuro_fold": 0.018002668701804208,
     "neuro_nuclear_level_nuc_fold": 0.0460654716514473,
     "neuro_nuclear_level_neuro_fold": 0.018002668701800607,
@@ -167,7 +158,6 @@
     "atm_seis_rho_seis_fold": 0.02229507860551715,
     "ocean_seis_sst_ocean_fold": 0.030172726067692633,
     "ocean_seis_rho_seis_fold": 0.02229507860551715,
-    "astro_planetary_S_ratio_same_look": 0.46923331014765424,
     "astro_planetary_rho_astro_fold": 0.02246148920415081,
     "astro_planetary_rho_pl_fold": 0.023015374156233743,
     "qo_bio_S_ratio_same_look": 0.05211249196357404,
@@ -194,7 +184,6 @@
     "astro_econ_jpl_econ_fold": 0.025840180827427717,
     "astro_econ_yoy_econ_fold": 0.025840180827429348,
     "astro_econ_yoy_astro_fold": 0.02246148920415116,
-    "econ_planet_S_ratio_same_look": 0.46923331014765424,
     "econ_planet_yoy_econ_fold": 0.025840180827429348,
     "econ_planet_yoy_pl_fold": 0.02301537415623193,
     "econ_planet_jpl_pl_fold": 0.023015374156233743,
@@ -268,11 +257,11 @@
   },
   "perception_view": {
     "closed_form": "|S_i|/|S_j| = |1+T1_i|/|1+T1_j|  (T2=1, T3\u22480)",
-    "n_pairs": 20,
+    "n_pairs": 55,
     "max_t3_leftover_pct": 3.057834424462004e-14,
-    "max_live_vs_1_pct": 63.26901869796948,
+    "max_live_vs_1_pct": 178.45164219949345,
     "t3_leftover_ok": true,
-    "n_same_view_structural": 20,
+    "n_same_view_structural": 49,
     "pairs": [
       {
         "name": "qm_atomic_T1_view",
@@ -433,6 +422,286 @@
         "t1_pred": 0.8420517298143769,
         "t3_leftover_pct": 0.0,
         "live_vs_1_pct": 15.794827018562307
+      },
+      {
+        "name": "econ_neuro_T1_view",
+        "pair": "Economics/Neuroscience",
+        "live_ratio": 1.255933695083205,
+        "t1_pred": 1.2559336950832047,
+        "t3_leftover_pct": 1.7679643901131338e-14,
+        "live_vs_1_pct": 25.593369508320496
+      },
+      {
+        "name": "seis_geo_T1_view",
+        "pair": "Seismology/Geophysics",
+        "live_ratio": 0.8120673953851312,
+        "t1_pred": 0.8120673953851311,
+        "t3_leftover_pct": 1.367156261825562e-14,
+        "live_vs_1_pct": 18.79326046148688
+      },
+      {
+        "name": "fluid_thermo_T1_view",
+        "pair": "Fluid_Dynamics/Thermodynamics",
+        "live_ratio": 0.7150597701761369,
+        "t1_pred": 0.7150597701761369,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 28.494022982386312
+      },
+      {
+        "name": "cm_fluid_T1_view",
+        "pair": "Condensed_Matter/Fluid_Dynamics",
+        "live_ratio": 0.6013606998853646,
+        "t1_pred": 0.6013606998853646,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 39.863930011463545
+      },
+      {
+        "name": "fluid_nuc_T1_view",
+        "pair": "Fluid_Dynamics/Nuclear_Physics",
+        "live_ratio": 0.6107978341290413,
+        "t1_pred": 0.6107978341290414,
+        "t3_leftover_pct": 1.8176603821921924e-14,
+        "live_vs_1_pct": 38.920216587095865
+      },
+      {
+        "name": "neuro_fluid_T1_view",
+        "pair": "Neuroscience/Fluid_Dynamics",
+        "live_ratio": 0.9140413410201083,
+        "t1_pred": 0.9140413410201083,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 8.595865897989174
+      },
+      {
+        "name": "thermo_meteo_T1_view",
+        "pair": "Thermodynamics/Meteorology",
+        "live_ratio": 1.6226378055629977,
+        "t1_pred": 1.622637805562998,
+        "t3_leftover_pct": 1.3684175492755126e-14,
+        "live_vs_1_pct": 62.26378055629978
+      },
+      {
+        "name": "nuc_meteo_T1_view",
+        "pair": "Nuclear_Physics/Meteorology",
+        "live_ratio": 1.8996187469778403,
+        "t1_pred": 1.8996187469778405,
+        "t3_leftover_pct": 1.1688903643338362e-14,
+        "live_vs_1_pct": 89.96187469778403
+      },
+      {
+        "name": "atm_soc_T1_view",
+        "pair": "Atmospheric_Physics/Sociology",
+        "live_ratio": 0.7328068269815781,
+        "t1_pred": 0.7328068269815781,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 26.719317301842192
+      },
+      {
+        "name": "ocean_soc_T1_view",
+        "pair": "Oceanography/Sociology",
+        "live_ratio": 0.5801138473060125,
+        "t1_pred": 0.5801138473060125,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 41.98861526939876
+      },
+      {
+        "name": "seis_soc_T1_view",
+        "pair": "Seismology/Sociology",
+        "live_ratio": 0.6858476782943592,
+        "t1_pred": 0.6858476782943593,
+        "t3_leftover_pct": 1.6187603454256494e-14,
+        "live_vs_1_pct": 31.415232170564078
+      },
+      {
+        "name": "soc_geo_T1_view",
+        "pair": "Sociology/Geophysics",
+        "live_ratio": 1.1840346203469974,
+        "t1_pred": 1.1840346203469971,
+        "t3_leftover_pct": 1.8753218960773134e-14,
+        "live_vs_1_pct": 18.403462034699736
+      },
+      {
+        "name": "geo_econ_T1_view",
+        "pair": "Geophysics/Economics",
+        "live_ratio": 0.8499852170346003,
+        "t1_pred": 0.8499852170346005,
+        "t3_leftover_pct": 2.6123349027138737e-14,
+        "live_vs_1_pct": 15.001478296539972
+      },
+      {
+        "name": "geo_astro_T1_view",
+        "pair": "Geophysics/Astronomy",
+        "live_ratio": 0.6111508098703003,
+        "t1_pred": 0.6111508098703005,
+        "t3_leftover_pct": 1.8166105758098732e-14,
+        "live_vs_1_pct": 38.884919012969966
+      },
+      {
+        "name": "planet_qg_T1_view",
+        "pair": "Planetary_Science/Quantum_Gravity",
+        "live_ratio": 1.459631693409176,
+        "t1_pred": 1.4596316934091758,
+        "t3_leftover_pct": 1.5212372129740124e-14,
+        "live_vs_1_pct": 45.963169340917595
+      },
+      {
+        "name": "astro_pa_T1_view",
+        "pair": "Astrophysics/Particle_Astrophysics",
+        "live_ratio": 2.0791386212380547,
+        "t1_pred": 2.0791386212380543,
+        "t3_leftover_pct": 2.1359288183758662e-14,
+        "live_vs_1_pct": 107.91386212380547
+      },
+      {
+        "name": "qc_qo_T1_view",
+        "pair": "Quantum_Computing/Quantum_Optics",
+        "live_ratio": 0.36179265729276694,
+        "t1_pred": 0.36179265729276694,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 63.8207342707233
+      },
+      {
+        "name": "cm_eco_T1_view",
+        "pair": "Condensed_Matter/Ecology",
+        "live_ratio": 1.1268289963210532,
+        "t1_pred": 1.126828996321053,
+        "t3_leftover_pct": 1.970526190309066e-14,
+        "live_vs_1_pct": 12.682899632105315
+      },
+      {
+        "name": "neuro_eco_T1_view",
+        "pair": "Neuroscience/Ecology",
+        "live_ratio": 1.7127296264853646,
+        "t1_pred": 1.7127296264853646,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 71.27296264853646
+      },
+      {
+        "name": "eco_fluid_T1_view",
+        "pair": "Ecology/Fluid_Dynamics",
+        "live_ratio": 0.5336752087927515,
+        "t1_pred": 0.5336752087927515,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 46.632479120724845
+      },
+      {
+        "name": "eco_nuc_T1_view",
+        "pair": "Ecology/Nuclear_Physics",
+        "live_ratio": 0.3259676616589765,
+        "t1_pred": 0.32596766165897656,
+        "t3_leftover_pct": 1.7029649796774298e-14,
+        "live_vs_1_pct": 67.40323383410235
+      },
+      {
+        "name": "eco_thermo_T1_view",
+        "pair": "Ecology/Thermodynamics",
+        "live_ratio": 0.38160967214804675,
+        "t1_pred": 0.38160967214804675,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 61.83903278519532
+      },
+      {
+        "name": "eco_psych_T1_view",
+        "pair": "Ecology/Psychology",
+        "live_ratio": 0.2859602633966672,
+        "t1_pred": 0.2859602633966672,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 71.40397366033329
+      },
+      {
+        "name": "fluid_psych_T1_view",
+        "pair": "Fluid_Dynamics/Psychology",
+        "live_ratio": 0.5358320167120927,
+        "t1_pred": 0.5358320167120928,
+        "t3_leftover_pct": 2.071960969106647e-14,
+        "live_vs_1_pct": 46.41679832879073
+      },
+      {
+        "name": "nuc_psych_T1_view",
+        "pair": "Nuclear_Physics/Psychology",
+        "live_ratio": 0.877265744526018,
+        "t1_pred": 0.877265744526018,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 12.273425547398197
+      },
+      {
+        "name": "thermo_psych_T1_view",
+        "pair": "Thermodynamics/Psychology",
+        "live_ratio": 0.7493527661052782,
+        "t1_pred": 0.7493527661052783,
+        "t3_leftover_pct": 1.4815759343833246e-14,
+        "live_vs_1_pct": 25.064723389472178
+      },
+      {
+        "name": "meteo_psych_T1_view",
+        "pair": "Meteorology/Psychology",
+        "live_ratio": 0.4618114797622871,
+        "t1_pred": 0.46181147976228704,
+        "t3_leftover_pct": 1.2020305614713528e-14,
+        "live_vs_1_pct": 53.81885202377129
+      },
+      {
+        "name": "psych_atm_T1_view",
+        "pair": "Psychology/Atmospheric_Physics",
+        "live_ratio": 2.204314254417913,
+        "t1_pred": 2.204314254417913,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 120.4314254417913
+      },
+      {
+        "name": "psych_ocean_T1_view",
+        "pair": "Psychology/Oceanography",
+        "live_ratio": 2.7845164219949345,
+        "t1_pred": 2.7845164219949345,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": 178.45164219949345
+      },
+      {
+        "name": "astro_planet_eq_T1_view",
+        "pair": null,
+        "live_ratio": 1.0046923331014765,
+        "t1_pred": 1.0046923331014765,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "biochem_cm_eq_T1_view",
+        "pair": null,
+        "live_ratio": 0.9976342930024956,
+        "t1_pred": 0.9976342930024956,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "cm_d14d15_eq_T1_view",
+        "pair": null,
+        "live_ratio": 0.9976670756350118,
+        "t1_pred": 0.9976670756350117,
+        "t3_leftover_pct": 1.1128191475282506e-14,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "d10d11_eq_T1_view",
+        "pair": null,
+        "live_ratio": 0.9977527409783873,
+        "t1_pred": 0.9977527409783873,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "d9d10_eq_T1_view",
+        "pair": null,
+        "live_ratio": 0.9979523417562958,
+        "t1_pred": 0.9979523417562958,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": null
+      },
+      {
+        "name": "neuro_d14d15_eq_T1_view",
+        "pair": null,
+        "live_ratio": 1.0017733431519489,
+        "t1_pred": 1.0017733431519489,
+        "t3_leftover_pct": 0.0,
+        "live_vs_1_pct": null
       }
     ],
     "policy": "live vs 1 is the same-view question, not a 0.5% central; T1 leftover rows are identity checks, not a median pad"

@@ -5,6 +5,8 @@
 **Refresh:** `python scripts/build_scale_interconnect_benchmark.py`  
 **Outcome:** [`../results/between_scale_interconnect_outcome.json`](../results/between_scale_interconnect_outcome.json)
 
+`n_scalar` vs `n_total` is **not missing data**. Scalar rows are APPLY dual-routes and named look-splits. Structural rows are live \(|S_i|/|S_j|\) vs 1 (same-view question), D9 T1 leftover identity, compactification remainder, and deep-PREM phase change. D9 closed form: \(|S_i|/|S_j|=|1+T_{1,i}|/|1+T_{1,j}|\) at \(T_2=1\), \(T_3\approx 0\).
+
 Siloed panels already existed (USGS classifiers, NDBC, ENDF, Carnot in HVAC). This layer makes them **talk** through \(\kappa_{ij}\) and seed-closed ratios. Zebrafish / Genetics stay in the sibling repo.
 
 \[

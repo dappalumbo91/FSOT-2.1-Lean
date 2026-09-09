@@ -117,24 +117,21 @@ jobs:
 
       - name: Install Z3
         run: |
-          sudo apt-get update
-          sudo apt-get install -y z3
-          z3 --version
+          set -e
+          # ubuntu-latest runners ship a google-chrome apt source that
+          # intermittently Hash-Sum-mismatches and fails a global apt-get update.
+          sudo rm -f /etc/apt/sources.list.d/google-chrome.list \
+                     /etc/apt/sources.list.d/google-chrome.list.save || true
+          if sudo apt-get update && sudo apt-get install -y z3; then
+            z3 --version
+          else
+            echo "apt z3 failed — falling back to pip z3-solver"
+            python -m pip install z3-solver
+            python -c "import z3; print('z3-solver', z3.get_version_string())"
+          fi
 
       - name: Run scientific catalog SMT bounds (if present)
-        run: |
-          set -e
-          if [ -f verification/smt/scientific_catalog_bounds.smt2 ]; then
-            z3 verification/smt/scientific_catalog_bounds.smt2 | tee /tmp/smt_out.txt
-            # Accept sat/unsat depending on encoding; fail only on error/unknown without model
-            if grep -qiE 'error|unknown' /tmp/smt_out.txt; then
-              echo "SMT reported error/unknown"
-              # still advisory if encoding is existential residual check
-            fi
-            cat /tmp/smt_out.txt
-          else
-            echo "No scientific_catalog_bounds.smt2 — skip"
-          fi
+        run: python scripts/run_smt2_catalog.py
 
       - name: Export / verify scientific catalog spine JSON
         run: |

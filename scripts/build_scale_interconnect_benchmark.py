@@ -168,12 +168,19 @@ def main() -> int:
         return s[len(s) // 2]
 
     channel_med = {p: _med(e) for p, e in by_prop.items()}
+    n_struct = len(rows) - len(tight)
     outcome = {
         "pin": "D1D38A",
         "status": status,
         "pooled_median_error_pct": doc.get("pooled_median_error_pct"),
         "n_scalar": len(tight),
+        "n_structural": n_struct,
         "n_total": len(rows),
+        "split": (
+            f"{len(tight)} scalar APPLY dual-route / same-look T1 leftover; "
+            f"{n_struct} structural (live |S_i|/|S_j| vs 1, compactification remainder, "
+            "deep PREM phase change). Not missing rows."
+        ),
         "channel_median_error_pct": channel_med,
         "perception_view": pv,
         "kill": (

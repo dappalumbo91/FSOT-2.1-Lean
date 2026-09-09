@@ -555,6 +555,38 @@ def scalar_at(
     return abs(f(compute_scalar(si)))
 
 
+def t1_at(
+    *,
+    d_eff: int,
+    delta_psi: float,
+    hits: int = 0,
+    observed: bool = True,
+) -> float:
+    """Observer-branch T1 at a named look (not necessarily a core's native route)."""
+    s = ScalarInput(
+        N=mpf(1),
+        P=mpf(1),
+        D_eff=mpf(d_eff),
+        delta_psi=mpf(delta_psi),
+        delta_theta=mpf(1),
+        recent_hits=mpf(hits),
+        observed=observed,
+    )
+    n, p, dval = s.N, s.P, s.D_eff
+    dp, h = s.delta_psi, s.recent_hits
+    growth = exp(s.alpha * (1 - h / n) * GAMMA / PHI)
+    base = (
+        (n * p / sqrt(dval))
+        * cos((s.psi_con + dp) / ETA_EFF)
+        * exp(-s.alpha * h / n + s.rho + s.B_in * dp)
+        * (1 + growth * s.C_eff)
+    )
+    t1 = base * (1 + s.P_new * ln(dval / 25))
+    if s.observed:
+        t1 = t1 * exp(C_FACTOR * s.P_var) * cos(dp + s.P_var)
+    return f(t1)
+
+
 def t1_of(name: str) -> float:
     """Observer-branch T1 at a domain’s native (D, δψ, hits, observed).
 
@@ -4768,7 +4800,63 @@ PERCEPTION_PAIRS = (
     ("Astronomy", "Planetary_Science", "astro_planetary"),
     ("Astronomy", "Economics", "astro_econ"),
     ("Economics", "Planetary_Science", "econ_planet"),
+    ("Economics", "Neuroscience", "econ_neuro"),
+    ("Seismology", "Geophysics", "seis_geo"),
+    ("Fluid_Dynamics", "Thermodynamics", "fluid_thermo"),
+    ("Condensed_Matter", "Fluid_Dynamics", "cm_fluid"),
+    ("Fluid_Dynamics", "Nuclear_Physics", "fluid_nuc"),
+    ("Neuroscience", "Fluid_Dynamics", "neuro_fluid"),
+    ("Thermodynamics", "Meteorology", "thermo_meteo"),
+    ("Nuclear_Physics", "Meteorology", "nuc_meteo"),
+    ("Atmospheric_Physics", "Sociology", "atm_soc"),
+    ("Oceanography", "Sociology", "ocean_soc"),
+    ("Seismology", "Sociology", "seis_soc"),
+    ("Sociology", "Geophysics", "soc_geo"),
+    ("Geophysics", "Economics", "geo_econ"),
+    ("Geophysics", "Astronomy", "geo_astro"),
+    ("Planetary_Science", "Quantum_Gravity", "planet_qg"),
+    ("Astrophysics", "Particle_Astrophysics", "astro_pa"),
+    ("Quantum_Computing", "Quantum_Optics", "qc_qo"),
+    ("Condensed_Matter", "Ecology", "cm_eco"),
+    ("Neuroscience", "Ecology", "neuro_eco"),
+    ("Ecology", "Fluid_Dynamics", "eco_fluid"),
+    ("Ecology", "Nuclear_Physics", "eco_nuc"),
+    ("Ecology", "Thermodynamics", "eco_thermo"),
+    ("Ecology", "Psychology", "eco_psych"),
+    ("Fluid_Dynamics", "Psychology", "fluid_psych"),
+    ("Nuclear_Physics", "Psychology", "nuc_psych"),
+    ("Thermodynamics", "Psychology", "thermo_psych"),
+    ("Meteorology", "Psychology", "meteo_psych"),
+    ("Psychology", "Atmospheric_Physics", "psych_atm"),
+    ("Psychology", "Oceanography", "psych_ocean"),
 )
+
+# Same-look |S(D)/S(D')| vs 1 is the wrong object (compactification still in T1).
+# D9: |1+T1|/|1+T1| vs live |S|/|S|. Spec: (D_a, D_b, δψ, hits, observed, tag).
+SAME_LOOK_T1 = (
+    (20, 21, 1.0, 1, True, "astro_planet_eq"),
+    (13, 14, 0.5, 0, True, "biochem_cm_eq"),
+    (14, 15, 0.5, 0, True, "cm_d14d15_eq"),
+    (10, 11, 0.5, 0, True, "d10d11_eq"),
+    (9, 10, 0.5, 0, True, "d9d10_eq"),
+    (14, 15, 0.7, 1, True, "neuro_d14d15_eq"),
+)
+
+_DEMOTE_VS1_PROPS = {
+    "astro_planetary_S_ratio_same_look",
+    "econ_planet_S_ratio_same_look",
+    "biochem_cm_S_ratio_same_look",
+    "cm_thermo_S_ratio_same_look",
+    "cm_nuclear_S_ratio_same_look",
+    "mat_qo_S_ratio_same_look",
+    "mol_ac_S_ratio_same_look",
+    "em_mat_S_ratio_same_look",
+    "mol_mat_S_ratio_same_look",
+    "mol_opt_S_ratio_same_look",
+    "neuro_thermo_S_ratio_same_look",
+    "neuro_nuclear_S_ratio_same_look",
+    "social_S_ratio",
+}
 
 
 def perception_view_rows() -> list[dict[str, Any]]:
@@ -4835,11 +4923,64 @@ def perception_view_rows() -> list[dict[str, Any]]:
     return rows
 
 
+def same_look_t1_rows() -> list[dict[str, Any]]:
+    """D9 at an equalized look: vs 1 is the wrong object; leftover is T3."""
+    rows: list[dict[str, Any]] = []
+    for da, db, dpsi, hits, obs, tag in SAME_LOOK_T1:
+        sa = scalar_at(d_eff=da, delta_psi=dpsi, hits=hits, observed=obs)
+        sb = scalar_at(d_eff=db, delta_psi=dpsi, hits=hits, observed=obs)
+        t1a = t1_at(d_eff=da, delta_psi=dpsi, hits=hits, observed=obs)
+        t1b = t1_at(d_eff=db, delta_psi=dpsi, hits=hits, observed=obs)
+        live = sa / sb
+        pred = abs(1.0 + t1a) / abs(1.0 + t1b)
+        e_t3 = err(pred, live)
+        rec = _row(
+            prop="same_look_t1_view",
+            name=f"{tag}_T1_view",
+            computed=pred,
+            measured=live,
+            note=(
+                f"|1+T1(D={da},δψ={dpsi})|/|1+T1(D={db},δψ={dpsi})| vs live |S|/|S| "
+                f"at equalized look. vs 1 is the same-view question (compactification "
+                "still sits in T1). Residual is T3 leftover."
+            ),
+            kind="structural",
+            extra={
+                "D_a": float(da),
+                "D_b": float(db),
+                "delta_psi": float(dpsi),
+                "t3_leftover_ok": e_t3 <= 0.5,
+            },
+        )
+        rec["error_pct"] = e_t3
+        rec["eval_kind"] = "perception_t1_view" if e_t3 <= 0.5 else "t3_leftover_band"
+        rows.append(rec)
+    return rows
+
+
+def demote_vs1_same_look(rows: list[dict[str, Any]]) -> None:
+    """vs 1 / vs 5/4 on those S-ratios is the wrong object once D9 T1 is gated."""
+    for r in rows:
+        if r.get("property") not in _DEMOTE_VS1_PROPS:
+            continue
+        if r.get("record_kind") != "scalar":
+            continue
+        r["record_kind"] = "structural"
+        r["eval_kind"] = "literature_band"
+        note = str(r.get("note") or "")
+        if "D9" not in note:
+            r["note"] = note + " D9: vs 1 / vs 5/4 is the same-view or seed-approx question; T1 view is the closed form."
+
+
 def perception_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]:
     """Closed-form ledger: live |S_i|/|S_j| is T1, leftover is T3."""
     if rows is None:
         rows = perception_view_rows()
-    t1 = [r for r in rows if r.get("property") == "perception_view_t1"]
+    t1 = [
+        r
+        for r in rows
+        if r.get("property") in ("perception_view_t1", "same_look_t1_view")
+    ]
     vs1 = [r for r in rows if r.get("property") == "perception_same_view_vs_1"]
     leftovers = [float(r["error_pct"]) for r in t1]
     vs1_pcts = [float(r.get("live_vs_1_pct") or r["error_pct"]) for r in t1]
@@ -4965,4 +5106,6 @@ def suite_rows(
     rows.extend(psychology_atm_rows(psych, ndbc_path))
     rows.extend(psychology_ocean_rows(psych, ndbc_path))
     rows.extend(perception_view_rows())
+    rows.extend(same_look_t1_rows())
+    demote_vs1_same_look(rows)
     return rows

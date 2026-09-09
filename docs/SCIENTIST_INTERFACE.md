@@ -42,6 +42,8 @@ Domain **median** residual \(\le 0.5\%\) on **scalar** rows. Structural rows (sa
 
 Connective tissues: [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md). Panel: `data/between_scale_interconnect_benchmark.json`.
 
+`n_scalar` vs `n_total` is **not a hole**. Live split is in `results/between_scale_interconnect_outcome.json` (`n_scalar`, `n_structural`, `split`). Structural rows are live \(|S_i|/|S_j|\) vs 1 (same-view question), D9 T1 leftover identity, compactification remainder, and deep-PREM phase change. Dual-route APPLY residuals are the scalar count.
+
 ---
 
 ## 4. What a tissue row is claiming
