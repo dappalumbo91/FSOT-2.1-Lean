@@ -1,6 +1,6 @@
 # Science vs FSOT — named-object compare
 
-*Generated 2026-09-09T18:43:46.360538+00:00 · pin D1D38A*
+*Generated 2026-09-09T18:54:47.576030+00:00 · pin D1D38A*
 
 A literature number is a **named object**. Score it against the named
 lock, not a headline. Wrong object = false kill. Do **not** retune
@@ -31,9 +31,12 @@ How to add the next paper: `python scripts/record_prediction_outcome.py` (see [`
 | Riess+2022 Eq.7 R_H = 0.4 | 0.4 R_H | POOF·e·C_eff (0.399561) | `cepheid_wesenheit` | **hold** | NIR Wesenheit is acoustic+chemistry+light, not a fitted b. Residual ~0.110%. | A free Z_W or PL slope |
 | FRB IGM 200·(1+sky_density) (~66%) | — pc cm^-3 | PRED-084 orifice (width×fluence vs e·POOF) | `wrong_object_remedied` | **remedied** | IGM path vs orifice puncture. Retired. Repeaters = saloon door; one-shots = paper-rip. | Stuffing DM into 0.5%; dark matter in puncture energy |
 | JINR Z=119 run (started May 2026) | — Z | PRED-017 viability | `awaiting` | **awaiting** | No confirmed atom. IUPAC ceiling still 118. | A half-life as a 0.5% central |
+| CASP/CAMEO blind protocol (Genetics freeze 2026-08-17) | — Å | product vs AF vs FSC, three columns | `awaiting_protocol` | **awaiting** | Protocol is registered. Blind run is future (Grok Build owns it). Not 0.13 Å from sequence. | Quoting 0.13 Å as sequence-only; cross-citing FSC Å as the product |
+| Euclid DR1-Foundation (~12 Nov 2026) | — S8/H0/wa | PRED-002 / 042 / 043 | `awaiting` | **awaiting** | Independent drop. CLOE is synthetic. Do not cite FoM as measured S8/H0/wa. | Euclid CLOE as a hold |
+| Path-integral confinement / T3–T4 uniqueness | — theorem | OPEN_NOT_CLAIMED | `open_research` | **awaiting** | Executable probes exist (γ_color, singlets). Continuum YM path-integral uniqueness is not proved. | Pretending Label B uniqueness is a theorem |
 | GWTC-5.0 catalog (~390 p_astro≥0.5) | 390 catalog_count | PRED-048 / 067 residual class | `catalog` | **local_green_hold** | Catalog public. Compact-object / GWOSC panels already green. Siren H0 70.024 awaits O4/O5. | Retuning ρ onto SH0ES from one siren |
 
-Counts: {'hold': 9, 'frozen_isolate': 1, 'tension_row': 1, 'awaiting': 2, 'hold_not_kill': 1, 'theory_rebase': 1, 'sibling_owned': 1, 'remedied': 1, 'local_green_hold': 1}. Outcome-log PRED rows (not FCAST): **14**.
+Counts: {'hold': 9, 'frozen_isolate': 1, 'tension_row': 1, 'awaiting': 5, 'hold_not_kill': 1, 'theory_rebase': 1, 'sibling_owned': 1, 'remedied': 1, 'local_green_hold': 1}. Outcome-log PRED rows (not FCAST): **14**.
 
 ## Verdict vocabulary
 

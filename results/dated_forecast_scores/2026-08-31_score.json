@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-09-08T00:43:16.377729+00:00",
+  "scored_at": "2026-09-09T18:53:44.978190+00:00",
   "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-31_issue.json",
   "rows": [
     {
@@ -33,10 +33,10 @@
         {
           "id": "us7000tder",
           "mag": 4.9,
-          "place": "56 km NNE of Ruteng, Indonesia",
-          "lat": -8.1698,
-          "lon": 120.716,
-          "km": 20.882309748998953
+          "place": "50 km NNE of Ruteng, Indonesia",
+          "lat": -8.1981,
+          "lon": 120.6653,
+          "km": 14.495512377909026
         },
         {
           "id": "us7000td2z",
@@ -134,7 +134,7 @@
     {
       "id": "FCAST-SOL-20260831T2357-01",
       "result": "hold",
-      "kp_max": 2.67,
+      "kp_max": 2.33,
       "expect_kp_ge_5": false
     },
     {
@@ -176,32 +176,32 @@
     {
       "id": "FCAST-HYDRO-20260831T2357-01",
       "result": "kill",
-      "mean_cfs": 2295.39,
-      "n_obs": 2255,
+      "mean_cfs": 2287.79,
+      "n_obs": 2304,
       "expect_high_flow": true,
       "site_id": "01646500"
     },
     {
       "id": "FCAST-HYDRO-20260831T2357-02",
       "result": "hold",
-      "mean_cfs": 31222.47,
-      "n_obs": 1126,
+      "mean_cfs": 31268.92,
+      "n_obs": 1152,
       "expect_high_flow": false,
       "site_id": "05420500"
     },
     {
       "id": "FCAST-HYDRO-20260831T2357-03",
       "result": "hold",
-      "mean_cfs": 30.89,
-      "n_obs": 748,
+      "mean_cfs": 30.86,
+      "n_obs": 768,
       "expect_high_flow": false,
       "site_id": "08013000"
     },
     {
       "id": "FCAST-HYDRO-20260831T2357-04",
       "result": "hold",
-      "mean_cfs": 7748.11,
-      "n_obs": 742,
+      "mean_cfs": 7742.96,
+      "n_obs": 768,
       "expect_high_flow": false,
       "site_id": "09402500"
     },
@@ -209,31 +209,31 @@
       "id": "FCAST-HYDRO-20260831T2357-05",
       "result": "hold",
       "mean_cfs": 1.35,
-      "n_obs": 2242,
+      "n_obs": 2304,
       "expect_high_flow": false,
       "site_id": "06803510"
     },
     {
       "id": "FCAST-HYDRO-20260831T2357-06",
       "result": "hold",
-      "mean_cfs": 199467.73,
-      "n_obs": 954,
+      "mean_cfs": 199431.5,
+      "n_obs": 953,
       "expect_high_flow": false,
       "site_id": "14246900"
     },
     {
       "id": "FCAST-HYDRO-20260831T2357-07",
       "result": "hold",
-      "mean_cfs": 272.81,
-      "n_obs": 745,
+      "mean_cfs": 282.54,
+      "n_obs": 762,
       "expect_high_flow": true,
       "site_id": "023177483"
     },
     {
       "id": "FCAST-HYDRO-20260831T2357-08",
       "result": "hold",
-      "mean_cfs": 3756.9,
-      "n_obs": 755,
+      "mean_cfs": 3783.93,
+      "n_obs": 768,
       "expect_high_flow": false,
       "site_id": "03072655"
     }

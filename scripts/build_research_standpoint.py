@@ -1089,7 +1089,12 @@ def main() -> int:
             },
             {
                 "id": "NW-DATED",
-                "what": "Iron dated-window playbook (09-01 scored hold 20 / kill 4; remaining awaiting are missing catalogs). Next issue uses corrected hydro IDs. Laws of the valve, not USGS replacement.",
+                "what": (
+                    "Dated windows: public scoreboard hold 65 / kill 45 / awaiting 4 "
+                    "(missing NDBC 45144/45145/46208/62146). 2026-09-09 issue uses "
+                    "corrected hydro IDs (06934500 Hermann). Honchō/Kermadec loading "
+                    "misses stay honest. Score after valid_to."
+                ),
                 "not": "Rewriting issued JSON. Clock-time hypocenter.",
             },
             {

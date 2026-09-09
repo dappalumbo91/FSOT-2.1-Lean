@@ -1,12 +1,12 @@
 # Kill autopsy — dated fluid windows
 
-*Generated 2026-09-08T00:07:02.818754+00:00 · pin D1D38A · **39 kills***
+*Generated 2026-09-09T18:54:47.491546+00:00 · pin D1D38A · **45 kills***
 
 Issued JSON is frozen. Public scoreboard of those files stays these kills.
 This explains **why** each kill fired. Playbook retro of the first 12:
 [`RULE_RETRO.md`](RULE_RETRO.md).
 
-## earthquake (28)
+## earthquake (30)
 
 | ID | Issued | Gap |
 |----|--------|-----|
@@ -38,6 +38,8 @@ This explains **why** each kill fired. Playbook retro of the first 12:
 | `FCAST-EQ-20260831T2357-06` | released · 145 km N of Caluula, Somalia | no M>=4 in kernel |
 | `FCAST-EQ-20260831T2357-07` | steady · 4 km N of Toride, Japan | no M>=4 in kernel |
 | `FCAST-EQ-20260831T2357-08` | loading_suction · Kermadec Islands, New Zealand | no M>=4 in kernel |
+| `FCAST-EQ-20260901T0032-05` | loading_suction · 32 km SSW of Honchō, Japan | no M>=4 in kernel |
+| `FCAST-EQ-20260901T0032-08` | loading_suction · Kermadec Islands, New Zealand | no M>=4 in kernel |
 
 ## weather (5)
 
@@ -56,14 +58,23 @@ This explains **why** each kill fired. Playbook retro of the first 12:
 | `FCAST-TIDE-20260825T0121-01` | surge · NOAA San Francisco (9414290) | issued surge; snapshot 0.157 m vs POOF 0.1535; 48h max 0.145 m (short by 0.0085 m) |
 | `FCAST-TIDE-20260901T0032-04` | harmonic · NOAA Boston (8443970) | issued harmonic; snapshot 0.033 m << POOF 0.1535; 48h max 0.266 m crossed the bar |
 
-## hydrology (4)
+## hydrology (5)
 
 | ID | Issued | Gap |
 |----|--------|-----|
 | `FCAST-HYDRO-20260825T0222-01` | steady · USGS 01646500 Potomac River near Washington DC | issued quiet flow on 01646500; recent=3144.24 prior=2858.29 window_mean=3464.93 cfs |
 | `FCAST-HYDRO-20260825T0222-05` | loading_suction · USGS 06803510 Missouri River at Hermann MO | issued high flow on 06803510; recent=107.34 prior=9.2 window_mean=2.21 cfs |
 | `FCAST-HYDRO-20260825T0222-08` | loading_suction · USGS 03072655 Monongahela River near Masontown PA | issued high flow on 03072655; recent=23032.01 prior=13920.26 window_mean=3052.06 cfs |
-| `FCAST-HYDRO-20260831T2357-01` | loading_suction · USGS 01646500 Potomac River near Washington DC | issued high flow on 01646500; recent=3654.75 prior=3144.02 window_mean=2295.39 cfs |
+| `FCAST-HYDRO-20260831T2357-01` | loading_suction · USGS 01646500 Potomac River near Washington DC | issued high flow on 01646500; recent=3654.75 prior=3144.02 window_mean=2287.79 cfs |
+| `FCAST-HYDRO-20260901T0032-01` | loading_suction · USGS 01646500 Potomac River near Washington DC | issued high flow on 01646500; recent=3649.57 prior=3144.22 window_mean=2162.86 cfs |
+
+## volcanic (3)
+
+| ID | Issued | Gap |
+|----|--------|-----|
+| `FCAST-VOLC-20260825-01` | harmonic · None | unhandled |
+| `FCAST-VOLC-20260825T0121-01` | harmonic · None | unhandled |
+| `FCAST-VOLC-20260825T0222-01` | harmonic · None | unhandled |
 
 ## Solve (next issues only)
 

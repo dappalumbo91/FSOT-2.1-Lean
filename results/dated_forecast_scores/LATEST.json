@@ -1,8 +1,8 @@
 {
-  "scored_at": "2026-09-08T00:43:16.377729+00:00",
+  "scored_at": "2026-09-09T18:53:44.978190+00:00",
   "issues": [
     {
-      "scored_at": "2026-09-08T00:43:16.377729+00:00",
+      "scored_at": "2026-09-09T18:53:44.978190+00:00",
       "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25_issue.json",
       "rows": [
         {
@@ -112,8 +112,9 @@
         },
         {
           "id": "FCAST-SOL-20260825-01",
-          "result": "awaiting",
-          "notes": "no SWPC Kp in window"
+          "result": "hold",
+          "kp_max": 1.0,
+          "expect_kp_ge_5": false
         },
         {
           "id": "FCAST-VOLC-20260825-01",
@@ -123,12 +124,12 @@
           "expect_event": true
         }
       ],
-      "n_hold": 6,
+      "n_hold": 7,
       "n_kill": 8,
-      "n_awaiting": 1
+      "n_awaiting": 0
     },
     {
-      "scored_at": "2026-09-08T00:43:16.377729+00:00",
+      "scored_at": "2026-09-09T18:53:44.978190+00:00",
       "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25T012157_issue.json",
       "rows": [
         {
@@ -223,7 +224,7 @@
         {
           "id": "FCAST-WX-20260825T0121-04",
           "result": "awaiting",
-          "notes": "no NDBC realtime in window for 45144"
+          "notes": "no NDBC realtime/stdmet in window for 45144"
         },
         {
           "id": "FCAST-WX-20260825T0121-05",
@@ -243,13 +244,16 @@
         },
         {
           "id": "FCAST-SOL-20260825T0121-01",
-          "result": "awaiting",
-          "notes": "no SWPC Kp in window"
+          "result": "hold",
+          "kp_max": 1.0,
+          "expect_kp_ge_5": false
         },
         {
           "id": "FCAST-VOLC-20260825T0121-01",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
         },
         {
           "id": "FCAST-TIDE-20260825T0121-01",
@@ -288,12 +292,12 @@
           "window_clipped": true
         }
       ],
-      "n_hold": 7,
-      "n_kill": 10,
-      "n_awaiting": 3
+      "n_hold": 8,
+      "n_kill": 11,
+      "n_awaiting": 1
     },
     {
-      "scored_at": "2026-09-08T00:43:16.377729+00:00",
+      "scored_at": "2026-09-09T18:53:44.978190+00:00",
       "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25T022247_issue.json",
       "rows": [
         {
@@ -372,7 +376,7 @@
         {
           "id": "FCAST-WX-20260825T0222-02",
           "result": "awaiting",
-          "notes": "no NDBC realtime in window for 46208"
+          "notes": "no NDBC realtime/stdmet in window for 46208"
         },
         {
           "id": "FCAST-WX-20260825T0222-03",
@@ -385,7 +389,7 @@
         {
           "id": "FCAST-WX-20260825T0222-04",
           "result": "awaiting",
-          "notes": "no NDBC realtime in window for 45145"
+          "notes": "no NDBC realtime/stdmet in window for 45145"
         },
         {
           "id": "FCAST-WX-20260825T0222-05",
@@ -405,13 +409,16 @@
         },
         {
           "id": "FCAST-SOL-20260825T0222-01",
-          "result": "awaiting",
-          "notes": "no SWPC Kp in window"
+          "result": "hold",
+          "kp_max": 1.0,
+          "expect_kp_ge_5": false
         },
         {
           "id": "FCAST-VOLC-20260825T0222-01",
-          "result": "awaiting",
-          "notes": "window still open"
+          "result": "kill",
+          "n_hits": 0,
+          "hits": [],
+          "expect_event": true
         },
         {
           "id": "FCAST-TIDE-20260825T0222-01",
@@ -514,12 +521,12 @@
           "site_id": "03072655"
         }
       ],
-      "n_hold": 12,
-      "n_kill": 12,
-      "n_awaiting": 4
+      "n_hold": 13,
+      "n_kill": 13,
+      "n_awaiting": 2
     },
     {
-      "scored_at": "2026-09-08T00:43:16.377729+00:00",
+      "scored_at": "2026-09-09T18:53:44.978190+00:00",
       "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-31_issue.json",
       "rows": [
         {
@@ -553,10 +560,10 @@
             {
               "id": "us7000tder",
               "mag": 4.9,
-              "place": "56 km NNE of Ruteng, Indonesia",
-              "lat": -8.1698,
-              "lon": 120.716,
-              "km": 20.882309748998953
+              "place": "50 km NNE of Ruteng, Indonesia",
+              "lat": -8.1981,
+              "lon": 120.6653,
+              "km": 14.495512377909026
             },
             {
               "id": "us7000td2z",
@@ -654,7 +661,7 @@
         {
           "id": "FCAST-SOL-20260831T2357-01",
           "result": "hold",
-          "kp_max": 2.67,
+          "kp_max": 2.33,
           "expect_kp_ge_5": false
         },
         {
@@ -696,32 +703,32 @@
         {
           "id": "FCAST-HYDRO-20260831T2357-01",
           "result": "kill",
-          "mean_cfs": 2295.39,
-          "n_obs": 2255,
+          "mean_cfs": 2287.79,
+          "n_obs": 2304,
           "expect_high_flow": true,
           "site_id": "01646500"
         },
         {
           "id": "FCAST-HYDRO-20260831T2357-02",
           "result": "hold",
-          "mean_cfs": 31222.47,
-          "n_obs": 1126,
+          "mean_cfs": 31268.92,
+          "n_obs": 1152,
           "expect_high_flow": false,
           "site_id": "05420500"
         },
         {
           "id": "FCAST-HYDRO-20260831T2357-03",
           "result": "hold",
-          "mean_cfs": 30.89,
-          "n_obs": 748,
+          "mean_cfs": 30.86,
+          "n_obs": 768,
           "expect_high_flow": false,
           "site_id": "08013000"
         },
         {
           "id": "FCAST-HYDRO-20260831T2357-04",
           "result": "hold",
-          "mean_cfs": 7748.11,
-          "n_obs": 742,
+          "mean_cfs": 7742.96,
+          "n_obs": 768,
           "expect_high_flow": false,
           "site_id": "09402500"
         },
@@ -729,31 +736,31 @@
           "id": "FCAST-HYDRO-20260831T2357-05",
           "result": "hold",
           "mean_cfs": 1.35,
-          "n_obs": 2242,
+          "n_obs": 2304,
           "expect_high_flow": false,
           "site_id": "06803510"
         },
         {
           "id": "FCAST-HYDRO-20260831T2357-06",
           "result": "hold",
-          "mean_cfs": 199467.73,
-          "n_obs": 954,
+          "mean_cfs": 199431.5,
+          "n_obs": 953,
           "expect_high_flow": false,
           "site_id": "14246900"
         },
         {
           "id": "FCAST-HYDRO-20260831T2357-07",
           "result": "hold",
-          "mean_cfs": 272.81,
-          "n_obs": 745,
+          "mean_cfs": 282.54,
+          "n_obs": 762,
           "expect_high_flow": true,
           "site_id": "023177483"
         },
         {
           "id": "FCAST-HYDRO-20260831T2357-08",
           "result": "hold",
-          "mean_cfs": 3756.9,
-          "n_obs": 755,
+          "mean_cfs": 3783.93,
+          "n_obs": 768,
           "expect_high_flow": false,
           "site_id": "03072655"
         }
@@ -763,7 +770,7 @@
       "n_awaiting": 0
     },
     {
-      "scored_at": "2026-09-08T00:43:16.377729+00:00",
+      "scored_at": "2026-09-09T18:53:44.978190+00:00",
       "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-09-01_issue.json",
       "rows": [
         {
@@ -797,10 +804,10 @@
             {
               "id": "us7000tder",
               "mag": 4.9,
-              "place": "56 km NNE of Ruteng, Indonesia",
-              "lat": -8.1698,
-              "lon": 120.716,
-              "km": 20.509383270800807
+              "place": "50 km NNE of Ruteng, Indonesia",
+              "lat": -8.1981,
+              "lon": 120.6653,
+              "km": 14.127445505334704
             }
           ],
           "expect_event": true
@@ -882,7 +889,7 @@
         {
           "id": "FCAST-WX-20260901T0032-05",
           "result": "awaiting",
-          "notes": "no NDBC realtime in window for 62146"
+          "notes": "no NDBC realtime/stdmet in window for 62146"
         },
         {
           "id": "FCAST-TIDE-20260901T0032-01",
@@ -923,32 +930,32 @@
         {
           "id": "FCAST-HYDRO-20260901T0032-01",
           "result": "kill",
-          "mean_cfs": 2205.09,
-          "n_obs": 1967,
+          "mean_cfs": 2162.86,
+          "n_obs": 2304,
           "expect_high_flow": true,
           "site_id": "01646500"
         },
         {
           "id": "FCAST-HYDRO-20260901T0032-02",
           "result": "hold",
-          "mean_cfs": 31146.54,
-          "n_obs": 982,
+          "mean_cfs": 31179.34,
+          "n_obs": 1152,
           "expect_high_flow": false,
           "site_id": "05420500"
         },
         {
           "id": "FCAST-HYDRO-20260901T0032-03",
           "result": "hold",
-          "mean_cfs": 30.62,
-          "n_obs": 652,
+          "mean_cfs": 30.46,
+          "n_obs": 768,
           "expect_high_flow": false,
           "site_id": "08013000"
         },
         {
           "id": "FCAST-HYDRO-20260901T0032-04",
           "result": "hold",
-          "mean_cfs": 7767.0,
-          "n_obs": 646,
+          "mean_cfs": 7699.26,
+          "n_obs": 768,
           "expect_high_flow": false,
           "site_id": "09402500"
         },
@@ -956,31 +963,31 @@
           "id": "FCAST-HYDRO-20260901T0032-05",
           "result": "hold",
           "mean_cfs": 1.29,
-          "n_obs": 1954,
+          "n_obs": 2304,
           "expect_high_flow": false,
           "site_id": "06803510"
         },
         {
           "id": "FCAST-HYDRO-20260901T0032-06",
           "result": "hold",
-          "mean_cfs": 196919.48,
-          "n_obs": 770,
+          "mean_cfs": 196871.26,
+          "n_obs": 769,
           "expect_high_flow": false,
           "site_id": "14246900"
         },
         {
           "id": "FCAST-HYDRO-20260901T0032-07",
           "result": "hold",
-          "mean_cfs": 271.29,
-          "n_obs": 649,
+          "mean_cfs": 329.46,
+          "n_obs": 762,
           "expect_high_flow": true,
           "site_id": "023177483"
         },
         {
           "id": "FCAST-HYDRO-20260901T0032-08",
           "result": "hold",
-          "mean_cfs": 3967.66,
-          "n_obs": 659,
+          "mean_cfs": 4244.13,
+          "n_obs": 768,
           "expect_high_flow": false,
           "site_id": "03072655"
         }

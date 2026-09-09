@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-08T00:07:02.818754+00:00",
+  "generated_at": "2026-09-09T18:54:47.491546+00:00",
   "pin": "D1D38A",
-  "n_kills": 39,
+  "n_kills": 45,
   "policy": "do_not_rewrite_issued_json",
   "autopsies": [
     {
@@ -135,9 +135,9 @@
       "nearest_m45_150km": {
         "id": "us7000tcef",
         "mag": 4.8,
-        "place": "63 km NE of Kuji, Japan",
-        "km": 142.8,
-        "time": 1787860481264
+        "place": "69 km NE of Kuji, Japan",
+        "km": 139.3,
+        "time": 1787860480587
       },
       "gap": "kernel max M=4.5 at 28.9 km (need M>=5.0)",
       "score_file": "2026-08-25_score.json"
@@ -159,6 +159,12 @@
       "biggest_in_kernel": null,
       "nearest_m45_150km": null,
       "gap": "no M>=4 in kernel",
+      "score_file": "2026-08-25_score.json"
+    },
+    {
+      "kind": "volcanic",
+      "id": "FCAST-VOLC-20260825-01",
+      "gap": "unhandled",
       "score_file": "2026-08-25_score.json"
     },
     {
@@ -292,9 +298,9 @@
       "nearest_m45_150km": {
         "id": "us7000tcef",
         "mag": 4.8,
-        "place": "63 km NE of Kuji, Japan",
-        "km": 142.8,
-        "time": 1787860481264
+        "place": "69 km NE of Kuji, Japan",
+        "km": 139.3,
+        "time": 1787860480587
       },
       "gap": "kernel max M=4.5 at 28.9 km (need M>=5.0)",
       "score_file": "2026-08-25T012157_score.json"
@@ -356,6 +362,12 @@
         "pres_n": 282
       },
       "gap": "issued quiet at pres=1010.4 gst=12.0; window min_pres=1008.4 max_gst=15.0",
+      "score_file": "2026-08-25T012157_score.json"
+    },
+    {
+      "kind": "volcanic",
+      "id": "FCAST-VOLC-20260825T0121-01",
+      "gap": "unhandled",
       "score_file": "2026-08-25T012157_score.json"
     },
     {
@@ -501,9 +513,9 @@
       "nearest_m45_150km": {
         "id": "us7000tcef",
         "mag": 4.8,
-        "place": "63 km NE of Kuji, Japan",
-        "km": 142.8,
-        "time": 1787860481264
+        "place": "69 km NE of Kuji, Japan",
+        "km": 139.3,
+        "time": 1787860480587
       },
       "gap": "kernel max M=4.5 at 28.9 km (need M>=5.0)",
       "score_file": "2026-08-25T022247_score.json"
@@ -565,6 +577,12 @@
         "pres_n": 282
       },
       "gap": "issued quiet at pres=1011.2 gst=11.0; window min_pres=1008.4 max_gst=15.0",
+      "score_file": "2026-08-25T022247_score.json"
+    },
+    {
+      "kind": "volcanic",
+      "id": "FCAST-VOLC-20260825T0222-01",
+      "gap": "unhandled",
       "score_file": "2026-08-25T022247_score.json"
     },
     {
@@ -790,9 +808,59 @@
       "q_recent_cfs": 3654.75,
       "q_prior_cfs": 3144.02,
       "load_ratio": 1.1624,
-      "mean_cfs": 2295.39,
-      "gap": "issued high flow on 01646500; recent=3654.75 prior=3144.02 window_mean=2295.39 cfs",
+      "mean_cfs": 2287.79,
+      "gap": "issued high flow on 01646500; recent=3654.75 prior=3144.02 window_mean=2287.79 cfs",
       "score_file": "2026-08-31_score.json"
+    },
+    {
+      "kind": "earthquake",
+      "id": "FCAST-EQ-20260901T0032-05",
+      "place": "32 km SSW of Honch\u014d, Japan",
+      "valve": "loading_suction",
+      "expect_event": true,
+      "mag_min": 4.5,
+      "n_recent": 3,
+      "max_mag_recent": 6.0,
+      "pressure": 36.431,
+      "usgs_error": null,
+      "n_m4_in_kernel": 0,
+      "n_m45_in_kernel": 0,
+      "n_m5_in_kernel": 0,
+      "biggest_in_kernel": null,
+      "nearest_m45_150km": {
+        "id": "us7000temw",
+        "mag": 4.9,
+        "place": "118 km ENE of Kuji, Japan",
+        "km": 127.2,
+        "time": 1788671745801
+      },
+      "gap": "no M>=4 in kernel",
+      "score_file": "2026-09-01_score.json"
+    },
+    {
+      "kind": "earthquake",
+      "id": "FCAST-EQ-20260901T0032-08",
+      "place": "Kermadec Islands, New Zealand",
+      "valve": "loading_suction",
+      "expect_event": true,
+      "mag_min": 4.5,
+      "n_recent": 1,
+      "max_mag_recent": 5.8,
+      "pressure": 24.6443,
+      "usgs_error": null,
+      "n_m4_in_kernel": 0,
+      "n_m45_in_kernel": 0,
+      "n_m5_in_kernel": 0,
+      "biggest_in_kernel": null,
+      "nearest_m45_150km": {
+        "id": "us7000tegg",
+        "mag": 4.8,
+        "place": "Kermadec Islands, New Zealand",
+        "km": 72.2,
+        "time": 1788572461465
+      },
+      "gap": "no M>=4 in kernel",
+      "score_file": "2026-09-01_score.json"
     },
     {
       "kind": "tide",
@@ -804,6 +872,20 @@
       "threshold_m": 0.1535,
       "delta_m": -0.233,
       "gap": "issued harmonic; snapshot 0.033 m << POOF 0.1535; 48h max 0.266 m crossed the bar",
+      "score_file": "2026-09-01_score.json"
+    },
+    {
+      "kind": "hydrology",
+      "id": "FCAST-HYDRO-20260901T0032-01",
+      "place": "USGS 01646500 Potomac River near Washington DC",
+      "site_id": "01646500",
+      "valve": "loading_suction",
+      "expect_high_flow": true,
+      "q_recent_cfs": 3649.57,
+      "q_prior_cfs": 3144.22,
+      "load_ratio": 1.1607,
+      "mean_cfs": 2162.86,
+      "gap": "issued high flow on 01646500; recent=3649.57 prior=3144.22 window_mean=2162.86 cfs",
       "score_file": "2026-09-01_score.json"
     }
   ],

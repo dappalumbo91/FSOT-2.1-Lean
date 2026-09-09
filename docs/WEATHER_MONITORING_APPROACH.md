@@ -55,6 +55,7 @@ Playbook after the 12-kill autopsy (encoded for **new** issues, not rewrites):
 - Weather quiet: only if pres≥1010 hPa **and** gst<8 m/s; skip basin `other`.
 - Tide surge: issue only if residual ≥ POOF·(1+POOF); score still vs POOF.
 - Retrospective of the 12 frozen kills: [`../results/dated_forecast_scores/RULE_RETRO.md`](../results/dated_forecast_scores/RULE_RETRO.md). Public scoreboard of issued files stays those kills.
+- **2026-09-01 playbook issue** already used the refined EQ rule. Two ocean loading cells (Honchō, Kermadec) stayed quiet inside 39 km — honest kills, same grammar as Scotia Sea. Do not retune kernel km.
 
 ---
 

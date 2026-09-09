@@ -42,6 +42,7 @@ Prove, from the continuum non-abelian Yang–Mills **path integral**, that:
 
 That is a **measure + spectrum** problem in constructive / continuum QFT.  
 Lattice evidence is strong; continuum **theorem** is not closed in the classical literature.
+**Status: OPEN_NOT_CLAIMED.** Executable probes are not a path-integral uniqueness proof. Euclid DR1 (~12 Nov 2026) is a watch, not a uniqueness drop.
 
 ### Probe layer already shipped in this repo (not the theorem)
 

@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-09-08T00:43:16.377729+00:00",
+  "scored_at": "2026-09-09T18:53:44.978190+00:00",
   "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25T012157_issue.json",
   "rows": [
     {
@@ -94,7 +94,7 @@
     {
       "id": "FCAST-WX-20260825T0121-04",
       "result": "awaiting",
-      "notes": "no NDBC realtime in window for 45144"
+      "notes": "no NDBC realtime/stdmet in window for 45144"
     },
     {
       "id": "FCAST-WX-20260825T0121-05",
@@ -114,13 +114,16 @@
     },
     {
       "id": "FCAST-SOL-20260825T0121-01",
-      "result": "awaiting",
-      "notes": "no SWPC Kp in window"
+      "result": "hold",
+      "kp_max": 1.0,
+      "expect_kp_ge_5": false
     },
     {
       "id": "FCAST-VOLC-20260825T0121-01",
-      "result": "awaiting",
-      "notes": "window still open"
+      "result": "kill",
+      "n_hits": 0,
+      "hits": [],
+      "expect_event": true
     },
     {
       "id": "FCAST-TIDE-20260825T0121-01",
@@ -159,7 +162,7 @@
       "window_clipped": true
     }
   ],
-  "n_hold": 7,
-  "n_kill": 10,
-  "n_awaiting": 3
+  "n_hold": 8,
+  "n_kill": 11,
+  "n_awaiting": 1
 }

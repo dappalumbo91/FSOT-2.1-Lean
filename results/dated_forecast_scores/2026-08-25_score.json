@@ -1,5 +1,5 @@
 {
-  "scored_at": "2026-09-08T00:43:16.377729+00:00",
+  "scored_at": "2026-09-09T18:53:44.978190+00:00",
   "issue": "C:/Users/damia/Desktop/FSOT-2.1-Lean/predictions/dated_forecasts/2026-08-25_issue.json",
   "rows": [
     {
@@ -109,8 +109,9 @@
     },
     {
       "id": "FCAST-SOL-20260825-01",
-      "result": "awaiting",
-      "notes": "no SWPC Kp in window"
+      "result": "hold",
+      "kp_max": 1.0,
+      "expect_kp_ge_5": false
     },
     {
       "id": "FCAST-VOLC-20260825-01",
@@ -120,7 +121,7 @@
       "expect_event": true
     }
   ],
-  "n_hold": 6,
+  "n_hold": 7,
   "n_kill": 8,
-  "n_awaiting": 1
+  "n_awaiting": 0
 }

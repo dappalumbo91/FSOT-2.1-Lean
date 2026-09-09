@@ -27,13 +27,26 @@ USGS = "https://earthquake.usgs.gov/fdsnws/event/1/query"
 SWPC_KP_1M = "https://services.swpc.noaa.gov/json/planetary_k_index_1m.json"
 SWPC_KP_OBS = "https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json"
 SWPC_KP_FCST = "https://services.swpc.noaa.gov/products/noaa-planetary-k-index-forecast.json"
+GFZ_KP = "https://kp.gfz.de/app/json/"
 NDBC_RT = "https://www.ndbc.noaa.gov/data/realtime2"
+NDBC_STDMET = "https://www.ndbc.noaa.gov/data/stdmet"
 COOPS = "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter"
+
+
+def _ssl_ctx():
+    try:
+        import certifi
+        import ssl
+
+        return ssl.create_default_context(cafile=certifi.where())
+    except Exception:
+        return None
 
 
 def _get(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": "FSOT-2.1-Lean/earth-fluid-score"})
-    with urllib.request.urlopen(req, timeout=60) as resp:
+    ctx = _ssl_ctx()
+    with urllib.request.urlopen(req, timeout=60, context=ctx) as resp:
         return resp.read()
 
 
@@ -132,6 +145,74 @@ def _swpc_kp_max(start_iso: str, end_iso: str) -> float | None:
         mx = _kp_from_rows(rows, lo, hi)
         if mx is not None:
             return mx
+    mx = _gfz_kp_max(lo, hi)
+    if mx is not None:
+        return mx
+    return _gfz_nowcast_kp_max(lo, hi)
+
+
+def _gfz_nowcast_kp_max(lo: datetime, hi: datetime) -> float | None:
+    """GFZ 30-day nowcast ASCII (one line per 3-hour Kp)."""
+    urls = (
+        "https://kp.gfz.de/app/files/Kp_ap_nowcast.txt",
+        "https://kp.gfz-potsdam.de/app/files/Kp_ap_nowcast.txt",
+    )
+    text = ""
+    for url in urls:
+        try:
+            text = _get(url).decode("utf-8", errors="replace")
+            break
+        except Exception:
+            continue
+    if not text:
+        return None
+    mx = None
+    for line in text.splitlines():
+        if not line.strip() or line.startswith("#"):
+            continue
+        parts = line.split()
+        if len(parts) < 8:
+            continue
+        try:
+            t = datetime(
+                int(parts[0]), int(parts[1]), int(parts[2]),
+                int(float(parts[3])), tzinfo=timezone.utc,
+            )
+            v = float(parts[7])
+        except (TypeError, ValueError, IndexError):
+            continue
+        if v < 0 or t < lo or t > hi:
+            continue
+        mx = v if mx is None else max(mx, v)
+    return mx
+
+
+def _gfz_kp_max(lo: datetime, hi: datetime) -> float | None:
+    """GFZ Potsdam Kp archive — SWPC 1-minute rolls off closed windows."""
+    url = (
+        f"{GFZ_KP}?start={lo.strftime('%Y-%m-%dT%H:%M:%SZ')}"
+        f"&end={hi.strftime('%Y-%m-%dT%H:%M:%SZ')}&index=Kp"
+    )
+    try:
+        raw = json.loads(_get(url).decode("utf-8"))
+    except Exception:
+        return None
+    mx = None
+    if isinstance(raw, dict) and isinstance(raw.get("datetime"), list):
+        times = raw.get("datetime") or []
+        vals = raw.get("Kp") or raw.get("kp") or []
+        for tag, val in zip(times, vals):
+            t = _parse_kp_time(str(tag))
+            if t is None or t < lo or t > hi:
+                continue
+            try:
+                v = float(val)
+            except (TypeError, ValueError):
+                continue
+            mx = v if mx is None else max(mx, v)
+        return mx
+    if isinstance(raw, list):
+        return _kp_from_rows(raw, lo, hi)
     return None
 
 
@@ -221,13 +302,34 @@ def _score_weather(fc: dict) -> dict:
         start = start.replace(tzinfo=timezone.utc)
     if end.tzinfo is None:
         end = end.replace(tzinfo=timezone.utc)
+    rows: list[dict] = []
+    notes = ""
     try:
         text = _get(f"{NDBC_RT}/{bid}.txt").decode("utf-8", errors="replace")
+        rows = _parse_ndbc_realtime(text, start, end)
     except Exception as exc:
-        return {"id": fc["id"], "result": "awaiting", "notes": f"ndbc {bid}: {exc}"}
-    rows = _parse_ndbc_realtime(text, start, end)
+        notes = f"ndbc {bid}: {exc}"
     if not rows:
-        return {"id": fc["id"], "result": "awaiting", "notes": f"no NDBC realtime in window for {bid}"}
+        # stdmet monthly files keep a longer archive than realtime2.
+        month = start.strftime("%b")
+        for url in (
+            f"{NDBC_STDMET}/{month}/{bid}.txt",
+            f"{NDBC_STDMET}/{month}/{bid.lower()}.txt",
+        ):
+            try:
+                text = _get(url).decode("utf-8", errors="replace")
+            except Exception:
+                continue
+            extra = _parse_ndbc_realtime(text, start, end)
+            if extra:
+                rows = extra
+                break
+    if not rows:
+        return {
+            "id": fc["id"],
+            "result": "awaiting",
+            "notes": notes or f"no NDBC realtime/stdmet in window for {bid}",
+        }
     saw_storm = any(
         (r.get("pres") is not None and r["pres"] < 1010.0)
         or (r.get("gst") is not None and r["gst"] >= 8.0)
@@ -376,11 +478,29 @@ def main() -> int:
     summary = []
     for path in issues:
         doc = json.loads(path.read_text(encoding="utf-8"))
+        prev_path = OUT_DIR / path.name.replace("_issue", "_score")
+        prev_by_id: dict[str, dict] = {}
+        if prev_path.is_file():
+            try:
+                for r in json.loads(prev_path.read_text(encoding="utf-8")).get("rows") or []:
+                    if r.get("id") and r.get("result") in {"hold", "kill"}:
+                        prev_by_id[str(r["id"])] = r
+            except Exception:
+                prev_by_id = {}
         rows = []
         for fc in doc.get("forecasts") or []:
             sc = _score_one(fc, now)
             if sc is None:
                 continue
+            # Catalogs roll off. A prior hold/kill is the public scoreboard;
+            # do not regress it to awaiting on a missing fetch.
+            prev = prev_by_id.get(str(sc.get("id") or ""))
+            if prev and sc.get("result") == "awaiting":
+                sc = dict(prev)
+                sc["notes"] = (
+                    str(sc.get("notes") or "")
+                    + " kept prior hold/kill; later catalog fetch empty"
+                ).strip()
             rows.append(sc)
             if sc.get("result") in {"hold", "kill"}:
                 append_outcome(

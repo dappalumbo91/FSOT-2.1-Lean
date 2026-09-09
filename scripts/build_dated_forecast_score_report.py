@@ -101,6 +101,45 @@ def main() -> int:
         "Tide hours are clipped to `valid_from`–`valid_to` (not the whole end calendar day).",
         "Quiet-weather kills use the issued kill_if (pres<1005 or gust≥12). Do not rewrite issues.",
         "New issues skip the 1000–1005 hPa / 12–15 m/s gap (doomed quiet) and skip lake `other` buoys.",
+        "Hydro IDs on **new** issues use the 2026-09-07 NWIS map "
+        "(`06934500` Missouri at Hermann). Issued JSON keeps the old IDs.",
+        "",
+        "## Remaining awaiting (missing catalogs, not a retune)",
+        "",
+        "These cells closed but the public archive was empty in-window. "
+        "Do not rewrite the issue. Do not invent a residual.",
+        "",
+        "| ID | Catalog | Why still awaiting |",
+        "|----|---------|--------------------|",
+    ]
+    awaiting_rows = []
+    for path in score_files:
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        for r in doc.get("rows") or []:
+            if r.get("result") != "awaiting":
+                continue
+            awaiting_rows.append(r)
+    if not awaiting_rows:
+        lines.append("| *(none)* | | |")
+    else:
+        for r in awaiting_rows:
+            lines.append(
+                f"| `{r.get('id')}` | {_kind_of(str(r.get('id') or ''), issues)} | {r.get('notes') or 'catalog empty'} |"
+            )
+    lines += [
+        "",
+        "## 2026-09-01 playbook — honest loading misses (not a kernel retune)",
+        "",
+        "The 09-01 issue already used `expect_event` only on loading/post-POOF. "
+        "Two ocean loading cells stayed quiet inside 39 km. Same grammar as Scotia Sea.",
+        "",
+        "| ID | Place | Valve | Result |",
+        "|----|-------|-------|--------|",
+        "| `FCAST-EQ-20260901T0032-05` | 32 km SSW of Honchō, Japan | loading · M≥4.5 | **kill** (no M≥4.5 in kernel) |",
+        "| `FCAST-EQ-20260901T0032-08` | Kermadec Islands, New Zealand | loading · M≥4.5 | **kill** (no M≥4.5 in kernel) |",
+        "| `FCAST-HYDRO-20260901T0032-01` | Potomac `01646500` (correct ID) | loading | **kill** (window mean dropped) |",
+        "",
+        "Do not retune kernel km, POOF, or ρ to swallow ocean-catalog sparse cells.",
         "",
     ]
     OUT_MD.write_text("\n".join(lines), encoding="utf-8")
