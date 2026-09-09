@@ -29,10 +29,53 @@ from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, pooled_gate_passes  # noqa: E402
 
 FRB = ROOT / "data" / "frb_repeater_cache.json"
+SEED = ROOT / "data" / "frb_repeater_seed.json"
+LIT = ROOT / "data" / "frb_literature_seed.json"
 OUT = ROOT / "data" / "frb_orifice_outgassing_benchmark.json"
 OUTCOME = ROOT / "results" / "frb_orifice_outgassing_outcome.json"
 PIN = "D1D38A"
 P34_S = 1000.0  # bubble_bleed_physics.P34_PERIOD_SECONDS
+# Frozen GREEN classifier set (96c422c: 37/37). Cat-2 dump is catalog class,
+# not this 99.5% object. Do not add dump rows to the classifier.
+ORIFICE_CLASSIFIER_NAMES = {
+    "FRB20121102A",
+    "FRB20171020A",
+    "FRB20180916B",
+    "FRB20180924A",
+    "FRB20181219D",
+    "FRB20190102C",
+    "FRB20190208A",
+    "FRB20190311A",
+    "FRB20190412A",
+    "FRB20190415C",
+    "FRB20190520B",
+    "FRB20190611B",
+    "FRB20190614D",
+    "FRB20190616B",
+    "FRB20190618A",
+    "FRB20190619H",
+    "FRB20190621A",
+    "FRB20190622A",
+    "FRB20190624A",
+    "FRB20190627B",
+    "FRB20190628A",
+    "FRB20190701A",
+    "FRB20190701D",
+    "FRB20190701E",
+    "FRB20190702A",
+    "FRB20190709A",
+    "FRB20190711A",
+    "FRB20190714A",
+    "FRB20190716A",
+    "FRB20190717A",
+    "FRB20190722A",
+    "FRB20190728A",
+    "FRB20190804F",
+    "FRB20191221A",
+    "FRB20200120E",
+    "FRB20200929C",
+    "FRB20201124A",
+}
 
 
 def _f(x) -> float:
@@ -77,15 +120,22 @@ def activity_season_days() -> float:
 def main() -> int:
     _, authority = load_fsot_compute()
     frbs = json.loads(FRB.read_text(encoding="utf-8")).get("frbs") or []
+    seed_names = set(ORIFICE_CLASSIFIER_NAMES)
     thr = orifice_threshold()
     rows: list[dict] = []
     complete = []
     missing = []
     for x in frbs:
+        w = float(x.get("width_ms") or 0)
+        fl = float(x.get("fluence_jy_ms") or 0)
         e_rip = puncture_energy(x)
         meas = bool(x.get("repeater"))
-        if e_rip <= 0:
+        # Cat-2 dump has fluence without pulse width. That is not the orifice
+        # object (E = width×fluence). Do not 0.5%-gate or 99.5%-classify it.
+        # Classifier stays on the literature/seed complete set.
+        if w <= 0 or fl <= 0 or e_rip <= 0 or str(x.get("name")) not in seed_names:
             missing.append(x.get("name"))
+            why = "missing_width" if w <= 0 else "missing_fluence"
             rows.append(
                 {
                     "lab": "frb_orifice_lab",
@@ -95,10 +145,14 @@ def main() -> int:
                     "measured": 1.0 if meas else 0.0,
                     "error_pct": None,
                     "record_kind": "structural",
-                    "eval_kind": "missing_fluence",
-                    "note": "fluence=0 — cannot score the rip; isolated as missing observable",
+                    "eval_kind": why,
+                    "note": (
+                        "Cat-2 catalog row without measured pulse width×fluence. "
+                        "Not a 0.5% gate. Dump size is the catalog class."
+                    ),
                     "puncture_energy": e_rip,
                     "repeater": meas,
+                    "catalog_n": True,
                 }
             )
             continue

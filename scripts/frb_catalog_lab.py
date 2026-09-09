@@ -255,10 +255,19 @@ def merge_catalog_rows(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 continue
             base = by_name.get(name) or {}
             merged = {**base, **row}
+            if "repeater" in base:
+                merged["repeater"] = base["repeater"]
             for key in ("ra_deg", "dm_pc", "width_ms", "fluence_jy_ms", "period_s"):
                 incoming = merged.get(key)
                 prior = base.get(key)
-                if (incoming is None or incoming == 0 or incoming == 0.0) and prior not in (None, 0, 0.0):
+                # Keep a measured seed value. Cat-2 often has fluence but no
+                # pulse width; overwriting seed fluence would mix two reductions
+                # into the orifice energy E=width×fluence.
+                if prior not in (None, 0, 0.0):
+                    if key == "fluence_jy_ms" and incoming not in (None, 0, 0.0) and incoming != prior:
+                        merged["fluence_cat2_jy_ms"] = incoming
+                    merged[key] = prior
+                elif incoming in (None, 0, 0.0) and prior not in (None, 0, 0.0):
                     merged[key] = prior
             by_name[name] = merged
     return list(by_name.values())

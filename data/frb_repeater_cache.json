@@ -1,12 +1,9 @@
 {
-  "fetched_at": "2026-09-09T20:01:49.491858+00:00",
-  "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\data\\frb_repeater_seed.json+literature+https://zenodo.org/api/records/18843430/files/data.csv/content+https://iopscience.iop.org/0067-0049/283/1/34/suppdata/apjsae3828t1_ascii.txt?doi=10.3847/1538-4365/ae3828",
+  "fetched_at": "2026-09-09T21:40:01.101549+00:00",
+  "source": "96c422c_orifice_freeze+chime_cat2_new_names_only",
   "frb_count": 3390,
   "fetch_errors": [
-    "https://www.chime-frb.ca/catalog/CHIME_FRB_catalog.csv: empty catalog",
-    "https://storage.googleapis.com/chimefrb-dev.appspot.com/catalog1/chimefrbcat1.csv: HTTP Error 403: Forbidden",
-    "https://storage.googleapis.com/chimefrb-dev.appspot.com/catalog2/chimefrbcat2.csv: HTTP Error 403: Forbidden",
-    "https://cdsarc.cds.unistra.fr/ftp/cats/J/ApJS/257/59/chimefrb.dat: empty catalog"
+    "local remerge: keep frozen 37 orifice inputs; Cat-2 adds catalog names"
   ],
   "frbs": [
     {
@@ -45,11 +42,12 @@
     {
       "name": "FRB20200929C",
       "repeater": true,
-      "dm_pc": 413.49581564930514,
+      "dm_pc": 157.0,
       "width_ms": 4.0,
-      "fluence_jy_ms": 9.493945602459254,
+      "fluence_jy_ms": 1.2,
       "period_s": 980.0,
-      "ra_deg": 44.1
+      "ra_deg": 44.1,
+      "fluence_cat2_jy_ms": 9.493945602459254
     },
     {
       "name": "FRB20191221A",
@@ -63,11 +61,12 @@
     {
       "name": "FRB20201124A",
       "repeater": true,
-      "dm_pc": 413.04649320331254,
+      "dm_pc": 413.0,
       "width_ms": 3.5,
-      "fluence_jy_ms": 6.422206561262486,
+      "fluence_jy_ms": 1.5,
       "period_s": 995.0,
-      "ra_deg": 352.3
+      "ra_deg": 352.3,
+      "fluence_cat2_jy_ms": 6.422206561262486
     },
     {
       "name": "FRB20200120E",
@@ -92,11 +91,12 @@
     {
       "name": "FRB20180924A",
       "repeater": false,
-      "dm_pc": 1116.3219072284091,
+      "dm_pc": 362.0,
       "width_ms": 0.5,
-      "fluence_jy_ms": 3.62609948314241,
+      "fluence_jy_ms": 0.05,
       "period_s": null,
-      "ra_deg": 44.1
+      "ra_deg": 44.1,
+      "fluence_cat2_jy_ms": 3.62609948314241
     },
     {
       "name": "FRB20190102C",
@@ -109,21 +109,23 @@
     },
     {
       "name": "FRB20190208A",
-      "repeater": true,
-      "dm_pc": 579.9609009053152,
+      "repeater": false,
+      "dm_pc": 524.0,
       "width_ms": 0.4,
-      "fluence_jy_ms": 3.84150135614464,
+      "fluence_jy_ms": 0.06,
       "period_s": null,
-      "ra_deg": 29.3
+      "ra_deg": 29.3,
+      "fluence_cat2_jy_ms": 3.84150135614464
     },
     {
       "name": "FRB20190412A",
       "repeater": false,
-      "dm_pc": 364.6820352508662,
+      "dm_pc": 428.0,
       "width_ms": 0.7,
-      "fluence_jy_ms": 7.0549126850524155,
+      "fluence_jy_ms": 0.09,
       "period_s": null,
-      "ra_deg": 18.2
+      "ra_deg": 18.2,
+      "fluence_cat2_jy_ms": 7.0549126850524155
     },
     {
       "name": "FRB20190520B",
@@ -164,13 +166,14 @@
     {
       "name": "FRB20190618A",
       "repeater": false,
-      "dm_pc": 228.9264837600666,
+      "dm_pc": 778.0,
       "width_ms": 0.5,
-      "fluence_jy_ms": 1.948144042716987,
+      "fluence_jy_ms": 0.06,
       "period_s": null,
       "ra_deg": 200.0,
       "dm_excess_pc": 420.0,
-      "reference": "Shannon2021"
+      "reference": "Shannon2021",
+      "fluence_cat2_jy_ms": 1.948144042716987
     },
     {
       "name": "FRB20190619H",
@@ -195,47 +198,52 @@
     {
       "name": "FRB20190622A",
       "repeater": false,
-      "dm_pc": 1122.8376075906124,
+      "dm_pc": 600.0,
       "width_ms": 0.2,
-      "fluence_jy_ms": 1.28,
+      "fluence_jy_ms": 0.02,
       "period_s": null,
-      "ra_deg": 29.3
+      "ra_deg": 29.3,
+      "fluence_cat2_jy_ms": 1.28
     },
     {
       "name": "FRB20190624A",
       "repeater": false,
-      "dm_pc": 973.796167061655,
+      "dm_pc": 450.0,
       "width_ms": 0.5,
-      "fluence_jy_ms": 2.8317423879523913,
+      "fluence_jy_ms": 0.04,
       "period_s": null,
-      "ra_deg": 36.7
+      "ra_deg": 36.7,
+      "fluence_cat2_jy_ms": 2.8317423879523913
     },
     {
       "name": "FRB20190627B",
       "repeater": false,
-      "dm_pc": 430.28944439574326,
+      "dm_pc": 327.0,
       "width_ms": 0.3,
-      "fluence_jy_ms": 11.434827537733552,
+      "fluence_jy_ms": 0.03,
       "period_s": null,
-      "ra_deg": 51.5
+      "ra_deg": 51.5,
+      "fluence_cat2_jy_ms": 11.434827537733552
     },
     {
       "name": "FRB20190628A",
       "repeater": false,
-      "dm_pc": 745.7990798057427,
+      "dm_pc": 715.0,
       "width_ms": 0.4,
-      "fluence_jy_ms": 1.133257101541598,
+      "fluence_jy_ms": 0.04,
       "period_s": null,
-      "ra_deg": 51.5
+      "ra_deg": 51.5,
+      "fluence_cat2_jy_ms": 1.133257101541598
     },
     {
       "name": "FRB20190701A",
       "repeater": false,
-      "dm_pc": 637.0883468472822,
+      "dm_pc": 507.0,
       "width_ms": 0.6,
-      "fluence_jy_ms": 1.8253576282367971,
+      "fluence_jy_ms": 0.05,
       "period_s": null,
-      "ra_deg": 21.9
+      "ra_deg": 21.9,
+      "fluence_cat2_jy_ms": 1.8253576282367971
     },
     {
       "name": "FRB20190709A",
@@ -267,11 +275,12 @@
     {
       "name": "FRB20190716A",
       "repeater": false,
-      "dm_pc": 481.7594826489026,
+      "dm_pc": 800.0,
       "width_ms": 0.4,
-      "fluence_jy_ms": 1.4184689144327394,
+      "fluence_jy_ms": 0.04,
       "period_s": null,
-      "ra_deg": 44.1
+      "ra_deg": 44.1,
+      "fluence_cat2_jy_ms": 1.4184689144327394
     },
     {
       "name": "FRB20190717A",
@@ -285,20 +294,22 @@
     {
       "name": "FRB20190722A",
       "repeater": false,
-      "dm_pc": 251.45874685496358,
+      "dm_pc": 380.0,
       "width_ms": 0.3,
-      "fluence_jy_ms": 2.6573611141949143,
+      "fluence_jy_ms": 0.03,
       "period_s": null,
-      "ra_deg": 33.0
+      "ra_deg": 33.0,
+      "fluence_cat2_jy_ms": 2.6573611141949143
     },
     {
       "name": "FRB20190728A",
       "repeater": false,
-      "dm_pc": 384.7607615273796,
+      "dm_pc": 650.0,
       "width_ms": 0.5,
-      "fluence_jy_ms": 1.1042057288548965,
+      "fluence_jy_ms": 0.05,
       "period_s": null,
-      "ra_deg": 55.2
+      "ra_deg": 55.2,
+      "fluence_cat2_jy_ms": 1.1042057288548965
     },
     {
       "name": "FRB20190804F",
@@ -314,18 +325,19 @@
       "repeater": false,
       "ra_deg": 112.0,
       "dm_pc": 933.37,
-      "width_ms": 2.1,
-      "fluence_jy_ms": 8.255296862022265,
+      "width_ms": 1.0,
+      "fluence_jy_ms": 0.1,
       "period_s": null,
       "dm_excess_pc": 520.0,
-      "reference": "ApJS2026_cat2"
+      "reference": "ApJS2026_cat2",
+      "fluence_cat2_jy_ms": 3.0
     },
     {
       "name": "FRB20190702A",
       "repeater": true,
       "ra_deg": 188.0,
       "dm_pc": 195.5,
-      "width_ms": 1.8,
+      "width_ms": 1.0,
       "fluence_jy_ms": 31.7,
       "period_s": null,
       "dm_excess_pc": 45.0,
@@ -335,12 +347,13 @@
       "name": "FRB20190415C",
       "repeater": false,
       "ra_deg": 150.0,
-      "dm_pc": 650.182,
+      "dm_pc": 900.0,
       "width_ms": 0.6,
-      "fluence_jy_ms": 0.77,
+      "fluence_jy_ms": 0.08,
       "period_s": null,
       "dm_excess_pc": 490.0,
-      "reference": "Shannon2021"
+      "reference": "Shannon2021",
+      "fluence_cat2_jy_ms": 0.77
     },
     {
       "name": "FRB20181219D",
@@ -352,6 +365,25 @@
       "period_s": null,
       "dm_excess_pc": 1200.0,
       "reference": "Shannon2021"
+    },
+    {
+      "name": "FRB20190701E",
+      "repeater": false,
+      "ra_deg": 138.5,
+      "dm_pc": 890.49,
+      "width_ms": 1.0,
+      "fluence_jy_ms": 0.1,
+      "period_s": null,
+      "fluence_cat2_jy_ms": 2.008879793034293
+    },
+    {
+      "name": "FRB20190702B",
+      "repeater": true,
+      "ra_deg": 208.1,
+      "dm_pc": 222.1,
+      "width_ms": 1.0,
+      "fluence_jy_ms": 0.0,
+      "period_s": null
     },
     {
       "name": "FRB20220618C",
@@ -4923,15 +4955,6 @@
       "dm_pc": 973.7864365958491,
       "width_ms": 0.0,
       "fluence_jy_ms": 1.8038201427464726,
-      "period_s": null
-    },
-    {
-      "name": "FRB20190701E",
-      "repeater": false,
-      "ra_deg": 138.5,
-      "dm_pc": 890.49,
-      "width_ms": 0.0,
-      "fluence_jy_ms": 2.008879793034293,
       "period_s": null
     },
     {
@@ -30528,15 +30551,6 @@
       "dm_pc": 559.8936762492727,
       "width_ms": 0.0,
       "fluence_jy_ms": 2.118012124024476,
-      "period_s": null
-    },
-    {
-      "name": "FRB20190702B",
-      "repeater": true,
-      "ra_deg": 208.1,
-      "dm_pc": 222.1,
-      "width_ms": 0.0,
-      "fluence_jy_ms": 0.0,
       "period_s": null
     }
   ]

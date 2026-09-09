@@ -20,7 +20,7 @@ The HVAC / fixed-orifice picture (CONCEPTS C2): mass falls in, compactifies and 
 
 | Handle | Form | Live |
 |--------|------|------|
-| Repeater vs rip | \(E \ge e\cdot\mathrm{POOF}\) | **278/293** (94.9%, YELLOW). Catalog 2 dump **3390** sources; width missing on most Cat-2 rows so those are not scored. **Not** a 0.5% gate. |
+| Repeater vs rip | \(E \ge e\cdot\mathrm{POOF}\) | **37/37** on the frozen complete set. Cat-2 dump **3390** sources is catalog class (no pulse width) — **not** a 0.5% / 99.5% gate. |
 | Pulse-width class | median repeater / one-shot vs Particle \(D_{\mathrm{eff}}=5\) | **5.0 vs 5 (0%)** |
 | Short saloon-door tick | P34 = 1000 s (1 mHz) | 4 periods, 0–2%, **2.5% contested band** (not stuffed into 0.5%) |
 | Activity season | \(T = 5\pi + 1/\varphi\) days (Particle orifice cycle + Omori \(c\) rest) | FRB20180916B **16.35 d** vs **16.326 d (0.147%)** |
