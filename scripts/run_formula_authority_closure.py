@@ -128,6 +128,10 @@ def main() -> int:
     camp_ok = bool(mr.get("engine_core_closed") or mr.get("full_corpus_closed")) and lake["ok"]
     # Tighten: must have global lake passed in campaign too
     camp_ok = camp_ok and (mr.get("global_lake") or {}).get("status") == "passed"
+    # Keep-up: generated spines must not fall back to bare L1 `norm_num`.
+    l1 = int((mr.get("depth_gates") or {}).get("corpus_l1_count") or 0)
+    corpus_pct = float((mr.get("corpus") or {}).get("mathlib_depth_pct") or 0)
+    camp_ok = camp_ok and l1 == 0 and corpus_pct >= 99.9
     gates.append(
         {
             "id": "mathlib_campaign",

@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-09-09T16:51:33.200694+00:00`  
+**Generated:** `2026-09-09T17:16:57.944382+00:00`  
 **Edition stamp:** 2026-09-09  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -33,7 +33,7 @@
 | Item | Value |
 |------|-------|
 | Verdict | **FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED** |
-| Theorems | **5229 / 5229** (100.0%) |
+| Theorems | **5240 / 5240** (100.0%) |
 | Engine Mathlib % | 100.0 (L1=0) |
 | Corpus L1 left | 0 |
 | Engine core closed | True |

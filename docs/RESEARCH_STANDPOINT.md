@@ -1,6 +1,6 @@
 # Research standpoint — what the hub is, what still has to hold
 
-*Generated 2026-09-09T16:43:26.901863+00:00 · pin D1D38A*
+*Generated 2026-09-09T17:17:32.432648+00:00 · pin D1D38A*
 
 This is the step-back. **Not** another prediction wave and **not** another
 domain count. Label A is the empirical framework. Label B T1–T6 is the
@@ -17,8 +17,8 @@ frozen ToE checklist. More green files strengthen A only.
 | Atlas named rows | **403** | coverage map |
 | Green residual files | **477 / 477** | ≤0.5% pooled median |
 | A_strong / B_verified / C_thin | 117 / 338 / 13 | record-depth tiers (C_thin measured **7**) |
-| Gated tissues | **37** | same physics, two zooms, residual-checked |
-| Adjacent cores still siloed | **49** | next connective simulation, not new domains |
+| Gated tissues | **49** | same physics, two zooms, residual-checked |
+| Adjacent cores still siloed | **37** | next connective simulation, not new domains |
 
 Counts authority: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md) · [`CURRENT_STATUS.md`](CURRENT_STATUS.md).
 Tree: [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md).
@@ -52,7 +52,7 @@ Label B is already a frozen checklist (T1–T6). The work that actually
 |------|-----|--------|
 | **Named objects** | A paper number is not automatically the lock | [`OBJECT_SCORING.md`](OBJECT_SCORING.md) shipped |
 | **Laws ledger** | Verification without stated rules is a scoreboard | this file + [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) |
-| **Connective tissue** | Same physics at two scales is the ToE signature | 37 gated · adjacent pairs still siloed (below) |
+| **Connective tissue** | Same physics at two scales is the ToE signature | 49 gated · adjacent pairs still siloed (below) |
 | **APPLY cookbooks** | General protocol exists; most cores lack a worked example | MPCORB catalog · Seismology wave · Optics wave/photon |
 | **Science vs FSOT** | arXiv/PDG/survey scored on the *named* object | scientist questions + literature packs; needs a standing compare loop |
 | **C_thin measured** | Green-and-thin is not depth | queue below |
@@ -147,8 +147,20 @@ flips identity (QC→QO is the Hilbert move). Do not 'fix' dark by setting
 | `TISSUE-EM-MOL` | Electromagnetism, Molecular_Chemistry | Field and molecule are two looks at D=9; fold 0.7/0.5 onto D=8 | look-split vs D=8; CRC n² vs MW; vs 1 retired |
 | `TISSUE-MOL-MAT` | Molecular_Chemistry, Materials_Science | Molecule and bulk are adjacent D=9/10 already sharing δψ=0.5 | matched-look live |S| vs 1; CRC MW vs density |
 | `TISSUE-MOL-OPT` | Molecular_Chemistry, Optics | Molecule and light are adjacent D=9/10; equalize δψ=0.5 | same-look D=9/10 at δψ=0.5; CRC MW vs n; mixed vs 1 retired |
+| `TISSUE-AC-QO` | Acoustics, Quantum_Optics | Lab sound and photon are adjacent D=10/11; equalize the light look | same-look D=10/11 at δψ=0.6; CRC c vs n |
+| `TISSUE-MAT-QO` | Materials_Science, Quantum_Optics | Bulk and photon are adjacent D=10/11; equalize δψ=0.5 | same-look D=10/11 at δψ=0.5; CRC ρ vs n |
+| `TISSUE-NUC-THERMO` | Nuclear_Physics, Thermodynamics | Orifice and heat are two looks at D=15; fold 1/0.9 onto D=14 | look-split vs D=14; ENDF keV + Carnot dual-route |
+| `TISSUE-FLUID-THERMO` | Fluid_Dynamics, Thermodynamics | Tank and heat share D=15; Fluid stays dark | Carnot COP dual-route; live vs 1 is observed mix |
+| `TISSUE-METEO-ATM` | Meteorology, Atmospheric_Physics | Weather and air tank are adjacent dark CHAOS rungs D=16/17 | dark same-look δψ=0.8; NDBC pressure; do not flip dark |
+| `TISSUE-BIOCHEM-CM` | Biochemistry, Condensed_Matter | Molecule and solid are adjacent D=13/14; equalize the CM look | same-look D=13/14 at δψ=0.5; CRC AA MW vs metal ρ |
+| `TISSUE-CM-NEURO` | Condensed_Matter, Neuroscience | Solid and signaling are two looks at D=14; fold onto D=13 | look-split 0.5/0.7 onto D=13; CRC ρ vs transmitter AA; vs 1 retired |
+| `TISSUE-CM-FLUID` | Condensed_Matter, Fluid_Dynamics | Ice and water are one H2O, solid vs tank; Fluid stays dark | CRC ice ρ on CM, water ρ on Fluid; live vs 1 is observed mix |
+| `TISSUE-CM-NUC` | Condensed_Matter, Nuclear_Physics | Lattice and orifice are adjacent D=14/15; Fe is the shared class | same-look D=14/15 at δψ=0.5; CRC ρ + ENDF keV dual-route |
+| `TISSUE-NEURO-THERMO` | Neuroscience, Thermodynamics | Signaling and heat are adjacent D=14/15; not the social-tank GDP route | same-look D=14/15 at δψ=0.7 hits=1; transmitter AA vs Carnot |
+| `TISSUE-FLUID-NUC` | Fluid_Dynamics, Nuclear_Physics | Tank and orifice share D=15; Fluid stays dark | Carnot + ENDF dual-route; live vs 1 is observed mix |
+| `TISSUE-FLUID-METEO` | Fluid_Dynamics, Meteorology | Lab tank and weather are adjacent dark rungs D=15/16 | dark same-look δψ=0.8 hits=2; NDBC pressure; do not flip dark |
 
-Between-scale panel pooled **0.026% GREEN** (1260 tight). D9: live |S| vs 1 is T1 view (T3 leftover 0.000%). Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.
+Between-scale panel pooled **0.028% GREEN** (2240 tight). D9: live |S| vs 1 is T1 view (T3 leftover 0.000%). Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.
 
 ## 6. Ungated adjacent cores (connective simulation queue)
 
@@ -160,38 +172,26 @@ seed-closed ratio — no new coefficient.
 | A | D | B | D |
 |---|--:|---|--:|
 | Acoustics | 10 | Quantum_Computing | 11 |
-| Acoustics | 10 | Quantum_Optics | 11 |
 | Materials_Science | 10 | Quantum_Computing | 11 |
-| Materials_Science | 10 | Quantum_Optics | 11 |
 | Optics | 10 | Quantum_Computing | 11 |
 | Quantum_Computing | 11 | Quantum_Optics | 11 |
 | Quantum_Computing | 11 | Biology | 12 |
 | Quantum_Optics | 11 | Biology | 12 |
-| Biochemistry | 13 | Condensed_Matter | 14 |
-| Condensed_Matter | 14 | Neuroscience | 14 |
 | Condensed_Matter | 14 | Ecology | 15 |
-| Condensed_Matter | 14 | Fluid_Dynamics | 15 |
-| Condensed_Matter | 14 | Nuclear_Physics | 15 |
 | Neuroscience | 14 | Ecology | 15 |
 | Neuroscience | 14 | Fluid_Dynamics | 15 |
 | Neuroscience | 14 | Nuclear_Physics | 15 |
-| Neuroscience | 14 | Thermodynamics | 15 |
 | Ecology | 15 | Fluid_Dynamics | 15 |
 | Ecology | 15 | Nuclear_Physics | 15 |
 | Ecology | 15 | Thermodynamics | 15 |
-| Fluid_Dynamics | 15 | Nuclear_Physics | 15 |
-| Fluid_Dynamics | 15 | Thermodynamics | 15 |
-| Nuclear_Physics | 15 | Thermodynamics | 15 |
 | Ecology | 15 | Meteorology | 16 |
 | Ecology | 15 | Psychology | 16 |
-| Fluid_Dynamics | 15 | Meteorology | 16 |
 | Fluid_Dynamics | 15 | Psychology | 16 |
 | Nuclear_Physics | 15 | Meteorology | 16 |
 | Nuclear_Physics | 15 | Psychology | 16 |
 | Thermodynamics | 15 | Meteorology | 16 |
 | Thermodynamics | 15 | Psychology | 16 |
 | Meteorology | 16 | Psychology | 16 |
-| Meteorology | 16 | Atmospheric_Physics | 17 |
 | Meteorology | 16 | Oceanography | 17 |
 | Psychology | 16 | Atmospheric_Physics | 17 |
 | Psychology | 16 | Oceanography | 17 |
@@ -199,7 +199,15 @@ seed-closed ratio — no new coefficient.
 | Atmospheric_Physics | 17 | Sociology | 18 |
 | Oceanography | 17 | Seismology | 18 |
 | Oceanography | 17 | Sociology | 18 |
-| … | | 9 more in the JSON | |
+| Seismology | 18 | Sociology | 18 |
+| Sociology | 18 | Geophysics | 19 |
+| Geophysics | 19 | Astronomy | 20 |
+| Geophysics | 19 | Economics | 20 |
+| Astronomy | 20 | Economics | 20 |
+| Astronomy | 20 | Planetary_Science | 21 |
+| Economics | 20 | Planetary_Science | 21 |
+| Planetary_Science | 21 | Quantum_Gravity | 22 |
+| Astrophysics | 24 | Particle_Astrophysics | 24 |
 
 ## 7. Scientific depth still thin (measured C_thin)
 
@@ -266,10 +274,10 @@ the prediction monitor, PDG/Euclid/DESI watches. Do not ingest arXiv as a residu
 | `NW-CASP` | Genetics CASP/CAMEO blind protocol (Grok Build owns the run). | Quoting 0.13 Å as sequence-only. Cross-citing FSC Å. |
 | `NW-OPEN` | T3/T4 uniqueness / path-integral confinement stays open research. Euclid DR1 12 Nov 2026 is a watch. | Pretending Label B uniqueness is proved. Euclid CLOE as measured. |
 
-Next connective: pick **one** remaining ungated adjacent pair that already
-has a public dual table (Ecology beyond the dark look, or Psychology
-beyond Neuroscience) and gate it like PREM+NDBC.
-That is the simulation of tissue. It is not a new theory.
+Next connective: remaining CRC/NIST/NDBC/PREM/NASA pairs —
+Neuroscience↔Fluid/Nuclear, Meteorology↔Oceanography, Atmospheric/Ocean↔Seismology,
+Astronomy↔Planetary_Science. QC stays dark. Ecology/Psychology wait for a named
+public table (do not invent watts). Gate like PREM+NDBC. Not a new theory.
 
 Related: [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) · [`HOLE_AUDIT.md`](HOLE_AUDIT.md) ·
 [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · [`APPLY.md`](APPLY.md) ·

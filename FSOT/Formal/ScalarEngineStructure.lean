@@ -180,6 +180,33 @@ theorem raw_S_of_unit_term2 (p : FSOTParams) (h2 : term2 p = 1) :
   simp [raw_S, h2]
   ring
 
+/-- D9 rung: T2 = 1 and T3 = 0 ⇒ raw_S = 1 + T1. -/
+theorem raw_S_of_unit_t2_zero_t3
+    (p : FSOTParams) (h2 : term2 p = 1) (h3 : term3 p = 0) :
+    raw_S p = term1 p + 1 := by
+  simpa [h3] using raw_S_of_unit_term2 p h2
+
+/-- D9 rung: scaled_S = K · (1 + T1). -/
+theorem scaled_S_of_unit_t2_zero_t3
+    (p : FSOTParams) (h2 : term2 p = 1) (h3 : term3 p = 0) :
+    scaled_S p = k * (1 + term1 p) := by
+  rw [scaled_S_eq_k_mul_raw_S, raw_S_of_unit_t2_zero_t3 p h2 h3]
+  ring
+
+/-- D9 perception form: |S_p|/|S_q| = |1+T1_p|/|1+T1_q| at unit T2, vanishing T3. -/
+theorem abs_scaled_S_ratio_of_unit_t2_zero_t3
+    (p q : FSOTParams)
+    (hp2 : term2 p = 1) (hp3 : term3 p = 0)
+    (hq2 : term2 q = 1) (hq3 : term3 q = 0)
+    (_hn : 1 + term1 q ≠ 0) :
+    |scaled_S p| / |scaled_S q| = |1 + term1 p| / |1 + term1 q| := by
+  have hp := scaled_S_of_unit_t2_zero_t3 p hp2 hp3
+  have hq := scaled_S_of_unit_t2_zero_t3 q hq2 hq3
+  have hk : (0 : ℝ) < k := k_pos
+  rw [hp, hq]
+  simp [abs_mul, abs_of_pos hk]
+  exact mul_div_mul_left (|1 + term1 p|) (|1 + term1 q|) (ne_of_gt hk)
+
 /-- k > 0 ⇒ scaled_S and raw_S share sign (positive direction). -/
 theorem scaled_S_pos_of_raw_S_pos (p : FSOTParams) (h : (0 : ℝ) < raw_S p) :
     (0 : ℝ) < scaled_S p := by
@@ -263,23 +290,86 @@ theorem term1_base_neg_typical_high_D
     (term1_base_tail_pos p)
 
 -- ============================================================
+-- T3 VANISH / OBSERVER STRING / D9 LEFTOVER (engine depth)
+-- ============================================================
+
+/-- Observer string on: quirkMod is C_factor · phase-variance cosine. -/
+theorem quirkMod_observed
+    (p : FSOTParams) (h : p.observed = true) :
+    quirkMod p =
+      exp (consciousness_factor * phase_variance) *
+        cos (p.delta_psi + phase_variance) := by
+  simp [quirkMod, h]
+
+/-- Observed: T1 = base × perceived_adjust × observer cosine. -/
+theorem term1_observed_eq_base_adjust_observer
+    (p : FSOTParams) (h : p.observed = true) :
+    term1 p =
+      term1_base p * perceived_adjust p *
+        (exp (consciousness_factor * phase_variance) *
+          cos (p.delta_psi + phase_variance)) := by
+  simp [term1_eq_base_adjust_quirk, quirkMod_observed p h]
+
+/-- T3 vanishes at the observer-cosine node cos(δψ) = 0. -/
+theorem term3_eq_zero_of_cos_delta_psi_zero
+    (p : FSOTParams) (h : cos p.delta_psi = 0) :
+    term3 p = 0 := by
+  simp [term3, h]
+
+/-- T3 vanishes if the geometric prefactor N is zero. -/
+theorem term3_eq_zero_of_zero_N
+    (p : FSOTParams) (h : p.N = 0) :
+    term3 p = 0 := by
+  simp [term3, h]
+
+/-- T3 vanishes if the geometric prefactor P is zero. -/
+theorem term3_eq_zero_of_zero_P
+    (p : FSOTParams) (h : p.P = 0) :
+    term3 p = 0 := by
+  simp [term3, h]
+
+/-- Chaos fold remainder: 1 + Chaos·(D−25)/25 minus 1 is the compactification bleed. -/
+theorem term3_chaos_mod_remainder
+    (p : FSOTParams) :
+    term3_chaos_mod p - 1 = chaos_factor * (p.D_eff - 25) / 25 := by
+  simp [term3_chaos_mod]
+
+/-- D9 leftover: at unit T2, raw_S − (1+T1) is exactly T3. -/
+theorem t3_leftover_of_unit_t2
+    (p : FSOTParams) (h2 : term2 p = 1) :
+    raw_S p - (1 + term1 p) = term3 p := by
+  simp [raw_S, h2]
+  ring
+
+/-- D9 leftover through K: scaled_S − K·(1+T1) = K·T3 at unit T2. -/
+theorem scaled_t3_leftover_of_unit_t2
+    (p : FSOTParams) (h2 : term2 p = 1) :
+    scaled_S p - k * (1 + term1 p) = k * term3 p := by
+  have h := t3_leftover_of_unit_t2 p h2
+  calc
+    scaled_S p - k * (1 + term1 p)
+        = raw_S p * k - k * (1 + term1 p) := by rw [scaled_S]
+    _ = k * (raw_S p - (1 + term1 p)) := by ring
+    _ = k * term3 p := by rw [h]
+
+-- ============================================================
 -- BUNDLE — exportable structural certificate
 -- ============================================================
 
 /-- Count of named structural identity theorems in this module (inventory pin). -/
-def scalar_engine_structure_theorem_count : ℕ := 28
+def scalar_engine_structure_theorem_count : ℕ := 39
 
 theorem scalar_engine_structure_theorem_count_pos :
     0 < scalar_engine_structure_theorem_count := by
   unfold scalar_engine_structure_theorem_count; decide
 
 theorem scalar_engine_structure_theorem_count_eq :
-    scalar_engine_structure_theorem_count = 28 := by
+    scalar_engine_structure_theorem_count = 39 := by
   unfold scalar_engine_structure_theorem_count; decide
 
 /-- Bundle: master formula structure is definitionally pinned. -/
 theorem scalar_engine_structure_bundle :
-    scalar_engine_structure_theorem_count = 28 ∧
+    scalar_engine_structure_theorem_count = 39 ∧
     (0 : ℝ) < k ∧
     term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1 := by
   refine ⟨?h1, ?h2, ?h3⟩
@@ -289,7 +379,7 @@ theorem scalar_engine_structure_bundle :
 
 /-- Depth bundle: emergence/damping transport through k-scaling. -/
 theorem scalar_engine_depth_bundle :
-    scalar_engine_structure_theorem_count = 28 ∧
+    scalar_engine_structure_theorem_count = 39 ∧
     (0 : ℝ) < k ∧
     (0 : ℝ) < 0.42 ∧
     (0.42 : ℝ) < k := by

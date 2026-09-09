@@ -276,7 +276,37 @@ EM–Mol: same \(D=9\), \(\delta\psi=0.7\) vs \(0.5\). Fold onto \(D=8\). CRC \(
 Mol–Materials already share \(\delta\psi=0.5\); live \(|S|\) vs 1 is the matched-look rung. CRC MW vs density.  
 Mol–Optics: equalize \(\delta\psi=0.5\). CRC MW vs \(n_D\).
 
-QC stays dark (Hilbert look). Ecology / Psychology / Meteorology pairs wait for a named public table — do not invent watts or flip `observed`.
+QC stays dark (Hilbert look). Ecology / Psychology pairs wait for a named public table — do not invent watts or flip `observed`.
+
+## 24. Sound / bulk vs photon — Acoustics, Materials \(D=10\) ↔ Quantum_Optics \(D=11\)
+
+Acoustics–QO: equalize \(\delta\psi=0.6\). CRC longitudinal \(c\) vs \(n_D\).  
+Materials–QO: equalize \(\delta\psi=0.5\). CRC density vs \(n_D\).  
+Optics–QO is already gated (same \(C=\pi/e\)).
+
+## 25. Orifice / tank vs heat — Nuclear, Fluid \(D=15\) ↔ Thermodynamics \(D=15\)
+
+Nuclear–Thermo: \(\delta\psi=1\) vs \(0.9\). Fold onto \(D=14\). ENDF keV and Carnot COP dual-routed.  
+Fluid–Thermo: Fluid stays dark. Carnot COP dual-routed. Live vs 1 is the observed mix.
+
+## 26. Weather vs air — Meteorology \(D=16\) ↔ Atmospheric_Physics \(D=17\)
+
+Both dark, both \(\delta\psi=0.8\), hits=2. Adjacent CHAOS rungs. Dual-route NDBC pressure. Do not flip `observed`.
+
+## 27. Molecule / solid / signaling / heat — Biochem \(D=13\) ↔ CM / Neuro \(D=14\) ↔ Thermo \(D=15\)
+
+Biochem–CM: equalize \(\delta\psi=0.5\). CRC amino-acid MW on Biochem, metal density on CM.  
+CM–Neuro: same \(D=14\), \(\delta\psi=0.5\) vs \(0.7\). Fold onto \(D=13\). CRC \(\rho\) vs transmitter AA. vs 1 retired.  
+Neuro–Thermo: equalize \(\delta\psi=0.7\), hits=1. Transmitter AA on Neuro, Carnot COP on Thermo. Not the social-tank GDP route.
+
+## 28. Solid vs tank / orifice / weather — CM \(D=14\) ↔ Fluid / Nuclear \(D=15\) ↔ Meteo \(D=16\)
+
+CM–Fluid: ice \(\rho\) on CM, water \(\rho\) on Fluid — one H2O, solid vs tank. Fluid stays dark. Live vs 1 is the observed mix.  
+CM–Nuclear: equalize \(\delta\psi=0.5\). CRC metal \(\rho\) and IAEA/ENDF keV dual-routed. Fe is the shared class.  
+Fluid–Nuclear: same \(D=15\). Fluid stays dark. Carnot COP and ENDF keV dual-routed.  
+Fluid–Meteo: both dark. Equalize \(\delta\psi=0.8\), hits=2. Dual-route NDBC pressure. Do not flip `observed`.
+
+QC stays dark (Hilbert look). Ecology / Psychology pairs still wait for a named public table — do not invent watts.
 
 Kill: pooled > 0.5%, or \(T_3\) leftover on the \(T_1\) view pairs > 0.5%, or anyone fits Q / γ / Poisson, or anyone treats deep-PREM mismatch as a new coefficient, or anyone stuffs live \(|S_i|/|S_j|\) vs 1 into 0.5%.
 

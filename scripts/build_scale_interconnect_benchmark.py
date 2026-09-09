@@ -105,6 +105,18 @@ def main() -> int:
         "em_mol": "Same D=9 0.7/0.5 folded onto D=8. CRC n² vs MW. vs 1 retired.",
         "mol_mat": "Adjacent D=9/10 both δψ=0.5 vs 1. CRC MW vs density.",
         "mol_opt": "Adjacent D=9/10 at δψ=0.5 vs 1. CRC MW vs n. Live mixed vs 1 retired.",
+        "ac_qo": "Adjacent D=10/11 at δψ=0.6 vs 1. CRC c vs n photon. Live mixed vs 1 retired.",
+        "mat_qo": "Adjacent D=10/11 at δψ=0.5 vs 1. CRC ρ vs n photon. Live mixed vs 1 retired.",
+        "nuclear_thermo": "Same D=15 1/0.9 look folded onto D=14. ENDF keV + Carnot dual-route.",
+        "fluid_thermo": "Same D=15; Fluid stays dark. Carnot COP dual-route. Live vs 1 is observed mix.",
+        "meteo_atm": "Dark same-look D=16/17 at δψ=0.8. NDBC pressure dual-route. Do not flip dark.",
+        "biochem_cm": "Adjacent D=13/14 at δψ=0.5 vs 1. CRC AA MW on Biochem, metal ρ on CM.",
+        "cm_neuro": "Same D=14 look 0.5/0.7 folded onto D=13. CRC ρ vs transmitter AA. vs 1 retired.",
+        "cm_fluid": "Ice ρ on CM, water ρ on Fluid. Fluid stays dark. Live vs 1 is observed mix.",
+        "cm_nuclear": "Adjacent D=14/15 at δψ=0.5 vs 1. CRC metal ρ + ENDF keV dual-route.",
+        "neuro_thermo": "Adjacent D=14/15 at δψ=0.7 hits=1 vs 1. Transmitter AA vs Carnot. Not GDP.",
+        "fluid_nuclear": "Same D=15; Fluid stays dark. Carnot + ENDF dual-route. Live vs 1 is observed mix.",
+        "fluid_meteo": "Dark same-look D=15/16 at δψ=0.8 hits=2. NDBC pressure. Do not flip dark.",
         "perception_view": "|1+T1_i|/|1+T1_j| vs live |S_i|/|S_j| (T3 leftover). vs 1 is the same-view question, not a 0.5% central. Not a median pad.",
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")

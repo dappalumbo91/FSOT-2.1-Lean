@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T16:51:25.430166+00:00",
+  "generated_at": "2026-09-09T17:15:49.103869+00:00",
   "version": "1.1",
   "verdict": "FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED",
   "engine_core_closed": true,
@@ -7,7 +7,7 @@
   "full_mathlib_rederivation_of_all_lemmas": true,
   "global_lake": {
     "status": "passed",
-    "seconds": 2.07,
+    "seconds": 14.69,
     "cmd": "lake build FSOT",
     "stderr_tail": ""
   },
@@ -22,24 +22,24 @@
     "corpus_mathlib_pct": 100.0
   },
   "corpus": {
-    "theorem_count": 5229,
-    "mathlib_depth_count": 5229,
+    "theorem_count": 5240,
+    "mathlib_depth_count": 5240,
     "mathlib_depth_pct": 100.0,
     "by_tier": {
-      "L0_definitional": 1919,
-      "L3_chain": 3027,
-      "L2_analytic": 283
+      "L0_definitional": 1926,
+      "L3_chain": 3028,
+      "L2_analytic": 286
     },
     "sorry_count": 0
   },
   "engine_inventory": {
-    "theorem_count": 537,
-    "mathlib_depth_count": 537,
+    "theorem_count": 548,
+    "mathlib_depth_count": 548,
     "mathlib_depth_pct": 100.0,
     "by_tier": {
-      "L2_analytic": 281,
-      "L0_definitional": 75,
-      "L3_chain": 181
+      "L2_analytic": 284,
+      "L0_definitional": 82,
+      "L3_chain": 182
     },
     "l1_certificate_count": 0
   },
@@ -53,17 +53,17 @@
         "ScalarEngineStructure"
       ],
       "missing_modules": [],
-      "theorem_count": 31,
-      "mathlib_depth_count": 31,
+      "theorem_count": 42,
+      "mathlib_depth_count": 42,
       "mathlib_depth_pct": 100.0,
       "by_tier": {
-        "L0_definitional": 16,
-        "L3_chain": 9,
-        "L2_analytic": 6
+        "L0_definitional": 23,
+        "L3_chain": 10,
+        "L2_analytic": 9
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -92,7 +92,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -121,7 +121,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -150,7 +150,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -190,7 +190,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -223,7 +223,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -290,7 +290,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -357,7 +357,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -424,7 +424,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -491,7 +491,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -558,7 +558,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -625,7 +625,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -692,7 +692,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -759,7 +759,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -826,7 +826,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -893,7 +893,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -960,7 +960,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -1027,7 +1027,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -1094,7 +1094,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",
@@ -1137,7 +1137,7 @@
       },
       "sorry_list": [],
       "lake_status": "passed",
-      "lake_build_seconds": 2.07,
+      "lake_build_seconds": 14.69,
       "builds": [
         {
           "target": "FSOT",

@@ -17,6 +17,13 @@ Gaps this module fills (not new laws):
   Atomic D=7 ↔ High_Energy D=7          bound well vs collision look
   Chemistry D=8 ↔ Physical_Chemistry D=8 composition vs thermo (0.5/0.6 look)
   Chemistry D=8 ↔ Molecular_Chemistry D=9 composition vs molecule
+  Biochemistry D=13 ↔ Condensed_Matter D=14 molecule vs solid
+  Condensed_Matter D=14 ↔ Neuroscience D=14 solid vs signaling
+  Condensed_Matter D=14 ↔ Fluid D=15 ice vs water (Fluid stays dark)
+  Condensed_Matter D=14 ↔ Nuclear D=15 lattice vs orifice
+  Neuroscience D=14 ↔ Thermodynamics D=15 signaling vs heat
+  Fluid D=15 ↔ Nuclear D=15 tank vs orifice (Fluid stays dark)
+  Fluid D=15 ↔ Meteorology D=16 tank vs weather (both dark)
 
 Measured tables are public (PREM, NDBC, ENDF/IAEA, PDG, NIST, US Std Atmosphere).
 No least-squares. Deep-mantle PREM is a viscosity/phase-change band, not a
@@ -2231,6 +2238,819 @@ def mol_opt_rows() -> list[dict[str, Any]]:
     return rows
 
 
+def ac_qo_rows() -> list[dict[str, Any]]:
+    """Acoustics D=10 ↔ Quantum_Optics D=11 — lab sound vs photon.
+
+    Equalize at the light look (δψ=0.6). CRC c on Acoustics, n on QO.
+    """
+    s10 = scalar_at(d_eff=10, delta_psi=0.6)
+    s11 = scalar_at(d_eff=11, delta_psi=0.6)
+    live = abs(f(domain_scalar("Acoustics"))) / abs(f(domain_scalar("Quantum_Optics")))
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="ac_qo_S_ratio_same_look",
+            name="S_D10_over_S_D11_at_dpsi_0p6",
+            computed=s10 / s11,
+            measured=1.0,
+            note=(
+                "|S(D=10,δψ=0.6)|/|S(D=11,δψ=0.6)| vs 1 — sound vs photon. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Acoustics", "Quantum_Optics"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    for sp in ACOUSTIC_SPECIMENS:
+        cc, ec = scaled(float(sp["c"]), "Acoustics")
+        cn, en = scaled(float(sp["n"]), "Quantum_Optics")
+        tag = str(sp["name"])
+        rows.append(
+            _row(
+                prop="ac_qo_c_ac_fold",
+                name=tag + "_c_ac",
+                computed=cc,
+                measured=float(sp["c"]),
+                note="CRC longitudinal c on Acoustics D=10",
+            )
+        )
+        rows[-1]["error_pct"] = ec
+        rows.append(
+            _row(
+                prop="ac_qo_n_qo_fold",
+                name=tag + "_n_qo",
+                computed=cn,
+                measured=float(sp["n"]),
+                note="CRC n_D on Quantum_Optics D=11 — photon zoom",
+            )
+        )
+        rows[-1]["error_pct"] = en
+    return rows
+
+
+def mat_qo_rows() -> list[dict[str, Any]]:
+    """Materials_Science D=10 ↔ Quantum_Optics D=11 — bulk vs photon.
+
+    Equalize at the materials look (δψ=0.5). CRC ρ on Materials, n on QO.
+    """
+    s10 = scalar_at(d_eff=10, delta_psi=0.5)
+    s11 = scalar_at(d_eff=11, delta_psi=0.5)
+    live = abs(f(domain_scalar("Materials_Science"))) / abs(
+        f(domain_scalar("Quantum_Optics"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="mat_qo_S_ratio_same_look",
+            name="S_D10_over_S_D11_at_dpsi_0p5",
+            computed=s10 / s11,
+            measured=1.0,
+            note=(
+                "|S(D=10,δψ=0.5)|/|S(D=11,δψ=0.5)| vs 1 — bulk vs photon. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Materials_Science", "Quantum_Optics"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    for mat in OPTICAL_MATERIALS:
+        cr, er = scaled(float(mat["rho"]), "Materials_Science")
+        cn, en = scaled(float(mat["n"]), "Quantum_Optics")
+        tag = str(mat["name"])
+        rows.append(
+            _row(
+                prop="mat_qo_rho_mat_fold",
+                name=tag + "_rho_mat",
+                computed=cr,
+                measured=float(mat["rho"]),
+                note="CRC density on Materials_Science D=10",
+            )
+        )
+        rows[-1]["error_pct"] = er
+        rows.append(
+            _row(
+                prop="mat_qo_n_qo_fold",
+                name=tag + "_n_qo",
+                computed=cn,
+                measured=float(mat["n"]),
+                note="CRC n_D on Quantum_Optics D=11",
+            )
+        )
+        rows[-1]["error_pct"] = en
+    return rows
+
+
+def nuclear_thermo_rows(endf_path: Path) -> list[dict[str, Any]]:
+    """Nuclear D=15 ↔ Thermodynamics D=15 — orifice vs heat, same rung.
+
+    Equalize at the thermo look (δψ=0.9, hits=1). ENDF keV on Nuclear,
+    Carnot COP on Thermo — same specimens dual-routed onto the other fold.
+    """
+    live = abs(f(domain_scalar("Nuclear_Physics"))) / abs(
+        f(domain_scalar("Thermodynamics"))
+    )
+    look = scalar_at(d_eff=14, delta_psi=1.0, hits=1) / scalar_at(
+        d_eff=14, delta_psi=0.9, hits=1
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="nuclear_thermo_S_ratio",
+            name="S_nuc_over_S_th_vs_D14_look",
+            computed=live,
+            measured=look,
+            note=(
+                "|S_Nuclear|/|S_Thermo| vs S(D=14,δψ=1)/S(D=14,δψ=0.9) — same "
+                f"1/0.9 look-split. Not vs 1 ({vs1:.1f}%)."
+            ),
+            extra={
+                "kappa": kappa_domains("Nuclear_Physics", "Thermodynamics"),
+                "rejected_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    for name, tc, th in CARNOT_PAIRS:
+        cop = carnot_cop(tc, th)
+        ct, et = scaled(cop, "Thermodynamics")
+        cn, en = scaled(cop, "Nuclear_Physics")
+        rows.append(
+            _row(
+                prop="nuclear_thermo_carnot_th_fold",
+                name=name + "_th",
+                computed=ct,
+                measured=cop,
+                note="Carnot COP on Thermodynamics D=15",
+            )
+        )
+        rows[-1]["error_pct"] = et
+        rows.append(
+            _row(
+                prop="nuclear_thermo_carnot_nuc_fold",
+                name=name + "_nuc",
+                computed=cn,
+                measured=cop,
+                note="same COP on Nuclear_Physics D=15 — heat of the orifice",
+            )
+        )
+        rows[-1]["error_pct"] = en
+    if endf_path.is_file():
+        doc = json.loads(endf_path.read_text(encoding="utf-8"))
+        light = ("He4", "C12", "O16", "Fe56", "Si28", "Al27")
+        n_taken = 0
+        for rec in doc.get("material_records") or []:
+            name = str(rec.get("name") or "")
+            if not name.startswith(light) or rec.get("property") != "level_energy_keV":
+                continue
+            m = float(rec.get("measured") or 0)
+            if m <= 0:
+                continue
+            cn, en = scaled(m, "Nuclear_Physics")
+            ct, et = scaled(m, "Thermodynamics")
+            rows.append(
+                _row(
+                    prop="nuclear_thermo_level_nuc_fold",
+                    name=name + "_nuc",
+                    computed=cn,
+                    measured=m,
+                    note="IAEA/ENDF keV on Nuclear_Physics D=15",
+                )
+            )
+            rows[-1]["error_pct"] = en
+            rows.append(
+                _row(
+                    prop="nuclear_thermo_level_th_fold",
+                    name=name + "_th",
+                    computed=ct,
+                    measured=m,
+                    note="same IAEA keV on Thermodynamics D=15",
+                )
+            )
+            rows[-1]["error_pct"] = et
+            n_taken += 1
+            if n_taken >= 40:
+                break
+    return rows
+
+
+def fluid_thermo_rows() -> list[dict[str, Any]]:
+    """Fluid_Dynamics D=15 ↔ Thermodynamics D=15 — tank vs heat.
+
+    Same compactification, Fluid stays dark. Dual-route Carnot COP on both.
+    Live |S| vs 1 mixes observed — not a 0.5% central.
+    """
+    live = abs(f(domain_scalar("Fluid_Dynamics"))) / abs(
+        f(domain_scalar("Thermodynamics"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="fluid_thermo_S_ratio",
+            name="S_fluid_over_S_thermo_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Fluid|/|S_Thermo| vs 1 mixes dark/observed at D=15. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Fluid_Dynamics", "Thermodynamics"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    for name, tc, th in CARNOT_PAIRS:
+        cop = carnot_cop(tc, th)
+        ct, et = scaled(cop, "Thermodynamics")
+        cf, ef = scaled(cop, "Fluid_Dynamics")
+        rows.append(
+            _row(
+                prop="fluid_thermo_carnot_th_fold",
+                name=name + "_th",
+                computed=ct,
+                measured=cop,
+                note="Carnot COP on Thermodynamics D=15",
+            )
+        )
+        rows[-1]["error_pct"] = et
+        rows.append(
+            _row(
+                prop="fluid_thermo_carnot_fl_fold",
+                name=name + "_fl",
+                computed=cf,
+                measured=cop,
+                note="same COP on Fluid_Dynamics D=15 — tank stays dark",
+            )
+        )
+        rows[-1]["error_pct"] = ef
+    return rows
+
+
+def meteo_atm_rows(ndbc_path: Path) -> list[dict[str, Any]]:
+    """Meteorology D=16 ↔ Atmospheric_Physics D=17 — weather vs air tank.
+
+    Both dark, both δψ=0.8, hits=2. Adjacent CHAOS rungs. Dual-route NDBC pres.
+    """
+    s16 = scalar_at(d_eff=16, delta_psi=0.8, hits=2, observed=False)
+    s17 = scalar_at(d_eff=17, delta_psi=0.8, hits=2, observed=False)
+    live = abs(f(domain_scalar("Meteorology"))) / abs(
+        f(domain_scalar("Atmospheric_Physics"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="meteo_atm_S_ratio_same_look",
+            name="S_D16_over_S_D17_at_dpsi_0p8_dark",
+            computed=s16 / s17,
+            measured=1.0,
+            note=(
+                "|S(D=16,δψ=0.8,dark)|/|S(D=17,δψ=0.8,dark)| vs 1 — weather vs air. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object. Do not flip dark. "
+                "Compactification step at this rung is a literature band, not stuffed."
+            ),
+            kind="structural" if err(s16 / s17, 1.0) > 0.5 else "scalar",
+            extra={
+                "kappa": kappa_domains("Meteorology", "Atmospheric_Physics"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    if ndbc_path.is_file():
+        doc = json.loads(ndbc_path.read_text(encoding="utf-8"))
+        for rec in doc.get("rows") or []:
+            val = rec.get("pres")
+            if val is None:
+                continue
+            m = float(val)
+            if m <= 0:
+                continue
+            bid = str(rec.get("buoy_id") or "buoy")
+            ts = str(rec.get("timestamp") or "").replace(" ", "_")
+            tag = f"{bid}_{ts}"
+            cm, em = scaled(m, "Meteorology")
+            ca, ea = scaled(m, "Atmospheric_Physics")
+            rows.append(
+                _row(
+                    prop="meteo_atm_pres_meteo_fold",
+                    name=tag + "_meteo",
+                    computed=cm,
+                    measured=m,
+                    note="NDBC pressure on Meteorology D=16 — weather tank, stays dark",
+                )
+            )
+            rows[-1]["error_pct"] = em
+            rows.append(
+                _row(
+                    prop="meteo_atm_pres_atm_fold",
+                    name=tag + "_atm",
+                    computed=ca,
+                    measured=m,
+                    note="same NDBC pressure on Atmospheric_Physics D=17",
+                )
+            )
+            rows[-1]["error_pct"] = ea
+    return rows
+
+
+def _endf_keV_dual(
+    endf_path: Path,
+    domain_a: str,
+    domain_b: str,
+    prop_a: str,
+    prop_b: str,
+    note_a: str,
+    note_b: str,
+    n_max: int = 40,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    if not endf_path.is_file():
+        return rows
+    doc = json.loads(endf_path.read_text(encoding="utf-8"))
+    light = ("He4", "C12", "O16", "Fe56", "Si28", "Al27")
+    n_taken = 0
+    for rec in doc.get("material_records") or []:
+        name = str(rec.get("name") or "")
+        if not name.startswith(light) or rec.get("property") != "level_energy_keV":
+            continue
+        m = float(rec.get("measured") or 0)
+        if m <= 0:
+            continue
+        ca, ea = scaled(m, domain_a)
+        cb, eb = scaled(m, domain_b)
+        rows.append(
+            _row(prop=prop_a, name=name + "_" + domain_a.split("_")[0].lower(),
+                 computed=ca, measured=m, note=note_a)
+        )
+        rows[-1]["error_pct"] = ea
+        rows.append(
+            _row(prop=prop_b, name=name + "_" + domain_b.split("_")[0].lower(),
+                 computed=cb, measured=m, note=note_b)
+        )
+        rows[-1]["error_pct"] = eb
+        n_taken += 1
+        if n_taken >= n_max:
+            break
+    return rows
+
+
+def biochem_cm_rows() -> list[dict[str, Any]]:
+    """Biochemistry D=13 ↔ Condensed_Matter D=14 — molecule vs solid.
+
+    Live mix is δψ 0.35/hits=1 vs 0.5/hits=0. Equalize at the CM look
+    (δψ=0.5, hits=0). Dual-route CRC AA MW on Biochem, metal ρ on CM.
+    """
+    s13 = scalar_at(d_eff=13, delta_psi=0.5, hits=0, observed=True)
+    s14 = scalar_at(d_eff=14, delta_psi=0.5, hits=0, observed=True)
+    live = abs(f(domain_scalar("Biochemistry"))) / abs(
+        f(domain_scalar("Condensed_Matter"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="biochem_cm_S_ratio_same_look",
+            name="S_D13_over_S_D14_at_dpsi_0p5",
+            computed=s13 / s14,
+            measured=1.0,
+            note=(
+                "|S(D=13,δψ=0.5)|/|S(D=14,δψ=0.5)| vs 1 — molecule vs solid. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Biochemistry", "Condensed_Matter"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    for aa, mw in AMINO_ACID_MW:
+        c, e = scaled(float(mw), "Biochemistry")
+        rows.append(
+            _row(
+                prop="biochem_cm_aa_bc_fold",
+                name=aa + "_mw_bc",
+                computed=c,
+                measured=float(mw),
+                note="CRC/IUPAC AA MW on Biochemistry D=13",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    for sol in CM_THERMO_SOLIDS:
+        rho = float(sol["rho"])
+        c, e = scaled(rho, "Condensed_Matter")
+        rows.append(
+            _row(
+                prop="biochem_cm_rho_cm_fold",
+                name=str(sol["name"]) + "_rho_cm",
+                computed=c,
+                measured=rho,
+                note="CRC density on Condensed_Matter D=14 — solid of the residue scale",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def cm_neuro_rows() -> list[dict[str, Any]]:
+    """Condensed_Matter D=14 ↔ Neuroscience D=14 — solid vs signaling, same rung.
+
+    Live mix is δψ 0.5/hits=0 vs 0.7/hits=1. Equalizing at D=14 is identity.
+    Fold the look-split onto D=13. Dual-route CRC metal ρ vs transmitter AA MW.
+    """
+    live = abs(f(domain_scalar("Condensed_Matter"))) / abs(
+        f(domain_scalar("Neuroscience"))
+    )
+    look = scalar_at(d_eff=13, delta_psi=0.5, hits=0) / scalar_at(
+        d_eff=13, delta_psi=0.7, hits=1
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="cm_neuro_S_ratio",
+            name="S_cm_over_S_neuro_vs_D13_look",
+            computed=live,
+            measured=look,
+            note=(
+                "|S_CM|/|S_Neuro| vs S(D=13,δψ=0.5,hits=0)/S(D=13,δψ=0.7,hits=1) — "
+                f"same-rung look-split. Not vs 1 ({vs1:.1f}%)."
+            ),
+            extra={
+                "kappa": kappa_domains("Condensed_Matter", "Neuroscience"),
+                "rejected_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    for sol in CM_THERMO_SOLIDS:
+        rho = float(sol["rho"])
+        c, e = scaled(rho, "Condensed_Matter")
+        rows.append(
+            _row(
+                prop="cm_neuro_rho_cm_fold",
+                name=str(sol["name"]) + "_rho_cm",
+                computed=c,
+                measured=rho,
+                note="CRC density on Condensed_Matter D=14",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    mw = {a: m for a, m in AMINO_ACID_MW}
+    for aa in NEURO_AA:
+        m = float(mw[aa])
+        c, e = scaled(m, "Neuroscience")
+        rows.append(
+            _row(
+                prop="cm_neuro_aa_neuro_fold",
+                name=aa + "_mw_neuro",
+                computed=c,
+                measured=m,
+                note="CRC transmitter AA MW on Neuroscience D=14",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def cm_fluid_rows() -> list[dict[str, Any]]:
+    """Condensed_Matter D=14 ↔ Fluid_Dynamics D=15 — solid vs tank.
+
+    Fluid stays dark. Ice ρ on CM, water ρ on Fluid — same H2O, two phases.
+    Metals stay on CM. Live vs 1 is the observed mix, not a 0.5% central.
+    """
+    live = abs(f(domain_scalar("Condensed_Matter"))) / abs(
+        f(domain_scalar("Fluid_Dynamics"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="cm_fluid_S_ratio",
+            name="S_cm_over_S_fluid_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_CM|/|S_Fluid| vs 1 mixes observed/dark at D=14/15. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Fluid stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Condensed_Matter", "Fluid_Dynamics"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    ice = next(sp for sp in ACOUSTIC_SPECIMENS if sp["name"] == "ice_Ih")
+    water = next(sp for sp in ACOUSTIC_SPECIMENS if sp["name"] == "water_20C")
+    ci, ei = scaled(float(ice["rho"]), "Condensed_Matter")
+    cw, ew = scaled(float(water["rho"]), "Fluid_Dynamics")
+    rows.append(
+        _row(
+            prop="cm_fluid_ice_cm_fold",
+            name="ice_Ih_rho_cm",
+            computed=ci,
+            measured=float(ice["rho"]),
+            note="CRC ice density on Condensed_Matter D=14 — solid H2O",
+        )
+    )
+    rows[-1]["error_pct"] = ei
+    rows.append(
+        _row(
+            prop="cm_fluid_water_fl_fold",
+            name="water_20C_rho_fl",
+            computed=cw,
+            measured=float(water["rho"]),
+            note="CRC water density on Fluid_Dynamics D=15 — tank stays dark",
+        )
+    )
+    rows[-1]["error_pct"] = ew
+    for sol in CM_THERMO_SOLIDS:
+        rho = float(sol["rho"])
+        c, e = scaled(rho, "Condensed_Matter")
+        rows.append(
+            _row(
+                prop="cm_fluid_rho_cm_fold",
+                name=str(sol["name"]) + "_rho_cm",
+                computed=c,
+                measured=rho,
+                note="CRC metal density on Condensed_Matter D=14",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    ethanol = next(sp for sp in ACOUSTIC_SPECIMENS if sp["name"] == "ethanol_20C")
+    ce, ee = scaled(float(ethanol["rho"]), "Fluid_Dynamics")
+    rows.append(
+        _row(
+            prop="cm_fluid_etoh_fl_fold",
+            name="ethanol_20C_rho_fl",
+            computed=ce,
+            measured=float(ethanol["rho"]),
+            note="CRC ethanol density on Fluid_Dynamics D=15 — liquid tank",
+        )
+    )
+    rows[-1]["error_pct"] = ee
+    return rows
+
+
+def cm_nuclear_rows(endf_path: Path) -> list[dict[str, Any]]:
+    """Condensed_Matter D=14 ↔ Nuclear_Physics D=15 — solid vs orifice.
+
+    Equalize at the CM look (δψ=0.5, hits=0). Dual-route CRC metal ρ on CM,
+    IAEA/ENDF keV on Nuclear. Fe is the shared specimen class.
+    """
+    s14 = scalar_at(d_eff=14, delta_psi=0.5, hits=0, observed=True)
+    s15 = scalar_at(d_eff=15, delta_psi=0.5, hits=0, observed=True)
+    live = abs(f(domain_scalar("Condensed_Matter"))) / abs(
+        f(domain_scalar("Nuclear_Physics"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="cm_nuclear_S_ratio_same_look",
+            name="S_D14_over_S_D15_at_dpsi_0p5",
+            computed=s14 / s15,
+            measured=1.0,
+            note=(
+                "|S(D=14,δψ=0.5)|/|S(D=15,δψ=0.5)| vs 1 — solid vs orifice. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Condensed_Matter", "Nuclear_Physics"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    for sol in CM_THERMO_SOLIDS:
+        rho = float(sol["rho"])
+        cc, ec = scaled(rho, "Condensed_Matter")
+        cn, en = scaled(rho, "Nuclear_Physics")
+        tag = str(sol["name"])
+        rows.append(
+            _row(
+                prop="cm_nuclear_rho_cm_fold",
+                name=tag + "_rho_cm",
+                computed=cc,
+                measured=rho,
+                note="CRC density on Condensed_Matter D=14",
+            )
+        )
+        rows[-1]["error_pct"] = ec
+        rows.append(
+            _row(
+                prop="cm_nuclear_rho_nuc_fold",
+                name=tag + "_rho_nuc",
+                computed=cn,
+                measured=rho,
+                note="same CRC density on Nuclear_Physics D=15 — solid of the orifice",
+            )
+        )
+        rows[-1]["error_pct"] = en
+    rows.extend(
+        _endf_keV_dual(
+            endf_path,
+            "Nuclear_Physics",
+            "Condensed_Matter",
+            "cm_nuclear_level_nuc_fold",
+            "cm_nuclear_level_cm_fold",
+            "IAEA/ENDF keV on Nuclear_Physics D=15",
+            "same IAEA keV on Condensed_Matter D=14 — lattice of the orifice",
+        )
+    )
+    return rows
+
+
+def neuro_thermo_rows() -> list[dict[str, Any]]:
+    """Neuroscience D=14 ↔ Thermodynamics D=15 — signaling vs heat.
+
+    Both observed, both hits=1. Equalize at the neural look (δψ=0.7).
+    Dual-route transmitter AA MW on Neuro, Carnot COP on Thermo.
+    Not the social-tank GDP route.
+    """
+    s14 = scalar_at(d_eff=14, delta_psi=0.7, hits=1, observed=True)
+    s15 = scalar_at(d_eff=15, delta_psi=0.7, hits=1, observed=True)
+    live = abs(f(domain_scalar("Neuroscience"))) / abs(
+        f(domain_scalar("Thermodynamics"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="neuro_thermo_S_ratio_same_look",
+            name="S_D14_over_S_D15_at_dpsi_0p7",
+            computed=s14 / s15,
+            measured=1.0,
+            note=(
+                "|S(D=14,δψ=0.7,hits=1)|/|S(D=15,δψ=0.7,hits=1)| vs 1 — "
+                f"signaling vs heat. Live mixed vs 1 is {vs1:.1f}% — not this object."
+            ),
+            extra={
+                "kappa": kappa_domains("Neuroscience", "Thermodynamics"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    mw = {a: m for a, m in AMINO_ACID_MW}
+    for aa in NEURO_AA:
+        m = float(mw[aa])
+        c, e = scaled(m, "Neuroscience")
+        rows.append(
+            _row(
+                prop="neuro_thermo_aa_neuro_fold",
+                name=aa + "_mw_neuro",
+                computed=c,
+                measured=m,
+                note="CRC transmitter AA MW on Neuroscience D=14",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    for name, tc, th in CARNOT_PAIRS:
+        cop = carnot_cop(tc, th)
+        c, e = scaled(cop, "Thermodynamics")
+        rows.append(
+            _row(
+                prop="neuro_thermo_carnot_th_fold",
+                name=name + "_th",
+                computed=c,
+                measured=cop,
+                note="Carnot COP on Thermodynamics D=15",
+            )
+        )
+        rows[-1]["error_pct"] = e
+    return rows
+
+
+def fluid_nuclear_rows(endf_path: Path) -> list[dict[str, Any]]:
+    """Fluid_Dynamics D=15 ↔ Nuclear_Physics D=15 — tank vs orifice, same rung.
+
+    Fluid stays dark. Dual-route Carnot COP on Fluid, ENDF keV on Nuclear.
+    Live vs 1 is the observed mix — not a 0.5% central.
+    """
+    live = abs(f(domain_scalar("Fluid_Dynamics"))) / abs(
+        f(domain_scalar("Nuclear_Physics"))
+    )
+    vs1 = err(live, 1.0)
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="fluid_nuclear_S_ratio",
+            name="S_fluid_over_S_nuc_live",
+            computed=live,
+            measured=1.0,
+            note=(
+                "Live |S_Fluid|/|S_Nuclear| vs 1 mixes dark/observed at D=15. "
+                f"{vs1:.1f}% — same-view question, not a 0.5% central. "
+                "Fluid stays dark."
+            ),
+            kind="structural",
+            extra={
+                "kappa": kappa_domains("Fluid_Dynamics", "Nuclear_Physics"),
+                "live_vs_1_pct": vs1,
+            },
+        ),
+    ]
+    for name, tc, th in CARNOT_PAIRS:
+        cop = carnot_cop(tc, th)
+        cf, ef = scaled(cop, "Fluid_Dynamics")
+        cn, en = scaled(cop, "Nuclear_Physics")
+        rows.append(
+            _row(
+                prop="fluid_nuclear_carnot_fl_fold",
+                name=name + "_fl",
+                computed=cf,
+                measured=cop,
+                note="Carnot COP on Fluid_Dynamics D=15 — tank stays dark",
+            )
+        )
+        rows[-1]["error_pct"] = ef
+        rows.append(
+            _row(
+                prop="fluid_nuclear_carnot_nuc_fold",
+                name=name + "_nuc",
+                computed=cn,
+                measured=cop,
+                note="same COP on Nuclear_Physics D=15 — heat of the orifice",
+            )
+        )
+        rows[-1]["error_pct"] = en
+    rows.extend(
+        _endf_keV_dual(
+            endf_path,
+            "Nuclear_Physics",
+            "Fluid_Dynamics",
+            "fluid_nuclear_level_nuc_fold",
+            "fluid_nuclear_level_fl_fold",
+            "IAEA/ENDF keV on Nuclear_Physics D=15",
+            "same IAEA keV on Fluid_Dynamics D=15 — tank stays dark",
+        )
+    )
+    return rows
+
+
+def fluid_meteo_rows(ndbc_path: Path) -> list[dict[str, Any]]:
+    """Fluid_Dynamics D=15 ↔ Meteorology D=16 — tank vs weather, both dark.
+
+    Equalize at the weather look (δψ=0.8, hits=2, observed=False).
+    Dual-route NDBC pressure. Do not flip dark.
+    """
+    s15 = scalar_at(d_eff=15, delta_psi=0.8, hits=2, observed=False)
+    s16 = scalar_at(d_eff=16, delta_psi=0.8, hits=2, observed=False)
+    live = abs(f(domain_scalar("Fluid_Dynamics"))) / abs(
+        f(domain_scalar("Meteorology"))
+    )
+    vs1 = err(live, 1.0)
+    ratio = s15 / s16
+    rows: list[dict[str, Any]] = [
+        _row(
+            prop="fluid_meteo_S_ratio_same_look",
+            name="S_D15_over_S_D16_at_dpsi_0p8_dark",
+            computed=ratio,
+            measured=1.0,
+            note=(
+                "|S(D=15,δψ=0.8,dark)|/|S(D=16,δψ=0.8,dark)| vs 1 — tank vs weather. "
+                f"Live mixed vs 1 is {vs1:.1f}% — not this object. Do not flip dark."
+            ),
+            kind="structural" if err(ratio, 1.0) > 0.5 else "scalar",
+            extra={
+                "kappa": kappa_domains("Fluid_Dynamics", "Meteorology"),
+                "rejected_live_vs_1_error_pct": vs1,
+            },
+        ),
+    ]
+    if ndbc_path.is_file():
+        doc = json.loads(ndbc_path.read_text(encoding="utf-8"))
+        for rec in doc.get("rows") or []:
+            val = rec.get("pres")
+            if val is None:
+                continue
+            m = float(val)
+            if m <= 0:
+                continue
+            bid = str(rec.get("buoy_id") or "buoy")
+            ts = str(rec.get("timestamp") or "").replace(" ", "_")
+            tag = f"{bid}_{ts}"
+            cf, ef = scaled(m, "Fluid_Dynamics")
+            cm, em = scaled(m, "Meteorology")
+            rows.append(
+                _row(
+                    prop="fluid_meteo_pres_fl_fold",
+                    name=tag + "_fl",
+                    computed=cf,
+                    measured=m,
+                    note="NDBC pressure on Fluid_Dynamics D=15 — tank stays dark",
+                )
+            )
+            rows[-1]["error_pct"] = ef
+            rows.append(
+                _row(
+                    prop="fluid_meteo_pres_meteo_fold",
+                    name=tag + "_meteo",
+                    computed=cm,
+                    measured=m,
+                    note="same NDBC pressure on Meteorology D=16 — weather stays dark",
+                )
+            )
+            rows[-1]["error_pct"] = em
+    return rows
+
+
 # Live view pairs: high |S_i|/|S_j| vs 1 is perception at that fold, not a failed gate.
 PERCEPTION_PAIRS = (
     ("Quantum_Mechanics", "Atomic_Physics", "qm_atomic"),
@@ -2245,6 +3065,10 @@ PERCEPTION_PAIRS = (
     ("Chemistry", "Physical_Chemistry", "chem_pc"),
     ("Condensed_Matter", "Thermodynamics", "cm_thermo"),
     ("Atomic_Physics", "High_Energy_Physics", "atomic_hep"),
+    ("Biochemistry", "Condensed_Matter", "biochem_cm"),
+    ("Condensed_Matter", "Neuroscience", "cm_neuro"),
+    ("Condensed_Matter", "Nuclear_Physics", "cm_nuc"),
+    ("Neuroscience", "Thermodynamics", "neuro_thermo"),
 )
 
 
@@ -2385,5 +3209,17 @@ def suite_rows(
     rows.extend(em_mol_rows())
     rows.extend(mol_mat_rows())
     rows.extend(mol_opt_rows())
+    rows.extend(ac_qo_rows())
+    rows.extend(mat_qo_rows())
+    rows.extend(nuclear_thermo_rows(endf_path))
+    rows.extend(fluid_thermo_rows())
+    rows.extend(meteo_atm_rows(ndbc_path))
+    rows.extend(biochem_cm_rows())
+    rows.extend(cm_neuro_rows())
+    rows.extend(cm_fluid_rows())
+    rows.extend(cm_nuclear_rows(endf_path))
+    rows.extend(neuro_thermo_rows())
+    rows.extend(fluid_nuclear_rows(endf_path))
+    rows.extend(fluid_meteo_rows(ndbc_path))
     rows.extend(perception_view_rows())
     return rows

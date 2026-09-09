@@ -40,7 +40,7 @@ If this table disagrees with CURRENT_STATUS, **CURRENT_STATUS wins**.
 | Residual green (≤0.5% pooled) | **477 / 477** fail **0** | `data/benchmark_margin_audit.json` |
 | Parameter honesty | **ZERO_FREE** | `data/parameter_count_audit.json` |
 | Formula authority | **FORMULA_AUTHORITY_SYSTEM_CLOSED** | `data/formula_authority_closure.json` |
-| Mathlib-class Formal depth | **5229 / 5229 (100%)** L1=0 | `data/mathlib_rederivation_campaign_report.json` |
+| Mathlib-class Formal depth | **5240 / 5240 (100%)** L1=0 | `data/mathlib_rederivation_campaign_report.json` |
 | Catalog multiprover obligations | **2228** · domains **472** | cross-proof report `scientific_catalog_spine` |
 | Full formal obligations | **2587** · atomic **2024** · margin viol **0** | `full_formal_spine` |
 | Multiprover | **`overall_ok: true`** · 7-way bare metal · 8-way hardware | `data/cross_proof_verification_report.json` |

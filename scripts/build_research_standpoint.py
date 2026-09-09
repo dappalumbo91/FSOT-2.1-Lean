@@ -303,6 +303,90 @@ GATED_TISSUES = [
             "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §23",
             "live": "same-look D=9/10 at δψ=0.5; CRC MW vs n; mixed vs 1 retired",
         },
+        {
+            "id": "TISSUE-AC-QO",
+            "cores": ["Acoustics", "Quantum_Optics"],
+            "said": "Lab sound and photon are adjacent D=10/11; equalize the light look",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §24",
+            "live": "same-look D=10/11 at δψ=0.6; CRC c vs n",
+        },
+        {
+            "id": "TISSUE-MAT-QO",
+            "cores": ["Materials_Science", "Quantum_Optics"],
+            "said": "Bulk and photon are adjacent D=10/11; equalize δψ=0.5",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §24",
+            "live": "same-look D=10/11 at δψ=0.5; CRC ρ vs n",
+        },
+        {
+            "id": "TISSUE-NUC-THERMO",
+            "cores": ["Nuclear_Physics", "Thermodynamics"],
+            "said": "Orifice and heat are two looks at D=15; fold 1/0.9 onto D=14",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §25",
+            "live": "look-split vs D=14; ENDF keV + Carnot dual-route",
+        },
+        {
+            "id": "TISSUE-FLUID-THERMO",
+            "cores": ["Fluid_Dynamics", "Thermodynamics"],
+            "said": "Tank and heat share D=15; Fluid stays dark",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §25",
+            "live": "Carnot COP dual-route; live vs 1 is observed mix",
+        },
+        {
+            "id": "TISSUE-METEO-ATM",
+            "cores": ["Meteorology", "Atmospheric_Physics"],
+            "said": "Weather and air tank are adjacent dark CHAOS rungs D=16/17",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §26",
+            "live": "dark same-look δψ=0.8; NDBC pressure; do not flip dark",
+        },
+        {
+            "id": "TISSUE-BIOCHEM-CM",
+            "cores": ["Biochemistry", "Condensed_Matter"],
+            "said": "Molecule and solid are adjacent D=13/14; equalize the CM look",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §27",
+            "live": "same-look D=13/14 at δψ=0.5; CRC AA MW vs metal ρ",
+        },
+        {
+            "id": "TISSUE-CM-NEURO",
+            "cores": ["Condensed_Matter", "Neuroscience"],
+            "said": "Solid and signaling are two looks at D=14; fold onto D=13",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §27",
+            "live": "look-split 0.5/0.7 onto D=13; CRC ρ vs transmitter AA; vs 1 retired",
+        },
+        {
+            "id": "TISSUE-CM-FLUID",
+            "cores": ["Condensed_Matter", "Fluid_Dynamics"],
+            "said": "Ice and water are one H2O, solid vs tank; Fluid stays dark",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §28",
+            "live": "CRC ice ρ on CM, water ρ on Fluid; live vs 1 is observed mix",
+        },
+        {
+            "id": "TISSUE-CM-NUC",
+            "cores": ["Condensed_Matter", "Nuclear_Physics"],
+            "said": "Lattice and orifice are adjacent D=14/15; Fe is the shared class",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §28",
+            "live": "same-look D=14/15 at δψ=0.5; CRC ρ + ENDF keV dual-route",
+        },
+        {
+            "id": "TISSUE-NEURO-THERMO",
+            "cores": ["Neuroscience", "Thermodynamics"],
+            "said": "Signaling and heat are adjacent D=14/15; not the social-tank GDP route",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §27",
+            "live": "same-look D=14/15 at δψ=0.7 hits=1; transmitter AA vs Carnot",
+        },
+        {
+            "id": "TISSUE-FLUID-NUC",
+            "cores": ["Fluid_Dynamics", "Nuclear_Physics"],
+            "said": "Tank and orifice share D=15; Fluid stays dark",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §28",
+            "live": "Carnot + ENDF dual-route; live vs 1 is observed mix",
+        },
+        {
+            "id": "TISSUE-FLUID-METEO",
+            "cores": ["Fluid_Dynamics", "Meteorology"],
+            "said": "Lab tank and weather are adjacent dark rungs D=15/16",
+            "artifact": "docs/SCALE_INTERCONNECT_PHYSICS.md §28",
+            "live": "dark same-look δψ=0.8 hits=2; NDBC pressure; do not flip dark",
+        },
 ]
 
 
@@ -550,7 +634,11 @@ def laws() -> list[dict]:
                 f"Worst live vs 1 {float(pv.get('max_live_vs_1_pct') or 0):.2f}%. "
                 "Same-look D=6/7 vs 1 is 0.046%."
             ),
-            "code": "vendor/fsot_scale_interconnects.py t1_of · SCALE_INTERCONNECT_PHYSICS.md",
+            "code": (
+                "vendor/fsot_scale_interconnects.py t1_of · "
+                "FSOT/Formal/ScalarEngineStructure.lean "
+                "abs_scaled_S_ratio_of_unit_t2_zero_t3 · t3_leftover_of_unit_t2"
+            ),
             "not": (
                 "Stuffing √φ or √(e/φ) onto live vs 1. Retuning δψ. "
                 "Flipping dark folds observed=True. Gating live vs 1 at 0.5%. "
@@ -976,10 +1064,10 @@ def main() -> int:
 
     sl += [
         "",
-        "Next connective: pick **one** remaining ungated adjacent pair that already",
-        "has a public dual table (Ecology beyond the dark look, or Psychology",
-        "beyond Neuroscience) and gate it like PREM+NDBC.",
-        "That is the simulation of tissue. It is not a new theory.",
+        "Next connective: remaining CRC/NIST/NDBC/PREM/NASA pairs —",
+        "Neuroscience↔Fluid/Nuclear, Meteorology↔Oceanography, Atmospheric/Ocean↔Seismology,",
+        "Astronomy↔Planetary_Science. QC stays dark. Ecology/Psychology wait for a named",
+        "public table (do not invent watts). Gate like PREM+NDBC. Not a new theory.",
         "",
         "Related: [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) · [`HOLE_AUDIT.md`](HOLE_AUDIT.md) ·",
         "[`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · [`APPLY.md`](APPLY.md) ·",
