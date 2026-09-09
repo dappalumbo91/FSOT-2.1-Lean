@@ -1,6 +1,6 @@
 # Laws of reality (through this model)
 
-*Generated 2026-09-09T19:12:14.267573+00:00 · pin D1D38A*
+*Generated 2026-09-09T19:16:36.349429+00:00 · pin D1D38A*
 
 These are **not** a second Newton list and **not** the founding-era 35
 discrepancy names. They are what the verification spine actually licenses:
@@ -41,6 +41,7 @@ Same physics, different scale — these are what the panels taught.
 | `D7` | **s8_joint_not_alone** | S8 lock 0.805 sits between Planck and DES. DES-alone is a tension row; the joint is the fair compare. | DES Y6 alone 0.789; joint DES+CMB+low-z 0.806 (arXiv:2601.14559). Euclid DR1 awaiting. |
 | `D8` | **flavor_is_one_fluid** | CKM/PMNS/α_s are seed readouts, not fitted SM inputs. Kill = next PDG combination outside 0.5%. | Higgs/flavor layer inside literature-tight band |
 | `D9` | **perception_is_scale_view** | Perception at a scale is T1 at that fold’s δψ, hits, and observed. Live |S_i|/|S_j| vs 1 asks for the same view; adjacent folds are not supposed to look the same. | T3 leftover 0.000% on 64 view pairs. QM/atomic live vs 1 is 29.86% = T1 view, not a failed 0.5%. Worst live vs 1 178.45%. Same-look D=6/7 vs 1 is 0.046%. |
+| `D10` | **planetary_cycle_is_orifice_unfolded** | A dated Earth cell is R⊕·POOF/25. Solar, volcanic arc, trench, and basin tanks talk at R⊕·POOF — same orifice, compactification off. | cell 39.1 km · cycle 977.8 km. Loading kills: transferred_poof on the arc or already_poofed (Scotia M6.2). Public cell-kill unchanged. |
 
 ## Explicitly not a law (yet / ever)
 

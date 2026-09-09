@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-09T19:12:14.267573+00:00",
+  "generated_at": "2026-09-09T19:16:36.349429+00:00",
   "pin": "D1D38A",
-  "n": 18,
+  "n": 19,
   "laws": [
     {
       "id": "R1",
@@ -182,6 +182,16 @@
       "live": "T3 leftover 0.000% on 64 view pairs. QM/atomic live vs 1 is 29.86% = T1 view, not a failed 0.5%. Worst live vs 1 178.45%. Same-look D=6/7 vs 1 is 0.046%.",
       "code": "vendor/fsot_scale_interconnects.py t1_of \u00b7 FSOT/Formal/ScalarEngineStructure.lean abs_scaled_S_ratio_of_unit_t2_zero_t3 \u00b7 t3_leftover_of_unit_t2",
       "not": "Stuffing \u221a\u03c6 or \u221a(e/\u03c6) onto live vs 1. Retuning \u03b4\u03c8. Flipping dark folds observed=True. Gating live vs 1 at 0.5%. Padding the pooled median with the T1 identity."
+    },
+    {
+      "id": "D10",
+      "kind": "discovered",
+      "name": "planetary_cycle_is_orifice_unfolded",
+      "statement": "A dated Earth cell is R\u2295\u00b7POOF/25. Solar, volcanic arc, trench, and basin tanks talk at R\u2295\u00b7POOF \u2014 same orifice, compactification off.",
+      "closed_form": "cycle_km = 25 \u00b7 kernel_km",
+      "live": "cell 39.1 km \u00b7 cycle 977.8 km. Loading kills: transferred_poof on the arc or already_poofed (Scotia M6.2). Public cell-kill unchanged.",
+      "code": "vendor/fsot_earth_fluid_forecast.py cycle_km \u00b7 FSOT/Formal/ScalarEngineStructure.lean cycle_km_eq_twentyfive_mul_kernel_km",
+      "not": "A fitted 150 km or 1000 km spring. Rewriting issued kill_if. Promising a second mainshock after a recent M\u22655.5."
     }
   ]
 }

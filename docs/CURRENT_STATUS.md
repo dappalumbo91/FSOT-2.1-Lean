@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-09-09T17:33:08.202357+00:00`  
+**Generated:** `2026-09-09T19:16:40.633073+00:00`  
 **Edition stamp:** 2026-09-09  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -68,7 +68,7 @@ Frameworks passed: `coq`, `cross_refinement`, `esp32_harness`, `fstar`, `fstar_r
 | Item | Value |
 |------|-------|
 | Hand PREDs | **77** (PRED-001–084) |
-| Dated scores | hold 62 · kill 43 · awaiting 9 |
+| Dated scores | hold 65 · kill 45 · awaiting 4 |
 | Score table | [`../results/dated_forecast_scores/REPORT.md`](../results/dated_forecast_scores/REPORT.md) |
 | Expansion map | [`../predictions/reports/PREDICTION_EXPANSION_MAP.md`](../predictions/reports/PREDICTION_EXPANSION_MAP.md) |
 

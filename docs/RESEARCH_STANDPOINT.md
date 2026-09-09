@@ -1,6 +1,6 @@
 # Research standpoint — what the hub is, what still has to hold
 
-*Generated 2026-09-09T19:12:14.267573+00:00 · pin D1D38A*
+*Generated 2026-09-09T19:16:36.349429+00:00 · pin D1D38A*
 
 This is the step-back. **Not** another prediction wave and **not** another
 domain count. Label A is the empirical framework. Label B T1–T6 is the

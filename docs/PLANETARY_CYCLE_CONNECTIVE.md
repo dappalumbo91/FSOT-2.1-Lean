@@ -22,6 +22,9 @@ POOF. Do not retune kernel km or POOF. Do not rewrite issued JSON.
 
 **Refresh:** `python scripts/diagnose_planetary_cycle_kills.py`
 
+Lean: `cycle_km = 25 * kernel_km` (`FSOT/Formal/ScalarEngineStructure.lean`
+`cycle_km_eq_twentyfive_mul_kernel_km`). Law D10.
+
 ## Unique loading / volcanic kills
 
 | ID | Place | Cell M≥4.5 | Cycle M≥4.5 | Kp | Verdict | Why |

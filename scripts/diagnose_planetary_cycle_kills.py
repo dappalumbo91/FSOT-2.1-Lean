@@ -389,6 +389,9 @@ def main() -> int:
         "",
         f"**Refresh:** `python scripts/diagnose_planetary_cycle_kills.py`",
         "",
+        "Lean: `cycle_km = 25 * kernel_km` (`FSOT/Formal/ScalarEngineStructure.lean` "
+        "`cycle_km_eq_twentyfive_mul_kernel_km`). Law **D10**.",
+        "",
         "## Unique loading / volcanic kills",
         "",
         "| ID | Place | Cell M≥4.5 | Cycle M≥4.5 | Kp | Verdict | Why |",
@@ -464,6 +467,9 @@ def main() -> int:
         "",
     ]
     OUT_MD.write_text("\n".join(md), encoding="utf-8")
+    ratio = cycle_km() / kernel_km()
+    if abs(ratio - 25.0) > 1e-9:
+        raise SystemExit(f"cycle/kernel = {ratio}, expected 25 (Lean identity)")
     print(f"Wrote {OUT_JSON}")
     print(f"Wrote {OUT_MD}")
     print(f"  n={len(rows)} other={len(other)} by_verdict={by_v} cell={kernel_km():.1f} cycle={cycle_km():.1f}")

@@ -912,6 +912,29 @@ def laws() -> list[dict]:
                 "Padding the pooled median with the T1 identity."
             ),
         },
+        {
+            "id": "D10",
+            "kind": "discovered",
+            "name": "planetary_cycle_is_orifice_unfolded",
+            "statement": (
+                "A dated Earth cell is R⊕·POOF/25. Solar, volcanic arc, trench, "
+                "and basin tanks talk at R⊕·POOF — same orifice, compactification off."
+            ),
+            "closed_form": "cycle_km = 25 · kernel_km",
+            "live": (
+                "cell 39.1 km · cycle 977.8 km. Loading kills: transferred_poof "
+                "on the arc or already_poofed (Scotia M6.2). Public cell-kill unchanged."
+            ),
+            "code": (
+                "vendor/fsot_earth_fluid_forecast.py cycle_km · "
+                "FSOT/Formal/ScalarEngineStructure.lean "
+                "cycle_km_eq_twentyfive_mul_kernel_km"
+            ),
+            "not": (
+                "A fitted 150 km or 1000 km spring. Rewriting issued kill_if. "
+                "Promising a second mainshock after a recent M≥5.5."
+            ),
+        },
     ]
 
 

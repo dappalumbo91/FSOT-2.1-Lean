@@ -373,6 +373,33 @@ theorem t3_leftover_seed_tiny
   exact term3_abs_lt_fifth_default p h_D h_dp h_N h_P h_dt
 
 -- ============================================================
+-- Earth orifice: cell vs planetary cycle (dated-forecast kernel)
+-- ============================================================
+
+/-- Mean Earth radius (km), same handle as `vendor/fsot_earth_fluid_forecast.py`. -/
+def earth_radius_km : ℝ := 6371
+
+/-- Compactified crustal cell: R⊕ · POOF / 25. -/
+def kernel_km : ℝ := earth_radius_km * poof_factor / 25
+
+/-- Planetary-cycle coupling: R⊕ · POOF (same orifice, compactification off). -/
+def cycle_km : ℝ := earth_radius_km * poof_factor
+
+/-- Cycle is the cell with the 25-D fold removed. Not a new coefficient. -/
+theorem cycle_km_eq_twentyfive_mul_kernel_km :
+    cycle_km = (25 : ℝ) * kernel_km := by
+  unfold cycle_km kernel_km
+  have h25 : (25 : ℝ) ≠ 0 := by norm_num
+  field_simp [h25]
+
+/-- Inverse: the dated cell is the planetary orifice compactified by 25. -/
+theorem kernel_km_eq_cycle_div_ceiling :
+    kernel_km = cycle_km / 25 := by
+  have h25 : (25 : ℝ) ≠ 0 := by norm_num
+  rw [cycle_km_eq_twentyfive_mul_kernel_km]
+  field_simp [h25]
+
+-- ============================================================
 -- κ_ij  (bleed coupling, no free spring)
 -- ============================================================
 
@@ -438,19 +465,19 @@ theorem dark_core_unobserved :
 -- ============================================================
 
 /-- Count of named structural identity theorems in this module (inventory pin). -/
-def scalar_engine_structure_theorem_count : ℕ := 47
+def scalar_engine_structure_theorem_count : ℕ := 49
 
 theorem scalar_engine_structure_theorem_count_pos :
     0 < scalar_engine_structure_theorem_count := by
   unfold scalar_engine_structure_theorem_count; decide
 
 theorem scalar_engine_structure_theorem_count_eq :
-    scalar_engine_structure_theorem_count = 47 := by
+    scalar_engine_structure_theorem_count = 49 := by
   unfold scalar_engine_structure_theorem_count; decide
 
 /-- Bundle: master formula structure is definitionally pinned. -/
 theorem scalar_engine_structure_bundle :
-    scalar_engine_structure_theorem_count = 47 ∧
+    scalar_engine_structure_theorem_count = 49 ∧
     (0 : ℝ) < k ∧
     term2 { scale := 1, amplitude := 1, trend_bias := 0 } = 1 := by
   refine ⟨?h1, ?h2, ?h3⟩
@@ -460,7 +487,7 @@ theorem scalar_engine_structure_bundle :
 
 /-- Depth bundle: emergence/damping transport through k-scaling. -/
 theorem scalar_engine_depth_bundle :
-    scalar_engine_structure_theorem_count = 47 ∧
+    scalar_engine_structure_theorem_count = 49 ∧
     (0 : ℝ) < k ∧
     (0 : ℝ) < 0.42 ∧
     (0.42 : ℝ) < k := by
