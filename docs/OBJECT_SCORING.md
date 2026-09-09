@@ -51,4 +51,18 @@ CLOE.3 is a synthetic figure of merit (doi:10.1051/0004-6361/202556861). Zero su
 
 See [`GENETICS_CLAIM_EVIDENCE.md`](GENETICS_CLAIM_EVIDENCE.md) — product **0.13 Å** ≠ AF **~0.47 Å** ≠ cryo-EM FSC **~1.2 Å** ≠ bulk **~13 Å**. Do not cross-cite.
 
-Related: [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) · [`../predictions/reports/H0_MULTI_TOOL_PREDICTIONS.md`](../predictions/reports/H0_MULTI_TOOL_PREDICTIONS.md) · [`PREDATA_RISK.md`](PREDATA_RISK.md)
+## 5. Standing compare (living)
+
+The table above is the rule. The living scoreboard is
+
+[`OBJECT_COMPARE.md`](OBJECT_COMPARE.md) · [`../results/object_compare.json`](../results/object_compare.json)
+
+Refresh: `python scripts/build_object_compare.py`
+
+Append a paper without touching `predictions/`:
+
+```powershell
+python scripts/record_prediction_outcome.py --pred-id PRED-001 --survey "Paper-label" --result hold --measured 70.39 --unit km/s/Mpc --source https://arxiv.org/abs/... --notes "one sentence"
+```
+
+Related: [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md) · [`../predictions/reports/H0_MULTI_TOOL_PREDICTIONS.md`](../predictions/reports/H0_MULTI_TOOL_PREDICTIONS.md) · [`PREDATA_RISK.md`](PREDATA_RISK.md) · [`ISOLATED_RESIDUALS.md`](ISOLATED_RESIDUALS.md)

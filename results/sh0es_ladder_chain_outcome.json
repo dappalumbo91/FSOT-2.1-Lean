@@ -1,20 +1,24 @@
 {
-  "generated_at": "2026-08-18T03:45:05.369050+00:00",
+  "generated_at": "2026-09-09T18:42:36.858222+00:00",
   "pin": "D1D38A",
   "prediction_left_frozen": "predictions/sector_h0_seed.json sh0es_hst_cepheid \u03c1=5.05",
   "measured": {
     "SH0ES_R22": 73.04,
-    "Freedman_JWST_TRGB": 70.39
+    "Freedman_JWST_TRGB": 70.39,
+    "JWST_Perfect_Host": 73.49,
+    "AandA2026_local_network": 73.5
   },
   "computed": {
-    "ladder_chain": 72.855768,
+    "ladder_chain": 72.860293,
     "anchors_only": 70.511048,
-    "hosts_only": 73.801781,
+    "hosts_only": 73.801917,
     "class_bin": 73.773354
   },
   "error_pct": {
-    "ladder_chain_vs_SH0ES": 0.252234,
+    "ladder_chain_vs_SH0ES": 0.246039,
     "anchors_vs_Freedman": 0.171968,
+    "hosts_only_vs_Perfect_Host": 0.424434,
+    "hosts_only_vs_AandA2026": 0.410771,
     "class_bin_vs_SH0ES": 1.004045
   },
   "interface": "local_sky_density + ladder_object_density_model + cepheid_count weights",

@@ -75,7 +75,7 @@ Geometric moduli stay literature (Pietrzyński 2019 18.477; Reid 2019 29.397). W
 
 Pooled median **0.135%**. GREEN. No fitted \(b\) or \(Z_W\).
 
-Per-host moduli (not \(cz/d\) H₀ — Riess does not publish host H₀): NIR intercept relative to NGC 4258 vs independent JWST TRGB (Li+2024 Table 2). Ensemble mean offset **+0.004 mag**. Individual scatter is the TRGB/Cepheid comparison, not a new expansion rate.
+Per-host moduli (not \(cz/d\) H₀ — Riess does not publish host H₀): NIR intercept relative to NGC 4258 vs independent JWST TRGB (Li+2024 Table 2). Ensemble mean offset **+0.004 mag**. Individual host scatter (N1448 ~0.62% of \(\mu\)) is **structural** — TRGB vs Cepheid zeropoint, not a 0.5% central. The named object is the mean.
 
 ### Full Table 2 sample (the other unpublished object)
 

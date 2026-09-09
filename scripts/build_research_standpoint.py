@@ -984,6 +984,10 @@ def main() -> int:
         "formula_corpus",
         "foundational_ontology",
         "nothing_perfection",
+        "adversarial_fractal",
+        "orbital_prediction",
+        "theory_completeness",
+        "sh0es_refined",
     )
     c_thin_measured = [
         r
@@ -1066,13 +1070,22 @@ def main() -> int:
             },
             {
                 "id": "NW-OBJECT",
-                "what": "Science vs FSOT object-compare: arXiv/PDG/survey papers scored against the named lock (OBJECT_SCORING), not a headline number.",
+                "what": (
+                    "Keep OBJECT_COMPARE live: arXiv/PDG/survey papers scored against "
+                    "the named lock. Append via record_prediction_outcome.py. Refresh "
+                    "python scripts/build_object_compare.py."
+                ),
                 "not": "Retuning fsot_predicted when a paper lands.",
             },
             {
                 "id": "NW-CTHIN",
-                "what": "C_thin *measured* panels: name the public table, APPLY, densify records≥20.",
-                "not": "Process/certificate spines counted as scientific depth.",
+                "what": (
+                    "Remaining measured C_thin are SH0ES/Cepheid headline objects "
+                    "(chain, full NIR sample, PL interconnect). Densify only with the "
+                    "next published named table (more JWST TRGB hosts / host-mean mixture). "
+                    "Do not pad with identical-fraction APPLY copies."
+                ),
+                "not": "Process/certificate spines counted as scientific depth. Per-star photometry as a median pad.",
             },
             {
                 "id": "NW-DATED",
@@ -1224,7 +1237,7 @@ def main() -> int:
         "| **Laws ledger** | Verification without stated rules is a scoreboard | this file + [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) |",
         f"| **Connective tissue** | Same physics at two scales is the ToE signature | {len(GATED_TISSUES)} gated · adjacent ungated **{len(miss)}** |",
         "| **APPLY cookbooks** | Worked example per high-value core; general protocol in APPLY.md | Materials · Acoustics · Fluid · Nuclear · Thermo · Chemistry · Neuro · Astronomy · Optics · Seismology · Atomic · EM · HEP · Bio · QC · Ecology · Psychology |",
-        "| **Science vs FSOT** | arXiv/PDG/survey scored on the *named* object | scientist questions + literature packs; needs a standing compare loop |",
+        "| **Science vs FSOT** | arXiv/PDG/survey scored on the *named* object | [`OBJECT_COMPARE.md`](OBJECT_COMPARE.md) living scoreboard; append via record_prediction_outcome.py |",
         "| **C_thin measured** | Green-and-thin is not depth | queue below |",
         "| **Honest refusals** | Clock-time, S2S, prices, diagnoses, CLOE-as-measured | already labeled |",
         "| **Open uniqueness** | Path-integral / T3–T4 uniqueness | stay open. Do not pretend. |",
@@ -1341,8 +1354,8 @@ def main() -> int:
         "5. **If science has no date/place and FSOT issues a window** — score after",
         "`valid_to`. Never rewrite the issue.",
         "",
-        "Standing compare surfaces: `results/literature/`, `predictions/reports/SCIENTIST_OPEN_QUESTIONS.md`,",
-        "the prediction monitor, PDG/Euclid/DESI watches. Do not ingest arXiv as a residual.",
+        "Standing compare: [`OBJECT_COMPARE.md`](OBJECT_COMPARE.md) · `results/literature/` ·",
+        "`predictions/reports/SCIENTIST_OPEN_QUESTIONS.md`. Do not ingest arXiv as a residual.",
         "",
         "## 10. Next work (ranked)",
         "",
@@ -1361,7 +1374,7 @@ def main() -> int:
         "",
         "Related: [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) · [`HOLE_AUDIT.md`](HOLE_AUDIT.md) ·",
         "[`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · [`APPLY.md`](APPLY.md) ·",
-        "[`OBJECT_SCORING.md`](OBJECT_SCORING.md)",
+        "[`OBJECT_SCORING.md`](OBJECT_SCORING.md) · [`OBJECT_COMPARE.md`](OBJECT_COMPARE.md)",
         "",
     ]
     OUT_MD.write_text("\n".join(sl), encoding="utf-8")

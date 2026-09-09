@@ -234,6 +234,38 @@ def host_mu_vs_trgb(nir_hosts: dict[str, dict[str, float]]) -> list[dict[str, fl
     return out
 
 
+def _host_trgb_scalar_rows(
+    host_rows: list[dict[str, float]],
+    *,
+    lab: str,
+) -> list[dict[str, Any]]:
+    """Li+2024 Table 2 per-host μ — named public objects, not cz/d H0."""
+    rows: list[dict[str, Any]] = []
+    for h in host_rows:
+        mu_c = float(h["mu_fsot"])
+        mu_m = float(h["mu_trgb"])
+        rows.append(
+            {
+                "lab": lab,
+                "property": "host_mu_vs_trgb",
+                "name": f"{h['host']}_mu_vs_Li2024_TRGB",
+                "computed": mu_c,
+                "measured": mu_m,
+                "error_pct": abs(mu_c - mu_m) / abs(mu_m) * 100.0,
+                "eval_kind": "literature_band",
+                "record_kind": "structural",
+                "unit": "mag",
+                "note": (
+                    "Per-host TRGB vs Cepheid modulus scatter (Li+2024 Table 2). "
+                    "The named 0.5% object is the ensemble mean, not one host. "
+                    "Not unpublished cz/d H0."
+                ),
+                "n_cepheids": float(h["n"]),
+            }
+        )
+    return rows
+
+
 def lmc_n4258_delta_test(hosts: dict[str, dict[str, float]]) -> dict[str, float]:
     lmc = hosts["LMC"]
     n4258 = hosts["N4258"]
@@ -368,6 +400,7 @@ def suite_rows(table_path: Path, nir_path: Path | None = None) -> list[dict[str,
                     "host_deltas": {h["host"]: round(h["delta"], 4) for h in host_rows},
                 }
             )
+            rows.extend(_host_trgb_scalar_rows(host_rows, lab="cepheid_pl_lab"))
         crowd = n4258_crowding_delta(nir_stars)
         rows.append(
             {
@@ -596,6 +629,7 @@ def full_sample_suite_rows(
                 "host_deltas": {h["host"]: round(h["delta"], 4) for h in host_rows},
             }
         )
+        rows.extend(_host_trgb_scalar_rows(host_rows, lab="sh0es_full_sample_lab"))
 
     diag: dict[str, Any] = {"cz_d": None, "vs_table6": None}
     moduli = host_moduli_vs_n4258(hosts) if "N4258" in hosts else {}

@@ -1,6 +1,6 @@
 # Research standpoint — what the hub is, what still has to hold
 
-*Generated 2026-09-09T18:18:38.040066+00:00 · pin D1D38A*
+*Generated 2026-09-09T18:43:59.307875+00:00 · pin D1D38A*
 
 This is the step-back. **Not** another prediction wave and **not** another
 domain count. Label A is the empirical framework. Label B T1–T6 is the
@@ -16,7 +16,7 @@ frozen ToE checklist. More green files strengthen A only.
 | Extension subdomains | **375** | nearest-D attachments, not other ontologies |
 | Atlas named rows | **403** | coverage map |
 | Green residual files | **477 / 477** | ≤0.5% pooled median |
-| A_strong / B_verified / C_thin | 117 / 338 / 13 | record-depth tiers (C_thin measured **7**) |
+| A_strong / B_verified / C_thin | 117 / 338 / 13 | record-depth tiers (C_thin measured **3**) |
 | Gated tissues | **86** | same physics, two zooms, residual-checked |
 | Adjacent cores still siloed | **0** | 0 = gated; next work is objects/C_thin/dated, not new domains |
 
@@ -55,7 +55,7 @@ Label B is already a frozen checklist (T1–T6). The work that actually
 | **Laws ledger** | Verification without stated rules is a scoreboard | this file + [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) |
 | **Connective tissue** | Same physics at two scales is the ToE signature | 86 gated · adjacent ungated **0** |
 | **APPLY cookbooks** | Worked example per high-value core; general protocol in APPLY.md | Materials · Acoustics · Fluid · Nuclear · Thermo · Chemistry · Neuro · Astronomy · Optics · Seismology · Atomic · EM · HEP · Bio · QC · Ecology · Psychology |
-| **Science vs FSOT** | arXiv/PDG/survey scored on the *named* object | scientist questions + literature packs; needs a standing compare loop |
+| **Science vs FSOT** | arXiv/PDG/survey scored on the *named* object | [`OBJECT_COMPARE.md`](OBJECT_COMPARE.md) living scoreboard; append via record_prediction_outcome.py |
 | **C_thin measured** | Green-and-thin is not depth | queue below |
 | **Honest refusals** | Clock-time, S2S, prices, diagnoses, CLOE-as-measured | already labeled |
 | **Open uniqueness** | Path-integral / T3–T4 uniqueness | stay open. Do not pretend. |
@@ -212,22 +212,18 @@ but have fewer than 20 records — APPLY + public table, not a new domain.
 
 | Domain | Records | Pooled % |
 |--------|--------:|---------:|
-| SH0ES_Ladder_Chain | 2 | 0.2121 |
-| SH0ES_Full_Sample | 7 | 0.1410 |
-| Cepheid_PL_Interconnect | 8 | 0.1350 |
-| Adversarial_Fractal_Break_Tests | 13 | 0.0000 |
-| Domain_Orbital_Predictions | 12 | 0.0000 |
-| SH0ES_Refined | 7 | 0.0000 |
-| Theory_Completeness_Spine | 6 | 0.0000 |
+| SH0ES_Ladder_Chain | 5 | 0.3284 |
+| SH0ES_Full_Sample | 11 | 0.1410 |
+| Cepheid_PL_Interconnect | 12 | 0.1350 |
 
 ## 8. Largest green residuals (honest, not stuffed)
 
 | Domain | Records | Pooled % |
 |--------|--------:|---------:|
 | Zebrafish_Predictive_Validation_Panel | 20 | 0.3580 |
-| SH0ES_Ladder_Chain | 2 | 0.2121 |
-| SH0ES_Full_Sample | 7 | 0.1410 |
-| Cepheid_PL_Interconnect | 8 | 0.1350 |
+| SH0ES_Ladder_Chain | 5 | 0.3284 |
+| SH0ES_Full_Sample | 11 | 0.1410 |
+| Cepheid_PL_Interconnect | 12 | 0.1350 |
 | Econometrics | 172 | 0.1292 |
 | Economics | 157 | 0.1292 |
 | Neuroeconomics | 65 | 0.1050 |
@@ -254,8 +250,8 @@ You were reaching for this loop:
 5. **If science has no date/place and FSOT issues a window** — score after
 `valid_to`. Never rewrite the issue.
 
-Standing compare surfaces: `results/literature/`, `predictions/reports/SCIENTIST_OPEN_QUESTIONS.md`,
-the prediction monitor, PDG/Euclid/DESI watches. Do not ingest arXiv as a residual.
+Standing compare: [`OBJECT_COMPARE.md`](OBJECT_COMPARE.md) · `results/literature/` ·
+`predictions/reports/SCIENTIST_OPEN_QUESTIONS.md`. Do not ingest arXiv as a residual.
 
 ## 10. Next work (ranked)
 
@@ -264,8 +260,8 @@ the prediction monitor, PDG/Euclid/DESI watches. Do not ingest arXiv as a residu
 | `NW-LAWS` | Keep this laws ledger live. Do not add a law that is not engine or a named solve. | 35 founding discrepancy names as if they were Newton's laws. |
 | `NW-TISSUE` | Adjacent ungated cores are 0. Keep κ_ij dual-route residuals live on interconnect refresh. Do not hunt a new pair for its own sake. | A free coupling coefficient. More isolated green files. |
 | `NW-APPLY` | Worked APPLY cookbooks cover the remaining high-value cores (Materials, Acoustics, Fluid, Nuclear, Thermo, Chemistry ladder, Neuroscience, Astronomy). Satellite folds use the neighbor page. Keep each cookbook honest to the named public table. | A second math key. |
-| `NW-OBJECT` | Science vs FSOT object-compare: arXiv/PDG/survey papers scored against the named lock (OBJECT_SCORING), not a headline number. | Retuning fsot_predicted when a paper lands. |
-| `NW-CTHIN` | C_thin *measured* panels: name the public table, APPLY, densify records≥20. | Process/certificate spines counted as scientific depth. |
+| `NW-OBJECT` | Keep OBJECT_COMPARE live: arXiv/PDG/survey papers scored against the named lock. Append via record_prediction_outcome.py. Refresh python scripts/build_object_compare.py. | Retuning fsot_predicted when a paper lands. |
+| `NW-CTHIN` | Remaining measured C_thin are SH0ES/Cepheid headline objects (chain, full NIR sample, PL interconnect). Densify only with the next published named table (more JWST TRGB hosts / host-mean mixture). Do not pad with identical-fraction APPLY copies. | Process/certificate spines counted as scientific depth. Per-star photometry as a median pad. |
 | `NW-DATED` | Iron dated-window playbook (09-01 scored hold 20 / kill 4; remaining awaiting are missing catalogs). Next issue uses corrected hydro IDs. Laws of the valve, not USGS replacement. | Rewriting issued JSON. Clock-time hypocenter. |
 | `NW-CASP` | Genetics CASP/CAMEO blind protocol (Grok Build owns the run). | Quoting 0.13 Å as sequence-only. Cross-citing FSC Å. |
 | `NW-OPEN` | T3/T4 uniqueness / path-integral confinement stays open research. Euclid DR1 12 Nov 2026 is a watch. | Pretending Label B uniqueness is proved. Euclid CLOE as measured. |
@@ -277,4 +273,4 @@ and next published mixture, do not retune ρ. Not a new theory.
 
 Related: [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) · [`HOLE_AUDIT.md`](HOLE_AUDIT.md) ·
 [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · [`APPLY.md`](APPLY.md) ·
-[`OBJECT_SCORING.md`](OBJECT_SCORING.md)
+[`OBJECT_SCORING.md`](OBJECT_SCORING.md) · [`OBJECT_COMPARE.md`](OBJECT_COMPARE.md)

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T03:45:05.369050+00:00",
+  "generated_at": "2026-09-09T18:42:36.856220+00:00",
   "domain": "SH0ES_Ladder_Chain",
   "authority_path": "C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fsot_compute.py",
   "source": [
@@ -17,13 +17,13 @@
     "astronomy"
   ],
   "D_eff": 20,
-  "record_count": 2,
-  "observable_count": 2,
-  "scalar_record_count": 2,
+  "record_count": 5,
+  "observable_count": 5,
+  "scalar_record_count": 4,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.212101,
-  "pooled_median_error_pct": 0.212101,
-  "headline_median_error_pct": 0.252234,
+  "median_error_pct": 0.328405,
+  "pooled_median_error_pct": 0.328405,
+  "headline_median_error_pct": 0.410771,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -42,19 +42,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.212101,
+      "computed": 0.328405,
       "measured": 0.0,
-      "error_pct": 0.212101,
-      "observable_count": 2
+      "error_pct": 0.328405,
+      "observable_count": 5
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "fsot_prediction",
       "name": "ladder_chain",
-      "computed": 0.252234,
+      "computed": 0.410771,
       "measured": 0.0,
-      "error_pct": 0.252234,
-      "observable_count": 2
+      "error_pct": 0.410771,
+      "observable_count": 4
     }
   ],
   "material_records": [
@@ -62,9 +62,9 @@
       "lab": "sh0es_ladder_chain_lab",
       "property": "published_h0",
       "name": "SH0ES_R22_ladder_chain",
-      "computed": 72.855768,
+      "computed": 72.860293,
       "measured": 73.04,
-      "error_pct": 0.252234,
+      "error_pct": 0.246039,
       "eval_kind": "fsot_prediction",
       "record_kind": "scalar",
       "unit": "km/s/Mpc",
@@ -81,11 +81,47 @@
       "record_kind": "scalar",
       "unit": "km/s/Mpc",
       "note": "LMC+NGC4258 count-weighted vs Freedman JWST TRGB (same mild sector)."
+    },
+    {
+      "lab": "sh0es_ladder_chain_lab",
+      "property": "local_ladder_h0",
+      "name": "JWST_Perfect_Host_vs_hosts_only",
+      "computed": 73.801917,
+      "measured": 73.49,
+      "error_pct": 0.424434,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "unit": "km/s/Mpc",
+      "note": "JWST Perfect Host 73.49\u00b10.93 is the local Cepheid ladder (PRED-024 / hosts-only), not PRED-001 70.75."
+    },
+    {
+      "lab": "sh0es_ladder_chain_lab",
+      "property": "local_ladder_h0",
+      "name": "AandA2026_local_network_vs_hosts_only",
+      "computed": 73.801917,
+      "measured": 73.5,
+      "error_pct": 0.410771,
+      "eval_kind": "fsot_prediction",
+      "record_kind": "scalar",
+      "unit": "km/s/Mpc",
+      "note": "A&A 2026 local distance network 73.50\u00b10.81 is the same local-ladder object as Perfect Host, not the bridge."
+    },
+    {
+      "lab": "sh0es_ladder_chain_lab",
+      "property": "class_bin_h0",
+      "name": "SH0ES_class_bin_vs_R22",
+      "computed": 73.773354,
+      "measured": 73.04,
+      "error_pct": 1.004045,
+      "eval_kind": "literature_band",
+      "record_kind": "structural",
+      "unit": "km/s/Mpc",
+      "note": "ISO-SHOES-CLASS-BIN 1%. Frozen \u03c1=5.05. Not a 0.5% central. Score the chain, not this row."
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.212101,
-    "max_scalar_error_pct": 0.252234,
+    "scalar_pooled_median_error_pct": 0.328405,
+    "max_scalar_error_pct": 0.424434,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -396,14 +432,190 @@
       "density_model": 5.055014,
       "fsot_h0": 73.77865,
       "cepheid_count": 66
+    },
+    {
+      "host": "Mrk1337",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 193.143,
+      "dec_deg": -9.778,
+      "density_sky": -0.114169,
+      "density_model": 5.04423,
+      "fsot_h0": 73.767261,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC691",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 27.669,
+      "dec_deg": 21.757,
+      "density_sky": 0.17526,
+      "density_model": 5.185612,
+      "fsot_h0": 73.916574,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC105",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 6.32,
+      "dec_deg": 12.883,
+      "density_sky": 0.148099,
+      "density_model": 5.172344,
+      "fsot_h0": 73.902562,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC2525",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 121.409,
+      "dec_deg": -11.427,
+      "density_sky": -0.023848,
+      "density_model": 5.088351,
+      "fsot_h0": 73.813857,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC2608",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 128.82,
+      "dec_deg": 28.471,
+      "density_sky": -0.033476,
+      "density_model": 5.083648,
+      "fsot_h0": 73.808889,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC3147",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 154.231,
+      "dec_deg": 73.402,
+      "density_sky": -0.028373,
+      "density_model": 5.08614,
+      "fsot_h0": 73.811522,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC3254",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 157.347,
+      "dec_deg": 29.502,
+      "density_sky": -0.078658,
+      "density_model": 5.061577,
+      "fsot_h0": 73.78558,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC3583",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 168.547,
+      "dec_deg": 48.316,
+      "density_sky": -0.066374,
+      "density_model": 5.067577,
+      "fsot_h0": 73.791918,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC4680",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 191.727,
+      "dec_deg": -11.635,
+      "density_sky": -0.114313,
+      "density_model": 5.04416,
+      "fsot_h0": 73.767187,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC5468",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 211.649,
+      "dec_deg": -5.453,
+      "density_sky": -0.117655,
+      "density_model": 5.042528,
+      "fsot_h0": 73.765463,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC5728",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 220.598,
+      "dec_deg": -17.258,
+      "density_sky": -0.11659,
+      "density_model": 5.043048,
+      "fsot_h0": 73.766012,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC5861",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 227.313,
+      "dec_deg": -11.317,
+      "density_sky": -0.114049,
+      "density_model": 5.044289,
+      "fsot_h0": 73.767323,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC7329",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 340.096,
+      "dec_deg": -66.477,
+      "density_sky": -0.016529,
+      "density_model": 5.091926,
+      "fsot_h0": 73.817632,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC7541",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 348.677,
+      "dec_deg": 4.532,
+      "density_sky": 0.103678,
+      "density_model": 5.150645,
+      "fsot_h0": 73.879646,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC7678",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 352.114,
+      "dec_deg": 22.425,
+      "density_sky": 0.096634,
+      "density_model": 5.147204,
+      "fsot_h0": 73.876011,
+      "cepheid_count": 1
+    },
+    {
+      "host": "NGC976",
+      "method": "SH0ES_Cepheid",
+      "kind": "host",
+      "ra_deg": 38.5,
+      "dec_deg": 20.975,
+      "density_sky": 0.184425,
+      "density_model": 5.190089,
+      "fsot_h0": 73.921302,
+      "cepheid_count": 1
     }
   ],
   "chain": {
-    "h0_chain": 72.85576814814812,
-    "h0_hosts_only": 73.80178146080857,
+    "h0_chain": 72.86029314774719,
+    "h0_hosts_only": 73.80191680327866,
     "h0_anchors_only": 70.51104803578733,
-    "weight_sum": 3402.0,
-    "host_weight_sum": 2424.0,
+    "weight_sum": 3418.0,
+    "host_weight_sum": 2440.0,
     "anchor_weight_sum": 978.0
   },
   "class_bin_h0": 73.773354,

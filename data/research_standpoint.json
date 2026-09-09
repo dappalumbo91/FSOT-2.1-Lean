@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T18:18:38.040066+00:00",
+  "generated_at": "2026-09-09T18:43:59.307875+00:00",
   "pin": "D1D38A",
   "purpose": "Standpoint of the hub as a research-grade ToE candidate: what is covered, what is already law, what still needs depth \u2014 not more domains.",
   "counts": {
@@ -11,7 +11,7 @@
     "tier_A_strong": 117,
     "tier_B_verified": 338,
     "tier_C_thin": 13,
-    "tier_C_thin_measured": 7,
+    "tier_C_thin_measured": 3,
     "gated_tissues": 86,
     "adjacent_ungated_pairs": 0,
     "engine_laws": 9,
@@ -1068,44 +1068,20 @@
     {
       "file": "sh0es_ladder_chain_benchmark.json",
       "domain": "SH0ES_Ladder_Chain",
-      "records": 2,
-      "pooled_pct": 0.212101
+      "records": 5,
+      "pooled_pct": 0.328405
     },
     {
       "file": "sh0es_full_sample_benchmark.json",
       "domain": "SH0ES_Full_Sample",
-      "records": 7,
+      "records": 11,
       "pooled_pct": 0.14095024176268078
     },
     {
       "file": "cepheid_pl_interconnect_benchmark.json",
       "domain": "Cepheid_PL_Interconnect",
-      "records": 8,
-      "pooled_pct": 0.1349881432328604
-    },
-    {
-      "file": "adversarial_fractal_break_benchmark.json",
-      "domain": "Adversarial_Fractal_Break_Tests",
-      "records": 13,
-      "pooled_pct": 0.0
-    },
-    {
-      "file": "domain_orbital_predictions_benchmark.json",
-      "domain": "Domain_Orbital_Predictions",
       "records": 12,
-      "pooled_pct": 0.0
-    },
-    {
-      "file": "sh0es_refined_benchmark.json",
-      "domain": "SH0ES_Refined",
-      "records": 7,
-      "pooled_pct": 0.0
-    },
-    {
-      "file": "theory_completeness_spine_benchmark.json",
-      "domain": "Theory_Completeness_Spine",
-      "records": 6,
-      "pooled_pct": 0.0
+      "pooled_pct": 0.1349881432328604
     }
   ],
   "largest_pooled": [
@@ -1118,19 +1094,19 @@
     {
       "file": "sh0es_ladder_chain_benchmark.json",
       "domain": "SH0ES_Ladder_Chain",
-      "records": 2,
-      "pooled_pct": 0.212101
+      "records": 5,
+      "pooled_pct": 0.328405
     },
     {
       "file": "sh0es_full_sample_benchmark.json",
       "domain": "SH0ES_Full_Sample",
-      "records": 7,
+      "records": 11,
       "pooled_pct": 0.14095024176268078
     },
     {
       "file": "cepheid_pl_interconnect_benchmark.json",
       "domain": "Cepheid_PL_Interconnect",
-      "records": 8,
+      "records": 12,
       "pooled_pct": 0.1349881432328604
     },
     {
@@ -1200,13 +1176,13 @@
     },
     {
       "id": "NW-OBJECT",
-      "what": "Science vs FSOT object-compare: arXiv/PDG/survey papers scored against the named lock (OBJECT_SCORING), not a headline number.",
+      "what": "Keep OBJECT_COMPARE live: arXiv/PDG/survey papers scored against the named lock. Append via record_prediction_outcome.py. Refresh python scripts/build_object_compare.py.",
       "not": "Retuning fsot_predicted when a paper lands."
     },
     {
       "id": "NW-CTHIN",
-      "what": "C_thin *measured* panels: name the public table, APPLY, densify records\u226520.",
-      "not": "Process/certificate spines counted as scientific depth."
+      "what": "Remaining measured C_thin are SH0ES/Cepheid headline objects (chain, full NIR sample, PL interconnect). Densify only with the next published named table (more JWST TRGB hosts / host-mean mixture). Do not pad with identical-fraction APPLY copies.",
+      "not": "Process/certificate spines counted as scientific depth. Per-star photometry as a median pad."
     },
     {
       "id": "NW-DATED",

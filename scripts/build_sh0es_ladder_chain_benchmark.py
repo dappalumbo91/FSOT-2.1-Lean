@@ -164,6 +164,51 @@ def main() -> int:
             "unit": "km/s/Mpc",
             "note": "LMC+NGC4258 count-weighted vs Freedman JWST TRGB (same mild sector).",
         },
+        {
+            "lab": "sh0es_ladder_chain_lab",
+            "property": "local_ladder_h0",
+            "name": "JWST_Perfect_Host_vs_hosts_only",
+            "computed": round(h0_host, 6),
+            "measured": 73.49,
+            "error_pct": round(_err(h0_host, 73.49), 6),
+            "eval_kind": "fsot_prediction",
+            "record_kind": "scalar",
+            "unit": "km/s/Mpc",
+            "note": (
+                "JWST Perfect Host 73.49±0.93 is the local Cepheid ladder "
+                "(PRED-024 / hosts-only), not PRED-001 70.75."
+            ),
+        },
+        {
+            "lab": "sh0es_ladder_chain_lab",
+            "property": "local_ladder_h0",
+            "name": "AandA2026_local_network_vs_hosts_only",
+            "computed": round(h0_host, 6),
+            "measured": 73.50,
+            "error_pct": round(_err(h0_host, 73.50), 6),
+            "eval_kind": "fsot_prediction",
+            "record_kind": "scalar",
+            "unit": "km/s/Mpc",
+            "note": (
+                "A&A 2026 local distance network 73.50±0.81 is the same "
+                "local-ladder object as Perfect Host, not the bridge."
+            ),
+        },
+        {
+            "lab": "sh0es_ladder_chain_lab",
+            "property": "class_bin_h0",
+            "name": "SH0ES_class_bin_vs_R22",
+            "computed": round(class_h0, 6),
+            "measured": sh0es_lit,
+            "error_pct": round(_err(class_h0, sh0es_lit), 6),
+            "eval_kind": "literature_band",
+            "record_kind": "structural",
+            "unit": "km/s/Mpc",
+            "note": (
+                "ISO-SHOES-CLASS-BIN 1%. Frozen ρ=5.05. Not a 0.5% central. "
+                "Score the chain, not this row."
+            ),
+        },
     ]
 
     doc = _bench_v11(
@@ -180,7 +225,17 @@ def main() -> int:
             "data/frb_repeater_cache.json",
             "Riess+2022 SH0ES public Cepheid counts",
         ],
-        channel_stats=[("fsot_prediction", "ladder_chain", [float(r["error_pct"]) for r in records])],
+        channel_stats=[
+            (
+                "fsot_prediction",
+                "ladder_chain",
+                [
+                    float(r["error_pct"])
+                    for r in records
+                    if r.get("record_kind") != "structural"
+                ],
+            )
+        ],
         sota_baselines={
             "ladder_chain": {
                 "sota_typical_error_pct": 1.0,
@@ -205,7 +260,12 @@ def main() -> int:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "pin": "D1D38A",
         "prediction_left_frozen": "predictions/sector_h0_seed.json sh0es_hst_cepheid ρ=5.05",
-        "measured": {"SH0ES_R22": sh0es_lit, "Freedman_JWST_TRGB": freedman_lit},
+        "measured": {
+            "SH0ES_R22": sh0es_lit,
+            "Freedman_JWST_TRGB": freedman_lit,
+            "JWST_Perfect_Host": 73.49,
+            "AandA2026_local_network": 73.50,
+        },
         "computed": {
             "ladder_chain": round(h0_chain, 6),
             "anchors_only": round(h0_anc, 6),
@@ -215,6 +275,8 @@ def main() -> int:
         "error_pct": {
             "ladder_chain_vs_SH0ES": round(_err(h0_chain, sh0es_lit), 6),
             "anchors_vs_Freedman": round(_err(h0_anc, freedman_lit), 6),
+            "hosts_only_vs_Perfect_Host": round(_err(h0_host, 73.49), 6),
+            "hosts_only_vs_AandA2026": round(_err(h0_host, 73.50), 6),
             "class_bin_vs_SH0ES": round(_err(class_h0, sh0es_lit), 6),
         },
         "interface": "local_sky_density + ladder_object_density_model + cepheid_count weights",

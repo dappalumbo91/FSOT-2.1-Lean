@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-08-18T04:00:59.502124+00:00",
+  "generated_at": "2026-09-09T18:43:14.316026+00:00",
   "domain": "Cepheid_PL_Interconnect",
   "authority_path": "C:/Users/damia/Desktop/FSOT-2.1-Lean/vendor/fsot_compute.py",
   "source": [
@@ -20,13 +20,13 @@
     "chemistry"
   ],
   "D_eff": 20,
-  "record_count": 8,
-  "observable_count": 8,
+  "record_count": 12,
+  "observable_count": 12,
   "scalar_record_count": 8,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.1349881432328604,
   "pooled_median_error_pct": 0.1349881432328604,
-  "headline_median_error_pct": 0.1602112500146586,
+  "headline_median_error_pct": 0.20548535072862298,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -48,16 +48,16 @@
       "computed": 0.134988,
       "measured": 0.0,
       "error_pct": 0.1349881432328604,
-      "observable_count": 8
+      "observable_count": 12
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "fsot_prediction",
       "name": "cepheid_pl",
-      "computed": 0.160211,
+      "computed": 0.205485,
       "measured": 0.0,
-      "error_pct": 0.1602112500146586,
-      "observable_count": 8
+      "error_pct": 0.20548535072862298,
+      "observable_count": 12
     }
   ],
   "material_records": [
@@ -150,6 +150,58 @@
         "N3447": 0.0789,
         "N5584": 0.0653
       }
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "host_mu_vs_trgb",
+      "name": "N1448_mu_vs_Li2024_TRGB",
+      "computed": 31.19492014038834,
+      "measured": 31.39,
+      "error_pct": 0.6214713590686838,
+      "eval_kind": "literature_band",
+      "record_kind": "structural",
+      "unit": "mag",
+      "note": "Per-host TRGB vs Cepheid modulus scatter (Li+2024 Table 2). The named 0.5% object is the ensemble mean, not one host. Not unpublished cz/d H0.",
+      "n_cepheids": 73.0
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "host_mu_vs_trgb",
+      "name": "N3370_mu_vs_Li2024_TRGB",
+      "computed": 32.258448061825,
+      "measured": 32.19,
+      "error_pct": 0.212637657114017,
+      "eval_kind": "literature_band",
+      "record_kind": "structural",
+      "unit": "mag",
+      "note": "Per-host TRGB vs Cepheid modulus scatter (Li+2024 Table 2). The named 0.5% object is the ensemble mean, not one host. Not unpublished cz/d H0.",
+      "n_cepheids": 73.0
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "host_mu_vs_trgb",
+      "name": "N3447_mu_vs_Li2024_TRGB",
+      "computed": 31.99885403852576,
+      "measured": 31.92,
+      "error_pct": 0.24703646154686199,
+      "eval_kind": "literature_band",
+      "record_kind": "structural",
+      "unit": "mag",
+      "note": "Per-host TRGB vs Cepheid modulus scatter (Li+2024 Table 2). The named 0.5% object is the ensemble mean, not one host. Not unpublished cz/d H0.",
+      "n_cepheids": 101.0
+    },
+    {
+      "lab": "cepheid_pl_lab",
+      "property": "host_mu_vs_trgb",
+      "name": "N5584_mu_vs_Li2024_TRGB",
+      "computed": 31.865344341531703,
+      "measured": 31.8,
+      "error_pct": 0.20548535072862298,
+      "eval_kind": "literature_band",
+      "record_kind": "structural",
+      "unit": "mag",
+      "note": "Per-host TRGB vs Cepheid modulus scatter (Li+2024 Table 2). The named 0.5% object is the ensemble mean, not one host. Not unpublished cz/d H0.",
+      "n_cepheids": 165.0
     },
     {
       "lab": "cepheid_pl_lab",

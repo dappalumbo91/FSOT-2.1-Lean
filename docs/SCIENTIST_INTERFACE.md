@@ -18,7 +18,7 @@ A literature number is a **named object**. Scoring the wrong object is a false k
 | SH0ES 73.04 | ladder **chain** 72.856 (0.252%) | class bin 73.773 as a 0.5% central |
 | Live \(\lvert S_i/S_j\rvert\) vs 1 | same-view question (D9) | 0.5% green gate |
 
-Object table: [`OBJECT_SCORING.md`](OBJECT_SCORING.md).
+Object table: [`OBJECT_SCORING.md`](OBJECT_SCORING.md). Living scoreboard: [`OBJECT_COMPARE.md`](OBJECT_COMPARE.md).
 
 ---
 
