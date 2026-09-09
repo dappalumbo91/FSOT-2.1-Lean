@@ -2,7 +2,7 @@
 
 **Purpose:** Enough structure for a mathematician or scientific auditor to **reconstruct**, **verify**, and **simulate** the FSOT scalar engine and its domain interfaces without folklore.
 
-**Flagship paper freeze (2026-09-09):** [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) — Label A/B, 477/477, Lean structure theorems 52, classical YM uniqueness OPEN_NOT_CLAIMED. Full T1/T2/T3 identities below match that manuscript.  
+**Flagship paper freeze (2026-09-09):** [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) — Label A/B, 477/477, Lean structure theorems 52. Classical YM uniqueness is **OPEN_NOT_CLAIMED** because it is a different theorem than the Lean attractor (`FSOT/Formal/UniquenessAttractor.lean`) — see [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md). Coverage list: [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md). Worked APPLY: [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md). Full T1/T2/T3 identities below match that manuscript.  
 **Companion machine dumps:**  
 - [`data/fsot_system_math_audit.json`](../data/fsot_system_math_audit.json) — seeds, layers, 35 domains, consistency  
 - [`data/fsot_building_block_hierarchy.json`](../data/fsot_building_block_hierarchy.json) — nodes/edges for hierarchical simulation  

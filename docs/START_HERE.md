@@ -33,6 +33,10 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 | Working scientist / engineer | [`CONCEPTS.md`](CONCEPTS.md) → [`FSOT_MATH_KEY_ONEPAGER.md`](FSOT_MATH_KEY_ONEPAGER.md) → [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) · instrument: [`SCIENTIFIC_INSTRUMENT.md`](SCIENTIFIC_INSTRUMENT.md) |
 | PhD / mathematician | [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md) → Math key §14 + [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) |
 | Flagship paper (Label A/B) | [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) · freeze 2026-09-09, 477/477 |
+| Worked examples (cells / chem / sky) | [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md) |
+| Why something is not claimed | [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md) · uniqueness: [`UNIQUENESS_RESEARCH_SPINE.md`](UNIQUENESS_RESEARCH_SPINE.md) |
+| What 477 files cover | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) |
+| Next sibling text / sim | [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md) |
 | Here to break it | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
 
 ## 10-minute path (any technical reader)

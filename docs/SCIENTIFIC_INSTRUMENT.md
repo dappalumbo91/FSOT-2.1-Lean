@@ -70,6 +70,6 @@ Siblings (same pin, different product): [`../RELATED_EMBODIMENTS.md`](../RELATED
 
 The preprint **articulates** R1–R9 and D1–D11. The repo **executes** them. The siblings **apply** them.
 
-**Live Paper 03 freeze:** edition `arxiv-03-fsot-theory-of-everything-claim-2026-09-09`, 477/477 green, pin D1D38A, laws through D11, claim SHA `40de0d9` (accept `main` tip ≥ that SHA if green stays 477/477). Manuscript: Desktop `arxiv-papers/03-fsot-theory-of-everything-claim/`. Hub pins: [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/).
+**Live Paper 03 freeze:** edition `arxiv-03-fsot-theory-of-everything-claim-2026-09-09`, 477/477 green, pin D1D38A, laws through D11, claim SHA `40de0d9` (accept `main` tip ≥ that SHA if green stays 477/477). This GitHub freeze is the **authority preprint** (not an arXiv upload). Manuscript: Desktop `arxiv-papers/03-fsot-theory-of-everything-claim/`. Hub pins: [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/). Worked examples: [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md). Unclaimed ledger: [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md). Coverage: [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md). Sibling slots: [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md).
 
 Kill: a per-user fitted ε. Kill: siloing a second scalar engine per field. Kill: stuffing a dump into the 0.5% gate.

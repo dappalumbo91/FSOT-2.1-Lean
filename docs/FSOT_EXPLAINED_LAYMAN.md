@@ -15,6 +15,9 @@ This is the plain-language explanation of what FSOT is, why it exists, and how t
 | Full technical key | [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) |
 | Use it as a tool | [`SCIENTIFIC_INSTRUMENT.md`](SCIENTIFIC_INSTRUMENT.md) · [`APPLY.md`](APPLY.md) |
 | The checklist paper | [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) |
+| Three worked examples | [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md) — water, cells, planets |
+| Why some things are not claimed | [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md) |
+| What the 477 files are | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) |
 
 For technical proof details, see `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md` and `docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`.
 

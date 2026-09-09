@@ -17,6 +17,10 @@ This is **one theory**, pin **D1D38A**. Siblings are folds, not other laws.
 | Mathematician | [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md) | `FSOT/Formal/Scalar.lean` |
 | ToE checklist | [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) | Label A now · Label B T1–T6 frozen |
 | Standpoint / laws | [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md) | [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) — engine + discovered, not more domains |
+| Worked examples | [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md) | cells / chemistry / astronomy |
+| Why not claimed | [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md) | uniqueness split |
+| 477-file coverage | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) | what the program solves for |
+| Next sibling text | [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md) | residual vs product |
 | Isolated residuals | [`ISOLATED_RESIDUALS.md`](ISOLATED_RESIDUALS.md) | Ugly numbers diagnosed, **not** stuffed into 0.5% |
 | FRB orifice | [`FRB_ORIFICE.md`](FRB_ORIFICE.md) | Saloon-door vs paper-rip; not local sky density |
 

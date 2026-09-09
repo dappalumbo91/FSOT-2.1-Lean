@@ -18,4 +18,13 @@ Topic-named PDF: `03-fsot-theory-of-everything-claim.pdf`
 Build: `pwsh build-pdf.ps1`  
 Claim check: `python verify_paper_claims.py --fsot-root <clone>`
 
-The PDF is the checklist paper, not the 477-domain atlas. How to *use* the engine: [`docs/SCIENTIFIC_INSTRUMENT.md`](../../docs/SCIENTIFIC_INSTRUMENT.md). Lay explanation: [`docs/FSOT_EXPLAINED_LAYMAN.md`](../../docs/FSOT_EXPLAINED_LAYMAN.md).
+The PDF is the checklist paper, not the 477-domain atlas. GitHub is the authority preprint (not an arXiv upload).
+
+| Use | Doc |
+|-----|-----|
+| How to apply | [`docs/WORKED_EXAMPLES.md`](../../docs/WORKED_EXAMPLES.md) (cells, chemistry, astronomy) |
+| Why unclaimed | [`docs/WHY_NOT_CLAIMED.md`](../../docs/WHY_NOT_CLAIMED.md) |
+| 477-file list | [`docs/COVERAGE_REFERENCE.md`](../../docs/COVERAGE_REFERENCE.md) |
+| Next sibling text/sim | [`docs/SIBLING_APPLICATION_GAPS.md`](../../docs/SIBLING_APPLICATION_GAPS.md) |
+| Instrument | [`docs/SCIENTIFIC_INSTRUMENT.md`](../../docs/SCIENTIFIC_INSTRUMENT.md) |
+| Layman | [`docs/FSOT_EXPLAINED_LAYMAN.md`](../../docs/FSOT_EXPLAINED_LAYMAN.md) |
