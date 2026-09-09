@@ -17,7 +17,19 @@ retired formula, do-not-use note — **not** an open isolate.
 
 | ID | Error | Verdict | Why | Next apply |
 |----|------:|---------|-----|------------|
-| `ISO-SHOES-CLASS-BIN` | **1.00%** | WRONG_OBJECT_ISOLATED | 73.04 is a three-rung mixture, not the class bin. Chain 72.856 vs 73.04 is 0.252%. | Kill the class row on the 2.5% band; score the chain; do not retune ρ |
+| `ISO-SHOES-CLASS-BIN` | **1.00%** | WRONG_OBJECT_ISOLATED | 73.04 is a three-rung mixture, not the class bin. Chain 72.856 vs 73.04 is 0.252%. | **Workable without retune (below).** Kill the class row on the 2.5% band; score the chain. Forbidden: ρ 5.05→4.36 |
+
+### SH0ES — what can still be worked (frozen class row stays)
+
+The 1% is isolated on purpose. These are the remaining **named objects**, not a ρ fit:
+
+1. **Keep scoring the chain** — `SH0ES_Ladder_Chain` 72.856 vs 73.04 (0.252%) is the mixture object. Promote host-mean mixture in `results/` when the next SH0ES/JWST catalog names the same average. Do not rewrite `predictions/sector_h0_seed.json`.
+2. **Per-host \(H_0=cz/d\)** stays a **diagnostic** (local flow), not SH0ES H₀. Do not 0.5%-gate individuals.
+3. **JWST Perfect Host 73.49** scores on PRED-024 / local ladder, not PRED-001 70.75 ([`OBJECT_SCORING.md`](OBJECT_SCORING.md)).
+4. **Euclid DR1 ~12 Nov 2026** is an independent drop for S8 / \(w_a\), not a SH0ES retune.
+5. **CCHP TRGB / JAGB** already sit on other ρ sectors (0.005% / 0.03%). Hold those as the cross-check, not a blend into 73.04.
+
+Forbidden: least-squares ρ, averaging Planck 67.4 with 73.04 and calling it one \(H_0\), a new Cepheid metallicity knob.
 
 ## Remedied — retired formulas (do not reuse, do not keep open)
 

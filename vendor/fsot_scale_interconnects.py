@@ -120,6 +120,8 @@ _FACTOR = {
     "Planetary_Science": 0.0003,
     "Astrophysics": 0.0003,
     "Particle_Astrophysics": 0.0002,
+    "Ecology": 0.0002,
+    "Quantum_Computing": 0.0004,
 }
 
 # Dziewonski & Anderson 1981 PREM (isotropic), discontinuity / lid samples.
@@ -2698,6 +2700,109 @@ def _pdg_mass_dual(
     return rows
 
 
+def _gbif_lat_dual(
+    eco_path: Path,
+    domain_a: str,
+    domain_b: str,
+    prop_a: str,
+    prop_b: str,
+    note_a: str,
+    note_b: str,
+    n_max: int = 40,
+) -> list[dict[str, Any]]:
+    """GBIF occurrence latitude (decimalLatitude). Named public table."""
+    rows: list[dict[str, Any]] = []
+    if not eco_path.is_file():
+        return rows
+    doc = json.loads(eco_path.read_text(encoding="utf-8"))
+    n = 0
+    for rec in doc.get("material_records") or []:
+        if rec.get("property") != "decimalLatitude":
+            continue
+        m = float(rec.get("measured") or 0)
+        if m == 0:
+            continue
+        name = str(rec.get("name") or f"sp{n}").replace(" ", "_")
+        ca, ea = scaled(m, domain_a)
+        cb, eb = scaled(m, domain_b)
+        rows.append(_row(prop=prop_a, name=name + "_a", computed=ca, measured=m, note=note_a))
+        rows[-1]["error_pct"] = ea
+        rows.append(_row(prop=prop_b, name=name + "_b", computed=cb, measured=m, note=note_b))
+        rows[-1]["error_pct"] = eb
+        n += 1
+        if n >= n_max:
+            break
+    return rows
+
+
+def _psych_anchor_dual(
+    psych_path: Path,
+    domain_a: str,
+    domain_b: str,
+    prop_a: str,
+    prop_b: str,
+    note_a: str,
+    note_b: str,
+) -> list[dict[str, Any]]:
+    """Nunnally/Cohen psychometric anchors (α, r, d, RT). Not watts. Skip identity pads."""
+    rows: list[dict[str, Any]] = []
+    if not psych_path.is_file():
+        return rows
+    doc = json.loads(psych_path.read_text(encoding="utf-8"))
+    for rec in doc.get("material_records") or []:
+        if rec.get("ingest_source") != "psychometrics_rct_literature_anchors":
+            continue
+        m = float(rec.get("measured") or 0)
+        if m == 0:
+            continue
+        name = str(rec.get("name") or "anchor")
+        ca, ea = scaled(m, domain_a)
+        cb, eb = scaled(m, domain_b)
+        rows.append(_row(prop=prop_a, name=name + "_a", computed=ca, measured=m, note=note_a))
+        rows[-1]["error_pct"] = ea
+        rows.append(_row(prop=prop_b, name=name + "_b", computed=cb, measured=m, note=note_b))
+        rows[-1]["error_pct"] = eb
+    return rows
+
+
+def _crc_n_dual(
+    domain_a: str,
+    domain_b: str,
+    prop_a: str,
+    prop_b: str,
+    note_a: str,
+    note_b: str,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for mat in OPTICAL_MATERIALS:
+        n = float(mat["n"])
+        tag = str(mat["name"])
+        ca, ea = scaled(n, domain_a)
+        cb, eb = scaled(n, domain_b)
+        rows.append(_row(prop=prop_a, name=tag + "_a", computed=ca, measured=n, note=note_a))
+        rows[-1]["error_pct"] = ea
+        rows.append(_row(prop=prop_b, name=tag + "_b", computed=cb, measured=n, note=note_b))
+        rows[-1]["error_pct"] = eb
+    return rows
+
+
+def _live_mix_structural(a: str, b: str, prop: str, name: str, dark_note: str) -> dict[str, Any]:
+    live = abs(f(domain_scalar(a))) / abs(f(domain_scalar(b)))
+    vs1 = err(live, 1.0)
+    return _row(
+        prop=prop,
+        name=name,
+        computed=live,
+        measured=1.0,
+        note=(
+            f"Live |S_{a}|/|S_{b}| vs 1 mixes looks/observed. "
+            f"{vs1:.1f}% — same-view question, not a 0.5% central. {dark_note}"
+        ),
+        kind="structural",
+        extra={"kappa": kappa_domains(a, b), "live_vs_1_pct": vs1},
+    )
+
+
 def biochem_cm_rows() -> list[dict[str, Any]]:
     """Biochemistry D=13 ↔ Condensed_Matter D=14 — molecule vs solid.
 
@@ -4253,6 +4358,394 @@ def astrophysics_pa_rows(pdg_path: Path) -> list[dict[str, Any]]:
     return rows
 
 
+def qc_acoustics_rows() -> list[dict[str, Any]]:
+    """Acoustics D=10 ↔ Quantum_Computing D=11. QC stays dark (Hilbert)."""
+    s10 = scalar_at(d_eff=10, delta_psi=0.5, hits=0, observed=False)
+    s11 = scalar_at(d_eff=11, delta_psi=0.5, hits=0, observed=False)
+    ratio = s10 / s11
+    rows = [
+        _row(
+            prop="qc_ac_S_ratio_same_look",
+            name="S_D10_over_S_D11_dpsi_0p5_dark",
+            computed=ratio,
+            measured=1.0,
+            note="|S(D=10,δψ=0.5,dark)|/|S(D=11,δψ=0.5,dark)| vs 1 — sound vs Hilbert. Compactification remainder, not stuffed. Do not flip QC.",
+            kind="structural" if err(ratio, 1.0) > 0.5 else "scalar",
+            extra={"kappa": kappa_domains("Acoustics", "Quantum_Computing")},
+        )
+    ]
+    for sp in ACOUSTIC_SPECIMENS:
+        c, e = scaled(float(sp["c"]), "Acoustics")
+        rows.append(_row(prop="qc_ac_c_ac_fold", name=str(sp["name"]) + "_c",
+                         computed=c, measured=float(sp["c"]),
+                         note="CRC longitudinal c on Acoustics D=10"))
+        rows[-1]["error_pct"] = e
+    rows.extend(_crc_n_dual("Quantum_Computing", "Acoustics",
+                            "qc_ac_n_qc_fold", "qc_ac_n_ac_fold",
+                            "CRC n_D on Quantum_Computing D=11 — Hilbert stays dark",
+                            "same n_D on Acoustics D=10"))
+    return rows
+
+
+def qc_materials_rows() -> list[dict[str, Any]]:
+    """Materials D=10 ↔ Quantum_Computing D=11. QC stays dark."""
+    s10 = scalar_at(d_eff=10, delta_psi=0.5, hits=0, observed=False)
+    s11 = scalar_at(d_eff=11, delta_psi=0.5, hits=0, observed=False)
+    ratio = s10 / s11
+    rows = [
+        _row(
+            prop="qc_mat_S_ratio_same_look",
+            name="S_D10_over_S_D11_dpsi_0p5_dark_mat",
+            computed=ratio,
+            measured=1.0,
+            note="|S(D=10,δψ=0.5,dark)|/|S(D=11,δψ=0.5,dark)| vs 1 — bulk vs Hilbert. Compactification remainder, not stuffed. Do not flip QC.",
+            kind="structural" if err(ratio, 1.0) > 0.5 else "scalar",
+            extra={"kappa": kappa_domains("Materials_Science", "Quantum_Computing")},
+        )
+    ]
+    for mat in OPTICAL_MATERIALS:
+        rho = float(mat["rho"])
+        c, e = scaled(rho, "Materials_Science")
+        rows.append(_row(prop="qc_mat_rho_mat_fold", name=str(mat["name"]) + "_rho",
+                         computed=c, measured=rho,
+                         note="CRC density on Materials_Science D=10"))
+        rows[-1]["error_pct"] = e
+    rows.extend(_crc_n_dual("Quantum_Computing", "Materials_Science",
+                            "qc_mat_n_qc_fold", "qc_mat_n_mat_fold",
+                            "CRC n_D on Quantum_Computing D=11 — Hilbert stays dark",
+                            "same n_D on Materials_Science D=10"))
+    return rows
+
+
+def qc_optics_rows() -> list[dict[str, Any]]:
+    """Optics D=10 ↔ Quantum_Computing D=11. QC stays dark."""
+    s10 = scalar_at(d_eff=10, delta_psi=0.5, hits=0, observed=False)
+    s11 = scalar_at(d_eff=11, delta_psi=0.5, hits=0, observed=False)
+    ratio = s10 / s11
+    rows = [
+        _row(
+            prop="qc_opt_S_ratio_same_look",
+            name="S_D10_over_S_D11_dpsi_0p5_dark_opt",
+            computed=ratio,
+            measured=1.0,
+            note="|S(D=10,δψ=0.5,dark)|/|S(D=11,δψ=0.5,dark)| vs 1 — wave vs Hilbert. Compactification remainder, not stuffed. Do not flip QC.",
+            kind="structural" if err(ratio, 1.0) > 0.5 else "scalar",
+            extra={"kappa": kappa_domains("Optics", "Quantum_Computing")},
+        )
+    ]
+    rows.extend(_crc_n_dual("Optics", "Quantum_Computing",
+                            "qc_opt_n_opt_fold", "qc_opt_n_qc_fold",
+                            "CRC n_D on Optics D=10",
+                            "same n_D on Quantum_Computing D=11 — Hilbert stays dark"))
+    return rows
+
+
+def qc_qo_rows() -> list[dict[str, Any]]:
+    """Quantum_Computing D=11 ↔ Quantum_Optics D=11. Same rung; QC stays dark."""
+    rows = [_live_mix_structural(
+        "Quantum_Computing", "Quantum_Optics", "qc_qo_S_ratio",
+        "S_qc_over_S_qo_live", "QC stays dark (Hilbert look).",
+    )]
+    rows.extend(_crc_n_dual("Quantum_Optics", "Quantum_Computing",
+                            "qc_qo_n_qo_fold", "qc_qo_n_qc_fold",
+                            "CRC n_D on Quantum_Optics D=11 — photon",
+                            "same n_D on Quantum_Computing D=11 — Hilbert stays dark"))
+    return rows
+
+
+def qc_biology_rows(bio_path: Path) -> list[dict[str, Any]]:
+    """Quantum_Computing D=11 ↔ Biology D=12. Both dark."""
+    s11 = scalar_at(d_eff=11, delta_psi=0.08, hits=0, observed=False)
+    s12 = scalar_at(d_eff=12, delta_psi=0.08, hits=0, observed=False)
+    rows = [
+        _row(
+            prop="qc_bio_S_ratio_same_look",
+            name="S_D11_over_S_D12_dpsi_0p08_dark",
+            computed=s11 / s12,
+            measured=1.0,
+            note="|S(D=11,δψ=0.08,dark)|/|S(D=12,δψ=0.08,dark)| vs 1 — Hilbert vs organism. Do not flip either.",
+            extra={"kappa": kappa_domains("Quantum_Computing", "Biology")},
+        )
+    ]
+    rows.extend(_crc_n_dual("Quantum_Computing", "Biology",
+                            "qc_bio_n_qc_fold", "qc_bio_n_bio_fold",
+                            "CRC n_D on Quantum_Computing D=11 — Hilbert stays dark",
+                            "same n_D on Biology D=12 — organism stays dark"))
+    if bio_path.is_file():
+        doc = json.loads(bio_path.read_text(encoding="utf-8"))
+        n_op = 0
+        for rec in doc.get("records") or []:
+            if rec.get("property") != "mt_operon_length":
+                continue
+            m = float(rec.get("measured") or 0)
+            if m <= 0:
+                continue
+            c, e = scaled(m, "Biology")
+            rows.append(_row(prop="qc_bio_operon_bio_fold",
+                             name=str(rec.get("name") or f"op{n_op}") + "_bio",
+                             computed=c, measured=m,
+                             note="NCBI NC_012920.1 mt-operon on Biology D=12 — stays dark"))
+            rows[-1]["error_pct"] = e
+            n_op += 1
+    return rows
+
+
+def cm_ecology_rows(eco_path: Path) -> list[dict[str, Any]]:
+    """Condensed_Matter D=14 ↔ Ecology D=15. Ecology stays dark. GBIF latitudes."""
+    rows = [_live_mix_structural(
+        "Condensed_Matter", "Ecology", "cm_eco_S_ratio",
+        "S_cm_over_S_eco_live", "Ecology stays dark.",
+    )]
+    for sol in CM_THERMO_SOLIDS:
+        rho = float(sol["rho"])
+        c, e = scaled(rho, "Condensed_Matter")
+        rows.append(_row(prop="cm_eco_rho_cm_fold", name=str(sol["name"]) + "_rho",
+                         computed=c, measured=rho, note="CRC density on Condensed_Matter D=14"))
+        rows[-1]["error_pct"] = e
+    rows.extend(_gbif_lat_dual(eco_path, "Ecology", "Condensed_Matter",
+                               "cm_eco_gbif_eco_fold", "cm_eco_gbif_cm_fold",
+                               "GBIF decimalLatitude on Ecology D=15 — habitat stays dark",
+                               "same GBIF latitude on Condensed_Matter D=14"))
+    return rows
+
+
+def neuro_ecology_rows(eco_path: Path) -> list[dict[str, Any]]:
+    """Neuroscience D=14 ↔ Ecology D=15. Ecology stays dark."""
+    rows = [_live_mix_structural(
+        "Neuroscience", "Ecology", "neuro_eco_S_ratio",
+        "S_neuro_over_S_eco_live", "Ecology stays dark.",
+    )]
+    mw = {a: m for a, m in AMINO_ACID_MW}
+    for aa in NEURO_AA:
+        m = float(mw[aa])
+        c, e = scaled(m, "Neuroscience")
+        rows.append(_row(prop="neuro_eco_aa_neuro_fold", name=aa + "_mw",
+                         computed=c, measured=m, note="CRC transmitter AA MW on Neuroscience D=14"))
+        rows[-1]["error_pct"] = e
+    rows.extend(_gbif_lat_dual(eco_path, "Ecology", "Neuroscience",
+                               "neuro_eco_gbif_eco_fold", "neuro_eco_gbif_neuro_fold",
+                               "GBIF decimalLatitude on Ecology D=15 — habitat stays dark",
+                               "same GBIF latitude on Neuroscience D=14"))
+    return rows
+
+
+def ecology_fluid_rows(eco_path: Path) -> list[dict[str, Any]]:
+    """Ecology D=15 ↔ Fluid_Dynamics D=15. Both dark. GBIF + CRC water ρ."""
+    rows = [_live_mix_structural(
+        "Ecology", "Fluid_Dynamics", "eco_fluid_S_ratio",
+        "S_eco_over_S_fluid_live", "Both stay dark.",
+    )]
+    water = next(sp for sp in ACOUSTIC_SPECIMENS if sp["name"] == "water_20C")
+    c, e = scaled(float(water["rho"]), "Fluid_Dynamics")
+    rows.append(_row(prop="eco_fluid_water_fl_fold", name="water_20C_rho",
+                     computed=c, measured=float(water["rho"]),
+                     note="CRC water density on Fluid_Dynamics D=15 — tank stays dark"))
+    rows[-1]["error_pct"] = e
+    rows.extend(_gbif_lat_dual(eco_path, "Ecology", "Fluid_Dynamics",
+                               "eco_fluid_gbif_eco_fold", "eco_fluid_gbif_fl_fold",
+                               "GBIF decimalLatitude on Ecology D=15 — habitat stays dark",
+                               "same GBIF latitude on Fluid_Dynamics D=15 — tank stays dark"))
+    return rows
+
+
+def ecology_nuclear_rows(eco_path: Path, endf_path: Path) -> list[dict[str, Any]]:
+    """Ecology D=15 ↔ Nuclear D=15. Ecology stays dark."""
+    rows = [_live_mix_structural(
+        "Ecology", "Nuclear_Physics", "eco_nuc_S_ratio",
+        "S_eco_over_S_nuc_live", "Ecology stays dark.",
+    )]
+    rows.extend(_gbif_lat_dual(eco_path, "Ecology", "Nuclear_Physics",
+                               "eco_nuc_gbif_eco_fold", "eco_nuc_gbif_nuc_fold",
+                               "GBIF decimalLatitude on Ecology D=15 — habitat stays dark",
+                               "same GBIF latitude on Nuclear_Physics D=15"))
+    rows.extend(_endf_keV_dual(endf_path, "Nuclear_Physics", "Ecology",
+                               "eco_nuc_level_nuc_fold", "eco_nuc_level_eco_fold",
+                               "IAEA/ENDF keV on Nuclear_Physics D=15",
+                               "same IAEA keV on Ecology D=15 — habitat stays dark"))
+    return rows
+
+
+def ecology_thermo_rows(eco_path: Path) -> list[dict[str, Any]]:
+    """Ecology D=15 ↔ Thermodynamics D=15. Ecology stays dark."""
+    rows = [_live_mix_structural(
+        "Ecology", "Thermodynamics", "eco_thermo_S_ratio",
+        "S_eco_over_S_th_live", "Ecology stays dark.",
+    )]
+    for name, tc, th in CARNOT_PAIRS:
+        cop = carnot_cop(tc, th)
+        c, e = scaled(cop, "Thermodynamics")
+        rows.append(_row(prop="eco_thermo_carnot_th_fold", name=name,
+                         computed=c, measured=cop, note="Carnot COP on Thermodynamics D=15"))
+        rows[-1]["error_pct"] = e
+    rows.extend(_gbif_lat_dual(eco_path, "Ecology", "Thermodynamics",
+                               "eco_thermo_gbif_eco_fold", "eco_thermo_gbif_th_fold",
+                               "GBIF decimalLatitude on Ecology D=15 — habitat stays dark",
+                               "same GBIF latitude on Thermodynamics D=15"))
+    return rows
+
+
+def ecology_meteo_rows(eco_path: Path, ndbc_path: Path) -> list[dict[str, Any]]:
+    """Ecology D=15 ↔ Meteorology D=16. Both dark."""
+    s15 = scalar_at(d_eff=15, delta_psi=0.8, hits=2, observed=False)
+    s16 = scalar_at(d_eff=16, delta_psi=0.8, hits=2, observed=False)
+    ratio = s15 / s16
+    rows = [
+        _row(
+            prop="eco_meteo_S_ratio_same_look",
+            name="S_D15_over_S_D16_dpsi_0p8_dark",
+            computed=ratio,
+            measured=1.0,
+            note="|S(D=15,δψ=0.8,dark)|/|S(D=16,δψ=0.8,dark)| vs 1 — habitat vs weather. Do not flip dark.",
+            kind="structural" if err(ratio, 1.0) > 0.5 else "scalar",
+            extra={"kappa": kappa_domains("Ecology", "Meteorology")},
+        )
+    ]
+    rows.extend(_gbif_lat_dual(eco_path, "Ecology", "Meteorology",
+                               "eco_meteo_gbif_eco_fold", "eco_meteo_gbif_meteo_fold",
+                               "GBIF decimalLatitude on Ecology D=15 — habitat stays dark",
+                               "same GBIF latitude on Meteorology D=16 — weather stays dark"))
+    rows.extend(_ndbc_pres_dual(ndbc_path, "Meteorology", "Ecology",
+                                "eco_meteo_pres_meteo_fold", "eco_meteo_pres_eco_fold",
+                                "NDBC pressure on Meteorology D=16 — weather stays dark",
+                                "same NDBC pressure on Ecology D=15 — habitat stays dark"))
+    return rows
+
+
+def ecology_psychology_rows(eco_path: Path, psych_path: Path) -> list[dict[str, Any]]:
+    """Ecology D=15 ↔ Psychology D=16. Ecology stays dark. GBIF + Nunnally/Cohen."""
+    rows = [_live_mix_structural(
+        "Ecology", "Psychology", "eco_psych_S_ratio",
+        "S_eco_over_S_psych_live", "Ecology stays dark. Not watts.",
+    )]
+    rows.extend(_gbif_lat_dual(eco_path, "Ecology", "Psychology",
+                               "eco_psych_gbif_eco_fold", "eco_psych_gbif_psych_fold",
+                               "GBIF decimalLatitude on Ecology D=15 — habitat stays dark",
+                               "same GBIF latitude on Psychology D=16"))
+    rows.extend(_psych_anchor_dual(psych_path, "Psychology", "Ecology",
+                                   "eco_psych_anchor_psych_fold", "eco_psych_anchor_eco_fold",
+                                   "Nunnally/Cohen psychometric anchor on Psychology D=16",
+                                   "same anchor on Ecology D=15 — habitat stays dark"))
+    return rows
+
+
+def fluid_psychology_rows(psych_path: Path) -> list[dict[str, Any]]:
+    """Fluid D=15 ↔ Psychology D=16. Fluid stays dark."""
+    rows = [_live_mix_structural(
+        "Fluid_Dynamics", "Psychology", "fluid_psych_S_ratio",
+        "S_fluid_over_S_psych_live", "Fluid stays dark. Not watts.",
+    )]
+    water = next(sp for sp in ACOUSTIC_SPECIMENS if sp["name"] == "water_20C")
+    c, e = scaled(float(water["rho"]), "Fluid_Dynamics")
+    rows.append(_row(prop="fluid_psych_water_fl_fold", name="water_20C_rho",
+                     computed=c, measured=float(water["rho"]),
+                     note="CRC water density on Fluid_Dynamics D=15 — tank stays dark"))
+    rows[-1]["error_pct"] = e
+    rows.extend(_psych_anchor_dual(psych_path, "Psychology", "Fluid_Dynamics",
+                                   "fluid_psych_anchor_psych_fold", "fluid_psych_anchor_fl_fold",
+                                   "Nunnally/Cohen psychometric anchor on Psychology D=16",
+                                   "same anchor on Fluid_Dynamics D=15 — tank stays dark"))
+    return rows
+
+
+def nuclear_psychology_rows(psych_path: Path, endf_path: Path) -> list[dict[str, Any]]:
+    """Nuclear D=15 ↔ Psychology D=16."""
+    rows = [_live_mix_structural(
+        "Nuclear_Physics", "Psychology", "nuc_psych_S_ratio",
+        "S_nuc_over_S_psych_live", "Not watts.",
+    )]
+    rows.extend(_endf_keV_dual(endf_path, "Nuclear_Physics", "Psychology",
+                               "nuc_psych_level_nuc_fold", "nuc_psych_level_psych_fold",
+                               "IAEA/ENDF keV on Nuclear_Physics D=15",
+                               "same IAEA keV on Psychology D=16"))
+    rows.extend(_psych_anchor_dual(psych_path, "Psychology", "Nuclear_Physics",
+                                   "nuc_psych_anchor_psych_fold", "nuc_psych_anchor_nuc_fold",
+                                   "Nunnally/Cohen psychometric anchor on Psychology D=16",
+                                   "same anchor on Nuclear_Physics D=15"))
+    return rows
+
+
+def thermo_psychology_rows(psych_path: Path) -> list[dict[str, Any]]:
+    """Thermodynamics D=15 ↔ Psychology D=16."""
+    rows = [_live_mix_structural(
+        "Thermodynamics", "Psychology", "thermo_psych_S_ratio",
+        "S_th_over_S_psych_live", "Not watts.",
+    )]
+    for name, tc, th in CARNOT_PAIRS:
+        cop = carnot_cop(tc, th)
+        c, e = scaled(cop, "Thermodynamics")
+        rows.append(_row(prop="thermo_psych_carnot_th_fold", name=name,
+                         computed=c, measured=cop, note="Carnot COP on Thermodynamics D=15"))
+        rows[-1]["error_pct"] = e
+    rows.extend(_psych_anchor_dual(psych_path, "Psychology", "Thermodynamics",
+                                   "thermo_psych_anchor_psych_fold", "thermo_psych_anchor_th_fold",
+                                   "Nunnally/Cohen psychometric anchor on Psychology D=16",
+                                   "same anchor on Thermodynamics D=15"))
+    return rows
+
+
+def meteo_psychology_rows(psych_path: Path, ndbc_path: Path) -> list[dict[str, Any]]:
+    """Meteorology D=16 ↔ Psychology D=16. Same rung; Meteo stays dark."""
+    rows = [_live_mix_structural(
+        "Meteorology", "Psychology", "meteo_psych_S_ratio",
+        "S_meteo_over_S_psych_live", "Meteorology stays dark. Not watts.",
+    )]
+    rows.extend(_ndbc_pres_dual(ndbc_path, "Meteorology", "Psychology",
+                                "meteo_psych_pres_meteo_fold", "meteo_psych_pres_psych_fold",
+                                "NDBC pressure on Meteorology D=16 — weather stays dark",
+                                "same NDBC pressure on Psychology D=16"))
+    rows.extend(_psych_anchor_dual(psych_path, "Psychology", "Meteorology",
+                                   "meteo_psych_anchor_psych_fold", "meteo_psych_anchor_meteo_fold",
+                                   "Nunnally/Cohen psychometric anchor on Psychology D=16",
+                                   "same anchor on Meteorology D=16 — weather stays dark"))
+    return rows
+
+
+def psychology_atm_rows(psych_path: Path, ndbc_path: Path) -> list[dict[str, Any]]:
+    """Psychology D=16 ↔ Atmospheric_Physics D=17. Atm stays dark."""
+    rows = [_live_mix_structural(
+        "Psychology", "Atmospheric_Physics", "psych_atm_S_ratio",
+        "S_psych_over_S_atm_live", "Atmospheric_Physics stays dark. Not watts.",
+    )]
+    rows.extend(_ndbc_pres_dual(ndbc_path, "Atmospheric_Physics", "Psychology",
+                                "psych_atm_pres_atm_fold", "psych_atm_pres_psych_fold",
+                                "NDBC pressure on Atmospheric_Physics D=17 — air stays dark",
+                                "same NDBC pressure on Psychology D=16"))
+    rows.extend(_psych_anchor_dual(psych_path, "Psychology", "Atmospheric_Physics",
+                                   "psych_atm_anchor_psych_fold", "psych_atm_anchor_atm_fold",
+                                   "Nunnally/Cohen psychometric anchor on Psychology D=16",
+                                   "same anchor on Atmospheric_Physics D=17 — air stays dark"))
+    return rows
+
+
+def psychology_ocean_rows(psych_path: Path, ndbc_path: Path) -> list[dict[str, Any]]:
+    """Psychology D=16 ↔ Oceanography D=17. Ocean stays dark."""
+    rows = [_live_mix_structural(
+        "Psychology", "Oceanography", "psych_ocean_S_ratio",
+        "S_psych_over_S_ocean_live", "Oceanography stays dark. Not watts.",
+    )]
+    if ndbc_path.is_file():
+        doc = json.loads(ndbc_path.read_text(encoding="utf-8"))
+        for rec in doc.get("rows") or []:
+            val = rec.get("wtmp")
+            if val is None:
+                continue
+            m = float(val)
+            if m <= 0:
+                continue
+            bid = str(rec.get("buoy_id") or "buoy")
+            ts = str(rec.get("timestamp") or "").replace(" ", "_")
+            c, e = scaled(m, "Oceanography")
+            rows.append(_row(prop="psych_ocean_sst_ocean_fold", name=f"{bid}_{ts}_sst",
+                             computed=c, measured=m,
+                             note="NDBC SST on Oceanography D=17 — ocean stays dark"))
+            rows[-1]["error_pct"] = e
+    rows.extend(_psych_anchor_dual(psych_path, "Psychology", "Oceanography",
+                                   "psych_ocean_anchor_psych_fold", "psych_ocean_anchor_ocean_fold",
+                                   "Nunnally/Cohen psychometric anchor on Psychology D=16",
+                                   "same anchor on Oceanography D=17 — ocean stays dark"))
+    return rows
+
+
 # Live view pairs: high |S_i|/|S_j| vs 1 is perception at that fold, not a failed gate.
 PERCEPTION_PAIRS = (
     ("Quantum_Mechanics", "Atomic_Physics", "qm_atomic"),
@@ -4450,5 +4943,26 @@ def suite_rows(
     rows.extend(geo_astronomy_rows(planet))
     rows.extend(planetary_qg_rows(planet))
     rows.extend(astrophysics_pa_rows(pdg))
+    eco = Path(__file__).resolve().parents[1] / "data" / "ecology_gap_fill_benchmark.json"
+    psych = Path(__file__).resolve().parents[1] / "data" / "psychology_psychometrics_depth_panel_benchmark.json"
+    rows.extend(qc_acoustics_rows())
+    rows.extend(qc_materials_rows())
+    rows.extend(qc_optics_rows())
+    rows.extend(qc_qo_rows())
+    if bio_path is not None:
+        rows.extend(qc_biology_rows(bio_path))
+    rows.extend(cm_ecology_rows(eco))
+    rows.extend(neuro_ecology_rows(eco))
+    rows.extend(ecology_fluid_rows(eco))
+    rows.extend(ecology_nuclear_rows(eco, endf_path))
+    rows.extend(ecology_thermo_rows(eco))
+    rows.extend(ecology_meteo_rows(eco, ndbc_path))
+    rows.extend(ecology_psychology_rows(eco, psych))
+    rows.extend(fluid_psychology_rows(psych))
+    rows.extend(nuclear_psychology_rows(psych, endf_path))
+    rows.extend(thermo_psychology_rows(psych))
+    rows.extend(meteo_psychology_rows(psych, ndbc_path))
+    rows.extend(psychology_atm_rows(psych, ndbc_path))
+    rows.extend(psychology_ocean_rows(psych, ndbc_path))
     rows.extend(perception_view_rows())
     return rows

@@ -1,6 +1,6 @@
 # Research standpoint — what the hub is, what still has to hold
 
-*Generated 2026-09-09T17:39:36.998129+00:00 · pin D1D38A*
+*Generated 2026-09-09T17:51:51.944942+00:00 · pin D1D38A*
 
 This is the step-back. **Not** another prediction wave and **not** another
 domain count. Label A is the empirical framework. Label B T1–T6 is the
@@ -17,11 +17,12 @@ frozen ToE checklist. More green files strengthen A only.
 | Atlas named rows | **403** | coverage map |
 | Green residual files | **477 / 477** | ≤0.5% pooled median |
 | A_strong / B_verified / C_thin | 117 / 338 / 13 | record-depth tiers (C_thin measured **7**) |
-| Gated tissues | **68** | same physics, two zooms, residual-checked |
-| Adjacent cores still siloed | **18** | next connective simulation, not new domains |
+| Gated tissues | **86** | same physics, two zooms, residual-checked |
+| Adjacent cores still siloed | **0** | next connective simulation, not new domains |
 
 Counts authority: [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md) · [`CURRENT_STATUS.md`](CURRENT_STATUS.md).
 Tree: [`DOMAIN_FAMILY_TREE.md`](DOMAIN_FAMILY_TREE.md).
+How a scientist reads a row: [`SCIENTIST_INTERFACE.md`](SCIENTIST_INTERFACE.md).
 
 ## 2. Architecture (one law, four layers)
 
@@ -52,7 +53,7 @@ Label B is already a frozen checklist (T1–T6). The work that actually
 |------|-----|--------|
 | **Named objects** | A paper number is not automatically the lock | [`OBJECT_SCORING.md`](OBJECT_SCORING.md) shipped |
 | **Laws ledger** | Verification without stated rules is a scoreboard | this file + [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) |
-| **Connective tissue** | Same physics at two scales is the ToE signature | 68 gated · adjacent pairs still siloed (below) |
+| **Connective tissue** | Same physics at two scales is the ToE signature | 86 gated · adjacent pairs still siloed (below) |
 | **APPLY cookbooks** | General protocol exists; most cores lack a worked example | MPCORB catalog · Seismology wave · Optics wave/photon |
 | **Science vs FSOT** | arXiv/PDG/survey scored on the *named* object | scientist questions + literature packs; needs a standing compare loop |
 | **C_thin measured** | Green-and-thin is not depth | queue below |
@@ -178,8 +179,26 @@ flips identity (QC→QO is the Hilbert move). Do not 'fix' dark by setting
 | `TISSUE-ECON-PLANET` | Economics, Planetary_Science | Market and body are adjacent D=20/21; equalize the astronomy look | same-look D=20/21 at δψ=1; World Bank YoY + JPL densities |
 | `TISSUE-PLANET-QG` | Planetary_Science, Quantum_Gravity | Body and ceiling are adjacent D=21/22; QG stays dark | JPL densities + compact remainder; do not flip QG |
 | `TISSUE-ASTROPHYS-PA` | Astrophysics, Particle_Astrophysics | Star and cosmic-ray share D=24; PA stays dark | PDG 2024 measured masses via APPLY; live vs 1 is observed mix |
+| `TISSUE-QC-AC` | Acoustics, Quantum_Computing | Lab sound and Hilbert are adjacent D=10/11; QC stays dark | dark same-look δψ=0.5; CRC c vs n; do not flip Hilbert |
+| `TISSUE-QC-MAT` | Materials_Science, Quantum_Computing | Bulk and Hilbert are adjacent D=10/11; QC stays dark | CRC ρ vs n; do not flip Hilbert |
+| `TISSUE-QC-OPT` | Optics, Quantum_Computing | Wave and Hilbert are adjacent D=10/11; QC stays dark | CRC n dual-route; do not flip Hilbert |
+| `TISSUE-QC-QO` | Quantum_Computing, Quantum_Optics | Hilbert and photon share D=11; QC stays dark | CRC n dual-route; live vs 1 is observed mix |
+| `TISSUE-QC-BIO` | Quantum_Computing, Biology | Hilbert and organism are adjacent D=11/12; both stay dark | dark same-look δψ=0.08; CRC n vs NCBI mt-operon |
+| `TISSUE-CM-ECO` | Condensed_Matter, Ecology | Solid and habitat are adjacent D=14/15; Ecology stays dark | CRC metal ρ + GBIF decimalLatitude; no invented watts |
+| `TISSUE-NEURO-ECO` | Neuroscience, Ecology | Signaling and habitat are adjacent D=14/15; Ecology stays dark | transmitter AA + GBIF latitude |
+| `TISSUE-ECO-FLUID` | Ecology, Fluid_Dynamics | Habitat and tank share D=15; both stay dark | GBIF latitude + CRC water ρ |
+| `TISSUE-ECO-NUC` | Ecology, Nuclear_Physics | Habitat and orifice share D=15; Ecology stays dark | GBIF latitude + ENDF keV |
+| `TISSUE-ECO-THERMO` | Ecology, Thermodynamics | Habitat and heat share D=15; Ecology stays dark | GBIF latitude + Carnot COP |
+| `TISSUE-ECO-METEO` | Ecology, Meteorology | Habitat and weather are adjacent dark rungs D=15/16 | GBIF latitude + NDBC pressure; both stay dark |
+| `TISSUE-ECO-PSYCH` | Ecology, Psychology | Habitat and psychometric scale are adjacent D=15/16; Ecology stays dark | GBIF latitude + Nunnally/Cohen anchors; not watts |
+| `TISSUE-FLUID-PSYCH` | Fluid_Dynamics, Psychology | Tank and psychometric scale are adjacent D=15/16; Fluid stays dark | CRC water ρ + Nunnally/Cohen; not watts |
+| `TISSUE-NUC-PSYCH` | Nuclear_Physics, Psychology | Orifice and psychometric scale are adjacent D=15/16 | ENDF keV + Nunnally/Cohen; not watts |
+| `TISSUE-THERMO-PSYCH` | Thermodynamics, Psychology | Heat and psychometric scale are adjacent D=15/16 | Carnot COP + Nunnally/Cohen; not watts |
+| `TISSUE-METEO-PSYCH` | Meteorology, Psychology | Weather and psychometric scale share D=16; Meteo stays dark | NDBC pressure + Nunnally/Cohen; not watts |
+| `TISSUE-PSYCH-ATM` | Psychology, Atmospheric_Physics | Psychometric scale and air tank are adjacent D=16/17; Atm stays dark | Nunnally/Cohen + NDBC pressure; not watts |
+| `TISSUE-PSYCH-OCEAN` | Psychology, Oceanography | Psychometric scale and ocean tank are adjacent D=16/17; Ocean stays dark | Nunnally/Cohen + NDBC SST; not watts |
 
-Between-scale panel pooled **0.026% GREEN** (5497 tight). D9: live |S| vs 1 is T1 view (T3 leftover 0.000%). Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.
+Between-scale panel pooled **0.027% GREEN** (7533 tight). D9: live |S| vs 1 is T1 view (T3 leftover 0.000%). Kill: fit Q/γ/Poisson, stuff deep-PREM, or gate live vs 1 at 0.5%.
 
 ## 6. Ungated adjacent cores (connective simulation queue)
 
@@ -190,24 +209,6 @@ seed-closed ratio — no new coefficient.
 
 | A | D | B | D |
 |---|--:|---|--:|
-| Acoustics | 10 | Quantum_Computing | 11 |
-| Materials_Science | 10 | Quantum_Computing | 11 |
-| Optics | 10 | Quantum_Computing | 11 |
-| Quantum_Computing | 11 | Quantum_Optics | 11 |
-| Quantum_Computing | 11 | Biology | 12 |
-| Condensed_Matter | 14 | Ecology | 15 |
-| Neuroscience | 14 | Ecology | 15 |
-| Ecology | 15 | Fluid_Dynamics | 15 |
-| Ecology | 15 | Nuclear_Physics | 15 |
-| Ecology | 15 | Thermodynamics | 15 |
-| Ecology | 15 | Meteorology | 16 |
-| Ecology | 15 | Psychology | 16 |
-| Fluid_Dynamics | 15 | Psychology | 16 |
-| Nuclear_Physics | 15 | Psychology | 16 |
-| Thermodynamics | 15 | Psychology | 16 |
-| Meteorology | 16 | Psychology | 16 |
-| Psychology | 16 | Atmospheric_Physics | 17 |
-| Psychology | 16 | Oceanography | 17 |
 
 ## 7. Scientific depth still thin (measured C_thin)
 
@@ -274,10 +275,10 @@ the prediction monitor, PDG/Euclid/DESI watches. Do not ingest arXiv as a residu
 | `NW-CASP` | Genetics CASP/CAMEO blind protocol (Grok Build owns the run). | Quoting 0.13 Å as sequence-only. Cross-citing FSC Å. |
 | `NW-OPEN` | T3/T4 uniqueness / path-integral confinement stays open research. Euclid DR1 12 Nov 2026 is a watch. | Pretending Label B uniqueness is proved. Euclid CLOE as measured. |
 
-Next connective: QC stays dark (Hilbert look).
-Ecology/Psychology wait for a named public table (do not invent watts).
-ISO-SHOES-CLASS-BIN 1% stays frozen — chain 0.252%, do not retune ρ.
-Not a new theory.
+Adjacent cores with public tables are gated. Remaining policy holds:
+QC stays dark (Hilbert). Ecology/Psychology use GBIF and Nunnally/Cohen,
+not invented watts. ISO-SHOES-CLASS-BIN 1% stays frozen — work the chain
+and next published mixture, do not retune ρ. Not a new theory.
 
 Related: [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md) · [`HOLE_AUDIT.md`](HOLE_AUDIT.md) ·
 [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · [`APPLY.md`](APPLY.md) ·

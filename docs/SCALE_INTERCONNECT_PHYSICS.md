@@ -340,7 +340,21 @@ Economics–Planetary: equalize \(\delta\psi=1\). World Bank YoY + JPL densities
 Planetary–QG: QG stays dark. JPL densities + compact remainder \(((D-25)/25)/\ln(D/25)\). Same ceiling grammar as TISSUE-CEILING.  
 Astrophysics–PA: PA stays dark. PDG 2024 *measured* masses through APPLY — not the SMILES computed column.
 
-QC stays dark (Hilbert look). Ecology / Psychology still wait for a named public table — do not invent watts. ISO-SHOES-CLASS-BIN 1% stays frozen.
+## 35. Hilbert look — Quantum_Computing \(D=11\) ↔ Acoustics / Materials / Optics \(D=10\) ↔ QO \(D=11\) ↔ Biology \(D=12\)
+
+QC stays **dark** (Hilbert). Do not flip `observed`. Dual-route CRC \(n_D\) (and longitudinal \(c\) / density on the lab-sound / bulk folds). Biology neighbor uses NCBI mt-operon. Same-look \(D=10/11\) compactification remainder at \(\delta\psi=0.5\) dark is a literature band, not stuffed into 0.5%. Cookbook: [`APPLY_QC.md`](APPLY_QC.md).
+
+## 36. Habitat — Ecology \(D=15\) ↔ CM / Neuro \(D=14\) ↔ Fluid / Nuclear / Thermo \(D=15\) ↔ Meteo / Psych \(D=16\)
+
+Ecology stays **dark**. Named table: **GBIF** `decimalLatitude` from `data/ecology_gap_fill_benchmark.json` (GBIF API occurrence). Dual-route onto the adjacent fold. Not plant/bee watts. Cookbook: [`APPLY_ECOLOGY.md`](APPLY_ECOLOGY.md).
+
+## 37. Psychometric scale — Psychology \(D=16\) ↔ Fluid / Nuclear / Thermo \(D=15\) ↔ Meteo \(D=16\) ↔ Atm / Ocean \(D=17\)
+
+Named table: **Nunnally 1978 / Cohen 1988** psychometric anchors (Cronbach \(\alpha\), test–retest \(r\), Cohen's \(d\), median RT, Stroop) from `data/psychology_psychometrics_depth_panel_benchmark.json`. Dual-route **measured** values through APPLY. Skip formula-corpus identity pads and OpenAlex citation counts (wrong object). Not watts. Cookbook: [`APPLY_PSYCHOLOGY.md`](APPLY_PSYCHOLOGY.md).
+
+ISO-SHOES-CLASS-BIN 1% stays frozen. Work list: [`ISOLATED_RESIDUALS.md`](ISOLATED_RESIDUALS.md) · [`SH0ES_LADDER_DIAGNOSIS.md`](SH0ES_LADDER_DIAGNOSIS.md).
+
+How a scientist reads a row: [`SCIENTIST_INTERFACE.md`](SCIENTIST_INTERFACE.md).
 
 Kill: pooled > 0.5%, or \(T_3\) leftover on the \(T_1\) view pairs > 0.5%, or anyone fits Q / γ / Poisson, or anyone treats deep-PREM mismatch as a new coefficient, or anyone stuffs live \(|S_i|/|S_j|\) vs 1 into 0.5%.
 

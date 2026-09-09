@@ -35,6 +35,10 @@ Worked examples in-repo:
 - Quantum-to-atom fold: [`APPLY_ATOMIC.md`](APPLY_ATOMIC.md) — NIST hydrogen \(a_0\)/\(R_\infty\); H–Ca ionization. Neighbor Quantum_Mechanics \(D=6\).
 - EM fold: [`APPLY_EM.md`](APPLY_EM.md) — CRC \(n_D\) and Maxwell \(n^2\). Neighbor Optics \(D=10\).
 - Biology fold: [`APPLY_BIO.md`](APPLY_BIO.md) — NCBI mt-operon / AA MW. Neighbor Biochemistry \(D=13\). Dark: do not flip `observed`.
+- Hilbert fold: [`APPLY_QC.md`](APPLY_QC.md) — CRC \(n_D\). Neighbor Optics / QO. Dark: do not flip `observed`.
+- Habitat fold: [`APPLY_ECOLOGY.md`](APPLY_ECOLOGY.md) — GBIF latitude. Dark: do not invent watts.
+- Psychometric fold: [`APPLY_PSYCHOLOGY.md`](APPLY_PSYCHOLOGY.md) — Nunnally/Cohen anchors. Not watts; not OpenAlex citations.
+- How to read a row: [`SCIENTIST_INTERFACE.md`](SCIENTIST_INTERFACE.md).
 - HEP fold: [`APPLY_HEP.md`](APPLY_HEP.md) — CODATA \(m_e\)/\(m_p\). Neighbor Atomic \(D=7\).
 - Chemistry ladder: CRC MW / \(T_m\) / \(T_b\) / density. Neighbors Physical_Chemistry \(D=8\), Molecular_Chemistry \(D=9\). See [`SCALE_INTERCONNECT_PHYSICS.md`](SCALE_INTERCONNECT_PHYSICS.md) §14–15.
 

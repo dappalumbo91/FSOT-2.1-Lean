@@ -7,7 +7,7 @@
 **Edition:** v2.13 — living gauntlet lock · **2026-09-09**  
 **Status:** Living thesis — **Theory of Everything claim is explicit** (see section below)  
 **Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · what the numbers mean: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md) · kill-command map: [`docs/EMPIRICAL_CLAIM_EVIDENCE.md`](docs/EMPIRICAL_CLAIM_EVIDENCE.md)  
-**New here?** → [docs/START_HERE.md](docs/START_HERE.md) · **Concepts** → [docs/CONCEPTS.md](docs/CONCEPTS.md) · **Directory** → [docs/SYSTEM_DIRECTORY.md](docs/SYSTEM_DIRECTORY.md) · **Apply** → [docs/APPLY.md](docs/APPLY.md)
+**New here?** → [docs/START_HERE.md](docs/START_HERE.md) · **Scientist read** → [docs/SCIENTIST_INTERFACE.md](docs/SCIENTIST_INTERFACE.md) · **Concepts** → [docs/CONCEPTS.md](docs/CONCEPTS.md) · **Directory** → [docs/SYSTEM_DIRECTORY.md](docs/SYSTEM_DIRECTORY.md) · **Apply** → [docs/APPLY.md](docs/APPLY.md)
 
 ### Live scoreboard (regenerate: `python scripts/build_repo_status_snapshot.py`)
 
