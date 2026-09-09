@@ -1,6 +1,6 @@
 # Research standpoint — what the hub is, what still has to hold
 
-*Generated 2026-09-09T19:42:11.383804+00:00 · pin D1D38A*
+*Generated 2026-09-09T21:49:07.720439+00:00 · pin D1D38A*
 
 This is the step-back. **Not** another prediction wave and **not** another
 domain count. Label A is the empirical framework. Label B T1–T6 is the
@@ -16,7 +16,7 @@ frozen ToE checklist. More green files strengthen A only.
 | Extension subdomains | **375** | nearest-D attachments, not other ontologies |
 | Atlas named rows | **403** | coverage map |
 | Green residual files | **477 / 477** | ≤0.5% pooled median |
-| A_strong / B_verified / C_thin | 117 / 338 / 13 | record-depth tiers (C_thin measured **3**) |
+| A_strong / B_verified / C_thin | 118 / 337 / 13 | record-depth tiers (C_thin measured **3**) |
 | Gated tissues | **86** | same physics, two zooms, residual-checked |
 | Adjacent cores still siloed | **0** | 0 = gated; next work is objects/C_thin/dated, not new domains |
 

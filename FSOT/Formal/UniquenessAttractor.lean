@@ -57,6 +57,10 @@ theorem singlet_amp_at_zero (a0 seq γ : ℝ) : singlet_amp a0 seq γ 0 = a0 := 
 theorem singlet_fixed_point (seq γ t : ℝ) : singlet_amp seq seq γ t = seq := by
   simp [singlet_amp]
 
+/-- Counterfactual: γ_s = 0 leaves the singlet where it started. -/
+theorem singlet_amp_no_damp (a0 seq t : ℝ) : singlet_amp a0 seq 0 t = a0 := by
+  simp [singlet_amp]
+
 /-- Gap to the singlet attractor strictly shrinks when γ_s > 0. -/
 theorem singlet_gap_strictly_shrinks
     {a0 seq γ t : ℝ} (hγ : 0 < γ) (ht : 0 < t) (hne : a0 ≠ seq) :

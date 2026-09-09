@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-09-09T19:16:40.633073+00:00`  
+**Generated:** `2026-09-09T21:49:07.414138+00:00`  
 **Edition stamp:** 2026-09-09  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -26,7 +26,7 @@
 | Gate | ≤ 0.5% pooled median |
 | Median-of-medians | 0.006625234573930708% |
 | Scalar records (envelope) | 181477 |
-| Tiers | `{'B_verified': 338, 'C_thin': 13, 'A_strong': 117}` |
+| Tiers | `{'B_verified': 337, 'C_thin': 13, 'A_strong': 118}` |
 
 ## Mathlib re-derivation (Formal corpus)
 
@@ -93,6 +93,9 @@ Frameworks passed: `coq`, `cross_refinement`, `esp32_harness`, `fstar`, `fstar_r
 - Research standpoint / laws of reality: [`RESEARCH_STANDPOINT.md`](RESEARCH_STANDPOINT.md) · [`LAWS_OF_REALITY.md`](LAWS_OF_REALITY.md)
 - Seismology APPLY cookbook: [`APPLY_SEISMOLOGY.md`](APPLY_SEISMOLOGY.md)
 - Isolated residuals (do not stuff): [`ISOLATED_RESIDUALS.md`](ISOLATED_RESIDUALS.md) · [`FRB_INTERFACE_DIAGNOSIS.md`](FRB_INTERFACE_DIAGNOSIS.md)
+- D11 orifice-scale triangulation: [`DYNAMIC_SYSTEM_TRIANGULATION.md`](DYNAMIC_SYSTEM_TRIANGULATION.md)
+- Uniqueness attractor Lean (not YM path-integral): [`UNIQUENESS_RESEARCH_SPINE.md`](UNIQUENESS_RESEARCH_SPINE.md)
+- Materials/fuels design sibling: https://github.com/dappalumbo91/FSOT-Materials
 
 ## Sync rule
 

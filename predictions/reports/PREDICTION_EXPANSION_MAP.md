@@ -1,6 +1,6 @@
 # Prediction expansion map
 
-*Generated 2026-09-01T00:42:41.773028+00:00 · pin D1D38A*
+*Generated 2026-09-09T21:49:07.489240+00:00 · pin D1D38A*
 
 Green residual catalogs are **not** automatically predictions. A prediction
 is a named lock with a public catalog, a place or class, a calendar window
@@ -99,13 +99,14 @@ Do not invent new cosmology centrals. Score Euclid / Rubin / LVK against the SHA
 
 ## Recommended next build (when you say go)
 
-1. **Shipped:** Waves 1–3 through PRED-083 (AG / Gaia / paleoclimate),
-   GRACE |delta| PRED-080, NEA PRED-079, tide issue bar POOF·(1+POOF),
-   EQ loading M≥4.5 / quiet-hold, playbook retro of the 12 kills.
-2. **Next:** Score T012157 / T022247 / 08-31 / 09-01 when those windows
-   close. FRB×density on a larger CHIME dump (do not 0.5%-gate the 10-row seed).
-   Architecture_Building_Science is still a densify candidate (0.079%), not a clock-time PRED.
+1. **Shipped:** Waves 1–3 through PRED-083; D11 orifice-scale triangulation;
+   uniqueness attractor Lean; CHIME Cat-2 dump (3390) as catalog class,
+   orifice classifier stays frozen 37/37; catalog-class refresh 12/12;
+   FSOT-Materials sibling (fuels first freeze).
+2. **Next:** Score 2026-09-09 after valid_to (weather ~11 Sep, EQ/hydro 16 Sep).
+   Next dated issue carries fold + potentials. Do not rewrite issued JSON.
 3. Genetics stays sibling-owned. Euclid stays a watch.
+   Architecture_Building_Science densify held (already 0.079%, no new table).
 
 Kill for this map: treating it as a request for more free parameters, or
 leading public claims with Wave 6.

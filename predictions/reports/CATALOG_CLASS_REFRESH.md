@@ -1,6 +1,6 @@
 # Catalog-class refresh (in-repo dumps)
 
-*Generated 2026-09-09T19:56:42.396493+00:00 · pin D1D38A*
+*Generated 2026-09-09T21:49:07.579736+00:00 · pin D1D38A*
 
 Green residual catalogs are **not** automatically new predictions.
 This re-reads the locked panels and scores the class hold (≤ 0.5%).

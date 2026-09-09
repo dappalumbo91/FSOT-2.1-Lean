@@ -82,7 +82,7 @@ From `run_confinement_uniqueness_suite()`:
 | U6 | Counterfactual no-damp: free color **persists** |
 | U7 | \(V(1/\sqrt{\sigma})=\sqrt{\sigma}\) identity |
 | U8–U10 | strong coupling seed, nuclear emergence sign, timescale ratio |
-| Lean | `color_amp_strictly_damped` · `color_amp_no_damp` · `singlet_gap_strictly_shrinks` · `free_color_not_attractor` |
+| Lean | `color_amp_strictly_damped` · `color_amp_no_damp` · `singlet_amp_no_damp` · `singlet_gap_strictly_shrinks` · `free_color_not_attractor` |
 
 **Status:** `CANDIDATE_EXECUTABLE` + **Lean structural attractor**  
 **Lean:** `FSOT/Formal/UniquenessAttractor.lean` — `color_amp_strictly_damped`, `color_amp_no_damp`, `singlet_gap_strictly_shrinks`, `gamma_color_pos`, `free_color_not_attractor`. Closed forms match Python `step_channels`.  

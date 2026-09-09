@@ -61,13 +61,16 @@ def build() -> dict:
             "U5_singlet_attractor": True,
             "U6_dampening_load_bearing": True,
             "formal_lean_uniqueness_proof": False,
+            "formal_lean_attractor_dynamics": True,
             "continuum_ym_path_integral_closed": False,
         },
         "next_steps": [
-            "Formalize free_color_damping_rate > 0 in Lean from seed bounds",
-            "Lift 2-channel ODE attractor statement to a dynamics theorem skeleton",
+            "Lean attractor dynamics shipped: FSOT/Formal/UniquenessAttractor.lean "
+            "(color_amp_strictly_damped, color_amp_no_damp, singlet_gap_strictly_shrinks, "
+            "gamma_color_pos, free_color_not_attractor). Not the YM path-integral theorem.",
             "Bridge Wilson area-law probe to dampening statement (not reverse)",
             "Only after candidate solidifies: attempt EH / spin-2 uniqueness with same dampening pattern",
+            "Do not claim continuum YM path-integral uniqueness is proved",
         ],
         "sibling_targets_deferred": [
             {
@@ -84,6 +87,7 @@ def build() -> dict:
             "probes_existing": "vendor/fsot_gr_sm.py (T4_confinement_* / path_integral probes)",
             "fluid": "vendor/fsot_dynamics.py",
             "emergence_damping_lean": "FSOT/Theorems.lean",
+            "attractor_lean": "FSOT/Formal/UniquenessAttractor.lean",
         },
         "honest_claim_language": {
             "toe_hallmark": (

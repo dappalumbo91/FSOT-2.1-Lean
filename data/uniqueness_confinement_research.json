@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:01:00.926331+00:00",
+  "generated_at": "2026-09-09T21:49:06.244485+00:00",
   "version": "1.0",
   "track": "uniqueness_research",
   "hardest_target": "path_integral_confinement_reframe",
@@ -162,13 +162,14 @@
     "U5_singlet_attractor": true,
     "U6_dampening_load_bearing": true,
     "formal_lean_uniqueness_proof": false,
+    "formal_lean_attractor_dynamics": true,
     "continuum_ym_path_integral_closed": false
   },
   "next_steps": [
-    "Formalize free_color_damping_rate > 0 in Lean from seed bounds",
-    "Lift 2-channel ODE attractor statement to a dynamics theorem skeleton",
+    "Lean attractor dynamics shipped: FSOT/Formal/UniquenessAttractor.lean (color_amp_strictly_damped, color_amp_no_damp, singlet_gap_strictly_shrinks, gamma_color_pos, free_color_not_attractor). Not the YM path-integral theorem.",
     "Bridge Wilson area-law probe to dampening statement (not reverse)",
-    "Only after candidate solidifies: attempt EH / spin-2 uniqueness with same dampening pattern"
+    "Only after candidate solidifies: attempt EH / spin-2 uniqueness with same dampening pattern",
+    "Do not claim continuum YM path-integral uniqueness is proved"
   ],
   "sibling_targets_deferred": [
     {
@@ -184,7 +185,8 @@
     "dynamics": "vendor/fsot_uniqueness_confinement.py",
     "probes_existing": "vendor/fsot_gr_sm.py (T4_confinement_* / path_integral probes)",
     "fluid": "vendor/fsot_dynamics.py",
-    "emergence_damping_lean": "FSOT/Theorems.lean"
+    "emergence_damping_lean": "FSOT/Theorems.lean",
+    "attractor_lean": "FSOT/Formal/UniquenessAttractor.lean"
   },
   "honest_claim_language": {
     "toe_hallmark": "A true ToE discerns reality from non-reality: modes/formulations that cannot emerge through the closed dynamics damp out and are not load-bearing residual debt.",
