@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Rebuild goal-track artifacts and run the uniqueness multi-prover gauntlet.
 
-Tracks: path-sum, process-time (D12), market class, sickness two-system.
+Tracks: millennium prize-process, accuracy vs SOTA, path-sum, process-time (D12), market class, sickness two-system.
 Provers: Python decimal, Rust, Z3, Coq, Isabelle (file), F* when present,
 plus lake build of ScalarEngineStructure + UniquenessAttractor.
 """
@@ -35,6 +35,7 @@ def main() -> int:
         print(f"{name}: {'PASS' if ok else 'FAIL'} (exit {r.returncode})")
 
     step("millennium_track", [sys.executable, str(ROOT / "vendor" / "fsot_millennium_track.py")])
+    step("millennium_accuracy", [sys.executable, str(ROOT / "vendor" / "fsot_millennium_accuracy.py")])
     step("path_sum", [sys.executable, str(ROOT / "vendor" / "fsot_path_sum.py")])
     step("market_process", [sys.executable, str(ROOT / "scripts" / "build_market_process_layer.py")])
     step("sickness_two_system", [sys.executable, str(ROOT / "scripts" / "smoke_sickness_two_system.py")])

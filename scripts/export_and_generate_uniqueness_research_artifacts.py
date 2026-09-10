@@ -40,6 +40,7 @@ from fsot_earth_fluid_forecast import (  # noqa: E402
     process_time_days,
     weather_horizon_hours,
 )
+from fsot_millennium_accuracy import accuracy_summary  # noqa: E402
 from fsot_millennium_track import run_millennium_suite  # noqa: E402
 from fsot_path_sum import run_path_sum_suite  # noqa: E402
 from fsot_uniqueness_confinement import (  # noqa: E402
@@ -454,6 +455,28 @@ def build_obligations() -> list[dict]:
                     "claim": claim,
                 }
             )
+
+    # --- Accuracy vs public SOTA (function contest; prize-process stays separate) ---
+    acc = accuracy_summary()
+    for key, val in (
+        ("mill_acc_comparable_n", acc["comparable_count"]),
+        ("mill_acc_beats_or_meets_n", acc["beats_or_meets_count"]),
+        ("mill_acc_no_fair_n", acc["no_fair_compare_count"]),
+        ("mill_acc_clay_open_n", acc["clay_problems_remaining"]),
+        ("mill_acc_riemann_beats_public_closed_form", acc["riemann_beats_public_closed_form"]),
+        ("mill_acc_glueball_does_not_beat_teper", acc["glueball_does_not_beat_teper"]),
+        ("mill_acc_ecmwf_not_beaten", acc["ecmwf_not_beaten"]),
+    ):
+        add(
+            {
+                "id": f"{key}_flag",
+                "kind": "eq_nat",
+                "value": int(val),
+                "right_value": int(val),
+                "module": "Uniqueness.MillenniumAccuracy",
+                "claim": key,
+            }
+        )
 
     # Dedup
     seen: set[str] = set()

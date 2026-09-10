@@ -1,6 +1,6 @@
 # Weather 24 h retrospective
 
-*Generated 2026-09-10T00:13:31.803322+00:00 · pin D1D38A*
+*Generated 2026-09-10T00:33:52.271736+00:00 · pin D1D38A*
 
 Issued JSON is **frozen**. This asks whether the first SI day of a 48 h
 window would have given the same hold/kill. New issues use 24 h.
@@ -37,10 +37,10 @@ Compared **28/28** windows with observations (agree 24 h vs 48 h).
 | `FCAST-WX-20260901T0032-04` | APRP7 | hold | hold | True | 240/480 |
 | `FCAST-WX-20260901T0032-05` | 62146 | no_obs | no_obs | None | 0/0 |
 | `FCAST-WX-20260909T1854-01` | 62442 | kill | kill | True | 5/5 |
-| `FCAST-WX-20260909T1854-02` | 46070 | hold | hold | True | 12/12 |
+| `FCAST-WX-20260909T1854-02` | 46070 | hold | hold | True | 14/14 |
 | `FCAST-WX-20260909T1854-03` | 64046 | hold | hold | True | 5/5 |
-| `FCAST-WX-20260909T1854-04` | 51002 | hold | hold | True | 12/12 |
-| `FCAST-WX-20260909T1854-05` | PTIT2 | hold | hold | True | 46/46 |
+| `FCAST-WX-20260909T1854-04` | 51002 | hold | hold | True | 14/14 |
+| `FCAST-WX-20260909T1854-05` | PTIT2 | hold | hold | True | 49/49 |
 
 Kill: rewriting issued JSON. Kill: retuning POOF to swallow a miss.
 

@@ -39,6 +39,7 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 | Goal tracks (ECMWF / prices / sickness / path-sum) | [`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md) |
 | Millennium YM vs FSOT path-sum | [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) |
 | All 6 remaining Clay problems + prize rules | [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) |
+| Accuracy vs public SOTA on those functions | [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md) |
 | What 477 files cover | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) |
 | Next sibling text / sim | [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md) |
 | Here to break it | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |

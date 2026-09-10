@@ -8,6 +8,10 @@
 
   Native identities below are the FSOT objects on the same physical questions.
   Clay statements stay OPEN_NOT_CLAIMED until those exact theorems are proved.
+
+  Accuracy vs public SOTA is a *separate* Python scoreboard
+  (`vendor/fsot_millennium_accuracy.py`). That contest is not a Prize claim.
+  Glueball vs Teper is allowed to lose. ECMWF is not beaten.
 -/
 
 import Mathlib.Data.Real.Basic

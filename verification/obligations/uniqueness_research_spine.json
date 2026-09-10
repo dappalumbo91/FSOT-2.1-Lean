@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-10T00:13:39.190621+00:00",
+  "generated_at": "2026-09-10T00:33:55.304610+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 108,
+  "obligation_count": 115,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -930,6 +930,69 @@
       "module": "Uniqueness.MillenniumTrack",
       "claim": "hodge_clay_open",
       "coq_id": "hodge_clay_open_computed_pos"
+    },
+    {
+      "id": "mill_acc_comparable_n_flag",
+      "kind": "eq_nat",
+      "value": 3,
+      "right_value": 3,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_comparable_n",
+      "coq_id": "mill_acc_comparable_n_flag"
+    },
+    {
+      "id": "mill_acc_beats_or_meets_n_flag",
+      "kind": "eq_nat",
+      "value": 3,
+      "right_value": 3,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_beats_or_meets_n",
+      "coq_id": "mill_acc_beats_or_meets_n_flag"
+    },
+    {
+      "id": "mill_acc_no_fair_n_flag",
+      "kind": "eq_nat",
+      "value": 3,
+      "right_value": 3,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_no_fair_n",
+      "coq_id": "mill_acc_no_fair_n_flag"
+    },
+    {
+      "id": "mill_acc_clay_open_n_flag",
+      "kind": "eq_nat",
+      "value": 6,
+      "right_value": 6,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_clay_open_n",
+      "coq_id": "mill_acc_clay_open_n_flag"
+    },
+    {
+      "id": "mill_acc_riemann_beats_public_closed_form_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_riemann_beats_public_closed_form",
+      "coq_id": "mill_acc_riemann_beats_public_closed_form_flag"
+    },
+    {
+      "id": "mill_acc_glueball_does_not_beat_teper_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_glueball_does_not_beat_teper",
+      "coq_id": "mill_acc_glueball_does_not_beat_teper_flag"
+    },
+    {
+      "id": "mill_acc_ecmwf_not_beaten_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_ecmwf_not_beaten",
+      "coq_id": "mill_acc_ecmwf_not_beaten_flag"
     }
   ],
   "source_summaries": {

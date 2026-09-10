@@ -50,6 +50,8 @@ Machine flags in this repo (all honest zeros except remaining=6 and Poincaré hi
 
 “We already solved some of these” is true **only** for the *native* column (YM path-sum, NS transport coefficients, Riemann first-zero residual, Grover 1/2). It is **false** for the Clay column. Same Perfect Host discipline: wrong object is a false kill *and* a false win.
 
+Accuracy vs public SOTA on those *functions* (not the Prize): [`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md). Glueball vs Teper is allowed to lose. ECMWF is not beaten.
+
 ---
 
 ## Why Navier–Stokes and P vs NP help the rest of FSOT
@@ -67,6 +69,7 @@ Machine flags in this repo (all honest zeros except remaining=6 and Poincaré hi
 
 ```powershell
 python vendor/fsot_millennium_track.py
+python vendor/fsot_millennium_accuracy.py
 python scripts/run_goal_tracks_verification.py
 ```
 

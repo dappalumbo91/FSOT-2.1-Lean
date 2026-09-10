@@ -16,6 +16,7 @@ Same fluid. Not a second physics. Wrong object is still wrong object.
 
 ```powershell
 python vendor/fsot_millennium_track.py
+python vendor/fsot_millennium_accuracy.py
 python vendor/fsot_path_sum.py
 python scripts/build_market_process_layer.py
 python scripts/smoke_sickness_two_system.py
