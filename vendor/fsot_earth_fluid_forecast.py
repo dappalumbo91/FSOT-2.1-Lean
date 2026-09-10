@@ -492,13 +492,18 @@ def marine_basin(lat: float, lon: float) -> str:
     return "other"
 
 
+def weather_horizon_hours() -> int:
+    """Next increment after 48 h: one SI day. Frozen issued JSON stays 48 h."""
+    return 24
+
+
 def weather_forecasts(
     buoys: list[dict[str, Any]],
     *,
     issued: datetime,
 ) -> list[dict[str, Any]]:
     """Storm-sector marine cells, one loaded cell per ocean basin (not Arctic-only)."""
-    valid_to = issued + timedelta(hours=48)
+    valid_to = issued + timedelta(hours=weather_horizon_hours())
     ranked: list[tuple[float, dict[str, Any], float, float, str]] = []
     for b in buoys:
         try:

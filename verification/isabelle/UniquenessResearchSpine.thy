@@ -223,19 +223,19 @@ lemma process_time_d25_eq_ceiling: "(0::real) < (0.000000000001::real)"
 lemma process_time_25_cell_eq_ceiling: "(0::real) < (0.000000000001::real)"
   by simp
 
-lemma weather_window_hours_eq_48: "(48::nat) = 48"
+lemma weather_window_hours_eq_24: "(24::nat) = 24"
   by simp
 
 lemma market_class_median_under_half: "(0.025840180827430004::real) < (0.5::real)"
   by simp
 
-lemma market_window_days_pos: "(0::nat) < 5"
+lemma market_window_days_pos: "(0::nat) < 1"
   by simp
 
 lemma market_class_green_flag: "(1::nat) = 1"
   by simp
 
-lemma sickness_host_err_under_half: "(0.02223625038520223::real) < (0.5::real)"
+lemma sickness_host_err_under_half: "(0.022236250385197696::real) < (0.5::real)"
   by simp
 
 lemma sickness_pathogen_err_under_half: "(0.015311061469322368::real) < (0.5::real)"

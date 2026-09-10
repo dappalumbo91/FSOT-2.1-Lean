@@ -59,7 +59,9 @@ def main() -> int:
     valve = "storm_sector" if vix and vix["measured"] >= storm_bar else "quiet_or_class"
     tau0 = process_ceiling_days()
     window_d = process_time_days(tau0, 20.0)
-    window_days = max(1, int(round(window_d)))
+    # Next increment (same grammar as weather 48 h → 24 h): one SI day.
+    # Structural d=20 duration stays in process_time_days_d20.
+    window_days = 1
     p_fire, p_hold = valve_split()
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -76,7 +78,8 @@ def main() -> int:
         "poof_hold": p_fire,
         "suction_hold": p_hold,
         "kill": "A single ticker close or crash date as a 0.5% central.",
-        "goal": "Dated quiet/storm market windows on public class objects; finer dt later.",
+        "goal": "1-day quiet/storm windows on public class objects; finer dt later.",
+        "previous_calendar_window_days": max(1, int(round(window_d))),
         "rows": rows,
     }
     OUT.write_text(json.dumps(payload, indent=2), encoding="utf-8")

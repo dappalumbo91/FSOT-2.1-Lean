@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T23:57:24.076168+00:00",
+  "generated_at": "2026-09-10T00:05:38.137821+00:00",
   "pin": "D1D38A",
   "domain": "Economics",
   "D_eff": 20,
@@ -9,11 +9,12 @@
   "valve": "quiet_or_class",
   "storm_bar_vix": 21.916162082994564,
   "process_time_days_d20": 5.483281572999748,
-  "calendar_window_days": 5,
+  "calendar_window_days": 1,
   "poof_hold": 0.510728588773961,
   "suction_hold": 0.4892714112260389,
   "kill": "A single ticker close or crash date as a 0.5% central.",
-  "goal": "Dated quiet/storm market windows on public class objects; finer dt later.",
+  "goal": "1-day quiet/storm windows on public class objects; finer dt later.",
+  "previous_calendar_window_days": 5,
   "rows": [
     {
       "name": "sp500_sharpe_10y",

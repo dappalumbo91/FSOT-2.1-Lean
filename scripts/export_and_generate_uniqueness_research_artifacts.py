@@ -38,6 +38,7 @@ from fsot_earth_fluid_forecast import (  # noqa: E402
     forecast_horizon_days,
     process_ceiling_days,
     process_time_days,
+    weather_horizon_hours,
 )
 from fsot_path_sum import run_path_sum_suite  # noqa: E402
 from fsot_uniqueness_confinement import (  # noqa: E402
@@ -325,12 +326,12 @@ def build_obligations() -> list[dict]:
     )
     add(
         {
-            "id": "weather_window_hours_eq_48",
+            "id": "weather_window_hours_eq_24",
             "kind": "eq_nat",
-            "value": 48,
-            "right_value": 48,
+            "value": int(weather_horizon_hours()),
+            "right_value": 24,
             "module": "Uniqueness.ProcessTime",
-            "claim": "ECMWF_path_48h_window",
+            "claim": "ECMWF_path_24h_window",
         }
     )
 
@@ -371,8 +372,18 @@ def build_obligations() -> list[dict]:
     sick_p = ROOT / "data" / "sickness_two_system_smoke.json"
     if sick_p.is_file():
         sick = json.loads(sick_p.read_text(encoding="utf-8"))
-        h_e = float((sick.get("host") or {}).get("error_pct") or 0.0)
-        p_e = float((sick.get("pathogen") or {}).get("error_pct") or 0.0)
+        h_e = float(
+            sick.get("host_median_error_pct")
+            if sick.get("host_median_error_pct") is not None
+            else (sick.get("host") or {}).get("error_pct")
+            or 0.0
+        )
+        p_e = float(
+            sick.get("pathogen_median_error_pct")
+            if sick.get("pathogen_median_error_pct") is not None
+            else (sick.get("pathogen") or {}).get("error_pct")
+            or 0.0
+        )
         kap = float(sick.get("kappa_host_pathogen") or 0.0)
         add(
             {

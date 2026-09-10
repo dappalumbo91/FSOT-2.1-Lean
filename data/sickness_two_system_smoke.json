@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T23:57:24.191019+00:00",
+  "generated_at": "2026-09-10T00:05:38.749101+00:00",
   "pin": "D1D38A",
   "product": "FSOT-Genetics (sibling). Hub smoke only.",
   "host": {
@@ -22,6 +22,62 @@
     "error_pct": 0.015311061469322368,
     "S": 0.3062212293865662
   },
+  "hosts": [
+    {
+      "name": "MT-ND1",
+      "accession": "NC_012920.1",
+      "measured_bp": 956,
+      "domain": "Biology",
+      "source": "NCBI RefSeq human mitochondrial genome",
+      "computed_bp": 956.2125785536825,
+      "error_pct": 0.02223625038520223,
+      "S": 0.4447250077038459
+    },
+    {
+      "name": "MT-CO1",
+      "accession": "NC_012920.1",
+      "measured_bp": 1542,
+      "domain": "Biology",
+      "source": "NCBI RefSeq human mitochondrial genome",
+      "computed_bp": 1542.3428829809397,
+      "error_pct": 0.022236250385197696,
+      "S": 0.4447250077038459
+    },
+    {
+      "name": "MT-ND2",
+      "accession": "NC_012920.1",
+      "measured_bp": 1044,
+      "domain": "Biology",
+      "source": "NCBI RefSeq human mitochondrial genome",
+      "computed_bp": 1044.2321464540214,
+      "error_pct": 0.022236250385191933,
+      "S": 0.4447250077038459
+    }
+  ],
+  "pathogens": [
+    {
+      "name": "S_spike_CDS",
+      "accession": "NC_045512.2",
+      "measured_bp": 3822,
+      "domain": "Biochemistry",
+      "source": "NCBI RefSeq SARS-CoV-2 Wuhan-Hu-1 spike CDS",
+      "computed_bp": 3822.5851887693575,
+      "error_pct": 0.015311061469322368,
+      "S": 0.3062212293865662
+    },
+    {
+      "name": "N_nucleocapsid_CDS",
+      "accession": "NC_045512.2",
+      "measured_bp": 1260,
+      "domain": "Biochemistry",
+      "source": "NCBI RefSeq SARS-CoV-2 Wuhan-Hu-1 nucleocapsid CDS",
+      "computed_bp": 1260.1929193745134,
+      "error_pct": 0.015311061469317011,
+      "S": 0.3062212293865662
+    }
+  ],
+  "host_median_error_pct": 0.022236250385197696,
+  "pathogen_median_error_pct": 0.015311061469322368,
   "kappa_host_pathogen": 0.02104201418939883,
   "poof_hold": 0.510728588773961,
   "suction_hold": 0.4892714112260389,

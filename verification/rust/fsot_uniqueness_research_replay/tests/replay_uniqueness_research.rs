@@ -75,11 +75,11 @@ fn replay_uniqueness_research_obligations() {
     assert!(6.854101966249686_f64 > 0.0, "process_ceiling_days_pos");
     assert!(0.0_f64 < 1e-12_f64, "process_time_d25_eq_ceiling");
     assert!(0.0_f64 < 1e-12_f64, "process_time_25_cell_eq_ceiling");
-    assert_eq!(48, 48, "weather_window_hours_eq_48");
+    assert_eq!(24, 24, "weather_window_hours_eq_24");
     assert!(0.025840180827430004_f64 < 0.5_f64, "market_class_median_under_half");
-    assert!(5 > 0, "market_window_days_pos");
+    assert!(1 > 0, "market_window_days_pos");
     assert_eq!(1, 1, "market_class_green_flag");
-    assert!(0.02223625038520223_f64 < 0.5_f64, "sickness_host_err_under_half");
+    assert!(0.022236250385197696_f64 < 0.5_f64, "sickness_host_err_under_half");
     assert!(0.015311061469322368_f64 < 0.5_f64, "sickness_pathogen_err_under_half");
     assert!(0.02104201418939883_f64 > 0.0, "sickness_kappa_pos");
 }

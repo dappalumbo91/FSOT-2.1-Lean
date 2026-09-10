@@ -231,19 +231,19 @@ theorem process_time_d25_eq_ceiling : (0.0 : ℝ) < (1e-12 : ℝ) := by
 theorem process_time_25_cell_eq_ceiling : (0.0 : ℝ) < (1e-12 : ℝ) := by
   norm_num
 
-theorem weather_window_hours_eq_48 : (48 : ℕ) = (48 : ℕ) := by
+theorem weather_window_hours_eq_24 : (24 : ℕ) = (24 : ℕ) := by
   decide
 
 theorem market_class_median_under_half : (0.025840180827430004 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
-theorem market_window_days_pos : 0 < (5 : ℕ) := by
+theorem market_window_days_pos : 0 < (1 : ℕ) := by
   decide
 
 theorem market_class_green_flag : (1 : ℕ) = (1 : ℕ) := by
   decide
 
-theorem sickness_host_err_under_half : (0.02223625038520223 : ℝ) < (0.5 : ℝ) := by
+theorem sickness_host_err_under_half : (0.022236250385197696 : ℝ) < (0.5 : ℝ) := by
   norm_num
 
 theorem sickness_pathogen_err_under_half : (0.015311061469322368 : ℝ) < (0.5 : ℝ) := by

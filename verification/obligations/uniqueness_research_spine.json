@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T23:57:27.064341+00:00",
+  "generated_at": "2026-09-10T00:05:54.870692+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
   "obligation_count": 80,
@@ -642,13 +642,13 @@
       "coq_id": "process_time_25_cell_eq_ceiling"
     },
     {
-      "id": "weather_window_hours_eq_48",
+      "id": "weather_window_hours_eq_24",
       "kind": "eq_nat",
-      "value": 48,
-      "right_value": 48,
+      "value": 24,
+      "right_value": 24,
       "module": "Uniqueness.ProcessTime",
-      "claim": "ECMWF_path_48h_window",
-      "coq_id": "weather_window_hours_eq_48"
+      "claim": "ECMWF_path_24h_window",
+      "coq_id": "weather_window_hours_eq_24"
     },
     {
       "id": "market_class_median_under_half",
@@ -661,7 +661,7 @@
     {
       "id": "market_window_days_pos",
       "kind": "nat_pos",
-      "value": 5,
+      "value": 1,
       "module": "Uniqueness.MarketProcess",
       "claim": "market_d20_window",
       "coq_id": "market_window_days_pos"
@@ -678,7 +678,7 @@
     {
       "id": "sickness_host_err_under_half",
       "kind": "lt_half",
-      "value": 0.02223625038520223,
+      "value": 0.022236250385197696,
       "module": "Uniqueness.SicknessTwoSystem",
       "claim": "host_mt_nd1",
       "coq_id": "sickness_host_err_under_half"

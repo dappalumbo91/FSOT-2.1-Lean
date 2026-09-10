@@ -24,7 +24,7 @@ A storm, a quake, a flare, an eruption is **pressure that stops** — the cell r
 | Orifice scale | \(L\cdot\mathrm{POOF}\cdot d/25\) | normalize the scored area to fold \(d\) | potentials from frozen valve (D11) |
 | Horizon | \(\varphi^4\) ≈ **7 days** | freeze one issue per day | sliding window, hourly issue |
 | Aftershock timing | \(n(t)\propto 1/(t+1/\varphi)^{1}\) | carried on each EQ cell | score Omori residual vs USGS decay |
-| Weather window | 48 h | NDBC storm vs quiet, one cell per ocean basin | METAR/NWP ingest, same valve |
+| Weather window | \(\mathrm{weather\_horizon\_hours}=24\) | NDBC storm vs quiet, one cell per ocean basin. Frozen issues stay 48 h. | METAR/NWP ingest, same valve |
 | Solar window | 72 h | planetary Kp sector (Kp≥5 when loading) | GOES X-ray + Kp stream |
 | Tide window | 48 h | CO-OPS surge residual vs harmonic; **score** bar = POOF m; **issue** bar = POOF·(1+POOF) | station graph |
 

@@ -148,16 +148,16 @@
 (assert (! (< 0.0 0.000000000001) :named o71))
 ; process_time_25_cell_eq_ceiling kind=abs_diff_lt_lit
 (assert (! (< 0.0 0.000000000001) :named o72))
-; weather_window_hours_eq_48 kind=eq_nat
-(assert (! (= 48 48) :named o73))
+; weather_window_hours_eq_24 kind=eq_nat
+(assert (! (= 24 24) :named o73))
 ; market_class_median_under_half kind=lt_half
 (assert (! (< 0.025840180827430004 0.5) :named o74))
 ; market_window_days_pos kind=nat_pos
-(assert (! (> 5 0) :named o75))
+(assert (! (> 1 0) :named o75))
 ; market_class_green_flag kind=eq_nat
 (assert (! (= 1 1) :named o76))
 ; sickness_host_err_under_half kind=lt_half
-(assert (! (< 0.02223625038520223 0.5) :named o77))
+(assert (! (< 0.022236250385197696 0.5) :named o77))
 ; sickness_pathogen_err_under_half kind=lt_half
 (assert (! (< 0.015311061469322368 0.5) :named o78))
 ; sickness_kappa_pos kind=pos

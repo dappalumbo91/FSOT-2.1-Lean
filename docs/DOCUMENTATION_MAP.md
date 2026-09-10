@@ -19,6 +19,7 @@
 | **Why not claimed** | [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md) | Uniqueness split + honest refusals | Every “no” has a reason |
 | **Emergent time** | [`TIME_EMERGENT.md`](TIME_EMERGENT.md) | Process time vs Newtonian UTC | D12 / C15; dilation is flow |
 | **Goal tracks** | [`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md) | ECMWF, prices, sickness, path-sum | In progress, not claimed beaten |
+| **Millennium YM vs FSOT** | [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) | Clay mass-gap vs native path-sum | Different formal objects |
 | **Coverage list** | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) | 35 cores + 477 green files | What the program solves for |
 | **Sibling slots** | [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md) | Residual vs product | Where the next open-source text/sim goes |
 

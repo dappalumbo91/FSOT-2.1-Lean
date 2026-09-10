@@ -1,6 +1,6 @@
 # Market process layer
 
-**Pin:** D1D38A · **Fold:** Economics \(D=20\) · **Generated:** 2026-09-09T23:57:24.076168+00:00
+**Pin:** D1D38A · **Fold:** Economics \(D=20\) · **Generated:** 2026-09-10T00:05:38.137821+00:00
 
 This is the start of *price prediction* as **process time**, not as a ticker.
 
@@ -8,7 +8,7 @@ This is the start of *price prediction* as **process time**, not as a ticker.
 |--------|------|
 | Class objects | 20 public anchors (`finance_markets_reference_observables.json`) |
 | Domain median err% | **0.0258%** (green if ≤ 0.5%) |
-| Process window | \(d=20\): 5.483 d → **5 calendar days** |
+| Process window | \(d=20\): 5.483 d → **1 calendar days** |
 | Valve split | POOF 0.5107 / SUCTION 0.4893 |
 | Class valve | `quiet_or_class` (VIX long-run vs bar 21.916) |
 

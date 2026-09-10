@@ -38,6 +38,7 @@ def main() -> int:
     step("market_process", [sys.executable, str(ROOT / "scripts" / "build_market_process_layer.py")])
     step("sickness_two_system", [sys.executable, str(ROOT / "scripts" / "smoke_sickness_two_system.py")])
     step("process_time_smoke", [sys.executable, str(ROOT / "scripts" / "smoke_dynamic_forecast_potentials.py")])
+    step("weather_24h_retro", [sys.executable, str(ROOT / "scripts" / "retro_weather_24h.py")], timeout=300)
     step(
         "uniqueness_multiprover",
         [sys.executable, str(ROOT / "scripts" / "run_uniqueness_research_verification.py")],

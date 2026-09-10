@@ -16,6 +16,7 @@ emits that sum (weights = 1).
 
 The continuum Yang–Mills *measure* uniqueness theorem is a **different object**.
 It stays `OPEN_NOT_CLAIMED` until that exact statement is machine-checked.
+What that prize problem actually is: [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md).
 Working the native path-sum is how we do the path-integral job here.
 
 | Check | Meaning |
