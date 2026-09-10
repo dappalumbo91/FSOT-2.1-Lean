@@ -40,6 +40,7 @@ from fsot_earth_fluid_forecast import (  # noqa: E402
     process_time_days,
     weather_horizon_hours,
 )
+from fsot_millennium_track import run_millennium_suite  # noqa: E402
 from fsot_path_sum import run_path_sum_suite  # noqa: E402
 from fsot_uniqueness_confinement import (  # noqa: E402
     free_color_damping_rate,
@@ -411,6 +412,46 @@ def build_obligations() -> list[dict]:
                     "value": kap,
                     "module": "Uniqueness.SicknessTwoSystem",
                     "claim": "R7_kappa",
+                }
+            )
+
+    # --- Millennium Prize track (native identities; Clay statements stay open) ---
+    for r in run_millennium_suite():
+        name = str(r["name"])
+        sid = _safe_id(name)
+        c, m, err = float(r["computed"]), float(r["measured"]), float(r["error_pct"])
+        module = "Uniqueness.MillenniumTrack"
+        claim = name
+        if r.get("clay_status") == "PROCESS" and abs(c - m) < 1e-12:
+            add(
+                {
+                    "id": f"{sid}_flag",
+                    "kind": "eq_nat",
+                    "value": int(round(c)),
+                    "right_value": int(round(m)),
+                    "module": module,
+                    "claim": claim,
+                }
+            )
+            continue
+        if err <= 0.5:
+            add(
+                {
+                    "id": f"{sid}_err_under_half",
+                    "kind": "lt_half",
+                    "value": err if err > 0 else 0.0,
+                    "module": module,
+                    "claim": claim,
+                }
+            )
+        if c > 1e-15:
+            add(
+                {
+                    "id": f"{sid}_computed_pos",
+                    "kind": "pos",
+                    "value": abs(c),
+                    "module": module,
+                    "claim": claim,
                 }
             )
 

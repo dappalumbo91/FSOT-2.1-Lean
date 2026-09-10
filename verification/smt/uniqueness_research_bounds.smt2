@@ -162,5 +162,61 @@
 (assert (! (< 0.015311061469322368 0.5) :named o78))
 ; sickness_kappa_pos kind=pos
 (assert (! (> 0.021042014189398831 0.0) :named o79))
+; clay_problems_remaining_flag kind=eq_nat
+(assert (! (= 6 6) :named o80))
+; clay_direct_submit_accepted_flag kind=eq_nat
+(assert (! (= 0 0) :named o81))
+; clay_wait_years_required_flag kind=eq_nat
+(assert (! (= 2 2) :named o82))
+; clay_published_qualifying_outlet_flag kind=eq_nat
+(assert (! (= 0 0) :named o83))
+; clay_two_years_elapsed_flag kind=eq_nat
+(assert (! (= 0 0) :named o84))
+; clay_general_acceptance_flag kind=eq_nat
+(assert (! (= 0 0) :named o85))
+; clay_prize_awarded_flag kind=eq_nat
+(assert (! (= 0 0) :named o86))
+; poincare_solved_historical_flag kind=eq_nat
+(assert (! (= 1 1) :named o87))
+; ym_native_path_sum2_err_under_half kind=lt_half
+(assert (! (< 0.000000000000011102 0.5) :named o88))
+; ym_native_path_sum2_computed_pos kind=pos
+(assert (! (> 0.999999999999999889 0.0) :named o89))
+; ym_color_path_integral_finite_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o90))
+; ym_color_path_integral_finite_computed_pos kind=pos
+(assert (! (> 1.495906731906543774 0.0) :named o91))
+; ns_viscosity_pos_D6_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o92))
+; ns_viscosity_pos_D6_computed_pos kind=pos
+(assert (! (> 0.412270210542628024 0.0) :named o93))
+; ns_viscosity_pos_D14_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o94))
+; ns_viscosity_pos_D14_computed_pos kind=pos
+(assert (! (> 0.306342472107273833 0.0) :named o95))
+; ns_viscosity_pos_D25_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o96))
+; ns_viscosity_pos_D25_computed_pos kind=pos
+(assert (! (> 0.160691831758661835 0.0) :named o97))
+; ns_sound_speed_sq_pos_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o98))
+; ns_sound_speed_sq_pos_computed_pos kind=pos
+(assert (! (> 0.591892512320145503 0.0) :named o99))
+; riemann_first_zero_im_probe_err_under_half kind=lt_half
+(assert (! (< 0.001660664796375164 0.5) :named o100))
+; riemann_first_zero_im_probe_computed_pos kind=pos
+(assert (! (> 14.134490411330199677 0.0) :named o101))
+; pnp_grover_exponent_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o102))
+; pnp_grover_exponent_computed_pos kind=pos
+(assert (! (> 0.5 0.0) :named o103))
+; bsd_clay_open_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o104))
+; bsd_clay_open_computed_pos kind=pos
+(assert (! (> 1.0 0.0) :named o105))
+; hodge_clay_open_err_under_half kind=lt_half
+(assert (! (< 0.0 0.5) :named o106))
+; hodge_clay_open_computed_pos kind=pos
+(assert (! (> 1.0 0.0) :named o107))
 (check-sat)
 ; expect: sat

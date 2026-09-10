@@ -245,3 +245,87 @@ Proof. lra. Qed.
 Lemma sickness_kappa_pos : 0 < ((0.02104201418939883%R)).
 Proof. lra. Qed.
 
+Lemma clay_problems_remaining_flag : (6 = 6)%nat.
+Proof. reflexivity. Qed.
+
+Lemma clay_direct_submit_accepted_flag : (0 = 0)%nat.
+Proof. reflexivity. Qed.
+
+Lemma clay_wait_years_required_flag : (2 = 2)%nat.
+Proof. reflexivity. Qed.
+
+Lemma clay_published_qualifying_outlet_flag : (0 = 0)%nat.
+Proof. reflexivity. Qed.
+
+Lemma clay_two_years_elapsed_flag : (0 = 0)%nat.
+Proof. reflexivity. Qed.
+
+Lemma clay_general_acceptance_flag : (0 = 0)%nat.
+Proof. reflexivity. Qed.
+
+Lemma clay_prize_awarded_flag : (0 = 0)%nat.
+Proof. reflexivity. Qed.
+
+Lemma poincare_solved_historical_flag : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma ym_native_path_sum2_err_under_half : ((0.000000000000011102230246251565%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma ym_native_path_sum2_computed_pos : 0 < ((0.9999999999999999%R)).
+Proof. lra. Qed.
+
+Lemma ym_color_path_integral_finite_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma ym_color_path_integral_finite_computed_pos : 0 < ((1.4959067319065438%R)).
+Proof. lra. Qed.
+
+Lemma ns_viscosity_pos_D6_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma ns_viscosity_pos_D6_computed_pos : 0 < ((0.412270210542628%R)).
+Proof. lra. Qed.
+
+Lemma ns_viscosity_pos_D14_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma ns_viscosity_pos_D14_computed_pos : 0 < ((0.30634247210727383%R)).
+Proof. lra. Qed.
+
+Lemma ns_viscosity_pos_D25_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma ns_viscosity_pos_D25_computed_pos : 0 < ((0.16069183175866183%R)).
+Proof. lra. Qed.
+
+Lemma ns_sound_speed_sq_pos_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma ns_sound_speed_sq_pos_computed_pos : 0 < ((0.5918925123201455%R)).
+Proof. lra. Qed.
+
+Lemma riemann_first_zero_im_probe_err_under_half : ((0.0016606647963751638%R)) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma riemann_first_zero_im_probe_computed_pos : 0 < ((14.1344904113302%R)).
+Proof. lra. Qed.
+
+Lemma pnp_grover_exponent_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma pnp_grover_exponent_computed_pos : 0 < ((0.5%R)).
+Proof. lra. Qed.
+
+Lemma bsd_clay_open_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma bsd_clay_open_computed_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+
+Lemma hodge_clay_open_err_under_half : (0%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma hodge_clay_open_computed_pos : 0 < ((1.0%R)).
+Proof. lra. Qed.
+

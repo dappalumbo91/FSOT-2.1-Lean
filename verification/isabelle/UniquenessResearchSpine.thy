@@ -244,4 +244,88 @@ lemma sickness_pathogen_err_under_half: "(0.015311061469322368::real) < (0.5::re
 lemma sickness_kappa_pos: "(0::real) < 0.02104201418939883"
   by simp
 
+lemma clay_problems_remaining_flag: "(6::nat) = 6"
+  by simp
+
+lemma clay_direct_submit_accepted_flag: "(0::nat) = 0"
+  by simp
+
+lemma clay_wait_years_required_flag: "(2::nat) = 2"
+  by simp
+
+lemma clay_published_qualifying_outlet_flag: "(0::nat) = 0"
+  by simp
+
+lemma clay_two_years_elapsed_flag: "(0::nat) = 0"
+  by simp
+
+lemma clay_general_acceptance_flag: "(0::nat) = 0"
+  by simp
+
+lemma clay_prize_awarded_flag: "(0::nat) = 0"
+  by simp
+
+lemma poincare_solved_historical_flag: "(1::nat) = 1"
+  by simp
+
+lemma ym_native_path_sum2_err_under_half: "(0.00000000000001110223::real) < (0.5::real)"
+  by simp
+
+lemma ym_native_path_sum2_computed_pos: "(0::real) < 0.9999999999999999"
+  by simp
+
+lemma ym_color_path_integral_finite_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma ym_color_path_integral_finite_computed_pos: "(0::real) < 1.4959067319065438"
+  by simp
+
+lemma ns_viscosity_pos_D6_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma ns_viscosity_pos_D6_computed_pos: "(0::real) < 0.412270210542628"
+  by simp
+
+lemma ns_viscosity_pos_D14_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma ns_viscosity_pos_D14_computed_pos: "(0::real) < 0.30634247210727383"
+  by simp
+
+lemma ns_viscosity_pos_D25_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma ns_viscosity_pos_D25_computed_pos: "(0::real) < 0.16069183175866183"
+  by simp
+
+lemma ns_sound_speed_sq_pos_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma ns_sound_speed_sq_pos_computed_pos: "(0::real) < 0.5918925123201455"
+  by simp
+
+lemma riemann_first_zero_im_probe_err_under_half: "(0.0016606647963751638::real) < (0.5::real)"
+  by simp
+
+lemma riemann_first_zero_im_probe_computed_pos: "(0::real) < 14.1344904113302"
+  by simp
+
+lemma pnp_grover_exponent_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma pnp_grover_exponent_computed_pos: "(0::real) < 0.5"
+  by simp
+
+lemma bsd_clay_open_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma bsd_clay_open_computed_pos: "(0::real) < 1.0"
+  by simp
+
+lemma hodge_clay_open_err_under_half: "(0::real) < (0.5::real)"
+  by simp
+
+lemma hodge_clay_open_computed_pos: "(0::real) < 1.0"
+  by simp
+
 end

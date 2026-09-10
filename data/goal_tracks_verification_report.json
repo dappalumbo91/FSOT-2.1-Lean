@@ -1,7 +1,12 @@
 {
-  "generated_at": "2026-09-10T00:06:35.651135+00:00",
+  "generated_at": "2026-09-10T00:14:15.580820+00:00",
   "overall_ok": true,
   "steps": [
+    {
+      "name": "millennium_track",
+      "ok": true,
+      "returncode": 0
+    },
     {
       "name": "path_sum",
       "ok": true,
@@ -39,7 +44,7 @@
     }
   ],
   "uniqueness_report": {
-    "obligation_count": 80,
+    "obligation_count": 108,
     "python": "passed",
     "rust": "passed",
     "smt": "passed",

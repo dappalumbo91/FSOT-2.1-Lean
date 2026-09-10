@@ -38,6 +38,7 @@ Full map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md)
 | Time (emergent process, not UTC) | [`TIME_EMERGENT.md`](TIME_EMERGENT.md) · C15 / D12 |
 | Goal tracks (ECMWF / prices / sickness / path-sum) | [`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md) |
 | Millennium YM vs FSOT path-sum | [`MILLENNIUM_YM_VS_FSOT.md`](MILLENNIUM_YM_VS_FSOT.md) |
+| All 6 remaining Clay problems + prize rules | [`MILLENNIUM_PRIZE_TRACK.md`](MILLENNIUM_PRIZE_TRACK.md) |
 | What 477 files cover | [`COVERAGE_REFERENCE.md`](COVERAGE_REFERENCE.md) |
 | Next sibling text / sim | [`SIBLING_APPLICATION_GAPS.md`](SIBLING_APPLICATION_GAPS.md) |
 | Here to break it | [`SKEPTIC_REPLICATION_KIT.md`](SKEPTIC_REPLICATION_KIT.md) · [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |

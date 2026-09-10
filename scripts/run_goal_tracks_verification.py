@@ -34,6 +34,7 @@ def main() -> int:
         steps.append({"name": name, "ok": ok, "returncode": r.returncode})
         print(f"{name}: {'PASS' if ok else 'FAIL'} (exit {r.returncode})")
 
+    step("millennium_track", [sys.executable, str(ROOT / "vendor" / "fsot_millennium_track.py")])
     step("path_sum", [sys.executable, str(ROOT / "vendor" / "fsot_path_sum.py")])
     step("market_process", [sys.executable, str(ROOT / "scripts" / "build_market_process_layer.py")])
     step("sickness_two_system", [sys.executable, str(ROOT / "scripts" / "smoke_sickness_two_system.py")])
@@ -52,6 +53,7 @@ def main() -> int:
             "FSOT.Formal.ScalarEngineStructure",
             "FSOT.Formal.UniquenessAttractor",
             "FSOT.Formal.UniquenessResearchSpine",
+            "FSOT.Formal.MillenniumTrack",
         ],
         cwd=str(ROOT),
         timeout=1200,

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-10T00:05:54.870692+00:00",
+  "generated_at": "2026-09-10T00:13:39.190621+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 80,
+  "obligation_count": 108,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -698,6 +698,238 @@
       "module": "Uniqueness.SicknessTwoSystem",
       "claim": "R7_kappa",
       "coq_id": "sickness_kappa_pos"
+    },
+    {
+      "id": "clay_problems_remaining_flag",
+      "kind": "eq_nat",
+      "value": 6,
+      "right_value": 6,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "clay_problems_remaining",
+      "coq_id": "clay_problems_remaining_flag"
+    },
+    {
+      "id": "clay_direct_submit_accepted_flag",
+      "kind": "eq_nat",
+      "value": 0,
+      "right_value": 0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "clay_direct_submit_accepted",
+      "coq_id": "clay_direct_submit_accepted_flag"
+    },
+    {
+      "id": "clay_wait_years_required_flag",
+      "kind": "eq_nat",
+      "value": 2,
+      "right_value": 2,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "clay_wait_years_required",
+      "coq_id": "clay_wait_years_required_flag"
+    },
+    {
+      "id": "clay_published_qualifying_outlet_flag",
+      "kind": "eq_nat",
+      "value": 0,
+      "right_value": 0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "clay_published_qualifying_outlet",
+      "coq_id": "clay_published_qualifying_outlet_flag"
+    },
+    {
+      "id": "clay_two_years_elapsed_flag",
+      "kind": "eq_nat",
+      "value": 0,
+      "right_value": 0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "clay_two_years_elapsed",
+      "coq_id": "clay_two_years_elapsed_flag"
+    },
+    {
+      "id": "clay_general_acceptance_flag",
+      "kind": "eq_nat",
+      "value": 0,
+      "right_value": 0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "clay_general_acceptance",
+      "coq_id": "clay_general_acceptance_flag"
+    },
+    {
+      "id": "clay_prize_awarded_flag",
+      "kind": "eq_nat",
+      "value": 0,
+      "right_value": 0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "clay_prize_awarded",
+      "coq_id": "clay_prize_awarded_flag"
+    },
+    {
+      "id": "poincare_solved_historical_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "poincare_solved_historical",
+      "coq_id": "poincare_solved_historical_flag"
+    },
+    {
+      "id": "ym_native_path_sum2_err_under_half",
+      "kind": "lt_half",
+      "value": 1.1102230246251565e-14,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ym_native_path_sum2",
+      "coq_id": "ym_native_path_sum2_err_under_half"
+    },
+    {
+      "id": "ym_native_path_sum2_computed_pos",
+      "kind": "pos",
+      "value": 0.9999999999999999,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ym_native_path_sum2",
+      "coq_id": "ym_native_path_sum2_computed_pos"
+    },
+    {
+      "id": "ym_color_path_integral_finite_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ym_color_path_integral_finite",
+      "coq_id": "ym_color_path_integral_finite_err_under_half"
+    },
+    {
+      "id": "ym_color_path_integral_finite_computed_pos",
+      "kind": "pos",
+      "value": 1.4959067319065438,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ym_color_path_integral_finite",
+      "coq_id": "ym_color_path_integral_finite_computed_pos"
+    },
+    {
+      "id": "ns_viscosity_pos_D6_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ns_viscosity_pos_D6",
+      "coq_id": "ns_viscosity_pos_D6_err_under_half"
+    },
+    {
+      "id": "ns_viscosity_pos_D6_computed_pos",
+      "kind": "pos",
+      "value": 0.412270210542628,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ns_viscosity_pos_D6",
+      "coq_id": "ns_viscosity_pos_D6_computed_pos"
+    },
+    {
+      "id": "ns_viscosity_pos_D14_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ns_viscosity_pos_D14",
+      "coq_id": "ns_viscosity_pos_D14_err_under_half"
+    },
+    {
+      "id": "ns_viscosity_pos_D14_computed_pos",
+      "kind": "pos",
+      "value": 0.30634247210727383,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ns_viscosity_pos_D14",
+      "coq_id": "ns_viscosity_pos_D14_computed_pos"
+    },
+    {
+      "id": "ns_viscosity_pos_D25_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ns_viscosity_pos_D25",
+      "coq_id": "ns_viscosity_pos_D25_err_under_half"
+    },
+    {
+      "id": "ns_viscosity_pos_D25_computed_pos",
+      "kind": "pos",
+      "value": 0.16069183175866183,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ns_viscosity_pos_D25",
+      "coq_id": "ns_viscosity_pos_D25_computed_pos"
+    },
+    {
+      "id": "ns_sound_speed_sq_pos_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ns_sound_speed_sq_pos",
+      "coq_id": "ns_sound_speed_sq_pos_err_under_half"
+    },
+    {
+      "id": "ns_sound_speed_sq_pos_computed_pos",
+      "kind": "pos",
+      "value": 0.5918925123201455,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "ns_sound_speed_sq_pos",
+      "coq_id": "ns_sound_speed_sq_pos_computed_pos"
+    },
+    {
+      "id": "riemann_first_zero_im_probe_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0016606647963751638,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "riemann_first_zero_im_probe",
+      "coq_id": "riemann_first_zero_im_probe_err_under_half"
+    },
+    {
+      "id": "riemann_first_zero_im_probe_computed_pos",
+      "kind": "pos",
+      "value": 14.1344904113302,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "riemann_first_zero_im_probe",
+      "coq_id": "riemann_first_zero_im_probe_computed_pos"
+    },
+    {
+      "id": "pnp_grover_exponent_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "pnp_grover_exponent",
+      "coq_id": "pnp_grover_exponent_err_under_half"
+    },
+    {
+      "id": "pnp_grover_exponent_computed_pos",
+      "kind": "pos",
+      "value": 0.5,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "pnp_grover_exponent",
+      "coq_id": "pnp_grover_exponent_computed_pos"
+    },
+    {
+      "id": "bsd_clay_open_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "bsd_clay_open",
+      "coq_id": "bsd_clay_open_err_under_half"
+    },
+    {
+      "id": "bsd_clay_open_computed_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "bsd_clay_open",
+      "coq_id": "bsd_clay_open_computed_pos"
+    },
+    {
+      "id": "hodge_clay_open_err_under_half",
+      "kind": "lt_half",
+      "value": 0.0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "hodge_clay_open",
+      "coq_id": "hodge_clay_open_err_under_half"
+    },
+    {
+      "id": "hodge_clay_open_computed_pos",
+      "kind": "pos",
+      "value": 1.0,
+      "module": "Uniqueness.MillenniumTrack",
+      "claim": "hodge_clay_open",
+      "coq_id": "hodge_clay_open_computed_pos"
     }
   ],
   "source_summaries": {

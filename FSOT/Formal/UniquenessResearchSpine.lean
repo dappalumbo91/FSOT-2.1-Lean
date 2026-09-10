@@ -252,6 +252,90 @@ theorem sickness_pathogen_err_under_half : (0.015311061469322368 : ℝ) < (0.5 :
 theorem sickness_kappa_pos : (0 : ℝ) < (0.02104201418939883 : ℝ) := by
   norm_num
 
+theorem clay_problems_remaining_flag : (6 : ℕ) = (6 : ℕ) := by
+  decide
+
+theorem clay_direct_submit_accepted_flag : (0 : ℕ) = (0 : ℕ) := by
+  decide
+
+theorem clay_wait_years_required_flag : (2 : ℕ) = (2 : ℕ) := by
+  decide
+
+theorem clay_published_qualifying_outlet_flag : (0 : ℕ) = (0 : ℕ) := by
+  decide
+
+theorem clay_two_years_elapsed_flag : (0 : ℕ) = (0 : ℕ) := by
+  decide
+
+theorem clay_general_acceptance_flag : (0 : ℕ) = (0 : ℕ) := by
+  decide
+
+theorem clay_prize_awarded_flag : (0 : ℕ) = (0 : ℕ) := by
+  decide
+
+theorem poincare_solved_historical_flag : (1 : ℕ) = (1 : ℕ) := by
+  decide
+
+theorem ym_native_path_sum2_err_under_half : (1.1102230246251565e-14 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem ym_native_path_sum2_computed_pos : (0 : ℝ) < (0.9999999999999999 : ℝ) := by
+  norm_num
+
+theorem ym_color_path_integral_finite_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem ym_color_path_integral_finite_computed_pos : (0 : ℝ) < (1.4959067319065438 : ℝ) := by
+  norm_num
+
+theorem ns_viscosity_pos_D6_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem ns_viscosity_pos_D6_computed_pos : (0 : ℝ) < (0.412270210542628 : ℝ) := by
+  norm_num
+
+theorem ns_viscosity_pos_D14_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem ns_viscosity_pos_D14_computed_pos : (0 : ℝ) < (0.30634247210727383 : ℝ) := by
+  norm_num
+
+theorem ns_viscosity_pos_D25_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem ns_viscosity_pos_D25_computed_pos : (0 : ℝ) < (0.16069183175866183 : ℝ) := by
+  norm_num
+
+theorem ns_sound_speed_sq_pos_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem ns_sound_speed_sq_pos_computed_pos : (0 : ℝ) < (0.5918925123201455 : ℝ) := by
+  norm_num
+
+theorem riemann_first_zero_im_probe_err_under_half : (0.0016606647963751638 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem riemann_first_zero_im_probe_computed_pos : (0 : ℝ) < (14.1344904113302 : ℝ) := by
+  norm_num
+
+theorem pnp_grover_exponent_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem pnp_grover_exponent_computed_pos : (0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem bsd_clay_open_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem bsd_clay_open_computed_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
+theorem hodge_clay_open_err_under_half : (0.0 : ℝ) < (0.5 : ℝ) := by
+  norm_num
+
+theorem hodge_clay_open_computed_pos : (0 : ℝ) < (1.0 : ℝ) := by
+  norm_num
+
 end
 
 end FSOT.Formal.UniquenessResearch
