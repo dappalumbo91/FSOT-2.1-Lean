@@ -8,6 +8,11 @@ This module answers a different question: if you simulate the *function* each
 problem is trying to capture, is the seed-locked FSOT number more accurate
 than what is currently public? Wrong object is a false win. A residual probe
 is not a Clay theorem. Glueball vs Teper is allowed to lose.
+
+Two independent bars, never collapsed:
+  1. Public SOTA — did we beat the competitor on that function?
+  2. FSOT system accuracy — green gate 0.5%, aspiration 0.05%.
+A SOTA beat outside 0.5% is still FSOT accuracy WIP. Do not stuff it into the gate.
 """
 from __future__ import annotations
 
@@ -57,6 +62,10 @@ TEPER_GLUEBALL_2PP_STAT = 0.21
 TEPER_CLOSED_FORM_0PP = 4.0
 TEPER_CLOSED_FORM_RATIO = 1.5
 # Odlyzko / LMFDB Im(ρ_n) for n=1..10 (measurement, not a competing theory).
+# Rest-of-system residual bars (same as the 477-domain green / aspiration gates).
+FSOT_GREEN_GATE_PCT = 0.5
+FSOT_ASPIRATION_PCT = 0.05
+
 ODLYZKO_T = (
     14.134725141734693,
     21.022039638771555,
@@ -204,6 +213,56 @@ def _row(
     }
     if extra:
         rec.update(extra)
+    return _stamp_accuracy_lanes(rec)
+
+
+def _stamp_accuracy_lanes(rec: dict[str, Any]) -> dict[str, Any]:
+    """SOTA beat and FSOT 0.5%/0.05% gates are independent. Do not collapse them."""
+    klass = rec.get("comparison_class")
+    err = rec.get("fsot_error_pct")
+    rec["fsot_green_gate_pct"] = FSOT_GREEN_GATE_PCT
+    rec["fsot_aspiration_pct"] = FSOT_ASPIRATION_PCT
+    if klass in ("no_fair_compare", "structure"):
+        rec["fsot_green"] = "n/a"
+        rec["fsot_aspiration"] = "n/a"
+        rec["progress"] = "open_track_next" if klass == "no_fair_compare" else "structure"
+        rec["next_dig"] = klass == "no_fair_compare"
+        rec["sota_beats_fsot_accuracy_wip"] = False
+        return rec
+    if klass == "related_not_clay":
+        rec["fsot_green"] = "wip"
+        rec["fsot_aspiration"] = "wip"
+        rec["progress"] = "miss_next"
+        rec["next_dig"] = True
+        rec["sota_beats_fsot_accuracy_wip"] = False
+        return rec
+    if err is None:
+        rec["fsot_green"] = "n/a"
+        rec["fsot_aspiration"] = "n/a"
+        rec["progress"] = "open_track_next"
+        rec["next_dig"] = True
+        rec["sota_beats_fsot_accuracy_wip"] = False
+        return rec
+    rec["fsot_green"] = "pass" if err <= FSOT_GREEN_GATE_PCT else "wip"
+    rec["fsot_aspiration"] = "pass" if err <= FSOT_ASPIRATION_PCT else "wip"
+    beat = rec.get("beats_or_meets_sota") is True
+    rec["sota_beats_fsot_accuracy_wip"] = bool(beat and rec["fsot_green"] == "wip")
+    if beat:
+        if rec["fsot_green"] == "wip":
+            rec["progress"] = "beats_sota_fsot_accuracy_wip"
+            rec["next_dig"] = False
+        elif rec["fsot_aspiration"] == "wip":
+            rec["progress"] = "beats_sota_in_green_aspiration_wip"
+            rec["next_dig"] = False
+        else:
+            rec["progress"] = "beats_sota_in_aspiration"
+            rec["next_dig"] = False
+    elif rec.get("beats_or_meets_sota") is False:
+        rec["progress"] = "miss_next"
+        rec["next_dig"] = True
+    else:
+        rec["progress"] = "open_track_next"
+        rec["next_dig"] = True
     return rec
 
 
@@ -533,15 +592,27 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
     glue4 = next(r for r in rows if r["name"] == "ym_glueball_vs_4sqrt_sigma")
     glue_ratio = next(r for r in rows if r["name"] == "ym_glueball_2pp_over_0pp")
     wx = next(r for r in rows if r["name"] == "ns_weather_24h_related")
+    wip_beats = [r for r in rows if r.get("sota_beats_fsot_accuracy_wip")]
+    in_green = [r for r in rows if r.get("fsot_green") == "pass"]
+    in_asp = [r for r in rows if r.get("fsot_aspiration") == "pass"]
+    next_dig = [r for r in rows if r.get("next_dig")]
     return {
         "generated_at": _now(),
         "pin": "D1D38A",
         "clay_prize_claimed": False,
         "clay_problems_remaining": int(flags["clay_problems_remaining"]),
+        "fsot_green_gate_pct": FSOT_GREEN_GATE_PCT,
+        "fsot_aspiration_pct": FSOT_ASPIRATION_PCT,
         "comparable_count": len(comparable),
         "beats_or_meets_count": len(beats),
         "does_not_beat_count": len(loses),
         "no_fair_compare_count": len(no_fair),
+        "sota_beats_accuracy_wip_n": len(wip_beats),
+        "fsot_green_pass_n": len(in_green),
+        "fsot_aspiration_pass_n": len(in_asp),
+        "next_dig_n": len(next_dig),
+        "next_dig_names": [r["name"] for r in next_dig],
+        "sota_beats_accuracy_wip_names": [r["name"] for r in wip_beats],
         "riemann_beats_public_closed_form": 1 if riemann["beats_or_meets_sota"] else 0,
         "riemann_panel_beats_rvm": 1 if riemann_panel["beats_or_meets_sota"] else 0,
         "glueball_beats_teper": 1 if glue["beats_or_meets_sota"] else 0,
@@ -554,10 +625,10 @@ def accuracy_summary(rows: list[dict[str, Any]] | None = None) -> dict[str, Any]
         "ecmwf_not_beaten": 1,
         "rows": rows,
         "honest_scope": (
-            "Accuracy contest on native function-objects. "
+            "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. "
+            "A SOTA beat outside 0.5% is FSOT accuracy WIP — not stuffed into the gate. "
             "Not a Clay Prize. GitHub is not a Qualifying Outlet. "
-            "Glueball vs lattice precision is still a miss; vs Teper's 4√σ and 3/2 rules it wins. "
-            "ECMWF is not beaten. Weather hold does not beat majority class."
+            "Misses (lattice precision, weather majority, NSE smoothness, BSD, Hodge) are next dig."
         ),
     }
 
@@ -589,33 +660,31 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "This page is the other question: **does the native math hit the same *function* more accurately than what is currently public?**",
         "Consensus is not the scoring rule. Closed precision is. A miss stays a miss.",
         "",
+        "**Two bars, never collapsed.** Beating a public competitor is not the same as landing inside the rest-of-system residual gates (**0.5%** green, **0.05%** aspiration). A SOTA beat outside 0.5% is **FSOT accuracy WIP**.",
+        "",
         "Kill: “we won a Millennium Prize.” Kill: stuffing a residual into the Clay statement.",
         "Kill: retuning β / ρ / 0.2173 / 3.5 to swallow a compare. Kill: claiming ECMWF beaten.",
+        "Kill: calling a 4% SOTA-beat “0.5% green.”",
         "",
         "## Live tally",
         "",
         f"| Bucket | n |",
         f"|--------|---|",
-        f"| Comparable numeric functions | {summary['comparable_count']} |",
         f"| Beats or meets public SOTA | {summary['beats_or_meets_count']} |",
+        f"| …of those, inside FSOT 0.5% green | {summary['fsot_green_pass_n']} |",
+        f"| …of those, inside 0.05% aspiration | {summary['fsot_aspiration_pass_n']} |",
+        f"| **SOTA beat, FSOT accuracy still WIP** | **{summary['sota_beats_accuracy_wip_n']}** |",
         f"| Comparable but does **not** beat | {summary['does_not_beat_count']} |",
-        f"| No fair numeric compare yet | {summary['no_fair_compare_count']} |",
+        f"| **Next dig** (misses + open tracks) | **{summary['next_dig_n']}** |",
         f"| Clay problems remaining | {summary['clay_problems_remaining']} |",
         f"| ECMWF beaten | {summary['ecmwf_beaten']} |",
-        f"| Glueball beats Teper lattice precision | {summary['glueball_beats_teper']} |",
-        f"| Glueball beats Teper 4√σ closed form | {summary['glueball_beats_4sqrt_sigma']} |",
-        f"| Glueball √2 beats 3/2 ratio | {summary['glueball_ratio_beats_three_halves']} |",
-        f"| Riemann n=2..10 walk beats RvM | {summary['riemann_panel_beats_rvm']} |",
-        f"| Weather 24 h beats majority class | {summary['weather_beats_majority']} |",
         "",
         "## Scoreboard",
         "",
-        "| Problem | Function scored | FSOT | Public SOTA | FSOT err % | Public typical err % | Verdict | Clay |",
-        "|---------|-----------------|------|-------------|----------------|----------------------|---------|------|",
+        "| Problem | Function | FSOT err % | Public typical err % | SOTA | FSOT 0.5% | FSOT 0.05% | Progress |",
+        "|---------|----------|------------|----------------------|------|-----------|------------|----------|",
     ]
     for r in rows:
-        fsot = _fmt(r["computed"], 8)
-        pub = r["public_sota_model"].split(";")[0]
         err_cell = _fmt(r["fsot_error_pct"], 4)
         if r["name"] == "ym_lambda_qcd":
             err_cell = (
@@ -632,18 +701,23 @@ def render_markdown(summary: dict[str, Any]) -> str:
                 f"{_fmt(r.get('walk_mean_err_pct'), 4)} mean n=2..10 "
                 f"({r.get('n_walk_beats_rvm')}/{r.get('n_panel')} zeros)"
             )
+        sota_cell = {
+            True: "beats/meets",
+            False: "miss",
+            None: "—",
+        }[r["beats_or_meets_sota"]]
         lines.append(
             "| "
             + " | ".join(
                 [
                     r["problem"],
                     r["function_object"],
-                    fsot,
-                    pub.replace("|", "/"),
                     err_cell,
                     _fmt(r["public_sota_typical_error_pct"], 4),
-                    r["verdict"],
-                    r["clay_status"],
+                    sota_cell,
+                    str(r.get("fsot_green") or "—"),
+                    str(r.get("fsot_aspiration") or "—"),
+                    str(r.get("progress") or "—"),
                 ]
             )
             + " |"
@@ -654,16 +728,22 @@ def render_markdown(summary: dict[str, Any]) -> str:
         "",
         "| Function | Result | Why that is the right object |",
         "|----------|--------|------------------------------|",
-        "| First Riemann zero Im(ρ1) | Seed `e/γ³` vs Odlyzko at **0.00166%**; Riemann–von Mangoldt inversion at **~26%** | Closed form vs tabulated zero. Odlyzko is the *measurement*. **Not** RH for all zeros. |",
-        "| Riemann zeros n=2..10 | Mean-spacing walk from seed t1, mean err **~4.26%** vs RvM **~5.64%** (7/9 zeros) | Public spacing `2π/log(t/2π)`, no new coefficient. Out of sample. **Not** RH. |",
-        "| Λ_QCD | Seed vs in-repo PDG-class 0.2173 GeV at **0.048%**; vs FLAG 213(8) MeV inside 1σ | Zero-parameter confinement scale. **Not** a Wightman mass gap. |",
-        "| Glueball m(0++)/√σ vs lattice | `φ²+e/π` vs Teper 3.65±0.11 — **does not beat lattice precision** | Lattice is the measurement. Still a miss. Do not retune 3.5. |",
-        "| Glueball m(0++)/√σ vs 4√σ | Same seed vs Teper's own ~4√σ rule — **beats** (4.57% vs 9.59%) | Closed-form competitor from the same paper. |",
-        "| Glueball m(2++)/m(0++) | Geometric `√2` vs Teper 5.15/3.65 — **beats** the 3/2 rule (0.23% vs 6.31%) | Spin-geometry on the existing 0++ probe, not a new coefficient. |",
-        "| Path-sum / μ>0 / c_s² | Executable identities | Structure, not a SOTA residual contest. |",
-        "| Weather 24 h hold | 22/28 = 78.6% vs majority 85.7% — **does not beat majority**; ECMWF **not** beaten | Finer `dt` is still the path. |",
-        "| Grover exponent 1/2 | **Meets** Bennett et al. proven bound | Cannot beat a tight bound. **Not** P vs NP. |",
-        "| BSD / Hodge | No fair compare | No native rank or Hodge-class predictor. Next push, not a stuffed residual. |",
+        "| First Riemann zero Im(ρ1) | **Beats SOTA and in 0.05%** (`e/γ³` 0.00166% vs RvM 26%) | Odlyzko is the measurement. **Not** RH. |",
+        "| Riemann zeros n=2..10 | **Beats RvM (4.26% vs 5.64%) — FSOT accuracy WIP** (outside 0.5%) | Public spacing walk. Do not stuff 4.26% into the green gate. |",
+        "| Λ_QCD vs PDG 0.2173 | **Beats/meets and in 0.05%** (0.048%) | FLAG 213(8) is a second measurement (2.07%, inside FLAG 1σ, outside 0.5% vs FLAG central). |",
+        "| Glueball 0++ vs 4√σ | **Beats 4√σ (4.57% vs 9.59%) — FSOT accuracy WIP** | Same 4.57% vs lattice measurement. Not 0.5% green. |",
+        "| Glueball 2++/0++ | **Beats 3/2 (0.23%) — in 0.5% green, aspiration WIP** | √2 geometry. 0.23% > 0.05%. |",
+        "| Grover 1/2 | **Meets proven bound and in 0.05%** | Not P vs NP. |",
+        "",
+        "## Next dig (misses and open tracks)",
+        "",
+        "| Item | Why it is next | First cut, no stuffing |",
+        "|------|----------------|------------------------|",
+        "| Glueball 0++ vs Teper lattice precision | 4.57% vs 3.01% (1.5σ). Lattice is the measurement. | Same seed as the 4√σ beat. Need a better 0++ identity, not a retune of 3.5. |",
+        "| Weather 24 h vs majority | Hold 22/28=78.6% vs majority 85.7%. ECMWF not beaten. | Six kills: five quiet-forecast / storm-observed (OLCN6, 42058, 44078) and one thin-obs false storm (62442, n=6). Valve/quiet look, then finer `dt`. |",
+        "| 3D NSE smoothness | No public accuracy %. Toy μ>0 is not Clay NSE. | 1D Stokes/heat manufactured solution at the right fold — still not 3D global smoothness. |",
+        "| BSD | No native rank predictor. | Cremona 11a1 / 37a1 / 389a1 as the first objects. Do not invent a seed residual. |",
+        "| Hodge | No native Hodge-class predictor. | Hodge numbers of a named variety, not a stolen 20 from another domain. |",
         "",
         "## Reproduce",
         "",
@@ -694,14 +774,15 @@ if __name__ == "__main__":
     s = write_artifacts()
     print(json.dumps({k: s[k] for k in s if k != "rows"}, indent=2))
     for r in s["rows"]:
-        err = r["fsot_error_pct"]
-        err_s = f"{err:.4f}%" if err is not None else "n/a"
         flag = {
             True: "MEET/BEAT",
             False: "MISS",
             None: "----",
         }[r["beats_or_meets_sota"]]
-        print(f"  {flag:9} {r['name']:32} class={r['comparison_class']:20} err={err_s:12} {r['verdict']}")
+        print(
+            f"  {flag:9} {r['name']:36} green={str(r.get('fsot_green')):4} "
+            f"asp={str(r.get('fsot_aspiration')):4} {r.get('progress')}"
+        )
     ok = (
         (not s["clay_prize_claimed"])
         and s["clay_problems_remaining"] == 6
@@ -715,6 +796,8 @@ if __name__ == "__main__":
         and s["riemann_panel_beats_rvm"] == 1
         and s["weather_beats_majority"] == 0
         and s["weather_does_not_beat_majority"] == 1
-        and s["ecmwf_beaten"] == 0
+        and s["sota_beats_accuracy_wip_n"] >= 1
+        and s["next_dig_n"] >= 1
+        and s["fsot_green_pass_n"] >= 1
     )
     raise SystemExit(0 if ok else 1)

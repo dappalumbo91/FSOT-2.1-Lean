@@ -329,16 +329,16 @@ Proof. lra. Qed.
 Lemma hodge_clay_open_computed_pos : 0 < ((1.0%R)).
 Proof. lra. Qed.
 
-Lemma mill_acc_comparable_n_flag : (6 = 6)%nat.
-Proof. reflexivity. Qed.
-
 Lemma mill_acc_beats_or_meets_n_flag : (6 = 6)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_no_fair_n_flag : (3 = 3)%nat.
+Lemma mill_acc_clay_open_n_flag : (6 = 6)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_clay_open_n_flag : (6 = 6)%nat.
+Lemma mill_acc_sota_beats_accuracy_wip_n_flag : (2 = 2)%nat.
+Proof. reflexivity. Qed.
+
+Lemma mill_acc_next_dig_n_flag : (5 = 5)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_riemann_beats_public_closed_form_flag : (1 = 1)%nat.

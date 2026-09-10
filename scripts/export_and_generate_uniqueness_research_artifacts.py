@@ -459,10 +459,10 @@ def build_obligations() -> list[dict]:
     # --- Accuracy vs public SOTA (function contest; prize-process stays separate) ---
     acc = accuracy_summary()
     for key, val in (
-        ("mill_acc_comparable_n", acc["comparable_count"]),
         ("mill_acc_beats_or_meets_n", acc["beats_or_meets_count"]),
-        ("mill_acc_no_fair_n", acc["no_fair_compare_count"]),
         ("mill_acc_clay_open_n", acc["clay_problems_remaining"]),
+        ("mill_acc_sota_beats_accuracy_wip_n", acc["sota_beats_accuracy_wip_n"]),
+        ("mill_acc_next_dig_n", acc["next_dig_n"]),
         ("mill_acc_riemann_beats_public_closed_form", acc["riemann_beats_public_closed_form"]),
         ("mill_acc_riemann_panel_beats_rvm", acc["riemann_panel_beats_rvm"]),
         ("mill_acc_glueball_does_not_beat_teper", acc["glueball_does_not_beat_teper"]),

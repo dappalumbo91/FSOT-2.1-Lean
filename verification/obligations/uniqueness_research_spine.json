@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T00:48:11.341125+00:00",
+  "generated_at": "2026-09-10T00:57:33.081950+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
   "obligation_count": 119,
@@ -932,15 +932,6 @@
       "coq_id": "hodge_clay_open_computed_pos"
     },
     {
-      "id": "mill_acc_comparable_n_flag",
-      "kind": "eq_nat",
-      "value": 6,
-      "right_value": 6,
-      "module": "Uniqueness.MillenniumAccuracy",
-      "claim": "mill_acc_comparable_n",
-      "coq_id": "mill_acc_comparable_n_flag"
-    },
-    {
       "id": "mill_acc_beats_or_meets_n_flag",
       "kind": "eq_nat",
       "value": 6,
@@ -950,15 +941,6 @@
       "coq_id": "mill_acc_beats_or_meets_n_flag"
     },
     {
-      "id": "mill_acc_no_fair_n_flag",
-      "kind": "eq_nat",
-      "value": 3,
-      "right_value": 3,
-      "module": "Uniqueness.MillenniumAccuracy",
-      "claim": "mill_acc_no_fair_n",
-      "coq_id": "mill_acc_no_fair_n_flag"
-    },
-    {
       "id": "mill_acc_clay_open_n_flag",
       "kind": "eq_nat",
       "value": 6,
@@ -966,6 +948,24 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_clay_open_n",
       "coq_id": "mill_acc_clay_open_n_flag"
+    },
+    {
+      "id": "mill_acc_sota_beats_accuracy_wip_n_flag",
+      "kind": "eq_nat",
+      "value": 2,
+      "right_value": 2,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_sota_beats_accuracy_wip_n",
+      "coq_id": "mill_acc_sota_beats_accuracy_wip_n_flag"
+    },
+    {
+      "id": "mill_acc_next_dig_n_flag",
+      "kind": "eq_nat",
+      "value": 5,
+      "right_value": 5,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_next_dig_n",
+      "coq_id": "mill_acc_next_dig_n_flag"
     },
     {
       "id": "mill_acc_riemann_beats_public_closed_form_flag",

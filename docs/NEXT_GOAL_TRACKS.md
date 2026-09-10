@@ -9,6 +9,7 @@
 | **Prices** | Economics class residuals + \(d=20\) process window | Dated quiet/storm market windows, then finer dt | Ticker close / crash date as 0.5% |
 | **Sickness** | Epidemiology class 0.015%; host+pathogen coupling smoke | Genetics two-system product on public genomes | Person-level onset as 0.5% |
 | **Path integral** | Discrete path-sum (valve branches + \(a_0/\gamma\)) | Deeper native sum; classical YM still named | “Millennium theorem proved” |
+| **Millennium SOTA vs 0.5%** | Some functions beat public closed forms | Those beats still outside 0.5% stay **accuracy WIP**; misses are the next dig | Stuffing a 4% SOTA-beat into the green gate; Clay Prize |
 
 Same fluid. Not a second physics. Wrong object is still wrong object.
 

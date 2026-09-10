@@ -1,6 +1,6 @@
 # Market process layer
 
-**Pin:** D1D38A · **Fold:** Economics \(D=20\) · **Generated:** 2026-09-10T00:48:01.011797+00:00
+**Pin:** D1D38A · **Fold:** Economics \(D=20\) · **Generated:** 2026-09-10T00:57:25.184327+00:00
 
 This is the start of *price prediction* as **process time**, not as a ticker.
 

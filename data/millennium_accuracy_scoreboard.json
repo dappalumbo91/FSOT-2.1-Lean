@@ -1,12 +1,29 @@
 {
-  "generated_at": "2026-09-10T00:48:00.777209+00:00",
+  "generated_at": "2026-09-10T00:57:24.958747+00:00",
   "pin": "D1D38A",
   "clay_prize_claimed": false,
   "clay_problems_remaining": 6,
+  "fsot_green_gate_pct": 0.5,
+  "fsot_aspiration_pct": 0.05,
   "comparable_count": 6,
   "beats_or_meets_count": 6,
   "does_not_beat_count": 1,
   "no_fair_compare_count": 3,
+  "sota_beats_accuracy_wip_n": 2,
+  "fsot_green_pass_n": 4,
+  "fsot_aspiration_pass_n": 3,
+  "next_dig_n": 5,
+  "next_dig_names": [
+    "ym_glueball_over_sqrt_sigma",
+    "ns_clay_smoothness",
+    "ns_weather_24h_related",
+    "bsd_no_fair_compare",
+    "hodge_no_fair_compare"
+  ],
+  "sota_beats_accuracy_wip_names": [
+    "riemann_zeros_2_to_10_spacing_walk",
+    "ym_glueball_vs_4sqrt_sigma"
+  ],
   "riemann_beats_public_closed_form": 1,
   "riemann_panel_beats_rvm": 1,
   "glueball_beats_teper": 0,
@@ -35,7 +52,14 @@
       "native_status": "EXECUTABLE",
       "note": "Seed e/\u03b3\u00b3 vs Odlyzko. Odlyzko is the measurement, not a competing theory. Not a proof that all zeros lie on Re=1/2.",
       "public_sota_value": 17.847836512849618,
-      "formula": "e / gamma**3"
+      "formula": "e / gamma**3",
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "pass",
+      "fsot_aspiration": "pass",
+      "sota_beats_fsot_accuracy_wip": false,
+      "progress": "beats_sota_in_aspiration",
+      "next_dig": false
     },
     {
       "problem": "Riemann hypothesis",
@@ -81,7 +105,14 @@
         1.4707659548546677,
         3.9386004122185994
       ],
-      "formula": "t1=e/gamma**3; t_{k+1}=t_k+2pi/log(t_k/2pi)"
+      "formula": "t1=e/gamma**3; t_{k+1}=t_k+2pi/log(t_k/2pi)",
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "wip",
+      "fsot_aspiration": "wip",
+      "sota_beats_fsot_accuracy_wip": true,
+      "progress": "beats_sota_fsot_accuracy_wip",
+      "next_dig": false
     },
     {
       "problem": "Yang\u2013Mills existence and mass gap",
@@ -101,7 +132,14 @@
       "note": "G_CAT\u00b7SUCTION\u00b7\u03c6 \u2212 (POOF\u00b7SUCTION)\u00b2. Lands inside FLAG 1\u03c3 of 213(8) MeV. Does not prove a Wightman mass gap. Do not retune 0.2173 \u2192 0.213.",
       "fsot_vs_flag_pct": 2.06780454173811,
       "fsot_vs_inrepo_pdg_pct": 0.048055073125713964,
-      "formula": "G_CAT*SUCTION*PHI - (POOF*SUCTION)**2"
+      "formula": "G_CAT*SUCTION*PHI - (POOF*SUCTION)**2",
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "pass",
+      "fsot_aspiration": "pass",
+      "sota_beats_fsot_accuracy_wip": false,
+      "progress": "beats_sota_in_aspiration",
+      "next_dig": false
     },
     {
       "problem": "Yang\u2013Mills existence and mass gap",
@@ -124,7 +162,14 @@
       "sigma_from_teper": 1.515545743798546,
       "inrepo_ballpark": 3.5,
       "formula": "PHI**2 + E/PI",
-      "sqrt_sigma_GeV": 0.4202216641606967
+      "sqrt_sigma_GeV": 0.4202216641606967,
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "wip",
+      "fsot_aspiration": "wip",
+      "sota_beats_fsot_accuracy_wip": false,
+      "progress": "miss_next",
+      "next_dig": true
     },
     {
       "problem": "Yang\u2013Mills existence and mass gap",
@@ -143,7 +188,14 @@
       "native_status": "EXECUTABLE",
       "note": "Same measurement 3.65. Public closed form is ~4, error 9.59%. Seed \u03c6\u00b2+e/\u03c0 error 4.57%. Lattice precision still not beaten.",
       "four_sqrt_err_pct": 9.589041095890414,
-      "formula": "PHI**2 + E/PI"
+      "formula": "PHI**2 + E/PI",
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "wip",
+      "fsot_aspiration": "wip",
+      "sota_beats_fsot_accuracy_wip": true,
+      "progress": "beats_sota_fsot_accuracy_wip",
+      "next_dig": false
     },
     {
       "problem": "Yang\u2013Mills existence and mass gap",
@@ -163,7 +215,14 @@
       "note": "\u221a2 is a spin-geometry factor on the existing 0++ probe, not a new coefficient. 2++ absolute = \u221a2\u00b7(\u03c6\u00b2+e/\u03c0).",
       "fsot_2pp": 4.926115914681358,
       "teper_2pp": 5.15,
-      "formula": "sqrt(2)"
+      "formula": "sqrt(2)",
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "pass",
+      "fsot_aspiration": "wip",
+      "sota_beats_fsot_accuracy_wip": false,
+      "progress": "beats_sota_in_green_aspiration_wip",
+      "next_dig": false
     },
     {
       "problem": "Yang\u2013Mills existence and mass gap",
@@ -182,7 +241,14 @@
       "native_status": "EXECUTABLE",
       "note": "Executable identity. Not a Wightman/constructive mass-gap theorem.",
       "gamma_color": 0.6684908749126979,
-      "color_path_integral_proxy": 1.4959067319065438
+      "color_path_integral_proxy": 1.4959067319065438,
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "structure",
+      "next_dig": false,
+      "sota_beats_fsot_accuracy_wip": false
     },
     {
       "problem": "Navier\u2013Stokes existence and smoothness",
@@ -199,7 +265,14 @@
       "beats_or_meets_sota": null,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "OPEN_TRACK",
-      "note": "Toy \u03bc(D_eff)>0 and c_s\u00b2>0 are transport identities, not 3D global smoothness."
+      "note": "Toy \u03bc(D_eff)>0 and c_s\u00b2>0 are transport identities, not 3D global smoothness.",
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "open_track_next",
+      "next_dig": true,
+      "sota_beats_fsot_accuracy_wip": false
     },
     {
       "problem": "Navier\u2013Stokes existence and smoothness",
@@ -220,7 +293,14 @@
       "mu_D6": 0.412270210542628,
       "mu_D14": 0.30634247210727383,
       "mu_D25": 0.16069183175866183,
-      "c_s2": 0.5918925123201455
+      "c_s2": 0.5918925123201455,
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "structure",
+      "next_dig": false,
+      "sota_beats_fsot_accuracy_wip": false
     },
     {
       "problem": "Navier\u2013Stokes existence and smoothness",
@@ -249,7 +329,14 @@
         "beats_majority": false,
         "n_24h_agrees_48h": 28,
         "n_with_obs": 28
-      }
+      },
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "wip",
+      "fsot_aspiration": "wip",
+      "progress": "miss_next",
+      "next_dig": true,
+      "sota_beats_fsot_accuracy_wip": false
     },
     {
       "problem": "P versus NP",
@@ -266,7 +353,14 @@
       "beats_or_meets_sota": true,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "EXECUTABLE",
-      "note": "You cannot beat a proven tight bound. Matching 1/2 is MEETS, not BEATS, and is not a P vs NP theorem."
+      "note": "You cannot beat a proven tight bound. Matching 1/2 is MEETS, not BEATS, and is not a P vs NP theorem.",
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "pass",
+      "fsot_aspiration": "pass",
+      "sota_beats_fsot_accuracy_wip": false,
+      "progress": "beats_sota_in_aspiration",
+      "next_dig": false
     },
     {
       "problem": "Birch and Swinnerton-Dyer",
@@ -283,7 +377,14 @@
       "beats_or_meets_sota": null,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "OPEN_TRACK",
-      "note": "No elliptic-curve L-function rank predictor in-repo. Do not invent a seed residual."
+      "note": "No elliptic-curve L-function rank predictor in-repo. Do not invent a seed residual.",
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "open_track_next",
+      "next_dig": true,
+      "sota_beats_fsot_accuracy_wip": false
     },
     {
       "problem": "Hodge conjecture",
@@ -300,8 +401,15 @@
       "beats_or_meets_sota": null,
       "clay_status": "OPEN_NOT_CLAIMED",
       "native_status": "OPEN_TRACK",
-      "note": "No Hodge-class predictor in-repo. No fair compare."
+      "note": "No Hodge-class predictor in-repo. No fair compare.",
+      "fsot_green_gate_pct": 0.5,
+      "fsot_aspiration_pct": 0.05,
+      "fsot_green": "n/a",
+      "fsot_aspiration": "n/a",
+      "progress": "open_track_next",
+      "next_dig": true,
+      "sota_beats_fsot_accuracy_wip": false
     }
   ],
-  "honest_scope": "Accuracy contest on native function-objects. Not a Clay Prize. GitHub is not a Qualifying Outlet. Glueball vs lattice precision is still a miss; vs Teper's 4\u221a\u03c3 and 3/2 rules it wins. ECMWF is not beaten. Weather hold does not beat majority class."
+  "honest_scope": "Two bars: (1) public SOTA, (2) FSOT green 0.5% / aspiration 0.05%. A SOTA beat outside 0.5% is FSOT accuracy WIP \u2014 not stuffed into the gate. Not a Clay Prize. GitHub is not a Qualifying Outlet. Misses (lattice precision, weather majority, NSE smoothness, BSD, Hodge) are next dig."
 }
