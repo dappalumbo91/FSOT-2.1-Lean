@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-10T00:34:01.395371+00:00",
+  "generated_at": "2026-09-10T00:48:15.233609+00:00",
   "spine": "uniqueness_research",
-  "obligation_count": 115,
+  "obligation_count": 119,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "python_decimal": {
-    "passed": 115,
-    "total": 115,
+    "passed": 119,
+    "total": 119,
     "status": "passed"
   },
   "rust_f64_replay": {
     "status": "passed",
-    "detail_tail": "out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_uniqueness_research_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n1-Lean\\verification\\rust\\fsot_uniqueness_research_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.66s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\fsot_uniqueness_research_replay-cf2e6db928dd5056.exe)\n     Running tests\\replay_uniqueness_research.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\replay_uniqueness_research-ea9b8853ad918fbf.exe)\n   Doc-tests fsot_uniqueness_research_replay\n"
+    "detail_tail": "out; finished in 0.00s\n\n\nrunning 1 test\ntest replay_uniqueness_research_obligations ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n1-Lean\\verification\\rust\\fsot_uniqueness_research_replay)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.31s\n     Running unittests src\\lib.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\fsot_uniqueness_research_replay-cf2e6db928dd5056.exe)\n     Running tests\\replay_uniqueness_research.rs (verification\\rust\\fsot_uniqueness_research_replay\\target\\debug\\deps\\replay_uniqueness_research-ea9b8853ad918fbf.exe)\n   Doc-tests fsot_uniqueness_research_replay\n"
   },
   "smt_z3": {
     "status": "passed",

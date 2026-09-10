@@ -49,7 +49,8 @@ spin-2 Fock uniqueness, Einstein–Hilbert measure uniqueness.
 | Item | Why it is not claimed | What *is* claimed instead |
 |------|------------------------|---------------------------|
 | A Clay Millennium Prize | CMI requires Qualifying Outlet + two years + community acceptance. GitHub is not a Qualifying Outlet. | Native identities + an **accuracy vs public SOTA** scoreboard ([`MILLENNIUM_ACCURACY_VS_SOTA.md`](MILLENNIUM_ACCURACY_VS_SOTA.md)). Prize flags stay zero. |
-| Glueball \(m(0^{++})/\sqrt{\sigma}\) beating Teper lattice | Live compare vs 3.65±0.11 **does not beat**. Do not retune the 3.5 ballpark. | Recorded miss on that function. Λ_QCD and first-zero closed form are separate rows. |
+| Glueball \(m(0^{++})/\sqrt{\sigma}\) beating Teper *lattice precision* | Live vs 3.65±0.11 is 1.5σ — **does not beat lattice**. Do not retune the 3.5 ballpark. | Beats Teper's own ~4√σ closed form (4.57% vs 9.59%) and √2 vs 3/2 on m(2++)/m(0++) (0.23% vs 6.31%). |
+| Weather 24 h beating majority class or ECMWF | Hold 22/28 = 78.6% vs majority 85.7%. ECMWF RMSE is a different object. | Finer `dt` on the same φ^4 / Omori path. |
 | Continuum YM path-integral mass gap as *proved* | Different theorem than the native path-sum. No false formal credit. | Discrete path-sum \(w_{\mathrm{POOF}}+w_{\mathrm{hold}}=1\); \(\int a_0 e^{-\gamma t}=a_0/\gamma\) ([`PATH_SUM.md`](PATH_SUM.md)). Classical YM stays OPEN_NOT_CLAIMED |
 | Spin-2 graviton Fock uniqueness from the fluid action | Quantization uniqueness, deferred | Spin-2 helicity / TT **probes** |
 | Einstein–Hilbert measure uniqueness | Action classification theorem, deferred | Weak-field / Schwarzschild / perihelion / deflection **probes** |

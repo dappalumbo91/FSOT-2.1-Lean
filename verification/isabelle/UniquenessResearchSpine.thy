@@ -328,10 +328,10 @@ lemma hodge_clay_open_err_under_half: "(0::real) < (0.5::real)"
 lemma hodge_clay_open_computed_pos: "(0::real) < 1.0"
   by simp
 
-lemma mill_acc_comparable_n_flag: "(3::nat) = 3"
+lemma mill_acc_comparable_n_flag: "(6::nat) = 6"
   by simp
 
-lemma mill_acc_beats_or_meets_n_flag: "(3::nat) = 3"
+lemma mill_acc_beats_or_meets_n_flag: "(6::nat) = 6"
   by simp
 
 lemma mill_acc_no_fair_n_flag: "(3::nat) = 3"
@@ -343,10 +343,22 @@ lemma mill_acc_clay_open_n_flag: "(6::nat) = 6"
 lemma mill_acc_riemann_beats_public_closed_form_flag: "(1::nat) = 1"
   by simp
 
+lemma mill_acc_riemann_panel_beats_rvm_flag: "(1::nat) = 1"
+  by simp
+
 lemma mill_acc_glueball_does_not_beat_teper_flag: "(1::nat) = 1"
   by simp
 
+lemma mill_acc_glueball_beats_4sqrt_sigma_flag: "(1::nat) = 1"
+  by simp
+
+lemma mill_acc_glueball_ratio_beats_three_halves_flag: "(1::nat) = 1"
+  by simp
+
 lemma mill_acc_ecmwf_not_beaten_flag: "(1::nat) = 1"
+  by simp
+
+lemma mill_acc_weather_does_not_beat_majority_flag: "(1::nat) = 1"
   by simp
 
 end

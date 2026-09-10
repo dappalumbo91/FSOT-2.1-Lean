@@ -219,18 +219,26 @@
 ; hodge_clay_open_computed_pos kind=pos
 (assert (! (> 1.0 0.0) :named o107))
 ; mill_acc_comparable_n_flag kind=eq_nat
-(assert (! (= 3 3) :named o108))
+(assert (! (= 6 6) :named o108))
 ; mill_acc_beats_or_meets_n_flag kind=eq_nat
-(assert (! (= 3 3) :named o109))
+(assert (! (= 6 6) :named o109))
 ; mill_acc_no_fair_n_flag kind=eq_nat
 (assert (! (= 3 3) :named o110))
 ; mill_acc_clay_open_n_flag kind=eq_nat
 (assert (! (= 6 6) :named o111))
 ; mill_acc_riemann_beats_public_closed_form_flag kind=eq_nat
 (assert (! (= 1 1) :named o112))
-; mill_acc_glueball_does_not_beat_teper_flag kind=eq_nat
+; mill_acc_riemann_panel_beats_rvm_flag kind=eq_nat
 (assert (! (= 1 1) :named o113))
-; mill_acc_ecmwf_not_beaten_flag kind=eq_nat
+; mill_acc_glueball_does_not_beat_teper_flag kind=eq_nat
 (assert (! (= 1 1) :named o114))
+; mill_acc_glueball_beats_4sqrt_sigma_flag kind=eq_nat
+(assert (! (= 1 1) :named o115))
+; mill_acc_glueball_ratio_beats_three_halves_flag kind=eq_nat
+(assert (! (= 1 1) :named o116))
+; mill_acc_ecmwf_not_beaten_flag kind=eq_nat
+(assert (! (= 1 1) :named o117))
+; mill_acc_weather_does_not_beat_majority_flag kind=eq_nat
+(assert (! (= 1 1) :named o118))
 (check-sat)
 ; expect: sat

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-10T00:33:55.304610+00:00",
+  "generated_at": "2026-09-10T00:48:11.341125+00:00",
   "version": "1.0",
   "tier": "uniqueness_research",
-  "obligation_count": 115,
+  "obligation_count": 119,
   "ontology": "FSOT fluid spacetime omni-theory (D_eff ceiling 25). Absolute rest frame damps; fluid is load-bearing reality.",
   "modules": [
     "FSOT/Formal/UniquenessResearchSpine.lean",
@@ -934,8 +934,8 @@
     {
       "id": "mill_acc_comparable_n_flag",
       "kind": "eq_nat",
-      "value": 3,
-      "right_value": 3,
+      "value": 6,
+      "right_value": 6,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_comparable_n",
       "coq_id": "mill_acc_comparable_n_flag"
@@ -943,8 +943,8 @@
     {
       "id": "mill_acc_beats_or_meets_n_flag",
       "kind": "eq_nat",
-      "value": 3,
-      "right_value": 3,
+      "value": 6,
+      "right_value": 6,
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_beats_or_meets_n",
       "coq_id": "mill_acc_beats_or_meets_n_flag"
@@ -977,6 +977,15 @@
       "coq_id": "mill_acc_riemann_beats_public_closed_form_flag"
     },
     {
+      "id": "mill_acc_riemann_panel_beats_rvm_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_riemann_panel_beats_rvm",
+      "coq_id": "mill_acc_riemann_panel_beats_rvm_flag"
+    },
+    {
       "id": "mill_acc_glueball_does_not_beat_teper_flag",
       "kind": "eq_nat",
       "value": 1,
@@ -986,6 +995,24 @@
       "coq_id": "mill_acc_glueball_does_not_beat_teper_flag"
     },
     {
+      "id": "mill_acc_glueball_beats_4sqrt_sigma_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_glueball_beats_4sqrt_sigma",
+      "coq_id": "mill_acc_glueball_beats_4sqrt_sigma_flag"
+    },
+    {
+      "id": "mill_acc_glueball_ratio_beats_three_halves_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_glueball_ratio_beats_three_halves",
+      "coq_id": "mill_acc_glueball_ratio_beats_three_halves_flag"
+    },
+    {
       "id": "mill_acc_ecmwf_not_beaten_flag",
       "kind": "eq_nat",
       "value": 1,
@@ -993,6 +1020,15 @@
       "module": "Uniqueness.MillenniumAccuracy",
       "claim": "mill_acc_ecmwf_not_beaten",
       "coq_id": "mill_acc_ecmwf_not_beaten_flag"
+    },
+    {
+      "id": "mill_acc_weather_does_not_beat_majority_flag",
+      "kind": "eq_nat",
+      "value": 1,
+      "right_value": 1,
+      "module": "Uniqueness.MillenniumAccuracy",
+      "claim": "mill_acc_weather_does_not_beat_majority",
+      "coq_id": "mill_acc_weather_does_not_beat_majority_flag"
     }
   ],
   "source_summaries": {

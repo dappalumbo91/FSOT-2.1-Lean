@@ -464,8 +464,12 @@ def build_obligations() -> list[dict]:
         ("mill_acc_no_fair_n", acc["no_fair_compare_count"]),
         ("mill_acc_clay_open_n", acc["clay_problems_remaining"]),
         ("mill_acc_riemann_beats_public_closed_form", acc["riemann_beats_public_closed_form"]),
+        ("mill_acc_riemann_panel_beats_rvm", acc["riemann_panel_beats_rvm"]),
         ("mill_acc_glueball_does_not_beat_teper", acc["glueball_does_not_beat_teper"]),
+        ("mill_acc_glueball_beats_4sqrt_sigma", acc["glueball_beats_4sqrt_sigma"]),
+        ("mill_acc_glueball_ratio_beats_three_halves", acc["glueball_ratio_beats_three_halves"]),
         ("mill_acc_ecmwf_not_beaten", acc["ecmwf_not_beaten"]),
+        ("mill_acc_weather_does_not_beat_majority", acc["weather_does_not_beat_majority"]),
     ):
         add(
             {
