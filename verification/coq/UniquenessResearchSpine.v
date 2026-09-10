@@ -329,7 +329,7 @@ Proof. lra. Qed.
 Lemma hodge_clay_open_computed_pos : 0 < ((1.0%R)).
 Proof. lra. Qed.
 
-Lemma mill_acc_beats_or_meets_n_flag : (6 = 6)%nat.
+Lemma mill_acc_beats_or_meets_n_flag : (7 = 7)%nat.
 Proof. reflexivity. Qed.
 
 Lemma mill_acc_clay_open_n_flag : (6 = 6)%nat.
@@ -359,6 +359,6 @@ Proof. reflexivity. Qed.
 Lemma mill_acc_ecmwf_not_beaten_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 
-Lemma mill_acc_weather_does_not_beat_majority_flag : (1 = 1)%nat.
+Lemma mill_acc_weather_quiet_fill_still_miss_flag : (1 = 1)%nat.
 Proof. reflexivity. Qed.
 

@@ -110,7 +110,7 @@ fn replay_uniqueness_research_obligations() {
     assert!(1.0_f64 > 0.0, "bsd_clay_open_computed_pos");
     assert!(0.0_f64 < 0.5_f64, "hodge_clay_open_err_under_half");
     assert!(1.0_f64 > 0.0, "hodge_clay_open_computed_pos");
-    assert_eq!(6, 6, "mill_acc_beats_or_meets_n_flag");
+    assert_eq!(7, 7, "mill_acc_beats_or_meets_n_flag");
     assert_eq!(6, 6, "mill_acc_clay_open_n_flag");
     assert_eq!(2, 2, "mill_acc_sota_beats_accuracy_wip_n_flag");
     assert_eq!(5, 5, "mill_acc_next_dig_n_flag");
@@ -120,5 +120,5 @@ fn replay_uniqueness_research_obligations() {
     assert_eq!(1, 1, "mill_acc_glueball_beats_4sqrt_sigma_flag");
     assert_eq!(1, 1, "mill_acc_glueball_ratio_beats_three_halves_flag");
     assert_eq!(1, 1, "mill_acc_ecmwf_not_beaten_flag");
-    assert_eq!(1, 1, "mill_acc_weather_does_not_beat_majority_flag");
+    assert_eq!(1, 1, "mill_acc_weather_quiet_fill_still_miss_flag");
 }

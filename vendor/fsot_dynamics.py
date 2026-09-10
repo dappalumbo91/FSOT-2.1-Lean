@@ -142,6 +142,21 @@ def scalar_transport_rhs(
     return -v * dS_dx + kappa * d2S_dx2 - gamma_rel * (S - S_eq)
 
 
+def viscous_mode_rhs_error_pct(k: float = 1.0, D_eff: float = 15.0) -> float:
+    """1D Stokes mode at the Fluid fold (D=15, dark).
+
+    Manufactured v=sin(kx) at kx=π/2: analytic ∂t v = −μ k² v.
+    Observer source is off (Fluid is dark). Not 3D NSE smoothness.
+    """
+    rho = 1.0
+    v = 1.0
+    dv_dx = 0.0
+    d2v_dx2 = -(k * k)
+    got = momentum_rhs(rho, v, dv_dx, d2v_dx2, 0.0, D_eff, observed=False)
+    want = -viscosity_eff(D_eff) * (k * k)
+    return abs(got - want) / max(abs(want), 1e-30) * 100.0
+
+
 def equilibrium_scalar(domain: str = "Cosmology") -> float:
     return f(domain_scalar(domain))
 

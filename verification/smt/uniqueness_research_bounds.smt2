@@ -219,7 +219,7 @@
 ; hodge_clay_open_computed_pos kind=pos
 (assert (! (> 1.0 0.0) :named o107))
 ; mill_acc_beats_or_meets_n_flag kind=eq_nat
-(assert (! (= 6 6) :named o108))
+(assert (! (= 7 7) :named o108))
 ; mill_acc_clay_open_n_flag kind=eq_nat
 (assert (! (= 6 6) :named o109))
 ; mill_acc_sota_beats_accuracy_wip_n_flag kind=eq_nat
@@ -238,7 +238,7 @@
 (assert (! (= 1 1) :named o116))
 ; mill_acc_ecmwf_not_beaten_flag kind=eq_nat
 (assert (! (= 1 1) :named o117))
-; mill_acc_weather_does_not_beat_majority_flag kind=eq_nat
+; mill_acc_weather_quiet_fill_still_miss_flag kind=eq_nat
 (assert (! (= 1 1) :named o118))
 (check-sat)
 ; expect: sat

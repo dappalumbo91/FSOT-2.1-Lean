@@ -469,7 +469,7 @@ def build_obligations() -> list[dict]:
         ("mill_acc_glueball_beats_4sqrt_sigma", acc["glueball_beats_4sqrt_sigma"]),
         ("mill_acc_glueball_ratio_beats_three_halves", acc["glueball_ratio_beats_three_halves"]),
         ("mill_acc_ecmwf_not_beaten", acc["ecmwf_not_beaten"]),
-        ("mill_acc_weather_does_not_beat_majority", acc["weather_does_not_beat_majority"]),
+        ("mill_acc_weather_quiet_fill_still_miss", acc["weather_quiet_fill_still_miss"]),
     ):
         add(
             {
