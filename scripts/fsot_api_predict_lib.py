@@ -272,11 +272,21 @@ def route_property(property_name: str, default_domain: str) -> tuple[str, float]
     return default_domain, factor
 
 
-def fsot_scaled(measured: float, domain: str, factor: float | None = None) -> tuple[float, float]:
+def fsot_correct(measured: float, domain: str, factor: float | None = None) -> tuple[float, float]:
+    """Ledger B correction: c = m (1 + |S| f). Not a prediction. Not Ledger A.
+
+    Takes a measured value on purpose. Closed-form predict is
+    `fsot_ledger_a_lib.fsot_predict(observable_id)` and takes no m.
+    """
     s = domain_scalar(domain)
     f = factor if factor is not None else DOMAIN_FACTORS.get(domain, 0.001)
     computed = measured * (1.0 + abs(s) * f)
     return computed, err_pct(computed, measured)
+
+
+def fsot_scaled(measured: float, domain: str, factor: float | None = None) -> tuple[float, float]:
+    """Deprecated alias for fsot_correct (Ledger B). Do not call this a prediction."""
+    return fsot_correct(measured, domain, factor)
 
 
 def predict_observable(
@@ -287,7 +297,7 @@ def predict_observable(
     formula: str | None = None,
     factor: float | None = None,
 ) -> tuple[float, float, str]:
-    """Return (computed, error_pct, fsot_domain_used)."""
+    """Ledger B/chemistry helper. Takes measured. Not Ledger A predict."""
     routed_domain, routed_factor = route_property(property_name, domain)
     use_factor = factor if factor is not None else routed_factor
 

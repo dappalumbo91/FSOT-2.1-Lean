@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T21:49:07.414138+00:00",
-  "edition_stamp": "2026-09-09",
+  "generated_at": "2026-09-11T19:08:43.198542+00:00",
+  "edition_stamp": "2026-09-11",
   "authority": {
     "pin_prefix": "D1D38A",
     "fsot_compute_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
@@ -8,7 +8,7 @@
     "path": "vendor/fsot_compute.py",
     "formula_authority_verdict": "FORMULA_AUTHORITY_SYSTEM_CLOSED",
     "formula_authority_all_ok": true,
-    "parameter_verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes"
+    "parameter_verdict": "ZERO_POSTHOC_FITS \u2014 35 assigned folds + K*0.99 frozen 2026-09-09. Not a derived D_eff identity. See docs/FROZEN_KNOBS.md."
   },
   "empirical": {
     "green_gate_pass_count": 477,

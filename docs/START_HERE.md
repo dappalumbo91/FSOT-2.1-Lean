@@ -1,8 +1,9 @@
 # START HERE — FSOT-2.1-Lean
 
 **Who this is for:** anyone opening the repo for the first time (human or AI).  
-**Authority pin:** `vendor/fsot_compute.py` → **D1D38A** (zero free fit parameters).  
+**Authority pin:** `vendor/fsot_compute.py` → **D1D38A** (no post-hoc fits; 35 folds frozen — [`FROZEN_KNOBS.md`](FROZEN_KNOBS.md)).  
 **Live status:** [`CURRENT_STATUS.md`](CURRENT_STATUS.md) (regenerate with `python scripts/build_repo_status_snapshot.py`).  
+**Three ledgers:** [`LEDGERS.md`](LEDGERS.md) · **What we do not claim:** [`WHAT_WE_DO_NOT_CLAIM.md`](WHAT_WE_DO_NOT_CLAIM.md).  
 **What the numbers mean:** [`COUNT_VOCABULARY.md`](COUNT_VOCABULARY.md).
 
 ---

@@ -6,13 +6,21 @@ Authority: pin **D1D38A** · [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §4–5 · [
 
 ---
 
-## The only prediction law
+## Two laws (do not mix)
+
+**Ledger A predict** (no measured in the formula):
+
+```text
+python scripts/predict_closed_form.py --observable T_CMB
+```
+
+**Ledger B correct** (catalog residual, not a ToE headline):
 
 \[
 \texttt{computed} = \texttt{measured}\cdot\bigl(1 + |S(\mathrm{domain})|\cdot f_{\mathrm{domain}}\bigr)
 \]
 
-\(S = K(T_1+T_2+T_3)\) at a **preregistered** \((D_{\mathrm{eff}}, h, \delta\psi, \delta\theta, \mathrm{observed})\).
+Call it `fsot_correct(m, domain)`, not predict. \(S = K(T_1+T_2+T_3)\) at a **frozen** \((D_{\mathrm{eff}}, h, \delta\psi, \delta\theta, \mathrm{observed})\). Changing those integers is a new pin.
 
 ---
 
@@ -23,9 +31,9 @@ Authority: pin **D1D38A** · [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §4–5 · [
 | 1 | Name a **measured** \(m\) with public/lab provenance | Invent “measured × 0.999” |
 | 2 | Pick the **dimensional interface** (scale of the substance) | Invent a new \(D_{\mathrm{eff}}\) to fit one row |
 | 3 | `S = domain_scalar(name)` from the pin | Add a spring constant / Yukawa / dark density |
-| 4 | `computed, err% = fsot_scaled(m, name)` | Least-squares a new \(f\) |
+| 4 | `computed, err% = fsot_correct(m, name)` (Ledger B) | Least-squares a new \(f\); calling this a prediction |
 | 5 | Green if domain **median** residual ≤ **0.5%** | Call HTTP 200 a residual |
-| 6 | If it fails: **change the interface** (wrong fold) | Add a free parameter |
+| 6 | If it fails: log in `results/MISSES.md`. Do **not** edit \(D_{\mathrm{eff}}\) as a repair | Add a free parameter; change DomainConfig integers under the same pin |
 
 Worked examples in-repo:
 

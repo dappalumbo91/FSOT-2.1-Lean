@@ -16,6 +16,9 @@
 | **PhD / formal methods** | [`FSOT_MATHEMATICIAN_HOWTO.md`](FSOT_MATHEMATICIAN_HOWTO.md) | [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md) §0–3 + hierarchy · [`VERIFICATION_HONESTY_AND_ISABELLE_MATH.md`](VERIFICATION_HONESTY_AND_ISABELLE_MATH.md) · [`TOE_CLAIM_BOUNDARIES.md`](TOE_CLAIM_BOUNDARIES.md) · Lean `FSOT/Formal/Scalar.lean` · machine `data/fsot_building_block_hierarchy.json` | Layers A/B/C, building-block network, what is *proved* vs residual-gated |
 | **Flagship paper** | [`../papers/03-fsot-theory-of-everything-claim/`](../papers/03-fsot-theory-of-everything-claim/) | Freeze 2026-09-09 · 477/477 · Label A/B · Desktop `arxiv-papers/03-fsot-theory-of-everything-claim/` (LaTeX/PDF, GitHub preprint) | Checklist paper, not the 477-domain atlas |
 | **Worked examples** | [`WORKED_EXAMPLES.md`](WORKED_EXAMPLES.md) | CRC water, NCBI mt genes, JPL density + Planck H0 | How to apply in three domains |
+| **Three ledgers** | [`LEDGERS.md`](LEDGERS.md) | A predict / B correct / C check | Never mix 477 with \(T_{\mathrm{CMB}}\) |
+| **Frozen knobs** | [`FROZEN_KNOBS.md`](FROZEN_KNOBS.md) | 35 assigned folds + \(K\cdot 0.99\) admitted | Not a derived \(D_{\mathrm{eff}}\) |
+| **What we do not claim** | [`WHAT_WE_DO_NOT_CLAIM.md`](WHAT_WE_DO_NOT_CLAIM.md) | Five pinned non-claims | Ledger B ≠ ToE |
 | **Why not claimed** | [`WHY_NOT_CLAIMED.md`](WHY_NOT_CLAIMED.md) | Uniqueness split + honest refusals | Every “no” has a reason |
 | **Emergent time** | [`TIME_EMERGENT.md`](TIME_EMERGENT.md) | Process time vs Newtonian UTC | D12 / C15; dilation is flow |
 | **Goal tracks** | [`NEXT_GOAL_TRACKS.md`](NEXT_GOAL_TRACKS.md) | ECMWF, prices, sickness, path-sum | In progress, not claimed beaten |

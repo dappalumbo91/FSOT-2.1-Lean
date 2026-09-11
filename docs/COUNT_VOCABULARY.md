@@ -5,6 +5,8 @@
 
 These are **different ledgers**. Using one number for all of them is the discrepancy.
 
+**A / B / C split (hostile-reader):** [`LEDGERS.md`](LEDGERS.md). 477/477 is Ledger **B**. Closed-form \(T_{\mathrm{CMB}}\) / H₀ is Ledger **A** only via `predict_closed_form.py`. Pin match is Ledger **C**. Never put 477/477 next to \(T_{\mathrm{CMB}}\).
+
 | Name | Live value (2026-09-09) | What it counts | Source |
 |------|------------------------:|----------------|--------|
 | **Green residual benchmarks** | **477 / 477** | Benchmark **files** that pass ≤0.5% pooled median (live tiers in CURRENT_STATUS) | `data/benchmark_margin_audit.json` |

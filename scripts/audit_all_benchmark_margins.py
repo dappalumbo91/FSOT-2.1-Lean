@@ -66,6 +66,16 @@ def main() -> int:
         "excluded": excluded,
         "all_domains": rows,
     }
+    try:
+        from ledger_b_null_models import main as _null_main  # noqa: E402
+
+        _null_main()
+        null_path = DATA / "ledger_b_null_models.json"
+        if null_path.is_file():
+            summary["ledger_b_nulls"] = json.loads(null_path.read_text(encoding="utf-8"))
+    except Exception as exc:  # noqa: BLE001
+        summary["ledger_b_nulls"] = {"error": str(exc), "cite_as_toe_accuracy": False}
+
     OUT.write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
     print(f"Wrote {OUT}")

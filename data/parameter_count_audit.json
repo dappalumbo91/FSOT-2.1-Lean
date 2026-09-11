@@ -1,8 +1,20 @@
 {
-  "generated_at": "2026-09-09T16:51:19.052845+00:00",
-  "headline_claim": "zero free parameters",
-  "audit_verdict": "ZERO_FREE \u2014 seed-derived constants and preregistered domain routes",
-  "parameter_model": "Constants and domain-route coordinates derive from seeds (\u03c0, e, \u03c6, \u03b3, G). The 35\u00d75 domain table is the fractal routing spine \u2014 not a per-observable fit vector.",
+  "generated_at": "2026-09-11T19:08:40.521107+00:00",
+  "headline_claim": "zero post-hoc fits; 35 assigned folds frozen",
+  "audit_verdict": "ZERO_POSTHOC_FITS \u2014 35 assigned folds + K*0.99 frozen 2026-09-09. Not a derived D_eff identity. See docs/FROZEN_KNOBS.md.",
+  "freeze": {
+    "freeze_date": "2026-09-09",
+    "pin_prefix": "D1D38A",
+    "domain_count": 35,
+    "domain_table_sha256": "aae578c667f014d309a80bfb133fdf8382b27b385f30f2e57b0053a7a41962a6",
+    "k_line_present": true,
+    "k_line_sha256": "3909f4177f9d562addb504417f6d3c80662500be6e25f8ccea990b87e78c41fb",
+    "note": "35 assigned folds + K*0.99 frozen. Not derived from a published F. Changing either under pin D1D38A is a fail. New pin = new edition.",
+    "live_pin": "D1D38A",
+    "freeze_ok": true,
+    "freeze_reason": "ok"
+  },
+  "parameter_model": "Constants from seeds (\u03c0, e, \u03c6, \u03b3, G) plus an admitted frozen DomainConfig table and a frozen 0.99 factor in K. Routes are not least-squares per row.",
   "scalar_input_fields": 24,
   "scalar_input_note": "24-field ScalarInput; domain routes select scale/observer regime",
   "domain_table": {
@@ -2635,11 +2647,11 @@
   "literal_coefficient_count": 16,
   "route_slot_count": 1300,
   "empirical_tunable_slot_estimate": 1340,
-  "honest_framing": "FSOT uses a fixed closed-form constant spine (\u03c6, e, \u03c0, \u03b3, G) with deterministic per-domain route coordinates. Zero free parameters means: no post-hoc dial added when a prediction misses \u2014 routes are declared upfront.",
+  "honest_framing": "Zero free parameters means: no post-hoc dial when a row misses. It does not mean D_eff was derived from \u03c0,e,\u03c6,\u03b3,G. 35 assigned folds and K*0.99 are frozen. Changing them requires a new pin.",
   "what_is_zero_free": [
-    "All constants from five seeds \u2014 no fitted physics constants",
-    "Domain routes preregistered in manifest \u2014 not optimized per benchmark row",
-    "No per-observable least-squares tuning in the verification pipeline",
+    "No per-observable least-squares when a prediction misses",
+    "Domain integers frozen on 2026-09-09 \u2014 hash-gated against pin D1D38A",
+    "K*0.99 admitted and frozen, not retuned",
     "SHA-256 gate on fsot_compute.py prevents silent engine drift"
   ]
 }

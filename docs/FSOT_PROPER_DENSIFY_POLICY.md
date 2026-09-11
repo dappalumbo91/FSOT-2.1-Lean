@@ -1,6 +1,15 @@
 # FSOT proper densify policy
 
-**Rule:** densify only with **your formula** against **real measured data**.
+**Rule:** densify only with **your formula** against **real measured data**.  
+**After lock \(T_0\) (2026-09-09, pin D1D38A):** a miss is not a fold edit.
+
+## Fold edits are not residual repair
+
+New catalog rows may only use an **already-frozen** domain key.  
+A miss goes to [`../results/MISSES.md`](../results/MISSES.md).  
+Changing `DomainConfig` integers or \(K\) is a **new pin**, with a diff of every old Ledger A number.
+
+Forbidden as a green-gate repair: “if it fails, change \(D_{\mathrm{eff}}\) first.” That is fitting with extra steps. See [`FROZEN_KNOBS.md`](FROZEN_KNOBS.md) · [`LEDGERS.md`](LEDGERS.md).
 
 ## Allowed
 

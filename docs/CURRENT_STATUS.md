@@ -1,7 +1,7 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-09-09T21:49:07.414138+00:00`  
-**Edition stamp:** 2026-09-09  
+**Generated:** `2026-09-11T19:08:43.198542+00:00`  
+**Edition stamp:** 2026-09-11  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
 > Authoritative live numbers for expansion. Prefer this file over hand-edited counts in README when they disagree.
@@ -15,9 +15,42 @@
 | SHA-256 | `D1D38A185487B452…` |
 | Path | `vendor/fsot_compute.py` |
 | Formula authority | **FORMULA_AUTHORITY_SYSTEM_CLOSED** (all_ok=True) |
-| Parameters | **ZERO_FREE — seed-derived constants and preregistered domain routes** |
+| Parameters | **ZERO_POSTHOC_FITS — 35 assigned folds + K*0.99 frozen 2026-09-09. Not a derived D_eff identity. See docs/FROZEN_KNOBS.md.** |
 
-## Empirical green gate
+## Three ledgers (never mixed)
+
+Verbs: **A predicts** · **B corrects** · **C checks**. Spec: [`LEDGERS.md`](LEDGERS.md).
+
+### Ledger A — closed-form predict
+
+| Item | Value |
+|------|-------|
+| Emit | `python scripts/predict_closed_form.py --observable T_CMB` (no measured input) |
+| Compare | `python scripts/compare_to_anchor.py --observable T_CMB` |
+| What may say “predicted” | seed formula + frozen folds only |
+| Misses | [`../results/MISSES.md`](../results/MISSES.md) |
+
+### Ledger B — catalog residual (correction, not ToE accuracy)
+
+| Item | Value |
+|------|-------|
+| Green pass | **477 / 477** |
+| Fail | **0** |
+| Gate | ≤ 0.5% pooled median |
+| Median-of-medians | 0.006625234573930708% |
+| Scalar records (envelope) | 181477 |
+| Tiers | `{'B_verified': 337, 'C_thin': 13, 'A_strong': 118}` |
+| Cite as ToE accuracy | **no** |
+
+### Ledger C — live integrity
+
+| Item | Value |
+|------|-------|
+| Pin match | **True** |
+| Multiprover overall_ok | see below |
+| Role | stream / hash / holdout identity — not a residual |
+
+## Empirical green gate (Ledger B detail)
 
 | Item | Value |
 |------|-------|

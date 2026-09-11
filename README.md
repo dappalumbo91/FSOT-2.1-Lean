@@ -9,22 +9,17 @@
 **Live numbers:** [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) · what the numbers mean: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md) · kill-command map: [`docs/EMPIRICAL_CLAIM_EVIDENCE.md`](docs/EMPIRICAL_CLAIM_EVIDENCE.md)  
 **New here?** → [docs/START_HERE.md](docs/START_HERE.md) · **Scientist read** → [docs/SCIENTIST_INTERFACE.md](docs/SCIENTIST_INTERFACE.md) · **Concepts** → [docs/CONCEPTS.md](docs/CONCEPTS.md) · **Directory** → [docs/SYSTEM_DIRECTORY.md](docs/SYSTEM_DIRECTORY.md) · **Apply** → [docs/APPLY.md](docs/APPLY.md)
 
-### Live scoreboard (regenerate: `python scripts/build_repo_status_snapshot.py`)
+### Live scoreboard — three ledgers (regenerate: `python scripts/build_repo_status_snapshot.py`)
 
-| Metric | Value | Source |
-|--------|------:|--------|
-| **Authority pin** | **D1D38A** (match) | `vendor/fsot_compute.py` |
-| **Formula authority** | **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** | `data/formula_authority_closure.json` |
-| **Parameters** | **ZERO_FREE** | `data/parameter_count_audit.json` |
-| **Green residual benchmarks** | **477 / 477** fail **0** | `data/benchmark_margin_audit.json` (≤0.5%) |
-| **Median-of-medians residual** | **~0.0066%** | `docs/CURRENT_STATUS.md` |
-| **Lean Mathlib depth** | **5248 / 5248 (100%, L1=0)** | `FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED` |
-| **Catalog multiprover obligations** | **2256** (477 domains) | cross-proof scientific catalog spine |
-| **Full formal obligations** | **2587** · atomic **2024** · margin viol **0** | cross-proof full formal spine |
-| **Multiprover** | **`overall_ok: true`** · 7-way · 8-way | `data/cross_proof_verification_report.json` |
-| **ToE Label A / B** | **true / true** | `data/toe_gap_closure_report.json` |
-| **Clean-clone Mathlib path** | **PASS** | `data/fresh_clone_corpus_mathlib_repro_report.md` |
-| **Reality OS sibling** | v0.6 paused (FSOT-native kernel) | https://github.com/dappalumbo91/FSOT-Reality-OS |
+Do not mix these. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md) · knobs: [`docs/FROZEN_KNOBS.md`](docs/FROZEN_KNOBS.md) · misses: [`results/MISSES.md`](results/MISSES.md) · not claimed: [`docs/WHAT_WE_DO_NOT_CLAIM.md`](docs/WHAT_WE_DO_NOT_CLAIM.md)
+
+| Ledger | Verb | Live | Forbidden |
+|--------|------|------|-----------|
+| **A closed-form** | **predict** (no measured in the formula) | `python scripts/predict_closed_form.py --observable T_CMB` then compare | quoting 477/477 as this |
+| **B catalog residual** | **correct** \(c=m(1+\|S\|f)\) | **477 / 477** files ≤0.5% pooled · median-of-medians ~0.0066% | calling this ToE accuracy or a first-principles hit |
+| **C live integrity** | **check** pin / stream / hash | pin **D1D38A** match · multiprover `overall_ok` | promoting C into A or B |
+
+Pin **D1D38A**. 35 assigned folds + \(K\cdot 0.99\) **frozen**, not derived. Full status: [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
 
 > **477** is green *benchmark files*. **~407** is named coverage-map domains. **~403** is atlas CSV rows. **2024** is live atomic obligations. Do not mix them. Ledger: [`docs/COUNT_VOCABULARY.md`](docs/COUNT_VOCABULARY.md).  
 > Older prose saying **394/394**, **405/405**, **430/432**, **433/433**, **1,863 atomic**, **57% Mathlib**, or **~1912** obligations is **stale**.
@@ -58,9 +53,9 @@ FSOT is put forward as a **candidate Theory of Everything** under a **frozen tec
 
 ### What ToE PASS means here
 
-1. One seed-derived scalar engine (π, e, φ, γ, G / Catalan) — pin **D1D38A** — zero free fits.  
+1. One seed-derived scalar engine (π, e, φ, γ, G / Catalan) — pin **D1D38A** — no post-hoc fits; 35 folds frozen.  
 2. Continuum / fluid dynamics (`vendor/fsot_dynamics.py`) + limit-recovery probes (GR weak field, QM scales, SM bridges).  
-3. Multi-domain residual atlas green (live count in [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md), ≤0.5% pooled).  
+3. Ledger B residual atlas green (live count in [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md), ≤0.5% pooled) — not a Ledger A headline.  
 4. Contested-sector public anchors (H₀ Planck/SH0ES, DESI *w_a*, N_eff, σ₈, Higgs, …) with utilization fixes, not excuses.  
 5. Preregistered freeze + falsification registry.  
 6. Multi-prover triangulation (Lean master + Coq/Isabelle/F*/Rust + SMT + TLA+).
@@ -151,9 +146,9 @@ FSOT says the universe is **one fluid spacetime medium** — not a rigid empty s
 
 ## Abstract
 
-Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan), **zero free parameters** — evaluated against measured reality across a **~407-name coverage map** (35 core + extensions + intelligence compression) and **477 / 477** green residual benchmark files (live envelope **181,477** scalar records; IAU **MPCORB** **1,554,101** objects at **~0.023%** pooled residual).
+Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — π, e, φ, γ, and G (Catalan), **no post-hoc fits**, with **35 assigned folds frozen** ([`docs/FROZEN_KNOBS.md`](docs/FROZEN_KNOBS.md)).
 
-The results, as of this edition: **477/477** public benchmark files pass a ≤0.5% pooled error green gate (`data/benchmark_margin_audit.json`); framework median-of-medians sits near **0.0066%** (live status). The **full Lean Formal corpus** is Mathlib-class depth closed at **5248/5248 (100%, L1=0)** with campaign verdict **`FULL_CORPUS_MATHLIB_CAMPAIGN_CLOSED`** and formula-authority gate **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** (pin **D1D38A**, ZERO_FREE). A cold GitHub clone reproduced those gates with **zero field mismatches** ([clean-clone report](data/fresh_clone_corpus_mathlib_repro_report.md)). The same prediction law (`measured × (1 + |S(domain)| × factor)` at the correct **D_eff** interface) is documented in the **[Mathematical Key](docs/FSOT_MATH_KEY.md)** for every covered domain. Densify must use **seed formula + real measured data only** ([`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md)).
+Ledger **A** predicts from closed forms (`predict_closed_form.py`). Ledger **B** is catalog *correction* \(c=m(1+|S|f)\) — **477/477** files at ≤0.5% pooled, median-of-medians ~0.0066%, **not** a ToE headline. Ledger **C** is pin/stream integrity. Spec: [`docs/LEDGERS.md`](docs/LEDGERS.md). Formal corpus Mathlib-class depth **5248/5248** and formula-authority **`FORMULA_AUTHORITY_SYSTEM_CLOSED`** (pin **D1D38A**) are Ledger C / formal, not Ledger A. Densify: [`docs/FSOT_PROPER_DENSIFY_POLICY.md`](docs/FSOT_PROPER_DENSIFY_POLICY.md).
 
 Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent frameworks**: Lean 4 (master integrator + Mathlib depth campaign), Coq/Rocq (Interval-native π/e), Isabelle/HOL, F*, Rust obligation replay, **SMT (Z3/CVC5)** bulk residual bounds, and **TLA+** domain-routing flow — plus scientific-catalog residual gates (**2256** multiprover obligations). QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
 
@@ -270,8 +265,8 @@ This is not poetry layered on curve fits. It is a **falsifiable engineering spec
 This work makes five contributions at arXiv preprint standard:
 
 1. **Unified scalar architecture** — A single seed-derived engine (`raw_S = term1 + term2 + term3`) evaluated across a **~407-name coverage map** and **477 / 477** green residual benchmark files (**181,477** scalar-record envelope), with **no per-observable least-squares tuning**.
-2. **Cross-domain empirical closure** — **477/477** public benchmark files pass a ≤0.5% pooled median error gate; median-of-medians ≈ **0.0066%** (Planck 2018, PDG 2024, NIST/CODATA targets per row; see live `docs/CURRENT_STATUS.md`).
-3. **Contested-sector readouts** — Unified FSOT predictions on H₀, σ₈, BBN, hierarchy, and dark-energy proxies achieve **0.030%** pooled median across 13 actively monitored observables vs ~15% typical ΛCDM/SM sector baselines (Riess et al. 2024; Planck Collaboration 2018).
+2. **Ledger B catalog residual** — **477/477** files pass a ≤0.5% pooled median *correction* gate; median-of-medians ≈ **0.0066%**. This is not Ledger A and is not a ToE accuracy claim.
+3. **Ledger A contested-sector closed forms** — H₀, σ₈, BBN, hierarchy, dark-energy proxies are emitted with `predict_closed_form.py` / seed expressions, then compared. Do not quote the 477-file gate as those numbers.
 4. **Five-prover formal triangulation** — **2024** atomic obligations (full formal **2587**) exported to Lean 4, Coq/Rocq, Isabelle/HOL, F*, and Rust with `overall_ok: true` — proof assistants as scientific instruments, not software-only checks.
 5. **Executable falsification registry** â€” Preregistered predictions **PRED-001–084**, per-domain kill criteria, and a one-command verification bundle that any reader can run on GitHub.
 

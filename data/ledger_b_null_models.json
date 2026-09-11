@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-09-11T19:08:41.951959+00:00",
+  "ledger": "B",
+  "n_files": 42,
+  "n_random_fold_files": 40,
+  "fsot_median_of_medians_pct": 0.0018998245599727425,
+  "null_identity_cm_error_pct": 0.0,
+  "null_catalog_mean_median_error_pct": 207.09922436022248,
+  "null_random_fold_median_error_pct": 0.010049118924193579,
+  "beats_identity_cm": false,
+  "beats_catalog_mean": true,
+  "beats_random_fold": true,
+  "pre_registered_margin_pct": 0.0,
+  "cite_as_toe_accuracy": false,
+  "note": "null c=m is 0 by construction because Ledger B is c=m(1+|S|f). B is engineering. Do not quote 477/477 as ToE accuracy. ToE-paragraph numbers must come from Ledger A fsot_predict."
+}

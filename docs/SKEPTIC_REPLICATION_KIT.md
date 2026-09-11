@@ -2,9 +2,22 @@
 
 *15-minute verification path · 2026-09-09 · pin D1D38A*
 
-Run this if you want to **break FSOT fast** — not read 12,000 lines of narrative first.
+Run this if you want to **break Ledger A fast** — not read 12,000 lines of narrative first.
 
-**Live authority:** pin **D1D38A** (match=True) · green **477/477** · multiprover overall_ok=True  
+Five steps, one domain first. No Lean required on this path.
+
+```bash
+git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git
+cd FSOT-2.1-Lean
+pip install -r requirements.txt
+python scripts/predict_closed_form.py --observable T_CMB --json
+python scripts/compare_to_anchor.py --observable T_CMB --source nist
+python scripts/audit_parameter_count.py
+```
+
+Expect: a \(T_{\mathrm{CMB}}\) number with **no measured input**, a separate compare residual, and freeze_ok on the domain table / \(K\) line. Ledger B 477/477 is a *different* verb (correct, not predict): [`LEDGERS.md`](LEDGERS.md).
+
+**Live authority:** pin **D1D38A** (match=True). Ledger B green is not a Ledger A hit.  
 Full human guide: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) · audience map: [`DOCUMENTATION_MAP.md`](DOCUMENTATION_MAP.md) · math: [`FSOT_MATH_KEY.md`](FSOT_MATH_KEY.md)
 
 Picture first (do not silo H₀): [`CONCEPTS.md`](CONCEPTS.md) C2–C3, C8, C10 · [`FOUNDING_ARCHIVE_VIEW.md`](FOUNDING_ARCHIVE_VIEW.md)  
