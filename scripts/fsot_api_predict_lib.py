@@ -35,7 +35,8 @@ def domain_modulation_factor(_domain: str) -> float:
     """Ledger B amplitude is ALPHA (seed-derived). Not a per-domain knob."""
     from fsot_canonical_adapter import load_fsot_compute
 
-    return float(load_fsot_compute().ALPHA)
+    mod, _path = load_fsot_compute()
+    return float(mod.ALPHA)
 
 
 class _AlphaMap(dict):

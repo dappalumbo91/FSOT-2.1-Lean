@@ -17,9 +17,15 @@
 
 \(\pi^2\approx 9.87\) was being rounded to \(10\). \(\pi^{-4}\approx 0.01027\) was being rounded to \(0.01\). \(1-\pi^{-4}\approx 0.9897\) was being rounded to \(0.99\).
 
-## What is still a named orifice, not a fit
+## \(D_{\mathrm{eff}}\) is derived
 
-\(D_{\mathrm{eff}}\): five seeds → Particle at \(D=5\), ceiling \(5^2=25\). Each domain is a rung on that compactification ladder (which slice of the fluid you are looking through). That is a coordinate chart, not a residual dial. Changing a rung to green a file is forbidden.
+Not an integer written on the domain. The 25-D fluid has one nested-orifice chain (micro → macro). Look-splits share a generation \(g\). Then
+
+\[
+D_{\mathrm{eff}}(g)=\mathrm{round}\bigl(5\cdot 5^{g/(G-1)}\bigr)
+\]
+
+Five seeds → \(D=5\) at \(g=0\). Ceiling \(5^2=25\) at the last generation. You cannot move Chemistry to \(D=9\) to green a file; you would have to change the nest, which is a new edition.
 
 `observed`: medium (dark) vs specimen (look). Ontology of the fold, not a per-row switch.
 

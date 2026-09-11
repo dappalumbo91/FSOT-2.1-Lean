@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-11T19:19:39.355246+00:00",
+  "generated_at": "2026-09-11T19:28:05.426813+00:00",
   "headline_claim": "zero free parameters \u2014 decimals replaced by pi identities",
   "audit_verdict": "ZERO_FREE \u2014 0.99/0.01/10 are \u03c0 identities; look/hits named seeds; f_domain=ALPHA. See docs/FROZEN_KNOBS.md.",
   "freeze": {
     "freeze_date": "2026-09-11",
-    "pin_prefix": "3090BC",
+    "pin_prefix": "FE23A2",
     "domain_count": 35,
-    "domain_table_sha256": "a2136874c8cda4514f84cf31f76466796c402a85483682a0bf1311bc941a8806",
+    "domain_table_sha256": "8e30e85e72091462c4d66df2d498afb36ccbc2d40eb5df01b4e083947c79dad3",
     "k_line_present": true,
     "k_line_sha256": "520f7bd28060075a64c6570096695205a00be17f6a70e1057c64fb43be948155",
     "note": "K = \u2026(1\u2212\u03c0\u207b\u2074); C_EFF uses \u03c0\u207b\u2074; C_COSM = 1/(\u03c6 \u03c0\u00b2). Look is 1 except Atomic e/\u03c0 and HEP 1\u2212POOF/\u03c0. Hits 0 except HEP=1. D_eff is the orifice rung (5 seeds \u2192 D=5, ceiling 25). f_domain = ALPHA.",
-    "live_pin": "3090BC",
+    "live_pin": "FE23A2",
     "freeze_ok": true,
-    "freeze_reason": "ok"
+    "freeze_reason": "wrote_freeze_for_new_pin"
   },
   "parameter_model": "Constants from seeds (\u03c0, e, \u03c6, \u03b3, G). K, C_EFF, C_COSM contain no decimal knobs. Orifice rungs are the 25-D ladder, not least-squares.",
   "scalar_input_fields": 24,
@@ -24,7 +24,7 @@
     "domains": [
       {
         "domain": "Acoustics",
-        "D_eff": 10,
+        "D_eff": 8,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -32,7 +32,7 @@
       },
       {
         "domain": "Astronomy",
-        "D_eff": 20,
+        "D_eff": 18,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -40,7 +40,7 @@
       },
       {
         "domain": "Astrophysics",
-        "D_eff": 24,
+        "D_eff": 23,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -48,7 +48,7 @@
       },
       {
         "domain": "Atmospheric_Physics",
-        "D_eff": 17,
+        "D_eff": 14,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -56,7 +56,7 @@
       },
       {
         "domain": "Atomic_Physics",
-        "D_eff": 7,
+        "D_eff": 6,
         "recent_hits": 0,
         "delta_psi": "0.86525597943226508721777478964608961742874462390851",
         "delta_theta": "1.0",
@@ -64,7 +64,7 @@
       },
       {
         "domain": "Biochemistry",
-        "D_eff": 13,
+        "D_eff": 10,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -72,7 +72,7 @@
       },
       {
         "domain": "Biology",
-        "D_eff": 12,
+        "D_eff": 9,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -80,7 +80,7 @@
       },
       {
         "domain": "Chemistry",
-        "D_eff": 8,
+        "D_eff": 6,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -88,7 +88,7 @@
       },
       {
         "domain": "Condensed_Matter",
-        "D_eff": 14,
+        "D_eff": 11,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -104,7 +104,7 @@
       },
       {
         "domain": "Ecology",
-        "D_eff": 15,
+        "D_eff": 12,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -112,7 +112,7 @@
       },
       {
         "domain": "Economics",
-        "D_eff": 20,
+        "D_eff": 18,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -120,7 +120,7 @@
       },
       {
         "domain": "Electromagnetism",
-        "D_eff": 9,
+        "D_eff": 7,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -128,7 +128,7 @@
       },
       {
         "domain": "Fluid_Dynamics",
-        "D_eff": 15,
+        "D_eff": 12,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -136,30 +136,6 @@
       },
       {
         "domain": "Geophysics",
-        "D_eff": 19,
-        "recent_hits": 0,
-        "delta_psi": "1.0",
-        "delta_theta": "1.0",
-        "C": "-0.33102418261048184117525238337709910027806936155306"
-      },
-      {
-        "domain": "High_Energy_Physics",
-        "D_eff": 7,
-        "recent_hits": 1,
-        "delta_psi": "0.95114509364571126475870681725806650084231257608704",
-        "delta_theta": "1.0",
-        "C": "0.00057154998574451372239286747539478352031407954613811"
-      },
-      {
-        "domain": "Materials_Science",
-        "D_eff": 10,
-        "recent_hits": 0,
-        "delta_psi": "1.0",
-        "delta_theta": "1.0",
-        "C": "0.61320126101475226643282468960596658861136952679259"
-      },
-      {
-        "domain": "Meteorology",
         "D_eff": 16,
         "recent_hits": 0,
         "delta_psi": "1.0",
@@ -167,8 +143,32 @@
         "C": "-0.33102418261048184117525238337709910027806936155306"
       },
       {
+        "domain": "High_Energy_Physics",
+        "D_eff": 6,
+        "recent_hits": 1,
+        "delta_psi": "0.95114509364571126475870681725806650084231257608704",
+        "delta_theta": "1.0",
+        "C": "0.00057154998574451372239286747539478352031407954613811"
+      },
+      {
+        "domain": "Materials_Science",
+        "D_eff": 8,
+        "recent_hits": 0,
+        "delta_psi": "1.0",
+        "delta_theta": "1.0",
+        "C": "0.61320126101475226643282468960596658861136952679259"
+      },
+      {
+        "domain": "Meteorology",
+        "D_eff": 13,
+        "recent_hits": 0,
+        "delta_psi": "1.0",
+        "delta_theta": "1.0",
+        "C": "-0.33102418261048184117525238337709910027806936155306"
+      },
+      {
         "domain": "Molecular_Chemistry",
-        "D_eff": 9,
+        "D_eff": 7,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -176,7 +176,7 @@
       },
       {
         "domain": "Neuroscience",
-        "D_eff": 14,
+        "D_eff": 11,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -184,7 +184,7 @@
       },
       {
         "domain": "Nuclear_Physics",
-        "D_eff": 15,
+        "D_eff": 12,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -192,7 +192,7 @@
       },
       {
         "domain": "Oceanography",
-        "D_eff": 17,
+        "D_eff": 14,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -200,7 +200,7 @@
       },
       {
         "domain": "Optics",
-        "D_eff": 10,
+        "D_eff": 8,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -208,7 +208,7 @@
       },
       {
         "domain": "Particle_Astrophysics",
-        "D_eff": 24,
+        "D_eff": 23,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -224,7 +224,7 @@
       },
       {
         "domain": "Physical_Chemistry",
-        "D_eff": 8,
+        "D_eff": 6,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -232,7 +232,7 @@
       },
       {
         "domain": "Planetary_Science",
-        "D_eff": 21,
+        "D_eff": 19,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -240,7 +240,7 @@
       },
       {
         "domain": "Psychology",
-        "D_eff": 16,
+        "D_eff": 13,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -248,7 +248,7 @@
       },
       {
         "domain": "Quantum_Computing",
-        "D_eff": 11,
+        "D_eff": 8,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -256,7 +256,7 @@
       },
       {
         "domain": "Quantum_Gravity",
-        "D_eff": 22,
+        "D_eff": 21,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -264,7 +264,7 @@
       },
       {
         "domain": "Quantum_Mechanics",
-        "D_eff": 6,
+        "D_eff": 5,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -272,7 +272,7 @@
       },
       {
         "domain": "Quantum_Optics",
-        "D_eff": 11,
+        "D_eff": 8,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -280,7 +280,7 @@
       },
       {
         "domain": "Seismology",
-        "D_eff": 18,
+        "D_eff": 15,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -288,7 +288,7 @@
       },
       {
         "domain": "Sociology",
-        "D_eff": 18,
+        "D_eff": 15,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -296,7 +296,7 @@
       },
       {
         "domain": "Thermodynamics",
-        "D_eff": 15,
+        "D_eff": 12,
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
@@ -2565,7 +2565,7 @@
   "literal_coefficient_hits": [
     {
       "pattern": "mpf\\(\"0\\.99\"\\)",
-      "line": 1041,
+      "line": 1090,
       "match": "mpf(\"0.99\")"
     }
   ],

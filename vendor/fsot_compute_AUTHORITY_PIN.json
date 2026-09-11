@@ -1,11 +1,12 @@
 {
-  "repinned_at": "2026-09-11T00:00:00+00:00",
-  "authority_sha256": "3090BC36956807F91E8076F69DA4A2C06EAE568D4E70D1E9CA220DA12D51FA0D",
-  "pin_prefix": "3090BC",
-  "previous_pin_prefix": "D1D38A",
-  "previous_authority_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+  "repinned_at": "2026-09-11T19:27:00+00:00",
+  "authority_sha256": "FE23A2D6973C0BFB40BE3D144D61CFC0687A720A762B4D5E748134497ABDA0DE",
+  "pin_prefix": "FE23A2",
+  "previous_pin_prefix": "3090BC",
+  "previous_authority_sha256": "3090BC36956807F91E8076F69DA4A2C06EAE568D4E70D1E9CA220DA12D51FA0D",
+  "decimal_knob_pin": "D1D38A",
   "github_repo": "https://github.com/dappalumbo91/FSOT-2.1-Lean",
   "compute_matches_certificate": true,
-  "gitattributes": "vendor/fsot_compute.py -text  # prevent CRLF hash drift",
-  "note": "Edition 3090BC: 0.99/0.01/10 replaced by pi identities; look/hits named seeds; f_domain=ALPHA. D1D38A was the decimal-knob edition. GitHub is the authority; I: archive is backup."
+  "gitattributes": "vendor/fsot_compute.py -text",
+  "note": "Edition FE23A2: D_eff = round(5*5**(g/(G-1))) from the nest. 0.99/0.01/10 are pi identities. f_domain=ALPHA. GitHub is the authority."
 }

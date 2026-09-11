@@ -177,6 +177,47 @@ def _fold_hits(name: str) -> int:
     return 1 if name == "High_Energy_Physics" else 0
 
 
+# Unique nested-orifice chain of the 25-D fluid (micro → macro).
+# Look-splits share a generation. D_eff is computed, not stored.
+NEST_GENERATIONS: tuple[tuple[str, ...], ...] = (
+    ("Particle_Physics",),
+    ("Quantum_Mechanics",),
+    ("Atomic_Physics", "High_Energy_Physics"),
+    ("Physical_Chemistry", "Chemistry"),
+    ("Electromagnetism", "Molecular_Chemistry"),
+    ("Optics", "Acoustics", "Materials_Science"),
+    ("Quantum_Computing", "Quantum_Optics"),
+    ("Biology",),
+    ("Biochemistry",),
+    ("Neuroscience", "Condensed_Matter"),
+    ("Thermodynamics", "Fluid_Dynamics", "Nuclear_Physics", "Ecology"),
+    ("Meteorology", "Psychology"),
+    ("Atmospheric_Physics", "Oceanography"),
+    ("Seismology", "Sociology"),
+    ("Geophysics",),
+    ("Astronomy", "Economics"),
+    ("Planetary_Science",),
+    ("Quantum_Gravity",),
+    ("Particle_Astrophysics", "Astrophysics"),
+    ("Cosmology",),
+)
+
+
+def derived_D_eff(name: str) -> int:
+    """Compactification depth from the nest, not an assigned integer.
+
+    Five seeds → D=5 at generation 0. Ceiling 5²=25 at the last generation.
+    D_eff(g) = round(5 · 5^{g/(G-1)}).
+    """
+    G = len(NEST_GENERATIONS)
+    if G < 2:
+        return 25
+    for g, group in enumerate(NEST_GENERATIONS):
+        if name in group:
+            return int(round(5 * (5 ** (g / (G - 1)))))
+    raise KeyError(f"no nest generation for {name!r}")
+
+
 def _build_domains() -> dict[str, DomainConfig]:
     """35 orifice rungs. D_eff is compactification depth (5 seeds → D=5, ceiling 5²=25).
     C is seed-derived. Look/hits from _fold_look/_fold_hits. observed is medium vs specimen.
@@ -195,45 +236,53 @@ def _build_domains() -> dict[str, DomainConfig]:
     inv_phi2 = 1 / PHI**2
 
     rungs = [
-        ("Particle_Physics", 5, True, gp),
-        ("Quantum_Mechanics", 6, True, gp),
-        ("Atomic_Physics", 7, True, ep),
-        ("Physical_Chemistry", 8, True, ep),
-        ("Chemistry", 8, True, ep),
-        ("Electromagnetism", 9, True, ep),
-        ("Molecular_Chemistry", 9, True, lnpi_e),
-        ("Optics", 10, True, pi_e),
-        ("Acoustics", 10, True, ab_s2),
-        ("Quantum_Computing", 11, False, s2_e),
-        ("Quantum_Optics", 11, True, pi_e),
-        ("Biology", 12, False, lnphi_s2),
-        ("Thermodynamics", 15, True, GAMMA / E),
-        ("Biochemistry", 13, True, lnphi_s2),
-        ("Neuroscience", 14, True, C_FACTOR),
-        ("Condensed_Matter", 14, True, A_BLEED / E),
-        ("Fluid_Dynamics", 15, False, A_BLEED / PHI),
-        ("Nuclear_Physics", 15, True, alpha_phi),
-        ("Ecology", 15, False, ln(PHI) / PHI),
-        ("Meteorology", 16, False, CHAOS),
-        ("Materials_Science", 10, True, A_IN / E),
-        ("Psychology", 16, True, P_BASE),
-        ("Atmospheric_Physics", 17, False, CHAOS),
-        ("Oceanography", 17, False, A_IN / PHI),
-        ("Seismology", 18, False, chaos_half),
-        ("Sociology", 18, True, GAMMA / ln(PI)),
-        ("High_Energy_Physics", 7, True, ALPHA / sqrt(2)),
-        ("Geophysics", 19, False, CHAOS),
-        ("Astronomy", 20, True, pi2_phi),
-        ("Economics", 20, True, GAMMA / ln(PI)),
-        ("Planetary_Science", 21, True, pi2_phi),
-        ("Quantum_Gravity", 22, False, inv_phi2),
-        ("Particle_Astrophysics", 24, False, pi2_e),
-        ("Astrophysics", 24, True, pi2_phi),
-        ("Cosmology", 25, False, C_COSM),
+        ("Particle_Physics", True, gp),
+        ("Quantum_Mechanics", True, gp),
+        ("Atomic_Physics", True, ep),
+        ("Physical_Chemistry", True, ep),
+        ("Chemistry", True, ep),
+        ("Electromagnetism", True, ep),
+        ("Molecular_Chemistry", True, lnpi_e),
+        ("Optics", True, pi_e),
+        ("Acoustics", True, ab_s2),
+        ("Quantum_Computing", False, s2_e),
+        ("Quantum_Optics", True, pi_e),
+        ("Biology", False, lnphi_s2),
+        ("Thermodynamics", True, GAMMA / E),
+        ("Biochemistry", True, lnphi_s2),
+        ("Neuroscience", True, C_FACTOR),
+        ("Condensed_Matter", True, A_BLEED / E),
+        ("Fluid_Dynamics", False, A_BLEED / PHI),
+        ("Nuclear_Physics", True, alpha_phi),
+        ("Ecology", False, ln(PHI) / PHI),
+        ("Meteorology", False, CHAOS),
+        ("Materials_Science", True, A_IN / E),
+        ("Psychology", True, P_BASE),
+        ("Atmospheric_Physics", False, CHAOS),
+        ("Oceanography", False, A_IN / PHI),
+        ("Seismology", False, chaos_half),
+        ("Sociology", True, GAMMA / ln(PI)),
+        ("High_Energy_Physics", True, ALPHA / sqrt(2)),
+        ("Geophysics", False, CHAOS),
+        ("Astronomy", True, pi2_phi),
+        ("Economics", True, GAMMA / ln(PI)),
+        ("Planetary_Science", True, pi2_phi),
+        ("Quantum_Gravity", False, inv_phi2),
+        ("Particle_Astrophysics", False, pi2_e),
+        ("Astrophysics", True, pi2_phi),
+        ("Cosmology", False, C_COSM),
     ]
     domains = [
-        DomainConfig(name, D, _fold_hits(name), _fold_look(name), mpf(1), obs, C)
-        for name, D, obs, C in rungs
+        DomainConfig(
+            name,
+            derived_D_eff(name),
+            _fold_hits(name),
+            _fold_look(name),
+            mpf(1),
+            obs,
+            C,
+        )
+        for name, obs, C in rungs
     ]
     return {d.name: d for d in domains}
 
