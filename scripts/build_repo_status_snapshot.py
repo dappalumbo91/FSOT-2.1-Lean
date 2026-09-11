@@ -55,7 +55,9 @@ def build() -> dict:
 
     compute = ROOT / "vendor" / "fsot_compute.py"
     sha = hashlib.sha256(compute.read_bytes()).hexdigest().upper() if compute.is_file() else ""
-    pin_ok = sha.startswith("D1D38A")
+    cert = _load(ROOT / "vendor" / "fsot_compute_AUTHORITY_PIN.json")
+    cert_sha = str(cert.get("authority_sha256") or "").upper()
+    pin_ok = bool(sha) and sha == cert_sha
 
     tiers: Counter[str] = Counter()
     for p in (ROOT / "data").glob("*benchmark*.json"):

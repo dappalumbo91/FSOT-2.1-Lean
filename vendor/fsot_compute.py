@@ -59,7 +59,7 @@ POOF = exp((-ln(PI) / E) / (ETA_EFF * ln(PHI)))  # 2.8
 # =========================================================================
 # §3  LAYER 2 — COMPOSITE DERIVED CONSTANTS
 # =========================================================================
-C_EFF = (1 - POOF * sin(THETA_S)) * (1 + mpf("0.01") * G_CAT / (PI * PHI))  # 3.1
+C_EFF = (1 - POOF * sin(THETA_S)) * (1 + (1 / PI**4) * G_CAT / (PI * PHI))  # 3.1  0.01 → π⁻⁴
 A_BLEED = sin(PI / E) * PHI / sqrt(2)  # 3.2
 P_VAR = -cos(THETA_S + PI)  # 3.3
 B_IN = C_EFF * (1 - sin(THETA_S) / PHI)  # 3.4
@@ -69,8 +69,8 @@ CHAOS = GAMMA_C / OMEGA  # 3.7
 P_BASE = GAMMA / E  # 3.8
 P_NEW = P_BASE * sqrt(2)  # 3.9
 C_FACTOR = C_EFF * P_NEW  # 3.10 Consciousness Factor
-K        = PHI * (GAMMA / E) * sqrt(2) / ln(PI) * mpf("0.99")  # 3.11
-C_COSM = 1 / (PHI * 10)  # 3.12
+K        = PHI * (GAMMA / E) * sqrt(2) / ln(PI) * (1 - 1 / PI**4)  # 3.11  0.99 → 1−π⁻⁴
+C_COSM = 1 / (PHI * PI**2)  # 3.12  10 → π²
 
 
 # =========================================================================
@@ -163,8 +163,24 @@ class DomainConfig:
     C: mpf = mpf(0)   # domain interpretation constant
 
 
+def _fold_look(name: str) -> mpf:
+    """Observer look. Default 1. Named seed identities only — no fitted decimals."""
+    if name == "Atomic_Physics":
+        return E / PI  # bound well
+    if name == "High_Energy_Physics":
+        return 1 - POOF / PI  # collision
+    return mpf(1)
+
+
+def _fold_hits(name: str) -> int:
+    """Collision look is one hit. Everything else is the engine default 0."""
+    return 1 if name == "High_Energy_Physics" else 0
+
+
 def _build_domains() -> dict[str, DomainConfig]:
-    """Create the 35-domain parameter table (§5)."""
+    """35 orifice rungs. D_eff is compactification depth (5 seeds → D=5, ceiling 5²=25).
+    C is seed-derived. Look/hits from _fold_look/_fold_hits. observed is medium vs specimen.
+    """
     gp = GAMMA / PHI
     ep = E / PI
     lnpi_e = ln(PI) / E
@@ -178,42 +194,46 @@ def _build_domains() -> dict[str, DomainConfig]:
     pi2_e = PI**2 / E
     inv_phi2 = 1 / PHI**2
 
+    rungs = [
+        ("Particle_Physics", 5, True, gp),
+        ("Quantum_Mechanics", 6, True, gp),
+        ("Atomic_Physics", 7, True, ep),
+        ("Physical_Chemistry", 8, True, ep),
+        ("Chemistry", 8, True, ep),
+        ("Electromagnetism", 9, True, ep),
+        ("Molecular_Chemistry", 9, True, lnpi_e),
+        ("Optics", 10, True, pi_e),
+        ("Acoustics", 10, True, ab_s2),
+        ("Quantum_Computing", 11, False, s2_e),
+        ("Quantum_Optics", 11, True, pi_e),
+        ("Biology", 12, False, lnphi_s2),
+        ("Thermodynamics", 15, True, GAMMA / E),
+        ("Biochemistry", 13, True, lnphi_s2),
+        ("Neuroscience", 14, True, C_FACTOR),
+        ("Condensed_Matter", 14, True, A_BLEED / E),
+        ("Fluid_Dynamics", 15, False, A_BLEED / PHI),
+        ("Nuclear_Physics", 15, True, alpha_phi),
+        ("Ecology", 15, False, ln(PHI) / PHI),
+        ("Meteorology", 16, False, CHAOS),
+        ("Materials_Science", 10, True, A_IN / E),
+        ("Psychology", 16, True, P_BASE),
+        ("Atmospheric_Physics", 17, False, CHAOS),
+        ("Oceanography", 17, False, A_IN / PHI),
+        ("Seismology", 18, False, chaos_half),
+        ("Sociology", 18, True, GAMMA / ln(PI)),
+        ("High_Energy_Physics", 7, True, ALPHA / sqrt(2)),
+        ("Geophysics", 19, False, CHAOS),
+        ("Astronomy", 20, True, pi2_phi),
+        ("Economics", 20, True, GAMMA / ln(PI)),
+        ("Planetary_Science", 21, True, pi2_phi),
+        ("Quantum_Gravity", 22, False, inv_phi2),
+        ("Particle_Astrophysics", 24, False, pi2_e),
+        ("Astrophysics", 24, True, pi2_phi),
+        ("Cosmology", 25, False, C_COSM),
+    ]
     domains = [
-        DomainConfig("Particle_Physics",      5,  0, mpf(1),   mpf(1), True,  gp),
-        DomainConfig("Quantum_Mechanics",  6,  0, mpf(1),   mpf(1), True,  gp),
-        DomainConfig("Atomic_Physics",  7,  0, mpf("0.85"),   mpf(1), True,  ep),
-        DomainConfig("Physical_Chemistry",     8,  0, mpf("0.5"), mpf(1), True, ep),
-        DomainConfig("Chemistry",  8,  0, mpf("0.6"),   mpf(1), True,  ep),
-        DomainConfig("Electromagnetism",       9,  0, mpf("0.7"), mpf(1), True, ep),
-        DomainConfig("Molecular_Chemistry",  9,  0, mpf("0.5"),   mpf(1), True,  lnpi_e),
-        DomainConfig("Optics",                10,  0, mpf("0.6"), mpf(1), True, pi_e),
-        DomainConfig("Acoustics",             10,  0, mpf("0.3"), mpf(1), True, ab_s2),
-        DomainConfig("Quantum_Computing", 11,  0, mpf("0.5"),   mpf(1), False,  s2_e),
-        DomainConfig("Quantum_Optics",        11,  0, mpf("0.6"), mpf(1), True, pi_e),
-        DomainConfig("Biology", 12,  0, mpf("0.08"),   mpf(1), False,  lnphi_s2),
-        DomainConfig("Thermodynamics", 15,  1, mpf("0.9"),   mpf(1), True,  GAMMA / E),
-        DomainConfig("Biochemistry", 13,  1, mpf("0.35"),   mpf(1), True,  lnphi_s2),
-        DomainConfig("Neuroscience", 14,  1, mpf("0.7"),   mpf(1), True,  C_FACTOR),
-        DomainConfig("Condensed_Matter",      14,  0, mpf("0.5"), mpf(1), True, A_BLEED / E),
-        DomainConfig("Fluid_Dynamics",        15,  1, mpf("0.9"), mpf(1), False, A_BLEED / PHI),
-        DomainConfig("Nuclear_Physics", 15,  1, mpf(1),   mpf(1), True,  alpha_phi),
-        DomainConfig("Ecology",               15,  1, mpf("0.2"), mpf(1), False, ln(PHI) / PHI),
-        DomainConfig("Meteorology",           16,  2, mpf("0.8"), mpf(1), False, CHAOS),
-        DomainConfig("Materials_Science", 10,  0, mpf("0.5"),   mpf(1), True,  A_IN / E),
-        DomainConfig("Psychology", 16,  1, mpf("1.15"),   mpf(1), True,  P_BASE),
-        DomainConfig("Atmospheric_Physics",   17,  2, mpf("0.8"), mpf(1), False, CHAOS),
-        DomainConfig("Oceanography",          17,  1, mpf("0.7"), mpf(1), False, A_IN / PHI),
-        DomainConfig("Seismology",            18,  2, mpf("1.2"), mpf(1), False, chaos_half),
-        DomainConfig("Sociology",             18,  3, mpf("1.5"), mpf(1), True, GAMMA / ln(PI)),
-        DomainConfig("High_Energy_Physics",  7,  1, mpf("0.95"),   mpf(1), True,  ALPHA / sqrt(2)),
-        DomainConfig("Geophysics",            19,  2, mpf(1),   mpf(1), False, CHAOS),
-        DomainConfig("Astronomy", 20,  1, mpf(1),   mpf(1), True,  pi2_phi),
-        DomainConfig("Economics",             20,  3, mpf("1.5"), mpf(1), True, GAMMA / ln(PI)),
-        DomainConfig("Planetary_Science", 21,  1, mpf("0.9"),   mpf(1), True,  pi2_phi),
-        DomainConfig("Quantum_Gravity",       22,  0, mpf(1),   mpf(1), False, inv_phi2),
-        DomainConfig("Particle_Astrophysics", 24,  0, mpf("0.8"),   mpf(1), False,  pi2_e),
-        DomainConfig("Astrophysics",          24,  1, mpf(1),   mpf(1), True, pi2_phi),
-        DomainConfig("Cosmology", 25,  0, mpf(1),   mpf(1), False,  C_COSM),
+        DomainConfig(name, D, _fold_hits(name), _fold_look(name), mpf(1), obs, C)
+        for name, D, obs, C in rungs
     ]
     return {d.name: d for d in domains}
 
@@ -722,8 +742,8 @@ def dynamical_systems() -> list[Result]:
     r.append(Result("Ising3D_beta_dyn", "(e⁻¹/³+√π)/(e²+φ⁻³)", v, mpf("0.3264")))
     v = (1/GAMMA - PI**(-3)) / (E**mpf("0.666666666666667") + PI**mpf("-0.25"))
     r.append(Result("Ising3D_nu_dyn", "(1/γ−π⁻³)/(e²/³+π⁻¹/⁴)", v, mpf("0.6300")))
-    v = PHI * (GAMMA*sqrt(2)/E) / ln(PI) * mpf("0.99")
-    r.append(Result("Henon_Lyapunov", "φ·(γ√2/e)/ln(π)·0.99", v, mpf("0.4192")))
+    v = PHI * (GAMMA*sqrt(2)/E) / ln(PI) * (1 - 1 / PI**4)
+    r.append(Result("Henon_Lyapunov", "φ·(γ√2/e)/ln(π)·(1−π⁻⁴)", v, mpf("0.4192")))
     return r
 
 

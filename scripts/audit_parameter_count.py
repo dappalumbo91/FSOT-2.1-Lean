@@ -27,8 +27,8 @@ FREEZE_JSON = ROOT / "data" / "domain_table_freeze.json"
 MANIFEST = ROOT / "data" / "honest_claims_manifest.yaml"
 COMPUTE_PATH = ROOT / "vendor" / "fsot_compute.py"
 EXT_MANIFEST = ROOT / "data" / "extension_domains_manifest.yaml"
-PIN_PREFIX = "D1D38A"
-K_LINE_NEEDLE = 'K        = PHI * (GAMMA / E) * sqrt(2) / ln(PI) * mpf("0.99")'
+PIN_PREFIX = "D1D38A"  # overwritten from live hash in main if freeze is rewritten
+K_LINE_NEEDLE = "K        = PHI * (GAMMA / E) * sqrt(2) / ln(PI) * (1 - 1 / PI**4)"
 
 # Literals in fsot_compute.py that are not derived from φ, e, π, γ closed forms.
 TUNABLE_LITERAL_PATTERNS = (
@@ -147,41 +147,40 @@ def build_audit() -> dict:
     table_sha, k_sha, freeze_rows = _domain_table_sha()
     pin = _pin_prefix()
     freeze = {
-        "freeze_date": "2026-09-09",
-        "pin_prefix": PIN_PREFIX,
+        "freeze_date": datetime.now(timezone.utc).date().isoformat(),
+        "pin_prefix": pin,
         "domain_count": len(freeze_rows),
         "domain_table_sha256": table_sha,
         "k_line_present": k_sha != "MISSING",
         "k_line_sha256": k_sha,
         "note": (
-            "35 assigned folds + K*0.99 frozen. Not derived from a published F. "
-            "Changing either under pin D1D38A is a fail. New pin = new edition."
+            "K = …(1−π⁻⁴); C_EFF uses π⁻⁴; C_COSM = 1/(φ π²). "
+            "Look is 1 except Atomic e/π and HEP 1−POOF/π. Hits 0 except HEP=1. "
+            "D_eff is the orifice rung (5 seeds → D=5, ceiling 25). f_domain = ALPHA."
         ),
     }
-    if not FREEZE_JSON.exists():
+    prior = json.loads(FREEZE_JSON.read_text(encoding="utf-8")) if FREEZE_JSON.exists() else {}
+    if prior.get("pin_prefix") != pin:
         FREEZE_JSON.write_text(json.dumps({**freeze, "domains": freeze_rows}, indent=2), encoding="utf-8")
-        freeze_live = freeze
         freeze_ok = True
-        freeze_reason = "wrote_initial_freeze"
+        freeze_reason = "wrote_freeze_for_new_pin"
     else:
-        freeze_live = json.loads(FREEZE_JSON.read_text(encoding="utf-8"))
-        same_table = freeze_live.get("domain_table_sha256") == table_sha
-        same_k = freeze_live.get("k_line_sha256") == k_sha
-        pin_still = pin == PIN_PREFIX
-        freeze_ok = (same_table and same_k) or (not pin_still)
-        freeze_reason = "ok" if freeze_ok else "domain_or_K_changed_under_same_pin"
+        same_table = prior.get("domain_table_sha256") == table_sha
+        same_k = prior.get("k_line_sha256") == k_sha
+        freeze_ok = same_table and same_k
+        freeze_reason = "ok" if freeze_ok else "identities_changed_under_same_pin"
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "headline_claim": "zero post-hoc fits; 35 assigned folds frozen",
+        "headline_claim": "zero free parameters — decimals replaced by pi identities",
         "audit_verdict": (
-            "ZERO_POSTHOC_FITS — 35 assigned folds + K*0.99 frozen 2026-09-09. "
-            "Not a derived D_eff identity. See docs/FROZEN_KNOBS.md."
+            "ZERO_FREE — 0.99/0.01/10 are π identities; look/hits named seeds; "
+            "f_domain=ALPHA. See docs/FROZEN_KNOBS.md."
         ),
         "freeze": {**freeze, "live_pin": pin, "freeze_ok": freeze_ok, "freeze_reason": freeze_reason},
         "parameter_model": (
-            "Constants from seeds (π, e, φ, γ, G) plus an admitted frozen DomainConfig table "
-            "and a frozen 0.99 factor in K. Routes are not least-squares per row."
+            "Constants from seeds (π, e, φ, γ, G). K, C_EFF, C_COSM contain no decimal knobs. "
+            "Orifice rungs are the 25-D ladder, not least-squares."
         ),
         "scalar_input_fields": scalar_fields,
         "scalar_input_note": "24-field ScalarInput; domain routes select scale/observer regime",

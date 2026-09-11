@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-11T19:08:43.198542+00:00",
+  "generated_at": "2026-09-11T19:19:40.535846+00:00",
   "edition_stamp": "2026-09-11",
   "authority": {
     "pin_prefix": "D1D38A",
-    "fsot_compute_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+    "fsot_compute_sha256": "3090BC36956807F91E8076F69DA4A2C06EAE568D4E70D1E9CA220DA12D51FA0D",
     "pin_match": true,
     "path": "vendor/fsot_compute.py",
     "formula_authority_verdict": "FORMULA_AUTHORITY_SYSTEM_CLOSED",
     "formula_authority_all_ok": true,
-    "parameter_verdict": "ZERO_POSTHOC_FITS \u2014 35 assigned folds + K*0.99 frozen 2026-09-09. Not a derived D_eff identity. See docs/FROZEN_KNOBS.md."
+    "parameter_verdict": "ZERO_FREE \u2014 0.99/0.01/10 are \u03c0 identities; look/hits named seeds; f_domain=ALPHA. See docs/FROZEN_KNOBS.md."
   },
   "empirical": {
     "green_gate_pass_count": 477,

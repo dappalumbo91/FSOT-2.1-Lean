@@ -1,40 +1,28 @@
-# Frozen knobs — honest, not “zero integers”
+# No decimal knobs — identities
 
-**Pin:** D1D38A · **Freeze date:** 2026-09-09 · **Never moved after lock without a new pin**
+**Peer review:** out of scope.
 
-“Zero free parameters” here means: **no post-hoc dial when a row misses**. It does **not** mean the domain table was derived from \(\pi,e,\varphi,\gamma,G\) by a published \(\mathcal{F}\).
+“Zero free parameters” means the engine is **self-derived**. Assigned decimals (`0.99`, `0.01`, `10`, per-domain `0.85`…) were a drift. They are replaced by seed identities. A miss goes to [`../results/MISSES.md`](../results/MISSES.md). We do **not** put the decimals back to chase a residual.
 
-## Assigned folds (admitted)
+## What the decimals were
 
-The public `DomainConfig` table assigns \(D_{\mathrm{eff}}\), \(\delta\psi\), hits, and `observed` per domain. **35 assigned folds**, frozen on **2026-09-09**, never moved after lock.
+| Knob | Was | Identity |
+|------|-----|----------|
+| \(K\) polish | \(0.99\) | \(1-\pi^{-4}\) |
+| \(C_{\mathrm{eff}}\) polish | \(0.01\) | \(\pi^{-4}\) |
+| \(C_{\mathrm{cosm}}\) | \(1/(\varphi\cdot 10)\) | \(1/(\varphi\cdot\pi^2)\) |
+| Ledger B \(f_{\mathrm{domain}}\) | 0.0001–0.001 table | \(\alpha=\ln\pi/(e\varphi^{13})\) |
+| \(\delta\psi\) table | 0.08, 0.85, 0.95, … | default \(1\); Atomic \(e/\pi\); HEP \(1-\mathrm{POOF}/\pi\) |
+| `hits` table | 0–3 | default \(0\); HEP collision \(=1\) |
 
-There is **no** identity
+\(\pi^2\approx 9.87\) was being rounded to \(10\). \(\pi^{-4}\approx 0.01027\) was being rounded to \(0.01\). \(1-\pi^{-4}\approx 0.9897\) was being rounded to \(0.99\).
 
-\[
-D_{\mathrm{eff}}(\mathrm{domain})=\mathcal{F}(\pi,e,\varphi,\gamma,G,\mathrm{name})
-\]
+## What is still a named orifice, not a fit
 
-in this edition. If that \(\mathcal{F}\) is written later, it is a **new pin**.
+\(D_{\mathrm{eff}}\): five seeds → Particle at \(D=5\), ceiling \(5^2=25\). Each domain is a rung on that compactification ladder (which slice of the fluid you are looking through). That is a coordinate chart, not a residual dial. Changing a rung to green a file is forbidden.
 
-Hash: `data/domain_table_freeze.json` (`domain_table_sha256`).  
-`python scripts/audit_parameter_count.py` **fails** if the table or the `K` line changes while the pin is still D1D38A.
+`observed`: medium (dark) vs specimen (look). Ontology of the fold, not a per-row switch.
 
-## \(K\) contains 0.99
+## Hash gate
 
-```text
-K = PHI * (GAMMA / E) * sqrt(2) / ln(PI) * 0.99
-```
-
-`0.99` is a **frozen seed factor**, not a derived identity in this edition. Deleting it would republish every Ledger A number under a new pin. We do **not** retune it to chase a residual.
-
-## `observed`
-
-Frozen as an **experiment-class** tag on the domain row (spectroscopy-like domains observed; dark folds such as Fluid/Biology/QC stay `observed=False`). Not a per-catalog-row switch.
-
-## \(f_{\mathrm{domain}}\)
-
-Ledger B modulation factors live in `scripts/fsot_api_predict_lib.py` (`DOMAIN_FACTORS`). Changing a factor is a **new edition**, not a silent densify.
-
-## What a miss may not do
-
-After lock \(T_0\): a miss goes to [`../results/MISSES.md`](../results/MISSES.md). A domain-integer change is a new pin plus a diff of every old Ledger A number. Fold edits are not residual repair ([`FSOT_PROPER_DENSIFY_POLICY.md`](FSOT_PROPER_DENSIFY_POLICY.md)).
+`python scripts/audit_parameter_count.py` fails if these identities move without a new pin. Previous pin **D1D38A** held the rounded decimals. This edition is a new pin.

@@ -1,17 +1,17 @@
 {
-  "freeze_date": "2026-09-09",
-  "pin_prefix": "D1D38A",
+  "freeze_date": "2026-09-11",
+  "pin_prefix": "3090BC",
   "domain_count": 35,
-  "domain_table_sha256": "aae578c667f014d309a80bfb133fdf8382b27b385f30f2e57b0053a7a41962a6",
+  "domain_table_sha256": "a2136874c8cda4514f84cf31f76466796c402a85483682a0bf1311bc941a8806",
   "k_line_present": true,
-  "k_line_sha256": "3909f4177f9d562addb504417f6d3c80662500be6e25f8ccea990b87e78c41fb",
-  "note": "35 assigned folds + K*0.99 frozen. Not derived from a published F. Changing either under pin D1D38A is a fail. New pin = new edition.",
+  "k_line_sha256": "520f7bd28060075a64c6570096695205a00be17f6a70e1057c64fb43be948155",
+  "note": "K = \u2026(1\u2212\u03c0\u207b\u2074); C_EFF uses \u03c0\u207b\u2074; C_COSM = 1/(\u03c6 \u03c0\u00b2). Look is 1 except Atomic e/\u03c0 and HEP 1\u2212POOF/\u03c0. Hits 0 except HEP=1. D_eff is the orifice rung (5 seeds \u2192 D=5, ceiling 25). f_domain = ALPHA.",
   "domains": [
     {
       "domain": "Acoustics",
       "D_eff": 10,
       "hits": 0,
-      "delta_psi": 0.3,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.7403221539119567
@@ -19,7 +19,7 @@
     {
       "domain": "Astronomy",
       "D_eff": 20,
-      "hits": 1,
+      "hits": 0,
       "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
@@ -28,7 +28,7 @@
     {
       "domain": "Astrophysics",
       "D_eff": 24,
-      "hits": 1,
+      "hits": 0,
       "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
@@ -37,8 +37,8 @@
     {
       "domain": "Atmospheric_Physics",
       "D_eff": 17,
-      "hits": 2,
-      "delta_psi": 0.8,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
       "C": -0.33102418261048183
@@ -47,7 +47,7 @@
       "domain": "Atomic_Physics",
       "D_eff": 7,
       "hits": 0,
-      "delta_psi": 0.85,
+      "delta_psi": 0.8652559794322651,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.8652559794322651
@@ -55,8 +55,8 @@
     {
       "domain": "Biochemistry",
       "D_eff": 13,
-      "hits": 1,
-      "delta_psi": 0.35,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.3402681446868002
@@ -65,7 +65,7 @@
       "domain": "Biology",
       "D_eff": 12,
       "hits": 0,
-      "delta_psi": 0.08,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
       "C": 0.3402681446868002
@@ -74,7 +74,7 @@
       "domain": "Chemistry",
       "D_eff": 8,
       "hits": 0,
-      "delta_psi": 0.6,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.8652559794322651
@@ -83,7 +83,7 @@
       "domain": "Condensed_Matter",
       "D_eff": 14,
       "hits": 0,
-      "delta_psi": 0.5,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.3851600741417844
@@ -95,13 +95,13 @@
       "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
-      "C": 0.061803398874989486
+      "C": 0.06261993527133461
     },
     {
       "domain": "Ecology",
       "D_eff": 15,
-      "hits": 1,
-      "delta_psi": 0.2,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
       "C": 0.2974052636752033
@@ -109,8 +109,8 @@
     {
       "domain": "Economics",
       "D_eff": 20,
-      "hits": 3,
-      "delta_psi": 1.5,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.5042374380513648
@@ -119,7 +119,7 @@
       "domain": "Electromagnetism",
       "D_eff": 9,
       "hits": 0,
-      "delta_psi": 0.7,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.8652559794322651
@@ -127,8 +127,8 @@
     {
       "domain": "Fluid_Dynamics",
       "D_eff": 15,
-      "hits": 1,
-      "delta_psi": 0.9,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
       "C": 0.6470652890279831
@@ -136,7 +136,7 @@
     {
       "domain": "Geophysics",
       "D_eff": 19,
-      "hits": 2,
+      "hits": 0,
       "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
@@ -146,7 +146,7 @@
       "domain": "High_Energy_Physics",
       "D_eff": 7,
       "hits": 1,
-      "delta_psi": 0.95,
+      "delta_psi": 0.9511450936457113,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.0005715499857445138
@@ -155,7 +155,7 @@
       "domain": "Materials_Science",
       "D_eff": 10,
       "hits": 0,
-      "delta_psi": 0.5,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.6132012610147523
@@ -163,8 +163,8 @@
     {
       "domain": "Meteorology",
       "D_eff": 16,
-      "hits": 2,
-      "delta_psi": 0.8,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
       "C": -0.33102418261048183
@@ -173,7 +173,7 @@
       "domain": "Molecular_Chemistry",
       "D_eff": 9,
       "hits": 0,
-      "delta_psi": 0.5,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.4211225906985263
@@ -181,16 +181,16 @@
     {
       "domain": "Neuroscience",
       "D_eff": 14,
-      "hits": 1,
-      "delta_psi": 0.7,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
-      "C": 0.28760015181918397
+      "C": 0.28761391128429215
     },
     {
       "domain": "Nuclear_Physics",
       "D_eff": 15,
-      "hits": 1,
+      "hits": 0,
       "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
@@ -199,8 +199,8 @@
     {
       "domain": "Oceanography",
       "D_eff": 17,
-      "hits": 1,
-      "delta_psi": 0.7,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
       "C": 1.0301723304912753
@@ -209,7 +209,7 @@
       "domain": "Optics",
       "D_eff": 10,
       "hits": 0,
-      "delta_psi": 0.6,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 1.1557273497909217
@@ -218,7 +218,7 @@
       "domain": "Particle_Astrophysics",
       "D_eff": 24,
       "hits": 0,
-      "delta_psi": 0.8,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
       "C": 3.630824551655961
@@ -236,7 +236,7 @@
       "domain": "Physical_Chemistry",
       "D_eff": 8,
       "hits": 0,
-      "delta_psi": 0.5,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.8652559794322651
@@ -244,8 +244,8 @@
     {
       "domain": "Planetary_Science",
       "D_eff": 21,
-      "hits": 1,
-      "delta_psi": 0.9,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 6.0997509753887735
@@ -253,8 +253,8 @@
     {
       "domain": "Psychology",
       "D_eff": 16,
-      "hits": 1,
-      "delta_psi": 1.15,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.21234577623937842
@@ -263,7 +263,7 @@
       "domain": "Quantum_Computing",
       "D_eff": 11,
       "hits": 0,
-      "delta_psi": 0.5,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
       "C": 0.520260095022889
@@ -290,7 +290,7 @@
       "domain": "Quantum_Optics",
       "D_eff": 11,
       "hits": 0,
-      "delta_psi": 0.6,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 1.1557273497909217
@@ -298,8 +298,8 @@
     {
       "domain": "Seismology",
       "D_eff": 18,
-      "hits": 2,
-      "delta_psi": 1.2,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": false,
       "C": -0.16551209130524092
@@ -307,8 +307,8 @@
     {
       "domain": "Sociology",
       "D_eff": 18,
-      "hits": 3,
-      "delta_psi": 1.5,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.5042374380513648
@@ -316,8 +316,8 @@
     {
       "domain": "Thermodynamics",
       "D_eff": 15,
-      "hits": 1,
-      "delta_psi": 0.9,
+      "hits": 0,
+      "delta_psi": 1.0,
       "delta_theta": 1.0,
       "observed": true,
       "C": 0.21234577623937842

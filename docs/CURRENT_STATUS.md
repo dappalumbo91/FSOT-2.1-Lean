@@ -1,6 +1,6 @@
 # FSOT repo — current status (generated)
 
-**Generated:** `2026-09-11T19:08:43.198542+00:00`  
+**Generated:** `2026-09-11T19:19:40.535846+00:00`  
 **Edition stamp:** 2026-09-11  
 **Regenerate:** `python scripts/build_repo_status_snapshot.py`
 
@@ -12,10 +12,10 @@
 |------|-------|
 | Pin | **D1D38A** |
 | Match | **True** |
-| SHA-256 | `D1D38A185487B452…` |
+| SHA-256 | `3090BC36956807F9…` |
 | Path | `vendor/fsot_compute.py` |
 | Formula authority | **FORMULA_AUTHORITY_SYSTEM_CLOSED** (all_ok=True) |
-| Parameters | **ZERO_POSTHOC_FITS — 35 assigned folds + K*0.99 frozen 2026-09-09. Not a derived D_eff identity. See docs/FROZEN_KNOBS.md.** |
+| Parameters | **ZERO_FREE — 0.99/0.01/10 are π identities; look/hits named seeds; f_domain=ALPHA. See docs/FROZEN_KNOBS.md.** |
 
 ## Three ledgers (never mixed)
 

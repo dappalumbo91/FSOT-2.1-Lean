@@ -31,8 +31,25 @@ ATOMIC_MASS = {
     "I": 126.904,
 }
 
-# Default scalar-modulation factors per FSOT domain (matches tier_gap_fill_lib calibration).
-DOMAIN_FACTORS: dict[str, float] = {
+def domain_modulation_factor(_domain: str) -> float:
+    """Ledger B amplitude is ALPHA (seed-derived). Not a per-domain knob."""
+    from fsot_canonical_adapter import load_fsot_compute
+
+    return float(load_fsot_compute().ALPHA)
+
+
+class _AlphaMap(dict):
+    """Back-compat: old DOMAIN_FACTORS[k] lookups all return ALPHA."""
+
+    def __getitem__(self, key: str) -> float:  # type: ignore[override]
+        return domain_modulation_factor(str(key))
+
+    def get(self, key: str, default: float | None = None) -> float:  # type: ignore[override]
+        return domain_modulation_factor(str(key))
+
+
+# Deprecated name. Values are ALPHA, not fitted per domain.
+DOMAIN_FACTORS: dict[str, float] = _AlphaMap({
     "Ecology": 0.0002,
     "Biology": 0.0005,
     "Biochemistry": 0.0005,
@@ -72,7 +89,7 @@ DOMAIN_FACTORS: dict[str, float] = {
     "Quantum_Optics": 0.0004,
     "Quantum_Computing": 0.0004,
     "Quantum_Gravity": 0.0002,
-}
+})
 
 # Property-specific domain routing when generic domain is ambiguous.
 PROPERTY_ROUTING: dict[str, tuple[str, float]] = {
@@ -267,9 +284,9 @@ def domain_scalar(name: str) -> float:
 
 def route_property(property_name: str, default_domain: str) -> tuple[str, float]:
     if property_name in PROPERTY_ROUTING:
-        return PROPERTY_ROUTING[property_name]
-    factor = DOMAIN_FACTORS.get(default_domain, 0.001)
-    return default_domain, factor
+        routed_domain, _legacy = PROPERTY_ROUTING[property_name]
+        return routed_domain, domain_modulation_factor(routed_domain)
+    return default_domain, domain_modulation_factor(default_domain)
 
 
 def fsot_correct(measured: float, domain: str, factor: float | None = None) -> tuple[float, float]:
@@ -279,7 +296,7 @@ def fsot_correct(measured: float, domain: str, factor: float | None = None) -> t
     `fsot_ledger_a_lib.fsot_predict(observable_id)` and takes no m.
     """
     s = domain_scalar(domain)
-    f = factor if factor is not None else DOMAIN_FACTORS.get(domain, 0.001)
+    f = factor if factor is not None else domain_modulation_factor(domain)
     computed = measured * (1.0 + abs(s) * f)
     return computed, err_pct(computed, measured)
 

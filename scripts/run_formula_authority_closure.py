@@ -57,7 +57,7 @@ def _load(path: Path) -> dict:
 
 def main() -> int:
     print("=== FSOT FORMULA AUTHORITY CLOSURE ===")
-    print("  Law: S=K(T1+T2+T3); c=m(1+|S|*f); ZERO free parameters; pin D1D38A")
+    print("  Law: S=K(T1+T2+T3); Ledger B c=m(1+|S|*ALPHA); ZERO decimal knobs")
     print("  Forbidden: curve-fit, per-row coeffs, diverging from formula\n")
 
     gates: list[dict] = []
@@ -65,15 +65,18 @@ def main() -> int:
     # 1. Pin
     pin = _load(PIN_PATH)
     sha = str(pin.get("authority_sha256") or "")
-    pin_ok = bool(pin.get("compute_matches_certificate")) and sha.upper().startswith("D1D38A")
+    import hashlib as _hl
+
+    live = _hl.sha256((ROOT / "vendor" / "fsot_compute.py").read_bytes()).hexdigest().upper()
+    pin_ok = bool(pin.get("compute_matches_certificate")) and sha.upper() == live
     gates.append(
         {
-            "id": "authority_pin_D1D38A",
+            "id": "authority_pin_live",
             "ok": pin_ok,
-            "detail": f"sha={sha[:16]}… match={pin.get('compute_matches_certificate')}",
+            "detail": f"sha={sha[:16]}… live={live[:16]}… match={pin.get('compute_matches_certificate')}",
         }
     )
-    print(f"[{'OK' if pin_ok else 'FAIL'}] authority pin D1D38A")
+    print(f"[{'OK' if pin_ok else 'FAIL'}] authority pin {live[:6]}")
 
     # 2. ZERO_FREE
     r = _run([PY, str(ROOT / "scripts" / "audit_parameter_count.py")], timeout=120)

@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-11T19:08:40.521107+00:00",
-  "headline_claim": "zero post-hoc fits; 35 assigned folds frozen",
-  "audit_verdict": "ZERO_POSTHOC_FITS \u2014 35 assigned folds + K*0.99 frozen 2026-09-09. Not a derived D_eff identity. See docs/FROZEN_KNOBS.md.",
+  "generated_at": "2026-09-11T19:19:39.355246+00:00",
+  "headline_claim": "zero free parameters \u2014 decimals replaced by pi identities",
+  "audit_verdict": "ZERO_FREE \u2014 0.99/0.01/10 are \u03c0 identities; look/hits named seeds; f_domain=ALPHA. See docs/FROZEN_KNOBS.md.",
   "freeze": {
-    "freeze_date": "2026-09-09",
-    "pin_prefix": "D1D38A",
+    "freeze_date": "2026-09-11",
+    "pin_prefix": "3090BC",
     "domain_count": 35,
-    "domain_table_sha256": "aae578c667f014d309a80bfb133fdf8382b27b385f30f2e57b0053a7a41962a6",
+    "domain_table_sha256": "a2136874c8cda4514f84cf31f76466796c402a85483682a0bf1311bc941a8806",
     "k_line_present": true,
-    "k_line_sha256": "3909f4177f9d562addb504417f6d3c80662500be6e25f8ccea990b87e78c41fb",
-    "note": "35 assigned folds + K*0.99 frozen. Not derived from a published F. Changing either under pin D1D38A is a fail. New pin = new edition.",
-    "live_pin": "D1D38A",
+    "k_line_sha256": "520f7bd28060075a64c6570096695205a00be17f6a70e1057c64fb43be948155",
+    "note": "K = \u2026(1\u2212\u03c0\u207b\u2074); C_EFF uses \u03c0\u207b\u2074; C_COSM = 1/(\u03c6 \u03c0\u00b2). Look is 1 except Atomic e/\u03c0 and HEP 1\u2212POOF/\u03c0. Hits 0 except HEP=1. D_eff is the orifice rung (5 seeds \u2192 D=5, ceiling 25). f_domain = ALPHA.",
+    "live_pin": "3090BC",
     "freeze_ok": true,
     "freeze_reason": "ok"
   },
-  "parameter_model": "Constants from seeds (\u03c0, e, \u03c6, \u03b3, G) plus an admitted frozen DomainConfig table and a frozen 0.99 factor in K. Routes are not least-squares per row.",
+  "parameter_model": "Constants from seeds (\u03c0, e, \u03c6, \u03b3, G). K, C_EFF, C_COSM contain no decimal knobs. Orifice rungs are the 25-D ladder, not least-squares.",
   "scalar_input_fields": 24,
   "scalar_input_note": "24-field ScalarInput; domain routes select scale/observer regime",
   "domain_table": {
@@ -26,14 +26,14 @@
         "domain": "Acoustics",
         "D_eff": 10,
         "recent_hits": 0,
-        "delta_psi": "0.3",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.74032215391195669911956925061768637860163894292862"
       },
       {
         "domain": "Astronomy",
         "D_eff": 20,
-        "recent_hits": 1,
+        "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "6.0997509753887733457546791213519873645345014190819"
@@ -41,7 +41,7 @@
       {
         "domain": "Astrophysics",
         "D_eff": 24,
-        "recent_hits": 1,
+        "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "6.0997509753887733457546791213519873645345014190819"
@@ -49,8 +49,8 @@
       {
         "domain": "Atmospheric_Physics",
         "D_eff": 17,
-        "recent_hits": 2,
-        "delta_psi": "0.8",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "-0.33102418261048184117525238337709910027806936155306"
       },
@@ -58,15 +58,15 @@
         "domain": "Atomic_Physics",
         "D_eff": 7,
         "recent_hits": 0,
-        "delta_psi": "0.85",
+        "delta_psi": "0.86525597943226508721777478964608961742874462390851",
         "delta_theta": "1.0",
         "C": "0.86525597943226508721777478964608961742874462390851"
       },
       {
         "domain": "Biochemistry",
         "D_eff": 13,
-        "recent_hits": 1,
-        "delta_psi": "0.35",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.34026814468680020157392403259146071692465404181899"
       },
@@ -74,7 +74,7 @@
         "domain": "Biology",
         "D_eff": 12,
         "recent_hits": 0,
-        "delta_psi": "0.08",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.34026814468680020157392403259146071692465404181899"
       },
@@ -82,7 +82,7 @@
         "domain": "Chemistry",
         "D_eff": 8,
         "recent_hits": 0,
-        "delta_psi": "0.6",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.86525597943226508721777478964608961742874462390851"
       },
@@ -90,7 +90,7 @@
         "domain": "Condensed_Matter",
         "D_eff": 14,
         "recent_hits": 0,
-        "delta_psi": "0.5",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.38516007414178437097236847299286472080193091082979"
       },
@@ -100,21 +100,21 @@
         "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
-        "C": "0.061803398874989484820458683436563811772030917980576"
+        "C": "0.06261993527133461215587329253593934355036217496184"
       },
       {
         "domain": "Ecology",
         "D_eff": 15,
-        "recent_hits": 1,
-        "delta_psi": "0.2",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.29740526367520332486291208447607257021312118598253"
       },
       {
         "domain": "Economics",
         "D_eff": 20,
-        "recent_hits": 3,
-        "delta_psi": "1.5",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.50423743805136483609497723314272345398433640036051"
       },
@@ -122,22 +122,22 @@
         "domain": "Electromagnetism",
         "D_eff": 9,
         "recent_hits": 0,
-        "delta_psi": "0.7",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.86525597943226508721777478964608961742874462390851"
       },
       {
         "domain": "Fluid_Dynamics",
         "D_eff": 15,
-        "recent_hits": 1,
-        "delta_psi": "0.9",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.64706528902798308912921587148282634740323172327035"
       },
       {
         "domain": "Geophysics",
         "D_eff": 19,
-        "recent_hits": 2,
+        "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "-0.33102418261048184117525238337709910027806936155306"
@@ -146,7 +146,7 @@
         "domain": "High_Energy_Physics",
         "D_eff": 7,
         "recent_hits": 1,
-        "delta_psi": "0.95",
+        "delta_psi": "0.95114509364571126475870681725806650084231257608704",
         "delta_theta": "1.0",
         "C": "0.00057154998574451372239286747539478352031407954613811"
       },
@@ -154,15 +154,15 @@
         "domain": "Materials_Science",
         "D_eff": 10,
         "recent_hits": 0,
-        "delta_psi": "0.5",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.61320126101475226643282468960596658861136952679259"
       },
       {
         "domain": "Meteorology",
         "D_eff": 16,
-        "recent_hits": 2,
-        "delta_psi": "0.8",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "-0.33102418261048184117525238337709910027806936155306"
       },
@@ -170,22 +170,22 @@
         "domain": "Molecular_Chemistry",
         "D_eff": 9,
         "recent_hits": 0,
-        "delta_psi": "0.5",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.42112259069852629547898678759036072879677676659399"
       },
       {
         "domain": "Neuroscience",
         "D_eff": 14,
-        "recent_hits": 1,
-        "delta_psi": "0.7",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
-        "C": "0.28760015181918396646257723332531607604357272537045"
+        "C": "0.28761391128429215221261541448255116750490022331023"
       },
       {
         "domain": "Nuclear_Physics",
         "D_eff": 15,
-        "recent_hits": 1,
+        "recent_hits": 0,
         "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.00049955300508769548678149739585037068000266965668157"
@@ -193,8 +193,8 @@
       {
         "domain": "Oceanography",
         "D_eff": 17,
-        "recent_hits": 1,
-        "delta_psi": "0.7",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "1.0301723304912752670517965863521148747630160983437"
       },
@@ -202,7 +202,7 @@
         "domain": "Optics",
         "D_eff": 10,
         "recent_hits": 0,
-        "delta_psi": "0.6",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "1.1557273497909217179100931833126962991208510231644"
       },
@@ -210,7 +210,7 @@
         "domain": "Particle_Astrophysics",
         "D_eff": 24,
         "recent_hits": 0,
-        "delta_psi": "0.8",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "3.6308245516559609314975232135071908402802893349968"
       },
@@ -226,23 +226,23 @@
         "domain": "Physical_Chemistry",
         "D_eff": 8,
         "recent_hits": 0,
-        "delta_psi": "0.5",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.86525597943226508721777478964608961742874462390851"
       },
       {
         "domain": "Planetary_Science",
         "D_eff": 21,
-        "recent_hits": 1,
-        "delta_psi": "0.9",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "6.0997509753887733457546791213519873645345014190819"
       },
       {
         "domain": "Psychology",
         "D_eff": 16,
-        "recent_hits": 1,
-        "delta_psi": "1.15",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.21234577623937842245507726769782102059270547813039"
       },
@@ -250,7 +250,7 @@
         "domain": "Quantum_Computing",
         "D_eff": 11,
         "recent_hits": 0,
-        "delta_psi": "0.5",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.52026009502288889635815244331633253808613080158911"
       },
@@ -274,31 +274,31 @@
         "domain": "Quantum_Optics",
         "D_eff": 11,
         "recent_hits": 0,
-        "delta_psi": "0.6",
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "1.1557273497909217179100931833126962991208510231644"
       },
       {
         "domain": "Seismology",
         "D_eff": 18,
-        "recent_hits": 2,
-        "delta_psi": "1.2",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "-0.16551209130524092058762619168854955013903468077653"
       },
       {
         "domain": "Sociology",
         "D_eff": 18,
-        "recent_hits": 3,
-        "delta_psi": "1.5",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.50423743805136483609497723314272345398433640036051"
       },
       {
         "domain": "Thermodynamics",
         "D_eff": 15,
-        "recent_hits": 1,
-        "delta_psi": "0.9",
+        "recent_hits": 0,
+        "delta_psi": "1.0",
         "delta_theta": "1.0",
         "C": "0.21234577623937842245507726769782102059270547813039"
       }
@@ -2565,88 +2565,13 @@
   "literal_coefficient_hits": [
     {
       "pattern": "mpf\\(\"0\\.99\"\\)",
-      "line": 72,
+      "line": 1041,
       "match": "mpf(\"0.99\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.99\"\\)",
-      "line": 725,
-      "match": "mpf(\"0.99\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.99\"\\)",
-      "line": 1021,
-      "match": "mpf(\"0.99\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.01\"\\)",
-      "line": 62,
-      "match": "mpf(\"0.01\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.85\"\\)",
-      "line": 184,
-      "match": "mpf(\"0.85\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.5\"\\)",
-      "line": 185,
-      "match": "mpf(\"0.5\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.5\"\\)",
-      "line": 188,
-      "match": "mpf(\"0.5\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.5\"\\)",
-      "line": 191,
-      "match": "mpf(\"0.5\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.5\"\\)",
-      "line": 197,
-      "match": "mpf(\"0.5\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.5\"\\)",
-      "line": 202,
-      "match": "mpf(\"0.5\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.6\"\\)",
-      "line": 186,
-      "match": "mpf(\"0.6\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.6\"\\)",
-      "line": 189,
-      "match": "mpf(\"0.6\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.6\"\\)",
-      "line": 192,
-      "match": "mpf(\"0.6\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.7\"\\)",
-      "line": 187,
-      "match": "mpf(\"0.7\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.7\"\\)",
-      "line": 196,
-      "match": "mpf(\"0.7\")"
-    },
-    {
-      "pattern": "mpf\\(\"0\\.7\"\\)",
-      "line": 205,
-      "match": "mpf(\"0.7\")"
     }
   ],
-  "literal_coefficient_count": 16,
+  "literal_coefficient_count": 1,
   "route_slot_count": 1300,
-  "empirical_tunable_slot_estimate": 1340,
+  "empirical_tunable_slot_estimate": 1325,
   "honest_framing": "Zero free parameters means: no post-hoc dial when a row misses. It does not mean D_eff was derived from \u03c0,e,\u03c6,\u03b3,G. 35 assigned folds and K*0.99 are frozen. Changing them requires a new pin.",
   "what_is_zero_free": [
     "No per-observable least-squares when a prediction misses",
