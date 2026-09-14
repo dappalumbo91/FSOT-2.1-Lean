@@ -1,0 +1,229 @@
+# Ledger A freeze — pin FE23A2
+# generated_at: 2026-09-14T21:19:36.093537+00:00
+# Changing an expression requires a new PRED id. No silent rewrite.
+ledger: A
+pin: FE23A2
+rows:
+  - id: BP_H2O
+    kind: CONSTANT_IDENTITY
+    expression: 'e**6 - pi**3'
+    expression_id: chemistry.BP_H2O
+    units: 'K'
+    value: 372.4225168124353
+    anchor: 373.15
+    error_pct: 0.194957
+    operator_count: 5
+    kill_band: 'Inventory only — not a FORECAST'
+    measured_in_formula: false
+  - id: Dark_energy_wa
+    kind: FORECAST
+    expression: '-gamma*e*phi/pi'
+    expression_id: validation.Dark_energy_wa
+    units: '1'
+    value: -0.808109771581081
+    anchor: -0.8081
+    error_pct: 0.001209
+    operator_count: 4
+    kill_band: 'If DESI w_a leaves [-1.05, -0.60] this expression is dead'
+    measured_in_formula: false
+  - id: First_Riemann_zero
+    kind: FORECAST
+    expression: 'e/gamma**3'
+    expression_id: validation.First_Riemann_zero
+    units: '1'
+    value: 14.1344904113302
+    anchor: 14.134725141734693
+    error_pct: 0.001661
+    operator_count: 3
+    kill_band: 'If tabulated Im(rho1) leaves [14.13, 14.14] this expression is dead'
+    measured_in_formula: false
+  - id: H0_PLANCK_CLASS
+    kind: FORECAST
+    expression: '100*(1 + S_cosm*A_bleed/A_in)'
+    expression_id: wave1.H0
+    units: 'km s^-1 Mpc^-1'
+    value: 68.44499556382667
+    anchor: 67.4
+    error_pct: 1.550439
+    operator_count: 4
+    kill_band: 'If Planck-class H0 leaves [66.0, 69.0] this expression is dead. Not the SH0ES ladder object.'
+    measured_in_formula: false
+  - id: H2O_bond_angle
+    kind: FORECAST
+    expression: 'e**3 / gamma**3'
+    expression_id: wave8.H2O_bond_angle
+    units: 'deg'
+    value: 104.4405425791162
+    anchor: 104.5
+    error_pct: 0.056897
+    operator_count: 5
+    kill_band: 'If the H2O angle leaves [104.0, 105.0] deg this expression is dead'
+    measured_in_formula: false
+  - id: IE_H
+    kind: FORECAST
+    expression: 'gamma**(-5) - G**(-8)'
+    expression_id: chemistry.IE_H
+    units: 'eV'
+    value: 13.588429893109517
+    anchor: 13.598
+    error_pct: 0.070379
+    operator_count: 7
+    kill_band: 'If IE_H leaves [13.5, 13.7] eV this expression is dead'
+    measured_in_formula: false
+  - id: N_eff
+    kind: FORECAST
+    expression: 'P_new*e*pi + ln(phi)'
+    expression_id: wave2.N_eff
+    units: '1'
+    value: 3.045713454288361
+    anchor: 3.046
+    error_pct: 0.009407
+    operator_count: 3
+    kill_band: 'If N_eff leaves [2.8, 3.4] this expression is dead'
+    measured_in_formula: false
+  - id: Omega_Lambda
+    kind: FORECAST
+    expression: 'S_quant/e + gamma**2'
+    expression_id: wave2.Omega_Lambda
+    units: '1'
+    value: 0.6827360381352781
+    anchor: 0.6847
+    error_pct: 0.286835
+    operator_count: 4
+    kill_band: 'If Omega_Lambda leaves [0.65, 0.72] this expression is dead'
+    measured_in_formula: false
+  - id: Omega_b_h2
+    kind: FORECAST
+    expression: '|S_cosm|*(1 - S_quant)'
+    expression_id: wave1.Omega_b_h2
+    units: '1'
+    value: 0.025019661375883018
+    anchor: 0.02237
+    error_pct: 11.844709
+    operator_count: 2
+    kill_band: 'If Omega_b h^2 leaves [0.0215, 0.0232] this expression is dead'
+    measured_in_formula: false
+  - id: T_CMB
+    kind: FORECAST
+    expression: 'phi**2 + P_base*|S_cosm|'
+    expression_id: wave1.T_CMB
+    units: 'K'
+    value: 2.7247116903430664
+    anchor: 2.72548
+    error_pct: 0.028190
+    operator_count: 4
+    kill_band: 'If a future CMB monopole leaves [2.724, 2.727] K this expression is dead'
+    measured_in_formula: false
+  - id: Water_triple_K
+    kind: FORECAST
+    expression: 'pi**5 * sin(pi/phi) * C_eff'
+    expression_id: wave10.Water_triple_K
+    units: 'K'
+    value: 273.16914784440297
+    anchor: 273.16
+    error_pct: 0.003349
+    operator_count: 5
+    kill_band: 'If T_triple leaves [273.0, 273.3] K this expression is dead'
+    measured_in_formula: false
+  - id: alpha_s_MZ
+    kind: FORECAST
+    expression: '1/(e*pi)'
+    expression_id: wave1.alpha_s
+    units: '1'
+    value: 0.11709966304863834
+    anchor: 0.1179
+    error_pct: 0.678827
+    operator_count: 2
+    kill_band: 'If PDG alpha_s(M_Z) leaves [0.116, 0.120] this expression is dead'
+    measured_in_formula: false
+  - id: inv_alpha_em
+    kind: FORECAST
+    expression: 'e**3 * phi**4 - psi_con'
+    expression_id: wave2.1/alpha_em
+    units: '1'
+    value: 137.03619755957268
+    anchor: 137.036
+    error_pct: 0.000144
+    operator_count: 6
+    kill_band: 'If 1/alpha leaves [136.9, 137.2] this expression is dead'
+    measured_in_formula: false
+  - id: m_mu_over_m_e
+    kind: FORECAST
+    expression: '(35*phi**(-5)+145)*e**(1/3)'
+    expression_id: lepton.m_mu/m_e_lepton
+    units: '1'
+    value: 206.76828192272686
+    anchor: 206.768
+    error_pct: 0.000136
+    operator_count: 9
+    kill_band: 'If m_mu/m_e leaves [206.0, 207.5] this expression is dead'
+    measured_in_formula: false
+  - id: m_pi_over_m_p
+    kind: FORECAST
+    expression: 'K*P_new*ln(pi)'
+    expression_id: wave2.m_pi/m_p
+    units: '1'
+    value: 0.14441868531025276
+    anchor: 0.14446
+    error_pct: 0.028599
+    operator_count: 2
+    kill_band: 'If m_pi/m_p leaves [0.14, 0.15] this expression is dead'
+    measured_in_formula: false
+  - id: m_tau_over_m_e
+    kind: FORECAST
+    expression: '9*pi*phi**10'
+    expression_id: lepton.m_tau/m_e_lepton
+    units: '1'
+    value: 3477.51317969453
+    anchor: 3477.48
+    error_pct: 0.000954
+    operator_count: 4
+    kill_band: 'If m_tau/m_e leaves [3460, 3500] this expression is dead'
+    measured_in_formula: false
+  - id: n_s
+    kind: FORECAST
+    expression: '1 + S_cosm*C_cosm*phi**(1/pi)'
+    expression_id: wave1.n_s
+    units: '1'
+    value: 0.9633338365954717
+    anchor: 0.9649
+    error_pct: 0.162314
+    operator_count: 6
+    kill_band: 'If n_s leaves [0.95, 0.98] this expression is dead'
+    measured_in_formula: false
+  - id: sigma_8
+    kind: FORECAST
+    expression: '|S_cosm|*S_quant + |Chaos|'
+    expression_id: wave2.sigma_8
+    units: '1'
+    value: 0.8083818394107467
+    anchor: 0.8111
+    error_pct: 0.335120
+    operator_count: 2
+    kill_band: 'If Planck-class sigma_8 leaves [0.78, 0.85] this expression is dead'
+    measured_in_formula: false
+  - id: sin2_theta_W
+    kind: FORECAST
+    expression: 'sqrt(e)*P_new*eta_eff'
+    expression_id: wave2.sin2_theta_W
+    units: '1'
+    value: 0.23118997459960097
+    anchor: 0.23122
+    error_pct: 0.012986
+    operator_count: 2
+    kill_band: 'If sin^2 theta_W leaves [0.22, 0.24] this expression is dead'
+    measured_in_formula: false
+  - id: tau_reion
+    kind: FORECAST
+    expression: 'phi*|Chaos| - ln(phi)'
+    expression_id: wave2.tau_reion
+    units: '1'
+    value: 0.05439655350230806
+    anchor: 0.0544
+    error_pct: 0.006335
+    operator_count: 2
+    kill_band: 'If tau_reion leaves [0.04, 0.07] this expression is dead'
+    measured_in_formula: false
+n_forecast: 19
+n_constant_identity: 1
+n_forecast_outside_half_pct: 3

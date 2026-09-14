@@ -30,8 +30,7 @@ The remaining technical research path — while CI billing, arXiv endorsement, a
 | Tidal | Geodesic deviation scale | `T3_GR_geodesic_deviation` |
 | Quantum gravity scale | Planck length + G + c | `T3_GR_planck_length`, … |
 
-**Residual law:** `computed = measured × (1 + |S(domain)| × factor)` with atlas factors  
-(Cosmology 0.0002, Particle_Physics 0.0001, …) — same spirit as the multi-domain atlas.
+**Residual law (Ledger B):** `computed = measured × (1 + |S(domain)| × α)` with \(\alpha=\ln\pi/(e\varphi^{13})\). Per-domain factor tables are retired. This is a correction, not a Ledger A prediction.
 
 ---
 

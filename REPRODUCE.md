@@ -274,7 +274,7 @@ python scripts/build_verified_desktop_transporter_paper.py
 python scripts/sync_verified_desktop_projects.py
 ```
 
-Simulators live under `vendor/verified_desktop/` (GitHub) and `I:/FSOT-Physical-Archive/08_Verified-Desktop-Projects/` (archive master). Re-run sims before `--deep` ingest:
+Simulators live under `vendor/verified_desktop/` in this GitHub repo (authority). The physical archive is backup only. Re-run sims before `--deep` ingest:
 
 ```powershell
 python scripts/sync_verified_desktop_projects.py

@@ -9,6 +9,7 @@ A theory with zero misses and 477 greens looks like a filter. This file is the f
 | H0-PLANCK-CLASS | A | \(H_0=100(1+S_{\mathrm{cosm}}A_{\mathrm{bleed}}/A_{\mathrm{in}})\) vs 67.4 | **1.55%** (inside kill band [66,69], outside 0.5%) | Did not put 0.99 back into \(K\) |
 | LEDGER-B-REBUILD | B | catalog \(c=m(1+\|S\|\alpha)\) | 2733 `fsot_prediction` rows rescored under \(f=\alpha\) and derived \(D_{\mathrm{eff}}\). File gate still 477/477. Cite as correction, not ToE. | Did not keep the old \(f\) table |
 | ALPHA-S-MZ | A | \(1/(e\pi)\) vs PDG 0.1179 | **0.679%** (outside 0.5%) | Did not add a decimal polish |
+| OMEGA-B-H2 | A | \(\lvert S_{\mathrm{cosm}}\rvert(1-S_{\mathrm{quant}})\) vs 0.02237 | **11.84%** after derived \(D_{\mathrm{eff}}\) (QM now shares Particle rung) | Did not re-assign QM to \(D=6\) to hide it |
 | GLUEBALL-0PP-TEPER | A | \(m(0^{++})/\sqrt{\sigma}\) vs Teper 3.65±0.11 | 4.57% vs lattice precision (1.5σ; inside 2σ, outside 0.5%) | Did not retune 3.5 or add a coefficient |
 | RIEMANN-N2-10 | A | Im(ρ_n) n=2..10 spacing walk | Beats RvM (4.26% vs 5.64%) but **outside 0.5%** | Did not stuff into the green gate |
 | WX-QUIET-FILL | B/dated | Quiet-fill 24 h persistence | 6/11 hold; OLCN6, 42058, 44078 | Did not drop quiet kills to inflate storm-sector |
